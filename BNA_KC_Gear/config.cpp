@@ -625,7 +625,7 @@ class CfgWeapons
 		};
 	};
 	
-	class BNA_KC_NVG_Keeli: lsd_gar_rangefinder_nvg
+	class BNA_KC_NVG_Keeli_Rangefinder: lsd_gar_rangefinder_nvg
 	{
 		scope=2;
 		displayName="[KC] Rangefinder";
