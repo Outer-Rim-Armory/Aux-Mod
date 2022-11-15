@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		author = "SweMonkey";
 		requiredVersion = 0.1;
-		requiredAddons[]=
+		requiredAddons[] =
 		{
 			"A3_Sounds_F",
 			"3AS_Main",
@@ -18,29 +18,40 @@ class CfgPatches
 			"SWLB_clones",
 			"SWLB_equipment_backpacks"
 		};
-		units[]=
+		units[] =
 		{
+			// Base Units
 			"BNA_KC_Unit_Trooper",
+			"BNA_KC_Unit_Pilot",
+			"BNA_KC_Unit_Snow_Trooper",
+			"BNA_KC_Backpack",
+			"BNA_KC_Medic_Backpack",
+			"BNA_KC_Keeli_Backpack",
+
+			// Customs
 			"BNA_KC_Unit_Keeli",
 			"BNA_KC_Unit_Drake",
 			"BNA_KC_Unit_Joe",
 			"BNA_KC_Unit_Fil",
 			"BNA_KC_Unit_Fil_Squad",
-			"BNA_KC_Unit_Pilot",
-			"BNA_KC_Unit_Snow_Trooper",
-			"BNA_KC_Standard_laati",
-			"BNA_KC_Standard_laati_transport",
-			"BNA_KC_Dexus_laati",
-			"BNA_KC_Dexus_laati_transport",
-			"BNA_KC_Standard_laatc",
+
+			// Objects
 			"BNA_KC_Gonk_Basic",
 			"BNA_KC_Gonk_Advanced",
-			"BNA_KC_Keeli_Backpack",
-			"BNA_KC_Backpack",
-			"BNA_KC_Medic_Backpack"
+
+			// Vehicles
+			// Base Vehicles
+			"BNA_KC_Standard_laati",
+			"BNA_KC_Standard_laati_transport",
+			"BNA_KC_Standard_laatc",
+			// Dexus LAAT
+			"BNA_KC_Dexus_laati",
+			"BNA_KC_Dexus_laati_transport"
 		};
-		weapons[]=
+		weapons[] =
 		{
+			// Base Armor
+			// Helmets
 			"BNA_KC_P2Helmet_Trooper",
 			"BNA_KC_P2Helmet_Officer",
 			"BNA_KC_P2Helmet_Recruit",
@@ -49,6 +60,25 @@ class CfgPatches
 			"BNA_KC_P2Helmet_LCPL_CPL",
 			"BNA_KC_P2Helmet_CS_CSS",
 			"BNA_KC_P2Helmet_CMS_CSM",
+
+			"BNA_KC_PilotHelmet",
+
+			"BNA_KC_Engineer_Helmet",
+
+			"BNA_KC_P2Helmet_Snow_Trooper",
+
+			"BNA_KC_P2_Reeker_Helmet_1",
+			"BNA_KC_P2_Reeker_Helmet_2",
+
+			// Uniforms
+			"BNA_KC_Uniform_Trooper",
+			"BNA_KC_Uniform_Pilot",
+			"BNA_KC_Uniform_Snow_Trooper",
+			
+			
+			// Customs
+			// Helmets
+			// P2
 			"BNA_KC_P2Helmet_Keeli",
 			"BNA_KC_P2Helmet_Drake",
 			"BNA_KC_P2Helmet_Dexus",
@@ -58,24 +88,24 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Joe",
 			"BNA_KC_P2Helmet_Fil",
 			"BNA_KC_P2Helmet_Fil_Squad",
-			"BNA_KC_PilotHelmet",
+
+			// Pilots
 			"BNA_KC_PilotHelmet_Dexus",
-			"BNA_KC_Engineer_Helmet",
-			"BNA_KC_P2Helmet_Snow_Trooper",
-			"BNA_KC_P2_Reeker_Helmet_1",
-			"BNA_KC_P2_Reeker_Helmet_2",
-			"BNA_KC_Uniform_Trooper",
+
+			// Uniforms
 			"BNA_KC_Uniform_Keeli",
 			"BNA_KC_Uniform_Drake",
 			"BNA_KC_Uniform_Joe",
 			"BNA_KC_Uniform_Fil",
 			"BNA_KC_Uniform_Fil_Squad",
-			"BNA_KC_Uniform_Pilot",
-			"BNA_KC_Uniform_Snow_Trooper",
+
+			// Vests
 			"BNA_KC_Vest_Officer_Keeli",
-			"BNA_KC_NVG_Keeli",
+			
+			// NVGs
 			"BNA_KC_NVG",
 			"BNA_KC_NVG_Commander",
+			"BNA_KC_NVG_Keeli",
 			"BNA_KC_NVG_Keeli_Rangefinder"
 		};
 	};
