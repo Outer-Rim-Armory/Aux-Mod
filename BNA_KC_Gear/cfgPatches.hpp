@@ -75,7 +75,7 @@ class CfgPatches
 			"BNA_KC_Vest_Officer_Keeli",
 			"BNA_KC_NVG_Keeli",
 			"BNA_KC_NVG",
-			"BNA_KC_CMD_Visor",
+			"BNA_KC_NVG_Commander",
 			"BNA_KC_NVG_Keeli_Rangefinder"
 		};
 	};

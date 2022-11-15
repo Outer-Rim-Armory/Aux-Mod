@@ -36,7 +36,7 @@ class CfgWeapons
 		displayName = "[KC] Clone Trooper Helmet";
 		scope = 2;
 		scopeArsenal = 2;
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Trooper_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -45,7 +45,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_Officer: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Clone Officer Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Officer_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -54,7 +54,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_Recruit: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Clone Recruit Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Recruit_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -63,7 +63,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_VCT: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] VCT Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_VCT_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -72,7 +72,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_SCT: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] SCT Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_SCT_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -81,7 +81,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_LCPL_CPL: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] LCPL-CPL Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_LCPL_CPL_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -90,7 +90,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_CS_CSS: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] CS-CSS Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_CS_CSS_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -99,7 +99,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_CMS_CSM: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] CMS-CSM Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_CMS_CSM_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -112,7 +112,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_Keeli: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Keeli's Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Keeli_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -121,7 +121,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_Drake: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Drake's Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Drake_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -130,7 +130,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_Dexus: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Dexus's Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Dexus_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -139,7 +139,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_Vortex: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Vortex's Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Vortex_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -148,7 +148,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_Burnt: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Burnt's Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Burnt_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -157,7 +157,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_Patriot: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Patriot's Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Patriot_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -171,7 +171,7 @@ class CfgWeapons
 			"",
 			"a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
 		};
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Joe_CO.paa",
 			"BNA_KC_Gear\Data\BNA_KC_RedVisor_CO.paa"
@@ -180,7 +180,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_Fil: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Commander Fil's Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Fil_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -189,7 +189,7 @@ class CfgWeapons
 	class BNA_KC_P2Helmet_Fil_Squad: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] CM-Fil's Squad Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Fil_Squad_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -206,7 +206,7 @@ class CfgWeapons
 		displayName = "[KC] Clone Pilot Helmet";
 		scope = 2;
 		scopeArsenal = 2;
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_PilotHelmet_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
@@ -215,7 +215,7 @@ class CfgWeapons
 	class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
 	{
 		displayName = "[KC] Dexus's Helmet (Pilot)";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_PilotHelmet_Dexus_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
@@ -232,7 +232,7 @@ class CfgWeapons
 		displayName = "[KC] Clone Engineer Helmet";
 		scope = 2;
 		scopeArsenal = 2;
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_Engineer_Helmet_CO.paa",
 			"ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
@@ -250,7 +250,7 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[KC] Snow Trooper Helmet";
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Snow_Trooper_CO.paa"
 		};
@@ -310,10 +310,10 @@ class CfgWeapons
 		scope = 2;
 		class ItemInfo: UniformItem
 		{
-			uniformModel="-";
-			uniformClass="BNA_KC_Unit_Trooper";
-			containerClass="Supply150";
-			mass=40;
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Trooper";
+			containerClass = "Supply150";
+			mass = 40;
 		};
 	};
 	class BNA_KC_Uniform_Keeli: BNA_KC_Uniform_Trooper
@@ -321,10 +321,10 @@ class CfgWeapons
 		displayName = "[KC] Keeli's Uniform";
 		class ItemInfo: UniformItem
 		{
-			uniformModel="-";
-			uniformClass="BNA_KC_Unit_Keeli";
-			containerClass="Supply150";
-			mass=40;
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Keeli";
+			containerClass = "Supply150";
+			mass = 40;
 		};
 	};
 	class BNA_KC_Uniform_Drake: BNA_KC_Uniform_Trooper
@@ -332,10 +332,10 @@ class CfgWeapons
 		displayName = "[KC] Drake's Uniform";
 		class ItemInfo: UniformItem
 		{
-			uniformModel="-";
-			uniformClass="BNA_KC_Unit_Drake";
-			containerClass="Supply150";
-			mass=40;
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Drake";
+			containerClass = "Supply150";
+			mass = 40;
 		};
 	};
 	class BNA_KC_Uniform_Joe: BNA_KC_Uniform_Trooper
@@ -343,10 +343,10 @@ class CfgWeapons
 		displayName = "[KC] Joe's Uniform";
 		class ItemInfo: UniformItem
 		{
-			uniformModel="-";
-			uniformClass="BNA_KC_Unit_Joe";
-			containerClass="Supply150";
-			mass=40;
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Joe";
+			containerClass = "Supply150";
+			mass = 40;
 		};
 	};
 	class BNA_KC_Uniform_Fil: BNA_KC_Uniform_Trooper
@@ -354,10 +354,10 @@ class CfgWeapons
 		displayName = "[KC] Commander Fil's Uniform";
 		class ItemInfo: UniformItem
 		{
-			uniformModel="-";
-			uniformClass="BNA_KC_Unit_Fil";
-			containerClass="Supply150";
-			mass=40;
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Fil";
+			containerClass = "Supply150";
+			mass = 40;
 		};
 	};
 	class BNA_KC_Uniform_Fil_Squad: BNA_KC_Uniform_Trooper
@@ -365,10 +365,10 @@ class CfgWeapons
 		displayName = "[KC] CM-Fil's Squad Uniform";
 		class ItemInfo: UniformItem
 		{
-			uniformModel="-";
-			uniformClass="BNA_KC_Unit_Fil_Squad";
-			containerClass="Supply150";
-			mass=40;
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Fil_Squad";
+			containerClass = "Supply150";
+			mass = 40;
 		};
 	};
 	
@@ -377,10 +377,10 @@ class CfgWeapons
 		displayName = "[KC] Pilot Uniform";
 		class ItemInfo: UniformItem
 		{
-			uniformModel="-";
-			uniformClass="BNA_KC_Unit_Pilot";
-			containerClass="Supply150";
-			mass=40;
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Pilot";
+			containerClass = "Supply150";
+			mass = 40;
 		};
 	};
 	
@@ -392,10 +392,10 @@ class CfgWeapons
 		scope = 2;
 		class ItemInfo: UniformItem
 		{
-			uniformModel="-";
-			uniformClass="BNA_KC_Unit_Snow_Trooper";
-			containerClass="Supply150";
-			mass=40;
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Snow_Trooper";
+			containerClass = "Supply150";
+			mass = 40;
 		};
 	};
 	//---------------------------------------------------
@@ -413,38 +413,38 @@ class CfgWeapons
 		displayName = "[KC] Keeli Pauldrons";
 		scope = 2;
 		scopeArsenal = 2;
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_OfficerVest_Keeli_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\SWLB_clones\SWLB_clone_officer_armor.p3d";
-			containerClass="Supply40";
-			hiddenSelections[]=
+			uniformModel = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
+			containerClass = "Supply40";
+			hiddenSelections[] =
 			{
 				"camo1"
 			};
-			mass=80;
+			mass = 80;
 			class HitpointsProtectionInfo
 			{
 				class Chest
 				{
-					HitpointName="HitChest";
-					armor=20;
-					PassThrough=0.10000001;
+					HitpointName = "HitChest";
+					armor = 20;
+					PassThrough = 0.10000001;
 				};
 				class Legs
 				{
-					hitpointName="HitLegs";
-					armor=20;
-					passThrough=0.10000001;
+					hitpointName = "HitLegs";
+					armor = 20;
+					passThrough = 0.10000001;
 				};
 				class Arms
 				{
-					hitpointName="HitArms";
-					armor=10;
-					passThrough=0.20000001;
+					hitpointName = "HitArms";
+					armor = 10;
+					passThrough = 0.20000001;
 				};
 			};
 		};
@@ -456,40 +456,40 @@ class CfgWeapons
 		displayName = "[KC] Arc Vest";
 		scope = 2;
 		scopeArsenal = 2;
-		hiddenSelectionsTextures[]=
+		hiddenSelectionsTextures[] =
 		{
 			"\SWLB_clones\data\arc_accessories_co.paa",
 			"BNA_KC_Gear\Data\BNA_KC_ARC_Vest_CO.paa"
 		};
 		class ItemInfo: VestItem
 		{
-			uniformModel="\SWLB_clones\SWLB_clone_arc_armor.p3d";
-			containerClass="Supply100";
-			hiddenSelections[]=
+			uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			containerClass = "Supply100";
+			hiddenSelections[] =
 			{
 				"camo1",
 				"camo2"
 			};
-			mass=100;
+			mass = 100;
 			class HitpointsProtectionInfo
 			{
 				class Chest
 				{
 					HitpointName="HitChest";
-					armor=20;
-					PassThrough=0.10000001;
+					armor = 20;
+					PassThrough = 0.10000001;
 				};
 				class Legs
 				{
-					hitpointName="HitLegs";
-					armor=20;
-					passThrough=0.10000001;
+					hitpointName = "HitLegs";
+					armor = 20;
+					passThrough = 0.10000001;
 				};
 				class Arms
 				{
-					hitpointName="HitArms";
-					armor=10;
-					passThrough=0.20000001;
+					hitpointName = "HitArms";
+					armor = 10;
+					passThrough = 0.20000001;
 				};
 			};
 		};
@@ -574,69 +574,72 @@ class CfgWeapons
 	class lsd_gar_standard_nvg;
 	class SWLB_clone_ccVisor;
 	class lsd_gar_rangefinder_nvg;
-	
-	class BNA_KC_NVG_Keeli: lsd_gar_standard_nvg
+
+	// Phase 2 NVGs
+	// Base
+	class BNA_KC_NVG: lsd_gar_standard_nvg
 	{
-		scope=2;
-		displayName="[KC] Keeli's night vision";
-		visionMode[]=
+		scope = 2;
+		visionMode[] =
 		{
 			"Normal",
 			"NVG",
 			"TI"
 		};
-		thermalMode[]={2};
-		hiddenSelectionsTextures[]=
-		{
-			"BNA_KC_Gear\Data\BNA_KC_NVG_Keeli_CO.paa"
-		};
-	};
-	class BNA_KC_NVG: BNA_KC_NVG_Keeli
-	{
-		scope=2;
-		displayName="[KC] Night vision";
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[]={2};
-		hiddenSelectionsTextures[]=
+		thermalMode[] = {2};
+
+		displayName = "[KC] Republic P2 NV Visor";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_NVG_CO.paa"
 		};
 	};
-	
-	class BNA_KC_CMD_Visor: SWLB_clone_ccVisor
+
+	// Keeli
+	class BNA_KC_NVG_Keeli: BNA_KC_NVG
 	{
-		scope=2;
-		displayName="[KC] Commander Visor";
-		visionMode[]=
+		displayName = "[KC] Republic P2 NV Visor (KC Keeli)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_NVG_Keeli_CO.paa"
+		};
+	};
+
+	// Commander Visor
+	// Base
+	class BNA_KC_NVG_Commander: SWLB_clone_ccVisor
+	{
+		scope = 2;
+		visionMode[] =
 		{
 			"Normal",
 			"NVG",
 			"TI"
 		};
-		thermalMode[]={2};
-		hiddenSelectionsTextures[]=
+		thermalMode[] = {2};
+
+		displayName = "[KC] Republic P2 Commander Visor";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_Commander_Visor_CO.paa"
 		};
 	};
-	
+
+	// Rangefinders
+	// Base
 	class BNA_KC_NVG_Keeli_Rangefinder: lsd_gar_rangefinder_nvg
 	{
-		scope=2;
-		displayName="[KC] Rangefinder";
-		visionMode[]=
+		scope = 2;
+		visionMode[] =
 		{
 			"Normal",
 			"NVG",
 			"TI"
 		};
-		thermalMode[]={2};
-		hiddenSelectionsTextures[]=
+		thermalMode[] = {2};
+
+		displayName = "[KC] Republic P2 Trooper Rangefinder";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_Rangefinder_CO.paa"
 		};
@@ -658,34 +661,34 @@ class CfgVehicles
 		dlc = "BNA_KC";
 		author = "SweMonkey";
 		displayName = "[KC] Clone Trooper";
-		uniformClass="BNA_KC_Uniform_Trooper";
+		uniformClass = "BNA_KC_Uniform_Trooper";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		faction="BNA_KCFac";
-		editorSubcategory="BNA_KCSub_InfP2";
-		editorPreview="\BNA_KC_Gear\Data\UI\BNA_KC_Preview_P2Trooper.paa";
-		hiddenSelectionsTextures[]=
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_InfP2";
+		editorPreview = "\BNA_KC_Gear\Data\UI\BNA_KC_Preview_P2Trooper.paa";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Trooper_Upper_CO.paa",
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Trooper_Lower_CO.paa",
 			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 		};
-		weapons[]=
+		weapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		respawnWeapons[]=
+		respawnWeapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		magazines[]=
+		magazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -696,7 +699,7 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		respawnMagazines[]=
+		respawnMagazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -707,53 +710,53 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		items[]=
+		items[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		respawnItems[]=
+		respawnItems[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		linkedItems[]=
+		linkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Trooper","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		respawnLinkedItems[]=
+		respawnLinkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Trooper","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		backpack="";
+		backpack = "";
 	};
 	class BNA_KC_Unit_Keeli: BNA_KC_Unit_Trooper
 	{
 		displayName = "[KC] Keeli";
-		uniformClass="BNA_KC_Uniform_Keeli";
-		hiddenSelectionsTextures[]=
+		uniformClass = "BNA_KC_Uniform_Keeli";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Keeli_Upper_CO.paa",
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Keeli_Lower_CO.paa",
 			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 		};
-		weapons[]=
+		weapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		respawnWeapons[]=
+		respawnWeapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		magazines[]=
+		magazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -764,7 +767,7 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		respawnMagazines[]=
+		respawnMagazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -775,53 +778,53 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		items[]=
+		items[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		respawnItems[]=
+		respawnItems[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		linkedItems[]=
+		linkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Keeli","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","BNA_KC_Vest_Officer_Keeli"
 		};
-		respawnLinkedItems[]=
+		respawnLinkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Keeli","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","BNA_KC_Vest_Officer_Keeli"
 		};
-		backpack="BNA_KC_Keeli_Backpack";
+		backpack = "BNA_KC_Keeli_Backpack";
 	};
 	class BNA_KC_Unit_Drake: BNA_KC_Unit_Trooper
 	{
 		displayName = "[KC] Drake";
-		uniformClass="BNA_KC_Uniform_Drake";
-		hiddenSelectionsTextures[]=
+		uniformClass = "BNA_KC_Uniform_Drake";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Drake_Upper_CO.paa",
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Drake_Lower_CO.paa",
 			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 		};
-		weapons[]=
+		weapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		respawnWeapons[]=
+		respawnWeapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		magazines[]=
+		magazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -832,7 +835,7 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		respawnMagazines[]=
+		respawnMagazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -843,53 +846,53 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		items[]=
+		items[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		respawnItems[]=
+		respawnItems[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		linkedItems[]=
+		linkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Drake","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		respawnLinkedItems[]=
+		respawnLinkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Drake","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		backpack="";
+		backpack = "";
 	};
 	class BNA_KC_Unit_Joe: BNA_KC_Unit_Trooper
 	{
 		displayName = "[KC] Joe";
-		uniformClass="BNA_KC_Uniform_Joe";
-		hiddenSelectionsTextures[]=
+		uniformClass = "BNA_KC_Uniform_Joe";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Joe_Upper_CO.paa",
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Joe_Lower_CO.paa",
 			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 		};
-		weapons[]=
+		weapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		respawnWeapons[]=
+		respawnWeapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		magazines[]=
+		magazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -900,7 +903,7 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		respawnMagazines[]=
+		respawnMagazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -911,53 +914,53 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		items[]=
+		items[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		respawnItems[]=
+		respawnItems[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		linkedItems[]=
+		linkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Joe","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		respawnLinkedItems[]=
+		respawnLinkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Joe","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		backpack="";
+		backpack = "";
 	};
 	class BNA_KC_Unit_Fil: BNA_KC_Unit_Trooper
 	{
 		displayName = "[KC] Commander Fil";
-		uniformClass="BNA_KC_Uniform_Fil";
-		hiddenSelectionsTextures[]=
+		uniformClass = "BNA_KC_Uniform_Fil";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Fil_Upper_CO.paa",
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Fil_Lower_CO.paa",
 			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 		};
-		weapons[]=
+		weapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		respawnWeapons[]=
+		respawnWeapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		magazines[]=
+		magazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -968,7 +971,7 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		respawnMagazines[]=
+		respawnMagazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -979,53 +982,53 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		items[]=
+		items[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		respawnItems[]=
+		respawnItems[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		linkedItems[]=
+		linkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Fil","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		respawnLinkedItems[]=
+		respawnLinkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Fil","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		backpack="";
+		backpack = "";
 	};
 	class BNA_KC_Unit_Fil_Squad: BNA_KC_Unit_Trooper
 	{
 		displayName = "[KC] CM-Fil's Squad Trooper";
-		uniformClass="BNA_KC_Uniform_Fil_Squad";
-		hiddenSelectionsTextures[]=
+		uniformClass = "BNA_KC_Uniform_Fil_Squad";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Fil_Squad_Upper_CO.paa",
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Fil_Squad_Lower_CO.paa",
 			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 		};
-		weapons[]=
+		weapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		respawnWeapons[]=
+		respawnWeapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		magazines[]=
+		magazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -1036,7 +1039,7 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		respawnMagazines[]=
+		respawnMagazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -1047,54 +1050,54 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		items[]=
+		items[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		respawnItems[]=
+		respawnItems[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		linkedItems[]=
+		linkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Fil_Squad","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		respawnLinkedItems[]=
+		respawnLinkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Fil_Squad","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		backpack="";
+		backpack = "";
 	};
 	
 	class BNA_KC_Unit_Pilot: BNA_KC_Unit_Trooper
 	{
 		displayName = "[KC] Clone Pilot";
-		uniformClass="BNA_KC_Uniform_Pilot";
-		hiddenSelectionsTextures[]=
+		uniformClass = "BNA_KC_Uniform_Pilot";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Pilot_Upper_CO.paa",
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Pilot_Lower_CO.paa",
 			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 		};
-		weapons[]=
+		weapons[] =
 		{
 			"BNA_KC_DC15S_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		respawnWeapons[]=
+		respawnWeapons[] =
 		{
 			"BNA_KC_DC15S_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		magazines[]=
+		magazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -1105,7 +1108,7 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		respawnMagazines[]=
+		respawnMagazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -1116,27 +1119,27 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		items[]=
+		items[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		respawnItems[]=
+		respawnItems[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		linkedItems[]=
+		linkedItems[] =
 		{
 			"BNA_KC_PilotHelmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		respawnLinkedItems[]=
+		respawnLinkedItems[] =
 		{
 			"BNA_KC_PilotHelmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		backpack="";
+		backpack = "";
 	};
 	
 	class BNA_KC_Unit_Snow_Trooper: lsd_gar_phase2Insulated_base
@@ -1144,33 +1147,33 @@ class CfgVehicles
 		dlc = "BNA_KC";
 		author = "SweMonkey";
 		displayName = "[KC] Snow Trooper";
-		uniformClass="BNA_KC_Uniform_Snow_Trooper";
+		uniformClass = "BNA_KC_Uniform_Snow_Trooper";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		faction="BNA_KCFac";
-		editorSubcategory="BNA_KCSub_InfP2";
-		hiddenSelectionsTextures[]=
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_InfP2";
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Snow_Upper_CO.paa",
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Snow_Lower_CO.paa",
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Snow_Undersuit_CO.paa"
 		};
-		weapons[]=
+		weapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		respawnWeapons[]=
+		respawnWeapons[] =
 		{
 			"BNA_KC_DC15C_Predef",
 			"SWLB_clone_binocular",
 			"Throw",
 			"Put"
 		};
-		magazines[]=
+		magazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -1181,7 +1184,7 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		respawnMagazines[]=
+		respawnMagazines[] =
 		{
 			ITEM_5("SWLW_DC17_Mag"),
 			ITEM_3("ls_mag_classC_thermalDet"),
@@ -1192,27 +1195,27 @@ class CfgVehicles
 			ITEM_2("3AS_SmokeRed"),
 			ITEM_2("3AS_SmokePurple")
 		};
-		items[]=
+		items[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		respawnItems[]=
+		respawnItems[] =
 		{
 			ITEM_9("ACE_quikclot"),
 			ITEM_5("ACE_tourniquet"),
 			"ACE_EntrenchingTool"
 		};
-		linkedItems[]=
+		linkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Snow_Trooper","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		respawnLinkedItems[]=
+		respawnLinkedItems[] =
 		{
 			"BNA_KC_P2Helmet_Snow_Trooper","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
-		backpack="";
+		backpack = "";
 	};
 	
 	#define MAG_XX(a,b) class _xx_##a {magazine = a; count = b;}
@@ -1270,8 +1273,8 @@ class CfgVehicles
 	class BNA_KC_Standard_laati: lsd_heli_laati
 	{
 		displayName = "[KC] Standard LAAT Gunship w/ Pylons";
-		faction="BNA_KCFac";
-		editorSubcategory="BNA_KCSub_LAATS";
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_LAATS";
 		crew = "BNA_KC_Unit_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
@@ -1285,13 +1288,13 @@ class CfgVehicles
 			"BNA_KC_Gear\Data\LAATS\BNA_KC_LAAT_Standard_Cockpits_CO.paa",
 			"lsd_vehicles_heli\laati\data\glass_ca.paa"
 		};
-		textureList[]={};
+		textureList[] = {};
 	};
 	class BNA_KC_Standard_laati_transport: lsd_heli_laati_transport
 	{
 		displayName = "[KC] Standard LAAT Transport";
-		faction="BNA_KCFac";
-		editorSubcategory="BNA_KCSub_LAATS";
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_LAATS";
 		crew = "BNA_KC_Unit_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
@@ -1305,14 +1308,14 @@ class CfgVehicles
 			"BNA_KC_Gear\Data\LAATS\BNA_KC_LAAT_Standard_Cockpits_CO.paa",
 			"lsd_vehicles_heli\laati\data\glass_ca.paa"
 		};
-		textureList[]={};
+		textureList[] = {};
 	};
 	
 	class BNA_KC_Dexus_laati: lsd_heli_laati
 	{
 		displayName = "[KC] Dexus LAAT Gunship w/ Pylons";
-		faction="BNA_KCFac";
-		editorSubcategory="BNA_KCSub_LAATS";
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_LAATS";
 		crew = "BNA_KC_Unit_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
@@ -1346,7 +1349,7 @@ class CfgVehicles
 			"BNA_KC_Gear\Data\LAATS\BNA_KC_LAAT_Dexus_Cockpits_CO.paa",
 			"lsd_vehicles_heli\laati\data\glass_ca.paa"
 		};
-		textureList[]={};
+		textureList[] = {};
 	};
 	
 	class BNA_KC_Standard_laatc: lsd_heli_laatc
@@ -1363,7 +1366,7 @@ class CfgVehicles
 			"BNA_KC_Gear\Data\LAATS\BNA_KC_LAAT_C_Hull_CO.paa",
 			"BNA_KC_Gear\Data\LAATS\BNA_KC_LAAT_C_Wings_CO.paa"
 		};
-		textureList[]={};
+		textureList[] = {};
 	};
 	
 	//-----------------------------------------------------
