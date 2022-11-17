@@ -232,6 +232,7 @@ class CfgWeapons
 			uniformClass = "BNA_KC_Unit_Pilot";
 			containerClass = "Supply150";
 			mass = 40;
+			uniformType = "Neopren";
 		};
 	};
 	
