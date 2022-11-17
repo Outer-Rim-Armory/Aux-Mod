@@ -14,13 +14,13 @@
 		};
 	};
 	
-	// Drake
-	class BNA_KC_P2Helmet_Drake: BNA_KC_P2Helmet_Trooper
+	// Guardian
+	class BNA_KC_P2Helmet_Guardian: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Drake's Helmet";
+		displayName = "[KC] Guardian's Helmet";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Drake_CO.paa",
+			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Guardian_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
@@ -131,7 +131,7 @@
 	// Keeli
 	class BNA_KC_Uniform_Keeli: BNA_KC_Uniform_Trooper
 	{
-		displayName = "[KC] Keeli's Uniform";
+		displayName = "[KC] Clone Trooper Uniform (Keeli)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -142,14 +142,14 @@
 		};
 	};
 	
-	// Drake
-	class BNA_KC_Uniform_Drake: BNA_KC_Uniform_Trooper
+	// Guardian
+	class BNA_KC_Uniform_Guardian: BNA_KC_Uniform_Trooper
 	{
-		displayName = "[KC] Drake's Uniform";
+		displayName = "[KC] Guardian's Uniform";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "BNA_KC_Unit_Drake";
+			uniformClass = "BNA_KC_Unit_Guardian";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";

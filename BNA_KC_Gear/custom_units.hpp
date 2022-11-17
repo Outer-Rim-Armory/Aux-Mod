@@ -73,15 +73,15 @@
 		backpack = "BNA_KC_Keeli_Backpack";
 	};
 	
-	// Drake
-	class BNA_KC_Unit_Drake: BNA_KC_Unit_Trooper
+	// Guardian
+	class BNA_KC_Unit_Guardian: BNA_KC_Unit_Trooper
 	{
-		displayName = "[KC] Drake";
-		uniformClass = "BNA_KC_Uniform_Drake";
+		displayName = "[KC] Guardian";
+		uniformClass = "BNA_KC_Uniform_Guardian";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Drake_Upper_CO.paa",
-			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Drake_Lower_CO.paa",
+			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Guardian_Upper_CO.paa",
+			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Guardian_Lower_CO.paa",
 			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 		};
 		weapons[] =
@@ -134,11 +134,11 @@
 		};
 		linkedItems[] =
 		{
-			"BNA_KC_P2Helmet_Drake","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+			"BNA_KC_P2Helmet_Guardian","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
 		respawnLinkedItems[] =
 		{
-			"BNA_KC_P2Helmet_Drake","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+			"BNA_KC_P2Helmet_Guardian","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 		};
 		backpack = "";
 	};

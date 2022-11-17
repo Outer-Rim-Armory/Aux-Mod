@@ -909,7 +909,7 @@ class CfgVehicles
 				onlyForPlayer = 1;
 				shortcut = "";
 				condition = "alive player && isNull objectParent player"; // Only show if the unit is alive and is not a player
-				statement = "player setUnitLoadout 'BNA_KC_Unit_Drake'";
+				statement = "player setUnitLoadout 'BNA_KC_Unit_Guardian'";
 			};
 		};
 	};

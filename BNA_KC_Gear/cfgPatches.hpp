@@ -30,7 +30,7 @@ class CfgPatches
 
 			// Customs
 			"BNA_KC_Unit_Keeli",
-			"BNA_KC_Unit_Drake",
+			"BNA_KC_Unit_Guardian",
 			"BNA_KC_Unit_Joe",
 			"BNA_KC_Unit_Fil",
 			"BNA_KC_Unit_Fil_Squad",
@@ -80,7 +80,7 @@ class CfgPatches
 			// Helmets
 			// P2
 			"BNA_KC_P2Helmet_Keeli",
-			"BNA_KC_P2Helmet_Drake",
+			"BNA_KC_P2Helmet_Guardian",
 			"BNA_KC_P2Helmet_Dexus",
 			"BNA_KC_P2Helmet_Vortex",
 			"BNA_KC_P2Helmet_Burnt",
@@ -94,7 +94,7 @@ class CfgPatches
 
 			// Uniforms
 			"BNA_KC_Uniform_Keeli",
-			"BNA_KC_Uniform_Drake",
+			"BNA_KC_Uniform_Guardian",
 			"BNA_KC_Uniform_Joe",
 			"BNA_KC_Uniform_Fil",
 			"BNA_KC_Uniform_Fil_Squad",
