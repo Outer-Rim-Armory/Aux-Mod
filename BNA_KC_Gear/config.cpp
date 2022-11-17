@@ -33,7 +33,7 @@ class CfgWeapons
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Clone Trooper Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (CT)";
 		scope = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
@@ -44,7 +44,7 @@ class CfgWeapons
 	};
 	class BNA_KC_P2Helmet_Officer: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Clone Officer Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (Officer)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Officer_CO.paa",
@@ -53,7 +53,7 @@ class CfgWeapons
 	};
 	class BNA_KC_P2Helmet_Recruit: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Clone Recruit Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (CR)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Recruit_CO.paa",
@@ -62,7 +62,7 @@ class CfgWeapons
 	};
 	class BNA_KC_P2Helmet_VCT: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] VCT Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (VCT)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_VCT_CO.paa",
@@ -71,7 +71,7 @@ class CfgWeapons
 	};
 	class BNA_KC_P2Helmet_SCT: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] SCT Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (SCT)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_SCT_CO.paa",
@@ -80,7 +80,7 @@ class CfgWeapons
 	};
 	class BNA_KC_P2Helmet_LCPL_CPL: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] LCPL-CPL Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (LCPL-CPL)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_LCPL_CPL_CO.paa",
@@ -89,7 +89,7 @@ class CfgWeapons
 	};
 	class BNA_KC_P2Helmet_CS_CSS: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] CS-CSS Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (CS-CSS)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_CS_CSS_CO.paa",
@@ -98,7 +98,7 @@ class CfgWeapons
 	};
 	class BNA_KC_P2Helmet_CMS_CSM: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] CMS-CSM Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (CMS-CSM)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_CMS_CSM_CO.paa",
@@ -113,7 +113,7 @@ class CfgWeapons
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Clone Pilot Helmet";
+		displayName = "[KC] Clone Pilot P2 Helmet";
 		scope = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
@@ -150,7 +150,7 @@ class CfgWeapons
 		author = "SweMonkey";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[KC] Snow Trooper Helmet";
+		displayName = "[KC] Clone Trooper Insulated P2 Helmet";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Snow_Trooper_CO.paa"
@@ -166,7 +166,7 @@ class CfgWeapons
 		author = "SweMonkey";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[KC] ARF Helmet";
+		displayName = "[KC] Clone Trooper P2 ARF Helmet";
 		hiddenSelectionsTextures[] = 
 		{
 			"BNA_KC_Gear\Data\BNA_KC_ARFHelmet_CO.paa",
@@ -184,12 +184,12 @@ class CfgWeapons
 		author = "SweMonkey";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[KC] Reeker Helmet 1";
+		displayName = "[KC] Clone Trooper P2 Reeker Helmet (v1)";
 		hiddenSelectionsTextures[] = {"BNA_KC_Gear\Data\BNA_KC_Reeker1_CO.paa","ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"};
 	};
 	class BNA_KC_P2_Reeker_Helmet_2: BNA_KC_P2_Reeker_Helmet_1
 	{
-		displayName = "[KC] Reeker Helmet 2";
+		displayName = "[KC] Clone Trooper P2 Reeker Helmet (v2)";
 		hiddenSelectionsTextures[] = {"BNA_KC_Gear\Data\BNA_KC_Reeker2_CO.paa","ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"};
 	};
 	
@@ -204,7 +204,6 @@ class CfgWeapons
 	class lsd_gar_phase2insulated_uniform;
 	
 	// Trooper
-	// Base
 	class BNA_KC_Uniform_Trooper: ls_gar_phase2_uniform
 	{
 		dlc = "BNA_KC";
@@ -222,10 +221,9 @@ class CfgWeapons
 	};
 	
 	// Pilot
-	// Base
 	class BNA_KC_Uniform_Pilot: BNA_KC_Uniform_Trooper
 	{
-		displayName = "[KC] Pilot Uniform";
+		displayName = "[KC] Clone Pilot Uniform";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -237,12 +235,11 @@ class CfgWeapons
 	};
 	
 	// Snow Trooper
-	// Base
 	class BNA_KC_Uniform_Snow_Trooper: lsd_gar_phase2insulated_uniform
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Snow Trooper Uniform";
+		displayName = "[KC] Clone Snow Trooper Uniform";
 		scope = 2;
 		class ItemInfo: UniformItem
 		{
@@ -265,7 +262,7 @@ class CfgWeapons
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Keeli Pauldrons";
+		displayName = "[KC] Clone Trooper Officer Vest (Keeli)";
 		scope = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
@@ -308,7 +305,7 @@ class CfgWeapons
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Arc Vest";
+		displayName = "[KC] Clone ARC Trooper Vest";
 		scope = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
@@ -453,7 +450,7 @@ class CfgWeapons
 	// Keeli
 	class BNA_KC_NVG_Keeli: BNA_KC_NVG
 	{
-		displayName = "[KC] Republic P2 NV Visor (KC Keeli)";
+		displayName = "[KC] Republic P2 NV Visor (Keeli)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_NVG_Keeli_CO.paa"
@@ -746,11 +743,24 @@ class CfgVehicles
 	#define ITEM_XX(a,b) class _xx_##a {name = a; count = b;}
 	
 	class SWLB_clone_backpack;
-	class BNA_KC_Keeli_Backpack: SWLB_clone_backpack
+
+	class BNA_KC_Backpack: SWLB_clone_backpack
+	{
+		displayName = "[KC] Clone Trooper Backpack";
+		hiddenSelectionsTextures[]=
+		{
+			"BNA_KC_Gear\Data\BNA_KC_Backpack_CO.paa",
+			"BNA_KC_Gear\Data\BNA_KC_Backpack_CO.paa",
+			"",
+			""
+		};
+	};
+
+	class BNA_KC_Backpack_Keeli: BNA_KC_Backpack
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Keeli's Backpack";
+		displayName = "[KC] Clone Trooper Backpack (Keeli)";
 		scope = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[]=
@@ -761,20 +771,10 @@ class CfgVehicles
 			""
 		};
 	};
-	class BNA_KC_Backpack: BNA_KC_Keeli_Backpack
+	
+	class BNA_KC_Backpack_Medic: BNA_KC_Backpack
 	{
-		displayName = "[KC] Clone Backpack";
-		hiddenSelectionsTextures[]=
-		{
-			"BNA_KC_Gear\Data\BNA_KC_Backpack_CO.paa",
-			"BNA_KC_Gear\Data\BNA_KC_Backpack_CO.paa",
-			"",
-			""
-		};
-	};
-	class BNA_KC_Medic_Backpack: BNA_KC_Keeli_Backpack
-	{
-		displayName = "[KC] Medic Backpack";
+		displayName = "[KC] Clone Trooper Medic Backpack";
 		hiddenSelectionsTextures[]=
 		{
 			"BNA_KC_Gear\Data\BNA_KC_Medic_Backpack_CO.paa",

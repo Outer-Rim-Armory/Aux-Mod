@@ -6,7 +6,7 @@
 	// Keeli
 	class BNA_KC_P2Helmet_Keeli: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Keeli's Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (Keeli)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Keeli_CO.paa",
@@ -17,7 +17,7 @@
 	// Guardian
 	class BNA_KC_P2Helmet_Guardian: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Guardian's Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (Guardian)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Guardian_CO.paa",
@@ -28,7 +28,7 @@
 	// Dexus
 	class BNA_KC_P2Helmet_Dexus: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Dexus's Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (Dexus)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Dexus_CO.paa",
@@ -39,7 +39,7 @@
 	// Vortex
 	class BNA_KC_P2Helmet_Vortex: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Vortex's Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (Vortex)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Vortex_CO.paa",
@@ -50,7 +50,7 @@
 	// Burnt
 	class BNA_KC_P2Helmet_Burnt: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Burnt's Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (Burnt)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Burnt_CO.paa",
@@ -61,7 +61,7 @@
 	// Patriot
 	class BNA_KC_P2Helmet_Patriot: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Patriot's Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (Patriot)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Patriot_CO.paa",
@@ -72,7 +72,7 @@
 	// Joe
 	class BNA_KC_P2Helmet_Joe: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Joe's Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (Joe)";
 		hiddenSelectionsMaterials[] = 
 		{
 			"",
@@ -88,7 +88,7 @@
 	// Commander Fil
 	class BNA_KC_P2Helmet_Fil: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Commander Fil's Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (Fil)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Fil_CO.paa",
@@ -99,7 +99,7 @@
 	// Commander Fil's Squad Members
 	class BNA_KC_P2Helmet_Fil_Squad: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] CM-Fil's Squad Helmet";
+		displayName = "[KC] Clone Trooper P2 Helmet (Fil's Squad)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Fil_Squad_CO.paa",
@@ -111,7 +111,7 @@
 	// Dexus
 	class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
 	{
-		displayName = "[KC] Dexus's Helmet (Pilot)";
+		displayName = "[KC] Clone Pilot P2 Helmet (Dexus)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_PilotHelmet_Dexus_CO.paa",
@@ -145,7 +145,7 @@
 	// Guardian
 	class BNA_KC_Uniform_Guardian: BNA_KC_Uniform_Trooper
 	{
-		displayName = "[KC] Guardian's Uniform";
+		displayName = "[KC] Clone Trooper Uniform (Guardian)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -159,7 +159,7 @@
 	// Joe
 	class BNA_KC_Uniform_Joe: BNA_KC_Uniform_Trooper
 	{
-		displayName = "[KC] Joe's Uniform";
+		displayName = "[KC] Clone Trooper Uniform (Joe)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -173,7 +173,7 @@
 	// Commander Fil
 	class BNA_KC_Uniform_Fil: BNA_KC_Uniform_Trooper
 	{
-		displayName = "[KC] Commander Fil's Uniform";
+		displayName = "[KC] Clone Trooper Uniform (Fil)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -187,7 +187,7 @@
 	// Commander Fil's Squad Members
 	class BNA_KC_Uniform_Fil_Squad: BNA_KC_Uniform_Trooper
 	{
-		displayName = "[KC] CM-Fil's Squad Uniform";
+		displayName = "[KC] Clone Trooper Uniform (Fil's Squad)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
