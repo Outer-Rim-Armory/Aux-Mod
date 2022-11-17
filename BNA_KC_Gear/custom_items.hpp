@@ -106,6 +106,28 @@
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
+
+	// Ponds
+	class BNA_KC_P2Helmet_Ponds: BNA_KC_P2Helmet_Trooper
+	{
+		displayName = "[KC] Clone Trooper P2 Helmet (Ponds)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Ponds_CO.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+
+	// Stone
+	class BNA_KC_P2Helmet_Stone: BNA_KC_P2Helmet_Trooper
+	{
+		displayName = "[KC] Clone Trooper P2 Helmet (Stone)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Stone_CO.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
 	
 	// Pilot
 	// Dexus
@@ -197,6 +219,35 @@
 			uniformType = "Neopren";
 		};
 	};
+
+	// Ponds
+	class BNA_KC_Uniform_Ponds: BNA_KC_Uniform_Trooper
+	{
+		displayName = "[KC] Clone Trooper Uniform (Ponds)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Ponds";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	// Stone
+	class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Trooper
+	{
+		displayName = "[KC] Clone Trooper Uniform (Stone)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Stone";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
 	
 	//---------------------------------------------------
 	// Vests

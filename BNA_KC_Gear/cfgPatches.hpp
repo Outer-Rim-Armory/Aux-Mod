@@ -88,6 +88,8 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Joe",
 			"BNA_KC_P2Helmet_Fil",
 			"BNA_KC_P2Helmet_Fil_Squad",
+			"BNA_KC_P2Helmet_Ponds",
+			"BNA_KC_P2Helmet_Stone",
 
 			// Pilots
 			"BNA_KC_PilotHelmet_Dexus",
@@ -98,6 +100,8 @@ class CfgPatches
 			"BNA_KC_Uniform_Joe",
 			"BNA_KC_Uniform_Fil",
 			"BNA_KC_Uniform_Fil_Squad",
+			"BNA_KC_Uniform_Ponds",
+			"BNA_KC_Uniform_Stone",
 
 			// Vests
 			"BNA_KC_Vest_Officer_Keeli",

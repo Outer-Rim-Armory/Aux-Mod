@@ -352,6 +352,146 @@
 		};
 		backpack = "";
 	};
+
+	// Ponds
+	class BNA_KC_Unit_Ponds: BNA_KC_Unit_Trooper
+	{
+		displayName = "[KC] Ponds";
+		uniformClass = "BNA_KC_Uniform_Ponds";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Ponds_Upper_CO.paa",
+			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Ponds_Lower_CO.paa",
+			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+		};
+		weapons[] =
+		{
+			"BNA_KC_DC15C_Predef",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[] =
+		{
+			"BNA_KC_DC15C_Predef",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[] =
+		{
+			ITEM_5("SWLW_DC17_Mag"),
+			ITEM_3("ls_mag_classC_thermalDet"),
+			ITEM_9("3AS_40Rnd_EC40_Mag"),
+			ITEM_3("ShieldGrenade_Mag"),
+			ITEM_4("3AS_SmokeBlue"),
+			ITEM_3("3AS_SmokeWhite"),
+			ITEM_2("3AS_SmokeRed"),
+			ITEM_2("3AS_SmokePurple")
+		};
+		respawnMagazines[] =
+		{
+			ITEM_5("SWLW_DC17_Mag"),
+			ITEM_3("ls_mag_classC_thermalDet"),
+			ITEM_9("3AS_40Rnd_EC40_Mag"),
+			ITEM_3("ShieldGrenade_Mag"),
+			ITEM_4("3AS_SmokeBlue"),
+			ITEM_3("3AS_SmokeWhite"),
+			ITEM_2("3AS_SmokeRed"),
+			ITEM_2("3AS_SmokePurple")
+		};
+		items[] =
+		{
+			ITEM_9("ACE_quikclot"),
+			ITEM_5("ACE_tourniquet"),
+			"ACE_EntrenchingTool"
+		};
+		respawnItems[] =
+		{
+			ITEM_9("ACE_quikclot"),
+			ITEM_5("ACE_tourniquet"),
+			"ACE_EntrenchingTool"
+		};
+		linkedItems[] =
+		{
+			"BNA_KC_P2Helmet_Ponds","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_P2Helmet_Ponds","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+		};
+		backpack = "";
+	};
+
+	// Stone
+	class BNA_KC_Unit_Stone: BNA_KC_Unit_Trooper
+	{
+		displayName = "[KC] Stone";
+		uniformClass = "BNA_KC_Uniform_Stone";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Stone_Upper_CO.paa",
+			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Stone_Lower_CO.paa",
+			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+		};
+		weapons[] =
+		{
+			"BNA_KC_DC15C_Predef",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[] =
+		{
+			"BNA_KC_DC15C_Predef",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[] =
+		{
+			ITEM_5("SWLW_DC17_Mag"),
+			ITEM_3("ls_mag_classC_thermalDet"),
+			ITEM_9("3AS_40Rnd_EC40_Mag"),
+			ITEM_3("ShieldGrenade_Mag"),
+			ITEM_4("3AS_SmokeBlue"),
+			ITEM_3("3AS_SmokeWhite"),
+			ITEM_2("3AS_SmokeRed"),
+			ITEM_2("3AS_SmokePurple")
+		};
+		respawnMagazines[] =
+		{
+			ITEM_5("SWLW_DC17_Mag"),
+			ITEM_3("ls_mag_classC_thermalDet"),
+			ITEM_9("3AS_40Rnd_EC40_Mag"),
+			ITEM_3("ShieldGrenade_Mag"),
+			ITEM_4("3AS_SmokeBlue"),
+			ITEM_3("3AS_SmokeWhite"),
+			ITEM_2("3AS_SmokeRed"),
+			ITEM_2("3AS_SmokePurple")
+		};
+		items[] =
+		{
+			ITEM_9("ACE_quikclot"),
+			ITEM_5("ACE_tourniquet"),
+			"ACE_EntrenchingTool"
+		};
+		respawnItems[] =
+		{
+			ITEM_9("ACE_quikclot"),
+			ITEM_5("ACE_tourniquet"),
+			"ACE_EntrenchingTool"
+		};
+		linkedItems[] =
+		{
+			"BNA_KC_P2Helmet_Stone","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_P2Helmet_Stone","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+		};
+		backpack = "";
+	};
 	
 	// Pilot
 	// Snow Trooper
