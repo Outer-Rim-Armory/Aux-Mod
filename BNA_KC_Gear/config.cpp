@@ -217,6 +217,7 @@ class CfgWeapons
 			uniformClass = "BNA_KC_Unit_Trooper";
 			containerClass = "Supply150";
 			mass = 40;
+			uniformType = "Neopren";
 		};
 	};
 	
@@ -248,6 +249,7 @@ class CfgWeapons
 			uniformClass = "BNA_KC_Unit_Snow_Trooper";
 			containerClass = "Supply150";
 			mass = 40;
+			uniformType = "Neopren";
 		};
 	};
 	//---------------------------------------------------

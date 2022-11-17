@@ -138,6 +138,7 @@
 			uniformClass = "BNA_KC_Unit_Keeli";
 			containerClass = "Supply150";
 			mass = 40;
+			uniformType = "Neopren";
 		};
 	};
 	
@@ -151,6 +152,7 @@
 			uniformClass = "BNA_KC_Unit_Drake";
 			containerClass = "Supply150";
 			mass = 40;
+			uniformType = "Neopren";
 		};
 	};
 	
@@ -164,6 +166,7 @@
 			uniformClass = "BNA_KC_Unit_Joe";
 			containerClass = "Supply150";
 			mass = 40;
+			uniformType = "Neopren";
 		};
 	};
 	
@@ -177,6 +180,7 @@
 			uniformClass = "BNA_KC_Unit_Fil";
 			containerClass = "Supply150";
 			mass = 40;
+			uniformType = "Neopren";
 		};
 	};
 	
@@ -190,6 +194,7 @@
 			uniformClass = "BNA_KC_Unit_Fil_Squad";
 			containerClass = "Supply150";
 			mass = 40;
+			uniformType = "Neopren";
 		};
 	};
 	
