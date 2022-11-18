@@ -70,7 +70,7 @@
 		{
 			"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Keeli","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","BNA_KC_Vest_Officer_Keeli"
 		};
-		backpack = "BNA_KC_Keeli_Backpack";
+		backpack = "BNA_KC_Backpack_Keeli";
 	};
 	
 	// Guardian
