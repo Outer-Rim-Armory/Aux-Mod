@@ -64,11 +64,11 @@
 		};
 		linkedItems[] =
 		{
-			"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Keeli","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","BNA_KC_Vest_Officer_Keeli"
+			"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Keeli_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","BNA_KC_Vest_Officer_Keeli"
 		};
 		respawnLinkedItems[] =
 		{
-			"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Keeli","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","BNA_KC_Vest_Officer_Keeli"
+			"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Keeli_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","BNA_KC_Vest_Officer_Keeli"
 		};
 		backpack = "BNA_KC_Backpack_Keeli";
 	};
