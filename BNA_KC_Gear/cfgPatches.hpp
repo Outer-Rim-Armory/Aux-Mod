@@ -34,6 +34,8 @@ class CfgPatches
 			"BNA_KC_Unit_Joe",
 			"BNA_KC_Unit_Fil",
 			"BNA_KC_Unit_Fil_Squad",
+			"BNA_KC_Unit_Ponds",
+			"BNA_KC_Unit_Stone",
 
 			// Objects
 			"BNA_KC_Gonk_Basic",
@@ -51,7 +53,12 @@ class CfgPatches
 		weapons[] =
 		{
 			// Base Armor
-			// Helmets
+			// P1 Helmets
+			"BNA_KC_P1Helmet_Trooper_v1",
+			"BNA_KC_P1Helmet_Trooper_v2",
+			"BNA_KC_P1Helmet_Trooper_v3",
+
+			// P2 Helmets
 			"BNA_KC_P2Helmet_Trooper",
 			"BNA_KC_P2Helmet_Officer",
 			"BNA_KC_P2Helmet_Recruit",
@@ -60,13 +67,19 @@ class CfgPatches
 			"BNA_KC_P2Helmet_LCPL_CPL",
 			"BNA_KC_P2Helmet_CS_CSS",
 			"BNA_KC_P2Helmet_CMS_CSM",
+			
+			// P1 Pilots
 
+			// P2 Pilots
 			"BNA_KC_PilotHelmet",
 
+			// Engineer
 			"BNA_KC_Engineer_Helmet",
 
+			// Insulated
 			"BNA_KC_P2Helmet_Snow_Trooper",
 
+			// SpecOPs
 			"BNA_KC_P2_Reeker_Helmet_1",
 			"BNA_KC_P2_Reeker_Helmet_2",
 
@@ -77,8 +90,9 @@ class CfgPatches
 			
 			
 			// Customs
-			// Helmets
-			// P2
+			// P1 Helmets
+
+			// P2 Helmets
 			"BNA_KC_P2Helmet_Keeli",
 			"BNA_KC_P2Helmet_Guardian",
 			"BNA_KC_P2Helmet_Dexus",
@@ -90,8 +104,12 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Fil_Squad",
 			"BNA_KC_P2Helmet_Ponds",
 			"BNA_KC_P2Helmet_Stone",
+			"BNA_KC_P2Helmet_Sytha",
+			"BNA_KC_P2Helmet_Ox",
 
-			// Pilots
+			// P1 Pilots
+
+			// P2 Pilots
 			"BNA_KC_PilotHelmet_Dexus",
 
 			// Uniforms

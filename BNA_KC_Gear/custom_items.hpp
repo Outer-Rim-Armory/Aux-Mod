@@ -2,7 +2,9 @@
 	// Helmet Customs
 	//---------------------------------------------------
 	
-	// Trooper
+	// Phase 1 Helmets
+
+	// Phase 2 Helmets
 	// Keeli
 	class BNA_KC_P2Helmet_Keeli: BNA_KC_P2Helmet_Trooper
 	{
@@ -85,7 +87,7 @@
 		};
 	};
 	
-	// Commander Fil
+	// Fil
 	class BNA_KC_P2Helmet_Fil: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Clone Trooper P2 Helmet (Fil)";
@@ -96,7 +98,7 @@
 		};
 	};
 	
-	// Commander Fil's Squad Members
+	// Fil's Squad Members
 	class BNA_KC_P2Helmet_Fil_Squad: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Clone Trooper P2 Helmet (Fil's Squad)";
@@ -110,6 +112,7 @@
 	// Ponds
 	class BNA_KC_P2Helmet_Ponds: BNA_KC_P2Helmet_Trooper
 	{
+		author = "DartRuffian";
 		displayName = "[KC] Clone Trooper P2 Helmet (Ponds)";
 		hiddenSelectionsTextures[] =
 		{
@@ -121,6 +124,7 @@
 	// Stone
 	class BNA_KC_P2Helmet_Stone: BNA_KC_P2Helmet_Trooper
 	{
+		author = "DartRuffian";
 		displayName = "[KC] Clone Trooper P2 Helmet (Stone)";
 		hiddenSelectionsTextures[] =
 		{
@@ -128,7 +132,31 @@
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
-	
+
+	// Ox
+	class BNA_KC_P2Helmet_Sytha: BNA_KC_P2Helmet_Trooper
+	{
+		author = "DartRuffian";
+		displayName = "[KC] Clone Trooper P2 Helmet (Sytha)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Sytha_CO.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+
+	// Ox
+	class BNA_KC_P2Helmet_Ox: BNA_KC_P2Helmet_Trooper
+	{
+		author = "DartRuffian";
+		displayName = "[KC] Clone Trooper P2 Helmet (Ox)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Ox_CO.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+
 	// Pilot
 	// Dexus
 	class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
@@ -192,7 +220,7 @@
 		};
 	};
 	
-	// Commander Fil
+	// Fil
 	class BNA_KC_Uniform_Fil: BNA_KC_Uniform_Trooper
 	{
 		displayName = "[KC] Clone Trooper Uniform (Fil)";
@@ -206,7 +234,7 @@
 		};
 	};
 	
-	// Commander Fil's Squad Members
+	// Fil's Squad Members
 	class BNA_KC_Uniform_Fil_Squad: BNA_KC_Uniform_Trooper
 	{
 		displayName = "[KC] Clone Trooper Uniform (Fil's Squad)";
@@ -223,6 +251,7 @@
 	// Ponds
 	class BNA_KC_Uniform_Ponds: BNA_KC_Uniform_Trooper
 	{
+		author = "DartRuffian";
 		displayName = "[KC] Clone Trooper Uniform (Ponds)";
 		class ItemInfo: UniformItem
 		{
@@ -237,6 +266,7 @@
 	// Stone
 	class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Trooper
 	{
+		author = "DartRuffian";
 		displayName = "[KC] Clone Trooper Uniform (Stone)";
 		class ItemInfo: UniformItem
 		{

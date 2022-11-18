@@ -17,18 +17,65 @@ class CfgWeapons
 	// Helmets
 	//---------------------------------------------------
 	
-	
+	class ls_gar_phase1_helmet;
+	class ls_gar_phase1Arf_helmet;
+	class ls_gar_phase1Pilot_helmet;
 
 	class ls_gar_phase2_helmet;
+	// Phase 1 ARF is always used
 	class ls_gar_phase2Pilot_helmet;
 	class ls_gar_engineer_helmet;
+	class lsd_gar_airborne_helmet;
 	class ls_gar_phase2insulated_helmet;
-	class ls_gar_phase1Arf_helmet;
 	class ls_sob_phase2SpecOp_helmet;
 	
 	//---------------------------------------------------
-	// Standard Helmets
+	// Phase 1 Helmets
 	//---------------------------------------------------
+
+	// Version 1
+	class BNA_KC_P1Helmet_Trooper_v1: ls_gar_phase1_helmet
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeArsenal = 2;
+
+		displayName = "[KC] Clone Trooper P1 Helmet (v1)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_P1Helmet_Trooper_v1_CO.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		};
+	};
+
+	// Version 2
+	class BNA_KC_P1Helmet_Trooper_v2: BNA_KC_P1Helmet_Trooper_v1
+	{
+		displayName = "[KC] Clone Trooper P1 Helmet (v2)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_P1Helmet_Trooper_v2_CO.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		};
+	};
+
+	// Version 3
+	class BNA_KC_P1Helmet_Trooper_v3: BNA_KC_P1Helmet_Trooper_v1
+	{
+		displayName = "[KC] Clone Trooper P1 Helmet (v3)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_P1Helmet_Trooper_v3_CO.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		};
+	};
+
+	//---------------------------------------------------
+	// Phase 2 Helmets
+	//---------------------------------------------------
+
+	// Standard (CT)
 	class BNA_KC_P2Helmet_Trooper: ls_gar_phase2_helmet
 	{
 		dlc = "BNA_KC";
@@ -42,15 +89,8 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
-	class BNA_KC_P2Helmet_Officer: BNA_KC_P2Helmet_Trooper
-	{
-		displayName = "[KC] Clone Trooper P2 Helmet (Officer)";
-		hiddenSelectionsTextures[] =
-		{
-			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Officer_CO.paa",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
+
+	// CR Helmet
 	class BNA_KC_P2Helmet_Recruit: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Clone Trooper P2 Helmet (CR)";
@@ -60,15 +100,8 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
-	class BNA_KC_P2Helmet_VCT: BNA_KC_P2Helmet_Trooper
-	{
-		displayName = "[KC] Clone Trooper P2 Helmet (VCT)";
-		hiddenSelectionsTextures[] =
-		{
-			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_VCT_CO.paa",
-			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-		};
-	};
+	
+	// SCT Helmet
 	class BNA_KC_P2Helmet_SCT: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Clone Trooper P2 Helmet (SCT)";
@@ -78,6 +111,19 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
+
+	// VCT Helmet
+	class BNA_KC_P2Helmet_VCT: BNA_KC_P2Helmet_Trooper
+	{
+		displayName = "[KC] Clone Trooper P2 Helmet (VCT)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_VCT_CO.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+
+	// LCPL-CPL Helmet
 	class BNA_KC_P2Helmet_LCPL_CPL: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Clone Trooper P2 Helmet (LCPL-CPL)";
@@ -87,6 +133,8 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
+
+	// CS-CSS Helmet
 	class BNA_KC_P2Helmet_CS_CSS: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Clone Trooper P2 Helmet (CS-CSS)";
@@ -96,12 +144,25 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
+
+	// CMS-CSM Helmet
 	class BNA_KC_P2Helmet_CMS_CSM: BNA_KC_P2Helmet_Trooper
 	{
 		displayName = "[KC] Clone Trooper P2 Helmet (CMS-CSM)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_CMS_CSM_CO.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+
+	// Officer
+	class BNA_KC_P2Helmet_Officer: BNA_KC_P2Helmet_Trooper
+	{
+		displayName = "[KC] Clone Trooper P2 Helmet (Officer)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_P2Helmet_Officer_CO.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
