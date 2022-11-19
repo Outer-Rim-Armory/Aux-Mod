@@ -34,7 +34,7 @@ class CfgWeapons
 	//---------------------------------------------------
 
 	// Version 1
-	class BNA_KC_P1Helmet_Trooper_v1: ls_gar_phase1_helmet
+	class BNA_KC_P1Helmet_Trooper: ls_gar_phase1_helmet
 	{
 		dlc = "BNA_KC";
 		author = "DartRuffian";
@@ -50,7 +50,7 @@ class CfgWeapons
 	};
 
 	// Version 2
-	class BNA_KC_P1Helmet_Trooper_v2: BNA_KC_P1Helmet_Trooper_v1
+	class BNA_KC_P1Helmet_Trooper_v2: BNA_KC_P1Helmet_Trooper
 	{
 		displayName = "[KC] Clone Trooper P1 Helmet (v2)";
 		hiddenSelectionsTextures[] =
@@ -61,7 +61,7 @@ class CfgWeapons
 	};
 
 	// Version 3
-	class BNA_KC_P1Helmet_Trooper_v3: BNA_KC_P1Helmet_Trooper_v1
+	class BNA_KC_P1Helmet_Trooper_v3: BNA_KC_P1Helmet_Trooper
 	{
 		displayName = "[KC] Clone Trooper P1 Helmet (v3)";
 		hiddenSelectionsTextures[] =
@@ -227,7 +227,7 @@ class CfgWeapons
 		author = "SweMonkey";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[KC] Clone Trooper P2 ARF Helmet";
+		displayName = "[KC] Clone Trooper P1 ARF Helmet";
 		hiddenSelectionsTextures[] = 
 		{
 			"BNA_KC_Gear\Data\BNA_KC_ARFHelmet_CO.paa",
@@ -246,14 +246,46 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[KC] Clone Trooper P2 Reeker Helmet (v1)";
-		hiddenSelectionsTextures[] = {"BNA_KC_Gear\Data\BNA_KC_Reeker1_CO.paa","ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"};
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_Reeker1_CO.paa",
+			"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+		};
 	};
 	class BNA_KC_P2_Reeker_Helmet_2: BNA_KC_P2_Reeker_Helmet_1
 	{
 		displayName = "[KC] Clone Trooper P2 Reeker Helmet (v2)";
-		hiddenSelectionsTextures[] = {"BNA_KC_Gear\Data\BNA_KC_Reeker2_CO.paa","ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"};
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_Reeker2_CO.paa",
+			"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+		};
 	};
-	
+
+	//---------------------------------------------------
+	// Airborne Helmets
+	//---------------------------------------------------
+	class BNA_KC_AB_Helmet: lsd_gar_airborne_helmet
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[KC] Clone Airborne Helmet (v1)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_ABHelmet_CO.paa"
+		};
+	}
+
+	class BNA_KC_AB_Helmet_v2: BNA_KC_AB_Helmet
+	{
+		displayName = "[KC] Clone Airborne Helmet (v2)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\BNA_KC_ABHelmet_v2_CO.paa"
+		};
+	}
 	
 	//---------------------------------------------------
 	// Uniforms

@@ -27,6 +27,8 @@ class CfgPatches
 			"BNA_KC_Backpack",
 			"BNA_KC_Backpack_Medic",
 			"BNA_KC_Backpack_Keeli",
+			"BNA_KC_Unit_ABTrooper",
+			"BNA_KC_Unit_ABTrooper_v2",
 
 			// Customs
 			"BNA_KC_Unit_Keeli",
@@ -54,7 +56,7 @@ class CfgPatches
 		{
 			// Base Armor
 			// P1 Helmets
-			"BNA_KC_P1Helmet_Trooper_v1",
+			"BNA_KC_P1Helmet_Trooper",
 			"BNA_KC_P1Helmet_Trooper_v2",
 			"BNA_KC_P1Helmet_Trooper_v3",
 
@@ -67,6 +69,10 @@ class CfgPatches
 			"BNA_KC_P2Helmet_LCPL_CPL",
 			"BNA_KC_P2Helmet_CS_CSS",
 			"BNA_KC_P2Helmet_CMS_CSM",
+
+			// Airborne
+			"BNA_KC_AB_Helmet",
+			"BNA_KC_AB_Helmet_v2",
 			
 			// P1 Pilots
 
