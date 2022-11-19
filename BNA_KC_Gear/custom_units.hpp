@@ -213,10 +213,10 @@
 		backpack = "";
 	};
 	
-	// Commander Fil
+	// Fil
 	class BNA_KC_Unit_Fil: BNA_KC_Unit_Trooper
 	{
-		displayName = "[KC] Commander Fil";
+		displayName = "[KC] Fil";
 		uniformClass = "BNA_KC_Uniform_Fil";
 		hiddenSelectionsTextures[] =
 		{
@@ -283,10 +283,10 @@
 		backpack = "";
 	};
 	
-	// Commander Fil's Squad Members
+	// Fil's Squad Members
 	class BNA_KC_Unit_Fil_Squad: BNA_KC_Unit_Trooper
 	{
-		displayName = "[KC] CM-Fil's Squad Trooper";
+		displayName = "[KC] Fil's Squad Trooper";
 		uniformClass = "BNA_KC_Uniform_Fil_Squad";
 		hiddenSelectionsTextures[] =
 		{
@@ -356,6 +356,7 @@
 	// Ponds
 	class BNA_KC_Unit_Ponds: BNA_KC_Unit_Trooper
 	{
+		author="DartRuffian"
 		displayName = "[KC] Ponds";
 		uniformClass = "BNA_KC_Uniform_Ponds";
 		hiddenSelectionsTextures[] =
@@ -426,6 +427,7 @@
 	// Stone
 	class BNA_KC_Unit_Stone: BNA_KC_Unit_Trooper
 	{
+		author="DartRuffian"
 		displayName = "[KC] Stone";
 		uniformClass = "BNA_KC_Uniform_Stone";
 		hiddenSelectionsTextures[] =
