@@ -356,7 +356,7 @@
 	// Ponds
 	class BNA_KC_Unit_Ponds: BNA_KC_Unit_Trooper
 	{
-		author="DartRuffian"
+		author="DartRuffian";
 		displayName = "[KC] Ponds";
 		uniformClass = "BNA_KC_Uniform_Ponds";
 		hiddenSelectionsTextures[] =
@@ -427,7 +427,7 @@
 	// Stone
 	class BNA_KC_Unit_Stone: BNA_KC_Unit_Trooper
 	{
-		author="DartRuffian"
+		author="DartRuffian";
 		displayName = "[KC] Stone";
 		uniformClass = "BNA_KC_Uniform_Stone";
 		hiddenSelectionsTextures[] =
