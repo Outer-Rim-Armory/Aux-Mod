@@ -91,6 +91,7 @@ class CfgPatches
 
 			// Uniforms
 			"BNA_KC_Uniform_Trooper",
+			"BNA_KC_Uniform_ABTrooper",
 			"BNA_KC_Uniform_Pilot",
 			"BNA_KC_Uniform_Snow_Trooper",
 			
@@ -191,6 +192,14 @@ class CfgEditorSubcategories
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Phase 2 Infantry";
+	};
+	class BNA_KCSub_InfAB
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Airborne Infantry";
 	};
 	class BNA_KCSub_LAATS
 	{

@@ -681,6 +681,42 @@ class CfgVehicles
 		};
 		backpack = "";
 	};
+
+	// Airborne
+	class BNA_KC_Unit_ABTrooper: BNA_KC_Unit_Trooper
+	{
+		author = "DartRuffian"
+		editorSubcategory = "BNA_KCSub_InfAB";
+		displayName = "[KC] Airborne Trooper (v1)";
+		uniformClass = "BNA_KC_Uniform_Trooper";
+		
+		linkedItems[] =
+		{
+			"BNA_KC_AB_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","JLTS_Clone_helmetInterior_AB","SWLB_clone_airborne_armor"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_AB_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","JLTS_Clone_helmetInterior_AB","SWLB_clone_airborne_armor"
+		};
+	};
+
+	// Variant 2
+	class BNA_KC_Unit_ABTrooper_v2: BNA_KC_Unit_Trooper
+	{
+		author = "DartRuffian"
+		editorSubcategory = "BNA_KCSub_InfAB";
+		displayName = "[KC] Airborne Trooper (v2)";
+		uniformClass = "BNA_KC_Uniform_Trooper";
+
+		linkedItems[] =
+		{
+			"BNA_KC_AB_Helmet_v2","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","JLTS_Clone_helmetInterior_AB","SWLB_clone_airborne_armor"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_AB_Helmet_v2","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","JLTS_Clone_helmetInterior_AB","SWLB_clone_airborne_armor"
+		};
+	}
 	
 	// Pilot
 	// Base
