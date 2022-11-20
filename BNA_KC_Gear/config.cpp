@@ -583,7 +583,7 @@ class CfgWeapons
 		};
 		thermalMode[] = {2};
 
-		displayName = "[KC] Republic P2 Trooper Rangefinder";
+		displayName = "[KC] Republic P2 NV Rangefinder";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\BNA_KC_Rangefinder_CO.paa"
