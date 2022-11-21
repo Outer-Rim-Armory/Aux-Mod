@@ -53,6 +53,9 @@ class CfgPatches
 			"BNA_KC_Unit_ARF_NCO",
 			"BNA_KC_Unit_ARF_Officer",
 
+			// BARC
+			"BNA_KC_Unit_BARC",
+
 			// Customs
 			"BNA_KC_Unit_Keeli",
 			"BNA_KC_Unit_Guardian",

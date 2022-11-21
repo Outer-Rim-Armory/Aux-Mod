@@ -1164,6 +1164,31 @@ class CfgVehicles
 			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon_Officer"
 		};
 	};
+
+
+	//-----------------------------------------------------
+	// BARC
+	//-----------------------------------------------------
+	class BNA_KC_Unit_BARC: BNA_KC_Unit_Trooper
+	{
+		// Default Attributes
+		author = "DartRuffian";
+
+		// Popular Attributes
+		displayName = "[KC] BARC - BARC Trooper";
+
+		// Helmet, NVGs, etc.
+		linkedItems[] =
+		{
+			"BNA_KC_BARC_Helmet","BNA_KC_NVG","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_recon_armor"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_BARC_Helmet","BNA_KC_NVG","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_recon_armor"
+		};
+		backpack = "SWLB_clone_RTO_mini_backpack";
+	}
+
 	
 	//-----------------------------------------------------
 	// LAATs
