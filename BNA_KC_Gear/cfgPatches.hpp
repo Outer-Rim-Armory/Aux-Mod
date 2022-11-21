@@ -30,6 +30,29 @@ class CfgPatches
 			"BNA_KC_Unit_ABTrooper",
 			"BNA_KC_Unit_ABTrooper_v2",
 
+			// Ranks
+			"BNA_KC_Unit_CR",
+			"BNA_KC_Unit_CT",
+			"BNA_KC_Unit_SCT",
+			"BNA_KC_Unit_VCT",
+			"BNA_KC_Unit_LCPL_CPL",
+			"BNA_KC_Unit_CS_CSS",
+			"BNA_KC_Unit_CMS_CSM",
+			"BNA_KC_Unit_LT",
+			"BNA_KC_Unit_1LT",
+			"BNA_KC_Unit_CPT",
+			"BNA_KC_Unit_MAJ",
+			"BNA_KC_Unit_CMD",
+
+			// ARC
+			"BNA_KC_Unit_ARC",
+			"BNA_KC_Unit_ARC_CO",
+
+			// ARF
+			"BNA_KC_Unit_ARF",
+			"BNA_KC_Unit_ARF_NCO",
+			"BNA_KC_Unit_ARF_Officer",
+
 			// Customs
 			"BNA_KC_Unit_Keeli",
 			"BNA_KC_Unit_Guardian",
@@ -177,6 +200,7 @@ class CfgEditorCategories
 
 class CfgEditorSubcategories
 {
+	// Units
 	class BNA_KCSub_InfP1
 	{
 		dlc = "BNA_KC";
@@ -185,6 +209,7 @@ class CfgEditorSubcategories
 		scopeCurator = 2;
 		displayName = "Phase 1 Infantry";
 	};
+
 	class BNA_KCSub_InfP2
 	{
 		dlc = "BNA_KC";
@@ -193,6 +218,16 @@ class CfgEditorSubcategories
 		scopeCurator = 2;
 		displayName = "Phase 2 Infantry";
 	};
+
+	class BNA_KCSub_InfRanks
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Rank Units";
+	};
+
 	class BNA_KCSub_InfAB
 	{
 		dlc = "BNA_KC";
@@ -201,6 +236,27 @@ class CfgEditorSubcategories
 		scopeCurator = 2;
 		displayName = "Airborne Infantry";
 	};
+
+	class BNA_KCSub_SF_ARC
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "ARC";
+	};
+
+	class BNA_KCSub_SF_ARF
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "ARF";
+	};
+
+
+	// Vehicles
 	class BNA_KCSub_LAATS
 	{
 		dlc = "BNA_KC";
@@ -209,12 +265,17 @@ class CfgEditorSubcategories
 		scopeCurator = 2;
 		displayName = "LAAT's";
 	};
+
+	// Objects
 	class BNA_KC_EditorSubcategory_Gonk
 	{
 		scope = 2;
 		scopeCurator = 2;
 		displayName="Loadout Gonks";
 	};
+
+
+	// Misc
 	class BNA_KC_EditorSubcategory_Ambi
 	{
 		scope = 2;
