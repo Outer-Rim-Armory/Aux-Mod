@@ -207,7 +207,7 @@ class CfgEditorSubcategories
 		author = "Monkey";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Phase 1 Infantry";
+		displayName = "INF - Phase 1";
 	};
 
 	class BNA_KCSub_InfP2
@@ -216,7 +216,7 @@ class CfgEditorSubcategories
 		author = "Monkey";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Phase 2 Infantry";
+		displayName = "INF - Phase 2";
 	};
 
 	class BNA_KCSub_InfRanks
@@ -225,7 +225,7 @@ class CfgEditorSubcategories
 		author = "DartRuffian";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Rank Units";
+		displayName = "INF - Rank Units";
 	};
 
 	class BNA_KCSub_InfAB
@@ -234,7 +234,7 @@ class CfgEditorSubcategories
 		author = "DartRuffian";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Airborne Infantry";
+		displayName = "Airborne";
 	};
 
 	class BNA_KCSub_SF_ARC
@@ -243,7 +243,7 @@ class CfgEditorSubcategories
 		author = "DartRuffian";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "ARC";
+		displayName = "SF - ARC";
 	};
 
 	class BNA_KCSub_SF_ARF
@@ -252,7 +252,7 @@ class CfgEditorSubcategories
 		author = "DartRuffian";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "ARF";
+		displayName = "SF - ARF";
 	};
 
 
