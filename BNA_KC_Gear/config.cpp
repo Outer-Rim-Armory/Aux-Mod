@@ -297,6 +297,7 @@ class CfgWeapons
 	class UniformItem; 
 	class ls_gar_phase2_uniform;
 	class lsd_gar_phase2insulated_uniform;
+	class SWLB_clone_arc_base_P2;
 	
 	// Trooper
 	class BNA_KC_Uniform_Trooper: ls_gar_phase2_uniform
@@ -616,9 +617,11 @@ class CfgVehicles
 		scopeArsenal = 2;
 		faction = "BNA_KCFac";
 		editorPreview = "\BNA_KC_Gear\Data\UI\BNA_KC_Preview_P2Trooper.paa";
+
 		// Popular Attributes
 		editorSubcategory = "BNA_KCSub_InfP2";
 		displayName = "[KC] Clone Trooper";
+
 		// Uniform Class / Textures
 		uniformClass = "BNA_KC_Uniform_Trooper";
 		hiddenSelectionsTextures[] =
@@ -627,6 +630,7 @@ class CfgVehicles
 			"BNA_KC_Gear\Data\BNA_KC_CloneArmor_Trooper_Lower_CO.paa",
 			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 		};
+
 		// Inventory
 		// Weapons
 		weapons[] =
@@ -701,6 +705,7 @@ class CfgVehicles
 			"ACE_Flashlight_XL50",
 			"ACE_MapTools"
 		};
+
 		// Helmet, NVGs, etc.
 		linkedItems[] =
 		{
@@ -946,6 +951,177 @@ class CfgVehicles
 			"BNA_KC_Gear\Data\BNA_KC_Medic_Backpack_CO.paa",
 			"",
 			""
+		};
+	};
+
+	//----------------------------------------------------
+	// ARC
+	//----------------------------------------------------
+	class BNA_KC_Unit_ARC: BNA_KC_Unit_Trooper
+	{
+		// Default Attributes
+		author = "DartRuffian";
+
+		// Popular Attributes
+		editorSubcategory = "BNA_KCSub_SF_ARC";
+		displayName = "[KC] ARC 01 - ARC Trooper";
+
+		// Inventory
+		// Weapons
+		weapons[] =
+		{
+			"3AS_WestarM5_F",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[] =
+		{
+			"3AS_WestarM5_F",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		// Ammunition / Throwables
+		magazines[] =
+		{
+			// Ammo
+			ITEM_11("3AS_60Rnd_EC50_Mag"),
+			// Stun rounds would go here
+			ITEM_2("3AS_16Rnd_EC20_Mag"),
+			// Stun rounds would go here
+			// Grenades
+			ITEM_2("ls_mag_classC_thermalDet"),
+			ITEM_3("ShieldGrenade_Mag"),
+			// Smokes
+			ITEM_3("3AS_SmokeWhite"),
+			ITEM_3("3AS_SmokeBlue"),
+			ITEM_3("3AS_SmokeGreen"),
+		};
+		respawnMagazines[] =
+		{
+			// Ammo
+			ITEM_11("3AS_60Rnd_EC50_Mag"),
+			// Stun rounds would go here
+			ITEM_2("3AS_16Rnd_EC20_Mag"),
+			// Stun rounds would go here
+			// Grenades
+			ITEM_2("ls_mag_classC_thermalDet"),
+			ITEM_3("ShieldGrenade_Mag"),
+			// Smokes
+			ITEM_3("3AS_SmokeWhite"),
+			ITEM_3("3AS_SmokeBlue"),
+			ITEM_3("3AS_SmokeGreen"),
+		};
+		// Other Items
+		items[] =
+		{
+			// Medical
+			ITEM_10("ACE_elasticBandage"),
+			ITEM_4("ACE_tourniquet"),
+			// Other
+			ITEM_3("ACE_CableTie"),
+			"ACE_EntrenchingTool",
+			"ItemcTabHCam",
+			"ACE_IR_Strobe_Item",
+			"ACE_Flashlight_XL50",
+			"ACE_MapTools"
+		};
+		respawnItems[] =
+		{
+			// Medical
+			ITEM_10("ACE_elasticBandage"),
+			ITEM_4("ACE_tourniquet"),
+			// Other
+			ITEM_3("ACE_CableTie"),
+			"ACE_EntrenchingTool",
+			"ItemcTabHCam",
+			"ACE_IR_Strobe_Item",
+			"ACE_Flashlight_XL50",
+			"ACE_MapTools"
+		};
+
+		// Helmet, NVGs, etc.
+		linkedItems[] =
+		{
+			"BNA_KC_P2Helmet_Trooper","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_P2Helmet_Trooper","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
+		};
+		backpack = "SWLB_clone_backpack_predef_arc_assault";
+	};
+
+	class BNA_KC_Unit_ARC_CO: BNA_KC_Unit_ARC
+	{
+		// Popular Attributes
+		displayName = "[KC] ARC 02 - ARC Officer";
+
+		// Helmet, NVGs, etc.
+		linkedItems[] =
+		{
+			"BNA_KC_P2Helmet_Trooper","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_P2Helmet_Trooper","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
+		};
+	};
+
+	//----------------------------------------------------
+	// ARC
+	//----------------------------------------------------
+	class BNA_KC_Unit_ARF: BNA_KC_Unit_Trooper
+	{
+		// Default Attributes
+		author = "DartRuffian";
+
+		// Popular Attributes
+		editorSubcategory = "BNA_KCSub_SF_ARF";
+		displayName = "[KC] ARF 01 - ARF Trooper";
+
+		// Helmet, NVGs, etc.
+		linkedItems[] =
+		{
+			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon"
+		};
+		backpack = "SWLB_CEE_Recon_RTO_Backpack";
+	};
+
+	class BNA_KC_Unit_ARF_NCO: BNA_KC_Unit_ARF
+	{
+		// Popular Attributes
+		displayName = "[KC] ARF 02 - ARF NCO";
+
+		// Helmet, NVGs, etc.
+		linkedItems[] =
+		{
+			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon_NCO"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon_NCO"
+		};
+	};
+
+	class BNA_KC_Unit_ARF_Officer: BNA_KC_Unit_ARF
+	{
+		// Popular Attributes
+		displayName = "[KC] ARF 03 - ARF Officer";
+
+		// Helmet, NVGs, etc.
+		linkedItems[] =
+		{
+			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon_Officer"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon_Officer"
 		};
 	};
 	
