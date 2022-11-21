@@ -30,6 +30,20 @@ class CfgPatches
 			"BNA_KC_Unit_ABTrooper",
 			"BNA_KC_Unit_ABTrooper_v2",
 
+			// Ranks
+			"BNA_KC_Unit_CR",
+			"BNA_KC_Unit_CT",
+			"BNA_KC_Unit_SCT",
+			"BNA_KC_Unit_VCT",
+			"BNA_KC_Unit_LCPL_CPL",
+			"BNA_KC_Unit_CS_CSS",
+			"BNA_KC_Unit_CMS_CSM",
+			"BNA_KC_Unit_LT",
+			"BNA_KC_Unit_1LT",
+			"BNA_KC_Unit_CPT",
+			"BNA_KC_Unit_MAJ",
+			"BNA_KC_Unit_CMD",
+
 			// Customs
 			"BNA_KC_Unit_Keeli",
 			"BNA_KC_Unit_Guardian",
@@ -192,6 +206,14 @@ class CfgEditorSubcategories
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Phase 2 Infantry";
+	};
+	class BNA_KCSub_InfRanks
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Rank Units";
 	};
 	class BNA_KCSub_InfAB
 	{
