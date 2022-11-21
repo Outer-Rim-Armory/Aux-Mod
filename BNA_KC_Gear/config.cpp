@@ -30,6 +30,8 @@ class CfgWeapons
 	class lsd_gar_airborne_helmet;
 	class ls_gar_phase2insulated_helmet;
 	class ls_sob_phase2SpecOp_helmet;
+	class lsd_gar_arc_helmet;
+	class ls_gar_barc_helmet;
 	
 	//---------------------------------------------------
 	// Phase 1 Helmets
@@ -237,6 +239,42 @@ class CfgWeapons
 			"BNA_KC_Gear\Data\BNA_KC_ARFHelmet_CO.paa"
 		};
 	};
+
+	//---------------------------------------------------
+	// Arc Helmet
+	//---------------------------------------------------
+	class BNA_KC_ARC_Helmet_3: lsd_gar_arc_helmet
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[KC] ARC Helmet - Base";
+		hiddenSelectionsTextures[] = 
+		{
+			"BNA_KC_Gear\Data\BNA_KC_ARCHelmet.paa",
+			"lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+		};
+	};
+
+
+	//---------------------------------------------------
+	// BARC Helmet
+	//---------------------------------------------------
+	class BNA_KC_BARC_Helmet: ls_gar_barc_helmet
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[KC] BARC Helmet - Base";
+		hiddenSelectionsTextures[] = 
+		{
+			"BNA_KC_Gear\Data\BNA_KC_BARCHelmet.paa",
+			"ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
+		};
+	};
+
 	
 	//---------------------------------------------------
 	// Reeker Helmets
@@ -288,7 +326,8 @@ class CfgWeapons
 			"BNA_KC_Gear\Data\BNA_KC_ABHelmet_v2_CO.paa"
 		};
 	}
-	
+
+
 	//---------------------------------------------------
 	// Uniforms
 	//---------------------------------------------------
@@ -346,6 +385,7 @@ class CfgWeapons
 			uniformType = "Neopren";
 		};
 	};
+
 	//---------------------------------------------------
 	// Vests
 	//---------------------------------------------------
@@ -1044,11 +1084,11 @@ class CfgVehicles
 		// Helmet, NVGs, etc.
 		linkedItems[] =
 		{
-			"BNA_KC_P2Helmet_Trooper","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
+			"BNA_KC_ARC_Helmet","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
 		};
 		respawnLinkedItems[] =
 		{
-			"BNA_KC_P2Helmet_Trooper","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
+			"BNA_KC_ARC_Helmet","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
 		};
 		backpack = "SWLB_clone_backpack_predef_arc_assault";
 	};
@@ -1061,16 +1101,16 @@ class CfgVehicles
 		// Helmet, NVGs, etc.
 		linkedItems[] =
 		{
-			"BNA_KC_P2Helmet_Trooper","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
+			"BNA_KC_ARC_Helmet","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
 		};
 		respawnLinkedItems[] =
 		{
-			"BNA_KC_P2Helmet_Trooper","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
+			"BNA_KC_ARC_Helmet","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
 		};
 	};
 
 	//----------------------------------------------------
-	// ARC
+	// ARF
 	//----------------------------------------------------
 	class BNA_KC_Unit_ARF: BNA_KC_Unit_Trooper
 	{

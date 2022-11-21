@@ -112,6 +112,12 @@ class CfgPatches
 			"BNA_KC_P2_Reeker_Helmet_1",
 			"BNA_KC_P2_Reeker_Helmet_2",
 
+			// ARC
+			"BNA_KC_ARC_Helmet",
+
+			// BARC
+			"BNA_KC_BARC_Helmet",
+
 			// Uniforms
 			"BNA_KC_Uniform_Trooper",
 			"BNA_KC_Uniform_ABTrooper",
