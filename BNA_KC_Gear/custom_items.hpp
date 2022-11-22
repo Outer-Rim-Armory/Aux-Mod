@@ -129,7 +129,7 @@ class BNA_KC_P2Helmet_Stone: BNA_KC_P2Helmet_Trooper
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
-// Ox
+// Sytha
 class BNA_KC_P2Helmet_Sytha: BNA_KC_P2Helmet_Trooper
 {
 	author = "DartRuffian";
@@ -159,6 +159,16 @@ class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Dexus.paa",
+		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+	};
+};
+
+class BNA_KC_PilotHelmet_Lui: BNA_KC_PilotHelmet
+{
+	displayName = "[KC] Clone Pilot P2 Helmet (Lui)";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Lui.paa",
 		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
 	};
 };

@@ -150,6 +150,7 @@ class CfgPatches
 
 			// P2 Pilots
 			"BNA_KC_PilotHelmet_Dexus",
+			"BNA_KC_PilotHelmet_Lui",
 
 			// Uniforms
 			"BNA_KC_Uniform_Keeli",
