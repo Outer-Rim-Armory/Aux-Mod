@@ -268,7 +268,7 @@ class CfgWeapons
 	//---------------------------------------------------
 	// Arc Helmet
 	//---------------------------------------------------
-	class BNA_KC_ARC_Helmet_3: lsd_gar_arc_helmet
+	class BNA_KC_ARC_Helmet: lsd_gar_arc_helmet
 	{
 		dlc = "BNA_KC";
 		author = "DartRuffian";
