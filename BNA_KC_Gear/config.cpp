@@ -46,7 +46,7 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 
-		displayName = "[KC] Clone Trooper P1 Helmet (v1)";
+		displayName = "[KC] INF P1 Helm 02 (CT)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CT.paa",
@@ -56,7 +56,7 @@ class CfgWeapons
 
 	class BNA_KC_P1Helmet_CR: BNA_KC_P1Helmet_CT
 	{
-		displayName = "[KC] Clone Recruit P1 Helmet";
+		displayName = "[KC] INF P1 Helm 01 (CR)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CR.paa",
@@ -67,7 +67,7 @@ class CfgWeapons
 	// Version 2
 	class BNA_KC_P1Helmet_v2: BNA_KC_P1Helmet_CT
 	{
-		displayName = "[KC] Clone Trooper P1 Helmet (v2)";
+		displayName = "[KC] INF P1 Helm 02 (CT v2)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_2.paa",
@@ -78,7 +78,7 @@ class CfgWeapons
 	// Version 3
 	class BNA_KC_P1Helmet_v3: BNA_KC_P1Helmet_CT
 	{
-		displayName = "[KC] Clone Trooper P1 Helmet (v3)";
+		displayName = "[KC] INF P1 Helm 02 (CT v3)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_3.paa",
@@ -89,7 +89,9 @@ class CfgWeapons
 	// Pilot
 	class BNA_KC_PilotHelmet_P1: ls_gar_phase1Pilot_helmet
 	{
-		displayName = "[KC] Clone Pilot P1 Helmet";
+		author = "DartRuffian";
+
+		displayName = "[KC] AVI P1 Helm 01 (Base)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Pilot P1\BNA_KC_Helmet_Pilot_P1.paa",
@@ -107,7 +109,7 @@ class CfgWeapons
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Clone Trooper P2 Helmet (CT)";
+		displayName = "[KC] INF Helm 02 (CT)";
 		scope = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
@@ -120,7 +122,7 @@ class CfgWeapons
 	// CR Helmet
 	class BNA_KC_P2Helmet_Recruit: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Clone Trooper P2 Helmet (CR)";
+		displayName = "[KC] INF Helm 01 (CR)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CR.paa",
@@ -131,7 +133,7 @@ class CfgWeapons
 	// SCT Helmet
 	class BNA_KC_P2Helmet_SCT: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Clone Trooper P2 Helmet (SCT)";
+		displayName = "[KC] INF Helm 03 (SCT)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_SCT.paa",
@@ -142,7 +144,7 @@ class CfgWeapons
 	// VCT Helmet
 	class BNA_KC_P2Helmet_VCT: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Clone Trooper P2 Helmet (VCT)";
+		displayName = "[KC] INF Helm 04 (VCT)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_VCT.paa",
@@ -153,7 +155,7 @@ class CfgWeapons
 	// LCPL-CPL Helmet
 	class BNA_KC_P2Helmet_LCPL_CPL: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Clone Trooper P2 Helmet (LCPL-CPL)";
+		displayName = "[KC] INF Helm 05 (LCPL/CPL)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_LCPL_CPL.paa",
@@ -164,7 +166,7 @@ class CfgWeapons
 	// CS-CSS Helmet
 	class BNA_KC_P2Helmet_CS_CSS: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Clone Trooper P2 Helmet (CS-CSS)";
+		displayName = "[KC] INF Helm 06 (CS/CSS)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CS_CSS.paa",
@@ -175,7 +177,7 @@ class CfgWeapons
 	// CMS-CSM Helmet
 	class BNA_KC_P2Helmet_CMS_CSM: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Clone Trooper P2 Helmet (CMS-CSM)";
+		displayName = "[KC] INF Helm 07 (CMS/CSM)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CMS_CSM.paa",
@@ -186,7 +188,7 @@ class CfgWeapons
 	// Officer
 	class BNA_KC_P2Helmet_Officer: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] Clone Trooper P2 Helmet (Officer)";
+		displayName = "[KC] INF Helm 08 (Officer)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_Officer.paa",
@@ -201,7 +203,7 @@ class CfgWeapons
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Clone Pilot P2 Helmet";
+		displayName = "[KC] AVI Helm 01 (Airman)";
 		scope = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
@@ -218,7 +220,7 @@ class CfgWeapons
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Clone Engineer Helmet";
+		displayName = "[KC] ENG Helm 01 (Base)";
 		scope = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
@@ -238,7 +240,7 @@ class CfgWeapons
 		author = "SweMonkey";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[KC] Clone Trooper Insulated P2 Helmet";
+		displayName = "[KC] INF Snow Helm 01 (Base)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Snow\BNA_KC_Helmet_Insulated.paa"
@@ -254,7 +256,7 @@ class CfgWeapons
 		author = "SweMonkey";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[KC] Clone Trooper P1 ARF Helmet";
+		displayName = "[KC] ARF Helm 01 (Base)";
 		hiddenSelectionsTextures[] = 
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\ARF\BNA_KC_Helmet_ARF.paa",
@@ -272,7 +274,7 @@ class CfgWeapons
 		author = "DartRuffian";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[KC] ARC Helmet - Base";
+		displayName = "[KC] ARC Helm 01 (Base)";
 		hiddenSelectionsTextures[] = 
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\ARC\BNA_KC_Helmet_ARC.paa",
@@ -290,7 +292,7 @@ class CfgWeapons
 		author = "DartRuffian";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[KC] BARC Helmet - Base";
+		displayName = "[KC] BARC Helm 01 (Base)";
 		hiddenSelectionsTextures[] = 
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\BARC\BNA_KC_Helmet_BARC.paa",
@@ -308,7 +310,7 @@ class CfgWeapons
 		author = "SweMonkey";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[KC] Clone Trooper P2 Reeker Helmet (v1)";
+		displayName = "[KC] Reeker Helm 01 (Base)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\SpecOP\BNA_KC_Helmet_Reeker.paa",
@@ -317,7 +319,7 @@ class CfgWeapons
 	};
 	class BNA_KC_P2_Reeker_Helmet_2: BNA_KC_P2_Reeker_Helmet_1
 	{
-		displayName = "[KC] Clone Trooper P2 Reeker Helmet (v2)";
+		displayName = "[KC] Reeker Helm 01 (Base - Alt)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\SpecOP\BNA_KC_Helmet_Reeker_2.paa",
@@ -334,7 +336,7 @@ class CfgWeapons
 		author = "DartRuffian";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[KC] Clone Airborne Helmet (v1)";
+		displayName = "[KC] AB Helm 01 (Base)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Airborne\BNA_KC_Helmet_AB.paa"
@@ -343,7 +345,7 @@ class CfgWeapons
 
 	class BNA_KC_AB_Helmet_v2: BNA_KC_AB_Helmet
 	{
-		displayName = "[KC] Clone Airborne Helmet (v2)";
+		displayName = "[KC] AB Helm 01 (Base v2)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Airborne\BNA_KC_Helmet_AB_2.paa"
@@ -360,13 +362,30 @@ class CfgWeapons
 	class ls_gar_phase2_uniform;
 	class lsd_gar_phase2insulated_uniform;
 	class SWLB_clone_arc_base_P2;
-	
+
+	// Recruit
+	class BNA_KC_Uniform_CR: ls_gar_phase2_uniform
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		displayName = "[KC] INF Armor 01 (Recruit)";
+		scope = 2;
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_CR";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
 	// Trooper
 	class BNA_KC_Uniform_Trooper: ls_gar_phase2_uniform
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Clone Trooper Uniform";
+		displayName = "[KC] INF Armor 02 (Trooper)";
 		scope = 2;
 		class ItemInfo: UniformItem
 		{
@@ -381,7 +400,7 @@ class CfgWeapons
 	// Pilot
 	class BNA_KC_Uniform_Pilot: BNA_KC_Uniform_Trooper
 	{
-		displayName = "[KC] Clone Pilot Uniform";
+		displayName = "[KC] AVI Armor 01 (Airman)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -397,7 +416,7 @@ class CfgWeapons
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Clone Snow Trooper Uniform";
+		displayName = "[KC] INF Snow Armor 01 (Base)";
 		scope = 2;
 		class ItemInfo: UniformItem
 		{
@@ -421,7 +440,7 @@ class CfgWeapons
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Clone Trooper Officer Vest";
+		displayName = "[KC] INF Vest 10 (Officer)";
 		scope = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
@@ -464,7 +483,7 @@ class CfgWeapons
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] Clone ARC Trooper Vest";
+		displayName = "[KC] ARC Vest 01 (Base)";
 		scope = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[] =
@@ -581,10 +600,27 @@ class CfgWeapons
 	//---------------------------------------------------
 	// Night Vision
 	//---------------------------------------------------
-	
+
 	class lsd_gar_standard_nvg;
 	class SWLB_clone_ccVisor;
 	class lsd_gar_rangefinder_nvg;
+	class RD501_nvg_shock_trooper;
+
+	// Chip
+	class BNA_KC_NVG_Chip: RD501_nvg_shock_trooper
+	{
+		author = "501st + DartRuffian"
+		scope = 2;
+		visionMode[] =
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
+		thermalMode[] = {2};
+
+		displayName = "[KC] Clone NVG Chip";
+	}
 
 	// Phase 2 NVGs
 	// Base
@@ -599,7 +635,7 @@ class CfgWeapons
 		};
 		thermalMode[] = {2};
 
-		displayName = "[KC] Republic P2 NV Visor";
+		displayName = "[KC] Clone P2 NVG Visor";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\NVGs\BNA_KC_NVG.paa"
@@ -609,7 +645,7 @@ class CfgWeapons
 	// Keeli
 	class BNA_KC_NVG_Keeli: BNA_KC_NVG
 	{
-		displayName = "[KC] Republic P2 NV Visor (Keeli)";
+		displayName = "[KC] Clone P2 NVG Visor (Keeli)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\NVGs\Customs\BNA_KC_NVG_Keeli.paa"
@@ -629,7 +665,7 @@ class CfgWeapons
 		};
 		thermalMode[] = {2};
 
-		displayName = "[KC] Republic P2 Commander Visor";
+		displayName = "[KC] Clone P2 Officer Visor";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\NVGs\BNA_KC_NVG_Commander.paa"
@@ -649,7 +685,7 @@ class CfgWeapons
 		};
 		thermalMode[] = {2};
 
-		displayName = "[KC] Republic P2 NV Rangefinder";
+		displayName = "[KC] Clone P2 Viewfinder Antenna";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\NVGs\BNA_KC_NVG_Rangefinder.paa"
