@@ -3,6 +3,51 @@
 //---------------------------------------------------
 
 // Phase 1 Helmets
+// Keeli
+class BNA_KC_P1Helmet_Keeli: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] Clone Trooper P1 Helmet (Keeli)";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Keeli.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
+// Burnt
+class BNA_KC_P1Helmet_Burnt: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] Clone Trooper P1 Helmet (Burnt)";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Burnt.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
+// Dexus
+class BNA_KC_P1Helmet_Dexus: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] Clone Trooper P1 Helmet (Dexus)";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Dexus.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
+// Joe
+class BNA_KC_P1Helmet_Joe: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] Clone Trooper P1 Helmet (Joe)";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Joe.paa",
+		"BNA_KC_Gear\Data\Textures\Visors\BNA_KC_Visor_Red.paa"
+	};
+};
+
+
 // Phase 2 Helmets
 // Keeli
 class BNA_KC_P2Helmet_Keeli: BNA_KC_P2Helmet_Trooper

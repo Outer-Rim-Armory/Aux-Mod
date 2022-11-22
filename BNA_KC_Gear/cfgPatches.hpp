@@ -82,9 +82,10 @@ class CfgPatches
 		{
 			// Base Armor
 			// P1 Helmets
-			"BNA_KC_P1Helmet_Trooper",
-			"BNA_KC_P1Helmet_Trooper_v2",
-			"BNA_KC_P1Helmet_Trooper_v3",
+			"BNA_KC_P1Helmet_CR",
+			"BNA_KC_P1Helmet_CT",
+			"BNA_KC_P1Helmet_v2",
+			"BNA_KC_P1Helmet_v3",
 
 			// P2 Helmets
 			"BNA_KC_P2Helmet_Trooper",
@@ -130,6 +131,10 @@ class CfgPatches
 			
 			// Customs
 			// P1 Helmets
+			"BNA_KC_P1Helmet_Keeli",
+			"BNA_KC_P1Helmet_Burnt",
+			"BNA_KC_P1Helmet_Dexus",
+			"BNA_KC_P1Helmet_Joe",
 
 			// P2 Helmets
 			"BNA_KC_P2Helmet_Keeli",
