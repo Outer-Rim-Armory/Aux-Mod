@@ -37,6 +37,7 @@ class CfgWeapons
 	// Phase 1 Helmets
 	//---------------------------------------------------
 
+	// Trooper
 	// Version 1
 	class BNA_KC_P1Helmet_CT: ls_gar_phase1_helmet
 	{
@@ -84,6 +85,18 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
 		};
 	};
+
+	// Pilot
+	class BNA_KC_PilotHelmet_P1: ls_gar_phase1Pilot_helmet
+	{
+		displayName = "[KC] Clone Pilot P1 Helmet";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Pilot P1\BNA_KC_Helmet_Pilot_P1.paa",
+			"ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
+			"ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
+		};
+	}
 
 	//---------------------------------------------------
 	// Phase 2 Helmets

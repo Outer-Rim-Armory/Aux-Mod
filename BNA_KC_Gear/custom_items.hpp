@@ -196,7 +196,9 @@ class BNA_KC_P2Helmet_Ox: BNA_KC_P2Helmet_Trooper
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
-// Pilot
+
+
+// Pilot Phase 2
 // Dexus
 class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
 {
@@ -208,6 +210,7 @@ class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
 	};
 };
 
+// Lui
 class BNA_KC_PilotHelmet_Lui: BNA_KC_PilotHelmet
 {
 	displayName = "[KC] Clone Pilot P2 Helmet (Lui)";
@@ -217,6 +220,20 @@ class BNA_KC_PilotHelmet_Lui: BNA_KC_PilotHelmet
 		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
 	};
 };
+
+
+// Pilot Phase 1
+// Dexus
+class BNA_KC_PilotHelmet_P1_Dexus: ls_gar_phase1Pilot_helmet
+{
+	displayName = "[KC] Clone Pilot P1 Helmet (Dexus)";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P1\Customs\BNA_KC_Helmet_Pilot_P1_Dexus.paa",
+		"ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
+	};
+}
 
 // Engineer
 // Snow Trooper

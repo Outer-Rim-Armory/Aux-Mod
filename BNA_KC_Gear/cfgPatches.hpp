@@ -102,6 +102,7 @@ class CfgPatches
 			"BNA_KC_AB_Helmet_v2",
 			
 			// P1 Pilots
+			"SWLB_P1_Pilot_Helmet",
 
 			// P2 Pilots
 			"BNA_KC_PilotHelmet",
@@ -152,6 +153,7 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Ox",
 
 			// P1 Pilots
+			"BNA_KC_PilotHelmet_P1_Dexus",
 
 			// P2 Pilots
 			"BNA_KC_PilotHelmet_Dexus",
