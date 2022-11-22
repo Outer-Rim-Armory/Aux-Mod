@@ -211,15 +211,15 @@ class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
 };
 
 // Lui
-class BNA_KC_PilotHelmet_Lui: BNA_KC_PilotHelmet
-{
-	displayName = "[KC] AVI Helm ('Lui')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Lui.paa",
-		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
-	};
-};
+// class BNA_KC_PilotHelmet_Lui: BNA_KC_PilotHelmet
+// {
+// 	displayName = "[KC] AVI Helm ('Lui')";
+// 	hiddenSelectionsTextures[] =
+// 	{
+// 		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Lui.paa",
+// 		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+// 	};
+// };
 
 
 // Pilot Phase 1
