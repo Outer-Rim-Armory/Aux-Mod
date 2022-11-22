@@ -38,7 +38,7 @@ class CfgWeapons
 	//---------------------------------------------------
 
 	// Version 1
-	class BNA_KC_P1Helmet_Trooper: ls_gar_phase1_helmet
+	class BNA_KC_P1Helmet_CT: ls_gar_phase1_helmet
 	{
 		dlc = "BNA_KC";
 		author = "DartRuffian";
@@ -48,13 +48,23 @@ class CfgWeapons
 		displayName = "[KC] Clone Trooper P1 Helmet (v1)";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1.paa",
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CT.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		};
+	};
+
+	class BNA_KC_P1Helmet_CR: BNA_KC_P1Helmet_CT
+	{
+		displayName = "[KC] Clone Recruit P1 Helmet";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CR.paa",
 			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
 		};
 	};
 
 	// Version 2
-	class BNA_KC_P1Helmet_Trooper_v2: BNA_KC_P1Helmet_Trooper
+	class BNA_KC_P1Helmet_v2: BNA_KC_P1Helmet_CT
 	{
 		displayName = "[KC] Clone Trooper P1 Helmet (v2)";
 		hiddenSelectionsTextures[] =
@@ -65,7 +75,7 @@ class CfgWeapons
 	};
 
 	// Version 3
-	class BNA_KC_P1Helmet_Trooper_v3: BNA_KC_P1Helmet_Trooper
+	class BNA_KC_P1Helmet_v3: BNA_KC_P1Helmet_CT
 	{
 		displayName = "[KC] Clone Trooper P1 Helmet (v3)";
 		hiddenSelectionsTextures[] =
