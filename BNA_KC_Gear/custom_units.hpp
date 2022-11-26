@@ -4,9 +4,9 @@
 
 // Trooper
 // Keeli
-class BNA_KC_Unit_Keeli: BNA_KC_Unit_CMD
+class BNA_KC_Unit_Keeli: BNA_KC_Unit_INF_CMD
 {
-	editorSubcategory = "BNA_KCSub_InfP2";
+	editorSubcategory = "BNA_KCSub_Customs";
 
 	displayName = "[KC] Keeli";
 	uniformClass = "BNA_KC_Uniform_Keeli";
@@ -28,9 +28,9 @@ class BNA_KC_Unit_Keeli: BNA_KC_Unit_CMD
 };
 
 // Guardian
-class BNA_KC_Unit_Guardian: BNA_KC_Unit_LT
+class BNA_KC_Unit_Guardian: BNA_KC_Unit_INF_LT
 {
-	editorSubcategory = "BNA_KCSub_InfP2";
+	editorSubcategory = "BNA_KCSub_Customs";
 
 	displayName = "[KC] Guardian";
 	uniformClass = "BNA_KC_Uniform_Guardian";
@@ -52,9 +52,9 @@ class BNA_KC_Unit_Guardian: BNA_KC_Unit_LT
 };
 
 // Joe
-class BNA_KC_Unit_Joe: BNA_KC_Unit_CPT
+class BNA_KC_Unit_Joe: BNA_KC_Unit_INF_CPT
 {
-	editorSubcategory = "BNA_KCSub_InfP2";
+	editorSubcategory = "BNA_KCSub_Customs";
 
 	displayName = "[KC] Joe";
 	uniformClass = "BNA_KC_Uniform_Joe";
@@ -76,9 +76,9 @@ class BNA_KC_Unit_Joe: BNA_KC_Unit_CPT
 };
 
 // Fil
-class BNA_KC_Unit_Fil: BNA_KC_Unit_CS
+class BNA_KC_Unit_Fil: BNA_KC_Unit_INF_CS
 {
-	editorSubcategory = "BNA_KCSub_InfP2";
+	editorSubcategory = "BNA_KCSub_Customs";
 	
 	displayName = "[KC] Fil";
 	uniformClass = "BNA_KC_Uniform_Fil";
@@ -100,9 +100,9 @@ class BNA_KC_Unit_Fil: BNA_KC_Unit_CS
 };
 
 // Fil's Squad Members
-class BNA_KC_Unit_Fil_Squad: BNA_KC_Unit_CT
+class BNA_KC_Unit_Fil_Squad: BNA_KC_Unit_Trooper
 {
-	editorSubcategory = "BNA_KCSub_InfP2";
+	editorSubcategory = "BNA_KCSub_Customs";
 
 	displayName = "[KC] Fil's Squad Trooper";
 	uniformClass = "BNA_KC_Uniform_Fil_Squad";
@@ -123,10 +123,10 @@ class BNA_KC_Unit_Fil_Squad: BNA_KC_Unit_CT
 	};
 };
 // Ponds
-class BNA_KC_Unit_Ponds: BNA_KC_Unit_LCPL
+class BNA_KC_Unit_Ponds: BNA_KC_Unit_INF_LCPL
 {
-	author="DartRuffian";
-	editorSubcategory = "BNA_KCSub_InfP2";
+	author = "DartRuffian";
+	editorSubcategory = "BNA_KCSub_Customs";
 
 	displayName = "[KC] Ponds";
 	uniformClass = "BNA_KC_Uniform_Ponds";
@@ -146,10 +146,10 @@ class BNA_KC_Unit_Ponds: BNA_KC_Unit_LCPL
 	};
 };
 // Stone
-class BNA_KC_Unit_Stone: BNA_KC_Unit_CSS
+class BNA_KC_Unit_Stone: BNA_KC_Unit_INF_CSS
 {
-	author="DartRuffian";
-	editorSubcategory = "BNA_KCSub_InfP2";
+	author = "DartRuffian";
+	editorSubcategory = "BNA_KCSub_Customs";
 
 	displayName = "[KC] Stone";
 	uniformClass = "BNA_KC_Uniform_Stone";

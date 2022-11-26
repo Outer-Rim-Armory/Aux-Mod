@@ -991,7 +991,6 @@ class CfgWeapons
 
 class CfgVehicles
 {
-
 	//----------------------------------------------------
 	// Units
 	//----------------------------------------------------
@@ -1013,8 +1012,8 @@ class CfgVehicles
 		// This started with a \ 
 
 		// Popular Attributes
-		editorSubcategory = "BNA_KCSub_InfP2";
-		displayName = "[KC] Clone Trooper";
+		editorSubcategory = "BNA_KCSub_Inf_Ranks";
+		displayName = "[KC] INF 02 - Clone Trooper";
 
 		// Uniform Class / Textures
 		uniformClass = "BNA_KC_Uniform_Trooper";
@@ -1116,11 +1115,11 @@ class CfgVehicles
 	//----------------------------------------------------
 	// Airborne
 	//----------------------------------------------------
-	class BNA_KC_Unit_ABTrooper: BNA_KC_Unit_Trooper
+	class BNA_KC_Unit_AB_CT: BNA_KC_Unit_Trooper
 	{
 		author = "DartRuffian"
-		editorSubcategory = "BNA_KCSub_InfAB";
-		displayName = "[KC] Airborne Trooper (v1)";
+		editorSubcategory = "BNA_KCSub_AB_Ranks";
+		displayName = "[KC] AB 01 - Airborne Trooper";
 		
 		linkedItems[] =
 		{
@@ -1132,27 +1131,14 @@ class CfgVehicles
 		};
 	};
 
-	// Variant 2
-	class BNA_KC_Unit_ABTrooper_v2: BNA_KC_Unit_ABTrooper
-	{
-		displayName = "[KC] Airborne Trooper (v2)";
-
-		linkedItems[] =
-		{
-			"BNA_KC_AB_Helmet_v2","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","JLTS_Clone_helmetInterior_AB","SWLB_clone_airborne_armor"
-		};
-		respawnLinkedItems[] =
-		{
-			"BNA_KC_AB_Helmet_v2","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","JLTS_Clone_helmetInterior_AB","SWLB_clone_airborne_armor"
-		};
-	}
 	
 	//----------------------------------------------------
 	// Pilots
 	//----------------------------------------------------
 	class BNA_KC_Unit_Pilot: BNA_KC_Unit_Trooper
 	{
-		displayName = "[KC] Clone Pilot";
+		editorSubcategory = "BNA_KCSub_AVI_Ranks";
+		displayName = "[KC] AVI 01 - Clone Pilot";
 		uniformClass = "BNA_KC_Uniform_Pilot";
 		hiddenSelectionsTextures[] =
 		{
@@ -1160,63 +1146,15 @@ class CfgVehicles
 			"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Pilot_Lower.paa",
 			"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 		};
-		weapons[] =
-		{
-			"BNA_KC_DC15S_Predef",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[] =
-		{
-			"BNA_KC_DC15S_Predef",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
-		magazines[] =
-		{
-			ITEM_5("SWLW_DC17_Mag"),
-			ITEM_3("ls_mag_classC_thermalDet"),
-			ITEM_9("3AS_40Rnd_EC40_Mag"),
-			ITEM_3("ShieldGrenade_Mag"),
-			ITEM_4("3AS_SmokeBlue"),
-			ITEM_3("3AS_SmokeWhite"),
-			ITEM_2("3AS_SmokeRed"),
-			ITEM_2("3AS_SmokePurple")
-		};
-		respawnMagazines[] =
-		{
-			ITEM_5("SWLW_DC17_Mag"),
-			ITEM_3("ls_mag_classC_thermalDet"),
-			ITEM_9("3AS_40Rnd_EC40_Mag"),
-			ITEM_3("ShieldGrenade_Mag"),
-			ITEM_4("3AS_SmokeBlue"),
-			ITEM_3("3AS_SmokeWhite"),
-			ITEM_2("3AS_SmokeRed"),
-			ITEM_2("3AS_SmokePurple")
-		};
-		items[] =
-		{
-			ITEM_9("ACE_quikclot"),
-			ITEM_5("ACE_tourniquet"),
-			"ACE_EntrenchingTool"
-		};
-		respawnItems[] =
-		{
-			ITEM_9("ACE_quikclot"),
-			ITEM_5("ACE_tourniquet"),
-			"ACE_EntrenchingTool"
-		};
+		
 		linkedItems[] =
 		{
-			"BNA_KC_PilotHelmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+			"BNA_KC_PilotHelmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","lsd_gar_clone_vest"
 		};
 		respawnLinkedItems[] =
 		{
-			"BNA_KC_PilotHelmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+			"BNA_KC_PilotHelmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","lsd_gar_clone_vest"
 		};
-		backpack = "";
 	};
 	
 	//----------------------------------------------------
@@ -1224,78 +1162,25 @@ class CfgVehicles
 	//----------------------------------------------------
 	class BNA_KC_Unit_Snow_Trooper: lsd_gar_phase2Insulated_base
 	{
-		dlc = "BNA_KC";
-		author = "SweMonkey";
-		displayName = "[KC] Snow Trooper";
+		editorSubcategory = "BNA_KCSub_SF_Snow";
+		displayName = "[KC] SNOW 01 - Snow Trooper";
+		
 		uniformClass = "BNA_KC_Uniform_Snow_Trooper";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_InfP2";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Snow_Upper.paa",
 			"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Snow_Lower.paa",
 			"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Snow_Undersuit.paa"
 		};
-		weapons[] =
-		{
-			"BNA_KC_DC15C_Predef",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[] =
-		{
-			"BNA_KC_DC15C_Predef",
-			"SWLB_clone_binocular",
-			"Throw",
-			"Put"
-		};
-		magazines[] =
-		{
-			ITEM_5("SWLW_DC17_Mag"),
-			ITEM_3("ls_mag_classC_thermalDet"),
-			ITEM_9("3AS_40Rnd_EC40_Mag"),
-			ITEM_3("ShieldGrenade_Mag"),
-			ITEM_4("3AS_SmokeBlue"),
-			ITEM_3("3AS_SmokeWhite"),
-			ITEM_2("3AS_SmokeRed"),
-			ITEM_2("3AS_SmokePurple")
-		};
-		respawnMagazines[] =
-		{
-			ITEM_5("SWLW_DC17_Mag"),
-			ITEM_3("ls_mag_classC_thermalDet"),
-			ITEM_9("3AS_40Rnd_EC40_Mag"),
-			ITEM_3("ShieldGrenade_Mag"),
-			ITEM_4("3AS_SmokeBlue"),
-			ITEM_3("3AS_SmokeWhite"),
-			ITEM_2("3AS_SmokeRed"),
-			ITEM_2("3AS_SmokePurple")
-		};
-		items[] =
-		{
-			ITEM_9("ACE_quikclot"),
-			ITEM_5("ACE_tourniquet"),
-			"ACE_EntrenchingTool"
-		};
-		respawnItems[] =
-		{
-			ITEM_9("ACE_quikclot"),
-			ITEM_5("ACE_tourniquet"),
-			"ACE_EntrenchingTool"
-		};
+
 		linkedItems[] =
 		{
-			"BNA_KC_P2Helmet_Snow_Trooper","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+			"BNA_KC_P2Helmet_Snow_Trooper","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","lsd_gar_clone_vest"
 		};
 		respawnLinkedItems[] =
 		{
-			"BNA_KC_P2Helmet_Snow_Trooper","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+			"BNA_KC_P2Helmet_Snow_Trooper","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","lsd_gar_clone_vest"
 		};
-		backpack = "";
 	};
 	
 	#define MAG_XX(a,b) class _xx_##a {magazine = a; count = b;}
@@ -1443,22 +1328,6 @@ class CfgVehicles
 		backpack = "SWLB_clone_backpack_predef_arc_assault";
 	};
 
-	class BNA_KC_Unit_ARC_CO: BNA_KC_Unit_ARC
-	{
-		// Popular Attributes
-		displayName = "[KC] ARC 02 - ARC Officer";
-
-		// Helmet, NVGs, etc.
-		linkedItems[] =
-		{
-			"BNA_KC_ARC_Helmet","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
-		};
-		respawnLinkedItems[] =
-		{
-			"BNA_KC_ARC_Helmet","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Arc"
-		};
-	};
-
 	//----------------------------------------------------
 	// ARF
 	//----------------------------------------------------
@@ -1483,38 +1352,6 @@ class CfgVehicles
 		backpack = "SWLB_CEE_Recon_RTO_Backpack";
 	};
 
-	class BNA_KC_Unit_ARF_NCO: BNA_KC_Unit_ARF
-	{
-		// Popular Attributes
-		displayName = "[KC] ARF 02 - ARF NCO";
-
-		// Helmet, NVGs, etc.
-		linkedItems[] =
-		{
-			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon_NCO"
-		};
-		respawnLinkedItems[] =
-		{
-			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon_NCO"
-		};
-	};
-
-	class BNA_KC_Unit_ARF_Officer: BNA_KC_Unit_ARF
-	{
-		// Popular Attributes
-		displayName = "[KC] ARF 03 - ARF Officer";
-
-		// Helmet, NVGs, etc.
-		linkedItems[] =
-		{
-			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon_Officer"
-		};
-		respawnLinkedItems[] =
-		{
-			"BNA_KC_P1_ARF_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_CEE_Force_Recon_Officer"
-		};
-	};
-
 
 	//-----------------------------------------------------
 	// BARC
@@ -1525,7 +1362,8 @@ class CfgVehicles
 		author = "DartRuffian";
 
 		// Popular Attributes
-		displayName = "[KC] BARC - BARC Trooper";
+		editorSubcategory = "BNA_KCSub_SF_BARC";
+		displayName = "[KC] BARC 01 - BARC Trooper";
 
 		// Helmet, NVGs, etc.
 		linkedItems[] =

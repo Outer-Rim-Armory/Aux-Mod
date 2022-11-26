@@ -31,31 +31,33 @@ class CfgPatches
 			"BNA_KC_Unit_ABTrooper_v2",
 
 			// Ranks
-			"BNA_KC_Unit_CR",
-			"BNA_KC_Unit_CT",
-			"BNA_KC_Unit_SCT",
-			"BNA_KC_Unit_VCT",
-			"BNA_KC_Unit_LCPL",
-			"BNA_KC_Unit_CPL",
-			"BNA_KC_Unit_CS",
-			"BNA_KC_Unit_CSS",
-			"BNA_KC_Unit_CMS",
-			"BNA_KC_Unit_CSM",
-			"BNA_KC_Unit_LT",
-			"BNA_KC_Unit_1LT",
-			"BNA_KC_Unit_CPT",
-			"BNA_KC_Unit_MAJ",
-			"BNA_KC_Unit_CMD",
-
+			// Infantry
+			"BNA_KC_Unit_INF_CR",
+			"BNA_KC_Unit_INF_CT",
+			"BNA_KC_Unit_INF_SCT",
+			"BNA_KC_Unit_INF_VCT",
+			"BNA_KC_Unit_INF_LCPL",
+			"BNA_KC_Unit_INF_CPL",
+			"BNA_KC_Unit_INF_CS",
+			"BNA_KC_Unit_INF_CSS",
+			"BNA_KC_Unit_INF_CMS",
+			"BNA_KC_Unit_INF_CSM",
+			"BNA_KC_Unit_INF_LT",
+			"BNA_KC_Unit_INF_1LT",
+			"BNA_KC_Unit_INF_CPT",
+			"BNA_KC_Unit_INF_MAJ",
+			"BNA_KC_Unit_INF_CMD",
+			// Airborne
+			"BNA_KC_Unit_AB_CT",
+			"BNA_KC_Unit_AB_NCO",
+			"BNA_KC_Unit_AB_Officer",
 			// ARC
 			"BNA_KC_Unit_ARC",
-			"BNA_KC_Unit_ARC_CO",
-
+			"BNA_KC_Unit_ARC_Officer",
 			// ARF
 			"BNA_KC_Unit_ARF",
 			"BNA_KC_Unit_ARF_NCO",
 			"BNA_KC_Unit_ARF_Officer",
-
 			// BARC
 			"BNA_KC_Unit_BARC",
 
@@ -67,7 +69,6 @@ class CfgPatches
 			"BNA_KC_Unit_Fil_Squad",
 			"BNA_KC_Unit_Ponds",
 			"BNA_KC_Unit_Stone",
-
 			// Objects
 			"BNA_KC_Gonk_Basic",
 			"BNA_KC_Gonk_Advanced",
@@ -237,34 +238,16 @@ class CfgEditorCategories
 class CfgEditorSubcategories
 {
 	// Units
-	class BNA_KCSub_InfP1
-	{
-		dlc = "BNA_KC";
-		author = "Monkey";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "INF - Phase 1";
-	};
-
-	class BNA_KCSub_InfP2
-	{
-		dlc = "BNA_KC";
-		author = "Monkey";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "INF - Phase 2";
-	};
-
-	class BNA_KCSub_InfRanks
+	class BNA_KCSub_Inf_Ranks
 	{
 		dlc = "BNA_KC";
 		author = "DartRuffian";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "INF - Rank Units";
+		displayName = "Infantry";
 	};
 
-	class BNA_KCSub_InfAB
+	class BNA_KCSub_AB_Ranks
 	{
 		dlc = "BNA_KC";
 		author = "DartRuffian";
@@ -273,13 +256,22 @@ class CfgEditorSubcategories
 		displayName = "Airborne";
 	};
 
+	class BNA_KCSub_AVI_Ranks
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Aviation";
+	};
+
 	class BNA_KCSub_SF_ARC
 	{
 		dlc = "BNA_KC";
 		author = "DartRuffian";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "SF - ARC";
+		displayName = "ARC";
 	};
 
 	class BNA_KCSub_SF_ARF
@@ -288,7 +280,34 @@ class CfgEditorSubcategories
 		author = "DartRuffian";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "SF - ARF";
+		displayName = "ARF";
+	};
+
+	class BNA_KCSub_SF_Snow
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Snow Troopers";
+	};
+
+	class BNA_KCSub_SF_BARC
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "BARC Troopers";
+	};
+
+	class BNA_KCSub_Customs
+	{
+		dlc = "BNA_KC";
+		author = "Monkey";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Customs";
 	};
 
 
@@ -299,7 +318,7 @@ class CfgEditorSubcategories
 		author = "Monkey";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "LAAT's";
+		displayName = "LAATs";
 	};
 
 	// Objects
