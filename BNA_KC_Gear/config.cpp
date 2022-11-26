@@ -446,7 +446,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "BNA_KC_Unit_CR";
+			uniformClass = "BNA_KC_Unit_INF_CR";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -467,7 +467,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "BNA_KC_Unit_SCT";
+			uniformClass = "BNA_KC_Unit_INF_SCT";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -485,7 +485,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "BNA_KC_Unit_VCT";
+			uniformClass = "BNA_KC_Unit_INF_VCT";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -503,7 +503,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "BNA_KC_Unit_LCPL";
+			uniformClass = "BNA_KC_Unit_INF_LCPL";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -521,7 +521,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "BNA_KC_Unit_CPL";
+			uniformClass = "BNA_KC_Unit_INF_CPL";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
@@ -539,7 +539,7 @@ class CfgWeapons
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_CS";
+	// 		uniformClass = "BNA_KC_Unit_INF_CS";
 	// 		containerClass = "Supply150";
 	// 		mass = 40;
 	// 		uniformType = "Neopren";
@@ -557,7 +557,7 @@ class CfgWeapons
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_CSS";
+	// 		uniformClass = "BNA_KC_Unit_INF_CSS";
 	// 		containerClass = "Supply150";
 	// 		mass = 40;
 	// 		uniformType = "Neopren";
@@ -575,7 +575,7 @@ class CfgWeapons
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_CMS";
+	// 		uniformClass = "BNA_KC_Unit_INF_CMS";
 	// 		containerClass = "Supply150";
 	// 		mass = 40;
 	// 		uniformType = "Neopren";
@@ -593,7 +593,7 @@ class CfgWeapons
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_CSM";
+	// 		uniformClass = "BNA_KC_Unit_INF_CSM";
 	// 		containerClass = "Supply150";
 	// 		mass = 40;
 	// 		uniformType = "Neopren";
@@ -611,7 +611,7 @@ class CfgWeapons
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_LT";
+	// 		uniformClass = "BNA_KC_Unit_INF_LT";
 	// 		containerClass = "Supply150";
 	// 		mass = 40;
 	// 		uniformType = "Neopren";
@@ -629,7 +629,7 @@ class CfgWeapons
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_1LT";
+	// 		uniformClass = "BNA_KC_Unit_INF_1LT";
 	// 		containerClass = "Supply150";
 	// 		mass = 40;
 	// 		uniformType = "Neopren";
@@ -647,7 +647,7 @@ class CfgWeapons
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_CPT";
+	// 		uniformClass = "BNA_KC_Unit_INF_CPT";
 	// 		containerClass = "Supply150";
 	// 		mass = 40;
 	// 		uniformType = "Neopren";
@@ -665,7 +665,7 @@ class CfgWeapons
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_MAJ";
+	// 		uniformClass = "BNA_KC_Unit_INF_MAJ";
 	// 		containerClass = "Supply150";
 	// 		mass = 40;
 	// 		uniformType = "Neopren";
@@ -683,7 +683,7 @@ class CfgWeapons
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_CMD";
+	// 		uniformClass = "BNA_KC_Unit_INF_CMD";
 	// 		containerClass = "Supply150";
 	// 		mass = 40;
 	// 		uniformType = "Neopren";

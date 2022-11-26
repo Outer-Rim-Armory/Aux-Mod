@@ -168,6 +168,24 @@ class BNA_KC_Unit_Stone: BNA_KC_Unit_INF_CSS
 		"BNA_KC_P2Helmet_Stone","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
 	};
 };
+// Vortex
+class BNA_KC_Unit_Vortex: BNA_KC_Unit_INF_CSS
+{
+	author = "DartRuffian";
+	editorSubcategory = "BNA_KCSub_Customs";
+
+	displayName = "[KC] Vortex";
+	uniformClass = "BNA_KC_Uniform_Trooper";
+
+	linkedItems[] =
+	{
+		"BNA_KC_P2Helmet_Vortex","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P2Helmet_Vortex","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+	};
+};
 
 // Pilot
 // Snow Trooper

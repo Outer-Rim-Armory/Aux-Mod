@@ -33,7 +33,6 @@ class CfgPatches
 			// Ranks
 			// Infantry
 			"BNA_KC_Unit_INF_CR",
-			"BNA_KC_Unit_INF_CT",
 			"BNA_KC_Unit_INF_SCT",
 			"BNA_KC_Unit_INF_VCT",
 			"BNA_KC_Unit_INF_LCPL",
@@ -69,6 +68,7 @@ class CfgPatches
 			"BNA_KC_Unit_Fil_Squad",
 			"BNA_KC_Unit_Ponds",
 			"BNA_KC_Unit_Stone",
+			"BNA_KC_Unit_Vortex",
 			// Objects
 			"BNA_KC_Gonk_Basic",
 			"BNA_KC_Gonk_Advanced",
