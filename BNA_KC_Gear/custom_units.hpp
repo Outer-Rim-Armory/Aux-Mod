@@ -19,11 +19,11 @@ class BNA_KC_Unit_Keeli: BNA_KC_Unit_CMD
 	
 	linkedItems[] =
 	{
-		"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+		"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
 	};
 	respawnLinkedItems[] =
 	{
-		"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+		"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
 	};
 };
 
