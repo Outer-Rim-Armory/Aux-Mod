@@ -2,7 +2,9 @@
 // Units
 //----------------------------------------------------
 
-// Trooper
+//----------------------------------------------------
+// Phase 2
+//----------------------------------------------------
 // Keeli
 class BNA_KC_Unit_Keeli: BNA_KC_Unit_INF_CMD
 {
@@ -26,7 +28,6 @@ class BNA_KC_Unit_Keeli: BNA_KC_Unit_INF_CMD
 		"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
 	};
 };
-
 // Guardian
 class BNA_KC_Unit_Guardian: BNA_KC_Unit_INF_LT
 {
@@ -50,7 +51,6 @@ class BNA_KC_Unit_Guardian: BNA_KC_Unit_INF_LT
 		"BNA_KC_P2Helmet_Guardian","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
 	};
 };
-
 // Joe
 class BNA_KC_Unit_Joe: BNA_KC_Unit_INF_CPT
 {
@@ -74,7 +74,6 @@ class BNA_KC_Unit_Joe: BNA_KC_Unit_INF_CPT
 		"BNA_KC_P2Helmet_Joe","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
 	};
 };
-
 // Fil
 class BNA_KC_Unit_Fil: BNA_KC_Unit_INF_CS
 {
@@ -98,7 +97,6 @@ class BNA_KC_Unit_Fil: BNA_KC_Unit_INF_CS
 		"BNA_KC_P2Helmet_Fil","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
 	};
 };
-
 // Fil's Squad Members
 class BNA_KC_Unit_Fil_Squad: BNA_KC_Unit_Trooper
 {
@@ -187,15 +185,32 @@ class BNA_KC_Unit_Vortex: BNA_KC_Unit_INF_CSS
 	};
 };
 
-// Pilot
-// Snow Trooper
+
+//----------------------------------------------------
+// Pilots
+//----------------------------------------------------
+
+
+//----------------------------------------------------
+// Snow Troopers
+//----------------------------------------------------
+
+
+//----------------------------------------------------
+// ARC
+//----------------------------------------------------
+
+
+//----------------------------------------------------
+// ARF
+//----------------------------------------------------
+
 
 //-----------------------------------------------------
 // LAATs
 //-----------------------------------------------------
-
-// LAAT Gunship
 // Dexus
+// Pylons
 class BNA_KC_Dexus_laati: BNA_KC_Standard_laati
 {
 	displayName = "[KC] Dexus LAAT Gunship w/ Pylons";
@@ -212,9 +227,7 @@ class BNA_KC_Dexus_laati: BNA_KC_Standard_laati
 		"lsd_vehicles_heli\laati\data\glass_ca.paa"
 	};
 };
-
-// LAAT Transport
-// Dexus
+// Transport
 class BNA_KC_Dexus_laati_transport: BNA_KC_Standard_laati_transport
 {
 	displayName = "[KC] Dexus LAAT Transport";
