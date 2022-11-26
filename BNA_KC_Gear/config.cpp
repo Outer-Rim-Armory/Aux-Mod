@@ -18,7 +18,7 @@ class CfgWeapons
 	//---------------------------------------------------
 	// Helmets
 	//---------------------------------------------------
-	
+
 	class ls_gar_phase1_helmet;
 	class ls_gar_phase1Arf_helmet;
 	class ls_gar_phase1Pilot_helmet;
@@ -104,36 +104,48 @@ class CfgWeapons
 	// Phase 2 Helmets
 	//---------------------------------------------------
 
-	// Standard (CT)
+	// Standard P2 Helmet ; Shared across all detachments that use it
 	class BNA_KC_P2Helmet_Trooper: ls_gar_phase2_helmet
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
-		displayName = "[KC] INF Helm 02 (CT)";
 		scope = 2;
 		scopeArsenal = 2;
+
+		displayName = "[KC] INF Helm 02 (Trooper)";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CT.paa",
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_Base.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
 
+	//---------------------------------------------------
+	// Infantry Ranks
+	//--------------------------------------------------
+
 	// CR Helmet
-	class BNA_KC_P2Helmet_Recruit: BNA_KC_P2Helmet_Trooper
+	class BNA_KC_P2Helmet_CR: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] INF Helm 01 (CR)";
+		author = "DartRuffian";
+
+		displayName = "[KC] INF Helm 01 (Recruit)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CR.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
+
+	// CT Helmet
+	// Standard P2 Helmet
 	
 	// SCT Helmet
 	class BNA_KC_P2Helmet_SCT: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] INF Helm 03 (SCT)";
+		author = "DartRuffian";
+
+		displayName = "[KC] INF Helm 03 (Senior Trooper";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_SCT.paa",
@@ -144,7 +156,9 @@ class CfgWeapons
 	// VCT Helmet
 	class BNA_KC_P2Helmet_VCT: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] INF Helm 04 (VCT)";
+		author = "DartRuffian";
+
+		displayName = "[KC] INF Helm 04 (Veteran Trooper)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_VCT.paa",
@@ -152,35 +166,72 @@ class CfgWeapons
 		};
 	};
 
-	// LCPL-CPL Helmet
-	class BNA_KC_P2Helmet_LCPL_CPL: BNA_KC_P2Helmet_Trooper
+	// LCPL Helmet
+	class BNA_KC_P2Helmet_LCPL: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] INF Helm 05 (LCPL/CPL)";
+		author = "DartRuffian";
+
+		displayName = "[KC] INF Helm 05 (Lance Corporal)";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_LCPL_CPL.paa",
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_LCPL.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
 
-	// CS-CSS Helmet
-	class BNA_KC_P2Helmet_CS_CSS: BNA_KC_P2Helmet_Trooper
+	// CPL Helmet
+	class BNA_KC_P2Helmet_CPL: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] INF Helm 06 (CS/CSS)";
+		author = "DartRuffian";
+
+		displayName = "[KC] INF Helm 06 (Corporal)";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CS_CSS.paa",
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CPL.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
 
-	// CMS-CSM Helmet
-	class BNA_KC_P2Helmet_CMS_CSM: BNA_KC_P2Helmet_Trooper
+	// CS Helmet
+	class BNA_KC_P2Helmet_CS: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] INF Helm 07 (CMS/CSM)";
+		displayName = "[KC] INF Helm 07 (Sergeant)";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CMS_CSM.paa",
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CS.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+
+	// CSS Helmet
+	class BNA_KC_P2Helmet_CSS: BNA_KC_P2Helmet_Trooper
+	{
+		displayName = "[KC] INF Helm 08 (Staff Sergeant)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CSS.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+
+	// CMS Helmet
+	class BNA_KC_P2Helmet_CMS: BNA_KC_P2Helmet_Trooper
+	{
+		displayName = "[KC] INF Helm 09 (Master Sergeant)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CMS.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+
+	// CSM Helmet
+	class BNA_KC_P2Helmet_CSM: BNA_KC_P2Helmet_Trooper
+	{
+		displayName = "[KC] INF Helm 10 (Sergeant Major)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CSM.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
@@ -188,7 +239,7 @@ class CfgWeapons
 	// Officer
 	class BNA_KC_P2Helmet_Officer: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] INF Helm 08 (Officer)";
+		displayName = "[KC] INF Helm 11 (Officer)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_Officer.paa",
@@ -266,7 +317,7 @@ class CfgWeapons
 	};
 
 	//---------------------------------------------------
-	// Arc Helmet
+	// ARC Helmet
 	//---------------------------------------------------
 	class BNA_KC_ARC_Helmet: lsd_gar_arc_helmet
 	{
@@ -356,20 +407,42 @@ class CfgWeapons
 	//---------------------------------------------------
 	// Uniforms
 	//---------------------------------------------------
-	
-	//class UniformItem;
+
 	class UniformItem; 
 	class ls_gar_phase2_uniform;
 	class lsd_gar_phase2insulated_uniform;
 	class SWLB_clone_arc_base_P2;
 
-	// Recruit
-	class BNA_KC_Uniform_CR: ls_gar_phase2_uniform
+	// Base Uniform ; Shared across all detachments
+	class BNA_KC_Uniform_Trooper: ls_gar_phase2_uniform
+	{
+		dlc = "BNA_KC";
+		author = "SweMonkey";
+		scope = 2;
+
+		displayName = "[KC] INF Armor 02 (Trooper)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Trooper";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	//---------------------------------------------------
+	// Infantry Ranks
+	//---------------------------------------------------
+
+	// CR Uniform
+	class BNA_KC_Uniform_CR: BNA_KC_Uniform_Trooper
 	{
 		dlc = "BNA_KC";
 		author = "DartRuffian";
-		displayName = "[KC] INF Armor 01 (Recruit)";
 		scope = 2;
+
+		displayName = "[KC] INF Armor 01 (Recruit)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
@@ -380,22 +453,243 @@ class CfgWeapons
 		};
 	};
 
-	// Trooper
-	class BNA_KC_Uniform_Trooper: ls_gar_phase2_uniform
+	// CT Uniform
+	// Standard Trooper Uniform
+
+	// SCT Uniform
+	class BNA_KC_Uniform_SCT: BNA_KC_Uniform_Trooper
 	{
 		dlc = "BNA_KC";
-		author = "SweMonkey";
-		displayName = "[KC] INF Armor 02 (Trooper)";
+		author = "DartRuffian";
 		scope = 2;
+
+		displayName = "[KC] INF Armor 03 (Senior Trooper)";
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "BNA_KC_Unit_Trooper";
+			uniformClass = "BNA_KC_Unit_SCT";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
 		};
 	};
+
+	// VCT Uniform
+	class BNA_KC_Uniform_VCT: BNA_KC_Uniform_Trooper
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+
+		displayName = "[KC] INF Armor 04 (Veteran Trooper)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_VCT";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	// LCPL Uniform
+	class BNA_KC_Uniform_LCPL: BNA_KC_Uniform_Trooper
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+
+		displayName = "[KC] INF Armor 05 (Lance Corporal)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_LCPL";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	// CPL Uniform
+	class BNA_KC_Uniform_CPL: BNA_KC_Uniform_Trooper
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+
+		displayName = "[KC] INF Armor 06 (Corporal)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_CPL";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	// CS Uniform
+	// class BNA_KC_Uniform_CS: BNA_KC_Uniform_Trooper
+	// {
+	// 	dlc = "BNA_KC";
+	// 	author = "DartRuffian";
+	// 	scope = 2;
+
+	// 	displayName = "[KC] INF Armor 07 (Sergeant)";
+	// 	class ItemInfo: UniformItem
+	// 	{
+	// 		uniformModel = "-";
+	// 		uniformClass = "BNA_KC_Unit_CS";
+	// 		containerClass = "Supply150";
+	// 		mass = 40;
+	// 		uniformType = "Neopren";
+	// 	};
+	// };
+
+	// CSS Uniform
+	// class BNA_KC_Uniform_CSS: BNA_KC_Uniform_Trooper
+	// {
+	// 	dlc = "BNA_KC";
+	// 	author = "DartRuffian";
+	// 	scope = 2;
+
+	// 	displayName = "[KC] INF Armor 08 (Staff Sergeant)";
+	// 	class ItemInfo: UniformItem
+	// 	{
+	// 		uniformModel = "-";
+	// 		uniformClass = "BNA_KC_Unit_CSS";
+	// 		containerClass = "Supply150";
+	// 		mass = 40;
+	// 		uniformType = "Neopren";
+	// 	};
+	// };
+
+	// CMS Uniform
+	// class BNA_KC_Uniform_CMS: BNA_KC_Uniform_Trooper
+	// {
+	// 	dlc = "BNA_KC";
+	// 	author = "DartRuffian";
+	// 	scope = 2;
+
+	// 	displayName = "[KC] INF Armor 09 (Master Sergeant)";
+	// 	class ItemInfo: UniformItem
+	// 	{
+	// 		uniformModel = "-";
+	// 		uniformClass = "BNA_KC_Unit_CMS";
+	// 		containerClass = "Supply150";
+	// 		mass = 40;
+	// 		uniformType = "Neopren";
+	// 	};
+	// };
+
+	// CSM Uniform
+	// class BNA_KC_Uniform_CSM: BNA_KC_Uniform_Trooper
+	// {
+	// 	dlc = "BNA_KC";
+	// 	author = "DartRuffian";
+	// 	scope = 2;
+
+	// 	displayName = "[KC] INF Armor 10 (Sergeant Major)";
+	// 	class ItemInfo: UniformItem
+	// 	{
+	// 		uniformModel = "-";
+	// 		uniformClass = "BNA_KC_Unit_CSM";
+	// 		containerClass = "Supply150";
+	// 		mass = 40;
+	// 		uniformType = "Neopren";
+	// 	};
+	// };
+
+	// LT Uniform
+	// class BNA_KC_Uniform_LT: BNA_KC_Uniform_Trooper
+	// {
+	// 	dlc = "BNA_KC";
+	// 	author = "DartRuffian";
+	// 	scope = 2;
+
+	// 	displayName = "[KC] INF Armor 11 (Lieutenant)";
+	// 	class ItemInfo: UniformItem
+	// 	{
+	// 		uniformModel = "-";
+	// 		uniformClass = "BNA_KC_Unit_LT";
+	// 		containerClass = "Supply150";
+	// 		mass = 40;
+	// 		uniformType = "Neopren";
+	// 	};
+	// };
+
+	// 1LT Uniform
+	// class BNA_KC_Uniform_1LT: BNA_KC_Uniform_Trooper
+	// {
+	// 	dlc = "BNA_KC";
+	// 	author = "DartRuffian";
+	// 	scope = 2;
+
+	// 	displayName = "[KC] INF Armor 12 (1st Lieutenant)";
+	// 	class ItemInfo: UniformItem
+	// 	{
+	// 		uniformModel = "-";
+	// 		uniformClass = "BNA_KC_Unit_1LT";
+	// 		containerClass = "Supply150";
+	// 		mass = 40;
+	// 		uniformType = "Neopren";
+	// 	};
+	// };
+
+	// CAP Uniform
+	// class BNA_KC_Uniform_CPT: BNA_KC_Uniform_Trooper
+	// {
+	// 	dlc = "BNA_KC";
+	// 	author = "DartRuffian";
+	// 	scope = 2;
+
+	// 	displayName = "[KC] INF Armor 13 (Captain)";
+	// 	class ItemInfo: UniformItem
+	// 	{
+	// 		uniformModel = "-";
+	// 		uniformClass = "BNA_KC_Unit_CPT";
+	// 		containerClass = "Supply150";
+	// 		mass = 40;
+	// 		uniformType = "Neopren";
+	// 	};
+	// };
+
+	// MAJ Uniform
+	// class BNA_KC_Uniform_MAJ: BNA_KC_Uniform_Trooper
+	// {
+	// 	dlc = "BNA_KC";
+	// 	author = "DartRuffian";
+	// 	scope = 2;
+
+	// 	displayName = "[KC] INF Armor 14 (Major)";
+	// 	class ItemInfo: UniformItem
+	// 	{
+	// 		uniformModel = "-";
+	// 		uniformClass = "BNA_KC_Unit_MAJ";
+	// 		containerClass = "Supply150";
+	// 		mass = 40;
+	// 		uniformType = "Neopren";
+	// 	};
+	// };
+
+	// CMD Uniform
+	// class BNA_KC_Uniform_CMD: BNA_KC_Uniform_Trooper
+	// {
+	// 	dlc = "BNA_KC";
+	// 	author = "DartRuffian";
+	// 	scope = 2;
+
+	// 	displayName = "[KC] INF Armor 15 (Commander)";
+	// 	class ItemInfo: UniformItem
+	// 	{
+	// 		uniformModel = "-";
+	// 		uniformClass = "BNA_KC_Unit_CMD";
+	// 		containerClass = "Supply150";
+	// 		mass = 40;
+	// 		uniformType = "Neopren";
+	// 	};
+	// };
+
 	
 	// Pilot
 	class BNA_KC_Uniform_Pilot: BNA_KC_Uniform_Trooper

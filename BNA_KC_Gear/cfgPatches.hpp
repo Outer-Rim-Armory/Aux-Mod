@@ -35,9 +35,12 @@ class CfgPatches
 			"BNA_KC_Unit_CT",
 			"BNA_KC_Unit_SCT",
 			"BNA_KC_Unit_VCT",
-			"BNA_KC_Unit_LCPL_CPL",
-			"BNA_KC_Unit_CS_CSS",
-			"BNA_KC_Unit_CMS_CSM",
+			"BNA_KC_Unit_LCPL",
+			"BNA_KC_Unit_CPL",
+			"BNA_KC_Unit_CS",
+			"BNA_KC_Unit_CSS",
+			"BNA_KC_Unit_CMS",
+			"BNA_KC_Unit_CSM",
 			"BNA_KC_Unit_LT",
 			"BNA_KC_Unit_1LT",
 			"BNA_KC_Unit_CPT",
@@ -88,21 +91,22 @@ class CfgPatches
 			"BNA_KC_P1Helmet_v3",
 
 			// P2 Helmets
+			"BNA_KC_P2Helmet_CR",
 			"BNA_KC_P2Helmet_Trooper",
-			"BNA_KC_P2Helmet_Officer",
-			"BNA_KC_P2Helmet_Recruit",
 			"BNA_KC_P2Helmet_VCT",
 			"BNA_KC_P2Helmet_SCT",
-			"BNA_KC_P2Helmet_LCPL_CPL",
+			"BNA_KC_P2Helmet_LCPL",
+			"BNA_KC_P2Helmet_CPL",
 			"BNA_KC_P2Helmet_CS_CSS",
 			"BNA_KC_P2Helmet_CMS_CSM",
+			"BNA_KC_P2Helmet_Officer",
 
 			// Airborne
 			"BNA_KC_AB_Helmet",
 			"BNA_KC_AB_Helmet_v2",
 			
 			// P1 Pilots
-			"SWLB_P1_Pilot_Helmet",
+			"BNA_KC_PilotHelmet_P1",
 
 			// P2 Pilots
 			"BNA_KC_PilotHelmet",
@@ -128,7 +132,22 @@ class CfgPatches
 			"BNA_KC_Uniform_ABTrooper",
 			"BNA_KC_Uniform_Pilot",
 			"BNA_KC_Uniform_Snow_Trooper",
-			
+
+			// Rank Uniforms
+			"BNA_KC_Uniform_CR",
+			"BNA_KC_Uniform_SCT",
+			"BNA_KC_Uniform_VCT",
+			"BNA_KC_Uniform_LCPL",
+			"BNA_KC_Uniform_CPL",
+			// "BNA_KC_Uniform_CS",
+			// "BNA_KC_Uniform_CSS",
+			// "BNA_KC_Uniform_CMS",
+			// "BNA_KC_Uniform_CSM",
+			// "BNA_KC_Uniform_LT",
+			// "BNA_KC_Uniform_1LT",
+			// "BNA_KC_Uniform_CPT",
+			// "BNA_KC_Uniform_MAJ",
+			// "BNA_KC_Uniform_CMD",
 			
 			// Customs
 			// P1 Helmets

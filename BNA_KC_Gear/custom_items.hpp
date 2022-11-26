@@ -189,7 +189,7 @@ class BNA_KC_P2Helmet_Sytha: BNA_KC_P2Helmet_Trooper
 class BNA_KC_P2Helmet_Ox: BNA_KC_P2Helmet_Trooper
 {
 	author = "DartRuffian";
-	displayName = "[KC] INF Helm (Ox)";
+	displayName = "[KC] INF Helm ('Ox')";
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Ox.paa",
