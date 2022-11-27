@@ -93,7 +93,9 @@ class CfgPatches
 
 			// P2 Helmets
 			"BNA_KC_P2Helmet_CR",
+			"BNA_KC_P2Helmet_CR_v2",
 			"BNA_KC_P2Helmet_Trooper",
+			"BNA_KC_P2Helmet_Trooper_v2",
 			"BNA_KC_P2Helmet_VCT",
 			"BNA_KC_P2Helmet_SCT",
 			"BNA_KC_P2Helmet_LCPL",
@@ -130,6 +132,7 @@ class CfgPatches
 
 			// Uniforms
 			"BNA_KC_Uniform_Trooper",
+			"BNA_KC_Uniform_Trooper_v2",
 			"BNA_KC_Uniform_ABTrooper",
 			"BNA_KC_Uniform_Pilot",
 			"BNA_KC_Uniform_Snow_Trooper",

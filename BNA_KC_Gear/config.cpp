@@ -67,7 +67,7 @@ class CfgWeapons
 	// Version 2
 	class BNA_KC_P1Helmet_v2: BNA_KC_P1Helmet_CT
 	{
-		displayName = "[KC] INF P1 Helm 02 (CT v2)";
+		displayName = "[KC] INF P1 Helm 02 (CT, Alt)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_2.paa",
@@ -78,7 +78,7 @@ class CfgWeapons
 	// Version 3
 	class BNA_KC_P1Helmet_v3: BNA_KC_P1Helmet_CT
 	{
-		displayName = "[KC] INF P1 Helm 02 (CT v3)";
+		displayName = "[KC] INF P1 Helm 02 (CT, Alt 2)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_3.paa",
@@ -119,6 +119,18 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
+	// ALT CT Helmet
+	class BNA_KC_P2Helmet_Trooper_v2: BNA_KC_P2Helmet_Trooper
+	{
+		author = "DartRuffian";
+
+		displayName = "[KC] INF Helm 02 (Trooper, Alt)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_Base_v2.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
 
 	//---------------------------------------------------
 	// Infantry Ranks
@@ -133,6 +145,18 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CR.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+	// Alt CR Helmet
+	class BNA_KC_P2Helmet_CR_v2: BNA_KC_P2Helmet_Trooper
+	{
+		author = "DartRuffian";
+
+		displayName = "[KC] INF Helm 01 (Recruit, Alt)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CR_v2.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
@@ -370,7 +394,7 @@ class CfgWeapons
 	};
 	class BNA_KC_P2_Reeker_Helmet_2: BNA_KC_P2_Reeker_Helmet_1
 	{
-		displayName = "[KC] Reeker Helm 01 (Base - Alt)";
+		displayName = "[KC] Reeker Helm 01 (Base, Alt)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\SpecOP\BNA_KC_Helmet_Reeker_2.paa",
@@ -396,7 +420,7 @@ class CfgWeapons
 
 	class BNA_KC_AB_Helmet_v2: BNA_KC_AB_Helmet
 	{
-		displayName = "[KC] AB Helm 01 (Base v2)";
+		displayName = "[KC] AB Helm 01 (Base, Alt)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Airborne\BNA_KC_Helmet_AB_2.paa"
@@ -425,6 +449,23 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "BNA_KC_Unit_Trooper";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	class BNA_KC_Uniform_Trooper_v2: BNA_KC_Uniform_Trooper
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+
+		displayName = "[KC] INF Armor 02 (Trooper, Alt)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_INF_CT_v2";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";

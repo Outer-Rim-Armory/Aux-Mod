@@ -27,6 +27,22 @@ class BNA_KC_Unit_INF_CR: BNA_KC_Unit_Trooper
 	};
 };
 // CT ; Standard Trooper
+class BNA_KC_Unit_INF_CT_v2: BNA_KC_Unit_Trooper
+{
+	// Apply textures to alt CT vest
+	scope = 1; // Hides the unit from the editor, as it's not needed.
+	scopeCurator = 0; // Hides the unit in Zeus
+	author = "DartRuffian";
+	// Popular Attributes
+
+	uniformClass = "BNA_KC_Uniform_Trooper_v2";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Base_v2_Upper.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Base_v2_Lower.paa",
+		"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+	};
+}
 class BNA_KC_Unit_INF_SCT: BNA_KC_Unit_Trooper
 {
 	author = "DartRuffian";
