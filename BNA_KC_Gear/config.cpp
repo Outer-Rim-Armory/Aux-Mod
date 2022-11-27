@@ -1391,6 +1391,7 @@ class CfgVehicles
 	// Base
 	class BNA_KC_Standard_laati: lsd_heli_laati
 	{
+		armor = 200;
 		displayName = "[KC] Standard LAAT Gunship w/ Pylons";
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_LAATS";
@@ -1408,12 +1409,35 @@ class CfgVehicles
 			"lsd_vehicles_heli\laati\data\glass_ca.paa"
 		};
 		textureList[] = {};
+		weapons[] = 
+		{
+			"ls_laat_gun",
+			"ls_laat_gun_2",
+			"ls_laat_DAR",
+			"CMFlareLauncher",
+			"Laserdesignator_pilotCamera"
+		};
+		magazines[] = 
+		{
+			"200rnd_laat_he_mag",
+			"200rnd_laat_he_mag",
+			"200rnd_laat_apfsds_mag",
+			"200rnd_laat_apfsds_mag",
+			"12rnd_missiles",
+			"12rnd_missiles",
+			"12rnd_missiles",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"240Rnd_CMFlare_Chaff_Magazine",
+			"Laserbatteries"
+		};
 	};
 	
 	// LAAT Transport
 	// Base
 	class BNA_KC_Standard_laati_transport: lsd_heli_laati_transport
 	{
+		armor = 200;
 		displayName = "[KC] Standard LAAT Transport";
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_LAATS";
