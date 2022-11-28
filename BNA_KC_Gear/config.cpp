@@ -169,10 +169,22 @@ class CfgWeapons
 	{
 		author = "DartRuffian";
 
-		displayName = "[KC] INF Helm 03 (Senior Trooper";
+		displayName = "[KC] INF Helm 03 (Senior Trooper)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_SCT.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+	// Alt SCT Helmet
+	class BNA_KC_P2Helmet_SCT_v2: BNA_KC_P2Helmet_Trooper
+	{
+		author = "DartRuffian";
+
+		displayName = "[KC] INF Helm 03 (Senior Trooper, Alt)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_SCT_v2.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
@@ -189,6 +201,18 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
+	// Alt VCT Helmet
+	class BNA_KC_P2Helmet_VCT_v2: BNA_KC_P2Helmet_Trooper
+	{
+		author = "DartRuffian";
+
+		displayName = "[KC] INF Helm 04 (Veteran Trooper, Alt)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_VCT_v2.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
 
 	// LCPL Helmet
 	class BNA_KC_P2Helmet_LCPL: BNA_KC_P2Helmet_Trooper
@@ -199,6 +223,18 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_LCPL.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+	// Alt LCPL-CPL Helmet
+	class BNA_KC_P2Helmet_LCPL_v2: BNA_KC_P2Helmet_Trooper
+	{
+		author = "DartRuffian";
+
+		displayName = "[KC] INF Helm 05 (Lance Corporal, Alt)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_LCPL_v2.paa",
 			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 		};
 	};
