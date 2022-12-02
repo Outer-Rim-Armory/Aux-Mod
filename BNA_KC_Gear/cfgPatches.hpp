@@ -71,16 +71,7 @@ class CfgPatches
 			"BNA_KC_Unit_Vortex",
 			// Objects
 			"BNA_KC_Gonk_Basic",
-			"BNA_KC_Gonk_Advanced",
-
-			// Vehicles
-			// Base Vehicles
-			"BNA_KC_Standard_laati",
-			"BNA_KC_Standard_laati_transport",
-			"BNA_KC_Standard_laatc",
-			// Dexus LAAT
-			"BNA_KC_Dexus_laati",
-			"BNA_KC_Dexus_laati_transport"
+			"BNA_KC_Gonk_Advanced"
 		};
 		weapons[] =
 		{
@@ -326,10 +317,20 @@ class CfgEditorSubcategories
 		scopeCurator = 2;
 		displayName = "LAATs";
 	};
+	class BNA_KCSub_GVics
+	{
+		dlc = "BNA_KC";
+		author = "Monkey";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Ground Vehicles";
+	};
 
 	// Objects
 	class BNA_KC_EditorSubcategory_Gonk
 	{
+		dlc = "BNA_KC";
+		author = "Monkey";
 		scope = 2;
 		scopeCurator = 2;
 		displayName="Loadout Gonks";
@@ -339,6 +340,8 @@ class CfgEditorSubcategories
 	// Misc
 	class BNA_KC_EditorSubcategory_Ambi
 	{
+		dlc = "BNA_KC";
+		author = "Monkey";
 		scope = 2;
 		scopeCurator = 2;
 		displayName="Ambience";
