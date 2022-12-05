@@ -8,6 +8,7 @@ class CfgPatches
 		{
 			"BNA_KC_Gear",
 			"A3_Armor_F",
+			"A3_Sounds_F",
 			"3AS_VehicleWeapons"
 		};
 		units[] =
@@ -21,16 +22,23 @@ class CfgPatches
 		};
 		weapons[] =
 		{
-			"BNA_KC_ATTE_Tankgun"
+			"BNA_KC_120_Tankgun",
+			"BNA_KC_Coax",
+			"BNA_KC_CommanderGun"
 		};
 		ammo[]=
 		{
-			"BNA_KC_ATTE_AT_Ammo",
-			"BNA_KC_ATTE_HE_Ammo"
+			"BNA_KC_120_AT_Ammo",
+			"BNA_KC_120_HEAT_Ammo",
+			"BNA_KC_120_HE_Ammo",
+			"BNA_KC_Coax_Ammo"
 		};
 		magazines[]=
 		{
-			
+			"BNA_KC_120_AT_Mag",
+			"BNA_KC_120_HEAT_Mag",
+			"BNA_KC_120_HE_Mag",
+			"BNA_KC_100rnd_Coax_Mag"
 		};
 	};
 };

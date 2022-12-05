@@ -1,0 +1,47 @@
+IFV-6c Panther - B_APC_Tracked_01_rcws_F
+Weapons: 
+HMG_127_APC
+GMG_40mm
+SmokeLauncher
+
+
+M2A1 Slammer - B_MBT_01_TUSK_F
+Weapons: 
+cannon_120mm
+LMG_coax
+HMG_127_MBT
+SmokeLauncher
+
+M4 Scorcher - B_MBT_01_arty_F
+Weapons:
+mortar_155mm_AMOS
+HMG_127_APC
+GMG_40mm
+SmokeLauncher
+
+M5 Sandstorm MLRS - B_MBT_01_mlrs_F
+Weapons:
+SmokeLauncher
+rockets_230mm_GAT
+
+AMV-7 Marshall - B_APC_Wheeled_01_cannon_F
+Weapons:
+TruckHorn
+autocannon_40mm_CTWS
+LMG_coax
+SmokeLauncher
+
+T-100 Varsuk - O_MBT_02_cannon_F
+Weapons:
+cannon_125mm
+LMG_coax
+HMG_NSVT
+SmokeLauncher
+
+MSE-Madrid - O_APC_Wheeled_02_rcws_F
+Weapons:
+TruckHorn
+HMG_127_APC
+GMG_40mm
+SmokeLauncher
+
