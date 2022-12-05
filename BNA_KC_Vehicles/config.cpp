@@ -777,13 +777,13 @@ class CfgVehicles
 	{
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_GVics";
-		displayName = "[KC] Whacky Tank Thang";
+		displayName = "[KC] Blitz Assault Tank";
 		hiddenSelectionsTextures[] = 
 		{
-			"A3\armor_f_gamma\MBT_01\Data\MBT_01_body_CO.paa",
-			"A3\armor_f_gamma\MBT_01\Data\MBT_01_tow_CO.paa",
-			"a3\armor_f_epc\mbt_01\data\mbt_addons_co.paa",
-			"a3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
+			"BNA_KC_Vehicles\Data\Blitz\BNA_KC_Blitz_Body_CO.paa",
+			"BNA_KC_Vehicles\Data\Blitz\BNA_KC_Blitz_tow_CO.paa",
+			"BNA_KC_Vehicles\Data\Blitz\BNA_KC_Blitz_addons_CO.paa",
+			"BNA_KC_Vehicles\Data\Blitz\BNA_KC_Blitz_Camonet_CO.paa"
 		};
 		class Turrets: Turrets
 		{
