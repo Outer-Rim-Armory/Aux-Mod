@@ -31,7 +31,7 @@ class CfgPatches
 			"BNA_KC_Unit_ABTrooper_v2",
 
 			// Ranks
-			// Infantry
+			// Infantry P2
 			"BNA_KC_Unit_INF_CR",
 			"BNA_KC_Unit_INF_SCT",
 			"BNA_KC_Unit_INF_VCT",
@@ -46,6 +46,21 @@ class CfgPatches
 			"BNA_KC_Unit_INF_CPT",
 			"BNA_KC_Unit_INF_MAJ",
 			"BNA_KC_Unit_INF_CMD",
+			// Infantry P1
+			"BNA_KC_Unit_INF_P1_CR",
+			"BNA_KC_Unit_INF_P1_SCT",
+			"BNA_KC_Unit_INF_P1_VCT",
+			"BNA_KC_Unit_INF_P1_LCPL",
+			"BNA_KC_Unit_INF_P1_CPL",
+			"BNA_KC_Unit_INF_P1_CS",
+			"BNA_KC_Unit_INF_P1_CSS",
+			"BNA_KC_Unit_INF_P1_CMS",
+			"BNA_KC_Unit_INF_P1_CSM",
+			"BNA_KC_Unit_INF_P1_LT",
+			"BNA_KC_Unit_INF_P1_1LT",
+			"BNA_KC_Unit_INF_P1_CPT",
+			"BNA_KC_Unit_INF_P1_MAJ",
+			"BNA_KC_Unit_INF_P1_CMD",
 			// Airborne
 			"BNA_KC_Unit_AB_CT",
 			"BNA_KC_Unit_AB_NCO",
@@ -83,6 +98,10 @@ class CfgPatches
 			"BNA_KC_P1Helmet_CT",
 			"BNA_KC_P1Helmet_v2",
 			"BNA_KC_P1Helmet_v3",
+			"BNA_KC_P1Helmet_SCT",
+			"BNA_KC_P1Helmet_VCT",
+			"BNA_KC_P1Helmet_LCPL",
+			"BNA_KC_P1Helmet_CPL",
 
 			// P2 Helmets
 			"BNA_KC_P2Helmet_CR",
@@ -254,6 +273,15 @@ class CfgEditorSubcategories
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Infantry";
+	};
+
+	class BNA_KCSub_INF_P1_Ranks
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Infantry (Phase 1)";
 	};
 
 	class BNA_KCSub_Amr_Reeker

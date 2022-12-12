@@ -45,7 +45,7 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 
-		displayName = "[KC] INF P1 Helm 02 (CT)";
+		displayName = "[KC] INF P1 Helm 02 (Trooper)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CT.paa",
@@ -53,20 +53,10 @@ class CfgWeapons
 		};
 	};
 
-	class BNA_KC_P1Helmet_CR: BNA_KC_P1Helmet_CT
-	{
-		displayName = "[KC] INF P1 Helm 01 (CR)";
-		hiddenSelectionsTextures[] =
-		{
-			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CR.paa",
-			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
-		};
-	};
-
 	// Version 2
 	class BNA_KC_P1Helmet_v2: BNA_KC_P1Helmet_CT
 	{
-		displayName = "[KC] INF P1 Helm 02 (CT, Alt)";
+		displayName = "[KC] INF P1 Helm 02 (Trooper, Alt)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_2.paa",
@@ -77,10 +67,65 @@ class CfgWeapons
 	// Version 3
 	class BNA_KC_P1Helmet_v3: BNA_KC_P1Helmet_CT
 	{
-		displayName = "[KC] INF P1 Helm 02 (CT, Alt 2)";
+		displayName = "[KC] INF P1 Helm 02 (Trooper, Alt 2)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_3.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		};
+	};
+
+	// CR
+	class BNA_KC_P1Helmet_CR: BNA_KC_P1Helmet_CT
+	{
+		displayName = "[KC] INF P1 Helm 01 (Recruit)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CR.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		};
+	};
+
+	// SCT
+	class BNA_KC_P1Helmet_SCT: BNA_KC_P1Helmet_CT
+	{
+		displayName = "[KC] INF P1 Helm 03 (Senior Trooper)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_SCT.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		};
+	};
+
+	// VCT
+	class BNA_KC_P1Helmet_VCT: BNA_KC_P1Helmet_CT
+	{
+		displayName = "[KC] INF P1 Helm 04 (Veteran Trooper)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_VCT.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		};
+	};
+
+	// LCPL
+	class BNA_KC_P1Helmet_LCPL: BNA_KC_P1Helmet_CT
+	{
+		displayName = "[KC] INF P1 Helm 05 (Lance Corporal)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_LCPL.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		};
+	};
+
+	// CPL
+	class BNA_KC_P1Helmet_CPL: BNA_KC_P1Helmet_CT
+	{
+		displayName = "[KC] INF P1 Helm 06 (Corporal)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CPL.paa",
 			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
 		};
 	};

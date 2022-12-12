@@ -1,6 +1,8 @@
 //----------------------------------------------------
 // Infantry Rank Units
 //----------------------------------------------------
+
+// Phase 2
 class BNA_KC_Unit_INF_CR: BNA_KC_Unit_Trooper
 {
 	author = "DartRuffian";
@@ -302,6 +304,289 @@ class BNA_KC_Unit_INF_CMD: BNA_KC_UNIT_INF_CS
 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
 	};
 };
+
+
+// Phase 1
+class BNA_KC_Unit_INF_P1_CR: BNA_KC_Unit_Trooper
+{
+	author = "DartRuffian";
+	// Popular Attributes
+	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+	displayName = "[KC] INF P1 01 - Clone Recruit";
+	
+	uniformClass = "BNA_KC_Uniform_CR";
+
+	// Standard Loadout
+	
+	linkedItems[] =
+	{
+		"BNA_KC_P1Helmet_CR","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P1Helmet_CR","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+	};
+};
+// CT ; Standard Trooper
+class BNA_KC_Unit_INF_P1_CT: BNA_KC_Unit_Trooper
+{
+	author = "DartRuffian";
+	// Popular Attributes
+	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+	displayName = "[KC] INF P1 02 - Clone Trooper"
+
+	uniformClass = "BNA_KC_Uniform_Trooper";
+
+	// Standard Loadout
+
+	linkedItems[] =
+	{
+		"BNA_KC_P1Helmet_CT","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P1Helmet_CT","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+	};
+}
+class BNA_KC_Unit_INF_P1_SCT: BNA_KC_Unit_Trooper
+{
+	author = "DartRuffian";
+	// Popular Attributes
+	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+	displayName = "[KC] INF P1 03 - Senior Clone Trooper";
+
+	uniformClass = "BNA_KC_Uniform_SCT";
+
+	// Standard Loadout
+	
+	linkedItems[] =
+	{
+		"BNA_KC_P1Helmet_SCT","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P1Helmet_SCT","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+	};
+};
+class BNA_KC_Unit_INF_P1_VCT: BNA_KC_Unit_Trooper
+{
+	author = "DartRuffian";
+	// Popular Attributes
+	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+	displayName = "[KC] INF P1 04 - Veteran Clone Trooper";
+
+	uniformClass = "BNA_KC_Uniform_VCT";
+
+	// Standard Loadout
+	
+	linkedItems[] =
+	{
+		"BNA_KC_P1Helmet_VCT","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P1Helmet_VCT","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+	};
+};
+class BNA_KC_Unit_INF_P1_LCPL: BNA_KC_Unit_Trooper
+{
+	author = "DartRuffian";
+	// Popular Attributes
+	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+	displayName = "[KC] INF P1 05 - Clone Lance Corporal";
+
+	uniformClass = "BNA_KC_Uniform_LCPL";
+
+	// Standard Loadout
+	
+	linkedItems[] =
+	{
+		"BNA_KC_P1Helmet_LCPL","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P1Helmet_LCPL","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
+	};
+};
+class BNA_KC_Unit_INF_P1_CPL: BNA_KC_Unit_Trooper
+{
+	author = "DartRuffian";
+	// Popular Attributes
+	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+	displayName = "[KC] INF P1 06 - Clone Corporal";
+
+	uniformClass = "BNA_KC_Uniform_CPL";
+
+	// Standard Loadout
+	
+	linkedItems[] =
+	{
+		"BNA_KC_P1Helmet_CPL","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","SWLB_clone_recon_armor"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P1Helmet_CPL","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","SWLB_clone_recon_armor"
+	};
+};
+// class BNA_KC_Unit_INF_P1_CS: BNA_KC_Unit_Trooper
+// {
+// 	// Beginning of NCO Kits
+// 	author = "DartRuffian";
+// 	// Popular Attributes
+// 	displayName = "[KC] INF P1 07 - Clone Sergeant";
+
+// 	// Standard Loadout
+// 	// "Command/Support kits may add:
+// 	// 	 +3 smokes of any color to their kit
+// 	// 	 +1 Thermal detonator
+// 	//   +2 Primary and Secondary magazines"
+	
+// 	linkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_CS","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+// 	};
+// 	respawnLinkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_CS","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+// 	};
+// 	backpack = "SWLB_clone_RTO_mini_backpack";
+// };
+// class BNA_KC_Unit_INF_P1_CSS: BNA_KC_UNIT_INF_CS
+// {
+// 	// Popular Attributes
+// 	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+// 	displayName = "[KC] INF P1 08 - Clone Staff Sergeant";
+
+// 	// NCO Loadout
+
+// 	linkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_CSS","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+// 	};
+// 	respawnLinkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_CSS","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+// 	};
+// };
+// class BNA_KC_Unit_INF_P1_CMS: BNA_KC_UNIT_INF_CS
+// {
+// 	// Popular Attributes
+// 	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+// 	displayName = "[KC] INF P1 09 - Clone Master Sergeant";
+
+// 	// NCO Loadout
+
+// 	linkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_CMS","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+// 	};
+// 	respawnLinkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_CMS","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+// 	};
+// };
+// class BNA_KC_Unit_INF_P1_CSM: BNA_KC_UNIT_INF_CS
+// {
+// 	// Popular Attributes
+// 	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+// 	displayName = "[KC] INF P1 10 - Clone Sergeant Major";
+
+// 	// NCO Loadout
+
+// 	linkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_CSM","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+// 	};
+// 	respawnLinkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_CSM","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+// 	};
+// };
+// class BNA_KC_Unit_INF_P1_LT: BNA_KC_UNIT_INF_CS
+// {
+// 	// Popular Attributes
+// 	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+// 	displayName = "[KC] INF P1 11 - Clone Lieutenant";
+
+// 	// NCO Loadout
+
+// 	linkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+// 	};
+// 	respawnLinkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+// 	};
+// };
+// class BNA_KC_Unit_INF_P1_1LT: BNA_KC_UNIT_INF_CS
+// {
+// 	// Popular Attributes
+// 	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
+// 	displayName = "[KC] INF P1 12 - Clone First Lieutenant";
+
+// 	// NCO Loadout
+
+// 	linkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+// 	};
+// 	respawnLinkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+// 	};
+// };
+// class BNA_KC_Unit_INF_P1_CPT: BNA_KC_UNIT_INF_CS
+// {
+// 	// Popular Attributes
+// 	editorSubcategory = "BNA_KCSub_INF_Ranks";
+// 	displayName = "[KC] INF P1 13 - Clone Captain";
+
+// 	// NCO Loadout
+
+// 	linkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+// 	};
+// 	respawnLinkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+// 	};
+// };
+// class BNA_KC_Unit_INF_P1_MAJ: BNA_KC_UNIT_INF_CS
+// {
+// 	// Popular Attributes
+// 	editorSubcategory = "BNA_KCSub_Inf_P1_Ranks";
+// 	displayName = "[KC] INF P1 14 - Clone Major";
+
+// 	// NCO Loadout
+
+// 	linkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+// 	};
+// 	respawnLinkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+// 	};
+// };
+// class BNA_KC_Unit_INF_P1_CMD: BNA_KC_UNIT_INF_CS
+// {
+// 	// Popular Attributes
+// 	editorSubcategory = "BNA_KCSub_Inf_P1_Ranks";
+// 	displayName = "[KC] INF P1 15 - Clone Comander";
+
+// 	// NCO Loadout
+
+// 	linkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+// 	};
+// 	respawnLinkedItems[] =
+// 	{
+// 		"BNA_KC_P2Helmet_Officer","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+// 	};
+// };
 
 
 //----------------------------------------------------
