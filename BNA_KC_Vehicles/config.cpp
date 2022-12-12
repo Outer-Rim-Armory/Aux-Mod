@@ -596,14 +596,14 @@ class CfgVehicles
 		crew = "BNA_KC_Unit_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Body1.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Body2.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Door1.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Door2.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Door3.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Wings.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Body1.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Body2.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Door1.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Door2.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Door3.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Wings.paa",
 			"lsd_vehicles_heli\laati\data\missiles_co.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Cockpits.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Cockpits.paa",
 			"lsd_vehicles_heli\laati\data\glass_ca.paa"
 		};
 		textureList[] = {};
@@ -642,14 +642,14 @@ class CfgVehicles
 		crew = "BNA_KC_Unit_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Body1.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Body2.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Door1.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Door2.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Door3.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Wings.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Body1.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Body2.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Door1.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Door2.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Door3.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Wings.paa",
 			"lsd_vehicles_heli\laati\data\missiles_co.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Standard\BNA_KC_LAAT_Standard_Cockpits.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Cockpits.paa",
 			"lsd_vehicles_heli\laati\data\glass_ca.paa"
 		};
 		textureList[] = {};
@@ -665,11 +665,11 @@ class CfgVehicles
 		crew = "BNA_KC_Unit_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAATC\BNA_KC_LAATC_Auxiliary.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAATC\BNA_KC_LAATC_Cockpit.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAATC\BNA_KC_LAATC_Auxiliary.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAATC\BNA_KC_LAATC_Cockpit.paa",
 			"lsd_vehicles_heli\laatc\data\glass_ca.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAATC\BNA_KC_LAATC_Hull.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAATC\BNA_KC_LAATC_Wings.paa"
+			"BNA_KC_Vehicles\Data\Textures\LAATC\BNA_KC_LAATC_Hull.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAATC\BNA_KC_LAATC_Wings.paa"
 		};
 		textureList[] = {};
 	};
@@ -685,14 +685,14 @@ class CfgVehicles
 		displayName = "[KC] Dexus LAAT Gunship w/ Pylons";
 		hiddenSelectionsTextures[] = 
 		{
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Body1.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Body2.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Door1.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Door2.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Door3.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Wings.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Body1.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Body2.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Door1.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Door2.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Door3.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Wings.paa",
 			"lsd_vehicles_heli\laati\data\missiles_co.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Cockpits.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Cockpits.paa",
 			"lsd_vehicles_heli\laati\data\glass_ca.paa"
 		};
 	};
@@ -702,14 +702,14 @@ class CfgVehicles
 		displayName = "[KC] Dexus LAAT Transport";
 		hiddenSelectionsTextures[] = 
 		{
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Body1.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Body2.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Door1.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Door2.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Door3.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Wings.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Body1.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Body2.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Door1.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Door2.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Door3.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Wings.paa",
 			"lsd_vehicles_heli\laati\data\missiles_co.paa",
-			"BNA_KC_Gear\Data\Textures\Vehicles\LAAT\Dexus\BNA_KC_LAAT_Dexus_Cockpits.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Customs\Dexus\BNA_KC_LAAT_Dexus_Cockpits.paa",
 			"lsd_vehicles_heli\laati\data\glass_ca.paa"
 		};
 	};
