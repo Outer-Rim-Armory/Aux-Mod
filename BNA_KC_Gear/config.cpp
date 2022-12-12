@@ -974,7 +974,6 @@ class CfgWeapons
 	class lsd_gar_standard_nvg;
 	class SWLB_clone_ccVisor;
 	class lsd_gar_rangefinder_nvg;
-	class NVGoggles;
 
 	// Chip
 	class BNA_KC_NVG_Chip: lsd_gar_standard_nvg
@@ -1477,11 +1476,11 @@ class CfgVehicles
 		// Helmet, NVGs, etc.
 		linkedItems[] =
 		{
-			"BNA_KC_P2_Reeker_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_basic_armor"
+			"BNA_KC_P2_Reeker_Helmet","BNA_KC_NVG_Chip","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_basic_armor"
 		};
 		respawnLinkedItems[] =
 		{
-			"BNA_KC_P2_Reeker_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_basic_armor"
+			"BNA_KC_P2_Reeker_Helmet","BNA_KC_NVG_Chip","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_basic_armor"
 		};
 	};
 
