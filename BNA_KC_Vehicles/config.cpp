@@ -780,10 +780,10 @@ class CfgVehicles
 		displayName = "[KC] Blitz Assault Tank";
 		hiddenSelectionsTextures[] = 
 		{
-			"BNA_KC_Vehicles\Data\Blitz\BNA_KC_Blitz_Body_CO.paa",
-			"BNA_KC_Vehicles\Data\Blitz\BNA_KC_Blitz_tow_CO.paa",
-			"BNA_KC_Vehicles\Data\Blitz\BNA_KC_Blitz_addons_CO.paa",
-			"BNA_KC_Vehicles\Data\Blitz\BNA_KC_Blitz_Camonet_CO.paa"
+			"BNA_KC_Vehicles\Data\Textures\Blitz\BNA_KC_Blitz_Body_CO.paa",
+			"BNA_KC_Vehicles\Data\Textures\Blitz\BNA_KC_Blitz_tow_CO.paa",
+			"BNA_KC_Vehicles\Data\Textures\Blitz\BNA_KC_Blitz_addons_CO.paa",
+			"BNA_KC_Vehicles\Data\Textures\Blitz\BNA_KC_Blitz_Camonet_CO.paa"
 		};
 		class Turrets: Turrets
 		{
