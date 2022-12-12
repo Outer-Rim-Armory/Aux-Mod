@@ -47,6 +47,28 @@ class BNA_KC_P1Helmet_Joe: BNA_KC_P1Helmet_CT
 	};
 };
 
+// Axel
+class BNA_KC_P1Helmet_Axel: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] INF P1 Helm ('Axel')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Axel.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
+// Hazard
+class BNA_KC_P1Helmet_Hazard: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] INF P1 Helm ('Hazard')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Hazard.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
 
 // Phase 2 Helmets
 // Keeli
@@ -152,6 +174,7 @@ class BNA_KC_P2Helmet_Fil_Squad: BNA_KC_P2Helmet_Trooper
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
+
 // Ponds
 class BNA_KC_P2Helmet_Ponds: BNA_KC_P2Helmet_Trooper
 {
@@ -163,6 +186,7 @@ class BNA_KC_P2Helmet_Ponds: BNA_KC_P2Helmet_Trooper
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
+
 // Stone
 class BNA_KC_P2Helmet_Stone: BNA_KC_P2Helmet_Trooper
 {
@@ -174,6 +198,7 @@ class BNA_KC_P2Helmet_Stone: BNA_KC_P2Helmet_Trooper
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
+
 // Sytha
 class BNA_KC_P2Helmet_Sytha: BNA_KC_P2Helmet_Trooper
 {
@@ -185,6 +210,7 @@ class BNA_KC_P2Helmet_Sytha: BNA_KC_P2Helmet_Trooper
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
+
 // Ox
 class BNA_KC_P2Helmet_Ox: BNA_KC_P2Helmet_Trooper
 {
@@ -193,6 +219,30 @@ class BNA_KC_P2Helmet_Ox: BNA_KC_P2Helmet_Trooper
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Ox.paa",
+		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+	};
+};
+
+// Axel
+class BNA_KC_P2Helmet_Axel: BNA_KC_P2Helmet_Trooper
+{
+	author = "DartRuffian";
+	displayName = "[KC] INF Helm ('Axel')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Axel.paa",
+		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+	};
+};
+
+// Hazard
+class BNA_KC_P2Helmet_Hazrd: BNA_KC_P2Helmet_Trooper
+{
+	author = "DartRuffian";
+	displayName = "[KC] INF Helm ('Hazard')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Hazard.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };

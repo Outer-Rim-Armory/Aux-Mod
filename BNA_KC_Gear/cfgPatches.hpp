@@ -153,6 +153,8 @@ class CfgPatches
 			"BNA_KC_P1Helmet_Burnt",
 			"BNA_KC_P1Helmet_Dexus",
 			"BNA_KC_P1Helmet_Joe",
+			"BNA_KC_P1Helmet_Axel",
+			"BNA_KC_P1Helmet_Hazard",
 
 			// P2 Helmets
 			"BNA_KC_P2Helmet_Keeli",
@@ -168,6 +170,8 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Stone",
 			"BNA_KC_P2Helmet_Sytha",
 			"BNA_KC_P2Helmet_Ox",
+			"BNA_KC_P2Helmet_Axel",
+			"BNA_KC_P2Helmet_Hazard",
 
 			// P1 Pilots
 			"BNA_KC_PilotHelmet_P1_Dexus",
