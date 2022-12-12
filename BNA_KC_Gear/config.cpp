@@ -414,7 +414,7 @@ class CfgWeapons
 	//---------------------------------------------------
 	// Reeker Helmets
 	//---------------------------------------------------
-	class BNA_KC_P2_Reeker_Helmet_1: ls_sob_phase2SpecOp_helmet
+	class BNA_KC_P2_Reeker_Helmet: ls_sob_phase2SpecOp_helmet
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey";
@@ -427,12 +427,12 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
 		};
 	};
-	class BNA_KC_P2_Reeker_Helmet_2: BNA_KC_P2_Reeker_Helmet_1
+	class BNA_KC_P2_Reeker_Helmet_v2: BNA_KC_P2_Reeker_Helmet
 	{
 		displayName = "[KC] Reeker Helm 01 (Base, Alt)";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Gear\Data\Textures\Helmets\SpecOP\BNA_KC_Helmet_Reeker_2.paa",
+			"BNA_KC_Gear\Data\Textures\Helmets\SpecOP\BNA_KC_Helmet_Reeker_v2.paa",
 			"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
 		};
 	};
@@ -1451,8 +1451,30 @@ class CfgVehicles
 			"BNA_KC_BARC_Helmet","BNA_KC_NVG","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_recon_armor"
 		};
 		backpack = "SWLB_clone_RTO_mini_backpack";
-	}
+	};
 
+	//---------------------------------------------------
+	// Reeker
+	//---------------------------------------------------
+	class BNA_KC_Unit_Reeker: BNA_KC_Unit_Trooper
+	{
+		// Default Attributes
+		author = "DartRuffian";
+
+		// Popular Attributes
+		editorSubcategory = "BNA_KCSub_Amr_Reeker";
+		displayName = "[KC] REEKR 01 - Crewman";
+
+		// Helmet, NVGs, etc.
+		linkedItems[] =
+		{
+			"BNA_KC_P2_Reeker_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_basic_armor"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_P2_Reeker_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_basic_armor"
+		};
+	};
 
 
 	//-----------------------------------------------------

@@ -778,6 +778,7 @@ class CfgVehicles
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_GVics";
 		displayName = "[KC] Blitz Assault Tank";
+		crew = "BNA_KC_Unit_Reeker";
 		hiddenSelectionsTextures[] = 
 		{
 			"BNA_KC_Vehicles\Data\Textures\Blitz\BNA_KC_Blitz_Body_CO.paa",

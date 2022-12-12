@@ -59,6 +59,8 @@ class CfgPatches
 			"BNA_KC_Unit_ARF_Officer",
 			// BARC
 			"BNA_KC_Unit_BARC",
+			// Reeker
+			"BNA_KC_Unit_Reeker",
 
 			// Customs
 			"BNA_KC_Unit_Keeli",
@@ -115,8 +117,8 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Snow_Trooper",
 
 			// SpecOPs
-			"BNA_KC_P2_Reeker_Helmet_1",
-			"BNA_KC_P2_Reeker_Helmet_2",
+			"BNA_KC_P2_Reeker_Helmet",
+			"BNA_KC_P2_Reeker_Helmet_v2",
 
 			// ARC
 			"BNA_KC_ARC_Helmet",
@@ -246,6 +248,15 @@ class CfgEditorSubcategories
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Infantry";
+	};
+
+	class BNA_KCSub_Amr_Reeker
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Reeker";
 	};
 
 	class BNA_KCSub_AB_Ranks
