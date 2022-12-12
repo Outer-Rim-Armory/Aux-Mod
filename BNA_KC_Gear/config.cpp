@@ -974,23 +974,32 @@ class CfgWeapons
 	class lsd_gar_standard_nvg;
 	class SWLB_clone_ccVisor;
 	class lsd_gar_rangefinder_nvg;
-	class RD501_nvg_shock_trooper;
+	class NVGoggles;
 
 	// Chip
-	class BNA_KC_NVG_Chip: RD501_nvg_shock_trooper
+	class BNA_KC_NVG_Chip: lsd_gar_standard_nvg
 	{
-		author = "501st + DartRuffian"
+		author = "DartRuffian"
 		scope = 2;
-		visionMode[] =
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[] = {2};
-
 		displayName = "[KC] Clone NVG Chip";
-	}
+
+		// Make the NVGs invisible
+		// Clear Model
+		model = "\A3\weapons_F\ammo\mag_univ.p3d";
+		modelOptics = "BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
+		// Clear Textures
+		hiddenSelections[]={};
+		hiddenSelectionsTextures[]={};
+
+		class ItemInfo
+			{
+				type=616;
+				uniformModel="BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
+				modelOff="BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
+				mass=10;
+				hiddenSelections[]={};
+			};
+	};
 
 	// Phase 2 NVGs
 	// Base
