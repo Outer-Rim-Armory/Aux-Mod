@@ -1293,6 +1293,8 @@ class CfgVehicles
 	{
 		editorSubcategory = "BNA_KCSub_SF_Snow";
 		displayName = "[KC] SNOW 01 - Snow Trooper";
+		scope = 2;
+		scopeCurator = 2;
 		
 		uniformClass = "BNA_KC_Uniform_Snow_Trooper";
 		hiddenSelectionsTextures[] =
@@ -1300,6 +1302,81 @@ class CfgVehicles
 			"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Snow_Upper.paa",
 			"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Snow_Lower.paa",
 			"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Snow_Undersuit.paa"
+		};
+
+		// Inventory
+		// Weapons
+		weapons[] =
+		{
+			"BNA_KC_DC15C_Predef",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[] =
+		{
+			"BNA_KC_DC15C_Predef",
+			"SWLB_clone_binocular",
+			"Throw",
+			"Put"
+		};
+		// Ammunition / Throwables
+		magazines[] =
+		{
+			// Ammo
+			ITEM_11("3AS_40Rnd_EC40_Mag"),
+			// Stun rounds would go here
+			ITEM_2("3AS_16Rnd_EC20_Mag"),
+			// Stun rounds would go here
+			// Grenades
+			ITEM_2("ls_mag_classC_thermalDet"),
+			ITEM_3("ShieldGrenade_Mag"),
+			// Smokes
+			ITEM_3("3AS_SmokeWhite"),
+			ITEM_3("3AS_SmokeBlue"),
+			ITEM_3("3AS_SmokeGreen"),
+		};
+		respawnMagazines[] =
+		{
+			// Ammo
+			ITEM_11("3AS_40Rnd_EC40_Mag"),
+			// Stun rounds would go here
+			ITEM_2("3AS_16Rnd_EC20_Mag"),
+			// Stun rounds would go here
+			// Grenades
+			ITEM_2("ls_mag_classC_thermalDet"),
+			ITEM_3("ShieldGrenade_Mag"),
+			// Smokes
+			ITEM_3("3AS_SmokeWhite"),
+			ITEM_3("3AS_SmokeBlue"),
+			ITEM_3("3AS_SmokeGreen"),
+		};
+		// Other Items
+		items[] =
+		{
+			// Medical
+			ITEM_10("ACE_elasticBandage"),
+			ITEM_4("ACE_tourniquet"),
+			// Other
+			ITEM_3("ACE_CableTie"),
+			"ACE_EntrenchingTool",
+			"ItemcTabHCam",
+			"ACE_IR_Strobe_Item",
+			"ACE_Flashlight_XL50",
+			"ACE_MapTools"
+		};
+		respawnItems[] =
+		{
+			// Medical
+			ITEM_10("ACE_elasticBandage"),
+			ITEM_4("ACE_tourniquet"),
+			// Other
+			ITEM_3("ACE_CableTie"),
+			"ACE_EntrenchingTool",
+			"ItemcTabHCam",
+			"ACE_IR_Strobe_Item",
+			"ACE_Flashlight_XL50",
+			"ACE_MapTools"
 		};
 
 		linkedItems[] =

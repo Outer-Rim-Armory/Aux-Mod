@@ -1,8 +1,7 @@
 //---------------------------------------------------
-// Helmet Customs
+// Phase 1 Helmet Customs
 //---------------------------------------------------
 
-// Phase 1 Helmets
 // Keeli
 class BNA_KC_P1Helmet_Keeli: BNA_KC_P1Helmet_CT
 {
@@ -125,7 +124,10 @@ class BNA_KC_P1Helmet_Anvil: BNA_KC_P1Helmet_CT
 };
 
 
-// Phase 2 Helmets
+//---------------------------------------------------
+// Phase 2 Helmet Customs
+//---------------------------------------------------
+
 // Keeli
 class BNA_KC_P2Helmet_Keeli: BNA_KC_P2Helmet_Trooper
 {
@@ -327,7 +329,10 @@ class BNA_KC_P2Helmet_Nokk: BNA_KC_P2Helmet_Trooper
 };
 
 
-// Pilot Phase 2
+//---------------------------------------------------
+// Phase 2 Pilot Helmet Customs
+//---------------------------------------------------
+
 // Dexus
 class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
 {
@@ -350,8 +355,10 @@ class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
 // 	};
 // };
 
+//---------------------------------------------------
+// Phase 1 Pilot Helmet Customs
+//---------------------------------------------------
 
-// Pilot Phase 1
 // Dexus
 class BNA_KC_PilotHelmet_P1_Dexus: ls_gar_phase1Pilot_helmet
 {
@@ -364,15 +371,47 @@ class BNA_KC_PilotHelmet_P1_Dexus: ls_gar_phase1Pilot_helmet
 	};
 }
 
-// Engineer
-// Snow Trooper
-// Reeker
+//---------------------------------------------------
+// Engineer Helmet Customs
+//---------------------------------------------------
+
+
+//---------------------------------------------------
+// Snow Helmet Customs
+//---------------------------------------------------
+
+// Keeli
+class BNA_KC_P2Helmet_Snow_Keeli: BNA_KC_P2Helmet_Snow_Trooper
+{
+	author = "DartRuffian";
+	displayName = "[KC] INF Snow Helm ('Keeli')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Snow\Customs\BNA_KC_Helmet_Insulated_Keeli.paa"
+	};
+};
+
+// Joe
+class BNA_KC_P2Helmet_Snow_Joe: BNA_KC_P2Helmet_Snow_Trooper
+{
+	author = "DartRuffian";
+	displayName = "[KC] INF Snow Helm ('Joe')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Snow\Customs\BNA_KC_Helmet_Insulated_Joe.paa"
+	};
+};
+
+//---------------------------------------------------
+// Reeker Helmet Customs
+//---------------------------------------------------
+
+
 
 //---------------------------------------------------
 // Uniforms
 //---------------------------------------------------
 
-// Trooper
 // Keeli
 class BNA_KC_Uniform_Keeli: BNA_KC_Uniform_Trooper
 {
@@ -442,6 +481,7 @@ class BNA_KC_Uniform_Fil_Squad: BNA_KC_Uniform_Trooper
 		uniformType = "Neopren";
 	};
 };
+
 // Ponds
 class BNA_KC_Uniform_Ponds: BNA_KC_Uniform_Trooper
 {
@@ -456,6 +496,7 @@ class BNA_KC_Uniform_Ponds: BNA_KC_Uniform_Trooper
 		uniformType = "Neopren";
 	};
 };
+
 // Stone
 class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Trooper
 {
@@ -470,6 +511,45 @@ class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Trooper
 		uniformType = "Neopren";
 	};
 };
+
+//---------------------------------------------------
+// Snow Uniform Customs
+//---------------------------------------------------
+
+// Keeli
+class BNA_KC_Uniform_Snow_Keeli: BNA_KC_Uniform_Snow_Trooper
+{
+	author = "DartRuffian";
+	displayName = "[KC] INF Snow Armor ('Keeli')";
+	scope = 2;
+
+	class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Snow_Keeli";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+};
+
+// Joe
+class BNA_KC_Uniform_Snow_Joe: BNA_KC_Uniform_Snow_Trooper
+{
+	author = "DartRuffian";
+	displayName = "[KC] INF Snow Armor ('Joe')";
+	scope = 2;
+
+	class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_Snow_Joe";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+};
+
 
 //---------------------------------------------------
 // Vests

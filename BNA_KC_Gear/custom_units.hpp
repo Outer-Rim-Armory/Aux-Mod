@@ -195,6 +195,54 @@ class BNA_KC_Unit_Vortex: BNA_KC_Unit_INF_CSS
 // Snow Troopers
 //----------------------------------------------------
 
+// Keeli
+class BNA_KC_Unit_Snow_Keeli: BNA_KC_Unit_Snow_Trooper
+{
+	editorSubcategory = "BNA_KCSub_Customs";
+	displayName = "[KC] Keeli (Snow)";
+	
+	uniformClass = "BNA_KC_Uniform_Snow_Keeli";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Uniforms\Customs\Snow\BNA_KC_Uniform_Insulated_Keeli_Upper.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\Customs\Snow\BNA_KC_Uniform_Insulated_Keeli_Lower.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Snow_Undersuit.paa"
+	};
+
+	linkedItems[] =
+	{
+		"BNA_KC_P2Helmet_Snow_Keeli","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P2Helmet_Snow_Keeli","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+	};
+};
+
+// Joe
+class BNA_KC_Unit_Snow_Joe: BNA_KC_Unit_Snow_Trooper
+{
+	editorSubcategory = "BNA_KCSub_Customs";
+	displayName = "[KC] Joe (Snow)";
+	
+	uniformClass = "BNA_KC_Uniform_Snow_Joe";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Uniforms\Customs\Snow\BNA_KC_Uniform_Insulated_Joe_Upper.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\Customs\Snow\BNA_KC_Uniform_Insulated_Joe_Lower.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_Snow_Undersuit.paa"
+	};
+	
+	linkedItems[] =
+	{
+		"BNA_KC_P2Helmet_Snow_Joe","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P2Helmet_Snow_Joe","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+	};
+};
+
 
 //----------------------------------------------------
 // ARC

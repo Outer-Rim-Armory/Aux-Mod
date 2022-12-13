@@ -76,6 +76,8 @@ class CfgPatches
 			"BNA_KC_Unit_BARC",
 			// Reeker
 			"BNA_KC_Unit_Reeker",
+			// Snow
+			"BNA_KC_Uniform_Snow_Trooper",
 
 			// Customs
 			"BNA_KC_Unit_Keeli",
@@ -86,6 +88,8 @@ class CfgPatches
 			"BNA_KC_Unit_Ponds",
 			"BNA_KC_Unit_Stone",
 			"BNA_KC_Unit_Vortex",
+			"BNA_KC_Unit_Snow_Keeli",
+			"BNA_KC_Unit_Snow_Joe",
 			// Objects
 			"BNA_KC_Gonk_Basic",
 			"BNA_KC_Gonk_Advanced"
@@ -208,6 +212,10 @@ class CfgPatches
 			"BNA_KC_PilotHelmet_Dexus",
 			// "BNA_KC_PilotHelmet_Lui",
 
+			// Snow
+			"BNA_KC_P2Helmet_Snow_Keeli",
+			"BNA_KC_P2Helmet_Snow_Joe",
+
 			// Uniforms
 			"BNA_KC_Uniform_Keeli",
 			"BNA_KC_Uniform_Guardian",
@@ -216,6 +224,8 @@ class CfgPatches
 			"BNA_KC_Uniform_Fil_Squad",
 			"BNA_KC_Uniform_Ponds",
 			"BNA_KC_Uniform_Stone",
+			"BNA_KC_Uniform_Snow_Keeli",
+			"BNA_KC_Uniform_Snow_Joe",
 
 			// Vests
 			"BNA_KC_Vest_Officer_Keeli",
