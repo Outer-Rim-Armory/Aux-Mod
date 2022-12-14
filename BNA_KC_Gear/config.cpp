@@ -494,20 +494,20 @@ class CfgWeapons
 		author = "DartRuffian";
 		displayName = "[KC] Reeker P1 Helm 01 (Base)";
 		hiddenSelectionsTextures[] =
-			{
-				"BNA_KC_Gear\Data\Textures\Helmets\SpecOP P1\BNA_KC_Helmet_Reeker_P1.paa",
-				"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
-			};
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\SpecOP P1\BNA_KC_Helmet_Reeker_P1.paa",
+			"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+		};
 	};
 
 	class BNA_KC_P1_Reeker_Helmet_v2: BNA_KC_P1_Reeker_Helmet
 	{
 		displayName = "[KC] Reeker P1 Helm 01 (Base, Alt)";
 		hiddenSelectionsTextures[] =
-			{
-				"BNA_KC_Gear\Data\Textures\Helmets\SpecOP P1\BNA_KC_Helmet_Reeker_P1_v2.paa",
-				"ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
-			};
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\SpecOP P1\BNA_KC_Helmet_Reeker_P1_v2.paa",
+			"ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
+		};
 	};
 
 
