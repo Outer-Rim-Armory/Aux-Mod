@@ -21,6 +21,7 @@ class CfgWeapons
 	class ls_gar_phase1_helmet;
 	class ls_gar_phase1Arf_helmet;
 	class ls_gar_phase1Pilot_helmet;
+	class ls_sob_phase1SpecOp_helmet;
 
 	class ls_gar_phase2_helmet;
 	// Phase 1 ARF is always used
@@ -472,6 +473,7 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
 		};
 	};
+
 	class BNA_KC_P2_Reeker_Helmet_v2: BNA_KC_P2_Reeker_Helmet
 	{
 		displayName = "[KC] Reeker Helm 01 (Base, Alt)";
@@ -481,6 +483,33 @@ class CfgWeapons
 			"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
 		};
 	};
+
+
+	//---------------------------------------------------
+	// Reeker Phase 1 Helmets
+	//---------------------------------------------------
+	class BNA_KC_P1_Reeker_Helmet: ls_sob_phase1SpecOp_helmet
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		displayName = "[KC] Reeker P1 Helm 01 (Base)";
+		hiddenSelectionsTextures[] =
+			{
+				"BNA_KC_Gear\Data\Textures\Helmets\SpecOP P1\BNA_KC_Helmet_Reeker_P1.paa",
+				"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+			};
+	};
+
+	class BNA_KC_P1_Reeker_Helmet_v2: BNA_KC_P1_Reeker_Helmet
+	{
+		displayName = "[KC] Reeker P1 Helm 01 (Base, Alt)";
+		hiddenSelectionsTextures[] =
+			{
+				"BNA_KC_Gear\Data\Textures\Helmets\SpecOP P1\BNA_KC_Helmet_Reeker_P1_v2.paa",
+				"ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
+			};
+	};
+
 
 	//---------------------------------------------------
 	// Airborne Helmets
@@ -1603,6 +1632,26 @@ class CfgVehicles
 		respawnLinkedItems[] =
 		{
 			"BNA_KC_P2_Reeker_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_basic_armor"
+		};
+	};
+
+	class BNA_KC_Unit_Reeker_P1: BNA_KC_Unit_Trooper
+	{
+		// Default Attributes
+		author = "DartRuffian";
+
+		// Popular Attributes
+		editorSubcategory = "BNA_KCSub_Amr_Reeker";
+		displayName = "[KC] REEKR P1 01 - Crewman";
+
+		// Helmet, NVGs, etc.
+		linkedItems[] =
+		{
+			"BNA_KC_P1_Reeker_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_basic_armor"
+		};
+		respawnLinkedItems[] =
+		{
+			"BNA_KC_P1_Reeker_Helmet","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","SWLB_clone_basic_armor"
 		};
 	};
 

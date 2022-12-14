@@ -76,6 +76,8 @@ class CfgPatches
 			"BNA_KC_Unit_BARC",
 			// Reeker
 			"BNA_KC_Unit_Reeker",
+			// Reeker P1
+			"BNA_KC_Unit_Reeker_P1",
 			// Snow
 			"BNA_KC_Uniform_Snow_Trooper",
 
@@ -139,9 +141,13 @@ class CfgPatches
 			// Insulated
 			"BNA_KC_P2Helmet_Snow_Trooper",
 
-			// SpecOPs
+			// SpecOP
 			"BNA_KC_P2_Reeker_Helmet",
 			"BNA_KC_P2_Reeker_Helmet_v2",
+
+			// SpecOP P1
+			"BNA_KC_P1_Reeker_Helmet",
+			"BNA_KC_P1_Reeker_Helmet_v2",
 
 			// ARC
 			"BNA_KC_ARC_Helmet",
