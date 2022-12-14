@@ -496,7 +496,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\SpecOP P1\BNA_KC_Helmet_Reeker_P1.paa",
-			"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+			"ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
 		};
 	};
 
