@@ -1092,6 +1092,9 @@ class CfgWeapons
 		{
 			"BNA_KC_Gear\Data\Textures\NVGs\BNA_KC_NVG.paa"
 		};
+
+		// Remove NVG Overlay
+		modelOptics = "BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
 	};
 
 	// Keeli
@@ -1102,6 +1105,9 @@ class CfgWeapons
 		{
 			"BNA_KC_Gear\Data\Textures\NVGs\Customs\BNA_KC_NVG_Keeli.paa"
 		};
+
+		// Remove NVG Overlay
+		modelOptics = "BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
 	};
 
 	// Commander Visor
@@ -1122,6 +1128,9 @@ class CfgWeapons
 		{
 			"BNA_KC_Gear\Data\Textures\NVGs\BNA_KC_NVG_Commander.paa"
 		};
+
+		// Remove NVG Overlay
+		modelOptics = "BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
 	};
 
 	// Rangefinders
@@ -1142,6 +1151,9 @@ class CfgWeapons
 		{
 			"BNA_KC_Gear\Data\Textures\NVGs\BNA_KC_NVG_Rangefinder.paa"
 		};
+
+		// Remove NVG Overlay
+		modelOptics = "BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
 	};
 
 	#include "custom_items.hpp"
