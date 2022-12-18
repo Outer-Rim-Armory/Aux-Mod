@@ -1052,7 +1052,7 @@ class CfgWeapons
 	// Chip
 	class BNA_KC_NVG_Chip: lsd_gar_standard_nvg
 	{
-		author = "DartRuffian"
+		author = "DartRuffian";
 		scope = 2;
 		displayName = "[KC] Clone NVG Chip";
 
@@ -1275,7 +1275,7 @@ class CfgVehicles
 	//----------------------------------------------------
 	class BNA_KC_Unit_AB_CT: BNA_KC_Unit_Trooper
 	{
-		author = "DartRuffian"
+		author = "DartRuffian";
 		editorSubcategory = "BNA_KCSub_AB_Ranks";
 		displayName = "[KC] AB 01 - Airborne Trooper";
 		

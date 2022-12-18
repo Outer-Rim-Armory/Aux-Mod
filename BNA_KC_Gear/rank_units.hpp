@@ -333,7 +333,7 @@ class BNA_KC_Unit_INF_P1_CT: BNA_KC_Unit_Trooper
 	author = "DartRuffian";
 	// Popular Attributes
 	editorSubcategory = "BNA_KCSub_INF_P1_Ranks";
-	displayName = "[KC] INF P1 02 - Clone Trooper"
+	displayName = "[KC] INF P1 02 - Clone Trooper";
 
 	uniformClass = "BNA_KC_Uniform_Trooper";
 
@@ -347,7 +347,7 @@ class BNA_KC_Unit_INF_P1_CT: BNA_KC_Unit_Trooper
 	{
 		"BNA_KC_P1Helmet_CT","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p1Interior_hud","lsd_gar_clone_vest"
 	};
-}
+};
 class BNA_KC_Unit_INF_P1_SCT: BNA_KC_Unit_Trooper
 {
 	author = "DartRuffian";
