@@ -933,6 +933,68 @@ class CfgVehicles
 				"Tank_General_Collision_SoundShader"
 			};
 		};
+
+		// Vehicle Inventory
+		maximumLoad = 20000; // Max carrying capacity of the vic
+
+		class TransportWeapons
+		{
+			class _xx_Aux501_Weaps_DC15S
+			{
+				count = 2;
+				weapon = "Aux501_Weaps_DC15S";
+			};
+		};
+			
+		class TransportMagazines
+		{
+			class _xx_Aux501_Weapons_Mags_10mw50
+			{
+				count = 20;
+				magazine = "Aux501_Weapons_Mags_10mw50";
+			};
+		};
+			
+		class TransportItems
+		{
+			class _xx_ACE_elasticBandage
+			{
+				count = 10;
+				name = "ACE_elasticBandage";
+			};
+			class _xx_ACE_packingBandage
+			{
+				count = 10;
+				name = "ACE_packingBandage";
+			};
+			class _xx_ACE_quikclot
+			{
+				count = 10;
+				name = "ACE_quikclot";
+			};
+			class _xx_ACE_surgicalKit
+			{
+				count = 1;
+				name = "ACE_surgicalKit"
+			};
+			class _xx_ToolKit
+			{
+				count = 1;
+				name = "ToolKit"
+			};
+		};
+
+		// Set the number of spare tracks to 2
+		class ACE_Cargo
+		{
+            class Cargo
+			{
+                class Track
+				{
+                    type = "ACE_Track";
+                    amount = 2;
+                };
+            };
+        };
 	};
-	
 };
