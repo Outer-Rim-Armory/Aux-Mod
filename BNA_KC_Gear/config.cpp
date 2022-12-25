@@ -1059,7 +1059,7 @@ class CfgWeapons
 		// Make the NVGs invisible
 		// Clear Model
 		model = "\A3\weapons_F\ammo\mag_univ.p3d";
-		modelOptics = "BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
+		modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d";
 		// Clear Textures
 		hiddenSelections[]={};
 		hiddenSelectionsTextures[]={};
@@ -1067,8 +1067,8 @@ class CfgWeapons
 		class ItemInfo
 			{
 				type=616;
-				uniformModel="BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
-				modelOff="BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
+				uniformModel="BNA_KC_Gear\Data\Models\empty_model.p3d";
+				modelOff="BNA_KC_Gear\Data\Models\empty_model.p3d";
 				mass=10;
 				hiddenSelections[]={};
 			};
@@ -1094,7 +1094,7 @@ class CfgWeapons
 		};
 
 		// Remove NVG Overlay
-		modelOptics = "BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
+		modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d";
 	};
 
 	// Keeli
@@ -1107,7 +1107,7 @@ class CfgWeapons
 		};
 
 		// Remove NVG Overlay
-		modelOptics = "BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
+		modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d";
 	};
 
 	// Commander Visor
@@ -1130,7 +1130,7 @@ class CfgWeapons
 		};
 
 		// Remove NVG Overlay
-		modelOptics = "BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
+		modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d";
 	};
 
 	// Rangefinders
@@ -1153,7 +1153,7 @@ class CfgWeapons
 		};
 
 		// Remove NVG Overlay
-		modelOptics = "BNA_KC_Gear\Data\Models\nvg_blank_model.p3d";
+		modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d";
 	};
 
 	#include "custom_items.hpp"
@@ -1438,6 +1438,11 @@ class CfgVehicles
 
 	class BNA_KC_Backpack: SWLB_clone_backpack
 	{
+		dlc = "BNA_KC";
+		author = "SweMonkey";
+		scope = 2;
+		scopeArsenal = 2;
+
 		displayName = "[KC] Clone Trooper Backpack";
 		hiddenSelectionsTextures[]=
 		{
@@ -1448,13 +1453,16 @@ class CfgVehicles
 		};
 	};
 
+	class BNA_KC_Backpack_Invis: BNA_KC_Backpack
+	{
+		author = "DartRuffian"
+		displayName = "[KC] Clone Trooper Invisible Backpack";
+		model = "BNA_KC_Gear\Data\Models\empty_model.p3d"
+	};
+
 	class BNA_KC_Backpack_Keeli: BNA_KC_Backpack
 	{
-		dlc = "BNA_KC";
-		author = "SweMonkey";
 		displayName = "[KC] Clone Trooper Backpack (Keeli)";
-		scope = 2;
-		scopeArsenal = 2;
 		hiddenSelectionsTextures[]=
 		{
 			"BNA_KC_Gear\Data\Textures\Backpacks\BNA_KC_Backpack_Keeli.paa",

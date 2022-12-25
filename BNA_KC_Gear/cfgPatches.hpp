@@ -25,6 +25,7 @@ class CfgPatches
 			"BNA_KC_Unit_Pilot",
 			"BNA_KC_Unit_Snow_Trooper",
 			"BNA_KC_Backpack",
+			"BNA_KC_Backpack_Invis",
 			"BNA_KC_Backpack_Medic",
 			"BNA_KC_Backpack_Keeli",
 			"BNA_KC_Unit_ABTrooper",
