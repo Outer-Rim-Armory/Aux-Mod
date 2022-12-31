@@ -271,4 +271,25 @@ class CfgMusic
 		duration = 292;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
+	class BNA_KC_ProjectRealityMain: BNA_KC_BattlestarOST
+	{
+		name = "Project Reality - Main Theme";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\project_reality_main.ogg",db+0,1};
+		duration = 501;
+		musicClass = "BNA_KC_VGMusic"; // Music category
+	};
+	class BNA_KC_SquadDowntime: BNA_KC_BattlestarOST
+	{
+		name = "Squad - Downtime";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\squad_downtime.ogg",db+0,1};
+		duration = 187;
+		musicClass = "BNA_KC_VGMusic"; // Music category
+	};
+	class BNA_KC_SquadZechariah: BNA_KC_BattlestarOST
+	{
+		name = "Squad - Zechariah";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\squad_zechariah.ogg",db+0,1};
+		duration = 187;
+		musicClass = "BNA_KC_VGMusic"; // Music category
+	};
 };
