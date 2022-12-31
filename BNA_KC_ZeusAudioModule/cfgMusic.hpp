@@ -235,5 +235,40 @@ class CfgMusic
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Magic_Spear_Ace_Combat.ogg",db+0,1};
 		duration = 246;
 		musicClass = "BNA_KC_VGMusic"; // "Keeli Video Game Music";
-	};	
+	};
+	class BNA_KC_BattlestarPreludeToWar: BNA_KC_BattlestarOST
+	{
+		name = "Battlestar Galactica - Prelude To War";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\battlestar_galactica_prelude_to_war.ogg",db+0,1};
+		duration = 502;
+		musicClass = "BNA_KC_VGMusic"; // Music category
+	};
+	class BNA_KC_DBSBrolysTheme: BNA_KC_BattlestarOST
+	{
+		name = "Dragon Ball Super - Broly's Theme";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\dbs_brolys_theme.ogg",db+0,1};
+		duration = 473;
+		musicClass = "BNA_KC_OtherMusic"; // Music category
+	};
+	class BNA_KC_InterstellarMountains: BNA_KC_BattlestarOST
+	{
+		name = "Interstellar - Mountains";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\intersellar_mountains.ogg",db+0,1};
+		duration = 219;
+		musicClass = "BNA_KC_OtherMusic"; // Music category
+	};
+	class BNA_KC_SquadMain: BNA_KC_BattlestarOST
+	{
+		name = "Squad - Main Theme";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\squad_main.ogg",db+0,1};
+		duration = 180;
+		musicClass = "BNA_KC_VGMusic"; // Music category
+	};
+	class BNA_KC_WarThunderMain: BNA_KC_BattlestarOST
+	{
+		name = "War Thunder - Main Theme";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\war_thunder_main.ogg",db+0,1};
+		duration = 292;
+		musicClass = "BNA_KC_VGMusic"; // Music category
+	};
 };
