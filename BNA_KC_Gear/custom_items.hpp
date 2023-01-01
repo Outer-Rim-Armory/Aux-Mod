@@ -334,15 +334,16 @@ class BNA_KC_P2Helmet_Nokk: BNA_KC_P2Helmet_Trooper
 //---------------------------------------------------
 
 // Dexus
-class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
-{
-	displayName = "[KC] AVI Helm ('Dexus')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Dexus.paa",
-		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
-	};
-};
+// Left Aviation, switched to Infantry
+// class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
+// {
+// 	displayName = "[KC] AVI Helm ('Dexus')";
+// 	hiddenSelectionsTextures[] =
+// 	{
+// 		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Dexus.paa",
+// 		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+// 	};
+// };
 
 // Lui
 // class BNA_KC_PilotHelmet_Lui: BNA_KC_PilotHelmet
@@ -360,16 +361,17 @@ class BNA_KC_PilotHelmet_Dexus: BNA_KC_PilotHelmet
 //---------------------------------------------------
 
 // Dexus
-class BNA_KC_PilotHelmet_P1_Dexus: ls_gar_phase1Pilot_helmet
-{
-	displayName = "[KC] AVI P1 Helm ('Dexus')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P1\Customs\BNA_KC_Helmet_Pilot_P1_Dexus.paa",
-		"ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
-		"ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
-	};
-}
+// Left Aviation, switched to Infantry
+// class BNA_KC_PilotHelmet_P1_Dexus: ls_gar_phase1Pilot_helmet
+// {
+// 	displayName = "[KC] AVI P1 Helm ('Dexus')";
+// 	hiddenSelectionsTextures[] =
+// 	{
+// 		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P1\Customs\BNA_KC_Helmet_Pilot_P1_Dexus.paa",
+// 		"ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
+// 		"ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
+// 	};
+// }
 
 //---------------------------------------------------
 // Engineer Helmet Customs
