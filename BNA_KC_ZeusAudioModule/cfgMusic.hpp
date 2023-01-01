@@ -338,25 +338,25 @@ class CfgMusic
 		duration = 120;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_Halo_DeliverHope_Piano: BNA_KC_DeliverHope
+	class BNA_KC_Halo_DeliverHope_Piano: BNA_KC_Halo_DeliverHope
 	{
 		name = "[Halo] Deliver Hope (Piano)";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Deliver_Hope_Piano.ogg",db+0,1};
 		duration = 127;
 	};
-	class BNA_KC_Halo_FinishTheFight: BNA_KC_DeliverHope
+	class BNA_KC_Halo_FinishTheFight: BNA_KC_Halo_DeliverHope
 	{
 		name = "[Halo] Finish the Fight";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Halo_FinishTheFight.ogg",db+0,1};
 		duration = 147;
 	};
-	class BNA_KC_Halo_LongNightOfSolace: BNA_KC_DeliverHope
+	class BNA_KC_Halo_LongNightOfSolace: BNA_KC_Halo_DeliverHope
 	{
 		name = "[Halo] Long Night of Solace";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Halo_LongNightOfSolace.ogg",db+0,1};
 		duration = 706;
 	};
-	class BNA_KC_Halo_NeverForget: BNA_KC_DeliverHope
+	class BNA_KC_Halo_NeverForget: BNA_KC_Halo_DeliverHope
 	{
 		name = "[Halo] Never Forget";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Halo_NeverForget.ogg",db+0,1};
