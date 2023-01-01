@@ -284,7 +284,7 @@ class CfgMusic
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ace_SolSquadron.ogg",db+0,1};
 		duration = 223;
 	};
-	class BNA_KC_Ace_SolSquadron: BNA_KC_Ace_Comona
+	class BNA_KC_Ace_Werewolf: BNA_KC_Ace_Comona
 	{
 		name = "[Ace] Werewolf";
 		// Ace Combat
@@ -347,7 +347,7 @@ class CfgMusic
 	class BNA_KC_Halo_FinishTheFight: BNA_KC_DeliverHope
 	{
 		name = "[Halo] Finish the Fight";
-		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Deliver_Hope_Piano.ogg",db+0,1};
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Halo_FinishTheFight.ogg",db+0,1};
 		duration = 147;
 	};
 	class BNA_KC_Halo_LongNightOfSolace: BNA_KC_DeliverHope
