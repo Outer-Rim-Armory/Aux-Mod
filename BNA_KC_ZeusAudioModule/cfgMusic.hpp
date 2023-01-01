@@ -32,7 +32,7 @@ class CfgMusic
 		duration = 531; // Song duration in seconds
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_BattlestarPreludeToWar: BNA_KC_BattlestarOST
+	class BNA_KC_BattlestarPreludeToWar
 	{
 		name = "[BsG] Prelude To War";
 		// Battle Star Galactica
@@ -42,7 +42,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_AoTOST: BNA_KC_BattlestarOST
+	class BNA_KC_AoTOST
 	{
 		name = "[Aot] Before Lights Out";
 		// Attack on Titan
@@ -50,7 +50,7 @@ class CfgMusic
 		duration = 173;
 		musicClass = "BNA_KC_AnimeMusic"; // Music category
 	};
-	class BNA_KC_Vogel: BNA_KC_BattlestarOST
+	class BNA_KC_Vogel
 	{
 		name = "[AoT] Vogel im Käfig";
 		// Attack on Titan
@@ -58,7 +58,7 @@ class CfgMusic
 		duration = 380;
 		musicClass = "BNA_KC_AnimeMusic"; // Music category
 	};
-	class BNA_KC_SymphonicSuite: BNA_KC_BattlestarOST
+	class BNA_KC_SymphonicSuite
 	{
 		name = "[AoT] Symphonic Suite";
 		// Attack on Titan
@@ -66,7 +66,7 @@ class CfgMusic
 		duration = 313;
 		musicClass = "BNA_KC_AnimeMusic"; // Music category
 	};
-	class BNA_KC_BigGirl: BNA_KC_BattlestarOST
+	class BNA_KC_BigGirl
 	{
 		name = "[AoT] YouSeeBIGGIRL";
 		// Attack on Titan
@@ -76,14 +76,14 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_CLU: BNA_KC_BattlestarOST
+	class BNA_KC_CLU
 	{
 		name = "[Tron] C.L.U";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\C.L.U.ogg",db+0,1};
 		duration = 279;
 		musicClass = "BNA_KC_OtherMusic"; // Music category
 	};
-	class BNA_KC_Rectifier: BNA_KC_BattlestarOST
+	class BNA_KC_Rectifier
 	{
 		name = "[Tron] Rectifier";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Rectifier.ogg",db+0,1};
@@ -92,7 +92,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_ANewEnemy: BNA_KC_BattlestarOST
+	class BNA_KC_ANewEnemy
 	{
 		name = "[Shogun] A New Enemy";
 		// Total War: Shogun 2 Fall of the Samurai
@@ -100,7 +100,7 @@ class CfgMusic
 		duration = 270;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_Oyoiyoi: BNA_KC_BattlestarOST
+	class BNA_KC_Oyoiyoi
 	{
 		name = "[Shogun] Oyoiyoi";
 		// Total War: Shogun 2 Fall of the Samurai
@@ -108,7 +108,7 @@ class CfgMusic
 		duration = 153;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_Tsunami: BNA_KC_BattlestarOST
+	class BNA_KC_Tsunami
 	{
 		name = "[Shogun] Tsunami";
 		// Total War: Shogun 2 Fall of the Samurai
@@ -118,7 +118,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_ArabicVictory: BNA_KC_BattlestarOST
+	class BNA_KC_ArabicVictory
 	{
 		name = "[TW] Arabic Victory";
 		// Rome: Total War
@@ -126,7 +126,7 @@ class CfgMusic
 		duration = 78;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_Divinitus: BNA_KC_BattlestarOST
+	class BNA_KC_Divinitus
 	{
 		name = "[TW] Divinitus";
 		// Rome: Total War
@@ -134,7 +134,7 @@ class CfgMusic
 		duration = 110;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_EasternIntro: BNA_KC_BattlestarOST
+	class BNA_KC_EasternIntro
 	{
 		name = "[TW] Eastern Intro";
 		// Rome: Total War
@@ -142,7 +142,7 @@ class CfgMusic
 		duration = 90;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_JourneytoRome: BNA_KC_BattlestarOST
+	class BNA_KC_JourneytoRome
 	{
 		name = "[TW] Journey to Rome";
 		// Rome: Total War
@@ -150,7 +150,7 @@ class CfgMusic
 		duration = 139;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_Mayhem: BNA_KC_BattlestarOST
+	class BNA_KC_Mayhem
 	{
 		name = "[TW] Mayhem";
 		// Rome: Total War
@@ -158,7 +158,7 @@ class CfgMusic
 		duration = 219;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_MeleeCafe: BNA_KC_BattlestarOST
+	class BNA_KC_MeleeCafe
 	{
 		name = "[TW] Melee Cafe";
 		// Rome: Total War
@@ -166,7 +166,7 @@ class CfgMusic
 		duration = 173;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_Mobilize: BNA_KC_BattlestarOST
+	class BNA_KC_Mobilize
 	{
 		name = "[TW] Mobilize";
 		// Rome: Total War
@@ -174,7 +174,7 @@ class CfgMusic
 		duration = 116;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_SoldiersChant: BNA_KC_BattlestarOST
+	class BNA_KC_SoldiersChant
 	{
 		name = "[TW] Soldiers Chant";
 		// Rome: Total War
@@ -184,7 +184,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_Delightful: BNA_KC_BattlestarOST
+	class BNA_KC_Delightful
 	{
 		name = "[SW] Delightful";
 		// Ahsoka Series
@@ -192,14 +192,14 @@ class CfgMusic
 		duration = 136;
 		musicClass = "BNA_KC_SWMusic"; // Music category
 	};
-	class BNA_KC_GeonosisRadioChatter: BNA_KC_BattlestarOST
+	class BNA_KC_GeonosisRadioChatter
 	{
 		name = "[SW] Geonosis Radio Chatter";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Geonosis_Radio_Chatter.ogg",db+0,1};
 		duration = 544;
 		musicClass = "BNA_KC_SFX"; // Music category
 	};
-	class BNA_KC_IonCannon: BNA_KC_BattlestarOST
+	class BNA_KC_IonCannon
 	{
 		name = "[SW] Ion Cannon";
 		// Malevolence Music - Star Wars Clone Wars
@@ -209,7 +209,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_Comona: BNA_KC_BattlestarOST
+	class BNA_KC_Comona
 	{
 		name = "[Ace] Comona";
 		// Ace Combat
@@ -217,7 +217,7 @@ class CfgMusic
 		duration = 161;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_Enchanter: BNA_KC_BattlestarOST
+	class BNA_KC_Enchanter
 	{
 		name = "[Ace] Enchanter";
 		// Ace Combat
@@ -225,7 +225,7 @@ class CfgMusic
 		duration = 485;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_MagicSpear: BNA_KC_BattlestarOST
+	class BNA_KC_MagicSpear
 	{
 		name = "[Ace] Magic Spear";
 		// Ace Combat
@@ -235,21 +235,21 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_SquadMain: BNA_KC_BattlestarOST
+	class BNA_KC_SquadMain
 	{
 		name = "[Squad] Main Theme";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\squad_main.ogg",db+0,1};
 		duration = 180;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_SquadDowntime: BNA_KC_BattlestarOST
+	class BNA_KC_SquadDowntime
 	{
 		name = "[Squad] Downtime";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\squad_downtime.ogg",db+0,1};
 		duration = 187;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_SquadZechariah: BNA_KC_BattlestarOST
+	class BNA_KC_SquadZechariah
 	{
 		name = "[Squad] Zechariah";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\squad_zechariah.ogg",db+0,1};
@@ -258,14 +258,14 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_DeliverHope: BNA_KC_BattlestarOST
+	class BNA_KC_DeliverHope
 	{
 		name = "[Halo] Deliver Hope";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Deliver_Hope.ogg",db+0,1};
 		duration = 120;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_DeliverHopePiano: BNA_KC_BattlestarOST
+	class BNA_KC_DeliverHopePiano
 	{
 		name = "[Halo] Deliver Hope (Piano)";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Deliver_Hope_Piano.ogg",db+0,1};
@@ -274,7 +274,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_WarThunderMain: BNA_KC_BattlestarOST
+	class BNA_KC_WarThunderMain
 	{
 		name = "[WT] Main Theme";
 		// War Thunder
@@ -284,7 +284,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_NoEscape: BNA_KC_BattlestarOST
+	class BNA_KC_NoEscape
 	{
 		name = "[LoU] No Escape (All Gone)";
 		// The Last of Us
@@ -294,7 +294,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_ShepherdofFire: BNA_KC_BattlestarOST
+	class BNA_KC_ShepherdofFire
 	{
 		name = "[AS] Shepherd of Fire";
 		// Avenged Sevenfold
@@ -304,7 +304,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_BridgeofDeath: BNA_KC_BattlestarOST
+	class BNA_KC_BridgeofDeath
 	{
 		name = "[Chern] Bridge of Death";
 		// Chernobyl TV Series
@@ -314,7 +314,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_FatalisMedley: BNA_KC_BattlestarOST
+	class BNA_KC_FatalisMedley
 	{
 		name = "[MH] Fatalis Medley";
 		// Monster Hunter
@@ -324,7 +324,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_ItHasToBeThisWay: BNA_KC_BattlestarOST
+	class BNA_KC_ItHasToBeThisWay
 	{
 		name = "[MG] It Has To Be This Way";
 		// Metal Gear
@@ -334,7 +334,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_DBSBrolysTheme: BNA_KC_BattlestarOST
+	class BNA_KC_DBSBrolysTheme
 	{
 		name = "[DbS] Broly's Theme";
 		// Dragon Ball Super
@@ -344,7 +344,7 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_InterstellarMountains: BNA_KC_BattlestarOST
+	class BNA_KC_InterstellarMountains
 	{
 		name = "[IntrStlr] Mountains";
 		// Interstellar
@@ -353,8 +353,8 @@ class CfgMusic
 		musicClass = "BNA_KC_OtherMusic"; // Music category
 	};
 	
-	
-	class BNA_KC_ProjectRealityMain: BNA_KC_BattlestarOST
+
+	class BNA_KC_ProjectRealityMain
 	{
 		name = "[PR] Main Theme";
 		// Project Reality
