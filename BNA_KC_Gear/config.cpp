@@ -1435,6 +1435,7 @@ class CfgVehicles
 	#define ITEM_XX(a,b) class _xx_##a {name = a; count = b;}
 	
 	class SWLB_clone_backpack;
+	class SWLB_clone_backpack_medic;
 
 	class BNA_KC_Backpack: SWLB_clone_backpack
 	{
@@ -1472,15 +1473,21 @@ class CfgVehicles
 		};
 	};
 	
-	class BNA_KC_Backpack_Medic: BNA_KC_Backpack
+	class BNA_KC_Backpack_Medic: SWLB_clone_backpack_medic
 	{
+		dlc = "BNA_KC";
+		author = "SweMonkey";
+		scope = 2;
+		scopeArsenal = 2;
+		maximumLoad = 300;
+
 		displayName = "[KC] Clone Trooper Medic Backpack";
 		hiddenSelectionsTextures[]=
 		{
 			"BNA_KC_Gear\Data\Textures\Backpacks\BNA_KC_Backpack_Medic.paa",
 			"BNA_KC_Gear\Data\Textures\Backpacks\BNA_KC_Backpack_Medic.paa",
 			"",
-			""
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
 		};
 	};
 
