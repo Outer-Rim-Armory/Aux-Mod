@@ -184,32 +184,78 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_Delightful
+	class BNA_KC_SW_Delightful
 	{
 		name = "[SW] Delightful";
-		// Ahsoka Series
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ahsoka_Delightful.ogg",db+0,1};
 		duration = 136;
-		musicClass = "BNA_KC_SWMusic"; // Music category
+		musicClass = "BNA_KC_SWMusic";
 	};
-	class BNA_KC_GeonosisRadioChatter
+	class BNA_KC_SW_IonCannon: BNA_KC_SW_Delightful
+	{
+		name = "[SW] Ion Cannon";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ion_Cannon_Kevin_Kiner.ogg",db+0,1};
+		duration = 128;
+	};
+	class BNA_KC_SW_ARCTrooper_Epic: BNA_KC_SW_Delightful
+	{
+		name = "[SW] ARC Trooper Theme (Epic)";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\SW_ARCTrooper_Epic.ogg",db+0,1};
+		duration = 251;
+	};
+	class BNA_KC_SW_BattleOfChristophsis_Epic: BNA_KC_SW_Delightful
+	{
+		name = "[SW] Battle of Christophsis (Epic)";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\SW_BattleOfChristophsis_Epic.ogg",db+0,1};
+		duration = 281;
+	};
+	class BNA_KC_SW_CloneThemeTwoSteps: BNA_KC_SW_Delightful
+	{
+		name = "[SW] Clone Theme (Two Steps from Hell)";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\SW_CloneThemeTwoSteps.ogg",db+0,1};
+		duration = 291;
+	};
+	class BNA_KC_SW_DuelOfTheFates_Epic: BNA_KC_SW_Delightful
+	{
+		name = "[SW] Duel of the Fates (Epic)";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\SW_DuelOfTheFates_Epic.ogg",db+0,1};
+		duration = 364;
+	};
+	class BNA_KC_SW_LandingOnRyloth: BNA_KC_SW_Delightful
+	{
+		name = "[SW] Landing on Ryloth";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\SW_LandingOnRyloth.ogg",db+0,1};
+		duration = 102;
+	};
+	class BNA_KC_SW_ObiWanVDarthVader: BNA_KC_SW_Delightful
+	{
+		name = "[SW] Obi Wan vs Darth Vader";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\SW_ObiWanVDarthVader.ogg",db+0,1};
+		duration = 250;
+	};
+	class BNA_KC_SW_TheBattleInTheSnow: BNA_KC_SW_Delightful
+	{
+		name = "[SW] The Battle in the Snow";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\SW_TheBattleInTheSnow.ogg",db+0,1};
+		duration = 222;
+	};
+	class BNA_KC_SW_TimeToMeetTheNatives: BNA_KC_SW_Delightful
+	{
+		name = "[SW] Time to Meet the Natives";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\SW_TimeToMeetTheNatives.ogg",db+0,1};
+		duration = 96;
+	};
+
+	class BNA_KC_SW_GeonosisRadioChatter
 	{
 		name = "[SW] Geonosis Radio Chatter";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Geonosis_Radio_Chatter.ogg",db+0,1};
 		duration = 544;
-		musicClass = "BNA_KC_SFX"; // Music category
-	};
-	class BNA_KC_IonCannon
-	{
-		name = "[SW] Ion Cannon";
-		// Malevolence Music - Star Wars Clone Wars
-		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ion_Cannon_Kevin_Kiner.ogg",db+0,1};
-		duration = 128;
-		musicClass = "BNA_KC_SWMusic"; // Music category
+		musicClass = "BNA_KC_SFX";
 	};
 
 
-	class BNA_KC_Comona
+	class BNA_KC_Ace_Comona
 	{
 		name = "[Ace] Comona";
 		// Ace Combat
@@ -217,21 +263,48 @@ class CfgMusic
 		duration = 161;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_Enchanter
+	class BNA_KC_Ace_Enchanter: BNA_KC_Ace_Comona
 	{
 		name = "[Ace] Enchanter";
 		// Ace Combat
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Enchanter_Ace_Combat.ogg",db+0,1};
 		duration = 485;
-		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_MagicSpear
+	class BNA_KC_Ace_MagicSpear: BNA_KC_Ace_Comona
 	{
 		name = "[Ace] Magic Spear";
 		// Ace Combat
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Magic_Spear_Ace_Combat.ogg",db+0,1};
 		duration = 246;
+	};
+	class BNA_KC_Ace_SolSquadron: BNA_KC_Ace_Comona
+	{
+		name = "[Ace] Sol Squadron";
+		// Ace Combat
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ace_SolSquadron.ogg",db+0,1};
+		duration = 223;
+	};
+	class BNA_KC_Ace_SolSquadron: BNA_KC_Ace_Comona
+	{
+		name = "[Ace] Werewolf";
+		// Ace Combat
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ace_Werewolf.ogg",db+0,1};
+		duration = 459;
+	};
+
+
+	class BNA_KC_DOOM_Harbringer
+	{
+		name = "[DOOM] Harbringer";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\DOOM_Harbringer.ogg",db+0,1};
+		duration = 432;
 		musicClass = "BNA_KC_VGMusic"; // "Keeli Video Game Music";
+	};
+	class BNA_KC_DOOM_RipAndTear: BNA_KC_DOOM_Harbringer
+	{
+		name = "[DOOM] Rip and Tear";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\DOOM_RipAndTear.ogg",db+0,1};
+		duration = 257;
 	};
 
 
@@ -258,19 +331,36 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_DeliverHope
+	class BNA_KC_Halo_DeliverHope
 	{
 		name = "[Halo] Deliver Hope";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Deliver_Hope.ogg",db+0,1};
 		duration = 120;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	class BNA_KC_DeliverHopePiano
+	class BNA_KC_Halo_DeliverHope_Piano: BNA_KC_DeliverHope
 	{
 		name = "[Halo] Deliver Hope (Piano)";
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Deliver_Hope_Piano.ogg",db+0,1};
 		duration = 127;
-		musicClass = "BNA_KC_VGMusic"; // Music category
+	};
+	class BNA_KC_Halo_FinishTheFight: BNA_KC_DeliverHope
+	{
+		name = "[Halo] Finish the Fight";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Deliver_Hope_Piano.ogg",db+0,1};
+		duration = 147;
+	};
+	class BNA_KC_Halo_LongNightOfSolace: BNA_KC_DeliverHope
+	{
+		name = "[Halo] Long Night of Solace";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Halo_LongNightOfSolace.ogg",db+0,1};
+		duration = 706;
+	};
+	class BNA_KC_Halo_NeverForget: BNA_KC_DeliverHope
+	{
+		name = "[Halo] Never Forget";
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\Halo_NeverForget.ogg",db+0,1};
+		duration = 187;
 	};
 
 
@@ -324,13 +414,98 @@ class CfgMusic
 	};
 
 
-	class BNA_KC_ItHasToBeThisWay
+	class BNA_KC_MG_ItHasToBeThisWay
 	{
 		name = "[MG] It Has To Be This Way";
 		// Metal Gear
 		sound[] = {"BNA_KC_ZeusAudioModule\Audio\It_Has_To_Be_This_Way.ogg",db+0,1};
 		duration = 175;
 		musicClass = "BNA_KC_VGMusic"; // Music category
+	};
+	class BNA_KC_MG_RulesOfNature: BNA_KC_MG_ItHasToBeThisWay
+	{
+		name = "[MG] The Rules of Nature";
+		// Metal Gear
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\MG_RulesOfNature.ogg",db+0,1};
+		duration = 150;
+	};
+	class BNA_KC_MG_TheOnlyThingIKnowForReal: BNA_KC_MG_ItHasToBeThisWay
+	{
+		name = "[MG] The Only Thing I Know For Real";
+		// Metal Gear
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\MG_TheOnlyThingIKnowForReal.ogg",db+0,1};
+		duration = 146;
+	};
+	class BNA_KC_MG_TheStainsOfTime: BNA_KC_MG_ItHasToBeThisWay
+	{
+		name = "[MG] The Stains of Time";
+		// Metal Gear
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\MG_TheStainsOfTime.ogg",db+0,1};
+		duration = 130;
+	};
+
+	class BNA_KC_MW_ThemeCalm
+	{
+		name = "[MW] Theme (Calm)";
+		// Modern Warfare
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\MW_ThemeCalm.ogg",db+0,1};
+		duration = 206;
+		musicClass = "BNA_KC_VGMusic";
+	};
+	class BNA_KC_MW_ThemeHopeful: BNA_KC_MW_ThemeCalm
+	{
+		name = "[MW] Theme (Hopeful)";
+		// Modern Warfare
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\MW_ThemeHopeful.ogg",db+0,1};
+		duration = 167;
+	};
+	class BNA_KC_MW_ThemeHype: BNA_KC_MW_ThemeCalm
+	{
+		name = "[MW] Theme (Hype)";
+		// Modern Warfare
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\MW_ThemeHype.ogg",db+0,1};
+		duration = 336;
+	};
+
+
+	class BNA_KC_PW_MidnightLight
+	{
+		name = "[PW] Theme (Calm)";
+		// Project Wingman
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\PW_MignightLight.ogg.ogg",db+0,1};
+		duration = 191;
+		musicClass = "BNA_KC_VGMusic";
+	};
+	class BNA_KC_PW_Peacekeeper: BNA_KC_PW_MidnightLight
+	{
+		name = "[PW] Peacekeeper";
+		// Project Wingman
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\PW_Peacekeeper.ogg",db+0,1};
+		duration = 185;
+	};
+	class BNA_KC_PW_Presidia: BNA_KC_PW_MidnightLight
+	{
+		name = "[PW] Presidia";
+		// Project Wingman
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\PW_Presidia.ogg.ogg",db+0,1};
+		duration = 318;
+	};
+
+	
+	class BNA_KC_SS_ToTheGallows
+	{
+		name = "[SS] To The Gallows";
+		// Secession Studios
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\SS_ToTheGallows.ogg",db+0,1};
+		duration = 346;
+		musicClass = "BNA_KC_OtherMusic";
+	};
+	class BNA_KC_SS_WithNoMercy: BNA_KC_SS_ToTheGallows
+	{
+		name = "[SS] With No Mercy";
+		// Secession Studios
+		sound[] = {"BNA_KC_ZeusAudioModule\Audio\SS_WithNoMercy.ogg",db+0,1};
+		duration = 355;
 	};
 
 
