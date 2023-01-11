@@ -1436,6 +1436,7 @@ class CfgVehicles
 	
 	class SWLB_clone_backpack;
 	class SWLB_clone_backpack_medic;
+	class SWLB_clone_backpack_RTO;
 
 	class BNA_KC_Backpack: SWLB_clone_backpack
 	{
@@ -1487,7 +1488,26 @@ class CfgVehicles
 			"BNA_KC_Gear\Data\Textures\Backpacks\BNA_KC_Backpack_Medic.paa",
 			"BNA_KC_Gear\Data\Textures\Backpacks\BNA_KC_Backpack_Medic.paa",
 			"",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+			"SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+		};
+	};
+
+	class BNA_KC_Backpack_Radio: SWLB_clone_backpack_RTO
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeArsenal = 2;
+		maximumLoad = 300;
+
+		displayName = "[KC] Clone Trooper RTO Backpack";
+		hiddenSelectionsTextures[]=
+		{
+			"BNA_KC_Gear\Data\Textures\Backpacks\BNA_KC_Backpack.paa",
+			"BNA_KC_Gear\Data\Textures\Backpacks\BNA_KC_Backpack.paa",
+			"",
+			"",
+			"SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
 		};
 	};
 

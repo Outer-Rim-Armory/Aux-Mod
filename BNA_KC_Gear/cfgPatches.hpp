@@ -27,6 +27,7 @@ class CfgPatches
 			"BNA_KC_Backpack",
 			"BNA_KC_Backpack_Invis",
 			"BNA_KC_Backpack_Medic",
+			"BNA_KC_Backpack_Radio",
 			"BNA_KC_Backpack_Keeli",
 			"BNA_KC_Unit_ABTrooper",
 			"BNA_KC_Unit_ABTrooper_v2",
