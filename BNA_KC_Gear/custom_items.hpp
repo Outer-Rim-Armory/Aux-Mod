@@ -123,6 +123,28 @@ class BNA_KC_P1Helmet_Anvil: BNA_KC_P1Helmet_CT
 	};
 };
 
+// Ox
+class BNA_KC_P1Helmet_Ox: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] INF P1 Helm ('Ox')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Ox.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
+// Patriot
+class BNA_KC_P1Helmet_Patriot: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] INF P1 Helm ('Patriot')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Patriot.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
 
 //---------------------------------------------------
 // Phase 2 Helmet Customs

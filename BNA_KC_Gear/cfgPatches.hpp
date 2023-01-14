@@ -193,6 +193,8 @@ class CfgPatches
 			"BNA_KC_P1Helmet_Sin",
 			"BNA_KC_P1Helmet_Sytha",
 			"BNA_KC_P1Helmet_Anvil",
+			"BNA_KC_P1Helmet_Ox",
+			"BNA_KC_P1Helmet_Patriot",
 
 			// P2 Helmets
 			"BNA_KC_P2Helmet_Keeli",
