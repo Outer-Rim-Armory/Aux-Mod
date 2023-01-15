@@ -156,6 +156,28 @@ class BNA_KC_P1Helmet_Vortex: BNA_KC_P1Helmet_CT
 	};
 };
 
+// Dogo
+class BNA_KC_P1Helmet_Dogo: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] INF P1 Helm ('Dogo')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Dogo.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
+// Grey
+class BNA_KC_P1Helmet_Grey: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] INF P1 Helm ('Grey')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Grey.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
 
 //---------------------------------------------------
 // Phase 2 Helmet Customs
@@ -357,6 +379,30 @@ class BNA_KC_P2Helmet_Nokk: BNA_KC_P2Helmet_Trooper
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Nokk.paa",
+		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+	};
+};
+
+// Dogo
+class BNA_KC_P2Helmet_Dogo: BNA_KC_P2Helmet_Trooper
+{
+	author = "DartRuffian";
+	displayName = "[KC] INF Helm ('Dogo')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Dogo.paa",
+		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+	};
+};
+
+// Grey
+class BNA_KC_P2Helmet_Grey: BNA_KC_P2Helmet_Trooper
+{
+	author = "DartRuffian";
+	displayName = "[KC] INF Helm ('Grey')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Grey.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
