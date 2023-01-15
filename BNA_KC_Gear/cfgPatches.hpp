@@ -195,6 +195,7 @@ class CfgPatches
 			"BNA_KC_P1Helmet_Anvil",
 			"BNA_KC_P1Helmet_Ox",
 			"BNA_KC_P1Helmet_Patriot",
+			"BNA_KC_P1Helmet_Vortex",
 
 			// P2 Helmets
 			"BNA_KC_P2Helmet_Keeli",

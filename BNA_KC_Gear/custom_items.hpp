@@ -145,6 +145,17 @@ class BNA_KC_P1Helmet_Patriot: BNA_KC_P1Helmet_CT
 	};
 };
 
+// Vortex
+class BNA_KC_P1Helmet_Vortex: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] INF P1 Helm ('Vortex')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Vortex.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
 
 //---------------------------------------------------
 // Phase 2 Helmet Customs
