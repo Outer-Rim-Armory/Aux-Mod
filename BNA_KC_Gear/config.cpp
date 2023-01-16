@@ -417,7 +417,7 @@ class CfgWeapons
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\ARF\BNA_KC_Helmet_ARF.paa",
 			"",
-			"BNA_KC_Gear\Data\Textures\Helmets\ARF\BNA_KC_Helmet_ARF.paa"
+			"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
 		};
 	};
 

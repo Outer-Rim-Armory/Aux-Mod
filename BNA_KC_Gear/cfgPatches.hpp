@@ -157,6 +157,9 @@ class CfgPatches
 			// BARC
 			"BNA_KC_BARC_Helmet",
 
+			// ARF
+			"BNA_KC_P1_ARF_Helmet",
+
 			// Uniforms
 			"BNA_KC_Uniform_Trooper",
 			"BNA_KC_Uniform_Trooper_v2",
@@ -230,6 +233,9 @@ class CfgPatches
 			// Snow
 			"BNA_KC_P2Helmet_Snow_Keeli",
 			"BNA_KC_P2Helmet_Snow_Joe",
+
+			// ARF
+			"BNA_KC_P1_ARF_Helmet_Patriot",
 
 			// Uniforms
 			"BNA_KC_Uniform_Keeli",

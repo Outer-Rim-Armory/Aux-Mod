@@ -488,6 +488,23 @@ class BNA_KC_P2Helmet_Snow_Joe: BNA_KC_P2Helmet_Snow_Trooper
 //---------------------------------------------------
 
 
+//---------------------------------------------------
+// ARF Helmet Customs
+//---------------------------------------------------
+
+// Patriot
+class BNA_KC_P1_ARF_Helmet_Patriot: BNA_KC_P1_ARF_Helmet
+{
+	author = "DartRuffian";
+	displayName = "[KC] ARF Helm ('Patriot')";
+	hiddenSelectionsTextures[] = 
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\ARF\Customs\BNA_KC_Helmet_ARF_Patriot.paa",
+		"",
+		"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+	};
+};
+
 
 //---------------------------------------------------
 // Uniforms
