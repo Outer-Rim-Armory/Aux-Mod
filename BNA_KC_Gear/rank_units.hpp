@@ -307,6 +307,7 @@ class BNA_KC_Unit_INF_CMD: BNA_KC_UNIT_INF_CS
 
 
 // Phase 1
+// CR ; Recruit
 class BNA_KC_Unit_INF_P1_CR: BNA_KC_Unit_Trooper
 {
 	author = "DartRuffian";

@@ -50,6 +50,7 @@ class CfgPatches
 			"BNA_KC_Unit_INF_CMD",
 			// Infantry P1
 			"BNA_KC_Unit_INF_P1_CR",
+			"BNA_KC_Unit_INF_P1_CT",
 			"BNA_KC_Unit_INF_P1_SCT",
 			"BNA_KC_Unit_INF_P1_VCT",
 			"BNA_KC_Unit_INF_P1_LCPL",
