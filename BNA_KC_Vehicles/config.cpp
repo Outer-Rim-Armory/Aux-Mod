@@ -35,6 +35,8 @@ class CfgAmmo
 		model="ls_weapons_core\Effects\laser_blue.p3d";
 		effectfly="ls_plasma_blue";
 	};
+	
+	
 };
 class CfgMagazines
 {
@@ -75,6 +77,8 @@ class CfgMagazines
 		descriptionShort = "100rnd Mag";
 		tracersEvery=1;
 	};
+	
+	
 };
 class CfgWeapons
 {
@@ -111,6 +115,245 @@ class CfgWeapons
 			};
 		};
 	};
+	
+	/*
+			class player: player
+			{
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class StandardSound
+				{
+					begin1[]=
+					{
+						"BNA_KC_Vehicles\Data\Audio\APCCannon",
+						1.9952624,
+						1,
+						1500
+					};
+					soundBegin[]=
+					{
+						"begin1",
+						1
+					};
+				};
+			};
+	*/
+	class autocannon_Base_F;
+	class autocannon_40mm_CTWS: autocannon_Base_F
+	{
+		class player;
+		class close;
+		class short;
+		class medium;
+		class far;
+	};
+	class BNA_KC40mm_CTWS: autocannon_40mm_CTWS
+	{
+		muzzles[]=
+		{
+			"HE",
+			"AP"
+		};
+		class HE: autocannon_Base_F
+		{
+			displayName="$STR_A3_autocannon_40mm_CTWS0";
+			magazines[]=
+			{
+				"60Rnd_40mm_GPR_shells",
+				"60Rnd_40mm_GPR_Tracer_Red_shells",
+				"60Rnd_40mm_GPR_Tracer_Green_shells",
+				"60Rnd_40mm_GPR_Tracer_Yellow_shells"
+			};
+			class player: player
+			{
+				dispersion=0.0015;
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class StandardSound
+				{
+					begin1[]=
+					{
+						"BNA_KC_Vehicles\Data\Audio\APCCannon",
+						1.9952624,
+						1,
+						1500
+					};
+					soundBegin[]=
+					{
+						"begin1",
+						0.33000001
+					};
+				};
+			};
+			class close: player
+			{
+				aiBurstTerminable=1;
+				showToPlayer=0;
+				burst=3;
+				burstRangeMax=6;
+				aiRateOfFire=1;
+				aiRateOfFireDispersion=2;
+				aiRateOfFireDistance=200;
+				minRange=0;
+				minRangeProbab=0.1;
+				midRange=400;
+				midRangeProbab=0.69999999;
+				maxRange=800;
+				maxRangeProbab=0.80000001;
+			};
+			class short: close
+			{
+				aiBurstTerminable=1;
+				showToPlayer=0;
+				burst=1;
+				burstRangeMax=5;
+				aiRateOfFire=2;
+				aiRateOfFireDispersion=2;
+				aiRateOfFireDistance=600;
+				minRange=600;
+				minRangeProbab=0.75;
+				midRange=800;
+				midRangeProbab=0.80000001;
+				maxRange=1200;
+				maxRangeProbab=0.80000001;
+			};
+			class medium: close
+			{
+				aiBurstTerminable=1;
+				showToPlayer=0;
+				burst=1;
+				burstRangeMax=3;
+				aiRateOfFire=2;
+				aiRateOfFireDispersion=3;
+				aiRateOfFireDistance=1000;
+				minRange=1000;
+				minRangeProbab=0.80000001;
+				midRange=1500;
+				midRangeProbab=0.80000001;
+				maxRange=2000;
+				maxRangeProbab=0.69999999;
+			};
+			class far: close
+			{
+				aiBurstTerminable=1;
+				showToPlayer=0;
+				burst=1;
+				burstRangeMax=1;
+				aiRateOfFire=2;
+				aiRateOfFireDispersion=4;
+				aiRateOfFireDistance=1800;
+				minRange=1800;
+				minRangeProbab=0.74000001;
+				midRange=2400;
+				midRangeProbab=0.64999998;
+				maxRange=3000;
+				maxRangeProbab=0.050000001;
+			};
+		};
+		class AP: autocannon_Base_F
+		{
+			displayName="$STR_A3_autocannon_40mm_CTWS0";
+			magazines[]=
+			{
+				"40Rnd_40mm_APFSDS_shells",
+				"40Rnd_40mm_APFSDS_Tracer_Red_shells",
+				"40Rnd_40mm_APFSDS_Tracer_Green_shells",
+				"40Rnd_40mm_APFSDS_Tracer_Yellow_shells"
+			};
+			class player: player
+			{
+				dispersion=0.00089999998;
+				sounds[]=
+				{
+					"StandardSound"
+				};
+				class StandardSound
+				{
+					begin1[]=
+					{
+						"BNA_KC_Vehicles\Data\Audio\APCCannon",
+						1.9952624,
+						1,
+						1500
+					};
+					soundBegin[]=
+					{
+						"begin1",
+						0.33000001
+					};
+				};
+			};
+			class close: player
+			{
+				aiBurstTerminable=1;
+				showToPlayer=0;
+				burst=3;
+				burstRangeMax=6;
+				aiRateOfFire=1;
+				aiRateOfFireDispersion=2;
+				aiRateOfFireDistance=200;
+				minRange=0;
+				minRangeProbab=0.1;
+				midRange=400;
+				midRangeProbab=0.69999999;
+				maxRange=800;
+				maxRangeProbab=0.80000001;
+			};
+			class short: close
+			{
+				aiBurstTerminable=1;
+				showToPlayer=0;
+				burst=1;
+				burstRangeMax=5;
+				aiRateOfFire=2;
+				aiRateOfFireDispersion=2;
+				aiRateOfFireDistance=600;
+				minRange=600;
+				minRangeProbab=0.75;
+				midRange=800;
+				midRangeProbab=0.80000001;
+				maxRange=1200;
+				maxRangeProbab=0.80000001;
+			};
+			class medium: close
+			{
+				aiBurstTerminable=1;
+				showToPlayer=0;
+				burst=1;
+				burstRangeMax=3;
+				aiRateOfFire=2;
+				aiRateOfFireDispersion=3;
+				aiRateOfFireDistance=1000;
+				minRange=1000;
+				minRangeProbab=0.80000001;
+				midRange=1500;
+				midRangeProbab=0.80000001;
+				maxRange=2000;
+				maxRangeProbab=0.69999999;
+			};
+			class far: close
+			{
+				aiBurstTerminable=1;
+				showToPlayer=0;
+				burst=1;
+				burstRangeMax=1;
+				aiRateOfFire=2;
+				aiRateOfFireDispersion=4;
+				aiRateOfFireDistance=1800;
+				minRange=1800;
+				minRangeProbab=0.74000001;
+				midRange=2400;
+				midRangeProbab=0.64999998;
+				maxRange=3000;
+				maxRangeProbab=0.050000001;
+			};
+		};
+	};
+	
 	
 	class LMG_RCWS;
 	class LMG_coax: LMG_RCWS
@@ -401,6 +644,83 @@ class CfgSoundShaders
 		volume="engineOn * 1 * 1.2 * (((1+0.1*(1 + angVelocity factor[0, 0.5]) *thrust) * ((1-0.9 ) * (speed factor [0, 16.82]) + 0.9  * (rpm factor [1400,	3000])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4]) - 0.3 * (1 - (1 + angVelocity factor[0, 0.5]) *thrust)*((1-0.9 ) * (speed factor [0, 16.82]) + 0.9  * (rpm factor [1400,	3000])) - 0.2*((abs(speed)) factor [2, 6]) + 0.2*((abs(speed)) factor [0, 4])*((abs(speed)) factor [0, 4])) + 0.5*(speed factor[0.3,0]) * ((angVelocity factor[0,0.8]) - (rpm factor [1400,	3000])) factor[(2800 - 1400)/(3000 - 1400) + (((3000 - 1400)/(3000 - 1400) - (2800 - 1400)/(3000 - 1400)) - (1.2 * ((3000 - 1400)/(3000 - 1400) - (2800 - 1400)/(3000 - 1400))))/2, (3000 - 1400)/(3000 - 1400) - (((3000 - 1400)/(3000 - 1400) - (2800 - 1400)/(3000 - 1400)) - (1.2 * ((3000 - 1400)/(3000 - 1400) - (2800 - 1400)/(3000 - 1400))))/2])";
 		range="6*240";
 	};
+	/*
+		samples[]=
+		{
+			{
+				"A3\Sounds_F\vehicles2\armor\APC_Wheeled_01\APC_Wheeled_01_Engine_EXT_RPM4",
+				1
+			}
+		};
+	*/
+	class APC_Wheeled_01_Engine_RPM0_EXT_SoundShader;
+	class APC_Wheeled_01_Engine_RPM1_EXT_SoundShader;
+	class APC_Wheeled_01_Engine_RPM2_EXT_SoundShader;
+	class APC_Wheeled_01_Engine_RPM3_EXT_SoundShader;
+	class APC_Wheeled_01_Engine_RPM4_EXT_SoundShader;
+	class APC_Wheeled_01_Engine_RPM5_EXT_SoundShader;
+	
+	class BNA_KC_Engine_RPM0_EXT_SoundShader: APC_Wheeled_01_Engine_RPM0_EXT_SoundShader
+	{
+		samples[]=
+		{
+			{
+				"BNA_KC_Vehicles\Data\Audio\APCEngine",
+				1
+			}
+		};
+	};
+	class BNA_KC_Engine_RPM1_EXT_SoundShader: APC_Wheeled_01_Engine_RPM1_EXT_SoundShader
+	{
+		samples[]=
+		{
+			{
+				"BNA_KC_Vehicles\Data\Audio\APCEngine",
+				1
+			}
+		};
+	};
+	class BNA_KC_Engine_RPM2_EXT_SoundShader: APC_Wheeled_01_Engine_RPM2_EXT_SoundShader
+	{
+		samples[]=
+		{
+			{
+				"BNA_KC_Vehicles\Data\Audio\APCEngine",
+				1
+			}
+		};
+	};
+	class BNA_KC_Engine_RPM3_EXT_SoundShader: APC_Wheeled_01_Engine_RPM3_EXT_SoundShader
+	{
+		samples[]=
+		{
+			{
+				"BNA_KC_Vehicles\Data\Audio\APCEngine",
+				1
+			}
+		};
+	};
+	class BNA_KC_Engine_RPM4_EXT_SoundShader: APC_Wheeled_01_Engine_RPM4_EXT_SoundShader
+	{
+		samples[]=
+		{
+			{
+				"BNA_KC_Vehicles\Data\Audio\APCEngine",
+				1
+			}
+		};
+	};
+	class BNA_KC_Engine_RPM5_EXT_SoundShader: APC_Wheeled_01_Engine_RPM5_EXT_SoundShader
+	{
+		samples[]=
+		{
+			{
+				"BNA_KC_Vehicles\Data\Audio\APCEngine",
+				1
+			}
+		};
+	};
+
 };
 
 class CfgSoundSets
@@ -571,6 +891,65 @@ class CfgSoundSets
 		volumeCurve="InverseSquare3Curve";
 		posOffset[]={0,0,0};
 		volumeFactor=1.3;
+	};
+	
+	
+	
+	/*
+		soundShaders[]=
+		{
+			"APC_Wheeled_01_Engine_RPM0_EXT_SoundShader"
+		};
+	*/
+	
+	class APC_Wheeled_01_Engine_RPM0_EXT_SoundSet;
+	class APC_Wheeled_01_Engine_RPM1_EXT_SoundSet;
+	class APC_Wheeled_01_Engine_RPM2_EXT_SoundSet;
+	class APC_Wheeled_01_Engine_RPM3_EXT_SoundSet;
+	class APC_Wheeled_01_Engine_RPM4_EXT_SoundSet;
+	class APC_Wheeled_01_Engine_RPM5_EXT_SoundSet;
+	
+	class BNA_KC_APC_Engine_RPM0_EXT_SoundSet: APC_Wheeled_01_Engine_RPM0_EXT_SoundSet
+	{
+		soundShaders[]=
+		{
+			"BNA_KC_Engine_RPM0_EXT_SoundShader"
+		};
+	};
+	class BNA_KC_APC_Engine_RPM1_EXT_SoundSet: APC_Wheeled_01_Engine_RPM1_EXT_SoundSet
+	{
+		soundShaders[]=
+		{
+			"BNA_KC_Engine_RPM1_EXT_SoundShader"
+		};
+	};
+	class BNA_KC_APC_Engine_RPM2_EXT_SoundSet: APC_Wheeled_01_Engine_RPM2_EXT_SoundSet
+	{
+		soundShaders[]=
+		{
+			"BNA_KC_Engine_RPM2_EXT_SoundShader"
+		};
+	};
+	class BNA_KC_APC_Engine_RPM3_EXT_SoundSet: APC_Wheeled_01_Engine_RPM3_EXT_SoundSet
+	{
+		soundShaders[]=
+		{
+			"BNA_KC_Engine_RPM3_EXT_SoundShader"
+		};
+	};
+	class BNA_KC_APC_Engine_RPM4_EXT_SoundSet: APC_Wheeled_01_Engine_RPM4_EXT_SoundSet
+	{
+		soundShaders[]=
+		{
+			"BNA_KC_Engine_RPM4_EXT_SoundShader"
+		};
+	};
+	class BNA_KC_APC_Engine_RPM5_EXT_SoundSet: APC_Wheeled_01_Engine_RPM5_EXT_SoundSet
+	{
+		soundShaders[]=
+		{
+			"BNA_KC_Engine_RPM5_EXT_SoundShader"
+		};
 	};
 };
 
@@ -997,5 +1376,153 @@ class CfgVehicles
                 };
             };
         };
+	};
+	
+	
+	
+	class APC_Wheeled_01_base_F;
+	class B_APC_Wheeled_01_base_F: APC_Wheeled_01_base_F
+	{
+		class Turrets;
+	};
+	class B_APC_Wheeled_01_cannon_F: B_APC_Wheeled_01_base_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret;
+		};
+	};
+	class BNA_KC_APC_Badger: B_APC_Wheeled_01_cannon_F
+	{
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_GVics";
+		displayName = "[KC] Badger APC";
+		crew = "BNA_KC_Unit_Reeker";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[]=
+				{
+					"BNA_KC40mm_CTWS",
+					"BNA_KC_Coax"
+				};
+				magazines[]=
+				{
+					"60Rnd_40mm_GPR_Tracer_Red_shells",
+					"60Rnd_40mm_GPR_Tracer_Red_shells",
+					"60Rnd_40mm_GPR_Tracer_Red_shells",
+					"60Rnd_40mm_GPR_Tracer_Red_shells",
+					"40Rnd_40mm_APFSDS_Tracer_Red_shells",
+					"40Rnd_40mm_APFSDS_Tracer_Red_shells",
+					"40Rnd_40mm_APFSDS_Tracer_Red_shells",
+					"40Rnd_40mm_APFSDS_Tracer_Red_shells",
+					"BNA_KC_100rnd_Coax_Mag",
+					"BNA_KC_100rnd_Coax_Mag",
+					"BNA_KC_100rnd_Coax_Mag",
+					"BNA_KC_100rnd_Coax_Mag",
+					"BNA_KC_100rnd_Coax_Mag"
+				};
+			};
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"BNA_KC_Vehicles\Data\Textures\Badger\BNA_KC_APC_base_CO.paa",
+			"BNA_KC_Vehicles\Data\Textures\Badger\BNA_KC_APC_adds_CO.paa",
+			"BNA_KC_Vehicles\Data\Textures\Badger\BNA_KC_APC_tows_CO.paa",
+			"BNA_KC_Vehicles\Data\Textures\Badger\BNA_KC_APC_camonet_NATO_Desert_CO.paa",
+			"BNA_KC_Vehicles\Data\Textures\Badger\BNA_KC_APC_cage_sand_CO.paa"
+		};
+		soundEngineOnInt[]=
+		{
+			"BNA_KC_Vehicles\Data\Audio\APCStartup",
+			0.79432821,
+			1
+		};
+		soundEngineOffInt[]=
+		{
+			"BNA_KC_Vehicles\Data\Audio\APCShutdown",
+			0.79432821,
+			1
+		};
+		soundEngineOnExt[]=
+		{
+			"BNA_KC_Vehicles\Data\Audio\APCStartup",
+			1,
+			1,
+			100
+		};
+		soundEngineOffExt[]=
+		{
+			"BNA_KC_Vehicles\Data\Audio\APCShutdown",
+			1,
+			1,
+			100
+		};
+		class Sounds
+		{
+			soundSetsInt[]=
+			{
+				"APC_Wheeled_01_Engine_RPM0_INT_SoundSet",
+				"APC_Wheeled_01_Engine_RPM1_INT_SoundSet",
+				"APC_Wheeled_01_Engine_RPM2_INT_SoundSet",
+				"APC_Wheeled_01_Engine_RPM3_INT_SoundSet",
+				"APC_Wheeled_01_Engine_RPM4_INT_SoundSet",
+				"APC_Wheeled_01_Engine_RPM5_INT_SoundSet",
+				"APC_Wheeled_01_Interior_Tone_Engine_Off_SoundSet",
+				"APC_Wheeled_01_Interior_Tone_Engine_On_SoundSet",
+				"APC_Wheeled_01_Rattling_INT_SoundSet",
+				"APC_Wheeled_01_Stress_INT_SoundSet",
+				"APC_Wheeled_01_Rain_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Rock_Fast_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Grass_Fast_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Sand_Fast_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Gravel_Fast_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Mud_Fast_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Asphalt_Fast_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Water_Fast_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Rock_Slow_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Grass_Slow_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Sand_Slow_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Gravel_Slow_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Mud_Slow_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Asphalt_Slow_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Water_Slow_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Turn_Hard_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Turn_Soft_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Brake_Hard_INT_SoundSet",
+				"APC_Wheeled_01_Tires_Brake_Soft_INT_SoundSet"
+			};
+			soundSetsExt[]=
+			{
+				"BNA_KC_APC_Engine_RPM0_EXT_SoundSet",
+				"BNA_KC_APC_Engine_RPM1_EXT_SoundSet",
+				"BNA_KC_APC_Engine_RPM2_EXT_SoundSet",
+				"BNA_KC_APC_Engine_RPM3_EXT_SoundSet",
+				"BNA_KC_APC_Engine_RPM4_EXT_SoundSet",
+				"BNA_KC_APC_Engine_RPM5_EXT_SoundSet",
+				"APC_Wheeled_01_Rattling_EXT_SoundSet",
+				"APC_Wheeled_01_Stress_EXT_SoundSet",
+				"APC_Wheeled_01_Rain_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Rock_Fast_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Grass_Fast_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Sand_Fast_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Gravel_Fast_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Mud_Fast_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Asphalt_Fast_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Water_Fast_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Rock_Slow_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Grass_Slow_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Sand_Slow_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Gravel_Slow_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Mud_Slow_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Asphalt_Slow_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Water_Slow_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Turn_Hard_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Turn_Soft_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Brake_Hard_EXT_SoundSet",
+				"APC_Wheeled_01_Tires_Brake_Soft_EXT_SoundSet"
+			};
+		};
 	};
 };

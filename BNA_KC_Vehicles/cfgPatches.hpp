@@ -9,7 +9,9 @@ class CfgPatches
 			"BNA_KC_Gear",
 			"A3_Armor_F",
 			"A3_Sounds_F",
-			"3AS_VehicleWeapons"
+			"3AS_VehicleWeapons",
+			"A3_Armor_F_Beta_APC_Wheeled_01",
+			"A3_Armor_F_EPC_MBT_01"
 		};
 		units[] =
 		{
@@ -19,13 +21,15 @@ class CfgPatches
 			// "BNA_KC_Dexus_laati",
 			// "BNA_KC_Dexus_laati_transport",
 			// Left Aviation, switched to Infantry
-			"BNA_KC_MBT_Slammer"
+			"BNA_KC_MBT_Slammer",
+			"BNA_KC_APC_Badger"
 		};
 		weapons[] =
 		{
 			"BNA_KC_120_Tankgun",
 			"BNA_KC_Coax",
-			"BNA_KC_CommanderGun"
+			"BNA_KC_CommanderGun",
+			"BNA_KC40mm_CTWS"
 		};
 		ammo[]=
 		{
