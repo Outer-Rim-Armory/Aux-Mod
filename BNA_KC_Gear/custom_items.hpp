@@ -178,6 +178,17 @@ class BNA_KC_P1Helmet_Grey: BNA_KC_P1Helmet_CT
 	};
 };
 
+// Defter
+class BNA_KC_P1Helmet_Defter: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] INF P1 Helm ('Defter')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Defter.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
 
 //---------------------------------------------------
 // Phase 2 Helmet Customs

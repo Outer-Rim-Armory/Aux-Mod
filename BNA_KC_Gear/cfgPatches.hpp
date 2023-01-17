@@ -202,6 +202,7 @@ class CfgPatches
 			"BNA_KC_P1Helmet_Vortex",
 			"BNA_KC_P1Helmet_Dogo",
 			"BNA_KC_P1Helmet_Grey",
+			"BNA_KC_P1Helmet_Defter",
 
 			// P2 Helmets
 			"BNA_KC_P2Helmet_Keeli",
