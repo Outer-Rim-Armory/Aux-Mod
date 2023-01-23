@@ -400,16 +400,16 @@ class BNA_KC_P2Helmet_Grey: BNA_KC_P2Helmet_Trooper
 // Phase 2 Pilot Helmet Customs
 //---------------------------------------------------
 
-// Lui
-// class BNA_KC_PilotHelmet_Lui: BNA_KC_PilotHelmet
-// {
-// 	displayName = "[KC] AVI Helm ('Lui')";
-// 	hiddenSelectionsTextures[] =
-// 	{
-// 		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Lui.paa",
-// 		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
-// 	};
-// };
+Lui
+class BNA_KC_PilotHelmet_Lui: BNA_KC_PilotHelmet
+{
+	displayName = "[KC] AVI Helm ('Lui')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Lui.paa",
+		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+	};
+};
 
 //---------------------------------------------------
 // Phase 1 Pilot Helmet Customs

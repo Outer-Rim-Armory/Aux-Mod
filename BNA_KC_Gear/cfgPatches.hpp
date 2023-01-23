@@ -226,7 +226,7 @@ class CfgPatches
 			// P1 Pilots
 
 			// P2 Pilots
-			// "BNA_KC_PilotHelmet_Lui",
+			"BNA_KC_PilotHelmet_Lui",
 
 			// Snow
 			"BNA_KC_P2Helmet_Snow_Keeli",
