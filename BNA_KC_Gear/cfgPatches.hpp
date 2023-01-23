@@ -193,7 +193,7 @@ class CfgPatches
 			"BNA_KC_P1Helmet_Axel",
 			"BNA_KC_P1Helmet_Hazard",
 			"BNA_KC_P1Helmet_Guardian",
-			"BNA_KC_P1Helmet_Lui",
+			"BNA_KC_P1Helmet_Splashdown",
 			"BNA_KC_P1Helmet_Sin",
 			"BNA_KC_P1Helmet_Anvil",
 			"BNA_KC_P1Helmet_Ox",
@@ -218,7 +218,7 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Ox",
 			"BNA_KC_P2Helmet_Axel",
 			"BNA_KC_P2Helmet_Hazard",
-			"BNA_KC_P2Helmet_Lui",
+			"BNA_KC_P2Helmet_Splashdown",
 			"BNA_KC_P2Helmet_Nokk",
 			"BNA_KC_P2Helmet_Dogo",
 			"BNA_KC_P2Helmet_Grey",
@@ -226,7 +226,7 @@ class CfgPatches
 			// P1 Pilots
 
 			// P2 Pilots
-			"BNA_KC_PilotHelmet_Lui",
+			"BNA_KC_PilotHelmet_Splashdown",
 
 			// Snow
 			"BNA_KC_P2Helmet_Snow_Keeli",
