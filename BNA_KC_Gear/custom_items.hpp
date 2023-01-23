@@ -79,13 +79,13 @@ class BNA_KC_P1Helmet_Guardian: BNA_KC_P1Helmet_CT
 	};
 };
 
-// Lui
-class BNA_KC_P1Helmet_Lui: BNA_KC_P1Helmet_CT
+// Splashdown
+class BNA_KC_P1Helmet_Splashdown: BNA_KC_P1Helmet_CT
 {
-	displayName = "[KC] INF P1 Helm ('Lui')";
+	displayName = "[KC] INF P1 Helm ('Splashdown')";
 	hiddenSelectionsTextures[] =
 	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Lui.paa",
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Splashdown.paa",
 		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
 	};
 };
@@ -347,14 +347,14 @@ class BNA_KC_P2Helmet_Hazard: BNA_KC_P2Helmet_Trooper
 	};
 };
 
-// Lui
-class BNA_KC_P2Helmet_Lui: BNA_KC_P2Helmet_Trooper
+// Splashdown
+class BNA_KC_P2Helmet_Splashdown: BNA_KC_P2Helmet_Trooper
 {
 	author = "DartRuffian";
-	displayName = "[KC] INF Helm ('Lui')";
+	displayName = "[KC] INF Helm ('Splashdown')";
 	hiddenSelectionsTextures[] =
 	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Lui.paa",
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Splashdown.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
@@ -400,13 +400,13 @@ class BNA_KC_P2Helmet_Grey: BNA_KC_P2Helmet_Trooper
 // Phase 2 Pilot Helmet Customs
 //---------------------------------------------------
 
-Lui
-class BNA_KC_PilotHelmet_Lui: BNA_KC_PilotHelmet
+// Splashdown
+class BNA_KC_PilotHelmet_Splashdown: BNA_KC_PilotHelmet
 {
-	displayName = "[KC] AVI Helm ('Lui')";
+	displayName = "[KC] AVI Helm ('Splashdown')";
 	hiddenSelectionsTextures[] =
 	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Lui.paa",
+		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Splashdown.paa",
 		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
 	};
 };
