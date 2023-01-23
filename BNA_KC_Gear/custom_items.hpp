@@ -101,17 +101,6 @@ class BNA_KC_P1Helmet_Sin: BNA_KC_P1Helmet_CT
 	};
 };
 
-// Sytha
-class BNA_KC_P1Helmet_Sytha: BNA_KC_P1Helmet_CT
-{
-	displayName = "[KC] INF P1 Helm ('Sytha')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Sytha.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
-	};
-};
-
 // Anvil
 class BNA_KC_P1Helmet_Anvil: BNA_KC_P1Helmet_CT
 {
@@ -318,18 +307,6 @@ class BNA_KC_P2Helmet_Stone: BNA_KC_P2Helmet_Trooper
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Stone.paa",
-		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-	};
-};
-
-// Sytha
-class BNA_KC_P2Helmet_Sytha: BNA_KC_P2Helmet_Trooper
-{
-	author = "DartRuffian";
-	displayName = "[KC] INF Helm ('Sytha')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Sytha.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
