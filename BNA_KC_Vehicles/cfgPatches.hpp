@@ -18,9 +18,6 @@ class CfgPatches
 			"BNA_KC_Standard_laati",
 			"BNA_KC_Standard_laati_transport",
 			"BNA_KC_Standard_laatc",
-			// "BNA_KC_Dexus_laati",
-			// "BNA_KC_Dexus_laati_transport",
-			// Left Aviation, switched to Infantry
 			"BNA_KC_MBT_Slammer",
 			"BNA_KC_APC_Badger"
 		};

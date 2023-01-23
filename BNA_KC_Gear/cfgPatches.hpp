@@ -226,10 +226,8 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Grey",
 
 			// P1 Pilots
-			// "BNA_KC_PilotHelmet_P1_Dexus",
 
 			// P2 Pilots
-			// "BNA_KC_PilotHelmet_Dexus",
 			// "BNA_KC_PilotHelmet_Lui",
 
 			// Snow
