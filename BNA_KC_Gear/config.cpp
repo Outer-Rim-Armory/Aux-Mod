@@ -1504,7 +1504,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"BNA_KC_Gear\Data\Textures\Backpacks\BNA_KC_Backpack.paa",
-			"BNA_KC_Gear\Data\Textures\Backpacks\BNA_KC_Backpack.paa",
+			"",
 			"",
 			"",
 			"SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
