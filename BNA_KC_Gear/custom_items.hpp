@@ -359,18 +359,6 @@ class BNA_KC_P2Helmet_Splashdown: BNA_KC_P2Helmet_Trooper
 	};
 };
 
-// Nokk
-class BNA_KC_P2Helmet_Nokk: BNA_KC_P2Helmet_Trooper
-{
-	author = "DartRuffian";
-	displayName = "[KC] INF Helm ('Nokk')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Nokk.paa",
-		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-	};
-};
-
 // Dogo
 class BNA_KC_P2Helmet_Dogo: BNA_KC_P2Helmet_Trooper
 {

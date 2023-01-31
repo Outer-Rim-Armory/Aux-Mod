@@ -219,7 +219,6 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Axel",
 			"BNA_KC_P2Helmet_Hazard",
 			"BNA_KC_P2Helmet_Splashdown",
-			"BNA_KC_P2Helmet_Nokk",
 			"BNA_KC_P2Helmet_Dogo",
 			"BNA_KC_P2Helmet_Grey",
 
