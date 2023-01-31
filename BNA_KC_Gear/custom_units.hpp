@@ -202,6 +202,54 @@ class BNA_KC_Unit_Dexus: BNA_KC_Unit_INF_CSS
 	// 	"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 	// };
 
+	// Dexus wanted DC-15s instead of the 15c
+	// Weapons
+	weapons[] =
+	{
+		"BNA_KC_DC15S_Predef",
+		"SWLB_clone_binocular",
+		"Throw",
+		"Put"
+	};
+	respawnWeapons[] =
+	{
+		"BNA_KC_DC15S_Predef",
+		"SWLB_clone_binocular",
+		"Throw",
+		"Put"
+	};
+	// Ammunition / Throwables
+	magazines[] =
+	{
+		// Ammo
+		ITEM_11("3AS_60Rnd_EC30_mag"),
+		// Stun rounds would go here
+		ITEM_2("3AS_16Rnd_EC20_Mag"),
+		// Stun rounds would go here
+		// Grenades
+		ITEM_2("ls_mag_classC_thermalDet"),
+		ITEM_3("ShieldGrenade_Mag"),
+		// Smokes
+		ITEM_3("3AS_SmokeWhite"),
+		ITEM_3("3AS_SmokeBlue"),
+		ITEM_3("3AS_SmokeGreen"),
+	};
+	respawnMagazines[] =
+	{
+		// Ammo
+		ITEM_11("3AS_60Rnd_EC30_mag"),
+		// Stun rounds would go here
+		ITEM_2("3AS_16Rnd_EC20_Mag"),
+		// Stun rounds would go here
+		// Grenades
+		ITEM_2("ls_mag_classC_thermalDet"),
+		ITEM_3("ShieldGrenade_Mag"),
+		// Smokes
+		ITEM_3("3AS_SmokeWhite"),
+		ITEM_3("3AS_SmokeBlue"),
+		ITEM_3("3AS_SmokeGreen"),
+	};
+
 	linkedItems[] =
 	{
 		"BNA_KC_P2Helmet_Dexus", "ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
