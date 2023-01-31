@@ -178,6 +178,17 @@ class BNA_KC_P1Helmet_Defter: BNA_KC_P1Helmet_CT
 	};
 };
 
+// Woods
+class BNA_KC_P1Helmet_Woods: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] INF P1 Helm ('Woods')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Woods.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+
 
 //---------------------------------------------------
 // Phase 2 Helmet Customs
@@ -379,6 +390,17 @@ class BNA_KC_P2Helmet_Grey: BNA_KC_P2Helmet_Trooper
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Grey.paa",
+		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+	};
+};
+
+class BNA_KC_P2Helmet_Woods: BNA_KC_P2Helmet_Trooper
+{
+	author = "DartRuffian";
+	displayName = "[KC] INF Helm ('Woods')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Woods.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
