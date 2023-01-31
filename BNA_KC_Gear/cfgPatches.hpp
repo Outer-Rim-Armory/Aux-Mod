@@ -93,6 +93,7 @@ class CfgPatches
 			"BNA_KC_Unit_Ponds",
 			"BNA_KC_Unit_Stone",
 			"BNA_KC_Unit_Vortex",
+			"BNA_KC_Unit_Dexus",
 			"BNA_KC_Unit_Snow_Keeli",
 			"BNA_KC_Unit_Snow_Joe",
 			// Objects

@@ -173,7 +173,6 @@ class BNA_KC_Unit_Vortex: BNA_KC_Unit_INF_CSS
 	editorSubcategory = "BNA_KCSub_Customs";
 
 	displayName = "[KC] Vortex";
-	uniformClass = "BNA_KC_Uniform_Trooper";
 
 	linkedItems[] =
 	{
@@ -189,7 +188,29 @@ class BNA_KC_Unit_Vortex: BNA_KC_Unit_INF_CSS
 //----------------------------------------------------
 // Pilots
 //----------------------------------------------------
+class BNA_KC_Unit_Dexus: BNA_KC_Unit_INF_CSS
+{
+	editorSubcategory = "BNA_KCSub_Customs";
+	displayName = "[KC] Dexus";
 
+	// Uncomment when Dexus recieves custom uniform
+	// uniformClass = "BNA_KC_Uniform_Dexus";
+	// hiddenSelectionsTextures[] =
+	// {
+	// 	"BNA_KC_Gear\Data\Textures\Uniforms\Customs\BNA_KC_Uniform_Dexus_Upper.paa",
+	// 	"BNA_KC_Gear\Data\Textures\Uniforms\Customs\BNA_KC_Uniform_Dexus_Lower.paa",
+	// 	"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+	// };
+
+	linkedItems[] =
+	{
+		"BNA_KC_P2Helmet_Dexus", "ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P2Helmet_Dexus", "ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+	};
+};
 
 //----------------------------------------------------
 // Snow Troopers
