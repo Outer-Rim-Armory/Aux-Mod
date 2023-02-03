@@ -68,13 +68,13 @@ class BNA_KC_P1Helmet_Hazard: BNA_KC_P1Helmet_CT
 	};
 };
 
-// Guardian
-class BNA_KC_P1Helmet_Guardian: BNA_KC_P1Helmet_CT
+// Drake
+class BNA_KC_P1Helmet_Drake: BNA_KC_P1Helmet_CT
 {
-	displayName = "[KC] INF P1 Helm ('Guardian')";
+	displayName = "[KC] INF P1 Helm ('Drake')";
 	hiddenSelectionsTextures[] =
 	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Guardian.paa",
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Drake.paa",
 		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
 	};
 };
@@ -205,13 +205,13 @@ class BNA_KC_P2Helmet_Keeli: BNA_KC_P2Helmet_Trooper
 	};
 };
 
-// Guardian
-class BNA_KC_P2Helmet_Guardian: BNA_KC_P2Helmet_Trooper
+// Drake
+class BNA_KC_P2Helmet_Drake: BNA_KC_P2Helmet_Trooper
 {
-	displayName = "[KC] INF Helm ('Guardian')";
+	displayName = "[KC] INF Helm ('Drake')";
 	hiddenSelectionsTextures[] =
 	{
-		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Guardian.paa",
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Drake.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
@@ -498,14 +498,14 @@ class BNA_KC_Uniform_Keeli: BNA_KC_Uniform_Trooper
 	};
 };
 
-// Guardian
-class BNA_KC_Uniform_Guardian: BNA_KC_Uniform_Trooper
+// Drake
+class BNA_KC_Uniform_Drake: BNA_KC_Uniform_Trooper
 {
-	displayName = "[KC] INF Armor ('Guardian')";
+	displayName = "[KC] INF Armor ('Drake')";
 	class ItemInfo: UniformItem
 	{
 		uniformModel = "-";
-		uniformClass = "BNA_KC_Unit_Guardian";
+		uniformClass = "BNA_KC_Unit_Drake";
 		containerClass = "Supply150";
 		mass = 40;
 		uniformType = "Neopren";

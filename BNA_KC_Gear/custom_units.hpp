@@ -28,27 +28,27 @@ class BNA_KC_Unit_Keeli: BNA_KC_Unit_INF_CMD
 		"BNA_KC_P2Helmet_Keeli","BNA_KC_NVG_Commander","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
 	};
 };
-// Guardian
-class BNA_KC_Unit_Guardian: BNA_KC_Unit_INF_LT
+// Drake
+class BNA_KC_Unit_Drake: BNA_KC_Unit_INF_LT
 {
 	editorSubcategory = "BNA_KCSub_Customs";
 
-	displayName = "[KC] Guardian";
-	uniformClass = "BNA_KC_Uniform_Guardian";
+	displayName = "[KC] Drake";
+	uniformClass = "BNA_KC_Uniform_Drake";
 	hiddenSelectionsTextures[] =
 	{
-		"BNA_KC_Gear\Data\Textures\Uniforms\Customs\BNA_KC_Uniform_Guardian_Upper.paa",
-		"BNA_KC_Gear\Data\Textures\Uniforms\Customs\BNA_KC_Uniform_Guardian_Lower.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\Customs\BNA_KC_Uniform_Drake_Upper.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\Customs\BNA_KC_Uniform_Drake_Lower.paa",
 		"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 	};
 
 	linkedItems[] =
 	{
-		"BNA_KC_P2Helmet_Guardian","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+		"BNA_KC_P2Helmet_Drake","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
 	};
 	respawnLinkedItems[] =
 	{
-		"BNA_KC_P2Helmet_Guardian","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
+		"BNA_KC_P2Helmet_Drake","BNA_KC_NVG_Rangefinder","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","BNA_KC_Vest_Officer"
 	};
 };
 // Joe
