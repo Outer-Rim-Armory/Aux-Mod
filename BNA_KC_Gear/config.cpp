@@ -1,5 +1,4 @@
 #include "cfgPatches.hpp"
-#include "cfgFunctions.hpp"
 
 #define ITEM_2 (a) a, a
 #define ITEM_3 (a) a, a, a
