@@ -948,8 +948,8 @@ class CfgWeapons
 			{
 				class Chest
 				{
-					HitpointName="HitChest";
-					armor = 20;
+					HitpointName = "HitChest";
+					armor = 25;
 					PassThrough = 0.10000001;
 				};
 				class Legs
@@ -1436,6 +1436,7 @@ class CfgVehicles
 	class SWLB_clone_backpack;
 	class SWLB_clone_backpack_medic;
 	class SWLB_clone_backpack_RTO;
+	class SWLB_clone_arc_backpack;
 
 	class BNA_KC_Backpack: SWLB_clone_backpack
 	{
@@ -1471,6 +1472,16 @@ class CfgVehicles
 			"",
 			""
 		};
+	};
+
+	class BNA_KC_Backpack_ARC: SWLB_clone_arc_backpack
+	{
+		author = "DartRuffian";
+		scope = 2;
+		scopeArsenal = 2;
+
+		displayName = "[KC] ARC Trooper Backpack";
+		maximumLoad = 400;
 	};
 	
 	class BNA_KC_Backpack_Medic: SWLB_clone_backpack_medic
