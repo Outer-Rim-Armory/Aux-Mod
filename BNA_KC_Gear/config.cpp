@@ -1457,9 +1457,9 @@ class CfgVehicles
 
 	class BNA_KC_Backpack_Invis: BNA_KC_Backpack
 	{
-		author = "DartRuffian"
+		author = "DartRuffian";
 		displayName = "[KC] Clone Trooper Invisible Backpack";
-		model = "BNA_KC_Gear\Data\Models\empty_model.p3d"
+		model = "BNA_KC_Gear\Data\Models\empty_model.p3d";
 	};
 
 	class BNA_KC_Backpack_Keeli: BNA_KC_Backpack
