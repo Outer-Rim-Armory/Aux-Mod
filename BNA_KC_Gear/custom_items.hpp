@@ -23,6 +23,11 @@ class BNA_KC_P1Helmet_Keeli_Red: BNA_KC_P1Helmet_Keeli
 	scopeArsenal = 1;
 	
 	displayName = "[KC] INF P1 Helm ('Keeli') [Red Visor]";
+	hiddenSelectionsMaterials[] = 
+	{
+		"",
+		"a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Keeli.paa",
@@ -72,6 +77,11 @@ class BNA_KC_P1Helmet_Joe_Red: BNA_KC_P1Helmet_Joe
 	scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Joe') [Red Visor]";
+	hiddenSelectionsMaterials[] = 
+	{
+		"",
+		"a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Joe.paa",
@@ -241,11 +251,33 @@ class BNA_KC_P1Helmet_Jester: BNA_KC_P1Helmet_CT
 // Keeli
 class BNA_KC_P2Helmet_Keeli: BNA_KC_P2Helmet_Trooper
 {
+	BNAKC_Helmet_Toggle = 1;
+	BNAKC_Helmet_Off = "BNA_KC_P2Helmet_Keeli";
+	BNAKC_Helmet_On  = "BNA_KC_P2Helmet_Keeli_Red";
+
 	displayName = "[KC] INF Helm ('Keeli')";
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Keeli.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+	};
+};
+// Keeli Red Visor
+class BNA_KC_P2Helmet_Keeli_Red: BNA_KC_P2Helmet_Keeli
+{
+	scope = 1;
+	scopeArsenal = 1;
+
+	displayName = "[KC] INF Helm ('Keeli') [Red Visor]";
+	hiddenSelectionsMaterials[] = 
+	{
+		"",
+		"a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+	};
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Keeli.paa",
+		"BNA_KC_Gear\Data\Textures\Visors\BNA_KC_Visor_Red.paa"
 	};
 };
 
@@ -307,7 +339,24 @@ class BNA_KC_P2Helmet_Patriot: BNA_KC_P2Helmet_Trooper
 // Joe
 class BNA_KC_P2Helmet_Joe: BNA_KC_P2Helmet_Trooper
 {
+	BNAKC_Helmet_Toggle = 1;
+	BNAKC_Helmet_Off = "BNA_KC_P2Helmet_Joe";
+	BNAKC_Helmet_On  = "BNA_KC_P2Helmet_Joe_Red";
+
 	displayName = "[KC] INF Helm ('Joe')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Joe.paa",
+		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+	};
+};
+
+class BNA_KC_P2Helmet_Joe_Red: BNA_KC_P2Helmet_Joe
+{
+	scope = 1;
+	scopeArsenal = 1;
+
+	displayName = "[KC] INF Helm ('Joe') [Red Visor]";
 	hiddenSelectionsMaterials[] = 
 	{
 		"",

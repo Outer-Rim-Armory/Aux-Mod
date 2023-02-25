@@ -210,12 +210,14 @@ class CfgPatches
 
 			// P2 Helmets
 			"BNA_KC_P2Helmet_Keeli",
+			"BNA_KC_P2Helmet_Keeli_Red",
 			"BNA_KC_P2Helmet_Drake",
 			"BNA_KC_P2Helmet_Dexus",
 			"BNA_KC_P2Helmet_Vortex",
 			"BNA_KC_P2Helmet_Burnt",
 			"BNA_KC_P2Helmet_Patriot",
 			"BNA_KC_P2Helmet_Joe",
+			"BNA_KC_P2Helmet_Joe_Red",
 			"BNA_KC_P2Helmet_Fil",
 			"BNA_KC_P2Helmet_Fil_Squad",
 			"BNA_KC_P2Helmet_Ponds",
