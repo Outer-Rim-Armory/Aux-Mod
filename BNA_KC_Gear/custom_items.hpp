@@ -55,10 +55,11 @@ class BNA_KC_P1Helmet_Dexus: BNA_KC_P1Helmet_CT
 // Joe
 class BNA_KC_P1Helmet_Joe: BNA_KC_P1Helmet_CT
 {
-	displayName = "[KC] INF P1 Helm ('Joe')";
 	BNAKC_Helmet_Toggle = 1;
 	BNAKC_Helmet_Off = "BNA_KC_P1Helmet_Joe";
 	BNAKC_Helmet_On = "BNA_KC_P1Helmet_Joe_Red";
+
+	displayName = "[KC] INF P1 Helm ('Joe')";
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Joe.paa",
@@ -69,6 +70,8 @@ class BNA_KC_P1Helmet_Joe_Red: BNA_KC_P1Helmet_Joe
 {
 	scope = 1;
 	scopeArsenal = 1;
+
+	displayName = "[KC] INF P1 Helm ('Joe') [Red Visor]";
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Joe.paa",
