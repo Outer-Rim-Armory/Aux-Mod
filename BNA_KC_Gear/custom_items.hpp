@@ -5,11 +5,28 @@
 // Keeli
 class BNA_KC_P1Helmet_Keeli: BNA_KC_P1Helmet_CT
 {
+	BNAKC_Helmet_Toggle = 1;
+	BNAKC_Helmet_Off = "BNA_KC_P1Helmet_Keeli";
+	BNAKC_Helmet_On  = "BNA_KC_P1Helmet_Keeli_Red";
+
 	displayName = "[KC] INF P1 Helm ('Keeli')";
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Keeli.paa",
 		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+	};
+};
+// Keeli Red Visor
+class BNA_KC_P1Helmet_Keeli_Red: BNA_KC_P1Helmet_Keeli
+{
+	scope = 1;
+	scopeArsenal = 1;
+	
+	displayName = "[KC] INF P1 Helm ('Keeli') [Red Visor]";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Keeli.paa",
+		"BNA_KC_Gear\Data\Textures\Visors\BNA_KC_Visor_Red.paa"
 	};
 };
 

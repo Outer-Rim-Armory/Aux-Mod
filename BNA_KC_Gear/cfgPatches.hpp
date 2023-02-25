@@ -189,6 +189,7 @@ class CfgPatches
 			// Customs
 			// P1 Helmets
 			"BNA_KC_P1Helmet_Keeli",
+			"BNA_KC_P1Helmet_Keeli_Red",
 			"BNA_KC_P1Helmet_Burnt",
 			"BNA_KC_P1Helmet_Dexus",
 			"BNA_KC_P1Helmet_Joe",
