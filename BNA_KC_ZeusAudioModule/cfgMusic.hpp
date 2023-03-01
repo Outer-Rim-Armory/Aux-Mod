@@ -537,4 +537,76 @@ class CfgMusic
 		duration = 501;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
+	
+
+	class BNA_KC_Transformers_ArrivalToEarth
+        {
+        name = "[Transformers] Arrival To Earth (Hopeful)";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Arrival_To_Earth.ogg",db+0,1};
+        duration = 315;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
+	
+
+	class BNA_KC_AxeManTheme
+        {
+        name = "Axe Man Theme (Hype/Hopeful)";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Axe_Man_Theme.ogg",db+0,1};
+        duration = 92;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
+
+
+	class BNA_KC_FleetAdmiralFujitora
+        {
+        name = "Fleet Admiral Fujitora";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Fleet_Admiral_Fujitora.ogg",db+0,1};
+        duration = 67;
+        musicClass = "BNA_KC_AnimeMusic"; // Music category
+        }; 
+
+
+	class BNA_KC_Transformers_ForestBattle
+        {
+        name = "[Transformers] Forest Battle";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Forest_Battle.ogg",db+0,1};
+        duration = 122;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
+
+	
+	class BNA_KC_Transformers_Prime
+        {
+        name = "[Transformers] Prime";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Prime.ogg",db+0,1};
+        duration = 128;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
+
+
+	class BNA_KC_RampartAndWilco
+        {
+        name = "Rampart and Wilco (Tense)";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Rampart_and_Wilco.ogg",db+0,1};
+        duration = 127;
+        musicClass = "BNA_KC_SWMusic"; // Music category
+        }; 
+
+
+	class BNA_KC_RylothLastStand
+        {
+        name = "Ryloth Last Stand";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ryloth_Last_Stand.ogg",db+0,1};
+        duration = 123;
+        musicClass = "BNA_KC_SWMusic"; // Music category
+        }; 
+
+
+	class BNA_KC_Transformers_Scorponok
+        {
+        name = "[Transformers] Scorponok (Motivational)";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Scorponok.ogg",db+0,1};
+        duration = 273;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
 };
