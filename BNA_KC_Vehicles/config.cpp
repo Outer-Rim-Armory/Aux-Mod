@@ -1,4 +1,5 @@
 #include "cfgPatches.hpp"
+#include "cfgSounds.hpp"
 
 
 class CfgAmmo
@@ -958,6 +959,25 @@ class CfgSoundSets
 };
 
 
+class Extended_init_EventHandlers 
+{
+	class BNA_KC_laati_mk1_3AS
+	{
+		class BNA_KC_laati_mk1_3AS_init
+		{
+			init = "(_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";
+		};
+	};
+	class BNA_KC_laati_mk2_3AS
+	{
+		class BNA_KC_laati_mk2_3AS_init
+		{
+			init = "(_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";
+		};
+	};
+};
+
+
 class CfgVehicles
 {
 	//-----------------------------------------------------
@@ -968,13 +988,19 @@ class CfgVehicles
 	class lsd_heli_laatc;
 	class lsd_heli_laati_ab;
 	class lsd_heli_laati_transport;
+	// class 3as_LAAT_Mk1;       // Open Doors, Turrets
+	// class 3as_LAAT_Mk1Lights; // Open Doors, Lights
+	// class 3as_LAAT_Mk2;       // Closed Doors
+	// class 3as_LAAT_Mk2Lights; // Closed Doors, Lights
+	class W41_LAAT_MK1;
+	class W41_LAAT_MK2;
 	
 	// LAAT Gunship
 	// Base
 	class BNA_KC_Standard_laati: lsd_heli_laati
 	{
 		armor = 200;
-		displayName = "[KC] Standard LAAT Gunship w/ Pylons";
+		displayName = "[KC] [LS] Standard LAAT Gunship w/ Pylons";
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_LAATS";
 		crew = "BNA_KC_Unit_Pilot";
@@ -1020,7 +1046,7 @@ class CfgVehicles
 	class BNA_KC_Standard_laati_transport: lsd_heli_laati_transport
 	{
 		armor = 200;
-		displayName = "[KC] Standard LAAT Transport";
+		displayName = "[KC] [LS] Standard LAAT Transport";
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_LAATS";
 		crew = "BNA_KC_Unit_Pilot";
@@ -1038,12 +1064,93 @@ class CfgVehicles
 		};
 		textureList[] = {};
 	};
+
+	// 3AS LAATs
+	class BNA_KC_laati_mk1_3AS: W41_LAAT_MK1
+	{
+		displayName = "[KC] [3AS] Standard LAAT MK1 Transport";
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_LAATS";
+
+		armor = 200;
+		crew = "BNA_KC_Unit_Pilot";
+
+		// Default 3AS Texttures
+		hiddenSelectionsTextures[]=
+		{
+			"3AS\3as_Laat\LAATI\data\Hull_CO.paa",
+			"3AS\3as_Laat\LAATI\data\Wings_CO.paa",
+			"3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+			"3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+			"3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+		};
+
+		magazines[]=
+		{
+			"Laserbatteries",
+			"Laser_Battery",
+			"Laser_Battery",
+			"Laser_Battery",
+			"ls_mag_300rnd_CMFlareChaff_blue",
+			"ls_mag_300rnd_CMFlareChaff_blue",
+			"ls_mag_300rnd_CMFlareChaff_blue",
+			"SmokeLauncherMag",
+			"W41_A2A_missile_magazine",
+			"W41_A2A_missile_magazine",
+			"NCA_oro_AGM_missile_magazine",
+			"NCA_oro_AGM_missile_magazine"
+		};
+
+		tas_can_impulse = 0; // Disables 3AS's Impulse System
+		ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
+		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+	};
+
+	class BNA_KC_laati_mk2_3AS: W41_LAAT_MK2
+	{
+		displayName = "[KC] [3AS] Standard LAAT MK2 Transport";
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_LAATS";
+
+		armor = 200;
+		crew = "BNA_KC_Unit_Pilot";
+		
+		// Default 3AS Texttures
+		hiddenSelectionsTextures[]=
+		{
+			"3AS\3as_Laat\LAATI\data\Hull_CO.paa",
+			"3AS\3as_Laat\LAATI\data\Wings_CO.paa",
+			"3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+			"3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+			"3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+		};
+
+		magazines[]=
+		{
+			"Laserbatteries",
+			"Laser_Battery",
+			"Laser_Battery",
+			"Laser_Battery",
+			"ls_mag_300rnd_CMFlareChaff_blue",
+			"ls_mag_300rnd_CMFlareChaff_blue",
+			"ls_mag_300rnd_CMFlareChaff_blue",
+			"SmokeLauncherMag",
+			"W41_A2A_missile_magazine",
+			"W41_A2A_missile_magazine",
+			"NCA_oro_AGM_missile_magazine",
+			"NCA_oro_AGM_missile_magazine"
+		};
+
+		tas_can_impulse = 0; // Disables 3AS's Impulse System
+		ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
+		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+	};
 	
 	// LAAT C
 	// Base
 	class BNA_KC_Standard_laatc: lsd_heli_laatc
 	{
-		displayName = "[KC] Standard LAAT/C";
+		displayName = "[KC] [LS] Standard LAAT/C";
 		faction="BNA_KCFac";
 		editorSubcategory="BNA_KCSub_LAATS";
 		crew = "BNA_KC_Unit_Pilot";
