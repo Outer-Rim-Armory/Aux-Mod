@@ -1,8 +1,6 @@
 #include "cfgPatches.hpp"
 
 
-
-
 class CfgAmmo
 {
 	class Sh_120mm_APFSDS_Tracer_Red;
@@ -38,6 +36,8 @@ class CfgAmmo
 	
 	
 };
+
+
 class CfgMagazines
 {
 	class 20Rnd_120mm_APFSDS_shells_Tracer_Red;
@@ -80,6 +80,8 @@ class CfgMagazines
 	
 	
 };
+
+
 class CfgWeapons
 {
 	class CannonCore;
@@ -444,6 +446,7 @@ class CfgWeapons
 	};
 };
 
+
 class CfgSoundShaders
 {
 	
@@ -723,6 +726,7 @@ class CfgSoundShaders
 
 };
 
+
 class CfgSoundSets
 {
 	class MBT_01_Engine_RPM0_EXT_SoundSet;
@@ -952,6 +956,7 @@ class CfgSoundSets
 		};
 	};
 };
+
 
 class CfgVehicles
 {
