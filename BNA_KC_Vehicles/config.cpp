@@ -660,7 +660,7 @@ class CfgSoundShaders
 	class APC_Wheeled_01_Engine_RPM4_EXT_SoundShader;
 	class APC_Wheeled_01_Engine_RPM5_EXT_SoundShader;
 	
-	class BNA_KC_Engine_RPM0_EXT_SoundShader: APC_Wheeled_01_Engine_RPM0_EXT_SoundShader
+	class BNA_KC_APC_Engine_RPM0_EXT_SoundShader: APC_Wheeled_01_Engine_RPM0_EXT_SoundShader
 	{
 		samples[]=
 		{
@@ -670,7 +670,7 @@ class CfgSoundShaders
 			}
 		};
 	};
-	class BNA_KC_Engine_RPM1_EXT_SoundShader: APC_Wheeled_01_Engine_RPM1_EXT_SoundShader
+	class BNA_KC_APC_Engine_RPM1_EXT_SoundShader: APC_Wheeled_01_Engine_RPM1_EXT_SoundShader
 	{
 		samples[]=
 		{
@@ -680,7 +680,7 @@ class CfgSoundShaders
 			}
 		};
 	};
-	class BNA_KC_Engine_RPM2_EXT_SoundShader: APC_Wheeled_01_Engine_RPM2_EXT_SoundShader
+	class BNA_KC_APC_Engine_RPM2_EXT_SoundShader: APC_Wheeled_01_Engine_RPM2_EXT_SoundShader
 	{
 		samples[]=
 		{
@@ -690,7 +690,7 @@ class CfgSoundShaders
 			}
 		};
 	};
-	class BNA_KC_Engine_RPM3_EXT_SoundShader: APC_Wheeled_01_Engine_RPM3_EXT_SoundShader
+	class BNA_KC_APC_Engine_RPM3_EXT_SoundShader: APC_Wheeled_01_Engine_RPM3_EXT_SoundShader
 	{
 		samples[]=
 		{
@@ -700,7 +700,7 @@ class CfgSoundShaders
 			}
 		};
 	};
-	class BNA_KC_Engine_RPM4_EXT_SoundShader: APC_Wheeled_01_Engine_RPM4_EXT_SoundShader
+	class BNA_KC_APC_Engine_RPM4_EXT_SoundShader: APC_Wheeled_01_Engine_RPM4_EXT_SoundShader
 	{
 		samples[]=
 		{
@@ -710,7 +710,7 @@ class CfgSoundShaders
 			}
 		};
 	};
-	class BNA_KC_Engine_RPM5_EXT_SoundShader: APC_Wheeled_01_Engine_RPM5_EXT_SoundShader
+	class BNA_KC_APC_Engine_RPM5_EXT_SoundShader: APC_Wheeled_01_Engine_RPM5_EXT_SoundShader
 	{
 		samples[]=
 		{
@@ -913,42 +913,42 @@ class CfgSoundSets
 	{
 		soundShaders[]=
 		{
-			"BNA_KC_Engine_RPM0_EXT_SoundShader"
+			"BNA_KC_APC_Engine_RPM0_EXT_SoundShader"
 		};
 	};
 	class BNA_KC_APC_Engine_RPM1_EXT_SoundSet: APC_Wheeled_01_Engine_RPM1_EXT_SoundSet
 	{
 		soundShaders[]=
 		{
-			"BNA_KC_Engine_RPM1_EXT_SoundShader"
+			"BNA_KC_APC_Engine_RPM1_EXT_SoundShader"
 		};
 	};
 	class BNA_KC_APC_Engine_RPM2_EXT_SoundSet: APC_Wheeled_01_Engine_RPM2_EXT_SoundSet
 	{
 		soundShaders[]=
 		{
-			"BNA_KC_Engine_RPM2_EXT_SoundShader"
+			"BNA_KC_APC_Engine_RPM2_EXT_SoundShader"
 		};
 	};
 	class BNA_KC_APC_Engine_RPM3_EXT_SoundSet: APC_Wheeled_01_Engine_RPM3_EXT_SoundSet
 	{
 		soundShaders[]=
 		{
-			"BNA_KC_Engine_RPM3_EXT_SoundShader"
+			"BNA_KC_APC_Engine_RPM3_EXT_SoundShader"
 		};
 	};
 	class BNA_KC_APC_Engine_RPM4_EXT_SoundSet: APC_Wheeled_01_Engine_RPM4_EXT_SoundSet
 	{
 		soundShaders[]=
 		{
-			"BNA_KC_Engine_RPM4_EXT_SoundShader"
+			"BNA_KC_APC_Engine_RPM4_EXT_SoundShader"
 		};
 	};
 	class BNA_KC_APC_Engine_RPM5_EXT_SoundSet: APC_Wheeled_01_Engine_RPM5_EXT_SoundSet
 	{
 		soundShaders[]=
 		{
-			"BNA_KC_Engine_RPM5_EXT_SoundShader"
+			"BNA_KC_APC_Engine_RPM5_EXT_SoundShader"
 		};
 	};
 };
