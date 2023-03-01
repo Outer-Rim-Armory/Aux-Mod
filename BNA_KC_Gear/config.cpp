@@ -1156,6 +1156,7 @@ class CfgWeapons
 	};
 
 	#include "custom_items.hpp"
+	#include "firearms.hpp"
 };
 
 class CfgVehicles
