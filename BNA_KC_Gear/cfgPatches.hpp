@@ -16,7 +16,8 @@ class CfgPatches
 			"ls_armor_bluefor",
 			"lsd_units_bluefor",
 			"SWLB_clones",
-			"SWLB_equipment_backpacks"
+			"SWLB_equipment_backpacks",
+			"3AS_Weapons_WestarM5"
 		};
 		units[] =
 		{
@@ -261,7 +262,10 @@ class CfgPatches
 			"BNA_KC_NVG",
 			"BNA_KC_NVG_Commander",
 			"BNA_KC_NVG_Keeli",
-			"BNA_KC_NVG_Keeli_Rangefinder"
+			"BNA_KC_NVG_Keeli_Rangefinder",
+			
+			// FireArms
+			"BNA_KC_Westar_M5_Base"
 		};
 	};
 };
