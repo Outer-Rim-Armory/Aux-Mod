@@ -992,8 +992,8 @@ class CfgVehicles
 	// class 3as_LAAT_Mk1Lights; // Open Doors, Lights
 	// class 3as_LAAT_Mk2;       // Closed Doors
 	// class 3as_LAAT_Mk2Lights; // Closed Doors, Lights
-	class W41_LAAT_MK1;
-	class W41_LAAT_MK2;
+	// class W41_LAAT_MK1;
+	// class W41_LAAT_MK2;
 	
 	// LAAT Gunship
 	// Base
@@ -1066,6 +1066,7 @@ class CfgVehicles
 	};
 
 	// 3AS LAATs
+	/*
 	class BNA_KC_laati_mk1_3AS: W41_LAAT_MK1
 	{
 		displayName = "[KC] [3AS] Standard LAAT MK1 Transport";
@@ -1145,6 +1146,7 @@ class CfgVehicles
 		ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
 		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
 	};
+	*/
 	
 	// LAAT C
 	// Base

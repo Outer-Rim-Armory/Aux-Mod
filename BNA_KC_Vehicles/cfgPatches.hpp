@@ -11,7 +11,7 @@ class CfgPatches
 			"A3_Sounds_F",
 			"3AS_VehicleWeapons",
 			// "3AS_LAAT",
-			"W41_Aux_LAAT",
+			// "W41_Aux_LAAT",
 			"A3_Armor_F_Beta_APC_Wheeled_01",
 			"A3_Armor_F_EPC_MBT_01"
 		};
@@ -20,9 +20,9 @@ class CfgPatches
 			"BNA_KC_Standard_laati",
 			"BNA_KC_Standard_laati_transport",
 			"BNA_KC_Standard_laatc",
-			"BNA_KC_laati_mk1_3AS",
+			// "BNA_KC_laati_mk1_3AS",
 			// "BNA_KC_laati_mk1_lights_3AS",
-			"BNA_KC_laati_mk2_3AS",
+			// "BNA_KC_laati_mk2_3AS",
 			// "BNA_KC_laati_mk2_lights_3AS",
 			"BNA_KC_MBT_Slammer",
 			"BNA_KC_APC_Badger"
