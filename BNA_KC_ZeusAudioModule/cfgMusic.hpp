@@ -615,7 +615,7 @@ class CfgMusic
         {
         name = "[SW] Im So Sorry (Hopeless)";
         sound[] = {"BNA_KC_ZeusAudioModule\Audio\Im_so_Sorry.ogg",db+0,1};
-        duration = 273;
+        duration = 135;
         musicClass = "BNA_KC_SWMusic"; // Music category
         }; 
 };
