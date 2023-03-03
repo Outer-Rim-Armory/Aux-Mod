@@ -11,6 +11,7 @@ class CfgPatches
 			"A3_Sounds_F",
 			"3AS_VehicleWeapons",
 			"3AS_SaberTank",
+			"3as_ATTE_base",
 			// "3AS_LAAT",
 			// "W41_Aux_LAAT",
 			"A3_Armor_F_Beta_APC_Wheeled_01",
@@ -30,6 +31,7 @@ class CfgPatches
 			"BNA_KC_MBT_Slammer",
 			"BNA_KC_APC_Badger",
 			"BNA_KC_Saber_M1",
+			"BNA_KC_ATTE",
 
 			"BNA_KC_Venator"
 		};

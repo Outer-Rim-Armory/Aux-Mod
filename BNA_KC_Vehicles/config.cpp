@@ -995,6 +995,7 @@ class CfgVehicles
 	// class W41_LAAT_MK1;
 	// class W41_LAAT_MK2;
 	class 3as_saber_m1;
+	class 3as_ATTE_base;
 
 	class venator_zeus;
 	
@@ -1648,6 +1649,26 @@ class CfgVehicles
 		{
 			"BNA_KC_Vehicles\Data\Textures\Saber\BNA_KC_Saber_Body.paa",
 			"BNA_KC_Vehicles\Data\Textures\Saber\BNA_KC_Saber_Weapons.paa"
+		};
+	};
+
+
+
+	class BNA_KC_ATTE: 3as_ATTE_base
+	{
+		author = "DartRuffian";
+		displayName = "[KC] AT-TE";
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_GVics";
+		crew = "BNA_KC_Unit_Reeker";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Vehicles\Data\Textures\ATTE\BNA_KC_ATTE_Body.paa",
+			"3as\3as_atte\data\atte_chasis_co.paa",
+			"BNA_KC_Vehicles\Data\Textures\ATTE\BNA_KC_ATTE_Cockpit.paa",
+			"BNA_KC_Vehicles\Data\Textures\ATTE\BNA_KC_ATTE_Turrets.paa",
+			"3as\3as_atte\data\atte_underpiping_co.paa",
+			"3as\3as_atte\data\atte_middleleg_co.paa"
 		};
 	};
 };
