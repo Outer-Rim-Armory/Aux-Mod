@@ -994,6 +994,7 @@ class CfgVehicles
 	// class 3as_LAAT_Mk2Lights; // Closed Doors, Lights
 	// class W41_LAAT_MK1;
 	// class W41_LAAT_MK2;
+	class 3AS_Republic_Transport_01;
 	class 3as_saber_m1;
 	class 3as_ATTE_base;
 	class 3AS_ATRT;
@@ -1170,6 +1171,22 @@ class CfgVehicles
 			"BNA_KC_Vehicles\Data\Textures\LAATC\BNA_KC_LAATC_Wings.paa"
 		};
 		textureList[] = {};
+	};
+
+	// Republic Transport
+	class BNA_KC_RepubTransport: 3AS_Republic_Transport_01
+	{
+		author = "DartRuffian";
+		displayName = "[KC] Republic Transport";
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_OVics";
+		crew = "BNA_KC_Unit_Pilot";
+
+		hiddenselectionstextures[]=
+		{
+			"BNA_KC_Vehicles\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
+			"3as\3as_starships\data\hs_int_co.paa"
+		};
 	};
 
 	// Venator

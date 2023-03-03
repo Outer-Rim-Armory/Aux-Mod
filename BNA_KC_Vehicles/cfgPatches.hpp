@@ -13,6 +13,7 @@ class CfgPatches
 			"3AS_SaberTank",
 			"3AS_ATTE",
 			"3AS_ATRT",
+			"3as_Starships",
 			// "3AS_LAAT",
 			// "W41_Aux_LAAT",
 			"A3_Armor_F_Beta_APC_Wheeled_01",
@@ -29,6 +30,7 @@ class CfgPatches
 			// "BNA_KC_laati_mk1_lights_3AS",
 			// "BNA_KC_laati_mk2_3AS",
 			// "BNA_KC_laati_mk2_lights_3AS",
+			"BNA_KC_RepubTransport",
 			"BNA_KC_MBT_Slammer",
 			"BNA_KC_APC_Badger",
 			"BNA_KC_Saber_M1",
@@ -63,6 +65,16 @@ class CfgPatches
 
 class CfgEditorSubcategories
 {
+	// Misc Vehicles
+	class BNA_KCSub_OVics // O = "Other"
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Other Vehicles";
+	};
+
 	// Objects
 	class BNA_KCSub_Ships
 	{
