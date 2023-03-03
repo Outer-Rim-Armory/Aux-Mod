@@ -994,6 +994,7 @@ class CfgVehicles
 	// class 3as_LAAT_Mk2Lights; // Closed Doors, Lights
 	// class W41_LAAT_MK1;
 	// class W41_LAAT_MK2;
+	class 3as_saber_m1;
 
 	class venator_zeus;
 	
@@ -1631,6 +1632,22 @@ class CfgVehicles
 				"APC_Wheeled_01_Tires_Brake_Hard_EXT_SoundSet",
 				"APC_Wheeled_01_Tires_Brake_Soft_EXT_SoundSet"
 			};
+		};
+	};
+
+	
+
+	class BNA_KC_Saber_M1: 3as_saber_m1
+	{
+		author = "DartRuffian";
+		displayName = "[KC] TX-130 Saber Tank";
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_GVics";
+		crew = "BNA_KC_Unit_Reeker";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Vehicles\Data\Textures\Saber\BNA_KC_Saber_Body.paa",
+			"BNA_KC_Vehicles\Data\Textures\Saber\BNA_KC_Saber_Weapons.paa"
 		};
 	};
 };
