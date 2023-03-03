@@ -1076,11 +1076,11 @@ class CfgVehicles
 		armor = 200;
 		crew = "BNA_KC_Unit_Pilot";
 
-		// Default 3AS Texttures
+		// Default 3AS Textures
 		hiddenSelectionsTextures[]=
 		{
-			"3AS\3as_Laat\LAATI\data\Hull_CO.paa",
-			"3AS\3as_Laat\LAATI\data\Wings_CO.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_3AS_LAAT_Standard_Body.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_3AS_LAAT_Standard_Wings.paa",
 			"3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
 			"3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
 			"3AS\3as_Laat\LAATI\data\Interior_CO.paa"
@@ -1116,11 +1116,11 @@ class CfgVehicles
 		armor = 200;
 		crew = "BNA_KC_Unit_Pilot";
 		
-		// Default 3AS Texttures
+		// Default 3AS Textures
 		hiddenSelectionsTextures[]=
 		{
-			"3AS\3as_Laat\LAATI\data\Hull_CO.paa",
-			"3AS\3as_Laat\LAATI\data\Wings_CO.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_3AS_LAAT_Standard_Body.paa",
+			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_3AS_LAAT_Standard_Wings.paa",
 			"3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
 			"3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
 			"3AS\3as_Laat\LAATI\data\Interior_CO.paa"
