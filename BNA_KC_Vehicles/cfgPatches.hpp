@@ -13,7 +13,9 @@ class CfgPatches
 			// "3AS_LAAT",
 			// "W41_Aux_LAAT",
 			"A3_Armor_F_Beta_APC_Wheeled_01",
-			"A3_Armor_F_EPC_MBT_01"
+			"A3_Armor_F_EPC_MBT_01",
+
+			"ls_venator"
 		};
 		units[] =
 		{
@@ -25,7 +27,9 @@ class CfgPatches
 			// "BNA_KC_laati_mk2_3AS",
 			// "BNA_KC_laati_mk2_lights_3AS",
 			"BNA_KC_MBT_Slammer",
-			"BNA_KC_APC_Badger"
+			"BNA_KC_APC_Badger",
+
+			"BNA_KC_Venator"
 		};
 		weapons[] =
 		{
@@ -48,5 +52,19 @@ class CfgPatches
 			"BNA_KC_120_HE_Mag",
 			"BNA_KC_100rnd_Coax_Mag"
 		};
+	};
+};
+
+
+class CfgEditorSubcategories
+{
+	// Objects
+	class BNA_KCSub_Ships
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Static Ships";
 	};
 };
