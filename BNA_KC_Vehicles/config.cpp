@@ -996,6 +996,7 @@ class CfgVehicles
 	// class W41_LAAT_MK2;
 	class 3as_saber_m1;
 	class 3as_ATTE_base;
+	class 3AS_ATRT;
 
 	class venator_zeus;
 	
@@ -1670,5 +1671,22 @@ class CfgVehicles
 			"3as\3as_atte\data\atte_underpiping_co.paa",
 			"3as\3as_atte\data\atte_middleleg_co.paa"
 		};
+	};
+
+
+
+	class BNA_KC_ATRT: 3AS_ATRT
+	{
+		author = "DartRuffian";
+		displayName = "[KC] AT-RT";
+		faction = "BNA_KCFac";
+		editorSubcategory = "BNA_KCSub_GVics";
+		crew = "BNA_KC_Unit_ARF";
+
+		// Textures are not set-up on the 3AS end yet.
+		// hiddenSelectionsTextures[] =
+		// {
+		// 	"BNA_KC_Vehicles\Data\Textures\ATRT\ATRT_KC_CO.paa"
+		// };
 	};
 };
