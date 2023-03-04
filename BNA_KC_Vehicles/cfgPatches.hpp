@@ -15,7 +15,7 @@ class CfgPatches
 			"3AS_ATRT",
 			"3as_Starships",
 			// "3AS_LAAT",
-			"W41_Vehicle_Core",
+			"W41_Aux_LAAT",
 			"A3_Armor_F_Beta_APC_Wheeled_01",
 			"A3_Armor_F_EPC_MBT_01",
 
