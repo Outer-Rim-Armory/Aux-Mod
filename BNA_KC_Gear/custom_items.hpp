@@ -76,6 +76,7 @@ class BNA_KC_P1Helmet_Joe: BNA_KC_P1Helmet_CT
 		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
+// Joe Red Visor
 class BNA_KC_P1Helmet_Joe_Red: BNA_KC_P1Helmet_Joe
 {
 	scope = 1;
@@ -370,7 +371,6 @@ class BNA_KC_P2Helmet_Joe: BNA_KC_P2Helmet_Trooper
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
-
 class BNA_KC_P2Helmet_Joe_Red: BNA_KC_P2Helmet_Joe
 {
 	scope = 1;
@@ -507,6 +507,7 @@ class BNA_KC_P2Helmet_Grey: BNA_KC_P2Helmet_Trooper
 	};
 };
 
+// Woods
 class BNA_KC_P2Helmet_Woods: BNA_KC_P2Helmet_Trooper
 {
 	author = "DartRuffian";
@@ -518,6 +519,7 @@ class BNA_KC_P2Helmet_Woods: BNA_KC_P2Helmet_Trooper
 	};
 };
 
+// Jester
 class BNA_KC_P2Helmet_Jester: BNA_KC_P2Helmet_Trooper
 {
 	author = "DartRuffian";
