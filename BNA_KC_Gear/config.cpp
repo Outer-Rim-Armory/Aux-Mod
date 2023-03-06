@@ -49,7 +49,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CT.paa",
-			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 		};
 	};
 
@@ -60,7 +61,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_2.paa",
-			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 		};
 	};
 
@@ -71,7 +73,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_3.paa",
-			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 		};
 	};
 
@@ -82,7 +85,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CR.paa",
-			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 		};
 	};
 
@@ -93,7 +97,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_SCT.paa",
-			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 		};
 	};
 
@@ -104,7 +109,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_VCT.paa",
-			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 		};
 	};
 
@@ -115,7 +121,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_LCPL.paa",
-			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 		};
 	};
 
@@ -126,7 +133,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\BNA_KC_Helmet_P1_CPL.paa",
-			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+			"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+			"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 		};
 	};
 

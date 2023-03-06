@@ -13,7 +13,8 @@ class BNA_KC_P1Helmet_Keeli: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Keeli.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 // Keeli Red Visor
@@ -31,7 +32,8 @@ class BNA_KC_P1Helmet_Keeli_Red: BNA_KC_P1Helmet_Keeli
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Keeli.paa",
-		"BNA_KC_Gear\Data\Textures\Visors\BNA_KC_Visor_Red.paa"
+		"BNA_KC_Gear\Data\Textures\Visors\BNA_KC_Visor_Red.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -42,7 +44,8 @@ class BNA_KC_P1Helmet_Burnt: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Burnt.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -53,7 +56,8 @@ class BNA_KC_P1Helmet_Dexus: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Dexus.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -68,7 +72,8 @@ class BNA_KC_P1Helmet_Joe: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Joe.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 class BNA_KC_P1Helmet_Joe_Red: BNA_KC_P1Helmet_Joe
@@ -85,7 +90,8 @@ class BNA_KC_P1Helmet_Joe_Red: BNA_KC_P1Helmet_Joe
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Joe.paa",
-		"BNA_KC_Gear\Data\Textures\Visors\BNA_KC_Visor_Red.paa"
+		"BNA_KC_Gear\Data\Textures\Visors\BNA_KC_Visor_Red.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -96,7 +102,8 @@ class BNA_KC_P1Helmet_Axel: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Axel.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -107,7 +114,8 @@ class BNA_KC_P1Helmet_Hazard: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Hazard.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -118,7 +126,8 @@ class BNA_KC_P1Helmet_Drake: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Drake.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -129,7 +138,8 @@ class BNA_KC_P1Helmet_Splashdown: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Splashdown.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -140,7 +150,8 @@ class BNA_KC_P1Helmet_Sin: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Sin.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -151,7 +162,8 @@ class BNA_KC_P1Helmet_Anvil: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Anvil.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -162,7 +174,8 @@ class BNA_KC_P1Helmet_Ox: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Ox.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -173,7 +186,8 @@ class BNA_KC_P1Helmet_Patriot: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Patriot.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -184,7 +198,8 @@ class BNA_KC_P1Helmet_Vortex: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Vortex.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -195,7 +210,8 @@ class BNA_KC_P1Helmet_Dogo: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Dogo.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -206,7 +222,8 @@ class BNA_KC_P1Helmet_Grey: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Grey.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -217,7 +234,8 @@ class BNA_KC_P1Helmet_Defter: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Defter.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -228,7 +246,8 @@ class BNA_KC_P1Helmet_Woods: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Woods.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
@@ -239,7 +258,8 @@ class BNA_KC_P1Helmet_Jester: BNA_KC_P1Helmet_CT
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Jester.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
 
