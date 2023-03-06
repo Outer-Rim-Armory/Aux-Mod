@@ -233,9 +233,11 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Jester",
 
 			// P1 Pilots
+			"BNA_KC_PilotHelmet_P1_Blue",
 
 			// P2 Pilots
 			"BNA_KC_PilotHelmet_Splashdown",
+			"BNA_KC_PilotHelmet_Blue",
 
 			// Snow
 			"BNA_KC_P2Helmet_Snow_Keeli",

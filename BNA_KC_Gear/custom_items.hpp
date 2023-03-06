@@ -545,10 +545,32 @@ class BNA_KC_PilotHelmet_Splashdown: BNA_KC_PilotHelmet
 	};
 };
 
+// Blue
+class BNA_KC_PilotHelmet_Blue: BNA_KC_PilotHelmet
+{
+	displayName = "[KC] AVI Helm ('Blue')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P2\Customs\BNA_KC_Helmet_Pilot_Blue.paa",
+		"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+	};
+};
+
 //---------------------------------------------------
 // Phase 1 Pilot Helmet Customs
 //---------------------------------------------------
 
+// Blue
+class BNA_KC_PilotHelmet_P1_Blue: BNA_KC_PilotHelmet_P1
+{
+	displayName = "[KC] AVI P1 Helm ('Blue')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Pilot P1\Customs\BNA_KC_Helmet_Pilot_P1_Blue.paa",
+		"ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
+	};
+};
 
 //---------------------------------------------------
 // Engineer Helmet Customs
