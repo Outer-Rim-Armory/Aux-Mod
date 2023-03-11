@@ -157,6 +157,14 @@ class BNA_KC_Unit_INF_CS: BNA_KC_Unit_Trooper
 	// 	 +3 smokes of any color to their kit
 	// 	 +1 Thermal detonator
 	//   +2 Primary and Secondary magazines"
+
+	uniformClass = "BNA_KC_Uniform_CS";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_CS_Upper.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_CS_Lower.paa",
+		"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+	};
 	
 	linkedItems[] =
 	{
@@ -176,6 +184,14 @@ class BNA_KC_Unit_INF_CSS: BNA_KC_UNIT_INF_CS
 
 	// NCO Loadout
 
+	uniformClass = "BNA_KC_Uniform_CSS";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_CSS_Upper.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_CSS_Lower.paa",
+		"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+	};
+
 	linkedItems[] =
 	{
 		"BNA_KC_P2Helmet_CSS","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
@@ -185,13 +201,46 @@ class BNA_KC_Unit_INF_CSS: BNA_KC_UNIT_INF_CS
 		"BNA_KC_P2Helmet_CSS","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
 	};
 };
+class BNA_KC_Unit_INF_CSFC: BNA_KC_UNIT_INF_CS
+{
+	// Popular Attributes
+	editorSubcategory = "BNA_KCSub_Inf_Ranks";
+	displayName = "[KC] INF 09 - Clone Sergeant First Class";
+
+	// NCO Loadout
+
+	uniformClass = "BNA_KC_Uniform_CSFC";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_CSFC_Upper.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_CSFC_Lower.paa",
+		"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+	};
+
+	linkedItems[] =
+	{
+		"BNA_KC_P2Helmet_CSFC","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+	};
+	respawnLinkedItems[] =
+	{
+		"BNA_KC_P2Helmet_CSFC","ItemMap","SWLB_comlink","ItemCompass","tf_microdagr","lsd_gar_p2Interior_hud","SWLB_clone_recon_officer_armor"
+	};
+};
 class BNA_KC_Unit_INF_CMS: BNA_KC_UNIT_INF_CS
 {
 	// Popular Attributes
 	editorSubcategory = "BNA_KCSub_Inf_Ranks";
-	displayName = "[KC] INF 09 - Clone Master Sergeant";
+	displayName = "[KC] INF 10 - Clone Master Sergeant";
 
 	// NCO Loadout
+
+	uniformClass = "BNA_KC_Uniform_CMS";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_CMS_Upper.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_CMS_Lower.paa",
+		"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+	};
 
 	linkedItems[] =
 	{
@@ -206,9 +255,17 @@ class BNA_KC_Unit_INF_CSM: BNA_KC_UNIT_INF_CS
 {
 	// Popular Attributes
 	editorSubcategory = "BNA_KCSub_Inf_Ranks";
-	displayName = "[KC] INF 10 - Clone Sergeant Major";
+	displayName = "[KC] INF 11 - Clone Sergeant Major";
 
 	// NCO Loadout
+
+	uniformClass = "BNA_KC_Uniform_CSM";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_CSM_Upper.paa",
+		"BNA_KC_Gear\Data\Textures\Uniforms\BNA_KC_Uniform_CSM_Lower.paa",
+		"ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+	};
 
 	linkedItems[] =
 	{
@@ -223,7 +280,7 @@ class BNA_KC_Unit_INF_LT: BNA_KC_UNIT_INF_CS
 {
 	// Popular Attributes
 	editorSubcategory = "BNA_KCSub_Inf_Ranks";
-	displayName = "[KC] INF 11 - Clone Lieutenant";
+	displayName = "[KC] INF 12 - Clone Lieutenant";
 
 	// NCO Loadout
 
@@ -240,7 +297,7 @@ class BNA_KC_Unit_INF_1LT: BNA_KC_UNIT_INF_CS
 {
 	// Popular Attributes
 	editorSubcategory = "BNA_KCSub_Inf_Ranks";
-	displayName = "[KC] INF 12 - Clone First Lieutenant";
+	displayName = "[KC] INF 13 - Clone First Lieutenant";
 
 	// NCO Loadout
 
@@ -257,7 +314,7 @@ class BNA_KC_Unit_INF_CPT: BNA_KC_UNIT_INF_CS
 {
 	// Popular Attributes
 	editorSubcategory = "BNA_KCSub_Inf_Ranks";
-	displayName = "[KC] INF 13 - Clone Captain";
+	displayName = "[KC] INF 14 - Clone Captain";
 
 	// NCO Loadout
 
@@ -274,7 +331,7 @@ class BNA_KC_Unit_INF_MAJ: BNA_KC_UNIT_INF_CS
 {
 	// Popular Attributes
 	editorSubcategory = "BNA_KCSub_Inf_Ranks";
-	displayName = "[KC] INF 14 - Clone Major";
+	displayName = "[KC] INF 15 - Clone Major";
 
 	// NCO Loadout
 
@@ -291,7 +348,7 @@ class BNA_KC_Unit_INF_CMD: BNA_KC_UNIT_INF_CS
 {
 	// Popular Attributes
 	editorSubcategory = "BNA_KCSub_Inf_Ranks";
-	displayName = "[KC] INF 15 - Clone Comander";
+	displayName = "[KC] INF 16 - Clone Comander";
 
 	// NCO Loadout
 

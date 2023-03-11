@@ -326,10 +326,21 @@ class CfgWeapons
 		};
 	};
 
+	// CSFC Helmet
+	class BNA_KC_P2Helmet_CSFC: BNA_KC_P2Helmet_Trooper
+	{
+		displayName = "[KC] INF Helm 09 (Sergeant First Class)";
+		hiddenSelectionsTextures[] =
+		{
+			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CSFC.paa",
+			"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+		};
+	};
+
 	// CMS Helmet
 	class BNA_KC_P2Helmet_CMS: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] INF Helm 09 (Master Sergeant)";
+		displayName = "[KC] INF Helm 10 (Master Sergeant)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CMS.paa",
@@ -340,7 +351,7 @@ class CfgWeapons
 	// CSM Helmet
 	class BNA_KC_P2Helmet_CSM: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] INF Helm 10 (Sergeant Major)";
+		displayName = "[KC] INF Helm 11 (Sergeant Major)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_CSM.paa",
@@ -351,7 +362,7 @@ class CfgWeapons
 	// Officer
 	class BNA_KC_P2Helmet_Officer: BNA_KC_P2Helmet_Trooper
 	{
-		displayName = "[KC] INF Helm 11 (Officer)";
+		displayName = "[KC] INF Helm 12+ (Officer)";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\BNA_KC_Helmet_P2_Officer.paa",
@@ -686,76 +697,94 @@ class CfgWeapons
 	};
 
 	// CS Uniform
-	// class BNA_KC_Uniform_CS: BNA_KC_Uniform_Trooper
-	// {
-	// 	dlc = "BNA_KC";
-	// 	author = "DartRuffian";
-	// 	scope = 2;
+	class BNA_KC_Uniform_CS: BNA_KC_Uniform_Trooper
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
 
-	// 	displayName = "[KC] INF Armor 07 (Sergeant)";
-	// 	class ItemInfo: UniformItem
-	// 	{
-	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_INF_CS";
-	// 		containerClass = "Supply150";
-	// 		mass = 40;
-	// 		uniformType = "Neopren";
-	// 	};
-	// };
+		displayName = "[KC] INF Armor 07 (Sergeant)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_INF_CS";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 
 	// CSS Uniform
-	// class BNA_KC_Uniform_CSS: BNA_KC_Uniform_Trooper
-	// {
-	// 	dlc = "BNA_KC";
-	// 	author = "DartRuffian";
-	// 	scope = 2;
+	class BNA_KC_Uniform_CSS: BNA_KC_Uniform_Trooper
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
 
-	// 	displayName = "[KC] INF Armor 08 (Staff Sergeant)";
-	// 	class ItemInfo: UniformItem
-	// 	{
-	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_INF_CSS";
-	// 		containerClass = "Supply150";
-	// 		mass = 40;
-	// 		uniformType = "Neopren";
-	// 	};
-	// };
+		displayName = "[KC] INF Armor 08 (Staff Sergeant)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_INF_CSS";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
+
+	// CSFC Uniform
+	class BNA_KC_Uniform_CSFC: BNA_KC_Uniform_Trooper
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+
+		displayName = "[KC] INF Armor 09 (Sergeant First Class)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_INF_CMS";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 
 	// CMS Uniform
-	// class BNA_KC_Uniform_CMS: BNA_KC_Uniform_Trooper
-	// {
-	// 	dlc = "BNA_KC";
-	// 	author = "DartRuffian";
-	// 	scope = 2;
+	class BNA_KC_Uniform_CMS: BNA_KC_Uniform_Trooper
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
 
-	// 	displayName = "[KC] INF Armor 09 (Master Sergeant)";
-	// 	class ItemInfo: UniformItem
-	// 	{
-	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_INF_CMS";
-	// 		containerClass = "Supply150";
-	// 		mass = 40;
-	// 		uniformType = "Neopren";
-	// 	};
-	// };
+		displayName = "[KC] INF Armor 10 (Master Sergeant)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_INF_CMS";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 
 	// CSM Uniform
-	// class BNA_KC_Uniform_CSM: BNA_KC_Uniform_Trooper
-	// {
-	// 	dlc = "BNA_KC";
-	// 	author = "DartRuffian";
-	// 	scope = 2;
+	class BNA_KC_Uniform_CSM: BNA_KC_Uniform_Trooper
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
 
-	// 	displayName = "[KC] INF Armor 10 (Sergeant Major)";
-	// 	class ItemInfo: UniformItem
-	// 	{
-	// 		uniformModel = "-";
-	// 		uniformClass = "BNA_KC_Unit_INF_CSM";
-	// 		containerClass = "Supply150";
-	// 		mass = 40;
-	// 		uniformType = "Neopren";
-	// 	};
-	// };
+		displayName = "[KC] INF Armor 11 (Sergeant Major)";
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "BNA_KC_Unit_INF_CSM";
+			containerClass = "Supply150";
+			mass = 40;
+			uniformType = "Neopren";
+		};
+	};
 
 	// LT Uniform
 	// class BNA_KC_Uniform_LT: BNA_KC_Uniform_Trooper
@@ -764,7 +793,7 @@ class CfgWeapons
 	// 	author = "DartRuffian";
 	// 	scope = 2;
 
-	// 	displayName = "[KC] INF Armor 11 (Lieutenant)";
+	// 	displayName = "[KC] INF Armor 12 (Lieutenant)";
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
@@ -782,7 +811,7 @@ class CfgWeapons
 	// 	author = "DartRuffian";
 	// 	scope = 2;
 
-	// 	displayName = "[KC] INF Armor 12 (1st Lieutenant)";
+	// 	displayName = "[KC] INF Armor 13 (1st Lieutenant)";
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
@@ -800,7 +829,7 @@ class CfgWeapons
 	// 	author = "DartRuffian";
 	// 	scope = 2;
 
-	// 	displayName = "[KC] INF Armor 13 (Captain)";
+	// 	displayName = "[KC] INF Armor 14 (Captain)";
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
@@ -818,7 +847,7 @@ class CfgWeapons
 	// 	author = "DartRuffian";
 	// 	scope = 2;
 
-	// 	displayName = "[KC] INF Armor 14 (Major)";
+	// 	displayName = "[KC] INF Armor 15 (Major)";
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
@@ -836,7 +865,7 @@ class CfgWeapons
 	// 	author = "DartRuffian";
 	// 	scope = 2;
 
-	// 	displayName = "[KC] INF Armor 15 (Commander)";
+	// 	displayName = "[KC] INF Armor 16 (Commander)";
 	// 	class ItemInfo: UniformItem
 	// 	{
 	// 		uniformModel = "-";
