@@ -60,7 +60,7 @@ class CfgPatches
 			"BNA_KC_Unit_INF_P1_CPL",
 			"BNA_KC_Unit_INF_P1_CS",
 			"BNA_KC_Unit_INF_P1_CSS",
-			"BNA_KC_Unit_INF_P1_CSFC"
+			"BNA_KC_Unit_INF_P1_CSFC",
 			"BNA_KC_Unit_INF_P1_CMS",
 			"BNA_KC_Unit_INF_P1_CSM",
 			"BNA_KC_Unit_INF_P1_LT",
