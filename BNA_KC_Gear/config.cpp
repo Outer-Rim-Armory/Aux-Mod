@@ -743,7 +743,7 @@ class CfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformModel = "-";
-			uniformClass = "BNA_KC_Unit_INF_CMS";
+			uniformClass = "BNA_KC_Unit_INF_CSFC";
 			containerClass = "Supply150";
 			mass = 40;
 			uniformType = "Neopren";
