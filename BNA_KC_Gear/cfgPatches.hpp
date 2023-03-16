@@ -211,6 +211,7 @@ class CfgPatches
 			"BNA_KC_P1Helmet_Defter",
 			"BNA_KC_P1Helmet_Woods",
 			"BNA_KC_P1Helmet_Jester",
+			"BNA_KC_P1Helmet_Rodger",
 
 			// P2 Helmets
 			"BNA_KC_P2Helmet_Keeli",
@@ -234,6 +235,7 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Grey",
 			"BNA_KC_P2Helmet_Woods",
 			"BNA_KC_P2Helmet_Jester",
+			"BNA_KC_P2Helmet_Rodger",
 
 			// P1 Pilots
 			"BNA_KC_PilotHelmet_P1_Blue",

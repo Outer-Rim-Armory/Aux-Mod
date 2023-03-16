@@ -264,6 +264,18 @@ class BNA_KC_P1Helmet_Jester: BNA_KC_P1Helmet_CT
 	};
 };
 
+// Rodger
+class BNA_KC_P1Helmet_Rodger: BNA_KC_P1Helmet_CT
+{
+	displayName = "[KC] INF P1 Helm ('Rodger')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 1\Customs\BNA_KC_Helmet_P1_Rodger.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+	};
+};
+
 
 //---------------------------------------------------
 // Phase 2 Helmet Customs
@@ -527,6 +539,18 @@ class BNA_KC_P2Helmet_Jester: BNA_KC_P2Helmet_Trooper
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Jester.paa",
+		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+	};
+};
+
+// Rodger
+class BNA_KC_P2Helmet_Rodger: BNA_KC_P2Helmet_Trooper
+{
+	author = "DartRuffian";
+	displayName = "[KC] INF Helm ('Rodger')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\Phase 2\Customs\BNA_KC_Helmet_P2_Rodger.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 	};
 };
