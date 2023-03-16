@@ -609,6 +609,32 @@ class BNA_KC_P2Helmet_Snow_Joe: BNA_KC_P2Helmet_Snow_Trooper
 // Reeker Helmet Customs
 //---------------------------------------------------
 
+class BNA_KC_Helmet_Reeker_Grey: BNA_KC_P2_Reeker_Helmet
+{
+	author = "DartRuffian";
+	displayName = "[KC] Reeker Helm ('Grey')";
+	hiddenSelectionsTextures[] = 
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\SpecOP\Customs\BNA_KC_Helmet_Reeker_Grey.paa",
+		"ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+	};
+};
+
+//---------------------------------------------------
+// Reeker Phase 1 Helmet Customs
+//---------------------------------------------------
+
+class BNA_KC_Helmet_Reeker_P1_Grey: BNA_KC_P1_Reeker_Helmet
+{
+	author = "DartRuffian";
+	displayName = "[KC] Reeker P1 Helm ('Grey')";
+	hiddenSelectionsTextures[] = 
+	{
+		"BNA_KC_Gear\Data\Textures\Helmets\SpecOP P1\Customs\BNA_KC_Helmet_Reeker_P1_Grey.paa",
+		"ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
+	};
+};
+
 
 //---------------------------------------------------
 // ARF Helmet Customs

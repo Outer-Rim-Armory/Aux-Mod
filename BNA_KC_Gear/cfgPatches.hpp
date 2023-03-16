@@ -246,6 +246,12 @@ class CfgPatches
 			"BNA_KC_P2Helmet_Snow_Keeli",
 			"BNA_KC_P2Helmet_Snow_Joe",
 
+			// Reeker
+			"BNA_KC_Helmet_Reeker_Grey",
+
+			// Reeker P1
+			"BNA_KC_Helmet_Reeker_P1_Grey",
+
 			// ARF
 			"BNA_KC_P1_ARF_Helmet_Patriot",
 
