@@ -1009,7 +1009,7 @@ class CfgVehicles
 		displayName = "[KC] [LS] Standard LAAT Gunship w/ Pylons";
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_LAATS";
-		crew = "BNA_KC_Unit_Pilot";
+		crew = "BNA_KC_Unit_Phase2_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
 			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Body1.paa",
@@ -1055,7 +1055,7 @@ class CfgVehicles
 		displayName = "[KC] [LS] Standard LAAT Transport";
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_LAATS";
-		crew = "BNA_KC_Unit_Pilot";
+		crew = "BNA_KC_Unit_Phase2_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
 			"BNA_KC_Vehicles\Data\Textures\LAAT\Standard\BNA_KC_LAAT_Standard_Body1.paa",
@@ -1079,7 +1079,7 @@ class CfgVehicles
 		editorSubcategory = "BNA_KCSub_LAATS";
 
 		armor = 200;
-		crew = "BNA_KC_Unit_Pilot";
+		crew = "BNA_KC_Unit_Phase2_Pilot";
 
 		// Default 3AS Textures
 		hiddenSelectionsTextures[]=
@@ -1119,7 +1119,7 @@ class CfgVehicles
 		editorSubcategory = "BNA_KCSub_LAATS";
 
 		armor = 200;
-		crew = "BNA_KC_Unit_Pilot";
+		crew = "BNA_KC_Unit_Phase2_Pilot";
 		
 		// Default 3AS Textures
 		hiddenSelectionsTextures[]=
@@ -1160,7 +1160,7 @@ class CfgVehicles
 		displayName = "[KC] [LS] Standard LAAT/C";
 		faction="BNA_KCFac";
 		editorSubcategory="BNA_KCSub_LAATS";
-		crew = "BNA_KC_Unit_Pilot";
+		crew = "BNA_KC_Unit_Phase2_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
 			"BNA_KC_Vehicles\Data\Textures\LAATC\BNA_KC_LAATC_Auxiliary.paa",
@@ -1179,7 +1179,7 @@ class CfgVehicles
 		displayName = "[KC] Republic Transport";
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_OVics";
-		crew = "BNA_KC_Unit_Pilot";
+		crew = "BNA_KC_Unit_Phase2_Pilot";
 
 		hiddenselectionstextures[]=
 		{
@@ -1285,7 +1285,7 @@ class CfgVehicles
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_GVics";
 		displayName = "[KC] Blitz Assault Tank";
-		crew = "BNA_KC_Unit_Reeker";
+		crew = "BNA_KC_Unit_Phase2_Tanker";
 		hiddenSelectionsTextures[] = 
 		{
 			"BNA_KC_Vehicles\Data\Textures\Blitz\BNA_KC_Blitz_Body_CO.paa",
@@ -1524,7 +1524,7 @@ class CfgVehicles
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_GVics";
 		displayName = "[KC] Badger APC";
-		crew = "BNA_KC_Unit_Reeker";
+		crew = "BNA_KC_Unit_Phase2_Tanker";
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -1661,7 +1661,7 @@ class CfgVehicles
 		displayName = "[KC] TX-130 Saber Tank";
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_GVics";
-		crew = "BNA_KC_Unit_Reeker";
+		crew = "BNA_KC_Unit_Phase2_Tanker";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Vehicles\Data\Textures\Saber\BNA_KC_Saber_Body.paa",
@@ -1677,7 +1677,7 @@ class CfgVehicles
 		displayName = "[KC] AT-TE";
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_GVics";
-		crew = "BNA_KC_Unit_Reeker";
+		crew = "BNA_KC_Unit_Phase2_Tanker";
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Vehicles\Data\Textures\ATTE\BNA_KC_ATTE_Body.paa",
@@ -1697,7 +1697,6 @@ class CfgVehicles
 		displayName = "[KC] AT-RT";
 		faction = "BNA_KCFac";
 		editorSubcategory = "BNA_KCSub_GVics";
-		crew = "BNA_KC_Unit_ARF";
 
 		// Textures are not set-up on the 3AS end yet.
 		// hiddenSelectionsTextures[] =
