@@ -29,6 +29,15 @@ class BNA_KC_Helmet_Phase2_CT: BNA_KC_Helmet_Phase2_Base
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
+class BNA_KC_Helmet_Phase2_CT_v2: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 01 (Trooper, Version 2)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_CT_v2.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
 class BNA_KC_Helmet_Phase2_CT_Legacy: BNA_KC_Helmet_Phase2_Base
 {
     displayName = "[KC] INF Helm 01 (Trooper, Legacy)";
@@ -115,15 +124,15 @@ class BNA_KC_Helmet_Phase2_CS: BNA_KC_Helmet_Phase2_Base
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-// class BNA_KC_Helmet_Phase2_CS_Legacy: BNA_KC_Helmet_Phase2_Base
-// {
-//     displayName = "[KC] INF Helm 06 (Sergeant, Legacy)";
-//     hiddenSelectionsTextures[] =
-//     {
-//         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_CS_Legacy.paa",
-//         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-//     };
-// };
+class BNA_KC_Helmet_Phase2_CS_Legacy: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 06 (Sergeant, Legacy)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_CS_Legacy.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
 
 class BNA_KC_Helmet_Phase2_CSS: BNA_KC_Helmet_Phase2_Base
 {
@@ -131,6 +140,15 @@ class BNA_KC_Helmet_Phase2_CSS: BNA_KC_Helmet_Phase2_Base
     hiddenSelectionsTextures[] =
     {
         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_CSS.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+class BNA_KC_Helmet_Phase2_CSS_Legacy: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 07 (Staff Sergeant, Legacy)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_CSS_Legacy.paa",
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
@@ -144,6 +162,15 @@ class BNA_KC_Helmet_Phase2_CSFC: BNA_KC_Helmet_Phase2_Base
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
+class BNA_KC_Helmet_Phase2_CSFC_Legacy: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 08 (Sergeant First Class, Legacy)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_CSFC_Legacy.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
 
 class BNA_KC_Helmet_Phase2_CMS: BNA_KC_Helmet_Phase2_Base
 {
@@ -154,15 +181,15 @@ class BNA_KC_Helmet_Phase2_CMS: BNA_KC_Helmet_Phase2_Base
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-// class BNA_KC_Helmet_Phase2_CMS_Legacy: BNA_KC_Helmet_Phase2_Base
-// {
-//     displayName = "[KC] INF Helm 09 (Master Sergeant, Legacy)";
-//     hiddenSelectionsTextures[] =
-//     {
-//         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_CMS_Legacy.paa",
-//         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-//     };
-// };
+class BNA_KC_Helmet_Phase2_CMS_Legacy: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 09 (Master Sergeant, Legacy)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_CMS_Legacy.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
 
 class BNA_KC_Helmet_Phase2_CSM: BNA_KC_Helmet_Phase2_Base
 {
@@ -170,6 +197,15 @@ class BNA_KC_Helmet_Phase2_CSM: BNA_KC_Helmet_Phase2_Base
     hiddenSelectionsTextures[] =
     {
         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_CSM.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+class BNA_KC_Helmet_Phase2_CSM_Legacy: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 10 (Sergeant Major, Legacy)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_CSM_Legacy.paa",
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };

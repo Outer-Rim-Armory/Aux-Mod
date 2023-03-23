@@ -108,7 +108,7 @@ class BNA_KC_Unit_Phase2_VCT: BNA_KC_Unit_Phase2_Base
     };
 };
 
-// Start of NCO Ranks
+// Start of JNCO Ranks
 
 class BNA_KC_Unit_Phase2_LCPL: BNA_KC_Unit_Phase2_Base
 {
@@ -153,6 +153,8 @@ class BNA_KC_Unit_Phase2_CPL: BNA_KC_Unit_Phase2_Base
         "BNA_KC_Helmet_Phase2_CPL", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };
+
+// Start of NCO Ranks
 
 class BNA_KC_Unit_Phase2_CS: BNA_KC_Unit_Phase2_Base
 {

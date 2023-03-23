@@ -65,7 +65,7 @@ class BNA_KC_Unit_Phase1_VCT: BNA_KC_Unit_Phase1_Base
     };
 };
 
-// Start of NCO Ranks
+// Start of JNCO Ranks
 
 class BNA_KC_Unit_Phase1_LCPL: BNA_KC_Unit_Phase1_Base
 {
@@ -99,85 +99,87 @@ class BNA_KC_Unit_Phase1_CPL: BNA_KC_Unit_Phase1_Base
     };
 };
 
-// class BNA_KC_Unit_Phase1_CS: BNA_KC_Unit_Phase1_Base
-// {
-//     displayName = "[KC] INF 06 - Clone Sergeant";
+// Start of NCO Ranks
 
-//     uniformClass = "BNA_KC_Uniform_CS";
+class BNA_KC_Unit_Phase1_CS: BNA_KC_Unit_Phase1_Base
+{
+    displayName = "[KC] INF 06 - Clone Sergeant";
 
-//     linkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase1_CS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase1_CS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
-//     };
-// };
+    uniformClass = "BNA_KC_Uniform_CS";
 
-// class BNA_KC_Unit_Phase1_CSS: BNA_KC_Unit_Phase1_Base
-// {
-//     displayName = "[KC] INF 07 - Clone Staff Sergeant";
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase1_CS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase1_CS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
 
-//     uniformClass = "BNA_KC_Uniform_CSS";
+class BNA_KC_Unit_Phase1_CSS: BNA_KC_Unit_Phase1_Base
+{
+    displayName = "[KC] INF 07 - Clone Staff Sergeant";
 
-//     linkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase1_CSS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase1_CSS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
-//     };
-// };
+    uniformClass = "BNA_KC_Uniform_CSS";
 
-// class BNA_KC_Unit_Phase1_CSFC: BNA_KC_Unit_Phase1_Base
-// {
-//     displayName = "[KC] INF 08 - Clone Sergeant First Class";
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase1_CSS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase1_CSS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
 
-//     uniformClass = "BNA_KC_Uniform_CSFC";
+class BNA_KC_Unit_Phase1_CSFC: BNA_KC_Unit_Phase1_Base
+{
+    displayName = "[KC] INF 08 - Clone Sergeant First Class";
 
-//     linkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase1_CSFC", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase1_CSFC", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
-//     };
-// };
+    uniformClass = "BNA_KC_Uniform_CSFC";
 
-// class BNA_KC_Unit_Phase1_CMS: BNA_KC_Unit_Phase1_Base
-// {
-//     displayName = "[KC] INF 09 - Clone Master Sergeant";
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase1_CSFC", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase1_CSFC", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
 
-//     uniformClass = "BNA_KC_Uniform_CSFC";
+class BNA_KC_Unit_Phase1_CMS: BNA_KC_Unit_Phase1_Base
+{
+    displayName = "[KC] INF 09 - Clone Master Sergeant";
 
-//     linkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase1_CMS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase1_CMS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
-//     };
-// };
+    uniformClass = "BNA_KC_Uniform_CSFC";
 
-// class BNA_KC_Unit_Phase1_CSM: BNA_KC_Unit_Phase1_Base
-// {
-//     displayName = "[KC] INF 10 - Clone Sergeant Major";
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase1_CMS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase1_CMS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
 
-//     uniformClass = "BNA_KC_Uniform_CSM";
+class BNA_KC_Unit_Phase1_CSM: BNA_KC_Unit_Phase1_Base
+{
+    displayName = "[KC] INF 10 - Clone Sergeant Major";
 
-//     linkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase1_CSM", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase1_CSM", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
-//     };
-// };
+    uniformClass = "BNA_KC_Uniform_CSM";
+
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase1_CSM", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase1_CSM", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
 
 // class BNA_KC_Unit_Phase1_LT: BNA_KC_Unit_Phase1_Base
 // {
