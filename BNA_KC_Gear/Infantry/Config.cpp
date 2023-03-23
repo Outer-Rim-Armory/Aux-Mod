@@ -378,6 +378,7 @@ class CfgVehicles
         weapons[] =
         {
             "BNA_KC_DC15C_Predef",
+            "3AS_DC17S_F",
             "SWLB_clone_binocular",
             "Throw",               // Allows the unit to throw grenades
             "Put"                  // Allows the unit to place explosives
@@ -385,6 +386,7 @@ class CfgVehicles
         respawnWeapons[] =
         {
             "BNA_KC_DC15C_Predef",
+            "3AS_DC17S_F",
             "SWLB_clone_binocular",
             "Throw",
             "Put"
@@ -454,6 +456,7 @@ class CfgVehicles
         {
             "BNA_KC_Helmet_Phase1_Base", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
+        backpack = "";
     };
 
     class BNA_KC_Unit_Phase2_Base: BNA_KC_Unit_Phase1_Base
