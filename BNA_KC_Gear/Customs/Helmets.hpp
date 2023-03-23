@@ -36,6 +36,17 @@ class BNA_KC_Helmet_Phase1_Burnt: BNA_KC_Helmet_Phase1_Base
 	};
 };
 
+class BNA_KC_Helmet_Phase1_Catholic: BNA_KC_Helmet_Phase1_Base
+{
+	displayName = "[KC] INF P1 Helm ('Catholic')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 1\BNA_KC_Helmet_P1_Catholic.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+	};
+};
+
 class BNA_KC_Helmet_Phase1_Defter: BNA_KC_Helmet_Phase1_Base
 {
 	displayName = "[KC] INF P1 Helm ('Defter')";

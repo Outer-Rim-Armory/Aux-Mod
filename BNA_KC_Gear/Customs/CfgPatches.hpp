@@ -36,6 +36,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Anvil",
             "BNA_KC_Helmet_Phase1_Axel",
             "BNA_KC_Helmet_Phase1_Burnt",
+            "BNA_KC_Helmet_Phase1_Catholic",
             "BNA_KC_Helmet_Phase1_Defter",
             "BNA_KC_Helmet_Phase1_Dexus",
             "BNA_KC_Helmet_Phase1_Dogo",
