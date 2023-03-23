@@ -507,6 +507,16 @@ class BNA_KC_Helmet_Phase2_Rodger: BNA_KC_Helmet_Phase2_Base
 	};
 };
 
+class BNA_KC_Helmet_Phase2_Sin: BNA_KC_Helmet_Phase2_Base
+{
+	displayName = "[KC] INF Helm ('Sin')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Sin.paa",
+		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+	};
+};
+
 class BNA_KC_Helmet_Phase2_Splashdown: BNA_KC_Helmet_Phase2_Base
 {
 	displayName = "[KC] INF Helm ('Splashdown')";

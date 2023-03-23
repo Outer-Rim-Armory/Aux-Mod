@@ -75,6 +75,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Patriot",
             "BNA_KC_Helmet_Phase2_Ponds",
             "BNA_KC_Helmet_Phase2_Rodger",
+            "BNA_KC_Helmet_Phase2_Sin",
             "BNA_KC_Helmet_Phase2_Splashdown",
             "BNA_KC_Helmet_Phase2_Stone",
             "BNA_KC_Helmet_Phase2_Vortex",
