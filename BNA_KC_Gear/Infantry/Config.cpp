@@ -1,6 +1,7 @@
 #include "CfgPatches.hpp"
 #include "\BNA_KC_Gear\Macros.hpp" // Can ignore this error (if there is one in your IDE)
 
+
 class CfgWeapons
 {
     // ┌───────────┐
@@ -162,6 +163,7 @@ class CfgWeapons
     };
 
     #include "Uniforms.hpp"
+    #include "Legacy.hpp" // Legacy class names (to not break kits)
 
     // ┌───────────────────────┐
     // │       Vests       │
