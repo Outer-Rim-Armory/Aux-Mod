@@ -1007,8 +1007,8 @@ class CfgVehicles
 	{
 		armor = 200;
 		displayName = "[KC] [LS] Standard LAAT Gunship w/ Pylons";
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_LAATS";
+		faction = "BNA_KC_Faction";
+		editorSubcategory = "BNA_KC_Vehicles_LAATs";
 		crew = "BNA_KC_Unit_Phase2_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
@@ -1053,8 +1053,8 @@ class CfgVehicles
 	{
 		armor = 200;
 		displayName = "[KC] [LS] Standard LAAT Transport";
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_LAATS";
+		faction = "BNA_KC_Faction";
+		editorSubcategory = "BNA_KC_Vehicles_LAATs";
 		crew = "BNA_KC_Unit_Phase2_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
@@ -1075,8 +1075,8 @@ class CfgVehicles
 	class BNA_KC_laati_mk1_3AS: W41_LAAT_MK1
 	{
 		displayName = "[KC] [3AS] Standard LAAT MK1 Transport";
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_LAATS";
+		faction = "BNA_KC_Faction";
+		editorSubcategory = "BNA_KC_Vehicles_LAATs";
 
 		armor = 200;
 		crew = "BNA_KC_Unit_Phase2_Pilot";
@@ -1115,8 +1115,8 @@ class CfgVehicles
 	class BNA_KC_laati_mk2_3AS: W41_LAAT_MK2
 	{
 		displayName = "[KC] [3AS] Standard LAAT MK2 Transport";
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_LAATS";
+		faction = "BNA_KC_Faction";
+		editorSubcategory = "BNA_KC_Vehicles_LAATs";
 
 		armor = 200;
 		crew = "BNA_KC_Unit_Phase2_Pilot";
@@ -1158,8 +1158,8 @@ class CfgVehicles
 	class BNA_KC_Standard_laatc: lsd_heli_laatc
 	{
 		displayName = "[KC] [LS] Standard LAAT/C";
-		faction="BNA_KCFac";
-		editorSubcategory="BNA_KCSub_LAATS";
+		faction="BNA_KC_Faction";
+		editorSubcategory="BNA_KC_Vehicles_LAATs";
 		crew = "BNA_KC_Unit_Phase2_Pilot";
 		hiddenSelectionsTextures[] = 
 		{
@@ -1177,8 +1177,8 @@ class CfgVehicles
 	{
 		author = "DartRuffian";
 		displayName = "[KC] Republic Transport";
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_OVics";
+		faction = "BNA_KC_Faction";
+		editorSubcategory = "BNA_KC_Vehicles_Other";
 		crew = "BNA_KC_Unit_Phase2_Pilot";
 
 		hiddenselectionstextures[]=
@@ -1194,7 +1194,7 @@ class CfgVehicles
 		author = "DartRuffian";
 		displayName = "[KC] The Resurgance (Venator)";
 		editorCategory = "BNA_KC_EditorCategory_Objects";
-		editorSubcategory = "BNA_KCSub_Ships";
+		editorSubcategory = "BNA_KC_Static_Ships";
 
 		hiddenSelectionsTextures[] =
 		{
@@ -1225,9 +1225,9 @@ class CfgVehicles
 	//-----------------------------------------------------
 	// The scary zone
 	//-----------------------------------------------------
-	// BNA_KCFac
-	// BNA_KCSub_LAATS
-	// BNA_KCSub_GVics
+	// BNA_KC_Faction
+	// BNA_KC_Vehicles_LAATs
+	// BNA_KC_Vehicles_Ground
 	// ["All","AllVehicles","Land","LandVehicle","Tank","Tank_F","MBT_01_base_F","B_MBT_01_base_F","B_MBT_01_cannon_F"]
 	// weapons[] = {"cannon_120mm","ACE_LMG_coax_MAG58_mem3"};
 	// magazines[] = {"24Rnd_120mm_APFSDS_shells_Tracer_Red","12Rnd_120mm_HE_shells_Tracer_Red","12Rnd_120mm_HEAT_MP_T_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red"};
@@ -1282,8 +1282,8 @@ class CfgVehicles
 	};
 	class BNA_KC_MBT_Slammer: B_MBT_01_TUSK_F
 	{
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_GVics";
+		faction = "BNA_KC_Faction";
+		editorSubcategory = "BNA_KC_Vehicles_Ground";
 		displayName = "[KC] Blitz Assault Tank";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 		hiddenSelectionsTextures[] = 
@@ -1521,8 +1521,8 @@ class CfgVehicles
 	};
 	class BNA_KC_APC_Badger: B_APC_Wheeled_01_cannon_F
 	{
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_GVics";
+		faction = "BNA_KC_Faction";
+		editorSubcategory = "BNA_KC_Vehicles_Ground";
 		displayName = "[KC] Badger APC";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 		class Turrets: Turrets
@@ -1659,8 +1659,8 @@ class CfgVehicles
 	{
 		author = "DartRuffian";
 		displayName = "[KC] TX-130 Saber Tank";
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_GVics";
+		faction = "BNA_KC_Faction";
+		editorSubcategory = "BNA_KC_Vehicles_Ground";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 		hiddenSelectionsTextures[] =
 		{
@@ -1675,8 +1675,8 @@ class CfgVehicles
 	{
 		author = "DartRuffian";
 		displayName = "[KC] AT-TE";
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_GVics";
+		faction = "BNA_KC_Faction";
+		editorSubcategory = "BNA_KC_Vehicles_Ground";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 		hiddenSelectionsTextures[] =
 		{
@@ -1695,8 +1695,8 @@ class CfgVehicles
 	{
 		author = "DartRuffian";
 		displayName = "[KC] AT-RT";
-		faction = "BNA_KCFac";
-		editorSubcategory = "BNA_KCSub_GVics";
+		faction = "BNA_KC_Faction";
+		editorSubcategory = "BNA_KC_Vehicles_Ground";
 
 		// Textures are not set-up on the 3AS end yet.
 		// hiddenSelectionsTextures[] =

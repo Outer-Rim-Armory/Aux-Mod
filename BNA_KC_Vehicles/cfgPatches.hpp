@@ -7,6 +7,7 @@ class CfgPatches
 		requiredAddons[] =
 		{
 			"BNA_KC_Gear",
+				// Driver / Pilot units
 			"A3_Armor_F",
 			"A3_Sounds_F",
 			"3AS_VehicleWeapons",
@@ -65,18 +66,37 @@ class CfgPatches
 
 class CfgEditorSubcategories
 {
-	// Misc Vehicles
-	class BNA_KCSub_OVics // O = "Other"
+	// Main Vehicles
+	class BNA_KC_Vehicles_LAATs // O = "Other"
 	{
 		dlc = "BNA_KC";
 		author = "DartRuffian";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Other Vehicles";
+		displayName = "Vehicles - LAATs";
+	};
+	
+	class BNA_KC_Vehicles_Ground // O = "Other"
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Vehicles - Ground";
+	};
+
+	// Misc Vehicles
+	class BNA_KC_Vehicles_Other // O = "Other"
+	{
+		dlc = "BNA_KC";
+		author = "DartRuffian";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Vehicles - Other";
 	};
 
 	// Objects
-	class BNA_KCSub_Ships
+	class BNA_KC_Static_Ships
 	{
 		dlc = "BNA_KC";
 		author = "DartRuffian";
