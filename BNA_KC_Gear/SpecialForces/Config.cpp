@@ -150,11 +150,11 @@ class CfgVehicles
         // Loadout
         linkedItems[] =
         {
-            "BNA_KC_Helmet_ARC", "BNA_KC_NVG_Rangefinder", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "BNA_KC_Vest_Arc"
+            "BNA_KC_Helmet_ARC_Base", "BNA_KC_NVG_Rangefinder", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "BNA_KC_Vest_Arc"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_ARC", "BNA_KC_NVG_Rangefinder", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "BNA_KC_Vest_Arc"
+            "BNA_KC_Helmet_ARC_Base", "BNA_KC_NVG_Rangefinder", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "BNA_KC_Vest_Arc"
         };
         backpack = "BNA_KC_Backpack_ARC";
     };
@@ -175,11 +175,11 @@ class CfgVehicles
         // Loadout
         linkedItems[] =
         {
-            "BNA_KC_Helmet_ARF", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_basic_armor"
+            "BNA_KC_Helmet_ARF_Base", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_basic_armor"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_ARF", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_basic_armor"
+            "BNA_KC_Helmet_ARF_Base", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_basic_armor"
         };
         backpack = "BNA_KC_Backpack";
     };
@@ -196,11 +196,11 @@ class CfgVehicles
         // Loadout
         linkedItems[] =
         {
-            "BNA_KC_Helmet_BARC", "BNA_KC_NVG_Visor", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_recon_armor"
+            "BNA_KC_Helmet_BARC_Base", "BNA_KC_NVG_Visor", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_recon_armor"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_BARC", "BNA_KC_NVG_Visor", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_recon_armor"
+            "BNA_KC_Helmet_BARC_Base", "BNA_KC_NVG_Visor", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_recon_armor"
         };
         backpack = "BNA_KC_Backpack";
     };
