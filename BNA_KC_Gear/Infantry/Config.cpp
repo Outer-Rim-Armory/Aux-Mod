@@ -324,10 +324,6 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] Clone P2 Officer Visor (WO+)";
-        hiddenSelectionsTextures[] =
-        {
-            "BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Officer.paa"
-        };
 
         // Night Vision / Thermal Settings
         visionMode[] = { VISION_MODE };
