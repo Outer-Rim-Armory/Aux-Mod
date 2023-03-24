@@ -584,8 +584,6 @@ class CfgVehicles
     // │     Backpacks     │
     // └───────────────────────┘
     class SWLB_clone_backpack;
-    class SWLB_clone_backpack_heavy;
-    class SWLB_clone_backpack_medic;
     class SWLB_clone_backpack_RTO;
 
     class BNA_KC_Backpack: SWLB_clone_backpack
@@ -650,8 +648,17 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Backpack_Radio: BNA_KC_Backpack
+    class BNA_KC_Backpack_Radio: SWLB_clone_backpack_RTO
     {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
         maximumLoad = 300;
 
         displayName = "[KC] Clone Trooper Radio Backpack";
