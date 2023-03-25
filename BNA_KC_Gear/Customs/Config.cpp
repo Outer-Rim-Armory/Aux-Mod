@@ -9,17 +9,7 @@ class CfgWeapons
     // ┌─────────────────┐
     // │     NVGs     │
     // └─────────────────┘
-    class BNA_KC_NVG_Visor;
     class BNA_KC_NVG_Officer;
-
-    class BNA_KC_NVG_Visor_Keeli: BNA_KC_NVG_Visor
-    {
-        displayName = "[KC] Clone P2 NVG Visor ('Keeli')";
-        hiddenSelectionsTextures[] =
-        {
-            "BNA_KC_Gear\Customs\Data\NVGs\BNA_KC_NVG_Visor_Keeli.paa"
-        };
-    };
 
     class BNA_KC_NVG_Officer_Keeli: BNA_KC_NVG_Officer
     {

@@ -287,6 +287,15 @@ class CfgWeapons
         modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d";
     };
 
+    class BNA_KC_NVG_Visor_v2: BNA_KC_NVG_Visor
+    {
+        displayName = "[KC] Clone P2 NVG Visor (v2)";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Visor_v2.paa"
+        };
+    };
+
     class BNA_KC_NVG_Rangefinder: lsd_gar_rangefinder_nvg
     {
         // Mod Info

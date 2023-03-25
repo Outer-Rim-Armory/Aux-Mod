@@ -118,7 +118,6 @@ class CfgPatches
 
             // NVGs
             "BNA_KC_NVG_Officer_Keeli",
-            "BNA_KC_NVG_Visor_Keeli",
 
             // Backpacks
             "BNA_KC_Backpack_Keeli"
