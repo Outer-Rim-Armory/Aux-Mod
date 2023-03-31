@@ -409,7 +409,7 @@ class CfgVehicles
             // Smokes
             ITEM_3("3AS_SmokeWhite"),
             ITEM_3("3AS_SmokeBlue"),
-            ITEM_3("3AS_SmokeGreen"),
+            ITEM_3("3AS_SmokeGreen")
         };
         respawnMagazines[] =
         {
@@ -424,7 +424,7 @@ class CfgVehicles
             // Smokes
             ITEM_3("3AS_SmokeWhite"),
             ITEM_3("3AS_SmokeBlue"),
-            ITEM_3("3AS_SmokeGreen"),
+            ITEM_3("3AS_SmokeGreen")
         };
         items[] =
         {
@@ -508,6 +508,7 @@ class CfgVehicles
         weapons[] =
         {
             "BNA_KC_DC15C_Predef",
+            "3AS_DC17S_F",
             "SWLB_clone_binocular",
             "Throw",               // Allows the unit to throw grenades
             "Put"                  // Allows the unit to place explosives
@@ -515,6 +516,7 @@ class CfgVehicles
         respawnWeapons[] =
         {
             "BNA_KC_DC15C_Predef",
+            "3AS_DC17S_F",
             "SWLB_clone_binocular",
             "Throw",
             "Put"
