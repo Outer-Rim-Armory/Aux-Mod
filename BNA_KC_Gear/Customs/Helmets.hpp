@@ -676,7 +676,7 @@ class BNA_KC_Helmet_ARC_Base;
 class BNA_KC_Helmet_ARF_Base;
 class BNA_KC_Helmet_BARC_Base;
 
-class BNA_KC_Helmet_ARC_x: BNA_KC_Helmet_ARC_Base
+class BNA_KC_Helmet_ARC_Drake: BNA_KC_Helmet_ARC_Base
 {
 	displayName = "[KC] SF ARC Helm ('Drake')";
 	hiddenSelectionsTextures[] = 
