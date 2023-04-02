@@ -228,6 +228,17 @@ class BNA_KC_Helmet_Phase1_Patriot: BNA_KC_Helmet_Phase1_Base
 	};
 };
 
+class BNA_KC_Helmet_Phase1_Ponds: BNA_KC_Helmet_Phase1_Base
+{
+	displayName = "[KC] INF P1 Helm ('Ponds')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 1\BNA_KC_Helmet_P1_Ponds.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+	};
+};
+
 class BNA_KC_Helmet_Phase1_Rodger: BNA_KC_Helmet_Phase1_Base
 {
 	displayName = "[KC] INF P1 Helm ('Rodger')";
@@ -325,16 +336,6 @@ class BNA_KC_Helmet_Phase2_Dogo: BNA_KC_Helmet_Phase2_Base
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Dogo.paa",
-		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
-	};
-};
-
-class BNA_KC_Helmet_Phase2_Drake: BNA_KC_Helmet_Phase2_Base
-{
-	displayName = "[KC] INF Helm ('Drake')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Drake.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
 	};
 };
@@ -675,17 +676,16 @@ class BNA_KC_Helmet_ARC_Base;
 class BNA_KC_Helmet_ARF_Base;
 class BNA_KC_Helmet_BARC_Base;
 
-/*
 class BNA_KC_Helmet_ARC_x: BNA_KC_Helmet_ARC_Base
 {
-	displayName = "[KC] SF ARC Helm ('x')";
+	displayName = "[KC] SF ARC Helm ('Drake')";
 	hiddenSelectionsTextures[] = 
 	{
-	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARC\BNA_KC_Helmet_ARC_x.paa",
+	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARC\BNA_KC_Helmet_ARC_Drake.paa",
 	    "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
 	};
 };
-*/
+
 class BNA_KC_Helmet_ARF_Patriot: BNA_KC_Helmet_ARF_Base
 {
 	displayName = "[KC] SF ARF Helm ('Patriot')";

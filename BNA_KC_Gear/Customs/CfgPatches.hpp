@@ -51,6 +51,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Keeli_Red",
             "BNA_KC_Helmet_Phase1_Ox",
             "BNA_KC_Helmet_Phase1_Patriot",
+            "BNA_KC_Helmet_Phase1_Ponds",
             "BNA_KC_Helmet_Phase1_Rodger",
             "BNA_KC_Helmet_Phase1_Sin",
             "BNA_KC_Helmet_Phase1_Splashdown",
@@ -62,7 +63,6 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Burnt",
             "BNA_KC_Helmet_Phase2_Dexus",
             "BNA_KC_Helmet_Phase2_Dogo",
-            "BNA_KC_Helmet_Phase2_Drake",
             "BNA_KC_Helmet_Phase2_Fil",
             "BNA_KC_Helmet_Phase2_FilSquad",
             "BNA_KC_Helmet_Phase2_Grey",
@@ -97,6 +97,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Tanker_Grey",
 
             // Special Forces Helmets
+            "BNA_KC_Helmet_ARC_Drake",
             "BNA_KC_Helmet_ARF_Patriot",
 
             // Insulated Helmets
