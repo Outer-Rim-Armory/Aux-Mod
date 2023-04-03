@@ -578,7 +578,7 @@ class BNA_KC_Helmet_Engineer_x: BNA_KC_Helmet_Engineer_Base
 
 
 // ┌─────────────────────────────┐
-// │    Engineer Helmets    │
+// │    Airborne Helmets    │
 // └─────────────────────────────┘
 class BNA_KC_Helmet_Airborne_Base;
 /*
