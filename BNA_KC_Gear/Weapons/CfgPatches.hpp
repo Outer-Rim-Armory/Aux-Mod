@@ -9,6 +9,8 @@ class CfgPatches
         {
             "3AS_Weapons"
 				// Westar
+                // DC-15S
+                // DC-15C
         };
         units[] = {};
         weapons[] =
