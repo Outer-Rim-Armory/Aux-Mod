@@ -41,6 +41,51 @@ class CfgWeapons
         };
     };
 
+    class 41_Flammenwerfer_02_F;
+    class WeaponSlotsInfo;
+
+    class BNA_KC_Flamer: 41_Flammenwerfer_02_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "Dexus and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        // Burn 'Em Redux Properties
+		WBK_BurnEm_RequiredBackpack = ""; // Classname of required backpack to use, blank = None
+		WBK_BurnEm_FlamethrowerParticlePos = [ [-0.32,0.3,-0.3], 'leftHand' ]; // Particle Position
+		WBK_BurnEm_FlamethrowerDistance = 20; // Distance of flame in meters
+
+        displayName = "[KC] BlasTech X-42 Flamethrower";
+        // Change look to match the 3AS Flamer
+        model = "3AS\3AS_Weapons\X42\BX42.p3d";
+        picture = "3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
+        handAnim[]=
+        {
+            "OFP2_ManSkeleton",
+            "3AS\3AS_Weapons\Data\Anim\BX42.rtm"
+        };
+        // reloadAction = ""; // Custom reload animation would be set here
+
+        // Custom Mags
+        magazines[] = { "300Rnd_Flamer_Mag" };
+    };
+
+    class BNA_KC_Flamer_Heavy: BNA_KC_Flamer
+    {
+        // Burn 'Em Redux Properties
+        WBK_BurnEm_FlamethrowerDistance = 40; // Distance of flame in meters
+    
+        displayName = "[KC] BlasTech X-42 Heavy Flamethrower";
+        // Custom Mags
+        magazines[] = { "150Rnd_Flamer_Mag" };
+        class WeaponSlotsInfo: WeaponSlotsInfo { mass = 80; };
+    };
+
 
     // ┌────────────────────────────────────────┐
     // │       Pre-Defined Weapons       │
@@ -116,5 +161,27 @@ class CfgWeapons
                 slot = "MuzzleSlot";
             };
         };
+    };
+};
+
+
+class CfgMagazines
+{
+    class M2_Fuel_Tank;
+
+    class 300Rnd_Flamer_Mag: M2_Fuel_Tank
+    {
+        displayName = "BT X-42 Fuel Tank";
+        // 3AS Ammo Picture
+        picture="3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
+        UiPicture="3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
+        mass = 50;
+    };
+
+    class 150Rnd_Flamer_Mag: 300Rnd_Flamer_Mag
+    {
+        displayName = "BT X-42 Fuel Tank";
+        count = 150;
+        mass = 150;
     };
 };
