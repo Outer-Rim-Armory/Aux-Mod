@@ -686,6 +686,16 @@ class BNA_KC_Helmet_ARC_Drake: BNA_KC_Helmet_ARC_Base
 	};
 };
 
+class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC_Base
+{
+	displayName = "[KC] SF ARC Helm ('Tyrant')";
+	hiddenSelectionsTextures[] = 
+	{
+	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARC\BNA_KC_Helmet_ARC_Tyrant.paa",
+	    "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+	};
+};
+
 class BNA_KC_Helmet_ARF_Patriot: BNA_KC_Helmet_ARF_Base
 {
 	displayName = "[KC] SF ARF Helm ('Patriot')";
