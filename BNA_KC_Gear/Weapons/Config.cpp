@@ -21,6 +21,7 @@ class CfgWeapons
     };
     class BNA_KC_Westar_M5_Base: 3AS_WestarM5_F
     {
+        displayName = "[KC] Westar-M5";
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
