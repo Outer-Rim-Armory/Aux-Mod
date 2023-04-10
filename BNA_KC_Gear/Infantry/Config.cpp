@@ -276,7 +276,7 @@ class CfgWeapons
         displayName = "[KC] Clone P2 NVG Visor";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Visor.paa"
+            BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Visor.paa
         };
 
         // Night Vision / Thermal Settings
@@ -292,7 +292,7 @@ class CfgWeapons
         displayName = "[KC] Clone P2 NVG Visor (v2)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Visor_v2.paa"
+            BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Visor_v2.paa
         };
     };
 
@@ -310,7 +310,7 @@ class CfgWeapons
         displayName = "[KC] Clone P2 Rangefinder (CS+)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Rangefinder.paa"
+            BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Rangefinder.paa
         };
 
         // Night Vision / Thermal Settings
@@ -333,6 +333,10 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] Clone P2 Officer Visor (WO+)";
+        hiddenSelectionsTextures[] =
+        {
+            BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Officer.paa
+        };
 
         // Night Vision / Thermal Settings
         visionMode[] = { VISION_MODE };
