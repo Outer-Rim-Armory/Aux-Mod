@@ -98,6 +98,7 @@ class CfgPatches
 
             // Special Forces Helmets
             "BNA_KC_Helmet_ARC_Drake",
+            "BNA_KC_Helmet_ARC_Hagrid",
             "BNA_KC_Helmet_ARC_Tyrant",
             "BNA_KC_Helmet_ARF_Patriot",
 
