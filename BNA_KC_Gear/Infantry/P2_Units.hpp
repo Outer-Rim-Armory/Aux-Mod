@@ -146,11 +146,11 @@ class BNA_KC_Unit_Phase2_CPL: BNA_KC_Unit_Phase2_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CPL", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CPL", "k_ls_vest_recon_2", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CPL", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CPL", "k_ls_vest_recon_2", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };
 
@@ -170,11 +170,11 @@ class BNA_KC_Unit_Phase2_CS: BNA_KC_Unit_Phase2_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CS", "k_ls_vest_recon_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CS", "k_ls_vest_recon_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };
 
@@ -192,11 +192,11 @@ class BNA_KC_Unit_Phase2_CSS: BNA_KC_Unit_Phase2_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CSS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CSS", "k_ls_vest_recon_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CSS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CSS", "k_ls_vest_recon_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };
 
@@ -214,11 +214,11 @@ class BNA_KC_Unit_Phase2_CSFC: BNA_KC_Unit_Phase2_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CSFC", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CSFC", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CSFC", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CSFC", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };
 
@@ -236,11 +236,11 @@ class BNA_KC_Unit_Phase2_CMS: BNA_KC_Unit_Phase2_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CMS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CMS", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CMS", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CMS", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };
 
@@ -258,11 +258,11 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CSM", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CSM", "lsd_gar_clone_vest", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CSM", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        "BNA_KC_Helmet_Phase2_CSM", "lsd_gar_clone_vest", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };
 
@@ -280,11 +280,11 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_LT", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_LT", "lsd_gar_clone_vest", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_LT", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_LT", "lsd_gar_clone_vest", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 // };
 
@@ -305,11 +305,11 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_WO", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_WO", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_WO", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_WO", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 // };
 
@@ -327,11 +327,11 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_1LT", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_1LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_1LT", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_1LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 // };
 
@@ -349,11 +349,11 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_CAP", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_CAP", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_CAP", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_CAP", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 // };
 
@@ -371,11 +371,11 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_MAJ", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_MAJ", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_MAJ", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_MAJ", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 // };
 
@@ -393,10 +393,10 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_CMD", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_CMD", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase2_CMD", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+//         "BNA_KC_Helmet_Phase2_CMD", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
 //     };
 // };
