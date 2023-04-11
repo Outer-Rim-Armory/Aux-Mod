@@ -618,4 +618,13 @@ class CfgMusic
         duration = 135;
         musicClass = "BNA_KC_SWMusic"; // Music category
         }; 
+
+	
+	class BNA_KC_ElPresidente
+        {
+        name = "El Presidente";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\El_Presidente.ogg",db+0,1};
+        duration = 129;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
 };
