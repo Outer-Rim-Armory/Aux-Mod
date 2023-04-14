@@ -1193,7 +1193,7 @@ class CfgVehicles
 	{
 		author = "DartRuffian";
 		displayName = "[KC] The Resurgance (Venator)";
-		editorCategory = "BNA_KC_EditorCategory_Objects";
+		editorCategory = "BNA_KC_Objects";
 		editorSubcategory = "BNA_KC_Static_Ships";
 
 		hiddenSelectionsTextures[] =

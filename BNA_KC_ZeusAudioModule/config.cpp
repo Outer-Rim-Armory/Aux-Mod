@@ -1,3 +1,32 @@
+class CfgEditorCategories
+{
+    class BNA_KC_Objects
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+        
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] Objects";
+    };
+};
+
+class CfgEditorSubcategories
+{
+    class BNA_KC_AmbientSounds
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+        
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Ambient Sound Objects";
+    };
+};
+
+
 class CfgPatches
 {
     class BNA_KC_ZeusAudioModule
@@ -24,8 +53,8 @@ class CfgVehicles
 	class BNA_KC_Restaurant_Radio: ls_radio
 	{
 		displayName = "[KC] Restaurant Ambience";
-		editorCategory = "BNA_KC_EditorCategory_Objects";
-		editorSubcategory = "BNA_KC_EditorSubcategory_Ambi";
+		editorCategory = "BNA_KC_Objects";
+		editorSubcategory = "BNA_KC_AmbientSounds";
 		class EventHandlers
 		{
 			init = "call BNAKC_fnc_PlayRestaurauntAmbience;";
