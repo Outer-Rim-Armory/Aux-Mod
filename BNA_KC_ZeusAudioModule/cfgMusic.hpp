@@ -627,4 +627,32 @@ class CfgMusic
         duration = 129;
         musicClass = "BNA_KC_OtherMusic"; // Music category
         }; 
+
+	
+	class BNA_KC_Nest
+        {
+        name = "[Transformers II] Nest";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Nest.ogg",db+0,1};
+        duration = 124;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
+
+	
+	class BNA_KC_FatherG
+        {
+        name = "Father G";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Father_G.ogg",db+0,1};
+        duration = 262;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
+
+	
+	class BNA_KC_Mayday
+        {
+        name = "[TBB] Mayday";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Mayday.ogg",db+0,1};
+        duration = 325;
+        musicClass = "BNA_KC_SWMusic"; // Music category
+        }; 
 };
+
