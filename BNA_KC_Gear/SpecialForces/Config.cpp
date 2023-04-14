@@ -101,6 +101,7 @@ class CfgWeapons
                 "camo2"
             };
             mass = 100;
+            vestType = "Rebreather";
             class HitpointsProtectionInfo
             {
                 class Chest
