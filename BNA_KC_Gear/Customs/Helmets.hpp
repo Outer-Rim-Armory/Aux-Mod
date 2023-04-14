@@ -449,7 +449,7 @@ class BNA_KC_Helmet_Phase2_Keeli: BNA_KC_Helmet_Phase2_Base
 	};
 };
 
-class BNA_KC_Helmet_Phase2_Keeli_Red: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Keeli_Red: BNA_KC_Helmet_Phase2_Keeli
 {
 	// Scopes
 	scope = 1;
