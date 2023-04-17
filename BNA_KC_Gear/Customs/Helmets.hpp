@@ -625,16 +625,6 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue: BNA_KC_Helmet_Phase2_Pilot_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Pilot_Splashdown: BNA_KC_Helmet_Phase2_Pilot_Base
-{
-	displayName = "[KC] AVI Helm ('Splashdown')";
-    hiddenSelectionsTextures[] =
-    {
-        "BNA_KC_Gear\Customs\Data\Helmets\Pilots\Phase 2\BNA_KC_Helmet_P2_Pilot_Splashdown.paa",
-        "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
-    };
-};
-
 
 // ┌─────────────────────────────┐
 // │   P1 Armored Helmets   │

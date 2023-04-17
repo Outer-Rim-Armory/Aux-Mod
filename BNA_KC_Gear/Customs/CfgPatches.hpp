@@ -90,7 +90,6 @@ class CfgPatches
 
             // Phase 2 Pilot Helmets
             "BNA_KC_Helmet_Phase2_Pilot_Blue",
-            "BNA_KC_Helmet_Phase2_Pilot_Splashdown",
 
             // Phase 1 SpecOP Helmets
             "BNA_KC_Helmet_Phase1_Tanker_Grey",
