@@ -733,6 +733,15 @@ class BNA_KC_Helmet_BARC_x: BNA_KC_Helmet_BARC_Base
 // └────────────────────────────┘
 class BNA_KC_Helmet_Insulated_Base;
 
+class BNA_KC_Helmet_Insulated_Dexus: BNA_KC_Helmet_Insulated_Base
+{
+	displayName = "[KC] INF Snow Helm ('Dexus')";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Insulated\BNA_KC_Helmet_Insulated_Dexus.paa"
+    };
+};
+
 class BNA_KC_Helmet_Insulated_Joe: BNA_KC_Helmet_Insulated_Base
 {
 	displayName = "[KC] INF Snow Helm ('Joe')";

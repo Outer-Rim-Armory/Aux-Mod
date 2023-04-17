@@ -4,6 +4,19 @@
 class BNA_KC_Uniform_Base;
 class UniformItem;
 
+class BNA_KC_Uniform_Dexus: BNA_KC_Uniform_Base
+{
+	displayName = "[KC] INF Armor ('Dexus')";
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "BNA_KC_Unit_Dexus";
+        containerClass = "Supply150";
+        mass = 40;
+        uniformType = "Neopren";
+    };
+};
+
 class BNA_KC_Uniform_Drake: BNA_KC_Uniform_Base
 {
 	displayName = "[KC] INF Armor ('Drake')";
@@ -100,6 +113,19 @@ class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Base
 // │   Insulated Uniforms   │
 // └─────────────────────────────┘
 class BNA_KC_Uniform_Insulated_Base;
+
+class BNA_KC_Uniform_Insulated_Dexus: BNA_KC_Uniform_Insulated_Base
+{
+	displayName = "[KC] INF Snow Armor ('Dexus')";
+    class ItemInfo: UniformItem
+    {
+        uniformModel = "-";
+        uniformClass = "BNA_KC_Unit_Insulated_Dexus";
+        containerClass = "Supply150";
+        mass = 40;
+        uniformType = "Neopren";
+    };
+};
 
 class BNA_KC_Uniform_Insulated_Joe: BNA_KC_Uniform_Insulated_Base
 {
