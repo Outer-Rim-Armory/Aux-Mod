@@ -20,6 +20,8 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+			// Optics
+			"BNA_KC_WestarM5_Scope",
             // Custom Weapons
             "BNA_KC_Westar_M5_Base",
             "BNA_KC_Flamer",
