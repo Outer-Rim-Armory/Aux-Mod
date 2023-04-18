@@ -86,9 +86,11 @@ class CfgPatches
             // Engineer Helmets
 
             // Phase 1 Pilot Helmets
+            "BNA_KC_Helmet_Phase1_Pilot_Bailout",
             "BNA_KC_Helmet_Phase1_Pilot_Blue",
 
             // Phase 2 Pilot Helmets
+            "BNA_KC_Helmet_Phase2_Pilot_Bailout",
             "BNA_KC_Helmet_Phase2_Pilot_Blue",
 
             // Phase 1 SpecOP Helmets

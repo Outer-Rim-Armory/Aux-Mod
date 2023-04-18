@@ -598,6 +598,17 @@ class BNA_KC_Helmet_Airborne_x: BNA_KC_Helmet_Airborne_Base
 // └─────────────────────────────┘
 class BNA_KC_Helmet_Phase1_Pilot_Base;
 
+class BNA_KC_Helmet_Phase1_Pilot_Bailout: BNA_KC_Helmet_Phase1_Pilot_Base
+{
+	displayName = "[KC] AVI P1 Helm ('Bailout')";
+	hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Pilots\Phase 1\BNA_KC_Helmet_P1_Pilot_Bailout.paa",
+        "ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
+        "ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
+    };
+};
+
 class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot_Base
 {
 	displayName = "[KC] AVI P1 Helm ('Blue')";
@@ -614,6 +625,16 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot_Base
 // │    P2 Pilot Helmets    │
 // └─────────────────────────────┘
 class BNA_KC_Helmet_Phase2_Pilot_Base;
+
+class BNA_KC_Helmet_Phase2_Pilot_Bailout: BNA_KC_Helmet_Phase2_Pilot_Base
+{
+	displayName = "[KC] AVI Helm ('Bailout')";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Pilots\Phase 2\BNA_KC_Helmet_P2_Pilot_Bailout.paa",
+        "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+    };
+};
 
 class BNA_KC_Helmet_Phase2_Pilot_Blue: BNA_KC_Helmet_Phase2_Pilot_Base
 {
