@@ -3,10 +3,9 @@
 
 class CfgWeapons
 {
-	// ┌──────────────────────────────────┐
-    // │       		Optics		       	  │
-    // └──────────────────────────────────┘
-	
+	// ┌─────────────────┐
+    // │    Optics    │
+    // └─────────────────┘
 	class ItemCore;
 	class 3AS_Optic_Scope_WestarM5: ItemCore
 	{
@@ -72,7 +71,7 @@ class CfgWeapons
 	};
 	
     // ┌──────────────────────────────────┐
-    // │       Custom Weapons       	  │
+    // │       Custom Weapons       │
     // └──────────────────────────────────┘
     class CowsSlot;
     class WeaponSlotsInfo;
