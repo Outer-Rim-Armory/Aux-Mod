@@ -3,9 +3,9 @@
 
 class CfgWeapons
 {
-	// ┌─────────────────┐
-    // │    Optics    │
-    // └─────────────────┘
+	// ┌────────────────┐
+    // │    Optics      │
+    // └────────────────┘
 	class ItemCore;
 	class 3AS_Optic_Scope_WestarM5: ItemCore
 	{
@@ -70,9 +70,9 @@ class CfgWeapons
 		};
 	};
 	
-    // ┌──────────────────────────────────┐
-    // │       Custom Weapons       │
-    // └──────────────────────────────────┘
+    // ┌─────────────────────────────┐
+    // │       Custom Weapons        │
+    // └─────────────────────────────┘
     class CowsSlot;
     class WeaponSlotsInfo;
     class Rifle_Base_F;
@@ -155,9 +155,9 @@ class CfgWeapons
     };
 
 
-    // ┌────────────────────────────────────────┐
+    // ┌─────────────────────────────────┐
     // │       Pre-Defined Weapons       │
-    // └────────────────────────────────────────┘
+    // └─────────────────────────────────┘
     class 3AS_DC15S_F;
     class 3AS_DC15C_F;
 
