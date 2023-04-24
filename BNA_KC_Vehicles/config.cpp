@@ -1204,6 +1204,7 @@ class CfgVehicles
 	class ven_body10;
 	class ven_bridge;
 	class ven_door;
+	class ven_door2;
 	class ven_engine;
 	class ven_interior_1;
 	class ven_interior_2;
@@ -1275,6 +1276,11 @@ class CfgVehicles
 	{
 		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Door.paa};
 	};
+	class BNA_KC_Venator_Door2: ven_door2
+	{
+		hiddenSelectionsTextures[] = {"", BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Door.paa};
+		// First selection is for closed door
+	};
 	class BNA_KC_Venator_Engine: ven_engine
 	{
 		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Engine.paa};
@@ -1336,8 +1342,9 @@ class CfgVehicles
 			{"BNA_KC_Venator_Body8", "body8"},
 			{"BNA_KC_Venator_Body9", "body9"},
 			{"BNA_KC_Venator_Body10", "body10"},
-			{"BNA_KC_Venator_Door", "door"},
+			{"BNA_KC_Venator_Door2", "door"},
 			{"BNA_KC_Venator_Engine", "engine"},
+			{"BNA_KC_Venator_Bridge", "bridge"},
 			{"BNA_KC_Venator_Interior1", "interior1"},
 			{"BNA_KC_Venator_Interior2", "interior2"},
 			{"BNA_KC_Venator_Interior3", "interior3"},
@@ -1345,8 +1352,39 @@ class CfgVehicles
 			{"BNA_KC_Venator_Interior5", "interior5"},
 			{"BNA_KC_Venator_Interior6", "interior6"},
 			{"BNA_KC_Venator_Interior7", "interior7"},
-			{"BNA_KC_Venator_Interior8", "interior8"},
-			{"BNA_KC_Venator_Bridge", "bridge"}
+			{"BNA_KC_Venator_Interior8", "interior8"}
+		};
+	};
+
+	class BNA_KC_Venator_ClosedFullyHollowed: BNA_KC_Venator_OpenFullyHollowed
+	{
+		displayName = "[KC] The Resurgance - Venator (Closed Fully Hollowed)";
+		multistructureparts[] =
+		{
+			{"BNA_KC_Venator_Body1_1", "body1_1"},
+			{"BNA_KC_Venator_Body1_2", "body1_2"},
+			{"BNA_KC_Venator_Body2_1", "body2_1"},
+			{"BNA_KC_Venator_Body2_2", "body2_2"},
+			{"BNA_KC_Venator_Body2_3", "body2_3"},
+			{"BNA_KC_Venator_Body3", "body3"},
+			{"BNA_KC_Venator_Body4", "body4"},
+			{"BNA_KC_Venator_Body5", "body5"},
+			{"BNA_KC_Venator_Body6", "body6"},
+			{"BNA_KC_Venator_Body7", "body7"},
+			{"BNA_KC_Venator_Body8", "body8"},
+			{"BNA_KC_Venator_Body9", "body9"},
+			{"BNA_KC_Venator_Body10", "body10"},
+			{"BNA_KC_Venator_Door", "door"},
+			{"BNA_KC_Venator_Engine", "engine"},
+			{"BNA_KC_Venator_Bridge", "bridge"},
+			{"BNA_KC_Venator_Interior1", "interior1"},
+			{"BNA_KC_Venator_Interior2", "interior2"},
+			{"BNA_KC_Venator_Interior3", "interior3"},
+			{"BNA_KC_Venator_Interior4", "interior4"},
+			{"BNA_KC_Venator_Interior5", "interior5"},
+			{"BNA_KC_Venator_Interior6", "interior6"},
+			{"BNA_KC_Venator_Interior7", "interior7"},
+			{"BNA_KC_Venator_Interior8", "interior8"}
 		};
 	};
 	
