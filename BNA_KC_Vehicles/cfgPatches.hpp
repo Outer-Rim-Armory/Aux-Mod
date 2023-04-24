@@ -37,7 +37,8 @@ class CfgPatches
 			"BNA_KC_Saber_M1",
 			"BNA_KC_ATTE",
 
-			"BNA_KC_Venator"
+			"BNA_KC_Venator_OpenFullyHollowed",
+			"BNA_KC_Venator_Zues"
 		};
 		weapons[] =
 		{

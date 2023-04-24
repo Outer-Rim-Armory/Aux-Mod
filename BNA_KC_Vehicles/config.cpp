@@ -1188,11 +1188,172 @@ class CfgVehicles
 		};
 	};
 
-	// Venator
-	class BNA_KC_Venator: venator_zeus
+	class venator_base_5;
+	class ven_body1_1;
+	class ven_body1_2;
+	class ven_body2_1;
+	class ven_body2_2;
+	class ven_body2_3;
+	class ven_body3;
+	class ven_body4;
+	class ven_body5;
+	class ven_body6;
+	class ven_body7;
+	class ven_body8;
+	class ven_body9;
+	class ven_body10;
+	class ven_bridge;
+	class ven_door;
+	class ven_engine;
+	class ven_interior_1;
+	class ven_interior_2;
+	class ven_interior_3;
+	class ven_interior_4;
+	class ven_interior_5;
+	class ven_interior_6;
+	class ven_interior_7;
+	class ven_interior_8;
+
+	// Venators
+	class BNA_KC_Venator_Body1_1: ven_body1_1
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body1.paa};
+	};
+	class BNA_KC_Venator_Body1_2: ven_body1_2
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body1.paa};
+	};
+	class BNA_KC_Venator_Body2_1: ven_body2_1
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body2.paa};
+	};
+	class BNA_KC_Venator_Body2_2: ven_body2_2
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body2.paa};
+	};
+	class BNA_KC_Venator_Body2_3: ven_body2_3
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body2.paa};
+	};
+	class BNA_KC_Venator_Body3: ven_body3
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body3.paa};
+	};
+	class BNA_KC_Venator_Body4: ven_body4
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body4.paa};
+	};
+	class BNA_KC_Venator_Body5: ven_body5
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body5.paa};
+	};
+	class BNA_KC_Venator_Body6: ven_body6
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body6.paa};
+	};
+	class BNA_KC_Venator_Body7: ven_body7
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body7.paa};
+	};
+	class BNA_KC_Venator_Body8: ven_body8
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body8.paa};
+	};
+	class BNA_KC_Venator_Body9: ven_body9
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body9.paa};
+	};
+	class BNA_KC_Venator_Body10: ven_body10
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Body10.paa};
+	};
+	class BNA_KC_Venator_Bridge: ven_bridge
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Bridge.paa};
+	};
+	class BNA_KC_Venator_Door: ven_door
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Door.paa};
+	};
+	class BNA_KC_Venator_Engine: ven_engine
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Engine.paa};
+	};
+
+	class BNA_KC_Venator_Interior1: ven_interior_1
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Interior1.paa};
+	};
+	class BNA_KC_Venator_Interior2: ven_interior_2
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Interior2.paa};
+	};
+	class BNA_KC_Venator_Interior3: ven_interior_3
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Interior3.paa};
+	};
+	class BNA_KC_Venator_Interior4: ven_interior_4
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Interior4.paa};
+	};
+	class BNA_KC_Venator_Interior5: ven_interior_5
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Interior5.paa};
+	};
+	class BNA_KC_Venator_Interior6: ven_interior_6
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Interior6.paa};
+	};
+	class BNA_KC_Venator_Interior7: ven_interior_7
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Interior7.paa};
+	};
+	class BNA_KC_Venator_Interior8: ven_interior_8
+	{
+		hiddenSelectionsTextures[] = {BNA_KC_Vehicles\Data\Textures\Venator\BNA_KC_Venator_Interior8.paa};
+	};
+
+
+	class BNA_KC_Venator_OpenFullyHollowed: venator_base_5
 	{
 		author = "DartRuffian";
-		displayName = "[KC] The Resurgance (Venator)";
+		displayName = "[KC] The Resurgance - Venator (Open Fully Hollowed)";
+		editorCategory = "BNA_KC_Objects";
+		editorSubcategory = "BNA_KC_Static_Ships";
+
+		multistructureparts[] =
+		{
+			{"BNA_KC_Venator_Body1_1", "body1_1"},
+			{"BNA_KC_Venator_Body1_2", "body1_2"},
+			{"BNA_KC_Venator_Body2_1", "body2_1"},
+			{"BNA_KC_Venator_Body2_2", "body2_2"},
+			{"BNA_KC_Venator_Body2_3", "body2_3"},
+			{"BNA_KC_Venator_Body3", "body3"},
+			{"BNA_KC_Venator_Body4", "body4"},
+			{"BNA_KC_Venator_Body5", "body5"},
+			{"BNA_KC_Venator_Body6", "body6"},
+			{"BNA_KC_Venator_Body7", "body7"},
+			{"BNA_KC_Venator_Body8", "body8"},
+			{"BNA_KC_Venator_Body9", "body9"},
+			{"BNA_KC_Venator_Body10", "body10"},
+			{"BNA_KC_Venator_Door", "door"},
+			{"BNA_KC_Venator_Engine", "engine"},
+			{"BNA_KC_Venator_Interior1", "interior1"},
+			{"BNA_KC_Venator_Interior2", "interior2"},
+			{"BNA_KC_Venator_Interior3", "interior3"},
+			{"BNA_KC_Venator_Interior4", "interior4"},
+			{"BNA_KC_Venator_Interior5", "interior5"},
+			{"BNA_KC_Venator_Interior6", "interior6"},
+			{"BNA_KC_Venator_Interior7", "interior7"},
+			{"BNA_KC_Venator_Interior8", "interior8"},
+			{"BNA_KC_Venator_Bridge", "bridge"}
+		};
+	};
+	
+	class BNA_KC_Venator_Zeus: venator_zeus
+	{
+		author = "DartRuffian";
+		displayName = "[KC] The Resurgance - Venator (Zeus)";
 		editorCategory = "BNA_KC_Objects";
 		editorSubcategory = "BNA_KC_Static_Ships";
 
