@@ -156,24 +156,6 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo { mass = 80; };
     };
 
-    // ["Default","RifleCore","Rifle","Rifle_Base_F","arifle_MX_Base_F"] > JLTS_DC15S
-    // class CowsSlot;
-    // class PointerSlot;
-    // class WeaponSlotsInfo;
-    // class Rifle_Base_F;
-    // class 3AS_WestarM5_Base_F: Rifle_Base_F
-    // {
-    //     class WeaponSlotsInfo;
-    // };
-    // class 3AS_WestarM5_F: 3AS_WestarM5_Base_F
-    // {
-    //     class WeaponSlotsInfo: WeaponSlotsInfo
-    //     {
-    //         class CowsSlot;
-    //     };
-    // };
-    // ["Default","RifleCore","Rifle","Rifle_Base_F","3AS_WestarM5_Base_F"] > 3AS_WestarM5_F
-
     class arifle_MX_Base_F: Rifle_Base_F
     {
         class WeaponSlotsInfo;
