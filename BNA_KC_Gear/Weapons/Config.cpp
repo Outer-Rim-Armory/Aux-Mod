@@ -20,51 +20,51 @@ class CfgWeapons
 			{
 				class BNA_KC_M5_Scope_Optics
 				{
-					opticsID=1;
-					useModelOptics=1;
-					opticsPPEffects[]=
+					opticsID = 1;
+					useModelOptics = 1;
+					opticsPPEffects[] = 
 					{
 						"OpticsCHAbera1",
 						"OpticsBlur1"
 					};
-					opticsZoomMin=0.0138;
-					opticsZoomMax=0.0416;
-					opticsZoomInit=0.0416;
-					discreteDistance[]={100,300,400,500,600,700,800,900,1000};
-					discreteDistanceInitIndex=1;
-					distanceZoomMin=100;
-					distanceZoomMax=1000;
-					nFovLimit=0.07;
-					discreteFov[]={0.0416,0.0138};
-					discreteInitIndex=0;
-					modelOptics[]=
+					opticsZoomMin = 0.0138;
+					opticsZoomMax = 0.0416;
+					opticsZoomInit = 0.0416;
+					discreteDistance[] = {100,300,400,500,600,700,800,900,1000};
+					discreteDistanceInitIndex = 1;
+					distanceZoomMin = 100;
+					distanceZoomMax = 1000;
+					nFovLimit = 0.07;
+					discreteFov[] = {0.0416,0.0138};
+					discreteInitIndex = 0;
+					modelOptics[] = 
 					{
 						"\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d"
 					};
-					memoryPointCamera="opticView";
-					visionMode[]=
+					memoryPointCamera = "opticView";
+					visionMode[] = 
 					{
 						//"Normal",
 						//"NVG",
 						//"TI"
 					};
 					//thermalMode[] = {0};
-					opticsFlare=1;
-					opticsDisablePeripherialVision=1;
-					cameraDir="";
+					opticsFlare = 1;
+					opticsDisablePeripherialVision = 1;
+					cameraDir = "";
 				};
 				class BNA_KC_M5_OverSights_Optic
 				{
-					opticsID=2;
-					useModelOptics=0;
-					opticsFlare=0;
-					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.375;
-					opticsZoomMax=1.1;
-					opticsZoomInit=0.75;
-					memoryPointCamera="eye";
-					visionMode[]={};
-					discretefov[]={};
+					opticsID = 2;
+					useModelOptics = 0;
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 0;
+					opticsZoomMin = 0.375;
+					opticsZoomMax = 1.1;
+					opticsZoomInit = 0.75;
+					memoryPointCamera = "eye";
+					visionMode[] = {};
+					discretefov[] = {};
 				};
 			};
 		};
@@ -134,7 +134,7 @@ class CfgWeapons
         // Change look to match the 3AS Flamer
         model = "3AS\3AS_Weapons\X42\BX42.p3d";
         picture = "3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
-        handAnim[]=
+        handAnim[] = 
         {
             "OFP2_ManSkeleton",
             "3AS\3AS_Weapons\Data\Anim\BX42.rtm"
@@ -204,7 +204,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[] =
+                compatibleItems[]  = 
                 {
                     "acc_pointer_ir",
                     "ace_acc_pointer_green",
@@ -314,8 +314,8 @@ class CfgMagazines
     {
         displayName = "BT X-42 Fuel Tank";
         // 3AS Ammo Picture
-        picture="3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
-        UiPicture="3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
+        picture = "3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
+        UiPicture = "3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
         mass = 50;
     };
 
