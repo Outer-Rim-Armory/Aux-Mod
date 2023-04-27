@@ -43,6 +43,10 @@ class CfgVehicles
         };
         magazines[] =
 		{
+            "W41_Plasma_Mags",
+            "W41_Plasma_Mags",
+            "W41_Plasma_Mags",
+            "W41_Plasma_Mags",
 			"Laserbatteries",
 			"Laser_Battery",
 			"Laser_Battery",
@@ -99,6 +103,10 @@ class CfgVehicles
         };
         magazines[] =
 		{
+            "W41_Plasma_Mags",
+            "W41_Plasma_Mags",
+            "W41_Plasma_Mags",
+            "W41_Plasma_Mags",
 			"Laserbatteries",
 			"Laser_Battery",
 			"Laser_Battery",
