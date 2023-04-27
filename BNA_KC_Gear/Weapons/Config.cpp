@@ -74,6 +74,7 @@ class CfgWeapons
     // │       Custom Weapons        │
     // └─────────────────────────────┘
     class CowsSlot;
+    class PointerSlot;
     class WeaponSlotsInfo;
     class Rifle_Base_F;
     class 3AS_WestarM5_Base_F: Rifle_Base_F
@@ -85,12 +86,13 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot;
+            class PointerSlot;
         };
     };
     class BNA_KC_Westar_M5_Base: 3AS_WestarM5_F
     {
         displayName = "[KC] Westar-M5";
-		recoil="recoil_smg_03";
+		recoil = "recoil_smg_03";
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -154,6 +156,95 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo { mass = 80; };
     };
 
+    // ["Default","RifleCore","Rifle","Rifle_Base_F","arifle_MX_Base_F"] > JLTS_DC15S
+    // class CowsSlot;
+    // class PointerSlot;
+    // class WeaponSlotsInfo;
+    // class Rifle_Base_F;
+    // class 3AS_WestarM5_Base_F: Rifle_Base_F
+    // {
+    //     class WeaponSlotsInfo;
+    // };
+    // class 3AS_WestarM5_F: 3AS_WestarM5_Base_F
+    // {
+    //     class WeaponSlotsInfo: WeaponSlotsInfo
+    //     {
+    //         class CowsSlot;
+    //     };
+    // };
+    // ["Default","RifleCore","Rifle","Rifle_Base_F","3AS_WestarM5_Base_F"] > 3AS_WestarM5_F
+
+    class arifle_MX_Base_F: Rifle_Base_F
+    {
+        class WeaponSlotsInfo;
+        class Single;
+        class FullAuto;
+    };
+
+    class JLTS_DC15S: arifle_MX_Base_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+            class PointerSlot;
+        };
+        class Single: Single
+        {
+            class StandardSound;
+        };
+        class FullAuto: FullAuto 
+        {
+            class StandardSound;
+        };
+    };
+
+    class BNA_KC_DC15S: JLTS_DC15S
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] DC-15S";
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = 
+                {
+                    "3AS_optic_reflex_dc15c",
+                    "3AS_optic_holo_dc15s"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[] =
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+        };
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire", 1, 1, 1800};
+            };
+        };
+        class FullAuto: FullAuto
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire", 1, 1, 1800};
+            };
+        };
+    };
 
     // ┌─────────────────────────────────┐
     // │       Pre-Defined Weapons       │
