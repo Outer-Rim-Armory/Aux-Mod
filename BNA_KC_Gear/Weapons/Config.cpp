@@ -228,6 +228,66 @@ class CfgWeapons
         };
     };
 
+    class JLTS_DC15A: arifle_MX_Base_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+            class PointerSlot;
+        };
+        class Single: Single
+        {
+            class StandardSound;
+        };
+    };
+
+    class JLTS_DC15A_plastic: JLTS_DC15A {};
+
+    class BNA_KC_DC15A: JLTS_DC15A_plastic
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] DC-15A";
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = 
+                {
+                    "3as_optic_reflex_dc15c",
+                    "3as_optic_acog_dc15c"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[]  = 
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+        };
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1", 1, 1, 1800};
+                begin2[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire2", 1, 1, 1800};
+                begin3[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire3", 1, 1, 1800};
+                begin4[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire4", 1, 1, 1800};
+                soundBegin[] = {begin1, 0.25, begin2, 0.25, begin3, 0.25, begin4, 0.25};
+            };
+        };
+    };
+
     // ┌─────────────────────────────────┐
     // │       Pre-Defined Weapons       │
     // └─────────────────────────────────┘

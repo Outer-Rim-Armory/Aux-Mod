@@ -13,6 +13,8 @@ class CfgPatches
                 // DC-15C
                 // BT X-42 Flamer
             "JLTS_weapons_DC15S",
+                // DC-15A
+            "JLTS_weapons_DC15S",
                 // DC-15S
             "JLTS_weapons_DC17SA",
                 // Weapon Flashlights
@@ -28,6 +30,7 @@ class CfgPatches
 			"BNA_KC_WestarM5_Scope",
             // Custom Weapons
             "BNA_KC_Westar_M5_Base",
+            "BNA_KC_DC15A",
             "BNA_KC_DC15S",
             "BNA_KC_Flamer",
             "BNA_KC_Flamer_Heavy",
