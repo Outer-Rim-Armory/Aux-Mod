@@ -288,6 +288,98 @@ class CfgWeapons
         };
     };
 
+    class JLTS_DC15A_ugl: JLTS_DC15A
+    {
+        class Single: Single
+        {
+            class StandardSound;
+        };
+        class EGLM;
+        class GL_3GL_F;
+    };
+    class JLTS_DC15A_ugl_plastic: JLTS_DC15A_ugl {};
+
+    class BNA_KC_DC15A_UGL: JLTS_DC15A_ugl_plastic
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] DC-15A UGL";
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = 
+                {
+                    "3as_optic_reflex_dc15c",
+                    "3as_optic_acog_dc15c"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[]  = 
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+        };
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1", 1, 1, 1800};
+                begin2[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire2", 1, 1, 1800};
+                begin3[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire3", 1, 1, 1800};
+                begin4[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire4", 1, 1, 1800};
+                soundBegin[] = {begin1, 0.25, begin2, 0.25, begin3, 0.25, begin4, 0.25};
+            };
+        };
+        class EGLM: EGLM
+        {
+            magazines[] =
+            {
+                "3Rnd_UGL_FlareWhite_F",
+                "3Rnd_UGL_FlareRed_F",
+                "3Rnd_UGL_FlareGreen_F",
+                "3Rnd_Smoke_Grenade_shell",
+                "3Rnd_SmokeRed_Grenade_shell",
+                "3Rnd_SmokeGreen_Grenade_shell",
+                "3Rnd_SmokeYellow_Grenade_shell",
+                "3Rnd_SmokePurple_Grenade_shell",
+                "3Rnd_SmokeBlue_Grenade_shell",
+                "3Rnd_SmokeOrange_Grenade_shell",
+                "3Rnd_HE_Grenade_shell",
+                "ACE_HuntIR_M203"
+            };
+        };
+        class GL_3GL_F: GL_3GL_F
+        {
+            magazines[] =
+            {
+                "3Rnd_UGL_FlareWhite_F",
+                "3Rnd_UGL_FlareRed_F",
+                "3Rnd_UGL_FlareGreen_F",
+                "3Rnd_Smoke_Grenade_shell",
+                "3Rnd_SmokeRed_Grenade_shell",
+                "3Rnd_SmokeGreen_Grenade_shell",
+                "3Rnd_SmokeYellow_Grenade_shell",
+                "3Rnd_SmokePurple_Grenade_shell",
+                "3Rnd_SmokeBlue_Grenade_shell",
+                "3Rnd_SmokeOrange_Grenade_shell",
+                "3Rnd_HE_Grenade_shell",
+                "ACE_HuntIR_M203"
+            };
+        };
+    };
+
     // ┌─────────────────────────────────┐
     // │       Pre-Defined Weapons       │
     // └─────────────────────────────────┘
