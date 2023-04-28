@@ -17,6 +17,7 @@ class CfgPatches
             "JLTS_weapons_DC15S",
                 // DC-15S
             "JLTS_weapons_DC17SA",
+                // DC-17
                 // Weapon Flashlights
             "WBK_PhoenixTreal_FlamethrowerMOD",
                 // Flamethrower System
@@ -34,6 +35,7 @@ class CfgPatches
             "BNA_KC_DC15A",
             "BNA_KC_DC15A_UGL",
             "BNA_KC_DC15S",
+            "BNA_KC_DC17",
             "BNA_KC_Flamer",
             "BNA_KC_Flamer_Heavy",
 

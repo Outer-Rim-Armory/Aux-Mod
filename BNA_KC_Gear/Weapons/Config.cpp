@@ -463,6 +463,41 @@ class CfgWeapons
         };
     };
 
+    class Pistol_Base_F;
+    class hgun_P07_F: Pistol_Base_F
+    {
+        class Single;
+    };
+    class JLTS_DC17SA: hgun_P07_F
+    {
+        class Single: Single
+        {
+            class StandardSound;
+        };
+    };
+    class BNA_KC_DC17: JLTS_DC17SA
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] DC-17";
+        baseWeapon = "BNA_KC_DC17"; // Used to specify it as a different weapon
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC17_Fire1", 1, 1, 1800};
+                soundBegin[] = {begin1, 1};
+            };
+        };
+    };
+
     // ┌─────────────────────────────────┐
     // │       Pre-Defined Weapons       │
     // └─────────────────────────────────┘
