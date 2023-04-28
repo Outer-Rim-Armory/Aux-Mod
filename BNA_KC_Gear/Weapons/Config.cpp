@@ -79,18 +79,34 @@ class CfgWeapons
     class Rifle_Base_F;
     class 3AS_WestarM5_Base_F: Rifle_Base_F
     {
+        // Attachments
         class WeaponSlotsInfo;
+        // Fire Modes
+        class Single;
+        class Burst;
+        class FullAuto;
+        class 3AS_WestarM5_GL_F;
     };
     class 3AS_WestarM5_F: 3AS_WestarM5_Base_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
+            // Attachments
             class CowsSlot;
             class PointerSlot;
         };
     };
-    class BNA_KC_Westar_M5_Base: 3AS_WestarM5_F
+    class BNA_KC_Westar_M5: 3AS_WestarM5_F
     {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
         displayName = "[KC] Westar-M5";
 		recoil = "recoil_smg_03";
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -110,6 +126,76 @@ class CfgWeapons
                     "optic_ico_01_black_f"*/
                 };
             };
+        };
+    };
+
+    class 3AS_WestarM5_GL: 3AS_WestarM5_Base_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            // Attachments
+            class CowsSlot;
+            class PointerSlot;
+        };
+        class Single: Single { class StandardSound; };
+        class Burst: Burst { class StandardSound; };
+        class FullAuto: FullAuto { class StandardSound; };
+        class 3AS_WestarM5_GL_F;
+    };
+    class BNA_KC_Westar_M5_UGL: 3AS_WestarM5_GL
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Westar-M5 UGL";
+		recoil = "recoil_smg_03";
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = 
+                {
+                    "BNA_KC_WestarM5_Scope"
+                };
+            };
+        };
+
+        // class Single: Single
+        // {
+        //     class StandardSound: StandardSound
+        //     {
+        //         begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_Westar_Fire1", 1, 1, 1800};
+        //         begin2[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_Westar_Fire2", 1, 1, 1800};
+        //         begin3[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_Westar_Fire3", 1, 1, 1800};
+        //         begin4[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_Westar_Fire4", 1, 1, 1800};
+        //         soundBegin[] = {begin1, 0.25, begin2, 0.25, begin3, 0.25, begin4, 0.25};
+        //     };
+        // };
+
+        class 3AS_WestarM5_GL_F: 3AS_WestarM5_GL_F
+        {
+            displayName = "Grenade Launcher";
+            magazines[] =
+            {
+                "3Rnd_UGL_FlareWhite_F",
+                "3Rnd_UGL_FlareRed_F",
+                "3Rnd_UGL_FlareGreen_F",
+                "3Rnd_Smoke_Grenade_shell",
+                "3Rnd_SmokeRed_Grenade_shell",
+                "3Rnd_SmokeGreen_Grenade_shell",
+                "3Rnd_SmokeYellow_Grenade_shell",
+                "3Rnd_SmokePurple_Grenade_shell",
+                "3Rnd_SmokeBlue_Grenade_shell",
+                "3Rnd_SmokeOrange_Grenade_shell",
+                "3Rnd_HE_Grenade_shell"
+            };
+            magazineWell[] = {}; // Removes extra magazines
         };
     };
 
