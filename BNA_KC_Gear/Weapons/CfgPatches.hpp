@@ -31,6 +31,7 @@ class CfgPatches
             // Custom Weapons
             "BNA_KC_Westar_M5_Base",
             "BNA_KC_DC15A",
+            "BNA_KC_DC15A_UGL",
             "BNA_KC_DC15S",
             "BNA_KC_Flamer",
             "BNA_KC_Flamer_Heavy",
