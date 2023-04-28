@@ -364,27 +364,14 @@ class CfgWeapons
                 "3Rnd_SmokePurple_Grenade_shell",
                 "3Rnd_SmokeBlue_Grenade_shell",
                 "3Rnd_SmokeOrange_Grenade_shell",
-                "3Rnd_HE_Grenade_shell",
-                "ACE_HuntIR_M203"
+                "3Rnd_HE_Grenade_shell"
             };
+            magazineWell[] = {}; // Removes extra magazines
         };
         class GL_3GL_F: GL_3GL_F
         {
-            magazines[] =
-            {
-                "3Rnd_UGL_FlareWhite_F",
-                "3Rnd_UGL_FlareRed_F",
-                "3Rnd_UGL_FlareGreen_F",
-                "3Rnd_Smoke_Grenade_shell",
-                "3Rnd_SmokeRed_Grenade_shell",
-                "3Rnd_SmokeGreen_Grenade_shell",
-                "3Rnd_SmokeYellow_Grenade_shell",
-                "3Rnd_SmokePurple_Grenade_shell",
-                "3Rnd_SmokeBlue_Grenade_shell",
-                "3Rnd_SmokeOrange_Grenade_shell",
-                "3Rnd_HE_Grenade_shell",
-                "ACE_HuntIR_M203"
-            };
+            magazines[] = {};
+            magazineWell[] = {};
         };
     };
 
