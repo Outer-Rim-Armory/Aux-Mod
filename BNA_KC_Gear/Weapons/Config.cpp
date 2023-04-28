@@ -216,14 +216,22 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire", 1, 1, 1800};
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire1", 1, 1, 1800};
+                begin2[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire2", 1, 1, 1800};
+                begin3[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire3", 1, 1, 1800};
+                begin4[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire4", 1, 1, 1800};
+                soundBegin[] = {begin1, 0.25, begin2, 0.25, begin3, 0.25, begin4, 0.25};
             };
         };
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire", 1, 1, 1800};
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire1", 1, 1, 1800};
+                begin2[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire2", 1, 1, 1800};
+                begin3[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire3", 1, 1, 1800};
+                begin4[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire4", 1, 1, 1800};
+                soundBegin[] = {begin1, 0.25, begin2, 0.25, begin3, 0.25, begin4, 0.25};
             };
         };
     };
