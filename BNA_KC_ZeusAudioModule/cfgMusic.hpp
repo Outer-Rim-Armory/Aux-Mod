@@ -654,5 +654,33 @@ class CfgMusic
         duration = 325;
         musicClass = "BNA_KC_SWMusic"; // Music category
         }; 
+	
+	
+	class BNA_KC_EPF
+        {
+        name = "The EPF ";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\EPF_Forces.ogg",db+0,1};
+        duration = 198;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
+
+
+	class BNA_KC_TU1
+        {
+        name = "Techno Union BM 1 ";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Techno_Union1.ogg",db+0,1};
+        duration = 202;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
+
+
+	class BNA_KC_TU2
+        {
+        name = "Techno Union BM 2 ";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Techno_Union2.ogg",db+0,1};
+        duration = 202;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
 };
+
 
