@@ -360,15 +360,14 @@ class CfgWeapons
             "Single",
             "FullAuto"
         };
-        
+
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
             {
                 compatibleItems[] = 
                 {
-                    "3as_optic_reflex_dc15c",
-                    "3as_optic_acog_dc15c"
+                    "3as_optic_lescope_dc15a"
                 };
             };
             class PointerSlot: PointerSlot
@@ -441,8 +440,7 @@ class CfgWeapons
             {
                 compatibleItems[] = 
                 {
-                    "3as_optic_reflex_dc15c",
-                    "3as_optic_acog_dc15c"
+                    "3as_optic_lescope_dc15a"
                 };
             };
             class PointerSlot: PointerSlot
