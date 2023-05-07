@@ -49,6 +49,8 @@ class CfgWeapons
 
         displayName = "[KC] Westar-M5";
 		recoil = "recoil_smg_03";
+        canShootInWater = 1;
+
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -95,6 +97,8 @@ class CfgWeapons
 
         displayName = "[KC] Westar-M5 UGL";
 		recoil = "recoil_smg_03";
+        canShootInWater = 1;
+
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -121,6 +125,7 @@ class CfgWeapons
         class 3AS_WestarM5_GL_F: 3AS_WestarM5_GL_F
         {
             displayName = "Grenade Launcher";
+            canShootInWater = 0;
             magazines[] =
             {
                 "3Rnd_UGL_FlareWhite_F",
@@ -189,7 +194,6 @@ class CfgWeapons
         class Single;
         class FullAuto;
     };
-
     class JLTS_DC15S: arifle_MX_Base_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -219,6 +223,8 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15S";
+        canShootInWater = 1;
+
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -245,6 +251,7 @@ class CfgWeapons
             {
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
             };
         };
         class FullAuto: FullAuto
@@ -253,6 +260,7 @@ class CfgWeapons
             {
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
             };
         };
     };
@@ -273,7 +281,6 @@ class CfgWeapons
             class StandardSound;
         };
     };
-
     class JLTS_DC15A_plastic: JLTS_DC15A {};
 
     class BNA_KC_DC15A: JLTS_DC15A_plastic
@@ -294,6 +301,7 @@ class CfgWeapons
             "Single",
             "FullAuto"
         };
+        canShootInWater = 1;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
@@ -320,6 +328,7 @@ class CfgWeapons
             {
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
             };
         };
         class FullAuto: FullAuto
@@ -328,6 +337,7 @@ class CfgWeapons
             {
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
             };
         };
     };
@@ -361,6 +371,7 @@ class CfgWeapons
             "Single",
             "FullAuto"
         };
+        canShootInWater = 1;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
@@ -387,6 +398,7 @@ class CfgWeapons
             {
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
             };
         };
         class FullAuto: FullAuto
@@ -395,10 +407,12 @@ class CfgWeapons
             {
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
             };
         };
         class EGLM: EGLM
         {
+            canShootInWater = 0;
             magazines[] =
             {
                 "3Rnd_UGL_FlareWhite_F",
@@ -418,6 +432,7 @@ class CfgWeapons
         };
         class GL_3GL_F: GL_3GL_F
         {
+            canShootInWater = 0;
             magazines[] = {};
             magazineWell[] = {};
         };
@@ -448,6 +463,8 @@ class CfgWeapons
 
         displayName = "[KC] DC-17";
         baseWeapon = "BNA_KC_DC17"; // Used to specify it as a different weapon
+        canShootInWater = 1;
+
         class Single: Single
         {
             class StandardSound: StandardSound
