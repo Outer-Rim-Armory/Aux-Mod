@@ -4,7 +4,7 @@ class CfgPatches
     {
         addonRootClass= "BNA_KC_Gear";
         author = "SweMonkey and DartRuffian";
-        requiredVersion = 1;
+        requiredVersion = 0.1;
         requiredAddons[] =
         {
             "3AS_Weapons",
@@ -12,6 +12,13 @@ class CfgPatches
                 // DC-15S
                 // DC-15C
                 // BT X-42 Flamer
+            "JLTS_weapons_DC15S",
+                // DC-15A
+            "JLTS_weapons_DC15S",
+                // DC-15S
+            "JLTS_weapons_DC17SA",
+                // DC-17
+                // Weapon Flashlights
             "WBK_PhoenixTreal_FlamethrowerMOD",
                 // Flamethrower System
             "M2"
@@ -23,7 +30,12 @@ class CfgPatches
 			// Optics
 			"BNA_KC_WestarM5_Scope",
             // Custom Weapons
-            "BNA_KC_Westar_M5_Base",
+            "BNA_KC_Westar_M5",
+            "BNA_KC_Westar_M5_UGL",
+            "BNA_KC_DC15A",
+            "BNA_KC_DC15A_UGL",
+            "BNA_KC_DC15S",
+            "BNA_KC_DC17",
             "BNA_KC_Flamer",
             "BNA_KC_Flamer_Heavy",
 

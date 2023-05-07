@@ -1,4 +1,6 @@
 #include "CfgPatches.hpp"
+#include "Ammo.hpp"
+#include "Optics.hpp"
 
 
 class CfgWeapons
@@ -6,91 +8,49 @@ class CfgWeapons
 	// ┌────────────────┐
     // │    Optics      │
     // └────────────────┘
-	class ItemCore;
-	class 3AS_Optic_Scope_WestarM5: ItemCore
-	{
-		class ItemInfo;
-	};
-	class BNA_KC_WestarM5_Scope: 3AS_Optic_Scope_WestarM5
-	{
-        displayName = "[KC] Westar-M5 Scope";
-		class ItemInfo: ItemInfo
-		{
-			class OpticsModes
-			{
-				class BNA_KC_M5_Scope_Optics
-				{
-					opticsID=1;
-					useModelOptics=1;
-					opticsPPEffects[]=
-					{
-						"OpticsCHAbera1",
-						"OpticsBlur1"
-					};
-					opticsZoomMin=0.0138;
-					opticsZoomMax=0.0416;
-					opticsZoomInit=0.0416;
-					discreteDistance[]={100,300,400,500,600,700,800,900,1000};
-					discreteDistanceInitIndex=1;
-					distanceZoomMin=100;
-					distanceZoomMax=1000;
-					nFovLimit=0.07;
-					discreteFov[]={0.0416,0.0138};
-					discreteInitIndex=0;
-					modelOptics[]=
-					{
-						"\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d"
-					};
-					memoryPointCamera="opticView";
-					visionMode[]=
-					{
-						//"Normal",
-						//"NVG",
-						//"TI"
-					};
-					//thermalMode[] = {0};
-					opticsFlare=1;
-					opticsDisablePeripherialVision=1;
-					cameraDir="";
-				};
-				class BNA_KC_M5_OverSights_Optic
-				{
-					opticsID=2;
-					useModelOptics=0;
-					opticsFlare=0;
-					opticsDisablePeripherialVision=0;
-					opticsZoomMin=0.375;
-					opticsZoomMax=1.1;
-					opticsZoomInit=0.75;
-					memoryPointCamera="eye";
-					visionMode[]={};
-					discretefov[]={};
-				};
-			};
-		};
-	};
+    #include "Optics.hpp"
 	
     // ┌─────────────────────────────┐
     // │       Custom Weapons        │
     // └─────────────────────────────┘
     class CowsSlot;
+    class PointerSlot;
     class WeaponSlotsInfo;
     class Rifle_Base_F;
     class 3AS_WestarM5_Base_F: Rifle_Base_F
     {
+        // Attachments
         class WeaponSlotsInfo;
+        // Fire Modes
+        class Single;
+        class Burst;
+        class FullAuto;
+        class 3AS_WestarM5_GL_F;
     };
     class 3AS_WestarM5_F: 3AS_WestarM5_Base_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
+            // Attachments
             class CowsSlot;
+            class PointerSlot;
         };
     };
-    class BNA_KC_Westar_M5_Base: 3AS_WestarM5_F
+    class BNA_KC_Westar_M5: 3AS_WestarM5_F
     {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
         displayName = "[KC] Westar-M5";
-		recoil="recoil_smg_03";
+		recoil = "recoil_smg_03";
+        canShootInWater = 1;
+
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -108,6 +68,80 @@ class CfgWeapons
                     "optic_ico_01_black_f"*/
                 };
             };
+        };
+    };
+
+    class 3AS_WestarM5_GL: 3AS_WestarM5_Base_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            // Attachments
+            class CowsSlot;
+            class PointerSlot;
+        };
+        class Single: Single { class StandardSound; };
+        class Burst: Burst { class StandardSound; };
+        class FullAuto: FullAuto { class StandardSound; };
+        class 3AS_WestarM5_GL_F;
+    };
+    class BNA_KC_Westar_M5_UGL: 3AS_WestarM5_GL
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Westar-M5 UGL";
+		recoil = "recoil_smg_03";
+        canShootInWater = 1;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = 
+                {
+                    "BNA_KC_WestarM5_Scope"
+                };
+            };
+        };
+
+        // class Single: Single
+        // {
+        //     class StandardSound: StandardSound
+        //     {
+        //         begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_Westar_Fire1", 1, 1, 1800};
+        //         begin2[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_Westar_Fire2", 1, 1, 1800};
+        //         begin3[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_Westar_Fire3", 1, 1, 1800};
+        //         begin4[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_Westar_Fire4", 1, 1, 1800};
+        //         soundBegin[] = {begin1, 0.25, begin2, 0.25, begin3, 0.25, begin4, 0.25};
+        //     };
+        // };
+
+        class 3AS_WestarM5_GL_F: 3AS_WestarM5_GL_F
+        {
+            displayName = "Grenade Launcher";
+            canShootInWater = 0;
+            magazines[] =
+            {
+                "3Rnd_UGL_FlareWhite_F",
+                "3Rnd_UGL_FlareRed_F",
+                "3Rnd_UGL_FlareGreen_F",
+                "UGL_FlareCIR_F",
+                "3Rnd_Smoke_Grenade_shell",
+                "3Rnd_SmokeRed_Grenade_shell",
+                "3Rnd_SmokeGreen_Grenade_shell",
+                "3Rnd_SmokeYellow_Grenade_shell",
+                "3Rnd_SmokePurple_Grenade_shell",
+                "3Rnd_SmokeBlue_Grenade_shell",
+                "3Rnd_SmokeOrange_Grenade_shell",
+                "3Rnd_HE_Grenade_shell"
+            };
+            magazineWell[] = {}; // Removes extra magazines
         };
     };
 
@@ -132,7 +166,7 @@ class CfgWeapons
         // Change look to match the 3AS Flamer
         model = "3AS\3AS_Weapons\X42\BX42.p3d";
         picture = "3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
-        handAnim[]=
+        handAnim[] = 
         {
             "OFP2_ManSkeleton",
             "3AS\3AS_Weapons\Data\Anim\BX42.rtm"
@@ -154,6 +188,292 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo { mass = 80; };
     };
 
+    class arifle_MX_Base_F: Rifle_Base_F
+    {
+        class WeaponSlotsInfo;
+        class Single;
+        class FullAuto;
+    };
+    class JLTS_DC15S: arifle_MX_Base_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+            class PointerSlot;
+        };
+        class Single: Single
+        {
+            class StandardSound;
+        };
+        class FullAuto: FullAuto 
+        {
+            class StandardSound;
+        };
+    };
+
+    class BNA_KC_DC15S: JLTS_DC15S
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] DC-15S";
+        canShootInWater = 1;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = 
+                {
+                    "3AS_optic_reflex_dc15c",
+                    "3AS_optic_holo_dc15s"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[]  = 
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+        };
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire1", 1, 1, 1800};
+                soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
+            };
+        };
+        class FullAuto: FullAuto
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire1", 1, 1, 1800};
+                soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
+            };
+        };
+    };
+
+    class JLTS_DC15A: arifle_MX_Base_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+            class PointerSlot;
+        };
+        class Single: Single
+        {
+            class StandardSound;
+        };
+        class FullAuto: FullAuto
+        {
+            class StandardSound;
+        };
+    };
+    class JLTS_DC15A_plastic: JLTS_DC15A {};
+
+    class BNA_KC_DC15A: JLTS_DC15A_plastic
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] DC-15A";
+
+        modes[]=
+        {
+            "Single",
+            "FullAuto"
+        };
+        canShootInWater = 1;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = 
+                {
+                    "3as_optic_lescope_dc15a"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[]  = 
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+        };
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1", 1, 1, 1800};
+                soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
+            };
+        };
+        class FullAuto: FullAuto
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1", 1, 1, 1800};
+                soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
+            };
+        };
+    };
+
+    class JLTS_DC15A_ugl: JLTS_DC15A
+    {
+        class Single: Single
+        {
+            class StandardSound;
+        };
+        class EGLM;
+        class GL_3GL_F;
+    };
+    class JLTS_DC15A_ugl_plastic: JLTS_DC15A_ugl {};
+
+    class BNA_KC_DC15A_UGL: JLTS_DC15A_ugl_plastic
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] DC-15A UGL";
+
+        modes[]=
+        {
+            "Single",
+            "FullAuto"
+        };
+        canShootInWater = 1;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = 
+                {
+                    "3as_optic_lescope_dc15a"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[]  = 
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+        };
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1", 1, 1, 1800};
+                soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
+            };
+        };
+        class FullAuto: FullAuto
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1", 1, 1, 1800};
+                soundBegin[] = {begin1, 1};
+                soundBeginWater[] = {begin1, 1};
+            };
+        };
+        class EGLM: EGLM
+        {
+            canShootInWater = 0;
+            magazines[] =
+            {
+                "3Rnd_UGL_FlareWhite_F",
+                "3Rnd_UGL_FlareRed_F",
+                "3Rnd_UGL_FlareGreen_F",
+                "UGL_FlareCIR_F",
+                "3Rnd_Smoke_Grenade_shell",
+                "3Rnd_SmokeRed_Grenade_shell",
+                "3Rnd_SmokeGreen_Grenade_shell",
+                "3Rnd_SmokeYellow_Grenade_shell",
+                "3Rnd_SmokePurple_Grenade_shell",
+                "3Rnd_SmokeBlue_Grenade_shell",
+                "3Rnd_SmokeOrange_Grenade_shell",
+                "3Rnd_HE_Grenade_shell"
+            };
+            magazineWell[] = {}; // Removes extra magazines
+        };
+        class GL_3GL_F: GL_3GL_F
+        {
+            canShootInWater = 0;
+            magazines[] = {};
+            magazineWell[] = {};
+        };
+    };
+
+    class Pistol_Base_F;
+    class hgun_P07_F: Pistol_Base_F
+    {
+        class Single;
+    };
+    class JLTS_DC17SA: hgun_P07_F
+    {
+        class Single: Single
+        {
+            class StandardSound;
+        };
+    };
+    class BNA_KC_DC17: JLTS_DC17SA
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] DC-17";
+        baseWeapon = "BNA_KC_DC17"; // Used to specify it as a different weapon
+        canShootInWater = 1;
+
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC17_Fire1", 1, 1, 1800};
+                soundBegin[] = {begin1, 1};
+            };
+        };
+    };
 
     // ┌─────────────────────────────────┐
     // │       Pre-Defined Weapons       │
@@ -229,27 +549,5 @@ class CfgWeapons
                 slot = "MuzzleSlot";
             };
         };
-    };
-};
-
-
-class CfgMagazines
-{
-    class M2_Fuel_Tank;
-
-    class 300Rnd_Flamer_Mag: M2_Fuel_Tank
-    {
-        displayName = "BT X-42 Fuel Tank";
-        // 3AS Ammo Picture
-        picture="3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
-        UiPicture="3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
-        mass = 50;
-    };
-
-    class 150Rnd_Flamer_Mag: 300Rnd_Flamer_Mag
-    {
-        displayName = "BT X-42 Fuel Tank";
-        count = 150;
-        mass = 150;
     };
 };
