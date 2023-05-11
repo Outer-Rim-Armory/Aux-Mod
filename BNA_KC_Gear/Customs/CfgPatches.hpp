@@ -97,6 +97,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Tanker_Grey",
 
             // Phase 2 SpecOP Helmets
+            "BNA_KC_Helmet_Phase2_Tanker_Catholic",
             "BNA_KC_Helmet_Phase2_Tanker_Grey",
 
             // Special Forces Helmets
