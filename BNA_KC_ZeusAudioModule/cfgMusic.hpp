@@ -698,8 +698,5 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Audio\The_All_Spark.ogg",db+0,1};
         duration = 214;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-        }; 
-};	
+        };
 };
-
-
