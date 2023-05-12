@@ -681,6 +681,25 @@ class CfgMusic
         duration = 202;
         musicClass = "BNA_KC_OtherMusic"; // Music category
         }; 
+
+
+	class BNA_KC_RoseAtNightfall
+        {
+        name = "Rose At Nightfall ";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Rose_At_Nightfall.ogg",db+0,1};
+        duration = 252;
+        musicClass = "BNA_KC_VGMusic"; // Music category
+        }; 
+
+
+	class BNA_KC_TheAllSpark
+        {
+        name = "[Transformers I] The All Spark ";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\The_All_Spark.ogg",db+0,1};
+        duration = 214;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+        }; 
+};	
 };
 
 
