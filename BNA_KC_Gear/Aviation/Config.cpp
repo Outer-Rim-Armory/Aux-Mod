@@ -3,9 +3,9 @@
 
 class CfgWeapons
 {
-    // ┌───────────┐
-    // │ Helmets │
-    // └───────────┘
+    // ┌───────────────────┐
+    // │      Helmets      │
+    // └───────────────────┘
     class ls_gar_phase1Pilot_helmet;
     class ls_gar_phase2Pilot_helmet;
 
@@ -48,9 +48,9 @@ class CfgWeapons
         };
     };
 
-    // ┌─────────────────┐
-    // │   Uniforms   │
-    // └─────────────────┘
+    // ┌────────────────────┐
+    // │      Uniforms      │
+    // └────────────────────┘
     class ls_gar_phase2_uniform;
     class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
     {
@@ -71,9 +71,9 @@ class CfgWeapons
 
 class CfgVehicles
 {
-    // ┌───────────────────────┐
+    // ┌───────────────────┐
     // │       Units       │
-    // └───────────────────────┘
+    // └───────────────────┘
     class BNA_KC_Unit_Phase1_Base;
 
     class BNA_KC_Unit_Phase1_Pilot: BNA_KC_Unit_Phase1_Base

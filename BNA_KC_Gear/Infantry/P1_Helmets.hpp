@@ -1,6 +1,3 @@
-// ┌─────────────────┐
-// │ Rank Helmets │
-// └─────────────────┘
 class BNA_KC_Helmet_Phase1_CR: BNA_KC_Helmet_Phase1_Base
 {
     displayName = "[KC] INF P1 Helm 00 (Recruit)";

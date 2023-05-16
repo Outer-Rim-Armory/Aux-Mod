@@ -1,6 +1,6 @@
-// ┌───────────────────────┐
-// │  Phase 1 Helmets  │
-// └───────────────────────┘
+// ┌───────────────────┐
+// │    P1  Helmets    │
+// └───────────────────┘
 class BNA_KC_Helmet_Phase1_Base;
 
 class BNA_KC_Helmet_Phase1_Anvil: BNA_KC_Helmet_Phase1_Base
@@ -295,9 +295,9 @@ class BNA_KC_Helmet_Phase1_Woods: BNA_KC_Helmet_Phase1_Base
 };
 
 
-// ┌───────────────────────┐
-// │  Phase 2 Helmets  │
-// └───────────────────────┘
+// ┌───────────────────┐
+// │    P2  Helmets    │
+// └───────────────────┘
 class BNA_KC_Helmet_Phase2_Base;
 
 class BNA_KC_Helmet_Phase2_Axel: BNA_KC_Helmet_Phase2_Base
@@ -559,9 +559,9 @@ class BNA_KC_Helmet_Phase2_Woods: BNA_KC_Helmet_Phase2_Base
 };
 
 
-// ┌─────────────────────────────┐
-// │    Engineer Helmets    │
-// └─────────────────────────────┘
+// ┌───────────────────┐
+// │    ENG Helmets    │
+// └───────────────────┘
 class BNA_KC_Helmet_Engineer_Base;
 /*
 class BNA_KC_Helmet_Engineer_x: BNA_KC_Helmet_Engineer_Base
@@ -577,9 +577,9 @@ class BNA_KC_Helmet_Engineer_x: BNA_KC_Helmet_Engineer_Base
 */
 
 
-// ┌─────────────────────────────┐
-// │    Airborne Helmets    │
-// └─────────────────────────────┘
+// ┌───────────────────┐
+// │    AB  Helmets    │
+// └───────────────────┘
 class BNA_KC_Helmet_Airborne_Base;
 /*
 class BNA_KC_Helmet_Airborne_x: BNA_KC_Helmet_Airborne_Base
@@ -593,9 +593,9 @@ class BNA_KC_Helmet_Airborne_x: BNA_KC_Helmet_Airborne_Base
 */
 
 
-// ┌─────────────────────────────┐
-// │    P1 Pilot Helmets    │
-// └─────────────────────────────┘
+// ┌───────────────────┐
+// │  AVI P1  Helmets  │
+// └───────────────────┘
 class BNA_KC_Helmet_Phase1_Pilot_Base;
 
 class BNA_KC_Helmet_Phase1_Pilot_Bailout: BNA_KC_Helmet_Phase1_Pilot_Base
@@ -621,9 +621,9 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot_Base
 };
 
 
-// ┌─────────────────────────────┐
-// │    P2 Pilot Helmets    │
-// └─────────────────────────────┘
+// ┌───────────────────┐
+// │  AVI P2  Helmets  │
+// └───────────────────┘
 class BNA_KC_Helmet_Phase2_Pilot_Base;
 
 class BNA_KC_Helmet_Phase2_Pilot_Bailout: BNA_KC_Helmet_Phase2_Pilot_Base
@@ -647,9 +647,9 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue: BNA_KC_Helmet_Phase2_Pilot_Base
 };
 
 
-// ┌─────────────────────────────┐
-// │   P1 Armored Helmets   │
-// └─────────────────────────────┘
+// ┌───────────────────┐
+// │  P1 ARMR Helmets  │
+// └───────────────────┘
 class BNA_KC_Helmet_Phase1_Tanker_Base;
 
 class BNA_KC_Helmet_Phase1_Tanker_Grey: BNA_KC_Helmet_Phase1_Tanker_Base
@@ -663,9 +663,9 @@ class BNA_KC_Helmet_Phase1_Tanker_Grey: BNA_KC_Helmet_Phase1_Tanker_Base
 };
 
 
-// ┌─────────────────────────────┐
-// │   P1 Armored Helmets   │
-// └─────────────────────────────┘
+// ┌───────────────────┐
+// │  P2 ARMR Helmets  │
+// └───────────────────┘
 class BNA_KC_Helmet_Phase2_Tanker_Base;
 
 class BNA_KC_Helmet_Phase2_Tanker_Catholic: BNA_KC_Helmet_Phase2_Tanker_Base
@@ -689,9 +689,9 @@ class BNA_KC_Helmet_Phase2_Tanker_Grey: BNA_KC_Helmet_Phase2_Tanker_Base
 };
 
 
-// ┌──────────────────────────────────┐
-// │   Special Forces Helmets   │
-// └──────────────────────────────────┘
+// ┌───────────────────┐
+// │    SF  Helmets    │
+// └───────────────────┘
 // May be broken up into separate ARC, ARF, and BARC categories if necessary.
 class BNA_KC_Helmet_ARC_Base;
 class BNA_KC_Helmet_ARF_Base;
@@ -749,9 +749,9 @@ class BNA_KC_Helmet_BARC_x: BNA_KC_Helmet_BARC_Base
 };
 */
 
-// ┌────────────────────────────┐
-// │   Insulated Helmets   │
-// └────────────────────────────┘
+// ┌────────────────────┐
+// │    Snow Helmets    │
+// └────────────────────┘
 class BNA_KC_Helmet_Insulated_Base;
 
 class BNA_KC_Helmet_Insulated_Dexus: BNA_KC_Helmet_Insulated_Base

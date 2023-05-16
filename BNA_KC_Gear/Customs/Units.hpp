@@ -1,6 +1,6 @@
-// ┌─────────────────┐
-// │ Normal Units │
-// └─────────────────┘
+// ┌───────────────────┐
+// │       Units       │
+// └───────────────────┘
 // Base Unit (if no other rank unit applies)
 class BNA_KC_Unit_Phase2_Base;
 // Rank Units (Officers)
@@ -213,9 +213,9 @@ class BNA_KC_Unit_Stone: BNA_KC_Unit_Phase2_Base
 };
 
 
-// ┌───────────────────────┐
-// │  Insulated Units  │
-// └───────────────────────┘
+// ┌───────────────────┐
+// │    Snow  Units    │
+// └───────────────────┘
 class BNA_KC_Unit_Insulated_Base;
 
 class BNA_KC_Unit_Insulated_Dexus: BNA_KC_Unit_Insulated_Base

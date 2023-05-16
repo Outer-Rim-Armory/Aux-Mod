@@ -6,9 +6,9 @@ class CfgWeapons
     #include "Uniforms.hpp"
 
 
-    // ┌─────────────────┐
-    // │     NVGs     │
-    // └─────────────────┘
+    // ┌──────────────────┐
+    // │       NVGs       │
+    // └──────────────────┘
     class BNA_KC_NVG_Officer;
 
     class BNA_KC_NVG_Officer_Keeli: BNA_KC_NVG_Officer
@@ -27,9 +27,9 @@ class CfgVehicles
     #include "Units.hpp"
 
 
-    // ┌───────────────────────┐
+    // ┌───────────────────┐
     // │     Backpacks     │
-    // └───────────────────────┘
+    // └───────────────────┘
     class BNA_KC_Backpack;
 
     class BNA_KC_Backpack_Keeli: BNA_KC_Backpack

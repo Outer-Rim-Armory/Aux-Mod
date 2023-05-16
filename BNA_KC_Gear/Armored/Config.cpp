@@ -3,9 +3,9 @@
 
 class CfgWeapons
 {
-    // ┌───────────┐
-    // │ Helmets │
-    // └───────────┘
+    // ┌───────────────────┐
+    // │      Helmets      │
+    // └───────────────────┘
     class ls_sob_phase1SpecOp_helmet;
     class ls_sob_phase2SpecOp_helmet;
 
@@ -69,9 +69,9 @@ class CfgWeapons
 
 class CfgVehicles
 {
-    // ┌───────────────────────┐
+    // ┌───────────────────┐
     // │       Units       │
-    // └───────────────────────┘
+    // └───────────────────┘
     class BNA_KC_Unit_Phase1_Base;
 
     class BNA_KC_Unit_Phase1_Tanker: BNA_KC_Unit_Phase1_Base

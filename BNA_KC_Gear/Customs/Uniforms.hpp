@@ -1,6 +1,6 @@
-// ┌───────────────────────┐
-// │  Normal Uniforms  │
-// └───────────────────────┘
+// ┌────────────────────┐
+// │      Uniforms      │
+// └────────────────────┘
 class ls_gar_phase2_uniform;
 class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
 {
@@ -80,9 +80,9 @@ class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Base
 };
 
 
-// ┌─────────────────────────────┐
-// │   Insulated Uniforms   │
-// └─────────────────────────────┘
+// ┌────────────────────┐
+// │   Snow  Uniforms   │
+// └────────────────────┘
 class lsd_gar_phase2Insulated_uniform;
 class BNA_KC_Uniform_Insulated_Base: lsd_gar_phase2Insulated_uniform
 {

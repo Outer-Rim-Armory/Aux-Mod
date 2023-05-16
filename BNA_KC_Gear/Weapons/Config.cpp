@@ -5,14 +5,14 @@
 
 class CfgWeapons
 {
-	// ┌────────────────┐
-    // │    Optics      │
-    // └────────────────┘
+	// ┌──────────────────┐
+    // │      Optics      │
+    // └──────────────────┘
     #include "Optics.hpp"
 	
-    // ┌─────────────────────────────┐
-    // │       Custom Weapons        │
-    // └─────────────────────────────┘
+    // ┌───────────────────┐
+    // │      Weapons      │
+    // └───────────────────┘
     class CowsSlot;
     class PointerSlot;
     class WeaponSlotsInfo;

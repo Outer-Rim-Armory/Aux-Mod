@@ -4,9 +4,9 @@
 
 class CfgWeapons
 {
-    // ┌───────────┐
-    // │ Helmets │
-    // └───────────┘
+    // ┌───────────────────┐
+    // │      Helmets      │
+    // └───────────────────┘
     class ls_gar_phase1_helmet;
     class ls_gar_phase2_helmet;
     class ls_gar_engineer_helmet;
@@ -110,9 +110,9 @@ class CfgWeapons
     #include "P1_Helmets.hpp"
     #include "P2_Helmets.hpp"
 
-    // ┌─────────────────┐
-    // │   Uniforms   │
-    // └─────────────────┘
+    // ┌────────────────────┐
+    // │      Uniforms      │
+    // └────────────────────┘
     class ls_gar_phase2_uniform;           // Uniform Base Class
     class lsd_gar_phase2insulated_uniform; // Insulated Uniform
     class UniformItem;                     // Meta Class
@@ -165,9 +165,9 @@ class CfgWeapons
     #include "Uniforms.hpp"
     #include "Legacy.hpp" // Legacy class names (to not break kits)
 
-    // ┌───────────────────────┐
+    // ┌───────────────────┐
     // │       Vests       │
-    // └───────────────────────┘
+    // └───────────────────┘
     class V_PlateCarrier1_rgr;
     class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
     {
@@ -225,9 +225,9 @@ class CfgWeapons
         };
     };
 
-    // ┌─────────────────┐
-    // │     NVGs     │
-    // └─────────────────┘
+    // ┌──────────────────┐
+    // │       NVGs       │
+    // └──────────────────┘
     class lsd_gar_standard_nvg;
     class lsd_gar_rangefinder_nvg;
     class SWLB_clone_ccVisor;
@@ -354,9 +354,9 @@ class CfgWeapons
 
 class CfgVehicles
 {
-    // ┌───────────────────────┐
+    // ┌───────────────────┐
     // │       Units       │
-    // └───────────────────────┘
+    // └───────────────────┘
     class lsd_gar_trooper_phase1;
     class lsd_gar_phase2Insulated_base;
 
@@ -599,9 +599,9 @@ class CfgVehicles
     #include "P1_Units.hpp"
     #include "P2_Units.hpp"
 
-    // ┌───────────────────────┐
+    // ┌───────────────────┐
     // │     Backpacks     │
-    // └───────────────────────┘
+    // └───────────────────┘
     class SWLB_clone_backpack;
     class SWLB_clone_backpack_RTO;
 

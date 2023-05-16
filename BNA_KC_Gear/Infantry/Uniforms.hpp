@@ -1,6 +1,3 @@
-// ┌───────────────────────┐
-// │   Rank Uniforms   │
-// └───────────────────────┘
 class ls_gar_phase2_uniform;
 class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
 {

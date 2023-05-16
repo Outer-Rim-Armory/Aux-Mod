@@ -2,9 +2,9 @@
 
 class CfgWeapons
 {
-    // ┌───────────┐
-    // │ Helmets │
-    // └───────────┘
+    // ┌───────────────────┐
+    // │      Helmets      │
+    // └───────────────────┘
     class lsd_gar_arc_helmet;
     class ls_gar_phase1Arf_helmet;
     class ls_gar_barc_helmet;
@@ -67,9 +67,9 @@ class CfgWeapons
         };
     };
 
-    // ┌───────────────────────┐
+    // ┌───────────────────┐
     // │       Vests       │
-    // └───────────────────────┘
+    // └───────────────────┘
     class V_PlateCarrier1_rgr;
     class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
     {
@@ -132,9 +132,9 @@ class CfgWeapons
 
 class CfgVehicles
 {
-    // ┌───────────────────────┐
+    // ┌───────────────────┐
     // │       Units       │
-    // └───────────────────────┘
+    // └───────────────────┘
     class BNA_KC_Unit_Phase1_Base;
 
     class BNA_KC_Unit_ARC: BNA_KC_Unit_Phase1_Base
@@ -208,9 +208,9 @@ class CfgVehicles
         backpack = "BNA_KC_Backpack";
     };
 
-    // ┌───────────────────────┐
+    // ┌───────────────────┐
     // │     Backpacks     │
-    // └───────────────────────┘
+    // └───────────────────┘
     class SWLB_clone_arc_backpack;
 
     class BNA_KC_Backpack_ARC: SWLB_clone_arc_backpack

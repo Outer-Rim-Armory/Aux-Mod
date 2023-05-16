@@ -1,6 +1,3 @@
-// ┌───────────────────────┐
-// │   Phase 2 Units   │
-// └───────────────────────┘
 class BNA_KC_Unit_Phase2_CR: BNA_KC_Unit_Phase2_Base
 {
     displayName = "[KC] INF 00 - Clone Recruit";
