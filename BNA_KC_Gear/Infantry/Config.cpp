@@ -168,10 +168,17 @@ class CfgWeapons
     // ┌───────────────────────┐
     // │       Vests       │
     // └───────────────────────┘
-    class SWLB_clone_basic_armor;
-    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    class V_PlateCarrier1_rgr;
+    class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
     {
         class ItemInfo;
+    };
+    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo;
+        }
     };
 
     class BNA_KC_Vest_Officer: SWLB_clone_officer_armor
