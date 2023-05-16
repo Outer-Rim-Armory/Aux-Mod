@@ -70,8 +70,18 @@ class CfgWeapons
     // ┌───────────────────────┐
     // │       Vests       │
     // └───────────────────────┘
-    class SWLB_clone_arc_armor;
-    class VestItem;
+    class V_PlateCarrier1_rgr;
+    class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
+    {
+        class ItemInfo;
+    };
+    class SWLB_clone_arc_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo;
+        }
+    };
 
     class BNA_KC_Vest_ARC: SWLB_clone_arc_armor
     {
@@ -91,19 +101,17 @@ class CfgWeapons
             "BNA_KC_Gear\SpecialForces\Data\Vests\BNA_KC_Vest_ARC.paa"
         };
 
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
-            uniformModel = "SWLB_clones\SWLB_clone_arc_armor.p3d";
-            containerClass = "Supply100";
-            hiddenSelections[] =
-            {
-                "camo1",
-                "camo2"
-            };
-            mass = 100;
             vestType = "Rebreather";
             class HitpointsProtectionInfo
             {
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 10;
+                    passThrough = 0.20000001;
+                };
                 class Chest
                 {
                     HitpointName = "HitChest";
@@ -115,12 +123,6 @@ class CfgWeapons
                     hitpointName = "HitLegs";
                     armor = 20;
                     passThrough = 0.10000001;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 10;
-                    passThrough = 0.20000001;
                 };
             };
         };

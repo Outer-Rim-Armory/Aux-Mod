@@ -168,8 +168,11 @@ class CfgWeapons
     // ┌───────────────────────┐
     // │       Vests       │
     // └───────────────────────┘
-    class SWLB_clone_officer_armor;
-    class VestItem;
+    class SWLB_clone_basic_armor;
+    class SWLB_clone_officer_armor: SWLB_clone_basic_armor
+    {
+        class ItemInfo;
+    };
 
     class BNA_KC_Vest_Officer: SWLB_clone_officer_armor
     {
@@ -188,18 +191,17 @@ class CfgWeapons
             "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
         };
 
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
-            uniformModel = "SWLB_clones\SWLB_clone_officer_armor.p3d";
-            containerClass = "Supply40";
-            hiddenSelections[] =
-            {
-                "camo1"
-            };
-            mass = 80;
             vestType = "Rebreather";
             class HitpointsProtectionInfo
             {
+                class Arms
+                {
+                    hitpointName = "HitArms";
+                    armor = 10;
+                    passThrough = 0.20000001;
+                };
                 class Chest
                 {
                     HitpointName = "HitChest";
@@ -211,12 +213,6 @@ class CfgWeapons
                     hitpointName = "HitLegs";
                     armor = 20;
                     passThrough = 0.10000001;
-                };
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 10;
-                    passThrough = 0.20000001;
                 };
             };
         };
