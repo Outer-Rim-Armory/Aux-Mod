@@ -9,7 +9,6 @@ class BNA_KC_Unit_Phase2_Base;
 // class BNA_KC_Unit_Phase2_CAP;
 // class BNA_KC_Unit_Phase2_MAJ;
 // class BNA_KC_Unit_Phase2_CMD;
-class UniformItem;
 
 class BNA_KC_Unit_Dexus: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
 {

@@ -51,20 +51,19 @@ class CfgWeapons
     // ┌─────────────────┐
     // │   Uniforms   │
     // └─────────────────┘
-    class BNA_KC_Uniform_Base;
-    class UniformItem;
+    class ls_gar_phase2_uniform;
+    class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
+    {
+        class ItemInfo;
+    };
 
     class BNA_KC_Uniform_Pilot: BNA_KC_Uniform_Base
     {
         displayName = "[KC] AVI Armor";
 
-        class ItemInfo: UniformItem
+        class ItemInfo: ItemInfo
         {
-            uniformModel = "-";
             uniformClass = "BNA_KC_Unit_Phase2_Pilot";
-            containerClass = "Supply150"; // Uniform's storage
-            mass = 40;
-            uniformType = "Neopren";      // Makes the uniform swimwear
         };
     };
 };
