@@ -42,8 +42,8 @@ class BNA_KC_Helmet_Phase1_Burnt: BNA_KC_Helmet_Phase1_Base
 class BNA_KC_Helmet_Phase1_Burnt_Blue: BNA_KC_Helmet_Phase1_Burnt
 {
 	// Scopes
-	// scope = 1;
-    // scopeArsenal = 1;
+	scope = 1;
+    scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Burnt') [Blue Visor]";
 	hiddenSelectionsMaterials[] = 
@@ -87,8 +87,8 @@ class BNA_KC_Helmet_Phase1_Defter: BNA_KC_Helmet_Phase1_Base
 class BNA_KC_Helmet_Phase1_Defter_Blue: BNA_KC_Helmet_Phase1_Defter
 {
 	// Scopes
-	// scope = 1;
-    // scopeArsenal = 1;
+	scope = 1;
+    scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Defter') [Blue Visor]";
 	hiddenSelectionsMaterials[] = 
@@ -121,8 +121,8 @@ class BNA_KC_Helmet_Phase1_Dexus: BNA_KC_Helmet_Phase1_Base
 class BNA_KC_Helmet_Phase1_Dexus_Blue: BNA_KC_Helmet_Phase1_Base
 {
 	// Scopes
-	// scope = 1;
-    // scopeArsenal = 1;
+	scope = 1;
+    scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Dexus') [Blue Visor]";
 	hiddenSelectionsMaterials[] = 
@@ -166,8 +166,8 @@ class BNA_KC_Helmet_Phase1_Drake: BNA_KC_Helmet_Phase1_Base
 class BNA_KC_Helmet_Phase1_Drake_Blue: BNA_KC_Helmet_Phase1_Drake
 {
 	// Scopes
-	// scope = 1;
-    // scopeArsenal = 1;
+	scope = 1;
+    scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Drake') [Blue Visor]";
 	hiddenSelectionsMaterials[] = 
@@ -418,8 +418,8 @@ class BNA_KC_Helmet_Phase2_Burnt: BNA_KC_Helmet_Phase2_Base
 class BNA_KC_Helmet_Phase2_Burnt_Blue: BNA_KC_Helmet_Phase2_Burnt
 {
 	// Scopes
-	// scope = 1;
-    // scopeArsenal = 1;
+	scope = 1;
+    scopeArsenal = 1;
 
 	displayName = "[KC] INF Helm ('Burnt')";
 	hiddenSelectionsMaterials[] = 
@@ -450,8 +450,8 @@ class BNA_KC_Helmet_Phase2_Dexus: BNA_KC_Helmet_Phase2_Base
 class BNA_KC_Helmet_Phase2_Dexus_Blue: BNA_KC_Helmet_Phase2_Dexus
 {
 	// Scopes
-	// scope = 1;
-    // scopeArsenal = 1;
+	scope = 1;
+    scopeArsenal = 1;
 
 	displayName = "[KC] INF Helm ('Dexus') [Blue Visor]";
 	hiddenSelectionsMaterials[] = 
@@ -762,8 +762,8 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot_Base
 class BNA_KC_Helmet_Phase1_Pilot_Blue_Blue: BNA_KC_Helmet_Phase1_Pilot_Base
 {
 	// Scopes
-	// scope = 1;
-    // scopeArsenal = 1;
+	scope = 1;
+    scopeArsenal = 1;
 
 	displayName = "[KC] AVI P1 Helm ('Blue') [Blue Visor]";
 	hiddenSelectionsMaterials[] = 
@@ -813,8 +813,8 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue: BNA_KC_Helmet_Phase2_Pilot_Base
 class BNA_KC_Helmet_Phase2_Pilot_Blue_Blue: BNA_KC_Helmet_Phase2_Pilot_Base
 {
 	// Scopes
-	// scope = 1;
-    // scopeArsenal = 1;
+	scope = 1;
+    scopeArsenal = 1;
 
 	displayName = "[KC] AVI Helm ('Blue') [Blue Visor]";
 	hiddenSelectionsMaterials[] = 
