@@ -1,3 +1,12 @@
+/*
+Custom Visor Color Names
+* Red   : Crimson
+* Blue  : Bacta
+* Purple: Plasma
+* Green : Kyber
+*/
+
+
 // ┌───────────────────┐
 // │    P1  Helmets    │
 // └───────────────────┘
@@ -45,7 +54,7 @@ class BNA_KC_Helmet_Phase1_Burnt_Blue: BNA_KC_Helmet_Phase1_Burnt
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] INF P1 Helm ('Burnt') [Blue Visor]";
+	displayName = "[KC] INF P1 Helm ('Burnt') [Bacta Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -90,7 +99,7 @@ class BNA_KC_Helmet_Phase1_Defter_Blue: BNA_KC_Helmet_Phase1_Defter
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] INF P1 Helm ('Defter') [Blue Visor]";
+	displayName = "[KC] INF P1 Helm ('Defter') [Bacta Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -124,7 +133,7 @@ class BNA_KC_Helmet_Phase1_Dexus_Blue: BNA_KC_Helmet_Phase1_Base
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] INF P1 Helm ('Dexus') [Blue Visor]";
+	displayName = "[KC] INF P1 Helm ('Dexus') [Bacta Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -169,7 +178,7 @@ class BNA_KC_Helmet_Phase1_Drake_Blue: BNA_KC_Helmet_Phase1_Drake
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] INF P1 Helm ('Drake') [Blue Visor]";
+	displayName = "[KC] INF P1 Helm ('Drake') [Bacta Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -249,7 +258,7 @@ class BNA_KC_Helmet_Phase1_Joe_Red: BNA_KC_Helmet_Phase1_Joe
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] INF P1 Helm ('Joe') [Red Visor]";
+	displayName = "[KC] INF P1 Helm ('Joe') [Crimson Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -284,7 +293,7 @@ class BNA_KC_Helmet_Phase1_Keeli_Red: BNA_KC_Helmet_Phase1_Keeli
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] INF P1 Helm ('Keeli') [Red Visor]";
+	displayName = "[KC] INF P1 Helm ('Keeli') [Crimson Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -453,7 +462,7 @@ class BNA_KC_Helmet_Phase2_Dexus_Blue: BNA_KC_Helmet_Phase2_Dexus
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] INF Helm ('Dexus') [Blue Visor]";
+	displayName = "[KC] INF Helm ('Dexus') [Bacta Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -557,7 +566,7 @@ class BNA_KC_Helmet_Phase2_Joe_Red: BNA_KC_Helmet_Phase2_Joe
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] INF Helm ('Joe') [Red Visor]";
+	displayName = "[KC] INF Helm ('Joe') [Crimson Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -591,7 +600,7 @@ class BNA_KC_Helmet_Phase2_Keeli_Red: BNA_KC_Helmet_Phase2_Keeli
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] INF Helm ('Keeli') [Red Visor]";
+	displayName = "[KC] INF Helm ('Keeli') [Crimson Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -765,7 +774,7 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue_Blue: BNA_KC_Helmet_Phase1_Pilot_Base
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] AVI P1 Helm ('Blue') [Blue Visor]";
+	displayName = "[KC] AVI P1 Helm ('Blue') [Bacta Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -816,7 +825,7 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue_Blue: BNA_KC_Helmet_Phase2_Pilot_Base
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] AVI Helm ('Blue') [Blue Visor]";
+	displayName = "[KC] AVI Helm ('Blue') [Bacta Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
@@ -900,7 +909,7 @@ class BNA_KC_Helmet_ARC_Drake_Blue: BNA_KC_Helmet_ARC_Drake
 	scope = 1;
     scopeArsenal = 1;
 
-	displayName = "[KC] SF ARC Helm ('Drake') [Blue Visor]";
+	displayName = "[KC] SF ARC Helm ('Drake') [Bacta Visor]";
 	hiddenSelectionsMaterials[] = 
     {
         "",
