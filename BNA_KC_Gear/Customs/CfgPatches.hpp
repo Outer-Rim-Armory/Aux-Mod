@@ -38,11 +38,15 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Anvil",
             "BNA_KC_Helmet_Phase1_Axel",
             "BNA_KC_Helmet_Phase1_Burnt",
+            "BNA_KC_Helmet_Phase1_Burnt_Blue",
             "BNA_KC_Helmet_Phase1_Catholic",
             "BNA_KC_Helmet_Phase1_Defter",
+            "BNA_KC_Helmet_Phase1_Defter_Blue",
             "BNA_KC_Helmet_Phase1_Dexus",
+            "BNA_KC_Helmet_Phase1_Dexus_Blue",
             "BNA_KC_Helmet_Phase1_Dogo",
             "BNA_KC_Helmet_Phase1_Drake",
+            "BNA_KC_Helmet_Phase1_Drake_Blue",
             "BNA_KC_Helmet_Phase1_Grey",
             "BNA_KC_Helmet_Phase1_Hazard",
             "BNA_KC_Helmet_Phase1_Jaws",
@@ -63,7 +67,9 @@ class CfgPatches
             // Phase 2 Helmets
             "BNA_KC_Helmet_Phase2_Axel",
             "BNA_KC_Helmet_Phase2_Burnt",
+            "BNA_KC_Helmet_Phase2_Burnt_Blue",
             "BNA_KC_Helmet_Phase2_Dexus",
+            "BNA_KC_Helmet_Phase2_Dexus_Blue",
             "BNA_KC_Helmet_Phase2_Dogo",
             "BNA_KC_Helmet_Phase2_Fil",
             "BNA_KC_Helmet_Phase2_FilSquad",
@@ -88,10 +94,12 @@ class CfgPatches
             // Phase 1 Pilot Helmets
             "BNA_KC_Helmet_Phase1_Pilot_Bailout",
             "BNA_KC_Helmet_Phase1_Pilot_Blue",
+            "BNA_KC_Helmet_Phase1_Pilot_Blue_Blue",
 
             // Phase 2 Pilot Helmets
             "BNA_KC_Helmet_Phase2_Pilot_Bailout",
             "BNA_KC_Helmet_Phase2_Pilot_Blue",
+            "BNA_KC_Helmet_Phase2_Pilot_Blue_Blue",
 
             // Phase 1 SpecOP Helmets
             "BNA_KC_Helmet_Phase1_Tanker_Grey",
@@ -102,6 +110,7 @@ class CfgPatches
 
             // Special Forces Helmets
             "BNA_KC_Helmet_ARC_Drake",
+            "BNA_KC_Helmet_ARC_Drake_Blue",
             "BNA_KC_Helmet_ARC_Hagrid",
             "BNA_KC_Helmet_ARC_Tyrant",
             "BNA_KC_Helmet_ARF_Patriot",
