@@ -829,7 +829,6 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue_Blue: BNA_KC_Helmet_Phase2_Pilot_Base
 	hiddenSelectionsMaterials[] = 
     {
         "",
-		"",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
     hiddenSelectionsTextures[] =
