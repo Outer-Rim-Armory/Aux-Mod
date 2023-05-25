@@ -1,20 +1,7 @@
+#include "\BNA_KC_Gear\Macros.hpp"
+    // Helmet Holder macro
+
 class ls_blueforHeadgear_base;
-
-// Macro to create the helmet holder classes for a given helmet
-#define HELMET_HOLDER(CLASS_NAME, DISPLAY_NAME, HELM_NAME) \
-class CLASS_NAME: BNA_KC_HelmetHolder_P2_CR \
-{ \
-    displayName = DISPLAY_NAME; \
-    class TransportItems \
-    { \
-        class HELM_NAME \
-        { \
-            name = HELM_NAME; \
-            count = 1; \
-        }; \
-    }; \
-};
-
 
 // ┌───────────────────┐
 // │    P2  Helmets    │

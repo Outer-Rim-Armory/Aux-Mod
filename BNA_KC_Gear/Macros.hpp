@@ -35,3 +35,20 @@ thermalMode Values
 */
 #define VISION_MODE () "Normal", "NVG", "TI"
 #define THERMAL_MODE () 0
+
+
+// Objects
+// Macro for making a placeable version of a helmet
+#define HELMET_HOLDER(CLASS_NAME, DISPLAY_NAME, HELM_NAME) \
+class CLASS_NAME: BNA_KC_HelmetHolder_P2_CR \
+{ \
+    displayName = DISPLAY_NAME; \
+    class TransportItems \
+    { \
+        class HELM_NAME \
+        { \
+            name = HELM_NAME; \
+            count = 1; \
+        }; \
+    }; \
+};
