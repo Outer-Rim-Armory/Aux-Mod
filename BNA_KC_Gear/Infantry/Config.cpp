@@ -741,7 +741,7 @@ class CfgEditorSubcategories
         displayName = "Infantry - Snow";
     };
 
-    class BNA_KC_Props_Helmets
+    class BNA_KC_Objects_Helmets
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";

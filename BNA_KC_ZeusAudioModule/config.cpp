@@ -1,17 +1,3 @@
-class CfgEditorCategories
-{
-    class BNA_KC_Objects
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-        
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "[KC] Objects";
-    };
-};
-
 class CfgEditorSubcategories
 {
     class BNA_KC_AmbientSounds

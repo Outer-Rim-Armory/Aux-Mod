@@ -31,8 +31,8 @@ class BNA_KC_HelmetHolder_P2_CR: ls_blueforHeadgear_base
     scopeArsenal = 2;
 
     // Editor Attributes
-    editorCategory = "BNA_KC_Props";
-    editorSubcategory = "BNA_KC_Props_Helmets";
+    editorCategory = "BNA_KC_Objects";
+    editorSubcategory = "BNA_KC_Objects_Helmets";
 
     displayName = "[KC] INF P2 Helm 00 (Recruit)";
     class TransportItems
