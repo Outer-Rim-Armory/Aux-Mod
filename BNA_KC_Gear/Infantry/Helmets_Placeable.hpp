@@ -1,3 +1,5 @@
+class ls_blueforHeadgear_base;
+
 // Macro to create the helmet holder classes for a given helmet
 #define HELMET_HOLDER(CLASS_NAME, DISPLAY_NAME, HELM_NAME) \
 class CLASS_NAME: BNA_KC_HelmetHolder_P2_CR \
@@ -13,7 +15,6 @@ class CLASS_NAME: BNA_KC_HelmetHolder_P2_CR \
     }; \
 };
 
-class ls_blueforHeadgear_base;
 
 // ┌───────────────────┐
 // │    P2  Helmets    │
