@@ -63,3 +63,15 @@ class CfgFactionClasses
         displayName = "[KC] Keeli Company";
     };
 };
+
+class CfgEditorCategories
+{
+    class BNA_KC_Props
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "[KC] Keeli Company Props";
+    };
+}

@@ -16,6 +16,7 @@ class CfgPatches
                 // Insulated Helmet
                 // Basic Uniform
                 // Insulated Uniform
+                // Placeable Helmet Props
             "lsd_units_bluefor",
                 // Base Clone Unit
             "lsd_equipment_bluefor",
