@@ -39,10 +39,11 @@ thermalMode Values
 
 // Objects
 // Macro for making a placeable version of a helmet
-#define HELMET_HOLDER(CLASS_NAME, DISPLAY_NAME, HELM_NAME) \
+#define HELMET_HOLDER(CLASS_NAME, DISPLAY_NAME, HELM_NAME, SUBCAT) \
 class CLASS_NAME: BNA_KC_HelmetHolder_P2_CR \
 { \
     displayName = DISPLAY_NAME; \
+	editorSubcategory = __EVAL("BNA_KC_Objects_Helmets_" + SUBCAT); \
     class TransportItems \
     { \
         class HELM_NAME \

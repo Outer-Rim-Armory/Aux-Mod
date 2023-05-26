@@ -741,7 +741,7 @@ class CfgEditorSubcategories
         displayName = "Infantry - Snow";
     };
 
-    class BNA_KC_Objects_Helmets
+    class BNA_KC_Objects_Helmets_P1
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
@@ -749,6 +749,17 @@ class CfgEditorSubcategories
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "Placeable Helmets";
+        displayName = "Placeable Helmets - Phase 1";
+    };
+
+    class BNA_KC_Objects_Helmets_P2
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Placeable Helmets - Phase 2";
     };
 };
