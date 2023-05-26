@@ -762,4 +762,15 @@ class CfgEditorSubcategories
 
         displayName = "Placeable Helmets - Phase 2";
     };
+
+    class BNA_KC_Objects_Helmets_Insulated
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Placeable Helmets - Insulated";
+    };
 };

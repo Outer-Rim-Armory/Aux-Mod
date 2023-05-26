@@ -94,3 +94,22 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CSFC, [KC] INF P1 Helm 08 (Sergeant First C
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CMS, [KC] INF P1 Helm 09 (Master Sergeant), BNA_KC_Helmet_Phase1_CMS, "P1")
 
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CSM, [KC] INF P1 Helm 10 (Sergeant Major), BNA_KC_Helmet_Phase1_CSM, "P1")
+
+
+// ┌───────────────────┐
+// │    AB  Helmets    │
+// └───────────────────┘
+HELMET_HOLDER(BNA_KC_HelmetHolder_AB, [KC] AB Helm (Trooper), BNA_KC_Helmet_Airborne_Base, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_AB_v2, [KC] AB Helm (Trooper, Version 2), BNA_KC_Helmet_Airborne_v2, "P2")
+
+
+// ┌───────────────────┐
+// │    ENG Helmets    │
+// └───────────────────┘
+HELMET_HOLDER(BNA_KC_HelmetHolder_ENG, [KC] ENG Helm (Base), BNA_KC_Helmet_Engineer_Base, "P2")
+
+
+// ┌───────────────────┐
+// │   SNOW  Helmets   │
+// └───────────────────┘
+HELMET_HOLDER(BNA_KC_HelmetHolder_Insulated, [KC] INF Snow Helm (Trooper), BNA_KC_Helmet_Insulated_Base, "Insulated")
