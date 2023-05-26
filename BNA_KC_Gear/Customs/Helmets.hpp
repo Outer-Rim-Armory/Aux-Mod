@@ -12,17 +12,6 @@ Custom Visor Color Names
 // └───────────────────┘
 class BNA_KC_Helmet_Phase1_Base;
 
-class BNA_KC_Helmet_Phase1_Anvil: BNA_KC_Helmet_Phase1_Base
-{
-	displayName = "[KC] INF P1 Helm ('Anvil')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 1\BNA_KC_Helmet_P1_Anvil.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
-	};
-};
-
 class BNA_KC_Helmet_Phase1_Axel: BNA_KC_Helmet_Phase1_Base
 {
 	displayName = "[KC] INF P1 Helm ('Axel')";

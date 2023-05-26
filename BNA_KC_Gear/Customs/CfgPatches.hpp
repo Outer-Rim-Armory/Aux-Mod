@@ -35,7 +35,6 @@ class CfgPatches
         weapons[] =
         {
             // Phase 1 Helmets
-            "BNA_KC_Helmet_Phase1_Anvil",
             "BNA_KC_Helmet_Phase1_Axel",
             "BNA_KC_Helmet_Phase1_Burnt",
             "BNA_KC_Helmet_Phase1_Burnt_Blue",
