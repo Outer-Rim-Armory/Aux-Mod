@@ -84,6 +84,54 @@ class CfgPatches
             "BNA_KC_Backpack_Heavy",
             "BNA_KC_Backpack_Medic",
             "BNA_KC_Backpack_Radio",
+
+            // Objects
+            // Placeable P1 Helmets
+            "BNA_KC_HelmetHolder_P1_CR",
+            "BNA_KC_HelmetHolder_P1_CT",
+            "BNA_KC_HelmetHolder_P1_CT_v2",
+            "BNA_KC_HelmetHolder_P1_CT_v3",
+            "BNA_KC_HelmetHolder_P1_CT_v4",
+            "BNA_KC_HelmetHolder_P1_SCT",
+            "BNA_KC_HelmetHolder_P1_VCT",
+            "BNA_KC_HelmetHolder_P1_LCPL",
+            "BNA_KC_HelmetHolder_P1_CPL",
+            "BNA_KC_HelmetHolder_P1_CS",
+            "BNA_KC_HelmetHolder_P1_CSS",
+            "BNA_KC_HelmetHolder_P1_CSFC",
+            "BNA_KC_HelmetHolder_P1_CMS",
+            "BNA_KC_HelmetHolder_P1_CSM",
+
+            // Placeable P2 Helmets
+            "BNA_KC_HelmetHolder_P2_CR",
+            "BNA_KC_HelmetHolder_P2_CR_Legacy",
+            "BNA_KC_HelmetHolder_P2_CT",
+            "BNA_KC_HelmetHolder_P2_CT_v2",
+            "BNA_KC_HelmetHolder_P2_CT_Legacy",
+            "BNA_KC_HelmetHolder_P2_SCT",
+            "BNA_KC_HelmetHolder_P2_SCT_Legacy",
+            "BNA_KC_HelmetHolder_P2_VCT",
+            "BNA_KC_HelmetHolder_P2_VCT_Legacy",
+            "BNA_KC_HelmetHolder_P2_LCPL",
+            "BNA_KC_HelmetHolder_P2_LCPL_Legacy",
+            "BNA_KC_HelmetHolder_P2_CPL",
+            "BNA_KC_HelmetHolder_P2_CS",
+            "BNA_KC_HelmetHolder_P2_CS_Legacy",
+            "BNA_KC_HelmetHolder_P2_CSS",
+            "BNA_KC_HelmetHolder_P2_CSS_Legacy",
+            "BNA_KC_HelmetHolder_P2_CSFC",
+            "BNA_KC_HelmetHolder_P2_CSFC_Legacy",
+            "BNA_KC_HelmetHolder_P2_CMS",
+            "BNA_KC_HelmetHolder_P2_CMS_Legacy",
+            "BNA_KC_HelmetHolder_P2_CSM",
+            "BNA_KC_HelmetHolder_P2_CSM_Legacy",
+            "BNA_KC_HelmetHolder_P2_Officer",
+
+            // Placeable Misc Helmets
+            "BNA_KC_HelmetHolder_AB",
+            "BNA_KC_HelmetHolder_AB_v2",
+            "BNA_KC_HelmetHolder_ENG",
+            "BNA_KC_HelmetHolder_Insulated"
         };
         weapons[] =
         {
