@@ -234,7 +234,7 @@ class BNA_KC_Helmet_Phase1_Joe: BNA_KC_Helmet_Phase1_Base
 	// NVG Script
 	BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Joe";
-    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase1_Joe_Red";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase1_Joe_Crimson";
 
 	displayName = "[KC] INF P1 Helm ('Joe')";
 	hiddenSelectionsTextures[] =
@@ -244,7 +244,6 @@ class BNA_KC_Helmet_Phase1_Joe: BNA_KC_Helmet_Phase1_Base
         "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
-
 class BNA_KC_Helmet_Phase1_Joe_Crimson: BNA_KC_Helmet_Phase1_Joe
 {
 	// Scopes
@@ -270,7 +269,7 @@ class BNA_KC_Helmet_Phase1_Keeli: BNA_KC_Helmet_Phase1_Base
 {
 	BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Keeli";
-    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase1_Keeli_Red";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase1_Keeli_Crimson";
 
 	displayName = "[KC] INF P1 Helm ('Keeli')";
 	hiddenSelectionsTextures[] =
@@ -280,7 +279,6 @@ class BNA_KC_Helmet_Phase1_Keeli: BNA_KC_Helmet_Phase1_Base
         "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
-
 class BNA_KC_Helmet_Phase1_Keeli_Crimson: BNA_KC_Helmet_Phase1_Keeli
 {
 	// Scopes
@@ -312,7 +310,6 @@ class BNA_KC_Helmet_Phase1_Lou: BNA_KC_Helmet_Phase1_Base
         "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
-
 class BNA_KC_Helmet_Phase1_Lou_Plasma: BNA_KC_Helmet_Phase1_Lou
 {
 	// Scopes
@@ -577,7 +574,7 @@ class BNA_KC_Helmet_Phase2_Joe: BNA_KC_Helmet_Phase2_Base
 	// NVG Script
 	BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Joe";
-    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Joe_Red";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Joe_Crimson";
 
 	displayName = "[KC] INF Helm ('Joe')";
 	hiddenSelectionsTextures[] =
@@ -586,8 +583,7 @@ class BNA_KC_Helmet_Phase2_Joe: BNA_KC_Helmet_Phase2_Base
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
 	};
 };
-
-class BNA_KC_Helmet_Phase2_Joe_Red: BNA_KC_Helmet_Phase2_Joe
+class BNA_KC_Helmet_Phase2_Joe_Crimson: BNA_KC_Helmet_Phase2_Joe
 {
 	// Scopes
 	scope = 1;
@@ -611,7 +607,7 @@ class BNA_KC_Helmet_Phase2_Keeli: BNA_KC_Helmet_Phase2_Base
 	// NVG Script
 	BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Keeli";
-    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Keeli_Red";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Keeli_Crimson";
 
 	displayName = "[KC] INF Helm ('Keeli')";
 	hiddenSelectionsTextures[] =
@@ -620,8 +616,7 @@ class BNA_KC_Helmet_Phase2_Keeli: BNA_KC_Helmet_Phase2_Base
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
 	};
 };
-
-class BNA_KC_Helmet_Phase2_Keeli_Red: BNA_KC_Helmet_Phase2_Keeli
+class BNA_KC_Helmet_Phase2_Keeli_Crimson: BNA_KC_Helmet_Phase2_Keeli
 {
 	// Scopes
 	scope = 1;
