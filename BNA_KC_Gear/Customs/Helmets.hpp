@@ -291,6 +291,10 @@ class BNA_KC_Helmet_Phase1_Keeli_Crimson: BNA_KC_Helmet_Phase1_Keeli
 
 class BNA_KC_Helmet_Phase1_Lou: BNA_KC_Helmet_Phase1_Base
 {
+	BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Lou";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase1_Lou_Plasma";
+
 	displayName = "[KC] INF P1 Helm ('Lou')";
 	hiddenSelectionsTextures[] =
 	{
