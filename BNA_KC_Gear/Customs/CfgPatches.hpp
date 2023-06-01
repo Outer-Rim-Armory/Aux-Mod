@@ -54,6 +54,8 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Joe_Red",
             "BNA_KC_Helmet_Phase1_Keeli",
             "BNA_KC_Helmet_Phase1_Keeli_Red",
+            "BNA_KC_Helmet_Phase1_Lou",
+            "BNA_KC_Helmet_Phase1_Lou_Plasma",
             "BNA_KC_Helmet_Phase1_Ox",
             "BNA_KC_Helmet_Phase1_Patriot",
             "BNA_KC_Helmet_Phase1_Ponds",
