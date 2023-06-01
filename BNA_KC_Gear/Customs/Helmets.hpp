@@ -139,17 +139,6 @@ class BNA_KC_Helmet_Phase1_Dexus_Bacta: BNA_KC_Helmet_Phase1_Base
 	};
 };
 
-class BNA_KC_Helmet_Phase1_Dogo: BNA_KC_Helmet_Phase1_Base
-{
-	displayName = "[KC] INF P1 Helm ('Dogo')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 1\BNA_KC_Helmet_P1_Dogo.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
-	};
-};
-
 class BNA_KC_Helmet_Phase1_Drake: BNA_KC_Helmet_Phase1_Base
 {
 	BNAKC_Helmet_Toggle = 1;
@@ -507,16 +496,6 @@ class BNA_KC_Helmet_Phase2_Dexus_Bacta: BNA_KC_Helmet_Phase2_Dexus
 	{
 		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Dexus.paa",
 		"BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Bacta.paa",
-	};
-};
-
-class BNA_KC_Helmet_Phase2_Dogo: BNA_KC_Helmet_Phase2_Base
-{
-	displayName = "[KC] INF Helm ('Dogo')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Dogo.paa",
-		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
 	};
 };
 
