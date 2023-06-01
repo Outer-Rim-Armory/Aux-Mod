@@ -62,6 +62,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Rodger",
             "BNA_KC_Helmet_Phase1_Sin",
             "BNA_KC_Helmet_Phase1_Splashdown",
+            "BNA_KC_Helmet_Phase1_Swoop",
             "BNA_KC_Helmet_Phase1_Vortex",
             "BNA_KC_Helmet_Phase1_Woods",
 
@@ -87,6 +88,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Sin",
             "BNA_KC_Helmet_Phase2_Splashdown",
             "BNA_KC_Helmet_Phase2_Stone",
+            "BNA_KC_Helmet_Phase2_Swoop",
             "BNA_KC_Helmet_Phase2_Vortex",
             "BNA_KC_Helmet_Phase2_Woods",
 
@@ -96,11 +98,13 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Pilot_Bailout",
             "BNA_KC_Helmet_Phase1_Pilot_Blue",
             "BNA_KC_Helmet_Phase1_Pilot_Blue_Bacta",
+            "BNA_KC_Helmet_Phase1_Pilot_Mischief",
 
             // Phase 2 Pilot Helmets
             "BNA_KC_Helmet_Phase2_Pilot_Bailout",
             "BNA_KC_Helmet_Phase2_Pilot_Blue",
             "BNA_KC_Helmet_Phase2_Pilot_Blue_Bacta",
+            "BNA_KC_Helmet_Phase2_Pilot_Mischief",
 
             // Phase 1 SpecOP Helmets
             "BNA_KC_Helmet_Phase1_Tanker_Grey",

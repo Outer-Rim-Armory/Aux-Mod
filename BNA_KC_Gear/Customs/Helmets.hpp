@@ -397,6 +397,17 @@ class BNA_KC_Helmet_Phase1_Splashdown: BNA_KC_Helmet_Phase1_Base
 	};
 };
 
+class BNA_KC_Helmet_Phase1_Swoop: BNA_KC_Helmet_Phase1_Base
+{
+	displayName = "[KC] INF P1 Helm ('Swoop')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 1\BNA_KC_Helmet_P1_Swoop.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+	};
+};
+
 class BNA_KC_Helmet_Phase1_Vortex: BNA_KC_Helmet_Phase1_Base
 {
 	displayName = "[KC] INF P1 Helm ('Vortex')";
@@ -705,6 +716,16 @@ class BNA_KC_Helmet_Phase2_Stone: BNA_KC_Helmet_Phase2_Base
 	};
 };
 
+class BNA_KC_Helmet_Phase2_Swoop: BNA_KC_Helmet_Phase2_Base
+{
+	displayName = "[KC] INF Helm ('Swoop')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Swoop.paa",
+		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+	};
+};
+
 class BNA_KC_Helmet_Phase2_Vortex: BNA_KC_Helmet_Phase2_Base
 {
 	displayName = "[KC] INF Helm ('Vortex')";
@@ -811,6 +832,17 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase1_Pilot_Base
     };
 };
 
+class BNA_KC_Helmet_Phase1_Pilot_Mischief: BNA_KC_Helmet_Phase1_Pilot_Base
+{
+	displayName = "[KC] AVI P1 Helm ('Mischief')";
+	hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Pilots\Phase 1\BNA_KC_Helmet_P1_Pilot_Mischief.paa",
+        "BNA_KC_Gear\Customs\Data\Helmets\Pilots\Phase 1\BNA_KC_Helmet_P1_Pilot_Mischief_LifeSupport.paa",
+        "ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
+    };
+};
+
 
 
 // ┌───────────────────┐
@@ -857,6 +889,16 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase2_Pilot_Base
     {
         "BNA_KC_Gear\Customs\Data\Helmets\Pilots\Phase 2\BNA_KC_Helmet_P2_Pilot_Blue.paa",
         "BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Bacta.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_Pilot_Mischief: BNA_KC_Helmet_Phase2_Pilot_Base
+{
+	displayName = "[KC] AVI Helm ('Mischief')";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Pilots\Phase 2\BNA_KC_Helmet_P2_Pilot_Mischief.paa",
+        "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
     };
 };
 
