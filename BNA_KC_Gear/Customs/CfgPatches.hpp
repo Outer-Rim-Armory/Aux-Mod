@@ -93,6 +93,11 @@ class CfgPatches
 
             // Engineer Helmets
 
+            // Insulated Helmets
+            "BNA_KC_Helmet_Insulated_Dexus",
+            "BNA_KC_Helmet_Insulated_Joe",
+            "BNA_KC_Helmet_Insulated_Keeli",
+
             // Phase 1 Pilot Helmets
             "BNA_KC_Helmet_Phase1_Pilot_Bailout",
             "BNA_KC_Helmet_Phase1_Pilot_Blue",
@@ -119,11 +124,6 @@ class CfgPatches
             "BNA_KC_Helmet_ARC_Tyrant",
             "BNA_KC_Helmet_ARF_Patriot",
             "BNA_KC_Helmet_ARF_Sin",
-
-            // Insulated Helmets
-            "BNA_KC_Helmet_Insulated_Dexus",
-            "BNA_KC_Helmet_Insulated_Joe",
-            "BNA_KC_Helmet_Insulated_Keeli",
 
             // Standard Uniforms
             "BNA_KC_Uniform_Dexus",
