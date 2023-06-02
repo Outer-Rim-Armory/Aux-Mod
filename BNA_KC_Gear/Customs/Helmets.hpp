@@ -794,7 +794,7 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot_Base
         "ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase1_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase1_Pilot_Base
+class BNA_KC_Helmet_Phase1_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase1_Pilot_Blue
 {
 	// Scopes
 	scope = 1;
