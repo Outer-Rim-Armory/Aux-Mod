@@ -118,7 +118,7 @@ class BNA_KC_Helmet_Phase1_Dexus: BNA_KC_Helmet_Phase1_Base
         "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
-class BNA_KC_Helmet_Phase1_Dexus_Bacta: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Dexus_Bacta: BNA_KC_Helmet_Phase1_Dexus
 {
 	// Scopes
 	scope = 1;
