@@ -10,6 +10,18 @@ class BNA_KC_Unit_Phase2_Base;
 // class BNA_KC_Unit_Phase2_MAJ;
 // class BNA_KC_Unit_Phase2_CMD;
 
+class BNA_KC_Unit_Test: BNA_KC_Unit_Phase2_Base
+{
+    displayName = "[KC] Test Unit";
+    uniformClass = "BNA_KC_Uniform_Test";
+	hiddenSelectionsTextures[] =
+	{
+        "BNA_KC_Gear\Customs\Data\Test Color Upper Armor.paa",
+        "BNA_KC_Gear\Customs\Data\Test Color Lower Armor.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa" 
+    };
+};
+
 class BNA_KC_Unit_Dexus: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
 {
 	// Editor Attributes
