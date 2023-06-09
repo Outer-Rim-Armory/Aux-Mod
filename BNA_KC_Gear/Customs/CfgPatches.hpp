@@ -78,12 +78,13 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Jaws",
             "BNA_KC_Helmet_Phase2_Jester",
             "BNA_KC_Helmet_Phase2_Joe",
+            "BNA_KC_Helmet_Phase2_Joe_Crimson",
             "BNA_KC_Helmet_Phase2_Keeli",
+            "BNA_KC_Helmet_Phase2_Keeli_Crimson",
             "BNA_KC_Helmet_Phase2_Ox",
             "BNA_KC_Helmet_Phase2_Patriot",
             "BNA_KC_Helmet_Phase2_Ponds",
             "BNA_KC_Helmet_Phase2_Rodger",
-            "BNA_KC_Helmet_Phase2_Sin",
             "BNA_KC_Helmet_Phase2_Splashdown",
             "BNA_KC_Helmet_Phase2_Stone",
             "BNA_KC_Helmet_Phase2_Swoop",
@@ -91,6 +92,11 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Woods",
 
             // Engineer Helmets
+
+            // Insulated Helmets
+            "BNA_KC_Helmet_Insulated_Dexus",
+            "BNA_KC_Helmet_Insulated_Joe",
+            "BNA_KC_Helmet_Insulated_Keeli",
 
             // Phase 1 Pilot Helmets
             "BNA_KC_Helmet_Phase1_Pilot_Bailout",
@@ -117,11 +123,7 @@ class CfgPatches
             "BNA_KC_Helmet_ARC_Hagrid",
             "BNA_KC_Helmet_ARC_Tyrant",
             "BNA_KC_Helmet_ARF_Patriot",
-
-            // Insulated Helmets
-            "BNA_KC_Helmet_Insulated_Dexus",
-            "BNA_KC_Helmet_Insulated_Joe",
-            "BNA_KC_Helmet_Insulated_Keeli",
+            "BNA_KC_Helmet_ARF_Sin",
 
             // Standard Uniforms
             "BNA_KC_Uniform_Dexus",

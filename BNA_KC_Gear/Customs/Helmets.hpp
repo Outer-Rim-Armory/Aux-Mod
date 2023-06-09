@@ -118,7 +118,7 @@ class BNA_KC_Helmet_Phase1_Dexus: BNA_KC_Helmet_Phase1_Base
         "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
-class BNA_KC_Helmet_Phase1_Dexus_Bacta: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Dexus_Bacta: BNA_KC_Helmet_Phase1_Dexus
 {
 	// Scopes
 	scope = 1;
@@ -669,16 +669,6 @@ class BNA_KC_Helmet_Phase2_Rodger: BNA_KC_Helmet_Phase2_Base
 	};
 };
 
-class BNA_KC_Helmet_Phase2_Sin: BNA_KC_Helmet_Phase2_Base
-{
-	displayName = "[KC] INF Helm ('Sin')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Sin.paa",
-		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
-	};
-};
-
 class BNA_KC_Helmet_Phase2_Splashdown: BNA_KC_Helmet_Phase2_Base
 {
 	displayName = "[KC] INF Helm ('Splashdown')";
@@ -794,7 +784,7 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot_Base
         "ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase1_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase1_Pilot_Base
+class BNA_KC_Helmet_Phase1_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase1_Pilot_Blue
 {
 	// Scopes
 	scope = 1;
@@ -856,7 +846,7 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue: BNA_KC_Helmet_Phase2_Pilot_Base
         "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase2_Pilot_Base
+class BNA_KC_Helmet_Phase2_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase2_Pilot_Blue
 {
 	// Scopes
 	scope = 1;
@@ -995,6 +985,17 @@ class BNA_KC_Helmet_ARF_Patriot: BNA_KC_Helmet_ARF_Base
 	{
 	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARF\BNA_KC_Helmet_ARF_Patriot.paa",
 	    "", // Helmet "flaps"
+        "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa" // Visor
+	};
+};
+
+class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF_Base
+{
+	displayName = "[KC] SF ARF Helm ('Sin')";
+	hiddenSelectionsTextures[] = 
+	{
+	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARF\BNA_KC_Helmet_ARF_Sin.paa",
+	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARF\BNA_KC_Helmet_ARF_Sin_Flaps.paa", // Helmet "flaps"
         "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa" // Visor
 	};
 };

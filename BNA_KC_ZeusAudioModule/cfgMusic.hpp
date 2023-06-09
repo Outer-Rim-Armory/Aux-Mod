@@ -699,4 +699,24 @@ class CfgMusic
         duration = 214;
         musicClass = "BNA_KC_OtherMusic"; // Music category
 	};
+
+
+	
+	class BNA_KC_ElGeneral1
+	{
+        name = "[EPF] El General Speech 1";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\El_General1.ogg",db+0,1};
+        duration = 49;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+	};
+
+
+
+	class BNA_KC_ElGeneral2
+	{
+        name = "[EPF] El General Speech 2";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\El_General2.ogg",db+0,1};
+        duration = 52;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+	};
 };
