@@ -7,15 +7,6 @@ class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
     class ItemInfo;
 };
 
-class BNA_KC_Uniform_Test: BNA_KC_Uniform_Base
-{
-	displayName = "Test Armor";
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = "BNA_KC_Unit_Test";
-    };
-};
-
 class BNA_KC_Uniform_Dexus: BNA_KC_Uniform_Base
 {
 	displayName = "[KC] INF Armor ('Dexus')";
