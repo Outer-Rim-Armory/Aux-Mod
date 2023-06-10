@@ -10,6 +10,31 @@ class BNA_KC_Unit_Phase2_Base;
 // class BNA_KC_Unit_Phase2_MAJ;
 // class BNA_KC_Unit_Phase2_CMD;
 
+class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
+{
+	// Editor Attributes
+	editorSubcategory = "BNA_KC_Customs";
+
+	displayName = "[KC] Burnt";
+    uniformClass = "BNA_KC_Uniform_Burnt";
+	hiddenSelectionsTextures[] =
+	{
+        "BNA_KC_Gear\Customs\Data\Uniforms\BNA_KC_Uniform_Burnt_Upper.paa",
+        "BNA_KC_Gear\Customs\Data\Uniforms\BNA_KC_Uniform_Burnt_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa" 
+    };
+
+	// Loadout
+	linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Burnt", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Burnt", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
+
 class BNA_KC_Unit_Dexus: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
 {
 	// Editor Attributes

@@ -7,6 +7,15 @@ class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
     class ItemInfo;
 };
 
+class BNA_KC_Uniform_Burnt: BNA_KC_Uniform_Base
+{
+	displayName = "[KC] INF Armor ('Burnt')";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Burnt";
+    };
+};
+
 class BNA_KC_Uniform_Dexus: BNA_KC_Uniform_Base
 {
 	displayName = "[KC] INF Armor ('Dexus')";

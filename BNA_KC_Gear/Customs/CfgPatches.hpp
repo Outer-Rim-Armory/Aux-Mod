@@ -15,6 +15,7 @@ class CfgPatches
         units[] =
         {
             // Standard Units
+            "BNA_KC_Unit_Burnt",
             "BNA_KC_Unit_Dexus",
             "BNA_KC_Unit_Drake",
             "BNA_KC_Unit_Fil",
@@ -126,6 +127,7 @@ class CfgPatches
             "BNA_KC_Helmet_ARF_Sin",
 
             // Standard Uniforms
+            "BNA_KC_Uniform_Burnt",
             "BNA_KC_Uniform_Dexus",
             "BNA_KC_Uniform_Drake",
             "BNA_KC_Uniform_Fil",
