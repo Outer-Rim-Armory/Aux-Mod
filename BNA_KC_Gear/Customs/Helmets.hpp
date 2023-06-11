@@ -886,7 +886,7 @@ class BNA_KC_Helmet_Phase1_Tanker_Grey: BNA_KC_Helmet_Phase1_Tanker_Base
 	displayName = "[KC] ARMR P1 Helm ('Grey')";
     hiddenSelectionsTextures[] =
     {
-        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 1\BNA_KC_Helmet_Reeker_P1_Grey.paa",
+        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 1\BNA_KC_Helmet_P1_Tanker_Grey.paa",
         "ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
     };
 };
@@ -902,7 +902,7 @@ class BNA_KC_Helmet_Phase2_Tanker_Catholic: BNA_KC_Helmet_Phase2_Tanker_Base
 	displayName = "[KC] ARMR Helm ('Catholic')";
     hiddenSelectionsTextures[] =
     {
-        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 2\BNA_KC_Helmet_Reeker_P2_Catholic.paa",
+        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 2\BNA_KC_Helmet_P2_Tanker_Catholic.paa",
         "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
     };
 };
@@ -912,7 +912,7 @@ class BNA_KC_Helmet_Phase2_Tanker_Grey: BNA_KC_Helmet_Phase2_Tanker_Base
 	displayName = "[KC] ARMR Helm ('Grey')";
     hiddenSelectionsTextures[] =
     {
-        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 2\BNA_KC_Helmet_Reeker_P2_Grey.paa",
+        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 2\BNA_KC_Helmet_P2_Tanker_Grey.paa",
         "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
     };
 };
