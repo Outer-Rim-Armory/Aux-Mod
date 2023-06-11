@@ -939,7 +939,7 @@ class BNA_KC_Helmet_ARC_Burnt: BNA_KC_Helmet_ARC_Base
 	    "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
 	};
 };
-class BNA_KC_Helmet_ARC_Burnt_Bacta: BNA_KC_Helmet_ARC_Drake
+class BNA_KC_Helmet_ARC_Burnt_Bacta: BNA_KC_Helmet_ARC_Burnt
 {
 	// Scopes
 	scope = 1;
