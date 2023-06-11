@@ -119,6 +119,8 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Tanker_Grey",
 
             // Special Forces Helmets
+            "BNA_KC_Helmet_ARC_Burnt",
+            "BNA_KC_Helmet_ARC_Burnt_Bacta",
             "BNA_KC_Helmet_ARC_Drake",
             "BNA_KC_Helmet_ARC_Drake_Bacta",
             "BNA_KC_Helmet_ARC_Hagrid",
