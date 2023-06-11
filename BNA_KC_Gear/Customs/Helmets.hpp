@@ -401,17 +401,6 @@ class BNA_KC_Helmet_Phase1_Swoop: BNA_KC_Helmet_Phase1_Base
 	};
 };
 
-class BNA_KC_Helmet_Phase1_Vortex: BNA_KC_Helmet_Phase1_Base
-{
-	displayName = "[KC] INF P1 Helm ('Vortex')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 1\BNA_KC_Helmet_P1_Vortex.paa",
-		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
-	};
-};
-
 class BNA_KC_Helmet_Phase1_Woods: BNA_KC_Helmet_Phase1_Base
 {
 	displayName = "[KC] INF P1 Helm ('Woods')";
@@ -695,16 +684,6 @@ class BNA_KC_Helmet_Phase2_Swoop: BNA_KC_Helmet_Phase2_Base
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Swoop.paa",
-		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
-	};
-};
-
-class BNA_KC_Helmet_Phase2_Vortex: BNA_KC_Helmet_Phase2_Base
-{
-	displayName = "[KC] INF Helm ('Vortex')";
-	hiddenSelectionsTextures[] =
-	{
-		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Vortex.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
 	};
 };
