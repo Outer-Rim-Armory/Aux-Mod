@@ -27,9 +27,9 @@ class CfgWeapons
             "ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
         };
     };
-    class BNA_KC_Helmet_Phase1_Tanker_Alternate: BNA_KC_Helmet_Phase1_Tanker_Base
+    class BNA_KC_Helmet_Phase1_Tanker_v2: BNA_KC_Helmet_Phase1_Tanker_Base
     {
-        displayName = "[KC] ARMR P1 Helm (Trooper, Alternate)";
+        displayName = "[KC] ARMR P1 Helm (Trooper, Version 2)";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Helmet_P1_Tanker_v2.paa",
@@ -55,9 +55,9 @@ class CfgWeapons
             "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
         };
     };
-    class BNA_KC_Helmet_Phase2_Tanker_Alternate: BNA_KC_Helmet_Phase2_Tanker_Base
+    class BNA_KC_Helmet_Phase2_Tanker_v2: BNA_KC_Helmet_Phase2_Tanker_Base
     {
-        displayName = "[KC] ARMR Helm (Trooper, Alternate)";
+        displayName = "[KC] ARMR Helm (Trooper, Version 2)";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Helmet_P2_Tanker_v2.paa",
