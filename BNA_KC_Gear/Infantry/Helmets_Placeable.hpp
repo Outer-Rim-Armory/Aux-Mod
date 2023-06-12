@@ -46,13 +46,10 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CPL, [KC] INF P2 Helm 05 (Corporal Trooper)
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CS, [KC] INF P2 Helm 06 (Sergeant), BNA_KC_Helmet_Phase2_CS, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CS_Legacy, [KC] INF P2 Helm 06 (Sergeant, Legacy), BNA_KC_Helmet_Phase2_CS_Legacy, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CSS, [KC] INF P2 Helm 07 (Staff Sergeant), BNA_KC_Helmet_Phase2_CSS, "P2")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CSS_Legacy, [KC] INF P2 Helm 07 (Staff Sergeant, Legacy), BNA_KC_Helmet_Phase2_CSS_Legacy, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CSFC, [KC] INF P2 Helm 08 (Sergeant First Class), BNA_KC_Helmet_Phase2_CSFC, "P2")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CSFC_Legacy, [KC] INF P2 Helm 08 (Sergeant First Class, Legacy), BNA_KC_Helmet_Phase2_CSFC_Legacy, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CMS, [KC] INF P2 Helm 09 (Master Sergeant), BNA_KC_Helmet_Phase2_CMS, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CMS_Legacy, [KC] INF P2 Helm 09 (Master Sergeant, Legacy), BNA_KC_Helmet_Phase2_CMS_Legacy, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CSM, [KC] INF P2 Helm 10 (Sergeant Major), BNA_KC_Helmet_Phase2_CSM, "P2")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CSM_Legacy, [KC] INF P2 Helm 10 (Sergeant Major, Legacy), BNA_KC_Helmet_Phase2_CSM_Legacy, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Officer, [KC] INF P2 Helm 12+ (Officer), BNA_KC_Helmet_Phase2_Officer, "P2")
 
 
