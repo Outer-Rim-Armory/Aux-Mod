@@ -97,7 +97,7 @@ class CfgWeapons
         displayName = "[KC] SF ARC Vest";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Vests\BNA_KC_Vest_ARC_Chest.paa",
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa",
             "BNA_KC_Gear\SpecialForces\Data\Vests\BNA_KC_Vest_ARC.paa"
         };
 

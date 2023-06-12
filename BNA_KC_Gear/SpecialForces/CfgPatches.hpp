@@ -9,6 +9,7 @@ class CfgPatches
         {
             "BNA_KC_Gear_Infantry",
                 // Base KC Unit
+                // Officer Pauldron Texture (For ARC Vest)
             "ls_armor_bluefor",
                 // ARF Helm
                 // BARC Helm
