@@ -905,6 +905,38 @@ class BNA_KC_Helmet_ARC_Base;
 class BNA_KC_Helmet_ARF_Base;
 class BNA_KC_Helmet_BARC_Base;
 
+class BNA_KC_Helmet_ARC_Burnt: BNA_KC_Helmet_ARC_Base
+{
+	BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_ARC_Burnt";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_ARC_Burnt_Bacta";
+
+	displayName = "[KC] SF ARC Helm ('Burnt')";
+	hiddenSelectionsTextures[] = 
+	{
+	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARC\BNA_KC_Helmet_ARC_Burnt.paa",
+	    "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+	};
+};
+class BNA_KC_Helmet_ARC_Burnt_Bacta: BNA_KC_Helmet_ARC_Burnt
+{
+	// Scopes
+	scope = 1;
+    scopeArsenal = 1;
+
+	displayName = "[KC] SF ARC Helm ('Burnt') [Bacta Visor]";
+	hiddenSelectionsMaterials[] = 
+    {
+        "",
+        "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+	hiddenSelectionsTextures[] = 
+	{
+	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARC\BNA_KC_Helmet_ARC_Burnt.paa",
+	    "BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Bacta.paa"
+	};
+};
+
 class BNA_KC_Helmet_ARC_Drake: BNA_KC_Helmet_ARC_Base
 {
 	BNAKC_Helmet_Toggle = 1;

@@ -118,13 +118,10 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_CS",
             "BNA_KC_HelmetHolder_P2_CS_Legacy",
             "BNA_KC_HelmetHolder_P2_CSS",
-            "BNA_KC_HelmetHolder_P2_CSS_Legacy",
             "BNA_KC_HelmetHolder_P2_CSFC",
-            "BNA_KC_HelmetHolder_P2_CSFC_Legacy",
             "BNA_KC_HelmetHolder_P2_CMS",
             "BNA_KC_HelmetHolder_P2_CMS_Legacy",
             "BNA_KC_HelmetHolder_P2_CSM",
-            "BNA_KC_HelmetHolder_P2_CSM_Legacy",
             "BNA_KC_HelmetHolder_P2_Officer",
 
             // Placeable Misc Helmets

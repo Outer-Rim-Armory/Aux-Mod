@@ -96,6 +96,8 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Tanker_Grey, [KC] ARMR P2 Helm ('Grey'), BN
 // ┌───────────────────┐
 // │    SF  Helmets    │
 // └───────────────────┘
+HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Burnt, [KC] SF ARC Helm ('Burnt'), BNA_KC_Helmet_ARC_Burnt, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Burnt_Bacta, [KC] SF ARC Helm ('Burnt') [Bacta Visor], BNA_KC_Helmet_ARC_Drake_Bacta, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Drake, [KC] SF ARC Helm ('Drake'), BNA_KC_Helmet_ARC_Drake, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Drake_Bacta, [KC] SF ARC Helm ('Drake') [Bacta Visor], BNA_KC_Helmet_ARC_Drake_Bacta, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Hagrid, [KC] SF ARC Helm ('Hagrid'), BNA_KC_Helmet_ARC_Hagrid, "Customs")
