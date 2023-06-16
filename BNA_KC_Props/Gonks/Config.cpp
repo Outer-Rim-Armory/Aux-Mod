@@ -4,6 +4,7 @@
 class CfgVehicles
 {
     class 3as_GNK;
+
     class BNA_KC_Gonk_Uniforms: 3as_GNK
 	{
 		// Mod Info
@@ -14,13 +15,13 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		side = 3;
+		
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
-        editorSubcategory = "BNA_KC_SubCat_PGonks";
+        editorSubcategory = "BNA_KC_SubCat_Gonks";
+		side = 3;
 
         displayName = "[KC] Uniform Dispenser";
-		
 		
 		class UserActions
 		{
@@ -62,14 +63,19 @@ class CfgVehicles
 	};
 };
 
+
 class CfgEditorSubcategories
 {
-    class BNA_KC_SubCat_PGonks
+    class BNA_KC_SubCat_Gonks
 	{
+		// Mod Info
 		dlc = "BNA_KC";
 		author = "SweMonkey and DartRuffian";
+
+		// Scope
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Props - Gonks";
+
+		displayName = "Gonks";
 	};
 };
