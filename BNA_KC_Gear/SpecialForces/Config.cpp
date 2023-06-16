@@ -132,7 +132,6 @@ class CfgWeapons
 
 class CfgVehicles
 {
-    #include "Helmets_Placeable.hpp"
     // ┌───────────────────┐
     // │       Units       │
     // └───────────────────┘
@@ -242,16 +241,5 @@ class CfgEditorSubcategories
         scopeCurator = 2;
 
         displayName = "Special Forces";
-    };
-
-    class BNA_KC_Objects_Helmets_SF
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Placeable Helmets - Special Forces";
     };
 };

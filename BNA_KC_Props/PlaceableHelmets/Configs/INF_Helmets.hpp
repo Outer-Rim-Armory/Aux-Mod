@@ -1,37 +1,25 @@
-#include "\BNA_KC_Gear\Macros.hpp"
-    // Helmet Holder macro
-
-class ls_blueforHeadgear_base;
+// ┌───────────────────┐
+// │    P1  Helmets    │
+// └───────────────────┘
+// P1 CR Helmet is defined in main config
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CT, [KC] INF P1 Helm 01 (Trooper), BNA_KC_Helmet_Phase1_CT, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CT_v2, [KC] INF P1 Helm 01 (Trooper, Version 2), BNA_KC_Helmet_Phase1_CT_v2, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CT_v3, [KC] INF P1 Helm 01 (Trooper, Version 3), BNA_KC_Helmet_Phase1_CT_v3, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CT_v4, [KC] INF P1 Helm 01 (Trooper, Version 4), BNA_KC_Helmet_Phase1_CT_v4, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_SCT, [KC] INF P1 Helm 02 (Senior Trooper), BNA_KC_Helmet_Phase1_SCT, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_VCT, [KC] INF P1 Helm 03 (Veteran Trooper), BNA_KC_Helmet_Phase1_VCT, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_LCPL, [KC] INF P1 Helm 04 (Lance Corporal Trooper), BNA_KC_Helmet_Phase1_LCPL, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CPL, [KC] INF P1 Helm 05 (Corporal Trooper), BNA_KC_Helmet_Phase1_CPL, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CS, [KC] INF P1 Helm 06 (Sergeant), BNA_KC_Helmet_Phase1_CS, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CSS, [KC] INF P1 Helm 07 (Staff Sergeant), BNA_KC_Helmet_Phase1_CSS, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CSFC, [KC] INF P1 Helm 08 (Sergeant First Class), BNA_KC_Helmet_Phase1_CSFC, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CMS, [KC] INF P1 Helm 09 (Master Sergeant), BNA_KC_Helmet_Phase1_CMS, "P1")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CSM, [KC] INF P1 Helm 10 (Sergeant Major), BNA_KC_Helmet_Phase1_CSM, "P1")
 
 // ┌───────────────────┐
 // │    P2  Helmets    │
 // └───────────────────┘
-class BNA_KC_HelmetHolder_P2_CR: ls_blueforHeadgear_base
-{
-    // Mod Info
-    dlc = "BNA_KC";
-    author = "SweMonkey and DartRuffian";
-
-    // Scope
-    scope = 2;
-    scopeCurator = 2;
-    scopeArsenal = 2;
-
-    // Editor Attributes
-    editorCategory = "BNA_KC_Objects";
-    editorSubcategory = "BNA_KC_Objects_Helmets_P2";
-
-    displayName = "[KC] INF P2 Helm 00 (Recruit)";
-    class TransportItems
-    {
-        class BNA_KC_Helmet_Phase2_CR
-        {
-            name = "BNA_KC_Helmet_Phase2_CR";
-            count = 1;
-        };
-    };
-};
-
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CR, [KC] INF P2 Helm 00 (Recruit), BNA_KC_Helmet_Phase2_CR, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CR_Legacy, [KC] INF P2 Helm 00 (Recruit, Legacy), BNA_KC_Helmet_Phase2_CR_Legacy, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CT, [KC] INF P2 Helm 01 (Trooper), BNA_KC_Helmet_Phase2_CT, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CT_v2, [KC] INF P2 Helm 01 (Trooper, Version 2), BNA_KC_Helmet_Phase2_CT_v2, "P2")
@@ -51,25 +39,6 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CMS, [KC] INF P2 Helm 09 (Master Sergeant),
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CMS_Legacy, [KC] INF P2 Helm 09 (Master Sergeant, Legacy), BNA_KC_Helmet_Phase2_CMS_Legacy, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CSM, [KC] INF P2 Helm 10 (Sergeant Major), BNA_KC_Helmet_Phase2_CSM, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Officer, [KC] INF P2 Helm 12+ (Officer), BNA_KC_Helmet_Phase2_Officer, "P2")
-
-
-// ┌───────────────────┐
-// │    P1  Helmets    │
-// └───────────────────┘
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CR, [KC] INF P1 Helm 00 (Recruit), BNA_KC_Helmet_Phase1_CR, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CT, [KC] INF P1 Helm 01 (Trooper), BNA_KC_Helmet_Phase1_CT, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CT_v2, [KC] INF P1 Helm 01 (Trooper, Version 2), BNA_KC_Helmet_Phase1_CT_v2, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CT_v3, [KC] INF P1 Helm 01 (Trooper, Version 3), BNA_KC_Helmet_Phase1_CT_v3, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CT_v4, [KC] INF P1 Helm 01 (Trooper, Version 4), BNA_KC_Helmet_Phase1_CT_v4, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_SCT, [KC] INF P1 Helm 02 (Senior Trooper), BNA_KC_Helmet_Phase1_SCT, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_VCT, [KC] INF P1 Helm 03 (Veteran Trooper), BNA_KC_Helmet_Phase1_VCT, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_LCPL, [KC] INF P1 Helm 04 (Lance Corporal Trooper), BNA_KC_Helmet_Phase1_LCPL, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CPL, [KC] INF P1 Helm 05 (Corporal Trooper), BNA_KC_Helmet_Phase1_CPL, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CS, [KC] INF P1 Helm 06 (Sergeant), BNA_KC_Helmet_Phase1_CS, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CSS, [KC] INF P1 Helm 07 (Staff Sergeant), BNA_KC_Helmet_Phase1_CSS, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CSFC, [KC] INF P1 Helm 08 (Sergeant First Class), BNA_KC_Helmet_Phase1_CSFC, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CMS, [KC] INF P1 Helm 09 (Master Sergeant), BNA_KC_Helmet_Phase1_CMS, "P1")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P1_CSM, [KC] INF P1 Helm 10 (Sergeant Major), BNA_KC_Helmet_Phase1_CSM, "P1")
 
 
 // ┌───────────────────┐

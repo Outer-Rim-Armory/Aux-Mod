@@ -28,12 +28,7 @@ class CfgPatches
             "BNA_KC_Unit_BARC",
             
             // Backpacks
-            "BNA_KC_Backpack_ARC",
-
-            // Objects
-            "BNA_KC_HelmetHolder_ARC",
-            "BNA_KC_HelmetHolder_ARF",
-            "BNA_KC_HelmetHolder_BARC"
+            "BNA_KC_Backpack_ARC"
         };
         weapons[] =
         {

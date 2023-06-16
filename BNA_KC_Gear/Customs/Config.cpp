@@ -25,7 +25,6 @@ class CfgWeapons
 class CfgVehicles
 {
     #include "Units.hpp"
-    #include "Helmets_Placeable.hpp"
 
     // ┌───────────────────┐
     // │     Backpacks     │
@@ -51,23 +50,14 @@ class CfgEditorSubcategories
 {
     class BNA_KC_Customs
     {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
+        // Scope
         scope = 2;
         scopeCurator = 2;
 
         displayName = "Customs";
-    };
-
-    class BNA_KC_Objects_Helmets_Customs
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Placeable Helmets - Customs";
     };
 };

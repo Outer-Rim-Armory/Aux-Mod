@@ -1,6 +1,3 @@
-#include "\BNA_KC_Gear\Macros.hpp" // Helmet Holder macro
-class BNA_KC_HelmetHolder_P2_CR;   // Base helmet holder
-
 // ┌───────────────────┐
 // │    P1  Helmets    │
 // └───────────────────┘

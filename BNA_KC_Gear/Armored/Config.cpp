@@ -69,7 +69,6 @@ class CfgWeapons
 
 class CfgVehicles
 {
-    #include "Helmets_Placeable.hpp"
     // ┌───────────────────┐
     // │       Units       │
     // └───────────────────┘

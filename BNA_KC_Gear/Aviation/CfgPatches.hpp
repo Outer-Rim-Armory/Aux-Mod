@@ -18,11 +18,7 @@ class CfgPatches
         {
             // Units
             "BNA_KC_Unit_Phase1_Pilot",
-            "BNA_KC_Unit_Phase2_Pilot",
-
-            // Objects
-            "BNA_KC_HelmetHolder_P1_Pilot",
-            "BNA_KC_HelmetHolder_P2_Pilot"
+            "BNA_KC_Unit_Phase2_Pilot"
         };
         weapons[] =
         {

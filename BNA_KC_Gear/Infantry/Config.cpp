@@ -354,8 +354,6 @@ class CfgWeapons
 
 class CfgVehicles
 {
-    #include "Helmets_Placeable.hpp"
-
     // ┌───────────────────┐
     // │       Units       │
     // └───────────────────┘
@@ -739,38 +737,5 @@ class CfgEditorSubcategories
         scopeCurator = 2;
 
         displayName = "Infantry - Snow";
-    };
-
-    class BNA_KC_Objects_Helmets_P1
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Placeable Helmets - Phase 1";
-    };
-
-    class BNA_KC_Objects_Helmets_P2
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Placeable Helmets - Phase 2";
-    };
-
-    class BNA_KC_Objects_Helmets_Insulated
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Placeable Helmets - Insulated";
     };
 };
