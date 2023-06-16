@@ -1,8 +1,8 @@
 class CfgPatches
 {
-    class BNA_KC_Vehicles_Gonks
+    class BNA_KC_Props_Gonks
     {
-        addonRootClass= "BNA_KC_Vehicles";
+        addonRootClass= "BNA_KC_Props";
         author = "SweMonkey and DartRuffian";
         requiredVersion = 0.1;
         requiredAddons[] =
