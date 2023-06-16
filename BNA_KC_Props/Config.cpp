@@ -10,4 +10,17 @@ class CfgPatches
     };
 };
 
-// TODO: Move BNA_KC_Objects declaration here
+
+class CfgEditorCategories
+{
+    class BNA_KC_Objects
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] Objects";
+    };
+};
