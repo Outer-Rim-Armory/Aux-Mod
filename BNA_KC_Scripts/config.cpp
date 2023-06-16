@@ -19,6 +19,12 @@ class CfgFunctions
 			file = "BNA_KC_Scripts\Data\Functions\Helmets";
 			class helmetNVGSwitch{};
 		};
+		class Loadouts
+		{
+			file = "BNA_KC_Scripts\Data\Functions\Loadouts";
+			class GrabLoadout{};
+			class GrabUniform{};
+		};
 		class Misc
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
