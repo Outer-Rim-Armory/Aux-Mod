@@ -40,6 +40,7 @@ class CfgMods
     };
 };
 
+
 class CfgPatches
 {
     class BNA_KC_Gear
@@ -51,6 +52,7 @@ class CfgPatches
         weapons[] = {};
     };
 };
+
 
 class CfgFactionClasses
 {
