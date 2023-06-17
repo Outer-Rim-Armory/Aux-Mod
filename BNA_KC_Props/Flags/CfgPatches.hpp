@@ -13,8 +13,8 @@ class CfgPatches
         units[] =
 		{
 			"BNA_KC_Flag_KeeliCompany_Pole",
-            "BNA_KC_Flag_KeeliCompany_Horizontal",
-            "BNA_KC_Flag_KeeliCompany_Vertical"
+            "BNA_KC_Flag_KeeliCompany_Vertical",
+            "BNA_KC_Flag_KeeliCompany_Horizontal"
 		};
         weapons[] = {};
     };

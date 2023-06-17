@@ -25,10 +25,10 @@ class CfgVehicles
 
         class EventHandlers
         {
-            init = "(_this select 0) setFlagTexture 'BNA_KC_Props\Data\Flags\BNA_KC_Flag_KeeliCompany.paa'";
+            init = "(_this select 0) setFlagTexture 'BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompany.paa'";
         };
     };
-    class BNA_KC_Flag_KeeliCompany_Horizontal: ls_staticFlag_base
+    class BNA_KC_Flag_KeeliCompany_Vertical: ls_staticFlag_base
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -43,7 +43,7 @@ class CfgVehicles
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_Flags";
 
-        displayName = "[KC] Keeli Company (Horizontal)";
+        displayName = "[KC] Keeli Company (Vertical)";
 
         // model and hiddenSelections need to be re-stated because 41st Aux modifies ls_staticFlag_base
         model = "LS_statics_props\flags\ls_vertical_flag";
@@ -53,24 +53,24 @@ class CfgVehicles
 		};
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Props\Data\Flags\BNA_KC_Flag_KeeliCompany.paa"
+            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompany_Vertical.paa"
         };
-
-        // EH to rotate flag | WIP
-        // class EventHandlers
-        // {
-        //     // init = "[(_this select 0), [0, 0, 270]] call BIS_fnc_setObjectRotation;";
-        //     init = "(_this select 0) setVectorUp [0,0,-1];";
-        // };
     };
-    class BNA_KC_Flag_KeeliCompany_Vertical: BNA_KC_Flag_KeeliCompany_Horizontal
+    class BNA_KC_Flag_KeeliCompany_Horizontal: BNA_KC_Flag_KeeliCompany_Vertical
     {
-        displayName = "[KC] Keeli Company (Vertical)";
+        displayName = "[KC] Keeli Company (Horizontal)";
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Props\Data\Flags\BNA_KC_Flag_KeeliCompany_Vertical.paa"
+            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompany.paa"
         };
+        /* EH to rotate flag | WIP
+        class EventHandlers
+        {
+            // init = "systemChat 'Config EH'; (_this select 0) setVectorUp [0,-1,0];";
+            init = "systemChat 'Config EH'; [(_this select 0), [0, 0, 270]] call BIS_fnc_setObjectRotation;";
+        };
+        */
     };
 };
 
