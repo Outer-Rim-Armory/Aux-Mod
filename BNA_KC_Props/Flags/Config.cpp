@@ -21,7 +21,7 @@ class CfgVehicles
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_Flags";
 
-        displayName = "[KC] Keeli Company (Pole)";
+        displayName = "[KC] KC Flag (Pole)";
 
         class EventHandlers
         {
@@ -43,7 +43,7 @@ class CfgVehicles
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_Flags";
 
-        displayName = "[KC] Keeli Company (Vertical)";
+        displayName = "[KC] KC Flag (Vertical)";
 
         // model and hiddenSelections need to be re-stated because 41st Aux modifies ls_staticFlag_base
         model = "LS_statics_props\flags\ls_vertical_flag";
@@ -58,7 +58,7 @@ class CfgVehicles
     };
     class BNA_KC_Flag_KeeliCompany_Horizontal: BNA_KC_Flag_KeeliCompany_Vertical
     {
-        displayName = "[KC] Keeli Company (Horizontal)";
+        displayName = "[KC] KC Flag (Horizontal)";
 
         hiddenSelectionsTextures[] =
         {
@@ -75,7 +75,7 @@ class CfgVehicles
 
     class BNA_KC_Flag_KeeliCompanyDamaged_Pole: BNA_KC_Flag_KeeliCompany_Pole
     {
-        displayName = "[KC] Keeli Company - Damaged (Pole)";
+        displayName = "[KC] KC Damaged Flag (Pole)";
         class EventHandlers
         {
             init = "(_this select 0) setFlagTexture 'BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged.paa'";
@@ -83,7 +83,7 @@ class CfgVehicles
     };
     class BNA_KC_Flag_KeeliCompanyDamaged_Vertical: BNA_KC_Flag_KeeliCompany_Vertical
     {
-        displayName = "[KC] Keeli Company - Damaged (Vertical)";
+        displayName = "[KC] KC Damaged Flag (Vertical)";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged_Vertical.paa"
@@ -91,7 +91,7 @@ class CfgVehicles
     };
     class BNA_KC_Flag_KeeliCompanyDamaged_Horizontal: BNA_KC_Flag_KeeliCompany_Horizontal
     {
-        displayName = "[KC] Keeli Company - Damaged (Horizontal)";
+        displayName = "[KC] KC Damaged Flag (Horizontal)";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged.paa"
