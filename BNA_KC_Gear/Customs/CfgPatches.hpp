@@ -31,7 +31,7 @@ class CfgPatches
             "BNA_KC_Unit_Insulated_Keeli"
 
             // Backpacks
-
+            "BNA_KC_Backpack_Keeli"
         };
         weapons[] =
         {
@@ -141,10 +141,7 @@ class CfgPatches
             "BNA_KC_Uniform_Insulated_Keeli",
 
             // NVGs
-            "BNA_KC_NVG_Officer_Keeli",
-
-            // Backpacks
-            "BNA_KC_Backpack_Keeli"
+            "BNA_KC_NVG_Officer_Keeli"
         };
     };
 };
