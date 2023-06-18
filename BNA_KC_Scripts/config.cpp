@@ -1,4 +1,4 @@
-class CfgPatches
+aclass CfgPatches
 {
 	class BNA_KC_Scripts
 	{
@@ -30,6 +30,7 @@ class CfgFunctions
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
 			class LoadoutBox{};
 			class PlayRestaurauntAmbience{};
+			class Rotator{};
 		};
 	};
 };
