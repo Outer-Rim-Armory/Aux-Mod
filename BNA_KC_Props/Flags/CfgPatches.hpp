@@ -17,7 +17,8 @@ class CfgPatches
             "BNA_KC_Flag_KeeliCompany_Horizontal",
             "BNA_KC_Flag_KeeliCompanyDamaged_Pole",
             "BNA_KC_Flag_KeeliCompanyDamaged_Vertical",
-            "BNA_KC_Flag_KeeliCompanyDamaged_Horizontal"
+            "BNA_KC_Flag_KeeliCompanyDamaged_Horizontal",
+            "BNA_KC_Flag_KeeliCompanyDamaged_HorizontalMirrored"
 		};
         weapons[] = {};
     };

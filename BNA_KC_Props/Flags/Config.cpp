@@ -97,6 +97,14 @@ class CfgVehicles
             "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged.paa"
         };
     };
+    class BNA_KC_Flag_KeeliCompanyDamaged_HorizontalMirrored: BNA_KC_Flag_KeeliCompany_Horizontal
+    {
+        displayName = "[KC] KC Damaged Flag (Horizontal, Mirrored)";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged_Mirrored.paa"
+        };
+    };
 };
 
 
