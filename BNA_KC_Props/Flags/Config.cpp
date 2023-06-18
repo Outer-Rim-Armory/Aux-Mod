@@ -72,6 +72,31 @@ class CfgVehicles
         };
         */
     };
+
+    class BNA_KC_Flag_KeeliCompanyDamaged_Pole: BNA_KC_Flag_KeeliCompany_Pole
+    {
+        displayName = "[KC] Keeli Company - Damaged (Pole)";
+        class EventHandlers
+        {
+            init = "(_this select 0) setFlagTexture 'BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged.paa'";
+        };
+    };
+    class BNA_KC_Flag_KeeliCompanyDamaged_Vertical: BNA_KC_Flag_KeeliCompany_Vertical
+    {
+        displayName = "[KC] Keeli Company - Damaged (Vertical)";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged_Vertical.paa"
+        };
+    };
+    class BNA_KC_Flag_KeeliCompanyDamaged_Horizontal: BNA_KC_Flag_KeeliCompany_Horizontal
+    {
+        displayName = "[KC] Keeli Company - Damaged (Horizontal)";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged.paa"
+        };
+    };
 };
 
 
