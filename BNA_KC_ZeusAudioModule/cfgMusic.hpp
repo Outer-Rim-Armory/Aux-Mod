@@ -719,4 +719,13 @@ class CfgMusic
         duration = 52;
         musicClass = "BNA_KC_OtherMusic"; // Music category
 	};
+
+
+	class BNA_KC_Bastard
+	{
+        name = "[MGR] Slippery Little Bastard";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Slippery_Little_Bastard.ogg",db+0,1};
+        duration = 125;
+        musicClass = "BNA_KC_VGMusic"; // Music category
+	};
 };
