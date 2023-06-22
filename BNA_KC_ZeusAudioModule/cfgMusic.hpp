@@ -721,6 +721,7 @@ class CfgMusic
 	};
 
 
+
 	class BNA_KC_Bastard
 	{
         name = "[MGR] Slippery Little Bastard";
