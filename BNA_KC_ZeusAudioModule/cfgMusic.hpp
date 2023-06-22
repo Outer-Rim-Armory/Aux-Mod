@@ -728,4 +728,12 @@ class CfgMusic
         duration = 125;
         musicClass = "BNA_KC_VGMusic"; // Music category
 	};
+
+	class BNA_KC_ZodDisbandsCouncil
+	{
+        name = "[MoS] Zod Disband's Council";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Superman_ZodDisbandsCouncil.ogg",db+0,1};
+        duration = 125;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+	};
 };
