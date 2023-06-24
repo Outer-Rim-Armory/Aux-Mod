@@ -8,21 +8,21 @@
     west, // west = bluefor
     100,  // budget
     [
-        // Hesco Barriers
-        ["Land_HBarrier_1_F", 5],             // Single Block
-        ["Land_HBarrier_3_F", 10],            // Barrier (3 Blocks)
-        ["Land_HBarrierWall4_F", 15],         // Hesco Wall
-        ["Land_HBarrierWall_corner_F", 15],   // Hesco Wall Corner
+        // Hesco Objects
+        ["Land_lsb_fob_hBarrier_1", 5],                   // Block
+        ["Land_lsb_fob_hBarrier_3", 10],                  // Barrier (3 Block)
+        ["Land_lsb_fob_hBarrierBig_4", 15],               // Large Hesco Wall
+        ["Land_lsb_fob_hBarrierWall_exvertedCorner", 15], // Large Hesco Wall Corner
+        ["Land_lsb_fob_hBarrier_ramp", 5],                // Hesco Ramp, ~2m
 
         // Sandbags
-        ["Land_BagFence_Long_F", 5],          // Straight
-        ["Land_BagFence_Round_F", 5],         // Round
+        ["Land_BagFence_Long_F", 5],  // Straight
+        ["Land_BagFence_Round_F", 5], // Round
 
         // Other
-        ["cwa_Wire", 10],                     // Barbed Wire
-        ["Land_PierLadder_F", 10],            // Ladder
-        ["Land_Plank_01_8m_F", 10],           // Plank, 8m
-        ["Land_Plank_01_4m_F", 5]             // Plank, 4m
+        ["cwa_Wire", 10],                  // Barbed Wire
+        ["Land_PierLadder_F", 10],         // Ladder
+        ["Land_Plank_01_8m_F", 10]         // Plank, 8m
     ]
 ] call ace_fortify_fnc_registerObjects;
 
