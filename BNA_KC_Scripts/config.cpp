@@ -31,6 +31,11 @@ class CfgFunctions
 			class LoadoutBox{};
 			class PlayRestaurauntAmbience{};
 		};
+		class Fortifications
+		{
+			file = "BNA_KC_Scripts\Data\Functions\Fortification";
+			class FortificationsPostInit{};
+		};
 	};
 };
 
@@ -39,5 +44,9 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Scripts_HelmetPostInit
 	{
         init = "call BNAKC_fnc_helmetNVGSwitch";
+    };
+    class BNA_KC_Scripts_FortificationsPostInit
+	{
+        init = "call BNAKC_fnc_FortificationsPostInit";
     };
 };
