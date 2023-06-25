@@ -163,7 +163,6 @@ class CfgWeapons
     };
 
     #include "Uniforms.hpp"
-    #include "Legacy.hpp" // Legacy class names (to not break kits)
 
     // ┌───────────────────┐
     // │       Vests       │

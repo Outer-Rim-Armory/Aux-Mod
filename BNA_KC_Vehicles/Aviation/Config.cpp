@@ -84,12 +84,6 @@ class CfgVehicles
 		ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
 		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
     };
-    class BNA_KC_laati_mk2_3AS: BNA_KC_LAATi_MK1
-    {
-        // Dummy class
-        scope = 1;
-        scopeCurator = 1;
-    };
 
     class BNA_KC_LAATi_MK2: W41_LAAT_MK1
     {
@@ -160,12 +154,6 @@ class CfgVehicles
         tas_can_impulse = 0; // Disables 3AS's Impulse System
 		ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
 		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
-    };
-    class BNA_KC_laati_mk1_3AS: BNA_KC_LAATi_MK2
-    {
-        // Dummy class
-        scope = 1;
-        scopeCurator = 1;
     };
 
     class BNA_KC_LAATc: lsd_heli_laatc

@@ -20,9 +20,7 @@ class CfgPatches
 		units[] =
 		{
 			"BNA_KC_LAATi_MK1",
-			"BNA_KC_laati_mk2_3AS", // Dummy
 			"BNA_KC_LAATi_MK2",
-			"BNA_KC_laati_mk1_3AS", // Dummy
 			"BNA_KC_LAATc"
 		};
 		weapons[] = {};
