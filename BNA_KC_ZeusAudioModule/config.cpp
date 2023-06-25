@@ -112,9 +112,9 @@ class CfgSFX
         BNA_KC_Ambient_JediWarning[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\Jedi_Warning.ogg",db+10,1,200,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
-	class BNA_KC_Ambient_AT-TE_Alarm_SFX
+	class BNA_KC_Ambient_ATTE_Alarm_SFX
 	{
-        name = "[KC] AT-TE Alarm";
+        name = "[KC] ATTE Alarm";
         sounds[] = {BNA_KC_Ambient_ATTE_Alarm};
         BNA_KC_Ambient_AT-TE_Alarm[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\ATTE_Alarm.ogg",db+50,1,500,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
