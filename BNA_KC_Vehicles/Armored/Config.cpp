@@ -494,6 +494,24 @@ class CfgVehicles
 			"3as\3as_atte\data\atte_underpiping_co.paa",
 			"3as\3as_atte\data\atte_middleleg_co.paa"
 		};
+
+        // Scrollwheel Actions
+        class UserActions
+        {
+            class PlayAlarm
+            {
+                displayName = "<t font='RobotoCondensedBold' color='#ffffff'>Play Alarm</t>";
+                position = "pilotview";
+                radius = 100;
+                priority = 100;
+                onlyForPlayer = 1;
+                hideOnUse = 0;
+
+                condition = "player == currentPilot this;";
+                // statement = "_sound = floor (random 3); playSound3D [format['BNA_KC_Vehicles\VehicleSounds\Data\Audio\Juggernaut\horn_%1%2', _sound, '.ogg'], this, false, getPosASL this, 5, 1, 50];";
+                statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 5, 1, 50];";
+            };
+        };
 	};
 };
 
