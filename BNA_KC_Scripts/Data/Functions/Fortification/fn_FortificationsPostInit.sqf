@@ -16,15 +16,3 @@ _whenPlaced =
         };
     }
 ] call CBA_fnc_addEventHandler;
-
-
-
-// Configure ACE Fortify settings
-// The time it takes to build an object is Ax + B
-// A is ace_fortify_timeCostCoefficient, x is the cost of the object
-// B is ace_fortify_timeMin
-
-// This setup makes it so that objects are placed instantly, and their cost is equal to what is set up in ace_fortify_fnc_registerObjects
-acex_fortify_settingHint = 1;        // Only show Budget updates for players with a fortify tool
-ace_fortify_timeCostCoefficient = 0; // Set the time multiplier for building
-ace_fortify_timeMin = 0;             // The minimum amount of time it takes to build
