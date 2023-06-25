@@ -30,8 +30,8 @@ class CfgPatches
 			// Optics
 			"BNA_KC_WestarM5_Scope",
             // Custom Weapons
-            "BNA_KC_Westar_M5",
-            "BNA_KC_Westar_M5_UGL",
+            "BNA_KC_WestarM5",
+            "BNA_KC_WestarM5_UGL",
             "BNA_KC_DC15A",
             "BNA_KC_DC15A_UGL",
             "BNA_KC_DC15S",
@@ -42,6 +42,16 @@ class CfgPatches
             // Pre-Defined Weapons
             "BNA_KC_DC15S_Predef",
             "BNA_KC_DC15C_Predef"
+        };
+        magazines[] =
+        {
+            "12thFleet_Mag_DC15A",
+            "12thFleet_Mag_DC15S",
+            "12thFleet_Mag_WestarM5",
+            "12thFleet_Mag_DC17",
+
+            "BNA_KC_Mag_300Rnd_Flamer",
+            "BNA_KC_Mag_150Rnd_Flamer"
         };
     };
 };

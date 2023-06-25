@@ -1,7 +1,39 @@
 class CfgMagazines
 {
-    class M2_Fuel_Tank;
+    // ┌──────────────────┐
+    // │      Common      │
+    // └──────────────────┘
+    // Primary
+    class JLTS_DC15A_mag;
+    class 12thFleet_Mag_DC15A: JLTS_DC15A_mag
+    {
+        displayName = "[12th Fleet] DC-15A Energy Cell (60 Rnd)";
+    };
 
+    class JLTS_DC15S_mag;
+    class 12thFleet_Mag_DC15S: JLTS_DC15S_mag
+    {
+        displayName = "[12th Fleet] DC-15S Energy Cell (80 Rnd)";
+    };
+
+    // Seconaary
+    class JLTS_DC17SA_mag;
+    class 12thFleet_Mag_DC17: JLTS_DC17SA_mag
+    {
+        displayName = "[12th Fleet] DC-17 Energy Cell (20 Rnd)";
+    };
+
+
+    // ┌───────────────────┐
+    // │    Specialized    │
+    // └───────────────────┘
+    class 3AS_60Rnd_EC50_Mag;
+    class 12thFleet_Mag_WestarM5: 3AS_60Rnd_EC50_Mag
+    {
+        displayName = "[12th Fleet] Westar-M5 Energy Cell (60 Rnd)";
+    };
+
+    class M2_Fuel_Tank;
     class BNA_KC_Mag_300Rnd_Flamer: M2_Fuel_Tank
     {
         displayName = "[KC] BT X-42 Fuel Tank";

@@ -36,7 +36,7 @@ class CfgWeapons
             class PointerSlot;
         };
     };
-    class BNA_KC_Westar_M5: 3AS_WestarM5_F
+    class BNA_KC_WestarM5: 3AS_WestarM5_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -50,6 +50,9 @@ class CfgWeapons
         displayName = "[KC] Westar-M5";
 		recoil = "recoil_smg_03";
         canShootInWater = 1;
+
+        magazines[] = { "12thFleet_Mag_WestarM5" };
+        magazineWell[] = {};
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
@@ -84,7 +87,7 @@ class CfgWeapons
         class FullAuto: FullAuto { class StandardSound; };
         class 3AS_WestarM5_GL_F;
     };
-    class BNA_KC_Westar_M5_UGL: 3AS_WestarM5_GL
+    class BNA_KC_WestarM5_UGL: 3AS_WestarM5_GL
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -98,6 +101,9 @@ class CfgWeapons
         displayName = "[KC] Westar-M5 UGL";
 		recoil = "recoil_smg_03";
         canShootInWater = 1;
+
+        magazines[] = { "12thFleet_Mag_WestarM5" };
+        magazineWell[] = {};
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
@@ -225,6 +231,8 @@ class CfgWeapons
         displayName = "[KC] DC-15S";
         canShootInWater = 1;
 
+        magazines[] = { "12thFleet_Mag_DC15S" };
+
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -295,6 +303,8 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15A";
+
+        magazines[] = { "12thFleet_Mag_DC15A" };
 
         modes[]=
         {
@@ -372,6 +382,8 @@ class CfgWeapons
             "FullAuto"
         };
         canShootInWater = 1;
+
+        magazines[] = { "12thFleet_Mag_DC15A" };
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
@@ -464,6 +476,8 @@ class CfgWeapons
         displayName = "[KC] DC-17";
         baseWeapon = "BNA_KC_DC17"; // Used to specify it as a different weapon
         canShootInWater = 1;
+
+        magazines[] = { "12thFleet_Mag_DC17" };
 
         class Single: Single
         {
