@@ -64,13 +64,13 @@ class CfgVehicles
         {
             "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompany.paa"
         };
-        // EH to rotate flag | WIP
+        /* EH to rotate flag | WIP
         class EventHandlers
         {
             // init = "systemChat 'Config EH'; (_this select 0) setVectorUp [0,-1,0];";
-            // init = "systemChat 'Config EH'; [(_this select 0), [0, 0, 270]] call BIS_fnc_setObjectRotation;";
-            init = "(_thais select 0) spawn BNAKC_fnc_Rotator;";
+            init = "systemChat 'Config EH'; [(_this select 0), [0, 0, 270]] call BIS_fnc_setObjectRotation;";
         };
+        */
     };
 };
 
