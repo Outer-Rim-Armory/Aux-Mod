@@ -616,6 +616,8 @@ class CfgVehicles
         scopeCurator = 2;
         scopeArsenal = 2;
 
+        maximumLoad = 400;
+
         displayName = "[KC] Clone Trooper Backpack";
         hiddenSelectionsTextures[] =
         {
@@ -639,8 +641,6 @@ class CfgVehicles
 
     class BNA_KC_Backpack_Heavy: BNA_KC_Backpack
     {
-        maximumLoad = 320;
-
         displayName = "[KC] Clone Trooper Heavy Backpack";
         hiddenSelectionsTextures[] =
         {
@@ -678,7 +678,7 @@ class CfgVehicles
         scopeCurator = 2;
         scopeArsenal = 2;
 
-        maximumLoad = 300;
+        maximumLoad = 400;
 
         displayName = "[KC] Clone Trooper Radio Backpack";
         hiddenSelectionsTextures[] =

@@ -4,7 +4,18 @@ class CfgPatches
 	{
 		author = "Monkey";
 		requiredVersion = 1;
-		requiredAddons[]={};
+		requiredAddons[]=
+        {
+            "cba_settings",
+                // Addon Options
+            "ace_fortify",
+                // Fortify system
+            "lsb_fob_hblock",
+                // LS's Hesco Blocks
+                // Comes from Legion Studios: Battlefields
+            "CUP_CWA_Misc"
+                // Barbed Wire
+        };
 		units[]={};
 		weapons[]={};
 	};
@@ -30,8 +41,23 @@ class CfgFunctions
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
 			class LoadoutBox{};
 			class PlayRestaurauntAmbience{};
+			class ConfigureAddonOptions{};
+		};
+		class Fortifications
+		{
+			file = "BNA_KC_Scripts\Data\Functions\Fortification";
+			class FortificationsPostInit{};
+            class RegisterPreset{};
 		};
 	};
+};
+
+class Extended_PreInit_EventHandlers
+{
+    class BNA_KC_Scripts_AddonOptionsPreInit
+	{
+        init = "call BNAKC_fnc_ConfigureAddonOptions";
+    };
 };
 
 class Extended_PostInit_EventHandlers
@@ -40,4 +66,11 @@ class Extended_PostInit_EventHandlers
 	{
         init = "call BNAKC_fnc_helmetNVGSwitch";
     };
+    class BNA_KC_Scripts_FortificationsPostInit
+	{
+        init = "call BNAKC_fnc_FortificationsPostInit";
+    };
 };
+
+
+#include "FortifyPresets.hpp"
