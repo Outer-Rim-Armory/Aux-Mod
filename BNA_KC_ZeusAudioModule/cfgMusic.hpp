@@ -707,7 +707,7 @@ class CfgMusic
         name = "[EPF] El General Speech 1";
         sound[] = {"BNA_KC_ZeusAudioModule\Audio\El_General1.ogg",db+0,1};
         duration = 49;
-        musicClass = "BNA_KC_OtherMusic"; // Music category
+        musicClass = "BNA_KC_SFX"; // Music category
 	};
 
 
@@ -717,7 +717,7 @@ class CfgMusic
         name = "[EPF] El General Speech 2";
         sound[] = {"BNA_KC_ZeusAudioModule\Audio\El_General2.ogg",db+0,1};
         duration = 52;
-        musicClass = "BNA_KC_OtherMusic"; // Music category
+        musicClass = "BNA_KC_SFX"; // Music category
 	};
 
 
@@ -730,11 +730,23 @@ class CfgMusic
         musicClass = "BNA_KC_VGMusic"; // Music category
 	};
 
+	
+
 	class BNA_KC_ZodDisbandsCouncil
 	{
         name = "[MoS] Zod Disband's Council";
         sound[] = {"BNA_KC_ZeusAudioModule\Audio\Superman_ZodDisbandsCouncil.ogg",db+0,1};
         duration = 125;
         musicClass = "BNA_KC_OtherMusic"; // Music category
+	};
+
+
+
+	class BNA_KC_ArmstrongArrival
+	{
+        name = "[MGR] The Senators Arrival";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\The_Senators_Arrival.ogg",db+0,1};
+        duration = 34;
+        musicClass = "BNA_KC_VGMusic"; // Music category
 	};
 };
