@@ -10,11 +10,9 @@ class CfgPatches
                 // Addon Options
             "ace_fortify",
                 // Fortify system
-            "lsb_fob_hblock",
+            "lsb_fob_hblock"
                 // LS's Hesco Blocks
                 // Comes from Legion Studios: Battlefields
-            "CUP_CWA_Misc"
-                // Barbed Wire
         };
 		units[]={};
 		weapons[]={};

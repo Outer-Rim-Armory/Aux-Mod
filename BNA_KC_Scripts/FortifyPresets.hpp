@@ -17,7 +17,6 @@ class ACEX_Fortify_Presets
             {"Land_BagFence_Round_F", 5}, // Round
 
             // Other
-            {"cwa_Wire", 10},          // Barbed Wire
             {"Land_PierLadder_F", 10}, // Ladder
             {"Land_Plank_01_8m_F", 10} // Plank, 8m
         };
