@@ -61,7 +61,7 @@ class CfgVehicles
             "W41_Plasma_Mags",
             "W41_Plasma_Mags",
 
-            "24Rnd_missiles" // Hydra Missiles
+            "24Rnd_missiles", // Hydra Missiles
             "NCA_oro_AGM_missile_magazine",
             "NCA_oro_AGM_missile_magazine",
             "W41_A2A_missile_magazine",
@@ -138,7 +138,7 @@ class CfgVehicles
             "W41_Plasma_Mags",
             "W41_Plasma_Mags",
 
-            "24Rnd_missiles" // Hydra Missiles
+            "24Rnd_missiles", // Hydra Missiles
             "NCA_oro_AGM_missile_magazine",
             "NCA_oro_AGM_missile_magazine",
             "W41_A2A_missile_magazine",
