@@ -174,7 +174,7 @@ class CfgWeapons
         // reloadAction = ""; // Custom reload animation would be set here
 
         // Custom Mags
-        magazines[] = { "300Rnd_Flamer_Mag" };
+        magazines[] = { "BNA_KC_Mag_300Rnd_Flamer" };
     };
 
     class BNA_KC_Flamer_Heavy: BNA_KC_Flamer
@@ -184,7 +184,7 @@ class CfgWeapons
     
         displayName = "[KC] BlasTech X-42 Heavy Flamethrower";
         // Custom Mags
-        magazines[] = { "150Rnd_Flamer_Mag" };
+        magazines[] = { "BNA_KC_Mag_150Rnd_Flamer" };
         class WeaponSlotsInfo: WeaponSlotsInfo { mass = 80; };
     };
 
