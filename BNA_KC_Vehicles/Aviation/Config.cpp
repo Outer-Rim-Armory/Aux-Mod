@@ -41,25 +41,43 @@ class CfgVehicles
             "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
         };
+
+        weapons[] =
+        {
+            "W41_plasma_weapon_HE",
+
+            "ls_laat_DAR",
+            "W41_AGM_missile_launcher",
+            "W41_AA_missile_launcher",
+
+            "Laserdesignator_pilotCamera",
+            "ls_weapon_CMFlareLauncher",
+            "SmokeLauncher"
+        };
         magazines[] =
-		{
+        {
             "W41_Plasma_Mags",
             "W41_Plasma_Mags",
             "W41_Plasma_Mags",
             "W41_Plasma_Mags",
-			"Laserbatteries",
-			"Laser_Battery",
-			"Laser_Battery",
-			"Laser_Battery",
-			"ls_mag_300rnd_CMFlareChaff_blue",
-			"ls_mag_300rnd_CMFlareChaff_blue",
-			"ls_mag_300rnd_CMFlareChaff_blue",
-			"SmokeLauncherMag",
-			"W41_A2A_missile_magazine",
-			"W41_A2A_missile_magazine",
-			"NCA_oro_AGM_missile_magazine",
-			"NCA_oro_AGM_missile_magazine"
-		};
+
+            "24Rnd_missiles" // Hydra Missiles
+            "NCA_oro_AGM_missile_magazine",
+            "NCA_oro_AGM_missile_magazine",
+            "W41_A2A_missile_magazine",
+            "W41_A2A_missile_magazine",
+
+            "Laserbatteries",
+            "Laser_Battery",
+            "Laser_Battery",
+            "Laser_Battery",
+
+            "ls_mag_300rnd_CMFlareChaff_blue",
+            "ls_mag_300rnd_CMFlareChaff_blue",
+            "ls_mag_300rnd_CMFlareChaff_blue",
+
+            "SmokeLauncherMag"
+        };
 
         // Impulse
         tas_can_impulse = 0; // Disables 3AS's Impulse System
@@ -101,25 +119,42 @@ class CfgVehicles
             "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
         };
+
+        weapons[] =
+        {
+            "W41_plasma_weapon_HE",
+            "ls_laat_DAR",
+            "W41_AGM_missile_launcher",
+            "W41_AA_missile_launcher",
+
+            "Laserdesignator_pilotCamera",
+            "ls_weapon_CMFlareLauncher",
+            "SmokeLauncher"
+        };
         magazines[] =
-		{
+        {
             "W41_Plasma_Mags",
             "W41_Plasma_Mags",
             "W41_Plasma_Mags",
             "W41_Plasma_Mags",
-			"Laserbatteries",
-			"Laser_Battery",
-			"Laser_Battery",
-			"Laser_Battery",
-			"ls_mag_300rnd_CMFlareChaff_blue",
-			"ls_mag_300rnd_CMFlareChaff_blue",
-			"ls_mag_300rnd_CMFlareChaff_blue",
-			"SmokeLauncherMag",
-			"W41_A2A_missile_magazine",
-			"W41_A2A_missile_magazine",
-			"NCA_oro_AGM_missile_magazine",
-			"NCA_oro_AGM_missile_magazine"
-		};
+
+            "24Rnd_missiles" // Hydra Missiles
+            "NCA_oro_AGM_missile_magazine",
+            "NCA_oro_AGM_missile_magazine",
+            "W41_A2A_missile_magazine",
+            "W41_A2A_missile_magazine",
+
+            "Laserbatteries",
+            "Laser_Battery",
+            "Laser_Battery",
+            "Laser_Battery",
+
+            "ls_mag_300rnd_CMFlareChaff_blue",
+            "ls_mag_300rnd_CMFlareChaff_blue",
+            "ls_mag_300rnd_CMFlareChaff_blue",
+
+            "SmokeLauncherMag"
+        };
 
         // Impulse
         tas_can_impulse = 0; // Disables 3AS's Impulse System
