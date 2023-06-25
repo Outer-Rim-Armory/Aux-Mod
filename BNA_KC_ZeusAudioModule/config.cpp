@@ -74,6 +74,13 @@ class CfgVehicles
         sound = "BNA_KC_Ambient_JediWarning_SFX";
         displayName = "[KC] Jedi Warning";
     };
+	class BNA_KC_Ambient_AT-TE_Alarm: Sound
+	{
+        author = "Keeli";
+        scope = 2;
+        sound = "BNA_KC_Ambient_AT-TE_Alarm_SFX";
+        displayName = "[KC] AT-TE Alarm";
+    };
 };
 class CfgSFX
 {
@@ -105,6 +112,13 @@ class CfgSFX
         BNA_KC_Ambient_JediWarning[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\Jedi_Warning.ogg",db+10,1,200,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
+	class BNA_KC_Ambient_AT-TE_Alarm_SFX
+	{
+        name = "[KC] AT-TE Alarm";
+        sounds[] = {BNA_KC_Ambient_AT-TE_Alarm};
+        BNA_KC_Ambient_AT-TE_Alarm[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\AT-TE_Alarm.ogg",db+50,1,500,1,2,3,4};
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
 };
 
 class CfgSounds
@@ -132,5 +146,11 @@ class CfgSounds
         name = "Jedi Warning";
         sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\Jedi_Warning.ogg", db+10, 1};
         titles[] = {2, "Jedi Warning"};
+    };
+	class BNA_KC_Ambient_AT-TE_Alarm
+	{
+        name = "AT-TE Alarm";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\AT-TE_Alarm.ogg", db+10, 1};
+        titles[] = {2, "AT-TE Alarm"};
     };
 };
