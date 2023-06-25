@@ -501,6 +501,7 @@ class CfgVehicles
             class PlayAlarm
             {
                 displayName = "<t font='RobotoCondensedBold' color='#ffffff'>Play Alarm</t>";
+                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
                 position = "pilotview";
                 radius = 100;
                 priority = 100;
