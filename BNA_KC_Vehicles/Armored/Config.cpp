@@ -513,6 +513,8 @@ class CfgVehicles
                 statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 5, 1, 50];";
             };
         };
+
+        ace_cargo_space = 10;
 	};
 };
 
