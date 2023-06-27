@@ -196,7 +196,7 @@ class CfgVehicles
                 priority = 100;
 
                 condition = "true;";
-                statement = "[this, 30]call BNAKC_fnc_SpecialLoad;";
+                statement = "[this, 30] call BNAKC_fnc_SpecialLoad;";
             };
         };
     };
