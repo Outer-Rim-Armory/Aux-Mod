@@ -311,6 +311,8 @@ class CfgVehicles
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
 
+        armor = 600;
+
         displayName = "[KC] Badger APC";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 		class Turrets: Turrets
