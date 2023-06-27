@@ -634,6 +634,7 @@ class CfgVehicles
         displayName = "[KC] Clone Trooper Backpack (Invisible)";
 
         // Remove the model and textures (invisible)
+        picture = "";
         model = "BNA_KC_Gear\Data\Models\empty_model.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
@@ -715,6 +716,7 @@ class CfgVehicles
     {
         displayName = "[KC] Clone Trooper Radio Backpack (Invisible)";
 
+        picture = "";
         model = "BNA_KC_Gear\Data\Models\empty_model.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
