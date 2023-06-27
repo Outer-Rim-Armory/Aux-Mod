@@ -1,3 +1,21 @@
+class CfgAmmo
+{
+    // class JLTS_bullet_pistol_blue
+    class 12thFleet_Ammo_Rifle_Blue: JLTS_bullet_rifle_blue
+    {
+        coefgravity = 0;
+    };
+    class 12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
+    {
+        coefgravity = 0;
+    };
+    class 12thFleet_Ammo_Westar_Blue: 3AS_EC50_BluePlasma
+    {
+        coefgravity = 0;
+    };
+};
+
+
 class CfgMagazines
 {
     // ┌──────────────────┐
@@ -8,12 +26,14 @@ class CfgMagazines
     class 12thFleet_Mag_DC15A: JLTS_DC15A_mag
     {
         displayName = "[12th Fleet] DC-15A Energy Cell (60 Rnd)";
+        ammo = "12thFleet_Ammo_Rifle_Blue";
     };
 
     class JLTS_DC15S_mag;
     class 12thFleet_Mag_DC15S: JLTS_DC15S_mag
     {
         displayName = "[12th Fleet] DC-15S Energy Cell (80 Rnd)";
+        ammo = "12thFleet_Ammo_Rifle_Blue";
     };
 
     // Seconaary
@@ -21,6 +41,7 @@ class CfgMagazines
     class 12thFleet_Mag_DC17: JLTS_DC17SA_mag
     {
         displayName = "[12th Fleet] DC-17 Energy Cell (20 Rnd)";
+        ammo = "12thFleet_Ammo_Rifle_Blue";
     };
 
 
@@ -31,6 +52,7 @@ class CfgMagazines
     class 12thFleet_Mag_WestarM5: 3AS_60Rnd_EC50_Mag
     {
         displayName = "[12th Fleet] Westar-M5 Energy Cell (60 Rnd)";
+        ammo = "12thFleet_Ammo_Westar_Blue";
     };
 
     class M2_Fuel_Tank;
