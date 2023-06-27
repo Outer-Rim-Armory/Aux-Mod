@@ -515,6 +515,21 @@ class CfgVehicles
         };
 
         ace_cargo_space = 10;
+
+        // Makes the 3AS AT-TE compatible with the vanilla vehicle-in-vehicle system
+        // Credit: CrimzonKat @ https://ptb.discord.com/channels/461042140756180992/1062396582848372807
+        class VehicleTransport
+        {
+            class Cargo
+            {
+                parachuteClass = B_Parachute_02_F;
+                parachuteHeightLimit = 40;                
+                canBeTransported = 1;                
+                dimensions[] = { "ftr_muzzle", "btl_muzzle" };
+
+                BNA_KC_SpecialLoad = 1; // The standard "Load Vehicle" option doesn't appear, requiring a custom script to work
+            };
+        };
 	};
 };
 

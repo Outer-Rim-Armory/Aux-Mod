@@ -40,6 +40,7 @@ class CfgFunctions
 			class LoadoutBox{};
 			class PlayRestaurauntAmbience{};
 			class ConfigureAddonOptions{};
+            class SpecialLoad{};
 		};
 		class Fortifications
 		{

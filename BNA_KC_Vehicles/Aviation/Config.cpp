@@ -183,6 +183,22 @@ class CfgVehicles
             "BNA_KC_Vehicles\Aviation\Data\LAATc\BNA_KC_LAATC_Wings.paa"
         };
         textureList[] = {}; // Clears the extra skins
+
+        class UserActions
+        {
+            class LoadVehicle
+            {
+                // Special action used for vehicles that are not fully compatible with ViV (vehicle-in-vehicle)
+                // Notably used for 3AS's AT-TE
+                displayName = "<t color='#ffffff'>Special Load Vehicle</t>";
+                radius = 30;
+                hideOnUse = 1;
+                priority = 100;
+
+                condition = "true;";
+                statement = "[this, 30]call BNAKC_fnc_SpecialLoad;";
+            };
+        };
     };
 
     class 3AS_Republic_Transport_01;
