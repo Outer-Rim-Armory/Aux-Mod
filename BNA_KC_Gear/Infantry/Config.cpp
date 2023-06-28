@@ -619,6 +619,8 @@ class CfgVehicles
         maximumLoad = 400;
 
         displayName = "[KC] Clone Trooper Backpack";
+
+        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa", // Main Texture
@@ -643,6 +645,8 @@ class CfgVehicles
     class BNA_KC_Backpack_Heavy: BNA_KC_Backpack
     {
         displayName = "[KC] Clone Trooper Heavy Backpack";
+
+        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Heavy_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa",      // Main Texture
@@ -658,6 +662,8 @@ class CfgVehicles
         maximumLoad = 300; // Normal is 280, Heavy is 320
 
         displayName = "[KC] Clone Trooper Medic Backpack";
+
+        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Medic_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
@@ -682,6 +688,8 @@ class CfgVehicles
         maximumLoad = 400;
 
         displayName = "[KC] Clone Trooper Radio Backpack";
+
+        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Radio_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa", // Main Texture
