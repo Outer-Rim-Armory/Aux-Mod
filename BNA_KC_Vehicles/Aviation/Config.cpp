@@ -11,7 +11,6 @@ class CfgVehicles
     // class 3as_LAAT_Mk1Lights;
     // class 3as_LAAT_Mk2;
     // class 3as_LAAT_Mk2Lights;
-    class lsd_heli_laatc;
 
     class BNA_KC_LAATi_MK1: W41_LAAT_MK2
     {
@@ -156,6 +155,13 @@ class CfgVehicles
 		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
     };
 
+    class lsd_laatc_base;
+    class lsd_heli_laatc: lsd_laatc_base
+    {
+        class UserActions;
+        // LS's loading is also done through UserActions
+    };
+
     class BNA_KC_LAATc: lsd_heli_laatc
     {
         // Mod Info
@@ -183,7 +189,7 @@ class CfgVehicles
         };
         textureList[] = {}; // Clears the extra skins
 
-        class UserActions
+        class UserActions: UserActions
         {
             class SpecialLoadVehicle
             {
