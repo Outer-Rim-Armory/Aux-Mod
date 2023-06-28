@@ -155,10 +155,17 @@ class CfgVehicles
 		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
     };
 
-    class lsd_laatc_base;
-    class lsd_heli_laatc: lsd_laatc_base
+    class Helicopter_Base_H;
+    class lsd_laatc_base: Helicopter_Base_H
     {
         class UserActions;
+    };
+    class lsd_heli_laatc: lsd_laatc_base
+    {
+        class UserActions: UserActions
+        {
+            class loadVehicle;
+        };
         // LS's loading is also done through UserActions
     };
 
@@ -196,6 +203,7 @@ class CfgVehicles
                 // Special action used for vehicles that are not fully compatible with ViV (vehicle-in-vehicle)
                 // Notably used for 3AS's AT-TE
                 displayName = "Load Vehicle (Custom)";
+                displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
                 radius = 30;
                 hideOnUse = 1;
                 priority = 5;
@@ -211,6 +219,11 @@ class CfgVehicles
                   > Check if there is at least one object found, and the closest object can both fit into the vehicle and is not already loaded
                 */
                 statement = "_objects = nearestObjects [this, [], 30]; _objects = _objects select {getNumber (configFile >> 'CfgVehicles' >> typeOf _x >> 'VehicleTransport' >> 'Cargo' >> 'BNA_KC_SpecialLoad') isEqualTo 1}; this setVehicleCargo (_objects select 0);";
+            };
+
+            class loadVehicle: loadVehicle
+            {
+                displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
             };
         };
     };
