@@ -165,7 +165,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -186,17 +185,26 @@ class CfgVehicles
 
         class UserActions
         {
-            class LoadVehicle
+            class SpecialLoadVehicle
             {
                 // Special action used for vehicles that are not fully compatible with ViV (vehicle-in-vehicle)
                 // Notably used for 3AS's AT-TE
-                displayName = "<t color='#ffffff'>Special Load Vehicle</t>";
+                displayName = "Load Vehicle (Custom)";
                 radius = 30;
                 hideOnUse = 1;
-                priority = 100;
+                priority = 5;
 
-                condition = "true;";
-                statement = "[this, 30] call BNAKC_fnc_SpecialLoad;";
+                condition = "_objects = nearestObjects [this, [], 30]; _objects = _objects select {getNumber (configFile >> 'CfgVehicles' >> typeOf _x >> 'VehicleTransport' >> 'Cargo' >> 'BNA_KC_SpecialLoad') isEqualTo 1}; count _objects >= 1 && (heli canVehicleCargo (_objects select 0) isEqualTo [true, true]);";
+                /* Explanation
+                _objects = nearestObjects [this, [], 30];
+                  > Gets array of all objects within 30 meters of the player's vehicle
+                _objects = _objects select {getNumber (configFile >> 'CfgVehicles' >> typeOf _x >> 'VehicleTransport' >> 'Cargo' >> 'BNA_KC_SpecialLoad') isEqualTo 1};
+                  > Filters array by objects with the BNA_KC_SpecialLoad property set to 1
+                
+                count _objects >= 1 && (heli canVehicleCargo (_objects select 0) isEqualTo [true, true]);
+                  > Check if there is at least one object found, and the closest object can both fit into the vehicle and is not already loaded
+                */
+                statement = "_objects = nearestObjects [this, [], 30]; _objects = _objects select {getNumber (configFile >> 'CfgVehicles' >> typeOf _x >> 'VehicleTransport' >> 'Cargo' >> 'BNA_KC_SpecialLoad') isEqualTo 1}; this setVehicleCargo (_objects select 0);";
             };
         };
     };
