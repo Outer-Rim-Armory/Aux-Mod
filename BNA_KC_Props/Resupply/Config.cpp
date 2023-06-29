@@ -4,10 +4,8 @@
 class CfgVehicles
 {
     class 3AS_Supply_Large_Prop;
-    class 3AS_Supply_Large_Medical_Prop;
-    class 3AS_Supply_Large_Ammo_Prop;
 
-    class BNA_KC_Resupply_SquadAmmo: 3AS_Supply_Large_Ammo_Prop
+    class BNA_KC_Resupply_Base: 3AS_Supply_Large_Prop
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -16,13 +14,19 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
+
+        displayName = "[KC] Resupply Box (Empty)";
         
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_SubCat_Resupply";
         side = 3;
+    };
 
+    class BNA_KC_Resupply_SquadAmmo: BNA_KC_Resupply_Base
+    {
         displayName = "[KC] Ammo Box (Squad)";
+        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
         
         class TransportWeapons {};
             
