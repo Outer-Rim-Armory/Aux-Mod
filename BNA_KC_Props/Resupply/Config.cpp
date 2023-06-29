@@ -16,7 +16,8 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "[KC] Resupply Box (Empty)";
-        
+        ace_cargo_size = 1;
+
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_SubCat_Resupply";
@@ -28,8 +29,6 @@ class CfgVehicles
         displayName = "[KC] Ammo Box (Squad)";
         hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
         
-        class TransportWeapons {};
-            
         class TransportMagazines
         {
             // Primary Ammo
@@ -177,6 +176,7 @@ class CfgVehicles
     class BNA_KC_Resupply_PlatoonAmmo: BNA_KC_Resupply_SquadAmmo
     {
         displayName = "[KC] Ammo Box (Platoon)";
+        ace_cargo_size = 2;
 
         class TransportWeapons
         {
