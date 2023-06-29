@@ -12,6 +12,7 @@ class CfgPatches
         };
         units[] =
 		{
+            "BNA_KC_Resupply_Base",
 			"BNA_KC_Resupply_SquadAmmo",
 			"BNA_KC_Resupply_PlatoonAmmo"
 		};
