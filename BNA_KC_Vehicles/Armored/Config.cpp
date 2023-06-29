@@ -507,14 +507,16 @@ class CfgVehicles
                 position = "pilotview";
                 radius = 100;
                 priority = 100;
-                onlyForPlayer = 1;
                 hideOnUse = 0;
 
-                condition = "player == currentPilot this;";
+                condition = "ls_player == currentPilot this;";
                 // statement = "_sound = floor (random 3); playSound3D [format['BNA_KC_Vehicles\VehicleSounds\Data\Audio\Juggernaut\horn_%1%2', _sound, '.ogg'], this, false, getPosASL this, 5, 1, 50];";
                 statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 5, 1, 50];";
             };
         };
+
+        // Horns don't work on vehicles with a simulation other than "carx"
+        // weapons[] = { "BNA_KC_ATTE_Alarm" };
 
         ace_cargo_space = 10;
 
