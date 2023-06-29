@@ -15,8 +15,15 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] Resupply Box (Empty)";
+        displayName = "[KC] Empty Crate";
+        
         ace_cargo_size = 1;
+        ace_dragging_canDrag = 1;
+        ace_dragging_dragDirection = 90;
+        ace_dragging_dragPosition[] = {0, 1.35, 0};
+        
+        ace_dragging_canCarry = 1;
+        ace_dragging_ignoreWeightCarry = 1;
 
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
@@ -26,8 +33,10 @@ class CfgVehicles
 
     class BNA_KC_Resupply_SquadAmmo: BNA_KC_Resupply_Base
     {
-        displayName = "[KC] Ammo Box (Squad)";
-        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        displayName = "[KC] Ammo Crate (Squad)";
+        hiddenSelections[] = { "camo1" };
+        hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat" };
+        hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa" };
         
         class TransportMagazines
         {
@@ -175,7 +184,7 @@ class CfgVehicles
 
     class BNA_KC_Resupply_PlatoonAmmo: BNA_KC_Resupply_SquadAmmo
     {
-        displayName = "[KC] Ammo Box (Platoon)";
+        displayName = "[KC] Ammo Crate (Platoon)";
         ace_cargo_size = 2;
 
         class TransportWeapons
