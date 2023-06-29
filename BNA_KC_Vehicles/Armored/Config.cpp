@@ -533,6 +533,31 @@ class CfgVehicles
             };
         };
 	};
+
+    class 3as_Jug;
+    class BNA_KC_Juggernaut: 3as_Jug
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VArmored";
+
+        displayName = "[KC] HAVw A6 Juggernaut";
+        crew = "BNA_KC_Unit_Phase2_Tanker";
+
+        weapons[] =
+        {
+            "BNA_KC_Juggernaut_Horn",
+            "BNA_KC_Juggernaut_Alarm"
+        };
+    };
 };
 
 
