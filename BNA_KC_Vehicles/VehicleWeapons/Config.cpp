@@ -446,9 +446,9 @@ class CfgWeapons
         drySound[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg",
-            150,
+            100,
             1,
-            150
+            100
         };
     };
 };
