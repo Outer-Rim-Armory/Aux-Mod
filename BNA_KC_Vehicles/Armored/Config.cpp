@@ -552,6 +552,8 @@ class CfgVehicles
         displayName = "[KC] HAVw A6 Juggernaut";
         crew = "BNA_KC_Unit_Phase2_Tanker";
 
+        ace_cargo_space = 20;
+
         weapons[] =
         {
             "BNA_KC_Juggernaut_Horn",
