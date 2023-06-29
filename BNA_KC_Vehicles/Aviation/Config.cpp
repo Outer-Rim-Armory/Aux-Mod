@@ -208,7 +208,7 @@ class CfgVehicles
                 hideOnUse = 1;
                 priority = 5;
 
-                condition = "_objects = nearestObjects [this, [], 30]; _objects = _objects select {getNumber (configFile >> 'CfgVehicles' >> typeOf _x >> 'VehicleTransport' >> 'Cargo' >> 'BNA_KC_SpecialLoad') isEqualTo 1}; count _objects >= 1 && (heli canVehicleCargo (_objects select 0) isEqualTo [true, true]);";
+                condition = "_objects = nearestObjects [this, [], 30]; _objects = _objects select {getNumber (configFile >> 'CfgVehicles' >> typeOf _x >> 'VehicleTransport' >> 'Cargo' >> 'BNA_KC_SpecialLoad') isEqualTo 1}; count _objects >= 1 && (this canVehicleCargo (_objects select 0) isEqualTo [true, true]);";
                 /* Explanation
                 _objects = nearestObjects [this, [], 30];
                   > Gets array of all objects within 30 meters of the player's vehicle
