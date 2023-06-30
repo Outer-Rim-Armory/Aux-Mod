@@ -10,6 +10,7 @@ class CfgPatches
             "A3_Weapons_F"
 				// Most of the base ammo/magazine types
 				// 120 mm cannon
+                // Horn weapon class
         };
         units[] = {};
         weapons[] =
@@ -17,7 +18,11 @@ class CfgPatches
             "BNA_KC_120_Tankgun",
             "BNA_KC40mm_CTWS",
             "BNA_KC_Coax",
-            "BNA_KC_CommanderGun"
+            "BNA_KC_CommanderGun",
+
+            "BNA_KC_Juggernaut_Horn",
+            "BNA_KC_Juggernaut_Alarm",
+            "BNA_KC_ATTE_Alarm"
         };
 		ammo[] =
 		{

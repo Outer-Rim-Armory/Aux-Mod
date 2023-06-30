@@ -60,17 +60,11 @@ class CfgVehicles
     {
         displayName = "[KC] KC Flag (Horizontal)";
 
+        model = "LS_statics_props\flags\ls_horizontal_flag";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompany.paa"
+            "BNA_KC_Props\Flags\Data\Flipped_TEMP\BNA_KC_Flag_KeeliCompany.paa"
         };
-        /* EH to rotate flag | WIP
-        class EventHandlers
-        {
-            // init = "systemChat 'Config EH'; (_this select 0) setVectorUp [0,-1,0];";
-            init = "systemChat 'Config EH'; [(_this select 0), [0, 0, 270]] call BIS_fnc_setObjectRotation;";
-        };
-        */
     };
 
     class BNA_KC_Flag_KeeliCompanyDamaged_Pole: BNA_KC_Flag_KeeliCompany_Pole
@@ -91,18 +85,23 @@ class CfgVehicles
     };
     class BNA_KC_Flag_KeeliCompanyDamaged_Horizontal: BNA_KC_Flag_KeeliCompany_Horizontal
     {
-        displayName = "[KC] KC Damaged Flag (Horizontal)";
+        displayName = "[KC] KC Damaged Flag (Horizontal, Mirrored)";
+
+        model = "LS_statics_props\flags\ls_horizontal_flag";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged.paa"
+            "BNA_KC_Props\Flags\Data\Flipped_TEMP\BNA_KC_Flag_KeeliCompanyDamaged_Mirrored.paa"
         };
+        // Texture and named swapped for mirrored version until LS fixes the rotated model.
+        // Textures had to be flipped as a temporary fix. Will be returned to normal once model is fixed.
+        // Bug Report: https://ptb.discord.com/channels/461042140756180992/1122571557638779072
     };
     class BNA_KC_Flag_KeeliCompanyDamaged_HorizontalMirrored: BNA_KC_Flag_KeeliCompany_Horizontal
     {
-        displayName = "[KC] KC Damaged Flag (Horizontal, Mirrored)";
+        displayName = "[KC] KC Damaged Flag (Horizontal)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged_Mirrored.paa"
+            "BNA_KC_Props\Flags\Data\Flipped_TEMP\BNA_KC_Flag_KeeliCompanyDamaged.paa"
         };
     };
 };

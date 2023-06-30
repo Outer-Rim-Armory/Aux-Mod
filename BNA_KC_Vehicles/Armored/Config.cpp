@@ -311,6 +311,8 @@ class CfgVehicles
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
 
+        armor = 600;
+
         displayName = "[KC] Badger APC";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 		class Turrets: Turrets
@@ -494,7 +496,72 @@ class CfgVehicles
 			"3as\3as_atte\data\atte_underpiping_co.paa",
 			"3as\3as_atte\data\atte_middleleg_co.paa"
 		};
+
+        // Scrollwheel Actions
+        class UserActions
+        {
+            class PlayAlarm
+            {
+                displayName = "<t font='RobotoCondensedBold' color='#ffffff'>Play Alarm</t>";
+                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
+                position = "pilotview";
+                radius = 100;
+                priority = 100;
+                hideOnUse = 0;
+
+                condition = "ls_player == currentPilot this;";
+                // statement = "_sound = floor (random 3); playSound3D [format['BNA_KC_Vehicles\VehicleSounds\Data\Audio\Juggernaut\horn_%1%2', _sound, '.ogg'], this, false, getPosASL this, 5, 1, 50];";
+                statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 100, 1, 100];";
+            };
+        };
+
+        // Horns don't work on vehicles with a simulation other than "carx"
+        // weapons[] = { "BNA_KC_ATTE_Alarm" };
+
+        ace_cargo_space = 10;
+
+        // Makes the 3AS AT-TE compatible with the vanilla vehicle-in-vehicle system
+        // Credit: CrimzonKat @ https://ptb.discord.com/channels/461042140756180992/1062396582848372807
+        class VehicleTransport
+        {
+            class Cargo
+            {
+                parachuteClass = B_Parachute_02_F;
+                parachuteHeightLimit = 40;                
+                canBeTransported = 1;                
+                dimensions[] = { "ftr_muzzle", "btl_muzzle" };
+
+                BNA_KC_SpecialLoad = 1; // The standard "Load Vehicle" option doesn't appear, requiring a custom script to work
+            };
+        };
 	};
+
+    class 3as_Jug;
+    class BNA_KC_Juggernaut: 3as_Jug
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VArmored";
+
+        displayName = "[KC] HAVw A6 Juggernaut";
+        crew = "BNA_KC_Unit_Phase2_Tanker";
+
+        ace_cargo_space = 20;
+
+        weapons[] =
+        {
+            "BNA_KC_Juggernaut_Horn",
+            "BNA_KC_Juggernaut_Alarm"
+        };
+    };
 };
 
 

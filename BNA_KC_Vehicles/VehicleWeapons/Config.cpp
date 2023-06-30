@@ -413,4 +413,42 @@ class CfgWeapons
 			};
 		};
 	};
+
+    // Horns & Alarms
+    class CarHorn;
+    class BNA_KC_Juggernaut_Horn: CarHorn
+    {
+        // TODO: Random firing sound
+        displayName = "Juggernaut Horn";
+        drySound[] =
+        {
+            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Juggernaut\horn_0.ogg", // soundPath
+            500,        // soundVolume
+            1,          // soundPitch
+            500         // maxDistance
+        };
+    };
+
+    class BNA_KC_Juggernaut_Alarm: CarHorn
+    {
+        displayName = "Alarm";
+        drySound[] =
+        {
+            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg",
+            400,
+            1,
+            400
+        };
+    };
+
+    class BNA_KC_ATTE_Alarm: BNA_KC_Juggernaut_Alarm
+    {
+        drySound[] =
+        {
+            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg",
+            100,
+            1,
+            100
+        };
+    };
 };

@@ -163,7 +163,6 @@ class CfgWeapons
     };
 
     #include "Uniforms.hpp"
-    #include "Legacy.hpp" // Legacy class names (to not break kits)
 
     // ┌───────────────────┐
     // │       Vests       │
@@ -604,6 +603,7 @@ class CfgVehicles
     // └───────────────────┘
     class SWLB_clone_backpack;
     class SWLB_clone_backpack_RTO;
+    class SWLB_clone_RTO_mini_backpack;
 
     class BNA_KC_Backpack: SWLB_clone_backpack
     {
@@ -619,6 +619,8 @@ class CfgVehicles
         maximumLoad = 400;
 
         displayName = "[KC] Clone Trooper Backpack";
+
+        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa", // Main Texture
@@ -634,6 +636,7 @@ class CfgVehicles
         displayName = "[KC] Clone Trooper Backpack (Invisible)";
 
         // Remove the model and textures (invisible)
+        picture = "";
         model = "BNA_KC_Gear\Data\Models\empty_model.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
@@ -642,6 +645,8 @@ class CfgVehicles
     class BNA_KC_Backpack_Heavy: BNA_KC_Backpack
     {
         displayName = "[KC] Clone Trooper Heavy Backpack";
+
+        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Heavy_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa",      // Main Texture
@@ -657,6 +662,8 @@ class CfgVehicles
         maximumLoad = 300; // Normal is 280, Heavy is 320
 
         displayName = "[KC] Clone Trooper Medic Backpack";
+
+        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Medic_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
@@ -681,14 +688,46 @@ class CfgVehicles
         maximumLoad = 400;
 
         displayName = "[KC] Clone Trooper Radio Backpack";
+
+        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Radio_UI.paa";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa",     // Main Texture
+            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa", // Main Texture
             "",                                                        // Cover
             "",                                                        // Heavy
             "",                                                        // Medic
             "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa" // RTO
         };
+    };
+    class BNA_KC_Backpack_Radio_Mini: SWLB_clone_RTO_mini_backpack
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        maximumLoad = 400;
+        
+        displayName = "[KC] Clone Commander Radio Backpack";
+
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Radio_Mini.paa",
+            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Radio_Mini_Accumulator.paa"
+        };
+        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Radio_Mini_UI.paa";
+    };
+    class BNA_KC_Backpack_Radio_Invisible: BNA_KC_Backpack_Radio
+    {
+        displayName = "[KC] Clone Trooper Radio Backpack (Invisible)";
+
+        picture = "";
+        model = "BNA_KC_Gear\Data\Models\empty_model.p3d";
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
     };
 };
 
