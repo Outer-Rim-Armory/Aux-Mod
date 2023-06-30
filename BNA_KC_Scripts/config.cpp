@@ -47,6 +47,11 @@ class CfgFunctions
 			class FortificationsPostInit{};
             class RegisterPreset{};
 		};
+        class Weapons
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Weapons";
+            class SpecialGrenades{};
+        }
 	};
 };
 
@@ -68,7 +73,10 @@ class Extended_PostInit_EventHandlers
 	{
         init = "call BNAKC_fnc_FortificationsPostInit";
     };
+    class BNA_KC_Scripts_SpecialGrenades
+    {
+        init = "['ace_firedPlayer', BNAKC_fnc_SpecialGrenades] call CBA_fnc_addEventHandler;";
+    }
 };
-
 
 #include "FortifyPresets.hpp"

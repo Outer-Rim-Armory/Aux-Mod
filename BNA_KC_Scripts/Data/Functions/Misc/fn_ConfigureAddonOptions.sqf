@@ -1,5 +1,15 @@
 // WIKI: https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#creating-a-setting
 
+// Developer
+[
+    "BNA_KC_DevMode",
+    "CHECKBOX",
+    ["Enable Developer Mode", "Enables developer mode, shows debug messages in chat and creates marker objects."],
+    ["Keeli Company Aux Mod", "Developer Settings"],
+    false, // Will need to be converted to integer
+    1 // isGlobal
+] call CBA_fnc_addSetting;
+
 // ACE Fortify Settings
 [
     "BNA_KC_FortifyPreset",

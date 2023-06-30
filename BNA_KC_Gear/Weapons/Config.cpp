@@ -1,6 +1,4 @@
 #include "CfgPatches.hpp"
-#include "Ammo.hpp"
-#include "Optics.hpp"
 
 
 class CfgWeapons
@@ -564,12 +562,47 @@ class CfgWeapons
             };
         };
     };
+
+    // ┌────────────────────┐
+    // │      Grenades      │
+    // └────────────────────┘
+    class ThrowMuzzle;
+    class Throw
+    {
+        muzzles[] += {"BNA_KC_Grenade_Muzzle"};
+        class BNA_KC_Grenade_Muzzle: ThrowMuzzle
+        {
+            displayName = "[KC] Droid Popper";
+            magazines[] += { "BNA_KC_Grenade_DroidPopper" };
+        };
+    };
 };
 
 
 class CfgMagazines
 {
     #include "12thMags.hpp"
+
+    class HandGrenade;
+    class BNA_KC_Grenade_DroidPopper: HandGrenade
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Droid Popper";
+        displayNameShort = "Droid Popper";
+        descriptionShort = "An EMP grenade meant to disable electronic systems.";
+
+        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_DroidPopper.paa";
+
+        ammo = "BNA_KC_Grenade_DroidPopper_Ammo";
+        count = 1;
+    };
 };
 
 class CfgAmmo
@@ -589,5 +622,64 @@ class CfgAmmo
     class 12thFleet_Ammo_Westar_Blue: 3AS_EC50_BluePlasma
     {
         coefgravity = 0;
+    };
+
+    class GrenadeHand;
+    class BNA_KC_Grenade_DroidPopper_Ammo: GrenadeHand
+    {
+        // Disable damage and explosions
+        hit = 0.000001;
+        indirectHit = 0.000001;
+        // explosive = 0;
+        // explosionTime = 5;
+        // -1 means impact grenade
+
+        ace_frag_enabled = 0;
+        ace_frag_skip = 1;
+        ace_frag_metal = 0;
+        ace_frag_charge = 0;
+
+        // Sound and visual effects
+        ace_grenades_pullPinSound[] = { "\ls_sounds\weapons\grenade\pin.wss", 3, 1, 10 };
+        soundFly[] = { "\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40 };
+        SoundSetExplosion[] = { "JLTS_GrenadeEMP_Exp_SoundSet", "JLTS_GrenadeEMP_Tail_SoundSet", "Explosion_Debris_SoundSet" };
+
+        explosionEffects = "JLTS_fx_exp_EMP";
+        explosionEffectRadius = 3;
+        explosionForceCoef = 0;
+
+        aiAmmoUsageFlags = 0; // Disables the ai from this ammo
+        
+        /*
+        JLTS_isEMPAmmo=1;
+		hit=0.1;
+		indirectHit=0.0099999998;
+		indirectHitRange=12;
+		timeToLive=30;
+		
+		fuseDistance=1;
+		explosive=9.9999997e-005;
+		deflecting=5;
+		caliber=5;
+		ace_frag_enabled=0;
+		ace_frag_force=0;
+		ace_frag_classes[]=
+		{
+			""
+		};
+		ace_frag_metal=0;
+		ace_frag_charge=0;
+		ace_frag_gurney_c=0;
+		ace_frag_gurney_k="0";
+		ace_rearm_caliber=0;
+		aiAmmoUsageFlags=0;
+		class CamShakeExplode
+		{
+			distance=10;
+			duration=1;
+			frequency=20;
+			power=0;
+		};
+        */
     };
 };
