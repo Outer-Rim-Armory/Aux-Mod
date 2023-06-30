@@ -29,7 +29,7 @@ _this spawn
             _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], 3]; // 3AS's Droidkas require extra work
 
             // Vehicles
-            _tanks = nearestObjects [_position, [], 3] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
+            _tanks = nearestObjects [_position, [], 10] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
 
             // Remove or kill objects
             { _x setDamage [1, true, _unit]; } forEach _droidUnits; // Kill droid units
@@ -41,21 +41,37 @@ _this spawn
             // Temporarily disable vehicles
             if (BNA_KC_DroidPopper_DisableTime > 0) then
             {
-                _vehicle = _x;
-                _savedFuel = fuel _vehicle;
-                _savedMags = magazines _vehicle;
-                _savedTurretMags = _vehicle magazinesTurret [0, 0];
+                {
+                    if (BNA_KC_DevMode) then
+                    {
+                        systemChat format ["Disabling %1 vehicles for %2 seconds", str count _tanks, str BNA_KC_DroidPopper_DisableTime];
+                    };
+                    _vehicle = _x;
+                    _savedFuel = fuel _vehicle;
+                    _savedMags = magazines _vehicle;
+                    _savedTurretMags = _vehicle magazinesTurret [0, 0];
+                    if (BNA_KC_DevMode) then { systemChat "Saved magazines and fuel"; };
 
-                _vehicle setFuel 0;
-                { _vehicle removeMagazines _x; } forEach _savedMags;
-                { _vehicle removeMagazinesTurret [_x, [0, 0]]; } forEach _savedTurretMags;
+                    _vehicle setFuel 0;
+                    { _vehicle removeMagazines _x; } forEach _savedMags;
+                    { _vehicle removeMagazinesTurret [_x, [0, 0]]; } forEach _savedTurretMags;
+                    if (BNA_KC_DevMode) then { systemChat "Removed magazines and fuel"; };
 
-                sleep BNA_KC_DroidPopper_DisableTime;
+                    sleep BNA_KC_DroidPopper_DisableTime;
+                    if (BNA_KC_DevMode) then
+                    {
+                        systemChat "Waiting"
+                    };
 
-                _vehicle setFuel _savedFuel;
-                { _vehicle addMagazine _x; } forEach _savedMags;
-                { _vehicle addMagazineTurret [_x, [0, 0]]; } forEach _savedTurretMags;
-            } forEach _tanks;
+                    _vehicle setFuel _savedFuel;
+                    { _vehicle addMagazine _x; } forEach _savedMags;
+                    { _vehicle addMagazineTurret [_x, [0, 0]]; } forEach _savedTurretMags;
+                    if (BNA_KC_DevMode) then
+                    {
+                        systemChat "Restored magazines and fuel";
+                    };
+                } forEach _tanks;
+            };
         };
     };
 };
