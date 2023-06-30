@@ -565,3 +565,29 @@ class CfgWeapons
         };
     };
 };
+
+
+class CfgMagazines
+{
+    #include "12thMags.hpp"
+};
+
+class CfgAmmo
+{
+    class JLTS_bullet_rifle_blue;
+    class JLTS_bullet_pistol_blue;
+    class 3AS_EC50_BluePlasma;
+
+    class 12thFleet_Ammo_Rifle_Blue: JLTS_bullet_rifle_blue
+    {
+        coefgravity = 0;
+    };
+    class 12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
+    {
+        coefgravity = 0;
+    };
+    class 12thFleet_Ammo_Westar_Blue: 3AS_EC50_BluePlasma
+    {
+        coefgravity = 0;
+    };
+};
