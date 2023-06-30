@@ -1,14 +1,15 @@
 // WIKI: https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#creating-a-setting
 
-// Developer
+// Weapons
 [
-    "BNA_KC_DevMode",
-    "CHECKBOX",
-    ["Enable Developer Mode", "Enables developer mode, shows debug messages in chat and creates marker objects."],
-    ["Keeli Company Aux Mod", "Developer Settings"],
-    false, // Will need to be converted to integer
+    "BNA_KC_DroidPopper_DisableTime",
+    "SLIDER",
+    ["Time Disabled", "The time in seconds that a vehicle is disabled for by a Droid Popper."],
+    ["Keeli Company Aux Mod", "Weapons"],
+    [0, 30, 5, 0],
     1 // isGlobal
 ] call CBA_fnc_addSetting;
+
 
 // ACE Fortify Settings
 [
@@ -29,5 +30,16 @@
     ["Budget", "Budget for ACE Fortify. Use -1 for an unlimited budget."],
     ["Keeli Company Aux Mod", "ACE Fortify Options"],
     "100", // Will need to be converted to integer
+    1 // isGlobal
+] call CBA_fnc_addSetting;
+
+
+// Developer
+[
+    "BNA_KC_DevMode",
+    "CHECKBOX",
+    ["Enable Developer Mode", "Enables developer mode, shows debug messages in chat and creates marker objects."],
+    ["Keeli Company Aux Mod", "Developer"],
+    false,
     1 // isGlobal
 ] call CBA_fnc_addSetting;

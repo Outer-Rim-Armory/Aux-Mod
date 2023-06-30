@@ -20,12 +20,16 @@ _this spawn
 				createVehicle ["VR_3DSelector_01_default_F", _position, [], 0, "CAN_COLLIDE"];
 			};
 
-			_droidUnits = nearestObjects [_position, [], 3];
-
 			
-			_droidUnits = _droidUnits select { ((toLowerAnsi typeOf _x find "b1") > 0) }; // Filter out non-droid objects
+			// Units & Similar Objects
+			// Get all nearby objects and filter out non-droids
+			_droidUnits = nearestObjects [_position, [], 3] select { ((toLowerAnsi typeOf _x find "b1") > 0) };
+
 			_shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], 3];	// Droidka Shields
 			_tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], 3]; // 3AS's Droidkas require extra work
+
+			// Vehicles
+			_tanks = nearestObjects [_position, [], 3] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
 
 			// Remove or kill objects
 			{ _x setDamage [1, true, _unit]; } forEach _droidUnits; // Kill droid units
@@ -33,6 +37,25 @@ _this spawn
 			
 			{ _x setHitPointDamage ["HitShield", 1]; } forEach _tasDekas; // Damages the droideka shield
 			{ _x animateSource ["ShieldLayer_BaseFront", 1, true]; } forEach _tasDekas; // Animates the shield turning off
+
+			// Temporarily disable vehicles
+			if (BNA_KC_DroidPopper_DisableTime > 0) then
+			{
+				_vehicle = _x;
+				_savedFuel = fuel _vehicle;
+				_savedMags = magazines _vehicle;
+				_savedTurretMags = _vehicle magazinesTurret [0, 0];
+
+				_vehicle setFuel 0;
+				{ _vehicle removeMagazines _x; } forEach _savedMags;
+				{ _vehicle removeMagazinesTurret [_x, [0, 0]]; } forEach _savedTurretMags;
+
+				sleep BNA_KC_DroidPopper_DisableTime;
+
+				_vehicle setFuel _savedFuel;
+				{ _vehicle addMagazine _x; } forEach _savedMags;
+				{ _vehicle addMagazineTurret [_x, [0, 0]]; } forEach _savedTurretMags;
+			} forEach _tanks;
 		};
 	};
 };
