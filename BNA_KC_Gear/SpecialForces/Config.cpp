@@ -27,6 +27,15 @@ class CfgWeapons
             "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
         };
     };
+    class BNA_KC_Helmet_ARC_Night: BNA_KC_Helmet_ARC_Base
+    {
+        displayName = "[KC] SF ARC Helm (Night)";
+        hiddenSelectionsTextures[] = 
+        {
+            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC_Night.paa",
+            "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        };
+    };
 
     class BNA_KC_Helmet_ARF_Base: ls_gar_phase1Arf_helmet
     {
@@ -66,6 +75,34 @@ class CfgWeapons
             "ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
         };
     };
+
+
+    // ┌────────────────────┐
+    // │      Uniforms      │
+    // └────────────────────┘
+    class ls_gar_phase2_uniform;
+    class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
+    {
+        class ItemInfo;
+    };
+
+    class BNA_KC_Uniform_ARC: BNA_KC_Uniform_Base
+    {
+        displayName = "[KC] SF ARC Uniform";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_Unit_ARC";
+        };
+    };
+    class BNA_KC_Uniform_ARC_Night: BNA_KC_Uniform_Base
+    {
+        displayName = "[KC] SF ARC Uniform (Night)";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_Unit_ARC_Night";
+        };
+    };
+
 
     // ┌───────────────────┐
     // │       Vests       │
@@ -144,7 +181,13 @@ class CfgVehicles
 
         displayName = "[KC] SF ARC Trooper";
 
-        uniformClass = "BNA_KC_Uniform_CT";
+        uniformClass = "BNA_KC_Uniform_ARC";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARC_Upper.paa",
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARC_Lower.paa",
+            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        };
 
         // Unit Properties
         // canDeactivateMines = true;  // Explosives Specialist
@@ -153,13 +196,35 @@ class CfgVehicles
         // Loadout
         linkedItems[] =
         {
-            "BNA_KC_Helmet_ARC_Base", "BNA_KC_NVG_Rangefinder", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "BNA_KC_Vest_Arc"
+            "BNA_KC_Helmet_ARC_Base", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_ARC_Base", "BNA_KC_NVG_Rangefinder", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud", "BNA_KC_Vest_Arc"
+            "BNA_KC_Helmet_ARC_Base", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
         backpack = "BNA_KC_Backpack_ARC";
+    };
+
+    class BNA_KC_Unit_ARC_Night: BNA_KC_Unit_ARC
+    {
+        displayName = "[KC] SF ARC Trooper (Night Camo)";
+
+        uniformClass = "BNA_KC_Uniform_ARC_Night";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARC_Night_Upper.paa",
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARC_Night_Lower.paa",
+            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        };
+
+        linkedItems[] =
+        {
+            "BNA_KC_Helmet_ARC_Night", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        };
+        respawnLinkedItems[] =
+        {
+            "BNA_KC_Helmet_ARC_Night", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+        };
     };
 
     class BNA_KC_Unit_ARF: BNA_KC_Unit_Phase1_Base

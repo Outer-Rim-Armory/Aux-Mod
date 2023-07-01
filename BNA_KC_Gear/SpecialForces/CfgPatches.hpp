@@ -24,6 +24,7 @@ class CfgPatches
         {
             // Units
             "BNA_KC_Unit_ARC",
+            "BNA_KC_Unit_ARC_Night",
             "BNA_KC_Unit_ARF",
             "BNA_KC_Unit_BARC",
             
@@ -34,10 +35,13 @@ class CfgPatches
         {
             // Helmets
             "BNA_KC_Helmet_ARC_Base",
+            "BNA_KC_Helmet_ARC_Night",
             "BNA_KC_Helmet_ARF_Base",
             "BNA_KC_Helmet_BARC_Base",
             
             // Uniforms
+            "BNA_KC_Uniform_ARC",
+            "BNA_KC_Uniform_ARC_Night",
 
             // Vests
             "BNA_KC_Vest_ARC"
