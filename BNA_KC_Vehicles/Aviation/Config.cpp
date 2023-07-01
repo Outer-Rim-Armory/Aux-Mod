@@ -3,16 +3,16 @@
 
 class CfgVehicles
 {
-    class W41_LAAT_MK1;
-    class W41_LAAT_MK2;
+    // class W41_LAAT_MK1;
+    // class W41_LAAT_MK2;
     // 41st has numbers swapped, mk1 = mk2, mk2 = mk1
     // 3AS Base Classes (For when dependency free)
-    // class 3as_LAAT_Mk1;
+    class 3as_LAAT_Mk1;
     // class 3as_LAAT_Mk1Lights;
-    // class 3as_LAAT_Mk2;
+    class 3as_LAAT_Mk2;
     // class 3as_LAAT_Mk2Lights;
 
-    class BNA_KC_LAATi_MK1: W41_LAAT_MK2
+    class BNA_KC_LAATi_MK1: 3as_LAAT_Mk1
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -43,11 +43,11 @@ class CfgVehicles
 
         weapons[] =
         {
-            "W41_plasma_weapon_HE",
-
-            "ls_laat_DAR",
-            "W41_AGM_missile_launcher",
-            "W41_AA_missile_launcher",
+            "ls_laat_gun",  // HE Gun
+            "ls_laat_gun_2", // AP Gun
+            "ls_laat_dar",
+            "3as_LAAT_Missile_AGM",
+            "3as_LAAT_Missile_AA",
 
             "Laserdesignator_pilotCamera",
             "ls_weapon_CMFlareLauncher",
@@ -55,26 +55,23 @@ class CfgVehicles
         };
         magazines[] =
         {
-            "W41_Plasma_Mags",
-            "W41_Plasma_Mags",
-            "W41_Plasma_Mags",
-            "W41_Plasma_Mags",
+            "200rnd_laat_he_mag",
+            "200rnd_laat_he_mag",
+            "200rnd_laat_apfsds_mag",
+            "200rnd_laat_apfsds_mag",
 
             "24Rnd_missiles", // Hydra Missiles
-            "NCA_oro_AGM_missile_magazine",
-            "NCA_oro_AGM_missile_magazine",
-            "W41_A2A_missile_magazine",
-            "W41_A2A_missile_magazine",
+            "3as_LAAT_8Rnd_Missile_AGM",
+            "3as_LAAT_8Rnd_Missile_AGM",
+            "3as_PylonMissile_LAAT_8Rnd_Missile_AA",
+            "3as_PylonMissile_LAAT_8Rnd_Missile_AA",
 
             "Laserbatteries",
-            "Laser_Battery",
-            "Laser_Battery",
-            "Laser_Battery",
+            "Laserbatteries",
 
             "ls_mag_300rnd_CMFlareChaff_blue",
             "ls_mag_300rnd_CMFlareChaff_blue",
             "ls_mag_300rnd_CMFlareChaff_blue",
-
             "SmokeLauncherMag"
         };
 
@@ -84,7 +81,7 @@ class CfgVehicles
 		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
     };
 
-    class BNA_KC_LAATi_MK2: W41_LAAT_MK1
+    class BNA_KC_LAATi_MK2: 3as_LAAT_Mk2
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -115,10 +112,11 @@ class CfgVehicles
 
         weapons[] =
         {
-            "W41_plasma_weapon_HE",
-            "ls_laat_DAR",
-            "W41_AGM_missile_launcher",
-            "W41_AA_missile_launcher",
+            "ls_laat_gun",  // HE Gun
+            "ls_laat_gun_2", // AP Gun
+            "ls_laat_dar",
+            "3as_LAAT_Missile_AGM",
+            "3as_LAAT_Missile_AA",
 
             "Laserdesignator_pilotCamera",
             "ls_weapon_CMFlareLauncher",
@@ -126,26 +124,23 @@ class CfgVehicles
         };
         magazines[] =
         {
-            "W41_Plasma_Mags",
-            "W41_Plasma_Mags",
-            "W41_Plasma_Mags",
-            "W41_Plasma_Mags",
+            "200rnd_laat_he_mag",
+            "200rnd_laat_he_mag",
+            "200rnd_laat_apfsds_mag",
+            "200rnd_laat_apfsds_mag",
 
             "24Rnd_missiles", // Hydra Missiles
-            "NCA_oro_AGM_missile_magazine",
-            "NCA_oro_AGM_missile_magazine",
-            "W41_A2A_missile_magazine",
-            "W41_A2A_missile_magazine",
+            "3as_LAAT_8Rnd_Missile_AGM",
+            "3as_LAAT_8Rnd_Missile_AGM",
+            "3as_PylonMissile_LAAT_8Rnd_Missile_AA",
+            "3as_PylonMissile_LAAT_8Rnd_Missile_AA",
 
             "Laserbatteries",
-            "Laser_Battery",
-            "Laser_Battery",
-            "Laser_Battery",
+            "Laserbatteries",
 
             "ls_mag_300rnd_CMFlareChaff_blue",
             "ls_mag_300rnd_CMFlareChaff_blue",
             "ls_mag_300rnd_CMFlareChaff_blue",
-
             "SmokeLauncherMag"
         };
 

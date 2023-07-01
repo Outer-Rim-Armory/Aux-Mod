@@ -11,7 +11,8 @@ class CfgPatches
 				// Pilot unit
 			"lsd_vehicles_heli",
 				// LAAT/c
-			"W41_Aux_LAAT",
+			// "W41_Aux_LAAT",
+			"3AS_LAAT",
 				// LAAT/i
 				// Will be replaced with "3AS_LAAT" when dependency free
 			"ls_functions"
