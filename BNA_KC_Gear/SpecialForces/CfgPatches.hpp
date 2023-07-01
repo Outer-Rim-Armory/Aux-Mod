@@ -44,7 +44,8 @@ class CfgPatches
             "BNA_KC_Uniform_ARC_Night",
 
             // Vests
-            "BNA_KC_Vest_ARC"
+            "BNA_KC_Vest_ARC",
+            "BNA_KC_Vest_ARC_Light"
         };
     };
 };

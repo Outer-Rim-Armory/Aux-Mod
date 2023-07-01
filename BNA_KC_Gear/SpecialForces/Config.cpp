@@ -164,6 +164,15 @@ class CfgWeapons
             };
         };
     };
+    class BNA_KC_Vest_ARC_Light: BNA_KC_Vest_ARC
+    {
+        displayName = "[KC] SF ARC Light Vest";
+        hiddenSelectionsTextures[] =
+        {
+            "",
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+        };
+    };
 };
 
 
