@@ -9,8 +9,6 @@ class CfgPatches
         {
             "3AS_Weapons",
 				// Westar
-                // DC-15S
-                // DC-15C
                 // BT X-42 Flamer
             "JLTS_weapons_DC15S",
                 // DC-15A
@@ -37,11 +35,7 @@ class CfgPatches
             "BNA_KC_DC15S",
             "BNA_KC_DC17",
             "BNA_KC_Flamer",
-            "BNA_KC_Flamer_Heavy",
-
-            // Pre-Defined Weapons
-            "BNA_KC_DC15S_Predef",
-            "BNA_KC_DC15S"
+            "BNA_KC_Flamer_Heavy"
         };
         magazines[] =
         {
