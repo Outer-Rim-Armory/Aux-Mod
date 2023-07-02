@@ -41,7 +41,7 @@ class CfgPatches
 
             // Pre-Defined Weapons
             "BNA_KC_DC15S_Predef",
-            "BNA_KC_DC15C_Predef"
+            "BNA_KC_DC15S"
         };
         magazines[] =
         {

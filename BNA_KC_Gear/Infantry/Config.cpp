@@ -389,16 +389,16 @@ class CfgVehicles
         // Inventory
         weapons[] =
         {
-            "BNA_KC_DC15C_Predef",
-            "3AS_DC17S_F",
+            "BNA_KC_DC15S",
+            "BNA_KC_DC17",
             "SWLB_clone_binocular",
             "Throw",               // Allows the unit to throw grenades
             "Put"                  // Allows the unit to place explosives
         };
         respawnWeapons[] =
         {
-            "BNA_KC_DC15C_Predef",
-            "3AS_DC17S_F",
+            "BNA_KC_DC15S",
+            "BNA_KC_DC17",
             "SWLB_clone_binocular",
             "Throw",
             "Put"
@@ -406,9 +406,9 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11("3AS_40Rnd_EC40_Mag"),
+            ITEM_11("12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("3AS_16Rnd_EC20_Mag"),
+            ITEM_2("12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -421,9 +421,9 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11("3AS_40Rnd_EC40_Mag"),
+            ITEM_11("12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("3AS_16Rnd_EC20_Mag"),
+            ITEM_2("12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -514,16 +514,16 @@ class CfgVehicles
         // Inventory
         weapons[] =
         {
-            "BNA_KC_DC15C_Predef",
-            "3AS_DC17S_F",
+            "BNA_KC_DC15S",
+            "BNA_KC_DC17",
             "SWLB_clone_binocular",
             "Throw",               // Allows the unit to throw grenades
             "Put"                  // Allows the unit to place explosives
         };
         respawnWeapons[] =
         {
-            "BNA_KC_DC15C_Predef",
-            "3AS_DC17S_F",
+            "BNA_KC_DC15S",
+            "BNA_KC_DC17",
             "SWLB_clone_binocular",
             "Throw",
             "Put"
@@ -531,9 +531,9 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11("3AS_40Rnd_EC40_Mag"),
+            ITEM_11("12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("3AS_16Rnd_EC20_Mag"),
+            ITEM_2("12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -546,9 +546,9 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11("3AS_40Rnd_EC40_Mag"),
+            ITEM_11("12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("3AS_16Rnd_EC20_Mag"),
+            ITEM_2("12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
