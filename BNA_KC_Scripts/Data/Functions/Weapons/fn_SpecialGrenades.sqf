@@ -14,9 +14,9 @@ _this spawn
             };
             sleep _delay;
             private _position = getPosATL _projectile;
-            systemChat str _position;
             if (BNA_KC_DevMode) then
             {
+                systemChat str _position;
                 createVehicle ["VR_3DSelector_01_default_F", _position, [], 0, "CAN_COLLIDE"];
             };
 
