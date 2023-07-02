@@ -149,37 +149,6 @@ class CfgVehicles
                 count = 8;
             };
         };
-        
-        // For Medical Crate
-        // class TransportItems
-        // {
-        //     class _xx_ACE_elasticBandage
-        //     {
-        //         name = "ACE_elasticBandage";
-        //         count = 10;
-
-        //     };
-        //     class _xx_ACE_packingBandage
-        //     {
-        //         name = "ACE_packingBandage";
-        //         count = 10;
-        //     };
-        //     class _xx_ACE_quikclot
-        //     {
-        //         name = "ACE_quikclot";
-        //         count = 10;
-        //     };
-        //     class _xx_ACE_surgicalKit
-        //     {
-        //         name = "ACE_surgicalKit";
-        //         count = 1;
-        //     };
-        //     class _xx_ToolKit
-        //     {
-        //         name = "ToolKit";
-        //         count = 1;
-        //     };
-        // };
     };
 
     class BNA_KC_Resupply_PlatoonAmmo: BNA_KC_Resupply_SquadAmmo
@@ -305,6 +274,198 @@ class CfgVehicles
             {
                 magazine = "ls_mag_classC_thermalDet";
                 count = 25;
+            };
+        };
+    };
+
+    class BNA_KC_Resupply_SquadMedical: BNA_KC_Resupply_Base
+    {
+        displayName = "[KC] Medical Crate (Squad)";
+        hiddenSelections[] = { "camo1" };
+        hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat" };
+        hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa" };
+        
+        class TransportItems
+        {
+            // Bandages
+            class _xx_ACE_elasticBandage
+            {
+                name = "ACE_elasticBandage";
+                count = 60;
+            };
+
+            class _xx_ACE_packingBandage
+            {
+                name = "ACE_packingBandage";
+                count = 40;
+            };
+
+            class _xx_ACE_quickclot
+            {
+                name = "ACE_quickclot";
+                count = 30;
+            };
+
+            // Fluid
+            class _xx_ACE_salineIV
+            {
+                name = "ACE_salineIV";
+                count = 2;
+            };
+            class _xx_ACE_salineIV_500
+            {
+                name = "ACE_salineIV_500";
+                count = 3;
+            };
+            class _xx_ACE_salineIV_250
+            {
+                name = "ACE_salineIV_250";
+                count = 5;
+            };
+
+            // Drugs
+            class _xx_ACE_morphine
+            {
+                name = "ACE_morphine";
+                count = 5;
+            };
+
+            class _xx_ACE_epinephrine
+            {
+                name = "ACE_epinephrine";
+                count = 5;
+            };
+
+            class _xx_RD501_Painkiller
+            {
+                name = "RD501_Painkiller";
+                count = 10;
+            };
+
+            // Misc
+            class _xx_ACE_tourniquet
+            {
+                name = "ACE_tourniquet";
+                count = 12;
+            };
+
+            class _xx_ACE_Splint
+            {
+                name = "ACE_Splint";
+                count = 3;
+            };
+
+            class _xx_ACE_Banana
+            {
+                name = "ACE_Banana";
+                count = 1;
+            };
+        };
+
+        class TransportMagazines
+        {
+            class _xx_3AS_SmokePurple
+            {
+                magazine = "3AS_SmokePurple";
+                count = 2;
+            };
+
+            class _xx_SquadShieldMagazine
+            {
+                magazine = "SquadShieldMagazine";
+                count = 1;
+            };
+        };
+    };
+
+    class BNA_KC_Resupply_PlatoonMedical: BNA_KC_Resupply_SquadMedical
+    {
+        displayName = "[KC] Medical Crate (Platoon)";
+        ace_cargo_size = 2;
+
+        // Bandages
+        class TransportItems
+        {
+            class _xx_ACE_elasticBandage
+            {
+                name = "ACE_elasticBandage";
+                count = 150;
+            };
+
+            class _xx_ACE_packingBandage
+            {
+                name = "ACE_packingBandage";
+                count = 60;
+            };
+
+            class _xx_ACE_quickclot
+            {
+                name = "ACE_quickclot";
+                count = 40;
+            };
+
+            // Fluid
+            class _xx_ACE_salineIV
+            {
+                name = "ACE_salineIV";
+                count = 8;
+            };
+            class _xx_ACE_salineIV_500
+            {
+                name = "ACE_salineIV_500";
+                count = 10;
+            };
+            class _xx_ACE_salineIV_250
+            {
+                name = "ACE_salineIV_250";
+                count = 16;
+            };
+
+            // Drugs
+            class _xx_ACE_morphine
+            {
+                name = "ACE_morphine";
+                count = 10;
+            };
+
+            class _xx_ACE_epinephrine
+            {
+                name = "ACE_epinephrine";
+                count = 10;
+            };
+
+            class _xx_RD501_Painkiller
+            {
+                name = "RD501_Painkiller";
+                count = 15;
+            };
+
+            // Misc
+            class _xx_ACE_tourniquet
+            {
+                name = "ACE_tourniquet";
+                count = 16;
+            };
+
+            class _xx_ACE_Splint
+            {
+                name = "ACE_Splint";
+                count = 8;
+            };
+        };
+
+        class TransportMagazines
+        {
+            class _xx_3AS_SmokePurple
+            {
+                magazine = "3AS_SmokePurple";
+                count = 10;
+            };
+
+            class _xx_SquadShieldMagazine
+            {
+                magazine = "SquadShieldMagazine";
+                count = 4;
             };
         };
     };
