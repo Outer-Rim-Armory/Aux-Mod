@@ -7,8 +7,10 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "3AS_ATRT"
+            "3AS_ATRT",
 				// AT-RT
+            "A3_Soft_F_Exp_LSV_02"
+                // Unarmed, Armed, and AT versions of the LSV
         };
         units[] =
 		{
