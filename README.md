@@ -51,6 +51,9 @@ Infantry
 Aviation
 
 ### Reeker
+<div align=center>
+<img src=".github/kc_banner_reeker.jpg" alt="Reeker Detachment"></img>
+</div>
 
 Armored
 
@@ -62,6 +65,9 @@ Armored
 ARC
 
 ### Raptor
+<div align=center>
+<img src=".github/kc_banner_raptor.jpg" alt="Raptor Detachment"></img>
+</div>
 
 ARF
 
