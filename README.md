@@ -37,7 +37,7 @@ Keeli Company has several platoons to fit the play styles of its members. Lettin
 Infantry
 
 ### Blurrgg
-![Blurrgg Detachment](.github/kc_banner_aviation.jpg)
+<img align=center src=".github/kc_banner_aviation.jpg" alt="Blurrgg Detachment"></img>
 
 Aviation
 
@@ -46,7 +46,7 @@ Aviation
 Armored
 
 ### Spartan & Raptor
-![Spartan Detachment](.github/kc_banner_spartan.jpg)
+<img align=center src=".github/kc_banner_spartan.jpg" alt="Spartan Detachment"></img>
 
 Special Forces (ARC/ARF)
 
