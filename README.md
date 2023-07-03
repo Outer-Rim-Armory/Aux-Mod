@@ -37,12 +37,15 @@ Unit description
 Keeli Company has several platoons to fit the play styles of its members. Letting people play the way they want to.
 
 ### Nightfall
+<div align=center>
+<img src=".github/kc_banner_nightfall.png" alt="Blurrgg Detachment"></img>
+</div>
 
 Infantry
 
 ### Blurrgg
 <div align=center>
-<img src=".github/kc_banner_aviation.jpg" alt="Blurrgg Detachment"></img>
+<img src=".github/kc_banner_blurrgg.png" alt="Blurrgg Detachment"></img>
 </div>
 
 Aviation
@@ -51,12 +54,16 @@ Aviation
 
 Armored
 
-### Spartan & Raptor
+### Spartan
 <div align=center>
 <img src=".github/kc_banner_spartan.jpg" alt="Spartan Detachment"></img>
 </div>
 
-Special Forces (ARC/ARF)
+ARC
+
+### Raptor
+
+ARF
 
 ## Communication System for Deaf & Mute Players
 Keeli Company does what it can to meet the needs of players because everyone deserves the ability to play. The original system was created by Mithu Ral (`jenenna985` on [Discord](https://discord.com/)) of the [House Kandosii](https://discord.com/invite/KPRMagqwAc) Arma 3 unit, but allows their code to be used freely. This system was then expanded upon for further functionality.
