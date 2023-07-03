@@ -1,6 +1,8 @@
 #define GET_NUMBER(config,default) (if (isNumber (config)) then {getNumber (config)} else {default})
 #define GET_STRING(config,default) (if (isText (config)) then {getText (config)} else {default})
 
+//* This script does NOT work properly for helmets with built in night vision and thermals
+//* Arma will always put the player back the the normal vision mode when recieving a new helmet
 
 player addEventHandler ["VisionModeChanged", 
 {
