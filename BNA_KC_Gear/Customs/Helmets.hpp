@@ -755,6 +755,8 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot_Base
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Pilot_Blue";
     BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase1_Pilot_Blue_Bacta";
 
+	subItems[] = {};
+
 	displayName = "[KC] AVI P1 Helm ('Blue')";
 	hiddenSelectionsTextures[] =
     {
@@ -817,6 +819,8 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue: BNA_KC_Helmet_Phase2_Pilot_Base
 	BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Pilot_Blue";
     BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Pilot_Blue_Bacta";
+
+	subItems[] = {};
 
 	displayName = "[KC] AVI Helm ('Blue')";
     hiddenSelectionsTextures[] =
