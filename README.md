@@ -1,4 +1,4 @@
-<div style="text-align: center">
+<div align="center">
 
 [![KC Banner](.github/kc_banner.jpg "Keeli Company Aux Mod")](https://www.keelicompany.com/)
 
@@ -33,17 +33,21 @@ Unit description
 Keeli Company has several platoons to fit the play styles of its members. Letting people play the way they want to.
 
 ### Nightfall
+
 Infantry
 
 ### Blurrgg
 ![Blurrgg Detachment](.github/kc_banner_aviation.jpg)
+
 Aviation
 
 ### Reeker
+
 Armored
 
 ### Spartan & Raptor
 ![Spartan Detachment](.github/kc_banner_spartan.jpg)
+
 Special Forces (ARC/ARF)
 
 ## Communication System for Deaf & Mute Players
