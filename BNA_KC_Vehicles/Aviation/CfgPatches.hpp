@@ -11,10 +11,10 @@ class CfgPatches
 				// Pilot unit
 			"lsd_vehicles_heli",
 				// LAAT/c
-			// "W41_Aux_LAAT",
 			"3AS_LAAT",
 				// LAAT/i
-				// Will be replaced with "3AS_LAAT" when dependency free
+			"3as_Starships",
+				// Republic Transport
 			"ls_functions"
 				// Impulse script
 		};
@@ -22,7 +22,8 @@ class CfgPatches
 		{
 			"BNA_KC_LAATi_MK1",
 			"BNA_KC_LAATi_MK2",
-			"BNA_KC_LAATc"
+			"BNA_KC_LAATc",
+			"BNA_KC_RepubTransport"
 		};
 		weapons[] = {};
 	};

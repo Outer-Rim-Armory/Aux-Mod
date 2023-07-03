@@ -232,7 +232,7 @@ class CfgVehicles
 
 		hiddenselectionstextures[]=
 		{
-			"BNA_KC_Vehicles\Other\Data\Transport\BNA_KC_Republic_Transport_Body.paa",
+			"BNA_KC_Vehicles\Aviation\Data\Transport\BNA_KC_Republic_Transport_Body.paa",
 			"3as\3as_starships\data\hs_int_co.paa"
 		};
 	};
