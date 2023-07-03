@@ -2,7 +2,11 @@
 
 [![KC Banner](.github/kc_banner.jpg "Keeli Company Aux Mod")](https://www.keelicompany.com/)
 
-<h1 style="border-bottom: none"> Keeli Company Aux Mod </h1>
+<div id="user-content-toc">
+  <ul>
+    <summary><h1 style="display: inline-block;">Keeli Company Aux Mod</h1></summary>
+  </ul>
+</div>
 
 <h3>
 
