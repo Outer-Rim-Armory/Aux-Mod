@@ -56,7 +56,7 @@ Armored
 
 ### Spartan
 <div align=center>
-<img src=".github/kc_banner_spartan.jpg" alt="Spartan Detachment"></img>
+<img src=".github/kc_banner_spartan.png" alt="Spartan Detachment"></img>
 </div>
 
 ARC
