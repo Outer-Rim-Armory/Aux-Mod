@@ -504,7 +504,7 @@ class BNA_KC_Helmet_Phase2_Fil: BNA_KC_Helmet_Phase2_Base
 
 class BNA_KC_Helmet_Phase2_FilSquad: BNA_KC_Helmet_Phase2_Base
 {
-	displayName = "[KC] INF Helm ('FilSquad')";
+	displayName = "[KC] INF Helm ('Fil's Squad')";
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_FilSquad.paa",
