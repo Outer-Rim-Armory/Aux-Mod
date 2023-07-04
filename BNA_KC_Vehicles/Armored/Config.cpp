@@ -270,7 +270,10 @@ class CfgVehicles
 			};
 		};
 
-		// Set the number of spare tracks to 2
+		// Add an extra spare track item
+        // Items added this way do not replace the vehicle's base cargo
+        // ACE by default will add one spare track / wheel (via script)
+        // To fully replace the cargo, use ace_cargo_fnc_removeCargoItem and ace_cargo_fnc_addCargoItem
 		class ACE_Cargo
 		{
             class Cargo
@@ -278,8 +281,14 @@ class CfgVehicles
                 class Track
 				{
                     type = "ACE_Track";
-                    amount = 2;
+                    amount = 1;
                 };
+                // Example for adding resupply boxes
+                // class BNA_KC_Resupply_SquadAmmo
+				// {
+                //     type = "BNA_KC_Resupply_SquadAmmo";
+                //     amount = 2;
+                // };
             };
         };
 	};
