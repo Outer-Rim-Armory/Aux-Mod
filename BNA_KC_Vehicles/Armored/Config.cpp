@@ -536,7 +536,19 @@ class CfgVehicles
         };
 	};
 
-    class 3as_Jug;
+    class 3AS_Jug_base_F;
+    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F
+    {
+        class HitPoints;
+    };
+    class 3as_Jug: 3AS_B_Jug_01_base_F
+    {
+        class HitPoints: HitPoints
+        {
+            class HitBody;
+            class HitHull;
+        };
+    };
     class BNA_KC_Juggernaut: 3as_Jug
     {
         // Mod Info
@@ -561,6 +573,37 @@ class CfgVehicles
             "BNA_KC_Juggernaut_Horn",
             "BNA_KC_Juggernaut_Alarm"
         };
+
+        // Look at https://community.bistudio.com/wiki/Arma_3:_Soldier_Protection for info on what each value does
+        class HitPoints: HitPoints
+        {
+            class HitBody: HitBody
+            {
+                armor = 2;
+                explosionShielding = 0.15;
+            };
+            class HitHull: HitHull
+            {
+                armor = 2;
+                explosionShielding = 0.85;
+            };
+        };
+        /* Original Values
+        class HitBody: HitBody
+        {
+            armor = 1;
+            explosionShielding = 0.2;
+            minimalHit = 0.1;
+            passThrough = 0.5;
+        };
+        class HitHull: HitHull
+        {
+            armor = 2;
+            explosionShielding = 1.5;
+            minimalHit = 0.1;
+            passThrough = 0;
+        };
+        */
     };
 };
 
