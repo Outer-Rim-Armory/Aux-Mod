@@ -370,8 +370,8 @@ class CfgWeapons
 		};
 	};
 	
-	
-	class HMG_127_MBT: LMG_RCWS
+	class HMG_127_APC;
+	class HMG_127_MBT: HMG_127_APC
 	{
 		class manual;
 	};
