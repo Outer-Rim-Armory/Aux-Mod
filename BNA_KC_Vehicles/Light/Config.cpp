@@ -111,18 +111,19 @@ class CfgVehicles
         HORNET_INVENTORY()
     };
 
-    class LSV_02_base_F;
-    class LSV_02_armed_base_F: LSV_02_base_F
+    class Car_F;
+    class LSV_02_base_F: Car_F
     {
         class Turrets;
     };
-    class O_LSV_02_armed_F: LSV_02_armed_base_F
+    class LSV_02_armed_base_F: LSV_02_base_F
     {
         class Turrets: Turrets
         {
             class MainTurret;
         };
     };
+    class O_LSV_02_armed_F: LSV_02_armed_base_F {};
     class BNA_KC_Hornet_Armed: O_LSV_02_armed_F
     {
         // Mod Info
@@ -157,7 +158,7 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                weapons[] = { "BNA_KC_Coax" };
+                weapons[] = { "BNA_KC_Mounted_MG" };
                 magazines[] =
                 {
                     "BNA_KC_100rnd_Coax_Mag",

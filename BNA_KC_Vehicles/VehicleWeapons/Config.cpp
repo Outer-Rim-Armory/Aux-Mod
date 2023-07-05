@@ -369,7 +369,33 @@ class CfgWeapons
 			};
 		};
 	};
-	
+    
+    class LMG_Minigun;
+    class LMG_Minigun_Transport: LMG_Minigun
+    {
+        class manual;
+    };
+    class BNA_KC_Mounted_MG: LMG_Minigun_Transport
+    {
+        displayName = "Machine Gun";
+        drySound[] = { "MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10 };
+        magazines[] = { "BNA_KC_100rnd_Coax_Mag" };
+
+        class manual: manual
+        {
+            sounds[] =  { "StandardSound" };
+            class StandardSound
+            {
+                weaponSoundEffect = "";
+                begin1[] = { "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Hornet\Hornet_MG_Fire.wss", 3, 1, 1800 };
+                soundBegin[] = { "begin1", 1 };
+
+                closure1[] = { "A3\sounds_f\weapons\gatling\gatling_rotation_short_2", 0.316228, 1, 20 };
+                closure2[] = { "A3\sounds_f\weapons\gatling\gatling_rotation_short_3", 0.316228, 1, 20 };
+                soundClosure[] = { "closure1", 0.5, "closure2", 0.5 };
+            };
+        };
+    };
 	class HMG_127_APC;
 	class HMG_127_MBT: HMG_127_APC
 	{

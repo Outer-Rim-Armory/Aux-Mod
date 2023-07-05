@@ -19,6 +19,7 @@ class CfgPatches
             "BNA_KC40mm_CTWS",
             "BNA_KC_Coax",
             "BNA_KC_CommanderGun",
+            "BNA_KC_Hornet_MG_Weapon",
 
             "BNA_KC_Juggernaut_Horn",
             "BNA_KC_Juggernaut_Alarm",
