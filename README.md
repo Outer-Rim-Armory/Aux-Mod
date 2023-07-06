@@ -10,7 +10,7 @@
 
 <h3>
 
-[Homepage](https://www.keelicompany.com/) | [Discord](https://discord.gg/ZKPt3GjxQC) | [Changelogs](https://discord.com/channels/397600745173549057/1025651724310024252) | [A3 Units Page](https://units.arma3.com/unit/kckeelicompany)
+[Homepage](https://www.keelicompany.com/) | [Discord](https://discord.gg/ZKPt3GjxQC) | [Changelogs](https://ptb.discord.com/channels/397600745173549057/1126550349650591896) | [A3 Units Page](https://units.arma3.com/unit/kckeelicompany)
 
 </h3>
 
