@@ -883,9 +883,9 @@ class BNA_KC_Helmet_Phase2_Pilot_Mischief: BNA_KC_Helmet_Phase2_Pilot_Base
 // ┌───────────────────┐
 // │  P1 ARMR Helmets  │
 // └───────────────────┘
-class BNA_KC_Helmet_Phase1_Tanker_Base;
+class BNA_KC_Helmet_Phase1_Tanker;
 
-class BNA_KC_Helmet_Phase1_Tanker_Grey: BNA_KC_Helmet_Phase1_Tanker_Base
+class BNA_KC_Helmet_Phase1_Tanker_Grey: BNA_KC_Helmet_Phase1_Tanker
 {
 	displayName = "[KC] ARMR P1 Helm ('Grey')";
     hiddenSelectionsTextures[] =
@@ -899,9 +899,9 @@ class BNA_KC_Helmet_Phase1_Tanker_Grey: BNA_KC_Helmet_Phase1_Tanker_Base
 // ┌───────────────────┐
 // │  P2 ARMR Helmets  │
 // └───────────────────┘
-class BNA_KC_Helmet_Phase2_Tanker_Base;
+class BNA_KC_Helmet_Phase2_Tanker;
 
-class BNA_KC_Helmet_Phase2_Tanker_Catholic: BNA_KC_Helmet_Phase2_Tanker_Base
+class BNA_KC_Helmet_Phase2_Tanker_Catholic: BNA_KC_Helmet_Phase2_Tanker
 {
 	displayName = "[KC] ARMR Helm ('Catholic')";
     hiddenSelectionsTextures[] =
@@ -911,7 +911,7 @@ class BNA_KC_Helmet_Phase2_Tanker_Catholic: BNA_KC_Helmet_Phase2_Tanker_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Tanker_Grey: BNA_KC_Helmet_Phase2_Tanker_Base
+class BNA_KC_Helmet_Phase2_Tanker_Grey: BNA_KC_Helmet_Phase2_Tanker
 {
 	displayName = "[KC] ARMR Helm ('Grey')";
     hiddenSelectionsTextures[] =

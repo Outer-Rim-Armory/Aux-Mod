@@ -27,7 +27,7 @@ class CfgWeapons
             "ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
         };
     };
-    class BNA_KC_Helmet_Phase1_Tanker_v2: BNA_KC_Helmet_Phase1_Tanker_Base
+    class BNA_KC_Helmet_Phase1_Tanker_v2: BNA_KC_Helmet_Phase1_Tanker
     {
         displayName = "[KC] ARMR P1 Helm (Trooper, Version 2)";
         hiddenSelectionsTextures[] =
@@ -55,7 +55,7 @@ class CfgWeapons
             "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
         };
     };
-    class BNA_KC_Helmet_Phase2_Tanker_v2: BNA_KC_Helmet_Phase2_Tanker_Base
+    class BNA_KC_Helmet_Phase2_Tanker_v2: BNA_KC_Helmet_Phase2_Tanker
     {
         displayName = "[KC] ARMR P2 Helm (Crewman, Version 2)";
         hiddenSelectionsTextures[] =
@@ -109,11 +109,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Phase2_Tanker_Base", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Helmet_Phase2_Tanker", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Phase2_Tanker_Base", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Helmet_Phase2_Tanker", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
         backpack = "";
     };
@@ -124,11 +124,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Phase1_Tanker_Base", "lsd_gar_clone_vest", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Helmet_Phase1_Tanker", "lsd_gar_clone_vest", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Phase1_Tanker_Base", "lsd_gar_clone_vest", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Helmet_Phase1_Tanker", "lsd_gar_clone_vest", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
     };
 };
