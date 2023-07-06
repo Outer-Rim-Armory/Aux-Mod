@@ -59,6 +59,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Ox",
             "BNA_KC_Helmet_Phase1_Patriot",
             "BNA_KC_Helmet_Phase1_Ponds",
+            "BNA_KC_Helmet_Phase1_Rev",
             "BNA_KC_Helmet_Phase1_Rodger",
             "BNA_KC_Helmet_Phase1_Sin",
             "BNA_KC_Helmet_Phase1_Splashdown",
@@ -88,6 +89,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Splashdown",
             "BNA_KC_Helmet_Phase2_Stone",
             "BNA_KC_Helmet_Phase2_Swoop",
+            "BNA_KC_Helmet_Phase2_Taun",
             "BNA_KC_Helmet_Phase2_Woods",
 
             // Engineer Helmets

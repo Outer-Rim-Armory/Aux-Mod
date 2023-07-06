@@ -357,6 +357,17 @@ class BNA_KC_Helmet_Phase1_Ponds: BNA_KC_Helmet_Phase1_Base
 	};
 };
 
+class BNA_KC_Helmet_Phase1_Rev: BNA_KC_Helmet_Phase1_Base
+{
+	displayName = "[KC] INF P1 Helm ('Rev')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 1\BNA_KC_Helmet_P1_Rev.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+		"ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+	};
+};
+
 class BNA_KC_Helmet_Phase1_Rodger: BNA_KC_Helmet_Phase1_Base
 {
 	displayName = "[KC] INF P1 Helm ('Rodger')";
@@ -684,6 +695,16 @@ class BNA_KC_Helmet_Phase2_Swoop: BNA_KC_Helmet_Phase2_Base
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Swoop.paa",
+		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+	};
+};
+
+class BNA_KC_Helmet_Phase2_Taun: BNA_KC_Helmet_Phase2_Base
+{
+	displayName = "[KC] INF Helm ('Taun')";
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Taun.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
 	};
 };
