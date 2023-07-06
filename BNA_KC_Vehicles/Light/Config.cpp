@@ -3,7 +3,20 @@
 
 // Macros
 // TODO: Add DC-15X ammo
-#define HORNET_INVENTORY() class TransportMagazines \
+#define HORNET_INVENTORY() class TransportWeapons \
+{ \
+    class _xx_BNA_KC_DC15A \
+    { \
+        weapon = "BNA_KC_DC15A"; \
+        count = 1; \
+    }; \
+    class _xx_BNA_KC_DC15S \
+    { \
+        weapon = "BNA_KC_DC15S"; \
+        count = 1; \
+    }; \
+}; \
+class TransportMagazines \
 { \
     class _xx_12thFleet_Mag_DC15A \
     { \
