@@ -551,6 +551,8 @@ class CfgAmmo
     class GrenadeHand;
     class BNA_KC_Grenade_DroidPopper_Ammo: GrenadeHand
     {
+        model = "ls_weapons\grenades\thermalDet\ls_grenade_thermalDet";
+
         // Disable damage and explosions
         hit = 0.000001;
         indirectHit = 0.000001;
