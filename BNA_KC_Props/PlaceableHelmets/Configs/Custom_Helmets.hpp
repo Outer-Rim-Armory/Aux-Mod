@@ -43,6 +43,7 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Dexus_Bacta, [KC] INF P2 Helm ('Dexus') [Ba
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Fil, [KC] INF P2 Helm ('Fil'), BNA_KC_Helmet_Phase2_Fil, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_FilSquad, [KC] INF P2 Helm ('Fil's Squad'), BNA_KC_Helmet_Phase2_FilSquad, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Grey, [KC] INF P2 Helm ('Grey'), BNA_KC_Helmet_Phase2_Grey, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Harry, [KC] INF P2 Helm ('Harry'), BNA_KC_Helmet_Phase2_Harry, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Hazard, [KC] INF P2 Helm ('Hazard'), BNA_KC_Helmet_Phase2_Hazard, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Jaws, [KC] INF P2 Helm ('Jaws'), BNA_KC_Helmet_Phase2_Jaws, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Jester, [KC] INF P2 Helm ('Jester'), BNA_KC_Helmet_Phase2_Jester, "Customs")
