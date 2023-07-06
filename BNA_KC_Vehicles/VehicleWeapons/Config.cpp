@@ -405,6 +405,19 @@ class CfgWeapons
             };
         };
     };
+
+    class missiles_Vorona;
+    class BNA_KC_Mounted_MissileLauncher: missiles_Vorona
+    {
+        displayName = "Missile Launcher";
+        drySound[] = { "", 1, 1 };
+
+        class StandardSound
+        {
+            begin1[] = { "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Hornet\Hornet_AT_Fire.wss", 5, 1, 1100 };
+            soundBegin[] = { "begin1", 1 };
+        };
+    };
     
 	class HMG_127_APC;
 	class HMG_127_MBT: HMG_127_APC

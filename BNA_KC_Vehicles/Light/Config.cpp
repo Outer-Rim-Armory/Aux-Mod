@@ -123,14 +123,26 @@ class CfgVehicles
         HORNET_INVENTORY()
     };
 
-    class Car;
+    class All {};
+    class AllVehicles: All
+    {
+        class NewTurret {};
+    };
+    class Land: AllVehicles {};
+    class LandVehicle: Land {};
+    class Car: LandVehicle {};
     class Car_F: Car
     {
+        class NewTurret: NewTurret {};
+        class Turrets
+        {
+            class MainTurret: NewTurret {};
+        };
         class AnimationSources {};
     };
     class LSV_02_base_F: Car_F
     {
-        class Turrets;
+        class Turrets: Turrets {}
         class AnimationSources: AnimationSources
         {
 			class Minigun {};
@@ -199,7 +211,22 @@ class CfgVehicles
         };
     };
 
-    class O_LSV_02_AT_F;
+
+    class LSV_02_AT_base_F: LSV_02_base_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+        };
+        class AnimationSources: AnimationSources
+        {
+            class VoronaMuzzle_reload {};
+            class VoronaMuzzle_reloadMagazine {};
+            class VoronaMuzzle_revolving {};
+            class VoronaMuzzle_rot {};
+        };
+    };
+	class O_LSV_02_AT_F: LSV_02_AT_base_F {};
     class BNA_KC_Hornet_AT: O_LSV_02_AT_F
     {
         // Mod Info
@@ -222,7 +249,7 @@ class CfgVehicles
         HORNET_INVENTORY()
 
         // The launcher model adds two more hiddenSelections, meaning the normal macro would require extra editing
-        hiddenSelectionsTextures +=
+        hiddenSelectionsTextures[] =
         {
             "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
             "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
@@ -246,7 +273,7 @@ class CfgVehicles
                     "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"
                 };
             };
-            class GreyCamo: BrownCamo \
+            class GreyCamo: BrownCamo
             {
                 displayName = "Grey Camo";
                 textures[] =
@@ -259,6 +286,34 @@ class CfgVehicles
                 };
             };
         };
+        
+        class Turrets: Turrets
+        {
+			class MainTurret: MainTurret
+            {
+                weapons[] = { "BNA_KC_Mounted_MissileLauncher" };
+            };
+		};
+
+        class AnimationSources: AnimationSources
+        {
+			class VoronaMuzzle_reload: VoronaMuzzle_reload
+            {
+                weapon = "BNA_KC_Mounted_MissileLauncher";
+            };
+            class VoronaMuzzle_reloadMagazine: VoronaMuzzle_reloadMagazine
+            {
+                weapon = "BNA_KC_Mounted_MissileLauncher";
+            };
+            class VoronaMuzzle_revolving: VoronaMuzzle_revolving
+            {
+                weapon = "BNA_KC_Mounted_MissileLauncher";
+            };
+            class VoronaMuzzle_rot: VoronaMuzzle_rot
+            {
+                weapon = "BNA_KC_Mounted_MissileLauncher";
+            };
+		};
     };
 };
 
