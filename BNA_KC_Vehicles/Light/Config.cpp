@@ -219,8 +219,46 @@ class CfgVehicles
 
         displayName = "[KC] Hornet Strike Vehicle (AT)";
 
-        HORNET_TEXTURES()
         HORNET_INVENTORY()
+
+        // The launcher model adds two more hiddenSelections, meaning the normal macro would require extra editing
+        hiddenSelectionsTextures +=
+        {
+            "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
+            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+            "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa",
+            "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"
+        };
+        class TextureSources
+        {
+            class BrownCamo
+            {
+                author = "SweMonkey and DartRuffian";
+                displayName = "KC Brown Camo";
+                factions[] = { "BNA_KC_Faction" };
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
+                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+                    "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa",
+                    "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"
+                };
+            };
+            class GreyCamo: BrownCamo \
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Grey.paa",
+                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+                    "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa",
+                    "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"
+                };
+            };
+        };
     };
 };
 
