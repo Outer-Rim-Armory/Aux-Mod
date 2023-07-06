@@ -75,6 +75,15 @@ class CfgMagazines
         descriptionShort = "100rnd Mag";
         tracersEvery=1;
     };
+    class BNA_KC_500rnd_Coax_Mag: BNA_KC_100rnd_Coax_Mag
+    {
+        displayName = "500rnd Mag";
+        displayNameShort = "500rnd Mag";
+        descriptionShort = "500rnd Mag";
+        tracersEvery=1;
+
+        count = 500;
+    };
 };
 
 
@@ -379,7 +388,7 @@ class CfgWeapons
     {
         displayName = "Machine Gun";
         drySound[] = { "MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10 };
-        magazines[] = { "BNA_KC_100rnd_Coax_Mag" };
+        magazines[] = { "BNA_KC_100rnd_Coax_Mag", "BNA_KC_500rnd_Coax_Mag" };
 
         class manual: manual
         {
@@ -396,6 +405,7 @@ class CfgWeapons
             };
         };
     };
+    
 	class HMG_127_APC;
 	class HMG_127_MBT: HMG_127_APC
 	{
