@@ -568,17 +568,35 @@ class CfgVehicles
         };
 	};
 
-    class 3AS_Jug_base_F;
-    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F
+    class All {};
+    class AllVehicles: All {};
+    class Land: AllVehicles {};
+    class LandVehicle: Land {};
+    class Car: LandVehicle {};
+    class Car_F: Car
     {
-        class HitPoints;
+        class HitPoints
+        {
+            class HitBody {};
+            class HitHull {};
+        };
     };
+    class Wheeled_Apc_F: Car_F {};
+    class 3AS_Jug_base_F: Wheeled_Apc_F
+    {
+        class HitPoints: HitPoints
+        {
+            class HitBody: HitBody {};
+            class HitHull: HitHull {};
+        };
+    };
+    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F {};
     class 3as_Jug: 3AS_B_Jug_01_base_F
     {
         class HitPoints: HitPoints
         {
-            class HitBody;
-            class HitHull;
+            class HitBody: HitBody {};
+            class HitHull: HitHull {};
         };
     };
     class BNA_KC_Juggernaut: 3as_Jug
