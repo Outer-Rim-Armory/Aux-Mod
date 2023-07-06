@@ -111,10 +111,20 @@ class CfgVehicles
         HORNET_INVENTORY()
     };
 
-    class Car_F;
+    class Car;
+    class Car_F: Car
+    {
+        class AnimationSources {};
+    };
     class LSV_02_base_F: Car_F
     {
         class Turrets;
+        class AnimationSources: AnimationSources
+        {
+			class Minigun {};
+            class muzzle_hide {};
+            class muzzle_rot {};
+		};
     };
     class LSV_02_armed_base_F: LSV_02_base_F
     {
@@ -164,6 +174,22 @@ class CfgVehicles
                     "BNA_KC_500rnd_Coax_Mag",
                     "BNA_KC_500rnd_Coax_Mag"
                 };
+            };
+        };
+
+        class AnimationSources: AnimationSources
+        {
+            class Minigun: Minigun
+            {
+                weapon = "BNA_KC_Mounted_MG";
+            };
+            class muzzle_hide: muzzle_hide
+            {
+                weapon = "BNA_KC_Mounted_MG";
+            };
+            class muzzle_rot: muzzle_rot
+            {
+                weapon = "BNA_KC_Mounted_MG";
             };
         };
     };
