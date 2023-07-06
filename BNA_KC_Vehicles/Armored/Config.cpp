@@ -3,48 +3,71 @@
 
 class CfgVehicles
 {
-    class Tank_F;
-	class MBT_01_base_F: Tank_F
-	{
-		class Turrets;
+	class All
+    {
+        class AnimationSources {};
+    };
+	class AllVehicles: All
+    {
+		class NewTurret {};
 	};
-	class B_MBT_01_base_F: MBT_01_base_F
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret;
-		};
+	class Land: AllVehicles {};
+	class LandVehicle: Land
+    {
+		class CommanderOptics: NewTurret {};
 	};
-	class B_MBT_01_cannon_F: B_MBT_01_base_F
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class Turrets;
-			};
-		};
-		class AnimationSources;
-	};
-	class B_MBT_01_TUSK_F: B_MBT_01_cannon_F
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				class Turrets: Turrets
-				{
-					class CommanderOptics;
+	class Tank: LandVehicle {};
+	class Tank_F: Tank
+    {
+		class Turrets
+        {
+			class MainTurret: NewTurret
+            {
+				class Turrets
+                {
+					class CommanderOptics: CommanderOptics {};
 				};
 			};
 		};
-		class AnimationSources: AnimationSources
-		{
+	};
+	class MBT_01_base_F: Tank_F
+    {
+        class AnimationSources: AnimationSources {};
+		class Turrets: Turrets
+        {
+			class MainTurret: MainTurret
+            {
+				class Turrets: Turrets
+                {
+					class CommanderOptics: CommanderOptics {};
+				};
+			};
+		};
+	};
+	class B_MBT_01_base_F: MBT_01_base_F {};
+	class B_MBT_01_cannon_F: B_MBT_01_base_F
+    {
+        class AnimationSources: AnimationSources {};
+    };
+	class B_MBT_01_TUSK_F: B_MBT_01_cannon_F
+    {
+        class AnimationSources: AnimationSources
+        {
 			class muzzle_hide_cannon;
 			class muzzle_rot_cannon;
 			class muzzle_rot_cmdr;
 			class recoil_source;
 			class commander_gun_recoil;
+		};
+		class Turrets: Turrets
+        {
+			class MainTurret: MainTurret
+            {
+				class Turrets: Turrets
+                {
+					class CommanderOptics: CommanderOptics {};
+				};
+			};
 		};
 	};
     class BNA_KC_MBT_Slammer: B_MBT_01_TUSK_F
