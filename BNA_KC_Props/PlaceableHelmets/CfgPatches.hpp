@@ -99,6 +99,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P1_Ox",
             "BNA_KC_HelmetHolder_P1_Patriot",
             "BNA_KC_HelmetHolder_P1_Ponds",
+            "BNA_KC_HelmetHolder_P1_Rev",
             "BNA_KC_HelmetHolder_P1_Rodger",
             "BNA_KC_HelmetHolder_P1_Sin",
             "BNA_KC_HelmetHolder_P1_Splashdown",
@@ -127,6 +128,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Splashdown",
             "BNA_KC_HelmetHolder_P2_Stone",
             "BNA_KC_HelmetHolder_P2_Swoop",
+            "BNA_KC_HelmetHolder_P2_Taun",
             "BNA_KC_HelmetHolder_P2_Woods",
             // Snow
             "BNA_KC_HelmetHolder_Insulated_Dexus",
