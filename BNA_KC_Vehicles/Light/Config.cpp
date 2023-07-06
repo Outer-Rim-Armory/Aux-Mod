@@ -254,8 +254,8 @@ class CfgVehicles
             "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
             "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-            "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa",
-            "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"
+            "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Launcher.paa",
+            "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Launcher.paa"
         };
         class TextureSources
         {
@@ -269,8 +269,8 @@ class CfgVehicles
                     "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
                     "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-                    "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa",
-                    "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"
+                    "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Launcher.paa",
+                    "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Launcher.paa"
                 };
             };
             class GreyCamo: BrownCamo
@@ -281,8 +281,8 @@ class CfgVehicles
                     "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Grey.paa",
                     "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-                    "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa",
-                    "A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"
+                    "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Launcher.paa",
+                    "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Launcher.paa"
                 };
             };
         };
