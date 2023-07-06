@@ -25,7 +25,8 @@ class TransportItems \
     }; \
 };
 
-#define HORNET_TEXTURES() class TextureSources \
+#define HORNET_TEXTURES() textureList[] = {"BrownCamo", 1, "GreyCamo", 0}; \
+class TextureSources \
 { \
     class BrownCamo \
     { \
@@ -105,7 +106,6 @@ class CfgVehicles
             "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
         };
-        textureList[] = {"BrownCamo", 1, "GreyCamo", 0};
 
         HORNET_TEXTURES()
         HORNET_INVENTORY()
@@ -149,7 +149,6 @@ class CfgVehicles
             "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
         };
-        textureList[] = {"BrownCamo", 1, "GreyCamo", 0};
 
         HORNET_TEXTURES()
         HORNET_INVENTORY()
@@ -195,7 +194,6 @@ class CfgVehicles
             "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
         };
-        textureList[] = {"BrownCamo", 1, "GreyCamo", 0};
 
         HORNET_TEXTURES()
         HORNET_INVENTORY()
