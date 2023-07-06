@@ -23,8 +23,8 @@ class CfgPatches
         weapons[] =
         {
             // Helmets
-            "BNA_KC_Helmet_Phase1_Pilot_Base",
-            "BNA_KC_Helmet_Phase2_Pilot_Base",
+            "BNA_KC_Helmet_Phase1_Pilot",
+            "BNA_KC_Helmet_Phase2_Pilot",
 
             // Uniforms
             "BNA_KC_Uniform_Pilot"

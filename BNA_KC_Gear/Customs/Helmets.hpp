@@ -757,9 +757,9 @@ class BNA_KC_Helmet_Airborne_x: BNA_KC_Helmet_Airborne_Base
 // ┌───────────────────┐
 // │  AVI P1  Helmets  │
 // └───────────────────┘
-class BNA_KC_Helmet_Phase1_Pilot_Base;
+class BNA_KC_Helmet_Phase1_Pilot;
 
-class BNA_KC_Helmet_Phase1_Pilot_Bailout: BNA_KC_Helmet_Phase1_Pilot_Base
+class BNA_KC_Helmet_Phase1_Pilot_Bailout: BNA_KC_Helmet_Phase1_Pilot
 {
 	displayName = "[KC] AVI P1 Helm ('Bailout')";
 	hiddenSelectionsTextures[] =
@@ -770,7 +770,7 @@ class BNA_KC_Helmet_Phase1_Pilot_Bailout: BNA_KC_Helmet_Phase1_Pilot_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot_Base
+class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot
 {
 	BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Pilot_Blue";
@@ -807,7 +807,7 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase1_Pilot_Blue
     };
 };
 
-class BNA_KC_Helmet_Phase1_Pilot_Mischief: BNA_KC_Helmet_Phase1_Pilot_Base
+class BNA_KC_Helmet_Phase1_Pilot_Mischief: BNA_KC_Helmet_Phase1_Pilot
 {
 	displayName = "[KC] AVI P1 Helm ('Mischief')";
 	hiddenSelectionsTextures[] =
@@ -823,9 +823,9 @@ class BNA_KC_Helmet_Phase1_Pilot_Mischief: BNA_KC_Helmet_Phase1_Pilot_Base
 // ┌───────────────────┐
 // │  AVI P2  Helmets  │
 // └───────────────────┘
-class BNA_KC_Helmet_Phase2_Pilot_Base;
+class BNA_KC_Helmet_Phase2_Pilot;
 
-class BNA_KC_Helmet_Phase2_Pilot_Bailout: BNA_KC_Helmet_Phase2_Pilot_Base
+class BNA_KC_Helmet_Phase2_Pilot_Bailout: BNA_KC_Helmet_Phase2_Pilot
 {
 	displayName = "[KC] AVI Helm ('Bailout')";
     hiddenSelectionsTextures[] =
@@ -835,7 +835,7 @@ class BNA_KC_Helmet_Phase2_Pilot_Bailout: BNA_KC_Helmet_Phase2_Pilot_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Pilot_Blue: BNA_KC_Helmet_Phase2_Pilot_Base
+class BNA_KC_Helmet_Phase2_Pilot_Blue: BNA_KC_Helmet_Phase2_Pilot
 {
 	BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Pilot_Blue";
@@ -869,7 +869,7 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase2_Pilot_Blue
     };
 };
 
-class BNA_KC_Helmet_Phase2_Pilot_Mischief: BNA_KC_Helmet_Phase2_Pilot_Base
+class BNA_KC_Helmet_Phase2_Pilot_Mischief: BNA_KC_Helmet_Phase2_Pilot
 {
 	displayName = "[KC] AVI Helm ('Mischief')";
     hiddenSelectionsTextures[] =

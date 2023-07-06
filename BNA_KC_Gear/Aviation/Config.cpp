@@ -9,7 +9,7 @@ class CfgWeapons
     class ls_gar_phase1Pilot_helmet;
     class ls_gar_phase2Pilot_helmet;
 
-    class BNA_KC_Helmet_Phase1_Pilot_Base: ls_gar_phase1Pilot_helmet
+    class BNA_KC_Helmet_Phase1_Pilot: ls_gar_phase1Pilot_helmet
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -29,7 +29,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Helmet_Phase2_Pilot_Base: ls_gar_phase2Pilot_helmet
+    class BNA_KC_Helmet_Phase2_Pilot: ls_gar_phase2Pilot_helmet
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -86,11 +86,11 @@ class CfgVehicles
         uniformClass = "BNA_KC_Uniform_Pilot";
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Phase1_Pilot_Base", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Helmet_Phase1_Pilot", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Phase1_Pilot_Base", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Helmet_Phase1_Pilot", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
         backpack = "";
     };
@@ -108,11 +108,11 @@ class CfgVehicles
         };
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Phase2_Pilot_Base", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Helmet_Phase2_Pilot", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Phase2_Pilot_Base", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Helmet_Phase2_Pilot", "lsd_gar_clone_vest", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
         };
     };
 };
