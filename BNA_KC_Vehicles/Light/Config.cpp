@@ -25,7 +25,13 @@ class TransportItems \
     }; \
 };
 
-#define HORNET_TEXTURES() textureList[] = {"BrownCamo", 1, "GreyCamo", 0}; \
+#define HORNET_TEXTURES() hiddenSelectionsTextures[] = \
+{ \
+    "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Brown.paa", \
+    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
+    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
+}; \
+textureList[] = {"BrownCamo", 1, "GreyCamo", 0}; \
 class TextureSources \
 { \
     class BrownCamo \
@@ -99,13 +105,6 @@ class CfgVehicles
         side = 1;
 
         displayName = "[KC] Hornet Strike Vehicle (Unarmed)";
-        
-        hiddenSelectionsTextures[] =
-        {
-            "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
-        };
 
         HORNET_TEXTURES()
         HORNET_INVENTORY()
@@ -152,13 +151,6 @@ class CfgVehicles
         side = 1;
 
         displayName = "[KC] Hornet Strike Vehicle (MG)";
-
-        hiddenSelectionsTextures[] =
-        {
-            "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
-        };
 
         HORNET_TEXTURES()
         HORNET_INVENTORY()
@@ -213,13 +205,6 @@ class CfgVehicles
         side = 1;
 
         displayName = "[KC] Hornet Strike Vehicle (AT)";
-
-        hiddenSelectionsTextures[] =
-        {
-            "BNA_KC_Vehicles\Light\Data\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
-        };
 
         HORNET_TEXTURES()
         HORNET_INVENTORY()
