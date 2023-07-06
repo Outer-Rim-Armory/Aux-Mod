@@ -1,9 +1,3 @@
-class ls_gar_phase2_uniform;
-class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
-{
-    class ItemInfo;
-};
-
 class BNA_KC_Uniform_CR: BNA_KC_Uniform_Base
 {
     displayName = "[KC] INF Armor 00 (Recruit)";
