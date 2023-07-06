@@ -26,9 +26,10 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Tanker_Base",
             "BNA_KC_Helmet_Phase1_Tanker_v2",
             "BNA_KC_Helmet_Phase2_Tanker_Base",
-            "BNA_KC_Helmet_Phase2_Tanker_v2"
+            "BNA_KC_Helmet_Phase2_Tanker_v2",
 
             // Uniforms
+            "BNA_KC_Uniform_Tanker"
         };
     };
 };
