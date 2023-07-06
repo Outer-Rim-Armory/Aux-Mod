@@ -9,7 +9,7 @@ class CfgWeapons
     class ls_sob_phase1SpecOp_helmet;
     class ls_sob_phase2SpecOp_helmet;
 
-    class BNA_KC_Helmet_Phase1_Tanker_Base: ls_sob_phase1SpecOp_helmet
+    class BNA_KC_Helmet_Phase1_Tanker: ls_sob_phase1SpecOp_helmet
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -37,7 +37,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Helmet_Phase2_Tanker_Base: ls_sob_phase2SpecOp_helmet
+    class BNA_KC_Helmet_Phase2_Tanker: ls_sob_phase2SpecOp_helmet
     {
         // Mod Info
         dlc = "BNA_KC";
