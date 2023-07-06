@@ -554,8 +554,8 @@ class CfgAmmo
         model = "ls_weapons\grenades\thermalDet\ls_grenade_thermalDet";
 
         // Disable damage and explosions
-        hit = 0.000001;
-        indirectHit = 0.000001;
+        hit = 0;
+        indirectHit = 0;
         // explosive = 0;
         // explosionTime = 5;
         // -1 means impact grenade
