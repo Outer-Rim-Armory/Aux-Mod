@@ -48,7 +48,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC] ARMR Helm (Trooper)";
+        displayName = "[KC] ARMR P2 Helm (Crewman)";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Helmet_P2_Tanker.paa",
@@ -57,7 +57,7 @@ class CfgWeapons
     };
     class BNA_KC_Helmet_Phase2_Tanker_v2: BNA_KC_Helmet_Phase2_Tanker_Base
     {
-        displayName = "[KC] ARMR Helm (Trooper, Version 2)";
+        displayName = "[KC] ARMR P2 Helm (Crewman, Version 2)";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Helmet_P2_Tanker_v2.paa",
