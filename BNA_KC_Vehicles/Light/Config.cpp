@@ -127,6 +127,7 @@ class CfgVehicles
     class AllVehicles: All
     {
         class NewTurret {};
+        class CargoTurret: NewTurret {};
     };
     class Land: AllVehicles {};
     class LandVehicle: Land {};
@@ -142,7 +143,14 @@ class CfgVehicles
     };
     class LSV_02_base_F: Car_F
     {
-        class Turrets: Turrets {}
+        class Turrets: Turrets
+        {
+            class CargoTurret_01: CargoTurret {};
+            class CargoTurret_02: CargoTurret_01 {};
+            class CargoTurret_03: CargoTurret_01 {};
+            class CargoTurret_04: CargoTurret_01 {};
+            class CargoTurret_05: CargoTurret_01 {};
+        };
         class AnimationSources: AnimationSources
         {
 			class Minigun {};
@@ -155,6 +163,11 @@ class CfgVehicles
         class Turrets: Turrets
         {
             class MainTurret;
+            class CargoTurret_01: CargoTurret_01 {};
+            class CargoTurret_02: CargoTurret_02 {};
+            class CargoTurret_03: CargoTurret_03 {};
+            class CargoTurret_04: CargoTurret_04 {};
+            class CargoTurret_05: CargoTurret_05 {};
         };
     };
     class O_LSV_02_armed_F: LSV_02_armed_base_F {};
@@ -192,6 +205,11 @@ class CfgVehicles
                     "BNA_KC_500rnd_Coax_Mag"
                 };
             };
+            class CargoTurret_01: CargoTurret_01 {};
+            class CargoTurret_02: CargoTurret_02 {};
+            class CargoTurret_03: CargoTurret_03 {};
+            class CargoTurret_04: CargoTurret_04 {};
+            class CargoTurret_05: CargoTurret_05 {};
         };
 
         class AnimationSources: AnimationSources
@@ -217,6 +235,11 @@ class CfgVehicles
         class Turrets: Turrets
         {
             class MainTurret: MainTurret {};
+            class CargoTurret_01: CargoTurret_01 {};
+            class CargoTurret_02: CargoTurret_02 {};
+            class CargoTurret_03: CargoTurret_03 {};
+            class CargoTurret_04: CargoTurret_04 {};
+            class CargoTurret_05: CargoTurret_05 {};
         };
         class AnimationSources: AnimationSources
         {
@@ -293,6 +316,11 @@ class CfgVehicles
             {
                 weapons[] = { "BNA_KC_Mounted_MissileLauncher" };
             };
+            class CargoTurret_01: CargoTurret_01 {};
+            class CargoTurret_02: CargoTurret_02 {};
+            class CargoTurret_03: CargoTurret_03 {};
+            class CargoTurret_04: CargoTurret_04 {};
+            class CargoTurret_05: CargoTurret_05 {};
 		};
 
         class AnimationSources: AnimationSources
