@@ -81,6 +81,13 @@ class CfgVehicles
         sound = "BNA_KC_Ambient_ATTE_Alarm_SFX";
         displayName = "[KC] ATTE Alarm";
     };
+	class BNA_KC_Ambient_Radio_DK: Sound
+	{
+        author = "Keeli";
+        scope = 2;
+        sound = "BNA_KC_Ambient_DK_Radio_SFX";
+        displayName = "[KC] DK Radio Chatter";
+    };
 };
 class CfgSFX
 {
@@ -119,6 +126,13 @@ class CfgSFX
         BNA_KC_Ambient_ATTE_Alarm[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\ATTE_Alarm.ogg",db+50,1,500,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
+	class BNA_KC_Ambient_Radio_DK
+	{
+        name = "[KC] DK Radio Chatter";
+        sounds[] = {BNA_KC_Ambient_DK_Radio};
+        BNA_KC_Ambient_ATTE_Alarm[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\DK_Radio_Chatter.ogg",db+100,1,100,1,2,3,4};
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
 };
 
 class CfgSounds
@@ -152,5 +166,11 @@ class CfgSounds
         name = "ATTE Alarm";
         sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\ATTE_Alarm.ogg", db+10, 1};
         titles[] = {2, "ATTE Alarm"};
+    };
+	class BNA_KC_Ambient_Radio_DK
+	{
+        name = "DK Radio Chatter";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\DK_Radio_Chatter", db+10, 1};
+        titles[] = {2, "DK Radio Chatter"};
     };
 };
