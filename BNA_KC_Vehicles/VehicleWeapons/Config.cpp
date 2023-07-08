@@ -476,7 +476,7 @@ class CfgWeapons
         drySound[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Juggernaut\horn_0.ogg", // soundPath
-            500,        // soundVolume
+            5,          // soundVolume
             1,          // soundPitch
             500         // maxDistance
         };
@@ -488,7 +488,7 @@ class CfgWeapons
         drySound[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg",
-            400,
+            5,
             1,
             400
         };
@@ -499,7 +499,7 @@ class CfgWeapons
         drySound[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg",
-            100,
+            5,
             1,
             100
         };
