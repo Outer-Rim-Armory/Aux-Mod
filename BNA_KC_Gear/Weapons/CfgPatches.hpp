@@ -17,6 +17,8 @@ class CfgPatches
             "JLTS_weapons_DC17SA",
                 // DC-17
                 // Weapon Flashlights
+            "JLTS_weapons_shield",
+                // Riot Shield Item/Attachment
             "WBK_PhoenixTreal_FlamethrowerMOD",
                 // Flamethrower System
             "M2"
@@ -33,9 +35,13 @@ class CfgPatches
             "BNA_KC_DC15A",
             "BNA_KC_DC15A_UGL",
             "BNA_KC_DC15S",
+            "BNA_KC_DC15S_RiotShield",
             "BNA_KC_DC17",
             "BNA_KC_Flamer",
-            "BNA_KC_Flamer_Heavy"
+            "BNA_KC_Flamer_Heavy",
+
+            "BNA_KC_RiotShield_Item",
+            "BNA_KC_RiotShield_Attachment"
         };
         magazines[] =
         {

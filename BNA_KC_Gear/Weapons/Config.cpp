@@ -204,6 +204,7 @@ class CfgWeapons
         {
             class CowsSlot;
             class PointerSlot;
+            class UnderBarrelSlot;
         };
         class Single: Single
         {
@@ -223,11 +224,12 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15S";
         canShootInWater = 1;
+
+        JLTS_shieldedWeapon = "BNA_KC_DC15S_RiotShield";
 
         magazines[] = { "12thFleet_Mag_DC15S" };
 
@@ -267,6 +269,45 @@ class CfgWeapons
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
                 soundBeginWater[] = {begin1, 1};
+            };
+        };
+    };
+
+    class BNA_KC_DC15S_RiotShield: BNA_KC_DC15S
+    {
+        // Scopes
+        scope = 2;        // Will be 1 in final version
+        scopeArsenal = 2; // Will be 0 in final version
+
+        JLTS_isShielded = 1;
+        JLTS_baseWeapon = "BNA_KC_DC15S";
+        model = "\MRC\JLTS\weapons\DC15S\DC15S_shielded.p3d";
+
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "\MRC\JLTS\weapons\DC15S\data\DC15S_co.paa",
+            "\MRC\JLTS\weapons\Shield\data\shield_co.paa"
+        };
+        handAnim[]=
+        {
+            "OFP2_ManSkeleton",
+            "\MRC\JLTS\weapons\DC15S\anims\DC15S_shielded_handanim.rtm"
+        };
+
+        // reloadAction = "GestureReload";
+		// inertia = 0.80000001;
+		recoil = "recoil_pdw"; // More recoil since the gun is held in one hand
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class UnderBarrelSlot: UnderBarrelSlot
+            {
+                compatibleItems[] = { "BNA_KC_RiotShield_Attachment" };
             };
         };
     };
@@ -499,6 +540,42 @@ class CfgWeapons
             displayName = "[KC] Droid Popper";
             magazines[] += { "BNA_KC_Grenade_DroidPopper" };
         };
+    };
+
+    // ┌────────────────────┐
+    // │        Misc        │
+    // └────────────────────┘
+    // Riot Shield
+    class JLTS_riot_shield_item;
+    class BNA_KC_RiotShield_Item: JLTS_riot_shield_item
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Riot Shield";
+
+        JLTS_shieldAttachment = "BNA_KC_RiotShield_Attachment";
+    };
+
+    class JLTS_riot_shield_attachment;
+    class BNA_KC_RiotShield_Attachment: JLTS_riot_shield_attachment
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;        // Will be 1 in final version
+        scopeArsenal = 2; // Will be 0 in final version
+
+        displayName = "[KC] Riot Shield";
+
+        JLTS_shieldItem = "BNA_KC_RiotShield_Item";
     };
 };
 
