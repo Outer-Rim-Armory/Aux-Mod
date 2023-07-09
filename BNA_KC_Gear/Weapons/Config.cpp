@@ -177,7 +177,8 @@ class CfgWeapons
                 "3Rnd_SmokePurple_Grenade_shell",
                 "3Rnd_SmokeBlue_Grenade_shell",
                 "3Rnd_SmokeOrange_Grenade_shell",
-                "3Rnd_HE_Grenade_shell"
+                "3Rnd_HE_Grenade_shell",
+                "ACE_HuntIR_M203"
             };
             magazineWell[] = {}; // Removes extra magazines
         };
@@ -495,7 +496,8 @@ class CfgWeapons
                 "3Rnd_SmokePurple_Grenade_shell",
                 "3Rnd_SmokeBlue_Grenade_shell",
                 "3Rnd_SmokeOrange_Grenade_shell",
-                "3Rnd_HE_Grenade_shell"
+                "3Rnd_HE_Grenade_shell",
+                "ACE_HuntIR_M203"
             };
             magazineWell[] = {}; // Removes extra magazines
         };
