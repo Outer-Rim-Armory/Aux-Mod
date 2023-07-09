@@ -14,7 +14,10 @@ class CfgPatches
         };
         units[] =
 		{
-			"BNA_KC_ATRT"
+			"BNA_KC_ATRT",
+            "BNA_KC_Hornet_Unarmed",
+            "BNA_KC_Hornet_Armed",
+            "BNA_KC_Hornet_AT"
 		};
         weapons[] = {};
     };

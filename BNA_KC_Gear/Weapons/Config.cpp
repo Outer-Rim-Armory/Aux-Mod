@@ -58,15 +58,28 @@ class CfgWeapons
             {
                 compatibleItems[] = 
                 {
-                    "BNA_KC_WestarM5_Scope"/*
-                    "optic_arco_ak_blk_f",
-                    "optic_Hamr",
-                    "optic_MRCO",
-                    "optic_Nightstalker",
-                    "optic_tws",
-                    "optic_DMS",
-                    "optic_LRPS",
-                    "optic_ico_01_black_f"*/
+                    // Short
+                    "Aux501_cows_RCO",
+                    "Aux501_cows_RCO_2",
+                    "Aux501_cows_RCO_3",
+                    // Medium
+                    "Aux501_cows_MRCO",
+                    "Aux501_cows_MRCO_2",
+                    "Aux501_cows_MRCO_3",
+                    // Long
+                    "Aux501_cows_DMS",
+                    "Aux501_cows_DMS_2",
+                    "Aux501_cows_DMS_3",
+                    "Aux501_cows_DMS_4",
+                    "Aux501_cows_HoloScope",
+                    "Aux501_cows_HoloScope_2",
+                    "Aux501_cows_HoloScope_3",
+                    // Sights
+                    "BNA_KC_WestarM5_Scope",
+                    "Aux501_cows_reflex_optic",
+                    "Aux501_cows_Holosight",
+                    "Aux501_cows_Holosight_2",
+                    "Aux501_cows_Holosight_3"
                 };
             };
         };
@@ -109,7 +122,28 @@ class CfgWeapons
             {
                 compatibleItems[] = 
                 {
-                    "BNA_KC_WestarM5_Scope"
+                    // Short
+                    "Aux501_cows_RCO",
+                    "Aux501_cows_RCO_2",
+                    "Aux501_cows_RCO_3",
+                    // Medium
+                    "Aux501_cows_MRCO",
+                    "Aux501_cows_MRCO_2",
+                    "Aux501_cows_MRCO_3",
+                    // Long
+                    "Aux501_cows_DMS",
+                    "Aux501_cows_DMS_2",
+                    "Aux501_cows_DMS_3",
+                    "Aux501_cows_DMS_4",
+                    "Aux501_cows_HoloScope",
+                    "Aux501_cows_HoloScope_2",
+                    "Aux501_cows_HoloScope_3",
+                    // Sights
+                    "BNA_KC_WestarM5_Scope",
+                    "Aux501_cows_reflex_optic",
+                    "Aux501_cows_Holosight",
+                    "Aux501_cows_Holosight_2",
+                    "Aux501_cows_Holosight_3"
                 };
             };
         };
@@ -143,7 +177,8 @@ class CfgWeapons
                 "3Rnd_SmokePurple_Grenade_shell",
                 "3Rnd_SmokeBlue_Grenade_shell",
                 "3Rnd_SmokeOrange_Grenade_shell",
-                "3Rnd_HE_Grenade_shell"
+                "3Rnd_HE_Grenade_shell",
+                "ACE_HuntIR_M203"
             };
             magazineWell[] = {}; // Removes extra magazines
         };
@@ -239,8 +274,19 @@ class CfgWeapons
             {
                 compatibleItems[] = 
                 {
-                    "3AS_optic_reflex_dc15c",
-                    "3AS_optic_holo_dc15s"
+                    // Short
+                    "Aux501_cows_RCO",
+                    "Aux501_cows_RCO_2",
+                    "Aux501_cows_RCO_3",
+                    // Medium
+                    "Aux501_cows_MRCO",
+                    "Aux501_cows_MRCO_2",
+                    "Aux501_cows_MRCO_3",
+                    // Sights
+                    "Aux501_cows_Holosight",
+                    "Aux501_cows_Holosight_2",
+                    "Aux501_cows_Holosight_3",
+                    "Aux501_cows_reflex_optic"
                 };
             };
             class PointerSlot: PointerSlot
@@ -358,7 +404,14 @@ class CfgWeapons
             {
                 compatibleItems[] = 
                 {
-                    "3as_optic_lescope_dc15a"
+                    // Medium
+                    "Aux501_cows_MRCO",
+                    "Aux501_cows_MRCO_2",
+                    "Aux501_cows_MRCO_3",
+                    // Sights
+                    "Aux501_cows_Holoscope",
+                    "Aux501_cows_Holoscope_2",
+                    "Aux501_cows_Holoscope_3"
                 };
             };
             class PointerSlot: PointerSlot
@@ -430,7 +483,14 @@ class CfgWeapons
             {
                 compatibleItems[] = 
                 {
-                    "3as_optic_lescope_dc15a"
+                    // Medium
+                    "Aux501_cows_MRCO",
+                    "Aux501_cows_MRCO_2",
+                    "Aux501_cows_MRCO_3",
+                    // Sights
+                    "Aux501_cows_Holoscope",
+                    "Aux501_cows_Holoscope_2",
+                    "Aux501_cows_Holoscope_3"
                 };
             };
             class PointerSlot: PointerSlot
@@ -477,7 +537,8 @@ class CfgWeapons
                 "3Rnd_SmokePurple_Grenade_shell",
                 "3Rnd_SmokeBlue_Grenade_shell",
                 "3Rnd_SmokeOrange_Grenade_shell",
-                "3Rnd_HE_Grenade_shell"
+                "3Rnd_HE_Grenade_shell",
+                "ACE_HuntIR_M203"
             };
             magazineWell[] = {}; // Removes extra magazines
         };
@@ -609,17 +670,24 @@ class CfgMagazines
 class CfgAmmo
 {
     class JLTS_bullet_rifle_blue;
-    class JLTS_bullet_pistol_blue;
-    class 3AS_EC50_BluePlasma;
-
     class 12thFleet_Ammo_Rifle_Blue: JLTS_bullet_rifle_blue
     {
         coefgravity = 0;
     };
+
+    class JLTS_bullet_sniper_blue;
+    class 12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
+    {
+        coefgravity = 0;
+    };
+    
+    class JLTS_bullet_pistol_blue;
     class 12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
     {
         coefgravity = 0;
     };
+    
+    class 3AS_EC50_BluePlasma;
     class 12thFleet_Ammo_Westar_Blue: 3AS_EC50_BluePlasma
     {
         coefgravity = 0;

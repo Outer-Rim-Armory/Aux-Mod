@@ -9,6 +9,7 @@ class CfgAmmo
         //simulation = "shotShell";
         model = "swlw_main\Effects\laser_red.p3d";
         effectfly = "SWLW_plasma_red";
+        coefgravity = 0;
     };
 
 	class Sh_120mm_HE_Tracer_Red;
@@ -17,6 +18,7 @@ class CfgAmmo
         //simulation = "shotShell";
         model = "swlw_main\Effects\laser_red.p3d";
         effectfly = "SWLW_plasma_red";
+        coefgravity = 0;
     };
 
     class Sh_120mm_HEAT_MP_T_Red;
@@ -25,6 +27,7 @@ class CfgAmmo
         //simulation = "shotShell";
         model = "swlw_main\Effects\laser_red.p3d";
         effectfly = "SWLW_plasma_red";
+        coefgravity = 0;
     };
     
     class B_127x99_Ball;
@@ -32,6 +35,7 @@ class CfgAmmo
     {
         model = "ls_weapons_core\Effects\laser_blue.p3d";
         effectfly = "ls_plasma_blue";
+        coefgravity = 0;
     };
 };
 
@@ -472,7 +476,7 @@ class CfgWeapons
         drySound[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Juggernaut\horn_0.ogg", // soundPath
-            500,        // soundVolume
+            5,          // soundVolume
             1,          // soundPitch
             500         // maxDistance
         };
@@ -484,7 +488,7 @@ class CfgWeapons
         drySound[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg",
-            400,
+            5,
             1,
             400
         };
@@ -495,7 +499,7 @@ class CfgWeapons
         drySound[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg",
-            100,
+            5,
             1,
             100
         };

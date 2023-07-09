@@ -749,4 +749,14 @@ class CfgMusic
         duration = 34;
         musicClass = "BNA_KC_VGMusic"; // Music category
 	};
+
+
+
+	class BNA_KC_Umbara_Landing
+	{
+        name = "[CW] Umbara Landing";
+        sound[] = {"BNA_KC_ZeusAudioModule\Audio\Umbara_Landing.ogg",db+0,1};
+        duration = 202;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+	};
 };
