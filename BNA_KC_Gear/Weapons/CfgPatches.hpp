@@ -40,6 +40,7 @@ class CfgPatches
         magazines[] =
         {
             "12thFleet_Mag_DC15A",
+            "12thFleet_Mag_DC15X",
             "12thFleet_Mag_DC15S",
             "12thFleet_Mag_WestarM5",
             "12thFleet_Mag_DC17",
