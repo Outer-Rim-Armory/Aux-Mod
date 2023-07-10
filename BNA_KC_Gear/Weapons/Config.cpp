@@ -1,5 +1,6 @@
 #include "CfgPatches.hpp"
 
+class Mode_SemiAuto;
 
 class CfgWeapons
 {
@@ -509,16 +510,30 @@ class CfgWeapons
         };
     };
 
-    class Pistol_Base_F;
+    class Default;
+    class PistolCore: Default {};
+    class Pistol: PistolCore
+    {
+        class WeaponSlotsInfo {};
+    };
+    class Pistol_Base_F: Pistol
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo {};
+    };
     class hgun_P07_F: Pistol_Base_F
     {
-        class Single;
+        class WeaponSlotsInfo: WeaponSlotsInfo {};
     };
     class JLTS_DC17SA: hgun_P07_F
     {
-        class Single: Single
+        class Single: Mode_SemiAuto
         {
-            class StandardSound;
+            class BaseSoundModeType {};
+            class StandardSound: BaseSoundModeType {};
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot {};
         };
     };
     class BNA_KC_DC17: JLTS_DC17SA
@@ -529,7 +544,6 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] DC-17";
@@ -544,6 +558,19 @@ class CfgWeapons
             {
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC17_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
+            };
+        };
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = 
+                {
+                    // Sights
+                    "aux501_cows_pistol",
+                    "aux501_cows_pistol_2"
+                };
             };
         };
     };
