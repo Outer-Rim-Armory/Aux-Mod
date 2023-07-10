@@ -602,7 +602,8 @@ class CfgWeapons
     // │      Grenades      │
     // └────────────────────┘
     class ThrowMuzzle;
-    class Throw
+    class GrenadeLauncher;
+    class Throw: GrenadeLauncher
     {
         muzzles[] += {"BNA_KC_Grenade_Muzzle"};
         class BNA_KC_Grenade_Muzzle: ThrowMuzzle
