@@ -1,6 +1,15 @@
 #include "CfgPatches.hpp"
 
+
 class Mode_SemiAuto;
+class Mode_FullAuto: Mode_SemiAuto {};
+
+class SlotInfo {};
+class CowsSlot: SlotInfo {};
+class CowsSlot_Rail: CowsSlot {};
+class PointerSlot: SlotInfo {};
+class PointerSlot_Rail: PointerSlot {};
+
 
 class CfgWeapons
 {
@@ -228,26 +237,38 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo { mass = 80; };
     };
 
+    class Default {};
+    class RifleCore: Default {};
+    class Rifle: RifleCore
+    {
+        class WeaponSlotsInfo {};
+    };
+    class Rifle_Base_F: Rifle {};
     class arifle_MX_Base_F: Rifle_Base_F
     {
-        class WeaponSlotsInfo;
-        class Single;
-        class FullAuto;
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot_Rail {};
+            class PointerSlot: PointerSlot_Rail {};
+        };
     };
     class JLTS_DC15S: arifle_MX_Base_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
-            class CowsSlot;
-            class PointerSlot;
+            class CowsSlot: CowsSlot {};
+            class PointerSlot: PointerSlot {};
         };
-        class Single: Single
+
+        class Single: Mode_SemiAuto
         {
-            class StandardSound;
+            class BaseSoundModeType {};
+            class StandardSound: BaseSoundModeType {};
         };
-        class FullAuto: FullAuto 
+        class FullAuto: Mode_FullAuto
         {
-            class StandardSound;
+            class BaseSoundModeType {};
+            class StandardSound: BaseSoundModeType {};
         };
     };
 
@@ -259,7 +280,6 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15S";
@@ -322,16 +342,19 @@ class CfgWeapons
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
-            class CowsSlot;
-            class PointerSlot;
+            class CowsSlot: CowsSlot {};
+            class PointerSlot: PointerSlot {};
         };
-        class Single: Single
+
+        class Single: Mode_SemiAuto
         {
-            class StandardSound;
+            class BaseSoundModeType {};
+            class StandardSound: BaseSoundModeType {};
         };
-        class FullAuto: FullAuto
+        class FullAuto: Mode_FullAuto
         {
-            class StandardSound;
+            class BaseSoundModeType {};
+            class StandardSound: BaseSoundModeType {};
         };
     };
     class JLTS_DC15A_plastic: JLTS_DC15A {};
