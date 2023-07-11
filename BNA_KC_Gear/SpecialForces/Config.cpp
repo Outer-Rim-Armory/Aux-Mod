@@ -107,17 +107,12 @@ class CfgWeapons
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
-    class V_PlateCarrier1_rgr;
-    class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
+    class VestItem;
+    class SWLB_clone_basic_armor;
+    class SWLB_clone_officer_armor: SWLB_clone_basic_armor {};
+    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
     {
-        class ItemInfo;
-    };
-    class SWLB_clone_arc_armor: SWLB_clone_basic_armor
-    {
-        class ItemInfo: ItemInfo
-        {
-            class HitpointsProtectionInfo;
-        }
+        class ItemInfo: VestItem {};
     };
 
     class BNA_KC_Vest_ARC: SWLB_clone_arc_armor
@@ -151,7 +146,7 @@ class CfgWeapons
                 };
                 class Chest
                 {
-                    HitpointName = "HitChest";
+                    hitpointName = "HitChest";
                     armor = 25;
                     PassThrough = 0.10000001;
                 };
