@@ -1,6 +1,16 @@
 #include "CfgPatches.hpp"
 
 
+class Mode_SemiAuto;
+class Mode_FullAuto: Mode_SemiAuto {};
+
+class SlotInfo {};
+class CowsSlot: SlotInfo {};
+class CowsSlot_Rail: CowsSlot {};
+class PointerSlot: SlotInfo {};
+class PointerSlot_Rail: PointerSlot {};
+
+
 class CfgWeapons
 {
 	// ┌──────────────────┐
@@ -227,27 +237,38 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo { mass = 80; };
     };
 
+    class Default {};
+    class RifleCore: Default {};
+    class Rifle: RifleCore
+    {
+        class WeaponSlotsInfo {};
+    };
+    class Rifle_Base_F: Rifle {};
     class arifle_MX_Base_F: Rifle_Base_F
     {
-        class WeaponSlotsInfo;
-        class Single;
-        class FullAuto;
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot_Rail {};
+            class PointerSlot: PointerSlot_Rail {};
+        };
     };
     class JLTS_DC15S: arifle_MX_Base_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
-            class CowsSlot;
-            class PointerSlot;
-            class UnderBarrelSlot;
+            class CowsSlot: CowsSlot {};
+            class PointerSlot: PointerSlot {};
         };
-        class Single: Single
+
+        class Single: Mode_SemiAuto
         {
-            class StandardSound;
+            class BaseSoundModeType {};
+            class StandardSound: BaseSoundModeType {};
         };
-        class FullAuto: FullAuto 
+        class FullAuto: Mode_FullAuto
         {
-            class StandardSound;
+            class BaseSoundModeType {};
+            class StandardSound: BaseSoundModeType {};
         };
     };
 
@@ -362,16 +383,19 @@ class CfgWeapons
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
-            class CowsSlot;
-            class PointerSlot;
+            class CowsSlot: CowsSlot {};
+            class PointerSlot: PointerSlot {};
         };
-        class Single: Single
+
+        class Single: Mode_SemiAuto
         {
-            class StandardSound;
+            class BaseSoundModeType {};
+            class StandardSound: BaseSoundModeType {};
         };
-        class FullAuto: FullAuto
+        class FullAuto: Mode_FullAuto
         {
-            class StandardSound;
+            class BaseSoundModeType {};
+            class StandardSound: BaseSoundModeType {};
         };
     };
     class JLTS_DC15A_plastic: JLTS_DC15A {};
@@ -550,18 +574,30 @@ class CfgWeapons
         };
     };
 
-    class UGL_F;
-
-    class Pistol_Base_F;
+    class Default;
+    class PistolCore: Default {};
+    class Pistol: PistolCore
+    {
+        class WeaponSlotsInfo {};
+    };
+    class Pistol_Base_F: Pistol
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo {};
+    };
     class hgun_P07_F: Pistol_Base_F
     {
-        class Single;
+        class WeaponSlotsInfo: WeaponSlotsInfo {};
     };
     class JLTS_DC17SA: hgun_P07_F
     {
-        class Single: Single
+        class Single: Mode_SemiAuto
         {
-            class StandardSound;
+            class BaseSoundModeType {};
+            class StandardSound: BaseSoundModeType {};
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot {};
         };
     };
     class BNA_KC_DC17: JLTS_DC17SA
@@ -572,7 +608,6 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] DC-17";
@@ -589,28 +624,6 @@ class CfgWeapons
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC17_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
             };
-        };
-
-        class EGLM: UGL_F
-        {
-            displayName = "DC-17 Flare Launcher";
-            magazines[] =
-            {
-                "UGL_FlareWhite_F",
-                "UGL_FlareRed_F",
-                "UGL_FlareGreen_F"  // TODO: Replace with custom blue flare
-            };
-            magazineWell[] = {};
-
-            cameraDir = "OP_look";  // TODO: Make angle same as normal muzzle
-            discreteDistance[] = { 100 };  // Array of ranges
-            discreteDistanceInitIndex = 0; // Default range index
-            discreteDistanceCameraPoint[] = { "OP_eye" };
-
-            // Muzzle memory points
-            // Makes the flares shoot as intended
-            muzzlePos = "Usti hlavne";
-            muzzleEnd = "Konec hlavne";
         };
 
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -631,7 +644,8 @@ class CfgWeapons
     // │      Grenades      │
     // └────────────────────┘
     class ThrowMuzzle;
-    class Throw
+    class GrenadeLauncher;
+    class Throw: GrenadeLauncher
     {
         muzzles[] += {"BNA_KC_Grenade_Muzzle"};
         class BNA_KC_Grenade_Muzzle: ThrowMuzzle
