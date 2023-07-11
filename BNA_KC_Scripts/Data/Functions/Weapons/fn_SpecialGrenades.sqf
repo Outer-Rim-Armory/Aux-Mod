@@ -63,7 +63,7 @@ _this spawn
             // Get all nearby objects and filter out non-droids
             _droidUnits = nearestObjects [_position, [], _radiusDroid] select { ((toLowerAnsi typeOf _x find "b1") > 0) };
 
-            _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];    // Droidka Shields
+            _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];    // Droideka Shields
             _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka]; // 3AS's Droidkas require extra work
 
             // Remove or kill objects
@@ -75,37 +75,14 @@ _this spawn
                     _x
                 ];
             } forEach _droidUnits; // Kill droid units
-            { deleteVehicle _x; } forEach _shieldObjects;           // Remove 501st shields
-            
-            { _x setHitPointDamage ["HitShield", 1]; } forEach _tasDekas; // Damages the droideka shield
-            { _x animateSource ["ShieldLayer_BaseFront", 1, true]; } forEach _tasDekas; // Animates the shield turning off
+
+            [_tasDekas, _shieldObjects] call BNAKC_fnc_DisableDekaShields;
 
             // Temporarily disable vehicles
             if (BNA_KC_DroidPopper_DisableTime > 0 && _radiusVehicle > 0) then
             {
                 _tanks = nearestObjects [_position, [], _radiusVehicle] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
-                {
-                    DEV_LOG("Disabling vehicles")
-
-                    _vehicle = _x;
-                    _savedFuel = fuel _vehicle;
-                    _savedMags = magazines _vehicle;
-                    _savedTurretMags = _vehicle magazinesTurret [0, 0];
-
-                    DEV_LOG("Saved magazines and fuel")
-
-                    _vehicle setFuel 0;
-                    { _vehicle removeMagazines _x; } forEach _savedMags;
-                    { _vehicle removeMagazinesTurret [_x, [0, 0]]; } forEach _savedTurretMags;
-                    DEV_LOG("Removed magazines and fuel")
-
-                    sleep BNA_KC_DroidPopper_DisableTime;
-
-                    _vehicle setFuel _savedFuel;
-                    { _vehicle addMagazine _x; } forEach _savedMags;
-                    { _vehicle addMagazineTurret [_x, [0, 0]]; } forEach _savedTurretMags;
-                    DEV_LOG("Restored magazines and fuel")
-                } forEach _tanks;
+                [_tanks, BNA_KC_DroidPopper_DisableTime] call BNAKC_fnc_TempDisableVehicle;
             };
         };
     };

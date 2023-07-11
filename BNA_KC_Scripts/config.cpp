@@ -51,6 +51,8 @@ class CfgFunctions
         {
             file = "BNA_KC_Scripts\Data\Functions\Weapons";
             class SpecialGrenades{};
+            class TempDisableVehicles{};
+            class DisableDekaShields{};
         }
 	};
 };
