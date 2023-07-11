@@ -23,6 +23,7 @@ class CfgPatches
             "BNA_KC_Unit_Joe",
             "BNA_KC_Unit_Keeli",
             "BNA_KC_Unit_Ponds",
+            "BNA_KC_Unit_Rat",
             "BNA_KC_Unit_Stone",
 
             // Insulated Units
@@ -126,6 +127,7 @@ class CfgPatches
             "BNA_KC_Helmet_ARC_Tyrant",
             "BNA_KC_Helmet_ARF_Patriot",
             "BNA_KC_Helmet_ARF_Sin",
+            "BNA_KC_Helmet_BARC_Rat",
 
             // Standard Uniforms
             "BNA_KC_Uniform_Burnt",
@@ -136,12 +138,16 @@ class CfgPatches
             "BNA_KC_Uniform_Joe",
             "BNA_KC_Uniform_Keeli",
             "BNA_KC_Uniform_Ponds",
+            "BNA_KC_Uniform_Rat",
             "BNA_KC_Uniform_Stone",
 
             // Insulated Uniforms
             "BNA_KC_Uniform_Insulated_Dexus",
             "BNA_KC_Uniform_Insulated_Joe",
             "BNA_KC_Uniform_Insulated_Keeli",
+
+            // Vests
+            "BNA_KC_Vest_Officer_Rat",
 
             // NVGs
             "BNA_KC_NVG_Officer_Keeli"

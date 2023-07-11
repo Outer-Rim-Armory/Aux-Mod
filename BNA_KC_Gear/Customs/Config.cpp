@@ -5,6 +5,19 @@ class CfgWeapons
     #include "Helmets.hpp"
     #include "Uniforms.hpp"
 
+    // ┌───────────────────┐
+    // │       Vests       │
+    // └───────────────────┘
+    class BNA_KC_Vest_Officer;
+    class BNA_KC_Vest_Officer_Rat: BNA_KC_Vest_Officer
+    {
+        displayName = "[KC] INF Vest 12+ ('Rat')";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Customs\Data\Vests\BNA_KC_Vest_Officer_Rat.paa"
+        };
+    };
+
 
     // ┌──────────────────┐
     // │       NVGs       │

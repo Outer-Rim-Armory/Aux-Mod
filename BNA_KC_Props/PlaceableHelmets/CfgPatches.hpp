@@ -158,7 +158,8 @@ class CfgPatches
             "BNA_KC_HelmetHolder_ARC_Hagrid",
             "BNA_KC_HelmetHolder_ARC_Tyrant",
             "BNA_KC_HelmetHolder_ARF_Patriot",
-            "BNA_KC_HelmetHolder_ARF_Sin"
+            "BNA_KC_HelmetHolder_ARF_Sin",
+            "BNA_KC_HelmetHolder_BARC_Rat"
 		};
         weapons[] = {};
     };

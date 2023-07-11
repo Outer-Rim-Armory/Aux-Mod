@@ -1013,17 +1013,17 @@ class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF_Base
         "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa" // Visor
 	};
 };
-/*
-class BNA_KC_Helmet_BARC_x: BNA_KC_Helmet_BARC_Base
+
+class BNA_KC_Helmet_BARC_Rat: BNA_KC_Helmet_BARC_Base
 {
-	displayName = "[KC] SF BARC Helm ('x')";
+	displayName = "[KC] SF BARC Helm ('Rat')";
 	hiddenSelectionsTextures[] = 
 	{
-	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\BARC\BNA_KC_Helmet_BARC_x.paa",
+	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\BARC\BNA_KC_Helmet_BARC_Rat.paa",
 	    "ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
 	};
 };
-*/
+
 
 // ┌────────────────────┐
 // │    Snow Helmets    │

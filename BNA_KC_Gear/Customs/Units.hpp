@@ -212,6 +212,31 @@ class BNA_KC_Unit_Ponds: BNA_KC_Unit_Phase2_Base
     };
 };
 
+class BNA_KC_Unit_Rat: BNA_KC_Unit_Phase2_Base
+{
+    // Editor Attributes
+    editorSubcategory = "BNA_KC_Customs";
+
+    displayName = "[KC] Rat";
+    uniformClass = "BNA_KC_Uniform_Rat";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Uniforms\BNA_KC_Uniform_Rat_Upper.paa",
+        "BNA_KC_Gear\Customs\Data\Uniforms\BNA_KC_Uniform_Rat_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa" 
+    };
+
+    // Loadout
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_BARC_Rat", "BNA_KC_Vest_Officer_Rat", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_BARC_Rat", "BNA_KC_Vest_Officer_Rat", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
+
 class BNA_KC_Unit_Stone: BNA_KC_Unit_Phase2_Base
 {
 	// Editor Attributes

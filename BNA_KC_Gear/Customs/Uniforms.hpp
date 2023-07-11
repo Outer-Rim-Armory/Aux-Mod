@@ -79,6 +79,15 @@ class BNA_KC_Uniform_Ponds: BNA_KC_Uniform_Base
     };
 };
 
+class BNA_KC_Uniform_Rat: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor ('Rat')";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Rat";
+    };
+};
+
 class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Base
 {
 	displayName = "[KC] INF Armor ('Stone')";
