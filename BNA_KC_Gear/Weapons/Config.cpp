@@ -9,6 +9,8 @@ class CowsSlot: SlotInfo {};
 class CowsSlot_Rail: CowsSlot {};
 class PointerSlot: SlotInfo {};
 class PointerSlot_Rail: PointerSlot {};
+class UnderBarrelSlot: SlotInfo {};
+class UnderBarrelSlot_Rail: UnderBarrelSlot {};
 
 
 class CfgWeapons
@@ -21,10 +23,14 @@ class CfgWeapons
     // ┌───────────────────┐
     // │      Weapons      │
     // └───────────────────┘
-    class CowsSlot;
-    class PointerSlot;
     class WeaponSlotsInfo;
-    class Rifle_Base_F;
+    class Default {};
+    class RifleCore: Default {};
+    class Rifle: RifleCore
+    {
+        class WeaponSlotsInfo {};
+    };
+    class Rifle_Base_F: Rifle {};
     class 3AS_WestarM5_Base_F: Rifle_Base_F
     {
         // Attachments
@@ -237,13 +243,6 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo { mass = 80; };
     };
 
-    class Default {};
-    class RifleCore: Default {};
-    class Rifle: RifleCore
-    {
-        class WeaponSlotsInfo {};
-    };
-    class Rifle_Base_F: Rifle {};
     class arifle_MX_Base_F: Rifle_Base_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
