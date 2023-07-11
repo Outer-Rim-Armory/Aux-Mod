@@ -184,7 +184,7 @@ class CfgWeapons
             {
                 "3Rnd_UGL_FlareWhite_F",
                 "3Rnd_UGL_FlareRed_F",
-                "3Rnd_UGL_FlareGreen_F",
+                "BNA_KC_3Rnd_UGL_FlareBlue",
                 "UGL_FlareCIR_F",
                 "3Rnd_Smoke_Grenade_shell",
                 "3Rnd_SmokeRed_Grenade_shell",
@@ -551,7 +551,7 @@ class CfgWeapons
             {
                 "3Rnd_UGL_FlareWhite_F",
                 "3Rnd_UGL_FlareRed_F",
-                "3Rnd_UGL_FlareGreen_F",
+                "BNA_KC_3Rnd_UGL_FlareBlue",
                 "UGL_FlareCIR_F",
                 "3Rnd_Smoke_Grenade_shell",
                 "3Rnd_SmokeRed_Grenade_shell",
@@ -634,7 +634,7 @@ class CfgWeapons
             {
                 "UGL_FlareWhite_F",
                 "UGL_FlareRed_F",
-                "UGL_FlareGreen_F"  // TODO: Replace with custom blue flare
+                "BNA_KC_UGL_FlareBlue"  // TODO: Replace with custom blue flare
             };
             magazineWell[] = {};
 
@@ -720,6 +720,32 @@ class CfgMagazines
 {
     #include "12thMags.hpp"
 
+    class UGL_FlareWhite_F;
+    class BNA_KC_UGL_FlareBlue: UGL_FlareWhite_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Flare Round (Blue)";
+        displayNameShort = "Blue Flare";
+        descriptionShort = "Type: Flare Round - Blue <br />Rounds: 1";
+
+        ammo = "BNA_KC_Flare_Blue";
+        count = 1;
+    };
+
+    class BNA_KC_3Rnd_UGL_FlareBlue: BNA_KC_UGL_FlareBlue
+    {
+        displayName = "[KC] 3Rnd Flare Round (Blue)";
+        descriptionShort = "Type: Flare Round - Blue <br />Rounds: 3";
+        count = 3;
+    };
+
     class HandGrenade;
     class BNA_KC_Grenade_DroidPopper: HandGrenade
     {
@@ -766,6 +792,12 @@ class CfgAmmo
     class 12thFleet_Ammo_Westar_Blue: 3AS_EC50_BluePlasma
     {
         coefgravity = 0;
+    };
+
+    class F_40mm_White;
+    class BNA_KC_Flare_Blue: F_40mm_White
+    {
+        lightColor[] = {0.25, 0.25, 0.5, 0.5};
     };
 
     class GrenadeHand;

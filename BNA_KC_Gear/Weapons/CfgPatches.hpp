@@ -7,6 +7,9 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "A3_Weapons_F",
+                // Base Grenades
+                // Flare Rounds Ammo / Magazine
             "3AS_Weapons",
 				// Westar
                 // BT X-42 Flamer
@@ -52,7 +55,10 @@ class CfgPatches
             "12thFleet_Mag_DC17",
 
             "BNA_KC_Mag_300Rnd_Flamer",
-            "BNA_KC_Mag_150Rnd_Flamer"
+            "BNA_KC_Mag_150Rnd_Flamer",
+
+            "BNA_KC_UGL_FlareBlue",
+            "BNA_KC_3Rnd_UGL_FlareBlue"
         };
     };
 };
