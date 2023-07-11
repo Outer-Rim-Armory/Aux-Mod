@@ -550,6 +550,8 @@ class CfgWeapons
         };
     };
 
+    class UGL_F;
+
     class Pistol_Base_F;
     class hgun_P07_F: Pistol_Base_F
     {
@@ -578,6 +580,7 @@ class CfgWeapons
         canShootInWater = 1;
 
         magazines[] = { "12thFleet_Mag_DC17" };
+        muzzles[] = { "this", "Stun", "EGLM" };
 
         class Single: Single
         {
@@ -585,6 +588,41 @@ class CfgWeapons
             {
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC17_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
+            };
+        };
+
+        class EGLM: UGL_F
+        {
+            displayName = "DC-17 Flare Launcher";
+            magazines[] =
+            {
+                "UGL_FlareWhite_F",
+                "UGL_FlareRed_F",
+                "UGL_FlareGreen_F"  // TODO: Replace with custom blue flare
+            };
+            magazineWell[] = {};
+
+            cameraDir = "OP_look";  // TODO: Make angle same as normal muzzle
+            discreteDistance[] = { 100 };  // Array of ranges
+            discreteDistanceInitIndex = 0; // Default range index
+            discreteDistanceCameraPoint[] = { "OP_eye" };
+
+            // Muzzle memory points
+            // Makes the flares shoot as intended
+            muzzlePos = "Usti hlavne";
+            muzzleEnd = "Konec hlavne";
+        };
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = 
+                {
+                    // Sights
+                    "aux501_cows_pistol",
+                    "aux501_cows_pistol_2"
+                };
             };
         };
     };
