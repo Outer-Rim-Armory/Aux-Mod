@@ -102,8 +102,8 @@ class CfgVehicles
         uniformClass = "BNA_KC_Uniform_Tanker";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Uniform_Tanker_Upper.paa",
-            "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Uniform_Tanker_Lower.paa",
+            "BNA_KC_Gear\Armored\Data\Uniforms\BNA_KC_Uniform_Tanker_Upper.paa",
+            "BNA_KC_Gear\Armored\Data\Uniforms\BNA_KC_Uniform_Tanker_Lower.paa",
             "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
 
