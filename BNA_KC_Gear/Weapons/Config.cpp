@@ -590,9 +590,9 @@ class CfgWeapons
             displayName = "Flare Launcher";
             magazines[] =
             {
-                "UGL_FlareWhite_F",
-                "UGL_FlareRed_F",
-                "BNA_KC_UGL_FlareBlue"  // TODO: Replace with custom blue flare
+                "3Rnd_UGL_FlareWhite_F",
+                "3Rnd_UGL_FlareRed_F",
+                "BNA_KC_3Rnd_UGL_FlareBlue"
             };
             magazineWell[] = {};
 
