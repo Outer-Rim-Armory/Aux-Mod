@@ -670,8 +670,8 @@ class CfgWeapons
     class GrenadeLauncher;
     class Throw: GrenadeLauncher
     {
-        muzzles[] += {"BNA_KC_Grenade_Muzzle"};
-        class BNA_KC_Grenade_Muzzle: ThrowMuzzle
+        muzzles[] += { "BNA_KC_DroidPopper_Muzzle" };
+        class BNA_KC_DroidPopper_Muzzle: ThrowMuzzle
         {
             displayName = "[KC] Droid Popper";
             magazines[] += { "BNA_KC_Grenade_DroidPopper" };
@@ -765,6 +765,11 @@ class CfgMagazines
 
         ammo = "BNA_KC_Grenade_DroidPopper_Ammo";
         count = 1;
+        
+        BNA_KC_GrenadeType = "EMP";
+        BNA_KC_GrenadeEMP_Radius_Droid = 3;
+        BNA_KC_GrenadeEMP_Radius_Deka = 5;
+        BNA_KC_GrenadeEMP_Radius_Vehicle = 5;
     };
 };
 
@@ -820,7 +825,7 @@ class CfgAmmo
         // Sound and visual effects
         ace_grenades_pullPinSound[] = { "\ls_sounds\weapons\grenade\pin.wss", 3, 1, 10 };
         soundFly[] = { "\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40 };
-        SoundSetExplosion[] = { "JLTS_GrenadeEMP_Exp_SoundSet", "JLTS_GrenadeEMP_Tail_SoundSet", "Explosion_Debris_SoundSet" };
+        SoundSetExplosion[] = { /*"JLTS_GrenadeEMP_Exp_SoundSet", "JLTS_GrenadeEMP_Tail_SoundSet", "Explosion_Debris_SoundSet"*/ };
 
         explosionEffects = "JLTS_fx_exp_EMP";
         explosionEffectRadius = 3;
