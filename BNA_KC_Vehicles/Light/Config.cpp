@@ -200,9 +200,9 @@ class CfgVehicles
                 weapons[] = { "BNA_KC_Mounted_MG" };
                 magazines[] =
                 {
-                    "BNA_KC_500rnd_Coax_Mag",
-                    "BNA_KC_500rnd_Coax_Mag",
-                    "BNA_KC_500rnd_Coax_Mag"
+                    "BNA_KC_1000rnd_Coax_Mag",
+                    "BNA_KC_1000rnd_Coax_Mag",
+                    "BNA_KC_1000rnd_Coax_Mag"
                 };
             };
             class CargoTurret_01: CargoTurret_01 {};

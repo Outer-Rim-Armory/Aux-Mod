@@ -38,7 +38,9 @@ class CfgPatches
             "BNA_KC_120_HE_Mag",
             "BNA_KC_120_AT_Mag",
             "BNA_KC_120_HEAT_Mag",
-            "BNA_KC_100rnd_Coax_Mag"
+            "BNA_KC_100rnd_Coax_Mag",
+            "BNA_KC_500rnd_Coax_Mag",
+            "BNA_KC_1000rnd_Coax_Mag"
 		};
     };
 };
