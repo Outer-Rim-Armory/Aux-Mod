@@ -34,7 +34,7 @@ class TransportItems \
     class _xx_ACE_elasticBandage \
     { \
         name = "ACE_elasticBandage"; \
-        count = 15; \
+        count = 30; \
     }; \
 };
 
