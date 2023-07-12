@@ -575,6 +575,7 @@ class CfgWeapons
         canShootInWater = 1;
 
         magazines[] = { "12thFleet_Mag_DC17" };
+        muzzles[] = { "this", "Stun", "EGLM" };
 
         class Single: Single
         {
