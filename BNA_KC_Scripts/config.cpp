@@ -40,6 +40,7 @@ class CfgFunctions
 			class LoadoutBox{};
 			class PlayRestaurauntAmbience{};
 			class ConfigureAddonOptions{};
+			class ConfigureAddonKeybinds{};
 		};
 		class Fortifications
 		{
@@ -51,15 +52,25 @@ class CfgFunctions
         {
             file = "BNA_KC_Scripts\Data\Functions\Weapons";
             class SpecialGrenades{};
-        }
+        };
+        class Map
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Map";
+			class CreateMarkOnSelf{};
+            class CreateMarkAction{};
+        };
 	};
 };
 
 class Extended_PreInit_EventHandlers
 {
     class BNA_KC_Scripts_AddonOptionsPreInit
-	{
+    {
         init = "call BNAKC_fnc_ConfigureAddonOptions";
+    };
+    class BNA_KC_Scripts_AddonKeybindsPreInit
+    {
+        init = "call BNAKC_fnc_ConfigureAddonKeybinds";
     };
 };
 
@@ -76,7 +87,11 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Scripts_SpecialGrenades
     {
         init = "['ace_firedPlayer', BNAKC_fnc_SpecialGrenades] call CBA_fnc_addEventHandler;";
-    }
+    };
+    class BNA_KC_Scripts_CreateMarkAction
+    {
+        init = "call BNAKC_fnc_CreateMarkAction";
+    };
 };
 
 #include "FortifyPresets.hpp"

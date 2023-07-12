@@ -34,6 +34,16 @@
 ] call CBA_fnc_addSetting;
 
 
+// Map
+[
+    "BNA_KC_Map_MarkChannel",
+    "LIST",
+    ["Channel", "The channel to create markers in."],
+    ["Keeli Company Aux Mod", "Map"],
+    [[-2, 0, 1, 2, 3, 4, 5], ["Auto", "Global", "Side", "Command", "Group", "Vehicle", "Direct"], 0]
+] call CBA_fnc_addSetting;
+
+
 // Developer
 [
     "BNA_KC_DevMode",
