@@ -128,6 +128,7 @@ class CfgPatches
             "BNA_KC_Helmet_ARF_Patriot",
             "BNA_KC_Helmet_ARF_Sin",
             "BNA_KC_Helmet_BARC_Rat",
+            "BNA_KC_Helmet_BARC_Rat_Crimson",
 
             // Standard Uniforms
             "BNA_KC_Uniform_Burnt",

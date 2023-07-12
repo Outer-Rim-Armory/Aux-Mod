@@ -1016,12 +1016,35 @@ class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF_Base
 
 class BNA_KC_Helmet_BARC_Rat: BNA_KC_Helmet_BARC_Base
 {
-	displayName = "[KC] SF BARC Helm ('Rat')";
-	hiddenSelectionsTextures[] = 
-	{
-	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\BARC\BNA_KC_Helmet_BARC_Rat.paa",
-	    "ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
-	};
+    // NVG Script
+    BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_BARC_Rat";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_BARC_Rat_Crimson";
+
+    displayName = "[KC] SF BARC Helm ('Rat')";
+    hiddenSelectionsTextures[] = 
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\BARC\BNA_KC_Helmet_BARC_Rat.paa",
+        "ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
+    };
+};
+class BNA_KC_Helmet_BARC_Rat_Crimson: BNA_KC_Helmet_BARC_Rat
+{
+    // Scopes
+    scope = 1;
+    scopeArsenal = 1;
+
+    displayName = "[KC] SF BARC Helm ('Rat') [Crimson Visor]";
+    hiddenSelectionsMaterials[] = 
+    {
+        "",
+        "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+    hiddenSelectionsTextures[] = 
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\BARC\BNA_KC_Helmet_BARC_Rat.paa",
+        "BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Crimson.paa"
+    };
 };
 
 
