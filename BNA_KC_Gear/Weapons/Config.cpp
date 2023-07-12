@@ -9,6 +9,8 @@ class CowsSlot: SlotInfo {};
 class CowsSlot_Rail: CowsSlot {};
 class PointerSlot: SlotInfo {};
 class PointerSlot_Rail: PointerSlot {};
+class UnderBarrelSlot: SlotInfo {};
+class UnderBarrelSlot_Rail: UnderBarrelSlot {};
 
 
 class CfgWeapons
@@ -21,10 +23,14 @@ class CfgWeapons
     // ┌───────────────────┐
     // │      Weapons      │
     // └───────────────────┘
-    class CowsSlot;
-    class PointerSlot;
     class WeaponSlotsInfo;
-    class Rifle_Base_F;
+    class Default {};
+    class RifleCore: Default {};
+    class Rifle: RifleCore
+    {
+        class WeaponSlotsInfo {};
+    };
+    class Rifle_Base_F: Rifle {};
     class 3AS_WestarM5_Base_F: Rifle_Base_F
     {
         // Attachments
@@ -237,13 +243,6 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo { mass = 80; };
     };
 
-    class Default {};
-    class RifleCore: Default {};
-    class Rifle: RifleCore
-    {
-        class WeaponSlotsInfo {};
-    };
-    class Rifle_Base_F: Rifle {};
     class arifle_MX_Base_F: Rifle_Base_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -533,6 +532,8 @@ class CfgWeapons
         };
     };
 
+    class UGL_F;
+
     class Default;
     class PistolCore: Default {};
     class Pistol: PistolCore
@@ -574,6 +575,7 @@ class CfgWeapons
         canShootInWater = 1;
 
         magazines[] = { "12thFleet_Mag_DC17" };
+        muzzles[] = { "this", "Stun", "EGLM" };
 
         class Single: Single
         {
@@ -582,6 +584,28 @@ class CfgWeapons
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC17_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
             };
+        };
+
+        class EGLM: UGL_F
+        {
+            displayName = "Flare Launcher";
+            magazines[] =
+            {
+                "3Rnd_UGL_FlareWhite_F",
+                "3Rnd_UGL_FlareRed_F",
+                "BNA_KC_3Rnd_UGL_FlareBlue"
+            };
+            magazineWell[] = {};
+
+            cameraDir = "eye";
+            discreteDistance[] = { 100 };  // Array of ranges
+            discreteDistanceInitIndex = 0; // Default range index
+            discreteDistanceCameraPoint[] = { "OP_eye" };
+
+            // Muzzle memory points
+            // Makes the flares shoot as intended
+            muzzlePos = "Usti hlavne";
+            muzzleEnd = "Konec hlavne";
         };
 
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -618,6 +642,32 @@ class CfgWeapons
 class CfgMagazines
 {
     #include "12thMags.hpp"
+
+    class UGL_FlareWhite_F;
+    class BNA_KC_UGL_FlareBlue: UGL_FlareWhite_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Flare Round (Blue)";
+        displayNameShort = "Blue Flare";
+        descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: EGLM, 3GL";
+
+        ammo = "BNA_KC_Flare_Blue";
+        count = 1;
+    };
+
+    class BNA_KC_3Rnd_UGL_FlareBlue: BNA_KC_UGL_FlareBlue
+    {
+        displayName = "[KC] 3Rnd 3GL Flares (Blue)";
+        descriptionShort = "Type: Flare Rounds - Blue <br />Rounds: 3 <br />Used in: EGLM, 3GL";
+        count = 3;
+    };
 
     class HandGrenade;
     class BNA_KC_Grenade_DroidPopper: HandGrenade
@@ -665,6 +715,12 @@ class CfgAmmo
     class 12thFleet_Ammo_Westar_Blue: 3AS_EC50_BluePlasma
     {
         coefgravity = 0;
+    };
+
+    class F_40mm_White;
+    class BNA_KC_Flare_Blue: F_40mm_White
+    {
+        lightColor[] = {0.25, 0.25, 0.5, 0.5};
     };
 
     class GrenadeHand;
