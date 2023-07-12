@@ -638,10 +638,10 @@ class CfgWeapons
             };
             magazineWell[] = {};
 
-            cameraDir = "OP_look";  // TODO: Make angle same as normal muzzle
+            cameraDir = "eye";
             discreteDistance[] = { 100 };  // Array of ranges
             discreteDistanceInitIndex = 0; // Default range index
-            discreteDistanceCameraPoint[] = { "OP_eye" };
+            discreteDistanceCameraPoint[] = { "eye" };
 
             // Muzzle memory points
             // Makes the flares shoot as intended
