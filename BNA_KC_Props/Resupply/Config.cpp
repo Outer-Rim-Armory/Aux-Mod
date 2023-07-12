@@ -72,9 +72,9 @@ class CfgVehicles
                 magazine = "3Rnd_UGL_FlareGreen_F";
                 count = 5;
             };
-            class _xx_UGL_FlareCIR_F
+            class _xx_3Rnd_UGL_FlareCIR_F
             {
-                magazine = "UGL_FlareCIR_F";
+                magazine = "3Rnd_UGL_FlareCIR_F";
                 count = 5;
             };
             class _xx_3Rnd_Smoke_Grenade_shell
@@ -199,9 +199,9 @@ class CfgVehicles
                 magazine = "3Rnd_UGL_FlareGreen_F";
                 count = 15
             };
-            class _xx_UGL_FlareCIR_F
+            class _xx_3Rnd_UGL_FlareCIR_F
             {
-                magazine = "UGL_FlareCIR_F";
+                magazine = "3Rnd_UGL_FlareCIR_F";
                 count = 15
             };
             class _xx_3Rnd_Smoke_Grenade_shell
