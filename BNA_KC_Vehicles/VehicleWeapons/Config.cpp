@@ -401,6 +401,9 @@ class CfgWeapons
         drySound[] = { "MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10 };
         magazines[] = { "BNA_KC_100rnd_Coax_Mag", "BNA_KC_500rnd_Coax_Mag", "BNA_KC_1000rnd_Coax_Mag" };
 
+        // Removes the smoke effect from the gun
+        class GunParticles {};
+
         class manual: manual
         {
             sounds[] =  { "StandardSound" };
