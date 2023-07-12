@@ -63,7 +63,7 @@ class CfgVehicles
         model = "LS_statics_props\flags\ls_horizontal_flag";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Props\Flags\Data\Flipped_TEMP\BNA_KC_Flag_KeeliCompany.paa"
+            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompany.paa"
         };
     };
 
@@ -90,7 +90,7 @@ class CfgVehicles
         model = "LS_statics_props\flags\ls_horizontal_flag";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Props\Flags\Data\Flipped_TEMP\BNA_KC_Flag_KeeliCompanyDamaged_Mirrored.paa"
+            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged_Mirrored.paa"
         };
         // Texture and named swapped for mirrored version until LS fixes the rotated model.
         // Textures had to be flipped as a temporary fix. Will be returned to normal once model is fixed.
@@ -101,7 +101,7 @@ class CfgVehicles
         displayName = "[KC] KC Damaged Flag (Horizontal)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Props\Flags\Data\Flipped_TEMP\BNA_KC_Flag_KeeliCompanyDamaged.paa"
+            "BNA_KC_Props\Flags\Data\BNA_KC_Flag_KeeliCompanyDamaged.paa"
         };
     };
 };
