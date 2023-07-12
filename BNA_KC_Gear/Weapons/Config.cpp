@@ -600,7 +600,7 @@ class CfgWeapons
             cameraDir = "eye";
             discreteDistance[] = { 100 };  // Array of ranges
             discreteDistanceInitIndex = 0; // Default range index
-            discreteDistanceCameraPoint[] = { "eye" };
+            discreteDistanceCameraPoint[] = { "OP_eye" };
 
             // Muzzle memory points
             // Makes the flares shoot as intended
