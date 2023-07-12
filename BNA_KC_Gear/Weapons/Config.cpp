@@ -655,7 +655,7 @@ class CfgMagazines
 
         displayName = "[KC] Flare Round (Blue)";
         displayNameShort = "Blue Flare";
-        descriptionShort = "Type: Flare Round - Blue <br />Rounds: 1";
+        descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: EGLM, 3GL";
 
         ammo = "BNA_KC_Flare_Blue";
         count = 1;
@@ -663,8 +663,8 @@ class CfgMagazines
 
     class BNA_KC_3Rnd_UGL_FlareBlue: BNA_KC_UGL_FlareBlue
     {
-        displayName = "[KC] 3Rnd Flare Round (Blue)";
-        descriptionShort = "Type: Flare Round - Blue <br />Rounds: 3";
+        displayName = "[KC] 3Rnd 3GL Flares (Blue)";
+        descriptionShort = "Type: Flare Rounds - Blue <br />Rounds: 3 <br />Used in: EGLM, 3GL";
         count = 3;
     };
 
