@@ -1,4 +1,6 @@
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
+#define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
+#define GET_STRING(config, _defaultValue) (if (isText (config)) then {getText (config)} else {_defaultValue})
 
 ['ace_firedPlayer', {
 _this spawn
@@ -11,9 +13,6 @@ _this spawn
 
     DEV_LOG(_ammo);
     DEV_LOG(_magazine);
-
-    #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
-    #define GET_STRING(config, _defaultValue) (if (isText (config)) then {getText (config)} else {_defaultValue})
 
     private _delay = GET_NUMBER(configFile >> "CfgAmmo" >> _ammo >> "explosionTime", 0.1) - 0.1;
 
@@ -38,12 +37,12 @@ _this spawn
             DEV_LOG("Is EMP. Playing sound");
             if (BNA_KC_DroidPopper_TCWSoundEnabled) then
             {
-                [ATLToASL _position] remoteExec ["BNAKC_fnc_PlayDroidPopperSound", [0, -2] select isServer];
+                [ATLToASL _position] remoteExec ["BNAKC_fnc_PlayDroidPopperSound", [0, -2] select isDedicated];
                 DEV_LOG("Played TCW Sound");
             }
             else
             {
-                playSound3D ["MRC\JLTS\weapons\Core\sounds\emp_exp\exp_emp_1.wss", "", false, ATLToASL _position, 1, 1];
+                playSound3D ["MRC\JLTS\weapons\Core\sounds\emp_exp\exp_emp_1.wss", "", false, ATLToASL _position, 3, 1];
                 DEV_LOG("Played JLTS Sound");
             };
             
@@ -74,7 +73,7 @@ _this spawn
             if (BNA_KC_DroidPopper_DisableTime > 0 && _radiusVehicle > 0) then
             {
                 private _tanks = nearestObjects [_position, [], _radiusVehicle] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
-                [_tanks, BNA_KC_DroidPopper_DisableTime] call BNAKC_fnc_TempDisableVehicle;
+                [_tanks, BNA_KC_DroidPopper_DisableTime] call BNAKC_fnc_TempDisableVehicles;
             };
         };
     };
