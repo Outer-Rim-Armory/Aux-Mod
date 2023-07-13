@@ -78,7 +78,7 @@ class Extended_PostInit_EventHandlers
     };
     class BNA_KC_Scripts_SpecialGrenades
     {
-        init = "['ace_firedPlayer', BNAKC_fnc_SpecialGrenades] call CBA_fnc_addEventHandler;";
+        init = "call BNAKC_fnc_SpecialGrenades";
     }
 };
 

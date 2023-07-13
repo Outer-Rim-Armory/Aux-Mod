@@ -1,5 +1,6 @@
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 
+['ace_firedPlayer', {
 _this spawn
 {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
@@ -78,3 +79,4 @@ _this spawn
         };
     };
 };
+}] call CBA_fnc_addEventHandler;
