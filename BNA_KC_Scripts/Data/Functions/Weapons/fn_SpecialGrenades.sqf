@@ -35,16 +35,7 @@ _this spawn
             // Play Sound Effect
             // Sound is scripted so that the Clone Wars sound can be enabled/disabled
             DEV_LOG("Is EMP. Playing sound");
-            if (BNA_KC_DroidPopper_TCWSoundEnabled) then
-            {
-                [ATLToASL _position] remoteExec ["BNAKC_fnc_PlayDroidPopperSound", [0, -2] select isDedicated];
-                DEV_LOG("Played TCW Sound");
-            }
-            else
-            {
-                playSound3D ["MRC\JLTS\weapons\Core\sounds\emp_exp\exp_emp_1.wss", "", false, ATLToASL _position, 3, 1];
-                DEV_LOG("Played JLTS Sound");
-            };
+            [ATLToASL _position] remoteExec ["BNAKC_fnc_PlayDroidPopperSound", [0, -2] select isDedicated];
             
             private _radiusDroid   = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeEMP_Radius_Droid", 3);
             private _radiusDeka    = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeEMP_Radius_Deka", 5);
