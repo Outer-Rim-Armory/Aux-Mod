@@ -727,6 +727,7 @@ class CfgMagazines
         displayName = "[KC] Flare Round (Blue)";
         displayNameShort = "Blue Flare";
         descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: EGLM, 3GL";
+        picture = "BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_FlareBlue_UI.paa";
 
         ammo = "BNA_KC_Flare_Blue";
         count = 1;
