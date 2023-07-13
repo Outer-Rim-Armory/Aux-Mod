@@ -13,7 +13,9 @@
  */
 
 params ["_pos"];
-playSound3D [
+
+playSound3D
+[
     "BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DroidPopper_Exp.wss",
     objNull,
     false,
