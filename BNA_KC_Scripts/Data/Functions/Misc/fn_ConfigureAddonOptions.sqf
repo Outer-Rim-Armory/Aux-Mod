@@ -1,13 +1,34 @@
 // WIKI: https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#creating-a-setting
 
-// Weapons
+// Droid Popper
 [
     "BNA_KC_DroidPopper_DisableTime",
     "SLIDER",
-    ["Time Disabled", "The time in seconds that a vehicle is disabled for by a Droid Popper."],
-    ["Keeli Company Aux Mod", "Weapons"],
-    [0, 30, 5, 0],
+    ["Vehicle Disabled Length", "The time in seconds that a vehicle is disabled for by a Droid Popper."],
+    ["Keeli Company Aux Mod", "Droid Poppers"],
+    [0, 30, 5, 0], // MinValue, MaxValue, DefaultValue, Show as %
     1 // isGlobal
+] call CBA_fnc_addSetting;
+[
+    "BNA_KC_DroidPopper_TCWSoundEnabled",
+    "CHECKBOX",
+    ["Use Clone Wars Sound", "Uses the TCW style Sound Effect for the Droid Popper."],
+    ["Keeli Company Aux Mod", "Droid Poppers"],
+    false
+] call CBA_fnc_addSetting;
+[
+    "BNA_KC_DroidPopper_TCWSoundVolume",
+    "SLIDER",
+    ["Volume", "Volume Slider for the TCW style sound. Does nothing if TCW sound is disabled."],
+    ["Keeli Company Aux Mod", "Droid Poppers"],
+    [0, 1, 1, 1]
+] call CBA_fnc_addSetting;
+[
+    "BNA_KC_DroidPopper_TCWSoundPitch",
+    "SLIDER",
+    ["Pitch", "Volume Slider for the TCW style sound. Does nothing if TCW sound is disabled."],
+    ["Keeli Company Aux Mod", "Droid Poppers"],
+    [0, 1, 1, 1]
 ] call CBA_fnc_addSetting;
 
 
@@ -31,6 +52,16 @@
     ["Keeli Company Aux Mod", "ACE Fortify Options"],
     "100", // Will need to be converted to integer
     1 // isGlobal
+] call CBA_fnc_addSetting;
+
+
+// Map
+[
+    "BNA_KC_Map_MarkChannel",
+    "LIST",
+    ["Channel", "The channel to create markers in."],
+    ["Keeli Company Aux Mod", "Map"],
+    [[-2, 0, 1, 2, 3, 4, 5], ["Auto", "Global", "Side", "Command", "Group", "Vehicle", "Direct"], 0]
 ] call CBA_fnc_addSetting;
 
 

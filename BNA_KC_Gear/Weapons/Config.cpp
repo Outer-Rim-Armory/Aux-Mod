@@ -284,6 +284,8 @@ class CfgWeapons
         displayName = "[KC] DC-15S";
         canShootInWater = 1;
 
+        JLTS_shieldedWeapon = "BNA_KC_DC15S_RiotShield";
+
         magazines[] = { "12thFleet_Mag_DC15S" };
 
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -333,6 +335,45 @@ class CfgWeapons
                 begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire1", 1, 1, 1800};
                 soundBegin[] = {begin1, 1};
                 soundBeginWater[] = {begin1, 1};
+            };
+        };
+    };
+
+    class BNA_KC_DC15S_RiotShield: BNA_KC_DC15S
+    {
+        // Scopes
+        scope = 2;        // Will be 1 in final version
+        scopeArsenal = 2; // Will be 0 in final version
+
+        JLTS_isShielded = 1;
+        JLTS_baseWeapon = "BNA_KC_DC15S";
+        model = "\MRC\JLTS\weapons\DC15S\DC15S_shielded.p3d";
+
+        hiddenSelections[]=
+        {
+            "camo1",
+            "camo2"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "\MRC\JLTS\weapons\DC15S\data\DC15S_co.paa",
+            "\MRC\JLTS\weapons\Shield\data\shield_co.paa"
+        };
+        handAnim[]=
+        {
+            "OFP2_ManSkeleton",
+            "\MRC\JLTS\weapons\DC15S\anims\DC15S_shielded_handanim.rtm"
+        };
+
+        // reloadAction = "GestureReload";
+		// inertia = 0.80000001;
+		recoil = "recoil_pdw"; // More recoil since the gun is held in one hand
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class UnderBarrelSlot: UnderBarrelSlot
+            {
+                compatibleItems[] = { "BNA_KC_RiotShield_Attachment" };
             };
         };
     };
@@ -586,28 +627,6 @@ class CfgWeapons
             };
         };
 
-        class EGLM: UGL_F
-        {
-            displayName = "Flare Launcher";
-            magazines[] =
-            {
-                "3Rnd_UGL_FlareWhite_F",
-                "3Rnd_UGL_FlareRed_F",
-                "BNA_KC_3Rnd_UGL_FlareBlue"
-            };
-            magazineWell[] = {};
-
-            cameraDir = "eye";
-            discreteDistance[] = { 100 };  // Array of ranges
-            discreteDistanceInitIndex = 0; // Default range index
-            discreteDistanceCameraPoint[] = { "OP_eye" };
-
-            // Muzzle memory points
-            // Makes the flares shoot as intended
-            muzzlePos = "Usti hlavne";
-            muzzleEnd = "Konec hlavne";
-        };
-
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -629,12 +648,48 @@ class CfgWeapons
     class GrenadeLauncher;
     class Throw: GrenadeLauncher
     {
-        muzzles[] += {"BNA_KC_Grenade_Muzzle"};
-        class BNA_KC_Grenade_Muzzle: ThrowMuzzle
+        muzzles[] += { "BNA_KC_DroidPopper_Muzzle" };
+        class BNA_KC_DroidPopper_Muzzle: ThrowMuzzle
         {
             displayName = "[KC] Droid Popper";
             magazines[] += { "BNA_KC_Grenade_DroidPopper" };
         };
+    };
+
+    // ┌────────────────────┐
+    // │        Misc        │
+    // └────────────────────┘
+    // Riot Shield
+    class JLTS_riot_shield_item;
+    class BNA_KC_RiotShield_Item: JLTS_riot_shield_item
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Riot Shield";
+
+        JLTS_shieldAttachment = "BNA_KC_RiotShield_Attachment";
+    };
+
+    class JLTS_riot_shield_attachment;
+    class BNA_KC_RiotShield_Attachment: JLTS_riot_shield_attachment
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;        // Will be 1 in final version
+        scopeArsenal = 2; // Will be 0 in final version
+
+        displayName = "[KC] Riot Shield";
+
+        JLTS_shieldItem = "BNA_KC_RiotShield_Item";
     };
 };
 
@@ -688,6 +743,11 @@ class CfgMagazines
 
         ammo = "BNA_KC_Grenade_DroidPopper_Ammo";
         count = 1;
+        
+        BNA_KC_GrenadeType = "EMP";
+        BNA_KC_GrenadeEMP_Radius_Droid = 3;
+        BNA_KC_GrenadeEMP_Radius_Deka = 5;
+        BNA_KC_GrenadeEMP_Radius_Vehicle = 5;
     };
 };
 
@@ -743,7 +803,7 @@ class CfgAmmo
         // Sound and visual effects
         ace_grenades_pullPinSound[] = { "\ls_sounds\weapons\grenade\pin.wss", 3, 1, 10 };
         soundFly[] = { "\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40 };
-        SoundSetExplosion[] = { "JLTS_GrenadeEMP_Exp_SoundSet", "JLTS_GrenadeEMP_Tail_SoundSet", "Explosion_Debris_SoundSet" };
+        SoundSetExplosion[] = { /*"JLTS_GrenadeEMP_Exp_SoundSet", "JLTS_GrenadeEMP_Tail_SoundSet", "Explosion_Debris_SoundSet"*/ };
 
         explosionEffects = "JLTS_fx_exp_EMP";
         explosionEffectRadius = 3;
