@@ -184,7 +184,7 @@ class CfgWeapons
             {
                 "3Rnd_UGL_FlareWhite_F",
                 "3Rnd_UGL_FlareRed_F",
-                "3Rnd_UGL_FlareGreen_F",
+                "BNA_KC_3Rnd_UGL_FlareBlue",
                 "3Rnd_UGL_FlareCIR_F",
                 "3Rnd_Smoke_Grenade_shell",
                 "3Rnd_SmokeRed_Grenade_shell",
@@ -551,7 +551,7 @@ class CfgWeapons
             {
                 "3Rnd_UGL_FlareWhite_F",
                 "3Rnd_UGL_FlareRed_F",
-                "3Rnd_UGL_FlareGreen_F",
+                "BNA_KC_3Rnd_UGL_FlareBlue",
                 "3Rnd_UGL_FlareCIR_F",
                 "3Rnd_Smoke_Grenade_shell",
                 "3Rnd_SmokeRed_Grenade_shell",
@@ -575,30 +575,13 @@ class CfgWeapons
 
     class UGL_F;
 
-    class Default;
-    class PistolCore: Default {};
-    class Pistol: PistolCore
-    {
-        class WeaponSlotsInfo {};
-    };
-    class Pistol_Base_F: Pistol
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo {};
-    };
-    class hgun_P07_F: Pistol_Base_F
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo {};
-    };
+    class hgun_P07_F;
     class JLTS_DC17SA: hgun_P07_F
     {
         class Single: Mode_SemiAuto
         {
             class BaseSoundModeType {};
             class StandardSound: BaseSoundModeType {};
-        };
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot {};
         };
     };
     class BNA_KC_DC17: JLTS_DC17SA
@@ -627,10 +610,42 @@ class CfgWeapons
             };
         };
 
+        class EGLM: UGL_F
+        {
+            displayName = "Flare Launcher";
+            magazines[] =
+            {
+                "3Rnd_UGL_FlareWhite_F",
+                "3Rnd_UGL_FlareRed_F",
+                "BNA_KC_3Rnd_UGL_FlareBlue"
+            };
+            magazineWell[] = {};
+
+            cameraDir = "eye";
+            discreteDistance[] = { 100 };  // Array of ranges
+            discreteDistanceInitIndex = 0; // Default range index
+            discreteDistanceCameraPoint[] = { "eye" };
+
+            // Muzzle memory points
+            // Makes the flares shoot as intended
+            muzzlePos = "Usti hlavne";
+            muzzleEnd = "Konec hlavne";
+        };
+
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot
             {
+                displayName = "Optics Slot";
+                
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "Bottom";
+                iconPosition[] = {0.5,0.35};
+                iconScale = 0.2;
+
+                linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
+
                 compatibleItems[] = 
                 {
                     // Sights
