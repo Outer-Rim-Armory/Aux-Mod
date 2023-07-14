@@ -17,6 +17,8 @@ class CfgPatches
                 // Base Tank Class
             "A3_Armor_F_Beta_APC_Wheeled_01",
 				// "Badger" APC
+            "A3_Armor_F_Beta_APC_Wheeled_02",
+                // "OLV-20" APC
 			"A3_Armor_F_EPC_MBT_01",
 				// "Blitz" Tank
 			"3AS_ATTE",
@@ -29,6 +31,7 @@ class CfgPatches
         units[] =
 		{
             "BNA_KC_APC_Badger",
+            "BNA_KC_APC_OLV20",
 			"BNA_KC_MBT_Slammer",
             "BNA_KC_ATTE",
             "BNA_KC_Juggernaut",

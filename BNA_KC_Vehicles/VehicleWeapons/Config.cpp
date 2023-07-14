@@ -354,10 +354,15 @@ class CfgWeapons
 	class BNA_KC_Coax: LMG_coax
 	{
 		displayName = "Co-Axial";
-		magazines[] = 
-		{
-			"BNA_KC_100rnd_Coax_Mag"
-		};
+		magazines[] =
+        {
+            "BNA_KC_100rnd_Coax_Mag",
+            "BNA_KC_500rnd_Coax_Mag",
+            "BNA_KC_1000rnd_Coax_Mag"
+        };
+
+        class GunParticles {};
+
 		class manual: manual
 		{
 			sounds[] = 
@@ -376,7 +381,7 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[] = 
 				{
-					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
+					"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1.wss",
 					1,
 					1,
 					1800
@@ -399,7 +404,12 @@ class CfgWeapons
     {
         displayName = "Machine Gun";
         drySound[] = { "MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10 };
-        magazines[] = { "BNA_KC_100rnd_Coax_Mag", "BNA_KC_500rnd_Coax_Mag", "BNA_KC_1000rnd_Coax_Mag" };
+        magazines[] =
+        {
+            "BNA_KC_100rnd_Coax_Mag",
+            "BNA_KC_500rnd_Coax_Mag",
+            "BNA_KC_1000rnd_Coax_Mag"
+        };
 
         // Removes the smoke effect from the gun
         class GunParticles {};

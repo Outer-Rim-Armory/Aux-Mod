@@ -475,6 +475,142 @@ class CfgVehicles
 		};
 	};
 
+    class Car: LandVehicle {};
+    class Car_F: Car
+    {
+        class HitPoints
+        {
+            class HitBody {};
+            class HitHull {};
+        };
+    };
+    class Wheeled_Apc_F: Car_F
+    {
+        class NewTurret: NewTurret {};
+        class Turrets
+        {
+            class MainTurret: NewTurret {};
+        };
+    };
+    class APC_Wheeled_02_base_F: Wheeled_Apc_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+        };
+    };
+    class APC_Wheeled_02_base_v2_F: APC_Wheeled_02_base_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+        };
+    };
+    class O_APC_Wheeled_02_rcws_v2_F: APC_Wheeled_02_base_v2_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+        };
+    };
+    class BNA_KC_APC_OLV20: O_APC_Wheeled_02_rcws_v2_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VArmored";
+
+        crew = "BNA_KC_Unit_Phase2_Tanker";
+        side = 1;
+
+        displayName = "[KC] OLV-20 APC";
+
+        hiddenSelectionsTextures[] = {};
+        textureList[] = {"KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0};
+
+        class TextureSources
+        {
+            class KeeliCompany
+            {
+                author = "SweMonkey and DartRuffian";
+                displayName = "Keeli Company";
+                factions[] = { "BNA_KC_Faction" };
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Hull.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Wheels.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret.paa",
+                    "", // Camo Net Texture
+                    ""  // Cage Texture
+                };
+            };          
+            class BrownCamo: KeeliCompany
+            {
+                displayName = "Brown Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Hull_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Wheels_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoBrown.paa",
+                    "", // Camo Net Texture
+                    ""  // Cage Texture
+                };
+            };
+            class GreyCamo: KeeliCompany
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Hull_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Wheels_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoGrey.paa",
+                    "", // Camo Net Texture
+                    ""  // Cage Texture
+                };
+            };
+        };
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] =
+                {
+                    "BNA_KC_Coax",
+                    "GMG_40mm",
+                    "SmokeLauncher"
+                };
+                magazines[] =
+                {
+                    "BNA_KC_500rnd_Coax_Mag",
+                    "BNA_KC_500rnd_Coax_Mag",
+                    "BNA_KC_500rnd_Coax_Mag",
+                    "96Rnd_40mm_G_belt",
+                    "96Rnd_40mm_G_belt",
+                    "SmokeLauncherMag"
+                };
+                // magazines[] =
+                // {
+                //     "96Rnd_40mm_G_belt",
+                //     "96Rnd_40mm_G_belt",
+                //     "200Rnd_127x99_mag_Tracer_Green",
+                //     "200Rnd_127x99_mag_Tracer_Green",
+                //     "200Rnd_127x99_mag_Tracer_Green",
+                //     "200Rnd_127x99_mag_Tracer_Green",
+                //     "SmokeLauncherMag"
+                // };
+            };
+        };
+    };
+
+
     class 3as_saber_m1;
     class BNA_KC_Saber_M1: 3as_saber_m1
 	{
@@ -568,19 +704,6 @@ class CfgVehicles
         };
 	};
 
-    class All {};
-    class AllVehicles: All {};
-    class Land: AllVehicles {};
-    class LandVehicle: Land {};
-    class Car: LandVehicle {};
-    class Car_F: Car
-    {
-        class HitPoints
-        {
-            class HitBody {};
-            class HitHull {};
-        };
-    };
     class Wheeled_Apc_F: Car_F {};
     class 3AS_Jug_base_F: Wheeled_Apc_F
     {
