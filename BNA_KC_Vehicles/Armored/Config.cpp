@@ -316,6 +316,7 @@ class CfgVehicles
         };
 	};
 
+
     class APC_Wheeled_01_base_F;
 	class B_APC_Wheeled_01_base_F: APC_Wheeled_01_base_F
 	{
@@ -475,42 +476,17 @@ class CfgVehicles
 		};
 	};
 
-    class Car: LandVehicle {};
-    class Car_F: Car
-    {
-        class HitPoints
-        {
-            class HitBody {};
-            class HitHull {};
-        };
-    };
-    class Wheeled_Apc_F: Car_F
-    {
-        class NewTurret: NewTurret {};
-        class Turrets
-        {
-            class MainTurret: NewTurret {};
-        };
-    };
-    class APC_Wheeled_02_base_F: Wheeled_Apc_F
-    {
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret {};
-        };
-    };
+
+    class APC_Wheeled_02_base_F;
     class APC_Wheeled_02_base_v2_F: APC_Wheeled_02_base_F
     {
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret {};
-        };
+        class Turrets;
     };
     class O_APC_Wheeled_02_rcws_v2_F: APC_Wheeled_02_base_v2_F
     {
         class Turrets: Turrets
         {
-            class MainTurret: MainTurret {};
+            class MainTurret;
         };
     };
     class BNA_KC_APC_OLV20: O_APC_Wheeled_02_rcws_v2_F
@@ -704,22 +680,17 @@ class CfgVehicles
         };
 	};
 
-    class Wheeled_Apc_F: Car_F {};
-    class 3AS_Jug_base_F: Wheeled_Apc_F
+    class 3AS_Jug_base_F;
+    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F
     {
-        class HitPoints: HitPoints
-        {
-            class HitBody: HitBody {};
-            class HitHull: HitHull {};
-        };
+        class HitPoints;
     };
-    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F {};
     class 3as_Jug: 3AS_B_Jug_01_base_F
     {
         class HitPoints: HitPoints
         {
-            class HitBody: HitBody {};
-            class HitHull: HitHull {};
+            class HitBody;
+            class HitHull;
         };
     };
     class BNA_KC_Juggernaut: 3as_Jug

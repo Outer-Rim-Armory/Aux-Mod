@@ -67,9 +67,9 @@ class CfgVehicles
                 magazine = "3Rnd_UGL_FlareRed_F";
                 count = 5;
             };
-            class _xx_3Rnd_UGL_FlareGreen_F
+            class _xx_BNA_KC_3Rnd_UGL_FlareBlue
             {
-                magazine = "3Rnd_UGL_FlareGreen_F";
+                magazine = "BNA_KC_3Rnd_UGL_FlareBlue";
                 count = 5;
             };
             class _xx_3Rnd_UGL_FlareCIR_F
@@ -194,9 +194,9 @@ class CfgVehicles
                 magazine = "3Rnd_UGL_FlareRed_F";
                 count = 15
             };
-            class _xx_3Rnd_UGL_FlareGreen_F
+            class _xx_BNA_KC_3Rnd_UGL_FlareBlue
             {
-                magazine = "3Rnd_UGL_FlareGreen_F";
+                magazine = "BNA_KC_3Rnd_UGL_FlareBlue";
                 count = 15
             };
             class _xx_3Rnd_UGL_FlareCIR_F
