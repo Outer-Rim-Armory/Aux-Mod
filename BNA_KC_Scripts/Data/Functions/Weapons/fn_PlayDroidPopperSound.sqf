@@ -31,5 +31,5 @@ if (BNA_KC_DroidPopper_TCWSoundEnabled) then
 }
 else
 {
-    playSound3D ["MRC\JLTS\weapons\Core\sounds\emp_exp\exp_emp_1.wss", objNull, false, ATLToASL _position, 3, 1, 0, 0, true];
+    playSound3D ["MRC\JLTS\weapons\Core\sounds\emp_exp\exp_emp_1.wss", objNull, false, _position, 3, 1, 0, 0, true];
 };
