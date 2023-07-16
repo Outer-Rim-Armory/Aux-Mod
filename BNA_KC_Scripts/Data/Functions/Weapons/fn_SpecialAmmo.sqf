@@ -1,8 +1,10 @@
+params ["_eventHandlerType"];
+
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
 #define GET_STRING(config, _defaultValue) (if (isText (config)) then {getText (config)} else {_defaultValue})
 
-['ace_firedPlayer', {
+[_eventHandlerType, {
 _this spawn
 {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
