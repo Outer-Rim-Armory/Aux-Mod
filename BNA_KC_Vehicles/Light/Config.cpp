@@ -72,6 +72,55 @@ class TextureSources \
 };
 
 
+#define GLAVENUS_TEXTURES() hiddenSelectionsTextures[] = {}; \
+textureList[] = {"BrownWhite", 1, "KCCamo", 0, "BrownCamo", 0, "GreyCamo", 0}; \
+class TextureSources \
+{ \
+    class BrownWhite \
+    { \
+        author = "SweMonkey and DartRuffian"; \
+        displayName = "Brown/White"; \
+        factions[] = { "BNA_KC_Faction" }; \
+        textures[] = \
+        { \
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body.paa", \
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body2.paa", \
+            "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret.paa" \
+        }; \
+    }; \
+    class KCCamo: BrownWhite \
+    { \
+        displayName = "Keeli Company Camo"; \
+        textures[] = \
+        { \
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body_CamoKC.paa", \
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body2_CamoKC.paa", \
+            "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret.paa" \
+        }; \
+    }; \
+    class BrownCamo: BrownWhite \
+    { \
+        displayName = "Brown Camo"; \
+        textures[] = \
+        { \
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body_CamoBrown.paa", \
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body2_CamoBrown.paa", \
+            "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoBrown.paa" \
+        }; \
+    }; \
+    class GreyCamo: BrownWhite \
+    { \
+        displayName = "Grey Camo"; \
+        textures[] = \
+        { \
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body_CamoGrey.paa", \
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body2_CamoGrey.paa", \
+            "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoGrey.paa" \
+        }; \
+    }; \
+};
+
+
 class CfgVehicles
 {
     class 3AS_ATRT;
@@ -342,6 +391,46 @@ class CfgVehicles
                 weapon = "BNA_KC_Mounted_MissileLauncher";
             };
 		};
+    };
+
+
+    class O_MRAP_02_F;
+    class BNA_KC_Glavenus_Unarmed: O_MRAP_02_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VLight";
+
+        crew = "BNA_KC_Unit_Phase2_CT";
+        side = 1;
+
+        displayName = "[KC] Glavenus (Unarmed)";
+
+        GLAVENUS_TEXTURES();
+    };
+
+    class BNA_KC_Glavenus_Medic: BNA_KC_Glavenus_Unarmed
+    {
+        displayName = "[KC] Glavenus (Medic)";
+
+        ace_medical_isMedicalVehicle = 1;
+
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body_Medic.paa",
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body2_Medic.paa",
+            ""
+        };
+        textureList[] = {};
+        class TextureSources {};
     };
 };
 
