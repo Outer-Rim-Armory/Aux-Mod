@@ -432,6 +432,76 @@ class CfgVehicles
         textureList[] = {};
         class TextureSources {};
     };
+
+    class O_MRAP_02_gmg_F;
+    class BNA_KC_Glavenus_GMG: O_MRAP_02_gmg_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VLight";
+
+        crew = "BNA_KC_Unit_Phase2_CT";
+        side = 1;
+
+        displayName = "[KC] Glavenus (GMG)";
+
+        GLAVENUS_TEXTURES();
+    };
+
+    class MRAP_02_base_F;
+    class MRAP_02_hmg_base_F: MRAP_02_base_F
+    {
+        class Turrets;
+    };
+    class O_MRAP_02_hmg_F: MRAP_02_hmg_base_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret;
+        };
+    };
+    class BNA_KC_Glavenus_HMG: O_MRAP_02_hmg_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VLight";
+
+        crew = "BNA_KC_Unit_Phase2_CT";
+        side = 1;
+
+        displayName = "[KC] Glavenus (HMG)";
+
+        GLAVENUS_TEXTURES();
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] = { "BNA_KC_Coax" };
+                magazines[] =
+                {
+                    "BNA_KC_500rnd_Coax_Mag",
+                    "BNA_KC_500rnd_Coax_Mag"
+                };
+            };
+        };
+    };
 };
 
 
