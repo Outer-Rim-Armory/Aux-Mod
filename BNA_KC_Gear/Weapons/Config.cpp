@@ -342,8 +342,8 @@ class CfgWeapons
     class BNA_KC_DC15S_RiotShield: BNA_KC_DC15S
     {
         // Scopes
-        scope = 2;        // Will be 1 in final version
-        scopeArsenal = 2; // Will be 0 in final version
+        scope = 1;        // Will be 1 in final version
+        scopeArsenal = 0; // Will be 0 in final version
 
         JLTS_isShielded = 1;
         JLTS_baseWeapon = "BNA_KC_DC15S";
