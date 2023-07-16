@@ -373,7 +373,7 @@ class CfgWeapons
         {
             class UnderBarrelSlot: UnderBarrelSlot
             {
-                compatibleItems[] = { "BNA_KC_RiotShield_Attachment" };
+                compatibleItems[] = { "JLTS_riot_shield_attachment" };
             };
         };
     };
@@ -669,42 +669,6 @@ class CfgWeapons
             displayName = "[KC] Droid Popper";
             magazines[] += { "BNA_KC_Grenade_DroidPopper" };
         };
-    };
-
-    // ┌────────────────────┐
-    // │        Misc        │
-    // └────────────────────┘
-    // Riot Shield
-    class JLTS_riot_shield_item;
-    class BNA_KC_RiotShield_Item: JLTS_riot_shield_item
-    {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
-        displayName = "[KC] Riot Shield";
-
-        JLTS_shieldAttachment = "BNA_KC_RiotShield_Attachment";
-    };
-
-    class JLTS_riot_shield_attachment;
-    class BNA_KC_RiotShield_Attachment: JLTS_riot_shield_attachment
-    {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;        // Will be 1 in final version
-        scopeArsenal = 2; // Will be 0 in final version
-
-        displayName = "[KC] Riot Shield";
-
-        JLTS_shieldItem = "BNA_KC_RiotShield_Item";
     };
 };
 
