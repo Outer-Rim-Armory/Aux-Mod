@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class BNA_KC_Vehicles_LAATs
+	class BNA_KC_Vehicles_Aviation
 	{
 		addonRootClass= "BNA_KC_Vehicles";
 		author = "SweMonkey and DartRuffian";
