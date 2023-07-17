@@ -529,6 +529,8 @@ class CfgVehicles
 
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
+
+        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
     };
 
     class BNA_KC_Glavenus_Medic: BNA_KC_Glavenus_Unarmed
@@ -545,6 +547,8 @@ class CfgVehicles
         };
         textureList[] = {};
         class TextureSources {};
+
+        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
 
         class TransportWeapons {};
         class TransportItems
@@ -656,6 +660,8 @@ class CfgVehicles
 
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
+
+        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
     };
 
     class MRAP_02_base_F;
@@ -691,6 +697,8 @@ class CfgVehicles
 
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
+
+        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
 
         class Turrets: Turrets
         {
