@@ -519,7 +519,7 @@ class CfgWeapons
         drySound[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Glavenus\horn.wss",
-            5,
+            3,
             1,
             100
         };
@@ -530,7 +530,7 @@ class CfgWeapons
         drySound[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Gammoth\horn.wss",
-            5,
+            2,
             1,
             100
         };
