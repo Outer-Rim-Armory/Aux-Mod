@@ -300,6 +300,55 @@ class CfgVehicles
             };
         };
     };
+
+    class O_Truck_03_device_F;
+    class BNA_KC_Gammoth_Device: O_Truck_03_device_F
+    {
+        displayName = "[KC] Gammoth Device Truck";
+        
+        GAMMOTH_DATA()
+
+        hiddenSelectionsTextures[] = {};
+        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        class TextureSources
+        {
+            class CamoKC
+            {
+                author = "SweMonkey and DartRuffian";
+                displayName = "Keeli Company Camo";
+                factions[] = { "BNA_KC_Faction" };
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
+                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
+                };
+            };
+            class CamoBrown: CamoKC
+            {
+                displayName = "Brown Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
+                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
+                };
+            };
+            class CamoGrey: CamoKC
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
+                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
+                };
+            };
+        };
+    };
 };
 
 
