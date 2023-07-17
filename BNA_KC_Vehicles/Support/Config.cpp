@@ -1,6 +1,6 @@
 #include "CfgPatches.hpp"
 
-#define Gammoth_DATA() dlc = "BNA_KC"; \
+#define GAMMOTH_DATA() dlc = "BNA_KC"; \
 author = "SweMonkey and DartRuffian"; \
 scope = 2; \
 scopeCurator = 2; \
@@ -17,7 +17,7 @@ class CfgVehicles
     {
         displayName = "[KC] Gammoth Transport";
         
-        Gammoth_DATA()
+        GAMMOTH_DATA()
 
         hiddenSelectionsTextures[] = {};
         textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
@@ -63,7 +63,7 @@ class CfgVehicles
     {
         displayName = "[KC] Gammoth Transport (Covered)";
         
-        Gammoth_DATA()
+        GAMMOTH_DATA()
 
         hiddenSelectionsTextures[] = {};
         textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
