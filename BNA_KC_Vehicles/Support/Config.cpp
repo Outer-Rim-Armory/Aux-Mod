@@ -256,7 +256,7 @@ class CfgVehicles
     class O_Truck_03_fuel_F;
     class BNA_KC_Gammoth_Refuel: O_Truck_03_fuel_F
     {
-        displayName = "[KC] Gammoth Repair Truck";
+        displayName = "[KC] Gammoth Refuel Truck";
         
         GAMMOTH_DATA()
         ace_refuel_canReceive = 1;
@@ -264,6 +264,8 @@ class CfgVehicles
         ace_refuel_fuelCapacity = 600;
         ace_refuel_fuelCargo = 10000;
 
+        hiddenSelectionsTextures[] = {};
+        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
         class TextureSources
         {
             class CamoKC
