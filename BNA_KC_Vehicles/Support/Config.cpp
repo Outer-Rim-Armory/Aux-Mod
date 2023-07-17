@@ -106,6 +106,105 @@ class CfgVehicles
             };
         };
     };
+
+    class O_Truck_03_ammo_F;
+    class BNA_KC_Gammoth_Ammo: O_Truck_03_ammo_F
+    {
+        displayName = "[KC] Gammoth Ammo Truck";
+        
+        GAMMOTH_DATA()
+
+        hiddenSelectionsTextures[] = {};
+        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        class TextureSources
+        {
+            class CamoKC
+            {
+                author = "SweMonkey and DartRuffian";
+                displayName = "Keeli Company Camo";
+                factions[] = { "BNA_KC_Faction" };
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
+                    "A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
+                };
+            };
+            class CamoBrown: CamoKC
+            {
+                displayName = "Brown Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
+                    "A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
+                };
+            };
+            class CamoGrey: CamoKC
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
+                    "A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
+                };
+            };
+        };
+    };
+
+    class O_Truck_03_medical_F;
+    class BNA_KC_Gammoth_Medical: O_Truck_03_medical_F
+    {
+        displayName = "[KC] Gammoth Medical Truck";
+        
+        GAMMOTH_DATA()
+        ace_medical_isMedicalVehicle = 1;
+
+        hiddenSelectionsTextures[] = {};
+        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        class TextureSources
+        {
+            class CamoKC
+            {
+                author = "SweMonkey and DartRuffian";
+                displayName = "Keeli Company Camo";
+                factions[] = { "BNA_KC_Faction" };
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoKC.paa"
+                };
+            };
+            class CamoBrown: CamoKC
+            {
+                displayName = "Brown Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoBrown.paa"
+                };
+            };
+            class CamoGrey: CamoKC
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoGrey.paa"
+                };
+            };
+        };
+    };
 };
 
 
