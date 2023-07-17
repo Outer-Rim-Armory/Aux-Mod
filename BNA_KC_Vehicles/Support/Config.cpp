@@ -7,7 +7,8 @@ scopeCurator = 2; \
 faction = "BNA_KC_Faction"; \
 editorSubcategory = "BNA_KC_SubCat_VSupport"; \
 crew = "BNA_KC_Unit_Phase2_CT"; \
-side = 1;
+side = 1; \
+weapons[] = { "BNA_KC_Glavenus_Horn" };
 
 
 class CfgVehicles

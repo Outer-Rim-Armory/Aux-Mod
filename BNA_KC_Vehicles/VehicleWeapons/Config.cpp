@@ -524,4 +524,15 @@ class CfgWeapons
             100
         };
     };
+
+    class BNA_KC_Glavenus_Horn: CarHorn
+    {
+        drySound[] =
+        {
+            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Gammoth\horn.wss",
+            5,
+            1,
+            100
+        };
+    };
 };
