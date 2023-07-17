@@ -205,6 +205,101 @@ class CfgVehicles
             };
         };
     };
+
+    class O_Truck_03_repair_F;
+    class BNA_KC_Gammoth_Repair: O_Truck_03_repair_F
+    {
+        displayName = "[KC] Gammoth Repair Truck";
+        
+        GAMMOTH_DATA()
+        ace_repair_canRepair = 1;
+
+        hiddenSelectionsTextures[] = {};
+        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        class TextureSources
+        {
+            class CamoKC
+            {
+                author = "SweMonkey and DartRuffian";
+                displayName = "Keeli Company Camo";
+                factions[] = { "BNA_KC_Faction" };
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Repair\BNA_KC_Gammoth_Repair_CamoKC.paa"
+                };
+            };
+            class CamoBrown: CamoKC
+            {
+                displayName = "Brown Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Repair\BNA_KC_Gammoth_Repair_CamoBrown.paa"
+                };
+            };
+            class CamoGrey: CamoKC
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Repair\BNA_KC_Gammoth_Repair_CamoGrey.paa"
+                };
+            };
+        };
+    };
+
+    class O_Truck_03_fuel_F;
+    class BNA_KC_Gammoth_Refuel: O_Truck_03_fuel_F
+    {
+        displayName = "[KC] Gammoth Repair Truck";
+        
+        GAMMOTH_DATA()
+        ace_refuel_canReceive = 1;
+        ace_refuel_flowRate = 2;
+        ace_refuel_fuelCapacity = 600;
+        ace_refuel_fuelCargo = 10000;
+
+        class TextureSources
+        {
+            class CamoKC
+            {
+                author = "SweMonkey and DartRuffian";
+                displayName = "Keeli Company Camo";
+                factions[] = { "BNA_KC_Faction" };
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Fuel\BNA_KC_Gammoth_Fuel_CamoKC.paa"
+                };
+            };
+            class CamoBrown: CamoKC
+            {
+                displayName = "Brown Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Fuel\BNA_KC_Gammoth_Fuel_CamoBrown.paa"
+                };
+            };
+            class CamoGrey: CamoKC
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Gammoth\Fuel\BNA_KC_Gammoth_Fuel_CamoGrey.paa"
+                };
+            };
+        };
+    };
 };
 
 

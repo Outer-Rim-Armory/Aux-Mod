@@ -17,7 +17,9 @@ class CfgPatches
             "BNA_KC_Gammoth_Transport",
             "BNA_KC_Gammoth_Covered",
             "BNA_KC_Gammoth_Ammo",
-            "BNA_KC_Gammoth_Medical"
+            "BNA_KC_Gammoth_Medical",
+            "BNA_KC_Gammoth_Repair",
+            "BNA_KC_Gammoth_Refuel"
         };
         weapons[] = {};
     };
