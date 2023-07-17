@@ -15,8 +15,6 @@
 // Normal text settings:
 // "<font size='13' face='RobotoCondensed'>Normal Text</font>"
 
-if (isServer) exitWith {}; // Exit if the server, all UI stuff
-
 // Main menu that everything will be in
 player createDiarySubject ["CWR_TagsSubject", "Chat Wheel Tags"];
 
