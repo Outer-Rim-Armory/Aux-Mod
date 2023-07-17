@@ -525,7 +525,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Glavenus_Horn: CarHorn
+    class BNA_KC_Gammoth_Horn: CarHorn
     {
         drySound[] =
         {
