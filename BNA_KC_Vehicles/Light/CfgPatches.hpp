@@ -9,15 +9,21 @@ class CfgPatches
         {
             "3AS_ATRT",
 				// AT-RT
-            "A3_Soft_F_Exp_LSV_02"
+            "A3_Soft_F_Exp_LSV_02",
                 // Unarmed, Armed, and AT versions of the LSV
+            "A3_Soft_F_MRAP_02"
+                // Karatel
         };
         units[] =
 		{
 			"BNA_KC_ATRT",
             "BNA_KC_Hornet_Unarmed",
             "BNA_KC_Hornet_Armed",
-            "BNA_KC_Hornet_AT"
+            "BNA_KC_Hornet_AT",
+            "BNA_KC_Glavenus_Unarmed",
+            "BNA_KC_Glavenus_Medic",
+            "BNA_KC_Glavenus_GMG",
+            "BNA_KC_Glavenus_HMG"
 		};
         weapons[] = {};
     };

@@ -125,6 +125,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Ox",
             "BNA_KC_HelmetHolder_P2_Patriot",
             "BNA_KC_HelmetHolder_P2_Ponds",
+            "BNA_KC_HelmetHolder_P2_Rev",
             "BNA_KC_HelmetHolder_P2_Rodger",
             "BNA_KC_HelmetHolder_P2_Splashdown",
             "BNA_KC_HelmetHolder_P2_Stone",

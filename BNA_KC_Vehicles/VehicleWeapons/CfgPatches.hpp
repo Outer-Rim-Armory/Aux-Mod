@@ -31,7 +31,7 @@ class CfgPatches
 
             "BNA_KC_Juggernaut_Horn",
             "BNA_KC_Juggernaut_Alarm",
-            "BNA_KC_ATTE_Alarm"
+            "BNA_KC_Glavenus_Horn"
         };
 		ammo[] =
 		{

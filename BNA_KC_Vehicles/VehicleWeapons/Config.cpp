@@ -741,12 +741,23 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_ATTE_Alarm: BNA_KC_Juggernaut_Alarm
+    class BNA_KC_Glavenus_Horn: CarHorn
     {
         drySound[] =
         {
-            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg",
-            5,
+            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Glavenus\horn.wss",
+            3,
+            1,
+            100
+        };
+    };
+
+    class BNA_KC_Gammoth_Horn: CarHorn
+    {
+        drySound[] =
+        {
+            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Gammoth\horn.wss",
+            2,
             1,
             100
         };

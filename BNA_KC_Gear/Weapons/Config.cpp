@@ -342,8 +342,8 @@ class CfgWeapons
     class BNA_KC_DC15S_RiotShield: BNA_KC_DC15S
     {
         // Scopes
-        scope = 2;        // Will be 1 in final version
-        scopeArsenal = 2; // Will be 0 in final version
+        scope = 1;        // Will be 1 in final version
+        scopeArsenal = 0; // Will be 0 in final version
 
         JLTS_isShielded = 1;
         JLTS_baseWeapon = "BNA_KC_DC15S";
@@ -373,7 +373,7 @@ class CfgWeapons
         {
             class UnderBarrelSlot: UnderBarrelSlot
             {
-                compatibleItems[] = { "BNA_KC_RiotShield_Attachment" };
+                compatibleItems[] = { "JLTS_riot_shield_attachment" };
             };
         };
     };
@@ -670,42 +670,6 @@ class CfgWeapons
             magazines[] += { "BNA_KC_Grenade_DroidPopper" };
         };
     };
-
-    // ┌────────────────────┐
-    // │        Misc        │
-    // └────────────────────┘
-    // Riot Shield
-    class JLTS_riot_shield_item;
-    class BNA_KC_RiotShield_Item: JLTS_riot_shield_item
-    {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
-        displayName = "[KC] Riot Shield";
-
-        JLTS_shieldAttachment = "BNA_KC_RiotShield_Attachment";
-    };
-
-    class JLTS_riot_shield_attachment;
-    class BNA_KC_RiotShield_Attachment: JLTS_riot_shield_attachment
-    {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;        // Will be 1 in final version
-        scopeArsenal = 2; // Will be 0 in final version
-
-        displayName = "[KC] Riot Shield";
-
-        JLTS_shieldItem = "BNA_KC_RiotShield_Item";
-    };
 };
 
 
@@ -789,6 +753,12 @@ class CfgAmmo
     
     class 3AS_EC50_BluePlasma;
     class 12thFleet_Ammo_Westar_Blue: 3AS_EC50_BluePlasma
+    {
+        coefgravity = 0;
+    };
+
+    class JLTS_bullet_stun;
+    class 12thFleet_Ammo_Stun: JLTS_bullet_stun
     {
         coefgravity = 0;
     };
