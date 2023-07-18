@@ -15,15 +15,20 @@ class CfgPatches
 				// LAAT/i
 			"3as_Starships",
 				// Republic Transport
-			"ls_functions"
+			"ls_functions",
 				// Impulse script
+			"A3_Air_F_Exp_VTOL_01"
+				// HAG shit
 		};
 		units[] =
 		{
 			"BNA_KC_LAATi_MK1",
 			"BNA_KC_LAATi_MK2",
 			"BNA_KC_LAATc",
-			"BNA_KC_RepubTransport"
+			"BNA_KC_RepubTransport",
+			"BNA_KC_HAG_Base",
+			"BNA_KC_HVT_Base",
+			"BNA_KC_HIT_Base"
 		};
 		weapons[] = {};
 	};

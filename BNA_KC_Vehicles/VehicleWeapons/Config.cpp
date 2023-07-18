@@ -37,8 +37,36 @@ class CfgAmmo
         effectfly = "ls_plasma_blue";
         coefgravity = 0;
     };
+	
+	class B_20mm_Tracer_Red;
+	class BNA_KC_20mm_Ammo: B_20mm_Tracer_Red
+	{
+		model = "ls_weapons_core\Effects\laser_blue.p3d";
+        effectfly = "ls_plasma_blue";
+        coefgravity = 0;
+	};
+	class Sh_105mm_HEAT_MP;
+	class BNA_KC_105mm_Ammo: Sh_105mm_HEAT_MP
+	{
+		model = "3as\3AS_Weapons\Data\tracer_shell_Green.p3d";
+        coefgravity = 0;
+	};
+	class B_40mm_GPR_Tracer_Red;
+	class BNA_KC_40mm_GPR_Ammo: B_40mm_GPR_Tracer_Red
+	{
+		model = "ls_weapons_core\Effects\laser_blue.p3d";
+        effectfly = "ls_plasma_blue";
+        coefgravity = 0;
+	};
+	class B_40mm_APFSDS_Tracer_Red;
+	class BNA_KC_40mm_APFSDS_Ammo: B_40mm_APFSDS_Tracer_Red
+	{
+        model = "swlw_main\Effects\laser_red.p3d";
+        effectfly = "SWLW_plasma_red";
+        coefgravity = 0;
+	};
 };
-
+// model = "3as\3AS_Weapons\Data\tracer_shell_Green.p3d";
 
 class CfgMagazines
 {
@@ -95,6 +123,31 @@ class CfgMagazines
 
         count = 1000;
     };
+	
+	class 4000Rnd_20mm_Tracer_Red_shells;
+	class BNA_KC_4000rnd_20mm: 4000Rnd_20mm_Tracer_Red_shells
+	{
+		ammo = "BNA_KC_20mm_Ammo";
+		tracersEvery=1;
+	};
+	class 100Rnd_105mm_HEAT_MP;
+	class BNA_KC_100rnd_105mm: 100Rnd_105mm_HEAT_MP
+	{
+		ammo = "BNA_KC_105mm_Ammo";
+		tracersEvery=1;
+	};
+	class 240Rnd_40mm_GPR_Tracer_Red_shells;
+	class BNA_KC_40mm_GPR_240rnd: 240Rnd_40mm_GPR_Tracer_Red_shells
+	{
+		ammo = "BNA_KC_40mm_GPR_Ammo";
+		tracersEvery=1;
+	};
+	class 160Rnd_40mm_APFSDS_Tracer_Red_shells;
+	class BNA_KC_40mm_APFSDS_160rnd: 160Rnd_40mm_APFSDS_Tracer_Red_shells
+	{
+		ammo = "BNA_KC_40mm_APFSDS_Ammo";
+		tracersEvery=1;
+	};
 };
 
 
@@ -486,7 +539,181 @@ class CfgWeapons
 			};
 		};
 	};
-
+	
+	class gatling_20mm_VTOL_01;
+	class BNA_KC_Gatling_20mm: gatling_20mm_VTOL_01
+	{
+		magazines[]=
+		{
+			"BNA_KC_4000rnd_20mm"
+		};
+	};
+	class cannon_105mm;
+	class cannon_105mm_VTOL_01: cannon_105mm
+	{
+		class player;
+	};
+	class BNA_KC_105mm: cannon_105mm_VTOL_01
+	{
+		magazines[]=
+		{
+			"BNA_KC_100rnd_105mm"
+		};
+		class player: player
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				closure1[]=
+				{
+					"A3\sounds_f\weapons\gatling\gatling_rotation_short_2",
+					0.316228,
+					1,
+					20
+				};
+				closure2[]=
+				{
+					"A3\sounds_f\weapons\gatling\gatling_rotation_short_3",
+					0.316228,
+					1,
+					20
+				};
+				soundClosure[]=
+				{
+					"closure1",
+					0.5,
+					"closure2",
+					0.5
+				};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[]=
+				{
+					"3AS\3as_static\XX10\data\SFX\gatcannon",
+					0.94999999,
+					1,
+					2000
+				};
+				begin2[]=
+				{
+					"3AS\3as_static\XX10\data\SFX\gatcannon",
+					0.94999999,
+					1,
+					2000
+				};
+				begin3[]=
+				{
+					"3AS\3as_static\XX10\data\SFX\gatcannon",
+					0.94999999,
+					1,
+					2000
+				};
+				begin4[]=
+				{
+					"3AS\3as_static\XX10\data\SFX\gatcannon",
+					0.94999999,
+					1,
+					2000
+				};
+				begin5[]=
+				{
+					"3AS\3as_static\XX10\data\SFX\gatcannon",
+					0.94999999,
+					1,
+					2000
+				};
+				begin6[]=
+				{
+					"3AS\3as_static\XX10\data\SFX\gatcannon",
+					0.94999999,
+					1,
+					2000
+				};
+				begin7[]=
+				{
+					"3AS\3as_static\XX10\data\SFX\gatcannon",
+					0.94999999,
+					1,
+					2000
+				};
+				begin8[]=
+				{
+					"3AS\3as_static\XX10\data\SFX\gatcannon",
+					0.94999999,
+					1,
+					2000
+				};
+				begin9[]=
+				{
+					"3AS\3as_static\XX10\data\SFX\gatcannon",
+					0.94999999,
+					1,
+					2000
+				};
+				begin10[]=
+				{
+					"3AS\3as_static\XX10\data\SFX\gatcannon",
+					0.94999999,
+					1,
+					2000
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.1,
+					"begin2",
+					0.1,
+					"begin3",
+					0.1,
+					"begin4",
+					0.1,
+					"begin5",
+					0.1,
+					"begin6",
+					0.1,
+					"begin7",
+					0.1,
+					"begin8",
+					0.1,
+					"begin9",
+					0.1,
+					"begin10",
+					0.1
+				};
+			};
+		};
+		
+	};
+	class autocannon_40mm_CTWS;
+	class autocannon_40mm_VTOL_01: autocannon_40mm_CTWS
+	{
+		class HE;
+		class AP;
+	};
+	class BNA_KC_40mm_VTOL: autocannon_40mm_VTOL_01
+	{
+		class HE: HE
+		{
+			magazines[]=
+			{
+				//"240Rnd_40mm_GPR_Tracer_Red_shells"
+				"BNA_KC_40mm_GPR_240rnd"
+			};
+		};
+		class AP: AP
+		{
+			magazines[]=
+			{
+				//"160Rnd_40mm_APFSDS_Tracer_Red_shells"
+				"BNA_KC_40mm_APFSDS_160rnd"
+			};
+		};
+	};
+	
     // Horns & Alarms
     class CarHorn;
     class BNA_KC_Juggernaut_Horn: CarHorn
