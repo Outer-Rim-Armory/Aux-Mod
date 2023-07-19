@@ -126,7 +126,7 @@ class CfgSFX
         BNA_KC_Ambient_ATTE_Alarm[] = {"BNA_KC_ZeusAudioModule\Audio\Ambience\ATTE_Alarm.ogg",db+50,1,500,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
-	class BNA_KC_Ambient_Radio_DK
+	class BNA_KC_Ambient_Radio_DK_SFX
 	{
         name = "[KC] DK Radio Chatter";
         sounds[] = {BNA_KC_Ambient_DK_Radio};
