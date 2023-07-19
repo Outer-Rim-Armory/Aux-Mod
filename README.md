@@ -72,11 +72,9 @@ ARC
 ARF
 
 ## Communication System for Deaf Players
-Keeli Company does what it can to meet the needs of players because everyone deserves the ability to play. The original system was created by Mithu Ral (`jenenna985` on [Discord](https://discord.com/)), but allows their code to be used freely. This system was then expanded upon for further functionality.
+Keeli Company does what it can to meet the needs of players because everyone deserves the ability to play. The original system was created by Mithu Ral (`jenenna985` on [Discord](https://discord.com/)), but allows their code to be used freely. This system was then completely rewritten and updated for more functionality and features.
 
-This system is packed together with the [Keeli Company Aux Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2791896289) but is also included as a separate mod download for other groups to use freely. You can find the original mod [created by Jenna here](https://github.com/DartRuffian/A3-ChatWheel).
-
-**This system is a work-in-progress, and is currently not public *yet*.**
+This system is packed together with the [Keeli Company Aux Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2791896289) but is also included as a [separate mod download](https://steamcommunity.com/sharedfiles/filedetails/?id=3005504621) for other groups to use freely. You can find the original mod [created by Jenna here](https://github.com/DartRuffian/A3-ChatWheel).
 
 
 ## Completely Custom Weapons and Equipment
