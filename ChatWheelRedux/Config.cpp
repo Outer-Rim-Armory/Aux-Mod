@@ -34,8 +34,15 @@ class CfgFunctions
         {
             file = "ChatWheelRedux\Data\Functions\Chat";
             class OpenChatWheel {};
+            class ProcessTags {};
             class SendMessage {};
+            class SendLocalMessage {};
             class ConfigureMenus {};
+        };
+
+        class Sounds
+        {
+            file = "ChatWheelRedux\Data\Functions\Sounds";
             class PlayLocalSound {};
         };
 
@@ -47,6 +54,12 @@ class CfgFunctions
             class RemoveQuotes {};
             class FindAllVoicelineTags {};
             class GetConfigNameFromTag {};
+        };
+
+        class EventHandlers
+        {
+            file = "ChatWheelRedux\Data\Functions\EventHandlers";
+            class ThrowGrenade {};
         };
     };
 };
@@ -71,8 +84,12 @@ class Extended_PreInit_EventHandlers
 
 class Extended_PostInit_EventHandlers
 {
-    class CWR_ConfigureTagDiary
+    class CWR_CreateTagDiary
     {
         init = "call CWR_fnc_CreateTagMenu;";
+    };
+    class CWR_ThrowGrenadeEH
+    {
+        init = "call CWR_fnc_ThrowGrenade;";
     };
 };

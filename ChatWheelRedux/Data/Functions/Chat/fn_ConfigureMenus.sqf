@@ -7,9 +7,9 @@ CWR_messagesHashMap =
         ["Help", "[vl-NeedHelp]Help me!"],
         ["Apologize", "[vl-Sorry]Sorry!"],
         ["Follow", "[vl-Follow]Follow me!"],
-        ["Contact", "[vl-ContactInf]Infantry [contact]!"],
-        ["Vehicle", "[vl-ContactVic]Vehicle [contact]!"],
-        ["Fortification", "[vl-ContactFort]Fortification [contact]!"],
+        ["Contact", "[vl-ContactInf]Contact! Infantry [direction], bearing [bearing]! [distance]!"],
+        ["Vehicle", "[vl-ContactVic]Contact! Vehicle [direction], bearing [bearing]! [distance]!"],
+        ["Fortification", "[vl-ContactFort]Contact! Fortification [direction], bearing [bearing]! [distance]!"],
         ["Low Ammo", "[vl-NeedAmmo]I need ammo for my [weapon]!"],
         ["ACE Check", "[vl-Status]Status [status]!"],
         ["Launchers", "[launcher]"],
@@ -51,7 +51,7 @@ CWR_OpenDistanceMenu =
     sleep 0.05;
     
     private _distanceList = ["Close", "Mid", "Far"];
-    CWR_distanceMessageList = _distanceList apply { _message + " " + _x + "!" };
+    CWR_distanceMessageList = _distanceList apply { [_message, "[distance]", _x] call CWR_fnc_StringReplace; };
     //  distanceMessageList must be global because no other values can 
     //  be passed to the expression parameter of BIS_fnc_CreateMenu
     
