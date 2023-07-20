@@ -41,6 +41,7 @@ class CfgFunctions
 			class PlayRestaurauntAmbience{};
 			class ConfigureAddonOptions{};
 			class ConfigureAddonKeybinds{};
+			class FixInfiniteLoading{};
 		};
 		class Fortifications
 		{
@@ -94,6 +95,10 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Scripts_CreateMarkAction
     {
         init = "call BNAKC_fnc_CreateMarkAction";
+    };
+    class BNA_KC_Scripts_FixInfiniteLoading
+    {
+        init = "if (BNA_KC_Misc_FixInfiniteLoading) then { call BNAKC_fnc_FixInfiniteLoading; };";
     };
 };
 

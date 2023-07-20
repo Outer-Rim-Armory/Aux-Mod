@@ -74,3 +74,14 @@
     false,
     1 // isGlobal
 ] call CBA_fnc_addSetting;
+
+
+// Misc. Scripts
+[
+    "BNA_KC_Misc_FixInfiniteLoading",
+    "CHECKBOX",
+    ["Infinite Loading Screen Fix", "Runs a script on each connecting player to end the loading screen after a certain amount of time."],
+    ["Keeli Company Aux Mod", "Miscellaneous"],
+    true,
+    1 // isGlobal
+] call CBA_fnc_addSetting;
