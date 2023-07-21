@@ -638,6 +638,70 @@ class BNA_KC_Helmet_Phase2_Keeli_Crimson: BNA_KC_Helmet_Phase2_Keeli
 		"BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Crimson.paa",
 	};
 };
+class BNA_KC_Helmet_Phase2_Keeli_CamoBrown: BNA_KC_Helmet_Phase2_Base
+{
+    // NVG Script
+    BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Keeli_CamoBrown";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Keeli_CamoBrown_Crimson";
+
+    displayName = "[KC] INF Helm ('Keeli') - Brown Camo";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\Camo\Brown\BNA_KC_Helmet_P2_Keeli_CamoBrown.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
+};
+class BNA_KC_Helmet_Phase2_Keeli_CamoBrown_Crimson: BNA_KC_Helmet_Phase2_Keeli
+{
+    // Scopes
+    scope = 1;
+    scopeArsenal = 1;
+
+    displayName = "[KC] INF Helm ('Keeli') - Brown Camo [Crimson Visor]";
+    hiddenSelectionsMaterials[] = 
+    {
+        "",
+        "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\Camo\Brown\BNA_KC_Helmet_P2_Keeli_CamoBrown.paa",
+        "BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Crimson.paa",
+    };
+};
+class BNA_KC_Helmet_Phase2_Keeli_CamoGrey: BNA_KC_Helmet_Phase2_Base
+{
+    // NVG Script
+    BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Keeli_CamoGrey";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Keeli_CamoGrey_Crimson";
+
+    displayName = "[KC] INF Helm ('Keeli') - Grey Camo";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\Camo\Grey\BNA_KC_Helmet_P2_Keeli_CamoGrey.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
+};
+class BNA_KC_Helmet_Phase2_Keeli_CamoGrey_Crimson: BNA_KC_Helmet_Phase2_Keeli
+{
+    // Scopes
+    scope = 1;
+    scopeArsenal = 1;
+
+    displayName = "[KC] INF Helm ('Keeli') - Grey Camo [Crimson Visor]";
+    hiddenSelectionsMaterials[] = 
+    {
+        "",
+        "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\Camo\Grey\BNA_KC_Helmet_P2_Keeli_CamoGrey.paa",
+        "BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Crimson.paa",
+    };
+};
 
 class BNA_KC_Helmet_Phase2_Ox: BNA_KC_Helmet_Phase2_Base
 {

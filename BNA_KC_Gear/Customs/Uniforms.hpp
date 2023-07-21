@@ -69,6 +69,22 @@ class BNA_KC_Uniform_Keeli: BNA_KC_Uniform_Base
         uniformClass = "BNA_KC_Unit_Keeli";
     };
 };
+class BNA_KC_Uniform_Keeli_CamoBrown: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor ('Keeli') - Brown Camo";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Keeli_CamoBrown";
+    };
+};
+class BNA_KC_Uniform_Keeli_CamoGrey: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor ('Keeli') - Grey Camo";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Keeli_CamoGrey";
+    };
+};
 
 class BNA_KC_Uniform_Ponds: BNA_KC_Uniform_Base
 {

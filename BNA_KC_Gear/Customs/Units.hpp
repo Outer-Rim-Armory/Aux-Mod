@@ -136,7 +136,7 @@ class BNA_KC_Unit_FilSquad: BNA_KC_Unit_Phase2_Base
     };
 };
 
-class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base // BNA_KC_Unit_Phase2_CAP
+class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
 {
 	// Editor Attributes
 	editorSubcategory = "BNA_KC_Customs";
@@ -162,7 +162,7 @@ class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base // BNA_KC_Unit_Phase2_CAP
 	backpack = "BNA_KC_Backpack_ARC";
 };
 
-class BNA_KC_Unit_Keeli: BNA_KC_Unit_Phase2_Base // BNA_KC_Unit_Phase2_CAP
+class BNA_KC_Unit_Keeli: BNA_KC_Unit_Phase2_Base
 {
 	// Editor Attributes
 	editorSubcategory = "BNA_KC_Customs";
@@ -184,6 +184,54 @@ class BNA_KC_Unit_Keeli: BNA_KC_Unit_Phase2_Base // BNA_KC_Unit_Phase2_CAP
     respawnLinkedItems[] =
     {
         "BNA_KC_Helmet_Phase2_Keeli", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud"
+    };
+};
+class BNA_KC_Unit_Keeli_CamoBrown: BNA_KC_Unit_Phase2_Base
+{
+    // Editor Attributes
+    editorSubcategory = "BNA_KC_Customs";
+
+    displayName = "[KC] Keeli (Brown Camo)";
+    uniformClass = "BNA_KC_Uniform_Keeli_CamoBrown";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Uniforms\Camo\Brown\BNA_KC_Uniform_Keeli_CamoBrown_Upper.paa",
+        "BNA_KC_Gear\Customs\Data\Uniforms\Camo\Brown\BNA_KC_Uniform_Keeli_CamoBrown_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa" 
+    };
+
+    // Loadout
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Keeli_CamoBrown", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Keeli_CamoBrown", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud"
+    };
+};
+class BNA_KC_Unit_Keeli_CamoGrey: BNA_KC_Unit_Phase2_Base
+{
+    // Editor Attributes
+    editorSubcategory = "BNA_KC_Customs";
+
+    displayName = "[KC] Keeli (Grey Camo)";
+    uniformClass = "BNA_KC_Uniform_Keeli_CamoGrey";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Uniforms\Camo\Grey\BNA_KC_Uniform_Keeli_CamoGrey_Upper.paa",
+        "BNA_KC_Gear\Customs\Data\Uniforms\Camo\Grey\BNA_KC_Uniform_Keeli_CamoGrey_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa" 
+    };
+
+    // Loadout
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Keeli_CamoGrey", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Keeli_CamoGrey", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr", "lsd_gar_p2Interior_hud"
     };
 };
 
