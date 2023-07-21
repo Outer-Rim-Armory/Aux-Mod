@@ -420,6 +420,27 @@ class BNA_KC_Unit_Phase2_Recruit_CamoBrown: BNA_KC_Unit_Phase2_Base
         "BNA_KC_Helmet_Phase2_Recruit_CamoBrown", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };
+class BNA_KC_Unit_Phase2_Recruit_CamoGrey: BNA_KC_Unit_Phase2_Base
+{
+    displayName = "[KC] INF 00 - Clone Recruit (Grey Camo)";
+
+    uniformClass = "BNA_KC_Uniform_Recruit_CamoGrey";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Camo\Grey\BNA_KC_Uniform_Recruit_CamoGrey_Upper.paa",
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Camo\Grey\BNA_KC_Uniform_Recruit_CamoGrey_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Recruit_CamoGrey", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Recruit_CamoGrey", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
 
 class BNA_KC_Unit_Phase2_Enlisted_CamoBrown: BNA_KC_Unit_Phase2_Base
 {
@@ -440,6 +461,27 @@ class BNA_KC_Unit_Phase2_Enlisted_CamoBrown: BNA_KC_Unit_Phase2_Base
     respawnLinkedItems[] =
     {
         "BNA_KC_Helmet_Phase2_Enlisted_CamoBrown", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
+class BNA_KC_Unit_Phase2_Enlisted_CamoGrey: BNA_KC_Unit_Phase2_Base
+{
+    displayName = "[KC] INF 01+ - Clone Trooper (Grey Camo)";
+
+    uniformClass = "BNA_KC_Uniform_Enlisted_CamoGrey";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Camo\Grey\BNA_KC_Uniform_Enlisted_CamoGrey_Upper.paa",
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Camo\Grey\BNA_KC_Uniform_Enlisted_CamoGrey_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Enlisted_CamoGrey", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Enlisted_CamoGrey", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };
 
@@ -464,6 +506,27 @@ class BNA_KC_Unit_Phase2_NCO_CamoBrown: BNA_KC_Unit_Phase2_Base
         "BNA_KC_Helmet_Phase2_NCO_CamoBrown", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };
+class BNA_KC_Unit_Phase2_NCO_CamoGrey: BNA_KC_Unit_Phase2_Base
+{
+    displayName = "[KC] INF 06+ - Clone NCO (Grey Camo)";
+
+    uniformClass = "BNA_KC_Uniform_NCO_CamoGrey";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Camo\Grey\BNA_KC_Uniform_NCO_CamoGrey_Upper.paa",
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Camo\Grey\BNA_KC_Uniform_NCO_CamoGrey_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_NCO_CamoGrey", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_NCO_CamoGrey", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
 
 class BNA_KC_Unit_Phase2_Officer_CamoBrown: BNA_KC_Unit_Phase2_Base
 {
@@ -484,5 +547,26 @@ class BNA_KC_Unit_Phase2_Officer_CamoBrown: BNA_KC_Unit_Phase2_Base
     respawnLinkedItems[] =
     {
         "BNA_KC_Helmet_Phase2_Officer_CamoBrown", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Chip", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+};
+class BNA_KC_Unit_Phase2_Officer_CamoGrey: BNA_KC_Unit_Phase2_Base
+{
+    displayName = "[KC] INF 12+ - Clone Officer (Grey Camo)";
+
+    uniformClass = "BNA_KC_Uniform_Officer_CamoGrey";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Camo\Grey\BNA_KC_Uniform_Officer_CamoGrey_Upper.paa",
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Camo\Grey\BNA_KC_Uniform_Officer_CamoGrey_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Officer_CamoGrey", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Chip", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Officer_CamoGrey", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Chip", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
     };
 };

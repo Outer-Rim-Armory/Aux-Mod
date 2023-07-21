@@ -52,9 +52,13 @@ class CfgPatches
 
             // Camo Phase 2 Units
             "BNA_KC_Unit_Phase1_Recruit_CamoBrown",
+            "BNA_KC_Unit_Phase1_Recruit_CamoGrey",
             "BNA_KC_Unit_Phase1_Enlisted_CamoBrown",
+            "BNA_KC_Unit_Phase1_Enlisted_CamoGrey",
             "BNA_KC_Unit_Phase1_NCO_CamoBrown",
+            "BNA_KC_Unit_Phase1_NCO_CamoGrey",
             "BNA_KC_Unit_Phase1_Officer_CamoBrown",
+            "BNA_KC_Unit_Phase1_Officer_CamoGrey",
 
             // Phase 2 Units
             "BNA_KC_Unit_Phase2_Base",
@@ -156,9 +160,13 @@ class CfgPatches
 
             // Camo Phase 2 Helmets
             "BNA_KC_Helmet_Phase2_Recruit_CamoBrown",
+            "BNA_KC_Helmet_Phase2_Recruit_CamoGrey",
             "BNA_KC_Helmet_Phase2_Enlisted_CamoBrown",
+            "BNA_KC_Helmet_Phase2_Enlisted_CamoGrey",
             "BNA_KC_Helmet_Phase2_NCO_CamoBrown",
+            "BNA_KC_Helmet_Phase2_NCO_CamoGrey",
             "BNA_KC_Helmet_Phase2_Officer_CamoBrown",
+            "BNA_KC_Helmet_Phase2_Officer_CamoGrey",
 
             // Engineer Helmets
             "BNA_KC_Helmet_Engineer_Base",
@@ -193,9 +201,13 @@ class CfgPatches
 
             // Camo Uniforms
             "BNA_KC_Uniform_Recruit_CamoBrown",
+            "BNA_KC_Uniform_Recruit_CamoGrey",
             "BNA_KC_Uniform_Enlisted_CamoBrown",
+            "BNA_KC_Uniform_Enlisted_CamoGrey",
             "BNA_KC_Uniform_NCO_CamoBrown",
+            "BNA_KC_Uniform_NCO_CamoGrey",
             "BNA_KC_Uniform_Officer_CamoBrown",
+            "BNA_KC_Uniform_Officer_CamoGrey",
 
             // Insualted (Snow) Uniforms
             "BNA_KC_Uniform_Insulated_Base",

@@ -168,6 +168,14 @@ class BNA_KC_Uniform_Recruit_CamoBrown: BNA_KC_Uniform_Base
         uniformClass = "BNA_KC_Unit_Phase2_Recruit_CamoBrown";
     };
 };
+class BNA_KC_Uniform_Recruit_CamoGrey: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor 00 (Recruit) - Grey Camo";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_Recruit_CamoGrey";
+    };
+};
 
 class BNA_KC_Uniform_Enlisted_CamoBrown: BNA_KC_Uniform_Base
 {
@@ -175,6 +183,14 @@ class BNA_KC_Uniform_Enlisted_CamoBrown: BNA_KC_Uniform_Base
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_Phase2_Enlisted_CamoBrown";
+    };
+};
+class BNA_KC_Uniform_Enlisted_CamoGrey: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor XX (Enlisted) - Grey Camo";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_Enlisted_CamoGrey";
     };
 };
 
@@ -186,6 +202,14 @@ class BNA_KC_Uniform_NCO_CamoBrown: BNA_KC_Uniform_Base
         uniformClass = "BNA_KC_Unit_Phase2_NCO_CamoBrown";
     };
 };
+class BNA_KC_Uniform_NCO_CamoGrey: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor 06+ (NCO) - Grey Camo";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_NCO_CamoGrey";
+    };
+};
 
 class BNA_KC_Uniform_Officer_CamoBrown: BNA_KC_Uniform_Base
 {
@@ -193,5 +217,13 @@ class BNA_KC_Uniform_Officer_CamoBrown: BNA_KC_Uniform_Base
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_Phase2_Officer_CamoBrown";
+    };
+};
+class BNA_KC_Uniform_Officer_CamoGrey: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor 12+ (Officer) - Grey Camo";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_Officer_CamoGrey";
     };
 };

@@ -182,6 +182,16 @@ class BNA_KC_Helmet_Phase1_Recruit_CamoBrown: BNA_KC_Helmet_Phase1_Base
         "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
 };
+class BNA_KC_Helmet_Phase1_Recruit_CamoGrey: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF P1 Helm 00 (Recruit) - Grey Camo";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Camo\Grey\BNA_KC_Helmet_P1_Recruit_CamoGrey.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
 
 class BNA_KC_Helmet_Phase1_Enlisted_CamoBrown: BNA_KC_Helmet_Phase1_Base
 {
@@ -189,6 +199,16 @@ class BNA_KC_Helmet_Phase1_Enlisted_CamoBrown: BNA_KC_Helmet_Phase1_Base
     hiddenSelectionsTextures[] =
     {
         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Camo\Brown\BNA_KC_Helmet_P1_Enlisted_CamoBrown.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+class BNA_KC_Helmet_Phase1_Enlisted_CamoGrey: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF P1 Helm 01+ (Enlisted) - Grey Camo";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Camo\Grey\BNA_KC_Helmet_P1_Enlisted_CamoGrey.paa",
         "ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
@@ -204,6 +224,16 @@ class BNA_KC_Helmet_Phase1_NCO_CamoBrown: BNA_KC_Helmet_Phase1_Base
         "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
 };
+class BNA_KC_Helmet_Phase1_NCO_CamoGrey: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF P1 Helm 06+ (NCO) - Grey Camo";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Camo\Grey\BNA_KC_Helmet_P1_NCO_CamoGrey.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
 
 class BNA_KC_Helmet_Phase1_Officer_CamoBrown: BNA_KC_Helmet_Phase1_Base
 {
@@ -211,6 +241,16 @@ class BNA_KC_Helmet_Phase1_Officer_CamoBrown: BNA_KC_Helmet_Phase1_Base
     hiddenSelectionsTextures[] =
     {
         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Camo\Brown\BNA_KC_Helmet_P1_Officer_CamoBrown.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+class BNA_KC_Helmet_Phase1_Officer_CamoGrey: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF P1 Helm 12+ (Officer) - Grey Camo";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Camo\Grey\BNA_KC_Helmet_P1_Officer_CamoGrey.paa",
         "ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
