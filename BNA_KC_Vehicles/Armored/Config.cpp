@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "CfgFunctions.hpp"
 
 
 class CfgVehicles
@@ -508,6 +509,10 @@ class CfgVehicles
 
         displayName = "[KC] OLV-20 APC";
 
+        BNA_KC_EMP_Radius_Droid = 25;
+        BNA_KC_EMP_Radius_Deka = 25;
+        BNA_KC_EMP_Radius_Vehicle = 25;
+
         hiddenSelectionsTextures[] = {};
         textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
 
@@ -582,6 +587,22 @@ class CfgVehicles
                 //     "200Rnd_127x99_mag_Tracer_Green",
                 //     "SmokeLauncherMag"
                 // };
+            };
+        };
+    
+        class UserActions
+        {
+            class ActivateEMP
+            {
+                displayName = "<t font='RobotoCondensedBold'>Activate EMP</t>";
+                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\iconLightning_ca.paa'>";
+                position = "pilotview";
+                radius = 100;
+                priority = 100;
+                hideOnUse = 1;
+
+                condition = "ls_player == currentPilot this and isEngineOn this;";
+                statement = "this call BNAKC_fnc_ActivateEMP;";
             };
         };
     };
