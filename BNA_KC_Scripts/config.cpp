@@ -54,6 +54,7 @@ class CfgFunctions
             file = "BNA_KC_Scripts\Data\Functions\Weapons";
             class SpecialAmmo{};
             class PlayDroidPopperSound{};
+            class KillDroids{};
             class TempDisableVehicles{};
             class DisableDekaShields{};
         };

@@ -44,21 +44,17 @@ _this spawn
             private _radiusVehicle = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeEMP_Radius_Vehicle", 5);
 
             // Units & Similar Objects
-            // Get all nearby objects and filter out non-droids
-            private _droidUnits = nearestObjects [_position, [], _radiusDroid] select { ((toLowerAnsi typeOf _x find "b1") > 0) };
+            // Get all nearby units
+            private _nearbyUnits = nearestObjects [_position, ["Man"], _radiusDroid];
 
             private _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];    // Droideka Shields
             private _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka]; // 3AS's Droidkas require extra work
 
             // Remove or kill objects
-            {
-                _x setDamage [1, true, _unit];
-                playSound3D
-                [
-                    selectRandom getArray (configFile >> "CfgJLTSDeathSounds" >> "DeathDroid" >> "emp"),
-                    _x
-                ];
-            } forEach _droidUnits; // Kill droid units
+            [_unit, _nearbyUnits] call BNAKC_fnc_KillDroids;
+            // Filters out non-b1 droid units,
+            // Kills them (gives kill credit to _unit)
+            // Plays JLTS droid death sound
 
             [_tasDekas, _shieldObjects] call BNAKC_fnc_DisableDekaShields;
 
