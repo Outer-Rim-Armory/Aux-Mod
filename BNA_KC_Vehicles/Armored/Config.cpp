@@ -509,14 +509,14 @@ class CfgVehicles
         displayName = "[KC] OLV-20 APC";
 
         hiddenSelectionsTextures[] = {};
-        textureList[] = {"KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0};
+        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
 
         class TextureSources
         {
-            class KeeliCompany
+            class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
-                displayName = "Keeli Company";
+                displayName = "Keeli Company Camo";
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
@@ -527,7 +527,7 @@ class CfgVehicles
                     ""  // Cage Texture
                 };
             };          
-            class BrownCamo: KeeliCompany
+            class CamoBrown: CamoKC
             {
                 displayName = "Brown Camo";
                 textures[] =
@@ -539,7 +539,7 @@ class CfgVehicles
                     ""  // Cage Texture
                 };
             };
-            class GreyCamo: KeeliCompany
+            class CamoGrey: CamoKC
             {
                 displayName = "Grey Camo";
                 textures[] =
