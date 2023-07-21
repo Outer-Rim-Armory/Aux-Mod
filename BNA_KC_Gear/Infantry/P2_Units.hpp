@@ -402,6 +402,7 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_Recruit_CamoBrown: BNA_KC_Unit_Phase2_Base
 {
     displayName = "[KC] INF 00 - Clone Recruit (Brown Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Recruit_CamoBrown";
     hiddenSelectionsTextures[] =
@@ -423,6 +424,7 @@ class BNA_KC_Unit_Phase2_Recruit_CamoBrown: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_Recruit_CamoGrey: BNA_KC_Unit_Phase2_Base
 {
     displayName = "[KC] INF 00 - Clone Recruit (Grey Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Recruit_CamoGrey";
     hiddenSelectionsTextures[] =
@@ -445,6 +447,7 @@ class BNA_KC_Unit_Phase2_Recruit_CamoGrey: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_Enlisted_CamoBrown: BNA_KC_Unit_Phase2_Base
 {
     displayName = "[KC] INF 01+ - Clone Trooper (Brown Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Enlisted_CamoBrown";
     hiddenSelectionsTextures[] =
@@ -466,6 +469,7 @@ class BNA_KC_Unit_Phase2_Enlisted_CamoBrown: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_Enlisted_CamoGrey: BNA_KC_Unit_Phase2_Base
 {
     displayName = "[KC] INF 01+ - Clone Trooper (Grey Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Enlisted_CamoGrey";
     hiddenSelectionsTextures[] =
@@ -488,6 +492,7 @@ class BNA_KC_Unit_Phase2_Enlisted_CamoGrey: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_NCO_CamoBrown: BNA_KC_Unit_Phase2_Base
 {
     displayName = "[KC] INF 06+ - Clone NCO (Brown Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_NCO_CamoBrown";
     hiddenSelectionsTextures[] =
@@ -509,6 +514,7 @@ class BNA_KC_Unit_Phase2_NCO_CamoBrown: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_NCO_CamoGrey: BNA_KC_Unit_Phase2_Base
 {
     displayName = "[KC] INF 06+ - Clone NCO (Grey Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_NCO_CamoGrey";
     hiddenSelectionsTextures[] =
@@ -531,6 +537,7 @@ class BNA_KC_Unit_Phase2_NCO_CamoGrey: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_Officer_CamoBrown: BNA_KC_Unit_Phase2_Base
 {
     displayName = "[KC] INF 12+ - Clone Officer (Brown Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Officer_CamoBrown";
     hiddenSelectionsTextures[] =
@@ -552,6 +559,7 @@ class BNA_KC_Unit_Phase2_Officer_CamoBrown: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_Officer_CamoGrey: BNA_KC_Unit_Phase2_Base
 {
     displayName = "[KC] INF 12+ - Clone Officer (Grey Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Officer_CamoGrey";
     hiddenSelectionsTextures[] =

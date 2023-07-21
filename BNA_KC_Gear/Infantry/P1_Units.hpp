@@ -280,6 +280,7 @@ class BNA_KC_Unit_Phase1_CSM: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_Recruit_CamoBrown: BNA_KC_Unit_Phase1_Base
 {
     displayName = "[KC] INF 00 - Clone Recruit (Brown Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Recruit_CamoBrown";
 
@@ -295,6 +296,7 @@ class BNA_KC_Unit_Phase1_Recruit_CamoBrown: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_Recruit_CamoGrey: BNA_KC_Unit_Phase1_Base
 {
     displayName = "[KC] INF 00 - Clone Recruit (Grey Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Recruit_CamoGrey";
 
@@ -311,6 +313,7 @@ class BNA_KC_Unit_Phase1_Recruit_CamoGrey: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_Enlisted_CamoBrown: BNA_KC_Unit_Phase1_Base
 {
     displayName = "[KC] INF 01+ - Clone Trooper (Brown Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Enlisted_CamoBrown";
 
@@ -326,6 +329,7 @@ class BNA_KC_Unit_Phase1_Enlisted_CamoBrown: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_Enlisted_CamoGrey: BNA_KC_Unit_Phase1_Base
 {
     displayName = "[KC] INF 01+ - Clone Trooper (Grey Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Enlisted_CamoGrey";
 
@@ -342,6 +346,7 @@ class BNA_KC_Unit_Phase1_Enlisted_CamoGrey: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_NCO_CamoBrown: BNA_KC_Unit_Phase1_Base
 {
     displayName = "[KC] INF 06+ - Clone NCO (Brown Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_NCO_CamoBrown";
 
@@ -357,6 +362,7 @@ class BNA_KC_Unit_Phase1_NCO_CamoBrown: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_NCO_CamoGrey: BNA_KC_Unit_Phase1_Base
 {
     displayName = "[KC] INF 06+ - Clone NCO (Grey Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_NCO_CamoGrey";
 
@@ -373,6 +379,7 @@ class BNA_KC_Unit_Phase1_NCO_CamoGrey: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_Officer_CamoBrown: BNA_KC_Unit_Phase1_Base
 {
     displayName = "[KC] INF 12+ - Clone Officer (Brown Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Officer_CamoBrown";
 
@@ -388,6 +395,7 @@ class BNA_KC_Unit_Phase1_Officer_CamoBrown: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_Officer_CamoGrey: BNA_KC_Unit_Phase1_Base
 {
     displayName = "[KC] INF 12+ - Clone Officer (Grey Camo)";
+    editorSubcategory = "BNA_KC_INF_Camo";
 
     uniformClass = "BNA_KC_Uniform_Officer_CamoGrey";
 
