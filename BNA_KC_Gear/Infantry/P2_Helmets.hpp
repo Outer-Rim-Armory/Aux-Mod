@@ -208,3 +208,44 @@ class BNA_KC_Helmet_Phase2_Officer: BNA_KC_Helmet_Phase2_Base
 //         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 //     };
 // };
+
+// Camo Helmets
+class BNA_KC_Helmet_Phase2_Recruit_CamoBrown: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF P2 Helm 00 (Recruit) - Brown Camo";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Camo\Brown\BNA_KC_Helmet_P2_Recruit_CamoBrown.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_Enlisted_CamoBrown: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF P2 Helm 01+ (Enlisted) - Brown Camo";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Camo\Brown\BNA_KC_Helmet_P1_Enlisted_CamoBrown.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_NCO_CamoBrown: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF P2 Helm 06+ (NCO) - Brown Camo";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Camo\Brown\BNA_KC_Helmet_P1_NCO_CamoBrown.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_Officer_CamoBrown: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF P2 Helm 12+ (Officer) - Brown Camo";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Camo\Brown\BNA_KC_Helmet_P1_Officer_CamoBrown.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
