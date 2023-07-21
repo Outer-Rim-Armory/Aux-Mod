@@ -652,7 +652,7 @@ class BNA_KC_Helmet_Phase2_Keeli_CamoBrown: BNA_KC_Helmet_Phase2_Base
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
     };
 };
-class BNA_KC_Helmet_Phase2_Keeli_CamoBrown_Crimson: BNA_KC_Helmet_Phase2_Keeli
+class BNA_KC_Helmet_Phase2_Keeli_CamoBrown_Crimson: BNA_KC_Helmet_Phase2_Keeli_CamoBrown
 {
     // Scopes
     scope = 1;
@@ -684,7 +684,7 @@ class BNA_KC_Helmet_Phase2_Keeli_CamoGrey: BNA_KC_Helmet_Phase2_Base
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
     };
 };
-class BNA_KC_Helmet_Phase2_Keeli_CamoGrey_Crimson: BNA_KC_Helmet_Phase2_Keeli
+class BNA_KC_Helmet_Phase2_Keeli_CamoGrey_Crimson: BNA_KC_Helmet_Phase2_Keeli_CamoGrey
 {
     // Scopes
     scope = 1;
