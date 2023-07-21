@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "CfgFunctions.hpp"
 
 
 class Mode_SemiAuto;
