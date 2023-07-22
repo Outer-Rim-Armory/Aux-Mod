@@ -13,3 +13,13 @@ class CfgFunctions
         };
     };
 };
+
+
+
+class Extended_PostInit_EventHandlers
+{
+    class BNA_KC_Scripts_SpecialAmmo
+    {
+        init = "['ace_firedPlayer'] call BNAKC_fnc_SpecialAmmo; ['ace_firedPlayerVehicle'] call BNAKC_fnc_SpecialAmmo;";
+    };
+};
