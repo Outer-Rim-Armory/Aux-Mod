@@ -149,6 +149,8 @@ class CfgPatches
             "BNA_KC_Uniform_Insulated_Keeli",
 
             // Vests
+            "BNA_KC_Vest_Officer_Keeli",
+            "BNA_KC_Vest_Officer_Ponds",
             "BNA_KC_Vest_Officer_Rat",
 
             // NVGs
