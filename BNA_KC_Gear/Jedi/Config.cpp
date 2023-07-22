@@ -89,11 +89,11 @@ class CfgVehicles
         uniformClass = "BNA_KC_Uniform_Jedi_Commander";
         linkedItems[] =
         {
-            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         backpack = "";
     };
