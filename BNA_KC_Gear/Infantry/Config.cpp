@@ -8,75 +8,131 @@ class CfgWeapons
     // │      Helmets      │
     // └───────────────────┘
     class ls_gar_phase1_helmet;
-    class ls_gar_phase2_helmet;
-    class ls_gar_engineer_helmet;
-    class lsd_gar_airborne_helmet;
-    class ls_gar_phase2insulated_helmet;
+    class ItemInfo;
 
-    class BNA_KC_Helmet_Phase1_Base: ls_gar_phase1_helmet
+    class ls_blueforHelmet_base;
+    class ls_gar_phase1_helmet: ls_blueforHelmet_base
+    {
+        class ItemInfo;
+    };
+    class BNA_KC_Helmet_Base: ls_gar_phase1_helmet
     {
         // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
         // Scope
+        scope = 0;
+        scopeArsenal = 0;
+
+        class ItemInfo: ItemInfo {};
+    };
+
+    class BNA_KC_Helmet_Phase1_Base: BNA_KC_Helmet_Base
+    {
+        // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] INF P1 Helm (Base)";
+
+        model = "ls_armor_bluefor\helmet\gar\phase1\ls_gar_phase1_helmet.p3d";
+        hiddenSelections[] = { "camo1", "visor", "illum" };
+        hiddenSelectionsTextures[] =
+        {
+            "ls_armor_bluefor\helmet\gar\phase1\data\helmet_P1_co.paa",
+            "ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+            "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+        };
+        picture = "ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1", "visor", "illum" };
+            uniformModel = "ls_armor_bluefor\helmet\gar\phase1\ls_gar_phase1_helmet.p3d";
+        };
     };
 
-    class BNA_KC_Helmet_Phase2_Base: ls_gar_phase2_helmet
+    class BNA_KC_Helmet_Phase2_Base: BNA_KC_Helmet_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC] INF Helm (Base)";
+        displayName = "[KC] INF P2 Helm (Base)";
+
+        model = "ls_armor_bluefor\helmet\gar\phase2\ls_gar_phase2_helmet.p3d";
+        hiddenSelections[] = { "camo1", "visor" };
+        hiddenSelectionsTextures[] =
+        {
+            "ls_armor_bluefor\helmet\gar\phase2\data\helmet_co.paa",
+            "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+        };
+        picture = "ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1", "visor" };
+            uniformModel = "ls_armor_bluefor\helmet\gar\phase2\ls_gar_phase2_helmet.p3d";
+        };
     };
 
-    class BNA_KC_Helmet_Engineer_Base: ls_gar_engineer_helmet
+    class BNA_KC_Helmet_Engineer_Base: BNA_KC_Helmet_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] ENG Helm (Base)";
 
+        model = "ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
+        hiddenSelections[] = { "camo1", "illum", "visor" };
+        hiddenSelectionsMaterials[] = { "", "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat", "" };
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Helmets\Engineer\BNA_KC_Helmet_Engineer.paa",
             "ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
             "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
         };
+        picture = "ls_armor_bluefor\helmet\_ui\icon_gar_engineer_helmet_ca.paa";
+
+        // LS Headlamp
+        ls_lighting_hasLight = 1;
+        ls_lighting_itemType = "headgear";
+        ls_lighting_attachedBone = "head";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1", "illum", "visor" };
+            uniformModel = "ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
+        };
     };
 
-    class BNA_KC_Helmet_Airborne_Base: lsd_gar_airborne_helmet
+    class BNA_KC_Helmet_Airborne_Base: BNA_KC_Helmet_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] AB Helm (Trooper)";
+
+        model = "lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
+        hiddenSelections[] = { "camo1", "visor" };
+        hiddenSelectionsMaterials[] =
+        {
+            "lsd_armor_bluefor\helmet\gar\airborne\data\helmet.rvmat",
+            "lsd_armor_bluefor\helmet\gar\airborne\data\visor.rvmat"
+        };
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Helmets\Airborne\BNA_KC_Helmet_Airborne.paa"
+        };
+        picture = "SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1", "visor" };
+            uniformModel = "lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
         };
     };
 
@@ -89,21 +145,26 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Helmet_Insulated_Base: ls_gar_phase2insulated_helmet
+    class BNA_KC_Helmet_Insulated_Base: BNA_KC_Helmet_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] INF Snow Helm (Trooper)";
+
+        model = "ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
+        hiddenSelections[] = { "Camo1" };
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Helmets\Insulated\BNA_KC_Helmet_Insulated.paa"
+        };
+        picture = "ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa"; // Replace with Insulated picture when made
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "Camo1" };
+            uniformModel = "ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
         };
     };
 
