@@ -49,15 +49,6 @@ class CfgFunctions
 			class FortificationsPostInit{};
             class RegisterPreset{};
 		};
-        class Weapons
-        {
-            file = "BNA_KC_Scripts\Data\Functions\Weapons";
-            class SpecialAmmo{};
-            class PlayDroidPopperSound{};
-            class KillDroids{};
-            class TempDisableVehicles{};
-            class DisableDekaShields{};
-        };
         class Map
         {
             file = "BNA_KC_Scripts\Data\Functions\Map";
