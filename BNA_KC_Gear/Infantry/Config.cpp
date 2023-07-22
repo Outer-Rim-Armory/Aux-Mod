@@ -596,8 +596,6 @@ class CfgVehicles
     // │     Backpacks     │
     // └───────────────────┘
     class SWLB_clone_backpack;
-    class SWLB_clone_backpack_RTO;
-    class SWLB_clone_RTO_mini_backpack;
 
     class BNA_KC_Backpack: SWLB_clone_backpack
     {
@@ -668,19 +666,8 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Backpack_Radio: SWLB_clone_backpack_RTO
+    class BNA_KC_Backpack_Radio: BNA_KC_Backpack
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-
-        maximumLoad = 400;
-
         displayName = "[KC] Clone Trooper Radio Backpack";
 
         picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Radio_UI.paa";
@@ -692,21 +679,22 @@ class CfgVehicles
             "",                                                        // Medic
             "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa" // RTO
         };
+
+        // TFAR Long Range
+        tf_hasLRradio = 1;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
     };
-    class BNA_KC_Backpack_Radio_Mini: SWLB_clone_RTO_mini_backpack
-    {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
-        maximumLoad = 400;
-        
+    class BNA_KC_Backpack_Radio_Mini: BNA_KC_Backpack_Radio
+    {        
         displayName = "[KC] Clone Commander Radio Backpack";
 
+        model = "SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
+        hiddenSelections[] = { "main", "accumulator" };
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Radio_Mini.paa",
