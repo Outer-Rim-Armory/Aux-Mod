@@ -14,6 +14,8 @@ class CfgVehicles
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsTextures[] = { "MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa" };
         picture = "MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
+
+        BNA_KC_Jet_IsJetpack = 1;
     };
 
     class BNA_KC_Backpack_Radio;
@@ -25,5 +27,7 @@ class CfgVehicles
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsTextures[] = { "MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_mc_co.paa" };
         picture = "MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
+
+        BNA_KC_Jet_IsJetpack = 1;
     };
 };

@@ -7,6 +7,9 @@ class CfgFunctions
             file = "BNA_KC_Gear\Jetpacks\Data\Functions";
             class JetKeybinds {};
             class JetSettings {};
+
+            class JetHasJetpack {};
+            class JetCanUseJetpack {};
         };
     };
 };
