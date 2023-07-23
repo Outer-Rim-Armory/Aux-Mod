@@ -279,8 +279,8 @@ class CfgVehicles
     // ┌───────────────────┐
     // │     Backpacks     │
     // └───────────────────┘
-    class BNA_KC_Backpack;
-    class BNA_KC_Backpack_ARC: BNA_KC_Backpack
+    class BNA_KC_Backpack_Radio;
+    class BNA_KC_Backpack_ARC: BNA_KC_Backpack_Radio
     {
         displayName = "[KC] ARC Trooper Backpack";
 
