@@ -314,9 +314,9 @@ class BNA_KC_Unit_Stone: BNA_KC_Unit_Phase2_Base
 // ┌───────────────────┐
 // │    Snow  Units    │
 // └───────────────────┘
-class BNA_KC_Unit_Insulated_Base;
+class BNA_KC_Unit_Insulated_Trooper;
 
-class BNA_KC_Unit_Insulated_Dexus: BNA_KC_Unit_Insulated_Base
+class BNA_KC_Unit_Insulated_Dexus: BNA_KC_Unit_Insulated_Trooper
 {
 	// Editor Attributes
 	editorSubcategory = "BNA_KC_Customs";
@@ -341,7 +341,7 @@ class BNA_KC_Unit_Insulated_Dexus: BNA_KC_Unit_Insulated_Base
     };
 };
 
-class BNA_KC_Unit_Insulated_Joe: BNA_KC_Unit_Insulated_Base
+class BNA_KC_Unit_Insulated_Joe: BNA_KC_Unit_Insulated_Trooper
 {
 	// Editor Attributes
 	editorSubcategory = "BNA_KC_Customs";
@@ -366,7 +366,7 @@ class BNA_KC_Unit_Insulated_Joe: BNA_KC_Unit_Insulated_Base
     };
 };
 
-class BNA_KC_Unit_Insulated_Keeli: BNA_KC_Unit_Insulated_Base
+class BNA_KC_Unit_Insulated_Keeli: BNA_KC_Unit_Insulated_Trooper
 {
 	// Editor Attributes
 	editorSubcategory = "BNA_KC_Customs";

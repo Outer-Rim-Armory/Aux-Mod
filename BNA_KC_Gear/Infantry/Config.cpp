@@ -174,9 +174,11 @@ class CfgWeapons
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
-    class ls_gar_phase2_uniform;           // Uniform Base Class
-    class lsd_gar_phase2insulated_uniform; // Insulated Uniform
-    class UniformItem;                     // Meta Class
+    class ls_blueforUniform_base;
+    class ls_gar_phase2_uniform: ls_blueforUniform_base
+    {
+        class ItemInfo;
+    };
 
     class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
     {
@@ -185,41 +187,28 @@ class CfgWeapons
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeArsenal = 1;
 
         displayName = "[KC] INF Armor (Base)";
 
-        class ItemInfo: UniformItem
+        class ItemInfo: ItemInfo
         {
-            uniformModel = "-";
             uniformClass = "BNA_KC_Unit_Phase1_Base";
-            containerClass = "Supply150"; // Uniform's storage
-            mass = 40;
-            uniformType = "Neopren";      // Makes the uniform swimwear
+            uniformType = "Neopren";
         };
     };
 
-    class BNA_KC_Uniform_Insulated_Base: lsd_gar_phase2insulated_uniform
+    class BNA_KC_Uniform_Insulated: BNA_KC_Uniform_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] INF Snow Armor (Trooper)";
-        class ItemInfo: UniformItem
+        class ItemInfo: ItemInfo
         {
-            uniformModel = "-";
-            uniformClass = "BNA_KC_Unit_Insulated_Base";
-            containerClass = "Supply150"; // Uniform's storage
-            mass = 40;
-            uniformType = "Neopren";      // Makes the uniform swimwear
+            uniformClass = "BNA_KC_Unit_Insulated_Trooper";
         };
     };
 
@@ -414,32 +403,21 @@ class CfgVehicles
     class lsd_gar_trooper_phase1;
     class lsd_gar_phase2Insulated_base;
 
-    class BNA_KC_Unit_Phase1_Base: lsd_gar_trooper_phase1
+    class BNA_KC_Unit_Base: lsd_gar_trooper_phase1
     {
         // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
 
-        // Editor Attributes
+        // Editor Properties
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_INF_P1";
-        editorPreview = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Preview_Trooper_P1.paa";
 
         displayName = "[KC] INF Trooper (Base)"
-
         uniformClass = "BNA_KC_Uniform_Base";
-        // Uniform textures would be applied here ; default textures listed
-        hiddenSelectionsTextures[] =
-        {
-            "ls_armor_bluefor\uniform\gar\phase2\data\camo1_co.paa",
-            "ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
-            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa" 
-        };
 
         // Inventory
         weapons[] =
@@ -526,10 +504,39 @@ class CfgVehicles
         backpack = "";
     };
 
-    class BNA_KC_Unit_Phase2_Base: BNA_KC_Unit_Phase1_Base
+    class BNA_KC_Unit_Phase1_Base: BNA_KC_Unit_Base
     {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Properties
+        editorSubcategory = "BNA_KC_INF_P1";
+        editorPreview = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Preview_Trooper_P1.paa";
+
+        displayName = "[KC] INF P1 Trooper (Base)"
+
+        uniformClass = "BNA_KC_Uniform_Base";
+    };
+
+    class BNA_KC_Unit_Phase2_Base: BNA_KC_Unit_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Properties
         editorSubcategory = "BNA_KC_INF_P2";
         editorPreview = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Preview_Trooper_P2.paa";
+
+        // Uniform textures would be applied here ; default textures listed
+        uniformClass = "BNA_KC_Uniform_Base";
+        hiddenSelectionsTextures[] =
+        {
+            "ls_armor_bluefor\uniform\gar\phase2\data\camo1_co.paa",
+            "ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa" 
+        };
 
         linkedItems[] =
         {
@@ -541,24 +548,17 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Unit_Insulated_Base: lsd_gar_phase2Insulated_base
+    class BNA_KC_Unit_Insulated_Trooper: BNA_KC_Unit_Phase2_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-
-        // Editor Attributes
-        faction = "BNA_KC_Faction";
+        // Editor Properties
         editorSubcategory = "BNA_KC_INF_Snow";
 
         displayName = "[KC] INF Snow - Trooper";
 
-        uniformClass = "BNA_KC_Uniform_Insulated_Base";
+        // Uniform Model & Textures
+        uniformClass = "BNA_KC_Uniform_Insulated";
+        model = "lsd_armor_bluefor\uniform\gar\phase2Insulated\lsd_gar_phase2Insulated_uniform.p3d";
+        hiddenSelections[] = { "_upper", "_lower", "_undersuit" };
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Uniforms\Insulated\BNA_KC_Uniform_Insulated_Upper.paa",
@@ -567,79 +567,6 @@ class CfgVehicles
         };
 
         // Inventory
-        weapons[] =
-        {
-            "BNA_KC_DC15S",
-            "BNA_KC_DC17",
-            "SWLB_clone_binocular",
-            "Throw",               // Allows the unit to throw grenades
-            "Put"                  // Allows the unit to place explosives
-        };
-        respawnWeapons[] =
-        {
-            "BNA_KC_DC15S",
-            "BNA_KC_DC17",
-            "SWLB_clone_binocular",
-            "Throw",
-            "Put"
-        };
-        magazines[] =
-        {
-            // Ammo
-            ITEM_11("12thFleet_Mag_DC15S"),
-            // Stun rounds would go here
-            ITEM_2("12thFleet_Mag_DC17"),
-            // Stun rounds would go here
-            // Grenades
-            ITEM_2("ls_mag_classC_thermalDet"),
-            ITEM_3("ShieldGrenade_Mag"),
-            // Smokes
-            ITEM_3("3AS_SmokeWhite"),
-            ITEM_3("3AS_SmokeBlue"),
-            ITEM_3("3AS_SmokeGreen"),
-        };
-        respawnMagazines[] =
-        {
-            // Ammo
-            ITEM_11("12thFleet_Mag_DC15S"),
-            // Stun rounds would go here
-            ITEM_2("12thFleet_Mag_DC17"),
-            // Stun rounds would go here
-            // Grenades
-            ITEM_2("ls_mag_classC_thermalDet"),
-            ITEM_3("ShieldGrenade_Mag"),
-            // Smokes
-            ITEM_3("3AS_SmokeWhite"),
-            ITEM_3("3AS_SmokeBlue"),
-            ITEM_3("3AS_SmokeGreen"),
-        };
-        items[] =
-        {
-            // Medical
-            ITEM_10("ACE_elasticBandage"),
-            ITEM_4("ACE_tourniquet"),
-            // Other
-            ITEM_3("ACE_CableTie"),
-            "ACE_EntrenchingTool",
-            "ItemcTabHCam",
-            "ACE_IR_Strobe_Item",
-            "ACE_Flashlight_XL50",
-            "ACE_MapTools"
-        };
-        respawnItems[] =
-        {
-            // Medical
-            ITEM_10("ACE_elasticBandage"),
-            ITEM_4("ACE_tourniquet"),
-            // Other
-            ITEM_3("ACE_CableTie"),
-            "ACE_EntrenchingTool",
-            "ItemcTabHCam",
-            "ACE_IR_Strobe_Item",
-            "ACE_Flashlight_XL50",
-            "ACE_MapTools"
-        };
-
         linkedItems[] =
         {
             "BNA_KC_Helmet_Insulated_Base", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"

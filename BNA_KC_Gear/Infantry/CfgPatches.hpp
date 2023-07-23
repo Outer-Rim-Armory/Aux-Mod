@@ -92,7 +92,7 @@ class CfgPatches
             // Airborne Units
 
             // Insulated (Snow) Units
-            "BNA_KC_Unit_Insulated",
+            "BNA_KC_Unit_Insulated_Trooper",
 
             // Backpacks
             "BNA_KC_Backpack",
@@ -210,7 +210,7 @@ class CfgPatches
             "BNA_KC_Uniform_Officer_CamoGrey",
 
             // Insualted (Snow) Uniforms
-            "BNA_KC_Uniform_Insulated_Base",
+            "BNA_KC_Uniform_Insulated",
 
             // Vests
             "BNA_KC_Vest_Officer",
