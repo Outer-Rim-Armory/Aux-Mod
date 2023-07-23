@@ -34,10 +34,10 @@ class CfgPatches
         weapons[] =
         {
             // Helmets
-            "BNA_KC_Helmet_ARC_Base",
+            "BNA_KC_Helmet_ARC",
             "BNA_KC_Helmet_ARC_Night",
-            "BNA_KC_Helmet_ARF_Base",
-            "BNA_KC_Helmet_BARC_Base",
+            "BNA_KC_Helmet_ARF",
+            "BNA_KC_Helmet_BARC",
             
             // Uniforms
             "BNA_KC_Uniform_ARC",

@@ -7,9 +7,7 @@ class CfgWeapons
     // ┌───────────────────┐
     // │      Helmets      │
     // └───────────────────┘
-    class ls_gar_phase1_helmet;
     class ItemInfo;
-
     class ls_blueforHelmet_base;
     class ls_gar_phase2_helmet: ls_blueforHelmet_base
     {
@@ -77,7 +75,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Helmet_Engineer_Base: BNA_KC_Helmet_Base
+    class BNA_KC_Helmet_Engineer: BNA_KC_Helmet_Base
     {
         // Scope
         scope = 2;
@@ -108,7 +106,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Helmet_Airborne_Base: BNA_KC_Helmet_Base
+    class BNA_KC_Helmet_Airborne: BNA_KC_Helmet_Base
     {
         // Scope
         scope = 2;
@@ -136,7 +134,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Helmet_Airborne_v2: BNA_KC_Helmet_Airborne_Base
+    class BNA_KC_Helmet_Airborne_v2: BNA_KC_Helmet_Airborne
     {
         displayName = "[KC] AB Helm (Trooper, Version 2)";
         hiddenSelectionsTextures[] =
@@ -145,7 +143,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Helmet_Insulated_Base: BNA_KC_Helmet_Base
+    class BNA_KC_Helmet_Insulated: BNA_KC_Helmet_Base
     {
         // Scope
         scope = 2;
@@ -187,8 +185,8 @@ class CfgWeapons
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 0;
-        scopeArsenal = 1;
+        scope = 2;
+        scopeArsenal = 2;
 
         displayName = "[KC] INF Armor (Base)";
 
@@ -569,11 +567,11 @@ class CfgVehicles
         // Inventory
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Insulated_Base", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Insulated", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Insulated_Base", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Insulated", "lsd_gar_clone_vest", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
     };
 

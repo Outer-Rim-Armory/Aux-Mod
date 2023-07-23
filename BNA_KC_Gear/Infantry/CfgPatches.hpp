@@ -169,14 +169,14 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Officer_CamoGrey",
 
             // Engineer Helmets
-            "BNA_KC_Helmet_Engineer_Base",
+            "BNA_KC_Helmet_Engineer",
 
             // Airborne
             "BNA_KC_Helmet_Airborne",
             "BNA_KC_Helmet_Airborne_v2",
 
             // Insulated (Snow) Helmets
-            "BNA_KC_Helmet_Insulated_Base",
+            "BNA_KC_Helmet_Insulated",
 
             // Uniforms
             "BNA_KC_Uniform_Base",

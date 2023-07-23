@@ -5,29 +5,35 @@ class CfgWeapons
     // ┌───────────────────┐
     // │      Helmets      │
     // └───────────────────┘
-    class lsd_gar_arc_helmet;
-    class ls_gar_phase1Arf_helmet;
-    class ls_gar_barc_helmet;
-
-    class BNA_KC_Helmet_ARC_Base: lsd_gar_arc_helmet
+    class ls_gar_phase2_helmet;
+    class BNA_KC_Helmet_Base: ls_gar_phase2_helmet
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
+        class ItemInfo;
+    };
+    class BNA_KC_Helmet_ARC: BNA_KC_Helmet_Base
+    {
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] SF ARC Helm";
+
+        model = "lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
+        hiddenSelections[] = { "camo1", "visor", "illum" };
         hiddenSelectionsTextures[] = 
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC.paa",
             "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
         };
+        picture = "lsd_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1", "visor", "illum" };
+            uniformModel = "lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
+        };
     };
-    class BNA_KC_Helmet_ARC_Night: BNA_KC_Helmet_ARC_Base
+    class BNA_KC_Helmet_ARC_Night: BNA_KC_Helmet_ARC
     {
         displayName = "[KC] SF ARC Helm (Night)";
         hiddenSelectionsTextures[] = 
@@ -37,42 +43,54 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Helmet_ARF_Base: ls_gar_phase1Arf_helmet
+    class BNA_KC_Helmet_ARF: BNA_KC_Helmet_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] SF ARF Helm";
+
+        model = "ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+        hiddenSelections[] = { "camo1", "camo2", "visor" };
         hiddenSelectionsTextures[] = 
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARF.paa",
             "",
             "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
         };
+        picture = "SWLB_clones\data\ui\icon_SWLB_clone_helmet_arf_p1_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1", "camo2", "visor" };
+            uniformModel = "ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+        };
+
+        subItems[] = { "Integrated_NVG_TI_1_F" };
     };
 
-    class BNA_KC_Helmet_BARC_Base: ls_gar_barc_helmet
+    class BNA_KC_Helmet_BARC: BNA_KC_Helmet_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] SF BARC Helm";
+
+        model = "ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
+        hiddenSelections[] = { "camo1", "visor" };
         hiddenSelectionsTextures[] = 
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_BARC.paa",
             "ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
+        };
+        picture = "SWLB_clones\data\ui\icon_SWLB_clone_helmet_barc_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1", "visor" };
+            uniformModel = "ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
         };
     };
 
@@ -123,7 +141,6 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] SF ARC Vest";
@@ -176,14 +193,11 @@ class CfgVehicles
     // ┌───────────────────┐
     // │       Units       │
     // └───────────────────┘
-    class BNA_KC_Unit_Phase1_Base;
-
-    class BNA_KC_Unit_ARC: BNA_KC_Unit_Phase1_Base
+    class BNA_KC_Unit_Phase2_Base;
+    class BNA_KC_Unit_ARC: BNA_KC_Unit_Phase2_Base
     {
-        editorSubcategory = "BNA_KC_SF";
-        // editorPreview = "BNA_KC_Gear\SpecialForces\Data\UI\BNA_KC_Preview_ARC";
-
         displayName = "[KC] SF ARC Trooper";
+        editorSubcategory = "BNA_KC_SF";
 
         uniformClass = "BNA_KC_Uniform_ARC";
         hiddenSelectionsTextures[] =
@@ -193,18 +207,13 @@ class CfgVehicles
             "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
 
-        // Unit Properties
-        // canDeactivateMines = true;  // Explosives Specialist
-        // attendant = 1;              // Medic
-
-        // Loadout
         linkedItems[] =
         {
-            "BNA_KC_Helmet_ARC_Base", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_ARC", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_ARC_Base", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_ARC", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         backpack = "BNA_KC_Backpack_ARC";
     };
@@ -231,48 +240,38 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Unit_ARF: BNA_KC_Unit_Phase1_Base
+    class BNA_KC_Unit_ARF: BNA_KC_Unit_Phase2_Base
     {
-        editorSubcategory = "BNA_KC_SF";
-        // editorPreview = "BNA_KC_Gear\SpecialForces\Data\UI\BNA_KC_Preview_ARF";
-
         displayName = "[KC] SF ARF Trooper";
+        editorSubcategory = "BNA_KC_SF";
 
         uniformClass = "BNA_KC_Uniform_CT";
 
-        // Unit Properties
-        // canDeactivateMines = true;  // Explosives Specialist
-        // attendant = 1;              // Medic
-
-        // Loadout
         linkedItems[] =
         {
-            "BNA_KC_Helmet_ARF_Base", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_basic_armor"
+            "BNA_KC_Helmet_ARF", "SWLB_clone_basic_armor", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_ARF_Base", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_basic_armor"
+            "BNA_KC_Helmet_ARF", "SWLB_clone_basic_armor", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         backpack = "BNA_KC_Backpack";
     };
 
-    class BNA_KC_Unit_BARC: BNA_KC_Unit_Phase1_Base
+    class BNA_KC_Unit_BARC: BNA_KC_Unit_Phase2_Base
     {
-        editorSubcategory = "BNA_KC_SF";
-        // editorPreview = "BNA_KC_Gear\SpecialForces\Data\UI\BNA_KC_Preview_BARC";
-
         displayName = "[KC] SF BARC Trooper";
+        editorSubcategory = "BNA_KC_SF";
 
         uniformClass = "BNA_KC_Uniform_CT";
 
-        // Loadout
         linkedItems[] =
         {
-            "BNA_KC_Helmet_BARC_Base", "BNA_KC_NVG_Visor", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_recon_armor"
+            "BNA_KC_Helmet_BARC", "SWLB_clone_recon_armor", "BNA_KC_NVG_Visor", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_BARC_Base", "BNA_KC_NVG_Visor", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud", "SWLB_clone_recon_armor"
+            "BNA_KC_Helmet_BARC", "SWLB_clone_recon_armor", "BNA_KC_NVG_Visor", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         backpack = "BNA_KC_Backpack";
     };
@@ -280,21 +279,18 @@ class CfgVehicles
     // ┌───────────────────┐
     // │     Backpacks     │
     // └───────────────────┘
-    class SWLB_clone_arc_backpack;
-
-    class BNA_KC_Backpack_ARC: SWLB_clone_arc_backpack
+    class BNA_KC_Backpack;
+    class BNA_KC_Backpack_ARC: BNA_KC_Backpack
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-
         displayName = "[KC] ARC Trooper Backpack";
-        maximumLoad = 400;
+
+        model = "SWLB_equipment\backpacks\SWLB_clone_arc_backpack.p3d";
+        hiddenSelections[] = { "camo1" };
+        hiddenSelectionsTextures[] =
+        {
+            "SWLB_equipment\backpacks\data\SWLB_clone_arc_backpack_co.paa"
+        };
+        picture = "SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_arc_backpack_ca.paa";
     };
 };
 

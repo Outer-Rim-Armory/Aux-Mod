@@ -187,7 +187,7 @@ class BNA_KC_Uniform_Enlisted_CamoBrown: BNA_KC_Uniform_Base
 };
 class BNA_KC_Uniform_Enlisted_CamoGrey: BNA_KC_Uniform_Base
 {
-    displayName = "[KC] INF Armor XX (Enlisted) - Grey Camo";
+    displayName = "[KC] INF Armor 01+ (Enlisted) - Grey Camo";
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_Phase2_Enlisted_CamoGrey";
