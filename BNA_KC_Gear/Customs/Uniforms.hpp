@@ -117,8 +117,8 @@ class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Base
 // ┌────────────────────┐
 // │   Snow  Uniforms   │
 // └────────────────────┘
-class lsd_gar_phase2Insulated_uniform;
-class BNA_KC_Uniform_Insulated: lsd_gar_phase2Insulated_uniform
+class BNA_KC_Uniform_Base;
+class BNA_KC_Uniform_Insulated: BNA_KC_Uniform_Base
 {
     class ItemInfo;
 };
