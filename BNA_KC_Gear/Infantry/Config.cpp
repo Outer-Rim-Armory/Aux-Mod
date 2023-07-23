@@ -11,11 +11,11 @@ class CfgWeapons
     class ItemInfo;
 
     class ls_blueforHelmet_base;
-    class ls_gar_phase1_helmet: ls_blueforHelmet_base
+    class ls_gar_phase2_helmet: ls_blueforHelmet_base
     {
         class ItemInfo;
     };
-    class BNA_KC_Helmet_Base: ls_gar_phase1_helmet
+    class BNA_KC_Helmet_Base: ls_gar_phase2_helmet
     {
         // Mod Info
         dlc = "BNA_KC";
