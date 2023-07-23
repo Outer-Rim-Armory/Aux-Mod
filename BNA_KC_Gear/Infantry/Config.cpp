@@ -548,10 +548,8 @@ class CfgVehicles
 
     class BNA_KC_Unit_Insulated_Trooper: BNA_KC_Unit_Phase2_Base
     {
-        // Editor Properties
-        editorSubcategory = "BNA_KC_INF_Snow";
-
         displayName = "[KC] INF Snow - Trooper";
+        editorSubcategory = "BNA_KC_INF_Snow";
 
         // Uniform Model & Textures
         uniformClass = "BNA_KC_Uniform_Insulated";
