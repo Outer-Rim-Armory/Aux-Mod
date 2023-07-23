@@ -8,13 +8,14 @@ class CfgPatches
         requiredAddons[] =
         {
             "BNA_KC_Gear_Infantry",
-                // Base Backpack
+                // Base Backpacks
             "JLTS_jumppacks"
                 // JLTS models/textures
         };
         units[] =
         {
-            "BNA_KC_Jetpack_JT12"
+            "BNA_KC_Jetpack_JT12",
+            "BNA_KC_Jumppack_CDV19"
         };
         weapons[] = {};
     };
