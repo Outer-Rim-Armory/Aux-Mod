@@ -216,10 +216,56 @@ class CfgWeapons
     // │       Vests       │
     // └───────────────────┘
     class VestItem;
-    class SWLB_clone_basic_armor;
+    class V_PlateCarrier1_rgr;
+    class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
+    {
+        class ItemInfo;
+    };
     class SWLB_clone_officer_armor: SWLB_clone_basic_armor
     {
         class ItemInfo: VestItem {};
+    };
+
+    class BNA_KC_Vest_Basic: SWLB_clone_basic_armor
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] INF Vest";
+        
+        class ItemInfo: ItemInfo
+        {
+            containerClass = "Supply40"; // Base LS value until another value is decided
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo
+            {
+                class Abdomen
+                {
+                    // TODO
+                };
+                class Body
+                {
+                    // Base LS values
+                    hitpointName = "HitBody";
+                    armor = 0;
+                    passThrough = 1;
+                };
+                class Chest
+                {
+                    // TODO
+                };
+                class Diaphragm
+                {
+                    // TODO
+                };
+            };
+        };
     };
 
     class BNA_KC_Vest_Officer: SWLB_clone_officer_armor

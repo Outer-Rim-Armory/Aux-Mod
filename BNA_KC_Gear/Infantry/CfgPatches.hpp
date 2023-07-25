@@ -213,6 +213,7 @@ class CfgPatches
             "BNA_KC_Uniform_Insulated",
 
             // Vests
+            "BNA_KC_Vest_Basic",
             "BNA_KC_Vest_Officer",
 
             // NVGs
