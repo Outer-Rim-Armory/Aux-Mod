@@ -268,6 +268,81 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Vest_Medic: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] INF Medic Vest";
+
+        model = "SWLB_clones\SWLB_clone_airborne_armor.p3d";
+        hiddenSelections[] = { "camo1", "camo2", "ammo", "pauldron" };
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa", // Heavy Bag / Strap
+            "",                                                      // Kama
+            "",                                                      // Airborne / Ammo thing
+            ""                                                       // Pauldron
+        };
+        picture = "SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1", "camo2", "ammo", "pauldron" };
+            uniformModel = "SWLB_clones\SWLB_clone_airborne_armor.p3d";
+            containerClass = "Supply80";
+        };
+    };
+    class BNA_KC_Vest_Medic_v2: BNA_KC_Vest_Medic
+    {
+        displayName = "[KC] INF Medic Vest (v2)";
+
+        model = "SWLB_CEE\data\SWLB_CEE_Airborne_CFR.p3d";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic_v2.paa", // Tablet
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic_v2.paa", // Chest Strap
+            "",                                                         // Airborne / Ammo thing
+            ""                                                          // Pauldron
+        };
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "SWLB_CEE\data\SWLB_CEE_Airborne_CFR.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_Medic_Senior: BNA_KC_Vest_Medic
+    {
+        displayName = "[KC] INF Medic Senior Vest";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa", // Heavy Bag / Strap
+            "",                                                      // Kama
+            "",                                                      // Airborne thing
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa"  // Pauldron
+        };
+    };
+    class BNA_KC_Vest_Medic_Senior_v2: BNA_KC_Vest_Medic_v2
+    {
+        displayName = "[KC] INF Medic Senior Vest (v2)";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic_v2.paa", // Tablet
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic_v2.paa", // Chest Strap
+            "",                                                         // Airborne thing
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic_v2.paa"  // Pauldron
+        };
+    };
+
+    class BNA_KC_Vest_Medic_Platoon: BNA_KC_Vest_Medic
+    {
+        displayName = "[KC] INF Medic Company Vest";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa",         // Heavy Bag / Strap
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic_Platoon.paa", // Kama
+            "",                                                              // Airborne / Ammo thing
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa"          // Pauldron
+        };
+    };
+
     class BNA_KC_Vest_Officer: SWLB_clone_officer_armor
     {
         // Mod Info

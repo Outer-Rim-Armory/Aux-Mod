@@ -214,6 +214,11 @@ class CfgPatches
 
             // Vests
             "BNA_KC_Vest_Basic",
+            "BNA_KC_Vest_Medic",
+            "BNA_KC_Vest_Medic_Senior",
+            "BNA_KC_Vest_Medic_v2",
+            "BNA_KC_Vest_Medic_Senior_v2",
+            "BNA_KC_Vest_Medic_Platoon",
             "BNA_KC_Vest_Officer",
 
             // NVGs
