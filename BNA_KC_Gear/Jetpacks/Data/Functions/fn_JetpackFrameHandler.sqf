@@ -1,6 +1,6 @@
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
 #define BASE_SPEED 5
-#define AIR_RESISTANCE = 5
+#define AIR_RESISTANCE 5
 
 // Only triggered in singleplayer, prevents build-up when paused.
 if (isGamePaused) exitWith {};
