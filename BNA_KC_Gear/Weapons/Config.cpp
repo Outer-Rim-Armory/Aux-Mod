@@ -702,6 +702,7 @@ class CfgMagazines
     {
         displayName = "[KC] 3Rnd 3GL Flares (Blue)";
         descriptionShort = "Type: Flare Rounds - Blue <br />Rounds: 3 <br />Used in: EGLM, 3GL";
+        mass = 12;
         count = 3;
     };
 
