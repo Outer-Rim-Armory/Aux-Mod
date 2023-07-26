@@ -21,7 +21,7 @@ class CfgVehicles
     };
 
     class BNA_KC_Backpack_Radio;
-    class BNA_KC_Jumppack_CDV19: BNA_KC_Backpack_Radio
+    class BNA_KC_Jetpack_CDV19: BNA_KC_Backpack_Radio
     {
         displayName = "[KC] Clone Commander CDV-19 Jumppack";
 
