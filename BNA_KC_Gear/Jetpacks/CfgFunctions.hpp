@@ -8,6 +8,9 @@ class CfgFunctions
             class JetKeybinds {};
             class JetSettings {};
 
+            class Jetpack {};
+            class JetSlowFall {};
+            class JetpackFrameHandler {};
             class JetHasJetpack {};
             class JetCanUseJetpack {};
         };

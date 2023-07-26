@@ -6,9 +6,13 @@
     "BNA_KC_Jetpacks_ActivateJetpack",
     ["Activate Jetpack", "Accellerates the user upward."],
     {
-        // ...
+        // ace_player includes remote controlling AI
+        ace_player setVariable ["BNA_KC_Jet_rise", true];
+        ace_player call BNAKC_fnc_Jetpack;
     },     // KeyDown
-    {},    // KeyUp
+    {
+        ace_player setVariable ["BNA_KC_Jet_rise", false];
+    },     // KeyUp
     [DIK_SPACE, [true, false, false]],    // Shift + Spacebar
     false, // Hold Key
     0,     // Hold Key Delay
@@ -20,10 +24,11 @@
     "BNA_KC_Jetpacks_SlowFall",
     ["Activate Slow Fall", "Slows the user down while falling."],
     {
-        // ...
+        ace_player setVariable ["BNA_KC_Jet_slowFall", true];
+        ace_player call BNAKC_fnc_JetSlowFall;
     },     // KeyDown
     {
-        // ...
+        ace_player setVariable ["BNA_KC_Jet_slowFall", false];
     },     // KeyUp
     [DIK_SPACE, [false, false, false]],    // Spacebar
     false, // Hold Key
