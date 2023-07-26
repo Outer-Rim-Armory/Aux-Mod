@@ -16,8 +16,6 @@ CBA_fnc_RemovePerFrameHandler returns True or False depending on whether it can 
 If the jetpack handler does *not* exist, create it.
 Else, do nothing.
 */
-// TODO: Make handler get disabled/deleted when touching the ground.
-// TODO: Make slow fall not trigger the starting jump sequence.
 if !([BNA_KC_Jet_JetpackHandle] call CBA_fnc_RemovePerFrameHandler) then
 {   
     // Speed and position, used for an initial boost
