@@ -17,7 +17,7 @@ class CfgVehicles
 
         BNA_KC_Jet_IsJetpack = 1;
         BNA_KC_Jet_speed = 3;     // Jetpack speed, effects how fast you move in the air
-        BNA_KC_Jet_strength = 5;  // Jetpack strength, effects fast the player rises
+        BNA_KC_Jet_strength = 15;  // Jetpack strength, effects fast the player rises
     };
 
     class BNA_KC_Backpack_Radio;
@@ -32,6 +32,6 @@ class CfgVehicles
 
         BNA_KC_Jet_IsJetpack = 1;
         BNA_KC_Jet_speed = 2;     // Jetpack speed, effects how fast you move in the air
-        BNA_KC_Jet_strength = 5;  // Jetpack strength, effects fast the player rises
+        BNA_KC_Jet_strength = 15;  // Jetpack strength, effects fast the player rises
     };
 };

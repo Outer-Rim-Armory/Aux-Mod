@@ -1,6 +1,6 @@
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
 #define BASE_SPEED 5
-#define AIR_RESISTANCE 5
+#define AIR_RESISTANCE 8
 
 // Only triggered in singleplayer, prevents build-up when paused.
 if (isGamePaused) exitWith {};
@@ -35,7 +35,7 @@ if (inputAction "MoveForward" == 1) then
     [
         (_velocity select 0) + (sin _direction * _speed),
         (_velocity select 1) + (cos _direction * _speed),
-        (_velocity select 2) + (_jetStrength * diag_deltaTime)
+        _velocity select 2
     ];
 };
 
@@ -46,7 +46,7 @@ if (inputAction "TurnLeft" == 1) then
     [
         (_velocity select 0) + (sin (_direction - 90) * _speed),
         (_velocity select 1) + (cos (_direction - 90) * _speed),
-        (_velocity select 2) + (_jetStrength * diag_deltaTime)
+        _velocity select 2
     ];
 };
 
@@ -57,7 +57,7 @@ if (inputAction "TurnRight" == 1) then
     [
         (_velocity select 0) + (sin (_direction + 90) * _speed),
         (_velocity select 1) + (cos (_direction + 90) * _speed),
-        (_velocity select 2) + (_jetStrength * diag_deltaTime)
+        _velocity select 2
     ];
 };
 
@@ -68,7 +68,7 @@ if (inputAction "MoveBack" == 1) then
     [
         (_velocity select 0) + (sin (_direction - 180) * _speed),
         (_velocity select 1) + (cos (_direction - 180) * _speed),
-        (_velocity select 2) + (_jetStrength * diag_deltaTime)
+        _velocity select 2
     ];
 };
 
@@ -91,6 +91,7 @@ if (ace_player getVariable ["BNA_KC_Jet_slowFall", false]) then
         _velocity select 1,
         (_velocity select 2) max -5
         // Caps downward velocity
+        // TODO: Fix spamming slow fall key constantly setting max fall speed lower and lower
     ];
 };
 
