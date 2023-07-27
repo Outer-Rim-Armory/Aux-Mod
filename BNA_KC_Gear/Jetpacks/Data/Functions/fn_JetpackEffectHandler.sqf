@@ -3,6 +3,7 @@ params ["_unit"];
 
 #define POS_SPINE3 [-0.009, -0.008, 0.356]
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
+#define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
 
 // Don't play effects for units on the ground or who can't jetpack
 if (!(_unit call BNAKC_fnc_JetCanUseJetpack) or isTouchingGround _unit) exitWith {};
@@ -13,6 +14,8 @@ private _jetpack = backpack _unit;
 
 // Obtain effect point names
 private _effectPoints = getArray(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectPoints");
+private _effectFire   = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectFire", "");
+private _effectSmoke  = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSmoke", "");
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
 DEV_LOG(_effectPoints);
@@ -36,10 +39,10 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
         
         // Spawn fire, light and smoke effects
         _effectSourceFire = "#particlesource" createVehicleLocal [0, 0, 0];
-        _effectSourceFire setParticleClass "BNA_KC_Jetpack_Fire";
+        _effectSourceFire setParticleClass _effectFire;
 
         _effectSourceSmoke = "#particlesource" createVehicleLocal [0, 0, 0];
-        _effectSourceSmoke setParticleClass "JLTS_jumppack_smoke";
+        _effectSourceSmoke setParticleClass _effectSmoke;
 
         _lightSource = "#lightpoint" createVehicleLocal [0, 0, 0];
         _lightSource setLightColor [0, 0.1, 0.9];

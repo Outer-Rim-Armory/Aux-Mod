@@ -18,7 +18,11 @@ class CfgVehicles
         BNA_KC_Jet_IsJetpack = 1;
         BNA_KC_Jet_speed = 2;     // Jetpack speed, effects how fast you move in the air
         BNA_KC_Jet_strength = 15; // Jetpack strength, effects fast the player rises
+
+        // Effects
         BNA_KC_Jet_effectPoints[] = { "effect_left", "effect_right" }; // Points to spawn effects, these come from the JLTS model
+        BNA_KC_Jet_effectFire  = "BNA_KC_Jetpack_Fire";
+        BNA_KC_Jet_effectSmoke = "JLTS_jumppack_smoke";
     };
 
     class BNA_KC_Backpack_Radio;
@@ -34,7 +38,11 @@ class CfgVehicles
         BNA_KC_Jet_IsJetpack = 1;
         BNA_KC_Jet_speed = 2;     // Jetpack speed, effects how fast you move in the air
         BNA_KC_Jet_strength = 15; // Jetpack strength, effects fast the player rises
+
+        // Effects
         BNA_KC_Jet_effectPoints[] = { "effect" }; // Points to spawn effects, comes from the JLTS model
+        BNA_KC_Jet_effectFire  = "BNA_KC_Jetpack_Fire";
+        BNA_KC_Jet_effectSmoke = "JLTS_jumppack_smoke";
     };
 };
 
