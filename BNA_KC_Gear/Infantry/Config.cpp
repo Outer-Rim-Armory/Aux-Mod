@@ -42,7 +42,7 @@ class CfgWeapons
             "ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
             "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
         };
-        picture = "ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
+        picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -66,7 +66,7 @@ class CfgWeapons
             "ls_armor_bluefor\helmet\gar\phase2\data\helmet_co.paa",
             "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
         };
-        picture = "ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
+        picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -92,7 +92,7 @@ class CfgWeapons
             "ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
             "ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
         };
-        picture = "ls_armor_bluefor\helmet\_ui\icon_gar_engineer_helmet_ca.paa";
+        picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_engineer_helmet_ca.paa";
 
         // LS Headlamp
         ls_lighting_hasLight = 1;
@@ -125,7 +125,7 @@ class CfgWeapons
         {
             "BNA_KC_Gear\Infantry\Data\Helmets\Airborne\BNA_KC_Helmet_Airborne.paa"
         };
-        picture = "SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -157,7 +157,7 @@ class CfgWeapons
         {
             "BNA_KC_Gear\Infantry\Data\Helmets\Insulated\BNA_KC_Helmet_Insulated.paa"
         };
-        picture = "ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa"; // Replace with Insulated picture when made
+        picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa"; // Replace with Insulated picture when made
 
         class ItemInfo: ItemInfo
         {
@@ -189,7 +189,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] INF Armor (Base)";
-        picture = "SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -282,7 +282,7 @@ class CfgWeapons
             "",                                                      // Airborne / Ammo thing
             ""                                                       // Pauldron
         };
-        picture = "SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -342,6 +342,7 @@ class CfgWeapons
             "",                                                              // Airborne / Ammo thing
             "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa"          // Pauldron
         };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
     };
 
     class BNA_KC_Vest_Officer: SWLB_clone_officer_armor
@@ -744,7 +745,7 @@ class CfgVehicles
     {
         displayName = "[KC] Clone Trooper Heavy Backpack";
 
-        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Heavy_UI.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Heavy_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa",      // Main Texture
@@ -761,7 +762,7 @@ class CfgVehicles
 
         displayName = "[KC] Clone Trooper Medic Backpack";
 
-        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Medic_UI.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Medic_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
@@ -776,7 +777,7 @@ class CfgVehicles
     {
         displayName = "[KC] Clone Trooper Radio Backpack";
 
-        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Radio_UI.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Radio_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa", // Main Texture
@@ -806,7 +807,7 @@ class CfgVehicles
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Radio_Mini.paa",
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Radio_Mini_Accumulator.paa"
         };
-        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Radio_Mini_UI.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Radio_Mini_UI.paa";
     };
     class BNA_KC_Backpack_Radio_Invisible: BNA_KC_Backpack_Radio
     {

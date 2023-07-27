@@ -26,7 +26,7 @@ class CfgWeapons
             "BNA_KC_Gear\Aviation\Data\Helmets\BNA_KC_Helmet_P2_Pilot.paa",
             "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
         };
-        picture = "SWLB_clones\data\ui\icon_SWLB_clone_pilot_P2_helmet_ca.paa";
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_pilot_P2_helmet_ca.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -51,7 +51,7 @@ class CfgWeapons
             "ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
             "ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
         };
-        picture = "ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
+        picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
 
         class ItemInfo: ItemInfo
         {

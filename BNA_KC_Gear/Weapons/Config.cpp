@@ -221,7 +221,7 @@ class CfgWeapons
         displayName = "[KC] BlasTech X-42 Flamethrower";
         // Change look to match the 3AS Flamer
         model = "3AS\3AS_Weapons\X42\BX42.p3d";
-        picture = "3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
+        picture = "\3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
         handAnim[] = 
         {
             "OFP2_ManSkeleton",
@@ -692,7 +692,7 @@ class CfgMagazines
         displayName = "[KC] Flare Round (Blue)";
         displayNameShort = "Blue Flare";
         descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: EGLM, 3GL";
-        picture = "BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_FlareBlue_UI.paa";
+        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_FlareBlue_UI.paa";
 
         ammo = "BNA_KC_Flare_Blue";
         count = 1;

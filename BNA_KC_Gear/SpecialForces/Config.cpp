@@ -25,7 +25,7 @@ class CfgWeapons
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC.paa",
             "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
         };
-        picture = "lsd_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
+        picture = "\lsd_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -59,7 +59,7 @@ class CfgWeapons
             "",
             "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
         };
-        picture = "SWLB_clones\data\ui\icon_SWLB_clone_helmet_arf_p1_ca.paa";
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_arf_p1_ca.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -85,7 +85,7 @@ class CfgWeapons
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_BARC.paa",
             "ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
         };
-        picture = "SWLB_clones\data\ui\icon_SWLB_clone_helmet_barc_ca.paa";
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_barc_ca.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -290,7 +290,7 @@ class CfgVehicles
         {
             "SWLB_equipment\backpacks\data\SWLB_clone_arc_backpack_co.paa"
         };
-        picture = "SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_arc_backpack_ca.paa";
+        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_arc_backpack_ca.paa";
     };
 };
 
