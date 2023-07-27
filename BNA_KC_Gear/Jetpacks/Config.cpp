@@ -26,6 +26,16 @@ class CfgVehicles
         BNA_KC_Jet_effectSound = "3AS\3AS_Weapons\X42\SFX\flamer.ogg";
     };
 
+    class BNA_KC_Jetpack_CDV21: BNA_KC_Jetpack_JT12
+    {
+        displayName = "[KC] Clone Trooper CDV-21 Jetpack";
+
+        // Use JLTS model/textures, LS model will be removed
+        model = "\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
+        hiddenSelectionsTextures[] = { "MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_co.paa" };
+        picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
+    };
+
     class BNA_KC_Backpack_Radio;
     class BNA_KC_Jetpack_CDV19: BNA_KC_Backpack_Radio
     {

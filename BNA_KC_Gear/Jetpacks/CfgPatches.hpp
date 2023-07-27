@@ -17,7 +17,8 @@ class CfgPatches
         units[] =
         {
             "BNA_KC_Jetpack_JT12",
-            "BNA_KC_Jetpack_CDV19"
+            "BNA_KC_Jetpack_CDV19",
+            "BNA_KC_Jetpack_CDV21"
         };
         weapons[] = {};
     };
