@@ -36,6 +36,12 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
 
         // Calculate effect position relative to player model
         _offsetEffect = (_positionModelEffectpoint vectorDiff POS_SPINE3);
+
+        if (currentWeapon _unit != "") then
+        {
+            // Extra offset is unit is holding a weapon
+            _offsetEffect = _offsetEffect vectorAdd [-0.12, 0, 0.1];
+        };
         
         // Spawn fire, light and smoke effects
         _effectSourceFire = "#particlesource" createVehicleLocal [0, 0, 0];
