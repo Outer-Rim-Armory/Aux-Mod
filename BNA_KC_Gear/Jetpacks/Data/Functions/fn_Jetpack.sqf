@@ -14,7 +14,7 @@ CBA_fnc_RemovePerFrameHandler returns True or False depending on whether it can 
 If the jetpack handler does *not* exist, create it.
 Else, do nothing.
 */
-if !([BNA_KC_Jet_JetpackHandle] call CBA_fnc_RemovePerFrameHandler) then
+if (isNil "BNA_KC_Jet_JetpackHandle") then
 {   
     // Speed and position, used for an initial boost
     private _velocity = velocity ace_player;
@@ -45,7 +45,7 @@ else
 };
 
 
-if !([BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler) then
+if (isNil "BNA_KC_Jet_JetpackSoundHandle") then
 {
     BNA_KC_Jet_JetpackSoundHandle =
     [

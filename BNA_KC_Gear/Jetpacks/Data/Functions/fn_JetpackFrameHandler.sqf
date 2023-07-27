@@ -11,6 +11,7 @@ private _thisHandler = _this select 1;
 if (!(ace_player call BNAKC_fnc_JetCanUseJetpack) or isTouchingGround ace_player) exitWith
 {
     [_thisHandler] call CBA_fnc_RemovePerFrameHandler;
+    BNA_KC_Jet_JetpackHandle = nil;
     // Wait a bit before removing effects, makes it look nicer
     [
         {
@@ -20,6 +21,7 @@ if (!(ace_player call BNAKC_fnc_JetCanUseJetpack) or isTouchingGround ace_player
                 deleteVehicle _x;
             } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
             [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_RemovePerFrameHandler;
+            BNA_KC_Jet_JetpackSoundHandle = nil;
         },
         [],
         0.3
@@ -87,7 +89,6 @@ if (inputAction "MoveBack" == 1) then
 
 if (ace_player getvariable ["BNA_KC_Jet_rise", false]) then
 {
-    _speed = _jetSpeed * BASE_SPEED * diag_deltaTime;
     _velocity set [2, (_velocity#2) + (_jetStrength * diag_deltaTime)];
 };
 
@@ -97,14 +98,10 @@ if (ace_player getVariable ["BNA_KC_Jet_slowFall", false]) then
     // Caps downward velocity
 };
 
-// Fix for the spam slow fall bug, where the player's fall speed kept getting lower and lower
-private _origVertSpeed = _velocity select 2;
-
 // Slow player down mid-air, used to simulate air-resistance
 private _airResistanceCoef = -0.1 * diag_deltaTime * AIR_RESISTANCE;
 private _airResistance = _velocity vectorMultiply _airResistanceCoef;
 _velocity = _velocity vectorAdd _airResistance;
-_velocity set [2, _origVertSpeed min (_velocity # 2)]; // Prevents the player from falling slower than their original speed
 
 // Apply final velocity
 ace_player setVelocity _velocity;
