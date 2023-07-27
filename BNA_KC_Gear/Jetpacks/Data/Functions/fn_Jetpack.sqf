@@ -33,7 +33,8 @@ if !([BNA_KC_Jet_JetpackHandle] call CBA_fnc_RemovePerFrameHandler) then
         _unit setVelocity _velocity;
     };
 
-    ["BNA_KC_Jet_JetpackFired", [ace_player]] call CBA_fnc_GlobalEvent; // Spawns particle effects, global so all players see them
+    // Handle visual effects, global so all players see them
+    ["BNA_KC_Jet_JetpackFired", [ace_player]] call CBA_fnc_GlobalEvent;
 
     BNA_KC_Jet_JetpackHandle =
     [
@@ -44,3 +45,10 @@ else
 {
     // Unit is already jetpacking
 };
+
+
+BNA_KC_Jet_JetpackSoundHandle =
+[
+    BNAKC_fnc_JetpackSoundHandler,
+    0.2 // Time inbetween each execution
+] call CBA_fnc_AddPerFrameHandler;

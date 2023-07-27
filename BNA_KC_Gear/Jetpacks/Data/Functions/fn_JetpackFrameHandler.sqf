@@ -10,7 +10,7 @@ private _thisHandler = _this select 1;
 // Check if player can use jetpack, could potentially change while FH is running, such as dying; going uncon; etc.
 if (!(ace_player call BNAKC_fnc_JetCanUseJetpack) or isTouchingGround ace_player) exitWith
 {
-    [_thisHandler] call CBA_fnc_removePerFrameHandler;
+    [_thisHandler] call CBA_fnc_RemovePerFrameHandler;
     // Wait a bit before removing effects, makes it look nicer
     [
         {
@@ -21,6 +21,7 @@ if (!(ace_player call BNAKC_fnc_JetCanUseJetpack) or isTouchingGround ace_player
             {
                 deleteVehicle _x;
             } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
+            [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_RemovePerFrameHandler;
         },
         [],
         0.5

@@ -12,6 +12,7 @@ class CfgFunctions
             class JetSlowFall {};
             class JetpackFrameHandler {};
             class JetpackEffectHandler {};
+            class JetpackSoundHandler {};
             class JetHasJetpack {};
             class JetCanUseJetpack {};
         };
@@ -29,7 +30,7 @@ class Extended_PreInit_EventHandlers
 
 class Extended_PostInit_EventHandlers
 {
-    class BNA_KC_Jetpacks_Effects_PreInit
+    class BNA_KC_Jetpacks_Effects_PostInit
     {
         init = "['BNA_KC_Jet_JetpackFired', BNAKC_fnc_JetpackEffectHandler] call CBA_fnc_addEventHandler;";
     };
