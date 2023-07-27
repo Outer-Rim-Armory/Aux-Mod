@@ -48,5 +48,5 @@ else
 BNA_KC_Jet_JetpackSoundHandle =
 [
     BNAKC_fnc_JetpackSoundHandler,
-    0.2 // Time inbetween each execution
+    0.3 // Time inbetween each execution
 ] call CBA_fnc_AddPerFrameHandler;
