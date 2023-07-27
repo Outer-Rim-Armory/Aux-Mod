@@ -189,6 +189,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] INF Armor (Base)";
+        picture = "SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
 
         class ItemInfo: ItemInfo
         {
