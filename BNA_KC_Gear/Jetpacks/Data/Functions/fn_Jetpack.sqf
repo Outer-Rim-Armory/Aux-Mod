@@ -45,8 +45,11 @@ else
 };
 
 
-BNA_KC_Jet_JetpackSoundHandle =
-[
-    BNAKC_fnc_JetpackSoundHandler,
-    0.3 // Time inbetween each execution
-] call CBA_fnc_AddPerFrameHandler;
+if !([BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler) then
+{
+    BNA_KC_Jet_JetpackSoundHandle =
+    [
+        BNAKC_fnc_JetpackSoundHandler,
+        0.3 // Time inbetween each execution
+    ] call CBA_fnc_AddPerFrameHandler;
+};
