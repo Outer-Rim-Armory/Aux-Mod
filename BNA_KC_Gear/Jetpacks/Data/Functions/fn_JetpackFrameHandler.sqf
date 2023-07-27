@@ -16,15 +16,13 @@ if (!(ace_player call BNAKC_fnc_JetCanUseJetpack) or isTouchingGround ace_player
         {
             // Delete effects
             // TODO: Delete fire effects, wait, then delete smoke?
-            // TODO: Fix effects not disappearing when going uncon
-            // TODO: Fix effects not appearing when doing multiple jumps quickly
             {
                 deleteVehicle _x;
             } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
             [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_RemovePerFrameHandler;
         },
         [],
-        0.5
+        0.3
     ] call CBA_fnc_WaitAndExecute;
 };
 

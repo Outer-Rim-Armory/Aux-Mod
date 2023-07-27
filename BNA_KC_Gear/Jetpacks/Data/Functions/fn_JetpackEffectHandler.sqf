@@ -8,8 +8,6 @@ params ["_unit"];
 // Don't play effects for units on the ground or who can't jetpack
 if (!(_unit call BNAKC_fnc_JetCanUseJetpack) or isTouchingGround _unit) exitWith {};
 
-DEV_LOG("Effect Handler triggered");
-
 private _jetpack = backpack _unit;
 
 // Obtain effect point names
@@ -17,8 +15,6 @@ private _effectPoints = getArray(configFile >> "CfgVehicles" >> _jetpack >> "BNA
 private _effectFire   = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectFire", "");
 private _effectSmoke  = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSmoke", "");
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
-
-DEV_LOG(_effectPoints);
 
 // Reserve variables
 private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
@@ -31,9 +27,6 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
     // [0, 0, 0] is the default value if the point does not exist
     if !(_positionModelEffectpoint isEqualTo [0, 0, 0]) then
     {
-        DEV_LOG("Spawning effects for:");
-        DEV_LOG(_x);
-
         // Calculate effect position relative to player model
         _offsetEffect = (_positionModelEffectpoint vectorDiff POS_SPINE3);
 
