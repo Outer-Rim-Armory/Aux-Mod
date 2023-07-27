@@ -8,7 +8,7 @@
     {
         // ace_player includes remote controlling AI
         ace_player setVariable ["BNA_KC_Jet_rise", true];
-        ace_player call BNAKC_fnc_Jetpack;
+        call BNAKC_fnc_Jetpack;
     },     // KeyDown
     {
         ace_player setVariable ["BNA_KC_Jet_rise", false];
@@ -25,7 +25,7 @@
     ["Activate Slow Fall", "Slows the user down while falling."],
     {
         ace_player setVariable ["BNA_KC_Jet_slowFall", true];
-        ace_player call BNAKC_fnc_JetSlowFall;
+        call BNAKC_fnc_JetSlowFall;
     },     // KeyDown
     {
         ace_player setVariable ["BNA_KC_Jet_slowFall", false];
