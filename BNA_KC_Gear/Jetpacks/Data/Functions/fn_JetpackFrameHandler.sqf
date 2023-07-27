@@ -78,10 +78,8 @@ if (ace_player getvariable ["BNA_KC_Jet_rise", false]) then
     _velocity set [2, (_velocity#2) + (_jetStrength * diag_deltaTime)];
 };
 
-systemChat str (_velocity select 2);
 if (ace_player getVariable ["BNA_KC_Jet_slowFall", false]) then
 {
-    systemChat format ["Setting velocity to: %1", (_velocity select 2) max -5];
     _velocity set [2, (_velocity#2) max -5];
     // Caps downward velocity
 };
