@@ -22,7 +22,6 @@ if !(ace_player call BNAKC_fnc_JetHasJetpack) exitWith {};
 
 // Jetpack properties
 private _jetpack = backpack ace_player;
-private _jetSpeed = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_speed", 1);
 private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_strength", 1);
 
 /*
@@ -41,7 +40,8 @@ if (isNil "BNA_KC_Jet_JetpackHandle") then
     {
         // Teleport is needed so player will actually move upwards
         _position set [2, (_position select 2) + 0.05];
-        _velocity set [2, (_velocity select 2) + 7];
+        _velocity set [2, (_velocity select 2) + (_jetStrength / 2 max 6)];
+        // Cap initial jump at 6 to avoid taking damage on flat terrain
 
         ace_player setPosASL _position;
         ace_player setVelocity _velocity;
