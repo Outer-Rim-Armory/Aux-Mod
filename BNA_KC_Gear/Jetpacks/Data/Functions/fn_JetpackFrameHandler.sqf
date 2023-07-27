@@ -75,30 +75,25 @@ if (inputAction "MoveBack" == 1) then
 if (ace_player getvariable ["BNA_KC_Jet_rise", false]) then
 {
     _speed = _jetSpeed * BASE_SPEED * diag_deltaTime;
-    _velocity =
-    [
-        _velocity select 0,
-        _velocity select 1,
-        (_velocity select 2) + (_jetStrength * diag_deltaTime)
-    ];
+    _velocity set [2, (_velocity#2) + (_jetStrength * diag_deltaTime)];
 };
 
+systemChat str (_velocity select 2);
 if (ace_player getVariable ["BNA_KC_Jet_slowFall", false]) then
 {
-    _velocity =
-    [
-        _velocity select 0,
-        _velocity select 1,
-        (_velocity select 2) max -5
-        // Caps downward velocity
-        // TODO: Fix spamming slow fall key constantly setting max fall speed lower and lower
-    ];
+    systemChat format ["Setting velocity to: %1", (_velocity select 2) max -5];
+    _velocity set [2, (_velocity#2) max -5];
+    // Caps downward velocity
 };
+
+// Fix for the spam slow fall bug, where the player's fall speed kept getting lower and lower
+private _origVertSpeed = _velocity select 2;
 
 // Slow player down mid-air, used to simulate air-resistance
 private _airResistanceCoef = -0.1 * diag_deltaTime * AIR_RESISTANCE;
 private _airResistance = _velocity vectorMultiply _airResistanceCoef;
 _velocity = _velocity vectorAdd _airResistance;
+_velocity set [2, _origVertSpeed min (_velocity # 2)]; // Prevents the player from falling slower than their original speed
 
 // Apply final velocity
 ace_player setVelocity _velocity;
