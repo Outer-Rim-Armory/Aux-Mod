@@ -6,10 +6,10 @@
  * 0: The unit to check <Object>
  *
  * Return Value:
- * None
+ * Boolean - True if unit has a jetpack
  *
  * Example:
- * player call BNAKC_fnc_HasJetpack; // Returns true if BNA_KC_Jet_IsJetpack is set to 1 in the unit's backpack
+ * ace_player call BNAKC_fnc_JetHasJetpack; // Returns true if BNA_KC_Jet_IsJetpack is set to 1 in the backpack's config
  */
 
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})

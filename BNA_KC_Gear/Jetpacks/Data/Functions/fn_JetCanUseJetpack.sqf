@@ -1,3 +1,18 @@
+/*
+ * Author: DartRuffian
+ * Returns True/False if a unit is able to use a jetpack
+ *
+ * Arguments:
+ * 0: The unit to check <Object>
+ *
+ * Return Value:
+ * Boolean - True if unit can use a jetpack
+ *
+ * Example:
+ * ace_player call BNAKC_fnc_JetCanUseJetpack; // Returns true if unit can jetpack
+ */
+
+
 params ["_unit"];
 
 private _canJetpack =
@@ -6,8 +21,8 @@ private _canJetpack =
     vehicle _unit == _unit and                // True if unit is not in a vehicle
     lifeState _unit != "INCAPACITATED" and    // True if unit is uncon
     !(surfaceIsWater getPos _unit and {((getPosASLW _unit) select 2) < 0.2}) and // True if unit is not in water
-    alive _unit and
-    [_unit] call ace_common_fnc_isAwake
+    alive _unit and                           // True if unit is alive
+    [_unit] call ace_common_fnc_isAwake       // True if unit is not dead and not unconcious
 );
 
 _canJetpack;

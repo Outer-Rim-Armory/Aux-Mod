@@ -1,3 +1,18 @@
+/*
+ * Author: DartRuffian
+ * Spawns jetpack handlers without the initial jump boost if the player is on the ground.
+ *
+ * Arguments:
+ * None, uses ace_player.
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * call BNAKC_fnc_JetSlowFall;
+ */
+
+// If a handler doesn't exist, then create it
 if (isNil "BNA_KC_Jet_JetpackHandle") then
 {
     // Handle visual effects, global so all players see them

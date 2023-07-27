@@ -1,3 +1,19 @@
+/*
+ * Author: DartRuffian
+ * "Controller" function for jetpack system. Handles spawning jetpack handlers if player can jetpack,
+ * and initial jump if player is on the ground.
+ *
+ * Arguments:
+ * None, uses ace_player.
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * call BNAKC_fnc_Jetpack;
+ */
+
+
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 

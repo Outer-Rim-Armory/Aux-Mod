@@ -1,6 +1,23 @@
+/*
+ * Authors: Clock, modified by DartRuffian
+ * Handles spawning the visual effects for jetpacks. Effects are deleted when unit can no longer jetpack or touches the ground.
+ * Modified from the same system from JLTS's Jumppacks
+ *
+ * Arguments:
+ * 0: Unit to spawn the effects on <Object>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * ['BNA_KC_Jet_JetpackFired', BNAKC_fnc_JetpackEffectHandler] call CBA_fnc_addEventHandler;;
+ */
+
+
 if !(hasInterface) exitwith {}; // Function only contains visual effects, no need to execute on the server
 params ["_unit"];
 
+// Contants and macros
 #define POS_SPINE3 [-0.009, -0.008, 0.356]
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 #define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
@@ -32,7 +49,7 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
 
         if (currentWeapon _unit != "") then
         {
-            // Extra offset is unit is holding a weapon
+            // Extra offset if unit is holding a weapon, animation causes the jetpack to move but not the points
             _offsetEffect = _offsetEffect vectorAdd [-0.12, 0, 0.1];
         };
         
@@ -60,5 +77,5 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
     };
 } forEach _effectPoints;
 
-// Save for later removal upon landing by the jump function
+// Save for later removal upon landing by the jetpack handler
 _unit setVariable ["BNA_KC_Jet_effectSources", _effectSources];

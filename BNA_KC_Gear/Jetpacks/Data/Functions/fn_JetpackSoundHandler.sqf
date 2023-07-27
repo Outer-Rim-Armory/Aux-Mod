@@ -1,5 +1,20 @@
-if !(hasInterface) exitwith {}; // Function only contains visual effects, no need to execute on the server
-if (isGamePaused) exitWith {};
+/*
+ * Authors: DartRuffian
+ * Plays sound effects while a player is using a jetpack. Sound effects stop being played when player is no longer using a jetpack.
+ *
+ * Arguments:
+ * None, uses ace_player
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * BNA_KC_Jet_JetpackSoundHandle = [BNAKC_fnc_JetpackFrameHandler] call CBA_fnc_AddPerFrameHandler;
+ */
+
+
+if !(hasInterface) exitwith {}; // Function only contains sound effects, no need to execute on the server
+if (isGamePaused) exitWith {};  // Can cause sound effects to build up
 
 #define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
 
@@ -10,10 +25,11 @@ private _jetpack = backpack ace_player;
 
 // Get path to sound effect
 private _sound = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSound", "");
-private _volume = 0.05;
+private _volume = 0.05; // Increase volume for each movement key (including slow fall and rising)
 
 _volumeCoef =
 (
+    // Count each movement key pressed
     ({
         inputAction _x == 1
     } count ["MoveBack", "TurnLeft", "TurnRight", "MoveForward"]) // Movement actions, increase volume for each one pressed

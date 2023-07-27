@@ -1,3 +1,18 @@
+/*
+ * Author: DartRuffian
+ * Handles player movement while jetpacking. Deletes itself when player is no longer using a jetpack.
+ *
+ * Arguments:
+ * None, uses ace_player
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * BNA_KC_Jet_JetpackHandle = [BNAKC_fnc_JetpackFrameHandler] call CBA_fnc_AddPerFrameHandler;
+ */
+
+// Contants and macros
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
 #define BASE_SPEED 5
 #define AIR_RESISTANCE 8
@@ -5,13 +20,15 @@
 // Only triggered in singleplayer, prevents build-up when paused.
 if (isGamePaused) exitWith {};
 
+// Used for removing the handler with CBA_fnc_RemovePerFrameHandler
 private _thisHandler = _this select 1;
 
 // Check if player can use jetpack, could potentially change while FH is running, such as dying; going uncon; etc.
 if (!(ace_player call BNAKC_fnc_JetCanUseJetpack) or isTouchingGround ace_player) exitWith
 {
     [_thisHandler] call CBA_fnc_RemovePerFrameHandler;
-    BNA_KC_Jet_JetpackHandle = nil;
+    BNA_KC_Jet_JetpackHandle = nil; // Set to nil, just removing the handler keeps the global variable's value
+    
     // Wait a bit before removing effects, makes it look nicer
     [
         {
