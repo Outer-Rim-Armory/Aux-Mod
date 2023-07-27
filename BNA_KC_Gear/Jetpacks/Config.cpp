@@ -18,6 +18,7 @@ class CfgVehicles
         BNA_KC_Jet_IsJetpack = 1;
         BNA_KC_Jet_speed = 2;     // Jetpack speed, effects how fast you move in the air
         BNA_KC_Jet_strength = 15; // Jetpack strength, effects fast the player rises
+        BNA_KC_Jet_effectPoints[] = { "effect_left", "effect_right" }; // Points to spawn effects, these come from the JLTS model
     };
 
     class BNA_KC_Backpack_Radio;
@@ -33,5 +34,24 @@ class CfgVehicles
         BNA_KC_Jet_IsJetpack = 1;
         BNA_KC_Jet_speed = 2;     // Jetpack speed, effects how fast you move in the air
         BNA_KC_Jet_strength = 15; // Jetpack strength, effects fast the player rises
+        BNA_KC_Jet_effectPoints[] = { "effect" }; // Points to spawn effects, comes from the JLTS model
+    };
+};
+
+
+class CfgCloudlets
+{
+    // https://community.bistudio.com/wiki/Arma_3:_Particle_Effects
+    class Flare2;
+    class BNA_KC_Jetpack_Fire: Flare2
+    {
+        colorCoef[] =
+        {
+            // R, G, B, A
+            0,
+            0.1,
+            0.9,
+            1
+        };
     };
 };

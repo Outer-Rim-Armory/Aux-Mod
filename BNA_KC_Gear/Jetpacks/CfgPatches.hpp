@@ -9,8 +9,10 @@ class CfgPatches
         {
             "BNA_KC_Gear_Infantry",
                 // Base Backpacks
-            "JLTS_jumppacks"
+            "JLTS_jumppacks",
                 // JLTS models/textures
+            "A3_Data_F_ParticleEffects"
+                // Particle Effects
         };
         units[] =
         {

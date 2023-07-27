@@ -11,6 +11,18 @@ private _thisHandler = _this select 1;
 if (!(ace_player call BNAKC_fnc_JetCanUseJetpack) or isTouchingGround ace_player) exitWith
 {
     [_thisHandler] call CBA_fnc_removePerFrameHandler;
+    // Wait a bit before removing effects, makes it look nicer
+    [
+        {
+            // Delete effects
+            // TODO: Delete fire effects, wait, then delete smoke?
+            {
+                deleteVehicle _x;
+            } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
+        },
+        [],
+        0.5
+    ] call CBA_fnc_WaitAndExecute;
 };
 
 

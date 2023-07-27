@@ -33,6 +33,8 @@ if !([BNA_KC_Jet_JetpackHandle] call CBA_fnc_RemovePerFrameHandler) then
         _unit setVelocity _velocity;
     };
 
+    ["BNA_KC_Jet_JetpackFired", [ace_player]] call CBA_fnc_GlobalEvent; // Spawns particle effects, global so all players see them
+
     BNA_KC_Jet_JetpackHandle =
     [
         BNAKC_fnc_JetpackFrameHandler
