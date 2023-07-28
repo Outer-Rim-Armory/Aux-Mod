@@ -32,3 +32,12 @@ if (isNil "BNA_KC_Jet_JetpackSoundHandle") then
         0.3 // Time inbetween each execution
     ] call CBA_fnc_AddPerFrameHandler;
 };
+
+if (isNil "BNA_KC_Jet_JetpackFuelHandle") then
+{
+    BNA_KC_Jet_JetpackFuelHandle =
+    [
+        BNAKC_fnc_JetpackFuelHandler,
+        0.5 // Time inbetween each execution
+    ] call CBA_fnc_AddPerFrameHandler;
+};
