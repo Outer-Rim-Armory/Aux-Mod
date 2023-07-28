@@ -36,7 +36,7 @@ if (isNil "BNA_KC_Jet_JetpackHandle") then
     private _position = getPosASL ace_player;
 
     // Give slight boost to start jetpacking, but only if starting from the ground
-    if (isTouchingGround ace_player) then
+    if (ace_player call BNAKC_fnc_JetCanUseJetpack and isTouchingGround ace_player) then
     {
         // Teleport is needed so player will actually move upwards
         _position set [2, (_position select 2) + 0.05];
