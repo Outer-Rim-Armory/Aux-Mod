@@ -601,6 +601,11 @@ class CfgWeapons
         };
 
         class Stun;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
     };
     class BNA_KC_DC17: JLTS_DC17SA
     {
@@ -654,18 +659,8 @@ class CfgWeapons
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
-            class CowsSlot
+            class CowsSlot: CowsSlot
             {
-                displayName = "Optics Slot";
-                
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
-                iconScale = 0.2;
-
-                linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-
                 compatibleItems[] = 
                 {
                     // Sights
