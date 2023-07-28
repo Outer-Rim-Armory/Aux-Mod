@@ -525,9 +525,9 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Hull.paa",
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Wheels.paa",
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Hull_CamoKC.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Wheels_CamoKC.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };

@@ -85,7 +85,7 @@ class TextureSources \
         { \
             "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body.paa", \
             "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body2.paa", \
-            "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret.paa" \
+            "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa" \
         }; \
     }; \
     class KCCamo: BrownWhite \
@@ -95,7 +95,7 @@ class TextureSources \
         { \
             "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body_CamoKC.paa", \
             "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body2_CamoKC.paa", \
-            "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret.paa" \
+            "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa" \
         }; \
     }; \
     class BrownCamo: BrownWhite \
