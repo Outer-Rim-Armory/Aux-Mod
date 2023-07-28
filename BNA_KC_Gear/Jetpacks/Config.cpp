@@ -15,7 +15,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = { "MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa" };
         picture = "\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
 
-        BNA_KC_Jet_IsJetpack = 1;
+        BNA_KC_Jet_isJetpack = 1;
         BNA_KC_Jet_speed = 2;     // Jetpack speed, effects how fast you move in the air
         BNA_KC_Jet_strength = 15; // Jetpack strength, effects fast the player rises
 
@@ -46,7 +46,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = { "MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_mc_co.paa" };
         picture = "MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 
-        BNA_KC_Jet_IsJetpack = 1;
+        BNA_KC_Jet_isJetpack = 1;
         BNA_KC_Jet_speed = 2;     // Jetpack speed, effects how fast you move in the air
         BNA_KC_Jet_strength = 15; // Jetpack strength, effects fast the player rises
 
