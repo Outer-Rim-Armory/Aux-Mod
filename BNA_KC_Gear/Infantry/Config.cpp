@@ -387,9 +387,11 @@ class CfgWeapons
     // ┌──────────────────┐
     // │       NVGs       │
     // └──────────────────┘
-    class lsd_gar_standard_nvg;
-    class lsd_gar_rangefinder_nvg;
-    class SWLB_clone_ccVisor;
+    class ls_nvg_base;
+    class lsd_gar_standard_nvg: ls_nvg_base
+    {
+        class ItemInfo;
+    };
 
     class BNA_KC_NVG_Chip: lsd_gar_standard_nvg
     {
@@ -399,114 +401,95 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] Clone NVG Chip";
 
         // Night Vision / Thermal Settings
-        // See BNA_KC_Gear/Macros.hpp for values
-        visionMode[] = { VISION_MODE };
-        thermalMode[] = { THERMAL_MODE };
+        visionMode[] = { "Normal", "NVG", "TI"};
+        thermalMode[] = { 0 }; // White Hot
 
-        // Remove the model and textures (invisible)
-        model = "A3\weapons_F\ammo\mag_univ.p3d";
-        modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d";
+        // Remove the model and textures
+        model = "A3\weapons_F\ammo\mag_univ.p3d"; // Physical model
+        modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d"; // NVG Overlay
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
+        picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 
-        class ItemInfo
+        class ItemInfo: ItemInfo
         {
-            type = 616;
+            hiddenSelections[] = {};
             uniformModel = "BNA_KC_Gear\Data\Models\empty_model.p3d";
             modelOff = "BNA_KC_Gear\Data\Models\empty_model.p3d";
-            mass = 10;
-            hiddenSelections[] = {};
         };
     };
 
-    class BNA_KC_NVG_Visor: lsd_gar_standard_nvg
+    class BNA_KC_NVG_Visor: BNA_KC_NVG_Chip
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-
         displayName = "[KC] Clone P2 NVG Visor";
+
+        model = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
+        hiddenSelections[] = { "camo1", "camo2" };
         hiddenSelectionsTextures[] =
         {
-            BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Visor.paa
+            "BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Visor.paa"
         };
+        picture = "\lsd_equipment_bluefor\nvg\gar\_ui\icon_SWLB_clone_nvg_ca.paa";
 
-        // Night Vision / Thermal Settings
-        visionMode[] = { VISION_MODE };
-        thermalMode[] = { THERMAL_MODE };
-
-        // Remove NVG Overlay
-        modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d";
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1", "camo2" };
+            uniformModel = "lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
+            modelOff = "lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_off.p3d";
+        };
     };
-
     class BNA_KC_NVG_Visor_v2: BNA_KC_NVG_Visor
     {
         displayName = "[KC] Clone P2 NVG Visor (v2)";
         hiddenSelectionsTextures[] =
         {
-            BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Visor_v2.paa
+            "BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Visor_v2.paa"
         };
     };
 
-    class BNA_KC_NVG_Rangefinder: lsd_gar_rangefinder_nvg
+    class BNA_KC_NVG_Rangefinder: BNA_KC_NVG_Chip
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-
         displayName = "[KC] Clone P2 Rangefinder (CS+)";
+
+        model = "lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
+        hiddenSelections[] = { "camo1" };
         hiddenSelectionsTextures[] =
         {
-            BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Rangefinder.paa
+            "BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Rangefinder.paa"
         };
+        picture = "SWLB_clones\data\ui\icon_SWLB_clone_rangefinder_ca.paa";
 
-        // Night Vision / Thermal Settings
-        visionMode[] = { VISION_MODE };
-        thermalMode[] = { THERMAL_MODE };
-
-        // Remove NVG Overlay
-        modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d";
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1" };
+            uniformModel = "lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
+            modelOff = "lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
+        };
     };
 
-    class BNA_KC_NVG_Officer: SWLB_clone_ccVisor
+    class BNA_KC_NVG_Officer: BNA_KC_NVG_Chip
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-
         displayName = "[KC] Clone P2 Officer Visor (WO+)";
+
+        model = "SWLB_clones\SWLB_clone_ccVisor.p3d";
+        hiddenSelections[] = { "camo1", "camo2" };
         hiddenSelectionsTextures[] =
         {
-            BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Officer.paa
+            "BNA_KC_Gear\Infantry\Data\NVGs\BNA_KC_NVG_Officer.paa"
         };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
 
-        // Night Vision / Thermal Settings
-        visionMode[] = { VISION_MODE };
-        thermalMode[] = { THERMAL_MODE };
-
-        // Remove NVG Overlay
-        modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d";
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = { "camo1", "camo2" };
+            uniformModel = "SWLB_clones\SWLB_clone_ccVisor.p3d";
+            modelOff = "SWLB_clones\SWLB_clone_ccVisor.p3d";
+        };
     };
 };
 

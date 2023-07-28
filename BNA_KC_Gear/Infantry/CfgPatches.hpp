@@ -24,9 +24,11 @@ class CfgPatches
                 // Rangefinder NVGs
             "SWLB_equipment_backpacks",
                 // Infantry Backpacks
-            "SWLB_Clones"
+            "SWLB_Clones",
                 // Clone Commander Visor
                 // Officer Vest
+            "JLTS_core"
+                // Droid NVG UI image
         };
         units[] =
         {
