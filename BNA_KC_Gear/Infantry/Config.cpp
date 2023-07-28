@@ -132,6 +132,8 @@ class CfgWeapons
             hiddenSelections[] = { "camo1", "visor" };
             uniformModel = "lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
         };
+
+        subItems[] = { "BNA_KC_NVG_Chip" };
     };
 
     class BNA_KC_Helmet_Airborne_v2: BNA_KC_Helmet_Airborne
