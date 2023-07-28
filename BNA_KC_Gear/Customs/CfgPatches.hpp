@@ -93,6 +93,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Stone",
             "BNA_KC_Helmet_Phase2_Swoop",
             "BNA_KC_Helmet_Phase2_Taun",
+            "BNA_KC_Helmet_Phase2_Tyrant",
             "BNA_KC_Helmet_Phase2_Woods",
 
             // Engineer Helmets
