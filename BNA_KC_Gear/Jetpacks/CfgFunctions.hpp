@@ -9,10 +9,10 @@ class CfgFunctions
             class JetSettings {};
 
             class Jetpack {};
-            class SlowFall {};
             class JetpackFrameHandler {};
             class JetpackEffectHandler {};
             class JetpackSoundHandler {};
+            class SlowFall {};
             class HasJetpack {};
             class CanUseJetpack {};
         };
