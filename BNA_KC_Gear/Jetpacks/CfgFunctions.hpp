@@ -12,9 +12,11 @@ class CfgFunctions
             class JetpackFrameHandler {};
             class JetpackEffectHandler {};
             class JetpackSoundHandler {};
+            class JetpackFuelHandler {};
             class SlowFall {};
             class HasJetpack {};
             class CanUseJetpack {};
+            class GetJetpackFuel {};
         };
     };
 };

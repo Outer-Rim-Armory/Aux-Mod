@@ -28,6 +28,9 @@ if (!(ace_player call BNAKC_fnc_CanUseJetpack) or isTouchingGround ace_player) e
 {
     [_thisHandler] call CBA_fnc_RemovePerFrameHandler;
     BNA_KC_Jet_JetpackHandle = nil; // Set to nil, just removing the handler keeps the global variable's value
+
+    [BNA_KC_Jet_JetpackFuelHandle] call CBA_fnc_RemovePerFrameHandler;
+    BNA_KC_Jet_JetpackFuelHandle = nil;
     
     // Wait a bit before removing effects, makes it look nicer
     [
