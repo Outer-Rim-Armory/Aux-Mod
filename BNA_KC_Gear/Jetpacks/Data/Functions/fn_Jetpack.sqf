@@ -24,11 +24,7 @@ if !(ace_player call BNAKC_fnc_HasJetpack) exitWith {};
 private _jetpack = backpack ace_player;
 private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_strength", 1);
 
-/*
-CBA_fnc_RemovePerFrameHandler returns True or False depending on whether it can remove a given handler.
-If the jetpack handler does *not* exist, create it.
-Else, do nothing.
-*/
+// If the handler for using a jetpack doesn't exist, then create it
 if (isNil "BNA_KC_Jet_JetpackHandle") then
 {   
     // Speed and position, used for an initial boost
@@ -47,7 +43,7 @@ if (isNil "BNA_KC_Jet_JetpackHandle") then
         ace_player setVelocity _velocity;
     };
 
-    // Handle visual effects, global so all players see them
+    // Event signalling a unit is starting a jetpack, EH handle visual particle effects
     ["BNA_KC_Jet_JetpackFired", [ace_player]] call CBA_fnc_GlobalEvent;
 
     BNA_KC_Jet_JetpackHandle =
