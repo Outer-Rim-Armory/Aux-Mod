@@ -288,6 +288,18 @@ class CfgWeapons
             containerClass = "Supply250";
         };
     };
+    class BNA_KC_Vest_Medic_Senior: BNA_KC_Vest_Medic
+    {
+        displayName = "[KC] INF Medic Senior Vest";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa", // Heavy Bag / Strap
+            "",                                                      // Kama
+            "",                                                      // Airborne thing
+            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa"  // Pauldron
+        };
+    };
+
     class BNA_KC_Vest_Medic_v2: BNA_KC_Vest_Medic
     {
         displayName = "[KC] INF Medic Vest (v2)";
@@ -303,18 +315,6 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformModel = "SWLB_CEE\data\SWLB_CEE_Airborne_CFR.p3d";
-        };
-    };
-
-    class BNA_KC_Vest_Medic_Senior: BNA_KC_Vest_Medic
-    {
-        displayName = "[KC] INF Medic Senior Vest";
-        hiddenSelectionsTextures[] =
-        {
-            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa", // Heavy Bag / Strap
-            "",                                                      // Kama
-            "",                                                      // Airborne thing
-            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa"  // Pauldron
         };
     };
     class BNA_KC_Vest_Medic_Senior_v2: BNA_KC_Vest_Medic_v2
