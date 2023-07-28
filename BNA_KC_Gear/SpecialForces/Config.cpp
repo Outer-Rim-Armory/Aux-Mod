@@ -125,35 +125,29 @@ class CfgWeapons
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
-    class VestItem;
     class SWLB_clone_basic_armor;
-    class SWLB_clone_officer_armor: SWLB_clone_basic_armor {};
-    class SWLB_clone_arc_armor: SWLB_clone_officer_armor
+    class BNA_KC_Vest_Basic: SWLB_clone_basic_armor
     {
-        class ItemInfo: VestItem {};
+        class ItemInfo;
     };
-
-    class BNA_KC_Vest_ARC: SWLB_clone_arc_armor
+    class BNA_KC_Vest_ARC: BNA_KC_Vest_Basic
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
         displayName = "[KC] SF ARC Vest";
+
+        model = "SWLB_clones\SWLB_clone_arc_armor.p3d";
+        hiddenSelections[] = { "camo1", "camo2" };
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Vests\BNA_KC_Vest_ARC_Chest.paa",
             "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
         };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 
         class ItemInfo: ItemInfo
         {
-            vestType = "Rebreather";
-            containerclass = "Supply200";
+            hiddenSelections[] = { "camo1", "camo2" };
+            uniformModel = "SWLB_clones\SWLB_clone_arc_armor.p3d";
+            containerClass = "Supply200";
 
             class HitpointsProtectionInfo
             {
