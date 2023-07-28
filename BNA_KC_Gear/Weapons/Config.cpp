@@ -270,7 +270,16 @@ class CfgWeapons
             class BaseSoundModeType {};
             class StandardSound: BaseSoundModeType {};
         };
+
+        class Stun;
     };
+
+    #define STUN class Stun: Stun \
+{ \
+    displayName = "Stun"; \
+    magazines[] = { "12thFleet_Mag_StunLong", "12thFleet_Mag_StunShort" }; \
+    magazineWell[] = {}; \
+};
 
     class BNA_KC_DC15S: JLTS_DC15S
     {
@@ -338,6 +347,8 @@ class CfgWeapons
                 soundBeginWater[] = {begin1, 1};
             };
         };
+
+        STUN;
     };
 
     class BNA_KC_DC15S_RiotShield: BNA_KC_DC15S
@@ -397,6 +408,8 @@ class CfgWeapons
             class BaseSoundModeType {};
             class StandardSound: BaseSoundModeType {};
         };
+
+        class Stun;
     };
     class JLTS_DC15A_plastic: JLTS_DC15A {};
 
@@ -466,6 +479,8 @@ class CfgWeapons
                 soundBeginWater[] = {begin1, 1};
             };
         };
+
+        STUN;
     };
 
     class JLTS_DC15A_ugl: JLTS_DC15A
@@ -476,6 +491,8 @@ class CfgWeapons
         };
         class EGLM;
         class GL_3GL_F;
+
+        class Stun;
     };
     class JLTS_DC15A_ugl_plastic: JLTS_DC15A_ugl {};
 
@@ -545,6 +562,7 @@ class CfgWeapons
                 soundBeginWater[] = {begin1, 1};
             };
         };
+
         class EGLM: EGLM
         {
             canShootInWater = 0;
@@ -584,6 +602,8 @@ class CfgWeapons
             class BaseSoundModeType {};
             class StandardSound: BaseSoundModeType {};
         };
+
+        class Stun;
     };
     class BNA_KC_DC17: JLTS_DC17SA
     {
@@ -632,6 +652,8 @@ class CfgWeapons
             muzzlePos = "Usti hlavne";
             muzzleEnd = "Konec hlavne";
         };
+
+        STUN;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
