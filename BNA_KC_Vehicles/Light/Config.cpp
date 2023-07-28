@@ -85,7 +85,7 @@ class TextureSources \
         { \
             "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body.paa", \
             "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Body2.paa", \
-            "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa" \
+            "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Turret.paa" \
         }; \
     }; \
     class KCCamo: BrownWhite \
