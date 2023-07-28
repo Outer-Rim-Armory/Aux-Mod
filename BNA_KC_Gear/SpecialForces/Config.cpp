@@ -67,7 +67,7 @@ class CfgWeapons
             uniformModel = "ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
         };
 
-        subItems[] = { "Integrated_NVG_TI_1_F" };
+        subItems[] = { "BNA_KC_NVG_Chip" };
     };
 
     class BNA_KC_Helmet_BARC: BNA_KC_Helmet_Base
