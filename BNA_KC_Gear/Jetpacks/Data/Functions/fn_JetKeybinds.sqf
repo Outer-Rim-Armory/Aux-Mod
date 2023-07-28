@@ -25,7 +25,7 @@
     ["Activate Slow Fall", "Slows the user down while falling."],
     {
         ace_player setVariable ["BNA_KC_Jet_slowFall", true];
-        call BNAKC_fnc_JetSlowFall;
+        call BNAKC_fnc_SlowFall;
     },     // KeyDown
     {
         ace_player setVariable ["BNA_KC_Jet_slowFall", false];

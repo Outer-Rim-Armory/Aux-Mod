@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * call BNAKC_fnc_JetSlowFall;
+ * call BNAKC_fnc_SlowFall;
  */
 
 // If a handler doesn't exist, then create it

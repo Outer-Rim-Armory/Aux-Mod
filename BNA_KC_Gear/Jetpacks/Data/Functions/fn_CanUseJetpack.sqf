@@ -9,7 +9,7 @@
  * Boolean - True if unit can use a jetpack
  *
  * Example:
- * ace_player call BNAKC_fnc_JetCanUseJetpack; // Returns true if unit can jetpack
+ * ace_player call BNAKC_fnc_CanUseJetpack; // Returns true if unit can jetpack
  */
 
 
@@ -17,7 +17,7 @@ params ["_unit"];
 
 private _canJetpack =
 (
-    _unit call BNAKC_fnc_JetHasJetpack and    // True if unit is wearing a KC jetpack
+    _unit call BNAKC_fnc_HasJetpack and    // True if unit is wearing a KC jetpack
     vehicle _unit == _unit and                // True if unit is not in a vehicle
     lifeState _unit != "INCAPACITATED" and    // True if unit is uncon
     !(surfaceIsWater getPos _unit and {((getPosASLW _unit) select 2) < 0.2}) and // True if unit is not in water

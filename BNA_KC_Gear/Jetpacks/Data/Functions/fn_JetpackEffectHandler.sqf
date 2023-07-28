@@ -23,7 +23,7 @@ params ["_unit"];
 #define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
 
 // Don't play effects for units on the ground or who can't jetpack
-if (!(_unit call BNAKC_fnc_JetCanUseJetpack) or isTouchingGround _unit) exitWith {};
+if (!(_unit call BNAKC_fnc_CanUseJetpack) or isTouchingGround _unit) exitWith {};
 
 private _jetpack = backpack _unit;
 
