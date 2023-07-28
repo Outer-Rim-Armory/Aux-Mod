@@ -202,10 +202,6 @@ class CfgWeapons
 
     class BNA_KC_Uniform_Insulated: BNA_KC_Uniform_Base
     {
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
         displayName = "[KC] INF Snow Armor (Trooper)";
         class ItemInfo: ItemInfo
         {
