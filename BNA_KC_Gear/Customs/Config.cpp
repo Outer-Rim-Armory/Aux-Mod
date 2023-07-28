@@ -17,7 +17,8 @@ class CfgWeapons
             "BNA_KC_Gear\Customs\Data\Vests\BNA_KC_Vest_Officer_Keeli.paa"
         };
     };
-    class BNA_KC_Vest_Officer_Ponds: BNA_KC_Vest_Officer
+    class BNA_KC_Vest_Medic_Platoon;
+    class BNA_KC_Vest_Officer_Ponds: BNA_KC_Vest_Medic_Platoon
     {
         displayName = "[KC] INF Vest 12+ ('Ponds')";
         hiddenSelectionsTextures[] =
