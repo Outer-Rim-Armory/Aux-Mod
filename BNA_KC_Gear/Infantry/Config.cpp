@@ -250,22 +250,27 @@ class CfgWeapons
             {
                 class Abdomen
                 {
-                    // TODO
+                    hitpointName = "HitAbdomen";
+                    armor = 12;
+                    passThrough = 0.3;
                 };
                 class Body
                 {
-                    // Base LS values
                     hitpointName = "HitBody";
                     armor = 0;
-                    passThrough = 1;
+                    passThrough = 0.3;
                 };
                 class Chest
                 {
-                    // TODO
+                    HitpointName = "HitChest";
+                    armor = 12;
+                    PassThrough = 0.3;
                 };
                 class Diaphragm
                 {
-                    // TODO
+                    HitpointName = "HitDiaphragm";
+                    armor = 12;
+                    PassThrough = 0.3;
                 };
             };
         };
