@@ -63,6 +63,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] Westar-M5";
+        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
 		recoil = "recoil_smg_03";
         canShootInWater = 1;
 
@@ -127,6 +128,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] Westar-M5 UGL";
+        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
 		recoil = "recoil_smg_03";
         canShootInWater = 1;
 
