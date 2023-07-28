@@ -73,7 +73,7 @@ class TextureSources \
 
 
 #define GLAVENUS_TEXTURES() hiddenSelectionsTextures[] = {}; \
-textureList[] = {"BrownWhite", 1, "KCCamo", 0, "BrownCamo", 0, "GreyCamo", 0}; \
+textureList[] = {"BrownWhite", 1, "CamoKC", 0, "BrownCamo", 0, "GreyCamo", 0}; \
 class TextureSources \
 { \
     class BrownWhite \
@@ -88,7 +88,7 @@ class TextureSources \
             "BNA_KC_Vehicles\Light\Data\Glavenus\BNA_KC_Glavenus_Turret.paa" \
         }; \
     }; \
-    class KCCamo: BrownWhite \
+    class CamoKC: BrownWhite \
     { \
         displayName = "Keeli Company Camo"; \
         textures[] = \
