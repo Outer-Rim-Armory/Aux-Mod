@@ -243,7 +243,7 @@ class CfgWeapons
         
         class ItemInfo: ItemInfo
         {
-            containerClass = "Supply40"; // Base LS value until another value is decided
+            containerClass = "Supply100";
             vestType = "Rebreather";
 
             class HitpointsProtectionInfo
@@ -295,7 +295,7 @@ class CfgWeapons
         {
             hiddenSelections[] = { "camo1", "camo2", "ammo", "pauldron" };
             uniformModel = "SWLB_clones\SWLB_clone_airborne_armor.p3d";
-            containerClass = "Supply80";
+            containerClass = "Supply250";
         };
     };
     class BNA_KC_Vest_Medic_v2: BNA_KC_Vest_Medic
@@ -372,6 +372,8 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             vestType = "Rebreather";
+            containerclass = "Supply200";
+
             class HitpointsProtectionInfo
             {
                 class Arms

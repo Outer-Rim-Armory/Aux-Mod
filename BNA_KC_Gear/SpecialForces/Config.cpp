@@ -153,6 +153,8 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             vestType = "Rebreather";
+            containerclass = "Supply200";
+
             class HitpointsProtectionInfo
             {
                 class Arms
