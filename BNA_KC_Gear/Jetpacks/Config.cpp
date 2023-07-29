@@ -24,7 +24,7 @@ class CfgVehicles
         BNA_KC_Jet_effectPoints[] = { "effect_left", "effect_right" }; // Points to spawn effects, these come from the JLTS model
         BNA_KC_Jet_effectFire  = "BNA_KC_Jetpack_Fire";
         BNA_KC_Jet_effectSmoke = "JLTS_jumppack_smoke";
-        BNA_KC_Jet_effectSound = "3AS\3AS_Weapons\X42\SFX\flamer.ogg";
+        BNA_KC_Jet_effectSound = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
     };
 
     class BNA_KC_Jetpack_CDV21: BNA_KC_Jetpack_JT12
@@ -56,7 +56,7 @@ class CfgVehicles
         BNA_KC_Jet_effectPoints[] = { "effect" }; // Points to spawn effects, comes from the JLTS model
         BNA_KC_Jet_effectFire  = "BNA_KC_Jetpack_Fire";
         BNA_KC_Jet_effectSmoke = "JLTS_jumppack_smoke";
-        BNA_KC_Jet_effectSound = "3AS\3AS_Weapons\X42\SFX\flamer.ogg";
+        BNA_KC_Jet_effectSound = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
     };
 };
 

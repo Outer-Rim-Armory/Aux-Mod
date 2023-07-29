@@ -38,6 +38,6 @@ _volumeCoef =
         ace_player getVariable [_x, false]
     } count ["BNA_KC_Jet_rise", "BNA_KC_Jet_slowFall"]) // Jetpack variables
 );
-_volume = _volume * _volumeCoef + 0.1;
+_volume = _volume * _volumeCoef + 0.5;
 
 playSound3D [_sound, ace_player, false, getposASL ace_player, _volume];
