@@ -104,7 +104,6 @@ class RscTitles
         controls[] =
         {
             "background",
-            "title",
             "fuel"
         };
 
@@ -126,33 +125,9 @@ class RscTitles
             y = "(profileNamespace getVariable ['IGUI_BNA_KC_Jet_Grid_jetpackFuel_Y', 0.478 * safezoneH + safezoneY])";
         };
 
-        class title: RscPicture
-        {
-            idc = 9001; // Id for this control
-            moving = 1; // Control will be moved when the display is dragged
-            
-            text = "Title";
-            type = "CT_STATIC"; // Normal text - https://community.bistudio.com/wiki/Arma:_GUI_Configuration#Control_Types
-            style = "ST_LEFT"; // Left-aligned text - https://community.bistudio.com/wiki/Arma:_GUI_Configuration#Control_Styles
-            font = "RobotoCondensed";
-
-            // Color
-            // colorText[] = { 1, 1, 1, 1 };
-            // colorBackground[] = { 0, 0, 0, 0.5 };
-
-            // Control size
-            // Size and position are measured in % of screen size
-            w = "0.180469 * safezoneW";
-            h = "0.022 * safezoneH";
-
-            // Control position
-            x = "(profileNamespace getVariable ['IGUI_BNA_KC_Jet_Grid_jetpackFuel_X', 0.773281 * safezoneW + safezoneX]) + 0.005156 * safezoneW";
-            y = "(profileNamespace getVariable ['IGUI_BNA_KC_Jet_Grid_jetpackFuel_Y', 0.478 * safezoneH + safezoneY]) + 0.011 * safezoneH";
-        };
-
         class fuel: RscPicture
         {
-            idc = 9002; // Id for this control
+            idc = 9001; // Id for this control
             moving = 1; // Control will be moved when the display is dragged
             
             text = "#(argb,8,8,3)color(0.5,0,0.05,1)";
