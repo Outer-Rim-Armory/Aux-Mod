@@ -13,7 +13,7 @@
  */
 
 
-#define BASE_FUEL_COST 10
+#define BASE_FUEL_COST 8
 if (isGamePaused) exitWith {};  // Don't use fuel if player is paused (in singleplayer)
 
 // Don't play effects for units on the ground or who can't jetpack
