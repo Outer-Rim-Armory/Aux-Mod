@@ -2,7 +2,7 @@
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"  // Key Codes
 
 [
-    ["Keeli Company Aux Mod", "Jetpacks & Jumppacks"],
+    ["Keeli Company Aux Mod", "Jetpacks"],
     "BNA_KC_Jetpacks_ActivateJetpack",
     ["Activate Jetpack", "Accellerates the user upward."],
     {
@@ -20,7 +20,7 @@
 ] call CBA_fnc_AddKeybind;
 
 [
-    ["Keeli Company Aux Mod", "Jetpacks & Jumppacks"],
+    ["Keeli Company Aux Mod", "Jetpacks"],
     "BNA_KC_Jetpacks_SlowFall",
     ["Activate Slow Fall", "Slows the user down while falling."],
     {
