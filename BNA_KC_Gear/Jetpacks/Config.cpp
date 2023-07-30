@@ -78,6 +78,16 @@ class CfgCloudlets
     };
 };
 
+// Window sizes, measured in % of screen size
+#define WINDOW_WIDTH 0.025
+#define WINDOW_HEIGHT 0.3
+
+#define WINDOW_X 0.95
+#define WINDOW_Y 0.5
+
+// Center display formula - displays in center of screen
+// _x = (safeZoneX + (safeZoneWAbs / 2)) - (WINDOW_X / 2);
+// _y = (safeZoneY + (safeZoneH / 2)) - (WINDOW_Y / 2);
 
 class RscTitles
 {
@@ -113,16 +123,15 @@ class RscTitles
             idc = 9000; // Id for this control
             moving = 1; // Control will be moved when the display is dragged
             
-            text = "#(argb,8,8,3)color(0,0,0,0.7)";
+            text = "#(argb,8,8,3)color(0,0,0,0.7)"; // Procedural texture - https://community.bistudio.com/wiki/Procedural_Textures
 
             // Control size
-            // Size and position are measured in % of screen size
-            w = "0.190781 * safezoneW";
-            h = "0.1 * safezoneH";
+            w = WINDOW_WIDTH;
+            h = WINDOW_HEIGHT;
 
             // Control position
-            x = "(profileNamespace getVariable ['IGUI_BNA_KC_Jet_Grid_jetpackFuel_X', 0.773281 * safezoneW + safezoneX])";
-            y = "(profileNamespace getVariable ['IGUI_BNA_KC_Jet_Grid_jetpackFuel_Y', 0.478 * safezoneH + safezoneY])";
+            x = (profileNamespace getVariable ["IGUI_BNA_KC_Jet_Grid_jetpackFuel_X", safeZoneX + WINDOW_X * safeZoneW]); // Near the right side of the screen
+            y = (profileNamespace getVariable ["IGUI_BNA_KC_Jet_Grid_jetpackFuel_Y", (safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2)]); // Centers the bar vertically
         };
 
         class fuel: RscPicture
@@ -130,16 +139,18 @@ class RscTitles
             idc = 9001; // Id for this control
             moving = 1; // Control will be moved when the display is dragged
             
-            text = "#(argb,8,8,3)color(0.5,0,0.05,1)";
+            text = "#(argb,8,8,3)color(1,1,1,0.7)";
             
+            #define FUEL_WIDTH WINDOW_WIDTH * 0.5// 50% width of background
+            #define FUEL_HEIGHT WINDOW_HEIGHT * 0.95// 95% height of background
+
             // Control size
-            // Size and position are measured in % of screen size
-            w = "0.180781 * safezoneW";
-            h = "0.044 * safezoneH";
+            w = FUEL_WIDTH;
+            h = FUEL_HEIGHT;
 
             // Control position
-            x = "(profileNamespace getVariable ['IGUI_BNA_KC_Jet_Grid_jetpackFuel_X', 0.773281 * safezoneW + safezoneX]) + 0.005156 * safezoneW";
-            y = "(profileNamespace getVariable ['IGUI_BNA_KC_Jet_Grid_jetpackFuel_Y', 0.478 * safezoneH + safezoneY]) + 0.011 * safezoneH";
+            x = (profileNamespace getVariable ["IGUI_BNA_KC_Jet_Grid_jetpackFuel_X", safeZoneX + WINDOW_X * safeZoneW]) + ((WINDOW_WIDTH / 2) - (FUEL_WIDTH / 2));
+            y = (profileNamespace getVariable ["IGUI_BNA_KC_Jet_Grid_jetpackFuel_Y", (safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2)]) + ((WINDOW_HEIGHT / 2) - (FUEL_HEIGHT / 2));
         };
     };
 };
@@ -159,8 +170,12 @@ class CfgUIGrids
                 description = "Fuel display for jetpacks";
                 preview = "\MRC\JLTS\jumppacks\data\ui\igui_preview_energy_ca.paa";
                 saveToProfile[] = {0, 1};
-                // ? - Not 100% sure what the 0 and 1 are doing, but it's present in JLTS's settings, seems to be what saves the control's
-                // ? - location in the "Customize Hud" menu
+                /*
+                0: Save X coordinate
+                1: Save Y coordinate
+                2: Save width (if resizing is allowed)
+                3: Save height (if resizing is allowed)
+                */
             };
         };
 
@@ -175,13 +190,13 @@ class CfgUIGrids
                     {
                         
                         {
-                            "0.773281 * safezoneW + safezoneX",
-                            "0.478 * safezoneH + safezoneY",
-                            "0.190781 * safezoneW",
-                            "0.044 * safezoneH"
+                            safeZoneX + WINDOW_X * safeZoneW, // Default X pos
+                            (safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2), // Default Y pos
+                            WINDOW_WIDTH, // Width
+                            WINDOW_HEIGHT // Height
                         },
-                        "(((safezoneW / safezoneH) min 1.2) / 40)",
-                        "((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)"
+                        "(((safezoneW / safezoneH) min 1.2) / 40)", // ???
+                        "((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)" // ???
                     };
                 };
             };
