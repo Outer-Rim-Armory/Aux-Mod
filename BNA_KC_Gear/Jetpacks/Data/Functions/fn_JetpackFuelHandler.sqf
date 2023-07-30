@@ -33,7 +33,7 @@ private _fuelCoef =
         inputAction _x == 1
     } count ["MoveBack", "TurnLeft", "TurnRight", "MoveForward"])
     +
-	// Jetpack variables
+    // Jetpack variables
     ({
         ace_player getVariable [_x, false]
     } count ["BNA_KC_Jet_rise", "BNA_KC_Jet_slowFall"])
@@ -41,8 +41,8 @@ private _fuelCoef =
 
 for "_i" from 1 to _fuelCoef + 1 do
 {
-	// Increase fuel cost for each movement action
-	_fuel = (_fuel - ((BASE_FUEL_COST * diag_deltaTime) * BNA_KC_Jet_FuelRate) max 0);
+    // Increase fuel cost for each movement action
+    _fuel = (_fuel - ((BASE_FUEL_COST * diag_deltaTime) * BNA_KC_Jet_FuelRate) max 0);
 };
 
 _jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuel];
