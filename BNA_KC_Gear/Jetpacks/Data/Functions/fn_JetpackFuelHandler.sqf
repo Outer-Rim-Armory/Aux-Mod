@@ -23,6 +23,7 @@ if (!(ace_player call BNAKC_fnc_CanUseJetpack) or isTouchingGround ace_player) e
 // Fuel levels are stored in the backpack object, makes it a bit more realistic
 private _jetpack = backpackContainer ace_player;
 
+private _oldFuel = [_jetpack] call BNAKC_fnc_GetJetpackFuel;
 private _fuel = [_jetpack] call BNAKC_fnc_GetJetpackFuel;
 
 private _fuelCoef =
@@ -45,4 +46,4 @@ for "_i" from 1 to _fuelCoef + 1 do
 };
 
 _jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuel];
-systemChat str ([_jetpack] call BNAKC_fnc_GetJetpackFuel);
+["BNA_KC_Jet_FuelChanged", [ace_player, _jetpack, _oldFuel, _fuel]] call CBA_fnc_GlobalEvent;

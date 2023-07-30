@@ -107,7 +107,7 @@ class RscTitles
         fadeIn = 0.5;
         fadeOut = 0.5;
 
-        // onLoad = "[_this] call BNAKC_fnc_jetpackDisplayOnLoad;"; // Code to run when loaded
+        onLoad = "[_this] call BNAKC_fnc_JetDialogOnLoad;"; // Code to run when loaded
         onUnload = ""; // Same thing but when unloaded
 
         // List of all the UI elements

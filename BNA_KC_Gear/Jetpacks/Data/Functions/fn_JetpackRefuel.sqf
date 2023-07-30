@@ -41,3 +41,4 @@ _fuelAmount = _fuelAmount min _maxFuel; // Prevents the jetpack being "over-fill
 // TODO: Display to unit (if a unit is passed) that their jetpack has been refilled
 
 _jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuelAmount];
+["BNA_KC_Jet_FuelChanged", [ace_player, _jetpack, _oldFuel, _fuel]] call CBA_fnc_GlobalEvent;

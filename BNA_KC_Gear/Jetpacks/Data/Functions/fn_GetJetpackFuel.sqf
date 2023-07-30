@@ -1,6 +1,6 @@
 /*
  * Author: DartRuffian
- * Returns current fuel level of a given jetpack, can optionally return value as percentage of current fuel / max fuel.
+ * Returns current fuel level of a given jetpack, can optionally return value as percentage of current fuel / max fuel (range from 0..1).
  *
  * Arguments:
  * backpack: Object - The backpack object to check
@@ -23,7 +23,7 @@ _backpack setVariable ["BNA_KC_Jet_currentFuel", _fuel]; // sets the value so th
 
 if (_returnPercent) then
 {
-	_fuel = (_fuel / _maxFuel) * 100;
+	_fuel = _fuel / _maxFuel;
 };
 
 _fuel;

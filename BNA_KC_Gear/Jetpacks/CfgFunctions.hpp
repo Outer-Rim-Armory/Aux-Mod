@@ -8,6 +8,9 @@ class CfgFunctions
             class JetKeybinds {};
             class JetSettings {};
             class JetAddRefuelActions {};
+            
+            class JetDialogOnLoad {};
+            class JetDialogUpdate {};
 
             class Jetpack {};
             class JetpackFrameHandler {};
@@ -37,6 +40,10 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Jetpacks_Effects_PostInit
     {
         init = "['BNA_KC_Jet_JetpackFired', BNAKC_fnc_JetpackEffectHandler] call CBA_fnc_addEventHandler;";
+    };
+    class BNA_KC_Jetpacks_FuelChanged_PostInit
+    {
+        init = "['BNA_KC_Jet_FuelChanged', BNAKC_fnc_JetDialogUpdate] call CBA_fnc_addEventHandler;";
     };
     class BNA_KC_Jetpacks_RefuelActions_PostInit
     {
