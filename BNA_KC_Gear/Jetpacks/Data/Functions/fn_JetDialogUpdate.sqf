@@ -24,13 +24,14 @@ private _display = missionNamespace getVariable ["BNA_KC_Jet_fuelDisplay", []];
 if (_display isEqualTo []) then
 {
     // Creates a new layer, and then displays the fuel dialog on the layer
-    ("BNA_KC_Jet_DialogLayer" call BIS_fnc_RscLayer) cutRsc
+    _display = ("BNA_KC_Jet_DialogLayer" call BIS_fnc_RscLayer) cutRsc
     [
         "BNA_KC_Jet_Dialog", // Display
         "PLAIN", // Normal, no extra effects
         1, // Seconds to fade in resource
         false // Show while in map
     ];
+    missionNamespace setVariable ["BNA_KC_Jet_fuelDisplay", _display];
 };
 
 // Get current display values

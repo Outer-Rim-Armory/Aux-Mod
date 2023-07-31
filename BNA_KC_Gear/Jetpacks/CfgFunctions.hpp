@@ -18,10 +18,12 @@ class CfgFunctions
             class JetpackSoundHandler {};
             class JetpackFuelHandler {};
             class SlowFall {};
+
             class HasJetpack {};
             class CanUseJetpack {};
             class GetJetpackFuel {};
             class JetpackRefuel {};
+            class JetpackPutOnTakeOff {};
         };
     };
 };
@@ -35,6 +37,7 @@ class Extended_PreInit_EventHandlers
     };
 };
 
+
 class Extended_PostInit_EventHandlers
 {
     class BNA_KC_Jetpacks_Effects_PostInit
@@ -44,6 +47,10 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Jetpacks_FuelChanged_PostInit
     {
         init = "['BNA_KC_Jet_FuelChanged', BNAKC_fnc_JetDialogUpdate] call CBA_fnc_addEventHandler;";
+    };
+    class BNA_KC_Jetpacks_PutOnTakeOff_PostInit
+    {
+        init = "['loadout', BNAKC_fnc_JetpackPutOnTakeOff, true] call CBA_fnc_AddPlayerEventHandler;";
     };
     class BNA_KC_Jetpacks_RefuelActions_PostInit
     {
