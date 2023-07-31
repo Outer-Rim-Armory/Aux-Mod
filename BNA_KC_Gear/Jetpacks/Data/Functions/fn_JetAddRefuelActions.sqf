@@ -23,6 +23,7 @@ private _refuelAction =
     {
         // Statement
         params ["_target", "_player", "_params"];
+        playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_start.wss", _player];
 
         private _jetpack = backpack _player;
         private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_fuel", 100);
