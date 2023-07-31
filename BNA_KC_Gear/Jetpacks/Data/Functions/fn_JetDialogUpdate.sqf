@@ -15,6 +15,8 @@
  * ['BNA_KC_Jet_FuelChanged', BNAKC_fnc_JetDialogUpdate] call CBA_fnc_AddEventHandler;
  */
 
+
+#define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 params ["_unit", "_jetpack", "_oldFuel", "_currentFuel"];
 
 // Remove display if unit does not have a jetpack
@@ -24,10 +26,10 @@ if !(_unit call BNAKC_fnc_HasJetpack) exitWith
 };
 
 // Variables
-private _display = missionNamespace getVariable ["BNA_KC_Jet_fuelDisplay", []];
+private _display = missionNamespace getVariable ["BNA_KC_Jet_fuelDisplay", [displayNull]];
 
 // If the display does not already exist, create it
-if (_display isEqualTo []) then
+if (isNull (_display select 0)) then
 {
     // Creates a new layer, and then displays the fuel dialog on the layer
     ("BNA_KC_Jet_DialogLayer" call BIS_fnc_RscLayer) cutRsc
