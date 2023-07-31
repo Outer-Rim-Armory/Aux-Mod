@@ -26,10 +26,10 @@ if !(_unit call BNAKC_fnc_HasJetpack) exitWith
 };
 
 // Variables
-private _display = missionNamespace getVariable ["BNA_KC_Jet_fuelDisplay", [displayNull]];
+private _display = missionNamespace getVariable ["BNA_KC_Jet_fuelDisplay", [displayNull]] select 0;
 
 // If the display does not already exist, create it
-if (isNull (_display select 0)) then
+if (isNull _display) then
 {
     // Creates a new layer, and then displays the fuel dialog on the layer
     ("BNA_KC_Jet_DialogLayer" call BIS_fnc_RscLayer) cutRsc
@@ -39,11 +39,11 @@ if (isNull (_display select 0)) then
         1, // Seconds to fade in resource
         false // Show while in map
     ];
-    _display = missionNamespace getVariable ["BNA_KC_Jet_fuelDisplay", []];
+    _display = missionNamespace getVariable ["BNA_KC_Jet_fuelDisplay", [displayNull]] select 0;
 };
 
 // Get current display values
-private _ctrlFuel = (_display select 0) displayCtrl 9001; // Idc for the fuel control
+private _ctrlFuel = _display displayCtrl 9001; // Idc for the fuel control
 
 // Sizes for the fuel display, these values MUST match the ones defined in BNA_KC_Jet_Dialog
 #define WINDOW_HEIGHT 0.3

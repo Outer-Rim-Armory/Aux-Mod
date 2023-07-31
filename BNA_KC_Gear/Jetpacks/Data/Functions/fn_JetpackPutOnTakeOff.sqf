@@ -15,7 +15,6 @@
 
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 
-DEV_LOG("Inventory changed");
 // Get jetpack and current (max) fuel
 private _jetpack = backpackContainer ace_player;
 private _fuel = _jetpack call BNAKC_fnc_GetJetpackFuel;
