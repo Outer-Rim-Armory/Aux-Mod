@@ -17,8 +17,12 @@
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 
-// Exit if unit does not have a jetpack
+// Exit if unit does not have / can not use a jetpack
 if !(ace_player call BNAKC_fnc_HasJetpack) exitWith {};
+if !(ace_player call BNAKC_fnc_CanUseJetpack) exitWith
+{
+    playSound3D ["MRC\JLTS\jumppacks\sounds\error.wss", ace_player];
+};
 
 // Jetpack properties
 private _jetpack = backpack ace_player;

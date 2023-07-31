@@ -12,6 +12,14 @@
  * call BNAKC_fnc_SlowFall;
  */
 
+
+// Exit if unit does not have / can not use a jetpack
+if !(ace_player call BNAKC_fnc_HasJetpack) exitWith {};
+if !(ace_player call BNAKC_fnc_CanUseJetpack) exitWith
+{
+    playSound3D ["MRC\JLTS\jumppacks\sounds\error.wss", ace_player];
+};
+
 // If a handler doesn't exist, then create it
 if (isNil "BNA_KC_Jet_JetpackHandle") then
 {
