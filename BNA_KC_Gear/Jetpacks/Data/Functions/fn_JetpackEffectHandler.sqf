@@ -39,13 +39,13 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
 // Spawn effects for each effect point
 {
     // Get the effect's location in the model
-    _positionModelEffectpoint = (backpackContainer _unit) selectionPosition [_x, "Memory"];
+    private _positionModelEffectpoint = (backpackContainer _unit) selectionPosition [_x, "Memory"];
 
     // [0, 0, 0] is the default value if the point does not exist
     if !(_positionModelEffectpoint isEqualTo [0, 0, 0]) then
     {
         // Calculate effect position relative to player model
-        _offsetEffect = (_positionModelEffectpoint vectorDiff POS_SPINE3);
+        private _offsetEffect = (_positionModelEffectpoint vectorDiff POS_SPINE3);
 
         if (currentWeapon _unit != "") then
         {
@@ -54,13 +54,13 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
         };
         
         // Spawn fire, light and smoke effects
-        _effectSourceFire = "#particlesource" createVehicleLocal [0, 0, 0];
+        private _effectSourceFire = "#particlesource" createVehicleLocal [0, 0, 0];
         _effectSourceFire setParticleClass _effectFire;
 
         _effectSourceSmoke = "#particlesource" createVehicleLocal [0, 0, 0];
         _effectSourceSmoke setParticleClass _effectSmoke;
 
-        _lightSource = "#lightpoint" createVehicleLocal [0, 0, 0];
+        private _lightSource = "#lightpoint" createVehicleLocal [0, 0, 0];
         _lightSource setLightColor [0, 0.1, 0.9];
         _lightSource setLightAmbient [0, 0, 0];
         _lightSource setLightBrightness 0.5;
