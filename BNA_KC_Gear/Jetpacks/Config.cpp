@@ -168,7 +168,7 @@ class CfgUIGrids
                 // Variable for saving the position of the UI control
                 displayName = "Jetpack Fuel";
                 description = "Fuel display for jetpacks";
-                preview = "\MRC\JLTS\jumppacks\data\ui\igui_preview_energy_ca.paa";
+                preview = "\BNA_KC_Gear\Jetpacks\Data\Textures\UI\BNA_KC_Jet_Dialog_Preview.paa";
                 saveToProfile[] = {0, 1};
                 /*
                 0: Save X coordinate
