@@ -880,6 +880,7 @@ class CfgAmmo
     class BNA_KC_Grenade_BactaDispenser_Ammo: SmokeShellBlue
     {
         model = "\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
+        smokeColor[] = {0.38, 0.54, 0.91, 0.35};
         
         aiAmmoUsageFlags = 0;
     };
