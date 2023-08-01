@@ -53,7 +53,21 @@ class CfgPatches
             "BNA_KC_Mag_150Rnd_Flamer",
 
             "BNA_KC_UGL_FlareBlue",
-            "BNA_KC_3Rnd_UGL_FlareBlue"
+            "BNA_KC_3Rnd_UGL_FlareBlue",
+
+            "BNA_KC_Grenade_DroidPopper"
+        };
+        ammo[] =
+        {
+            "12thFleet_Ammo_Rifle_Blue",
+            "12thFleet_Ammo_Sniper_Blue",
+            "12thFleet_Ammo_Pistol_Blue",
+            "12thFleet_Ammo_Westar_Blue",
+            
+            "12thFleet_Ammo_Stun",
+            "BNA_KC_Flare_Blue",
+
+            "BNA_KC_Grenade_DroidPopper_Ammo"
         };
     };
 };
