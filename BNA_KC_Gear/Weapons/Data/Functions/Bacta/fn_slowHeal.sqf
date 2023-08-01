@@ -18,7 +18,7 @@
 params ["_unit"];
 
 // Only allow one handler to exist
-if (isNil "BNA_KC_Weap_SlowHealHandle") then
+if !(isNil "BNA_KC_Weap_SlowHealHandle") then
 {
     [BNA_KC_Weap_SlowHealHandle] call CBA_fnc_removePerFrameHandler;
 };
