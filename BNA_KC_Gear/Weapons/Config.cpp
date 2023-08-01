@@ -766,7 +766,7 @@ class CfgMagazines
         displayNameShort = "Bacta Smoke Grenade";
         descriptionShort = "Pressurized bacta gas in grenade form.";
 
-        picture = "\MRC\JLTS\contraband\Drugs\data\ui\bacta_ui_ca.paa";
+        picture = "\LF_Medicial_Pack\data\ui\BactaCanister.paa";
 
         ammo = "BNA_KC_Grenade_BactaDispenser_Ammo";
         count = 1;
@@ -879,6 +879,8 @@ class CfgAmmo
     class SmokeShellBlue;
     class BNA_KC_Grenade_BactaDispenser_Ammo: SmokeShellBlue
     {
+        model = "\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
+        
         aiAmmoUsageFlags = 0;
     };
 };
