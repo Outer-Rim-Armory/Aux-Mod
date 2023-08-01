@@ -17,7 +17,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC] AVI P2 Helm (Base)";
+        displayName = "[KC] AVI P2 Helm 01 (Pilot)";
 
         model = "ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
         hiddenSelections[] = { "camo1", "visor" };
@@ -50,7 +50,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC] AVI P1 Helm (Base)";
+        displayName = "[KC] AVI P1 Helm 01 (Pilot)";
 
         model = "ls_armor_bluefor\helmet\gar\phase1Pilot\ls_gar_phase1Pilot_helmet.p3d";
         hiddenSelections[] = { "camo1", "camo2", "visor" };
