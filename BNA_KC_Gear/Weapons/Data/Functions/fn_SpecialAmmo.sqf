@@ -4,7 +4,7 @@ params ["_eventHandlerType"];
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
 #define GET_STRING(config, _defaultValue) (if (isText (config)) then {getText (config)} else {_defaultValue})
 
-["_eventHandlerType",
+[_eventHandlerType,
 {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
     // Early exit to save time
