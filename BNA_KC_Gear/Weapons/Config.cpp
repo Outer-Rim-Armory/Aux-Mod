@@ -678,11 +678,16 @@ class CfgWeapons
     class GrenadeLauncher;
     class Throw: GrenadeLauncher
     {
-        muzzles[] += { "BNA_KC_DroidPopper_Muzzle" };
+        muzzles[] += { "BNA_KC_DroidPopper_Muzzle", "BNA_KC_BactaDispenser_Muzzle" };
         class BNA_KC_DroidPopper_Muzzle: ThrowMuzzle
         {
             displayName = "[KC] Droid Popper";
             magazines[] += { "BNA_KC_Grenade_DroidPopper" };
+        };
+        class BNA_KC_BactaDispenser_Muzzle: ThrowMuzzle
+        {
+            displayName = "[KC] Bacta Grenade";
+            magazines[] += { "BNA_KC_Grenade_BactaDispenser" };
         };
     };
 };
@@ -744,6 +749,31 @@ class CfgMagazines
         BNA_KC_GrenadeEMP_Radius_Droid = 3;
         BNA_KC_GrenadeEMP_Radius_Deka = 5;
         BNA_KC_GrenadeEMP_Radius_Vehicle = 5;
+    };
+
+    class SmokeShellBlue;
+    class BNA_KC_Grenade_BactaDispenser: SmokeShellBlue
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Pressurized Bacta Grenade";
+        displayNameShort = "Bacta Smoke Grenade";
+        descriptionShort = "Pressurized bacta gas in grenade form.";
+
+        picture = "\MRC\JLTS\contraband\Drugs\data\ui\bacta_ui_ca.paa";
+
+        ammo = "BNA_KC_Grenade_BactaDispenser_Ammo";
+        count = 1;
+
+        BNA_KC_GrenadeType = "BACTA";
+        BNA_KC_GrenadeBacta_Radius = 20;
+        BNA_KC_GrenadeBacta_Duration = 20;
     };
 };
 
@@ -844,5 +874,11 @@ class CfgAmmo
 			power=0;
 		};
         */
+    };
+
+    class SmokeShellBlue;
+    class BNA_KC_Grenade_BactaDispenser_Ammo: SmokeShellBlue
+    {
+        aiAmmoUsageFlags = 0;
     };
 };

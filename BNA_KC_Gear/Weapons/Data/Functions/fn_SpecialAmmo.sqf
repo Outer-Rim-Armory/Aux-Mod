@@ -32,6 +32,7 @@ params ["_eventHandlerType"];
         };
 
         private _grenadeType = GET_STRING(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeType", "");
+        DEV_LOG(_grenadeType);
 
         switch (_grenadeType) do
         {
@@ -67,6 +68,28 @@ params ["_eventHandlerType"];
                     private _tanks = nearestObjects [_position, [], _radiusVehicle] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
                     [_tanks, BNA_KC_DroidPopper_DisableTime] call BNAKC_fnc_TempDisableVehicles;
                 };
+            };
+
+            case "BACTA":
+            {
+                DEV_LOG("Is bacta grenade");
+                private _healRadius   = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeBacta_Radius", 5);
+                private _healDuration = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeBacta_Duration", 5);
+
+                // nearEntities is faster than nearestObjects for normal units, but it does not sort by distance
+                private _nearbyUnits = _position nearEntities ["Man", _healRadius];
+
+                {
+                    _x call BNAKC_fnc_slowHeal;
+                } forEach _nearbyUnits;
+
+                if (BNA_KC_DevMode) then { systemChat format ["Waiting %1", _healDuration]; };
+                sleep _healDuration;
+                DEV_LOG("Wait over");
+
+                // Delete smoke grenade, remove handler
+                deleteVehicle _projectile;
+                [BNA_KC_Weap_SlowHealHandle] call CBA_fnc_removePerFrameHandler;
             };
         };
     };

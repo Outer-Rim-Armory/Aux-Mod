@@ -55,7 +55,8 @@ class CfgPatches
             "BNA_KC_UGL_FlareBlue",
             "BNA_KC_3Rnd_UGL_FlareBlue",
 
-            "BNA_KC_Grenade_DroidPopper"
+            "BNA_KC_Grenade_DroidPopper",
+            "BNA_KC_Grenade_BactaDispenser"
         };
         ammo[] =
         {
@@ -67,7 +68,8 @@ class CfgPatches
             "12thFleet_Ammo_Stun",
             "BNA_KC_Flare_Blue",
 
-            "BNA_KC_Grenade_DroidPopper_Ammo"
+            "BNA_KC_Grenade_DroidPopper_Ammo",
+            "BNA_KC_Grenade_BactaDispenser_Ammo"
         };
     };
 };
