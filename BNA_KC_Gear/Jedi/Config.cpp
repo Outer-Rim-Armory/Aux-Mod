@@ -6,31 +6,19 @@ class CfgWeapons
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
-    class lsd_blueforUniform_base;
-    class lsd_gar_jediCommander_uniform: lsd_blueforUniform_base
+    class ls_gar_phase2_uniform;
+    class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
     {
         class ItemInfo;
     };
 
-    class BNA_KC_Uniform_Jedi_Commander: lsd_gar_jediCommander_uniform
+    class BNA_KC_Uniform_Jedi_Commander: BNA_KC_Uniform_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
         displayName = "[KC] Jedi Commander Armor";
 
         class ItemInfo: ItemInfo
         {
-            uniformModel = "-";
             uniformClass = "BNA_KC_Unit_Jedi_Commander";
-            containerClass = "Supply150";
-            mass = 40;
-            uniformType = "Neopren";
         };
     };
 
@@ -69,33 +57,64 @@ class CfgVehicles
     // │       Units       │
     // └───────────────────┘
     class lsd_gar_jediCommander_base;
-
-    class BNA_KC_Unit_Jedi_Commander: lsd_gar_jediCommander_base
+    class BNA_KC_Unit_Phase2_Base;
+    class BNA_KC_Unit_Jedi_Commander: BNA_KC_Unit_Phase2_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeCurator = 2;
-
-        // Editor Attributes
-        faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_Jedi";
-        
         displayName = "[KC] Jedi Commander";
+        editorSubcategory = "BNA_KC_SubCat_Jedi";
 
         uniformClass = "BNA_KC_Uniform_Jedi_Commander";
+        model = "lsd_armor_bluefor\uniform\gar\jediCommander\lsd_gar_jediCommander_uniform.p3d";
+        hiddenSelections[] = { "armor_camo", "robe_camo", "belt_camo", "under_camo" };
+        hiddenSelectionsTextures[] =
+        {
+            "lsd_armor_bluefor\uniform\gar\jediCommander\data\armor_co.paa",
+            "lsd_armor_bluefor\uniform\gar\jediCommander\data\robes_co.paa",
+            "lsd_armor_bluefor\uniform\gar\jediCommander\data\belt_co.paa",
+            "lsd_armor_bluefor\uniform\gar\jediCommander\data\undersuit_co.paa"
+        };
+
+        // Inventory
+        weapons[] =
+        {
+            "",
+            "LFP_Lightsaber_Skywalker_b",
+            "SWLB_clone_commander_binocular",
+            "Throw",               // Allows the unit to throw grenades
+            "Put"                  // Allows the unit to place explosives
+        };
+        respawnWeapons[] =
+        {
+            "",
+            "LFP_Lightsaber_Skywalker_b",
+            "SWLB_clone_commander_binocular",
+            "Throw",
+            "Put"
+        };
+        magazines[] =
+        {
+            "Force_tir_1",
+            "Force_tir_2",
+            "Force_tir_3",
+        };
+        respawnMagazines[] =
+        {
+            "Force_tir_1",
+            "Force_tir_2",
+            "Force_tir_3",
+        };
+        items[] = {};
+        respawnItems[] = {};
+
         linkedItems[] =
         {
-            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "tf_microdagr"
+            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
-        backpack = "";
+        backpack = "BNA_KC_Backpack_Radio_Invisible";
     };
 };
 

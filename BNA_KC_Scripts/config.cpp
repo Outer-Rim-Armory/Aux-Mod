@@ -49,14 +49,6 @@ class CfgFunctions
 			class FortificationsPostInit{};
             class RegisterPreset{};
 		};
-        class Weapons
-        {
-            file = "BNA_KC_Scripts\Data\Functions\Weapons";
-            class SpecialAmmo{};
-            class PlayDroidPopperSound{};
-            class TempDisableVehicles{};
-            class DisableDekaShields{};
-        };
         class Map
         {
             file = "BNA_KC_Scripts\Data\Functions\Map";
@@ -87,10 +79,6 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Scripts_FortificationsPostInit
 	{
         init = "call BNAKC_fnc_FortificationsPostInit";
-    };
-    class BNA_KC_Scripts_SpecialAmmo
-    {
-        init = "['ace_firedPlayer'] call BNAKC_fnc_SpecialAmmo; ['ace_firedPlayerVehicle'] call BNAKC_fnc_SpecialAmmo;";
     };
     class BNA_KC_Scripts_CreateMarkAction
     {

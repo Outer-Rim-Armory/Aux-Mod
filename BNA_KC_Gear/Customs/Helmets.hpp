@@ -652,7 +652,7 @@ class BNA_KC_Helmet_Phase2_Keeli_CamoBrown: BNA_KC_Helmet_Phase2_Base
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
     };
 };
-class BNA_KC_Helmet_Phase2_Keeli_CamoBrown_Crimson: BNA_KC_Helmet_Phase2_Keeli
+class BNA_KC_Helmet_Phase2_Keeli_CamoBrown_Crimson: BNA_KC_Helmet_Phase2_Keeli_CamoBrown
 {
     // Scopes
     scope = 1;
@@ -684,7 +684,7 @@ class BNA_KC_Helmet_Phase2_Keeli_CamoGrey: BNA_KC_Helmet_Phase2_Base
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
     };
 };
-class BNA_KC_Helmet_Phase2_Keeli_CamoGrey_Crimson: BNA_KC_Helmet_Phase2_Keeli
+class BNA_KC_Helmet_Phase2_Keeli_CamoGrey_Crimson: BNA_KC_Helmet_Phase2_Keeli_CamoGrey
 {
     // Scopes
     scope = 1;
@@ -793,6 +793,16 @@ class BNA_KC_Helmet_Phase2_Taun: BNA_KC_Helmet_Phase2_Base
 	};
 };
 
+class BNA_KC_Helmet_Phase2_Tyrant: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm ('Tyrant)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Tyrant.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
+};
+
 class BNA_KC_Helmet_Phase2_Woods: BNA_KC_Helmet_Phase2_Base
 {
 	displayName = "[KC] INF Helm ('Woods')";
@@ -807,9 +817,9 @@ class BNA_KC_Helmet_Phase2_Woods: BNA_KC_Helmet_Phase2_Base
 // ┌───────────────────┐
 // │    ENG Helmets    │
 // └───────────────────┘
-class BNA_KC_Helmet_Engineer_Base;
+class BNA_KC_Helmet_Engineer;
 /*
-class BNA_KC_Helmet_Engineer_x: BNA_KC_Helmet_Engineer_Base
+class BNA_KC_Helmet_Engineer_x: BNA_KC_Helmet_Engineer
 {
 	displayName = "[KC] INF ENG Helm ('x')";
 	hiddenSelectionsTextures[] =
@@ -825,9 +835,9 @@ class BNA_KC_Helmet_Engineer_x: BNA_KC_Helmet_Engineer_Base
 // ┌───────────────────┐
 // │    AB  Helmets    │
 // └───────────────────┘
-class BNA_KC_Helmet_Airborne_Base;
+class BNA_KC_Helmet_Airborne;
 /*
-class BNA_KC_Helmet_Airborne_x: BNA_KC_Helmet_Airborne_Base
+class BNA_KC_Helmet_Airborne_x: BNA_KC_Helmet_Airborne
 {
 	displayName = "[KC] AB Helm ('x')";
 	hiddenSelectionsTextures[] =
@@ -1010,11 +1020,11 @@ class BNA_KC_Helmet_Phase2_Tanker_Grey: BNA_KC_Helmet_Phase2_Tanker
 // │    SF  Helmets    │
 // └───────────────────┘
 // May be broken up into separate ARC, ARF, and BARC categories if necessary.
-class BNA_KC_Helmet_ARC_Base;
-class BNA_KC_Helmet_ARF_Base;
-class BNA_KC_Helmet_BARC_Base;
+class BNA_KC_Helmet_ARC;
+class BNA_KC_Helmet_ARF;
+class BNA_KC_Helmet_BARC;
 
-class BNA_KC_Helmet_ARC_Drake: BNA_KC_Helmet_ARC_Base
+class BNA_KC_Helmet_ARC_Drake: BNA_KC_Helmet_ARC
 {
 	BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_ARC_Drake";
@@ -1046,7 +1056,7 @@ class BNA_KC_Helmet_ARC_Drake_Bacta: BNA_KC_Helmet_ARC_Drake
 	};
 };
 
-class BNA_KC_Helmet_ARC_Hagrid: BNA_KC_Helmet_ARC_Base
+class BNA_KC_Helmet_ARC_Hagrid: BNA_KC_Helmet_ARC
 {
 	displayName = "[KC] SF ARC Helm ('Hagrid')";
 	hiddenSelectionsTextures[] = 
@@ -1056,7 +1066,7 @@ class BNA_KC_Helmet_ARC_Hagrid: BNA_KC_Helmet_ARC_Base
 	};
 };
 
-class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC_Base
+class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC
 {
 	displayName = "[KC] SF ARC Helm ('Tyrant')";
 	hiddenSelectionsTextures[] = 
@@ -1066,7 +1076,7 @@ class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC_Base
 	};
 };
 
-class BNA_KC_Helmet_ARF_Patriot: BNA_KC_Helmet_ARF_Base
+class BNA_KC_Helmet_ARF_Patriot: BNA_KC_Helmet_ARF
 {
 	displayName = "[KC] SF ARF Helm ('Patriot')";
 	hiddenSelectionsTextures[] = 
@@ -1077,7 +1087,7 @@ class BNA_KC_Helmet_ARF_Patriot: BNA_KC_Helmet_ARF_Base
 	};
 };
 
-class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF_Base
+class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF
 {
 	displayName = "[KC] SF ARF Helm ('Sin')";
 	hiddenSelectionsTextures[] = 
@@ -1088,7 +1098,7 @@ class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF_Base
 	};
 };
 
-class BNA_KC_Helmet_BARC_Rat: BNA_KC_Helmet_BARC_Base
+class BNA_KC_Helmet_BARC_Rat: BNA_KC_Helmet_BARC
 {
     // NVG Script
     BNAKC_Helmet_Toggle = 1;
@@ -1125,9 +1135,9 @@ class BNA_KC_Helmet_BARC_Rat_Crimson: BNA_KC_Helmet_BARC_Rat
 // ┌────────────────────┐
 // │    Snow Helmets    │
 // └────────────────────┘
-class BNA_KC_Helmet_Insulated_Base;
+class BNA_KC_Helmet_Insulated;
 
-class BNA_KC_Helmet_Insulated_Dexus: BNA_KC_Helmet_Insulated_Base
+class BNA_KC_Helmet_Insulated_Dexus: BNA_KC_Helmet_Insulated
 {
 	displayName = "[KC] INF Snow Helm ('Dexus')";
     hiddenSelectionsTextures[] =
@@ -1136,7 +1146,7 @@ class BNA_KC_Helmet_Insulated_Dexus: BNA_KC_Helmet_Insulated_Base
     };
 };
 
-class BNA_KC_Helmet_Insulated_Joe: BNA_KC_Helmet_Insulated_Base
+class BNA_KC_Helmet_Insulated_Joe: BNA_KC_Helmet_Insulated
 {
 	displayName = "[KC] INF Snow Helm ('Joe')";
     hiddenSelectionsTextures[] =
@@ -1145,7 +1155,7 @@ class BNA_KC_Helmet_Insulated_Joe: BNA_KC_Helmet_Insulated_Base
     };
 };
 
-class BNA_KC_Helmet_Insulated_Keeli: BNA_KC_Helmet_Insulated_Base
+class BNA_KC_Helmet_Insulated_Keeli: BNA_KC_Helmet_Insulated
 {
 	displayName = "[KC] INF Snow Helm ('Keeli')";
     hiddenSelectionsTextures[] =

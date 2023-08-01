@@ -44,17 +44,17 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Officer, [KC] INF P2 Helm 12+ (Officer), BN
 // ┌───────────────────┐
 // │    AB  Helmets    │
 // └───────────────────┘
-HELMET_HOLDER(BNA_KC_HelmetHolder_AB, [KC] AB Helm (Trooper), BNA_KC_Helmet_Airborne_Base, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_AB, [KC] AB Helm (Trooper), BNA_KC_Helmet_Airborne, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_AB_v2, [KC] AB Helm (Trooper, Version 2), BNA_KC_Helmet_Airborne_v2, "P2")
 
 
 // ┌───────────────────┐
 // │    ENG Helmets    │
 // └───────────────────┘
-HELMET_HOLDER(BNA_KC_HelmetHolder_ENG, [KC] ENG Helm (Base), BNA_KC_Helmet_Engineer_Base, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_ENG, [KC] ENG Helm (Base), BNA_KC_Helmet_Engineer, "P2")
 
 
 // ┌───────────────────┐
 // │   SNOW  Helmets   │
 // └───────────────────┘
-HELMET_HOLDER(BNA_KC_HelmetHolder_Insulated, [KC] INF Snow Helm (Trooper), BNA_KC_Helmet_Insulated_Base, "Insulated")
+HELMET_HOLDER(BNA_KC_HelmetHolder_Insulated, [KC] INF Snow Helm (Trooper), BNA_KC_Helmet_Insulated, "Insulated")

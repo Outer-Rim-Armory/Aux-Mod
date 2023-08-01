@@ -23,19 +23,6 @@ the path begins with a "\", but it essentially represents the project root
 #define ITEM_11(a) a, a, a, a, a, a, a, a, a, a, a
 #define ITEM_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 
-// NVG / Thermal Vision
-/*
-thermalMode Values
-0: White-Hot
-1: Black-Hot
-2: Green-Hot
-3: Green/Black-Hot
-4: Red-Hot
-5: Red/Black-Hot
-*/
-#define VISION_MODE () "Normal", "NVG", "TI"
-#define THERMAL_MODE () 0
-
 
 // Objects
 // Macro for making a placeable version of a helmet

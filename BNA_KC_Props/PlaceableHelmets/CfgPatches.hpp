@@ -131,6 +131,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Stone",
             "BNA_KC_HelmetHolder_P2_Swoop",
             "BNA_KC_HelmetHolder_P2_Taun",
+            "BNA_KC_HelmetHolder_P2_Tyrant",
             "BNA_KC_HelmetHolder_P2_Woods",
             // Snow
             "BNA_KC_HelmetHolder_Insulated_Dexus",

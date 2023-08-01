@@ -24,9 +24,11 @@ class CfgPatches
                 // Rangefinder NVGs
             "SWLB_equipment_backpacks",
                 // Infantry Backpacks
-            "SWLB_Clones"
+            "SWLB_Clones",
                 // Clone Commander Visor
                 // Officer Vest
+            "JLTS_core"
+                // Droid NVG UI image
         };
         units[] =
         {
@@ -92,7 +94,7 @@ class CfgPatches
             // Airborne Units
 
             // Insulated (Snow) Units
-            "BNA_KC_Unit_Insulated",
+            "BNA_KC_Unit_Insulated_Trooper",
 
             // Backpacks
             "BNA_KC_Backpack",
@@ -169,14 +171,14 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Officer_CamoGrey",
 
             // Engineer Helmets
-            "BNA_KC_Helmet_Engineer_Base",
+            "BNA_KC_Helmet_Engineer",
 
             // Airborne
             "BNA_KC_Helmet_Airborne",
             "BNA_KC_Helmet_Airborne_v2",
 
             // Insulated (Snow) Helmets
-            "BNA_KC_Helmet_Insulated_Base",
+            "BNA_KC_Helmet_Insulated",
 
             // Uniforms
             "BNA_KC_Uniform_Base",
@@ -210,9 +212,15 @@ class CfgPatches
             "BNA_KC_Uniform_Officer_CamoGrey",
 
             // Insualted (Snow) Uniforms
-            "BNA_KC_Uniform_Insulated_Base",
+            "BNA_KC_Uniform_Insulated",
 
             // Vests
+            "BNA_KC_Vest_Basic",
+            "BNA_KC_Vest_Medic",
+            "BNA_KC_Vest_Medic_Senior",
+            "BNA_KC_Vest_Medic_v2",
+            "BNA_KC_Vest_Medic_Senior_v2",
+            "BNA_KC_Vest_Medic_Platoon",
             "BNA_KC_Vest_Officer",
 
             // NVGs

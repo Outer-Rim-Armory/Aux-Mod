@@ -8,7 +8,33 @@ class CfgWeapons
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
-    class BNA_KC_Vest_Officer;
+    class BNA_KC_Vest_Basic;
+    class BNA_KC_Vest_Officer: BNA_KC_Vest_Basic
+    {
+        class ItemInfo;
+    };
+    
+    class BNA_KC_Vest_Officer_Keeli: BNA_KC_Vest_Officer
+    {
+        displayName = "[KC] INF Vest 12+ ('Keeli')";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Customs\Data\Vests\BNA_KC_Vest_Officer_Keeli.paa"
+        };
+    };
+    class BNA_KC_Vest_Officer_Ponds: BNA_KC_Vest_Officer
+    {
+        displayName = "[KC] INF Vest 12+ ('Ponds')";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Customs\Data\Vests\BNA_KC_Vest_Officer_Ponds.paa"
+        };
+
+        class ItemInfo: ItemInfo
+        {
+            containerClass = "Supply250"; // To match medic vests
+        };
+    };
     class BNA_KC_Vest_Officer_Rat: BNA_KC_Vest_Officer
     {
         displayName = "[KC] INF Vest 12+ ('Rat')";

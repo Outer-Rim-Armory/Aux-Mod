@@ -93,6 +93,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Stone",
             "BNA_KC_Helmet_Phase2_Swoop",
             "BNA_KC_Helmet_Phase2_Taun",
+            "BNA_KC_Helmet_Phase2_Tyrant",
             "BNA_KC_Helmet_Phase2_Woods",
 
             // Engineer Helmets
@@ -149,6 +150,8 @@ class CfgPatches
             "BNA_KC_Uniform_Insulated_Keeli",
 
             // Vests
+            "BNA_KC_Vest_Officer_Keeli",
+            "BNA_KC_Vest_Officer_Ponds",
             "BNA_KC_Vest_Officer_Rat",
 
             // NVGs

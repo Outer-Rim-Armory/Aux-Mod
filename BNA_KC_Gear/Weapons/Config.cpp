@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "CfgFunctions.hpp"
 
 
 class Mode_SemiAuto;
@@ -58,10 +59,10 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] Westar-M5";
+        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
 		recoil = "recoil_smg_03";
         canShootInWater = 1;
 
@@ -122,10 +123,10 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] Westar-M5 UGL";
+        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
 		recoil = "recoil_smg_03";
         canShootInWater = 1;
 
@@ -209,7 +210,6 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         // Burn 'Em Redux Properties
@@ -220,7 +220,7 @@ class CfgWeapons
         displayName = "[KC] BlasTech X-42 Flamethrower";
         // Change look to match the 3AS Flamer
         model = "3AS\3AS_Weapons\X42\BX42.p3d";
-        picture = "3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
+        picture = "\3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
         handAnim[] = 
         {
             "OFP2_ManSkeleton",
@@ -269,7 +269,16 @@ class CfgWeapons
             class BaseSoundModeType {};
             class StandardSound: BaseSoundModeType {};
         };
+
+        class Stun;
     };
+
+    #define STUN class Stun: Stun \
+{ \
+    displayName = "Stun"; \
+    magazines[] = { "12thFleet_Mag_StunLong", "12thFleet_Mag_StunShort" }; \
+    magazineWell[] = {}; \
+};
 
     class BNA_KC_DC15S: JLTS_DC15S
     {
@@ -337,6 +346,8 @@ class CfgWeapons
                 soundBeginWater[] = {begin1, 1};
             };
         };
+
+        STUN;
     };
 
     class BNA_KC_DC15S_RiotShield: BNA_KC_DC15S
@@ -396,6 +407,8 @@ class CfgWeapons
             class BaseSoundModeType {};
             class StandardSound: BaseSoundModeType {};
         };
+
+        class Stun;
     };
     class JLTS_DC15A_plastic: JLTS_DC15A {};
 
@@ -407,7 +420,6 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15A";
@@ -465,6 +477,8 @@ class CfgWeapons
                 soundBeginWater[] = {begin1, 1};
             };
         };
+
+        STUN;
     };
 
     class JLTS_DC15A_ugl: JLTS_DC15A
@@ -475,6 +489,8 @@ class CfgWeapons
         };
         class EGLM;
         class GL_3GL_F;
+
+        class Stun;
     };
     class JLTS_DC15A_ugl_plastic: JLTS_DC15A_ugl {};
 
@@ -486,7 +502,6 @@ class CfgWeapons
 
         // Scope
         scope = 2;
-        scopeCurator = 2;
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15A UGL";
@@ -544,6 +559,7 @@ class CfgWeapons
                 soundBeginWater[] = {begin1, 1};
             };
         };
+
         class EGLM: EGLM
         {
             canShootInWater = 0;
@@ -582,6 +598,13 @@ class CfgWeapons
         {
             class BaseSoundModeType {};
             class StandardSound: BaseSoundModeType {};
+        };
+
+        class Stun;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
         };
     };
     class BNA_KC_DC17: JLTS_DC17SA
@@ -632,20 +655,12 @@ class CfgWeapons
             muzzleEnd = "Konec hlavne";
         };
 
+        STUN;
+
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
-            class CowsSlot
+            class CowsSlot: CowsSlot
             {
-                displayName = "Optics Slot";
-                
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinpoint = "Bottom";
-                iconPosition[] = {0.5,0.35};
-                iconScale = 0.2;
-
-                linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-
                 compatibleItems[] = 
                 {
                     // Sights
@@ -691,7 +706,7 @@ class CfgMagazines
         displayName = "[KC] Flare Round (Blue)";
         displayNameShort = "Blue Flare";
         descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: EGLM, 3GL";
-        picture = "BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_FlareBlue_UI.paa";
+        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_FlareBlue_UI.paa";
 
         ammo = "BNA_KC_Flare_Blue";
         count = 1;
@@ -701,6 +716,7 @@ class CfgMagazines
     {
         displayName = "[KC] 3Rnd 3GL Flares (Blue)";
         descriptionShort = "Type: Flare Rounds - Blue <br />Rounds: 3 <br />Used in: EGLM, 3GL";
+        mass = 12;
         count = 3;
     };
 

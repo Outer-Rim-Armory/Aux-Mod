@@ -117,13 +117,13 @@ class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Base
 // ┌────────────────────┐
 // │   Snow  Uniforms   │
 // └────────────────────┘
-class lsd_gar_phase2Insulated_uniform;
-class BNA_KC_Uniform_Insulated_Base: lsd_gar_phase2Insulated_uniform
+class BNA_KC_Uniform_Base;
+class BNA_KC_Uniform_Insulated: BNA_KC_Uniform_Base
 {
     class ItemInfo;
 };
 
-class BNA_KC_Uniform_Insulated_Dexus: BNA_KC_Uniform_Insulated_Base
+class BNA_KC_Uniform_Insulated_Dexus: BNA_KC_Uniform_Insulated
 {
 	displayName = "[KC] INF Snow Armor ('Dexus')";
     class ItemInfo: ItemInfo
@@ -132,7 +132,7 @@ class BNA_KC_Uniform_Insulated_Dexus: BNA_KC_Uniform_Insulated_Base
     };
 };
 
-class BNA_KC_Uniform_Insulated_Joe: BNA_KC_Uniform_Insulated_Base
+class BNA_KC_Uniform_Insulated_Joe: BNA_KC_Uniform_Insulated
 {
 	displayName = "[KC] INF Snow Armor ('Joe')";
     class ItemInfo: ItemInfo
@@ -141,7 +141,7 @@ class BNA_KC_Uniform_Insulated_Joe: BNA_KC_Uniform_Insulated_Base
     };
 };
 
-class BNA_KC_Uniform_Insulated_Keeli: BNA_KC_Uniform_Insulated_Base
+class BNA_KC_Uniform_Insulated_Keeli: BNA_KC_Uniform_Insulated
 {
 	displayName = "[KC] INF Snow Armor ('Keeli')";
     class ItemInfo: ItemInfo

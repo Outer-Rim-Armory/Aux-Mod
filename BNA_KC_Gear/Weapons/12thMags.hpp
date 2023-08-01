@@ -38,7 +38,7 @@ class 12thFleet_Mag_StunLong: JLTS_stun_mag_long
 {
     displayName = "[12th Fleet] Stun Energy Cell (Long)";
     displayNameShort = "Stun Rounds";
-    descriptionShort = "Stun Energy Cell <br />Rounds: 5 <br />Duration: 15 Seconds <br />Used in: DC-17 Pistol";
+    descriptionShort = "Stun Energy Cell <br />Rounds: 5 <br />Duration: 15 Seconds <br />Used in: DC-15S, DC-15A, DC-17";
 
     ammo = "12thFleet_Ammo_Stun";
 };
@@ -48,7 +48,7 @@ class 12thFleet_Mag_StunShort: JLTS_stun_mag_short
 {
     displayName = "[12th Fleet] Stun Energy Cell (Short)";
     displayNameShort = "Stun Rounds";
-    descriptionShort = "Stun Energy Cell <br />Rounds: 10 <br />Duration: 5 Seconds <br />Used in: DC-17 Pistol";
+    descriptionShort = "Stun Energy Cell <br />Rounds: 10 <br />Duration: 5 Seconds <br />Used in: DC-15S, DC-15A, DC-17";
 
     ammo = "12thFleet_Ammo_Stun";
 };
@@ -68,8 +68,8 @@ class BNA_KC_Mag_300Rnd_Flamer: M2_Fuel_Tank
 {
     displayName = "[KC] BT X-42 Fuel Tank";
     // 3AS Ammo Picture
-    picture = "3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
-    UiPicture = "3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
+    picture = "\3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
+    UiPicture = "\3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
     mass = 50;
 };
 

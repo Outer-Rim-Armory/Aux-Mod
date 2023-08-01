@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "CfgFunctions.hpp"
 
 
 class CfgVehicles
@@ -508,26 +509,30 @@ class CfgVehicles
 
         displayName = "[KC] OLV-20 APC";
 
+        BNA_KC_EMP_Radius_Droid = 25;
+        BNA_KC_EMP_Radius_Deka = 25;
+        BNA_KC_EMP_Radius_Vehicle = 25;
+
         hiddenSelectionsTextures[] = {};
-        textureList[] = {"KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0};
+        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
 
         class TextureSources
         {
-            class KeeliCompany
+            class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
-                displayName = "Keeli Company";
+                displayName = "Keeli Company Camo";
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Hull.paa",
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Wheels.paa",
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Hull_CamoKC.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Wheels_CamoKC.paa",
+                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
             };          
-            class BrownCamo: KeeliCompany
+            class CamoBrown: CamoKC
             {
                 displayName = "Brown Camo";
                 textures[] =
@@ -539,7 +544,7 @@ class CfgVehicles
                     ""  // Cage Texture
                 };
             };
-            class GreyCamo: KeeliCompany
+            class CamoGrey: CamoKC
             {
                 displayName = "Grey Camo";
                 textures[] =
@@ -582,6 +587,22 @@ class CfgVehicles
                 //     "200Rnd_127x99_mag_Tracer_Green",
                 //     "SmokeLauncherMag"
                 // };
+            };
+        };
+    
+        class UserActions
+        {
+            class ActivateEMP
+            {
+                displayName = "<t font='RobotoCondensedBold'>Activate EMP</t>";
+                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\iconLightning_ca.paa'>";
+                position = "pilotview";
+                radius = 100;
+                priority = 100;
+                hideOnUse = 1;
+
+                condition = "ls_player == currentPilot this and isEngineOn this;";
+                statement = "this call BNAKC_fnc_ActivateEMP;";
             };
         };
     };
