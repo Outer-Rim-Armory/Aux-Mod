@@ -18,16 +18,19 @@ class CfgPatches
         {
             // Units
             "BNA_KC_Unit_Phase1_Pilot",
-            "BNA_KC_Unit_Phase2_Pilot"
+            "BNA_KC_Unit_Phase2_Pilot",
+            "BNA_KC_Unit_Phase2_Pilot_Officer"
         };
         weapons[] =
         {
             // Helmets
             "BNA_KC_Helmet_Phase1_Pilot",
             "BNA_KC_Helmet_Phase2_Pilot",
+            "BNA_KC_Helmet_Phase2_Pilot_Officer",
 
             // Uniforms
-            "BNA_KC_Uniform_Pilot"
+            "BNA_KC_Uniform_Pilot",
+            "BNA_KC_Uniform_Pilot_Officer",
         };
     };
 };

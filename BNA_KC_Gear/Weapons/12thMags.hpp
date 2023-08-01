@@ -29,7 +29,7 @@ class JLTS_DC17SA_mag;
 class 12thFleet_Mag_DC17: JLTS_DC17SA_mag
 {
     displayName = "[12th Fleet] DC-17 Energy Cell (20 Rnd)";
-    ammo = "12thFleet_Ammo_Rifle_Blue";
+    ammo = "12thFleet_Ammo_Pistol_Blue";
 };
 
 // Stun
