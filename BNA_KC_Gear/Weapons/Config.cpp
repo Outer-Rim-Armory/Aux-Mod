@@ -744,6 +744,32 @@ class CfgWeapons
         };
     };
 
+    class OPTRE_M319s;
+    class BNA_KC_GR20: OPTRE_M319s
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] GR-20";
+        descriptionShort = "An old GR-10 plasma blaster, modified to shoot <br />pressurized bacta canisters instead of plasma.";
+        baseWeapon = "BNA_KC_GR20"; // Used to specify it as a different weapon
+
+        magazines[] = { "BNA_KC_Mag_GR20" };
+        magazineWell[] = {};
+
+        hiddenSelectionsTextures[] =
+        {
+            "", // Decals
+            "BNA_KC_Gear\Weapons\Data\Textures\BNA_KC_GR20.paa" // Main body
+        };
+        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_GR20_UI.paa";
+    };
+
     // ┌────────────────────┐
     // │      Grenades      │
     // └────────────────────┘
@@ -751,11 +777,16 @@ class CfgWeapons
     class GrenadeLauncher;
     class Throw: GrenadeLauncher
     {
-        muzzles[] += { "BNA_KC_DroidPopper_Muzzle" };
+        muzzles[] += { "BNA_KC_DroidPopper_Muzzle", "BNA_KC_BactaBomb_Muzzle" };
         class BNA_KC_DroidPopper_Muzzle: ThrowMuzzle
         {
             displayName = "[KC] Droid Popper";
             magazines[] += { "BNA_KC_Grenade_DroidPopper" };
+        };
+        class BNA_KC_BactaBomb_Muzzle: ThrowMuzzle
+        {
+            displayName = "[KC] Bacta Grenade";
+            magazines[] += { "BNA_KC_Grenade_BactaBomb" };
         };
     };
 };
@@ -764,6 +795,21 @@ class CfgWeapons
 class CfgMagazines
 {
     #include "12thMags.hpp"
+
+    class LFP_HI12_Mag;
+    class BNA_KC_HI12_30rnd: LFP_HI12_Mag
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+        
+        displayName = "[KC] HI-12 Magazine";
+        count = 30;
+    };
 
     class UGL_FlareWhite_F;
     class BNA_KC_UGL_FlareBlue: UGL_FlareWhite_F
@@ -818,13 +864,57 @@ class CfgMagazines
         BNA_KC_GrenadeEMP_Radius_Deka = 5;
         BNA_KC_GrenadeEMP_Radius_Vehicle = 5;
     };
-	
-	class LFP_HI12_Mag;
-	class BNA_KC_HI12_30rnd: LFP_HI12_Mag
-	{
-		displayName = "[KC] HI-12 Magazine";
-		count = 30;
-	};
+
+    class SmokeShellBlue;
+    class BNA_KC_Grenade_BactaBomb: SmokeShellBlue
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Pressurized Bacta Grenade";
+        displayNameShort = "Bacta Bomb";
+        descriptionShort = "Pressurized bacta gas in grenade form. <br />Nicknamed the 'Bacta Bomb'.";
+
+        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_BactaBomb_UI.paa";
+
+        ammo = "BNA_KC_Grenade_BactaBomb_Ammo";
+        count = 1;
+
+        BNA_KC_GrenadeType = "BACTA";
+        BNA_KC_GrenadeBacta_Radius = 20;
+        BNA_KC_GrenadeBacta_Duration = 20;
+    };
+
+    class 1Rnd_SmokeBlue_Grenade_shell;
+    class BNA_KC_Mag_GR20: 1Rnd_SmokeBlue_Grenade_shell
+    {
+        // Non-grenade version for bacta launcher
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Pressurized Bacta Canister";
+        displayNameShort = "Bacta Bomb";
+        descriptionShort = "Pressurized bacta gas. <br />Nicknamed the 'Bacta Bomb'.";
+
+        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_BactaBomb_UI.paa";
+
+        ammo = "BNA_KC_Grenade_BactaBomb_Ammo";
+        count = 1;
+
+        BNA_KC_GrenadeType = "BACTA";
+        BNA_KC_GrenadeBacta_Radius = 10;
+        BNA_KC_GrenadeBacta_Duration = 15;
+    };
 };
 
 class CfgAmmo
@@ -924,5 +1014,59 @@ class CfgAmmo
 			power=0;
 		};
         */
+    };
+
+    class SmokeShell;
+    class BNA_KC_Grenade_BactaBomb_Ammo: SmokeShell
+    {
+        model = "\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
+        smokeColor[] = {0.38, 0.54, 0.91, 0.35};
+        effectsSmoke = "BNA_KC_EffectsGroup_BactaSmoke";
+        
+        aiAmmoUsageFlags = 0;
+
+        simulation="shotSmoke"; // Makes grenades lose all speed when hitting something
+		deflectionSlowDown = 0;
+    };
+};
+
+
+// Particle Effects Group, used for smoke grenades
+class SmokeShellWhiteEffect;
+class BNA_KC_EffectsGroup_BactaSmoke: SmokeShellWhiteEffect
+{
+    // Set of particle effects, multiple effects for variance
+    class Smoke
+    {
+        type = "BNA_KC_Effects_BactaSmoke"; // CfgCloudlets class
+        simulation = "particles";
+
+        intensity = 1;
+        interval = 1;
+        position[] = {0, 0, 0};
+    };
+    class SmokeUW: Smoke
+    {
+        type = "BNA_KC_Effects_BactaSmokeUW";
+    };
+};
+
+
+class CfgCloudlets
+{
+    class SmokeShellWhite;
+    class BNA_KC_Effects_BactaSmoke: SmokeShellWhite
+    {
+        interval = 0.01;
+        ignoreWind = true;
+    };
+
+    // Underwater effects, easier to just inherit from the base underwater
+    // particles than to change the same properties they do
+    class SmokeShellWhiteUW;
+    class BNA_KC_Effects_BactaSmokeUW: SmokeShellWhiteUW
+    {
+        interval = 0.01;
+        ignoreWind = true;
     };
 };
