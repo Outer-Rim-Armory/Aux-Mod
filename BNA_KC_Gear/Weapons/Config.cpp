@@ -606,6 +606,7 @@ class CfgWeapons
 		modes[]=
 		{
 			"Single",
+            "Burst",
 			"close",
 			"short",
 			"medium"
@@ -629,7 +630,7 @@ class CfgWeapons
 				begin1[]=
 				{
 					"BNA_KC_Gear\Weapons\Data\Audio\Hi11SFX.wss",
-					1,
+					3,
 					1,
 					1800
 				};
@@ -641,7 +642,15 @@ class CfgWeapons
 			};
 			dispersion=0.00037815439999;
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		class Burst: Single
+        {
+            displayName = "Burst"
+            textureType = "burst";
+            burst = 3;
+            reloadTime = 0.09; // Shoot faster in burst mode
+        };
+        
+        class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class PointerSlot: PointerSlot
             {
