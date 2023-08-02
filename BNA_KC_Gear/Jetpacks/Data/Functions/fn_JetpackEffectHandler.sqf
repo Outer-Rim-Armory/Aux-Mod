@@ -57,7 +57,7 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
         private _effectSourceFire = "#particlesource" createVehicleLocal [0, 0, 0];
         _effectSourceFire setParticleClass _effectFire;
 
-        _effectSourceSmoke = "#particlesource" createVehicleLocal [0, 0, 0];
+        private _effectSourceSmoke = "#particlesource" createVehicleLocal [0, 0, 0];
         _effectSourceSmoke setParticleClass _effectSmoke;
 
         private _lightSource = "#lightpoint" createVehicleLocal [0, 0, 0];
