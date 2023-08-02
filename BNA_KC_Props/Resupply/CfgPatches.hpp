@@ -7,8 +7,10 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-			"3AS_Prop_Crates"
-				// All of the resupply crates
+			"3AS_Prop_Crates",
+				// All of the 3AS resupply crates
+            "A3_Structures_F_Items_Vessels"
+                // Jetpack fuel tank
         };
         units[] =
 		{
@@ -16,7 +18,8 @@ class CfgPatches
 			"BNA_KC_Resupply_SquadAmmo",
 			"BNA_KC_Resupply_PlatoonAmmo",
             "BNA_KC_Resupply_SquadMedical",
-            "BNA_KC_Resupply_PlatoonMedical"
+            "BNA_KC_Resupply_PlatoonMedical",
+            "BNA_KC_Resupply_JetpackFuel"
 		};
         weapons[] = {};
     };
