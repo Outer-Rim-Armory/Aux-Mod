@@ -678,16 +678,16 @@ class CfgWeapons
     class GrenadeLauncher;
     class Throw: GrenadeLauncher
     {
-        muzzles[] += { "BNA_KC_DroidPopper_Muzzle", "BNA_KC_BactaDispenser_Muzzle" };
+        muzzles[] += { "BNA_KC_DroidPopper_Muzzle", "BNA_KC_BactaBomb_Muzzle" };
         class BNA_KC_DroidPopper_Muzzle: ThrowMuzzle
         {
             displayName = "[KC] Droid Popper";
             magazines[] += { "BNA_KC_Grenade_DroidPopper" };
         };
-        class BNA_KC_BactaDispenser_Muzzle: ThrowMuzzle
+        class BNA_KC_BactaBomb_Muzzle: ThrowMuzzle
         {
             displayName = "[KC] Bacta Grenade";
-            magazines[] += { "BNA_KC_Grenade_BactaDispenser" };
+            magazines[] += { "BNA_KC_Grenade_BactaBomb" };
         };
     };
 };
@@ -752,7 +752,7 @@ class CfgMagazines
     };
 
     class SmokeShellBlue;
-    class BNA_KC_Grenade_BactaDispenser: SmokeShellBlue
+    class BNA_KC_Grenade_BactaBomb: SmokeShellBlue
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -763,12 +763,12 @@ class CfgMagazines
         scopeArsenal = 2;
 
         displayName = "[KC] Pressurized Bacta Grenade";
-        displayNameShort = "Bacta Smoke Grenade";
-        descriptionShort = "Pressurized bacta gas in grenade form.";
+        displayNameShort = "Bacta Bomb";
+        descriptionShort = "Pressurized bacta gas in grenade form. <br />Nicknamed the 'Bacta Bomb'.";
 
-        picture = "\LF_Medicial_Pack\data\ui\BactaCanister.paa";
+        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_BactaBomb_UI.paa";
 
-        ammo = "BNA_KC_Grenade_BactaDispenser_Ammo";
+        ammo = "BNA_KC_Grenade_BactaBomb_Ammo";
         count = 1;
 
         BNA_KC_GrenadeType = "BACTA";
@@ -877,7 +877,7 @@ class CfgAmmo
     };
 
     class SmokeShell;
-    class BNA_KC_Grenade_BactaDispenser_Ammo: SmokeShell
+    class BNA_KC_Grenade_BactaBomb_Ammo: SmokeShell
     {
         model = "\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
         smokeColor[] = {0.38, 0.54, 0.91, 0.35};
