@@ -72,6 +72,6 @@ params ["_unit"];
         [_unit] call ace_medical_engine_fnc_updateDamageEffects;
         [_unit] call ace_medical_status_fnc_updateWoundBloodLoss;
     },
-    BNA_KC_Weap_HealRate, // Addon option
+    BNA_KC_Bacta_HealRate, // Addon option
     [_unit]
 ] call CBA_fnc_addPerFrameHandler;
