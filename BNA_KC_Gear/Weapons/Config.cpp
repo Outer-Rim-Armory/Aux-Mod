@@ -671,6 +671,32 @@ class CfgWeapons
         };
     };
 
+    class OPTRE_M319s;
+    class BNA_KC_GR20: OPTRE_M319s
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] GR-20";
+        descriptionShort = "An old GR-10 plasma blaster, modified to shoot <br />pressurized bacta canisters instead of plasma.";
+        baseWeapon = "BNA_KC_GR20"; // Used to specify it as a different weapon
+
+        magazines[] = { "BNA_KC_Mag_GR20" };
+        magazineWell[] = {};
+
+        hiddenSelectionsTextures[] =
+        {
+            "", // Decals
+            "BNA_KC_Gear\Weapons\Data\Textures\BNA_KC_GR20.paa" // Main body
+        };
+        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_GR20_UI.paa";
+    };
+
     // ┌────────────────────┐
     // │      Grenades      │
     // └────────────────────┘
@@ -765,6 +791,32 @@ class CfgMagazines
         displayName = "[KC] Pressurized Bacta Grenade";
         displayNameShort = "Bacta Bomb";
         descriptionShort = "Pressurized bacta gas in grenade form. <br />Nicknamed the 'Bacta Bomb'.";
+
+        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_BactaBomb_UI.paa";
+
+        ammo = "BNA_KC_Grenade_BactaBomb_Ammo";
+        count = 1;
+
+        BNA_KC_GrenadeType = "BACTA";
+        BNA_KC_GrenadeBacta_Radius = 20;
+        BNA_KC_GrenadeBacta_Duration = 20;
+    };
+
+    class 1Rnd_SmokeBlue_Grenade_shell;
+    class BNA_KC_Mag_GR20: 1Rnd_SmokeBlue_Grenade_shell
+    {
+        // Non-grenade version for bacta launcher
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Pressurized Bacta Canister";
+        displayNameShort = "Bacta Bomb";
+        descriptionShort = "Pressurized bacta gas. <br />Nicknamed the 'Bacta Bomb'.";
 
         picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_BactaBomb_UI.paa";
 
@@ -884,6 +936,9 @@ class CfgAmmo
         effectsSmoke = "BNA_KC_EffectsGroup_BactaSmoke";
         
         aiAmmoUsageFlags = 0;
+
+        simulation="shotSmoke";
+		deflectionSlowDown = 0;
     };
 };
 
