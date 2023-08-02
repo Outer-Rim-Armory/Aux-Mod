@@ -87,6 +87,11 @@ params ["_eventHandlerType"];
                 while { time < _healDurationEnd } do
                 {
                     // Check for new units to create heal handlers for
+
+                    _position = getPosATL _projectile; // Update position, accounts for smoke grenade rolling
+                    // Create dev marker for new pos
+                    if (BNA_KC_DevMode) then { createVehicle ["VR_3DSelector_01_incomplete_F", _position, [], 0, "CAN_COLLIDE"]; };
+
                     // nearEntities is faster than nearestObjects for normal units, but it does not sort by distance
                     private _nearbyUnits = _position nearEntities ["CAManBase", _healRadius];
                     private _newUnits = _nearbyUnits - _allUnits; // Only assign handlers for new units
