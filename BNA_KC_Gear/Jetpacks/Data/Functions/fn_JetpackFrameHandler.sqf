@@ -15,7 +15,6 @@
 // Contants and macros
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
 #define BASE_SPEED 5
-#define AIR_RESISTANCE 8
 
 // Only triggered in singleplayer, prevents build-up when paused.
 if (isGamePaused) exitWith {};
@@ -119,7 +118,7 @@ if (ace_player getVariable ["BNA_KC_Jet_slowFall", false]) then
 };
 
 // Slow player down mid-air, used to simulate air-resistance
-private _airResistanceCoef = -0.1 * diag_deltaTime * AIR_RESISTANCE;
+private _airResistanceCoef = -0.1 * diag_deltaTime * BNA_KC_Jet_AirResistance;
 private _airResistance = _velocity vectorMultiply _airResistanceCoef;
 _velocity = _velocity vectorAdd _airResistance;
 
