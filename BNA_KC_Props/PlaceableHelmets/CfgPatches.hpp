@@ -107,6 +107,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P1_Woods",
             // Phase 2
             "BNA_KC_HelmetHolder_P2_Axel",
+            "BNA_KC_HelmetHolder_P2_Bob",
             "BNA_KC_HelmetHolder_P2_Burnt",
             "BNA_KC_HelmetHolder_P2_Burnt_Bacta",
             "BNA_KC_HelmetHolder_P2_Dexus",

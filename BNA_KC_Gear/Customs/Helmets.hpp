@@ -438,6 +438,15 @@ class BNA_KC_Helmet_Phase2_Axel: BNA_KC_Helmet_Phase2_Base
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
 	};
 };
+class BNA_KC_Helmet_Phase2_Bob: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm ('Bob')";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Bob.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
+};
 
 class BNA_KC_Helmet_Phase2_Burnt: BNA_KC_Helmet_Phase2_Base
 {
