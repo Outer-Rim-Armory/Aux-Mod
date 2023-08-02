@@ -64,6 +64,7 @@ params ["_unit"];
                 _unit setVariable ["ace_medical_fractures", [0, 0, 0, 0, 0, 0], true];
                 if (BNA_KC_DevMode) then { systemChat format ["Finished healing %1, removing handler %2", _unit, _handlerID]; };
                 [_handlerID] call CBA_fnc_removePerFrameHandler;
+                BNA_KC_Weap_SlowHealHandles deleteAt (BNA_KC_Weap_SlowHealHandles find _handlerID); // Remove value from list
             };
         };
 

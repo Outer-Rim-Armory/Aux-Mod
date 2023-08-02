@@ -97,8 +97,12 @@ params ["_eventHandlerType"];
 
                 // Delete smoke grenade, remove all handlers
                 deleteVehicle _projectile;
+                DEV_LOG("Removing remaining handlers");
                 {
-                    [_x] call CBA_fnc_removePerFrameHandler
+                    // if (BNA_KC_DevMode) then { systemChat format ["Removing handler %1", _x]; };
+                    [_x] call CBA_fnc_removePerFrameHandler;
+                    BNA_KC_Weap_SlowHealHandles deleteAt (BNA_KC_Weap_SlowHealHandles find _x); // remove value from list
+                    // DEV_LOG(BNA_KC_Weap_SlowHealHandles);
                 } forEach BNA_KC_Weap_SlowHealHandles;
             };
         };
