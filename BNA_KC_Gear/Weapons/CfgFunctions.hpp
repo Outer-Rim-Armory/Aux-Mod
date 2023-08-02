@@ -26,7 +26,6 @@ class CfgFunctions
         class Settings
         {
             file = "BNA_KC_Gear\Weapons\Data\Functions";
-            
             class weapSettings {};
         };
     };
