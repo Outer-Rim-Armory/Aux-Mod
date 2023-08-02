@@ -32,9 +32,9 @@ class CfgFunctions
 		class Misc
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
-			class ConfigureAddonOptions{};
-			class ConfigureAddonKeybinds{};
 			class FixInfiniteLoading{};
+            class miscOptions{};
+			class miscKeybinds{};
 		};
 
 		class Fortifications
@@ -55,13 +55,9 @@ class CfgFunctions
 
 class Extended_PreInit_EventHandlers
 {
-    class BNA_KC_Scripts_AddonOptionsPreInit
+    class BNA_KC_Misc_SettingsPreInit
     {
-        init = "call BNAKC_fnc_ConfigureAddonOptions";
-    };
-    class BNA_KC_Scripts_AddonKeybindsPreInit
-    {
-        init = "call BNAKC_fnc_ConfigureAddonKeybinds";
+        init = "call BNAKC_fnc_miscOptions; call BNAKC_fnc_miscKeybinds;";
     };
 };
 
