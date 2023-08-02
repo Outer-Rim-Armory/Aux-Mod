@@ -43,7 +43,7 @@ class CfgVehicles
 		editorSubcategory = "BNA_KC_AmbientSounds";
 		class EventHandlers
 		{
-			init = "call BNAKC_fnc_PlayRestaurauntAmbience;";
+			init = "(_this select 0) call BNAKC_fnc_PlayRestaurauntAmbience;";
 		};
 	};
     class BNA_KC_Ambient_Restaurant: Sound
