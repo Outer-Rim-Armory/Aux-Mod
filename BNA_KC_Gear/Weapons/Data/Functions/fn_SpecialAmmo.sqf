@@ -77,7 +77,7 @@ params ["_eventHandlerType"];
                 private _healDuration = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeBacta_Duration", 5);
 
                 // nearEntities is faster than nearestObjects for normal units, but it does not sort by distance
-                private _nearbyUnits = _position nearEntities ["Man", _healRadius];
+                private _nearbyUnits = _position nearEntities ["CAManBase", _healRadius];
 
                 // If the list of handlers does not exist, create an empty array
                 if (isNil "BNA_KC_Weap_SlowHealHandles") then
