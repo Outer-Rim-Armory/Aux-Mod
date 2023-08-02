@@ -8,7 +8,7 @@ if isClass (configFile >> "CfgPatches" >> "ace_common") then
         if !(_magazine isKindOf ["HandGrenade", configFile >> "CfgMagazines"]) exitWith {};
         // End early if not a grenade
 
-        private _nearbyUnits = nearestObjects [player, ["Man"], 30];
+        private _nearbyUnits = nearestObjects [player, ["CAManBase"], 30];
         [player, "[vl-ThrowGrenade]Grenade out, [bearing]!"] remoteExecCall ["CWR_fnc_SendLocalMessage", (_nearbyUnits)];
     }] call CBA_fnc_addEventHandler;
 }
@@ -21,7 +21,7 @@ else
         if !(_magazine isKindOf ["HandGrenade", configFile >> "CfgMagazines"]) exitWith {};
         // End early if not a grenade
 
-        private _nearbyUnits = nearestObjects [player, ["Man"], 30];
+        private _nearbyUnits = (getPosATL player) nearEntities ["CAManBase", 30];
         [player, "[vl-ThrowGrenade]Grenade out, [bearing]!"] remoteExecCall ["CWR_fnc_SendLocalMessage", (_nearbyUnits)];
     }];
 };

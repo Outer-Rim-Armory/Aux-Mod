@@ -27,7 +27,7 @@ private _radiusDeka    = GET_NUMBER(configFile >> "CfgVehicles" >> _vehicleClass
 private _radiusVehicle = GET_NUMBER(configFile >> "CfgVehicles" >> _vehicleClass >> "BNA_KC_EMP_Radius_Vehicle", 15);
 
 // Find applicable units/objects
-private _nearbyUnits = nearestObjects [_position, ["Man"], _radiusDroid];
+private _nearbyUnits = _position nearEntities ["CAManBase", _radiusDroid];
 private _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];
 private _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka];
 

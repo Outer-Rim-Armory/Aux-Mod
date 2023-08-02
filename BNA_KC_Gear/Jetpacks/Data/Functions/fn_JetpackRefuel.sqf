@@ -21,7 +21,7 @@ params ["_jetpackOrUnit", "_fuelAmount"];
 // Determine if given object is a unit or a backpack object
 private _jetpack = objNull;
 private _jetpackClass = "";
-if (_jetpackOrUnit isKindOf "Man") then
+if (_jetpackOrUnit isKindOf "CAManBase") then
 {
 	_jetpack = backpackContainer _jetpackOrUnit;
 	_jetpackClass = backpack _jetpackOrUnit;

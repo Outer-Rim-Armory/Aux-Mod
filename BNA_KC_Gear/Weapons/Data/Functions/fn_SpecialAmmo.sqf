@@ -49,7 +49,7 @@ params ["_eventHandlerType"];
 
                 // Units & Similar Objects
                 // Get all nearby units
-                private _nearbyUnits = nearestObjects [_position, ["Man"], _radiusDroid];
+                private _nearbyUnits = _position nearEntities ["CAManBase", _radiusDroid];
 
                 private _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];	// Droideka Shields
                 private _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka]; // 3AS's Droidkas require extra work
