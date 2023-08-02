@@ -588,7 +588,80 @@ class CfgWeapons
             magazineWell[] = {};
         };
     };
-
+	
+	
+	class LFP_rifle_base;
+	class LFP_hi12: LFP_rifle_base
+	{
+		class Single;
+		class WeaponSlotsInfo;
+	};
+	class BNA_KC_HI12: LFP_hi12
+	{
+		displayName = "[KC] HI-12";
+		magazines[]=
+		{
+			"BNA_KC_HI12_30rnd"
+		};
+		modes[]=
+		{
+			"Single",
+			"close",
+			"short",
+			"medium"
+		};
+		class Single: Single
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				closure1[]={};
+				closure2[]={};
+				soundClosure[]={};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				weaponSoundEffect="";
+				begin1[]=
+				{
+					"BNA_KC_Gear\Weapons\Data\Audio\Hi11SFX.wss",
+					1,
+					1,
+					1800
+				};
+				soundBegin[]=
+				{
+					"begin1",
+					0.33000001
+				};
+			};
+			dispersion=0.00037815439999;
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class PointerSlot: PointerSlot
+            {
+                compatibleItems[]  = 
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleItems[]  = 
+                {
+                    "bipod_01_F_blk"
+                };
+			};
+		};
+	};
+	
     class UGL_F;
 
     class hgun_P07_F;
@@ -745,6 +818,13 @@ class CfgMagazines
         BNA_KC_GrenadeEMP_Radius_Deka = 5;
         BNA_KC_GrenadeEMP_Radius_Vehicle = 5;
     };
+	
+	class LFP_HI12_Mag;
+	class BNA_KC_HI12_30rnd: LFP_HI12_Mag
+	{
+		displayName = "[KC] HI-12 Magazine";
+		count = 30;
+	};
 };
 
 class CfgAmmo

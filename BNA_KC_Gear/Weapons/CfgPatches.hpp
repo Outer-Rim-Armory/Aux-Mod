@@ -22,8 +22,9 @@ class CfgPatches
                 // Weapon Flashlights
             "WBK_PhoenixTreal_FlamethrowerMOD",
                 // Flamethrower System
-            "M2"
+            "M2",
                 // Base Flamethrower / Ammo
+			"LF_Weapon_Unit_hi12"
         };
         units[] = {};
         weapons[] =
@@ -39,7 +40,8 @@ class CfgPatches
             "BNA_KC_DC15S_RiotShield",
             "BNA_KC_DC17",
             "BNA_KC_Flamer",
-            "BNA_KC_Flamer_Heavy"
+            "BNA_KC_Flamer_Heavy",
+			"BNA_KC_HI12"
         };
         magazines[] =
         {
@@ -55,7 +57,9 @@ class CfgPatches
             "BNA_KC_UGL_FlareBlue",
             "BNA_KC_3Rnd_UGL_FlareBlue",
 
-            "BNA_KC_Grenade_DroidPopper"
+            "BNA_KC_Grenade_DroidPopper",
+			
+			"BNA_KC_HI12_30rnd"
         };
         ammo[] =
         {
