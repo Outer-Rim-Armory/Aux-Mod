@@ -54,7 +54,7 @@
     "CWR_AutoMessages_Enabled",
     "CHECKBOX",
     ["Enable Automated Messages", "Enables messages automatically being sent when certain actions are done. Throwing a grenade, getting hurt, etc."],
-    ["ARMA 3 Chat Wheel - Redux", "Automated Messages"],
+    ["Keeli Company Aux Mod", "Chat Wheel"],
     true,
     0,
     {}
