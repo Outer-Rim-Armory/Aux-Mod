@@ -824,8 +824,8 @@ class CfgMagazines
         count = 1;
 
         BNA_KC_GrenadeType = "BACTA";
-        BNA_KC_GrenadeBacta_Radius = 20;
-        BNA_KC_GrenadeBacta_Duration = 20;
+        BNA_KC_GrenadeBacta_Radius = 10;
+        BNA_KC_GrenadeBacta_Duration = 15;
     };
 };
 
