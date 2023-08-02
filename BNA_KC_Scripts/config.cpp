@@ -28,12 +28,14 @@ class CfgFunctions
 			file = "BNA_KC_Scripts\Data\Functions\Helmets";
 			class helmetNVGSwitch{};
 		};
+        
 		class Loadouts
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Loadouts";
 			class GrabLoadout{};
 			class GrabUniform{};
 		};
+        
 		class Misc
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
@@ -43,12 +45,14 @@ class CfgFunctions
 			class ConfigureAddonKeybinds{};
 			class FixInfiniteLoading{};
 		};
+
 		class Fortifications
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Fortification";
 			class FortificationsPostInit{};
             class RegisterPreset{};
 		};
+        
         class Map
         {
             file = "BNA_KC_Scripts\Data\Functions\Map";
