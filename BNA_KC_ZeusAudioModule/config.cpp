@@ -174,3 +174,16 @@ class CfgSounds
         titles[] = {2, "DK Radio Chatter"};
     };
 };
+
+
+class CfgFunctions
+{
+	class BNAKC
+	{
+		class Audio
+		{
+			file = "BNA_KC_ZeusAudioModule\Data\Functions";
+			class PlayRestaurauntAmbience{};
+		};
+    };
+};
