@@ -41,7 +41,7 @@ params ["_eventHandlerType"];
                 // Play Sound Effect
                 // Sound is scripted so that the Clone Wars sound can be enabled/disabled
                 DEV_LOG("Is EMP. Playing sound");
-                [ATLToASL _position] remoteExec ["BNAKC_fnc_PlayDroidPopperSound", [0, -2] select isDedicated];
+                [ATLToASL _position] remoteExec ["BNAKC_fnc_playDroidPopperSound", [0, -2] select isDedicated];
                 
                 private _radiusDroid   = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeEMP_Radius_Droid", 3);
                 private _radiusDeka	= GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeEMP_Radius_Deka", 5);

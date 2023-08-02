@@ -6,6 +6,11 @@ class CfgFunctions
         {
             file = "BNA_KC_Gear\Weapons\Data\Functions";
             class SpecialAmmo {};
+        };
+
+        class DroidPopper
+        {
+            file = "BNA_KC_Gear\Weapons\Data\Functions\DroidPopper";
             class PlayDroidPopperSound {};
             class KillDroids {};
             class TempDisableVehicles {};

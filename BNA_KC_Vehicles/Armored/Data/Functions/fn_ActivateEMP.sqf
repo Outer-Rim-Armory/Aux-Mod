@@ -18,7 +18,7 @@
 params ["_vehicle"];
 
 private _position = getPosASL _vehicle;
-[_position] remoteExec ["BNAKC_fnc_PlayDroidPopperSound", [0, -2] select isDedicated];
+[_position] remoteExec ["BNAKC_fnc_playDroidPopperSound", [0, -2] select isDedicated];
 
 // Get configurable radiuses
 private _vehicleClass = typeOf _vehicle; // ARMA doesn't like doing expressions in config paths
