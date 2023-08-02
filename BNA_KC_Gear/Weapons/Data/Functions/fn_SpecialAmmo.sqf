@@ -76,24 +76,29 @@ params ["_eventHandlerType"];
                 private _healRadius   = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeBacta_Radius", 5);
                 private _healDuration = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeBacta_Duration", 5);
 
-                // nearEntities is faster than nearestObjects for normal units, but it does not sort by distance
-                private _nearbyUnits = _position nearEntities ["CAManBase", _healRadius];
-
                 // If the list of handlers does not exist, create an empty array
                 if (isNil "BNA_KC_Weap_SlowHealHandles") then
                 {
                     BNA_KC_Weap_SlowHealHandles = [];
                 };
 
+                private _allUnits = []; // List of units that have had handlers created for them
+                _healDurationEnd = time + _healDuration; // Get ending time
+                while { time < _healDurationEnd } do
                 {
-                    // For each unit, create a healing handler for it.
-                    // Track the ids for all handlers to be deleted later
-                    BNA_KC_Weap_SlowHealHandles pushback (_x call BNAKC_fnc_slowHeal);
-                } forEach _nearbyUnits;
+                    // Check for new units to create heal handlers for
+                    // nearEntities is faster than nearestObjects for normal units, but it does not sort by distance
+                    private _nearbyUnits = _position nearEntities ["CAManBase", _healRadius];
+                    private _newUnits = _nearbyUnits - _allUnits; // Only assign handlers for new units
+                    _allUnits append _newUnits;
+                    {
+                        // For each unit, create a healing handler for it.
+                        // Track the ids for all handlers to be deleted later
+                        BNA_KC_Weap_SlowHealHandles pushback (_x call BNAKC_fnc_slowHeal);
+                    } forEach _newUnits;
 
-                if (BNA_KC_DevMode) then { systemChat format ["Waiting %1", _healDuration]; };
-                sleep _healDuration;
-                DEV_LOG("Wait over");
+                    sleep 0.5;
+                };
 
                 // Delete smoke grenade, remove all handlers
                 deleteVehicle _projectile;
