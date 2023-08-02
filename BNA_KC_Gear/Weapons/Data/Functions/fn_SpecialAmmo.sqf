@@ -79,17 +79,27 @@ params ["_eventHandlerType"];
                 // nearEntities is faster than nearestObjects for normal units, but it does not sort by distance
                 private _nearbyUnits = _position nearEntities ["Man", _healRadius];
 
+                // If the list of handlers does not exist, create an empty array
+                if (isNil "BNA_KC_Weap_SlowHealHandles") then
                 {
-                    _x call BNAKC_fnc_slowHeal;
+                    BNA_KC_Weap_SlowHealHandles = [];
+                };
+
+                {
+                    // For each unit, create a healing handler for it.
+                    // Track the ids for all handlers to be deleted later
+                    BNA_KC_Weap_SlowHealHandles pushback (_x call BNAKC_fnc_slowHeal);
                 } forEach _nearbyUnits;
 
                 if (BNA_KC_DevMode) then { systemChat format ["Waiting %1", _healDuration]; };
                 sleep _healDuration;
                 DEV_LOG("Wait over");
 
-                // Delete smoke grenade, remove handler
+                // Delete smoke grenade, remove all handlers
                 deleteVehicle _projectile;
-                [BNA_KC_Weap_SlowHealHandle] call CBA_fnc_removePerFrameHandler;
+                {
+                    [_x] call CBA_fnc_removePerFrameHandler
+                } forEach BNA_KC_Weap_SlowHealHandles;
             };
         };
     };

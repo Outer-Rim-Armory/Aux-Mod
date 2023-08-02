@@ -7,7 +7,7 @@
  * unit: Object - The unit to heal
  *
  * Return Value:
- * None
+ * Number - The CBA frame handler ID
  *
  * Example:
  * player call BNAKC_fnc_slowHeal;
@@ -17,19 +17,12 @@
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 params ["_unit"];
 
-// Only allow one handler to exist
-if !(isNil "BNA_KC_Weap_SlowHealHandle") then
-{
-    [BNA_KC_Weap_SlowHealHandle] call CBA_fnc_removePerFrameHandler;
-};
-
-BNA_KC_Weap_SlowHealHandle =
 [
     {
         _this params ["_unit", "_handlerID"];
         _unit = _unit select 0; // _unit gets passed as [_unit]
 
-        if (BNA_KC_DevMode) then { systemChat format ["Healing %1", _unit]; };
+        if (BNA_KC_DevMode) then { systemChat format ["Handler %1 is healing unit %2", _handlerID, _unit]; };
 
         if !(alive _unit) then
         {
@@ -67,9 +60,10 @@ BNA_KC_Weap_SlowHealHandle =
 
             if (_woundsArray isEqualTo [] and (_painLevel == 0) and (_bloodLevel == 6.0)) then
             {
-                // If unit has no other remaining wounds, heal all broken limbs
+                // If unit has no other remaining wounds, heal all broken limbs and remove handler
                 _unit setVariable ["ace_medical_fractures", [0, 0, 0, 0, 0, 0], true];
-                if (BNA_KC_DevMode) then { systemChat format ["Finished healing %1", _unit]; };
+                if (BNA_KC_DevMode) then { systemChat format ["Finished healing %1, removing handler %2", _unit, _handlerID]; };
+                [_handlerID] call CBA_fnc_removePerFrameHandler;
             };
         };
 
