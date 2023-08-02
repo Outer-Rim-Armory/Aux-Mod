@@ -32,7 +32,6 @@ class CfgFunctions
 		class Misc
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
-			class LoadoutBox{};
 			class ConfigureAddonOptions{};
 			class ConfigureAddonKeybinds{};
 			class FixInfiniteLoading{};
