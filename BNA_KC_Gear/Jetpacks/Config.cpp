@@ -108,7 +108,8 @@ class CfgCloudlets
 
         volume = 1.5;
         interval = 0.01;
-        lifeTime = 2;
+        lifeTime = 0.5;
+        lifeTimeVar = 1.25;
     };
 };
 
