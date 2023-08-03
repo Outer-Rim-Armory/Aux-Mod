@@ -85,6 +85,10 @@ class CfgCloudlets
             0.9,
             1
         };
+
+        // Direction and speed, [x, z, y]
+        moveVelocity[] = {0, -1.5, 0};
+        moveVelocityVar[] = {1, 1, 1};
     };
 
     class AirFireSparks;
@@ -100,7 +104,8 @@ class CfgCloudlets
         colorVar[] = {0, 0.15, 0.15, 0}; // lets the color vary slightly
         colorCoef[] = {1, 1, 1, 1};
 
-        moveVelocity[] = {0, -3, 0}; // direction and speed, [x, z, y]
+        moveVelocity[] = {0, -1.5, 0};
+        moveVelocityVar[] = {1, 1, 1};
 
         size[] = {0.08, 0.08, 0.1, 0.1, 0.1, 0.1, 0.1};
         sizeCoef = 1;
@@ -126,7 +131,7 @@ class CfgCloudlets
         };
         colorCoef[] = {1, 1, 1, 1};
 
-        moveVelocity[] = {0, 1.5, 0};
+        moveVelocity[] = {0, -1.5, 0};
         moveVelocityVar[] = {1, 1, 1};
         rubbing = 0.17;
 
