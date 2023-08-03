@@ -22,7 +22,7 @@ class CfgVehicles
 
         // Effects
         BNA_KC_Jet_effectPoints[] = { "effect_left", "effect_right" }; // Points to spawn effects, these come from the JLTS model
-        BNA_KC_Jet_effectFire  = "BNA_KC_Jetpack_Fire";
+        BNA_KC_Jet_effectFire  = "BNA_KC_Effects_JetpackFire_Blue";
         BNA_KC_Jet_effectSmoke = "JLTS_jumppack_smoke";
         BNA_KC_Jet_effectSound = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
     };
@@ -54,7 +54,7 @@ class CfgVehicles
 
         // Effects
         BNA_KC_Jet_effectPoints[] = { "effect" }; // Points to spawn effects, comes from the JLTS model
-        BNA_KC_Jet_effectFire  = "BNA_KC_Jetpack_Fire";
+        BNA_KC_Jet_effectFire  = "BNA_KC_Effects_JetpackFire_Blue";
         BNA_KC_Jet_effectSmoke = "JLTS_jumppack_smoke";
         BNA_KC_Jet_effectSound = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
     };
@@ -65,8 +65,9 @@ class CfgCloudlets
 {
     // https://community.bistudio.com/wiki/Arma_3:_Particle_Effects
     class Flare2;
-    class BNA_KC_Jetpack_Fire: Flare2
+    class BNA_KC_Effects_JetpackFire_Blue: Flare2
     {
+        // colorCoef to color the whole particle, not just the middle
         colorCoef[] =
         {
             // R, G, B, A
