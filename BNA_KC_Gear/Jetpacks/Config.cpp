@@ -26,6 +26,7 @@ class CfgVehicles
         BNA_KC_Jet_effectSparks = "BNA_KC_Effects_JetpackSparks_Blue";
         BNA_KC_Jet_effectSmoke  = "JLTS_jumppack_smoke";
         BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
+        BNA_KC_Jet_lightColor[] = {0, 0.1, 0.9};
     };
 
     class BNA_KC_Jetpack_CDV21: BNA_KC_Jetpack_JT12
@@ -59,6 +60,7 @@ class CfgVehicles
         BNA_KC_Jet_effectSparks = "BNA_KC_Effects_JetpackSparks_Blue";
         BNA_KC_Jet_effectSmoke  = "JLTS_jumppack_smoke";
         BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
+        BNA_KC_Jet_lightColor[] = {0, 0.1, 0.9};
     };
 };
 

@@ -21,6 +21,7 @@ params ["_unit"];
 #define POS_SPINE3 [-0.009, -0.008, 0.356]
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 #define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
+#define GET_ARRAY(config, defaultValue) (if (isArray (config)) then {getArray (config)} else {defaultValue})
 
 // Don't play effects for units on the ground or who can't jetpack
 if (!(_unit call BNAKC_fnc_CanUseJetpack) or isTouchingGround _unit) exitWith {};
@@ -30,8 +31,10 @@ private _jetpack = backpack _unit;
 // Obtain effect point names
 private _effectPoints = getArray(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectPoints");
 private _effectFire   = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectFire", "");
-private _effectSparks   = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSparks", "");
+private _effectSparks = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSparks", "");
 private _effectSmoke  = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSmoke", "");
+private _defaultColor = [1, 1, 1]; // Can't include [] with commas inside in a macro
+private _lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_lightColor", _defaultColor);
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
 // Reserve variables
@@ -65,7 +68,7 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
         _effectSourceSmoke setParticleClass _effectSmoke;
 
         private _lightSource = "#lightpoint" createVehicleLocal [0, 0, 0];
-        _lightSource setLightColor [0, 0.1, 0.9];
+        _lightSource setLightColor _lightColor;
         _lightSource setLightAmbient [0, 0, 0];
         _lightSource setLightBrightness 0.5;
         
