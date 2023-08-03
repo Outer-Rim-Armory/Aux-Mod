@@ -22,7 +22,7 @@ if !(ace_player call BNAKC_fnc_HasJetpack) exitWith {};
 if !(ace_player call BNAKC_fnc_CanUseJetpack) exitWith
 {
     // Only play the error sound if the unit is not in a vehicle
-    if (isNull (objectParent _unit)) then
+    if (isNull (objectParent ace_player)) then
     {
         playSound3D ["MRC\JLTS\jumppacks\sounds\error.wss", ace_player];
     };
