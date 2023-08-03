@@ -26,7 +26,7 @@ class CfgVehicles
         {
             "BNA_KC_Effects_JetpackFire_Blue",
             "BNA_KC_Effects_JetpackSparks_Blue",
-            "JLTS_jumppack_smoke"
+            "BNA_KC_Effects_JetpackSmoke"
         };
         BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
         BNA_KC_Jet_lightColor[] = {0, 0.1, 0.9};
@@ -110,6 +110,51 @@ class CfgCloudlets
         interval = 0.01;
         lifeTime = 0.5;
         lifeTimeVar = 1.25;
+    };
+
+    // There's probably a better particle to base the smoke off of
+    class MediumSmoke;
+    class BNA_KC_Effects_JetpackSmoke: MediumSmoke
+    {
+        color[] =
+        {
+            {0.9, 0.9, 0.9, 0.08},
+            {0.9, 0.9, 0.9, 0.04},
+            {0.9, 0.9, 0.9, 0.01},
+            {0.9, 0.9, 0.9, 0.001}
+        };
+        colorCoef[] = {1, 1, 1, 1};
+
+        moveVelocity[] = {0, 1.5, 0};
+        moveVelocityVar[] = {1, 1, 1};
+        rubbing = 0.17;
+
+        positionVar[] = {0, 0, 0};
+        randomDirectionIntensity = 0.05;
+        randomDirectionIntensityVar = 0;
+        randomDirectionPeriod = 0.1;
+        randomDirectionPeriodVar = 0;
+        rotationVelocity = 1;
+        rotationVelocityVar = 20;
+
+        angleVar = 0.5;
+
+        animationSpeed[] = {1.2};
+
+        size[] = {0.3, 0.7, 1, 1.2, 1.4, 1.6, 1.8};
+        sizeCoef = 1;
+        sizeVar = 0;
+
+        volume = 1;
+        weight = 1.05;
+        interval = 0.02;
+        lifeTime = 0.8;
+        lifeTimeVar = 0;
+
+        blockAIVisibility = 0;
+
+        particleFSFrameCount = 8;
+        particleFSIndex = 12;
     };
 };
 
