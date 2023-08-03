@@ -55,7 +55,7 @@ class CfgVehicles
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
     };
 
-    class BNA_KC_Jetpack_CDV19: BNA_KC_Jetpack_JT12
+    class BNA_KC_Jetpack_CDV19: BNA_KC_Jetpack_JT12_LR
     {
         displayName = "[KC] Clone Commander CDV-19 Jumppack";
 
@@ -66,15 +66,6 @@ class CfgVehicles
 
         // Jetpack properties
         BNA_KC_Jet_effectPoints[] = { "effect" };
-
-        // TFAR Long Range
-        tf_hasLRradio = 1;
-        tf_range = 25000;
-
-        tf_dialog = "SWLB_clone_rto_radio_dialog";
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_subtype = "digital_lr";
     };
 };
 
