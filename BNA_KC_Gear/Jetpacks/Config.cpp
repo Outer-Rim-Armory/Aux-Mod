@@ -42,31 +42,26 @@ class CfgVehicles
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
     };
 
-    class BNA_KC_Backpack_Radio;
-    class BNA_KC_Jetpack_CDV19: BNA_KC_Backpack_Radio
+    class BNA_KC_Jetpack_CDV19: BNA_KC_Jetpack_JT12
     {
         displayName = "[KC] Clone Commander CDV-19 Jumppack";
 
-        model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
+        model = "MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsTextures[] = { "MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_mc_co.paa" };
-        picture = "MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
+        picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 
-        BNA_KC_Jet_isJetpack = 1;
-        BNA_KC_Jet_fuel = 100;
-        BNA_KC_Jet_speed = 2;     // Jetpack speed, effects how fast you move in the air
-        BNA_KC_Jet_strength = 15; // Jetpack strength, effects fast the player rises
+        // Jetpack properties
+        BNA_KC_Jet_effectPoints[] = { "effect" };
 
-        // Effects
-        BNA_KC_Jet_effectPoints[] = { "effect" }; // Points to spawn effects, comes from the JLTS model
-        BNA_KC_Jet_effects[] =
-        {
-            "BNA_KC_Effects_JetpackFire_Blue",
-            "BNA_KC_Effects_JetpackSparks_Blue",
-            "JLTS_jumppack_smoke"
-        };
-        BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
-        BNA_KC_Jet_lightColor[] = {0, 0.1, 0.9};
+        // TFAR Long Range
+        tf_hasLRradio = 1;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
     };
 };
 
