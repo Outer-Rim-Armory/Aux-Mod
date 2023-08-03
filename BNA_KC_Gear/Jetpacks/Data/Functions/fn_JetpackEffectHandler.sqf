@@ -30,6 +30,7 @@ private _jetpack = backpack _unit;
 // Obtain effect point names
 private _effectPoints = getArray(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectPoints");
 private _effectFire   = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectFire", "");
+private _effectSparks   = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSparks", "");
 private _effectSmoke  = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSmoke", "");
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
@@ -57,6 +58,9 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
         private _effectSourceFire = "#particlesource" createVehicleLocal [0, 0, 0];
         _effectSourceFire setParticleClass _effectFire;
 
+        private _effectSourceSparks = "#particlesource" createVehicleLocal [0, 0, 0];
+        _effectSourceSparks setParticleClass _effectSparks;
+
         private _effectSourceSmoke = "#particlesource" createVehicleLocal [0, 0, 0];
         _effectSourceSmoke setParticleClass _effectSmoke;
 
@@ -67,11 +71,13 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
         
         // Attach to player
         _effectSourceFire attachTo [_unit, _offsetEffect, "aimPoint"];
+        _effectSourceSparks attachTo [_unit, _offsetEffect, "aimPoint"];
         _effectSourceSmoke attachTo [_unit, _offsetEffect, "aimPoint"];
         _lightSource attachTo [_unit, _offsetEffect, "aimPoint"];
         
         // Save for later removal
         _effectSources pushBack _effectSourceFire;
+        _effectSources pushBack _effectSourceSparks;
         _effectSources pushBack _lightSource;
         _effectSources pushBack _effectSourceSmoke;
     };

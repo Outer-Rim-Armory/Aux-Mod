@@ -22,9 +22,10 @@ class CfgVehicles
 
         // Effects
         BNA_KC_Jet_effectPoints[] = { "effect_left", "effect_right" }; // Points to spawn effects, these come from the JLTS model
-        BNA_KC_Jet_effectFire  = "BNA_KC_Effects_JetpackFire_Blue";
-        BNA_KC_Jet_effectSmoke = "JLTS_jumppack_smoke";
-        BNA_KC_Jet_effectSound = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
+        BNA_KC_Jet_effectFire   = "BNA_KC_Effects_JetpackFire_Blue";
+        BNA_KC_Jet_effectSparks = "BNA_KC_Effects_JetpackSparks_Blue";
+        BNA_KC_Jet_effectSmoke  = "JLTS_jumppack_smoke";
+        BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
     };
 
     class BNA_KC_Jetpack_CDV21: BNA_KC_Jetpack_JT12
@@ -54,9 +55,10 @@ class CfgVehicles
 
         // Effects
         BNA_KC_Jet_effectPoints[] = { "effect" }; // Points to spawn effects, comes from the JLTS model
-        BNA_KC_Jet_effectFire  = "BNA_KC_Effects_JetpackFire_Blue";
-        BNA_KC_Jet_effectSmoke = "JLTS_jumppack_smoke";
-        BNA_KC_Jet_effectSound = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
+        BNA_KC_Jet_effectFire   = "BNA_KC_Effects_JetpackFire_Blue";
+        BNA_KC_Jet_effectSparks = "BNA_KC_Effects_JetpackSparks_Blue";
+        BNA_KC_Jet_effectSmoke  = "JLTS_jumppack_smoke";
+        BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
     };
 };
 
@@ -76,6 +78,30 @@ class CfgCloudlets
             0.9,
             1
         };
+    };
+
+    class AirFireSparks;
+    class BNA_KC_Effects_JetpackSparks_Blue: AirFireSparks
+    {
+        color[] =
+        {
+            {0.2, 0.2, 1, -6.5},
+            {0.2, 0.2, 1, -6},
+            {0.2, 0.2, 1, -5.5},
+            {0.2, 0.2, 1, -5}
+        };
+        colorVar[] = {0, 0.15, 0.15, 0}; // lets the color vary slightly
+        colorCoef[] = {1, 1, 1, 1};
+
+        moveVelocity[] = {0, -3, 0}; // direction and speed, [x, z, y]
+
+        size[] = {0.08, 0.08, 0.1, 0.1, 0.1, 0.1, 0.1};
+        sizeCoef = 1;
+        sizeVar = 1.5;
+
+        volume = 1.5;
+        interval = 0.01;
+        lifeTime = 2;
     };
 };
 
