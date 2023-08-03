@@ -29,10 +29,8 @@ if (!(_unit call BNAKC_fnc_CanUseJetpack) or isTouchingGround _unit) exitWith {}
 private _jetpack = backpack _unit;
 
 // Obtain effect point names
-private _effectPoints = getArray(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectPoints");
-private _effectFire   = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectFire", "");
-private _effectSparks = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSparks", "");
-private _effectSmoke  = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSmoke", "");
+private _effectPoints = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectPoints", []);
+private _effectTypes  = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effects", []);
 private _defaultColor = [1, 1, 1]; // Can't include [] with commas inside in a macro
 private _lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_lightColor", _defaultColor);
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
@@ -56,33 +54,25 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
             // Extra offset if unit is holding a weapon, animation causes the jetpack to move but not the points
             _offsetEffect = _offsetEffect vectorAdd [-0.12, 0, 0.1];
         };
-        
-        // Spawn fire, light and smoke effects
-        private _effectSourceFire = "#particlesource" createVehicleLocal [0, 0, 0];
-        _effectSourceFire setParticleClass _effectFire;
+        DEV_LOG(_effectTypes);
+        // Spawn all of the effects, attach to player, save to array
+        {
+            DEV_LOG(_x);
+            private _effect = "#particlesource"createVehicleLocal [0, 0, 0];
+            _effect setParticleClass _x;
+            _effect attachTo [_unit, _offsetEffect, "aimPoint"];
+            _effectSources pushBack _effect;
+        } forEach _effectTypes;
 
-        private _effectSourceSparks = "#particlesource" createVehicleLocal [0, 0, 0];
-        _effectSourceSparks setParticleClass _effectSparks;
-
-        private _effectSourceSmoke = "#particlesource" createVehicleLocal [0, 0, 0];
-        _effectSourceSmoke setParticleClass _effectSmoke;
-
+        // Create light
         private _lightSource = "#lightpoint" createVehicleLocal [0, 0, 0];
         _lightSource setLightColor _lightColor;
         _lightSource setLightAmbient [0, 0, 0];
-        _lightSource setLightBrightness 0.5;
-        
+        _lightSource setLightBrightness 0.5;		
         // Attach to player
-        _effectSourceFire attachTo [_unit, _offsetEffect, "aimPoint"];
-        _effectSourceSparks attachTo [_unit, _offsetEffect, "aimPoint"];
-        _effectSourceSmoke attachTo [_unit, _offsetEffect, "aimPoint"];
         _lightSource attachTo [_unit, _offsetEffect, "aimPoint"];
-        
         // Save for later removal
-        _effectSources pushBack _effectSourceFire;
-        _effectSources pushBack _effectSourceSparks;
         _effectSources pushBack _lightSource;
-        _effectSources pushBack _effectSourceSmoke;
     };
 } forEach _effectPoints;
 
