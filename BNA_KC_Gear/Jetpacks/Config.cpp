@@ -31,6 +31,19 @@ class CfgVehicles
         BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
         BNA_KC_Jet_lightColor[] = {0, 0.1, 0.9};
     };
+    class BNA_KC_Jetpack_JT12_LR: BNA_KC_Jetpack_JT12
+    {
+        displayName = "[KC] Clone Trooper JT-12 Jetpack [LR]";
+        
+        // TFAR Long Range
+        tf_hasLRradio = 1;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+    };
 
     class BNA_KC_Jetpack_CDV21: BNA_KC_Jetpack_JT12
     {
