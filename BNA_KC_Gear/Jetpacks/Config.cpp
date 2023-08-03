@@ -106,7 +106,8 @@ class CfgCloudlets
         sizeCoef = 1;
         sizeVar = 1.5;
 
-        volume = 1.5;
+        volume = 1;
+        weight = 1.05;
         interval = 0.01;
         lifeTime = 0.5;
         lifeTimeVar = 1.25;
