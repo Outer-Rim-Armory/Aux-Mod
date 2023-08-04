@@ -17,7 +17,7 @@
 if !(ace_player call BNAKC_fnc_HasJetpack) exitWith {};
 if !(ace_player call BNAKC_fnc_CanUseJetpack) exitWith
 {
-    if (isNull (objectParent ace_player)) then
+    if (isNull (objectParent ace_player) and [ace_player] call ace_common_fnc_isAwake) then
     {
         playSound3D ["MRC\JLTS\jumppacks\sounds\error.wss", ace_player];
     };
