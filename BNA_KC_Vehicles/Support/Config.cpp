@@ -163,7 +163,7 @@ class CfgVehicles
         displayName = "[KC] Gammoth Medical Truck";
         
         GAMMOTH_DATA()
-        ace_medical_isMedicalVehicle = 1;
+        attendant = 1;
 
         hiddenSelectionsTextures[] = {};
         textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
