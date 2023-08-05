@@ -54,8 +54,8 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Resupply_Base;
-    class BNA_KC_Deployable_Object: BNA_KC_Resupply_Base
+    class ThingX;
+    class BNA_KC_Deployable_Object: ThingX
     {
         // Scope
         scope = 0;
@@ -72,13 +72,9 @@ class CfgVehicles
         hiddenSelectionsMaterials[] = {};
 
         // Editor Attributes
+        editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_SubCat_Deployables";
-
-        class EventHandlers
-        {
-            // Hides the inventory option
-            init = "_box = _this select 0; _box lockInventory true; [_box, _box] call ace_common_fnc_claim;";
-        };
+        side = 3;
     };
 
     class BNA_KC_Deployable_MedicalDroid: BNA_KC_Deployable_Object
@@ -96,23 +92,22 @@ class CfgVehicles
 
         // Play constant sound, without a need for a script
         simulation = "fountain";
-        sound = "";
+        sound = "ls_hologram_loop"; // TODO: make CfgSound to use
 
         class ACE_Actions
         {
             class ACE_MainActions
             {
                 selection = "interaction_point";
-                condition = "(true)";
+                condition = "true";
                 distance = 5;
 
-                class BNA_KC_PickUp
+                class PickUp
                 {
                     displayName = "Pick up FX-7";
                     icon = "\swlb_core\data\insignia\medical.paa";
 
                     selection = "interaction_point";
-                    position = "";
                     distance = 5;
 
                     condition = "true";
