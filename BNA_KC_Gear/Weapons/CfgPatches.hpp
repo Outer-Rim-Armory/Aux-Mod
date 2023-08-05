@@ -41,6 +41,7 @@ class CfgPatches
             "BNA_KC_DC15S",
             "BNA_KC_DC15S_RiotShield",
             "BNA_KC_DC17",
+            "BNA_KC_DC17_RiotShield",
 
             "BNA_KC_GR20",
 

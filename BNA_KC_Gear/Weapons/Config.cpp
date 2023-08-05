@@ -353,8 +353,8 @@ class CfgWeapons
     class BNA_KC_DC15S_RiotShield: BNA_KC_DC15S
     {
         // Scopes
-        scope = 1;        // Will be 1 in final version
-        scopeArsenal = 0; // Will be 0 in final version
+        scope = 1;
+        scopeArsenal = 0;
 
         JLTS_isShielded = 1;
         JLTS_baseWeapon = "BNA_KC_DC15S";
@@ -384,7 +384,7 @@ class CfgWeapons
         {
             class UnderBarrelSlot: UnderBarrelSlot
             {
-                compatibleItems[] = { "JLTS_riot_shield_attachment" };
+                compatibleItems[] = {"JLTS_riot_shield_attachment"};
             };
         };
     };
@@ -703,6 +703,8 @@ class CfgWeapons
         baseWeapon = "BNA_KC_DC17"; // Used to specify it as a different weapon
         canShootInWater = 1;
 
+        JLTS_shieldedWeapon = "BNA_KC_DC17_RiotShield";
+
         magazines[] = { "12thFleet_Mag_DC17" };
         muzzles[] = { "this", "Stun", "EGLM" };
 
@@ -749,6 +751,31 @@ class CfgWeapons
                     "aux501_cows_pistol",
                     "aux501_cows_pistol_2"
                 };
+            };
+        };
+    };
+
+    class BNA_KC_DC17_RiotShield: BNA_KC_DC17
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
+        displayName = "[KC] DC-17 (Shield)";
+
+        model = "\MRC\JLTS\weapons\DC17SA\DC17SA_shielded.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\DC17SA\anims\DC17SA_shielded_handanim.rtm"};
+
+        JLTS_baseWeapon = "BNA_KC_DC17";
+        JLTS_isShielded = 1;
+
+        recoil = "recoil_pdw"; // More recoil since the gun is held in one hand
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class UnderBarrelSlot: UnderBarrelSlot
+            {
+                compatibleItems[] = {"JLTS_riot_shield_attachment"};
             };
         };
     };
