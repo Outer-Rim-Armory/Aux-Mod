@@ -1,5 +1,6 @@
 #include "CfgPatches.hpp"
 #include "CfgFunctions.hpp"
+#include "CfgSounds.hpp"
 
 
 class CfgWeapons
@@ -92,7 +93,7 @@ class CfgVehicles
 
         // Play constant sound, without a need for a script
         simulation = "fountain";
-        sound = "ls_hologram_loop"; // TODO: make CfgSound to use
+        sound = "BNA_KC_Ambient_FX7";
 
         class ACE_Actions
         {
