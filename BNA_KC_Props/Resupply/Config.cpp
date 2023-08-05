@@ -3,8 +3,11 @@
 
 class CfgVehicles
 {
-    class 3AS_Supply_Large_Prop;
-
+    class ReammoBox_F;
+    class 3AS_Supply_Large_Prop: ReammoBox_F
+    {
+        class EventHandlers;
+    };
     class BNA_KC_Resupply_Base: 3AS_Supply_Large_Prop
     {
         // Mod Info
@@ -487,7 +490,7 @@ class CfgVehicles
         editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WaterTank_F.jpg";
 
         // Removes the "Rename" action and locks the inventory
-        class EventHandlers
+        class EventHandlers: EventHandlers
         {
             init = "_box = _this select 0; _box lockInventory true; [_box, _box] call ace_common_fnc_claim;";
         };
