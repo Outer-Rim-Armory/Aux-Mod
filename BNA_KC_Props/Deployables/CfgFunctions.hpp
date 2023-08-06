@@ -8,6 +8,14 @@ class CfgFunctions
             class deployablePlace {};
             class deployablePickup {};
         };
+
+        class Audio
+        {
+            class playLoopingAudio
+            {
+                file = "BNA_KC_Props\Deployables\Data\Functions\fn_playLoopingAudio.sqf";
+            };
+        };
     };
 };
 

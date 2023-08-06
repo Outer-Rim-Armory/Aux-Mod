@@ -14,6 +14,16 @@ _unit playAction "PutDown";
         // Position will be off if you just created the object at the location
         private _object = _objClass createVehicle [0, 0, 0];
         _object setPosASL _position;
+
+        // Start audio (if object should play sound)
+        if (isText (configFile >> "CfgVehicles" >> _objClass >> "BNA_KC_Deployable_SoundLoop")) then
+        {
+            private _soundFilename = getText (configFile >> "CfgVehicles" >> _objClass >> "BNA_KC_Deployable_SoundLoop");
+            private _soundDelay = getNumber (configFile >> "CfgVehicles" >> _objClass >> "BNA_KC_Deployable_SoundLoopDelay");
+
+            _object setVariable ["BNA_KC_Object_playAudio", true];
+            [_object, _soundFilename, _soundDelay] spawn BNAKC_fnc_playLoopingAudio;
+        };
     },
     [_unit, _objClass],
     0.925

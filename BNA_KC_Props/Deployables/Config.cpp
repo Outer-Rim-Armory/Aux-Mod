@@ -1,6 +1,5 @@
 #include "CfgPatches.hpp"
 #include "CfgFunctions.hpp"
-#include "CfgSounds.hpp"
 
 
 class CfgWeapons
@@ -18,7 +17,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-         // Object form of the item
+        // Object form of the item
         BNA_KC_Deployable_Object = "BNA_KC_Deployable_MedicalDroid";
 
         displayName = "[KC] FX-7 Medical Droid";
@@ -89,11 +88,11 @@ class CfgVehicles
         // Item form of the object
         BNA_KC_Deployable_Item = "BNA_KC_Deployable_MedicalDroid_Item";
 
-        model = "RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
+        // Sound effects
+        BNA_KC_Deployable_SoundLoop = "BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss";
+        BNA_KC_Deployable_SoundLoopDelay = 15;
 
-        // Play constant sound, without a need for a script
-        simulation = "fountain";
-        sound = "BNA_KC_Ambient_FX7";
+        model = "RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
 
         class ACE_Actions
         {
