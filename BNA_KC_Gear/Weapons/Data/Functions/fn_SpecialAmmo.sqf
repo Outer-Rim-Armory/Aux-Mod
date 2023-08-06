@@ -99,7 +99,7 @@ params ["_eventHandlerType"];
                     {
                         // For each unit, create a healing handler for it.
                         // Track the ids for all handlers to be deleted later
-                        BNA_KC_Weap_SlowHealHandles pushback (_x call BNAKC_fnc_slowHeal);
+                        BNA_KC_Weap_SlowHealHandles pushback ([_x, BNA_KC_Bacta_HealRate] call BNAKC_fnc_slowHeal);
                     } forEach _newUnits;
 
                     sleep 0.5;

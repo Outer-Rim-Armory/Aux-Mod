@@ -15,7 +15,7 @@
 
 
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
-params ["_unit"];
+params ["_unit", "_delay"];
 
 [
     {
@@ -72,6 +72,6 @@ params ["_unit"];
         [_unit] call ace_medical_engine_fnc_updateDamageEffects;
         [_unit] call ace_medical_status_fnc_updateWoundBloodLoss;
     },
-    BNA_KC_Bacta_HealRate, // Addon option
+    _delay,
     [_unit]
 ] call CBA_fnc_addPerFrameHandler;
