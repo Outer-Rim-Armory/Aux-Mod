@@ -54,7 +54,11 @@ class CfgVehicles
         };
     };
 
-    class ThingX;
+    class Thing;
+    class ThingX: Thing
+    {
+        class EventHandlers;
+    };
     class BNA_KC_Deployable_Object: ThingX
     {
         // Scope
@@ -114,6 +118,11 @@ class CfgVehicles
                     statement = "[_player, _target] call BNAKC_fnc_deployablePickup;";
                 };
             };
+        };
+
+        class EventHandlers: EventHandlers
+        {
+            init = "(_this select 0) spawn BNAKC_fnc_loopingAudioInit;"; // uses waitUntil to check for mission start, needs spawn
         };
     };
 };

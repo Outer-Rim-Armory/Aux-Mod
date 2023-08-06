@@ -15,6 +15,10 @@ class CfgFunctions
             {
                 file = "BNA_KC_Props\Deployables\Data\Functions\fn_playLoopingAudio.sqf";
             };
+            class loopingAudioInit
+            {
+                file = "BNA_KC_Props\Deployables\Data\Functions\fn_loopingAudioInit.sqf";
+            };
         };
     };
 };
