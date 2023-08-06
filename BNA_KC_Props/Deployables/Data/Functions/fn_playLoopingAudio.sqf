@@ -19,12 +19,8 @@
 params ["_object", "_filename", ["_delay", 1]];
 if (!isServer) exitWith {}; // Exit if not the server
 
-systemChat format ["%1 %2 %3", _object, _filename, _delay];
-
 while {_object getVariable ["BNA_KC_Object_playAudio", false]} do
 {
-    systemChat "playing sound";
     playSound3D [_filename, _object, false, getPosASL _object, 1, 1, 50];
-    systemChat format ["sleeping for %1", _delay];
     sleep _delay;
 };
