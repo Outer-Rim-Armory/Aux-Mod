@@ -13,11 +13,11 @@ class CfgFunctions
         {
             class playLoopingAudio
             {
-                file = "BNA_KC_Props\Deployables\Data\Functions\fn_playLoopingAudio.sqf";
+                file = "BNA_KC_Props\Deployables\Data\Functions\Audio\fn_playLoopingAudio.sqf";
             };
             class loopingAudioInit
             {
-                file = "BNA_KC_Props\Deployables\Data\Functions\fn_loopingAudioInit.sqf";
+                file = "BNA_KC_Props\Deployables\Data\Functions\Audio\fn_loopingAudioInit.sqf";
             };
         };
     };
