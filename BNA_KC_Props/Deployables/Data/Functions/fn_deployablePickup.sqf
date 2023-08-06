@@ -1,4 +1,25 @@
+/*
+ * Author: DartRuffian
+ * Deletes a placed object, and gives the player the inventory item corresponding to the object.
+ *
+ * Arguments:
+ * unit: Object - The unit picking up the object.
+ * object: Object - The object to be removed.
+ *
+ * Return Value:
+ * None
+ *
+ * Examples:
+ * [player, cusorTarget] call BNAKC_fnc_deployablePickup;
+ */
+
+
 params ["_unit", "_object"];
+
+if !(isText (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Deployable_Item")) exitWith
+{
+    systemChat "This object is not set up properly for BNAKC's deployables.";
+};
 
 _unit playAction "PutDown";
 [

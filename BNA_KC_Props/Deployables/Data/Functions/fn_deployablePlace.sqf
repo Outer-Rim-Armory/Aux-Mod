@@ -1,4 +1,25 @@
+/*
+ * Author: DartRuffian
+ * Deletes a placed object, and gives the player the inventory item corresponding to the object.
+ *
+ * Arguments:
+ * unit: Object - The unit picking up the object.
+ * itemClass: String - Class name of the inventory item to place.
+ *
+ * Return Value:
+ * None
+ *
+ * Examples:
+ * [player, 'BNA_KC_Deployable_MedicalDroid_Item'] call BNAKC_fnc_deployablePlace;
+ */
+
+
 params ["_unit", "_itemClass"];
+
+if !(isText (configFile >> "CfgWeapons" >> _itemClass >> "BNA_KC_Deployable_Object")) exitWith
+{
+    systemChat "This item is not set up properly for BNAKC's deployables.";
+};
 
 private _objClass = getText(configFile >> "CfgWeapons" >> _itemClass >> "BNA_KC_Deployable_Object");
 _unit removeItem _itemClass;
