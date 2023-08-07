@@ -20,10 +20,13 @@ class CfgPatches
             "JLTS_weapons_DC17SA",
                 // DC-17
                 // Weapon Flashlights
+            "OPTRE_Weapons_GL",
+                // OPTRE flare launcher pistol
             "WBK_PhoenixTreal_FlamethrowerMOD",
                 // Flamethrower System
-            "M2"
+            "M2",
                 // Base Flamethrower / Ammo
+			"LF_Weapon_Unit_hi12"
         };
         units[] = {};
         weapons[] =
@@ -38,8 +41,13 @@ class CfgPatches
             "BNA_KC_DC15S",
             "BNA_KC_DC15S_RiotShield",
             "BNA_KC_DC17",
+            "BNA_KC_DC17_RiotShield",
+
+            "BNA_KC_GR20",
+
             "BNA_KC_Flamer",
-            "BNA_KC_Flamer_Heavy"
+            "BNA_KC_Flamer_Heavy",
+			"BNA_KC_HI12"
         };
         magazines[] =
         {
@@ -49,13 +57,16 @@ class CfgPatches
             "12thFleet_Mag_WestarM5",
             "12thFleet_Mag_DC17",
 
+            "BNA_KC_HI12_30rnd",
+
             "BNA_KC_Mag_300Rnd_Flamer",
             "BNA_KC_Mag_150Rnd_Flamer",
 
             "BNA_KC_UGL_FlareBlue",
             "BNA_KC_3Rnd_UGL_FlareBlue",
 
-            "BNA_KC_Grenade_DroidPopper"
+            "BNA_KC_Grenade_DroidPopper",
+            "BNA_KC_Grenade_BactaBomb"
         };
         ammo[] =
         {
@@ -67,7 +78,8 @@ class CfgPatches
             "12thFleet_Ammo_Stun",
             "BNA_KC_Flare_Blue",
 
-            "BNA_KC_Grenade_DroidPopper_Ammo"
+            "BNA_KC_Grenade_DroidPopper_Ammo",
+            "BNA_KC_Grenade_BactaBomb_Ammo"
         };
     };
 };

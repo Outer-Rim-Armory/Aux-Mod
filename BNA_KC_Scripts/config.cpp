@@ -28,27 +28,22 @@ class CfgFunctions
 			file = "BNA_KC_Scripts\Data\Functions\Helmets";
 			class helmetNVGSwitch{};
 		};
-		class Loadouts
-		{
-			file = "BNA_KC_Scripts\Data\Functions\Loadouts";
-			class GrabLoadout{};
-			class GrabUniform{};
-		};
+        
 		class Misc
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
-			class LoadoutBox{};
-			class PlayRestaurauntAmbience{};
-			class ConfigureAddonOptions{};
-			class ConfigureAddonKeybinds{};
 			class FixInfiniteLoading{};
+            class miscOptions{};
+			class miscKeybinds{};
 		};
+
 		class Fortifications
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Fortification";
 			class FortificationsPostInit{};
             class RegisterPreset{};
 		};
+
         class Map
         {
             file = "BNA_KC_Scripts\Data\Functions\Map";
@@ -60,13 +55,9 @@ class CfgFunctions
 
 class Extended_PreInit_EventHandlers
 {
-    class BNA_KC_Scripts_AddonOptionsPreInit
+    class BNA_KC_Misc_SettingsPreInit
     {
-        init = "call BNAKC_fnc_ConfigureAddonOptions";
-    };
-    class BNA_KC_Scripts_AddonKeybindsPreInit
-    {
-        init = "call BNAKC_fnc_ConfigureAddonKeybinds";
+        init = "call BNAKC_fnc_miscOptions; call BNAKC_fnc_miscKeybinds;";
     };
 };
 

@@ -36,6 +36,7 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Woods, [KC] INF P1 Helm ('Woods'), BNA_KC_H
 // │    P2  Helmets    │
 // └───────────────────┘
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Axel, [KC] INF P2 Helm ('Axel'), BNA_KC_Helmet_Phase2_Axel, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Bob, [KC] INF P2 Helm ('Bob'), BNA_KC_Helmet_Phase2_Bob, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Burnt, [KC] INF P2 Helm ('Burnt'), BNA_KC_Helmet_Phase2_Burnt, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Burnt_Bacta, [KC] INF P2 Helm ('Burnt') [Bacta Visor], BNA_KC_Helmet_Phase2_Burnt_Bacta, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Dexus, [KC] INF P2 Helm ('Dexus'), BNA_KC_Helmet_Phase2_Dexus, "Customs")

@@ -757,7 +757,7 @@ class CfgWeapons
         drySound[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Gammoth\horn.wss",
-            2,
+            5,
             1,
             100
         };

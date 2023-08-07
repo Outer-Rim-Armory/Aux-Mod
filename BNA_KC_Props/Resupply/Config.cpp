@@ -3,8 +3,11 @@
 
 class CfgVehicles
 {
-    class 3AS_Supply_Large_Prop;
-
+    class ReammoBox_F;
+    class 3AS_Supply_Large_Prop: ReammoBox_F
+    {
+        class EventHandlers;
+    };
     class BNA_KC_Resupply_Base: 3AS_Supply_Large_Prop
     {
         // Mod Info
@@ -467,6 +470,29 @@ class CfgVehicles
                 magazine = "SquadShieldMagazine";
                 count = 4;
             };
+        };
+    };
+
+    class BNA_KC_Resupply_JetpackFuel: BNA_KC_Resupply_Base
+    {
+        displayName = "[KC] Jetpack Fuel Tank";
+        
+        ace_cargo_size = 2;
+        ace_dragging_canDrag = 0;
+        ace_dragging_canCarry = 0;
+
+        model = "A3\Structures_F\Items\Vessels\WaterTank_F.p3d";
+        hiddenSelections[] = {};
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = {};
+
+        // Editor Attributes
+        editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WaterTank_F.jpg";
+
+        // Removes the "Rename" action and locks the inventory
+        class EventHandlers: EventHandlers
+        {
+            init = "_box = _this select 0; _box lockInventory true; [_box, _box] call ace_common_fnc_claim;";
         };
     };
 };

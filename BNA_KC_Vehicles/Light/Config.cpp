@@ -537,7 +537,7 @@ class CfgVehicles
     {
         displayName = "[KC] Glavenus (Medic)";
 
-        ace_medical_isMedicalVehicle = 1;
+        attendant = 1;
 
         hiddenSelectionsTextures[] =
         {

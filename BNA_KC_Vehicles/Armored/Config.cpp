@@ -680,6 +680,51 @@ class CfgVehicles
             };
         };
 
+        // Increase headlight brightness
+        class Reflectors
+        {
+            class Left
+            {
+                color[] = {1900, 1800, 1700};
+                ambient[] = {5, 5, 5};
+                intensity = 25;
+
+                innerAngle = 45;
+                outerAngle = 139;
+                coneFadeCoef = 10;
+
+                dayLight = 0;
+                
+                size = 1;
+                flareSize = 0;
+                useFlare = 0;
+                               
+                hitpoint = "ftl_gun";
+                direction = "Light_L_end";
+                position = "ftl_gun";
+                selection = "ftl_gun";
+            };
+
+            class Left2: Left
+            {
+                hitpoint = "ftl_gun";
+                position = "ftl_gun";
+            };
+
+            class Right: Left
+            {
+                direction = "Light_R_end";
+                hitpoint = "ftr_gun";
+                position = "ftr_gun";
+                selection = "ftr_gun";
+            };
+            class Right2: Right
+            {
+                hitpoint = "ftr_gun";
+                position = "ftr_gun";
+            };
+        };
+
         // Horns don't work on vehicles with a simulation other than "carx"
         // weapons[] = { "BNA_KC_ATTE_Alarm" };
 

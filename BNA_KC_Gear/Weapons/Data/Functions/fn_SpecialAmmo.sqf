@@ -32,6 +32,7 @@ params ["_eventHandlerType"];
         };
 
         private _grenadeType = GET_STRING(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeType", "");
+        DEV_LOG(_grenadeType);
 
         switch (_grenadeType) do
         {
@@ -40,7 +41,7 @@ params ["_eventHandlerType"];
                 // Play Sound Effect
                 // Sound is scripted so that the Clone Wars sound can be enabled/disabled
                 DEV_LOG("Is EMP. Playing sound");
-                [ATLToASL _position] remoteExec ["BNAKC_fnc_PlayDroidPopperSound", [0, -2] select isDedicated];
+                [ATLToASL _position] remoteExec ["BNAKC_fnc_playDroidPopperSound", [0, -2] select isDedicated];
                 
                 private _radiusDroid   = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeEMP_Radius_Droid", 3);
                 private _radiusDeka	= GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeEMP_Radius_Deka", 5);
@@ -48,7 +49,7 @@ params ["_eventHandlerType"];
 
                 // Units & Similar Objects
                 // Get all nearby units
-                private _nearbyUnits = nearestObjects [_position, ["Man"], _radiusDroid];
+                private _nearbyUnits = _position nearEntities ["CAManBase", _radiusDroid];
 
                 private _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];	// Droideka Shields
                 private _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka]; // 3AS's Droidkas require extra work
@@ -67,6 +68,52 @@ params ["_eventHandlerType"];
                     private _tanks = nearestObjects [_position, [], _radiusVehicle] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
                     [_tanks, BNA_KC_DroidPopper_DisableTime] call BNAKC_fnc_TempDisableVehicles;
                 };
+            };
+
+            case "BACTA":
+            {
+                DEV_LOG("Is bacta grenade");
+                private _healRadius   = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeBacta_Radius", 5);
+                private _healDuration = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeBacta_Duration", 5);
+
+                // If the list of handlers does not exist, create an empty array
+                if (isNil "BNA_KC_Weap_SlowHealHandles") then
+                {
+                    BNA_KC_Weap_SlowHealHandles = [];
+                };
+
+                private _allUnits = []; // List of units that have had handlers created for them
+                _healDurationEnd = time + _healDuration; // Get ending time
+                while { time < _healDurationEnd } do
+                {
+                    // Check for new units to create heal handlers for
+
+                    _position = getPosATL _projectile; // Update position, accounts for smoke grenade rolling
+                    // Create dev marker for new pos
+                    if (BNA_KC_DevMode) then { createVehicle ["VR_3DSelector_01_incomplete_F", _position, [], 0, "CAN_COLLIDE"]; };
+
+                    // nearEntities is faster than nearestObjects for normal units, but it does not sort by distance
+                    private _nearbyUnits = _position nearEntities ["CAManBase", _healRadius];
+                    private _newUnits = _nearbyUnits - _allUnits; // Only assign handlers for new units
+                    _allUnits append _newUnits;
+                    {
+                        // For each unit, create a healing handler for it.
+                        // Track the ids for all handlers to be deleted later
+                        BNA_KC_Weap_SlowHealHandles pushback (_x call BNAKC_fnc_slowHeal);
+                    } forEach _newUnits;
+
+                    sleep 0.5;
+                };
+
+                // Delete smoke grenade, remove all handlers
+                deleteVehicle _projectile;
+                DEV_LOG("Removing remaining handlers");
+                {
+                    // if (BNA_KC_DevMode) then { systemChat format ["Removing handler %1", _x]; };
+                    [_x] call CBA_fnc_removePerFrameHandler;
+                    BNA_KC_Weap_SlowHealHandles deleteAt (BNA_KC_Weap_SlowHealHandles find _x); // remove value from list
+                    // DEV_LOG(BNA_KC_Weap_SlowHealHandles);
+                } forEach BNA_KC_Weap_SlowHealHandles;
             };
         };
     };

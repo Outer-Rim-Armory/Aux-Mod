@@ -29,7 +29,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = { "camo1", "visor", "illum" };
+            hiddenSelections[] = {"camo1", "visor"};
             uniformModel = "lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
         };
     };

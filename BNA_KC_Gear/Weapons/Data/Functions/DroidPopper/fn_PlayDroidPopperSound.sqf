@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [x, y, z] call BNAKC_fnc_PlayDroidPopperSound;
+ * [x, y, z] call BNAKC_fnc_playDroidPopperSound;
  */
 
 params ["_position"];
