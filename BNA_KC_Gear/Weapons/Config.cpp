@@ -780,7 +780,21 @@ class CfgWeapons
         };
     };
 
-    class OPTRE_M319s;
+    class hgun_Pistol_heavy_01_F;
+    class OPTRE_Handgun_Base: hgun_Pistol_heavy_01_F
+    {
+        class WeaponSlotsInfo;
+    };
+    class OPTRE_M319s: OPTRE_Handgun_Base
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+            class MuzzleSlot;
+            class PointerSlot;
+            class UnderBarrelSlot;
+        };
+    };
     class BNA_KC_GR20: OPTRE_M319s
     {
         // Mod Info
@@ -804,6 +818,27 @@ class CfgWeapons
             "BNA_KC_Gear\Weapons\Data\Textures\BNA_KC_GR20.paa" // Main body
         };
         picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_GR20_UI.paa";
+
+        // Scion Conflict, 91st, etc. add a bunch of attachments
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] = {};
+            };
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleItems[] = {};
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[] = {};
+            };
+            class UnderBarrelSlot: UnderBarrelSlot
+            {
+                compatibleItems[] = {};
+            };
+        };
     };
 
     // ┌────────────────────┐
