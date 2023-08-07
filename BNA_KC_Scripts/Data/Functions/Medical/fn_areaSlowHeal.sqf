@@ -51,7 +51,12 @@ while {true} do
     systemChat format ["All injured and not-patient units: %1", _unitsToHeal];
 
     // Remove any patients that have become fully healed
-    _currentPatients = _currentPatients select { !(_x getVariable ["ace_medical_openWounds", []] isEqualTo []) };
+    _currentPatients = _currentPatients select
+    {
+        // TODO: Injured units with open wounds stop getting healed
+        // Need to account for missing blood, bandaged wounds (but not stitched), pain, etc.
+        !(_x getVariable ["ace_medical_openWounds", []] isEqualTo [])
+    };
 
     // Sort by most injured to least
     _unitsToHeal = [_unitsToHeal] call BNAKC_fnc_sortUnitsByInjuries;
