@@ -96,6 +96,10 @@ class CfgVehicles
         BNA_KC_Deployable_SoundLoop = "BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss";
         BNA_KC_Deployable_SoundLoopDelay = 15;
 
+        BNA_KC_Medical_areaHealRadius = 7;      // Range for healing (m)
+        BNA_KC_Medical_areaHealRate = 6;        // 1 heal every X seconds
+        BNA_KC_Medical_areaHealMaxPatients = 2; // Maximum amount of units that can be healed at a time
+
         model = "RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
 
         class ACE_Actions
@@ -122,7 +126,7 @@ class CfgVehicles
 
         class EventHandlers: EventHandlers
         {
-            init = "(_this select 0) spawn BNAKC_fnc_loopingAudioInit;"; // uses waitUntil to check for mission start, needs spawn
+            init = "_droid = _this select 0; _droid spawn BNAKC_fnc_loopingAudioInit; _droid spawn BNAKC_fnc_areaSlowHeal"; // uses waitUntil to check for mission start, needs spawn
         };
     };
 };

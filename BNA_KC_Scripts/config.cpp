@@ -50,6 +50,13 @@ class CfgFunctions
 			class CreateMarkOnSelf{};
             class CreateMarkAction{};
         };
+
+        class Medical
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Medical";
+            class areaSlowHeal {};
+            class sortUnitsByInjuries {};
+        };
 	};
 };
 
