@@ -29,6 +29,72 @@ class CfgWeapons
             mass = 120;
         };
     };
+
+    class Launcher;
+    class Launcher_Base_F: Launcher
+    {
+        class WeaponSlotsInfo;
+    };
+    class BNA_KC_Deployable_M190_Carry: Launcher_Base_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Model 190 Mortar System";
+
+        // 3AS Mortar model is not fully set up for CSW
+        // model = "3AS\3as_static\Mortar\model\MortarLauncher.p3d";
+        // model = "3AS\3as_static\Mortar\model\mortarpack.p3d";
+        // model = "3AS\3as_static\Mortar\model\republicmortar.p3d";
+        // hiddenSelections[] = {"Camo_1","Camo_2"};
+        // hiddenSelectionsMaterials[] = {"\3as\3as_static\Mortar\data\base.rvmat","\3as\3as_static\Mortar\data\tube.rvmat"};
+        // hiddenSelectionsTextures[] = {"\3as\3as_static\Mortar\data\base.001_co.paa","\3as\3as_static\Mortar\data\tube.001_co.paa"};
+
+        // LS model until 3AS is done
+        model = "ls_vehicles_ground\mortar\ls_ground_mortar_alternateCarry.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"ls_vehicles_ground\mortar\data\republic_co.paa"};
+
+        class ACE_CSW
+        {
+            // See https://ace3.acemod.org/wiki/framework/crew-served-weapons-framework.html#22-carryable-tripod
+            deploy = "BNA_KC_Deployable_M190";
+            type = "mount"; // Used for tripod (mortar)
+
+            deployTime = 1;
+            pickupTime = 1;
+        };
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            // One WeaponSlot with a positive value for iconScale forces game to use icon overlay method
+            // Required, because the inventory icon has no accessory variants
+            class MuzzleSlot
+            {
+                iconScale = 0.1;
+            };
+        };
+    };
+    class 3AS_mortar_82mm;
+    class BNA_KC_Deployable_M190_ProxyWeapon: 3AS_mortar_82mm
+    {
+        // Proxy weapon with low loading time, used for CSW
+        displayName = "[KC] Model 190 Mortar System";
+        magazineReloadTime = 0.5;
+    };
+    class BNA_KC_Deployable_M190_Turret: 3AS_mortar_82mm
+    {
+        displayName = "[KC] Model 190 Mortar System";
+        magazines[] =
+        {
+            "3AS_8Rnd_82mm_Mo_shells"
+        };
+    };
 };
 
 
@@ -123,6 +189,60 @@ class CfgVehicles
         class EventHandlers: EventHandlers
         {
             init = "(_this select 0) spawn BNAKC_fnc_loopingAudioInit;"; // uses waitUntil to check for mission start, needs spawn
+        };
+    };
+
+    class Mortar_01_base_F;
+    class B_Mortar_01_F: Mortar_01_base_F
+    {
+        class Turrets;
+    };
+    class 3AS_Republic_Mortar: B_Mortar_01_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret;
+        };
+    };
+    class BNA_KC_Deployable_M190: 3AS_Republic_Mortar
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] Model 190 Mortar System";
+        ace_cargo_noRename = 1;
+
+        // Editor Attributes
+        editorCategory = "BNA_KC_Objects";
+        editorSubcategory = "BNA_KC_SubCat_Deployables";
+        side = 3;
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                magazines[] = {};
+                weapons[] = {"BNA_KC_Deployable_M190_Turret"};
+            }
+        };
+
+        class ACE_CSW
+        {
+            enabled = 1;
+            disassembleWeapon = "BNA_KC_Deployable_M190_Carry";
+            disassembleTurret = "";
+
+            ammoLoadTime = 1;
+            ammoUnloadTime = 1;
+            desiredAmmo = 3;
+            
+            magazineLocation = "_target selectionPosition 'usti hlavne'";
+            proxyWeapon = "BNA_KC_Deployable_M190_ProxyWeapon";
         };
     };
 };
