@@ -24,6 +24,8 @@ if !(_unit getVariable ["ace_medical_openWounds", []] isEqualTo []) exitWith { f
 if ((_unit getVariable ["ace_medical_bloodVolume", 6]) < 6) exitWith { false }; // Less than full blood
 if (_unit getVariable ["ace_medical_inCardiacArrest", false]) exitWith { false }; // Not in cardiac arrest
 
+if (_unit getVariable ["ace_medical_pain", 0] > 0) exitWith { false };
+
 private _cardiacOutput = [_unit] call ace_medical_status_fnc_getCardiacOutput;
 private _bloodLoss = ([_unit] call ace_medical_status_fnc_getBloodLoss);
 if (_bloodLoss > (ace_medical_const_bloodLossKnockOutThreshold * _cardiacOutput) / 2) exitWith { false }; // Enough blood for heart
