@@ -60,6 +60,7 @@ class CfgFunctions
         class Medical
         {
             file = "BNA_KC_Scripts\Data\Functions\Medical";
+            class slowHeal {};
             class areaSlowHeal {};
             class sortUnitsByInjuries {};
             class isFullyHealed {};
