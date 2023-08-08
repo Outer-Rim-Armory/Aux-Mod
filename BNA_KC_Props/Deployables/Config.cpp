@@ -97,7 +97,7 @@ class CfgVehicles
         BNA_KC_Deployable_SoundLoopDelay = 15;
 
         BNA_KC_Medical_areaHealRadius = 7;      // Range for healing (m)
-        BNA_KC_Medical_areaHealRate = 6;        // 1 heal every X seconds
+        BNA_KC_Medical_areaHealRate = 6;        // 1 healing action every X seconds
         BNA_KC_Medical_areaHealMaxPatients = 2; // Maximum amount of units that can be healed at a time
 
         model = "RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
