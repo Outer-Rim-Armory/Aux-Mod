@@ -53,9 +53,7 @@ while {true} do
     // Remove any patients that have become fully healed
     _currentPatients = _currentPatients select
     {
-        // TODO: Injured units with open wounds stop getting healed
-        // Need to account for missing blood, bandaged wounds (but not stitched), pain, etc.
-        !(_x getVariable ["ace_medical_openWounds", []] isEqualTo [])
+        !(_x call BNAKC_fnc_isFullyHealed)
     };
 
     // Sort by most injured to least
