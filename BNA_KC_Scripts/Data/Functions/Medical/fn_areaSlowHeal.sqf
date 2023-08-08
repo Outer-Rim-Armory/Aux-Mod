@@ -31,12 +31,12 @@ private _maxPatients = getNumber (configFile >> "CfgVehicles" >> typeOf _object 
 
 private _currentPatients = [];
 _object setVariable ["BNA_KC_healHandlers", []];
-while {true} do
+private _objectName = str _object; // used to track handlers
+while {!isNull _object} do
 {
     private _nearbyUnits = (getPosASL _object) nearEntities ["CAManBase", _healRadius];
     private _unitsToHeal = [];
     private _healHandlers = _object getVariable "BNA_KC_healHandlers";
-    if (isNil "_object") exitWith { systemChat "object nil" }; // _healHandlers will be nil if the object doesn't exist (i.e. picked up)
 
     systemChat format ["All nearby units: %1", _nearbyUnits];
 
@@ -64,8 +64,8 @@ while {true} do
         // If a patient is not in range, remove their handler
         if !(_unit in _nearbyUnits) then
         {
-            private _handlerID = _unit getVariable ((str _object) + "_healHandlerID"); // get the handler id saved to the unit
-            _unit setVariable [((str _object) + "_healHandlerID"), nil]; // remove the variable
+            private _handlerID = _unit getVariable (_objectName + "_healHandlerID"); // get the handler id saved to the unit
+            _unit setVariable [_objectName + "_healHandlerID", nil]; // remove the variable
             [_handlerID] call CBA_fnc_removePerFrameHandler; // remove the handler
             _currentPatients deleteAt _x; // remove from current patients array
             systemChat "not in range";
@@ -88,11 +88,17 @@ while {true} do
         // For each unit, create a healing handler for it.
         systemChat format ["healing %1 every %2 seconds", _x, _healRate];
         private _healHandlerID = [_x, _healRate] call BNAKC_fnc_slowHeal;
-        _x setVariable [(str _object) + "_healHandlerID", _healHandlerID];
+        _x setVariable [_objectName + "_healHandlerID", _healHandlerID];
 
         _currentPatients pushBack _x;
     } forEach (_unitsToHeal - _currentPatients); // Only assign handlers to new units
 
-    if (isNil "_object") exitWith { systemChat "object nil" };
     sleep 5;
 };
+
+// Object removed, remove handlers
+{
+    private _handlerID = _x getVariable (_objectName + "_healHandlerID"); // get the handler id saved to the unit
+    _unit setVariable [_objectName + "_healHandlerID", nil]; // remove the variable
+    [_handlerID] call CBA_fnc_removePerFrameHandler; // remove the handler
+} forEach _currentPatients;
