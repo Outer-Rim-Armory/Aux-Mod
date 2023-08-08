@@ -23,6 +23,12 @@ class CfgFunctions
 {
 	class BNAKC
 	{
+        class Developer
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Developer";
+            class devLog {};
+        };
+
 		class Helmets
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Helmets";
