@@ -331,7 +331,7 @@ class CfgWeapons
 
     class BNA_KC_Vest_Medic_Platoon: BNA_KC_Vest_Medic
     {
-        displayName = "[KC] INF Medic Company Vest";
+        displayName = "[KC] INF 06+ Medic Vest";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa",         // Heavy Bag / Strap
