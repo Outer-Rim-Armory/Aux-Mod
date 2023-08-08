@@ -119,7 +119,7 @@ class CfgVehicles
                     distance = 5;
 
                     condition = "true";
-                    statement = "[_player, _target] call BNAKC_fnc_deployablePickup;";
+                    statement = "{ [_x] call CBA_fnc_removePerFrameHandler; } forEach (_target getVariable ['BNA_KC_healHandlers', []]); [_player, _target] call BNAKC_fnc_deployablePickup;";
                 };
             };
         };

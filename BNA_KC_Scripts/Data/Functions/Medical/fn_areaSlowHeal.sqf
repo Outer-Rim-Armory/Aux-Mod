@@ -36,6 +36,7 @@ while {true} do
     private _nearbyUnits = (getPosASL _object) nearEntities ["CAManBase", _healRadius];
     private _unitsToHeal = [];
     private _healHandlers = _object getVariable "BNA_KC_healHandlers";
+    if (isNil "_healHandlers") exitWith {}; // _healHandlers will be nil if the object doesn't exist (i.e. picked up)
 
     systemChat format ["All nearby units: %1", _nearbyUnits];
 
@@ -73,6 +74,7 @@ while {true} do
         _currentPatients pushBack _x;
     } forEach (_unitsToHeal - _currentPatients); // Only assign handlers to new units
 
+    if (isNil "_healHandlers") exitWith {};
     _object setVariable ["BNA_KC_healHandlers", _healHandlers];
 
     sleep 5;
