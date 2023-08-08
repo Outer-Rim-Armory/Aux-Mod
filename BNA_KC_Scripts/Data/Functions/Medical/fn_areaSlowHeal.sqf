@@ -36,13 +36,13 @@ while {true} do
     private _nearbyUnits = (getPosASL _object) nearEntities ["CAManBase", _healRadius];
     private _unitsToHeal = [];
     private _healHandlers = _object getVariable "BNA_KC_healHandlers";
-    if (isNil "_healHandlers") exitWith {}; // _healHandlers will be nil if the object doesn't exist (i.e. picked up)
+    if (isNil "_object") exitWith { systemChat "object nil" }; // _healHandlers will be nil if the object doesn't exist (i.e. picked up)
 
     systemChat format ["All nearby units: %1", _nearbyUnits];
 
     {
         // Skip if unit is not hurt
-        if (_x call ace_medical_status_fnc_isInStableCondition) then { continue; };
+        if (_x call BNAKC_fnc_isFullyHealed) then { continue; };
         // Skip if unit is already being healed
         if (_x in _currentPatients) then { continue; };
 
@@ -50,12 +50,28 @@ while {true} do
     } forEach _nearbyUnits;
 
     systemChat format ["All injured and not-patient units: %1", _unitsToHeal];
+    systemChat format ["Current patients before checks: %1", _currentPatients];
 
     // Remove any patients that have become fully healed
     _currentPatients = _currentPatients select
     {
         !(_x call BNAKC_fnc_isFullyHealed)
     };
+    systemChat format ["Current patients that are still hurt: %1", _currentPatients];
+    for "_x" from 0 to (count _currentPatients - 1) do
+    {
+        private _unit = _currentPatients#_x;
+        // If a patient is not in range, remove their handler
+        if !(_unit in _nearbyUnits) then
+        {
+            private _handlerID = _unit getVariable ((str _object) + "_healHandlerID"); // get the handler id saved to the unit
+            _unit setVariable [((str _object) + "_healHandlerID"), nil]; // remove the variable
+            [_handlerID] call CBA_fnc_removePerFrameHandler; // remove the handler
+            _currentPatients deleteAt _x; // remove from current patients array
+            systemChat "not in range";
+        };
+    };
+    systemChat format ["Current patients after checks: %1", _currentPatients];
 
     // Sort by most injured to least
     _unitsToHeal = [_unitsToHeal] call BNAKC_fnc_sortUnitsByInjuries;
@@ -70,12 +86,13 @@ while {true} do
 
     {
         // For each unit, create a healing handler for it.
-        _healHandlers pushBack ([_x, _healRate] call BNAKC_fnc_slowHeal);
+        systemChat format ["healing %1 every %2 seconds", _x, _healRate];
+        private _healHandlerID = [_x, _healRate] call BNAKC_fnc_slowHeal;
+        _x setVariable [(str _object) + "_healHandlerID", _healHandlerID];
+
         _currentPatients pushBack _x;
     } forEach (_unitsToHeal - _currentPatients); // Only assign handlers to new units
 
-    if (isNil "_healHandlers") exitWith {};
-    _object setVariable ["BNA_KC_healHandlers", _healHandlers];
-
+    if (isNil "_object") exitWith { systemChat "object nil" };
     sleep 5;
 };
