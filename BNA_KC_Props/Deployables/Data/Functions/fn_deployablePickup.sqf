@@ -40,7 +40,7 @@ _unit playAction "PutDown";
             _holder setPosASL getPosASL _object;
             _holder setDir floor (random 360);
 
-            _holder addWeaponCargoGlobal [_itemClass, 1];
+            _holder addItemCargoGlobal [_itemClass, 1];
 
             deleteVehicle _object;
         };
