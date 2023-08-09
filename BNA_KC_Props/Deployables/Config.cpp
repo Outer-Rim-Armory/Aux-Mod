@@ -18,7 +18,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         // Object form of the item
-        BNA_KC_Deployable_Object = "BNA_KC_Deployable_MedicalDroid";
+        BNA_KC_Deployable_object = "BNA_KC_Deployable_MedicalDroid";
 
         displayName = "[KC] FX-7 Medical Droid";
         picture = "\swlb_core\data\insignia\medical.paa"; // Placeholder
@@ -89,8 +89,9 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        // Item form of the object
+        // Deployable properties
         BNA_KC_Deployable_item = "BNA_KC_Deployable_MedicalDroid_Item";
+        BNA_KC_Deployable_placeTime = 5; // How long in seconds it takes to pick up / place down
 
         // Sound effects
         BNA_KC_Object_soundLoop = "BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss";
