@@ -18,7 +18,7 @@ params ["_unit", "_object"];
 
 if !(isText (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Deployable_Item")) exitWith
 {
-    systemChat "This object is not set up properly for BNAKC's deployables.";
+    format ["%1 is not set up properly for BNAKC deployables", _object] call BNAKC_fnc_devLog;
 };
 
 _unit playAction "PutDown";

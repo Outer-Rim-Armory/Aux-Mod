@@ -18,7 +18,7 @@ params ["_unit", "_itemClass"];
 
 if !(isText (configFile >> "CfgWeapons" >> _itemClass >> "BNA_KC_Deployable_Object")) exitWith
 {
-    systemChat "This item is not set up properly for BNAKC's deployables.";
+    format ["%1 is not set up properly for BNAKC deployables", _itemClass] call BNAKC_fnc_devLog;
 };
 
 private _objClass = getText(configFile >> "CfgWeapons" >> _itemClass >> "BNA_KC_Deployable_Object");
