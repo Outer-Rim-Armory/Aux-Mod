@@ -39,6 +39,7 @@ class CfgFunctions
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
 			class FixInfiniteLoading{};
+			class getConfigProperty {};
             class miscOptions{};
 			class miscKeybinds{};
 		};
