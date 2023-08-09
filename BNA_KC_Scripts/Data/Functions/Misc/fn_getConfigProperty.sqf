@@ -12,7 +12,7 @@
  * Number, Text, Array, or nil - The requested config value, or nil if no property is found
  *
  * Examples:
- * [player, cusorTarget] call BNAKC_fnc_deployablePickup;
+ * (configFile >> "CfgVehicles" >> typeOf heli >> "displayName") call BNAKC_fnc_getConfigProperty;
  */
 
 
