@@ -31,7 +31,6 @@ _unit playAction "PutDown";
         if (_unit canAdd _itemClass) then
         {
             _unit addItem _itemClass;
-            deleteVehicle _object;
         }
         else
         {
@@ -41,9 +40,8 @@ _unit playAction "PutDown";
             _holder setDir floor (random 360);
 
             _holder addItemCargoGlobal [_itemClass, 1];
-
-            deleteVehicle _object;
         };
+        deleteVehicle _object;
     },
     [_unit, _object],
     0.925
