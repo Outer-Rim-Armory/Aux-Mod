@@ -90,7 +90,7 @@ class CfgVehicles
         scopeCurator = 2;
 
         // Item form of the object
-        BNA_KC_Deployable_Item = "BNA_KC_Deployable_MedicalDroid_Item";
+        BNA_KC_Deployable_item = "BNA_KC_Deployable_MedicalDroid_Item";
 
         // Sound effects
         BNA_KC_Object_soundLoop = "BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss";

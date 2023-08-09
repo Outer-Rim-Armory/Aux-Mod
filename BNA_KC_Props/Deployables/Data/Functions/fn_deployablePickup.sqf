@@ -16,7 +16,7 @@
 
 params ["_unit", "_object"];
 
-if !(isText (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Deployable_Item")) exitWith
+if !(isText (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Deployable_item")) exitWith
 {
     format ["%1 is not set up properly for BNAKC deployables", _object] call BNAKC_fnc_devLog;
 };
@@ -25,7 +25,7 @@ _unit playAction "PutDown";
 [
     {
         params ["_unit", "_object"];
-        private _itemClass = getText(configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Deployable_Item");
+        private _itemClass = getText(configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Deployable_item");
 
         // Check if the player has enough space to store the item, if not, drop it on the ground
         if (_unit canAdd _itemClass) then
