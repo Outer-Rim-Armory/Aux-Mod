@@ -17,7 +17,7 @@
  */
 
 
-params ["_config", ["_defaultValue", nil]["_dataType", ""]];
+params ["_config", ["_defaultValue", nil], ["_dataType", ""]];
 
 private _propertyValue = switch (toLowerANSI _dataType) do
 {
