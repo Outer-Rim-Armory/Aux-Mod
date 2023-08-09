@@ -93,8 +93,8 @@ class CfgVehicles
         BNA_KC_Deployable_Item = "BNA_KC_Deployable_MedicalDroid_Item";
 
         // Sound effects
-        BNA_KC_Deployable_SoundLoop = "BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss";
-        BNA_KC_Deployable_SoundLoopDelay = 15;
+        BNA_KC_Object_soundLoop = "BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss";
+        BNA_KC_Object_soundLoopDelay = 15;
 
         BNA_KC_Medical_areaHealRadius = 7;      // Range for healing (m)
         BNA_KC_Medical_areaHealRate = 6;        // 1 healing action every X seconds

@@ -20,10 +20,10 @@ params ["_object"];
 waitUntil { sleep 5; time > 0 and !is3DEN; };
 
 // Start audio (if object should play sound)
-if (isText (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Deployable_SoundLoop")) then
+if (isText (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Object_soundLoop")) then
 {
-    private _soundFilename = getText (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Deployable_SoundLoop");
-    private _soundDelay = getNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Deployable_SoundLoopDelay");
+    private _soundFilename = getText (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Object_soundLoop");
+    private _soundDelay = getNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Object_soundLoopDelay");
 
     _object setVariable ["BNA_KC_Object_playAudio", true];
     [_object, _soundFilename, _soundDelay] spawn BNAKC_fnc_playLoopingAudio;
