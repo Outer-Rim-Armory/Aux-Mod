@@ -101,15 +101,18 @@ class CfgWeapons
         class Single1: Single1
         {
             artilleryCharge = 0.2215; // original: 0.35
+            reloadTime = 4;
         };
         class Single2: Single2
         {
             showToPlayer = 0; // Hides from the menu
             // artilleryCharge = 0.7; // original 0.7
+            reloadTime = 4;
         };
         class Single3: Single3
         {
             artilleryCharge = 0.3135; // original: 1
+            reloadTime = 4;
         };
     };
     class BNA_KC_Deployable_M190_ProxyWeapon: BNA_KC_Deployable_M190_Turret
@@ -329,8 +332,8 @@ class CfgVehicles
             enabled = 1;
             disassembleTo = "BNA_KC_Deployable_M190_Carry";
 
-            ammoLoadTime = 1;
-            ammoUnloadTime = 1;
+            ammoLoadTime = 5;
+            ammoUnloadTime = 5;
             desiredAmmo = 3;
             
             magazineLocation = "_target selectionPosition 'usti hlavne'";
