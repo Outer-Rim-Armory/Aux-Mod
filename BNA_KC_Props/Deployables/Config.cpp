@@ -340,8 +340,8 @@ class CfgVehicles
                 class ace_csw_pickUp
                 {
                     displayName = "Disassemble Mortar";
-                    condition="call ace_csw_fnc_assemble_canPickupTripod";
-                    statement="call ace_csw_fnc_assemble_pickupTripod";
+                    condition = "call ace_csw_fnc_assemble_canPickupTripod";
+                    statement = "call ace_csw_fnc_assemble_pickupTripod";
                 };
             };
         };
