@@ -24,6 +24,9 @@ the path begins with a "\", but it essentially represents the project root
 #define ITEM_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 
 
+// Returns text (normally code) in quotes
+#define QUOTE(CODE) #CODE
+
 // Objects
 // Macro for making a placeable version of a helmet
 #define HELMET_HOLDER(CLASS_NAME, DISPLAY_NAME, HELM_NAME, SUBCAT) \
