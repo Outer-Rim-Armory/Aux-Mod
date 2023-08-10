@@ -46,6 +46,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] Model 190 Mortar System";
+        picture = "\ls_weapons\_ui\rps6_ca.paa"; // Temp picture
 
         // 3AS Mortar model is not fully set up for CSW
         // model = "3AS\3as_static\Mortar\model\MortarLauncher.p3d";
@@ -272,9 +273,9 @@ class CfgVehicles
         icon = "3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
 
         // Editor Attributes
-        editorCategory = "BNA_KC_Objects";
-        editorSubcategory = "BNA_KC_SubCat_Deployables";
-        side = 3;
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VSupport";
+        side = 1;
 
         class Turrets: Turrets
         {

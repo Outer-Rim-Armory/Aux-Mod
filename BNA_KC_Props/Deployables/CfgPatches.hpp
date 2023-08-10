@@ -20,12 +20,12 @@ class CfgPatches
 		{
             "BNA_KC_Deployable_Object",
 			"BNA_KC_Deployable_MedicalDroid",
-            "BNA_KC_Deployable_Mortar"
+            "BNA_KC_Deployable_M190"
 		};
         weapons[] =
         {
             "BNA_KC_Deployable_MedicalDroid_Item",
-            "BNA_KC_Deployable_Mortar_Carry"
+            "BNA_KC_Deployable_M190_Carry"
         };
     };
 };
