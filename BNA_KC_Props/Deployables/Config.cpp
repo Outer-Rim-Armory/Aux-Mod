@@ -1,5 +1,6 @@
 #include "CfgPatches.hpp"
 #include "CfgFunctions.hpp"
+#include "Macros.hpp"
 
 
 class CfgWeapons
@@ -86,9 +87,8 @@ class CfgWeapons
     class CannonCore;
     class 3AS_mortar_82mm: CannonCore
     {
-        class Single1; // Close
-        class Single2; // Medium
-        class Single3; // Far
+        class Single1;
+        class Burst1;
     };
     class BNA_KC_Deployable_M190_Turret: 3AS_mortar_82mm
     {
@@ -98,21 +98,45 @@ class CfgWeapons
             "BNA_KC_3Rnd_82mm_Shell"
         };
 
+        MORTAR_SOUND_FIRE()
+
         class Single1: Single1
         {
+            displayName="$STR_A3_mortar_82mm_Single10";
             artilleryCharge = 0.2215; // original: 0.35
             reloadTime = 4;
+
+            MORTAR_SOUND_FIRE()
         };
-        class Single2: Single2
+        class Single2: Single1
         {
+            displayName="$STR_A3_mortar_82mm_Single20";
             showToPlayer = 0; // Hides from the menu
             // artilleryCharge = 0.7; // original 0.7
-            reloadTime = 4;
         };
-        class Single3: Single3
+        class Single3: Single1
         {
+            displayName="$STR_A3_mortar_82mm_Single30";
             artilleryCharge = 0.3135; // original: 1
+        };
+
+        class Burst1: Burst1
+        {
+            displayName="$STR_A3_mortar_82mm_Burst10";
+            artilleryCharge = 0.2215; // original: 0.35
             reloadTime = 4;
+
+            MORTAR_SOUND_FIRE()
+        };
+        class Burst2: Burst1
+        {
+            displayName="$STR_A3_mortar_82mm_Burst20";
+            // artilleryCharge = 0.7; // original 0.7
+        };
+        class Burst3: Burst1
+        {
+            displayName="$STR_A3_mortar_82mm_Single30";
+            artilleryCharge = 0.3135; // original: 1
         };
     };
     class BNA_KC_Deployable_M190_ProxyWeapon: BNA_KC_Deployable_M190_Turret
@@ -137,6 +161,7 @@ class CfgMagazines
 
         model = "\z\ace\addons\mk6mortar\data\l16_ammo_he.p3d";
         picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
+        ammo = "BNA_KC_82mm_Shell_Ammo";
     };
     // CSW converts inventory mags into vehicle mags, this is the one a unit carries
     class BNA_KC_3Rnd_82mm_Shell_CSW: BNA_KC_3Rnd_82mm_Shell
@@ -146,6 +171,23 @@ class CfgMagazines
         scopeArsenal = 2;
 
         mass = 300;
+    };
+};
+
+
+class CfgAmmo
+{
+    class 3AS_82mm_HE_Mortar;
+    class BNA_KC_82mm_Shell_Ammo: 3AS_82mm_HE_Mortar
+    {
+        effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
+        effectFlare = "FlareShell";
+        effectsFire = "CannonFire";
+        effectsMissile = "ExplosionEffects";
+        effectsSmoke = "SmokeShellWhite";
+        ExplosionEffects = "MortarExplosion";
+
+        MORTAR_SOUND_AMMO()
     };
 };
 
