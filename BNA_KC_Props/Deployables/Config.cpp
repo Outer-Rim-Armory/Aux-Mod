@@ -288,8 +288,16 @@ class CfgVehicles
         // Model and Textures
         model = "3AS\3as_static\Mortar\model\republicmortar.p3d";
         hiddenSelections[] = {"Camo_1","Camo_2"};
-        hiddenSelectionsTextures[] = {"\3as\3as_static\Mortar\data\base.001_co.paa","\3as\3as_static\Mortar\data\tube.001_co.paa"};
-        hiddenSelectionsMaterials[] = {"\3as\3as_static\Mortar\data\base.rvmat","\3as\3as_static\Mortar\data\tube.rvmat"};
+        hiddenSelectionsTextures[] =
+        {
+            "\3as\3as_static\Mortar\data\base.001_co.paa",
+            "\3as\3as_static\Mortar\data\tube.001_co.paa"
+        };
+        hiddenSelectionsMaterials[] =
+        {
+            "\3as\3as_static\Mortar\data\base.rvmat",
+            "\3as\3as_static\Mortar\data\tube.rvmat"
+        };
         editorPreview = "\3as\3as_static\images\3AS_Republic_Mortar.jpg";
         icon = "3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
 
