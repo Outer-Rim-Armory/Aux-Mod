@@ -316,6 +316,20 @@ class CfgVehicles
                 };
             };
         };
+
+        class Damage
+        {
+            tex[] = {};
+            mat[] =
+            {
+                "3as\3as_static\mortar\data\base.rvmat",
+                "A3\Static_F_Gamma\data\StaticTurret_01_damage.rvmat",
+                "A3\Static_F_Gamma\data\StaticTurret_01_destruct.rvmat",
+                "3as\3as_static\mortar\data\tube.rvmat",
+                "A3\Static_F_Gamma\data\StaticTurret_02_damage.rvmat",
+                "A3\Static_F_Gamma\data\StaticTurret_02_destruct.rvmat"
+            };
+        };
     };
 };
 
