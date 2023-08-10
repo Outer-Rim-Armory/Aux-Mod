@@ -82,13 +82,34 @@ class CfgWeapons
             };
         };
     };
-    class 3AS_mortar_82mm;
+    
+    class CannonCore;
+    class 3AS_mortar_82mm: CannonCore
+    {
+        class Single1; // Close
+        class Single2; // Medium
+        class Single3; // Far
+    };
     class BNA_KC_Deployable_M190_Turret: 3AS_mortar_82mm
     {
         displayName = "[KC] Model 190 Mortar System";
         magazines[] =
         {
             "BNA_KC_3Rnd_82mm_Shell"
+        };
+
+        class Single1: Single1
+        {
+            artilleryCharge = 0.2215; // original: 0.35
+        };
+        class Single2: Single2
+        {
+            showToPlayer = 0; // Hides from the menu
+            // artilleryCharge = 0.7; // original 0.7
+        };
+        class Single3: Single3
+        {
+            artilleryCharge = 0.3135; // original: 1
         };
     };
     class BNA_KC_Deployable_M190_ProxyWeapon: BNA_KC_Deployable_M190_Turret
@@ -283,6 +304,13 @@ class CfgVehicles
             {
                 magazines[] = {"BNA_KC_3Rnd_82mm_Shell"};
                 weapons[] = {"BNA_KC_Deployable_M190_Turret"};
+
+                // Maximum and minimum angles for mortar turret 
+                maxElev = 25.74;
+                maxOutElev = 20;
+
+                minElev = -30;
+                minOutElev = -4;
             }
         };
 
@@ -298,6 +326,7 @@ class CfgVehicles
             magazineLocation = "_target selectionPosition 'usti hlavne'";
             proxyWeapon = "BNA_KC_Deployable_M190_ProxyWeapon";
         };
+        class assembleInfo {}; // Removes base game disassemble option
 
         class ACE_Actions: ACE_Actions
         {
