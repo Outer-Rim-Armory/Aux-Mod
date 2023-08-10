@@ -141,6 +141,8 @@ class CfgMagazines
         type = 256;
         scope = 2;
         scopeArsenal = 2;
+
+        mass = 300;
     };
 };
 
