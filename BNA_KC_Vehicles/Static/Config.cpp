@@ -139,11 +139,7 @@ class CfgMagazines
     // CSW converts inventory mags into vehicle mags, this is the one a unit carries
     class BNA_KC_Mag_3Rnd_82mm_HE_CSW: BNA_KC_Mag_3Rnd_82mm_HE
     {
-        type = 256;
-        scope = 2;
-        scopeArsenal = 2;
-
-        mass = 300;
+        CSW_MAG_CARRY()
     };
 };
 
