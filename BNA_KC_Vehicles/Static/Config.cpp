@@ -1,4 +1,6 @@
 #include "CfgPatches.hpp"
+#include "CfgCloudlets.hpp"
+#include "CfgComplexEffects.hpp"
 #include "Macros.hpp"
 
 
@@ -69,7 +71,8 @@ class CfgWeapons
         magazines[] =
         {
             "BNA_KC_Mag_3Rnd_82mm_HE",
-            "BNA_KC_Mag_3Rnd_82mm_SmokeWhite"
+            "BNA_KC_Mag_3Rnd_82mm_SmokeWhite",
+            "BNA_KC_Mag_3Rnd_82mm_SmokeBlue"
         };
 
         MORTAR_SOUND_FIRE()
@@ -161,6 +164,17 @@ class CfgMagazines
     {
         CSW_MAG_CARRY()
     };
+
+    class BNA_KC_Mag_3Rnd_82mm_SmokeBlue: BNA_KC_Mag_3Rnd_82mm_SmokeWhite
+    {
+        displayName = "[KC] 3Rnd Mortar Blue Smoke Shells";
+        displayNameShort = "3Rnd B Smoke";
+        ammo = "BNA_KC_82mm_SmokeBlue_Ammo";
+    };
+    class BNA_KC_Mag_3Rnd_82mm_SmokeBlue_CSW: BNA_KC_Mag_3Rnd_82mm_SmokeBlue
+    {
+        CSW_MAG_CARRY()
+    };
 };
 
 
@@ -179,6 +193,9 @@ class CfgAmmo
         MORTAR_SOUND_AMMO()
     };
 
+    // Colored smoke effects for artillery
+    #include "ArtySubmunition.hpp"
+
     class ShotDeployBase;
     class BNA_KC_82mm_SmokeWhite_Ammo: ShotDeployBase
     {
@@ -194,6 +211,11 @@ class CfgAmmo
 
         MORTAR_SOUND_AMMO()
     };
+
+    class BNA_KC_82mm_SmokeBlue_Ammo: BNA_KC_82mm_SmokeWhite_Ammo
+    {
+        submunitionAmmo = "BNA_KC_SmokeShellArty_Blue";
+    };
 };
 
 
@@ -207,6 +229,10 @@ class ACE_CSW_Groups
     class BNA_KC_Mag_3Rnd_82mm_SmokeWhite_CSW
     {
         BNA_KC_Mag_3Rnd_82mm_SmokeWhite = 1;
+    };
+    class BNA_KC_Mag_3Rnd_82mm_SmokeBlue_CSW
+    {
+        BNA_KC_Mag_3Rnd_82mm_SmokeBlue = 1;
     };
 };
 
@@ -278,7 +304,8 @@ class CfgVehicles
                 magazines[] =
                 {
                     "BNA_KC_Mag_3Rnd_82mm_HE",
-                    "BNA_KC_Mag_3Rnd_82mm_SmokeWhite"
+                    "BNA_KC_Mag_3Rnd_82mm_SmokeWhite",
+                    "BNA_KC_Mag_3Rnd_82mm_SmokeBlue"
                 };
                 weapons[] = {"BNA_KC_Deployable_M190_Turret"};
 
