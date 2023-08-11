@@ -232,7 +232,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VSupport";
+        editorSubcategory = "BNA_KC_SubCat_VStatic";
         side = 1;
 
         class Turrets: Turrets
