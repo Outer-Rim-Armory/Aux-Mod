@@ -17,9 +17,6 @@ class CfgPatches
                 // Mortar visual effect
             "3AS_mortar",
                 // Mortar model/textures
-            "3AS_VehicleWeapons",
-                // Mortar ammo classes
-                // TODO: Replace with vanilla classes
             "ls_vehicles_ground",
                 // Mortar sound effects
         };

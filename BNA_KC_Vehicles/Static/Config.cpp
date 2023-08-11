@@ -192,9 +192,20 @@ class CfgMagazines
 
 class CfgAmmo
 {
-    class 3AS_82mm_HE_Mortar;
-    class BNA_KC_82mm_HE_Ammo: 3AS_82mm_HE_Mortar
+    class Sh_155mm_AMOS;
+    class BNA_KC_82mm_HE_Ammo: Sh_155mm_AMOS
     {
+        // Damage Values
+        hit = 340;
+        dangerRadiusHit = 750; // Range that AI can detect it
+        indirectHit = 125;
+        indirectHitRange = 30;
+        suppressionRadiusHit = 75; // Max distance that AI will be suppressed by
+        explosive = 0.8; // "How much" of the damage is explosive (80% explosive, 20% kinetic)
+
+        cost = 200; // Used by AI to see if the ammo is "worth" using
+
+        // Visual Effects
         effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
         effectFlare = "FlareShell";
         effectsFire = "CannonFire";
@@ -203,6 +214,36 @@ class CfgAmmo
         explosionEffects = "MortarExplosion";
 
         MORTAR_SOUND_AMMO()
+
+        // Camera Shake
+        class CamShakeExplode
+        {
+            distance = 216.443;
+            duration = 1.8;
+            frequency = 20;
+            power = 16.4;
+        };
+        class CamShakeFire
+        {
+            distance = 72.4431;
+            duration = 1.8;
+            frequency = 20;
+            power = 3.00922;
+        };
+        class CamShakeHit
+        {
+            distance = 1;
+            duration = 0.6;
+            frequency = 20;
+            power = 82;
+        };
+        class CamShakePlayerFire
+        {
+            distance = 1;
+            duration = 0.6;
+            frequency = 20;
+            power = 82;
+        };
     };
 
     // Colored smoke effects for artillery
