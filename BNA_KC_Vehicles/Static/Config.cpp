@@ -174,7 +174,7 @@ class CfgAmmo
         effectsFire = "CannonFire";
         effectsMissile = "ExplosionEffects";
         effectsSmoke = "SmokeShellWhite";
-        ExplosionEffects = "MortarExplosion";
+        explosionEffects = "MortarExplosion";
 
         MORTAR_SOUND_AMMO()
     };
@@ -190,7 +190,7 @@ class CfgAmmo
         effectsFire = "CannonFire";
         effectsMissile = "ExplosionEffects";
         effectsSmoke = "SmokeShellWhite";
-        ExplosionEffects = "MortarExplosion";
+        explosionEffects = "MortarExplosion";
 
         MORTAR_SOUND_AMMO()
     };
