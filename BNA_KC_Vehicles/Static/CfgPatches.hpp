@@ -38,7 +38,11 @@ class CfgPatches
             "BNA_KC_Mag_3Rnd_82mm_HE",
             "BNA_KC_Mag_3Rnd_82mm_HE_CSW",
             "BNA_KC_Mag_3Rnd_82mm_SmokeWhite",
-            "BNA_KC_Mag_3Rnd_82mm_SmokeWhite_CSW"
+            "BNA_KC_Mag_3Rnd_82mm_SmokeWhite_CSW",
+            "BNA_KC_Mag_3Rnd_82mm_SmokeBlue",
+            "BNA_KC_Mag_3Rnd_82mm_SmokeBlue_CSW",
+            "BNA_KC_Mag_3Rnd_82mm_SmokeRed",
+            "BNA_KC_Mag_3Rnd_82mm_SmokeRed_CSW"
         };
         ammo[] =
         {

@@ -72,7 +72,8 @@ class CfgWeapons
         {
             "BNA_KC_Mag_3Rnd_82mm_HE",
             "BNA_KC_Mag_3Rnd_82mm_SmokeWhite",
-            "BNA_KC_Mag_3Rnd_82mm_SmokeBlue"
+            "BNA_KC_Mag_3Rnd_82mm_SmokeBlue",
+            "BNA_KC_Mag_3Rnd_82mm_SmokeRed"
         };
 
         MORTAR_SOUND_FIRE()
@@ -172,6 +173,17 @@ class CfgMagazines
     {
         CSW_MAG_CARRY()
     };
+
+    class BNA_KC_Mag_3Rnd_82mm_SmokeRed: BNA_KC_Mag_3Rnd_82mm_HE
+    {
+        displayName = "[KC] 3Rnd Mortar Red Smoke Shells";
+        displayNameShort = "3Rnd R Smoke";
+        ammo = "BNA_KC_82mm_SmokeRed_Ammo";
+    };
+    class BNA_KC_Mag_3Rnd_82mm_SmokeRed_CSW: BNA_KC_Mag_3Rnd_82mm_SmokeRed
+    {
+        CSW_MAG_CARRY()
+    };
 };
 
 
@@ -208,10 +220,13 @@ class CfgAmmo
 
         MORTAR_SOUND_AMMO()
     };
-
     class BNA_KC_82mm_SmokeBlue_Ammo: BNA_KC_82mm_SmokeWhite_Ammo
     {
         submunitionAmmo = "BNA_KC_SmokeShellArty_Blue";
+    };
+    class BNA_KC_82mm_SmokeRed_Ammo: BNA_KC_82mm_SmokeWhite_Ammo
+    {
+        submunitionAmmo = "BNA_KC_SmokeShellArty_Red";
     };
 };
 
@@ -230,6 +245,10 @@ class ACE_CSW_Groups
     class BNA_KC_Mag_3Rnd_82mm_SmokeBlue_CSW
     {
         BNA_KC_Mag_3Rnd_82mm_SmokeBlue = 1;
+    };
+    class BNA_KC_Mag_3Rnd_82mm_SmokeRed_CSW
+    {
+        BNA_KC_Mag_3Rnd_82mm_SmokeRed = 1;
     };
 };
 
@@ -302,7 +321,8 @@ class CfgVehicles
                 {
                     "BNA_KC_Mag_3Rnd_82mm_HE",
                     "BNA_KC_Mag_3Rnd_82mm_SmokeWhite",
-                    "BNA_KC_Mag_3Rnd_82mm_SmokeBlue"
+                    "BNA_KC_Mag_3Rnd_82mm_SmokeBlue",
+                    "BNA_KC_Mag_3Rnd_82mm_SmokeRed"
                 };
                 weapons[] = {"BNA_KC_Deployable_M190_Turret"};
 
