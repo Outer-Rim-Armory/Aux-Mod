@@ -126,12 +126,17 @@ class CfgWeapons
 
 class CfgMagazines
 {
-    class 3AS_8Rnd_82mm_Mo_shells;
-    class BNA_KC_Mag_3Rnd_82mm_HE: 3AS_8Rnd_82mm_Mo_shells
+    class VehicleMagazine;
+    class BNA_KC_Mag_3Rnd_82mm_HE: VehicleMagazine
     {
         displayName = "[KC] 3Rnd Mortar HE Shells";
         displayNameShort = "3Rnd HE";
+        displayNameMFDFormat = "HE";
+        
         count = 3;
+        initSpeed = 200;
+        muzzleImpulseFactor[] = {0, 0};
+        nameSound = "heat";
 
         scope = 1;
         scopeArsenal = 0;
