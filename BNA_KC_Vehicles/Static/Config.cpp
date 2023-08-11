@@ -185,7 +185,7 @@ class CfgAmmo
         model = "\A3\weapons_f\ammo\shell";
         submunitionAmmo = "SmokeShellArty";
 
-        effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
+        // effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
         effectFlare = "FlareShell";
         effectsFire = "CannonFire";
         effectsMissile = "ExplosionEffects";
