@@ -324,6 +324,7 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "[KC] Model 190 Mortar System";
+        crew = "BNA_KC_Unit_Phase2_CT";
         
         // ACE
         ace_cargo_noRename = 1;
