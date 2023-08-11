@@ -183,7 +183,7 @@ class CfgAmmo
     class BNA_KC_82mm_SmokeWhite_Ammo: ShotDeployBase
     {
         model = "\A3\weapons_f\ammo\shell";
-        submunitionAmmo = "SmokeShellArty";
+        submunitionAmmo = "SmokeShellArty"; // Smoke effect to spawn (or any other ammo type)
 
         // effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
         effectFlare = "FlareShell";
