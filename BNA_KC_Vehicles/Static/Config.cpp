@@ -68,7 +68,8 @@ class CfgWeapons
         displayName = "[KC] Model 190 Mortar System";
         magazines[] =
         {
-            "BNA_KC_Mag_3Rnd_82mm_HE"
+            "BNA_KC_Mag_3Rnd_82mm_HE",
+            "BNA_KC_Mag_3Rnd_82mm_SmokeWhite"
         };
 
         MORTAR_SOUND_FIRE()
@@ -141,6 +142,25 @@ class CfgMagazines
     {
         CSW_MAG_CARRY()
     };
+
+    class 3AS_8Rnd_82mm_Mo_Smoke_white;
+    class BNA_KC_Mag_3Rnd_82mm_SmokeWhite: 3AS_8Rnd_82mm_Mo_Smoke_white
+    {
+        displayName = "[KC] 3Rnd Mortar White Smoke Shells";
+        displayNameShort = "3Rnd W Smoke";
+        count = 3;
+
+        scope = 1;
+        scopeArsenal = 0;
+
+        model = "\z\ace\addons\mk6mortar\data\l16_ammo_smk_white.p3d";
+        picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_smk_white_ca.paa";
+        ammo = "BNA_KC_82mm_SmokeWhite_Ammo";
+    };
+    class BNA_KC_Mag_3Rnd_82mm_SmokeWhite_CSW: BNA_KC_Mag_3Rnd_82mm_SmokeWhite
+    {
+        CSW_MAG_CARRY()
+    };
 };
 
 
@@ -149,6 +169,22 @@ class CfgAmmo
     class 3AS_82mm_HE_Mortar;
     class BNA_KC_82mm_HE_Ammo: 3AS_82mm_HE_Mortar
     {
+        effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
+        effectFlare = "FlareShell";
+        effectsFire = "CannonFire";
+        effectsMissile = "ExplosionEffects";
+        effectsSmoke = "SmokeShellWhite";
+        ExplosionEffects = "MortarExplosion";
+
+        MORTAR_SOUND_AMMO()
+    };
+
+    class ShotDeployBase;
+    class BNA_KC_82mm_SmokeWhite_Ammo: ShotDeployBase
+    {
+        model = "\A3\weapons_f\ammo\shell";
+        submunitionAmmo = "SmokeShellArty";
+
         effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
         effectFlare = "FlareShell";
         effectsFire = "CannonFire";
@@ -167,6 +203,10 @@ class ACE_CSW_Groups
     class BNA_KC_Mag_3Rnd_82mm_HE_CSW
     {
         BNA_KC_Mag_3Rnd_82mm_HE = 1; // Gives 1 of this magazine when loading
+    };
+    class BNA_KC_Mag_3Rnd_82mm_SmokeWhite_CSW
+    {
+        BNA_KC_Mag_3Rnd_82mm_SmokeWhite = 1;
     };
 };
 
@@ -235,7 +275,11 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                magazines[] = {"BNA_KC_Mag_3Rnd_82mm_HE"};
+                magazines[] =
+                {
+                    "BNA_KC_Mag_3Rnd_82mm_HE",
+                    "BNA_KC_Mag_3Rnd_82mm_SmokeWhite"
+                };
                 weapons[] = {"BNA_KC_Deployable_M190_Turret"};
 
                 // Maximum and minimum angles for mortar turret 

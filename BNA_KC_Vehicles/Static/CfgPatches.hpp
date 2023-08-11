@@ -13,10 +13,13 @@ class CfgPatches
                 // Base Mortar
             "ace_mk6mortar",
                 // Mortar magazines model / picture
+            "3AS_Main",
+                // Mortar visual effect
             "3AS_mortar",
                 // Mortar model/textures
-                // Mortar magazine/ammo
-                // Mortar visual effect
+            "3AS_VehicleWeapons",
+                // Mortar ammo classes
+                // TODO: Replace with vanilla classes
             "ls_vehicles_ground",
                 // Mortar sound effects
         };
@@ -32,12 +35,15 @@ class CfgPatches
         };
         magazines[] =
         {
-            "BNA_KC_3Rnd_82mm_Shell",
-            "BNA_KC_3Rnd_82mm_Shell_CSW"
+            "BNA_KC_Mag_3Rnd_82mm_HE",
+            "BNA_KC_Mag_3Rnd_82mm_HE_CSW",
+            "BNA_KC_Mag_3Rnd_82mm_SmokeWhite",
+            "BNA_KC_Mag_3Rnd_82mm_SmokeWhite_CSW"
         };
         ammo[] =
         {
-            "BNA_KC_82mm_Shell_Ammo"
+            "BNA_KC_82mm_HE_Ammo",
+            "BNA_KC_82mm_SmokeWhite_Ammo"
         };
     };
 };
