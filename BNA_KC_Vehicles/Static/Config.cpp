@@ -68,7 +68,7 @@ class CfgWeapons
         displayName = "[KC] Model 190 Mortar System";
         magazines[] =
         {
-            "BNA_KC_3Rnd_82mm_Shell"
+            "BNA_KC_Mag_3Rnd_82mm_HE"
         };
 
         MORTAR_SOUND_FIRE()
@@ -123,7 +123,7 @@ class CfgWeapons
 class CfgMagazines
 {
     class 3AS_8Rnd_82mm_Mo_shells;
-    class BNA_KC_3Rnd_82mm_Shell: 3AS_8Rnd_82mm_Mo_shells
+    class BNA_KC_Mag_3Rnd_82mm_HE: 3AS_8Rnd_82mm_Mo_shells
     {
         displayName = "[KC] 3Rnd Mortar HE Shells";
         displayNameShort = "3Rnd HE";
@@ -134,10 +134,10 @@ class CfgMagazines
 
         model = "\z\ace\addons\mk6mortar\data\l16_ammo_he.p3d";
         picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
-        ammo = "BNA_KC_82mm_Shell_Ammo";
+        ammo = "BNA_KC_82mm_HE_Ammo";
     };
     // CSW converts inventory mags into vehicle mags, this is the one a unit carries
-    class BNA_KC_3Rnd_82mm_Shell_CSW: BNA_KC_3Rnd_82mm_Shell
+    class BNA_KC_Mag_3Rnd_82mm_HE_CSW: BNA_KC_Mag_3Rnd_82mm_HE
     {
         type = 256;
         scope = 2;
@@ -151,7 +151,7 @@ class CfgMagazines
 class CfgAmmo
 {
     class 3AS_82mm_HE_Mortar;
-    class BNA_KC_82mm_Shell_Ammo: 3AS_82mm_HE_Mortar
+    class BNA_KC_82mm_HE_Ammo: 3AS_82mm_HE_Mortar
     {
         effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
         effectFlare = "FlareShell";
@@ -168,9 +168,9 @@ class CfgAmmo
 class ACE_CSW_Groups
 {
     // Conversions for inventory mags to vehicle mags
-    class BNA_KC_3Rnd_82mm_Shell_CSW
+    class BNA_KC_Mag_3Rnd_82mm_HE_CSW
     {
-        BNA_KC_3Rnd_82mm_Shell = 1; // Gives 1 of this magazine when loading
+        BNA_KC_Mag_3Rnd_82mm_HE = 1; // Gives 1 of this magazine when loading
     };
 };
 
@@ -239,7 +239,7 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                magazines[] = {"BNA_KC_3Rnd_82mm_Shell"};
+                magazines[] = {"BNA_KC_Mag_3Rnd_82mm_HE"};
                 weapons[] = {"BNA_KC_Deployable_M190_Turret"};
 
                 // Maximum and minimum angles for mortar turret 
