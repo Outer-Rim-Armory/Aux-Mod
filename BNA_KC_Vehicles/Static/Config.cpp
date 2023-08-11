@@ -151,18 +151,10 @@ class CfgMagazines
         CSW_MAG_CARRY()
     };
 
-    class 3AS_8Rnd_82mm_Mo_Smoke_white;
-    class BNA_KC_Mag_3Rnd_82mm_SmokeWhite: 3AS_8Rnd_82mm_Mo_Smoke_white
+    class BNA_KC_Mag_3Rnd_82mm_SmokeWhite: BNA_KC_Mag_3Rnd_82mm_HE
     {
         displayName = "[KC] 3Rnd Mortar White Smoke Shells";
         displayNameShort = "3Rnd W Smoke";
-        count = 3;
-
-        scope = 1;
-        scopeArsenal = 0;
-
-        model = "\z\ace\addons\mk6mortar\data\l16_ammo_smk_white.p3d";
-        picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_smk_white_ca.paa";
         ammo = "BNA_KC_82mm_SmokeWhite_Ammo";
     };
     class BNA_KC_Mag_3Rnd_82mm_SmokeWhite_CSW: BNA_KC_Mag_3Rnd_82mm_SmokeWhite
@@ -170,7 +162,7 @@ class CfgMagazines
         CSW_MAG_CARRY()
     };
 
-    class BNA_KC_Mag_3Rnd_82mm_SmokeBlue: BNA_KC_Mag_3Rnd_82mm_SmokeWhite
+    class BNA_KC_Mag_3Rnd_82mm_SmokeBlue: BNA_KC_Mag_3Rnd_82mm_HE
     {
         displayName = "[KC] 3Rnd Mortar Blue Smoke Shells";
         displayNameShort = "3Rnd B Smoke";
