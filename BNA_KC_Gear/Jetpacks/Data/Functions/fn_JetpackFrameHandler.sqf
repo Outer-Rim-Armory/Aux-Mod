@@ -31,23 +31,20 @@ if (!(ace_player call BNAKC_fnc_CanUseJetpack) or isTouchingGround ace_player) e
     [BNA_KC_Jet_JetpackFuelHandle] call CBA_fnc_RemovePerFrameHandler;
     BNA_KC_Jet_JetpackFuelHandle = nil;
     
-    if (hasInterface) then
-    {
-        // Wait a bit before removing effects, makes it look nicer
-        [
+    // Wait a bit before removing effects, makes it look nicer
+    [
+        {
+            // Delete effects
+            // TODO: Delete fire effects, wait, then delete smoke?
             {
-                // Delete effects
-                // TODO: Delete fire effects, wait, then delete smoke?
-                {
-                    deleteVehicle _x;
-                } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
-                [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_RemovePerFrameHandler;
-                BNA_KC_Jet_JetpackSoundHandle = nil;
-            },
-            [],
-            0.3
-        ] call CBA_fnc_WaitAndExecute;
-    };
+                deleteVehicle _x;
+            } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
+            [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_RemovePerFrameHandler;
+            BNA_KC_Jet_JetpackSoundHandle = nil;
+        },
+        [],
+        0.3
+    ] call CBA_fnc_WaitAndExecute;
 };
 
 

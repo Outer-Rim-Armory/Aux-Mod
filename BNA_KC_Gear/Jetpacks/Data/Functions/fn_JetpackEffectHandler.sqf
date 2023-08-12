@@ -14,7 +14,6 @@
  */
 
 
-if !(hasInterface) exitwith {}; // Function only contains visual effects, no need to execute on the server
 params ["_unit"];
 
 // Contants and macros
