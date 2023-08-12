@@ -36,7 +36,7 @@ _volumeCoef =
     +
     ({
         ace_player getVariable [_x, false]
-    } count ["BNA_KC_Jet_rise", "BNA_KC_Jet_slowFall"]) // Jetpack variables
+    } count ["BNA_KC_Jet_rise", "BNA_KC_Jet_slowFall", "BNA_KC_Jet_hover"]) // Jetpack variables
 );
 _volume = _volume * _volumeCoef + 0.1;
 

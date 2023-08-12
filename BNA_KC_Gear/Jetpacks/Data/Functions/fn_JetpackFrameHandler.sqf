@@ -30,6 +30,8 @@ if (!(ace_player call BNAKC_fnc_CanUseJetpack) or isTouchingGround ace_player) e
 
     [BNA_KC_Jet_JetpackFuelHandle] call CBA_fnc_RemovePerFrameHandler;
     BNA_KC_Jet_JetpackFuelHandle = nil;
+
+    ace_player setVariable ["BNA_KC_Jet_hover", false];
     
     // Wait a bit before removing effects, makes it look nicer
     [
@@ -115,6 +117,14 @@ if (ace_player getVariable ["BNA_KC_Jet_slowFall", false]) then
 {
     _velocity set [2, (_velocity#2) max -5];
     // Caps downward velocity
+};
+
+if (ace_player getVariable ["BNA_KC_Jet_hover", false]) then
+{
+    private _speed = random 2; // Get random number
+    _speed = _speed - 1;       // Allows for potentially negative values, makes the hover not 100% perfect
+
+    _velocity set [2, _speed];
 };
 
 // Slow player down mid-air, used to simulate air-resistance
