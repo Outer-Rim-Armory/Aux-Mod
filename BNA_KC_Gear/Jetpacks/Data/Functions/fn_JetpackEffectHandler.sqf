@@ -53,10 +53,8 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
             // Extra offset if unit is holding a weapon, animation causes the jetpack to move but not the points
             _offsetEffect = _offsetEffect vectorAdd [-0.12, 0, 0.1];
         };
-        DEV_LOG(_effectTypes);
         // Spawn all of the effects, attach to player, save to array
         {
-            DEV_LOG(_x);
             private _effect = "#particlesource"createVehicleLocal [0, 0, 0];
             _effect setParticleClass _x;
             _effect attachTo [_unit, _offsetEffect, "aimPoint"];
