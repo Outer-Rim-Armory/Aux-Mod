@@ -6,12 +6,27 @@
     "BNA_KC_Jetpacks_ActivateJetpack",
     ["Activate Jetpack", "Accellerates the user upward."],
     {
-        // ace_player includes remote controlling AI
+        // Save original hover state
+        ace_player setVariable
+        [
+            "BNA_KC_Jet_hoverOriginal",
+            ace_player getVariable ["BNA_KC_Jet_hover", false]
+        ];
+        // Disable hover
+        ace_player setVariable ["BNA_KC_Jet_hover", false];
+
         ace_player setVariable ["BNA_KC_Jet_rise", true];
         call BNAKC_fnc_Jetpack;
     },     // KeyDown
     {
         ace_player setVariable ["BNA_KC_Jet_rise", false];
+        // Reset hover state to original value (before rising)
+        ace_player setVariable
+        [
+            "BNA_KC_Jet_hover",
+            ace_player getVariable ["BNA_KC_Jet_hoverOriginal", false]
+        ];
+        ace_player setVariable ["BNA_KC_Jet_hoverOriginal", nil]; // Remove old variable
     },     // KeyUp
     [DIK_SPACE, [true, false, false]],    // Shift + Spacebar
     false, // Hold Key
@@ -41,12 +56,12 @@
     "BNA_KC_Jetpacks_Hover",
     ["Toggle Hover", "Puts the user into a hover state. Only activates if not touching the ground."],
     {
-        private _hoverState = switch (ace_player getVariable ["BNA_KC_Jet_hover", false]) do
+        _hoverState = switch (ace_player getVariable ["BNA_KC_Jet_hover", false]) do
         {
             case true: { false; };
             case false: { true; };
         };
-        ace_player setVariable ["BNA_KC_Jet_hover", _hoverState]
+        ace_player setVariable ["BNA_KC_Jet_hover", _hoverState];
     },     // KeyDown
     {},    // KeyUp
     [DIK_SPACE, [false, true, false]],    // Ctrl + Spacebar
