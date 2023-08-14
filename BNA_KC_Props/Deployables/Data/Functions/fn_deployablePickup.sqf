@@ -27,7 +27,7 @@ if !(isText (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Deployable
 private _objectClass = typeOf _object;
 private _name = PROP((configFile >> "CfgVehicles" >> _objectClass >> "displayName"), "item", "text");
 private _itemClass = PROP((configFile >> "CfgVehicles" >> _objectClass >> "BNA_KC_Deployable_item"), "", "text");
-private _pickupTime = PROP((configFile >> "CfgVehicles" >> _objectClass >> "BNA_KC_Deployable_placeTime"), PUT_DOWN_ANIM_TIME, "number");
+private _pickupTime = PROP((configFile >> "CfgVehicles" >> _objectClass >> "BNA_KC_Deployable_pickupTime"), PUT_DOWN_ANIM_TIME, "number");
 
 [
     _pickupTime,
