@@ -34,8 +34,8 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\LAATi\BNA_KC_LAAT_Standard_Body.paa",
-            "BNA_KC_Vehicles\Aviation\Data\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Body.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
             "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
             "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
@@ -103,8 +103,8 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\LAATi\BNA_KC_LAAT_Standard_Body.paa",
-            "BNA_KC_Vehicles\Aviation\Data\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Body.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
             "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
             "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
@@ -175,11 +175,11 @@ class CfgVehicles
         
         hiddenSelectionsTextures[] = 
         {
-            "BNA_KC_Vehicles\Aviation\Data\LAATc\BNA_KC_LAATC_Auxiliary.paa",
-            "BNA_KC_Vehicles\Aviation\Data\LAATc\BNA_KC_LAATC_Cockpit.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Auxiliary.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Cockpit.paa",
             "lsd_vehicles_heli\laatc\data\glass_ca.paa",
-            "BNA_KC_Vehicles\Aviation\Data\LAATc\BNA_KC_LAATC_Hull.paa",
-            "BNA_KC_Vehicles\Aviation\Data\LAATc\BNA_KC_LAATC_Wings.paa"
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Hull.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Wings.paa"
         };
         textureList[] = {}; // Clears the extra skins
 
@@ -232,7 +232,7 @@ class CfgVehicles
 
 		hiddenselectionstextures[]=
 		{
-			"BNA_KC_Vehicles\Aviation\Data\Transport\BNA_KC_Republic_Transport_Body.paa",
+			"BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
 			"3as\3as_starships\data\hs_int_co.paa"
 		};
 	};
