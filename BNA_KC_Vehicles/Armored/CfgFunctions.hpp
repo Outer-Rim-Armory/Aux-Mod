@@ -6,6 +6,7 @@ class CfgFunctions
 		{
 			file = "BNA_KC_Vehicles\Armored\Data\Functions";
 			class ActivateEMP {};
+            class canUseEMP {};
 		};
 	};
 };

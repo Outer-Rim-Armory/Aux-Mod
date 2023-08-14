@@ -1,5 +1,6 @@
 #include "CfgPatches.hpp"
 #include "CfgFunctions.hpp"
+#include "\BNA_KC_Gear\Macros.hpp"
 
 
 class CfgVehicles
@@ -509,6 +510,7 @@ class CfgVehicles
 
         displayName = "[KC] OLV-20 APC";
 
+        BNA_KC_EMP_cooldown = 25;
         BNA_KC_EMP_Radius_Droid = 25;
         BNA_KC_EMP_Radius_Deka = 25;
         BNA_KC_EMP_Radius_Vehicle = 25;
@@ -601,8 +603,8 @@ class CfgVehicles
                 priority = 100;
                 hideOnUse = 1;
 
-                condition = "ls_player == currentPilot this and isEngineOn this;";
-                statement = "this call BNAKC_fnc_ActivateEMP;";
+                condition = QUOTE(this call BNAKC_fnc_canUseEMP;);
+                statement = QUOTE(this call BNAKC_fnc_ActivateEMP;);
             };
         };
     };
