@@ -92,10 +92,10 @@ class CfgVehicles
 		
 		hiddenSelectionsTextures[] = 
 		{
-			"BNA_KC_Vehicles\Armored\Data\Blitz\BNA_KC_Blitz_Body.paa",
-			"BNA_KC_Vehicles\Armored\Data\Blitz\BNA_KC_Blitz_Tow.paa",
-			"BNA_KC_Vehicles\Armored\Data\Blitz\BNA_KC_Blitz_Addons.paa",
-			"BNA_KC_Vehicles\Armored\Data\Blitz\BNA_KC_Blitz_Camonet.paa"
+			"BNA_KC_Vehicles\Armored\Data\Textures\Blitz\BNA_KC_Blitz_Body.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Blitz\BNA_KC_Blitz_Tow.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Blitz\BNA_KC_Blitz_Addons.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Blitz\BNA_KC_Blitz_Camonet.paa"
 		};
 		class Turrets: Turrets
 		{
@@ -379,11 +379,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"BNA_KC_Vehicles\Armored\Data\Badger\BNA_KC_APC_Body.paa",
-			"BNA_KC_Vehicles\Armored\Data\Badger\BNA_KC_APC_Addons.paa",
-			"BNA_KC_Vehicles\Armored\Data\Badger\BNA_KC_APC_Tows.paa",
-			"BNA_KC_Vehicles\Armored\Data\Badger\BNA_KC_APC_Camonet_Desert.paa",
-			"BNA_KC_Vehicles\Armored\Data\Badger\BNA_KC_APC_CageSand.paa"
+			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Body.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Addons.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Tows.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Camonet_Desert.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_CageSand.paa"
 		};
 		soundEngineOnInt[] = 
 		{
@@ -527,9 +527,9 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Hull_CamoKC.paa",
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Wheels_CamoKC.paa",
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa",
+                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Hull_CamoKC.paa",
+                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Wheels_CamoKC.paa",
+                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -539,9 +539,9 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Hull_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Wheels_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Hull_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Wheels_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoBrown.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -551,9 +551,9 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Hull_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Wheels_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Armored\Data\OLV20\BNA_KC_OLV20_Turret_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Hull_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Wheels_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoGrey.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -631,8 +631,8 @@ class CfgVehicles
 		
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Vehicles\Armored\Data\Saber\BNA_KC_Saber_Body.paa",
-			"BNA_KC_Vehicles\Armored\Data\Saber\BNA_KC_Saber_Weapons.paa"
+			"BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Body.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Weapons.paa"
 		};
 	};
 
@@ -656,10 +656,10 @@ class CfgVehicles
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Vehicles\Armored\Data\ATTE\BNA_KC_ATTE_Body.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Body.paa",
 			"3as\3as_atte\data\atte_chasis_co.paa",
-			"BNA_KC_Vehicles\Armored\Data\ATTE\BNA_KC_ATTE_Cockpit.paa",
-			"BNA_KC_Vehicles\Armored\Data\ATTE\BNA_KC_ATTE_Turrets.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Cockpit.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Turrets.paa",
 			"3as\3as_atte\data\atte_underpiping_co.paa",
 			"3as\3as_atte\data\atte_middleleg_co.paa"
 		};
