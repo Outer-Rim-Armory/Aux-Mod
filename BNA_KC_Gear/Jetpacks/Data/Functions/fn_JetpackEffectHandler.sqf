@@ -55,7 +55,7 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
         };
         // Spawn all of the effects, attach to player, save to array
         {
-            private _effect = "#particlesource"createVehicleLocal [0, 0, 0];
+            private _effect = "#particlesource" createVehicleLocal [0, 0, 0];
             _effect setParticleClass _x;
             _effect attachTo [_unit, _offsetEffect, "aimPoint"];
             _effectSources pushBack _effect;
