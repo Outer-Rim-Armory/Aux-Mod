@@ -594,7 +594,7 @@ class CfgVehicles
     
         class UserActions
         {
-            class ActivateEMP
+            class activateEMP
             {
                 displayName = "<t font='RobotoCondensedBold'>Activate EMP</t>";
                 displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\iconLightning_ca.paa'>";
@@ -604,7 +604,7 @@ class CfgVehicles
                 hideOnUse = 1;
 
                 condition = QUOTE(this call BNAKC_fnc_canUseEMP;);
-                statement = QUOTE(this call BNAKC_fnc_ActivateEMP;);
+                statement = QUOTE(this call BNAKC_fnc_activateEMP;);
             };
         };
     };

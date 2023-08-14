@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [tank] call BNAKC_fnc_ActivateEMP;
+ * [tank] call BNAKC_fnc_activateEMP;
  */
 
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
