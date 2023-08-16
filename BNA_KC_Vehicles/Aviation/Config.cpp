@@ -81,6 +81,10 @@ class CfgVehicles
         tas_can_impulse = 0; // Disables 3AS's Impulse System
 		ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
 		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+        ls_impulsor_fuelDrain_1 = 0;
+        ls_impulsor_fuelDrain_2 = 0;
+        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
+        // ls_impulsor_boostSpeed_2 = 600; 
     };
 
     class BNA_KC_LAATi_MK2: 3as_LAAT_Mk2
@@ -150,6 +154,10 @@ class CfgVehicles
         tas_can_impulse = 0; // Disables 3AS's Impulse System
 		ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
 		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+        ls_impulsor_fuelDrain_1 = 0;
+        ls_impulsor_fuelDrain_2 = 0;
+        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
+        // ls_impulsor_boostSpeed_2 = 600; 
     };
 
     class lsd_laatc_base;
@@ -201,6 +209,13 @@ class CfgVehicles
                 statement = QUOTE(this call BNAKC_fnc_specialLoad;);
             };
         };
+
+        ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
+        ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+        ls_impulsor_fuelDrain_1 = 0;
+        ls_impulsor_fuelDrain_2 = 0;
+        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
+        // ls_impulsor_boostSpeed_2 = 600; 
     };
 
     class 3AS_Republic_Transport_01;
