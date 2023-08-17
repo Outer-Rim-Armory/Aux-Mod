@@ -40,13 +40,16 @@ if (!(ace_player call BNAKC_fnc_CanUseJetpack) or isTouchingGround ace_player) e
             // TODO: Delete fire effects, wait, then delete smoke?
             [
                 {
+                    private _sources = ace_player getVariable ["BNA_KC_Jet_effectSources", []];
                     {
-                        private _sources = ace_player getVariable ["BNA_KC_Jet_effectSources", []];
-                        _sources deleteAt (_sources find _x);
-                        ace_player setVariable ["BNA_KC_Jet_effectSources", _sources];
-                        
                         deleteVehicle _x;
-                    } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
+                    } forEach _sources;
+                    
+                    _sources = _sources select
+                    {
+                        !(_x isEqualTo objNull); // Removing items from the array in the forEach causes indexing problems		
+                    };
+                    ace_player setVariable ["BNA_KC_Jet_effectSources", _sources];
                 }
             ] remoteExec ["call", 0, true];
 
