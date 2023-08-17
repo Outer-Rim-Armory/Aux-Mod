@@ -3,7 +3,7 @@
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"  // Key Codes
 
 [
-    ["ARMA 3 Chat Wheel - Redux", "Menu"],
+    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
     "CWR_OpenMenu",
     ["Open Menu", "Opens the custom chat menu."],
     {

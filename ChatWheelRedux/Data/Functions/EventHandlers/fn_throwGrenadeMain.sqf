@@ -23,7 +23,7 @@ private _grenadeType = "Grenade";
 
 if (_magazine isKindOf ["SmokeShell", configFile >> "CfgMagazines"]) then
 {
-    grenadeType = "Smoke";
+    _grenadeType = "Smoke";
 };
 
 private _nearbyUnits = (getPosATL _unit) nearEntities ["CAManBase", 30];

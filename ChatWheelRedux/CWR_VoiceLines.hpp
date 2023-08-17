@@ -13,4 +13,24 @@ class CWR_VoiceLines
             "ChatWheelRedux\Data\Audio\NeedMedic\TroubleBreathing.wss"
         };
     };
+
+    class ThrowGrenade
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\Throw\GrenadeDeployed.wss",
+            "ChatWheelRedux\Data\Audio\Throw\GrenadeOutTakeThis.wss",
+            "ChatWheelRedux\Data\Audio\Throw\MakeRoomGrenade.wss"
+        };
+    };
+
+    class ThrowSmoke
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\Throw\SmokeCoverIncoming.wss",
+            "ChatWheelRedux\Data\Audio\Throw\SmokeGetReady.wss",
+            "ChatWheelRedux\Data\Audio\Throw\SmokeGrenade.wss"
+        };
+    };
 };
