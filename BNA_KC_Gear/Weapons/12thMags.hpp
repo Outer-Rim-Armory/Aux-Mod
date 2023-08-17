@@ -75,7 +75,7 @@ class BNA_KC_Mag_300Rnd_Flamer: M2_Fuel_Tank
 
 class BNA_KC_Mag_150Rnd_Flamer: BNA_KC_Mag_300Rnd_Flamer
 {
-    displayName = "[KC] BT X-42 Fuel Tank";
+    displayName = "[KC] BT X-42 Heavy Fuel Tank";
     count = 150;
     mass = 150;
 };
