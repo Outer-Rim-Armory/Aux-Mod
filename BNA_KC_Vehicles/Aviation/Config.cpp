@@ -5,10 +5,6 @@
 
 class CfgVehicles
 {
-    // class W41_LAAT_MK1;
-    // class W41_LAAT_MK2;
-    // 41st has numbers swapped, mk1 = mk2, mk2 = mk1
-    // 3AS Base Classes (For when dependency free)
     class 3as_LAAT_Mk1;
     // class 3as_LAAT_Mk1Lights;
     class 3as_LAAT_Mk2;
@@ -32,6 +28,8 @@ class CfgVehicles
         displayName = "[KC] LAAT/i MK1";
 
         armor = 200;
+        fuelCapacity = 3000;
+        fuelConsumptionRate = 0.12;
         crew = "BNA_KC_Unit_Phase2_Pilot";
 
         hiddenSelectionsTextures[] =
@@ -105,6 +103,8 @@ class CfgVehicles
         displayName = "[KC] LAAT/i MK2";
 
         armor = 200;
+        fuelCapacity = 3000;
+        fuelConsumptionRate = 0.12;
         crew = "BNA_KC_Unit_Phase2_Pilot";
 
         hiddenSelectionsTextures[] =
