@@ -759,4 +759,34 @@ class CfgMusic
         duration = 202;
         musicClass = "BNA_KC_OtherMusic"; // Music category
 	};
+
+
+
+	class BNA_KC_Umbara_1
+	{
+        name = "[CW] Umbara Music";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\CWA_Umbara.ogg",db+0,1};
+        duration = 147;
+        musicClass = "BNA_KC_SWMusic"; // Music category
+	};
+
+
+
+	class BNA_KC_Umbara_2
+	{
+        name = "[CW] Umbara Music 2";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\CWA_Umbara_2.ogg",db+0,1};
+        duration = 235;
+        musicClass = "BNA_KC_SWMusic"; // Music category
+	};
+
+
+
+	class BNA_KC_Umbara_3
+	{
+        name = "[CW] Umbara Music 3";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\CWA_Umbara_3.ogg",db+0,1};
+        duration = 125;
+        musicClass = "BNA_KC_SWMusic"; // Music category
+	};
 };
