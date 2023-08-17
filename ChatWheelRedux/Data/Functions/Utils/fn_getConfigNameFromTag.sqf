@@ -9,7 +9,7 @@
  * String: The config name of the tag
  *
  * Example:
- * "[vl-NeedMedic]" call CWR_fnc_GetConfigNameFromTag; // Returns "NeedMedic"
+ * "[vl-NeedMedic]" call CWR_fnc_getConfigNameFromTag; // Returns "NeedMedic"
  */
 
 params ["_tag"];

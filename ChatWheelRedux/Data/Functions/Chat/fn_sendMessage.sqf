@@ -15,7 +15,7 @@
 
 params ["_message"];
 
-_message = _message call CWR_fnc_ProcessTags;
+_message = _message call CWR_fnc_processTags;
 
 // Submenus need to be opened with spawn, which returns the code of the
 // submenu function before an option is selected.

@@ -12,7 +12,7 @@
  * String - The edited string
  *
  * Example:
- * ["xxx is awesome, I love xxx!", "xxx", "Arma"] call CWR_fnc_StringReplace;
+ * ["xxx is awesome, I love xxx!", "xxx", "Arma"] call CWR_fnc_stringReplace;
  */
 
 params ["_str", "_find", ["_replace", ""]];

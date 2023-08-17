@@ -1,16 +1,15 @@
 /*
- * Authors: DartRuffian
+ * Authors: Leopard20 and DartRuffian
  * Determines which sound effect should play based on user settings, then plays that sound effect.
  *
  * Arguments:
- * 0: File path of sound to play <String>
- * 1: Sound Position <Array format PositionASL>
+ * 0: Sound Position <ARRAY format PositionASL>
  *
  * Return Value:
  * None
  *
  * Example:
- * ["file.wss", getPosASL player] call CWR_fnc_PlayLocalSound;
+ * ["file.wss", getPosASL player] call CWR_fnc_playLocalSound;
  */
 
 params ["_file", "_position"];

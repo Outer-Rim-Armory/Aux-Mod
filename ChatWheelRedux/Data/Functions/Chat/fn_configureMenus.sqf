@@ -41,7 +41,7 @@ CWR_launcherMessagesHashMap =
     [CWR_messagesHashMap] call CBA_fnc_hashKeys,
     "",
     "[([CWR_messagesHashMap] call CBA_fnc_hashValues) select %2] call CWR_fnc_SendMessage"
-] call BIS_fnc_CreateMenu;
+] call BIS_fnc_createMenu;
 
 
 // Distance Menu, used to get the user's choice of close, medium, or far distances
@@ -51,7 +51,7 @@ CWR_OpenDistanceMenu =
     sleep 0.05;
     
     private _distanceList = ["Close", "Mid", "Far"];
-    CWR_distanceMessageList = _distanceList apply { [_message, "[distance]", _x] call CWR_fnc_StringReplace; };
+    CWR_distanceMessageList = _distanceList apply { [_message, "[distance]", _x] call CWR_fnc_stringReplace; };
     //  distanceMessageList must be global because no other values can 
     //  be passed to the expression parameter of BIS_fnc_CreateMenu
     
@@ -61,7 +61,7 @@ CWR_OpenDistanceMenu =
         _distanceList,
         "",
         "[[CWR_distanceMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
-    ] call BIS_fnc_CreateMenu;
+    ] call BIS_fnc_createMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Distance_0";
 };
@@ -73,7 +73,7 @@ CWR_OpenStatusMenu =
     sleep 0.05;
     
     private _statusList = ["Green", "Yellow", "Orange", "Red", "Black"];
-    CWR_statusMessageList = _statusList apply { [_message, "[status]", _x] call CWR_fnc_StringReplace; };
+    CWR_statusMessageList = _statusList apply { [_message, "[status]", _x] call CWR_fnc_stringReplace; };
     
     [
         "How are you?",
@@ -81,7 +81,7 @@ CWR_OpenStatusMenu =
         _statusList,
         "",
         "[[CWR_statusMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
-    ] call BIS_fnc_CreateMenu;
+    ] call BIS_fnc_createMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Status_0";
 };
@@ -93,7 +93,7 @@ CWR_OpenLauncherMenu =
     sleep 0.05;
     
     CWR_launcherMessageList = ([CWR_launcherMessagesHashMap] call CBA_fnc_hashValues) apply
-    { [_message, "[launcher]", _x] call CWR_fnc_StringReplace; };
+    { [_message, "[launcher]", _x] call CWR_fnc_stringReplace; };
     
     [
         "Launcher",
@@ -101,7 +101,7 @@ CWR_OpenLauncherMenu =
         [CWR_launcherMessagesHashMap] call CBA_fnc_hashKeys,
         "",
         "[[CWR_launcherMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
-    ] call BIS_fnc_CreateMenu;
+    ] call BIS_fnc_createMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Launcher_0";
 };

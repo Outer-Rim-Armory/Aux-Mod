@@ -12,7 +12,7 @@
  * String - The edited string
  *
  * Example:
- * ["Th'is m'essage 'h'as 'a' l'o't' 'o'f' q'u'o't'es in it.", false, true] call CWR_fnc_StringReplace;
+ * ["Th'is m'essage 'h'as 'a' l'o't' 'o'f' q'u'o't'es in it.", false, true] call CWR_fnc_remoteQuotes;
  * // Returns "This message has a lot of quotes in it"
  */
 
@@ -20,12 +20,12 @@ params ["_str", ["_removeDouble", true], ["_removeSingle", true]];
 
 if (_removeDouble) then
 {
-    _str = [_str, '"', ""] call CWR_fnc_StringReplace;
+    _str = [_str, '"', ""] call CWR_fnc_stringReplace;
 };
 
 if (_removeDouble) then
 {
-    _str = [_str, "'", ""] call CWR_fnc_StringReplace;
+    _str = [_str, "'", ""] call CWR_fnc_stringReplace;
 };
 
 _str;

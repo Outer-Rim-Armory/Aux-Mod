@@ -15,8 +15,8 @@ _message = switch (true) do
     case ("[bearing]" in _message):
     {
         private _bearing = round direction player;
-        _message = [_message, "[bearing]", str _bearing] call CWR_fnc_StringReplace;
-        _message call CWR_fnc_ProcessTags;
+        _message = [_message, "[bearing]", str _bearing] call CWR_fnc_stringReplace;
+        _message call CWR_fnc_processTags;
     };
 
     case ("[direction]" in _message):
@@ -24,15 +24,15 @@ _message = switch (true) do
         private _bearing = round direction player;
         private _facing = _bearing call CWR_fnc_GetDirFromBearing;
 
-        _message = [_message, "[direction]", _facing] call CWR_fnc_StringReplace;
-        _message call CWR_fnc_ProcessTags;
+        _message = [_message, "[direction]", _facing] call CWR_fnc_stringReplace;
+        _message call CWR_fnc_processTags;
     };
 
     case ("[weapon]" in _message):
     {
         private _currentWeapon = getText (configFile >> "CfgWeapons" >> currentWeapon player >> "displayName");
-        _message = [_message, "[weapon]", _currentWeapon] call CWR_fnc_StringReplace;
-        _message call CWR_fnc_ProcessTags;
+        _message = [_message, "[weapon]", _currentWeapon] call CWR_fnc_stringReplace;
+        _message call CWR_fnc_processTags;
     };
 
     case ("[launcher]" in _message):
@@ -43,12 +43,12 @@ _message = switch (true) do
     // Voice line tag, plays random sound from config class that matches the name in the tag
     // Checks for "[vl-ABC] ..."
     // regexMatch checks if the entire string matches the pattern, not just a part of it
-    case (count (_message call CWR_fnc_FindAllVoicelineTags) > 0):
+    case (count (_message call CWR_fnc_findAllVoicelineTags) > 0):
     {
-        private _tag = _message call CWR_fnc_FindAllVoicelineTags select 0 select 0 select 0; // Returns nested array
-        private _configName = _tag call CWR_fnc_GetConfigNameFromTag;
+        private _tag = _message call CWR_fnc_findAllVoicelineTags select 0 select 0 select 0; // Returns nested array
+        private _configName = _tag call CWR_fnc_getConfigNameFromTag;
 
-        _message = [_message, _tag, ""] call CWR_fnc_StringReplace;
+        _message = [_message, _tag, ""] call CWR_fnc_stringReplace;
 
         private _config = (configFile >> "CWR_VoiceLines" >> _configName);
         if (isClass _config) then
@@ -63,7 +63,7 @@ _message = switch (true) do
             };
         };
 
-        _message call CWR_fnc_ProcessTags; // Used to check for further tags
+        _message call CWR_fnc_processTags; // Used to check for further tags
     };
 
     default

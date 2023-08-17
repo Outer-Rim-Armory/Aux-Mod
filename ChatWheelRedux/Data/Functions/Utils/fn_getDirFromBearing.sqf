@@ -9,7 +9,7 @@
  * String - The correlating direction
  *
  * Example:
- * 90 call CWR_fnc_GetDirFromBearing; // Returns "East"
+ * 90 call CWR_fnc_getDirFromBearing; // Returns "East"
  */
 
 params ["_bearing"];

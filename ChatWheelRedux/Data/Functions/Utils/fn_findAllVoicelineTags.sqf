@@ -11,7 +11,7 @@
  *   1: Number - offset of given match relative to haystack beginning (the provided offset is ignored)
  *
  * Example:
- * "[vl-NeedMedic] test message [vl-NeedAmmo]" call CWR_fnc_FindAllVoicelineTags;
+ * "[vl-NeedMedic] test message [vl-NeedAmmo]" call CWR_fnc_findAllVoicelineTags;
  * // Returns [[["[vl-NeedMedic]", 0]], [["[vl-NeedAmmo]", 10]]]
  */
 

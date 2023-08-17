@@ -59,11 +59,14 @@ class CfgFunctions
         class EventHandlers
         {
             file = "ChatWheelRedux\Data\Functions\EventHandlers";
-            class ThrowGrenade {};
+            class throwGrenadeMain {};
+            class throwGrenadeEH {};
+            class throwGrenadeEHACE {};
         };
     };
 };
 
+#define QUOTE(CODE) #CODE
 
 class Extended_PreInit_EventHandlers
 {
@@ -90,6 +93,6 @@ class Extended_PostInit_EventHandlers
     };
     class CWR_ThrowGrenadeEH
     {
-        init = "call CWR_fnc_ThrowGrenade;";
+        init = QUOTE(if isClass (configFile >> 'CfgPatches' >> 'ace_common') then { call CWR_fnc_throwGrenadeEHACE; } else { call CWR_fnc_throwGrenadeEH; };);
     };
 };

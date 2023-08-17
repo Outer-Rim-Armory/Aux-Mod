@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * call CWR_CreateTagMenu;
+ * call CWR_fnc_createTagMenu;
  */
 
 // Normal text settings:
@@ -63,7 +63,7 @@ reverse _tags; // Records are created in reverse order, this makes it appear in 
 // Blue  : 99cccc
 // Green : bdcc9c
 
-private _FormatTitle =
+private _formatTitle =
 {
     params ["_str"];
 
@@ -71,7 +71,7 @@ private _FormatTitle =
     _str;
 };
 
-private _FormatSubtitle =
+private _formatSubtitle =
 {
     params ["_str"];
 
@@ -79,7 +79,7 @@ private _FormatSubtitle =
     _str;
 };
 
-private _FormatCode =
+private _formatCode =
 {
     params ["_str"];
 
@@ -94,15 +94,15 @@ _separator = if (CWR_TagMenu_UseNewLine) then [{ "<br />becomes<br />" }, { " <f
 // Two loops are needed (one for each submenu) because you wouldn't be able to add the title to first submenu if both were in the same loop.
 {
     // Example usages of tags
-    private _raw = _x#2#0 call _FormatCode;
-    private _formatted = _x#2#1 call _FormatCode;
+    private _raw = _x#2#0 call _formatCode;
+    private _formatted = _x#2#1 call _formatCode;
     
-    player createDiaryRecord ["CWR_TagsSubject", ["Examples", ((_x#0 call _FormatSubtitle) + "<br />" + ([_raw, _formatted] joinString _separator))], taskNull, "NONE", false];
+    player createDiaryRecord ["CWR_TagsSubject", ["Examples", ((_x#0 call _formatSubtitle) + "<br />" + ([_raw, _formatted] joinString _separator))], taskNull, "NONE", false];
 } forEach _tags;
-player createDiaryRecord ["CWR_TagsSubject", ["Examples", "Tag Examples" call _FormatTitle], taskNull, "NONE", false];
+player createDiaryRecord ["CWR_TagsSubject", ["Examples", "Tag Examples" call _formatTitle], taskNull, "NONE", false];
 
 {
     // List of each tag and what it does
-    player createDiaryRecord ["CWR_TagsSubject", ["Message Tags", ((_x#0 call _FormatSubtitle) + "<br />" + _x#1)], taskNull, "NONE", false];
+    player createDiaryRecord ["CWR_TagsSubject", ["Message Tags", ((_x#0 call _formatSubtitle) + "<br />" + _x#1)], taskNull, "NONE", false];
 } forEach _tags;
-player createDiaryRecord ["CWR_TagsSubject", ["Message Tags", "Message Tags" call _FormatTitle], taskNull, "NONE", false];
+player createDiaryRecord ["CWR_TagsSubject", ["Message Tags", "Message Tags" call _formatTitle], taskNull, "NONE", false];
