@@ -35,7 +35,6 @@ private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BN
 // If the handler for using a jetpack doesn't exist, then create it
 if (isNil "BNA_KC_Jet_JetpackHandle") then
 {   
-    ace_player playActionNow "PlayerStand"; // Make player stand up when jetpacking
     // Speed and position, used for an initial boost
     private _velocity = velocity ace_player;
     private _position = getPosASL ace_player;

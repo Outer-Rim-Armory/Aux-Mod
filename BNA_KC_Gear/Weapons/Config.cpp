@@ -780,64 +780,22 @@ class CfgWeapons
         };
     };
 
-    class hgun_Pistol_heavy_01_F;
-    class OPTRE_Handgun_Base: hgun_Pistol_heavy_01_F
+    class BNA_KC_GR20: BNA_KC_DC17
     {
-        class WeaponSlotsInfo;
-    };
-    class OPTRE_M319s: OPTRE_Handgun_Base
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot;
-            class MuzzleSlot;
-            class PointerSlot;
-            class UnderBarrelSlot;
-        };
-    };
-    class BNA_KC_GR20: OPTRE_M319s
-    {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
         displayName = "[KC] GR-20";
         descriptionShort = "An old GR-10 plasma blaster, modified to shoot <br />pressurized bacta canisters instead of plasma.";
         baseWeapon = "BNA_KC_GR20"; // Used to specify it as a different weapon
 
-        magazines[] = { "BNA_KC_Mag_GR20" };
+        magazines[] = {};
         magazineWell[] = {};
 
-        hiddenSelectionsTextures[] =
-        {
-            "", // Decals
-            "BNA_KC_Gear\Weapons\Data\Textures\BNA_KC_GR20.paa" // Main body
-        };
-        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_GR20_UI.paa";
+        modes[] = {};
+        muzzles[] = { "EGLM" };
 
-        // Scion Conflict, 91st, etc. add a bunch of attachments
-        class WeaponSlotsInfo: WeaponSlotsInfo
+        class EGLM: EGLM
         {
-            class CowsSlot: CowsSlot
-            {
-                compatibleItems[] = {};
-            };
-            class MuzzleSlot: MuzzleSlot
-            {
-                compatibleItems[] = {};
-            };
-            class PointerSlot: PointerSlot
-            {
-                compatibleItems[] = {};
-            };
-            class UnderBarrelSlot: UnderBarrelSlot
-            {
-                compatibleItems[] = {};
-            };
+            displayName = "Bacta Launcher";
+            magazines[] = { "BNA_KC_Mag_GR20" };
         };
     };
 

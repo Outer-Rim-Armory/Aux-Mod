@@ -31,9 +31,9 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa"
                 };
             };
             class CamoBrown: CamoKC
@@ -41,9 +41,9 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa"
                 };
             };
             class CamoGrey: CamoKC
@@ -51,9 +51,9 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa"
                 };
             };
         };
@@ -77,10 +77,10 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoKC.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoKC.paa"
                 };
             };
             class CamoBrown: CamoKC
@@ -88,10 +88,10 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoBrown.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoBrown.paa"
                 };
             };
             class CamoGrey: CamoKC
@@ -99,10 +99,10 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoGrey.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoGrey.paa"
                 };
             };
         };
@@ -126,9 +126,9 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
                     "A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
                 };
             };
@@ -137,9 +137,9 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
                     "A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
                 };
             };
@@ -148,9 +148,9 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
                     "A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
                 };
             };
@@ -176,10 +176,10 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoKC.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoKC.paa"
                 };
             };
             class CamoBrown: CamoKC
@@ -187,10 +187,10 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoBrown.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoBrown.paa"
                 };
             };
             class CamoGrey: CamoKC
@@ -198,10 +198,10 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoGrey.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Covered\BNA_KC_Gammoth_Covered_CamoGrey.paa"
                 };
             };
         };
@@ -226,9 +226,9 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Repair\BNA_KC_Gammoth_Repair_CamoKC.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Repair\BNA_KC_Gammoth_Repair_CamoKC.paa"
                 };
             };
             class CamoBrown: CamoKC
@@ -236,9 +236,9 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Repair\BNA_KC_Gammoth_Repair_CamoBrown.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Repair\BNA_KC_Gammoth_Repair_CamoBrown.paa"
                 };
             };
             class CamoGrey: CamoKC
@@ -246,9 +246,9 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Repair\BNA_KC_Gammoth_Repair_CamoGrey.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Repair\BNA_KC_Gammoth_Repair_CamoGrey.paa"
                 };
             };
         };
@@ -276,9 +276,9 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Fuel\BNA_KC_Gammoth_Fuel_CamoKC.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Fuel\BNA_KC_Gammoth_Fuel_CamoKC.paa"
                 };
             };
             class CamoBrown: CamoKC
@@ -286,9 +286,9 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Fuel\BNA_KC_Gammoth_Fuel_CamoBrown.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Fuel\BNA_KC_Gammoth_Fuel_CamoBrown.paa"
                 };
             };
             class CamoGrey: CamoKC
@@ -296,9 +296,9 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Fuel\BNA_KC_Gammoth_Fuel_CamoGrey.paa"
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Fuel\BNA_KC_Gammoth_Fuel_CamoGrey.paa"
                 };
             };
         };
@@ -322,9 +322,9 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoKC.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoKC.paa",
                     "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
                 };
             };
@@ -333,9 +333,9 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoBrown.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoBrown.paa",
                     "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
                 };
             };
@@ -344,9 +344,9 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Support\Data\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body2_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\BNA_KC_Gammoth_Cargo_CamoGrey.paa",
                     "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
                 };
             };

@@ -36,7 +36,7 @@ private _fuelCoef =
     // Jetpack variables
     ({
         ace_player getVariable [_x, false]
-    } count ["BNA_KC_Jet_rise", "BNA_KC_Jet_slowFall"])
+    } count ["BNA_KC_Jet_rise", "BNA_KC_Jet_slowFall", "BNA_KC_Jet_hover"])
 );
 
 for "_i" from 1 to _fuelCoef + 1 do

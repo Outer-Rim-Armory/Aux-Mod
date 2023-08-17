@@ -22,7 +22,7 @@ player createDiarySubject ["CWR_TagsSubject", "Chat Wheel Tags"];
 private _tags =
 [
     [
-        "[distance] - Previosuly [contact]",
+        "[distance] - Previously [contact]",
         "[distance] will prompt the user to open a submenu to select a distance.",
         ["Contact! Infantry [distance]!", "Contact! Infantry Close!"]
     ],

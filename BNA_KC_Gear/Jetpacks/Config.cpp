@@ -47,7 +47,7 @@ class CfgVehicles
 
     class BNA_KC_Jetpack_CDV21: BNA_KC_Jetpack_JT12
     {
-        displayName = "[KC] Clone Trooper CDV-21 Jetpack";
+        displayName = "[KC] Clone Commander CDV-21 Jetpack [LR]";
 
         // Use JLTS model/textures, LS model will be removed
         model = "\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";

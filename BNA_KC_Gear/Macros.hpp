@@ -23,8 +23,14 @@ the path begins with a "\", but it essentially represents the project root
 #define ITEM_11(a) a, a, a, a, a, a, a, a, a, a, a
 #define ITEM_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 
+// Config Properties
+#define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
+#define GET_ARRAY(config, defaultValue) (if (isArray (config)) then {getArray (config)} else {defaultValue})
+#define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
 
-// Objects
+// Returns text (normally code) in quotes
+#define QUOTE(CODE) #CODE
+
 // Macro for making a placeable version of a helmet
 #define HELMET_HOLDER(CLASS_NAME, DISPLAY_NAME, HELM_NAME, SUBCAT) \
 class CLASS_NAME: BNA_KC_HelmetHolder_P1_CR \

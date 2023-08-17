@@ -90,6 +90,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Ponds",
             "BNA_KC_Helmet_Phase2_Rev",
             "BNA_KC_Helmet_Phase2_Rodger",
+            "BNA_KC_Helmet_Phase2_Sage",
             "BNA_KC_Helmet_Phase2_Splashdown",
             "BNA_KC_Helmet_Phase2_Stone",
             "BNA_KC_Helmet_Phase2_Swoop",

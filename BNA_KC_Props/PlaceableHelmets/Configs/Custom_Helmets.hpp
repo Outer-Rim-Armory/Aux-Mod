@@ -57,6 +57,7 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Patriot, [KC] INF P2 Helm ('Patriot'), BNA_
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Ponds, [KC] INF P2 Helm ('Ponds'), BNA_KC_Helmet_Phase2_Ponds, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Rev, [KC] INF P2 Helm ('Rev'), BNA_KC_Helmet_Phase2_Rev, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Rodger, [KC] INF P2 Helm ('Rodger'), BNA_KC_Helmet_Phase2_Rodger, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Sage, [KC] INF P2 Helm ('Sage'), BNA_KC_Helmet_Phase2_Sage, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Splashdown, [KC] INF P2 Helm ('Splashdown'), BNA_KC_Helmet_Phase2_Splashdown, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Stone, [KC] INF P2 Helm ('Stone'), BNA_KC_Helmet_Phase2_Stone, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Swoop, [KC] INF P2 Helm ('Swoop'), BNA_KC_Helmet_Phase2_Swoop, "Customs")

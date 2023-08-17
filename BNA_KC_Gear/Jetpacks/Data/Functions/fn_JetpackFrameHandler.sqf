@@ -30,21 +30,32 @@ if (!(ace_player call BNAKC_fnc_CanUseJetpack) or isTouchingGround ace_player) e
 
     [BNA_KC_Jet_JetpackFuelHandle] call CBA_fnc_RemovePerFrameHandler;
     BNA_KC_Jet_JetpackFuelHandle = nil;
+
+    ace_player setVariable ["BNA_KC_Jet_hover", false];
     
     // Wait a bit before removing effects, makes it look nicer
     [
         {
             // Delete effects
             // TODO: Delete fire effects, wait, then delete smoke?
-            {
-                deleteVehicle _x;
-            } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
-            [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_RemovePerFrameHandler;
+            [
+                {
+                    {
+                        private _sources = ace_player getVariable ["BNA_KC_Jet_effectSources", []];
+                        _sources deleteAt (_sources find _x);
+                        ace_player setVariable ["BNA_KC_Jet_effectSources", _sources];
+                        
+                        deleteVehicle _x;
+                    } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
+                }
+            ] remoteExec ["call", 0, true];
+
+            [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler;
             BNA_KC_Jet_JetpackSoundHandle = nil;
         },
         [],
         0.3
-    ] call CBA_fnc_WaitAndExecute;
+    ] call CBA_fnc_waitAndExecute;
 };
 
 
@@ -115,6 +126,14 @@ if (ace_player getVariable ["BNA_KC_Jet_slowFall", false]) then
 {
     _velocity set [2, (_velocity#2) max -5];
     // Caps downward velocity
+};
+
+if (ace_player getVariable ["BNA_KC_Jet_hover", false]) then
+{
+    private _speed = random 2; // Get random number
+    _speed = _speed - 1;       // Allows for potentially negative values, makes the hover not 100% perfect
+
+    _velocity set [2, _speed];
 };
 
 // Slow player down mid-air, used to simulate air-resistance

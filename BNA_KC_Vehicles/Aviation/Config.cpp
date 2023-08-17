@@ -1,12 +1,10 @@
 #include "CfgPatches.hpp"
+#include "CfgFunctions.hpp"
+#include "..\..\BNA_KC_Gear\Macros.hpp"
 
 
 class CfgVehicles
 {
-    // class W41_LAAT_MK1;
-    // class W41_LAAT_MK2;
-    // 41st has numbers swapped, mk1 = mk2, mk2 = mk1
-    // 3AS Base Classes (For when dependency free)
     class 3as_LAAT_Mk1;
     // class 3as_LAAT_Mk1Lights;
     class 3as_LAAT_Mk2;
@@ -21,7 +19,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -30,12 +27,14 @@ class CfgVehicles
         displayName = "[KC] LAAT/i MK1";
 
         armor = 200;
+        fuelCapacity = 3000;
+        fuelConsumptionRate = 0.12;
         crew = "BNA_KC_Unit_Phase2_Pilot";
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\LAATi\BNA_KC_LAAT_Standard_Body.paa",
-            "BNA_KC_Vehicles\Aviation\Data\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Body.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
             "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
             "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
@@ -79,6 +78,10 @@ class CfgVehicles
         tas_can_impulse = 0; // Disables 3AS's Impulse System
 		ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
 		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+        ls_impulsor_fuelDrain_1 = 0;
+        ls_impulsor_fuelDrain_2 = 0;
+        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
+        // ls_impulsor_boostSpeed_2 = 600; 
     };
 
     class BNA_KC_LAATi_MK2: 3as_LAAT_Mk2
@@ -90,7 +93,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -99,12 +101,14 @@ class CfgVehicles
         displayName = "[KC] LAAT/i MK2";
 
         armor = 200;
+        fuelCapacity = 3000;
+        fuelConsumptionRate = 0.12;
         crew = "BNA_KC_Unit_Phase2_Pilot";
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\LAATi\BNA_KC_LAAT_Standard_Body.paa",
-            "BNA_KC_Vehicles\Aviation\Data\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Body.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
             "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
             "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
@@ -148,6 +152,10 @@ class CfgVehicles
         tas_can_impulse = 0; // Disables 3AS's Impulse System
 		ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
 		ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+        ls_impulsor_fuelDrain_1 = 0;
+        ls_impulsor_fuelDrain_2 = 0;
+        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
+        // ls_impulsor_boostSpeed_2 = 600; 
     };
 
     class lsd_laatc_base;
@@ -175,11 +183,11 @@ class CfgVehicles
         
         hiddenSelectionsTextures[] = 
         {
-            "BNA_KC_Vehicles\Aviation\Data\LAATc\BNA_KC_LAATC_Auxiliary.paa",
-            "BNA_KC_Vehicles\Aviation\Data\LAATc\BNA_KC_LAATC_Cockpit.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Auxiliary.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Cockpit.paa",
             "lsd_vehicles_heli\laatc\data\glass_ca.paa",
-            "BNA_KC_Vehicles\Aviation\Data\LAATc\BNA_KC_LAATC_Hull.paa",
-            "BNA_KC_Vehicles\Aviation\Data\LAATc\BNA_KC_LAATC_Wings.paa"
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Hull.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Wings.paa"
         };
         textureList[] = {}; // Clears the extra skins
 
@@ -195,19 +203,17 @@ class CfgVehicles
                 hideOnUse = 1;
                 priority = 5;
 
-                condition = "_objects = nearestObjects [this, [], 30]; _objects = _objects select {getNumber (configFile >> 'CfgVehicles' >> typeOf _x >> 'VehicleTransport' >> 'Cargo' >> 'BNA_KC_SpecialLoad') isEqualTo 1}; count _objects >= 1 && (this canVehicleCargo (_objects select 0) isEqualTo [true, true]);";
-                /* Explanation
-                _objects = nearestObjects [this, [], 30];
-                  > Gets array of all objects within 30 meters of the player's vehicle
-                _objects = _objects select {getNumber (configFile >> 'CfgVehicles' >> typeOf _x >> 'VehicleTransport' >> 'Cargo' >> 'BNA_KC_SpecialLoad') isEqualTo 1};
-                  > Filters array by objects with the BNA_KC_SpecialLoad property set to 1
-                
-                count _objects >= 1 && (heli canVehicleCargo (_objects select 0) isEqualTo [true, true]);
-                  > Check if there is at least one object found, and the closest object can both fit into the vehicle and is not already loaded
-                */
-                statement = "_objects = nearestObjects [this, [], 30]; _objects = _objects select {getNumber (configFile >> 'CfgVehicles' >> typeOf _x >> 'VehicleTransport' >> 'Cargo' >> 'BNA_KC_SpecialLoad') isEqualTo 1}; this setVehicleCargo (_objects select 0);";
+                condition = QUOTE(this call BNAKC_fnc_canSpecialLoad;);
+                statement = QUOTE(this call BNAKC_fnc_specialLoad;);
             };
         };
+
+        ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
+        ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+        ls_impulsor_fuelDrain_1 = 0;
+        ls_impulsor_fuelDrain_2 = 0;
+        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
+        // ls_impulsor_boostSpeed_2 = 600; 
     };
 
     class 3AS_Republic_Transport_01;
@@ -220,7 +226,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -232,7 +237,7 @@ class CfgVehicles
 
 		hiddenselectionstextures[]=
 		{
-			"BNA_KC_Vehicles\Aviation\Data\Transport\BNA_KC_Republic_Transport_Body.paa",
+			"BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
 			"3as\3as_starships\data\hs_int_co.paa"
 		};
 	};
@@ -261,7 +266,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";

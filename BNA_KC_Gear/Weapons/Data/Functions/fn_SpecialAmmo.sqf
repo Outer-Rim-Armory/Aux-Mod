@@ -8,7 +8,6 @@ params ["_eventHandlerType"];
 {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
     // Early exit to save time
-    if (!isServer) exitWith {}; // Exit if not the server
     if (_ammo find "BNA_KC" isEqualTo -1 ) exitWith {}; // Exit if not a KC weapon
 
 
