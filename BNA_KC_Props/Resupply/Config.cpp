@@ -21,6 +21,8 @@ class CfgVehicles
         displayName = "[KC] Empty Crate";
         
         ace_cargo_size = 1;
+        ace_cargo_noRename = 1
+
         ace_dragging_canDrag = 1;
         ace_dragging_dragDirection = 90;
         ace_dragging_dragPosition[] = {0, 1.35, 0};
