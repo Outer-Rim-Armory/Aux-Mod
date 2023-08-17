@@ -37,11 +37,13 @@ class CfgPatches
             "BNA_KC_Helmet_ARC",
             "BNA_KC_Helmet_ARC_Night",
             "BNA_KC_Helmet_ARF",
+            "BNA_KC_Helmet_ARF_v2",
             "BNA_KC_Helmet_BARC",
             
             // Uniforms
             "BNA_KC_Uniform_ARC",
             "BNA_KC_Uniform_ARC_Night",
+            "BNA_KC_Uniform_ARF",
 
             // Vests
             "BNA_KC_Vest_ARC",

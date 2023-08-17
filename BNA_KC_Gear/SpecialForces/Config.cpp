@@ -49,15 +49,15 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC] SF ARF Helm";
+        displayName = "[KC] SF ARF 01 Helm (Enlisted)";
 
         model = "ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
         hiddenSelections[] = { "camo1", "camo2", "visor" };
         hiddenSelectionsTextures[] = 
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARF.paa",
-            "",
-            "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARF.paa", // Main Helmet
+            "", // Flaps
+            "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa" // Visor
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_arf_p1_ca.paa";
 
@@ -68,6 +68,17 @@ class CfgWeapons
         };
 
         subItems[] = { "BNA_KC_NVG_Chip" };
+    };
+
+    class BNA_KC_Helmet_ARF_v2: BNA_KC_Helmet_ARF
+    {
+        displayName = "[KC] SF ARF 01 Helm (Enlisted, v2)";
+        hiddenSelectionsTextures[] = 
+        {
+            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARF_v2.paa",
+            "",
+            "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+        };
     };
 
     class BNA_KC_Helmet_BARC: BNA_KC_Helmet_Base
@@ -118,6 +129,15 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = "BNA_KC_Unit_ARC_Night";
+        };
+    };
+
+    class BNA_KC_Uniform_ARF: BNA_KC_Uniform_Base
+    {
+        displayName = "[KC] SF ARF Uniform";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_Unit_ARF";
         };
     };
 
@@ -241,7 +261,13 @@ class CfgVehicles
         displayName = "[KC] SF ARF Trooper";
         editorSubcategory = "BNA_KC_SF";
 
-        uniformClass = "BNA_KC_Uniform_CT";
+        uniformClass = "BNA_KC_Uniform_ARF";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARF_Upper.paa",
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARF_Lower.paa",
+            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        };
 
         linkedItems[] =
         {
