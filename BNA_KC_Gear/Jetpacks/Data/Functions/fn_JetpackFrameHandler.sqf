@@ -38,15 +38,24 @@ if (!(ace_player call BNAKC_fnc_CanUseJetpack) or isTouchingGround ace_player) e
         {
             // Delete effects
             // TODO: Delete fire effects, wait, then delete smoke?
-            {
-                deleteVehicle _x;
-            } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
-            [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_RemovePerFrameHandler;
+            [
+                {
+                    {
+                        private _sources = ace_player getVariable ["BNA_KC_Jet_effectSources", []];
+                        _sources deleteAt (_sources find _x);
+                        ace_player setVariable ["BNA_KC_Jet_effectSources", _sources];
+                        
+                        deleteVehicle _x;
+                    } forEach (ace_player getVariable ["BNA_KC_Jet_effectSources", []]);
+                }
+            ] remoteExec ["call", 0, true];
+
+            [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler;
             BNA_KC_Jet_JetpackSoundHandle = nil;
         },
         [],
         0.3
-    ] call CBA_fnc_WaitAndExecute;
+    ] call CBA_fnc_waitAndExecute;
 };
 
 
