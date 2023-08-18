@@ -58,7 +58,7 @@ class CfgVehicles
 
     class BNA_KC_Jetpack_CDV19: BNA_KC_Jetpack_JT12_LR
     {
-        displayName = "[KC] Clone Commander CDV-19 Jumppack";
+        displayName = "[KC] Clone Commander CDV-19 Jetpack";
 
         model = "MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
         hiddenSelections[] = { "camo1" };
