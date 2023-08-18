@@ -670,8 +670,65 @@ class CfgWeapons
 			};
 		};
 	};
-	
-    class UGL_F;
+
+    // Basically a fake UGL to get around the camera and cursor being odd on pistols
+    // Values come from UGL_F base class
+    class BNA_KC_Launcher_Muzzle: Rifle_Base_F
+    {
+        displayName = "Launcher";
+        magazines[] = {};
+        magazineWell[] = {};
+
+        modes[] = { "Single" };
+        muzzles[] = { "this" };
+
+        nameSound = "";
+
+        changeFiremodeSound[] = { "A3\Sounds_F\arsenal\weapons\UGL\Firemode_ugl", 0.316228, 1, 5 };
+        reloadMagazineSound[] = { "A3\Sounds_F\arsenal\weapons\UGL\Reload_UGL", 0.562341, 1, 10 };
+        drySound[] = { "A3\Sounds_F\arsenal\weapons\UGL\Dry_ugl", 0.562341, 1, 10 };
+
+        recoil = "recoil_pistol_p07";
+        recoilProne = "recoil_pistol_p07";
+
+        cursor = "EmptyCursor";
+        cursorAim = "gl";
+        textureType = "semi";
+
+        autoFire = 0;
+
+        class Single: Mode_SemiAuto
+        {
+            textureType = "semi";
+
+            // recoil = "recoil_pistol_p07";
+            // recoilProne = "recoil_pistol_p07";
+
+            // For AI units
+            maxRange = 400;
+            maxRangeProbab = 0.05;
+            midRange = 200;
+            midRangeProbab = 0.7;
+            minRange = 30;
+            minRangeProbab = 0.1;
+
+            nameSound = "";
+            sounds[] = { "StandardSound" };
+            class BaseSoundModeType
+            {
+                closure1[] = { "A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL", 1, 1, 10 };
+                soundClosure[] = { "closure1", 1 };
+            };
+            class StandardSound: BaseSoundModeType
+            {
+                begin1[] = { "A3\Sounds_F\arsenal\weapons\UGL\UGL_01", 0.707946, 1, 200 };
+                begin2[] = { "A3\Sounds_F\arsenal\weapons\UGL\UGL_02", 0.707946, 1, 200 };
+                soundBegin[] = { "begin1", 0.5, "begin2", 0.5 };
+
+                soundSetShot[] = { "UGL_shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet" };
+            };
+        };
+    };
 
     class hgun_P07_F;
     class JLTS_DC17SA: hgun_P07_F
@@ -706,7 +763,8 @@ class CfgWeapons
         JLTS_shieldedWeapon = "BNA_KC_DC17_RiotShield";
 
         magazines[] = { "12thFleet_Mag_DC17" };
-        muzzles[] = { "this", "Stun", "EGLM" };
+        modes[] = { "Single" };
+        muzzles[] = { "this", "Stun", "Launcher" };
 
         class Single: Single
         {
@@ -717,7 +775,7 @@ class CfgWeapons
             };
         };
 
-        class EGLM: UGL_F
+        class Launcher: BNA_KC_Launcher_Muzzle
         {
             displayName = "Flare Launcher";
             magazines[] =
@@ -726,24 +784,13 @@ class CfgWeapons
                 "3Rnd_UGL_FlareRed_F",
                 "BNA_KC_3Rnd_UGL_FlareBlue"
             };
-            magazineWell[] = {};
-
-            cameraDir = "eye";
-            discreteDistance[] = { 100 };  // Array of ranges
-            discreteDistanceInitIndex = 0; // Default range index
-            discreteDistanceCameraPoint[] = { "eye" };
-
-            // Muzzle memory points
-            // Makes the flares shoot as intended
-            muzzlePos = "Usti hlavne";
-            muzzleEnd = "Konec hlavne";
         };
 
         STUN;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot
             {
                 compatibleItems[] = 
                 {
@@ -751,6 +798,14 @@ class CfgWeapons
                     "aux501_cows_pistol",
                     "aux501_cows_pistol_2"
                 };
+                
+                displayName = "Optics Slot";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "Bottom";
+                iconPosition[] = { 0.5, 0.35 };
+                iconScale = 0.2;
+                linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
             };
         };
     };
@@ -790,9 +845,9 @@ class CfgWeapons
         magazineWell[] = {};
 
         modes[] = {};
-        muzzles[] = { "EGLM" };
+        muzzles[] = { "Launcher" };
 
-        class EGLM: EGLM
+        class Launcher: Launcher
         {
             displayName = "Bacta Launcher";
             magazines[] = { "BNA_KC_Mag_GR20" };
