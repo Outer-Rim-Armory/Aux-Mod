@@ -18,6 +18,7 @@ class CfgFunctions
             file = "BNA_KC_Gear\Jetpacks\Data\Functions\JetDialog";
             class jetDialogOnLoad {};
             class jetDialogUpdate {};
+            class jetpackPutOnTakeOff {};
         };
 
         class Utils
@@ -34,7 +35,6 @@ class CfgFunctions
             
             class JetAddRefuelActions {};
             class JetpackRefuel {};
-            class JetpackPutOnTakeOff {};
 
             class canRefuelFromBody {};
             class refuelFromBody {};
