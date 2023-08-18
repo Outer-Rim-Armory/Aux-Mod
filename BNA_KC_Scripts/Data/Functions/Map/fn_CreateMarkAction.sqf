@@ -14,13 +14,13 @@
  */
 
 
-_keyEntry = ["Keeli Company Aux Mod", "BNA_KC_Map_CreateMarkBind"] call CBA_fnc_getKeybind;  
+private _keyEntry = ["Keeli Company Aux Mod", "BNA_KC_Map_CreateMarkBind"] call CBA_fnc_getKeybind;  
  
-_name = _keyEntry select 2; 
-_code = _keyEntry select 3;  
-_keyBind = (_keyEntry select 5) select 0; // Array of [DIK Code, [Modifiers]]  
+private _name = _keyEntry select 2; 
+private _code = _keyEntry select 3;  
+private _keyBind = (_keyEntry select 5) select 0; // Array of [DIK Code, [Modifiers]]  
  
-_markAction =
+private _markAction =
 [  
     "BNA_KC_CreateMark_Action",  
     "Mark Building Clear",  
