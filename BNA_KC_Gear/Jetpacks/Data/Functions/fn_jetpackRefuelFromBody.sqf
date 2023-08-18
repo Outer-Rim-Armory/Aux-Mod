@@ -13,7 +13,6 @@
  * [player, cursorObject] call BNAKC_fnc_jetpackRefuelFromBody;
  */
 
-systemChat str _this;
 #define REFUEL_PER_SECOND 5
 params ["_target", "_player", "_params"];
 

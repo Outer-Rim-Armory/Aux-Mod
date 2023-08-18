@@ -25,11 +25,9 @@ private _targetFuel = _target call BNAKC_fnc_getJetpackFuel;
 
 private _fuelToRefill = ((_playerFuel + _targetFuel) min _playerMaxFuel) - _playerFuel;
 private _refuelTime = _fuelToRefill / REFUEL_PER_SECOND;
-systemChat format ["_fuelToRefill: %1 _refuelTime: %2", _fuelToRefill, _refuelTime];
 
 private _refuelHandler =
 {
-    systemChat "handler running";
     _this#0 params ["_player", "_target"];
     private _handlerID = _this#1;
 
@@ -42,9 +40,9 @@ private _refuelHandler =
 
     playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_loop.wss", _player, false, getPosASL _player, 1, 1, 8];
 
-    if (_player getVariable ["BNA_KC_Jetpack_isRefuelingFromBody", false] isEqualTo false) exitWith { systemChat "stopped fueling"; call _removeSelf; };
-    if ([_player, true] call BNAKC_fnc_getJetpackFuel == 1) exitWith { systemChat "player full"; call _removeSelf; };
-    if ([_target, true] call BNAKC_fnc_getJetpackFuel == 0) exitWith { systemChat "target empty"; call _removeSelf; };
+    if (_player getVariable ["BNA_KC_Jetpack_isRefuelingFromBody", false] isEqualTo false) exitWith { call _removeSelf; };
+    if ([_player, true] call BNAKC_fnc_getJetpackFuel == 1) exitWith { call _removeSelf; };
+    if ([_target, true] call BNAKC_fnc_getJetpackFuel == 0) exitWith { call _removeSelf; };
 
     private _playerFuel = _player call BNAKC_fnc_getJetpackFuel;
     private _targetFuel = _target call BNAKC_fnc_getJetpackFuel;
@@ -54,8 +52,6 @@ private _refuelHandler =
     private _fuelDiff = _targetFuel - _targetNewFuel;
 
     private _playerNewFuel = _playerFuel + _fuelDiff; // Give difference to player
-    systemChat str _playerFuel;
-    systemChat str _playerNewFuel;
     
     // Set fuel variables and update display
     [_player, _playerNewFuel] call BNAKC_fnc_jetpackRefuel;
