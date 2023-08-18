@@ -71,7 +71,7 @@ class Extended_PostInit_EventHandlers
     };
     class BNA_KC_Jetpacks_PutOnTakeOff_PostInit
     {
-        init = "['loadout', BNAKC_fnc_JetpackPutOnTakeOff, true] call CBA_fnc_AddPlayerEventHandler;";
+        init = "['loadout', BNAKC_Jetpacks_fnc_jetpackPutOnTakeOff, true] call CBA_fnc_AddPlayerEventHandler;";
     };
     class BNA_KC_Jetpacks_RefuelActions_PostInit
     {

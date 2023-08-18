@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * ['loadout', BNAKC_fnc_JetpackPutOnTakeOff, true] call CBA_fnc_AddPlayerEventHandler;
+ * ['loadout', BNAKC_Jetpacks_fnc_jetpackPutOnTakeOff, true] call CBA_fnc_AddPlayerEventHandler;
  */
 
 
