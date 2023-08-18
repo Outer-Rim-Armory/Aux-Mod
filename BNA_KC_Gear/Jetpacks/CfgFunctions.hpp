@@ -29,15 +29,14 @@ class CfgFunctions
             class getJetpackFuel {};
         };
 
-        class Jetpacks
+        class Fuel
         {
-            file = "BNA_KC_Gear\Jetpacks\Data\Functions";
-            
-            class JetAddRefuelActions {};
-            class JetpackRefuel {};
+            file = "BNA_KC_Gear\Jetpacks\Data\Functions\Refuel";
+            class setJetpackFuel {};
+            class addRefuelActions {};
 
-            class canRefuelFromBody {};
             class refuelFromBody {};
+            class canRefuelFromBody {};
             class refuelFromBodyModifier {};
         };
 
@@ -76,6 +75,6 @@ class Extended_PostInit_EventHandlers
     };
     class BNA_KC_Jetpacks_RefuelActions_PostInit
     {
-        init = "call BNAKC_fnc_JetAddRefuelActions;";
+        init = "call BNAKC_Jetpacks_fnc_addRefuelActions;";
     };
 };

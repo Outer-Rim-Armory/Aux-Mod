@@ -12,7 +12,7 @@
  * None
  *
  * Examples:
- * [cursorObject, player, []] call BNAKC_fnc_canRefuelFromBody;
+ * [cursorObject, player, []] call BNAKC_Jetpacks_fnc_canRefuelFromBody;
  */
 
 

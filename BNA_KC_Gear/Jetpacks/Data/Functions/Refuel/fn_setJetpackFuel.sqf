@@ -10,8 +10,8 @@
  * None
  *
  * Examples:
- * [backpackContainer unit3, 100] call BNAKC_fnc_JetpackRefuel; // Sets unit3's jetpack to 100 fuel points
- * [ace_player, 100] call BNAKC_fnc_JetpackRefuel; // Sets ace_player's jetpack to 100 fuel points
+ * [backpackContainer unit3, 100] call BNAKC_Jetpacks_fnc_setJetpackFuel; // Sets unit3's jetpack to 100 fuel points
+ * [ace_player, 100] call BNAKC_Jetpacks_fnc_setJetpackFuel; // Sets ace_player's jetpack to 100 fuel points
  */
 
 

@@ -9,7 +9,7 @@
  * None
  *
  * Examples:
- * call BNAKC_fnc_JetAddRefuelActions; // Should be used in a XEH
+ * call BNAKC_Jetpacks_fnc_addRefuelActions; // Should be used in a XEH
  */
 
 
@@ -27,7 +27,7 @@ private _refuelAction =
 
         private _jetpack = backpack _player;
         private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_fuel", 100);
-        [_player, _maxFuel] call BNAKC_fnc_JetpackRefuel; // JetpackRefuel can take either the unit or a backpack object
+        [_player, _maxFuel] call BNAKC_Jetpacks_fnc_setJetpackFuel; // JetpackRefuel can take either the unit or a backpack object
     },
     {
         // Condition

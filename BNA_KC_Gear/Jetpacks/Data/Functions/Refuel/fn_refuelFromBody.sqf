@@ -12,7 +12,7 @@
  * None
  *
  * Examples:
- * [cursorObject, player, []] call BNAKC_fnc_refuelFromBody;
+ * [cursorObject, player, []] call BNAKC_Jetpacks_fnc_refuelFromBody;
  */
 
 
@@ -54,7 +54,7 @@ private _refuelHandler =
     private _playerNewFuel = _playerFuel + _fuelDiff; // Give difference to player
     
     // Set fuel variables and update display
-    [_player, _playerNewFuel] call BNAKC_fnc_jetpackRefuel;
+    [_player, _playerNewFuel] call BNAKC_Jetpacks_fnc_setJetpackFuel;
     backpackContainer _target setVariable ["BNA_KC_Jet_currentFuel", _targetNewFuel]; // Set fuel manually since refuel func updates display locally
 };
 

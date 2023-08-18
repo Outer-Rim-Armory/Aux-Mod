@@ -13,7 +13,7 @@
  * None
  *
  * Examples:
- * cursorObject call BNAKC_fnc_refuelFromBodyModifier;
+ * cursorObject call BNAKC_Jetpacks_fnc_refuelFromBodyModifier;
  */
 
 

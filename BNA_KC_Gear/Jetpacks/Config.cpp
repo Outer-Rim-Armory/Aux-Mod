@@ -85,9 +85,9 @@ class CfgVehicles
                     distance = 1.75;
                     // exceptions[] = { "isNotInside", "isNotSitting", "isNotSwimming", "isNotDragging", "isNotCarrying" };
 
-                    condition = QUOTE(_this call BNAKC_fnc_canRefuelFromBody);
-                    statement = QUOTE(_this call BNAKC_fnc_refuelFromBody);
-                    modifierFunction = QUOTE(_this call BNAKC_fnc_refuelFromBodyModifier);
+                    condition = QUOTE(_this call BNAKC_Jetpacks_fnc_canRefuelFromBody);
+                    statement = QUOTE(_this call BNAKC_Jetpacks_fnc_refuelFromBody);
+                    modifierFunction = QUOTE(_this call BNAKC_Jetpacks_fnc_refuelFromBodyModifier);
                 };
             };
         };
