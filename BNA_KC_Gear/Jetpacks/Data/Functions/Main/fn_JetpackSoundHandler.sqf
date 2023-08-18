@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * BNA_KC_Jet_JetpackSoundHandle = [BNAKC_fnc_JetpackFrameHandler] call CBA_fnc_AddPerFrameHandler;
+ * BNA_KC_Jet_JetpackSoundHandle = [BNAKC_Jetpacks_fnc_frameHandler] call CBA_fnc_AddPerFrameHandler;
  */
 
 

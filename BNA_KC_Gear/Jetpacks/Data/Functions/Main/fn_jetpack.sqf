@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call BNAKC_fnc_Jetpack;
+ * call BNAKC_Jetpacks_fnc_jetpack;
  */
 
 

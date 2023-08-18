@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * call BNAKC_fnc_SlowFall;
+ * call BNAKC_Jetpacks_fnc_slowFall;
  */
 
 
@@ -31,7 +31,7 @@ if (isNil "BNA_KC_Jet_JetpackHandle") then
 
     BNA_KC_Jet_JetpackHandle =
     [
-        BNAKC_fnc_JetpackFrameHandler
+        BNAKC_Jetpacks_fnc_frameHandler
     ] call CBA_fnc_AddPerFrameHandler;
 };
 
@@ -39,7 +39,7 @@ if (isNil "BNA_KC_Jet_JetpackSoundHandle") then
 {
     BNA_KC_Jet_JetpackSoundHandle =
     [
-        BNAKC_fnc_JetpackSoundHandler,
+        BNAKC_Jetpacks_fnc_soundHandler,
         0.3 // Time inbetween each execution
     ] call CBA_fnc_AddPerFrameHandler;
 };
@@ -48,7 +48,7 @@ if (isNil "BNA_KC_Jet_JetpackFuelHandle") then
 {
     BNA_KC_Jet_JetpackFuelHandle =
     [
-        BNAKC_fnc_JetpackFuelHandler,
+        BNAKC_Jetpacks_fnc_fuelHandler,
         0.5 // Time inbetween each execution
     ] call CBA_fnc_AddPerFrameHandler;
 };

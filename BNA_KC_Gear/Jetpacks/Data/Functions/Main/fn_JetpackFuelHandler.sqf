@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * BNA_KC_Jet_JetpackFuelHandle = [BNAKC_fnc_JetpackFuelHandler] call CBA_fnc_AddPerFrameHandler;
+ * BNA_KC_Jet_JetpackFuelHandle = [BNAKC_Jetpacks_fnc_fuelHandler] call CBA_fnc_AddPerFrameHandler;
  */
 
 

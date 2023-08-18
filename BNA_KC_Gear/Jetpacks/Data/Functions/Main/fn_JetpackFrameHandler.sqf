@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * BNA_KC_Jet_JetpackHandle = [BNAKC_fnc_JetpackFrameHandler] call CBA_fnc_AddPerFrameHandler;
+ * BNA_KC_Jet_JetpackHandle = [BNAKC_Jetpacks_fnc_frameHandler] call CBA_fnc_AddPerFrameHandler;
  */
 
 // Contants and macros
