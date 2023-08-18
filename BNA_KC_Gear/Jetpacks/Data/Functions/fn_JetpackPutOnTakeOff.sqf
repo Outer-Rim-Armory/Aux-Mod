@@ -17,6 +17,6 @@
 
 // Get jetpack and current (max) fuel
 private _jetpack = backpackContainer ace_player;
-private _fuel = _jetpack call BNAKC_fnc_GetJetpackFuel;
+private _fuel = _jetpack call BNAKC_Jetpacks_fnc_getJetpackFuel;
 
 ["BNA_KC_Jet_FuelChanged", [ace_player, _jetpack, _fuel, _fuel]] call CBA_fnc_LocalEvent;

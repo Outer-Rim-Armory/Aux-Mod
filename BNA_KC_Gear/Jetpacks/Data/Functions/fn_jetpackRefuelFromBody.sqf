@@ -16,9 +16,9 @@
 #define REFUEL_PER_SECOND 5
 params ["_target", "_player", "_params"];
 
-private _playerFuel = _player call BNAKC_fnc_getJetpackFuel;
+private _playerFuel = _player call BNAKC_Jetpacks_fnc_getJetpackFuel;
 private _playerMaxFuel = [(configFile >> "CfgVehicles" >> backpack _player), "BNA_KC_Jet_fuel", 100] call BIS_fnc_returnConfigEntry;
-private _targetFuel = _target call BNAKC_fnc_getJetpackFuel;
+private _targetFuel = _target call BNAKC_Jetpacks_fnc_getJetpackFuel;
 
 private _fuelToRefill = ((_playerFuel + _targetFuel) min _playerMaxFuel) - _playerMaxFuel;
 private _refuelTime = _fuelToRefill / REFUEL_PER_SECOND;

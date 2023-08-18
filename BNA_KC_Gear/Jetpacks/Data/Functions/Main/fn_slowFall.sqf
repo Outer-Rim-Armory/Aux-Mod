@@ -14,8 +14,8 @@
 
 
 // Exit if unit does not have / can not use a jetpack
-if !(ace_player call BNAKC_fnc_HasJetpack) exitWith {};
-if !(ace_player call BNAKC_fnc_CanUseJetpack) exitWith
+if !(ace_player call BNAKC_Jetpacks_fnc_hasJetpack) exitWith {};
+if !(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) exitWith
 {
     if (isNull (objectParent ace_player) and [ace_player] call ace_common_fnc_isAwake) then
     {

@@ -10,8 +10,8 @@
  * Number - Current fuel level, or percentage of current fuel
  *
  * Example:
- * backpackContainer ace_player call BNAKC_fnc_GetJetpackFuel; // Returns 100
- * [ace_player, true] call BNAKC_fnc_GetJetpackFuel; // Returns 1
+ * backpackContainer ace_player call BNAKC_Jetpacks_fnc_getJetpackFuel; // Returns 100
+ * [ace_player, true] call BNAKC_Jetpacks_fnc_getJetpackFuel; // Returns 1
  */
 
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})

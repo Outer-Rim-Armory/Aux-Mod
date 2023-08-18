@@ -20,7 +20,7 @@
 params ["_unit", "_jetpack", "_oldFuel", "_currentFuel"];
 
 // Remove display if unit does not have a jetpack
-if !(_unit call BNAKC_fnc_HasJetpack) exitWith
+if !(_unit call BNAKC_Jetpacks_fnc_hasJetpack) exitWith
 {
     ("BNA_KC_Jet_DialogLayer" call BIS_fnc_RscLayer) cutFadeOut 0.5;
 };
@@ -52,11 +52,11 @@ private _ctrlFuelPos = ctrlPosition _ctrlFuel; // Returns array of x, y, width, 
 
 // Decrease height
 private _ctrlFuelOldHeight = _ctrlFuelPos select 3;
-_ctrlFuel ctrlSetPositionH FUEL_HEIGHT * ([_jetpack, true] call BNAKC_fnc_GetJetpackFuel); // Returns value from 0 to 1
+_ctrlFuel ctrlSetPositionH FUEL_HEIGHT * ([_jetpack, true] call BNAKC_Jetpacks_fnc_getJetpackFuel); // Returns value from 0 to 1
 
 // Move display downwards
 // Get difference in height
-private _ctrlFuelNewHeight = _ctrlFuelOldHeight - (FUEL_HEIGHT * ([_jetpack, true] call BNAKC_fnc_GetJetpackFuel));
+private _ctrlFuelNewHeight = _ctrlFuelOldHeight - (FUEL_HEIGHT * ([_jetpack, true] call BNAKC_Jetpacks_fnc_getJetpackFuel));
 // Move display downwards by height difference
 _ctrlFuel ctrlSetPositionY (_ctrlFuelPos # 1) + (_ctrlFuelNewHeight);
 

@@ -18,8 +18,8 @@
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 
 // Exit if unit does not have / can not use a jetpack
-if !(ace_player call BNAKC_fnc_HasJetpack) exitWith {};
-if !(ace_player call BNAKC_fnc_CanUseJetpack) exitWith
+if !(ace_player call BNAKC_Jetpacks_fnc_hasJetpack) exitWith {};
+if !(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) exitWith
 {
     // Only play the error sound if the unit is not in a vehicle
     if (isNull (objectParent ace_player) and [ace_player] call ace_common_fnc_isAwake) then
@@ -40,7 +40,7 @@ if (isNil "BNA_KC_Jet_JetpackHandle") then
     private _position = getPosASL ace_player;
 
     // Give slight boost to start jetpacking, but only if starting from the ground
-    if (ace_player call BNAKC_fnc_CanUseJetpack and isTouchingGround ace_player) then
+    if (ace_player call BNAKC_Jetpacks_fnc_canUseJetpack and isTouchingGround ace_player) then
     {
         // Teleport is needed so player will actually move upwards
         _position set [2, (_position select 2) + 0.05];

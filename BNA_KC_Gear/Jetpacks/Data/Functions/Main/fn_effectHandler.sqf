@@ -23,7 +23,7 @@ params ["_unit"];
 #define GET_ARRAY(config, defaultValue) (if (isArray (config)) then {getArray (config)} else {defaultValue})
 
 // Don't play effects for units on the ground or who can't jetpack
-if (!(_unit call BNAKC_fnc_CanUseJetpack) or isTouchingGround _unit) exitWith {};
+if (!(_unit call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround _unit) exitWith {};
 
 private _jetpack = backpack _unit;
 

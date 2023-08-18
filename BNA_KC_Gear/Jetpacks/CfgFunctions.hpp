@@ -20,15 +20,19 @@ class CfgFunctions
             class jetDialogUpdate {};
         };
 
+        class Utils
+        {
+            file = "BNA_KC_Gear\Jetpacks\Data\Functions\Utils";
+            class hasJetpack {};
+            class canUseJetpack {}; 
+            class getJetpackFuel {};
+        };
+
         class Jetpacks
         {
             file = "BNA_KC_Gear\Jetpacks\Data\Functions";
             
             class JetAddRefuelActions {};
-
-            class HasJetpack {};
-            class CanUseJetpack {};
-            class GetJetpackFuel {};
             class JetpackRefuel {};
             class JetpackPutOnTakeOff {};
 

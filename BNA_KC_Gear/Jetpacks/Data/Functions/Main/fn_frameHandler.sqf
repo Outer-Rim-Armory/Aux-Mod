@@ -23,7 +23,7 @@ if (isGamePaused) exitWith {};
 private _thisHandler = _this select 1;
 
 // Check if player can use jetpack, could potentially change while FH is running, such as dying; going uncon; etc.
-if (!(ace_player call BNAKC_fnc_CanUseJetpack) or isTouchingGround ace_player) exitWith
+if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_player) exitWith
 {
     [_thisHandler] call CBA_fnc_RemovePerFrameHandler;
     BNA_KC_Jet_JetpackHandle = nil; // Set to nil, just removing the handler keeps the global variable's value

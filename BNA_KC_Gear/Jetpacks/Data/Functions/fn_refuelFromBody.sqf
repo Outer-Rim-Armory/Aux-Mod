@@ -19,9 +19,9 @@
 #define REFUEL_PER_SECOND 5
 params ["_target", "_player", "_params"];
 
-private _playerFuel = _player call BNAKC_fnc_getJetpackFuel;
+private _playerFuel = _player call BNAKC_Jetpacks_fnc_getJetpackFuel;
 private _playerMaxFuel = [(configFile >> "CfgVehicles" >> backpack _player), "BNA_KC_Jet_fuel", 100] call BIS_fnc_returnConfigEntry;
-private _targetFuel = _target call BNAKC_fnc_getJetpackFuel;
+private _targetFuel = _target call BNAKC_Jetpacks_fnc_getJetpackFuel;
 
 private _fuelToRefill = ((_playerFuel + _targetFuel) min _playerMaxFuel) - _playerFuel;
 private _refuelTime = _fuelToRefill / REFUEL_PER_SECOND;
@@ -41,11 +41,11 @@ private _refuelHandler =
     playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_loop.wss", _player, false, getPosASL _player, 1, 1, 8];
 
     if (_player getVariable ["BNA_KC_Jetpack_isRefuelingFromBody", false] isEqualTo false) exitWith { call _removeSelf; };
-    if ([_player, true] call BNAKC_fnc_getJetpackFuel == 1) exitWith { call _removeSelf; };
-    if ([_target, true] call BNAKC_fnc_getJetpackFuel == 0) exitWith { call _removeSelf; };
+    if ([_player, true] call BNAKC_Jetpacks_fnc_getJetpackFuel == 1) exitWith { call _removeSelf; };
+    if ([_target, true] call BNAKC_Jetpacks_fnc_getJetpackFuel == 0) exitWith { call _removeSelf; };
 
-    private _playerFuel = _player call BNAKC_fnc_getJetpackFuel;
-    private _targetFuel = _target call BNAKC_fnc_getJetpackFuel;
+    private _playerFuel = _player call BNAKC_Jetpacks_fnc_getJetpackFuel;
+    private _targetFuel = _target call BNAKC_Jetpacks_fnc_getJetpackFuel;
 
     // Remove up to REFUEL_PER_SECOND fuel units, cap at 0 in case it goes negative
     private _targetNewFuel = (_targetFuel - REFUEL_PER_SECOND) max 0;

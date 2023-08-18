@@ -32,7 +32,7 @@ private _refuelAction =
     {
         // Condition
         params ["_target", "_player", "_params"];
-        _player call BNAKC_fnc_HasJetpack;
+        _player call BNAKC_Jetpacks_fnc_hasJetpack;
     }
 ] call ace_interact_menu_fnc_createAction;
 
