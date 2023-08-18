@@ -20,7 +20,8 @@ _name = _keyEntry select 2;
 _code = _keyEntry select 3;  
 _keyBind = (_keyEntry select 5) select 0; // Array of [DIK Code, [Modifiers]]  
  
-_markAction = [  
+_markAction =
+[  
     "BNA_KC_CreateMark_Action",  
     "Mark Building Clear",  
     "", // Icon  
