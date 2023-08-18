@@ -1,12 +1,11 @@
 class CfgFunctions
 {
-    class BNAKC
+    class BNAKC_Jetpacks
     {
         class Jetpacks
         {
             file = "BNA_KC_Gear\Jetpacks\Data\Functions";
-            class JetKeybinds {};
-            class JetSettings {};
+            
             class JetAddRefuelActions {};
             
             class JetDialogOnLoad {};
@@ -29,15 +28,22 @@ class CfgFunctions
             class refuelFromBody {};
             class refuelFromBodyModifier {};
         };
+
+        class Settings
+        {
+            file = "BNA_KC_Gear\Jetpacks\Data\Functions\Settings";
+            class jetKeybinds {};
+            class jetSettings {};
+        };
     };
 };
 
 
 class Extended_PreInit_EventHandlers
 {
-    class BNA_KC_Jetpacks_PreInit
+    class BNA_KC_Jetpacks_Settings
     {
-        init = "call BNAKC_fnc_JetKeybinds; call BNAKC_fnc_JetSettings;";
+        init = "call BNAKC_Jetpacks_fnc_jetKeybinds; call BNAKC_Jetpacks_fnc_jetSettings;";
     };
 };
 
