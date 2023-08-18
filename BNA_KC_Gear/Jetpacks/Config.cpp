@@ -2,6 +2,7 @@
 #include "CfgFunctions.hpp"
 #include "CfgRscTitles.hpp"
 
+#define QUOTE(CODE) #CODE
 
 class CfgVehicles
 {
@@ -67,6 +68,29 @@ class CfgVehicles
 
         // Jetpack properties
         BNA_KC_Jet_effectPoints[] = { "effect" };
+    };
+
+    class Man;
+    class CAManBase: Man
+    {
+        class ACE_Actions
+        {
+            class ACE_MainActions
+            {
+                class BNA_KC_Jetpack_RefuelFromBody
+                {
+                    displayName = "Refuel from jetpack";
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
+
+                    distance = 1.75;
+                    // exceptions[] = { "isNotInside", "isNotSitting", "isNotSwimming", "isNotDragging", "isNotCarrying" };
+
+                    condition = QUOTE(_this call BNAKC_fnc_canRefuelFromBody);
+                    statement = QUOTE(_this call BNAKC_fnc_refuelFromBody);
+                    modifierFunction = QUOTE(_this call BNAKC_fnc_refuelFromBodyModifier);
+                };
+            };
+        };
     };
 };
 

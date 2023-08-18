@@ -24,6 +24,10 @@ class CfgFunctions
             class GetJetpackFuel {};
             class JetpackRefuel {};
             class JetpackPutOnTakeOff {};
+
+            class canRefuelFromBody {};
+            class refuelFromBody {};
+            class refuelFromBodyModifier {};
         };
     };
 };

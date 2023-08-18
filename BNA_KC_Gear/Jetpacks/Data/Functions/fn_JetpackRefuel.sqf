@@ -23,13 +23,13 @@ private _jetpack = objNull;
 private _jetpackClass = "";
 if (_jetpackOrUnit isKindOf "CAManBase") then
 {
-	_jetpack = backpackContainer _jetpackOrUnit;
-	_jetpackClass = backpack _jetpackOrUnit;
+    _jetpack = backpackContainer _jetpackOrUnit;
+    _jetpackClass = backpack _jetpackOrUnit;
 }
 else
 {
-	_jetpack = _jetpackOrUnit;
-	_jetpackClass = typeOf _jetpack;
+    _jetpack = _jetpackOrUnit;
+    _jetpackClass = typeOf _jetpack;
 };
 
 // Don't set fuel value for non-jetpacks
@@ -37,6 +37,7 @@ if (GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> "BNA_KC_Jet_isJet
 
 private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> "BNA_KC_Jet_fuel", 100);
 _fuelAmount = _fuelAmount min _maxFuel; // Prevents the jetpack being "over-filled"
+_fuelAmount = _fuelAmount max 0; // Prevents fuel from going negative
 
 // TODO: Display to unit (if a unit is passed) that their jetpack has been refilled
 
