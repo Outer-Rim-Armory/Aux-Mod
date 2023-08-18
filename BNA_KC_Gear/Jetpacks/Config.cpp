@@ -8,7 +8,7 @@ class CfgVehicles
     class BNA_KC_Backpack;
     class BNA_KC_Jetpack_JT12: BNA_KC_Backpack
     {
-        displayName = "[KC] Clone Trooper JT-12 Jetpack";
+        displayName = "[KC] JT-12 Jetpack";
 
         // Use JLTS model/textures, LS model will be removed
         model = "MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";
@@ -34,7 +34,7 @@ class CfgVehicles
     };
     class BNA_KC_Jetpack_JT12_LR: BNA_KC_Jetpack_JT12
     {
-        displayName = "[KC] Clone Trooper JT-12 Jetpack [LR]";
+        displayName = "[KC] JT-12 Jetpack [LR]";
         
         // TFAR Long Range
         tf_hasLRradio = 1;
@@ -48,7 +48,7 @@ class CfgVehicles
 
     class BNA_KC_Jetpack_CDV21: BNA_KC_Jetpack_JT12
     {
-        displayName = "[KC] Clone Commander CDV-21 Jetpack [LR]";
+        displayName = "[KC] CDV-21 Jetpack";
 
         // Use JLTS model/textures, LS model will be removed
         model = "\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
@@ -58,7 +58,7 @@ class CfgVehicles
 
     class BNA_KC_Jetpack_CDV19: BNA_KC_Jetpack_JT12_LR
     {
-        displayName = "[KC] Clone Commander CDV-19 Jetpack";
+        displayName = "[KC] CDV-19 Jetpack [LR]";
 
         model = "MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
         hiddenSelections[] = { "camo1" };
