@@ -13,14 +13,18 @@ class CfgFunctions
             class slowFall {};
         };
 
+        class JetDialog
+        {
+            file = "BNA_KC_Gear\Jetpacks\Data\Functions\JetDialog";
+            class jetDialogOnLoad {};
+            class jetDialogUpdate {};
+        };
+
         class Jetpacks
         {
             file = "BNA_KC_Gear\Jetpacks\Data\Functions";
             
             class JetAddRefuelActions {};
-            
-            class JetDialogOnLoad {};
-            class JetDialogUpdate {};
 
             class HasJetpack {};
             class CanUseJetpack {};
@@ -60,7 +64,7 @@ class Extended_PostInit_EventHandlers
     };
     class BNA_KC_Jetpacks_FuelChanged_PostInit
     {
-        init = "['BNA_KC_Jet_FuelChanged', BNAKC_fnc_JetDialogUpdate] call CBA_fnc_addEventHandler;";
+        init = "['BNA_KC_Jet_FuelChanged', BNAKC_Jetpacks_fnc_jetDialogUpdate] call CBA_fnc_addEventHandler;";
     };
     class BNA_KC_Jetpacks_PutOnTakeOff_PostInit
     {

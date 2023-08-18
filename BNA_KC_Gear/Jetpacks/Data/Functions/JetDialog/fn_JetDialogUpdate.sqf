@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * ['BNA_KC_Jet_FuelChanged', BNAKC_fnc_JetDialogUpdate] call CBA_fnc_AddEventHandler;
+ * ['BNA_KC_Jet_FuelChanged', BNAKC_Jetpacks_fnc_jetDialogUpdate] call CBA_fnc_AddEventHandler;
  */
 
 

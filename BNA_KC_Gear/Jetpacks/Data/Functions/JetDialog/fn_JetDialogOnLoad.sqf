@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * [_this] call BNAKC_fnc_JetDialogOnLoad;
+ * [_this] call BNAKC_Jetpacks_fnc_jetDialogOnLoad;
  */
 
 
