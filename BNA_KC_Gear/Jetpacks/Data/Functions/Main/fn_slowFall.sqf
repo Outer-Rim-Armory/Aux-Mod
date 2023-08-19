@@ -17,10 +17,7 @@
 if !(ace_player call BNAKC_Jetpacks_fnc_hasJetpack) exitWith {};
 if !(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) exitWith
 {
-    if (isNull (objectParent ace_player) and [ace_player] call ace_common_fnc_isAwake) then
-    {
-        playSound3D ["MRC\JLTS\jumppacks\sounds\error.wss", ace_player];
-    };
+    ace_player call BNAKC_Jetpacks_fnc_playErrorSound;
 };
 
 // If a handler doesn't exist, then create it

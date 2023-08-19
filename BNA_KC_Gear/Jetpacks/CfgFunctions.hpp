@@ -27,6 +27,7 @@ class CfgFunctions
             class hasJetpack {};
             class canUseJetpack {}; 
             class getJetpackFuel {};
+            class playErrorSound {};
         };
 
         class Fuel
