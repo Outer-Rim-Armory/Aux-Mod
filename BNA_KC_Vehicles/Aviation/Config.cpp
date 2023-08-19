@@ -5,9 +5,16 @@
 
 class CfgVehicles
 {
-    class 3as_LAAT_Mk1;
+    class 3as_laat_Base;
+    class 3as_LAAT_Mk1: 3as_laat_Base
+    {
+        class pilotCamera;
+    };
     // class 3as_LAAT_Mk1Lights;
-    class 3as_LAAT_Mk2;
+    class 3as_LAAT_Mk2: 3as_laat_Base
+    {
+        class pilotCamera;
+    };
     // class 3as_LAAT_Mk2Lights;
 
     class BNA_KC_LAATi_MK1: 3as_LAAT_Mk1
@@ -72,6 +79,21 @@ class CfgVehicles
             "ls_mag_300rnd_CMFlareChaff_blue",
             "ls_mag_300rnd_CMFlareChaff_blue",
             "SmokeLauncherMag"
+        };
+
+        class pilotCamera: pilotCamera
+        {
+            initTurn = 0;   // Initial states
+            initElev = -10;
+            maxTurn = 180;  // Turn radius
+            minTurn = -180;
+            maxElev = 90;   // Elevation (how far up/down)
+            minElev = -10;
+
+            maxXRotSpeed = 0.3;
+            maxYRotSpeed = 0.3;
+
+            ace_missileguidance_usePilotCameraForTargeting = 1;
         };
 
         // Impulse
@@ -146,6 +168,21 @@ class CfgVehicles
             "ls_mag_300rnd_CMFlareChaff_blue",
             "ls_mag_300rnd_CMFlareChaff_blue",
             "SmokeLauncherMag"
+        };
+
+        class pilotCamera: pilotCamera
+        {
+            initTurn = 0;   // Initial states
+            initElev = -10;
+            maxTurn = 180;  // Turn radius
+            minTurn = -180;
+            maxElev = 90;   // Elevation (how far up/down)
+            minElev = -10;
+
+            maxXRotSpeed = 0.3;
+            maxYRotSpeed = 0.3;
+
+            ace_missileguidance_usePilotCameraForTargeting = 1;
         };
 
         // Impulse
