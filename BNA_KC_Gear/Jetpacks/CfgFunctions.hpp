@@ -17,7 +17,7 @@ class CfgFunctions
         {
             file = "BNA_KC_Gear\Jetpacks\Data\Functions\JetDialog";
             class jetDialogOnLoad {};
-            class jetDialogUpdate {};
+            class jetDialogUpdateFuelLevel {};
             class shouldShowJetDialog {};
             class jetpackPutOnTakeOff {};
         };
@@ -69,7 +69,7 @@ class Extended_PostInit_EventHandlers
     };
     class BNA_KC_Jetpacks_FuelChanged_PostInit
     {
-        init = "['BNA_KC_Jet_FuelChanged', BNAKC_Jetpacks_fnc_jetDialogUpdate] call CBA_fnc_addEventHandler;";
+        init = "['BNA_KC_Jet_FuelChanged', BNAKC_Jetpacks_fnc_jetDialogUpdateFuelLevel] call CBA_fnc_addEventHandler;";
     };
     class BNA_KC_Jetpacks_PutOnTakeOff_PostInit
     {
