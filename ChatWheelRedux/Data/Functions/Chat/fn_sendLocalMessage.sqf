@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player, "Local Message"] remoteExecCall ["CWR_fnc_SendLocalMessage", (units group player)];
+ * [player, "Local Message"] remoteExecCall ["CWR_fnc_sendLocalMessage", (units group player)];
  * // Sends the message as the local player to all group members with the setting enabled
  */
 

@@ -4,7 +4,7 @@
     "CWR_CustomMessages_1",
     "EDITBOX",
     ["Custom Message 1", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+    ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
     "Default",
     0,
     {
@@ -17,7 +17,7 @@
     "CWR_CustomMessages_2",
     "EDITBOX",
     ["Custom Message 2", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+    ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
     "Default",
     0,
     {
@@ -29,7 +29,7 @@
     "CWR_CustomMessages_3",
     "EDITBOX",
     ["Custom Message 3", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+    ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
     "Default",
     0,
     {
@@ -41,7 +41,7 @@
     "CWR_CustomMessages_4",
     "EDITBOX",
     ["Custom Message 4", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+    ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
     "Default",
     0,
     {
@@ -54,7 +54,7 @@
     "CWR_AutoMessages_Enabled",
     "CHECKBOX",
     ["Enable Automated Messages", "Enables messages automatically being sent when certain actions are done. Throwing a grenade, getting hurt, etc."],
-    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+    ["ARMA 3 Chat Wheel - Redux", "Automated Messages"],
     true,
     0,
     {}
@@ -65,7 +65,7 @@
     "CWR_TagMenu_UseNewLine",
     "CHECKBOX",
     ["Separate examples with newline", "If enabled, example messages are separate with a newline, rather than an arrow."],
-    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+    ["ARMA 3 Chat Wheel - Redux", "Tag Menu"],
     true,
     0,
     {},
@@ -91,6 +91,17 @@
     ["Keeli Company Aux Mod", "Chat Wheel Menu"],
     [0, 15, 3, 0],
     1,
+    {},
+    false
+] call CBA_fnc_addSetting;
+
+[
+    "CWR_Debug_ShowMessages",
+    "CHECKBOX",
+    ["CWR - Show Debug Messages", "Shows debug messages for Chat Wheel Redux, useful for trying to figure out if something is going wrong."],
+    ["Keeli Company Aux Mod", "Developer"],
+    false,
+    0,
     {},
     false
 ] call CBA_fnc_addSetting;

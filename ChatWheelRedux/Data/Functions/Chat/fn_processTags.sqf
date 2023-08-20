@@ -1,5 +1,6 @@
 params ["_message"];
 
+_message call CWR_fnc_devLog;
 _message = switch (true) do
 {
     case ("[distance]" in _message):
@@ -22,7 +23,7 @@ _message = switch (true) do
     case ("[direction]" in _message):
     {
         private _bearing = round direction player;
-        private _facing = _bearing call CWR_fnc_GetDirFromBearing;
+        private _facing = _bearing call CWR_fnc_getDirFromBearing;
 
         _message = [_message, "[direction]", _facing] call CWR_fnc_stringReplace;
         _message call CWR_fnc_processTags;
@@ -56,8 +57,13 @@ _message = switch (true) do
             if ((time - (player getVariable ["CWR_playerLastUsedVoice", 0])) > CWR_Voice_CoolDown ) then
             {
                 private _voiceLine = selectRandom getArray (_config >> "voiceLines");
+
                 private _nearbyUnits = (getPosATL player) nearEntities ["CAManBase", 30];
-                [_voiceLine, getPosASL player] remoteExecCall ["CWR_fnc_PlayLocalSound", (_nearbyUnits)];
+                _nearbyUnits = _nearbyUnits select { isPlayer _x; };
+
+                {
+                    [_voiceLine, getPosASL player] remoteExecCall ["CWR_fnc_playLocalSound", _x];
+                } forEach _nearbyUnits;
                 
                 player setVariable ["CWR_playerLastUsedVoice", time];
             };

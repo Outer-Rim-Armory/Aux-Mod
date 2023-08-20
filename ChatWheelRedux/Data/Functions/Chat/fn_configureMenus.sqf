@@ -1,3 +1,5 @@
+#define QUOTE(CODE) #CODE
+
 // CBA's implementation of Hashmaps are sorted by insertion order, while BIS game's are not.
 // Order is important since the order of the keys is how they are displayed in the chat menu.
 CWR_messagesHashMap =
@@ -40,7 +42,7 @@ CWR_launcherMessagesHashMap =
     "CWR_Menu_Root",
     [CWR_messagesHashMap] call CBA_fnc_hashKeys,
     "",
-    "[([CWR_messagesHashMap] call CBA_fnc_hashValues) select %2] call CWR_fnc_SendMessage"
+    QUOTE([([CWR_messagesHashMap] call CBA_fnc_hashValues) select %2] call CWR_fnc_sendGroupMessage)
 ] call BIS_fnc_createMenu;
 
 
@@ -52,15 +54,14 @@ CWR_OpenDistanceMenu =
     
     private _distanceList = ["Close", "Mid", "Far"];
     CWR_distanceMessageList = _distanceList apply { [_message, "[distance]", _x] call CWR_fnc_stringReplace; };
-    //  distanceMessageList must be global because no other values can 
-    //  be passed to the expression parameter of BIS_fnc_CreateMenu
+    // distanceMessageList must be global because no other values can be passed to the expression parameter of BIS_fnc_CreateMenu
     
     [
         "How far?",
         "CWR_Menu_Distance",
         _distanceList,
         "",
-        "[[CWR_distanceMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
+        QUOTE([[CWR_distanceMessageList select %2] call CWR_fnc_removeQuotes] call CWR_fnc_sendGroupMessage)
     ] call BIS_fnc_createMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Distance_0";
@@ -80,7 +81,7 @@ CWR_OpenStatusMenu =
         "CWR_Menu_Status",
         _statusList,
         "",
-        "[[CWR_statusMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
+        QUOTE([[CWR_statusMessageList select %2] call CWR_fnc_removeQuotes] call CWR_fnc_sendGroupMessage)
     ] call BIS_fnc_createMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Status_0";
@@ -100,7 +101,7 @@ CWR_OpenLauncherMenu =
         "CWR_Menu_Launcher",
         [CWR_launcherMessagesHashMap] call CBA_fnc_hashKeys,
         "",
-        "[[CWR_launcherMessageList select %2] call CWR_fnc_RemoveQuotes] call CWR_fnc_SendMessage"
+        QUOTE([[CWR_launcherMessageList select %2] call CWR_fnc_removeQuotes] call CWR_fnc_sendGroupMessage)
     ] call BIS_fnc_createMenu;
 
     showCommandingMenu "#USER:CWR_Menu_Launcher_0";

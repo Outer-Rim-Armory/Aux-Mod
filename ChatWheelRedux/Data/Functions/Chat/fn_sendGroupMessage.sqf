@@ -1,16 +1,16 @@
 /*
  * Author: DartRuffian
- * Given a bearing, an integer ranging from 0 to 360.
+ * Sends a message, optionally with [tags], as the player in the player's group.
  *
  * Arguments:
- * 0: The message to send, optionally with [tags] <String>
+ * message: String - The message to send, optionally with [tags]
  *
  * Return Value:
  * None
  *
  * Example:
- * "I need ammo for my [weapon]" call CWR_fnc_SendMessage;
- * // Sends "I need ammo for my [KC] DC-15S" to all members in the player's group
+ * "I need ammo for my [weapon]" call CWR_fnc_sendGroupMessage;
+ * // Sends "I need ammo for my [KC] DC-15S" to all members in the unit's group
  */
 
 params ["_message"];
@@ -22,4 +22,4 @@ _message = _message call CWR_fnc_processTags;
 if (typeName _message isNotEqualTo "STRING") exitWith {};
 
 // Why is chat not global...
-[player, _message] remoteExecCall ["groupChat", (units group player)];
+[player, _message] remoteExecCall ["groupChat", group player];
