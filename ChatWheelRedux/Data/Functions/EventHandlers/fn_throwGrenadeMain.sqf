@@ -27,13 +27,18 @@ if (_magazine isKindOf ["SmokeShell", configFile >> "CfgMagazines"]) then
     _grenadeType = "Smoke";
 };
 
+if !(toLowerANSI _magazine find "shield" isEqualTo -1) then // Check if "shield" is in the class name
+{
+    _grenadeType = "Shield";
+};
+
 private _nearbyUnits = (getPosATL _sender) nearEntities ["CAManBase", 30];
 _nearbyUnits = _nearbyUnits select { isPlayer _x; };
 
 // Tags are processed here to avoid mismatched data and multiple voice lines playing
 // If processed in the remoteExec, bearing would be *that* player's bearing and the voice
 // line would be played for each unit in range (i.e. 10 players would hear the voiceline 10 times)
-_message = format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType] call CWR_fnc_processTags;
+private _message = format ["[vl-Throw%1]%1 out, [bearing]!", _grenadeType] call CWR_fnc_processTags;
 
 {
     [_sender, _message] remoteExecCall ["CWR_fnc_sendLocalMessage", _x];
