@@ -4,7 +4,7 @@
     "CWR_CustomMessages_1",
     "EDITBOX",
     ["Custom Message 1", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
+    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
     "Default",
     0,
     {
@@ -17,7 +17,7 @@
     "CWR_CustomMessages_2",
     "EDITBOX",
     ["Custom Message 2", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
+    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
     "Default",
     0,
     {
@@ -29,7 +29,7 @@
     "CWR_CustomMessages_3",
     "EDITBOX",
     ["Custom Message 3", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
+    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
     "Default",
     0,
     {
@@ -41,7 +41,7 @@
     "CWR_CustomMessages_4",
     "EDITBOX",
     ["Custom Message 4", "Custom message that can be used in the Chat Wheel. Custom messages support [tags]."],
-    ["ARMA 3 Chat Wheel - Redux", "Custom Messages"],
+    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
     "Default",
     0,
     {
@@ -54,7 +54,7 @@
     "CWR_AutoMessages_Enabled",
     "CHECKBOX",
     ["Enable Automated Messages", "Enables messages automatically being sent when certain actions are done. Throwing a grenade, getting hurt, etc."],
-    ["ARMA 3 Chat Wheel - Redux", "Automated Messages"],
+    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
     true,
     0,
     {}
@@ -65,7 +65,7 @@
     "CWR_TagMenu_UseNewLine",
     "CHECKBOX",
     ["Separate examples with newline", "If enabled, example messages are separate with a newline, rather than an arrow."],
-    ["ARMA 3 Chat Wheel - Redux", "Tag Menu"],
+    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
     true,
     0,
     {},
