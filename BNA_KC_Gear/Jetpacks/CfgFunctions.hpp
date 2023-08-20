@@ -18,6 +18,7 @@ class CfgFunctions
             file = "BNA_KC_Gear\Jetpacks\Data\Functions\JetDialog";
             class jetDialogOnLoad {};
             class jetDialogUpdate {};
+            class shouldShowJetDialog {};
             class jetpackPutOnTakeOff {};
         };
 
