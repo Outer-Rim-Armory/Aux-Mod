@@ -25,13 +25,8 @@ class CfgWeapons
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
-    class V_PlateCarrier1_rgr;
-    class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
-    {
-        class ItemInfo;
-    };
-
-    class BNA_KC_Vest_Jedi: SWLB_clone_basic_armor
+    class BNA_KC_Vest_Basic;
+    class BNA_KC_Vest_Jedi: BNA_KC_Vest_Basic
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -42,11 +37,6 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] Jedi Vest";
-
-        class ItemInfo: ItemInfo
-        {
-            vestType = "Rebreather";
-        };
     };
 };
 
