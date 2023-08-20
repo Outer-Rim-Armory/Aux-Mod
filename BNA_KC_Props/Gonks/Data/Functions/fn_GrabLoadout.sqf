@@ -11,7 +11,7 @@ private _loadoutsMap = createHashMapFromArray
 			"BNA_KC_DC17",					// Secondary Weapon
 			"",							// Tertiary
 			"",				// Binoculars
-			"SWLB_clone_basic_armor",			// Vest
+			"BNA_KC_Vest_Basic",			// Vest
 			"BNA_KC_Backpack",		// Backpack
 			[							// Magazines ["Magazine classname", number of mags]
 				["JLTS_DC15A_mag", 15],
@@ -45,7 +45,7 @@ private _loadoutsMap = createHashMapFromArray
 			"BNA_KC_DC17",
 			"",
 			"",
-			"SWLB_clone_basic_armor",
+			"BNA_KC_Vest_Basic",
 			"BNA_KC_Backpack",
 			[
 				["JLTS_DC15S_mag", 15],

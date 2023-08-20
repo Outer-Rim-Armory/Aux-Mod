@@ -271,11 +271,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_ARF", "SWLB_clone_basic_armor", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_ARF", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_ARF", "SWLB_clone_basic_armor", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_ARF", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         backpack = "BNA_KC_Backpack";
     };
