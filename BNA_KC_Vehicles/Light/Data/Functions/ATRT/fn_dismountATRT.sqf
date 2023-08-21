@@ -19,6 +19,7 @@ private _rider = _atrt getVariable ["BNA_KC_ATRT_Rider", nil];
 
 [_rider, ""] remoteExec ["switchMove", 0];      // Reset animation
 detach _rider;
+_rider setVariable ["BNA_KC_ATRT_isRiding", false];
 
 objNull remoteControl driver _atrt; // Reset control
 player remoteControl _rider;

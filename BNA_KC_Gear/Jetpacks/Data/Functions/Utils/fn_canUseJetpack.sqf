@@ -26,7 +26,8 @@ private _canJetpack =
     lifeState _unit != "INCAPACITATED" and    // True if unit is uncon
     !(surfaceIsWater getPos _unit and {((getPosASLW _unit) select 2) < 0.2}) and // True if unit is not in water
     alive _unit and                           // True if unit is alive
-    [_unit] call ace_common_fnc_isAwake       // True if unit is not dead and not unconcious
+    [_unit] call ace_common_fnc_isAwake and   // True if unit is not dead and not unconcious
+    !(_unit getVariable ["BNA_KC_ATRT_isRiding", false])
 );
 
 _canJetpack;
