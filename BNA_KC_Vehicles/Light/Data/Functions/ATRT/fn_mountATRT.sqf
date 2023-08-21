@@ -24,8 +24,8 @@ if
 _atrt setVariable ["BNA_KC_ATRT_Rider", _rider, true];
 _atrt allowDamage false; // Player could potentially get stuck if the AT-RT "dies" while riding it
 
-[_rider, "driver_Quadbike"] remoteExec ["switchMove", 0]; // Seated animation
-_rider attachTo [_atrt, [0, 0, 0], "seat"];               // Attach the user to the ATRT
+_rider attachTo [_atrt, [0, 0, 0], "seat"]; // Attach the user to the ATRT
+[_rider, "ChopperLight_C_LIn_H"] remoteExec ["switchMove", 0];
 _rider setVariable ["BNA_KC_ATRT_isRiding", true];
 
 _collision = "3AS_ATRT_Collision" createVehicle (position _atrt); // Object to simulate collision for the vehicle
@@ -47,3 +47,12 @@ if (cameraOn != (vehicle _atrt)) then
 // Makes the "Release UAV Controls" action not do anything to avoid issues
 // TODO: Make it so that the option does not appear at all
 inGameUISetEventHandler ["Action", "if ((_this select 3) isEqualTo ""BackFromUAV"") then {true};"];
+
+[
+    {
+        params ["_rider"];
+        [_rider, "driver_Quadbike"] remoteExec ["switchMove", 0]; // Seated animation
+    },
+    [_rider],
+    1.5
+] call CBA_fnc_waitAndExecute;
