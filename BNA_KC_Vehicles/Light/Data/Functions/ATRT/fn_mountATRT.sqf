@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player, atrt] call BNAKC_fnc_dismountATRT;
+ * [player, atrt] call BNAKC_fnc_mountATRT;
  */
 
 

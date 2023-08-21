@@ -21,7 +21,7 @@ _atrt addAction
             !isNil "_expression" and { _expression }
         };
         
-        _atrt call BNAKC_fnc_handleATRTDismount;
+        _atrt call BNAKC_fnc_dismountATRT;
     },
     [],
     1.5,
