@@ -19,7 +19,8 @@ class CfgFunctions
             class jetDialogOnLoad {};
             class jetDialogUpdateFuelLevel {};
             class shouldShowJetDialog {};
-            class jetpackPutOnTakeOff {};
+            class jetDialogShowHide {};
+            class jetDialogShowHideCreateHandlers {};
         };
 
         class Utils
@@ -71,9 +72,13 @@ class Extended_PostInit_EventHandlers
     {
         init = "['BNA_KC_Jet_FuelChanged', BNAKC_Jetpacks_fnc_jetDialogUpdateFuelLevel] call CBA_fnc_addEventHandler;";
     };
-    class BNA_KC_Jetpacks_PutOnTakeOff_PostInit
+    class BNA_KC_Jetpacks_showHideHandlers_PostInit
     {
-        init = "['loadout', BNAKC_Jetpacks_fnc_jetpackPutOnTakeOff, true] call CBA_fnc_AddPlayerEventHandler;";
+        init = "['BNA_KC_Jet_showHideDisplay', BNAKC_Jetpacks_fnc_jetDialogShowHide] call CBA_fnc_addEventHandler;";
+    };
+    class BNA_KC_Jetpacks_showHideCreateHandlers_PostInit
+    {
+        init = "call BNAKC_Jetpacks_fnc_jetDialogShowHideCreateHandlers;";
     };
     class BNA_KC_Jetpacks_RefuelActions_PostInit
     {
