@@ -16,13 +16,13 @@
 #define ERROR_SOUND_COOLDOWN 5
 params ["_unit"];
 
-private _lastPlayedSound = _unit getVariable ["BNA_KC_Jet_lastPlayedSound", 0];
+private _lastPlayedSound = _unit getVariable ["BNA_KC_Jet_lastPlayedSound", -ERROR_SOUND_COOLDOWN];
 
 if
 (
     isNull (objectParent _unit) and
     [_unit] call ace_common_fnc_isAwake and
-    (time - _lastPlayedSound) > ERROR_SOUND_COOLDOWN and
+    (time - _lastPlayedSound) >= ERROR_SOUND_COOLDOWN and
     !(_unit getVariable ["BNA_KC_ATRT_isRiding", false])
 ) then
 {
