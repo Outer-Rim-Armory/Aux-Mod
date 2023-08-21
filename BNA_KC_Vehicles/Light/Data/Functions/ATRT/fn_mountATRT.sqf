@@ -1,5 +1,5 @@
 /*
- * Author: DartRuffian
+ * Author: 3AS, Edited DartRuffian
  * Mounts a given unit on a given AT-RT.
  *
  * Arguments:
