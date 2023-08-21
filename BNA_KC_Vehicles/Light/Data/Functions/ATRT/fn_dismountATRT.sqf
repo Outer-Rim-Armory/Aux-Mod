@@ -16,10 +16,11 @@
 params ["_atrt"];
 
 private _rider = _atrt getVariable ["BNA_KC_ATRT_Rider", nil];
+if (isNil "_rider") exitWith {};
 
 // Prevent the player getting stuck on top
 private _direction = direction _rider;
-private _position = getPosASL walker;
+private _position = getPosASL _atrt;
 _position =
 [
     _position#0 - 0.35 + sin (_direction - 90),
