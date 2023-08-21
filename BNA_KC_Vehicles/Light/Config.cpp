@@ -236,7 +236,11 @@ class TransportMagazines \
 
 class CfgVehicles
 {
-    class 3AS_ATRT;
+    class 3AS_ATRT_Base;
+    class 3AS_ATRT: 3AS_ATRT_Base
+    {
+        class EventHandlers;
+    };
     class BNA_KC_ATRT: 3AS_ATRT
 	{
 		// Mod Info
@@ -259,6 +263,10 @@ class CfgVehicles
 		// {
 		// 	"BNA_KC_Vehicles\Light\Data\Textures\ATRT\BNA_KC_ATRT.paa"
 		// };
+        class EventHandlers: EventHandlers
+        {
+            init = "(_this select 0) call BNAKC_fnc_startATRT;"; // Overwrite 3AS script call
+        };
 	};
 
     class O_LSV_02_unarmed_F;
@@ -727,4 +735,19 @@ class CfgEditorSubcategories
 		scopeCurator = 2;
 		displayName = "Vehicles - Light";
 	};
+};
+
+
+class CfgFunctions
+{
+    class BNAKC
+    {
+        class ATRT
+        {
+            file = "BNA_KC_Vehicles\Light\Data\Functions\ATRT";
+            class startATRT {};
+            class mountATRT {};
+            class dismountATRT {};
+        };
+    };
 };
