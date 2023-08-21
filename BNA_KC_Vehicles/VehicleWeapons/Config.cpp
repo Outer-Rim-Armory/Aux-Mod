@@ -65,6 +65,15 @@ class CfgAmmo
         effectfly = "SWLW_plasma_red";
         coefgravity = 0;
 	};
+
+    class 3AS_ATRT_bluePlasma;
+    class BNA_KC_ATRT_Turret_Ammo: 3AS_ATRT_bluePlasma
+    {
+        caliber = 6; // How much geometry the bullet can pass through
+        hit = 120;      // Damage when bullet speed is >= typicalSpeed
+        typicalSpeed = 400;
+        coefgravity = 0;
+    };
 };
 // model = "3as\3AS_Weapons\Data\tracer_shell_Green.p3d";
 
@@ -148,6 +157,15 @@ class CfgMagazines
 		ammo = "BNA_KC_40mm_APFSDS_Ammo";
 		tracersEvery=1;
 	};
+
+    class 3AS_9999Rnd_ATRT_Mag;
+    class BNA_KC_9999Rnd_ATRT_Turret_Magazine: 3AS_9999Rnd_ATRT_Mag
+    {
+        ammo = "BNA_KC_ATRT_Turret_Ammo";
+        displayName = "[KC] AT-RT Turret Battery Pack";
+        displayNameShort = "";
+        descriptionShort = "Standard battery pack for the AT-RT";
+    };
 };
 
 
@@ -714,6 +732,20 @@ class CfgWeapons
 		};
 	};
 	
+    class 3AS_ATRT_Weapon_F;
+    class BNA_KC_ATRT_Turret: 3AS_ATRT_Weapon_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        displayName = "AT-RT Turret";
+        descriptionShort = "";
+
+        magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
+        magazineWell[] = {};
+    };
+    
     // Horns & Alarms
     class CarHorn;
     class BNA_KC_Juggernaut_Horn: CarHorn

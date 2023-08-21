@@ -258,6 +258,9 @@ class CfgVehicles
 
         displayName = "[KC] AT-RT";
 
+        weapons[] = { "BNA_KC_ATRT_Turret" };
+        magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
+
 		// Textures are not set-up on the 3AS end yet.
 		// hiddenSelectionsTextures[] =
 		// {
