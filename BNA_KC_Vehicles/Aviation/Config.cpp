@@ -46,6 +46,50 @@ class CfgVehicles
             "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
         };
+        textureList[] = { "Standard", 0, "Imperial", 0, "KeeliCompany", 1 };
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = { "BNA_KC_Faction" };
+                textures[] =
+                {
+                    "3AS\3as_Laat\LAATI\data\Hull_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Wings_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class Imperial: Standard
+            {
+                author = "Charger";
+                displayName = "Imperial";
+                textures[] =
+                {
+                    "3AS\3as_Laat\LAATI\data\Hull_Imp_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\wings_Imp_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\weapons_Imp_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\weapon_Details_Imp_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\interior_Imp_CO.paa"
+                };
+            };
+            class KeeliCompany: Standard
+            {
+                author = "Dexus";
+                displayName = "Keeli Company";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Body.paa",
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
+                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+        };
 
         weapons[] =
         {
@@ -134,6 +178,50 @@ class CfgVehicles
             "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
             "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+        };
+        textureList[] = { "Standard", 0, "Imperial", 0, "KeeliCompany", 1 };
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = { "BNA_KC_Faction" };
+                textures[] =
+                {
+                    "3AS\3as_Laat\LAATI\data\Hull_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Wings_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class Imperial: Standard
+            {
+                author = "Charger";
+                displayName = "Imperial";
+                textures[] =
+                {
+                    "3AS\3as_Laat\LAATI\data\Hull_Imp_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\wings_Imp_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\weapons_Imp_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\weapon_Details_Imp_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\interior_Imp_CO.paa"
+                };
+            };
+            class KeeliCompany: Standard
+            {
+                author = "Dexus";
+                displayName = "Keeli Company";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Body.paa",
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
+                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
         };
 
         weapons[] =
