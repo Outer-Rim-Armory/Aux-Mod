@@ -17,6 +17,7 @@ params ["_atrt"];
 if (isNull _atrt) exitWith {};
 
 _atrt setAnimSpeedCoef 1.5; // Used to increase movement speed
+_atrt disableAI "RADIOPROTOCOL"; // Stops ai from talking/sending messages
 
 _atrt addAction
 [
