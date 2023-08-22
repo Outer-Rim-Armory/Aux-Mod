@@ -1,5 +1,5 @@
 /*
- * Author: DartRuffian
+ * Author: 3AS, Edited DartRuffian
  * Handles dismounting from an AT-RT, i.e. resetting the camera, controls, etc.
  *
  * Arguments:
