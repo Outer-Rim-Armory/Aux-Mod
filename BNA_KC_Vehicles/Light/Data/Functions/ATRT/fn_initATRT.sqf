@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * init = "(_this select 0) call BNAKC_fnc_mountATRT";
+ * init = "(_this select 0) call BNAKC_fnc_initATRT";
  */
 
 

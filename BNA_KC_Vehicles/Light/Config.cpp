@@ -268,7 +268,7 @@ class CfgVehicles
 		// };
         class EventHandlers: EventHandlers
         {
-            init = "(_this select 0) call BNAKC_fnc_startATRT;"; // Overwrite 3AS script call
+            init = "(_this select 0) call BNAKC_fnc_initATRT;"; // Overwrite 3AS script call
         };
 	};
 
@@ -748,7 +748,7 @@ class CfgFunctions
         class ATRT
         {
             file = "BNA_KC_Vehicles\Light\Data\Functions\ATRT";
-            class startATRT {};
+            class initATRT {};
             class mountATRT {};
             class dismountATRT {};
         };
