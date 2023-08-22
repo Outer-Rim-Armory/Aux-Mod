@@ -1,3 +1,18 @@
+/*
+ * Author: 3AS, Edited DartRuffian
+ * Creates mount/dismount actions for an AT-RT object.
+ *
+ * Arguments:
+ * atrt: Object - The AT-RT
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * init = "(_this select 0) call BNAKC_fnc_mountATRT";
+ */
+
+
 params ["_atrt"];
 if (isNull _atrt) exitWith {};
 
