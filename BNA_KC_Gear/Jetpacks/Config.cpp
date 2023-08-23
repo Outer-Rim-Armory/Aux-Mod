@@ -4,6 +4,59 @@
 
 #define QUOTE(CODE) #CODE
 
+
+class CfgWeapons
+{
+    class CBA_MiscItem;
+    class CBA_MiscItem_ItemInfo;
+    class BNA_KC_Jetpack_FuelCan_Empty: CBA_MiscItem
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] Jetpack Fuel Can";
+        descriptionShort = "An empty Jetpack fuel can.";
+
+        BNA_KC_Jet_isFuelCan = 1;
+        BNA_KC_Jet_fuelCanItem = "BNA_KC_Jetpack_FuelCan_Empty";
+        BNA_KC_Jet_fuelCanMag = "BNA_KC_Jetpack_FuelCan_Mag";
+        
+        picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CanisterFuel_F.jpg";
+        model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
+
+        class ItemInfo: CBA_MiscItem_ItemInfo
+        {
+            mass = 60;
+        };
+    };
+};
+
+
+class CfgMagazines
+{
+    class CA_Magazine;
+    class BNA_KC_Jetpack_FuelCan_Mag: CA_Magazine
+    {
+        displayName = "[KC] Jetpack Fuel Can";
+        descriptionShort = "A partially full Jetpack fuel can.";
+
+        count = 400; // Amount of fuel that can be carried
+
+        BNA_KC_Jet_isFuelCan = 1;
+        BNA_KC_Jet_fuelCanItem = "BNA_KC_Jetpack_FuelCan_Empty";
+        BNA_KC_Jet_fuelCanMag = "BNA_KC_Jetpack_FuelCan_Mag";
+
+        picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CanisterFuel_F.jpg";
+        model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
+    };
+};
+
+
 class CfgVehicles
 {
     class BNA_KC_Backpack;
