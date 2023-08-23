@@ -60,8 +60,9 @@ params ["_unit", "_delay"];
 
             if (_woundsArray isEqualTo [] and (_painLevel == 0) and (_bloodLevel == 6.0)) then
             {
-                // If unit has no other remaining wounds, heal all broken limbs and remove handler
+                // If unit has no other remaining wounds, heal all broken limbs, wake up unit, and remove handler
                 _unit setVariable ["ace_medical_fractures", [0, 0, 0, 0, 0, 0], true];
+                [_unit, false, 0, true] call ace_medical_fnc_setUnconscious;
                 // if (BNA_KC_DevMode) then { systemChat format ["Finished healing %1, removing handler %2", _unit, _handlerID]; };
                 [_handlerID] call CBA_fnc_removePerFrameHandler;
                 BNA_KC_Weap_SlowHealHandles deleteAt (BNA_KC_Weap_SlowHealHandles find _handlerID); // Remove value from list
