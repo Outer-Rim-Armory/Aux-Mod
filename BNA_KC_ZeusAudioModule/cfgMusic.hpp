@@ -293,6 +293,16 @@ class CfgMusic
 	};
 
 
+	class BNA_KC_COD_115
+	{
+		name = "[COD] 115";
+		// Call of Duty
+		sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\COD_115.ogg",db+0,1};
+		duration = 228;
+		musicClass = "BNA_KC_VGMusic"; // Music category
+	};
+
+
 	class BNA_KC_DOOM_Harbringer
 	{
 		name = "[DOOM] Harbringer";
