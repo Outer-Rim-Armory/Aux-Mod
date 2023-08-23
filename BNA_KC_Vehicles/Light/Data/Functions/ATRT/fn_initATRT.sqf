@@ -19,6 +19,23 @@ if (isNull _atrt) exitWith {};
 _atrt setAnimSpeedCoef 1.5; // Used to increase movement speed
 _atrt disableAI "RADIOPROTOCOL"; // Stops ai from talking/sending messages
 
+private _atrtDamageHandler = _atrt addEventHandler
+[
+    "HandleDamage",
+    {
+        params ["_atrt", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
+        _atrtHealth = _atrt getVariable ["BNA_KC_Health", 100];
+        systemChat format ["Health before damage: %1", _atrtHealth];
+        systemChat format ["Damage: %1", _damage];
+        _atrtHealth = _atrtHealth - _damage;
+        systemChat format ["Health after damage: %1", _atrtHealth];
+        _atrt setVariable ["BNA_KC_Health", _atrtHealth, true];
+        hintSilent format ["AT-RT Health: %1", _atrtHealth];
+        
+        0;
+    }
+];
+
 _atrt addAction
 [
     "Drive",
@@ -28,16 +45,18 @@ _atrt addAction
         
         _rider = _atrt getVariable ["BNA_KC_ATRT_Rider", _rider];
         [_rider, _atrt] call BNAKC_fnc_mountATRT;
-        
+
         // Check if the player should be able to ride
         waitUntil
         {
             sleep 2;
-            private _expression = (!(alive _rider or alive player or "INCAPACITATED" == lifeState _rider));
-            !isNil "_expression" and { _expression }
+            private _expression = !(alive _rider or lifeState _rider == "INCAPACITATED" or _rider getVariable ["ACE_isUnconscious", false]);
+            // See https://community.bistudio.com/wiki/waitUntil#Problems
+            !isNil "_expression" and { _expression or _atrt getVariable ["BNA_KC_Health", 100] <= 0 };
         };
         
         _atrt call BNAKC_fnc_dismountATRT;
+        _atrt setDamage 1;
     },
     [],
     1.5,

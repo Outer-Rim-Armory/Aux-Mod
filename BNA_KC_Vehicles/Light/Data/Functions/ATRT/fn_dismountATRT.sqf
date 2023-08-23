@@ -48,7 +48,7 @@ private _collision = _atrt getVariable ["BNA_KC_ATRT_CollisionObj", objNull]; //
 deleteVehicle _collision;
 
 _atrt setVariable ["BNA_KC_ATRT_Rider", nil, true]; // Reset rider
-_atrt allowDamage true;
+// _atrt allowDamage true;
 inGameUISetEventHandler ["Action", ""];
 
 [
