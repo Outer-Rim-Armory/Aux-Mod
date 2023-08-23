@@ -26,7 +26,7 @@ class CfgWeapons
         BNA_KC_Jet_fuelCanItem = "BNA_KC_Jetpack_FuelCan_Empty";
         BNA_KC_Jet_fuelCanMag = "BNA_KC_Jetpack_FuelCan_Mag";
         
-        picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CanisterFuel_F.jpg";
+        picture = "\BNA_KC_Gear\Jetpacks\Data\Textures\UI\BNA_KC_Jet_FuelCan.paa";
         model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
 
         class ItemInfo: CBA_MiscItem_ItemInfo
@@ -51,7 +51,7 @@ class CfgMagazines
         BNA_KC_Jet_fuelCanItem = "BNA_KC_Jetpack_FuelCan_Empty";
         BNA_KC_Jet_fuelCanMag = "BNA_KC_Jetpack_FuelCan_Mag";
 
-        picture = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_CanisterFuel_F.jpg";
+        picture = "\BNA_KC_Gear\Jetpacks\Data\Textures\UI\BNA_KC_Jet_FuelCan.paa";
         model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
     };
 };
