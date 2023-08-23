@@ -40,7 +40,7 @@ class CfgFunctions
 
             class refuelFromBody {};
             class canRefuelFromBody {};
-            class refuelFromBodyModifier {};
+            class addJetpackNameIcon {};
 
             class getFuelCan {};
         };

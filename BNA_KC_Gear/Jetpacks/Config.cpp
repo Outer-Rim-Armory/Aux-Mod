@@ -140,7 +140,7 @@ class CfgVehicles
 
                     condition = QUOTE(_this call BNAKC_Jetpacks_fnc_canRefuelFromBody);
                     statement = QUOTE(_this call BNAKC_Jetpacks_fnc_refuelFromBody);
-                    modifierFunction = QUOTE(_this call BNAKC_Jetpacks_fnc_refuelFromBodyModifier);
+                    modifierFunction = QUOTE(_this call BNAKC_Jetpacks_fnc_addJetpackNameIcon);
                 };
             };
         };
