@@ -132,7 +132,7 @@ class CfgVehicles
             {
                 class BNA_KC_Jetpack_RefuelFromBody
                 {
-                    displayName = "Refuel from jetpack";
+                    displayName = "Refuel from";
                     icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
 
                     distance = 1.75;

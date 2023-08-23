@@ -19,7 +19,7 @@
 
 params ["_target", "_player", "_params", "_actionData"];
 
-private _displayName =
+private _jetpackName =
 [
     (configFile >> "CfgVehicles" >> backpack _target),
     "displayName",
@@ -33,5 +33,5 @@ private _icon =
     "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"
 ] call BIS_fnc_returnConfigEntry;
 
-_actionData set [1, format ["Refuel from %1", _displayName]];
+_actionData set [1, format ["%1 %2", _displayName, _jetpackName]];
 _actionData set [2, _icon];
