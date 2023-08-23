@@ -74,4 +74,4 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
 } forEach _effectPoints;
 
 // Save for later removal upon landing by the jetpack handler
-_unit setVariable ["BNA_KC_Jet_effectSources", _effectSources];
+_unit setVariable ["BNA_KC_Jet_effectSources", _effectSources, true];

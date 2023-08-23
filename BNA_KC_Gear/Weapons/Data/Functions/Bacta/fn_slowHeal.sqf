@@ -39,7 +39,7 @@ params ["_unit"];
             // If there are wounds, remove a random one each iteration
             _randomNum = random count _woundsArray;
             _woundsArray deleteAt _randomNum;
-            _unit setVariable["ace_medical_openWounds", _woundsArray, true]; // Apply list of wounds, with one removed
+            _unit setVariable ["ace_medical_openWounds", _woundsArray, true]; // Apply list of wounds, with one removed
         }
         else
         {

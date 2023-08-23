@@ -58,11 +58,7 @@
     {
         if !(isTouchingGround ace_player) then
         {
-            _hoverState = switch (ace_player getVariable ["BNA_KC_Jet_hover", false]) do
-            {
-                case true: { false; };
-                case false: { true; };
-            };
+            _hoverState = !(ace_player getVariable ["BNA_KC_Jet_hover", false]);
             ace_player setVariable ["BNA_KC_Jet_hover", _hoverState];
         };
     },     // KeyDown

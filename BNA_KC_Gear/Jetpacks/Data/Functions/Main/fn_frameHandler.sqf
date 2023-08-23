@@ -49,7 +49,7 @@ if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_
                     {
                         !(_x isEqualTo objNull); // Removing items from the array in the forEach causes indexing problems		
                     };
-                    ace_player setVariable ["BNA_KC_Jet_effectSources", _sources];
+                    ace_player setVariable ["BNA_KC_Jet_effectSources", _sources, true];
                 }
             ] remoteExec ["call", 0, true];
 

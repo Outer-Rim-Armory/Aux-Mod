@@ -30,7 +30,7 @@ _rider setVariable ["BNA_KC_ATRT_isRiding", true];
 
 _collision = "3AS_ATRT_Collision" createVehicle (position _atrt); // Object to simulate collision for the vehicle
 _collision attachTo [_atrt, [0.0, 0.3, -2.3], "seat"];
-_atrt setVariable ["BNA_KC_ATRT_CollisionObj", _collision];
+_atrt setVariable ["BNA_KC_ATRT_CollisionObj", _collision, true];
 
 // Give control of the unit to the player
 objNull remoteControl driver _rider;

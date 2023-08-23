@@ -16,7 +16,7 @@
 
 params ["_vehicle"];
 
-_vehicle setVariable ["BNA_KC_EMP_lastUsed", time];
+_vehicle setVariable ["BNA_KC_EMP_lastUsed", time, true];
 
 private _position = getPosASL _vehicle;
 [_position] remoteExec ["BNAKC_fnc_playDroidPopperSound", [0, -2] select isDedicated];
