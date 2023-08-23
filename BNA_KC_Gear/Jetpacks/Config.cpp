@@ -45,6 +45,7 @@ class CfgMagazines
         descriptionShort = "A partially full Jetpack fuel can.";
 
         count = 400; // Amount of fuel that can be carried
+        mass = 60;
 
         BNA_KC_Jet_isFuelCan = 1;
         BNA_KC_Jet_fuelCanItem = "BNA_KC_Jetpack_FuelCan_Empty";
