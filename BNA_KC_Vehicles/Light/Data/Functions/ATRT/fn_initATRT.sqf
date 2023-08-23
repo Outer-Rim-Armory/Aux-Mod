@@ -27,7 +27,6 @@ private _atrtDamageHandler = _atrt addEventHandler
         _atrtHealth = _atrt getVariable ["BNA_KC_Health", 100];
         _atrtHealth = _atrtHealth - _damage;
         _atrt setVariable ["BNA_KC_Health", _atrtHealth, true];
-        hintSilent format ["AT-RT Health: %1", _atrtHealth];
         
         0;
     }
