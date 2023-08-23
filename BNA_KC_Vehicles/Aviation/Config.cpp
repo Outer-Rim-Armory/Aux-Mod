@@ -150,6 +150,7 @@ class CfgVehicles
                 // Notably used for 3AS's AT-TE
                 displayName = "Load Vehicle (Custom)";
                 displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
+                onlyForPlayer = 0;
                 radius = 30;
                 hideOnUse = 1;
                 priority = 5;
@@ -301,7 +302,7 @@ class CfgVehicles
                 displayName = "Load Vehicle (Custom)";
                 displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
                 onlyForPlayer = 0;
-                
+
                 radius = 30;
                 hideOnUse = 1;
                 priority = 5;
