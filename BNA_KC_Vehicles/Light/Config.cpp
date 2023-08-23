@@ -270,6 +270,14 @@ class CfgVehicles
         {
             init = "(_this select 0) call BNAKC_fnc_initATRT;"; // Overwrite 3AS script call
         };
+
+        class VehicleTransport
+        {
+            class Cargo
+            {
+                BNA_KC_SpecialLoad = 1;
+            };
+        };
 	};
 
     class O_LSV_02_unarmed_F;
