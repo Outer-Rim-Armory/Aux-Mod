@@ -55,14 +55,14 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
         };
         // Spawn all of the effects, attach to player, save to array
         {
-            private _effect = "#particlesource" createVehicleLocal [0, 0, 0];
+            private _effect = "#particlesource" createVehicle [0, 0, 0];
             _effect setParticleClass _x;
             _effect attachTo [_unit, _offsetEffect, "aimPoint"];
             _effectSources pushBack _effect;
         } forEach _effectTypes;
 
         // Create light
-        private _lightSource = "#lightpoint" createVehicleLocal [0, 0, 0];
+        private _lightSource = "#lightpoint" createVehicle [0, 0, 0];
         _lightSource setLightColor _lightColor;
         _lightSource setLightAmbient [0, 0, 0];
         _lightSource setLightBrightness 0.5;		
