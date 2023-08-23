@@ -40,6 +40,9 @@ class CfgFunctions
 
             class refuelFromBody {};
             class canRefuelFromBody {};
+            class refuelOtherPlayer {};
+            class canRefuelOtherPlayer {};
+            
             class addJetpackNameIcon {};
 
             class getFuelCan {};

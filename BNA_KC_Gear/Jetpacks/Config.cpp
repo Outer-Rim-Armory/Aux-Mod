@@ -23,7 +23,6 @@ class CfgWeapons
         descriptionShort = "An empty Jetpack fuel can.";
 
         BNA_KC_Jet_isFuelCan = 1;
-        BNA_KC_Jet_fuelCanItem = "BNA_KC_Jetpack_FuelCan_Empty";
         BNA_KC_Jet_fuelCanMag = "BNA_KC_Jetpack_FuelCan_Mag";
         
         picture = "\BNA_KC_Gear\Jetpacks\Data\Textures\UI\BNA_KC_Jet_FuelCan.paa";
@@ -49,7 +48,6 @@ class CfgMagazines
 
         BNA_KC_Jet_isFuelCan = 1;
         BNA_KC_Jet_fuelCanItem = "BNA_KC_Jetpack_FuelCan_Empty";
-        BNA_KC_Jet_fuelCanMag = "BNA_KC_Jetpack_FuelCan_Mag";
 
         picture = "\BNA_KC_Gear\Jetpacks\Data\Textures\UI\BNA_KC_Jet_FuelCan.paa";
         model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
@@ -140,6 +138,18 @@ class CfgVehicles
 
                     condition = QUOTE(_this call BNAKC_Jetpacks_fnc_canRefuelFromBody);
                     statement = QUOTE(_this call BNAKC_Jetpacks_fnc_refuelFromBody);
+                    modifierFunction = QUOTE(_this call BNAKC_Jetpacks_fnc_addJetpackNameIcon);
+                };
+
+                class BNA_KC_Jetpack_RefuelOtherPlayer
+                {
+                    displayName = "Refuel player's";
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
+
+                    distance = 1.75;
+
+                    condition = QUOTE(_this call BNAKC_Jetpacks_fnc_canRefuelOtherPlayer);
+                    statement = QUOTE(_this call BNAKC_Jetpacks_fnc_refuelOtherPlayer);
                     modifierFunction = QUOTE(_this call BNAKC_Jetpacks_fnc_addJetpackNameIcon);
                 };
             };

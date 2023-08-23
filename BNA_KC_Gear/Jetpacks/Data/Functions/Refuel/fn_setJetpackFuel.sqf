@@ -16,7 +16,7 @@
 
 
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
-params ["_jetpackOrUnit", "_fuelAmount"];
+params ["_jetpackOrUnit", "_fuelAmount", ["_sendEvent", true]];
 
 // Determine if given object is a unit or a backpack object
 private _jetpack = objNull;
@@ -41,5 +41,8 @@ _fuelAmount = _fuelAmount max 0; // Prevents fuel from going negative
 
 // TODO: Display to unit (if a unit is passed) that their jetpack has been refilled
 
-_jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuelAmount];
-["BNA_KC_Jet_FuelChanged", [ace_player, _jetpack, _oldFuel, _fuel]] call CBA_fnc_GlobalEvent;
+_jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuelAmount, true];
+if (_sendEvent) then
+{
+    ["BNA_KC_Jet_FuelChanged", [ace_player, _jetpack, _oldFuel, _fuel]] call CBA_fnc_globalEvent;
+};

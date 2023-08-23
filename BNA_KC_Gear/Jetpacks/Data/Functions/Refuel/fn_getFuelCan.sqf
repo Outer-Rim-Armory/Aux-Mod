@@ -14,7 +14,7 @@
  */
 
 
-params ["_unit", ["_ignoreFull", true]];
+params ["_unit", ["_ignoreFull", true], ["_ignoreEmpty", false]];
 
 private _canClass = "";
 private _fuelLevel = 0;
@@ -40,10 +40,13 @@ private _fuelLevel = 0;
 // Prefer partially full cans by returning early
 if !(_canClass isEqualTo "") exitWith { [_canClass, _fuelLevel]; };
 
-// Search for empty fuel cans
+if !(_ignoreEmpty) then
 {
-    private _isCan = [(configFile >> "CfgWeapons" >> _x), "BNA_KC_Jet_isFuelCan", 0] call BIS_fnc_returnConfigEntry;
-    if (_isCan isEqualTo 1) exitWith { _canClass = _x; };
-} forEach items _unit;
+    // Search for empty fuel cans
+    {
+        private _isCan = [(configFile >> "CfgWeapons" >> _x), "BNA_KC_Jet_isFuelCan", 0] call BIS_fnc_returnConfigEntry;
+        if (_isCan isEqualTo 1) exitWith { _canClass = _x; };
+    } forEach items _unit;
+};
 
 [_canClass, _fuelLevel];

@@ -33,7 +33,7 @@ else
 
 private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> "BNA_KC_Jet_fuel", 100);
 private _fuel = _jetpack getVariable ["BNA_KC_Jet_currentFuel", _maxFuel];
-_jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuel]; // sets the value so the variable is defined
+_jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuel, true]; // sets the value so the variable is defined
 
 if (_returnPercent) then
 {
