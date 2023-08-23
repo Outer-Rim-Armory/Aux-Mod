@@ -25,10 +25,7 @@ private _atrtDamageHandler = _atrt addEventHandler
     {
         params ["_atrt", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
         _atrtHealth = _atrt getVariable ["BNA_KC_Health", 100];
-        systemChat format ["Health before damage: %1", _atrtHealth];
-        systemChat format ["Damage: %1", _damage];
         _atrtHealth = _atrtHealth - _damage;
-        systemChat format ["Health after damage: %1", _atrtHealth];
         _atrt setVariable ["BNA_KC_Health", _atrtHealth, true];
         hintSilent format ["AT-RT Health: %1", _atrtHealth];
         
