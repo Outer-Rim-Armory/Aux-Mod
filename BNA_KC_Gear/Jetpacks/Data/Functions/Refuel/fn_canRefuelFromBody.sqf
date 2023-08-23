@@ -5,7 +5,7 @@
  *
  * Arguments:
  * target: Object - The unit whose jetpack should be drained
- * player: Object - The unit whose jetpack should be refueled
+ * player: Object - The unit collecting fuel
  * params: Array - Parameters passed to the action
  *
  * Return Value:
@@ -18,8 +18,8 @@
 
 params ["_target", "_player", "_params"];
 
-_player call BNAKC_Jetpacks_fnc_hasJetpack and
-[_player, true] call BNAKC_Jetpacks_fnc_getJetpackFuel < 1 and
+(_player call ace_common_fnc_isEngineer or _player getUnitTrait "Engineer") and
+!(_player call BNAKC_Jetpacks_fnc_getFuelCan isEqualTo ["", 0]) and
 _target call BNAKC_Jetpacks_fnc_hasJetpack and
 _target call BNAKC_Jetpacks_fnc_getJetpackFuel > 0 and
 !alive _target;

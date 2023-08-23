@@ -41,6 +41,8 @@ class CfgFunctions
             class refuelFromBody {};
             class canRefuelFromBody {};
             class refuelFromBodyModifier {};
+
+            class getFuelCan {};
         };
 
         class Settings
