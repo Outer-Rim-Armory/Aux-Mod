@@ -14,7 +14,7 @@
  */
 
 
-params ["_unit"];
+params ["_unit", ["_ignoreFull", true]];
 
 private _canClass = "";
 private _fuelLevel = 0;
@@ -22,6 +22,18 @@ private _fuelLevel = 0;
 {
     _x params ["_magazine", "_ammoCount"];
     private _isCan = [(configFile >> "CfgMagazines" >> _magazine), "BNA_KC_Jet_isFuelCan", 0] call BIS_fnc_returnConfigEntry;
+    if (_ignoreFull) then
+    {
+        private _maxFuel =
+        [
+            (configFile >> "CfgMagazines" >> _magazine),
+            "count",
+            _ammoCount
+        ] call BIS_fnc_returnConfigEntry;
+
+        if (_ammoCount == _maxFuel) then { continue };
+    };
+
     if (_isCan isEqualTo 1) exitWith { _canClass = _magazine; _fuelLevel = _ammoCount };
 } forEach magazinesAmmo _unit;
 

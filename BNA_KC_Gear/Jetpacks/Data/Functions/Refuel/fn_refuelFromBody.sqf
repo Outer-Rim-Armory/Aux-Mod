@@ -19,11 +19,25 @@
 #define REFUEL_PER_SECOND 5
 params ["_target", "_player", "_params"];
 
-private _playerFuel = _player call BNAKC_Jetpacks_fnc_getJetpackFuel;
-private _playerMaxFuel = [(configFile >> "CfgVehicles" >> backpack _player), "BNA_KC_Jet_fuel", 100] call BIS_fnc_returnConfigEntry;
+// Get a fuel can and it's fuel level from the unit's inventory
+// Empty cans are CBA_miscItems, non-empty cans are magazines
+[_player, true] call BNAKC_Jetpacks_fnc_getFuelCan params ["_fuelCan", "_fuelCanFuel"];
+if !(_fuelCan isKindOf "CA_Magazine") then
+{
+    // Fuel can is empty, get magazine data
+    // Not actually converted (i.e. remove item and add mag) because magazines with no ammo are not include in `magazines unit`
+    _fuelCan =
+    [
+        (configFile >> "CfgWeapons" >> _fuelCan),
+        "BNA_KC_Jet_fuelCanMag",
+        "BNA_KC_Jetpack_FuelCan_Mag"
+    ] call BIS_fnc_returnConfigEntry;
+};
+
+private _fuelCanMaxFuel = [(configFile >> "CfgMagazines" >> _fuelCan), "count", 400] call BIS_fnc_returnConfigEntry;
 private _targetFuel = _target call BNAKC_Jetpacks_fnc_getJetpackFuel;
 
-private _fuelToRefill = ((_playerFuel + _targetFuel) min _playerMaxFuel) - _playerFuel;
+private _fuelToRefill = round (((_fuelCanFuel + _targetFuel) min _fuelCanMaxFuel) - _fuelCanFuel);
 private _refuelTime = _fuelToRefill / REFUEL_PER_SECOND;
 
 private _refuelHandler =
@@ -41,20 +55,34 @@ private _refuelHandler =
     playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_loop.wss", _player, false, getPosASL _player, 1, 1, 8];
 
     if (_player getVariable ["BNA_KC_Jetpack_isRefuelingFromBody", false] isEqualTo false) exitWith { call _removeSelf; };
-    if ([_player, true] call BNAKC_Jetpacks_fnc_getJetpackFuel == 1) exitWith { call _removeSelf; };
+    if ([_player, true] call BNAKC_Jetpacks_fnc_getFuelCan isEqualTo ["", 0]) exitWith { call _removeSelf; };
     if ([_target, true] call BNAKC_Jetpacks_fnc_getJetpackFuel == 0) exitWith { call _removeSelf; };
 
-    private _playerFuel = _player call BNAKC_Jetpacks_fnc_getJetpackFuel;
+    [_player, true] call BNAKC_Jetpacks_fnc_getFuelCan params ["_fuelCan", "_fuelCanFuel"];
+    if !(_fuelCan isKindOf "CA_Magazine") then
+    {
+        // Fuel can is empty, needs to be converted to magazine
+        _player removeItem _fuelCan;
+        _fuelCan =
+        [
+            (configFile >> "CfgWeapons" >> _fuelCan),
+            "BNA_KC_Jet_fuelCanMag",
+            "BNA_KC_Jetpack_FuelCan_Mag"
+        ] call BIS_fnc_returnConfigEntry;
+
+        _player addMagazine [_fuelCan, 1];
+    };
     private _targetFuel = _target call BNAKC_Jetpacks_fnc_getJetpackFuel;
 
     // Remove up to REFUEL_PER_SECOND fuel units, cap at 0 in case it goes negative
     private _targetNewFuel = (_targetFuel - REFUEL_PER_SECOND) max 0;
-    private _fuelDiff = _targetFuel - _targetNewFuel;
+    private _fuelDiff = round (_targetFuel - _targetNewFuel);
 
-    private _playerNewFuel = _playerFuel + _fuelDiff; // Give difference to player
+    private _fuelCanNewFuel = _fuelCanFuel + _fuelDiff; // Give difference to player
     
-    // Set fuel variables and update display
-    [_player, _playerNewFuel] call BNAKC_Jetpacks_fnc_setJetpackFuel;
+    _player removeMagazine _fuelCan;
+    _player addMagazine [_fuelCan, _fuelCanNewFuel];
+
     backpackContainer _target setVariable ["BNA_KC_Jet_currentFuel", _targetNewFuel]; // Set fuel manually since refuel func updates display locally
 };
 
