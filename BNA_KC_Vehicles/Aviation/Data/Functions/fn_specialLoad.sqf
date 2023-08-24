@@ -1,6 +1,6 @@
 /*
  * Author: DartRuffian
- * Loads the closest object that requires a custom script.
+ * Loads the object saved to the vehicle's 'BNA_KC_SpecialLoadTarget' variable.
  *
  * Arguments:
  * vehicle: Object - The vehicle loading a nearby object.
@@ -16,12 +16,9 @@
 #define SPEC_LOAD_DIST 30
 params ["_vehicle"];
 
-private _objects = nearestObjects [_vehicle, [], SPEC_LOAD_DIST];
+private _vehicleToLoad = _vehicle getVariable ["BNA_KC_SpecialLoadTarget", objNull];
 
-_objects = _objects select
+if !(isNull _vehicleToLoad) then
 {
-	private _objClass = typeOf _x;
-	GET_NUMBER(configFile >> "CfgVehicles" >> _objClass >> "VehicleTransport" >> "Cargo" >> "BNA_KC_SpecialLoad", 0) isEqualTo 1;
+	_vehicle setVehicleCargo _vehicleToLoad;
 };
-
-_vehicle setVehicleCargo (_objects#0);

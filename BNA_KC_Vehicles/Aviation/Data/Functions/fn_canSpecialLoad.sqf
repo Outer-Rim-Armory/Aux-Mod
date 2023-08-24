@@ -36,6 +36,11 @@ _objects = _objects select
 // No nearby objects require special load
 if (count _objects == 0) exitWith { false };
 
-// If the first object can be loaded, return true
-// [true, true] for [willFitIntoCurrentVehicle, willFitIntoEmptyVehicle], willFitIntoEmptyVehicle is mostly for checking if it is already in a cargo space
-if (_vehicle canVehicleCargo (_objects#0) isEqualTo [true, true]) exitWith { true };
+// Get the first object that can be loaded and save it to the vehicle
+{
+	if ((_vehicle canVehicleCargo _x) isEqualTo [true, true]) exitWith
+	{
+		_vehicle setVariable ["BNA_KC_SpecialLoadTarget", _x, true];
+		true
+	};
+} forEach _objects;
