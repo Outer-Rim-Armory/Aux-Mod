@@ -1,11 +1,25 @@
 #include "CfgPatches.hpp"
 
+// Macro for making a placeable version of a helmet
+#define HELMET_HOLDER(CLASS_NAME, DISPLAY_NAME, HELM_NAME, SUBCAT) \
+class CLASS_NAME: BNA_KC_HelmetHolder_P1_CR \
+{ \
+    displayName = DISPLAY_NAME; \
+	editorSubcategory = __EVAL("BNA_KC_SubCat_Helmets_" + SUBCAT); \
+    class TransportItems \
+    { \
+        class HELM_NAME \
+        { \
+            name = HELM_NAME; \
+            count = 1; \
+        }; \
+    }; \
+};
+
 
 class CfgVehicles
 {
     class ls_blueforHeadgear_base;
-    #include "\BNA_KC_Gear\Macros.hpp" // Helmet Holder macro
-
     class BNA_KC_HelmetHolder_P1_CR: ls_blueforHeadgear_base
     {
         // Mod Info
@@ -15,7 +29,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";

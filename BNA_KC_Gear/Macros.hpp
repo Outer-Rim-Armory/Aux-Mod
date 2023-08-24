@@ -30,19 +30,3 @@ the path begins with a "\", but it essentially represents the project root
 
 // Returns text (normally code) in quotes
 #define QUOTE(CODE) #CODE
-
-// Macro for making a placeable version of a helmet
-#define HELMET_HOLDER(CLASS_NAME, DISPLAY_NAME, HELM_NAME, SUBCAT) \
-class CLASS_NAME: BNA_KC_HelmetHolder_P1_CR \
-{ \
-    displayName = DISPLAY_NAME; \
-	editorSubcategory = __EVAL("BNA_KC_SubCat_Helmets_" + SUBCAT); \
-    class TransportItems \
-    { \
-        class HELM_NAME \
-        { \
-            name = HELM_NAME; \
-            count = 1; \
-        }; \
-    }; \
-};
