@@ -35,20 +35,22 @@ _rider setPosASL _position;
 
 _rider setVariable ["BNA_KC_ATRT_isRiding", false];
 
-objNull remoteControl driver _atrt; // Reset control
-player remoteControl _rider;
-
+// Switch camera back to rider
 if (cameraOn != (vehicle _rider)) then
 {
     // Reset camera view to player
     (vehicle _rider) switchCamera cameraView;
 };
 
+objNull remoteControl driver _atrt; // Reset control
+player remoteControl _rider;
+[_rider, "blockThrow", "ridingATRT", false] call ace_common_fnc_statusEffect_set;
+
 private _collision = _atrt getVariable ["BNA_KC_ATRT_CollisionObj", objNull]; // Remove collision
 deleteVehicle _collision;
 
 _atrt setVariable ["BNA_KC_ATRT_Rider", nil, true]; // Reset rider
-// _atrt allowDamage true;
+_rider allowDamage true;
 inGameUISetEventHandler ["Action", ""];
 
 [

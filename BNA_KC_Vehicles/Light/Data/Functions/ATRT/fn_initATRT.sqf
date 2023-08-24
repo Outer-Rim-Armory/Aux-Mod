@@ -46,13 +46,22 @@ _atrt addAction
         waitUntil
         {
             sleep 2;
-            private _expression = !(alive _rider or lifeState _rider == "INCAPACITATED" or _rider getVariable ["ACE_isUnconscious", false]);
+            private _expression =
+            (
+                // Rider Checks
+                !alive _rider or
+                lifeState _rider == "INCAPACITATED" or
+                _rider getVariable ["ACE_isUnconscious", false] or
+
+                // AT-RT checks
+                _atrt getVariable ["BNA_KC_Health", 100] <= 0
+            );
             // See https://community.bistudio.com/wiki/waitUntil#Problems
-            !isNil "_expression" and { _expression or _atrt getVariable ["BNA_KC_Health", 100] <= 0 };
+            !isNil "_expression" and { _expression };
         };
         
         _atrt call BNAKC_fnc_dismountATRT;
-        _atrt setDamage 1;
+        if (_atrt getVariable ["BNA_KC_Health", 100] <= 0) then { _atrt setDamage 1; };
     },
     [],
     1.5,

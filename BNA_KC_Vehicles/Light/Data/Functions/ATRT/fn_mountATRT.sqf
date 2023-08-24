@@ -22,7 +22,7 @@ if
 ) exitWith {};
 
 _atrt setVariable ["BNA_KC_ATRT_Rider", _rider, true];
-// _atrt allowDamage false; // Player could potentially get stuck if the AT-RT "dies" while riding it
+_rider allowDamage false; // Player could potentially get stuck if the AT-RT "dies" while riding it
 
 _rider attachTo [_atrt, [0, 0, 0], "seat"]; // Attach the user to the ATRT
 [_rider, "ChopperLight_C_LIn_H"] remoteExec ["switchMove", 0];
@@ -32,17 +32,18 @@ _collision = "3AS_ATRT_Collision" createVehicle (position _atrt); // Object to s
 _collision attachTo [_atrt, [0.0, 0.3, -2.3], "seat"];
 _atrt setVariable ["BNA_KC_ATRT_CollisionObj", _collision, true];
 
-// Give control of the unit to the player
-objNull remoteControl driver _rider;
-player remoteControl _atrt;
-
-// We have to switch the camera to the ATRT now
+// Switch camera to AT-RT
 if (cameraOn != (vehicle _atrt)) then
 {
     (vehicle _atrt) switchcamera cameraview;
     _atrt enableStamina false;
     _atrt forceWalk false;
 };
+
+// Give control of the unit to the player
+objNull remoteControl driver _rider;
+player remoteControl _atrt;
+[_rider, "blockThrow", "ridingATRT", true] call ace_common_fnc_statusEffect_set;
 
 // Makes the "Release UAV Controls" action not do anything to avoid issues
 // TODO: Make it so that the option does not appear at all
