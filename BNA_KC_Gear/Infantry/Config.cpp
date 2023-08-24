@@ -319,7 +319,7 @@ class CfgWeapons
     };
     class BNA_KC_Vest_Medic_Senior_v2: BNA_KC_Vest_Medic_v2
     {
-        displayName = "[KC] INF Medic Vest 02 (Medic, v2)";
+        displayName = "[KC] INF Medic Vest 02 (Senior, v2)";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic_v2.paa", // Tablet
