@@ -40,8 +40,6 @@ class CfgFunctions
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
 			class FixInfiniteLoading{};
 			class getConfigProperty {};
-            class miscOptions{};
-			class miscKeybinds{};
 		};
 
 		class Fortifications
@@ -65,6 +63,18 @@ class CfgFunctions
             class areaSlowHeal {};
             class sortUnitsByInjuries {};
             class isFullyHealed {};
+        };
+
+        class Settings
+        {
+            class miscOptions
+            {
+                file = "BNA_KC_Scripts\Data\Functions\Settings\fn_miscOptions.sqf";
+            };
+            class miscKeybinds
+            {
+                file = "BNA_KC_Scripts\Data\Functions\Settings\fn_miscKeybinds.sqf";
+            };
         };
 	};
 };
