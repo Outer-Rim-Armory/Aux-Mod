@@ -229,7 +229,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC] INF Vest";
+        displayName = "[KC] INF Vest 01 (Trooper)";
         
         class ItemInfo: ItemInfo
         {
@@ -268,7 +268,7 @@ class CfgWeapons
 
     class BNA_KC_Vest_Medic: BNA_KC_Vest_Basic
     {
-        displayName = "[KC] INF Medic Vest";
+        displayName = "[KC] INF Medic Vest 01 (Medic)";
 
         model = "SWLB_clones\SWLB_clone_airborne_armor.p3d";
         hiddenSelections[] = { "camo1", "camo2", "ammo", "pauldron" };
@@ -290,7 +290,7 @@ class CfgWeapons
     };
     class BNA_KC_Vest_Medic_Senior: BNA_KC_Vest_Medic
     {
-        displayName = "[KC] INF Medic Senior Vest";
+        displayName = "[KC] INF Medic Vest 02 (Senior)";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa", // Heavy Bag / Strap
@@ -302,7 +302,7 @@ class CfgWeapons
 
     class BNA_KC_Vest_Medic_v2: BNA_KC_Vest_Medic
     {
-        displayName = "[KC] INF Medic Vest (v2)";
+        displayName = "[KC] INF Medic Vest 01 (Medic, v2)";
 
         model = "SWLB_CEE\data\SWLB_CEE_Airborne_CFR.p3d";
         hiddenSelectionsTextures[] =
@@ -319,7 +319,7 @@ class CfgWeapons
     };
     class BNA_KC_Vest_Medic_Senior_v2: BNA_KC_Vest_Medic_v2
     {
-        displayName = "[KC] INF Medic Senior Vest (v2)";
+        displayName = "[KC] INF Medic Vest 02 (Medic, v2)";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic_v2.paa", // Tablet
@@ -331,7 +331,7 @@ class CfgWeapons
 
     class BNA_KC_Vest_Medic_Platoon: BNA_KC_Vest_Medic
     {
-        displayName = "[KC] INF 06+ Medic Vest";
+        displayName = "[KC] INF Medic Vest 06+ (Platoon)";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Medic.paa",         // Heavy Bag / Strap
