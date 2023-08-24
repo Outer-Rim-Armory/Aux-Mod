@@ -1,37 +1,43 @@
 params ["_eventHandlerType"];
 
-#define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
-#define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
-#define GET_STRING(config, _defaultValue) (if (isText (config)) then {getText (config)} else {_defaultValue})
-
 [_eventHandlerType,
 {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
-    // Early exit to save time
-    if (_ammo find "BNA_KC" isEqualTo -1 ) exitWith {}; // Exit if not a KC weapon
+    if (_ammo find "BNA_KC" isEqualTo -1 ) exitWith {};
 
 
     [_unit, _ammo, _magazine, _projectile] spawn
     {
         params ["_unit", "_ammo", "_magazine", "_projectile"];
         
-        DEV_LOG(_ammo);
-        DEV_LOG(_magazine);
+        _ammo call BNAKC_fnc_devLog;
+        _magazine call BNAKC_fnc_devLog;
 
-        private _delay = GET_NUMBER(configFile >> "CfgAmmo" >> _ammo >> "explosionTime", 0.1) - 0.1;
+        private _delay =
+        [
+            (configFile >> "CfgAmmo" >> _ammo),
+            "explosionTime",
+            0.1
+        ] call BIS_fnc_returnConfigEntry;
+        _delay = _delay - 0.1;
 
-        DEV_LOG(_delay);
+        _delay call BNAKC_fnc_devLog;
         sleep _delay;
         
         private _position = getPosATL _projectile;
         if (BNA_KC_DevMode) then
         {
-            systemChat str _position;
+            _position call BNAKC_fnc_devLog;
             createVehicle ["VR_3DSelector_01_default_F", _position, [], 0, "CAN_COLLIDE"];
         };
 
-        private _grenadeType = GET_STRING(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeType", "");
-        DEV_LOG(_grenadeType);
+        private _grenadeType =
+        [
+            (configFile >> "CfgMagazines" >> _magazine),
+            "BNA_KC_GrenadeType",
+            ""
+        ] call BIS_fnc_returnConfigEntry;
+        _grenadeType call BNAKC_fnc_devLog;
 
         switch (_grenadeType) do
         {
@@ -39,12 +45,27 @@ params ["_eventHandlerType"];
             {
                 // Play Sound Effect
                 // Sound is scripted so that the Clone Wars sound can be enabled/disabled
-                DEV_LOG("Is EMP. Playing sound");
+                "Is EMP. Playing sound" call BNAKC_fnc_devLog;
                 [ATLToASL _position] remoteExec ["BNAKC_fnc_playDroidPopperSound", [0, -2] select isDedicated];
                 
-                private _radiusDroid   = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeEMP_Radius_Droid", 3);
-                private _radiusDeka	= GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeEMP_Radius_Deka", 5);
-                private _radiusVehicle = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeEMP_Radius_Vehicle", 5);
+                private _radiusDroid =
+                [
+                    (configFile >> "CfgMagazines" >> _magazine),
+                    "BNA_KC_GrenadeEMP_Radius_Droid",
+                    3
+                ] call BIS_fnc_returnConfigEntry;
+                private _radiusDeka =
+                [
+                    (configFile >> "CfgMagazines" >> _magazine),
+                    "BNA_KC_GrenadeEMP_Radius_Deka",
+                    5
+                ] call BIS_fnc_returnConfigEntry;
+                private _radiusVehicle =
+                [
+                    (configFile >> "CfgMagazines" >> _magazine),
+                    "BNA_KC_GrenadeEMP_Radius_Vehicle",
+                    5
+                ] call BIS_fnc_returnConfigEntry;
 
                 // Units & Similar Objects
                 // Get all nearby units
@@ -71,9 +92,19 @@ params ["_eventHandlerType"];
 
             case "BACTA":
             {
-                DEV_LOG("Is bacta grenade");
-                private _healRadius   = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeBacta_Radius", 5);
-                private _healDuration = GET_NUMBER(configFile >> "CfgMagazines" >> _magazine >> "BNA_KC_GrenadeBacta_Duration", 5);
+                "Is Bacta" call BNAKC_fnc_devLog;
+                private _healRadius =
+                [
+                    (configFile >> "CfgMagazines" >> _magazine),
+                    "BNA_KC_GrenadeBacta_Radius",
+                    5
+                ] call BIS_fnc_returnConfigEntry;
+                private _healDuration =
+                [
+                    (configFile >> "CfgMagazines" >> _magazine),
+                    "BNA_KC_GrenadeBacta_Duration",
+                    5
+                ] call BIS_fnc_returnConfigEntry;
 
                 // If the list of handlers does not exist, create an empty array
                 if (isNil "BNA_KC_Weap_SlowHealHandles") then
@@ -106,12 +137,10 @@ params ["_eventHandlerType"];
 
                 // Delete smoke grenade, remove all handlers
                 deleteVehicle _projectile;
-                DEV_LOG("Removing remaining handlers");
+                "Removing remaining handlers" call BNAKC_fnc_devLog;
                 {
-                    // if (BNA_KC_DevMode) then { systemChat format ["Removing handler %1", _x]; };
                     [_x] call CBA_fnc_removePerFrameHandler;
                     BNA_KC_Weap_SlowHealHandles deleteAt (BNA_KC_Weap_SlowHealHandles find _x); // remove value from list
-                    // DEV_LOG(BNA_KC_Weap_SlowHealHandles);
                 } forEach BNA_KC_Weap_SlowHealHandles;
             };
         };
