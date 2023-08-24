@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, [unit1, unit2]] call BNAKC_fnc_KillDroids;
+ * [player, [unit1, unit2]] call BNAKC_fnc_killDroids;
  */
 
 params ["_killer", "_units"];

@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [[deka1, deka2], [shield]] call BNAKC_fnc_DisableDekaShields;
+ * [[deka1, deka2], [shield]] call BNAKC_fnc_disableDekaShields;
  */
 
 params ["_dekas", "_dekaShields"];

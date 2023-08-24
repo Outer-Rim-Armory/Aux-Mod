@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [[vic1, vic2], 5] call BNAKC_fnc_TempDisableVehicles;
+ * [[vic1, vic2], 5] call BNAKC_fnc_tempDisableVehicles;
  */
 
 params ["_vehicles", "_time"];

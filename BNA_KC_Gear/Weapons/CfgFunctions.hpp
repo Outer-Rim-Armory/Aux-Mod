@@ -5,16 +5,16 @@ class CfgFunctions
         class Weapons
         {
             file = "BNA_KC_Gear\Weapons\Data\Functions";
-            class SpecialAmmo {};
+            class specialAmmo {};
         };
 
         class DroidPopper
         {
             file = "BNA_KC_Gear\Weapons\Data\Functions\DroidPopper";
-            class PlayDroidPopperSound {};
-            class KillDroids {};
-            class TempDisableVehicles {};
-            class DisableDekaShields {};
+            class playDroidPopperSound {};
+            class killDroids {};
+            class tempDisableVehicles {};
+            class disableDekaShields {};
         };
 
         class Settings

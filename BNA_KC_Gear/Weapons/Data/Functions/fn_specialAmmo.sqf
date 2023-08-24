@@ -54,18 +54,18 @@ params ["_eventHandlerType"];
                 private _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka]; // 3AS's Droidkas require extra work
 
                 // Remove or kill objects
-                [_unit, _nearbyUnits] call BNAKC_fnc_KillDroids;
+                [_unit, _nearbyUnits] call BNAKC_fnc_killDroids;
                 // Filters out non-b1 droid units,
                 // Kills them (gives kill credit to _unit)
                 // Plays JLTS droid death sound
 
-                [_tasDekas, _shieldObjects] call BNAKC_fnc_DisableDekaShields;
+                [_tasDekas, _shieldObjects] call BNAKC_fnc_disableDekaShields;
 
                 // Temporarily disable vehicles
                 if (BNA_KC_DroidPopper_DisableTime > 0 && _radiusVehicle > 0) then
                 {
                     private _tanks = nearestObjects [_position, [], _radiusVehicle] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
-                    [_tanks, BNA_KC_DroidPopper_DisableTime] call BNAKC_fnc_TempDisableVehicles;
+                    [_tanks, BNA_KC_DroidPopper_DisableTime] call BNAKC_fnc_tempDisableVehicles;
                 };
             };
 

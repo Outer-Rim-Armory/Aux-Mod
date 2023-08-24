@@ -32,11 +32,11 @@ private _nearbyUnits = _position nearEntities ["CAManBase", _radiusDroid];
 private _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];
 private _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka];
 
-[currentPilot _vehicle, _nearbyUnits] call BNAKC_fnc_KillDroids; // Kills droids and plays EMP death sound
-[_tasDekas, _shieldObjects] call BNAKC_fnc_DisableDekaShields;   // Disables/deletes droideka shields
+[currentPilot _vehicle, _nearbyUnits] call BNAKC_fnc_killDroids; // Kills droids and plays EMP death sound
+[_tasDekas, _shieldObjects] call BNAKC_fnc_disableDekaShields;   // Disables/deletes droideka shields
 
 if (_radiusVehicle > 0) then
 {
     private _tanks = nearestObjects [_position, [], _radiusVehicle] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
-    [_tanks, BNA_KC_DroidPopper_DisableTime] spawn BNAKC_fnc_TempDisableVehicles;
+    [_tanks, BNA_KC_DroidPopper_DisableTime] spawn BNAKC_fnc_tempDisableVehicles;
 };
