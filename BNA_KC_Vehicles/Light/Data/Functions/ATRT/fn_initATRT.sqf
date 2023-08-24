@@ -24,7 +24,7 @@ private _atrtDamageHandler = _atrt addEventHandler
     "HandleDamage",
     {
         params ["_atrt", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
-        _atrtHealth = _atrt getVariable ["BNA_KC_Health", 100];
+        _atrtHealth = _atrt getVariable ["BNA_KC_Health", 50];
         _atrtHealth = _atrtHealth - _damage;
         _atrt setVariable ["BNA_KC_Health", _atrtHealth, true];
         
@@ -54,14 +54,14 @@ _atrt addAction
                 _rider getVariable ["ACE_isUnconscious", false] or
 
                 // AT-RT checks
-                _atrt getVariable ["BNA_KC_Health", 100] <= 0
+                _atrt getVariable ["BNA_KC_Health", 50] <= 0
             );
             // See https://community.bistudio.com/wiki/waitUntil#Problems
             !isNil "_expression" and { _expression };
         };
         
         _atrt call BNAKC_fnc_dismountATRT;
-        if (_atrt getVariable ["BNA_KC_Health", 100] <= 0) then { _atrt setDamage 1; };
+        if (_atrt getVariable ["BNA_KC_Health", 50] <= 0) then { _atrt setDamage 1; };
     },
     [],
     1.5,
