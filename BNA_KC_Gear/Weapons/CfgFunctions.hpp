@@ -16,12 +16,6 @@ class CfgFunctions
             class TempDisableVehicles {};
             class DisableDekaShields {};
         };
-        
-        class Bacta
-        {
-            file = "BNA_KC_Gear\Weapons\Data\Functions\Bacta";
-            class slowHeal {};
-        };
 
         class Settings
         {

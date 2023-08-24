@@ -23,6 +23,12 @@ class CfgFunctions
 {
 	class BNAKC
 	{
+        class Developer
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Developer";
+            class devLog {};
+        };
+
 		class Helmets
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Helmets";
@@ -33,6 +39,7 @@ class CfgFunctions
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
 			class FixInfiniteLoading{};
+			class getConfigProperty {};
             class miscOptions{};
 			class miscKeybinds{};
 		};
@@ -49,6 +56,15 @@ class CfgFunctions
             file = "BNA_KC_Scripts\Data\Functions\Map";
 			class CreateMarkOnSelf{};
             class CreateMarkAction{};
+        };
+
+        class Medical
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Medical";
+            class slowHeal {};
+            class areaSlowHeal {};
+            class sortUnitsByInjuries {};
+            class isFullyHealed {};
         };
 	};
 };

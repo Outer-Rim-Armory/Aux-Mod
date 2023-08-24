@@ -15,14 +15,14 @@
 
 
 #define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
-params ["_unit"];
+params ["_unit", "_delay"];
 
 [
     {
         _this params ["_unit", "_handlerID"];
         _unit = _unit select 0; // _unit gets passed as [_unit]
 
-        if (BNA_KC_DevMode) then { systemChat format ["Handler %1 is healing unit %2", _handlerID, _unit]; };
+        // if (BNA_KC_DevMode) then { systemChat format ["Handler %1 is healing unit %2", _handlerID, _unit]; };
 
         if !(alive _unit) then
         {
@@ -60,9 +60,10 @@ params ["_unit"];
 
             if (_woundsArray isEqualTo [] and (_painLevel == 0) and (_bloodLevel == 6.0)) then
             {
-                // If unit has no other remaining wounds, heal all broken limbs and remove handler
+                // If unit has no other remaining wounds, heal all broken limbs, wake up unit, and remove handler
                 _unit setVariable ["ace_medical_fractures", [0, 0, 0, 0, 0, 0], true];
-                if (BNA_KC_DevMode) then { systemChat format ["Finished healing %1, removing handler %2", _unit, _handlerID]; };
+                [_unit, false, 0, true] call ace_medical_fnc_setUnconscious;
+                // if (BNA_KC_DevMode) then { systemChat format ["Finished healing %1, removing handler %2", _unit, _handlerID]; };
                 [_handlerID] call CBA_fnc_removePerFrameHandler;
                 BNA_KC_Weap_SlowHealHandles deleteAt (BNA_KC_Weap_SlowHealHandles find _handlerID); // Remove value from list
             };
@@ -72,6 +73,6 @@ params ["_unit"];
         [_unit] call ace_medical_engine_fnc_updateDamageEffects;
         [_unit] call ace_medical_status_fnc_updateWoundBloodLoss;
     },
-    BNA_KC_Bacta_HealRate, // Addon option
+    _delay,
     [_unit]
 ] call CBA_fnc_addPerFrameHandler;
