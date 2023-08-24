@@ -16,6 +16,8 @@ class CfgPatches
 		{
 			"Rancor_uniform"
 		};
+
+        skipWhenMissingDependencies = 1; // for ARMA 2.14, skips loading if missing WBK zombies (or any dependency)
 	};
 };
 
