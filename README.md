@@ -77,7 +77,9 @@ Keeli Company does what it can to meet the needs of players because everyone des
 This system is packed together with the [Keeli Company Aux Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2791896289) but is also included as a [separate mod download](https://steamcommunity.com/sharedfiles/filedetails/?id=3005504621) for other groups to use freely. You can find the original mod [created by Jenna here](https://github.com/DartRuffian/A3-ChatWheel).
 
 <div align="center">
-    [![](https://markdown-videos-api.jorgenkh.no/youtube/fxOIdcdaZqA)](https://youtu.be/fxOIdcdaZqA)
+    <a href="https://youtu.be/fxOIdcdaZqA">
+        <img src="https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FfxOIdcdaZqA" alt="Chat Wheel Redux" title="Chat Wheel Redux" width="640" height="360"/>
+    </a>
 </div>
 
 
@@ -88,7 +90,9 @@ The Keeli Company aux implements weapons and equipment that haven't gotten as mu
 EMP Greandes or "Droid Poppers" as republic troopers often called them, are small grenades that release a large burst of energy to disrupt electrical systems. This burst can completely disable simple B1 Battledroids, but only temporarily disables much more resiliant foes such as Droidekas or AATs. The shields of droidekas absorb most of the energy, overloading the shield but leaving the droideka itself perfectly fine.
 
 <div align="center">
-    [![](https://markdown-videos-api.jorgenkh.no/youtube/XNol7PP5ZMs)](https://youtu.be/XNol7PP5ZMs)
+    <a href="https://youtu.be/XNol7PP5ZMs">
+        <img src="https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FXNol7PP5ZMs" alt="Droid Poppers" title="Droid Poppers"/>
+    </a>
 </div>
 
 ### Deployable Medical Droids
@@ -96,5 +100,7 @@ A poweful tool meant for assisting Clone Medics on the front lines. The DX-7 med
 The DX-7 medical droid also instructs standard Clone Troopers how to treat their own injuries and the injuries of those around them. This lets Troopers handle the less critical wounds by stitching themselves and those around them.
 
 <div align="center">
-    [![](https://markdown-videos-api.jorgenkh.no/youtube/Dqyx08xNIIA)](https://youtu.be/Dqyx08xNIIA)
+    <a href="https://youtu.be/Dqyx08xNIIA">
+        <img src="https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FDqyx08xNIIA" alt="DX-7 Medical Droid" title="DX-7 Medical Droid"/>
+    </a>
 </div>
