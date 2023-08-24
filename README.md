@@ -96,11 +96,11 @@ EMP Greandes or "Droid Poppers" as republic troopers often called them, are smal
 </div>
 
 ### Deployable Medical Droids
-A poweful tool meant for assisting Clone Medics on the front lines. The DX-7 medical droid helps deal with mass casuality scenarios by administiring medical aid to lighter injuries, letting medics focus on the more pressing patients.
-The DX-7 medical droid also instructs standard Clone Troopers how to treat their own injuries and the injuries of those around them. This lets Troopers handle the less critical wounds by stitching themselves and those around them.
+A poweful tool meant for assisting Clone Medics on the front lines. The FX-7 medical droid helps deal with mass casuality scenarios by administiring medical aid to lighter injuries, letting medics focus on the more pressing patients.
+The FX-7 medical droid also instructs standard Clone Troopers how to treat their own injuries and the injuries of those around them. This lets Troopers handle the less critical wounds by stitching themselves and those around them.
 
 <div align="center">
     <a href="https://youtu.be/Dqyx08xNIIA">
-        <img src="https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FDqyx08xNIIA" alt="DX-7 Medical Droid" title="DX-7 Medical Droid"/>
+        <img src=".github\fx7_medical_droid_thumbnail.png" alt="FX-7 Medical Droid" title="FX-7 Medical Droid"/>
     </a>
 </div>
