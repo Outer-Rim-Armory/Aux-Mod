@@ -95,13 +95,13 @@ private _refuelHandler =
         // On Success
         _this#0 params ["_player", "_args"];
         _player setVariable ["BNA_KC_Jetpack_isRefuelingFromBody", nil];
-        cutText ["Finished refueling from jetpack", "PLAIN DOWN"];
+        cutText ["Finished collecting fuel", "PLAIN DOWN"];
     },
     {
         // On Failure
         _this#0 params ["_player", "_args"];
         _player setVariable ["BNA_KC_Jetpack_isRefuelingFromBody", nil];
-        cutText ["Cancelled refueling", "PLAIN DOWN"];
+        cutText ["Cancelled", "PLAIN DOWN"];
     },
     "Refueling...",
     {
