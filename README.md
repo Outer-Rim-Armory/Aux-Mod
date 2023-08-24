@@ -78,7 +78,7 @@ This system is packed together with the [Keeli Company Aux Mod](https://steamcom
 
 <div align="center">
     <a href="https://youtu.be/fxOIdcdaZqA">
-        <img src="https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FfxOIdcdaZqA" alt="Chat Wheel Redux" title="Chat Wheel Redux" width="640" height="360"/>
+        <img src=".github\chat_wheel_redux_thumbnail.png" alt="Chat Wheel Redux" title="Chat Wheel Redux" width="480"/>
     </a>
 </div>
 
@@ -91,7 +91,7 @@ EMP Greandes or "Droid Poppers" as republic troopers often called them, are smal
 
 <div align="center">
     <a href="https://youtu.be/XNol7PP5ZMs">
-        <img src="https://markdown-videos-api.jorgenkh.no/url?url=https%3A%2F%2Fyoutu.be%2FXNol7PP5ZMs" alt="Droid Poppers" title="Droid Poppers"/>
+        <img src=".github\droid_poppers_thumbnail.png" alt="Droid Poppers" title="Droid Poppers" width="480"/>
     </a>
 </div>
 
@@ -101,6 +101,6 @@ The FX-7 medical droid also instructs standard Clone Troopers how to treat their
 
 <div align="center">
     <a href="https://youtu.be/Dqyx08xNIIA">
-        <img src=".github\fx7_medical_droid_thumbnail.png" alt="FX-7 Medical Droid" title="FX-7 Medical Droid"/>
+        <img src=".github\fx7_medical_droid_thumbnail.png" alt="FX-7 Medical Droid" title="FX-7 Medical Droid" width="480"/>
     </a>
 </div>
