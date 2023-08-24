@@ -16,7 +16,7 @@
 params ["_object"];
 
 // Wait until mission start, prevents sounds playing in Eden editor
-waitUntil { sleep 5; time > 0 and !is3DEN; };
+waitUntil { sleep 3; CBA_missionTime > 0; };
 
 // Early exit if object does not have a radius set
 if !(isNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Medical_areaHealRadius")) exitWith

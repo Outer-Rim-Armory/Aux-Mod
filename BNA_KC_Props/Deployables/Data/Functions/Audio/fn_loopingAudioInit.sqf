@@ -17,7 +17,7 @@
 params ["_object"];
 
 // Wait until mission start, prevents sounds playing in Eden editor
-waitUntil { sleep 5; time > 0 and !is3DEN; };
+waitUntil { sleep 3; CBA_missionTime > 0; };
 
 // Start audio (if object should play sound)
 if (isText (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Object_soundLoop")) then
