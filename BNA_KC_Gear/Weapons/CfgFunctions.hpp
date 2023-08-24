@@ -30,9 +30,9 @@ class CfgFunctions
 
 class Extended_PreInit_EventHandlers
 {
-    class BNA_KC_Weap_Settings
+    class BNA_KC_Weap_OptionsPreInit
     {
-        init = "call BNAKC_fnc_weapSettings;";
+        init = "call BNAKC_fnc_weapOptions;";
     };
 };
 
@@ -40,6 +40,6 @@ class Extended_PostInit_EventHandlers
 {
     class BNA_KC_Scripts_SpecialAmmo
     {
-        init = "['ace_firedPlayer'] call BNAKC_fnc_SpecialAmmo;";
+        init = "['ace_firedPlayer'] call BNAKC_fnc_specialAmmo;";
     };
 };
