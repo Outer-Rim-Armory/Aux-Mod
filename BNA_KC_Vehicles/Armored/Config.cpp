@@ -594,16 +594,17 @@ class CfgVehicles
     
         class UserActions
         {
-            class activateEMP
+            class ActivateEMP
             {
                 displayName = "<t font='RobotoCondensedBold'>Activate EMP</t>";
                 displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\iconLightning_ca.paa'>";
+                
                 position = "pilotview";
-                radius = 100;
-                priority = 100;
-                hideOnUse = 1;
+                radius = 30;
+                onlyForPlayer = 0;
 
-                onlyForPlayer = false;
+                hideOnUse = 1;
+                priority = 5;
 
                 condition = QUOTE(this call BNAKC_fnc_canUseEMP;);
                 statement = QUOTE(this call BNAKC_fnc_activateEMP;);
@@ -756,16 +757,16 @@ class CfgVehicles
             {
                 displayName = "<t font='RobotoCondensedBold' color='#ffffff'>Play Alarm</t>";
                 displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
+                
                 position = "pilotview";
-                radius = 100;
-                priority = 100;
-                hideOnUse = 0;
+                radius = 30;
+                onlyForPlayer = 0;
 
-                onlyForPlayer = false;
+                hideOnUse = 1;
+                priority = 5;
 
-                condition = "ace_player == currentPilot this;";
-                // statement = "_sound = floor (random 3); playSound3D [format['BNA_KC_Vehicles\VehicleSounds\Data\Audio\Juggernaut\horn_%1%2', _sound, '.ogg'], this, false, getPosASL this, 5, 1, 50];";
-                statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 100, 1, 100];";
+                condition = QUOTE(ace_player == currentPilot this;);
+                statement = QUOTE(playSound3D ["BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg", this, false, getPosASL this, 5, 1, 100];);
             };
         };
 
