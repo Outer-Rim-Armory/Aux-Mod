@@ -20,8 +20,6 @@ class CfgPatches
             "JLTS_weapons_DC17SA",
                 // DC-17
                 // Weapon Flashlights
-            "OPTRE_Weapons_GL",
-                // OPTRE flare launcher pistol
             "WBK_PhoenixTreal_FlamethrowerMOD",
                 // Flamethrower System
             "M2",
