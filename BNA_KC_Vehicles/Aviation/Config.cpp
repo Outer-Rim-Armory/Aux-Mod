@@ -294,11 +294,13 @@ class CfgVehicles
         {
             class SpecialLoadVehicle
             {
-                // Special action used for vehicles that are not fully compatible with ViV (vehicle-in-vehicle)
-                // Notably used for 3AS's AT-TE
                 displayName = "Load Vehicle (Custom)";
                 displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
+                
+                position = "pilotview";
                 radius = 30;
+                onlyForPlayer = 0;
+
                 hideOnUse = 1;
                 priority = 5;
 
