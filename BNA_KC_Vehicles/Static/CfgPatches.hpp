@@ -22,6 +22,7 @@ class CfgPatches
         };
         units[] =
 		{
+            "BNA_KC_Mortar_Base",
 			"BNA_KC_Deployable_M190"
 		};
         weapons[] =

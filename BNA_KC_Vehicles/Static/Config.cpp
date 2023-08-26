@@ -344,19 +344,18 @@ class CfgVehicles
         };
         class UserActions;
     };
-    class BNA_KC_Deployable_M190: B_Mortar_01_F
+    class BNA_KC_Mortar_Base: B_Mortar_01_F
     {
         // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 2;
-        scopeCurator = 2;
+        scope = 1;
+        scopeCurator = 0;
 
-        displayName = "[KC] Model 190 Mortar System";
         crew = "BNA_KC_Unit_Phase2_CT";
-        
+
         // ACE
         ace_cargo_noRename = 1;
         ace_dragging_canDrag = 1;
@@ -364,19 +363,14 @@ class CfgVehicles
         ace_dragging_canCarry = 1;
         ace_dragging_carryPosition[] = {0, 1.2, 0};
 
-        // Model and Textures
         model = "3AS\3as_static\Mortar\model\republicmortar.p3d";
         hiddenSelections[] = {"Camo_1","Camo_2"};
-        hiddenSelectionsTextures[] =
-        {
-            "\3as\3as_static\Mortar\data\base.001_co.paa",
-            "\3as\3as_static\Mortar\data\tube.001_co.paa"
-        };
         hiddenSelectionsMaterials[] =
         {
             "\3as\3as_static\Mortar\data\base.rvmat",
             "\3as\3as_static\Mortar\data\tube.rvmat"
         };
+
         editorPreview = "\3as\3as_static\images\3AS_Republic_Mortar.jpg";
         icon = "3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
 
@@ -389,14 +383,8 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                magazines[] =
-                {
-                    "BNA_KC_Mag_3Rnd_82mm_HE",
-                    "BNA_KC_Mag_3Rnd_82mm_SmokeWhite",
-                    "BNA_KC_Mag_3Rnd_82mm_SmokeBlue",
-                    "BNA_KC_Mag_3Rnd_82mm_SmokeRed"
-                };
-                weapons[] = {"BNA_KC_Deployable_M190_Turret"};
+                magazines[] = { "" };
+                weapons[] = { "" };
 
                 // Maximum and minimum angles for mortar turret 
                 maxElev = 25.74;
@@ -404,20 +392,20 @@ class CfgVehicles
 
                 minElev = -30;
                 minOutElev = -4;
-            }
+            };
         };
 
         class ACE_CSW
         {
             enabled = 1;
-            disassembleTo = "BNA_KC_Deployable_M190_Carry";
+            disassembleTo = "";
 
             ammoLoadTime = 5;
             ammoUnloadTime = 5;
             desiredAmmo = 3;
             
             magazineLocation = "_target selectionPosition 'usti hlavne'";
-            proxyWeapon = "BNA_KC_Deployable_M190_ProxyWeapon";
+            proxyWeapon = "";
         };
         class assembleInfo {}; // Removes base game disassemble option
 
@@ -470,6 +458,37 @@ class CfgVehicles
                 "A3\Static_F_Gamma\data\StaticTurret_02_damage.rvmat",
                 "A3\Static_F_Gamma\data\StaticTurret_02_destruct.rvmat"
             };
+        };
+    };
+    
+    class BNA_KC_Deployable_M190: BNA_KC_Mortar_Base
+    {
+        displayName = "[KC] Model 190 Mortar System";
+        hiddenSelectionsTextures[] =
+        {
+            "\3as\3as_static\Mortar\data\base.001_co.paa",
+            "\3as\3as_static\Mortar\data\tube.001_co.paa"
+        };
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                magazines[] =
+                {
+                    "BNA_KC_Mag_3Rnd_82mm_HE",
+                    "BNA_KC_Mag_3Rnd_82mm_SmokeWhite",
+                    "BNA_KC_Mag_3Rnd_82mm_SmokeBlue",
+                    "BNA_KC_Mag_3Rnd_82mm_SmokeRed"
+                };
+                weapons[] = { "BNA_KC_Deployable_M190_Turret" };
+            };
+        };
+
+        class ACE_CSW: ACE_CSW
+        {
+            disassembleTo = "BNA_KC_Deployable_M190_Carry";
+            proxyWeapon = "BNA_KC_Deployable_M190_ProxyWeapon";
         };
     };
 };
