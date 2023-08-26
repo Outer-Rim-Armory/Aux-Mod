@@ -765,8 +765,8 @@ class CfgVehicles
                 hideOnUse = 1;
                 priority = 5;
 
-                condition = QUOTE(ace_player == currentPilot this;);
-                statement = QUOTE(playSound3D ["BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg", this, false, getPosASL this, 5, 1, 100];);
+                condition = "ace_player == currentPilot this;";
+                statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 5, 1, 100];";
             };
         };
 

@@ -210,7 +210,7 @@ class CfgVehicles
         displayName = "[KC] LAAT/i MK1";
     };
 
-    class BNA_KC_LAATi_MK2: 3as_LABNA_KC_LAATi_BaseAT_Mk2
+    class BNA_KC_LAATi_MK2: BNA_KC_LAATi_Base
     {
         // Scope
         scope = 2;
