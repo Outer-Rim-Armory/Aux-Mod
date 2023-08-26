@@ -70,6 +70,7 @@ class CfgPatches
             // Phase 2 Helmets
             "BNA_KC_Helmet_Phase2_Axel",
             "BNA_KC_Helmet_Phase2_Bob",
+            "BNA_KC_Helmet_Phase2_Bob_Kyber",
             "BNA_KC_Helmet_Phase2_Burnt",
             "BNA_KC_Helmet_Phase2_Burnt_Bacta",
             "BNA_KC_Helmet_Phase2_Dexus",
