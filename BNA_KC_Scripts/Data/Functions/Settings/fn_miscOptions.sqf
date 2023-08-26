@@ -53,3 +53,11 @@
     true,
     1 // isGlobal
 ] call CBA_fnc_addSetting;
+
+[
+    "BNA_KC_Misc_UserActionACECSW",
+    "CHECKBOX",
+    ["ACE CSW - Scroll Wheel Action", "Creates a scroll wheel action for deploying crew served weapons."],
+    ["Keeli Company Aux Mod", "Miscellaneous"],
+    false
+] call CBA_fnc_addSetting;

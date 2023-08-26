@@ -299,6 +299,33 @@ class ACE_CSW_Groups
 
 class CfgVehicles
 {
+    class Land;
+    class Man: Land
+    {
+        class UserActions;
+    }
+    class CAManBase: Man
+    {
+        class UserActions: UserActions
+        {
+            class BNA_KC_ACE_CSW_Deploy
+            {
+                displayName = "Deploy Tripod";
+                displayNameDefault = "";
+                
+                position = "camera";
+                radius = 30;
+                onlyForPlayer = 0;
+
+                hideOnUse = 1;
+                priority = 5;
+
+                condition = "[this] call ace_csw_fnc_assemble_canDeployTripod and BNA_KC_Misc_UserActionACECSW == true";
+                statement = "[ace_player] call ace_csw_fnc_assemble_deployTripod";
+            };
+        };
+    };
+
     class StaticMortar;
     class Mortar_01_base_F: StaticMortar
     {
@@ -315,6 +342,7 @@ class CfgVehicles
         {
             class ACE_MainActions;
         };
+        class UserActions;
     };
     class BNA_KC_Deployable_M190: B_Mortar_01_F
     {
@@ -408,6 +436,25 @@ class CfgVehicles
                     condition = "call ace_csw_fnc_assemble_canPickupTripod";
                     statement = "call ace_csw_fnc_assemble_pickupTripod";
                 };
+            };
+        };
+
+        class UserActions: UserActions
+        {
+            class BNA_KC_ACE_CSW_PickUp
+            {
+                displayName = "Disassemble Mortar";
+                displayNameDefault = "";
+                
+                position = "pilotView";
+                radius = 1.5;
+                onlyForPlayer = 0;
+
+                hideOnUse = 1;
+                priority = 5;
+
+                condition = "[this, ace_player] call ace_csw_fnc_assemble_canPickupTripod and BNA_KC_Misc_UserActionACECSW == true";
+                statement = "[this, ace_player] call ace_csw_fnc_assemble_pickupTripod";
             };
         };
 
