@@ -35,6 +35,7 @@ class CfgPatches
         {
             // Helmets
             "BNA_KC_Helmet_ARC",
+            "BNA_KC_Helmet_ARC_v2",
             "BNA_KC_Helmet_ARC_Night",
             "BNA_KC_Helmet_ARF",
             "BNA_KC_Helmet_ARF_v2",

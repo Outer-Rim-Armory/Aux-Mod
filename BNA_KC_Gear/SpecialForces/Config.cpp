@@ -33,6 +33,16 @@ class CfgWeapons
             uniformModel = "lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
         };
     };
+    class BNA_KC_Helmet_ARC_v2: BNA_KC_Helmet_ARC
+    {
+        displayName = "[KC] SF ARC Helm (v2)";
+        hiddenSelectionsTextures[] = 
+        {
+            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC_v2.paa",
+            "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        };
+    };
+
     class BNA_KC_Helmet_ARC_Night: BNA_KC_Helmet_ARC
     {
         displayName = "[KC] SF ARC Helm (Night)";
