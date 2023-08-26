@@ -68,7 +68,7 @@ _atrt addAction
     true,
     true,
     "",
-    "_this != _originalTarget and alive _target and cursorObject == _target", // Prevents rider from seeing mount action,
+    "_this != _originalTarget and alive _target", // Prevents rider from seeing mount action,
     4,                                            // and from players getting stuck on dead units
     false,
     "",
