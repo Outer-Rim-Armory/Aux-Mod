@@ -357,6 +357,7 @@ class CfgVehicles
             class ACE_MainActions;
         };
         class UserActions;
+        class assembleInfo;
     };
     class BNA_KC_Mortar_Base: B_Mortar_01_F
     {
@@ -421,7 +422,7 @@ class CfgVehicles
             magazineLocation = "_target selectionPosition 'usti hlavne'";
             proxyWeapon = "";
         };
-        class assembleInfo {}; // Removes base game disassemble option
+        delete assembleInfo; // Removes base game disassemble option
 
         class ACE_Actions: ACE_Actions
         {
@@ -475,7 +476,6 @@ class CfgVehicles
             };
         };
     };
-
     class BNA_KC_Mortar_M190: BNA_KC_Mortar_Base
     {
         displayName = "[KC] Model 190 Mortar System";
