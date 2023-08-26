@@ -1,7 +1,8 @@
 class CfgPatches
 {
-    class BNA_KC_Weapons
+    class BNA_KC_Gear_Weapons
     {
+        addonRootClass= "BNA_KC_Gear";
         author = "SweMonkey and DartRuffian";
         requiredVersion = 0.1;
         requiredAddons[] =
