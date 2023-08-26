@@ -23,13 +23,13 @@ class CfgPatches
         units[] =
 		{
             "BNA_KC_Mortar_Base",
-			"BNA_KC_Deployable_M190"
+			"BNA_KC_Mortar_M190"
 		};
         weapons[] =
         {
-            "BNA_KC_Deployable_M190_Turret",
-            "BNA_KC_Deployable_M190_ProxyWeapon",
-            "BNA_KC_Deployable_M190_Carry"
+            "BNA_KC_Mortar_M190_Turret",
+            "BNA_KC_Mortar_M190_ProxyWeapon",
+            "BNA_KC_Mortar_M190_Carry"
         };
         magazines[] =
         {

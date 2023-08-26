@@ -11,7 +11,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo;
     };
-    class BNA_KC_Deployable_M190_Carry: Launcher_Base_F
+    class BNA_KC_Mortar_M190_Carry: Launcher_Base_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -41,7 +41,7 @@ class CfgWeapons
         class ACE_CSW
         {
             // See https://ace3.acemod.org/wiki/framework/crew-served-weapons-framework.html#22-carryable-tripod
-            deploy = "BNA_KC_Deployable_M190";
+            deploy = "BNA_KC_Mortar_M190";
             type = "mount"; // Used for tripod (mortar)
 
             deployTime = 1;
@@ -65,7 +65,7 @@ class CfgWeapons
         class Single1;
         class Burst1;
     };
-    class BNA_KC_Deployable_M190_Turret: 3AS_mortar_82mm
+    class BNA_KC_Mortar_M190_Turret: 3AS_mortar_82mm
     {
         displayName = "[KC] Model 190 Mortar System";
         magazines[] =
@@ -117,7 +117,7 @@ class CfgWeapons
             artilleryCharge = 0.3135; // original: 1
         };
     };
-    class BNA_KC_Deployable_M190_ProxyWeapon: BNA_KC_Deployable_M190_Turret
+    class BNA_KC_Mortar_M190_ProxyWeapon: BNA_KC_Mortar_M190_Turret
     {
         // Proxy weapon with low loading time, used for CSW
         magazineReloadTime = 0.5;
@@ -460,8 +460,8 @@ class CfgVehicles
             };
         };
     };
-    
-    class BNA_KC_Deployable_M190: BNA_KC_Mortar_Base
+
+    class BNA_KC_Mortar_M190: BNA_KC_Mortar_Base
     {
         displayName = "[KC] Model 190 Mortar System";
         hiddenSelectionsTextures[] =
@@ -481,14 +481,14 @@ class CfgVehicles
                     "BNA_KC_Mag_3Rnd_82mm_SmokeBlue",
                     "BNA_KC_Mag_3Rnd_82mm_SmokeRed"
                 };
-                weapons[] = { "BNA_KC_Deployable_M190_Turret" };
+                weapons[] = { "BNA_KC_Mortar_M190_Turret" };
             };
         };
 
         class ACE_CSW: ACE_CSW
         {
-            disassembleTo = "BNA_KC_Deployable_M190_Carry";
-            proxyWeapon = "BNA_KC_Deployable_M190_ProxyWeapon";
+            disassembleTo = "BNA_KC_Mortar_M190_Carry";
+            proxyWeapon = "BNA_KC_Mortar_M190_ProxyWeapon";
         };
     };
 };
