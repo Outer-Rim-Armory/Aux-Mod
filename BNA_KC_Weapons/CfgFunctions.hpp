@@ -4,13 +4,13 @@ class CfgFunctions
     {
         class Weapons
         {
-            file = "BNA_KC_Gear\Weapons\Data\Functions";
+            file = "BNA_KC_Weapons\Data\Functions";
             class specialAmmo {};
         };
 
         class DroidPopper
         {
-            file = "BNA_KC_Gear\Weapons\Data\Functions\DroidPopper";
+            file = "BNA_KC_Weapons\Data\Functions\DroidPopper";
             class playDroidPopperSound {};
             class killDroids {};
             class tempDisableVehicles {};
@@ -21,7 +21,7 @@ class CfgFunctions
         {
             class weapOptions
             {
-                file = "BNA_KC_Gear\Weapons\Data\Functions\fn_weapOptions.sqf";
+                file = "BNA_KC_Weapons\Data\Functions\fn_weapOptions.sqf";
             };
         };
     };
