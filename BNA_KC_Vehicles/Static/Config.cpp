@@ -1,6 +1,7 @@
 #include "CfgPatches.hpp"
 #include "CfgCloudlets.hpp"
 #include "CfgComplexEffects.hpp"
+#include "CfgFunctions.hpp"
 #include "Macros.hpp"
 
 
@@ -302,10 +303,23 @@ class CfgVehicles
     class Land;
     class Man: Land
     {
+        class ACE_SelfActions;
         class UserActions;
     }
     class CAManBase: Man
     {
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ace_csw_deploy
+            {
+                displayName = "Deploy";
+                exceptions[] = {};
+                condition = "call ace_csw_fnc_assemble_canDeployTripod";
+                statement = "call ace_csw_fnc_assemble_deployTripod";
+                modifierFunction = "call BNAKC_fnc_deployModifier";
+            };
+        };
+
         class UserActions: UserActions
         {
             class BNA_KC_ACE_CSW_Deploy
@@ -423,6 +437,7 @@ class CfgVehicles
                     displayName = "Disassemble Mortar";
                     condition = "call ace_csw_fnc_assemble_canPickupTripod";
                     statement = "call ace_csw_fnc_assemble_pickupTripod";
+                    modifierFunction = "_this call BNAKC_fnc_deployModifier";
                 };
             };
         };
