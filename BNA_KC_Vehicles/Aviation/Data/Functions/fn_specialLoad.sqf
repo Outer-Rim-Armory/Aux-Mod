@@ -22,3 +22,4 @@ if !(isNull _vehicleToLoad) then
 {
 	_vehicle setVehicleCargo _vehicleToLoad;
 };
+_vehicle setVariable ["BNA_KC_SpecialLoadTarget", nil, true];
