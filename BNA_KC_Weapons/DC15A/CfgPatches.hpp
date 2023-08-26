@@ -19,7 +19,9 @@ class CfgPatches
         {
             "BNA_KC_DC15A_Base",
             "BNA_KC_DC15A",
-            "BNA_KC_DC15A_UGL"
+			"BNA_KC_DC15A_Fried",
+            "BNA_KC_DC15A_UGL",
+            "BNA_KC_DC15A_UGL_Fried"
         };
         magazines[] =
         {

@@ -53,8 +53,13 @@ class CfgWeapons
             "EGLM"
         };
         magazines[] = { "12thFleet_Mag_DC15A" };
+        magazineWell[] = {};
 
         canShootInWater = 1;
+
+        // JLTS emp system
+        JLTS_hasElectronics = 1;
+        JLTS_hasEMPProtection = 0;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
@@ -166,6 +171,26 @@ class CfgWeapons
 
         displayName = "[KC] DC-15A";
         muzzles[] = { "this", "Stun" };
+
+        JLTS_friedItem = "BNA_KC_DC15A_Fried";
+    };
+    class BNA_KC_DC15A_Fried: BNA_KC_DC15A
+    {
+        scope = 1;
+        scopeArsenal = 0;
+
+        displayName = "[KC] DC-15A (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_fried_ui_ca.paa";
+
+        JLTS_isFried = 1;
+        magazines[] = {};
+
+        class Stun: Stun
+        {
+            displayName = "Stun (Fried)";
+            magazines[] = {};
+        };
     };
 
     class BNA_KC_DC15A_UGL: BNA_KC_DC15A_Base
@@ -192,8 +217,27 @@ class CfgWeapons
         irLaserEnd = "";
         irLaserPos = "";
 
-        JLTS_friedItem = "JLTS_DC15A_UGL_fried"; //TODO: Make fried versions for kc weapons or set JLTS_hasEMPProtection to 1
+        JLTS_friedItem = "BNA_KC_DC15A_UGL_Fried";
         JLTS_repairTime = 35;
+    };
+
+    class BNA_KC_DC15A_UGL_Fried: BNA_KC_DC15A_UGL
+    {
+        scope = 1;
+        scopeArsenal = 0;
+
+        displayName = "[KC] DC-15A UGL (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_UGL_plastic_fried_ui_ca.paa";
+
+        JLTS_isFried = 1;
+        magazines[] = {};
+
+        class EGLM: EGLM
+        {
+            displayName = "Grenade Launcher (Fried)";
+            magazines[] = {};
+        };
     };
 };
 
