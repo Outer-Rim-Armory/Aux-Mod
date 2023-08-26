@@ -17,3 +17,4 @@ private _sendEvent = { ["BNA_KC_Jet_showHideDisplay"] call CBA_fnc_localEvent; }
 
 ["loadout", _sendEvent, true] call CBA_fnc_addPlayerEventHandler; // Inventory changed
 ["vehicle", _sendEvent, true] call CBA_fnc_addPlayerEventHandler; // Get in/out of vehicle
+["featureCamera", _sendEvent, true] call CBA_fnc_addPlayerEventHandler; // Switch to camera, arsenal, etc.
