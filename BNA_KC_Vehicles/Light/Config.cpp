@@ -257,6 +257,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VLight";
 
         displayName = "[KC] AT-RT";
+        // TODO: Add stun protection to AT-RT uniform
 
         weapons[] = { "BNA_KC_ATRT_Turret" };
         magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
