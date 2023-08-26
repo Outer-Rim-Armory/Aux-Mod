@@ -41,6 +41,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Burnt",
             "BNA_KC_Helmet_Phase1_Burnt_Bacta",
             "BNA_KC_Helmet_Phase1_Catholic",
+            "BNA_KC_Helmet_Phase1_Catholic_Kyber",
             "BNA_KC_Helmet_Phase1_Defter",
             "BNA_KC_Helmet_Phase1_Defter_Bacta",
             "BNA_KC_Helmet_Phase1_Dexus",
@@ -123,6 +124,7 @@ class CfgPatches
 
             // Phase 2 SpecOP Helmets
             "BNA_KC_Helmet_Phase2_Tanker_Catholic",
+            "BNA_KC_Helmet_Phase2_Tanker_Catholic_Kyber",
             "BNA_KC_Helmet_Phase2_Tanker_Grey",
 
             // Special Forces Helmets

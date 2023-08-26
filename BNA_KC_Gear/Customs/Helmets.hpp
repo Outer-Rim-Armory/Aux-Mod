@@ -60,11 +60,35 @@ class BNA_KC_Helmet_Phase1_Burnt_Bacta: BNA_KC_Helmet_Phase1_Burnt
 
 class BNA_KC_Helmet_Phase1_Catholic: BNA_KC_Helmet_Phase1_Base
 {
+	BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Catholic";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase1_Catholic_Kyber";
+
 	displayName = "[KC] INF P1 Helm ('Catholic')";
 	hiddenSelectionsTextures[] =
 	{
 		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 1\BNA_KC_Helmet_P1_Catholic.paa",
 		"ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+	};
+};
+class BNA_KC_Helmet_Phase1_Catholic_Kyber: BNA_KC_Helmet_Phase1_Catholic
+{
+	// Scopes
+	scope = 1;
+    scopeArsenal = 1;
+
+	displayName = "[KC] INF P1 Helm ('Catholic') [Kyber Visor]";
+	hiddenSelectionsMaterials[] = 
+    {
+        "",
+        "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
+		"a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 1\BNA_KC_Helmet_P1_Catholic.paa",
+		"BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Kyber.paa",
         "ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
 	};
 };
@@ -1038,13 +1062,38 @@ class BNA_KC_Helmet_Phase2_Tanker;
 
 class BNA_KC_Helmet_Phase2_Tanker_Catholic: BNA_KC_Helmet_Phase2_Tanker
 {
+	BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Tanker_Catholic";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Tanker_Catholic_Kyber";
+
 	displayName = "[KC] ARMR Helm ('Catholic')";
     hiddenSelectionsTextures[] =
     {
         "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 2\BNA_KC_Helmet_P2_Tanker_Catholic.paa",
         "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
     };
+
+	subItems[] = {};
 };
+class BNA_KC_Helmet_Phase2_Tanker_Catholic_Kyber: BNA_KC_Helmet_Phase2_Tanker_Catholic
+{
+	// Scopes
+	scope = 1;
+    scopeArsenal = 1;
+	
+	displayName = "[KC] ARMR Helm ('Catholic') [Kyber Visor]";
+	hiddenSelectionsMaterials[] = 
+    {
+        "",
+        "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 2\BNA_KC_Helmet_P2_Tanker_Catholic.paa",
+        "BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Kyber.paa"
+    };
+};
+
 
 class BNA_KC_Helmet_Phase2_Tanker_Grey: BNA_KC_Helmet_Phase2_Tanker
 {

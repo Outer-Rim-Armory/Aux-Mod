@@ -83,6 +83,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P1_Burnt",
             "BNA_KC_HelmetHolder_P1_Burnt_Bacta",
             "BNA_KC_HelmetHolder_P1_Catholic",
+            "BNA_KC_HelmetHolder_P1_Catholic_Kyber",
             "BNA_KC_HelmetHolder_P1_Defter",
             "BNA_KC_HelmetHolder_P1_Defter_Bacta",
             "BNA_KC_HelmetHolder_P1_Dexus",
@@ -157,6 +158,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P1_Tanker_Grey",
             // Armored P2
             "BNA_KC_HelmetHolder_P2_Tanker_Catholic",
+            "BNA_KC_HelmetHolder_P2_Tanker_Catholic_Kyber",
             "BNA_KC_HelmetHolder_P2_Tanker_Grey",
             // Special Forces
             "BNA_KC_HelmetHolder_ARC_Burnt",

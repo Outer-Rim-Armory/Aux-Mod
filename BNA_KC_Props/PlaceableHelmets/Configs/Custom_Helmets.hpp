@@ -5,6 +5,7 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Axel, [KC] INF P1 Helm ('Axel'), BNA_KC_Hel
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Burnt, [KC] INF P1 Helm ('Burnt'), BNA_KC_Helmet_Phase1_Burnt, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Burnt_Bacta, [KC] INF P1 Helm ('Burnt') [Bacta Visor], BNA_KC_Helmet_Phase1_Burnt_Bacta, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Catholic, [KC] INF P1 Helm ('Catholic'), BNA_KC_Helmet_Phase1_Catholic, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Catholic_Kyber, [KC] INF P1 Helm ('Catholic') [Kyber Visor], BNA_KC_Helmet_Phase1_Catholic_Kyber, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Defter, [KC] INF P1 Helm ('Defter'), BNA_KC_Helmet_Phase1_Defter, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Defter_Bacta, [KC] INF P1 Helm ('Defter') [Bacta Visor], BNA_KC_Helmet_Phase1_Defter_Bacta, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Dexus, [KC] INF P1 Helm ('Dexus'), BNA_KC_Helmet_Phase1_Dexus, "Customs")
@@ -95,6 +96,7 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Pilot_Mischief, [KC] AVI P2 Helm ('Mischief
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Tanker_Grey, [KC] ARMR P1 Helm ('Grey'), BNA_KC_Helmet_Phase1_Tanker_Grey, "Customs")
 
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Tanker_Catholic, [KC] ARMR P2 Helm ('Catholic'), BNA_KC_Helmet_Phase2_Tanker_Catholic, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Tanker_Catholic_Kyber, [KC] ARMR P2 Helm ('Catholic') [Kyber Visor], BNA_KC_Helmet_Phase2_Tanker_Catholic_Kyber, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Tanker_Grey, [KC] ARMR P2 Helm ('Grey'), BNA_KC_Helmet_Phase2_Tanker_Grey, "Customs")
 
 
