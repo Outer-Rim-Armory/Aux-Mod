@@ -464,6 +464,9 @@ class CfgVehicles
     class BNA_KC_Mortar_M190: BNA_KC_Mortar_Base
     {
         displayName = "[KC] Model 190 Mortar System";
+        scope = 2;
+        scopeCurator = 2;
+        
         hiddenSelectionsTextures[] =
         {
             "\3as\3as_static\Mortar\data\base.001_co.paa",
