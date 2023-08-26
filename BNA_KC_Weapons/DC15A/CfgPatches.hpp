@@ -9,8 +9,10 @@ class CfgPatches
         {
             "A3_Weapons_F",
                 // UGL_F
-            "JLTS_weapons_DC15A"
+            "JLTS_weapons_DC15A",
                 // DC-15A
+			"Aux501_Patch_Accessories"
+				// 501st Scopes/Sights
         };
         units[] = {};
         weapons[] =
