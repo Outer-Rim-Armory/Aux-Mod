@@ -266,6 +266,9 @@ class CfgWeapons
 
     class BNA_KC_GR20: BNA_KC_DC17_Base
     {
+        scope = 2;
+        scopeArsenal = 2;
+        
         displayName = "[KC] GR-20";
         descriptionShort = "A GR-10 modified to shoot pressurized<br/>bacta canisters instead of plasma.";
         baseWeapon = "BNA_KC_GR20";
