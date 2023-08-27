@@ -82,18 +82,10 @@ class CfgFunctions
 
         class Settings
         {
-            class miscOptions
-            {
-                file = "BNA_KC_Scripts\Data\Functions\Settings\fn_miscOptions.sqf";
-            };
-            class miscKeybinds
-            {
-                file = "BNA_KC_Scripts\Data\Functions\Settings\fn_miscKeybinds.sqf";
-            };
-            class weapOptions
-            {
-                file = "BNA_KC_Scripts\Data\Functions\Settings\fn_weapOptions.sqf";
-            };
+            file = "BNA_KC_Scripts\Data\Functions\Settings";
+            class miscOptions {};
+            class miscKeybinds {};
+            class weapOptions {};
         };
 	};
 };
