@@ -11,6 +11,8 @@ class CfgPatches
                 // UGL_F
             "JLTS_weapons_DC15A",
                 // DC-15A
+            "JLTS_weapons_DC17SA",
+                // Flashlight
 			"Aux501_Patch_Accessories"
 				// 501st Scopes/Sights
         };
