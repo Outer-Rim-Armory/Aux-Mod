@@ -30,13 +30,3 @@ class 12thFleet_Mag_StunShort: JLTS_stun_mag_short
 
     ammo = "12thFleet_Ammo_Stun";
 };
-
-// ┌───────────────────┐
-// │    Specialized    │
-// └───────────────────┘
-class 3AS_60Rnd_EC50_Mag;
-class 12thFleet_Mag_WestarM5: 3AS_60Rnd_EC50_Mag
-{
-    displayName = "[12th Fleet] Westar-M5 Energy Cell (60 Rnd)";
-    ammo = "12thFleet_Ammo_Westar_Blue";
-};
