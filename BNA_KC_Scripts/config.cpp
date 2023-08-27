@@ -68,7 +68,7 @@ class CfgFunctions
         class Weapons
         {
             file = "BNA_KC_Scripts\Data\Functions\Weapons";
-            class specialAmmo;
+            class specialGrenadesEH;
         };
 
         class Medical
@@ -128,9 +128,9 @@ class Extended_PostInit_EventHandlers
     {
         init = "if (BNA_KC_Misc_FixInfiniteLoading) then { call BNAKC_fnc_FixInfiniteLoading; };";
     };
-    class BNA_KC_Weap_SpecialAmmo
+    class BNA_KC_Weap_specialGrenadesEH
     {
-        init = "['ace_firedPlayer'] call BNAKC_fnc_specialAmmo;";
+        init = "['ace_firedPlayer'] call BNAKC_fnc_specialGrenadesEH;";
     };
 };
 
