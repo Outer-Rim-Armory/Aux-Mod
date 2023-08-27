@@ -16,7 +16,6 @@
  */
 
 
-#define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 params ["_unit", "_jetpack", "_oldFuel", "_currentFuel"];
 
 // Remove display if it shouldn't be shown (i.e. piloting a vehicle, etc.)

@@ -15,7 +15,6 @@
 
 
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
-#define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 
 // Exit if unit does not have / can not use a jetpack
 if !(ace_player call BNAKC_Jetpacks_fnc_hasJetpack) exitWith {};

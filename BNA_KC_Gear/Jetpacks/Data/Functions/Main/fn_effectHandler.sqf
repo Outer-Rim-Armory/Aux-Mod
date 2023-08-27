@@ -18,7 +18,6 @@ params ["_unit"];
 
 // Contants and macros
 #define POS_SPINE3 [-0.009, -0.008, 0.356]
-#define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 #define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
 #define GET_ARRAY(config, defaultValue) (if (isArray (config)) then {getArray (config)} else {defaultValue})
 

@@ -14,7 +14,6 @@
  */
 
 
-#define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 params ["_unit", "_delay"];
 
 [
