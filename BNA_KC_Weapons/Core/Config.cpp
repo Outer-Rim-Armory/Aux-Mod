@@ -28,6 +28,31 @@ class CfgMagazines
 
 class CfgAmmo
 {
+    // TODO: Make single KC bullet base class
+    class JLTS_bullet_rifle_blue;
+    class 12thFleet_Ammo_Rifle_Blue: JLTS_bullet_rifle_blue
+    {
+        coefgravity = 0;
+    };
+
+    class JLTS_bullet_sniper_blue;
+    class 12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
+    {
+        coefgravity = 0;
+    };
+    
+    class JLTS_bullet_pistol_blue;
+    class 12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
+    {
+        coefgravity = 0;
+    };
+    
+    class 3AS_EC50_BluePlasma;
+    class 12thFleet_Ammo_Westar_Blue: 3AS_EC50_BluePlasma
+    {
+        coefgravity = 0;
+    };
+    
     class F_40mm_White;
     class BNA_KC_Flare_Blue: F_40mm_White
     {
