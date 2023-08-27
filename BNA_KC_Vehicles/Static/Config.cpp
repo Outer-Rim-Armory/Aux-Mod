@@ -308,6 +308,11 @@ class CfgVehicles
     }
     class CAManBase: Man
     {
+        /*
+        TODO: Fix Updating Base Class errors
+        11:57:09 Updating base class ->ACE_SelfActions, by BNA_KC_Vehicles\static\config.bin/CfgVehicles/CAManBase/ACE_SelfActions/ (original (no unload))
+        11:57:09 Updating base class ->UserActions, by BNA_KC_Vehicles\static\config.bin/CfgVehicles/CAManBase/UserActions/ (original (MRC\JLTS\drones\mse6\config.bin - no unload))
+        */
         class ACE_SelfActions: ACE_SelfActions
         {
             class ace_csw_deploy
