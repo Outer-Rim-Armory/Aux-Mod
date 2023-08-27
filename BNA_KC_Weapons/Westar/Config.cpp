@@ -3,6 +3,8 @@
 
 class CfgWeapons
 {
+    #include "Optics.hpp"
+
     class UGL_F;
     class Rifle_Base_F;
     class 3AS_WestarM5_Base_F: Rifle_Base_F

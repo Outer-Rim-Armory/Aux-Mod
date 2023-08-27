@@ -5,7 +5,6 @@ class 3AS_Optic_Scope_WestarM5: ItemCore
 };
 class BNA_KC_WestarM5_Scope: 3AS_Optic_Scope_WestarM5
 {
-    displayName = "[KC] Westar-M5 Scope";
     class ItemInfo: ItemInfo
     {
         class OpticsModes

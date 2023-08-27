@@ -16,10 +16,6 @@ class UnderBarrelSlot_Rail: UnderBarrelSlot {};
 
 class CfgWeapons
 {
-	// ┌──────────────────┐
-    // │      Optics      │
-    // └──────────────────┘
-    #include "Optics.hpp"
     // ┌────────────────────┐
     // │      Grenades      │
     // └────────────────────┘

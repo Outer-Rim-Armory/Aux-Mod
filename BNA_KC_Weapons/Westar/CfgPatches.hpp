@@ -21,7 +21,8 @@ class CfgPatches
         {
             "BNA_KC_WestarM5_Base",
             "BNA_KC_WestarM5",
-            "BNA_KC_WestarM5_UGL"
+            "BNA_KC_WestarM5_UGL",
+            "BNA_KC_WestarM5_Scope"
         };
         magazines[] =
         {
