@@ -46,7 +46,6 @@ player remoteControl _atrt;
 [_rider, "blockThrow", "ridingATRT", true] call ace_common_fnc_statusEffect_set;
 
 // Makes the "Release UAV Controls" action not do anything to avoid issues
-// TODO: Make it so that the option does not appear at all
 inGameUISetEventHandler ["Action", "if ((_this select 3) isEqualTo ""BackFromUAV"") then {true};"];
 
 [

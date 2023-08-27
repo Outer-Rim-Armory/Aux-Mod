@@ -39,8 +39,6 @@ private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> "B
 _fuelAmount = _fuelAmount min _maxFuel; // Prevents the jetpack being "over-filled"
 _fuelAmount = _fuelAmount max 0; // Prevents fuel from going negative
 
-// TODO: Display to unit (if a unit is passed) that their jetpack has been refilled
-
 _jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuelAmount, true];
 if (_sendEvent) then
 {
