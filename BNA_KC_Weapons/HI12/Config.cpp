@@ -11,6 +11,12 @@ class CfgWeapons
     {
         class WeaponSlotsInfo;
         class Single;
+
+        class OpticsModes
+        {
+            // class hi12scope_sights;
+            class hi12scope_scope;
+        };
     };
     class BNA_KC_HI12: LFP_hi12
     {
@@ -96,6 +102,15 @@ class CfgWeapons
             textureType = "burst";
             burst = 3;
             reloadTime = 0.09; // Time inbetween each shot
+        };
+    
+        class OpticsModes: OpticsModes
+        {
+            class hi12scope_scope: hi12scope_scope
+            {
+                visionMode[] = { "Normal", "NVG", "TI"};
+                thermalMode[] = { 0 };
+            };
         };
     };
 };
