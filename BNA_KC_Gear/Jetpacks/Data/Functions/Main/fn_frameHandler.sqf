@@ -37,7 +37,6 @@ if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_
     [
         {
             // Delete effects
-            // TODO: Delete fire effects, wait, then delete smoke?
             [
                 {
                     private _sources = ace_player getVariable ["BNA_KC_Jet_effectSources", []];
