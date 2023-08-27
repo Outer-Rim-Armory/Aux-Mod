@@ -243,151 +243,6 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo { mass = 80; };
     };
 
-    class arifle_MX_Base_F: Rifle_Base_F
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot_Rail {};
-            class PointerSlot: PointerSlot_Rail {};
-        };
-    };
-    class JLTS_DC15S: arifle_MX_Base_F
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot {};
-            class PointerSlot: PointerSlot {};
-        };
-
-        class Single: Mode_SemiAuto
-        {
-            class BaseSoundModeType {};
-            class StandardSound: BaseSoundModeType {};
-        };
-        class FullAuto: Mode_FullAuto
-        {
-            class BaseSoundModeType {};
-            class StandardSound: BaseSoundModeType {};
-        };
-
-        class Stun;
-    };
-
-    #define STUN class Stun: Stun \
-{ \
-    displayName = "Stun"; \
-    magazines[] = { "12thFleet_Mag_StunLong", "12thFleet_Mag_StunShort" }; \
-    magazineWell[] = {}; \
-};
-
-    class BNA_KC_DC15S: JLTS_DC15S
-    {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
-        displayName = "[KC] DC-15S";
-        canShootInWater = 1;
-
-        JLTS_shieldedWeapon = "BNA_KC_DC15S_RiotShield";
-
-        magazines[] = { "12thFleet_Mag_DC15S" };
-
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot
-            {
-                compatibleItems[] = 
-                {
-                    // Short
-                    "Aux501_cows_RCO",
-                    "Aux501_cows_RCO_2",
-                    "Aux501_cows_RCO_3",
-                    // Medium
-                    "Aux501_cows_MRCO",
-                    "Aux501_cows_MRCO_2",
-                    "Aux501_cows_MRCO_3",
-                    // Sights
-                    "Aux501_cows_Holosight",
-                    "Aux501_cows_Holosight_2",
-                    "Aux501_cows_Holosight_3",
-                    "Aux501_cows_reflex_optic"
-                };
-            };
-            class PointerSlot: PointerSlot
-            {
-                compatibleItems[]  = 
-                {
-                    "acc_pointer_ir",
-                    "ace_acc_pointer_green",
-                    "jlts_dc17sa_flashlight"
-                };
-            };
-        };
-        class Single: Single
-        {
-            class StandardSound: StandardSound
-            {
-                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire1", 1, 1, 1800};
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
-            };
-        };
-        class FullAuto: FullAuto
-        {
-            class StandardSound: StandardSound
-            {
-                begin1[] = {"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15S_Fire1", 1, 1, 1800};
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
-            };
-        };
-
-        STUN;
-    };
-
-    class BNA_KC_DC15S_RiotShield: BNA_KC_DC15S
-    {
-        // Scopes
-        scope = 1;
-        scopeArsenal = 0;
-
-        JLTS_isShielded = 1;
-        JLTS_baseWeapon = "BNA_KC_DC15S";
-        model = "\MRC\JLTS\weapons\DC15S\DC15S_shielded.p3d";
-
-        hiddenSelections[]=
-        {
-            "camo1",
-            "camo2"
-        };
-        hiddenSelectionsTextures[]=
-        {
-            "\MRC\JLTS\weapons\DC15S\data\DC15S_co.paa",
-            "\MRC\JLTS\weapons\Shield\data\shield_co.paa"
-        };
-        handAnim[]=
-        {
-            "OFP2_ManSkeleton",
-            "\MRC\JLTS\weapons\DC15S\anims\DC15S_shielded_handanim.rtm"
-        };
-
-        // reloadAction = "GestureReload";
-		// inertia = 0.80000001;
-		recoil = "recoil_pdw"; // More recoil since the gun is held in one hand
-
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class UnderBarrelSlot: UnderBarrelSlot
-            {
-                compatibleItems[] = {"JLTS_riot_shield_attachment"};
-            };
-        };
-    };
 	
 	
 	class LFP_rifle_base;
@@ -586,7 +441,16 @@ class CfgWeapons
             };
         };
 
-        STUN;
+        class Stun: Stun
+        {
+            displayName = "Stun";
+            magazines[] =
+            {
+                "12thFleet_Mag_StunLong",
+                "12thFleet_Mag_StunShort"
+            };
+            magazineWell[] = {};
+        };
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {

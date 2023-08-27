@@ -3,14 +3,6 @@
 // │      Common      │
 // └──────────────────┘
 // Primary
-
-class JLTS_DC15S_mag;
-class 12thFleet_Mag_DC15S: JLTS_DC15S_mag
-{
-    displayName = "[12th Fleet] DC-15S Energy Cell (80 Rnd)";
-    ammo = "12thFleet_Ammo_Rifle_Blue";
-};
-
 class JLTS_DC15X_mag;
 class 12thFleet_Mag_DC15X: JLTS_DC15X_mag
 {
