@@ -18,7 +18,7 @@ if (BNA_KC_DroidPopper_TCWSoundEnabled) then
 {
     playSound3D
     [
-        "BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DroidPopper_Exp.wss",
+        "BNA_KC_Weapons\Grenades\Data\Audio\DroidPopper_Explode.wss",
         objNull,
         false,
         _position,
