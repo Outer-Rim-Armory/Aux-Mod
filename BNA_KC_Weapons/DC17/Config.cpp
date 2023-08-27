@@ -78,7 +78,7 @@ class CfgWeapons
             class CowsSlot;
         };
         
-        class Single: Single
+        class Single: Mode_SemiAuto
         {
             class StandardSound;
         };

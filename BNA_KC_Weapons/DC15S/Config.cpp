@@ -1,14 +1,15 @@
 #include "CfgPatches.hpp"
 
 
+class Mode_SemiAuto;
+class Mode_FullAuto;
+
 class CfgWeapons
 {
     class Rifle_Base_F;
     class arifle_MX_Base_F: Rifle_Base_F
     {
         class WeaponSlotsInfo;
-        class Single;
-        class FullAuto;
     };
     class JLTS_DC15S: arifle_MX_Base_F
     {
@@ -18,11 +19,11 @@ class CfgWeapons
             class PointerSlot;
         };
         
-        class Single: Single
+        class Single: Mode_SemiAuto
         {
             class StandardSound;
         };
-        class FullAuto: FullAuto
+        class FullAuto: Mode_FullAuto
         {
             class StandardSound;
         };
