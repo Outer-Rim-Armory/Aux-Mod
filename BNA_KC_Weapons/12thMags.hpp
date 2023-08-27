@@ -10,14 +10,6 @@ class 12thFleet_Mag_DC15X: JLTS_DC15X_mag
     ammo = "12thFleet_Ammo_Sniper_Blue";
 };
 
-// Secondaary
-class JLTS_DC17SA_mag;
-class 12thFleet_Mag_DC17: JLTS_DC17SA_mag
-{
-    displayName = "[12th Fleet] DC-17 Energy Cell (20 Rnd)";
-    ammo = "12thFleet_Ammo_Pistol_Blue";
-};
-
 // Stun
 class JLTS_stun_mag_long;
 class 12thFleet_Mag_StunLong: JLTS_stun_mag_long
