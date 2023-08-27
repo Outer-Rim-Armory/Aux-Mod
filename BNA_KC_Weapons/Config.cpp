@@ -1,6 +1,3 @@
-#include "CfgFunctions.hpp"
-
-
 class CfgPatches
 {
     class BNA_KC_Weapons
