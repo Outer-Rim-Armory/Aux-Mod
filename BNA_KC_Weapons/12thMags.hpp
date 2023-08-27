@@ -40,20 +40,3 @@ class 12thFleet_Mag_WestarM5: 3AS_60Rnd_EC50_Mag
     displayName = "[12th Fleet] Westar-M5 Energy Cell (60 Rnd)";
     ammo = "12thFleet_Ammo_Westar_Blue";
 };
-
-class M2_Fuel_Tank;
-class BNA_KC_Mag_300Rnd_Flamer: M2_Fuel_Tank
-{
-    displayName = "[KC] BT X-42 Fuel Tank";
-    // 3AS Ammo Picture
-    picture = "\3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
-    UiPicture = "\3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
-    mass = 50;
-};
-
-class BNA_KC_Mag_150Rnd_Flamer: BNA_KC_Mag_300Rnd_Flamer
-{
-    displayName = "[KC] BT X-42 Heavy Fuel Tank";
-    count = 150;
-    mass = 150;
-};
