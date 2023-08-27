@@ -201,88 +201,6 @@ class CfgWeapons
         };
     };
 
-	
-	
-	class LFP_rifle_base;
-	class LFP_hi12: LFP_rifle_base
-	{
-		class Single;
-		class WeaponSlotsInfo;
-	};
-	class BNA_KC_HI12: LFP_hi12
-	{
-		displayName = "[KC] HI-12";
-		magazines[]=
-		{
-			"BNA_KC_HI12_30rnd"
-		};
-		modes[]=
-		{
-			"Single",
-            "Burst",
-			"close",
-			"short",
-			"medium"
-		};
-		class Single: Single
-		{
-			sounds[]=
-			{
-				"StandardSound"
-			};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]={};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				begin1[]=
-				{
-					"BNA_KC_Gear\Weapons\Data\Audio\Hi11SFX.wss",
-					3,
-					1,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					0.33000001
-				};
-			};
-			dispersion=0.00037815439999;
-		};
-		class Burst: Single
-        {
-            displayName = "Burst"
-            textureType = "burst";
-            burst = 3;
-            reloadTime = 0.09; // Shoot faster in burst mode
-        };
-        
-        class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class PointerSlot: PointerSlot
-            {
-                compatibleItems[]  = 
-                {
-                    "acc_pointer_ir",
-                    "ace_acc_pointer_green",
-                    "jlts_dc17sa_flashlight"
-                };
-            };
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleItems[]  = 
-                {
-                    "bipod_01_F_blk"
-                };
-			};
-		};
-	};
 
     // ┌────────────────────┐
     // │      Grenades      │
@@ -309,21 +227,6 @@ class CfgWeapons
 class CfgMagazines
 {
     #include "12thMags.hpp"
-
-    class LFP_HI12_Mag;
-    class BNA_KC_HI12_30rnd: LFP_HI12_Mag
-    {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-        
-        displayName = "[KC] HI-12 Magazine";
-        count = 30;
-    };
 
     class UGL_FlareWhite_F;
     class BNA_KC_UGL_FlareBlue: UGL_FlareWhite_F
