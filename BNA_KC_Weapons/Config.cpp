@@ -16,14 +16,8 @@ class UnderBarrelSlot_Rail: UnderBarrelSlot {};
 
 class CfgMagazines
 {
-    #include "12thMags.hpp"
 };
 
 class CfgAmmo
 {
-    class JLTS_bullet_stun;
-    class 12thFleet_Ammo_Stun: JLTS_bullet_stun
-    {
-        coefgravity = 0;
-    };
 };

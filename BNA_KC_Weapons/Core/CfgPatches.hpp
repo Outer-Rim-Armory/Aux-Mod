@@ -19,11 +19,17 @@ class CfgPatches
         weapons[] = {};
         magazines[] =
         {
+            "12thFleet_Mag_StunShort",
+            "12thFleet_Mag_StunLong",
+            
             "BNA_KC_UGL_FlareBlue",
             "BNA_KC_3Rnd_UGL_FlareBlue"
         };
         ammo[] =
         {
+            // TODO: Add base bullets
+            "12thFleet_Ammo_Stun",
+
             "BNA_KC_Flare_Blue"
         };
     };

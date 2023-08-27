@@ -3,6 +3,26 @@
 
 class CfgMagazines
 {
+    class JLTS_stun_mag_short;
+    class 12thFleet_Mag_StunShort: JLTS_stun_mag_short
+    {
+        displayName = "[12th Fleet] Stun Energy Cell (Short)";
+        displayNameShort = "Stun (Short)";
+        descriptionShort = "Stun Energy Cell<br/>Rounds: 10<br/>Duration: 5 Seconds<br/>Used in: DC-15S, DC-15A, DC-17";
+
+        ammo = "12thFleet_Ammo_Stun";
+    };
+    
+    class 12thFleet_Mag_StunLong: 12thFleet_Mag_StunShort
+    {
+        displayName = "[12th Fleet] Stun Energy Cell (Long)";
+        displayNameShort = "Stun (Long)";
+        descriptionShort = "Stun Energy Cell<br/>Rounds: 5<br/>Duration: 15 Seconds<br/>Used in: DC-15S, DC-15A, DC-17";
+
+        count = 5;
+        JLTS_stunDuration = 15;
+    };
+
     class UGL_FlareWhite_F;
     class BNA_KC_UGL_FlareBlue: UGL_FlareWhite_F
     {
@@ -49,6 +69,12 @@ class CfgAmmo
     
     class 3AS_EC50_BluePlasma;
     class 12thFleet_Ammo_Westar_Blue: 3AS_EC50_BluePlasma
+    {
+        coefgravity = 0;
+    };
+
+    class JLTS_bullet_stun;
+    class 12thFleet_Ammo_Stun: JLTS_bullet_stun
     {
         coefgravity = 0;
     };
