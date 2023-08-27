@@ -1,6 +1,26 @@
 #include "CfgPatches.hpp"
 
 
+class CfgWeapons
+{
+    class 3AS_ATRT_Base;
+    class 3AS_ATRT_Uniform: 3AS_ATRT_Base
+    {
+        class ItemInfo;
+    };
+    class BNA_KC_Uniform_ATRT: 3AS_ATRT_Uniform
+    {
+        displayName = "[KC] AT-RT Uniform";
+        JLTS_hasStunProtection = 1;
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_ATRT";
+        };
+    };
+};
+
+
 // Macros
 #define HORNET_INVENTORY() class TransportWeapons \
 { \
@@ -261,10 +281,10 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VLight";
 
         displayName = "[KC] AT-RT";
-        // TODO: Add stun protection to AT-RT uniform
+        uniformClass = "BNA_KC_Uniform_ATRT";
 
         weapons[] = { "BNA_KC_ATRT_Turret" };
-        magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
+        magazines[] = { "BNA_KC_9999Rnd_ATRT_Turret_Magazine" };
 
 		// Textures are not set-up on the 3AS end yet.
 		// hiddenSelectionsTextures[] =
