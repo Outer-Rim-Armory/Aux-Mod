@@ -83,6 +83,7 @@ class CfgFunctions
         class Settings
         {
             file = "BNA_KC_Scripts\Data\Functions\Settings";
+            class loadAllSettings {};
             class miscOptions {};
             class miscKeybinds {};
             class weapOptions {};
@@ -92,13 +93,9 @@ class CfgFunctions
 
 class Extended_PreInit_EventHandlers
 {
-    class BNA_KC_Misc_SettingsPreInit
+    class BNA_KC_Settings_loadAllSettings
     {
-        init = "call BNAKC_fnc_miscOptions; call BNAKC_fnc_miscKeybinds;";
-    };
-    class BNA_KC_Weap_OptionsPreInit
-    {
-        init = "call BNAKC_fnc_weapOptions;";
+        init = "call BNAKC_fnc_loadAllSettings;";
     };
 };
 
