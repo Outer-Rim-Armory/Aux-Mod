@@ -15,9 +15,10 @@
  */
 
 params ["_vehicles", "_time"];
+#define DEV_LOG(message) (if (BNA_KC_DevMode) then {systemChat str message})
 
 {
-    format ["Disabling %1", _x] call BNAKC_fnc_devLog;
+    DEV_LOG("Disabling vehicles");
 
     _vehicle = _x; // Clears up some possible confusion in loops
     // Save the current amount of fuel and ammo
@@ -29,7 +30,7 @@ params ["_vehicles", "_time"];
     _vehicle setFuel 0;
     { _vehicle removeMagazines _x; } forEach _savedMags;
     { _vehicle removeMagazinesTurret [_x, [0, 0]]; } forEach _savedTurretMags;
-    format ["Removed mags and fuel from %1", _x] call BNAKC_fnc_devLog;
+    DEV_LOG("Removed magazines and fuel");
 
     sleep _time;
 
@@ -37,5 +38,5 @@ params ["_vehicles", "_time"];
     _vehicle setFuel _savedFuel;
     { _vehicle addMagazine _x; } forEach _savedMags;
     { _vehicle addMagazineTurret [_x, [0, 0]]; } forEach _savedTurretMags;
-    format ["Restored mags and fuel from %1", _x] call BNAKC_fnc_devLog;
+    DEV_LOG("Restored magazines and fuel");
 } forEach _vehicles;
