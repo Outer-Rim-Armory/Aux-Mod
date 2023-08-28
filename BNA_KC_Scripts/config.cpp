@@ -56,6 +56,21 @@ class CfgFunctions
             class CreateMarkAction{};
         };
 
+        class EMP
+        {
+            file = "BNA_KC_Scripts\Data\Functions\EMP";
+            class killDroids;
+            class disableDekaShields;
+            class tempDisableVehicles;
+            class playDroidPopperSound;
+        };
+
+        class Weapons
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Weapons";
+            class specialGrenadesEH;
+        };
+
         class Medical
         {
             file = "BNA_KC_Scripts\Data\Functions\Medical";
@@ -67,23 +82,20 @@ class CfgFunctions
 
         class Settings
         {
-            class miscOptions
-            {
-                file = "BNA_KC_Scripts\Data\Functions\Settings\fn_miscOptions.sqf";
-            };
-            class miscKeybinds
-            {
-                file = "BNA_KC_Scripts\Data\Functions\Settings\fn_miscKeybinds.sqf";
-            };
+            file = "BNA_KC_Scripts\Data\Functions\Settings";
+            class loadAllSettings {};
+            class miscOptions {};
+            class miscKeybinds {};
+            class weapOptions {};
         };
 	};
 };
 
 class Extended_PreInit_EventHandlers
 {
-    class BNA_KC_Misc_SettingsPreInit
+    class BNA_KC_Settings_loadAllSettings
     {
-        init = "call BNAKC_fnc_miscOptions; call BNAKC_fnc_miscKeybinds;";
+        init = "call BNAKC_fnc_loadAllSettings;";
     };
 };
 
@@ -104,6 +116,10 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Scripts_FixInfiniteLoading
     {
         init = "if (BNA_KC_Misc_FixInfiniteLoading) then { call BNAKC_fnc_FixInfiniteLoading; };";
+    };
+    class BNA_KC_Weap_specialGrenadesEH
+    {
+        init = "['ace_firedPlayer'] call BNAKC_fnc_specialGrenadesEH;";
     };
 };
 
