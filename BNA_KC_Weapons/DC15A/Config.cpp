@@ -121,12 +121,8 @@ class CfgWeapons
         class Stun: Stun
         {
             displayName = "Stun";
-            magazines[] =
-            {
-                "12thFleet_Mag_StunLong",
-                "12thFleet_Mag_StunShort"
-            };
-            magazineWell[] = {};
+            magazines[] = {};
+            magazineWell[] = { "BNA_KC_Stuns" };
         };
 
         class EGLM: UGL_F
@@ -143,23 +139,8 @@ class CfgWeapons
             useModelOptics = 0;
 
             canShootInWater = 0;
-            magazines[] =
-            {
-                "3Rnd_UGL_FlareWhite_F",
-                "3Rnd_UGL_FlareRed_F",
-                "BNA_KC_3Rnd_UGL_FlareBlue",
-                "3Rnd_UGL_FlareCIR_F",
-                "3Rnd_Smoke_Grenade_shell",
-                "3Rnd_SmokeRed_Grenade_shell",
-                "3Rnd_SmokeGreen_Grenade_shell",
-                "3Rnd_SmokeYellow_Grenade_shell",
-                "3Rnd_SmokePurple_Grenade_shell",
-                "3Rnd_SmokeBlue_Grenade_shell",
-                "3Rnd_SmokeOrange_Grenade_shell",
-                "3Rnd_HE_Grenade_shell",
-                "ACE_HuntIR_M203"
-            };
-            magazineWell[] = {}; // Removes extra magazines
+            magazines[] = {};
+            magazineWell[] = { "BNA_KC_UGL_Common" };
         };
     };
 

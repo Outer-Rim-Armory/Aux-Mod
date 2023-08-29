@@ -125,12 +125,8 @@ class CfgWeapons
         class Stun: Stun
         {
             displayName = "Stun";
-            magazines[] =
-            {
-                "12thFleet_Mag_StunLong",
-                "12thFleet_Mag_StunShort"
-            };
-            magazineWell[] = {};
+            magazines[] = {};
+            magazineWell[] = { "BNA_KC_Stuns" };
         };
     };
 

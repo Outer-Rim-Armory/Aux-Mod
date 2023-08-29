@@ -85,3 +85,111 @@ class CfgAmmo
         lightColor[] = { 0.25, 0.25, 0.5, 0.5 };
     };
 };
+
+
+class CfgMagazineWells
+{
+    class BNA_KC_1Rnd_UGL_Smokes
+    {
+        BI_Magazines[] =
+        {
+            "1Rnd_Smoke_Grenade_shell",
+            "1Rnd_SmokeRed_Grenade_shell",
+            "1Rnd_SmokeGreen_Grenade_shell",
+            "1Rnd_SmokeYellow_Grenade_shell",
+            "1Rnd_SmokePurple_Grenade_shell",
+            "1Rnd_SmokeBlue_Grenade_shell",
+            "1Rnd_SmokeOrange_Grenade_shell"
+        };
+    };
+    class BNA_KC_3Rnd_UGL_Smokes
+    {
+        BI_Magazines[] =
+        {
+            "3Rnd_Smoke_Grenade_shell",
+            "3Rnd_SmokeRed_Grenade_shell",
+            "3Rnd_SmokeGreen_Grenade_shell",
+            "3Rnd_SmokeYellow_Grenade_shell",
+            "3Rnd_SmokePurple_Grenade_shell",
+            "3Rnd_SmokeBlue_Grenade_shell",
+            "3Rnd_SmokeOrange_Grenade_shell"
+        };
+    };
+
+    class BNA_KC_1Rnd_UGL_Flares
+    {
+        BI_Magazines[] =
+        {
+            "1Rnd_UGL_FlareWhite_F",
+            "1Rnd_UGL_FlareRed_F"
+        };
+        KC_Magazines[] =
+        {
+            "BNA_KC_1Rnd_UGL_FlareBlue"
+        };
+    };
+    class BNA_KC_3Rnd_UGL_Flares
+    {
+        BI_Magazines[] =
+        {
+            "3Rnd_UGL_FlareWhite_F",
+            "3Rnd_UGL_FlareRed_F"
+        };
+        KC_Magazines[] =
+        {
+            "BNA_KC_3Rnd_UGL_FlareBlue"
+        };
+    };
+
+    class BNA_KC_UGL_Common
+    {
+        BI_Magazines[] =
+        {
+            "3Rnd_UGL_FlareWhite_F",
+            "3Rnd_UGL_FlareRed_F",
+            "3Rnd_UGL_FlareCIR_F",
+
+            "3Rnd_Smoke_Grenade_shell",
+            "3Rnd_SmokeRed_Grenade_shell",
+            "3Rnd_SmokeGreen_Grenade_shell",
+            "3Rnd_SmokeYellow_Grenade_shell",
+            "3Rnd_SmokePurple_Grenade_shell",
+            "3Rnd_SmokeBlue_Grenade_shell",
+            "3Rnd_SmokeOrange_Grenade_shell",
+
+            "3Rnd_HE_Grenade_shell"
+        };
+        KC_Magazines[] =
+        {
+            "BNA_KC_3Rnd_UGL_FlareBlue"
+        };
+        ACE_Magazines[] =
+        {
+            "ACE_HuntIR_M203"
+        };
+    };
+
+    class BNA_KC_Stuns
+    {
+        KC_Magazines[] =
+        {
+            "12thFleet_Mag_StunShort",
+            "12thFleet_Mag_StunLong"
+        };
+    };
+};
+/*
+"3Rnd_UGL_FlareWhite_F",
+            "3Rnd_UGL_FlareRed_F",
+            "BNA_KC_3Rnd_UGL_FlareBlue",
+            "3Rnd_UGL_FlareCIR_F",
+            "3Rnd_Smoke_Grenade_shell",
+            "3Rnd_SmokeRed_Grenade_shell",
+            "3Rnd_SmokeGreen_Grenade_shell",
+            "3Rnd_SmokeYellow_Grenade_shell",
+            "3Rnd_SmokePurple_Grenade_shell",
+            "3Rnd_SmokeBlue_Grenade_shell",
+            "3Rnd_SmokeOrange_Grenade_shell",
+            "3Rnd_HE_Grenade_shell",
+            "ACE_HuntIR_M203"
+*/

@@ -155,22 +155,14 @@ class CfgWeapons
         class Stun: Stun
         {
             displayName = "Stun";
-            magazines[] =
-            {
-                "12thFleet_Mag_StunLong",
-                "12thFleet_Mag_StunShort"
-            };
-            magazineWell[] = {};
+            magazines[] = {};
+            magazineWell[] = { "BNA_KC_Stuns" };
         };
         class Launcher: BNA_KC_Launcher_Muzzle
         {
             displayName = "Flare Launcher";
-            magazines[] =
-            {
-                "3Rnd_UGL_FlareWhite_F",
-                "3Rnd_UGL_FlareRed_F",
-                "BNA_KC_3Rnd_UGL_FlareBlue"
-            };
+            magazines[] = {};
+            magazineWell[] = { "BNA_KC_3Rnd_UGL_Flares" };
         };
     };
 
