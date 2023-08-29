@@ -318,7 +318,7 @@ class CfgMagazines
         displayName = "[KC] Pressurized Bacta Canister";
         displayNameShort = "Bacta Bomb";
         descriptionShort = "Pressurized bacta gas. <br />Nicknamed the 'Bacta Bomb'.";
-        picture = "\BNA_KC_Gear\Weapons\Data\Textures\UI\BNA_KC_Magazine_BactaBomb_UI.paa";
+        picture = "\BNA_KC_Weapons\Grenades\Data\Textures\UI\BNA_KC_Mag_BactaBomb_UI.paa";
         ammo = "BNA_KC_Grenade_BactaBomb_Ammo";
 
         BNA_KC_GrenadeType = "BACTA";
