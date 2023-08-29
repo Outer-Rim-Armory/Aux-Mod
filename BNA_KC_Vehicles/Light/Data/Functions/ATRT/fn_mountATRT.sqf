@@ -35,7 +35,7 @@ _atrt setVariable ["BNA_KC_ATRT_CollisionObj", _collision, true];
 // Switch camera to AT-RT
 if (cameraOn != (vehicle _atrt)) then
 {
-    (vehicle _atrt) switchcamera cameraview;
+    (vehicle _atrt) switchCamera cameraView;
     _atrt enableStamina false;
     _atrt forceWalk false;
 };
