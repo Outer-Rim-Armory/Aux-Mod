@@ -312,12 +312,12 @@ class CfgMagazines
         ammo = "12thFleet_Ammo_Rifle_Blue";
     };
 
-    class 1Rnd_SmokeBlue_Grenade_shell;
-    class BNA_KC_Mag_GR20: 1Rnd_SmokeBlue_Grenade_shell
+    class 1Rnd_Smoke_Grenade_shell;
+    class BNA_KC_Mag_GR20: 1Rnd_Smoke_Grenade_shell
     {
         displayName = "[KC] Pressurized Bacta Canister";
         displayNameShort = "Bacta Bomb";
-        descriptionShort = "Pressurized bacta gas. <br />Nicknamed the 'Bacta Bomb'.";
+        descriptionShort = "Pressurized Bacta Gas<br/>Rounds: 1<br/>Used In: GR-20<br/>Nicknamed the 'Bacta Bomb' by Republic Medics";
         picture = "\BNA_KC_Weapons\Grenades\Data\Textures\UI\BNA_KC_Mag_BactaBomb_UI.paa";
         ammo = "BNA_KC_Grenade_BactaBomb_Ammo";
 
