@@ -9,11 +9,11 @@ class CfgPatches
         {
             "JLTS_weapons_DC15X",
                 // DC-15X
-            "JLTS_weapons_DC17SA",
+            //"JLTS_weapons_DC17SA", // Looked odd when on the DC-15X
                 // Flashlight
-            "A3_Weapons_F_Acc",
+            //"A3_Weapons_F_Acc",
                 // Laser pointer
-            "ace_laserpointer",
+            //"ace_laserpointer",
                 // Green laser pointer
             "A3_Weapons_F_Mark_Acc"
                 // Bipods

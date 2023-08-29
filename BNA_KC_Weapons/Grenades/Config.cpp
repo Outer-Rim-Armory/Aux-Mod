@@ -102,6 +102,6 @@ class CfgAmmo
         aiAmmoUsageFlags = 0;
 
         simulation = "shotSmoke"; // Makes grenades lose all speed when hitting something
-		deflectionSlowDown = 0;
+        deflectionSlowDown = 0;
     };
 };
