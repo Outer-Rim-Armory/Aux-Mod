@@ -277,6 +277,7 @@ class CfgWeapons
         {
             displayName = "Bacta Launcher";
             magazines[] = { "BNA_KC_Mag_GR20" };
+            magazineWell[] = {};
         };
     };
     class BNA_KC_GR20_Fried: BNA_KC_GR20
