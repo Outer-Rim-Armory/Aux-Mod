@@ -4,6 +4,7 @@
 
 class CfgWeapons
 {
+    /*
     class 3AS_ATRT_Base;
     class 3AS_ATRT_Uniform: 3AS_ATRT_Base
     {
@@ -19,6 +20,7 @@ class CfgWeapons
             uniformClass = "BNA_KC_ATRT";
         };
     };
+    */
 };
 
 
@@ -261,6 +263,7 @@ class TransportMagazines \
 
 class CfgVehicles
 {
+    /*
     class 3AS_ATRT_Base;
     class 3AS_ATRT: 3AS_ATRT_Base
     {
@@ -305,6 +308,7 @@ class CfgVehicles
             };
         };
 	};
+    */
 
     class O_LSV_02_unarmed_F;
     class BNA_KC_Hornet_Unarmed: O_LSV_02_unarmed_F
