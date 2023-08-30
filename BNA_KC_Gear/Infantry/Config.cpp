@@ -211,6 +211,15 @@ class CfgWeapons
 
     #include "Uniforms.hpp"
 
+    class BNA_KC_OPFOR_Uniform_BXDroid: BNA_KC_Uniform_Base
+    {
+        displayName = "[KC CIS] BX-Series Commando Droid";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_OPFOR_Unit_BXDroid";
+        };
+    };
+
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
@@ -381,6 +390,20 @@ class CfgWeapons
                     passThrough = 0.10000001;
                 };
             };
+        };
+    };
+
+    class BNA_KC_OPFOR_Vest_BXDroid: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC CIS] BX-Series Commando Droid [Gun Vest]";
+    };
+    class BNA_KC_OPFOR_Vest_BXDroid_Melee: BNA_KC_OPFOR_Vest_BXDroid
+    {
+        displayName = "[KC CIS] BX-Series Commando Droid [Melee Vest]";
+        model = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
         };
     };
 
@@ -676,6 +699,78 @@ class CfgVehicles
 
     #include "P1_Units.hpp"
     #include "P2_Units.hpp"
+
+    class BNA_KC_OPFOR_Unit_BXDroid: BNA_KC_Unit_Base
+    {
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+
+        displayName = "[KC] BX-Series Commando Droid";
+
+        // Editor Properties
+        // editorSubcategory = "BNA_KC_SubCat_CIS_SpecOps";
+        // editorPreview = "";
+
+        uniformClass = "BNA_KC_OPFOR_Uniform_BXDroid";
+        model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
+        hiddenSelections[] = { "camo1" };
+        hiddenSelectionsTextures[] = { "ls_armor_redfor\uniform\cis\bx\data\body_co.paa" };
+
+        weapons[] =
+        {
+            "JLTS_E5",
+            "JLTS_RG4D",
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] =
+        {
+            "JLTS_E5",
+            "JLTS_RG4D",
+            "Throw",
+            "Put"
+        };
+        magazines[] =
+        {
+            // Ammo
+            ITEM_11("JLTS_E5_mag"),
+            ITEM_2("JLTS_RG4D_mag"),
+            // Grenades
+            ITEM_2("ls_mag_classC_thermalDet"),
+            // Smokes
+            ITEM_3("3AS_SmokeWhite")
+        };
+        respawnMagazines[] =
+        {
+            // Ammo
+            ITEM_11("JLTS_E5_mag"),
+            ITEM_2("JLTS_RG4D_mag"),
+            // Grenades
+            ITEM_2("ls_mag_classC_thermalDet"),
+            // Smokes
+            ITEM_3("3AS_SmokeWhite")
+        };
+        items[] =
+        {
+            // Other
+            ITEM_5("ACE_CableTie")
+        };
+        respawnItems[] =
+        {
+            // Other
+            ITEM_5("ACE_CableTie")
+        };
+
+        linkedItems[] =
+        {
+            "BNA_KC_OPFOR_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
+        };
+        respawnLinkedItems[] =
+        {
+            "BNA_KC_OPFOR_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
+        };
+    };
 
     // ┌───────────────────┐
     // │     Backpacks     │
