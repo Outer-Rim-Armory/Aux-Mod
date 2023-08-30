@@ -23,7 +23,10 @@ class CfgPatches
             "BNA_KC_Jetpack_JT12",
             "BNA_KC_Jetpack_JT12_LR",
             "BNA_KC_Jetpack_CDV19",
-            "BNA_KC_Jetpack_CDV21"
+            "BNA_KC_Jetpack_CDV21",
+
+            "BNA_KC_Jetpack_Droid",
+            "BNA_KC_Jetpack_Droid_Rocket"
         };
         weapons[] =
         {

@@ -92,7 +92,7 @@ class CfgVehicles
             };
         };
     };
-    
+
     class BNA_KC_Backpack;
     class BNA_KC_Jetpack_JT12: BNA_KC_Backpack
     {
@@ -155,6 +155,21 @@ class CfgVehicles
 
         // Jetpack properties
         BNA_KC_Jet_effectPoints[] = { "effect" };
+    };
+
+    class BNA_KC_Jetpack_Droid: BNA_KC_Jetpack_JT12
+    {
+        displayName = "[KC] Battle Droid Jetpack";
+
+        model = "\MRC\JLTS\characters\DroidArmor\DroidJetpackB1.p3d";
+        hiddenSelections[] = { "camo1" };
+        hiddenSelectionsTextures[] = { "\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_co.paa" };
+        picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_jetpack_ui_ca.paa";
+    };
+    class BNA_KC_Jetpack_Droid_Rocket: BNA_KC_Jetpack_Droid
+    {
+        displayName = "[KC] Battle Droid Jetpack (Rocket)";
+        hiddenSelectionsTextures[] = { "\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_rocket_co.paa" };
     };
 };
 
