@@ -58,6 +58,41 @@ class CfgMagazines
 
 class CfgVehicles
 {
+    class Man;
+    class CAManBase: Man
+    {
+        class ACE_Actions
+        {
+            class ACE_MainActions
+            {
+                class BNA_KC_Jetpack_RefuelFromBody
+                {
+                    displayName = "Refuel from";
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
+
+                    distance = 1.75;
+                    // exceptions[] = { "isNotInside", "isNotSitting", "isNotSwimming", "isNotDragging", "isNotCarrying" };
+
+                    condition = QUOTE(_this call BNAKC_Jetpacks_fnc_canRefuelFromBody);
+                    statement = QUOTE(_this call BNAKC_Jetpacks_fnc_refuelFromBody);
+                    modifierFunction = QUOTE(_this call BNAKC_Jetpacks_fnc_addJetpackNameIcon);
+                };
+
+                class BNA_KC_Jetpack_RefuelOtherPlayer
+                {
+                    displayName = "Refuel player's";
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
+
+                    distance = 1.75;
+
+                    condition = QUOTE(_this call BNAKC_Jetpacks_fnc_canRefuelOtherPlayer);
+                    statement = QUOTE(_this call BNAKC_Jetpacks_fnc_refuelOtherPlayer);
+                    modifierFunction = QUOTE(_this call BNAKC_Jetpacks_fnc_addJetpackNameIcon);
+                };
+            };
+        };
+    };
+    
     class BNA_KC_Backpack;
     class BNA_KC_Jetpack_JT12: BNA_KC_Backpack
     {
@@ -120,41 +155,6 @@ class CfgVehicles
 
         // Jetpack properties
         BNA_KC_Jet_effectPoints[] = { "effect" };
-    };
-
-    class Man;
-    class CAManBase: Man
-    {
-        class ACE_Actions
-        {
-            class ACE_MainActions
-            {
-                class BNA_KC_Jetpack_RefuelFromBody
-                {
-                    displayName = "Refuel from";
-                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
-
-                    distance = 1.75;
-                    // exceptions[] = { "isNotInside", "isNotSitting", "isNotSwimming", "isNotDragging", "isNotCarrying" };
-
-                    condition = QUOTE(_this call BNAKC_Jetpacks_fnc_canRefuelFromBody);
-                    statement = QUOTE(_this call BNAKC_Jetpacks_fnc_refuelFromBody);
-                    modifierFunction = QUOTE(_this call BNAKC_Jetpacks_fnc_addJetpackNameIcon);
-                };
-
-                class BNA_KC_Jetpack_RefuelOtherPlayer
-                {
-                    displayName = "Refuel player's";
-                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
-
-                    distance = 1.75;
-
-                    condition = QUOTE(_this call BNAKC_Jetpacks_fnc_canRefuelOtherPlayer);
-                    statement = QUOTE(_this call BNAKC_Jetpacks_fnc_refuelOtherPlayer);
-                    modifierFunction = QUOTE(_this call BNAKC_Jetpacks_fnc_addJetpackNameIcon);
-                };
-            };
-        };
     };
 };
 
