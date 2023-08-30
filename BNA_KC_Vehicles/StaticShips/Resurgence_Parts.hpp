@@ -15,14 +15,14 @@ class ven_bridge;
 class ven_door;
 class ven_door2;
 class ven_engine;
-class ven_interior_1;
-class ven_interior_2;
-class ven_interior_3;
-class ven_interior_4;
-class ven_interior_5;
-class ven_interior_6;
-class ven_interior_7;
-class ven_interior_8;
+class ven_interior1;
+class ven_interior2;
+class ven_interior3;
+class ven_interior4;
+class ven_interior5;
+class ven_interior6;
+class ven_interior7;
+class ven_interior8;
 
 class BNA_KC_Ven_Resurgence_Body1_1: ven_body1_1
 {
@@ -110,42 +110,42 @@ class BNA_KC_Ven_Resurgence_Engine: ven_engine
     hiddenSelectionsTextures[] = {BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Engine.paa};
 };
 
-class BNA_KC_Ven_Resurgence_Interior1: ven_interior_1
+class BNA_KC_Ven_Resurgence_Interior1: ven_interior1
 {
 	displayName = "[KC] Resurgence Interior 1";
     hiddenSelectionsTextures[] = {BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior1.paa};
 };
-class BNA_KC_Ven_Resurgence_Interior2: ven_interior_2
+class BNA_KC_Ven_Resurgence_Interior2: ven_interior2
 {
 	displayName = "[KC] Resurgence Interior 2";
     hiddenSelectionsTextures[] = {BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior2.paa};
 };
-class BNA_KC_Ven_Resurgence_Interior3: ven_interior_3
+class BNA_KC_Ven_Resurgence_Interior3: ven_interior3
 {
 	displayName = "[KC] Resurgence Interior 3";
     hiddenSelectionsTextures[] = {BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior3.paa};
 };
-class BNA_KC_Ven_Resurgence_Interior4: ven_interior_4
+class BNA_KC_Ven_Resurgence_Interior4: ven_interior4
 {
 	displayName = "[KC] Resurgence Interior 4";
     hiddenSelectionsTextures[] = {BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior4.paa};
 };
-class BNA_KC_Ven_Resurgence_Interior5: ven_interior_5
+class BNA_KC_Ven_Resurgence_Interior5: ven_interior5
 {
 	displayName = "[KC] Resurgence Interior 5";
     hiddenSelectionsTextures[] = {BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior5.paa};
 };
-class BNA_KC_Ven_Resurgence_Interior6: ven_interior_6
+class BNA_KC_Ven_Resurgence_Interior6: ven_interior6
 {
 	displayName = "[KC] Resurgence Interior 6";
     hiddenSelectionsTextures[] = {BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior6.paa};
 };
-class BNA_KC_Ven_Resurgence_Interior7: ven_interior_7
+class BNA_KC_Ven_Resurgence_Interior7: ven_interior7
 {
 	displayName = "[KC] Resurgence Interior 7";
     hiddenSelectionsTextures[] = {BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior7.paa};
 };
-class BNA_KC_Ven_Resurgence_Interior8: ven_interior_8
+class BNA_KC_Ven_Resurgence_Interior8: ven_interior8
 {
 	displayName = "[KC] Resurgence Interior 8";
     hiddenSelectionsTextures[] = {BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior8.paa};
