@@ -35,13 +35,17 @@ class CfgPatches
 class CfgVehicles
 {
     class Sound;
-	class ls_radio;
+    class Items_base_F;
+	class ls_radio: Items_base_F
+    {
+        class EventHandlers;
+    };
 	class BNA_KC_Restaurant_Radio: ls_radio
 	{
 		displayName = "[KC] Restaurant Ambience";
 		editorCategory = "BNA_KC_Objects";
 		editorSubcategory = "BNA_KC_AmbientSounds";
-		class EventHandlers
+		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) call BNAKC_fnc_PlayRestaurauntAmbience;";
 		};
