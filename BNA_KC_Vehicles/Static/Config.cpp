@@ -45,6 +45,8 @@ class CfgWeapons
             deploy = "BNA_KC_Mortar_M190";
             type = "mount"; // Used for tripod (mortar)
 
+            name = "M190 Mortar";
+
             deployTime = 1;
             pickupTime = 1;
         };
@@ -502,6 +504,7 @@ class CfgVehicles
         {
             disassembleTo = "BNA_KC_Mortar_M190_Carry";
             proxyWeapon = "BNA_KC_Mortar_M190_ProxyWeapon";
+            name = "M190 Mortar";
         };
     };
 };

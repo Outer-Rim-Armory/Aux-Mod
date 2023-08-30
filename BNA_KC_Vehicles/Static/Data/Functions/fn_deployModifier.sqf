@@ -31,11 +31,23 @@ else
     _configPath = configFile >> "CfgWeapons" >> secondaryWeapon _player;
 };
 
-private _name =
-[
-    _configPath,
-    "displayName",
-    "Tripod"
-] call BIS_fnc_returnConfigEntry;
+private _name = "";
+if (isText (_configPath >> "ACE_CSW" >> "name")) then
+{
+    _name =
+    [
+        _configPath >> "ACE_CSW",
+        "name"
+    ] call BIS_fnc_returnConfigEntry;
+}
+else
+{
+    _name =
+    [
+        _configPath,
+        "displayName",
+        "Tripod"
+    ] call BIS_fnc_returnConfigEntry;
+};
 
 _actionData set [1, format ["%1 %2", _actionData#1, _name]];
