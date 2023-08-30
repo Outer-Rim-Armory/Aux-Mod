@@ -9,6 +9,8 @@ class CfgPatches
         {
             // "3AS_ATRT",
 				// AT-RT
+            // cba_xeh,
+                // 3AS AT-RT doesn't inherit CBA's XEH class
             "A3_Soft_F_Exp_LSV_02",
                 // Unarmed, Armed, and AT versions of the LSV
             "A3_Soft_F_MRAP_02"

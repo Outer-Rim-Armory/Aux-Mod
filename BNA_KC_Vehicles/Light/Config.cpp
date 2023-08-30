@@ -261,6 +261,7 @@ class TransportMagazines \
 };
 
 
+// class CBA_Extended_EventHandlers_base;
 class CfgVehicles
 {
     /*
@@ -298,6 +299,7 @@ class CfgVehicles
         class EventHandlers: EventHandlers
         {
             init = "(_this select 0) call BNAKC_fnc_initATRT;"; // Overwrite 3AS script call
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
 
         class VehicleTransport
