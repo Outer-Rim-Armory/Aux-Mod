@@ -13,6 +13,7 @@
  */
 
 
+#define ATRT_BASE_HEALTH 50
 params ["_atrt"];
 if (isNull _atrt) exitWith {};
 
@@ -24,11 +25,31 @@ private _atrtDamageHandler = _atrt addEventHandler
     "HandleDamage",
     {
         params ["_atrt", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
-        _atrtHealth = _atrt getVariable ["BNA_KC_Health", 50];
+        _atrtHealth = _atrt getVariable ["BNA_KC_Health", ATRT_BASE_HEALTH];
         _atrtHealth = _atrtHealth - _damage;
         _atrt setVariable ["BNA_KC_Health", _atrtHealth, true];
+
+        if (_atrtHealth <= 0) then
+        {
+            _atrt call BNAKC_fnc_spawnATRTSmoke;
+            _atrt call BNAKC_fnc_dismountATRT;
+            _atrt setDamage 1;
+
+            _atrt removeEventHandler [_thisEvent, _thisEventHandler];
+        };
         
         0;
+    }
+];
+
+private _atrtDeltedHandler = _atrt addEventHandler
+[
+    "Deleted",
+    {
+        // Clears up particles that are spawned by BNAKC_fnc_spawnATRTSmoke before the object is deleted
+        params ["_entity"];
+        private _allEffects = _entity getVariable ["BNA_KC_ATRT_effects", []];
+        { deleteVehicle _x; } forEach _allEffects;
     }
 ];
 
@@ -51,17 +72,13 @@ _atrt addAction
                 // Rider Checks
                 !alive _rider or
                 lifeState _rider == "INCAPACITATED" or
-                _rider getVariable ["ACE_isUnconscious", false] or
-
-                // AT-RT checks
-                _atrt getVariable ["BNA_KC_Health", 50] <= 0
+                _rider getVariable ["ACE_isUnconscious", false]
             );
             // See https://community.bistudio.com/wiki/waitUntil#Problems
             !isNil "_expression" and { _expression };
         };
         
         _atrt call BNAKC_fnc_dismountATRT;
-        if (_atrt getVariable ["BNA_KC_Health", 50] <= 0) then { _atrt setDamage 1; };
     },
     [],
     1.5,

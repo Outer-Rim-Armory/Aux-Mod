@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "CfgCloudlets.hpp"
 
 
 class CfgWeapons
@@ -274,7 +275,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -282,6 +282,7 @@ class CfgVehicles
 
         displayName = "[KC] AT-RT";
         uniformClass = "BNA_KC_Uniform_ATRT";
+        impactEffectsBlood = "ImpactMetal";
 
         weapons[] = { "BNA_KC_ATRT_Turret" };
         magazines[] = { "BNA_KC_9999Rnd_ATRT_Turret_Magazine" };
@@ -784,6 +785,7 @@ class CfgFunctions
             class initATRT {};
             class mountATRT {};
             class dismountATRT {};
+            class spawnATRTSmoke {};
         };
     };
 };
