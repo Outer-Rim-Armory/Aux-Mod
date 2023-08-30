@@ -34,7 +34,8 @@ private _lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BN
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
 // Reserve variables
-private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
+private _allSources = _unit getVariable ["BNA_KC_Jet_effectSources", [[]]];
+private _effectSources = [];
 
 // Spawn effects for each effect point
 {
@@ -73,4 +74,7 @@ private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
 } forEach _effectPoints;
 
 // Save for later removal upon landing by the jetpack handler
-_unit setVariable ["BNA_KC_Jet_effectSources", _effectSources, true];
+_allSources pushBack _effectSources;
+_allSources call BNAKC_fnc_devLog;
+_effectSources call BNAKC_fnc_devLog;
+_unit setVariable ["BNA_KC_Jet_effectSources", _allSources, true];

@@ -39,16 +39,16 @@ if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_
             // Delete effects
             [
                 {
-                    private _sources = ace_player getVariable ["BNA_KC_Jet_effectSources", []];
+                    private _allSources = ace_player getVariable ["BNA_KC_Jet_effectSources", [[]]];
+                    private _sources = _allSources select 0;
                     {
                         deleteVehicle _x;
                     } forEach _sources;
-                    
-                    _sources = _sources select
-                    {
-                        !(_x isEqualTo objNull); // Removing items from the array in the forEach causes indexing problems		
-                    };
-                    ace_player setVariable ["BNA_KC_Jet_effectSources", _sources, true];
+
+                    _allSources deleteAt 0;
+
+                    if (_allSources isEqualTo []) then { _allSources = nil; };
+                    ace_player setVariable ["BNA_KC_Jet_effectSources", _allSources, true];
                 }
             ] remoteExec ["call", 0, true];
 
