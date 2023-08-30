@@ -21,7 +21,7 @@ class CfgPatches
                 // "OLV-20" APC
 			"A3_Armor_F_EPC_MBT_01",
 				// "Blitz" Tank
-			"3AS_ATTE",
+			// "3AS_ATTE",
 				// AT-TE
             "3AS_APC_Jug",
                 // HAVw A6 Juggernaut
@@ -33,7 +33,7 @@ class CfgPatches
             "BNA_KC_APC_Badger",
             "BNA_KC_APC_OLV20",
 			"BNA_KC_MBT_Slammer",
-            "BNA_KC_ATTE",
+            // "BNA_KC_ATTE",
             "BNA_KC_Juggernaut",
             "BNA_KC_Saber_M1"
 		};

@@ -675,6 +675,7 @@ class CfgVehicles
         };
 	};
 
+    /*
     class 3as_ATTE_base;
     class BNA_KC_ATTE: 3as_ATTE_base
 	{
@@ -685,7 +686,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -835,6 +835,7 @@ class CfgVehicles
             };
         };
 	};
+    */
 
     class 3AS_Jug_base_F;
     class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F
