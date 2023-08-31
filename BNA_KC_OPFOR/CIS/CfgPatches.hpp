@@ -16,15 +16,15 @@ class CfgPatches
         };
         units[] =
         {
-            "BNA_KC_Unit_OPFOR_Droid_Base",
-            "BNA_KC_Unit_OPFOR_BXDroid"
+            "BNA_KC_OPFOR_Unit_Droid_Base",
+            "BNA_KC_OPFOR_Unit_BXDroid"
         };
         weapons[] =
         {
-            "BNA_KC_Uniform_OPFOR_Droid_Base",
-            "BNA_KC_Uniform_OPFOR_BXDroid",
-            "BNA_KC_Vest_OPFOR_BXDroid",
-            "BNA_KC_Vest_OPFOR_BXDroid_Melee"
+            "BNA_KC_OPFOR_Uniform_Droid_Base",
+            "BNA_KC_OPFOR_Uniform_BXDroid",
+            "BNA_KC_OPFOR_Vest_BXDroid",
+            "BNA_KC_OPFOR_Vest_BXDroid_Melee"
         };
     };
 };

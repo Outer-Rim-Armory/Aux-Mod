@@ -103,10 +103,7 @@ class CfgPatches
             "BNA_KC_Backpack_Medic",
             "BNA_KC_Backpack_Radio",
             "BNA_KC_Backpack_Radio_Mini",
-            "BNA_KC_Backpack_Radio_Invisible",
-
-            //* Temporary, until BNA_KC_OPFOR addon is made
-            "BNA_KC_Unit_OPFOR_BXDroid"
+            "BNA_KC_Backpack_Radio_Invisible"
         };
         weapons[] =
         {
@@ -217,8 +214,6 @@ class CfgPatches
             // Insualted (Snow) Uniforms
             "BNA_KC_Uniform_Insulated",
 
-            "BNA_KC_OPFOR_Uniform_BXDroid",
-
             // Vests
             "BNA_KC_Vest_Basic",
             "BNA_KC_Vest_Medic",
@@ -227,9 +222,6 @@ class CfgPatches
             "BNA_KC_Vest_Medic_Senior_v2",
             "BNA_KC_Vest_Medic_Platoon",
             "BNA_KC_Vest_Officer",
-
-            "BNA_KC_OPFOR_Vest_BXDroid",
-            "BNA_KC_OPFOR_Vest_BXDroid_Melee",
 
             // NVGs
             "BNA_KC_NVG_Chip",

@@ -10,12 +10,12 @@ class CfgPatches
         };
         units[] =
         {
-            "BNA_KC_Unit_OPFOR_Base"
+            "BNA_KC_OPFOR_Unit_Base"
         };
         weapons[] =
         {
-            "BNA_KC_Uniform_OPFOR_Base",
-            "BNA_KC_Vest_OPFOR_Base"
+            "BNA_KC_OPFOR_Uniform_Base",
+            "BNA_KC_OPFOR_Vest_Base"
         };
         magazines[] = {};
         ammo[] = {};
