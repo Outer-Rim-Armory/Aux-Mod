@@ -51,7 +51,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC CIS] BX-Series Commando Droid [Gun Vest]";
+        displayName = "[KC CIS] BX Commando Droid [Gun Vest]";
         model = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
 
         class ItemInfo: ItemInfo
@@ -70,7 +70,7 @@ class CfgWeapons
     };
     class BNA_OPFOR_KC_Vest_BXDroid_Melee: BNA_OPFOR_KC_Vest_BXDroid
     {
-        displayName = "[KC CIS] BX-Series Commando Droid [Melee Vest]";
+        displayName = "[KC CIS] BX Commando Droid [Melee Vest]";
         model = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
         class ItemInfo: ItemInfo
         {
@@ -108,7 +108,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] BX-Series Commando Droid";
+        displayName = "[KC] BX Commando Droid";
 
         // Editor Properties
         editorSubcategory = "BNA_KC_SubCat_CIS_SpecOps";
