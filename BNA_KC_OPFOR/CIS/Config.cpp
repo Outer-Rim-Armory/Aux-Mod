@@ -22,7 +22,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC CIS] BX-Series Commando Droid";
+        displayName = "[KC CIS] BX Commando Droid";
 
         class ItemInfo: ItemInfo
         {
