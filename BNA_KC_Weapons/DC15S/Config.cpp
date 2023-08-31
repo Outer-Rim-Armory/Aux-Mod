@@ -41,6 +41,7 @@ class CfgWeapons
 
         displayName = "[KC] DC-15S (Base)";
 
+        //TODO: Fix modes, there are several non-player-visible modes missing
         modes[] =
         {
             "Single",
@@ -201,6 +202,7 @@ class CfgWeapons
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_fried_ui_ca.paa";
 
+        JLTS_baseWeapon = "BNA_KC_DC15S_RiotShield"; // TODO: Add JLTS_baseWeapon to other shielded weapons
         JLTS_isFried = 1;
         magazines[] = {};
 
