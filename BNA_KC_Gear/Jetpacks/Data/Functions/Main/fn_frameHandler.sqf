@@ -32,26 +32,11 @@ if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_
     BNA_KC_Jet_JetpackFuelHandle = nil;
 
     ace_player setVariable ["BNA_KC_Jet_hover", false];
-    
+
     // Wait a bit before removing effects, makes it look nicer
     [
         {
-            // Delete effects
-            [
-                {
-                    private _allSources = ace_player getVariable ["BNA_KC_Jet_effectSources", [[]]];
-                    private _sources = _allSources select 0;
-                    {
-                        deleteVehicle _x;
-                    } forEach _sources;
-
-                    _allSources deleteAt 0;
-
-                    if (_allSources isEqualTo []) then { _allSources = nil; };
-                    ace_player setVariable ["BNA_KC_Jet_effectSources", _allSources, true];
-                }
-            ] remoteExec ["call", 0, true];
-
+            ace_player call BNAKC_Jetpacks_fnc_deleteEffects;
             [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler;
             BNA_KC_Jet_JetpackSoundHandle = nil;
         },

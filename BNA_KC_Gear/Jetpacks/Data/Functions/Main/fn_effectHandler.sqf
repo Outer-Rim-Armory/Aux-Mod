@@ -34,7 +34,7 @@ private _lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BN
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
 // Reserve variables
-private _allSources = _unit getVariable ["BNA_KC_Jet_effectSources", [[]]];
+private _allSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
 private _effectSources = [];
 
 // Spawn effects for each effect point
@@ -65,7 +65,7 @@ private _effectSources = [];
         private _lightSource = "#lightpoint" createVehicle [0, 0, 0];
         _lightSource setLightColor _lightColor;
         _lightSource setLightAmbient [0, 0, 0];
-        _lightSource setLightBrightness 0.5;		
+        _lightSource setLightBrightness 0.5;
         // Attach to player
         _lightSource attachTo [_unit, _offsetEffect, "aimPoint"];
         // Save for later removal
@@ -75,6 +75,4 @@ private _effectSources = [];
 
 // Save for later removal upon landing by the jetpack handler
 _allSources pushBack _effectSources;
-_allSources call BNAKC_fnc_devLog;
-_effectSources call BNAKC_fnc_devLog;
 _unit setVariable ["BNA_KC_Jet_effectSources", _allSources, true];

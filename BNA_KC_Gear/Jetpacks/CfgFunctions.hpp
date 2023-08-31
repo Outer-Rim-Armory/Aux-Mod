@@ -8,6 +8,7 @@ class CfgFunctions
             class jetpack {};
             class frameHandler {};
             class effectHandler {};
+            class deleteEffects {};
             class soundHandler {};
             class fuelHandler {};
             class slowFall {};
@@ -27,7 +28,7 @@ class CfgFunctions
         {
             file = "BNA_KC_Gear\Jetpacks\Data\Functions\Utils";
             class hasJetpack {};
-            class canUseJetpack {}; 
+            class canUseJetpack {};
             class getJetpackFuel {};
             class playErrorSound {};
         };
@@ -42,7 +43,7 @@ class CfgFunctions
             class canRefuelFromBody {};
             class refuelOtherPlayer {};
             class canRefuelOtherPlayer {};
-            
+
             class addJetpackNameIcon {};
 
             class getFuelCan {};
