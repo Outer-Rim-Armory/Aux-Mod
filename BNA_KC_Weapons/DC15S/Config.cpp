@@ -18,7 +18,7 @@ class CfgWeapons
             class CowsSlot;
             class PointerSlot;
         };
-        
+
         class Single: Mode_SemiAuto
         {
             class StandardSound;
@@ -64,7 +64,7 @@ class CfgWeapons
         {
             class CowsSlot: CowsSlot
             {
-                compatibleItems[] = 
+                compatibleItems[] =
                 {
                     // Short
                     "Aux501_cows_RCO",
@@ -83,7 +83,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[]  = 
+                compatibleItems[]  =
                 {
                     "acc_pointer_ir",
                     "ace_acc_pointer_green",
