@@ -154,23 +154,23 @@ class CfgVehicles
 
         weapons[] =
         {
-            "JLTS_E5",
-            "JLTS_RG4D",
+            "SWLW_E5",
+            "SWLW_RG4D",
             "Throw",
             "Put"
         };
         respawnWeapons[] =
         {
-            "JLTS_E5",
-            "JLTS_RG4D",
+            "SWLW_E5",
+            "SWLW_RG4D",
             "Throw",
             "Put"
         };
         magazines[] =
         {
             // Ammo
-            ITEM_11("JLTS_E5_mag"),
-            ITEM_2("JLTS_RG4D_mag"),
+            ITEM_11("SWLW_E5_Mag"),
+            ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             // Smokes
@@ -179,8 +179,8 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11("JLTS_E5_mag"),
-            ITEM_2("JLTS_RG4D_mag"),
+            ITEM_11("SWLW_E5_Mag"),
+            ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             // Smokes
