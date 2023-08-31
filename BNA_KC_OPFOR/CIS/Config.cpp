@@ -26,7 +26,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            uniformClass = "BNA_KC_Unit_OPFOR_BXDroid";
+            uniformClass = "BNA_KC_OPFOR_Unit_BXDroid";
         };
     };
 
@@ -68,7 +68,7 @@ class CfgWeapons
             uniformModel = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
         };
     };
-    class BNA_OPFOR_KC_Vest_BXDroid_Melee: BNA_OPFOR_KC_Vest_BXDroid
+    class BNA_KC_OPFOR_Vest_BXDroid_Melee: BNA_KC_OPFOR_Vest_BXDroid
     {
         displayName = "[KC CIS] BX Commando Droid [Melee Vest]";
         model = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
@@ -114,7 +114,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_CIS_SpecOps";
         editorPreview = "";
 
-        uniformClass = "BNA_KC_Uniform_OPFOR_BXDroid";
+        uniformClass = "BNA_KC_OPFOR_Uniform_BXDroid";
         model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsTextures[] = { "ls_armor_redfor\uniform\cis\bx\data\body_co.paa" };
@@ -166,11 +166,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Vest_OPFOR_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_OPFOR_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Vest_OPFOR_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_OPFOR_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
         };
     };
 };
