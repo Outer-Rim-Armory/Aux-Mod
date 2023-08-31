@@ -154,14 +154,14 @@ class CfgVehicles
 
         weapons[] =
         {
-            "SWLW_E5",
+            "BNA_KC_E5",
             "SWLW_RG4D",
             "Throw",
             "Put"
         };
         respawnWeapons[] =
         {
-            "SWLW_E5",
+            "BNA_KC_E5",
             "SWLW_RG4D",
             "Throw",
             "Put"
@@ -169,7 +169,7 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11("SWLW_E5_Mag"),
+            ITEM_11("12thFleet_Mag_E5"),
             ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -179,7 +179,7 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11("SWLW_E5_Mag"),
+            ITEM_11("12thFleet_Mag_E5"),
             ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
