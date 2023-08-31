@@ -121,7 +121,7 @@ class CfgVehicles
     class BNA_KC_OPFOR_Unit_Base;
     class BNA_KC_OPFOR_Unit_Droid_Base: BNA_KC_OPFOR_Unit_Base
     {
-        faction = "BNA_KC_Faction_OPFOR_CIS";
+        faction = "BNA_KC_OPFOR_CIS";
 
         armor = 2;
         armorStructural = 3;
