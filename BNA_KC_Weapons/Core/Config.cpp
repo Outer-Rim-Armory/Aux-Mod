@@ -12,7 +12,7 @@ class CfgMagazines
 
         ammo = "12thFleet_Ammo_Stun";
     };
-    
+
     class 12thFleet_Mag_StunLong: 12thFleet_Mag_StunShort
     {
         displayName = "[12th Fleet] Stun Energy Cell (Long)";
@@ -54,19 +54,24 @@ class CfgAmmo
     {
         coefgravity = 0;
     };
+    class 12thFleet_Ammo_Rifle_Red: 12thFleet_Ammo_Rifle_Blue
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+    };
 
     class JLTS_bullet_sniper_blue;
     class 12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
     {
         coefgravity = 0;
     };
-    
+
     class JLTS_bullet_pistol_blue;
     class 12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
     {
         coefgravity = 0;
     };
-    
+
     class 3AS_EC50_BluePlasma;
     class 12thFleet_Ammo_Westar_Blue: 3AS_EC50_BluePlasma
     {
@@ -78,7 +83,7 @@ class CfgAmmo
     {
         coefgravity = 0;
     };
-    
+
     class F_40mm_White;
     class BNA_KC_Flare_Blue: F_40mm_White
     {
