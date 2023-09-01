@@ -52,20 +52,20 @@ class CfgWeapons
 
         // JLTS emp system
         JLTS_hasElectronics = 1;
-        JLTS_hasEMPProtection = 0;
+        JLTS_hasEMPProtection = 1;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
             {
-                compatibleItems[] = 
+                compatibleItems[] =
                 {
                     "JLTS_DC15X_scope"
                 };
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[]  = 
+                compatibleItems[]  =
                 {
                     // "acc_pointer_ir",
                     // "ace_acc_pointer_green",

@@ -59,7 +59,7 @@ class CfgWeapons
 
         // JLTS emp system
         JLTS_hasElectronics = 1;
-        JLTS_hasEMPProtection = 0;
+        JLTS_hasEMPProtection = 1; // Temporary fix, JLTS EMP removes all magazines but doesn't return them
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
