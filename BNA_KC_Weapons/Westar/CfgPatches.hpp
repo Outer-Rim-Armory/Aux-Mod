@@ -10,7 +10,7 @@ class CfgPatches
             "3AS_Weapons_WestarM5",
                 // Westar
             "SWLW_clones",
-                // Weapon picture
+                // Weapon/mag picture
             "Aux501_Patch_Accessories",
                 // 501st Scopes/Sights
             "A3_Weapons_F_Acc"
