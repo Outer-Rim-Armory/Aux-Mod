@@ -799,4 +799,14 @@ class CfgMusic
         duration = 125;
         musicClass = "BNA_KC_SWMusic"; // Music category
 	};
+
+
+
+	class BNA_KC_TU3
+	{
+        name = "Techno Union BM 3";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Techno_Union3.ogg",db+0,1};
+        duration = 150;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+	};
 };
