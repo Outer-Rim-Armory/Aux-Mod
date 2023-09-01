@@ -18,7 +18,7 @@ class CfgWeapons
             class CowsSlot;
             class PointerSlot;
         };
-
+        
         class Single: Single
         {
             class StandardSound;
@@ -59,13 +59,13 @@ class CfgWeapons
 
         // JLTS emp system
         JLTS_hasElectronics = 1;
-        JLTS_hasEMPProtection = 1;
+        JLTS_hasEMPProtection = 0;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
             {
-                compatibleItems[] =
+                compatibleItems[] = 
                 {
                     // Medium
                     "Aux501_cows_MRCO",
@@ -79,7 +79,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[]  =
+                compatibleItems[]  = 
                 {
                     "acc_pointer_ir",
                     "ace_acc_pointer_green",
@@ -87,7 +87,7 @@ class CfgWeapons
                 };
             };
         };
-
+        
         class Single: Single
         {
             class StandardSound: StandardSound

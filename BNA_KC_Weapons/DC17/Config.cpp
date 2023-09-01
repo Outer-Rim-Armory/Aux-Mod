@@ -76,7 +76,7 @@ class CfgWeapons
         {
             class CowsSlot;
         };
-
+        
         class Single: Mode_SemiAuto
         {
             class StandardSound;
@@ -113,14 +113,14 @@ class CfgWeapons
 
         // JLTS emp system
         JLTS_hasElectronics = 1;
-        JLTS_hasEMPProtection = 1;
+        JLTS_hasEMPProtection = 0;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
             {
                 displayName = "Optics Slot";
-                compatibleItems[] =
+                compatibleItems[] = 
                 {
                     // Sights
                     "aux501_cows_pistol",
@@ -259,7 +259,7 @@ class CfgWeapons
     {
         scope = 2;
         scopeArsenal = 2;
-
+        
         displayName = "[KC] GR-20";
         descriptionShort = "A GR-10 modified to shoot pressurized<br/>bacta canisters instead of plasma.";
         baseWeapon = "BNA_KC_GR20";
