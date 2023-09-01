@@ -736,8 +736,6 @@ class CfgVehicles
 
     class BNA_KC_Backpack_Medic: BNA_KC_Backpack
     {
-        maximumLoad = 300; // Normal is 280, Heavy is 320
-
         displayName = "[KC] Clone Trooper Medic Backpack";
 
         picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Medic_UI.paa";
