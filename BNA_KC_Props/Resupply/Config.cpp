@@ -19,14 +19,14 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "[KC] Empty Crate";
-        
+
         ace_cargo_size = 1;
         ace_cargo_noRename = 1
 
         ace_dragging_canDrag = 1;
         ace_dragging_dragDirection = 90;
         ace_dragging_dragPosition[] = {0, 1.35, 0};
-        
+
         ace_dragging_canCarry = 1;
         ace_dragging_ignoreWeightCarry = 1;
 
@@ -42,7 +42,7 @@ class CfgVehicles
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat" };
         hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa" };
-        
+
         class TransportMagazines
         {
             // Primary Ammo
@@ -283,13 +283,44 @@ class CfgVehicles
         };
     };
 
+    class BNA_KC_Resupply_SquadAmmo_Special: BNA_KC_Resupply_SquadAmmo
+    {
+        class TransportMagazines
+        {
+            class _xx_BNA_KC_Mag_HI12
+            {
+                magzine = "BNA_KC_Mag_HI12";
+                count = 20;
+            };
+            class _xx_JLTS_Z6_mag
+            {
+                magazine = "JLTS_Z6_mag";
+                count = 12;
+            };
+        };
+    };
+    class BNA_KC_Resupply_PlatoonAmmo_Special: BNA_KC_Resupply_SquadAmmo_Special
+    {
+        class TransportMagazines: TransportMagazines
+        {
+            class _xx_BNA_KC_Mag_HI12: _xx_BNA_KC_Mag_HI12
+            {
+                count = 120;
+            };
+            class _xx_JLTS_Z6_mag: _xx_JLTS_Z6_mag
+            {
+                count = 10;
+            };
+        };
+    };
+
     class BNA_KC_Resupply_SquadMedical: BNA_KC_Resupply_Base
     {
         displayName = "[KC] Medical Crate (Squad)";
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat" };
         hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa" };
-        
+
         class TransportItems
         {
             // Bandages
@@ -478,7 +509,7 @@ class CfgVehicles
     class BNA_KC_Resupply_JetpackFuel: BNA_KC_Resupply_Base
     {
         displayName = "[KC] Jetpack Fuel Tank";
-        
+
         ace_cargo_size = 2;
         ace_dragging_canDrag = 0;
         ace_dragging_canCarry = 0;
