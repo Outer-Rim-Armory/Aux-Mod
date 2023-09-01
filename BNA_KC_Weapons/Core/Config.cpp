@@ -10,6 +10,8 @@ class CfgMagazines
         displayNameShort = "Stun (Short)";
         descriptionShort = "Stun Energy Cell<br/>Rounds: 10<br/>Duration: 5 Seconds<br/>Used in: DC-15S, DC-15A, DC-17";
 
+        JLTS_hasEMPProtection = 1;
+
         ammo = "12thFleet_Ammo_Stun";
     };
 
@@ -18,6 +20,8 @@ class CfgMagazines
         displayName = "[12th Fleet] Stun Energy Cell (Long)";
         displayNameShort = "Stun (Long)";
         descriptionShort = "Stun Energy Cell<br/>Rounds: 5<br/>Duration: 15 Seconds<br/>Used in: DC-15S, DC-15A, DC-17";
+
+        JLTS_hasEMPProtection = 1;
 
         count = 5;
         JLTS_stunDuration = 15;
@@ -33,6 +37,8 @@ class CfgMagazines
 
         ammo = "BNA_KC_Flare_Blue";
         count = 1;
+
+        JLTS_hasEMPProtection = 1;
     };
 
     class BNA_KC_3Rnd_UGL_FlareBlue: BNA_KC_UGL_FlareBlue
@@ -42,6 +48,8 @@ class CfgMagazines
         descriptionShort = "Type: Flare Rounds - Blue <br />Rounds: 3 <br />Used in: EGLM, 3GL";
         mass = 12;
         count = 3;
+
+        JLTS_hasEMPProtection = 1;
     };
 };
 

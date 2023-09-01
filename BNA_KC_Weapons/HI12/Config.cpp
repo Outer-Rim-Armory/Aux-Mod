@@ -55,7 +55,7 @@ class CfgWeapons
         {
             class PointerSlot: PointerSlot
             {
-                compatibleItems[] = 
+                compatibleItems[] =
                 {
                     "acc_pointer_ir",
                     "ace_acc_pointer_green",
@@ -64,7 +64,7 @@ class CfgWeapons
             };
             class UnderBarrelSlot: UnderBarrelSlot
             {
-                compatibleItems[] = 
+                compatibleItems[] =
                 {
                     "bipod_01_F_blk"
                 };
@@ -103,7 +103,7 @@ class CfgWeapons
             burst = 3;
             reloadTime = 0.09; // Time inbetween each shot
         };
-    
+
         class OpticsModes: OpticsModes
         {
             class hi12scope_scope: hi12scope_scope
@@ -124,5 +124,7 @@ class CfgMagazines
         displayName = "[KC] HI-12 Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 30<br/>Used In: HI-12";
         count = 30;
+
+        JLTS_hasEMPProtection = 1;
     };
 };

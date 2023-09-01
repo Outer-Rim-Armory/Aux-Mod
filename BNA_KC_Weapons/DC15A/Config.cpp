@@ -18,7 +18,7 @@ class CfgWeapons
             class CowsSlot;
             class PointerSlot;
         };
-        
+
         class Single: Single
         {
             class StandardSound;
@@ -65,7 +65,7 @@ class CfgWeapons
         {
             class CowsSlot: CowsSlot
             {
-                compatibleItems[] = 
+                compatibleItems[] =
                 {
                     // Medium
                     "Aux501_cows_MRCO",
@@ -79,7 +79,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[]  = 
+                compatibleItems[]  =
                 {
                     "acc_pointer_ir",
                     "ace_acc_pointer_green",
@@ -87,7 +87,7 @@ class CfgWeapons
                 };
             };
         };
-        
+
         class Single: Single
         {
             class StandardSound: StandardSound
@@ -232,5 +232,7 @@ class CfgMagazines
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: DC-15A";
         ammo = "12thFleet_Ammo_Rifle_Blue";
+
+        JLTS_hasEMPProtection = 1;
     };
 };

@@ -19,7 +19,7 @@ class CfgWeapons
         // Model
         model = "3AS\3AS_Weapons\X42\BX42.p3d";
         picture = "\3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
-        handAnim[] = 
+        handAnim[] =
         {
             "OFP2_ManSkeleton",
             "3AS\3AS_Weapons\Data\Anim\BX42.rtm"
@@ -43,7 +43,7 @@ class CfgWeapons
         displayName = "[KC] BlastTech X-42 Flamethrower";
         magazines[] = { "BNA_KC_Mag_300Rnd_BTX42" };
     };
-    
+
     class BNA_KC_BTX45_Heavy: BNA_KC_BTX42
     {
         displayName = "[KC] BlastTech X-45 Heavy Flamethrower";
@@ -63,6 +63,8 @@ class CfgMagazines
         picture = "\3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
         UiPicture = "\3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
         mass = 50;
+
+        JLTS_hasEMPProtection = 1;
     };
 
     class BNA_KC_Mag_150Rnd_BTX42: BNA_KC_Mag_300Rnd_BTX42

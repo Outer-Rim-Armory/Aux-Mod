@@ -76,7 +76,7 @@ class CfgWeapons
         {
             class CowsSlot;
         };
-        
+
         class Single: Mode_SemiAuto
         {
             class StandardSound;
@@ -120,7 +120,7 @@ class CfgWeapons
             class CowsSlot: CowsSlot
             {
                 displayName = "Optics Slot";
-                compatibleItems[] = 
+                compatibleItems[] =
                 {
                     // Sights
                     "aux501_cows_pistol",
@@ -259,7 +259,7 @@ class CfgWeapons
     {
         scope = 2;
         scopeArsenal = 2;
-        
+
         displayName = "[KC] GR-20";
         descriptionShort = "A GR-10 modified to shoot pressurized<br/>bacta canisters instead of plasma.";
         baseWeapon = "BNA_KC_GR20";
@@ -311,6 +311,8 @@ class CfgMagazines
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-17";
         ammo = "12thFleet_Ammo_Rifle_Blue";
+
+        JLTS_hasEMPProtection = 1;
     };
 
     class 1Rnd_Smoke_Grenade_shell;
@@ -325,5 +327,7 @@ class CfgMagazines
         BNA_KC_GrenadeType = "BACTA";
         BNA_KC_GrenadeBacta_Radius = 10;
         BNA_KC_GrenadeBacta_Duration = 15;
+
+        JLTS_hasEMPProtection = 1;
     };
 };

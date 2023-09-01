@@ -162,5 +162,7 @@ class CfgMagazines
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 100<br/>Used In: E-5";
         ammo = "12thFleet_Ammo_Rifle_Red";
+
+        JLTS_hasEMPProtection = 1;
     };
 };

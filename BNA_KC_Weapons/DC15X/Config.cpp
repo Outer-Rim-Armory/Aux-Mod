@@ -58,14 +58,14 @@ class CfgWeapons
         {
             class CowsSlot: CowsSlot
             {
-                compatibleItems[] = 
+                compatibleItems[] =
                 {
                     "JLTS_DC15X_scope"
                 };
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[]  = 
+                compatibleItems[]  =
                 {
                     // "acc_pointer_ir",
                     // "ace_acc_pointer_green",
@@ -144,5 +144,7 @@ class CfgMagazines
         displayNameShort = "High Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DC-15X";
         ammo = "12thFleet_Ammo_Sniper_Blue";
+
+        JLTS_hasEMPProtection = 1;
     };
 };

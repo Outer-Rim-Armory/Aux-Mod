@@ -154,6 +154,8 @@ class CfgMagazines
         picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_mag_ui.paa";
         model = "SWLW_clones\smgs\westar_m5\WestarM5_mag.p3d";
 
+        JLTS_hasEMPProtection = 1;
+
         ammo = "12thFleet_Ammo_Rifle_Blue";
     };
 };
