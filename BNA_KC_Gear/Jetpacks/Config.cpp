@@ -24,7 +24,7 @@ class CfgWeapons
 
         BNA_KC_Jet_isFuelCan = 1;
         BNA_KC_Jet_fuelCanMag = "BNA_KC_Jetpack_FuelCan_Mag";
-        
+
         picture = "\BNA_KC_Gear\Jetpacks\Data\Textures\UI\BNA_KC_Jet_FuelCan.paa";
         model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
 
@@ -123,7 +123,7 @@ class CfgVehicles
     class BNA_KC_Jetpack_JT12_LR: BNA_KC_Jetpack_JT12
     {
         displayName = "[KC] JT-12 Jetpack [LR]";
-        
+
         // TFAR Long Range
         tf_hasLRradio = 1;
         tf_range = 25000;
@@ -144,9 +144,23 @@ class CfgVehicles
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
     };
 
-    class BNA_KC_Jetpack_CDV19: BNA_KC_Jetpack_JT12_LR
+    class BNA_KC_Jetpack_CDV21_LR: BNA_KC_Jetpack_CDV21
     {
-        displayName = "[KC] CDV-19 Jetpack [LR]";
+        displayName = "[KC] CDV-21 Jetpack [LR]";
+
+        // TFAR Long Range
+        tf_hasLRradio = 1;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+    };
+
+    class BNA_KC_Jetpack_CDV19: BNA_KC_Jetpack_JT12
+    {
+        displayName = "[KC] CDV-19 Jetpack";
 
         model = "MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
         hiddenSelections[] = { "camo1" };
@@ -155,6 +169,20 @@ class CfgVehicles
 
         // Jetpack properties
         BNA_KC_Jet_effectPoints[] = { "effect" };
+    };
+
+    class BNA_KC_Jetpack_CDV19_LR: BNA_KC_Jetpack_CDV19
+    {
+        displayName = "[KC] CDV-19 Jetpack [LR]";
+
+        // TFAR Long Range
+        tf_hasLRradio = 1;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
     };
 
     class BNA_KC_Jetpack_Droid: BNA_KC_Jetpack_JT12
