@@ -35,6 +35,12 @@ private _objectName = str _object; // used to track handlers
 while {!isNull _object} do
 {
     private _nearbyUnits = (getPosASL _object) nearEntities ["CAManBase", _healRadius];
+    if (_nearbyUnits isEqualTo []) then
+    {
+        // Check for ASL and ATL
+        _nearbyUnits = (getPosATL _object) nearEntities ["CAManBase", _healRadius];
+    };
+
     private _unitsToHeal = [];
     private _healHandlers = _object getVariable "BNA_KC_healHandlers";
 
