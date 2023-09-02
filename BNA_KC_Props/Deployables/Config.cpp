@@ -26,7 +26,7 @@ class CfgWeapons
 
         class ItemInfo: CBA_MiscItem_ItemInfo
         {
-            mass = 120;
+            mass = 50;
         };
     };
 };
@@ -151,7 +151,7 @@ class CfgEditorSubcategories
         // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
-        
+
         // Scope
         scope = 2;
         scopeCurator = 2;
