@@ -155,7 +155,6 @@ class CfgVehicles
             };
         };
     };
-
     class BNA_KC_Resupply_PlatoonAmmo: BNA_KC_Resupply_SquadAmmo
     {
         displayName = "[KC] Ammo Crate (Platoon)";
@@ -413,7 +412,6 @@ class CfgVehicles
             };
         };
     };
-
     class BNA_KC_Resupply_PlatoonMedical: BNA_KC_Resupply_SquadMedical
     {
         displayName = "[KC] Medical Crate (Platoon)";
