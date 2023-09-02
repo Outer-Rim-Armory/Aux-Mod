@@ -14,6 +14,7 @@
  */
 
 
+if !(hasInterface) exitWith {};
 params ["_unit"];
 
 // Contants and macros
