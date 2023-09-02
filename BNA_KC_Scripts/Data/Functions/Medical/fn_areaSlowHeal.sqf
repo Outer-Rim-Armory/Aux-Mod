@@ -34,6 +34,8 @@ _object setVariable ["BNA_KC_healHandlers", []];
 private _objectName = str _object; // used to track handlers
 while {!isNull _object} do
 {
+    sleep 5;
+
     private _nearbyUnits = (getPosASL _object) nearEntities ["CAManBase", _healRadius];
     if (_nearbyUnits isEqualTo []) then
     {
@@ -79,6 +81,8 @@ while {!isNull _object} do
     };
     format ["Current patients after checks: %1", _currentPatients] call BNAKC_fnc_devLog;
 
+    if (_unitsToHeal isEqualTo []) then { "No units to heal, skipping" call BNAKC_fnc_devLog; continue; };
+
     // Sort by most injured to least
     _unitsToHeal = [_unitsToHeal] call BNAKC_fnc_sortUnitsByInjuries;
     format ["Sorted units: %1", _unitsToHeal] call BNAKC_fnc_devLog;
@@ -98,8 +102,6 @@ while {!isNull _object} do
 
         _currentPatients pushBack _x;
     } forEach (_unitsToHeal - _currentPatients); // Only assign handlers to new units
-
-    sleep 5;
 };
 
 // Object removed, remove handlers
