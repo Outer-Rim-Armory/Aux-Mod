@@ -15,6 +15,7 @@
 
 
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
+params [["_boost", false]];
 
 // Exit if unit does not have / can not use a jetpack
 if !(ace_player call BNAKC_Jetpacks_fnc_hasJetpack) exitWith {};
@@ -29,13 +30,13 @@ private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BN
 
 // If the handler for using a jetpack doesn't exist, then create it
 if (isNil "BNA_KC_Jet_JetpackHandle") then
-{   
+{
     // Speed and position, used for an initial boost
     private _velocity = velocity ace_player;
     private _position = getPosASL ace_player;
 
     // Give slight boost to start jetpacking, but only if starting from the ground
-    if (ace_player call BNAKC_Jetpacks_fnc_canUseJetpack and isTouchingGround ace_player) then
+    if (isTouchingGround ace_player and _boost) then
     {
         // Teleport is needed so player will actually move upwards
         _position set [2, (_position select 2) + 0.05];

@@ -11,7 +11,6 @@ class CfgFunctions
             class deleteEffects {};
             class soundHandler {};
             class fuelHandler {};
-            class slowFall {};
         };
 
         class JetDialog

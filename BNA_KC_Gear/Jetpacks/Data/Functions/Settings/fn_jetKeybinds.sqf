@@ -16,7 +16,7 @@
         ace_player setVariable ["BNA_KC_Jet_hover", false];
 
         ace_player setVariable ["BNA_KC_Jet_rise", true];
-        call BNAKC_Jetpacks_fnc_jetpack;
+        true call BNAKC_Jetpacks_fnc_jetpack;
     },     // KeyDown
     {
         ace_player setVariable ["BNA_KC_Jet_rise", false];
@@ -39,8 +39,11 @@
     "BNA_KC_Jetpacks_SlowFall",
     ["Activate Slow Fall", "Slows the user down while falling."],
     {
-        ace_player setVariable ["BNA_KC_Jet_slowFall", true];
-        call BNAKC_Jetpacks_fnc_slowFall;
+        if !(isTouchingGround ace_player) then
+        {
+            ace_player setVariable ["BNA_KC_Jet_slowFall", true];
+            false call BNAKC_Jetpacks_fnc_jetpack;
+        };
     },     // KeyDown
     {
         ace_player setVariable ["BNA_KC_Jet_slowFall", false];
