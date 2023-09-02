@@ -18,7 +18,7 @@ params ["_unit"];
 
 if !(alive _unit) exitWith { false }; // If not alive
 
-if !(_unit getVariable ["ace_medical_bandagedWounds", []] isEqualTo []) exitWith { false }; // If has any bandaged wounds
+// if !(_unit getVariable ["ace_medical_bandagedWounds", []] isEqualTo []) exitWith { false }; // If has any bandaged wounds
 if !(_unit getVariable ["ace_medical_openWounds", []] isEqualTo []) exitWith { false }; // If has any open wounds
 
 if ((_unit getVariable ["ace_medical_bloodVolume", 6]) < 6) exitWith { false }; // Less than full blood
