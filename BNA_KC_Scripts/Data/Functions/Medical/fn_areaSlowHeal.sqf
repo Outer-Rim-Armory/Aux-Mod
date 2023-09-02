@@ -80,7 +80,7 @@ while {!isNull _object} do
     _unitsToHeal = _currentPatients + _unitsToHeal;
     format ["Patients + units to heal: %1", _unitsToHeal] call BNAKC_fnc_devLog;
 
-    _unitsToHeal = _unitsToHeal select [0, _maxPatients]; // Get only the first x patients 
+    _unitsToHeal = _unitsToHeal select [0, _maxPatients]; // Get only the first x patients
     format ["Units to heal: %1", _unitsToHeal] call BNAKC_fnc_devLog;
     format ["Actual Units to heal: %1", _unitsToHeal - _currentPatients] call BNAKC_fnc_devLog;
 
@@ -100,6 +100,6 @@ while {!isNull _object} do
 "Object removed, removing handlers" call BNAKC_fnc_devLog;
 {
     private _handlerID = _x getVariable (_objectName + "_healHandlerID"); // get the handler id saved to the unit
-    _unit setVariable [_objectName + "_healHandlerID", nil]; // remove the variable
+    _x setVariable [_objectName + "_healHandlerID", nil]; // remove the variable
     [_handlerID] call CBA_fnc_removePerFrameHandler; // remove the handler
 } forEach _currentPatients;
