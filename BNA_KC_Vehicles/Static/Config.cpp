@@ -45,7 +45,7 @@ class CfgWeapons
             deploy = "BNA_KC_Mortar_M190";
             type = "mount"; // Used for tripod (mortar)
 
-            name = "M190 Mortar";
+            name = "[KC] M-190 Mortar System";
 
             deployTime = 1;
             pickupTime = 1;
@@ -61,7 +61,7 @@ class CfgWeapons
             };
         };
     };
-    
+
     class CannonCore;
     class 3AS_mortar_82mm: CannonCore
     {
@@ -137,7 +137,7 @@ class CfgMagazines
         displayNameShort = "3Rnd HE";
         displayNameMFDFormat = "HE";
         ammo = "BNA_KC_82mm_HE_Ammo";
-        
+
         count = 3;
         initSpeed = 200;
         muzzleImpulseFactor[] = {0, 0};
@@ -323,7 +323,7 @@ class CfgVehicles
             {
                 displayName = "Deploy Tripod";
                 displayNameDefault = "";
-                
+
                 position = "camera";
                 radius = 30;
                 onlyForPlayer = 0;
@@ -398,7 +398,7 @@ class CfgVehicles
                 magazines[] = { "" };
                 weapons[] = { "" };
 
-                // Maximum and minimum angles for mortar turret 
+                // Maximum and minimum angles for mortar turret
                 maxElev = 25.74;
                 maxOutElev = 20;
 
@@ -415,7 +415,7 @@ class CfgVehicles
             ammoLoadTime = 5;
             ammoUnloadTime = 5;
             desiredAmmo = 3;
-            
+
             magazineLocation = "_target selectionPosition 'usti hlavne'";
             proxyWeapon = "";
         };
@@ -446,7 +446,7 @@ class CfgVehicles
             {
                 displayName = "Disassemble Mortar";
                 displayNameDefault = "";
-                
+
                 position = "pilotView";
                 radius = 1.5;
                 onlyForPlayer = 0;
@@ -475,10 +475,10 @@ class CfgVehicles
     };
     class BNA_KC_Mortar_M190: BNA_KC_Mortar_Base
     {
-        displayName = "[KC] Model 190 Mortar System";
+        displayName = "[KC] M-190 Mortar System";
         scope = 2;
         scopeCurator = 2;
-        
+
         hiddenSelectionsTextures[] =
         {
             "\3as\3as_static\Mortar\data\base.001_co.paa",
