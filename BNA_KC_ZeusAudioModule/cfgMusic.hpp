@@ -404,6 +404,16 @@ class CfgMusic
 	};
 
 
+    class BNA_KC_ShepherdofFire
+    {
+        name = "[RD] Elven Dirge - I Lament";
+        // Richard Daskas
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\RD_Elven_Dirge_I_Lament.ogg",db+0,1};
+        duration = 196;
+        musicClass = "BNA_KC_OtherMusic";
+    };
+
+
 	class BNA_KC_BridgeofDeath
 	{
 		name = "[Chern] Bridge of Death";
@@ -501,7 +511,7 @@ class CfgMusic
 		duration = 318;
 	};
 
-	
+
 	class BNA_KC_SS_ToTheGallows
 	{
 		name = "[SS] To The Gallows";
@@ -537,7 +547,7 @@ class CfgMusic
 		duration = 219;
 		musicClass = "BNA_KC_OtherMusic"; // Music category
 	};
-	
+
 
 	class BNA_KC_ProjectRealityMain
 	{
@@ -547,7 +557,7 @@ class CfgMusic
 		duration = 501;
 		musicClass = "BNA_KC_VGMusic"; // Music category
 	};
-	
+
 
 	class BNA_KC_Transformers_ArrivalToEarth
 	{
@@ -555,8 +565,8 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Arrival_To_Earth.ogg",db+0,1};
         duration = 315;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
-	
+	};
+
 
 	class BNA_KC_AxeManTheme
 	{
@@ -564,7 +574,7 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Axe_Man_Theme.ogg",db+0,1};
         duration = 92;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
+	};
 
 
 	class BNA_KC_FleetAdmiralFujitora
@@ -573,7 +583,7 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Fleet_Admiral_Fujitora.ogg",db+0,1};
         duration = 67;
         musicClass = "BNA_KC_AnimeMusic"; // Music category
-	}; 
+	};
 
 
 	class BNA_KC_Transformers_ForestBattle
@@ -582,16 +592,16 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Forest_Battle.ogg",db+0,1};
         duration = 122;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
+	};
 
-	
+
 	class BNA_KC_Transformers_Prime
 	{
         name = "[Transformers] Prime";
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Prime.ogg",db+0,1};
         duration = 128;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
+	};
 
 
 	class BNA_KC_RampartAndWilco
@@ -600,7 +610,7 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Rampart_and_Wilco.ogg",db+0,1};
         duration = 127;
         musicClass = "BNA_KC_SWMusic"; // Music category
-	}; 
+	};
 
 
 	class BNA_KC_RylothLastStand
@@ -609,7 +619,7 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ryloth_Last_Stand.ogg",db+0,1};
         duration = 123;
         musicClass = "BNA_KC_SWMusic"; // Music category
-	}; 
+	};
 
 
 	class BNA_KC_Transformers_Scorponok
@@ -618,7 +628,7 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Scorponok.ogg",db+0,1};
         duration = 273;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
+	};
 
 
 	class BNA_KC_SW_ImSoSorry
@@ -627,52 +637,52 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Im_so_Sorry.ogg",db+0,1};
         duration = 135;
         musicClass = "BNA_KC_SWMusic"; // Music category
-	}; 
+	};
 
-	
+
 	class BNA_KC_ElPresidente
 	{
         name = "El Presidente";
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\El_Presidente.ogg",db+0,1};
         duration = 129;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
+	};
 
-	
+
 	class BNA_KC_Nest
 	{
         name = "[Transformers II] Nest";
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Nest.ogg",db+0,1};
         duration = 124;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
+	};
 
-	
+
 	class BNA_KC_FatherG
 	{
         name = "Father G";
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Father_G.ogg",db+0,1};
         duration = 262;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
+	};
 
-	
+
 	class BNA_KC_Mayday
 	{
         name = "[TBB] Mayday";
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Mayday.ogg",db+0,1};
         duration = 325;
         musicClass = "BNA_KC_SWMusic"; // Music category
-	}; 
-	
-	
+	};
+
+
 	class BNA_KC_EPF
 	{
         name = "The EPF ";
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\EPF_Forces.ogg",db+0,1};
         duration = 198;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
+	};
 
 
 	class BNA_KC_TU1
@@ -681,7 +691,7 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Techno_Union1.ogg",db+0,1};
         duration = 202;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
+	};
 
 
 	class BNA_KC_TU2
@@ -690,7 +700,7 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Techno_Union2.ogg",db+0,1};
         duration = 202;
         musicClass = "BNA_KC_OtherMusic"; // Music category
-	}; 
+	};
 
 
 	class BNA_KC_RoseAtNightfall
@@ -699,7 +709,7 @@ class CfgMusic
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Rose_At_Nightfall.ogg",db+0,1};
         duration = 252;
         musicClass = "BNA_KC_VGMusic"; // Music category
-	}; 
+	};
 
 
 	class BNA_KC_TheAllSpark
@@ -711,7 +721,7 @@ class CfgMusic
 	};
 
 
-	
+
 	class BNA_KC_ElGeneral1
 	{
         name = "[EPF] El General Speech 1";
@@ -740,7 +750,7 @@ class CfgMusic
         musicClass = "BNA_KC_VGMusic"; // Music category
 	};
 
-	
+
 
 	class BNA_KC_ZodDisbandsCouncil
 	{
