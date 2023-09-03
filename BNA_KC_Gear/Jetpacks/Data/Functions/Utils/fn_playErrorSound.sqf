@@ -23,7 +23,8 @@ if
     isNull (objectParent _unit) and
     [_unit] call ace_common_fnc_isAwake and
     (time - _lastPlayedSound) >= ERROR_SOUND_COOLDOWN and
-    !(_unit getVariable ["BNA_KC_ATRT_isRiding", false])
+    !(_unit getVariable ["BNA_KC_ATRT_isRiding", false]) and
+    !(_unit call BNAKC_fnc_inCustomCamera)
 ) then
 {
     playSound3D ["MRC\JLTS\jumppacks\sounds\error.wss", _unit];
