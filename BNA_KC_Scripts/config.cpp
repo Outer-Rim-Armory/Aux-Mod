@@ -34,12 +34,13 @@ class CfgFunctions
 			file = "BNA_KC_Scripts\Data\Functions\Helmets";
 			class helmetNVGSwitch{};
 		};
-        
+
 		class Misc
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
 			class FixInfiniteLoading{};
 			class getConfigProperty {};
+            class inCustomCamera {};
 		};
 
 		class Fortifications
