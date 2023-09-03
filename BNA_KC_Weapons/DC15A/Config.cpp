@@ -192,7 +192,7 @@ class CfgWeapons
             "\MRC\JLTS\weapons\DC15A\data\DC15A_plastic_co.paa",
             "\MRC\JLTS\weapons\DC15A\data\DC15A_ugl_co.paa"
         };
-        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_ugl_ui_ca.paa";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_ugl_plastic_ui_ca.paa";
 
         irDistance = 0;
         irLaserEnd = "";
