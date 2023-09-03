@@ -85,8 +85,4 @@ class Extended_PostInit_EventHandlers
     {
         init = "call BNAKC_Jetpacks_fnc_jetDialogShowHideCreateHandlers;";
     };
-    class BNA_KC_Jetpacks_RefuelActions_PostInit
-    {
-        init = "call BNAKC_Jetpacks_fnc_addRefuelActions;";
-    };
 };

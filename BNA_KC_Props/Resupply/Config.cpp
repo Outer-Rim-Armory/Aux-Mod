@@ -523,7 +523,7 @@ class CfgVehicles
         // Removes the "Rename" action and locks the inventory
         class EventHandlers: EventHandlers
         {
-            init = "_box = _this select 0; _box lockInventory true; [_box, _box] call ace_common_fnc_claim;";
+            init = "_this#0 lockInventory true; [_this#0, 1] call BNAKC_Jetpacks_fnc_addRefuelActions";
         };
     };
 };

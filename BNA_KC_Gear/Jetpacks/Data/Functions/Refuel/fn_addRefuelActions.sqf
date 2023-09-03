@@ -3,17 +3,21 @@
  * Assigns jetpack refuel actions to a specified class(es). May be tweaked in the future, but serves its purpose for now.
  *
  * Arguments:
- * None
+ * object: Object - The object to add the action to
+ * showAction: Number - 1 to create the action, otherwise, do nothing
  *
  * Return Value:
  * None
  *
  * Examples:
- * call BNAKC_Jetpacks_fnc_addRefuelActions; // Should be used in a XEH
+ * [cursorObject, 1] call BNAKC_Jetpacks_fnc_addRefuelActions;
  */
 
 
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
+params ["_object", "_showAction"];
+
+if (_showAction != 1) exitWith {};
 
 private _refuelAction =
 [
@@ -37,11 +41,9 @@ private _refuelAction =
 ] call ace_interact_menu_fnc_createAction;
 
 
-// Might be re-worked if more flexibility is needed, works for now though
 [
-    "BNA_KC_Resupply_JetpackFuel", // Class
-    0, // 0 for object interaction, 1 for self interaction
-    ["ACE_MainActions"], // Path
-    _refuelAction,
-    true // Inherited classes recieve action
-] call ace_interact_menu_fnc_addActionToClass;
+    _object,
+    0,
+    ["ACE_MainActions"],
+    _refuelAction
+] call ace_interact_menu_fnc_addActionToObject;
