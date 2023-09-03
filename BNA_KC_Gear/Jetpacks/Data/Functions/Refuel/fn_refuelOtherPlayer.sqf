@@ -57,12 +57,12 @@ private _refuelHandler =
     private _fuelDiff = round (_targetNewFuel - _targetFuel);
 
     private _fuelCanNewFuel = (_fuelCanFuel - _fuelDiff) max 0;
-    
+
     _player removeMagazine _fuelCan;
     if (_fuelCanNewFuel == 0) then
     {
         // If the fuel can runs out of fuel, give the item version instead
-        private _fuelCanItem = 
+        private _fuelCanItem =
         [
             (configFile >> "CfgMagazines" >> _fuelCan),
             "BNA_KC_Jet_fuelCanItem",
@@ -112,7 +112,6 @@ private _refuelHandler =
         lifeState _player != "INCAPACITATED" and
         alive _player and
         [_player] call ace_common_fnc_isAwake and
-        _player distance _target and
-        _player distance _target <= 1.75;
+        _player distance _target <= 2;
     }
 ] call ace_common_fnc_progressBar;
