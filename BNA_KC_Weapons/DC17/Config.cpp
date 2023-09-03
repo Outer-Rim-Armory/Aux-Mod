@@ -189,6 +189,7 @@ class CfgWeapons
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
         baseWeapon = "BNA_KC_DC17_Fried";
 
+        JLTS_shieldedWeapon = "BNA_KC_DC17_RiotShield_Fried";
         JLTS_isFried = 1;
         magazines[] = {};
 
