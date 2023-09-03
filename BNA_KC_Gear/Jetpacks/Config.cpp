@@ -117,7 +117,7 @@ class CfgVehicles
             "BNA_KC_Effects_JetpackSparks_Blue",
             "BNA_KC_Effects_JetpackSmoke"
         };
-        BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Sounds\BNA_KC_Jetpack_Loop.wss";
+        BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Audio\Jetpack_Loop.wss";
         BNA_KC_Jet_lightColor[] = {0, 0.1, 0.9};
     };
     class BNA_KC_Jetpack_JT12_LR: BNA_KC_Jetpack_JT12
