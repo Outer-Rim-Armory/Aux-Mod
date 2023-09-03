@@ -31,6 +31,8 @@ if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_
     [BNA_KC_Jet_JetpackFuelHandle] call CBA_fnc_removePerFrameHandler;
     BNA_KC_Jet_JetpackFuelHandle = nil;
 
+    ace_player setUnitFreefallHeight -1;
+
     ace_player setVariable ["BNA_KC_Jet_hover", false];
 
      // Wait a bit before removing effects, makes it look nicer
