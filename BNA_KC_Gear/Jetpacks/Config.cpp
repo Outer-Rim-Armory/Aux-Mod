@@ -67,7 +67,7 @@ class CfgVehicles
             {
                 class BNA_KC_Jetpack_RefuelFromBody
                 {
-                    displayName = "Refuel from";
+                    displayName = "Take fuel from %1";
                     icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
 
                     distance = 1.75;
@@ -80,7 +80,7 @@ class CfgVehicles
 
                 class BNA_KC_Jetpack_RefuelOtherPlayer
                 {
-                    displayName = "Refuel player's";
+                    displayName = "Refuel player's %1";
                     icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
 
                     distance = 1.75;

@@ -33,5 +33,5 @@ private _icon =
     "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"
 ] call BIS_fnc_returnConfigEntry;
 
-_actionData set [1, format ["%1 %2", _actionData#1, _jetpackName]];
+_actionData set [1, format [_actionData#1, _jetpackName]];
 _actionData set [2, _icon];
