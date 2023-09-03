@@ -119,6 +119,8 @@ class CfgVehicles
         };
         BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Audio\Jetpack_Loop.wss";
         BNA_KC_Jet_lightColor[] = {0, 0.1, 0.9};
+
+        BNA_KC_Jet_freefallHeight = 500;
     };
     class BNA_KC_Jetpack_JT12_LR: BNA_KC_Jetpack_JT12
     {
