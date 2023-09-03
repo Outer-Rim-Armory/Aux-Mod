@@ -12,7 +12,7 @@
  * ["file.wss", getPosASL player] call CWR_fnc_playLocalSound;
  */
 
-params ["_file", "_position", ["_volume", 1]];
+params ["_file", "_position"];
 
 if (CWR_Voice_EnableVoiceLines) then
 {
@@ -22,7 +22,7 @@ if (CWR_Voice_EnableVoiceLines) then
         objNull,
         false,
         _position,
-        _volume, // volume
+        3, // volume
         1, // pitch
         0, // distance
         0, // offset

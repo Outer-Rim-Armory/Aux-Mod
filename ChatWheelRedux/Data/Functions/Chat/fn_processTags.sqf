@@ -61,10 +61,8 @@ _message = switch (true) do
                 private _nearbyUnits = (getPosATL player) nearEntities ["CAManBase", 30];
                 _nearbyUnits = _nearbyUnits select { isPlayer _x; };
 
-                private _volume = 1;
-                if (_configName == "NeedMedic") then { _volume = 3; };
                 {
-                    [_voiceLine, getPosASL player, _volume] remoteExecCall ["CWR_fnc_playLocalSound", _x];
+                    [_voiceLine, getPosASL player] remoteExecCall ["CWR_fnc_playLocalSound", _x];
                 } forEach _nearbyUnits;
 
                 player setVariable ["CWR_playerLastUsedVoice", time];
