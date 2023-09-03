@@ -193,6 +193,8 @@ class CfgVehicles
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsTextures[] = { "\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_co.paa" };
         picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_jetpack_ui_ca.paa";
+
+        BNA_KC_Jet_freefallHeight = 100000;
     };
     class BNA_KC_Jetpack_Droid_Rocket: BNA_KC_Jetpack_Droid
     {

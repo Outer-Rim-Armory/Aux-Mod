@@ -27,6 +27,9 @@ if !(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) exitWith
 // Jetpack properties
 private _jetpack = backpack ace_player;
 private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_strength", 1);
+private _freefallHeight = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_freefallHeight", -1);
+
+ace_player setUnitFreefallHeight _freefallHeight;
 
 // If the handler for using a jetpack doesn't exist, then create it
 if (isNil "BNA_KC_Jet_JetpackHandle") then
