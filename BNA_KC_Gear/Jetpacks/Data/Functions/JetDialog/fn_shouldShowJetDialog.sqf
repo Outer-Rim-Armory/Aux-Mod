@@ -32,7 +32,6 @@ private _showDialog =
     _unit call BNAKC_Jetpacks_fnc_hasJetpack and // True if unit is wearing a KC jetpack
     alive _unit and                              // True if unit is alive
     _unit call _isNotVehicleCrew and             // True if unit is either not in a vehicle, or is specifically a passenger
-    !(_unit call BNAKC_fnc_inCustomCamera) and   // True if unit is local player and is not in zeus, arsenal, etc.
-    !(_unit call ace_common_fnc_isswimming)      // True if unit is not swimming
+    !(_unit call BNAKC_fnc_inCustomCamera)       // True if unit is local player and is not in zeus, arsenal, etc.
 );
 _showDialog;
