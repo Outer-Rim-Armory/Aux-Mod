@@ -33,4 +33,14 @@ class CWR_VoiceLines
             "ChatWheelRedux\Data\Audio\Throw\SmokeGrenade.wss"
         };
     };
+
+    class ThrowSquadShield
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\Throw\CoverDroppedMoveInside.wss",
+            "ChatWheelRedux\Data\Audio\Throw\ShieldDeployedInTheDome.wss",
+            "ChatWheelRedux\Data\Audio\Throw\ShieldUp.wss"
+        };
+    };
 };
