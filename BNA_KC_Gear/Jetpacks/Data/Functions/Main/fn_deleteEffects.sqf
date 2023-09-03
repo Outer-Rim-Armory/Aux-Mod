@@ -15,17 +15,14 @@
 
 params ["_unit"];
 
-private _allSources = _unit getVariable ["BNA_KC_Jet_effectSources", [[]]];
-format ["_allSources: %1", _allSources] call BNAKC_fnc_devLog;
-private _sources = _allSources deleteAt 0;
+private _sources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
 format ["_sources: %1", _sources] call BNAKC_fnc_devLog;
 {
     format ["_x: %1", _x] call BNAKC_fnc_devLog;
     deleteVehicle _x;
 } forEach _sources;
 
-if (_allSources isEqualTo []) then { _allSources = nil; };
-_unit setVariable ["BNA_KC_Jet_effectSources", _allSources, true];
+_unit setVariable ["BNA_KC_Jet_effectSources", nil, true];
 
-_allSources = _unit getVariable ["BNA_KC_Jet_effectSources", [[]]];
-format ["_allSources: %1", _allSources] call BNAKC_fnc_devLog;
+_sources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
+format ["_sources: %1", _sources] call BNAKC_fnc_devLog;

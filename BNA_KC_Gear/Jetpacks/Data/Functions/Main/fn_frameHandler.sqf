@@ -33,16 +33,9 @@ if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_
 
     ace_player setVariable ["BNA_KC_Jet_hover", false];
 
-    // Wait a bit before removing effects, makes it look nicer
-    [
-        {
-            ace_player call BNAKC_Jetpacks_fnc_deleteEffects;
-            [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler;
-            BNA_KC_Jet_JetpackSoundHandle = nil;
-        },
-        [],
-        0.3
-    ] call CBA_fnc_waitAndExecute;
+    ace_player call BNAKC_Jetpacks_fnc_deleteEffects;
+    [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler;
+    BNA_KC_Jet_JetpackSoundHandle = nil;
 };
 
 
