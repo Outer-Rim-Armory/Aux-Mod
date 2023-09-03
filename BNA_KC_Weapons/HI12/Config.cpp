@@ -14,7 +14,7 @@ class CfgWeapons
 
         class OpticsModes
         {
-            // class hi12scope_sights;
+            class hi12scope_sights;
             class hi12scope_scope;
         };
     };
@@ -106,6 +106,7 @@ class CfgWeapons
 
         class OpticsModes: OpticsModes
         {
+            class hi12scope_sights: hi12scope_sights {};
             class hi12scope_scope: hi12scope_scope
             {
                 visionMode[] = { "Normal", "NVG", "TI"};
