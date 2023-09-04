@@ -68,7 +68,7 @@ class CfgVehicles
                 displayName = "Delete Effects";
                 icon = "";
 
-                condition = "!(_player getVariable ['BNA_KC_Jet_effectSources', []] isEqualTo [])";
+                condition = "!(_player getVariable ['BNA_KC_Jet_effectSources', []] isEqualTo []) and isTouchingGround _player";
                 statement = QUOTE(_player call BNAKC_Jetpacks_fnc_deleteEffects);
             };
         };
