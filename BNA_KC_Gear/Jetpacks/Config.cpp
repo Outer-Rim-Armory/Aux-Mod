@@ -61,6 +61,17 @@ class CfgVehicles
     class Man;
     class CAManBase: Man
     {
+        class ACE_SelfActions
+        {
+            class BNA_KC_Jetpack_ClearEffects
+            {
+                displayName = "Delete Effects";
+                icon = "";
+
+                condition = "!(_player getVariable ['BNA_KC_Jet_effectSources', []] isEqualTo [])";
+                statement = QUOTE(_player call BNAKC_Jetpacks_fnc_deleteEffects);
+            };
+        };
         class ACE_Actions
         {
             class ACE_MainActions
