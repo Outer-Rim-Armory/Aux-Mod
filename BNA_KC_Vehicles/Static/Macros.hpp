@@ -11,7 +11,10 @@ soundHit4[] = {"SWLB_core\data\sounds\vehicles\mortar\weapon\mortar_hit4.wss",2.
 soundHit5[] = {"SWLB_core\data\sounds\vehicles\mortar\weapon\mortar_hit5.wss",2.51189,1,1900};
 
 
-#define CSW_MAG_CARRY() type = 256; \
-scope = 2; \
-scopeArsenal = 2; \
-mass = 300;
+#define CSW_MAG_CARRY(MAG) class MAG##_CSW: MAG \
+{ \
+    type = 256; \
+    scope = 2; \
+    scopeArsenal = 2; \
+    mass = 300; \
+}

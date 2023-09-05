@@ -149,11 +149,7 @@ class CfgMagazines
         model = "\z\ace\addons\mk6mortar\data\l16_ammo_he.p3d";
         picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
     };
-    // CSW converts inventory mags into vehicle mags, this is the one a unit carries
-    class BNA_KC_Mag_3Rnd_82mm_HE_CSW: BNA_KC_Mag_3Rnd_82mm_HE
-    {
-        CSW_MAG_CARRY()
-    };
+    CSW_MAG_CARRY(BNA_KC_Mag_3Rnd_82mm_HE)
 
     class BNA_KC_Mag_3Rnd_82mm_SmokeWhite: BNA_KC_Mag_3Rnd_82mm_HE
     {
@@ -164,10 +160,7 @@ class CfgMagazines
         model = "\z\ace\addons\mk6mortar\data\l16_ammo_smk_white.p3d";
         picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_smk_white_ca.paa";
     };
-    class BNA_KC_Mag_3Rnd_82mm_SmokeWhite_CSW: BNA_KC_Mag_3Rnd_82mm_SmokeWhite
-    {
-        CSW_MAG_CARRY()
-    };
+    CSW_MAG_CARRY(BNA_KC_Mag_3Rnd_82mm_SmokeWhite)
 
     class BNA_KC_Mag_3Rnd_82mm_SmokeBlue: BNA_KC_Mag_3Rnd_82mm_SmokeWhite
     {
@@ -175,10 +168,7 @@ class CfgMagazines
         displayNameShort = "3Rnd B Smoke";
         ammo = "BNA_KC_82mm_SmokeBlue_Ammo";
     };
-    class BNA_KC_Mag_3Rnd_82mm_SmokeBlue_CSW: BNA_KC_Mag_3Rnd_82mm_SmokeBlue
-    {
-        CSW_MAG_CARRY()
-    };
+    CSW_MAG_CARRY(BNA_KC_Mag_3Rnd_82mm_SmokeBlue)
 
     class BNA_KC_Mag_3Rnd_82mm_SmokeRed: BNA_KC_Mag_3Rnd_82mm_SmokeWhite
     {
@@ -186,10 +176,7 @@ class CfgMagazines
         displayNameShort = "3Rnd R Smoke";
         ammo = "BNA_KC_82mm_SmokeRed_Ammo";
     };
-    class BNA_KC_Mag_3Rnd_82mm_SmokeRed_CSW: BNA_KC_Mag_3Rnd_82mm_SmokeRed
-    {
-        CSW_MAG_CARRY()
-    };
+    CSW_MAG_CARRY(BNA_KC_Mag_3Rnd_82mm_SmokeRed)
 };
 
 
