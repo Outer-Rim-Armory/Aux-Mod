@@ -1,8 +1,8 @@
 class CfgPatches
 {
-	class BNA_KC_Vehicles_StaticShips
+	class BNA_KC_Props_StaticShips
 	{
-		addonRootClass= "BNA_KC_Vehicles";
+		addonRootClass = "BNA_KC_Props";
 		author = "SweMonkey and DartRuffian";
 		requiredVersion = 0.1;
 		requiredAddons[] =

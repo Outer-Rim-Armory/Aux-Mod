@@ -12,4 +12,8 @@ class CfgPatches
         magazines[] = {};
         ammo[] = {};
     };
+    class BNA_KC_Vehicles_StaticShips: BNA_KC_Gear_Weapons
+    {
+        addonRootClass = "BNA_KC_Vehicles";
+    };
 };
