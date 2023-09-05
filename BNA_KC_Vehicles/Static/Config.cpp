@@ -358,9 +358,9 @@ class CfgVehicles
         // ACE
         ace_cargo_noRename = 1;
         ace_dragging_canDrag = 1;
-        ace_dragging_dragPosition[] = {0, 1.2, 0};
+        ace_dragging_dragPosition[] = { 0, 1.2, 0 };
         ace_dragging_canCarry = 1;
-        ace_dragging_carryPosition[] = {0, 1.2, 0};
+        ace_dragging_carryPosition[] = { 0, 1.2, 0 };
 
         model = "3AS\3as_static\Mortar\model\republicmortar.p3d";
         hiddenSelections[] = {"Camo_1","Camo_2"};
