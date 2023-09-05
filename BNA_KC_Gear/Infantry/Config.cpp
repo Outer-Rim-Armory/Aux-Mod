@@ -500,7 +500,6 @@ class CfgVehicles
     // │       Units       │
     // └───────────────────┘
     class lsd_gar_trooper_phase1;
-    class lsd_gar_phase2Insulated_base;
 
     class BNA_KC_Unit_Base: lsd_gar_trooper_phase1
     {
