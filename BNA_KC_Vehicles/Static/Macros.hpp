@@ -1,3 +1,11 @@
+// 500 meters, original 0.35
+#define MORTAR_RANGE_SMALL 0.3504
+// 1998 meters, original 0.7
+#define MORTAR_RANGE_MEDIUM 0.7
+// 400 meters, original 1
+#define MORTAR_RANGE_FAR 0.4953
+
+
 #define MORTAR_SOUND_FIRE() reloadSound[] = {"swlb_core\data\sounds\vehicles\mortar\weapon\mortar_reload.wss", 2, 1, 20}; \
 reloadMagazineSound[] = {"swlb_core\data\sounds\vehicles\mortar\weapon\mortar_reloadMagazine.wss", 1, 1, 20};
 

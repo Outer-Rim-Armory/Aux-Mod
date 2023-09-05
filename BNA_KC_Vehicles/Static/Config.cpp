@@ -84,7 +84,7 @@ class CfgWeapons
         class Single1: Single1
         {
             displayName="$STR_A3_mortar_82mm_Single10";
-            artilleryCharge = 0.2215; // original: 0.35
+            artilleryCharge = MORTAR_RANGE_SMALL;
             reloadTime = 4;
 
             MORTAR_SOUND_FIRE()
@@ -92,19 +92,19 @@ class CfgWeapons
         class Single2: Single1
         {
             displayName="$STR_A3_mortar_82mm_Single20";
-            showToPlayer = 0; // Hides from the menu
-            // artilleryCharge = 0.7; // original 0.7
+            showToPlayer = 0;
+            artilleryCharge = MORTAR_RANGE_MEDIUM;
         };
         class Single3: Single1
         {
             displayName="$STR_A3_mortar_82mm_Single30";
-            artilleryCharge = 0.3135; // original: 1
+            artilleryCharge = MORTAR_RANGE_FAR;
         };
 
         class Burst1: Burst1
         {
             displayName="$STR_A3_mortar_82mm_Burst10";
-            artilleryCharge = 0.2215; // original: 0.35
+            artilleryCharge = MORTAR_RANGE_SMALL;
             reloadTime = 4;
 
             MORTAR_SOUND_FIRE()
@@ -112,12 +112,12 @@ class CfgWeapons
         class Burst2: Burst1
         {
             displayName="$STR_A3_mortar_82mm_Burst20";
-            // artilleryCharge = 0.7; // original 0.7
+            artilleryCharge = MORTAR_RANGE_MEDIUM;
         };
         class Burst3: Burst1
         {
             displayName="$STR_A3_mortar_82mm_Single30";
-            artilleryCharge = 0.3135; // original: 1
+            artilleryCharge = MORTAR_RANGE_FAR;
         };
     };
     class BNA_KC_Mortar_M190_ProxyWeapon: BNA_KC_Mortar_M190_Turret
@@ -386,7 +386,7 @@ class CfgVehicles
                 weapons[] = { "" };
 
                 // Maximum and minimum angles for mortar turret
-                maxElev = 25.74;
+                maxElev = 25.762;
                 maxOutElev = 20;
 
                 minElev = -30;
