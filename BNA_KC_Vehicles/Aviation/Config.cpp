@@ -488,25 +488,6 @@ class CfgVehicles
 	};
 };
 
-class Extended_init_EventHandlers
-{
-    // Add LS Impulse to 3AS vics
-	class BNA_KC_LAATi_MK1
-	{
-		class BNA_KC_LAATi_MK1_init
-		{
-			init = "(_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";
-		};
-	};
-	class BNA_KC_LAATi_MK2
-	{
-		class BNA_KC_LAATi_MK2_init
-		{
-			init = "(_this) spawn ls_vehicle_fnc_ImpulsorMonitor;";
-		};
-	};
-};
-
 
 class CfgSounds
 {
