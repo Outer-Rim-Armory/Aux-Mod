@@ -160,7 +160,7 @@ class CfgVehicles
                 onlyforplayer = 0;
                 hideOnUse = 1;
 
-                condition = QUOTE(isEngineOn this and ls_player == currentPilot this and isTouchingGround this;);
+                condition = QUOTE(isEngineOn this and ls_player == currentPilot this and !isTouchingGround this;);
                 statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
             };
             class impulseOff: impulseOn
