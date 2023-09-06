@@ -9,6 +9,21 @@ class CfgFunctions
             class specialLoad {};
         };
     };
+
+    class ls_vehicle
+    {
+        class scripts
+        {
+            class ImpulseKey
+            {
+                file = "BNA_KC_Vehicles\Aviation\Data\Functions\fn_impulseKey.sqf";
+            };
+            class RepulseKey
+            {
+                file = "BNA_KC_Vehicles\Aviation\Data\Functions\fn_repulseKey.sqf";
+            };
+        };
+    };
 };
 
 
