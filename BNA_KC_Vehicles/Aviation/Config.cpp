@@ -5,10 +5,18 @@
 
 class CfgVehicles
 {
-    class B_Heli_Attack_01_base_F;
-    class 3as_laat_Base: B_Heli_Attack_01_base_F
+    class Heli_Attack_01_base_F;
+    class B_Heli_Attack_01_base_F: Heli_Attack_01_base_F
     {
         class UserActions;
+    };
+    class 3as_laat_Base: B_Heli_Attack_01_base_F
+    {
+        class UserActions: UserActions
+        {
+            class impulseOn;
+            class impulseOff;
+        };
         class pilotCamera;
         class AnimationSources;
     };
@@ -143,13 +151,32 @@ class CfgVehicles
         // Special Load
         class UserActions: UserActions
         {
+            class impulseOn: impulseOn
+            {
+                displayName = "Impulse";
+                position = "pilotview";
+                radius = 5;
+
+                shortcut = "User19";
+                onlyforplayer = 0;
+
+                condition = "isEngineOn this and ls_player == currentPilot this;";
+                statement = "this call ls_vehicle_fnc_ImpulseJoystick;";
+            };
+            class impulseOff: impulseOn
+            {
+                displayName = "Repulse";
+                shortcut = "User20";
+                statement = "this call ls_vehicle_fnc_RepulseJoystick;";
+            };
+
             class SpecialLoadVehicle
             {
                 // Special action used for vehicles that are not fully compatible with ViV (vehicle-in-vehicle)
                 // Notably used for 3AS's AT-TE
                 displayName = "Load Vehicle (Custom)";
                 displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
-                
+
                 position = "pilotview";
                 radius = 30;
                 onlyForPlayer = 0;
@@ -249,8 +276,8 @@ class CfgVehicles
 
         displayName = "[KC] LAAT/c";
         crew = "BNA_KC_Unit_Phase2_Pilot";
-        
-        hiddenSelectionsTextures[] = 
+
+        hiddenSelectionsTextures[] =
         {
             "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Auxiliary.paa",
             "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Cockpit.paa",
@@ -279,7 +306,7 @@ class CfgVehicles
             {
                 author = "Dexus";
                 displayName = "Keeli Company";
-                textures[] = 
+                textures[] =
                 {
                     "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Auxiliary.paa",
                     "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Cockpit.paa",
@@ -296,7 +323,7 @@ class CfgVehicles
             {
                 displayName = "Load Vehicle (Custom)";
                 displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
-                
+
                 position = "pilotview";
                 radius = 30;
                 onlyForPlayer = 0;
@@ -314,7 +341,7 @@ class CfgVehicles
         ls_impulsor_fuelDrain_1 = 0;
         ls_impulsor_fuelDrain_2 = 0;
         // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
-        // ls_impulsor_boostSpeed_2 = 600; 
+        // ls_impulsor_boostSpeed_2 = 600;
     };
 
     class 3AS_Republic_Transport_01;
@@ -342,7 +369,7 @@ class CfgVehicles
 			"3as\3as_starships\data\hs_int_co.paa"
 		};
 	};
-	
+
 	class Plane;
 	class Plane_Base_F: Plane {};
 	class VTOL_Base_F: Plane_Base_F {};
@@ -375,8 +402,8 @@ class CfgVehicles
         displayName = "[KC] Galaxy HAG";
         crew = "BNA_KC_Unit_Phase2_Pilot";
 		typicalCargo[] = {"B_T_Soldier_F"};
-		
-		hiddenSelectionsTextures[] = 
+
+		hiddenSelectionsTextures[] =
 		{
 			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa",
 			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa",
@@ -384,10 +411,10 @@ class CfgVehicles
 			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa",
 			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"
 		};
-		
+
 		class Turrets: Turrets
 		{
-			
+
 			//class CopilotTurret: CopilotTurret{};
 			class GunnerTurret_01: GunnerTurret_01
 			{
@@ -419,13 +446,13 @@ class CfgVehicles
 				};
 			};
 		};
-		
+
 		soundEngineOffExt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_ext_stop",1,1,600};
 		soundEngineOffInt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_int_stop",1,1};
 		soundEngineOnExt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_ext_start",1,1,600};
 		soundEngineOnInt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_int_start",1,1};
 	};
-	
+
 	class VTOL_01_unarmed_base_F: VTOL_01_base_F {};
 	class VTOL_01_vehicle_base_F: VTOL_01_unarmed_base_F {};
 	class B_T_VTOL_01_vehicle_F: VTOL_01_vehicle_base_F {};
@@ -468,7 +495,7 @@ class CfgVehicles
 	};
 };
 
-class Extended_init_EventHandlers 
+class Extended_init_EventHandlers
 {
     // Add LS Impulse to 3AS vics
 	class BNA_KC_LAATi_MK1
