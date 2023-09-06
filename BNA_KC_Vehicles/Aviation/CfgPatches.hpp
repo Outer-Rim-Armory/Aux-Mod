@@ -23,7 +23,9 @@ class CfgPatches
 		units[] =
 		{
 			"BNA_KC_LAATi_MK1",
+			"BNA_KC_LAATi_MK1_Lamps",
 			"BNA_KC_LAATi_MK2",
+			"BNA_KC_LAATi_MK2_Lamps",
 			"BNA_KC_LAATc",
 			"BNA_KC_RepubTransport",
 			"BNA_KC_HAG_Base",

@@ -237,6 +237,21 @@ class CfgVehicles
             };
         };
     };
+    class BNA_KC_LAATi_MK1_Lamps: BNA_KC_LAATi_MK1
+    {
+        displayName = "[KC] LAAT/i MK1 (Lamps)";
+        class AnimationSources: AnimationSources
+        {
+            class Lamps: Lamps
+            {
+                initPhase = 1;
+            };
+            class Turrets: Turrets
+            {
+                initPhase = 0;
+            };
+        };
+    };
 
     class BNA_KC_LAATi_MK2: BNA_KC_LAATi_Base
     {
@@ -249,6 +264,17 @@ class CfgVehicles
         class AnimationSources: AnimationSources
         {
             class Doors: Doors
+            {
+                initPhase = 1;
+            };
+        };
+    };
+    class BNA_KC_LAATi_MK2_Lamps: BNA_KC_LAATi_MK2
+    {
+        displayName = "[KC] LAAT/i MK2 (Lamps)";
+        class AnimationSources: AnimationSources
+        {
+            class Lamps: Lamps
             {
                 initPhase = 1;
             };
