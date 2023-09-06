@@ -215,7 +215,7 @@ class CfgVehicles
             class Turrets
             {
                 source = "user";
-                initPhase = 1;
+                initPhase = 0;
                 animPeriod = 1;
             };
         };
@@ -228,6 +228,14 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "[KC] LAAT/i MK1";
+
+        class AnimationSources: AnimationSources
+        {
+            class Turrets: Turrets
+            {
+                initPhase = 1;
+            };
+        };
     };
 
     class BNA_KC_LAATi_MK2: BNA_KC_LAATi_Base
@@ -240,9 +248,9 @@ class CfgVehicles
 
         class AnimationSources: AnimationSources
         {
-            class Turrets: Turrets
+            class Doors: Doors
             {
-                animPeriod = 0.001;
+                initPhase = 1;
             };
         };
     };
