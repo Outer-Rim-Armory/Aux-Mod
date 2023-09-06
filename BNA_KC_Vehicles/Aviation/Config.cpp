@@ -159,8 +159,9 @@ class CfgVehicles
 
                 shortcut = "User19";
                 onlyforplayer = 0;
+                hideOnUse = 1;
 
-                condition = "isEngineOn this and ls_player == currentPilot this;";
+                condition = "isEngineOn this and ls_player == currentPilot this and isTouchingGround this;";
                 statement = "this call ls_vehicle_fnc_ImpulseJoystick;";
             };
             class impulseOff: impulseOn
@@ -170,19 +171,12 @@ class CfgVehicles
                 statement = "this call ls_vehicle_fnc_RepulseJoystick;";
             };
 
-            class SpecialLoadVehicle
+            class SpecialLoadVehicle: impulseOn
             {
                 // Special action used for vehicles that are not fully compatible with ViV (vehicle-in-vehicle)
                 // Notably used for 3AS's AT-TE
                 displayName = "Load Vehicle (Custom)";
                 displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
-
-                position = "pilotview";
-                radius = 30;
-                onlyForPlayer = 0;
-
-                hideOnUse = 1;
-                priority = 5;
 
                 condition = QUOTE(this call BNAKC_fnc_canSpecialLoad;);
                 statement = QUOTE(this call BNAKC_fnc_specialLoad;);
