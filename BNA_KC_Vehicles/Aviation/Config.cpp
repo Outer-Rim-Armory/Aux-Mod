@@ -148,7 +148,6 @@ class CfgVehicles
             ace_missileguidance_usePilotCameraForTargeting = 1;
         };
 
-        // Special Load
         class UserActions: UserActions
         {
             class impulseOn: impulseOn
@@ -161,14 +160,14 @@ class CfgVehicles
                 onlyforplayer = 0;
                 hideOnUse = 1;
 
-                condition = "isEngineOn this and ls_player == currentPilot this and isTouchingGround this;";
-                statement = "this call ls_vehicle_fnc_ImpulseJoystick;";
+                condition = QUOTE(isEngineOn this and ls_player == currentPilot this and isTouchingGround this;);
+                statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
             };
             class impulseOff: impulseOn
             {
                 displayName = "Repulse";
                 shortcut = "User20";
-                statement = "this call ls_vehicle_fnc_RepulseJoystick;";
+                statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick;);
             };
 
             class SpecialLoadVehicle: impulseOn
