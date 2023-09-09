@@ -3,13 +3,11 @@
 
 class CfgVehicles
 {
-    // ┌─────────────────┐
-    // │   Venators   │
-    // └─────────────────┘
+    // ┌────────────────┐
+    // │    Venators    │
+    // └────────────────┘
     #include "Resurgence_Parts.hpp"
     class venator_base_5;
-    class venator_zeus;
-
     class BNA_KC_Ven_Resurgence_OpenFullyHollowed: venator_base_5
 	{
         // Mod Info
@@ -19,7 +17,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
@@ -27,7 +24,7 @@ class CfgVehicles
 
 		displayName = "[KC] The Resurgance - Venator (Open Fully Hollowed)";
 
-		multistructureparts[] =
+		multiStructureParts[] =
 		{
 			{"BNA_KC_Ven_Resurgence_Body1_1", "body1_1"},
 			{"BNA_KC_Ven_Resurgence_Body1_2", "body1_2"},
@@ -59,7 +56,7 @@ class CfgVehicles
     class BNA_KC_Ven_Resurgence_ClosedFullyHollowed: BNA_KC_Ven_Resurgence_OpenFullyHollowed
 	{
 		displayName = "[KC] The Resurgance - Venator (Closed Fully Hollowed)";
-		multistructureparts[] =
+		multiStructureParts[] =
 		{
 			{"BNA_KC_Ven_Resurgence_Body1_1", "body1_1"},
 			{"BNA_KC_Ven_Resurgence_Body1_2", "body1_2"},
@@ -88,6 +85,7 @@ class CfgVehicles
 		};
 	};
 
+    class venator_zeus;
     class BNA_KC_Ven_Resurgence_Zeus: venator_zeus
 	{
         // Mod Info
@@ -97,7 +95,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
@@ -141,6 +138,6 @@ class CfgEditorSubcategories
 		author = "SweMonkey and DartRuffian";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Vehicles - Static Ships";
+		displayName = "Props - Static Ships";
 	};
 };
