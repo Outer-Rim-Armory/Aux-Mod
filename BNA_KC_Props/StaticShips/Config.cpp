@@ -107,27 +107,27 @@ class CfgVehicles
 
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Body1.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Body2.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Body3.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Body4.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Body5.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Body6.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Body7.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Body8.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Body9.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Body10.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Door.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Engine.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior1.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior2.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior3.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior4.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior5.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior6.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior7.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior8.paa",
-			"BNA_KC_Vehicles\StaticShips\Data\Resurgence\BNA_KC_Venator_Bridge.paa"
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Body1.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Body2.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Body3.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Body4.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Body5.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Body6.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Body7.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Body8.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Body9.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Body10.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Door.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Engine.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior1.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior2.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior3.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior4.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior5.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior6.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior7.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Interior8.paa",
+			"BNA_KC_Props\StaticShips\Data\Resurgence\BNA_KC_Venator_Bridge.paa"
 		};
 	};
 };
