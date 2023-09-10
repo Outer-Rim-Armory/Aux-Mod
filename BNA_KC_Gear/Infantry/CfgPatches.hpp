@@ -200,12 +200,14 @@ class CfgPatches
             "BNA_KC_Uniform_CSFC",
             "BNA_KC_Uniform_CMS",
             "BNA_KC_Uniform_CSM",
-            // "BNA_KC_Uniform_LT",
-            // "BNA_KC_Uniform_WO",
-            // "BNA_KC_Uniform_1LT",
-            // "BNA_KC_Uniform_CAP",
+            "BNA_KC_Uniform_WO",
+            "BNA_KC_Uniform_WO2",
+            "BNA_KC_Uniform_WO3",
+            "BNA_KC_Uniform_LT",
+            "BNA_KC_Uniform_1LT",
+            // "BNA_KC_Uniform_CPT",
             // "BNA_KC_Uniform_MAJ",
-            // "BNA_KC_Uniform_CMD"
+            // "BNA_KC_Uniform_COM",
 
             // Camo Uniforms
             "BNA_KC_Uniform_Recruit_CamoBrown",
