@@ -307,6 +307,31 @@ class BNA_KC_Unit_Rat: BNA_KC_Unit_Phase2_Base
     };
 };
 
+class BNA_KC_Unit_Sin: BNA_KC_Unit_Phase2_Base
+{
+	// Editor Attributes
+	editorSubcategory = "BNA_KC_Customs";
+
+	displayName = "[KC] Sin";
+    uniformClass = "BNA_KC_Uniform_Sin";
+	hiddenSelectionsTextures[] =
+	{
+        "BNA_KC_Gear\Customs\Data\Uniforms\Uniform_Sin_Upper.paa",
+        "BNA_KC_Gear\Customs\Data\Uniforms\Uniform_Sin_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+	// Loadout
+	linkedItems[] =
+    {
+        "BNA_KC_Helmet_ARF_Sin", "k_ls_vest_recon_officer_1", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_ARF_Sin", "k_ls_vest_recon_officer_1", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+};
+
 class BNA_KC_Unit_Stone: BNA_KC_Unit_Phase2_Base
 {
 	// Editor Attributes

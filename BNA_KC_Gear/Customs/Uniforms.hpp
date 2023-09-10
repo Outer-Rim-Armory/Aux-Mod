@@ -113,6 +113,15 @@ class BNA_KC_Uniform_Rat: BNA_KC_Uniform_Base
     };
 };
 
+class BNA_KC_Uniform_Sin: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor ('Sin')";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Sin";
+    };
+};
+
 class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Base
 {
 	displayName = "[KC] INF Armor ('Stone')";

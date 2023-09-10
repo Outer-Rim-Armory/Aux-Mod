@@ -1203,7 +1203,7 @@ class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF
 	hiddenSelectionsTextures[] =
 	{
 	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARF\BNA_KC_Helmet_ARF_Sin.paa",
-	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARF\BNA_KC_Helmet_ARF_Sin_Flaps.paa", // Helmet "flaps"
+	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARF\Helmet_ARF_Sin_Flaps.paa", // Helmet "flaps"
         "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa" // Visor
 	};
 };

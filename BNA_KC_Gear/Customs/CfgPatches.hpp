@@ -25,6 +25,7 @@ class CfgPatches
             "BNA_KC_Unit_Ponds",
             "BNA_KC_Unit_PondsTrooper",
             "BNA_KC_Unit_Rat",
+            "BNA_KC_Unit_Sin",
             "BNA_KC_Unit_Stone",
 
             // Insulated Units
@@ -151,6 +152,7 @@ class CfgPatches
             "BNA_KC_Uniform_Ponds",
             "BNA_KC_Uniform_PondsTrooper",
             "BNA_KC_Uniform_Rat",
+            "BNA_KC_Uniform_Sin",
             "BNA_KC_Uniform_Stone",
 
             // Insulated Uniforms
