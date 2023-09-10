@@ -848,6 +848,16 @@ class BNA_KC_Helmet_Phase2_Swoop: BNA_KC_Helmet_Phase2_Base
 	};
 };
 
+class BNA_KC_Helmet_Phase2_Sytha: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm ('Sytha')";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\Helmet_P2_Sytha.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
+};
+
 class BNA_KC_Helmet_Phase2_Taun: BNA_KC_Helmet_Phase2_Base
 {
 	displayName = "[KC] INF Helm ('Taun')";
