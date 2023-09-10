@@ -19,8 +19,8 @@ class CfgVehicles
         };
         class pilotCamera;
         class AnimationSources;
+        class Turrets;
     };
-
     class BNA_KC_LAATi_Base: 3as_laat_Base
     {
         // Mod Info
@@ -219,6 +219,19 @@ class CfgVehicles
                 animPeriod = 1;
             };
         };
+        class Turrets: Turrets
+        {
+            class MainTurret;
+            class CoPilot;
+            class LeftDoorGun;
+            class RightDoorGun;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class CargoTurret_05;
+            class CargoTurret_06;
+        };
     };
 
     class BNA_KC_LAATi_MK1: BNA_KC_LAATi_Base
@@ -267,6 +280,20 @@ class CfgVehicles
             {
                 initPhase = 1;
             };
+        };
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+            class CoPilot: CoPilot {};
+            class CargoTurret_01: CargoTurret_01 {};
+            class CargoTurret_02: CargoTurret_02 {};
+            class CargoTurret_03: CargoTurret_03 {};
+            class CargoTurret_04: CargoTurret_04 {};
+            class CargoTurret_05: CargoTurret_05 {};
+            class CargoTurret_06: CargoTurret_06 {};
+            delete LeftDoorGun;
+            delete RightDoorGun;
         };
     };
     class BNA_KC_LAATi_MK2_Lamps: BNA_KC_LAATi_MK2

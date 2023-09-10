@@ -88,10 +88,19 @@ class BNA_KC_Uniform_Keeli_CamoGrey: BNA_KC_Uniform_Base
 
 class BNA_KC_Uniform_Ponds: BNA_KC_Uniform_Base
 {
-	displayName = "[KC] INF Armor ('Ponds')";
+    displayName = "[KC 187th] INF Armor ('Ponds')";
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_Ponds";
+    };
+};
+
+class BNA_KC_Uniform_PondsTrooper: BNA_KC_Uniform_Base
+{
+    displayName = "[KC 187th] INF Armor";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_PondsTrooper";
     };
 };
 
@@ -101,6 +110,15 @@ class BNA_KC_Uniform_Rat: BNA_KC_Uniform_Base
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_Rat";
+    };
+};
+
+class BNA_KC_Uniform_Sin: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor ('Sin')";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Sin";
     };
 };
 
