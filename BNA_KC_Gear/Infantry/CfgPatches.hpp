@@ -156,9 +156,15 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_CMS_Legacy",
             "BNA_KC_Helmet_Phase2_CSM",
             "BNA_KC_Helmet_Phase2_CSM_Legacy",
-            // "BNA_KC_Helmet_Phase2_LT",
             "BNA_KC_Helmet_Phase2_Officer",
-            // "BNA_KC_Helmet_Phase2_Officer_Legacy",
+            "BNA_KC_Helmet_Phase2_WO",
+            "BNA_KC_Helmet_Phase2_WO2",
+            "BNA_KC_Helmet_Phase2_WO3",
+            "BNA_KC_Helmet_Phase2_LT",
+            "BNA_KC_Helmet_Phase2_1LT",
+            // "BNA_KC_Helmet_Phase2_CPT",
+            // "BNA_KC_Helmet_Phase2_MAJ",
+            // "BNA_KC_Helmet_Phase2_COM",
 
             // Camo Phase 2 Helmets
             "BNA_KC_Helmet_Phase2_Recruit_CamoBrown",
