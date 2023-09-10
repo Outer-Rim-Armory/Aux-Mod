@@ -34,6 +34,25 @@ class CfgWeapons
             uniformModel = "ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
         };
     };
+    class BNA_KC_Helmet_Phase2_Pilot_CamoBrown: BNA_KC_Helmet_Phase2_Pilot
+    {
+        displayName = "[KC] AVI P2 Helm 01+ (Pilot) - Brown Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Aviation\Data\Helmets\Helmet_P2_Pilot_CamoBrown.paa",
+            "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+        };
+    };
+    class BNA_KC_Helmet_Phase2_Pilot_CamoGrey: BNA_KC_Helmet_Phase2_Pilot
+    {
+        displayName = "[KC] AVI P2 Helm 01+ (Pilot) - Grey Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Aviation\Data\Helmets\Helmet_P2_Pilor_CamoGrey.paa",
+            "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+        };
+    };
+
     class BNA_KC_Helmet_Phase2_Pilot_Officer: BNA_KC_Helmet_Phase2_Pilot
     {
         displayName = "[KC] AVI P2 Helm 11+ (Officer)";
@@ -174,7 +193,7 @@ class CfgEditorSubcategories
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
-        
+
         scope = 2;
         scopeCurator = 2;
 

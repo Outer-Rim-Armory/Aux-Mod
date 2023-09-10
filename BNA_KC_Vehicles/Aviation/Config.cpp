@@ -286,7 +286,6 @@ class CfgVehicles
     {
         class UserActions; // LS's loading is also done through UserActions
     };
-
     class BNA_KC_LAATc: lsd_heli_laatc
     {
         // Mod Info

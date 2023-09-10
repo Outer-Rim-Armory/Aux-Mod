@@ -27,6 +27,8 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Pilot",
             "BNA_KC_Helmet_Phase2_Pilot",
             "BNA_KC_Helmet_Phase2_Pilot_Officer",
+            "BNA_KC_Helmet_Phase2_Pilot_Officer_CamoBrown",
+            "BNA_KC_Helmet_Phase2_Pilot_Officer_CamoGrey",
 
             // Uniforms
             "BNA_KC_Uniform_Pilot",

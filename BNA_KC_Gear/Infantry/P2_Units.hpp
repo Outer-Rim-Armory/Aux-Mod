@@ -263,78 +263,123 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
     };
 };
 
-// class BNA_KC_Unit_Phase2_LT: BNA_KC_Unit_Phase2_Base
-// {
-//     displayName = "[KC] INF 11 - Clone Lieutenant";
+// Start of Officer Ranks
+class BNA_KC_Unit_Phase2_WO: BNA_KC_Unit_Phase2_Base
+{
+    displayName = "[KC] INF 11 - Clone Warrant Officer";
+    // editorPreview = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Preview_Officer_P2.paa";
 
-//     uniformClass = "BNA_KC_Uniform_LT";
-//     hiddenSelectionsTextures[] =
-//     {
-//         "BNA_KC_Gear\Infantry\Data\Uniforms\BNA_KC_Uniform_LT_Upper.paa",
-//         "BNA_KC_Gear\Infantry\Data\Uniforms\BNA_KC_Uniform_LT_Lower.paa",
-//         "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-//     };
+    uniformClass = "BNA_KC_Uniform_WO";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_WO_Upper.paa",
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_WO_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
 
-//     linkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase2_LT", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase2_LT", "k_ls_vest_recon_officer_1", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
-//     };
-// };
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_WO", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_WO", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
 
-// // Start of Officer Ranks
+    backpack = "BNA_KC_Backpack_Radio_Mini";
+};
 
-// class BNA_KC_Unit_Phase2_WO: BNA_KC_Unit_Phase2_Base
-// {
-//     displayName = "[KC] INF 12 - Clone Warrant Officer";
-//  editorPreview = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Preview_Officer_P2.paa";
+class BNA_KC_Unit_Phase2_WO2: BNA_KC_Unit_Phase2_WO
+{
+    displayName = "[KC] INF 12 - Clone Warrant Officer 2";
 
-//     uniformClass = "BNA_KC_Uniform_WO";
-//     hiddenSelectionsTextures[] =
-//     {
-//         "BNA_KC_Gear\Infantry\Data\Uniforms\BNA_KC_Uniform_WO_Upper.paa",
-//         "BNA_KC_Gear\Infantry\Data\Uniforms\BNA_KC_Uniform_WO_Lower.paa",
-//         "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-//     };
+    uniformClass = "BNA_KC_Uniform_WO2";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_WO2_Upper.paa",
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_WO2_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
 
-//     linkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase2_WO", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase2_WO", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
-//     };
-// };
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_WO2", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_WO2", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+};
 
-// class BNA_KC_Unit_Phase2_1LT: BNA_KC_Unit_Phase2_WO
-// {
-//     displayName = "[KC] INF 13 - Clone 1st Lieutenant";
+class BNA_KC_Unit_Phase2_WO3: BNA_KC_Unit_Phase2_WO
+{
+    displayName = "[KC] INF 13 - Clone Warrant Officer 3";
 
-//     uniformClass = "BNA_KC_Uniform_LT";
-//     hiddenSelectionsTextures[] =
-//     {
-//         "BNA_KC_Gear\Infantry\Data\Uniforms\BNA_KC_Uniform_1LT_Upper.paa",
-//         "BNA_KC_Gear\Infantry\Data\Uniforms\BNA_KC_Uniform_1LT_Lower.paa",
-//         "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-//     };
+    uniformClass = "BNA_KC_Uniform_WO";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_WO3_Upper.paa",
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_WO3_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
 
-//     linkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase2_1LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         "BNA_KC_Helmet_Phase2_1LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
-//     };
-// };
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_WO3", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_WO3", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+};
+
+class BNA_KC_Unit_Phase2_LT: BNA_KC_Unit_Phase2_WO
+{
+    displayName = "[KC] INF 14 - Clone Lieutenant";
+
+    uniformClass = "BNA_KC_Uniform_LT";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_LT_Upper.paa",
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_LT_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+};
+
+class BNA_KC_Unit_Phase2_1LT: BNA_KC_Unit_Phase2_WO
+{
+    displayName = "[KC] INF 15 - Clone 1st Lieutenant";
+
+    uniformClass = "BNA_KC_Uniform_LT";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_1LT_Upper.paa",
+        "BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_1LT_Lower.paa",
+        "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_1LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_1LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+};
 
 // class BNA_KC_Unit_Phase2_CAP: BNA_KC_Unit_Phase2_WO
 // {
-//     displayName = "[KC] INF 14 - Clone Captain";
+//     displayName = "[KC] INF 16 - Clone Captain";
 
 //     uniformClass = "BNA_KC_Uniform_CAP";
 //     hiddenSelectionsTextures[] =
@@ -356,7 +401,7 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 
 // class BNA_KC_Unit_Phase2_MAJ: BNA_KC_Unit_Phase2_WO
 // {
-//     displayName = "[KC] INF 15 - Clone Major";
+//     displayName = "[KC] INF 17 - Clone Major";
 
 //     uniformClass = "BNA_KC_Uniform_MAJ";
 //     hiddenSelectionsTextures[] =
@@ -378,7 +423,7 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 
 // class BNA_KC_Unit_Phase2_CMD: BNA_KC_Unit_Phase2_WO
 // {
-//     displayName = "[KC] INF 16 - Clone Commander";
+//     displayName = "[KC] INF 18 - Clone Commander";
 
 //     uniformClass = "BNA_KC_Uniform_CMD";
 //     hiddenSelectionsTextures[] =

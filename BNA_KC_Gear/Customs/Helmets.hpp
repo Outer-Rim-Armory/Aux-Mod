@@ -44,7 +44,7 @@ class BNA_KC_Helmet_Phase1_Burnt_Bacta: BNA_KC_Helmet_Phase1_Burnt
     scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Burnt') [Bacta Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
@@ -79,7 +79,7 @@ class BNA_KC_Helmet_Phase1_Catholic_Kyber: BNA_KC_Helmet_Phase1_Catholic
     scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Catholic') [Kyber Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
@@ -114,7 +114,7 @@ class BNA_KC_Helmet_Phase1_Defter_Bacta: BNA_KC_Helmet_Phase1_Defter
     scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Defter') [Bacta Visor]";
-    hiddenSelectionsMaterials[] = 
+    hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
@@ -149,7 +149,7 @@ class BNA_KC_Helmet_Phase1_Dexus_Bacta: BNA_KC_Helmet_Phase1_Dexus
     scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Dexus') [Bacta Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
@@ -184,7 +184,7 @@ class BNA_KC_Helmet_Phase1_Drake_Bacta: BNA_KC_Helmet_Phase1_Drake
     scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Drake') [Bacta Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
@@ -264,7 +264,7 @@ class BNA_KC_Helmet_Phase1_Joe_Crimson: BNA_KC_Helmet_Phase1_Joe
     scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Joe') [Crimson Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
@@ -299,7 +299,7 @@ class BNA_KC_Helmet_Phase1_Keeli_Crimson: BNA_KC_Helmet_Phase1_Keeli
     scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Keeli') [Crimson Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
@@ -334,7 +334,7 @@ class BNA_KC_Helmet_Phase1_Lou_Plasma: BNA_KC_Helmet_Phase1_Lou
     scopeArsenal = 1;
 
 	displayName = "[KC] INF P1 Helm ('Lou') [Plasma Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
@@ -468,7 +468,7 @@ class BNA_KC_Helmet_Phase2_Bob: BNA_KC_Helmet_Phase2_Base
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Bob";
     BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Bob_Kyber";
-    
+
     displayName = "[KC] INF Helm ('Bob')";
     hiddenSelectionsTextures[] =
     {
@@ -481,9 +481,9 @@ class BNA_KC_Helmet_Phase2_Bob_Kyber: BNA_KC_Helmet_Phase2_Bob
     // Scopes
     scope = 1;
     scopeArsenal = 1;
-    
+
     displayName = "[KC] INF Helm ('Bob') [Kyber Visor]";
-    hiddenSelectionsMaterials[] = 
+    hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
@@ -515,7 +515,7 @@ class BNA_KC_Helmet_Phase2_Burnt_Bacta: BNA_KC_Helmet_Phase2_Burnt
     scopeArsenal = 1;
 
 	displayName = "[KC] INF Helm ('Burnt') [Bacta Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
@@ -547,7 +547,7 @@ class BNA_KC_Helmet_Phase2_Dexus_Bacta: BNA_KC_Helmet_Phase2_Dexus
     scopeArsenal = 1;
 
 	displayName = "[KC] INF Helm ('Dexus') [Bacta Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
@@ -650,7 +650,7 @@ class BNA_KC_Helmet_Phase2_Joe_Crimson: BNA_KC_Helmet_Phase2_Joe
     scopeArsenal = 1;
 
 	displayName = "[KC] INF Helm ('Joe') [Crimson Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
@@ -683,7 +683,7 @@ class BNA_KC_Helmet_Phase2_Keeli_Crimson: BNA_KC_Helmet_Phase2_Keeli
     scopeArsenal = 1;
 
 	displayName = "[KC] INF Helm ('Keeli') [Crimson Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
@@ -715,7 +715,7 @@ class BNA_KC_Helmet_Phase2_Keeli_CamoBrown_Crimson: BNA_KC_Helmet_Phase2_Keeli_C
     scopeArsenal = 1;
 
     displayName = "[KC] INF Helm ('Keeli') - Brown Camo [Crimson Visor]";
-    hiddenSelectionsMaterials[] = 
+    hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
@@ -747,7 +747,7 @@ class BNA_KC_Helmet_Phase2_Keeli_CamoGrey_Crimson: BNA_KC_Helmet_Phase2_Keeli_Ca
     scopeArsenal = 1;
 
     displayName = "[KC] INF Helm ('Keeli') - Grey Camo [Crimson Visor]";
-    hiddenSelectionsMaterials[] = 
+    hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
@@ -846,6 +846,16 @@ class BNA_KC_Helmet_Phase2_Swoop: BNA_KC_Helmet_Phase2_Base
 		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\BNA_KC_Helmet_P2_Swoop.paa",
 		"ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
 	};
+};
+
+class BNA_KC_Helmet_Phase2_Sytha: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm ('Sytha')";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\Helmet_P2_Sytha.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
 };
 
 class BNA_KC_Helmet_Phase2_Taun: BNA_KC_Helmet_Phase2_Base
@@ -952,7 +962,7 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase1_Pilot_Blue
     scopeArsenal = 1;
 
 	displayName = "[KC] AVI P1 Helm ('Blue') [Bacta Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
 		"",
@@ -1016,7 +1026,7 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase2_Pilot_Blue
     scopeArsenal = 1;
 
 	displayName = "[KC] AVI Helm ('Blue') [Bacta Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
@@ -1069,7 +1079,7 @@ class BNA_KC_Helmet_Phase2_Tanker_Catholic: BNA_KC_Helmet_Phase2_Tanker
 	displayName = "[KC] ARMR Helm ('Catholic')";
     hiddenSelectionsTextures[] =
     {
-        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 2\BNA_KC_Helmet_P2_Tanker_Catholic.paa",
+        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 2\Helmet_P2_Tanker_Catholic.paa",
         "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
     };
 
@@ -1080,16 +1090,16 @@ class BNA_KC_Helmet_Phase2_Tanker_Catholic_Kyber: BNA_KC_Helmet_Phase2_Tanker_Ca
 	// Scopes
 	scope = 1;
     scopeArsenal = 1;
-	
+
 	displayName = "[KC] ARMR Helm ('Catholic') [Kyber Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
     hiddenSelectionsTextures[] =
     {
-        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 2\BNA_KC_Helmet_P2_Tanker_Catholic.paa",
+        "BNA_KC_Gear\Customs\Data\Helmets\SpecOP\Phase 2\Helmet_P2_Tanker_Catholic.paa",
         "BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Kyber.paa"
     };
 };
@@ -1121,7 +1131,7 @@ class BNA_KC_Helmet_ARC_Drake: BNA_KC_Helmet_ARC
     BNAKC_Helmet_On  = "BNA_KC_Helmet_ARC_Drake_Bacta";
 
 	displayName = "[KC] SF ARC Helm ('Drake')";
-	hiddenSelectionsTextures[] = 
+	hiddenSelectionsTextures[] =
 	{
 	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARC\BNA_KC_Helmet_ARC_Drake.paa",
 	    "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
@@ -1134,12 +1144,12 @@ class BNA_KC_Helmet_ARC_Drake_Bacta: BNA_KC_Helmet_ARC_Drake
     scopeArsenal = 1;
 
 	displayName = "[KC] SF ARC Helm ('Drake') [Bacta Visor]";
-	hiddenSelectionsMaterials[] = 
+	hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
-	hiddenSelectionsTextures[] = 
+	hiddenSelectionsTextures[] =
 	{
 	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARC\BNA_KC_Helmet_ARC_Drake.paa",
 	    "BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Bacta.paa"
@@ -1149,7 +1159,7 @@ class BNA_KC_Helmet_ARC_Drake_Bacta: BNA_KC_Helmet_ARC_Drake
 class BNA_KC_Helmet_ARC_Hagrid: BNA_KC_Helmet_ARC
 {
 	displayName = "[KC] SF ARC Helm ('Hagrid')";
-	hiddenSelectionsTextures[] = 
+	hiddenSelectionsTextures[] =
 	{
 	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARC\BNA_KC_Helmet_ARC_Hagrid.paa",
 	    "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
@@ -1159,7 +1169,7 @@ class BNA_KC_Helmet_ARC_Hagrid: BNA_KC_Helmet_ARC
 class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC
 {
 	displayName = "[KC] SF ARC Helm ('Tyrant')";
-	hiddenSelectionsTextures[] = 
+	hiddenSelectionsTextures[] =
 	{
 	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARC\BNA_KC_Helmet_ARC_Tyrant.paa",
 	    "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
@@ -1169,7 +1179,7 @@ class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC
 class BNA_KC_Helmet_ARF_Patriot: BNA_KC_Helmet_ARF
 {
 	displayName = "[KC] SF ARF Helm ('Patriot')";
-	hiddenSelectionsTextures[] = 
+	hiddenSelectionsTextures[] =
 	{
 	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARF\BNA_KC_Helmet_ARF_Patriot.paa",
 	    "", // Helmet "flaps"
@@ -1180,7 +1190,7 @@ class BNA_KC_Helmet_ARF_Patriot: BNA_KC_Helmet_ARF
 class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF
 {
 	displayName = "[KC] SF ARF Helm ('Sin')";
-	hiddenSelectionsTextures[] = 
+	hiddenSelectionsTextures[] =
 	{
 	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARF\BNA_KC_Helmet_ARF_Sin.paa",
 	    "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\ARF\BNA_KC_Helmet_ARF_Sin_Flaps.paa", // Helmet "flaps"
@@ -1196,7 +1206,7 @@ class BNA_KC_Helmet_BARC_Rat: BNA_KC_Helmet_BARC
     BNAKC_Helmet_On  = "BNA_KC_Helmet_BARC_Rat_Crimson";
 
     displayName = "[KC] SF BARC Helm ('Rat')";
-    hiddenSelectionsTextures[] = 
+    hiddenSelectionsTextures[] =
     {
         "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\BARC\BNA_KC_Helmet_BARC_Rat.paa",
         "ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
@@ -1209,12 +1219,12 @@ class BNA_KC_Helmet_BARC_Rat_Crimson: BNA_KC_Helmet_BARC_Rat
     scopeArsenal = 1;
 
     displayName = "[KC] SF BARC Helm ('Rat') [Crimson Visor]";
-    hiddenSelectionsMaterials[] = 
+    hiddenSelectionsMaterials[] =
     {
         "",
         "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
-    hiddenSelectionsTextures[] = 
+    hiddenSelectionsTextures[] =
     {
         "BNA_KC_Gear\Customs\Data\Helmets\SpecialForces\BARC\BNA_KC_Helmet_BARC_Rat.paa",
         "BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Crimson.paa"
