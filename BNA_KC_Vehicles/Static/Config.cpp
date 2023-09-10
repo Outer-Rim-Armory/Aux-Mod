@@ -328,6 +328,7 @@ class CfgVehicles
     class Mortar_01_base_F: StaticMortar
     {
         class Turrets;
+        class HitPoints;
         class ACE_Actions;
     };
     class B_Mortar_01_F: Mortar_01_base_F
@@ -335,6 +336,10 @@ class CfgVehicles
         class Turrets: Turrets
         {
             class MainTurret;
+        };
+        class HitPoints: HitPoints
+        {
+            class HitBody;
         };
         class ACE_Actions: ACE_Actions
         {
@@ -353,6 +358,8 @@ class CfgVehicles
         scope = 1;
         scopeCurator = 0;
 
+        armor = 40;
+        armorStructural = 0.5;
         crew = "BNA_KC_Unit_Phase2_CT";
 
         // ACE
@@ -391,6 +398,15 @@ class CfgVehicles
 
                 minElev = -30;
                 minOutElev = -4;
+            };
+        };
+
+        class HitPoints: HitPoints
+        {
+            class HitBody: HitBody
+            {
+                armor = 5;
+                armorStructural = 0.25;
             };
         };
 
