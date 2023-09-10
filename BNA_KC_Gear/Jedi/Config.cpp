@@ -52,6 +52,7 @@ class CfgVehicles
     {
         displayName = "[KC] Jedi Commander";
         editorSubcategory = "BNA_KC_SubCat_Jedi";
+        editorPreview = "";
 
         uniformClass = "BNA_KC_Uniform_Jedi_Commander";
         model = "lsd_armor_bluefor\uniform\gar\jediCommander\lsd_gar_jediCommander_uniform.p3d";
@@ -115,7 +116,7 @@ class CfgEditorSubcategories
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
-        
+
         scope = 2;
         scopeCurator = 2;
 

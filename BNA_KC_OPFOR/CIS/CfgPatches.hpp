@@ -9,7 +9,7 @@ class CfgPatches
         {
             "BNA_KC_OPFOR",
                 // Base OPFOR unit, uniform, etc.
-            "BNA_KC_Gear",
+            "BNA_KC_Gear_Infantry",
                 // Base unit, uniform, etc. for actor armor
             "ls_units_redfor"
                 // BX models/texture

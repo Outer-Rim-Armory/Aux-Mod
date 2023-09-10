@@ -20,7 +20,7 @@ class CfgWeapons
 
         model = "lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
         hiddenSelections[] = { "camo1", "visor", "illum" };
-        hiddenSelectionsTextures[] = 
+        hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC.paa",
             "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
@@ -33,10 +33,29 @@ class CfgWeapons
             uniformModel = "lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
         };
     };
+    class BNA_KC_Helmet_ARC_CamoBrown: BNA_KC_Helmet_ARC
+    {
+        displayName = "[KC] SF ARC Helm - Brown Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\SpecialForces\Data\Helmets\Helmet_ARC_CamoBrown.paa",
+            "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        };
+    };
+    class BNA_KC_Helmet_ARC_CamoGrey: BNA_KC_Helmet_ARC
+    {
+        displayName = "[KC] SF ARC Helm - Grey Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\SpecialForces\Data\Helmets\Helmet_ARC_CamoGrey.paa",
+            "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        };
+    };
+
     class BNA_KC_Helmet_ARC_v2: BNA_KC_Helmet_ARC
     {
         displayName = "[KC] SF ARC Helm (v2)";
-        hiddenSelectionsTextures[] = 
+        hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC_v2.paa",
             "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
@@ -46,7 +65,7 @@ class CfgWeapons
     class BNA_KC_Helmet_ARC_Night: BNA_KC_Helmet_ARC
     {
         displayName = "[KC] SF ARC Helm (Night)";
-        hiddenSelectionsTextures[] = 
+        hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC_Night.paa",
             "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
@@ -63,7 +82,7 @@ class CfgWeapons
 
         model = "ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
         hiddenSelections[] = { "camo1", "camo2", "visor" };
-        hiddenSelectionsTextures[] = 
+        hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARF.paa", // Main Helmet
             "", // Flaps
@@ -79,11 +98,31 @@ class CfgWeapons
 
         subItems[] = { "BNA_KC_NVG_Chip" };
     };
+    class BNA_KC_Helmet_ARF_CamoBrown: BNA_KC_Helmet_ARF
+    {
+        displayName = "[KC] SF ARF 01 Helm (Enlisted) - Brown Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\SpecialForces\Data\Helmets\Helmet_ARF_CamoBrown.paa",
+            "",
+            "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+        };
+    };
+    class BNA_KC_Helmet_ARF_CamoGrey: BNA_KC_Helmet_ARF
+    {
+        displayName = "[KC] SF ARF 01 Helm (Enlisted) - Grey Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\SpecialForces\Data\Helmets\Helmet_ARF_CamoGrey.paa",
+            "",
+            "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+        };
+    };
 
     class BNA_KC_Helmet_ARF_v2: BNA_KC_Helmet_ARF
     {
         displayName = "[KC] SF ARF 01 Helm (Enlisted, v2)";
-        hiddenSelectionsTextures[] = 
+        hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARF_v2.paa",
             "",
@@ -101,7 +140,7 @@ class CfgWeapons
 
         model = "ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
         hiddenSelections[] = { "camo1", "visor" };
-        hiddenSelectionsTextures[] = 
+        hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_BARC.paa",
             "ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
@@ -333,7 +372,7 @@ class CfgEditorSubcategories
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
-        
+
         scope = 2;
         scopeCurator = 2;
 

@@ -18,7 +18,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] ARMR P2 Helm (Crewman)";
-        
+
         model = "ls_armor_bluefor\helmet\sob\phase2SpecOp\ls_sob_phase2SpecOp_helmet.p3d";
         hiddenSelections[] = { "Camo1", "visor" };
         hiddenSelectionsTextures[] =
@@ -35,6 +35,25 @@ class CfgWeapons
 
         subItems[] = { "BNA_KC_NVG_Chip" };
     };
+    class BNA_KC_Helmet_Phase2_Tanker_CamoBrown: BNA_KC_Helmet_Phase2_Tanker
+    {
+        displayName = "[KC] ARMR P2 Helm (Crewman) - Brown Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker_CamoBrown.paa",
+            "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+        };
+    };
+    class BNA_KC_Helmet_Phase2_Tanker_CamoGrey: BNA_KC_Helmet_Phase2_Tanker
+    {
+        displayName = "[KC] ARMR P2 Helm (Crewman) - Grey Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker_CamoGrey.paa",
+            "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+        };
+    };
+
     class BNA_KC_Helmet_Phase2_Tanker_v2: BNA_KC_Helmet_Phase2_Tanker
     {
         displayName = "[KC] ARMR P2 Helm (Crewman, Version 2)";
@@ -60,7 +79,7 @@ class CfgWeapons
             "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Helmet_P1_Tanker.paa",
             "ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
         };
-        
+
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = { "Camo1", "visor" };
@@ -87,7 +106,7 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    
+
     class BNA_KC_Uniform_Tanker: BNA_KC_Uniform_Base
     {
         displayName = "[KC] ARMR Uniform 01 (Crewman)";
@@ -106,7 +125,7 @@ class CfgVehicles
     // └───────────────────┘
     class BNA_KC_Unit_Phase2_Base;
     class BNA_KC_Unit_Phase2_Tanker: BNA_KC_Unit_Phase2_Base
-    {        
+    {
         displayName = "[KC] ARMR P2 Tanker";
         editorSubcategory = "BNA_KC_Armored";
 
@@ -156,7 +175,7 @@ class CfgEditorSubcategories
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
-        
+
         scope = 2;
         scopeCurator = 2;
 

@@ -192,19 +192,90 @@ class BNA_KC_Helmet_Phase2_CSM: BNA_KC_Helmet_Phase2_Base
 
 class BNA_KC_Helmet_Phase2_Officer: BNA_KC_Helmet_Phase2_Base
 {
-    displayName = "[KC] INF Helm 12+ (Officer)";
+    displayName = "[KC] INF Helm 11+ (Officer)";
     hiddenSelectionsTextures[] =
     {
         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_Officer.paa",
         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-// class BNA_KC_Helmet_Phase2_Officer_Legacy: BNA_KC_Helmet_Phase2_Base
+
+class BNA_KC_Helmet_Phase2_WO: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 11 (Warrant Officer)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_WO.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_WO2: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 12 (Warrant Officer 2)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_WO2.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_WO3: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 13 (Warrant Officer 3)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_WO3.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_LT: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 14 (Lieutenant)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_LT.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_1LT: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm 15 (1st Lieutenant)";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_1LT.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+// class BNA_KC_Helmet_Phase2_CPT: BNA_KC_Helmet_Phase2_Base
 // {
-//     displayName = "[KC] INF Helm 12+ (Officer, Legacy)";
+//     displayName = "[KC] INF Helm 16 (Captain)";
 //     hiddenSelectionsTextures[] =
 //     {
-//         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\BNA_KC_Helmet_P2_Officer_Legacy.paa",
+//         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_CPT.paa",
+//         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+//     };
+// };
+
+// class BNA_KC_Helmet_Phase2_MAJ: BNA_KC_Helmet_Phase2_Base
+// {
+//     displayName = "[KC] INF Helm 17 ()";
+//     hiddenSelectionsTextures[] =
+//     {
+//         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_MAJ.paa",
+//         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+//     };
+// };
+
+// class BNA_KC_Helmet_Phase2_COM: BNA_KC_Helmet_Phase2_Base
+// {
+//     displayName = "[KC] INF Helm 18 (Commander)";
+//     hiddenSelectionsTextures[] =
+//     {
+//         "BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_COM.paa",
 //         "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
 //     };
 // };

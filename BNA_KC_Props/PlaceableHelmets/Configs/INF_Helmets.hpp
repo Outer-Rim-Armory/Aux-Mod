@@ -38,7 +38,15 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CSFC, [KC] INF P2 Helm 08 (Sergeant First C
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CMS, [KC] INF P2 Helm 09 (Master Sergeant), BNA_KC_Helmet_Phase2_CMS, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CMS_Legacy, [KC] INF P2 Helm 09 (Master Sergeant, Legacy), BNA_KC_Helmet_Phase2_CMS_Legacy, "P2")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CSM, [KC] INF P2 Helm 10 (Sergeant Major), BNA_KC_Helmet_Phase2_CSM, "P2")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Officer, [KC] INF P2 Helm 12+ (Officer), BNA_KC_Helmet_Phase2_Officer, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Officer, [KC] INF P2 Helm 11+ (Officer), BNA_KC_Helmet_Phase2_Officer, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_WO, [KC] INF P2 Helm 11 (Warrant Officer), BNA_KC_Helmet_Phase2_WO, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_WO2, [KC] INF P2 Helm 12 (Warrant Officer 2), BNA_KC_Helmet_Phase2_WO2, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_WO3, [KC] INF P2 Helm 13 (Warrant Officer 3), BNA_KC_Helmet_Phase2_WO3, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_LT, [KC] INF P2 Helm 14 (Lieutenant), BNA_KC_Helmet_Phase2_LT, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_1LT, [KC] INF P2 Helm 15 (1st Lieutenant), BNA_KC_Helmet_Phase2_1LT, "P2")
+// HELMET_HOLDER(BNA_KC_HelmetHolder_P2_CPT, [KC] INF P2 Helm 16 (Captain), BNA_KC_Helmet_Phase2_CPT, "P2")
+// HELMET_HOLDER(BNA_KC_HelmetHolder_P2_MAJ, [KC] INF P2 Helm 17 (Major), BNA_KC_Helmet_Phase2_MAJ, "P2")
+// HELMET_HOLDER(BNA_KC_HelmetHolder_P2_COM, [KC] INF P2 Helm 18 (Commander), BNA_KC_Helmet_Phase2_COM, "P2")
 
 
 // ┌───────────────────┐

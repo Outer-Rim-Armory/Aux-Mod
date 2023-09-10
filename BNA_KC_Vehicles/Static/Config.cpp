@@ -84,7 +84,7 @@ class CfgWeapons
         class Single1: Single1
         {
             displayName="$STR_A3_mortar_82mm_Single10";
-            artilleryCharge = 0.2215; // original: 0.35
+            artilleryCharge = MORTAR_RANGE_SMALL;
             reloadTime = 4;
 
             MORTAR_SOUND_FIRE()
@@ -92,19 +92,19 @@ class CfgWeapons
         class Single2: Single1
         {
             displayName="$STR_A3_mortar_82mm_Single20";
-            showToPlayer = 0; // Hides from the menu
-            // artilleryCharge = 0.7; // original 0.7
+            showToPlayer = 0;
+            artilleryCharge = MORTAR_RANGE_MEDIUM;
         };
         class Single3: Single1
         {
             displayName="$STR_A3_mortar_82mm_Single30";
-            artilleryCharge = 0.3135; // original: 1
+            artilleryCharge = MORTAR_RANGE_FAR;
         };
 
         class Burst1: Burst1
         {
             displayName="$STR_A3_mortar_82mm_Burst10";
-            artilleryCharge = 0.2215; // original: 0.35
+            artilleryCharge = MORTAR_RANGE_SMALL;
             reloadTime = 4;
 
             MORTAR_SOUND_FIRE()
@@ -112,12 +112,12 @@ class CfgWeapons
         class Burst2: Burst1
         {
             displayName="$STR_A3_mortar_82mm_Burst20";
-            // artilleryCharge = 0.7; // original 0.7
+            artilleryCharge = MORTAR_RANGE_MEDIUM;
         };
         class Burst3: Burst1
         {
             displayName="$STR_A3_mortar_82mm_Single30";
-            artilleryCharge = 0.3135; // original: 1
+            artilleryCharge = MORTAR_RANGE_FAR;
         };
     };
     class BNA_KC_Mortar_M190_ProxyWeapon: BNA_KC_Mortar_M190_Turret
@@ -149,11 +149,7 @@ class CfgMagazines
         model = "\z\ace\addons\mk6mortar\data\l16_ammo_he.p3d";
         picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
     };
-    // CSW converts inventory mags into vehicle mags, this is the one a unit carries
-    class BNA_KC_Mag_3Rnd_82mm_HE_CSW: BNA_KC_Mag_3Rnd_82mm_HE
-    {
-        CSW_MAG_CARRY()
-    };
+    CSW_MAG_CARRY(BNA_KC_Mag_3Rnd_82mm_HE)
 
     class BNA_KC_Mag_3Rnd_82mm_SmokeWhite: BNA_KC_Mag_3Rnd_82mm_HE
     {
@@ -164,10 +160,7 @@ class CfgMagazines
         model = "\z\ace\addons\mk6mortar\data\l16_ammo_smk_white.p3d";
         picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_smk_white_ca.paa";
     };
-    class BNA_KC_Mag_3Rnd_82mm_SmokeWhite_CSW: BNA_KC_Mag_3Rnd_82mm_SmokeWhite
-    {
-        CSW_MAG_CARRY()
-    };
+    CSW_MAG_CARRY(BNA_KC_Mag_3Rnd_82mm_SmokeWhite)
 
     class BNA_KC_Mag_3Rnd_82mm_SmokeBlue: BNA_KC_Mag_3Rnd_82mm_SmokeWhite
     {
@@ -175,10 +168,7 @@ class CfgMagazines
         displayNameShort = "3Rnd B Smoke";
         ammo = "BNA_KC_82mm_SmokeBlue_Ammo";
     };
-    class BNA_KC_Mag_3Rnd_82mm_SmokeBlue_CSW: BNA_KC_Mag_3Rnd_82mm_SmokeBlue
-    {
-        CSW_MAG_CARRY()
-    };
+    CSW_MAG_CARRY(BNA_KC_Mag_3Rnd_82mm_SmokeBlue)
 
     class BNA_KC_Mag_3Rnd_82mm_SmokeRed: BNA_KC_Mag_3Rnd_82mm_SmokeWhite
     {
@@ -186,10 +176,7 @@ class CfgMagazines
         displayNameShort = "3Rnd R Smoke";
         ammo = "BNA_KC_82mm_SmokeRed_Ammo";
     };
-    class BNA_KC_Mag_3Rnd_82mm_SmokeRed_CSW: BNA_KC_Mag_3Rnd_82mm_SmokeRed
-    {
-        CSW_MAG_CARRY()
-    };
+    CSW_MAG_CARRY(BNA_KC_Mag_3Rnd_82mm_SmokeRed)
 };
 
 
@@ -341,6 +328,7 @@ class CfgVehicles
     class Mortar_01_base_F: StaticMortar
     {
         class Turrets;
+        class HitPoints;
         class ACE_Actions;
     };
     class B_Mortar_01_F: Mortar_01_base_F
@@ -348,6 +336,10 @@ class CfgVehicles
         class Turrets: Turrets
         {
             class MainTurret;
+        };
+        class HitPoints: HitPoints
+        {
+            class HitBody;
         };
         class ACE_Actions: ACE_Actions
         {
@@ -366,14 +358,16 @@ class CfgVehicles
         scope = 1;
         scopeCurator = 0;
 
+        armor = 40;
+        armorStructural = 0.5;
         crew = "BNA_KC_Unit_Phase2_CT";
 
         // ACE
         ace_cargo_noRename = 1;
         ace_dragging_canDrag = 1;
-        ace_dragging_dragPosition[] = {0, 1.2, 0};
+        ace_dragging_dragPosition[] = { 0, 1.2, 0 };
         ace_dragging_canCarry = 1;
-        ace_dragging_carryPosition[] = {0, 1.2, 0};
+        ace_dragging_carryPosition[] = { 0, 1.2, 0 };
 
         model = "3AS\3as_static\Mortar\model\republicmortar.p3d";
         hiddenSelections[] = {"Camo_1","Camo_2"};
@@ -399,11 +393,20 @@ class CfgVehicles
                 weapons[] = { "" };
 
                 // Maximum and minimum angles for mortar turret
-                maxElev = 25.74;
+                maxElev = 25.762;
                 maxOutElev = 20;
 
                 minElev = -30;
                 minOutElev = -4;
+            };
+        };
+
+        class HitPoints: HitPoints
+        {
+            class HitBody: HitBody
+            {
+                armor = 5;
+                armorStructural = 0.25;
             };
         };
 

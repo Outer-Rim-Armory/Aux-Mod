@@ -210,8 +210,8 @@ class CfgVehicles
     class BNA_KC_Unit_Base;
     class BNA_KC_OPFOR_Unit_BXDroid_Actor: BNA_KC_Unit_Base
     {
-        scope = 2;
-        scopeArsenal = 0;
+        scope = 1;
+        scopeCurator = 0;
 
         impactEffectsBlood = "ImpactMetal";
         impactEffectsNoBlood = "ImpactMetal";
