@@ -285,6 +285,8 @@ class BNA_KC_Unit_Phase2_WO: BNA_KC_Unit_Phase2_Base
     {
         "BNA_KC_Helmet_Phase2_WO", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
     };
+
+    backpack = "BNA_KC_Backpack_Radio_Mini";
 };
 
 class BNA_KC_Unit_Phase2_WO2: BNA_KC_Unit_Phase2_WO
