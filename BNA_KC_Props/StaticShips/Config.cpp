@@ -138,6 +138,6 @@ class CfgEditorSubcategories
 		author = "SweMonkey and DartRuffian";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "Props - Static Ships";
+		displayName = "Static Ships";
 	};
 };
