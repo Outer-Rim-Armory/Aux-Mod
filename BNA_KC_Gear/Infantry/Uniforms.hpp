@@ -105,36 +105,54 @@ class BNA_KC_Uniform_CSM: BNA_KC_Uniform_Base
     };
 };
 
-// class BNA_KC_Uniform_LT: BNA_KC_Uniform_Base
-// {
-//     displayName = "[KC] INF Armor 11 (Lieutenant)";
-//     class ItemInfo: ItemInfo
-//     {
-//         uniformClass = "BNA_KC_Unit_Phase2_LT";
-//     };
-// };
+class BNA_KC_Uniform_WO: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor 11 (Warrant Officer)";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_WO";
+    };
+};
 
-// class BNA_KC_Uniform_WO: BNA_KC_Uniform_Base
-// {
-//     displayName = "[KC] INF Armor 12 (Warrant Officer)";
-//     class ItemInfo: ItemInfo
-//     {
-//         uniformClass = "BNA_KC_Unit_Phase2_WO";
-//     };
-// };
+class BNA_KC_Uniform_WO2: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor 12 (Warrant Officer 2)";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_WO2";
+    };
+};
 
-// class BNA_KC_Uniform_1LT: BNA_KC_Uniform_Base
-// {
-//     displayName = "[KC] INF Armor 13 (1st Lieutenant)";
-//     class ItemInfo: ItemInfo
-//     {
-//         uniformClass = "BNA_KC_Unit_Phase2_1LT";
-//     };
-// };
+class BNA_KC_Uniform_WO3: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor 13 (Warrant Officer 3)";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_WO3";
+    };
+};
+
+class BNA_KC_Uniform_LT: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor 14 (Lieutenant)";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_LT";
+    };
+};
+
+class BNA_KC_Uniform_1LT: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor 15 (1st Lieutenant)";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_1LT";
+    };
+};
 
 // class BNA_KC_Uniform_CAP: BNA_KC_Uniform_Base
 // {
-//     displayName = "[KC] INF Armor 14 (Captain)";
+//     displayName = "[KC] INF Armor 16 (Captain)";
 //     class ItemInfo: ItemInfo
 //     {
 //         uniformClass = "BNA_KC_Unit_Phase2_CAP";
@@ -143,7 +161,7 @@ class BNA_KC_Uniform_CSM: BNA_KC_Uniform_Base
 
 // class BNA_KC_Uniform_MAJ: BNA_KC_Uniform_Base
 // {
-//     displayName = "[KC] INF Armor 15 (Major)";
+//     displayName = "[KC] INF Armor 17 (Major)";
 //     class ItemInfo: ItemInfo
 //     {
 //         uniformClass = "BNA_KC_Unit_Phase2_MAJ";
@@ -152,7 +170,7 @@ class BNA_KC_Uniform_CSM: BNA_KC_Uniform_Base
 
 // class BNA_KC_Uniform_CMD: BNA_KC_Uniform_Base
 // {
-//     displayName = "[KC] INF Armor 16 (Commander)";
+//     displayName = "[KC] INF Armor 18 (Commander)";
 //     class ItemInfo: ItemInfo
 //     {
 //         uniformClass = "BNA_KC_Unit_Phase2_CMD";
