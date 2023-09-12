@@ -2,7 +2,6 @@
 #include "CfgCloudlets.hpp"
 #include "CfgComplexEffects.hpp"
 #include "CfgFunctions.hpp"
-#include "Macros.hpp"
 
 
 class CfgWeapons
