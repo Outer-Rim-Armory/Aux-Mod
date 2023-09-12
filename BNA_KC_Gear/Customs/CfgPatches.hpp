@@ -102,6 +102,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Sytha",
             "BNA_KC_Helmet_Phase2_Taun",
             "BNA_KC_Helmet_Phase2_Tyrant",
+            "BNA_KC_Helmet_Phase2_Vortex",
             "BNA_KC_Helmet_Phase2_Woods",
 
             // Engineer Helmets
