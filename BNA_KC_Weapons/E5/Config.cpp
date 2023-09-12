@@ -62,22 +62,18 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                begin1[] = { "swlw_rework\sounds\e-series\E5_shot1.wss", 1, 1, 1800 };
-                begin2[] = { "swlw_rework\sounds\e-series\E5_shot2.wss", 1, 1, 1800 };
-                begin3[] = { "swlw_rework\sounds\e-series\E5_shot3.wss", 1, 1, 1800 };
-                soundBegin[] = { "begin1", 0.33, "begin2", 0.33, "begin3", 0.34} ;
-                soundBeginWater[] = { "begin1", 0.33, "begin2", 0.33, "begin3", 0.34 };
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = { "3AS_E5_Shot_SoundSet" };
             };
         };
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                begin1[] = { "swlw_rework\sounds\e-series\E5_shot1.wss", 1, 1, 1800 };
-                begin2[] = { "swlw_rework\sounds\e-series\E5_shot2.wss", 1, 1, 1800 };
-                begin3[] = { "swlw_rework\sounds\e-series\E5_shot3.wss", 1, 1, 1800 };
-                soundBegin[] = { "begin1", 0.33, "begin2", 0.33, "begin3", 0.34} ;
-                soundBeginWater[] = { "begin1", 0.33, "begin2", 0.33, "begin3", 0.34 };
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = { "3AS_E5_Shot_SoundSet" };
             };
         };
     };
