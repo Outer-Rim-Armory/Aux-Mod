@@ -11,6 +11,8 @@ class CfgPatches
         requiredversion = 0.1;
         requiredaddons[] =
         {
+            "cba_events",
+            "cba_hashes",
             "cba_settings",
             "cba_keybinding"
         };
@@ -55,6 +57,11 @@ class CfgFunctions
             class findAllVoicelineTags {};
             class getConfigNameFromTag {};
             class devLog {};
+
+            class isPlayer {};
+            class getNearbyPlayers {};
+
+            class sortByDistance {};
         };
 
         class EventHandlers
@@ -63,6 +70,7 @@ class CfgFunctions
             class throwGrenadeMain {};
             class throwGrenadeEH {};
             class throwGrenadeEHACE {};
+            class unconsciousEH {};
         };
     };
 };
@@ -95,5 +103,9 @@ class Extended_PostInit_EventHandlers
     class CWR_ThrowGrenadeEH
     {
         init = QUOTE(if isClass (configFile >> 'CfgPatches' >> 'ace_common') then { call CWR_fnc_throwGrenadeEHACE; } else { call CWR_fnc_throwGrenadeEH; };);
+    };
+    class CWR_UnconciousEH
+    {
+        init = QUOTE(call CWR_fnc_unconsciousEH);
     };
 };

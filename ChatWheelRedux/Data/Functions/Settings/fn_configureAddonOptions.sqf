@@ -60,6 +60,18 @@
     {}
 ] call CBA_fnc_addSetting;
 
+if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then
+{
+    [
+        "CWR_AutoMessages_Uncon",
+        "CHECKBOX",
+        ["Unconscious Messages", "When a player goes unconscious, the closest player will make a call out. The max radius is still bound by CWR_Voice_VoiceRadius."],
+        ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+        true,
+        1,
+        {}
+    ] call CBA_fnc_addSetting;
+};
 
 [
     "CWR_TagMenu_UseNewLine",
@@ -74,6 +86,25 @@
 
 
 [
+    "CWR_Voice_VoiceRadius",
+    "SLIDER",
+    ["Voice Lines Radius", "The radius of voice lines and automated messages."],
+    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+    [10, 50, 30, 0],
+    1,
+    {},
+    false
+] call CBA_fnc_addSetting;
+
+[
+    "CWR_Voice_VoiceVolume",
+    "SLIDER",
+    ["Voice Lines Volume", "Volume for custom voice lines."],
+    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+    [0, 5, 1, 1]
+] call CBA_fnc_addSetting;
+
+[
     "CWR_Voice_EnableVoiceLines",
     "CHECKBOX",
     ["Enable Custom VoiceLines", "If enabled, you will hear voice lines when certain actions are done. Such as throwing a grenade, using a chat wheel option, etc."],
@@ -83,6 +114,18 @@
     {},
     false
 ] call CBA_fnc_addSetting;
+
+CWR_Voice_RCUnitsSendsMessages = false; // Wip
+// [
+//     "CWR_Voice_RCUnitsSendsMessages",
+//     "CHECKBOX",
+//     ["RC Units Send Messages", "If enabled, remote (zeus) controlled units will send messages and say voice lines."],
+//     ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+//     true,
+//     0,
+//     {},
+//     true
+// ] call CBA_fnc_addSetting;
 
 [
     "CWR_Voice_CoolDown",

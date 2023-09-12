@@ -22,7 +22,7 @@ if (CWR_Voice_EnableVoiceLines) then
         objNull,
         false,
         _position,
-        3, // volume
+        CWR_Voice_VoiceVolume, // volume
         1, // pitch
         0, // distance
         0, // offset
