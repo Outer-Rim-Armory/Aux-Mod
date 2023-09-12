@@ -139,6 +139,22 @@ class CfgWeapons
             reloadMagazineSound[] = { "A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10 };
         };
     };
+
+    class BNA_KC_Westar_M5: BNA_KC_WestarM5
+    {
+        scope = 1;
+        scopeArsenal = 0;
+
+        displayName = "== Deprecated Class ==";
+        descriptionShort = "Old Westar M5 class, update your kit.";
+        magazines[] = {};
+        magazineWell[] = {};
+        baseWeapon = "BNA_KC_Westar_M5";
+    };
+    class BNA_KC_Westar_M5_UGL: BNA_KC_Westar_M5
+    {
+        baseWeapon = "BNA_KC_Westar_M5_UGL";
+    };
 };
 
 
