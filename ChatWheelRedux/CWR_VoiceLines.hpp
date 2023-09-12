@@ -43,4 +43,17 @@ class CWR_VoiceLines
             "ChatWheelRedux\Data\Audio\Throw\ShieldUp.wss"
         };
     };
+
+    class Unconscious
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\Unconscious\AGoodDeathFriendlyDown.wss",
+            "ChatWheelRedux\Data\Audio\Unconscious\CloneDownCloneDown.wss",
+            "ChatWheelRedux\Data\Audio\Unconscious\LostOneFriendlyDown.wss",
+            "ChatWheelRedux\Data\Audio\Unconscious\FriendlyDown.wss",
+            "ChatWheelRedux\Data\Audio\Unconscious\ManDownStayTogether.wss",
+            "ChatWheelRedux\Data\Audio\Unconscious\TrooperDown.wss"
+        };
+    };
 };
