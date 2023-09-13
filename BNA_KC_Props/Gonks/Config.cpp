@@ -111,6 +111,39 @@ class CfgVehicles
             };
         };
     };
+
+    class BNA_KC_Utility_Arsenal: BNA_KC_Utility_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Arsenal";
+        model = "3AS\3AS_Props\Terminals\Terminal_short.p3d";
+
+        class UserActions
+        {
+            class ArsenalACE
+            {
+                displayName = "Open ACE Arsenal";
+
+                position = "camera";
+                radius = 5;
+                onlyForPlayer = 1;
+
+                hideOnUse = 1;
+                priority = 5;
+
+                condition = "true";
+                statement = "[player, player, true] call ace_arsenal_fnc_openBox;";
+            };
+            class ArsenalBIS: ArsenalACE
+            {
+                displayName = "Open BIS Arsenal";
+                statement = "['Open', [true]] call BIS_fnc_arsenal;";
+            };
+        };
+    };
 };
 
 

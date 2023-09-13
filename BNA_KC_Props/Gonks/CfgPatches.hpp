@@ -7,13 +7,15 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-			"3as_GNK_Prop"
+			"3as_GNK_Prop",
+            "3AS_Prop_Terminals"
         };
         units[] =
 		{
 			"BNA_KC_Utility_Base",
 			"BNA_KC_Gonk_Uniforms",
-			"BNA_KC_Gonk_Permissions"
+			"BNA_KC_Gonk_Permissions",
+            "BNA_KC_Utility_Arsenal"
 		};
         weapons[] = {};
     };
