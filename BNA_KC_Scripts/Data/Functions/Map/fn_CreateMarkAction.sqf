@@ -24,17 +24,35 @@ private _markAction =
     {
         // Insert children
         params ["_target", "_player", "_params"];
-        private _baseMarkerColors = ["ColorBlack", "ColorBlue", "ColorRed", "ColorGreen"];
+        private _colorNames = ["ColorBlack", "ColorBlue", "ColorRed", "ColorGreen"];
+
         private _actions = [];
         {
             private _childStatement = { [BNA_KC_Map_MarkChannel, _this#2#0] call BNAKC_fnc_CreateMarkOnSelf; };
             private _action =
             [
-                format ["mark%1", _x], "", format ["BNA_KC_Scripts\Data\Textures\UI\Dot%1.paa", _x], _childStatement, {true}, {}, [_x]
+                format ["mark%1", _x], "", ["", "#FFFFFF"], _childStatement, {true}, {}, [_x], [0,0,0], 0, [0,1,1,0,1],
+                {
+                    params ["_target", "_player", "_params", "_actionData"];
+                    _params params ["_color"];
+
+
+                    private _colorCode =
+                    [
+                        configFile >> "CfgMarkerColors" >> _color,
+                        "color",
+                        [0, 0, 0, 1]
+                    ] call BIS_fnc_returnConfigEntry;
+
+                    private _colorCodeStr = "#" + ((_colorCode apply { (_x * 255) call ace_common_fnc_tohex; }) joinString "");
+                    systemChat _colorCodeStr;
+
+                    (_actionData select 2) set [1, _colorCodeStr];
+                }
             ] call ace_interact_menu_fnc_createAction;
 
             _actions pushBack [_action, [], _target]; // New action, it's children, and the action's target
-        } forEach _baseMarkerColors;
+        } forEach _colorNames;
 
         _actions;
     }
