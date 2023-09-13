@@ -33,6 +33,28 @@ private _defaultColor = [1, 1, 1]; // Can't include [] with commas inside in a m
 private _lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_lightColor", _defaultColor);
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
+private _totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
+if (_totalEffects + (count _effectTypes * count _effectPoints) > BNA_KC_Jet_ParticleLimit) then
+{
+
+    // Particle "slots" remaining
+    private _remainingSlots = (BNA_KC_Jet_ParticleLimit - _totalEffects) min 0;
+    format ["_remainingSlots = %1", _remainingSlots] call BNAKC_fnc_devLog;
+    // max is 0
+    // 0 effects present
+    // 3 effects
+    // 2 effect points
+    // 7 effects total
+
+    // 0 + 7 > 0 | true
+    // 0 - 7 | 0 slots remaining
+    _remainingSlots = floor (_remainingSlots / count _effectPoints); // 10 / 7 = 1
+    format ["_remainingSlots = %1", _remainingSlots] call BNAKC_fnc_devLog;
+    _effectTypes = _effectTypes select [0, _remainingSlots];
+    if (_remainingSlots == 0) then { _effectTypes = []; };
+    format ["_effectTypes = %1", _effectTypes] call BNAKC_fnc_devLog;
+};
+
 [
     {
         params ["_unit", "_effectPoints", "_effectTypes", "_lightColor"];
@@ -77,6 +99,11 @@ if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there are
 
         // Save for later removal upon landing by the jetpack handler
         _unit setVariable ["BNA_KC_Jet_effectSources", _effectSources, true];
+
+        // Update total effects, used for setting a cap of jetpack effects
+        private _totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
+        _totalEffects = _totalEffects + count _effectSources;
+        missionNamespace setVariable ["BNA_KC_Jet_totalEffects", _totalEffects, true];
     },
     [_unit, _effectPoints, _effectTypes, _lightColor],
     0.15

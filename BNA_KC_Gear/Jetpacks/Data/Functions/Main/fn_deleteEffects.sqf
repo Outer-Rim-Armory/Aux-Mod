@@ -24,5 +24,9 @@ format ["_sources: %1", _sources] call BNAKC_fnc_devLog;
 
 _unit setVariable ["BNA_KC_Jet_effectSources", nil, true];
 
+private _totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", count _sources];
+_totalEffects = _totalEffects - count _sources;
+missionNamespace setVariable ["BNA_KC_Jet_totalEffects", _totalEffects, true];
+
 _sources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
 format ["_sources: %1", _sources] call BNAKC_fnc_devLog;
