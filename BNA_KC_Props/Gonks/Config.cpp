@@ -17,7 +17,7 @@ class CfgVehicles
 
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
-        editorSubcategory = "BNA_KC_SubCat_Gonks";
+        editorSubcategory = "BNA_KC_SubCat_Utility";
     };
 
     class BNA_KC_Gonk_Uniforms: BNA_KC_Gonk_Base
@@ -116,7 +116,7 @@ class CfgVehicles
 
 class CfgEditorSubcategories
 {
-    class BNA_KC_SubCat_Gonks
+    class BNA_KC_SubCat_Utility
 	{
 		// Mod Info
 		dlc = "BNA_KC";
@@ -126,6 +126,6 @@ class CfgEditorSubcategories
 		scope = 2;
 		scopeCurator = 2;
 
-		displayName = "Gonks";
+		displayName = "Utility";
 	};
 };
