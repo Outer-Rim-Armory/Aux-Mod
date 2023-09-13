@@ -20,7 +20,7 @@
 [
     "BNA_KC_Jet_ParticleLimit",
     "SLIDER",
-    ["Particle Limit", "Max number of jetpack particles. No particles will be spawned by jetpacks once the limit is reached."],
+    ["Particle Limit", "Max number of jetpack particles. No particles will be spawned by jetpacks once the limit is reached. Does not include light sources."],
     ["Keeli Company Aux Mod", "Jetpacks"],
     [0, 100, 50, 0],
 	1,
