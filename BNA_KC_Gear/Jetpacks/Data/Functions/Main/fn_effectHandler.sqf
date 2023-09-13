@@ -84,17 +84,19 @@ if (_totalEffects + (count _effectTypes * count _effectPoints) > BNA_KC_Jet_Part
                     _effect attachTo [_unit, _offsetEffect, "aimPoint"];
                     _effectSources pushBack _effect;
                 } forEach _effectTypes;
-
-                // Create light
-                private _lightSource = "#lightpoint" createVehicle [0, 0, 0];
-                _lightSource setLightColor _lightColor;
-                _lightSource setLightAmbient [0, 0, 0];
-                _lightSource setLightBrightness 0.5;
-                // Attach to player
-                _lightSource attachTo [_unit, _offsetEffect, "aimPoint"];
-                // Save for later removal
-                _effectSources pushBack _lightSource;
             };
+
+            // Create light, but only one
+            if ("#lightpoint" in (_effectSources apply { typeOf _x })) then { continue };
+
+            private _lightSource = "#lightpoint" createVehicle [0, 0, 0];
+            _lightSource setLightColor _lightColor;
+            _lightSource setLightAmbient [0, 0, 0];
+            _lightSource setLightBrightness 0.5;
+            // Attach to player
+            _lightSource attachTo [_unit, [0, -0.4, 0], "aimPoint"];
+            // Save for later removal
+            _effectSources pushBack _lightSource;
         } forEach _effectPoints;
 
         // Save for later removal upon landing by the jetpack handler
