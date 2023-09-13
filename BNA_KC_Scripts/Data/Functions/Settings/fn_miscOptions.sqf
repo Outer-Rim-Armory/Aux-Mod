@@ -25,6 +25,14 @@
 
 // Map
 [
+    "BNA_KC_Map_ShowAceAction",
+    "CHECKBOX",
+    ["Show ACE Self Action", "Toggles the ACE Self Interact option to mark yourself on the map."],
+    ["Keeli Company Aux Mod", "Map"],
+    true
+] call CBA_fnc_addSetting;
+
+[
     "BNA_KC_Map_MarkChannel",
     "LIST",
     ["Channel", "The channel to create markers in."],
