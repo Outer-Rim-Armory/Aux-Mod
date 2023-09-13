@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "..\Macros.hpp"
 
 
 class CfgMagazines
@@ -60,6 +61,9 @@ class CfgAmmo
     class 12thFleet_Ammo_Rifle_Blue: JLTS_bullet_rifle_blue
     {
         coefgravity = 0;
+        // 3AS Hit Sounds/Effects
+        HIT_SOUNDS
+        HIT_EFFECTS
     };
     class 12thFleet_Ammo_Rifle_Red: 12thFleet_Ammo_Rifle_Blue
     {
@@ -71,12 +75,16 @@ class CfgAmmo
     class 12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
     {
         coefgravity = 0;
+        HIT_SOUNDS
+        HIT_EFFECTS
     };
 
     class JLTS_bullet_pistol_blue;
     class 12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
     {
         coefgravity = 0;
+        HIT_SOUNDS
+        HIT_EFFECTS
     };
 
     class JLTS_bullet_stun;
