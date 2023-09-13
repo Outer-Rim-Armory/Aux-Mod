@@ -23,13 +23,30 @@ private _keyBind = (_keyEntry select 5) select 0; // Array of [DIK Code, [Modifi
 private _markAction =
 [
     "BNA_KC_CreateMark_Action",
-    "Mark Building Clear",
+    "Mark Self",
     "", // Icon
     _code,
     {
         _keyEntry = ["Keeli Company Aux Mod", "BNA_KC_Map_CreateMarkBind"] call CBA_fnc_getKeybind;
         _keyBind = (_keyEntry select 5) select 0;
         _keyBind isEqualTo -1;
+    },
+    {
+        // Insert children
+        params ["_target", "_player", "_params"];
+        private _baseMarkerColors = ["ColorBlack", "ColorBlue", "ColorRed", "ColorGreen"];
+        private _actions = [];
+        {
+            private _childStatement = { [BNA_KC_Map_MarkChannel, _this#2#0] call BNAKC_fnc_CreateMarkOnSelf; };
+            private _action =
+            [
+                format ["mark%1", _x], "", format ["BNA_KC_Scripts\Data\Textures\UI\Dot%1.paa", _x], _childStatement, {true}, {}, [_x]
+            ] call ace_interact_menu_fnc_createAction;
+
+            _actions pushBack [_action, [], _target]; // New action, it's children, and the action's target
+        } forEach _baseMarkerColors;
+
+        _actions;
     }
 ] call ace_interact_menu_fnc_createAction;
 
