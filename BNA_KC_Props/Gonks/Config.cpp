@@ -5,7 +5,6 @@
 class CfgVehicles
 {
     class 3as_GNK;
-
     class BNA_KC_Gonk_Uniforms: 3as_GNK
 	{
 		// Mod Info
@@ -15,15 +14,13 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
-		
+
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_SubCat_Gonks";
-		side = 3;
 
         displayName = "[KC] Uniform Dispenser";
-		
+
 		class UserActions
 		{
 			class BNA_KC_CRUniform
@@ -62,6 +59,59 @@ class CfgVehicles
 			};
 		};
 	};
+
+    class BNA_KC_Gonk_Permissions: 3as_GNK
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        editorCategory = "BNA_KC_Objects";
+        editorSubcategory = "BNA_KC_SubCat_Gonks";
+
+        displayName = "Permissions Gonk";
+
+        class UserActions
+        {
+            class AssignMedic
+            {
+                displayName = "Assign Medic Permissions";
+
+                position = "camera";
+                radius = 5;
+                onlyForPlayer = 0;
+
+                hideOnUse = 1;
+                priority = 5;
+
+                condition = "!(player getUnitTrait 'Medic')";
+                statement = "player setUnitTrait ['Medic', true]";
+            };
+            class UnassignMedic: AssignMedic
+            {
+                displayName = "Unassign Medic Permissions";
+                condition = "player getUnitTrait 'Medic'";
+                statement = "player setUnitTrait ['Medic', false]";
+            };
+            class AssignEngineer: AssignMedic
+            {
+                displayName = "Assign Engineer Permissions";
+                condition = "!(player getUnitTrait 'Engineer')";
+                statement = "player setUnitTrait ['Engineer', true]";
+            };
+            class UnassignEngineer: AssignEngineer
+            {
+                displayName = "Unassign Engineer Permissions";
+                condition = "player getUnitTrait 'Engineer'";
+                statement = "player setUnitTrait ['Engineer', false]";
+            };
+        };
+    };
 };
 
 
