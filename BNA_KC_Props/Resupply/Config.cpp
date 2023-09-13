@@ -28,6 +28,8 @@ class CfgVehicles
         ace_dragging_dragPosition[] = {0, 1.35, 0};
 
         ace_dragging_canCarry = 1;
+
+        ace_dragging_ignoreWeight = 1;
         ace_dragging_ignoreWeightCarry = 1;
 
         // Editor Attributes
