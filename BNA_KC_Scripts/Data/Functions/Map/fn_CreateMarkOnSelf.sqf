@@ -13,8 +13,9 @@
  * call BNAKC_fnc_CreateMarkOnSelf;
  */
 
+params [["_channel", -2], ["_color", BNA_KC_Map_MarkColor]];
+
 // -2 is used as an "auto" value in the addon options, since -1 is used by createMarker by default and shows to all players
-private _channel = -2;
 if (BNA_KC_Map_MarkChannel isEqualTo -2) then { _channel = currentChannel; }
 else { _channel = BNA_KC_Map_MarkChannel; };
 
@@ -27,6 +28,6 @@ private _marker = createMarkerLocal
 ];
 
 _marker setMarkerTypeLocal "hd_dot";       // Markers are invisible by default
-_marker setMarkerColorLocal BNA_KC_Map_MarkColor;
+_marker setMarkerColorLocal _color;
 _marker setMarkerText "";
 _marker;
