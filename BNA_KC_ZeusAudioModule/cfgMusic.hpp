@@ -404,7 +404,7 @@ class CfgMusic
 	};
 
 
-    class BNA_KC_ShepherdofFire
+    class BNA_KC_ILament
     {
         name = "[RD] Elven Dirge - I Lament";
         // Richard Daskas
