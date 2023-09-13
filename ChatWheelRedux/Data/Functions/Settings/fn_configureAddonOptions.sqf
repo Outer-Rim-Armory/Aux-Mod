@@ -101,7 +101,7 @@ if (isClass (configFile >> "CfgPatches" >> "ace_medical")) then
     "SLIDER",
     ["Voice Lines Volume", "Volume for custom voice lines."],
     ["Keeli Company Aux Mod", "Chat Wheel Menu"],
-    [0, 5, 1, 1]
+    [0, 5, 3, 1]
 ] call CBA_fnc_addSetting;
 
 [
