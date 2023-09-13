@@ -5,23 +5,30 @@
 class CfgVehicles
 {
     class 3as_GNK;
-    class BNA_KC_Gonk_Uniforms: 3as_GNK
-	{
-		// Mod Info
+    class BNA_KC_Gonk_Base: 3as_GNK
+    {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 2;
-        scopeCurator = 2;
+        scope = 1;
+        scopeCurator = 0;
 
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_SubCat_Gonks";
+    };
 
-        displayName = "[KC] Uniform Dispenser";
+    class BNA_KC_Gonk_Uniforms: BNA_KC_Gonk_Base
+	{
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
 
-		class UserActions
+        displayName = "Uniform Dispenser";
+
+        class UserActions
 		{
 			class BNA_KC_CRUniform
 			{
@@ -60,19 +67,11 @@ class CfgVehicles
 		};
 	};
 
-    class BNA_KC_Gonk_Permissions: 3as_GNK
+    class BNA_KC_Gonk_Permissions: BNA_KC_Gonk_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
         // Scope
         scope = 2;
         scopeCurator = 2;
-
-        // Editor Attributes
-        editorCategory = "BNA_KC_Objects";
-        editorSubcategory = "BNA_KC_SubCat_Gonks";
 
         displayName = "Permissions Gonk";
 
