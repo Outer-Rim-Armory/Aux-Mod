@@ -65,6 +65,14 @@ private _markerColorNames = _markerColors apply
     [_markerColors, _markerColorNames, 0]
 ] call CBA_fnc_addSetting;
 
+[
+    "BNA_KC_Map_QuickMarkColors",
+    "EDITBOX",
+    ["Quick Mark Colors", "List of colors CfgMarkerColors class names."],
+    ["Keeli Company Aux Mod", "Map"],
+    "['ColorBlack', 'ColorBlue', 'ColorRed', 'ColorGreen']"
+] call CBA_fnc_addSetting;
+
 
 // Developer
 [

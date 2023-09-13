@@ -24,7 +24,7 @@ private _markAction =
     {
         // Insert children
         params ["_target", "_player", "_params"];
-        private _colorNames = ["ColorBlack", "ColorBlue", "ColorRed", "ColorGreen"];
+        private _colorNames = parseSimpleArray BNA_KC_Map_QuickMarkColors;
 
         private _actions = [];
         {
