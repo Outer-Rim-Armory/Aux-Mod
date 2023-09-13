@@ -5,7 +5,7 @@
 class CfgVehicles
 {
     class 3as_GNK;
-    class BNA_KC_Gonk_Base: 3as_GNK
+    class BNA_KC_Utility_Base: 3as_GNK
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -20,7 +20,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_Utility";
     };
 
-    class BNA_KC_Gonk_Uniforms: BNA_KC_Gonk_Base
+    class BNA_KC_Gonk_Uniforms: BNA_KC_Utility_Base
 	{
         // Scope
         scope = 2;
@@ -67,7 +67,7 @@ class CfgVehicles
 		};
 	};
 
-    class BNA_KC_Gonk_Permissions: BNA_KC_Gonk_Base
+    class BNA_KC_Gonk_Permissions: BNA_KC_Utility_Base
     {
         // Scope
         scope = 2;
