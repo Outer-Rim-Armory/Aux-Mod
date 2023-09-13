@@ -347,17 +347,17 @@ class CfgVehicles
             class _xx_ACE_salineIV
             {
                 name = "ACE_salineIV";
-                count = 2;
+                count = 5;
             };
             class _xx_ACE_salineIV_500
             {
                 name = "ACE_salineIV_500";
-                count = 3;
+                count = 5;
             };
             class _xx_ACE_salineIV_250
             {
                 name = "ACE_salineIV_250";
-                count = 5;
+                count = 10;
             };
 
             // Drugs
@@ -410,7 +410,19 @@ class CfgVehicles
             class _xx_SquadShieldMagazine
             {
                 magazine = "SquadShieldMagazine";
-                count = 1;
+                count = 2;
+            };
+
+            class _xx_BNA_KC_Grenade_BactaBomb
+            {
+                magazine = "BNA_KC_Grenade_BactaBomb";
+                count = 5;
+            };
+
+            class _xx_BNA_KC_Mag_GR20
+            {
+                magazine = "BNA_KC_Mag_GR20";
+                count = 2;
             };
         };
     };
@@ -444,17 +456,17 @@ class CfgVehicles
             class _xx_ACE_salineIV
             {
                 name = "ACE_salineIV";
-                count = 8;
+                count = 20;
             };
             class _xx_ACE_salineIV_500
             {
                 name = "ACE_salineIV_500";
-                count = 10;
+                count = 20;
             };
             class _xx_ACE_salineIV_250
             {
                 name = "ACE_salineIV_250";
-                count = 16;
+                count = 30;
             };
 
             // Drugs
@@ -473,7 +485,7 @@ class CfgVehicles
             class _xx_RD501_Painkiller
             {
                 name = "RD501_Painkiller";
-                count = 15;
+                count = 20;
             };
 
             // Misc
@@ -501,6 +513,18 @@ class CfgVehicles
             class _xx_SquadShieldMagazine
             {
                 magazine = "SquadShieldMagazine";
+                count = 6;
+            };
+
+            class _xx_BNA_KC_Grenade_BactaBomb
+            {
+                magazine = "BNA_KC_Grenade_BactaBomb";
+                count = 10;
+            };
+
+            class _xx_BNA_KC_Mag_GR20
+            {
+                magazine = "BNA_KC_Mag_GR20";
                 count = 4;
             };
         };
