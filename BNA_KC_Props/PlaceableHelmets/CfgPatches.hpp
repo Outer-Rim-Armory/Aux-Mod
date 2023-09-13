@@ -136,6 +136,8 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Joe_Crimson",
             "BNA_KC_HelmetHolder_P2_Keeli",
             "BNA_KC_HelmetHolder_P2_Keeli_Crimson",
+            "BNA_KC_HelmetHolder_P2_Lou",
+            "BNA_KC_HelmetHolder_P2_Lou_Plasma",
             "BNA_KC_HelmetHolder_P2_Ox",
             "BNA_KC_HelmetHolder_P2_Patriot",
             "BNA_KC_HelmetHolder_P2_Ponds",

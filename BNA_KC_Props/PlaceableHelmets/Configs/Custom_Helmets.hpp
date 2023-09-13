@@ -54,6 +54,8 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Joe, [KC] INF P2 Helm ('Joe'), BNA_KC_Helme
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Joe_Crimson, [KC] INF P2 Helm ('Joe') [Crimson Visor], BNA_KC_Helmet_Phase2_Joe_Crimson, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Keeli, [KC] INF P2 Helm ('Keeli'), BNA_KC_Helmet_Phase2_Keeli, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Keeli_Crimson, [KC] INF P2 Helm ('Keeli') [Crimson Visor], BNA_KC_Helmet_Phase2_Keeli_Crimson, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Lou, [KC] INF P2 Helm ('Lou'), BNA_KC_Helmet_Phase2_Lou, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Lou_Plasma, [KC] INF P2 Helm ('Lou') [Plasma Visor], BNA_KC_Helmet_Phase2_Lou_Plasma, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Ox, [KC] INF P2 Helm ('Ox'), BNA_KC_Helmet_Phase2_Ox, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Patriot, [KC] INF P2 Helm ('Patriot'), BNA_KC_Helmet_Phase2_Patriot, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Ponds, [KC] INF P2 Helm ('Ponds'), BNA_KC_Helmet_Phase2_Ponds, "Customs")

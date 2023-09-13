@@ -759,6 +759,38 @@ class BNA_KC_Helmet_Phase2_Keeli_CamoGrey_Crimson: BNA_KC_Helmet_Phase2_Keeli_Ca
     };
 };
 
+class BNA_KC_Helmet_Phase2_Lou: BNA_KC_Helmet_Phase2_Base
+{
+    BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Lou";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Lou_Plasma";
+
+    displayName = "[KC] INF Helm ('Lou')";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\Helmet_P2_Lou.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
+};
+class BNA_KC_Helmet_Phase2_Lou_Plasma: BNA_KC_Helmet_Phase2_Lou
+{
+	// Scopes
+	scope = 1;
+    scopeArsenal = 1;
+
+	displayName = "[KC] INF Helm ('Lou') [Plasma Visor]";
+	hiddenSelectionsMaterials[] =
+    {
+        "",
+        "a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+	hiddenSelectionsTextures[] =
+	{
+		"BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\Helmet_P2_Lou.paa",
+		"BNA_KC_Gear\Customs\Data\Visors\BNA_KC_Visor_Plasma.paa"
+	};
+};
+
 class BNA_KC_Helmet_Phase2_Ox: BNA_KC_Helmet_Phase2_Base
 {
 	displayName = "[KC] INF Helm ('Ox')";
