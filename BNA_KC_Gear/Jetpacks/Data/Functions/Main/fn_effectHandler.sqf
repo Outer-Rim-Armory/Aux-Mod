@@ -40,16 +40,10 @@ if (_totalEffects + (count _effectTypes * count _effectPoints) > BNA_KC_Jet_Part
     // Particle "slots" remaining
     private _remainingSlots = (BNA_KC_Jet_ParticleLimit - _totalEffects) min 0;
     format ["_remainingSlots = %1", _remainingSlots] call BNAKC_fnc_devLog;
-    // max is 0
-    // 0 effects present
-    // 3 effects
-    // 2 effect points
-    // 7 effects total
 
-    // 0 + 7 > 0 | true
-    // 0 - 7 | 0 slots remaining
-    _remainingSlots = floor (_remainingSlots / count _effectPoints); // 10 / 7 = 1
+    _remainingSlots = floor (_remainingSlots / count _effectPoints);
     format ["_remainingSlots = %1", _remainingSlots] call BNAKC_fnc_devLog;
+
     _effectTypes = _effectTypes select [0, _remainingSlots];
     if (_remainingSlots == 0) then { _effectTypes = []; };
     format ["_effectTypes = %1", _effectTypes] call BNAKC_fnc_devLog;
