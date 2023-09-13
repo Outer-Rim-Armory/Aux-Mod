@@ -870,6 +870,16 @@ class BNA_KC_Helmet_Phase2_Splashdown: BNA_KC_Helmet_Phase2_Base
 	};
 };
 
+class BNA_KC_Helmet_Phase2_Star: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF Helm ('Star')";
+    hiddenSelectionsTextures[] =
+    {
+        "BNA_KC_Gear\Customs\Data\Helmets\Standard\Phase 2\Helmet_P2_Star.paa",
+        "ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
+};
+
 class BNA_KC_Helmet_Phase2_Stone: BNA_KC_Helmet_Phase2_Base
 {
 	displayName = "[KC] INF Helm ('Stone')";

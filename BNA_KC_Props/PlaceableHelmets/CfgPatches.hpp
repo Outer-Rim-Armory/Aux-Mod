@@ -145,6 +145,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Rodger",
             "BNA_KC_HelmetHolder_P2_Sage",
             "BNA_KC_HelmetHolder_P2_Splashdown",
+            "BNA_KC_HelmetHolder_P2_Star",
             "BNA_KC_HelmetHolder_P2_Stone",
             "BNA_KC_HelmetHolder_P2_Swoop",
             "BNA_KC_HelmetHolder_P2_Sytha",
