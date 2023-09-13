@@ -36,7 +36,6 @@ private _markAction =
                     params ["_target", "_player", "_params", "_actionData"];
                     _params params ["_color"];
 
-
                     private _colorCode =
                     [
                         configFile >> "CfgMarkerColors" >> _color,
@@ -44,10 +43,7 @@ private _markAction =
                         [0, 0, 0, 1]
                     ] call BIS_fnc_returnConfigEntry;
 
-                    private _colorCodeStr = "#" + ((_colorCode apply { (_x * 255) call ace_common_fnc_tohex; }) joinString "");
-                    systemChat _colorCodeStr;
-
-                    (_actionData select 2) set [1, _colorCodeStr];
+                    (_actionData select 2) set [1, [_colorCode] call BNAKC_fnc_rgbToHex];
                 }
             ] call ace_interact_menu_fnc_createAction;
 

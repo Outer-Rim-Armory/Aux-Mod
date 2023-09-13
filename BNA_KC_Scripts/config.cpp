@@ -55,6 +55,7 @@ class CfgFunctions
             file = "BNA_KC_Scripts\Data\Functions\Map";
 			class CreateMarkOnSelf{};
             class CreateMarkAction{};
+            class rgbToHex{};
         };
 
         class EMP
