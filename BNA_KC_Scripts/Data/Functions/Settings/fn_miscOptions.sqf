@@ -33,6 +33,31 @@
 ] call CBA_fnc_addSetting;
 
 
+private _markerColors = configProperties
+[
+    configFile >> "CfgMarkerColors"
+] apply { configName _x; };
+_markerColors deleteAt 0; // Remove "Default"
+
+private _markerColorNames = _markerColors apply
+{
+    private _name =
+    [
+        (configFile >> "CfgMarkerColors" >> _x),
+        "name",
+        "Unknown Color"
+    ] call BIS_fnc_returnConfigEntry;
+    _name;
+};
+[
+    "BNA_KC_Map_MarkColor",
+    "LIST",
+    ["Color", "Color to use when creating the map marker"],
+    ["Keeli Company Aux Mod", "Map"],
+    [_markerColors, _markerColorNames, 0]
+] call CBA_fnc_addSetting;
+
+
 // Developer
 [
     "BNA_KC_DevMode",

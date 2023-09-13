@@ -27,6 +27,6 @@ private _marker = createMarker
 ];
 
 _marker setMarkerType "hd_dot";       // Markers are invisible by default
-_marker setMarkerColor "ColorBlack";
+_marker setMarkerColor BNA_KC_Map_MarkColor;
 _marker setMarkerText "";
 _marker;
