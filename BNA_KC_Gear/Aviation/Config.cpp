@@ -48,7 +48,7 @@ class CfgWeapons
         displayName = "[KC] AVI P2 Helm 01+ (Pilot) - Grey Camo";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Aviation\Data\Helmets\Helmet_P2_Pilor_CamoGrey.paa",
+            "BNA_KC_Gear\Aviation\Data\Helmets\Helmet_P2_Pilot_CamoGrey.paa",
             "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
         };
     };
