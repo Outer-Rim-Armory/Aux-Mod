@@ -20,7 +20,7 @@ if (isNull _atrt) exitWith {};
 _atrt setAnimSpeedCoef 1.5; // Used to increase movement speed
 _atrt disableAI "RADIOPROTOCOL"; // Stops ai from talking/sending messages
 
-private _atrtDamageHandler = _atrt addEventHandler
+_atrt addEventHandler
 [
     "HandleDamage",
     {
@@ -37,12 +37,12 @@ private _atrtDamageHandler = _atrt addEventHandler
 
             _atrt removeEventHandler [_thisEvent, _thisEventHandler];
         };
-        
+
         0;
     }
 ];
 
-private _atrtDeltedHandler = _atrt addEventHandler
+_atrt addEventHandler
 [
     "Deleted",
     {
@@ -59,7 +59,7 @@ _atrt addAction
     {
         //       _target, _caller
         params ["_atrt", "_rider", "_actionId", "_arguments"];
-        
+
         _rider = _atrt getVariable ["BNA_KC_ATRT_Rider", _rider];
         [_rider, _atrt] call BNAKC_fnc_mountATRT;
 
@@ -77,7 +77,7 @@ _atrt addAction
             // See https://community.bistudio.com/wiki/waitUntil#Problems
             !isNil "_expression" and { _expression };
         };
-        
+
         _atrt call BNAKC_fnc_dismountATRT;
     },
     [],
