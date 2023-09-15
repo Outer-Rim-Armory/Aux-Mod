@@ -22,7 +22,6 @@ if
 ) exitWith {};
 
 _atrt setVariable ["BNA_KC_ATRT_Rider", _rider, true];
-_rider allowDamage false; // Player could potentially get stuck if the AT-RT "dies" while riding it
 
 _rider attachTo [_atrt, [0, 0, 0], "seat"]; // Attach the user to the ATRT
 [_rider, "ChopperLight_C_LIn_H"] remoteExec ["switchMove", 0];

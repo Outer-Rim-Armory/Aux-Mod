@@ -42,15 +42,14 @@ if (cameraOn != (vehicle _rider)) then
     (vehicle _rider) switchCamera cameraView;
 };
 
-objNull remoteControl driver _atrt; // Reset control
-player remoteControl _rider;
+_atrt remoteControl objNull;
+_rider remoteControl objNull;
 [_rider, "blockThrow", "ridingATRT", false] call ace_common_fnc_statusEffect_set;
 
 private _collision = _atrt getVariable ["BNA_KC_ATRT_CollisionObj", objNull]; // Remove collision
 deleteVehicle _collision;
 
 _atrt setVariable ["BNA_KC_ATRT_Rider", nil, true]; // Reset rider
-_rider allowDamage true;
 inGameUISetEventHandler ["Action", ""];
 
 [
