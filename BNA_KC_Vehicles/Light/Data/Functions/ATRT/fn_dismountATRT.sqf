@@ -45,7 +45,7 @@ if (cameraOn != (vehicle _rider)) then
 _atrt remoteControl objNull;
 _rider remoteControl objNull;
 
-if (isClass (configFile >> "CfgPatches" >> "ace_advanced_throwing") and isClass (configFile >> "CfgPatches" >> "ace_common")) then
+if (isClass (configFile >> "CfgPatches" >> "ace_advanced_throwing")) then
 {
     [_rider, "blockThrow", "ridingATRT", false] call ace_common_fnc_statusEffect_set;
 };
