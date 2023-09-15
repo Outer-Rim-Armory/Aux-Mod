@@ -62,7 +62,7 @@ _atrt addAction
         //       _target, _caller
         params ["_atrt", "_rider", "", ""];
 
-        _rider = _atrt getVariable ["BNA_KC_ATRT_Rider", _rider];
+        _rider = _atrt getVariable ["BNA_KC_ATRT_rider", _rider];
         [_rider, _atrt] call BNAKC_fnc_mountATRT;
 
         // Check if the player should be able to ride

@@ -21,15 +21,15 @@ if
     (typeOf _rider isKindOf "3AS_ATRT_Base") // Blocks AT-RT "stacking"
 ) exitWith {};
 
-_atrt setVariable ["BNA_KC_ATRT_Rider", _rider, true];
+_atrt setVariable ["BNA_KC_ATRT_rider", _rider, true];
 
-_rider attachTo [_atrt, [0, 0, 0], "seat"]; // Attach the user to the ATRT
+_rider attachTo [_atrt, [0, 0, 0], "seat"];
 [_rider, "ChopperLight_C_LIn_H"] remoteExec ["switchMove", 0];
 _rider setVariable ["BNA_KC_ATRT_isRiding", true];
 
 _collision = "3AS_ATRT_Collision" createVehicle (position _atrt); // Object to simulate collision for the vehicle
 _collision attachTo [_atrt, [0.0, 0.3, -2.3], "seat"];
-_atrt setVariable ["BNA_KC_ATRT_CollisionObj", _collision, true];
+_atrt setVariable ["BNA_KC_ATRT_collisionObj", _collision, true];
 
 // Switch camera to AT-RT
 if (cameraOn != (vehicle _atrt)) then

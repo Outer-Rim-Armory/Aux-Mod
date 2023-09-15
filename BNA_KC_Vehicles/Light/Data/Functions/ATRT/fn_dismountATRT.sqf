@@ -15,7 +15,7 @@
 
 params ["_atrt"];
 
-private _rider = _atrt getVariable ["BNA_KC_ATRT_Rider", nil];
+private _rider = _atrt getVariable ["BNA_KC_ATRT_rider", nil];
 if (isNil "_rider") exitWith {};
 
 // Prevent the player getting stuck on top
@@ -50,10 +50,10 @@ if (isClass (configFile >> "CfgPatches" >> "ace_advanced_throwing") and isClass 
     [_rider, "blockThrow", "ridingATRT", false] call ace_common_fnc_statusEffect_set;
 };
 
-private _collision = _atrt getVariable ["BNA_KC_ATRT_CollisionObj", objNull]; // Remove collision
+private _collision = _atrt getVariable ["BNA_KC_ATRT_collisionObj", objNull]; // Remove collision
 deleteVehicle _collision;
 
-_atrt setVariable ["BNA_KC_ATRT_Rider", nil, true]; // Reset rider
+_atrt setVariable ["BNA_KC_ATRT_rider", nil, true]; // Reset rider
 inGameUISetEventHandler ["Action", ""];
 
 [
