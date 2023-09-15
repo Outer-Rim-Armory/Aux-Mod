@@ -44,7 +44,11 @@ if (cameraOn != (vehicle _rider)) then
 
 _atrt remoteControl objNull;
 _rider remoteControl objNull;
-[_rider, "blockThrow", "ridingATRT", false] call ace_common_fnc_statusEffect_set;
+
+if (isClass (configFile >> "CfgPatches" >> "ace_advanced_throwing") and isClass (configFile >> "CfgPatches" >> "ace_common")) then
+{
+    [_rider, "blockThrow", "ridingATRT", false] call ace_common_fnc_statusEffect_set;
+};
 
 private _collision = _atrt getVariable ["BNA_KC_ATRT_CollisionObj", objNull]; // Remove collision
 deleteVehicle _collision;

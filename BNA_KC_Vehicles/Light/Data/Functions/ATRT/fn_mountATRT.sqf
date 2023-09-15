@@ -42,7 +42,12 @@ if (cameraOn != (vehicle _atrt)) then
 // Give control of the unit to the player
 objNull remoteControl driver _rider;
 player remoteControl _atrt;
-[_rider, "blockThrow", "ridingATRT", true] call ace_common_fnc_statusEffect_set;
+
+
+if (isClass (configFile >> "CfgPatches" >> "ace_advanced_throwing") and isClass (configFile >> "CfgPatches" >> "ace_common")) then
+{
+    [_rider, "blockThrow", "ridingATRT", true] call ace_common_fnc_statusEffect_set;
+};
 
 // Makes the "Release UAV Controls" action not do anything to avoid issues
 inGameUISetEventHandler ["Action", "if ((_this select 3) isEqualTo ""BackFromUAV"") then {true};"];
