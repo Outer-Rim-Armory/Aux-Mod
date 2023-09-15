@@ -284,6 +284,7 @@ class CfgVehicles
 
         displayName = "[KC] AT-RT";
         uniformClass = "BNA_KC_Uniform_ATRT";
+        nakedUniform = "BNA_KC_Uniform_ATRT";
         impactEffectsBlood = "ImpactMetal";
 
         weapons[] = { "BNA_KC_ATRT_Turret" };
