@@ -24,7 +24,9 @@ _atrt addEventHandler
 [
     "HandleDamage",
     {
-        params ["_atrt", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
+        params ["_atrt", "", "_damage", "", "", "", "", ""];
+        private ["_atrtHelath"];
+
         _atrtHealth = _atrt getVariable ["BNA_KC_Health", ATRT_BASE_HEALTH];
         _atrtHealth = _atrtHealth - _damage;
         _atrt setVariable ["BNA_KC_Health", _atrtHealth, true];
@@ -58,7 +60,7 @@ _atrt addAction
     "Drive",
     {
         //       _target, _caller
-        params ["_atrt", "_rider", "_actionId", "_arguments"];
+        params ["_atrt", "_rider", "", ""];
 
         _rider = _atrt getVariable ["BNA_KC_ATRT_Rider", _rider];
         [_rider, _atrt] call BNAKC_fnc_mountATRT;
@@ -97,7 +99,7 @@ _atrt addAction
     "Dismount",
     {
         //       _target,  _caller
-        params ["_rider", "_atrt", "_actionId", "_arguments"];
+        params ["", "_atrt", "", ""];
         _atrt call BNAKC_fnc_dismountATRT;
     },
     nil,
