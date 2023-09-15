@@ -15,6 +15,7 @@
 
 
 params ["_rider", "_atrt"];
+private ["_collision"];
 
 if
 (
