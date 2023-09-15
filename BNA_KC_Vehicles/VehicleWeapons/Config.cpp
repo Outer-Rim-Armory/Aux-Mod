@@ -66,7 +66,6 @@ class CfgAmmo
         coefgravity = 0;
 	};
 
-    /*
     class 3AS_ATRT_bluePlasma;
     class BNA_KC_ATRT_Turret_Ammo: 3AS_ATRT_bluePlasma
     {
@@ -75,7 +74,6 @@ class CfgAmmo
         typicalSpeed = 400;
         coefgravity = 0;
     };
-    */
 };
 // model = "3as\3AS_Weapons\Data\tracer_shell_Green.p3d";
 
@@ -160,7 +158,6 @@ class CfgMagazines
 		tracersEvery=1;
 	};
 
-    /*
     class 3AS_9999Rnd_ATRT_Mag;
     class BNA_KC_9999Rnd_ATRT_Turret_Magazine: 3AS_9999Rnd_ATRT_Mag
     {
@@ -169,7 +166,6 @@ class CfgMagazines
         displayNameShort = "";
         descriptionShort = "Standard battery pack for the AT-RT";
     };
-    */
 };
 
 
@@ -736,7 +732,6 @@ class CfgWeapons
 		};
 	};
 	
-    /*
     class 3AS_ATRT_Weapon_F;
     class BNA_KC_ATRT_Turret: 3AS_ATRT_Weapon_F
     {
@@ -750,7 +745,6 @@ class CfgWeapons
         magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
         magazineWell[] = {};
     };
-    */
     
     // Horns & Alarms
     class CarHorn;
