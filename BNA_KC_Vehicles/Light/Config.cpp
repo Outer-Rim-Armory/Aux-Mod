@@ -11,8 +11,9 @@ class CfgWeapons
     };
     class BNA_KC_Uniform_ATRT: 3AS_ATRT_Uniform
     {
-        displayName = "[KC] AT-RT Uniform";
+        displayName = "AT-RT Plating";
         JLTS_hasStunProtection = 1;
+        picture = "\BNA_KC_Vehicles\Light\Data\Textures\UI\Uniform_ATRT_UI.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -259,7 +260,7 @@ class TransportMagazines \
 };
 
 
-// class CBA_Extended_EventHandlers_base;
+class CBA_Extended_EventHandlers_base;
 class CfgVehicles
 {
     class 3AS_ATRT_Base;
@@ -322,7 +323,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
-        
+
         crew = "BNA_KC_Unit_ARF";
         side = 1;
 
@@ -518,7 +519,7 @@ class CfgVehicles
                 };
             };
         };
-        
+
         class Turrets: Turrets
         {
 			class MainTurret: MainTurret
