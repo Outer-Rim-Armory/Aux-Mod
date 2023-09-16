@@ -15,6 +15,7 @@
 
 
 params ["_unit"];
+if !(hasInterface) exitWith {};
 
 // Contants and macros
 #define POS_SPINE3 [-0.009, -0.008, 0.356]
