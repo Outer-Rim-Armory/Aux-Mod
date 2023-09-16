@@ -263,11 +263,7 @@ class TransportMagazines \
 class CBA_Extended_EventHandlers_base;
 class CfgVehicles
 {
-    class 3AS_ATRT_Base;
-    class 3AS_ATRT: 3AS_ATRT_Base
-    {
-        class EventHandlers;
-    };
+    class 3AS_ATRT;
     class BNA_KC_ATRT: 3AS_ATRT
 	{
 		// Mod Info
@@ -295,9 +291,9 @@ class CfgVehicles
 		// {
 		// 	"BNA_KC_Vehicles\Light\Data\Textures\ATRT\BNA_KC_ATRT.paa"
 		// };
-        class EventHandlers: EventHandlers
+        class EventHandlers
         {
-            init = "(_this select 0) call BNAKC_fnc_initATRT;"; // Overwrite 3AS script call
+            init = "";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
 
@@ -790,6 +786,18 @@ class CfgFunctions
             class mountATRT {};
             class dismountATRT {};
             class spawnATRTSmoke {};
+        };
+    };
+};
+
+
+class Extended_Init_EventHandlers
+{
+    class BNA_KC_ATRT
+    {
+        class BNA_KC_ATRT_init
+        {
+            init = "(_this select 0) call BNAKC_fnc_initATRT;";
         };
     };
 };
