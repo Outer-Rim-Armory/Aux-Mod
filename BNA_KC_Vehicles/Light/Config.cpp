@@ -286,6 +286,12 @@ class CfgVehicles
         weapons[] = { "BNA_KC_ATRT_Turret" };
         magazines[] = { "BNA_KC_9999Rnd_ATRT_Turret_Magazine" };
 
+        allowedfacewear[] = {""};
+        allowedHeadgear[] = {""};
+        allowedHeadgearB[] = {""};
+        headgearList[] = {""};
+        identityTypes[] = {"LanguageENG_F", "Head_NATO", "Head_Euro"};
+
 		// Textures are not set-up on the 3AS end yet.
 		// hiddenSelectionsTextures[] =
 		// {
