@@ -744,6 +744,7 @@ class CfgWeapons
 
         displayName = "AT-RT Turret";
         descriptionShort = "";
+        picture = "\BNA_KC_Vehicles\VehicleWeapons\Data\Texture\UI\Weapon_ATRT_UI.paa";
 
         magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
         magazineWell[] = {};
