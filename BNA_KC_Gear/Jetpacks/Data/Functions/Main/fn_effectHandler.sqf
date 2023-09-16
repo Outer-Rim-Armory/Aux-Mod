@@ -14,13 +14,13 @@
  */
 
 
-params ["_unit"];
-if !(hasInterface) exitWith {};
-
 // Contants and macros
 #define POS_SPINE3 [-0.009, -0.008, 0.356]
 #define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
 #define GET_ARRAY(config, defaultValue) (if (isArray (config)) then {getArray (config)} else {defaultValue})
+
+params ["_unit"];
+if !(hasInterface) exitWith {};
 
 // Don't play effects for units on the ground or who can't jetpack
 if (!(_unit call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround _unit) exitWith {};
