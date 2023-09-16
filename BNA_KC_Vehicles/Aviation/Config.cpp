@@ -249,6 +249,20 @@ class CfgVehicles
                 initPhase = 1;
             };
         };
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+            class CoPilot: CoPilot {};
+            class LeftDoorGun: LeftDoorGun {};
+            class RightDoorGun: RightDoorGun {};
+            class CargoTurret_01: CargoTurret_01 {};
+            class CargoTurret_02: CargoTurret_02 {};
+            class CargoTurret_03: CargoTurret_03 {};
+            class CargoTurret_04: CargoTurret_04 {};
+            class CargoTurret_05: CargoTurret_05 {};
+            class CargoTurret_06: CargoTurret_06 {};
+        };
     };
     class BNA_KC_LAATi_MK1_Lamps: BNA_KC_LAATi_MK1
     {
