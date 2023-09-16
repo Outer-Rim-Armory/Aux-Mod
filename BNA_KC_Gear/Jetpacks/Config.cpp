@@ -125,7 +125,6 @@ class CfgVehicles
         BNA_KC_Jet_effects[] =
         {
             "BNA_KC_Effects_JetpackFire_Blue",
-            "BNA_KC_Effects_JetpackSparks_Blue",
             "BNA_KC_Effects_JetpackSmoke"
         };
         BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Audio\Jetpack_Loop.wss";
