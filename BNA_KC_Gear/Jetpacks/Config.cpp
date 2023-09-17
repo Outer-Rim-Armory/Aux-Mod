@@ -41,6 +41,10 @@ class CfgMagazines
     class CA_Magazine;
     class BNA_KC_Jetpack_FuelCan_Mag: CA_Magazine
     {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
         displayName = "[KC] Jetpack Fuel Can";
         descriptionShort = "A partially full Jetpack fuel can.";
 
