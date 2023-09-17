@@ -141,8 +141,9 @@ class CfgMagazines
     {
         displayName = "[12th Fleet] DC-15X Energy Cell";
         displayNameShort = "High Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DC-15X";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-15X";
         ammo = "12thFleet_Ammo_Sniper_Blue";
+        count = 20;
 
         JLTS_hasEMPProtection = 1;
     };
