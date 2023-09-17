@@ -85,6 +85,8 @@ class CfgAmmo
         ACE_caliber = 8.585;
         ACE_muzzleVelocities = {880, 915, 925};
         ACE_muzzleVelocityVariationSD = 0.3;
+
+        audibleFire = 80;
     };
 
     class JLTS_bullet_pistol_blue;
