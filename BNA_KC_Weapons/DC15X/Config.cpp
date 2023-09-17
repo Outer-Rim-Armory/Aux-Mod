@@ -60,25 +60,24 @@ class CfgWeapons
             {
                 compatibleItems[] =
                 {
-                    "JLTS_DC15X_scope"
+                    "JLTS_DC15X_scope",
+                    "Aux501_cows_lrps"
                 };
             };
             class PointerSlot: PointerSlot
             {
                 compatibleItems[]  =
                 {
-                    // "acc_pointer_ir",
-                    // "ace_acc_pointer_green",
-                    // "jlts_dc17sa_flashlight"
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
                 };
             };
             class UnderBarrelSlot: UnderBarrelSlot
             {
                 compatibleItems[] =
                 {
-                    "bipod_01_f_blk",
-                    "bipod_02_f_blk",
-                    "bipod_03_f_blk"
+                    "bipod_01_f_blk"
                 };
             };
         };
