@@ -101,8 +101,8 @@ class CfgWeapons
     class BNA_KC_DC15X: BNA_KC_DC15X_Base
     {
         // Scope
-        scope = 1;        // Hidden until completed
-        scopeArsenal = 0;
+        scope = 2;
+        scopeArsenal = 2;
 
         displayName = "[KC] DC-15X";
         baseWeapon = "BNA_KC_DC15X";
