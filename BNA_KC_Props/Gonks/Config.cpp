@@ -118,7 +118,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "Arsenal";
+        displayName = "Arsenal Terminal";
         model = "3AS\3AS_Props\Terminals\Terminal_short.p3d";
 
         class UserActions
@@ -141,6 +141,34 @@ class CfgVehicles
             {
                 displayName = "Open BIS Arsenal";
                 statement = "['Open', [true]] call BIS_fnc_arsenal;";
+            };
+        };
+    };
+
+    class BNA_KC_Utility_Heal: BNA_KC_Utility_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Full Heal Droid";
+        model = "RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
+
+        class UserActions
+        {
+            class FullHeal
+            {
+                displayName = "Recieve Treatment";
+
+                position = "camera";
+                radius = 5;
+                onlyForPlayer = 1;
+
+                hideOnUse = 1;
+                priority = 5;
+
+                condition = "true";
+                statement = "[player, player] call ace_medical_treatment_fnc_fullHeal;";
             };
         };
     };
