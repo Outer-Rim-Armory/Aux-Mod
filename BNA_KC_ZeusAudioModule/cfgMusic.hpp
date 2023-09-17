@@ -847,4 +847,3 @@ class CfgMusic
         musicClass = "BNA_KC_OtherMusic"; // Music category
 	};
 };
-};
