@@ -62,8 +62,8 @@ class CfgAmmo
     {
         coefgravity = 0;
         // 3AS Hit Sounds/Effects
-        HIT_SOUNDS
-        HIT_EFFECTS
+        BULLET_SOUNDS
+        BULLET_EFFECTS
     };
     class 12thFleet_Ammo_Rifle_Red: 12thFleet_Ammo_Rifle_Blue
     {
@@ -74,8 +74,8 @@ class CfgAmmo
     class JLTS_bullet_sniper_blue;
     class 12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
     {
-        HIT_SOUNDS
-        HIT_EFFECTS
+        BULLET_SOUNDS
+        BULLET_EFFECTS
 
         coefgravity = 0;
         ACE_ballisticCoefficients[] = {0.322};
@@ -93,8 +93,8 @@ class CfgAmmo
     class 12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
     {
         coefgravity = 0;
-        HIT_SOUNDS
-        HIT_EFFECTS
+        BULLET_SOUNDS
+        BULLET_EFFECTS
     };
 
     class JLTS_bullet_stun;
