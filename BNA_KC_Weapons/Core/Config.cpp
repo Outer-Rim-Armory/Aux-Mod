@@ -79,11 +79,11 @@ class CfgAmmo
 
         coefgravity = 0;
         ACE_ballisticCoefficients[] = {0.322};
-        ACE_barrelLengths = {508, 660.4, 711.2};
+        ACE_barrelLengths[] = {508, 660.4, 711.2};
         ACE_bulletLength = 39.573;
         ACE_bulletMass = 16.2;
         ACE_caliber = 8.585;
-        ACE_muzzleVelocities = {880, 915, 925};
+        ACE_muzzleVelocities[] = {880, 915, 925};
         ACE_muzzleVelocityVariationSD = 0.3;
 
         audibleFire = 80;
