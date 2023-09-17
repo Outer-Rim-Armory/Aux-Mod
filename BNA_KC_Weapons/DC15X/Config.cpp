@@ -155,5 +155,8 @@ class CfgMagazines
         count = 20;
 
         JLTS_hasEMPProtection = 1;
+
+        initSpeed = 1100;
+        mass = 8;
     };
 };
