@@ -24,13 +24,10 @@ class CfgFunctions
 };
 
 
-class Extended_PreInit_EventHandlers
+class Extended_Init_EventHandlers
 {
-    
-};
-
-
-class Extended_PostInit_EventHandlers
-{
-    
+    class BNA_KC_Deployable_MedicalDroid
+    {
+        init = "_droid = _this select 0; _droid spawn BNAKC_fnc_loopingAudioInit; _droid spawn BNAKC_fnc_areaSlowHeal";
+    };
 };
