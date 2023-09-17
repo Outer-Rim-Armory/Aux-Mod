@@ -83,6 +83,15 @@ class CfgWeapons
         };
         class Single: Single
         {
+            maxRange = 450;
+            maxRangeProbab = 0.3;
+            midRange = 250;
+            midRangeProbab = 0.7;
+            minRange = 2;
+            minRangeProbab = 0.5;
+
+            dispersion = 0.0003;
+
             class StandardSound: StandardSound
             {
                 begin1[] =
