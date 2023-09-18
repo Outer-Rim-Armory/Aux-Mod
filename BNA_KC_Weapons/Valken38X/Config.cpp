@@ -66,6 +66,7 @@ class CfgWeapons
         class Single: Single
         {
             dispersion = 0;
+            reloadTime = 2;
 
             class StandardSound: StandardSound
             {
