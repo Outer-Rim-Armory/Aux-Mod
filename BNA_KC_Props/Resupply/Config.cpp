@@ -18,7 +18,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] Empty Crate";
+        displayName = "Empty Crate";
 
         ace_cargo_size = 1;
         ace_cargo_noRename = 1
@@ -40,7 +40,7 @@ class CfgVehicles
 
     class BNA_KC_Resupply_SquadAmmo: BNA_KC_Resupply_Base
     {
-        displayName = "[KC] Ammo Crate (Squad)";
+        displayName = "Ammo Crate (Squad)";
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat" };
         hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa" };
@@ -164,7 +164,7 @@ class CfgVehicles
     };
     class BNA_KC_Resupply_PlatoonAmmo: BNA_KC_Resupply_SquadAmmo
     {
-        displayName = "[KC] Ammo Crate (Platoon)";
+        displayName = "Ammo Crate (Platoon)";
         ace_cargo_size = 2;
 
         class TransportWeapons
@@ -296,7 +296,7 @@ class CfgVehicles
 
     class BNA_KC_Resupply_SquadAmmo_Heavy: BNA_KC_Resupply_SquadAmmo
     {
-        displayName = "[KC] Heavy Ammo Crate (Squad)";
+        displayName = "Heavy Ammo Crate (Squad)";
         class TransportMagazines
         {
             class _xx_BNA_KC_Mag_HI12
@@ -313,7 +313,7 @@ class CfgVehicles
     };
     class BNA_KC_Resupply_PlatoonAmmo_Heavy: BNA_KC_Resupply_SquadAmmo_Heavy
     {
-        displayName = "[KC] Heavy Ammo Crate (Platoon)";
+        displayName = "Heavy Ammo Crate (Platoon)";
         class TransportMagazines: TransportMagazines
         {
             class _xx_BNA_KC_Mag_HI12: _xx_BNA_KC_Mag_HI12
@@ -329,7 +329,7 @@ class CfgVehicles
 
     class BNA_KC_Resupply_SquadMedical: BNA_KC_Resupply_Base
     {
-        displayName = "[KC] Medical Crate (Squad)";
+        displayName = "Medical Crate (Squad)";
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat" };
         hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa" };
@@ -440,7 +440,7 @@ class CfgVehicles
     };
     class BNA_KC_Resupply_PlatoonMedical: BNA_KC_Resupply_SquadMedical
     {
-        displayName = "[KC] Medical Crate (Platoon)";
+        displayName = "Medical Crate (Platoon)";
         ace_cargo_size = 2;
 
         // Bandages
@@ -544,7 +544,7 @@ class CfgVehicles
 
     class BNA_KC_Resupply_JetpackFuel: BNA_KC_Resupply_Base
     {
-        displayName = "[KC] Jetpack Fuel Tank";
+        displayName = "Jetpack Fuel Tank";
 
         ace_cargo_size = 2;
         ace_dragging_canDrag = 0;
