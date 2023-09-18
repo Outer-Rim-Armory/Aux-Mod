@@ -49,6 +49,7 @@ class CfgWeapons
         reloadAction = "3AS_GestureReloadDC15S";
 
         canShootInWater = 1;
+        fireLightDiffuse[] = {0, 0, 1};
 
         // JLTS emp system
         JLTS_hasElectronics = 1;
