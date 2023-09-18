@@ -23,7 +23,9 @@ class CfgPatches
         {
             "BNA_KC_DP23_Base",
             "BNA_KC_DP23",
-            "BNA_KC_DP23_Fried"
+            "BNA_KC_DP23_Fried",
+            "BNA_KC_DP23_RiotShield",
+            "BNA_KC_DP23_RiotShield_Fried",
         };
         magazines[] =
         {
