@@ -101,7 +101,7 @@ class CfgWeapons
     class BNA_KC_DP23_RiotShield: BNA_KC_DP23
     {
         // Scopes
-        scope = 2;
+        scope = 1;
         scopeArsenal = 0;
 
         baseWeapon = "BNA_KC_DP23_RiotShield";
