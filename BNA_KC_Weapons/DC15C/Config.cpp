@@ -1,6 +1,9 @@
 #include "CfgPatches.hpp"
 
 
+class Mode_SemiAuto;
+class Mode_FullAuto;
+
 class CfgWeapons
 {
     class Rifle_Base_F;
@@ -14,6 +17,15 @@ class CfgWeapons
         {
             class CowsSlot;
             class PointerSlot;
+        };
+
+        class Single: Mode_SemiAuto
+        {
+            class StandardSound;
+        };
+        class FullAuto: Mode_FullAuto
+        {
+            class StandardSound;
         };
     };
     class BNA_KC_DC15C_Base: 3AS_DC15C_F
@@ -71,6 +83,37 @@ class CfgWeapons
                     "ace_acc_pointer_green",
                     "jlts_dc17sa_flashlight"
                 };
+            };
+        };
+
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] =
+                {
+                    "BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss",
+                    1,
+                    1,
+                    1800
+                };
+                soundBegin[] = {"begin1", 1};
+                soundBeginWater[] = {"begin1", 1};
+            };
+        };
+        class FullAuto: FullAuto
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] =
+                {
+                    "BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss",
+                    1,
+                    1,
+                    1800
+                };
+                soundBegin[] = {"begin1", 1};
+                soundBeginWater[] = {"begin1", 1};
             };
         };
     };
