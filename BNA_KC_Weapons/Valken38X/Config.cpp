@@ -109,10 +109,30 @@ class CfgMagazines
         displayName = "[KC] Valken-38X AP Energy Cell";
         displayNameShort = "High Energy AP";
         descriptionShort = "Armor Piercing Energy Cell Pack<br/>Rounds: 10<br/>Used In: Valken-38X";
-        ammo = "12thFleet_Ammo_Sniper_Blue";
+        ammo = "BNA_KC_Ammo_Sniper_AP_Yellow";
         count = 10;
+
+        initSpeed = 1300;
+        mass = 15;
 
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
         picture = "\LF_Weapon_Unit\DC17SA\ui\dc17ammo_co.paa";
+    };
+};
+
+
+class CfgAmmo
+{
+    class 12thFleet_Ammo_Sniper_Blue;
+    class BNA_KC_Ammo_Sniper_AP_Yellow: 12thFleet_Ammo_Sniper_Blue
+    {
+        hit = 45;
+        caliber = 15;
+        ACE_caliber = 15;
+        typicalSpeed = 700;
+        ACE_bulletMass = 30;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
+        effectfly = "JLTS_plasma_yellow";
     };
 };
