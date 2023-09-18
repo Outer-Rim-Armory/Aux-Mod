@@ -3,7 +3,18 @@
 
 class CfgWeapons
 {
-    class JLTS_DP23;
+    class Rifle_Base_F;
+    class arifle_MX_Base_F: Rifle_Base_F
+    {
+        class WeaponSlotsInfo;
+    };
+    class JLTS_DP23: arifle_MX_Base_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class UnderBarrelSlot;
+        };
+    };
     class BNA_KC_DP23_Base: JLTS_DP23
     {
         // Mod Info
@@ -43,7 +54,7 @@ class CfgWeapons
 
         displayName = "[KC] DP-23";
         baseWeapon = "BNA_KC_DP23";
-
+        JLTS_shieldedWeapon = "BNA_KC_DP23_RiotShield";
         JLTS_friedItem = "BNA_KC_DP23_Fried";
     };
     class BNA_KC_DP23_Fried: BNA_KC_DP23
@@ -57,6 +68,46 @@ class CfgWeapons
         picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_fried_ui_ca.paa";
         baseWeapon = "BNA_KC_DP23_Fried";
 
+        JLTS_shieldedWeapon = "BNA_KC_DP23_RiotShield_Fried";
+        JLTS_isFried = 1;
+        magazines[] = {};
+    };
+
+    class BNA_KC_DP23_RiotShield: BNA_KC_DP23
+    {
+        // Scopes
+        scope = 2;
+        scopeArsenal = 0;
+
+        baseWeapon = "BNA_KC_DP23_RiotShield";
+
+        JLTS_isShielded = 1;
+        JLTS_friedItem = "BNA_KC_DP23_RiotShield_Fried";
+        JLTS_baseWeapon = "BNA_KC_DP23";
+
+        inertia = 0.8;
+
+        model = "\MRC\JLTS\weapons\DP23\DP23_shielded.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\DP23\data\DP23_co.paa", "\MRC\JLTS\weapons\Shield\data\shield_co.paa"};
+        handAnim[] = {"OFP2_ManSkeleton", "\MRC\JLTS\weapons\DP23\anims\DP23_shielded_handanim.rtm"};
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class UnderBarrelSlot: UnderBarrelSlot
+            {
+                compatibleItems[] = {"JLTS_riot_shield_attachment"};
+            };
+        };
+    };
+    class BNA_KC_DP23_RiotShield_Fried: BNA_KC_DP23_RiotShield
+    {
+        displayName = "[KC] DP-23 (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_fried_ui_ca.paa";
+        baseWeapon = "BNA_KC_DP23_RiotShield_Fried";
+
+        JLTS_baseWeapon = "BNA_KC_DP23_Fried";
         JLTS_isFried = 1;
         magazines[] = {};
     };
