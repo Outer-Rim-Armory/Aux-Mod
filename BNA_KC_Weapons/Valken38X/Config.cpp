@@ -1,9 +1,9 @@
 #include "CfgPatches.hpp"
 
 
-class Mode_SemiAuto;
 class PointerSlot;
 class UnderBarrelSlot;
+class Mode_SemiAuto;
 
 class CfgWeapons
 {
@@ -11,7 +11,10 @@ class CfgWeapons
     class LFP_Valken38X: LFP_rifle_base
     {
         class WeaponSlotsInfo;
-        class Single;
+        class Single: Mode_SemiAuto
+        {
+            class StandardSound;
+        };
     };
     class BNA_KC_Valken38X_Base: LFP_Valken38X
     {
@@ -62,6 +65,14 @@ class CfgWeapons
         class Single: Single
         {
             dispersion = 0;
+
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"LF_Weapon_Unit\main\sounds\Valken38x1.wss", 1, 1, 1800};
+                begin2[] = {"LF_Weapon_Unit\main\sounds\Valken38x2.wss", 1, 1, 1800};
+                begin3[] = {"LF_Weapon_Unit\main\sounds\Valken38x3.wss", 1, 1, 1800};
+                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.34};
+            };
         };
 
         // JLTS emp system
