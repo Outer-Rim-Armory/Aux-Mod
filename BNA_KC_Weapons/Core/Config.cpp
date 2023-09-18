@@ -13,7 +13,7 @@ class CfgMagazines
 
         JLTS_hasEMPProtection = 1;
 
-        ammo = "12thFleet_Ammo_Stun";
+        ammo = "Aux_12thFleet_Ammo_Stun";
     };
 
     class 12thFleet_Mag_StunLong: 12thFleet_Mag_StunShort
@@ -58,21 +58,21 @@ class CfgMagazines
 class CfgAmmo
 {
     class JLTS_bullet_rifle_blue;
-    class 12thFleet_Ammo_Rifle_Blue: JLTS_bullet_rifle_blue
+    class Aux_12thFleet_Ammo_Rifle_Blue: JLTS_bullet_rifle_blue
     {
         coefgravity = 0;
         // 3AS Hit Sounds/Effects
         BULLET_SOUNDS
         BULLET_EFFECTS
     };
-    class 12thFleet_Ammo_Rifle_Red: 12thFleet_Ammo_Rifle_Blue
+    class Aux_12thFleet_Ammo_Rifle_Red: Aux_12thFleet_Ammo_Rifle_Blue
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
     };
 
     class JLTS_bullet_sniper_blue;
-    class 12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
+    class Aux_12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
     {
         BULLET_SOUNDS
         BULLET_EFFECTS
@@ -90,14 +90,14 @@ class CfgAmmo
     };
 
     class JLTS_bullet_pistol_blue;
-    class 12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
+    class Aux_12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
     {
         coefgravity = 0;
         BULLET_SOUNDS
         BULLET_EFFECTS
     };
 
-    class Aux_12thFleet_Ammo_Scatter_Blue: 12thFleet_Ammo_Pistol_Blue
+    class Aux_12thFleet_Ammo_Scatter_Blue: Aux_12thFleet_Ammo_Pistol_Blue
     {
         simulation = "shotSpread";
         fireSpreadAngle = 3;
@@ -109,7 +109,7 @@ class CfgAmmo
     };
 
     class JLTS_bullet_stun;
-    class 12thFleet_Ammo_Stun: JLTS_bullet_stun
+    class Aux_12thFleet_Ammo_Stun: JLTS_bullet_stun
     {
         coefgravity = 0;
     };

@@ -172,6 +172,6 @@ class CfgMagazines
 
         JLTS_hasEMPProtection = 1;
 
-        ammo = "12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux_12thFleet_Ammo_Rifle_Blue";
     };
 };

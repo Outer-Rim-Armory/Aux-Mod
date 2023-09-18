@@ -311,7 +311,7 @@ class CfgMagazines
         displayName = "[12th Fleet] DC-17 Energy Cell";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-17";
-        ammo = "12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux_12thFleet_Ammo_Rifle_Blue";
 
         JLTS_hasEMPProtection = 1;
     };
