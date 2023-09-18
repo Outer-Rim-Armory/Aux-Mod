@@ -89,11 +89,7 @@ class CfgVehicles
 
         class TransportWeapons
         {
-            class _xx_ls_weapon_rps6_disposable
-            {
-                weapon = "ls_weapon_rps6_disposable";
-                count = 2;
-            };
+            WEAP_XX(ls_weapon_rps6_disposable, 2)
         };
 
         class TransportMagazines
