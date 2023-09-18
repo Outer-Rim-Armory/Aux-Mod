@@ -169,7 +169,6 @@ class CfgWeapons
 
         JLTS_isShielded = 1;
         JLTS_friedItem = "BNA_KC_DC15S_RiotShield_Fried";
-        JLTS_baseWeapon = "BNA_KC_DC15S";
 
         model = "\MRC\JLTS\weapons\DC15S\DC15S_shielded.p3d";
         hiddenSelections[] = { "camo1", "camo2" };
@@ -202,7 +201,7 @@ class CfgWeapons
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_fried_ui_ca.paa";
 
-        JLTS_baseWeapon = "BNA_KC_DC15S_RiotShield";
+        JLTS_baseWeapon = "BNA_KC_DC15S";
         JLTS_isFried = 1;
         magazines[] = {};
 
