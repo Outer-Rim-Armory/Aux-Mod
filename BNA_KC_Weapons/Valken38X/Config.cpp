@@ -28,6 +28,7 @@ class CfgWeapons
 
         displayName = "[KC] Valken-38X (Base)";
         baseWeapon = "BNA_KC_Valken38X_Base";
+        picture = "\BNA_KC_Weapons\Valken38X\Data\Textures\UI\Valken38X_UI.paa";
 
         modes[] =
         {
@@ -98,7 +99,7 @@ class CfgWeapons
 
         displayName = "[KC] Valken-38X (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        // picture = "\BNA_KC_Weapons\Valken38X\Data\Textures\UI\Valken38X_Fried_UI.paa";
+        picture = "\BNA_KC_Weapons\Valken38X\Data\Textures\UI\Valken38X_Fried_UI.paa";
         baseWeapon = "BNA_KC_Valken38X_Fried";
 
         JLTS_isFried = 1;
