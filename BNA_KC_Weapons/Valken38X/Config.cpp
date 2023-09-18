@@ -15,6 +15,11 @@ class CfgWeapons
         {
             class StandardSound;
         };
+        class OpticsModes
+        {
+            class DC15Xscope_sights;
+            class DC15Xscope_scope;
+        };
     };
     class BNA_KC_Valken38X_Base: LFP_Valken38X
     {
@@ -74,6 +79,16 @@ class CfgWeapons
                 begin2[] = {"LF_Weapon_Unit\main\sounds\Valken38x2.wss", 1, 1, 1800};
                 begin3[] = {"LF_Weapon_Unit\main\sounds\Valken38x3.wss", 1, 1, 1800};
                 soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.34};
+            };
+        };
+
+        class OpticsModes: OpticsModes
+        {
+            class DC15Xscope_sights: DC15Xscope_sights {};
+            class DC15Xscope_scope: DC15Xscope_scope
+            {
+                visionMode[] = {"Normal", "NVG", "TI"};
+                thermalMode[] = {0};
             };
         };
 
