@@ -3,7 +3,19 @@
 
 class CfgWeapons
 {
-    class 3AS_DC15L_F;
+    class Rifle_Base_F;
+    class 3AS_DC15L_Base_F: Rifle_Base_F
+    {
+        class WeaponSlotsInfo;
+    };
+    class 3AS_DC15L_F: 3AS_DC15L_Base_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+            class PointerSlot;
+        };
+    };
     class BNA_KC_DC15L_Base: 3AS_DC15L_F
     {
         // Mod Info
@@ -31,6 +43,32 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] =
+                {
+                    // Long
+                    "Aux501_cows_DMS",
+                    "Aux501_cows_DMS_2",
+                    "Aux501_cows_DMS_3",
+                    "Aux501_cows_DMS_4",
+                    // Sights
+                    "3as_optic_dc15l"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[] =
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+        };
     };
 
     class BNA_KC_DC15L: BNA_KC_DC15L_Base
