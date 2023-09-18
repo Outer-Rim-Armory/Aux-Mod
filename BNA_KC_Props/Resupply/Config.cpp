@@ -294,8 +294,9 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Resupply_SquadAmmo_Special: BNA_KC_Resupply_SquadAmmo
+    class BNA_KC_Resupply_SquadAmmo_Heavy: BNA_KC_Resupply_SquadAmmo
     {
+        displayName = "[KC] Heavy Ammo Crate (Squad)";
         class TransportMagazines
         {
             class _xx_BNA_KC_Mag_HI12
@@ -310,8 +311,9 @@ class CfgVehicles
             };
         };
     };
-    class BNA_KC_Resupply_PlatoonAmmo_Special: BNA_KC_Resupply_SquadAmmo_Special
+    class BNA_KC_Resupply_PlatoonAmmo_Heavy: BNA_KC_Resupply_SquadAmmo_Heavy
     {
+        displayName = "[KC] Heavy Ammo Crate (Platoon)";
         class TransportMagazines: TransportMagazines
         {
             class _xx_BNA_KC_Mag_HI12: _xx_BNA_KC_Mag_HI12
