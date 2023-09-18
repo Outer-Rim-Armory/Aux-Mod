@@ -160,105 +160,32 @@ class CfgVehicles
         class TransportItems
         {
             // Bandages
-            class _xx_ACE_elasticBandage
-            {
-                name = "ACE_elasticBandage";
-                count = 60;
-            };
-
-            class _xx_ACE_packingBandage
-            {
-                name = "ACE_packingBandage";
-                count = 40;
-            };
-
-            class _xx_ACE_quickclot
-            {
-                name = "ACE_quickclot";
-                count = 30;
-            };
+            ITEM_XX(ACE_elasticBandage, 60)
+            ITEM_XX(ACE_packingBandage, 40)
+            ITEM_XX(ACE_quickclot, 30)
 
             // Fluid
-            class _xx_ACE_salineIV
-            {
-                name = "ACE_salineIV";
-                count = 5;
-            };
-            class _xx_ACE_salineIV_500
-            {
-                name = "ACE_salineIV_500";
-                count = 5;
-            };
-            class _xx_ACE_salineIV_250
-            {
-                name = "ACE_salineIV_250";
-                count = 10;
-            };
+            ITEM_XX(ACE_salineIV, 5)
+            ITEM_XX(ACE_salineIV_500, 5)
+            ITEM_XX(ACE_salineIV_250, 10)
 
             // Drugs
-            class _xx_ACE_morphine
-            {
-                name = "ACE_morphine";
-                count = 5;
-            };
-
-            class _xx_ACE_epinephrine
-            {
-                name = "ACE_epinephrine";
-                count = 5;
-            };
-
-            class _xx_RD501_Painkiller
-            {
-                name = "RD501_Painkiller";
-                count = 10;
-            };
+            ITEM_XX(ACE_morphine, 5)
+            ITEM_XX(ACE_morphine, 5)
+            ITEM_XX(ACE_morphine, 10)
 
             // Misc
-            class _xx_ACE_tourniquet
-            {
-                name = "ACE_tourniquet";
-                count = 12;
-            };
-
-            class _xx_ACE_Splint
-            {
-                name = "ACE_Splint";
-                count = 3;
-            };
-
-            class _xx_ACE_Banana
-            {
-                name = "ACE_Banana";
-                count = 1;
-            };
+            ITEM_XX(ACE_tourniquet, 12)
+            ITEM_XX(ACE_Splint, 3)
+            ITEM_XX(ACE_Banana, 1)
         };
 
         class TransportMagazines
         {
-            class _xx_3AS_SmokePurple
-            {
-                magazine = "3AS_SmokePurple";
-                count = 2;
-            };
-
-            class _xx_SquadShieldMagazine
-            {
-                magazine = "SquadShieldMagazine";
-                count = 2;
-            };
-
-            class _xx_BNA_KC_Grenade_BactaBomb
-            {
-                magazine = "BNA_KC_Grenade_BactaBomb";
-                count = 5;
-            };
-
-            class _xx_BNA_KC_Mag_GR20
-            {
-                magazine = "BNA_KC_Mag_GR20";
-                count = 2;
-            };
+            MAG_XX(3AS_SmokePurple, 2)
+            MAG_XX(SquadShieldMagazine, 2)
+            MAG_XX(BNA_KC_Grenade_BactaBomb, 5)
+            MAG_XX(BNA_KC_Mag_GR20, 2)
         };
     };
     class BNA_KC_Resupply_PlatoonMedical: BNA_KC_Resupply_SquadMedical
@@ -266,102 +193,35 @@ class CfgVehicles
         displayName = "Medical Crate (Platoon)";
         ace_cargo_size = 2;
 
-        // Bandages
         class TransportItems
         {
-            class _xx_ACE_elasticBandage
-            {
-                name = "ACE_elasticBandage";
-                count = 150;
-            };
-
-            class _xx_ACE_packingBandage
-            {
-                name = "ACE_packingBandage";
-                count = 60;
-            };
-
-            class _xx_ACE_quickclot
-            {
-                name = "ACE_quickclot";
-                count = 40;
-            };
+            // Bandages
+            ITEM_XX(ACE_elasticBandage, 150)
+            ITEM_XX(ACE_packingBandage, 60)
+            ITEM_XX(ACE_quickclot, 40)
 
             // Fluid
-            class _xx_ACE_salineIV
-            {
-                name = "ACE_salineIV";
-                count = 20;
-            };
-            class _xx_ACE_salineIV_500
-            {
-                name = "ACE_salineIV_500";
-                count = 20;
-            };
-            class _xx_ACE_salineIV_250
-            {
-                name = "ACE_salineIV_250";
-                count = 30;
-            };
+            ITEM_XX(ACE_salineIV, 20)
+            ITEM_XX(ACE_salineIV_500, 20)
+            ITEM_XX(ACE_salineIV_250, 30)
 
             // Drugs
-            class _xx_ACE_morphine
-            {
-                name = "ACE_morphine";
-                count = 10;
-            };
-
-            class _xx_ACE_epinephrine
-            {
-                name = "ACE_epinephrine";
-                count = 10;
-            };
-
-            class _xx_RD501_Painkiller
-            {
-                name = "RD501_Painkiller";
-                count = 20;
-            };
+            ITEM_XX(ACE_morphine, 10)
+            ITEM_XX(ACE_morphine, 10)
+            ITEM_XX(ACE_morphine, 20)
 
             // Misc
-            class _xx_ACE_tourniquet
-            {
-                name = "ACE_tourniquet";
-                count = 16;
-            };
-
-            class _xx_ACE_Splint
-            {
-                name = "ACE_Splint";
-                count = 8;
-            };
+            ITEM_XX(ACE_tourniquet, 12)
+            ITEM_XX(ACE_Splint, 3)
+            ITEM_XX(ACE_Banana, 1)
         };
 
         class TransportMagazines
         {
-            class _xx_3AS_SmokePurple
-            {
-                magazine = "3AS_SmokePurple";
-                count = 10;
-            };
-
-            class _xx_SquadShieldMagazine
-            {
-                magazine = "SquadShieldMagazine";
-                count = 6;
-            };
-
-            class _xx_BNA_KC_Grenade_BactaBomb
-            {
-                magazine = "BNA_KC_Grenade_BactaBomb";
-                count = 10;
-            };
-
-            class _xx_BNA_KC_Mag_GR20
-            {
-                magazine = "BNA_KC_Mag_GR20";
-                count = 4;
-            };
+            MAG_XX(3AS_SmokePurple, 10)
+            MAG_XX(SquadShieldMagazine, 6)
+            MAG_XX(BNA_KC_Grenade_BactaBomb, 10)
+            MAG_XX(BNA_KC_Mag_GR20, 4)
         };
     };
 
