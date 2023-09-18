@@ -50,9 +50,9 @@ class TransportMagazines \
         magazine = "12thFleet_Mag_DC15S"; \
         count = 15; \
     }; \
-    class _xx_12thFleet_Mag_DC15X \
+    class _xx_Aux_12thFleet_Mag_DC15X \
     { \
-        magazine = "12thFleet_Mag_DC15X"; \
+        magazine = "Aux_12thFleet_Mag_DC15X"; \
         count = 5; \
     }; \
 }; \
@@ -326,7 +326,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
-        
+
         crew = "BNA_KC_Unit_ARF";
         side = 1;
 
@@ -522,7 +522,7 @@ class CfgVehicles
                 };
             };
         };
-        
+
         class Turrets: Turrets
         {
 			class MainTurret: MainTurret

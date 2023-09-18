@@ -63,9 +63,9 @@ class CfgVehicles
                 magazine = "12thFleet_Mag_WestarM5";
                 count = 10;
             };
-            class _xx_12thFleet_Mag_DC15X
+            class _xx_Aux_12thFleet_Mag_DC15X
             {
-                magazine = "12thFleet_Mag_DC15X";
+                magazine = "Aux_12thFleet_Mag_DC15X";
                 count = 10;
             };
             // UGL Ammo
@@ -194,9 +194,9 @@ class CfgVehicles
                 magazine = "12thFleet_Mag_WestarM5";
                 count = 160;
             };
-            class _xx_12thFleet_Mag_DC15X
+            class _xx_Aux_12thFleet_Mag_DC15X
             {
-                magazine = "12thFleet_Mag_DC15X";
+                magazine = "Aux_12thFleet_Mag_DC15X";
                 count = 160;
             };
             // UGL Ammo

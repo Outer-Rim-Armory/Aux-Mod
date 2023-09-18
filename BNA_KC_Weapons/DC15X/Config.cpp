@@ -45,7 +45,7 @@ class CfgWeapons
         {
             "this"
         };
-        magazines[] = { "12thFleet_Mag_DC15X" };
+        magazines[] = { "Aux_12thFleet_Mag_DC15X" };
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -147,7 +147,7 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_DC15X_mag;
-    class 12thFleet_Mag_DC15X: JLTS_DC15X_mag
+    class Aux_12thFleet_Mag_DC15X: JLTS_DC15X_mag
     {
         displayName = "[12th Fleet] DC-15X Energy Cell";
         displayNameShort = "High Energy";
