@@ -97,6 +97,17 @@ class CfgAmmo
         BULLET_EFFECTS
     };
 
+    class Aux_12thFleet_Ammo_Scatter_Blue: 12thFleet_Ammo_Pistol_Blue
+    {
+        simulation = "shotSpread";
+        fireSpreadAngle = 3;
+    };
+
+    class Aux_12thFleet_Ammo_Scatter_HP_Blue: Aux_12thFleet_Ammo_Scatter_Blue
+    {
+        hit = 10;
+    };
+
     class JLTS_bullet_stun;
     class 12thFleet_Ammo_Stun: JLTS_bullet_stun
     {

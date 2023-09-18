@@ -147,9 +147,17 @@ class CfgMagazines
         displayName = "[12th Fleet] DP-23 Energy Cell";
         displayNameShort = "Low Energy";
         descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 30<br/>Used In: DP-23";
-        // ammo = "12thFleet_Ammo_Scatter_Blue";
+        ammo = "Aux_12thFleet_Ammo_Scatter_Blue";
         count = 30;
 
         JLTS_hasEMPProtection = 1;
+    };
+
+    class Aux_12thFleet_Mag_DP23_HP: JLTS_DP23_mag
+    {
+        displayName = "[12th Fleet] DP-23 HP Energy Cell";
+        displayNameShort = "Medium Energy";
+        ammo = "Aux_12thFleet_Ammo_Scatter_HP_Blue";
+        count = 15;
     };
 };
