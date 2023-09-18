@@ -60,30 +60,39 @@ class CfgWeapons
             {
                 compatibleItems[] =
                 {
-                    "JLTS_DC15X_scope"
+                    "JLTS_DC15X_scope",
+                    "Aux501_cows_lrps"
                 };
             };
             class PointerSlot: PointerSlot
             {
                 compatibleItems[]  =
                 {
-                    // "acc_pointer_ir",
-                    // "ace_acc_pointer_green",
-                    // "jlts_dc17sa_flashlight"
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
                 };
             };
             class UnderBarrelSlot: UnderBarrelSlot
             {
                 compatibleItems[] =
                 {
-                    "bipod_01_f_blk",
-                    "bipod_02_f_blk",
-                    "bipod_03_f_blk"
+                    "bipod_01_f_blk"
                 };
             };
         };
         class Single: Single
         {
+            maxRange = 450;
+            maxRangeProbab = 0.3;
+            midRange = 250;
+            midRangeProbab = 0.7;
+            minRange = 2;
+            minRangeProbab = 0.5;
+
+            dispersion = 0.0003;
+            reloadTime = 1.5;
+
             class StandardSound: StandardSound
             {
                 begin1[] =
@@ -102,8 +111,8 @@ class CfgWeapons
     class BNA_KC_DC15X: BNA_KC_DC15X_Base
     {
         // Scope
-        scope = 1;        // Hidden until completed
-        scopeArsenal = 0;
+        scope = 2;
+        scopeArsenal = 2;
 
         displayName = "[KC] DC-15X";
         baseWeapon = "BNA_KC_DC15X";
@@ -142,9 +151,13 @@ class CfgMagazines
     {
         displayName = "[12th Fleet] DC-15X Energy Cell";
         displayNameShort = "High Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DC-15X";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-15X";
         ammo = "12thFleet_Ammo_Sniper_Blue";
+        count = 20;
 
         JLTS_hasEMPProtection = 1;
+
+        initSpeed = 1100;
+        mass = 8;
     };
 };
