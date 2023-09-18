@@ -11,6 +11,7 @@ class CfgWeapons
     class LFP_Valken38X: LFP_rifle_base
     {
         class WeaponSlotsInfo;
+        class Single;
     };
     class BNA_KC_Valken38X_Base: LFP_Valken38X
     {
@@ -56,6 +57,11 @@ class CfgWeapons
                     "3as_bipod_dc15l_f"
                 };
             };
+        };
+
+        class Single: Single
+        {
+            dispersion = 0;
         };
 
         // JLTS emp system
