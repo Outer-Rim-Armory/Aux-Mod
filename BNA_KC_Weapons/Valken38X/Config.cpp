@@ -95,7 +95,7 @@ class CfgMagazines
     class LFP_Valken38X_Mag;
     class BNA_KC_Mag_Valken38X_AP: LFP_Valken38X_Mag
     {
-        displayName = "[KC] Valken-38X Energy Cell";
+        displayName = "[KC] Valken-38X AP Energy Cell";
         displayNameShort = "High Energy AP";
         descriptionShort = "Armor Piercing Energy Cell Pack<br/>Rounds: 10<br/>Used In: Valken-38X";
         ammo = "12thFleet_Ammo_Sniper_Blue";
