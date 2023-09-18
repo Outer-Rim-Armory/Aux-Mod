@@ -304,6 +304,16 @@ class CfgVehicles
                 magzine = "BNA_KC_Mag_HI12";
                 count = 20;
             };
+            class _xx_BNA_KC_Mag_Valken38X
+            {
+                magzine = "BNA_KC_Mag_Valken38X";
+                count = 20;
+            };
+            class _xx_BNA_KC_Mag_Valken38X_AP
+            {
+                magzine = "BNA_KC_Mag_Valken38X_AP";
+                count = 20;
+            };
             class _xx_JLTS_Z6_mag
             {
                 magazine = "JLTS_Z6_mag";
@@ -317,6 +327,14 @@ class CfgVehicles
         class TransportMagazines: TransportMagazines
         {
             class _xx_BNA_KC_Mag_HI12: _xx_BNA_KC_Mag_HI12
+            {
+                count = 120;
+            };
+            class _xx_BNA_KC_Mag_Valken38X: _xx_BNA_KC_Mag_Valken38X
+            {
+                count = 120;
+            };
+            class _xx_BNA_KC_Mag_Valken38X_AP: _xx_BNA_KC_Mag_Valken38X_AP
             {
                 count = 120;
             };
