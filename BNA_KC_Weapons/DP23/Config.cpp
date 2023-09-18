@@ -38,7 +38,7 @@ class CfgWeapons
         {
             "this"
         };
-        magazines[] = {"Aux_12thFleet_Mag_DP23"};
+        magazines[] = {"Aux_12thFleet_Mag_DP23", "Aux_12thFleet_Mag_DP23_HP"};
         magazineWell[] = {};
 
         canShootInWater = 1;
