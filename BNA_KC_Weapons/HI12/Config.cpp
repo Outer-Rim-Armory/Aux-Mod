@@ -30,6 +30,7 @@ class CfgWeapons
 
         displayName = "[KC] HI-12";
         baseWeapon = "BNA_KC_HI12";
+        picture = "\BNA_KC_Weapons\HI12\Data\Textures\UI\HI12_UI.paa";
 
         modes[] =
         {
