@@ -15,8 +15,8 @@ class CfgPatches
                 // Laser pointer
             "ace_laserpointer",
                 // Green laser pointer
-            "A3_Weapons_F_Mark_Acc"
-                // Bipods
+            "3AS_Weapons_DC15L"
+                // Bipod
         };
         units[] = {};
         weapons[] =

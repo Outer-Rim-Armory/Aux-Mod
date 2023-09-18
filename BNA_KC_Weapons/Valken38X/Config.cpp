@@ -2,12 +2,15 @@
 
 
 class Mode_SemiAuto;
+class PointerSlot;
+class UnderBarrelSlot;
 
 class CfgWeapons
 {
     class LFP_rifle_base;
     class LFP_Valken38X: LFP_rifle_base
     {
+        class WeaponSlotsInfo;
     };
     class BNA_KC_Valken38X_Base: LFP_Valken38X
     {
@@ -34,6 +37,26 @@ class CfgWeapons
         magazineWell[] = {};
 
         canShootInWater = 1;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[] =
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+            class UnderBarrelSlot: UnderBarrelSlot
+            {
+                compatibleItems[] =
+                {
+                    "3as_bipod_dc15l_f"
+                };
+            };
+        };
 
         // JLTS emp system
         JLTS_hasElectronics = 1;
