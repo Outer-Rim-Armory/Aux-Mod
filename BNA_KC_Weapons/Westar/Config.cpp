@@ -46,6 +46,7 @@ class CfgWeapons
         magazineWell[] = {};
 
         canShootInWater = 1;
+        fireLightDiffuse[] = {0, 0, 1};
         recoil = "recoil_smg_03";
 
         class WeaponSlotsInfo: WeaponSlotsInfo
