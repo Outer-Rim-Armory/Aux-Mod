@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Weapons_Core",
+                // Ammo
             "3AS_Weapons_DC15L"
                 // DC-15L
         };
