@@ -40,7 +40,7 @@ class CfgWeapons
 
         displayName = "[KC] DC-15C (Base)";
         baseWeapon = "BNA_KC_DC15C_Base";
-        // picture = "\BNA_KC_Weapons\DC15C\Data\Textures\UI\DC15C_UI.paa";
+        picture = "\BNA_KC_Weapons\DC15C\Data\Textures\UI\DC15C_UI.paa";
 
         modes[] = {"FullAuto", "Single"};
         muzzles[] = {"this"};
@@ -138,7 +138,7 @@ class CfgWeapons
         displayName = "[KC] DC-15C (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         baseWeapon = "BNA_KC_DC15C_Fried";
-        // picture = "\BNA_KC_Weapons\DC15C\Data\Textures\UI\DC15C_Fried_UI.paa";
+        picture = "\BNA_KC_Weapons\DC15C\Data\Textures\UI\DC15C_Fried_UI.paa";
 
         JLTS_isFried = 1;
         magazines[] = {};
