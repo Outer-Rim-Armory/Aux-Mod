@@ -5,6 +5,7 @@ class 3AS_Optic_Scope_WestarM5: ItemCore
 };
 class BNA_KC_WestarM5_Scope: 3AS_Optic_Scope_WestarM5
 {
+    displayName = "[KC] Westar-M5 Long Scope";
     class ItemInfo: ItemInfo
     {
         class OpticsModes
@@ -13,7 +14,7 @@ class BNA_KC_WestarM5_Scope: 3AS_Optic_Scope_WestarM5
             {
                 opticsID = 1;
                 useModelOptics = 1;
-                opticsPPEffects[] = 
+                opticsPPEffects[] =
                 {
                     "OpticsCHAbera1",
                     "OpticsBlur1"
@@ -28,12 +29,12 @@ class BNA_KC_WestarM5_Scope: 3AS_Optic_Scope_WestarM5
                 nFovLimit = 0.07;
                 discreteFov[] = {0.0416,0.0138};
                 discreteInitIndex = 0;
-                modelOptics[] = 
+                modelOptics[] =
                 {
                     "\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d"
                 };
                 memoryPointCamera = "opticView";
-                visionMode[] = 
+                visionMode[] =
                 {
                     //"Normal",
                     //"NVG",
