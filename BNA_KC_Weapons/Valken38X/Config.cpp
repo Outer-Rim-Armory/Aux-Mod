@@ -33,7 +33,7 @@ class CfgWeapons
         {
             "this"
         };
-        magazines[] = {"BNA_KC_Mag_Valken38X_AP"};
+        magazines[] = {"BNA_KC_Mag_Valken38X", "BNA_KC_Mag_Valken38X_AP"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -93,16 +93,18 @@ class CfgWeapons
 class CfgMagazines
 {
     class 12thFleet_Mag_DC15X;
-    class BNA_KC_Mag_Valken38X_AP: 12thFleet_Mag_DC15X
+    class BNA_KC_Mag_Valken38X: 12thFleet_Mag_DC15X
     {
         displayName = "[KC] Valken-38X Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 25<br/>Used In: Valken-38X";
         ammo = "12thFleet_Ammo_Sniper_Blue";
         count = 25;
+
+        modelSpecial = "\LF_Weapon_Unit\valken\valken_mag.p3d";
+        modelSpecialIsProxy = 1;
     };
 
-    class LFP_Valken38X_Mag;
-    class BNA_KC_Mag_Valken38X_AP: LFP_Valken38X_Mag
+    class BNA_KC_Mag_Valken38X_AP: BNA_KC_Mag_Valken38X
     {
         displayName = "[KC] Valken-38X AP Energy Cell";
         displayNameShort = "High Energy AP";
@@ -110,6 +112,7 @@ class CfgMagazines
         ammo = "12thFleet_Ammo_Sniper_Blue";
         count = 10;
 
-        JLTS_hasEMPProtection = 1;
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = "\LF_Weapon_Unit\DC17SA\ui\dc17ammo_co.paa";
     };
 };
