@@ -73,6 +73,11 @@ class CfgVehicles
                 magazine = "Aux_12thFleet_Mag_DP23";
                 count = 10;
             };
+            class _xx_Aux_12thFleet_Mag_DC15C
+            {
+                magazine = "Aux_12thFleet_Mag_DC15C";
+                count = 10;
+            };
             // UGL Ammo
             class _xx_3Rnd_UGL_FlareWhite_F
             {
@@ -207,6 +212,11 @@ class CfgVehicles
             class _xx_Aux_12thFleet_Mag_DP23
             {
                 magazine = "Aux_12thFleet_Mag_DP23";
+                count = 160;
+            };
+            class _xx_Aux_12thFleet_Mag_DC15C
+            {
+                magazine = "Aux_12thFleet_Mag_DC15C";
                 count = 160;
             };
             // UGL Ammo
