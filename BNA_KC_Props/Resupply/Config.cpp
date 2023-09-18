@@ -68,6 +68,11 @@ class CfgVehicles
                 magazine = "Aux_12thFleet_Mag_DC15X";
                 count = 10;
             };
+            class _xx_Aux_12thFleet_Mag_DP23
+            {
+                magazine = "Aux_12thFleet_Mag_DP23";
+                count = 10;
+            };
             // UGL Ammo
             class _xx_3Rnd_UGL_FlareWhite_F
             {
@@ -199,6 +204,11 @@ class CfgVehicles
                 magazine = "Aux_12thFleet_Mag_DC15X";
                 count = 160;
             };
+            class _xx_Aux_12thFleet_Mag_DP23
+            {
+                magazine = "Aux_12thFleet_Mag_DP23";
+                count = 160;
+            };
             // UGL Ammo
             class _xx_3Rnd_UGL_FlareWhite_F
             {
@@ -304,6 +314,11 @@ class CfgVehicles
                 magzine = "BNA_KC_Mag_HI12";
                 count = 20;
             };
+            class _xx_Aux_12thFleet_Mag_DP23_HP
+            {
+                magzine = "Aux_12thFleet_Mag_DP23_HP";
+                count = 20;
+            };
             class _xx_JLTS_Z6_mag
             {
                 magazine = "JLTS_Z6_mag";
@@ -317,6 +332,10 @@ class CfgVehicles
         class TransportMagazines: TransportMagazines
         {
             class _xx_BNA_KC_Mag_HI12: _xx_BNA_KC_Mag_HI12
+            {
+                count = 120;
+            };
+            class _xx_Aux_12thFleet_Mag_DP23_HP: _xx_Aux_12thFleet_Mag_DP23_HP
             {
                 count = 120;
             };
