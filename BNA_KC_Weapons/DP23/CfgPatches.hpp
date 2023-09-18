@@ -7,8 +7,16 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "JLTS_weapons_DP23"
+            "JLTS_weapons_DP23",
                 // DP-23
+            "JLTS_weapons_DC17SA",
+                // Flashlight
+            "Aux501_Patch_Accessories",
+                // Scopes
+            "A3_Weapons_F_Acc",
+                // Laser pointer
+            "ace_laserpointer"
+                // Green laser pointer
         };
         units[] = {};
         weapons[] =

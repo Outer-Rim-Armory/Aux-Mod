@@ -12,6 +12,8 @@ class CfgWeapons
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
+            class CowsSlot;
+            class PointerSlot;
             class UnderBarrelSlot;
         };
     };
@@ -44,6 +46,29 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] =
+                {
+                    "Aux501_cows_RCO",
+                    "Aux501_cows_RCO_2",
+                    "Aux501_cows_RCO_3",
+                    "Aux501_cows_reflex_optic"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[]  =
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+        };
     };
 
     class BNA_KC_DP23: BNA_KC_DP23_Base
