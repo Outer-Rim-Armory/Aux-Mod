@@ -9,6 +9,8 @@ class CfgPatches
         {
             "LF_Weapon_Unit_Valken38X",
                 // Valken
+            "BNA_KC_Weapons_DC15X",
+                // Sniper mag
             "JLTS_weapons_DC17SA",
                 // Flashlight
             "A3_Weapons_F_Acc",
