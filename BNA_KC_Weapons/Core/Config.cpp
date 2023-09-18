@@ -71,6 +71,20 @@ class CfgAmmo
         effectfly = "JLTS_plasma_red";
     };
 
+    class JLTS_bullet_carbine_blue;
+    class Aux_12thFleet_Ammo_Carbine_Blue: JLTS_bullet_carbine_blue
+    {
+        coefgravity = 0;
+        // 3AS Hit Sounds/Effects
+        BULLET_SOUNDS
+        BULLET_EFFECTS
+    };
+    class Aux_12thFleet_Ammo_Carbine_Red: Aux_12thFleet_Ammo_Carbine_Blue
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+    };
+
     class JLTS_bullet_sniper_blue;
     class Aux_12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
     {
