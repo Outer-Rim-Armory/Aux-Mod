@@ -52,6 +52,11 @@ class CfgWeapons
 
         canShootInWater = 1;
 
+        // JLTS emp system
+        JLTS_hasElectronics = 1;
+        JLTS_hasEMPProtection = 0;
+        JLTS_friedItem = "BNA_KC_HI12_Fried";
+
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class PointerSlot: PointerSlot
@@ -114,6 +119,21 @@ class CfgWeapons
                 thermalMode[] = { 0 };
             };
         };
+    };
+
+    class BNA_KC_HI12_Fried: BNA_KC_HI12
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
+        displayName = "[KC] HI-12 (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\BNA_KC_Weapons\HI12\Data\Textures\UI\HI12_Fried_UI.paa";
+        baseWeapon = "BNA_KC_HI12_Fried";
+
+        JLTS_isFried = 1;
+        magazines[] = {};
     };
 };
 
