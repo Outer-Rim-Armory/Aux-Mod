@@ -153,7 +153,7 @@ class CfgMagazines
         JLTS_hasEMPProtection = 1;
     };
 
-    class Aux_12thFleet_Mag_DP23_HP: JLTS_DP23_mag
+    class Aux_12thFleet_Mag_DP23_HP: Aux_12thFleet_Mag_DP23
     {
         displayName = "[12th Fleet] DP-23 HP Energy Cell";
         displayNameShort = "Medium Energy";
