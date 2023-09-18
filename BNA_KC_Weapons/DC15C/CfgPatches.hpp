@@ -11,8 +11,12 @@ class CfgPatches
                 // DC-15C
             "3AS_Main",
                 // Reload animation
-            "BNA_KC_Weapons_DC15S"
+            "BNA_KC_Weapons_DC15S",
                 // Magazine
+            "Aux501_Patch_Accessories",
+                // 501st Scopes/Sights
+            "JLTS_weapons_DC17SA"
+                // Flashlight
         };
         units[] = {};
         weapons[] =
