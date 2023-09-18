@@ -171,12 +171,12 @@ class CfgVehicles
 
             // Drugs
             ITEM_XX(ACE_morphine, 5)
-            ITEM_XX(ACE_morphine, 5)
-            ITEM_XX(ACE_morphine, 10)
+            ITEM_XX(ACE_epinephrine, 5)
+            ITEM_XX(RD501_Painkiller, 10)
 
             // Misc
             ITEM_XX(ACE_tourniquet, 12)
-            ITEM_XX(ACE_Splint, 3)
+            ITEM_XX(ACE_Splint, 4)
             ITEM_XX(ACE_Banana, 1)
         };
 
@@ -206,19 +206,18 @@ class CfgVehicles
             ITEM_XX(ACE_salineIV_250, 30)
 
             // Drugs
-            ITEM_XX(ACE_morphine, 10)
-            ITEM_XX(ACE_morphine, 10)
-            ITEM_XX(ACE_morphine, 20)
+            ITEM_XX(ACE_morphine, 13)
+            ITEM_XX(ACE_epinephrine, 13)
+            ITEM_XX(RD501_Painkiller, 20)
 
             // Misc
             ITEM_XX(ACE_tourniquet, 12)
-            ITEM_XX(ACE_Splint, 3)
-            ITEM_XX(ACE_Banana, 1)
+            ITEM_XX(ACE_Splint, 8)
         };
 
         class TransportMagazines
         {
-            MAG_XX(3AS_SmokePurple, 10)
+            MAG_XX(3AS_SmokePurple, 5)
             MAG_XX(SquadShieldMagazine, 6)
             MAG_XX(BNA_KC_Grenade_BactaBomb, 10)
             MAG_XX(BNA_KC_Mag_GR20, 4)

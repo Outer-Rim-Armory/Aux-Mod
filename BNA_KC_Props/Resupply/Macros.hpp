@@ -1,4 +1,4 @@
-#define WEAP_XX(WEAP, COUNT) class _xx_##MAG \
+#define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \
 { \
     weapon = #WEAP; \
     count = COUNT; \
@@ -10,7 +10,7 @@
     count = COUNT; \
 };
 
-#define ITEM_XX(ITEM, COUNT) class _xx_##MAG \
+#define ITEM_XX(ITEM, COUNT) class _xx_##ITEM \
 { \
     name = #ITEM; \
     count = COUNT; \
