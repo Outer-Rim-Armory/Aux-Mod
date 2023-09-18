@@ -51,6 +51,9 @@ class CfgWeapons
         magazineWell[] = {};
 
         canShootInWater = 1;
+        fireLightDiffuse[] = {0, 0, 1};
+        fireLightDuration = 0.05;
+        fireLightIntensity = 0.2;
 
         // JLTS emp system
         JLTS_hasElectronics = 1;
