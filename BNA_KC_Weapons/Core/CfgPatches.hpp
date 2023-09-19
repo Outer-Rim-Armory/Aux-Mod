@@ -9,9 +9,6 @@ class CfgPatches
         {
             "JLTS_weapons_Core",
                 // Base JLTS bullets
-            "3AS_Weapons",
-                // Westar bullet/mag
-                // TODO: Rework westar mag/bullet
             "A3_Weapons_F"
                 // Base UGL flare
         };
