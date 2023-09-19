@@ -169,7 +169,7 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11("12thFleet_Mag_E5"),
+            ITEM_11("Aux_12thFleet_Mag_E5"),
             ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -179,7 +179,7 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11("12thFleet_Mag_E5"),
+            ITEM_11("Aux_12thFleet_Mag_E5"),
             ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),

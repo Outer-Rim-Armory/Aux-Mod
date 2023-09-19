@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "Macros.hpp"
 
 
 class CfgVehicles
@@ -48,118 +49,39 @@ class CfgVehicles
         class TransportMagazines
         {
             // Primary Ammo
-            class _xx_12thFleet_Mag_DC15A
-            {
-                magazine = "12thFleet_Mag_DC15A";
-                count = 10;
-            };
-            class _xx_12thFleet_Mag_DC15S
-            {
-                magazine = "12thFleet_Mag_DC15S";
-                count = 10;
-            };
-            class _xx_12thFleet_Mag_WestarM5
-            {
-                magazine = "12thFleet_Mag_WestarM5";
-                count = 10;
-            };
-            class _xx_12thFleet_Mag_DC15X
-            {
-                magazine = "12thFleet_Mag_DC15X";
-                count = 10;
-            };
+            MAG_XX(12thFleet_Mag_DC15A, 10)
+            MAG_XX(12thFleet_Mag_DC15S, 10)
+            MAG_XX(Aux_12thFleet_Mag_DC15C, 10)
+            MAG_XX(Aux_12thFleet_Mag_DC15X, 10)
+            MAG_XX(Aux_12thFleet_Mag_DC15L, 10)
+            MAG_XX(Aux_12thFleet_Mag_DP23, 10)
+            MAG_XX(12thFleet_Mag_WestarM5, 10)
+            MAG_XX(BNA_KC_Mag_Valken38X_AP, 10)
+
             // UGL Ammo
-            class _xx_3Rnd_UGL_FlareWhite_F
-            {
-                magazine = "3Rnd_UGL_FlareWhite_F";
-                count = 5;
-            };
-            class _xx_3Rnd_UGL_FlareRed_F
-            {
-                magazine = "3Rnd_UGL_FlareRed_F";
-                count = 5;
-            };
-            class _xx_BNA_KC_3Rnd_UGL_FlareBlue
-            {
-                magazine = "BNA_KC_3Rnd_UGL_FlareBlue";
-                count = 5;
-            };
-            class _xx_3Rnd_UGL_FlareCIR_F
-            {
-                magazine = "3Rnd_UGL_FlareCIR_F";
-                count = 5;
-            };
-            class _xx_3Rnd_Smoke_Grenade_shell
-            {
-                magazine = "3Rnd_Smoke_Grenade_shell";
-                count = 5;
-            };
-            class _xx_3Rnd_SmokeRed_Grenade_shell
-            {
-                magazine = "3Rnd_SmokeRed_Grenade_shell";
-                count = 5;
-            };
-            class _xx_3Rnd_SmokeGreen_Grenade_shell
-            {
-                magazine = "3Rnd_SmokeGreen_Grenade_shell";
-                count = 5;
-            };
-            class _xx_3Rnd_SmokeYellow_Grenade_shell
-            {
-                magazine = "3Rnd_SmokeYellow_Grenade_shell";
-                count = 5;
-            };
-            class _xx_3Rnd_SmokePurple_Grenade_shell
-            {
-                magazine = "3Rnd_SmokePurple_Grenade_shell";
-                count = 5;
-            };
-            class _xx_3Rnd_SmokeBlue_Grenade_shell
-            {
-                magazine = "3Rnd_SmokeBlue_Grenade_shell";
-                count = 5;
-            };
-            class _xx_3Rnd_SmokeOrange_Grenade_shell
-            {
-                magazine = "3Rnd_SmokeOrange_Grenade_shell";
-                count = 5;
-            };
-            class _xx_3Rnd_HE_Grenade_shell
-            {
-                magazine = "3Rnd_HE_Grenade_shell";
-                count = 5;
-            };
+            MAG_XX(3Rnd_UGL_FlareWhite_F, 5)
+            MAG_XX(3Rnd_UGL_FlareRed_F, 5)
+            MAG_XX(BNA_KC_3Rnd_UGL_FlareBlue, 5)
+            MAG_XX(3Rnd_UGL_FlareCIR_F, 5)
+            MAG_XX(3Rnd_Smoke_Grenade_shell, 5)
+            MAG_XX(3Rnd_SmokeRed_Grenade_shell, 5)
+            MAG_XX(3Rnd_SmokeGreen_Grenade_shell, 5)
+            MAG_XX(3Rnd_SmokeYellow_Grenade_shell, 5)
+            MAG_XX(3Rnd_SmokePurple_Grenade_shell, 5)
+            MAG_XX(3Rnd_SmokeBlue_Grenade_shell, 5)
+            MAG_XX(3Rnd_SmokeOrange_Grenade_shell, 5)
+            MAG_XX(3Rnd_HE_Grenade_shell, 5)
 
             // Secondary Ammo
-            class _xx_12thFleet_Mag_DC17
-            {
-                magazine = "12thFleet_Mag_DC17";
-                count = 10;
-            };
+            MAG_XX(12thFleet_Mag_DC17, 10)
 
             // Launcher Ammo
-            class _xx_3AS_JLTS_MK39_AA
-            {
-                magazine = "3AS_JLTS_MK39_AA";
-                count = 2;
-            };
-            class _xx_3AS_JLTS_MK44_HE
-            {
-                magazine = "3AS_JLTS_MK44_HE";
-                count = 2;
-            };
-            class _xx_ls_mag_rpg_1rnd
-            {
-                magazine = "ls_mag_rpg_1rnd";
-                count = 2;
-            };
+            MAG_XX(3AS_JLTS_MK39_AA, 2)
+            MAG_XX(3AS_JLTS_MK44_HE, 2)
+            MAG_XX(ls_mag_rpg_1rnd, 2)
 
             // Grenades
-            class _xx_ls_mag_classC_thermalDet
-            {
-                magazine = "ls_mag_classC_thermalDet";
-                count = 8;
-            };
+            MAG_XX(ls_mag_classC_thermalDet, 8)
         };
     };
     class BNA_KC_Resupply_PlatoonAmmo: BNA_KC_Resupply_SquadAmmo
@@ -169,128 +91,45 @@ class CfgVehicles
 
         class TransportWeapons
         {
-            class _xx_ls_weapon_rps6_disposable
-            {
-                weapon = "ls_weapon_rps6_disposable";
-                count = 2;
-            };
+            WEAP_XX(ls_weapon_rps6_disposable, 2)
         };
 
         class TransportMagazines
         {
             // Primary Ammo
-            class _xx_12thFleet_Mag_DC15A
-            {
-                magazine = "12thFleet_Mag_DC15A";
-                count = 160;
-            };
-            class _xx_12thFleet_Mag_DC15S
-            {
-                magazine = "12thFleet_Mag_DC15S";
-                count = 160;
-            };
-            class _xx_12thFleet_Mag_WestarM5
-            {
-                magazine = "12thFleet_Mag_WestarM5";
-                count = 160;
-            };
-            class _xx_12thFleet_Mag_DC15X
-            {
-                magazine = "12thFleet_Mag_DC15X";
-                count = 160;
-            };
+            MAG_XX(12thFleet_Mag_DC15A, 160)
+            MAG_XX(12thFleet_Mag_DC15S, 160)
+            MAG_XX(Aux_12thFleet_Mag_DC15C, 160)
+            MAG_XX(Aux_12thFleet_Mag_DC15X, 160)
+            MAG_XX(Aux_12thFleet_Mag_DC15L, 160)
+            MAG_XX(Aux_12thFleet_Mag_DP23, 160)
+            MAG_XX(12thFleet_Mag_WestarM5, 160)
+            MAG_XX(BNA_KC_Mag_Valken38X_AP, 160)
+
             // UGL Ammo
-            class _xx_3Rnd_UGL_FlareWhite_F
-            {
-                magazine = "3Rnd_UGL_FlareWhite_F";
-                count = 15
-            };
-            class _xx_3Rnd_UGL_FlareRed_F
-            {
-                magazine = "3Rnd_UGL_FlareRed_F";
-                count = 15
-            };
-            class _xx_BNA_KC_3Rnd_UGL_FlareBlue
-            {
-                magazine = "BNA_KC_3Rnd_UGL_FlareBlue";
-                count = 15
-            };
-            class _xx_3Rnd_UGL_FlareCIR_F
-            {
-                magazine = "3Rnd_UGL_FlareCIR_F";
-                count = 15
-            };
-            class _xx_3Rnd_Smoke_Grenade_shell
-            {
-                magazine = "3Rnd_Smoke_Grenade_shell";
-                count = 15
-            };
-            class _xx_3Rnd_SmokeRed_Grenade_shell
-            {
-                magazine = "3Rnd_SmokeRed_Grenade_shell";
-                count = 15
-            };
-            class _xx_3Rnd_SmokeGreen_Grenade_shell
-            {
-                magazine = "3Rnd_SmokeGreen_Grenade_shell";
-                count = 15
-            };
-            class _xx_3Rnd_SmokeYellow_Grenade_shell
-            {
-                magazine = "3Rnd_SmokeYellow_Grenade_shell";
-                count = 15
-            };
-            class _xx_3Rnd_SmokePurple_Grenade_shell
-            {
-                magazine = "3Rnd_SmokePurple_Grenade_shell";
-                count = 15
-            };
-            class _xx_3Rnd_SmokeBlue_Grenade_shell
-            {
-                magazine = "3Rnd_SmokeBlue_Grenade_shell";
-                count = 15
-            };
-            class _xx_3Rnd_SmokeOrange_Grenade_shell
-            {
-                magazine = "3Rnd_SmokeOrange_Grenade_shell";
-                count = 15
-            };
-            class _xx_3Rnd_HE_Grenade_shell
-            {
-                magazine = "3Rnd_HE_Grenade_shell";
-                count = 15
-            };
+            MAG_XX(3Rnd_UGL_FlareWhite_F, 15)
+            MAG_XX(3Rnd_UGL_FlareRed_F, 15)
+            MAG_XX(BNA_KC_3Rnd_UGL_FlareBlue, 15)
+            MAG_XX(3Rnd_UGL_FlareCIR_F, 15)
+            MAG_XX(3Rnd_Smoke_Grenade_shell, 15)
+            MAG_XX(3Rnd_SmokeRed_Grenade_shell, 15)
+            MAG_XX(3Rnd_SmokeGreen_Grenade_shell, 15)
+            MAG_XX(3Rnd_SmokeYellow_Grenade_shell, 15)
+            MAG_XX(3Rnd_SmokePurple_Grenade_shell, 15)
+            MAG_XX(3Rnd_SmokeBlue_Grenade_shell, 15)
+            MAG_XX(3Rnd_SmokeOrange_Grenade_shell, 15)
+            MAG_XX(3Rnd_HE_Grenade_shell, 15)
 
             // Secondary Ammo
-            class _xx_12thFleet_Mag_DC17
-            {
-                magazine = "12thFleet_Mag_DC17";
-                count = 50;
-            };
+            MAG_XX(12thFleet_Mag_DC15A, 50)
 
             // Launcher Ammo
-            class _xx_3AS_JLTS_MK39_AA
-            {
-                magazine = "3AS_JLTS_MK39_AA";
-                count = 5;
-            };
-            class _xx_3AS_JLTS_MK44_HE
-            {
-                magazine = "3AS_JLTS_MK44_HE";
-                count = 5;
-            };
-            class _xx_ls_mag_rpg_1rnd
-            {
-                magazine = "ls_mag_rpg_1rnd";
-                count = 10;
-            };
+            MAG_XX(3AS_JLTS_MK39_AA, 5)
+            MAG_XX(3AS_JLTS_MK44_HE, 5)
+            MAG_XX(ls_mag_rpg_1rnd, 10)
 
             // Grenades
-            class _xx_ls_mag_classC_thermalDet
-            {
-                magazine = "ls_mag_classC_thermalDet";
-                count = 25;
-            };
+            MAG_XX(ls_mag_rpg_1rnd, 25)
         };
     };
 
@@ -299,26 +138,10 @@ class CfgVehicles
         displayName = "Heavy Ammo Crate (Squad)";
         class TransportMagazines
         {
-            class _xx_BNA_KC_Mag_HI12
-            {
-                magzine = "BNA_KC_Mag_HI12";
-                count = 20;
-            };
-            class _xx_BNA_KC_Mag_Valken38X
-            {
-                magzine = "BNA_KC_Mag_Valken38X";
-                count = 20;
-            };
-            class _xx_BNA_KC_Mag_Valken38X_AP
-            {
-                magzine = "BNA_KC_Mag_Valken38X_AP";
-                count = 20;
-            };
-            class _xx_JLTS_Z6_mag
-            {
-                magazine = "JLTS_Z6_mag";
-                count = 12;
-            };
+            MAG_XX(BNA_KC_Mag_Valken38X_AP, 20)
+            MAG_XX(BNA_KC_Mag_HI12, 20)
+            MAG_XX(Aux_12thFleet_Mag_DP23_HP, 20)
+            MAG_XX(JLTS_Z6_mag, 5)
         };
     };
     class BNA_KC_Resupply_PlatoonAmmo_Heavy: BNA_KC_Resupply_SquadAmmo_Heavy
@@ -326,22 +149,10 @@ class CfgVehicles
         displayName = "Heavy Ammo Crate (Platoon)";
         class TransportMagazines: TransportMagazines
         {
-            class _xx_BNA_KC_Mag_HI12: _xx_BNA_KC_Mag_HI12
-            {
-                count = 120;
-            };
-            class _xx_BNA_KC_Mag_Valken38X: _xx_BNA_KC_Mag_Valken38X
-            {
-                count = 120;
-            };
-            class _xx_BNA_KC_Mag_Valken38X_AP: _xx_BNA_KC_Mag_Valken38X_AP
-            {
-                count = 120;
-            };
-            class _xx_JLTS_Z6_mag: _xx_JLTS_Z6_mag
-            {
-                count = 10;
-            };
+            MAG_XX(BNA_KC_Mag_Valken38X_AP, 120)
+            MAG_XX(BNA_KC_Mag_HI12, 120)
+            MAG_XX(Aux_12thFleet_Mag_DP23_HP, 120)
+            MAG_XX(JLTS_Z6_mag, 10)
         };
     };
 
@@ -355,105 +166,32 @@ class CfgVehicles
         class TransportItems
         {
             // Bandages
-            class _xx_ACE_elasticBandage
-            {
-                name = "ACE_elasticBandage";
-                count = 60;
-            };
-
-            class _xx_ACE_packingBandage
-            {
-                name = "ACE_packingBandage";
-                count = 40;
-            };
-
-            class _xx_ACE_quickclot
-            {
-                name = "ACE_quickclot";
-                count = 30;
-            };
+            ITEM_XX(ACE_elasticBandage, 60)
+            ITEM_XX(ACE_packingBandage, 40)
+            ITEM_XX(ACE_quickclot, 30)
 
             // Fluid
-            class _xx_ACE_salineIV
-            {
-                name = "ACE_salineIV";
-                count = 5;
-            };
-            class _xx_ACE_salineIV_500
-            {
-                name = "ACE_salineIV_500";
-                count = 5;
-            };
-            class _xx_ACE_salineIV_250
-            {
-                name = "ACE_salineIV_250";
-                count = 10;
-            };
+            ITEM_XX(ACE_salineIV, 5)
+            ITEM_XX(ACE_salineIV_500, 5)
+            ITEM_XX(ACE_salineIV_250, 10)
 
             // Drugs
-            class _xx_ACE_morphine
-            {
-                name = "ACE_morphine";
-                count = 5;
-            };
-
-            class _xx_ACE_epinephrine
-            {
-                name = "ACE_epinephrine";
-                count = 5;
-            };
-
-            class _xx_RD501_Painkiller
-            {
-                name = "RD501_Painkiller";
-                count = 10;
-            };
+            ITEM_XX(ACE_morphine, 5)
+            ITEM_XX(ACE_epinephrine, 5)
+            ITEM_XX(RD501_Painkiller, 10)
 
             // Misc
-            class _xx_ACE_tourniquet
-            {
-                name = "ACE_tourniquet";
-                count = 12;
-            };
-
-            class _xx_ACE_Splint
-            {
-                name = "ACE_Splint";
-                count = 3;
-            };
-
-            class _xx_ACE_Banana
-            {
-                name = "ACE_Banana";
-                count = 1;
-            };
+            ITEM_XX(ACE_tourniquet, 12)
+            ITEM_XX(ACE_Splint, 4)
+            ITEM_XX(ACE_Banana, 1)
         };
 
         class TransportMagazines
         {
-            class _xx_3AS_SmokePurple
-            {
-                magazine = "3AS_SmokePurple";
-                count = 2;
-            };
-
-            class _xx_SquadShieldMagazine
-            {
-                magazine = "SquadShieldMagazine";
-                count = 2;
-            };
-
-            class _xx_BNA_KC_Grenade_BactaBomb
-            {
-                magazine = "BNA_KC_Grenade_BactaBomb";
-                count = 5;
-            };
-
-            class _xx_BNA_KC_Mag_GR20
-            {
-                magazine = "BNA_KC_Mag_GR20";
-                count = 2;
-            };
+            MAG_XX(3AS_SmokePurple, 2)
+            MAG_XX(SquadShieldMagazine, 2)
+            MAG_XX(BNA_KC_Grenade_BactaBomb, 5)
+            MAG_XX(BNA_KC_Mag_GR20, 2)
         };
     };
     class BNA_KC_Resupply_PlatoonMedical: BNA_KC_Resupply_SquadMedical
@@ -461,102 +199,34 @@ class CfgVehicles
         displayName = "Medical Crate (Platoon)";
         ace_cargo_size = 2;
 
-        // Bandages
         class TransportItems
         {
-            class _xx_ACE_elasticBandage
-            {
-                name = "ACE_elasticBandage";
-                count = 150;
-            };
-
-            class _xx_ACE_packingBandage
-            {
-                name = "ACE_packingBandage";
-                count = 60;
-            };
-
-            class _xx_ACE_quickclot
-            {
-                name = "ACE_quickclot";
-                count = 40;
-            };
+            // Bandages
+            ITEM_XX(ACE_elasticBandage, 150)
+            ITEM_XX(ACE_packingBandage, 60)
+            ITEM_XX(ACE_quickclot, 40)
 
             // Fluid
-            class _xx_ACE_salineIV
-            {
-                name = "ACE_salineIV";
-                count = 20;
-            };
-            class _xx_ACE_salineIV_500
-            {
-                name = "ACE_salineIV_500";
-                count = 20;
-            };
-            class _xx_ACE_salineIV_250
-            {
-                name = "ACE_salineIV_250";
-                count = 30;
-            };
+            ITEM_XX(ACE_salineIV, 20)
+            ITEM_XX(ACE_salineIV_500, 20)
+            ITEM_XX(ACE_salineIV_250, 30)
 
             // Drugs
-            class _xx_ACE_morphine
-            {
-                name = "ACE_morphine";
-                count = 10;
-            };
-
-            class _xx_ACE_epinephrine
-            {
-                name = "ACE_epinephrine";
-                count = 10;
-            };
-
-            class _xx_RD501_Painkiller
-            {
-                name = "RD501_Painkiller";
-                count = 20;
-            };
+            ITEM_XX(ACE_morphine, 13)
+            ITEM_XX(ACE_epinephrine, 13)
+            ITEM_XX(RD501_Painkiller, 20)
 
             // Misc
-            class _xx_ACE_tourniquet
-            {
-                name = "ACE_tourniquet";
-                count = 16;
-            };
-
-            class _xx_ACE_Splint
-            {
-                name = "ACE_Splint";
-                count = 8;
-            };
+            ITEM_XX(ACE_tourniquet, 12)
+            ITEM_XX(ACE_Splint, 8)
         };
 
         class TransportMagazines
         {
-            class _xx_3AS_SmokePurple
-            {
-                magazine = "3AS_SmokePurple";
-                count = 10;
-            };
-
-            class _xx_SquadShieldMagazine
-            {
-                magazine = "SquadShieldMagazine";
-                count = 6;
-            };
-
-            class _xx_BNA_KC_Grenade_BactaBomb
-            {
-                magazine = "BNA_KC_Grenade_BactaBomb";
-                count = 10;
-            };
-
-            class _xx_BNA_KC_Mag_GR20
-            {
-                magazine = "BNA_KC_Mag_GR20";
-                count = 4;
-            };
+            MAG_XX(3AS_SmokePurple, 5)
+            MAG_XX(SquadShieldMagazine, 6)
+            MAG_XX(BNA_KC_Grenade_BactaBomb, 10)
+            MAG_XX(BNA_KC_Mag_GR20, 4)
         };
     };
 

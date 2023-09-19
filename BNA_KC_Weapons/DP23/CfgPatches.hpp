@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class BNA_KC_Weapons_DC15A
+    class BNA_KC_Weapons_DP23
     {
         author = "SweMonkey and DartRuffian";
         addonRootClass = "BNA_KC_Weapons"
@@ -9,10 +9,8 @@ class CfgPatches
         {
             "BNA_KC_Weapons_Core",
                 // Ammo
-            "A3_Weapons_F",
-                // UGL_F
-            "JLTS_weapons_DC15A",
-                // DC-15A
+            "JLTS_weapons_DP23",
+                // DP-23
             "Aux501_Patch_Accessories",
                 // 501st Scopes/Sights
             "JLTS_weapons_DC17SA",
@@ -25,15 +23,16 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
-            "BNA_KC_DC15A_Base",
-            "BNA_KC_DC15A",
-            "BNA_KC_DC15A_Fried",
-            "BNA_KC_DC15A_UGL",
-            "BNA_KC_DC15A_UGL_Fried"
+            "BNA_KC_DP23_Base",
+            "BNA_KC_DP23",
+            "BNA_KC_DP23_Fried",
+            "BNA_KC_DP23_RiotShield",
+            "BNA_KC_DP23_RiotShield_Fried",
         };
         magazines[] =
         {
-            "12thFleet_Mag_DC15A"
+            "Aux_12thFleet_Mag_DP23",
+            "Aux_12thFleet_Mag_DP23_HP"
         };
         ammo[] = {};
     };

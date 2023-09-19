@@ -18,18 +18,19 @@ class CfgWeapons
             class hi12scope_scope;
         };
     };
-    class BNA_KC_HI12: LFP_hi12
+    class BNA_KC_HI12_Base: LFP_hi12
     {
         // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 2;
-        scopeArsenal = 2;
+        scope = 1;
+        scopeArsenal = 0;
 
-        displayName = "[KC] HI-12";
-        baseWeapon = "BNA_KC_HI12";
+        displayName = "[KC] HI-12 (Base)";
+        baseWeapon = "BNA_KC_HI12_Base";
+        picture = "\BNA_KC_Weapons\HI12\Data\Textures\UI\HI12_UI.paa";
 
         modes[] =
         {
@@ -50,6 +51,13 @@ class CfgWeapons
         magazineWell[] = {};
 
         canShootInWater = 1;
+        fireLightDiffuse[] = {0, 0, 1};
+        fireLightDuration = 0.05;
+        fireLightIntensity = 0.2;
+
+        // JLTS emp system
+        JLTS_hasElectronics = 1;
+        JLTS_hasEMPProtection = 0;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
@@ -113,6 +121,32 @@ class CfgWeapons
                 thermalMode[] = { 0 };
             };
         };
+    };
+
+    class BNA_KC_HI12: LFP_hi12
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] HI-12";
+        baseWeapon = "BNA_KC_HI12";
+        JLTS_friedItem = "BNA_KC_HI12_Fried";
+    };
+
+    class BNA_KC_HI12_Fried: BNA_KC_HI12
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
+        displayName = "[KC] HI-12 (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\BNA_KC_Weapons\HI12\Data\Textures\UI\HI12_Fried_UI.paa";
+        baseWeapon = "BNA_KC_HI12_Fried";
+
+        JLTS_isFried = 1;
+        magazines[] = {};
     };
 };
 

@@ -16,6 +16,7 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot;
+            class PointerSlot;
         };
     };
     class BNA_KC_WestarM5_Base: 3AS_WestarM5_F
@@ -46,6 +47,9 @@ class CfgWeapons
         magazineWell[] = {};
 
         canShootInWater = 1;
+        fireLightDiffuse[] = {0, 0, 1};
+        fireLightDuration = 0.05;
+        fireLightIntensity = 0.2;
         recoil = "recoil_smg_03";
 
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -76,6 +80,15 @@ class CfgWeapons
                     "Aux501_cows_Holosight",
                     "Aux501_cows_Holosight_2",
                     "Aux501_cows_Holosight_3"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[] =
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
                 };
             };
         };
@@ -172,6 +185,6 @@ class CfgMagazines
 
         JLTS_hasEMPProtection = 1;
 
-        ammo = "12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux_12thFleet_Ammo_Rifle_Blue";
     };
 };

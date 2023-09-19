@@ -7,14 +7,20 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Weapons_Core",
+                // Ammo
             "3AS_Weapons_WestarM5",
-                // Westar
+                // Westar-M5
             "SWLW_clones",
                 // Weapon/mag picture
             "Aux501_Patch_Accessories",
                 // 501st Scopes/Sights
-            "A3_Weapons_F_Acc"
-                // Flashlight/laser pointer
+            "JLTS_weapons_DC17SA",
+                // Flashlight
+            "A3_Weapons_F_Acc",
+                // Laser pointer
+            "ace_laserpointer"
+                // Green laser pointer
         };
         units[] = {};
         weapons[] =

@@ -5,6 +5,8 @@ class Mode_SemiAuto;
 
 class CfgWeapons
 {
+    #include "Optics.hpp"
+
     class Rifle_Base_F;
     class arifle_MX_Base_F: Rifle_Base_F
     {
@@ -45,7 +47,7 @@ class CfgWeapons
         {
             "this"
         };
-        magazines[] = { "12thFleet_Mag_DC15X" };
+        magazines[] = { "Aux_12thFleet_Mag_DC15X" };
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -60,7 +62,7 @@ class CfgWeapons
             {
                 compatibleItems[] =
                 {
-                    "JLTS_DC15X_scope",
+                    "BNA_KC_DC15X_Scope",
                     "Aux501_cows_lrps"
                 };
             };
@@ -123,7 +125,7 @@ class CfgWeapons
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "JLTS_DC15X_scope";
+                item = "BNA_KC_DC15X_Scope";
             };
         };
     };
@@ -147,12 +149,12 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_DC15X_mag;
-    class 12thFleet_Mag_DC15X: JLTS_DC15X_mag
+    class Aux_12thFleet_Mag_DC15X: JLTS_DC15X_mag
     {
         displayName = "[12th Fleet] DC-15X Energy Cell";
         displayNameShort = "High Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-15X";
-        ammo = "12thFleet_Ammo_Sniper_Blue";
+        ammo = "Aux_12thFleet_Ammo_Sniper_Blue";
         count = 20;
 
         JLTS_hasEMPProtection = 1;

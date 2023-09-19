@@ -1,29 +1,27 @@
-class ItemCore;
+class optic_LRPS;
 class InventoryOpticsItem_Base_F;
-class 3AS_Optic_Scope_WestarM5: ItemCore
+class jlts_dc15x_scope: optic_LRPS
 {
     class ItemInfo: InventoryOpticsItem_Base_F
     {
         class OpticsModes
         {
-            class 3AS_Scope_Optics;
-            class 3AS_OverSights_Optic;
+            class Snip;
         };
     };
 };
-class BNA_KC_WestarM5_Scope: 3AS_Optic_Scope_WestarM5
+class BNA_KC_DC15X_Scope: jlts_dc15x_scope
 {
-    displayName = "[KC] Westar-M5 Long Scope";
+    displayName = "[KC] DC-15X Scope";
     class ItemInfo: ItemInfo
     {
         class OpticsModes: OpticsModes
         {
-            class Scope_Optics: 3AS_Scope_Optics
+            class Snip: Snip
             {
                 visionMode[] = {"Normal", "NVG", "TI"};
                 thermalMode[] = {0};
             };
-            class OverSights_Optic: 3AS_OverSights_Optic {};
         };
     };
 };
