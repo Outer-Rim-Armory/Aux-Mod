@@ -28,6 +28,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] DC-15L (Base)";
+        descriptionShort = "Automatic Blaster Rifle";
         baseWeapon = "BNA_KC_DC15L_Base";
         // picture = "\BNA_KC_Weapons\DC15L\Data\Textures\UI\DC15L_UI.paa";
 
@@ -36,10 +37,13 @@ class CfgWeapons
         magazines[] = {"Aux_12thFleet_Mag_DC15L"};
         magazineWell[] = {};
 
+        drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
+
         canShootInWater = 1;
         fireLightDiffuse[] = {0, 0, 1};
         fireLightDuration = 0.05;
         fireLightIntensity = 0.2;
+        flashSize = 0.5;
 
         // JLTS emp system
         JLTS_hasElectronics = 1;
