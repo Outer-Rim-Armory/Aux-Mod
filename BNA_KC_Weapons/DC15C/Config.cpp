@@ -40,6 +40,7 @@ class CfgWeapons
 
         displayName = "[KC] DC-15C (Base)";
         baseWeapon = "BNA_KC_DC15C_Base";
+        descriptionShort = "Blaster Rifle";
         picture = "\BNA_KC_Weapons\DC15C\Data\Textures\UI\DC15C_UI.paa";
 
         modes[] = {"FullAuto", "Single"};
