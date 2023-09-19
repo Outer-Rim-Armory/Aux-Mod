@@ -41,17 +41,9 @@ class CfgWeapons
 
         displayName = "[KC] DC-15S (Base)";
 
-        modes[] =
-        {
-            "FullAuto",
-            "Single"
-        };
-        muzzles[] =
-        {
-            "this",
-            "Stun"
-        };
-        magazines[] = { "12thFleet_Mag_DC15S" };
+        modes[] = {"FullAuto", "Single"};
+        muzzles[] = {"this", "Stun"};
+        magazines[] = {"12thFleet_Mag_DC15S"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -96,37 +88,25 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
+                begin1[] = {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss", 1, 1, 1800};
+                soundBegin[] = {"begin1", 1};
+                soundBeginWater[] = {"begin1", 1};
             };
         };
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
+                begin1[] = {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss", 1, 1, 1800};
+                soundBegin[] = {"begin1", 1};
+                soundBeginWater[] = {"begin1", 1};
             };
         };
         class Stun: Stun
         {
             displayName = "Stun";
             magazines[] = {};
-            magazineWell[] = { "BNA_KC_Stuns" };
+            magazineWell[] = {"BNA_KC_Stuns"};
         };
     };
 
@@ -171,7 +151,7 @@ class CfgWeapons
         JLTS_friedItem = "BNA_KC_DC15S_RiotShield_Fried";
 
         model = "\MRC\JLTS\weapons\DC15S\DC15S_shielded.p3d";
-        hiddenSelections[] = { "camo1", "camo2" };
+        hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] =
         {
             "\MRC\JLTS\weapons\DC15S\data\DC15S_co.paa",
@@ -191,7 +171,7 @@ class CfgWeapons
         {
             class UnderBarrelSlot: UnderBarrelSlot
             {
-                compatibleItems[] = { "JLTS_riot_shield_attachment" };
+                compatibleItems[] = {"JLTS_riot_shield_attachment"};
             };
         };
     };
