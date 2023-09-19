@@ -1,6 +1,8 @@
 #include "CfgPatches.hpp"
 
 
+class Mode_SemiAuto;
+
 class CfgWeapons
 {
     class Rifle_Base_F;
@@ -15,6 +17,10 @@ class CfgWeapons
             class CowsSlot;
             class PointerSlot;
             class UnderBarrelSlot;
+        };
+        class Single: Mode_SemiAuto
+        {
+            class StandardSound;
         };
     };
     class BNA_KC_DP23_Base: JLTS_DP23
@@ -67,6 +73,16 @@ class CfgWeapons
                     "ace_acc_pointer_green",
                     "jlts_dc17sa_flashlight"
                 };
+            };
+        };
+
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                begin1[] = {"\MRC\JLTS\weapons\DP23\sounds\dp23_fire.wss", 1, 1, 1800};
+                soundBegin[] = {"begin1", 1};
+                soundBeginWater[] = {"begin1", 1};
             };
         };
     };
