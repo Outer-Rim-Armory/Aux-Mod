@@ -91,6 +91,7 @@ class CfgWeapons
 
         class Single: Single
         {
+            sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
                 begin1[] =
@@ -106,6 +107,7 @@ class CfgWeapons
         };
         class FullAuto: FullAuto
         {
+            sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
                 begin1[] =
