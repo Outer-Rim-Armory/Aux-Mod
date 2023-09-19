@@ -108,7 +108,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_HI12: LFP_hi12
+    class BNA_KC_HI12: BNA_KC_HI12_Base
     {
         // Scope
         scope = 2;
