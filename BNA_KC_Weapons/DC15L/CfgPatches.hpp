@@ -9,8 +9,16 @@ class CfgPatches
         {
             "BNA_KC_Weapons_Core",
                 // Ammo
-            "3AS_Weapons_DC15L"
+            "3AS_Weapons_DC15L",
                 // DC-15L
+            "Aux501_Patch_Accessories",
+                // 501st Scopes/Sights
+            "JLTS_weapons_DC17SA",
+                // Flashlight
+            "A3_Weapons_F_Acc",
+                // Laser pointer
+            "ace_laserpointer"
+                // Green laser pointer
         };
         units[] = {};
         weapons[] =
