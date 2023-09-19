@@ -705,6 +705,6 @@ class HitEffects \
     hitRubber = "3AS_ImpactPlasma"; \
     hitTyre = "3AS_ImpactPlasma"; \
     hitVirtual = "3AS_ImpactPlasma"; \
-    hitWater = "3AS_ImpactPlasma"; \
+    hitWater = "ImpactEffectsWater"; \
     hitWood = "3AS_ImpactPlasma"; \
 };
