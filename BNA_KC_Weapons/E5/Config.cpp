@@ -33,14 +33,14 @@ class CfgWeapons
         displayName = "[KC] E-5 (Base)";
         baseWeapon = "BNA_KC_E5_Base";
 
-        muzzles[] = { "this" };
-        magazines[] = { "Aux_12thFleet_Mag_E5" };
+        muzzles[] = {"this"};
+        magazines[] = {"Aux_12thFleet_Mag_E5"};
         magazineWell[] = {};
 
         fireLightDiffuse[] = { 1, 0, 0 };
 
         model = "\MRC\JLTS\weapons\E5\E5.p3d";
-        hiddenSelections[] = { "camo1" };
+        hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\E5\data\E5_co.paa"};
         handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\E5\anims\E5_handanim.rtm"};
         picture = "\MRC\JLTS\weapons\E5\data\ui\E5_ui_ca.paa";
@@ -121,9 +121,9 @@ class CfgWeapons
         JLTS_baseWeapon = "BNA_KC_E5";
 
         model = "\MRC\JLTS\weapons\E5\E5_shielded.p3d";
-        hiddenSelections[] = { "camo1" };
-        hiddenSelectionsTextures[] = { "\MRC\JLTS\weapons\E5\data\E5_co.paa" };
-        handAnim[] = { "OFP2_ManSkeleton", "\MRC\JLTS\weapons\E5\anims\E5_shielded_handanim.rtm" };
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\E5\data\E5_co.paa"};
+        handAnim[] = {"OFP2_ManSkeleton", "\MRC\JLTS\weapons\E5\anims\E5_shielded_handanim.rtm"};
 
         // reloadAction = "GestureReload";
         // inertia = 0.80000001;
@@ -133,7 +133,7 @@ class CfgWeapons
         {
             class UnderBarrelSlot: UnderBarrelSlot
             {
-                compatibleItems[] = { "JLTS_riot_shield_droid_attachment" };
+                compatibleItems[] = {"JLTS_riot_shield_droid_attachment"};
             };
         };
     };
