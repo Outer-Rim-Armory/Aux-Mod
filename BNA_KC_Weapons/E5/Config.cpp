@@ -65,6 +65,7 @@ class CfgWeapons
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = { "3AS_E5_Shot_SoundSet" };
+                soundSetShotWater[] = { "3AS_E5_Shot_SoundSet" };
             };
         };
         class FullAuto: FullAuto
@@ -74,6 +75,7 @@ class CfgWeapons
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = { "3AS_E5_Shot_SoundSet" };
+                soundSetShotWater[] = { "3AS_E5_Shot_SoundSet" };
             };
         };
     };

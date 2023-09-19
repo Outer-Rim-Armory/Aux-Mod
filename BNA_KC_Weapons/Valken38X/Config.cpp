@@ -83,6 +83,7 @@ class CfgWeapons
                 begin3[] = {"BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire3.wss", 3, 1, 1800};
                 begin4[] = {"BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire4.wss", 3, 1, 1800};
                 soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+                soundBeginWater[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
             };
         };
 
