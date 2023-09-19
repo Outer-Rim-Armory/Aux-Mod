@@ -77,6 +77,18 @@ class CfgWeapons
 
         class FullAuto: FullAuto
         {
+            dispersion = 0.00075;
+            recoil = "recoil_auto_primary_3outof10";
+            recoilProne = "recoil_auto_prone_mx";
+
+            maxRange = 80;
+            maxRangeProbab = 0.04;
+            midRange = 30;
+            midRangeProbab = 0.58;
+            minRange = 1;
+            minRangeProbab = 0.2;
+
+            sounds[] = {"StandardSound"};
             class StandardSound
             {
                 begin1[] = {"BNA_KC_Weapons\DC15L\Data\Audio\DC15L_Fire1.wss", 1, 1, 1800};
