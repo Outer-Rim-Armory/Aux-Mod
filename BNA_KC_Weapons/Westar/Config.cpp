@@ -10,6 +10,10 @@ class CfgWeapons
     class 3AS_WestarM5_Base_F: Rifle_Base_F
     {
         class WeaponSlotsInfo;
+
+        class Single;
+        class Burst;
+        class FullAuto;
     };
     class 3AS_WestarM5_F: 3AS_WestarM5_Base_F
     {
@@ -17,6 +21,19 @@ class CfgWeapons
         {
             class CowsSlot;
             class PointerSlot;
+        };
+
+        class Single: Single
+        {
+            class StandardSound;
+        };
+        class Burst: Burst
+        {
+            class StandardSound;
+        };
+        class FullAuto: FullAuto
+        {
+            class StandardSound;
         };
     };
     class BNA_KC_WestarM5_Base: 3AS_WestarM5_F
@@ -90,6 +107,34 @@ class CfgWeapons
                     "ace_acc_pointer_green",
                     "jlts_dc17sa_flashlight"
                 };
+            };
+        };
+
+        class Single: Single
+        {
+            sounds[] = {"StandardSound"};
+            class StandardSound: StandardSound
+            {
+                soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
+                soundSetShotWater[] = {"3AS_Westar_Shot_SoundSet"};
+            };
+        };
+        class Burst: Burst
+        {
+            sounds[] = {"StandardSound"};
+            class StandardSound: StandardSound
+            {
+                soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
+                soundSetShotWater[] = {"3AS_Westar_Shot_SoundSet"};
+            };
+        };
+        class FullAuto: FullAuto
+        {
+            sounds[] = {"StandardSound"};
+            class StandardSound: StandardSound
+            {
+                soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
+                soundSetShotWater[] = {"3AS_Westar_Shot_SoundSet"};
             };
         };
     };
