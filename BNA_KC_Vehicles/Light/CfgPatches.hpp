@@ -7,7 +7,7 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "3AS_ATRT",
+            // "3AS_ATRT",
 				// AT-RT
             // cba_xeh,
                 // 3AS AT-RT doesn't inherit CBA's XEH class
@@ -18,7 +18,7 @@ class CfgPatches
         };
         units[] =
 		{
-			"BNA_KC_ATRT",
+			// "BNA_KC_ATRT",
             "BNA_KC_Hornet_Unarmed",
             "BNA_KC_Hornet_Armed",
             "BNA_KC_Hornet_AT",
