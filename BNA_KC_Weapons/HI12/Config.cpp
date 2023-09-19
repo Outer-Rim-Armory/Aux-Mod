@@ -40,14 +40,8 @@ class CfgWeapons
             "short",
             "medium"
         };
-        muzzles[] =
-        {
-            "this"
-        };
-        magazines[] =
-        {
-            "BNA_KC_Mag_HI12"
-        };
+        muzzles[] = {"this"};
+        magazines[] = {"BNA_KC_Mag_HI12"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -89,18 +83,8 @@ class CfgWeapons
             };
             class StandardSound: BaseSoundModeType
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\HI12\Data\Audio\HI12_Fire1.wss",
-                    3,
-                    1,
-                    1800
-                };
-                soundBegin[] =
-                {
-                    "begin1",
-                    1
-                };
+                begin1[] = {"BNA_KC_Weapons\HI12\Data\Audio\HI12_Fire1.wss", 3, 1, 1800};
+                soundBegin[] = {"begin1", 1};
             };
             dispersion = 0.00037815439999;
         };
@@ -117,8 +101,8 @@ class CfgWeapons
             class hi12scope_sights: hi12scope_sights {};
             class hi12scope_scope: hi12scope_scope
             {
-                visionMode[] = { "Normal", "NVG", "TI"};
-                thermalMode[] = { 0 };
+                visionMode[] = {"Normal", "NVG", "TI"};
+                thermalMode[] = {0};
             };
         };
     };
