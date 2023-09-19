@@ -30,7 +30,7 @@ class CfgWeapons
         displayName = "[KC] DC-15L (Base)";
         descriptionShort = "Automatic Blaster Rifle";
         baseWeapon = "BNA_KC_DC15L_Base";
-        // picture = "\BNA_KC_Weapons\DC15L\Data\Textures\UI\DC15L_UI.paa";
+        picture = "\BNA_KC_Weapons\DC15L\Data\Textures\UI\DC15L_UI.paa";
 
         modes[] = {"FullAuto"};
         muzzles[] = {"this"};
@@ -117,7 +117,7 @@ class CfgWeapons
         displayName = "[KC] DC-15L (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         baseWeapon = "BNA_KC_DC15L_Fried";
-        // picture = "\BNA_KC_Weapons\DC15L\Data\Textures\UI\DC15L_Fried_UI.paa";
+        picture = "\BNA_KC_Weapons\DC15L\Data\Textures\UI\DC15L_Fried_UI.paa";
 
         JLTS_isFried = 1;
         magazines[] = {};
