@@ -64,8 +64,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = { "3AS_E5_Shot_SoundSet" };
-                soundSetShotWater[] = { "3AS_E5_Shot_SoundSet" };
+                soundSetShot[] = {"Aux12thFleet_SoundSet_E5"};
+                soundSetShotWater[] = {"Aux12thFleet_SoundSet_E5"};
             };
         };
         class FullAuto: FullAuto
@@ -74,8 +74,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = { "3AS_E5_Shot_SoundSet" };
-                soundSetShotWater[] = { "3AS_E5_Shot_SoundSet" };
+                soundSetShot[] = {"Aux12thFleet_SoundSet_E5"};
+                soundSetShotWater[] = {"Aux12thFleet_SoundSet_E5"};
             };
         };
     };
@@ -163,5 +163,31 @@ class CfgMagazines
         ammo = "Aux_12thFleet_Ammo_Carbine_Red";
 
         JLTS_hasEMPProtection = 1;
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class 3AS_E5_Shot_SoundShader;
+    class Aux12thFleet_SoundShader_E5: 3AS_E5_Shot_SoundShader
+    {
+        samples[] =
+        {
+            {"3AS\3AS_Main\Sounds\E5\E51.ogg", 1},
+            {"3AS\3AS_Main\Sounds\E5\E52.ogg", 1},
+            {"3AS\3AS_Main\Sounds\E5\E53.ogg", 1}/*,
+            {"3AS\3AS_Main\Sounds\E5\E54.ogg", 1}*/
+            // Currently removed due to a *thud* sound in the file
+        };
+    }
+};
+
+class CfgSoundSets
+{
+    class 3AS_E5_Shot_SoundSet;
+    class Aux12thFleet_SoundSet_E5: 3AS_E5_Shot_SoundSet
+    {
+        soundShaders[] = {"Aux12thFleet_SoundShader_E5"};
     };
 };
