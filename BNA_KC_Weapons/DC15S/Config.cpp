@@ -43,8 +43,8 @@ class CfgWeapons
 
         modes[] =
         {
-            "Single",
-            "FullAuto"
+            "FullAuto",
+            "Single"
         };
         muzzles[] =
         {
