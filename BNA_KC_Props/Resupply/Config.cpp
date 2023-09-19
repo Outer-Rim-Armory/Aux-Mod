@@ -56,6 +56,7 @@ class CfgVehicles
             MAG_XX(Aux_12thFleet_Mag_DC15L, 10)
             MAG_XX(Aux_12thFleet_Mag_DP23, 10)
             MAG_XX(12thFleet_Mag_WestarM5, 10)
+            MAG_XX(BNA_KC_Mag_Valken38X_AP, 10)
 
             // UGL Ammo
             MAG_XX(3Rnd_UGL_FlareWhite_F, 5)
@@ -103,6 +104,7 @@ class CfgVehicles
             MAG_XX(Aux_12thFleet_Mag_DC15L, 160)
             MAG_XX(Aux_12thFleet_Mag_DP23, 160)
             MAG_XX(12thFleet_Mag_WestarM5, 160)
+            MAG_XX(BNA_KC_Mag_Valken38X_AP, 160)
 
             // UGL Ammo
             MAG_XX(3Rnd_UGL_FlareWhite_F, 15)
@@ -136,6 +138,7 @@ class CfgVehicles
         displayName = "Heavy Ammo Crate (Squad)";
         class TransportMagazines
         {
+            MAG_XX(BNA_KC_Mag_Valken38X_AP, 20)
             MAG_XX(BNA_KC_Mag_HI12, 20)
             MAG_XX(Aux_12thFleet_Mag_DP23_HP, 20)
             MAG_XX(JLTS_Z6_mag, 5)
@@ -146,6 +149,7 @@ class CfgVehicles
         displayName = "Heavy Ammo Crate (Platoon)";
         class TransportMagazines: TransportMagazines
         {
+            MAG_XX(BNA_KC_Mag_Valken38X_AP, 120)
             MAG_XX(BNA_KC_Mag_HI12, 120)
             MAG_XX(Aux_12thFleet_Mag_DP23_HP, 120)
             MAG_XX(JLTS_Z6_mag, 10)
