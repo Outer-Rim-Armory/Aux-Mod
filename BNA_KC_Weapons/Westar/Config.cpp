@@ -16,6 +16,7 @@ class CfgWeapons
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot;
+            class PointerSlot;
         };
     };
     class BNA_KC_WestarM5_Base: 3AS_WestarM5_F
@@ -79,6 +80,15 @@ class CfgWeapons
                     "Aux501_cows_Holosight",
                     "Aux501_cows_Holosight_2",
                     "Aux501_cows_Holosight_3"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[] =
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
                 };
             };
         };
