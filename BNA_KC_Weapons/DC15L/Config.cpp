@@ -15,6 +15,7 @@ class CfgWeapons
             class CowsSlot;
             class PointerSlot;
         };
+        class FullAuto;
     };
     class BNA_KC_DC15L_Base: 3AS_DC15L_F
     {
@@ -67,6 +68,16 @@ class CfgWeapons
                     "ace_acc_pointer_green",
                     "jlts_dc17sa_flashlight"
                 };
+            };
+        };
+
+        class FullAuto: FullAuto
+        {
+            class StandardSound
+            {
+                begin1[] = {"BNA_KC_Weapons\DC15L\Data\Audio\DC15L_Fire1.wss", 1, 1, 1800};
+                soundBegin[] = {"begin1", 1};
+                soundBeginWater[] = {"begin1", 1};
             };
         };
     };
