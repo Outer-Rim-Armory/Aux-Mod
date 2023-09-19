@@ -78,10 +78,11 @@ class CfgWeapons
 
             class StandardSound: StandardSound
             {
-                begin1[] = {"LF_Weapon_Unit\main\sounds\Valken38x1.wss", 1, 1, 1800};
-                begin2[] = {"LF_Weapon_Unit\main\sounds\Valken38x2.wss", 1, 1, 1800};
-                begin3[] = {"LF_Weapon_Unit\main\sounds\Valken38x3.wss", 1, 1, 1800};
-                soundBegin[] = {"begin1", 0.33, "begin2", 0.33, "begin3", 0.34};
+                begin1[] = {"BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire1.wss", 3, 1, 1800};
+                begin2[] = {"BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire2.wss", 3, 1, 1800};
+                begin3[] = {"BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire3.wss", 3, 1, 1800};
+                begin4[] = {"BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire4.wss", 3, 1, 1800};
+                soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
             };
         };
 
