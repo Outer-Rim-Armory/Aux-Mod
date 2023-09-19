@@ -5,6 +5,8 @@ class Mode_SemiAuto;
 
 class CfgWeapons
 {
+    #include "Optics.hpp"
+
     class Rifle_Base_F;
     class arifle_MX_Base_F: Rifle_Base_F
     {
@@ -60,7 +62,7 @@ class CfgWeapons
             {
                 compatibleItems[] =
                 {
-                    "JLTS_DC15X_scope",
+                    "BNA_KC_DC15X_Scope",
                     "Aux501_cows_lrps"
                 };
             };
@@ -123,7 +125,7 @@ class CfgWeapons
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "JLTS_DC15X_scope";
+                item = "BNA_KC_DC15X_Scope";
             };
         };
     };

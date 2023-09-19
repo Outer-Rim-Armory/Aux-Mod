@@ -13,12 +13,16 @@ class CfgPatches
                 // DC-15X
             "Aux501_Patch_Accessories",
                 // 501st Scopes/Sights
+            "A3_Weapons_F_Items",
+                // Scope item class
             "JLTS_weapons_DC17SA",
                 // Flashlight
             "A3_Weapons_F_Acc",
                 // Laser pointer
             "ace_laserpointer",
                 // Green laser pointer
+            "A3_Weapons_F_Acc",
+                // DC-15X scope base
             "A3_Weapons_F_Mark_Acc"
                 // Bipod
         };
