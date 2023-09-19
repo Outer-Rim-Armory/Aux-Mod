@@ -17,11 +17,12 @@ class CfgPatches
         };
         units[] =
         {
-
+            "BNA_KC_Unit_Commando"
         };
         weapons[] =
         {
-
+            "BNA_KC_Helmet_Katarn",
+            "BNA_KC_Uniform_Katarn"
         };
     };
 };
