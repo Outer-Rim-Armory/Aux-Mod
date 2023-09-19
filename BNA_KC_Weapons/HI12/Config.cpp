@@ -156,6 +156,7 @@ class CfgMagazines
     class LFP_HI12_Mag;
     class BNA_KC_Mag_HI12: LFP_HI12_Mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[KC] HI-12 Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 30<br/>Used In: HI-12";
         count = 30;

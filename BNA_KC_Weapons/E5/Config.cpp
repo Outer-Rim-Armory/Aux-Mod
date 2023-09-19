@@ -154,6 +154,7 @@ class CfgMagazines
     class JLTS_E5_mag;
     class Aux_12thFleet_Mag_E5: JLTS_E5_mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] E-5 Energy Cell";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 100<br/>Used In: E-5";

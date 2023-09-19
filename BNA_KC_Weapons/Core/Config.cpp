@@ -7,6 +7,7 @@ class CfgMagazines
     class JLTS_stun_mag_short;
     class 12thFleet_Mag_StunShort: JLTS_stun_mag_short
     {
+        author = "DartRuffian and Dexus";
         displayName = "[12th Fleet] Stun Energy Cell (Short)";
         displayNameShort = "Stun (Short)";
         descriptionShort = "Stun Energy Cell<br/>Rounds: 10<br/>Duration: 5 Seconds<br/>Used in: DC-15S, DC-15A, DC-17";
@@ -31,6 +32,7 @@ class CfgMagazines
     class UGL_FlareWhite_F;
     class BNA_KC_UGL_FlareBlue: UGL_FlareWhite_F
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[KC] Flare Round (Blue)";
         displayNameShort = "Blue Flare";
         descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: EGLM, 3GL";

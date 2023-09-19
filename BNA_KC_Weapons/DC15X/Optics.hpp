@@ -12,6 +12,7 @@ class jlts_dc15x_scope: optic_LRPS
 };
 class BNA_KC_DC15X_Scope: jlts_dc15x_scope
 {
+    author = "DartRuffian and SweMonkey";
     displayName = "[KC] DC-15X Scope";
     class ItemInfo: ItemInfo
     {

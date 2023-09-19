@@ -151,6 +151,7 @@ class CfgMagazines
     class JLTS_DC15X_mag;
     class Aux_12thFleet_Mag_DC15X: JLTS_DC15X_mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15X Energy Cell";
         displayNameShort = "High Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-15X";

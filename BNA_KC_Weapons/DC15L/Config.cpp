@@ -130,6 +130,7 @@ class CfgMagazines
     class 3AS_200Rnd_EC40_Mag;
     class Aux_12thFleet_Mag_DC15L: 3AS_200Rnd_EC40_Mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15L Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 240<br/>Used In: DC-15L";
         ammo = "Aux_12thFleet_Ammo_Rifle_Blue";

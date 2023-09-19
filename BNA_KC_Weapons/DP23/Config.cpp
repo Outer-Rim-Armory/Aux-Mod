@@ -144,6 +144,7 @@ class CfgMagazines
     class JLTS_DP23_mag;
     class Aux_12thFleet_Mag_DP23: JLTS_DP23_mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DP-23 Energy Cell";
         displayNameShort = "Low Energy";
         descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 30<br/>Used In: DP-23";

@@ -155,6 +155,7 @@ class CfgMagazines
     class 12thFleet_Mag_DC15S;
     class Aux_12thFleet_Mag_DC15C: 12thFleet_Mag_DC15S
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15C Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 40<br/>Used In: DC-15C";
         count = 40;

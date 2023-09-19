@@ -176,6 +176,7 @@ class CfgMagazines
     class 3AS_60Rnd_EC50_Mag;
     class 12thFleet_Mag_WestarM5: 3AS_60Rnd_EC50_Mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] Westar-M5 Energy Cell";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: Westar-M5";

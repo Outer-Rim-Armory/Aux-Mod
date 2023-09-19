@@ -308,6 +308,7 @@ class CfgMagazines
     class JLTS_DC17SA_mag;
     class 12thFleet_Mag_DC17: JLTS_DC17SA_mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-17 Energy Cell";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-17";
@@ -319,6 +320,7 @@ class CfgMagazines
     class 1Rnd_Smoke_Grenade_shell;
     class BNA_KC_Mag_GR20: 1Rnd_Smoke_Grenade_shell
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[KC] Pressurized Bacta Canister";
         displayNameShort = "Bacta Bomb";
         descriptionShort = "Pressurized Bacta Gas<br/>Rounds: 1<br/>Used In: GR-20<br/>Nicknamed the 'Bacta Bomb' by Republic Medics";

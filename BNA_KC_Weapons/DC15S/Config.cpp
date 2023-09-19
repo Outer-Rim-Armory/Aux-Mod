@@ -219,6 +219,7 @@ class CfgMagazines
     class JLTS_DC15S_mag;
     class 12thFleet_Mag_DC15S: JLTS_DC15S_mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15S Energy Cell";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 80<br/>Used In: DC-15S";
