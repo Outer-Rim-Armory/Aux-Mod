@@ -34,6 +34,9 @@ class CfgPatches
             "BNA_KC_Mag_Valken38X",
             "BNA_KC_Mag_Valken38X_AP"
         };
-        ammo[] = {};
+        ammo[] =
+        {
+            "BNA_KC_Ammo_Sniper_AP_Yellow"
+        };
     };
 };
