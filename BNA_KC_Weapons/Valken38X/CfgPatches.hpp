@@ -31,6 +31,7 @@ class CfgPatches
         };
         magazines[] =
         {
+            "BNA_KC_Mag_Valken38X",
             "BNA_KC_Mag_Valken38X_AP"
         };
         ammo[] = {};
