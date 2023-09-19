@@ -85,6 +85,7 @@ class CfgWeapons
             {
                 begin1[] = {"BNA_KC_Weapons\HI12\Data\Audio\HI12_Fire1.wss", 3, 1, 1800};
                 soundBegin[] = {"begin1", 1};
+                soundBeginWater[] = {"begin1", 1};
             };
             dispersion = 0.00037815439999;
         };
