@@ -13,9 +13,12 @@ class CfgPatches
                 // Horn weapon class
 			"A3_Weapons_F_Exp",
 				// VTOL Shit
-			"3as_static_turbolaser_xx10",
-            // "3AS_ATRT_Weapon", // AT-RT weapon
-            // "3AS_Weapons" // AT-RT magazine
+			"3as_static_turbolaser_xx10"/*,
+            "3AS_ATRT_Weapon",
+                // AT-RT weapon
+            "3AS_Weapons"
+                // AT-RT magazine
+            */
         };
         units[] = {};
         weapons[] =
@@ -26,7 +29,7 @@ class CfgPatches
             "BNA_KC_CommanderGun",
             "BNA_KC_Mounted_MG",
             "BNA_KC_Mounted_MissileLauncher",
-			
+
 			"BNA_KC_Gatling_20mm",
 			"BNA_KC_105mm",
 			"BNA_KC_40mm_VTOL",

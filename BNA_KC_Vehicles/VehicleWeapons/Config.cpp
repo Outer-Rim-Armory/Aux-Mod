@@ -29,7 +29,7 @@ class CfgAmmo
         effectfly = "SWLW_plasma_red";
         coefgravity = 0;
     };
-    
+
     class B_127x99_Ball;
     class BNA_KC_Coax_Ammo: B_127x99_Ball
     {
@@ -37,7 +37,7 @@ class CfgAmmo
         effectfly = "ls_plasma_blue";
         coefgravity = 0;
     };
-	
+
 	class B_20mm_Tracer_Red;
 	class BNA_KC_20mm_Ammo: B_20mm_Tracer_Red
 	{
@@ -74,6 +74,9 @@ class CfgAmmo
         hit = 120;      // Damage when bullet speed is >= typicalSpeed
         typicalSpeed = 400;
         coefgravity = 0;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
     };
     */
 };
@@ -90,7 +93,7 @@ class CfgMagazines
         count = 20;
         ammo = "BNA_KC_120_HE_Ammo";
     };
-	
+
     class 20Rnd_120mm_APFSDS_shells_Tracer_Red;
     class BNA_KC_120_AT_Mag: 20Rnd_120mm_APFSDS_shells_Tracer_Red
     {
@@ -134,7 +137,7 @@ class CfgMagazines
 
         count = 1000;
     };
-	
+
 	class 4000Rnd_20mm_Tracer_Red_shells;
 	class BNA_KC_4000rnd_20mm: 4000Rnd_20mm_Tracer_Red_shells
 	{
@@ -419,8 +422,8 @@ class CfgWeapons
 			};
 		};
 	};
-	
-	
+
+
 	class LMG_RCWS;
 	class LMG_coax: LMG_RCWS
 	{
@@ -440,7 +443,7 @@ class CfgWeapons
 
 		class manual: manual
 		{
-			sounds[] = 
+			sounds[] =
 			{
 				"StandardSound"
 			};
@@ -454,14 +457,14 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
-				begin1[] = 
+				begin1[] =
 				{
 					"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1.wss",
 					1,
 					1,
 					1800
 				};
-				soundBegin[] = 
+				soundBegin[] =
 				{
 					"begin1",
 					1
@@ -469,7 +472,7 @@ class CfgWeapons
 			};
 		};
 	};
-    
+
     class LMG_Minigun;
     class LMG_Minigun_Transport: LMG_Minigun
     {
@@ -517,7 +520,7 @@ class CfgWeapons
             soundBegin[] = { "begin1", 1 };
         };
     };
-    
+
 	class HMG_127_APC;
 	class HMG_127_MBT: HMG_127_APC
 	{
@@ -526,13 +529,13 @@ class CfgWeapons
 	class BNA_KC_CommanderGun: HMG_127_MBT
 	{
 		displayName = "Commander Gun";
-		magazines[] = 
+		magazines[] =
 		{
 			"BNA_KC_100rnd_Coax_Mag"
 		};
 		class manual: manual
 		{
-			sounds[] = 
+			sounds[] =
 			{
 				"StandardSound"
 			};
@@ -546,14 +549,14 @@ class CfgWeapons
 			class StandardSound: BaseSoundModeType
 			{
 				weaponSoundEffect = "";
-				begin1[] = 
+				begin1[] =
 				{
 					"MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
 					1,
 					1,
 					1800
 				};
-				soundBegin[] = 
+				soundBegin[] =
 				{
 					"begin1",
 					1
@@ -561,7 +564,7 @@ class CfgWeapons
 			};
 		};
 	};
-	
+
 	class gatling_20mm_VTOL_01;
 	class BNA_KC_Gatling_20mm: gatling_20mm_VTOL_01
 	{
@@ -708,7 +711,7 @@ class CfgWeapons
 				};
 			};
 		};
-		
+
 	};
 	class autocannon_40mm_CTWS;
 	class autocannon_40mm_VTOL_01: autocannon_40mm_CTWS
@@ -735,7 +738,8 @@ class CfgWeapons
 			};
 		};
 	};
-	
+
+
     /*
     class 3AS_ATRT_Weapon_F;
     class BNA_KC_ATRT_Turret: 3AS_ATRT_Weapon_F
@@ -746,12 +750,13 @@ class CfgWeapons
 
         displayName = "AT-RT Turret";
         descriptionShort = "";
+        picture = "\BNA_KC_Vehicles\VehicleWeapons\Data\Texture\UI\Weapon_ATRT_UI.paa";
 
         magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
         magazineWell[] = {};
     };
     */
-    
+
     // Horns & Alarms
     class CarHorn;
     class BNA_KC_Juggernaut_Horn: CarHorn

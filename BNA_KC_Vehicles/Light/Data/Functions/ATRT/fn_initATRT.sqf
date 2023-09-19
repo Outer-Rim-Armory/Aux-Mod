@@ -20,11 +20,13 @@ if (isNull _atrt) exitWith {};
 _atrt setAnimSpeedCoef 1.5; // Used to increase movement speed
 _atrt disableAI "RADIOPROTOCOL"; // Stops ai from talking/sending messages
 
-private _atrtDamageHandler = _atrt addEventHandler
+_atrt addEventHandler
 [
     "HandleDamage",
     {
-        params ["_atrt", "_selection", "_damage", "_source", "_projectile", "_hitIndex", "_instigator", "_hitPoint"];
+        params ["_atrt", "", "_damage", "", "", "", "", ""];
+        private ["_atrtHelath"];
+
         _atrtHealth = _atrt getVariable ["BNA_KC_Health", ATRT_BASE_HEALTH];
         _atrtHealth = _atrtHealth - _damage;
         _atrt setVariable ["BNA_KC_Health", _atrtHealth, true];
@@ -37,12 +39,12 @@ private _atrtDamageHandler = _atrt addEventHandler
 
             _atrt removeEventHandler [_thisEvent, _thisEventHandler];
         };
-        
+
         0;
     }
 ];
 
-private _atrtDeltedHandler = _atrt addEventHandler
+_atrt addEventHandler
 [
     "Deleted",
     {
@@ -58,9 +60,9 @@ _atrt addAction
     "Drive",
     {
         //       _target, _caller
-        params ["_atrt", "_rider", "_actionId", "_arguments"];
-        
-        _rider = _atrt getVariable ["BNA_KC_ATRT_Rider", _rider];
+        params ["_atrt", "_rider", "", ""];
+
+        _rider = _atrt getVariable ["BNA_KC_ATRT_rider", _rider];
         [_rider, _atrt] call BNAKC_fnc_mountATRT;
 
         // Check if the player should be able to ride
@@ -77,7 +79,7 @@ _atrt addAction
             // See https://community.bistudio.com/wiki/waitUntil#Problems
             !isNil "_expression" and { _expression };
         };
-        
+
         _atrt call BNAKC_fnc_dismountATRT;
     },
     [],
@@ -97,7 +99,7 @@ _atrt addAction
     "Dismount",
     {
         //       _target,  _caller
-        params ["_rider", "_atrt", "_actionId", "_arguments"];
+        params ["", "_atrt", "", ""];
         _atrt call BNAKC_fnc_dismountATRT;
     },
     nil,

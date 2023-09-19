@@ -12,8 +12,9 @@ class CfgWeapons
     };
     class BNA_KC_Uniform_ATRT: 3AS_ATRT_Uniform
     {
-        displayName = "[KC] AT-RT Uniform";
+        displayName = "AT-RT Plating";
         JLTS_hasStunProtection = 1;
+        picture = "\BNA_KC_Vehicles\Light\Data\Textures\UI\Uniform_ATRT_UI.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -261,7 +262,7 @@ class TransportMagazines \
 };
 
 
-// class CBA_Extended_EventHandlers_base;
+class CBA_Extended_EventHandlers_base;
 class CfgVehicles
 {
     /*
@@ -286,19 +287,26 @@ class CfgVehicles
 
         displayName = "[KC] AT-RT";
         uniformClass = "BNA_KC_Uniform_ATRT";
+        nakedUniform = "BNA_KC_Uniform_ATRT";
         impactEffectsBlood = "ImpactMetal";
 
         weapons[] = { "BNA_KC_ATRT_Turret" };
         magazines[] = { "BNA_KC_9999Rnd_ATRT_Turret_Magazine" };
+
+        allowedfacewear[] = {""};
+        allowedHeadgear[] = {""};
+        allowedHeadgearB[] = {""};
+        headgearList[] = {""};
+        identityTypes[] = {"LanguageENG_F", "Head_NATO", "Head_Euro"};
 
 		// Textures are not set-up on the 3AS end yet.
 		// hiddenSelectionsTextures[] =
 		// {
 		// 	"BNA_KC_Vehicles\Light\Data\Textures\ATRT\BNA_KC_ATRT.paa"
 		// };
-        class EventHandlers: EventHandlers
+        class EventHandlers
         {
-            init = "(_this select 0) call BNAKC_fnc_initATRT;"; // Overwrite 3AS script call
+            init = "";
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
 
@@ -792,6 +800,18 @@ class CfgFunctions
             class mountATRT {};
             class dismountATRT {};
             class spawnATRTSmoke {};
+        };
+    };
+};
+
+
+class Extended_Init_EventHandlers
+{
+    class BNA_KC_ATRT
+    {
+        class BNA_KC_ATRT_init
+        {
+            init = "(_this select 0) call BNAKC_fnc_initATRT;";
         };
     };
 };
