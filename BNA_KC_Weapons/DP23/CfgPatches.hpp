@@ -7,12 +7,14 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Weapons_Core",
+                // Ammo
             "JLTS_weapons_DP23",
                 // DP-23
+            "Aux501_Patch_Accessories",
+                // 501st Scopes/Sights
             "JLTS_weapons_DC17SA",
                 // Flashlight
-            "Aux501_Patch_Accessories",
-                // Scopes
             "A3_Weapons_F_Acc",
                 // Laser pointer
             "ace_laserpointer"

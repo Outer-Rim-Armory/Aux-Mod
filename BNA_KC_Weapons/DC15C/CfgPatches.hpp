@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Weapons_Core",
+                // Ammo
             "3AS_Weapons_DC15C",
                 // DC-15C
             "3AS_Main",
@@ -15,8 +17,12 @@ class CfgPatches
                 // Magazine
             "Aux501_Patch_Accessories",
                 // 501st Scopes/Sights
-            "JLTS_weapons_DC17SA"
+            "JLTS_weapons_DC17SA",
                 // Flashlight
+            "A3_Weapons_F_Acc",
+                // Laser pointer
+            "ace_laserpointer"
+                // Green laser pointer
         };
         units[] = {};
         weapons[] =
