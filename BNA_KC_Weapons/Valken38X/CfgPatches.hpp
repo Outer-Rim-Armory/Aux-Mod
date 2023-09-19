@@ -7,8 +7,10 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Weapons_Core",
+                // Ammo
             "LF_Weapon_Unit_Valken38X",
-                // Valken
+                // Valken-38X
             "BNA_KC_Weapons_DC15X",
                 // Sniper mag
             "JLTS_weapons_DC17SA",
