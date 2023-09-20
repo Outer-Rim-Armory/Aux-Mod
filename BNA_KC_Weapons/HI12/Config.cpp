@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "..\Macros.hpp"
 
 
 class PointerSlot;
@@ -144,8 +145,24 @@ class CfgMagazines
         author = "DartRuffian and SweMonkey";
         displayName = "[KC] HI-12 Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 30<br/>Used In: HI-12";
+
+        ammo = "BNA_KC_Ammo_HI12_Blue";
         count = 30;
 
         JLTS_hasEMPProtection = 1;
+    };
+};
+
+
+class CfgAmmo
+{
+    class LFP_ammo_hi12;
+    class BNA_KC_Ammo_HI12_Blue: LFP_ammo_hi12
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+        coefgravity = 0;
+        BULLET_SOUNDS
+        BULLET_EFFECTS
     };
 };
