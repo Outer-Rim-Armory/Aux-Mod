@@ -49,6 +49,76 @@ class CfgVehicles
                 displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CT Uniform</t>";
                 statement = "[""CT""] call BNAKC_fnc_GrabUniform;";
             };
+            class BNA_KC_SCTUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab SCT Uniform</t>";
+                statement = "[""SCT""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_VCTUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab VCT Uniform</t>";
+                statement = "[""VCT""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_LCPLUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab LCPL Uniform</t>";
+                statement = "[""LCPL""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CPLUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CPL Uniform</t>";
+                statement = "[""CPL""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CSUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CS Uniform</t>";
+                statement = "[""CS""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CSSUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CSS Uniform</t>";
+                statement = "[""CSS""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CSFCUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CSFC Uniform</t>";
+                statement = "[""CSFC""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CMSUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CMS Uniform</t>";
+                statement = "[""CMS""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CSMUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CSM Uniform</t>";
+                statement = "[""CSM""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_WOUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab WO Uniform</t>";
+                statement = "[""WO""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_WO2Uniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab WO2 Uniform</t>";
+                statement = "[""WO2""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_WO3Uniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab WO3 Uniform</t>";
+                statement = "[""WO3""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_LTUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab LT Uniform</t>";
+                statement = "[""LT""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_1LTUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab 1LT Uniform</t>";
+                statement = "[""1LT""] call BNAKC_fnc_GrabUniform;";
+            };
             class BNA_KC_ChangeMenu: BNA_KC_CRUniform
             {
                 priority = 4;
