@@ -64,8 +64,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {"Aux12thFleet_SoundSet_E5"};
-                soundSetShotWater[] = {"Aux12thFleet_SoundSet_E5"};
+                soundSetShot[] = {"BNA_KC_SoundSet_E5"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_E5"};
             };
         };
         class FullAuto: FullAuto
@@ -74,8 +74,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {"Aux12thFleet_SoundSet_E5"};
-                soundSetShotWater[] = {"Aux12thFleet_SoundSet_E5"};
+                soundSetShot[] = {"BNA_KC_SoundSet_E5"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_E5"};
             };
         };
     };
@@ -170,7 +170,7 @@ class CfgMagazines
 class CfgSoundShaders
 {
     class 3AS_E5_Shot_SoundShader;
-    class Aux12thFleet_SoundShader_E5: 3AS_E5_Shot_SoundShader
+    class BNA_KC_SoundShader_E5: 3AS_E5_Shot_SoundShader
     {
         samples[] =
         {
@@ -186,8 +186,8 @@ class CfgSoundShaders
 class CfgSoundSets
 {
     class 3AS_E5_Shot_SoundSet;
-    class Aux12thFleet_SoundSet_E5: 3AS_E5_Shot_SoundSet
+    class BNA_KC_SoundSet_E5: 3AS_E5_Shot_SoundSet
     {
-        soundShaders[] = {"Aux12thFleet_SoundShader_E5"};
+        soundShaders[] = {"BNA_KC_SoundShader_E5"};
     };
 };
