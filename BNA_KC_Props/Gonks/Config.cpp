@@ -82,7 +82,7 @@ class CfgVehicles
                 displayName = "<t color='#c40000'><img image='\BNA_KC_Gear\Insignias\Data\Textures\Medic.paa'/> Assign Medic Permissions</t>";
 
                 position = "camera";
-                radius = 5;
+                radius = 3;
                 onlyForPlayer = 0;
 
                 hideOnUse = 1;
@@ -128,7 +128,7 @@ class CfgVehicles
                 displayName = "<t color='#3996e7'>Open ACE Arsenal</t>";
 
                 position = "camera";
-                radius = 5;
+                radius = 3;
                 onlyForPlayer = 1;
 
                 hideOnUse = 1;
@@ -161,7 +161,7 @@ class CfgVehicles
                 displayName = "<t color='#c40000'>Recieve Treatment</t>";
 
                 position = "camera";
-                radius = 5;
+                radius = 3;
                 onlyForPlayer = 1;
 
                 hideOnUse = 1;
