@@ -33,10 +33,14 @@ class CfgVehicles
 			class BNA_KC_CRUniform
 			{
 				displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CR Uniform</t>";		// Structured text, displayed in the scroll menu
-				radius = 3;
-				priority = 100;
-				onlyForPlayer = 1;
-				hideOnUse = 0;
+
+                position = "camera";
+                radius = 3;
+                onlyForPlayer = 1;
+
+                hideOnUse = 0;
+                priority = 5;
+
 				condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
 				statement = "[""CR""] call BNAKC_fnc_GrabUniform;";				// Calls the loadout script and tells it to look for the Basic hashmap key, change this to relevant hashmap key
 			};
@@ -47,7 +51,7 @@ class CfgVehicles
 			};
 			class BNA_KC_ChangeMenu: BNA_KC_CRUniform
 			{
-				priority = 99;
+				priority = 4;
 				displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>View Detachment Helmets</t>";
 				condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
 				statement = "player setVariable ['BNAKC_Uniform_Menu', 1];";
