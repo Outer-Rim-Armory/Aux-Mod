@@ -79,7 +79,7 @@ class CfgVehicles
         {
             class AssignMedic
             {
-                displayName = "Assign Medic Permissions";
+                displayName = "<t color='#c40000'>Assign Medic Permissions</t>";
 
                 position = "camera";
                 radius = 5;
@@ -93,19 +93,19 @@ class CfgVehicles
             };
             class UnassignMedic: AssignMedic
             {
-                displayName = "Unassign Medic Permissions";
+                displayName = "<t color='#c40000'>Unassign Medic Permissions</t>";
                 condition = "player getUnitTrait 'Medic'";
                 statement = "player setUnitTrait ['Medic', false]";
             };
             class AssignEngineer: AssignMedic
             {
-                displayName = "Assign Engineer Permissions";
+                displayName = "<t color='#f0be00'>Assign Engineer Permissions</t>";
                 condition = "!(player getUnitTrait 'Engineer')";
                 statement = "player setUnitTrait ['Engineer', true]";
             };
             class UnassignEngineer: AssignEngineer
             {
-                displayName = "Unassign Engineer Permissions";
+                displayName = "<t color='#f0be00'>Unassign Engineer Permissions</t>";
                 condition = "player getUnitTrait 'Engineer'";
                 statement = "player setUnitTrait ['Engineer', false]";
             };
@@ -125,7 +125,7 @@ class CfgVehicles
         {
             class ArsenalACE
             {
-                displayName = "Open ACE Arsenal";
+                displayName = "<t color='#3996e7'>Open ACE Arsenal</t>";
 
                 position = "camera";
                 radius = 5;
@@ -139,7 +139,7 @@ class CfgVehicles
             };
             class ArsenalBIS: ArsenalACE
             {
-                displayName = "Open BIS Arsenal";
+                displayName = "<t color='#3996e7'>Open BIS Arsenal</t>";
                 statement = "['Open', [true]] call BIS_fnc_arsenal;";
             };
         };
@@ -158,7 +158,7 @@ class CfgVehicles
         {
             class FullHeal
             {
-                displayName = "Recieve Treatment";
+                displayName = "<t color='#c40000'>Recieve Treatment</t>";
 
                 position = "camera";
                 radius = 5;
