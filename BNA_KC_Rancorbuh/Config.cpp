@@ -1,34 +1,14 @@
-class CfgPatches
-{
-    class BNA_KC_Rancorbuh
-    {
-        author="SweMonkey";
-        requiredVersion=1.6;
-        requiredAddons[]=
-        {
-            "WBK_ZombieCreatures"
-        };
-        units[] =
-        {
-            "BKA_KC_Smasher_Rancor"
-        };
-        weapons[]=
-        {
-            "Rancor_uniform"
-        };
+#include "CfgPatches.hpp"
 
-        skipWhenMissingDependencies = 1;
-    };
-};
 
 class CfgVehicles
 {
     class WBK_SpecialZombie_Smasher_1;
-    class BKA_KC_Smasher_Rancor: WBK_SpecialZombie_Smasher_1
+    class BNA_KC_Smasher_Rancor: WBK_SpecialZombie_Smasher_1
     {
         displayName = "Rancor";
-        uniformClass = "Rancor_uniform";
-        nakedUniform = "Rancor_uniform";
+        uniformClass = "BNA_KC_Uniform_Rancor";
+        nakedUniform = "BNA_KC_Uniform_Rancor";
         model = "BNA_KC_Rancorbuh\Model\Rancor.p3d";
     };
 };
@@ -37,7 +17,7 @@ class CfgWeapons
 {
     class Uniform_Base;
     class UniformItem;
-    class Rancor_uniform: Uniform_Base
+    class BNA_KC_Uniform_Rancor: Uniform_Base
     {
         displayname = "Rancor Hide";
         model = "BNA_KC_Rancorbuh\Model\Rancor.p3d";
@@ -46,7 +26,7 @@ class CfgWeapons
         class ItemInfo: UniformItem
         {
             containerclass = "Supply200";
-            uniformclass = "Rancor_uniform";
+            uniformclass = "BNA_KC_Smasher_Rancor";
             uniformmodel = "-";
             mass = 30;
         };
