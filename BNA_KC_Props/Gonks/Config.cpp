@@ -168,7 +168,7 @@ class CfgVehicles
                 priority = 5;
 
                 condition = "true";
-                statement = "[player, player] call ace_medical_treatment_fnc_fullHeal; playSound3D ['BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss', objNull, false, getPosASL this, 1, 1, 10, 0, true];";
+                statement = "[player, player] call ace_medical_treatment_fnc_fullHeal; playSound3D ['BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss', objNull, false, getPosASL this, 3, 1, 10, 0, true];";
             };
         };
     };
