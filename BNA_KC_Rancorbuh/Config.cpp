@@ -9,7 +9,7 @@ class CfgVehicles
         displayName = "Rancor";
         uniformClass = "BNA_KC_Uniform_Rancor";
         nakedUniform = "BNA_KC_Uniform_Rancor";
-        model = "BNA_KC_Rancorbuh\Model\Rancor.p3d";
+        model = "BNA_KC_Rancorbuh\Data\Models\Rancor\Rancor.p3d";
 
         faction = "BNA_KC_Faction_Zombies";
         editorSubcategory = "BNA_KC_SubCat_Creatures";
@@ -23,7 +23,7 @@ class CfgWeapons
     class BNA_KC_Uniform_Rancor: Uniform_Base
     {
         displayname = "Rancor Hide";
-        model = "BNA_KC_Rancorbuh\Model\Rancor.p3d";
+        model = "BNA_KC_Rancorbuh\Data\Models\Rancor\Rancor.p3d";
         scope = 1;
         picture = "";
         class ItemInfo: UniformItem
