@@ -16,6 +16,7 @@ class CfgVehicles
     };
 };
 
+
 class CfgWeapons
 {
     class Uniform_Base;
@@ -26,6 +27,7 @@ class CfgWeapons
         model = "BNA_KC_Rancorbuh\Data\Models\Rancor\Rancor.p3d";
         scope = 1;
         picture = "";
+
         class ItemInfo: UniformItem
         {
             containerclass = "Supply200";
@@ -35,6 +37,7 @@ class CfgWeapons
         };
     };
 };
+
 
 class Extended_InitPost_EventHandlers
 {
