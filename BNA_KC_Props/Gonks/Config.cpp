@@ -125,7 +125,7 @@ class CfgVehicles
         {
             class ArsenalACE
             {
-                displayName = "<t color='#3996e7'>Open ACE Arsenal</t>";
+                displayName = "<t color='#3996e7'><img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\rearm_ca.paa'/> Open ACE Arsenal</t>";
 
                 position = "camera";
                 radius = 3;
@@ -139,7 +139,7 @@ class CfgVehicles
             };
             class ArsenalBIS: ArsenalACE
             {
-                displayName = "<t color='#3996e7'>Open BIS Arsenal</t>";
+                displayName = "<t color='#E6E6E6'><img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\rearm_ca.paa'/> Open BIS Arsenal</t>";
                 statement = "['Open', [true]] call BIS_fnc_arsenal;";
             };
         };
@@ -158,7 +158,7 @@ class CfgVehicles
         {
             class FullHeal
             {
-                displayName = "<t color='#c40000'>Recieve Treatment</t>";
+                displayName = "<t color='#c40000'><img image='z\ace\addons\zeus\ui\icon_module_zeus_heal_ca.paa'/> Recieve Treatment</t>";
 
                 position = "camera";
                 radius = 3;
