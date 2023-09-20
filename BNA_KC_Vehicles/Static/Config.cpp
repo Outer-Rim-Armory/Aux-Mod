@@ -24,6 +24,7 @@ class CfgWeapons
 
         displayName = "[KC] Model 190 Mortar System";
         picture = "\ls_weapons\_ui\rps6_ca.paa"; // Temp picture
+        drySound[] = {};
 
         // 3AS Mortar model is not fully set up for CSW
         // model = "3AS\3as_static\Mortar\model\MortarLauncher.p3d";
