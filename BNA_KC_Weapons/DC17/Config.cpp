@@ -310,7 +310,7 @@ class CfgMagazines
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-17 Energy Cell";
-        displayNameShort = "Standard Energy";
+        displayNameShort = "Low Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-17";
         ammo = "Aux_12thFleet_Ammo_Rifle_Blue";
 
