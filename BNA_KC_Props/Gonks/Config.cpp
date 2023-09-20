@@ -79,7 +79,7 @@ class CfgVehicles
         {
             class AssignMedic
             {
-                displayName = "<t color='#c40000'>Assign Medic Permissions</t>";
+                displayName = "<t color='#c40000'><img image='\BNA_KC_Gear\Insignias\Data\Textures\Medic.paa'/> Assign Medic Permissions</t>";
 
                 position = "camera";
                 radius = 5;
@@ -93,19 +93,19 @@ class CfgVehicles
             };
             class UnassignMedic: AssignMedic
             {
-                displayName = "<t color='#c40000'>Unassign Medic Permissions</t>";
+                displayName = "<t color='#c40000'><img image='\BNA_KC_Gear\Insignias\Data\Textures\Medic.paa'/> Unassign Medic Permissions</t>";
                 condition = "player getUnitTrait 'Medic'";
                 statement = "player setUnitTrait ['Medic', false]";
             };
             class AssignEngineer: AssignMedic
             {
-                displayName = "<t color='#f0be00'>Assign Engineer Permissions</t>";
+                displayName = "<t color='#f0be00'><img image='\BNA_KC_Gear\Insignias\Data\Textures\Engineer.paa'/> Assign Engineer Permissions</t>";
                 condition = "!(player getUnitTrait 'Engineer')";
                 statement = "player setUnitTrait ['Engineer', true]";
             };
             class UnassignEngineer: AssignEngineer
             {
-                displayName = "<t color='#f0be00'>Unassign Engineer Permissions</t>";
+                displayName = "<t color='#f0be00'><img image='\BNA_KC_Gear\Insignias\Data\Textures\Engineer.paa'/> Unassign Engineer Permissions</t>";
                 condition = "player getUnitTrait 'Engineer'";
                 statement = "player setUnitTrait ['Engineer', false]";
             };
