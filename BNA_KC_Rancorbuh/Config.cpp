@@ -17,7 +17,7 @@ class CfgPatches
             "Rancor_uniform"
         };
 
-        skipWhenMissingDependencies = 1; // for ARMA 2.14, skips loading if missing WBK zombies (or any dependency)
+        skipWhenMissingDependencies = 1;
     };
 };
 
@@ -26,9 +26,9 @@ class CfgVehicles
     class WBK_SpecialZombie_Smasher_1;
     class BKA_KC_Smasher_Rancor: WBK_SpecialZombie_Smasher_1
     {
+        displayName = "Rancor";
         uniformClass = "Rancor_uniform";
         nakedUniform = "Rancor_uniform";
-        displayName = "Rancor";
         model = "BNA_KC_Rancorbuh\Model\Rancor.p3d";
     };
 };
@@ -39,18 +39,16 @@ class CfgWeapons
     class UniformItem;
     class Rancor_uniform: Uniform_Base
     {
-        displayname="Rancor";
+        displayname = "Rancor Hide";
         model = "BNA_KC_Rancorbuh\Model\Rancor.p3d";
-        scope=1;
-        picture="";
-        hiddenSelections[] = {};
-        hiddenSelectionsTextures[] = {};
+        scope = 1;
+        picture = "";
         class ItemInfo: UniformItem
         {
-            containerclass="Supply200";
-            mass=30;
-            uniformclass="Rancor_uniform";
-            uniformmodel="-";
+            containerclass = "Supply200";
+            uniformclass = "Rancor_uniform";
+            uniformmodel = "-";
+            mass = 30;
         };
     };
 };
