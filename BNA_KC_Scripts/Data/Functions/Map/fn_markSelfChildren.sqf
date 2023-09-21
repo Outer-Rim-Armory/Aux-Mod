@@ -11,7 +11,7 @@
  * None
  *
  * Examples:
- * call BNAKC_fnc_loadAllSettings;
+ * insertChildren = "_this call BNAKC_fnc_markSelfChildren";
  */
 
 
