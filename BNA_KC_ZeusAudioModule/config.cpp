@@ -134,7 +134,42 @@ class CfgSFX
 	{
         name = "[KC] DK Radio Chatter";
         sounds[] = {BNA_KC_Ambient_DK_Radio};
-        BNA_KC_Ambient_ATTE_Alarm[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\DK_Radio_Chatter.ogg",db+100,1,100,1,2,3,4};
+        BNA_KC_Ambient_Radio_DK_SFX[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\DK_Radio_Radio_SFX.ogg",db+50,1,100,1,2,3,4};
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
+	class BNA_KC_Ambient_Carnage_Roar_SFX
+	{
+        name = "[KC] Carnage Roar";
+        sounds[] = {BNA_KC_Ambient_Carnage_Roar};
+        BNA_KC_Ambient_Carnage_Roar_SFX[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Carnage_Roar.ogg",db+50,1,500,1,2,3,4};
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
+	class BNA_KC_Ambient_Carnage_Roar_2_SFX
+	{
+        name = "[KC] Carnage Roar 2";
+        sounds[] = {BNA_KC_Ambient_Carnage_Roar_2};
+        BNA_KC_Ambient_Carnage_Roar_2[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Carnage_Roar_2.ogg",db+50,1,500,1,2,3,4};
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
+	class BNA_KC_Ambient_Carnage_Roar_3_SFX
+	{
+        name = "[KC] Carnage Roar 3";
+        sounds[] = {BNA_KC_Ambient_Carnage_Roar_3};
+        BNA_KC_Ambient_Carnage_Roar_3[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Carnage_Roar_3.ogg",db+50,1,500,1,2,3,4};
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
+	class BNA_KC_Ambient_Carnage_Roar_4_SFX
+	{
+        name = "[KC] Carnage Roar 4";
+        sounds[] = {BNA_KC_Ambient_Carnage_Roar_4};
+        BNA_KC_Ambient_Carnage_Roar_4[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Carnage_Roar_4.ogg",db+50,1,500,1,2,3,4};
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
+	class BNA_KC_Ambient_Let_There_Be_Carnage_SFX
+	{
+        name = "[KC] Let There Be Carnage";
+        sounds[] = {BNA_KC_Ambient_Let_There_Be_Carnage};
+        BNA_KC_Ambient_Let_There_Be_Carnage[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Let_There_Be_Carnage.ogg",db+50,1,500,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
 };
@@ -174,7 +209,7 @@ class CfgSounds
 	class BNA_KC_Ambient_Radio_DK
 	{
         name = "DK Radio Chatter";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\DK_Radio_Chatter", db+10, 1};
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\DK_Radio_Radio_SFX", db+10, 1};
         titles[] = {2, "DK Radio Chatter"};
     };
 };
