@@ -78,12 +78,10 @@ class CfgWeapons
 
             class StandardSound: StandardSound
             {
-                begin1[] = {"BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire1.wss", 3, 1, 1800};
-                begin2[] = {"BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire2.wss", 3, 1, 1800};
-                begin3[] = {"BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire3.wss", 3, 1, 1800};
-                begin4[] = {"BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire4.wss", 3, 1, 1800};
-                soundBegin[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
-                soundBeginWater[] = {"begin1", 0.25, "begin2", 0.25, "begin3", 0.25, "begin4", 0.25};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_Valken38X_Single"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_Valken38X_Single"};
             };
         };
 
@@ -173,5 +171,31 @@ class CfgAmmo
 
         model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
         effectfly = "JLTS_plasma_yellow";
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_Valken38X_Single: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"\BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire1.wss", 1, 1},
+            {"\BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire2.wss", 1, 1},
+            {"\BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire3.wss", 1, 1},
+            {"\BNA_KC_Weapons\Valken38X\Data\Audio\Valken38X_Fire4.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_Valken38X_Single: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_Valken38X_Single"};
+        volumeFactor = 3;
     };
 };
