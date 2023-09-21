@@ -1,3 +1,6 @@
+#include "CfgVehicles.hpp"
+
+
 class CfgPatches
 {
 	class BNA_KC_Scripts
@@ -54,7 +57,7 @@ class CfgFunctions
         {
             file = "BNA_KC_Scripts\Data\Functions\Map";
 			class CreateMarkOnSelf{};
-            class CreateMarkAction{};
+            class markChildren{};
             class rgbToHex{};
         };
 
@@ -110,10 +113,6 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Scripts_FortificationsPostInit
 	{
         init = "call BNAKC_fnc_FortificationsPostInit";
-    };
-    class BNA_KC_Scripts_CreateMarkAction
-    {
-        init = "call BNAKC_fnc_CreateMarkAction";
     };
     class BNA_KC_Scripts_FixInfiniteLoading
     {
