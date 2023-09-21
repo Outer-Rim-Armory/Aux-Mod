@@ -47,7 +47,7 @@ class CfgWeapons
         {
             "this"
         };
-        magazines[] = { "Aux_12thFleet_Mag_DC15X" };
+        magazines[] = {"Aux_12thFleet_Mag_DC15X"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -68,7 +68,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[]  =
+                compatibleItems[] =
                 {
                     "acc_pointer_ir",
                     "ace_acc_pointer_green",
