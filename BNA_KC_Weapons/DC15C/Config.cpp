@@ -97,8 +97,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {"BNA_KC_SoundSet_DC15S_Single"};
-                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15S_Single"};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15S"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15S"};
             };
         };
         class FullAuto: FullAuto
@@ -108,8 +108,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {"BNA_KC_SoundSet_DC15S_FullAuto"};
-                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15S_FullAuto"};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15S"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15S"};
             };
         };
     };
