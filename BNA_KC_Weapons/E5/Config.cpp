@@ -64,8 +64,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {"BNA_KC_SoundSet_E5"};
-                soundSetShotWater[] = {"BNA_KC_SoundSet_E5"};
+                soundSetShot[] = {"BNA_KC_SoundSet_E5_Single"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_E5_Single"};
             };
         };
         class FullAuto: FullAuto
@@ -74,8 +74,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {"BNA_KC_SoundSet_E5"};
-                soundSetShotWater[] = {"BNA_KC_SoundSet_E5"};
+                soundSetShot[] = {"BNA_KC_SoundSet_E5_FullAuto"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_E5_FullAuto"};
             };
         };
     };
@@ -169,8 +169,8 @@ class CfgMagazines
 
 class CfgSoundShaders
 {
-    class 3AS_E5_Shot_SoundShader;
-    class BNA_KC_SoundShader_E5: 3AS_E5_Shot_SoundShader
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_E5_Single: BNA_KC_SoundShader_Weapon_Base
     {
         samples[] =
         {
@@ -180,14 +180,19 @@ class CfgSoundShaders
             {"3AS\3AS_Main\Sounds\E5\E54.ogg", 1}*/
             // Currently removed due to a *thud* sound in the file
         };
-    }
+    };
+    class BNA_KC_SoundShader_E5_FullAuto: BNA_KC_SoundShader_E5_Single {};
 };
 
 class CfgSoundSets
 {
-    class 3AS_E5_Shot_SoundSet;
-    class BNA_KC_SoundSet_E5: 3AS_E5_Shot_SoundSet
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_E5_Single: BNA_KC_SoundSet_Weapon_Base
     {
-        soundShaders[] = {"BNA_KC_SoundShader_E5"};
+        soundShaders[] = {"BNA_KC_SoundShader_E5_Single"};
+    };
+    class BNA_KC_SoundSet_E5_FullAuto: BNA_KC_SoundSet_E5_Single
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_E5_FullAuto"};
     };
 };
