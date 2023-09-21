@@ -115,8 +115,8 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
-                soundSetShotWater[] = {"3AS_Westar_Shot_SoundSet"};
+                soundSetShot[] = {"BNA_KC_SoundSet_Westar"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_Westar"};
             };
         };
         class Burst: Burst
@@ -124,8 +124,8 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
-                soundSetShotWater[] = {"3AS_Westar_Shot_SoundSet"};
+                soundSetShot[] = {"BNA_KC_SoundSet_Westar"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_Westar"};
             };
         };
         class FullAuto: FullAuto
@@ -133,8 +133,8 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
-                soundSetShot[] = {"3AS_Westar_Shot_SoundSet"};
-                soundSetShotWater[] = {"3AS_Westar_Shot_SoundSet"};
+                soundSetShot[] = {"BNA_KC_SoundSet_Westar"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_Westar"};
             };
         };
     };
@@ -232,5 +232,30 @@ class CfgMagazines
         JLTS_hasEMPProtection = 1;
 
         ammo = "Aux_12thFleet_Ammo_Rifle_Blue";
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_Westar: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"3AS\3AS_Main\Sounds\Westar\Westar_Shot_1.ogg", 1, 1},
+            {"3AS\3AS_Main\Sounds\Westar\Westar_Shot_2.ogg", 1, 1},
+            {"3AS\3AS_Main\Sounds\Westar\Westar_Shot_3.ogg", 1, 1},
+            {"3AS\3AS_Main\Sounds\Westar\Westar_Shot_4.ogg", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_Westar: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_Westar"};
     };
 };
