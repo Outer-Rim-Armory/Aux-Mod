@@ -14,7 +14,7 @@ class CfgVehicles
                 condition = "BNA_KC_Map_ShowAceAction";
                 statement = "[] call BNAKC_fnc_CreateMarkOnSelf";
                 modifierFunction = "_this call BNAKC_fnc_markSelfModifier";
-                insertChildren = "_this call BNAKC_fnc_markChildren";
+                insertChildren = "_this call BNAKC_fnc_markSelfChildren";
             };
         };
     };
