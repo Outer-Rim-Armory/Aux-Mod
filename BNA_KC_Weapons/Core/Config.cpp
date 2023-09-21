@@ -133,7 +133,7 @@ class CfgAmmo
     class F_40mm_White;
     class BNA_KC_Flare_Blue: F_40mm_White
     {
-        lightColor[] = { 0.25, 0.25, 0.5, 0.5 };
+        lightColor[] = {0.25, 0.25, 0.5, 0.5};
     };
 };
 
