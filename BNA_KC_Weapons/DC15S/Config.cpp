@@ -88,18 +88,20 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                begin1[] = {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss", 1, 1, 1800};
-                soundBegin[] = {"begin1", 1};
-                soundBeginWater[] = {"begin1", 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15S_Single"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15S_Single"};
             };
         };
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                begin1[] = {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss", 1, 1, 1800};
-                soundBegin[] = {"begin1", 1};
-                soundBeginWater[] = {"begin1", 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15S_FullAuto"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15S_FullAuto"};
             };
         };
         class Stun: Stun
@@ -206,5 +208,41 @@ class CfgMagazines
         ammo = "Aux_12thFleet_Ammo_Carbine_Blue";
 
         JLTS_hasEMPProtection = 1;
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DC15S_Single: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss", 1, 1},
+            {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire2.wss", 1, 1},
+            {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire3.wss", 1, 1},
+            {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire4.wss", 1, 1}
+        };
+    };
+    class BNA_KC_SoundShader_DC15S_FullAuto: BNA_KC_SoundShader_DC15S_Single
+    {
+        samples[] =
+        {
+            {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DC15S_Single: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC15S_Single"};
+    };
+    class BNA_KC_SoundSet_DC15S_FullAuto: BNA_KC_SoundSet_DC15S_Single
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC15S_FullAuto"};
     };
 };
