@@ -3,7 +3,9 @@
  * Insert Children function for Mark Self ACE Action, adds children color actions
  *
  * Arguments:
- * None
+ * target: Object - The object the action is assigned to
+ * player: Object - ace_player
+ * params: Array - Parameters passed to the ace action
  *
  * Return Value:
  * None
