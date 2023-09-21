@@ -220,7 +220,7 @@ class CfgSoundShaders
         samples[] =
         {
             {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss", 1, 1},
-            {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire2.wss", 1, 1},
+            // {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire2.wss", 1, 1},
             {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire3.wss", 1, 1},
             {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire4.wss", 1, 1}
         };
