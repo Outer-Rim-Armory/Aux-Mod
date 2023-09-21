@@ -84,9 +84,10 @@ class CfgWeapons
             };
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = {"BNA_KC_Weapons\HI12\Data\Audio\HI12_Fire1.wss", 3, 1, 1800};
-                soundBegin[] = {"begin1", 1};
-                soundBeginWater[] = {"begin1", 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_HI12"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_HI12"};
             };
             dispersion = 0.00037815439999;
         };
@@ -96,6 +97,8 @@ class CfgWeapons
             textureType = "burst";
             burst = 3;
             reloadTime = 0.09; // Time inbetween each shot
+            soundSetShot[] = {"BNA_KC_SoundSet_HI12"};
+            soundSetShotWater[] = {"BNA_KC_SoundSet_HI12"};
         };
 
         class OpticsModes: OpticsModes
@@ -164,5 +167,28 @@ class CfgAmmo
         coefgravity = 0;
         BULLET_SOUNDS
         BULLET_EFFECTS
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_HI12: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"BNA_KC_Weapons\HI12\Data\Audio\HI12_Fire1.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_HI12: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_HI12"};
+        volumeFactor = 3;
     };
 };

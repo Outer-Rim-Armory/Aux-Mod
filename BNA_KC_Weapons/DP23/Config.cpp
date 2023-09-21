@@ -80,9 +80,10 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                begin1[] = {"\MRC\JLTS\weapons\DP23\sounds\dp23_fire.wss", 1, 1, 1800};
-                soundBegin[] = {"begin1", 1};
-                soundBeginWater[] = {"begin1", 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DP23_Single"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DP23_Single"};
             };
         };
     };
@@ -176,5 +177,27 @@ class CfgMagazines
         displayNameShort = "Medium Energy";
         ammo = "Aux_12thFleet_Ammo_Scatter_HP_Blue";
         count = 15;
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DP23_Single: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"\MRC\JLTS\weapons\DP23\sounds\dp23_fire.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DP23_Single: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DP23_Single"};
     };
 };

@@ -47,7 +47,7 @@ class CfgWeapons
         {
             "this"
         };
-        magazines[] = { "Aux_12thFleet_Mag_DC15X" };
+        magazines[] = {"Aux_12thFleet_Mag_DC15X"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -68,7 +68,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[]  =
+                compatibleItems[] =
                 {
                     "acc_pointer_ir",
                     "ace_acc_pointer_green",
@@ -97,15 +97,10 @@ class CfgWeapons
 
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "MRC\JLTS\weapons\DC15X\sounds\dc15x_fire.wss",
-                    2.5,
-                    1,
-                    1800
-                };
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15X_Single"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15X_Single"};
             };
         };
     };
@@ -162,5 +157,26 @@ class CfgMagazines
 
         initSpeed = 1100;
         mass = 8;
+    };
+};
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DC15X_Single: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"MRC\JLTS\weapons\DC15X\sounds\dc15x_fire.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DC15X_Single: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC15X_Single"};
     };
 };

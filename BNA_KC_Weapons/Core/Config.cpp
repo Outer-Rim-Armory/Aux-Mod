@@ -118,7 +118,6 @@ class CfgAmmo
         simulation = "shotSpread";
         fireSpreadAngle = 3;
     };
-
     class Aux_12thFleet_Ammo_Scatter_HP_Blue: Aux_12thFleet_Ammo_Scatter_Blue
     {
         hit = 10;
@@ -133,7 +132,7 @@ class CfgAmmo
     class F_40mm_White;
     class BNA_KC_Flare_Blue: F_40mm_White
     {
-        lightColor[] = { 0.25, 0.25, 0.5, 0.5 };
+        lightColor[] = {0.25, 0.25, 0.5, 0.5};
     };
 };
 
@@ -227,5 +226,37 @@ class CfgMagazineWells
             "12thFleet_Mag_StunShort",
             "12thFleet_Mag_StunLong"
         };
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base
+    {
+        range = 1800;
+        volume = 1;
+        samples[] = {};
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_Weapon_Base"};
+        soundShadersLimit = 1;
+        sound3DProcessingType = "WeaponMediumShot3DProcessingType";
+
+        volumeCurve = "InverseSquare2Curve";
+        volumeFactor = 1;
+
+        distanceFilter = "weaponShotDistanceFreqAttenuationFilter";
+        obstructionFactor = 0.3;
+        occlusionFactor = 0.5;
+
+        spatial = 1;
+        doppler = 0;
+        loop = 0;
     };
 };

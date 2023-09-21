@@ -91,9 +91,10 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound
             {
-                begin1[] = {"BNA_KC_Weapons\DC15L\Data\Audio\DC15L_Fire1.wss", 1, 1, 1800};
-                soundBegin[] = {"begin1", 1};
-                soundBeginWater[] = {"begin1", 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15L_FullAuto"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15L_FullAuto"};
             };
         };
     };
@@ -135,5 +136,26 @@ class CfgMagazines
         descriptionShort = "Energy Cell Pack<br/>Rounds: 240<br/>Used In: DC-15L";
         ammo = "Aux_12thFleet_Ammo_Rifle_Blue";
         count = 240;
+    };
+};
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DC15L_FullAuto: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"BNA_KC_Weapons\DC15L\Data\Audio\DC15L_Fire1.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DC15L_FullAuto: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC15L_FullAuto"};
     };
 };

@@ -95,15 +95,10 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] = {"begin1", 1};
-                soundBeginWater[] = {"begin1", 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15S"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15S"};
             };
         };
         class FullAuto: FullAuto
@@ -111,15 +106,10 @@ class CfgWeapons
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] = {"begin1", 1};
-                soundBeginWater[] = {"begin1", 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15S"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15S"};
             };
         };
     };

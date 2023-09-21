@@ -41,18 +41,9 @@ class CfgWeapons
 
         displayName = "[KC] DC-15A (Base)";
 
-        modes[] =
-        {
-            "Single",
-            "FullAuto"
-        };
-        muzzles[] =
-        {
-            "this",
-            "Stun",
-            "EGLM"
-        };
-        magazines[] = { "12thFleet_Mag_DC15A" };
+        modes[] = {"Single", "FullAuto"};
+        muzzles[] = {"this",  "Stun", "EGLM"};
+        magazines[] = {"12thFleet_Mag_DC15A"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -92,37 +83,27 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC15A\Data\Audio\DC15A_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15A_Single"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15A_Single"};
             };
         };
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC15A\Data\Audio\DC15A_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15A_FullAuto"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15A_FullAuto"};
             };
         };
         class Stun: Stun
         {
             displayName = "Stun";
             magazines[] = {};
-            magazineWell[] = { "BNA_KC_Stuns" };
+            magazineWell[] = {"BNA_KC_Stuns"};
         };
 
         class EGLM: UGL_F
@@ -131,8 +112,8 @@ class CfgWeapons
             descriptionShort = "UGL";
 
             cameraDir = "OP_look";
-            discreteDistance[] = { 100, 200, 300, 400 };
-            discreteDistanceCameraPoint[] = { "OP_eye", "OP_eye2", "OP_eye3", "OP_eye4" };
+            discreteDistance[] = {100, 200, 300, 400};
+            discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"};
             discreteDistanceInitIndex = 0;
 
             useExternalOptic = 0;
@@ -140,7 +121,7 @@ class CfgWeapons
 
             canShootInWater = 0;
             magazines[] = {};
-            magazineWell[] = { "BNA_KC_UGL_Common" };
+            magazineWell[] = {"BNA_KC_UGL_Common"};
         };
     };
 
@@ -151,7 +132,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15A";
-        muzzles[] = { "this", "Stun" };
+        muzzles[] = {"this", "Stun"};
 
         JLTS_friedItem = "BNA_KC_DC15A_Fried";
     };
@@ -181,12 +162,12 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15A UGL";
-        muzzles[] = { "this", "EGLM" };
+        muzzles[] = {"this", "EGLM"};
 
         // Model & Textures
         model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl.p3d";
-        hiddenSelections[] = { "camo1", "camo2", "illum" };
-        hiddenSelectionsMaterials[] = { "", "", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat" };
+        hiddenSelections[] = {"camo1", "camo2", "illum"};
+        hiddenSelectionsMaterials[] = {"", "", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
         hiddenSelectionsTextures[] =
         {
             "\MRC\JLTS\weapons\DC15A\data\DC15A_plastic_co.paa",
@@ -235,5 +216,40 @@ class CfgMagazines
         ammo = "Aux_12thFleet_Ammo_Rifle_Blue";
 
         JLTS_hasEMPProtection = 1;
+    };
+};
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DC15A_Single: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"BNA_KC_Weapons\DC15A\Data\Audio\DC15A_Fire1.wss", 1, 1},
+            {"BNA_KC_Weapons\DC15A\Data\Audio\DC15A_Fire2.wss", 1, 1},
+            {"BNA_KC_Weapons\DC15A\Data\Audio\DC15A_Fire3.wss", 1, 1},
+            {"BNA_KC_Weapons\DC15A\Data\Audio\DC15A_Fire4.wss", 1, 1}
+        };
+    };
+    class BNA_KC_SoundShader_DC15A_FullAuto: BNA_KC_SoundShader_DC15A_Single
+    {
+        samples[] =
+        {
+            {"BNA_KC_Weapons\DC15A\Data\Audio\DC15A_Fire1.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DC15A_Single: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC15A_Single"};
+    };
+    class BNA_KC_SoundSet_DC15A_FullAuto: BNA_KC_SoundSet_DC15A_Single
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC15A_FullAuto"};
     };
 };

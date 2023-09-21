@@ -21,7 +21,7 @@ class CfgVehicles
     };
 
     class BNA_KC_Gonk_Uniforms: BNA_KC_Utility_Base
-	{
+    {
         // Scope
         scope = 2;
         scopeCurator = 2;
@@ -29,43 +29,117 @@ class CfgVehicles
         displayName = "Uniform Dispenser";
 
         class UserActions
-		{
-			class BNA_KC_CRUniform
-			{
-				displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CR Uniform</t>";		// Structured text, displayed in the scroll menu
-				radius = 3;
-				priority = 100;
-				onlyForPlayer = 1;
-				hideOnUse = 0;
-				condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
-				statement = "[""CR""] call BNAKC_fnc_GrabUniform;";				// Calls the loadout script and tells it to look for the Basic hashmap key, change this to relevant hashmap key
-			};
-			class BNA_KC_CTUniform: BNA_KC_CRUniform
-			{
-				displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CT Uniform</t>";
-				statement = "[""CT""] call BNAKC_fnc_GrabUniform;";
-			};
-			class BNA_KC_ChangeMenu: BNA_KC_CRUniform
-			{
-				priority = 99;
-				displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>View Detachment Helmets</t>";
-				condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
-				statement = "player setVariable ['BNAKC_Uniform_Menu', 1];";
-			};
-			class BNA_KC_CrewHelmet: BNA_KC_CRUniform
-			{
-				displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab Crew Helmet</t>";
-				condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 1)";
-				statement = "removeHeadgear player; player addHeadgear 'BNA_KC_Helmet_Phase1_Tanker_v2';";
-			};
-			class BNA_KC_ChangeMenu2: BNA_KC_ChangeMenu
-			{
-				displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>View Rank Uniforms</t>";
-				condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 1)";
-				statement = "player setVariable ['BNAKC_Uniform_Menu', 0];";
-			};
-		};
-	};
+        {
+            class BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CR Uniform</t>";      // Structured text, displayed in the scroll menu
+
+                position = "camera";
+                radius = 3;
+                onlyForPlayer = 1;
+
+                hideOnUse = 0;
+                priority = 5;
+
+                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
+                statement = "[""CR""] call BNAKC_fnc_GrabUniform;";                // Calls the loadout script and tells it to look for the Basic hashmap key, change this to relevant hashmap key
+            };
+            class BNA_KC_CTUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CT Uniform</t>";
+                statement = "[""CT""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_SCTUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab SCT Uniform</t>";
+                statement = "[""SCT""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_VCTUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab VCT Uniform</t>";
+                statement = "[""VCT""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_LCPLUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab LCPL Uniform</t>";
+                statement = "[""LCPL""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CPLUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CPL Uniform</t>";
+                statement = "[""CPL""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CSUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CS Uniform</t>";
+                statement = "[""CS""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CSSUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CSS Uniform</t>";
+                statement = "[""CSS""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CSFCUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CSFC Uniform</t>";
+                statement = "[""CSFC""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CMSUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CMS Uniform</t>";
+                statement = "[""CMS""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_CSMUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CSM Uniform</t>";
+                statement = "[""CSM""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_WOUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab WO Uniform</t>";
+                statement = "[""WO""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_WO2Uniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab WO2 Uniform</t>";
+                statement = "[""WO2""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_WO3Uniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab WO3 Uniform</t>";
+                statement = "[""WO3""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_LTUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab LT Uniform</t>";
+                statement = "[""LT""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_1LTUniform: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab 1LT Uniform</t>";
+                statement = "[""1LT""] call BNAKC_fnc_GrabUniform;";
+            };
+            class BNA_KC_ChangeMenu: BNA_KC_CRUniform
+            {
+                priority = 4;
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>View Detachment Helmets</t>";
+                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
+                statement = "player setVariable ['BNAKC_Uniform_Menu', 1];";
+            };
+            class BNA_KC_CrewHelmet: BNA_KC_CRUniform
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab Crew Helmet</t>";
+                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 1)";
+                statement = "removeHeadgear player; player addHeadgear 'BNA_KC_Helmet_Phase1_Tanker_v2';";
+            };
+            class BNA_KC_ChangeMenu2: BNA_KC_ChangeMenu
+            {
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>View Rank Uniforms</t>";
+                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 1)";
+                statement = "player setVariable ['BNAKC_Uniform_Menu', 0];";
+            };
+        };
+    };
 
     class BNA_KC_Gonk_Permissions: BNA_KC_Utility_Base
     {
@@ -79,10 +153,10 @@ class CfgVehicles
         {
             class AssignMedic
             {
-                displayName = "Assign Medic Permissions";
+                displayName = "<t color='#c40000'><img image='\BNA_KC_Gear\Insignias\Data\Textures\Medic.paa'/> Assign Medic Permissions</t>";
 
                 position = "camera";
-                radius = 5;
+                radius = 3;
                 onlyForPlayer = 0;
 
                 hideOnUse = 1;
@@ -93,19 +167,19 @@ class CfgVehicles
             };
             class UnassignMedic: AssignMedic
             {
-                displayName = "Unassign Medic Permissions";
+                displayName = "<t color='#c40000'><img image='\BNA_KC_Gear\Insignias\Data\Textures\Medic.paa'/> Unassign Medic Permissions</t>";
                 condition = "player getUnitTrait 'Medic'";
                 statement = "player setUnitTrait ['Medic', false]";
             };
             class AssignEngineer: AssignMedic
             {
-                displayName = "Assign Engineer Permissions";
+                displayName = "<t color='#f0be00'><img image='\BNA_KC_Gear\Insignias\Data\Textures\Engineer.paa'/> Assign Engineer Permissions</t>";
                 condition = "!(player getUnitTrait 'Engineer')";
                 statement = "player setUnitTrait ['Engineer', true]";
             };
             class UnassignEngineer: AssignEngineer
             {
-                displayName = "Unassign Engineer Permissions";
+                displayName = "<t color='#f0be00'><img image='\BNA_KC_Gear\Insignias\Data\Textures\Engineer.paa'/> Unassign Engineer Permissions</t>";
                 condition = "player getUnitTrait 'Engineer'";
                 statement = "player setUnitTrait ['Engineer', false]";
             };
@@ -125,10 +199,10 @@ class CfgVehicles
         {
             class ArsenalACE
             {
-                displayName = "Open ACE Arsenal";
+                displayName = "<t color='#3996e7'><img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\rearm_ca.paa'/> Open ACE Arsenal</t>";
 
                 position = "camera";
-                radius = 5;
+                radius = 3;
                 onlyForPlayer = 1;
 
                 hideOnUse = 1;
@@ -139,7 +213,7 @@ class CfgVehicles
             };
             class ArsenalBIS: ArsenalACE
             {
-                displayName = "Open BIS Arsenal";
+                displayName = "<t color='#E6E6E6'><img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\rearm_ca.paa'/> Open BIS Arsenal</t>";
                 statement = "['Open', [true]] call BIS_fnc_arsenal;";
             };
         };
@@ -158,17 +232,17 @@ class CfgVehicles
         {
             class FullHeal
             {
-                displayName = "Recieve Treatment";
+                displayName = "<t color='#c40000'><img image='z\ace\addons\zeus\ui\icon_module_zeus_heal_ca.paa'/> Recieve Treatment</t>";
 
                 position = "camera";
-                radius = 5;
+                radius = 3;
                 onlyForPlayer = 1;
 
                 hideOnUse = 1;
                 priority = 5;
 
                 condition = "true";
-                statement = "[player, player] call ace_medical_treatment_fnc_fullHeal; playSound3D ['BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss', objNull, false, getPosASL this, 1, 1, 10, 0, true];";
+                statement = "[player, player] call ace_medical_treatment_fnc_fullHeal; playSound3D ['BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss', objNull, false, getPosASL this, 3, 1, 10, 0, true];";
             };
         };
     };
@@ -178,15 +252,15 @@ class CfgVehicles
 class CfgEditorSubcategories
 {
     class BNA_KC_SubCat_Utility
-	{
-		// Mod Info
-		dlc = "BNA_KC";
-		author = "SweMonkey and DartRuffian";
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
 
-		// Scope
-		scope = 2;
-		scopeCurator = 2;
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
 
-		displayName = "Utility";
-	};
+        displayName = "Utility";
+    };
 };

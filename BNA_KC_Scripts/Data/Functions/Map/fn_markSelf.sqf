@@ -10,7 +10,7 @@
  * String - The marker's name or empty string if the marker name is not unique.
  *
  * Example:
- * call BNAKC_fnc_CreateMarkOnSelf;
+ * call BNAKC_fnc_markSelf;
  */
 
 
