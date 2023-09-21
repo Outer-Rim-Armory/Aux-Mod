@@ -118,7 +118,6 @@ class CfgAmmo
         simulation = "shotSpread";
         fireSpreadAngle = 3;
     };
-
     class Aux_12thFleet_Ammo_Scatter_HP_Blue: Aux_12thFleet_Ammo_Scatter_Blue
     {
         hit = 10;
