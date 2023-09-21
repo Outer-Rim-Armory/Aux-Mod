@@ -50,17 +50,9 @@ class CfgWeapons
         picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
         baseWeapon = "BNA_KC_WestarM5_Base";
 
-        modes[] =
-        {
-            "Single",
-            "Burst",
-            "FullAuto"
-        };
-        muzzles[] =
-        {
-            "this"
-        };
-        magazines[] = { "12thFleet_Mag_WestarM5" };
+        modes[] = {"Single", "Burst", "FullAuto"};
+        muzzles[] = {"this"};
+        magazines[] = {"12thFleet_Mag_WestarM5"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -157,11 +149,7 @@ class CfgWeapons
         displayName = "[KC] Westar-M5 UGL";
         baseWeapon = "BNA_KC_WestarM5_UGL";
 
-        muzzles[] =
-        {
-            "this",
-            "EGLM"
-        };
+        muzzles[] = {"this", "EGLM"};
 
         model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";
 
@@ -171,7 +159,7 @@ class CfgWeapons
             descriptionShort = "UGL";
 
             cameraDir = "OP_look";
-            discreteDistance[] = { 50, 75, 100, 150, 200, 250, 300, 350, 400 };
+            discreteDistance[] = {50, 75, 100, 150, 200, 250, 300, 350, 400};
             discreteDistanceCameraPoint[] =
             {
                 "OP_eye_50",
@@ -191,10 +179,10 @@ class CfgWeapons
 
             canShootInWater = 0;
             magazines[] = {};
-            magazineWell[] = { "BNA_KC_UGL_Common" };
+            magazineWell[] = {"BNA_KC_UGL_Common"};
 
             reloadAction = "GestureReloadMXUGL";
-            reloadMagazineSound[] = { "A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10 };
+            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
         };
     };
 
