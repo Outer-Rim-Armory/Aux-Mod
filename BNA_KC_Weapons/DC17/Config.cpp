@@ -141,15 +141,10 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC17\Data\Audio\DC17_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC17_Single"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC17_Single"};
             };
         };
         class Stun: Stun
@@ -332,5 +327,26 @@ class CfgMagazines
         BNA_KC_GrenadeBacta_Duration = 15;
 
         JLTS_hasEMPProtection = 1;
+    };
+};
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DC17_Single: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"BNA_KC_Weapons\DC17\Data\Audio\DC17_Fire1.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DC17_Single: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC17_Single"};
     };
 };
