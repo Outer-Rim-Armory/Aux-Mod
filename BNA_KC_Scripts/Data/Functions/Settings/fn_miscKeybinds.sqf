@@ -8,7 +8,7 @@
     "BNA_KC_Map_CreateMarkBind",
     ["Create Map Marker", "Creates a map marker on the player. Check Addon Settings for customization."],
     {
-        [] call BNAKC_fnc_CreateMarkOnSelf;
+        [] call BNAKC_fnc_markSelf;
     },     // KeyDown
     {},    // KeyUp
     [],    // Default Key

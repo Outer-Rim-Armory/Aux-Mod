@@ -20,7 +20,7 @@ private _colorNames = parseSimpleArray BNA_KC_Map_QuickMarkColors;
 private _actions = [];
 
 {
-    private _childStatement = { [BNA_KC_Map_MarkChannel, _this#2#0] call BNAKC_fnc_CreateMarkOnSelf; };
+    private _childStatement = { [BNA_KC_Map_MarkChannel, _this#2#0] call BNAKC_fnc_markSelf; };
     private _action =
     [
         format ["mark%1", _x], "", ["", "#FFFFFF"], _childStatement, {true}, {}, [_x], [0,0,0], 0, [0,1,1,0,1],

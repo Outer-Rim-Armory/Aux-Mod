@@ -56,7 +56,7 @@ class CfgFunctions
         class Map
         {
             file = "BNA_KC_Scripts\Data\Functions\Map";
-			class CreateMarkOnSelf{};
+			class markSelf{};
             class markSelfChildren{};
             class markSelfModifier{};
             class rgbToHex{};
