@@ -85,7 +85,7 @@ class CfgVehicles
         sound = "BNA_KC_Ambient_ATTE_Alarm_SFX";
         displayName = "[KC] ATTE Alarm";
     };
-	class BNA_KC_Ambient_Radio_DK: Sound
+	class BNA_KC_Ambient_DK_Radio: Sound
 	{
         author = "Keeli";
         scope = 2;
@@ -167,18 +167,18 @@ class CfgSFX
         BNA_KC_Ambient_ATTE_Alarm[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\ATTE_Alarm.ogg",db+50,1,500,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
-	class BNA_KC_Ambient_Radio_DK_SFX
+	class BNA_KC_Ambient_DK_Radio_SFX
 	{
         name = "[KC] DK Radio Chatter";
         sounds[] = {BNA_KC_Ambient_DK_Radio};
-        BNA_KC_Ambient_Radio_DK_SFX[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\DK_Radio_Radio_SFX.ogg",db+50,1,100,1,2,3,4};
+        BNA_KC_Ambient_DK_Radio[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\DK_Radio_Chatter.ogg",db+50,1,100,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
 	class BNA_KC_Ambient_Carnage_Roar_SFX
 	{
         name = "[KC] Carnage Roar";
         sounds[] = {BNA_KC_Ambient_Carnage_Roar};
-        BNA_KC_Ambient_Carnage_Roar_SFX[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Carnage_Roar.ogg",db+50,1,500,1,2,3,4};
+        BNA_KC_Ambient_Carnage_Roar[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Carnage_Roar.ogg",db+50,1,500,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
 	class BNA_KC_Ambient_Carnage_Roar_2_SFX
