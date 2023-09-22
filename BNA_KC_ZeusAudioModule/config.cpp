@@ -4,7 +4,7 @@ class CfgEditorSubcategories
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
-        
+
         scope = 2;
         scopeCurator = 2;
 
@@ -20,7 +20,7 @@ class CfgPatches
         author = "Monkey";
         requiredAddons[] = {"A3_Sounds_F","BNA_KC_Gear"};
         requiredVersion = 0.1;
-        units[] = 
+        units[] =
 		{
 			"BNA_KC_Ambient_Restaurant",
 			"BNA_KC_Ambient_Incoming",
@@ -246,7 +246,7 @@ class CfgSounds
 	class BNA_KC_Ambient_Radio_DK
 	{
         name = "DK Radio Chatter";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\DK_Radio_Radio_SFX", db+10, 1};
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\DK_Radio_Radio_SFX.ogg", db+10, 1};
         titles[] = {2, "DK Radio Chatter"};
     };
 };
