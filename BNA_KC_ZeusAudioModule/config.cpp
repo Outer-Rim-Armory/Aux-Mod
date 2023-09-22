@@ -92,6 +92,43 @@ class CfgVehicles
         sound = "BNA_KC_Ambient_DK_Radio_SFX";
         displayName = "[KC] DK Radio Chatter";
     };
+	class BNA_KC_Ambient_Carnage_Roar: Sound
+	{
+        author = "Keeli";
+        scope = 2;
+        sound = "BNA_KC_Ambient_Carnage_Roar_SFX";
+        displayName = "[KC] Carnage Roar";
+    };
+	class BNA_KC_Ambient_Carnage_Roar_2: Sound
+	{
+        author = "Keeli";
+        scope = 2;
+        sound = "BNA_KC_Ambient_Carnage_Roar_2_SFX";
+        displayName = "[KC] Carnage Roar 2";
+    };
+	class BNA_KC_Ambient_Carnage_Roar_3: Sound
+	{
+        author = "Keeli";
+        scope = 2;
+        sound = "BNA_KC_Ambient_Carnage_Roar_3_SFX";
+        displayName = "[KC] Carnage Roar 3";
+    };
+	class BNA_KC_Ambient_Carnage_Roar_4: Sound
+	{
+        author = "Keeli";
+        scope = 2;
+        sound = "BNA_KC_Ambient_Carnage_Roar_4_SFX";
+        displayName = "[KC] Carnage Roar 4";
+    };
+	class BNA_KC_Ambient_Let_There_Be_Carnage: Sound
+	{
+        author = "Keeli";
+        scope = 2;
+        sound = "BNA_KC_Ambient_Let_There_Be_Carnage_SFX";
+        displayName = "[KC] Let There Be CARNAGE!!!";
+    };
+
+
 };
 class CfgSFX
 {
