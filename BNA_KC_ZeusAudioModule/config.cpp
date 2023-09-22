@@ -249,6 +249,33 @@ class CfgSounds
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\DK_Radio_Radio_SFX.ogg", db+10, 1};
         titles[] = {2, "DK Radio Chatter"};
     };
+    class BNA_KC_Ambient_Carnage_Roar
+    {
+        name = "Carnage Roar";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Carnage_Roar.ogg", db+50, 1, 500, 1, 2, 3, 4};
+        titles[] = {2, "Roaring"};
+    };
+    class BNA_KC_Ambient_Carnage_Roar_2: BNA_KC_Ambient_Carnage_Roar
+    {
+        name = "Carnage Roar 2";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Carnage_Roar_2.ogg", db+50, 1, 500, 1, 2, 3, 4};
+    };
+    class BNA_KC_Ambient_Carnage_Roar_3: BNA_KC_Ambient_Carnage_Roar
+    {
+        name = "Carnage Roar 3";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Carnage_Roar_3.ogg", db+50, 1, 500, 1, 2, 3, 4};
+    };
+    class BNA_KC_Ambient_Carnage_Roar_4: BNA_KC_Ambient_Carnage_Roar
+    {
+        name = "Carnage Roar 4";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Carnage_Roar_4.ogg", db+50, 1, 500, 1, 2, 3, 4};
+    };
+    class BNA_KC_Ambient_Let_There_Be_Carnage
+    {
+        name = "Let There Be Carnage";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Let_There_Be_Carnage.ogg", db+50, 1, 500, 1, 2, 3, 4};
+        titles[] = {2, "'Let there be carnage!'"};
+    };
 };
 
 
