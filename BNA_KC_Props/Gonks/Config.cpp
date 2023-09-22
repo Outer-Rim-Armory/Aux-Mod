@@ -39,7 +39,7 @@ class CfgVehicles
                 onlyForPlayer = 1;
 
                 hideOnUse = 0;
-                priority = 5;
+                priority = 100;
 
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
                 statement = "[""CR""] call BNAKC_fnc_GrabUniform;";                // Calls the loadout script and tells it to look for the Basic hashmap key, change this to relevant hashmap key
@@ -121,7 +121,7 @@ class CfgVehicles
             };
             class BNA_KC_ChangeMenu: BNA_KC_CRUniform
             {
-                priority = 4;
+                priority = 99;
                 displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>View Detachment Helmets</t>";
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
                 statement = "player setVariable ['BNAKC_Uniform_Menu', 1];";
@@ -160,7 +160,7 @@ class CfgVehicles
                 onlyForPlayer = 0;
 
                 hideOnUse = 1;
-                priority = 5;
+                priority = 100;
 
                 condition = "!(player getUnitTrait 'Medic')";
                 statement = "player setUnitTrait ['Medic', true]";
@@ -206,7 +206,7 @@ class CfgVehicles
                 onlyForPlayer = 1;
 
                 hideOnUse = 1;
-                priority = 5;
+                priority = 100;
 
                 condition = "true";
                 statement = "[player, player, true] call ace_arsenal_fnc_openBox;";
@@ -239,7 +239,7 @@ class CfgVehicles
                 onlyForPlayer = 1;
 
                 hideOnUse = 1;
-                priority = 5;
+                priority = 100;
 
                 condition = "true";
                 statement = "[player, player] call ace_medical_treatment_fnc_fullHeal; playSound3D ['BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss', objNull, false, getPosASL this, 3, 1, 10, 0, true];";

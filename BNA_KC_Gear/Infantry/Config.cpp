@@ -7,12 +7,7 @@ class CfgWeapons
     // ┌───────────────────┐
     // │      Helmets      │
     // └───────────────────┘
-    class ItemInfo;
-    class ls_blueforHelmet_base;
-    class ls_gar_phase2_helmet: ls_blueforHelmet_base
-    {
-        class ItemInfo;
-    };
+    class ls_gar_phase2_helmet;
     class BNA_KC_Helmet_Base: ls_gar_phase2_helmet
     {
         // Mod Info
@@ -23,7 +18,7 @@ class CfgWeapons
         scope = 0;
         scopeArsenal = 0;
 
-        class ItemInfo: ItemInfo {};
+        class ItemInfo;
     };
 
     class BNA_KC_Helmet_Phase1_Base: BNA_KC_Helmet_Base
