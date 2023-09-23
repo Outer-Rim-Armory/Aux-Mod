@@ -39,7 +39,6 @@ class CfgVehicles
         faction = "BNA_KC_OPFOR_TU";
         editorSubcategory = "BNA_KC_SubCat_TU_Infantry";
         identityTypes[] = {"LanguageENG_F", "Head_NATO", "Head_Euro"};
-        // TODO: Give Shadow_Mask to units
 
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         uniformClass = "BNA_KC_OPFOR_Uniform_TU";
@@ -258,6 +257,13 @@ class CfgEditorSubcategories
 
 class Extended_Init_EventHandlers
 {
+    class BNA_KC_OPFOR_Unit_TU_Base
+    {
+        class Add_Goggles
+        {
+            init = "_unit = _this select 0; if (local _unit) then {_unit addGoggles 'Shadow_mask'}";
+        };
+    };
     class BNA_KC_OPFOR_Unit_TU_Melee
     {
         class Melee_Init
