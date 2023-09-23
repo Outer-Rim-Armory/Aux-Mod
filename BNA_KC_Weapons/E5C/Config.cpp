@@ -12,6 +12,14 @@ class CfgWeapons
     class JLTS_E5C;
     class BNA_KC_E5C_Base: JLTS_E5C
     {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
         displayName = "[KC] E-5C (Base)";
         baseWeapon = "BNA_KC_E5C_Base";
         descriptionShort = "Repeating Blaster";
@@ -30,6 +38,7 @@ class CfgWeapons
 
         class Manual: Mode_FullAuto
         {
+            sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
                 soundBegin[] = {};
