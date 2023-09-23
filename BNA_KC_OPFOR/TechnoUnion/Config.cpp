@@ -140,9 +140,9 @@ class CfgVehicles
             ITEM_2("SmokeShell")
         };
 
-        linkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
-        backpack = "SC_Backpack_WD_Desert_SL";
+        linkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Heavy_Desert", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Heavy_Desert", BASE_LINKED_ITEMS};
+        backpack = "SC_Backpack_WP_Desert_SL";
     };
 };
 
