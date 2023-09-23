@@ -22,6 +22,10 @@ class CfgWeapons
 
         canShootInWater = 1;
 
+        // JLTS emp system
+        JLTS_hasElectronics = 1;
+        JLTS_hasEMPProtection = 0;
+
         fireLightDiffuse[] = {1, 0, 0};
 
         class Manual: Mode_FullAuto
