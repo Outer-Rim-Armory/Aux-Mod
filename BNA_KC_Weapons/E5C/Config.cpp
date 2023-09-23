@@ -12,6 +12,8 @@ class CfgWeapons
         muzzles[] = {"this"};
         magazines[] = {"Aux_12thFleet_Mag_E5C"};
         magazineWell[] = {};
+
+        fireLightDiffuse[] = {1, 0, 0};
     };
 
     class BNA_KC_E5C: BNA_KC_E5C_Base
