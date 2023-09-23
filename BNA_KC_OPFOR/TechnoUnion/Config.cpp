@@ -74,7 +74,7 @@ class CfgVehicles
             ITEM_11("Aux_12thFleet_Mag_E5"),
             // Grenades
             ITEM_2("SC_IG3"),
-            ITEM_5("JMSLLTE_thermalimploder_HandGrenade"),
+            // ITEM_5("JMSLLTE_thermalimploder_HandGrenade"),
             ITEM_3("ShieldGrenade_Mag"),
             // Smokes
             ITEM_2("SmokeShell")
