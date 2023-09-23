@@ -99,16 +99,6 @@ class CfgVehicles
         backpack = "SC_Backpack_SMR_Desert";
     };
 
-    class BNA_KC_OPFOR_Unit_TU_SL: BNA_KC_OPFOR_Unit_TU_Rifleman
-    {
-        displayName = "Squad Leader";
-        icon = "iconManLeader";
-
-        linkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
-        backpack = "SC_Backpack_WD_Desert_SL";
-    };
-
     class BNA_KC_OPFOR_Unit_TU_AssaultHeavy: BNA_KC_OPFOR_Unit_TU_Rifleman
     {
         displayName = "Heavy Assault";
@@ -151,6 +141,16 @@ class CfgVehicles
         linkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
         backpack = "SC_Backpack_WP_Desert_SL";
+    };
+
+    class BNA_KC_OPFOR_Unit_TU_SL: BNA_KC_OPFOR_Unit_TU_Rifleman
+    {
+        displayName = "Squad Leader";
+        icon = "iconManLeader";
+
+        linkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
+        backpack = "SC_Backpack_WD_Desert_SL";
     };
 };
 
