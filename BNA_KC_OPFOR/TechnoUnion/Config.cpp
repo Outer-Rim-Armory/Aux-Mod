@@ -205,6 +205,24 @@ class CfgVehicles
         respawnLinkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
         backpack = "SC_Backpack_WD_Desert_SL";
     };
+
+    class BNA_KC_OPFOR_Unit_TU_Melee: BNA_KC_OPFOR_Unit_TU_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Swordsman (Rush)";
+
+        weapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
+        respawnWeapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
+        magazines[] = {"WBK_Cybercrystal"};
+        respawnMagazines[] = {"WBK_Cybercrystal"};
+
+        linkedItems[] = {"SC_Helmet_WP_Desert", "SC_Vest_WP_Light_Desert", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"SC_Helmet_WP_Desert", "SC_Vest_WP_Light_Desert", BASE_LINKED_ITEMS};
+        backpack = "SC_Backpack_WP_Desert";
+    };
 };
 
 
@@ -234,5 +252,17 @@ class CfgEditorSubcategories
         scopeCurator = 2;
 
         displayName = "Infantry";
+    };
+};
+
+
+class Extended_Init_EventHandlers
+{
+    class BNA_KC_OPFOR_Unit_TU_Melee
+    {
+        class Melee_Init
+        {
+            init = "_unit = _this select 0; if (local _unit) then {[_unit] execVM 'WebKnight_StarWars_Mechanic\AI_Ims_Rush.sqf';};";
+        };
     };
 };
