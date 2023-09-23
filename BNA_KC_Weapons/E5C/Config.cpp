@@ -9,7 +9,11 @@ class Mode_FullAuto: Mode_SemiAuto
 
 class CfgWeapons
 {
-    class JLTS_E5C;
+    class LMG_Mk200_F;
+    class JLTS_E5C: LMG_Mk200_F
+    {
+        class WeaponSlotsInfo;
+    };
     class BNA_KC_E5C_Base: JLTS_E5C
     {
         // Mod Info
@@ -88,6 +92,11 @@ class CfgWeapons
         model = "\MRC\JLTS\weapons\e5c\e5c_stock.p3d";
         handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\e5c\anims\e5c_stock_handanim.rtm"};
         picture = "\MRC\JLTS\weapons\e5c\data\ui\e5c_stock_ui_ca.paa";
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            mass = 132;
+        };
     };
     class BNA_KC_E5C_Stock_Fried: BNA_KC_E5C_Stock
     {
