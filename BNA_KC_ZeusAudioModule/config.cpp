@@ -127,9 +127,9 @@ class CfgVehicles
         sound = "BNA_KC_Ambient_Let_There_Be_Carnage_SFX";
         displayName = "[KC] Let There Be CARNAGE!!!";
     };
-
-
 };
+
+
 class CfgSFX
 {
     class BNA_KC_Ambient_Restaurant_SFX
@@ -210,6 +210,7 @@ class CfgSFX
         empty[] = {"",0,0,0,0,0,0,0};
     };
 };
+
 
 class CfgSounds
 {
