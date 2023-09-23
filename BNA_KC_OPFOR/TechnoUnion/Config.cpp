@@ -94,14 +94,8 @@ class CfgVehicles
             "FirstAidKit"
         };
 
-        linkedItems[] =
-        {
-            "SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"
-        };
-        respawnLinkedItems[] =
-        {
-            "SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"
-        };
+        linkedItems[] = {"SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"};
+        respawnLinkedItems[] = {"SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"};
         backpack = "SC_Backpack_SMR_Desert";
     };
 
