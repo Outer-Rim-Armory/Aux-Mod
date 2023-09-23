@@ -22,8 +22,10 @@ class CfgPatches
                 // IG-3 Grenade
             "3AS_Equipment",
                 // Squad shield
-            "A3_Weapons_F"
+            "A3_Weapons_F",
                 // Smoke grenade
+            "LFPModels"
+                // Shadow Mask
         };
         units[] =
         {
