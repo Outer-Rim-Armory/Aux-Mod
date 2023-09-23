@@ -9,6 +9,8 @@ class CfgPatches
         {
             "BNA_KC_Weapons_Core",
                 // Ammo
+            "BNA_KC_Weapons_E5",
+                // Sound effects
             "JLTS_weapons_E5C"
                 // E-5C
         };

@@ -1,6 +1,12 @@
 #include "CfgPatches.hpp"
 
 
+class Mode_SemiAuto;
+class Mode_FullAuto: Mode_SemiAuto
+{
+    class StandardSound;
+};
+
 class CfgWeapons
 {
     class JLTS_E5C;
@@ -15,6 +21,17 @@ class CfgWeapons
         magazineWell[] = {};
 
         fireLightDiffuse[] = {1, 0, 0};
+
+        class Manual: Mode_FullAuto
+        {
+            class StandardSound: StandardSound
+            {
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_E5"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_E5"};
+            };
+        };
     };
 
     class BNA_KC_E5C: BNA_KC_E5C_Base
