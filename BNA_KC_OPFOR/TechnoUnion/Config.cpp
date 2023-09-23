@@ -99,6 +99,59 @@ class CfgVehicles
         backpack = "SC_Backpack_SMR_Desert";
     };
 
+    class BNA_KC_OPFOR_Unit_TU_AT: BNA_KC_OPFOR_Unit_TU_Rifleman
+    {
+        displayName = "Anti-Tank Trooper";
+        icon = "iconManAT";
+
+        weapons[] = {"BNA_KC_E5", "", "Aux501_Weaps_e60r_at", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_E5", "", "Aux501_Weaps_e60r_at", "Throw", "Put"};
+        magazines[] =
+        {
+            // Ammo
+            ITEM_11("Aux_12thFleet_Mag_E5"),
+            ITEM_4("Aux501_Weapons_Mags_e60r_he"),
+            ITEM_4("Aux501_Weapons_Mags_e60r_at"),
+            // Grenades
+            ITEM_2("SC_IG3"),
+            // ITEM_5("JMSLLTE_thermalimploder_HandGrenade"),
+            ITEM_3("ShieldGrenade_Mag"),
+            // Smokes
+            ITEM_2("SmokeShell")
+        };
+        respawnMagazines[] =
+        {
+            // Ammo
+            ITEM_11("Aux_12thFleet_Mag_E5"),
+            ITEM_4("Aux501_Weapons_Mags_e60r_he"),
+            ITEM_4("Aux501_Weapons_Mags_e60r_at"),
+            // Grenades
+            ITEM_2("SC_IG3"),
+            // ITEM_5("JMSLLTE_thermalimploder_HandGrenade"),
+            ITEM_3("ShieldGrenade_Mag"),
+            // Smokes
+            ITEM_2("SmokeShell")
+        };
+        items[] =
+        {
+            // Other
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+            "FirstAidKit"
+        };
+        respawnItems[] =
+        {
+            // Other
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+            "FirstAidKit"
+        };
+
+        linkedItems[] = {"SC_Helmet_WP_EUD_Desert_V", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"SC_Helmet_WP_EUD_Desert_V", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
+        backpack = "SC_Backpack_WP_Desert";
+    };
+
     class BNA_KC_OPFOR_Unit_TU_AssaultHeavy: BNA_KC_OPFOR_Unit_TU_Rifleman
     {
         displayName = "Heavy Assault";
