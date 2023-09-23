@@ -8,6 +8,7 @@ class CfgWeapons
     {
         displayName = "[KC] E-5C (Base)";
         baseWeapon = "BNA_KC_E5C_Base";
+        descriptionShort = "Repeating Blaster";
 
         muzzles[] = {"this"};
         magazines[] = {"Aux_12thFleet_Mag_E5C"};
