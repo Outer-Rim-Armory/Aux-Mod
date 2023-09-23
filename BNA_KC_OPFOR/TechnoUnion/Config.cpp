@@ -47,6 +47,64 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"sc_equipment\data\combat_uniform\cu_tan_co.paa"};
     };
 
+    class BNA_KC_OPFOR_Unit_TU_Rifleman: BNA_KC_OPFOR_Unit_TU_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Rifleman";
+
+        weapons[] = {"BNA_KC_E5", "", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_E5", "", "Throw", "Put"};
+        magazines[] =
+        {
+            // Ammo
+            ITEM_11("Aux_12thFleet_Mag_E5"),
+            // Grenades
+            ITEM_2("SC_IG3"),
+            ITEM_5("JMSLLTE_thermalimploder_HandGrenade"),
+            ITEM_3("ShieldGrenade_Mag"),
+            // Smokes
+            ITEM_2("SmokeShell")
+        };
+        respawnMagazines[] =
+        {
+            // Ammo
+            ITEM_11("Aux_12thFleet_Mag_E5"),
+            // Grenades
+            ITEM_2("SC_IG3"),
+            ITEM_5("JMSLLTE_thermalimploder_HandGrenade"),
+            ITEM_3("ShieldGrenade_Mag"),
+            // Smokes
+            ITEM_2("SmokeShell")
+        };
+        items[] =
+        {
+            // Other
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+            "FirstAidKit"
+        };
+        respawnItems[] =
+        {
+            // Other
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+            "FirstAidKit"
+        };
+
+        linkedItems[] =
+        {
+            "SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"
+        };
+        respawnLinkedItems[] =
+        {
+            "SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"
+        };
+        backpack = "SC_Backpack_SMR_Desert";
+    };
+
     class BNA_KC_OPFOR_Unit_TU_SL: BNA_KC_OPFOR_Unit_TU_Base
     {
         // Scope
