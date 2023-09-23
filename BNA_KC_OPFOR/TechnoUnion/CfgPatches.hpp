@@ -16,6 +16,8 @@ class CfgPatches
                 // Vest
             "BNA_KC_Weapons_E5",
                 // E-5
+            "BNA_KC_Weapons_E5C",
+                // E-5C
             "sc_weapons",
                 // IG-3 Grenade
             "3AS_Equipment",
@@ -27,6 +29,7 @@ class CfgPatches
         {
             "BNA_KC_OPFOR_Unit_TU_Base",
             "BNA_KC_OPFOR_Unit_TU_Rifleman",
+            "BNA_KC_OPFOR_Unit_TU_AssaultHeavy",
             "BNA_KC_OPFOR_Unit_TU_SL"
         };
         weapons[] =
