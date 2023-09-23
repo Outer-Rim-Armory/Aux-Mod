@@ -114,8 +114,8 @@ class CfgVehicles
         displayName = "Heavy Assault";
         icon = "iconManMG";
 
-        weapons[] = {"BNA_KC_E5C", "", "Throw", "Put"};
-        respawnWeapons[] = {"BNA_KC_E5C", "", "Throw", "Put"};
+        weapons[] = {"BNA_KC_E5C_Stock", "", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_E5C_Stock", "", "Throw", "Put"};
 
         magazines[] =
         {
