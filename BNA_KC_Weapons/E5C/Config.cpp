@@ -20,6 +20,8 @@ class CfgWeapons
         magazines[] = {"Aux_12thFleet_Mag_E5C"};
         magazineWell[] = {};
 
+        canShootInWater = 1;
+
         fireLightDiffuse[] = {1, 0, 0};
 
         class Manual: Mode_FullAuto
