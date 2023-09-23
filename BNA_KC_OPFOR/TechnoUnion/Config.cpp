@@ -94,8 +94,8 @@ class CfgVehicles
             "FirstAidKit"
         };
 
-        linkedItems[] = {"SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"};
-        respawnLinkedItems[] = {"SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"};
+        linkedItems[] = {"SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", BASE_LINKED_ITEMS};
         backpack = "SC_Backpack_SMR_Desert";
     };
 
@@ -104,8 +104,8 @@ class CfgVehicles
         displayName = "Squad Leader";
         icon = "iconManLeader";
 
-        linkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"};
-        respawnLinkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"};
+        linkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
         backpack = "SC_Backpack_WD_Desert_SL";
     };
 };

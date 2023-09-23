@@ -12,5 +12,7 @@
 #define ITEM_11(a) a, a, a, a, a, a, a, a, a, a, a
 #define ITEM_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 
+#define BASE_LINKED_ITEMS "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"
+
 // Returns text (normally code) in quotes
 #define QUOTE(CODE) #CODE
