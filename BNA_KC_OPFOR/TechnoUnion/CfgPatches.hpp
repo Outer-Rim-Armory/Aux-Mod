@@ -30,6 +30,7 @@ class CfgPatches
             "BNA_KC_OPFOR_Unit_TU_Base",
             "BNA_KC_OPFOR_Unit_TU_Rifleman",
             "BNA_KC_OPFOR_Unit_TU_AssaultHeavy",
+            "BNA_KC_OPFOR_Unit_TU_AssaultMedium",
             "BNA_KC_OPFOR_Unit_TU_SL"
         };
         weapons[] =

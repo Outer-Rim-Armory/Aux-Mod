@@ -144,6 +144,14 @@ class CfgVehicles
         respawnLinkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Heavy_Desert", BASE_LINKED_ITEMS};
         backpack = "SC_Backpack_WP_Desert_SL";
     };
+
+    class BNA_KC_OPFOR_Unit_TU_AssaultMedium: BNA_KC_OPFOR_Unit_TU_AssaultHeavy
+    {
+        displayName = "Medium Assault";
+        linkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
+        backpack = "SC_Backpack_WP_Desert_SL";
+    };
 };
 
 
