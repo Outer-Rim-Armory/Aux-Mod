@@ -74,6 +74,36 @@ class CfgWeapons
         JLTS_isFried = 1;
         magazines[] = {};
     };
+
+    class BNA_KC_E5C_Stock: BNA_KC_E5C_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] E-5C (Stock)";
+        JLTS_friedItem = "BNA_KC_E5C_Stock_Fried";
+        baseWeapon = "BNA_KC_E5C_Stock";
+
+        model = "\MRC\JLTS\weapons\e5c\e5c_stock.p3d";
+        handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\e5c\anims\e5c_stock_handanim.rtm"};
+        picture = "\MRC\JLTS\weapons\e5c\data\ui\e5c_stock_ui_ca.paa";
+    };
+    class BNA_KC_E5C_Stock_Fried: BNA_KC_E5C_Stock
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
+        baseWeapon = "BNA_KC_E5C_Stock_Fried";
+
+        displayName = "[KC] E-5C (Stock, Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\e5c\data\ui\e5c_stock_fried_ui_ca.paa";
+
+        JLTS_isFried = 1;
+        magazines[] = {};
+    };
 };
 
 
