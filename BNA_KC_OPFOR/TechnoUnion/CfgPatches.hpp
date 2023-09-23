@@ -25,11 +25,13 @@ class CfgPatches
         };
         units[] =
         {
-
+            "BNA_KC_OPFOR_Unit_TU_Base",
+            "BNA_KC_OPFOR_Unit_TU_Rifleman",
+            "BNA_KC_OPFOR_Unit_TU_SL"
         };
         weapons[] =
         {
-
+            "BNA_KC_OPFOR_Uniform_TU"
         };
 
         skipWhenMissingDependencies = 1;
