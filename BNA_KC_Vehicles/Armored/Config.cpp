@@ -86,11 +86,12 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_Blitz.png";
 
         displayName = "[KC] Blitz Assault Tank";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
-		
-		hiddenSelectionsTextures[] = 
+
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Vehicles\Armored\Data\Textures\Blitz\BNA_KC_Blitz_Body.paa",
 			"BNA_KC_Vehicles\Armored\Data\Textures\Blitz\BNA_KC_Blitz_Tow.paa",
@@ -105,12 +106,12 @@ class CfgVehicles
 				{
 					class CommanderOptics: CommanderOptics
 					{
-						weapons[] = 
+						weapons[] =
 						{
 							"BNA_KC_CommanderGun",
 							"SmokeLauncher"
 						};
-						magazines[] = 
+						magazines[] =
 						{
 							"BNA_KC_100rnd_Coax_Mag",
 							"BNA_KC_100rnd_Coax_Mag",
@@ -120,16 +121,16 @@ class CfgVehicles
 						};
 					};
 				};
-				
+
 				// gunBeg = "Usti hlavne";
 				// gunEnd = "Konec hlavne";
 				// memoryPointGun[] = {"usti hlavne3"};
-				weapons[] = 
+				weapons[] =
 				{
 					"BNA_KC_120_Tankgun",
 					"BNA_KC_Coax"
 				};
-				magazines[] = 
+				magazines[] =
 				{
 					"BNA_KC_120_AT_Mag",
 					"BNA_KC_120_HEAT_Mag",
@@ -177,7 +178,7 @@ class CfgVehicles
 		soundEngineOnInt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineStartup",1,1};
 		class Sounds
 		{
-			soundSetsInt[] = 
+			soundSetsInt[] =
 			{
 				"BNA_KC_Engine_RPM0_INT_SoundSet",
 				"BNA_KC_Engine_RPM1_INT_SoundSet",
@@ -212,7 +213,7 @@ class CfgVehicles
 				"Tanks_Material_Strain_Int_SoundSet",
 				"Tank_General_Collision_Int_SoundSet"
 			};
-			soundSetsExt[] = 
+			soundSetsExt[] =
 			{
 				"BNA_KC_Engine_RPM0_EXT_SoundSet",
 				"BNA_KC_Engine_RPM1_EXT_SoundSet",
@@ -256,7 +257,7 @@ class CfgVehicles
 				weapon = "Aux501_Weaps_DC15S";
 			};
 		};
-			
+
 		class TransportMagazines
 		{
 			class _xx_Aux501_Weapons_Mags_10mw50
@@ -265,7 +266,7 @@ class CfgVehicles
 				magazine = "Aux501_Weapons_Mags_10mw50";
 			};
 		};
-			
+
 		class TransportItems
 		{
 			class _xx_ACE_elasticBandage
@@ -345,6 +346,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_APC_Badger.png";
 
         armor = 600;
 
@@ -354,12 +356,12 @@ class CfgVehicles
 		{
 			class MainTurret: MainTurret
 			{
-				weapons[] = 
+				weapons[] =
 				{
 					"BNA_KC40mm_CTWS",
 					"BNA_KC_Coax"
 				};
-				magazines[] = 
+				magazines[] =
 				{
 					"60Rnd_40mm_GPR_Tracer_Red_shells",
 					"60Rnd_40mm_GPR_Tracer_Red_shells",
@@ -377,7 +379,7 @@ class CfgVehicles
 				};
 			};
 		};
-		hiddenSelectionsTextures[] = 
+		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Body.paa",
 			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Addons.paa",
@@ -385,26 +387,26 @@ class CfgVehicles
 			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Camonet_Desert.paa",
 			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_CageSand.paa"
 		};
-		soundEngineOnInt[] = 
+		soundEngineOnInt[] =
 		{
 			"BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup",
 			0.79432821,
 			1
 		};
-		soundEngineOffInt[] = 
+		soundEngineOffInt[] =
 		{
 			"BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCShutdown.wss",
 			0.79432821,
 			1
 		};
-		soundEngineOnExt[] = 
+		soundEngineOnExt[] =
 		{
 			"BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup",
 			1,
 			1,
 			100
 		};
-		soundEngineOffExt[] = 
+		soundEngineOffExt[] =
 		{
 			"BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCShutdown.wss",
 			1,
@@ -413,7 +415,7 @@ class CfgVehicles
 		};
 		class Sounds
 		{
-			soundSetsInt[] = 
+			soundSetsInt[] =
 			{
 				"APC_Wheeled_01_Engine_RPM0_INT_SoundSet",
 				"APC_Wheeled_01_Engine_RPM1_INT_SoundSet",
@@ -445,7 +447,7 @@ class CfgVehicles
 				"APC_Wheeled_01_Tires_Brake_Hard_INT_SoundSet",
 				"APC_Wheeled_01_Tires_Brake_Soft_INT_SoundSet"
 			};
-			soundSetsExt[] = 
+			soundSetsExt[] =
 			{
 				"BNA_KC_APC_Engine_RPM0_EXT_SoundSet",
 				"BNA_KC_APC_Engine_RPM1_EXT_SoundSet",
@@ -504,6 +506,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_APC_OLV20.png";
 
         crew = "BNA_KC_Unit_Phase2_Tanker";
         side = 1;
@@ -533,7 +536,7 @@ class CfgVehicles
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
-            };          
+            };
             class CamoBrown: CamoKC
             {
                 displayName = "Brown Camo";
@@ -591,14 +594,14 @@ class CfgVehicles
                 // };
             };
         };
-    
+
         class UserActions
         {
             class ActivateEMP
             {
                 displayName = "<t font='RobotoCondensedBold'>Activate EMP</t>";
                 displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\iconLightning_ca.paa'>";
-                
+
                 position = "pilotview";
                 radius = 30;
                 onlyForPlayer = 0;
@@ -628,10 +631,11 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_Saber_M1.png";
 
         displayName = "[KC] TX-130 Saber Tank";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
-		
+
 		hiddenSelectionsTextures[] =
 		{
 			"BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Body.paa",
@@ -702,7 +706,7 @@ class CfgVehicles
 			"3as\3as_atte\data\atte_underpiping_co.paa",
 			"3as\3as_atte\data\atte_middleleg_co.paa"
 		};
-        
+
         textureList[] = { "Standard", 0, "Imperial", "KeeliCompany", 1 };
         class TextureSources
         {
@@ -757,7 +761,7 @@ class CfgVehicles
             {
                 displayName = "<t font='RobotoCondensedBold' color='#ffffff'>Play Alarm</t>";
                 displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
-                
+
                 position = "pilotview";
                 radius = 30;
                 onlyForPlayer = 0;
@@ -784,11 +788,11 @@ class CfgVehicles
                 coneFadeCoef = 10;
 
                 dayLight = 0;
-                
+
                 size = 1;
                 flareSize = 0;
                 useFlare = 0;
-                               
+
                 hitpoint = "ftl_gun";
                 direction = "Light_L_end";
                 position = "ftl_gun";
@@ -827,8 +831,8 @@ class CfgVehicles
             class Cargo
             {
                 parachuteClass = B_Parachute_02_F;
-                parachuteHeightLimit = 40;                
-                canBeTransported = 1;                
+                parachuteHeightLimit = 40;
+                canBeTransported = 1;
                 dimensions[] = { "ftr_muzzle", "btl_muzzle" };
 
                 BNA_KC_SpecialLoad = 1; // The standard "Load Vehicle" option doesn't appear, requiring a custom script to work
