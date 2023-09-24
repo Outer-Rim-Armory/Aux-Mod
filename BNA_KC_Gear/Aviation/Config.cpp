@@ -129,6 +129,7 @@ class CfgVehicles
     {
         displayName = "[KC] AVI P2 Pilot";
         editorSubcategory = "BNA_KC_Aviation";
+        editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\BNA_KC_Unit_Phase2_Pilot.jpg";
 
         uniformClass = "BNA_KC_Uniform_Pilot";
         hiddenSelectionsTextures[] =
@@ -152,6 +153,7 @@ class CfgVehicles
     {
         displayName = "[KC] AVI P1 Pilot";
         editorSubcategory = "BNA_KC_Aviation";
+        editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\BNA_KC_Unit_Phase1_Pilot.jpg";
 
         uniformClass = "BNA_KC_Uniform_Pilot";
         linkedItems[] =
@@ -167,6 +169,7 @@ class CfgVehicles
     class BNA_KC_Unit_Phase2_Pilot_Officer: BNA_KC_Unit_Phase2_Pilot
     {
         displayName = "[KC] AVI P2 Pilot (Officer)";
+        editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\BNA_KC_Unit_Phase2_Pilot_Officer.jpg";
 
         uniformClass = "BNA_KC_Uniform_Pilot_Officer";
         hiddenSelectionsTextures[] =
