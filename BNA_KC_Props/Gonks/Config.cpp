@@ -18,6 +18,7 @@ class CfgVehicles
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_SubCat_Utility";
+        editorPreviews = "\BNA_KC_Props\Gonks\Data\Textures\Previews\Gonk_Droid.png";
     };
 
     class BNA_KC_Gonk_Uniforms: BNA_KC_Utility_Base
@@ -194,6 +195,7 @@ class CfgVehicles
 
         displayName = "Arsenal Terminal";
         model = "3AS\3AS_Props\Terminals\Terminal_short.p3d";
+        editorPreview = "\BNA_KC_Props\Gonks\Data\Textures\Previews\Terminal_Black.png";
 
         class UserActions
         {
@@ -227,6 +229,7 @@ class CfgVehicles
 
         displayName = "Full Heal Droid";
         model = "RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
+        editorPreview = "\BNA_KC_Props\Gonks\Data\Textures\Previews\FX7.png";
 
         class UserActions
         {
