@@ -87,7 +87,7 @@ class CfgVehicles
 
     class BNA_KC_OPFOR_Unit_TU_AT: BNA_KC_OPFOR_Unit_TU_Rifleman
     {
-        displayName = "Anti-Tank Trooper";
+        displayName = "Rifleman (AT)";
         icon = "iconManAT";
 
         weapons[] = {"BNA_KC_E5", "", "Aux501_Weaps_e60r_at", "Throw", "Put"};
