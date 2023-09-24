@@ -417,7 +417,7 @@ class CfgVehicles
                 condition = QUOTE(isEngineOn this and ls_player == currentPilot this and !isTouchingGround this;);
                 statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
             };
-            class Repulse
+            class Repulse: Impulse
             {
                 displayName = "Repulse";
                 shortcut = "User20";
