@@ -69,7 +69,7 @@ class CfgGroups
                     };
                     class Object1: Object0
                     {
-                        vehicle = "BNA_KC_OPFOR_Unit_TU_AT";
+                        vehicle = "BNA_KC_OPFOR_Unit_TU_Rifleman";
                         rank = "Private";
                         position[] = {5, -5, 0};
                     };
@@ -79,18 +79,18 @@ class CfgGroups
                     };
                     class Object3: Object1
                     {
-                        vehicle = "BNA_KC_OPFOR_Unit_TU_Rifleman";
+                        vehicle = "BNA_KC_OPFOR_Unit_TU_AT";
                         position[] = {10, -10, 0};
                     };
                     class Object4: Object3
                     {
                         position[] = {-10, -10, 0};
                     };
-                    class Object5: Object3
+                    class Object5: Object1
                     {
                         position[] = {15, -15, 0};
                     };
-                    class Object6: Object3
+                    class Object6: Object1
                     {
                         position[] = {-15, -15, 0};
                     };
