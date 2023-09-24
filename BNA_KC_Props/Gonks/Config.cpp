@@ -18,7 +18,7 @@ class CfgVehicles
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_SubCat_Utility";
-        editorPreviews = "\BNA_KC_Props\Gonks\Data\Textures\Previews\Gonk_Droid.jpg";
+        editorPreview = "\BNA_KC_Props\Gonks\Data\Textures\Previews\Gonk_Droid.jpg";
     };
 
     class BNA_KC_Gonk_Uniforms: BNA_KC_Utility_Base
