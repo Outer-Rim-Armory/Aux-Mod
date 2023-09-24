@@ -96,6 +96,51 @@ class CfgGroups
                         position[] = {3, -3, 0};
                     };
                 };
+
+                class AssaultSquad
+                {
+                    faction = "BNA_KC_OPFOR_TU";
+                    name = "Assault Squad";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    side = 0;
+
+                    class Object0
+                    {
+                        side = 0;
+                        vehicle = "BNA_KC_OPFOR_Unit_TU_SL";
+                        rank = "SERGEANT";
+                        position[] = {0, 0, 0};
+                        dir = 0;
+                    };
+                    class Object1: Object0
+                    {
+                        vehicle = "BNA_KC_OPFOR_Unit_TU_Rifleman";
+                        rank = "Private";
+                        position[] = {1, -1, 0};
+                    };
+                    class Object2: Object1
+                    {
+                        position[] = {-1, -1, 0};
+                    };
+                    class Object3: Object1
+                    {
+                        vehicle = "BNA_KC_OPFOR_Unit_TU_AssaultMedium";
+                        position[] = {2, -2, 0};
+                    };
+                    class Object4: Object3
+                    {
+                        position[] = {-2, -2, 0};
+                    };
+                    class Object5: Object1
+                    {
+                        vehicle = "BNA_KC_OPFOR_Unit_TU_AssaultHeavy";
+                        position[] = {3, -3, 0};
+                    };
+                    class Object6: Object5
+                    {
+                        position[] = {3, -3, 0};
+                    };
+                };
             };
         };
     };
