@@ -30,6 +30,7 @@ class CfgFunctions
         {
             file = "BNA_KC_Scripts\Data\Functions\Developer";
             class devLog {};
+            class exportPreviews{};
         };
 
 		class Helmets

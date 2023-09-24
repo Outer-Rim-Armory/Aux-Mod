@@ -45,6 +45,8 @@ class CfgWeapons
         fireLightIntensity = 0.2;
         flashSize = 0.5;
 
+        maxZeroing = 1000;
+
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
@@ -134,7 +136,7 @@ class CfgMagazines
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15L Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 240<br/>Used In: DC-15L";
-        ammo = "Aux_12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux_12thFleet_Ammo_AutoRifle_Blue";
         count = 240;
     };
 };

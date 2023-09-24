@@ -73,6 +73,18 @@ class CfgAmmo
         effectfly = "JLTS_plasma_red";
     };
 
+    class Aux_12thFleet_Ammo_AutoRifle_Blue: Aux_12thFleet_Ammo_Rifle_Blue
+    {
+        hit = 17.5;
+        caliber = 2.8;
+        tracerscale = 1.5;
+    };
+    class Aux_12thFleet_Ammo_AutoRifle_Red: Aux_12thFleet_Ammo_AutoRifle_Blue
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+    };
+
     class JLTS_bullet_carbine_blue;
     class Aux_12thFleet_Ammo_Carbine_Blue: JLTS_bullet_carbine_blue
     {
