@@ -223,6 +223,73 @@ class CfgVehicles
         respawnLinkedItems[] = {"SC_Helmet_WP_Desert", "SC_Vest_WP_Light_Desert", BASE_LINKED_ITEMS};
         backpack = "SC_Backpack_WP_Desert";
     };
+
+    // ┌───────────────────┐
+    // │     Backpacks     │
+    // └───────────────────┘
+    class Bag_Base;
+    class BNA_KC_OPFOR_Backpack_TU: Bag_Base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC TU] Backpack";
+        descriptionshort = "Techno Union Backpack";
+        maximumLoad = 200;
+        mass = 30;
+
+        model = "sc_equipment\data\marine\mr_backpack.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"sc_equipment\data\marine\textures\backpack_co.paa"};
+        picture = "\sc_equipment\data\icons\icon_se_ca.paa";
+    };
+
+    class BNA_KC_OPFOR_Backpack_TU_Heavy: BNA_KC_OPFOR_Backpack_TU
+    {
+        displayName = "[KC TU] Heavy Backpack";
+        maximumLoad = 400;
+        mass = 35;
+
+        model = "sc_equipment\data\wasp\wp_backpack.p3d";
+        hiddenSelectionsTextures[] = {"sc_equipment\data\wasp\textures\backpack_co.paa"};
+        picture = "\sc_equipment\data\icons\icon_se_ca.paa";
+    };
+
+    class BNA_KC_OPFOR_Backpack_TU_Assault: BNA_KC_OPFOR_Backpack_TU
+    {
+        displayName = "[KC TU] Assault Backpack";
+        maximumLoad = 400;
+        mass = 35;
+
+        model = "sc_equipment\data\wasp\wp_backpack_sl.p3d";
+        hiddenSelectionsTextures[] = {"sc_equipment\data\wasp\textures\backpack_co.paa"};
+        picture = "\sc_equipment\data\icons\icon_se_ca.paa";
+    };
+
+    class BNA_KC_OPFOR_Backpack_TU_RTO: BNA_KC_OPFOR_Backpack_TU
+    {
+        displayName = "[KC TU] Radio Backpack";
+        mass = 35;
+
+        model = "sc_equipment\data\watchdog\wd_backpack_sl.p3d";
+        hiddenSelectionsTextures[] = {"sc_equipment\data\watchdog\textures\backpack_desert_co.paa"};
+        picture = "\sc_equipment\data\icons\icon_ar_ca.paa";
+
+        // TFAR Long Range
+        tf_hasLRradio = 1;
+        tf_range = 25000;
+
+        tf_dialog = "mr3000_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_east_radio_code";
+        tf_subtype = "digital_lr";
+    };
 };
 
 

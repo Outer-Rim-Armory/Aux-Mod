@@ -24,6 +24,8 @@ class CfgPatches
                 // Squad shield
             "A3_Weapons_F",
                 // Smoke grenade
+            "A3_Weapons_F_Ammoboxes",
+                // Base backpack
             "LFPModels"
                 // Shadow Mask
         };
