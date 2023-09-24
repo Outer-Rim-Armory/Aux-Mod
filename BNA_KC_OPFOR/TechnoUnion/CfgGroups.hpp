@@ -20,7 +20,6 @@ class CfgGroups
                     {
                         side = 0;
                         vehicle = "BNA_KC_OPFOR_Unit_TU_SL";
-                        description = "Squad Lead";
                         rank = "SERGEANT";
                         position[] = {0, 0, 0};
                         dir = 0;
@@ -28,7 +27,6 @@ class CfgGroups
                     class Object1: Object0
                     {
                         vehicle = "BNA_KC_OPFOR_Unit_TU_Rifleman";
-                        description = "Rifleman";
                         rank = "Private";
                         position[] = {1, -1, 0};
                     };
@@ -65,7 +63,6 @@ class CfgGroups
                     {
                         side = 0;
                         vehicle = "BNA_KC_OPFOR_Unit_TU_SL";
-                        description = "Squad Lead";
                         rank = "SERGEANT";
                         position[] = {0, 0, 0};
                         dir = 0;
@@ -73,7 +70,6 @@ class CfgGroups
                     class Object1: Object0
                     {
                         vehicle = "BNA_KC_OPFOR_Unit_TU_AT";
-                        description = "Rifleman (AT)";
                         rank = "Private";
                         position[] = {1, -1, 0};
                     };
@@ -84,7 +80,6 @@ class CfgGroups
                     class Object3: Object1
                     {
                         vehicle = "BNA_KC_OPFOR_Unit_TU_Rifleman";
-                        description = "Rifleman";
                         position[] = {2, -2, 0};
                     };
                     class Object4: Object3
