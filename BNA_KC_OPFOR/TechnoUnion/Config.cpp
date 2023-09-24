@@ -337,6 +337,7 @@ class CfgGlasses
     {
         displayName = "[KC TU] Face Guard";
         identityTypes[] = {"BNA_KC_TechnoUnion", 1};
+        picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
     };
 };
 
