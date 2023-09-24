@@ -59,6 +59,7 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "Rifleman";
+        editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Rifleman.jpg";
 
         weapons[] = {"BNA_KC_E5", "", "Throw", "Put"};
         respawnWeapons[] = {"BNA_KC_E5", "", "Throw", "Put"};
@@ -88,6 +89,7 @@ class CfgVehicles
     class BNA_KC_OPFOR_Unit_TU_AT: BNA_KC_OPFOR_Unit_TU_Rifleman
     {
         displayName = "Rifleman (AT)";
+        editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Rifleman_AT.jpg";
         icon = "iconManAT";
 
         weapons[] = {"BNA_KC_E5", "", "Aux501_Weaps_e60r_at", "Throw", "Put"};
@@ -104,6 +106,7 @@ class CfgVehicles
     class BNA_KC_OPFOR_Unit_TU_AssaultHeavy: BNA_KC_OPFOR_Unit_TU_Rifleman
     {
         displayName = "Heavy Assault";
+        editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\AssaultHeavy.jpg";
         icon = "iconManMG";
 
         weapons[] = {"BNA_KC_E5C_Stock", "", "Throw", "Put"};
@@ -120,6 +123,7 @@ class CfgVehicles
     class BNA_KC_OPFOR_Unit_TU_AssaultMedium: BNA_KC_OPFOR_Unit_TU_AssaultHeavy
     {
         displayName = "Medium Assault";
+        editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\AssaultMedium.jpg";
         linkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Backpack_TU_Assault_Predef_Medium";
@@ -128,6 +132,7 @@ class CfgVehicles
     class BNA_KC_OPFOR_Unit_TU_SL: BNA_KC_OPFOR_Unit_TU_Rifleman
     {
         displayName = "Squad Leader";
+        editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\SL.jpg";
         icon = "iconManLeader";
 
         linkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
@@ -142,6 +147,7 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "Swordsman (Rush)";
+        editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Melee.jpg";
 
         weapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
         respawnWeapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
