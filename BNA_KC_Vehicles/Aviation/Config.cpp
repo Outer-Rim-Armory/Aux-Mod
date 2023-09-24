@@ -404,6 +404,26 @@ class CfgVehicles
 
         class UserActions: UserActions
         {
+            class impulse: impulse
+            {
+                displayName = "Impulse";
+                position = "pilotview";
+                radius = 5;
+
+                shortcut = "User19";
+                onlyforplayer = 0;
+                hideOnUse = 1;
+
+                condition = QUOTE(isEngineOn this and ls_player == currentPilot this and !isTouchingGround this;);
+                statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
+            };
+            class repulse: repulse
+            {
+                displayName = "Repulse";
+                shortcut = "User20";
+                statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick;);
+            };
+
             class SpecialLoadVehicle
             {
                 displayName = "Load Vehicle (Custom)";
