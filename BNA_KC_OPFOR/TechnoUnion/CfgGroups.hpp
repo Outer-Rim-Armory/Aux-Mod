@@ -95,6 +95,10 @@ class CfgGroups
                     {
                         position[] = {3, -3, 0};
                     };
+                    class Object6: Object3
+                    {
+                        position[] = {-3, -3, 0};
+                    };
                 };
 
                 class AssaultSquad
