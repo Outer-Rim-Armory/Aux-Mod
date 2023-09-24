@@ -469,11 +469,50 @@ class CfgVehicles
 
         crew = "BNA_KC_Unit_Phase2_Pilot";
 
-		hiddenselectionstextures[]=
-		{
-			"BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
-			"3as\3as_starships\data\hs_int_co.paa"
-		};
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
+            "3as\3as_starships\data\hs_int_co.paa",
+            "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+        };
+
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "3as\3as_starships\data\hs_ext_co.paa",
+                    "3as\3as_starships\data\hs_int_co.paa",
+                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                };
+            };
+            class Imperial: Standard
+            {
+                displayName = "Imperial";
+                textures[] =
+                {
+                    "3as\3as_starships\data\hs_Imp_ext_co.paa",
+                    "3as\3as_starships\data\hs_int_co.paa",
+                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                };
+            };
+            class KeeliCompany: Standard
+            {
+                author = "Dexus";
+                displayName = "Keeli Company";
+                textures[]=
+                {
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
+                    "3as\3as_starships\data\hs_int_co.paa",
+                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                };
+            };
+        };
 	};
 
 	class Plane;
