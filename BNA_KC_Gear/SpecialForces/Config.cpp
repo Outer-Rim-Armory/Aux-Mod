@@ -263,6 +263,7 @@ class CfgVehicles
     {
         displayName = "[KC] SF ARC Trooper";
         editorSubcategory = "BNA_KC_SF";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARC.jpg";
 
         uniformClass = "BNA_KC_Uniform_ARC";
         hiddenSelectionsTextures[] =
@@ -286,6 +287,7 @@ class CfgVehicles
     class BNA_KC_Unit_ARC_Night: BNA_KC_Unit_ARC
     {
         displayName = "[KC] SF ARC Trooper (Night Camo)";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARC_Night.jpg";
 
         uniformClass = "BNA_KC_Uniform_ARC_Night";
         hiddenSelectionsTextures[] =
@@ -309,6 +311,7 @@ class CfgVehicles
     {
         displayName = "[KC] SF ARF Trooper";
         editorSubcategory = "BNA_KC_SF";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARF.jpg";
 
         uniformClass = "BNA_KC_Uniform_ARF";
         hiddenSelectionsTextures[] =
@@ -333,6 +336,7 @@ class CfgVehicles
     {
         displayName = "[KC] SF BARC Trooper";
         editorSubcategory = "BNA_KC_SF";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\BARC.jpg";
 
         uniformClass = "BNA_KC_Uniform_CT";
 
