@@ -37,7 +37,17 @@ class CfgPatches
             "BNA_KC_OPFOR_Unit_TU_AssaultMedium",
             "BNA_KC_OPFOR_Unit_TU_AT",
             "BNA_KC_OPFOR_Unit_TU_SL",
-            "BNA_KC_OPFOR_Unit_TU_Melee"
+            "BNA_KC_OPFOR_Unit_TU_Melee",
+
+            "BNA_KC_OPFOR_Backpack_TU",
+            "BNA_KC_OPFOR_Backpack_TU_Predef_Rifleman",
+            "BNA_KC_OPFOR_Backpack_TU_Heavy",
+            "BNA_KC_OPFOR_Backpack_TU_Heavy_Predef_AT",
+            "BNA_KC_OPFOR_Backpack_TU_Assault",
+            "BNA_KC_OPFOR_Backpack_TU_Assault_Predef_Heavy",
+            "BNA_KC_OPFOR_Backpack_TU_Assault_Predef_Medium",
+            "BNA_KC_OPFOR_Backpack_TU_RTO",
+            "BNA_KC_OPFOR_Backpack_TU_RTO_Predef_SL"
         };
         weapons[] =
         {
