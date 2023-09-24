@@ -179,10 +179,10 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX("Aux_12thFleet_Mag_E5", 11)
-            TRANSMAG_XX("SC_IG3", 2)
-            TRANSMAG_XX("SmokeShell", 2)
-            TRANSMAG_XX("ShieldGrenade_Mag", 2)
+            TRANSMAG_XX(Aux_12thFleet_Mag_E5, 11)
+            TRANSMAG_XX(SC_IG3, 2)
+            TRANSMAG_XX(SmokeShell, 2)
+            TRANSMAG_XX(ShieldGrenade_Mag, 2)
         };
     };
 
@@ -205,12 +205,12 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX("Aux_12thFleet_Mag_E5", 11)
-            TRANSMAG_XX("Aux501_Weapons_Mags_e60r_he", 4)
-            TRANSMAG_XX("Aux501_Weapons_Mags_e60r_at", 4)
-            TRANSMAG_XX("SC_IG3", 2)
-            TRANSMAG_XX("SmokeShell", 2)
-            TRANSMAG_XX("ShieldGrenade_Mag", 2)
+            TRANSMAG_XX(Aux_12thFleet_Mag_E5, 11)
+            TRANSMAG_XX(Aux501_Weapons_Mags_e60r_he, 4)
+            TRANSMAG_XX(Aux501_Weapons_Mags_e60r_at, 4)
+            TRANSMAG_XX(SC_IG3, 2)
+            TRANSMAG_XX(SmokeShell, 2)
+            TRANSMAG_XX(ShieldGrenade_Mag, 2)
         };
     };
 
@@ -233,20 +233,20 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX("Aux_12thFleet_Mag_E5C", 11)
-            TRANSMAG_XX("SC_IG3", 2)
-            TRANSMAG_XX("SmokeShell", 2)
-            TRANSMAG_XX("ShieldGrenade_Mag", 2)
+            TRANSMAG_XX(Aux_12thFleet_Mag_E5C, 11)
+            TRANSMAG_XX(SC_IG3, 2)
+            TRANSMAG_XX(SmokeShell, 2)
+            TRANSMAG_XX(ShieldGrenade_Mag, 2)
         };
     };
     class BNA_KC_Backpack_TU_Assault_Predef_Medium: BNA_KC_Backpack_TU_Assault_Predef_Heavy
     {
         class TransportMagazines
         {
-            TRANSMAG_XX("Aux_12thFleet_Mag_E5C", 11)
-            TRANSMAG_XX("SC_IG3", 2)
-            TRANSMAG_XX("SmokeShell", 2)
-            TRANSMAG_XX("ShieldGrenade_Mag", 2)
+            TRANSMAG_XX(Aux_12thFleet_Mag_E5C, 11)
+            TRANSMAG_XX(SC_IG3, 2)
+            TRANSMAG_XX(SmokeShell, 2)
+            TRANSMAG_XX(ShieldGrenade_Mag, 2)
         };
     };
 
@@ -277,10 +277,10 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX("Aux_12thFleet_Mag_E5", 11)
-            TRANSMAG_XX("SC_IG3", 2)
-            TRANSMAG_XX("SmokeShell", 2)
-            TRANSMAG_XX("ShieldGrenade_Mag", 2)
+            TRANSMAG_XX(Aux_12thFleet_Mag_E5, 11)
+            TRANSMAG_XX(SC_IG3, 2)
+            TRANSMAG_XX(SmokeShell, 2)
+            TRANSMAG_XX(ShieldGrenade_Mag, 2)
         };
     };
 };
