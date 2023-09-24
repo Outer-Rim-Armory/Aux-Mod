@@ -197,7 +197,7 @@ class CfgVehicles
     class BNA_KC_Backpack_TU_Heavy: BNA_KC_Backpack_TU
     {
         displayName = "[KC TU] Heavy Backpack";
-        maximumLoad = 550;
+        maximumLoad = 450;
         mass = 35;
 
         model = "sc_equipment\data\wasp\wp_backpack.p3d";
