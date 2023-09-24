@@ -9,8 +9,10 @@ class CfgPatches
         {
             "JLTS_weapons_Core",
                 // Base JLTS bullets
-            "A3_Weapons_F"
+            "A3_Weapons_F",
                 // Base UGL flare
+            "A3_Weapons_F_Enoch"
+                // DP-23 Ammo
         };
         units[] = {};
         weapons[] = {};
