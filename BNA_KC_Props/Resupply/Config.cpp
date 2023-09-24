@@ -36,6 +36,7 @@ class CfgVehicles
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_SubCat_Resupply";
+        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\BNA_KC_Resupply_Base.jpg";
         side = 3;
     };
 
@@ -45,6 +46,7 @@ class CfgVehicles
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat" };
         hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa" };
+        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\BNA_KC_Resupply_Ammo.jpg";
 
         class TransportMagazines
         {
@@ -162,6 +164,7 @@ class CfgVehicles
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat" };
         hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa" };
+        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\BNA_KC_Resupply_Medical.jpg";
 
         class TransportItems
         {
@@ -239,6 +242,7 @@ class CfgVehicles
         ace_dragging_canCarry = 0;
 
         model = "A3\Structures_F\Items\Vessels\WaterTank_F.p3d";
+        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\BNA_KC_Resupply_JetpackFuel.jpg";
         hiddenSelections[] = {};
         hiddenSelectionsMaterials[] = {};
         hiddenSelectionsTextures[] = {};

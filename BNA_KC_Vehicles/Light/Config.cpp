@@ -334,6 +334,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Hornet_Unarmed.jpg";
 
         crew = "BNA_KC_Unit_ARF";
         side = 1;
@@ -405,6 +406,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Hornet_Armed.jpg";
 
         crew = "BNA_KC_Unit_ARF";
         side = 1;
@@ -484,6 +486,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Hornet_AT.jpg";
 
         crew = "BNA_KC_Unit_ARF";
         side = 1;
@@ -580,6 +583,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Glavenus_Unarmed.jpg";
 
         crew = "BNA_KC_Unit_Phase2_CT";
         side = 1;
@@ -595,6 +599,7 @@ class CfgVehicles
     class BNA_KC_Glavenus_Medic: BNA_KC_Glavenus_Unarmed
     {
         displayName = "[KC] Glavenus (Medic)";
+        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Glavenus_Medic.jpg";
 
         attendant = 1;
 
@@ -711,6 +716,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Glavenus_GMG.jpg";
 
         crew = "BNA_KC_Unit_Phase2_CT";
         side = 1;
@@ -748,6 +754,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Glavenus_HMG.jpg";
 
         crew = "BNA_KC_Unit_Phase2_CT";
         side = 1;
