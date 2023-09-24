@@ -28,27 +28,27 @@ class CfgGroups
                     {
                         vehicle = "BNA_KC_OPFOR_Unit_TU_Rifleman";
                         rank = "Private";
-                        position[] = {1, -1, 0};
+                        position[] = {5, -5, 0};
                     };
                     class Object2: Object1
                     {
-                        position[] = {-1, -1, 0};
+                        position[] = {-5, -5, 0};
                     };
                     class Object3: Object1
                     {
-                        position[] = {2, -2, 0};
+                        position[] = {10, -10, 0};
                     };
                     class Object4: Object1
                     {
-                        position[] = {-2, -2, 0};
+                        position[] = {-10, -10, 0};
                     };
                     class Object5: Object1
                     {
-                        position[] = {3, -3, 0};
+                        position[] = {15, -15, 0};
                     };
                     class Object6: Object1
                     {
-                        position[] = {-3, -3, 0};
+                        position[] = {-15, -15, 0};
                     };
                 };
 
@@ -71,28 +71,28 @@ class CfgGroups
                     {
                         vehicle = "BNA_KC_OPFOR_Unit_TU_AT";
                         rank = "Private";
-                        position[] = {1, -1, 0};
+                        position[] = {5, -5, 0};
                     };
                     class Object2: Object1
                     {
-                        position[] = {-1, -1, 0};
+                        position[] = {-5, -5, 0};
                     };
                     class Object3: Object1
                     {
                         vehicle = "BNA_KC_OPFOR_Unit_TU_Rifleman";
-                        position[] = {2, -2, 0};
+                        position[] = {10, -10, 0};
                     };
                     class Object4: Object3
                     {
-                        position[] = {-2, -2, 0};
+                        position[] = {-10, -10, 0};
                     };
                     class Object5: Object3
                     {
-                        position[] = {3, -3, 0};
+                        position[] = {15, -15, 0};
                     };
                     class Object6: Object3
                     {
-                        position[] = {-3, -3, 0};
+                        position[] = {-15, -15, 0};
                     };
                 };
 
@@ -115,29 +115,29 @@ class CfgGroups
                     {
                         vehicle = "BNA_KC_OPFOR_Unit_TU_Rifleman";
                         rank = "Private";
-                        position[] = {1, -1, 0};
+                        position[] = {5, -5, 0};
                     };
                     class Object2: Object1
                     {
-                        position[] = {-1, -1, 0};
+                        position[] = {-5, -5, 0};
                     };
                     class Object3: Object1
                     {
                         vehicle = "BNA_KC_OPFOR_Unit_TU_AssaultMedium";
-                        position[] = {2, -2, 0};
+                        position[] = {10, -10, 0};
                     };
                     class Object4: Object3
                     {
-                        position[] = {-2, -2, 0};
+                        position[] = {-10, -10, 0};
                     };
                     class Object5: Object1
                     {
                         vehicle = "BNA_KC_OPFOR_Unit_TU_AssaultHeavy";
-                        position[] = {3, -3, 0};
+                        position[] = {15, -15, 0};
                     };
                     class Object6: Object5
                     {
-                        position[] = {3, -3, 0};
+                        position[] = {15, -15, 0};
                     };
                 };
             };
