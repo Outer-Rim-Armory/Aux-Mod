@@ -335,6 +335,23 @@ class CfgGlasses
 };
 
 
+class CfgMagazines
+{
+    // Temporary solution until KC E-60 is made.
+    // 501st E-60 rockets can only fit in backpacks, causing a small warning with TU units.
+    class RPG32_F;
+    class Aux501_Weapons_Mags_e60r_at: RPG32_F
+    {
+        allowedSlots[] = {701, 801, 901}; // Can go in vest, uniform, and backpack
+    };
+    class RPG32_HE_F;
+    class Aux501_Weapons_Mags_e60r_he: RPG32_HE_F
+    {
+        allowedSlots[] = {701, 801, 901};
+    };
+};
+
+
 class Extended_Init_EventHandlers
 {
     class BNA_KC_OPFOR_Unit_TU_Melee
