@@ -128,19 +128,19 @@ class CfgAmmo
     class B_12Gauge_Pellets_Submunition;
     class Aux_12thFleet_Ammo_Scatter_Blue: B_12Gauge_Pellets_Submunition
     {
-        cartridge="FxCartridge_slug";
-		cost=5;
-		typicalSpeed=400;
-		airFriction=-0.0080000004;
-		caliber=2;
-		submunitionAmmo="Aux_12thFleet_Ammo_Pistol_Blue";
-		triggerTime=0.00030000001;
-		fireSpreadAngle=8;
-		deflecting=0;
-		submunitionConeAngle=1;
-		deflectionSlowDown=0.80000001;
-		dangerRadiusHit=40;
-		dangerRadiusBulletClose=16;
+		submunitionAmmo = "Aux_12thFleet_Ammo_Pistol_Blue";
+		submunitionConeAngle = 1;
+		fireSpreadAngle = 8;
+		caliber = 2;
+        cartridge = "FxCartridge_slug";
+		cost = 5;
+		typicalSpeed = 400;
+		airFriction = -0.0080000004;
+		triggerTime = 0.00030000001;
+		deflecting = 0;
+		deflectionSlowDown = 0.80000001;
+		dangerRadiusHit = 40;
+		dangerRadiusBulletClose = 16;
     };
     class Aux_12thFleet_Ammo_Scatter_HP_Blue: Aux_12thFleet_Ammo_Scatter_Blue
     {
