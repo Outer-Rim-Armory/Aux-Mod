@@ -99,7 +99,7 @@ class CfgVehicles
         BNA_KC_Medical_areaHealMaxPatients = 2; // Maximum amount of units that can be healed at a time
 
         model = "RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
-        editorPreview = "\BNA_KC_Props\Gonks\Data\Textures\Previews\FX7.png";
+        editorPreview = "\BNA_KC_Props\Gonks\Data\Textures\Previews\FX7.jpg";
 
         class ACE_Actions
         {

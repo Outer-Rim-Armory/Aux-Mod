@@ -86,7 +86,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_Blitz.png";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_Blitz.jpg";
 
         displayName = "[KC] Blitz Assault Tank";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
@@ -346,7 +346,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_APC_Badger.png";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_APC_Badger.jpg";
 
         armor = 600;
 
@@ -506,7 +506,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_APC_OLV20.png";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_APC_OLV20.jpg";
 
         crew = "BNA_KC_Unit_Phase2_Tanker";
         side = 1;
@@ -631,7 +631,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_Saber_M1.png";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\BNA_KC_Saber_M1.jpg";
 
         displayName = "[KC] TX-130 Saber Tank";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
