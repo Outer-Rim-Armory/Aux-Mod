@@ -54,6 +54,9 @@ class CfgWeapons
         fireLightDuration = 0.05;
         fireLightIntensity = 0.2;
 
+        maxZeroing = 1000;
+        dispersion = 0.00029;
+
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
@@ -92,6 +95,8 @@ class CfgWeapons
 
         class Single: Single
         {
+            dispersion = 0.00087;
+
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
@@ -103,6 +108,8 @@ class CfgWeapons
         };
         class FullAuto: FullAuto
         {
+            dispersion = 0.00087;
+
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
