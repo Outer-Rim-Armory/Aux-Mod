@@ -18,6 +18,9 @@ class CfgPatches
                 // E-5
             "BNA_KC_Weapons_E5C",
                 // E-5C
+            "Aux501_Patch_e60r",
+                // E-60R Launcher
+                // HE/AT Magazines
             "sc_weapons",
                 // IG-3 Grenade
             "3AS_Equipment",
