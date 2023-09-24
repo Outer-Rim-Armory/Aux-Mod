@@ -404,7 +404,7 @@ class CfgVehicles
 
         class UserActions: UserActions
         {
-            class impulse: impulse
+            class Impulse
             {
                 displayName = "Impulse";
                 position = "pilotview";
@@ -417,7 +417,7 @@ class CfgVehicles
                 condition = QUOTE(isEngineOn this and ls_player == currentPilot this and !isTouchingGround this;);
                 statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
             };
-            class repulse: repulse
+            class Repulse
             {
                 displayName = "Repulse";
                 shortcut = "User20";
