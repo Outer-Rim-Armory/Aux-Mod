@@ -137,7 +137,7 @@ class CfgGroups
                     };
                     class Object6: Object5
                     {
-                        position[] = {15, -15, 0};
+                        position[] = {-15, -15, 0};
                     };
                 };
             };
