@@ -274,3 +274,15 @@ class CfgEditorSubcategories
         displayName = "Resupply";
     };
 };
+
+
+class Extended_Init_EventHandlers
+{
+    class BNA_KC_Resupply_Base
+    {
+        class Disable_Damage
+        {
+            init = "(_this select 0) allowDamage false";
+        };
+    };
+};
