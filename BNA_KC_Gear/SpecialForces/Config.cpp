@@ -223,20 +223,20 @@ class CfgWeapons
                 class Arms
                 {
                     hitpointName = "HitArms";
-                    armor = 10;
-                    passThrough = 0.20000001;
+                    armor = 20;
+                    passThrough = 0.2;
                 };
                 class Chest
                 {
                     hitpointName = "HitChest";
                     armor = 25;
-                    PassThrough = 0.10000001;
+                    PassThrough = 0.1;
                 };
                 class Legs
                 {
                     hitpointName = "HitLegs";
                     armor = 20;
-                    passThrough = 0.10000001;
+                    passThrough = 0.1;
                 };
             };
         };
