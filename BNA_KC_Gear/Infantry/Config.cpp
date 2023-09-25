@@ -692,7 +692,7 @@ class CfgVehicles
 
         displayName = "[KC] Clone Trooper Backpack";
 
-        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_UI.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa", // Main Texture
@@ -708,7 +708,7 @@ class CfgVehicles
         displayName = "[KC] Clone Trooper Backpack (Invisible)";
 
         // Remove the model and textures (invisible)
-        picture = "BNA_KC_Gear\Infantry\Data\UI\Blank.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\Blank.paa";
         model = "BNA_KC_Gear\Data\Models\empty_model.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
