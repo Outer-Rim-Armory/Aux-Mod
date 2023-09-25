@@ -175,6 +175,7 @@ class CfgMagazines
     {
         displayName = "[12th Fleet] DP-23 HP Energy Cell";
         displayNameShort = "Medium Energy";
+        descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 15<br/>Used In: DP-23";
         ammo = "Aux_12thFleet_Ammo_Scatter_HP_Blue";
         count = 15;
     };
