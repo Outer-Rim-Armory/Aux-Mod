@@ -19,7 +19,7 @@ class CfgWeapons
         displayName = "[KC] SF ARC Helm";
 
         model = "lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
-        hiddenSelections[] = { "camo1", "visor", "illum" };
+        hiddenSelections[] = {"camo1", "visor", "illum"};
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC.paa",
@@ -81,7 +81,7 @@ class CfgWeapons
         displayName = "[KC] SF ARF 01 Helm (Enlisted)";
 
         model = "ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
-        hiddenSelections[] = { "camo1", "camo2", "visor" };
+        hiddenSelections[] = {"camo1", "camo2", "visor"};
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARF.paa", // Main Helmet
@@ -92,11 +92,11 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = { "camo1", "camo2", "visor" };
+            hiddenSelections[] = {"camo1", "camo2", "visor"};
             uniformModel = "ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
         };
 
-        subItems[] = { "BNA_KC_NVG_Chip" };
+        subItems[] = {"BNA_KC_NVG_Chip"};
     };
     class BNA_KC_Helmet_ARF_CamoBrown: BNA_KC_Helmet_ARF
     {
@@ -139,7 +139,7 @@ class CfgWeapons
         displayName = "[KC] SF BARC Helm";
 
         model = "ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
-        hiddenSelections[] = { "camo1", "visor" };
+        hiddenSelections[] = {"camo1", "visor"};
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_BARC.paa",
@@ -149,7 +149,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = { "camo1", "visor" };
+            hiddenSelections[] = {"camo1", "visor"};
             uniformModel = "ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
         };
     };
@@ -204,7 +204,7 @@ class CfgWeapons
         displayName = "[KC] SF ARC Vest";
 
         model = "SWLB_clones\SWLB_clone_arc_armor.p3d";
-        hiddenSelections[] = { "camo1", "camo2" };
+        hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\SpecialForces\Data\Vests\BNA_KC_Vest_ARC_Chest.paa",
@@ -214,7 +214,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = { "camo1", "camo2" };
+            hiddenSelections[] = {"camo1", "camo2"};
             uniformModel = "SWLB_clones\SWLB_clone_arc_armor.p3d";
             containerClass = "Supply200";
 
@@ -360,7 +360,7 @@ class CfgVehicles
         displayName = "[KC] ARC Trooper Backpack";
 
         model = "SWLB_equipment\backpacks\SWLB_clone_arc_backpack.p3d";
-        hiddenSelections[] = { "camo1" };
+        hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] =
         {
             "SWLB_equipment\backpacks\data\SWLB_clone_arc_backpack_co.paa"
