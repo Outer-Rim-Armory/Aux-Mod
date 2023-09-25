@@ -7,8 +7,6 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "BNA_KC_Props_Resupply",
-                // Resupply object used as base
             "BNA_KC_Props_Gonks",
                 // Editor Previews
             "cba_common",
