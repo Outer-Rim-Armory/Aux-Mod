@@ -5,7 +5,7 @@
 class CfgMagazines
 {
     class JLTS_stun_mag_short;
-    class 12thFleet_Mag_StunShort: JLTS_stun_mag_short
+    class Aux12thFleet_Mag_StunShort: JLTS_stun_mag_short
     {
         author = "DartRuffian and Dexus";
         displayName = "[12th Fleet] Stun Energy Cell (Short)";
@@ -17,7 +17,7 @@ class CfgMagazines
         ammo = "Aux_12thFleet_Ammo_Stun";
     };
 
-    class 12thFleet_Mag_StunLong: 12thFleet_Mag_StunShort
+    class Aux12thFleet_Mag_StunLong: Aux12thFleet_Mag_StunShort
     {
         displayName = "[12th Fleet] Stun Energy Cell (Long)";
         displayNameShort = "Stun (Long)";
@@ -247,8 +247,8 @@ class CfgMagazineWells
     {
         KC_Magazines[] =
         {
-            "12thFleet_Mag_StunShort",
-            "12thFleet_Mag_StunLong"
+            "Aux12thFleet_Mag_StunShort",
+            "Aux12thFleet_Mag_StunLong"
         };
     };
 };

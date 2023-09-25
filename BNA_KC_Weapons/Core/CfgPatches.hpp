@@ -18,8 +18,8 @@ class CfgPatches
         weapons[] = {};
         magazines[] =
         {
-            "12thFleet_Mag_StunShort",
-            "12thFleet_Mag_StunLong",
+            "Aux12thFleet_Mag_StunShort",
+            "Aux12thFleet_Mag_StunLong",
 
             "BNA_KC_UGL_FlareBlue",
             "BNA_KC_3Rnd_UGL_FlareBlue"
