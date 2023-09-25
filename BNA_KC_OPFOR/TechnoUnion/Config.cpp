@@ -15,6 +15,10 @@ class CfgWeapons
     };
     class BNA_KC_OPFOR_Uniform_TU: BNA_KC_OPFOR_Uniform_Base
     {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
         displayName = "[KC TU] Techno Union Uniform";
 
         class ItemInfo: ItemInfo
