@@ -51,9 +51,9 @@ class TransportMagazines \
         magazine = "12thFleet_Mag_DC15S"; \
         count = 15; \
     }; \
-    class _xx_Aux_12thFleet_Mag_DC15X \
+    class _xx_Aux12thFleet_Mag_DC15X \
     { \
-        magazine = "Aux_12thFleet_Mag_DC15X"; \
+        magazine = "Aux12thFleet_Mag_DC15X"; \
         count = 5; \
     }; \
 }; \

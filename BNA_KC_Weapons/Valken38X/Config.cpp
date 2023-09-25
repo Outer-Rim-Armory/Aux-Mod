@@ -129,8 +129,8 @@ class CfgWeapons
 
 class CfgMagazines
 {
-    class Aux_12thFleet_Mag_DC15X;
-    class BNA_KC_Mag_Valken38X: Aux_12thFleet_Mag_DC15X
+    class Aux12thFleet_Mag_DC15X;
+    class BNA_KC_Mag_Valken38X: Aux12thFleet_Mag_DC15X
     {
         displayName = "[KC] Valken-38X Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 25<br/>Used In: Valken-38X";
