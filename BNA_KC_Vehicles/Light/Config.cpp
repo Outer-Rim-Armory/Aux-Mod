@@ -244,9 +244,9 @@ class TransportMagazines \
         magazine = "3Rnd_HE_Grenade_shell"; \
         count = 2; \
     }; \
-    class _xx_12thFleet_Mag_DC17 \
+    class _xx_Aux12thFleet_Mag_DC17 \
     { \
-        magazine = "12thFleet_Mag_DC17"; \
+        magazine = "Aux12thFleet_Mag_DC17"; \
         count = 5; \
     }; \
     class _xx_ls_mag_rpg_1rnd \

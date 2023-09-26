@@ -75,7 +75,7 @@ class CfgVehicles
             MAG_XX(3Rnd_HE_Grenade_shell, 5)
 
             // Secondary Ammo
-            MAG_XX(12thFleet_Mag_DC17, 10)
+            MAG_XX(Aux12thFleet_Mag_DC17, 10)
 
             // Launcher Ammo
             MAG_XX(3AS_JLTS_MK39_AA, 2)
