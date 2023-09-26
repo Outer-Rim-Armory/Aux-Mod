@@ -20,7 +20,8 @@ class CfgPatches
         };
         units[] =
         {
-            "BNA_KC_Galtorran_Unit_Base"
+            "BNA_KC_Galtorran_Unit_Base",
+            "BNA_KC_Galtorran_Unit_Rifleman"
         };
         weapons[] =
         {
