@@ -107,6 +107,31 @@ class CfgWeapons
         JLTS_isFried = 1;
         magazines[] = {};
     };
+
+    class BNA_KC_LW38_Green: BNA_KC_LW38_Base
+    {
+        displayName = "[KC] LW-38";
+        baseWeapon = "BNA_KC_LW38_Green";
+        JLTS_friedItem = "BNA_KC_LW38_Fried";
+
+        fireLightDiffuse[] = {0, 1, 0};
+        magazines[] = {"BNA_KC_Mag_LW38_Green"};
+    };
+
+    class BNA_KC_LW38_Green_Fried: BNA_KC_LW38_Green
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
+        displayName = "[KC] LW-38 (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\BNA_KC_Weapons\LW38\Data\Textures\UI\LW38_Fried_UI.paa";
+        baseWeapon = "BNA_KC_LW38_Green_Fried";
+
+        JLTS_isFried = 1;
+        magazines[] = {};
+    };
 };
 
 
@@ -120,6 +145,12 @@ class CfgMagazines
 
         model = "LF_Weapon_Unit\lw38m\mag.p3d";
         picture = "\LF_Weapon_Unit\lw38m\ui\mag.paa";
+    };
+    class BNA_KC_Mag_LW38_Green: BNA_KC_Mag_LW38
+    {
+        scope = 1;
+        scopeArsenal = 0;
+        ammo = "Aux12thFleet_Ammo_Rifle_Green";
     };
 };
 
