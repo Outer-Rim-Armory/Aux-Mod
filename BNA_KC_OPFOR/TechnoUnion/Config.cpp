@@ -13,7 +13,7 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class BNA_KC_OPFOR_Uniform_TU: BNA_KC_OPFOR_Uniform_Base
+    class BNA_KC_TU_Uniform: BNA_KC_OPFOR_Uniform_Base
     {
         // Scope
         scope = 2;
@@ -23,7 +23,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            uniformClass = "BNA_KC_OPFOR_Unit_TU_Base";
+            uniformClass = "BNA_KC_TU_Unit_Base";
         };
     };
 
@@ -39,7 +39,7 @@ class CfgVehicles
     // │       Units       │
     // └───────────────────┘
     class BNA_KC_OPFOR_Unit_Base;
-    class BNA_KC_OPFOR_Unit_TU_Base: BNA_KC_OPFOR_Unit_Base
+    class BNA_KC_TU_Unit_Base: BNA_KC_OPFOR_Unit_Base
     {
         faction = "BNA_KC_OPFOR_TU";
         editorSubcategory = "BNA_KC_SubCat_TU_Infantry";
@@ -51,12 +51,12 @@ class CfgVehicles
         respawnItems[] = {};
 
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
-        uniformClass = "BNA_KC_OPFOR_Uniform_TU";
+        uniformClass = "BNA_KC_TU_Uniform";
         hiddenSelections[] = {"camo", "insignia"};
         hiddenSelectionsTextures[] = {"sc_equipment\data\combat_uniform\cu_tan_co.paa"};
     };
 
-    class BNA_KC_OPFOR_Unit_TU_Rifleman: BNA_KC_OPFOR_Unit_TU_Base
+    class BNA_KC_TU_Unit_Rifleman: BNA_KC_TU_Unit_Base
     {
         // Scope
         scope = 2;
@@ -87,10 +87,10 @@ class CfgVehicles
 
         linkedItems[] = {"SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", BASE_LINKED_ITEMS};
-        backpack = "BNA_KC_Backpack_TU_Predef_Rifleman";
+        backpack = "BNA_KC_TU_Backpack_Predef_Rifleman";
     };
 
-    class BNA_KC_OPFOR_Unit_TU_AT: BNA_KC_OPFOR_Unit_TU_Rifleman
+    class BNA_KC_TU_Unit_AT: BNA_KC_TU_Unit_Rifleman
     {
         displayName = "Rifleman (AT)";
         editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Rifleman_AT.jpg";
@@ -104,10 +104,10 @@ class CfgVehicles
 
         linkedItems[] = {"SC_Helmet_WP_EUD_Desert_V", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_WP_EUD_Desert_V", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
-        backpack = "BNA_KC_Backpack_TU_Heavy_Predef_AT";
+        backpack = "BNA_KC_TU_Backpack_Heavy_Predef_AT";
     };
 
-    class BNA_KC_OPFOR_Unit_TU_AssaultHeavy: BNA_KC_OPFOR_Unit_TU_Rifleman
+    class BNA_KC_TU_Unit_AssaultHeavy: BNA_KC_TU_Unit_Rifleman
     {
         displayName = "Heavy Assault";
         editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\AssaultHeavy.jpg";
@@ -121,19 +121,19 @@ class CfgVehicles
 
         linkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Heavy_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Heavy_Desert", BASE_LINKED_ITEMS};
-        backpack = "BNA_KC_Backpack_TU_Assault_Predef_Heavy";
+        backpack = "BNA_KC_TU_Backpack_Assault_Predef_Heavy";
     };
 
-    class BNA_KC_OPFOR_Unit_TU_AssaultMedium: BNA_KC_OPFOR_Unit_TU_AssaultHeavy
+    class BNA_KC_TU_Unit_AssaultMedium: BNA_KC_TU_Unit_AssaultHeavy
     {
         displayName = "Medium Assault";
         editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\AssaultMedium.jpg";
         linkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
-        backpack = "BNA_KC_Backpack_TU_Assault_Predef_Medium";
+        backpack = "BNA_KC_TU_Backpack_Assault_Predef_Medium";
     };
 
-    class BNA_KC_OPFOR_Unit_TU_SL: BNA_KC_OPFOR_Unit_TU_Rifleman
+    class BNA_KC_TU_Unit_SL: BNA_KC_TU_Unit_Rifleman
     {
         displayName = "Squad Leader";
         editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\SL.jpg";
@@ -141,10 +141,10 @@ class CfgVehicles
 
         linkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
-        backpack = "BNA_KC_Backpack_TU_RTO_Predef_SL";
+        backpack = "BNA_KC_TU_Backpack_RTO_Predef_SL";
     };
 
-    class BNA_KC_OPFOR_Unit_TU_Melee: BNA_KC_OPFOR_Unit_TU_Base
+    class BNA_KC_TU_Unit_Melee: BNA_KC_TU_Unit_Base
     {
         // Scope
         scope = 2;
@@ -160,14 +160,14 @@ class CfgVehicles
 
         linkedItems[] = {"SC_Helmet_WP_Desert", "SC_Vest_WP_Light_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_WP_Desert", "SC_Vest_WP_Light_Desert", BASE_LINKED_ITEMS};
-        backpack = "BNA_KC_Backpack_TU_Heavy";
+        backpack = "BNA_KC_TU_Backpack_Heavy";
     };
 
     // ┌───────────────────┐
     // │     Backpacks     │
     // └───────────────────┘
     class Bag_Base;
-    class BNA_KC_Backpack_TU: Bag_Base
+    class BNA_KC_TU_Backpack: Bag_Base
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -188,7 +188,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"sc_equipment\data\marine\textures\backpack_co.paa"};
         picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
-    class BNA_KC_Backpack_TU_Predef_Rifleman: BNA_KC_Backpack_TU
+    class BNA_KC_TU_Backpack_Predef_Rifleman: BNA_KC_TU_Backpack
     {
         // Scope
         scope = 1;
@@ -204,7 +204,7 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Backpack_TU_Heavy: BNA_KC_Backpack_TU
+    class BNA_KC_TU_Backpack_Heavy: BNA_KC_TU_Backpack
     {
         displayName = "[KC TU] Heavy Backpack";
         maximumLoad = 450;
@@ -214,7 +214,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"sc_equipment\data\wasp\textures\backpack_co.paa"};
         picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
-    class BNA_KC_Backpack_TU_Heavy_Predef_AT: BNA_KC_Backpack_TU_Heavy
+    class BNA_KC_TU_Backpack_Heavy_Predef_AT: BNA_KC_TU_Backpack_Heavy
     {
         // Scope
         scope = 1;
@@ -232,7 +232,7 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Backpack_TU_Assault: BNA_KC_Backpack_TU
+    class BNA_KC_TU_Backpack_Assault: BNA_KC_TU_Backpack
     {
         displayName = "[KC TU] Assault Backpack";
         maximumLoad = 300;
@@ -242,7 +242,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"sc_equipment\data\wasp\textures\backpack_co.paa"};
         picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
-    class BNA_KC_Backpack_TU_Assault_Predef_Heavy: BNA_KC_Backpack_TU_Assault
+    class BNA_KC_TU_Backpack_Assault_Predef_Heavy: BNA_KC_TU_Backpack_Assault
     {
         // Scope
         scope = 1;
@@ -257,7 +257,7 @@ class CfgVehicles
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
         };
     };
-    class BNA_KC_Backpack_TU_Assault_Predef_Medium: BNA_KC_Backpack_TU_Assault_Predef_Heavy
+    class BNA_KC_TU_Backpack_Assault_Predef_Medium: BNA_KC_TU_Backpack_Assault_Predef_Heavy
     {
         class TransportMagazines
         {
@@ -268,7 +268,7 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Backpack_TU_RTO: BNA_KC_Backpack_TU
+    class BNA_KC_TU_Backpack_RTO: BNA_KC_TU_Backpack
     {
         displayName = "[KC TU] Radio Backpack";
         mass = 35;
@@ -286,7 +286,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_east_radio_code";
         tf_subtype = "digital_lr";
     };
-    class BNA_KC_Backpack_TU_RTO_Predef_SL: BNA_KC_Backpack_TU_RTO
+    class BNA_KC_TU_Backpack_RTO_Predef_SL: BNA_KC_TU_Backpack_RTO
     {
         // Scope
         scope = 1;
@@ -365,7 +365,7 @@ class CfgMagazines
 
 class Extended_Init_EventHandlers
 {
-    class BNA_KC_OPFOR_Unit_TU_Melee
+    class BNA_KC_TU_Unit_Melee
     {
         class Melee_Init
         {

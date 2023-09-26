@@ -36,27 +36,27 @@ class CfgPatches
         };
         units[] =
         {
-            "BNA_KC_OPFOR_Unit_TU_Base",
-            "BNA_KC_OPFOR_Unit_TU_Rifleman",
-            "BNA_KC_OPFOR_Unit_TU_AssaultHeavy",
-            "BNA_KC_OPFOR_Unit_TU_AssaultMedium",
-            "BNA_KC_OPFOR_Unit_TU_AT",
-            "BNA_KC_OPFOR_Unit_TU_SL",
-            "BNA_KC_OPFOR_Unit_TU_Melee",
+            "BNA_KC_TU_Unit_Base",
+            "BNA_KC_TU_Unit_Rifleman",
+            "BNA_KC_TU_Unit_AssaultHeavy",
+            "BNA_KC_TU_Unit_AssaultMedium",
+            "BNA_KC_TU_Unit_AT",
+            "BNA_KC_TU_Unit_SL",
+            "BNA_KC_TU_Unit_Melee",
 
-            "BNA_KC_Backpack_TU",
-            "BNA_KC_Backpack_TU_Predef_Rifleman",
-            "BNA_KC_Backpack_TU_Heavy",
-            "BNA_KC_Backpack_TU_Heavy_Predef_AT",
-            "BNA_KC_Backpack_TU_Assault",
-            "BNA_KC_Backpack_TU_Assault_Predef_Heavy",
-            "BNA_KC_Backpack_TU_Assault_Predef_Medium",
-            "BNA_KC_Backpack_TU_RTO",
-            "BNA_KC_Backpack_TU_RTO_Predef_SL"
+            "BNA_KC_TU_Backpack",
+            "BNA_KC_TU_Backpack_Predef_Rifleman",
+            "BNA_KC_TU_Backpack_Heavy",
+            "BNA_KC_TU_Backpack_Heavy_Predef_AT",
+            "BNA_KC_TU_Backpack_Assault",
+            "BNA_KC_TU_Backpack_Assault_Predef_Heavy",
+            "BNA_KC_TU_Backpack_Assault_Predef_Medium",
+            "BNA_KC_TU_Backpack_RTO",
+            "BNA_KC_TU_Backpack_RTO_Predef_SL"
         };
         weapons[] =
         {
-            "BNA_KC_OPFOR_Uniform_TU"
+            "BNA_KC_TU_Uniform"
         };
 
         skipWhenMissingDependencies = 1;
