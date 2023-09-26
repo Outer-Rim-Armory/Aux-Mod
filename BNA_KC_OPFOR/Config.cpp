@@ -32,5 +32,6 @@ class CfgVehicles
     class BNA_KC_OPFOR_Unit_Base: ls_redforUnit_base
     {
         displayName = "OPFOR Unit Base";
+        uniformClass = "BNA_KC_OPFOR_Uniform_Base";
     };
 };
