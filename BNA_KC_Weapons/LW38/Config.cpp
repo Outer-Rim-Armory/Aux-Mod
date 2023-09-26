@@ -115,6 +115,9 @@ class CfgMagazines
     {
         displayName = "[KC] LW-38 Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: LW-38";
+
+        model = "LF_Weapon_Unit\lw38m\mag.p3d";
+        picture = "\LF_Weapon_Unit\lw38m\ui\mag.paa";
     };
 };
 
