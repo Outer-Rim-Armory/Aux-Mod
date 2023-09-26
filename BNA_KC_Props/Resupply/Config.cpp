@@ -57,7 +57,7 @@ class CfgVehicles
             MAG_XX(Aux12thFleet_Mag_DC15X, 10)
             MAG_XX(Aux_12thFleet_Mag_DC15L, 10)
             MAG_XX(Aux_12thFleet_Mag_DP23, 10)
-            MAG_XX(12thFleet_Mag_WestarM5, 10)
+            MAG_XX(Aux12thFleet_Mag_WestarM5, 10)
             MAG_XX(BNA_KC_Mag_Valken38X, 10)
 
             // UGL Ammo
@@ -105,7 +105,7 @@ class CfgVehicles
             MAG_XX(Aux12thFleet_Mag_DC15X, 160)
             MAG_XX(Aux_12thFleet_Mag_DC15L, 160)
             MAG_XX(Aux_12thFleet_Mag_DP23, 160)
-            MAG_XX(12thFleet_Mag_WestarM5, 160)
+            MAG_XX(Aux12thFleet_Mag_WestarM5, 160)
             MAG_XX(BNA_KC_Mag_Valken38X, 160)
 
             // UGL Ammo
