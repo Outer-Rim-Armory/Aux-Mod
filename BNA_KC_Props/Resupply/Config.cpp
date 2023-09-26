@@ -51,7 +51,7 @@ class CfgVehicles
         class TransportMagazines
         {
             // Primary Ammo
-            MAG_XX(12thFleet_Mag_DC15A, 10)
+            MAG_XX(Aux12thFleet_Mag_DC15A, 10)
             MAG_XX(12thFleet_Mag_DC15S, 10)
             MAG_XX(Aux12thFleet_Mag_DC15C, 10)
             MAG_XX(Aux12thFleet_Mag_DC15X, 10)
@@ -99,7 +99,7 @@ class CfgVehicles
         class TransportMagazines
         {
             // Primary Ammo
-            MAG_XX(12thFleet_Mag_DC15A, 160)
+            MAG_XX(Aux12thFleet_Mag_DC15A, 160)
             MAG_XX(12thFleet_Mag_DC15S, 160)
             MAG_XX(Aux12thFleet_Mag_DC15C, 160)
             MAG_XX(Aux12thFleet_Mag_DC15X, 160)
@@ -123,7 +123,7 @@ class CfgVehicles
             MAG_XX(3Rnd_HE_Grenade_shell, 15)
 
             // Secondary Ammo
-            MAG_XX(12thFleet_Mag_DC15A, 50)
+            MAG_XX(Aux12thFleet_Mag_DC15A, 50)
 
             // Launcher Ammo
             MAG_XX(3AS_JLTS_MK39_AA, 5)

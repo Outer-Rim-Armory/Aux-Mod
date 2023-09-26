@@ -41,9 +41,9 @@ class CfgWeapons
 }; \
 class TransportMagazines \
 { \
-    class _xx_12thFleet_Mag_DC15A \
+    class _xx_Aux12thFleet_Mag_DC15A \
     { \
-        magazine = "12thFleet_Mag_DC15A"; \
+        magazine = "Aux12thFleet_Mag_DC15A"; \
         count = 15; \
     }; \
     class _xx_12thFleet_Mag_DC15S \
@@ -174,9 +174,9 @@ class TransportItems \
 }; \
 class TransportMagazines \
 { \
-    class _xx_12thFleet_Mag_DC15A \
+    class _xx_Aux12thFleet_Mag_DC15A \
     { \
-        magazine = "12thFleet_Mag_DC15A"; \
+        magazine = "Aux12thFleet_Mag_DC15A"; \
         count = 5; \
     }; \
     class _xx_12thFleet_Mag_DC15S \
