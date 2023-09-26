@@ -4,6 +4,40 @@
 
 class CfgWeapons
 {
+    // ┌───────────────────┐
+    // │      Helmets      │
+    // └───────────────────┘
+    class ls_redforHelmet_base;
+    class BNA_KC_OPFOR_Helmet_Base: ls_redforHelmet_base
+    {
+        class ItemInfo;
+    };
+    class BNA_KC_Galtorran_Helmet: BNA_KC_OPFOR_Helmet_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC GM] Gal'torran Helmet";
+
+        model = "\OPTRE_UNSC_Units\Army\helmet_p.p3d";
+        hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie", "H_Collar"};
+        hiddenSelectionsTextures[] =
+        {
+            "optre_unsc_units\army\data\helmet_snow_co.paa",
+            "optre_unsc_units\army\data\helmet_visor_co.paa",
+            "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "optre_unsc_units\army\data\soft_packs_co.paa"
+        };
+        picture = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_vac.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie", "H_Collar"};
+            uniformModel = "\OPTRE_UNSC_Units\Army\helmet_p.p3d";
+        };
+    };
+
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
