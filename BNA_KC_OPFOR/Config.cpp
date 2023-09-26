@@ -3,6 +3,15 @@
 
 class CfgWeapons
 {
+    // ┌───────────────────┐
+    // │      Helmets      │
+    // └───────────────────┘
+    class ls_redforHelmet_base;
+    class BNA_KC_OPFOR_Helmet_Base: ls_redforHelmet_base
+    {
+        displayName = "OPFOR Helmet Base";
+    };
+
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
