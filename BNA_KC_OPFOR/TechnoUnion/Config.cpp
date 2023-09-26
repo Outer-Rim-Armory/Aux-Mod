@@ -45,11 +45,6 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_TU_Infantry";
         identityTypes[] = {"LanguageENG_F", "Head_NATO", "BNA_KC_TechnoUnion"};
 
-        magazines[] = {};
-        respawnMagazines[] = {};
-        items[] = {};
-        respawnItems[] = {};
-
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         uniformClass = "BNA_KC_TU_Uniform";
         hiddenSelections[] = {"camo", "insignia"};
