@@ -45,8 +45,7 @@ class CfgWeapons
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         handAnim[] = {"OFP2_ManSkeleton", "LF_Weapon_Unit\lw38m\anims\lw38mhand.rtm"};
-        picture = "\LF_Weapon_Unit\lw38m\ui\lw38m.paa";
-        // picture = "\BNA_KC_Weapons\LW38M\Data\Textures\UI\LW38M_UI.paa";
+        picture = "\BNA_KC_Weapons\LW38\Data\Textures\UI\LW38_UI.paa";
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
@@ -102,7 +101,7 @@ class CfgWeapons
 
         displayName = "[KC] LW-38 (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        // picture = "\BNA_KC_Weapons\LW38\Data\Textures\UI\LW38_Fried_UI.paa";
+        picture = "\BNA_KC_Weapons\LW38\Data\Textures\UI\LW38_Fried_UI.paa";
         baseWeapon = "BNA_KC_LW38_Fried";
 
         JLTS_isFried = 1;
