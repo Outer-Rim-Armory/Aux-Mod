@@ -52,7 +52,7 @@ class CfgVehicles
         {
             // Primary Ammo
             MAG_XX(Aux12thFleet_Mag_DC15A, 10)
-            MAG_XX(12thFleet_Mag_DC15S, 10)
+            MAG_XX(Aux12thFleet_Mag_DC15S, 10)
             MAG_XX(Aux12thFleet_Mag_DC15C, 10)
             MAG_XX(Aux12thFleet_Mag_DC15X, 10)
             MAG_XX(Aux_12thFleet_Mag_DC15L, 10)
@@ -100,7 +100,7 @@ class CfgVehicles
         {
             // Primary Ammo
             MAG_XX(Aux12thFleet_Mag_DC15A, 160)
-            MAG_XX(12thFleet_Mag_DC15S, 160)
+            MAG_XX(Aux12thFleet_Mag_DC15S, 160)
             MAG_XX(Aux12thFleet_Mag_DC15C, 160)
             MAG_XX(Aux12thFleet_Mag_DC15X, 160)
             MAG_XX(Aux_12thFleet_Mag_DC15L, 160)
