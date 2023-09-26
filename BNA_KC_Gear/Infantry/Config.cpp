@@ -532,7 +532,7 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11("12thFleet_Mag_DC15S"),
+            ITEM_11("Aux12thFleet_Mag_DC15S"),
             // Stun rounds would go here
             ITEM_2("Aux12thFleet_Mag_DC17"),
             // Stun rounds would go here
@@ -547,7 +547,7 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11("12thFleet_Mag_DC15S"),
+            ITEM_11("Aux12thFleet_Mag_DC15S"),
             // Stun rounds would go here
             ITEM_2("Aux12thFleet_Mag_DC17"),
             // Stun rounds would go here

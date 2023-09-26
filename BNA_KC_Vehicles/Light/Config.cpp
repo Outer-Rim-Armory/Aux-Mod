@@ -46,9 +46,9 @@ class TransportMagazines \
         magazine = "Aux12thFleet_Mag_DC15A"; \
         count = 15; \
     }; \
-    class _xx_12thFleet_Mag_DC15S \
+    class _xx_Aux12thFleet_Mag_DC15S \
     { \
-        magazine = "12thFleet_Mag_DC15S"; \
+        magazine = "Aux12thFleet_Mag_DC15S"; \
         count = 15; \
     }; \
     class _xx_Aux12thFleet_Mag_DC15X \
@@ -179,9 +179,9 @@ class TransportMagazines \
         magazine = "Aux12thFleet_Mag_DC15A"; \
         count = 5; \
     }; \
-    class _xx_12thFleet_Mag_DC15S \
+    class _xx_Aux12thFleet_Mag_DC15S \
     { \
-        magazine = "12thFleet_Mag_DC15S"; \
+        magazine = "Aux12thFleet_Mag_DC15S"; \
         count = 5; \
     }; \
     class _xx_3Rnd_UGL_FlareWhite_F \
