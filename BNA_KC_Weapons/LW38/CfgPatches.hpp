@@ -9,6 +9,7 @@ class CfgPatches
         {
             "LF_Weapon_Unit_lw38m",
                 // LW-38 model / magazine
+                // Scopes
             "BNA_KC_Weapons_DC15A"
                 // DC-15A
         };

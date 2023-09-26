@@ -6,11 +6,16 @@ class CfgWeapons
     class JLTS_DC15A_plastic;
     class BNA_KC_DC15A_Base: JLTS_DC15A_plastic
     {
+        class WeaponSlotsInfo;
         class Single;
         class FullAuto;
     };
     class BNA_KC_DC15A: BNA_KC_DC15A_Base
     {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
         class Single: Single
         {
             class StandardSound;
@@ -39,6 +44,18 @@ class CfgWeapons
         handAnim[] = {"OFP2_ManSkeleton", "LF_Weapon_Unit\lw38m\anims\lw38mhand.rtm"};
         picture = "\LF_Weapon_Unit\lw38m\ui\lw38m.paa";
         // picture = "\BNA_KC_Weapons\LW38M\Data\Textures\UI\LW38M_UI.paa";
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] =
+                {
+                    "LFP_lw38mholo_scope",
+                    "lfp_lw38m_scope"
+                };
+            };
+        };
 
         class Single: Single
         {
