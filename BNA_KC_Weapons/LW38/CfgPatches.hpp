@@ -10,8 +10,12 @@ class CfgPatches
             "LF_Weapon_Unit_lw38m",
                 // LW-38 model / magazine
                 // Scopes
-            "BNA_KC_Weapons_DC15A"
+            "BNA_KC_Weapons_DC15A",
                 // DC-15A
+            "A3_Anims_F_Config_Sdr",
+                // Reload action
+            "LF_Weapon_Unit_Westar45"
+                // Reload sound
         };
         units[] = {};
         weapons[] =
