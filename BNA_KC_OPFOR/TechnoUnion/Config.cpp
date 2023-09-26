@@ -68,8 +68,8 @@ class CfgVehicles
         weapons[] = {"BNA_KC_E5", "", "Throw", "Put"};
         respawnWeapons[] = {"BNA_KC_E5", "", "Throw", "Put"};
 
-        magazines[] = {"Aux_12thFleet_Mag_E5"};
-        respawnMagazines[] = {"Aux_12thFleet_Mag_E5"};
+        magazines[] = {"Aux12thFleet_Mag_E5"};
+        respawnMagazines[] = {"Aux12thFleet_Mag_E5"};
         items[] =
         {
             // Other
@@ -99,8 +99,8 @@ class CfgVehicles
         weapons[] = {"BNA_KC_E5", "", "Aux501_Weaps_e60r_at", "Throw", "Put"};
         respawnWeapons[] = {"BNA_KC_E5", "", "Aux501_Weaps_e60r_at", "Throw", "Put"};
 
-        magazines[] = {"Aux_12thFleet_Mag_E5", "Aux501_Weapons_Mags_e60r_at"};
-        respawnMagazines[] = {"Aux_12thFleet_Mag_E5", "Aux501_Weapons_Mags_e60r_at"};
+        magazines[] = {"Aux12thFleet_Mag_E5", "Aux501_Weapons_Mags_e60r_at"};
+        respawnMagazines[] = {"Aux12thFleet_Mag_E5", "Aux501_Weapons_Mags_e60r_at"};
 
         linkedItems[] = {"SC_Helmet_WP_EUD_Desert_V", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_WP_EUD_Desert_V", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
@@ -116,8 +116,8 @@ class CfgVehicles
         weapons[] = {"BNA_KC_E5C_Stock", "", "Throw", "Put"};
         respawnWeapons[] = {"BNA_KC_E5C_Stock", "", "Throw", "Put"};
 
-        magazines[] = {"Aux_12thFleet_Mag_E5C"};
-        respawnMagazines[] = {"Aux_12thFleet_Mag_E5C"};
+        magazines[] = {"Aux12thFleet_Mag_E5C"};
+        respawnMagazines[] = {"Aux12thFleet_Mag_E5C"};
 
         linkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Heavy_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Heavy_Desert", BASE_LINKED_ITEMS};
@@ -197,7 +197,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(Aux_12thFleet_Mag_E5, 10)
+            TRANSMAG_XX(Aux12thFleet_Mag_E5, 10)
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
@@ -223,7 +223,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(Aux_12thFleet_Mag_E5, 10)
+            TRANSMAG_XX(Aux12thFleet_Mag_E5, 10)
             TRANSMAG_XX(Aux501_Weapons_Mags_e60r_he, 3)
             TRANSMAG_XX(Aux501_Weapons_Mags_e60r_at, 3)
             TRANSMAG_XX(SC_IG3, 2)
@@ -251,7 +251,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(Aux_12thFleet_Mag_E5C, 10)
+            TRANSMAG_XX(Aux12thFleet_Mag_E5C, 10)
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
@@ -261,7 +261,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            TRANSMAG_XX(Aux_12thFleet_Mag_E5C, 10)
+            TRANSMAG_XX(Aux12thFleet_Mag_E5C, 10)
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
@@ -295,7 +295,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(Aux_12thFleet_Mag_E5, 10)
+            TRANSMAG_XX(Aux12thFleet_Mag_E5, 10)
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
