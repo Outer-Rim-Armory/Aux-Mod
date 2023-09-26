@@ -5,7 +5,7 @@
 class CfgMagazines
 {
     class JLTS_stun_mag_short;
-    class 12thFleet_Mag_StunShort: JLTS_stun_mag_short
+    class Aux12thFleet_Mag_StunShort: JLTS_stun_mag_short
     {
         author = "DartRuffian and Dexus";
         displayName = "[12th Fleet] Stun Energy Cell (Short)";
@@ -14,10 +14,10 @@ class CfgMagazines
 
         JLTS_hasEMPProtection = 1;
 
-        ammo = "Aux_12thFleet_Ammo_Stun";
+        ammo = "Aux12thFleet_Ammo_Stun";
     };
 
-    class 12thFleet_Mag_StunLong: 12thFleet_Mag_StunShort
+    class Aux12thFleet_Mag_StunLong: Aux12thFleet_Mag_StunShort
     {
         displayName = "[12th Fleet] Stun Energy Cell (Long)";
         displayNameShort = "Stun (Long)";
@@ -60,35 +60,47 @@ class CfgMagazines
 class CfgAmmo
 {
     class JLTS_bullet_rifle_blue;
-    class Aux_12thFleet_Ammo_Rifle_Blue: JLTS_bullet_rifle_blue
+    class Aux12thFleet_Ammo_Rifle_Blue: JLTS_bullet_rifle_blue
     {
         coefgravity = 0;
         // 3AS Hit Sounds/Effects
         BULLET_SOUNDS
         BULLET_EFFECTS
     };
-    class Aux_12thFleet_Ammo_Rifle_Red: Aux_12thFleet_Ammo_Rifle_Blue
+    class Aux12thFleet_Ammo_Rifle_Red: Aux12thFleet_Ammo_Rifle_Blue
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+    };
+
+    class Aux12thFleet_Ammo_AutoRifle_Blue: Aux12thFleet_Ammo_Rifle_Blue
+    {
+        hit = 17.5;
+        caliber = 2.8;
+        tracerscale = 1.5;
+    };
+    class Aux12thFleet_Ammo_AutoRifle_Red: Aux12thFleet_Ammo_AutoRifle_Blue
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
     };
 
     class JLTS_bullet_carbine_blue;
-    class Aux_12thFleet_Ammo_Carbine_Blue: JLTS_bullet_carbine_blue
+    class Aux12thFleet_Ammo_Carbine_Blue: JLTS_bullet_carbine_blue
     {
         coefgravity = 0;
         // 3AS Hit Sounds/Effects
         BULLET_SOUNDS
         BULLET_EFFECTS
     };
-    class Aux_12thFleet_Ammo_Carbine_Red: Aux_12thFleet_Ammo_Carbine_Blue
+    class Aux12thFleet_Ammo_Carbine_Red: Aux12thFleet_Ammo_Carbine_Blue
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
     };
 
     class JLTS_bullet_sniper_blue;
-    class Aux_12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
+    class Aux12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
     {
         BULLET_SOUNDS
         BULLET_EFFECTS
@@ -106,25 +118,37 @@ class CfgAmmo
     };
 
     class JLTS_bullet_pistol_blue;
-    class Aux_12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
+    class Aux12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
     {
         coefgravity = 0;
         BULLET_SOUNDS
         BULLET_EFFECTS
     };
 
-    class Aux_12thFleet_Ammo_Scatter_Blue: Aux_12thFleet_Ammo_Pistol_Blue
+    class B_12Gauge_Pellets_Submunition;
+    class Aux12thFleet_Ammo_Scatter_Blue: B_12Gauge_Pellets_Submunition
     {
-        simulation = "shotSpread";
-        fireSpreadAngle = 3;
+		submunitionAmmo = "Aux12thFleet_Ammo_Pistol_Blue";
+		submunitionConeAngle = 1;
+		fireSpreadAngle = 8;
+		caliber = 2;
+        cartridge = "FxCartridge_slug";
+		cost = 5;
+		typicalSpeed = 400;
+		airFriction = -0.0080000004;
+		triggerTime = 0.00030000001;
+		deflecting = 0;
+		deflectionSlowDown = 0.80000001;
+		dangerRadiusHit = 40;
+		dangerRadiusBulletClose = 16;
     };
-    class Aux_12thFleet_Ammo_Scatter_HP_Blue: Aux_12thFleet_Ammo_Scatter_Blue
+    class Aux12thFleet_Ammo_Scatter_HP_Blue: Aux12thFleet_Ammo_Scatter_Blue
     {
         hit = 10;
     };
 
     class JLTS_bullet_stun;
-    class Aux_12thFleet_Ammo_Stun: JLTS_bullet_stun
+    class Aux12thFleet_Ammo_Stun: JLTS_bullet_stun
     {
         coefgravity = 0;
     };
@@ -223,8 +247,8 @@ class CfgMagazineWells
     {
         KC_Magazines[] =
         {
-            "12thFleet_Mag_StunShort",
-            "12thFleet_Mag_StunLong"
+            "Aux12thFleet_Mag_StunShort",
+            "Aux12thFleet_Mag_StunLong"
         };
     };
 };

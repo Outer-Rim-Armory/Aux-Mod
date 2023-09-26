@@ -34,7 +34,7 @@ class CfgWeapons
         baseWeapon = "BNA_KC_E5_Base";
 
         muzzles[] = {"this"};
-        magazines[] = {"Aux_12thFleet_Mag_E5"};
+        magazines[] = {"Aux12thFleet_Mag_E5"};
         magazineWell[] = {};
 
         fireLightDiffuse[] = { 1, 0, 0 };
@@ -154,13 +154,13 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_E5_mag;
-    class Aux_12thFleet_Mag_E5: JLTS_E5_mag
+    class Aux12thFleet_Mag_E5: JLTS_E5_mag
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] E-5 Energy Cell";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 100<br/>Used In: E-5";
-        ammo = "Aux_12thFleet_Ammo_Carbine_Red";
+        ammo = "Aux12thFleet_Ammo_Carbine_Red";
 
         JLTS_hasEMPProtection = 1;
     };

@@ -15,4 +15,10 @@ class CfgUnitInsignia
         displayName = "[KC] Kaminoan Trainer";
         texture = "\BNA_KC_Gear\Insignias\Data\Textures\Kaminoan_Trainer.paa";
     };
+
+    class BNA_KC_CloneForce99: BNA_KC_Kamino_Cloner
+    {
+        displayName = "[KC] Clone Force 99";
+        texture = "\BNA_KC_Gear\Insignias\Data\Textures\CF_99.paa";
+    };
 };

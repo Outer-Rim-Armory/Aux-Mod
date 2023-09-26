@@ -98,7 +98,7 @@ class CfgWeapons
 
         modes[] = {"Single"};
         muzzles[] = {"this", "Stun", "Launcher"};
-        magazines[] = {"12thFleet_Mag_DC17"};
+        magazines[] = {"Aux12thFleet_Mag_DC17"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -293,13 +293,13 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_DC17SA_mag;
-    class 12thFleet_Mag_DC17: JLTS_DC17SA_mag
+    class Aux12thFleet_Mag_DC17: JLTS_DC17SA_mag
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-17 Energy Cell";
         displayNameShort = "Low Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-17";
-        ammo = "Aux_12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux12thFleet_Ammo_Rifle_Blue";
 
         JLTS_hasEMPProtection = 1;
     };

@@ -47,7 +47,7 @@ class CfgWeapons
         {
             "this"
         };
-        magazines[] = {"Aux_12thFleet_Mag_DC15X"};
+        magazines[] = {"Aux12thFleet_Mag_DC15X"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -144,13 +144,13 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_DC15X_mag;
-    class Aux_12thFleet_Mag_DC15X: JLTS_DC15X_mag
+    class Aux12thFleet_Mag_DC15X: JLTS_DC15X_mag
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15X Energy Cell";
         displayNameShort = "High Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-15X";
-        ammo = "Aux_12thFleet_Ammo_Sniper_Blue";
+        ammo = "Aux12thFleet_Ammo_Sniper_Blue";
         count = 20;
 
         JLTS_hasEMPProtection = 1;

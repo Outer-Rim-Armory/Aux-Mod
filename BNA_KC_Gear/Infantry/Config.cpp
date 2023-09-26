@@ -247,15 +247,15 @@ class CfgWeapons
                 };
                 class Chest
                 {
-                    HitpointName = "HitChest";
+                    hitpointName = "HitChest";
                     armor = 12;
-                    PassThrough = 0.3;
+                    passThrough = 0.3;
                 };
                 class Diaphragm
                 {
-                    HitpointName = "HitDiaphragm";
+                    hitpointName = "HitDiaphragm";
                     armor = 12;
-                    PassThrough = 0.3;
+                    passThrough = 0.3;
                 };
             };
         };
@@ -532,9 +532,9 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11("12thFleet_Mag_DC15S"),
+            ITEM_11("Aux12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("12thFleet_Mag_DC17"),
+            ITEM_2("Aux12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -547,9 +547,9 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11("12thFleet_Mag_DC15S"),
+            ITEM_11("Aux12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("12thFleet_Mag_DC17"),
+            ITEM_2("Aux12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -605,7 +605,7 @@ class CfgVehicles
 
         // Editor Properties
         editorSubcategory = "BNA_KC_INF_P1";
-        editorPreview = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Preview_Trooper_P1.paa";
+        editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\Base.jpg";
 
         displayName = "[KC] INF P1 Trooper (Base)"
 
@@ -620,7 +620,7 @@ class CfgVehicles
 
         // Editor Properties
         editorSubcategory = "BNA_KC_INF_P2";
-        editorPreview = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Preview_Trooper_P2.paa";
+        editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\Base.jpg";
 
         // Uniform textures would be applied here ; default textures listed
         uniformClass = "BNA_KC_Uniform_Base";
@@ -645,6 +645,7 @@ class CfgVehicles
     {
         displayName = "[KC] INF Snow - Trooper";
         editorSubcategory = "BNA_KC_INF_Snow";
+        editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Trooper_Insulated.jpg";
 
         // Uniform Model & Textures
         uniformClass = "BNA_KC_Uniform_Insulated";
@@ -691,7 +692,7 @@ class CfgVehicles
 
         displayName = "[KC] Clone Trooper Backpack";
 
-        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_UI.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa", // Main Texture
@@ -707,7 +708,7 @@ class CfgVehicles
         displayName = "[KC] Clone Trooper Backpack (Invisible)";
 
         // Remove the model and textures (invisible)
-        picture = "BNA_KC_Gear\Infantry\Data\UI\Blank.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\Blank.paa";
         model = "BNA_KC_Gear\Data\Models\empty_model.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};

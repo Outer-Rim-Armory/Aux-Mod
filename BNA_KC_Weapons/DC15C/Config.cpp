@@ -45,7 +45,7 @@ class CfgWeapons
 
         modes[] = {"FullAuto", "Single"};
         muzzles[] = {"this"};
-        magazines[] = {"Aux_12thFleet_Mag_DC15C"};
+        magazines[] = {"Aux12thFleet_Mag_DC15C"};
         magazineWell[] = {};
         reloadAction = "3AS_GestureReloadDC15S";
 
@@ -53,6 +53,9 @@ class CfgWeapons
         fireLightDiffuse[] = {0, 0, 1};
         fireLightDuration = 0.05;
         fireLightIntensity = 0.2;
+
+        maxZeroing = 1000;
+        dispersion = 0.00029;
 
         // JLTS emp system
         JLTS_hasElectronics = 1;
@@ -92,6 +95,8 @@ class CfgWeapons
 
         class Single: Single
         {
+            dispersion = 0.00087;
+
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
@@ -103,6 +108,8 @@ class CfgWeapons
         };
         class FullAuto: FullAuto
         {
+            dispersion = 0.00087;
+
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
             {
@@ -143,8 +150,8 @@ class CfgWeapons
 
 class CfgMagazines
 {
-    class 12thFleet_Mag_DC15S;
-    class Aux_12thFleet_Mag_DC15C: 12thFleet_Mag_DC15S
+    class Aux12thFleet_Mag_DC15S;
+    class Aux12thFleet_Mag_DC15C: Aux12thFleet_Mag_DC15S
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15C Energy Cell";

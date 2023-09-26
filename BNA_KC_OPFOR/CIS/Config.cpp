@@ -145,7 +145,7 @@ class CfgVehicles
 
         // Editor Properties
         editorSubcategory = "BNA_KC_SubCat_CIS_SpecOps";
-        editorPreview = "";
+        editorPreview = "\BNA_KC_OPFOR\CIS\Data\Textures\Previews\BXDroid.jpg";
 
         uniformClass = "BNA_KC_OPFOR_Uniform_BXDroid";
         model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
@@ -169,7 +169,7 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11("Aux_12thFleet_Mag_E5"),
+            ITEM_11("Aux12thFleet_Mag_E5"),
             ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -179,7 +179,7 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11("Aux_12thFleet_Mag_E5"),
+            ITEM_11("Aux12thFleet_Mag_E5"),
             ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
