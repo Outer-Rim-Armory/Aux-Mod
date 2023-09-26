@@ -27,7 +27,7 @@ class CfgPatches
         };
         magazines[] =
         {
-            "Aux_12thFleet_Mag_E5"
+            "Aux12thFleet_Mag_E5"
         };
         ammo[] = {};
     };
