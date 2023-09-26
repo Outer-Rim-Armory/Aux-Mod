@@ -2,7 +2,7 @@ class CfgPatches
 {
     class BNA_KC_OPFOR_TechnoUnion
     {
-        addonRootClass= "BNA_KC_Gear";
+        addonRootClass= "BNA_KC_OPFOR";
         author = "SweMonkey and DartRuffian";
         requiredVersion = 1;
         requiredAddons[] =
