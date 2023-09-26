@@ -38,6 +38,9 @@ class CfgWeapons
         muzzles[] = {"this"};
         magazines[] = {"BNA_KC_Mag_LW38"};
 
+        reloadAction = "GestureReloadMX";
+        reloadMagazineSound[] = {"\LF_Weapon_Unit\westar45\data\sounds\westar55reload.wss", 3, 1, 10};
+
         model = "LF_Weapon_Unit\lw38m\lw38m.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
