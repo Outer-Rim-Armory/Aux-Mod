@@ -69,6 +69,7 @@ class CfgWeapons
         };
         class FullAuto: FullAuto
         {
+            reloadTime = 0.15;
             class StandardSound: StandardSound
             {
                 soundBegin[] = {};
