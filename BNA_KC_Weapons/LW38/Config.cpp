@@ -3,7 +3,23 @@
 
 class CfgWeapons
 {
-    class BNA_KC_DC15A;
+    class JLTS_DC15A_plastic;
+    class BNA_KC_DC15A_Base: JLTS_DC15A_plastic
+    {
+        class Single;
+        class FullAuto;
+    };
+    class BNA_KC_DC15A: BNA_KC_DC15A_Base
+    {
+        class Single: Single
+        {
+            class StandardSound;
+        };
+        class FullAuto: FullAuto
+        {
+            class StandardSound;
+        };
+    };
     class BNA_KC_LW38_Base: BNA_KC_DC15A
     {
         // Scope
@@ -23,6 +39,27 @@ class CfgWeapons
         handAnim[] = {"OFP2_ManSkeleton", "LF_Weapon_Unit\lw38m\anims\lw38mhand.rtm"};
         picture = "\LF_Weapon_Unit\lw38m\ui\lw38m.paa";
         // picture = "\BNA_KC_Weapons\LW38M\Data\Textures\UI\LW38M_UI.paa";
+
+        class Single: Single
+        {
+            class StandardSound: StandardSound
+            {
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_LW38"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_LW38"};
+            };
+        };
+        class FullAuto: FullAuto
+        {
+            class StandardSound: StandardSound
+            {
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_LW38"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_LW38"};
+            };
+        };
     };
 
     class BNA_KC_LW38: BNA_KC_LW38_Base
@@ -60,5 +97,27 @@ class CfgMagazines
     {
         displayName = "[KC] LW-38 Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: LW-38";
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_LW38: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"BNA_KC_Weapons\LW38\Data\Audio\LW38_Fire1.ogg", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_LW38: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_LW38"};
     };
 };
