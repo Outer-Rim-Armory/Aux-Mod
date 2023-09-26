@@ -55,6 +55,28 @@ class CfgWeapons
             uniformModel = "MDF\MDFTorso.p3d";
         };
     };
+
+    class BNA_KC_Galtorran_Vest_Medium: BNA_KC_Galtorran_Vest
+    {
+        displayName = "[KC GM] Gal'torran Medium Vest";
+        model = "MDF\MDFMedium.p3d";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "MDF\MDFMedium.p3d";
+        };
+    };
+
+    class BNA_KC_Galtorran_Vest_Heavy: BNA_KC_Galtorran_Vest
+    {
+        displayName = "[KC GM] Gal'torran Heavy Vest";
+        model = "MDF\MDFHeavy.p3d";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "MDF\MDFHeavy.p3d";
+        };
+    };
 };
 
 
