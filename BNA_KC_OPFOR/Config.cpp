@@ -33,5 +33,13 @@ class CfgVehicles
     {
         displayName = "OPFOR Unit Base";
         uniformClass = "BNA_KC_OPFOR_Uniform_Base";
+
+        weapons[] = {};
+        respawnWeapons[] = {};
+        magazines[] = {};
+        respawnMagazines[] = {};
+        items[] = {};
+        respawnItems[] = {};
+        backpack = "";
     };
 };
