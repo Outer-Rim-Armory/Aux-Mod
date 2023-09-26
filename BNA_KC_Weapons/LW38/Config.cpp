@@ -55,7 +55,7 @@ class CfgWeapons
                 compatibleItems[] =
                 {
                     "LFP_lw38mholo_scope",
-                    "lfp_lw38m_scope"
+                    "LFP_lw38m_scope"
                 };
             };
         };
