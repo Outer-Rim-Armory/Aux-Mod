@@ -146,8 +146,8 @@ class CfgVehicles
 
         displayName = "Rifleman";
 
-        linkedItems[] = {"OPTRE_UNSC_CH252_Helmet2_Vacuum_SNO", "SC_MDF_TorsoLight_White", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"OPTRE_UNSC_CH252_Helmet2_Vacuum_SNO", "SC_MDF_TorsoLight_White", BASE_LINKED_ITEMS};
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
         backpack = "OPTRE_ILCS_Rucksack_Black";
     };
 
