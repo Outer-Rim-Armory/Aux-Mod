@@ -72,6 +72,11 @@ class CfgAmmo
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
     };
+    class Aux12thFleet_Ammo_Rifle_Green: Aux12thFleet_Ammo_Rifle_Blue
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+        effectfly = "JLTS_plasma_green";
+    };
 
     class Aux12thFleet_Ammo_AutoRifle_Blue: Aux12thFleet_Ammo_Rifle_Blue
     {
