@@ -534,7 +534,7 @@ class CfgVehicles
             // Ammo
             ITEM_11("12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("12thFleet_Mag_DC17"),
+            ITEM_2("Aux12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -549,7 +549,7 @@ class CfgVehicles
             // Ammo
             ITEM_11("12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("12thFleet_Mag_DC17"),
+            ITEM_2("Aux12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),

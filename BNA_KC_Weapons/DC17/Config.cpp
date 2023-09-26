@@ -98,7 +98,7 @@ class CfgWeapons
 
         modes[] = {"Single"};
         muzzles[] = {"this", "Stun", "Launcher"};
-        magazines[] = {"12thFleet_Mag_DC17"};
+        magazines[] = {"Aux12thFleet_Mag_DC17"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -293,7 +293,7 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_DC17SA_mag;
-    class 12thFleet_Mag_DC17: JLTS_DC17SA_mag
+    class Aux12thFleet_Mag_DC17: JLTS_DC17SA_mag
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-17 Energy Cell";
