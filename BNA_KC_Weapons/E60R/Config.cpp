@@ -3,7 +3,12 @@
 
 class CfgWeapons
 {
-    class JLTS_E60R_AT;
+    class launch_Titan_short_base;
+    class JLTS_E60R_AT: launch_Titan_short_base
+    {
+        class Single;
+        class TopDown;
+    };
     class BNA_KC_E60R_Base: JLTS_E60R_AT
     {
         // Mod Info
@@ -27,6 +32,21 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
+
+        class Single: Single
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_E60R_Shot"};
+            };
+        };
+        class TopDown: TopDown
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_E60R_Shot"};
+            };
+        };
     };
 
     class BNA_KC_E60R: BNA_KC_E60R_Base
@@ -53,5 +73,27 @@ class CfgWeapons
 
         JLTS_isFried = 1;
         magazines[] = {};
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_E60R_Shot: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"swlw_rework\sounds\launcher\E60R_shot.wss", 10, 1, 2000};
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_E60R_Shot: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_E60R"};
     };
 };

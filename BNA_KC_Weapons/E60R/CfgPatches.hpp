@@ -9,8 +9,10 @@ class CfgPatches
         {
             "BNA_KC_Weapons_Core",
                 // Sound Set/Shader
-            "JLTS_weapons_E60R"
+            "JLTS_weapons_E60R",
                 // E-60R
+            "LS_weapon_core"
+                // Firing sound
         };
         units[] = {};
         weapons[] =
