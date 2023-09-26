@@ -25,7 +25,8 @@ class CfgPatches
         };
         weapons[] =
         {
-            "BNA_KC_Galtorran_Uniform"
+            "BNA_KC_Galtorran_Uniform",
+            "BNA_KC_Galtorran_Vest"
         };
 
         skipWhenMissingDependencies = 1;

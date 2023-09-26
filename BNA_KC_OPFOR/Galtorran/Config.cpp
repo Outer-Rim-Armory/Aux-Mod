@@ -28,6 +28,33 @@ class CfgWeapons
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
+    class ls_redforVest_base;
+    class BNA_KC_OPFOR_Vest_Base: ls_redforVest_base
+    {
+        class ItemInfo;
+    };
+    class BNA_KC_Galtorran_Vest: BNA_KC_OPFOR_Vest_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC GM] Gal'torran Light Vest";
+
+        model = "MDF\MDFTorso.p3d";
+        hiddenSelections[] = {"camo", "camo1"};
+        hiddenSelectionsTextures[] =
+        {
+            "MDF\MDFTorso\White\DefaultMaterial_CO.paa",
+            "MDF\MDFLegs\White\DefaultMaterial_CO.paa"
+        };
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo", "camo1"};
+            uniformModel = "MDF\MDFTorso.p3d";
+        };
+    };
 };
 
 
