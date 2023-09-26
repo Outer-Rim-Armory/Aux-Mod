@@ -131,7 +131,7 @@ class CfgSoundShaders
     {
         samples[] =
         {
-            {"BNA_KC_Weapons\LW38\Data\Audio\LW38_Fire1.ogg", 1, 1}
+            {"BNA_KC_Weapons\LW38\Data\Audio\LW38_Fire1.wss", 1, 1}
         };
     };
 };
