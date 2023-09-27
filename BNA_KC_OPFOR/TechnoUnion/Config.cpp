@@ -173,13 +173,9 @@ class CfgVehicles
     // ┌───────────────────┐
     // │     Backpacks     │
     // └───────────────────┘
-    class Bag_Base;
-    class BNA_KC_TU_Backpack: Bag_Base
+    class BNA_KC_OPFOR_Backpack_Base;
+    class BNA_KC_TU_Backpack: BNA_KC_OPFOR_Backpack_Base
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
         // Scope
         scope = 2;
         scopeArsenal = 2;
@@ -187,8 +183,6 @@ class CfgVehicles
 
         displayName = "[KC TU] Backpack";
         descriptionshort = "Techno Union Backpack";
-        maximumLoad = 200;
-        mass = 30;
 
         model = "sc_equipment\data\marine\mr_backpack.p3d";
         hiddenSelections[] = {"camo"};
