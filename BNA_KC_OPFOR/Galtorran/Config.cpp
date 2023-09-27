@@ -62,10 +62,17 @@ class CfgWeapons
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
-    class ls_redforVest_base;
-    class BNA_KC_OPFOR_Vest_Base: ls_redforVest_base
+    class V_PlateCarrier1_rgr;
+    class ls_redforVest_base: V_PlateCarrier1_rgr
     {
         class ItemInfo;
+    };
+    class BNA_KC_OPFOR_Vest_Base: ls_redforVest_base
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo;
+        };
     };
     class BNA_KC_Galtorran_Vest: BNA_KC_OPFOR_Vest_Base
     {
@@ -87,6 +94,12 @@ class CfgWeapons
         {
             hiddenSelections[] = {"camo", "camo1"};
             uniformModel = "MDF\MDFTorso.p3d";
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen;
+                class Chest;
+                class Diaphragm;
+            };
         };
     };
 
@@ -98,6 +111,21 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformModel = "MDF\MDFMedium.p3d";
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen: Abdomen
+                {
+                    armor = 20;
+                };
+                class Chest: Chest
+                {
+                    armor = 20;
+                };
+                class Diaphragm: Diaphragm
+                {
+                    armor = 20;
+                };
+            };
         };
     };
 
@@ -109,6 +137,21 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformModel = "MDF\MDFHeavy.p3d";
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen: Abdomen
+                {
+                    armor = 25;
+                };
+                class Chest: Chest
+                {
+                    armor = 25;
+                };
+                class Diaphragm: Diaphragm
+                {
+                    armor = 25;
+                };
+            };
         };
     };
 };
