@@ -257,7 +257,7 @@ class CfgVehicles
 
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_SL", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_SL", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
-        backpack = "OPTRE_ANPRC_521_Snow";
+        backpack = "BNA_KC_Galtorran_Backpack_RTO_Predef_SL";
     };
 
     // ┌───────────────────┐
@@ -314,6 +314,31 @@ class CfgVehicles
         {
             TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
             TRANSMAG_XX(SC_MPML_M_AT, 3)
+        };
+    };
+
+    class BNA_KC_Galtorran_Backpack_RTO: BNA_KC_Galtorran_Backpack
+    {
+        displayName = "[KC GM] Gal'torran Radio Backpack";
+
+        model = "\OPTRE_unsc_units\army\rucksack.p3d";
+        hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Addons"};
+        hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_sno_co.paa"};
+        picture = "\OPTRE_weapons\backpacks\icons\icon_b_anprc521_ca.paa";
+    };
+    class BNA_KC_Galtorran_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Backpack_RTO
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+        scopeCurator = 0;
+
+        class TransportMagazines
+        {
+            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
+            TRANSMAG_XX(SmokeShell, 4)
+            TRANSMAG_XX(ShieldGrenade_Mag, 3)
         };
     };
 };

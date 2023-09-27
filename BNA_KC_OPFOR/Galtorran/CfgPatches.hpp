@@ -30,7 +30,9 @@ class CfgPatches
             "BNA_KC_Galtorran_Backpack",
             "BNA_KC_Galtorran_Backpack_Predef_Rifleman",
             "BNA_KC_Galtorran_Backpack_Heavy",
-            "BNA_KC_Galtorran_Backpack_Heavy_Predef_AT"
+            "BNA_KC_Galtorran_Backpack_Heavy_Predef_AT",
+            "BNA_KC_Galtorran_Backpack_RTO",
+            "BNA_KC_Galtorran_Backpack_RTO_Predef_SL"
         };
         weapons[] =
         {
