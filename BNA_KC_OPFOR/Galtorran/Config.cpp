@@ -248,6 +248,16 @@ class CfgVehicles
         backpack = "BNA_KC_Galtorran_Backpack_Heavy_Predef_AT";
     };
 
+    class BNA_KC_Galtorran_Unit_SL: BNA_KC_Galtorran_Unit_Rifleman
+    {
+        displayName = "Squad Leader";
+        icon = "iconManLeader";
+
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet_SL", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_SL", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
+        backpack = "OPTRE_ANPRC_521_Snow";
+    };
+
     // ┌───────────────────┐
     // │     Backpacks     │
     // └───────────────────┘
