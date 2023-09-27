@@ -314,6 +314,9 @@ class CfgVehicles
         {
             TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
             TRANSMAG_XX(SC_MPML_M_AT, 3)
+            TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
+            TRANSMAG_XX(SmokeShell, 2)
+            TRANSMAG_XX(ShieldGrenade_Mag, 2)
         };
     };
 
