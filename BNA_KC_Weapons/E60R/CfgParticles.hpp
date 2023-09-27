@@ -1,0 +1,59 @@
+class Aux12thFleet_Particle_E60_Fly
+{
+    class Sparks
+    {
+        simulation = "particles";
+        type = "Aux12thFleet_Cloudlet_E60R_Sparks";
+        position[] = {0, 0, 0};
+        qualityLevel = 2;
+    };
+    class Smoke
+    {
+        simulation = "particles";
+        type = "";
+        position[] = {0, 0, 0};
+        qualityLevel = -1;
+    };
+    class Light
+    {
+        type = "";
+        simulation = "light";
+        position[] = {0, 0, 0};
+    };
+};
+
+
+class CfgCloudlets
+{
+    class Default;
+    class Aux12thFleet_Cloudlet_E60R_Sparks: Default
+    {
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal";
+        color[] = {{1, 0.6, 0.4, -50}};
+        colorVar[] = {0.05, 0.05, 0.05, 5};
+        emissiveColor[] = {{10, 6, 4, 1}};
+        interval = 0.0009;
+        angleVar = 360;
+
+        size[] = {0.12, 0};
+        lifeTime = 2.5;
+        lifeTimeVar = 5;
+        positionVar[] = {0.01, 0.01, 0.01};
+        moveVelocityVar[] = {1, 3, 1};
+
+        particleFSFrameCount = 2;
+        particleFSIndex = 13;
+        particleFSLoop = 0;
+        particleFSNtieth = 16;
+        animationSpeed[] = {1000};
+
+        rubbing = 0.3;
+        volume = 0.01;
+        weight = 100;
+
+        bounceOnSurface = 0.1;
+        bounceOnSurfaceVar = 0.1;
+        blockAIVisibility = 0;
+        timerPeriod = 3;
+    };
+};

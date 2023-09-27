@@ -13,9 +13,11 @@ class CfgPatches
                 // E-60R
             "LS_weapon_core",
                 // Firing sound
-            "A3_Weapons_F"
+            "A3_Weapons_F",
                 // Base Missile Magazines
                 // Base Missile Ammo
+            "A3_Data_F_ParticleEffects"
+                // Base cloudlet
         };
         units[] = {};
         weapons[] =

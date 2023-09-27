@@ -133,7 +133,7 @@ class CfgAmmo
         thrust = 100;
         thrustTime = 5;
         timeToLive = 5;
-        // effectsMissile = "...";
+        effectsMissile = "Aux12thFleet_Particle_E60_Fly";
         soundFly[] = {"swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
         submunitionAmmo = "Aux12thFleet_Ammo_E60R_AT_SubAmmo";
     };
@@ -156,7 +156,7 @@ class CfgAmmo
         thrust = 100;
         thrustTime = 5;
         timeToLive = 5;
-        // effectsMissile = "...";
+        effectsMissile = "Aux12thFleet_Particle_E60_Fly";
         soundFly[] = {"swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
     };
 
@@ -164,7 +164,7 @@ class CfgAmmo
     class Aux12thFleet_Ammo_E60R_AA: M_Titan_AA
     {
         cmImmunity = 0.5;
-        // effectsMissile = "...";
+        effectsMissile = "Aux12thFleet_Particle_E60_Fly";
         soundFly[] = {"swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
     };
 };
