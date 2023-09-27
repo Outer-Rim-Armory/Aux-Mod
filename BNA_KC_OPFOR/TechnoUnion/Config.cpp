@@ -102,6 +102,19 @@ class CfgVehicles
         backpack = "BNA_KC_TU_Backpack_Heavy_Predef_AT";
     };
 
+    class BNA_KC_TU_Unit_AA: BNA_KC_TU_Unit_AT
+    {
+        displayName = "Rifleman (AA)";
+        icon = "iconManAT";
+
+        weapons[] = {"BNA_KC_E5", "", "BNA_KC_E60R_AA", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_E5", "", "BNA_KC_E60R_AA", "Throw", "Put"};
+
+        magazines[] = {"Aux12thFleet_Mag_E5", "Aux12thFleet_Mag_E60R_AA"};
+        respawnMagazines[] = {"Aux12thFleet_Mag_E5", "Aux12thFleet_Mag_E60R_AA"};
+        backpack = "BNA_KC_TU_Backpack_Heavy_Predef_AA";
+    };
+
     class BNA_KC_TU_Unit_AssaultHeavy: BNA_KC_TU_Unit_Rifleman
     {
         displayName = "Heavy Assault";
@@ -221,6 +234,22 @@ class CfgVehicles
             TRANSMAG_XX(Aux12thFleet_Mag_E5, 10)
             TRANSMAG_XX(Aux12thFleet_Mag_E60R_HE, 3)
             TRANSMAG_XX(Aux12thFleet_Mag_E60R_AT, 3)
+            TRANSMAG_XX(SC_IG3, 2)
+            TRANSMAG_XX(SmokeShell, 2)
+            TRANSMAG_XX(ShieldGrenade_Mag, 2)
+        };
+    };
+    class BNA_KC_TU_Backpack_Heavy_Predef_AA: BNA_KC_TU_Backpack_Heavy
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+        scopeCurator = 0;
+
+        class TransportMagazines
+        {
+            TRANSMAG_XX(Aux12thFleet_Mag_E5, 10)
+            TRANSMAG_XX(Aux12thFleet_Mag_E60R_AA, 6)
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)

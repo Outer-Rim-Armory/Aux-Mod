@@ -40,6 +40,7 @@ class CfgPatches
             "BNA_KC_TU_Unit_AssaultHeavy",
             "BNA_KC_TU_Unit_AssaultMedium",
             "BNA_KC_TU_Unit_AT",
+            "BNA_KC_TU_Unit_AA",
             "BNA_KC_TU_Unit_SL",
             "BNA_KC_TU_Unit_Melee",
 
@@ -47,6 +48,7 @@ class CfgPatches
             "BNA_KC_TU_Backpack_Predef_Rifleman",
             "BNA_KC_TU_Backpack_Heavy",
             "BNA_KC_TU_Backpack_Heavy_Predef_AT",
+            "BNA_KC_TU_Backpack_Heavy_Predef_AA",
             "BNA_KC_TU_Backpack_Assault",
             "BNA_KC_TU_Backpack_Assault_Predef_Heavy",
             "BNA_KC_TU_Backpack_Assault_Predef_Medium",
