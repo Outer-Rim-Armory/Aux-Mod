@@ -87,7 +87,7 @@ class CfgMagazines
         displayName = "[12th Fleet] E-60R AT Missile";
         displayNameShort = "AT";
         descriptionShort = "Anti-Tank Missile<br/>Rounds: 1<br/>Used In: E-60R";
-        // ammo = "";
+        ammo = "Aux12thFleet_Ammo_E60R_AT";
 
         JLTS_hasEMPProtection = 1;
 
@@ -121,6 +121,33 @@ class CfgMagazines
 
         allowedSlots[] = {VEST_SLOT, BACKPACK_SLOT};
         mass = 60;
+    };
+};
+
+
+class CfgAmmo
+{
+    class R_PG32V_F;
+    class Aux12thFleet_Ammo_E60R_AT: R_PG32V_F
+    {
+        thrust = 100;
+        thrustTime = 5;
+        timeToLive = 5;
+        // effectsMissile = "...";
+        soundFly[] = {"swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
+        submunitionAmmo = "Aux12thFleet_Ammo_E60R_AT_SubAmmo";
+    };
+
+    class ammo_Penetrator_RPG32V;
+    class Aux12thFleet_Ammo_E60R_AT_SubAmmo: ammo_Penetrator_RPG32V
+    {
+        // Values are the same as ammo_Penetrator_RPG32V, listed here for potential balance tweaking later on
+        hit = 480;
+        caliber = 43.3333;
+
+        thrust = 210;
+        thrustTime = 1.5;
+        typicalSpeed = 1000;
     };
 };
 

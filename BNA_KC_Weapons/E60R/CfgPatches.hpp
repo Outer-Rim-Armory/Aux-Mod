@@ -15,6 +15,7 @@ class CfgPatches
                 // Firing sound
             "A3_Weapons_F"
                 // Base Missile Magazines
+                // Base Missile Ammo
         };
         units[] = {};
         weapons[] =
