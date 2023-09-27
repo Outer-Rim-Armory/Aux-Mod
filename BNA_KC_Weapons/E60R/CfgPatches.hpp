@@ -26,14 +26,24 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
-            "BNA_KC_E60R_Base",
-            "BNA_KC_E60R",
-            "BNA_KC_E60R_Fried"
+            "BNA_KC_E60R_AA_Base",
+            "BNA_KC_E60R_AA",
+            "BNA_KC_E60R_AA_Fried",
             "BNA_KC_E60R_AT_Base",
             "BNA_KC_E60R_AT",
             "BNA_KC_E60R_AT_Fried"
         };
-        magazines[] = {};
-        ammo[] = {};
+        magazines[] =
+        {
+            "Aux12thFleet_Mag_E60R_AT",
+            "Aux12thFleet_Mag_E60R_HE",
+            "Aux12thFleet_Mag_E60R_AA"
+        };
+        ammo[] =
+        {
+            "Aux12thFleet_Ammo_E60R_AT",
+            "Aux12thFleet_Ammo_E60R_HE",
+            "Aux12thFleet_Ammo_E60R_AA"
+        };
     };
 };
