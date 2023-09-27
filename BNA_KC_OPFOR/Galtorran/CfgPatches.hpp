@@ -13,6 +13,8 @@ class CfgPatches
                 // Mandalorian uniform textures
             "OPTRE_UNSC_Units_Army",
                 // Snow Helmet
+            "OPTRE_Weapons_Backpacks",
+                // Backpacks
             "SC_MDF",
                 // MDF White Vests
             "OPTRE_Weapons_Backpacks"
