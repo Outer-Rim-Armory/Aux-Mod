@@ -39,6 +39,8 @@ class CfgWeapons
 
     class BNA_KC_Galtorran_Helmet_SL: BNA_KC_Galtorran_Helmet
     {
+        displayName = "[KC GM] Gal'torran Squad Leader Helmet";
+
         model = "\OPTRE_UNSC_Units\Army\helmet_p.p3d";
         hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie", "H_Collar"};
         hiddenSelectionsTextures[] =
