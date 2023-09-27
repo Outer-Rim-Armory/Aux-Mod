@@ -18,6 +18,7 @@ class CfgPatches
                 // Base Missile Ammo
             "A3_Data_F_ParticleEffects"
                 // Base cloudlet
+                // Missile3 effect
         };
         units[] = {};
         weapons[] =

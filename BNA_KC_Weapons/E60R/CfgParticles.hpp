@@ -10,7 +10,7 @@ class Aux12thFleet_Particle_E60_Fly
     class Smoke
     {
         simulation = "particles";
-        type = "";
+        type = "Aux12thFleet_Cloudlet_E60R_Smoke";
         position[] = {0, 0, 0};
         qualityLevel = -1;
     };
@@ -55,5 +55,19 @@ class CfgCloudlets
         bounceOnSurfaceVar = 0.1;
         blockAIVisibility = 0;
         timerPeriod = 3;
+    };
+
+    class Missile3;
+    class Aux12thFleet_Cloudlet_E60R_Smoke: Missile3
+    {
+        color[] =
+        {
+            {0, 0, 0, 0.5},
+            {0.08, 0.08, 0.08, 0.3},
+            {0.08, 0.08, 0.08, 0.3}
+        };
+        interval = 0.0005;
+        size[] = {2, 4, 4};
+        lifeTime = 3;
     };
 };
