@@ -39,14 +39,14 @@ class CfgWeapons
         {
             class StandardSound
             {
-                soundSetShot[] = {"BNA_KC_SoundSet_E60R_Shot"};
+                soundSetShot[] = {"BNA_KC_SoundSet_E60R"};
             };
         };
         class TopDown: TopDown
         {
             class StandardSound
             {
-                soundSetShot[] = {"BNA_KC_SoundSet_E60R_Shot"};
+                soundSetShot[] = {"BNA_KC_SoundSet_E60R"};
             };
         };
     };
@@ -174,7 +174,7 @@ class CfgAmmo
 class CfgSoundShaders
 {
     class BNA_KC_SoundShader_Weapon_Base;
-    class BNA_KC_SoundShader_E60R_Shot: BNA_KC_SoundShader_Weapon_Base
+    class BNA_KC_SoundShader_E60R: BNA_KC_SoundShader_Weapon_Base
     {
         samples[] =
         {
@@ -186,7 +186,7 @@ class CfgSoundShaders
 class CfgSoundSets
 {
     class BNA_KC_SoundSet_Weapon_Base;
-    class BNA_KC_SoundSet_E60R_Shot: BNA_KC_SoundSet_Weapon_Base
+    class BNA_KC_SoundSet_E60R: BNA_KC_SoundSet_Weapon_Base
     {
         soundShaders[] = {"BNA_KC_SoundShader_E60R"};
     };
