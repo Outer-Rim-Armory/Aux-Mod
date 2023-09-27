@@ -120,7 +120,7 @@ class CfgVehicles
                 displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab 1LT Uniform</t>";
                 statement = "[""1LT""] call BNAKC_fnc_GrabUniform;";
             };
-            class BNA_KC_ChangeMenu: BNA_KC_CRUniform
+            class BNA_KC_ChangeMenu_Helmets: BNA_KC_CRUniform
             {
                 priority = 99;
                 displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>View Detachment Helmets</t>";
@@ -133,7 +133,7 @@ class CfgVehicles
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 1)";
                 statement = "removeHeadgear player; player addHeadgear 'BNA_KC_Helmet_Phase1_Tanker_v2';";
             };
-            class BNA_KC_ChangeMenu2: BNA_KC_ChangeMenu
+            class BNA_KC_ChangeMenu_Uniforms: BNA_KC_ChangeMenu_Helmets
             {
                 displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>View Rank Uniforms</t>";
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 1)";
