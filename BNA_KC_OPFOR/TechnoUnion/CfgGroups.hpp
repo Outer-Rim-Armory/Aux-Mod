@@ -96,6 +96,24 @@ class CfgGroups
                     };
                 };
 
+                class AntiAirSquad: AntiArmorSquad
+                {
+                    name = "Anti-Air Squad";
+                    class Object0: Object0 {};
+                    class Object1: Object1 {};
+                    class Object2: Object2 {};
+                    class Object3: Object3
+                    {
+                        vehicle = "BNA_KC_TU_Unit_AA";
+                    };
+                    class Object4: Object3
+                    {
+                        position[] = {-10, -10, 0};
+                    };
+                    class Object5: Object5 {};
+                    class Object6: Object6 {};
+                };
+
                 class AssaultSquad
                 {
                     faction = "BNA_KC_OPFOR_TU";
