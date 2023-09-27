@@ -117,6 +117,22 @@ class CfgWeapons
         fireLightDiffuse[] = {0, 1, 0};
     };
 
+    class BNA_KC_LW38_Green_Scoped: BNA_KC_LW38_Base
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "LFP_lw38m_scope";
+            };
+        };
+    };
+
     class BNA_KC_LW38_Green_Fried: BNA_KC_LW38_Green
     {
         // Scope
