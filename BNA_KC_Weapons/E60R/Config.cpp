@@ -101,7 +101,7 @@ class CfgMagazines
         displayNameShort = "HE";
         descriptionShort = "High Explosive Missile<br/>Rounds: 1<br/>Used In: E-60R";
 
-        ammo = "R_TBG32V_F";
+        ammo = "Aux12thFleet_Ammo_E60R_HE";
         model = "\A3\weapons_f\launchers\RPG32\tbg32v_rocket_item.p3d";
         picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_tbg32v_rocket_ca.paa";
 
@@ -148,6 +148,16 @@ class CfgAmmo
         thrust = 210;
         thrustTime = 1.5;
         typicalSpeed = 1000;
+    };
+
+    class R_TBG32V_F;
+    class Aux12thFleet_Ammo_E60R_HE: R_TBG32V_F
+    {
+        thrust = 100;
+        thrustTime = 5;
+        timeToLive = 5;
+        // effectsMissile = "...";
+        soundFly[] = {"swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
     };
 };
 
