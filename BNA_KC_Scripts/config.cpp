@@ -30,19 +30,19 @@ class CfgFunctions
         {
             file = "BNA_KC_Scripts\Data\Functions\Developer";
             class devLog {};
-            class exportPreviews{};
+            class exportPreviews {};
         };
 
 		class Helmets
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Helmets";
-			class helmetNVGSwitch{};
+			class helmetNVGSwitch {};
 		};
 
 		class Misc
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
-			class FixInfiniteLoading{};
+			class FixInfiniteLoading {};
 			class getConfigProperty {};
             class inCustomCamera {};
 		};
@@ -50,32 +50,32 @@ class CfgFunctions
 		class Fortifications
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Fortification";
-			class FortificationsPostInit{};
-            class RegisterPreset{};
+			class FortificationsPostInit {};
+            class RegisterPreset {};
 		};
 
         class Map
         {
             file = "BNA_KC_Scripts\Data\Functions\Map";
-			class markSelf{};
-            class markSelfChildren{};
-            class markSelfModifier{};
-            class rgbToHex{};
+			class markSelf {};
+            class markSelfChildren {};
+            class markSelfModifier {};
+            class rgbToHex {};
         };
 
         class EMP
         {
             file = "BNA_KC_Scripts\Data\Functions\EMP";
-            class killDroids;
-            class disableDekaShields;
-            class tempDisableVehicles;
-            class playDroidPopperSound;
+            class killDroids {};
+            class disableDekaShields {};
+            class tempDisableVehicles {};
+            class playDroidPopperSound {};
         };
 
         class Weapons
         {
             file = "BNA_KC_Scripts\Data\Functions\Weapons";
-            class specialGrenadesEH;
+            class specialGrenadesEH {};
         };
 
         class Medical

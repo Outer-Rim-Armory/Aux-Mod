@@ -41,19 +41,19 @@ class CfgWeapons
 }; \
 class TransportMagazines \
 { \
-    class _xx_12thFleet_Mag_DC15A \
+    class _xx_Aux12thFleet_Mag_DC15A \
     { \
-        magazine = "12thFleet_Mag_DC15A"; \
+        magazine = "Aux12thFleet_Mag_DC15A"; \
         count = 15; \
     }; \
-    class _xx_12thFleet_Mag_DC15S \
+    class _xx_Aux12thFleet_Mag_DC15S \
     { \
-        magazine = "12thFleet_Mag_DC15S"; \
+        magazine = "Aux12thFleet_Mag_DC15S"; \
         count = 15; \
     }; \
-    class _xx_Aux_12thFleet_Mag_DC15X \
+    class _xx_Aux12thFleet_Mag_DC15X \
     { \
-        magazine = "Aux_12thFleet_Mag_DC15X"; \
+        magazine = "Aux12thFleet_Mag_DC15X"; \
         count = 5; \
     }; \
 }; \
@@ -174,14 +174,14 @@ class TransportItems \
 }; \
 class TransportMagazines \
 { \
-    class _xx_12thFleet_Mag_DC15A \
+    class _xx_Aux12thFleet_Mag_DC15A \
     { \
-        magazine = "12thFleet_Mag_DC15A"; \
+        magazine = "Aux12thFleet_Mag_DC15A"; \
         count = 5; \
     }; \
-    class _xx_12thFleet_Mag_DC15S \
+    class _xx_Aux12thFleet_Mag_DC15S \
     { \
-        magazine = "12thFleet_Mag_DC15S"; \
+        magazine = "Aux12thFleet_Mag_DC15S"; \
         count = 5; \
     }; \
     class _xx_3Rnd_UGL_FlareWhite_F \
@@ -244,9 +244,9 @@ class TransportMagazines \
         magazine = "3Rnd_HE_Grenade_shell"; \
         count = 2; \
     }; \
-    class _xx_12thFleet_Mag_DC17 \
+    class _xx_Aux12thFleet_Mag_DC17 \
     { \
-        magazine = "12thFleet_Mag_DC17"; \
+        magazine = "Aux12thFleet_Mag_DC17"; \
         count = 5; \
     }; \
     class _xx_ls_mag_rpg_1rnd \

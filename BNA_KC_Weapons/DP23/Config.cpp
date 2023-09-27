@@ -44,7 +44,7 @@ class CfgWeapons
         {
             "this"
         };
-        magazines[] = {"Aux_12thFleet_Mag_DP23", "Aux_12thFleet_Mag_DP23_HP"};
+        magazines[] = {"Aux12thFleet_Mag_DP23", "Aux12thFleet_Mag_DP23_HP"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -159,23 +159,24 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_DP23_mag;
-    class Aux_12thFleet_Mag_DP23: JLTS_DP23_mag
+    class Aux12thFleet_Mag_DP23: JLTS_DP23_mag
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DP-23 Energy Cell";
         displayNameShort = "Low Energy";
         descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 30<br/>Used In: DP-23";
-        ammo = "Aux_12thFleet_Ammo_Scatter_Blue";
+        ammo = "Aux12thFleet_Ammo_Scatter_Blue";
         count = 30;
 
         JLTS_hasEMPProtection = 1;
     };
 
-    class Aux_12thFleet_Mag_DP23_HP: Aux_12thFleet_Mag_DP23
+    class Aux12thFleet_Mag_DP23_HP: Aux12thFleet_Mag_DP23
     {
         displayName = "[12th Fleet] DP-23 HP Energy Cell";
         displayNameShort = "Medium Energy";
-        ammo = "Aux_12thFleet_Ammo_Scatter_HP_Blue";
+        descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 15<br/>Used In: DP-23";
+        ammo = "Aux12thFleet_Ammo_Scatter_HP_Blue";
         count = 15;
     };
 };

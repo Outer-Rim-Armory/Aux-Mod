@@ -34,7 +34,7 @@ class CfgWeapons
 
         modes[] = {"FullAuto"};
         muzzles[] = {"this"};
-        magazines[] = {"Aux_12thFleet_Mag_DC15L"};
+        magazines[] = {"Aux12thFleet_Mag_DC15L"};
         magazineWell[] = {};
 
         drySound[] = {"MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
@@ -131,12 +131,12 @@ class CfgWeapons
 class CfgMagazines
 {
     class 3AS_200Rnd_EC40_Mag;
-    class Aux_12thFleet_Mag_DC15L: 3AS_200Rnd_EC40_Mag
+    class Aux12thFleet_Mag_DC15L: 3AS_200Rnd_EC40_Mag
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15L Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 240<br/>Used In: DC-15L";
-        ammo = "Aux_12thFleet_Ammo_AutoRifle_Blue";
+        ammo = "Aux12thFleet_Ammo_AutoRifle_Blue";
         count = 240;
     };
 };
