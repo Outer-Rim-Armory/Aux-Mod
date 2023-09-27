@@ -16,7 +16,7 @@ class Aux12thFleet_Particle_E60_Fly
     };
     class Light
     {
-        type = "";
+        type = "Aux12thFleet_Light_E60R";
         simulation = "light";
         position[] = {0, 0, 0};
     };
@@ -69,5 +69,19 @@ class CfgCloudlets
         interval = 0.0005;
         size[] = {2, 4, 4};
         lifeTime = 3;
+    };
+};
+
+
+class CfgLights
+{
+    class RocketLight;
+    class Aux12thFleet_Light_E60R: RocketLight
+    {
+        color[] = {0.941, 0.443, 1};
+        dayLight = 1;
+        useFlare = 1;
+        flareSize = 1.5;
+        flareMaxDistance = 6000;
     };
 };

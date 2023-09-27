@@ -19,6 +19,7 @@ class CfgPatches
             "A3_Data_F_ParticleEffects"
                 // Base cloudlet
                 // Missile3 effect
+                // RocketLight
         };
         units[] = {};
         weapons[] =
