@@ -179,7 +179,7 @@ class CfgVehicles
         {
             class Rifleman
             {
-                displayName = "<t color='#FFFFFF'>Rifleman</t>";
+                displayName = "<t color='#FFFFFF'>Rifleman (DC-15A)</t>";
 
                 position = "camera";
                 radius = 3;
@@ -193,7 +193,7 @@ class CfgVehicles
             };
             class RiflemanAlt: Rifleman
             {
-                displayName = "<t color='#FFFFFF'>Rifleman Alternate</t>";
+                displayName = "<t color='#FFFFFF'>Rifleman (DC-15S)</t>";
                 statement = "['RiflemanAlt'] call BNAKC_fnc_GrabLoadout;";
             };
         };
