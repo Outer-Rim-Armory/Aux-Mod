@@ -25,6 +25,7 @@ class CfgWeapons
         baseWeapon = "BNA_KC_E5C_Base";
         descriptionShort = "Portible Missile Launcher";
 
+        modes[] = {"Single", "TopDown"};
         muzzles[] = {"this"};
         magazines[] =
         {
