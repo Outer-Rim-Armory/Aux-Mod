@@ -21,7 +21,7 @@ class CfgWeapons
         scope = 1;
         scopeArsenal = 0;
 
-        displayName = "[KC] E-60R (Base)";
+        displayName = "[KC] E-60R (AA, Base)";
         baseWeapon = "BNA_KC_E60R_AA_Base";
         descriptionShort = "Portable Missile Launcher";
 
@@ -103,7 +103,7 @@ class CfgWeapons
         scope = 1;
         scopeArsenal = 0;
 
-        displayName = "[KC] E-60R (Base)";
+        displayName = "[KC] E-60R (AT, Base)";
         baseWeapon = "BNA_KC_E60R_AT_Base";
         descriptionShort = "Portable Rocket Launcher";
 
