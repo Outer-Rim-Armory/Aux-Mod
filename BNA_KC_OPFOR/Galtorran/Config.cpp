@@ -190,7 +190,7 @@ class CfgVehicles
     class BNA_KC_Galtorran_Unit_Base: BNA_KC_OPFOR_Unit_Base
     {
         faction = "BNA_KC_OPFOR_Galtorran";
-        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry";
+        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T1";
 
         items[] =
         {
@@ -231,6 +231,20 @@ class CfgVehicles
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Backpack_Predef_Rifleman";
     };
+    class BNA_KC_Galtorran_Unit_Rifleman_T2: BNA_KC_Galtorran_Unit_Rifleman
+    {
+        displayName = "Veteran Rifleman";
+        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Medium", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Medium", BASE_LINKED_ITEMS};
+    };
+    class BNA_KC_Galtorran_Unit_Rifleman_T3: BNA_KC_Galtorran_Unit_Rifleman
+    {
+        displayName = "Elite Rifleman";
+        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+    };
 
     class BNA_KC_Galtorran_Unit_AT: BNA_KC_Galtorran_Unit_Rifleman
     {
@@ -249,6 +263,20 @@ class CfgVehicles
 
         backpack = "BNA_KC_Galtorran_Backpack_Heavy_Predef_AT";
     };
+    class BNA_KC_Galtorran_Unit_AT_T2: BNA_KC_Galtorran_Unit_AT
+    {
+        displayName = "Veteran Rifleman (AT)";
+        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Medium", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Medium", BASE_LINKED_ITEMS};
+    };
+    class BNA_KC_Galtorran_Unit_AT_T3: BNA_KC_Galtorran_Unit_AT
+    {
+        displayName = "Elite Rifleman (AT)";
+        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+    };
 
     class BNA_KC_Galtorran_Unit_Marksman: BNA_KC_Galtorran_Unit_Rifleman
     {
@@ -263,6 +291,20 @@ class CfgVehicles
 
         backpack = "BNA_KC_Galtorran_Backpack_Predef_Marksman";
     };
+    class BNA_KC_Galtorran_Unit_Marksman_T2: BNA_KC_Galtorran_Unit_Marksman
+    {
+        displayName = "Veteran Marksman";
+        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Medium", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Medium", BASE_LINKED_ITEMS};
+    };
+    class BNA_KC_Galtorran_Unit_Marksman_T3: BNA_KC_Galtorran_Unit_Marksman
+    {
+        displayName = "Elite Marksman";
+        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+    };
 
     class BNA_KC_Galtorran_Unit_SL: BNA_KC_Galtorran_Unit_Rifleman
     {
@@ -272,6 +314,20 @@ class CfgVehicles
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_SL", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_SL", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Backpack_RTO_Predef_SL";
+    };
+    class BNA_KC_Galtorran_Unit_SL_T2: BNA_KC_Galtorran_Unit_SL
+    {
+        displayName = "Veteran Squad Leader";
+        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Medium", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Medium", BASE_LINKED_ITEMS};
+    };
+    class BNA_KC_Galtorran_Unit_SL_T3: BNA_KC_Galtorran_Unit_SL
+    {
+        displayName = "Elite Squad Leader";
+        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
     };
 
     // ┌───────────────────┐
@@ -393,7 +449,7 @@ class CfgFactionClasses
 
 class CfgEditorSubcategories
 {
-    class BNA_KC_SubCat_Galtorran_Infantry
+    class BNA_KC_SubCat_Galtorran_Infantry_T1
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
@@ -401,6 +457,14 @@ class CfgEditorSubcategories
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "Infantry";
+        displayName = "Infantry - Basic";
+    };
+    class BNA_KC_SubCat_Galtorran_Infantry_T2: BNA_KC_SubCat_Galtorran_Infantry_T1
+    {
+        displayName = "Infantry - Veteran";
+    };
+    class BNA_KC_SubCat_Galtorran_Infantry_T3: BNA_KC_SubCat_Galtorran_Infantry_T1
+    {
+        displayName = "Infantry - Elite";
     };
 };

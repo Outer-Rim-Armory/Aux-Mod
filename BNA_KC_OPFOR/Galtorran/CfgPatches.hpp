@@ -24,9 +24,17 @@ class CfgPatches
         {
             "BNA_KC_Galtorran_Unit_Base",
             "BNA_KC_Galtorran_Unit_Rifleman",
+            "BNA_KC_Galtorran_Unit_Rifleman_T2",
+            "BNA_KC_Galtorran_Unit_Rifleman_T3",
             "BNA_KC_Galtorran_Unit_AT",
+            "BNA_KC_Galtorran_Unit_AT_T2",
+            "BNA_KC_Galtorran_Unit_AT_T3",
             "BNA_KC_Galtorran_Unit_Marksman",
+            "BNA_KC_Galtorran_Unit_Marksman_T2",
+            "BNA_KC_Galtorran_Unit_Marksman_T3",
             "BNA_KC_Galtorran_Unit_SL",
+            "BNA_KC_Galtorran_Unit_SL_T2",
+            "BNA_KC_Galtorran_Unit_SL_T3",
 
             "BNA_KC_Galtorran_Backpack_Base",
             "BNA_KC_Galtorran_Backpack",
