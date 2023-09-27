@@ -53,6 +53,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC GM] Gal'torran Uniform";
+        picture = "\ls_armor_greenfor\uniform\mandalorian\_ui\icon_uniform_undersuit.paa";
 
         class ItemInfo: ItemInfo
         {
