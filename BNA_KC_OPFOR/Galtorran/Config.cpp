@@ -20,6 +20,25 @@ class CfgWeapons
 
         displayName = "[KC GM] Gal'torran Helmet";
 
+        model = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+        hiddenSelections[] = {"camo", "camo2", "camo3", "H_Neck", "H_UNSCVacLower", "H_UNSCVacVisor", "H_VacCollar", "H_Ghillie"};
+        hiddenSelectionsTextures[] =
+        {
+            "optre_unsc_units\army\data\helmet_snow_co.paa",
+            "optre_unsc_units\army\data\helmet_visor_ca.paa",
+            "optre_unsc_units\army\data\ghillie_woodland_co.paa"
+        };
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo", "camo2", "camo3", "H_Neck", "H_UNSCVacLower", "H_UNSCVacVisor", "H_VacCollar", "H_Ghillie"};
+            uniformModel = "\OPTRE_UNSC_Units\Army\helmet.p3d";
+        };
+
+        picture = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_vac.paa";
+    };
+
+    class BNA_KC_Galtorran_Helmet_SL: BNA_KC_Galtorran_Helmet
+    {
         model = "\OPTRE_UNSC_Units\Army\helmet_p.p3d";
         hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie", "H_Collar"};
         hiddenSelectionsTextures[] =
@@ -29,8 +48,6 @@ class CfgWeapons
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
-        picture = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_vac.paa";
-
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie", "H_Collar"};
