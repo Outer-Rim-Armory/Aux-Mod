@@ -250,6 +250,20 @@ class CfgVehicles
         backpack = "BNA_KC_Galtorran_Backpack_Heavy_Predef_AT";
     };
 
+    class BNA_KC_Galtorran_Unit_Marksman: BNA_KC_Galtorran_Unit_Rifleman
+    {
+        displayName = "Marksman";
+        icon = "LSiconMarksman";
+
+        weapons[] = {"BNA_KC_HI12", "", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_HI12", "", "Throw", "Put"};
+
+        magazines[] = {"BNA_KC_Mag_HI12"};
+        respawnMagazines[] = {"BNA_KC_Mag_HI12"};
+
+        backpack = "BNA_KC_Galtorran_Backpack_Predef_Marksman";
+    };
+
     class BNA_KC_Galtorran_Unit_SL: BNA_KC_Galtorran_Unit_Rifleman
     {
         displayName = "Squad Leader";
@@ -289,6 +303,21 @@ class CfgVehicles
         class TransportMagazines
         {
             TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
+            TRANSMAG_XX(SmokeShell, 2)
+            TRANSMAG_XX(ShieldGrenade_Mag, 2)
+        };
+    };
+    class BNA_KC_Galtorran_Backpack_Predef_Marksman: BNA_KC_Galtorran_Backpack
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+        scopeCurator = 0;
+
+        class TransportMagazines
+        {
+            TRANSMAG_XX(BNA_KC_Mag_HI12, 15)
             TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
