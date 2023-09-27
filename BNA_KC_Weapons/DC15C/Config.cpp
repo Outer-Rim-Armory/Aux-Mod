@@ -45,7 +45,7 @@ class CfgWeapons
 
         modes[] = {"FullAuto", "Single"};
         muzzles[] = {"this"};
-        magazines[] = {"Aux_12thFleet_Mag_DC15C"};
+        magazines[] = {"Aux12thFleet_Mag_DC15C"};
         magazineWell[] = {};
         reloadAction = "3AS_GestureReloadDC15S";
 
@@ -150,8 +150,8 @@ class CfgWeapons
 
 class CfgMagazines
 {
-    class 12thFleet_Mag_DC15S;
-    class Aux_12thFleet_Mag_DC15C: 12thFleet_Mag_DC15S
+    class Aux12thFleet_Mag_DC15S;
+    class Aux12thFleet_Mag_DC15C: Aux12thFleet_Mag_DC15S
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15C Energy Cell";

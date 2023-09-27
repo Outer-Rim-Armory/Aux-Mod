@@ -29,7 +29,7 @@ class CfgWeapons
         descriptionShort = "Repeating Blaster";
 
         muzzles[] = {"this"};
-        magazines[] = {"Aux_12thFleet_Mag_E5C"};
+        magazines[] = {"Aux12thFleet_Mag_E5C"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -119,13 +119,13 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_E5C_mag;
-    class Aux_12thFleet_Mag_E5C: JLTS_E5C_mag
+    class Aux12thFleet_Mag_E5C: JLTS_E5C_mag
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] E-5C Energy Cell";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 150<br/>Used In: E-5C";
-        ammo = "Aux_12thFleet_Ammo_Carbine_Red";
+        ammo = "Aux12thFleet_Ammo_Carbine_Red";
 
         JLTS_hasEMPProtection = 1;
     };

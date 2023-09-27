@@ -52,7 +52,7 @@ class CfgWeapons
 
         modes[] = {"Single", "Burst", "FullAuto"};
         muzzles[] = {"this"};
-        magazines[] = {"12thFleet_Mag_WestarM5"};
+        magazines[] = {"Aux12thFleet_Mag_WestarM5"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -207,7 +207,7 @@ class CfgWeapons
 class CfgMagazines
 {
     class 3AS_60Rnd_EC50_Mag;
-    class 12thFleet_Mag_WestarM5: 3AS_60Rnd_EC50_Mag
+    class Aux12thFleet_Mag_WestarM5: 3AS_60Rnd_EC50_Mag
     {
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] Westar-M5 Energy Cell";
@@ -219,7 +219,7 @@ class CfgMagazines
 
         JLTS_hasEMPProtection = 1;
 
-        ammo = "Aux_12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux12thFleet_Ammo_Rifle_Blue";
     };
 };
 

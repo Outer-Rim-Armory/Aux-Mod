@@ -47,13 +47,13 @@ class CfgVehicles
         // Textures
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Body.paa",
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Body.paa",
+            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Wings.paa",
             "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
             "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
         };
-        textureList[] = { "Standard", 0, "Imperial", 0, "KeeliCompany", 1 };
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "Akali", 0};
         class TextureSources
         {
             class Standard
@@ -89,11 +89,24 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Body.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Body.paa",
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Wings.paa",
                     "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class Akali: Standard
+            {
+                author = "Rev";
+                displayName = "Akali";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Body.paa",
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Wings.paa",
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Weapons.paa",
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Weapon_Details.paa",
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Interior.paa"
                 };
             };
         };
@@ -391,6 +404,26 @@ class CfgVehicles
 
         class UserActions: UserActions
         {
+            class Impulse
+            {
+                displayName = "Impulse";
+                position = "pilotview";
+                radius = 5;
+
+                shortcut = "User19";
+                onlyforplayer = 0;
+                hideOnUse = 1;
+
+                condition = QUOTE(isEngineOn this and ls_player == currentPilot this and !isTouchingGround this;);
+                statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
+            };
+            class Repulse: Impulse
+            {
+                displayName = "Repulse";
+                shortcut = "User20";
+                statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick;);
+            };
+
             class SpecialLoadVehicle
             {
                 displayName = "Load Vehicle (Custom)";
@@ -436,11 +469,50 @@ class CfgVehicles
 
         crew = "BNA_KC_Unit_Phase2_Pilot";
 
-		hiddenselectionstextures[]=
-		{
-			"BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
-			"3as\3as_starships\data\hs_int_co.paa"
-		};
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
+            "3as\3as_starships\data\hs_int_co.paa",
+            "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+        };
+
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "3as\3as_starships\data\hs_ext_co.paa",
+                    "3as\3as_starships\data\hs_int_co.paa",
+                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                };
+            };
+            class Imperial: Standard
+            {
+                displayName = "Imperial";
+                textures[] =
+                {
+                    "3as\3as_starships\data\hs_Imp_ext_co.paa",
+                    "3as\3as_starships\data\hs_int_co.paa",
+                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                };
+            };
+            class KeeliCompany: Standard
+            {
+                author = "Dexus";
+                displayName = "Keeli Company";
+                textures[]=
+                {
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
+                    "3as\3as_starships\data\hs_int_co.paa",
+                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                };
+            };
+        };
 	};
 
 	class Plane;

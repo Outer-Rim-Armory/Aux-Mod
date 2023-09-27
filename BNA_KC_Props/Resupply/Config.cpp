@@ -51,13 +51,13 @@ class CfgVehicles
         class TransportMagazines
         {
             // Primary Ammo
-            MAG_XX(12thFleet_Mag_DC15A, 10)
-            MAG_XX(12thFleet_Mag_DC15S, 10)
-            MAG_XX(Aux_12thFleet_Mag_DC15C, 10)
-            MAG_XX(Aux_12thFleet_Mag_DC15X, 10)
-            MAG_XX(Aux_12thFleet_Mag_DC15L, 10)
-            MAG_XX(Aux_12thFleet_Mag_DP23, 10)
-            MAG_XX(12thFleet_Mag_WestarM5, 10)
+            MAG_XX(Aux12thFleet_Mag_DC15A, 10)
+            MAG_XX(Aux12thFleet_Mag_DC15S, 10)
+            MAG_XX(Aux12thFleet_Mag_DC15C, 10)
+            MAG_XX(Aux12thFleet_Mag_DC15X, 10)
+            MAG_XX(Aux12thFleet_Mag_DC15L, 10)
+            MAG_XX(Aux12thFleet_Mag_DP23, 10)
+            MAG_XX(Aux12thFleet_Mag_WestarM5, 10)
             MAG_XX(BNA_KC_Mag_Valken38X, 10)
 
             // UGL Ammo
@@ -75,7 +75,7 @@ class CfgVehicles
             MAG_XX(3Rnd_HE_Grenade_shell, 5)
 
             // Secondary Ammo
-            MAG_XX(12thFleet_Mag_DC17, 10)
+            MAG_XX(Aux12thFleet_Mag_DC17, 10)
 
             // Launcher Ammo
             MAG_XX(3AS_JLTS_MK39_AA, 2)
@@ -99,13 +99,13 @@ class CfgVehicles
         class TransportMagazines
         {
             // Primary Ammo
-            MAG_XX(12thFleet_Mag_DC15A, 160)
-            MAG_XX(12thFleet_Mag_DC15S, 160)
-            MAG_XX(Aux_12thFleet_Mag_DC15C, 160)
-            MAG_XX(Aux_12thFleet_Mag_DC15X, 160)
-            MAG_XX(Aux_12thFleet_Mag_DC15L, 160)
-            MAG_XX(Aux_12thFleet_Mag_DP23, 160)
-            MAG_XX(12thFleet_Mag_WestarM5, 160)
+            MAG_XX(Aux12thFleet_Mag_DC15A, 160)
+            MAG_XX(Aux12thFleet_Mag_DC15S, 160)
+            MAG_XX(Aux12thFleet_Mag_DC15C, 160)
+            MAG_XX(Aux12thFleet_Mag_DC15X, 160)
+            MAG_XX(Aux12thFleet_Mag_DC15L, 160)
+            MAG_XX(Aux12thFleet_Mag_DP23, 160)
+            MAG_XX(Aux12thFleet_Mag_WestarM5, 160)
             MAG_XX(BNA_KC_Mag_Valken38X, 160)
 
             // UGL Ammo
@@ -123,7 +123,7 @@ class CfgVehicles
             MAG_XX(3Rnd_HE_Grenade_shell, 15)
 
             // Secondary Ammo
-            MAG_XX(12thFleet_Mag_DC15A, 50)
+            MAG_XX(Aux12thFleet_Mag_DC15A, 50)
 
             // Launcher Ammo
             MAG_XX(3AS_JLTS_MK39_AA, 5)
@@ -142,7 +142,7 @@ class CfgVehicles
         {
             MAG_XX(BNA_KC_Mag_Valken38X_AP, 20)
             MAG_XX(BNA_KC_Mag_HI12, 20)
-            MAG_XX(Aux_12thFleet_Mag_DP23_HP, 20)
+            MAG_XX(Aux12thFleet_Mag_DP23_HP, 20)
             MAG_XX(JLTS_Z6_mag, 5)
         };
     };
@@ -153,7 +153,7 @@ class CfgVehicles
         {
             MAG_XX(BNA_KC_Mag_Valken38X_AP, 120)
             MAG_XX(BNA_KC_Mag_HI12, 120)
-            MAG_XX(Aux_12thFleet_Mag_DP23_HP, 120)
+            MAG_XX(Aux12thFleet_Mag_DP23_HP, 120)
             MAG_XX(JLTS_Z6_mag, 10)
         };
     };
@@ -272,5 +272,17 @@ class CfgEditorSubcategories
         scopeCurator = 2;
 
         displayName = "Resupply";
+    };
+};
+
+
+class Extended_Init_EventHandlers
+{
+    class BNA_KC_Resupply_Base
+    {
+        class Disable_Damage
+        {
+            init = "(_this select 0) allowDamage false";
+        };
     };
 };
