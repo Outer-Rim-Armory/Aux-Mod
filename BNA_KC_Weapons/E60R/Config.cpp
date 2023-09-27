@@ -39,6 +39,13 @@ class CfgWeapons
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
 
+        // ACE Overpressure/Backblast
+        ace_overpressure_angle = 30;
+        ace_overpressure_damage = 0.5;
+        ace_overpressure_offset = 0.85;
+        ace_overpressure_priority = 1;
+        ace_overpressure_range = 2;
+
         class Single: Single
         {
             class StandardSound
@@ -121,6 +128,13 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
+
+        // ACE Overpressure/Backblast
+        ace_overpressure_angle = 30;
+        ace_overpressure_damage = 0.5;
+        ace_overpressure_offset = 0.85;
+        ace_overpressure_priority = 1;
+        ace_overpressure_range = 2;
 
         class Single: Single
         {
