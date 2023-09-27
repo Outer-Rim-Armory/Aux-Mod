@@ -80,6 +80,82 @@ class CfgWeapons
         JLTS_isFried = 1;
         magazines[] = {};
     };
+
+    class Launcher_Base_F;
+    class launch_RPG32_F: Launcher_Base_F
+    {
+        class Single;
+    };
+    class BNA_KC_E60R_AT_Base: launch_RPG32_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
+        displayName = "[KC] E-60R (Base)";
+        baseWeapon = "BNA_KC_E60R_AT_Base";
+        descriptionShort = "Portable Rocket Launcher";
+
+        modes[] = {"Single", "TopDown"};
+        muzzles[] = {"this"};
+        magazines[] =
+        {
+            "Aux12thFleet_Mag_E60R_AT",
+            "Aux12thFleet_Mag_E60R_HE"
+        };
+        magazineWell[] = {};
+
+        model = "\MRC\JLTS\weapons\E60R\E60R.p3d";
+        hiddenSelections[] = {"camo1", "illum"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\E5\data\E5_co.paa"};
+        hiddenSelectionsMaterials[] = {"", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        handAnim[] = {"OFP2_ManSkeleton", "\MRC\JLTS\weapons\E60R\anims\E60R_handanim.rtm"};
+        picture = "\MRC\JLTS\weapons\E5\data\ui\E5_ui_ca.paa";
+
+        canShootInWater = 0;
+
+        // JLTS emp system
+        JLTS_hasElectronics = 1;
+        JLTS_hasEMPProtection = 0;
+
+        class Single: Single
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_E60R"};
+            };
+        };
+    };
+
+    class BNA_KC_E60R_AT: BNA_KC_E60R_AT_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] E-60R (AT)";
+        JLTS_friedItem = "BNA_KC_E60R_AT_Fried";
+        baseWeapon = "BNA_KC_E60R_AT";
+    };
+    class BNA_KC_E60R_AT_Fried: BNA_KC_E60R_AT
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
+        baseWeapon = "BNA_KC_E60R_AT_Fried";
+
+        displayName = "[KC] E-60R (AT, Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\BNA_KC_Weapons\E60R\Data\Textures\UI\E60R_Fried_UI.paa";
+
+        JLTS_isFried = 1;
+        magazines[] = {};
+    };
 };
 
 

@@ -11,6 +11,8 @@ class CfgPatches
                 // Sound Set/Shader
             "JLTS_weapons_E60R",
                 // E-60R
+            "A3_Weapons_F_Launchers_RPG32",
+                // E-60R AT base class
             "LS_weapon_core",
                 // Firing sound
             "A3_Weapons_F",
@@ -27,6 +29,9 @@ class CfgPatches
             "BNA_KC_E60R_Base",
             "BNA_KC_E60R",
             "BNA_KC_E60R_Fried"
+            "BNA_KC_E60R_AT_Base",
+            "BNA_KC_E60R_AT",
+            "BNA_KC_E60R_AT_Fried"
         };
         magazines[] = {};
         ammo[] = {};
