@@ -115,7 +115,7 @@ class CfgMagazines
         displayName = "[12th Fleet] E-60R AA Missile";
         displayNameShort = "AA";
         descriptionShort = "Anti-Air Missile<br/>Rounds: 1<br/>Used In: E-60R";
-        // ammo = "";
+        ammo = "Aux12thFleet_Ammo_E60R_AA";
 
         JLTS_hasEMPProtection = 1;
 
@@ -156,6 +156,14 @@ class CfgAmmo
         thrust = 100;
         thrustTime = 5;
         timeToLive = 5;
+        // effectsMissile = "...";
+        soundFly[] = {"swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
+    };
+
+    class M_Titan_AA;
+    class Aux12thFleet_Ammo_E60R_AA: M_Titan_AA
+    {
+        cmImmunity = 0.5;
         // effectsMissile = "...";
         soundFly[] = {"swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
     };
