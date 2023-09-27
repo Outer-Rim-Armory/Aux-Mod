@@ -36,7 +36,7 @@ class CfgWeapons
 
         modes[] = {"Single", "FullAuto"};
         muzzles[] = {"this"};
-        magazines[] = {"BNA_KC_Mag_LW38"};
+        magazines[] = {"BNA_KC_Mag_LW38", "BNA_KC_Mag_LW38_Green"};
 
         reloadAction = "GestureReloadMX";
         reloadMagazineSound[] = {"\LF_Weapon_Unit\westar45\data\sounds\westar55reload.wss", 3, 1, 10};
@@ -115,7 +115,6 @@ class CfgWeapons
         JLTS_friedItem = "BNA_KC_LW38_Fried";
 
         fireLightDiffuse[] = {0, 1, 0};
-        magazines[] = {"BNA_KC_Mag_LW38_Green"};
     };
 
     class BNA_KC_LW38_Green_Fried: BNA_KC_LW38_Green
@@ -150,6 +149,7 @@ class CfgMagazines
     {
         scope = 1;
         scopeArsenal = 0;
+        displayName = "[KC] LW-38 Energy Cell (Green)";
         ammo = "Aux12thFleet_Ammo_Rifle_Green";
     };
 };
