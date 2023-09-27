@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "CfgParticles.hpp"
 #include "..\Macros.hpp"
 
 
