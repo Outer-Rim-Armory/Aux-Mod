@@ -18,7 +18,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC GM] Gal'torran Helmet";
+        displayName = "[KC GM] Helmet";
 
         model = "\OPTRE_UNSC_Units\Army\helmet.p3d";
         hiddenSelections[] = {"camo", "camo2", "camo3", "H_Neck", "H_UNSCVacLower", "H_UNSCVacVisor", "H_VacCollar", "H_Ghillie"};
@@ -28,18 +28,18 @@ class CfgWeapons
             "optre_unsc_units\army\data\helmet_visor_ca.paa",
             "optre_unsc_units\army\data\ghillie_woodland_co.paa"
         };
+        picture = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_vac.paa";
+
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo", "camo2", "camo3", "H_Neck", "H_UNSCVacLower", "H_UNSCVacVisor", "H_VacCollar", "H_Ghillie"};
             uniformModel = "\OPTRE_UNSC_Units\Army\helmet.p3d";
         };
-
-        picture = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_vac.paa";
     };
 
     class BNA_KC_Galtorran_Helmet_SL: BNA_KC_Galtorran_Helmet
     {
-        displayName = "[KC GM] Gal'torran Squad Leader Helmet";
+        displayName = "[KC GM] Squad Leader Helmet";
 
         model = "\OPTRE_UNSC_Units\Army\helmet_p.p3d";
         hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie", "H_Collar"};
@@ -50,10 +50,33 @@ class CfgWeapons
             "optre_unsc_units\army\data\ghillie_woodland_co.paa",
             "optre_unsc_units\army\data\soft_packs_co.paa"
         };
+
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie", "H_Collar"};
             uniformModel = "\OPTRE_UNSC_Units\Army\helmet_p.p3d";
+        };
+    };
+
+    class BNA_KC_Galtorran_Helmet_T2: BNA_KC_Galtorran_Helmet
+    {
+        displayName = "[KC GM] Veteran Helmet";
+
+        model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
+        hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie"};
+        hiddenSelectionsTextures[] =
+        {
+            "optre_unsc_units\army\data\custom\odst_helmet_leigh_co.paa",
+            "optre_unsc_units\army\data\odst_helmet_visor_co.paa",
+            "optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "optre_unsc_units\army\data\soft_packs_co.paa"
+        };
+        picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie"};
+            uniformModel = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
         };
     };
 
