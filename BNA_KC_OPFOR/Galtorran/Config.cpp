@@ -82,6 +82,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC GM] Gal'torran Light Vest";
+        descriptionShort = "Armor Level III";
 
         model = "MDF\MDFTorso.p3d";
         hiddenSelections[] = {"camo", "camo1"};
@@ -107,6 +108,7 @@ class CfgWeapons
     class BNA_KC_Galtorran_Vest_Medium: BNA_KC_Galtorran_Vest
     {
         displayName = "[KC GM] Gal'torran Medium Vest";
+        descriptionShort = "Armor Level IV";
         model = "MDF\MDFMedium.p3d";
 
         class ItemInfo: ItemInfo
@@ -133,6 +135,7 @@ class CfgWeapons
     class BNA_KC_Galtorran_Vest_Heavy: BNA_KC_Galtorran_Vest
     {
         displayName = "[KC GM] Gal'torran Heavy Vest";
+        descriptionShort = "Armor Level V";
         model = "MDF\MDFHeavy.p3d";
 
         class ItemInfo: ItemInfo
