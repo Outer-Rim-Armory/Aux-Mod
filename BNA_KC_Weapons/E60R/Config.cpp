@@ -100,7 +100,7 @@ class CfgWeapons
         baseWeapon = "BNA_KC_E60R_AT_Base";
         descriptionShort = "Portable Rocket Launcher";
 
-        modes[] = {"Single", "TopDown"};
+        modes[] = {"Single"};
         muzzles[] = {"this"};
         magazines[] =
         {
@@ -111,10 +111,10 @@ class CfgWeapons
 
         model = "\MRC\JLTS\weapons\E60R\E60R.p3d";
         hiddenSelections[] = {"camo1", "illum"};
-        hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\E5\data\E5_co.paa"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\E60R\data\E60R_co.paa"};
         hiddenSelectionsMaterials[] = {"", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
         handAnim[] = {"OFP2_ManSkeleton", "\MRC\JLTS\weapons\E60R\anims\E60R_handanim.rtm"};
-        picture = "\MRC\JLTS\weapons\E5\data\ui\E5_ui_ca.paa";
+        picture = "\MRC\JLTS\weapons\E60R\data\ui\E60R_ui_ca.paa";
 
         canShootInWater = 0;
 
