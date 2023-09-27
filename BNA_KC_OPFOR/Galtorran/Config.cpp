@@ -212,6 +212,24 @@ class CfgVehicles
         backpack = "BNA_KC_Galtorran_Backpack_Predef_Rifleman";
     };
 
+    class BNA_KC_Galtorran_Unit_AT: BNA_KC_Galtorran_Unit_Rifleman
+    {
+        displayName = "Rifleman (AT)";
+        icon = "iconManAT";
+
+        weapons[] = {"BNA_KC_LW38_Green", "", "SC_MPML", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_LW38_Green", "", "SC_MPML", "Throw", "Put"};
+
+        magazines[] = {"BNA_KC_Mag_LW38_Green", "SC_MPML_M_AT"};
+        respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "SC_MPML_M_AT"};
+
+        TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
+        TRANSMAG_XX(SmokeShell, 2)
+        TRANSMAG_XX(ShieldGrenade_Mag, 2)
+
+        backpack = "BNA_KC_Galtorran_Backpack_Heavy_Predef_AT";
+    };
+
     // ┌───────────────────┐
     // │     Backpacks     │
     // └───────────────────┘
@@ -244,6 +262,28 @@ class CfgVehicles
             TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
+        };
+    };
+
+    class BNA_KC_Galtorran_Backpack_Heavy: BNA_KC_Galtorran_Backpack
+    {
+        displayName = "[KC GM] Gal'torran Heavy Backpack";
+        maximumLoad = 350;
+
+        model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+        hiddenSelections[] = {"camo1", "biofoam"};
+    };
+    class BNA_KC_Galtorran_Backpack_Heavy_Predef_AT: BNA_KC_Galtorran_Backpack_Heavy
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+        scopeCurator = 0;
+
+        class TransportMagazines
+        {
+            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            TRANSMAG_XX(SC_MPML_M_AT, 3)
         };
     };
 };
