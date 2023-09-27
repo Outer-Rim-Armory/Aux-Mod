@@ -195,12 +195,28 @@ class CfgVehicles
 
         linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
-        backpack = "OPTRE_ILCS_Rucksack_Black";
+        backpack = "BNA_KC_Galtorran_Backpack";
     };
 
     // ┌───────────────────┐
     // │     Backpacks     │
     // └───────────────────┘
+    class BNA_KC_OPFOR_Backpack_Base;
+    class BNA_KC_Galtorran_Backpack: BNA_KC_OPFOR_Backpack_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC GM] Gal'torran Backpack";
+        descriptionshort = "Gal'torran Military Backpack";
+
+        model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+        hiddenSelections[] = {"camo1", "AP_Heavy", "biofoam"};
+        hiddenSelectionsTextures[] = {"OPTRE_Weapons\Backpacks\data\ruck_black_CO.paa"};
+        picture = "\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
+    };
 };
 
 
