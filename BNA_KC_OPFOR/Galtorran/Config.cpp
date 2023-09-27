@@ -480,14 +480,14 @@ class CfgEditorSubcategories
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "Infantry - Basic";
+        displayName = "Infantry T1 - Basic";
     };
     class BNA_KC_SubCat_Galtorran_Infantry_T2: BNA_KC_SubCat_Galtorran_Infantry_T1
     {
-        displayName = "Infantry - Veteran";
+        displayName = "Infantry T2 - Veteran";
     };
     class BNA_KC_SubCat_Galtorran_Infantry_T3: BNA_KC_SubCat_Galtorran_Infantry_T1
     {
-        displayName = "Infantry - Elite";
+        displayName = "Infantry T3 - Elite";
     };
 };
