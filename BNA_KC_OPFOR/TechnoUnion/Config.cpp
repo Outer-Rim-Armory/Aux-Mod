@@ -91,11 +91,11 @@ class CfgVehicles
         editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Rifleman_AT.jpg";
         icon = "iconManAT";
 
-        weapons[] = {"BNA_KC_E5", "", "Aux501_Weaps_e60r_at", "Throw", "Put"};
-        respawnWeapons[] = {"BNA_KC_E5", "", "Aux501_Weaps_e60r_at", "Throw", "Put"};
+        weapons[] = {"BNA_KC_E5", "", "BNA_KC_E60R_AT", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_E5", "", "BNA_KC_E60R_AT", "Throw", "Put"};
 
-        magazines[] = {"Aux12thFleet_Mag_E5", "Aux501_Weapons_Mags_e60r_at"};
-        respawnMagazines[] = {"Aux12thFleet_Mag_E5", "Aux501_Weapons_Mags_e60r_at"};
+        magazines[] = {"Aux12thFleet_Mag_E5", "Aux12thFleet_Mag_E60R_AT"};
+        respawnMagazines[] = {"Aux12thFleet_Mag_E5", "Aux12thFleet_Mag_E60R_AT"};
 
         linkedItems[] = {"SC_Helmet_WP_EUD_Desert_V", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"SC_Helmet_WP_EUD_Desert_V", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
@@ -219,8 +219,8 @@ class CfgVehicles
         class TransportMagazines
         {
             TRANSMAG_XX(Aux12thFleet_Mag_E5, 10)
-            TRANSMAG_XX(Aux501_Weapons_Mags_e60r_he, 3)
-            TRANSMAG_XX(Aux501_Weapons_Mags_e60r_at, 3)
+            TRANSMAG_XX(Aux12thFleet_Mag_E60R_HE, 3)
+            TRANSMAG_XX(Aux12thFleet_Mag_E60R_AT, 3)
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
@@ -337,23 +337,6 @@ class CfgGlasses
         displayName = "[KC TU] Face Guard";
         identityTypes[] = {"BNA_KC_TechnoUnion", 1};
         picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
-    };
-};
-
-
-class CfgMagazines
-{
-    // Temporary solution until KC E-60 is made.
-    // 501st E-60 rockets can only fit in backpacks, causing a small warning with TU units.
-    class RPG32_F;
-    class Aux501_Weapons_Mags_e60r_at: RPG32_F
-    {
-        allowedSlots[] = {701, 801, 901}; // Can go in vest, uniform, and backpack
-    };
-    class RPG32_HE_F;
-    class Aux501_Weapons_Mags_e60r_he: RPG32_HE_F
-    {
-        allowedSlots[] = {701, 801, 901};
     };
 };
 
