@@ -142,6 +142,38 @@ class CfgVehicles
         };
     };
 
+    class BNA_KC_Gonk_Loadouts: BNA_KC_Utility_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Loadouts Gonk";
+
+        class UserActions
+        {
+            class Rifleman
+            {
+                displayName = "<t color='#FFFFFF'>Rifleman</t>";
+
+                position = "camera";
+                radius = 3;
+                onlyForPlayer = 1;
+
+                hideOnUse = 1;
+                priority = 100;
+
+                condition = "true";
+                statement = "['Rifleman'] call BNAKC_fnc_GrabLoadout;";
+            };
+            class RiflemanAlt: Rifleman
+            {
+                displayName = "<t color='#FFFFFF'>Rifleman Alternate</t>";
+                statement = "['RiflemanAlt'] call BNAKC_fnc_GrabLoadout;";
+            };
+        };
+    };
+
     class BNA_KC_Gonk_Permissions: BNA_KC_Utility_Base
     {
         // Scope
