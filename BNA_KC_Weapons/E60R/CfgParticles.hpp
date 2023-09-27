@@ -71,7 +71,6 @@ class CfgCloudlets
         blockAIVisibility = 0;
         timerPeriod = 3;
 
-
         circleRadius = 0;
         circleVelocity[] = {0, 0, 0};
     };
