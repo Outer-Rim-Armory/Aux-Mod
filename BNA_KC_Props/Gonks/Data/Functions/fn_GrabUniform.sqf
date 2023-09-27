@@ -136,6 +136,6 @@ player addHeadgear _helmet;
 
 player linkItem "ItemMap";         // Adds basic linked items all players will use
 player linkItem "ItemGPS";
-player linkItem "JLTS_clone_comlink";
+player linkItem "SWLB_comlink";
 player linkItem "ItemCompass";
 player linkItem "Itemwatch";
