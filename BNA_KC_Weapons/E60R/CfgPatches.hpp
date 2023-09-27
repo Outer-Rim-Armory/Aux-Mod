@@ -11,8 +11,10 @@ class CfgPatches
                 // Sound Set/Shader
             "JLTS_weapons_E60R",
                 // E-60R
-            "LS_weapon_core"
+            "LS_weapon_core",
                 // Firing sound
+            "A3_Weapons_F"
+                // Base Missile Magazines
         };
         units[] = {};
         weapons[] =

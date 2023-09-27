@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "..\Macros.hpp"
 
 
 class CfgWeapons
@@ -73,6 +74,53 @@ class CfgWeapons
 
         JLTS_isFried = 1;
         magazines[] = {};
+    };
+};
+
+
+class CfgMagazines
+{
+    class RPG32_F;
+    class Aux12thFleet_Mag_E60R_AT: RPG32_F
+    {
+        author = "DartRuffian and SweMonkey";
+        displayName = "[12th Fleet] E-60R AT Missile";
+        displayNameShort = "AT";
+        descriptionShort = "Anti-Tank Missile<br/>Rounds: 1<br/>Used In: E-60R";
+        // ammo = "";
+
+        JLTS_hasEMPProtection = 1;
+
+        allowedSlots[] = {VEST_SLOT, BACKPACK_SLOT};
+        mass = 60;
+    };
+
+    class Aux12thFleet_Mag_E60R_HE: Aux12thFleet_Mag_E60R_AT
+    {
+        displayName = "[12th Fleet] E-60R HE Missile";
+        displayNameShort = "HE";
+        descriptionShort = "High Explosive Missile<br/>Rounds: 1<br/>Used In: E-60R";
+
+        ammo = "R_TBG32V_F";
+        model = "\A3\weapons_f\launchers\RPG32\tbg32v_rocket_item.p3d";
+        picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_tbg32v_rocket_ca.paa";
+
+        mass = 40;
+    };
+
+    class Titan_AA;
+    class Aux12thFleet_Mag_E60R_AA: Titan_AA
+    {
+        author = "DartRuffian and SweMonkey";
+        displayName = "[12th Fleet] E-60R AA Missile";
+        displayNameShort = "AA";
+        descriptionShort = "Anti-Air Missile<br/>Rounds: 1<br/>Used In: E-60R";
+        // ammo = "";
+
+        JLTS_hasEMPProtection = 1;
+
+        allowedSlots[] = {VEST_SLOT, BACKPACK_SLOT};
+        mass = 60;
     };
 };
 
