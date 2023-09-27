@@ -709,6 +709,6 @@ class HitEffects \
     hitWood = "3AS_ImpactPlasma"; \
 };
 
-#define UNIFORM_SLOT 701
-#define VEST_SLOT 801
+#define UNIFORM_SLOT 801
+#define VEST_SLOT 701
 #define BACKPACK_SLOT 901
