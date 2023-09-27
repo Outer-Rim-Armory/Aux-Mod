@@ -172,12 +172,20 @@ class CfgVehicles
         faction = "BNA_KC_OPFOR_Galtorran";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry";
 
-        weapons[] = {};
-        respawnWeapons[] = {};
-        magazines[] = {};
-        respawnMagazines[] = {};
-        items[] = {};
-        respawnItems[] = {};
+        items[] =
+        {
+            // Other
+            ITEM_20("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+            "FirstAidKit"
+        };
+        respawnItems[] =
+        {
+            // Other
+            ITEM_20("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+            "FirstAidKit"
+        };
 
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         uniformClass = "BNA_KC_Galtorran_Uniform";
@@ -193,9 +201,15 @@ class CfgVehicles
 
         displayName = "Rifleman";
 
+        weapons[] = {"BNA_KC_LW38_Green", "", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_LW38_Green", "", "Throw", "Put"};
+
+        magazines[] = {"BNA_KC_Mag_LW38_Green"};
+        respawnMagazines[] = {"BNA_KC_Mag_LW38_Green"};
+
         linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest", BASE_LINKED_ITEMS};
-        backpack = "BNA_KC_Galtorran_Backpack";
+        backpack = "BNA_KC_Galtorran_Backpack_Predef_Rifleman";
     };
 
     // ┌───────────────────┐
@@ -216,6 +230,21 @@ class CfgVehicles
         hiddenSelections[] = {"camo1", "AP_Heavy", "biofoam"};
         hiddenSelectionsTextures[] = {"OPTRE_Weapons\Backpacks\data\ruck_black_CO.paa"};
         picture = "\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
+    };
+    class BNA_KC_Galtorran_Backpack_Predef_Rifleman: BNA_KC_Galtorran_Backpack
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+        scopeCurator = 0;
+
+        class TransportMagazines
+        {
+            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 10)
+            TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
+            TRANSMAG_XX(SmokeShell, 2)
+            TRANSMAG_XX(ShieldGrenade_Mag, 2)
+        };
     };
 };
 
