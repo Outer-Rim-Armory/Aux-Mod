@@ -105,7 +105,6 @@ class CfgVehicles
     class BNA_KC_TU_Unit_AA: BNA_KC_TU_Unit_AT
     {
         displayName = "Rifleman (AA)";
-        icon = "iconManAT";
 
         weapons[] = {"BNA_KC_E5", "", "BNA_KC_E60R_AA", "Throw", "Put"};
         respawnWeapons[] = {"BNA_KC_E5", "", "BNA_KC_E60R_AA", "Throw", "Put"};
