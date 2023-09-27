@@ -36,8 +36,11 @@ class CfgCloudlets
         angleVar = 360;
 
         size[] = {0.12, 0};
+        sizeCoef = 1;
+        sizeVar = 0;
         lifeTime = 2.5;
         lifeTimeVar = 5;
+        position[] = {0, 0, 0};
         positionVar[] = {0.01, 0.01, 0.01};
         moveVelocityVar[] = {1, 3, 1};
 
@@ -51,10 +54,26 @@ class CfgCloudlets
         volume = 0.01;
         weight = 100;
 
+        animationName = "";
+        particleType = "Billboard";
+        moveVelocity[] = {0, 0, 0};
+        rotationVelocity = 1;
+        rotationVelocityVar = 0;
+        animationSpeedCoef = 1;
+        randomDirectionPeriod = 0;
+        randomDirectionPeriodVar = 0;
+        randomDirectionIntensity = 0;
+        randomDirectionIntensityVar = 0;
+        onTimerScript = "";
+        beforeDestroyScript = "";
         bounceOnSurface = 0.1;
         bounceOnSurfaceVar = 0.1;
         blockAIVisibility = 0;
         timerPeriod = 3;
+
+
+        circleRadius = 0;
+        circleVelocity[] = {0, 0, 0};
     };
 
     class Missile3;
@@ -79,6 +98,7 @@ class CfgLights
     class Aux12thFleet_Light_E60R: RocketLight
     {
         color[] = {0.941, 0.443, 1};
+        intensity = 1e8;
         dayLight = 1;
         useFlare = 1;
         flareSize = 1.5;
