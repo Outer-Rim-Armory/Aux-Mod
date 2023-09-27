@@ -26,7 +26,12 @@ class CfgWeapons
         descriptionShort = "Portible Missile Launcher";
 
         muzzles[] = {"this"};
-        magazines[] = {"JLTS_E60R_AT_mag","JLTS_E60R_AP_mag"};
+        magazines[] =
+        {
+            "Aux12thFleet_Mag_E60R_AT",
+            "Aux12thFleet_Mag_E60R_HE",
+            "Aux12thFleet_Mag_E60R_AA"
+        };
         magazineWell[] = {};
 
         canShootInWater = 0;
