@@ -59,6 +59,7 @@ class CfgWeapons
             uniformClass = "BNA_KC_Galtorran_Unit_Base";
         };
     };
+
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
