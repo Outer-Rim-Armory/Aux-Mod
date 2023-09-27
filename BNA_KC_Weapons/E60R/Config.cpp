@@ -11,7 +11,7 @@ class CfgWeapons
         class Single;
         class TopDown;
     };
-    class BNA_KC_E60R_Base: JLTS_E60R_AT
+    class BNA_KC_E60R_AA_Base: JLTS_E60R_AT
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -22,15 +22,13 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] E-60R (Base)";
-        baseWeapon = "BNA_KC_E5C_Base";
-        descriptionShort = "Portible Missile Launcher";
+        baseWeapon = "BNA_KC_E60R_AA_Base";
+        descriptionShort = "Portable Missile Launcher";
 
         modes[] = {"Single", "TopDown"};
         muzzles[] = {"this"};
         magazines[] =
         {
-            "Aux12thFleet_Mag_E60R_AT",
-            "Aux12thFleet_Mag_E60R_HE",
             "Aux12thFleet_Mag_E60R_AA"
         };
         magazineWell[] = {};
@@ -57,25 +55,25 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_E60R: BNA_KC_E60R_Base
+    class BNA_KC_E60R_AA: BNA_KC_E60R_AA_Base
     {
         // Scope
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC] E-60R";
-        JLTS_friedItem = "BNA_KC_E60R_Fried";
-        baseWeapon = "BNA_KC_E60R";
+        displayName = "[KC] E-60R (AA)";
+        JLTS_friedItem = "BNA_KC_E60R_AA_Fried";
+        baseWeapon = "BNA_KC_E60R_AA";
     };
-    class BNA_KC_E60R_Fried: BNA_KC_E60R
+    class BNA_KC_E60R_AA_Fried: BNA_KC_E60R_AA
     {
         // Scope
         scope = 1;
         scopeArsenal = 0;
 
-        baseWeapon = "BNA_KC_E60R_Fried";
+        baseWeapon = "BNA_KC_E60R_AA_Fried";
 
-        displayName = "[KC] E-60R (Fried)";
+        displayName = "[KC] E-60R (AA, Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\BNA_KC_Weapons\E60R\Data\Textures\UI\E60R_Fried_UI.paa";
 
