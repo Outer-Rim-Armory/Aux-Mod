@@ -261,9 +261,9 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Vest_CLC: BNA_KC_Vest_Basic
+    class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
     {
-        displayName = "[KC] INF Vest 04 (CLC)";
+        displayName = "[KC] INF Vest 04 (LCPL)";
 
         model = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
         hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
@@ -271,8 +271,8 @@ class CfgWeapons
         {
             "\SWLB_clones\data\heavy_accessories_co.paa",    // Heavy Strap
             "",                                              // ?
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CLC.paa", // Holster
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CLC.paa"  // Pauldron
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa", // Holster
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa"  // Pauldron
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 
@@ -283,7 +283,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Vest_CPL: BNA_KC_Vest_CLC
+    class BNA_KC_Vest_CPL: BNA_KC_Vest_LCPL
     {
         displayName = "[KC] INF Vest 05 (CPL)";
         hiddenSelectionsTextures[] =
@@ -295,7 +295,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Vest_CS: BNA_KC_Vest_CLC
+    class BNA_KC_Vest_CS: BNA_KC_Vest_LCPL
     {
         displayName = "[KC] INF Vest 06 (CS)";
         model = "\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
