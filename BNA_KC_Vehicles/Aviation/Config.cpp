@@ -515,18 +515,27 @@ class CfgVehicles
         };
     };
 
-    class VTOL_01_base_F;
-    class VTOL_01_armed_base_F: VTOL_01_base_F
+    class VTOL_Base_F;
+    class VTOL_01_base_F: VTOL_Base_F
     {
         class Turrets;
     };
-    class B_T_VTOL_01_armed_F: VTOL_01_armed_base_F
+    class VTOL_01_armed_base_F: VTOL_01_base_F
     {
         class Turrets: Turrets
         {
             class CopilotTurret;
             class GunnerTurret_01;
             class GunnerTurret_02;
+        };
+    };
+    class B_T_VTOL_01_armed_F: VTOL_01_armed_base_F
+    {
+        class Turrets: Turrets
+        {
+            class CopilotTurret: CopilotTurret {};
+            class GunnerTurret_01: GunnerTurret_01 {};
+            class GunnerTurret_02: GunnerTurret_02 {};
         };
     };
     class BNA_KC_HAG_Base: B_T_VTOL_01_armed_F
