@@ -18,7 +18,7 @@ class CfgPatches
             "ls_functions",
                 // Impulse script
             "A3_Air_F_Exp_VTOL_01"
-                // HAG shit
+                // Blackfish
         };
         units[] =
         {
