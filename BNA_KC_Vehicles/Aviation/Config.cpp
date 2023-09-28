@@ -529,15 +529,7 @@ class CfgVehicles
             class GunnerTurret_02;
         };
     };
-    class B_T_VTOL_01_armed_F: VTOL_01_armed_base_F
-    {
-        class Turrets: Turrets
-        {
-            class CopilotTurret: CopilotTurret {};
-            class GunnerTurret_01: GunnerTurret_01 {};
-            class GunnerTurret_02: GunnerTurret_02 {};
-        };
-    };
+    class B_T_VTOL_01_armed_F: VTOL_01_armed_base_F {};
     class BNA_KC_Galaxy_Gunship: B_T_VTOL_01_armed_F
     {
         // Mod Info
