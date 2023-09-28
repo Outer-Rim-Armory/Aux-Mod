@@ -1,13 +1,13 @@
 class CfgPatches
 {
-    class BNA_KC_OPFOR_Galtorran
+    class BNA_KC_INDEP_Galtorran
     {
-        addonRootClass= "BNA_KC_OPFOR";
+        addonRootClass= "BNA_KC_INDEP";
         author = "SweMonkey and DartRuffian";
         requiredVersion = 1;
         requiredAddons[] =
         {
-            "BNA_KC_OPFOR",
+            "BNA_KC_INDEP",
                 // Base uniform, unit, etc.
             "ls_armor_greenfor",
                 // Mandalorian uniform textures

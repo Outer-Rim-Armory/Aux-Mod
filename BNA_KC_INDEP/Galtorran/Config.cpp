@@ -1,5 +1,5 @@
 #include "CfgPatches.hpp"
-#include "\BNA_KC_OPFOR\Macros.hpp"
+#include "\BNA_KC_INDEP\Macros.hpp"
 
 
 class CfgWeapons
@@ -7,12 +7,12 @@ class CfgWeapons
     // ┌───────────────────┐
     // │      Helmets      │
     // └───────────────────┘
-    class ls_redforHelmet_base;
-    class BNA_KC_OPFOR_Helmet_Base: ls_redforHelmet_base
+    class ls_greenforHelmet_base;
+    class BNA_KC_INDEP_Helmet_Base: ls_greenforHelmet_base
     {
         class ItemInfo;
     };
-    class BNA_KC_Galtorran_Helmet: BNA_KC_OPFOR_Helmet_Base
+    class BNA_KC_Galtorran_Helmet: BNA_KC_INDEP_Helmet_Base
     {
         // Scope
         scope = 2;
@@ -83,12 +83,12 @@ class CfgWeapons
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
-    class ls_redforUniform_base;
-    class BNA_KC_OPFOR_Uniform_Base: ls_redforUniform_base
+    class ls_greenforUniform_base;
+    class BNA_KC_INDEP_Uniform_Base: ls_greenforUniform_base
     {
         class ItemInfo;
     };
-    class BNA_KC_Galtorran_Uniform: BNA_KC_OPFOR_Uniform_Base
+    class BNA_KC_Galtorran_Uniform: BNA_KC_INDEP_Uniform_Base
     {
         // Scope
         scope = 2;
@@ -107,18 +107,18 @@ class CfgWeapons
     // │       Vests       │
     // └───────────────────┘
     class V_PlateCarrier1_rgr;
-    class ls_redforVest_base: V_PlateCarrier1_rgr
+    class ls_greenforVest_base: V_PlateCarrier1_rgr
     {
         class ItemInfo;
     };
-    class BNA_KC_OPFOR_Vest_Base: ls_redforVest_base
+    class BNA_KC_INDEP_Vest_Base: ls_greenforVest_base
     {
         class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo;
         };
     };
-    class BNA_KC_Galtorran_Vest: BNA_KC_OPFOR_Vest_Base
+    class BNA_KC_Galtorran_Vest: BNA_KC_INDEP_Vest_Base
     {
         // Scope
         scope = 2;
@@ -209,10 +209,10 @@ class CfgVehicles
     // ┌───────────────────┐
     // │       Units       │
     // └───────────────────┘
-    class BNA_KC_OPFOR_Unit_Base;
-    class BNA_KC_Galtorran_Unit_Base: BNA_KC_OPFOR_Unit_Base
+    class BNA_KC_INDEP_Unit_Base;
+    class BNA_KC_Galtorran_Unit_Base: BNA_KC_INDEP_Unit_Base
     {
-        faction = "BNA_KC_OPFOR_Galtorran";
+        faction = "BNA_KC_INDEP_Galtorran";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T1";
 
         items[] =
@@ -356,8 +356,8 @@ class CfgVehicles
     // ┌───────────────────┐
     // │     Backpacks     │
     // └───────────────────┘
-    class BNA_KC_OPFOR_Backpack_Base;
-    class BNA_KC_Galtorran_Backpack: BNA_KC_OPFOR_Backpack_Base
+    class BNA_KC_INDEP_Backpack_Base;
+    class BNA_KC_Galtorran_Backpack: BNA_KC_INDEP_Backpack_Base
     {
         // Scope
         scope = 2;
@@ -457,7 +457,7 @@ class CfgVehicles
 
 class CfgFactionClasses
 {
-    class BNA_KC_OPFOR_Galtorran
+    class BNA_KC_INDEP_Galtorran
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
