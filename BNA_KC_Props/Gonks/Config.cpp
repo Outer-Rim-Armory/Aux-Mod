@@ -177,23 +177,45 @@ class CfgVehicles
 
         class UserActions
         {
-            class Rifleman
+            /*
+            "Page" IDs
+            0: Home Page
+            1: Rifleman Weapons
+            */
+            class ChangeMenu_Rifleman
             {
-                displayName = "<t color='#FFFFFF'>Rifleman (DC-15A)</t>";
+                displayName = "<t color='#FFFFFF'>Rifleman</t>";
 
                 position = "camera";
                 radius = 3;
                 onlyForPlayer = 1;
 
-                hideOnUse = 1;
+                hideOnUse = 0;
                 priority = 100;
 
-                condition = "true";
+                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) == 0)";
+                statement = "player setVariable ['BNAKC_Loadout_Menu', 1];";
+            };
+
+            class ChangeMenu_Home: ChangeMenu_Rifleman
+            {
+                displayName = "<t color='#FFFFFF' font='PuristaBold'>Home</t>";
+                priority = 99;
+
+                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) != 0)";
+                statement = "player setVariable ['BNAKC_Loadout_Menu', 0];";
+            };
+
+            class Rifleman: ChangeMenu_Rifleman
+            {
+                displayName = "<t color='#FFFFFF'>DC-15A</t>";
+                hideOnUse = 1;
+                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) == 1)";
                 statement = "['Rifleman'] call BNAKC_fnc_GrabLoadout;";
             };
             class RiflemanAlt: Rifleman
             {
-                displayName = "<t color='#FFFFFF'>Rifleman (DC-15S)</t>";
+                displayName = "<t color='#FFFFFF'>DC-15S</t>";
                 statement = "['RiflemanAlt'] call BNAKC_fnc_GrabLoadout;";
             };
         };
