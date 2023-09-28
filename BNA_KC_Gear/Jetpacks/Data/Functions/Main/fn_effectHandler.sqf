@@ -23,6 +23,9 @@ params ["_unit"];
 private ["_jetpack", "_totalEffects", "_remainingSlots", "_effectPoints", "_effectTypes", "_defaultColor", "_lightColor"];
 if !(hasInterface) exitWith {};
 
+_totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
+if (_totalEffects >= BNA_KC_Jet_ParticleLimit) exitWith {};
+
 // Don't play effects for units on the ground or who can't jetpack
 if (!(_unit call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround _unit) exitWith {};
 
@@ -35,7 +38,6 @@ _defaultColor = [1, 1, 1]; // Can't include [] with commas inside in a macro
 _lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_lightColor", _defaultColor);
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
-_totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
 if (_totalEffects + (count _effectTypes * count _effectPoints) > BNA_KC_Jet_ParticleLimit) then
 {
 
