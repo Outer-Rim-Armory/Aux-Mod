@@ -841,12 +841,13 @@ class CfgVehicles
 	};
     */
 
-    class 3AS_Jug_base_F;
-    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F
+
+    class Car_F;
+    class Wheeled_Apc_F: Car_F
     {
         class HitPoints;
     };
-    class 3as_Jug: 3AS_B_Jug_01_base_F
+    class 3AS_Jug_base_F: Wheeled_Apc_F
     {
         class HitPoints: HitPoints
         {
@@ -854,6 +855,8 @@ class CfgVehicles
             class HitHull;
         };
     };
+    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F {};
+    class 3as_Jug: 3AS_B_Jug_01_base_F {};
     class BNA_KC_Juggernaut: 3as_Jug
     {
         // Mod Info
@@ -893,22 +896,6 @@ class CfgVehicles
                 explosionShielding = 0.85;
             };
         };
-        /* Original Values
-        class HitBody: HitBody
-        {
-            armor = 1;
-            explosionShielding = 0.2;
-            minimalHit = 0.1;
-            passThrough = 0.5;
-        };
-        class HitHull: HitHull
-        {
-            armor = 2;
-            explosionShielding = 1.5;
-            minimalHit = 0.1;
-            passThrough = 0;
-        };
-        */
     };
 };
 
