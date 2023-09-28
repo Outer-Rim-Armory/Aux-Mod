@@ -20,26 +20,27 @@
 #define GET_ARRAY(config, defaultValue) (if (isArray (config)) then {getArray (config)} else {defaultValue})
 
 params ["_unit"];
+private ["_jetpack", "_totalEffects", "_remainingSlots", "_effectPoints", "_effectTypes", "_defaultColor", "_lightColor"];
 if !(hasInterface) exitWith {};
 
 // Don't play effects for units on the ground or who can't jetpack
 if (!(_unit call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround _unit) exitWith {};
 
-private _jetpack = backpack _unit;
+_jetpack = backpack _unit;
 
 // Obtain effect point names
-private _effectPoints = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectPoints", []);
-private _effectTypes  = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effects", []);
-private _defaultColor = [1, 1, 1]; // Can't include [] with commas inside in a macro
-private _lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_lightColor", _defaultColor);
+_effectPoints = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectPoints", []);
+_effectTypes  = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effects", []);
+_defaultColor = [1, 1, 1]; // Can't include [] with commas inside in a macro
+_lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_lightColor", _defaultColor);
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
-private _totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
+_totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
 if (_totalEffects + (count _effectTypes * count _effectPoints) > BNA_KC_Jet_ParticleLimit) then
 {
 
     // Particle "slots" remaining
-    private _remainingSlots = (BNA_KC_Jet_ParticleLimit - _totalEffects) min 0;
+    _remainingSlots = (BNA_KC_Jet_ParticleLimit - _totalEffects) min 0;
     format ["_remainingSlots = %1", _remainingSlots] call BNAKC_fnc_devLog;
 
     _remainingSlots = floor (_remainingSlots / count _effectPoints);
