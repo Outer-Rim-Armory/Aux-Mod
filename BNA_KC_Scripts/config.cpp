@@ -78,6 +78,13 @@ class CfgFunctions
             class specialGrenadesEH {};
         };
 
+        class Vehicles
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Vehicles";
+            class hasVehicleSkins {};
+            class skinSwitcherChildren {};
+        };
+
         class Medical
         {
             file = "BNA_KC_Scripts\Data\Functions\Medical";
