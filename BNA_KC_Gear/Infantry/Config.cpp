@@ -261,6 +261,98 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Vest_CLC: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] INF Vest 04 (CLC)";
+
+        model = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\heavy_accessories_co.paa",    // Heavy Strap
+            "",                                              // ?
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CLC.paa", // Holster
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CLC.paa"  // Pauldron
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
+            uniformModel = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_CPL: BNA_KC_Vest_CLC
+    {
+        displayName = "[KC] INF Vest 05 (CPL)";
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CPL.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CPL.paa"
+        };
+    };
+
+    class BNA_KC_Vest_CS: BNA_KC_Vest_CLC
+    {
+        displayName = "[KC] INF Vest 06 (CS)";
+        model = "\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CS.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+        };
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_CSS: BNA_KC_Vest_CS
+    {
+        displayName = "[KC] INF Vest 07 (CSS)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CSS.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+        };
+    };
+
+    class BNA_KC_Vest_CSFC: BNA_KC_Vest_CS
+    {
+        displayName = "[KC] INF Vest 08 (CSFC)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CSFC.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+        };
+    };
+
+    class BNA_KC_Vest_CMS: BNA_KC_Vest_CS
+    {
+        displayName = "[KC] INF Vest 09 (CMS)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CMS.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+        };
+    };
+
+    class BNA_KC_Vest_CSM: BNA_KC_Vest_CS
+    {
+        displayName = "[KC] INF Vest 10 (CSM)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CSM.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+        };
+    };
+
     class BNA_KC_Vest_Medic: BNA_KC_Vest_Basic
     {
         displayName = "[KC] INF Medic Vest 01 (Medic)";
