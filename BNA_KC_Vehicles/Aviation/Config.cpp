@@ -538,7 +538,7 @@ class CfgVehicles
             class GunnerTurret_02: GunnerTurret_02 {};
         };
     };
-    class BNA_KC_HAG_Base: B_T_VTOL_01_armed_F
+    class BNA_KC_Galaxy_Gunship: B_T_VTOL_01_armed_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -583,9 +583,15 @@ class CfgVehicles
             };
         };
     };
+    class BNA_KC_HAG_Base: BNA_KC_Galaxy_Gunship
+    {
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+    };
 
     class B_T_VTOL_01_vehicle_F;
-    class BNA_KC_HVT_Base: B_T_VTOL_01_vehicle_F
+    class BNA_KC_Galaxy_Transport_Vehicle: B_T_VTOL_01_vehicle_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -603,9 +609,15 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
     };
+    class BNA_KC_HVT_Base: BNA_KC_Galaxy_Transport_Vehicle
+    {
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+    };
 
     class B_T_VTOL_01_infantry_F;
-    class BNA_KC_HIT_Base: B_T_VTOL_01_infantry_F
+    class BNA_KC_Galaxy_Transport_Infantry: B_T_VTOL_01_infantry_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -622,6 +634,12 @@ class CfgVehicles
         displayName = "[KC] Galaxy HIT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
+    };
+    class BNA_KC_HIT_Base: BNA_KC_Galaxy_Transport_Infantry
+    {
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
     };
 };
 

@@ -28,8 +28,11 @@ class CfgPatches
             "BNA_KC_LAATi_MK2_Lamps",
             "BNA_KC_LAATc",
             "BNA_KC_RepubTransport",
+            "BNA_KC_Galaxy_Gunship",
             "BNA_KC_HAG_Base",
+            "BNA_KC_Galaxy_Transport_Vehicle",
             "BNA_KC_HVT_Base",
+            "BNA_KC_Galaxy_Transport_Infantry",
             "BNA_KC_HIT_Base"
         };
         weapons[] = {};
