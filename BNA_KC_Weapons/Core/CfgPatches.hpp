@@ -29,6 +29,7 @@ class CfgPatches
             // TODO: Add base bullets
             "Aux12thFleet_Ammo_Rifle_Blue",
             "Aux12thFleet_Ammo_Rifle_Red",
+            "Aux12thFleet_Ammo_Rifle_Green",
             "Aux12thFleet_Ammo_AutoRifle_Blue",
             "Aux12thFleet_Ammo_AutoRifle_Red",
             "Aux12thFleet_Ammo_Carbine_Blue",

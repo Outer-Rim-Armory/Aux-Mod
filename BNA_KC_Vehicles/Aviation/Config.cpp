@@ -451,8 +451,8 @@ class CfgVehicles
 
     class 3AS_Republic_Transport_01;
     class BNA_KC_RepubTransport: 3AS_Republic_Transport_01
-	{
-		// Mod Info
+    {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
@@ -513,131 +513,126 @@ class CfgVehicles
                 };
             };
         };
-	};
+    };
 
-	class Plane;
-	class Plane_Base_F: Plane {};
-	class VTOL_Base_F: Plane_Base_F {};
-	class VTOL_01_base_F: VTOL_Base_F {};
-	class VTOL_01_armed_base_F: VTOL_01_base_F
-	{
-		class Turrets;
-	};
-	class B_T_VTOL_01_armed_F: VTOL_01_armed_base_F
-	{
-		class Turrets: Turrets
-		{
-			class GunnerTurret_01;
-			class GunnerTurret_02;
-		};
-	};
-	class BNA_KC_HAG_Base: B_T_VTOL_01_armed_F
-	{
-		// Mod Info
+    class VTOL_Base_F;
+    class VTOL_01_base_F: VTOL_Base_F
+    {
+        class Turrets;
+    };
+    class VTOL_01_armed_base_F: VTOL_01_base_F
+    {
+        class Turrets: Turrets
+        {
+            class CopilotTurret;
+            class GunnerTurret_01;
+            class GunnerTurret_02;
+        };
+    };
+    class B_T_VTOL_01_armed_F: VTOL_01_armed_base_F {};
+    class BNA_KC_Galaxy_Gunship: B_T_VTOL_01_armed_F
+    {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
+
         // Scope
         scope = 2;
         scopeCurator = 2;
+
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
-
 
         displayName = "[KC] Galaxy HAG";
         crew = "BNA_KC_Unit_Phase2_Pilot";
-		typicalCargo[] = {"B_T_Soldier_F"};
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
-		hiddenSelectionsTextures[] =
-		{
-			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa",
-			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa",
-			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa",
-			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa",
-			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"
-		};
+        class Turrets: Turrets
+        {
+            class CopilotTurret: CopilotTurret {};
+            class GunnerTurret_01: GunnerTurret_01
+            {
+                weapons[] =
+                {
+                    "BNA_KC_105mm",
+                    "BNA_KC_Gatling_20mm"
+                };
+                magazines[] =
+                {
+                    "BNA_KC_100rnd_105mm",
+                    "BNA_KC_4000rnd_20mm"
+                };
+            };
+            class GunnerTurret_02: GunnerTurret_02
+            {
+                weapons[] = {"BNA_KC_40mm_VTOL"};
+                magazines[] =
+                {
+                    "BNA_KC_40mm_GPR_240rnd",
+                    "BNA_KC_40mm_APFSDS_160rnd"
+                };
+            };
+        };
+    };
+    class BNA_KC_HAG_Base: BNA_KC_Galaxy_Gunship
+    {
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+    };
 
-		class Turrets: Turrets
-		{
-
-			//class CopilotTurret: CopilotTurret{};
-			class GunnerTurret_01: GunnerTurret_01
-			{
-				weapons[]=
-				{
-					"BNA_KC_105mm",
-						// "cannon_105mm_VTOL_01"
-					"BNA_KC_Gatling_20mm"
-						// "gatling_20mm_VTOL_01"
-				};
-				magazines[]=
-				{
-					"BNA_KC_100rnd_105mm",
-						// "100Rnd_105mm_HEAT_MP"
-					"BNA_KC_4000rnd_20mm"
-						// "4000Rnd_20mm_Tracer_Red_shells"
-				};
-			};
-			class GunnerTurret_02: GunnerTurret_02
-			{
-				weapons[]=
-				{
-					"BNA_KC_40mm_VTOL"
-				};
-				magazines[]=
-				{
-					"BNA_KC_40mm_GPR_240rnd",
-					"BNA_KC_40mm_APFSDS_160rnd"
-				};
-			};
-		};
-
-		soundEngineOffExt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_ext_stop",1,1,600};
-		soundEngineOffInt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_int_stop",1,1};
-		soundEngineOnExt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_ext_start",1,1,600};
-		soundEngineOnInt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_int_start",1,1};
-	};
-
-	class VTOL_01_unarmed_base_F: VTOL_01_base_F {};
-	class VTOL_01_vehicle_base_F: VTOL_01_unarmed_base_F {};
-	class B_T_VTOL_01_vehicle_F: VTOL_01_vehicle_base_F {};
-	class BNA_KC_HVT_Base: B_T_VTOL_01_vehicle_F
-	{
-		// Mod Info
+    class B_T_VTOL_01_vehicle_F;
+    class BNA_KC_Galaxy_Transport_Vehicle: B_T_VTOL_01_vehicle_F
+    {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
+
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
+
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
-
 
         displayName = "[KC] Galaxy HVT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
-	};
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
+    };
+    class BNA_KC_HVT_Base: BNA_KC_Galaxy_Transport_Vehicle
+    {
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+    };
 
-	class VTOL_01_infantry_base_F: VTOL_01_unarmed_base_F {};
-	class B_T_VTOL_01_infantry_F: VTOL_01_infantry_base_F {};
-	class BNA_KC_HIT_Base: B_T_VTOL_01_infantry_F
-	{
-		// Mod Info
+    class B_T_VTOL_01_infantry_F;
+    class BNA_KC_Galaxy_Transport_Infantry: B_T_VTOL_01_infantry_F
+    {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
+
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
+
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
 
-
         displayName = "[KC] Galaxy HIT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
-	};
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
+    };
+    class BNA_KC_HIT_Base: BNA_KC_Galaxy_Transport_Infantry
+    {
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+    };
 };
 
 
@@ -660,12 +655,12 @@ class CfgSounds
 
 class CfgEditorSubcategories
 {
-	class BNA_KC_SubCat_VAviation
-	{
-		dlc = "BNA_KC";
-		author = "SweMonkey and DartRuffian";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "Vehicles - Aviation";
-	};
+    class BNA_KC_SubCat_VAviation
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Vehicles - Aviation";
+    };
 };

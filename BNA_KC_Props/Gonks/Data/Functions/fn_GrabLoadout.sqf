@@ -14,14 +14,16 @@ private _loadoutsMap = createHashMapFromArray
             "BNA_KC_Vest_Basic",      // Vest
             "BNA_KC_Backpack",        // Backpack
             [                         // Magazines ["Magazine classname", number of mags]
-                ["JLTS_DC15A_mag", 15],
-                ["JLTS_DC17SA_mag", 4],
-                ["JLTS_stun_mag_short", 2],
-                ["JLTS_stun_mag_long", 2]
+                ["Aux12thFleet_Mag_DC15A", 16],
+                ["Aux12thFleet_Mag_DC17", 4],
+                ["Aux12thFleet_Mag_StunLong", 3],
+                ["Aux12thFleet_Mag_StunShort", 3]
             ],
             [                         // Grenades/Explosives ["Grenade classname", number of nades]
-                ["ls_mag_classC_thermalDet", 3],
+                ["ls_mag_classC_thermalDet", 2],
                 ["3AS_SmokeWhite", 2],
+                ["3AS_SmokeBlue", 2],
+                ["3AS_SmokeGreen", 2],
                 ["ShieldGrenade_Mag", 3]
             ],
             [                         // Items ["Item classname", number of Items]
@@ -34,7 +36,8 @@ private _loadoutsMap = createHashMapFromArray
                 ["ACE_IR_Strobe_Item", 2],
                 ["ACE_elasticBandage", 20],
                 ["ACE_tourniquet", 4],
-                ["ACE_splint", 2]
+                ["ACE_splint", 2],
+                ["ItemcTabHCam", 1]
             ]
         ]
     ],
@@ -48,14 +51,16 @@ private _loadoutsMap = createHashMapFromArray
             "BNA_KC_Vest_Basic",
             "BNA_KC_Backpack",
             [
-                ["JLTS_DC15S_mag", 15],
-                ["JLTS_DC17SA_mag", 4],
-                ["JLTS_stun_mag_short", 2],
-                ["JLTS_stun_mag_long", 2]
+                ["Aux12thFleet_Mag_DC15S", 16],
+                ["Aux12thFleet_Mag_DC17", 4],
+                ["Aux12thFleet_Mag_StunLong", 3],
+                ["Aux12thFleet_Mag_StunShort", 3]
             ],
             [
-                ["ls_mag_classC_thermalDet", 3],
+                ["ls_mag_classC_thermalDet", 2],
                 ["3AS_SmokeWhite", 2],
+                ["3AS_SmokeBlue", 2],
+                ["3AS_SmokeGreen", 2],
                 ["ShieldGrenade_Mag", 3]
             ],
             [
@@ -68,7 +73,8 @@ private _loadoutsMap = createHashMapFromArray
                 ["ACE_IR_Strobe_Item", 2],
                 ["ACE_elasticBandage", 20],
                 ["ACE_tourniquet", 4],
-                ["ACE_splint", 2]
+                ["ACE_splint", 2],
+                ["ItemcTabHCam", 1]
             ]
         ]
     ]

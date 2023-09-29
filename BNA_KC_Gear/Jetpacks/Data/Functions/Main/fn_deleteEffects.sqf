@@ -16,6 +16,8 @@
 params ["_unit"];
 
 private _sources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
+_sources = _sources + (nearestObjects [_unit, ["#particleSource", "#lightpoint"], 3]);
+_sources = _sources arrayIntersect _sources;
 format ["_sources: %1", _sources] call BNAKC_fnc_devLog;
 {
     format ["_x: %1", _x] call BNAKC_fnc_devLog;

@@ -51,4 +51,30 @@ class CfgVehicles
         respawnItems[] = {};
         backpack = "";
     };
+
+    // ┌───────────────────┐
+    // │     Backpacks     │
+    // └───────────────────┘
+    class Bag_Base;
+    class BNA_KC_OPFOR_Backpack_Base: Bag_Base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeArsenal = 1;
+        scopeCurator = 1;
+
+        displayName = "OPFOR Backpack Base";
+        descriptionshort = "";
+        maximumLoad = 200;
+        mass = 30;
+
+        model = "";
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        picture = "";
+    };
 };
