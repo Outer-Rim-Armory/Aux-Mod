@@ -20,4 +20,4 @@ private ["_config"];
 
 _config = configFile >> "CfgVehicles" >> typeOf _target >> "TextureSources";
 
-isClass _config;
+isClass _config and _player isEqualTo driver _target and isTouchingGround _target;
