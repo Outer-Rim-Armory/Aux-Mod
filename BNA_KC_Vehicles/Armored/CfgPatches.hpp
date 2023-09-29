@@ -38,7 +38,8 @@ class CfgPatches
             // "BNA_KC_ATTE",
             "BNA_KC_ATAP",
             "BNA_KC_Juggernaut",
-            "BNA_KC_Saber_M1"
+            "BNA_KC_Saber_M1",
+            "BNA_KC_RX200"
 		};
         weapons[] = {};
     };
