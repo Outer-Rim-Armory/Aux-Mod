@@ -962,15 +962,15 @@ class CfgVehicles
     };
 
     class 3AS_RX200_Base;
-    class BNA_KC_RX200: 3AS_RX200_Base
+    class BNA_KC_RX200_Base: 3AS_RX200_Base
     {
         // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 2;
-        scopeCurator = 2;
+        scope = 1;
+        scopeCurator = 0;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
