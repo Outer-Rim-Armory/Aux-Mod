@@ -53,7 +53,6 @@ _textureSources = configProperties
             _params params ["_target", "_textureSource"];
 			private ["_textureName"];
 			_textureName = getText(configFile >> "CfgVehicles" >> typeOf _target >> "TextureSources" >> _textureSource >> "displayName");
-			_textureName call BNAKC_fnc_devLog;
 
 			_actionData set [1, _textureName];
         }

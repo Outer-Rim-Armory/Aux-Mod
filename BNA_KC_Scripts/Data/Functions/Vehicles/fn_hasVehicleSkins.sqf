@@ -18,10 +18,6 @@
 params ["_target", "_player", "_params"];
 private ["_config"];
 
-systemChat str _target;
-systemChat str _player;
-systemChat str _params;
-
 _config = configFile >> "CfgVehicles" >> typeOf _target >> "TextureSources";
 if !(isClass _config) exitWith { "No texture sources" call BNAKC_fnc_devLog; };
 
