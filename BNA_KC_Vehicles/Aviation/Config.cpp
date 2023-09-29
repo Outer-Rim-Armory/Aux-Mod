@@ -104,9 +104,9 @@ class CfgVehicles
                 {
                     "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Body.paa",
                     "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Wings.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Weapons.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Weapon_Details.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Interior.paa"
+                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
             class TwiLek: Standard
@@ -117,9 +117,9 @@ class CfgVehicles
                 {
                     "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\TwiLek\TwiLek_Body.paa",
                     "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\TwiLek\TwiLek_Wings.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Weapons.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Weapon_Details.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Interior.paa"
+                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
         };
