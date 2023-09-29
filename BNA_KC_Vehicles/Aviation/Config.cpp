@@ -60,7 +60,7 @@ class CfgVehicles
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "3AS\3as_Laat\LAATI\data\Hull_CO.paa",
@@ -219,8 +219,8 @@ class CfgVehicles
 
         accuracy = 5; // How easy it is for AI to indentify
         cost = "3e+006"; // How "important" AI thinks it is
-        availableForSupportTypes[] = { "CAS_Heli", "Transport", "Drop" };
-        typicalCargo[] = { "BNA_KC_Unit_Phase2_Pilot" }; // What units are "normally" in the vehicle
+        availableForSupportTypes[] = {"CAS_Heli", "Transport", "Drop"};
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"}; // What units are "normally" in the vehicle
         vehicleClass = "Helicopter"; // What type of vehicle it is
 
         // Animations
@@ -383,14 +383,14 @@ class CfgVehicles
             "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Hull.paa",
             "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Wings.paa"
         };
-        textureList[] = { "Standard", 0, "KeeliCompany", 1 };
+        textureList[] = {"Standard", 0, "KeeliCompany", 1};
         class TextureSources
         {
             class Standard
             {
                 author = "Legion Studios";
                 displayName = "Standard";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "lsd_vehicles_heli\laatc\data\auxiliary_co.paa",
@@ -518,7 +518,7 @@ class CfgVehicles
             {
                 author = "Dexus";
                 displayName = "Keeli Company";
-                textures[]=
+                textures[] =
                 {
                     "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
                     "3as\3as_starships\data\hs_int_co.paa",
