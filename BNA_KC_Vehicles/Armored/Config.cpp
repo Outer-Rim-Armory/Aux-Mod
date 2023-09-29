@@ -841,6 +841,69 @@ class CfgVehicles
 	};
     */
 
+    class 3AS_ATAP_Base;
+    class BNA_KC_ATAP: 3AS_ATAP_Base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VArmored";
+
+        displayName = "[KC] AT-AP";
+        crew = "BNA_KC_Unit_Phase2_Tanker";
+
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Body_KC.paa",
+            "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Weapons_KC.paa",
+            "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Legs_KC.paa"
+        };
+
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "CamoGrey", 0};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "\3as\3AS_ATAP\data\Hull_CO.paa",
+                    "\3as\3AS_ATAP\data\weapons and decals_CO.paa",
+                    "\3as\3AS_ATAP\data\legs_CO.paa"
+                };
+            };
+            class KeeliCompany: Standard
+            {
+                author = "Rev";
+                displayName = "Keeli Company";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Body_KC.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Weapons_KC.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Legs_KC.paa"
+                };
+            };
+            class CamoGrey: KeeliCompany
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Body_CamoGrey.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Weapons_CamoGrey.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Legs_CamoGrey.paa"
+                };
+            };
+        };
+    };
 
     class Car_F;
     class Wheeled_Apc_F: Car_F
