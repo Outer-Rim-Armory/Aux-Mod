@@ -19,6 +19,5 @@ params ["_target", "_player", "_params"];
 private ["_config"];
 
 _config = configFile >> "CfgVehicles" >> typeOf _target >> "TextureSources";
-if !(isClass _config) exitWith { "No texture sources" call BNAKC_fnc_devLog; };
 
 isClass _config;
