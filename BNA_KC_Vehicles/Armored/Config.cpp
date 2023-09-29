@@ -961,7 +961,11 @@ class CfgVehicles
         };
     };
 
-    class 3AS_RX200_Base;
+    class Tank_F;
+    class 3AS_RX200_Base: Tank_F
+    {
+        class Turrets;
+    };
     class BNA_KC_RX200_Base: 3AS_RX200_Base
     {
         // Mod Info
@@ -1011,6 +1015,58 @@ class CfgVehicles
             {
                 displayName = "Brown Camo";
                 textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoBrown.paa"};
+            };
+        };
+
+        class Turrets: Turrets
+        {
+            class MainTurret;
+        };
+    };
+
+    class BNA_KC_RX200_AA: BNA_KC_RX200_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] RX-200AA (Anti-Air)";
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+        };
+    };
+
+    class BNA_KC_RX200_Artillery: BNA_KC_RX200_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] RX-200ART (Artillery)";
+
+        artilleryScanner = 1;
+        availableForSupportTypes[] = {"Artillery"};
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] = {"mortar_155mm_AMOS"};
+                magazines[] =
+                {
+                    "32Rnd_155mm_Mo_shells",
+                    "2Rnd_155mm_Mo_guided",
+                    "2Rnd_155mm_Mo_guided",
+                    "6Rnd_155mm_Mo_mine",
+                    "2Rnd_155mm_Mo_Cluster",
+                    "6Rnd_155mm_Mo_smoke",
+                    "2Rnd_155mm_Mo_LG",
+                    "6Rnd_155mm_Mo_AT_mine"
+                };
+
+                turretInfoType = "RscWeaponRangeArtilleryAuto";
             };
         };
     };
