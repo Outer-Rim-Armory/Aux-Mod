@@ -47,11 +47,11 @@ class CfgVehicles
         // Textures
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Body.paa",
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Wings.paa",
-            "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
-            "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
-            "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+            "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Body.paa",
+            "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Wings.paa",
+            "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+            "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+            "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
         };
         textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "Akali", 0, "TwiLek", 0};
         class TextureSources
@@ -63,11 +63,11 @@ class CfgVehicles
                 factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "3AS\3as_Laat\LAATI\data\Hull_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Wings_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                    "\3AS\3as_Laat\LAATI\data\Hull_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Wings_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
             class Imperial: Standard
@@ -76,11 +76,11 @@ class CfgVehicles
                 displayName = "Imperial";
                 textures[] =
                 {
-                    "3AS\3as_Laat\LAATI\data\Hull_Imp_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\wings_Imp_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\weapons_Imp_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\weapon_Details_Imp_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\interior_Imp_CO.paa"
+                    "\3AS\3as_Laat\LAATI\data\Hull_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\wings_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\weapons_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\weapon_Details_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\interior_Imp_CO.paa"
                 };
             };
             class KeeliCompany: Standard
@@ -89,11 +89,11 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Body.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Wings.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Body.paa",
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Wings.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
             class Akali: Standard
@@ -102,11 +102,11 @@ class CfgVehicles
                 displayName = "Akali";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Body.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Wings.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Body.paa",
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Wings.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
             class TwiLek: Standard
@@ -115,11 +115,11 @@ class CfgVehicles
                 displayName = "Twi'Lek";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\TwiLek\TwiLek_Body.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\TwiLek\TwiLek_Wings.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\TwiLek\TwiLek_Body.paa",
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\TwiLek\TwiLek_Wings.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
         };
