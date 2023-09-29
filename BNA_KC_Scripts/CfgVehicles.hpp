@@ -29,7 +29,7 @@ class CfgVehicles
                 displayName = "Switch Vehicle Skin";
                 icon = "";
 
-                condition = "_this call BNAKC_fnc_hasVehicleSkins";
+                condition = "_this call BNAKC_fnc_canSwitchSkins";
                 statement = "systemChat 'test'";
                 insertChildren = "_this call BNAKC_fnc_skinSwitcherChildren";
             };
@@ -44,7 +44,7 @@ class CfgVehicles
                 displayName = "Switch Vehicle Skin";
                 icon = "";
 
-                condition = "_this call BNAKC_fnc_hasVehicleSkins";
+                condition = "_this call BNAKC_fnc_canSwitchSkins";
                 statement = "systemChat 'test'";
                 insertChildren = "_this call BNAKC_fnc_skinSwitcherChildren";
             };
@@ -61,7 +61,7 @@ class CfgVehicles
                 displayName = "Switch Vehicle Skin";
                 icon = "";
 
-                condition = "_this call BNAKC_fnc_hasVehicleSkins";
+                condition = "_this call BNAKC_fnc_canSwitchSkins";
                 statement = "systemChat 'test'";
                 insertChildren = "_this call BNAKC_fnc_skinSwitcherChildren";
             };
@@ -76,7 +76,7 @@ class CfgVehicles
                 displayName = "Switch Vehicle Skin";
                 icon = "";
 
-                condition = "_this call BNAKC_fnc_hasVehicleSkins";
+                condition = "_this call BNAKC_fnc_canSwitchSkins";
                 statement = "systemChat 'test'";
                 insertChildren = "_this call BNAKC_fnc_skinSwitcherChildren";
             };
@@ -93,7 +93,7 @@ class CfgVehicles
                 displayName = "Switch Vehicle Skin";
                 icon = "";
 
-                condition = "_this call BNAKC_fnc_hasVehicleSkins";
+                condition = "_this call BNAKC_fnc_canSwitchSkins";
                 statement = "systemChat 'test'";
                 insertChildren = "_this call BNAKC_fnc_skinSwitcherChildren";
             };

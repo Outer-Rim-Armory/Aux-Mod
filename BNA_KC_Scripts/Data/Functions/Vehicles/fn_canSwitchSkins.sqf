@@ -11,7 +11,7 @@
  * None
  *
  * Examples:
- * condition = "_this call BNAKC_fnc_hasVehicleSkins";
+ * condition = "_this call BNAKC_fnc_canSwitchSkins";
  */
 
 

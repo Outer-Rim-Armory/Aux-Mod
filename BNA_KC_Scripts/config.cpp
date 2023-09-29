@@ -81,7 +81,7 @@ class CfgFunctions
         class Vehicles
         {
             file = "BNA_KC_Scripts\Data\Functions\Vehicles";
-            class hasVehicleSkins {};
+            class canSwitchSkins {};
             class skinSwitcherChildren {};
         };
 
