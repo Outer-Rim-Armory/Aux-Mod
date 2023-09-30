@@ -578,6 +578,7 @@ class CfgVehicles
     };
     class BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Veteran_Backpack_RTO_Predef_SL
     {
+        hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_blk_co.paa"};
         class TransportMagazines
         {
             TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
