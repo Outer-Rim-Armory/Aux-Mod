@@ -42,6 +42,7 @@ class CfgPatches
             "BNA_KC_Galtorran_Backpack",
             "BNA_KC_Galtorran_Backpack_Predef_Rifleman",
             "BNA_KC_Galtorran_Backpack_Predef_Marksman",
+            "BNA_KC_Galtorran_Veteran_Backpack",
             "BNA_KC_Galtorran_Backpack_Heavy",
             "BNA_KC_Galtorran_Backpack_Heavy_Predef_AT",
             "BNA_KC_Galtorran_Backpack_RTO",

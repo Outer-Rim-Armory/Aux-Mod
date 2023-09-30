@@ -403,6 +403,15 @@ class CfgVehicles
         };
     };
 
+    class BNA_KC_Galtorran_Veteran_Backpack: BNA_KC_Galtorran_Backpack
+    {
+        displayName = "[KC GM] Gal'torran Veteran Backpack";
+        model = "\3AS\3AS_Characters\Commando\3AS_Katarn_BackPack.p3d";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Characters\Commando\data\Katarn_Backpack_Standard_CO.paa"};
+        picture = "3AS\3AS_Characters\Commando\data\UI\Katarn_Backpack_Unmarked_UI_ca.paa";
+    };
+
     class BNA_KC_Galtorran_Backpack_Heavy: BNA_KC_Galtorran_Backpack
     {
         displayName = "[KC GM] Gal'torran Heavy Backpack";
