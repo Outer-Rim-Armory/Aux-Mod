@@ -268,6 +268,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
+        backpack = "BNA_KC_Galtorran_Elite_Backpack_Predef_Rifleman";
     };
 
     class BNA_KC_Galtorran_Unit_AT: BNA_KC_Galtorran_Unit_Rifleman
@@ -333,6 +334,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
+        backpack = "BNA_KC_Galtorran_Elite_Backpack_Predef_Marksman";
     };
 
     class BNA_KC_Galtorran_Unit_SL: BNA_KC_Galtorran_Unit_Rifleman
@@ -442,6 +444,45 @@ class CfgVehicles
             TRANSMAG_XX(ShieldGrenade_Mag, 4)
             TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
             TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
+        };
+    };
+
+    class BNA_KC_Galtorran_Elite_Backpack: BNA_KC_Galtorran_Backpack
+    {
+        displayName = "[KC GM] Gal'torran Elite Backpack";
+        maximumLoad = 250;
+    };
+    class BNA_KC_Galtorran_Elite_Backpack_Predef_Rifleman: BNA_KC_Galtorran_Elite_Backpack
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+        scopeCurator = 0;
+
+        class TransportMagazines
+        {
+            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            TRANSMAG_XX(ls_mag_classB_thermalDet, 3)
+            TRANSMAG_XX(SmokeShell, 4)
+            TRANSMAG_XX(ShieldGrenadePersonal_Mag, 2)
+            TRANSMAG_XX(SquadShieldMagazine, 2)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
+            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
+            TRANSMAG_XX(BNA_KC_Grenade_BactaBomb, 1)
+        };
+    };
+    class BNA_KC_Galtorran_Elite_Backpack_Predef_Marksman: BNA_KC_Galtorran_Elite_Backpack
+    {
+        class TransportMagazines
+        {
+            TRANSMAG_XX(BNA_KC_Mag_HI12, 15)
+            TRANSMAG_XX(ls_mag_classB_thermalDet, 3)
+            TRANSMAG_XX(SmokeShell, 4)
+            TRANSMAG_XX(ShieldGrenadePersonal_Mag, 2)
+            TRANSMAG_XX(SquadShieldMagazine, 2)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
+            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
+            TRANSMAG_XX(BNA_KC_Grenade_BactaBomb, 1)
         };
     };
 
