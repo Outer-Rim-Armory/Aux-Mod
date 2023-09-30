@@ -348,8 +348,8 @@ class CfgVehicles
         weapons[] = {"BNA_KC_LW38_Green", "", "3AS_PLX1_F", "Throw", "Put"};
         respawnWeapons[] = {"BNA_KC_LW38_Green", "", "3AS_PLX1_F", "Throw", "Put"};
 
-        magazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK43_AA"};
-        respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK43_AA"};
+        magazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK39_AA"};
+        respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK39_AA"};
 
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
