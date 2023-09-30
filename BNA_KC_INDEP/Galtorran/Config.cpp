@@ -451,6 +451,11 @@ class CfgVehicles
     {
         displayName = "[KC GM] Gal'torran Elite Backpack";
         maximumLoad = 250;
+
+        model = "SentinelBackpack\SentinelBackpack.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"sc_newequipment2\Sentinel\Night\Back\DefaultMaterial_CO.paa"};
+        picture = "SentinelBackpack\icon_ar_ca.paa";
     };
     class BNA_KC_Galtorran_Elite_Backpack_Predef_Rifleman: BNA_KC_Galtorran_Elite_Backpack
     {
