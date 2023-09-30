@@ -379,8 +379,8 @@ class CfgVehicles
     {
         displayName = "Elite Squad Leader";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL";
     };
 
