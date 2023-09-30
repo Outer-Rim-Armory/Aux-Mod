@@ -281,10 +281,6 @@ class CfgVehicles
         magazines[] = {"BNA_KC_Mag_LW38_Green", "SC_MPML_M_AT"};
         respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "SC_MPML_M_AT"};
 
-        TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
-        TRANSMAG_XX(SmokeShell, 2)
-        TRANSMAG_XX(ShieldGrenade_Mag, 2)
-
         backpack = "BNA_KC_Galtorran_Backpack_Heavy_Predef_AT";
     };
     class BNA_KC_Galtorran_Unit_AT_T2: BNA_KC_Galtorran_Unit_AT
