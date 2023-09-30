@@ -262,7 +262,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Veteran_Backpack_Predef_Rifleman";
     };
-    class BNA_KC_Galtorran_Unit_Rifleman_T3: BNA_KC_Galtorran_Unit_Rifleman
+    class BNA_KC_Galtorran_Unit_Rifleman_T3: BNA_KC_Galtorran_Unit_Rifleman_T2
     {
         displayName = "Elite Rifleman";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
@@ -298,7 +298,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Veteran_Backpack_Heavy_Predef_AT";
     };
-    class BNA_KC_Galtorran_Unit_AT_T3: BNA_KC_Galtorran_Unit_AT
+    class BNA_KC_Galtorran_Unit_AT_T3: BNA_KC_Galtorran_Unit_AT_T2
     {
         displayName = "Elite Rifleman (AT)";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
@@ -327,7 +327,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Veteran_Backpack_Predef_Marksman";
     };
-    class BNA_KC_Galtorran_Unit_Marksman_T3: BNA_KC_Galtorran_Unit_Marksman
+    class BNA_KC_Galtorran_Unit_Marksman_T3: BNA_KC_Galtorran_Unit_Marksman_T2
     {
         displayName = "Elite Marksman";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
@@ -351,7 +351,7 @@ class CfgVehicles
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
     };
-    class BNA_KC_Galtorran_Unit_SL_T3: BNA_KC_Galtorran_Unit_SL
+    class BNA_KC_Galtorran_Unit_SL_T3: BNA_KC_Galtorran_Unit_SL_T2
     {
         displayName = "Elite Squad Leader";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
