@@ -197,6 +197,7 @@ class CfgWeapons
         displayName = "[KC GM] Gal'torran Heavy Vest";
         descriptionShort = "Armor Level V";
         model = "MDF\MDFHeavy.p3d";
+        hiddenSelectionsTextures[] = {"MDF\MDFTorso\Black\DefaultMaterial_CO.paa", "MDF\MDFLegs\Black\DefaultMaterial_CO.paa"};
 
         class ItemInfo: ItemInfo
         {
