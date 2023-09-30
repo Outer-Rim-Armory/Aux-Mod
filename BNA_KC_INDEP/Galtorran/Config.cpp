@@ -395,13 +395,8 @@ class CfgVehicles
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
         };
     };
-    class BNA_KC_Galtorran_Backpack_Predef_Marksman: BNA_KC_Galtorran_Backpack
+    class BNA_KC_Galtorran_Backpack_Predef_Marksman: BNA_KC_Galtorran_Backpack_Predef_Rifleman
     {
-        // Scope
-        scope = 1;
-        scopeArsenal = 0;
-        scopeCurator = 0;
-
         class TransportMagazines
         {
             TRANSMAG_XX(BNA_KC_Mag_HI12, 15)
@@ -437,13 +432,8 @@ class CfgVehicles
             TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
-    class BNA_KC_Galtorran_Veteran_Backpack_Predef_Marksman: BNA_KC_Galtorran_Veteran_Backpack
+    class BNA_KC_Galtorran_Veteran_Backpack_Predef_Marksman: BNA_KC_Galtorran_Veteran_Backpack_Predef_Rifleman
     {
-        // Scope
-        scope = 1;
-        scopeArsenal = 0;
-        scopeCurator = 0;
-
         class TransportMagazines
         {
             TRANSMAG_XX(BNA_KC_Mag_HI12, 15)
@@ -528,13 +518,8 @@ class CfgVehicles
             TRANSMAG_XX(ShieldGrenade_Mag, 3)
         };
     };
-    class BNA_KC_Galtorran_Veteran_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Backpack_RTO
+    class BNA_KC_Galtorran_Veteran_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Backpack_RTO_Predef_SL
     {
-        // Scope
-        scope = 1;
-        scopeArsenal = 0;
-        scopeCurator = 0;
-
         class TransportMagazines
         {
             TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
