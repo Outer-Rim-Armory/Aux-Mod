@@ -80,6 +80,23 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Galtorran_Helmet_T3: BNA_KC_Galtorran_Helmet
+    {
+        displayName = "[KC GM] Elite Helmet";
+
+        model = "\MDF\MDFHelmet.p3d";
+        hhiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\MDF\MDFHelmet\Black\Material.001_CO.paa"};
+
+        subItems[] = {"BNA_KC_NVG_Chip"};
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie"};
+            uniformModel = "\MDF\MDFHelmet.p3d";
+        };
+    };
+
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
@@ -266,8 +283,8 @@ class CfgVehicles
     {
         displayName = "Elite Rifleman";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_Predef_Rifleman";
     };
 
@@ -303,8 +320,8 @@ class CfgVehicles
     {
         displayName = "Elite Rifleman (AT)";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_Heavy_Predef_AT";
     };
 
@@ -335,8 +352,8 @@ class CfgVehicles
     {
         displayName = "Elite Marksman";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_MVI_UL_CNM", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_MVI_UL_CNM", BASE_LINKED_ITEMS};
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_Predef_Marksman";
     };
 
@@ -361,8 +378,8 @@ class CfgVehicles
     {
         displayName = "Elite Squad Leader";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL";
     };
 
