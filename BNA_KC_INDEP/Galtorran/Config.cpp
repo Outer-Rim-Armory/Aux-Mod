@@ -263,8 +263,8 @@ class CfgVehicles
 
         displayName = "Rifleman";
 
-        weapons[] = {"BNA_KC_LW38_Green", "", "Throw", "Put"};
-        respawnWeapons[] = {"BNA_KC_LW38_Green", "", "Throw", "Put"};
+        weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_LW38_Green_Scoped", "", "Throw", "Put"};
 
         magazines[] = {"BNA_KC_Mag_LW38_Green"};
         respawnMagazines[] = {"BNA_KC_Mag_LW38_Green"};
@@ -295,8 +295,8 @@ class CfgVehicles
         displayName = "Rifleman (AT)";
         icon = "iconManAT";
 
-        weapons[] = {"BNA_KC_LW38_Green", "", "SC_MPML", "Throw", "Put"};
-        respawnWeapons[] = {"BNA_KC_LW38_Green", "", "SC_MPML", "Throw", "Put"};
+        weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "SC_MPML", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_LW38_Green_Scoped", "", "SC_MPML", "Throw", "Put"};
 
         magazines[] = {"BNA_KC_Mag_LW38_Green", "SC_MPML_M_AT"};
         respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "SC_MPML_M_AT"};
@@ -308,8 +308,8 @@ class CfgVehicles
         displayName = "Veteran Rifleman (AT)";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
 
-        weapons[] = {"BNA_KC_LW38_Green", "", "3AS_PLX1_F", "Throw", "Put"};
-        respawnWeapons[] = {"BNA_KC_LW38_Green", "", "3AS_PLX1_F", "Throw", "Put"};
+        weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "3AS_PLX1_F", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_LW38_Green_Scoped", "", "3AS_PLX1_F", "Throw", "Put"};
 
         magazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK43_AT"};
         respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK43_AT"};
@@ -332,8 +332,8 @@ class CfgVehicles
         displayName = "Rifleman (AA)";
         icon = "iconManAT";
 
-        weapons[] = {"BNA_KC_LW38_Green", "", "SC_MPML", "Throw", "Put"};
-        respawnWeapons[] = {"BNA_KC_LW38_Green", "", "SC_MPML", "Throw", "Put"};
+        weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "SC_MPML", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_LW38_Green_Scoped", "", "SC_MPML", "Throw", "Put"};
 
         magazines[] = {"BNA_KC_Mag_LW38_Green", "SC_MPML_M_AA"};
         respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "SC_MPML_M_AA"};
@@ -345,8 +345,8 @@ class CfgVehicles
         displayName = "Veteran Rifleman (AA)";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
 
-        weapons[] = {"BNA_KC_LW38_Green", "", "3AS_PLX1_F", "Throw", "Put"};
-        respawnWeapons[] = {"BNA_KC_LW38_Green", "", "3AS_PLX1_F", "Throw", "Put"};
+        weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "3AS_PLX1_F", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_LW38_Green_Scoped", "", "3AS_PLX1_F", "Throw", "Put"};
 
         magazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK39_AA"};
         respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK39_AA"};
