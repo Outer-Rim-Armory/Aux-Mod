@@ -41,11 +41,12 @@ class CfgPatches
             "BNA_KC_Galtorran_Unit_SL_T2",
             "BNA_KC_Galtorran_Unit_SL_T3",
 
-            "BNA_KC_Galtorran_Backpack_Base",
             "BNA_KC_Galtorran_Backpack",
             "BNA_KC_Galtorran_Backpack_Predef_Rifleman",
             "BNA_KC_Galtorran_Backpack_Predef_Marksman",
             "BNA_KC_Galtorran_Veteran_Backpack",
+            "BNA_KC_Galtorran_Veteran_Backpack_Predef_Rifleman",
+            "BNA_KC_Galtorran_Veteran_Backpack_Predef_Marksman",
             "BNA_KC_Galtorran_Elite_Backpack",
             "BNA_KC_Galtorran_Elite_Backpack_Predef_Rifleman",
             "BNA_KC_Galtorran_Elite_Backpack_Predef_Marksman",
