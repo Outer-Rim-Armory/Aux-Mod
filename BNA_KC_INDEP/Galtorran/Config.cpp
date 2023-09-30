@@ -287,8 +287,16 @@ class CfgVehicles
     {
         displayName = "Veteran Rifleman (AT)";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
+
+        weapons[] = {"BNA_KC_LW38_Green", "", "3AS_PLX1_F", "Throw", "Put"};
+        respawnWeapons[] = {"BNA_KC_LW38_Green", "", "3AS_PLX1_F", "Throw", "Put"};
+
+        magazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK43_AT"};
+        respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK43_AT"};
+
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
+        backpack = "BNA_KC_Galtorran_Veteran_Backpack_Heavy_Predef_AT";
     };
     class BNA_KC_Galtorran_Unit_AT_T3: BNA_KC_Galtorran_Unit_AT
     {
@@ -404,6 +412,7 @@ class CfgVehicles
     class BNA_KC_Galtorran_Veteran_Backpack: BNA_KC_Galtorran_Backpack
     {
         displayName = "[KC GM] Gal'torran Veteran Backpack";
+        maximumLoad = 250;
         model = "\3AS\3AS_Characters\Commando\3AS_Katarn_BackPack.p3d";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Characters\Commando\data\Katarn_Backpack_Standard_CO.paa"};
@@ -466,6 +475,30 @@ class CfgVehicles
             TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
+        };
+    };
+
+    class BNA_KC_Galtorran_Veteran_Backpack_Heavy: BNA_KC_Galtorran_Veteran_Backpack
+    {
+        displayName = "[KC GM] Gal'torran Veteran Heavy Backpack";
+        maximumLoad = 450;
+    };
+    class BNA_KC_Galtorran_Veteran_Backpack_Heavy_Predef_AT: BNA_KC_Galtorran_Veteran_Backpack_Heavy
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+        scopeCurator = 0;
+
+        class TransportMagazines
+        {
+            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            TRANSMAG_XX(3AS_JLTS_MK43_AT, 2)
+            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
+            TRANSMAG_XX(SmokeShell, 4)
+            TRANSMAG_XX(ShieldGrenade_Mag, 4)
+            // TRANSMAG_XX(imploder, 1)
+            // TRANSMAG_XX(dioxis, 1)
         };
     };
 
