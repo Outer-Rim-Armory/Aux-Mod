@@ -960,6 +960,116 @@ class CfgVehicles
             };
         };
     };
+
+    class Tank_F;
+    class 3AS_RX200_Base: Tank_F
+    {
+        class Turrets;
+    };
+    class BNA_KC_RX200_Base: 3AS_RX200_Base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VArmored";
+
+        displayName = "[KC] RX-200";
+        crew = "BNA_KC_Unit_Phase2_Tanker";
+
+        hiddenSelectionsTextures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "CamoKC", 0, "CamoGrey", 0, "CamoBrown", 0};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] = {"\3as\3AS_RX200\data\DefaultMaterial_CO.paa"};
+            };
+            class KeeliCompany: Standard
+            {
+                author = "Rev";
+                displayName = "Keeli Company";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+            };
+            class CamoKC: KeeliCompany
+            {
+                displayName = "Keeli Company Camo";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoKC.paa"};
+            };
+            class CamoGrey: KeeliCompany
+            {
+                displayName = "Grey Camo";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+            };
+            class CamoBrown: KeeliCompany
+            {
+                displayName = "Brown Camo";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoBrown.paa"};
+            };
+        };
+
+        class Turrets: Turrets
+        {
+            class MainTurret;
+        };
+    };
+
+    class BNA_KC_RX200_AA: BNA_KC_RX200_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] RX-200AA (Anti-Air)";
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+        };
+    };
+
+    class BNA_KC_RX200_Artillery: BNA_KC_RX200_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] RX-200ART (Artillery)";
+
+        artilleryScanner = 1;
+        availableForSupportTypes[] = {"Artillery"};
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] = {"mortar_155mm_AMOS"};
+                magazines[] =
+                {
+                    "32Rnd_155mm_Mo_shells",
+                    "2Rnd_155mm_Mo_guided",
+                    "2Rnd_155mm_Mo_guided",
+                    "6Rnd_155mm_Mo_mine",
+                    "2Rnd_155mm_Mo_Cluster",
+                    "6Rnd_155mm_Mo_smoke",
+                    "2Rnd_155mm_Mo_LG",
+                    "6Rnd_155mm_Mo_AT_mine"
+                };
+
+                turretInfoType = "RscWeaponRangeArtilleryAuto";
+            };
+        };
+    };
 };
 
 
