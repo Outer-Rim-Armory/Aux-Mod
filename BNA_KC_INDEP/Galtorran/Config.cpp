@@ -471,7 +471,7 @@ class CfgVehicles
     class BNA_KC_Galtorran_Elite_Backpack: BNA_KC_Galtorran_Backpack
     {
         displayName = "[KC GM] Gal'torran Elite Backpack";
-        maximumLoad = 250;
+        maximumLoad = 350;
 
         model = "SentinelBackpack\SentinelBackpack.p3d";
         hiddenSelections[] = {"camo"};
@@ -564,7 +564,7 @@ class CfgVehicles
     class BNA_KC_Galtorran_Elite_Backpack_Heavy: BNA_KC_Galtorran_Elite_Backpack
     {
         displayName = "[KC GM] Gal'torran Elite Heavy Backpack";
-        maximumLoad = 250;
+        maximumLoad = 550;
     };
     class BNA_KC_Galtorran_Elite_Backpack_Heavy_Predef_AT: BNA_KC_Galtorran_Elite_Backpack_Heavy
     {
@@ -595,6 +595,8 @@ class CfgVehicles
         hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Addons"};
         hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_sno_co.paa"};
         picture = "\OPTRE_weapons\backpacks\icons\icon_b_anprc521_ca.paa";
+
+        maximumLoad = 250;
     };
     class BNA_KC_Galtorran_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Backpack_RTO
     {
@@ -628,6 +630,7 @@ class CfgVehicles
     {
         displayName = "[KC GM] Gal'torran Elite Radio Backpack";
         hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_blk_co.paa"};
+        maximumLoad = 300;
     };
     class BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Elite_Backpack_RTO
     {
