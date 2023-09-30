@@ -119,10 +119,6 @@ class CfgWeapons
 
     class BNA_KC_LW38_Green_Fried: BNA_KC_LW38_Green
     {
-        // Scope
-        scope = 1;
-        scopeArsenal = 0;
-
         displayName = "[KC] LW-38 (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\BNA_KC_Weapons\LW38\Data\Textures\UI\LW38_Fried_UI.paa";
@@ -130,6 +126,18 @@ class CfgWeapons
 
         JLTS_isFried = 1;
         magazines[] = {};
+    };
+
+    class BNA_KC_LW38_Green_Scoped: BNA_KC_LW38_Green
+    {
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "LFP_lw38mholo_scope";
+            };
+        };
     };
 };
 
