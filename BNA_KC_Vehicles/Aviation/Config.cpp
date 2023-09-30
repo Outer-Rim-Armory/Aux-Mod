@@ -17,6 +17,8 @@ class CfgVehicles
             class impulseOn;
             class impulseOff;
         };
+        class ACE_SelfActions;
+
         class pilotCamera;
         class AnimationSources;
         class Turrets;
@@ -208,6 +210,81 @@ class CfgVehicles
             };
         };
 
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ChangeHUDColor
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
+
         // Impulse Settings
         tas_can_impulse = 0; // Disables 3AS's Impulse System
         ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
@@ -356,6 +433,7 @@ class CfgVehicles
     class lsd_heli_laatc: lsd_laatc_base
     {
         class UserActions; // LS's loading is also done through UserActions
+        class ACE_SelfActions;
     };
     class BNA_KC_LAATc: lsd_heli_laatc
     {
@@ -454,6 +532,81 @@ class CfgVehicles
             };
         };
 
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class LS_HUD_Changer // Different name to overwite base LS action
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
+
         ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
         ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
         ls_impulsor_fuelDrain_1 = 0;
@@ -462,7 +615,11 @@ class CfgVehicles
         // ls_impulsor_boostSpeed_2 = 600;
     };
 
-    class 3AS_Republic_Transport_01;
+    class 3AS_Republic_Transport_01_Base;
+    class 3AS_Republic_Transport_01: 3AS_Republic_Transport_01_Base
+    {
+        class ACE_SelfActions;
+    };
     class BNA_KC_RepubTransport: 3AS_Republic_Transport_01
     {
         // Mod Info
@@ -526,6 +683,81 @@ class CfgVehicles
                 };
             };
         };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ChangeHUDColor
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
     };
 
     class VTOL_Base_F;
@@ -542,7 +774,10 @@ class CfgVehicles
             class GunnerTurret_02;
         };
     };
-    class B_T_VTOL_01_armed_F: VTOL_01_armed_base_F {};
+    class B_T_VTOL_01_armed_F: VTOL_01_armed_base_F
+    {
+        class ACE_SelfActions;
+    };
     class BNA_KC_Galaxy_Gunship: B_T_VTOL_01_armed_F
     {
         // Mod Info
@@ -560,6 +795,81 @@ class CfgVehicles
         displayName = "[KC] Galaxy HAG";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ChangeHUDColor
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
 
         class Turrets: Turrets
         {
@@ -595,7 +905,11 @@ class CfgVehicles
         scopeCurator = 0;
     };
 
-    class B_T_VTOL_01_vehicle_F;
+    class VTOL_01_vehicle_base_F;
+    class B_T_VTOL_01_vehicle_F: VTOL_01_vehicle_base_F
+    {
+        class ACE_SelfActions;
+    };
     class BNA_KC_Galaxy_Transport_Vehicle: B_T_VTOL_01_vehicle_F
     {
         // Mod Info
@@ -613,6 +927,81 @@ class CfgVehicles
         displayName = "[KC] Galaxy HVT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ChangeHUDColor
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
     };
     class BNA_KC_HVT_Base: BNA_KC_Galaxy_Transport_Vehicle
     {
@@ -621,7 +1010,11 @@ class CfgVehicles
         scopeCurator = 0;
     };
 
-    class B_T_VTOL_01_infantry_F;
+    class VTOL_01_infantry_base_F;
+    class B_T_VTOL_01_infantry_F: VTOL_01_infantry_base_F
+    {
+        class ACE_SelfActions;
+    };
     class BNA_KC_Galaxy_Transport_Infantry: B_T_VTOL_01_infantry_F
     {
         // Mod Info
@@ -639,6 +1032,81 @@ class CfgVehicles
         displayName = "[KC] Galaxy HIT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ChangeHUDColor
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
     };
     class BNA_KC_HIT_Base: BNA_KC_Galaxy_Transport_Infantry
     {
