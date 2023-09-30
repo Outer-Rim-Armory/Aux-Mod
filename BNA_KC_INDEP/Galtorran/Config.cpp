@@ -431,8 +431,8 @@ class CfgVehicles
             TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
             TRANSMAG_XX(SmokeShell, 4)
             TRANSMAG_XX(ShieldGrenade_Mag, 4)
-            // TRANSMAG_XX(imploder, 1)
-            // TRANSMAG_XX(dioxis, 1)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
+            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
     class BNA_KC_Galtorran_Veteran_Backpack_Predef_Marksman: BNA_KC_Galtorran_Veteran_Backpack
@@ -448,8 +448,8 @@ class CfgVehicles
             TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
             TRANSMAG_XX(SmokeShell, 4)
             TRANSMAG_XX(ShieldGrenade_Mag, 4)
-            // TRANSMAG_XX(imploder, 1)
-            // TRANSMAG_XX(dioxis, 1)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
+            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
 
@@ -497,8 +497,8 @@ class CfgVehicles
             TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
             TRANSMAG_XX(SmokeShell, 4)
             TRANSMAG_XX(ShieldGrenade_Mag, 4)
-            // TRANSMAG_XX(imploder, 1)
-            // TRANSMAG_XX(dioxis, 1)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
+            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
 
