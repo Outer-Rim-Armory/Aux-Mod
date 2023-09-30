@@ -260,6 +260,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
+        backpack = "BNA_KC_Galtorran_Veteran_Backpack_Predef_Rifleman";
     };
     class BNA_KC_Galtorran_Unit_Rifleman_T3: BNA_KC_Galtorran_Unit_Rifleman
     {
@@ -320,6 +321,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
+        backpack = "BNA_KC_Galtorran_Veteran_Backpack_Predef_Marksman";
     };
     class BNA_KC_Galtorran_Unit_Marksman_T3: BNA_KC_Galtorran_Unit_Marksman
     {
@@ -410,6 +412,40 @@ class CfgVehicles
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Characters\Commando\data\Katarn_Backpack_Standard_CO.paa"};
         picture = "3AS\3AS_Characters\Commando\data\UI\Katarn_Backpack_Unmarked_UI_ca.paa";
+    };
+    class BNA_KC_Galtorran_Veteran_Backpack_Predef_Rifleman: BNA_KC_Galtorran_Veteran_Backpack
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+        scopeCurator = 0;
+
+        class TransportMagazines
+        {
+            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
+            TRANSMAG_XX(SmokeShell, 4)
+            TRANSMAG_XX(ShieldGrenade_Mag, 4)
+            // TRANSMAG_XX(imploder, 1)
+            // TRANSMAG_XX(dioxis, 1)
+        };
+    };
+    class BNA_KC_Galtorran_Veteran_Backpack_Predef_Marksman: BNA_KC_Galtorran_Veteran_Backpack
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+        scopeCurator = 0;
+
+        class TransportMagazines
+        {
+            TRANSMAG_XX(BNA_KC_Mag_HI12, 15)
+            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
+            TRANSMAG_XX(SmokeShell, 4)
+            TRANSMAG_XX(ShieldGrenade_Mag, 4)
+            // TRANSMAG_XX(imploder, 1)
+            // TRANSMAG_XX(dioxis, 1)
+        };
     };
 
     class BNA_KC_Galtorran_Backpack_Heavy: BNA_KC_Galtorran_Backpack
