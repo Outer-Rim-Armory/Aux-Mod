@@ -34,11 +34,11 @@ class CfgMagazines
         picture = "\BNA_KC_Weapons\Grenades\Data\Textures\UI\BNA_KC_Mag_DroidPopper_UI.paa";
 
         ammo = "BNA_KC_Grenade_DroidPopper_Ammo";
-        
+
         BNA_KC_GrenadeType = "EMP";
-        BNA_KC_GrenadeEMP_Radius_Droid = 3;
-        BNA_KC_GrenadeEMP_Radius_Deka = 5;
-        BNA_KC_GrenadeEMP_Radius_Vehicle = 5;
+        BNA_KC_GrenadeEMP_Radius_Droid = 5;
+        BNA_KC_GrenadeEMP_Radius_Deka = 8;
+        BNA_KC_GrenadeEMP_Radius_Vehicle = 8;
     };
 
     class SmokeShell;
@@ -98,7 +98,7 @@ class CfgAmmo
         model = "\3AS\3AS_Equipment\model\3AS_smokegrenade.p3d";
         smokeColor[] = { 0.38, 0.54, 0.91, 0.35 };
         effectsSmoke = "BNA_KC_EffectsGroup_BactaSmoke";
-        
+
         aiAmmoUsageFlags = 0;
 
         simulation = "shotSmoke"; // Makes grenades lose all speed when hitting something
