@@ -623,9 +623,19 @@ class CfgVehicles
             TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
-    class BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Veteran_Backpack_RTO_Predef_SL
+
+    class BNA_KC_Galtorran_Elite_Backpack_RTO: BNA_KC_Galtorran_Backpack_RTO
     {
+        displayName = "[KC GM] Gal'torran Elite Radio Backpack";
         hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_blk_co.paa"};
+    };
+    class BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Elite_Backpack_RTO
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+        scopeCurator = 0;
+
         class TransportMagazines
         {
             TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
