@@ -337,8 +337,8 @@ class CfgVehicles
         magazines[] = {"BNA_KC_Mag_HI12"};
         respawnMagazines[] = {"BNA_KC_Mag_HI12"};
 
-        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest", "OPTRE_NVG_MVI_UL_CNM", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest", "OPTRE_NVG_MVI_UL_CNM", BASE_LINKED_ITEMS};
+        linkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest", "OPTRE_NVG_MVI_UL_CNM", BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet", "BNA_KC_Galtorran_Vest", "OPTRE_NVG_MVI_UL_CNM", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Backpack_Predef_Marksman";
     };
     class BNA_KC_Galtorran_Unit_Marksman_T2: BNA_KC_Galtorran_Unit_Marksman
