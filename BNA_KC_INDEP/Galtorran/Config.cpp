@@ -358,6 +358,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Heavy", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
+        backpack = "BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL";
     };
 
     // ┌───────────────────┐
@@ -542,6 +543,20 @@ class CfgVehicles
             TRANSMAG_XX(ShieldGrenade_Mag, 4)
             TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
             TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
+        };
+    };
+    class BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Veteran_Backpack_RTO_Predef_SL
+    {
+        class TransportMagazines
+        {
+            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            TRANSMAG_XX(ls_mag_classB_thermalDet, 3)
+            TRANSMAG_XX(SmokeShell, 4)
+            TRANSMAG_XX(ShieldGrenadePersonal_Mag, 2)
+            TRANSMAG_XX(SquadShieldMagazine, 1)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
+            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
+            TRANSMAG_XX(BNA_KC_Grenade_BactaBomb, 1)
         };
     };
 };
