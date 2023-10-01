@@ -759,13 +759,13 @@ class CfgVehicles
             class SpawnCrew
             {
                 displayName = "Create Vehicle Crew";
-                condition = "_this#0 emptyPositions '' > 0";
+                condition = "_this#0 emptyPositions '' > 0 and ace_player in (_this#0 call ace_common_fnc_getVehicleCrew)";
                 statement = "(group ace_player) createVehicleCrew _this#0";
             };
             class DeleteCrew
             {
                 displayName = "Delete Vehicle Crew";
-                condition = "false in (_this#0 call ace_common_fnc_getVehicleCrew apply {_x call CWR_fnc_isPlayer;})";
+                condition = "false in (_this#0 call ace_common_fnc_getVehicleCrew apply {_x call CWR_fnc_isPlayer;}) and ace_player in (_this#0 call ace_common_fnc_getVehicleCrew";
                 statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
             };
         };
