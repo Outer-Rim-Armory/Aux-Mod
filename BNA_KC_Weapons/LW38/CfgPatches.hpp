@@ -23,6 +23,9 @@ class CfgPatches
             "BNA_KC_LW38_Base",
             "BNA_KC_LW38",
             "BNA_KC_LW38_Fried",
+            "BNA_KC_LW38_Green",
+            "BNA_KC_LW38_Green_Fried",
+            "BNA_KC_LW38_Green_Scoped"
         };
         magazines[] =
         {
