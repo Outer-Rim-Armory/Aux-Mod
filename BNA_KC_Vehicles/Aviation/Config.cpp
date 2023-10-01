@@ -1,6 +1,7 @@
 #include "CfgPatches.hpp"
 #include "CfgFunctions.hpp"
 #include "..\..\BNA_KC_Gear\Macros.hpp"
+#include "Macros.hpp"
 
 
 class CfgVehicles
@@ -212,77 +213,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            class ChangeHUDColor
-            {
-                displayName = "Change HUD Color";
-                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                icon = "\ls_data\icons\hud\colorWheel.paa";
-
-                class HUD_White
-                {
-                    displayName = "White";
-                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                    runOnHover = 1;
-                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
-                };
-                class HUD_Black: HUD_White
-                {
-                    displayName = "Black";
-                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#000000']";
-                };
-                class HUD_Blue: HUD_White
-                {
-                    displayName = "Blue";
-                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
-                };
-                class HUD_Purple: HUD_White
-                {
-                    displayName = "Purple";
-                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#800080']";
-                };
-                class HUD_Red: HUD_White
-                {
-                    displayName = "Red";
-                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
-                };
-                class HUD_Orange: HUD_White
-                {
-                    displayName = "Orange";
-                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
-                };
-                class HUD_Yellow: HUD_White
-                {
-                    displayName = "Yellow";
-                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
-                };
-                class HUD_Green: HUD_White
-                {
-                    displayName = "Green";
-                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
-                };
-                class HUD_Cyan: HUD_White
-                {
-                    displayName = "Cyan";
-                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
-                };
-                class HUD_Clear: HUD_White
-                {
-                    displayName = "No Hud";
-                    icon = "ls_data\icons\hud\noHud.paa";
-                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
-                };
-            };
+            HUD_CHANGER
         };
 
         // Impulse Settings
@@ -534,77 +465,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            class LS_HUD_Changer // Different name to overwite base LS action
-            {
-                displayName = "Change HUD Color";
-                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                icon = "\ls_data\icons\hud\colorWheel.paa";
-
-                class HUD_White
-                {
-                    displayName = "White";
-                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                    runOnHover = 1;
-                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
-                };
-                class HUD_Black: HUD_White
-                {
-                    displayName = "Black";
-                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#000000']";
-                };
-                class HUD_Blue: HUD_White
-                {
-                    displayName = "Blue";
-                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
-                };
-                class HUD_Purple: HUD_White
-                {
-                    displayName = "Purple";
-                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#800080']";
-                };
-                class HUD_Red: HUD_White
-                {
-                    displayName = "Red";
-                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
-                };
-                class HUD_Orange: HUD_White
-                {
-                    displayName = "Orange";
-                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
-                };
-                class HUD_Yellow: HUD_White
-                {
-                    displayName = "Yellow";
-                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
-                };
-                class HUD_Green: HUD_White
-                {
-                    displayName = "Green";
-                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
-                };
-                class HUD_Cyan: HUD_White
-                {
-                    displayName = "Cyan";
-                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
-                };
-                class HUD_Clear: HUD_White
-                {
-                    displayName = "No Hud";
-                    icon = "ls_data\icons\hud\noHud.paa";
-                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
-                };
-            };
+            HUD_CHANGER
         };
 
         ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
@@ -686,77 +547,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            class ChangeHUDColor
-            {
-                displayName = "Change HUD Color";
-                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                icon = "\ls_data\icons\hud\colorWheel.paa";
-
-                class HUD_White
-                {
-                    displayName = "White";
-                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                    runOnHover = 1;
-                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
-                };
-                class HUD_Black: HUD_White
-                {
-                    displayName = "Black";
-                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#000000']";
-                };
-                class HUD_Blue: HUD_White
-                {
-                    displayName = "Blue";
-                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
-                };
-                class HUD_Purple: HUD_White
-                {
-                    displayName = "Purple";
-                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#800080']";
-                };
-                class HUD_Red: HUD_White
-                {
-                    displayName = "Red";
-                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
-                };
-                class HUD_Orange: HUD_White
-                {
-                    displayName = "Orange";
-                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
-                };
-                class HUD_Yellow: HUD_White
-                {
-                    displayName = "Yellow";
-                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
-                };
-                class HUD_Green: HUD_White
-                {
-                    displayName = "Green";
-                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
-                };
-                class HUD_Cyan: HUD_White
-                {
-                    displayName = "Cyan";
-                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
-                };
-                class HUD_Clear: HUD_White
-                {
-                    displayName = "No Hud";
-                    icon = "ls_data\icons\hud\noHud.paa";
-                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
-                };
-            };
+            HUD_CHANGER
         };
     };
 
@@ -798,77 +589,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            class ChangeHUDColor
-            {
-                displayName = "Change HUD Color";
-                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                icon = "\ls_data\icons\hud\colorWheel.paa";
-
-                class HUD_White
-                {
-                    displayName = "White";
-                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                    runOnHover = 1;
-                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
-                };
-                class HUD_Black: HUD_White
-                {
-                    displayName = "Black";
-                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#000000']";
-                };
-                class HUD_Blue: HUD_White
-                {
-                    displayName = "Blue";
-                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
-                };
-                class HUD_Purple: HUD_White
-                {
-                    displayName = "Purple";
-                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#800080']";
-                };
-                class HUD_Red: HUD_White
-                {
-                    displayName = "Red";
-                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
-                };
-                class HUD_Orange: HUD_White
-                {
-                    displayName = "Orange";
-                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
-                };
-                class HUD_Yellow: HUD_White
-                {
-                    displayName = "Yellow";
-                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
-                };
-                class HUD_Green: HUD_White
-                {
-                    displayName = "Green";
-                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
-                };
-                class HUD_Cyan: HUD_White
-                {
-                    displayName = "Cyan";
-                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
-                };
-                class HUD_Clear: HUD_White
-                {
-                    displayName = "No Hud";
-                    icon = "ls_data\icons\hud\noHud.paa";
-                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
-                };
-            };
+            HUD_CHANGER
         };
 
         class Turrets: Turrets
@@ -930,77 +651,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            class ChangeHUDColor
-            {
-                displayName = "Change HUD Color";
-                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                icon = "\ls_data\icons\hud\colorWheel.paa";
-
-                class HUD_White
-                {
-                    displayName = "White";
-                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                    runOnHover = 1;
-                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
-                };
-                class HUD_Black: HUD_White
-                {
-                    displayName = "Black";
-                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#000000']";
-                };
-                class HUD_Blue: HUD_White
-                {
-                    displayName = "Blue";
-                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
-                };
-                class HUD_Purple: HUD_White
-                {
-                    displayName = "Purple";
-                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#800080']";
-                };
-                class HUD_Red: HUD_White
-                {
-                    displayName = "Red";
-                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
-                };
-                class HUD_Orange: HUD_White
-                {
-                    displayName = "Orange";
-                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
-                };
-                class HUD_Yellow: HUD_White
-                {
-                    displayName = "Yellow";
-                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
-                };
-                class HUD_Green: HUD_White
-                {
-                    displayName = "Green";
-                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
-                };
-                class HUD_Cyan: HUD_White
-                {
-                    displayName = "Cyan";
-                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
-                };
-                class HUD_Clear: HUD_White
-                {
-                    displayName = "No Hud";
-                    icon = "ls_data\icons\hud\noHud.paa";
-                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
-                };
-            };
+            HUD_CHANGER
         };
     };
     class BNA_KC_HVT_Base: BNA_KC_Galaxy_Transport_Vehicle
@@ -1035,77 +686,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            class ChangeHUDColor
-            {
-                displayName = "Change HUD Color";
-                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                icon = "\ls_data\icons\hud\colorWheel.paa";
-
-                class HUD_White
-                {
-                    displayName = "White";
-                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                    runOnHover = 1;
-                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
-                };
-                class HUD_Black: HUD_White
-                {
-                    displayName = "Black";
-                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#000000']";
-                };
-                class HUD_Blue: HUD_White
-                {
-                    displayName = "Blue";
-                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
-                };
-                class HUD_Purple: HUD_White
-                {
-                    displayName = "Purple";
-                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#800080']";
-                };
-                class HUD_Red: HUD_White
-                {
-                    displayName = "Red";
-                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
-                };
-                class HUD_Orange: HUD_White
-                {
-                    displayName = "Orange";
-                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
-                };
-                class HUD_Yellow: HUD_White
-                {
-                    displayName = "Yellow";
-                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
-                };
-                class HUD_Green: HUD_White
-                {
-                    displayName = "Green";
-                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
-                };
-                class HUD_Cyan: HUD_White
-                {
-                    displayName = "Cyan";
-                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
-                };
-                class HUD_Clear: HUD_White
-                {
-                    displayName = "No Hud";
-                    icon = "ls_data\icons\hud\noHud.paa";
-                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
-                };
-            };
+            HUD_CHANGER
         };
     };
     class BNA_KC_HIT_Base: BNA_KC_Galaxy_Transport_Infantry
@@ -1175,83 +756,21 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            class ChangeHUDColor
-            {
-                displayName = "Change HUD Color";
-                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                icon = "\ls_data\icons\hud\colorWheel.paa";
+            HUD_CHANGER
 
-                class HUD_White
-                {
-                    displayName = "White";
-                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
-                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
-                    runOnHover = 1;
-                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
-                };
-                class HUD_Black: HUD_White
-                {
-                    displayName = "Black";
-                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#000000']";
-                };
-                class HUD_Blue: HUD_White
-                {
-                    displayName = "Blue";
-                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
-                };
-                class HUD_Purple: HUD_White
-                {
-                    displayName = "Purple";
-                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#800080']";
-                };
-                class HUD_Red: HUD_White
-                {
-                    displayName = "Red";
-                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
-                };
-                class HUD_Orange: HUD_White
-                {
-                    displayName = "Orange";
-                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
-                };
-                class HUD_Yellow: HUD_White
-                {
-                    displayName = "Yellow";
-                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
-                };
-                class HUD_Green: HUD_White
-                {
-                    displayName = "Green";
-                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
-                };
-                class HUD_Cyan: HUD_White
-                {
-                    displayName = "Cyan";
-                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
-                };
-                class HUD_Clear: HUD_White
-                {
-                    displayName = "No Hud";
-                    icon = "ls_data\icons\hud\noHud.paa";
-                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
-                };
-            };
             class SpawnCrew
             {
                 displayName = "Create Vehicle Crew";
-                condition = "true"; // TODO: Only appear if there are crew seats that are not filled
+                condition = "_this#0 emptyPositions '' > 0";
                 statement = "(group ace_player) createVehicleCrew _this#0";
             };
+            class DeleteCrew
+            {
+                displayName = "Delete Vehicle Crew";
+                condition = "false in (_this#0 call ace_common_fnc_getVehicleCrew apply {_x call CWR_fnc_isPlayer;})";
+                statement = "{_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
+            };
+
             class Shield
             {
                 displayName = "Shield Health: %1";
@@ -1267,9 +786,15 @@ class CfgVehicles
                 };
                 class DeactivateShield
                 {
-                    displayName = "Deactivate Shield";
-                    condition = "!(_this#0 getVariable ['BNA_KC_Shield_isActive', false])";
-                    statement = ""; // de-activate shield
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
                 };
             };
         };
