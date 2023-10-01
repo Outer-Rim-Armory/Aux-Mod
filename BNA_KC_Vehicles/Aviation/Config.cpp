@@ -1115,10 +1115,19 @@ class CfgVehicles
         scopeCurator = 0;
     };
 
-    class Plane_Fighter_03_dynamicLoadout_base_F;
+    class Plane_Fighter_03_base_F;
+    class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
+    {
+        class Turrets;
+    };
     class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F
     {
         class ACE_SelfActions;
+        class Turrets: Turrets
+        {
+            class LaserPilot;
+            class Reargun;
+        };
     };
     class BNA_KC_ARC_170: 3AS_ARC_170_Base
     {
@@ -1235,6 +1244,35 @@ class CfgVehicles
                     statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
                 };
             };
+        };
+
+        class Turrets: Turrets
+        {
+            class LaserPilot: LaserPilot
+            {
+                // Re-Do a bunch of work because the 501st Aux breaks things
+                discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 1000, 1200, 1500, 1800, 2100};
+                discreteDistanceInitIndex = 5;
+                elevationMode = 0;
+                LODTurnedIn = 1000;
+                LODTurnedOut = 1000;
+
+                turretFollowFreeLook = 2;
+                turretInfoType = "RscOptics_Heli_Attack_01_gunner";
+                gunnerOpticsEffect[] = {"TankCommanderOptics1", "BWTV"};
+                outGunnerMayFire = 1;
+                startEngine = 0;
+
+                // Animations
+                gunnerAction = "Plane_Fighter_03_pilot";
+                gunnerInAction = "Plane_Fighter_03_pilot";
+                gunnerGetInAction = "GetInLow";
+                gunnerGetOutAction = "GetOutLow";
+                gunnerLeftHandAnimName = "lever_copilot";
+                gunnerRightHandAnimName = "stick_copilot";
+                animationSourceHatch = "";
+            };
+            class Reargun: Reargun {};
         };
     };
 };
