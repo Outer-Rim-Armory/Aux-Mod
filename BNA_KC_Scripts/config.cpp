@@ -1,4 +1,5 @@
 #include "CfgVehicles.hpp"
+#include "FortifyPresets.hpp"
 
 
 class CfgPatches
@@ -7,7 +8,7 @@ class CfgPatches
 	{
 		author = "Monkey";
 		requiredVersion = 1;
-		requiredAddons[]=
+		requiredAddons[] =
         {
             "cba_settings",
                 // Addon Options
@@ -17,8 +18,8 @@ class CfgPatches
                 // LS's Hesco Blocks
                 // Comes from Legion Studios: Battlefields
         };
-		units[]={};
-		weapons[]={};
+		units[] = {};
+		weapons[] = {};
 	};
 };
 
@@ -132,5 +133,3 @@ class Extended_PostInit_EventHandlers
         init = "['ace_firedPlayer'] call BNAKC_fnc_specialGrenadesEH;";
     };
 };
-
-#include "FortifyPresets.hpp"
