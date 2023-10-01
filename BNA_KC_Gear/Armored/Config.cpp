@@ -128,6 +128,7 @@ class CfgVehicles
     {
         displayName = "[KC] ARMR P2 Tanker";
         editorSubcategory = "BNA_KC_Armored";
+        editorPreview = "\BNA_KC_Gear\Armored\Data\Previews\BNA_KC_Unit_Phase2_Tanker.jpg";
 
         uniformClass = "BNA_KC_Uniform_Tanker";
         hiddenSelectionsTextures[] =
@@ -153,6 +154,7 @@ class CfgVehicles
     {
         displayName = "[KC] ARMR P1 Tanker";
         editorSubcategory = "BNA_KC_Armored";
+        editorPreview = "\BNA_KC_Gear\Armored\Data\Previews\BNA_KC_Unit_Phase1_Tanker.jpg";
 
         uniformClass = "BNA_KC_Uniform_Tanker";
 

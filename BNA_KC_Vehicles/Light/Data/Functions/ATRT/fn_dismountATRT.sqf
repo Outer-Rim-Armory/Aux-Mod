@@ -14,13 +14,14 @@
 
 
 params ["_atrt"];
+private ["_rider", "_direction", "_position", "_collision"];
 
-private _rider = _atrt getVariable ["BNA_KC_ATRT_Rider", nil];
+_rider = _atrt getVariable ["BNA_KC_ATRT_rider", nil];
 if (isNil "_rider") exitWith {};
 
 // Prevent the player getting stuck on top
-private _direction = direction _rider;
-private _position = getPosASL _atrt;
+_direction = direction _rider;
+_position = getPosASL _atrt;
 _position =
 [
     _position#0 - 0.35 + sin (_direction - 90),
@@ -42,15 +43,18 @@ if (cameraOn != (vehicle _rider)) then
     (vehicle _rider) switchCamera cameraView;
 };
 
-objNull remoteControl driver _atrt; // Reset control
-player remoteControl _rider;
-[_rider, "blockThrow", "ridingATRT", false] call ace_common_fnc_statusEffect_set;
+_atrt remoteControl objNull;
+_rider remoteControl objNull;
 
-private _collision = _atrt getVariable ["BNA_KC_ATRT_CollisionObj", objNull]; // Remove collision
+if (isClass (configFile >> "CfgPatches" >> "ace_advanced_throwing")) then
+{
+    [_rider, "blockThrow", "ridingATRT", false] call ace_common_fnc_statusEffect_set;
+};
+
+_collision = _atrt getVariable ["BNA_KC_ATRT_collisionObj", objNull]; // Remove collision
 deleteVehicle _collision;
 
-_atrt setVariable ["BNA_KC_ATRT_Rider", nil, true]; // Reset rider
-_rider allowDamage true;
+_atrt setVariable ["BNA_KC_ATRT_rider", nil, true]; // Reset rider
 inGameUISetEventHandler ["Action", ""];
 
 [

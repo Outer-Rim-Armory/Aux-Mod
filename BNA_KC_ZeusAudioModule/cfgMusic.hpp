@@ -819,4 +819,31 @@ class CfgMusic
         duration = 150;
         musicClass = "BNA_KC_OtherMusic"; // Music category
 	};
+
+	
+	class BNA_KC_Woods_Betrayal
+	{
+        name = "Wood's Betrayal";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Wood's_Betrayal.ogg",db+0,1};
+        duration = 350;
+        musicClass = "BNA_KC_SWMusic"; // Music category
+	};
+
+	
+	class BNA_KC_Infection
+	{
+        name = "OutBreak";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Infection.ogg",db+0,1};
+        duration = 232;
+        musicClass = "BNA_KC_VGMusic"; // Music category
+	};
+	
+
+	class BNA_KC_WWZ
+	{
+        name = "WWZ";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\WWZ.ogg",db+0,1};
+        duration = 221;
+        musicClass = "BNA_KC_OtherMusic"; // Music category
+	};
 };

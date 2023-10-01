@@ -7,11 +7,13 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Weapons_Core",
+                // Ammo
             "BNA_KC_Weapons_DC15S",
                 // Base Gun
             "JLTS_weapons_E5",
                 // E-5 models/textures
-            "LS_weapon_core"
+            "3AS_Main"
                 // E-5 Weapon Sounds
         };
         units[] = {};
@@ -25,7 +27,7 @@ class CfgPatches
         };
         magazines[] =
         {
-            "12thFleet_Mag_E5"
+            "Aux12thFleet_Mag_E5"
         };
         ammo[] = {};
     };

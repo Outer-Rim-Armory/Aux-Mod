@@ -3,6 +3,15 @@
 
 class CfgWeapons
 {
+    // ┌───────────────────┐
+    // │      Helmets      │
+    // └───────────────────┘
+    class ls_redforHelmet_base;
+    class BNA_KC_OPFOR_Helmet_Base: ls_redforHelmet_base
+    {
+        displayName = "OPFOR Helmet Base";
+    };
+
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
@@ -32,5 +41,40 @@ class CfgVehicles
     class BNA_KC_OPFOR_Unit_Base: ls_redforUnit_base
     {
         displayName = "OPFOR Unit Base";
+        uniformClass = "BNA_KC_OPFOR_Uniform_Base";
+
+        weapons[] = {};
+        respawnWeapons[] = {};
+        magazines[] = {};
+        respawnMagazines[] = {};
+        items[] = {};
+        respawnItems[] = {};
+        backpack = "";
+    };
+
+    // ┌───────────────────┐
+    // │     Backpacks     │
+    // └───────────────────┘
+    class Bag_Base;
+    class BNA_KC_OPFOR_Backpack_Base: Bag_Base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeArsenal = 1;
+        scopeCurator = 1;
+
+        displayName = "OPFOR Backpack Base";
+        descriptionshort = "";
+        maximumLoad = 200;
+        mass = 30;
+
+        model = "";
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        picture = "";
     };
 };

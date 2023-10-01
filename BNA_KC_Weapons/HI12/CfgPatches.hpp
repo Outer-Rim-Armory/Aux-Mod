@@ -7,8 +7,16 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "LF_Weapon_Unit_hi12"
+            "LF_Weapon_Unit_hi12",
                 // HI-12 / magazine
+            "JLTS_weapons_DC17SA",
+                // Flashlight
+            "A3_Weapons_F_Acc",
+                // Laser pointer
+            "ace_laserpointer",
+                // Green laser pointer
+            "A3_Weapons_F_Mark_Acc"
+                // Bipod
         };
         units[] = {};
         weapons[] =

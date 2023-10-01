@@ -59,6 +59,7 @@ class CfgMagazines
     class M2_Fuel_Tank;
     class BNA_KC_Mag_300Rnd_BTX42: M2_Fuel_Tank
     {
+        author = "DartRuffian and Dexus";
         displayName = "[KC] BT X-42 Fuel Tank";
         picture = "\3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";
         UiPicture = "\3AS\3AS_Weapons\data\textures\Energy_Cell_Arsenal.paa";

@@ -27,7 +27,8 @@ if !(CWR_AutoMessages_Uncon) exitWith {};
         private _nearbyPlayers = [getPosATL _unit, CWR_Voice_VoiceRadius, CWR_Voice_RCUnitsSendsMessages] call CWR_fnc_getNearbyPlayers;
         format ["_nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
 
-        if (count _nearbyPlayers <= 1) exitWith {}; // No nearby players
+        _nearbyPlayers = _nearbyPlayers select { [_x] call ace_common_fnc_isAwake; };
+        if (count _nearbyPlayers == 0) exitWith {}; // No nearby conscious players
 
         _nearbyPlayers = [_unit, _nearbyPlayers] call CWR_fnc_sortByDistance;
         format ["Sorted _nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;

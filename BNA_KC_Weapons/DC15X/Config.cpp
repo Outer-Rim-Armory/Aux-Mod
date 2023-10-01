@@ -5,6 +5,8 @@ class Mode_SemiAuto;
 
 class CfgWeapons
 {
+    #include "Optics.hpp"
+
     class Rifle_Base_F;
     class arifle_MX_Base_F: Rifle_Base_F
     {
@@ -45,7 +47,7 @@ class CfgWeapons
         {
             "this"
         };
-        magazines[] = { "12thFleet_Mag_DC15X" };
+        magazines[] = {"Aux12thFleet_Mag_DC15X"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -60,41 +62,45 @@ class CfgWeapons
             {
                 compatibleItems[] =
                 {
-                    "JLTS_DC15X_scope"
+                    "BNA_KC_DC15X_Scope",
+                    "Aux501_cows_lrps"
                 };
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[]  =
+                compatibleItems[] =
                 {
-                    // "acc_pointer_ir",
-                    // "ace_acc_pointer_green",
-                    // "jlts_dc17sa_flashlight"
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
                 };
             };
             class UnderBarrelSlot: UnderBarrelSlot
             {
                 compatibleItems[] =
                 {
-                    "bipod_01_f_blk",
-                    "bipod_02_f_blk",
-                    "bipod_03_f_blk"
+                    "bipod_01_f_blk"
                 };
             };
         };
         class Single: Single
         {
+            maxRange = 450;
+            maxRangeProbab = 0.3;
+            midRange = 250;
+            midRangeProbab = 0.7;
+            minRange = 2;
+            minRangeProbab = 0.5;
+
+            dispersion = 0.0003;
+            reloadTime = 1.5;
+
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "MRC\JLTS\weapons\DC15X\sounds\dc15x_fire.wss",
-                    2.5,
-                    1,
-                    1800
-                };
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15X_Single"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15X_Single"};
             };
         };
     };
@@ -102,8 +108,8 @@ class CfgWeapons
     class BNA_KC_DC15X: BNA_KC_DC15X_Base
     {
         // Scope
-        scope = 1;        // Hidden until completed
-        scopeArsenal = 0;
+        scope = 2;
+        scopeArsenal = 2;
 
         displayName = "[KC] DC-15X";
         baseWeapon = "BNA_KC_DC15X";
@@ -114,7 +120,7 @@ class CfgWeapons
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "JLTS_DC15X_scope";
+                item = "BNA_KC_DC15X_Scope";
             };
         };
     };
@@ -138,13 +144,39 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_DC15X_mag;
-    class 12thFleet_Mag_DC15X: JLTS_DC15X_mag
+    class Aux12thFleet_Mag_DC15X: JLTS_DC15X_mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15X Energy Cell";
         displayNameShort = "High Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DC-15X";
-        ammo = "12thFleet_Ammo_Sniper_Blue";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-15X";
+        ammo = "Aux12thFleet_Ammo_Sniper_Blue";
+        count = 20;
 
         JLTS_hasEMPProtection = 1;
+
+        initSpeed = 1100;
+        mass = 8;
+    };
+};
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DC15X_Single: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"MRC\JLTS\weapons\DC15X\sounds\dc15x_fire.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DC15X_Single: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC15X_Single"};
     };
 };

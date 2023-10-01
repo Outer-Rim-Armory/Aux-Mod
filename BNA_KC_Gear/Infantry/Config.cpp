@@ -7,12 +7,7 @@ class CfgWeapons
     // ┌───────────────────┐
     // │      Helmets      │
     // └───────────────────┘
-    class ItemInfo;
-    class ls_blueforHelmet_base;
-    class ls_gar_phase2_helmet: ls_blueforHelmet_base
-    {
-        class ItemInfo;
-    };
+    class ls_gar_phase2_helmet;
     class BNA_KC_Helmet_Base: ls_gar_phase2_helmet
     {
         // Mod Info
@@ -23,7 +18,7 @@ class CfgWeapons
         scope = 0;
         scopeArsenal = 0;
 
-        class ItemInfo: ItemInfo {};
+        class ItemInfo;
     };
 
     class BNA_KC_Helmet_Phase1_Base: BNA_KC_Helmet_Base
@@ -252,17 +247,109 @@ class CfgWeapons
                 };
                 class Chest
                 {
-                    HitpointName = "HitChest";
+                    hitpointName = "HitChest";
                     armor = 12;
-                    PassThrough = 0.3;
+                    passThrough = 0.3;
                 };
                 class Diaphragm
                 {
-                    HitpointName = "HitDiaphragm";
+                    hitpointName = "HitDiaphragm";
                     armor = 12;
-                    PassThrough = 0.3;
+                    passThrough = 0.3;
                 };
             };
+        };
+    };
+
+    class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] INF Vest 04 (LCPL)";
+
+        model = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\heavy_accessories_co.paa",    // Heavy Strap
+            "",                                              // ?
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa", // Holster
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa"  // Pauldron
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
+            uniformModel = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_CPL: BNA_KC_Vest_LCPL
+    {
+        displayName = "[KC] INF Vest 05 (CPL)";
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CPL.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CPL.paa"
+        };
+    };
+
+    class BNA_KC_Vest_CS: BNA_KC_Vest_LCPL
+    {
+        displayName = "[KC] INF Vest 06 (CS)";
+        model = "\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CS.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+        };
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_CSS: BNA_KC_Vest_CS
+    {
+        displayName = "[KC] INF Vest 07 (CSS)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CSS.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+        };
+    };
+
+    class BNA_KC_Vest_CSFC: BNA_KC_Vest_CS
+    {
+        displayName = "[KC] INF Vest 08 (CSFC)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CSFC.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+        };
+    };
+
+    class BNA_KC_Vest_CMS: BNA_KC_Vest_CS
+    {
+        displayName = "[KC] INF Vest 09 (CMS)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CMS.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+        };
+    };
+
+    class BNA_KC_Vest_CSM: BNA_KC_Vest_CS
+    {
+        displayName = "[KC] INF Vest 10 (CSM)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CSM.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
         };
     };
 
@@ -537,9 +624,9 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11("12thFleet_Mag_DC15S"),
+            ITEM_11("Aux12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("12thFleet_Mag_DC17"),
+            ITEM_2("Aux12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -552,9 +639,9 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11("12thFleet_Mag_DC15S"),
+            ITEM_11("Aux12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("12thFleet_Mag_DC17"),
+            ITEM_2("Aux12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
@@ -610,7 +697,7 @@ class CfgVehicles
 
         // Editor Properties
         editorSubcategory = "BNA_KC_INF_P1";
-        editorPreview = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Preview_Trooper_P1.paa";
+        editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\Base.jpg";
 
         displayName = "[KC] INF P1 Trooper (Base)"
 
@@ -625,7 +712,7 @@ class CfgVehicles
 
         // Editor Properties
         editorSubcategory = "BNA_KC_INF_P2";
-        editorPreview = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Preview_Trooper_P2.paa";
+        editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\Base.jpg";
 
         // Uniform textures would be applied here ; default textures listed
         uniformClass = "BNA_KC_Uniform_Base";
@@ -650,6 +737,7 @@ class CfgVehicles
     {
         displayName = "[KC] INF Snow - Trooper";
         editorSubcategory = "BNA_KC_INF_Snow";
+        editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Trooper_Insulated.jpg";
 
         // Uniform Model & Textures
         uniformClass = "BNA_KC_Uniform_Insulated";
@@ -696,7 +784,7 @@ class CfgVehicles
 
         displayName = "[KC] Clone Trooper Backpack";
 
-        picture = "BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_UI.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_UI.paa";
         hiddenSelectionsTextures[] =
         {
             "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa", // Main Texture
@@ -712,7 +800,7 @@ class CfgVehicles
         displayName = "[KC] Clone Trooper Backpack (Invisible)";
 
         // Remove the model and textures (invisible)
-        picture = "BNA_KC_Gear\Infantry\Data\UI\Blank.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\Blank.paa";
         model = "BNA_KC_Gear\Data\Models\empty_model.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};

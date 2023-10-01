@@ -19,8 +19,8 @@ class CfgPatches
             "BNA_KC_Resupply_Base",
 			"BNA_KC_Resupply_SquadAmmo",
 			"BNA_KC_Resupply_PlatoonAmmo",
-            "BNA_KC_Resupply_SquadAmmo_Special",
-            "BNA_KC_Resupply_PlatoonAmmo_Special",
+            "BNA_KC_Resupply_SquadAmmo_Heavy",
+            "BNA_KC_Resupply_PlatoonAmmo_Heavy",
             "BNA_KC_Resupply_SquadMedical",
             "BNA_KC_Resupply_PlatoonMedical",
             "BNA_KC_Resupply_JetpackFuel"

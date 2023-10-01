@@ -17,6 +17,8 @@ class CfgVehicles
             class impulseOn;
             class impulseOff;
         };
+        class ACE_SelfActions;
+
         class pilotCamera;
         class AnimationSources;
         class Turrets;
@@ -47,27 +49,27 @@ class CfgVehicles
         // Textures
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Body.paa",
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
-            "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
-            "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
-            "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+            "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Body.paa",
+            "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Wings.paa",
+            "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+            "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+            "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
         };
-        textureList[] = { "Standard", 0, "Imperial", 0, "KeeliCompany", 1 };
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "Akali", 0, "TwiLek", 0};
         class TextureSources
         {
             class Standard
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "3AS\3as_Laat\LAATI\data\Hull_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Wings_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                    "\3AS\3as_Laat\LAATI\data\Hull_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Wings_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
             class Imperial: Standard
@@ -76,11 +78,11 @@ class CfgVehicles
                 displayName = "Imperial";
                 textures[] =
                 {
-                    "3AS\3as_Laat\LAATI\data\Hull_Imp_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\wings_Imp_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\weapons_Imp_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\weapon_Details_Imp_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\interior_Imp_CO.paa"
+                    "\3AS\3as_Laat\LAATI\data\Hull_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\wings_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\weapons_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\weapon_Details_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\interior_Imp_CO.paa"
                 };
             };
             class KeeliCompany: Standard
@@ -89,11 +91,37 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Body.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\BNA_KC_LAAT_Standard_Wings.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
-                    "3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Body.paa",
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Wings.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class Akali: Standard
+            {
+                author = "Rev";
+                displayName = "Akali";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Body.paa",
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Wings.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class TwiLek: Standard
+            {
+                author = "Rev";
+                displayName = "Twi'Lek";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\TwiLek\TwiLek_Body.paa",
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\TwiLek\TwiLek_Wings.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
         };
@@ -160,7 +188,7 @@ class CfgVehicles
                 onlyforplayer = 0;
                 hideOnUse = 1;
 
-                condition = QUOTE(isEngineOn this and ls_player == currentPilot this and !isTouchingGround this;);
+                condition = QUOTE(isEngineOn this and ace_player == currentPilot this and !isTouchingGround this;);
                 statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
             };
             class impulseOff: impulseOn
@@ -182,6 +210,81 @@ class CfgVehicles
             };
         };
 
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ChangeHUDColor
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
+
         // Impulse Settings
         tas_can_impulse = 0; // Disables 3AS's Impulse System
         ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
@@ -193,8 +296,8 @@ class CfgVehicles
 
         accuracy = 5; // How easy it is for AI to indentify
         cost = "3e+006"; // How "important" AI thinks it is
-        availableForSupportTypes[] = { "CAS_Heli", "Transport", "Drop" };
-        typicalCargo[] = { "BNA_KC_Unit_Phase2_Pilot" }; // What units are "normally" in the vehicle
+        availableForSupportTypes[] = {"CAS_Heli", "Transport", "Drop"};
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"}; // What units are "normally" in the vehicle
         vehicleClass = "Helicopter"; // What type of vehicle it is
 
         // Animations
@@ -241,6 +344,7 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "[KC] LAAT/i MK1";
+        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_LAATi_MK1.jpg";
 
         class AnimationSources: AnimationSources
         {
@@ -249,10 +353,25 @@ class CfgVehicles
                 initPhase = 1;
             };
         };
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+            class CoPilot: CoPilot {};
+            class LeftDoorGun: LeftDoorGun {};
+            class RightDoorGun: RightDoorGun {};
+            class CargoTurret_01: CargoTurret_01 {};
+            class CargoTurret_02: CargoTurret_02 {};
+            class CargoTurret_03: CargoTurret_03 {};
+            class CargoTurret_04: CargoTurret_04 {};
+            class CargoTurret_05: CargoTurret_05 {};
+            class CargoTurret_06: CargoTurret_06 {};
+        };
     };
     class BNA_KC_LAATi_MK1_Lamps: BNA_KC_LAATi_MK1
     {
         displayName = "[KC] LAAT/i MK1 (Lamps)";
+        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_LAATi_MK1_Lamps.jpg";
         class AnimationSources: AnimationSources
         {
             class Lamps: Lamps
@@ -273,6 +392,7 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "[KC] LAAT/i MK2";
+        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_LAATi_MK2.jpg";
 
         class AnimationSources: AnimationSources
         {
@@ -299,6 +419,7 @@ class CfgVehicles
     class BNA_KC_LAATi_MK2_Lamps: BNA_KC_LAATi_MK2
     {
         displayName = "[KC] LAAT/i MK2 (Lamps)";
+        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_LAATi_MK2_Lamps.jpg";
         class AnimationSources: AnimationSources
         {
             class Lamps: Lamps
@@ -312,6 +433,7 @@ class CfgVehicles
     class lsd_heli_laatc: lsd_laatc_base
     {
         class UserActions; // LS's loading is also done through UserActions
+        class ACE_SelfActions;
     };
     class BNA_KC_LAATc: lsd_heli_laatc
     {
@@ -326,6 +448,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
+        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_LAATc.jpg";
 
         displayName = "[KC] LAAT/c";
         crew = "BNA_KC_Unit_Phase2_Pilot";
@@ -338,14 +461,14 @@ class CfgVehicles
             "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Hull.paa",
             "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Wings.paa"
         };
-        textureList[] = { "Standard", 0, "KeeliCompany", 1 };
+        textureList[] = {"Standard", 0, "KeeliCompany", 1};
         class TextureSources
         {
             class Standard
             {
                 author = "Legion Studios";
                 displayName = "Standard";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "lsd_vehicles_heli\laatc\data\auxiliary_co.paa",
@@ -372,6 +495,26 @@ class CfgVehicles
 
         class UserActions: UserActions
         {
+            class Impulse
+            {
+                displayName = "Impulse";
+                position = "pilotview";
+                radius = 5;
+
+                shortcut = "User19";
+                onlyforplayer = 0;
+                hideOnUse = 1;
+
+                condition = QUOTE(isEngineOn this and ace_player == currentPilot this and !isTouchingGround this;);
+                statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
+            };
+            class Repulse: Impulse
+            {
+                displayName = "Repulse";
+                shortcut = "User20";
+                statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick;);
+            };
+
             class SpecialLoadVehicle
             {
                 displayName = "Load Vehicle (Custom)";
@@ -389,6 +532,81 @@ class CfgVehicles
             };
         };
 
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class LS_HUD_Changer // Different name to overwite base LS action
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
+
         ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
         ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
         ls_impulsor_fuelDrain_1 = 0;
@@ -397,10 +615,14 @@ class CfgVehicles
         // ls_impulsor_boostSpeed_2 = 600;
     };
 
-    class 3AS_Republic_Transport_01;
+    class 3AS_Republic_Transport_01_Base;
+    class 3AS_Republic_Transport_01: 3AS_Republic_Transport_01_Base
+    {
+        class ACE_SelfActions;
+    };
     class BNA_KC_RepubTransport: 3AS_Republic_Transport_01
-	{
-		// Mod Info
+    {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
@@ -411,141 +633,487 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
+        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_RepubTransport.jpg";
 
         displayName = "[KC] Republic Transport";
 
         crew = "BNA_KC_Unit_Phase2_Pilot";
 
-		hiddenselectionstextures[]=
-		{
-			"BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
-			"3as\3as_starships\data\hs_int_co.paa"
-		};
-	};
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
+            "3as\3as_starships\data\hs_int_co.paa",
+            "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+        };
 
-	class Plane;
-	class Plane_Base_F: Plane {};
-	class VTOL_Base_F: Plane_Base_F {};
-	class VTOL_01_base_F: VTOL_Base_F {};
-	class VTOL_01_armed_base_F: VTOL_01_base_F
-	{
-		class Turrets;
-	};
-	class B_T_VTOL_01_armed_F: VTOL_01_armed_base_F
-	{
-		class Turrets: Turrets
-		{
-			class GunnerTurret_01;
-			class GunnerTurret_02;
-		};
-	};
-	class BNA_KC_HAG_Base: B_T_VTOL_01_armed_F
-	{
-		// Mod Info
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "3as\3as_starships\data\hs_ext_co.paa",
+                    "3as\3as_starships\data\hs_int_co.paa",
+                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                };
+            };
+            class Imperial: Standard
+            {
+                displayName = "Imperial";
+                textures[] =
+                {
+                    "3as\3as_starships\data\hs_Imp_ext_co.paa",
+                    "3as\3as_starships\data\hs_int_co.paa",
+                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                };
+            };
+            class KeeliCompany: Standard
+            {
+                author = "Dexus";
+                displayName = "Keeli Company";
+                textures[] =
+                {
+                    "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
+                    "3as\3as_starships\data\hs_int_co.paa",
+                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                };
+            };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ChangeHUDColor
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
+    };
+
+    class VTOL_Base_F;
+    class VTOL_01_base_F: VTOL_Base_F
+    {
+        class Turrets;
+    };
+    class VTOL_01_armed_base_F: VTOL_01_base_F
+    {
+        class Turrets: Turrets
+        {
+            class CopilotTurret;
+            class GunnerTurret_01;
+            class GunnerTurret_02;
+        };
+    };
+    class B_T_VTOL_01_armed_F: VTOL_01_armed_base_F
+    {
+        class ACE_SelfActions;
+    };
+    class BNA_KC_Galaxy_Gunship: B_T_VTOL_01_armed_F
+    {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
+
         // Scope
         scope = 2;
         scopeCurator = 2;
+
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
-
 
         displayName = "[KC] Galaxy HAG";
         crew = "BNA_KC_Unit_Phase2_Pilot";
-		typicalCargo[] = {"B_T_Soldier_F"};
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
-		hiddenSelectionsTextures[] =
-		{
-			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT01_olive_CO.paa",
-			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT02_olive_CO.paa",
-			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT03_olive_CO.paa",
-			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_EXT04_olive_CO.paa",
-			"\A3\Air_F_Exp\VTOL_01\Data\VTOL_01_signs_CA.paa"
-		};
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ChangeHUDColor
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
 
-		class Turrets: Turrets
-		{
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
 
-			//class CopilotTurret: CopilotTurret{};
-			class GunnerTurret_01: GunnerTurret_01
-			{
-				weapons[]=
-				{
-					"BNA_KC_105mm",
-						// "cannon_105mm_VTOL_01"
-					"BNA_KC_Gatling_20mm"
-						// "gatling_20mm_VTOL_01"
-				};
-				magazines[]=
-				{
-					"BNA_KC_100rnd_105mm",
-						// "100Rnd_105mm_HEAT_MP"
-					"BNA_KC_4000rnd_20mm"
-						// "4000Rnd_20mm_Tracer_Red_shells"
-				};
-			};
-			class GunnerTurret_02: GunnerTurret_02
-			{
-				weapons[]=
-				{
-					"BNA_KC_40mm_VTOL"
-				};
-				magazines[]=
-				{
-					"BNA_KC_40mm_GPR_240rnd",
-					"BNA_KC_40mm_APFSDS_160rnd"
-				};
-			};
-		};
+        class Turrets: Turrets
+        {
+            class CopilotTurret: CopilotTurret {};
+            class GunnerTurret_01: GunnerTurret_01
+            {
+                weapons[] =
+                {
+                    "BNA_KC_105mm",
+                    "BNA_KC_Gatling_20mm"
+                };
+                magazines[] =
+                {
+                    "BNA_KC_100rnd_105mm",
+                    "BNA_KC_4000rnd_20mm"
+                };
+            };
+            class GunnerTurret_02: GunnerTurret_02
+            {
+                weapons[] = {"BNA_KC_40mm_VTOL"};
+                magazines[] =
+                {
+                    "BNA_KC_40mm_GPR_240rnd",
+                    "BNA_KC_40mm_APFSDS_160rnd"
+                };
+            };
+        };
+    };
+    class BNA_KC_HAG_Base: BNA_KC_Galaxy_Gunship
+    {
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+    };
 
-		soundEngineOffExt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_ext_stop",1,1,600};
-		soundEngineOffInt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_int_stop",1,1};
-		soundEngineOnExt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_ext_start",1,1,600};
-		soundEngineOnInt[] = {"A3\Sounds_F_Exp\vehicles\air\VTOL_01\VTOL_01_int_start",1,1};
-	};
-
-	class VTOL_01_unarmed_base_F: VTOL_01_base_F {};
-	class VTOL_01_vehicle_base_F: VTOL_01_unarmed_base_F {};
-	class B_T_VTOL_01_vehicle_F: VTOL_01_vehicle_base_F {};
-	class BNA_KC_HVT_Base: B_T_VTOL_01_vehicle_F
-	{
-		// Mod Info
+    class VTOL_01_vehicle_base_F;
+    class B_T_VTOL_01_vehicle_F: VTOL_01_vehicle_base_F
+    {
+        class ACE_SelfActions;
+    };
+    class BNA_KC_Galaxy_Transport_Vehicle: B_T_VTOL_01_vehicle_F
+    {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
+
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
+
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
-
 
         displayName = "[KC] Galaxy HVT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
-	};
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
-	class VTOL_01_infantry_base_F: VTOL_01_unarmed_base_F {};
-	class B_T_VTOL_01_infantry_F: VTOL_01_infantry_base_F {};
-	class BNA_KC_HIT_Base: B_T_VTOL_01_infantry_F
-	{
-		// Mod Info
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ChangeHUDColor
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
+    };
+    class BNA_KC_HVT_Base: BNA_KC_Galaxy_Transport_Vehicle
+    {
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+    };
+
+    class VTOL_01_infantry_base_F;
+    class B_T_VTOL_01_infantry_F: VTOL_01_infantry_base_F
+    {
+        class ACE_SelfActions;
+    };
+    class BNA_KC_Galaxy_Transport_Infantry: B_T_VTOL_01_infantry_F
+    {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
+
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
+
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
 
-
         displayName = "[KC] Galaxy HIT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
-	};
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class ChangeHUDColor
+            {
+                displayName = "Change HUD Color";
+                condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                icon = "\ls_data\icons\hud\colorWheel.paa";
+
+                class HUD_White
+                {
+                    displayName = "White";
+                    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)";
+                    exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"};
+                    runOnHover = 1;
+                    statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFFFF']";
+                };
+                class HUD_Black: HUD_White
+                {
+                    displayName = "Black";
+                    statement = "[0, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#000000']";
+                };
+                class HUD_Blue: HUD_White
+                {
+                    displayName = "Blue";
+                    statement = "[0, 0, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#0000FF']";
+                };
+                class HUD_Purple: HUD_White
+                {
+                    displayName = "Purple";
+                    statement = "[0.5, 0, 0.5, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#800080']";
+                };
+                class HUD_Red: HUD_White
+                {
+                    displayName = "Red";
+                    statement = "[1, 0, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF0000']";
+                };
+                class HUD_Orange: HUD_White
+                {
+                    displayName = "Orange";
+                    statement = "[1, 0.5, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FF8000']";
+                };
+                class HUD_Yellow: HUD_White
+                {
+                    displayName = "Yellow";
+                    statement = "[1, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#FFFF00']";
+                };
+                class HUD_Green: HUD_White
+                {
+                    displayName = "Green";
+                    statement = "[0, 1, 0, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FF00']";
+                };
+                class HUD_Cyan: HUD_White
+                {
+                    displayName = "Cyan";
+                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
+                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
+                };
+                class HUD_Clear: HUD_White
+                {
+                    displayName = "No Hud";
+                    icon = "ls_data\icons\hud\noHud.paa";
+                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                };
+            };
+        };
+    };
+    class BNA_KC_HIT_Base: BNA_KC_Galaxy_Transport_Infantry
+    {
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+    };
 };
 
 
@@ -568,12 +1136,12 @@ class CfgSounds
 
 class CfgEditorSubcategories
 {
-	class BNA_KC_SubCat_VAviation
-	{
-		dlc = "BNA_KC";
-		author = "SweMonkey and DartRuffian";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "Vehicles - Aviation";
-	};
+    class BNA_KC_SubCat_VAviation
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Vehicles - Aviation";
+    };
 };

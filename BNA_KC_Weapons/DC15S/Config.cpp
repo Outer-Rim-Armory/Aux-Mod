@@ -41,17 +41,9 @@ class CfgWeapons
 
         displayName = "[KC] DC-15S (Base)";
 
-        modes[] =
-        {
-            "Single",
-            "FullAuto"
-        };
-        muzzles[] =
-        {
-            "this",
-            "Stun"
-        };
-        magazines[] = { "12thFleet_Mag_DC15S" };
+        modes[] = {"FullAuto", "Single"};
+        muzzles[] = {"this", "Stun"};
+        magazines[] = {"Aux12thFleet_Mag_DC15S"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -96,37 +88,27 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15S"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15S"};
             };
         };
         class FullAuto: FullAuto
         {
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15S"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15S"};
             };
         };
         class Stun: Stun
         {
             displayName = "Stun";
             magazines[] = {};
-            magazineWell[] = { "BNA_KC_Stuns" };
+            magazineWell[] = {"BNA_KC_Stuns"};
         };
     };
 
@@ -169,10 +151,9 @@ class CfgWeapons
 
         JLTS_isShielded = 1;
         JLTS_friedItem = "BNA_KC_DC15S_RiotShield_Fried";
-        JLTS_baseWeapon = "BNA_KC_DC15S";
 
         model = "\MRC\JLTS\weapons\DC15S\DC15S_shielded.p3d";
-        hiddenSelections[] = { "camo1", "camo2" };
+        hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] =
         {
             "\MRC\JLTS\weapons\DC15S\data\DC15S_co.paa",
@@ -192,7 +173,7 @@ class CfgWeapons
         {
             class UnderBarrelSlot: UnderBarrelSlot
             {
-                compatibleItems[] = { "JLTS_riot_shield_attachment" };
+                compatibleItems[] = {"JLTS_riot_shield_attachment"};
             };
         };
     };
@@ -202,7 +183,7 @@ class CfgWeapons
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_fried_ui_ca.paa";
 
-        JLTS_baseWeapon = "BNA_KC_DC15S_RiotShield";
+        JLTS_baseWeapon = "BNA_KC_DC15S";
         JLTS_isFried = 1;
         magazines[] = {};
 
@@ -218,13 +199,39 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_DC15S_mag;
-    class 12thFleet_Mag_DC15S: JLTS_DC15S_mag
+    class Aux12thFleet_Mag_DC15S: JLTS_DC15S_mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-15S Energy Cell";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 80<br/>Used In: DC-15S";
-        ammo = "12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux12thFleet_Ammo_Carbine_Blue";
 
         JLTS_hasEMPProtection = 1;
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DC15S: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss", 1, 1},
+            // {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire2.wss", 1, 1},
+            {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire3.wss", 1, 1},
+            {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire4.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DC15S: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC15S"};
     };
 };

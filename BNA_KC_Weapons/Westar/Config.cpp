@@ -10,12 +10,30 @@ class CfgWeapons
     class 3AS_WestarM5_Base_F: Rifle_Base_F
     {
         class WeaponSlotsInfo;
+
+        class Single;
+        class Burst;
+        class FullAuto;
     };
     class 3AS_WestarM5_F: 3AS_WestarM5_Base_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot;
+            class PointerSlot;
+        };
+
+        class Single: Single
+        {
+            class StandardSound;
+        };
+        class Burst: Burst
+        {
+            class StandardSound;
+        };
+        class FullAuto: FullAuto
+        {
+            class StandardSound;
         };
     };
     class BNA_KC_WestarM5_Base: 3AS_WestarM5_F
@@ -32,20 +50,15 @@ class CfgWeapons
         picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
         baseWeapon = "BNA_KC_WestarM5_Base";
 
-        modes[] =
-        {
-            "Single",
-            "Burst",
-            "FullAuto"
-        };
-        muzzles[] =
-        {
-            "this"
-        };
-        magazines[] = { "12thFleet_Mag_WestarM5" };
+        modes[] = {"Single", "Burst", "FullAuto"};
+        muzzles[] = {"this"};
+        magazines[] = {"Aux12thFleet_Mag_WestarM5"};
         magazineWell[] = {};
 
         canShootInWater = 1;
+        fireLightDiffuse[] = {0, 0, 1};
+        fireLightDuration = 0.05;
+        fireLightIntensity = 0.2;
         recoil = "recoil_smg_03";
 
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -78,6 +91,43 @@ class CfgWeapons
                     "Aux501_cows_Holosight_3"
                 };
             };
+            class PointerSlot: PointerSlot
+            {
+                compatibleItems[] =
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+        };
+
+        class Single: Single
+        {
+            sounds[] = {"StandardSound"};
+            class StandardSound: StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_Westar"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_Westar"};
+            };
+        };
+        class Burst: Burst
+        {
+            sounds[] = {"StandardSound"};
+            class StandardSound: StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_Westar"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_Westar"};
+            };
+        };
+        class FullAuto: FullAuto
+        {
+            sounds[] = {"StandardSound"};
+            class StandardSound: StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_Westar"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_Westar"};
+            };
         };
     };
 
@@ -99,11 +149,7 @@ class CfgWeapons
         displayName = "[KC] Westar-M5 UGL";
         baseWeapon = "BNA_KC_WestarM5_UGL";
 
-        muzzles[] =
-        {
-            "this",
-            "EGLM"
-        };
+        muzzles[] = {"this", "EGLM"};
 
         model = "3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";
 
@@ -113,7 +159,7 @@ class CfgWeapons
             descriptionShort = "UGL";
 
             cameraDir = "OP_look";
-            discreteDistance[] = { 50, 75, 100, 150, 200, 250, 300, 350, 400 };
+            discreteDistance[] = {50, 75, 100, 150, 200, 250, 300, 350, 400};
             discreteDistanceCameraPoint[] =
             {
                 "OP_eye_50",
@@ -133,10 +179,10 @@ class CfgWeapons
 
             canShootInWater = 0;
             magazines[] = {};
-            magazineWell[] = { "BNA_KC_UGL_Common" };
+            magazineWell[] = {"BNA_KC_UGL_Common"};
 
             reloadAction = "GestureReloadMXUGL";
-            reloadMagazineSound[] = { "A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10 };
+            reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
         };
     };
 
@@ -161,8 +207,9 @@ class CfgWeapons
 class CfgMagazines
 {
     class 3AS_60Rnd_EC50_Mag;
-    class 12thFleet_Mag_WestarM5: 3AS_60Rnd_EC50_Mag
+    class Aux12thFleet_Mag_WestarM5: 3AS_60Rnd_EC50_Mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] Westar-M5 Energy Cell";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: Westar-M5";
@@ -172,6 +219,31 @@ class CfgMagazines
 
         JLTS_hasEMPProtection = 1;
 
-        ammo = "12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux12thFleet_Ammo_Rifle_Blue";
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_Westar: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"3AS\3AS_Main\Sounds\Westar\Westar_Shot_1.ogg", 1, 1},
+            {"3AS\3AS_Main\Sounds\Westar\Westar_Shot_2.ogg", 1, 1},
+            {"3AS\3AS_Main\Sounds\Westar\Westar_Shot_3.ogg", 1, 1},
+            {"3AS\3AS_Main\Sounds\Westar\Westar_Shot_4.ogg", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_Westar: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_Westar"};
     };
 };

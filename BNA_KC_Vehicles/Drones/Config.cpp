@@ -60,9 +60,10 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VDrones";
+        editorPreview = "\BNA_KC_Vehicles\Drones\Data\Previews\BNA_KC_Khezu_Unarmed.jpg";
 
         displayName = "[KC] Khezu (Unarmed)";
-        
+
         KHEZU_TEXTURES()
     };
 
@@ -92,9 +93,10 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VDrones";
+        editorPreview = "\BNA_KC_Vehicles\Drones\Data\Previews\BNA_KC_Khezu_Armed.jpg";
 
         displayName = "[KC] Khezu (MG/GMG)";
-        
+
         KHEZU_TEXTURES()
 
         class Turrets: Turrets

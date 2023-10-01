@@ -1,3 +1,6 @@
+#include "CfgVehicles.hpp"
+
+
 class CfgPatches
 {
 	class BNA_KC_Scripts
@@ -27,18 +30,19 @@ class CfgFunctions
         {
             file = "BNA_KC_Scripts\Data\Functions\Developer";
             class devLog {};
+            class exportPreviews {};
         };
 
 		class Helmets
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Helmets";
-			class helmetNVGSwitch{};
+			class helmetNVGSwitch {};
 		};
 
 		class Misc
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Misc";
-			class FixInfiniteLoading{};
+			class FixInfiniteLoading {};
 			class getConfigProperty {};
             class inCustomCamera {};
 		};
@@ -46,31 +50,39 @@ class CfgFunctions
 		class Fortifications
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Fortification";
-			class FortificationsPostInit{};
-            class RegisterPreset{};
+			class FortificationsPostInit {};
+            class RegisterPreset {};
 		};
 
         class Map
         {
             file = "BNA_KC_Scripts\Data\Functions\Map";
-			class CreateMarkOnSelf{};
-            class CreateMarkAction{};
-            class rgbToHex{};
+			class markSelf {};
+            class markSelfChildren {};
+            class markSelfModifier {};
+            class rgbToHex {};
         };
 
         class EMP
         {
             file = "BNA_KC_Scripts\Data\Functions\EMP";
-            class killDroids;
-            class disableDekaShields;
-            class tempDisableVehicles;
-            class playDroidPopperSound;
+            class killDroids {};
+            class disableDekaShields {};
+            class tempDisableVehicles {};
+            class playDroidPopperSound {};
         };
 
         class Weapons
         {
             file = "BNA_KC_Scripts\Data\Functions\Weapons";
-            class specialGrenadesEH;
+            class specialGrenadesEH {};
+        };
+
+        class Vehicles
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Vehicles";
+            class canSwitchSkins {};
+            class skinSwitcherChildren {};
         };
 
         class Medical
@@ -110,10 +122,6 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Scripts_FortificationsPostInit
 	{
         init = "call BNAKC_fnc_FortificationsPostInit";
-    };
-    class BNA_KC_Scripts_CreateMarkAction
-    {
-        init = "call BNAKC_fnc_CreateMarkAction";
     };
     class BNA_KC_Scripts_FixInfiniteLoading
     {

@@ -13,14 +13,14 @@ class CfgWeapons
         magazines[] = {};
         magazineWell[] = {};
 
-        modes[] = { "Single" };
-        muzzles[] = { "this" };
+        modes[] = {"Single"};
+        muzzles[] = {"this"};
 
         nameSound = "";
 
-        changeFiremodeSound[] = { "A3\Sounds_F\arsenal\weapons\UGL\Firemode_ugl", 0.316228, 1, 5 };
-        reloadMagazineSound[] = { "A3\Sounds_F\arsenal\weapons\UGL\Reload_UGL", 0.562341, 1, 10 };
-        drySound[] = { "A3\Sounds_F\arsenal\weapons\UGL\Dry_ugl", 0.562341, 1, 10 };
+        changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Firemode_ugl", 0.316228, 1, 5};
+        reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Reload_UGL", 0.562341, 1, 10};
+        drySound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Dry_ugl", 0.562341, 1, 10};
 
         recoil = "recoil_pistol_p07";
         recoilProne = "recoil_pistol_p07";
@@ -47,19 +47,19 @@ class CfgWeapons
             minRangeProbab = 0.1;
 
             nameSound = "";
-            sounds[] = { "StandardSound" };
+            sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
-                closure1[] = { "A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL", 1, 1, 10 };
-                soundClosure[] = { "closure1", 1 };
+                closure1[] = {"A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL", 1, 1, 10};
+                soundClosure[] = {"closure1", 1};
             };
             class StandardSound: BaseSoundModeType
             {
-                begin1[] = { "A3\Sounds_F\arsenal\weapons\UGL\UGL_01", 0.707946, 1, 200 };
-                begin2[] = { "A3\Sounds_F\arsenal\weapons\UGL\UGL_02", 0.707946, 1, 200 };
-                soundBegin[] = { "begin1", 0.5, "begin2", 0.5 };
+                begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01", 0.707946, 1, 200};
+                begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02", 0.707946, 1, 200};
+                soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
 
-                soundSetShot[] = { "UGL_shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet" };
+                soundSetShot[] = {"UGL_shot_SoundSet", "UGL_Tail_SoundSet", "UGL_InteriorTail_SoundSet"};
             };
         };
     };
@@ -96,17 +96,9 @@ class CfgWeapons
         displayName = "[KC] DC-17 (Base)";
         baseWeapon = "BNA_KC_DC17_Base";
 
-        modes[] =
-        {
-            "Single"
-        };
-        muzzles[] =
-        {
-            "this",
-            "Stun",
-            "Launcher"
-        };
-        magazines[] = { "12thFleet_Mag_DC17" };
+        modes[] = {"Single"};
+        muzzles[] = {"this", "Stun", "Launcher"};
+        magazines[] = {"Aux12thFleet_Mag_DC17"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -129,7 +121,7 @@ class CfgWeapons
 
                 iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 iconPinpoint = "Bottom";
-                iconPosition[] = { 0.5, 0.35 };
+                iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
                 scope = 0;
@@ -141,28 +133,23 @@ class CfgWeapons
         {
             class StandardSound: StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC17\Data\Audio\DC17_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] = {begin1, 1};
-                soundBeginWater[] = {begin1, 1};
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC17_Single"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC17_Single"};
             };
         };
         class Stun: Stun
         {
             displayName = "Stun";
             magazines[] = {};
-            magazineWell[] = { "BNA_KC_Stuns" };
+            magazineWell[] = {"BNA_KC_Stuns"};
         };
         class Launcher: BNA_KC_Launcher_Muzzle
         {
             displayName = "Flare Launcher";
             magazines[] = {};
-            magazineWell[] = { "BNA_KC_3Rnd_UGL_Flares" };
+            magazineWell[] = {"BNA_KC_3Rnd_UGL_Flares"};
         };
     };
 
@@ -230,7 +217,7 @@ class CfgWeapons
         {
             class UnderBarrelSlot: UnderBarrelSlot
             {
-                compatibleItems[] = { "JLTS_riot_shield_attachment" };
+                compatibleItems[] = {"JLTS_riot_shield_attachment"};
             };
         };
     };
@@ -272,12 +259,12 @@ class CfgWeapons
         magazineWell[] = {};
 
         modes[] = {};
-        muzzles[] = { "Launcher" };
+        muzzles[] = {"Launcher"};
 
         class Launcher: Launcher
         {
             displayName = "Bacta Launcher";
-            magazines[] = { "BNA_KC_Mag_GR20" };
+            magazines[] = {"BNA_KC_Mag_GR20"};
             magazineWell[] = {};
         };
     };
@@ -306,12 +293,13 @@ class CfgWeapons
 class CfgMagazines
 {
     class JLTS_DC17SA_mag;
-    class 12thFleet_Mag_DC17: JLTS_DC17SA_mag
+    class Aux12thFleet_Mag_DC17: JLTS_DC17SA_mag
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] DC-17 Energy Cell";
-        displayNameShort = "Standard Energy";
+        displayNameShort = "Low Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-17";
-        ammo = "12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux12thFleet_Ammo_Rifle_Blue";
 
         JLTS_hasEMPProtection = 1;
     };
@@ -319,6 +307,7 @@ class CfgMagazines
     class 1Rnd_Smoke_Grenade_shell;
     class BNA_KC_Mag_GR20: 1Rnd_Smoke_Grenade_shell
     {
+        author = "DartRuffian and SweMonkey";
         displayName = "[KC] Pressurized Bacta Canister";
         displayNameShort = "Bacta Bomb";
         descriptionShort = "Pressurized Bacta Gas<br/>Rounds: 1<br/>Used In: GR-20<br/>Nicknamed the 'Bacta Bomb' by Republic Medics";
@@ -330,5 +319,26 @@ class CfgMagazines
         BNA_KC_GrenadeBacta_Duration = 15;
 
         JLTS_hasEMPProtection = 1;
+    };
+};
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DC17_Single: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"BNA_KC_Weapons\DC17\Data\Audio\DC17_Fire1.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DC17_Single: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC17_Single"};
     };
 };

@@ -7,14 +7,20 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Weapons_Core",
+                // Ammo
             "A3_Weapons_F",
                 // UGL_F
             "JLTS_weapons_DC15A",
                 // DC-15A
+            "Aux501_Patch_Accessories",
+                // 501st Scopes/Sights
             "JLTS_weapons_DC17SA",
                 // Flashlight
-            "Aux501_Patch_Accessories"
-                // 501st Scopes/Sights
+            "A3_Weapons_F_Acc",
+                // Laser pointer
+            "ace_laserpointer"
+                // Green laser pointer
         };
         units[] = {};
         weapons[] =
@@ -27,7 +33,7 @@ class CfgPatches
         };
         magazines[] =
         {
-            "12thFleet_Mag_DC15A"
+            "Aux12thFleet_Mag_DC15A"
         };
         ammo[] = {};
     };
