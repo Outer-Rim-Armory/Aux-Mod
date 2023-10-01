@@ -1244,6 +1244,12 @@ class CfgVehicles
                     statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
                 };
             };
+            class SpawnCrew
+            {
+                displayName = "Create Vehicle Crew";
+                condition = "true"; // TODO: Only appear if there are crew seats that are not filled
+                statement = "(group ace_player) createVehicleCrew _this#0";
+            };
         };
 
         class Turrets: Turrets
