@@ -92,6 +92,13 @@ class CfgFunctions
             class specialLoad {};
         };
 
+        class Shields
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Shield";
+            class activateShield {};
+            class deactivateShield {};
+        };
+
         class Medical
         {
             file = "BNA_KC_Scripts\Data\Functions\Medical";

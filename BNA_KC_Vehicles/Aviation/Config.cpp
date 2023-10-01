@@ -735,6 +735,7 @@ class CfgVehicles
             "\3as\3as_arc170\Data\Guns_co.paa"
         };
 
+        BNA_KC_Shield_hasShield = 1;
         BNA_KC_Shield_maxHealth = 50;
 
         textureList[] = {"Standard", 1};
@@ -777,24 +778,19 @@ class CfgVehicles
                 condition = "true";
                 statement = "";
                 modifierFunction = ""; // Show shield % in action name
+                runOnHover = 0;
 
                 class ActivateShield
                 {
                     displayName = "Activate Shield";
-                    condition = "_this#0 getVariable ['BNA_KC_Shield_isActive', false]";
-                    statement = ""; // activate shield
+                    condition = "!(_this#0 getVariable ['BNA_KC_Shield_isActive', false])";
+                    statement = "_this#0 call BNAKC_fnc_activateShield";
                 };
                 class DeactivateShield
                 {
-                    displayName = "Cyan";
-                    statement = "[0, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange";
-                    modifierFunction = "_this#3#2 set [1, '#00FFFF']";
-                };
-                class HUD_Clear: HUD_White
-                {
-                    displayName = "No Hud";
-                    icon = "ls_data\icons\hud\noHud.paa";
-                    statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange";
+                    displayName = "Deactivate Shield";
+                    condition = "_this#0 getVariable ['BNA_KC_Shield_isActive', false]";
+                    statement = "_this#0 call BNAKC_fnc_deactivateShield";
                 };
             };
         };
