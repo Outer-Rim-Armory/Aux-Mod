@@ -1138,6 +1138,30 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
+        hiddenSelectionsTextures[] =
+        {
+            "\3as\3as_arc170\Data\Main_Frame_co.paa",
+            "\3as\3as_arc170\Data\Wings_Engines_co.paa",
+            "\3as\3as_arc170\Data\Guns_co.paa"
+        };
+
+        textureList[] = {"Standard", 1};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "\3as\3as_arc170\Data\Main_Frame_co.paa",
+                    "\3as\3as_arc170\Data\Wings_Engines_co.paa",
+                    "\3as\3as_arc170\Data\Guns_co.paa"
+                };
+            };
+        };
+
         class ACE_SelfActions: ACE_SelfActions
         {
             class ChangeHUDColor
