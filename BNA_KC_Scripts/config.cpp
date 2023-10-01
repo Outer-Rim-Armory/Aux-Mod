@@ -98,6 +98,7 @@ class CfgFunctions
             class activateShield {};
             class deactivateShield {};
             class addShieldHandler {};
+            class shieldActionModifier {};
         };
 
         class Medical

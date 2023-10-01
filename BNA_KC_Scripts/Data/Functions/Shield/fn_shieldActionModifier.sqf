@@ -1,0 +1,37 @@
+/*
+* Author: DartRuffian
+* Modifier for the main shield ace action
+*
+* Arguments:
+* target: Object - The object the action is assigned to
+* player: Object - ace_player
+* params: Array - Parameters passed to the ace action
+* actionData: Array - Action name, icon, etc.
+*
+* Return Value:
+* None
+*
+* Examples:
+* modifierFunction = "_this call BNAKC_fnc_shieldActionModifier;"
+*/
+
+
+// ACE repair colors
+#define DAMAGE_COLOR_SCALE ["#FF0000", "#FF4400", "#FF7D16", "#FF9916", "#FCB121", "#FFD52C", "#FFEC4D", "#FFFF7E", "#FFFFFF"]
+params ["_target", "_player", "_params", "_actionData"];
+private ["_shieldMaxHealth", "_shieldHealth", "_percentColor", "_actionName"];
+
+_shieldMaxHealth =
+[
+	(configFile >> "CfgVehicles" >> typeOf _target),
+	"BNA_KC_Shield_maxHealth",
+	20
+] call BIS_fnc_returnConfigEntry;
+_shieldHealth = _target getVariable ["BNA_KC_Shield_health", _shieldMaxHealth];
+
+_percentColor = DAMAGE_COLOR_SCALE select (linearConversion [0, 1, (_shieldHealth/_shieldMaxHealth), 0, 8, true]);
+_shieldHealthPercent = round ((_shieldHealth/_shieldMaxHealth) * 100);
+
+_actionName = _actionData#1;
+_actionName = format [_actionName, format ["<t color='%1'>%2</t>", _percentColor, (str _shieldHealthPercent) + "%"]];
+_actionData set [1, _actionName];

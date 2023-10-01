@@ -777,7 +777,7 @@ class CfgVehicles
                 displayName = "Shield Health: %1";
                 condition = "true";
                 statement = "";
-                modifierFunction = ""; // Show shield % in action name
+                modifierFunction = "_this call BNAKC_fnc_shieldActionModifier";
                 runOnHover = 0;
 
                 class ActivateShield
