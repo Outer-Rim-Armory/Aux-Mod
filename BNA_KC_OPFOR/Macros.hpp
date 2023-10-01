@@ -34,5 +34,26 @@
 
 #define BASE_LINKED_ITEMS "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"
 
+#define TRANSWEAP_XX(WEAP, COUNT) class _xx_##WEAP \
+{ \
+    weapon = #WEAP; \
+    count = COUNT; \
+};
+
+#define TRANSMAG_XX(MAG, COUNT) class _xx_##MAG \
+{ \
+    magazine = #MAG; \
+    count = COUNT; \
+};
+
+#define TRANSITEM_XX(ITEM, COUNT) class _xx_##ITEM \
+{ \
+    name = #ITEM; \
+    count = COUNT; \
+};
+
+
+#define BASE_LINKED_ITEMS "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"
+
 // Returns text (normally code) in quotes
 #define QUOTE(CODE) #CODE
