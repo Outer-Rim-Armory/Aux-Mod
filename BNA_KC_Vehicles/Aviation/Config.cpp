@@ -1114,6 +1114,26 @@ class CfgVehicles
         scope = 1;
         scopeCurator = 0;
     };
+
+    class 3AS_ARC_170_Base;
+    class BNA_KC_ARC170: 3AS_ARC_170_Base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VAviation";
+
+        displayName = "[KC] ARC-170";
+        crew = "BNA_KC_Unit_Phase2_Pilot";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
+    };
 };
 
 
