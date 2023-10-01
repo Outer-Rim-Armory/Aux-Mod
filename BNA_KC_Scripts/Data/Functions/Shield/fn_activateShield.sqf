@@ -30,7 +30,7 @@ _shieldHealth =
 [
     (configFile >> "CfgVehicles" >> typeOf _vehicle),
     "BNA_KC_Shield_maxHealth",
-    50
+    20
 ] call BIS_fnc_returnConfigEntry;
 
 _vehicle setVariable ["BNA_KC_Shield_isActive", true, true];

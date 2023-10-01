@@ -37,7 +37,7 @@ _vehicle addEventHandler
         [
             (configFile >> "CfgVehicles" >> typeOf _vehicle),
             "BNA_KC_Shield_maxHealth",
-            50
+            20
         ] call BIS_fnc_returnConfigEntry;
         _shieldHealth = _vehicle getVariable ["BNA_KC_Shield_health", _shieldMaxHealth];
         _shieldHealth = (_shieldHealth - _damage) max 0;

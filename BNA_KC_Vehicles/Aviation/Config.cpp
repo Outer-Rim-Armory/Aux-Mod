@@ -736,7 +736,7 @@ class CfgVehicles
         };
 
         BNA_KC_Shield_hasShield = 1;
-        BNA_KC_Shield_maxHealth = 50;
+        BNA_KC_Shield_maxHealth = 20;
 
         textureList[] = {"Standard", 1};
         class TextureSources
