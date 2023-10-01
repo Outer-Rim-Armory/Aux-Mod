@@ -86,3 +86,26 @@ class Extended_PostInit_EventHandlers
         init = "call BNAKC_Jetpacks_fnc_jetDialogShowHideCreateHandlers;";
     };
 };
+
+
+class Extended_Killed_EventHandlers
+{
+    class CAManBase
+    {
+        class BNA_KC_Jetpacks_Killed_Effects
+        {
+            killed = "_this call BNAKC_Jetpacks_fnc_deleteEffects";
+        };
+    };
+};
+
+class Extended_Deleted_EventHandlers
+{
+    class CAManBase
+    {
+        class BNA_KC_Jetpacks_Deleted_Effects
+        {
+            deleted = "_this call BNAKC_Jetpacks_fnc_deleteEffects";
+        };
+    };
+};

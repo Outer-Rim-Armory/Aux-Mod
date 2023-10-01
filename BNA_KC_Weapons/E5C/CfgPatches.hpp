@@ -19,7 +19,9 @@ class CfgPatches
         {
             "BNA_KC_E5C_Base",
             "BNA_KC_E5C",
-            "BNA_KC_E5C_Fried"
+            "BNA_KC_E5C_Fried",
+            "BNA_KC_E5C_Stock",
+            "BNA_KC_E5C_Stock_Fried"
         };
         magazines[] =
         {

@@ -226,6 +226,13 @@ class CfgPatches
 
             // Vests
             "BNA_KC_Vest_Basic",
+            "BNA_KC_Vest_LCPL",
+            "BNA_KC_Vest_CPL",
+            "BNA_KC_Vest_CS",
+            "BNA_KC_Vest_CSS",
+            "BNA_KC_Vest_CSFC",
+            "BNA_KC_Vest_CMS",
+            "BNA_KC_Vest_CSM",
             "BNA_KC_Vest_Medic",
             "BNA_KC_Vest_Medic_Senior",
             "BNA_KC_Vest_Medic_v2",

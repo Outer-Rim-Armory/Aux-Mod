@@ -841,12 +841,76 @@ class CfgVehicles
 	};
     */
 
-    class 3AS_Jug_base_F;
-    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F
+    class 3AS_ATAP_Base;
+    class BNA_KC_ATAP: 3AS_ATAP_Base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VArmored";
+
+        displayName = "[KC] AT-AP";
+        crew = "BNA_KC_Unit_Phase2_Tanker";
+
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Body_KC.paa",
+            "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Weapons_KC.paa",
+            "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Legs_KC.paa"
+        };
+
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "CamoGrey", 0};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "\3as\3AS_ATAP\data\Hull_CO.paa",
+                    "\3as\3AS_ATAP\data\weapons and decals_CO.paa",
+                    "\3as\3AS_ATAP\data\legs_CO.paa"
+                };
+            };
+            class KeeliCompany: Standard
+            {
+                author = "Rev";
+                displayName = "Keeli Company";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Body_KC.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Weapons_KC.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Legs_KC.paa"
+                };
+            };
+            class CamoGrey: KeeliCompany
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Body_CamoGrey.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Weapons_CamoGrey.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Legs_CamoGrey.paa"
+                };
+            };
+        };
+    };
+
+    class Car_F;
+    class Wheeled_Apc_F: Car_F
     {
         class HitPoints;
     };
-    class 3as_Jug: 3AS_B_Jug_01_base_F
+    class 3AS_Jug_base_F: Wheeled_Apc_F
     {
         class HitPoints: HitPoints
         {
@@ -854,6 +918,8 @@ class CfgVehicles
             class HitHull;
         };
     };
+    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F {};
+    class 3as_Jug: 3AS_B_Jug_01_base_F {};
     class BNA_KC_Juggernaut: 3as_Jug
     {
         // Mod Info
@@ -893,22 +959,116 @@ class CfgVehicles
                 explosionShielding = 0.85;
             };
         };
-        /* Original Values
-        class HitBody: HitBody
+    };
+
+    class Tank_F;
+    class 3AS_RX200_Base: Tank_F
+    {
+        class Turrets;
+    };
+    class BNA_KC_RX200_Base: 3AS_RX200_Base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VArmored";
+
+        displayName = "[KC] RX-200";
+        crew = "BNA_KC_Unit_Phase2_Tanker";
+
+        hiddenSelectionsTextures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "CamoKC", 0, "CamoGrey", 0, "CamoBrown", 0};
+        class TextureSources
         {
-            armor = 1;
-            explosionShielding = 0.2;
-            minimalHit = 0.1;
-            passThrough = 0.5;
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] = {"\3as\3AS_RX200\data\DefaultMaterial_CO.paa"};
+            };
+            class KeeliCompany: Standard
+            {
+                author = "Rev";
+                displayName = "Keeli Company";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+            };
+            class CamoKC: KeeliCompany
+            {
+                displayName = "Keeli Company Camo";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoKC.paa"};
+            };
+            class CamoGrey: KeeliCompany
+            {
+                displayName = "Grey Camo";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+            };
+            class CamoBrown: KeeliCompany
+            {
+                displayName = "Brown Camo";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoBrown.paa"};
+            };
         };
-        class HitHull: HitHull
+
+        class Turrets: Turrets
         {
-            armor = 2;
-            explosionShielding = 1.5;
-            minimalHit = 0.1;
-            passThrough = 0;
+            class MainTurret;
         };
-        */
+    };
+
+    class BNA_KC_RX200_AA: BNA_KC_RX200_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] RX-200AA (Anti-Air)";
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+        };
+    };
+
+    class BNA_KC_RX200_Artillery: BNA_KC_RX200_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] RX-200ART (Artillery)";
+
+        artilleryScanner = 1;
+        availableForSupportTypes[] = {"Artillery"};
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] = {"mortar_155mm_AMOS"};
+                magazines[] =
+                {
+                    "32Rnd_155mm_Mo_shells",
+                    "2Rnd_155mm_Mo_guided",
+                    "2Rnd_155mm_Mo_guided",
+                    "6Rnd_155mm_Mo_mine",
+                    "2Rnd_155mm_Mo_Cluster",
+                    "6Rnd_155mm_Mo_smoke",
+                    "2Rnd_155mm_Mo_LG",
+                    "6Rnd_155mm_Mo_AT_mine"
+                };
+
+                turretInfoType = "RscWeaponRangeArtilleryAuto";
+            };
+        };
     };
 };
 

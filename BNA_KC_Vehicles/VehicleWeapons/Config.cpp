@@ -459,7 +459,7 @@ class CfgWeapons
 				weaponSoundEffect = "";
 				begin1[] =
 				{
-					"BNA_KC_Gear\Weapons\Data\Audio\BNA_KC_DC15A_Fire1.wss",
+					"BNA_KC_Weapons\DC15A\Data\Audio\DC15A_Fire1.wss",
 					1,
 					1,
 					1800
