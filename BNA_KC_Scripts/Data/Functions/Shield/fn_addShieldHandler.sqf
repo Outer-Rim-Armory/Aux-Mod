@@ -33,7 +33,7 @@ _vehicle setVariable
     [
         "HandleDamage",
         {
-            params ["_vehicle", "", "_damage", "", "", "", "", ""];
+            params ["_vehicle", "_selection", "_damage", "", "", "", "", ""];
             private ["_shieldMaxHealth", "_shieldHealth"];
 
             _shieldMaxHealth =
@@ -52,7 +52,8 @@ _vehicle setVariable
                 _vehicle removeEventHandler [_thisEvent, _thisEventHandler];
             };
 
-            0;
+            // Re-apply damage to vehicle, prevents being healed when hit
+            _vehicle getHit _selection;
         }
     ]
 ];
