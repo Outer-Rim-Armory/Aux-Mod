@@ -97,6 +97,7 @@ class CfgFunctions
             file = "BNA_KC_Scripts\Data\Functions\Shield";
             class activateShield {};
             class deactivateShield {};
+            class addShieldHandler {};
         };
 
         class Medical
