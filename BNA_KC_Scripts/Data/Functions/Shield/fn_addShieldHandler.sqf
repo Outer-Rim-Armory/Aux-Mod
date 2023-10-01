@@ -26,29 +26,33 @@ _hasShield =
 if (isNull _vehicle) exitWith {};
 if (_hasShield isEqualTo 0) exitWith {};
 
-_vehicle addEventHandler
+_vehicle setVariable
 [
-    "HandleDamage",
-    {
-        params ["_vehicle", "", "_damage", "", "", "", "", ""];
-        private ["_shieldMaxHealth", "_shieldHealth"];
-
-        _shieldMaxHealth =
-        [
-            (configFile >> "CfgVehicles" >> typeOf _vehicle),
-            "BNA_KC_Shield_maxHealth",
-            20
-        ] call BIS_fnc_returnConfigEntry;
-        _shieldHealth = _vehicle getVariable ["BNA_KC_Shield_health", _shieldMaxHealth];
-        _shieldHealth = (_shieldHealth - _damage) max 0;
-        _vehicle setVariable ["BNA_KC_Shield_health", _shieldHealth, true];
-
-        if (_shieldHealth isEqualTo 0) then
+    "BNA_KC_Shield_damageHandler",
+    _vehicle addEventHandler
+    [
+        "HandleDamage",
         {
-            _vehicle call BNAKC_fnc_deactivateShield;
-            _vehicle removeEventHandler [_thisEvent, _thisEventHandler];
-        };
+            params ["_vehicle", "", "_damage", "", "", "", "", ""];
+            private ["_shieldMaxHealth", "_shieldHealth"];
 
-        0;
-    }
+            _shieldMaxHealth =
+            [
+                (configFile >> "CfgVehicles" >> typeOf _vehicle),
+                "BNA_KC_Shield_maxHealth",
+                20
+            ] call BIS_fnc_returnConfigEntry;
+            _shieldHealth = _vehicle getVariable ["BNA_KC_Shield_health", _shieldMaxHealth];
+            _shieldHealth = (_shieldHealth - _damage) max 0;
+            _vehicle setVariable ["BNA_KC_Shield_health", _shieldHealth, true];
+
+            if (_shieldHealth isEqualTo 0) then
+            {
+                _vehicle call BNAKC_fnc_deactivateShield;
+                _vehicle removeEventHandler [_thisEvent, _thisEventHandler];
+            };
+
+            0;
+        }
+    ]
 ];
