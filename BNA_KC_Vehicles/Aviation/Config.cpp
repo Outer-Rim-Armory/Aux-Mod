@@ -1254,7 +1254,7 @@ class CfgVehicles
             {
                 displayName = "Delete Vehicle Crew";
                 condition = "false in (_this#0 call ace_common_fnc_getVehicleCrew apply {_x call CWR_fnc_isPlayer;});";
-                statement = "{deleteVehicleCrew _x;} forEach ((objectParent ace_player) call ace_common_fnc_getvehiclecrew)";
+                statement = "{deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)";
             };
         };
 
