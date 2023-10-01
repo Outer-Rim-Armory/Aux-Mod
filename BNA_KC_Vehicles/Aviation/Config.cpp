@@ -1250,6 +1250,12 @@ class CfgVehicles
                 condition = "true"; // TODO: Only appear if there are crew seats that are not filled
                 statement = "(group ace_player) createVehicleCrew _this#0";
             };
+            class DeleteCrew
+            {
+                displayName = "Delete Vehicle Crew";
+                condition = "true"; // TODO: Only appear there are AI crew present
+                statement = "{deleteVehicleCrew _x;} forEach ((objectParent ace_player) call ace_common_fnc_getvehiclecrew)";
+            };
         };
 
         class Turrets: Turrets
