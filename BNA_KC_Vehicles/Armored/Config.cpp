@@ -1076,7 +1076,7 @@ class CfgVehicles
             class CamoGrey: KeeliCompany
             {
                 displayName = "Grey Camo";
-                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoGrey.paa"};
             };
             class CamoBrown: KeeliCompany
             {
