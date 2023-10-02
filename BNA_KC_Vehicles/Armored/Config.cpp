@@ -875,6 +875,7 @@ class CfgVehicles
     class 3AS_ATAP_Base: MBT_01_arty_base_F
     {
         class ACE_SelfActions;
+        class UserActions;
     };
     class BNA_KC_ATAP: 3AS_ATAP_Base
     {
@@ -959,6 +960,25 @@ class CfgVehicles
                     condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
                     statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
                 };
+            };
+        };
+
+        class UserActions: UserActions
+        {
+            class PlayAlarm
+            {
+                displayName = "<t font='RobotoCondensedBold' color='#ffffff'>Play Alarm</t>";
+                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
+
+                position = "pilotview";
+                radius = 30;
+                onlyForPlayer = 0;
+
+                hideOnUse = 1;
+                priority = 5;
+
+                condition = "ace_player == driver this;";
+                statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 5, 1, 100];";
             };
         };
     };
