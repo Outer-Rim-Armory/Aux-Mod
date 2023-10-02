@@ -1018,10 +1018,17 @@ class CfgVehicles
         };
     };
 
-    class Tank_F;
-    class 3AS_RX200_Base: Tank_F
+    class Tank;
+    class Tank_F: Tank
     {
         class Turrets;
+    };
+    class 3AS_RX200_Base: Tank_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret;
+        };
         class ACE_SelfActions;
     };
     class BNA_KC_RX200_Base: 3AS_RX200_Base
@@ -1078,7 +1085,10 @@ class CfgVehicles
 
         class Turrets: Turrets
         {
-            class MainTurret;
+            class MainTurret: MainTurret
+            {
+                startEngine = 0;
+            };
         };
 
         class ACE_SelfActions: ACE_SelfActions
