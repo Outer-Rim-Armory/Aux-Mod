@@ -841,7 +841,11 @@ class CfgVehicles
 	};
     */
 
-    class 3AS_ATAP_Base;
+    class MBT_01_arty_base_F;
+    class 3AS_ATAP_Base: MBT_01_arty_base_F
+    {
+        class ACE_SelfActions;
+    };
     class BNA_KC_ATAP: 3AS_ATAP_Base
     {
         // Mod Info
@@ -900,6 +904,29 @@ class CfgVehicles
                     "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Body_CamoGrey.paa",
                     "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Weapons_CamoGrey.paa",
                     "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Legs_CamoGrey.paa"
+                };
+            };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class TFAR_IntercomChannel
+            {
+                displayName = "Intercom Channel";
+                condition = "true";
+                statement = "";
+
+                class TFAR_IntercomChannel_disabled
+                {
+                    displayName = "Disabled";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true]";
+                };
+                class TFAR_IntercomChannel_2
+                {
+                    displayName = "Crew";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
                 };
             };
         };
