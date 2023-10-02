@@ -889,6 +889,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\ATAP.jpg";
 
         displayName = "[KC] AT-AP";
         crew = "BNA_KC_Unit_Phase2_Tanker";
@@ -1044,6 +1045,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\RX200.jpg";
 
         displayName = "[KC] RX-200";
         crew = "BNA_KC_Unit_Phase2_Tanker";
