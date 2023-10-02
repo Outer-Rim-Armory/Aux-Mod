@@ -71,7 +71,8 @@ class CfgVehicles
 				};
 			};
 		};
-	};
+        class ACE_SelfActions;
+    };
     class BNA_KC_MBT_Slammer: B_MBT_01_TUSK_F
 	{
         // Mod Info
@@ -315,6 +316,35 @@ class CfgVehicles
                 //     type = "BNA_KC_Resupply_SquadAmmo";
                 //     amount = 2;
                 // };
+            };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class TFAR_IntercomChannel
+            {
+                displayName = "Intercom Channel";
+                condition = "true";
+                statement = "";
+
+                class TFAR_IntercomChannel_disabled
+                {
+                    displayName = "Disabled";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true]";
+                };
+                class TFAR_IntercomChannel_1
+                {
+                    displayName = "Cargo";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+                };
+                class TFAR_IntercomChannel_2
+                {
+                    displayName = "Crew";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
+                };
             };
         };
 	};
