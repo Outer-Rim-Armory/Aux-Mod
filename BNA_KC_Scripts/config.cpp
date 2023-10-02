@@ -46,6 +46,7 @@ class CfgFunctions
 			class FixInfiniteLoading {};
 			class getConfigProperty {};
             class inCustomCamera {};
+            class setIntercomChannel {};
 		};
 
 		class Fortifications
@@ -131,5 +132,16 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Weap_specialGrenadesEH
     {
         init = "['ace_firedPlayer'] call BNAKC_fnc_specialGrenadesEH;";
+    };
+};
+
+class Extended_GetIn_EventHandlers
+{
+    class All
+    {
+        class BNA_KC_SetIntercomChannel
+        {
+            getIn = "_this call BNAKC_fnc_setIntercomChannel";
+        };
     };
 };
