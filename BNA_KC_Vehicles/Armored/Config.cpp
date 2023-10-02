@@ -975,6 +975,13 @@ class CfgVehicles
             class HitBody;
             class HitHull;
         };
+        class UserActions
+        {
+            class Crow_nest_Up;
+            class Crow_nest_down;
+            class Open_rockets;
+            class Close_rockets;
+        };
     };
     class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F {};
     class 3as_Jug: 3AS_B_Jug_01_base_F {};
@@ -1015,6 +1022,26 @@ class CfgVehicles
             {
                 armor = 2;
                 explosionShielding = 0.85;
+            };
+        };
+
+        class UserActions: UserActions
+        {
+            class Crow_nest_Up: Crow_nest_Up
+            {
+                condition = "this animationSourcePhase 'crownest' == 0 and alive this and ace_player == this turretUnit [4]";
+            };
+            class Crow_nest_down: Crow_nest_down
+            {
+                condition = "this animationSourcePhase 'crownest' == 5 and alive this and ace_player == this turretUnit [4]";
+            };
+            class Open_rockets: Open_rockets
+            {
+                condition = "this animationSourcePhase 'rocket_move' == 1  and alive this and ace_player == this turretUnit [3]";
+            };
+            class Close_rockets: Close_rockets
+            {
+                condition = "this animationSourcePhase 'rocket_move' == 0 and alive this and ace_player == this turretUnit [3]";
             };
         };
     };
