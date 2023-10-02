@@ -18,6 +18,7 @@ class CfgPatches
 		{
 			"BNA_KC_Utility_Base",
 			"BNA_KC_Gonk_Uniforms",
+			"BNA_KC_Gonk_Loadouts",
 			"BNA_KC_Gonk_Permissions",
             "BNA_KC_Utility_Arsenal",
             "BNA_KC_Utility_Heal"

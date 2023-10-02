@@ -15,16 +15,6 @@ scopeCurator =
 scopeArsenal =
     0: Class is unavailable in the Arsenal.
     2: Class is available in the Arsenal.
-
-
-All class names should follow the style of:
-BNA_KC_<type>_<name>_<optional: extra info>
-
-For example, BNA_KC_Helmet_Phase2_CT and BNA_KC_Helmet_Phase2_CT_Legacy
-That way, the class name of any item gives you all of the info about what it is.
-These two items are phase 2 helmets for the CT rank, the second being
-the legacy texture.
-"_Base" should also be added for main item that all classes of that item should inherit from.
 */
 
 class CfgMods

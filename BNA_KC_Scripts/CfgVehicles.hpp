@@ -18,4 +18,85 @@ class CfgVehicles
             };
         };
     };
+
+    class LandVehicle;
+    class Car: LandVehicle
+    {
+        class ACE_SelfActions
+        {
+            class BNA_KC_SkinSwitcher
+            {
+                displayName = "Switch Vehicle Skin";
+                icon = "";
+
+                condition = "_this call BNAKC_fnc_canSwitchSkins";
+                statement = "systemChat 'test'";
+                insertChildren = "_this call BNAKC_fnc_skinSwitcherChildren";
+            };
+        };
+    };
+    class Tank: LandVehicle
+    {
+        class ACE_SelfActions
+        {
+            class BNA_KC_SkinSwitcher
+            {
+                displayName = "Switch Vehicle Skin";
+                icon = "";
+
+                condition = "_this call BNAKC_fnc_canSwitchSkins";
+                statement = "systemChat 'test'";
+                insertChildren = "_this call BNAKC_fnc_skinSwitcherChildren";
+            };
+        };
+    };
+
+    class Air;
+    class Helicopter: Air
+    {
+        class ACE_SelfActions
+        {
+            class BNA_KC_SkinSwitcher
+            {
+                displayName = "Switch Vehicle Skin";
+                icon = "";
+
+                condition = "_this call BNAKC_fnc_canSwitchSkins";
+                statement = "systemChat 'test'";
+                insertChildren = "_this call BNAKC_fnc_skinSwitcherChildren";
+            };
+        };
+    };
+    class Plane: Air
+    {
+        class ACE_SelfActions
+        {
+            class BNA_KC_SkinSwitcher
+            {
+                displayName = "Switch Vehicle Skin";
+                icon = "";
+
+                condition = "_this call BNAKC_fnc_canSwitchSkins";
+                statement = "systemChat 'test'";
+                insertChildren = "_this call BNAKC_fnc_skinSwitcherChildren";
+            };
+        };
+    };
+
+    class Ship;
+    class Ship_F: Ship
+    {
+        class ACE_SelfActions
+        {
+            class BNA_KC_SkinSwitcher
+            {
+                displayName = "Switch Vehicle Skin";
+                icon = "";
+
+                condition = "_this call BNAKC_fnc_canSwitchSkins";
+                statement = "systemChat 'test'";
+                insertChildren = "_this call BNAKC_fnc_skinSwitcherChildren";
+            };
+        };
+    };
 };

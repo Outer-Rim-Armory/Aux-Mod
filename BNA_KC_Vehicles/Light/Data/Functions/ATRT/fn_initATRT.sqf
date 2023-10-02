@@ -25,7 +25,7 @@ _atrt addEventHandler
     "HandleDamage",
     {
         params ["_atrt", "", "_damage", "", "", "", "", ""];
-        private ["_atrtHelath"];
+        private ["_atrtHealth"];
 
         _atrtHealth = _atrt getVariable ["BNA_KC_Health", ATRT_BASE_HEALTH];
         _atrtHealth = _atrtHealth - _damage;

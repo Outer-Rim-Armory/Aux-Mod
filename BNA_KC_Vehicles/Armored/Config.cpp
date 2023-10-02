@@ -71,7 +71,8 @@ class CfgVehicles
 				};
 			};
 		};
-	};
+        class ACE_SelfActions;
+    };
     class BNA_KC_MBT_Slammer: B_MBT_01_TUSK_F
 	{
         // Mod Info
@@ -315,6 +316,35 @@ class CfgVehicles
                 //     type = "BNA_KC_Resupply_SquadAmmo";
                 //     amount = 2;
                 // };
+            };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class TFAR_IntercomChannel
+            {
+                displayName = "Intercom Channel";
+                condition = "true";
+                statement = "";
+
+                class TFAR_IntercomChannel_disabled
+                {
+                    displayName = "Disabled";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true]";
+                };
+                class TFAR_IntercomChannel_1
+                {
+                    displayName = "Cargo";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+                };
+                class TFAR_IntercomChannel_2
+                {
+                    displayName = "Crew";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
+                };
             };
         };
 	};
@@ -841,7 +871,12 @@ class CfgVehicles
 	};
     */
 
-    class 3AS_ATAP_Base;
+    class MBT_01_arty_base_F;
+    class 3AS_ATAP_Base: MBT_01_arty_base_F
+    {
+        class ACE_SelfActions;
+        class UserActions;
+    };
     class BNA_KC_ATAP: 3AS_ATAP_Base
     {
         // Mod Info
@@ -855,6 +890,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\ATAP.jpg";
 
         displayName = "[KC] AT-AP";
         crew = "BNA_KC_Unit_Phase2_Tanker";
@@ -903,6 +939,48 @@ class CfgVehicles
                 };
             };
         };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class TFAR_IntercomChannel
+            {
+                displayName = "Intercom Channel";
+                condition = "true";
+                statement = "";
+
+                class TFAR_IntercomChannel_disabled
+                {
+                    displayName = "Disabled";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true]";
+                };
+                class TFAR_IntercomChannel_2
+                {
+                    displayName = "Crew";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
+                };
+            };
+        };
+
+        class UserActions: UserActions
+        {
+            class PlayAlarm
+            {
+                displayName = "<t font='RobotoCondensedBold' color='#ffffff'>Play Alarm</t>";
+                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
+
+                position = "pilotview";
+                radius = 30;
+                onlyForPlayer = 0;
+
+                hideOnUse = 1;
+                priority = 5;
+
+                condition = "ace_player == driver this;";
+                statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 5, 1, 100];";
+            };
+        };
     };
 
     class Car_F;
@@ -916,6 +994,13 @@ class CfgVehicles
         {
             class HitBody;
             class HitHull;
+        };
+        class UserActions
+        {
+            class Crow_nest_Up;
+            class Crow_nest_down;
+            class Open_rockets;
+            class Close_rockets;
         };
     };
     class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F {};
@@ -957,6 +1042,171 @@ class CfgVehicles
             {
                 armor = 2;
                 explosionShielding = 0.85;
+            };
+        };
+
+        class UserActions: UserActions
+        {
+            class Crow_nest_Up: Crow_nest_Up
+            {
+                condition = "this animationSourcePhase 'crownest' == 0 and alive this and ace_player == this turretUnit [4]";
+            };
+            class Crow_nest_down: Crow_nest_down
+            {
+                condition = "this animationSourcePhase 'crownest' == 5 and alive this and ace_player == this turretUnit [4]";
+            };
+            class Open_rockets: Open_rockets
+            {
+                condition = "this animationSourcePhase 'rocket_move' == 1  and alive this and ace_player == this turretUnit [3]";
+            };
+            class Close_rockets: Close_rockets
+            {
+                condition = "this animationSourcePhase 'rocket_move' == 0 and alive this and ace_player == this turretUnit [3]";
+            };
+        };
+    };
+
+    class Tank;
+    class Tank_F: Tank
+    {
+        class Turrets;
+    };
+    class 3AS_RX200_Base: Tank_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret;
+        };
+        class ACE_SelfActions;
+    };
+    class BNA_KC_RX200_Base: 3AS_RX200_Base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\RX200.jpg";
+
+        displayName = "[KC] RX-200";
+        crew = "BNA_KC_Unit_Phase2_Tanker";
+
+        hiddenSelectionsTextures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "CamoKC", 0, "CamoGrey", 0, "CamoBrown", 0};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] = {"\3as\3AS_RX200\data\DefaultMaterial_CO.paa"};
+            };
+            class KeeliCompany: Standard
+            {
+                author = "Rev";
+                displayName = "Keeli Company";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+            };
+            class CamoKC: KeeliCompany
+            {
+                displayName = "Keeli Company Camo";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoKC.paa"};
+            };
+            class CamoGrey: KeeliCompany
+            {
+                displayName = "Grey Camo";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoGrey.paa"};
+            };
+            class CamoBrown: KeeliCompany
+            {
+                displayName = "Brown Camo";
+                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoBrown.paa"};
+            };
+        };
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                startEngine = 0;
+            };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class TFAR_IntercomChannel
+            {
+                displayName = "Intercom Channel";
+                condition = "true";
+                statement = "";
+
+                class TFAR_IntercomChannel_disabled
+                {
+                    displayName = "Disabled";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true]";
+                };
+                class TFAR_IntercomChannel_2
+                {
+                    displayName = "Crew";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
+                };
+            };
+        };
+    };
+
+    class BNA_KC_RX200_AA: BNA_KC_RX200_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] RX-200AA (Anti-Air)";
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret {};
+        };
+    };
+
+    class BNA_KC_RX200_Artillery: BNA_KC_RX200_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] RX-200ART (Artillery)";
+
+        artilleryScanner = 1;
+        availableForSupportTypes[] = {"Artillery"};
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] = {"mortar_155mm_AMOS"};
+                magazines[] =
+                {
+                    "32Rnd_155mm_Mo_shells",
+                    "2Rnd_155mm_Mo_guided",
+                    "2Rnd_155mm_Mo_guided",
+                    "6Rnd_155mm_Mo_mine",
+                    "2Rnd_155mm_Mo_Cluster",
+                    "6Rnd_155mm_Mo_smoke",
+                    "2Rnd_155mm_Mo_LG",
+                    "6Rnd_155mm_Mo_AT_mine"
+                };
+
+                turretInfoType = "RscWeaponRangeArtilleryAuto";
             };
         };
     };
