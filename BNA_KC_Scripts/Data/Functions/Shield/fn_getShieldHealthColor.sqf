@@ -23,10 +23,11 @@ if (isNull _vehicle) exitWith {};
 
 _shieldMaxHealth =
 [
-	(configFile >> "CfgVehicles" >> typeOf _target),
-	"BNA_KC_Shield_maxHealth",
-	BASE_SHIELD_HEALTH
+    (configFile >> "CfgVehicles" >> typeOf _vehicle),
+    "BNA_KC_Shield_maxHealth",
+    BASE_SHIELD_HEALTH
 ] call BIS_fnc_returnConfigEntry;
-_shieldHealth = _target call BNAKC_fnc_getShieldHealth;
+_shieldHealth = _vehicle call BNAKC_fnc_getShieldHealth;
 
 _color = DAMAGE_COLOR_SCALE select (linearConversion [0, 1, (_shieldHealth/_shieldMaxHealth), 0, 8, true]);
+_color;
