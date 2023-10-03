@@ -41,3 +41,4 @@ if (_vehicle getVariable ["BNA_KC_Shield_health", -1] isEqualTo -1) then
     _vehicle setVariable ["BNA_KC_Shield_health", _shieldHealth, true];
 };
 _vehicle call BNAKC_fnc_addShieldHandler;
+["BNA_KC_shieldToggle", [_vehicle, true, _vehicle getVariable "BNA_KC_Shield_health"]] call CBA_fnc_localEvent;
