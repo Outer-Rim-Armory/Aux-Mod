@@ -1,6 +1,6 @@
 /*
 * Author: DartRuffian
-* Modifier for the main shield ace action
+* Returns the shield health of a given vehicle. Either exact value or range from 0 to 100.
 *
 * Arguments:
 * vehicle: Object - Vehicle to get the shield health of
