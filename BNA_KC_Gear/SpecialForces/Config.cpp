@@ -390,12 +390,12 @@ class CfgGlasses
             "\ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa", // Flaps
             "" // Visor
         };
+        picture = "\BNA_KC_Gear\SpecialForces\Data\UI\ARF_Flaps.paa";
 
         ACE_DustPath = "\z\ace\addons\goggles\textures\fx\dust\%1.paa";
         ACE_Overlay = "\SWLB_equipment\facewears\data\P2_HUD_ca.paa";
         ACE_OverlayCracked = "\SWLB_equipment\facewears\data\P2_HUD_cracked_ca.paa";
         ACE_OverlayDirt = "\A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
-        picture = "\BNA_KC_Gear\SpecialForces\Data\UI\ARF_Flaps.paa";
     };
 };
 
