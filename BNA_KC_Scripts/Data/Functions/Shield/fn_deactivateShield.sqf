@@ -30,5 +30,6 @@ if (_hasShield isEqualTo 0) exitWith {};
 if (_damageHandler isEqualTo -1) exitWith {};
 
 _vehicle setVariable ["BNA_KC_Shield_isActive", false, true];
+_vehicle setVariable ["BNA_KC_Shield_damageHandler", nil, true];
 _vehicle removeEventHandler ["HandleDamage", _damageHandler];
 ["BNA_KC_shieldToggle", [_vehicle, false, _vehicle getVariable "BNA_KC_Shield_health"]] call CBA_fnc_localEvent;
