@@ -101,6 +101,7 @@ class CfgFunctions
             class shieldActionModifier {};
 
             class getShieldHealth {};
+            class getShieldHealthColor {};
         };
 
         class Medical

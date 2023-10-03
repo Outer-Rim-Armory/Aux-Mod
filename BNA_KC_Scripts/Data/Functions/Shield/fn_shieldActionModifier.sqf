@@ -30,7 +30,7 @@ _shieldMaxHealth =
 ] call BIS_fnc_returnConfigEntry;
 _shieldHealth = _target getVariable ["BNA_KC_Shield_health", _shieldMaxHealth];
 
-_percentColor = DAMAGE_COLOR_SCALE select (linearConversion [0, 1, (_shieldHealth/_shieldMaxHealth), 0, 8, true]);
+_percentColor = _target call BNAKC_fnc_getShieldHealthColor;
 _shieldHealthPercent = [_target, true] call BNAKC_fnc_getShieldHealth;
 
 _actionName = _actionData#1;
