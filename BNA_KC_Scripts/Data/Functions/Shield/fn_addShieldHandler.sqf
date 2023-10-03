@@ -35,7 +35,7 @@ _vehicle setVariable
         "HandleDamage",
         {
             params ["_vehicle", "_selection", "_damage", "", "", "", "", ""];
-            private ["_shieldMaxHealth", "_shieldHealth"];
+            private ["_shieldMaxHealth", "_shieldHealth", "_shieldHealthFormatted", "_message"];
 
             _shieldMaxHealth =
             [
@@ -46,6 +46,16 @@ _vehicle setVariable
             _shieldHealth = _vehicle getVariable ["BNA_KC_Shield_health", _shieldMaxHealth];
             _shieldHealth = (_shieldHealth - _damage) max 0;
             _vehicle setVariable ["BNA_KC_Shield_health", _shieldHealth, true];
+
+            _shieldHealthFormatted = format
+            [
+                "<t color='%1'>%2</t>",
+                _vehicle call BNAKC_fnc_getShieldHealthColor,
+                [_vehicle, true] call BNAKC_fnc_getShieldHealth
+            ];
+            _shieldHealthFormatted = _shieldHealthFormatted + "%";
+            _message = format ["Strength %1", _shieldHealthFormatted];
+            [_message] call ace_common_fnc_displaytextstructured;
 
             if (_shieldHealth isEqualTo 0) then
             {
