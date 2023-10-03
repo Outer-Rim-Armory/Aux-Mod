@@ -100,6 +100,8 @@ class CfgFunctions
             class addShieldHandler {};
             class shieldActionModifier {};
 
+            class shieldToggleHandler {};
+
             class getShieldHealth {};
             class getShieldHealthColor {};
         };
@@ -164,6 +166,10 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Weap_specialGrenadesEH
     {
         init = "['ace_firedPlayer'] call BNAKC_fnc_specialGrenadesEH;";
+    };
+    class BNA_KC_Shield_ToggleHandler
+    {
+        init = "call BNAKC_fnc_shieldToggleHandler;";
     };
 };
 
