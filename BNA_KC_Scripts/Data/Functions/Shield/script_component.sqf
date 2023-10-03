@@ -1,0 +1,1 @@
+#define BASE_SHIELD_HEALTH 20

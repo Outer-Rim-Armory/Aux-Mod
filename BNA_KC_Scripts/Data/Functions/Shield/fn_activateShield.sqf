@@ -13,6 +13,7 @@
  */
 
 
+#include "script_component.sqf"
 params [["_vehicle", objNull, [objNull]]];
 private ["_hasShield", "_shieldHealth"];
 
@@ -30,7 +31,7 @@ _shieldHealth =
 [
     (configFile >> "CfgVehicles" >> typeOf _vehicle),
     "BNA_KC_Shield_maxHealth",
-    20
+    BASE_SHIELD_HEALTH
 ] call BIS_fnc_returnConfigEntry;
 
 _vehicle setVariable ["BNA_KC_Shield_isActive", true, true];

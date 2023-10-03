@@ -15,6 +15,7 @@
 */
 
 
+#include "script_component.sqf"
 params [["_vehicle", objNull, [objNull]], ["_returnPercent", false, [true]]];
 private ["_shieldMaxHealth", "_shieldHealth"];
 
@@ -24,7 +25,7 @@ _shieldMaxHealth =
 [
     (configFile >> "CfgVehicles" >> typeOf _vehicle),
     "BNA_KC_Shield_maxHealth",
-    20
+    BASE_SHIELD_HEALTH
 ] call BIS_fnc_returnConfigEntry;
 _shieldHealth = _vehicle getVariable ["BNA_KC_Shield_health", _shieldMaxHealth];
 

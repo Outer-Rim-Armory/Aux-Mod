@@ -18,6 +18,7 @@
 
 // ACE repair colors
 #define DAMAGE_COLOR_SCALE ["#FF0000", "#FF4400", "#FF7D16", "#FF9916", "#FCB121", "#FFD52C", "#FFEC4D", "#FFFF7E", "#FFFFFF"]
+#include "script_component.sqf"
 params ["_target", "_player", "_params", "_actionData"];
 private ["_shieldMaxHealth", "_shieldHealth", "_percentColor", "_actionName"];
 
@@ -25,7 +26,7 @@ _shieldMaxHealth =
 [
 	(configFile >> "CfgVehicles" >> typeOf _target),
 	"BNA_KC_Shield_maxHealth",
-	20
+	BASE_SHIELD_HEALTH
 ] call BIS_fnc_returnConfigEntry;
 _shieldHealth = _target getVariable ["BNA_KC_Shield_health", _shieldMaxHealth];
 
