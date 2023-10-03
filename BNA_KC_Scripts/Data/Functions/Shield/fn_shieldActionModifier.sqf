@@ -30,7 +30,7 @@ _shieldMaxHealth =
 _shieldHealth = _target getVariable ["BNA_KC_Shield_health", _shieldMaxHealth];
 
 _percentColor = DAMAGE_COLOR_SCALE select (linearConversion [0, 1, (_shieldHealth/_shieldMaxHealth), 0, 8, true]);
-_shieldHealthPercent = round ((_shieldHealth/_shieldMaxHealth) * 100);
+_shieldHealthPercent = [_target, true] call BNAKC_fnc_getShieldHealth;
 
 _actionName = _actionData#1;
 _actionName = format [_actionName, format ["<t color='%1'>%2</t>", _percentColor, (str _shieldHealthPercent) + "%"]];

@@ -99,6 +99,8 @@ class CfgFunctions
             class deactivateShield {};
             class addShieldHandler {};
             class shieldActionModifier {};
+
+            class getShieldHealth {};
         };
 
         class Medical
