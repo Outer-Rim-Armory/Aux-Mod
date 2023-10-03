@@ -120,6 +120,16 @@ class CfgWeapons
             uniformClass = "BNA_KC_Galtorran_Unit_Base";
         };
     };
+    class BNA_KC_Galtorran_Uniform_Vex: BNA_KC_Galtorran_Uniform
+    {
+        displayName = "[KC GM] General Vex's Armor";
+        picture = "\armor_unit\Ui\Merc_Armor_Tayrus.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_Galtorran_Unit_Vex";
+        };
+    };
 
     // ┌───────────────────┐
     // │       Vests       │
@@ -420,6 +430,31 @@ class CfgVehicles
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL";
+    };
+
+    // Special Units
+    class BNA_KC_Galtorran_Unit_Vex: BNA_KC_Galtorran_Unit_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "General Vex";
+        editorSubcategory = "BNA_KC_SubCat_Galtorran_Special";
+
+        uniformClass = "BNA_KC_Galtorran_Uniform_Vex";
+        model = "\armor_unit\Merc_Armor_Tayrus.p3d";
+        hiddenSelections[] = {"camo5", "camo6", "camoB", "undersuit"};
+        hiddenSelectionsTextures[] =
+        {
+            "\armor_unit\Tayrus\Merc_Armor_Up_co.paa",
+            "\armor_unit\Tayrus\Merc_Armor_HL_co.paa",
+            "\armor_unit\Tayrus\Merc_Armur_CLoth_co.paa",
+            "\armor_unit\Tayrus\Merc_uniform.paa"
+        };
+
+        linkedItems[] = {BASE_LINKED_ITEMS};
+        respawnLinkedItems[] = {BASE_LINKED_ITEMS};
     };
 
     // ┌───────────────────┐
