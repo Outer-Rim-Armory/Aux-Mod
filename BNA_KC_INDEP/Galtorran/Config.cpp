@@ -764,4 +764,8 @@ class CfgEditorSubcategories
     {
         displayName = "Infantry T3 - Elite";
     };
+    class BNA_KC_SubCat_Galtorran_Special: BNA_KC_SubCat_Galtorran_Infantry_T1
+    {
+        displayName = "Special";
+    };
 };
