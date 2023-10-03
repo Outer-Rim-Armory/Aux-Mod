@@ -370,6 +370,30 @@ class CfgVehicles
 };
 
 
+class CfgGlasses
+{
+    class ls_combatGoggles_base;
+    class BNA_KC_Goggles_ARF_Flaps: ls_combatGoggles_base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        author = "SweMonkey and DartRuffian";
+        displayName = "[KC] ARF Helmet Flaps";
+
+        model = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "visor"};
+        hiddenSelectionsTextures[] =
+        {
+            "", // Main Helmet
+            "\ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa", // Flaps
+            "" // Visor
+        };
+    };
+};
+
+
 class CfgEditorSubcategories
 {
     class BNA_KC_SF
