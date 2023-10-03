@@ -93,12 +93,53 @@ class CfgVehicles
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 
 		hiddenSelectionsTextures[] =
-		{
-			"BNA_KC_Vehicles\Armored\Data\Textures\Blitz\BNA_KC_Blitz_Body.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Blitz\BNA_KC_Blitz_Tow.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Blitz\BNA_KC_Blitz_Addons.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Blitz\BNA_KC_Blitz_Camonet.paa"
-		};
+        {
+            "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Body.paa",
+            "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Tow.paa",
+            "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Addons.paa",
+            "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Camonet.paa"
+        };
+
+        textureList[] = {"KeeliCompany", 1, "WhiteRed", 0, "CamoGrey", 0};
+        class TextureSources
+        {
+            class KeeliCompany
+            {
+                author = "Rev";
+                displayName = "Keeli Company";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Camonet.paa"
+                };
+            };
+            class WhiteRed: KeeliCompany
+            {
+                displayName = "White and Red";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Camonet.paa"
+                };
+            };
+            class CamoGrey: KeeliCompany
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\CamoGrey\Grey_Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\CamoGrey\Grey_Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\CamoGrey\Grey_Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Camonet.paa"
+                };
+            };
+        };
+
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
