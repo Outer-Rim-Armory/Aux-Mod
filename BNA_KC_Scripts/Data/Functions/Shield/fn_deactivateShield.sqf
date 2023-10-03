@@ -16,6 +16,8 @@
 params [["_vehicle", objNull, [objNull]]];
 private ["_hasShield", "_shieldHealth", "_damageHandler"];
 
+if (isNull _vehicle) exitWith {};
+
 _hasShield =
 [
     (configFile >> "CfgVehicles" >> typeOf _vehicle),
@@ -24,7 +26,6 @@ _hasShield =
 ] call BIS_fnc_returnConfigEntry;
 _damageHandler = _vehicle getVariable ["BNA_KC_Shield_damageHandler", -1]; // EH ids will never be negative
 
-if (isNull _vehicle) exitWith {};
 if (_hasShield isEqualTo 0) exitWith {};
 if (_damageHandler isEqualTo -1) exitWith {};
 

@@ -17,6 +17,8 @@
 params [["_vehicle", objNull, [objNull]]];
 private ["_hasShield", "_shieldHealth"];
 
+if (isNull _vehicle) exitWith {};
+
 _hasShield =
 [
     (configFile >> "CfgVehicles" >> typeOf _vehicle),
@@ -24,7 +26,6 @@ _hasShield =
     0
 ] call BIS_fnc_returnConfigEntry;
 
-if (isNull _vehicle) exitWith {};
 if (_hasShield isEqualTo 0) exitWith {};
 
 _shieldHealth =
