@@ -69,5 +69,6 @@ _vehicle setVariable
             // Re-apply damage to vehicle, prevents being healed when hit
             _vehicle getHit _selection;
         }
-    ]
+    ],
+    true
 ];
