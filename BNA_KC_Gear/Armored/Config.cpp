@@ -23,7 +23,7 @@ class CfgWeapons
         hiddenSelections[] = { "Camo1", "visor" };
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Helmet_P2_Tanker.paa",
+            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker.paa",
             "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
         };
 
@@ -59,7 +59,7 @@ class CfgWeapons
         displayName = "[KC] ARMR P2 Helm (Crewman, Version 2)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Helmet_P2_Tanker_v2.paa",
+            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker_v2.paa",
             "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
         };
     };
@@ -76,7 +76,7 @@ class CfgWeapons
         hiddenSelections[] = { "Camo1", "visor" };
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Helmet_P1_Tanker.paa",
+            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P1_Tanker.paa",
             "ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
         };
 
@@ -93,7 +93,7 @@ class CfgWeapons
         displayName = "[KC] ARMR P1 Helm (Trooper, Version 2)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\BNA_KC_Helmet_P1_Tanker_v2.paa",
+            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P1_Tanker_v2.paa",
             "ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
         };
     };
@@ -128,13 +128,13 @@ class CfgVehicles
     {
         displayName = "[KC] ARMR P2 Tanker";
         editorSubcategory = "BNA_KC_Armored";
-        editorPreview = "\BNA_KC_Gear\Armored\Data\Previews\BNA_KC_Unit_Phase2_Tanker.jpg";
+        editorPreview = "\BNA_KC_Gear\Armored\Data\Previews\Phase2_Tanker.jpg";
 
         uniformClass = "BNA_KC_Uniform_Tanker";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Uniforms\BNA_KC_Uniform_Tanker_Upper.paa",
-            "BNA_KC_Gear\Armored\Data\Uniforms\BNA_KC_Uniform_Tanker_Lower.paa",
+            "BNA_KC_Gear\Armored\Data\Uniforms\Uniform_Tanker_Upper.paa",
+            "BNA_KC_Gear\Armored\Data\Uniforms\Uniform_Tanker_Lower.paa",
             "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
 
@@ -154,7 +154,7 @@ class CfgVehicles
     {
         displayName = "[KC] ARMR P1 Tanker";
         editorSubcategory = "BNA_KC_Armored";
-        editorPreview = "\BNA_KC_Gear\Armored\Data\Previews\BNA_KC_Unit_Phase1_Tanker.jpg";
+        editorPreview = "\BNA_KC_Gear\Armored\Data\Previews\Phase1_Tanker.jpg";
 
         uniformClass = "BNA_KC_Uniform_Tanker";
 
