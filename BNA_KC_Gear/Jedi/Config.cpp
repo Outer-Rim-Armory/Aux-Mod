@@ -52,17 +52,17 @@ class CfgVehicles
     {
         displayName = "[KC] Jedi Commander";
         editorSubcategory = "BNA_KC_SubCat_Jedi";
-        editorPreview = "\BNA_KC_Gear\Jedi\Data\Textures\Previews\BNA_KC_Unit_Jedi_Commander.jpg";
+        editorPreview = "\BNA_KC_Gear\Jedi\Data\Textures\Previews\Jedi_Commander.jpg";
 
         uniformClass = "BNA_KC_Uniform_Jedi_Commander";
-        model = "lsd_armor_bluefor\uniform\gar\jediCommander\lsd_gar_jediCommander_uniform.p3d";
-        hiddenSelections[] = { "armor_camo", "robe_camo", "belt_camo", "under_camo" };
+        model = "\lsd_armor_bluefor\uniform\gar\jediCommander\lsd_gar_jediCommander_uniform.p3d";
+        hiddenSelections[] = {"armor_camo", "robe_camo", "belt_camo", "under_camo"};
         hiddenSelectionsTextures[] =
         {
-            "lsd_armor_bluefor\uniform\gar\jediCommander\data\armor_co.paa",
-            "lsd_armor_bluefor\uniform\gar\jediCommander\data\robes_co.paa",
-            "lsd_armor_bluefor\uniform\gar\jediCommander\data\belt_co.paa",
-            "lsd_armor_bluefor\uniform\gar\jediCommander\data\undersuit_co.paa"
+            "\lsd_armor_bluefor\uniform\gar\jediCommander\data\armor_co.paa",
+            "\lsd_armor_bluefor\uniform\gar\jediCommander\data\robes_co.paa",
+            "\lsd_armor_bluefor\uniform\gar\jediCommander\data\belt_co.paa",
+            "\lsd_armor_bluefor\uniform\gar\jediCommander\data\undersuit_co.paa"
         };
 
         // Inventory
