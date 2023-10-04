@@ -41,7 +41,7 @@ class CfgVehicles
 			{"BNA_KC_Ven_Resurgence_Body10", "body10"},
 			{"BNA_KC_Ven_Resurgence_Door2", "door"},
 			{"BNA_KC_Ven_Resurgence_Engine", "engine"},
-			{"BNA_KC_Ven_Resurgence_Bridge", "bridge"},
+			{"BNA_KC_Ven_Resurgence_Bridge", "bridge"}/*,
 			{"BNA_KC_Ven_Resurgence_Interior1", "interior1"},
 			{"BNA_KC_Ven_Resurgence_Interior2", "interior2"},
 			{"BNA_KC_Ven_Resurgence_Interior3", "interior3"},
@@ -49,7 +49,7 @@ class CfgVehicles
 			{"BNA_KC_Ven_Resurgence_Interior5", "interior5"},
 			{"BNA_KC_Ven_Resurgence_Interior6", "interior6"},
 			{"BNA_KC_Ven_Resurgence_Interior7", "interior7"},
-			{"BNA_KC_Ven_Resurgence_Interior8", "interior8"}
+			{"BNA_KC_Ven_Resurgence_Interior8", "interior8"}*/
 		};
 	};
 
@@ -73,15 +73,7 @@ class CfgVehicles
 			{"BNA_KC_Ven_Resurgence_Body10", "body10"},
 			{"BNA_KC_Ven_Resurgence_Door", "door"},
 			{"BNA_KC_Ven_Resurgence_Engine", "engine"},
-			{"BNA_KC_Ven_Resurgence_Bridge", "bridge"},
-			{"BNA_KC_Ven_Resurgence_Interior1", "interior1"},
-			{"BNA_KC_Ven_Resurgence_Interior2", "interior2"},
-			{"BNA_KC_Ven_Resurgence_Interior3", "interior3"},
-			{"BNA_KC_Ven_Resurgence_Interior4", "interior4"},
-			{"BNA_KC_Ven_Resurgence_Interior5", "interior5"},
-			{"BNA_KC_Ven_Resurgence_Interior6", "interior6"},
-			{"BNA_KC_Ven_Resurgence_Interior7", "interior7"},
-			{"BNA_KC_Ven_Resurgence_Interior8", "interior8"}
+			{"BNA_KC_Ven_Resurgence_Bridge", "bridge"}
 		};
 	};
 
