@@ -1,15 +1,7 @@
 // ┌───────────────────┐
 // │       Units       │
 // └───────────────────┘
-// Base Unit (if no other rank unit applies)
 class BNA_KC_Unit_Phase2_Base;
-// Rank Units (Officers)
-// class BNA_KC_Unit_Phase2_WO;
-// class BNA_KC_Unit_Phase2_1LT;
-// class BNA_KC_Unit_Phase2_CAP;
-// class BNA_KC_Unit_Phase2_MAJ;
-// class BNA_KC_Unit_Phase2_CMD;
-
 class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
 {
 	// Editor Attributes
