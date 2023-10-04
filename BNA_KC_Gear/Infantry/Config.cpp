@@ -128,7 +128,7 @@ class CfgWeapons
             uniformModel = "\lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
         };
 
-        subItems[] = {"BNA_KC_NVG_Chip"};;
+        subItems[] = {"BNA_KC_NVG_Chip"};
     };
 
     class BNA_KC_Helmet_Airborne_v2: BNA_KC_Helmet_Airborne
@@ -149,7 +149,7 @@ class CfgWeapons
         displayName = "[KC] INF Snow Helm (Trooper)";
 
         model = "\ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
-        hiddenSelections[] = {"Camo1"};;
+        hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Gear\Infantry\Data\Helmets\Insulated\Helmet_Insulated.paa"
@@ -158,7 +158,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = {"Camo1"};;
+            hiddenSelections[] = {"Camo1"};
             uniformModel = "\ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
         };
     };
@@ -434,7 +434,7 @@ class CfgWeapons
         displayName = "[KC] INF Vest 12+ (Officer)";
 
         model = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
-        hiddenSelections[] = {"Camo1"};;
+        hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
@@ -443,7 +443,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = {"Camo1"};;
+            hiddenSelections[] = {"Camo1"};
             uniformModel = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
             containerClass = "Supply200";
 
@@ -544,7 +544,7 @@ class CfgWeapons
         displayName = "[KC] Clone P2 Rangefinder (CS+)";
 
         model = "\lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
-        hiddenSelections[] = {"Camo1"};;
+        hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Gear\Infantry\Data\NVGs\NVG_Rangefinder.paa"
@@ -553,7 +553,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = {"Camo1"};;
+            hiddenSelections[] = {"Camo1"};
             uniformModel = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
             modelOff = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
         };
