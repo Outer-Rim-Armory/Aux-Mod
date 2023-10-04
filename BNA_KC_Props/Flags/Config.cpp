@@ -13,7 +13,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
@@ -37,7 +36,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
@@ -45,26 +43,16 @@ class CfgVehicles
 
         displayName = "[KC] KC Flag (Vertical)";
 
-        // model and hiddenSelections need to be re-stated because 41st Aux modifies ls_staticFlag_base
         model = "\LS_statics_props\flags\ls_vertical_flag";
-        hiddenSelections[]=
-		{
-			"camo1"
-		};
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Props\Flags\Data\Flag_KeeliCompany_Vertical.paa"
-        };
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Flag_KeeliCompany_Vertical.paa"};
     };
     class BNA_KC_Flag_KeeliCompany_Horizontal: BNA_KC_Flag_KeeliCompany_Vertical
     {
         displayName = "[KC] KC Flag (Horizontal)";
 
         model = "\LS_statics_props\flags\ls_horizontal_flag";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Props\Flags\Data\Flag_KeeliCompany.paa"
-        };
+        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Flag_KeeliCompany.paa"};
     };
 
     class BNA_KC_Flag_KeeliCompanyDamaged_Pole: BNA_KC_Flag_KeeliCompany_Pole
@@ -78,31 +66,19 @@ class CfgVehicles
     class BNA_KC_Flag_KeeliCompanyDamaged_Vertical: BNA_KC_Flag_KeeliCompany_Vertical
     {
         displayName = "[KC] KC Damaged Flag (Vertical)";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Props\Flags\Data\Flag_KeeliCompanyDamaged_Vertical.paa"
-        };
+        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Flag_KeeliCompanyDamaged_Vertical.paa"};
     };
     class BNA_KC_Flag_KeeliCompanyDamaged_Horizontal: BNA_KC_Flag_KeeliCompany_Horizontal
     {
         displayName = "[KC] KC Damaged Flag (Horizontal, Mirrored)";
 
         model = "\LS_statics_props\flags\ls_horizontal_flag";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Props\Flags\Data\Flag_KeeliCompanyDamaged_Mirrored.paa"
-        };
-        // Texture and named swapped for mirrored version until LS fixes the rotated model.
-        // Textures had to be flipped as a temporary fix. Will be returned to normal once model is fixed.
-        // Bug Report: https://ptb.discord.com/channels/461042140756180992/1122571557638779072
+        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Flag_KeeliCompanyDamaged_Mirrored.paa"};
     };
     class BNA_KC_Flag_KeeliCompanyDamaged_HorizontalMirrored: BNA_KC_Flag_KeeliCompany_Horizontal
     {
         displayName = "[KC] KC Damaged Flag (Horizontal)";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Props\Flags\Data\Flag_KeeliCompanyDamaged.paa"
-        };
+        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Flag_KeeliCompanyDamaged.paa"};
     };
 };
 
