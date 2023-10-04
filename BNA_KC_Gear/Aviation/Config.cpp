@@ -20,7 +20,7 @@ class CfgWeapons
         displayName = "[KC] AVI P2 Helm 01 (Pilot)";
 
         model = "\ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
-        hiddenSelections[] = { "camo1", "visor" };
+        hiddenSelections[] = {"camo1", "visor"};
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Gear\Aviation\Data\Helmets\BNA_KC_Helmet_P2_Pilot.paa",
@@ -30,7 +30,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = { "camo1", "visor" };
+            hiddenSelections[] = {"camo1", "visor"};
             uniformModel = "\ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
         };
     };
@@ -72,7 +72,7 @@ class CfgWeapons
         displayName = "[KC] AVI P1 Helm 01 (Pilot)";
 
         model = "\ls_armor_bluefor\helmet\gar\phase1Pilot\ls_gar_phase1Pilot_helmet.p3d";
-        hiddenSelections[] = { "camo1", "camo2", "visor" };
+        hiddenSelections[] = { "camo1", "camo2", "visor"};
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Gear\Aviation\Data\Helmets\BNA_KC_Helmet_P1_Pilot.paa",
@@ -83,7 +83,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = { "camo1", "camo2", "visor" };
+            hiddenSelections[] = {"camo1", "camo2", "visor"};
             uniformModel = "\ls_armor_bluefor\helmet\gar\phase1Pilot\ls_gar_phase1Pilot_helmet.p3d";
         };
     };
