@@ -498,7 +498,7 @@ class CfgWeapons
 
         // Remove the model and textures
         model = "A3\weapons_F\ammo\mag_univ.p3d"; // Physical model
-        modelOptics = "BNA_KC_Gear\Data\Models\empty_model.p3d"; // NVG Overlay
+        modelOptics = "\BNA_KC_Gear\Infantry\Data\Models\empty_model.p3d"; // NVG Overlay
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
@@ -506,8 +506,8 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {};
-            uniformModel = "BNA_KC_Gear\Data\Models\empty_model.p3d";
-            modelOff = "BNA_KC_Gear\Data\Models\empty_model.p3d";
+            uniformModel = "\BNA_KC_Gear\Infantry\Data\Models\empty_model.p3d";
+            modelOff = "\BNA_KC_Gear\Infantry\Data\Models\empty_model.p3d";
         };
     };
 
@@ -801,7 +801,7 @@ class CfgVehicles
 
         // Remove the model and textures (invisible)
         picture = "\BNA_KC_Gear\Infantry\Data\UI\Blank.paa";
-        model = "BNA_KC_Gear\Data\Models\empty_model.p3d";
+        model = "\BNA_KC_Gear\Infantry\Data\Models\empty_model.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
     };
@@ -877,7 +877,7 @@ class CfgVehicles
         displayName = "[KC] Clone Trooper Radio Backpack (Invisible)";
 
         picture = "BNA_KC_Gear\Infantry\Data\UI\Blank.paa";
-        model = "BNA_KC_Gear\Data\Models\empty_model.p3d";
+        model = "\BNA_KC_Gear\Infantry\Data\Models\empty_model.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
     };
