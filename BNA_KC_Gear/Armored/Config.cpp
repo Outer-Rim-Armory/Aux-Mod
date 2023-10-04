@@ -19,18 +19,18 @@ class CfgWeapons
 
         displayName = "[KC] ARMR P2 Helm (Crewman)";
 
-        model = "ls_armor_bluefor\helmet\sob\phase2SpecOp\ls_sob_phase2SpecOp_helmet.p3d";
+        model = "\ls_armor_bluefor\helmet\sob\phase2SpecOp\ls_sob_phase2SpecOp_helmet.p3d";
         hiddenSelections[] = { "Camo1", "visor" };
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker.paa",
-            "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+            "\BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker.paa",
+            "\ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
         };
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = { "Camo1", "visor" };
-            uniformModel = "ls_armor_bluefor\helmet\sob\phase2SpecOp\ls_sob_phase2SpecOp_helmet.p3d";
+            uniformModel = "\ls_armor_bluefor\helmet\sob\phase2SpecOp\ls_sob_phase2SpecOp_helmet.p3d";
         };
 
         subItems[] = { "BNA_KC_NVG_Chip" };
@@ -40,8 +40,8 @@ class CfgWeapons
         displayName = "[KC] ARMR P2 Helm (Crewman) - Brown Camo";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker_CamoBrown.paa",
-            "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+            "\BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker_CamoBrown.paa",
+            "\ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
         };
     };
     class BNA_KC_Helmet_Phase2_Tanker_CamoGrey: BNA_KC_Helmet_Phase2_Tanker
@@ -49,8 +49,8 @@ class CfgWeapons
         displayName = "[KC] ARMR P2 Helm (Crewman) - Grey Camo";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker_CamoGrey.paa",
-            "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+            "\BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker_CamoGrey.paa",
+            "\ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
         };
     };
 
@@ -59,8 +59,8 @@ class CfgWeapons
         displayName = "[KC] ARMR P2 Helm (Crewman, Version 2)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker_v2.paa",
-            "ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
+            "\BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker_v2.paa",
+            "\ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
         };
     };
 
@@ -72,18 +72,18 @@ class CfgWeapons
 
         displayName = "[KC] ARMR P1 Helm (Trooper)";
 
-        model = "ls_armor_bluefor\helmet\sob\phase1SpecOp\ls_sob_phase1SpecOp_helmet.p3d";
+        model = "\ls_armor_bluefor\helmet\sob\phase1SpecOp\ls_sob_phase1SpecOp_helmet.p3d";
         hiddenSelections[] = { "Camo1", "visor" };
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P1_Tanker.paa",
-            "ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
+            "\BNA_KC_Gear\Armored\Data\Helmets\Helmet_P1_Tanker.paa",
+            "\ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
         };
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = { "Camo1", "visor" };
-            uniformModel = "ls_armor_bluefor\helmet\sob\phase1SpecOp\ls_sob_phase1SpecOp_helmet.p3d";
+            uniformModel = "\ls_armor_bluefor\helmet\sob\phase1SpecOp\ls_sob_phase1SpecOp_helmet.p3d";
         };
 
         subItems[] = { "BNA_KC_NVG_Chip" };
@@ -93,8 +93,8 @@ class CfgWeapons
         displayName = "[KC] ARMR P1 Helm (Trooper, Version 2)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Helmets\Helmet_P1_Tanker_v2.paa",
-            "ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
+            "\BNA_KC_Gear\Armored\Data\Helmets\Helmet_P1_Tanker_v2.paa",
+            "\ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
         };
     };
 
@@ -133,9 +133,9 @@ class CfgVehicles
         uniformClass = "BNA_KC_Uniform_Tanker";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Armored\Data\Uniforms\Uniform_Tanker_Upper.paa",
-            "BNA_KC_Gear\Armored\Data\Uniforms\Uniform_Tanker_Lower.paa",
-            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+            "\BNA_KC_Gear\Armored\Data\Uniforms\Uniform_Tanker_Upper.paa",
+            "\BNA_KC_Gear\Armored\Data\Uniforms\Uniform_Tanker_Lower.paa",
+            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
 
         linkedItems[] =
