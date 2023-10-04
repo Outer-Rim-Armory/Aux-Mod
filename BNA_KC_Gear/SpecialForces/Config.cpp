@@ -207,8 +207,8 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Vests\BNA_KC_Vest_ARC_Chest.paa",
-            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+            "BNA_KC_Gear\SpecialForces\Data\Vests\Vest_ARC_Chest.paa",
+            "BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 
@@ -247,7 +247,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
         {
             "",
-            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+            "BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
         };
     };
 };
@@ -292,8 +292,8 @@ class CfgVehicles
         uniformClass = "BNA_KC_Uniform_ARC_Night";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARC_Night_Upper.paa",
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARC_Night_Lower.paa",
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\Uniform_ARC_Night_Upper.paa",
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\Uniform_ARC_Night_Lower.paa",
             "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
 
@@ -316,8 +316,8 @@ class CfgVehicles
         uniformClass = "BNA_KC_Uniform_ARF";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARF_Upper.paa",
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARF_Lower.paa",
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\Uniform_ARF_Upper.paa",
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\Uniform_ARF_Lower.paa",
             "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
 
