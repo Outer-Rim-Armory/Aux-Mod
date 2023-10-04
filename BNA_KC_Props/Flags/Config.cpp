@@ -22,7 +22,7 @@ class CfgVehicles
 
         class EventHandlers
         {
-            init = "(_this select 0) setFlagTexture '\BNA_KC_Props\Flags\Data\Flag_KeeliCompany.paa'";
+            init = "(_this select 0) setFlagTexture '\BNA_KC_Props\Flags\Data\Textures\Flag_KeeliCompany.paa'";
         };
     };
 
@@ -45,14 +45,14 @@ class CfgVehicles
 
         model = "\LS_statics_props\flags\ls_vertical_flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Flag_KeeliCompany_Vertical.paa"};
+        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Textures\Flag_KeeliCompany_Vertical.paa"};
     };
     class BNA_KC_Flag_KeeliCompany_Horizontal: BNA_KC_Flag_KeeliCompany_Vertical
     {
         displayName = "[KC] KC Flag (Horizontal)";
 
         model = "\LS_statics_props\flags\ls_horizontal_flag";
-        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Flag_KeeliCompany.paa"};
+        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Textures\Flag_KeeliCompany.paa"};
     };
 
     class BNA_KC_Flag_KeeliCompanyDamaged_Pole: BNA_KC_Flag_KeeliCompany_Pole
@@ -60,25 +60,25 @@ class CfgVehicles
         displayName = "[KC] KC Damaged Flag (Pole)";
         class EventHandlers
         {
-            init = "(_this select 0) setFlagTexture '\BNA_KC_Props\Flags\Data\Flag_KeeliCompanyDamaged.paa'";
+            init = "(_this select 0) setFlagTexture '\BNA_KC_Props\Flags\Data\Textures\Flag_KeeliCompanyDamaged.paa'";
         };
     };
     class BNA_KC_Flag_KeeliCompanyDamaged_Vertical: BNA_KC_Flag_KeeliCompany_Vertical
     {
         displayName = "[KC] KC Damaged Flag (Vertical)";
-        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Flag_KeeliCompanyDamaged_Vertical.paa"};
+        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Textures\Flag_KeeliCompanyDamaged_Vertical.paa"};
     };
     class BNA_KC_Flag_KeeliCompanyDamaged_Horizontal: BNA_KC_Flag_KeeliCompany_Horizontal
     {
         displayName = "[KC] KC Damaged Flag (Horizontal, Mirrored)";
 
         model = "\LS_statics_props\flags\ls_horizontal_flag";
-        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Flag_KeeliCompanyDamaged_Mirrored.paa"};
+        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Textures\Flag_KeeliCompanyDamaged_Mirrored.paa"};
     };
     class BNA_KC_Flag_KeeliCompanyDamaged_HorizontalMirrored: BNA_KC_Flag_KeeliCompany_Horizontal
     {
         displayName = "[KC] KC Damaged Flag (Horizontal)";
-        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Flag_KeeliCompanyDamaged.paa"};
+        hiddenSelectionsTextures[] = {"\BNA_KC_Props\Flags\Data\Textures\Flag_KeeliCompanyDamaged.paa"};
     };
 };
 
