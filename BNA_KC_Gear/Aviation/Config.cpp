@@ -19,19 +19,19 @@ class CfgWeapons
 
         displayName = "[KC] AVI P2 Helm 01 (Pilot)";
 
-        model = "ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
+        model = "\ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
         hiddenSelections[] = { "camo1", "visor" };
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Aviation\Data\Helmets\BNA_KC_Helmet_P2_Pilot.paa",
-            "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+            "\BNA_KC_Gear\Aviation\Data\Helmets\BNA_KC_Helmet_P2_Pilot.paa",
+            "\ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_pilot_P2_helmet_ca.paa";
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = { "camo1", "visor" };
-            uniformModel = "ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
+            uniformModel = "\ls_armor_bluefor\helmet\gar\phase2Pilot\ls_gar_phase2Pilot_helmet.p3d";
         };
     };
     class BNA_KC_Helmet_Phase2_Pilot_CamoBrown: BNA_KC_Helmet_Phase2_Pilot
@@ -39,8 +39,8 @@ class CfgWeapons
         displayName = "[KC] AVI P2 Helm 01+ (Pilot) - Brown Camo";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Aviation\Data\Helmets\Helmet_P2_Pilot_CamoBrown.paa",
-            "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+            "\BNA_KC_Gear\Aviation\Data\Helmets\Helmet_P2_Pilot_CamoBrown.paa",
+            "\ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
         };
     };
     class BNA_KC_Helmet_Phase2_Pilot_CamoGrey: BNA_KC_Helmet_Phase2_Pilot
@@ -48,8 +48,8 @@ class CfgWeapons
         displayName = "[KC] AVI P2 Helm 01+ (Pilot) - Grey Camo";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Aviation\Data\Helmets\Helmet_P2_Pilot_CamoGrey.paa",
-            "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+            "\BNA_KC_Gear\Aviation\Data\Helmets\Helmet_P2_Pilot_CamoGrey.paa",
+            "\ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
         };
     };
 
@@ -58,8 +58,8 @@ class CfgWeapons
         displayName = "[KC] AVI P2 Helm 11+ (Officer)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Aviation\Data\Helmets\BNA_KC_Helmet_P2_Pilot_Officer.paa",
-            "ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+            "\BNA_KC_Gear\Aviation\Data\Helmets\BNA_KC_Helmet_P2_Pilot_Officer.paa",
+            "\ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
         };
     };
 
@@ -71,20 +71,20 @@ class CfgWeapons
 
         displayName = "[KC] AVI P1 Helm 01 (Pilot)";
 
-        model = "ls_armor_bluefor\helmet\gar\phase1Pilot\ls_gar_phase1Pilot_helmet.p3d";
+        model = "\ls_armor_bluefor\helmet\gar\phase1Pilot\ls_gar_phase1Pilot_helmet.p3d";
         hiddenSelections[] = { "camo1", "camo2", "visor" };
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Aviation\Data\Helmets\BNA_KC_Helmet_P1_Pilot.paa",
-            "ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
-            "ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
+            "\BNA_KC_Gear\Aviation\Data\Helmets\BNA_KC_Helmet_P1_Pilot.paa",
+            "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
+            "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
         };
         picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = { "camo1", "camo2", "visor" };
-            uniformModel = "ls_armor_bluefor\helmet\gar\phase1Pilot\ls_gar_phase1Pilot_helmet.p3d";
+            uniformModel = "\ls_armor_bluefor\helmet\gar\phase1Pilot\ls_gar_phase1Pilot_helmet.p3d";
         };
     };
 
@@ -134,9 +134,9 @@ class CfgVehicles
         uniformClass = "BNA_KC_Uniform_Pilot";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Aviation\Data\Uniforms\BNA_KC_Uniform_Pilot_Upper.paa",
-            "BNA_KC_Gear\Aviation\Data\Uniforms\BNA_KC_Uniform_Pilot_Lower.paa",
-            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+            "\BNA_KC_Gear\Aviation\Data\Uniforms\BNA_KC_Uniform_Pilot_Upper.paa",
+            "\BNA_KC_Gear\Aviation\Data\Uniforms\BNA_KC_Uniform_Pilot_Lower.paa",
+            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
         linkedItems[] =
         {
@@ -156,9 +156,9 @@ class CfgVehicles
         uniformClass = "BNA_KC_Uniform_Pilot_Officer";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Aviation\Data\Uniforms\BNA_KC_Uniform_Pilot_Officer_Upper.paa",
-            "BNA_KC_Gear\Aviation\Data\Uniforms\BNA_KC_Uniform_Pilot_Officer_Lower.paa",
-            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+            "\BNA_KC_Gear\Aviation\Data\Uniforms\BNA_KC_Uniform_Pilot_Officer_Upper.paa",
+            "\BNA_KC_Gear\Aviation\Data\Uniforms\BNA_KC_Uniform_Pilot_Officer_Lower.paa",
+            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
         linkedItems[] =
         {
