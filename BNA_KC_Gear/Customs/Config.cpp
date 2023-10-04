@@ -13,13 +13,13 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    
+
     class BNA_KC_Vest_Officer_Keeli: BNA_KC_Vest_Officer
     {
         displayName = "[KC] INF Vest 12+ ('Keeli')";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Customs\Data\Vests\BNA_KC_Vest_Officer_Keeli.paa"
+            "\BNA_KC_Gear\Customs\Data\Vests\BNA_KC_Vest_Officer_Keeli.paa"
         };
     };
     class BNA_KC_Vest_Officer_Ponds: BNA_KC_Vest_Officer
@@ -27,7 +27,7 @@ class CfgWeapons
         displayName = "[KC] INF Vest 12+ ('Ponds')";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Customs\Data\Vests\BNA_KC_Vest_Officer_Ponds.paa"
+            "\BNA_KC_Gear\Customs\Data\Vests\BNA_KC_Vest_Officer_Ponds.paa"
         };
 
         class ItemInfo: ItemInfo
@@ -40,7 +40,7 @@ class CfgWeapons
         displayName = "[KC] INF Vest 12+ ('Rat')";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Customs\Data\Vests\BNA_KC_Vest_Officer_Rat.paa"
+            "\BNA_KC_Gear\Customs\Data\Vests\BNA_KC_Vest_Officer_Rat.paa"
         };
     };
 
@@ -55,7 +55,7 @@ class CfgWeapons
         displayName = "[KC] Clone P2 Officer Visor ('Keeli')";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Customs\Data\NVGs\BNA_KC_NVG_Officer_Keeli.paa"
+            "\BNA_KC_Gear\Customs\Data\NVGs\BNA_KC_NVG_Officer_Keeli.paa"
         };
     };
 };
@@ -75,8 +75,8 @@ class CfgVehicles
         displayName = "[KC] Clone Trooper Backpack ('Keeli')";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Customs\Data\Backpacks\BNA_KC_Backpack_Keeli.paa", // Main Texture
-            "BNA_KC_Gear\Customs\Data\Backpacks\BNA_KC_Backpack_Keeli.paa", // Cover
+            "\BNA_KC_Gear\Customs\Data\Backpacks\BNA_KC_Backpack_Keeli.paa", // Main Texture
+            "\BNA_KC_Gear\Customs\Data\Backpacks\BNA_KC_Backpack_Keeli.paa", // Cover
             "",                                                             // Heavy
             "",                                                             // Medic
             ""                                                              // RTO
