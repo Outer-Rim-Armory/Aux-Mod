@@ -4,8 +4,6 @@
 class CfgVehicles
 {
     class ls_flag_base;
-    class ls_staticFlag_base;
-
     class BNA_KC_Flag_KeeliCompany_Pole: ls_flag_base
     {
         // Mod Info
@@ -28,6 +26,8 @@ class CfgVehicles
             init = "(_this select 0) setFlagTexture '\BNA_KC_Props\Flags\Data\Flag_KeeliCompany.paa'";
         };
     };
+
+    class ls_staticFlag_base;
     class BNA_KC_Flag_KeeliCompany_Vertical: ls_staticFlag_base
     {
         // Mod Info
