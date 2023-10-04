@@ -20,7 +20,7 @@ class CfgWeapons
         displayName = "[KC] ARMR P2 Helm (Crewman)";
 
         model = "\ls_armor_bluefor\helmet\sob\phase2SpecOp\ls_sob_phase2SpecOp_helmet.p3d";
-        hiddenSelections[] = { "Camo1", "visor" };
+        hiddenSelections[] = {"Camo1", "visor"};
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Gear\Armored\Data\Helmets\Helmet_P2_Tanker.paa",
@@ -29,11 +29,11 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = { "Camo1", "visor" };
+            hiddenSelections[] = {"Camo1", "visor"};
             uniformModel = "\ls_armor_bluefor\helmet\sob\phase2SpecOp\ls_sob_phase2SpecOp_helmet.p3d";
         };
 
-        subItems[] = { "BNA_KC_NVG_Chip" };
+        subItems[] = {"BNA_KC_NVG_Chip"};
     };
     class BNA_KC_Helmet_Phase2_Tanker_CamoBrown: BNA_KC_Helmet_Phase2_Tanker
     {
@@ -73,7 +73,7 @@ class CfgWeapons
         displayName = "[KC] ARMR P1 Helm (Trooper)";
 
         model = "\ls_armor_bluefor\helmet\sob\phase1SpecOp\ls_sob_phase1SpecOp_helmet.p3d";
-        hiddenSelections[] = { "Camo1", "visor" };
+        hiddenSelections[] = {"Camo1", "visor"};
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Gear\Armored\Data\Helmets\Helmet_P1_Tanker.paa",
@@ -82,11 +82,11 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = { "Camo1", "visor" };
+            hiddenSelections[] = {"Camo1", "visor"};
             uniformModel = "\ls_armor_bluefor\helmet\sob\phase1SpecOp\ls_sob_phase1SpecOp_helmet.p3d";
         };
 
-        subItems[] = { "BNA_KC_NVG_Chip" };
+        subItems[] = {"BNA_KC_NVG_Chip"};
     };
     class BNA_KC_Helmet_Phase1_Tanker_v2: BNA_KC_Helmet_Phase1_Tanker
     {
