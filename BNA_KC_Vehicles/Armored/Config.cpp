@@ -709,8 +709,8 @@ class CfgVehicles
 
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Body.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Weapons.paa"
+			"BNA_KC_Vehicles\Armored\Data\Textures\Saber\Saber_Body.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Saber\Saber_Weapons.paa"
 		};
 
         textureList[] = { "Standard", 0, "Imperial", 0, "KeeliCompany", 1 };
