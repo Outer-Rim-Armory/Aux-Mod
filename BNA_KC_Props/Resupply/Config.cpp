@@ -247,9 +247,6 @@ class CfgVehicles
         hiddenSelectionsMaterials[] = {};
         hiddenSelectionsTextures[] = {};
 
-        // Editor Attributes
-        editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WaterTank_F.jpg";
-
         // Removes the "Rename" action and locks the inventory
         class EventHandlers: EventHandlers
         {
