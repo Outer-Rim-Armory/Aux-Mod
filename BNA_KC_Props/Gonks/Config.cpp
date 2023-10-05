@@ -208,7 +208,7 @@ class CfgVehicles
 
             class ChangeMenu_Home: ChangeMenu_Rifleman
             {
-                displayName = "<t color='#FFFFFF' font='PuristaBold'>Home</t>";
+                displayName = "<t color='#FFFFFF' font='PuristaSemibold'>Home</t>";
                 priority = 99;
 
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) != 0)";
