@@ -43,9 +43,9 @@ class CfgVehicles
     class BNA_KC_Resupply_SquadAmmo: BNA_KC_Resupply_Base
     {
         displayName = "Ammo Crate (Squad)";
-        hiddenSelections[] = { "camo1" };
-        hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat" };
-        hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa" };
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
         editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\Resupply_Ammo.jpg";
 
         class TransportMagazines
@@ -161,9 +161,9 @@ class CfgVehicles
     class BNA_KC_Resupply_SquadMedical: BNA_KC_Resupply_Base
     {
         displayName = "Medical Crate (Squad)";
-        hiddenSelections[] = { "camo1" };
-        hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat" };
-        hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa" };
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
+        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"};
         editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\Resupply_Medical.jpg";
 
         class TransportItems
