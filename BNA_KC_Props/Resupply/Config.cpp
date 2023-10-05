@@ -44,8 +44,8 @@ class CfgVehicles
     {
         displayName = "Ammo Crate (Squad)";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
-        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
         editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\Resupply_Ammo.jpg";
 
         class TransportMagazines
@@ -162,8 +162,8 @@ class CfgVehicles
     {
         displayName = "Medical Crate (Squad)";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
-        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"};
         editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\Resupply_Medical.jpg";
 
         class TransportItems
@@ -241,7 +241,7 @@ class CfgVehicles
         ace_dragging_canDrag = 0;
         ace_dragging_canCarry = 0;
 
-        model = "A3\Structures_F\Items\Vessels\WaterTank_F.p3d";
+        model = "\A3\Structures_F\Items\Vessels\WaterTank_F.p3d";
         editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\Resupply_JetpackFuel.jpg";
         hiddenSelections[] = {};
         hiddenSelectionsMaterials[] = {};
