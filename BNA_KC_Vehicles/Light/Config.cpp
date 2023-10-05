@@ -101,49 +101,49 @@ class TextureSources \
 
 
 #define GLAVENUS_TEXTURES() hiddenSelectionsTextures[] = {}; \
-textureList[] = {"BrownWhite", 1, "CamoKC", 0, "BrownCamo", 0, "GreyCamo", 0}; \
+textureList[] = {"KeeliCompany", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0}; \
 class TextureSources \
 { \
-    class BrownWhite \
+    class KeeliCompany \
     { \
         author = "SweMonkey and DartRuffian"; \
-        displayName = "Brown/White"; \
+        displayName = "Keeli Company"; \
         factions[] = { "BNA_KC_Faction" }; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Turret.paa" \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\KeeliCompany\Glavenus_Body.paa", \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\KeeliCompany\Glavenus_Body2.paa", \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\KeeliCompany\Glavenus_Turret.paa" \
         }; \
     }; \
-    class CamoKC: BrownWhite \
+    class CamoKC: KeeliCompany \
     { \
         displayName = "Keeli Company Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_CamoKC.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_CamoKC.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa" \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoKC\Glavenus_Body.paa", \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoKC\Glavenus_Body2.paa", \
+            "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoKC\OLV20_Turret.paa" \
         }; \
     }; \
-    class BrownCamo: BrownWhite \
+    class CamoBrown: KeeliCompany \
     { \
         displayName = "Brown Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_CamoBrown.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_CamoBrown.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoBrown.paa" \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoBrown\Glavenus_Body.paa", \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoBrown\Glavenus_Body2.paa", \
+            "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoBrown\OLV20_Turret.paa" \
         }; \
     }; \
-    class GreyCamo: BrownWhite \
+    class CamoGrey: KeeliCompany \
     { \
         displayName = "Grey Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_CamoGrey.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_CamoGrey.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoGrey.paa" \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoGrey\Glavenus_Body.paa", \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoGrey\Glavenus_Body2.paa", \
+            "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoGrey\OLV20_Turret.paa" \
         }; \
     }; \
 };
