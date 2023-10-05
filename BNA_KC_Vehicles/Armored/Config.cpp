@@ -770,10 +770,10 @@ class CfgVehicles
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Body.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\ATTE_Body.paa",
 			"3as\3as_atte\data\atte_chasis_co.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Cockpit.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Turrets.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\ATTE_Cockpit.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\ATTE_Turrets.paa",
 			"3as\3as_atte\data\atte_underpiping_co.paa",
 			"3as\3as_atte\data\atte_middleleg_co.paa"
 		};
