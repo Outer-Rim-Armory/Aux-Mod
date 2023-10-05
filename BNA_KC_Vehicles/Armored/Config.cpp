@@ -452,11 +452,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Body.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Addons.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Tows.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Camonet_Desert.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_CageSand.paa"
+			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\Badger_Body.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\Badger_Addons.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\Badger_Tows.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\Badger_Camonet_Desert.paa",
+			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\Badger_CageSand.paa"
 		};
 		soundEngineOnInt[] =
 		{
