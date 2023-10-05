@@ -4,7 +4,7 @@
 { \
     "\BNA_KC_Vehicles\Drones\Data\Khezu\CamoKC\Khezu_Exterior.paa", \
     "\BNA_KC_Vehicles\Drones\Data\Khezu\CamoKC\Khezu_Interior.paa", \
-    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret.paa" \
+    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoKC\OLV20_Turret.paa" \
 }; \
 textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0}; \
 class TextureSources \
