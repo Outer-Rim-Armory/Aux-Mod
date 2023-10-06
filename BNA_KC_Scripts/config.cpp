@@ -52,7 +52,7 @@ class CfgFunctions
 		class Fortify
 		{
 			file = "BNA_KC_Scripts\Data\Functions\Fortify";
-			class fortifyPostInit {};
+			class fortifyObjectPlaced {};
             class registerPreset {};
 		};
 
