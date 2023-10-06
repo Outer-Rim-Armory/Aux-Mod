@@ -790,6 +790,40 @@ class CfgVehicles
             };
         };
 
+        class UserActions
+        {
+            class Open_SFoils
+            {
+                displayName = "Deploy S-Foils";
+
+                position = "camera";
+                radius = 3;
+                onlyForPlayer = 0;
+
+                hideOnUse = 1;
+                priority = 1.5;
+
+                condition = "(this animationSourcePhase 'SFoil' == 1) and (player isEqualTo currentPilot this) and !(isTouchingGround this)";
+                statement = "playSound3D ['BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_sfoils.wss', this]; this animateSource ['SFoil', 0]";
+            };
+            class Close_SFoils: Open_SFoils
+            {
+                displayName = "Fold S-Foils";
+                condition = "(this animationSourcePhase 'SFoil' == 0) and (player isEqualTo currentPilot this) and !(isTouchingGround this)";
+                statement = "playSound3D ['BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_sfoils.wss', this]; this animateSource ['SFoil', 1]";
+            };
+
+            class Eject: Open_SFoils
+            {
+                displayName = "<t font='RobotoCondensedBold'>Eject</t>";
+                shortcut = "Eject";
+                priority = 0.05;
+
+                condition = "player in this and {speed this > 1}";
+                statement = "[this] spawn bis_fnc_planeEjection";
+            };
+        };
+
         class Turrets: Turrets
         {
             class LaserPilot: LaserPilot
