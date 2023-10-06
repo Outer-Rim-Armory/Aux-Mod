@@ -28,7 +28,7 @@ _presetDisplayNames insert [0, ["Disabled"]];
     "LIST",
     ["Preset", "Select what preset to use with ACE's Fortify System, or to disable it."],
     ["Keeli Company Aux Mod", "ACE Fortify Options"],
-    [_presetNames, _presetDisplayNames, 7],
+    [_presetNames, _presetDisplayNames, 1],
     1, // isGlobal
     {
         call BNAKC_fnc_RegisterPreset;
