@@ -104,6 +104,7 @@ class CfgPatches
             "BNA_KC_Backpack_Heavy",
             "BNA_KC_Backpack_Radio",
             "BNA_KC_Backpack_Radio_Mini",
+            "BNA_KC_Backpack_Radio_White_Mini",
             "BNA_KC_Backpack_Radio_Invisible",
             "BNA_KC_Backpack_Medic",
             "BNA_KC_Backpack_Medic_Heavy",
