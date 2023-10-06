@@ -703,6 +703,7 @@ class CfgVehicles
     };
     class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F
     {
+        class PilotCamera;
         class ACE_SelfActions;
         class Turrets: Turrets
         {
@@ -750,6 +751,19 @@ class CfgVehicles
                     "\3as\3as_arc170\Data\Guns_co.paa"
                 };
             };
+        };
+
+        class PilotCamera: PilotCamera
+        {
+            initTurn = 0;   // Initial states
+            initElev = -10;
+            maxTurn = 180;  // Turn radius
+            minTurn = -180;
+            maxElev = 90;   // Elevation (how far up/down)
+            minElev = -10;
+
+            maxXRotSpeed = 0.3;
+            maxYRotSpeed = 0.3;
         };
 
         class ACE_SelfActions: ACE_SelfActions
