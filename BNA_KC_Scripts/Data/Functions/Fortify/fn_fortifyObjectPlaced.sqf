@@ -1,3 +1,18 @@
+/*
+ * Author: DartRuffian
+ * ACE Fortify objectPlaced event handler. Used to reposition objects after being placed.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * call BNAKC_fnc_fortifyObjectPlaced;
+ */
+
+
 [
     "acex_fortify_objectPlaced",
     {

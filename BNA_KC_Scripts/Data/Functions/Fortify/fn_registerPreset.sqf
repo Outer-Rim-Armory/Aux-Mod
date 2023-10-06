@@ -1,3 +1,18 @@
+/*
+ * Author: DartRuffian
+ * Registers the selected preset and budget to the west (blufor) side.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * call BNAKC_fnc_registerPreset;
+ */
+
+
 if !(BNA_KC_FortifyPreset isEqualTo "Disabled") then
 {
     [
