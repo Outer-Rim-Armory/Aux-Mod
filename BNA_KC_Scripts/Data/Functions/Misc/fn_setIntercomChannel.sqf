@@ -23,6 +23,6 @@ if !(_unit call CWR_fnc_isPlayer) exitWith {};
 switch (_role) do
 {
     case "driver";
-    case "gunner": { (vehicle ace_player) setVariable [format ["TFAR_IntercomSlot_%1", (netID ace_player)], 1, true]; };
-    default { (vehicle ace_player) setVariable [format ["TFAR_IntercomSlot_%1", (netID ace_player)], 0, true]; };
+    case "gunner": { _vehicle setVariable [format ["TFAR_IntercomSlot_%1", (netID _unit)], 1, true]; };
+    default { params ["_vehicle", "_role", "_unit"]; _vehicle setVariable [format ["TFAR_IntercomSlot_%1", (netID _unit)], 0, true]; };
 };
