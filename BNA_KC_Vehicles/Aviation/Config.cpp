@@ -736,6 +736,11 @@ class CfgVehicles
             "\3as\3as_arc170\Data\Guns_co.paa"
         };
 
+        cabinOpenSound[] = {"\BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_canopy_open.wss", 1.77828 , 1, 40};
+        cabinOpenSoundInternal[] = {"\BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_canopy_open.wss", 10, 1, 40};
+        cabinCloseSound[] = {"\BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_canopy_close.wss", 1.77828, 1, 40};
+        cabinCloseSoundInternal[] = {"\BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_canopy_close.wss", 10, 1, 40};
+
         textureList[] = {"Standard", 1};
         class TextureSources
         {
