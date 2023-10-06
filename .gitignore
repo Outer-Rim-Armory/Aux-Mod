@@ -1,16 +1,14 @@
-# Dev Folders
+# In-Dev
 Exported Textures/
-!Developer Files
-!.vscode
-
-# Dev Files
-Tools
-*.bat
-*.py
 *.txt
 
-# Temp Files
-References
+# Developer Files
+!Developer Files
+
+# Workspace & Settings
+!.vscode/
+Tools/
+References/
 
 # Other
 BNA_KC_Memes
