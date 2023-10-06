@@ -1,0 +1,16 @@
+{
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+
+    "files.autoSave": "onFocusChange",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": false,
+
+    "files.associations":
+    {
+        "*.hpp": "cpp"
+    },
+
+    "C_Cpp.errorSquiggles": "disabled"
+}
