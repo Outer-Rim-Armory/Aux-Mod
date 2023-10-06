@@ -49,11 +49,11 @@ class CfgFunctions
             class setIntercomChannel {};
 		};
 
-		class Fortifications
+		class Fortify
 		{
-			file = "BNA_KC_Scripts\Data\Functions\Fortification";
-			class FortificationsPostInit {};
-            class RegisterPreset {};
+			file = "BNA_KC_Scripts\Data\Functions\Fortify";
+			class fortifyPostInit {};
+            class registerPreset {};
 		};
 
         class Map
