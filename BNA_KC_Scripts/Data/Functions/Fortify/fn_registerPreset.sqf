@@ -6,4 +6,4 @@ if (BNA_KC_FortifyPreset isNotEqualTo "Disabled") then
 else
 {
     [west, 0, []] call acex_fortify_fnc_registerObjects;
-}
+};
