@@ -903,6 +903,36 @@ class CfgVehicles
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
     };
+
+    class BNA_KC_Backpack_Medic_Heavy: BNA_KC_Backpack_Heavy
+    {
+        displayName = "[KC] Clone Trooper Medic Heavy Backpack";
+
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_Heavy_UI.paa";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Cover
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Heavy
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Medic
+            ""                                                                // RTO
+        };
+    };
+
+    class BNA_KC_Backpack_Medic_Radio: BNA_KC_Backpack_Radio
+    {
+        displayName = "[KC] Clone Trooper Medic Radio Backpack";
+
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_Radio_UI.paa";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
+            "",                                                              // Cover
+            "",                                                              // Heavy
+            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Medic
+            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"       // RTO
+        };
+    };
 };
 
 
