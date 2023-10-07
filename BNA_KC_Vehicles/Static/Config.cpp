@@ -378,7 +378,7 @@ class CfgVehicles
             "\3as\3as_static\Mortar\data\tube.rvmat"
         };
 
-        editorPreview = "\BNA_KC_Vehicles\Static\Data\Textures\Previews\BNA_KC_Mortar_M190.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Static\Data\Textures\Previews\Mortar_M190.jpg";
         icon = "3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
 
         // Editor Attributes
