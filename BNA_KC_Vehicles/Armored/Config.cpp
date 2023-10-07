@@ -1018,7 +1018,7 @@ class CfgVehicles
                 hideOnUse = 1;
                 priority = 5;
 
-                condition = "ace_player == driver this;";
+                condition = "ace_player == currentPilot this;";
                 statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 5, 1, 100];";
             };
         };
