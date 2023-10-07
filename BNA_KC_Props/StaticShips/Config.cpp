@@ -96,27 +96,27 @@ class CfgVehicles
 
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body1.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body2.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body3.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body4.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body5.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body6.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body7.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body8.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body9.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body10.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Door.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Engine.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior1.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior2.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior3.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior4.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior5.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior6.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior7.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior8.paa",
-			"BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Bridge.paa"
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body1.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body2.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body3.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body4.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body5.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body6.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body7.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body8.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body9.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Body10.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Door.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Engine.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior1.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior2.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior3.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior4.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior5.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior6.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior7.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Interior8.paa",
+			"\BNA_KC_Props\StaticShips\Data\Textures\Resurgence\Resurgence_Bridge.paa"
 		};
 	};
 };

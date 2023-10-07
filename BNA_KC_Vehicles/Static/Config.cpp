@@ -35,9 +35,9 @@ class CfgWeapons
         // hiddenSelectionsTextures[] = {"\3as\3as_static\Mortar\data\base.001_co.paa","\3as\3as_static\Mortar\data\tube.001_co.paa"};
 
         // LS model until 3AS is done
-        model = "ls_vehicles_ground\mortar\ls_ground_mortar_alternateCarry.p3d";
+        model = "\ls_vehicles_ground\mortar\ls_ground_mortar_alternateCarry.p3d";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"ls_vehicles_ground\mortar\data\republic_co.paa"};
+        hiddenSelectionsTextures[] = {"\ls_vehicles_ground\mortar\data\republic_co.paa"};
 
         mass = 300;
         class ACE_CSW

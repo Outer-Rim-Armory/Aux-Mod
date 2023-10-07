@@ -386,11 +386,11 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Auxiliary.paa",
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Cockpit.paa",
-            "lsd_vehicles_heli\laatc\data\glass_ca.paa",
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Hull.paa",
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Wings.paa"
+            "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Auxiliary.paa",
+            "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Cockpit.paa",
+            "\lsd_vehicles_heli\laatc\data\glass_ca.paa",
+            "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Hull.paa",
+            "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Wings.paa"
         };
         textureList[] = {"Standard", 0, "KeeliCompany", 1};
         class TextureSources
@@ -402,11 +402,11 @@ class CfgVehicles
                 factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "lsd_vehicles_heli\laatc\data\auxiliary_co.paa",
-                    "lsd_vehicles_heli\laatc\data\standard\cockpit_co.paa",
-                    "lsd_vehicles_heli\laatc\data\glass_ca.paa",
-                    "lsd_vehicles_heli\laatc\data\standard\hull_co.paa",
-                    "lsd_vehicles_heli\laatc\data\standard\wings_co.paa"
+                    "\lsd_vehicles_heli\laatc\data\auxiliary_co.paa",
+                    "\lsd_vehicles_heli\laatc\data\standard\cockpit_co.paa",
+                    "\lsd_vehicles_heli\laatc\data\glass_ca.paa",
+                    "\lsd_vehicles_heli\laatc\data\standard\hull_co.paa",
+                    "\lsd_vehicles_heli\laatc\data\standard\wings_co.paa"
                 };
             };
             class KeeliCompany: Standard
@@ -415,11 +415,11 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Auxiliary.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Cockpit.paa",
-                    "lsd_vehicles_heli\laatc\data\glass_ca.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Hull.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Wings.paa"
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Auxiliary.paa",
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Cockpit.paa",
+                    "\lsd_vehicles_heli\laatc\data\glass_ca.paa",
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Hull.paa",
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\LAATc_Wings.paa"
                 };
             };
         };
@@ -502,9 +502,9 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\Republic_Transport_Body.paa",
-            "3as\3as_starships\data\hs_int_co.paa",
-            "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+            "\BNA_KC_Vehicles\Aviation\Data\Textures\Transport\Republic_Transport_Body.paa",
+            "\3as\3as_starships\data\hs_int_co.paa",
+            "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
         };
 
         textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1};
@@ -517,9 +517,9 @@ class CfgVehicles
                 factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "3as\3as_starships\data\hs_ext_co.paa",
-                    "3as\3as_starships\data\hs_int_co.paa",
-                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                    "\3as\3as_starships\data\hs_ext_co.paa",
+                    "\3as\3as_starships\data\hs_int_co.paa",
+                    "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
                 };
             };
             class Imperial: Standard
@@ -527,9 +527,9 @@ class CfgVehicles
                 displayName = "Imperial";
                 textures[] =
                 {
-                    "3as\3as_starships\data\hs_Imp_ext_co.paa",
-                    "3as\3as_starships\data\hs_int_co.paa",
-                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                    "\3as\3as_starships\data\hs_Imp_ext_co.paa",
+                    "\3as\3as_starships\data\hs_int_co.paa",
+                    "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
                 };
             };
             class KeeliCompany: Standard
@@ -538,9 +538,9 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\Republic_Transport_Body.paa",
-                    "3as\3as_starships\data\hs_int_co.paa",
-                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                    "\BNA_KC_Vehicles\Aviation\Data\Textures\Transport\Republic_Transport_Body.paa",
+                    "\3as\3as_starships\data\hs_int_co.paa",
+                    "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
                 };
             };
         };
