@@ -370,8 +370,8 @@ class CfgVehicles
         ace_dragging_canCarry = 1;
         ace_dragging_carryPosition[] = { 0, 1.2, 0 };
 
-        model = "3AS\3as_static\Mortar\model\republicmortar.p3d";
-        hiddenSelections[] = {"Camo_1","Camo_2"};
+        model = "\3AS\3as_static\Mortar\model\republicmortar.p3d";
+        hiddenSelections[] = {"Camo_1", "Camo_2"};
         hiddenSelectionsMaterials[] =
         {
             "\3as\3as_static\Mortar\data\base.rvmat",
@@ -379,7 +379,7 @@ class CfgVehicles
         };
 
         editorPreview = "\BNA_KC_Vehicles\Static\Data\Textures\Previews\Mortar_M190.jpg";
-        icon = "3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
+        icon = "\3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -390,8 +390,8 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                magazines[] = { "" };
-                weapons[] = { "" };
+                magazines[] = {""};
+                weapons[] = {""};
 
                 // Maximum and minimum angles for mortar turret
                 maxElev = 25.762;
@@ -468,12 +468,12 @@ class CfgVehicles
             tex[] = {};
             mat[] =
             {
-                "3as\3as_static\mortar\data\base.rvmat",
-                "A3\Static_F_Gamma\data\StaticTurret_01_damage.rvmat",
-                "A3\Static_F_Gamma\data\StaticTurret_01_destruct.rvmat",
-                "3as\3as_static\mortar\data\tube.rvmat",
-                "A3\Static_F_Gamma\data\StaticTurret_02_damage.rvmat",
-                "A3\Static_F_Gamma\data\StaticTurret_02_destruct.rvmat"
+                "\3as\3as_static\mortar\data\base.rvmat",
+                "\A3\Static_F_Gamma\data\StaticTurret_01_damage.rvmat",
+                "\A3\Static_F_Gamma\data\StaticTurret_01_destruct.rvmat",
+                "\3as\3as_static\mortar\data\tube.rvmat",
+                "\A3\Static_F_Gamma\data\StaticTurret_02_damage.rvmat",
+                "\A3\Static_F_Gamma\data\StaticTurret_02_destruct.rvmat"
             };
         };
     };
@@ -500,7 +500,7 @@ class CfgVehicles
                     "BNA_KC_Mag_3Rnd_82mm_SmokeBlue",
                     "BNA_KC_Mag_3Rnd_82mm_SmokeRed"
                 };
-                weapons[] = { "BNA_KC_Mortar_M190_Turret" };
+                weapons[] = {"BNA_KC_Mortar_M190_Turret"};
             };
         };
 
