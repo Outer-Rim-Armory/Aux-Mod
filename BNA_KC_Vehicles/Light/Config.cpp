@@ -605,8 +605,8 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_Medic.paa",
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_Medic.paa",
+            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\Medic\Glavenus_Body.paa",
+            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\Medic\Glavenus_Body2.paa",
             ""
         };
         textureList[] = {};
