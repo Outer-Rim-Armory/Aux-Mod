@@ -8,7 +8,7 @@ faction = "BNA_KC_Faction"; \
 editorSubcategory = "BNA_KC_SubCat_VSupport"; \
 crew = "BNA_KC_Unit_Phase2_CT"; \
 side = 1; \
-weapons[] = { "BNA_KC_Gammoth_Horn" };
+weapons[] = {"BNA_KC_Gammoth_Horn"};
 
 
 class CfgVehicles
@@ -22,14 +22,14 @@ class CfgVehicles
         GAMMOTH_DATA()
 
         hiddenSelectionsTextures[] = {};
-        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources
         {
             class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
@@ -69,14 +69,14 @@ class CfgVehicles
         GAMMOTH_DATA()
 
         hiddenSelectionsTextures[] = {};
-        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources
         {
             class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
@@ -119,14 +119,14 @@ class CfgVehicles
         GAMMOTH_DATA()
 
         hiddenSelectionsTextures[] = {};
-        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources
         {
             class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
@@ -170,14 +170,14 @@ class CfgVehicles
         attendant = 1;
 
         hiddenSelectionsTextures[] = {};
-        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources
         {
             class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
@@ -221,14 +221,14 @@ class CfgVehicles
         ace_repair_canRepair = 1;
 
         hiddenSelectionsTextures[] = {};
-        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources
         {
             class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
@@ -272,14 +272,14 @@ class CfgVehicles
         ace_refuel_fuelCargo = 10000;
 
         hiddenSelectionsTextures[] = {};
-        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources
         {
             class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
@@ -319,14 +319,14 @@ class CfgVehicles
         GAMMOTH_DATA()
 
         hiddenSelectionsTextures[] = {};
-        textureList[] = { "CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0 };
+        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources
         {
             class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\BNA_KC_Gammoth_Body_CamoKC.paa",
@@ -364,12 +364,12 @@ class CfgVehicles
 
 class CfgEditorSubcategories
 {
-	class BNA_KC_SubCat_VSupport
-	{
-		dlc = "BNA_KC";
-		author = "SweMonkey and DartRuffian";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "Vehicles - Support";
-	};
+    class BNA_KC_SubCat_VSupport
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Vehicles - Support";
+    };
 };
