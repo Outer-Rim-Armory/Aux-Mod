@@ -332,7 +332,8 @@ class CfgVehicles
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Body\Body_CamoKC.paa",
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Body\Body2_CamoKC.paa",
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\Cargo_CamoKC.paa",
-                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
+                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa",
+                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
                 };
             };
             class CamoBrown: CamoKC
@@ -343,7 +344,8 @@ class CfgVehicles
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Body\Body_CamoBrown.paa",
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Body\Body2_CamoBrown.paa",
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\Cargo_CamoBrown.paa",
-                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
+                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa",
+                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
                 };
             };
             class CamoGrey: CamoKC
@@ -354,7 +356,8 @@ class CfgVehicles
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Body\Body_CamoGrey.paa",
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Body\Body2_CamoGrey.paa",
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\Cargo_CamoGrey.paa",
-                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa","A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
+                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa",
+                    "A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
                 };
             };
         };
