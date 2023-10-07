@@ -46,7 +46,6 @@ class CfgFunctions
 			class FixInfiniteLoading {};
 			class getConfigProperty {};
             class inCustomCamera {};
-            class setIntercomChannel {};
 		};
 
 		class Fortifications
@@ -85,6 +84,7 @@ class CfgFunctions
             file = "BNA_KC_Scripts\Data\Functions\Vehicles";
             class canSwitchSkins {};
             class skinSwitcherChildren {};
+            class setIntercomChannel {};
         };
 
         class Medical

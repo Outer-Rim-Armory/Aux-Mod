@@ -22,7 +22,7 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "visor", "illum"};
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC.paa",
+            "BNA_KC_Gear\SpecialForces\Data\Helmets\Helmet_ARC.paa",
             "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
         };
         picture = "\lsd_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
@@ -268,8 +268,8 @@ class CfgVehicles
         uniformClass = "BNA_KC_Uniform_ARC";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARC_Upper.paa",
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARC_Lower.paa",
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\Uniform_ARC_Upper.paa",
+            "BNA_KC_Gear\SpecialForces\Data\Uniforms\Uniform_ARC_Lower.paa",
             "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
 

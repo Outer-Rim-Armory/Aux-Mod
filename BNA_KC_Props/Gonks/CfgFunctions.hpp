@@ -7,6 +7,7 @@ class CfgFunctions
             file = "BNA_KC_Props\Gonks\Data\Functions";
             class GrabLoadout {};
             class GrabUniform {};
+            class openAttachmentArsenal {};
         };
     };
 };

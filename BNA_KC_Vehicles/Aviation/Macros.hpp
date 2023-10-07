@@ -1,13 +1,13 @@
 #define HUD_CHANGER class LS_HUD_Changer \
 { \
     displayName = "Change HUD Color"; \
-    condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)"; \
+    condition = "ace_player == currentPilot (_this#0) and isEngineOn (_this#0)"; \
     exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"}; \
     icon = "\ls_data\icons\hud\colorWheel.paa"; \
     class HUD_White \
     { \
         displayName = "White"; \
-        condition = "ace_player == driver (_this#0) and isEngineOn (_this#0)"; \
+        condition = "ace_player == currentPilot (_this#0) and isEngineOn (_this#0)"; \
         exceptions[] = {"isNotInside", "isNotSwimming", "isNotSitting"}; \
         runOnHover = 1; \
         statement = "[1, 1, 1, 1, _this#0] call ls_utility_fnc_hudColorChange"; \

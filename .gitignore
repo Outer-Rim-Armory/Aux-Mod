@@ -1,0 +1,14 @@
+# In-Dev
+Exported Textures/
+*.txt
+
+# Developer Files
+!Developer Files
+
+# Workspace & Settings
+!.vscode/
+Tools/
+References/
+
+# Other
+BNA_KC_Memes

@@ -197,9 +197,18 @@ class CfgVehicles
                 statement = "player setVariable ['BNAKC_Loadout_Menu', 1];";
             };
 
+            class OpenArsenal: ChangeMenu_Rifleman
+            {
+                displayName = "<t color='#FFFFFF'>Weapon Attachments</t>";
+                priority = 99;
+
+                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) == 0)";
+                statement = "call BNAKC_fnc_openAttachmentArsenal";
+            };
+
             class ChangeMenu_Home: ChangeMenu_Rifleman
             {
-                displayName = "<t color='#FFFFFF' font='PuristaBold'>Home</t>";
+                displayName = "<t color='#FFFFFF' font='PuristaSemibold'>Home</t>";
                 priority = 99;
 
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) != 0)";

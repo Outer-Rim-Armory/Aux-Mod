@@ -95,8 +95,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {"BNA_KC_SoundSet_DC15L_FullAuto"};
-                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15L_FullAuto"};
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15L"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15L"};
             };
         };
     };
@@ -144,7 +144,7 @@ class CfgMagazines
 class CfgSoundShaders
 {
     class BNA_KC_SoundShader_Weapon_Base;
-    class BNA_KC_SoundShader_DC15L_FullAuto: BNA_KC_SoundShader_Weapon_Base
+    class BNA_KC_SoundShader_DC15L: BNA_KC_SoundShader_Weapon_Base
     {
         samples[] =
         {
@@ -156,8 +156,8 @@ class CfgSoundShaders
 class CfgSoundSets
 {
     class BNA_KC_SoundSet_Weapon_Base;
-    class BNA_KC_SoundSet_DC15L_FullAuto: BNA_KC_SoundSet_Weapon_Base
+    class BNA_KC_SoundSet_DC15L: BNA_KC_SoundSet_Weapon_Base
     {
-        soundShaders[] = {"BNA_KC_SoundShader_DC15L_FullAuto"};
+        soundShaders[] = {"BNA_KC_SoundShader_DC15L"};
     };
 };
