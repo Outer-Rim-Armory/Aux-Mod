@@ -52,8 +52,8 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Body\Body_CamoGret.paa",
-                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Body\Body2_CamoGret.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Body\Body_CamoGrey.paa",
+                    "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Body\Body2_CamoGrey.paa",
                     "BNA_KC_Vehicles\Support\Data\Textures\Gammoth\Cargo\Cargo_CamoGrey.paa"
                 };
             };
