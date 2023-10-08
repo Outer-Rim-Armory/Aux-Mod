@@ -14,6 +14,8 @@ class CfgPatches
                 // Flares
             "A3_Weapons_F",
                 // Hydras
+                // Smoke Launcher
+                // Laser Designator
             "BNA_KC_Gear_Aviation",
                 // Pilot unit
             "ls_functions"
