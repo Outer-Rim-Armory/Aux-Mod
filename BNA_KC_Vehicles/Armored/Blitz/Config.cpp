@@ -141,6 +141,7 @@ class CfgVehicles
         };
 
         textureList[] = {"KeeliCompany", 1, "WhiteRed", 0, "CamoGrey", 0};
+        animationList[] = {"showCamonetCannon", 0, "showCamonetPlates1", 0, "showCamonetPlates2", 0, "showCamonetTurret", 0, "showCamonetHull", 0};
         class TextureSources
         {
             class KeeliCompany

@@ -42,6 +42,7 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] = {};
         textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
+        animationList[] = {"showCanisters", 0, "showTools", 0};
 
         class TextureSources
         {
