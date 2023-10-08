@@ -42,8 +42,8 @@ class CfgVehicles
 
         // Impulse Settings
         tas_can_impulse = 0; // Disables 3AS's Impulse System
-        ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
-        ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+        ls_impulsor_soundOn = "BNA_KC_Sound_ImpulseOn";
+        ls_impulsor_soundOff = "BNA_KC_Sound_ImpulseOff";
         ls_impulsor_fuelDrain_1 = 0;
         ls_impulsor_fuelDrain_2 = 0;
         // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
