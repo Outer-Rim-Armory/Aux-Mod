@@ -29,12 +29,60 @@ class CfgVehicles
 
         displayName = "[KC] LAAT/i (Base)";
         crew = "BNA_KC_Unit_Phase2_Pilot";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
         side = 1;
 
         // Armor and fuel
         armor = 200;
         fuelCapacity = 3000;
         fuelConsumptionRate = 0.12;
+
+        vehicleClass = "Helicopter"; // What type of vehicle it is
+        availableForSupportTypes[] = {"CAS_Heli", "Transport", "Drop"};
+
+        // Impulse Settings
+        tas_can_impulse = 0; // Disables 3AS's Impulse System
+        ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
+        ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+        ls_impulsor_fuelDrain_1 = 0;
+        ls_impulsor_fuelDrain_2 = 0;
+        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
+        // ls_impulsor_boostSpeed_2 = 600;
+
+        // Weapons and mags
+        weapons[] =
+        {
+            "ls_laat_gun",   // HE Gun
+            "ls_laat_gun_2", // AP Gun
+            "ls_laat_dar",
+            "3as_LAAT_Missile_AGM",
+            "3as_LAAT_Missile_AA",
+
+            "Laserdesignator_pilotCamera",
+            "ls_weapon_CMFlareLauncher",
+            "SmokeLauncher"
+        };
+        magazines[] =
+        {
+            "200rnd_laat_he_mag",
+            "200rnd_laat_he_mag",
+            "200rnd_laat_apfsds_mag",
+            "200rnd_laat_apfsds_mag",
+
+            "24Rnd_missiles", // Hydra Missiles
+            "3as_LAAT_8Rnd_Missile_AGM",
+            "3as_LAAT_8Rnd_Missile_AGM",
+            "3as_PylonMissile_LAAT_8Rnd_Missile_AA",
+            "3as_PylonMissile_LAAT_8Rnd_Missile_AA",
+
+            "Laserbatteries",
+            "Laserbatteries",
+
+            "ls_mag_300rnd_CMFlareChaff_blue",
+            "ls_mag_300rnd_CMFlareChaff_blue",
+            "ls_mag_300rnd_CMFlareChaff_blue",
+            "SmokeLauncherMag"
+        };
 
         // Textures
         hiddenSelectionsTextures[] =
@@ -116,41 +164,6 @@ class CfgVehicles
             };
         };
 
-        // Weapons and mags
-        weapons[] =
-        {
-            "ls_laat_gun",  // HE Gun
-            "ls_laat_gun_2", // AP Gun
-            "ls_laat_dar",
-            "3as_LAAT_Missile_AGM",
-            "3as_LAAT_Missile_AA",
-
-            "Laserdesignator_pilotCamera",
-            "ls_weapon_CMFlareLauncher",
-            "SmokeLauncher"
-        };
-        magazines[] =
-        {
-            "200rnd_laat_he_mag",
-            "200rnd_laat_he_mag",
-            "200rnd_laat_apfsds_mag",
-            "200rnd_laat_apfsds_mag",
-
-            "24Rnd_missiles", // Hydra Missiles
-            "3as_LAAT_8Rnd_Missile_AGM",
-            "3as_LAAT_8Rnd_Missile_AGM",
-            "3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-            "3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-
-            "Laserbatteries",
-            "Laserbatteries",
-
-            "ls_mag_300rnd_CMFlareChaff_blue",
-            "ls_mag_300rnd_CMFlareChaff_blue",
-            "ls_mag_300rnd_CMFlareChaff_blue",
-            "SmokeLauncherMag"
-        };
-
         class pilotCamera: pilotCamera
         {
             initTurn = 0;   // Initial states
@@ -217,21 +230,6 @@ class CfgVehicles
         {
             HUD_CHANGER
         };
-
-        // Impulse Settings
-        tas_can_impulse = 0; // Disables 3AS's Impulse System
-        ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
-        ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
-        ls_impulsor_fuelDrain_1 = 0;
-        ls_impulsor_fuelDrain_2 = 0;
-        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
-        // ls_impulsor_boostSpeed_2 = 600;
-
-        accuracy = 5; // How easy it is for AI to indentify
-        cost = "3e+006"; // How "important" AI thinks it is
-        availableForSupportTypes[] = {"CAS_Heli", "Transport", "Drop"};
-        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"}; // What units are "normally" in the vehicle
-        vehicleClass = "Helicopter"; // What type of vehicle it is
 
         // Animations
         class AnimationSources: AnimationSources
