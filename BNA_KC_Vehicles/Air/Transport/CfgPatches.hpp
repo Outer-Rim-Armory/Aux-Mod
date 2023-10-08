@@ -7,6 +7,13 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "3as_Starships",
+                // Republic Transport
+            "BNA_KC_Gear",
+                // Pilot unit
+        };
+        units[] =
+        {
             "BNA_KC_RepublicTransport",
             "BNA_KC_RepubTransport"
         };
