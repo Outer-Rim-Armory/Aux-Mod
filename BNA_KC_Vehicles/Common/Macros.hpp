@@ -1,3 +1,5 @@
+#include "..\..\BNA_KC_Gear\Macros.hpp"
+
 #define HUD_CHANGER class LS_HUD_Changer \
 { \
     displayName = "Change HUD Color"; \

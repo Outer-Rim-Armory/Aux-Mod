@@ -1,6 +1,5 @@
 #include "CfgPatches.hpp"
 #include "CfgFunctions.hpp"
-#include "..\..\BNA_KC_Gear\Macros.hpp"
 #include "..\Common\Macros.hpp"
 
 
