@@ -28,6 +28,13 @@ class CfgVehicles
         displayName = "[KC] LAAT/c";
         crew = "BNA_KC_Unit_Phase2_Pilot";
 
+        ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
+        ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
+        ls_impulsor_fuelDrain_1 = 0;
+        ls_impulsor_fuelDrain_2 = 0;
+        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
+        // ls_impulsor_boostSpeed_2 = 600;
+
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Auxiliary.paa",
@@ -68,6 +75,11 @@ class CfgVehicles
             };
         };
 
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            HUD_CHANGER
+        };
+
         class UserActions: UserActions
         {
             class Impulse
@@ -106,17 +118,5 @@ class CfgVehicles
                 statement = QUOTE(this call BNAKC_fnc_specialLoad);
             };
         };
-
-        class ACE_SelfActions: ACE_SelfActions
-        {
-            HUD_CHANGER
-        };
-
-        ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
-        ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
-        ls_impulsor_fuelDrain_1 = 0;
-        ls_impulsor_fuelDrain_2 = 0;
-        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
-        // ls_impulsor_boostSpeed_2 = 600;
     };
 };
