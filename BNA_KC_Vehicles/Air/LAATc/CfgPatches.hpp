@@ -11,6 +11,8 @@ class CfgPatches
                 // LAAT/c
             "BNA_KC_Gear_Aviation",
                 // Pilot unit
+            "BNA_KC_Vehicles_Sounds",
+                // Impulse sounds
             "ls_functions"
                 // Impulse script
         };
