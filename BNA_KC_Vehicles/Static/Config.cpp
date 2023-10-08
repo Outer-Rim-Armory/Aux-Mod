@@ -512,16 +512,3 @@ class CfgVehicles
         };
     };
 };
-
-
-class CfgEditorSubcategories
-{
-    class BNA_KC_SubCat_VStatic
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Static Weapons";
-    };
-};

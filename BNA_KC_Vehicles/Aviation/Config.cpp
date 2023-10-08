@@ -24,16 +24,3 @@ class CfgSounds
         titles[] = {1, "Impulse Turns Off"};
     };
 };
-
-
-class CfgEditorSubcategories
-{
-    class BNA_KC_SubCat_VAir
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Vehicles - Aviation";
-    };
-};

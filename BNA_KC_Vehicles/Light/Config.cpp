@@ -783,19 +783,6 @@ class CfgVehicles
 };
 
 
-class CfgEditorSubcategories
-{
-    class BNA_KC_SubCat_VLight
-	{
-		dlc = "BNA_KC";
-		author = "SweMonkey and DartRuffian";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "Vehicles - Light";
-	};
-};
-
-
 class CfgFunctions
 {
     class BNAKC
