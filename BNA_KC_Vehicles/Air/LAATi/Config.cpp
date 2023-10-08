@@ -188,6 +188,19 @@ class CfgVehicles
                 statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick;);
             };
 
+            class RampOpen: Impulse
+            {
+                displayName = "Ramp Open";
+                condition = QUOTE(ace_player == currentPilot this) and (this animationPhase 'ramp' == 0);
+                statement = QUOTE(this animateSource ['ramp', 1, 1]);
+            };
+            class RampClose: RampOpen
+            {
+                displayName = "Ramp Close";
+                condition = QUOTE(ace_player == currentPilot this) and (this animationPhase 'ramp' == 1);
+                statement = QUOTE(this animateSource ['ramp', 0, 1]);
+            };
+
             class SpecialLoadVehicle: Impulse
             {
                 // Special action used for vehicles that are not fully compatible with ViV (vehicle-in-vehicle)
