@@ -31,10 +31,9 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VArmored";
         editorPreview = "\BNA_KC_Vehicles\Armored\OLV20\Data\Previews\OLV20.jpg";
 
+        displayName = "OLV-20";
         crew = "BNA_KC_Unit_Phase2_Tanker";
-        side = 1;
-
-        displayName = "[KC] OLV-20 APC";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
 
         BNA_KC_EMP_cooldown = 25;
         BNA_KC_EMP_Radius_Droid = 25;
@@ -86,6 +85,25 @@ class CfgVehicles
             };
         };
 
+        class UserActions
+        {
+            class ActivateEMP
+            {
+                displayName = "<t font='RobotoCondensedBold'>Activate EMP</t>";
+                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\iconLightning_ca.paa'>";
+
+                position = "pilotview";
+                radius = 30;
+                onlyForPlayer = 0;
+
+                hideOnUse = 1;
+                priority = 5;
+
+                condition = QUOTE(this call BNAKC_fnc_canUseEMP;);
+                statement = QUOTE(this call BNAKC_fnc_activateEMP;);
+            };
+        };
+
         class Turrets: Turrets
         {
             class MainTurret: MainTurret
@@ -105,35 +123,6 @@ class CfgVehicles
                     "96Rnd_40mm_G_belt",
                     "SmokeLauncherMag"
                 };
-                // magazines[] =
-                // {
-                //     "96Rnd_40mm_G_belt",
-                //     "96Rnd_40mm_G_belt",
-                //     "200Rnd_127x99_mag_Tracer_Green",
-                //     "200Rnd_127x99_mag_Tracer_Green",
-                //     "200Rnd_127x99_mag_Tracer_Green",
-                //     "200Rnd_127x99_mag_Tracer_Green",
-                //     "SmokeLauncherMag"
-                // };
-            };
-        };
-
-        class UserActions
-        {
-            class ActivateEMP
-            {
-                displayName = "<t font='RobotoCondensedBold'>Activate EMP</t>";
-                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\iconLightning_ca.paa'>";
-
-                position = "pilotview";
-                radius = 30;
-                onlyForPlayer = 0;
-
-                hideOnUse = 1;
-                priority = 5;
-
-                condition = QUOTE(this call BNAKC_fnc_canUseEMP;);
-                statement = QUOTE(this call BNAKC_fnc_activateEMP;);
             };
         };
     };
