@@ -22,7 +22,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
-        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_RepubTransport.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Air\Transport\Data\Previews\RepublicTransport.jpg";
 
         displayName = "[KC] Republic Transport";
 
@@ -30,7 +30,7 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
+            "\BNA_KC_Vehicles\Air\Transport\Data\Textures\KeeliCompany\Body.paa",
             "3as\3as_starships\data\hs_int_co.paa",
             "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
         };
@@ -66,7 +66,7 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\Transport\BNA_KC_Republic_Transport_Body.paa",
+                    "\BNA_KC_Vehicles\Air\Transport\Data\Textures\KeeliCompany\Body.paa",
                     "3as\3as_starships\data\hs_int_co.paa",
                     "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
                 };
