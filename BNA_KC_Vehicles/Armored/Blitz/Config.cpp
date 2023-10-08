@@ -323,19 +323,19 @@ class CfgVehicles
 
         class TransportWeapons
         {
-            class _xx_Aux501_Weaps_DC15S
+            class _xx_BNA_KC_DC15S
             {
                 count = 2;
-                weapon = "Aux501_Weaps_DC15S";
+                weapon = "BNA_KC_DC15S";
             };
         };
 
         class TransportMagazines
         {
-            class _xx_Aux501_Weapons_Mags_10mw50
+            class _xx_Aux12thFleet_Mag_DC15S
             {
                 count = 20;
-                magazine = "Aux501_Weapons_Mags_10mw50";
+                magazine = "Aux12thFleet_Mag_DC15S";
             };
         };
 
