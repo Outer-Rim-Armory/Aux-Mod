@@ -277,7 +277,7 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "[KC] LAAT/i MK1";
-        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_LAATi_MK1.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Air\LAATi\Data\Previews\LAATi_MK1.jpg";
 
         class AnimationSources: AnimationSources
         {
@@ -304,7 +304,7 @@ class CfgVehicles
     class BNA_KC_LAATi_MK1_Lamps: BNA_KC_LAATi_MK1
     {
         displayName = "[KC] LAAT/i MK1 (Lamps)";
-        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_LAATi_MK1_Lamps.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Air\LAATi\Data\Previews\LAATi_MK1_Lamps.jpg";
         class AnimationSources: AnimationSources
         {
             class Lamps: Lamps
@@ -325,7 +325,7 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "[KC] LAAT/i MK2";
-        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_LAATi_MK2.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Air\LAATi\Data\Previews\LAATi_MK2.jpg";
 
         class AnimationSources: AnimationSources
         {
@@ -352,7 +352,7 @@ class CfgVehicles
     class BNA_KC_LAATi_MK2_Lamps: BNA_KC_LAATi_MK2
     {
         displayName = "[KC] LAAT/i MK2 (Lamps)";
-        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_LAATi_MK2_Lamps.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Air\LAATi\Data\Previews\LAATi_MK2_Lamps.jpg";
         class AnimationSources: AnimationSources
         {
             class Lamps: Lamps
