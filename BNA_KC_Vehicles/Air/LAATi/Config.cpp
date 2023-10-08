@@ -81,8 +81,8 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Body.paa",
-                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\KeeliCompany\KC_Wings.paa",
+                    "\BNA_KC_Vehicles\Air\LAATi\Data\Textures\KeeliCompany\Body.paa",
+                    "\BNA_KC_Vehicles\Air\LAATi\Data\Textures\KeeliCompany\Wings.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
@@ -94,8 +94,8 @@ class CfgVehicles
                 displayName = "Akali";
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Body.paa",
-                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\Akali\Akali_Wings.paa",
+                    "\BNA_KC_Vehicles\Air\LAATi\Data\Textures\Akali\Body.paa",
+                    "\BNA_KC_Vehicles\Air\LAATi\Data\Textures\Akali\Wings.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
@@ -107,8 +107,8 @@ class CfgVehicles
                 displayName = "Twi'Lek";
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\TwiLek\TwiLek_Body.paa",
-                    "\BNA_KC_Vehicles\Aviation\Data\Textures\LAATi\TwiLek\TwiLek_Wings.paa",
+                    "\BNA_KC_Vehicles\Air\LAATi\Data\Textures\TwiLek\Body.paa",
+                    "\BNA_KC_Vehicles\Air\LAATi\Data\Textures\TwiLek\Wings.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
