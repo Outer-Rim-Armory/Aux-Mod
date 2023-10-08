@@ -5,7 +5,7 @@
 class CfgVehicles
 {
     class 3as_saber_m1;
-    class BNA_KC_Saber_M1: 3as_saber_m1
+    class BNA_KC_TX130_M1: 3as_saber_m1
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -64,5 +64,11 @@ class CfgVehicles
                 };
             };
         };
+    };
+
+    class BNA_KC_Saber_M1: BNA_KC_TX130_M1
+    {
+        scope = 1;
+        scopeCurator = 0;
     };
 };
