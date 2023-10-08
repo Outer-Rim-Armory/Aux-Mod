@@ -30,11 +30,11 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Auxiliary.paa",
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Cockpit.paa",
-            "lsd_vehicles_heli\laatc\data\glass_ca.paa",
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Hull.paa",
-            "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Wings.paa"
+            "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Auxiliary.paa",
+            "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Cockpit.paa",
+            "\lsd_vehicles_heli\laatc\data\glass_ca.paa",
+            "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Hull.paa",
+            "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Wings.paa"
         };
         textureList[] = {"Standard", 0, "KeeliCompany", 1};
         class TextureSources
@@ -46,11 +46,11 @@ class CfgVehicles
                 factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "lsd_vehicles_heli\laatc\data\auxiliary_co.paa",
-                    "lsd_vehicles_heli\laatc\data\standard\cockpit_co.paa",
-                    "lsd_vehicles_heli\laatc\data\glass_ca.paa",
-                    "lsd_vehicles_heli\laatc\data\standard\hull_co.paa",
-                    "lsd_vehicles_heli\laatc\data\standard\wings_co.paa"
+                    "\lsd_vehicles_heli\laatc\data\auxiliary_co.paa",
+                    "\lsd_vehicles_heli\laatc\data\standard\cockpit_co.paa",
+                    "\lsd_vehicles_heli\laatc\data\glass_ca.paa",
+                    "\lsd_vehicles_heli\laatc\data\standard\hull_co.paa",
+                    "\lsd_vehicles_heli\laatc\data\standard\wings_co.paa"
                 };
             };
             class KeeliCompany: Standard
@@ -59,11 +59,11 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Auxiliary.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Cockpit.paa",
-                    "lsd_vehicles_heli\laatc\data\glass_ca.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Hull.paa",
-                    "BNA_KC_Vehicles\Aviation\Data\Textures\LAATc\BNA_KC_LAATC_Wings.paa"
+                    "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Auxiliary.paa",
+                    "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Cockpit.paa",
+                    "\lsd_vehicles_heli\laatc\data\glass_ca.paa",
+                    "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Hull.paa",
+                    "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Wings.paa"
                 };
             };
         };
