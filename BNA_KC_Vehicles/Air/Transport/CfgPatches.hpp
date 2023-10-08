@@ -9,7 +9,7 @@ class CfgPatches
         {
             "3as_Starships",
                 // Republic Transport
-            "BNA_KC_Gear",
+            "BNA_KC_Gear"
                 // Pilot unit
         };
         units[] =
