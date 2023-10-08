@@ -54,7 +54,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VArmored";
         editorPreview = "\BNA_KC_Vehicles\Armored\Blitz\Data\Previews\Blitz.jpg";
 
-        displayName = "[KC] Blitz Assault Tank";
+        displayName = "Blitz Assault Tank";
         crew = "BNA_KC_Unit_Phase2_Tanker";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
 
