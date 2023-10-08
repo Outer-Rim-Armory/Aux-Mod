@@ -16,6 +16,7 @@ class CfgPatches
         };
         units[] =
         {
+            "BNA_KC_Badger",
             "BNA_KC_APC_Badger"
         };
         weapons[] = {};

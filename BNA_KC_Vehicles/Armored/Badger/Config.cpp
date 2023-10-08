@@ -16,7 +16,7 @@ class CfgVehicles
             class MainTurret;
         };
     };
-    class BNA_KC_APC_Badger: B_APC_Wheeled_01_cannon_F
+    class BNA_KC_Badger: B_APC_Wheeled_01_cannon_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -162,5 +162,11 @@ class CfgVehicles
                 };
             };
         };
+    };
+
+    class BNA_KC_APC_Badger: BNA_KC_Badger
+    {
+        scope = 1;
+        scopeCurator = 0;
     };
 };
