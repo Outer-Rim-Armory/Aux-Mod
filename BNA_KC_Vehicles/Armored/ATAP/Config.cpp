@@ -23,16 +23,16 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\ATAP.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\ATAP\Data\Previews\ATAP.jpg";
 
         displayName = "[KC] AT-AP";
         crew = "BNA_KC_Unit_Phase2_Tanker";
 
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Body_KC.paa",
-            "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Weapons_KC.paa",
-            "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Legs_KC.paa"
+            "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\KeeliCompany\Body.paa",
+            "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\KeeliCompany\Weapons.paa",
+            "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\KeeliCompany\Legs.paa"
         };
 
         textureList[] = {"Standard", 0, "KeeliCompany", 1, "CamoGrey", 0};
@@ -56,9 +56,9 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Body_KC.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Weapons_KC.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Legs_KC.paa"
+                    "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\KeeliCompany\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\KeeliCompany\Weapons.paa",
+                    "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\KeeliCompany\Legs.paa"
                 };
             };
             class CamoGrey: KeeliCompany
@@ -66,9 +66,9 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Body_CamoGrey.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Weapons_CamoGrey.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATAP\ATAP_Legs_CamoGrey.paa"
+                    "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\CamoGrey\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\CamoGrey\Weapons.paa",
+                    "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\CamoGrey\Legs.paa"
                 };
             };
         };
