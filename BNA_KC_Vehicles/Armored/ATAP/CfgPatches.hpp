@@ -1,23 +1,20 @@
 class CfgPatches
 {
-    class BNA_KC_Vehicles_Blitz
+    class BNA_KC_Vehicles_ATAP
     {
         addonRootClass= "BNA_KC_Vehicles";
         author = "SweMonkey and DartRuffian";
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "A3_Armor_F_EPC_MBT_01",
-                // Slammer
-            "BNA_KC_Vehicles_Weapons",
-                // Weapons
+            "3AS_ATAP",
+                // AT-AP
             "BNA_KC_Vehicles_Sounds"
-                // Sounds
+                // AT-TE Alarm
         };
         units[] =
         {
-            "BNA_KC_Blitz",
-            "BNA_KC_MBT_Slammer"
+            "BNA_KC_ATAP"
         };
         weapons[] = {};
     };
