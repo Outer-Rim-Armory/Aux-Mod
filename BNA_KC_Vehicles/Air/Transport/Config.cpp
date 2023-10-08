@@ -31,8 +31,8 @@ class CfgVehicles
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Vehicles\Air\Transport\Data\Textures\KeeliCompany\Body.paa",
-            "3as\3as_starships\data\hs_int_co.paa",
-            "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+            "\3as\3as_starships\data\hs_int_co.paa",
+            "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
         };
 
         textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1};
@@ -45,9 +45,9 @@ class CfgVehicles
                 factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "3as\3as_starships\data\hs_ext_co.paa",
-                    "3as\3as_starships\data\hs_int_co.paa",
-                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                    "\3as\3as_starships\data\hs_ext_co.paa",
+                    "\3as\3as_starships\data\hs_int_co.paa",
+                    "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
                 };
             };
             class Imperial: Standard
@@ -55,9 +55,9 @@ class CfgVehicles
                 displayName = "Imperial";
                 textures[] =
                 {
-                    "3as\3as_starships\data\hs_Imp_ext_co.paa",
-                    "3as\3as_starships\data\hs_int_co.paa",
-                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                    "\3as\3as_starships\data\hs_Imp_ext_co.paa",
+                    "\3as\3as_starships\data\hs_int_co.paa",
+                    "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
                 };
             };
             class KeeliCompany: Standard
@@ -67,8 +67,8 @@ class CfgVehicles
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Air\Transport\Data\Textures\KeeliCompany\Body.paa",
-                    "3as\3as_starships\data\hs_int_co.paa",
-                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
+                    "\3as\3as_starships\data\hs_int_co.paa",
+                    "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
                 };
             };
         };
