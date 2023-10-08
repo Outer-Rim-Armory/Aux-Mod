@@ -29,7 +29,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\Badger.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Badger\Data\Previews\Badger.jpg";
 
         displayName = "Badger IFV";
         crew = "BNA_KC_Unit_Phase2_Tanker";
