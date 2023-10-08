@@ -28,7 +28,7 @@ class CfgSounds
 
 class CfgEditorSubcategories
 {
-    class BNA_KC_SubCat_VAviation
+    class BNA_KC_SubCat_VAir
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";

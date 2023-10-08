@@ -21,7 +21,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAviation";
+        editorSubcategory = "BNA_KC_SubCat_VAir";
         editorPreview = "\BNA_KC_Vehicles\Air\Transport\Data\Previews\RepublicTransport.jpg";
 
         displayName = "[KC] Republic Transport";

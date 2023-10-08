@@ -22,7 +22,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAviation";
+        editorSubcategory = "BNA_KC_SubCat_VAir";
         editorPreview = "\BNA_KC_Vehicles\Air\LAATc\Data\Previews\LAATc.jpg";
 
         displayName = "LAAT/c";

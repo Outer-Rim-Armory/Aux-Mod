@@ -25,7 +25,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAviation";
+        editorSubcategory = "BNA_KC_SubCat_VAir";
 
         displayName = "LAAT/i (Base)";
         crew = "BNA_KC_Unit_Phase2_Pilot";
