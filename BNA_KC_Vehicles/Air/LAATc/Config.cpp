@@ -27,6 +27,7 @@ class CfgVehicles
 
         displayName = "[KC] LAAT/c";
         crew = "BNA_KC_Unit_Phase2_Pilot";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
         ls_impulsor_soundOn = "BNA_KC_ImpulseOn";
         ls_impulsor_soundOff = "BNA_KC_ImpulseOff";
