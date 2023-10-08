@@ -81,7 +81,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -90,128 +89,8 @@ class CfgVehicles
 
         displayName = "[KC] Blitz Assault Tank";
         crew = "BNA_KC_Unit_Phase2_Tanker";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
 
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Body.paa",
-            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Tow.paa",
-            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Addons.paa",
-            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
-        };
-
-        textureList[] = {"KeeliCompany", 1, "WhiteRed", 0, "CamoGrey", 0};
-        class TextureSources
-        {
-            class KeeliCompany
-            {
-                author = "Rev";
-                displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
-                textures[] =
-                {
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Body.paa",
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Tow.paa",
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Addons.paa",
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
-                };
-            };
-            class WhiteRed: KeeliCompany
-            {
-                displayName = "White and Red";
-                textures[] =
-                {
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Body.paa",
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Tow.paa",
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Addons.paa",
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
-                };
-            };
-            class CamoGrey: KeeliCompany
-            {
-                displayName = "Grey Camo";
-                textures[] =
-                {
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\CamoGrey\Body.paa",
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\CamoGrey\Tow.paa",
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\CamoGrey\Addons.paa",
-                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
-                };
-            };
-        };
-
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret
-            {
-                class Turrets: Turrets
-                {
-                    class CommanderOptics: CommanderOptics
-                    {
-                        weapons[] =
-                        {
-                            "BNA_KC_CommanderGun",
-                            "SmokeLauncher"
-                        };
-                        magazines[] =
-                        {
-                            "BNA_KC_100rnd_Coax_Mag",
-                            "BNA_KC_100rnd_Coax_Mag",
-                            "BNA_KC_100rnd_Coax_Mag",
-                            "BNA_KC_100rnd_Coax_Mag",
-                            "SmokeLauncherMag"
-                        };
-                    };
-                };
-
-                // gunBeg = "Usti hlavne";
-                // gunEnd = "Konec hlavne";
-                // memoryPointGun[] = {"usti hlavne3"};
-                weapons[] =
-                {
-                    "BNA_KC_120_Tankgun",
-                    "BNA_KC_Coax"
-                };
-                magazines[] =
-                {
-                    "BNA_KC_120_AT_Mag",
-                    "BNA_KC_120_HEAT_Mag",
-                    "BNA_KC_120_HE_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag"
-                };
-            };
-        };
-        class AnimationSources: AnimationSources
-        {
-            class muzzle_hide_cannon: muzzle_hide_cannon
-            {
-                source = "reload";
-                weapon = "BNA_KC_120_Tankgun";
-            };
-            class muzzle_rot_cannon: muzzle_rot_cannon
-            {
-                source = "ammorandom";
-                weapon = "BNA_KC_120_Tankgun";
-            };
-            class muzzle_rot_cmdr: muzzle_rot_cmdr
-            {
-                source = "ammorandom";
-                weapon = "HMG_127_MBT";
-            };
-            class recoil_source: recoil_source
-            {
-                source = "reload";
-                weapon = "BNA_KC_120_Tankgun";
-            };
-            class commander_gun_recoil: commander_gun_recoil
-            {
-                source = "reload";
-                weapon = "HMG_127_MBT";
-            };
-        };
         //soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\armor\MBT_01\MBT_01_Engine_Ext_Stop",6.30957,1,100};
         soundEngineOffExt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineShutdown",30,1,100};
         soundEngineOffInt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineShutdown",1,1};
@@ -287,8 +166,160 @@ class CfgVehicles
             };
         };
 
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Body.paa",
+            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Tow.paa",
+            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Addons.paa",
+            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
+        };
+
+        textureList[] = {"KeeliCompany", 1, "WhiteRed", 0, "CamoGrey", 0};
+        class TextureSources
+        {
+            class KeeliCompany
+            {
+                author = "Rev";
+                displayName = "Keeli Company";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
+                };
+            };
+            class WhiteRed: KeeliCompany
+            {
+                displayName = "White and Red";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
+                };
+            };
+            class CamoGrey: KeeliCompany
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\CamoGrey\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\CamoGrey\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\CamoGrey\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
+                };
+            };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class TFAR_IntercomChannel
+            {
+                displayName = "Intercom Channel";
+                condition = "true";
+                statement = "";
+
+                class TFAR_IntercomChannel_disabled
+                {
+                    displayName = "Disabled";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true]";
+                };
+                class TFAR_IntercomChannel_1
+                {
+                    displayName = "Cargo";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
+                };
+                class TFAR_IntercomChannel_2
+                {
+                    displayName = "Crew";
+                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
+                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
+                };
+            };
+        };
+
+        class AnimationSources: AnimationSources
+        {
+            class muzzle_hide_cannon: muzzle_hide_cannon
+            {
+                source = "reload";
+                weapon = "BNA_KC_120_Tankgun";
+            };
+            class muzzle_rot_cannon: muzzle_rot_cannon
+            {
+                source = "ammorandom";
+                weapon = "BNA_KC_120_Tankgun";
+            };
+            class muzzle_rot_cmdr: muzzle_rot_cmdr
+            {
+                source = "ammorandom";
+                weapon = "HMG_127_MBT";
+            };
+            class recoil_source: recoil_source
+            {
+                source = "reload";
+                weapon = "BNA_KC_120_Tankgun";
+            };
+            class commander_gun_recoil: commander_gun_recoil
+            {
+                source = "reload";
+                weapon = "HMG_127_MBT";
+            };
+        };
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                class Turrets: Turrets
+                {
+                    class CommanderOptics: CommanderOptics
+                    {
+                        weapons[] =
+                        {
+                            "BNA_KC_CommanderGun",
+                            "SmokeLauncher"
+                        };
+                        magazines[] =
+                        {
+                            "BNA_KC_100rnd_Coax_Mag",
+                            "BNA_KC_100rnd_Coax_Mag",
+                            "BNA_KC_100rnd_Coax_Mag",
+                            "BNA_KC_100rnd_Coax_Mag",
+                            "SmokeLauncherMag"
+                        };
+                    };
+                };
+
+                // gunBeg = "Usti hlavne";
+                // gunEnd = "Konec hlavne";
+                // memoryPointGun[] = {"usti hlavne3"};
+                weapons[] =
+                {
+                    "BNA_KC_120_Tankgun",
+                    "BNA_KC_Coax"
+                };
+                magazines[] =
+                {
+                    "BNA_KC_120_AT_Mag",
+                    "BNA_KC_120_HEAT_Mag",
+                    "BNA_KC_120_HE_Mag",
+                    "BNA_KC_100rnd_Coax_Mag",
+                    "BNA_KC_100rnd_Coax_Mag",
+                    "BNA_KC_100rnd_Coax_Mag",
+                    "BNA_KC_100rnd_Coax_Mag",
+                    "BNA_KC_100rnd_Coax_Mag"
+                };
+            };
+        };
+
         // Vehicle Inventory
-        maximumLoad = 20000; // Max carrying capacity of the vic
+        maximumLoad = 20000;
 
         class TransportWeapons
         {
@@ -337,10 +368,6 @@ class CfgVehicles
             };
         };
 
-        // Add an extra spare track item
-        // Items added this way do not replace the vehicle's base cargo
-        // ACE by default will add one spare track / wheel (via script)
-        // To fully replace the cargo, use ace_cargo_fnc_removeCargoItem and ace_cargo_fnc_addCargoItem
         class ACE_Cargo
         {
             class Cargo
@@ -349,41 +376,6 @@ class CfgVehicles
                 {
                     type = "ACE_Track";
                     amount = 1;
-                };
-                // Example for adding resupply boxes
-                // class BNA_KC_Resupply_SquadAmmo
-                // {
-                //     type = "BNA_KC_Resupply_SquadAmmo";
-                //     amount = 2;
-                // };
-            };
-        };
-
-        class ACE_SelfActions: ACE_SelfActions
-        {
-            class TFAR_IntercomChannel
-            {
-                displayName = "Intercom Channel";
-                condition = "true";
-                statement = "";
-
-                class TFAR_IntercomChannel_disabled
-                {
-                    displayName = "Disabled";
-                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != -1";
-                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-1,true]";
-                };
-                class TFAR_IntercomChannel_1
-                {
-                    displayName = "Cargo";
-                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
-                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],0,true];";
-                };
-                class TFAR_IntercomChannel_2
-                {
-                    displayName = "Crew";
-                    condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
-                    statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
                 };
             };
         };
