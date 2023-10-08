@@ -29,7 +29,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\OLV20.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\OLV20\Data\Previews\OLV20.jpg";
 
         crew = "BNA_KC_Unit_Phase2_Tanker";
         side = 1;
@@ -50,12 +50,12 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Hull_CamoKC.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Wheels_CamoKC.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa",
+                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Wheels.paa",
+                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Turret.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -65,9 +65,9 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Hull_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Wheels_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoBrown.paa",
+                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Wheels.paa",
+                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Turret.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -77,9 +77,9 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Hull_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Wheels_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoGrey.paa",
+                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoGrey\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoGrey\Wheels.paa",
+                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoGrey\Turret.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
