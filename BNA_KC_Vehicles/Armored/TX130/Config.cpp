@@ -19,15 +19,15 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\Saber_M1.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\TX130\Data\Previews\Saber_M1.jpg";
 
         displayName = "[KC] TX-130 Saber Tank";
         crew = "BNA_KC_Unit_Phase2_Tanker";
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Body.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Weapons.paa"
+            "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\KeeliCompany\Body.paa",
+            "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\KeeliCompany\Weapons.paa"
         };
 
         textureList[] = { "Standard", 0, "Imperial", 0, "KeeliCompany", 1 };
@@ -46,7 +46,6 @@ class CfgVehicles
             };
             class Imperial: Standard
             {
-                author = "Charger";
                 displayName = "Imperial";
                 textures[] =
                 {
@@ -60,8 +59,8 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Body.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Weapons.paa"
+                    "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\KeeliCompany\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\KeeliCompany\Weapons.paa"
                 };
             };
         };
