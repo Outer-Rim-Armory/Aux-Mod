@@ -179,13 +179,13 @@ class CfgVehicles
                 hideOnUse = 1;
                 showWindow = 0;
 
-                condition = QUOTE(isEngineOn this and ace_player == currentPilot this and !isTouchingGround this;);
-                statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
+                condition = QUOTE(isEngineOn this and ace_player == currentPilot this and !isTouchingGround this);
+                statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick);
             };
             class Repulse: Impulse
             {
                 displayName = "Repulse";
-                statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick;);
+                statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick);
             };
 
             class RampOpen: Impulse
@@ -208,8 +208,8 @@ class CfgVehicles
                 displayName = "Load Vehicle (Custom)";
                 displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
 
-                condition = QUOTE(this call BNAKC_fnc_canSpecialLoad;);
-                statement = QUOTE(this call BNAKC_fnc_specialLoad;);
+                condition = QUOTE(this call BNAKC_fnc_canSpecialLoad);
+                statement = QUOTE(this call BNAKC_fnc_specialLoad);
             };
         };
 
