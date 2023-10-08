@@ -8,7 +8,7 @@ class CfgPatches
         requiredAddons[] =
         {
             "A3_Armor_F_Beta_APC_Wheeled_02",
-                // "OLV-20" APC
+                // Otokar
             "BNA_KC_Vehicles_Weapons",
                 // Weapons
             "BNA_KC_Vehicles_Sounds"
