@@ -25,7 +25,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VAviation";
         editorPreview = "\BNA_KC_Vehicles\Air\LAATc\Data\Previews\LAATc.jpg";
 
-        displayName = "[KC] LAAT/c";
+        displayName = "LAAT/c";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 

@@ -27,7 +27,7 @@ class CfgVehicles
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
 
-        displayName = "[KC] LAAT/i (Base)";
+        displayName = "LAAT/i (Base)";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
         side = 1;
@@ -265,7 +265,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] LAAT/i MK1";
+        displayName = "LAAT/i MK1";
         editorPreview = "\BNA_KC_Vehicles\Air\LAATi\Data\Previews\LAATi_MK1.jpg";
 
         class AnimationSources: AnimationSources
@@ -292,7 +292,7 @@ class CfgVehicles
     };
     class BNA_KC_LAATi_MK1_Lamps: BNA_KC_LAATi_MK1
     {
-        displayName = "[KC] LAAT/i MK1 (Lamps)";
+        displayName = "LAAT/i MK1 (Lamps)";
         editorPreview = "\BNA_KC_Vehicles\Air\LAATi\Data\Previews\LAATi_MK1_Lamps.jpg";
         class AnimationSources: AnimationSources
         {
@@ -313,7 +313,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] LAAT/i MK2";
+        displayName = "LAAT/i MK2";
         editorPreview = "\BNA_KC_Vehicles\Air\LAATi\Data\Previews\LAATi_MK2.jpg";
 
         class AnimationSources: AnimationSources
@@ -340,7 +340,7 @@ class CfgVehicles
     };
     class BNA_KC_LAATi_MK2_Lamps: BNA_KC_LAATi_MK2
     {
-        displayName = "[KC] LAAT/i MK2 (Lamps)";
+        displayName = "LAAT/i MK2 (Lamps)";
         editorPreview = "\BNA_KC_Vehicles\Air\LAATi\Data\Previews\LAATi_MK2_Lamps.jpg";
         class AnimationSources: AnimationSources
         {
