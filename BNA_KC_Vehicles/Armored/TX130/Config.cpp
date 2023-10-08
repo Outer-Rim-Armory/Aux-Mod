@@ -14,7 +14,6 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -23,6 +22,7 @@ class CfgVehicles
 
         displayName = "TX-130 Saber Tank";
         crew = "BNA_KC_Unit_Phase2_Tanker";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
 
         hiddenSelectionsTextures[] =
         {
