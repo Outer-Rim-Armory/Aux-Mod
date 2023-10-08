@@ -4,18 +4,9 @@
 
 class CfgVehicles
 {
-    class Heli_Attack_01_base_F;
-    class B_Heli_Attack_01_base_F: Heli_Attack_01_base_F
-    {
-        class UserActions;
-    };
+    class B_Heli_Attack_01_base_F;
     class 3as_laat_Base: B_Heli_Attack_01_base_F
     {
-        class UserActions: UserActions
-        {
-            class impulseOn;
-            class impulseOff;
-        };
         class ACE_SelfActions;
 
         class pilotCamera;
@@ -175,29 +166,29 @@ class CfgVehicles
             ace_missileguidance_usePilotCameraForTargeting = 1;
         };
 
-        class UserActions: UserActions
+        class UserActions
         {
-            class impulseOn: impulseOn
+            class Impulse
             {
                 displayName = "Impulse";
                 position = "pilotview";
                 radius = 5;
+                priority = 9;
 
-                shortcut = "User19";
                 onlyforplayer = 0;
                 hideOnUse = 1;
+                showWindow = 0;
 
                 condition = QUOTE(isEngineOn this and ace_player == currentPilot this and !isTouchingGround this;);
                 statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
             };
-            class impulseOff: impulseOn
+            class Repulse: Impulse
             {
                 displayName = "Repulse";
-                shortcut = "User20";
                 statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick;);
             };
 
-            class SpecialLoadVehicle: impulseOn
+            class SpecialLoadVehicle: Impulse
             {
                 // Special action used for vehicles that are not fully compatible with ViV (vehicle-in-vehicle)
                 // Notably used for 3AS's AT-TE
