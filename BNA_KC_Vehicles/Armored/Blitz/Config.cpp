@@ -86,17 +86,17 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\Blitz.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Blitz\Data\Previews\Blitz.jpg";
 
         displayName = "[KC] Blitz Assault Tank";
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 
 		hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Body.paa",
-            "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Tow.paa",
-            "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Addons.paa",
-            "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Camonet.paa"
+            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Body.paa",
+            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Tow.paa",
+            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Addons.paa",
+            "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
         };
 
         textureList[] = {"KeeliCompany", 1, "WhiteRed", 0, "CamoGrey", 0};
@@ -109,10 +109,10 @@ class CfgVehicles
                 factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Body.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Tow.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\KeeliCompany\KC_Addons.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Camonet.paa"
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
                 };
             };
             class WhiteRed: KeeliCompany
@@ -120,10 +120,10 @@ class CfgVehicles
                 displayName = "White and Red";
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Body.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Tow.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Addons.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Camonet.paa"
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
                 };
             };
             class CamoGrey: KeeliCompany
@@ -131,10 +131,10 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\CamoGrey\Grey_Body.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\CamoGrey\Grey_Tow.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\CamoGrey\Grey_Addons.paa",
-                    "\BNA_KC_Vehicles\Armored\Data\Textures\Blitz\WhiteRed\WR_Camonet.paa"
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\CamoGrey\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\CamoGrey\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\CamoGrey\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\WhiteRed\Camonet.paa"
                 };
             };
         };
