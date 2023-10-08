@@ -17,4 +17,5 @@ class CfgPatches
         addonRootClass = "BNA_KC_Vehicles";
     };
     class BNA_KC_Vehicles_Aviation: BNA_KC_Gear_Weapons {};
+    class BNA_KC_Vehicles_Static: BNA_KC_Gear_Weapons {};
 };
