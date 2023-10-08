@@ -9,9 +9,9 @@ class CfgVehicles
     {
         class ACE_SelfActions;
 
-        class pilotCamera;
         class AnimationSources;
         class Turrets;
+        class pilotCamera;
     };
     class BNA_KC_LAATi_Base: 3as_laat_Base
     {
@@ -164,19 +164,9 @@ class CfgVehicles
             };
         };
 
-        class pilotCamera: pilotCamera
+        class ACE_SelfActions: ACE_SelfActions
         {
-            initTurn = 0;   // Initial states
-            initElev = -10;
-            maxTurn = 180;  // Turn radius
-            minTurn = -180;
-            maxElev = 90;   // Elevation (how far up/down)
-            minElev = -10;
-
-            maxXRotSpeed = 0.3;
-            maxYRotSpeed = 0.3;
-
-            ace_missileguidance_usePilotCameraForTargeting = 1;
+            HUD_CHANGER
         };
 
         class UserActions
@@ -226,12 +216,6 @@ class CfgVehicles
             };
         };
 
-        class ACE_SelfActions: ACE_SelfActions
-        {
-            HUD_CHANGER
-        };
-
-        // Animations
         class AnimationSources: AnimationSources
         {
             class Doors
@@ -253,6 +237,7 @@ class CfgVehicles
                 animPeriod = 1;
             };
         };
+
         class Turrets: Turrets
         {
             class MainTurret;
@@ -265,6 +250,21 @@ class CfgVehicles
             class CargoTurret_04;
             class CargoTurret_05;
             class CargoTurret_06;
+        };
+
+        class pilotCamera: pilotCamera
+        {
+            initTurn = 0;   // Initial states
+            initElev = -10;
+            maxTurn = 180;  // Turn radius
+            minTurn = -180;
+            maxElev = 90;   // Elevation (how far up/down)
+            minElev = -10;
+
+            maxXRotSpeed = 0.3;
+            maxYRotSpeed = 0.3;
+
+            ace_missileguidance_usePilotCameraForTargeting = 1;
         };
     };
 
