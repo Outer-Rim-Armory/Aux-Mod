@@ -37,32 +37,10 @@ class CfgVehicles
 
         armor = 600;
 
-        soundEngineOnInt[] =
-        {
-            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup",
-            0.79432821,
-            1
-        };
-        soundEngineOffInt[] =
-        {
-            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCShutdown.wss",
-            0.79432821,
-            1
-        };
-        soundEngineOnExt[] =
-        {
-            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup",
-            1,
-            1,
-            100
-        };
-        soundEngineOffExt[] =
-        {
-            "BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCShutdown.wss",
-            1,
-            1,
-            100
-        };
+        soundEngineOnInt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup", 0.79432821, 1};
+        soundEngineOffInt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCShutdown.wss", 0.79432821, 1};
+        soundEngineOnExt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup", 1, 1, 100};
+        soundEngineOffExt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCShutdown.wss", 1, 1, 10};
         class Sounds
         {
             soundSetsInt[] =
