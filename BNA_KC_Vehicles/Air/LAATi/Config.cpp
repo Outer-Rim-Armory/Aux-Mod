@@ -30,7 +30,6 @@ class CfgVehicles
         displayName = "LAAT/i (Base)";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
-        side = 1;
 
         // Armor and fuel
         armor = 200;
