@@ -11,6 +11,7 @@ class CfgPatches
         };
         units[] =
         {
+            "BNA_KC_TX130_M1",
             "BNA_KC_Saber_M1"
         };
         weapons[] = {};
