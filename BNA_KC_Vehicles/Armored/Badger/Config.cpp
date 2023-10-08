@@ -138,8 +138,24 @@ class CfgVehicles
             "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
         };
 
-        textureList[] = {};
-        class TextureSources {};
+        textureList[] = {"Standard", 1};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "???";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+                };
+            };
+        };
 
         class Turrets: Turrets
         {
