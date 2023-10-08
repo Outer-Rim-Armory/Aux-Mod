@@ -4,73 +4,40 @@
 
 class CfgVehicles
 {
-    class All
-    {
-        class AnimationSources {};
-    };
-    class AllVehicles: All
-    {
-        class NewTurret {};
-    };
-    class Land: AllVehicles {};
-    class LandVehicle: Land
-    {
-        class CommanderOptics: NewTurret {};
-    };
-    class Tank: LandVehicle {};
+    class Tank;
     class Tank_F: Tank
     {
         class Turrets
         {
-            class MainTurret: NewTurret
-            {
-                class Turrets
-                {
-                    class CommanderOptics: CommanderOptics {};
-                };
-            };
+            class MainTurret;
         };
     };
     class MBT_01_base_F: Tank_F
     {
-        class AnimationSources: AnimationSources {};
         class Turrets: Turrets
         {
             class MainTurret: MainTurret
             {
-                class Turrets: Turrets
-                {
-                    class CommanderOptics: CommanderOptics {};
-                };
+                class Turrets;
             };
         };
     };
     class B_MBT_01_base_F: MBT_01_base_F {};
-    class B_MBT_01_cannon_F: B_MBT_01_base_F
-    {
-        class AnimationSources: AnimationSources {};
-    };
+    class B_MBT_01_cannon_F: B_MBT_01_base_F {};
     class B_MBT_01_TUSK_F: B_MBT_01_cannon_F
     {
-        class AnimationSources: AnimationSources
-        {
-            class muzzle_hide_cannon;
-            class muzzle_rot_cannon;
-            class muzzle_rot_cmdr;
-            class recoil_source;
-            class commander_gun_recoil;
-        };
+        class ACE_SelfActions;
+        class AnimationSources;
         class Turrets: Turrets
         {
             class MainTurret: MainTurret
             {
                 class Turrets: Turrets
                 {
-                    class CommanderOptics: CommanderOptics {};
+                    class CommanderOptics;
                 };
             };
         };
-        class ACE_SelfActions;
     };
     class BNA_KC_Blitz: B_MBT_01_TUSK_F
     {
@@ -244,27 +211,27 @@ class CfgVehicles
 
         class AnimationSources: AnimationSources
         {
-            class muzzle_hide_cannon: muzzle_hide_cannon
+            class muzzle_hide_cannon
             {
                 source = "reload";
                 weapon = "BNA_KC_120_Tankgun";
             };
-            class muzzle_rot_cannon: muzzle_rot_cannon
+            class muzzle_rot_cannon
             {
                 source = "ammorandom";
                 weapon = "BNA_KC_120_Tankgun";
             };
-            class muzzle_rot_cmdr: muzzle_rot_cmdr
+            class muzzle_rot_cmdr
             {
                 source = "ammorandom";
                 weapon = "HMG_127_MBT";
             };
-            class recoil_source: recoil_source
+            class recoil_source
             {
                 source = "reload";
                 weapon = "BNA_KC_120_Tankgun";
             };
-            class commander_gun_recoil: commander_gun_recoil
+            class commander_gun_recoil
             {
                 source = "reload";
                 weapon = "HMG_127_MBT";
