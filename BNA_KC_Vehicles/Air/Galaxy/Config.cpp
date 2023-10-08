@@ -36,7 +36,7 @@ class CfgVehicles
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
 
-        displayName = "[KC] Galaxy HAG";
+        displayName = "Galaxy HAG";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
@@ -98,7 +98,7 @@ class CfgVehicles
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
 
-        displayName = "[KC] Galaxy HVT";
+        displayName = "Galaxy HVT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
@@ -133,7 +133,7 @@ class CfgVehicles
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
 
-        displayName = "[KC] Galaxy HIT";
+        displayName = "Galaxy HIT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
