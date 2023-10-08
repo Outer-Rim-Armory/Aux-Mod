@@ -9,7 +9,7 @@ class CfgVehicles
     {
         class ACE_SelfActions;
     };
-    class BNA_KC_RepubTransport: 3AS_Republic_Transport_01
+    class BNA_KC_RepublicTransport: 3AS_Republic_Transport_01
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -77,5 +77,11 @@ class CfgVehicles
         {
             HUD_CHANGER
         };
+    };
+
+    class BNA_KC_RepubTransport: BNA_KC_RepublicTransport
+    {
+        scope = 1;
+        scopeCurator = 1;
     };
 };

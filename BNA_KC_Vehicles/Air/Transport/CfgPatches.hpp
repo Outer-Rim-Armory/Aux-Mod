@@ -7,6 +7,7 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_RepublicTransport",
             "BNA_KC_RepubTransport"
         };
         weapons[] = {};
