@@ -18,7 +18,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\TX130\Data\Previews\Saber_M1.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\TX130\Data\Previews\TX130_M1.jpg";
 
         displayName = "TX-130 Saber Tank";
         crew = "BNA_KC_Unit_Phase2_Tanker";
