@@ -91,11 +91,10 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Tanker";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
 
-        //soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\armor\MBT_01\MBT_01_Engine_Ext_Stop",6.30957,1,100};
-        soundEngineOffExt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineShutdown",30,1,100};
-        soundEngineOffInt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineShutdown",1,1};
-        soundEngineOnExt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineStartup",30,1,100};
-        soundEngineOnInt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineStartup",1,1};
+        soundEngineOffExt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineShutdown.wss", 30, 1, 100};
+        soundEngineOffInt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineShutdown.wss", 1, 1};
+        soundEngineOnExt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineStartup.wss", 30, 1, 100};
+        soundEngineOnInt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineStartup.wss", 1, 1};
         class Sounds
         {
             soundSetsInt[] =
