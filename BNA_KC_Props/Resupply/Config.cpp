@@ -36,17 +36,17 @@ class CfgVehicles
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_SubCat_Resupply";
-        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\BNA_KC_Resupply_Base.jpg";
+        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\Resupply_Base.jpg";
         side = 3;
     };
 
     class BNA_KC_Resupply_SquadAmmo: BNA_KC_Resupply_Base
     {
         displayName = "Ammo Crate (Squad)";
-        hiddenSelections[] = { "camo1" };
-        hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat" };
-        hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa" };
-        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\BNA_KC_Resupply_Ammo.jpg";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\Resupply_Ammo.jpg";
 
         class TransportMagazines
         {
@@ -161,10 +161,10 @@ class CfgVehicles
     class BNA_KC_Resupply_SquadMedical: BNA_KC_Resupply_Base
     {
         displayName = "Medical Crate (Squad)";
-        hiddenSelections[] = { "camo1" };
-        hiddenSelectionsMaterials[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat" };
-        hiddenSelectionsTextures[] = { "3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa" };
-        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\BNA_KC_Resupply_Medical.jpg";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"};
+        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\Resupply_Medical.jpg";
 
         class TransportItems
         {
@@ -241,14 +241,11 @@ class CfgVehicles
         ace_dragging_canDrag = 0;
         ace_dragging_canCarry = 0;
 
-        model = "A3\Structures_F\Items\Vessels\WaterTank_F.p3d";
-        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\BNA_KC_Resupply_JetpackFuel.jpg";
+        model = "\A3\Structures_F\Items\Vessels\WaterTank_F.p3d";
+        editorPreview = "\BNA_KC_Props\Resupply\Data\Textures\Previews\Resupply_JetpackFuel.jpg";
         hiddenSelections[] = {};
         hiddenSelectionsMaterials[] = {};
         hiddenSelectionsTextures[] = {};
-
-        // Editor Attributes
-        editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WaterTank_F.jpg";
 
         // Removes the "Rename" action and locks the inventory
         class EventHandlers: EventHandlers

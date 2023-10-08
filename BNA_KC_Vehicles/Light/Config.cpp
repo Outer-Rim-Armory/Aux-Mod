@@ -68,9 +68,9 @@ class TransportItems \
 
 #define HORNET_TEXTURES() hiddenSelectionsTextures[] = \
 { \
-    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Brown.paa", \
-    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
-    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
+    "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Body_CamoBrown.paa", \
+    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
+    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
 }; \
 textureList[] = {"BrownCamo", 1, "GreyCamo", 0}; \
 class TextureSources \
@@ -79,12 +79,12 @@ class TextureSources \
     { \
         author = "SweMonkey and DartRuffian"; \
         displayName = "KC Brown Camo"; \
-        factions[] = { "BNA_KC_Faction" }; \
+        factions[] = {"BNA_KC_Faction"}; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Brown.paa", \
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Body_CamoBrown.paa", \
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
         }; \
     }; \
     class GreyCamo: BrownCamo \
@@ -92,58 +92,58 @@ class TextureSources \
         displayName = "Grey Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Grey.paa", \
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Body_CamoGrey.paa", \
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
         }; \
     }; \
 };
 
 
 #define GLAVENUS_TEXTURES() hiddenSelectionsTextures[] = {}; \
-textureList[] = {"BrownWhite", 1, "CamoKC", 0, "BrownCamo", 0, "GreyCamo", 0}; \
+textureList[] = {"KeeliCompany", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0}; \
 class TextureSources \
 { \
-    class BrownWhite \
+    class KeeliCompany \
     { \
         author = "SweMonkey and DartRuffian"; \
-        displayName = "Brown/White"; \
-        factions[] = { "BNA_KC_Faction" }; \
+        displayName = "Keeli Company"; \
+        factions[] = {"BNA_KC_Faction"}; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Turret.paa" \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\KeeliCompany\Glavenus_Body.paa", \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\KeeliCompany\Glavenus_Body2.paa", \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\KeeliCompany\Glavenus_Turret.paa" \
         }; \
     }; \
-    class CamoKC: BrownWhite \
+    class CamoKC: KeeliCompany \
     { \
         displayName = "Keeli Company Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_CamoKC.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_CamoKC.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa" \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoKC\Glavenus_Body.paa", \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoKC\Glavenus_Body2.paa", \
+            "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoKC\OLV20_Turret.paa" \
         }; \
     }; \
-    class BrownCamo: BrownWhite \
+    class CamoBrown: KeeliCompany \
     { \
         displayName = "Brown Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_CamoBrown.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_CamoBrown.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoBrown.paa" \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoBrown\Glavenus_Body.paa", \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoBrown\Glavenus_Body2.paa", \
+            "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoBrown\OLV20_Turret.paa" \
         }; \
     }; \
-    class GreyCamo: BrownWhite \
+    class CamoGrey: KeeliCompany \
     { \
         displayName = "Grey Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_CamoGrey.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_CamoGrey.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoGrey.paa" \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoGrey\Glavenus_Body.paa", \
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\CamoGrey\Glavenus_Body2.paa", \
+            "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoGrey\OLV20_Turret.paa" \
         }; \
     }; \
 };
@@ -272,8 +272,8 @@ class CfgVehicles
         class EventHandlers;
     };
     class BNA_KC_ATRT: 3AS_ATRT
-	{
-		// Mod Info
+    {
+        // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
@@ -290,8 +290,8 @@ class CfgVehicles
         nakedUniform = "BNA_KC_Uniform_ATRT";
         impactEffectsBlood = "ImpactMetal";
 
-        weapons[] = { "BNA_KC_ATRT_Turret" };
-        magazines[] = { "BNA_KC_9999Rnd_ATRT_Turret_Magazine" };
+        weapons[] = {"BNA_KC_ATRT_Turret"};
+        magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
 
         allowedfacewear[] = {""};
         allowedHeadgear[] = {""};
@@ -299,11 +299,11 @@ class CfgVehicles
         headgearList[] = {""};
         identityTypes[] = {"LanguageENG_F", "Head_NATO", "Head_Euro"};
 
-		// Textures are not set-up on the 3AS end yet.
-		// hiddenSelectionsTextures[] =
-		// {
-		// 	"BNA_KC_Vehicles\Light\Data\Textures\ATRT\BNA_KC_ATRT.paa"
-		// };
+        // Textures are not set-up on the 3AS end yet.
+        // hiddenSelectionsTextures[] =
+        // {
+        // 	"\BNA_KC_Vehicles\Light\Data\Textures\ATRT\BNA_KC_ATRT.paa"
+        // };
         class EventHandlers
         {
             init = "";
@@ -317,7 +317,7 @@ class CfgVehicles
                 BNA_KC_SpecialLoad = 1;
             };
         };
-	};
+    };
     */
 
     class O_LSV_02_unarmed_F;
@@ -375,10 +375,10 @@ class CfgVehicles
         };
         class AnimationSources: AnimationSources
         {
-			class Minigun {};
+            class Minigun {};
             class muzzle_hide {};
             class muzzle_rot {};
-		};
+        };
     };
     class LSV_02_armed_base_F: LSV_02_base_F
     {
@@ -420,7 +420,7 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                weapons[] = { "BNA_KC_Mounted_MG" };
+                weapons[] = {"BNA_KC_Mounted_MG"};
                 magazines[] =
                 {
                     "BNA_KC_1000rnd_Coax_Mag",
@@ -472,7 +472,7 @@ class CfgVehicles
             class VoronaMuzzle_rot {};
         };
     };
-	class O_LSV_02_AT_F: LSV_02_AT_base_F {};
+    class O_LSV_02_AT_F: LSV_02_AT_base_F {};
     class BNA_KC_Hornet_AT: O_LSV_02_AT_F
     {
         // Mod Info
@@ -498,11 +498,11 @@ class CfgVehicles
         // The launcher model adds two more hiddenSelections, meaning the normal macro would require extra editing
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa",
-            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa"
+            "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Body_CamoBrown.paa",
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+            "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Launcher.paa",
+            "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Launcher.paa"
         };
         class TextureSources
         {
@@ -510,14 +510,14 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "KC Brown Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
-                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa",
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa"
+                    "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Body_CamoBrown.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+                    "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Launcher.paa",
+                    "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Launcher.paa"
                 };
             };
             class GreyCamo: BrownCamo
@@ -525,31 +525,31 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Grey.paa",
-                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa",
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa"
+                    "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Body_CamoGrey.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+                    "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Launcher.paa",
+                    "\BNA_KC_Vehicles\Light\Data\Textures\Hornet\Launcher.paa"
                 };
             };
         };
 
         class Turrets: Turrets
         {
-			class MainTurret: MainTurret
+            class MainTurret: MainTurret
             {
-                weapons[] = { "BNA_KC_Mounted_MissileLauncher" };
+                weapons[] = {"BNA_KC_Mounted_MissileLauncher"};
             };
             class CargoTurret_01: CargoTurret_01 {};
             class CargoTurret_02: CargoTurret_02 {};
             class CargoTurret_03: CargoTurret_03 {};
             class CargoTurret_04: CargoTurret_04 {};
             class CargoTurret_05: CargoTurret_05 {};
-		};
+        };
 
         class AnimationSources: AnimationSources
         {
-			class VoronaMuzzle_reload: VoronaMuzzle_reload
+            class VoronaMuzzle_reload: VoronaMuzzle_reload
             {
                 weapon = "BNA_KC_Mounted_MissileLauncher";
             };
@@ -565,7 +565,7 @@ class CfgVehicles
             {
                 weapon = "BNA_KC_Mounted_MissileLauncher";
             };
-		};
+        };
     };
 
 
@@ -593,7 +593,7 @@ class CfgVehicles
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
 
-        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
     };
 
     class BNA_KC_Glavenus_Medic: BNA_KC_Glavenus_Unarmed
@@ -605,14 +605,14 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_Medic.paa",
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_Medic.paa",
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\Medic\Glavenus_Body.paa",
+            "\BNA_KC_Vehicles\Light\Data\Textures\Glavenus\Medic\Glavenus_Body2.paa",
             ""
         };
         textureList[] = {};
         class TextureSources {};
 
-        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
         class TransportWeapons {};
         class TransportItems
@@ -726,7 +726,7 @@ class CfgVehicles
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
 
-        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
     };
 
     class MRAP_02_base_F;
@@ -764,13 +764,13 @@ class CfgVehicles
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
 
-        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
         class Turrets: Turrets
         {
             class MainTurret: MainTurret
             {
-                weapons[] = { "BNA_KC_Coax" };
+                weapons[] = {"BNA_KC_Coax"};
                 magazines[] =
                 {
                     "BNA_KC_1000rnd_Coax_Mag",
@@ -786,13 +786,13 @@ class CfgVehicles
 class CfgEditorSubcategories
 {
     class BNA_KC_SubCat_VLight
-	{
-		dlc = "BNA_KC";
-		author = "SweMonkey and DartRuffian";
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "Vehicles - Light";
-	};
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Vehicles - Light";
+    };
 };
 
 

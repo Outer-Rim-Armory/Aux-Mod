@@ -214,10 +214,10 @@ class CfgVehicles
 			};
 		};
 		//soundEngineOffExt[] = {"A3\Sounds_F\vehicles2\armor\MBT_01\MBT_01_Engine_Ext_Stop",6.30957,1,100};
-		soundEngineOffExt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineShutdown",30,1,100};
-		soundEngineOffInt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineShutdown",1,1};
-		soundEngineOnExt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineStartup",30,1,100};
-		soundEngineOnInt[] = {"BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineStartup",1,1};
+		soundEngineOffExt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineShutdown",30,1,100};
+		soundEngineOffInt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineShutdown",1,1};
+		soundEngineOnExt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineStartup",30,1,100};
+		soundEngineOnInt[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankEngineStartup",1,1};
 		class Sounds
 		{
 			soundSetsInt[] =
@@ -452,34 +452,34 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Body.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Addons.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Tows.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Camonet_Desert.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_CageSand.paa"
+			"\BNA_KC_Vehicles\Armored\Data\Textures\Badger\Badger_Body.paa",
+			"\BNA_KC_Vehicles\Armored\Data\Textures\Badger\Badger_Addons.paa",
+			"\BNA_KC_Vehicles\Armored\Data\Textures\Badger\Badger_Tows.paa",
+			"\BNA_KC_Vehicles\Armored\Data\Textures\Badger\Badger_Camonet_Desert.paa",
+			"\BNA_KC_Vehicles\Armored\Data\Textures\Badger\Badger_CageSand.paa"
 		};
 		soundEngineOnInt[] =
 		{
-			"BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup",
+			"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup",
 			0.79432821,
 			1
 		};
 		soundEngineOffInt[] =
 		{
-			"BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCShutdown.wss",
+			"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCShutdown.wss",
 			0.79432821,
 			1
 		};
 		soundEngineOnExt[] =
 		{
-			"BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup",
+			"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup",
 			1,
 			1,
 			100
 		};
 		soundEngineOffExt[] =
 		{
-			"BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCShutdown.wss",
+			"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCShutdown.wss",
 			1,
 			1,
 			100
@@ -598,12 +598,12 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Hull_CamoKC.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Wheels_CamoKC.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoKC\OLV20_Hull.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoKC\OLV20_Wheels.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoKC\OLV20_Turret.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -613,9 +613,9 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Hull_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Wheels_CamoBrown.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoBrown.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoBrown\OLV20_Hull.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoBrown\OLV20_Wheels.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoBrown\OLV20_Turret.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -625,9 +625,9 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Hull_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Wheels_CamoGrey.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoGrey.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoGrey\OLV20_Hull.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoGrey\OLV20_Wheels.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoGrey\OLV20_Turret.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -709,22 +709,22 @@ class CfgVehicles
 
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Body.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Weapons.paa"
+			"\BNA_KC_Vehicles\Armored\Data\Textures\Saber\Saber_Body.paa",
+			"\BNA_KC_Vehicles\Armored\Data\Textures\Saber\Saber_Weapons.paa"
 		};
 
-        textureList[] = { "Standard", 0, "Imperial", 0, "KeeliCompany", 1 };
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1};
         class TextureSources
         {
             class Standard
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "3as\3as_saber\data\saber_hull_co.paa",
-                    "3as\3as_saber\data\saber_weapons_co.paa"
+                    "\3as\3as_saber\data\saber_hull_co.paa",
+                    "\3as\3as_saber\data\saber_weapons_co.paa"
                 };
             };
             class Imperial: Standard
@@ -733,8 +733,8 @@ class CfgVehicles
                 displayName = "Imperial";
                 textures[] =
                 {
-                    "3AS\3as_saber\data\saber_Imp_hull_co.paa",
-                    "3AS\3as_saber\data\saber_Imp_weapons_co.paa"
+                    "\3AS\3as_saber\data\saber_Imp_hull_co.paa",
+                    "\3AS\3as_saber\data\saber_Imp_weapons_co.paa"
                 };
             };
             class KeeliCompany: Standard
@@ -743,8 +743,8 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Body.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\Saber\BNA_KC_Saber_Weapons.paa"
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Saber\Saber_Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\Saber\Saber_Weapons.paa"
                 };
             };
         };
@@ -770,30 +770,30 @@ class CfgVehicles
 		crew = "BNA_KC_Unit_Phase2_Tanker";
 		hiddenSelectionsTextures[] =
 		{
-			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Body.paa",
-			"3as\3as_atte\data\atte_chasis_co.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Cockpit.paa",
-			"BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Turrets.paa",
-			"3as\3as_atte\data\atte_underpiping_co.paa",
-			"3as\3as_atte\data\atte_middleleg_co.paa"
+			"\BNA_KC_Vehicles\Armored\Data\Textures\ATTE\ATTE_Body.paa",
+			"\3as\3as_atte\data\atte_chasis_co.paa",
+			"\BNA_KC_Vehicles\Armored\Data\Textures\ATTE\ATTE_Cockpit.paa",
+			"\BNA_KC_Vehicles\Armored\Data\Textures\ATTE\ATTE_Turrets.paa",
+			"\3as\3as_atte\data\atte_underpiping_co.paa",
+			"\3as\3as_atte\data\atte_middleleg_co.paa"
 		};
 
-        textureList[] = { "Standard", 0, "Imperial", "KeeliCompany", 1 };
+        textureList[] = {"Standard", 0, "Imperial", "KeeliCompany", 1};
         class TextureSources
         {
             class Standard
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "3as\3as_atte\data\atte_hull_TCW_co.paa",
-                    "3as\3as_atte\data\atte_chasis_co.paa",
-                    "3as\3as_atte\data\atte_cockpit_TCW_co.paa",
-                    "3as\3as_atte\data\atte_turrets_TCW_co.paa",
-                    "3as\3as_atte\data\atte_underpiping_co.paa",
-                    "3as\3as_atte\data\atte_middleleg_TCW_co.paa"
+                    "\3as\3as_atte\data\atte_hull_TCW_co.paa",
+                    "\3as\3as_atte\data\atte_chasis_co.paa",
+                    "\3as\3as_atte\data\atte_cockpit_TCW_co.paa",
+                    "\3as\3as_atte\data\atte_turrets_TCW_co.paa",
+                    "\3as\3as_atte\data\atte_underpiping_co.paa",
+                    "\3as\3as_atte\data\atte_middleleg_TCW_co.paa"
                 };
             };
             class Imperial: Standard
@@ -801,12 +801,12 @@ class CfgVehicles
                 displayName = "Imperial";
                 textures[] =
                 {
-                    "3as\3as_atte\data\atte_hull_Imp_co.paa",
-                    "3as\3as_atte\data\atte_chasis_co.paa",
-                    "3as\3as_atte\data\atte_cockpit_Imp_co.paa",
-                    "3as\3as_atte\data\atte_turrets_Imp_co.paa",
-                    "3as\3as_atte\data\atte_underpiping_co.paa",
-                    "3as\3as_atte\data\atte_middleleg_Imp_co.paa"
+                    "\3as\3as_atte\data\atte_hull_Imp_co.paa",
+                    "\3as\3as_atte\data\atte_chasis_co.paa",
+                    "\3as\3as_atte\data\atte_cockpit_Imp_co.paa",
+                    "\3as\3as_atte\data\atte_turrets_Imp_co.paa",
+                    "\3as\3as_atte\data\atte_underpiping_co.paa",
+                    "\3as\3as_atte\data\atte_middleleg_Imp_co.paa"
                 };
             };
             class KeeliCompany: Standard
@@ -815,12 +815,12 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Body.paa",
-                    "3as\3as_atte\data\atte_chasis_co.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Cockpit.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Turrets.paa",
-                    "3as\3as_atte\data\atte_underpiping_co.paa",
-                    "3as\3as_atte\data\atte_middleleg_co.paa"
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Body.paa",
+                    "\3as\3as_atte\data\atte_chasis_co.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Cockpit.paa",
+                    "\BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Turrets.paa",
+                    "\3as\3as_atte\data\atte_underpiping_co.paa",
+                    "\3as\3as_atte\data\atte_middleleg_co.paa"
                 };
             };
         };
@@ -904,7 +904,7 @@ class CfgVehicles
                 parachuteClass = B_Parachute_02_F;
                 parachuteHeightLimit = 40;
                 canBeTransported = 1;
-                dimensions[] = { "ftr_muzzle", "btl_muzzle" };
+                dimensions[] = {"ftr_muzzle", "btl_muzzle"};
 
                 BNA_KC_SpecialLoad = 1; // The standard "Load Vehicle" option doesn't appear, requiring a custom script to work
             };

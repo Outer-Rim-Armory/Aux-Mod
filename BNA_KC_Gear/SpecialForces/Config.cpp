@@ -18,19 +18,19 @@ class CfgWeapons
 
         displayName = "[KC] SF ARC Helm";
 
-        model = "lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
+        model = "\lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
         hiddenSelections[] = {"camo1", "visor", "illum"};
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\Helmet_ARC.paa",
-            "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARC.paa",
+            "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
         };
         picture = "\lsd_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo1", "visor"};
-            uniformModel = "lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
+            uniformModel = "\lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
         };
     };
     class BNA_KC_Helmet_ARC_CamoBrown: BNA_KC_Helmet_ARC
@@ -38,8 +38,8 @@ class CfgWeapons
         displayName = "[KC] SF ARC Helm - Brown Camo";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\Helmet_ARC_CamoBrown.paa",
-            "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARC_CamoBrown.paa",
+            "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
         };
     };
     class BNA_KC_Helmet_ARC_CamoGrey: BNA_KC_Helmet_ARC
@@ -47,8 +47,8 @@ class CfgWeapons
         displayName = "[KC] SF ARC Helm - Grey Camo";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\Helmet_ARC_CamoGrey.paa",
-            "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARC_CamoGrey.paa",
+            "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
         };
     };
 
@@ -57,8 +57,8 @@ class CfgWeapons
         displayName = "[KC] SF ARC Helm (v2)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC_v2.paa",
-            "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARC_v2.paa",
+            "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
         };
     };
 
@@ -67,8 +67,8 @@ class CfgWeapons
         displayName = "[KC] SF ARC Helm (Night)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARC_Night.paa",
-            "lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARC_Night.paa",
+            "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
         };
     };
 
@@ -80,20 +80,20 @@ class CfgWeapons
 
         displayName = "[KC] SF ARF 01 Helm (Enlisted)";
 
-        model = "ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+        model = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
         hiddenSelections[] = {"camo1", "camo2", "visor"};
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARF.paa", // Main Helmet
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARF.paa", // Main Helmet
             "", // Flaps
-            "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa" // Visor
+            "\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa" // Visor
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_arf_p1_ca.paa";
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo1", "camo2", "visor"};
-            uniformModel = "ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
+            uniformModel = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
         };
 
         subItems[] = {"BNA_KC_NVG_Chip"};
@@ -103,9 +103,9 @@ class CfgWeapons
         displayName = "[KC] SF ARF 01 Helm (Enlisted) - Brown Camo";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\Helmet_ARF_CamoBrown.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARF_CamoBrown.paa",
             "",
-            "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+            "\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
         };
     };
     class BNA_KC_Helmet_ARF_CamoGrey: BNA_KC_Helmet_ARF
@@ -113,9 +113,9 @@ class CfgWeapons
         displayName = "[KC] SF ARF 01 Helm (Enlisted) - Grey Camo";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\Helmet_ARF_CamoGrey.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARF_CamoGrey.paa",
             "",
-            "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+            "\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
         };
     };
 
@@ -124,9 +124,9 @@ class CfgWeapons
         displayName = "[KC] SF ARF 01 Helm (Enlisted, v2)";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_ARF_v2.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARF_v2.paa",
             "",
-            "ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+            "\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
         };
     };
 
@@ -138,19 +138,19 @@ class CfgWeapons
 
         displayName = "[KC] SF BARC Helm";
 
-        model = "ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
+        model = "\ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
         hiddenSelections[] = {"camo1", "visor"};
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Helmets\BNA_KC_Helmet_BARC.paa",
-            "ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_BARC.paa",
+            "\ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_barc_ca.paa";
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo1", "visor"};
-            uniformModel = "ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
+            uniformModel = "\ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
         };
     };
 
@@ -203,19 +203,19 @@ class CfgWeapons
     {
         displayName = "[KC] SF ARC Vest";
 
-        model = "SWLB_clones\SWLB_clone_arc_armor.p3d";
+        model = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Vests\BNA_KC_Vest_ARC_Chest.paa",
-            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\Vest_ARC_Chest.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo1", "camo2"};
-            uniformModel = "SWLB_clones\SWLB_clone_arc_armor.p3d";
+            uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
             containerClass = "Supply200";
 
             class HitpointsProtectionInfo
@@ -247,7 +247,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
         {
             "",
-            "BNA_KC_Gear\Infantry\Data\Vests\BNA_KC_Vest_Officer.paa"
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
         };
     };
 };
@@ -263,14 +263,14 @@ class CfgVehicles
     {
         displayName = "[KC] SF ARC Trooper";
         editorSubcategory = "BNA_KC_SF";
-        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARC.jpg";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Textures\Previews\ARC.jpg";
 
         uniformClass = "BNA_KC_Uniform_ARC";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\Uniform_ARC_Upper.paa",
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\Uniform_ARC_Lower.paa",
-            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Upper.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Lower.paa",
+            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
 
         linkedItems[] =
@@ -287,14 +287,14 @@ class CfgVehicles
     class BNA_KC_Unit_ARC_Night: BNA_KC_Unit_ARC
     {
         displayName = "[KC] SF ARC Trooper (Night Camo)";
-        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARC_Night.jpg";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Textures\Previews\ARC_Night.jpg";
 
         uniformClass = "BNA_KC_Uniform_ARC_Night";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARC_Night_Upper.paa",
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARC_Night_Lower.paa",
-            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Night_Upper.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Night_Lower.paa",
+            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
 
         linkedItems[] =
@@ -311,14 +311,14 @@ class CfgVehicles
     {
         displayName = "[KC] SF ARF Trooper";
         editorSubcategory = "BNA_KC_SF";
-        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARF.jpg";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Textures\Previews\ARF.jpg";
 
         uniformClass = "BNA_KC_Uniform_ARF";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARF_Upper.paa",
-            "BNA_KC_Gear\SpecialForces\Data\Uniforms\BNA_KC_Uniform_ARF_Lower.paa",
-            "ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARF_Upper.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARF_Lower.paa",
+            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
 
         linkedItems[] =
@@ -336,7 +336,7 @@ class CfgVehicles
     {
         displayName = "[KC] SF BARC Trooper";
         editorSubcategory = "BNA_KC_SF";
-        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\BARC.jpg";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Textures\Previews\BARC.jpg";
 
         uniformClass = "BNA_KC_Uniform_CT";
 
@@ -359,11 +359,11 @@ class CfgVehicles
     {
         displayName = "[KC] ARC Trooper Backpack";
 
-        model = "SWLB_equipment\backpacks\SWLB_clone_arc_backpack.p3d";
+        model = "\SWLB_equipment\backpacks\SWLB_clone_arc_backpack.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] =
         {
-            "SWLB_equipment\backpacks\data\SWLB_clone_arc_backpack_co.paa"
+            "\SWLB_equipment\backpacks\data\SWLB_clone_arc_backpack_co.paa"
         };
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_arc_backpack_ca.paa";
     };
@@ -390,7 +390,7 @@ class CfgGlasses
             "\ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa", // Flaps
             "" // Visor
         };
-        picture = "\BNA_KC_Gear\SpecialForces\Data\UI\ARF_Flaps.paa";
+        picture = "\BNA_KC_Gear\SpecialForces\Data\Textures\UI\ARF_Flaps.paa";
 
         ACE_DustPath = "\z\ace\addons\goggles\textures\fx\dust\%1.paa";
         ACE_Overlay = "\SWLB_equipment\facewears\data\P2_HUD_ca.paa";

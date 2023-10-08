@@ -2,9 +2,9 @@
 
 #define KHEZU_TEXTURES() hiddenSelectionsTextures[] = \
 { \
-    "BNA_KC_Vehicles\Drones\Data\Khezu\BNA_KC_Khezu_Ext_CamoKC.paa", \
-    "BNA_KC_Vehicles\Drones\Data\Khezu\BNA_KC_Khezu_Int_CamoKC.paa", \
-    "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret.paa" \
+    "\BNA_KC_Vehicles\Drones\Data\Khezu\CamoKC\Khezu_Exterior.paa", \
+    "\BNA_KC_Vehicles\Drones\Data\Khezu\CamoKC\Khezu_Interior.paa", \
+    "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoKC\OLV20_Turret.paa" \
 }; \
 textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0}; \
 class TextureSources \
@@ -13,12 +13,12 @@ class TextureSources \
     { \
         author = "SweMonkey and DartRuffian"; \
         displayName = "Keeli Company Camo"; \
-        factions[] = { "BNA_KC_Faction" }; \
+        factions[] = {"BNA_KC_Faction"}; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Drones\Data\Khezu\BNA_KC_Khezu_Ext_CamoKC.paa", \
-            "BNA_KC_Vehicles\Drones\Data\Khezu\BNA_KC_Khezu_Int_CamoKC.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret.paa" \
+            "\BNA_KC_Vehicles\Drones\Data\Khezu\CamoKC\Khezu_Exterior.paa", \
+            "\BNA_KC_Vehicles\Drones\Data\Khezu\CamoKC\Khezu_Interior.paa", \
+            "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoKC\OLV20_Turret.paa" \
         }; \
     }; \
     class CamoBrown: CamoKC \
@@ -26,9 +26,9 @@ class TextureSources \
         displayName = "Brown Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Drones\Data\Khezu\BNA_KC_Khezu_Ext_CamoBrown.paa", \
-            "BNA_KC_Vehicles\Drones\Data\Khezu\BNA_KC_Khezu_Int_CamoBrown.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoBrown.paa" \
+            "\BNA_KC_Vehicles\Drones\Data\Khezu\CamoBrown\Khezu_Exterior.paa", \
+            "\BNA_KC_Vehicles\Drones\Data\Khezu\CamoBrown\Khezu_Interior.paa", \
+            "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoBrown\OLV20_Turret.paa" \
         }; \
     }; \
     class CamoGrey: CamoKC \
@@ -36,9 +36,9 @@ class TextureSources \
         displayName = "Grey Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Drones\Data\Khezu\BNA_KC_Khezu_Ext_CamoGrey.paa", \
-            "BNA_KC_Vehicles\Drones\Data\Khezu\BNA_KC_Khezu_Int_CamoGrey.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoGrey.paa" \
+            "\BNA_KC_Vehicles\Drones\Data\Khezu\CamoGrey\Khezu_Exterior.paa", \
+            "\BNA_KC_Vehicles\Drones\Data\Khezu\CamoGrey\Khezu_Interior.paa", \
+            "\BNA_KC_Vehicles\Armored\Data\Textures\OLV20\CamoGrey\OLV20_Turret.paa" \
         }; \
     }; \
 };
@@ -104,7 +104,7 @@ class CfgVehicles
             // class CargoTurret_01
             class MainTurret: MainTurret
             {
-                weapons[] = { "BNA_KC_Coax", "GMG_40mm" };
+                weapons[] = {"BNA_KC_Coax", "GMG_40mm"};
                 magazines[] =
                 {
                     "BNA_KC_1000rnd_Coax_Mag",

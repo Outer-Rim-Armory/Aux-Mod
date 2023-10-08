@@ -25,9 +25,9 @@ class CfgWeapons
         hiddenSelections[] = {"camo", "camo2", "camo3", "H_Neck", "H_UNSCVacLower", "H_UNSCVacVisor", "H_VacCollar", "H_Ghillie"};
         hiddenSelectionsTextures[] =
         {
-            "optre_unsc_units\army\data\helmet_snow_co.paa",
-            "optre_unsc_units\army\data\helmet_visor_ca.paa",
-            "optre_unsc_units\army\data\ghillie_woodland_co.paa"
+            "\optre_unsc_units\army\data\helmet_snow_co.paa",
+            "\optre_unsc_units\army\data\helmet_visor_ca.paa",
+            "\optre_unsc_units\army\data\ghillie_woodland_co.paa"
         };
         picture = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_wdl_vac.paa";
 
@@ -46,10 +46,10 @@ class CfgWeapons
         hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie", "H_Collar"};
         hiddenSelectionsTextures[] =
         {
-            "optre_unsc_units\army\data\helmet_snow_co.paa",
-            "optre_unsc_units\army\data\helmet_visor_co.paa",
-            "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-            "optre_unsc_units\army\data\soft_packs_co.paa"
+            "\optre_unsc_units\army\data\helmet_snow_co.paa",
+            "\optre_unsc_units\army\data\helmet_visor_co.paa",
+            "\optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "\optre_unsc_units\army\data\soft_packs_co.paa"
         };
 
         class ItemInfo: ItemInfo
@@ -67,10 +67,10 @@ class CfgWeapons
         hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie"};
         hiddenSelectionsTextures[] =
         {
-            "optre_unsc_units\army\data\custom\odst_helmet_leigh_co.paa",
-            "optre_unsc_units\army\data\odst_helmet_visor_co.paa",
-            "optre_unsc_units\army\data\ghillie_woodland_co.paa",
-            "optre_unsc_units\army\data\soft_packs_co.paa"
+            "\optre_unsc_units\army\data\custom\odst_helmet_leigh_co.paa",
+            "\optre_unsc_units\army\data\odst_helmet_visor_co.paa",
+            "\optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "\optre_unsc_units\army\data\soft_packs_co.paa"
         };
         picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet.paa";
 
@@ -155,18 +155,18 @@ class CfgWeapons
         displayName = "[KC GM] Gal'torran Light Vest";
         descriptionShort = "Armor Level III";
 
-        model = "MDF\MDFTorso.p3d";
+        model = "\MDF\MDFTorso.p3d";
         hiddenSelections[] = {"camo", "camo1"};
         hiddenSelectionsTextures[] =
         {
-            "MDF\MDFTorso\White\DefaultMaterial_CO.paa",
-            "MDF\MDFLegs\White\DefaultMaterial_CO.paa"
+            "\MDF\MDFTorso\White\DefaultMaterial_CO.paa",
+            "\MDF\MDFLegs\White\DefaultMaterial_CO.paa"
         };
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo", "camo1"};
-            uniformModel = "MDF\MDFTorso.p3d";
+            uniformModel = "\MDF\MDFTorso.p3d";
             class HitpointsProtectionInfo: HitpointsProtectionInfo
             {
                 class Abdomen;
@@ -180,11 +180,11 @@ class CfgWeapons
     {
         displayName = "[KC GM] Gal'torran Medium Vest";
         descriptionShort = "Armor Level IV";
-        model = "MDF\MDFMedium.p3d";
+        model = "\MDF\MDFMedium.p3d";
 
         class ItemInfo: ItemInfo
         {
-            uniformModel = "MDF\MDFMedium.p3d";
+            uniformModel = "\MDF\MDFMedium.p3d";
             class HitpointsProtectionInfo: HitpointsProtectionInfo
             {
                 class Abdomen: Abdomen
@@ -207,12 +207,12 @@ class CfgWeapons
     {
         displayName = "[KC GM] Gal'torran Heavy Vest";
         descriptionShort = "Armor Level V";
-        model = "MDF\MDFHeavy.p3d";
-        hiddenSelectionsTextures[] = {"MDF\MDFTorso\Black\DefaultMaterial_CO.paa", "MDF\MDFLegs\Black\DefaultMaterial_CO.paa"};
+        model = "\MDF\MDFHeavy.p3d";
+        hiddenSelectionsTextures[] = {"\MDF\MDFTorso\Black\DefaultMaterial_CO.paa", "MDF\MDFLegs\Black\DefaultMaterial_CO.paa"};
 
         class ItemInfo: ItemInfo
         {
-            uniformModel = "MDF\MDFHeavy.p3d";
+            uniformModel = "\MDF\MDFHeavy.p3d";
             class HitpointsProtectionInfo: HitpointsProtectionInfo
             {
                 class Abdomen: Abdomen
@@ -488,7 +488,7 @@ class CfgVehicles
 
         model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
         hiddenSelections[] = {"camo1", "AP_Heavy", "biofoam"};
-        hiddenSelectionsTextures[] = {"OPTRE_Weapons\Backpacks\data\ruck_black_CO.paa"};
+        hiddenSelectionsTextures[] = {"\OPTRE_Weapons\Backpacks\data\ruck_black_CO.paa"};
         picture = "\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
     };
     class BNA_KC_Galtorran_Backpack_Predef_Rifleman: BNA_KC_Galtorran_Backpack
@@ -524,7 +524,7 @@ class CfgVehicles
         model = "\3AS\3AS_Characters\Commando\3AS_Katarn_BackPack.p3d";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Characters\Commando\data\Katarn_Backpack_Standard_CO.paa"};
-        picture = "3AS\3AS_Characters\Commando\data\UI\Katarn_Backpack_Unmarked_UI_ca.paa";
+        picture = "\3AS\3AS_Characters\Commando\data\UI\Katarn_Backpack_Unmarked_UI_ca.paa";
     };
     class BNA_KC_Galtorran_Veteran_Backpack_Predef_Rifleman: BNA_KC_Galtorran_Veteran_Backpack
     {
@@ -561,10 +561,10 @@ class CfgVehicles
         displayName = "[KC GM] Gal'torran Elite Backpack";
         maximumLoad = 350;
 
-        model = "SentinelBackpack\SentinelBackpack.p3d";
+        model = "\SentinelBackpack\SentinelBackpack.p3d";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"sc_newequipment2\Sentinel\Night\Back\DefaultMaterial_CO.paa"};
-        picture = "SentinelBackpack\icon_ar_ca.paa";
+        hiddenSelectionsTextures[] = {"\sc_newequipment2\Sentinel\Night\Back\DefaultMaterial_CO.paa"};
+        picture = "\SentinelBackpack\icon_ar_ca.paa";
     };
     class BNA_KC_Galtorran_Elite_Backpack_Predef_Rifleman: BNA_KC_Galtorran_Elite_Backpack
     {
@@ -718,7 +718,7 @@ class CfgVehicles
 
         model = "\OPTRE_unsc_units\army\rucksack.p3d";
         hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Addons"};
-        hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_sno_co.paa"};
+        hiddenSelectionsTextures[] = {"\optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_sno_co.paa"};
         picture = "\OPTRE_weapons\backpacks\icons\icon_b_anprc521_ca.paa";
 
         maximumLoad = 250;
@@ -754,7 +754,7 @@ class CfgVehicles
     class BNA_KC_Galtorran_Elite_Backpack_RTO: BNA_KC_Galtorran_Backpack_RTO
     {
         displayName = "[KC GM] Gal'torran Elite Radio Backpack";
-        hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_blk_co.paa"};
+        hiddenSelectionsTextures[] = {"\optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_blk_co.paa"};
         maximumLoad = 300;
     };
     class BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Elite_Backpack_RTO
