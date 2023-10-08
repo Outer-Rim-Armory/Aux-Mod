@@ -131,11 +131,11 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Body.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Addons.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Tows.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Camonet_Desert.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_CageSand.paa"
+            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Body.paa",
+            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Addons.paa",
+            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Tow.paa",
+            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
+            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
         };
 
         textureList[] = {};
