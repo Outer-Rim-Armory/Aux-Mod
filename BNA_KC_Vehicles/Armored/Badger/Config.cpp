@@ -25,52 +25,18 @@ class CfgVehicles
         // Scope
         scope = 2;
         scopeCurator = 2;
-        scopeArsenal = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
         editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\Badger.jpg";
 
+        displayName = "Badger IFV";
+        crew = "BNA_KC_Unit_Phase2_Tanker";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
+
         armor = 600;
 
-        displayName = "[KC] Badger APC";
-        crew = "BNA_KC_Unit_Phase2_Tanker";
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret
-            {
-                weapons[] =
-                {
-                    "BNA_KC40mm_CTWS",
-                    "BNA_KC_Coax"
-                };
-                magazines[] =
-                {
-                    "60Rnd_40mm_GPR_Tracer_Red_shells",
-                    "60Rnd_40mm_GPR_Tracer_Red_shells",
-                    "60Rnd_40mm_GPR_Tracer_Red_shells",
-                    "60Rnd_40mm_GPR_Tracer_Red_shells",
-                    "40Rnd_40mm_APFSDS_Tracer_Red_shells",
-                    "40Rnd_40mm_APFSDS_Tracer_Red_shells",
-                    "40Rnd_40mm_APFSDS_Tracer_Red_shells",
-                    "40Rnd_40mm_APFSDS_Tracer_Red_shells",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag"
-                };
-            };
-        };
-        hiddenSelectionsTextures[] =
-        {
-            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Body.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Addons.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Tows.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Camonet_Desert.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_CageSand.paa"
-        };
         soundEngineOnInt[] =
         {
             "BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCStartup",
@@ -160,6 +126,46 @@ class CfgVehicles
                 "APC_Wheeled_01_Tires_Turn_Soft_EXT_SoundSet",
                 "APC_Wheeled_01_Tires_Brake_Hard_EXT_SoundSet",
                 "APC_Wheeled_01_Tires_Brake_Soft_EXT_SoundSet"
+            };
+        };
+
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Body.paa",
+            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Addons.paa",
+            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Tows.paa",
+            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_Camonet_Desert.paa",
+            "BNA_KC_Vehicles\Armored\Data\Textures\Badger\BNA_KC_APC_CageSand.paa"
+        };
+
+        textureList[] = {};
+        class TextureSources {};
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] =
+                {
+                    "BNA_KC40mm_CTWS",
+                    "BNA_KC_Coax"
+                };
+                magazines[] =
+                {
+                    "60Rnd_40mm_GPR_Tracer_Red_shells",
+                    "60Rnd_40mm_GPR_Tracer_Red_shells",
+                    "60Rnd_40mm_GPR_Tracer_Red_shells",
+                    "60Rnd_40mm_GPR_Tracer_Red_shells",
+                    "40Rnd_40mm_APFSDS_Tracer_Red_shells",
+                    "40Rnd_40mm_APFSDS_Tracer_Red_shells",
+                    "40Rnd_40mm_APFSDS_Tracer_Red_shells",
+                    "40Rnd_40mm_APFSDS_Tracer_Red_shells",
+                    "BNA_KC_100rnd_Coax_Mag",
+                    "BNA_KC_100rnd_Coax_Mag",
+                    "BNA_KC_100rnd_Coax_Mag",
+                    "BNA_KC_100rnd_Coax_Mag",
+                    "BNA_KC_100rnd_Coax_Mag"
+                };
             };
         };
     };
