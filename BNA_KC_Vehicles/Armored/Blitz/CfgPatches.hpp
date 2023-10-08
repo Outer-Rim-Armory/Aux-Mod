@@ -7,8 +7,12 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "A3_Armor_F_EPC_MBT_01"
+            "A3_Armor_F_EPC_MBT_01",
                 // Slammer
+            "BNA_KC_Vehicles_Weapons",
+                // Weapons
+            "BNA_KC_Vehicles_Sounds"
+                // Sounds
         };
         units[] =
         {
