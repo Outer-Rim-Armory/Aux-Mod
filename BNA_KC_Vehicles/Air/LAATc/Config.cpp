@@ -103,21 +103,7 @@ class CfgVehicles
                 statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick);
             };
 
-            class SpecialLoadVehicle
-            {
-                displayName = "Load Vehicle (Custom)";
-                displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
-
-                position = "pilotview";
-                radius = 30;
-                onlyForPlayer = 0;
-
-                hideOnUse = 1;
-                priority = 5;
-
-                condition = QUOTE(this call BNAKC_fnc_canSpecialLoad);
-                statement = QUOTE(this call BNAKC_fnc_specialLoad);
-            };
+            SPECIAL_LOAD
         };
     };
 };

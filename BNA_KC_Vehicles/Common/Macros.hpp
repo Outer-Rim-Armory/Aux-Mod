@@ -70,3 +70,16 @@
         statement = "[0, 0, 0, 0, _this#0] call ls_utility_fnc_hudColorChange"; \
     }; \
 };
+
+#define SPECIAL_LOAD class SpecialLoadVehicle \
+{ \
+    displayName = "Load Vehicle (Custom)"; \
+    displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>"; \
+    position = "pilotview"; \
+    radius = 30; \
+    onlyForPlayer = 0; \
+    hideOnUse = 1; \
+    priority = 5; \
+    condition = QUOTE(this call BNAKC_fnc_canSpecialLoad); \
+    statement = QUOTE(this call BNAKC_fnc_specialLoad); \
+};

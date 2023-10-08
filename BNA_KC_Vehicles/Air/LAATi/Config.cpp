@@ -204,16 +204,7 @@ class CfgVehicles
                 statement = QUOTE(this animateSource ['ramp', 0, 1]);
             };
 
-            class SpecialLoadVehicle: Impulse
-            {
-                // Special action used for vehicles that are not fully compatible with ViV (vehicle-in-vehicle)
-                // Notably used for 3AS's AT-TE
-                displayName = "Load Vehicle (Custom)";
-                displayNameDefault = "<img size=2 image='\a3\ui_f\data\IGUI\Cfg\Actions\loadVehicle_ca.paa'>";
-
-                condition = QUOTE(this call BNAKC_fnc_canSpecialLoad);
-                statement = QUOTE(this call BNAKC_fnc_specialLoad);
-            };
+            SPECIAL_LOAD
         };
 
         class AnimationSources: AnimationSources
