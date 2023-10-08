@@ -193,13 +193,13 @@ class CfgVehicles
 
             class RampOpen: Impulse
             {
-                displayName = "Ramp Open";
+                displayName = "Open Ramp";
                 condition = QUOTE(ace_player == currentPilot this and this animationPhase 'ramp' == 0);
                 statement = QUOTE(this animateSource ['ramp', 1, 1]);
             };
             class RampClose: RampOpen
             {
-                displayName = "Ramp Close";
+                displayName = "Close Ramp";
                 condition = QUOTE(ace_player == currentPilot this and this animationPhase 'ramp' == 1);
                 statement = QUOTE(this animateSource ['ramp', 0, 1]);
             };
