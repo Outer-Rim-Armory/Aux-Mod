@@ -30,14 +30,14 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Data\Textures\Previews\RX200.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\RX200\Data\Previews\RX200.jpg";
 
         displayName = "[KC] RX-200";
         crew = "BNA_KC_Unit_Phase2_Tanker";
 
-        hiddenSelectionsTextures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+        hiddenSelectionsTextures[] = {"\BNA_KC_Vehicles\Armored\RX200\Data\Textures\Body_KC.paa"};
 
-        textureList[] = {"Standard", 0, "KeeliCompany", 1, "CamoKC", 0, "CamoGrey", 0, "CamoBrown", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources
         {
             class Standard
@@ -51,22 +51,22 @@ class CfgVehicles
             {
                 author = "Rev";
                 displayName = "Keeli Company";
-                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_KC.paa"};
+                textures[] = {"\BNA_KC_Vehicles\Armored\RX200\Data\Textures\Body_KC.paa"};
             };
             class CamoKC: KeeliCompany
             {
                 displayName = "Keeli Company Camo";
-                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoKC.paa"};
-            };
-            class CamoGrey: KeeliCompany
-            {
-                displayName = "Grey Camo";
-                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoGrey.paa"};
+                textures[] = {"\BNA_KC_Vehicles\Armored\RX200\Data\Textures\Body_CamoKC.paa"};
             };
             class CamoBrown: KeeliCompany
             {
                 displayName = "Brown Camo";
-                textures[] = {"\BNA_KC_Vehicles\Armored\Data\Textures\RX200\RX200_Body_CamoBrown.paa"};
+                textures[] = {"\BNA_KC_Vehicles\Armored\RX200\Data\Textures\Body_CamoBrown.paa"};
+            };
+            class CamoGrey: KeeliCompany
+            {
+                displayName = "Grey Camo";
+                textures[] = {"\BNA_KC_Vehicles\Armored\RX200\Data\Textures\Body_CamoGrey.paa"};
             };
         };
 
