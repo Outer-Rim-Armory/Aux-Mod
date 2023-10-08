@@ -109,7 +109,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] RX-200AA (Anti-Air)";
+        displayName = "RX-200AA (Anti-Air)";
 
         class Turrets: Turrets
         {
@@ -123,7 +123,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] RX-200ART (Artillery)";
+        displayName = "RX-200ART (Artillery)";
 
         artilleryScanner = 1;
         availableForSupportTypes[] = {"Artillery"};
