@@ -12,6 +12,7 @@ class CfgPatches
         };
         units[] =
         {
+            "BNA_KC_Blitz",
             "BNA_KC_MBT_Slammer"
         };
         weapons[] = {};

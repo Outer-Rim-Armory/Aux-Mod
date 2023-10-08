@@ -72,7 +72,7 @@ class CfgVehicles
         };
         class ACE_SelfActions;
     };
-    class BNA_KC_MBT_Slammer: B_MBT_01_TUSK_F
+    class BNA_KC_Blitz: B_MBT_01_TUSK_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -379,5 +379,11 @@ class CfgVehicles
                 };
             };
         };
+    };
+
+    class BNA_KC_MBT_Slammer: BNA_KC_Blitz
+    {
+        scope = 1;
+        scopeCurator = 0;
     };
 };
