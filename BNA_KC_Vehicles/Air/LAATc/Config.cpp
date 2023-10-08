@@ -23,7 +23,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAviation";
-        editorPreview = "\BNA_KC_Vehicles\Aviation\Data\Textures\Previews\BNA_KC_LAATc.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Air\LAATc\Data\Previews\LAATc.jpg";
 
         displayName = "[KC] LAAT/c";
         crew = "BNA_KC_Unit_Phase2_Pilot";
