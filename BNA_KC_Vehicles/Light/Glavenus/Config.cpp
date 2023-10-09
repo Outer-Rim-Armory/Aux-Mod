@@ -182,20 +182,20 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VLight";
         editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Unarmed.jpg";
 
+        displayName = "Glavenus (Unarmed)";
         crew = "BNA_KC_Unit_Phase2_CT";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_CT"};
         side = 1;
 
-        displayName = "[KC] Glavenus (Unarmed)";
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
-
-        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
     };
 
     class BNA_KC_Glavenus_Medic: BNA_KC_Glavenus_Unarmed
     {
-        displayName = "[KC] Glavenus (Medic)";
+        displayName = "Glavenus (Medic)";
         editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Medic.jpg";
 
         attendant = 1;
@@ -315,15 +315,15 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VLight";
         editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Turret.jpg";
 
+        displayName = "Glavenus (GMG)";
         crew = "BNA_KC_Unit_Phase2_CT";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_CT"};
         side = 1;
 
-        displayName = "[KC] Glavenus (GMG)";
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
-
-        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
     };
 
     class MRAP_02_base_F;
@@ -353,15 +353,15 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VLight";
         editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Turret.jpg";
 
+        displayName = "Glavenus (HMG)";
         crew = "BNA_KC_Unit_Phase2_CT";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_CT"};
         side = 1;
 
-        displayName = "[KC] Glavenus (HMG)";
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
-
-        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
         class Turrets: Turrets
         {
