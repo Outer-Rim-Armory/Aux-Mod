@@ -11,9 +11,11 @@ class CfgPatches
                 // Core Config
             "A3_Soft_F_Exp_LSV_02",
                 // Metis-M LSV
-            "BNA_KC_Vehicles_Weapons"
+            "BNA_KC_Vehicles_Weapons",
                 // Co-Ax
                 // Missile Launcher
+            "BNA_KC_Gear_SpecialForces"
+                // ARF Unit
         };
         units[] =
         {

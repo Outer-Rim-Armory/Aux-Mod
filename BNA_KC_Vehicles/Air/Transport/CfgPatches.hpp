@@ -11,7 +11,7 @@ class CfgPatches
                 // Core Config
             "3as_Starships",
                 // Republic Transport
-            "BNA_KC_Gear"
+            "BNA_KC_Gear_Aviation"
                 // Pilot unit
         };
         units[] =

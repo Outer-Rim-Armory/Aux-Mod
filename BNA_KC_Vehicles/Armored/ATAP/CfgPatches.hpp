@@ -11,8 +11,10 @@ class CfgPatches
                 // Core Config
             "3AS_ATAP",
                 // AT-AP
-            "BNA_KC_Vehicles_Sounds"
+            "BNA_KC_Vehicles_Sounds",
                 // AT-TE alarm
+            "BNA_KC_Gear_Armored"
+                // Crew Unit
         };
         units[] =
         {

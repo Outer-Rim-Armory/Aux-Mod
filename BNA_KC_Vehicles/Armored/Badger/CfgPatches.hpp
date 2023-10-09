@@ -13,8 +13,10 @@ class CfgPatches
                 // Badger
             "BNA_KC_Vehicles_Weapons",
                 // Weapons
-            "BNA_KC_Vehicles_Sounds"
+            "BNA_KC_Vehicles_Sounds",
                 // Sounds
+            "BNA_KC_Gear_Armored"
+                // Crew Unit
         };
         units[] =
         {

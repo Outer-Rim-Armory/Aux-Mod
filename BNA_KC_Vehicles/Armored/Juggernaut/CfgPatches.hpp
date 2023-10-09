@@ -11,8 +11,10 @@ class CfgPatches
                 // Core Config
             "3AS_APC_Jug",
                 // Juggernaut
-            "BNA_KC_Vehicles_Weapons"
+            "BNA_KC_Vehicles_Weapons",
                 // Horn & Alarm
+            "BNA_KC_Gear_Armored"
+                // Crew Unit
         };
         units[] =
         {

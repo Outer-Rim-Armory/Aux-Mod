@@ -9,8 +9,10 @@ class CfgPatches
         {
             "BNA_KC_Vehicles",
                 // Core Config
-            "3AS_SaberTank"
+            "3AS_SaberTank",
                 // TX-130
+            "BNA_KC_Gear_Armored"
+                // Crew Unit
         };
         units[] =
         {

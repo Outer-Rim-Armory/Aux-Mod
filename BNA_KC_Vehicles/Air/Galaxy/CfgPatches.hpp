@@ -11,7 +11,7 @@ class CfgPatches
                 // Core Config
             "A3_Air_F_Exp_VTOL_01",
                 // Blackfish
-            "BNA_KC_Gear"
+            "BNA_KC_Gear_Aviation"
                 // Pilot unit
         };
         units[] =

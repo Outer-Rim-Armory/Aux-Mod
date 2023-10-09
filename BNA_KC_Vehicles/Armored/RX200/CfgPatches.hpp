@@ -11,8 +11,10 @@ class CfgPatches
                 // Core Config
             "3AS_RX200",
                 // RX-200
-            "A3_Weapons_F"
+            "A3_Weapons_F",
                 // Artillery Weapon
+            "BNA_KC_Gear_Armored"
+                // Crew Unit
         };
         units[] =
         {
