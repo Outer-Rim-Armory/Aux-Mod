@@ -80,7 +80,7 @@ class CfgVehicles
         };
     };
     class O_LSV_02_armed_F: LSV_02_armed_base_F {};
-    class BNA_KC_Hornet_Armed: O_LSV_02_armed_F
+    class BNA_KC_Hornet_MG: O_LSV_02_armed_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -172,6 +172,11 @@ class CfgVehicles
                 weapon = "BNA_KC_Mounted_MG";
             };
         };
+    };
+    class BNA_KC_Hornet_Armed: BNA_KC_Hornet_MG
+    {
+        scope = 1;
+        scopeCurator = 0;
     };
 
     class LSV_02_AT_base_F: LSV_02_base_F
