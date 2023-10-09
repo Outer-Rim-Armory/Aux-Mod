@@ -1,14 +1,14 @@
 class CfgCloudlets
 {
     class SmokeShellWhiteSmall;
-    class BNA_KC_Effects_SmokeShellBlueSmall: SmokeShellWhiteSmall
+    class BNA_KC_Cloudlet_SmokeShellBlueSmall: SmokeShellWhiteSmall
     {
         color[] =
         {
             {0.1183, 0.1867, 1, 1} // Base game blue smoke color
         };
     };
-    class BNA_KC_Effects_SmokeShellRedSmall: SmokeShellWhiteSmall
+    class BNA_KC_Cloudlet_SmokeShellRedSmall: SmokeShellWhiteSmall
     {
         color[] =
         {
