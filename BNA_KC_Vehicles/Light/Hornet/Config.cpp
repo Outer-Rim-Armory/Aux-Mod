@@ -133,10 +133,10 @@ class CfgVehicles
         };
         class AnimationSources: AnimationSources
         {
-			class Minigun {};
+            class Minigun {};
             class muzzle_hide {};
             class muzzle_rot {};
-		};
+        };
     };
     class LSV_02_armed_base_F: LSV_02_base_F
     {
@@ -230,7 +230,7 @@ class CfgVehicles
             class VoronaMuzzle_rot {};
         };
     };
-	class O_LSV_02_AT_F: LSV_02_AT_base_F {};
+    class O_LSV_02_AT_F: LSV_02_AT_base_F {};
     class BNA_KC_Hornet_AT: O_LSV_02_AT_F
     {
         // Mod Info
@@ -294,7 +294,7 @@ class CfgVehicles
 
         class AnimationSources: AnimationSources
         {
-			class VoronaMuzzle_reload: VoronaMuzzle_reload
+            class VoronaMuzzle_reload: VoronaMuzzle_reload
             {
                 weapon = "BNA_KC_Mounted_MissileLauncher";
             };
@@ -310,11 +310,11 @@ class CfgVehicles
             {
                 weapon = "BNA_KC_Mounted_MissileLauncher";
             };
-		};
+        };
 
         class Turrets: Turrets
         {
-			class MainTurret: MainTurret
+            class MainTurret: MainTurret
             {
                 weapons[] = { "BNA_KC_Mounted_MissileLauncher" };
             };
@@ -323,6 +323,6 @@ class CfgVehicles
             class CargoTurret_03: CargoTurret_03 {};
             class CargoTurret_04: CargoTurret_04 {};
             class CargoTurret_05: CargoTurret_05 {};
-		};
+        };
     };
 };
