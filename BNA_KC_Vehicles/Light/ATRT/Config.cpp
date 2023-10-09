@@ -25,13 +25,13 @@ class CfgVehicles
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
 
-        displayName = "[KC] AT-RT";
+        displayName = "AT-RT";
         uniformClass = "BNA_KC_Uniform_ATRT";
         nakedUniform = "BNA_KC_Uniform_ATRT";
         impactEffectsBlood = "ImpactMetal";
 
-        weapons[] = { "BNA_KC_ATRT_Turret" };
-        magazines[] = { "BNA_KC_9999Rnd_ATRT_Turret_Magazine" };
+        weapons[] = {"BNA_KC_ATRT_Turret"};
+        magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
 
         allowedfacewear[] = {""};
         allowedHeadgear[] = {""};
