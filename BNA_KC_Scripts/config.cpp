@@ -71,6 +71,9 @@ class CfgFunctions
             class disableDekaShields {};
             class tempDisableVehicles {};
             class playDroidPopperSound {};
+
+            class canUseEMP {};
+            class activateEMP {};
         };
 
         class Weapons
