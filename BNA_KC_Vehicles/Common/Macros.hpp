@@ -83,3 +83,77 @@
     condition = QUOTE(this call BNAKC_fnc_canSpecialLoad); \
     statement = QUOTE(this call BNAKC_fnc_specialLoad); \
 };
+
+#define INVENTORY_VEHICLE_MEDICAL class TransportWeapons {}; \
+class TransportMagazines \
+{ \
+    class _xx_3AS_SmokePurple \
+    { \
+        magazine = "3AS_SmokePurple"; \
+        count = 1; \
+    }; \
+    class _xx_SquadShieldMagazine \
+    { \
+        magazine = "SquadShieldMagazine"; \
+        count = 1; \
+    }; \
+}; \
+class TransportBackpacks {}; \
+class TransportItems \
+{ \
+    class _xx_ACE_elasticBandage \
+    { \
+        name = "ACE_elasticBandage"; \
+        count = 30; \
+    }; \
+    class _xx_ACE_packingBandage \
+    { \
+        name = "ACE_packingBandage"; \
+        count = 20; \
+    }; \
+    class _xx_ACE_quickclot \
+    { \
+        name = "ACE_quickclot"; \
+        count = 15; \
+    }; \
+    class _xx_ACE_salineIV \
+    { \
+        name = "ACE_salineIV"; \
+        count = 1; \
+    }; \
+    class _xx_ACE_salineIV_500 \
+    { \
+        name = "ACE_salineIV_500"; \
+        count = 1; \
+    }; \
+    class _xx_ACE_salineIV_250 \
+    { \
+        name = "ACE_salineIV_250"; \
+        count = 2; \
+    }; \
+    class _xx_ACE_morphine \
+    { \
+        name = "ACE_morphine"; \
+        count = 2; \
+    }; \
+    class _xx_ACE_epinephrine \
+    { \
+        name = "ACE_epinephrine"; \
+        count = 2; \
+    }; \
+    class _xx_RD501_Painkiller \
+    { \
+        name = "RD501_Painkiller"; \
+        count = 5; \
+    }; \
+    class _xx_ACE_tourniquet \
+    { \
+        name = "ACE_tourniquet"; \
+        count = 6; \
+    }; \
+    class _xx_ACE_Splint \
+    { \
+        name = "ACE_Splint"; \
+        count = 1; \
+    }; \
+};
