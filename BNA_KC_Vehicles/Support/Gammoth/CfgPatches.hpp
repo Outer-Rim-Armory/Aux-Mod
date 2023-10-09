@@ -7,7 +7,9 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "BNA_KC_Gear",
+            "BNA_KC_Vehicles",
+                // Core config
+            "BNA_KC_Gear_Infantry",
                 // Unit
             "A3_Soft_F_EPC_Truck_03"
                 // Typhoon trucks
