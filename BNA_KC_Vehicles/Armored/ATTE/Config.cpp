@@ -19,8 +19,12 @@ class CfgVehicles
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
 
-        displayName = "[KC] AT-TE";
+        displayName = "AT-TE";
         crew = "BNA_KC_Unit_Phase2_Tanker";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
+
+        ace_cargo_space = 10;
+
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Body.paa",
@@ -31,14 +35,14 @@ class CfgVehicles
             "\3as\3as_atte\data\atte_middleleg_co.paa"
         };
 
-        textureList[] = { "Standard", 0, "Imperial", "KeeliCompany", 1 };
+        textureList[] = {"Standard", 0, "Imperial", "KeeliCompany", 1};
         class TextureSources
         {
             class Standard
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "\3as\3as_atte\data\atte_hull_TCW_co.paa",
@@ -78,7 +82,6 @@ class CfgVehicles
             };
         };
 
-        // Scrollwheel Actions
         class UserActions
         {
             class PlayAlarm
@@ -143,11 +146,6 @@ class CfgVehicles
             };
         };
 
-        // Horns don't work on vehicles with a simulation other than "carx"
-        // weapons[] = { "BNA_KC_ATTE_Alarm" };
-
-        ace_cargo_space = 10;
-
         // Makes the 3AS AT-TE compatible with the vanilla vehicle-in-vehicle system
         // Credit: CrimzonKat @ https://ptb.discord.com/channels/461042140756180992/1062396582848372807
         class VehicleTransport
@@ -159,7 +157,7 @@ class CfgVehicles
                 canBeTransported = 1;
                 dimensions[] = { "ftr_muzzle", "btl_muzzle" };
 
-                BNA_KC_SpecialLoad = 1; // The standard "Load Vehicle" option doesn't appear, requiring a custom script to work
+                BNA_KC_SpecialLoad = 1;
             };
         };
     };
