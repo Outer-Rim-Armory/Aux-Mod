@@ -137,7 +137,6 @@ class CfgVehicles
         weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
         GLAVENUS_TEXTURES();
-
         INVENTORY_VEHICLE_COMMON
 
         class Turrets: Turrets
