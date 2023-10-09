@@ -1,47 +1,6 @@
 #include "CfgPatches.hpp"
 #include "..\..\Common\Macros.hpp"
 
-// Macros
-#define HORNET_INVENTORY() class TransportWeapons \
-{ \
-    class _xx_BNA_KC_DC15A \
-    { \
-        weapon = "BNA_KC_DC15A"; \
-        count = 1; \
-    }; \
-    class _xx_BNA_KC_DC15S \
-    { \
-        weapon = "BNA_KC_DC15S"; \
-        count = 1; \
-    }; \
-}; \
-class TransportMagazines \
-{ \
-    class _xx_Aux12thFleet_Mag_DC15A \
-    { \
-        magazine = "Aux12thFleet_Mag_DC15A"; \
-        count = 15; \
-    }; \
-    class _xx_Aux12thFleet_Mag_DC15S \
-    { \
-        magazine = "Aux12thFleet_Mag_DC15S"; \
-        count = 15; \
-    }; \
-    class _xx_Aux12thFleet_Mag_DC15X \
-    { \
-        magazine = "Aux12thFleet_Mag_DC15X"; \
-        count = 5; \
-    }; \
-}; \
-class TransportItems \
-{ \
-    class _xx_ACE_elasticBandage \
-    { \
-        name = "ACE_elasticBandage"; \
-        count = 30; \
-    }; \
-};
-
 
 class CfgVehicles
 {
@@ -99,7 +58,7 @@ class CfgVehicles
             };
         };
 
-        HORNET_INVENTORY()
+        INVENTORY_VEHICLE_RECON
     };
 
     class Car_F;
@@ -174,7 +133,7 @@ class CfgVehicles
             };
         };
 
-        HORNET_INVENTORY()
+        INVENTORY_VEHICLE_RECON
 
         class Turrets: Turrets
         {
@@ -249,8 +208,6 @@ class CfgVehicles
         typicalCargo[] = {"BNA_KC_Unit_ARF"};
         side = 1;
 
-        HORNET_INVENTORY()
-
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa",
@@ -288,6 +245,8 @@ class CfgVehicles
                 };
             };
         };
+
+        INVENTORY_VEHICLE_RECON
 
         class AnimationSources: AnimationSources
         {

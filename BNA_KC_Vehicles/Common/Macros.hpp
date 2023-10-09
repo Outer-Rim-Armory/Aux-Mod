@@ -198,6 +198,47 @@ class TransportItems \
     }; \
 };
 
+#define INVENTORY_VEHICLE_RECON class TransportWeapons \
+{ \
+    class _xx_BNA_KC_DC15A \
+    { \
+        weapon = "BNA_KC_DC15A"; \
+        count = 1; \
+    }; \
+    class _xx_BNA_KC_DC15S \
+    { \
+        weapon = "BNA_KC_DC15S"; \
+        count = 1; \
+    }; \
+}; \
+class TransportMagazines \
+{ \
+    class _xx_Aux12thFleet_Mag_DC15A \
+    { \
+        magazine = "Aux12thFleet_Mag_DC15A"; \
+        count = 15; \
+    }; \
+    class _xx_Aux12thFleet_Mag_DC15S \
+    { \
+        magazine = "Aux12thFleet_Mag_DC15S"; \
+        count = 15; \
+    }; \
+    class _xx_Aux12thFleet_Mag_DC15X \
+    { \
+        magazine = "Aux12thFleet_Mag_DC15X"; \
+        count = 5; \
+    }; \
+}; \
+class TransportBackpacks {}; \
+class TransportItems \
+{ \
+    class _xx_ACE_elasticBandage \
+    { \
+        name = "ACE_elasticBandage"; \
+        count = 30; \
+    }; \
+};
+
 #define INVENTORY_VEHICLE_MEDICAL class TransportWeapons {}; \
 class TransportMagazines \
 { \
