@@ -106,6 +106,7 @@ class CfgVehicles
     class MRAP_02_base_F: Car_F {};
     class MRAP_02_hmg_base_F: MRAP_02_base_F
     {
+        class AnimationSources;
         class Turrets: Turrets
         {
             class MainTurret;
@@ -183,6 +184,20 @@ class CfgVehicles
         };
 
         INVENTORY_VEHICLE_COMMON
+
+        class AnimationSources: AnimationSources
+        {
+            class muzzle_hide
+            {
+                source = "reload";
+                weapon = "BNA_KC_Coax";
+            };
+            class muzzle_rot
+            {
+                source = "ammorandom";
+                weapon = "BNA_KC_Coax";
+            };
+        };
 
         class Turrets: Turrets
         {
