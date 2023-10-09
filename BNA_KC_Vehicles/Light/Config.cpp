@@ -1,5 +1,4 @@
 #include "CfgPatches.hpp"
-#include "CfgCloudlets.hpp"
 
 
 class CfgWeapons
