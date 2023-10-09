@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Vehicles",
+                // Core Config
             "3AS_ATAP",
                 // AT-AP
             "BNA_KC_Vehicles_Sounds"

@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Vehicles",
+                // Core Config
             "lsd_vehicles_heli",
                 // LAAT/c
             "BNA_KC_Gear_Aviation",

@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Vehicles",
+                // Core Config
             "3as_Starships",
                 // Republic Transport
             "BNA_KC_Gear"

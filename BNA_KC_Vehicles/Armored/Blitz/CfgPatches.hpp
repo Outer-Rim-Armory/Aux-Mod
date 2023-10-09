@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Vehicles",
+                // Core Config
             "A3_Armor_F_EPC_MBT_01",
                 // Slammer
             "BNA_KC_Vehicles_Weapons",

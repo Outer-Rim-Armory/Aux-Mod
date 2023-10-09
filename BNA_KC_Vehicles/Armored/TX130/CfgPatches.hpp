@@ -7,7 +7,10 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Vehicles",
+                // Core Config
             "3AS_SaberTank"
+                // TX-130
         };
         units[] =
         {

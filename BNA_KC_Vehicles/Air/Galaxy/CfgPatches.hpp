@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Vehicles",
+                // Core Config
             "A3_Air_F_Exp_VTOL_01",
                 // Blackfish
             "BNA_KC_Gear"
