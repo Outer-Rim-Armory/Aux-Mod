@@ -85,6 +85,7 @@ class CfgVehicles
         displayName = "Glavenus (Medic)";
         editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Medic.jpg";
 
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
         attendant = 1;
 
         hiddenSelectionsTextures[] =
@@ -95,8 +96,6 @@ class CfgVehicles
         };
         textureList[] = {};
         class TextureSources {};
-
-        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
         INVENTORY_VEHICLE_MEDICAL
     };
