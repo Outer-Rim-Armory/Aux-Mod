@@ -23,12 +23,12 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Tanker";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Body.paa",
-            "3as\3as_atte\data\atte_chasis_co.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Cockpit.paa",
-            "BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Turrets.paa",
-            "3as\3as_atte\data\atte_underpiping_co.paa",
-            "3as\3as_atte\data\atte_middleleg_co.paa"
+            "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Body.paa",
+            "\3as\3as_atte\data\atte_chasis_co.paa",
+            "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Cockpit.paa",
+            "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Turrets.paa",
+            "\3as\3as_atte\data\atte_underpiping_co.paa",
+            "\3as\3as_atte\data\atte_middleleg_co.paa"
         };
 
         textureList[] = { "Standard", 0, "Imperial", "KeeliCompany", 1 };
@@ -41,12 +41,12 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "3as\3as_atte\data\atte_hull_TCW_co.paa",
-                    "3as\3as_atte\data\atte_chasis_co.paa",
-                    "3as\3as_atte\data\atte_cockpit_TCW_co.paa",
-                    "3as\3as_atte\data\atte_turrets_TCW_co.paa",
-                    "3as\3as_atte\data\atte_underpiping_co.paa",
-                    "3as\3as_atte\data\atte_middleleg_TCW_co.paa"
+                    "\3as\3as_atte\data\atte_hull_TCW_co.paa",
+                    "\3as\3as_atte\data\atte_chasis_co.paa",
+                    "\3as\3as_atte\data\atte_cockpit_TCW_co.paa",
+                    "\3as\3as_atte\data\atte_turrets_TCW_co.paa",
+                    "\3as\3as_atte\data\atte_underpiping_co.paa",
+                    "\3as\3as_atte\data\atte_middleleg_TCW_co.paa"
                 };
             };
             class Imperial: Standard
@@ -54,12 +54,12 @@ class CfgVehicles
                 displayName = "Imperial";
                 textures[] =
                 {
-                    "3as\3as_atte\data\atte_hull_Imp_co.paa",
-                    "3as\3as_atte\data\atte_chasis_co.paa",
-                    "3as\3as_atte\data\atte_cockpit_Imp_co.paa",
-                    "3as\3as_atte\data\atte_turrets_Imp_co.paa",
-                    "3as\3as_atte\data\atte_underpiping_co.paa",
-                    "3as\3as_atte\data\atte_middleleg_Imp_co.paa"
+                    "\3as\3as_atte\data\atte_hull_Imp_co.paa",
+                    "\3as\3as_atte\data\atte_chasis_co.paa",
+                    "\3as\3as_atte\data\atte_cockpit_Imp_co.paa",
+                    "\3as\3as_atte\data\atte_turrets_Imp_co.paa",
+                    "\3as\3as_atte\data\atte_underpiping_co.paa",
+                    "\3as\3as_atte\data\atte_middleleg_Imp_co.paa"
                 };
             };
             class KeeliCompany: Standard
@@ -68,12 +68,12 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Body.paa",
-                    "3as\3as_atte\data\atte_chasis_co.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Cockpit.paa",
-                    "BNA_KC_Vehicles\Armored\Data\Textures\ATTE\BNA_KC_ATTE_Turrets.paa",
-                    "3as\3as_atte\data\atte_underpiping_co.paa",
-                    "3as\3as_atte\data\atte_middleleg_co.paa"
+                    "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Body.paa",
+                    "\3as\3as_atte\data\atte_chasis_co.paa",
+                    "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Cockpit.paa",
+                    "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Turrets.paa",
+                    "\3as\3as_atte\data\atte_underpiping_co.paa",
+                    "\3as\3as_atte\data\atte_middleleg_co.paa"
                 };
             };
         };
