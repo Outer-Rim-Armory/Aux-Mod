@@ -16,6 +16,7 @@ class CfgPatches
         };
         units[] =
         {
+            "BNA_KC_Gammoth_Base",
             "BNA_KC_Gammoth_Transport",
             "BNA_KC_Gammoth_Covered",
             "BNA_KC_Gammoth_Ammo",

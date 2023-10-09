@@ -16,6 +16,66 @@ weapons[] = {"BNA_KC_Gammoth_Horn"};
 class CfgVehicles
 {
     class O_Truck_03_transport_F;
+    class BNA_KC_Gammoth_Base: O_Truck_03_transport_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VSupport";
+
+        displayName = "Gammoth (Base)"
+        crew = "BNA_KC_Unit_Phase2_CT";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_CT"};
+        side = 1;
+
+        weapons[] = {"BNA_KC_Gammoth_Horn"};
+
+        hiddenSelectionsTextures[] = {};
+        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
+        class TextureSources
+        {
+            class CamoKC
+            {
+                author = "SweMonkey and DartRuffian";
+                displayName = "Keeli Company Camo";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body_CamoKC.paa",
+                    "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body2_CamoKC.paa",
+                    "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Cargo\Cargo_CamoKC.paa"
+                };
+            };
+            class CamoBrown: CamoKC
+            {
+                displayName = "Brown Camo";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body_CamoBrown.paa",
+                    "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body2_CamoBrown.paa",
+                    "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Cargo\Cargo_CamoBrown.paa"
+                };
+            };
+            class CamoGrey: CamoKC
+            {
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body_CamoGrey.paa",
+                    "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body2_CamoGrey.paa",
+                    "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Cargo\Cargo_CamoGrey.paa"
+                };
+            };
+        };
+    };
+
     class BNA_KC_Gammoth_Transport: O_Truck_03_transport_F
     {
         GAMMOTH_COMMON()
