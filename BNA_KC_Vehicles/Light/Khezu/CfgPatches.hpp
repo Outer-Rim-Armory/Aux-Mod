@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class BNA_KC_Vehicles_TX130
+    class BNA_KC_Vehicles_Khezu
     {
         addonRootClass= "BNA_KC_Vehicles";
         author = "SweMonkey and DartRuffian";
