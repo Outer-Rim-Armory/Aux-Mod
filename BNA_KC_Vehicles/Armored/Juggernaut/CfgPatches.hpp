@@ -7,16 +7,14 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "A3_Armor_F_Beta_APC_Wheeled_02",
-                // Otokar
-            "BNA_KC_Vehicles_Weapons",
-                // Weapons
-            "BNA_KC_Vehicles_Sounds"
-                // Sounds
+            "3AS_APC_Jug",
+                // Juggernaut
+            "BNA_KC_Vehicles_Weapons"
+                // Horn & Alarm
         };
         units[] =
         {
-            "BNA_KC_APC_OLV20"
+            "BNA_KC_Juggernaut"
         };
         weapons[] = {};
     };
