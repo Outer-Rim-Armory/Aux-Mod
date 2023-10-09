@@ -21,27 +21,22 @@ class CfgEditorSubcategories
         scopeCurator = 2;
         displayName = "Vehicles - Air";
     };
-
     class BNA_KC_SubCat_VArmored: BNA_KC_SubCat_VAir
     {
         displayName = "Vehicles - Armored";
     };
-
     class BNA_KC_SubCat_VDrones: BNA_KC_SubCat_VAir
     {
         displayName = "Vehicles - Drones";
     };
-
     class BNA_KC_SubCat_VLight: BNA_KC_SubCat_VAir
     {
         displayName = "Vehicles - Light";
     };
-
     class BNA_KC_SubCat_VSupport: BNA_KC_SubCat_VAir
     {
         displayName = "Vehicles - Support";
     };
-
     class BNA_KC_SubCat_VStatic: BNA_KC_SubCat_VAir
     {
         displayName = "Static Weapons";
