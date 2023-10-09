@@ -67,19 +67,20 @@ class CfgVehicles
         KHEZU_TEXTURES()
     };
 
-    class UGV_01_base_F;
-    class UGV_01_rcws_base_F: UGV_01_base_F
+    class Car_F;
+    class UGV_01_base_F: Car_F
     {
         class Turrets;
-    }
-    class B_UGV_01_rcws_F: UGV_01_rcws_base_F
+    };
+    class UGV_01_rcws_base_F: UGV_01_base_F
     {
         class Turrets: Turrets
         {
             class MainTurret;
-            // class CargoTurret_01;
+            class CargoTurret_01;
         };
     };
+    class B_UGV_01_rcws_F: UGV_01_rcws_base_F {};
     class BNA_KC_Khezu_Armed: B_UGV_01_rcws_F
     {
         // Mod Info
@@ -101,7 +102,6 @@ class CfgVehicles
 
         class Turrets: Turrets
         {
-            // class CargoTurret_01
             class MainTurret: MainTurret
             {
                 weapons[] = {"BNA_KC_Coax", "GMG_40mm"};
@@ -113,6 +113,7 @@ class CfgVehicles
                     "200Rnd_40mm_G_belt"
                 };
             };
+            class CargoTurret_01: CargoTurret_01 {};
         };
     };
 };
