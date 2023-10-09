@@ -86,22 +86,24 @@ class CfgVehicles
         editorPreview = "\BNA_KC_Vehicles\Support\Gammoth\Data\Previews\Gammoth_Transport.jpg";
     };
 
-    class O_Truck_03_covered_F;
-    class BNA_KC_Gammoth_Covered: O_Truck_03_covered_F
+    class BNA_KC_Gammoth_Covered: BNA_KC_Gammoth_Base
     {
-        GAMMOTH_COMMON()
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
         displayName = "Gammoth Transport (Covered)";
         editorPreview = "\BNA_KC_Vehicles\Support\Gammoth\Data\Previews\Gammoth_Covered.jpg";
 
-        hiddenSelectionsTextures[] = {};
-        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
-        class TextureSources
+        model = "\A3\Soft_F_EPC\Truck_03\Truck_03_covered_F.p3d";
+        hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "Camo4"};
+        picture = "\A3\Soft_F_EPC\Truck_03\Data\UI\truck_03_covered_CA.paa";
+        icon = "\A3\Soft_F_EPC\Truck_03\Data\UI\map_Truck_03_Covered_CA.paa";
+
+        class TextureSources: TextureSources
         {
-            class CamoKC
+            class CamoKC: CamoKC
             {
-                author = "SweMonkey and DartRuffian";
-                displayName = "Keeli Company Camo";
-                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body_CamoKC.paa",
@@ -110,9 +112,8 @@ class CfgVehicles
                     "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Covered\Covered_CamoKC.paa"
                 };
             };
-            class CamoBrown: CamoKC
+            class CamoBrown: CamoBrown
             {
-                displayName = "Brown Camo";
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body_CamoBrown.paa",
@@ -121,9 +122,8 @@ class CfgVehicles
                     "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Covered\Covered_CamBrown.paa"
                 };
             };
-            class CamoGrey: CamoKC
+            class CamoGrey: CamoGrey
             {
-                displayName = "Grey Camo";
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body_CamoGrey.paa",
