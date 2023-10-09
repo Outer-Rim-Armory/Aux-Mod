@@ -14,22 +14,6 @@ class CfgVehicles
 };
 
 
-class CfgFunctions
-{
-    class BNAKC
-    {
-        class ATRT
-        {
-            file = "BNA_KC_Vehicles\Light\Data\Functions\ATRT";
-            class initATRT {};
-            class mountATRT {};
-            class dismountATRT {};
-            class spawnATRTSmoke {};
-        };
-    };
-};
-
-
 class Extended_Init_EventHandlers
 {
     class BNA_KC_ATRT
