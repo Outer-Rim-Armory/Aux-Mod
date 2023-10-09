@@ -55,7 +55,7 @@ class TextureSources \
     { \
         author = "SweMonkey and DartRuffian"; \
         displayName = "KC Brown Camo"; \
-        factions[] = { "BNA_KC_Faction" }; \
+        factions[] = {"BNA_KC_Faction"}; \
         textures[] = \
         { \
             "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa", \
@@ -178,7 +178,7 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                weapons[] = { "BNA_KC_Mounted_MG" };
+                weapons[] = {"BNA_KC_Mounted_MG"};
                 magazines[] =
                 {
                     "BNA_KC_1000rnd_Coax_Mag",
@@ -268,7 +268,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "KC Brown Camo";
-                factions[] = { "BNA_KC_Faction" };
+                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa",
@@ -316,7 +316,7 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                weapons[] = { "BNA_KC_Mounted_MissileLauncher" };
+                weapons[] = {"BNA_KC_Mounted_MissileLauncher"};
             };
             class CargoTurret_01: CargoTurret_01 {};
             class CargoTurret_02: CargoTurret_02 {};
