@@ -42,7 +42,7 @@ class CfgVehicles
         // Textures are not set-up on the 3AS end yet.
         // hiddenSelectionsTextures[] =
         // {
-        //     "BNA_KC_Vehicles\Light\Data\Textures\ATRT\BNA_KC_ATRT.paa"
+        //     "\BNA_KC_Vehicles\Light\ATRT\Data\Textures\Body.paa"
         // };
         class EventHandlers: EventHandlers
         {
@@ -72,7 +72,7 @@ class CfgWeapons
     {
         displayName = "AT-RT Plating";
         JLTS_hasStunProtection = 1;
-        picture = "\BNA_KC_Vehicles\Light\Data\Textures\UI\Uniform_ATRT_UI.paa";
+        picture = "\BNA_KC_Vehicles\Light\ATRT\Data\UI\Uniform_ATRT_UI.paa";
 
         class ItemInfo: ItemInfo
         {
