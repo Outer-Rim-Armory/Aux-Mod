@@ -20,7 +20,10 @@ class CfgPatches
         };
         units[] =
         {
-
+            "BNA_KC_Glavenus_Unarmed",
+            "BNA_KC_Glavenus_Medic",
+            "BNA_KC_Glavenus_HMG",
+            "BNA_KC_Glavenus_GMG"
         };
         weapons[] = {};
     };
