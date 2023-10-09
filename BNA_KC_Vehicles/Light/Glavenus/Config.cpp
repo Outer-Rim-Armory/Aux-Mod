@@ -299,33 +299,6 @@ class CfgVehicles
         };
     };
 
-    class O_MRAP_02_gmg_F;
-    class BNA_KC_Glavenus_GMG: O_MRAP_02_gmg_F
-    {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        // Scope
-        scope = 2;
-        scopeCurator = 2;
-
-        // Editor Attributes
-        faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
-        editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Turret.jpg";
-
-        displayName = "Glavenus (GMG)";
-        crew = "BNA_KC_Unit_Phase2_CT";
-        typicalCargo[] = {"BNA_KC_Unit_Phase2_CT"};
-        side = 1;
-
-        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
-
-        GLAVENUS_TEXTURES();
-        GLAVENUS_INVENTORY();
-    };
-
     class Car;
     class Car_F: Car
     {
@@ -378,5 +351,32 @@ class CfgVehicles
                 };
             };
         };
+    };
+
+    class O_MRAP_02_gmg_F;
+    class BNA_KC_Glavenus_GMG: O_MRAP_02_gmg_F
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        // Editor Attributes
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Turret.jpg";
+
+        displayName = "Glavenus (GMG)";
+        crew = "BNA_KC_Unit_Phase2_CT";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_CT"};
+        side = 1;
+
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
+
+        GLAVENUS_TEXTURES();
+        GLAVENUS_INVENTORY();
     };
 };
