@@ -103,51 +103,22 @@ class CfgVehicles
         HORNET_INVENTORY()
     };
 
-    class All {};
-    class AllVehicles: All
-    {
-        class NewTurret {};
-        class CargoTurret: NewTurret {};
-    };
-    class Land: AllVehicles {};
-    class LandVehicle: Land {};
-    class Car: LandVehicle {};
-    class Car_F: Car
-    {
-        class NewTurret: NewTurret {};
-        class Turrets
-        {
-            class MainTurret: NewTurret {};
-        };
-        class AnimationSources {};
-    };
+    class Car_F;
     class LSV_02_base_F: Car_F
     {
-        class Turrets: Turrets
-        {
-            class CargoTurret_01: CargoTurret {};
-            class CargoTurret_02: CargoTurret_01 {};
-            class CargoTurret_03: CargoTurret_01 {};
-            class CargoTurret_04: CargoTurret_01 {};
-            class CargoTurret_05: CargoTurret_01 {};
-        };
-        class AnimationSources: AnimationSources
-        {
-            class Minigun {};
-            class muzzle_hide {};
-            class muzzle_rot {};
-        };
+        class AnimationSources;
+        class Turrets;
     };
     class LSV_02_armed_base_F: LSV_02_base_F
     {
         class Turrets: Turrets
         {
             class MainTurret;
-            class CargoTurret_01: CargoTurret_01 {};
-            class CargoTurret_02: CargoTurret_02 {};
-            class CargoTurret_03: CargoTurret_03 {};
-            class CargoTurret_04: CargoTurret_04 {};
-            class CargoTurret_05: CargoTurret_05 {};
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class CargoTurret_05;
         };
     };
     class O_LSV_02_armed_F: LSV_02_armed_base_F {};
@@ -195,39 +166,35 @@ class CfgVehicles
 
         class AnimationSources: AnimationSources
         {
-            class Minigun: Minigun
+            class Minigun
             {
+                source = "revolving";
                 weapon = "BNA_KC_Mounted_MG";
             };
-            class muzzle_hide: muzzle_hide
+            class muzzle_hide
             {
+                source = "reload";
                 weapon = "BNA_KC_Mounted_MG";
             };
-            class muzzle_rot: muzzle_rot
+            class muzzle_rot
             {
+                source = "ammorandom";
                 weapon = "BNA_KC_Mounted_MG";
             };
         };
     };
 
-
     class LSV_02_AT_base_F: LSV_02_base_F
     {
+        class AnimationSources;
         class Turrets: Turrets
         {
-            class MainTurret: MainTurret {};
-            class CargoTurret_01: CargoTurret_01 {};
-            class CargoTurret_02: CargoTurret_02 {};
-            class CargoTurret_03: CargoTurret_03 {};
-            class CargoTurret_04: CargoTurret_04 {};
-            class CargoTurret_05: CargoTurret_05 {};
-        };
-        class AnimationSources: AnimationSources
-        {
-            class VoronaMuzzle_reload {};
-            class VoronaMuzzle_reloadMagazine {};
-            class VoronaMuzzle_revolving {};
-            class VoronaMuzzle_rot {};
+            class MainTurret;
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class CargoTurret_05;
         };
     };
     class O_LSV_02_AT_F: LSV_02_AT_base_F {};
@@ -294,20 +261,24 @@ class CfgVehicles
 
         class AnimationSources: AnimationSources
         {
-            class VoronaMuzzle_reload: VoronaMuzzle_reload
+            class VoronaMuzzle_reload
             {
+                source = "reload";
                 weapon = "BNA_KC_Mounted_MissileLauncher";
             };
-            class VoronaMuzzle_reloadMagazine: VoronaMuzzle_reloadMagazine
+            class VoronaMuzzle_reloadMagazine
             {
+                source = "reloadMagazine";
                 weapon = "BNA_KC_Mounted_MissileLauncher";
             };
-            class VoronaMuzzle_revolving: VoronaMuzzle_revolving
+            class VoronaMuzzle_revolving
             {
+                source = "revolving";
                 weapon = "BNA_KC_Mounted_MissileLauncher";
             };
-            class VoronaMuzzle_rot: VoronaMuzzle_rot
+            class VoronaMuzzle_rot
             {
+                source = "ammorandom";
                 weapon = "BNA_KC_Mounted_MissileLauncher";
             };
         };
