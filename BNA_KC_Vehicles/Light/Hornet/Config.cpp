@@ -94,10 +94,10 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VLight";
         editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Hornet_Unarmed.jpg";
 
+        displayName = "Hornet Strike Vehicle (Unarmed)";
         crew = "BNA_KC_Unit_ARF";
+        typicalCargo[] = {"BNA_KC_Unit_ARF"};
         side = 1;
-
-        displayName = "[KC] Hornet Strike Vehicle (Unarmed)";
 
         HORNET_TEXTURES()
         HORNET_INVENTORY()
@@ -166,10 +166,10 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VLight";
         editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet_MG.jpg";
 
+        displayName = "Hornet Strike Vehicle (MG)";
         crew = "BNA_KC_Unit_ARF";
+        typicalCargo[] = {"BNA_KC_Unit_ARF"};
         side = 1;
-
-        displayName = "[KC] Hornet Strike Vehicle (MG)";
 
         HORNET_TEXTURES()
         HORNET_INVENTORY()
@@ -246,10 +246,10 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VLight";
         editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet_Launcher.jpg";
 
+        displayName = "Hornet Strike Vehicle (AT)";
         crew = "BNA_KC_Unit_ARF";
+        typicalCargo[] = {"BNA_KC_Unit_ARF"};
         side = 1;
-
-        displayName = "[KC] Hornet Strike Vehicle (AT)";
 
         HORNET_INVENTORY()
 
@@ -292,19 +292,6 @@ class CfgVehicles
             };
         };
 
-        class Turrets: Turrets
-        {
-			class MainTurret: MainTurret
-            {
-                weapons[] = { "BNA_KC_Mounted_MissileLauncher" };
-            };
-            class CargoTurret_01: CargoTurret_01 {};
-            class CargoTurret_02: CargoTurret_02 {};
-            class CargoTurret_03: CargoTurret_03 {};
-            class CargoTurret_04: CargoTurret_04 {};
-            class CargoTurret_05: CargoTurret_05 {};
-		};
-
         class AnimationSources: AnimationSources
         {
 			class VoronaMuzzle_reload: VoronaMuzzle_reload
@@ -323,6 +310,19 @@ class CfgVehicles
             {
                 weapon = "BNA_KC_Mounted_MissileLauncher";
             };
+		};
+
+        class Turrets: Turrets
+        {
+			class MainTurret: MainTurret
+            {
+                weapons[] = { "BNA_KC_Mounted_MissileLauncher" };
+            };
+            class CargoTurret_01: CargoTurret_01 {};
+            class CargoTurret_02: CargoTurret_02 {};
+            class CargoTurret_03: CargoTurret_03 {};
+            class CargoTurret_04: CargoTurret_04 {};
+            class CargoTurret_05: CargoTurret_05 {};
 		};
     };
 };
