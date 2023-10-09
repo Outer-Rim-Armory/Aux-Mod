@@ -1,6 +1,80 @@
 #include "CfgPatches.hpp"
 #include "..\..\Common\Macros.hpp"
 
+// Macros
+#define HORNET_INVENTORY() class TransportWeapons \
+{ \
+    class _xx_BNA_KC_DC15A \
+    { \
+        weapon = "BNA_KC_DC15A"; \
+        count = 1; \
+    }; \
+    class _xx_BNA_KC_DC15S \
+    { \
+        weapon = "BNA_KC_DC15S"; \
+        count = 1; \
+    }; \
+}; \
+class TransportMagazines \
+{ \
+    class _xx_Aux12thFleet_Mag_DC15A \
+    { \
+        magazine = "Aux12thFleet_Mag_DC15A"; \
+        count = 15; \
+    }; \
+    class _xx_Aux12thFleet_Mag_DC15S \
+    { \
+        magazine = "Aux12thFleet_Mag_DC15S"; \
+        count = 15; \
+    }; \
+    class _xx_Aux12thFleet_Mag_DC15X \
+    { \
+        magazine = "Aux12thFleet_Mag_DC15X"; \
+        count = 5; \
+    }; \
+}; \
+class TransportItems \
+{ \
+    class _xx_ACE_elasticBandage \
+    { \
+        name = "ACE_elasticBandage"; \
+        count = 30; \
+    }; \
+};
+
+#define HORNET_TEXTURES() hiddenSelectionsTextures[] = \
+{ \
+    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Brown.paa", \
+    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
+    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
+}; \
+textureList[] = {"BrownCamo", 1, "GreyCamo", 0}; \
+class TextureSources \
+{ \
+    class BrownCamo \
+    { \
+        author = "SweMonkey and DartRuffian"; \
+        displayName = "KC Brown Camo"; \
+        factions[] = { "BNA_KC_Faction" }; \
+        textures[] = \
+        { \
+            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Brown.paa", \
+            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
+            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
+        }; \
+    }; \
+    class GreyCamo: BrownCamo \
+    { \
+        displayName = "Grey Camo"; \
+        textures[] = \
+        { \
+            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Grey.paa", \
+            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
+            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
+        }; \
+    }; \
+};
+
 
 class CfgVehicles
 {
@@ -90,7 +164,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
-        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Hornet_Armed.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet_MG.jpg";
 
         crew = "BNA_KC_Unit_ARF";
         side = 1;
@@ -170,7 +244,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
-        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Hornet_AT.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet_Launcher.jpg";
 
         crew = "BNA_KC_Unit_ARF";
         side = 1;
@@ -182,11 +256,11 @@ class CfgVehicles
         // The launcher model adds two more hiddenSelections, meaning the normal macro would require extra editing
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa",
-            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa"
+            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa",
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Launcher.paa",
+            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Launcher.paa"
         };
         class TextureSources
         {
@@ -197,11 +271,11 @@ class CfgVehicles
                 factions[] = { "BNA_KC_Faction" };
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Brown.paa",
-                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa",
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa"
+                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Launcher.paa",
+                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Launcher.paa"
                 };
             };
             class GreyCamo: BrownCamo
@@ -209,11 +283,11 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Grey.paa",
-                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa",
-                    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Launcher.paa"
+                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoGrey.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Launcher.paa",
+                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Launcher.paa"
                 };
             };
         };
