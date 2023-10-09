@@ -135,22 +135,35 @@ class CfgVehicles
         };
     };
 
-    class O_Truck_03_ammo_F;
-    class BNA_KC_Gammoth_Ammo: O_Truck_03_ammo_F
+    class BNA_KC_Gammoth_Ammo: BNA_KC_Gammoth_Base
     {
-        GAMMOTH_COMMON()
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
         displayName = "Gammoth Ammo Truck";
         editorPreview = "\BNA_KC_Vehicles\Support\Gammoth\Data\Previews\Gammoth_Ammo.jpg";
 
-        hiddenSelectionsTextures[] = {};
-        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
-        class TextureSources
+        ace_cargo_space = 8;
+        ace_rearm_defaultSupply = 1200;
+        supplyRadius = 10;
+        transportAmmo = 0;
+        transportSoldier = 1;
+        vehicleClass = "Support";
+
+        explosionEffect = "FuelExplosion";
+        fuelExplosionPower = 5;
+        secondaryExplosion = 10000;
+
+        model = "\A3\Soft_F_EPC\Truck_03\Truck_03_box_F.p3d";
+        hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "Camo4"};
+        picture = "\A3\Soft_F_EPC\Truck_03\Data\UI\truck_03_box_CA.paa";
+        icon = "\A3\Soft_F_EPC\Truck_03\Data\UI\map_Truck_03_box_CA.paa";
+
+        class TextureSources: TextureSources
         {
-            class CamoKC
+            class CamoKC: CamoKC
             {
-                author = "SweMonkey and DartRuffian";
-                displayName = "Keeli Company Camo";
-                factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body_CamoKC.paa",
@@ -159,9 +172,8 @@ class CfgVehicles
                     "\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
                 };
             };
-            class CamoBrown: CamoKC
+            class CamoBrown: CamoBrown
             {
-                displayName = "Brown Camo";
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body_CamoBrown.paa",
@@ -170,9 +182,8 @@ class CfgVehicles
                     "\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
                 };
             };
-            class CamoGrey: CamoKC
+            class CamoGrey: CamoGrey
             {
-                displayName = "Grey Camo";
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body_CamoGrey.paa",
