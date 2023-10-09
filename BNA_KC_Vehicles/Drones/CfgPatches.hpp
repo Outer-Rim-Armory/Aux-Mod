@@ -7,7 +7,7 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "BNA_KC_Vehicles_Armored",
+            "BNA_KC_Vehicles_OLV20",
                 // Turret texture
             "A3_Drones_F_Soft_F_Gamma_UGV_01"
                 // Stomper drones
