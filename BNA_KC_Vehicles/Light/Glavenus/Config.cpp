@@ -3,14 +3,14 @@
 
 
 #define GLAVENUS_TEXTURES() hiddenSelectionsTextures[] = {}; \
-textureList[] = {"BrownWhite", 1, "CamoKC", 0, "BrownCamo", 0, "GreyCamo", 0}; \
+textureList[] = {"KeeliCompany", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0}; \
 class TextureSources \
 { \
-    class BrownWhite \
+    class KeeliCompany \
     { \
         author = "SweMonkey and DartRuffian"; \
-        displayName = "Brown/White"; \
-        factions[] = { "BNA_KC_Faction" }; \
+        displayName = "Keeli Company"; \
+        factions[] = {"BNA_KC_Faction"}; \
         textures[] = \
         { \
             "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa", \
@@ -18,7 +18,7 @@ class TextureSources \
             "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Turret.paa" \
         }; \
     }; \
-    class CamoKC: BrownWhite \
+    class CamoKC: KeeliCompany \
     { \
         displayName = "Keeli Company Camo"; \
         textures[] = \
@@ -28,7 +28,7 @@ class TextureSources \
             "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Turret.paa" \
         }; \
     }; \
-    class BrownCamo: BrownWhite \
+    class CamoBrown: KeeliCompany \
     { \
         displayName = "Brown Camo"; \
         textures[] = \
@@ -38,7 +38,7 @@ class TextureSources \
             "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Turret.paa" \
         }; \
     }; \
-    class GreyCamo: BrownWhite \
+    class CamoGrey: KeeliCompany \
     { \
         displayName = "Grey Camo"; \
         textures[] = \
@@ -190,7 +190,7 @@ class CfgVehicles
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
 
-        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
     };
 
     class BNA_KC_Glavenus_Medic: BNA_KC_Glavenus_Unarmed
@@ -209,7 +209,7 @@ class CfgVehicles
         textureList[] = {};
         class TextureSources {};
 
-        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
         class TransportWeapons {};
         class TransportItems
@@ -323,7 +323,7 @@ class CfgVehicles
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
 
-        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
     };
 
     class MRAP_02_base_F;
@@ -361,13 +361,13 @@ class CfgVehicles
         GLAVENUS_TEXTURES();
         GLAVENUS_INVENTORY();
 
-        weapons[] = { "BNA_KC_Glavenus_Horn", "SmokeLauncher" };
+        weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
         class Turrets: Turrets
         {
             class MainTurret: MainTurret
             {
-                weapons[] = { "BNA_KC_Coax" };
+                weapons[] = {"BNA_KC_Coax"};
                 magazines[] =
                 {
                     "BNA_KC_1000rnd_Coax_Mag",
