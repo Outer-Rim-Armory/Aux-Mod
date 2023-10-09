@@ -19,8 +19,8 @@ class CfgVehicles
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 2;
-        scopeCurator = 2;
+        scope = 1;
+        scopeCurator = 0;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";

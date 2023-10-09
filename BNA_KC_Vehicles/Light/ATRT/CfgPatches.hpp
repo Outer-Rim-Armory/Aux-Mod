@@ -18,7 +18,7 @@ class CfgPatches
         };
         units[] =
         {
-
+            "BNA_KC_ATRT"
         };
         weapons[] = {};
     };
