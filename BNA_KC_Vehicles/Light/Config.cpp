@@ -729,18 +729,20 @@ class CfgVehicles
         weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
     };
 
-    class MRAP_02_base_F;
-    class MRAP_02_hmg_base_F: MRAP_02_base_F
+    class Car;
+    class Car_F: Car
     {
         class Turrets;
     };
-    class O_MRAP_02_hmg_F: MRAP_02_hmg_base_F
+    class MRAP_02_base_F: Car_F {};
+    class MRAP_02_hmg_base_F: MRAP_02_base_F
     {
         class Turrets: Turrets
         {
             class MainTurret;
         };
     };
+    class O_MRAP_02_hmg_F: MRAP_02_hmg_base_F {};
     class BNA_KC_Glavenus_HMG: O_MRAP_02_hmg_F
     {
         // Mod Info
