@@ -20,7 +20,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VDrones";
         editorPreview = "\BNA_KC_Vehicles\Drones\Data\Previews\BNA_KC_Khezu_Unarmed.jpg";
 
-        displayName = "[KC] Khezu (Unarmed)";
+        displayName = "Khezu (Unarmed)";
 
         hiddenSelectionsTextures[] =
         {
@@ -94,7 +94,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VDrones";
         editorPreview = "\BNA_KC_Vehicles\Drones\Data\Previews\BNA_KC_Khezu_Armed.jpg";
 
-        displayName = "[KC] Khezu (MG/GMG)";
+        displayName = "Khezu (MG/GMG)";
 
         hiddenSelectionsTextures[] =
         {
