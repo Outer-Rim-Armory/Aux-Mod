@@ -13,9 +13,9 @@ class TextureSources \
         factions[] = { "BNA_KC_Faction" }; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Turret.paa" \
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa", \
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body2.paa", \
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Turret.paa" \
         }; \
     }; \
     class CamoKC: BrownWhite \
@@ -23,9 +23,9 @@ class TextureSources \
         displayName = "Keeli Company Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_CamoKC.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_CamoKC.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoKC.paa" \
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoKC\Body.paa", \
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoKC\Body2.paa", \
+            "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Turret.paa" \
         }; \
     }; \
     class BrownCamo: BrownWhite \
@@ -33,9 +33,9 @@ class TextureSources \
         displayName = "Brown Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_CamoBrown.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_CamoBrown.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoBrown.paa" \
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoBrown\Body.paa", \
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoBrown\Body2.paa", \
+            "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Turret.paa" \
         }; \
     }; \
     class GreyCamo: BrownWhite \
@@ -43,9 +43,9 @@ class TextureSources \
         displayName = "Grey Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_CamoGrey.paa", \
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_CamoGrey.paa", \
-            "BNA_KC_Vehicles\Armored\Data\Textures\OLV20\BNA_KC_OLV20_Turret_CamoGrey.paa" \
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoGrey\Body.paa", \
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoGrey\Body2.paa", \
+            "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoGrey\Turret.paa" \
         }; \
     }; \
 };
@@ -180,7 +180,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
-        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Glavenus_Unarmed.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Unarmed.jpg";
 
         crew = "BNA_KC_Unit_Phase2_CT";
         side = 1;
@@ -196,14 +196,14 @@ class CfgVehicles
     class BNA_KC_Glavenus_Medic: BNA_KC_Glavenus_Unarmed
     {
         displayName = "[KC] Glavenus (Medic)";
-        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Glavenus_Medic.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Medic.jpg";
 
         attendant = 1;
 
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body_Medic.paa",
-            "BNA_KC_Vehicles\Light\Data\Textures\Glavenus\BNA_KC_Glavenus_Body2_Medic.paa",
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\Medic\Body.paa",
+            "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\Medic\Body2.paa",
             ""
         };
         textureList[] = {};
@@ -313,7 +313,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
-        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Glavenus_GMG.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Turret.jpg";
 
         crew = "BNA_KC_Unit_Phase2_CT";
         side = 1;
@@ -351,7 +351,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
-        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Glavenus_HMG.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Turret.jpg";
 
         crew = "BNA_KC_Unit_Phase2_CT";
         side = 1;
