@@ -18,10 +18,10 @@ class CfgVehicles
         };
         class UserActions
         {
-            class Crow_nest_Up;
-            class Crow_nest_down;
-            class Open_rockets;
-            class Close_rockets;
+            class Crow_Nest_Up;
+            class Crow_Nest_Down;
+            class Open_Rockets;
+            class Close_Rockets;
         };
     };
     class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F {};
@@ -40,8 +40,9 @@ class CfgVehicles
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
 
-        displayName = "[KC] HAVw A6 Juggernaut";
+        displayName = "HAVw A6 Juggernaut";
         crew = "BNA_KC_Unit_Phase2_Tanker";
+        typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
 
         ace_cargo_space = 20;
 
@@ -68,19 +69,19 @@ class CfgVehicles
 
         class UserActions: UserActions
         {
-            class Crow_nest_Up: Crow_nest_Up
+            class Crow_Nest_Up: Crow_Nest_Up
             {
                 condition = "this animationSourcePhase 'crownest' == 0 and alive this and ace_player == this turretUnit [4]";
             };
-            class Crow_nest_down: Crow_nest_down
+            class Crow_Nest_Down: Crow_Nest_Down
             {
                 condition = "this animationSourcePhase 'crownest' == 5 and alive this and ace_player == this turretUnit [4]";
             };
-            class Open_rockets: Open_rockets
+            class Open_Rockets: Open_Rockets
             {
                 condition = "this animationSourcePhase 'rocket_move' == 1  and alive this and ace_player == this turretUnit [3]";
             };
-            class Close_rockets: Close_rockets
+            class Close_Rockets: Close_Rockets
             {
                 condition = "this animationSourcePhase 'rocket_move' == 0 and alive this and ace_player == this turretUnit [3]";
             };
