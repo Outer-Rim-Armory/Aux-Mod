@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Vehicles",
+                // Core Config
             "A3_Soft_F_Exp_LSV_02",
                 // Metis-M LSV
             "BNA_KC_Vehicles_Weapons"
