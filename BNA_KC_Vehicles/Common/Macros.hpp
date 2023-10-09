@@ -84,6 +84,120 @@
     statement = QUOTE(this call BNAKC_fnc_specialLoad); \
 };
 
+#define INVENTORY_VEHICLE_COMMON class TransportWeapons {}; \
+class TransportMagazines \
+{ \
+    class _xx_Aux12thFleet_Mag_DC15A \
+    { \
+        magazine = "Aux12thFleet_Mag_DC15A"; \
+        count = 5; \
+    }; \
+    class _xx_Aux12thFleet_Mag_DC15S \
+    { \
+        magazine = "Aux12thFleet_Mag_DC15S"; \
+        count = 5; \
+    }; \
+    class _xx_3Rnd_UGL_FlareWhite_F \
+    { \
+        magazine = "3Rnd_UGL_FlareWhite_F"; \
+        count = 2; \
+    }; \
+    class _xx_3Rnd_UGL_FlareRed_F \
+    { \
+        magazine = "3Rnd_UGL_FlareRed_F"; \
+        count = 2; \
+    }; \
+    class _xx_BNA_KC_3Rnd_UGL_FlareBlue \
+    { \
+        magazine = "BNA_KC_3Rnd_UGL_FlareBlue"; \
+        count = 2; \
+    }; \
+    class _xx_3Rnd_UGL_FlareCIR_F \
+    { \
+        magazine = "3Rnd_UGL_FlareCIR_F"; \
+        count = 2; \
+    }; \
+    class _xx_3Rnd_Smoke_Grenade_shell \
+    { \
+        magazine = "3Rnd_Smoke_Grenade_shell"; \
+        count = 2; \
+    }; \
+    class _xx_3Rnd_SmokeRed_Grenade_shell \
+    { \
+        magazine = "3Rnd_SmokeRed_Grenade_shell"; \
+        count = 2; \
+    }; \
+    class _xx_3Rnd_SmokeGreen_Grenade_shell \
+    { \
+        magazine = "3Rnd_SmokeGreen_Grenade_shell"; \
+        count = 2; \
+    }; \
+    class _xx_3Rnd_SmokeYellow_Grenade_shell \
+    { \
+        magazine = "3Rnd_SmokeYellow_Grenade_shell"; \
+        count = 2; \
+    }; \
+    class _xx_3Rnd_SmokePurple_Grenade_shell \
+    { \
+        magazine = "3Rnd_SmokePurple_Grenade_shell"; \
+        count = 2; \
+    }; \
+    class _xx_3Rnd_SmokeBlue_Grenade_shell \
+    { \
+        magazine = "3Rnd_SmokeBlue_Grenade_shell"; \
+        count = 2; \
+    }; \
+    class _xx_3Rnd_SmokeOrange_Grenade_shell \
+    { \
+        magazine = "3Rnd_SmokeOrange_Grenade_shell"; \
+        count = 2; \
+    }; \
+    class _xx_3Rnd_HE_Grenade_shell \
+    { \
+        magazine = "3Rnd_HE_Grenade_shell"; \
+        count = 2; \
+    }; \
+    class _xx_Aux12thFleet_Mag_DC17 \
+    { \
+        magazine = "Aux12thFleet_Mag_DC17"; \
+        count = 5; \
+    }; \
+    class _xx_ls_mag_rpg_1rnd \
+    { \
+        magazine = "ls_mag_rpg_1rnd"; \
+        count = 1; \
+    }; \
+    class _xx_ls_mag_classC_thermalDet \
+    { \
+        magazine = "ls_mag_classC_thermalDet"; \
+        count = 4; \
+    }; \
+}; \
+class TransportBackpacks {}; \
+class TransportItems \
+{ \
+    class _xx_ACE_elasticBandage \
+    { \
+        name = "ACE_elasticBandage"; \
+        count = 20; \
+    }; \
+    class _xx_RD501_Painkiller \
+    { \
+        name = "RD501_Painkiller"; \
+        count = 5; \
+    }; \
+    class _xx_ACE_tourniquet \
+    { \
+        name = "ACE_tourniquet"; \
+        count = 4; \
+    }; \
+    class _xx_ACE_Splint \
+    { \
+        name = "ACE_Splint"; \
+        count = 2; \
+    }; \
+};
+
 #define INVENTORY_VEHICLE_MEDICAL class TransportWeapons {}; \
 class TransportMagazines \
 { \
