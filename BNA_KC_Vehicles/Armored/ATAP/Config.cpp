@@ -25,7 +25,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VArmored";
         editorPreview = "\BNA_KC_Vehicles\Armored\ATAP\Data\Previews\ATAP.jpg";
 
-        displayName = "[KC] AT-AP";
+        displayName = "AT-AP";
         crew = "BNA_KC_Unit_Phase2_Tanker";
 
         hiddenSelectionsTextures[] =

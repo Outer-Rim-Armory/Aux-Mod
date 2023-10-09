@@ -24,7 +24,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VAir";
         editorPreview = "\BNA_KC_Vehicles\Air\Transport\Data\Previews\RepublicTransport.jpg";
 
-        displayName = "[KC] Republic Transport";
+        displayName = "Republic Transport";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
