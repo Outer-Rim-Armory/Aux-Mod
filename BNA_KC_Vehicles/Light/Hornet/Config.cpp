@@ -44,9 +44,9 @@ class TransportItems \
 
 #define HORNET_TEXTURES() hiddenSelectionsTextures[] = \
 { \
-    "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Brown.paa", \
-    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
-    "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
+    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa", \
+    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
+    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
 }; \
 textureList[] = {"BrownCamo", 1, "GreyCamo", 0}; \
 class TextureSources \
@@ -58,9 +58,9 @@ class TextureSources \
         factions[] = { "BNA_KC_Faction" }; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Brown.paa", \
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
+            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa", \
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
         }; \
     }; \
     class GreyCamo: BrownCamo \
@@ -68,9 +68,9 @@ class TextureSources \
         displayName = "Grey Camo"; \
         textures[] = \
         { \
-            "BNA_KC_Vehicles\Light\Data\Textures\Hornet\BNA_KC_Hornet_Camo_Grey.paa", \
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
-            "A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
+            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoGrey.paa", \
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa", \
+            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa" \
         }; \
     }; \
 };
