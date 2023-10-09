@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class BNA_KC_Vehicles_Support
+    class BNA_KC_Vehicles_Gammoth
     {
         addonRootClass= "BNA_KC_Vehicles";
         author = "SweMonkey and DartRuffian";
