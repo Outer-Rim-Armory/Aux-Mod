@@ -95,7 +95,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VDrones";
         editorPreview = "\BNA_KC_Vehicles\Drones\Data\Previews\BNA_KC_Khezu_Armed.jpg";
 
-        displayName = "Khezu (MG/GMG)";
+        displayName = "Khezu (HMG/GMG)";
 
         hiddenSelectionsTextures[] =
         {
@@ -144,7 +144,7 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                weapons[] = { "BNA_KC_Coax", "GMG_40mm" };
+                weapons[] = {"BNA_KC_Coax", "GMG_40mm"};
                 magazines[] =
                 {
                     "BNA_KC_1000rnd_Coax_Mag",
