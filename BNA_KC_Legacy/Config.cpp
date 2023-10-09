@@ -18,4 +18,5 @@ class CfgPatches
     class BNA_KC_Vehicles_Armored: BNA_KC_Gear_Weapons {};
     class BNA_KC_Vehicles_Light: BNA_KC_Gear_Weapons {};
     class BNA_KC_Vehicles_Support: BNA_KC_Gear_Weapons {};
+    class BNA_KC_Vehicles_Drones: BNA_KC_Gear_Weapons {};
 };
