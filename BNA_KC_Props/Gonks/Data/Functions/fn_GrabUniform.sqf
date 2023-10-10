@@ -47,6 +47,6 @@ player linkItem "SWLB_comlink";
 player linkItem "ItemCompass";
 player linkItem "Itemwatch";
 
-player linkItem "BNA_KC_NVG_Chip"
+player linkItem "BNA_KC_NVG_Chip";
 if (_rank in RANKS_NCO) then {player linkItem "BNA_KC_NVG_Rangefinder"};
 if (_rank in RANKS_OFFICER) then {player linkItem "BNA_KC_NVG_Officer"};
