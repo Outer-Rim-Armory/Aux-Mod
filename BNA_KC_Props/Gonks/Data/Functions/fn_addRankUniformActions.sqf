@@ -15,14 +15,8 @@
 
 #include "script_component.sqf"
 params [["_object", objNull, [objNull]]];
-private ["_ranks", "_rankLoadouts"];
 
 if (isNull _object) exitWith {};
-
-_rankLoadouts = createHashMapFromArray (RANK_LIST apply
-{
-    [_x, [format ["BNA_KC_Uniform_%1", _x], format ["BNA_KC_Helmet_Phase2_%1", _x]]];
-});
 
 {
     _object addAction
