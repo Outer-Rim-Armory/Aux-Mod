@@ -58,43 +58,25 @@ _loadoutsMap = createHashMapFromArray
 
 // -----------------------------   Assigning Loadout Script    -----------------------------
 
-_loadoutValues = _loadoutsMap getOrDefaultCall [_loadoutName, {hint format ["Loadout '%1' does not exist.", _loadoutName];}];      // Grabs loadout from array above
-//systemChat(format["%1", _loadoutValues]);
-
+_loadoutValues = _loadoutsMap getOrDefaultCall [_loadoutName, {hint format ["Loadout '%1' does not exist.", _loadoutName];}];
 _loadoutValues params ["_launcher", "_binoculars", "_vest", "_backpack", "_weapons", "_magazines", "_items"];
 
-_uniform = uniform player;     // Removes players uniform, vest and backpack then re-equips them to ensure no items are still in player inventory
-removeUniform player;
-player forceAddUniform _uniform;
-
-removeVest player;
-player addVest _vest;
-
-removeBackpack player;
-player addBackpack _backpack;
-
-removeAllWeapons player;
-
-player addWeapon _launcher;
-player addWeapon _binoculars;
+{
+    // Clear inventory
+    player removeItems _x;
+    player removeMagazines _x;
+} forEach (uniformItems player) + (vestItems player) + (backpackItems player)
 
 {
-    for "_i" from 1 to ((_x #1) - 1) do    // Adds rest of magazines, the items and the grenades
+    for "_i" from 1 to (_x#1) do
     {
-        player addMagazine (_x #0);
+        player addMagazine (_x#0);
     };
 } forEach _magazines;
 
 {
-    for "_i" from 1 to (_x #1) do
+    for "_i" from 1 to (_x#1) do
     {
-        player addMagazine (_x #0);
-    };
-} forEach _grenades;
-
-{
-    for "_i" from 1 to (_x #1) do
-    {
-        player addItem (_x #0);
+        player addItem (_x#0);
     };
 } forEach _items;
