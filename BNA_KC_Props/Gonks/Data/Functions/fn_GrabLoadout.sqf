@@ -24,19 +24,18 @@ private _loadoutsMap = createHashMapFromArray
                 ["3AS_SmokeWhite", 2],
                 ["3AS_SmokeBlue", 2],
                 ["3AS_SmokeGreen", 2],
-                ["ShieldGrenade_Mag", 3]
+                ["ShieldGrenade_Mag", 3],
+                ["Chemlight_blue", 5]
             ],
             [                         // Items ["Item classname", number of Items]
                 ["ACE_CableTie", 5],
                 ["ACE_EntrenchingTool", 1],
                 ["ACE_Flashlight_XL50", 1],
                 ["ACE_MapTools", 1],
-                ["MineDetector", 1],
                 ["JLTS_ids_gar_army", 1],
                 ["ACE_IR_Strobe_Item", 2],
                 ["ACE_elasticBandage", 20],
                 ["ACE_tourniquet", 4],
-                ["ACE_splint", 2],
                 ["ItemcTabHCam", 1]
             ]
         ]
@@ -61,19 +60,18 @@ private _loadoutsMap = createHashMapFromArray
                 ["3AS_SmokeWhite", 2],
                 ["3AS_SmokeBlue", 2],
                 ["3AS_SmokeGreen", 2],
-                ["ShieldGrenade_Mag", 3]
+                ["ShieldGrenade_Mag", 3],
+                ["Chemlight_blue", 5]
             ],
             [
                 ["ACE_CableTie", 5],
                 ["ACE_EntrenchingTool", 1],
                 ["ACE_Flashlight_XL50", 1],
                 ["ACE_MapTools", 1],
-                ["MineDetector", 1],
                 ["JLTS_ids_gar_army", 1],
                 ["ACE_IR_Strobe_Item", 2],
                 ["ACE_elasticBandage", 20],
                 ["ACE_tourniquet", 4],
-                ["ACE_splint", 2],
                 ["ItemcTabHCam", 1]
             ]
         ]
