@@ -111,16 +111,16 @@ class BNA_KC_Unit_Phase2_VCT: BNA_KC_Unit_Phase2_Base
 
 // Start of JNCO Ranks
 
-class BNA_KC_Unit_Phase2_LCPL: BNA_KC_Unit_Phase2_Base
+class BNA_KC_Unit_Phase2_CLC: BNA_KC_Unit_Phase2_Base
 {
     displayName = "[KC] INF 04 - Clone Lance Corporal";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\LCPL.jpg";
+    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\CLC.jpg";
 
-    uniformClass = "BNA_KC_Uniform_LCPL";
+    uniformClass = "BNA_KC_Uniform_CLC";
     hiddenSelectionsTextures[] =
     {
-        "\BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_LCPL_Upper.paa",
-        "\BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_LCPL_Lower.paa",
+        "\BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_CLC_Upper.paa",
+        "\BNA_KC_Gear\Infantry\Data\Uniforms\Uniform_CLC_Lower.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 

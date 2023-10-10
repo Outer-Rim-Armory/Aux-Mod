@@ -34,7 +34,7 @@ private _ranksMap = createHashMapFromArray
     [
         "CLC",
         [
-            "BNA_KC_Uniform_LCPL",
+            "BNA_KC_Uniform_CLC",
             "BNA_KC_Helmet_Phase2_CLC"
         ]
     ],

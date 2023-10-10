@@ -97,10 +97,10 @@ class CfgVehicles
                 displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab VCT Uniform</t>";
                 statement = "[""VCT""] call BNAKC_fnc_GrabUniform;";
             };
-            class BNA_KC_LCPLUniform: BNA_KC_CRUniform
+            class BNA_KC_CLCUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab LCPL Uniform</t>";
-                statement = "[""LCPL""] call BNAKC_fnc_GrabUniform;";
+                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CLC Uniform</t>";
+                statement = "[""CLC""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_CPLUniform: BNA_KC_CRUniform
             {

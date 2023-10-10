@@ -42,12 +42,12 @@ class BNA_KC_Uniform_VCT: BNA_KC_Uniform_Base
     };
 };
 
-class BNA_KC_Uniform_LCPL: BNA_KC_Uniform_Base
+class BNA_KC_Uniform_CLC: BNA_KC_Uniform_Base
 {
     displayName = "[KC] INF Armor 04 (Lance Corporal)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_LCPL";
+        uniformClass = "BNA_KC_Unit_Phase2_CLC";
     };
 };
 
