@@ -71,6 +71,9 @@ class CfgFunctions
             class disableDekaShields {};
             class tempDisableVehicles {};
             class playDroidPopperSound {};
+
+            class canUseEMP {};
+            class activateEMP {};
         };
 
         class Weapons
@@ -85,6 +88,8 @@ class CfgFunctions
             class canSwitchSkins {};
             class skinSwitcherChildren {};
             class setIntercomChannel {};
+            class canSpecialLoad {};
+            class specialLoad {};
         };
 
         class Medical
@@ -105,6 +110,21 @@ class CfgFunctions
             class weapOptions {};
         };
 	};
+
+    class ls_vehicle
+    {
+        class scripts
+        {
+            class ImpulseKey
+            {
+                file = "BNA_KC_Scripts\Data\Functions\Vehicles\fn_impulseKey.sqf";
+            };
+            class RepulseKey
+            {
+                file = "BNA_KC_Scripts\Data\Functions\Vehicles\fn_repulseKey.sqf";
+            };
+        };
+    };
 };
 
 class Extended_PreInit_EventHandlers
