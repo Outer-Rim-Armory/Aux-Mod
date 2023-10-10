@@ -77,11 +77,11 @@ class BNA_KC_Unit_Phase1_LCPL: BNA_KC_Unit_Phase1_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_LCPL", "BNA_KC_Vest_LCPL", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase1_LCPL", "BNA_KC_Vest_CLC", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_LCPL", "BNA_KC_Vest_LCPL", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase1_LCPL", "BNA_KC_Vest_CLC", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
     };
 };
 
