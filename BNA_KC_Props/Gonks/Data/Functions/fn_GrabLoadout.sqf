@@ -13,11 +13,12 @@
  */
 
 
-// -----------------------------    Loadout Map                -----------------------------
-params [["_loadoutName", ""]];
+params [["_loadoutName", "", [""]]];
+private ["_loadoutsMap", "_loadoutValues", "_uniform", "_vest", "_backpack"];
 
+if (_loadoutName isEqualTo "") exitWith {};
 
-private _loadoutsMap = createHashMapFromArray
+_loadoutsMap = createHashMapFromArray
 [
     [
         "Rifleman",                   // Hashmap key
