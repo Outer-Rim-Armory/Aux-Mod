@@ -40,7 +40,7 @@ _rankColor =
             [_rank] call BNAKC_fnc_grabUniform;
         },
         [_x],
-        1.5,
+        _forEachIndex * 2, // x2 to let other actions sit before/after actions (if needed)
         false,
         false,
         "",
