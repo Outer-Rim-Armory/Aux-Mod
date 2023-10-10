@@ -13,7 +13,7 @@
  */
 
 
-private ["_weapons"];
+private ["_weapons", "_compatibleItems"];
 
 _weapons = [primaryWeapon ace_player, handgunWeapon ace_player, secondaryWeapon ace_player];
 _compatibleItems = [];
