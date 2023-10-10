@@ -118,11 +118,11 @@ private _ranksMap = createHashMapFromArray
 ];
 
 
-_values = _ranksMap getOrDefaultCall [_rankToGrab, {hint format ["Rank armor '%1' does not exist.", _rankToGrab];}];        // Grabs values from array above
-
+_values = _ranksMap getOrDefaultCall [_rankToGrab, {hint format ["Rank armor '%1' does not exist.", _rankToGrab];}];
 _values params ["_uniform", "_helmet"];
 
-removeAllAssignedItems player;     // Removes players uniforms, linked items, headgear, vest, backpack and weapons
+// Clear inventory
+removeAllAssignedItems player;
 removeGoggles player;
 removeHeadgear player;
 removeUniform player;
@@ -130,11 +130,12 @@ removeVest player;
 removeBackpack player;
 removeAllWeapons player;
 
-
-player forceAddUniform _uniform;   // Adds uniform and helmet from values
+// Adds uniform and helmet from values
+player forceAddUniform _uniform;
 player addHeadgear _helmet;
 
-player linkItem "ItemMap";         // Adds basic linked items all players will use
+// Adds basic linked items all players will use
+player linkItem "ItemMap";
 player linkItem "ItemGPS";
 player linkItem "SWLB_comlink";
 player linkItem "ItemCompass";
