@@ -18,43 +18,48 @@ private ["_loadoutsMap", "_loadoutValues", "_uniform", "_vest", "_backpack"];
 
 if (_loadoutName isEqualTo "") exitWith {};
 
-_loadoutsMap = createHashMapFromArray
-[
+_loadoutsMap = missionNamespace getVariable ["BNA_KC_Loadouts", []];
+if (_loadoutsMap isEqualTo []) then
+{
+    _loadoutsMap = createHashMapFromArray
     [
-        "Rifleman",
         [
-            "",                  // Launcher
-            "",                  // Binoculars
-            "BNA_KC_Vest_Basic", // Vest
-            "BNA_KC_Backpack",   // Backpack
+            "Rifleman",
             [
-                // Key names from _weaponMap
-                "DC15A",
-                "DC15S"
-            ],
-            [
-                // Magazines (Grenades)
-                ["ls_mag_classC_thermalDet", 2],
-                ["3AS_SmokeWhite", 2],
-                ["3AS_SmokeBlue", 2],
-                ["3AS_SmokeGreen", 2],
-                ["ShieldGrenade_Mag", 3],
-                ["Chemlight_blue", 5]
-            ],
-            [   // Items
-                ["ACE_CableTie", 5],
-                ["ACE_EntrenchingTool", 1],
-                ["ACE_Flashlight_XL50", 1],
-                ["ACE_MapTools", 1],
-                ["JLTS_ids_gar_army", 1],
-                ["ACE_IR_Strobe_Item", 2],
-                ["ACE_elasticBandage", 20],
-                ["ACE_tourniquet", 4],
-                ["ItemcTabHCam", 1]
+                "",                  // Launcher
+                "",                  // Binoculars
+                "BNA_KC_Vest_Basic", // Vest
+                "BNA_KC_Backpack",   // Backpack
+                [
+                    // Key names from _weaponMap
+                    "DC15A",
+                    "DC15S"
+                ],
+                [
+                    // Magazines (Grenades)
+                    ["ls_mag_classC_thermalDet", 2],
+                    ["3AS_SmokeWhite", 2],
+                    ["3AS_SmokeBlue", 2],
+                    ["3AS_SmokeGreen", 2],
+                    ["ShieldGrenade_Mag", 3],
+                    ["Chemlight_blue", 5]
+                ],
+                [   // Items
+                    ["ACE_CableTie", 5],
+                    ["ACE_EntrenchingTool", 1],
+                    ["ACE_Flashlight_XL50", 1],
+                    ["ACE_MapTools", 1],
+                    ["JLTS_ids_gar_army", 1],
+                    ["ACE_IR_Strobe_Item", 2],
+                    ["ACE_elasticBandage", 20],
+                    ["ACE_tourniquet", 4],
+                    ["ItemcTabHCam", 1]
+                ]
             ]
         ]
-    ]
-];
+    ];
+    missionNamespace setVariable ["BNA_KC_Loadouts", _loadoutsMap, true];
+};
 
 // -----------------------------   Assigning Loadout Script    -----------------------------
 
