@@ -10,6 +10,7 @@ class CfgFunctions
             class GrabUniform {};
             class grabWeapon {};
             class openAttachmentArsenal {};
+            class setMos {};
         };
     };
 };

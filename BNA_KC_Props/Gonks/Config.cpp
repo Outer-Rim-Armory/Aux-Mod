@@ -180,9 +180,9 @@ class CfgVehicles
             /*
             "Page" IDs
             0: Home Page
-            1: Rifleman Weapons
+            1: Weapons
             */
-            class ChangeMenu_Rifleman
+            class Rifleman
             {
                 displayName = "<t color='#FFFFFF'>Rifleman</t>";
 
@@ -194,10 +194,10 @@ class CfgVehicles
                 priority = 100;
 
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) == 0)";
-                statement = "player setVariable ['BNAKC_Loadout_Menu', 1];";
+                statement = "'Rifleman' call BNAKC_fnc_setMos; player setVariable ['BNAKC_Loadout_Menu', 1];";
             };
 
-            class OpenArsenal: ChangeMenu_Rifleman
+            class OpenArsenal: Rifleman
             {
                 displayName = "<t color='#FFFFFF'>Weapon Attachments</t>";
                 priority = 99;
@@ -206,26 +206,13 @@ class CfgVehicles
                 statement = "call BNAKC_fnc_openAttachmentArsenal";
             };
 
-            class ChangeMenu_Home: ChangeMenu_Rifleman
+            class ChangeMenu_Home: Rifleman
             {
                 displayName = "<t color='#FFFFFF' font='PuristaSemibold'>Home</t>";
-                priority = 99;
+                priority = 98;
 
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) != 0)";
                 statement = "player setVariable ['BNAKC_Loadout_Menu', 0];";
-            };
-
-            class Rifleman: ChangeMenu_Rifleman
-            {
-                displayName = "<t color='#FFFFFF'>DC-15A</t>";
-                hideOnUse = 1;
-                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) == 1)";
-                statement = "['Rifleman'] call BNAKC_fnc_GrabLoadout;";
-            };
-            class RiflemanAlt: Rifleman
-            {
-                displayName = "<t color='#FFFFFF'>DC-15S</t>";
-                statement = "['RiflemanAlt'] call BNAKC_fnc_GrabLoadout;";
             };
         };
     };
