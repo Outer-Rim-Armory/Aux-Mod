@@ -1,6 +1,6 @@
 /*
  * Author: SweMonkey, modified by DartRuffian
- * Clears a player's inventory and assig
+ * Clears a player's inventory and assigns the correct helmet, uniform, and nvgs
  *
  * Arguments:
  * rank: String - The rank to use for helmet/uniform/etc. Must be included in RANK_LIST macro
