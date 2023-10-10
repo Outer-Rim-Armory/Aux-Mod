@@ -15,13 +15,25 @@
 
 #include "script_component.sqf"
 params [["_object", objNull, [objNull]]];
+private ["_rankColor"];
 
 if (isNull _object) exitWith {};
+
+_rankColor =
+{
+    params ["_rank"];
+    private _color = "#FFFFFF";
+    if (_rank in RANKS_NCO) then {_color = "#586619";};
+    if (_rank in RANKS_OFFICER) then {_color = "#194A66";};
+    if (_rank == "MAJ") then {_color = "#7D180A";};
+    if (_rank == "COM") then {_color = "#B49403";};
+    _color;
+};
 
 {
     _object addAction
     [
-        format ["Grab %1 Uniform", _x],
+        format ["<t color='%1'>Grab %2 Uniform</t>", _x call _rankColor, _x],
         {
             params ["_target", "_caller", "_actionId", "_arguments"];
             _arguments params ["_rank"];
