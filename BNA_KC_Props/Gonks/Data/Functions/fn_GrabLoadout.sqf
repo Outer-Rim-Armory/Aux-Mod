@@ -34,11 +34,11 @@ _loadoutsMap = createHashMapFromArray
             ],
             [
                 // Magazines (Grenades)
-                ["ls_mag_classC_thermalDet", 2]
-                ["3AS_SmokeWhite", 2]
-                ["3AS_SmokeBlue", 2]
-                ["3AS_SmokeGreen", 2]
-                ["ShieldGrenade_Mag", 3]
+                ["ls_mag_classC_thermalDet", 2],
+                ["3AS_SmokeWhite", 2],
+                ["3AS_SmokeBlue", 2],
+                ["3AS_SmokeGreen", 2],
+                ["ShieldGrenade_Mag", 3],
                 ["Chemlight_blue", 5]
             ],
             [   // Items
@@ -65,7 +65,7 @@ _loadoutValues params ["_launcher", "_binoculars", "_vest", "_backpack", "_weapo
     // Clear inventory
     player removeItems _x;
     player removeMagazines _x;
-} forEach (uniformItems player) + (vestItems player) + (backpackItems player)
+} forEach (uniformItems player) + (vestItems player) + (backpackItems player);
 
 {
     for "_i" from 1 to (_x#1) do
