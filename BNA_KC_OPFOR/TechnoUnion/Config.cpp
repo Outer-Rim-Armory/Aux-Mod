@@ -48,7 +48,7 @@ class CfgVehicles
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         uniformClass = "BNA_KC_TU_Uniform";
         hiddenSelections[] = {"camo", "insignia"};
-        hiddenSelectionsTextures[] = {"sc_equipment\data\combat_uniform\cu_tan_co.paa"};
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_tan_co.paa"};
     };
 
     class BNA_KC_TU_Unit_Rifleman: BNA_KC_TU_Unit_Base
@@ -184,9 +184,9 @@ class CfgVehicles
         displayName = "[KC TU] Backpack";
         descriptionshort = "Techno Union Backpack";
 
-        model = "sc_equipment\data\marine\mr_backpack.p3d";
+        model = "\sc_equipment\data\marine\mr_backpack.p3d";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"sc_equipment\data\marine\textures\backpack_co.paa"};
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\marine\textures\backpack_co.paa"};
         picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
     class BNA_KC_TU_Backpack_Predef_Rifleman: BNA_KC_TU_Backpack
@@ -211,8 +211,8 @@ class CfgVehicles
         maximumLoad = 450;
         mass = 35;
 
-        model = "sc_equipment\data\wasp\wp_backpack.p3d";
-        hiddenSelectionsTextures[] = {"sc_equipment\data\wasp\textures\backpack_co.paa"};
+        model = "\sc_equipment\data\wasp\wp_backpack.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_co.paa"};
         picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
     class BNA_KC_TU_Backpack_Heavy_Predef_AT: BNA_KC_TU_Backpack_Heavy
@@ -255,8 +255,8 @@ class CfgVehicles
         maximumLoad = 300;
         mass = 35;
 
-        model = "sc_equipment\data\wasp\wp_backpack_sl.p3d";
-        hiddenSelectionsTextures[] = {"sc_equipment\data\wasp\textures\backpack_co.paa"};
+        model = "\sc_equipment\data\wasp\wp_backpack_sl.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_co.paa"};
         picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
     class BNA_KC_TU_Backpack_Assault_Predef_Heavy: BNA_KC_TU_Backpack_Assault
@@ -290,8 +290,8 @@ class CfgVehicles
         displayName = "[KC TU] Radio Backpack";
         mass = 35;
 
-        model = "sc_equipment\data\watchdog\wd_backpack_sl.p3d";
-        hiddenSelectionsTextures[] = {"sc_equipment\data\watchdog\textures\backpack_desert_co.paa"};
+        model = "\sc_equipment\data\watchdog\wd_backpack_sl.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\backpack_desert_co.paa"};
         picture = "\sc_equipment\data\icons\icon_ar_ca.paa";
 
         // TFAR Long Range
