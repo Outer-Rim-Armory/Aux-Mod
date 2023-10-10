@@ -8,6 +8,7 @@ class CfgFunctions
             class uniformBoxInit {};
             class GrabLoadout {};
             class GrabUniform {};
+            class grabWeapon {};
             class openAttachmentArsenal {};
         };
     };
