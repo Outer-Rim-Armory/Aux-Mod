@@ -32,10 +32,10 @@ private _ranksMap = createHashMapFromArray
         ]
     ],
     [
-        "LCPL",
+        "CLC",
         [
             "BNA_KC_Uniform_LCPL",
-            "BNA_KC_Helmet_Phase2_LCPL"
+            "BNA_KC_Helmet_Phase2_CLC"
         ]
     ],
     [
