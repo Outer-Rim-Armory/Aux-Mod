@@ -5,7 +5,7 @@ class CfgFunctions
         class Loadouts
         {
             file = "BNA_KC_Props\Gonks\Data\Functions";
-            class addRankUniformActions {};
+            class uniformBoxInit {};
             class GrabLoadout {};
             class GrabUniform {};
             class openAttachmentArsenal {};
