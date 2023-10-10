@@ -377,13 +377,8 @@ class CfgVehicles
             "\3as\3as_static\Mortar\data\tube.rvmat"
         };
 
-<<<<<<< HEAD:BNA_KC_Vehicles/Static/Mortar/Config.cpp
-        editorPreview = "\BNA_KC_Vehicles\Static\Data\Previews\Mortar_GAR.jpg";
-        icon = "3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
-=======
         editorPreview = "\BNA_KC_Vehicles\Static\Data\Textures\Previews\Mortar_M190.jpg";
         icon = "\3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
->>>>>>> b1e2c20af11b39c05e2c333297afca9b9ab25956:BNA_KC_Vehicles/Static/Config.cpp
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
