@@ -1,5 +1,20 @@
+/*
+ * Author: SweMonkey, modified by DartRuffian
+ * Assigns a specified loadout to the player
+ *
+ * Arguments:
+ * loadoutName: String - Name of the loadout to grab ("Rifleman", "Medic", etc.)
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * "Rifleman" call BNAKC_fnc_grabLoadout;
+ */
+
+
 // -----------------------------    Loadout Map                -----------------------------
-params [["_loadoutToGrab", ""]];
+params [["_loadoutName", ""]];
 
 
 private _loadoutsMap = createHashMapFromArray
@@ -80,7 +95,7 @@ private _loadoutsMap = createHashMapFromArray
 
 // -----------------------------   Assigning Loadout Script    -----------------------------
 
-_loadoutValues = _loadoutsMap getOrDefaultCall [_loadoutToGrab, {hint format ["Loadout '%1' does not exist.", _loadoutToGrab];}];      // Grabs loadout from array above
+_loadoutValues = _loadoutsMap getOrDefaultCall [_loadoutName, {hint format ["Loadout '%1' does not exist.", _loadoutName];}];      // Grabs loadout from array above
 //systemChat(format["%1", _loadoutValues]);
 
 _loadoutValues params ["_primary", "_secondary", "_tertiary", "_binos", "_vest", "_backpack", "_magazines", "_grenades", "_items"];
