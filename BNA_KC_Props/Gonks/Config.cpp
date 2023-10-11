@@ -48,7 +48,7 @@ class CfgVehicles
             */
             class ChangeMenu_Uniforms
             {
-                displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>View Rank Uniforms</t>";
+                displayName = "<t color='#FFFFFF'>View Rank Uniforms</t>";
 
                 position = "camera";
                 radius = 3;
@@ -64,7 +64,7 @@ class CfgVehicles
             class ChangeMenu_Helmets: ChangeMenu_Uniforms
             {
                 priority = 99;
-                displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>View Helmets</t>";
+                displayName = "<t color='#FFFFFF'>View Helmets</t>";
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
                 statement = "player setVariable ['BNAKC_Uniform_Menu', 2];";
             };
@@ -78,7 +78,7 @@ class CfgVehicles
 
             class BNA_KC_CrewHelmet: ChangeMenu_Uniforms
             {
-                displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>Grab Crew Helmet</t>";
+                displayName = "<t color='#FFFFFF'>Grab Crew Helmet</t>";
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 2)";
                 statement = "removeHeadgear player; player addHeadgear 'BNA_KC_Helmet_Phase1_Tanker_v2';";
             };
