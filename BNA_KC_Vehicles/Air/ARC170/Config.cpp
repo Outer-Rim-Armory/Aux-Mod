@@ -19,7 +19,7 @@ class CfgVehicles
             class Reargun;
         };
     };
-    class BNA_KC_ARC_170: 3AS_ARC_170_Base
+    class BNA_KC_ARC170: 3AS_ARC_170_Base
     {
         // Mod Info
         dlc = "BNA_KC";

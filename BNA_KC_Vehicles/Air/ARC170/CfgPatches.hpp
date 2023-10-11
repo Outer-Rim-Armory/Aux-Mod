@@ -16,7 +16,7 @@ class CfgPatches
         };
         units[] =
         {
-            "BNA_KC_ARC_170"
+            "BNA_KC_ARC170"
         };
         weapons[] = {};
     };
