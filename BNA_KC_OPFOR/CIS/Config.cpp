@@ -149,8 +149,8 @@ class CfgVehicles
 
         uniformClass = "BNA_KC_OPFOR_Uniform_BXDroid";
         model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
-        hiddenSelections[] = { "camo1" };
-        hiddenSelectionsTextures[] = { "ls_armor_redfor\uniform\cis\bx\data\body_co.paa" };
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
 
         weapons[] =
         {
@@ -218,8 +218,8 @@ class CfgVehicles
 
         uniformClass = "BNA_KC_OPFOR_Uniform_BXDroid_Actor";
         model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
-        hiddenSelections[] = { "camo1" };
-        hiddenSelectionsTextures[] = { "ls_armor_redfor\uniform\cis\bx\data\body_co.paa" };
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
     };
 };
 

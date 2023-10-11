@@ -41,10 +41,10 @@ class CfgWeapons
         reloadAction = "GestureReloadMX";
         reloadMagazineSound[] = {"\LF_Weapon_Unit\westar45\data\sounds\westar55reload.wss", 3, 1, 10};
 
-        model = "LF_Weapon_Unit\lw38m\lw38m.p3d";
+        model = "\LF_Weapon_Unit\lw38m\lw38m.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
-        handAnim[] = {"OFP2_ManSkeleton", "LF_Weapon_Unit\lw38m\anims\lw38mhand.rtm"};
+        handAnim[] = {"OFP2_ManSkeleton", "\LF_Weapon_Unit\lw38m\anims\lw38mhand.rtm"};
         picture = "\BNA_KC_Weapons\LW38\Data\Textures\UI\LW38_UI.paa";
 
         class WeaponSlotsInfo: WeaponSlotsInfo

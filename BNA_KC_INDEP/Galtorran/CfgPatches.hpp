@@ -40,6 +40,7 @@ class CfgPatches
             "BNA_KC_Galtorran_Unit_SL",
             "BNA_KC_Galtorran_Unit_SL_T2",
             "BNA_KC_Galtorran_Unit_SL_T3",
+            "BNA_KC_Galtorran_Unit_Vex",
 
             "BNA_KC_Galtorran_Backpack",
             "BNA_KC_Galtorran_Backpack_Predef_Rifleman",
@@ -72,6 +73,7 @@ class CfgPatches
             "BNA_KC_Galtorran_Helmet_T2",
             "BNA_KC_Galtorran_Helmet_T3",
             "BNA_KC_Galtorran_Uniform",
+            "BNA_KC_Galtorran_Uniform_Vex",
             "BNA_KC_Galtorran_Vest",
             "BNA_KC_Galtorran_Vest_Medium",
             "BNA_KC_Galtorran_Vest_Heavy"

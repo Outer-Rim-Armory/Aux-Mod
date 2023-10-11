@@ -113,10 +113,9 @@ class CfgVehicles
     {
         displayName = "[KC] JT-12 Jetpack";
 
-        // Use JLTS model/textures, LS model will be removed
-        model = "MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";
-        hiddenSelections[] = { "camo1" };
-        hiddenSelectionsTextures[] = { "MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa" };
+        model = "\MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
 
         BNA_KC_Jet_isJetpack = 1;
@@ -125,13 +124,13 @@ class CfgVehicles
         BNA_KC_Jet_strength = 15; // Jetpack strength, effects fast the player rises
 
         // Effects
-        BNA_KC_Jet_effectPoints[] = { "effect_left", "effect_right" }; // Points to spawn effects, these come from the JLTS model
+        BNA_KC_Jet_effectPoints[] = {"effect_left", "effect_right"}; // Points to spawn effects, these come from the JLTS model
         BNA_KC_Jet_effects[] =
         {
             "BNA_KC_Effects_JetpackFire_Blue",
             "BNA_KC_Effects_JetpackSmoke"
         };
-        BNA_KC_Jet_effectSound  = "BNA_KC_Gear\Jetpacks\Data\Audio\Jetpack_Loop.wss";
+        BNA_KC_Jet_effectSound  = "\BNA_KC_Gear\Jetpacks\Data\Audio\Jetpack_Loop.wss";
         BNA_KC_Jet_lightColor[] = {0, 0.1, 0.9};
 
         BNA_KC_Jet_freefallHeight = 500;
@@ -154,9 +153,8 @@ class CfgVehicles
     {
         displayName = "[KC] CDV-21 Jetpack";
 
-        // Use JLTS model/textures, LS model will be removed
         model = "\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
-        hiddenSelectionsTextures[] = { "MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_co.paa" };
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
     };
 
@@ -178,13 +176,13 @@ class CfgVehicles
     {
         displayName = "[KC] CDV-19 Jetpack";
 
-        model = "MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
-        hiddenSelections[] = { "camo1" };
-        hiddenSelectionsTextures[] = { "MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_mc_co.paa" };
+        model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_mc_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 
         // Jetpack properties
-        BNA_KC_Jet_effectPoints[] = { "effect" };
+        BNA_KC_Jet_effectPoints[] = {"effect"};
     };
 
     class BNA_KC_Jetpack_CDV19_LR: BNA_KC_Jetpack_CDV19
@@ -206,8 +204,8 @@ class CfgVehicles
         displayName = "[KC] Battle Droid Jetpack";
 
         model = "\MRC\JLTS\characters\DroidArmor\DroidJetpackB1.p3d";
-        hiddenSelections[] = { "camo1" };
-        hiddenSelectionsTextures[] = { "\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_co.paa" };
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_co.paa"};
         picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_jetpack_ui_ca.paa";
 
         BNA_KC_Jet_freefallHeight = 100000;
@@ -215,7 +213,7 @@ class CfgVehicles
     class BNA_KC_Jetpack_Droid_Rocket: BNA_KC_Jetpack_Droid
     {
         displayName = "[KC] Battle Droid Jetpack (Rocket)";
-        hiddenSelectionsTextures[] = { "\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_rocket_co.paa" };
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_rocket_co.paa"};
     };
 };
 

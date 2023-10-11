@@ -22,9 +22,9 @@ class CfgMods
     class Mod_Base;
     class BNA_KC: Mod_Base
     {
-        logo = "BNA_KC_Gear\Data\UI\BNA_KC_Logo.paa";
-        logoOver = "BNA_KC_Gear\Data\UI\BNA_KC_Logo.paa";
-        picture = "BNA_KC_Gear\Data\UI\BNA_KC_Logo.paa";
+        logo = "\BNA_KC_Gear\KC_Logo.paa";
+        logoOver = "\BNA_KC_Gear\KC_Logo.paa";
+        picture = "\BNA_KC_Gear\KC_Logo.paa";
         name = "[KC] Keeli Company Aux Mod";
         dlcColor[] = {0,0,0,1};
     };

@@ -15,6 +15,8 @@ class CfgPatches
                 // BARC Helm
             "lsd_armor_bluefor",
                 // ARC Helm
+            "lsd_equipment_bluefor",
+                // Facewear
             "SWLB_equipment_backpacks",
                 // ARC Backpack
             "SWLB_Clones"

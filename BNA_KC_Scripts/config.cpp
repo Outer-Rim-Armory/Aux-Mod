@@ -1,4 +1,5 @@
 #include "CfgVehicles.hpp"
+#include "FortifyPresets.hpp"
 
 
 class CfgPatches
@@ -7,7 +8,7 @@ class CfgPatches
 	{
 		author = "Monkey";
 		requiredVersion = 1;
-		requiredAddons[]=
+		requiredAddons[] =
         {
             "cba_settings",
                 // Addon Options
@@ -17,8 +18,8 @@ class CfgPatches
                 // LS's Hesco Blocks
                 // Comes from Legion Studios: Battlefields
         };
-		units[]={};
-		weapons[]={};
+		units[] = {};
+		weapons[] = {};
 	};
 };
 
@@ -70,6 +71,9 @@ class CfgFunctions
             class disableDekaShields {};
             class tempDisableVehicles {};
             class playDroidPopperSound {};
+
+            class canUseEMP {};
+            class activateEMP {};
         };
 
         class Weapons
@@ -83,6 +87,9 @@ class CfgFunctions
             file = "BNA_KC_Scripts\Data\Functions\Vehicles";
             class canSwitchSkins {};
             class skinSwitcherChildren {};
+            class setIntercomChannel {};
+            class canSpecialLoad {};
+            class specialLoad {};
         };
 
         class Medical
@@ -103,6 +110,21 @@ class CfgFunctions
             class weapOptions {};
         };
 	};
+
+    class ls_vehicle
+    {
+        class scripts
+        {
+            class ImpulseKey
+            {
+                file = "BNA_KC_Scripts\Data\Functions\Vehicles\fn_impulseKey.sqf";
+            };
+            class RepulseKey
+            {
+                file = "BNA_KC_Scripts\Data\Functions\Vehicles\fn_repulseKey.sqf";
+            };
+        };
+    };
 };
 
 class Extended_PreInit_EventHandlers
@@ -133,4 +155,13 @@ class Extended_PostInit_EventHandlers
     };
 };
 
-#include "FortifyPresets.hpp"
+class Extended_GetIn_EventHandlers
+{
+    class All
+    {
+        class BNA_KC_SetIntercomChannel
+        {
+            getIn = "_this call BNAKC_fnc_setIntercomChannel";
+        };
+    };
+};
