@@ -48,7 +48,7 @@ class CfgVehicles
             */
             class ChangeMenu_Uniforms
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>View Rank Uniforms</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#ffffff'>View Rank Uniforms</t>";
 
                 position = "camera";
                 radius = 3;
@@ -64,7 +64,7 @@ class CfgVehicles
             class ChangeMenu_Helmets: ChangeMenu_Uniforms
             {
                 priority = 99;
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>View Helmets</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#ffffff'>View Helmets</t>";
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
                 statement = "player setVariable ['BNAKC_Uniform_Menu', 2];";
             };
@@ -72,14 +72,14 @@ class CfgVehicles
             class ChangeMenu_Home: ChangeMenu_Uniforms
             {
                 priority = 98;
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Home</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#ffffff'>Home</t>";
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) != 0)";
                 statement = "player setVariable ['BNAKC_Uniform_Menu', 0];";
             };
 
             class BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CR Uniform</t>";      // Structured text, displayed in the scroll menu
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#ffffff'>Grab CR Uniform</t>";      // Structured text, displayed in the scroll menu
 
                 position = "camera";
                 radius = 3;
@@ -93,83 +93,83 @@ class CfgVehicles
             };
             class BNA_KC_CTUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CT Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#ffffff'>Grab CT Uniform</t>";
                 statement = "[""CT""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_SCTUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab SCT Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#ffffff'>Grab SCT Uniform</t>";
                 statement = "[""SCT""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_VCTUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab VCT Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#ffffff'>Grab VCT Uniform</t>";
                 statement = "[""VCT""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_CLCUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CLC Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#ffffff'>Grab CLC Uniform</t>";
                 statement = "[""CLC""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_CPLUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab CPL Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#ffffff'>Grab CPL Uniform</t>";
                 statement = "[""CPL""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_CSUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#586619'>Grab CS Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#586619'>Grab CS Uniform</t>";
                 statement = "[""CS""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_CSSUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#586619'>Grab CSS Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#586619'>Grab CSS Uniform</t>";
                 statement = "[""CSS""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_CSFCUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#586619'>Grab CSFC Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#586619'>Grab CSFC Uniform</t>";
                 statement = "[""CSFC""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_CMSUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#586619'>Grab CMS Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#586619'>Grab CMS Uniform</t>";
                 statement = "[""CMS""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_CSMUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#586619'>Grab CSM Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#586619'>Grab CSM Uniform</t>";
                 statement = "[""CSM""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_WOUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#194A66'>Grab WO Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#194A66'>Grab WO Uniform</t>";
                 statement = "[""WO""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_WO2Uniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#194A66'>Grab WO2 Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#194A66'>Grab WO2 Uniform</t>";
                 statement = "[""WO2""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_WO3Uniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#194A66'>Grab WO3 Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#194A66'>Grab WO3 Uniform</t>";
                 statement = "[""WO3""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_LTUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#194A66'>Grab LT Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#194A66'>Grab LT Uniform</t>";
                 statement = "[""LT""] call BNAKC_fnc_GrabUniform;";
             };
             class BNA_KC_1LTUniform: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#194A66'>Grab 1LT Uniform</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#194A66'>Grab 1LT Uniform</t>";
                 statement = "[""1LT""] call BNAKC_fnc_GrabUniform;";
             };
 
             class BNA_KC_CrewHelmet: BNA_KC_CRUniform
             {
-                displayName = "<t size='0.9' font='PuristaSemibold' color='#ffffff'>Grab Crew Helmet</t>";
+                displayName = "<t size='0.9' font='RobotoCondensedBold' color='#ffffff'>Grab Crew Helmet</t>";
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 2)";
                 statement = "removeHeadgear player; player addHeadgear 'BNA_KC_Helmet_Phase1_Tanker_v2';";
             };
@@ -217,7 +217,7 @@ class CfgVehicles
 
             class ChangeMenu_Home: Rifleman
             {
-                displayName = "<t color='#FFFFFF' font='PuristaSemibold'>Home</t>";
+                displayName = "<t color='#FFFFFF' font='RobotoCondensedBold'>Home</t>";
                 priority = 98;
 
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) != 0)";
