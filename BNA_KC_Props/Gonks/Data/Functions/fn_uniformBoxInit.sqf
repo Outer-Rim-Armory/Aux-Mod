@@ -44,6 +44,6 @@ _rankColor =
         false,
         false,
         "",
-        "true"
+        "player getVariable ['BNAKC_Uniform_Menu', 0] == 1"
     ];
 } forEach RANK_LIST;

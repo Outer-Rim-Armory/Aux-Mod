@@ -27,4 +27,11 @@ class Extended_Init_EventHandlers
             clientInit = "(_this select 0) call BNAKC_fnc_weaponBoxInit";
         };
     };
+    class BNA_KC_Gonk_Uniforms
+    {
+        class BNA_KC_UniformActions
+        {
+            clientInit = "(_this select 0) call BNAKC_fnc_uniformBoxInit";
+        };
+    };
 };
