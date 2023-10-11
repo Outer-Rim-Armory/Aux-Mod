@@ -66,11 +66,9 @@ if (_loadoutsMap isEqualTo []) then
 _loadoutValues = _loadoutsMap getOrDefaultCall [_loadoutName, {hint format ["Loadout '%1' does not exist.", _loadoutName];}];
 _loadoutValues params ["_launcher", "_binoculars", "_vest", "_backpack", "_weapons", "_magazines", "_items"];
 
-{
-    // Clear inventory
-    player removeItems _x;
-    player removeMagazines _x;
-} forEach (uniformItems player) + (vestItems player) + (backpackItems player);
+// Clear inventory
+{ player removeItems _x; } forEach items player;
+{ player removeMagazines _x; } forEach magazines player;
 
 {
     for "_i" from 1 to (_x#1) do
