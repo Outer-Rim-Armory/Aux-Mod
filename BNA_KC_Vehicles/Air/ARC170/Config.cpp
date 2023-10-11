@@ -4,18 +4,14 @@
 
 class CfgVehicles
 {
-    class Plane_Fighter_03_base_F;
-    class Plane_Fighter_03_dynamicLoadout_base_F: Plane_Fighter_03_base_F
-    {
-        class Turrets;
-    };
+    class Plane_Fighter_03_dynamicLoadout_base_F;
     class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F
     {
         class ACE_SelfActions;
-        class Turrets: Turrets
+        class Turrets
         {
-            class LaserPilot;
             class Reargun;
+            class LaserPilot;
         };
         class PilotCamera;
     };
