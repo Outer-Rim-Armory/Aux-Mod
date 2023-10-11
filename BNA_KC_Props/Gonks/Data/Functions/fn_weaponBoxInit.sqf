@@ -30,10 +30,10 @@ if (isNull _object) exitWith {};
             player setVariable ['BNAKC_Loadout_Menu', 0];
         },
         [_x],
-        _forEachIndex,
+        (count WEAPONS_LIST) - _forEachIndex,
         false,
         false,
         "",
         format ["%1 call BNAKC_fnc_shouldShowWeapon", str _x]
     ];
-} forEachReversed WEAPONS_LIST;
+} forEach WEAPONS_LIST;
