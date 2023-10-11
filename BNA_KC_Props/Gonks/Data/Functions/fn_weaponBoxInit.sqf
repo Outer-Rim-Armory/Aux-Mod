@@ -27,6 +27,7 @@ if (isNull _object) exitWith {};
             params ["_target", "_caller", "_actionId", "_arguments"];
             _arguments params ["_weapon"];
             [_weapon] call BNAKC_fnc_grabWeapon;
+            player setVariable ['BNAKC_Loadout_Menu', 0];
         },
         [_x],
         _forEachIndex,
