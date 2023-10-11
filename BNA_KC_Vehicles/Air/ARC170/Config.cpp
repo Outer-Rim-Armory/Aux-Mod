@@ -44,10 +44,10 @@ class CfgVehicles
             "\3as\3as_arc170\Data\Guns_co.paa"
         };
 
-        cabinOpenSound[] = {"\BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_canopy_open.wss", 1.77828 , 1, 40};
-        cabinOpenSoundInternal[] = {"\BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_canopy_open.wss", 10, 1, 40};
-        cabinCloseSound[] = {"\BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_canopy_close.wss", 1.77828, 1, 40};
-        cabinCloseSoundInternal[] = {"\BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_canopy_close.wss", 10, 1, 40};
+        cabinOpenSound[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Open.wss", 1.77828 , 1, 40};
+        cabinOpenSoundInternal[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Open.wss", 10, 1, 40};
+        cabinCloseSound[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 1.77828, 1, 40};
+        cabinCloseSoundInternal[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 10, 1, 40};
 
         textureList[] = {"Standard", 1};
         class TextureSources
@@ -131,13 +131,13 @@ class CfgVehicles
                 priority = 1.5;
 
                 condition = "(this animationSourcePhase 'SFoil' == 1) and (player isEqualTo currentPilot this) and !(isTouchingGround this)";
-                statement = "playSound3D ['BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_sfoils.wss', this]; this animateSource ['SFoil', 0]";
+                statement = "playSound3D ['\BNA_KC_Vehicles\Air\ARC170\Data\Audio\SFoils.wss', this]; this animateSource ['SFoil', 0]";
             };
             class Close_SFoils: Open_SFoils
             {
                 displayName = "Fold S-Foils";
                 condition = "(this animationSourcePhase 'SFoil' == 0) and (player isEqualTo currentPilot this) and !(isTouchingGround this)";
-                statement = "playSound3D ['BNA_KC_Vehicles\Aviation\Data\Audio\ARC170_sfoils.wss', this]; this animateSource ['SFoil', 1]";
+                statement = "playSound3D ['\BNA_KC_Vehicles\Air\ARC170\Data\Audio\SFoils.wss', this]; this animateSource ['SFoil', 1]";
             };
 
             class Eject: Open_SFoils
