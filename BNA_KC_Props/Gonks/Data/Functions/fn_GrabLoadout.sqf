@@ -118,6 +118,15 @@ if (_vest != "") then
     player addVest _vest;
 };
 
+if (_binoculars != "") then
+{
+    player addWeapon _binoculars;
+    player addMagazine "Laserbatteries";
+};
+
+player addBackpack _backpack;
+player addWeapon _launcher;
+
 {
     for "_i" from 1 to (_x#1) do
     {
