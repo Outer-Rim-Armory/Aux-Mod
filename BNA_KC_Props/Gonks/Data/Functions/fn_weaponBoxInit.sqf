@@ -34,6 +34,6 @@ if (isNull _object) exitWith {};
         false,
         false,
         "",
-        format ["%1 call BNAKC_fnc_shouldShowWeapon", _x]
+        format ["%1 call BNAKC_fnc_shouldShowWeapon", str _x]
     ];
 } forEach WEAPONS_LIST;
