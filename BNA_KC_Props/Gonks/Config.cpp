@@ -71,7 +71,6 @@ class CfgVehicles
 
             class ChangeMenu_Home: ChangeMenu_Uniforms
             {
-                priority = 98;
                 displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>Home</t>";
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) != 0)";
                 statement = "player setVariable ['BNAKC_Uniform_Menu', 0];";
