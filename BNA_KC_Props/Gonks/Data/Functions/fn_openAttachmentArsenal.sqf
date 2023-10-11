@@ -34,5 +34,5 @@ _compatibleItems = [];
 } forEach _weapons;
 
 
-[player, _compatibleItems] call ace_arsenal_fnc_addvirtualitems;
+[player, _compatibleItems] call ace_arsenal_fnc_addVirtualItems;
 [player, player] call ace_arsenal_fnc_openBox;

@@ -55,47 +55,47 @@ if (_loadoutsMap isEqualTo []) then
                     ["ACE_tourniquet", 4],
                     ["ItemcTabHCam", 1]
                 ]
-            ],
+            ]
+        ],
+        [
+            "Squad Leader",
             [
-                "Squad Leader",
+                "",
+                "JLTS_CloneBinocular",
+                "",
+                "BNA_KC_Backpack",
                 [
-                    "",
-                    "JLTS_CloneBinocular",
-                    "",
-                    "BNA_KC_Backpack",
-                    [
-                        "DC15A",
-                        "DC15S",
-                        "DC15C"
-                    ],
-                    [
-                        ["ls_mag_classC_thermalDet", 4],
-                        ["3AS_SmokeWhite", 5],
-                        ["3AS_SmokeBlue", 3],
-                        ["3AS_SmokeGreen", 3],
-                        ["3AS_SmokeRed", 3],
-                        ["3AS_SmokePurple", 3],
-                        ["ShieldGrenade_Mag", 3],
-                        ["SquadShieldMagazine", 5],
-                        ["Chemlight_blue", 5],
-                        ["BNA_KC_Grenade_DroidPopper", 3],
-                        ["BNA_KC_UGL_FlareBlue", 3],
-                        ["Laserbatteries", 2]
-                    ],
-                    [
-                        ["ACE_CableTie", 5],
-                        ["ACE_EntrenchingTool", 1],
-                        ["ACE_Flashlight_XL50", 1],
-                        ["ACE_MapTools", 1],
-                        ["JLTS_ids_gar_army", 1],
-                        ["ACE_IR_Strobe_Item", 2],
-                        ["ACE_elasticBandage", 20],
-                        ["ACE_tourniquet", 4],
-                        ["ACE_surgicalKit", 1],
-                        ["RD501_Painkiller", 3],
-                        ["ItemcTab", 1],
-                        ["ItemcTabHCam", 1]
-                    ]
+                    "DC15A",
+                    "DC15S",
+                    "DC15C"
+                ],
+                [
+                    ["ls_mag_classC_thermalDet", 4],
+                    ["3AS_SmokeWhite", 5],
+                    ["3AS_SmokeBlue", 3],
+                    ["3AS_SmokeGreen", 3],
+                    ["3AS_SmokeRed", 3],
+                    ["3AS_SmokePurple", 3],
+                    ["ShieldGrenade_Mag", 3],
+                    ["SquadShieldMagazine", 5],
+                    ["Chemlight_blue", 5],
+                    ["BNA_KC_Grenade_DroidPopper", 3],
+                    ["BNA_KC_UGL_FlareBlue", 3],
+                    ["Laserbatteries", 2]
+                ],
+                [
+                    ["ACE_CableTie", 5],
+                    ["ACE_EntrenchingTool", 1],
+                    ["ACE_Flashlight_XL50", 1],
+                    ["ACE_MapTools", 1],
+                    ["JLTS_ids_gar_army", 1],
+                    ["ACE_IR_Strobe_Item", 2],
+                    ["ACE_elasticBandage", 20],
+                    ["ACE_tourniquet", 4],
+                    ["ACE_surgicalKit", 1],
+                    ["RD501_Painkiller", 3],
+                    ["ItemcTab", 1],
+                    ["ItemcTabHCam", 1]
                 ]
             ]
         ]
