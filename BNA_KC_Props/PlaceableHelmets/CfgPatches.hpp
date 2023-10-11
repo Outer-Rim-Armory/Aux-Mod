@@ -64,7 +64,9 @@ class CfgPatches
             // Misc.
             "BNA_KC_HelmetHolder_AB",
             "BNA_KC_HelmetHolder_AB_v2",
-            "BNA_KC_HelmetHolder_ENG",
+            "BNA_KC_HelmetHolder_Engineer",
+            "BNA_KC_HelmetHolder_Engineer_CamoBrown",
+            "BNA_KC_HelmetHolder_Engineer_CamoGrey",
             "BNA_KC_HelmetHolder_Insulated",
 
             // Armored

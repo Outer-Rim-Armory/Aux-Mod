@@ -59,7 +59,9 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_AB_v2, [KC] AB Helm (Trooper, Version 2), BNA_
 // ┌───────────────────┐
 // │    ENG Helmets    │
 // └───────────────────┘
-HELMET_HOLDER(BNA_KC_HelmetHolder_ENG, [KC] ENG Helm (Base), BNA_KC_Helmet_Engineer, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_Engineer, [KC] ENG Helm (Base), BNA_KC_Helmet_Engineer, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_Engineer_CamoBrown, [KC] ENG Helm (Base), BNA_KC_Helmet_Engineer_CamoBrown, "P2")
+HELMET_HOLDER(BNA_KC_HelmetHolder_Engineer_CamoGrey, [KC] ENG Helm (Base), BNA_KC_Helmet_Engineer_CamoGrey, "P2")
 
 
 // ┌───────────────────┐
