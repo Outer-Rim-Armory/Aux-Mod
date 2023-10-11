@@ -180,6 +180,8 @@ class CfgPatches
 
             // Engineer Helmets
             "BNA_KC_Helmet_Engineer",
+            "BNA_KC_Helmet_Engineer_CamoBrown",
+            "BNA_KC_Helmet_Engineer_CamoGrey",
 
             // Airborne
             "BNA_KC_Helmet_Airborne",

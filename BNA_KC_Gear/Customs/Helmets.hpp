@@ -860,6 +860,17 @@ class BNA_KC_Helmet_Phase2_Sage: BNA_KC_Helmet_Phase2_Base
     };
 };
 
+class BNA_KC_Helmet_Phase2_Sogi: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF P2 Helm ('Sogi')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Sogi.paa",
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
+};
+
+
 class BNA_KC_Helmet_Phase2_Splashdown: BNA_KC_Helmet_Phase2_Base
 {
 	displayName = "[KC] INF P2 Helm ('Splashdown')";
@@ -919,6 +930,17 @@ class BNA_KC_Helmet_Phase2_Taun: BNA_KC_Helmet_Phase2_Base
 		"\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
 	};
 };
+
+class BNA_KC_Helmet_Phase2_Tugz: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF P2 Helm ('Tugz')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Tugz.paa",
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
+};
+
 
 class BNA_KC_Helmet_Phase2_Tyrant: BNA_KC_Helmet_Phase2_Base
 {

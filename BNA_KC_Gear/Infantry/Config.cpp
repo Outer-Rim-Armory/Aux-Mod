@@ -101,6 +101,28 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Helmet_Engineer_CamoBrown: BNA_KC_Helmet_Engineer
+    {
+        displayName = "[KC] ENG Helm (Base) - Brown Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Helmets\Engineer\Helmet_Engineer_CamoBrown.paa",
+            "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
+        };
+    };
+
+    class BNA_KC_Helmet_Engineer_CamoGrey: BNA_KC_Helmet_Engineer
+    {
+        displayName = "[KC] ENG Helm (Base) - Grey Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Helmets\Engineer\Helmet_Engineer_CamoGrey.paa",
+            "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
+        };
+    };
+
     class BNA_KC_Helmet_Airborne: BNA_KC_Helmet_Base
     {
         // Scope

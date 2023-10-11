@@ -27,6 +27,7 @@ class CfgPatches
             "BNA_KC_Unit_Rat",
             "BNA_KC_Unit_Sin",
             "BNA_KC_Unit_Stone",
+            "BNA_KC_Unit_Tyrant",
 
             // Insulated Units
             "BNA_KC_Unit_Insulated_Dexus",
@@ -98,12 +99,14 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Rev",
             "BNA_KC_Helmet_Phase2_Rodger",
             "BNA_KC_Helmet_Phase2_Sage",
+            "BNA_KC_Helmet_Phase2_Sogi",
             "BNA_KC_Helmet_Phase2_Splashdown",
             "BNA_KC_Helmet_Phase2_Star",
             "BNA_KC_Helmet_Phase2_Stone",
             "BNA_KC_Helmet_Phase2_Swoop",
             "BNA_KC_Helmet_Phase2_Sytha",
             "BNA_KC_Helmet_Phase2_Taun",
+            "BNA_KC_Helmet_Phase2_Tugz",
             "BNA_KC_Helmet_Phase2_Tyrant",
             "BNA_KC_Helmet_Phase2_Vortex",
             "BNA_KC_Helmet_Phase2_Woods",
@@ -158,6 +161,7 @@ class CfgPatches
             "BNA_KC_Uniform_Rat",
             "BNA_KC_Uniform_Sin",
             "BNA_KC_Uniform_Stone",
+            "BNA_KC_Uniform_Tyrant",
 
             // Insulated Uniforms
             "BNA_KC_Uniform_Insulated_Dexus",

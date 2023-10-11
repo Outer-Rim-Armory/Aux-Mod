@@ -72,6 +72,27 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Helmet_Phase1_ARC: BNA_KC_Helmet_ARC
+    {
+        displayName = "[KC] SF P1 ARC Helm";
+
+        model = "\ls_armor_bluefor\helmet\gar\phase1\ls_gar_phase1_helmet.p3d";
+        hiddenSelections[] = {"camo1", "visor", "illum"};
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_P1_ARC.paa",
+            "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+            "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+        };
+        picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "visor", "illum"};
+            uniformModel = "\ls_armor_bluefor\helmet\gar\phase1\ls_gar_phase1_helmet.p3d";
+        };
+    };
+
     class BNA_KC_Helmet_ARF: BNA_KC_Helmet_Base
     {
         // Scope
