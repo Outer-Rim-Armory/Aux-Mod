@@ -36,4 +36,4 @@ if (isNull _object) exitWith {};
         "",
         format ["%1 call BNAKC_fnc_shouldShowWeapon", str _x]
     ];
-} forEach WEAPONS_LIST;
+} forEachReversed WEAPONS_LIST;
