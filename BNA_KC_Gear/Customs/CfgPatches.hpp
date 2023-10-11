@@ -27,6 +27,7 @@ class CfgPatches
             "BNA_KC_Unit_Rat",
             "BNA_KC_Unit_Sin",
             "BNA_KC_Unit_Stone",
+            "BNA_KC_Unit_Tyrant",
 
             // Insulated Units
             "BNA_KC_Unit_Insulated_Dexus",
@@ -158,6 +159,7 @@ class CfgPatches
             "BNA_KC_Uniform_Rat",
             "BNA_KC_Uniform_Sin",
             "BNA_KC_Uniform_Stone",
+            "BNA_KC_Uniform_Tyrant",
 
             // Insulated Uniforms
             "BNA_KC_Uniform_Insulated_Dexus",

@@ -131,6 +131,15 @@ class BNA_KC_Uniform_Stone: BNA_KC_Uniform_Base
     };
 };
 
+class BNA_KC_Uniform_Tyrant: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor ('Tyrant')";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Tyrant";
+    };
+};
+
 
 // ┌────────────────────┐
 // │   Snow  Uniforms   │
