@@ -28,7 +28,7 @@ if (_loadoutsMap isEqualTo []) then
             [
                 "",                  // Launcher
                 "",                  // Binoculars
-                "BNA_KC_Vest_Basic", // Vest
+                "",                  // Vest
                 "BNA_KC_Backpack",   // Backpack
                 [
                     // Key names from _weaponMap
@@ -69,6 +69,12 @@ _loadoutValues params ["_launcher", "_binoculars", "_vest", "_backpack", "_weapo
 // Clear inventory
 { player removeItems _x; } forEach items player;
 { player removeMagazines _x; } forEach magazines player;
+
+// Overwrite vest if given
+if !(_vest == "") then
+{
+    player addVest _vest;
+};
 
 {
     for "_i" from 1 to (_x#1) do
