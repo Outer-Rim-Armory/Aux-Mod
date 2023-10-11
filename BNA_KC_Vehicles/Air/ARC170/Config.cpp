@@ -11,13 +11,13 @@ class CfgVehicles
     };
     class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F
     {
-        class PilotCamera;
         class ACE_SelfActions;
         class Turrets: Turrets
         {
             class LaserPilot;
             class Reargun;
         };
+        class PilotCamera;
     };
     class BNA_KC_ARC170: 3AS_ARC_170_Base
     {
@@ -37,17 +37,17 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
+        cabinOpenSound[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Open.wss", 1.77828 , 1, 40};
+        cabinOpenSoundInternal[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Open.wss", 10, 1, 40};
+        cabinCloseSound[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 1.77828, 1, 40};
+        cabinCloseSoundInternal[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 10, 1, 40};
+
         hiddenSelectionsTextures[] =
         {
             "\3as\3as_arc170\Data\Main_Frame_co.paa",
             "\3as\3as_arc170\Data\Wings_Engines_co.paa",
             "\3as\3as_arc170\Data\Guns_co.paa"
         };
-
-        cabinOpenSound[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Open.wss", 1.77828 , 1, 40};
-        cabinOpenSoundInternal[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Open.wss", 10, 1, 40};
-        cabinCloseSound[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 1.77828, 1, 40};
-        cabinCloseSoundInternal[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 10, 1, 40};
 
         textureList[] = {"Standard", 1};
         class TextureSources
@@ -64,19 +64,6 @@ class CfgVehicles
                     "\3as\3as_arc170\Data\Guns_co.paa"
                 };
             };
-        };
-
-        class PilotCamera: PilotCamera
-        {
-            initTurn = 0;   // Initial states
-            initElev = -10;
-            maxTurn = 180;  // Turn radius
-            minTurn = -180;
-            maxElev = 90;   // Elevation (how far up/down)
-            minElev = -10;
-
-            maxXRotSpeed = 0.3;
-            maxYRotSpeed = 0.3;
         };
 
         class ACE_SelfActions: ACE_SelfActions
@@ -178,6 +165,19 @@ class CfgVehicles
                 animationSourceHatch = "";
             };
             class Reargun: Reargun {};
+        };
+
+        class PilotCamera: PilotCamera
+        {
+            initTurn = 0;   // Initial states
+            initElev = -10;
+            maxTurn = 180;  // Turn radius
+            minTurn = -180;
+            maxElev = 90;   // Elevation (how far up/down)
+            minElev = -10;
+
+            maxXRotSpeed = 0.3;
+            maxYRotSpeed = 0.3;
         };
     };
 };
