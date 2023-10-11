@@ -24,7 +24,7 @@ class Extended_Init_EventHandlers
     {
         class BNA_KC_WeaponActions
         {
-            init = "(_this select 0) call BNAKC_fnc_weaponBoxInit";
+            clientInit = "(_this select 0) call BNAKC_fnc_weaponBoxInit";
         };
     };
 };

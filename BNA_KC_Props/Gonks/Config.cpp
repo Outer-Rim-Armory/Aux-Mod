@@ -2,6 +2,8 @@
 #include "CfgFunctions.hpp"
 
 
+class CBA_Extended_EventHandlers;
+
 class CfgVehicles
 {
     class 3as_GNK;
@@ -19,6 +21,13 @@ class CfgVehicles
         editorCategory = "BNA_KC_Objects";
         editorSubcategory = "BNA_KC_SubCat_Utility";
         editorPreview = "\BNA_KC_Props\Gonks\Data\Textures\Previews\Gonk_Droid.jpg";
+
+        class EventHandlers
+        {
+            // Using CBA_Extended_EventHandlers_base was creating a class reference in CfgVehicles
+            // Not sure why
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
+        };
     };
 
     class BNA_KC_Gonk_Uniforms: BNA_KC_Utility_Base
