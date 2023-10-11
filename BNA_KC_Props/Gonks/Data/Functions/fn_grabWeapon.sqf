@@ -1,5 +1,5 @@
 /*
- * Author: SweMonkey, modified by DartRuffian
+ * Author: DartRuffian
  * Assigns a specified loadout to the player
  *
  * Arguments:

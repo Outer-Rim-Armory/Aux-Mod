@@ -9,7 +9,7 @@
  * None
  *
  * Example:
- * box call BNAKC_fnc_addRankUniformActions;
+ * box call BNAKC_fnc_uniformBoxInit;
  */
 
 
