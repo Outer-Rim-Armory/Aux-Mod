@@ -113,7 +113,7 @@ _loadoutValues params ["_launcher", "_binoculars", "_vest", "_backpack", "_weapo
 { player removeMagazines _x; } forEach magazines player;
 
 // Overwrite vest if given
-if !(_vest == "") then
+if (_vest != "") then
 {
     player addVest _vest;
 };
