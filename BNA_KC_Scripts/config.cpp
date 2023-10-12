@@ -101,6 +101,7 @@ class CfgFunctions
             class shieldActionModifier {};
 
             class shieldToggleHandler {};
+            class shieldHealthChangedHandler {};
 
             class getShieldHealth {};
             class getShieldHealthColor {};
@@ -170,6 +171,10 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Shield_ToggleHandler
     {
         init = "call BNAKC_fnc_shieldToggleHandler;";
+    };
+    class BNA_KC_Shield_HealthChangedHandler
+    {
+        init = "call BNAKC_fnc_shieldHealthChangedHandler;";
     };
 };
 

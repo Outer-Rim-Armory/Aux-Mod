@@ -35,32 +35,18 @@ _vehicle setVariable
         "HandleDamage",
         {
             params ["_vehicle", "_selection", "_damage", "", "", "", "", ""];
-            private ["_shieldMaxHealth", "_shieldHealth", "_shieldHealthFormatted", "_message", "_currentTime"];
+            private ["_oldHealth", "_newHealth", "_currentTime"];
 
-            _shieldMaxHealth =
-            [
-                (configFile >> "CfgVehicles" >> typeOf _vehicle),
-                "BNA_KC_Shield_maxHealth",
-                BASE_SHIELD_HEALTH
-            ] call BIS_fnc_returnConfigEntry;
-            _shieldHealth = _vehicle call BNAKC_fnc_getShieldHealth;
-            _shieldHealth = (_shieldHealth - _damage) max 0;
-            _vehicle setVariable ["BNA_KC_Shield_health", _shieldHealth, true];
+            _oldHealth = _vehicle call BNAKC_fnc_getShieldHealth;
+            _newHealth = (_oldHealth - _damage) max 0;
+            _vehicle setVariable ["BNA_KC_Shield_health", _newHealth, true];
 
             if (_damage > 0) then
             {
-                _shieldHealthFormatted = format
-                [
-                    "<t color='%1'>%2</t>",
-                    _vehicle call BNAKC_fnc_getShieldHealthColor,
-                    [_vehicle, true] call BNAKC_fnc_getShieldHealth
-                ];
-                _shieldHealthFormatted = _shieldHealthFormatted + "%";
-                _message = format ["Strength %1", _shieldHealthFormatted];
-                [_message] call ace_common_fnc_displaytextstructured;
+                ["BNA_KC_shieldHealthChanged", [_vehicle, _oldHealth, _newHealth]] call CBA_fnc_localEvent;
             };
 
-            if (_shieldHealth isEqualTo 0) then
+            if (_newHealth isEqualTo 0) then
             {
                 _vehicle call BNAKC_fnc_deactivateShield;
             };
@@ -94,7 +80,7 @@ _vehicle setVariable
     [
         {
             _this#0 params ["_vehicle", "_regenTime", "_regenRate"];
-            private ["_currentTime", "_lastHit", "_shieldMaxHealth", "_shieldHealth"];
+            private ["_currentTime", "_lastHit", "_shieldMaxHealth", "_oldHealth", "_newHealth"];
 
             _currentTime = time max serverTime;
             _lastHit = _vehicle getVariable ["BNA_KC_Shield_lastHit", _currentTime];
@@ -106,9 +92,14 @@ _vehicle setVariable
                     "BNA_KC_Shield_maxHealth",
                     BASE_SHIELD_HEALTH
                 ] call BIS_fnc_returnConfigEntry;
-                _shieldHealth = _vehicle call BNAKC_fnc_getShieldHealth;
-                _shieldHealth = (_shieldHealth + _regenRate) min _shieldMaxHealth;
-                _vehicle setVariable ["BNA_KC_Shield_health", _shieldHealth, true];
+                _oldHealth = _vehicle call BNAKC_fnc_getShieldHealth;
+                _newHealth = (_oldHealth + _regenRate) min _shieldMaxHealth;
+
+                if (_oldHealth != _newHealth) then
+                {
+                    _vehicle setVariable ["BNA_KC_Shield_health", _newHealth, true];
+                    ["BNA_KC_shieldHealthChanged", [_vehicle, _oldHealth, _newHealth]] call CBA_fnc_localEvent;
+                };
             };
         },
         _regenTime,
