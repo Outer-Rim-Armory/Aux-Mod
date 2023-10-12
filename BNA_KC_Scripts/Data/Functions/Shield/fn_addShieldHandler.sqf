@@ -43,7 +43,7 @@ _vehicle setVariable
                 "BNA_KC_Shield_maxHealth",
                 BASE_SHIELD_HEALTH
             ] call BIS_fnc_returnConfigEntry;
-            _shieldHealth = _vehicle getVariable ["BNA_KC_Shield_health", _shieldMaxHealth];
+            _shieldHealth = _vehicle call BNAKC_fnc_getShieldHealth;
             _shieldHealth = (_shieldHealth - _damage) max 0;
             _vehicle setVariable ["BNA_KC_Shield_health", _shieldHealth, true];
 
@@ -63,7 +63,6 @@ _vehicle setVariable
             if (_shieldHealth isEqualTo 0) then
             {
                 _vehicle call BNAKC_fnc_deactivateShield;
-                _vehicle removeEventHandler [_thisEvent, _thisEventHandler];
             };
 
             _currentTime = time max serverTime; // serverTime returns 0 in SP
