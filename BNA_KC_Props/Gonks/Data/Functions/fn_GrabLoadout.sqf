@@ -124,6 +124,7 @@ if (_binoculars != "") then
     player addMagazine "Laserbatteries";
 };
 
+removeBackpack player; // Prevents dropping the player's current backpack (if one is equipped)
 player addBackpack _backpack;
 player addWeapon _launcher;
 
