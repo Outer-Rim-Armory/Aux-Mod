@@ -1,3 +1,18 @@
+/*
+* Author: DartRuffian
+* Displays a message whenever the vehicle's shield is turned on or getElevationOffset
+*
+* Arguments:
+* None
+*
+* Return Value:
+* Number - CBA Event Handler ID
+*
+* Examples:
+* call BNAKC_fnc_shieldToggleHandler
+*/
+
+
 [
     "BNA_KC_shieldToggle",
     {
