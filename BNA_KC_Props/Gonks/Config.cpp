@@ -100,9 +100,9 @@ class CfgVehicles
             0: Home Page
             1: Weapons
             */
-            class Rifleman
+            class ChangeMenu_Home
             {
-                displayName = "<t color='#FFFFFF'>Rifleman</t>";
+                displayName = "<t color='#FFFFFF' font='RobotoCondensedBold'>Home</t>";
 
                 position = "camera";
                 radius = 3;
@@ -111,26 +111,17 @@ class CfgVehicles
                 hideOnUse = 0;
                 priority = 100;
 
-                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) == 0)";
-                statement = "'Rifleman' call BNAKC_fnc_setMos; player setVariable ['BNAKC_Loadout_Menu', 1];";
+                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) != 0)";
+                statement = "player setVariable ['BNAKC_Loadout_Menu', 0];";
             };
 
-            class OpenArsenal: Rifleman
+            class OpenArsenal: ChangeMenu_Home
             {
                 displayName = "<t color='#FFFFFF'>Weapon Attachments</t>";
                 priority = 99;
 
                 condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) == 0)";
                 statement = "call BNAKC_fnc_openAttachmentArsenal";
-            };
-
-            class ChangeMenu_Home: Rifleman
-            {
-                displayName = "<t color='#FFFFFF' font='RobotoCondensedBold'>Home</t>";
-                priority = 98;
-
-                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Loadout_Menu', 0]) != 0)";
-                statement = "player setVariable ['BNAKC_Loadout_Menu', 0];";
             };
         };
     };
