@@ -40,6 +40,8 @@ class CfgVehicles
 
         BNA_KC_Shield_hasShield = 1;
         BNA_KC_Shield_maxHealth = 20;
+        BNA_KC_Shield_regenTime = 5; // Time in seconds without taking damage to start regenerating
+        BNA_KC_Shield_regenRate = 1; // Health to regen after _regenTime
 
         hiddenSelectionsTextures[] =
         {
