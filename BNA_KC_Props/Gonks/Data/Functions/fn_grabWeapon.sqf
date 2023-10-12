@@ -37,6 +37,15 @@ _weaponMap = createHashMapFromArray
                 ["Aux12thFleet_Mag_DC15S", 10]
             ]
         ]
+    ],
+    [
+        "DC15C",
+        [
+            "BNA_KC_DC15C",
+            [
+                ["Aux12thFleet_Mag_DC15C", 10]
+            ]
+        ]
     ]
 ];
 
