@@ -42,7 +42,7 @@ class CfgWeapons
         displayName = "[KC] DC-15A (Base)";
 
         modes[] = {"Single", "FullAuto"};
-        muzzles[] = {"this",  "Stun", "EGLM"};
+        muzzles[] = {"this", "Stun", "EGLM"};
         magazines[] = {"Aux12thFleet_Mag_DC15A"};
         magazineWell[] = {};
 
