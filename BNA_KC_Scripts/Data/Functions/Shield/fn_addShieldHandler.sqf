@@ -35,7 +35,7 @@ _vehicle setVariable
         "HandleDamage",
         {
             params ["_vehicle", "_selection", "_damage", "", "", "", "", ""];
-            private ["_oldHealth", "_newHealth", "_currentTime"];
+            private ["_oldHealth", "_newHealth", "_currentTime", "_lastHit"];
 
             _oldHealth = _vehicle call BNAKC_fnc_getShieldHealth;
             _newHealth = (_oldHealth - _damage) max 0;
@@ -52,6 +52,19 @@ _vehicle setVariable
             };
 
             _currentTime = time max serverTime; // serverTime returns 0 in SP
+            _lastSound = _vehicle getVariable ["BNA_KC_Shield_lastSound", -SHIELD_HIT_SOUND_TIME];
+
+            // private _lastUsed = _vehicle getVariable ["BNA_KC_EMP_lastUsed", -_cooldown];
+            // if !((time - _lastUsed) > _cooldown) exitWith { false };
+
+            if ((_currentTime - _lastSound) >= SHIELD_HIT_SOUND_TIME) then
+            {
+                playSound3D [format ["lsb_sounds\deflector\shield_hit%1.wss", floor (random 7) + 1], _vehicle];
+                _vehicle setVariable ["BNA_KC_Shield_lastSound", _currentTime];
+                "Playing shield hit sound" call BNAKC_fnc_devLog;
+            }
+            else {"Shield hit sound on cooldown" call BNAKC_fnc_devLog;};
+
             _vehicle setVariable ["BNA_KC_Shield_lastHit", _currentTime, true];
             // Re-apply damage to vehicle, prevents being healed when hit
             _vehicle getHit _selection;

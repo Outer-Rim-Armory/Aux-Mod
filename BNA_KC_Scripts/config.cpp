@@ -14,9 +14,10 @@ class CfgPatches
                 // Addon Options
             "ace_fortify",
                 // Fortify system
-            "lsb_fob_hblock"
-                // LS's Hesco Blocks
-                // Comes from Legion Studios: Battlefields
+            "lsb_fob_hblock",
+                // Hesco Blocks
+            "lsb_sounds"
+                // Shield Hit sounds
         };
 		units[] = {};
 		weapons[] = {};
