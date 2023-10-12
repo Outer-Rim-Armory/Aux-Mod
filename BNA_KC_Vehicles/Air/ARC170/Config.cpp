@@ -38,6 +38,9 @@ class CfgVehicles
         cabinCloseSound[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 1.77828, 1, 40};
         cabinCloseSoundInternal[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 10, 1, 40};
 
+        BNA_KC_Shield_hasShield = 1;
+        BNA_KC_Shield_maxHealth = 20;
+
         hiddenSelectionsTextures[] =
         {
             "\3as\3as_arc170\Data\Main_Frame_co.paa",
