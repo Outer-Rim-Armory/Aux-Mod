@@ -101,6 +101,28 @@ class CfgVehicles
                     statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
                 };
             };
+
+            class Shield
+            {
+                displayName = "Shield Health: %1";
+                condition = "true";
+                statement = "";
+                modifierFunction = "_this call BNAKC_fnc_shieldActionModifier";
+                runOnHover = 0;
+
+                class ActivateShield
+                {
+                    displayName = "Activate Shield";
+                    condition = "!(_this#0 getVariable ['BNA_KC_Shield_isActive', false]) and ace_player == driver (_this#0)";
+                    statement = "_this#0 call BNAKC_fnc_activateShield";
+                };
+                class DeactivateShield
+                {
+                    displayName = "Deactivate Shield";
+                    condition = "_this#0 getVariable ['BNA_KC_Shield_isActive', false] and ace_player == driver (_this#0)";
+                    statement = "_this#0 call BNAKC_fnc_deactivateShield";
+                };
+            };
         };
 
         class UserActions
