@@ -16,7 +16,7 @@
 
 #include "script_component.sqf"
 params [["_vehicle", objNull, [objNull]], ["_engineer", objNull, [objNull]]];
-private ["_shieldHealth", "_canRepair"];
+private ["_shieldHealth", "_canRepair", "_hasToolkit"];
 
 if (isNull _vehicle or isNull _engineer) exitWith {false};
 
@@ -27,5 +27,9 @@ if !(isTouchingGround _vehicle) exitWith {false};
 
 _canRepair = _engineer call ace_repair_fnc_isEngineer or _engineer call ace_repair_fnc_isNearRepairVehicle or _engineer call ace_repair_fnc_isInRepairFacility;
 if !(_canRepair) exitWith {false};
+
+_hasToolkit = false;
+{if (_x in items player) exitWith {_hasToolKit = true};} forEach ace_repair_allToolKits;
+if !(_hasToolKit) exitWith {false};
 
 true;
