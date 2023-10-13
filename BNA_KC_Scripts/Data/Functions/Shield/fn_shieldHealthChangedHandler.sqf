@@ -28,6 +28,6 @@
             [_vehicle, true] call BNAKC_fnc_getShieldHealth
         ] + "%";
         _message = format ["Strength %1", _shieldHealthFormatted];
-        [_message] call ace_common_fnc_displaytextstructured;
+        [_message] remoteExecCall ["ace_common_fnc_displaytextstructured", currentPilot _vehicle];
     }
 ] call CBA_fnc_addEventHandler;

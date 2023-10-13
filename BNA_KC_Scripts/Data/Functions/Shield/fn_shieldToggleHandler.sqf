@@ -32,6 +32,6 @@
             _message = format ["Shield <t color='#00FF00'>Enabled</t> | Strength %1", _health];
         };
 
-        [_message] call ace_common_fnc_displaytextstructured;
+        [_message] remoteExecCall ["ace_common_fnc_displaytextstructured", currentPilot _vehicle];
     }
 ] call CBA_fnc_addEventHandler;
