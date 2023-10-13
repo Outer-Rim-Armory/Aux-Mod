@@ -7,6 +7,7 @@ class CfgVehicles
     class Plane_Fighter_03_dynamicLoadout_base_F;
     class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F
     {
+        class ACE_Actions;
         class ACE_SelfActions;
         class Turrets
         {
@@ -64,6 +65,20 @@ class CfgVehicles
                     "\3as\3as_arc170\Data\Wings_Engines_co.paa",
                     "\3as\3as_arc170\Data\Guns_co.paa"
                 };
+            };
+        };
+
+        class ACE_Actions: ACE_Actions
+        {
+            class RechargeShield
+            {
+                displayName = "Recharge Shield: %1";
+                selection = "airbrake2_axis";
+                distance = 2;
+
+                condition = "[_this#0, true] call BNAKC_fnc_getShieldHealth < 100";
+                statement = "[_this#0, _this#1] call BNAKC_fnc_shieldFullCharge";
+                modifierFunction = "_this call BNAKC_fnc_shieldActionModifier";
             };
         };
 
