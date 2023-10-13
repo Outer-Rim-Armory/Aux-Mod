@@ -76,7 +76,7 @@ class CfgVehicles
                 selection = "airbrake2_axis";
                 distance = 2;
 
-                condition = "[_this#0, true] call BNAKC_fnc_getShieldHealth < 100";
+                condition = "[_this#0, _this#1] call BNAKC_fnc_canFullRecharge";
                 statement = "[_this#0, _this#1] call BNAKC_fnc_shieldFullCharge";
                 modifierFunction = "_this call BNAKC_fnc_shieldActionModifier";
             };

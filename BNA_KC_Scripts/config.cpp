@@ -100,6 +100,7 @@ class CfgFunctions
             class deactivateShield {};
             class addShieldHandler {};
             class shieldActionModifier {};
+            class canFullRecharge {};
             class shieldFullCharge {};
 
             class shieldToggleHandler {};
