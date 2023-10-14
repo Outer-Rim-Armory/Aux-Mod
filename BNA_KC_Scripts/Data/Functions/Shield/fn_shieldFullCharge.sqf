@@ -16,7 +16,7 @@
 
 #include "script_component.sqf"
 params [["_vehicle", objNull, [objNull]], ["_engineer", objNull, [objNull]], ["_instant", false, [false]]];
-private ["_shieldMaxHealth", "_oldHealth"];
+private ["_shieldMaxHealth", "_oldHealth", "_rechargeTime"];
 
 if (isNull _vehicle) exitWith {};
 if (_instant) exitWith
@@ -34,8 +34,15 @@ if (_instant) exitWith
 
 if (isNull _engineer) exitWith {};
 
+_rechargeTime =
 [
-    15,
+    (configFile >> "CfgVehicles" >> typeOf _vehicle),
+    "BNA_KC_Shield_regenTime",
+    BASE_SHIELD_REGEN_TIME
+] call BIS_fnc_returnConfigEntry;
+
+[
+    _rechargeTime * 1.5,
     [_vehicle, _engineer],
     {
         // Finished
