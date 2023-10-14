@@ -40,6 +40,7 @@ if (isNull _engineer) exitWith {};
     {
         // Finished
         _this#0 params ["_vehicle", "_engineer"];
+        private ["_shieldMaxHealth", "_oldHealth"];
         _shieldMaxHealth =
         [
             (configFile >> "CfgVehicles" >> typeOf _vehicle),
