@@ -10,7 +10,7 @@
 * None
 *
 * Examples:
-* [vehicle player, player] call BNAKC_fnc_shieldFullCharge;
+* [vehicle player, player] call BNAKC_fnc_shieldFullChargeAction;
 */
 
 

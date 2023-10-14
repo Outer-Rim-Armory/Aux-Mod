@@ -77,7 +77,7 @@ class CfgVehicles
                 distance = 2;
 
                 condition = "[_this#0, _this#1] call BNAKC_fnc_canFullRecharge";
-                statement = "[_this#0, _this#1] call BNAKC_fnc_shieldFullCharge";
+                statement = "[_this#0, _this#1] call BNAKC_fnc_shieldFullChargeAction";
                 modifierFunction = "_this call BNAKC_fnc_shieldActionModifier";
             };
         };
