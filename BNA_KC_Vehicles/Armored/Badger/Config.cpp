@@ -4,11 +4,12 @@
 
 class CfgVehicles
 {
-    class APC_Wheeled_01_base_F;
-    class B_APC_Wheeled_01_base_F: APC_Wheeled_01_base_F
+    class Wheeled_APC_F;
+    class APC_Wheeled_01_base_F: Wheeled_APC_F
     {
         class Turrets;
     };
+    class B_APC_Wheeled_01_base_F: APC_Wheeled_01_base_F {};
     class B_APC_Wheeled_01_cannon_F: B_APC_Wheeled_01_base_F
     {
         class Turrets: Turrets
