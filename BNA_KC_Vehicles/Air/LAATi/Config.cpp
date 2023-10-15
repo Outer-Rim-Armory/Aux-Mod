@@ -83,6 +83,10 @@ class CfgVehicles
             "SmokeLauncherMag"
         };
 
+        // LS Keybind Animations
+        ls_vehicle_rampAnims[] = {"ramp"};
+        ls_vehicle_rampToggleSounds[] = {"ls_laatSeries_ramp", "ls_laatSeries_ramp"};
+
         // Textures
         hiddenSelectionsTextures[] =
         {
@@ -194,13 +198,13 @@ class CfgVehicles
             {
                 displayName = "Open Ramp";
                 condition = QUOTE(ace_player == currentPilot this and this animationSourcePhase 'ramp' == 0);
-                statement = "this animateSource ['ramp', 1]";
+                statement = "['ramp', true] call ls_fnc_keybind_operationFrameWork;";
             };
             class RampClose: RampOpen
             {
                 displayName = "Close Ramp";
                 condition = QUOTE(ace_player == currentPilot this and this animationSourcePhase 'ramp' == 1);
-                statement = "this animateSource ['ramp', 0]";
+                statement = "['ramp', true] call ls_fnc_keybind_operationFrameWork;";
             };
 
             SPECIAL_LOAD
