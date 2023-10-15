@@ -40,6 +40,9 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
+        weapons[] = {"ls_weapon_CMFlareLauncher"};
+        magazines[] = {"ls_mag_240rnd_CMFlareChaff_blue"};
+
         class ACE_SelfActions: ACE_SelfActions
         {
             HUD_CHANGER
@@ -102,6 +105,9 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
+        weapons[] = {"ls_weapon_CMFlareLauncher"};
+        magazines[] = {"ls_mag_240rnd_CMFlareChaff_blue"};
+
         class ACE_SelfActions: ACE_SelfActions
         {
             HUD_CHANGER
@@ -136,6 +142,9 @@ class CfgVehicles
         displayName = "Galaxy HIT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
+
+        weapons[] = {"ls_weapon_CMFlareLauncher"};
+        magazines[] = {"ls_mag_240rnd_CMFlareChaff_blue"};
 
         class ACE_SelfActions: ACE_SelfActions
         {
