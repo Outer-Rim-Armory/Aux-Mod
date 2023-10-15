@@ -38,6 +38,16 @@ class CfgVehicles
         cabinCloseSound[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 1.77828, 1, 40};
         cabinCloseSoundInternal[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 10, 1, 40};
 
+        weapons[] = {"3AS_ARC_Light_Canon", "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
+        magazines[] =
+        {
+            "3AS_ARC_500Rnd_Light_Shells",
+            "3AS_ARC_500Rnd_Light_Shells",
+            "ls_mag_240rnd_CMFlareChaff_blue",
+            "ls_mag_240rnd_CMFlareChaff_blue",
+            "Laserbatteries"
+        };
+
         hiddenSelectionsTextures[] =
         {
             "\3as\3as_arc170\Data\Main_Frame_co.paa",
