@@ -12,7 +12,7 @@ class CfgPatches
             "A3_Air_F_Exp_VTOL_01",
                 // Blackfish
             "ls_vehicles_weapons",
-                // Flare launcher
+                // Flares
             "BNA_KC_Gear_Aviation"
                 // Pilot unit
         };
