@@ -16,8 +16,13 @@
 
 
 params ["_target", "_player", "_params"];
-private ["_config"];
+private ["_textureSets"];
 
-_config = configFile >> "CfgVehicles" >> typeOf _target >> "TextureSources";
+_textureSets =
+[
+    configFile >> "CfgVehicles" >> typeOf _target,
+    "textureList",
+    []
+] call BIS_fnc_returnConfigEntry;
 
-isClass _config and _player isEqualTo currentPilot _target and speed _target == 0;
+count _textureSets > 2 and _player isEqualTo currentPilot _target and speed _target == 0;
