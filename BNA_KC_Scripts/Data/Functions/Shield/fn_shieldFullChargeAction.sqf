@@ -28,6 +28,8 @@ _rechargeTime =
     BASE_SHIELD_REGEN_TIME
 ] call BIS_fnc_returnConfigEntry;
 
+_vehicle setVariable ["BNA_KC_Shield_isRecharging", true, true];
+
 [
     _rechargeTime * 1.5,
     [_vehicle, _engineer],
@@ -35,11 +37,13 @@ _rechargeTime =
         // Finished
         _this#0 params ["_vehicle", "_engineer"];
         _vehicle call BNAKC_fnc_rechargeShield;
+        _vehicle setVariable ["BNA_KC_Shield_isRecharging", nil, true];
         ["Recharge Complete"] remoteExecCall ["ace_common_fnc_displaytextstructured", _engineer];
     },
     {
         // Failed
         _this#0 params ["_vehicle", "_engineer"];
+        _vehicle setVariable ["BNA_KC_Shield_isRecharging", nil, true];
         ["Recharge Cancelled"] remoteExecCall ["ace_common_fnc_displaytextstructured", _engineer];
     },
     "Recharging Shields",

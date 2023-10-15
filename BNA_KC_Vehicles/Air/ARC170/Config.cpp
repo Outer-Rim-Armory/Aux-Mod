@@ -130,7 +130,7 @@ class CfgVehicles
                 class ActivateShield
                 {
                     displayName = "Activate Shield";
-                    condition = "!(_this#0 getVariable ['BNA_KC_Shield_isActive', false]) and ace_player == driver (_this#0)";
+                    condition = "!(_this#0 getVariable ['BNA_KC_Shield_isActive', false]) and ace_player == driver (_this#0) and !(_this#0 getVariable ['BNA_KC_Shield_isRecharging', false])";
                     statement = "_this#0 call BNAKC_fnc_activateShield";
                 };
                 class DeactivateShield
