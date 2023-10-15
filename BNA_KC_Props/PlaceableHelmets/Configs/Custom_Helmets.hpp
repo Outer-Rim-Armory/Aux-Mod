@@ -68,7 +68,6 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Star, [KC] INF P2 Helm ('Star'), BNA_KC_Hel
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Stone, [KC] INF P2 Helm ('Stone'), BNA_KC_Helmet_Phase2_Stone, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Swoop, [KC] INF P2 Helm ('Swoop'), BNA_KC_Helmet_Phase2_Swoop, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Sytha, [KC] INF P2 Helm ('Sytha'), BNA_KC_Helmet_Phase2_Sytha, "Customs")
-HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Taun, [KC] INF P2 Helm ('Taun'), BNA_KC_Helmet_Phase2_Taun, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Tugz, [KC] INF P2 Helm ('Tugz'), BNA_KC_Helmet_Phase2_Tugz, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Tyrant, [KC] INF P2 Helm ('Tyrant'), BNA_KC_Helmet_Phase2_Tyrant, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Vortex, [KC] INF P2 Helm ('Vortex'), BNA_KC_Helmet_Phase2_Vortex, "Customs")

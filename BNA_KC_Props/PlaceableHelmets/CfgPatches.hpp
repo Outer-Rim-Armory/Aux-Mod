@@ -152,7 +152,6 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Stone",
             "BNA_KC_HelmetHolder_P2_Swoop",
             "BNA_KC_HelmetHolder_P2_Sytha",
-            "BNA_KC_HelmetHolder_P2_Taun",
             "BNA_KC_HelmetHolder_P2_Tugz",
             "BNA_KC_HelmetHolder_P2_Tyrant",
             "BNA_KC_HelmetHolder_P2_Vortex",
