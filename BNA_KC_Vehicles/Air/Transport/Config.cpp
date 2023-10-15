@@ -28,6 +28,15 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
+        weapons[] = {"3as_ARC_Light_Canon", "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
+        magazines[] =
+        {
+            "3as_ARC_500Rnd_Light_Shells",
+            "3as_ARC_500Rnd_Light_Shells",
+            "ls_mag_300rnd_CMFlareChaff_blue",
+            "Laserbatteries"
+        };
+
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Vehicles\Air\Transport\Data\Textures\KeeliCompany\Body.paa",

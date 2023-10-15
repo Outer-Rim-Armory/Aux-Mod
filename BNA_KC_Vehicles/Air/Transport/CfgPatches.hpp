@@ -11,6 +11,9 @@ class CfgPatches
                 // Core Config
             "3as_Starships",
                 // Republic Transport
+            "ls_vehicles_weapons",
+                // Weapons
+                // Flares
             "BNA_KC_Gear_Aviation"
                 // Pilot unit
         };
