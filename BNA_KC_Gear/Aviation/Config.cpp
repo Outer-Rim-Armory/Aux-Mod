@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "..\Macros.hpp"
 
 
 class CfgWeapons
@@ -27,6 +28,8 @@ class CfgWeapons
             "\ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_pilot_P2_helmet_ca.paa";
+
+        HEARING_PROTECTION_CREW
 
         class ItemInfo: ItemInfo
         {
@@ -80,6 +83,8 @@ class CfgWeapons
             "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
         };
         picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
+
+        HEARING_PROTECTION_CREW
 
         class ItemInfo: ItemInfo
         {

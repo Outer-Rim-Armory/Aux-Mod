@@ -25,3 +25,6 @@ the path begins with a "\", but it essentially represents the project root
 
 // Returns text (normally code) in quotes
 #define QUOTE(CODE) #CODE
+
+#define HEARING_PROTECTION_CREW ace_hearing_lowerVolume = 0.6; \
+ace_hearing_protection = 0.85;
