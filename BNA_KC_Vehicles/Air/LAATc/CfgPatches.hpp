@@ -11,6 +11,9 @@ class CfgPatches
                 // Core Config
             "lsd_vehicles_heli",
                 // LAAT/c
+            "ls_vehicles_weapons",
+                // Weapons
+                // Flares
             "BNA_KC_Gear_Aviation",
                 // Pilot unit
             "BNA_KC_Vehicles_Sounds",
