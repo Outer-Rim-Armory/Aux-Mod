@@ -20,4 +20,4 @@ private ["_config"];
 
 _config = configFile >> "CfgVehicles" >> typeOf _target >> "TextureSources";
 
-isClass _config and _player isEqualTo currentPilot _target and isTouchingGround _target;
+isClass _config and _player isEqualTo currentPilot _target and speed _target == 0;
