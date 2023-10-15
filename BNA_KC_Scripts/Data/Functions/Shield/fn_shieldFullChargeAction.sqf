@@ -17,7 +17,7 @@
 
 #include "script_component.sqf"
 params [["_vehicle", objNull, [objNull]], ["_engineer", objNull, [objNull]]];
-private ["_shieldMaxHealth", "_oldHealth", "_rechargeTime"];
+private ["_rechargeTime"];
 
 if (isNull _vehicle or isNull _engineer) exitWith {};
 
