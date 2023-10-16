@@ -199,14 +199,14 @@ class CfgVehicles
                 displayName = "Open Doors";
                 condition = QUOTE(ace_player == currentPilot this and (this animationPhase 'door_L') == 1);
                 // statement = "['door', true] call ls_fnc_keybind_operationFrameWork;";
-                statement = "this action ['LandGear', this];"
+                statement = "this action ['LandGear', this]; this say3D 'BNA_KC_Sound_LAAT_DoorsOpen'"
             };
             class DoorsClose: DoorsOpen
             {
                 displayName = "Close Doors";
                 condition = QUOTE(ace_player == currentPilot this and (this animationPhase 'door_L') == 0);
                 // statement = "['door', true] call ls_fnc_keybind_operationFrameWork;";
-                statement = "this action ['LandGearUp', this];"
+                statement = "this action ['LandGearUp', this]; this say3D 'BNA_KC_Sound_LAAT_DoorsClose'"
             };
 
             class RampOpen: Impulse

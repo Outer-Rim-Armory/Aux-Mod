@@ -3,6 +3,17 @@
 
 class CfgSounds
 {
+    class BNA_KC_Sound_LAAT_DoorsOpen
+    {
+        name = "LAAT Doors Opened";
+        sound[] = {"\3AS\3as_Laat\sounds\LaatdoorOPEN.ogg", 1, 0.8, 100};
+        titles[] = {0, ""};
+    };
+    class BNA_KC_Sound_LAAT_DoorsClose: BNA_KC_Sound_LAAT_DoorsOpen
+    {
+        name = "LAAT Doors Closed";
+        sound[] = {"\3AS\3as_Laat\sounds\LaatdoorOPEN.ogg", 1, 1, 100};
+    };
     class BNA_KC_Sound_ImpulseOn
     {
         name = "LAAT Impulse On";
