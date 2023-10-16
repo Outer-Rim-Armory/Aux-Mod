@@ -3,17 +3,18 @@ params ["_eventHandlerType"];
 [_eventHandlerType,
 {
     params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
-    if (_ammo find "BNA_KC" isEqualTo -1 ) exitWith {};
 
+    if (_ammo find "BNA_KC" isEqualTo -1 and _ammo find "Aux12thFleet" isEqualTo -1) exitWith {};
 
     [_unit, _ammo, _magazine, _projectile] spawn
     {
         params ["_unit", "_ammo", "_magazine", "_projectile"];
-        
+        private ["_delay", "_position", "_grenadeType"];
+
         _ammo call BNAKC_fnc_devLog;
         _magazine call BNAKC_fnc_devLog;
 
-        private _delay =
+        _delay =
         [
             (configFile >> "CfgAmmo" >> _ammo),
             "explosionTime",
@@ -23,15 +24,15 @@ params ["_eventHandlerType"];
 
         _delay call BNAKC_fnc_devLog;
         sleep _delay;
-        
-        private _position = getPosATL _projectile;
+
+        _position = getPosATL _projectile;
         if (BNA_KC_DevMode) then
         {
             _position call BNAKC_fnc_devLog;
             createVehicle ["VR_3DSelector_01_default_F", _position, [], 0, "CAN_COLLIDE"];
         };
 
-        private _grenadeType =
+        _grenadeType =
         [
             (configFile >> "CfgMagazines" >> _magazine),
             "BNA_KC_GrenadeType",
@@ -46,21 +47,23 @@ params ["_eventHandlerType"];
                 // Play Sound Effect
                 // Sound is scripted so that the Clone Wars sound can be enabled/disabled
                 "Is EMP. Playing sound" call BNAKC_fnc_devLog;
+                private ["_radiusDroid", "_radiusDeka", "_radiusVehicle", "_nearbyUnits", "_shieldObjects", "_tasDekas", "_tanks"];
+
                 [ATLToASL _position] remoteExec ["BNAKC_fnc_playDroidPopperSound", [0, -2] select isDedicated];
-                
-                private _radiusDroid =
+
+                _radiusDroid =
                 [
                     (configFile >> "CfgMagazines" >> _magazine),
                     "BNA_KC_GrenadeEMP_Radius_Droid",
                     3
                 ] call BIS_fnc_returnConfigEntry;
-                private _radiusDeka =
+                _radiusDeka =
                 [
                     (configFile >> "CfgMagazines" >> _magazine),
                     "BNA_KC_GrenadeEMP_Radius_Deka",
                     5
                 ] call BIS_fnc_returnConfigEntry;
-                private _radiusVehicle =
+                _radiusVehicle =
                 [
                     (configFile >> "CfgMagazines" >> _magazine),
                     "BNA_KC_GrenadeEMP_Radius_Vehicle",
@@ -69,10 +72,10 @@ params ["_eventHandlerType"];
 
                 // Units & Similar Objects
                 // Get all nearby units
-                private _nearbyUnits = _position nearEntities ["CAManBase", _radiusDroid];
+                _nearbyUnits = _position nearEntities ["CAManBase", _radiusDroid];
 
-                private _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];	// Droideka Shields
-                private _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka]; // 3AS's Droidkas require extra work
+                _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];	// Droideka Shields
+                _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka]; // 3AS's Droidkas require extra work
 
                 // Remove or kill objects
                 [_unit, _nearbyUnits] call BNAKC_fnc_killDroids;
@@ -85,7 +88,7 @@ params ["_eventHandlerType"];
                 // Temporarily disable vehicles
                 if (BNA_KC_DroidPopper_DisableTime > 0 && _radiusVehicle > 0) then
                 {
-                    private _tanks = nearestObjects [_position, [], _radiusVehicle] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
+                    _tanks = nearestObjects [_position, [], _radiusVehicle] select { ((toLowerAnsi typeOf _x find "_aat") > 0) };
                     [_tanks, BNA_KC_DroidPopper_DisableTime] call BNAKC_fnc_tempDisableVehicles;
                 };
             };
@@ -93,13 +96,14 @@ params ["_eventHandlerType"];
             case "BACTA":
             {
                 "Is Bacta" call BNAKC_fnc_devLog;
-                private _healRadius =
+                private ["_healRadius", "_healDuration", "_allUnits", "_nearbyUnits", "_newUnits"];
+                _healRadius =
                 [
                     (configFile >> "CfgMagazines" >> _magazine),
                     "BNA_KC_GrenadeBacta_Radius",
                     5
                 ] call BIS_fnc_returnConfigEntry;
-                private _healDuration =
+                _healDuration =
                 [
                     (configFile >> "CfgMagazines" >> _magazine),
                     "BNA_KC_GrenadeBacta_Duration",
@@ -112,7 +116,7 @@ params ["_eventHandlerType"];
                     BNA_KC_Weap_SlowHealHandles = [];
                 };
 
-                private _allUnits = []; // List of units that have had handlers created for them
+                _allUnits = []; // List of units that have had handlers created for them
                 _healDurationEnd = time + _healDuration; // Get ending time
                 while { time < _healDurationEnd } do
                 {
@@ -123,8 +127,8 @@ params ["_eventHandlerType"];
                     if (BNA_KC_DevMode) then { createVehicle ["VR_3DSelector_01_incomplete_F", _position, [], 0, "CAN_COLLIDE"]; };
 
                     // nearEntities is faster than nearestObjects for normal units, but it does not sort by distance
-                    private _nearbyUnits = _position nearEntities ["CAManBase", _healRadius];
-                    private _newUnits = _nearbyUnits - _allUnits; // Only assign handlers for new units
+                    _nearbyUnits = _position nearEntities ["CAManBase", _healRadius];
+                    _newUnits = _nearbyUnits - _allUnits; // Only assign handlers for new units
                     _allUnits append _newUnits;
                     {
                         // For each unit, create a healing handler for it.
