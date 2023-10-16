@@ -70,15 +70,19 @@ class CfgVehicles
 
         class ACE_Actions: ACE_Actions
         {
-            class RechargeShield
+            class RechargeShield_Left
             {
                 displayName = "Recharge Shield: %1";
-                selection = "airbrake2_axis";
+                selection = "airbrake1_axis";
                 distance = 2;
 
                 condition = "[_this#0, _this#1] call BNAKC_fnc_canFullRecharge";
                 statement = "[_this#0, _this#1] call BNAKC_fnc_shieldFullChargeAction";
                 modifierFunction = "_this call BNAKC_fnc_shieldActionModifier";
+            };
+            class RechargeShield_Right: RechargeShield_Left
+            {
+                selection = "airbrake2_axis";
             };
         };
 

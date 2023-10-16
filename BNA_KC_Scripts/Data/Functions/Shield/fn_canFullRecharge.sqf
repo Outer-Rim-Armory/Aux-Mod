@@ -16,7 +16,7 @@
 
 #include "script_component.sqf"
 params [["_vehicle", objNull, [objNull]], ["_engineer", objNull, [objNull]]];
-private ["_shieldHealth", "_canRepair", "_hasToolkit"];
+private ["_shieldHealth", "_canRepair", "_hasToolkit", "_isRecharging"];
 
 if (isNull _vehicle or isNull _engineer) exitWith {false};
 
@@ -32,5 +32,8 @@ if !(_canRepair) exitWith {false};
 _hasToolkit = false;
 {if (_x in items player) exitWith {_hasToolKit = true};} forEach ace_repair_allToolKits;
 if !(_hasToolKit) exitWith {false};
+
+_isRecharging = _vehicle getVariable ["BNA_KC_Shield_isRecharging", false];
+if (_isRecharging) exitWith {false};
 
 true;
