@@ -27,6 +27,23 @@ _hasShield =
 if (isNull _vehicle) exitWith {};
 if (_hasShield isEqualTo 0) exitWith {};
 
+_vehicle addEventHandler
+[
+    "Killed",
+    {
+        params ["_vehicle", "", "", ""];
+        _vehicle call BNAKC_fnc_deactivateShield;
+    }
+];
+_vehicle addEventHandler
+[
+    "Deleted",
+    {
+        params ["_vehicle"];
+        _vehicle call BNAKC_fnc_deactivateShield;
+    }
+];
+
 _vehicle setVariable
 [
     "BNA_KC_Shield_damageHandler",

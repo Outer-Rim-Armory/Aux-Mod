@@ -29,7 +29,6 @@ _regenHandler = _vehicle getVariable ["BNA_KC_Shield_regenHandler", -1];
 
 // Validate handlers, prevents sending out a false event
 if (_hasShield isEqualTo 0) exitWith {};
-if (_damageHandler isEqualTo -1) exitWith {};
 
 _vehicle setVariable ["BNA_KC_Shield_isActive", nil, true];
 _vehicle setVariable ["BNA_KC_Shield_damageHandler", nil, true];
