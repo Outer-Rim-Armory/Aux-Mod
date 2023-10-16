@@ -64,10 +64,8 @@ while {!isNull _object} do
     format ["All nearby units: %1", _nearbyUnits] call BNAKC_fnc_devLog;
 
     {
-        // Skip if unit is not hurt
-        if (_x call BNAKC_fnc_isFullyHealed) then { continue; };
-        // Skip if unit is already being healed
-        if (_x in _currentPatients) then { continue; };
+        if (_x call BNAKC_fnc_isFullyHealed) then {continue;}; // Skip if unit is not hurt
+        if (_x in _currentPatients) then {continue;};          // Skip if unit is already being healed
 
         _unitsToHeal pushBack _x;
     } forEach _nearbyUnits;
@@ -76,10 +74,7 @@ while {!isNull _object} do
     format ["Current patients before checks: %1", _currentPatients] call BNAKC_fnc_devLog;
 
     // Remove any patients that have become fully healed
-    _currentPatients = _currentPatients select
-    {
-        !(_x call BNAKC_fnc_isFullyHealed)
-    };
+    _currentPatients = _currentPatients select {!(_x call BNAKC_fnc_isFullyHealed)};
     format ["Current patients that are still hurt: %1", _currentPatients] call BNAKC_fnc_devLog;
     for "_x" from 0 to (count _currentPatients - 1) do
     {
@@ -97,7 +92,7 @@ while {!isNull _object} do
     };
     format ["Current patients after checks: %1", _currentPatients] call BNAKC_fnc_devLog;
 
-    if (_unitsToHeal isEqualTo []) then { "No units to heal, skipping" call BNAKC_fnc_devLog; continue; };
+    if (_unitsToHeal isEqualTo []) then {"No units to heal, skipping" call BNAKC_fnc_devLog; continue;};
 
     // Sort by most injured to least
     _unitsToHeal = [_unitsToHeal] call BNAKC_fnc_sortUnitsByInjuries;
