@@ -32,7 +32,12 @@ _vehicle addEventHandler
     "Killed",
     {
         params ["_vehicle", "", "", ""];
+        private ["_regenHandler"];
         _vehicle call BNAKC_fnc_deactivateShield;
+
+        _regenHandler = _vehicle getVariable ["BNA_KC_Shield_regenHandler", -1];
+        [_regenHandler] call CBA_fnc_removePerFrameHandler;
+        _vehicle setVariable ["BNA_KC_Shield_regenHandler", nil, true];
     }
 ];
 _vehicle addEventHandler
@@ -40,7 +45,12 @@ _vehicle addEventHandler
     "Deleted",
     {
         params ["_vehicle"];
+        private ["_regenHandler"];
         _vehicle call BNAKC_fnc_deactivateShield;
+
+        _regenHandler = _vehicle getVariable ["BNA_KC_Shield_regenHandler", -1];
+        [_regenHandler] call CBA_fnc_removePerFrameHandler;
+        _vehicle setVariable ["BNA_KC_Shield_regenHandler", nil, true];
     }
 ];
 
