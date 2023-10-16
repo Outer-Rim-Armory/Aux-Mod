@@ -928,7 +928,7 @@ class CfgVehicles
             "\BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
             "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Cover
             "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Heavy
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Medic
+            "",                                                               // Medic
             ""                                                                // RTO
         };
     };
