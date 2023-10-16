@@ -194,6 +194,21 @@ class CfgVehicles
                 statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick);
             };
 
+            class DoorsOpen: Impulse
+            {
+                displayName = "Open Doors";
+                condition = QUOTE(ace_player == currentPilot this and (this animationPhase 'door_L') == 1);
+                // statement = "['door', true] call ls_fnc_keybind_operationFrameWork;";
+                statement = "this action ['LandGear', this];"
+            };
+            class DoorsClose: DoorsOpen
+            {
+                displayName = "Close Doors";
+                condition = QUOTE(ace_player == currentPilot this and (this animationPhase 'door_L') == 0);
+                // statement = "['door', true] call ls_fnc_keybind_operationFrameWork;";
+                statement = "this action ['LandGearUp', this];"
+            };
+
             class RampOpen: Impulse
             {
                 displayName = "Open Ramp";
