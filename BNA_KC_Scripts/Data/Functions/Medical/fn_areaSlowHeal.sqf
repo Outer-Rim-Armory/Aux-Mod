@@ -101,7 +101,11 @@ while {!isNull _object} do
     _unitsToHeal = _currentPatients + _unitsToHeal;
     format ["Patients + units to heal: %1", _unitsToHeal] call BNAKC_fnc_devLog;
 
-    _unitsToHeal = _unitsToHeal select [0, _maxPatients]; // Get only the first x patients
+    if (_maxPatients > 0) then
+    {
+        _unitsToHeal = _unitsToHeal select [0, _maxPatients]; // Get only the first x patients
+    };
+
     format ["Units to heal: %1", _unitsToHeal] call BNAKC_fnc_devLog;
     format ["Actual Units to heal: %1", _unitsToHeal - _currentPatients] call BNAKC_fnc_devLog;
 
