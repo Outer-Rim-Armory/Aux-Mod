@@ -18,6 +18,7 @@ params [["_vehicle", objNull, [objNull]]];
 private ["_hasShield", "_shieldHealth"];
 
 if (isNull _vehicle) exitWith {};
+if !(alive _vehicle) exitWith {};
 
 _hasShield =
 [

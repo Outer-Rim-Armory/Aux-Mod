@@ -20,6 +20,8 @@ private ["_shieldHealth", "_canRepair", "_hasToolkit", "_isRecharging"];
 
 if (isNull _vehicle or isNull _engineer) exitWith {false};
 
+if !(alive _vehicle or alive _engineer) exitWith {false};
+
 _shieldHealth = [_vehicle, true] call BNAKC_fnc_getShieldHealth;
 if (_shieldHealth == 100) exitWith {false};
 
