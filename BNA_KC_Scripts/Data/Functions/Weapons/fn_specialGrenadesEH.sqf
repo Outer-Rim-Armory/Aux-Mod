@@ -88,13 +88,8 @@ params ["_eventHandlerType"];
 
             case "BACTA":
             {
-                private ["_healRadius", "_healDuration", "_allUnits", "_nearbyUnits", "_newUnits"];
-                _healRadius =
-                [
-                    (configFile >> "CfgMagazines" >> _magazine),
-                    "BNA_KC_GrenadeBacta_Radius",
-                    5
-                ] call BIS_fnc_returnConfigEntry;
+                private ["_healDuration", "_currentTime", "_endTime"];
+                _projectile call BNAKC_fnc_areaSlowHeal;
                 _healDuration =
                 [
                     (configFile >> "CfgMagazines" >> _magazine),
@@ -102,42 +97,12 @@ params ["_eventHandlerType"];
                     5
                 ] call BIS_fnc_returnConfigEntry;
 
-                // If the list of handlers does not exist, create an empty array
-                if (isNil "BNA_KC_Weap_SlowHealHandles") then
-                {
-                    BNA_KC_Weap_SlowHealHandles = [];
-                };
+                _currentTime = time max serverTime;
+                _endTime = _currentTime + _healDuration;
+                waitUntil {time max serverTime >= _endTime;};
 
-                _allUnits = []; // List of units that have had handlers created for them
-                _healDurationEnd = time + _healDuration; // Get ending time
-                while { time < _healDurationEnd } do
-                {
-                    // Check for new units to create heal handlers for
-
-                    _position = getPosATL _projectile; // Update position, accounts for smoke grenade rolling
-                    // Create dev marker for new pos
-                    if (BNA_KC_DevMode) then { createVehicle ["VR_3DSelector_01_incomplete_F", _position, [], 0, "CAN_COLLIDE"]; };
-
-                    // nearEntities is faster than nearestObjects for normal units, but it does not sort by distance
-                    _nearbyUnits = _position nearEntities ["CAManBase", _healRadius];
-                    _newUnits = _nearbyUnits - _allUnits; // Only assign handlers for new units
-                    _allUnits append _newUnits;
-                    {
-                        // For each unit, create a healing handler for it.
-                        // Track the ids for all handlers to be deleted later
-                        BNA_KC_Weap_SlowHealHandles pushback ([_x, BNA_KC_Bacta_HealRate] call BNAKC_fnc_slowHeal);
-                    } forEach _newUnits;
-
-                    sleep 0.5;
-                };
-
-                // Delete smoke grenade, remove all handlers
+                format ["Duration ended, deleting grenade %1", _projectile] call BNAKC_fnc_devLog;
                 deleteVehicle _projectile;
-                "Removing remaining handlers" call BNAKC_fnc_devLog;
-                {
-                    [_x] call CBA_fnc_removePerFrameHandler;
-                    BNA_KC_Weap_SlowHealHandles deleteAt (BNA_KC_Weap_SlowHealHandles find _x); // remove value from list
-                } forEach BNA_KC_Weap_SlowHealHandles;
             };
         };
     };
