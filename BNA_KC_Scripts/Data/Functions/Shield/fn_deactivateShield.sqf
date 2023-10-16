@@ -14,7 +14,7 @@
 
 
 params [["_vehicle", objNull, [objNull]]];
-private ["_hasShield", "_shieldHealth", "_damageHandler"];
+private ["_hasShield", "_shieldHealth", "_damageHandler", "_regenHandler"];
 
 if (isNull _vehicle) exitWith {};
 
