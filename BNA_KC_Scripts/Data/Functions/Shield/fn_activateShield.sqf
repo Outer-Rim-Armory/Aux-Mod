@@ -39,7 +39,6 @@ _shieldHealth =
 _vehicle setVariable ["BNA_KC_Shield_isActive", true, true];
 if (_vehicle getVariable ["BNA_KC_Shield_health", -1] isEqualTo -1) then
 {
-    // -1 = shield is being activated for the first time
     _vehicle setVariable ["BNA_KC_Shield_health", _shieldHealth, true];
 };
 _vehicle call BNAKC_fnc_addShieldHandler;
