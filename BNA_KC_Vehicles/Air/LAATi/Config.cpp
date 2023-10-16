@@ -85,7 +85,7 @@ class CfgVehicles
 
         // LS Keybind Animations
         ls_vehicle_rampAnims[] = {"ramp"};
-        ls_vehicle_rampToggleSounds[] = {"ls_laatSeries_ramp", "ls_laatSeries_ramp"};
+        ls_vehicle_rampToggleSounds[] = {"BNA_KC_Sound_LAAT_Ramp", "BNA_KC_Sound_LAAT_Ramp"};
 
         // Textures
         hiddenSelectionsTextures[] =

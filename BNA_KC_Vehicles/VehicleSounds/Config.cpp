@@ -14,6 +14,13 @@ class CfgSounds
         name = "LAAT Doors Closed";
         sound[] = {"\3AS\3as_Laat\sounds\LaatdoorOPEN.ogg", 1, 1, 100};
     };
+
+    class BNA_KC_Sound_LAAT_Ramp: BNA_KC_Sound_LAAT_DoorsOpen
+    {
+        name = "LAAT Ramp Opened/Closed";
+        sound[] = {"\ls_sounds\vehicles\laatSeries\LAAT_ramp.wss", 5, 1, 100};
+    };
+
     class BNA_KC_Sound_ImpulseOn: BNA_KC_Sound_LAAT_DoorsOpen
     {
         name = "LAAT Impulse On";
