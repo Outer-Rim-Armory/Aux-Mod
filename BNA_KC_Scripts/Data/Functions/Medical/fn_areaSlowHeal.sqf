@@ -6,7 +6,7 @@
  * object: Object - The object to become a healing area.
  *
  * Return Value:
- * Number - If an error occurs.
+ * None
  *
  * Examples:
  * init = "(_this select 0) call BNAKC_fnc_areaSlowHeal;";
@@ -24,16 +24,24 @@ if (CBA_missionTime == 0) then
     waitUntil {sleep 3; CBA_missionTime > 0;};
 };
 
-// Early exit if object does not have a radius set
-if !(isNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Medical_areaHealRadius")) exitWith
-{
-    "This object does not have a healing radius set." call BNAKC_fnc_devLog;
-    -1;
-};
-
-_healRadius = getNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Medical_areaHealRadius");
-_healRate = getNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Medical_areaHealRate");
-_maxPatients = getNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Medical_areaHealMaxPatients");
+_healRadius =
+[
+    configFile >> "CfgVehicles" >> typeOf _object,
+    "BNA_KC_Medical_areaHealRadius",
+    7
+] call BIS_fnc_returnConfigEntry;
+_healRate =
+[
+    configFile >> "CfgVehicles" >> typeOf _object,
+    "BNA_KC_Medical_areaHealRate",
+    6
+] call BIS_fnc_returnConfigEntry;
+_maxPatients =
+[
+    configFile >> "CfgVehicles" >> typeOf _object,
+    "BNA_KC_Medical_areaHealMaxPatients",
+    2
+] call BIS_fnc_returnConfigEntry;
 
 _currentPatients = [];
 _object setVariable ["BNA_KC_healHandlers", []];
