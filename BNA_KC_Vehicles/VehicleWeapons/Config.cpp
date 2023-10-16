@@ -740,6 +740,23 @@ class CfgWeapons
 		};
 	};
 
+    class Cannon_30mm_Plane_CAS_02_F;
+    class 3AS_ARC_Light_Canon: Cannon_30mm_Plane_CAS_02_F
+    {
+        class LowROF;
+    };
+    class BNA_KC_ARC_Cannon_Medium: 3AS_ARC_Light_Canon
+    {
+        displayName = "Medium Energy Blaster Cannon";
+
+        class LowROF: LowROF
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"3AS_StarfighterBlaster_SoundSet"};
+            };
+        };
+    };
 
     /*
     class 3AS_ATRT_Weapon_F;
