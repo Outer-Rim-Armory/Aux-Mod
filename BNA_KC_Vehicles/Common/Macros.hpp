@@ -84,6 +84,31 @@
     statement = QUOTE(this call BNAKC_fnc_specialLoad); \
 };
 
+#define INVENTORY_VEHICLE_BASE class TransportWeapons \
+{ \
+    WEAP_XX(BNA_KC_DC15S, 1) \
+}; \
+class TransportMagazines \
+{ \
+    MAG_XX(Aux12thFleet_Mag_DC15S, 5) \
+    MAG_XX(SmokeShellPurple, 2) \
+    MAG_XX(SmokeShellBlue, 2) \
+    MAG_XX(ACE_Chemlight_HiBlue, 2) \
+    MAG_XX(BNA_KC_3Rnd_UGL_FlareBlue, 2) \
+}; \
+class TransportItems \
+{ \
+    ITEM_XX(ACE_packingBandage, 10) \
+    ITEM_XX(ACE_elasticBandage, 10) \
+    ITEM_XX(ACE_quikclot, 15) \
+    ITEM_XX(ACE_tourniquet, 4) \
+    ITEM_XX(ACE_splint, 2) \
+    ITEM_XX(RD501_Painkiller, 3) \
+    ITEM_XX(ACE_epinephrine, 2) \
+    ITEM_XX(ToolKit, 1) \
+}; \
+class TransportBackpacks {};
+
 #define INVENTORY_VEHICLE_COMMON class TransportWeapons {}; \
 class TransportMagazines \
 { \

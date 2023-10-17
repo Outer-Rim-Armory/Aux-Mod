@@ -179,6 +179,8 @@ class CfgVehicles
             };
         };
 
+        INVENTORY_VEHICLE_BASE
+
         class PilotCamera: PilotCamera
         {
             initTurn = 0;   // Initial states

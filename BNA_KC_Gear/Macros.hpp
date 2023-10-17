@@ -28,5 +28,24 @@ the path begins with a "\", but it essentially represents the project root
 #define GET_ARRAY(config, defaultValue) (if (isArray (config)) then {getArray (config)} else {defaultValue})
 #define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
 
+#define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \
+{ \
+    weapon = #WEAP; \
+    count = COUNT; \
+};
+
+#define MAG_XX(MAG, COUNT) class _xx_##MAG \
+{ \
+    magazine = #MAG; \
+    count = COUNT; \
+};
+
+#define ITEM_XX(ITEM, COUNT) class _xx_##ITEM \
+{ \
+    name = #ITEM; \
+    count = COUNT; \
+};
+
+
 // Returns text (normally code) in quotes
 #define QUOTE(CODE) #CODE
