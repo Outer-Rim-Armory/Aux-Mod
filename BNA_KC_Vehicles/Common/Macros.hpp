@@ -90,7 +90,7 @@
 }; \
 class TransportMagazines \
 { \
-    MAG_XX(Aux12thFleet_Mag_DC15S, __EVAL(1 * CREW_COUNT)) \
+    MAG_XX(Aux12thFleet_Mag_DC15S, __EVAL(5 * CREW_COUNT)) \
     MAG_XX(SmokeShellPurple, 2) \
     MAG_XX(SmokeShellBlue, 2) \
     MAG_XX(ACE_Chemlight_HiBlue, 2) \
