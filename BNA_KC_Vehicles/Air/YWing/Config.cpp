@@ -8,6 +8,7 @@ class CfgVehicles
     class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F
     {
         class ACE_SelfActions;
+        class PilotCamera;
     };
     class BNA_KC_BTLB_YWing: BTL_Base
     {
@@ -74,5 +75,15 @@ class CfgVehicles
         };
 
         INVENTORY_VEHICLE_BASE(2)
+
+        class PilotCamera: PilotCamera
+        {
+            initTurn = 0;
+            initElev = -10;
+            maxTurn = 180;
+            minTurn = -180;
+            maxElev = 90;
+            minElev = -10;
+        };
     };
 };
