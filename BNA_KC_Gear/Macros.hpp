@@ -46,6 +46,5 @@ the path begins with a "\", but it essentially represents the project root
     count = COUNT; \
 };
 
-
 // Returns text (normally code) in quotes
 #define QUOTE(CODE) #CODE
