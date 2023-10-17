@@ -74,6 +74,8 @@ class CfgVehicles
                 };
             };
         };
+
+        INVENTORY_VEHICLE_BASE(2)
     };
 
     class BNA_KC_Gammoth_Transport: BNA_KC_Gammoth_Base
