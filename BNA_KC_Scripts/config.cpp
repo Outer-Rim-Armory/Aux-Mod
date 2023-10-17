@@ -14,9 +14,10 @@ class CfgPatches
                 // Addon Options
             "ace_fortify",
                 // Fortify system
-            "lsb_fob_hblock"
-                // LS's Hesco Blocks
-                // Comes from Legion Studios: Battlefields
+            "lsb_fob_hblock",
+                // Hesco Blocks
+            "lsb_sounds"
+                // Shield Hit sounds
         };
 		units[] = {};
 		weapons[] = {};
@@ -92,6 +93,24 @@ class CfgFunctions
             class specialLoad {};
         };
 
+        class Shields
+        {
+            file = "BNA_KC_Scripts\Data\Functions\Shield";
+            class activateShield {};
+            class deactivateShield {};
+            class addShieldHandler {};
+            class shieldActionModifier {};
+            class rechargeShield {};
+            class canFullRecharge {};
+            class shieldFullChargeAction {};
+
+            class shieldToggleHandler {};
+            class shieldHealthChangedHandler {};
+
+            class getShieldHealth {};
+            class getShieldHealthColor {};
+        };
+
         class Medical
         {
             file = "BNA_KC_Scripts\Data\Functions\Medical";
@@ -152,6 +171,14 @@ class Extended_PostInit_EventHandlers
     class BNA_KC_Weap_specialGrenadesEH
     {
         init = "['ace_firedPlayer'] call BNAKC_fnc_specialGrenadesEH;";
+    };
+    class BNA_KC_Shield_ToggleHandler
+    {
+        init = "call BNAKC_fnc_shieldToggleHandler;";
+    };
+    class BNA_KC_Shield_HealthChangedHandler
+    {
+        init = "call BNAKC_fnc_shieldHealthChangedHandler;";
     };
 };
 
