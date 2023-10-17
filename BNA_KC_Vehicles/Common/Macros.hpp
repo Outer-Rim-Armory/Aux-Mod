@@ -71,6 +71,28 @@
     }; \
 };
 
+#define SHIELD_ACTIONS class Shield \
+{ \
+    displayName = "Shield Health: %1"; \
+    condition = "true"; \
+    statement = ""; \
+    modifierFunction = "_this call BNAKC_fnc_shieldActionModifier"; \
+    runOnHover = 0; \
+    class ActivateShield \
+    { \
+        displayName = "Activate Shield"; \
+        condition = "!(_this#0 getVariable ['BNA_KC_Shield_isActive', false]) and ace_player == driver (_this#0) and !(_this#0 getVariable ['BNA_KC_Shield_isRecharging', false])"; \
+        statement = "_this#0 call BNAKC_fnc_activateShield"; \
+    }; \
+    class DeactivateShield \
+    { \
+        displayName = "Deactivate Shield"; \
+        condition = "_this#0 getVariable ['BNA_KC_Shield_isActive', false] and ace_player == driver (_this#0)"; \
+        statement = "_this#0 call BNAKC_fnc_deactivateShield"; \
+    }; \
+};
+
+
 #define SPECIAL_LOAD class SpecialLoadVehicle \
 { \
     displayName = "Load Vehicle (Custom)"; \
