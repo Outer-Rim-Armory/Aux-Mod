@@ -50,12 +50,12 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "\3as\3as_arc170\Data\Main_Frame_co.paa",
-            "\3as\3as_arc170\Data\Wings_Engines_co.paa",
-            "\3as\3as_arc170\Data\Guns_co.paa"
+            "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Main_Frame.paa",
+            "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Wings_Engines.paa",
+            "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Guns.paa"
         };
 
-        textureList[] = {"Standard", 1};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1};
         class TextureSources
         {
             class Standard
@@ -68,6 +68,17 @@ class CfgVehicles
                     "\3as\3as_arc170\Data\Main_Frame_co.paa",
                     "\3as\3as_arc170\Data\Wings_Engines_co.paa",
                     "\3as\3as_arc170\Data\Guns_co.paa"
+                };
+            };
+            class KeeliCompany: Standard
+            {
+                author = "DartRuffian";
+                displayName = "Keeli Company";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Main_Frame.paa",
+                    "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Wings_Engines.paa",
+                    "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Guns.paa"
                 };
             };
         };
