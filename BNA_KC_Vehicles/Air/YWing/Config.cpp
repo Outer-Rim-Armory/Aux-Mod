@@ -7,6 +7,7 @@ class CfgVehicles
     class Plane_Fighter_03_dynamicLoadout_base_F;
     class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F
     {
+        class ACE_Actions;
         class ACE_SelfActions;
         class PilotCamera;
     };
@@ -64,6 +65,20 @@ class CfgVehicles
                     "\3as\3AS_btlb\data\detail_co.paa",
                     "\3as\3AS_btlb\data\interior_co.paa"
                 };
+            };
+        };
+
+        class ACE_Actions: ACE_Actions
+        {
+            class RechargeShield
+            {
+                displayName = "Recharge Shield: %1";
+                position = "[0, -3, 0.4]";
+                distance = 2;
+
+                condition = "[_this#0, _this#1] call BNAKC_fnc_canFullRecharge";
+                statement = "[_this#0, _this#1] call BNAKC_fnc_shieldFullChargeAction";
+                modifierFunction = "_this call BNAKC_fnc_shieldActionModifier";
             };
         };
 
