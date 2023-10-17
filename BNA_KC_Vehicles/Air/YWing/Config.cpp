@@ -72,5 +72,7 @@ class CfgVehicles
 
             SHIELD_ACTIONS
         };
+
+        INVENTORY_VEHICLE_BASE(2)
     };
 };
