@@ -14,9 +14,8 @@ class CfgPatches
 			"A3_Weapons_F_Exp",
 				// VTOL Shit
 			"3as_static_turbolaser_xx10",
-            "3AS_Main"
+            "3AS_Main",
                 // Vehicle Weapon Sound Sets
-            ,
             "3AS_ATRT_Weapon",
                 // AT-RT weapon
             "3AS_Weapons"
