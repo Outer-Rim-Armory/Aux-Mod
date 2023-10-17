@@ -19,6 +19,8 @@
         params ["_vehicle", "_isActive", "_health"];
         private ["_message"];
 
+        if !(_isActive) exitWith {};
+
         _message = "Shield <t color='#FF0000'>Disabled</t>";
         if (_isActive) then
         {
