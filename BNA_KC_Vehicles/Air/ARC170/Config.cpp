@@ -48,7 +48,7 @@ class CfgVehicles
             "ls_mag_240rnd_CMFlareChaff_blue",
             "Laserbatteries"
         };
-      
+
         BNA_KC_Shield_hasShield = 1;
         BNA_KC_Shield_maxHealth = 20;
         BNA_KC_Shield_regenTime = 10; // Time in seconds without taking damage to start regenerating
@@ -111,6 +111,8 @@ class CfgVehicles
         {
             HUD_CHANGER
 
+            SHIELD_ACTIONS
+
             class SpawnCrew
             {
                 displayName = "Create Vehicle Crew";
@@ -144,27 +146,7 @@ class CfgVehicles
                 };
             };
 
-            class Shield
-            {
-                displayName = "Shield Health: %1";
-                condition = "true";
-                statement = "";
-                modifierFunction = "_this call BNAKC_fnc_shieldActionModifier";
-                runOnHover = 0;
 
-                class ActivateShield
-                {
-                    displayName = "Activate Shield";
-                    condition = "!(_this#0 getVariable ['BNA_KC_Shield_isActive', false]) and ace_player == driver (_this#0) and !(_this#0 getVariable ['BNA_KC_Shield_isRecharging', false])";
-                    statement = "_this#0 call BNAKC_fnc_activateShield";
-                };
-                class DeactivateShield
-                {
-                    displayName = "Deactivate Shield";
-                    condition = "_this#0 getVariable ['BNA_KC_Shield_isActive', false] and ace_player == driver (_this#0)";
-                    statement = "_this#0 call BNAKC_fnc_deactivateShield";
-                };
-            };
         };
 
         class UserActions
