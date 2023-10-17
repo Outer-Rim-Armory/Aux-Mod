@@ -36,5 +36,29 @@ class CfgVehicles
             "ls_mag_240rnd_CMFlareChaff_blue",
             "Laserbatteries"
         };
+
+        hiddenselectionstextures[] =
+        {
+            "\3as\3AS_btlb\data\chasis_co.paa",
+            "\3as\3AS_btlb\data\detail_co.paa",
+            "\3as\3AS_btlb\data\interior_co.paa"
+        };
+
+        textureList[] = {"Standard", 1};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {"BNA_KC_Faction"};
+                textures[] =
+                {
+                    "\3as\3AS_btlb\data\chasis_co.paa",
+                    "\3as\3AS_btlb\data\detail_co.paa",
+                    "\3as\3AS_btlb\data\interior_co.paa"
+                };
+            };
+        };
     };
 };
