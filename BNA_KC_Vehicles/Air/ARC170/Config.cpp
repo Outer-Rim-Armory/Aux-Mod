@@ -179,7 +179,7 @@ class CfgVehicles
             };
         };
 
-        INVENTORY_VEHICLE_BASE
+        INVENTORY_VEHICLE_BASE(3)
 
         class PilotCamera: PilotCamera
         {
