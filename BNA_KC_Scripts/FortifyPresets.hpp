@@ -18,20 +18,7 @@ class ACEX_Fortify_Presets
 
             // Other
             {"Land_PierLadder_F", 10}, // Ladder
-            {"Land_Plank_01_8m_F", 10}, // Plank, 8m
-
-            {"Land_lsb_fob_hBarrier_tower", 15},
-            {"3AS_Short_Wall_Bunker", 15},
-            {"Land_OPTRE_watchtower_urban", 15},
-            {"3AS_Barricade_2_C_Prop", 10},
-            {"3AS_Barricade_Prop", 10},
-            {"3AS_FOB_Hangar_Prop", 25},
-            {"Land_OPTRE_hard_tent_urban", 20},
-            {"Land_OPTRE_medical_tent_gry", 25},
-            {"3AS_Pad_GAR_Prop", 15},
-            {"fob_light_gar_tall", 5},
-            {"light_s_cis", 5},
-            {"442_data_pad_pinup_prinz2", 5}
+            {"Land_Plank_01_8m_F", 10} // Plank, 8m
         };
     };
 
