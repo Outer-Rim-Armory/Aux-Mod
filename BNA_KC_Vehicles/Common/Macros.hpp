@@ -84,6 +84,31 @@
     statement = QUOTE(this call BNAKC_fnc_specialLoad); \
 };
 
+#define INVENTORY_VEHICLE_BASE(CREW_COUNT) class TransportWeapons \
+{ \
+    WEAP_XX(BNA_KC_DC15S, __EVAL(1 * CREW_COUNT)) \
+}; \
+class TransportMagazines \
+{ \
+    MAG_XX(Aux12thFleet_Mag_DC15S, __EVAL(5 * CREW_COUNT)) \
+    MAG_XX(SmokeShellPurple, 2) \
+    MAG_XX(SmokeShellBlue, 2) \
+    MAG_XX(ACE_Chemlight_HiBlue, 2) \
+    MAG_XX(BNA_KC_3Rnd_UGL_FlareBlue, 2) \
+}; \
+class TransportItems \
+{ \
+    ITEM_XX(ACE_packingBandage, __EVAL(10 * CREW_COUNT)) \
+    ITEM_XX(ACE_elasticBandage, __EVAL(10 * CREW_COUNT)) \
+    ITEM_XX(ACE_quikclot, __EVAL(15 * CREW_COUNT)) \
+    ITEM_XX(ACE_tourniquet, __EVAL(4 * CREW_COUNT)) \
+    ITEM_XX(ACE_splint, __EVAL(2 * CREW_COUNT)) \
+    ITEM_XX(RD501_Painkiller, __EVAL(3 * CREW_COUNT)) \
+    ITEM_XX(ACE_epinephrine, __EVAL(2 * CREW_COUNT)) \
+    ITEM_XX(ToolKit, 1) \
+}; \
+class TransportBackpacks {};
+
 #define INVENTORY_VEHICLE_COMMON class TransportWeapons {}; \
 class TransportMagazines \
 { \

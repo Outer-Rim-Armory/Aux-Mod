@@ -26,5 +26,23 @@ the path begins with a "\", but it essentially represents the project root
 // Returns text (normally code) in quotes
 #define QUOTE(CODE) #CODE
 
+#define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \
+{ \
+    weapon = #WEAP; \
+    count = COUNT; \
+};
+
+#define MAG_XX(MAG, COUNT) class _xx_##MAG \
+{ \
+    magazine = #MAG; \
+    count = COUNT; \
+};
+
+#define ITEM_XX(ITEM, COUNT) class _xx_##ITEM \
+{ \
+    name = #ITEM; \
+    count = COUNT; \
+};
+
 #define HEARING_PROTECTION_CREW ace_hearing_lowerVolume = 0.6; \
 ace_hearing_protection = 0.85;
