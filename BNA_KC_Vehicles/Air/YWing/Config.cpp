@@ -26,5 +26,15 @@ class CfgVehicles
         displayName = "BTL-B Y-Wing";
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
+
+        weapons[] = {"3AS_BTLB_Heavy_Cannon", "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
+        magazines[] =
+        {
+            "3AS_BTLB_450Rnd_Heavy_Shells",
+            "3AS_BTLB_450Rnd_Heavy_Shells",
+            "ls_mag_240rnd_CMFlareChaff_blue",
+            "ls_mag_240rnd_CMFlareChaff_blue",
+            "Laserbatteries"
+        };
     };
 };
