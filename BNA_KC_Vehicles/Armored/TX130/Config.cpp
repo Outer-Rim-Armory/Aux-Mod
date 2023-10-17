@@ -64,6 +64,8 @@ class CfgVehicles
                 };
             };
         };
+
+        INVENTORY_VEHICLE_BASE(3)
     };
 
     class BNA_KC_Saber_M1: BNA_KC_TX130_M1

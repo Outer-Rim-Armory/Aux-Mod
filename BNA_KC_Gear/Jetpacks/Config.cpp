@@ -151,16 +151,18 @@ class CfgVehicles
 
     class BNA_KC_Jetpack_CDV21: BNA_KC_Jetpack_JT12
     {
-        displayName = "[KC] CDV-21 Jetpack";
+        displayName = "[KC] CDV-21 Droppack";
 
         model = "\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
+
+        BNA_KC_Jet_strength = 0;
     };
 
     class BNA_KC_Jetpack_CDV21_LR: BNA_KC_Jetpack_CDV21
     {
-        displayName = "[KC] CDV-21 Jetpack [LR]";
+        displayName = "[KC] CDV-21 Droppack [LR]";
 
         // TFAR Long Range
         tf_hasLRradio = 1;
@@ -170,6 +172,8 @@ class CfgVehicles
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
+
+        BNA_KC_Jet_strength = 0;
     };
 
     class BNA_KC_Jetpack_CDV19: BNA_KC_Jetpack_JT12

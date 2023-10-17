@@ -114,5 +114,7 @@ class CfgVehicles
                 statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 5, 1, 100];";
             };
         };
+
+        INVENTORY_VEHICLE_BASE(4)
     };
 };

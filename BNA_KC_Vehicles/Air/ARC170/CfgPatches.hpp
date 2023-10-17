@@ -11,6 +11,10 @@ class CfgPatches
                 // Core Config
             "3AS_ARC_170",
                 // ARC-170
+            "ls_vehicles_weapons",
+                // Flares
+            "BNA_KC_Vehicles_Weapons",
+                // ARC-170 Cannons
             "BNA_KC_Gear_Aviation"
                 // Pilot unit
         };

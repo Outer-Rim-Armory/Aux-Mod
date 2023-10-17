@@ -52,8 +52,10 @@ class CfgMagazines
         ammo = "BNA_KC_Grenade_BactaBomb_Ammo";
 
         BNA_KC_GrenadeType = "BACTA";
-        BNA_KC_GrenadeBacta_Radius = 20;
         BNA_KC_GrenadeBacta_Duration = 20;
+        BNA_KC_Medical_areaHealRadius = 20;
+        BNA_KC_Medical_areaHealRate = 0.5;
+        BNA_KC_Medical_areaHealMaxPatients = -1; // 0 < means no max patients
     };
 };
 

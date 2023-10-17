@@ -23,10 +23,26 @@ the path begins with a "\", but it essentially represents the project root
 #define ITEM_11(a) a, a, a, a, a, a, a, a, a, a, a
 #define ITEM_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 
-// Config Properties
-#define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
-#define GET_ARRAY(config, defaultValue) (if (isArray (config)) then {getArray (config)} else {defaultValue})
-#define GET_NUMBER(config, _defaultValue) (if (isNumber (config)) then {getNumber (config)} else {_defaultValue})
-
 // Returns text (normally code) in quotes
 #define QUOTE(CODE) #CODE
+
+#define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \
+{ \
+    weapon = #WEAP; \
+    count = COUNT; \
+};
+
+#define MAG_XX(MAG, COUNT) class _xx_##MAG \
+{ \
+    magazine = #MAG; \
+    count = COUNT; \
+};
+
+#define ITEM_XX(ITEM, COUNT) class _xx_##ITEM \
+{ \
+    name = #ITEM; \
+    count = COUNT; \
+};
+
+#define HEARING_PROTECTION_CREW ace_hearing_lowerVolume = 0.6; \
+ace_hearing_protection = 0.85;

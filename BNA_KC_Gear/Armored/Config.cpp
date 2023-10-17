@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "..\Macros.hpp"
 
 
 class CfgWeapons
@@ -27,13 +28,15 @@ class CfgWeapons
             "\ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
         };
 
+        subItems[] = {"BNA_KC_NVG_Chip"};
+
+        HEARING_PROTECTION_CREW
+
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"Camo1", "visor"};
             uniformModel = "\ls_armor_bluefor\helmet\sob\phase2SpecOp\ls_sob_phase2SpecOp_helmet.p3d";
         };
-
-        subItems[] = {"BNA_KC_NVG_Chip"};
     };
     class BNA_KC_Helmet_Phase2_Tanker_CamoBrown: BNA_KC_Helmet_Phase2_Tanker
     {
@@ -80,13 +83,15 @@ class CfgWeapons
             "\ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
         };
 
+        subItems[] = {"BNA_KC_NVG_Chip"};
+
+        HEARING_PROTECTION_CREW
+
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"Camo1", "visor"};
             uniformModel = "\ls_armor_bluefor\helmet\sob\phase1SpecOp\ls_sob_phase1SpecOp_helmet.p3d";
         };
-
-        subItems[] = {"BNA_KC_NVG_Chip"};
     };
     class BNA_KC_Helmet_Phase1_Tanker_v2: BNA_KC_Helmet_Phase1_Tanker
     {

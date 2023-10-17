@@ -101,6 +101,28 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Helmet_Engineer_CamoBrown: BNA_KC_Helmet_Engineer
+    {
+        displayName = "[KC] ENG Helm (Base) - Brown Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Helmets\Engineer\Helmet_Engineer_CamoBrown.paa",
+            "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
+        };
+    };
+
+    class BNA_KC_Helmet_Engineer_CamoGrey: BNA_KC_Helmet_Engineer
+    {
+        displayName = "[KC] ENG Helm (Base) - Grey Camo";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Helmets\Engineer\Helmet_Engineer_CamoGrey.paa",
+            "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+            "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
+        };
+    };
+
     class BNA_KC_Helmet_Airborne: BNA_KC_Helmet_Base
     {
         // Scope
@@ -813,26 +835,11 @@ class CfgVehicles
         picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Heavy_UI.paa";
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack.paa",         // Main Texture
-            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack.paa",         // Cover
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Heavy
-            "",                                                          // Medic
-            ""                                                           // RTO
-        };
-    };
-
-    class BNA_KC_Backpack_Medic: BNA_KC_Backpack
-    {
-        displayName = "[KC] Clone Trooper Medic Backpack";
-
-        picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_UI.paa";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack_Medic.paa",   // Main Texture
-            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack_Medic.paa",   // Cover
-            "",                                                          // Heavy
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Medic
-            ""                                                           // RTO
+            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa",      // Main Texture
+            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa",      // Cover
+            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Heavy
+            "",                                                         // Medic
+            ""                                                          // RTO
         };
     };
 
@@ -859,6 +866,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
     };
+
     class BNA_KC_Backpack_Radio_Mini: BNA_KC_Backpack_Radio
     {
         displayName = "[KC] Clone Commander Radio Backpack";
@@ -872,6 +880,19 @@ class CfgVehicles
         };
         picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Radio_Mini_UI.paa";
     };
+
+    class BNA_KC_Backpack_Radio_White_Mini: BNA_KC_Backpack_Radio_Mini
+    {
+        displayName = "[KC] Clone Commander Radio Backpack (White)";
+
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_co.paa",
+            "\SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_accumulator_co.paa"
+        };
+        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_RTO_mini_backpack_ca.paa";
+    };
+
     class BNA_KC_Backpack_Radio_Invisible: BNA_KC_Backpack_Radio
     {
         displayName = "[KC] Clone Trooper Radio Backpack (Invisible)";
@@ -880,6 +901,51 @@ class CfgVehicles
         model = "\BNA_KC_Gear\Infantry\Data\Models\empty_model.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
+    };
+
+    class BNA_KC_Backpack_Medic: BNA_KC_Backpack
+    {
+        displayName = "[KC] Clone Trooper Medic Backpack";
+
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Medic_UI.paa";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
+            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Cover
+            "",                                                          // Heavy
+            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",  // Medic
+            ""                                                           // RTO
+        };
+    };
+
+    class BNA_KC_Backpack_Medic_Heavy: BNA_KC_Backpack_Heavy
+    {
+        displayName = "[KC] Clone Trooper Medic Heavy Backpack";
+
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_Heavy_UI.paa";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Cover
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Heavy
+            "",                                                               // Medic
+            ""                                                                // RTO
+        };
+    };
+
+    class BNA_KC_Backpack_Medic_Radio: BNA_KC_Backpack_Radio
+    {
+        displayName = "[KC] Clone Trooper Medic Radio Backpack";
+
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_Radio_UI.paa";
+        hiddenSelectionsTextures[] =
+        {
+            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
+            "",                                                              // Cover
+            "",                                                              // Heavy
+            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Medic
+            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"       // RTO
+        };
     };
 };
 

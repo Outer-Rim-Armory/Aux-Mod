@@ -39,6 +39,16 @@ class CfgVehicles
         cabinCloseSound[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 1.77828, 1, 40};
         cabinCloseSoundInternal[] = {"\BNA_KC_Vehicles\Air\ARC170\Data\Audio\Canopy_Close.wss", 10, 1, 40};
 
+        weapons[] = {"BNA_KC_ARC_Cannon_Medium", "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
+        magazines[] =
+        {
+            "3AS_ARC_500Rnd_Light_Shells",
+            "3AS_ARC_500Rnd_Light_Shells",
+            "ls_mag_240rnd_CMFlareChaff_blue",
+            "ls_mag_240rnd_CMFlareChaff_blue",
+            "Laserbatteries"
+        };
+      
         BNA_KC_Shield_hasShield = 1;
         BNA_KC_Shield_maxHealth = 20;
         BNA_KC_Shield_regenTime = 10; // Time in seconds without taking damage to start regenerating
@@ -46,12 +56,12 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "\3as\3as_arc170\Data\Main_Frame_co.paa",
-            "\3as\3as_arc170\Data\Wings_Engines_co.paa",
-            "\3as\3as_arc170\Data\Guns_co.paa"
+            "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Main_Frame.paa",
+            "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Wings_Engines.paa",
+            "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Guns.paa"
         };
 
-        textureList[] = {"Standard", 1};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1};
         class TextureSources
         {
             class Standard
@@ -64,6 +74,17 @@ class CfgVehicles
                     "\3as\3as_arc170\Data\Main_Frame_co.paa",
                     "\3as\3as_arc170\Data\Wings_Engines_co.paa",
                     "\3as\3as_arc170\Data\Guns_co.paa"
+                };
+            };
+            class KeeliCompany: Standard
+            {
+                author = "DartRuffian";
+                displayName = "Keeli Company";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Main_Frame.paa",
+                    "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Wings_Engines.paa",
+                    "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Guns.paa"
                 };
             };
         };
@@ -148,7 +169,7 @@ class CfgVehicles
 
         class UserActions
         {
-            class Open_SFoils
+            class SFoilsOpen
             {
                 displayName = "Deploy S-Foils";
 
@@ -162,14 +183,14 @@ class CfgVehicles
                 condition = "(this animationSourcePhase 'SFoil' == 1) and (player isEqualTo currentPilot this) and !(isTouchingGround this)";
                 statement = "playSound3D ['\BNA_KC_Vehicles\Air\ARC170\Data\Audio\SFoils.wss', this]; this animateSource ['SFoil', 0]";
             };
-            class Close_SFoils: Open_SFoils
+            class SFoilsClose: SFoilsOpen
             {
                 displayName = "Fold S-Foils";
                 condition = "(this animationSourcePhase 'SFoil' == 0) and (player isEqualTo currentPilot this) and !(isTouchingGround this)";
                 statement = "playSound3D ['\BNA_KC_Vehicles\Air\ARC170\Data\Audio\SFoils.wss', this]; this animateSource ['SFoil', 1]";
             };
 
-            class Eject: Open_SFoils
+            class Eject: SFoilsOpen
             {
                 displayName = "<t font='RobotoCondensedBold'>Eject</t>";
                 shortcut = "Eject";
@@ -184,6 +205,8 @@ class CfgVehicles
         {
             class LaserPilot: LaserPilot
             {
+                weapons[] = {"BNA_KC_ARC_TailCannon_Heavy"};
+
                 // Re-Do a bunch of work because the 501st Aux breaks things
                 discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 1000, 1200, 1500, 1800, 2100};
                 discreteDistanceInitIndex = 5;
@@ -206,8 +229,14 @@ class CfgVehicles
                 gunnerRightHandAnimName = "stick_copilot";
                 animationSourceHatch = "";
             };
-            class Reargun: Reargun {};
+            class Reargun: Reargun
+            {
+                weapons[] = {"BNA_KC_ARC_TailCannon_Light", "ls_weapon_CMFlareLauncher"};
+                magazines[] = {"3AS_ARC_500Rnd_Light_Shells", "ls_mag_240rnd_CMFlareChaff_blue"};
+            };
         };
+
+        INVENTORY_VEHICLE_BASE(3)
 
         class PilotCamera: PilotCamera
         {

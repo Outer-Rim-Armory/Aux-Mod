@@ -30,6 +30,7 @@ class CfgVehicles
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
         editorPreview = "\BNA_KC_Vehicles\Armored\OLV20\Data\Previews\OLV20.jpg";
+        side = 1;
 
         displayName = "OLV-20";
         crew = "BNA_KC_Unit_Phase2_Tanker";
@@ -126,5 +127,7 @@ class CfgVehicles
                 };
             };
         };
+
+        INVENTORY_VEHICLE_BASE(2)
     };
 };
