@@ -7,7 +7,7 @@ class CfgVehicles
     class Plane_Fighter_03_dynamicLoadout_base_F;
     class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F
     {
-        /* ... */
+        class ACE_SelfActions;
     };
     class BNA_KC_BTLB_YWing: BTL_Base
     {
@@ -59,6 +59,11 @@ class CfgVehicles
                     "\3as\3AS_btlb\data\interior_co.paa"
                 };
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            HUD_CHANGER
         };
     };
 };
