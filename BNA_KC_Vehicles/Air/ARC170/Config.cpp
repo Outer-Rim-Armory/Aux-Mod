@@ -7,6 +7,7 @@ class CfgVehicles
     class Plane_Fighter_03_dynamicLoadout_base_F;
     class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F
     {
+        class ACE_Actions;
         class ACE_SelfActions;
         class Turrets
         {
@@ -47,6 +48,11 @@ class CfgVehicles
             "ls_mag_240rnd_CMFlareChaff_blue",
             "Laserbatteries"
         };
+      
+        BNA_KC_Shield_hasShield = 1;
+        BNA_KC_Shield_maxHealth = 20;
+        BNA_KC_Shield_regenTime = 10; // Time in seconds without taking damage to start regenerating
+        BNA_KC_Shield_regenRate = 1;  // Health to regen after _regenTime
 
         hiddenSelectionsTextures[] =
         {
@@ -80,6 +86,24 @@ class CfgVehicles
                     "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Wings_Engines.paa",
                     "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Guns.paa"
                 };
+            };
+        };
+
+        class ACE_Actions: ACE_Actions
+        {
+            class RechargeShield_Left
+            {
+                displayName = "Recharge Shield: %1";
+                selection = "airbrake1_axis";
+                distance = 2;
+
+                condition = "[_this#0, _this#1] call BNAKC_fnc_canFullRecharge";
+                statement = "[_this#0, _this#1] call BNAKC_fnc_shieldFullChargeAction";
+                modifierFunction = "_this call BNAKC_fnc_shieldActionModifier";
+            };
+            class RechargeShield_Right: RechargeShield_Left
+            {
+                selection = "airbrake2_axis";
             };
         };
 
@@ -117,6 +141,28 @@ class CfgVehicles
                     displayName = "Crew";
                     condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
                     statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
+                };
+            };
+
+            class Shield
+            {
+                displayName = "Shield Health: %1";
+                condition = "true";
+                statement = "";
+                modifierFunction = "_this call BNAKC_fnc_shieldActionModifier";
+                runOnHover = 0;
+
+                class ActivateShield
+                {
+                    displayName = "Activate Shield";
+                    condition = "!(_this#0 getVariable ['BNA_KC_Shield_isActive', false]) and ace_player == driver (_this#0) and !(_this#0 getVariable ['BNA_KC_Shield_isRecharging', false])";
+                    statement = "_this#0 call BNAKC_fnc_activateShield";
+                };
+                class DeactivateShield
+                {
+                    displayName = "Deactivate Shield";
+                    condition = "_this#0 getVariable ['BNA_KC_Shield_isActive', false] and ace_player == driver (_this#0)";
+                    statement = "_this#0 call BNAKC_fnc_deactivateShield";
                 };
             };
         };
