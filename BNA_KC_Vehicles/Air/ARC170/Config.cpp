@@ -148,6 +148,8 @@ class CfgVehicles
         {
             class LaserPilot: LaserPilot
             {
+                weapons[] = {"BNA_KC_ARC_TailCannon_Heavy"};
+
                 // Re-Do a bunch of work because the 501st Aux breaks things
                 discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 1000, 1200, 1500, 1800, 2100};
                 discreteDistanceInitIndex = 5;

@@ -758,6 +758,12 @@ class CfgWeapons
         };
     };
 
+    class 3as_ARC_Heavy_Canon;
+    class BNA_KC_ARC_TailCannon_Heavy: 3as_ARC_Heavy_Canon
+    {
+        displayName = "Heavy Energy Blaster Cannon";
+    };
+
     /*
     class 3AS_ATRT_Weapon_F;
     class BNA_KC_ATRT_Turret: 3AS_ATRT_Weapon_F
