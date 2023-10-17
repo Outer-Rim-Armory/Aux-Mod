@@ -172,7 +172,11 @@ class CfgVehicles
                 gunnerRightHandAnimName = "stick_copilot";
                 animationSourceHatch = "";
             };
-            class Reargun: Reargun {};
+            class Reargun: Reargun
+            {
+                weapons[] = {"BNA_KC_ARC_TailCannon_Light", "ls_weapon_CMFlareLauncher"};
+                magazines[] = {"3AS_ARC_500Rnd_Light_Shells", "ls_mag_240rnd_CMFlareChaff_blue"};
+            };
         };
 
         class PilotCamera: PilotCamera
