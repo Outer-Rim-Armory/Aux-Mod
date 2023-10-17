@@ -14,6 +14,8 @@ class CfgPatches
 			"A3_Weapons_F_Exp",
 				// VTOL Shit
 			"3as_static_turbolaser_xx10",
+            "3AS_Main",
+                // Vehicle Weapon Sound Sets
             "3AS_ATRT_Weapon",
                 // AT-RT weapon
             "3AS_Weapons"
@@ -32,6 +34,8 @@ class CfgPatches
 			"BNA_KC_Gatling_20mm",
 			"BNA_KC_105mm",
 			"BNA_KC_40mm_VTOL",
+            "BNA_KC_ARC_Cannon_Medium",
+            "BNA_KC_ARC_TailCannon_Heavy",
 
             "BNA_KC_ATRT_Turret",
 

@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "CfgSoundSets.hpp"
 
 
 class CfgAmmo
@@ -735,6 +736,37 @@ class CfgWeapons
 		};
 	};
 
+    class Cannon_30mm_Plane_CAS_02_F;
+    class 3AS_ARC_Light_Canon: Cannon_30mm_Plane_CAS_02_F
+    {
+        class LowROF;
+    };
+    class BNA_KC_ARC_Cannon_Medium: 3AS_ARC_Light_Canon
+    {
+        displayName = "Medium Energy Blaster Cannon";
+
+        class LowROF: LowROF
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"3AS_StarfighterBlaster_SoundSet"};
+            };
+        };
+    };
+
+    class 3as_ARC_Heavy_Canon;
+    class BNA_KC_ARC_TailCannon_Heavy: 3as_ARC_Heavy_Canon
+    {
+        displayName = "Heavy Energy Blaster Cannon";
+    };
+
+    class 3as_ARC_Light_Canon_Rear;
+    class BNA_KC_ARC_TailCannon_Light: 3as_ARC_Light_Canon_Rear
+    {
+        displayName = "Light Energy Blaster Cannon";
+    };
+
+    /*
     class 3AS_ATRT_Weapon_F;
     class BNA_KC_ATRT_Turret: 3AS_ATRT_Weapon_F
     {
