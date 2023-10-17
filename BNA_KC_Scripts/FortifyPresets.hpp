@@ -1,6 +1,6 @@
 class ACEX_Fortify_Presets
 {
-    class BNA_KC_FortifyPreset_Default
+    class BNA_KC_Default
     {
         displayName = "[KC] Default";
         objects[] =
@@ -22,7 +22,7 @@ class ACEX_Fortify_Presets
         };
     };
 
-    class BNA_KC_FortifyPreset_FOB
+    class BNA_KC_FOB
     {
         displayName = "[KC] FOB Building";
         objects[] =
