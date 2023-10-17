@@ -36,6 +36,9 @@ class CfgVehicles
         // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
         // ls_impulsor_boostSpeed_2 = 600;
 
+        weapons[] = {"ls_laat_gun", "ls_weapon_CMFlareLauncher"};
+        magazines[] = {"200rnd_laat_he_mag", "200rnd_laat_he_mag", "ls_mag_240rnd_CMFlareChaff_blue", "ls_mag_240rnd_CMFlareChaff_blue"};
+
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Auxiliary.paa",
@@ -105,5 +108,7 @@ class CfgVehicles
 
             SPECIAL_LOAD
         };
+
+        INVENTORY_VEHICLE_BASE(1)
     };
 };

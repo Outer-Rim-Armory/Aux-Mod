@@ -6,53 +6,66 @@
  * object: Object - The object to become a healing area.
  *
  * Return Value:
- * Number - If an error occurs.
+ * None
  *
  * Examples:
  * init = "(_this select 0) call BNAKC_fnc_areaSlowHeal;";
  */
 
 
-params ["_object"];
+params [["_object", objNull, [objNull]]];
+private ["_healRadius", "_healRate", "_maxPatients", "_currentPatients", "_objectName"];
+
+if (isNull _object) exitWith {};
 
 // Wait until mission start, prevents sounds playing in Eden editor
-waitUntil { sleep 3; CBA_missionTime > 0; };
-
-// Early exit if object does not have a radius set
-if !(isNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Medical_areaHealRadius")) exitWith
+if (CBA_missionTime == 0) then
 {
-    "This object does not have a healing radius set." call BNAKC_fnc_devLog;
-    -1;
+    waitUntil {sleep 3; CBA_missionTime > 0;};
 };
 
-private _healRadius = getNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Medical_areaHealRadius");
-private _healRate = getNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Medical_areaHealRate");
-private _maxPatients = getNumber (configFile >> "CfgVehicles" >> typeOf _object >> "BNA_KC_Medical_areaHealMaxPatients");
+_healRadius =
+[
+    configFile >> "CfgVehicles" >> typeOf _object,
+    "BNA_KC_Medical_areaHealRadius",
+    7
+] call BIS_fnc_returnConfigEntry;
+_healRate =
+[
+    configFile >> "CfgVehicles" >> typeOf _object,
+    "BNA_KC_Medical_areaHealRate",
+    6
+] call BIS_fnc_returnConfigEntry;
+_maxPatients =
+[
+    configFile >> "CfgVehicles" >> typeOf _object,
+    "BNA_KC_Medical_areaHealMaxPatients",
+    2
+] call BIS_fnc_returnConfigEntry;
 
-private _currentPatients = [];
+_currentPatients = [];
 _object setVariable ["BNA_KC_healHandlers", []];
-private _objectName = str _object; // used to track handlers
+_objectName = str _object; // used to track handlers
 while {!isNull _object} do
 {
+    private ["_nearbyUnits", "_unitsToHeal", "_healHandlers"];
     sleep 5;
 
-    private _nearbyUnits = (getPosASL _object) nearEntities ["CAManBase", _healRadius];
+    _nearbyUnits = (getPosASL _object) nearEntities ["CAManBase", _healRadius];
     if (_nearbyUnits isEqualTo []) then
     {
         // Check for ASL and ATL
         _nearbyUnits = (getPosATL _object) nearEntities ["CAManBase", _healRadius];
     };
 
-    private _unitsToHeal = [];
-    private _healHandlers = _object getVariable "BNA_KC_healHandlers";
+    _unitsToHeal = [];
+    _healHandlers = _object getVariable "BNA_KC_healHandlers";
 
     format ["All nearby units: %1", _nearbyUnits] call BNAKC_fnc_devLog;
 
     {
-        // Skip if unit is not hurt
-        if (_x call BNAKC_fnc_isFullyHealed) then { continue; };
-        // Skip if unit is already being healed
-        if (_x in _currentPatients) then { continue; };
+        if (_x call BNAKC_fnc_isFullyHealed) then {continue;}; // Skip if unit is not hurt
+        if (_x in _currentPatients) then {continue;};          // Skip if unit is already being healed
 
         _unitsToHeal pushBack _x;
     } forEach _nearbyUnits;
@@ -61,18 +74,16 @@ while {!isNull _object} do
     format ["Current patients before checks: %1", _currentPatients] call BNAKC_fnc_devLog;
 
     // Remove any patients that have become fully healed
-    _currentPatients = _currentPatients select
-    {
-        !(_x call BNAKC_fnc_isFullyHealed)
-    };
+    _currentPatients = _currentPatients select {!(_x call BNAKC_fnc_isFullyHealed)};
     format ["Current patients that are still hurt: %1", _currentPatients] call BNAKC_fnc_devLog;
     for "_x" from 0 to (count _currentPatients - 1) do
     {
-        private _unit = _currentPatients#_x;
+        private ["_unit", "_handlerID"];
+        _unit = _currentPatients#_x;
         // If a patient is not in range, remove their handler
         if !(_unit in _nearbyUnits) then
         {
-            private _handlerID = _unit getVariable (_objectName + "_healHandlerID"); // get the handler id saved to the unit
+            _handlerID = _unit getVariable (_objectName + "_healHandlerID"); // get the handler id saved to the unit
             _unit setVariable [_objectName + "_healHandlerID", nil]; // remove the variable
             [_handlerID] call CBA_fnc_removePerFrameHandler; // remove the handler
             _currentPatients deleteAt _x; // remove from current patients array
@@ -81,7 +92,7 @@ while {!isNull _object} do
     };
     format ["Current patients after checks: %1", _currentPatients] call BNAKC_fnc_devLog;
 
-    if (_unitsToHeal isEqualTo []) then { "No units to heal, skipping" call BNAKC_fnc_devLog; continue; };
+    if (_unitsToHeal isEqualTo []) then {"No units to heal, skipping" call BNAKC_fnc_devLog; continue;};
 
     // Sort by most injured to least
     _unitsToHeal = [_unitsToHeal] call BNAKC_fnc_sortUnitsByInjuries;
@@ -90,14 +101,19 @@ while {!isNull _object} do
     _unitsToHeal = _currentPatients + _unitsToHeal;
     format ["Patients + units to heal: %1", _unitsToHeal] call BNAKC_fnc_devLog;
 
-    _unitsToHeal = _unitsToHeal select [0, _maxPatients]; // Get only the first x patients
+    if (_maxPatients > 0) then
+    {
+        _unitsToHeal = _unitsToHeal select [0, _maxPatients]; // Get only the first x patients
+    };
+
     format ["Units to heal: %1", _unitsToHeal] call BNAKC_fnc_devLog;
     format ["Actual Units to heal: %1", _unitsToHeal - _currentPatients] call BNAKC_fnc_devLog;
 
     {
+        private ["_healHandlerID"];
         // For each unit, create a healing handler for it.
         format ["healing %1 every %2 seconds", _x, _healRate] call BNAKC_fnc_devLog;
-        private _healHandlerID = [_x, _healRate] call BNAKC_fnc_slowHeal;
+        _healHandlerID = [_x, _healRate] call BNAKC_fnc_slowHeal;
         _x setVariable [_objectName + "_healHandlerID", _healHandlerID];
 
         _currentPatients pushBack _x;
@@ -107,7 +123,8 @@ while {!isNull _object} do
 // Object removed, remove handlers
 "Object removed, removing handlers" call BNAKC_fnc_devLog;
 {
-    private _handlerID = _x getVariable (_objectName + "_healHandlerID"); // get the handler id saved to the unit
-    _x setVariable [_objectName + "_healHandlerID", nil]; // remove the variable
-    [_handlerID] call CBA_fnc_removePerFrameHandler; // remove the handler
+    private ["_handlerID"];
+    _handlerID = _x getVariable (_objectName + "_healHandlerID");
+    _x setVariable [_objectName + "_healHandlerID", nil];
+    [_handlerID] call CBA_fnc_removePerFrameHandler;
 } forEach _currentPatients;

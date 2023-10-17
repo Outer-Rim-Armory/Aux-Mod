@@ -8,7 +8,6 @@ class CfgVehicles
     class 3as_laat_Base: B_Heli_Attack_01_base_F
     {
         class ACE_SelfActions;
-
         class AnimationSources;
         class Turrets;
         class pilotCamera;
@@ -26,6 +25,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAir";
+        side = 1;
 
         displayName = "LAAT/i (Base)";
         crew = "BNA_KC_Unit_Phase2_Pilot";
@@ -82,6 +82,10 @@ class CfgVehicles
             "ls_mag_300rnd_CMFlareChaff_blue",
             "SmokeLauncherMag"
         };
+
+        // LS Keybind Animations
+        ls_vehicle_rampAnims[] = {"ramp"};
+        ls_vehicle_rampToggleSounds[] = {"BNA_KC_Sound_LAAT_Ramp", "BNA_KC_Sound_LAAT_Ramp"};
 
         // Textures
         hiddenSelectionsTextures[] =
@@ -190,17 +194,32 @@ class CfgVehicles
                 statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick);
             };
 
+            class DoorsOpen: Impulse
+            {
+                displayName = "Open Doors";
+                condition = QUOTE(ace_player == currentPilot this and (this animationPhase 'door_L') == 1);
+                // statement = "['door', true] call ls_fnc_keybind_operationFrameWork;";
+                statement = "this action ['LandGear', this]; this say3D 'BNA_KC_Sound_LAAT_DoorsOpen'"
+            };
+            class DoorsClose: DoorsOpen
+            {
+                displayName = "Close Doors";
+                condition = QUOTE(ace_player == currentPilot this and (this animationPhase 'door_L') == 0);
+                // statement = "['door', true] call ls_fnc_keybind_operationFrameWork;";
+                statement = "this action ['LandGearUp', this]; this say3D 'BNA_KC_Sound_LAAT_DoorsClose'"
+            };
+
             class RampOpen: Impulse
             {
                 displayName = "Open Ramp";
-                condition = QUOTE(ace_player == currentPilot this and this animationPhase 'ramp' == 0);
-                statement = QUOTE(this animateSource ['ramp', 1, 1]);
+                condition = QUOTE(ace_player == currentPilot this and this animationSourcePhase 'ramp' == 0);
+                statement = "['ramp', true] call ls_fnc_keybind_operationFrameWork;";
             };
             class RampClose: RampOpen
             {
                 displayName = "Close Ramp";
-                condition = QUOTE(ace_player == currentPilot this and this animationPhase 'ramp' == 1);
-                statement = QUOTE(this animateSource ['ramp', 0, 1]);
+                condition = QUOTE(ace_player == currentPilot this and this animationSourcePhase 'ramp' == 1);
+                statement = "['ramp', true] call ls_fnc_keybind_operationFrameWork;";
             };
 
             SPECIAL_LOAD

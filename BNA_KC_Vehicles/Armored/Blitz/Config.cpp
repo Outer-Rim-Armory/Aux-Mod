@@ -287,53 +287,7 @@ class CfgVehicles
 
         // Vehicle Inventory
         maximumLoad = 20000;
-
-        class TransportWeapons
-        {
-            class _xx_BNA_KC_DC15S
-            {
-                count = 2;
-                weapon = "BNA_KC_DC15S";
-            };
-        };
-
-        class TransportMagazines
-        {
-            class _xx_Aux12thFleet_Mag_DC15S
-            {
-                count = 20;
-                magazine = "Aux12thFleet_Mag_DC15S";
-            };
-        };
-
-        class TransportItems
-        {
-            class _xx_ACE_elasticBandage
-            {
-                count = 10;
-                name = "ACE_elasticBandage";
-            };
-            class _xx_ACE_packingBandage
-            {
-                count = 10;
-                name = "ACE_packingBandage";
-            };
-            class _xx_ACE_quikclot
-            {
-                count = 10;
-                name = "ACE_quikclot";
-            };
-            class _xx_ACE_surgicalKit
-            {
-                count = 1;
-                name = "ACE_surgicalKit"
-            };
-            class _xx_ToolKit
-            {
-                count = 1;
-                name = "ToolKit"
-            };
-        };
+        INVENTORY_VEHICLE_BASE(3)
 
         class ACE_Cargo
         {

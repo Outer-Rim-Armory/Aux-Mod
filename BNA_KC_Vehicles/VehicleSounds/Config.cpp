@@ -3,17 +3,33 @@
 
 class CfgSounds
 {
-    class BNA_KC_Sound_ImpulseOn
+    class BNA_KC_Sound_LAAT_DoorsOpen
+    {
+        name = "LAAT Doors Opened";
+        sound[] = {"\3AS\3as_Laat\sounds\LaatdoorOPEN.ogg", 1, 0.8, 100};
+        titles[] = {0, ""};
+    };
+    class BNA_KC_Sound_LAAT_DoorsClose: BNA_KC_Sound_LAAT_DoorsOpen
+    {
+        name = "LAAT Doors Closed";
+        sound[] = {"\3AS\3as_Laat\sounds\LaatdoorOPEN.ogg", 1, 1, 100};
+    };
+
+    class BNA_KC_Sound_LAAT_Ramp: BNA_KC_Sound_LAAT_DoorsOpen
+    {
+        name = "LAAT Ramp Opened/Closed";
+        sound[] = {"\ls_sounds\vehicles\laatSeries\LAAT_ramp.wss", 5, 1, 100};
+    };
+
+    class BNA_KC_Sound_ImpulseOn: BNA_KC_Sound_LAAT_DoorsOpen
     {
         name = "LAAT Impulse On";
         sound[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\Impulse\ImpulseOn.wss", 5, 1, 800};
-        titles[] = {1, "Impulse Turns On"};
     };
-    class BNA_KC_Sound_ImpulseOff
+    class BNA_KC_Sound_ImpulseOff: BNA_KC_Sound_LAAT_DoorsOpen
     {
         name = "LAAT Impulse Off";
         sound[] = {"\BNA_KC_Vehicles\VehicleSounds\Data\Audio\Impulse\ImpulseOff.wss", 5, 1, 800};
-        titles[] = {1, "Impulse Turns Off"};
     };
 };
 

@@ -202,6 +202,7 @@ class CfgVehicles
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
         };
     };
 
@@ -230,6 +231,7 @@ class CfgVehicles
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
         };
     };
     class BNA_KC_TU_Backpack_Heavy_Predef_AA: BNA_KC_TU_Backpack_Heavy
@@ -246,6 +248,7 @@ class CfgVehicles
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
         };
     };
 
@@ -272,6 +275,7 @@ class CfgVehicles
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
         };
     };
     class BNA_KC_TU_Backpack_Assault_Predef_Medium: BNA_KC_TU_Backpack_Assault_Predef_Heavy
@@ -282,6 +286,7 @@ class CfgVehicles
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
         };
     };
 
@@ -316,6 +321,7 @@ class CfgVehicles
             TRANSMAG_XX(SC_IG3, 2)
             TRANSMAG_XX(SmokeShell, 2)
             TRANSMAG_XX(ShieldGrenade_Mag, 2)
+            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
         };
     };
 };

@@ -86,5 +86,7 @@ class CfgVehicles
                 condition = "this animationSourcePhase 'rocket_move' == 0 and alive this and ace_player == this turretUnit [3]";
             };
         };
+
+        INVENTORY_VEHICLE_BASE(5)
     };
 };

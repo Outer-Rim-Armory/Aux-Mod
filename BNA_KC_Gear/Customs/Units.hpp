@@ -363,6 +363,33 @@ class BNA_KC_Unit_Stone: BNA_KC_Unit_Phase2_Base
     };
 };
 
+class BNA_KC_Unit_Tyrant: BNA_KC_Unit_Phase2_Base
+{
+	// Editor Attributes
+	editorSubcategory = "BNA_KC_Customs";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Tyrant.jpg";
+
+	displayName = "[KC] Tyrant";
+    uniformClass = "BNA_KC_Uniform_Tyrant";
+	hiddenSelectionsTextures[] =
+	{
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Tyrant_Upper.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Tyrant_Lower.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+	// Loadout
+	linkedItems[] =
+    {
+        "BNA_KC_Helmet_ARC_Tyrant", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_ARC_Tyrant", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+    backpack = "BNA_KC_Backpack_ARC";
+};
+
 
 // ┌───────────────────┐
 // │    Snow  Units    │

@@ -40,6 +40,9 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
+        weapons[] = {"ls_weapon_CMFlareLauncher"};
+        magazines[] = {"ls_mag_240rnd_CMFlareChaff_blue"};
+
         class ACE_SelfActions: ACE_SelfActions
         {
             HUD_CHANGER
@@ -71,6 +74,8 @@ class CfgVehicles
                 };
             };
         };
+
+        INVENTORY_VEHICLE_BASE(4)
     };
     class BNA_KC_HAG_Base: BNA_KC_Galaxy_Gunship
     {
@@ -102,10 +107,15 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
+        weapons[] = {"ls_weapon_CMFlareLauncher"};
+        magazines[] = {"ls_mag_240rnd_CMFlareChaff_blue"};
+
         class ACE_SelfActions: ACE_SelfActions
         {
             HUD_CHANGER
         };
+
+        INVENTORY_VEHICLE_BASE(4)
     };
     class BNA_KC_HVT_Base: BNA_KC_Galaxy_Transport_Vehicle
     {
@@ -137,10 +147,15 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
+        weapons[] = {"ls_weapon_CMFlareLauncher"};
+        magazines[] = {"ls_mag_240rnd_CMFlareChaff_blue"};
+
         class ACE_SelfActions: ACE_SelfActions
         {
             HUD_CHANGER
         };
+
+        INVENTORY_VEHICLE_BASE(4)
     };
     class BNA_KC_HIT_Base: BNA_KC_Galaxy_Transport_Infantry
     {

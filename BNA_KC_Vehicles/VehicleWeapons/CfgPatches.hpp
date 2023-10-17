@@ -16,12 +16,11 @@ class CfgPatches
 			"3as_static_turbolaser_xx10",
             "3AS_Main"
                 // Vehicle Weapon Sound Sets
-            /*,
+            ,
             "3AS_ATRT_Weapon",
                 // AT-RT weapon
             "3AS_Weapons"
                 // AT-RT magazine
-            */
         };
         units[] = {};
         weapons[] =
@@ -39,7 +38,7 @@ class CfgPatches
             "BNA_KC_ARC_Cannon_Medium",
             "BNA_KC_ARC_TailCannon_Heavy",
 
-            // "BNA_KC_ATRT_Turret",
+            "BNA_KC_ATRT_Turret",
 
             "BNA_KC_Juggernaut_Horn",
             "BNA_KC_Juggernaut_Alarm",
@@ -54,8 +53,8 @@ class CfgPatches
 			"BNA_KC_20mm_Ammo",
 			"BNA_KC_105mm_Ammo",
 			"BNA_KC_40mm_GPR_Ammo",
-			"BNA_KC_40mm_APFSDS_Ammo"/*,
-            "BNA_KC_ATRT_Turret_Ammo"*/
+			"BNA_KC_40mm_APFSDS_Ammo",
+            "BNA_KC_ATRT_Turret_Ammo"
 		};
 		magazines[] =
 		{
@@ -68,8 +67,8 @@ class CfgPatches
 			"BNA_KC_4000rnd_20mm",
 			"BNA_KC_100rnd_105mm",
 			"BNA_KC_40mm_GPR_240rnd",
-			"BNA_KC_40mm_APFSDS_160rnd"/*,
-            "BNA_KC_9999Rnd_ATRT_Turret_Magazine"*/
+			"BNA_KC_40mm_APFSDS_160rnd",
+            "BNA_KC_9999Rnd_ATRT_Turret_Magazine"
 		};
     };
 };
