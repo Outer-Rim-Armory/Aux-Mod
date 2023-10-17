@@ -766,7 +766,6 @@ class CfgWeapons
         displayName = "Light Energy Blaster Cannon";
     };
 
-    /*
     class 3AS_ATRT_Weapon_F;
     class BNA_KC_ATRT_Turret: 3AS_ATRT_Weapon_F
     {
