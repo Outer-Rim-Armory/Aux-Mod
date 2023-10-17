@@ -37,6 +37,11 @@ class CfgVehicles
             "Laserbatteries"
         };
 
+        BNA_KC_Shield_hasShield = 1;
+        BNA_KC_Shield_maxHealth = 15;
+        BNA_KC_Shield_regenTime = 10;
+        BNA_KC_Shield_regenRate = 1;
+
         hiddenselectionstextures[] =
         {
             "\3as\3AS_btlb\data\chasis_co.paa",
@@ -64,6 +69,8 @@ class CfgVehicles
         class ACE_SelfActions: ACE_SelfActions
         {
             HUD_CHANGER
+
+            SHIELD_ACTIONS
         };
     };
 };
