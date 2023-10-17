@@ -108,5 +108,7 @@ class CfgVehicles
 
             SPECIAL_LOAD
         };
+
+        INVENTORY_VEHICLE_BASE(1)
     };
 };

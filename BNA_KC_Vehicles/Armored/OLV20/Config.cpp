@@ -127,5 +127,7 @@ class CfgVehicles
                 };
             };
         };
+
+        INVENTORY_VEHICLE_BASE(2)
     };
 };

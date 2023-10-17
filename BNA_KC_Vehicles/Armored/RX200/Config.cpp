@@ -101,6 +101,8 @@ class CfgVehicles
                 startEngine = 0;
             };
         };
+
+        INVENTORY_VEHICLE_BASE(2)
     };
 
     class BNA_KC_RX200_AA: BNA_KC_RX200_Base

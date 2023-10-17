@@ -86,6 +86,8 @@ class CfgVehicles
         {
             HUD_CHANGER
         };
+
+        INVENTORY_VEHICLE_BASE(2)
     };
 
     class BNA_KC_RepubTransport: BNA_KC_RepublicTransport

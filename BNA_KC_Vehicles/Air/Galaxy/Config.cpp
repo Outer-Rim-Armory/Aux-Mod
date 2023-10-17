@@ -74,6 +74,8 @@ class CfgVehicles
                 };
             };
         };
+
+        INVENTORY_VEHICLE_BASE(4)
     };
     class BNA_KC_HAG_Base: BNA_KC_Galaxy_Gunship
     {
@@ -112,6 +114,8 @@ class CfgVehicles
         {
             HUD_CHANGER
         };
+
+        INVENTORY_VEHICLE_BASE(4)
     };
     class BNA_KC_HVT_Base: BNA_KC_Galaxy_Transport_Vehicle
     {
@@ -150,6 +154,8 @@ class CfgVehicles
         {
             HUD_CHANGER
         };
+
+        INVENTORY_VEHICLE_BASE(4)
     };
     class BNA_KC_HIT_Base: BNA_KC_Galaxy_Transport_Infantry
     {

@@ -146,6 +146,8 @@ class CfgVehicles
             };
         };
 
+        INVENTORY_VEHICLE_BASE(4)
+
         // Makes the 3AS AT-TE compatible with the vanilla vehicle-in-vehicle system
         // Credit: CrimzonKat @ https://ptb.discord.com/channels/461042140756180992/1062396582848372807
         class VehicleTransport

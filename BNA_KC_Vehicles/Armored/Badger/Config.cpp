@@ -163,6 +163,8 @@ class CfgVehicles
                 };
             };
         };
+
+        INVENTORY_VEHICLE_BASE(3)
     };
 
     class BNA_KC_APC_Badger: BNA_KC_Badger
