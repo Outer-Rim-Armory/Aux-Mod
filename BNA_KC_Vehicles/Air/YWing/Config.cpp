@@ -77,8 +77,8 @@ class CfgVehicles
             class RechargeShield
             {
                 displayName = "Recharge Shield: %1";
-                position = "[0, -3, 0.4]";
-                distance = 2;
+                position = "[0, -4, 0.4]";
+                distance = 5;
 
                 condition = "[_this#0, _this#1] call BNAKC_fnc_canFullRecharge";
                 statement = "[_this#0, _this#1] call BNAKC_fnc_shieldFullChargeAction";
