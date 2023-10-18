@@ -92,7 +92,7 @@ while {!isNull _object} do
     };
     format ["Current patients after checks: %1", _currentPatients] call BNAKC_fnc_devLog;
 
-    if (_unitsToHeal isEqualTo []) then {"No units to heal, skipping" call BNAKC_fnc_devLog; continue;};
+    if (_unitsToHeal isEqualTo []) then {"No new units to heal, skipping" call BNAKC_fnc_devLog; continue;};
 
     // Sort by most injured to least
     _unitsToHeal = [_unitsToHeal] call BNAKC_fnc_sortUnitsByInjuries;
