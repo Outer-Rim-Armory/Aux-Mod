@@ -21,12 +21,13 @@ params ["_unit", "_delay"];
         _this params ["_unit", "_handlerID"];
         _unit = _unit select 0; // _unit gets passed as [_unit]
 
-        // if (BNA_KC_DevMode) then { systemChat format ["Handler %1 is healing unit %2", _handlerID, _unit]; };
+        format ["Handler %1 | Healing %2", _handlerID, _unit] call BNAKC_fnc_devLog;
 
         if !(alive _unit) then
         {
             // If the unit is dead, remove the handle
             [_handlerID] call CBA_fnc_removePerFrameHandler;
+            format ["Handler %1 | %2 is dead, removed handler", _handlerID, _unit] call BNAKC_fnc_devLog;
         };
 
         _woundsArray = _unit getVariable ["ace_medical_openWounds", []];
@@ -42,16 +43,23 @@ params ["_unit", "_delay"];
         }
         else
         {
-            // Unit has no wounds remaining, move onto pain and fluids
+            format ["Handler %1 | No open wounds remaining", _handlerID] call BNAKC_fnc_devLog;
+
             // Slowly remove pain
             if (_painLevel > 0) then { _painLevel = _painLevel - 0.1; }
-            // Prevents pain from reaching negative values
-            else  { _painLevel = 0; };
+            else
+            {
+                format ["Handler %1 | Pain levels reached 0", _handlerID] call BNAKC_fnc_devLog;
+                _painLevel = 0;
+            };
 
             // Slowly add blood
             if (_bloodLevel < 6.0) then { _bloodLevel = _bloodLevel + 0.25; }
-            else { bloodLevel = 6.0; };
-            // Prevents blood from getting over 6 Liters
+            else
+            {
+                format ["Handler %1 | Blood levels restored", _handlerID] call BNAKC_fnc_devLog;
+                bloodLevel = 6.0;
+            };
 
             // Once pain and blood have been increased, set the values
             _unit setVariable ["ace_medical_pain", _painLevel, true];
@@ -60,12 +68,14 @@ params ["_unit", "_delay"];
             if (_woundsArray isEqualTo [] and (_painLevel == 0) and (_bloodLevel == 6.0)) then
             {
                 // If unit has no other remaining wounds, heal all broken limbs, wake up unit, and remove handler
+                format ["Handler %1 | Fixing bones", _handlerID] call BNAKC_fnc_devLog;
                 _unit setVariable ["ace_medical_fractures", [0, 0, 0, 0, 0, 0], true];
                 if (_unit getVariable ["ACE_isUnconscious", false]) then
                 {
+                    format ["Handler %1 | Unit is uncon, waking up", _handlerID, _unit] call BNAKC_fnc_devLog;
                     [_unit, false, 0, true] call ace_medical_fnc_setUnconscious;
                 };
-                format ["Finished healing %1, removing handler %2", _unit, _handlerID] call BNAKC_fnc_devLog;
+                format ["Handler %1 | %2 is fully healed, removing handler", _handlerID, _unit] call BNAKC_fnc_devLog;
 
                 [_handlerID] call CBA_fnc_removePerFrameHandler;
                 BNA_KC_Weap_SlowHealHandles deleteAt (BNA_KC_Weap_SlowHealHandles find _handlerID); // Remove value from list
