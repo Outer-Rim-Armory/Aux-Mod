@@ -1,5 +1,16 @@
 class ACEX_Fortify_Presets
 {
+    class BNA_KC_All
+    {
+        displayName = "[KC] All Presets";
+        presets[] =
+        {
+            // Currently uses custom implementation, will hopefully be added to ace
+            "BNA_KC_Default",
+            "BNA_KC_FOB"
+        };
+    };
+
     class BNA_KC_Default
     {
         displayName = "[KC] Default";
