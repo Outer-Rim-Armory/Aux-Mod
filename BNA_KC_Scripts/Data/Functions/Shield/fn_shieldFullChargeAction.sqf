@@ -29,6 +29,7 @@ _rechargeTime =
 ] call BIS_fnc_returnConfigEntry;
 
 _vehicle setVariable ["BNA_KC_Shield_isRecharging", true, true];
+_vehicle call BNAKC_fnc_deactivateShield;
 
 [
     _rechargeTime * 1.5,
@@ -50,7 +51,6 @@ _vehicle setVariable ["BNA_KC_Shield_isRecharging", true, true];
     {
         // Condition
         _this#0 params ["_vehicle", "_engineer"];
-        _vehicle call BNAKC_fnc_deactivateShield;
         [_vehicle, _engineer] call BNAKC_fnc_canFullRecharge;
     }
 ] call ace_common_fnc_progressBar;
