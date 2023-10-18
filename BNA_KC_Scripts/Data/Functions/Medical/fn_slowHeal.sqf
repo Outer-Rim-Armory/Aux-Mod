@@ -44,7 +44,7 @@ if (_delay <= 0) exitWith {};
         format ["Handler %1 | _painLevel: %2", _handlerID, _painLevel] call BNAKC_fnc_devLog;
         format ["Handler %1 | _bloodLevel: %2", _handlerID, _bloodLevel] call BNAKC_fnc_devLog;
 
-        if !(_woundsHashmap isEqualTo []) then
+        if (count _woundsHashmap > 0) then
         {
             // If there are wounds, remove a random one each iteration
             format ["Handler %1 | _woundsHashmap: %2 (Before)", _handlerID, _woundsHashmap] call BNAKC_fnc_devLog;
