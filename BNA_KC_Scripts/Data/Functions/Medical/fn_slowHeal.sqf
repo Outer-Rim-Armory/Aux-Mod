@@ -96,7 +96,6 @@ if (_delay <= 0) exitWith {};
                 format ["Handler %1 | %2 is fully healed, removing handler", _handlerID, _unit] call BNAKC_fnc_devLog;
 
                 [_handlerID] call CBA_fnc_removePerFrameHandler;
-                BNA_KC_Weap_SlowHealHandles deleteAt (BNA_KC_Weap_SlowHealHandles find _handlerID); // Remove value from list
             };
         };
 
