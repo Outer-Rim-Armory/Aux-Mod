@@ -9,6 +9,7 @@ class CfgVehicles
     {
         class ACE_Actions;
         class ACE_SelfActions;
+        class UserActions;
         class Turrets
         {
             class Reargun;
@@ -149,9 +150,9 @@ class CfgVehicles
 
         };
 
-        class UserActions
+        class UserActions: UserActions
         {
-            class SFoilsOpen
+            class deploySfoils
             {
                 displayName = "Deploy S-Foils";
 
@@ -165,20 +166,17 @@ class CfgVehicles
                 condition = "(this animationSourcePhase 'SFoil' == 1) and (player isEqualTo currentPilot this) and !(isTouchingGround this)";
                 statement = "playSound3D ['\BNA_KC_Vehicles\Air\ARC170\Data\Audio\SFoils.wss', this]; this animateSource ['SFoil', 0]";
             };
-            class SFoilsClose: SFoilsOpen
+            class undeploySfoils: deploySfoils
             {
                 displayName = "Fold S-Foils";
                 condition = "(this animationSourcePhase 'SFoil' == 0) and (player isEqualTo currentPilot this) and !(isTouchingGround this)";
                 statement = "playSound3D ['\BNA_KC_Vehicles\Air\ARC170\Data\Audio\SFoils.wss', this]; this animateSource ['SFoil', 1]";
             };
 
-            class Eject: SFoilsOpen
+            class Plane_Fighter_03_Eject: deploySfoils
             {
                 displayName = "<t font='RobotoCondensedBold'>Eject</t>";
-                shortcut = "Eject";
-                priority = 0.05;
-
-                condition = "player in this and {speed this > 1}";
+                condition = "ace_player in this and {speed this > 1}";
                 statement = "[this] spawn bis_fnc_planeEjection";
             };
         };
