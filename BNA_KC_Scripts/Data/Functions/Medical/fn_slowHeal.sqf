@@ -22,6 +22,7 @@ if (_delay <= 0) exitWith {};
 [
     {
         _this params ["_unit", "_handlerID"];
+        private ["_woundsArray", "_painLevel", "_bloodLevel"];
         _unit = _unit select 0; // _unit gets passed as [_unit]
 
         if (isGamePaused) then {continue};
