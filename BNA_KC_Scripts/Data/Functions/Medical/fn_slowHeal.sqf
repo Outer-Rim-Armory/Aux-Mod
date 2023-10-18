@@ -14,7 +14,10 @@
  */
 
 
-params ["_unit", "_delay"];
+params [["_unit", objNull, [objNull]], ["_delay", 5, [0]]];
+
+if (isNull _unit) exitWith {};
+if (_delay <= 0) exitWith {};
 
 [
     {
