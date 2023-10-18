@@ -14,8 +14,10 @@
  */
 
 
-params ["_unit"];
+params [["_unit", objNull, [objNull]]];
 
+if (isNull _unit) exitWith {false};
+if !(typeOf _unit isKindOf "CAManbase") exitWith {false};
 if !(alive _unit) exitWith { false }; // If not alive
 
 // if !(_unit getVariable ["ace_medical_bandagedWounds", []] isEqualTo []) exitWith { false }; // If has any bandaged wounds
