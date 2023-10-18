@@ -907,13 +907,13 @@ class CfgVehicles
     {
         displayName = "[KC] Clone Trooper Medic Backpack";
 
-        picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Medic_UI.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_UI.paa";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Cover
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack_Medic.paa",   // Main Texture
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Cover
             "",                                                          // Heavy
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",  // Medic
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Medic
             ""                                                           // RTO
         };
     };
@@ -925,11 +925,11 @@ class CfgVehicles
         picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_Heavy_UI.paa";
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Cover
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Heavy
-            "",                                                               // Medic
-            ""                                                                // RTO
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack_Medic.paa",   // Main Texture
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Cover
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Heavy
+            "",                                                          // Medic
+            ""                                                           // RTO
         };
     };
 
@@ -940,11 +940,11 @@ class CfgVehicles
         picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_Radio_UI.paa";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
-            "",                                                              // Cover
-            "",                                                              // Heavy
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Medic
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"       // RTO
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack_Medic.paa",  // Main Texture
+            "",                                                         // Cover
+            "",                                                         // Heavy
+            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Medic
+            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"  // RTO
         };
     };
 };
