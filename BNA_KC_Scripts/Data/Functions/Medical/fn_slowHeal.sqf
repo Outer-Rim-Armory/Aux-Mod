@@ -22,7 +22,7 @@ if (_delay <= 0) exitWith {};
 [
     {
         _this params ["_unit", "_handlerID"];
-        private ["_woundsHashmap", "_painLevel", "_bloodLevel"];
+        private ["_woundsHashmap", "_bodyPart", "_wounds" "_painLevel", "_bloodLevel"];
         _unit = _unit select 0; // _unit gets passed as [_unit]
 
         if (isGamePaused) then {continue};
@@ -48,8 +48,14 @@ if (_delay <= 0) exitWith {};
         {
             // If there are wounds, remove a random one each iteration
             format ["Handler %1 | _woundsHashmap: %2 (Before)", _handlerID, _woundsHashmap] call BNAKC_fnc_devLog;
-            _randomNum = random count _woundsHashmap;
-            _woundsHashmap deleteAt _randomNum;
+            _bodyPart = selectRandom keys _woundsHashmap;
+            _wounds = _woundsHashmap get _bodyPart;
+            _wounds deleteAt (random count _wounds);
+
+            // If there are no more wounds left, remove the body part from the map
+            if (_wounds isEqualTo []) then {_woundsHashmap deleteAt _bodyPart;}
+            else {_woundsHashmap set [_bodyPart, _wounds];};
+
             _unit setVariable ["ace_medical_openWounds", _woundsHashmap, true]; // Apply list of wounds, with one removed
             format ["Handler %1 | _woundsHashmap: %2 (After)", _handlerID, _woundsHashmap] call BNAKC_fnc_devLog;
         }
