@@ -9,6 +9,10 @@ class CfgVehicles
     {
         class ACE_Actions;
         class ACE_SelfActions;
+        class Turrets
+        {
+            class BubbleGun;
+        };
         class PilotCamera;
     };
     class BNA_KC_BTLB_YWing: BTL_Base
@@ -106,6 +110,14 @@ class CfgVehicles
                     condition = "_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],-2]; if (_intercom == -2) then {_intercom = _vehicle getVariable ['TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot]}; _intercom != 1";
                     statement = "(vehicle ACE_Player) setVariable [format ['TFAR_IntercomSlot_%1',(netID ACE_Player)],1,true]";
                 };
+            };
+        };
+
+        class Turrets: Turrets
+        {
+            class BubbleGun: BubbleGun
+            {
+                gunnerName = "Gunner";
             };
         };
 
