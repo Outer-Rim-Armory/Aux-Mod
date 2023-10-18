@@ -39,12 +39,18 @@ if (_delay <= 0) exitWith {};
         _painLevel = _unit getVariable ["ace_medical_pain", 0];
         _bloodLevel = _unit getVariable ["ace_medical_bloodVolume", 6.0];
 
+        format ["Handler %1 | _woundsArray: %2", _handlerID, _woundsArray] call BNAKC_fnc_devLog;
+        format ["Handler %1 | _painLevel: %2", _handlerID, _painLevel] call BNAKC_fnc_devLog;
+        format ["Handler %1 | _bloodLevel: %2", _handlerID, _bloodLevel] call BNAKC_fnc_devLog;
+
         if !(_woundsArray isEqualTo []) then
         {
             // If there are wounds, remove a random one each iteration
+            format ["Handler %1 | _woundsArray: %2 (Before)", _handlerID, _woundsArray] call BNAKC_fnc_devLog;
             _randomNum = random count _woundsArray;
             _woundsArray deleteAt _randomNum;
             _unit setVariable ["ace_medical_openWounds", _woundsArray, true]; // Apply list of wounds, with one removed
+            format ["Handler %1 | _woundsArray: %2 (After)", _handlerID, _woundsArray] call BNAKC_fnc_devLog;
         }
         else
         {
