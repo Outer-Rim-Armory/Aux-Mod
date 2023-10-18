@@ -24,6 +24,8 @@ if (_delay <= 0) exitWith {};
         _this params ["_unit", "_handlerID"];
         _unit = _unit select 0; // _unit gets passed as [_unit]
 
+        if (isGamePaused) then {continue};
+
         format ["Handler %1 | Healing %2", _handlerID, _unit] call BNAKC_fnc_devLog;
 
         if !(alive _unit) then
