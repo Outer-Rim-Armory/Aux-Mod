@@ -22,7 +22,7 @@ if (_delay <= 0) exitWith {};
 [
     {
         _this params ["_unit", "_handlerID"];
-        private ["_woundsArray", "_painLevel", "_bloodLevel"];
+        private ["_woundsHashmap", "_painLevel", "_bloodLevel"];
         _unit = _unit select 0; // _unit gets passed as [_unit]
 
         if (isGamePaused) then {continue};
@@ -36,22 +36,22 @@ if (_delay <= 0) exitWith {};
             format ["Handler %1 | %2 is dead, removed handler", _handlerID, _unit] call BNAKC_fnc_devLog;
         };
 
-        _woundsArray = _unit getVariable ["ace_medical_openWounds", []];
+        _woundsHashmap = _unit getVariable ["ace_medical_openWounds", []];
         _painLevel = _unit getVariable ["ace_medical_pain", 0];
         _bloodLevel = _unit getVariable ["ace_medical_bloodVolume", 6.0];
 
-        format ["Handler %1 | _woundsArray: %2", _handlerID, _woundsArray] call BNAKC_fnc_devLog;
+        format ["Handler %1 | _woundsHashmap: %2", _handlerID, _woundsHashmap] call BNAKC_fnc_devLog;
         format ["Handler %1 | _painLevel: %2", _handlerID, _painLevel] call BNAKC_fnc_devLog;
         format ["Handler %1 | _bloodLevel: %2", _handlerID, _bloodLevel] call BNAKC_fnc_devLog;
 
-        if !(_woundsArray isEqualTo []) then
+        if !(_woundsHashmap isEqualTo []) then
         {
             // If there are wounds, remove a random one each iteration
-            format ["Handler %1 | _woundsArray: %2 (Before)", _handlerID, _woundsArray] call BNAKC_fnc_devLog;
-            _randomNum = random count _woundsArray;
-            _woundsArray deleteAt _randomNum;
-            _unit setVariable ["ace_medical_openWounds", _woundsArray, true]; // Apply list of wounds, with one removed
-            format ["Handler %1 | _woundsArray: %2 (After)", _handlerID, _woundsArray] call BNAKC_fnc_devLog;
+            format ["Handler %1 | _woundsHashmap: %2 (Before)", _handlerID, _woundsHashmap] call BNAKC_fnc_devLog;
+            _randomNum = random count _woundsHashmap;
+            _woundsHashmap deleteAt _randomNum;
+            _unit setVariable ["ace_medical_openWounds", _woundsHashmap, true]; // Apply list of wounds, with one removed
+            format ["Handler %1 | _woundsHashmap: %2 (After)", _handlerID, _woundsHashmap] call BNAKC_fnc_devLog;
         }
         else
         {
@@ -77,7 +77,7 @@ if (_delay <= 0) exitWith {};
             _unit setVariable ["ace_medical_pain", _painLevel, true];
             _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
 
-            if (_woundsArray isEqualTo [] and (_painLevel == 0) and (_bloodLevel == 6.0)) then
+            if (_woundsHashmap isEqualTo [] and (_painLevel == 0) and (_bloodLevel == 6.0)) then
             {
                 // If unit has no other remaining wounds, heal all broken limbs, wake up unit, and remove handler
                 format ["Handler %1 | Fixing bones", _handlerID] call BNAKC_fnc_devLog;
