@@ -55,7 +55,7 @@ class CfgVehicles
             "\3as\3AS_btlb\data\interior_co.paa"
         };
 
-        textureList[] = {"Standard", 1};
+        textureList[] = {"Standard", 1, "StandardLeader", 0};
         class TextureSources
         {
             class Standard
@@ -66,6 +66,16 @@ class CfgVehicles
                 textures[] =
                 {
                     "\3as\3AS_btlb\data\chasis_co.paa",
+                    "\3as\3AS_btlb\data\detail_co.paa",
+                    "\3as\3AS_btlb\data\interior_co.paa"
+                };
+            };
+            class StandardLeader: Standard
+            {
+                displayName = "Standard Leader";
+                textures[] =
+                {
+                    "\3as\3AS_btlb\textures\chasis_redleader_co.paa",
                     "\3as\3AS_btlb\data\detail_co.paa",
                     "\3as\3AS_btlb\data\interior_co.paa"
                 };
