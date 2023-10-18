@@ -117,6 +117,8 @@ _vehicle setVariable
             _this#0 params ["_vehicle", "_regenTime", "_regenRate"];
             private ["_currentTime", "_lastHit", "_shieldMaxHealth", "_oldHealth", "_newHealth"];
 
+            if (isGamePaused) then {continue};
+
             _currentTime = time max serverTime;
             _lastHit = _vehicle getVariable ["BNA_KC_Shield_lastHit", _currentTime];
             if (_currentTime >= (_lastHit + _regenTime)) then
