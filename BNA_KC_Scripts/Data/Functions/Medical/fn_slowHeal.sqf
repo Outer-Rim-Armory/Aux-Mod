@@ -83,7 +83,7 @@ if (_delay <= 0) exitWith {};
             _unit setVariable ["ace_medical_pain", _painLevel, true];
             _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
 
-            if (_woundsHashmap isEqualTo [] and (_painLevel == 0) and (_bloodLevel == 6.0)) then
+            if ((count _woundsHashmap == 0) and (_painLevel == 0) and (_bloodLevel == 6.0)) then
             {
                 // If unit has no other remaining wounds, heal all broken limbs, wake up unit, and remove handler
                 format ["Handler %1 | Fixing bones", _handlerID] call BNAKC_fnc_devLog;
