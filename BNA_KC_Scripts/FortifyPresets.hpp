@@ -6,14 +6,14 @@ class ACEX_Fortify_Presets
         presets[] =
         {
             // Currently uses custom implementation, will hopefully be added to ace
-            "BNA_KC_Default",
+            "BNA_KC_Common",
             "BNA_KC_FOB"
         };
     };
 
-    class BNA_KC_Default
+    class BNA_KC_Common
     {
-        displayName = "[KC] Default";
+        displayName = "[KC] Common";
         objects[] =
         {
             // Hesco Objects
