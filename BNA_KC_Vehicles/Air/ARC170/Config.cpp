@@ -163,13 +163,13 @@ class CfgVehicles
                 hideOnUse = 1;
                 priority = 1.5;
 
-                condition = "(this animationSourcePhase 'SFoil' == 1) and (player isEqualTo currentPilot this) and !(isTouchingGround this)";
+                condition = "(this animationSourcePhase 'SFoil' == 1) and (player isEqualTo currentPilot this) and {speed this > 1}";
                 statement = "playSound3D ['\BNA_KC_Vehicles\Air\ARC170\Data\Audio\SFoils.wss', this]; this animateSource ['SFoil', 0]";
             };
             class undeploySfoils: deploySfoils
             {
                 displayName = "Fold S-Foils";
-                condition = "(this animationSourcePhase 'SFoil' == 0) and (player isEqualTo currentPilot this) and !(isTouchingGround this)";
+                condition = "(this animationSourcePhase 'SFoil' == 0) and (player isEqualTo currentPilot this) and {speed this > 1}";
                 statement = "playSound3D ['\BNA_KC_Vehicles\Air\ARC170\Data\Audio\SFoils.wss', this]; this animateSource ['SFoil', 1]";
             };
 
