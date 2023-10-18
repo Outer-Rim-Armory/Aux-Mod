@@ -33,7 +33,7 @@ class CfgVehicles
         crew = "BNA_KC_Unit_Phase2_Pilot";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Pilot"};
 
-        weapons[] = {"3AS_BTLB_Heavy_Cannon", "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
+        weapons[] = {"BNA_KC_YWing_Cannon_Heavy", "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
         magazines[] =
         {
             "3AS_BTLB_450Rnd_Heavy_Shells",

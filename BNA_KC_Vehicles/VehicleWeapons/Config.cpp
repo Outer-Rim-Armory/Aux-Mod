@@ -766,6 +766,22 @@ class CfgWeapons
         displayName = "Light Energy Blaster Cannon";
     };
 
+    class BNA_KC_YWing_Cannon_Heavy: BNA_KC_ARC_Cannon_Medium
+    {
+        displayName = "Heavy Energy Blaster Cannon";
+        magazines[] = {"3AS_BTLB_450Rnd_Heavy_Shells"};
+        burst = 2;
+        reloadTime = 0.12;
+
+        class LowROF: LowROF
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"3AS_YwingBlaster_SoundSet"};
+            };
+        };
+    };
+
     class 3AS_ATRT_Weapon_F;
     class BNA_KC_ATRT_Turret: 3AS_ATRT_Weapon_F
     {

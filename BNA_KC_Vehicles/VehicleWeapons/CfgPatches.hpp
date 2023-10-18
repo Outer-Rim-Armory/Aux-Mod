@@ -36,6 +36,7 @@ class CfgPatches
 			"BNA_KC_40mm_VTOL",
             "BNA_KC_ARC_Cannon_Medium",
             "BNA_KC_ARC_TailCannon_Heavy",
+            "BNA_KC_YWing_Cannon_Heavy",
 
             "BNA_KC_ATRT_Turret",
 
