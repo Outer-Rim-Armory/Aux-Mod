@@ -35,7 +35,4 @@ _hasToolkit = false;
 {if (_x in items player) exitWith {_hasToolKit = true};} forEach ace_repair_allToolKits;
 if !(_hasToolKit) exitWith {false};
 
-_isRecharging = _vehicle getVariable ["BNA_KC_Shield_isRecharging", false];
-if (_isRecharging) exitWith {false};
-
 true;
