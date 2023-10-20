@@ -154,7 +154,6 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Sytha",
             "BNA_KC_HelmetHolder_P2_Tugz",
             "BNA_KC_HelmetHolder_P2_Tyrant",
-            "BNA_KC_HelmetHolder_P2_Tyrant_Plasma",
             "BNA_KC_HelmetHolder_P2_Vortex",
             "BNA_KC_HelmetHolder_P2_Woods",
             // Snow
@@ -182,7 +181,6 @@ class CfgPatches
             "BNA_KC_HelmetHolder_ARC_Drake_Bacta",
             "BNA_KC_HelmetHolder_ARC_Hagrid",
             "BNA_KC_HelmetHolder_ARC_Tyrant",
-            "BNA_KC_HelmetHolder_ARC_Tyrant_Plasma",
             "BNA_KC_HelmetHolder_ARF_Patriot",
             "BNA_KC_HelmetHolder_ARF_Sin",
             "BNA_KC_HelmetHolder_BARC_Rat",
