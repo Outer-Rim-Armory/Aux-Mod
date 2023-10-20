@@ -1231,11 +1231,33 @@ class BNA_KC_Helmet_ARC_Drake_Bacta: BNA_KC_Helmet_ARC_Drake
 
 class BNA_KC_Helmet_ARC_Hagrid: BNA_KC_Helmet_ARC
 {
-	displayName = "[KC] SF ARC Helm ('Hagrid')";
+    BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_ARC_Hagrid";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_ARC_Hagrid_Plamsa";
+
+    displayName = "[KC] SF ARC Helm ('Hagrid')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\SpecialForces\ARC\Helmet_ARC_Hagrid.paa",
+        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+    };
+};
+class BNA_KC_Helmet_ARC_Hagrid_Plasma: BNA_KC_Helmet_ARC_Hagrid
+{
+    // Scopes
+    scope = 1;
+    scopeArsenal = 0;
+
+	displayName = "[KC] SF ARC Helm ('Hagrid') [Plasma Visor]";
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
 	hiddenSelectionsTextures[] =
 	{
 	    "\BNA_KC_Gear\Customs\Data\Textures\Helmets\SpecialForces\ARC\Helmet_ARC_Hagrid.paa",
-	    "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+	    "\BNA_KC_Gear\Customs\Data\Textures\Visors\Visor_Plasma.paa"
 	};
 };
 

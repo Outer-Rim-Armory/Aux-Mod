@@ -141,6 +141,7 @@ class CfgPatches
             "BNA_KC_Helmet_ARC_Drake",
             "BNA_KC_Helmet_ARC_Drake_Bacta",
             "BNA_KC_Helmet_ARC_Hagrid",
+            "BNA_KC_Helmet_ARC_Hagrid_Plasma",
             "BNA_KC_Helmet_ARC_Tyrant",
             "BNA_KC_Helmet_ARF_Patriot",
             "BNA_KC_Helmet_ARF_Sin",
