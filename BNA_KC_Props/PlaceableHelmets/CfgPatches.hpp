@@ -178,8 +178,6 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Tanker_Catholic_Kyber",
             "BNA_KC_HelmetHolder_P2_Tanker_Grey",
             // Special Forces
-            "BNA_KC_HelmetHolder_ARC_Burnt",
-            "BNA_KC_HelmetHolder_ARC_Burnt_Bacta",
             "BNA_KC_HelmetHolder_ARC_Drake",
             "BNA_KC_HelmetHolder_ARC_Drake_Bacta",
             "BNA_KC_HelmetHolder_ARC_Hagrid",
