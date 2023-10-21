@@ -80,6 +80,20 @@ class CfgWeapons
         model = "\SWLB_clones_spec\SWLB_clone_commando_sl_armor.p3d";
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_sl_armor_k1_ca.paa";
     };
+
+    class BNA_KC_Vest_Katarn_Sniper: BNA_KC_Vest_Katarn_Basic
+    {
+        displayName = "[KC] SF Katarn I Sniper Vest";
+        model = "\SWLB_clones_spec\SWLB_clone_commando_sniper_armor.p3d";
+        hiddenSelections[] = {"illum", "camo1"};
+        hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones_spec\data\camo2_co.paa",
+            "\SWLB_clones_spec\data\camo2_co.paa"
+        };
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_sniper_armor_k1_ca.paa";
+    };
 };
 
 
