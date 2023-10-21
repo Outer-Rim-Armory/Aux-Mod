@@ -167,7 +167,7 @@ class CfgVehicles
         {
             "BNA_KC_Helmet_Katarn", "BNA_KC_Vest_Katarn_Basic", "BNA_KC_NVG_Chip", "lsd_gar_republicCommando_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
-        backpack = "";
+        backpack = "BNA_KC_Backack_Katarn";
     };
 
 
