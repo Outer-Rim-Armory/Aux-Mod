@@ -35,16 +35,14 @@ if (_isEnabled isEqualTo 0) exitWith {};
 if (_attachments isEqualTo []) exitWith
 {
     // Debug message
-    if !(isMultiplayer) then
-    {
-        systemChat format ["%1 has BNA_KC_attachmentSwap enabled, but does not have any attachments configured.", _weapon];
-    };
+    format ["%1 has BNA_KC_attachmentSwap enabled, but does not have any attachments configured.", _weapon] call BNAKC_fnc_devLog;
 };
 
 {
 	private ["_property", "_attachment", "_matches"];
     _property = _x#0;
     _attachment = _x#1;
+    format ["Checking %1 for %2", _newMagazine#0, _attachment] call BNAKC_fnc_devLog;
 
     _matches =
     [
@@ -57,5 +55,6 @@ if (_attachments isEqualTo []) exitWith
     if (_matches isEqualTo 1) exitWith
     {
         _unit addWeaponItem [_weapon, _attachment];
+        format ["Adding attachment %1 to %2", _attachment, _weapon] call BNAKC_fnc_devLog;
     };
 } forEach _attachments;
