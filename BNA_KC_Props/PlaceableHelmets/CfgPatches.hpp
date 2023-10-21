@@ -15,7 +15,7 @@ class CfgPatches
             // All KC Helmets required
         };
         units[] =
-		{
+        {
             // Infantry
             // Phase 1
             "BNA_KC_HelmetHolder_P1_CR",
@@ -187,7 +187,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_ARF_Sin",
             "BNA_KC_HelmetHolder_BARC_Rat",
             "BNA_KC_HelmetHolder_BARC_Rat_Crimson"
-		};
+        };
         weapons[] = {};
     };
 };
