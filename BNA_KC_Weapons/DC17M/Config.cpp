@@ -18,7 +18,7 @@ class CfgWeapons
 
         modes[] = {"FullAuto", "Single"};
         muzzles[] = {"this"};
-        magazines[] = {"Aux12thFleet_Mag_60Rnd_DC17M", "Aux12thFleet_Mag_90Rnd_DC17M", "SWLW_DC17M_Sniper_Mag", "SWLW_DC17M_AT_Mag"};
+        magazines[] = {"Aux12thFleet_Mag_60Rnd_DC17M", "Aux12thFleet_Mag_90Rnd_DC17M", "Aux12thFleet_Mag_5Rnd_DC17M_Sniper", "SWLW_DC17M_AT_Mag"};
         magazineWell[] = {};
 
         canShootInWater = 1;
@@ -70,5 +70,21 @@ class CfgMagazines
         descriptionShort = "Energy Cell Pack<br/>Rounds: 90<br/>Used In: DC-17M";
         count = 90;
         mass = 15;
+    };
+
+    class Aux12thFleet_Mag_5Rnd_DC17M_Sniper: Aux12thFleet_Mag_60Rnd_DC17M
+    {
+        displayName = "[KC] DC-17M Sniper Energy Cell";
+        displayNameShort = "High Energy";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 5<br/>Used In: DC-17M";
+
+        model = "\SWLW_clones_spec\DC17M_magazine_sniper.p3d";
+        modelSpecial = "\SWLW_clones_spec\DC17M_magazine_sniper.p3d";
+        picture = "\SWLW_clones_spec\data\ui\DC17M_mag_sniper_ui_ca.paa";
+
+        ammo = "Aux12thFleet_Ammo_Sniper_Blue";
+        count = 5; // 2 rounds per 1 mass
+        mass = 10;
+        initSpeed = 1100;
     };
 };
