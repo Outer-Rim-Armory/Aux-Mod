@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Weapons_Core",
+                // Ammo
             "SWLW_clones_spec"
                 // DC-17M
                 // DC-17M Mags
