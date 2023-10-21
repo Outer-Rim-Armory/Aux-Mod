@@ -103,6 +103,7 @@ class CfgMagazines
         mass = 10;
         initSpeed = 1100;
 
+        BNA_KC_DC17M_isBlasterMag = 0;
         BNA_KC_DC17M_isSniperMag = 1;
     };
 
@@ -121,6 +122,7 @@ class CfgMagazines
         mass = 15;
         initSpeed = 900;
 
+        BNA_KC_DC17M_isBlasterMag = 0;
         BNA_KC_DC17M_isATMag = 1;
     };
 };
