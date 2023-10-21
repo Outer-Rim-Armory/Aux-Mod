@@ -97,6 +97,7 @@ class CfgMagazines
         ammo = "Aux12thFleet_Ammo_Rifle_Blue";
         count = 60; // 6 rounds per 1 mass
         mass = 10;
+        initSpeed = 500;
 
         BNA_KC_DC17M_isBlasterMag = 1;
 
