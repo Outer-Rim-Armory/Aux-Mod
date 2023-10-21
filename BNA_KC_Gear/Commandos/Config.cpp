@@ -94,6 +94,15 @@ class CfgWeapons
         };
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_sniper_armor_k1_ca.paa";
     };
+
+    class BNA_KC_Vest_Katarn_Tech: BNA_KC_Vest_Katarn_Basic
+    {
+        displayName = "[KC] SF Katarn I Tech Vest";
+        model = "\SWLB_clones_spec\SWLB_clone_commando_tech_armor.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\SWLB_clones_spec\data\camo2_co.paa"};
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_tech_armor_k1_ca.paa";
+    };
 };
 
 
