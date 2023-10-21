@@ -163,6 +163,22 @@ class CfgVehicles
         model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_eod.p3d";
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_eod_ca.paa";
     };
+
+    class BNA_KC_Backack_Katarn_RTO: BNA_KC_Backack_Katarn
+    {
+        displayName = "[KC] Katarn II Commando Radio Backpack";
+        model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_rto.p3d";
+        picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_rto_ca.paa";
+
+        // TFAR Long Range
+        tf_hasLRradio = 1;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+    };
 };
 
 
