@@ -17,12 +17,20 @@ class CfgPatches
         };
         units[] =
         {
+            // Units
             "BNA_KC_Unit_Commando"
+
+            // Backpacks
         };
         weapons[] =
         {
+            // Helmets
             "BNA_KC_Helmet_Katarn",
+
+            // Uniforms
             "BNA_KC_Uniform_Katarn",
+
+            // Vests
             "BNA_KC_Vest_Katarn_Basic"
         };
     };
