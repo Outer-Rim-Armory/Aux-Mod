@@ -3,7 +3,11 @@
 
 class CfgWeapons
 {
-    class SWLW_DC17M;
+    class SWLW_rifle_base;
+    class SWLW_DC17M: SWLW_rifle_base
+    {
+        class FullAuto;
+    };
     class BNA_KC_DC17M_Base: SWLW_DC17M
     {
         // Mod Info
@@ -40,6 +44,15 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 1;
+
+        class FullAuto: FullAuto
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_DC17M_FullAuto"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC17M_FullAuto"};
+            };
+        };
 
         class LinkedItems
         {
@@ -133,5 +146,30 @@ class CfgMagazines
 
         BNA_KC_DC17M_isBlasterMag = 0;
         BNA_KC_DC17M_isATMag = 1;
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DC17M_FullAuto: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"\BNA_KC_Weapons\DC17M\Data\Audio\FullAuto\DC17M_Fire1.wss", 1, 1},
+            {"\BNA_KC_Weapons\DC17M\Data\Audio\FullAuto\DC17M_Fire2.wss", 1, 1},
+            {"\BNA_KC_Weapons\DC17M\Data\Audio\FullAuto\DC17M_Fire3.wss", 1, 1},
+            {"\BNA_KC_Weapons\DC17M\Data\Audio\FullAuto\DC17M_Fire4.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DC17M_FullAuto: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC17M_FullAuto"};
     };
 };
