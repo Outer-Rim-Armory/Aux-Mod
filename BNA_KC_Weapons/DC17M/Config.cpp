@@ -89,7 +89,7 @@ class CfgMagazines
         picture = "\SWLW_clones_spec\data\ui\DC17M_mag_sniper_ui_ca.paa";
 
         ammo = "Aux12thFleet_Ammo_Sniper_Blue";
-        count = 5; // 2 rounds per 1 mass
+        count = 5; // 1 rounds per 2 mass
         mass = 10;
         initSpeed = 1100;
     };
