@@ -31,7 +31,10 @@ class CfgPatches
             "BNA_KC_Uniform_Katarn",
 
             // Vests
-            "BNA_KC_Vest_Katarn_Basic"
+            "BNA_KC_Vest_Katarn_Basic",
+            "BNA_KC_Vest_Katarn_EOD",
+            "BNA_KC_Vest_Katarn_SL",
+            "BNA_KC_Vest_Katarn_Sniper"
         };
     };
 };
