@@ -31,6 +31,8 @@ class CfgWeapons
         };
         magazineWell[] = {};
 
+        drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
+
         BNA_KC_attachmentSwap = 1; // Enables attachment swapping
         BNA_KC_attachments[] =     // Array of magazine properties to check and the attachment to use
         {
