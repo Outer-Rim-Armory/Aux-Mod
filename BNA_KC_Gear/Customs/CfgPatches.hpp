@@ -15,6 +15,7 @@ class CfgPatches
         units[] =
         {
             // Standard Units
+            "BNA_KC_Unit_Axel",
             "BNA_KC_Unit_Burnt",
             "BNA_KC_Unit_Dexus",
             "BNA_KC_Unit_Drake",
@@ -79,6 +80,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Burnt_Bacta",
             "BNA_KC_Helmet_Phase2_Dexus",
             "BNA_KC_Helmet_Phase2_Dexus_Bacta",
+            "BNA_KC_Helmet_Phase2_Evo",
             "BNA_KC_Helmet_Phase2_Fil",
             "BNA_KC_Helmet_Phase2_FilSquad",
             "BNA_KC_Helmet_Phase2_Grey",
@@ -149,6 +151,7 @@ class CfgPatches
             "BNA_KC_Helmet_BARC_Rat_Crimson",
 
             // Standard Uniforms
+            "BNA_KC_Uniform_Axel",
             "BNA_KC_Uniform_Burnt",
             "BNA_KC_Uniform_Dexus",
             "BNA_KC_Uniform_Drake",
