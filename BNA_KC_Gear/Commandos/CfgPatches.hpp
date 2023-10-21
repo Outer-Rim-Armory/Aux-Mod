@@ -22,7 +22,8 @@ class CfgPatches
         weapons[] =
         {
             "BNA_KC_Helmet_Katarn",
-            "BNA_KC_Uniform_Katarn"
+            "BNA_KC_Uniform_Katarn",
+            "BNA_KC_Vest_Katarn_Basic"
         };
     };
 };

@@ -56,6 +56,16 @@ class CfgWeapons
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
+    class BNA_KC_Vest_ARC;
+    class BNA_KC_Vest_Katarn_Basic: BNA_KC_Vest_ARC
+    {
+        displayName = "[KC] SF Katarn I Vest";
+        model = "\SWLB_clones_spec\SWLB_clone_commando_basic_armor.p3d";
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        hiddenUnderwaterSelections[] = {};
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_basic_armor_k1_ca.paa";
+    };
 };
 
 
@@ -82,11 +92,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Katarn", /*"BNA_KC_Vest_Katarn",*/ "BNA_KC_NVG_Chip", "lsd_gar_republicCommando_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Katarn", "BNA_KC_Vest_Katarn_Basic", "BNA_KC_NVG_Chip", "lsd_gar_republicCommando_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Katarn", /*"BNA_KC_Vest_Katarn",*/, "BNA_KC_NVG_Chip", "lsd_gar_republicCommando_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Katarn", "BNA_KC_Vest_Katarn_Basic", "BNA_KC_NVG_Chip", "lsd_gar_republicCommando_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         backpack = "";
     };
