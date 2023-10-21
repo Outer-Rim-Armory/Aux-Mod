@@ -835,11 +835,11 @@ class CfgVehicles
         picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Heavy_UI.paa";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa",      // Main Texture
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa",      // Cover
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Heavy
-            "",                                                         // Medic
-            ""                                                          // RTO
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack.paa",         // Main Texture
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack.paa",         // Cover
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Heavy
+            "",                                                          // Medic
+            ""                                                           // RTO
         };
     };
 
