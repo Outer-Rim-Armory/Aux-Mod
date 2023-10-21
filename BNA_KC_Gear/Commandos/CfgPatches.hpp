@@ -9,6 +9,8 @@ class CfgPatches
         {
             "BNA_KC_Gear_SpecialForces",
                 // SF Unit, Uniform, etc. as base
+            "BNA_KC_Gear_Infantry",
+                // Backpacks
             "ls_armor_bluefor",
                 // Commando Helmet
                 // Commando Uniform
@@ -18,9 +20,10 @@ class CfgPatches
         units[] =
         {
             // Units
-            "BNA_KC_Unit_Commando"
+            "BNA_KC_Unit_Commando",
 
             // Backpacks
+            "BNA_KC_Backack_Katarn"
         };
         weapons[] =
         {

@@ -142,6 +142,20 @@ class CfgVehicles
     // ┌───────────────────┐
     // │     Backpacks     │
     // └───────────────────┘
+    class BNA_KC_Backpack;
+    class BNA_KC_Backack_Katarn: BNA_KC_Backpack
+    {
+        displayName = "[KC] Katarn II Commando Backpack";
+        model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02.p3d";
+        hiddenSelections[] = {"illum", "camo1"};
+        hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones_spec\backpacks\data\backpack_co.paa",
+            "\SWLB_clones_spec\backpacks\data\backpack_co.paa"
+        };
+        picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
+    };
 };
 
 
