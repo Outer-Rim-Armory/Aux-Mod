@@ -79,6 +79,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Burnt_Bacta",
             "BNA_KC_Helmet_Phase2_Dexus",
             "BNA_KC_Helmet_Phase2_Dexus_Bacta",
+            "BNA_KC_Helmet_Phase2_Evo",
             "BNA_KC_Helmet_Phase2_Fil",
             "BNA_KC_Helmet_Phase2_FilSquad",
             "BNA_KC_Helmet_Phase2_Grey",

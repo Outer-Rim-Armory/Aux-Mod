@@ -127,6 +127,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Burnt_Bacta",
             "BNA_KC_HelmetHolder_P2_Dexus",
             "BNA_KC_HelmetHolder_P2_Dexus_Bacta",
+            "BNA_KC_HelmetHolder_P2_Evo",
             "BNA_KC_HelmetHolder_P2_Fil",
             "BNA_KC_HelmetHolder_P2_FilSquad",
             "BNA_KC_HelmetHolder_P2_Grey",
