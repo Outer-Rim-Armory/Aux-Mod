@@ -73,6 +73,13 @@ class CfgWeapons
         model = "\SWLB_clones_spec\SWLB_clone_commando_eod_armor.p3d";
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_eod_armor_k1_ca.paa";
     };
+
+    class BNA_KC_Vest_Katarn_SL: BNA_KC_Vest_Katarn_Basic
+    {
+        displayName = "[KC] SF Katarn I SL Pauldron";
+        model = "\SWLB_clones_spec\SWLB_clone_commando_sl_armor.p3d";
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_sl_armor_k1_ca.paa";
+    };
 };
 
 
