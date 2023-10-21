@@ -66,6 +66,13 @@ class CfgWeapons
         hiddenUnderwaterSelections[] = {};
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_basic_armor_k1_ca.paa";
     };
+
+    class BNA_KC_Vest_Katarn_EOD: BNA_KC_Vest_Katarn_Basic
+    {
+        displayName = "[KC] SF Katarn I EOD Vest";
+        model = "\SWLB_clones_spec\SWLB_clone_commando_eod_armor.p3d";
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_eod_armor_k1_ca.paa";
+    };
 };
 
 
