@@ -12,7 +12,7 @@ class CfgWeapons
     };
     class BNA_KC_Helmet_Katarn: BNA_KC_Helmet_ARC
     {
-        displayName = "[KC] Katarn I Commando Helmet";
+        displayName = "[KC] SF Katarn I Helmet";
 
         model = "\ls_armor_bluefor\helmet\sob\commando\lsd_sob_commando_helmet.p3d";
         hiddenSelections[] = {"illum", "camo1"};
@@ -42,7 +42,7 @@ class CfgWeapons
     };
     class BNA_KC_Uniform_Katarn: BNA_KC_Uniform_ARC
     {
-        displayName = "[KC] Katarn I Armor";
+        displayName = "[KC] SF Katarn I Armor";
         model = "\ls_armor_bluefor\uniform\gar\phase2\ls_gar_phase2_uniform_groundholder.p3d";
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_uniform_k1_ca.paa";
 
@@ -71,7 +71,7 @@ class CfgVehicles
         editorPreview = "\SWLB_clones_spec\data\ui\editorPreviews\SWLB_clone_commando_base.jpg";
         editorSubcategory = "BNA_KC_Subcat_Commandos";
 
-        uniformClass = "DAC_Uniform_Commando_Base";
+        uniformClass = "BNA_KC_Uniform_Katarn";
         model = "\ls_armor_bluefor\uniform\sob\commando\ls_sob_commando_uniform.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] =
