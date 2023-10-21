@@ -93,4 +93,20 @@ class CfgMagazines
         mass = 10;
         initSpeed = 1100;
     };
+
+    class Aux12thFleet_Mag_1Rnd_DC17M_AT: Aux12thFleet_Mag_60Rnd_DC17M
+    {
+        displayName = "[KC] DC-17M Anti-Armor Cell";
+        displayNameShort = "Anti-Armor";
+        descriptionShort = "Anti-Armor Energy Cell<br/>Rounds: 1<br/>Used In: DC-17M";
+
+        model = "\SWLW_clones_spec\DC17M_magazine_at.p3d";
+        modelSpecial = "\SWLW_clones_spec\DC17M_magazine_at.p3d";
+        picture = "\SWLW_clones_spec\data\ui\DC17M_mag_at_ui_ca.paa";
+
+        ammo = "SWLW_ammo_40mm_at";
+        count = 1; // 1 rounds per 15 mass
+        mass = 15;
+        initSpeed = 900;
+    };
 };
