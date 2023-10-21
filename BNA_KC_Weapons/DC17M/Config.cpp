@@ -7,6 +7,7 @@ class CfgWeapons
     class SWLW_DC17M: SWLW_rifle_base
     {
         class FullAuto;
+        class Single;
     };
     class BNA_KC_DC17M_Base: SWLW_DC17M
     {
@@ -57,6 +58,14 @@ class CfgWeapons
             {
                 soundSetShot[] = {"BNA_KC_SoundSet_DC17M_FullAuto"};
                 soundSetShotWater[] = {"BNA_KC_SoundSet_DC17M_FullAuto"};
+            };
+        };
+        class Single: Single
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_DC17M_Single"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC17M_Single"};
             };
         };
 
@@ -170,6 +179,13 @@ class CfgSoundShaders
             {"\BNA_KC_Weapons\DC17M\Data\Audio\FullAuto\DC17M_Fire4.wss", 1, 1}
         };
     };
+    class BNA_KC_SoundShader_DC17M_Single: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"\SWLW_clones_spec\sounds\DC17M_sniper_fire.wss", 1, 1}
+        };
+    };
 };
 
 class CfgSoundSets
@@ -178,5 +194,9 @@ class CfgSoundSets
     class BNA_KC_SoundSet_DC17M_FullAuto: BNA_KC_SoundSet_Weapon_Base
     {
         soundShaders[] = {"BNA_KC_SoundShader_DC17M_FullAuto"};
+    };
+    class BNA_KC_SoundSet_DC17M_Single: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC17M_Single"};
     };
 };
