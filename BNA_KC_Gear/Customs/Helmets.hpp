@@ -1233,7 +1233,7 @@ class BNA_KC_Helmet_ARC_Hagrid: BNA_KC_Helmet_ARC
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_ARC_Hagrid";
-    BNAKC_Helmet_On  = "BNA_KC_Helmet_ARC_Hagrid_Plamsa";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_ARC_Hagrid_Plasma";
 
     displayName = "[KC] SF ARC Helm ('Hagrid')";
     hiddenSelectionsTextures[] =
