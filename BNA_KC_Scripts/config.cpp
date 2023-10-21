@@ -81,7 +81,7 @@ class CfgFunctions
         {
             file = "BNA_KC_Scripts\Data\Functions\Weapons";
             class specialGrenadesEH {};
-            class attachmentSwap {};
+            class handleAttachmentSwap {};
         };
 
         class Vehicles
