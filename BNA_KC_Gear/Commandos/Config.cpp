@@ -179,6 +179,20 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
     };
+
+    class BNA_KC_Backack_Katarn_Tech: BNA_KC_Backack_Katarn
+    {
+        displayName = "[KC] Katarn II Commando Tech Backpack";
+        model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_tech.p3d";
+        hiddenSelections[] = {"illum", "camo1", "camo2"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones_spec\backpacks\data\backpack_co.paa",
+            "\SWLB_clones_spec\backpacks\data\backpack_co.paa",
+            "\SWLB_clones_spec\backpacks\data\backpack_tech_co.paa"
+        };
+        picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
+    };
 };
 
 

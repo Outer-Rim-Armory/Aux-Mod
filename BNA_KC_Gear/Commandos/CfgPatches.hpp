@@ -25,7 +25,8 @@ class CfgPatches
             // Backpacks
             "BNA_KC_Backack_Katarn",
             "BNA_KC_Backack_Katarn_EOD",
-            "BNA_KC_Backack_Katarn_RTO"
+            "BNA_KC_Backack_Katarn_RTO",
+            "BNA_KC_Backack_Katarn_Tech"
         };
         weapons[] =
         {
