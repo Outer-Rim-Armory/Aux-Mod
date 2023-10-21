@@ -11,8 +11,11 @@ class CfgPatches
                 // Base JLTS bullets
             "A3_Weapons_F",
                 // Base UGL flare
-            "A3_Weapons_F_Enoch"
+                // Titan pentrator ammo
+            "A3_Weapons_F_Enoch",
                 // DP-23 Ammo
+            "LS_weapon_core"
+                // 40mm AT Ammo
         };
         units[] = {};
         weapons[] = {};

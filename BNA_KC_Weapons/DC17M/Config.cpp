@@ -23,7 +23,7 @@ class CfgWeapons
             "Aux12thFleet_Mag_60Rnd_DC17M",
             "Aux12thFleet_Mag_90Rnd_DC17M",
             "Aux12thFleet_Mag_5Rnd_DC17M_Sniper",
-            "SWLW_DC17M_AT_Mag"
+            "Aux12thFleet_Mag_1Rnd_DC17M_AT"
         };
         magazineWell[] = {};
 
@@ -104,7 +104,7 @@ class CfgMagazines
         modelSpecial = "\SWLW_clones_spec\DC17M_magazine_at.p3d";
         picture = "\SWLW_clones_spec\data\ui\DC17M_mag_at_ui_ca.paa";
 
-        ammo = "SWLW_ammo_40mm_at";
+        ammo = "Aux12thFleet_Ammo_40mm_AT";
         count = 1; // 1 rounds per 15 mass
         mass = 15;
         initSpeed = 900;

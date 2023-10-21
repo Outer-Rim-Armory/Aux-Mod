@@ -163,6 +163,32 @@ class CfgAmmo
     {
         lightColor[] = {0.25, 0.25, 0.5, 0.5};
     };
+
+    class SWLW_ammo_40mm_at;
+    class Aux12thFleet_Ammo_40mm_AT: SWLW_ammo_40mm_at
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+
+        hit = 800;
+        typicalSpeed = 1550;
+
+        submunitionammo = "Aux12thFleet_Ammo_40mm_AT_SubAmmo";
+        submunitionInitialOffset[] = {0,0, -0.5};
+        submunitionInitSpeed = 1000;
+        submunitionParentSpeedCoef = 0;
+    };
+
+    class ammo_Penetrator_Titan_AT;
+    class Aux12thFleet_Ammo_40mm_AT_SubAmmo: ammo_Penetrator_Titan_AT
+    {
+        hit = 650;
+        caliber = 60;
+
+        thrust = 210;
+        thrustTime = 1.5;
+        typicalSpeed = 1000;
+    };
 };
 
 
