@@ -9,6 +9,7 @@ class CfgPatches
         {
             "SWLW_clones_spec"
                 // DC-17M
+                // DC-17M Mags
         };
         units[] = {};
         weapons[] =
