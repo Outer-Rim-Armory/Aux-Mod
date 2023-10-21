@@ -56,7 +56,11 @@ class CfgWeapons
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
-    class BNA_KC_Vest_ARC;
+    class BNA_KC_Vest_Basic;
+    class BNA_KC_Vest_ARC: BNA_KC_Vest_Basic
+    {
+        class ItemInfo;
+    };
     class BNA_KC_Vest_Katarn_Basic: BNA_KC_Vest_ARC
     {
         displayName = "[KC] SF Katarn I Vest";
@@ -65,6 +69,12 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {};
         hiddenUnderwaterSelections[] = {};
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_basic_armor_k1_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {};
+            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_basic_armor.p3d";
+        };
     };
 
     class BNA_KC_Vest_Katarn_EOD: BNA_KC_Vest_Katarn_Basic
@@ -72,6 +82,11 @@ class CfgWeapons
         displayName = "[KC] SF Katarn I EOD Vest";
         model = "\SWLB_clones_spec\SWLB_clone_commando_eod_armor.p3d";
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_eod_armor_k1_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_eod_armor.p3d";
+        };
     };
 
     class BNA_KC_Vest_Katarn_SL: BNA_KC_Vest_Katarn_Basic
@@ -79,6 +94,11 @@ class CfgWeapons
         displayName = "[KC] SF Katarn I SL Pauldron";
         model = "\SWLB_clones_spec\SWLB_clone_commando_sl_armor.p3d";
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_sl_armor_k1_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_sl_armor.p3d";
+        };
     };
 
     class BNA_KC_Vest_Katarn_Sniper: BNA_KC_Vest_Katarn_Basic
@@ -93,6 +113,12 @@ class CfgWeapons
             "\SWLB_clones_spec\data\camo2_co.paa"
         };
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_sniper_armor_k1_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"illum", "camo1"};
+            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_sniper_armor.p3d";
+        };
     };
 
     class BNA_KC_Vest_Katarn_Tech: BNA_KC_Vest_Katarn_Basic
@@ -102,6 +128,12 @@ class CfgWeapons
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\SWLB_clones_spec\data\camo2_co.paa"};
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_tech_armor_k1_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1"};
+            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_tech_armor.p3d";
+        };
     };
 };
 
