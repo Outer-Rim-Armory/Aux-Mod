@@ -7,6 +7,15 @@ class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
     class ItemInfo;
 };
 
+class BNA_KC_Uniform_Axel: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF Armor ('Axel')";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Axel";
+    };
+};
+
 class BNA_KC_Uniform_Burnt: BNA_KC_Uniform_Base
 {
     displayName = "[KC] INF Armor ('Burnt')";

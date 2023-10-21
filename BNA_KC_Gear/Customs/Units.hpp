@@ -2,6 +2,32 @@
 // │       Units       │
 // └───────────────────┘
 class BNA_KC_Unit_Phase2_Base;
+class BNA_KC_Unit_Axel: BNA_KC_Unit_Phase2_Base
+{
+    // Editor Attributes
+    editorSubcategory = "BNA_KC_Customs";
+    // editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Axel.jpg";
+
+    displayName = "[KC] Axel";
+    uniformClass = "BNA_KC_Uniform_Axel";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Axel_Upper.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Axel_Lower.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    // Loadout
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_P2_Axel_Burnt", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Burnt", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+    };
+};
+
 class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
 {
     // Editor Attributes
