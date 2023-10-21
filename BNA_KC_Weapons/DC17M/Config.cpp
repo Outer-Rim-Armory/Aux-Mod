@@ -27,6 +27,14 @@ class CfgWeapons
         };
         magazineWell[] = {};
 
+        BNA_KC_attachmentSwap = 1; // Enables attachment swapping
+        BNA_KC_attachments[] =     // Array of magazine properties to check and the attachment to use
+        {
+            {"BNA_KC_DC17M_isBlasterMag", "SWLW_attachment_DC17M_blaster"},
+            {"BNA_KC_DC17M_isATMag", "SWLW_attachment_DC17M_at"},
+            {"BNA_KC_DC17M_isSniperMag", "SWLW_attachment_DC17M_sniper"}
+        };
+
         canShootInWater = 1;
 
         // JLTS emp system
@@ -68,6 +76,8 @@ class CfgMagazines
         count = 60; // 6 rounds per 1 mass
         mass = 10;
 
+        BNA_KC_DC17M_isBlasterMag = 1;
+
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 1;
     };
@@ -92,6 +102,8 @@ class CfgMagazines
         count = 5; // 1 rounds per 2 mass
         mass = 10;
         initSpeed = 1100;
+
+        BNA_KC_DC17M_isSniperMag = 1;
     };
 
     class Aux12thFleet_Mag_1Rnd_DC17M_AT: Aux12thFleet_Mag_60Rnd_DC17M
@@ -108,5 +120,7 @@ class CfgMagazines
         count = 1; // 1 rounds per 15 mass
         mass = 15;
         initSpeed = 900;
+
+        BNA_KC_DC17M_isATMag = 1;
     };
 };
