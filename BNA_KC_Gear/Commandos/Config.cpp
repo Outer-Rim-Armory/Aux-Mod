@@ -86,7 +86,7 @@ class CfgVehicles
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Katarn", /*"BNA_KC_Vest_Katarn",*/, "BNA_KC_NVGChip", "lsd_gar_republicCommando_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Katarn", /*"BNA_KC_Vest_Katarn",*/, "BNA_KC_NVG_Chip", "lsd_gar_republicCommando_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         backpack = "";
     };
