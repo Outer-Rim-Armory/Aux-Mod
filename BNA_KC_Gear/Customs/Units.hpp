@@ -6,7 +6,7 @@ class BNA_KC_Unit_Axel: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
     editorSubcategory = "BNA_KC_Customs";
-    // editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Axel.jpg";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Axel.jpg";
 
     displayName = "[KC] Axel";
     uniformClass = "BNA_KC_Uniform_Axel";
