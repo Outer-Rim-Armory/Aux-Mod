@@ -18,7 +18,13 @@ class CfgWeapons
 
         modes[] = {"FullAuto", "Single"};
         muzzles[] = {"this"};
-        magazines[] = {"Aux12thFleet_Mag_60Rnd_DC17M", "Aux12thFleet_Mag_90Rnd_DC17M", "Aux12thFleet_Mag_5Rnd_DC17M_Sniper", "SWLW_DC17M_AT_Mag"};
+        magazines[] =
+        {
+            "Aux12thFleet_Mag_60Rnd_DC17M",
+            "Aux12thFleet_Mag_90Rnd_DC17M",
+            "Aux12thFleet_Mag_5Rnd_DC17M_Sniper",
+            "SWLW_DC17M_AT_Mag"
+        };
         magazineWell[] = {};
 
         canShootInWater = 1;
