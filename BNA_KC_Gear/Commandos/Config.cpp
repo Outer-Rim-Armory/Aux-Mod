@@ -156,6 +156,13 @@ class CfgVehicles
         };
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
     };
+
+    class BNA_KC_Backack_Katarn_EOD: BNA_KC_Backack_Katarn
+    {
+        displayName = "[KC] Katarn II Commando EOD Backpack";
+        model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_eod.p3d";
+        picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_eod_ca.paa";
+    };
 };
 
 

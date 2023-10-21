@@ -23,7 +23,8 @@ class CfgPatches
             "BNA_KC_Unit_Commando",
 
             // Backpacks
-            "BNA_KC_Backack_Katarn"
+            "BNA_KC_Backack_Katarn",
+            "BNA_KC_Backack_Katarn_EOD"
         };
         weapons[] =
         {
