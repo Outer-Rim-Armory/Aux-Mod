@@ -40,6 +40,15 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 1;
+
+        class LinkedItems
+        {
+            class LinkedItemsMuzzle
+            {
+                slot = "MuzzleSlot";
+                item = "SWLW_attachment_DC17M_blaster";
+            };
+        };
     };
 
     class BNA_KC_DC17M: BNA_KC_DC17M_Base
