@@ -122,7 +122,7 @@ class CfgMagazines
     class Aux12thFleet_Mag_60Rnd_DC17M: SWLW_DC17M_Blaster_Mag
     {
         author = "DartRuffian and SweMonkey";
-        displayName = "[KC] DC-17M Energy Cell";
+        displayName = "[KC] DC-17M Energy Cell (60 Rnd)";
         displayNameShort = "Medium Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: DC-17M";
 
@@ -147,6 +147,7 @@ class CfgMagazines
     };
     class Aux12thFleet_Mag_90Rnd_DC17M: Aux12thFleet_Mag_60Rnd_DC17M
     {
+        displayName = "[KC] DC-17M Energy Cell (90 Rnd)";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 90<br/>Used In: DC-17M";
         count = 90;
         mass = 15;

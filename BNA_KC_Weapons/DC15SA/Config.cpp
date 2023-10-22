@@ -48,7 +48,7 @@ class CfgMagazines
     class Aux12thFleet_Mag_7Rnd_DC15SA: SWLW_DC15SA_Mag
     {
         author = "DartRuffian and SweMonkey";
-        displayName = "[12th Fleet] DC-15SA Energy Cell";
+        displayName = "[12th Fleet] DC-15SA Energy Cell (7 Rnd)";
         displayNameShort = "Low Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 7<br/>Used In: DC-15SA";
 
@@ -60,13 +60,13 @@ class CfgMagazines
     };
     class Aux12thFleet_Mag_15Rnd_DC15SA: Aux12thFleet_Mag_7Rnd_DC15SA
     {
-        displayName = "[12th Fleet] DC-15SA Energy Cell";
+        displayName = "[12th Fleet] DC-15SA Energy Cell (15 Rnd)";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DC-15SA";
         count = 15;
     };
     class Aux12thFleet_Mag_30Rnd_DC15SA: Aux12thFleet_Mag_7Rnd_DC15SA
     {
-        displayName = "[12th Fleet] DC-15SA Energy Cell";
+        displayName = "[12th Fleet] DC-15SA Energy Cell (30 Rnd)";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 30<br/>Used In: DC-15SA";
         count = 30;
     };
