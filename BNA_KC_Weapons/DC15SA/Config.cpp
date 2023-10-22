@@ -20,7 +20,7 @@ class CfgWeapons
 
         displayName = "[KC] DC-15SA (Base)";
 
-        modes[] = {"Single"};
+        modes[] = {"Single", "FullAuto"};
         muzzles[] = {"this"};
         magazines[] =
         {
@@ -41,6 +41,13 @@ class CfgWeapons
                 soundSetShot[] = {"BNA_KC_SoundSet_DC15SA"};
                 soundSetShotWater[] = {"BNA_KC_SoundSet_DC15SA"};
             };
+        };
+        class FullAuto: Single
+        {
+            autoFire = 1;
+            textureType = "fullAuto";
+            dispersion = 0.001;
+            reloadTime = 0.08;
         };
     };
 
