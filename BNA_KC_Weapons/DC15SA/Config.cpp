@@ -49,7 +49,7 @@ class CfgWeapons
             autoFire = 1;
             textureType = "fullAuto";
             dispersion = 0.001;
-            reloadTime = 0.08;
+            reloadTime = 0.2;
         };
     };
 
