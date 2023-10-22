@@ -72,6 +72,7 @@ class CfgWeapons
 
         class FullAuto: FullAuto
         {
+            dispersion = 0.00029;
             class StandardSound
             {
                 soundSetShot[] = {"BNA_KC_SoundSet_DC17M_FullAuto"};
@@ -80,6 +81,7 @@ class CfgWeapons
         };
         class Single: Single
         {
+            dispersion = 0.00029;
             class StandardSound
             {
                 soundSetShot[] = {"BNA_KC_SoundSet_DC17M_Single"};
