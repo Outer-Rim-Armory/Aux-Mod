@@ -38,6 +38,8 @@ class CfgWeapons
 
         class Single: Single
         {
+            recoil = "recoil_pistol_light";
+            recoilProne = "recoil_prone_pistol_light";
             class StandardSound
             {
                 soundSetShot[] = {"BNA_KC_SoundSet_DC15SA"};
@@ -49,7 +51,7 @@ class CfgWeapons
             autoFire = 1;
             textureType = "fullAuto";
             dispersion = 0.001;
-            reloadTime = 0.2;
+            reloadTime = 0.15;
         };
     };
 
