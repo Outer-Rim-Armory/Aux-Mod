@@ -24,7 +24,9 @@ class CfgWeapons
         muzzles[] = {"this"};
         magazines[] =
         {
-            "Aux12thFleet_Mag_7Rnd_DC15SA"
+            "Aux12thFleet_Mag_7Rnd_DC15SA",
+            "Aux12thFleet_Mag_15Rnd_DC15SA",
+            "Aux12thFleet_Mag_30Rnd_DC15SA"
         };
         magazineWell[] = {};
 
