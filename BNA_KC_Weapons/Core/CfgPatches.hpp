@@ -16,6 +16,8 @@ class CfgPatches
                 // DP-23 Ammo
             "LS_weapon_core",
                 // 40mm AT Ammo
+            "3AS_Main",
+                // Reload Sound
             "JLTS_weapons_DC17SA",
                 // Flashlight
             "A3_Weapons_F_Acc",
