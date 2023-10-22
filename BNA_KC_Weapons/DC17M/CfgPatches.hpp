@@ -9,6 +9,7 @@ class CfgPatches
         {
             "BNA_KC_Weapons_Core",
                 // Ammo
+                // Stun Muzzle
             "SWLW_clones_spec"
                 // DC-17M
                 // DC-17M Mags
