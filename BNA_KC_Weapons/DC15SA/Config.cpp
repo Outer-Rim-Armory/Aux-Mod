@@ -53,7 +53,8 @@ class CfgMagazines
         descriptionShort = "Energy Cell Pack<br/>Rounds: 7<br/>Used In: DC-15SA";
 
         ammo = "Aux12thFleet_Ammo_Pistol_Blue";
-        count = 7;
+        count = 7; // 0.875 per round
+        mass = 8;
 
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 1;
@@ -63,11 +64,13 @@ class CfgMagazines
         displayName = "[12th Fleet] DC-15SA Energy Cell (15 Rnd)";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DC-15SA";
         count = 15;
+        mass = 13;
     };
     class Aux12thFleet_Mag_30Rnd_DC15SA: Aux12thFleet_Mag_7Rnd_DC15SA
     {
         displayName = "[12th Fleet] DC-15SA Energy Cell (30 Rnd)";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 30<br/>Used In: DC-15SA";
         count = 30;
+        mass = 26;
     };
 };
