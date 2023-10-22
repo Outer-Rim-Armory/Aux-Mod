@@ -11,11 +11,27 @@ class CfgPatches
                 // Base JLTS bullets
             "A3_Weapons_F",
                 // Base UGL flare
-            "A3_Weapons_F_Enoch"
+                // Titan pentrator ammo
+            "A3_Weapons_F_Enoch",
                 // DP-23 Ammo
+            "LS_weapon_core",
+                // 40mm AT Ammo
+            "JLTS_weapons_Core",
+                // Dry Sound
+            "3AS_Main",
+                // Reload Sound
+            "JLTS_weapons_DC17SA",
+                // Flashlight
+            "A3_Weapons_F_Acc",
+                // Laser pointer
+            "ace_laserpointer"
+                // Green laser pointer
         };
         units[] = {};
-        weapons[] = {};
+        weapons[] =
+        {
+            "BNA_KC_Stun_Muzzle"
+        };
         magazines[] =
         {
             "Aux12thFleet_Mag_StunShort",
