@@ -52,6 +52,9 @@ class CfgMagazines
         displayNameShort = "Low Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 7<br/>Used In: DC-15SA";
 
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = "\SWLW_clones_spec\data\ui\DC15SA_mag_ui_ca.paa";
+
         ammo = "Aux12thFleet_Ammo_Pistol_Blue";
         count = 7; // 0.875 per round
         mass = 8;
