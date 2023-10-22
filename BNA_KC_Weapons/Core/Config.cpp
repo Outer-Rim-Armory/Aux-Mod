@@ -2,6 +2,18 @@
 #include "..\Macros.hpp"
 
 
+class CfgWeapons
+{
+    class JLTS_stun_muzzle;
+    class BNA_KC_Stun_Muzzle: JLTS_stun_muzzle
+    {
+        displayName = "Stun";
+        magazines[] = {};
+        magazineWell[] = {"BNA_KC_Stuns"};
+    };
+};
+
+
 class CfgMagazines
 {
     class JLTS_stun_mag_short;

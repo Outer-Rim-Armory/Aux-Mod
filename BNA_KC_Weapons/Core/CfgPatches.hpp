@@ -18,7 +18,10 @@ class CfgPatches
                 // 40mm AT Ammo
         };
         units[] = {};
-        weapons[] = {};
+        weapons[] =
+        {
+            "BNA_KC_Stun_Muzzle"
+        };
         magazines[] =
         {
             "Aux12thFleet_Mag_StunShort",
