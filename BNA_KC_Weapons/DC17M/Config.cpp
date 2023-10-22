@@ -3,6 +3,7 @@
 
 class CfgWeapons
 {
+    class BNA_KC_Stun_Muzzle;
     class SWLW_rifle_base;
     class SWLW_DC17M: SWLW_rifle_base
     {
@@ -22,7 +23,7 @@ class CfgWeapons
         displayName = "[KC] DC-17M (Base)";
 
         modes[] = {"FullAuto", "Single"};
-        muzzles[] = {"this"};
+        muzzles[] = {"this", "Stun"};
         magazines[] =
         {
             "Aux12thFleet_Mag_60Rnd_DC17M",
@@ -68,6 +69,12 @@ class CfgWeapons
                 soundSetShot[] = {"BNA_KC_SoundSet_DC17M_Single"};
                 soundSetShotWater[] = {"BNA_KC_SoundSet_DC17M_Single"};
             };
+        };
+
+        class Stun: BNA_KC_Stun_Muzzle
+        {
+            reloadAction = "ReloadMagazine";
+            reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss", 1, 1, 30};
         };
 
         class LinkedItems
