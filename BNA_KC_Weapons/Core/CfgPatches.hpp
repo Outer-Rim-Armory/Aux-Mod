@@ -14,8 +14,14 @@ class CfgPatches
                 // Titan pentrator ammo
             "A3_Weapons_F_Enoch",
                 // DP-23 Ammo
-            "LS_weapon_core"
+            "LS_weapon_core",
                 // 40mm AT Ammo
+            "JLTS_weapons_DC17SA",
+                // Flashlight
+            "A3_Weapons_F_Acc",
+                // Laser pointer
+            "ace_laserpointer"
+                // Green laser pointer
         };
         units[] = {};
         weapons[] =

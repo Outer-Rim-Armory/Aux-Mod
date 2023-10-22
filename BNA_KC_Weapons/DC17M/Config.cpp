@@ -1,12 +1,15 @@
 #include "CfgPatches.hpp"
 
 
+class PointerSlot_Rail;
+
 class CfgWeapons
 {
     class BNA_KC_Stun_Muzzle;
     class SWLW_rifle_base;
     class SWLW_DC17M: SWLW_rifle_base
     {
+        class WeaponSlotsInfo;
         class FullAuto;
         class Single;
     };
@@ -53,6 +56,19 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 1;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class PointerSlot: PointerSlot_Rail
+            {
+                compatibleItems[]  =
+                {
+                    "acc_pointer_ir",
+                    "ace_acc_pointer_green",
+                    "jlts_dc17sa_flashlight"
+                };
+            };
+        };
 
         class FullAuto: FullAuto
         {
