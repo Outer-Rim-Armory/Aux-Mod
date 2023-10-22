@@ -3,7 +3,11 @@
 
 class CfgWeapons
 {
-    class SWLW_DC15SA;
+    class Pistol_Base_F;
+    class SWLW_DC15SA: Pistol_Base_F
+    {
+        class Single;
+    };
     class BNA_KC_DC15SA_Base: SWLW_DC15SA
     {
         // Mod Info
@@ -29,6 +33,15 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 1;
+
+        class Single: Single
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_DC15SA"};
+                soundSetShotWater[] = {"BNA_KC_SoundSet_DC15SA"};
+            };
+        };
     };
 
     class BNA_KC_DC15SA: BNA_KC_DC15SA_Base
@@ -75,5 +88,30 @@ class CfgMagazines
         descriptionShort = "Energy Cell Pack<br/>Rounds: 30<br/>Used In: DC-15SA";
         count = 30;
         mass = 26;
+    };
+};
+
+
+class CfgSoundShaders
+{
+    class BNA_KC_SoundShader_Weapon_Base;
+    class BNA_KC_SoundShader_DC15SA: BNA_KC_SoundShader_Weapon_Base
+    {
+        samples[] =
+        {
+            {"\BNA_KC_Weapons\DC15SA\Data\Audio\DC15SA_Fire1.wss", 1, 1},
+            {"\BNA_KC_Weapons\DC15SA\Data\Audio\DC15SA_Fire2.wss", 1, 1},
+            {"\BNA_KC_Weapons\DC15SA\Data\Audio\DC15SA_Fire3.wss", 1, 1},
+            {"\BNA_KC_Weapons\DC15SA\Data\Audio\DC15SA_Fire4.wss", 1, 1}
+        };
+    };
+};
+
+class CfgSoundSets
+{
+    class BNA_KC_SoundSet_Weapon_Base;
+    class BNA_KC_SoundSet_DC15SA: BNA_KC_SoundSet_Weapon_Base
+    {
+        soundShaders[] = {"BNA_KC_SoundShader_DC15SA"};
     };
 };
