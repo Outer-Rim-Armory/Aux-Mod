@@ -249,6 +249,7 @@ class CfgPatches
             "BNA_KC_Vest_Medic_Platoon",
             "BNA_KC_Vest_Officer",
             "BNA_KC_Vest_Pauldron",
+            "BNA_KC_Vest_Kama",
 
             // NVGs
             "BNA_KC_NVG_Chip",
