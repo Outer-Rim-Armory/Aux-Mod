@@ -105,6 +105,23 @@ class BNA_KC_Vest_Engineer_NCO: BNA_KC_Vest_Engineer
     };
 };
 
+class BNA_KC_Vest_Engineer_Officer: BNA_KC_Vest_Engineer
+{
+    displayName = "[KC] ENG Vest 12+ (Officer)";
+
+    model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_Officer.p3d";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_CEE\data\SWLB_CEE_Engineer_Base.paa",
+        "\SWLB_clones\data\officer_accessories_co.paa"
+    };
+
+    class ItemInfo: ItemInfo
+    {
+        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_Officer.p3d";
+    };
+};
+
 class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
 {
     displayName = "[KC] INF Vest 04 (LCPL)";
