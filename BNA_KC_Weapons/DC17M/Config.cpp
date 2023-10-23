@@ -164,7 +164,7 @@ class CfgMagazines
         modelSpecial = "\SWLW_clones_spec\DC17M_magazine_sniper.p3d";
         picture = "\SWLW_clones_spec\data\ui\DC17M_mag_sniper_ui_ca.paa";
 
-        ammo = "Aux12thFleet_Ammo_Sniper_Blue";
+        ammo = "Aux12thFleet_Ammo_DC17M_Sniper";
         count = 5; // 1 rounds per 2 mass
         mass = 10;
         initSpeed = 1250;
@@ -203,6 +203,19 @@ class CfgAmmo
         hit = 23;
         timetolive = 6;
         typicalspeed = 300;
+    };
+
+    class Aux12thFleet_Ammo_Sniper_Blue;
+    class Aux12thFleet_Ammo_DC17M_Sniper: Aux12thFleet_Ammo_Sniper_Blue
+    {
+        caliber = 3;
+        hit = 95;
+        suppressionRadiusBulletClose = 8;
+        suppressionRadiusHit = 10;
+        suppressionRadusBulletClose = 6;
+        suppressionRadusHit = 8;
+        timetolive = 20;
+        typicalspeed = 1250;
     };
 };
 
