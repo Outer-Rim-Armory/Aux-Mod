@@ -48,12 +48,22 @@ class CfgWeapons
             "\SWLB_clones\data\heavy_accessories_co.paa",
             "\SWLB_clones\data\heavy_accessories_co.paa"
         };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Airborne_Light.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_Airborne_CLS: BNA_KC_Vest_Airborne_Light
+    {
+        displayName = "[KC] AB Medic Vest 01+ (CLS)";
+        model = "\SWLB_CEE\data\SWLB_CEE_Airborne_CFR.p3d";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Airborne_CFR.p3d";
         };
     };
 
