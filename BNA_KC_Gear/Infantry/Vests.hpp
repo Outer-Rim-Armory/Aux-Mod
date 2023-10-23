@@ -286,6 +286,12 @@ class BNA_KC_Vest_Commander: BNA_KC_Vest_Officer
     };
 };
 
+class BNA_KC_Vest_Commander_Rank: BNA_KC_Vest_Commander
+{
+    displayName = "[KC] INF Vest 18+ Commander (Rank)";
+    hiddenSelectionsTextures[] = {"\SWLB_clones\data\officer_accessories_co.paa", "\SWLB_clones\data\rank_co.paa"};
+};
+
 class BNA_KC_Vest_Pauldron: BNA_KC_Vest_Officer
 {
     displayName = "[KC] INF Vest XX Pauldron";
