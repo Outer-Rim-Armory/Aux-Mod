@@ -271,3 +271,13 @@ class BNA_KC_Vest_Officer: BNA_KC_Vest_Basic
         };
     };
 };
+
+class BNA_KC_Vest_Pauldron: BNA_KC_Vest_Officer
+{
+    displayName = "[KC] INF Vest XX Pauldron";
+    model = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
+    class ItemInfo: ItemInfo
+    {
+        uniformModel = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
+    };
+};
