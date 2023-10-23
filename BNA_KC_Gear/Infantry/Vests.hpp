@@ -272,11 +272,26 @@ class BNA_KC_Vest_Officer: BNA_KC_Vest_Basic
     };
 };
 
+class BNA_KC_Vest_Commander: BNA_KC_Vest_Officer
+{
+    displayName = "[KC] INF Vest 18+ Commander";
+    model = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
+    hiddenSelections[] = {"camo1", "rank"};
+    hiddenSelectionsTextures[] = {"\SWLB_clones\data\officer_accessories_co.paa", ""};
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_commander_armor_ca.paa";
+
+    class ItemInfo: ItemInfo
+    {
+        uniformModel = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
+    };
+};
+
 class BNA_KC_Vest_Pauldron: BNA_KC_Vest_Officer
 {
     displayName = "[KC] INF Vest XX Pauldron";
     model = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
     hiddenSelectionsTextures[] = {"\SWLB_clones\data\officer_accessories_co.paa"};
+
     class ItemInfo: ItemInfo
     {
         uniformModel = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
