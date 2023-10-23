@@ -18,6 +18,18 @@ class BNA_KC_Vest_Assault: BNA_KC_Vest_Basic
     };
 };
 
+class BNA_KC_Vest_Grenadier: BNA_KC_Vest_Assault
+{
+    displayName = "[KC] INF Vest 01+ Grenadier";
+
+    model = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
+
+    class ItemInfo: ItemInfo
+    {
+        uniformModel = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
+    };
+};
+
 class BNA_KC_Vest_Specialist: BNA_KC_Vest_Assault
 {
     displayName = "[KC] INF Vest 01+ Specialist";
