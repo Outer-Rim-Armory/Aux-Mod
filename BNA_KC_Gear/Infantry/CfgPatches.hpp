@@ -235,6 +235,7 @@ class CfgPatches
             "BNA_KC_Vest_Grenadier",
             "BNA_KC_Vest_Specialist",
             "BNA_KC_Vest_Recon",
+            "BNA_KC_Vest_Engineer",
             "BNA_KC_Vest_LCPL",
             "BNA_KC_Vest_CPL",
             "BNA_KC_Vest_CS",
