@@ -135,7 +135,7 @@ class CfgMagazines
         modelSpecialIsProxy = 1;
         tracersEvery = 1;
 
-        ammo = "Aux12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux12thFleet_Ammo_DC17M_Blaster";
         count = 60; // 6 rounds per 1 mass
         mass = 10;
         initSpeed = 310;
@@ -190,6 +190,19 @@ class CfgMagazines
 
         BNA_KC_DC17M_isBlasterMag = 0;
         BNA_KC_DC17M_isATMag = 1;
+    };
+};
+
+
+class CfgAmmo
+{
+    class Aux12thFleet_Ammo_Rifle_Blue;
+    class Aux12thFleet_Ammo_DC17M_Blaster: Aux12thFleet_Ammo_Rifle_Blue
+    {
+        caliber = 2.4;
+        hit = 23;
+        timetolive = 6;
+        typicalspeed = 300;
     };
 };
 
