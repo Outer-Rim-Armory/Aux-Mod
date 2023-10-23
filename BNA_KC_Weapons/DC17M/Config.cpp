@@ -201,6 +201,8 @@ class CfgAmmo
     {
         caliber = 2.4;
         hit = 23;
+        suppressionRadiusBulletClose = 2;
+        suppressionRadiusHit = 4;
         timetolive = 6;
         typicalspeed = 300;
     };
@@ -212,8 +214,6 @@ class CfgAmmo
         hit = 95;
         suppressionRadiusBulletClose = 8;
         suppressionRadiusHit = 10;
-        suppressionRadusBulletClose = 6;
-        suppressionRadusHit = 8;
         timetolive = 20;
         typicalspeed = 1250;
     };
