@@ -15,6 +15,7 @@ class CfgPatches
         };
         weapons[] =
         {
+            "BNA_KC_Vest_Airborne"
         };
     };
 };
