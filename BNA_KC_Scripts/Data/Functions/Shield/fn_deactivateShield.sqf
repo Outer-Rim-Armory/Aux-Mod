@@ -14,7 +14,7 @@
 
 
 params [["_vehicle", objNull, [objNull]]];
-private ["_hasShield", "_shieldHealth", "_damageHandler", "_regenHandler"];
+private ["_hasShield", "_fullCrew", "_damageHandler", "_regenHandler"];
 
 if (isNull _vehicle) exitWith {};
 
@@ -30,9 +30,10 @@ _regenHandler = _vehicle getVariable ["BNA_KC_Shield_regenHandler", -1];
 // Validate handlers, prevents sending out a false event
 if (_hasShield isEqualTo 0) exitWith {};
 
+_fullCrew = (fullCrew _vehicle) apply {_x#0};
 {
     _x allowDamage true;
-} forEach (fullCrew _vehicle) apply {_x#0};
+} forEach _fullCrew;
 
 _vehicle setVariable ["BNA_KC_Shield_isActive", nil, true];
 _vehicle setVariable ["BNA_KC_Shield_damageHandler", nil, true];
