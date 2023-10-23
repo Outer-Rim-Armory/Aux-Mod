@@ -18,6 +18,8 @@ class CfgWeapons
         scope = 0;
         scopeArsenal = 0;
 
+        picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
+
         class ItemInfo;
     };
 
