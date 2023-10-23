@@ -268,7 +268,7 @@ class BNA_KC_Unit_Ponds: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Ponds.jpg";
 
-    displayName = "[KC 187th] Ponds";
+    displayName = "[187th] Ponds";
     uniformClass = "BNA_KC_Uniform_Ponds";
     hiddenSelectionsTextures[] =
     {
@@ -290,7 +290,7 @@ class BNA_KC_Unit_Ponds: BNA_KC_Unit_Phase2_Base
 
 class BNA_KC_Unit_PondsTrooper: BNA_KC_Unit_Ponds
 {
-    displayName = "[KC 187th] Trooper";
+    displayName = "[187th] Trooper";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\PondsTrooper.jpg";
     uniformClass = "BNA_KC_Uniform_PondsTrooper";
     hiddenSelectionsTextures[] =

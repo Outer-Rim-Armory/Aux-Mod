@@ -823,7 +823,7 @@ class BNA_KC_Helmet_Phase2_Patriot: BNA_KC_Helmet_Phase2_Base
 
 class BNA_KC_Helmet_Phase2_Ponds: BNA_KC_Helmet_Phase2_Base
 {
-    displayName = "[KC 187th] INF P2 Helm ('Ponds')";
+    displayName = "[187th] INF P2 Helm ('Ponds')";
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Ponds.paa",
@@ -833,7 +833,7 @@ class BNA_KC_Helmet_Phase2_Ponds: BNA_KC_Helmet_Phase2_Base
 
 class BNA_KC_Helmet_Phase2_PondsTrooper: BNA_KC_Helmet_Phase2_Base
 {
-    displayName = "[KC 187th] INF P2 Helm";
+    displayName = "[187th] INF P2 Helm";
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_PondsTrooper.paa",
