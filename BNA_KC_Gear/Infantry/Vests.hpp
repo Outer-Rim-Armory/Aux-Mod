@@ -29,6 +29,27 @@ class BNA_KC_Vest_Specialist: BNA_KC_Vest_Assault
     };
 };
 
+class BNA_KC_Vest_Recon: BNA_KC_Vest_Basic
+{
+    displayName = "[KC] INF Vest XX Recon";
+
+    model = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+    hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "",
+        "\SWLB_clones\data\heavy_accessories_co.paa"
+    };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_armor_ca.paa";
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
+        uniformModel = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
+    };
+};
+
 class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
 {
     displayName = "[KC] INF Vest 04 (LCPL)";
