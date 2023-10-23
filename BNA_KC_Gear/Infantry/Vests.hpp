@@ -1,3 +1,23 @@
+class BNA_KC_Vest_Assault: BNA_KC_Vest_Basic
+{
+    displayName = "[KC] INF Vest 01+ Assault";
+
+    model = "\SWLB_clones\SWLB_clone_assault_armor.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\light_accessories_co.paa",
+        "\SWLB_clones\data\heavy_accessories_co.paa"
+    };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"camo1", "camo2"};
+        uniformModel = "\SWLB_clones\SWLB_clone_assault_armor.p3d";
+    };
+};
+
 class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
 {
     displayName = "[KC] INF Vest 04 (LCPL)";
