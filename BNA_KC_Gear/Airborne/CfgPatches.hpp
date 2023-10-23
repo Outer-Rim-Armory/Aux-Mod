@@ -7,8 +7,10 @@ class CfgPatches
         requiredVersion = 1;
         requiredAddons[] =
         {
-            "BNA_KC_Gear_Infantry"
+            "BNA_KC_Gear_Infantry",
                 // Base helmet, uniform, etc.
+            "LS_units_clones"
+                // Vest models
         };
         units[] =
         {
