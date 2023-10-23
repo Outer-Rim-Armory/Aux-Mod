@@ -136,6 +136,29 @@ class CfgWeapons
             uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_tech_armor.p3d";
         };
     };
+
+    // ┌──────────────────┐
+    // │       NVGs       │
+    // └──────────────────┘
+    class BNA_KC_NVG_Chip;
+    class BNA_KC_NVG_Katarn_Visor: BNA_KC_NVG_Chip
+    {
+        displayName = "[KC] SF Katarn I Visor";
+        model = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
+        hiddenSelections[] = {"illum", "camo1"};
+        hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        hiddenSelectionsTextures[] = {"\SWLB_clones_spec\data\helmet_co.paa", "\SWLB_clones_spec\data\helmet_co.paa"};
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_ca.paa";
+    };
+
+    class BNA_KC_NVG_Katarn_Antenna: BNA_KC_NVG_Chip
+    {
+        displayName = "[KC] SF Katarn I Antenna";
+        model = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\SWLB_clones_spec\data\helmet_co.paa"};
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_antenna_ca.paa";
+    };
 };
 
 
