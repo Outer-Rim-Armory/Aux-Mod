@@ -32,6 +32,8 @@ class CfgWeapons
 
         canShootInWater = 1;
 
+        hiddenSelectionsTextures[] = {"\BNA_KC_Weapons\DC15SA\Data\Textures\DC15SA.paa"};
+
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 1;
