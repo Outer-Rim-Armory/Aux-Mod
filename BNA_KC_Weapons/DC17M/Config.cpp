@@ -100,7 +100,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot_Rail
             {
-                compatibleItems[]  =
+                compatibleItems[] =
                 {
                     "acc_pointer_ir",
                     "ace_acc_pointer_green",
