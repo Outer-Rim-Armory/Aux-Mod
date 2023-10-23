@@ -35,6 +35,19 @@ class CfgWeapons
             uniformModel = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
         };
     };
+
+    class BNA_KC_Vest_Airborne_NCO: BNA_KC_Vest_Airborne
+    {
+        displayName = "[KC] AB Vest 04+ (NCO)";
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa",
+            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\SWLB_clones\data\heavy_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
+    };
 };
 
 

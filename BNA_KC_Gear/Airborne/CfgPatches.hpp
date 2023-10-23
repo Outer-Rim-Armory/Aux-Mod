@@ -15,7 +15,9 @@ class CfgPatches
         };
         weapons[] =
         {
-            "BNA_KC_Vest_Airborne"
+            // Vests
+            "BNA_KC_Vest_Airborne",
+            "BNA_KC_Vest_Airborne_NCO"
         };
     };
 };
