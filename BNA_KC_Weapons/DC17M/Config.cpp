@@ -73,6 +73,7 @@ class CfgWeapons
             {
                 compatibleItems[] =
                 {
+                    "SWLW_attachment_scope_DC17M_sniper",
                     // Short
                     "Aux501_cows_RCO",
                     "Aux501_cows_RCO_2",
