@@ -6,10 +6,17 @@ class PointerSlot_Rail;
 class CfgWeapons
 {
     class BNA_KC_Stun_Muzzle;
-    class SWLW_rifle_base;
-    class SWLW_DC17M: SWLW_rifle_base
+    class Rifle_Long_Base_F;
+    class SWLW_rifle_base: Rifle_Long_Base_F
     {
         class WeaponSlotsInfo;
+    };
+    class SWLW_DC17M: SWLW_rifle_base
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
         class FullAuto;
         class Single;
     };
@@ -61,6 +68,33 @@ class CfgWeapons
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] =
+                {
+                    // Short
+                    "Aux501_cows_RCO",
+                    "Aux501_cows_RCO_2",
+                    "Aux501_cows_RCO_3",
+                    // Medium
+                    "Aux501_cows_MRCO",
+                    "Aux501_cows_MRCO_2",
+                    "Aux501_cows_MRCO_3",
+                    // Long
+                    "Aux501_cows_DMS",
+                    "Aux501_cows_DMS_2",
+                    "Aux501_cows_DMS_3",
+                    "Aux501_cows_DMS_4",
+                    "Aux501_cows_HoloScope",
+                    "Aux501_cows_HoloScope_2",
+                    "Aux501_cows_HoloScope_3",
+                    // Sights
+                    "Aux501_cows_reflex_optic",
+                    "Aux501_cows_Holosight",
+                    "Aux501_cows_Holosight_2",
+                    "Aux501_cows_Holosight_3"
+                };
+            };
             class PointerSlot: PointerSlot_Rail
             {
                 compatibleItems[]  =
