@@ -53,6 +53,8 @@ class CfgWeapons
         fireLightIntensity = 0.2;
         flashSize = 0.5;
 
+        modelOptics = "";
+
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 1;
