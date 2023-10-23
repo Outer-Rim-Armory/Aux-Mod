@@ -54,6 +54,15 @@ _vehicle addEventHandler
     }
 ];
 
+_vehicle addEventHandler
+[
+    "GetOut",
+    {
+        params ["_vehicle", "_role", "_unit", "_turret", "_isEject"];
+        _unit allowDamage true;
+    }
+];
+
 _vehicle setVariable
 [
     "BNA_KC_Shield_damageHandler",

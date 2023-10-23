@@ -36,6 +36,10 @@ _shieldHealth =
     BASE_SHIELD_HEALTH
 ] call BIS_fnc_returnConfigEntry;
 
+{
+    _x allowDamage false;
+} forEach (fullCrew _vehicle) apply {_x#0};
+
 _vehicle setVariable ["BNA_KC_Shield_isActive", true, true];
 if (_vehicle getVariable ["BNA_KC_Shield_health", -1] isEqualTo -1) then
 {

@@ -30,6 +30,10 @@ _regenHandler = _vehicle getVariable ["BNA_KC_Shield_regenHandler", -1];
 // Validate handlers, prevents sending out a false event
 if (_hasShield isEqualTo 0) exitWith {};
 
+{
+    _x allowDamage true;
+} forEach (fullCrew _vehicle) apply {_x#0};
+
 _vehicle setVariable ["BNA_KC_Shield_isActive", nil, true];
 _vehicle setVariable ["BNA_KC_Shield_damageHandler", nil, true];
 
