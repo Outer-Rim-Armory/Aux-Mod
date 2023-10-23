@@ -256,4 +256,9 @@ class CfgEditorSubcategories
     {
         displayName = "Spec Ops";
     };
+
+    class BNA_KC_SubCat_CIS_Tanks: BNA_KC_SubCat_CIS_Infantry
+    {
+        displayName = "Tanks";
+    };
 };
