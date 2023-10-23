@@ -19,6 +19,7 @@ class CfgPatches
         {
             // Vests
             "BNA_KC_Vest_Airborne",
+            "BNA_KC_Vest_Airborne_Light",
             "BNA_KC_Vest_Airborne_NCO",
             "BNA_KC_Vest_Airborne_Officer"
         };

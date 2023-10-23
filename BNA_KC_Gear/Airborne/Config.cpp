@@ -36,6 +36,27 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Vest_Airborne_Light: BNA_KC_Vest_Airborne
+    {
+        displayName = "[KC] AB Vest 01+ (Trooper, Light)";
+        model = "\SWLB_CEE\data\SWLB_CEE_Airborne_Light.p3d";
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\SWLB_clones\data\heavy_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Airborne_Light.p3d";
+        };
+    };
+
     class BNA_KC_Vest_Airborne_NCO: BNA_KC_Vest_Airborne
     {
         displayName = "[KC] AB Vest 04+ (NCO)";
