@@ -60,7 +60,6 @@ class CfgWeapons
         fireLightIntensity = 0.2;
         flashSize = 0.5;
 
-        modelOptics = "";
         hiddenSelectionsTextures[] = {"\BNA_KC_Weapons\DC17M\Data\Textures\DC17M.paa"};
         picture = "\BNA_KC_Weapons\DC17M\Data\Textures\UI\DC17M_UI.paa";
 
