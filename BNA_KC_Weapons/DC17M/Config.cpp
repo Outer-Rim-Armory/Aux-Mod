@@ -74,24 +74,14 @@ class CfgWeapons
                 compatibleItems[] =
                 {
                     "SWLW_attachment_scope_DC17M_sniper",
-                    // Short
-                    "Aux501_cows_RCO",
-                    "Aux501_cows_RCO_2",
-                    "Aux501_cows_RCO_3",
                     // Medium
                     "Aux501_cows_MRCO",
                     "Aux501_cows_MRCO_2",
                     "Aux501_cows_MRCO_3",
-                    // Long
-                    "Aux501_cows_DMS",
-                    "Aux501_cows_DMS_2",
-                    "Aux501_cows_DMS_3",
-                    "Aux501_cows_DMS_4",
                     "Aux501_cows_HoloScope",
                     "Aux501_cows_HoloScope_2",
                     "Aux501_cows_HoloScope_3",
                     // Sights
-                    "Aux501_cows_reflex_optic",
                     "Aux501_cows_Holosight",
                     "Aux501_cows_Holosight_2",
                     "Aux501_cows_Holosight_3"
