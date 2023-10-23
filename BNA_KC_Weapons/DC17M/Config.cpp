@@ -183,7 +183,7 @@ class CfgMagazines
         modelSpecial = "\SWLW_clones_spec\DC17M_magazine_at.p3d";
         picture = "\SWLW_clones_spec\data\ui\DC17M_mag_at_ui_ca.paa";
 
-        ammo = "Aux12thFleet_Ammo_40mm_AT";
+        ammo = "Aux12thFleet_Ammo_DC17M_40mm_AT";
         count = 1; // 1 rounds per 20 mass
         mass = 20;
         initSpeed = 510;
@@ -216,6 +216,13 @@ class CfgAmmo
         suppressionRadiusHit = 10;
         timetolive = 20;
         typicalspeed = 1250;
+    };
+
+    class Aux12thFleet_Ammo_40mm_AT;
+    class Aux12thFleet_Ammo_DC17M_40mm_AT: Aux12thFleet_Ammo_40mm_AT
+    {
+        caliber = 100;
+        hit = 1000;
     };
 };
 

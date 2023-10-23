@@ -181,6 +181,7 @@ class CfgAmmo
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
+        craterWaterEffects = "ImpactEffectsWaterExplosion";
 
         hit = 800;
         typicalSpeed = 1550;
