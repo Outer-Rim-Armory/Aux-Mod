@@ -74,6 +74,7 @@ class CfgWeapons
         {
             hiddenSelections[] = {};
             uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_basic_armor.p3d";
+            containerClass = "Supply300";
         };
     };
 
@@ -187,6 +188,7 @@ class CfgVehicles
             "\SWLB_clones_spec\backpacks\data\backpack_co.paa"
         };
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
+        maximumLoad = 450;
     };
 
     class BNA_KC_Backack_Katarn_EOD: BNA_KC_Backack_Katarn
