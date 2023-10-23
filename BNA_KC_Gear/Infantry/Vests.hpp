@@ -18,6 +18,17 @@ class BNA_KC_Vest_Assault: BNA_KC_Vest_Basic
     };
 };
 
+class BNA_KC_Vest_Specialist: BNA_KC_Vest_Assault
+{
+    displayName = "[KC] INF Vest 01+ Specialist";
+    model = "\SWLB_clones\SWLB_clone_specialist_armor.p3d";
+
+    class ItemInfo: ItemInfo
+    {
+        uniformModel = "\SWLB_clones\SWLB_clone_specialist_armor.p3d";
+    };
+};
+
 class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
 {
     displayName = "[KC] INF Vest 04 (LCPL)";
