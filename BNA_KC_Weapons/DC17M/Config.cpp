@@ -138,7 +138,8 @@ class CfgMagazines
         ammo = "Aux12thFleet_Ammo_Rifle_Blue";
         count = 60; // 6 rounds per 1 mass
         mass = 10;
-        initSpeed = 500;
+        initSpeed = 310;
+        maxLeadSpeed = 25;
 
         BNA_KC_DC17M_isBlasterMag = 1;
 
@@ -166,7 +167,7 @@ class CfgMagazines
         ammo = "Aux12thFleet_Ammo_Sniper_Blue";
         count = 5; // 1 rounds per 2 mass
         mass = 10;
-        initSpeed = 1100;
+        initSpeed = 1250;
 
         BNA_KC_DC17M_isBlasterMag = 0;
         BNA_KC_DC17M_isSniperMag = 1;
@@ -183,9 +184,9 @@ class CfgMagazines
         picture = "\SWLW_clones_spec\data\ui\DC17M_mag_at_ui_ca.paa";
 
         ammo = "Aux12thFleet_Ammo_40mm_AT";
-        count = 1; // 1 rounds per 15 mass
-        mass = 15;
-        initSpeed = 900;
+        count = 1; // 1 rounds per 20 mass
+        mass = 20;
+        initSpeed = 510;
 
         BNA_KC_DC17M_isBlasterMag = 0;
         BNA_KC_DC17M_isATMag = 1;
