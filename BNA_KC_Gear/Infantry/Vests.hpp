@@ -82,6 +82,29 @@ class BNA_KC_Vest_Engineer: BNA_KC_Vest_Basic
     };
 };
 
+class BNA_KC_Vest_Engineer_NCO: BNA_KC_Vest_Engineer
+{
+    displayName = "[KC] ENG Vest 04+ (NCO)";
+
+    model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_NCO.p3d";
+    hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\light_accessories_co.paa",
+        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\SWLB_clones\data\officer_accessories_co.paa",
+        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\SWLB_CEE\data\SWLB_CEE_Engineer_Base.paa",
+        "\SWLB_clones\data\arc_accessories_co.paa"
+    };
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
+        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_NCO.p3d";
+    };
+};
+
 class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
 {
     displayName = "[KC] INF Vest 04 (LCPL)";
