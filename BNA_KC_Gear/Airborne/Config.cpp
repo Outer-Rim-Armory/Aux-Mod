@@ -48,6 +48,28 @@ class CfgWeapons
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
     };
+
+    class BNA_KC_Vest_Airborne_Officer: BNA_KC_Vest_Airborne
+    {
+        displayName = "[KC] AB Vest 12+ (Officer)";
+        model = "\ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "camo3", "pauldron"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_core\data\common_textures\accessories\heavy_accessories_co.paa",
+            "\SWLB_core\data\common_textures\accessories\heavy_accessories_co.paa",
+            "\SWLB_core\data\common_textures\accessories\officer_accessories_co.paa",
+            "\SWLB_core\data\common_textures\accessories\officer_accessories_co.paa",
+            "\SWLB_core\data\common_textures\accessories\officer_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"ammo", "camo1", "camo2", "camo3", "pauldron"};
+            uniformModel = "\ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
+        };
+    };
 };
 
 
