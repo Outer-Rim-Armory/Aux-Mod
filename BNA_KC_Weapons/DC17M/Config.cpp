@@ -61,6 +61,7 @@ class CfgWeapons
         flashSize = 0.5;
 
         modelOptics = "";
+        hiddenSelectionsTextures[] = {"\BNA_KC_Weapons\DC17M\Data\Textures\Main.paa"};
 
         // JLTS emp system
         JLTS_hasElectronics = 1;
@@ -164,7 +165,7 @@ class CfgMagazines
 
         model = "\SWLW_clones_spec\DC17M_magazine_blaster.p3d";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"\SWLW_clones_spec\data\DC17M_co.paa"};
+        hiddenSelectionsTextures[] = {"\BNA_KC_Weapons\DC17M\Data\Textures\Main.paa"};
         picture = "\SWLW_clones_spec\data\ui\DC17M_mag_blaster_ui_ca.paa";
 
         modelSpecial = "\SWLW_clones_spec\DC17M_magazine_blaster.p3d";
