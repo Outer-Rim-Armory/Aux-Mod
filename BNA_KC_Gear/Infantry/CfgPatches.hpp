@@ -231,6 +231,17 @@ class CfgPatches
 
             // Vests
             "BNA_KC_Vest_Basic",
+            "BNA_KC_Vest_Assault",
+            "BNA_KC_Vest_Grenadier",
+            "BNA_KC_Vest_Heavy",
+            "BNA_KC_Vest_Heavy_v2",
+            "BNA_KC_Vest_Specialist",
+            "BNA_KC_Vest_Recon",
+            "BNA_KC_Vest_Recon_Survival",
+            "BNA_KC_Vest_Hazard",
+            "BNA_KC_Vest_Engineer",
+            "BNA_KC_Vest_Engineer_NCO",
+            "BNA_KC_Vest_Engineer_Officer",
             "BNA_KC_Vest_LCPL",
             "BNA_KC_Vest_CPL",
             "BNA_KC_Vest_CS",
@@ -244,6 +255,12 @@ class CfgPatches
             "BNA_KC_Vest_Medic_Senior_v2",
             "BNA_KC_Vest_Medic_Platoon",
             "BNA_KC_Vest_Officer",
+            "BNA_KC_Vest_Officer_v2",
+            "BNA_KC_Vest_Commander",
+            "BNA_KC_Vest_Commander_v2",
+            "BNA_KC_Vest_Pauldron",
+            "BNA_KC_Vest_Kama",
+            "BNA_KC_Vest_Tactical_Commander",
 
             // NVGs
             "BNA_KC_NVG_Chip",

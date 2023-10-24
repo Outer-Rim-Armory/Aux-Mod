@@ -6,10 +6,17 @@ class PointerSlot_Rail;
 class CfgWeapons
 {
     class BNA_KC_Stun_Muzzle;
-    class SWLW_rifle_base;
-    class SWLW_DC17M: SWLW_rifle_base
+    class Rifle_Long_Base_F;
+    class SWLW_rifle_base: Rifle_Long_Base_F
     {
         class WeaponSlotsInfo;
+    };
+    class SWLW_DC17M: SWLW_rifle_base
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
         class FullAuto;
         class Single;
     };
@@ -53,15 +60,36 @@ class CfgWeapons
         fireLightIntensity = 0.2;
         flashSize = 0.5;
 
+        hiddenSelectionsTextures[] = {"\BNA_KC_Weapons\DC17M\Data\Textures\DC17M.paa"};
+        picture = "\BNA_KC_Weapons\DC17M\Data\Textures\UI\DC17M_UI.paa";
+
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 1;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] =
+                {
+                    "SWLW_attachment_scope_DC17M_sniper",
+                    // Medium
+                    "Aux501_cows_MRCO",
+                    "Aux501_cows_MRCO_2",
+                    "Aux501_cows_MRCO_3",
+                    "Aux501_cows_HoloScope",
+                    "Aux501_cows_HoloScope_2",
+                    "Aux501_cows_HoloScope_3",
+                    // Sights
+                    "Aux501_cows_Holosight",
+                    "Aux501_cows_Holosight_2",
+                    "Aux501_cows_Holosight_3"
+                };
+            };
             class PointerSlot: PointerSlot_Rail
             {
-                compatibleItems[]  =
+                compatibleItems[] =
                 {
                     "acc_pointer_ir",
                     "ace_acc_pointer_green",
@@ -72,7 +100,7 @@ class CfgWeapons
 
         class FullAuto: FullAuto
         {
-            dispersion = 0.00029;
+            dispersion = 0.015;
             class StandardSound
             {
                 soundSetShot[] = {"BNA_KC_SoundSet_DC17M_FullAuto"};
@@ -81,7 +109,7 @@ class CfgWeapons
         };
         class Single: Single
         {
-            dispersion = 0.00029;
+            dispersion = 0.0001;
             class StandardSound
             {
                 soundSetShot[] = {"BNA_KC_SoundSet_DC17M_Single"};
@@ -128,17 +156,18 @@ class CfgMagazines
 
         model = "\SWLW_clones_spec\DC17M_magazine_blaster.p3d";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"\SWLW_clones_spec\data\DC17M_co.paa"};
+        hiddenSelectionsTextures[] = {"\BNA_KC_Weapons\DC17M\Data\Textures\DC17M.paa"};
         picture = "\SWLW_clones_spec\data\ui\DC17M_mag_blaster_ui_ca.paa";
 
         modelSpecial = "\SWLW_clones_spec\DC17M_magazine_blaster.p3d";
         modelSpecialIsProxy = 1;
         tracersEvery = 1;
 
-        ammo = "Aux12thFleet_Ammo_Rifle_Blue";
+        ammo = "Aux12thFleet_Ammo_DC17M_Blaster";
         count = 60; // 6 rounds per 1 mass
         mass = 10;
-        initSpeed = 500;
+        initSpeed = 310;
+        maxLeadSpeed = 25;
 
         BNA_KC_DC17M_isBlasterMag = 1;
 
@@ -163,10 +192,10 @@ class CfgMagazines
         modelSpecial = "\SWLW_clones_spec\DC17M_magazine_sniper.p3d";
         picture = "\SWLW_clones_spec\data\ui\DC17M_mag_sniper_ui_ca.paa";
 
-        ammo = "Aux12thFleet_Ammo_Sniper_Blue";
+        ammo = "Aux12thFleet_Ammo_DC17M_Sniper";
         count = 5; // 1 rounds per 2 mass
         mass = 10;
-        initSpeed = 1100;
+        initSpeed = 1250;
 
         BNA_KC_DC17M_isBlasterMag = 0;
         BNA_KC_DC17M_isSniperMag = 1;
@@ -182,13 +211,46 @@ class CfgMagazines
         modelSpecial = "\SWLW_clones_spec\DC17M_magazine_at.p3d";
         picture = "\SWLW_clones_spec\data\ui\DC17M_mag_at_ui_ca.paa";
 
-        ammo = "Aux12thFleet_Ammo_40mm_AT";
-        count = 1; // 1 rounds per 15 mass
-        mass = 15;
-        initSpeed = 900;
+        ammo = "Aux12thFleet_Ammo_DC17M_40mm_AT";
+        count = 1; // 1 rounds per 20 mass
+        mass = 20;
+        initSpeed = 510;
 
         BNA_KC_DC17M_isBlasterMag = 0;
         BNA_KC_DC17M_isATMag = 1;
+    };
+};
+
+
+class CfgAmmo
+{
+    class Aux12thFleet_Ammo_Rifle_Blue;
+    class Aux12thFleet_Ammo_DC17M_Blaster: Aux12thFleet_Ammo_Rifle_Blue
+    {
+        caliber = 2.4;
+        hit = 23;
+        suppressionRadiusBulletClose = 2;
+        suppressionRadiusHit = 4;
+        timetolive = 6;
+        typicalspeed = 300;
+    };
+
+    class Aux12thFleet_Ammo_Sniper_Blue;
+    class Aux12thFleet_Ammo_DC17M_Sniper: Aux12thFleet_Ammo_Sniper_Blue
+    {
+        caliber = 3;
+        hit = 95;
+        suppressionRadiusBulletClose = 8;
+        suppressionRadiusHit = 10;
+        timetolive = 20;
+        typicalspeed = 1250;
+    };
+
+    class Aux12thFleet_Ammo_40mm_AT;
+    class Aux12thFleet_Ammo_DC17M_40mm_AT: Aux12thFleet_Ammo_40mm_AT
+    {
+        caliber = 100;
+        hit = 1000;
     };
 };
 

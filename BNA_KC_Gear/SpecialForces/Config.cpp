@@ -271,6 +271,108 @@ class CfgWeapons
             "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
         };
     };
+
+    class BNA_KC_Vest_ARC_v2: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] SF ARC Vest (v2)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Commander.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa",
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Commander.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_ARF: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] SF ARF Vest";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2", "camo3"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_ForceRecon: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] SF XX Vest (Force Recon)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
+            "\SWLB_clones\data\light_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_ForceRecon_NCO: BNA_KC_Vest_ForceRecon
+    {
+        displayName = "[KC] SF XX Vest (Force Recon NCO)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2", "camo3"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_ForceRecon_Officer: BNA_KC_Vest_ForceRecon
+    {
+        displayName = "[KC] SF XX Vest (Force Recon Officer)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Officer.p3d";
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Officer.p3d";
+        };
+    };
 };
 
 
