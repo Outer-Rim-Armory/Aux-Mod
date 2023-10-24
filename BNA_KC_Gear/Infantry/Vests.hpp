@@ -1,6 +1,6 @@
 class BNA_KC_Vest_Assault: BNA_KC_Vest_Basic
 {
-    displayName = "[KC] INF Vest 01+ Assault";
+    displayName = "[KC] INF Vest 01+ (Assault)";
 
     model = "\SWLB_clones\SWLB_clone_assault_armor.p3d";
     hiddenSelections[] = {"camo1", "camo2"};
@@ -20,7 +20,7 @@ class BNA_KC_Vest_Assault: BNA_KC_Vest_Basic
 
 class BNA_KC_Vest_Grenadier: BNA_KC_Vest_Assault
 {
-    displayName = "[KC] INF Vest 01+ Grenadier";
+    displayName = "[KC] INF Vest 01+ (Grenadier)";
 
     model = "\SWLB_clones\SWLB_clone_grenadier_armor.p3d";
 
@@ -32,7 +32,7 @@ class BNA_KC_Vest_Grenadier: BNA_KC_Vest_Assault
 
 class BNA_KC_Vest_Specialist: BNA_KC_Vest_Assault
 {
-    displayName = "[KC] INF Vest 01+ Specialist";
+    displayName = "[KC] INF Vest 01+ (Specialist)";
     model = "\SWLB_clones\SWLB_clone_specialist_armor.p3d";
 
     class ItemInfo: ItemInfo
@@ -43,7 +43,7 @@ class BNA_KC_Vest_Specialist: BNA_KC_Vest_Assault
 
 class BNA_KC_Vest_Recon: BNA_KC_Vest_Basic
 {
-    displayName = "[KC] INF Vest XX Recon";
+    displayName = "[KC] INF Vest XX (Recon)";
 
     model = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
     hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
@@ -405,7 +405,7 @@ class BNA_KC_Vest_Commander_v2: BNA_KC_Vest_Commander
 
 class BNA_KC_Vest_Pauldron: BNA_KC_Vest_Officer
 {
-    displayName = "[KC] INF Vest XX Pauldron";
+    displayName = "[KC] INF Vest XX (Pauldron)";
     model = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
     hiddenSelectionsTextures[] = {"\SWLB_clones\data\officer_accessories_co.paa"};
 
@@ -417,7 +417,7 @@ class BNA_KC_Vest_Pauldron: BNA_KC_Vest_Officer
 
 class BNA_KC_Vest_Kama: BNA_KC_Vest_Officer
 {
-    displayName = "[KC] INF Vest XX Kama";
+    displayName = "[KC] INF Vest XX (Kama)";
     model = "\SWLB_clones\SWLB_clone_kama_armor.p3d";
     hiddenSelections[] = {"camo1", "rank"};
     hiddenSelectionsTextures[] = {"\SWLB_clones\data\officer_accessories_co.paa", ""};
@@ -432,7 +432,7 @@ class BNA_KC_Vest_Kama: BNA_KC_Vest_Officer
 
 class BNA_KC_Vest_Tactical_Commander: BNA_KC_Vest_Officer
 {
-    displayName = "[KC] INF Vest XX Kama";
+    displayName = "[KC] INF Vest XX (Tactical Commander)";
     model = "\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
     hiddenSelections[] = {"camo1", "camo2", "pauldron"};
     hiddenSelectionsTextures[] =
