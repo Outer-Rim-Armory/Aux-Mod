@@ -352,7 +352,7 @@ class BNA_KC_Vest_Officer_v2: BNA_KC_Vest_Officer
 
 class BNA_KC_Vest_Commander: BNA_KC_Vest_Officer
 {
-    displayName = "[KC] INF Vest 18+ Commander";
+    displayName = "[KC] INF Vest 18+ (Commander)";
     model = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
     hiddenSelections[] = {"camo1", "rank"};
     hiddenSelectionsTextures[] = {"\SWLB_clones\data\officer_accessories_co.paa", ""};
@@ -364,9 +364,9 @@ class BNA_KC_Vest_Commander: BNA_KC_Vest_Officer
     };
 };
 
-class BNA_KC_Vest_Commander_Rank: BNA_KC_Vest_Commander
+class BNA_KC_Vest_Commander_v2: BNA_KC_Vest_Commander
 {
-    displayName = "[KC] INF Vest 18+ Commander (Rank)";
+    displayName = "[KC] INF Vest 18+ (Commander, v2)";
     hiddenSelectionsTextures[] = {"\SWLB_clones\data\officer_accessories_co.paa", "\SWLB_clones\data\rank_co.paa"};
 };
 
