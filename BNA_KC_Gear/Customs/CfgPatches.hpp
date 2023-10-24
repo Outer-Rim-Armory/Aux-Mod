@@ -8,9 +8,12 @@ class CfgPatches
         requiredAddons[] =
         {
             "BNA_KC_Gear_Infantry",
+            "BNA_KC_Gear_Airborne",
             "BNA_KC_Gear_Armored",
             "BNA_KC_Gear_Aviation",
-            "BNA_KC_Gear_SpecialForces"
+            "BNA_KC_Gear_Commandos",
+            "BNA_KC_Gear_SpecialForces",
+            "BNA_KC_Gear_Jedi"
         };
         units[] =
         {
