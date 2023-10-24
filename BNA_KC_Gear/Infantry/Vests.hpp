@@ -30,6 +30,29 @@ class BNA_KC_Vest_Grenadier: BNA_KC_Vest_Assault
     };
 };
 
+class BNA_KC_Vest_Heavy: BNA_KC_Vest_Basic
+{
+    displayName = "[KC] INF Vest 01+ (Heavy)";
+
+    model = "\ls_armor_bluefor\vest\gar\heavy\ls_gar_heavy_vest.p3d";
+    hiddenSelections[] = {"ammo", "camo1", "camo2", "camo3", "pauldron"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\SWLB_clones\data\light_accessories_co.paa",
+        "\SWLB_clones\data\heavy_accessories_co.paa"
+    };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "camo3", "pauldron"};
+        uniformModel = "\ls_armor_bluefor\vest\gar\heavy\ls_gar_heavy_vest.p3d";
+    };
+};
+
 class BNA_KC_Vest_Specialist: BNA_KC_Vest_Assault
 {
     displayName = "[KC] INF Vest 01+ (Specialist)";
