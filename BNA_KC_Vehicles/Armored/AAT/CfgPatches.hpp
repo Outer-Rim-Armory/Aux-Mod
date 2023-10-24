@@ -16,7 +16,10 @@ class CfgPatches
             "JLTS_characters_DroidArmor",
                 // Crew Unit
         };
-        units[] = {};
+        units[] =
+        {
+            "BNA_KC_AAT"
+        };
         weapons[] = {};
     };
 };
