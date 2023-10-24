@@ -312,6 +312,24 @@ class CfgWeapons
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
         };
     };
+
+    class BNA_KC_Vest_ForceRecon_Officer: BNA_KC_Vest_ForceRecon
+    {
+        displayName = "[KC] SF XX Vest (Force Recon Officer)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Officer.p3d";
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Officer.p3d";
+        };
+    };
 };
 
 
