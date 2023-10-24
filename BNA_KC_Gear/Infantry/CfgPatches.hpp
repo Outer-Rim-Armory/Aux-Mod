@@ -251,6 +251,7 @@ class CfgPatches
             "BNA_KC_Vest_Medic_Senior_v2",
             "BNA_KC_Vest_Medic_Platoon",
             "BNA_KC_Vest_Officer",
+            "BNA_KC_Vest_Officer_v2",
             "BNA_KC_Vest_Commander",
             "BNA_KC_Vest_Commander_Rank",
             "BNA_KC_Vest_Pauldron",

@@ -332,6 +332,24 @@ class BNA_KC_Vest_Officer: BNA_KC_Vest_Basic
     };
 };
 
+class BNA_KC_Vest_Officer_v2: BNA_KC_Vest_Officer
+{
+    displayName = "[KC] INF Vest 18+ (Officer, v2)";
+    model = "\SWLB_CEE\data\SWLB_CEE_Officer_Tactical.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\officer_accessories_co.paa",
+        "\SWLB_clones\data\light_accessories_co.paa"
+    };
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"camo1", "camo2"};
+        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Officer_Tactical.p3d";
+    };
+};
+
 class BNA_KC_Vest_Commander: BNA_KC_Vest_Officer
 {
     displayName = "[KC] INF Vest 18+ Commander";
