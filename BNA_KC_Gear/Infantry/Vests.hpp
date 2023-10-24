@@ -62,6 +62,29 @@ class BNA_KC_Vest_Recon: BNA_KC_Vest_Basic
     };
 };
 
+class BNA_KC_Vest_Recon_Survival: BNA_KC_Vest_Recon
+{
+    displayName = "[KC] INF Vest XX (Recon, Survival)";
+
+    model = "\SWLB_CEE\data\SWLB_CEE_Recon_Survival.p3d";
+    hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\SWLB_clones\data\light_accessories_co.paa",
+        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\SWLB_clones\data\mc_camo1_co.paa"
+    };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Survival.p3d";
+    };
+};
+
 class BNA_KC_Vest_Engineer: BNA_KC_Vest_Basic
 {
     displayName = "[KC] ENG Vest 01+ (Engineer)";
