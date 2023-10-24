@@ -395,3 +395,23 @@ class BNA_KC_Vest_Kama: BNA_KC_Vest_Officer
         uniformModel = "\SWLB_clones\SWLB_clone_kama_armor.p3d";
     };
 };
+
+class BNA_KC_Vest_Tactical_Commander: BNA_KC_Vest_Officer
+{
+    displayName = "[KC] INF Vest XX Kama";
+    model = "\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
+    hiddenSelections[] = {"camo1", "camo2", "pauldron"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\officer_accessories_co.paa",
+        "\SWLB_clones\data\light_accessories_co.paa",
+        "\SWLB_clones\data\heavy_accessories_co.paa"
+    };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"camo1", "camo2", "pauldron"};
+        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Tactical_Commander.p3d";
+    };
+};

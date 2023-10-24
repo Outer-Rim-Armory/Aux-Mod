@@ -256,6 +256,7 @@ class CfgPatches
             "BNA_KC_Vest_Commander_v2",
             "BNA_KC_Vest_Pauldron",
             "BNA_KC_Vest_Kama",
+            "BNA_KC_Vest_Tactical_Commander",
 
             // NVGs
             "BNA_KC_NVG_Chip",
