@@ -91,7 +91,6 @@ class CfgWeapons
                     "Aux501_cows_HoloScope_2",
                     "Aux501_cows_HoloScope_3",
                     // Sights
-                    "Aux501_cows_reflex_optic",
                     "Aux501_cows_Holosight",
                     "Aux501_cows_Holosight_2",
                     "Aux501_cows_Holosight_3"
