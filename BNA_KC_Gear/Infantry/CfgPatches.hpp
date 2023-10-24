@@ -12,7 +12,6 @@ class CfgPatches
             "ls_armor_bluefor",
                 // P1 and P2 helmets
                 // Engineer Helmet
-                // Airborne Helmet
                 // Insulated Helmet
                 // Basic Uniform
                 // Insulated Uniform
@@ -92,8 +91,6 @@ class CfgPatches
             "BNA_KC_Unit_Phase2_Officer_CamoBrown",
 
             // Engineer Units
-
-            // Airborne Units
 
             // Insulated (Snow) Units
             "BNA_KC_Unit_Insulated_Trooper",
@@ -185,10 +182,6 @@ class CfgPatches
             "BNA_KC_Helmet_Engineer",
             "BNA_KC_Helmet_Engineer_CamoBrown",
             "BNA_KC_Helmet_Engineer_CamoGrey",
-
-            // Airborne
-            "BNA_KC_Helmet_Airborne",
-            "BNA_KC_Helmet_Airborne_v2",
 
             // Insulated (Snow) Helmets
             "BNA_KC_Helmet_Insulated",

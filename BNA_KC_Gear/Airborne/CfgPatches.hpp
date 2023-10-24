@@ -9,6 +9,8 @@ class CfgPatches
         {
             "BNA_KC_Gear_Infantry",
                 // Base helmet, uniform, etc.
+            "ls_armor_bluefor",
+                // Airborne Helmet
             "LS_units_clones"
                 // Vest models
         };
@@ -17,6 +19,10 @@ class CfgPatches
         };
         weapons[] =
         {
+            // Helmets
+            "BNA_KC_Helmet_Airborne",
+            "BNA_KC_Helmet_Airborne_v2",
+
             // Vests
             "BNA_KC_Vest_Airborne",
             "BNA_KC_Vest_Airborne_Light",
