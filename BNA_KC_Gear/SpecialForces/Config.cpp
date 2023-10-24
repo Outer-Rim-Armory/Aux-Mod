@@ -272,6 +272,28 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Vest_ARC_v2: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] SF ARC Vest (v2)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Commander.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa",
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Commander.p3d";
+        };
+    };
+
     class BNA_KC_Vest_ForceRecon: BNA_KC_Vest_Basic
     {
         displayName = "[KC] SF XX Vest (Force Recon)";
