@@ -334,7 +334,7 @@ class BNA_KC_Vest_Officer: BNA_KC_Vest_Basic
 
 class BNA_KC_Vest_Officer_v2: BNA_KC_Vest_Officer
 {
-    displayName = "[KC] INF Vest 18+ (Officer, v2)";
+    displayName = "[KC] INF Vest 12+ (Officer, v2)";
     model = "\SWLB_CEE\data\SWLB_CEE_Officer_Tactical.p3d";
     hiddenSelections[] = {"camo1", "camo2"};
     hiddenSelectionsTextures[] =
