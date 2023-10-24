@@ -223,7 +223,7 @@ class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
     {
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",     // Heavy Strap
         "",                                               // Nothing
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa", // Holster
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa", // Holster
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa"  // Pauldron
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
@@ -242,7 +242,7 @@ class BNA_KC_Vest_CPL: BNA_KC_Vest_LCPL
     {
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
         "",
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CPL.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CPL.paa"
     };
 };
