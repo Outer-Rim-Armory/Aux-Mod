@@ -271,6 +271,26 @@ class CfgWeapons
             "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
         };
     };
+
+    class BNA_KC_Vest_ForceRecon: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] SF XX Vest (Force Recon)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\SWLB_clones\data\light_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
+        };
+    };
 };
 
 

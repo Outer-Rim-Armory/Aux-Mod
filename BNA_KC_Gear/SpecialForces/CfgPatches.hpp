@@ -55,7 +55,8 @@ class CfgPatches
 
             // Vests
             "BNA_KC_Vest_ARC",
-            "BNA_KC_Vest_ARC_Light"
+            "BNA_KC_Vest_ARC_Light",
+            "BNA_KC_Vest_ForceRecon"
         };
     };
 };
