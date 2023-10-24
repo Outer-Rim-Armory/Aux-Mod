@@ -6,8 +6,8 @@ class BNA_KC_Vest_Assault: BNA_KC_Vest_Basic
     hiddenSelections[] = {"camo1", "camo2"};
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\light_accessories_co.paa",
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"
+        "\SWLB_clones\data\light_accessories_co.paa",                 // Suspenders
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa" // Holster
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
 
@@ -118,10 +118,10 @@ class BNA_KC_Vest_Recon_Survival: BNA_KC_Vest_Recon
     hiddenSelections[] = {"camo1", "camo2", /*"holster", "straps",*/ "ammo", "pauldron"};
     hiddenSelectionsTextures[] =
     {
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa", // Chest Strap
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",          // Chest Strap
         "\SWLB_core\data\common_textures\accessories\light_accessories_co.paa", // Side bags / back containers
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa", // Ammo
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"  // Pauldron
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",          // Ammo
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"           // Pauldron
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 
@@ -221,10 +221,10 @@ class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
     hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
     hiddenSelectionsTextures[] =
     {
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",     // Heavy Strap
-        "",                                               // Nothing
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa", // Heavy Strap
+        "",                                                            // Nothing
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa", // Holster
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa"  // Pauldron
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa"               // Pauldron
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 
