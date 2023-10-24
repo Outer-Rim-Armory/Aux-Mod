@@ -132,6 +132,26 @@ class BNA_KC_Vest_Recon_Survival: BNA_KC_Vest_Recon
     };
 };
 
+class BNA_KC_Vest_Hazard: BNA_KC_Vest_Basic
+{
+    displayName = "[KC] INF Vest XX (Hazard)";
+
+    model = "\SWLB_CEE\data\SWLB_CEE_Hazard_Vest.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\light_accessories_co.paa",
+        "\SWLB_clones\data\officer_accessories_co.paa"
+    };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"camo1", "camo2"};
+        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Hazard_Vest.p3d";
+    };
+};
+
 class BNA_KC_Vest_Engineer: BNA_KC_Vest_Basic
 {
     displayName = "[KC] ENG Vest 01+ (Engineer)";

@@ -238,6 +238,7 @@ class CfgPatches
             "BNA_KC_Vest_Specialist",
             "BNA_KC_Vest_Recon",
             "BNA_KC_Vest_Recon_Survival",
+            "BNA_KC_Vest_Hazard",
             "BNA_KC_Vest_Engineer",
             "BNA_KC_Vest_Engineer_NCO",
             "BNA_KC_Vest_Engineer_Officer",
