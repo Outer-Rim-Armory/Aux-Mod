@@ -366,7 +366,7 @@ class CfgWeapons
             "\SWLB_clones\data\light_accessories_co.paa",
             "\SWLB_clones\data\officer_accessories_co.paa"
         };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
 
         class ItemInfo: ItemInfo
         {

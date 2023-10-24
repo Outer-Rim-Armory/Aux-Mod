@@ -143,7 +143,7 @@ class BNA_KC_Vest_Hazard: BNA_KC_Vest_Basic
         "\SWLB_clones\data\light_accessories_co.paa",
         "\SWLB_clones\data\officer_accessories_co.paa"
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 
     class ItemInfo: ItemInfo
     {
@@ -205,6 +205,7 @@ class BNA_KC_Vest_Engineer_Officer: BNA_KC_Vest_Engineer
         "\SWLB_CEE\data\SWLB_CEE_Engineer_Base.paa",
         "\SWLB_clones\data\officer_accessories_co.paa"
     };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
 
     class ItemInfo: ItemInfo
     {
@@ -336,6 +337,7 @@ class BNA_KC_Vest_Medic_Senior: BNA_KC_Vest_Medic
         "",                                                // Airborne thing
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic.paa"  // Pauldron
     };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
 };
 
 class BNA_KC_Vest_Medic_v2: BNA_KC_Vest_Medic
@@ -355,6 +357,7 @@ class BNA_KC_Vest_Medic_v2: BNA_KC_Vest_Medic
     {
         uniformModel = "\SWLB_CEE\data\SWLB_CEE_Airborne_CFR.p3d";
     };
+
 };
 class BNA_KC_Vest_Medic_Senior_v2: BNA_KC_Vest_Medic_v2
 {
@@ -366,6 +369,7 @@ class BNA_KC_Vest_Medic_Senior_v2: BNA_KC_Vest_Medic_v2
         "",                                                   // Airborne thing
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic_v2.paa"  // Pauldron
     };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
 };
 
 class BNA_KC_Vest_Medic_Platoon: BNA_KC_Vest_Medic
