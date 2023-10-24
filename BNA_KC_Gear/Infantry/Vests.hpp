@@ -69,6 +69,7 @@ class BNA_KC_Vest_Heavy_v2: BNA_KC_Vest_Heavy
         "\SWLB_core\data\common_textures\accessories\light_accessories_co.paa",
         "\SWLB_core\data\common_textures\accessories\heavy_accessories_co.paa"
     };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 
     class ItemInfo: ItemInfo
     {
@@ -512,7 +513,7 @@ class BNA_KC_Vest_Tactical_Commander: BNA_KC_Vest_Officer
         "\SWLB_clones\data\light_accessories_co.paa",
         "\SWLB_clones\data\heavy_accessories_co.paa"
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 
     class ItemInfo: ItemInfo
     {
