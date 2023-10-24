@@ -115,20 +115,19 @@ class BNA_KC_Vest_Recon_Survival: BNA_KC_Vest_Recon
     displayName = "[KC] INF Vest XX (Recon, Survival)";
 
     model = "\SWLB_CEE\data\SWLB_CEE_Recon_Survival.p3d";
-    hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+    hiddenSelections[] = {"camo1", "camo2", /*"holster", "straps",*/ "ammo", "pauldron"};
     hiddenSelectionsTextures[] =
     {
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
-        "\SWLB_clones\data\light_accessories_co.paa",
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
-        "\SWLB_clones\data\mc_camo1_co.paa"
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa", // Chest Strap
+        "\SWLB_core\data\common_textures\accessories\light_accessories_co.paa", // Side bags / back containers
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa", // Ammo
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"  // Pauldron
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 
     class ItemInfo: ItemInfo
     {
-        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+        hiddenSelections[] = {"camo1", "camo2", /*"holster", "straps",*/ "ammo", "pauldron"};
         uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Survival.p3d";
     };
 };
