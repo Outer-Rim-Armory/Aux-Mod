@@ -360,6 +360,7 @@ class BNA_KC_Vest_Commander: BNA_KC_Vest_Officer
 
     class ItemInfo: ItemInfo
     {
+        hiddenSelections[] = {"camo1", "rank"};
         uniformModel = "\SWLB_clones\SWLB_clone_commander_armor.p3d";
     };
 };
@@ -392,6 +393,7 @@ class BNA_KC_Vest_Kama: BNA_KC_Vest_Officer
 
     class ItemInfo: ItemInfo
     {
+        hiddenSelections[] = {"camo1", "rank"};
         uniformModel = "\SWLB_clones\SWLB_clone_kama_armor.p3d";
     };
 };
