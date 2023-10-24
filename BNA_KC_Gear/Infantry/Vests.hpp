@@ -53,6 +53,30 @@ class BNA_KC_Vest_Heavy: BNA_KC_Vest_Basic
     };
 };
 
+class BNA_KC_Vest_Heavy_v2: BNA_KC_Vest_Heavy
+{
+    displayName = "[KC] INF Vest 01+ (Heavy, v2)";
+
+    model = "\ls_armor_bluefor\vest\gar\heavy\ls_gar_heavyAlt_vest.p3d";
+    hiddenSelections[] = {"ammo", "camo1", "camo2", "camo3", "camo4", "camo5", "pauldron"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_core\data\common_textures\accessories\heavy_accessories_co.paa",
+        "\SWLB_core\data\common_textures\accessories\light_accessories_co.paa",
+        "\SWLB_core\data\common_textures\accessories\heavy_accessories_co.paa",
+        "\SWLB_core\data\common_textures\accessories\officer_accessories_co.paa",
+        "\SWLB_core\data\common_textures\equipment\bag_co.paa",
+        "\SWLB_core\data\common_textures\accessories\light_accessories_co.paa",
+        "\SWLB_core\data\common_textures\accessories\heavy_accessories_co.paa"
+    };
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"ammo", "camo1", "camo2", "camo3", "camo4", "camo5", "pauldron"};
+        uniformModel = "\ls_armor_bluefor\vest\gar\heavy\ls_gar_heavyAlt_vest.p3d";
+    };
+};
+
 class BNA_KC_Vest_Specialist: BNA_KC_Vest_Assault
 {
     displayName = "[KC] INF Vest 01+ (Specialist)";

@@ -234,6 +234,7 @@ class CfgPatches
             "BNA_KC_Vest_Assault",
             "BNA_KC_Vest_Grenadier",
             "BNA_KC_Vest_Heavy",
+            "BNA_KC_Vest_Heavy_v2",
             "BNA_KC_Vest_Specialist",
             "BNA_KC_Vest_Recon",
             "BNA_KC_Vest_Recon_Survival",
