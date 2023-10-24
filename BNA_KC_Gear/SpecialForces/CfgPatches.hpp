@@ -57,6 +57,7 @@ class CfgPatches
             "BNA_KC_Vest_ARC",
             "BNA_KC_Vest_ARC_Light",
             "BNA_KC_Vest_ARC_v2",
+            "BNA_KC_Vest_ARF",
             "BNA_KC_Vest_ForceRecon",
             "BNA_KC_Vest_ForceRecon_NCO",
             "BNA_KC_Vest_ForceRecon_Officer"
