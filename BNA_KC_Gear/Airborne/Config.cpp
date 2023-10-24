@@ -91,7 +91,7 @@ class CfgWeapons
             "\SWLB_core\data\common_textures\accessories\heavy_accessories_co.paa",
             "\SWLB_core\data\common_textures\accessories\officer_accessories_co.paa",
             "\SWLB_core\data\common_textures\accessories\officer_accessories_co.paa",
-            "\SWLB_core\data\common_textures\accessories\officer_accessories_co.paa"
+            ""
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
 
