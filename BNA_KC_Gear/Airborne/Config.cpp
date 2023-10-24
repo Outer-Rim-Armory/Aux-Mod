@@ -28,7 +28,7 @@ class CfgWeapons
         };
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Gear\Infantry\Data\Helmets\Airborne\Helmet_Airborne.paa"
+            "\BNA_KC_Gear\Airborne\Data\Textures\Helmets\Helmet_Airborne.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
 
@@ -46,7 +46,7 @@ class CfgWeapons
         displayName = "[KC] AB Helm (Trooper, Version 2)";
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Gear\Infantry\Data\Helmets\Airborne\Helmet_Airborne_v2.paa"
+            "\BNA_KC_Gear\Airborne\Data\Textures\Helmets\Helmet_Airborne_v2.paa"
         };
     };
     // ┌────────────────────┐
