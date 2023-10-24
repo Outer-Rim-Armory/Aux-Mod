@@ -7,7 +7,7 @@ class BNA_KC_Vest_Assault: BNA_KC_Vest_Basic
     hiddenSelectionsTextures[] =
     {
         "\SWLB_clones\data\light_accessories_co.paa",
-        "\SWLB_clones\data\heavy_accessories_co.paa"
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
 
@@ -38,11 +38,11 @@ class BNA_KC_Vest_Heavy: BNA_KC_Vest_Basic
     hiddenSelections[] = {"ammo", "camo1", "camo2", "camo3", "pauldron"};
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\heavy_accessories_co.paa",
-        "\SWLB_clones\data\heavy_accessories_co.paa",
-        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
         "\SWLB_clones\data\light_accessories_co.paa",
-        "\SWLB_clones\data\heavy_accessories_co.paa"
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
 
@@ -97,9 +97,9 @@ class BNA_KC_Vest_Recon: BNA_KC_Vest_Basic
     hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
         "",
-        "\SWLB_clones\data\heavy_accessories_co.paa"
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_armor_ca.paa";
 
@@ -118,10 +118,10 @@ class BNA_KC_Vest_Recon_Survival: BNA_KC_Vest_Recon
     hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\heavy_accessories_co.paa",
-        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
         "\SWLB_clones\data\light_accessories_co.paa",
-        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
         "\SWLB_clones\data\mc_camo1_co.paa"
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
@@ -182,9 +182,9 @@ class BNA_KC_Vest_Engineer_NCO: BNA_KC_Vest_Engineer
     hiddenSelectionsTextures[] =
     {
         "\SWLB_clones\data\light_accessories_co.paa",
-        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
         "\SWLB_clones\data\officer_accessories_co.paa",
-        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
         "\SWLB_CEE\data\SWLB_CEE_Engineer_Base.paa",
         "\SWLB_clones\data\arc_accessories_co.paa"
     };
@@ -222,7 +222,7 @@ class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
     hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\heavy_accessories_co.paa",     // Heavy Strap
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",     // Heavy Strap
         "",                                               // Nothing
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa", // Holster
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa"  // Pauldron
@@ -241,7 +241,7 @@ class BNA_KC_Vest_CPL: BNA_KC_Vest_LCPL
     displayName = "[KC] INF Vest 05 (CPL)";
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\heavy_accessories_co.paa",
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
         "",
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CPL.paa",
         "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CPL.paa"
@@ -511,7 +511,7 @@ class BNA_KC_Vest_Tactical_Commander: BNA_KC_Vest_Officer
     {
         "\SWLB_clones\data\officer_accessories_co.paa",
         "\SWLB_clones\data\light_accessories_co.paa",
-        "\SWLB_clones\data\heavy_accessories_co.paa"
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 

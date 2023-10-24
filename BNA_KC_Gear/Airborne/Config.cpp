@@ -23,9 +23,9 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "camo2", "ammo", "pauldron"};
         hiddenSelectionsTextures[] =
         {
-            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
             "\SWLB_clones\data\officer_accessories_co.paa",
-            "\SWLB_clones\data\heavy_accessories_co.paa"
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
 
@@ -43,9 +43,9 @@ class CfgWeapons
         hiddenSelections[] = {"ammo", "camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] =
         {
-            "\SWLB_clones\data\heavy_accessories_co.paa",
-            "\SWLB_clones\data\heavy_accessories_co.paa",
-            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
             ""
         };
 
@@ -72,10 +72,10 @@ class CfgWeapons
         displayName = "[KC] AB Vest 04+ (NCO)";
         hiddenSelectionsTextures[] =
         {
-            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
             "\SWLB_clones\data\officer_accessories_co.paa",
-            "\SWLB_clones\data\heavy_accessories_co.paa",
-            "\SWLB_clones\data\heavy_accessories_co.paa"
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
     };

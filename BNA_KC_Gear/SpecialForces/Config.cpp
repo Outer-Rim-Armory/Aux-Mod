@@ -303,7 +303,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] =
         {
             "\SWLB_clones\data\light_accessories_co.paa",
-            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
             "\SWLB_clones\data\officer_accessories_co.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
@@ -323,7 +323,7 @@ class CfgWeapons
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] =
         {
-            "\SWLB_clones\data\heavy_accessories_co.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
             "\SWLB_clones\data\light_accessories_co.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
@@ -345,7 +345,7 @@ class CfgWeapons
         {
             "\SWLB_clones\data\light_accessories_co.paa",
             "\SWLB_clones\data\officer_accessories_co.paa",
-            "\SWLB_clones\data\heavy_accessories_co.paa"
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 
