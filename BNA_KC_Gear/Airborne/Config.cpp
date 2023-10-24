@@ -46,7 +46,7 @@ class CfgWeapons
             "\SWLB_clones\data\heavy_accessories_co.paa",
             "\SWLB_clones\data\heavy_accessories_co.paa",
             "\SWLB_clones\data\heavy_accessories_co.paa",
-            "\SWLB_clones\data\heavy_accessories_co.paa"
+            ""
         };
 
         class ItemInfo: ItemInfo
