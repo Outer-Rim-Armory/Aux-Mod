@@ -445,7 +445,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] BX Commando Droid";
+        displayName = "BX Commando Droid";
 
         // Editor Properties
         editorSubcategory = "BNA_KC_SubCat_CIS_SpecOps";
