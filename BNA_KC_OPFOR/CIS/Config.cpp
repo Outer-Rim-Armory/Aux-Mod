@@ -215,22 +215,22 @@ class CfgVehicles
         {
             generic[] =
             {
-                {"run", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 30}},
-                {"run", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 30}},
-                {"run", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 30}},
-                {"run", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 30}},
                 {"walk", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}},
                 {"walk", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}},
                 {"walk", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}},
                 {"walk", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}},
-                {"sprint", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 45}},
-                {"sprint", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 45}},
-                {"sprint", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 45}},
-                {"sprint", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 45}},
                 {"Tactical", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}},
                 {"Tactical", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}},
                 {"Tactical", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}},
-                {"Tactical", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}}
+                {"Tactical", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}},
+                {"run", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 30}},
+                {"run", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 30}},
+                {"run", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 30}},
+                {"run", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 30}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 45}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 45}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 45}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 45}}
             };
         };
         class SoundInjured {breath[] = {};};
