@@ -12,11 +12,11 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class BNA_KC_OPFOR_Uniform_Droid_Base: BNA_KC_OPFOR_Uniform_Base
+    class BNA_KC_CIS_Uniform_Droid_Base: BNA_KC_OPFOR_Uniform_Base
     {
 
     };
-    class BNA_KC_OPFOR_Uniform_BXDroid: BNA_KC_OPFOR_Uniform_Base
+    class BNA_KC_CIS_Uniform_BXDroid: BNA_KC_CIS_Uniform_Droid_Base
     {
         // Scope
         scope = 2;
@@ -26,7 +26,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            uniformClass = "BNA_KC_OPFOR_Unit_BXDroid";
+            uniformClass = "BNA_KC_CIS_Unit_BXDroid";
         };
     };
 
@@ -35,12 +35,12 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class BNA_KC_OPFOR_Uniform_BXDroid_Actor: BNA_KC_Uniform_Base
+    class BNA_KC_CIS_Uniform_BXDroid_Actor: BNA_KC_Uniform_Base
     {
         displayName = "[CIS] BX Commando Droid (Actor)";
         class ItemInfo: ItemInfo
         {
-            uniformClass = "BNA_KC_OPFOR_Unit_BXDroid_Actor";
+            uniformClass = "BNA_KC_CIS_Unit_BXDroid_Actor";
         };
     };
 
@@ -147,7 +147,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_CIS_SpecOps";
         editorPreview = "\BNA_KC_OPFOR\CIS\Data\Textures\Previews\BXDroid.jpg";
 
-        uniformClass = "BNA_KC_OPFOR_Uniform_BXDroid";
+        uniformClass = "BNA_KC_CIS_Uniform_BXDroid";
         model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
