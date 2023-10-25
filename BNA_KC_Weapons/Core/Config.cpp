@@ -22,7 +22,7 @@ class CfgMagazines
         author = "DartRuffian and Dexus";
         displayName = "[12th Fleet] Stun Energy Cell (Short)";
         displayNameShort = "Stun (Short)";
-        descriptionShort = "Stun Energy Cell<br/>Rounds: 10<br/>Duration: 5 Seconds<br/>Used in: DC-15S, DC-15A, DC-17";
+        descriptionShort = "Stun Energy Cell<br/>Rounds: 10<br/>Duration: 5 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M";
 
         JLTS_hasEMPProtection = 1;
 
@@ -33,7 +33,7 @@ class CfgMagazines
     {
         displayName = "[12th Fleet] Stun Energy Cell (Long)";
         displayNameShort = "Stun (Long)";
-        descriptionShort = "Stun Energy Cell<br/>Rounds: 5<br/>Duration: 15 Seconds<br/>Used in: DC-15S, DC-15A, DC-17";
+        descriptionShort = "Stun Energy Cell<br/>Rounds: 5<br/>Duration: 15 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M";
 
         JLTS_hasEMPProtection = 1;
 
