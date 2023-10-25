@@ -51,5 +51,24 @@ class CfgVehicles
                 };
             };
         };
+
+        class AnimationSources
+        {
+            class recoil_source
+            {
+                source = "reload";
+                weapon = "3AS_AATCannon";
+            };
+            class muzzle_rot_cannon
+            {
+                source = "ammorandom";
+                weapon = "3AS_AAT_Repeater";
+            };
+            class muzzle_rot_coax
+            {
+                source = "ammorandom";
+                weapon = "3AS_AAT_Repeater";
+            };
+        };
     };
 };
