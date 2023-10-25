@@ -181,8 +181,8 @@ class CfgVehicles
             ITEM_3("3AS_SmokeWhite")
         };
 
-        linkedItems[] = {"BNA_KC_NVG_Chip", "SWLB_comlink_droid"};
-        respawnLinkedItems[] = {"BNA_KC_NVG_Chip", "SWLB_comlink_droid"};
+        linkedItems[] = {"JLTS_NVG_droid_chip_1", "SWLB_comlink_droid"};
+        respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", "SWLB_comlink_droid"};
 
         class SoundBleeding {breath[] = {};};
         class SoundBreath {breath[] = {};};
@@ -501,8 +501,8 @@ class CfgVehicles
             ITEM_5("ACE_CableTie")
         };
 
-        linkedItems[] = {"BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "SWLB_comlink_droid"};
-        respawnLinkedItems[] = {"BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "SWLB_comlink_droid"};
+        linkedItems[] = {"BNA_KC_CIS_Vest_BXDroid", "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid"};
+        respawnLinkedItems[] = {"BNA_KC_CIS_Vest_BXDroid", "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid"};
     };
 
     class BNA_KC_Unit_Base;
