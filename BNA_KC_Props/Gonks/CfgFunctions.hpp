@@ -14,6 +14,9 @@ class CfgFunctions
             class shouldShowWeapon {};
             class openAttachmentArsenal {};
             class setMos {};
+
+            class getAllCustoms {};
+            class openCustomsArsenal {};
         };
     };
 };
