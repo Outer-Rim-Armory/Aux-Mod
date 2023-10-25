@@ -14,7 +14,10 @@ class CfgWeapons
     };
     class BNA_KC_CIS_Uniform_Droid_Base: BNA_KC_OPFOR_Uniform_Base
     {
-
+        class ItemInfo: ItemInfo
+        {
+            containerClass = "Supply150"; // Temporary until pre-made backpacks are made.
+        };
     };
     class BNA_KC_CIS_Uniform_B1_Droid: BNA_KC_CIS_Uniform_Droid_Base
     {
