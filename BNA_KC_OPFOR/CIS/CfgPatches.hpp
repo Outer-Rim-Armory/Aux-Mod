@@ -27,6 +27,7 @@ class CfgPatches
         weapons[] =
         {
             "BNA_KC_CIS_Uniform_Droid_Base",
+            "BNA_KC_CIS_Uniform_B1_Droid",
             "BNA_KC_CIS_Uniform_BX_Droid",
             "BNA_KC_CIS_Vest_BX_Droid",
             "BNA_KC_CIS_Vest_BX_Droid_Melee"
