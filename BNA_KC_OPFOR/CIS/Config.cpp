@@ -200,6 +200,8 @@ class CfgVehicles
         model = "\MRC\JLTS\characters\DroidArmor\DroidUniformB1.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"};
+
+        backpack = "JLTS_B1_backpack";
     };
 
     class BNA_KC_CIS_Unit_BXDroid: BNA_KC_CIS_Unit_Droid_Base
