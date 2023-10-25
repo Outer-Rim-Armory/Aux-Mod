@@ -9,13 +9,34 @@ class CfgVehicles
     {
         class Turrets;
     };
-    class 3AS_CIS_AAT_base_F: 3AS_AAT_base_F {};
-    class 3AS_CIS_AAT_F: 3AS_CIS_AAT_base_F {};
-    class 3AS_AAT: 3AS_CIS_AAT_F
+    class 3AS_CIS_AAT_base_F: 3AS_AAT_base_F
     {
         class Turrets: Turrets
         {
             class MainTurret;
+        };
+    };
+    class 3AS_CIS_AAT_F: 3AS_CIS_AAT_base_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                class Turrets;
+            };
+        };
+    };
+    class 3AS_AAT: 3AS_CIS_AAT_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                class Turrets: Turrets
+                {
+                    class CommanderOptics;
+                };
+            };
         };
     };
     class BNA_KC_AAT: 3AS_AAT
@@ -48,6 +69,28 @@ class CfgVehicles
                     "3AS_24Rnd_AAT_AP",
                     "3AS_24Rnd_AAT_AP",
                     "SmokeLauncherMag"
+                };
+
+                class Turrets: Turrets
+                {
+                    class CommanderOptics: CommanderOptics
+                    {
+                        weapons[] = {"3AS_AAT_Repeater", "SmokeLauncher"};
+                        magazines[] =
+                        {
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "SmokeLauncherMag"
+                        };
+                    };
                 };
             };
         };
