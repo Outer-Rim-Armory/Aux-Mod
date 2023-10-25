@@ -63,8 +63,6 @@ class CfgMagazines
         descriptionShort = "Type: Flare Rounds - Blue <br />Rounds: 3 <br />Used in: EGLM, 3GL";
         mass = 12;
         count = 3;
-
-        JLTS_hasEMPProtection = 1;
     };
 };
 
