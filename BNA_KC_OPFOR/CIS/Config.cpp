@@ -23,6 +23,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[CIS] B1 Battle Droid";
+        picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
 
         class ItemInfo: ItemInfo
         {
