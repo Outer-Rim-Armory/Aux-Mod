@@ -11,7 +11,6 @@ Custom Visor Color Names
 // │    P1  Helmets    │
 // └───────────────────┘
 class BNA_KC_Helmet_Phase1_Base;
-
 class BNA_KC_Helmet_Phase1_Axel: BNA_KC_Helmet_Phase1_Base
 {
     displayName = "[KC] INF P1 Helm ('Axel')";
@@ -21,9 +20,11 @@ class BNA_KC_Helmet_Phase1_Axel: BNA_KC_Helmet_Phase1_Base
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 
-class BNA_KC_Helmet_Phase1_Burnt: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Burnt: BNA_KC_Helmet_Phase1_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Burnt";
@@ -58,7 +59,7 @@ class BNA_KC_Helmet_Phase1_Burnt_Bacta: BNA_KC_Helmet_Phase1_Burnt
     };
 };
 
-class BNA_KC_Helmet_Phase1_Catholic: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Catholic: BNA_KC_Helmet_Phase1_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Catholic";
@@ -93,7 +94,7 @@ class BNA_KC_Helmet_Phase1_Catholic_Kyber: BNA_KC_Helmet_Phase1_Catholic
     };
 };
 
-class BNA_KC_Helmet_Phase1_Defter: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Defter: BNA_KC_Helmet_Phase1_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Defter";
@@ -128,7 +129,7 @@ class BNA_KC_Helmet_Phase1_Defter_Bacta: BNA_KC_Helmet_Phase1_Defter
     };
 };
 
-class BNA_KC_Helmet_Phase1_Dexus: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Dexus: BNA_KC_Helmet_Phase1_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Dexus";
@@ -163,7 +164,7 @@ class BNA_KC_Helmet_Phase1_Dexus_Bacta: BNA_KC_Helmet_Phase1_Dexus
     };
 };
 
-class BNA_KC_Helmet_Phase1_Drake: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Drake: BNA_KC_Helmet_Phase1_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Drake";
@@ -198,7 +199,7 @@ class BNA_KC_Helmet_Phase1_Drake_Bacta: BNA_KC_Helmet_Phase1_Drake
     };
 };
 
-class BNA_KC_Helmet_Phase1_Grey: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Grey: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Grey')";
     hiddenSelectionsTextures[] =
@@ -209,7 +210,7 @@ class BNA_KC_Helmet_Phase1_Grey: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Hazard: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Hazard: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Hazard')";
     hiddenSelectionsTextures[] =
@@ -220,7 +221,7 @@ class BNA_KC_Helmet_Phase1_Hazard: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Jaws: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Jaws: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Jaws')";
     hiddenSelectionsTextures[] =
@@ -231,7 +232,7 @@ class BNA_KC_Helmet_Phase1_Jaws: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Jester: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Jester: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Jester')";
     hiddenSelectionsTextures[] =
@@ -242,7 +243,7 @@ class BNA_KC_Helmet_Phase1_Jester: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Joe: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Joe: BNA_KC_Helmet_Phase1_Axel
 {
     // NVG Script
     BNAKC_Helmet_Toggle = 1;
@@ -278,7 +279,7 @@ class BNA_KC_Helmet_Phase1_Joe_Crimson: BNA_KC_Helmet_Phase1_Joe
     };
 };
 
-class BNA_KC_Helmet_Phase1_Keeli: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Keeli: BNA_KC_Helmet_Phase1_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Keeli";
@@ -313,7 +314,7 @@ class BNA_KC_Helmet_Phase1_Keeli_Crimson: BNA_KC_Helmet_Phase1_Keeli
     };
 };
 
-class BNA_KC_Helmet_Phase1_Lou: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Lou: BNA_KC_Helmet_Phase1_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Lou";
@@ -348,7 +349,7 @@ class BNA_KC_Helmet_Phase1_Lou_Plasma: BNA_KC_Helmet_Phase1_Lou
     };
 };
 
-class BNA_KC_Helmet_Phase1_Ox: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Ox: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Ox')";
     hiddenSelectionsTextures[] =
@@ -359,7 +360,7 @@ class BNA_KC_Helmet_Phase1_Ox: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Patriot: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Patriot: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Patriot')";
     hiddenSelectionsTextures[] =
@@ -370,7 +371,7 @@ class BNA_KC_Helmet_Phase1_Patriot: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Ponds: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Ponds: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Ponds')";
     hiddenSelectionsTextures[] =
@@ -381,7 +382,7 @@ class BNA_KC_Helmet_Phase1_Ponds: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Rev: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Rev: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Rev')";
     hiddenSelectionsTextures[] =
@@ -392,7 +393,7 @@ class BNA_KC_Helmet_Phase1_Rev: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Rodger: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Rodger: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Rodger')";
     hiddenSelectionsTextures[] =
@@ -403,7 +404,7 @@ class BNA_KC_Helmet_Phase1_Rodger: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Sin: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Sin: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Sin')";
     hiddenSelectionsTextures[] =
@@ -414,7 +415,7 @@ class BNA_KC_Helmet_Phase1_Sin: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Splashdown: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Splashdown: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Splashdown')";
     hiddenSelectionsTextures[] =
@@ -425,7 +426,7 @@ class BNA_KC_Helmet_Phase1_Splashdown: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Swoop: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Swoop: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Swoop')";
     hiddenSelectionsTextures[] =
@@ -436,7 +437,7 @@ class BNA_KC_Helmet_Phase1_Swoop: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Woods: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_Woods: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Woods')";
     hiddenSelectionsTextures[] =
@@ -452,7 +453,6 @@ class BNA_KC_Helmet_Phase1_Woods: BNA_KC_Helmet_Phase1_Base
 // │    P2  Helmets    │
 // └───────────────────┘
 class BNA_KC_Helmet_Phase2_Base;
-
 class BNA_KC_Helmet_Phase2_Axel: BNA_KC_Helmet_Phase2_Base
 {
     displayName = "[KC] INF P2 Helm ('Axel')";
@@ -461,9 +461,11 @@ class BNA_KC_Helmet_Phase2_Axel: BNA_KC_Helmet_Phase2_Base
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Axel.paa",
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 
-class BNA_KC_Helmet_Phase2_Bob: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Bob: BNA_KC_Helmet_Phase2_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Bob";
@@ -495,7 +497,7 @@ class BNA_KC_Helmet_Phase2_Bob_Kyber: BNA_KC_Helmet_Phase2_Bob
     };
 };
 
-class BNA_KC_Helmet_Phase2_Burnt: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Burnt: BNA_KC_Helmet_Phase2_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Burnt";
@@ -527,7 +529,7 @@ class BNA_KC_Helmet_Phase2_Burnt_Bacta: BNA_KC_Helmet_Phase2_Burnt
     };
 };
 
-class BNA_KC_Helmet_Phase2_Dexus: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Dexus: BNA_KC_Helmet_Phase2_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Dexus";
@@ -559,7 +561,7 @@ class BNA_KC_Helmet_Phase2_Dexus_Bacta: BNA_KC_Helmet_Phase2_Dexus
     };
 };
 
-class BNA_KC_Helmet_Phase2_Evo: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Evo: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Evo')";
     hiddenSelectionsTextures[] =
@@ -569,7 +571,7 @@ class BNA_KC_Helmet_Phase2_Evo: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Fil: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Fil: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Fil')";
     hiddenSelectionsTextures[] =
@@ -579,7 +581,7 @@ class BNA_KC_Helmet_Phase2_Fil: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_FilSquad: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_FilSquad: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Fil's Squad')";
     hiddenSelectionsTextures[] =
@@ -589,7 +591,7 @@ class BNA_KC_Helmet_Phase2_FilSquad: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Grey: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Grey: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Grey')";
     hiddenSelectionsTextures[] =
@@ -599,7 +601,7 @@ class BNA_KC_Helmet_Phase2_Grey: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Harry: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Harry: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Harry')";
     hiddenSelectionsTextures[] =
@@ -609,7 +611,7 @@ class BNA_KC_Helmet_Phase2_Harry: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Hazard: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Hazard: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Hazard')";
     hiddenSelectionsTextures[] =
@@ -619,7 +621,7 @@ class BNA_KC_Helmet_Phase2_Hazard: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Jaws: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Jaws: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Jaws')";
     hiddenSelectionsTextures[] =
@@ -629,7 +631,7 @@ class BNA_KC_Helmet_Phase2_Jaws: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Jester: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Jester: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Jester')";
     hiddenSelectionsTextures[] =
@@ -639,7 +641,7 @@ class BNA_KC_Helmet_Phase2_Jester: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Joe: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Joe: BNA_KC_Helmet_Phase2_Axel
 {
     // NVG Script
     BNAKC_Helmet_Toggle = 1;
@@ -672,7 +674,7 @@ class BNA_KC_Helmet_Phase2_Joe_Crimson: BNA_KC_Helmet_Phase2_Joe
     };
 };
 
-class BNA_KC_Helmet_Phase2_Keeli: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Keeli: BNA_KC_Helmet_Phase2_Axel
 {
     // NVG Script
     BNAKC_Helmet_Toggle = 1;
@@ -704,7 +706,7 @@ class BNA_KC_Helmet_Phase2_Keeli_Crimson: BNA_KC_Helmet_Phase2_Keeli
         "\BNA_KC_Gear\Customs\Data\Textures\Visors\Visor_Crimson.paa",
     };
 };
-class BNA_KC_Helmet_Phase2_Keeli_CamoBrown: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Keeli_CamoBrown: BNA_KC_Helmet_Phase2_Axel
 {
     // NVG Script
     BNAKC_Helmet_Toggle = 1;
@@ -736,7 +738,7 @@ class BNA_KC_Helmet_Phase2_Keeli_CamoBrown_Crimson: BNA_KC_Helmet_Phase2_Keeli_C
         "\BNA_KC_Gear\Customs\Data\Textures\Visors\Visor_Crimson.paa",
     };
 };
-class BNA_KC_Helmet_Phase2_Keeli_CamoGrey: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Keeli_CamoGrey: BNA_KC_Helmet_Phase2_Axel
 {
     // NVG Script
     BNAKC_Helmet_Toggle = 1;
@@ -769,7 +771,7 @@ class BNA_KC_Helmet_Phase2_Keeli_CamoGrey_Crimson: BNA_KC_Helmet_Phase2_Keeli_Ca
     };
 };
 
-class BNA_KC_Helmet_Phase2_Lou: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Lou: BNA_KC_Helmet_Phase2_Axel
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Lou";
@@ -801,7 +803,7 @@ class BNA_KC_Helmet_Phase2_Lou_Plasma: BNA_KC_Helmet_Phase2_Lou
     };
 };
 
-class BNA_KC_Helmet_Phase2_Ox: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Ox: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Ox')";
     hiddenSelectionsTextures[] =
@@ -811,7 +813,7 @@ class BNA_KC_Helmet_Phase2_Ox: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Patriot: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Patriot: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Patriot')";
     hiddenSelectionsTextures[] =
@@ -821,7 +823,7 @@ class BNA_KC_Helmet_Phase2_Patriot: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Ponds: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Ponds: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[187th] INF P2 Helm ('Ponds')";
     hiddenSelectionsTextures[] =
@@ -831,7 +833,7 @@ class BNA_KC_Helmet_Phase2_Ponds: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_PondsTrooper: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_PondsTrooper: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[187th] INF P2 Helm";
     hiddenSelectionsTextures[] =
@@ -841,7 +843,7 @@ class BNA_KC_Helmet_Phase2_PondsTrooper: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Rev: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Rev: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Rev')";
     hiddenSelectionsTextures[] =
@@ -851,7 +853,7 @@ class BNA_KC_Helmet_Phase2_Rev: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Rodger: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Rodger: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Rodger')";
     hiddenSelectionsTextures[] =
@@ -860,7 +862,7 @@ class BNA_KC_Helmet_Phase2_Rodger: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_Sage: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Sage: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Sage')";
     hiddenSelectionsTextures[] =
@@ -870,7 +872,7 @@ class BNA_KC_Helmet_Phase2_Sage: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Sogi: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Sogi: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Sogi')";
     hiddenSelectionsTextures[] =
@@ -881,7 +883,7 @@ class BNA_KC_Helmet_Phase2_Sogi: BNA_KC_Helmet_Phase2_Base
 };
 
 
-class BNA_KC_Helmet_Phase2_Splashdown: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Splashdown: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Splashdown')";
     hiddenSelectionsTextures[] =
@@ -891,7 +893,7 @@ class BNA_KC_Helmet_Phase2_Splashdown: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Star: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Star: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Star')";
     hiddenSelectionsTextures[] =
@@ -901,7 +903,7 @@ class BNA_KC_Helmet_Phase2_Star: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Stone: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Stone: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Stone')";
     hiddenSelectionsTextures[] =
@@ -911,7 +913,7 @@ class BNA_KC_Helmet_Phase2_Stone: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Swoop: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Swoop: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Swoop')";
     hiddenSelectionsTextures[] =
@@ -921,7 +923,7 @@ class BNA_KC_Helmet_Phase2_Swoop: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Sytha: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Sytha: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Sytha')";
     hiddenSelectionsTextures[] =
@@ -931,7 +933,7 @@ class BNA_KC_Helmet_Phase2_Sytha: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Tugz: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Tugz: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Tugz')";
     hiddenSelectionsTextures[] =
@@ -942,7 +944,7 @@ class BNA_KC_Helmet_Phase2_Tugz: BNA_KC_Helmet_Phase2_Base
 };
 
 
-class BNA_KC_Helmet_Phase2_Tyrant: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Tyrant: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Tyrant)";
     hiddenSelectionsTextures[] =
@@ -952,7 +954,7 @@ class BNA_KC_Helmet_Phase2_Tyrant: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Vortex: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Vortex: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Vortex')";
     hiddenSelectionsTextures[] =
@@ -962,7 +964,7 @@ class BNA_KC_Helmet_Phase2_Vortex: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Woods: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_Woods: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Woods')";
     hiddenSelectionsTextures[] =
@@ -987,6 +989,8 @@ class BNA_KC_Helmet_Engineer_x: BNA_KC_Helmet_Engineer
         "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
         "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 */
 
@@ -1003,6 +1007,8 @@ class BNA_KC_Helmet_Airborne_x: BNA_KC_Helmet_Airborne
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Airborne\Helmet_Airborne_x.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 */
 
@@ -1011,7 +1017,6 @@ class BNA_KC_Helmet_Airborne_x: BNA_KC_Helmet_Airborne
 // │  AVI P1  Helmets  │
 // └───────────────────┘
 class BNA_KC_Helmet_Phase1_Pilot;
-
 class BNA_KC_Helmet_Phase1_Pilot_Bailout: BNA_KC_Helmet_Phase1_Pilot
 {
     displayName = "[KC] AVI P1 Helm ('Bailout')";
@@ -1021,9 +1026,11 @@ class BNA_KC_Helmet_Phase1_Pilot_Bailout: BNA_KC_Helmet_Phase1_Pilot
         "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 
-class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot
+class BNA_KC_Helmet_Phase1_Pilot_Blue: BNA_KC_Helmet_Phase1_Pilot_Bailout
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Pilot_Blue";
@@ -1060,7 +1067,7 @@ class BNA_KC_Helmet_Phase1_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase1_Pilot_Blue
     };
 };
 
-class BNA_KC_Helmet_Phase1_Pilot_Mischief: BNA_KC_Helmet_Phase1_Pilot
+class BNA_KC_Helmet_Phase1_Pilot_Mischief: BNA_KC_Helmet_Phase1_Pilot_Bailout
 {
     displayName = "[KC] AVI P1 Helm ('Mischief')";
     hiddenSelectionsTextures[] =
@@ -1077,7 +1084,6 @@ class BNA_KC_Helmet_Phase1_Pilot_Mischief: BNA_KC_Helmet_Phase1_Pilot
 // │  AVI P2  Helmets  │
 // └───────────────────┘
 class BNA_KC_Helmet_Phase2_Pilot;
-
 class BNA_KC_Helmet_Phase2_Pilot_Bailout: BNA_KC_Helmet_Phase2_Pilot
 {
     displayName = "[KC] AVI P2 Helm ('Bailout')";
@@ -1086,9 +1092,11 @@ class BNA_KC_Helmet_Phase2_Pilot_Bailout: BNA_KC_Helmet_Phase2_Pilot
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Pilots\Phase 2\Helmet_P2_Pilot_Bailout.paa",
         "\ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 
-class BNA_KC_Helmet_Phase2_Pilot_Blue: BNA_KC_Helmet_Phase2_Pilot
+class BNA_KC_Helmet_Phase2_Pilot_Blue: BNA_KC_Helmet_Phase2_Pilot_Bailout
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Pilot_Blue";
@@ -1122,7 +1130,7 @@ class BNA_KC_Helmet_Phase2_Pilot_Blue_Bacta: BNA_KC_Helmet_Phase2_Pilot_Blue
     };
 };
 
-class BNA_KC_Helmet_Phase2_Pilot_Mischief: BNA_KC_Helmet_Phase2_Pilot
+class BNA_KC_Helmet_Phase2_Pilot_Mischief: BNA_KC_Helmet_Phase2_Pilot_Bailout
 {
     displayName = "[KC] AVI P2 Helm ('Mischief')";
     hiddenSelectionsTextures[] =
@@ -1137,7 +1145,6 @@ class BNA_KC_Helmet_Phase2_Pilot_Mischief: BNA_KC_Helmet_Phase2_Pilot
 // │  P1 ARMR Helmets  │
 // └───────────────────┘
 class BNA_KC_Helmet_Phase1_Tanker;
-
 class BNA_KC_Helmet_Phase1_Tanker_Grey: BNA_KC_Helmet_Phase1_Tanker
 {
     displayName = "[KC] ARMR P1 Helm ('Grey')";
@@ -1146,6 +1153,8 @@ class BNA_KC_Helmet_Phase1_Tanker_Grey: BNA_KC_Helmet_Phase1_Tanker
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\SpecOP\Phase 1\Helmet_P1_Tanker_Grey.paa",
         "\ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 
 
@@ -1153,7 +1162,6 @@ class BNA_KC_Helmet_Phase1_Tanker_Grey: BNA_KC_Helmet_Phase1_Tanker
 // │  P2 ARMR Helmets  │
 // └───────────────────┘
 class BNA_KC_Helmet_Phase2_Tanker;
-
 class BNA_KC_Helmet_Phase2_Tanker_Catholic: BNA_KC_Helmet_Phase2_Tanker
 {
     BNAKC_Helmet_Toggle = 1;
@@ -1168,6 +1176,8 @@ class BNA_KC_Helmet_Phase2_Tanker_Catholic: BNA_KC_Helmet_Phase2_Tanker
     };
 
     subItems[] = {};
+
+    BNA_KC_isCustom = 1;
 };
 class BNA_KC_Helmet_Phase2_Tanker_Catholic_Kyber: BNA_KC_Helmet_Phase2_Tanker_Catholic
 {
@@ -1197,6 +1207,8 @@ class BNA_KC_Helmet_Phase2_Tanker_Grey: BNA_KC_Helmet_Phase2_Tanker
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\SpecOP\Phase 2\Helmet_P2_Tanker_Grey.paa",
         "\ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 
 
@@ -1204,9 +1216,6 @@ class BNA_KC_Helmet_Phase2_Tanker_Grey: BNA_KC_Helmet_Phase2_Tanker
 // │    SF  Helmets    │
 // └───────────────────┘
 class BNA_KC_Helmet_ARC;
-class BNA_KC_Helmet_ARF;
-class BNA_KC_Helmet_BARC;
-
 class BNA_KC_Helmet_ARC_Drake: BNA_KC_Helmet_ARC
 {
     BNAKC_Helmet_Toggle = 1;
@@ -1219,6 +1228,8 @@ class BNA_KC_Helmet_ARC_Drake: BNA_KC_Helmet_ARC
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\SpecialForces\ARC\Helmet_ARC_Drake.paa",
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 class BNA_KC_Helmet_ARC_Drake_Bacta: BNA_KC_Helmet_ARC_Drake
 {
@@ -1239,7 +1250,7 @@ class BNA_KC_Helmet_ARC_Drake_Bacta: BNA_KC_Helmet_ARC_Drake
     };
 };
 
-class BNA_KC_Helmet_ARC_Hagrid: BNA_KC_Helmet_ARC
+class BNA_KC_Helmet_ARC_Hagrid: BNA_KC_Helmet_ARC_Drake
 {
     BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_ARC_Hagrid";
@@ -1271,7 +1282,7 @@ class BNA_KC_Helmet_ARC_Hagrid_Plasma: BNA_KC_Helmet_ARC_Hagrid
     };
 };
 
-class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC
+class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC_Drake
 {
     displayName = "[KC] SF ARC Helm ('Tyrant')";
     hiddenSelectionsTextures[] =
@@ -1281,6 +1292,7 @@ class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC
     };
 };
 
+class BNA_KC_Helmet_ARF;
 class BNA_KC_Helmet_ARF_Patriot: BNA_KC_Helmet_ARF
 {
     displayName = "[KC] SF ARF Helm ('Patriot')";
@@ -1290,9 +1302,11 @@ class BNA_KC_Helmet_ARF_Patriot: BNA_KC_Helmet_ARF
         "", // Helmet "flaps"
         "\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa" // Visor
     };
+
+    BNA_KC_isCustom = 1;
 };
 
-class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF
+class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF_Patriot
 {
     displayName = "[KC] SF ARF Helm ('Sin')";
     hiddenSelectionsTextures[] =
@@ -1303,6 +1317,7 @@ class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF
     };
 };
 
+class BNA_KC_Helmet_BARC;
 class BNA_KC_Helmet_BARC_Rat: BNA_KC_Helmet_BARC
 {
     // NVG Script
@@ -1316,6 +1331,8 @@ class BNA_KC_Helmet_BARC_Rat: BNA_KC_Helmet_BARC
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\SpecialForces\BARC\Helmet_BARC_Rat.paa",
         "\ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 class BNA_KC_Helmet_BARC_Rat_Crimson: BNA_KC_Helmet_BARC_Rat
 {
@@ -1341,7 +1358,6 @@ class BNA_KC_Helmet_BARC_Rat_Crimson: BNA_KC_Helmet_BARC_Rat
 // │    Snow Helmets    │
 // └────────────────────┘
 class BNA_KC_Helmet_Insulated;
-
 class BNA_KC_Helmet_Insulated_Dexus: BNA_KC_Helmet_Insulated
 {
     displayName = "[KC] INF Snow Helm ('Dexus')";
@@ -1349,9 +1365,11 @@ class BNA_KC_Helmet_Insulated_Dexus: BNA_KC_Helmet_Insulated
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Insulated\Helmet_Insulated_Dexus.paa"
     };
+
+    BNA_KC_isCustom = 1;
 };
 
-class BNA_KC_Helmet_Insulated_Joe: BNA_KC_Helmet_Insulated
+class BNA_KC_Helmet_Insulated_Joe: BNA_KC_Helmet_Insulated_Dexus
 {
     displayName = "[KC] INF Snow Helm ('Joe')";
     hiddenSelectionsTextures[] =
@@ -1360,7 +1378,7 @@ class BNA_KC_Helmet_Insulated_Joe: BNA_KC_Helmet_Insulated
     };
 };
 
-class BNA_KC_Helmet_Insulated_Keeli: BNA_KC_Helmet_Insulated
+class BNA_KC_Helmet_Insulated_Keeli: BNA_KC_Helmet_Insulated_Dexus
 {
     displayName = "[KC] INF Snow Helm ('Keeli')";
     hiddenSelectionsTextures[] =

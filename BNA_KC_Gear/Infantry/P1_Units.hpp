@@ -68,20 +68,20 @@ class BNA_KC_Unit_Phase1_VCT: BNA_KC_Unit_Phase1_Base
 
 // Start of JNCO Ranks
 
-class BNA_KC_Unit_Phase1_LCPL: BNA_KC_Unit_Phase1_Base
+class BNA_KC_Unit_Phase1_CLC: BNA_KC_Unit_Phase1_Base
 {
     displayName = "[KC] INF 04 - Clone Lance Corporal";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\LCPL.jpg";
+    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\CLC.jpg";
 
-    uniformClass = "BNA_KC_Uniform_LCPL";
+    uniformClass = "BNA_KC_Uniform_CLC";
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_LCPL", "BNA_KC_Vest_LCPL", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase1_CLC", "BNA_KC_Vest_CLC", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_LCPL", "BNA_KC_Vest_LCPL", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase1_CLC", "BNA_KC_Vest_CLC", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
     };
 };
 
