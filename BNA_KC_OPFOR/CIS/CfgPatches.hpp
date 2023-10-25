@@ -11,12 +11,15 @@ class CfgPatches
                 // Base OPFOR unit, uniform, etc.
             "BNA_KC_Gear_Infantry",
                 // Base unit, uniform, etc. for actor armor
+            "JLTS_characters_DroidArmor",
+                // B1 Battle Droids
             "ls_units_redfor"
                 // BX models/texture
         };
         units[] =
         {
             "BNA_KC_CIS_Unit_Droid_Base",
+            "BNA_KC_CIS_Unit_B1_Droid",
             "BNA_KC_CIS_Unit_BXDroid"
         };
         weapons[] =

@@ -16,6 +16,20 @@ class CfgWeapons
     {
 
     };
+    class BNA_KC_CIS_Uniform_B1_Droid: BNA_KC_CIS_Uniform_Droid_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[CIS] B1 Battle Droid";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_CIS_Unit_B1_Droid";
+        };
+    };
+
     class BNA_KC_CIS_Uniform_BXDroid: BNA_KC_CIS_Uniform_Droid_Base
     {
         // Scope
@@ -129,10 +143,62 @@ class CfgVehicles
         impactDamageMultiplier = 0.5;
         minTotalDamageThreshold = 0.001;
 
-        identityTypes[] = { "", "Head_NATO" };
+        identityTypes[] = {"", "Head_NATO"};
 
         impactEffectsBlood = "ImpactMetal";
         impactEffectsNoBlood = "ImpactMetal";
+
+        weapons[] =
+        {
+            "BNA_KC_E5",
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] =
+        {
+            "BNA_KC_E5",
+            "Throw",
+            "Put"
+        };
+        magazines[] =
+        {
+            // Ammo
+            ITEM_11("Aux12thFleet_Mag_E5"),
+            // Grenades
+            ITEM_2("ls_mag_classC_thermalDet"),
+            // Smokes
+            ITEM_3("3AS_SmokeWhite")
+        };
+        respawnMagazines[] =
+        {
+            // Ammo
+            ITEM_11("Aux12thFleet_Mag_E5"),
+            // Grenades
+            ITEM_2("ls_mag_classC_thermalDet"),
+            // Smokes
+            ITEM_3("3AS_SmokeWhite")
+        };
+
+        linkedItems[] = {"BNA_KC_NVG_Chip", "SWLB_comlink_droid"};
+        respawnLinkedItems[] = {"BNA_KC_NVG_Chip", "SWLB_comlink_droid"};
+    };
+
+    class BNA_KC_CIS_Unit_B1_Droid: BNA_KC_CIS_Unit_Droid_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "B1 Battle Droid";
+
+        // Editor Properties
+        editorSubcategory = "BNA_KC_SubCat_CIS_Infantry";
+        editorPreview = "\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
+
+        uniformClass = "BNA_KC_CIS_Uniform_B1_Droid";
+        model = "\MRC\JLTS\characters\DroidArmor\DroidUniformB1.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"};
     };
 
     class BNA_KC_CIS_Unit_BXDroid: BNA_KC_CIS_Unit_Droid_Base
