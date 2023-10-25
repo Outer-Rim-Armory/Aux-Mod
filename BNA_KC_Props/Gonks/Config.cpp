@@ -69,6 +69,14 @@ class CfgVehicles
                 statement = "player setVariable ['BNAKC_Uniform_Menu', 2];";
             };
 
+            class Customs_Arsenal: ChangeMenu_Uniforms
+            {
+                priority = 98;
+                displayName = "<t color='#FFFFFF'>Customs Arsenal</t>";
+                condition = "(isNull objectParent player) && ((player getVariable ['BNAKC_Uniform_Menu', 0]) == 0)";
+                statement = "call BNAKC_fnc_openCustomsArsenal;";
+            };
+
             class ChangeMenu_Home: ChangeMenu_Uniforms
             {
                 displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>Home</t>";
