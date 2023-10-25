@@ -22,7 +22,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC CIS] BX Commando Droid";
+        displayName = "[CIS] BX Commando Droid";
 
         class ItemInfo: ItemInfo
         {
@@ -37,7 +37,7 @@ class CfgWeapons
     };
     class BNA_KC_OPFOR_Uniform_BXDroid_Actor: BNA_KC_Uniform_Base
     {
-        displayName = "[KC CIS] BX Commando Droid (Actor)";
+        displayName = "[CIS] BX Commando Droid (Actor)";
         class ItemInfo: ItemInfo
         {
             uniformClass = "BNA_KC_OPFOR_Unit_BXDroid_Actor";
@@ -65,7 +65,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC CIS] BX Commando Droid [Gun Vest]";
+        displayName = "[CIS] BX Commando Droid [Gun Vest]";
         model = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
 
         class ItemInfo: ItemInfo
@@ -84,7 +84,7 @@ class CfgWeapons
     };
     class BNA_KC_CIS_Vest_BXDroid_Melee: BNA_KC_CIS_Vest_BXDroid
     {
-        displayName = "[KC CIS] BX Commando Droid [Melee Vest]";
+        displayName = "[CIS] BX Commando Droid [Melee Vest]";
         model = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
         class ItemInfo: ItemInfo
         {
@@ -99,7 +99,7 @@ class CfgWeapons
     };
     class BNA_KC_CIS_Vest_BXDroid_Actor: BNA_KC_Vest_Basic
     {
-        displayName = "[KC CIS] BX Commando Droid (Actor)";
+        displayName = "[CIS] BX Commando Droid (Actor)";
         picture = "\ls_data\icons\LS_logo_ca.paa";
     };
     class BNA_KC_CIS_Vest_BXDroid_Melee_Actor: BNA_KC_CIS_Vest_BXDroid_Actor
