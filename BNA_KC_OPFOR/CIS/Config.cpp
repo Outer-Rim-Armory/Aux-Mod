@@ -263,14 +263,8 @@ class CfgVehicles
             ITEM_5("ACE_CableTie")
         };
 
-        linkedItems[] =
-        {
-            "BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
-        };
-        respawnLinkedItems[] =
-        {
-            "BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
-        };
+        linkedItems[] = {"BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "SWLB_comlink_droid"};
+        respawnLinkedItems[] = {"BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "SWLB_comlink_droid"};
     };
 
     class BNA_KC_Unit_Base;
