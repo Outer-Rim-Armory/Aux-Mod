@@ -25,8 +25,10 @@ class CfgMagazines
         descriptionShort = "Stun Energy Cell<br/>Rounds: 10<br/>Duration: 5 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M";
 
         JLTS_hasEMPProtection = 1;
+        JLTS_stunDuration = 5;
 
         ammo = "Aux12thFleet_Ammo_Stun";
+        count = 10;
     };
 
     class Aux12thFleet_Mag_StunLong: Aux12thFleet_Mag_StunShort
@@ -35,10 +37,8 @@ class CfgMagazines
         displayNameShort = "Stun (Long)";
         descriptionShort = "Stun Energy Cell<br/>Rounds: 5<br/>Duration: 15 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M";
 
-        JLTS_hasEMPProtection = 1;
-
-        count = 5;
         JLTS_stunDuration = 15;
+        count = 5;
     };
 
     class UGL_FlareWhite_F;
