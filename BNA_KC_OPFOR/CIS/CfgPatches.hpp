@@ -13,8 +13,10 @@ class CfgPatches
                 // Base unit, uniform, etc. for actor armor
             "JLTS_characters_DroidArmor",
                 // B1 Battle Droids
-            "ls_units_redfor"
+            "ls_units_redfor",
                 // BX models/texture
+            "WBK_DifferentRobotics_1"
+                // Droid walking sounds
         };
         units[] =
         {

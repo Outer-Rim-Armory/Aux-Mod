@@ -182,6 +182,58 @@ class CfgVehicles
 
         linkedItems[] = {"BNA_KC_NVG_Chip", "SWLB_comlink_droid"};
         respawnLinkedItems[] = {"BNA_KC_NVG_Chip", "SWLB_comlink_droid"};
+
+        class SoundBleeding {breath[] = {};};
+        class SoundBreath {breath[] = {};};
+        class SoundBurning {breath[] = {};};
+        class SoundChoke {breath[] = {};};
+        class SoundDrown {breath[] = {};};
+        class SoundEnvironExt
+        {
+            generic[] =
+            {
+                {"run", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 30}},
+                {"run", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 30}},
+                {"run", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 30}},
+                {"run", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 30}},
+                {"walk", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}},
+                {"walk", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}},
+                {"walk", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}},
+                {"walk", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 45}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 45}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 45}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 45}},
+                {"Tactical", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}},
+                {"Tactical", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}},
+                {"Tactical", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}},
+                {"Tactical", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}}
+            };
+        };
+        class SoundEquipment
+        {
+            generic[] =
+            {
+                {"run", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 30}},
+                {"run", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 30}},
+                {"run", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 30}},
+                {"run", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 30}},
+                {"walk", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}},
+                {"walk", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}},
+                {"walk", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}},
+                {"walk", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 45}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 45}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 45}},
+                {"sprint", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 45}},
+                {"Tactical", {"\WebKnightsRobotics\sounds\dirt1.wav", 2, 1, 15}},
+                {"Tactical", {"\WebKnightsRobotics\sounds\dirt2.wav", 2, 1, 15}},
+                {"Tactical", {"\WebKnightsRobotics\sounds\dirt3.wav", 2, 1, 15}},
+                {"Tactical", {"\WebKnightsRobotics\sounds\dirt4.wav", 2, 1, 15}}
+            };
+        };
+        class SoundInjured {breath[] = {};};
+        class SoundRecovered {breath[] = {};};
     };
 
     class BNA_KC_CIS_Unit_B1_Droid: BNA_KC_CIS_Unit_Droid_Base
