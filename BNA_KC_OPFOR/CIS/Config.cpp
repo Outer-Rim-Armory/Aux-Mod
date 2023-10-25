@@ -142,8 +142,8 @@ class CfgVehicles
         faction = "BNA_KC_OPFOR_CIS";
 
         armor = 2;
-        armorStructural = 3;
-        explosionShielding = 0.3;
+        armorStructural = 4;
+        explosionShielding = 0.4;
         impactDamageMultiplier = 0.5;
         minTotalDamageThreshold = 0.001;
 
