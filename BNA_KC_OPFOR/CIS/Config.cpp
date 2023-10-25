@@ -449,7 +449,7 @@ class CfgVehicles
 
         // Editor Properties
         editorSubcategory = "BNA_KC_SubCat_CIS_SpecOps";
-        editorPreview = "\BNA_KC_OPFOR\CIS\Data\Textures\Previews\BX_Commando.jpg";
+        editorPreview = "\BNA_KC_OPFOR\CIS\Data\Textures\Previews\BX_Droid.jpg";
 
         uniformClass = "BNA_KC_CIS_Uniform_BX_Droid";
         model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
