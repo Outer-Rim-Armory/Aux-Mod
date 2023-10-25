@@ -147,6 +147,7 @@ class CfgVehicles
 
         impactEffectsBlood = "ImpactMetal";
         impactEffectsNoBlood = "ImpactMetal";
+        canBleed = 0;
 
         weapons[] =
         {
