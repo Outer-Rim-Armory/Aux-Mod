@@ -22,14 +22,14 @@ class CfgPatches
         {
             "BNA_KC_CIS_Unit_Droid_Base",
             "BNA_KC_CIS_Unit_B1_Droid",
-            "BNA_KC_CIS_Unit_BXDroid"
+            "BNA_KC_CIS_Unit_BX_Droid"
         };
         weapons[] =
         {
             "BNA_KC_CIS_Uniform_Droid_Base",
-            "BNA_KC_CIS_Uniform_BXDroid",
-            "BNA_KC_CIS_Vest_BXDroid",
-            "BNA_KC_CIS_Vest_BXDroid_Melee"
+            "BNA_KC_CIS_Uniform_BX_Droid",
+            "BNA_KC_CIS_Vest_BX_Droid",
+            "BNA_KC_CIS_Vest_BX_Droid_Melee"
         };
     };
 };
