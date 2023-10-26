@@ -9,6 +9,7 @@ class CfgPatches
         {
             "BNA_KC_Gear_Infantry",
             "BNA_KC_Gear_Airborne",
+            "BNA_KC_Gear_Engineers",
             "BNA_KC_Gear_Armored",
             "BNA_KC_Gear_Aviation",
             "BNA_KC_Gear_Commandos",
