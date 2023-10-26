@@ -152,67 +152,6 @@ class BNA_KC_Vest_Hazard: BNA_KC_Vest_Basic
     };
 };
 
-class BNA_KC_Vest_Engineer: BNA_KC_Vest_Basic
-{
-    displayName = "[KC] ENG Vest 01+ (Engineer)";
-
-    model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest.p3d";
-    hiddenSelections[] = {"camo1", "camo2"};
-    hiddenSelectionsTextures[] =
-    {
-        "\SWLB_clones\data\light_accessories_co.paa",
-        "\SWLB_CEE\data\SWLB_CEE_Engineer_Base.paa"
-    };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
-
-    class ItemInfo: ItemInfo
-    {
-        hiddenSelections[] = {"camo1", "camo2"};
-        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest.p3d";
-    };
-};
-
-class BNA_KC_Vest_Engineer_NCO: BNA_KC_Vest_Engineer
-{
-    displayName = "[KC] ENG Vest 04+ (NCO)";
-
-    model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_NCO.p3d";
-    hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
-    hiddenSelectionsTextures[] =
-    {
-        "\SWLB_clones\data\light_accessories_co.paa",
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
-        "\SWLB_clones\data\officer_accessories_co.paa",
-        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
-        "\SWLB_CEE\data\SWLB_CEE_Engineer_Base.paa",
-        "\SWLB_clones\data\arc_accessories_co.paa"
-    };
-
-    class ItemInfo: ItemInfo
-    {
-        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6"};
-        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_NCO.p3d";
-    };
-};
-
-class BNA_KC_Vest_Engineer_Officer: BNA_KC_Vest_Engineer
-{
-    displayName = "[KC] ENG Vest 12+ (Officer)";
-
-    model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_Officer.p3d";
-    hiddenSelectionsTextures[] =
-    {
-        "\SWLB_CEE\data\SWLB_CEE_Engineer_Base.paa",
-        "\SWLB_clones\data\officer_accessories_co.paa"
-    };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
-
-    class ItemInfo: ItemInfo
-    {
-        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_Officer.p3d";
-    };
-};
-
 class BNA_KC_Vest_CLC: BNA_KC_Vest_Basic
 {
     displayName = "[KC] INF Vest 04 (CLC)";

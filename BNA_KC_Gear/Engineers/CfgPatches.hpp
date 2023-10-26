@@ -23,6 +23,11 @@ class CfgPatches
             "BNA_KC_Helmet_Engineer",
             "BNA_KC_Helmet_Engineer_CamoBrown",
             "BNA_KC_Helmet_Engineer_CamoGrey",
+
+            // Vests
+            "BNA_KC_Vest_Engineer",
+            "BNA_KC_Vest_Engineer_NCO",
+            "BNA_KC_Vest_Engineer_Officer",
         };
     };
 };
