@@ -136,6 +136,35 @@ class CfgWeapons
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_Officer.p3d";
         };
     };
+
+    // ┌──────────────────┐
+    // │       NVGs       │
+    // └──────────────────┘
+    class lsd_gar_standard_nvg;
+    class BNA_KC_NVG_Chip: lsd_gar_standard_nvg
+    {
+        class ItemInfo;
+    };
+    class BNA_KC_NVG_Engineer: BNA_KC_NVG_Chip
+    {
+        displayName = "[KC] Engineer Comms";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\SWLB_clone_nvg_co.paa",
+            "\SWLB_clones\data\SWLB_clone_nvg_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+            modelOff = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+        };
+    };
 };
 
 

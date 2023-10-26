@@ -11,7 +11,6 @@ class CfgPatches
                 // Predfined / Custom Weapons
             "ls_armor_bluefor",
                 // P1 and P2 helmets
-                // Engineer Helmet
                 // Insulated Helmet
                 // Basic Uniform
                 // Insulated Uniform
@@ -91,8 +90,6 @@ class CfgPatches
             "BNA_KC_Unit_Phase2_Enlisted_CamoBrown",
             "BNA_KC_Unit_Phase2_NCO_CamoBrown",
             "BNA_KC_Unit_Phase2_Officer_CamoBrown",
-
-            // Engineer Units
 
             // Insulated (Snow) Units
             "BNA_KC_Unit_Insulated_Trooper",
@@ -253,7 +250,6 @@ class CfgPatches
             "BNA_KC_NVG_Chip",
             "BNA_KC_NVG_Visor",
             "BNA_KC_NVG_Visor_v2",
-            "BNA_KC_NVG_Engineer",
             "BNA_KC_NVG_Rangefinder",
             "BNA_KC_NVG_Officer"
         };

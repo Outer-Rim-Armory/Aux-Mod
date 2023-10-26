@@ -32,6 +32,9 @@ class CfgPatches
             "BNA_KC_Vest_Engineer",
             "BNA_KC_Vest_Engineer_NCO",
             "BNA_KC_Vest_Engineer_Officer",
+
+            // NVGs
+            "BNA_KC_NVG_Engineer"
         };
     };
 };
