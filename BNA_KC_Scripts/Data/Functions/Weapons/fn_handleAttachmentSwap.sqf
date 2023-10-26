@@ -54,7 +54,7 @@ if (_attachments isEqualTo []) exitWith
     // Only add the first attachment that matches
     if (_matches isEqualTo 1) exitWith
     {
-        _unit addWeaponItem [_weapon, _attachment];
+        _unit addWeaponItem [_weapon, _attachment, true];
         format ["Adding attachment %1 to %2", _attachment, _weapon] call BNAKC_fnc_devLog;
     };
 } forEach _attachments;
