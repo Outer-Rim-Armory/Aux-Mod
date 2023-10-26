@@ -12,11 +12,11 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class BNA_KC_OPFOR_Uniform_Droid_Base: BNA_KC_OPFOR_Uniform_Base
+    class BNA_KC_CIS_Uniform_Droid_Base: BNA_KC_OPFOR_Uniform_Base
     {
 
     };
-    class BNA_KC_OPFOR_Uniform_BXDroid: BNA_KC_OPFOR_Uniform_Base
+    class BNA_KC_CIS_Uniform_BXDroid: BNA_KC_CIS_Uniform_Droid_Base
     {
         // Scope
         scope = 2;
@@ -26,7 +26,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            uniformClass = "BNA_KC_OPFOR_Unit_BXDroid";
+            uniformClass = "BNA_KC_CIS_Unit_BXDroid";
         };
     };
 
@@ -35,12 +35,12 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class BNA_KC_OPFOR_Uniform_BXDroid_Actor: BNA_KC_Uniform_Base
+    class BNA_KC_CIS_Uniform_BXDroid_Actor: BNA_KC_Uniform_Base
     {
         displayName = "[KC CIS] BX Commando Droid (Actor)";
         class ItemInfo: ItemInfo
         {
-            uniformClass = "BNA_KC_OPFOR_Unit_BXDroid_Actor";
+            uniformClass = "BNA_KC_CIS_Unit_BXDroid_Actor";
         };
     };
 
