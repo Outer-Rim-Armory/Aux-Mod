@@ -26,6 +26,8 @@ class CfgPatches
             "SWLB_Clones",
                 // Clone Commander Visor
                 // Officer Vest
+            "SWLB_CEE",
+                // Vest models
             "JLTS_core"
                 // Droid NVG UI image
         };

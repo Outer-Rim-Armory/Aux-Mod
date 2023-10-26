@@ -11,7 +11,9 @@ class CfgPatches
                 // Base helmet, uniform, etc.
             "ls_armor_bluefor",
                 // Engineer Helmet
-            "LS_units_clones"
+            "LS_units_clones",
+                // Vest models
+            "SWLB_CEE"
                 // Vest models
         };
         units[] =
