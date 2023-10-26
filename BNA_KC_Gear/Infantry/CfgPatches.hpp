@@ -178,11 +178,6 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Officer_CamoBrown",
             "BNA_KC_Helmet_Phase2_Officer_CamoGrey",
 
-            // Engineer Helmets
-            "BNA_KC_Helmet_Engineer",
-            "BNA_KC_Helmet_Engineer_CamoBrown",
-            "BNA_KC_Helmet_Engineer_CamoGrey",
-
             // Insulated (Snow) Helmets
             "BNA_KC_Helmet_Insulated",
 
