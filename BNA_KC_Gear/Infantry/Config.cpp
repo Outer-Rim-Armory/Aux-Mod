@@ -18,6 +18,8 @@ class CfgWeapons
         scope = 0;
         scopeArsenal = 0;
 
+        picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
+
         class ItemInfo;
     };
 
@@ -67,98 +69,6 @@ class CfgWeapons
         {
             hiddenSelections[] = {"camo1", "visor"};
             uniformModel = "\ls_armor_bluefor\helmet\gar\phase2\ls_gar_phase2_helmet.p3d";
-        };
-    };
-
-    class BNA_KC_Helmet_Engineer: BNA_KC_Helmet_Base
-    {
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
-        displayName = "[KC] ENG Helm (Base)";
-
-        model = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
-        hiddenSelections[] = {"camo1", "illum", "visor"};
-        hiddenSelectionsMaterials[] = {"", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat", ""};
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Helmets\Engineer\Helmet_Engineer.paa",
-            "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
-            "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
-        };
-        picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_engineer_helmet_ca.paa";
-
-        // LS Headlamp
-        ls_lighting_hasLight = 1;
-        ls_lighting_itemType = "headgear";
-        ls_lighting_attachedBone = "head";
-
-        class ItemInfo: ItemInfo
-        {
-            hiddenSelections[] = {"camo1", "illum", "visor"};
-            uniformModel = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
-        };
-    };
-
-    class BNA_KC_Helmet_Engineer_CamoBrown: BNA_KC_Helmet_Engineer
-    {
-        displayName = "[KC] ENG Helm (Base) - Brown Camo";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Helmets\Engineer\Helmet_Engineer_CamoBrown.paa",
-            "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
-            "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
-        };
-    };
-
-    class BNA_KC_Helmet_Engineer_CamoGrey: BNA_KC_Helmet_Engineer
-    {
-        displayName = "[KC] ENG Helm (Base) - Grey Camo";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Helmets\Engineer\Helmet_Engineer_CamoGrey.paa",
-            "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
-            "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
-        };
-    };
-
-    class BNA_KC_Helmet_Airborne: BNA_KC_Helmet_Base
-    {
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
-        displayName = "[KC] AB Helm (Trooper)";
-
-        model = "\lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
-        hiddenSelections[] = {"camo1", "visor"};
-        hiddenSelectionsMaterials[] =
-        {
-            "\lsd_armor_bluefor\helmet\gar\airborne\data\helmet.rvmat",
-            "\lsd_armor_bluefor\helmet\gar\airborne\data\visor.rvmat"
-        };
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Helmets\Airborne\Helmet_Airborne.paa"
-        };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
-
-        class ItemInfo: ItemInfo
-        {
-            hiddenSelections[] = {"camo1", "visor"};
-            uniformModel = "\lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
-        };
-
-        subItems[] = {"BNA_KC_NVG_Chip"};
-    };
-
-    class BNA_KC_Helmet_Airborne_v2: BNA_KC_Helmet_Airborne
-    {
-        displayName = "[KC] AB Helm (Trooper, Version 2)";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Helmets\Airborne\Helmet_Airborne_v2.paa"
         };
     };
 
@@ -283,215 +193,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Vest_LCPL: BNA_KC_Vest_Basic
-    {
-        displayName = "[KC] INF Vest 04 (LCPL)";
-
-        model = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
-        hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
-        hiddenSelectionsTextures[] =
-        {
-            "\SWLB_clones\data\heavy_accessories_co.paa",     // Heavy Strap
-            "",                                               // Nothing
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa", // Holster
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_LCPL.paa"  // Pauldron
-        };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
-
-        class ItemInfo: ItemInfo
-        {
-            hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
-            uniformModel = "\SWLB_clones\SWLB_clone_recon_armor.p3d";
-        };
-    };
-
-    class BNA_KC_Vest_CPL: BNA_KC_Vest_LCPL
-    {
-        displayName = "[KC] INF Vest 05 (CPL)";
-        hiddenSelectionsTextures[] =
-        {
-            "\SWLB_clones\data\heavy_accessories_co.paa",
-            "",
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CPL.paa",
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CPL.paa"
-        };
-    };
-
-    class BNA_KC_Vest_CS: BNA_KC_Vest_LCPL
-    {
-        displayName = "[KC] INF Vest 06 (CS)";
-        model = "\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
-        hiddenSelections[] = {"camo1", "camo2"};
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CS.paa",
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
-        };
-
-        class ItemInfo: ItemInfo
-        {
-            hiddenSelections[] = {"camo1", "camo2"};
-            uniformModel = "\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
-        };
-    };
-
-    class BNA_KC_Vest_CSS: BNA_KC_Vest_CS
-    {
-        displayName = "[KC] INF Vest 07 (CSS)";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CSS.paa",
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
-        };
-    };
-
-    class BNA_KC_Vest_CSFC: BNA_KC_Vest_CS
-    {
-        displayName = "[KC] INF Vest 08 (CSFC)";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CSFC.paa",
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
-        };
-    };
-
-    class BNA_KC_Vest_CMS: BNA_KC_Vest_CS
-    {
-        displayName = "[KC] INF Vest 09 (CMS)";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CMS.paa",
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
-        };
-    };
-
-    class BNA_KC_Vest_CSM: BNA_KC_Vest_CS
-    {
-        displayName = "[KC] INF Vest 10 (CSM)";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_CSM.paa",
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
-        };
-    };
-
-    class BNA_KC_Vest_Medic: BNA_KC_Vest_Basic
-    {
-        displayName = "[KC] INF Medic Vest 01 (Medic)";
-
-        model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
-        hiddenSelections[] = {"camo1", "camo2", "ammo", "pauldron"};
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic.paa", // Heavy Bag / Strap
-            "",                                                // Kama
-            "",                                                // Airborne / Ammo thing
-            ""                                                 // Pauldron
-        };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
-
-        class ItemInfo: ItemInfo
-        {
-            hiddenSelections[] = {"camo1", "camo2", "ammo", "pauldron"};
-            uniformModel = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
-            containerClass = "Supply250";
-        };
-    };
-    class BNA_KC_Vest_Medic_Senior: BNA_KC_Vest_Medic
-    {
-        displayName = "[KC] INF Medic Vest 02 (Senior)";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic.paa", // Heavy Bag / Strap
-            "",                                                // Kama
-            "",                                                // Airborne thing
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic.paa"  // Pauldron
-        };
-    };
-
-    class BNA_KC_Vest_Medic_v2: BNA_KC_Vest_Medic
-    {
-        displayName = "[KC] INF Medic Vest 01 (Medic, v2)";
-
-        model = "\SWLB_CEE\data\SWLB_CEE_Airborne_CFR.p3d";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic_v2.paa", // Tablet
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic_v2.paa", // Chest Strap
-            "",                                                   // Airborne / Ammo thing
-            ""                                                    // Pauldron
-        };
-        class ItemInfo: ItemInfo
-        {
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Airborne_CFR.p3d";
-        };
-    };
-    class BNA_KC_Vest_Medic_Senior_v2: BNA_KC_Vest_Medic_v2
-    {
-        displayName = "[KC] INF Medic Vest 02 (Senior, v2)";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic_v2.paa", // Tablet
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic_v2.paa", // Chest Strap
-            "",                                                   // Airborne thing
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic_v2.paa"  // Pauldron
-        };
-    };
-
-    class BNA_KC_Vest_Medic_Platoon: BNA_KC_Vest_Medic
-    {
-        displayName = "[KC] INF Medic Vest 06+ (Platoon)";
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic.paa",         // Heavy Bag / Strap
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic_Platoon.paa", // Kama
-            "",                                                        // Airborne / Ammo thing
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Medic.paa"          // Pauldron
-        };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
-    };
-
-    class BNA_KC_Vest_Officer: BNA_KC_Vest_Basic
-    {
-        displayName = "[KC] INF Vest 12+ (Officer)";
-
-        model = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
-        hiddenSelections[] = {"Camo1"};
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
-        };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
-
-        class ItemInfo: ItemInfo
-        {
-            hiddenSelections[] = {"Camo1"};
-            uniformModel = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
-            containerClass = "Supply200";
-
-            class HitpointsProtectionInfo
-            {
-                class Arms
-                {
-                    hitpointName = "HitArms";
-                    armor = 10;
-                    passThrough = 0.20000001;
-                };
-                class Chest
-                {
-                    HitpointName = "HitChest";
-                    armor = 20;
-                    PassThrough = 0.10000001;
-                };
-                class Legs
-                {
-                    hitpointName = "HitLegs";
-                    armor = 20;
-                    passThrough = 0.10000001;
-                };
-            };
-        };
-    };
+    #include "Vests.hpp"
 
     // ┌──────────────────┐
     // │       NVGs       │
@@ -501,7 +203,6 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-
     class BNA_KC_NVG_Chip: lsd_gar_standard_nvg
     {
         // Mod Info
@@ -835,11 +536,11 @@ class CfgVehicles
         picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Heavy_UI.paa";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa",      // Main Texture
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack.paa",      // Cover
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Heavy
-            "",                                                         // Medic
-            ""                                                          // RTO
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack.paa",         // Main Texture
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack.paa",         // Cover
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Heavy
+            "",                                                          // Medic
+            ""                                                           // RTO
         };
     };
 
@@ -907,13 +608,13 @@ class CfgVehicles
     {
         displayName = "[KC] Clone Trooper Medic Backpack";
 
-        picture = "\BNA_KC_Gear\Infantry\Data\UI\BNA_KC_Backpack_Medic_UI.paa";
+        picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_UI.paa";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Cover
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack_Medic.paa",   // Main Texture
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Cover
             "",                                                          // Heavy
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",  // Medic
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Medic
             ""                                                           // RTO
         };
     };
@@ -925,11 +626,11 @@ class CfgVehicles
         picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_Heavy_UI.paa";
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Cover
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Heavy
-            "",                                                               // Medic
-            ""                                                                // RTO
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack_Medic.paa",   // Main Texture
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Cover
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Heavy
+            "",                                                          // Medic
+            ""                                                           // RTO
         };
     };
 
@@ -940,11 +641,11 @@ class CfgVehicles
         picture = "\BNA_KC_Gear\Infantry\Data\UI\Backpack_Medic_Radio_UI.paa";
         hiddenSelectionsTextures[] =
         {
-            "BNA_KC_Gear\Infantry\Data\Backpacks\BNA_KC_Backpack_Medic.paa", // Main Texture
-            "",                                                              // Cover
-            "",                                                              // Heavy
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",      // Medic
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"       // RTO
+            "\BNA_KC_Gear\Infantry\Data\Backpacks\Backpack_Medic.paa",  // Main Texture
+            "",                                                         // Cover
+            "",                                                         // Heavy
+            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa", // Medic
+            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"  // RTO
         };
     };
 };

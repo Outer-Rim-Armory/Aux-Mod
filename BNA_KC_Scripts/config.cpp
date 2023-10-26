@@ -49,11 +49,11 @@ class CfgFunctions
             class inCustomCamera {};
 		};
 
-		class Fortifications
+		class Fortify
 		{
-			file = "BNA_KC_Scripts\Data\Functions\Fortification";
-			class FortificationsPostInit {};
-            class RegisterPreset {};
+			file = "BNA_KC_Scripts\Data\Functions\Fortify";
+			class fortifyObjectPlaced {};
+            class registerPreset {};
 		};
 
         class Map
@@ -81,6 +81,7 @@ class CfgFunctions
         {
             file = "BNA_KC_Scripts\Data\Functions\Weapons";
             class specialGrenadesEH {};
+            class handleAttachmentSwap {};
         };
 
         class Vehicles
@@ -189,6 +190,17 @@ class Extended_GetIn_EventHandlers
         class BNA_KC_SetIntercomChannel
         {
             getIn = "_this call BNAKC_fnc_setIntercomChannel";
+        };
+    };
+};
+
+class Extended_Reloaded_EventHandlers
+{
+    class CAManBase
+    {
+        class BNA_KC_AttachmentSwap
+        {
+            reloaded = "_this call BNAKC_fnc_handleAttachmentSwap";
         };
     };
 };

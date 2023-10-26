@@ -8,13 +8,18 @@ class CfgPatches
         requiredAddons[] =
         {
             "BNA_KC_Gear_Infantry",
+            "BNA_KC_Gear_Airborne",
+            "BNA_KC_Gear_Engineers",
             "BNA_KC_Gear_Armored",
             "BNA_KC_Gear_Aviation",
-            "BNA_KC_Gear_SpecialForces"
+            "BNA_KC_Gear_Commandos",
+            "BNA_KC_Gear_SpecialForces",
+            "BNA_KC_Gear_Jedi"
         };
         units[] =
         {
             // Standard Units
+            "BNA_KC_Unit_Axel",
             "BNA_KC_Unit_Burnt",
             "BNA_KC_Unit_Dexus",
             "BNA_KC_Unit_Drake",
@@ -79,6 +84,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Burnt_Bacta",
             "BNA_KC_Helmet_Phase2_Dexus",
             "BNA_KC_Helmet_Phase2_Dexus_Bacta",
+            "BNA_KC_Helmet_Phase2_Evo",
             "BNA_KC_Helmet_Phase2_Fil",
             "BNA_KC_Helmet_Phase2_FilSquad",
             "BNA_KC_Helmet_Phase2_Grey",
@@ -141,6 +147,7 @@ class CfgPatches
             "BNA_KC_Helmet_ARC_Drake",
             "BNA_KC_Helmet_ARC_Drake_Bacta",
             "BNA_KC_Helmet_ARC_Hagrid",
+            "BNA_KC_Helmet_ARC_Hagrid_Plasma",
             "BNA_KC_Helmet_ARC_Tyrant",
             "BNA_KC_Helmet_ARF_Patriot",
             "BNA_KC_Helmet_ARF_Sin",
@@ -148,6 +155,7 @@ class CfgPatches
             "BNA_KC_Helmet_BARC_Rat_Crimson",
 
             // Standard Uniforms
+            "BNA_KC_Uniform_Axel",
             "BNA_KC_Uniform_Burnt",
             "BNA_KC_Uniform_Dexus",
             "BNA_KC_Uniform_Drake",

@@ -1,15 +1,37 @@
 // WIKI: https://github.com/CBATeam/CBA_A3/wiki/CBA-Settings-System#creating-a-setting
 
+private _presetNames = configProperties
+[
+    configfile >> "ACEX_Fortify_Presets"
+] apply { configName _x; };
+_presetNames = _presetNames select
+{
+	_x find "BNA_KC" isEqualTo 0
+};
+
+private _presetDisplayNames = _presetNames apply
+{
+    private _name =
+    [
+        (configfile >> "ACEX_Fortify_Presets" >> _x),
+        "displayName",
+        "Unknown Preset"
+    ] call BIS_fnc_returnConfigEntry;
+    _name;
+};
+_presetNames insert [0, ["Disabled"]];
+_presetDisplayNames insert [0, ["Disabled"]];
+
 // ACE Fortify Settings
 [
     "BNA_KC_FortifyPreset",
     "LIST",
     ["Preset", "Select what preset to use with ACE's Fortify System, or to disable it."],
     ["Keeli Company Aux Mod", "ACE Fortify Options"],
-    [["Disabled", "BNA_KC_FortifyPreset_Default"], ["STR_A3_OPTIONS_DISABLED", "STR_A3_OPTIONS_DEFAULT"], 1],
+    [_presetNames, _presetDisplayNames, 2],
     1, // isGlobal
     {
-        [] call BNAKC_fnc_RegisterPreset;
+        call BNAKC_fnc_RegisterPreset;
     }
 ] call CBA_fnc_addSetting;
 

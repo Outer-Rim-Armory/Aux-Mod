@@ -13,7 +13,6 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-
     class BNA_KC_Vest_Officer_Keeli: BNA_KC_Vest_Officer
     {
         displayName = "[KC] INF Vest 12+ ('Keeli')";
@@ -21,6 +20,8 @@ class CfgWeapons
         {
             "\BNA_KC_Gear\Customs\Data\Textures\Vests\Vest_Officer_Keeli.paa"
         };
+
+        BNA_KC_isCustom = 1;
     };
     class BNA_KC_Vest_Officer_Ponds: BNA_KC_Vest_Officer
     {
@@ -34,6 +35,8 @@ class CfgWeapons
         {
             containerClass = "Supply250"; // To match medic vests
         };
+
+        BNA_KC_isCustom = 1;
     };
     class BNA_KC_Vest_Officer_Rat: BNA_KC_Vest_Officer
     {
@@ -42,6 +45,8 @@ class CfgWeapons
         {
             "\BNA_KC_Gear\Customs\Data\Textures\Vests\Vest_Officer_Rat.paa"
         };
+
+        BNA_KC_isCustom = 1;
     };
 
 
@@ -49,7 +54,6 @@ class CfgWeapons
     // │       NVGs       │
     // └──────────────────┘
     class BNA_KC_NVG_Officer;
-
     class BNA_KC_NVG_Officer_Keeli: BNA_KC_NVG_Officer
     {
         displayName = "[KC] Clone P2 Officer Visor ('Keeli')";
@@ -57,6 +61,8 @@ class CfgWeapons
         {
             "\BNA_KC_Gear\Customs\Data\Textures\NVGs\NVG_Officer_Keeli.paa"
         };
+
+        BNA_KC_isCustom = 1;
     };
 };
 
@@ -77,10 +83,12 @@ class CfgVehicles
         {
             "\BNA_KC_Gear\Customs\Data\Textures\Backpacks\Backpack_Keeli.paa", // Main Texture
             "\BNA_KC_Gear\Customs\Data\Textures\Backpacks\Backpack_Keeli.paa", // Cover
-            "",                                                             // Heavy
-            "",                                                             // Medic
-            ""                                                              // RTO
+            "",                                                                // Heavy
+            "",                                                                // Medic
+            ""                                                                 // RTO
         };
+
+        BNA_KC_isCustom = 1;
     };
 };
 

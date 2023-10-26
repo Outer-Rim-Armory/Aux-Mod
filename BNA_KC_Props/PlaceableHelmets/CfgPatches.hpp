@@ -15,7 +15,7 @@ class CfgPatches
             // All KC Helmets required
         };
         units[] =
-		{
+        {
             // Infantry
             // Phase 1
             "BNA_KC_HelmetHolder_P1_CR",
@@ -25,7 +25,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P1_CT_v4",
             "BNA_KC_HelmetHolder_P1_SCT",
             "BNA_KC_HelmetHolder_P1_VCT",
-            "BNA_KC_HelmetHolder_P1_LCPL",
+            "BNA_KC_HelmetHolder_P1_CLC",
             "BNA_KC_HelmetHolder_P1_CPL",
             "BNA_KC_HelmetHolder_P1_CS",
             "BNA_KC_HelmetHolder_P1_CSS",
@@ -42,8 +42,8 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_SCT_Legacy",
             "BNA_KC_HelmetHolder_P2_VCT",
             "BNA_KC_HelmetHolder_P2_VCT_Legacy",
-            "BNA_KC_HelmetHolder_P2_LCPL",
-            "BNA_KC_HelmetHolder_P2_LCPL_Legacy",
+            "BNA_KC_HelmetHolder_P2_CLC",
+            "BNA_KC_HelmetHolder_P2_CLC_Legacy",
             "BNA_KC_HelmetHolder_P2_CPL",
             "BNA_KC_HelmetHolder_P2_CS",
             "BNA_KC_HelmetHolder_P2_CS_Legacy",
@@ -127,6 +127,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Burnt_Bacta",
             "BNA_KC_HelmetHolder_P2_Dexus",
             "BNA_KC_HelmetHolder_P2_Dexus_Bacta",
+            "BNA_KC_HelmetHolder_P2_Evo",
             "BNA_KC_HelmetHolder_P2_Fil",
             "BNA_KC_HelmetHolder_P2_FilSquad",
             "BNA_KC_HelmetHolder_P2_Grey",
@@ -177,17 +178,16 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Tanker_Catholic_Kyber",
             "BNA_KC_HelmetHolder_P2_Tanker_Grey",
             // Special Forces
-            "BNA_KC_HelmetHolder_ARC_Burnt",
-            "BNA_KC_HelmetHolder_ARC_Burnt_Bacta",
             "BNA_KC_HelmetHolder_ARC_Drake",
             "BNA_KC_HelmetHolder_ARC_Drake_Bacta",
             "BNA_KC_HelmetHolder_ARC_Hagrid",
+            "BNA_KC_HelmetHolder_ARC_Hagrid_Plasma",
             "BNA_KC_HelmetHolder_ARC_Tyrant",
             "BNA_KC_HelmetHolder_ARF_Patriot",
             "BNA_KC_HelmetHolder_ARF_Sin",
             "BNA_KC_HelmetHolder_BARC_Rat",
             "BNA_KC_HelmetHolder_BARC_Rat_Crimson"
-		};
+        };
         weapons[] = {};
     };
 };

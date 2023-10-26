@@ -12,11 +12,11 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class BNA_KC_OPFOR_Uniform_Droid_Base: BNA_KC_OPFOR_Uniform_Base
+    class BNA_KC_CIS_Uniform_Droid_Base: BNA_KC_OPFOR_Uniform_Base
     {
 
     };
-    class BNA_KC_OPFOR_Uniform_BXDroid: BNA_KC_OPFOR_Uniform_Base
+    class BNA_KC_CIS_Uniform_BXDroid: BNA_KC_CIS_Uniform_Droid_Base
     {
         // Scope
         scope = 2;
@@ -26,7 +26,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            uniformClass = "BNA_KC_OPFOR_Unit_BXDroid";
+            uniformClass = "BNA_KC_CIS_Unit_BXDroid";
         };
     };
 
@@ -35,12 +35,12 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class BNA_KC_OPFOR_Uniform_BXDroid_Actor: BNA_KC_Uniform_Base
+    class BNA_KC_CIS_Uniform_BXDroid_Actor: BNA_KC_Uniform_Base
     {
         displayName = "[KC CIS] BX Commando Droid (Actor)";
         class ItemInfo: ItemInfo
         {
-            uniformClass = "BNA_KC_OPFOR_Unit_BXDroid_Actor";
+            uniformClass = "BNA_KC_CIS_Unit_BXDroid_Actor";
         };
     };
 
@@ -59,7 +59,7 @@ class CfgWeapons
             class HitpointsProtectionInfo;
         };
     };
-    class BNA_KC_OPFOR_Vest_BXDroid: BNA_KC_OPFOR_Vest_Base
+    class BNA_KC_CIS_Vest_BXDroid: BNA_KC_OPFOR_Vest_Base
     {
         // Scope
         scope = 2;
@@ -82,7 +82,7 @@ class CfgWeapons
             uniformModel = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
         };
     };
-    class BNA_KC_OPFOR_Vest_BXDroid_Melee: BNA_KC_OPFOR_Vest_BXDroid
+    class BNA_KC_CIS_Vest_BXDroid_Melee: BNA_KC_CIS_Vest_BXDroid
     {
         displayName = "[KC CIS] BX Commando Droid [Melee Vest]";
         model = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
@@ -97,12 +97,12 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class BNA_KC_OPFOR_Vest_BXDroid_Actor: BNA_KC_Vest_Basic
+    class BNA_KC_CIS_Vest_BXDroid_Actor: BNA_KC_Vest_Basic
     {
         displayName = "[KC CIS] BX Commando Droid (Actor)";
         picture = "\ls_data\icons\LS_logo_ca.paa";
     };
-    class BNA_KC_OPFOR_Vest_BXDroid_Melee_Actor: BNA_KC_OPFOR_Vest_BXDroid_Actor
+    class BNA_KC_CIS_Vest_BXDroid_Melee_Actor: BNA_KC_CIS_Vest_BXDroid_Actor
     {
         model = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
         class ItemInfo: ItemInfo
@@ -119,7 +119,7 @@ class CfgVehicles
     // │       Units       │
     // └───────────────────┘
     class BNA_KC_OPFOR_Unit_Base;
-    class BNA_KC_OPFOR_Unit_Droid_Base: BNA_KC_OPFOR_Unit_Base
+    class BNA_KC_CIS_Unit_Droid_Base: BNA_KC_OPFOR_Unit_Base
     {
         faction = "BNA_KC_OPFOR_CIS";
 
@@ -135,7 +135,7 @@ class CfgVehicles
         impactEffectsNoBlood = "ImpactMetal";
     };
 
-    class BNA_KC_OPFOR_Unit_BXDroid: BNA_KC_OPFOR_Unit_Droid_Base
+    class BNA_KC_CIS_Unit_BXDroid: BNA_KC_CIS_Unit_Droid_Base
     {
         // Scope
         scope = 2;
@@ -199,16 +199,16 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_OPFOR_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_OPFOR_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
         };
     };
 
     class BNA_KC_Unit_Base;
-    class BNA_KC_OPFOR_Unit_BXDroid_Actor: BNA_KC_Unit_Base
+    class BNA_KC_CIS_Unit_BXDroid_Actor: BNA_KC_Unit_Base
     {
         scope = 1;
         scopeCurator = 0;
@@ -216,7 +216,7 @@ class CfgVehicles
         impactEffectsBlood = "ImpactMetal";
         impactEffectsNoBlood = "ImpactMetal";
 
-        uniformClass = "BNA_KC_OPFOR_Uniform_BXDroid_Actor";
+        uniformClass = "BNA_KC_CIS_Uniform_BXDroid_Actor";
         model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};

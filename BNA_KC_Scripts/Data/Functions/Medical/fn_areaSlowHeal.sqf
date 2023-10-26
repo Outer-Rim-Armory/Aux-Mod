@@ -13,8 +13,8 @@
  */
 
 
-params [["_object", objNull, [objNull]]];
-private ["_healRadius", "_healRate", "_maxPatients", "_currentPatients", "_objectName"];
+params [["_object", objNull, [objNull]], ["_healRate", -1, [0]]];
+private ["_healRadius", "_maxPatients", "_currentPatients", "_objectName"];
 
 if (isNull _object) exitWith {};
 
@@ -30,12 +30,16 @@ _healRadius =
     "BNA_KC_Medical_areaHealRadius",
     7
 ] call BIS_fnc_returnConfigEntry;
-_healRate =
-[
-    configFile >> "CfgVehicles" >> typeOf _object,
-    "BNA_KC_Medical_areaHealRate",
-    6
-] call BIS_fnc_returnConfigEntry;
+if (_healRate isEqualTo -1) then
+{
+    // Allows passing a custom heal rate, if none is passed, check the object is CfgVehicles
+    _healRate =
+    [
+        configFile >> "CfgVehicles" >> typeOf _object,
+        "BNA_KC_Medical_areaHealRate",
+        6
+    ] call BIS_fnc_returnConfigEntry;
+};
 _maxPatients =
 [
     configFile >> "CfgVehicles" >> typeOf _object,
@@ -92,7 +96,7 @@ while {!isNull _object} do
     };
     format ["Current patients after checks: %1", _currentPatients] call BNAKC_fnc_devLog;
 
-    if (_unitsToHeal isEqualTo []) then {"No units to heal, skipping" call BNAKC_fnc_devLog; continue;};
+    if (_unitsToHeal isEqualTo []) then {"No new units to heal, skipping" call BNAKC_fnc_devLog; continue;};
 
     // Sort by most injured to least
     _unitsToHeal = [_unitsToHeal] call BNAKC_fnc_sortUnitsByInjuries;

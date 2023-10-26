@@ -112,7 +112,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC GM] Gal'torran Uniform";
+        displayName = "[KC GM] Uniform";
         picture = "\ls_armor_greenfor\uniform\mandalorian\_ui\icon_uniform_undersuit.paa";
 
         class ItemInfo: ItemInfo
@@ -152,7 +152,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC GM] Gal'torran Light Vest";
+        displayName = "[KC GM] Light Vest";
         descriptionShort = "Armor Level III";
 
         model = "\MDF\MDFTorso.p3d";
@@ -178,7 +178,7 @@ class CfgWeapons
 
     class BNA_KC_Galtorran_Vest_Medium: BNA_KC_Galtorran_Vest
     {
-        displayName = "[KC GM] Gal'torran Medium Vest";
+        displayName = "[KC GM] Medium Vest";
         descriptionShort = "Armor Level IV";
         model = "\MDF\MDFMedium.p3d";
 
@@ -205,7 +205,7 @@ class CfgWeapons
 
     class BNA_KC_Galtorran_Vest_Heavy: BNA_KC_Galtorran_Vest
     {
-        displayName = "[KC GM] Gal'torran Heavy Vest";
+        displayName = "[KC GM] Heavy Vest";
         descriptionShort = "Armor Level V";
         model = "\MDF\MDFHeavy.p3d";
         hiddenSelectionsTextures[] = {"\MDF\MDFTorso\Black\DefaultMaterial_CO.paa", "MDF\MDFLegs\Black\DefaultMaterial_CO.paa"};
@@ -483,7 +483,7 @@ class CfgVehicles
         scopeArsenal = 2;
         scopeCurator = 2;
 
-        displayName = "[KC GM] Gal'torran Backpack";
+        displayName = "[KC GM] Backpack";
         descriptionshort = "Gal'torran Military Backpack";
 
         model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
@@ -519,7 +519,7 @@ class CfgVehicles
 
     class BNA_KC_Galtorran_Veteran_Backpack: BNA_KC_Galtorran_Backpack
     {
-        displayName = "[KC GM] Gal'torran Veteran Backpack";
+        displayName = "[KC GM] Veteran Backpack";
         maximumLoad = 250;
         model = "\3AS\3AS_Characters\Commando\3AS_Katarn_BackPack.p3d";
         hiddenSelections[] = {"Camo"};
@@ -558,7 +558,7 @@ class CfgVehicles
 
     class BNA_KC_Galtorran_Elite_Backpack: BNA_KC_Galtorran_Backpack
     {
-        displayName = "[KC GM] Gal'torran Elite Backpack";
+        displayName = "[KC GM] Elite Backpack";
         maximumLoad = 350;
 
         model = "\SentinelBackpack\SentinelBackpack.p3d";
@@ -602,7 +602,7 @@ class CfgVehicles
 
     class BNA_KC_Galtorran_Backpack_Heavy: BNA_KC_Galtorran_Backpack
     {
-        displayName = "[KC GM] Gal'torran Heavy Backpack";
+        displayName = "[KC GM] Heavy Backpack";
         maximumLoad = 350;
 
         model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
@@ -638,7 +638,7 @@ class CfgVehicles
 
     class BNA_KC_Galtorran_Veteran_Backpack_Heavy: BNA_KC_Galtorran_Veteran_Backpack
     {
-        displayName = "[KC GM] Gal'torran Veteran Heavy Backpack";
+        displayName = "[KC GM] Veteran Heavy Backpack";
         maximumLoad = 450;
     };
     class BNA_KC_Galtorran_Veteran_Backpack_Heavy_Predef_AT: BNA_KC_Galtorran_Veteran_Backpack_Heavy
@@ -675,7 +675,7 @@ class CfgVehicles
 
     class BNA_KC_Galtorran_Elite_Backpack_Heavy: BNA_KC_Galtorran_Elite_Backpack
     {
-        displayName = "[KC GM] Gal'torran Elite Heavy Backpack";
+        displayName = "[KC GM] Elite Heavy Backpack";
         maximumLoad = 550;
     };
     class BNA_KC_Galtorran_Elite_Backpack_Heavy_Predef_AT: BNA_KC_Galtorran_Elite_Backpack_Heavy
@@ -714,7 +714,7 @@ class CfgVehicles
 
     class BNA_KC_Galtorran_Backpack_RTO: BNA_KC_Galtorran_Backpack
     {
-        displayName = "[KC GM] Gal'torran Radio Backpack";
+        displayName = "[KC GM] Radio Backpack";
 
         model = "\OPTRE_unsc_units\army\rucksack.p3d";
         hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Addons"};
@@ -753,7 +753,7 @@ class CfgVehicles
 
     class BNA_KC_Galtorran_Elite_Backpack_RTO: BNA_KC_Galtorran_Backpack_RTO
     {
-        displayName = "[KC GM] Gal'torran Elite Radio Backpack";
+        displayName = "[KC GM] Elite Radio Backpack";
         hiddenSelectionsTextures[] = {"\optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_blk_co.paa"};
         maximumLoad = 300;
     };

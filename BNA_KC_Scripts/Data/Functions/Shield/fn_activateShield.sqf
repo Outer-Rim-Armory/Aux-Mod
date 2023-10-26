@@ -15,7 +15,7 @@
 
 #include "script_component.sqf"
 params [["_vehicle", objNull, [objNull]]];
-private ["_hasShield", "_shieldHealth"];
+private ["_hasShield", "_shieldHealth", "_fullCrew"];
 
 if (isNull _vehicle) exitWith {};
 if !(alive _vehicle) exitWith {};
@@ -35,6 +35,11 @@ _shieldHealth =
     "BNA_KC_Shield_maxHealth",
     BASE_SHIELD_HEALTH
 ] call BIS_fnc_returnConfigEntry;
+
+_fullCrew = (fullCrew _vehicle) apply {_x#0};
+{
+    _x allowDamage false;
+} forEach _fullCrew;
 
 _vehicle setVariable ["BNA_KC_Shield_isActive", true, true];
 if (_vehicle getVariable ["BNA_KC_Shield_health", -1] isEqualTo -1) then

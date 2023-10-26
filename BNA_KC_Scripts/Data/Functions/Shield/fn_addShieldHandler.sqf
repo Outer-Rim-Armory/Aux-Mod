@@ -38,6 +38,11 @@ _vehicle addEventHandler
         _regenHandler = _vehicle getVariable ["BNA_KC_Shield_regenHandler", -1];
         [_regenHandler] call CBA_fnc_removePerFrameHandler;
         _vehicle setVariable ["BNA_KC_Shield_regenHandler", nil, true];
+
+        _fullCrew = (fullCrew _vehicle) apply {_x#0};
+        {
+            _x allowDamage true;
+        } forEach _fullCrew;
     }
 ];
 _vehicle addEventHandler
@@ -51,6 +56,15 @@ _vehicle addEventHandler
         _regenHandler = _vehicle getVariable ["BNA_KC_Shield_regenHandler", -1];
         [_regenHandler] call CBA_fnc_removePerFrameHandler;
         _vehicle setVariable ["BNA_KC_Shield_regenHandler", nil, true];
+    }
+];
+
+_vehicle addEventHandler
+[
+    "GetOut",
+    {
+        params ["_vehicle", "_role", "_unit", "_turret", "_isEject"];
+        _unit allowDamage true;
     }
 ];
 

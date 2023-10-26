@@ -172,8 +172,6 @@ class CfgVehicles
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
-
-        BNA_KC_Jet_strength = 0;
     };
 
     class BNA_KC_Jetpack_CDV19: BNA_KC_Jetpack_JT12

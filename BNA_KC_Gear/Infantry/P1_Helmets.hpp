@@ -72,12 +72,12 @@ class BNA_KC_Helmet_Phase1_VCT: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_LCPL: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_CLC: BNA_KC_Helmet_Phase1_Base
 {
     displayName = "[KC] INF P1 Helm 04 (Lance Corporal)";
     hiddenSelectionsTextures[] =
     {
-        "\BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Helmet_P1_LCPL.paa",
+        "\BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Helmet_P1_CLC.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };

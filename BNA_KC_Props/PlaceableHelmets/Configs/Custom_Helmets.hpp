@@ -43,6 +43,7 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Burnt, [KC] INF P2 Helm ('Burnt'), BNA_KC_H
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Burnt_Bacta, [KC] INF P2 Helm ('Burnt') [Bacta Visor], BNA_KC_Helmet_Phase2_Burnt_Bacta, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Dexus, [KC] INF P2 Helm ('Dexus'), BNA_KC_Helmet_Phase2_Dexus, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Dexus_Bacta, [KC] INF P2 Helm ('Dexus') [Bacta Visor], BNA_KC_Helmet_Phase2_Dexus_Bacta, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Evo, [KC] INF P2 Helm ('Evo'), BNA_KC_Helmet_Phase2_Evo, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Fil, [KC] INF P2 Helm ('Fil'), BNA_KC_Helmet_Phase2_Fil, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_FilSquad, [KC] INF P2 Helm ('Fil's Squad'), BNA_KC_Helmet_Phase2_FilSquad, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Grey, [KC] INF P2 Helm ('Grey'), BNA_KC_Helmet_Phase2_Grey, "Customs")
@@ -109,11 +110,10 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Tanker_Grey, [KC] ARMR P2 Helm ('Grey'), BN
 // ┌───────────────────┐
 // │    SF  Helmets    │
 // └───────────────────┘
-HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Burnt, [KC] SF ARC Helm ('Burnt'), BNA_KC_Helmet_ARC_Burnt, "Customs")
-HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Burnt_Bacta, [KC] SF ARC Helm ('Burnt') [Bacta Visor], BNA_KC_Helmet_ARC_Drake_Bacta, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Drake, [KC] SF ARC Helm ('Drake'), BNA_KC_Helmet_ARC_Drake, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Drake_Bacta, [KC] SF ARC Helm ('Drake') [Bacta Visor], BNA_KC_Helmet_ARC_Drake_Bacta, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Hagrid, [KC] SF ARC Helm ('Hagrid'), BNA_KC_Helmet_ARC_Hagrid, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Hagrid_Plasma, [KC] SF ARC Helm ('Hagrid') [Plasma Visor], BNA_KC_Helmet_ARC_Hagrid_Plasma, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Tyrant, [KC] SF ARC Helm ('Tyrant'), BNA_KC_Helmet_ARC_Tyrant, "Customs")
 
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARF_Patriot, [KC] SF ARF Helm ('Patriot'), BNA_KC_Helmet_ARF_Patriot, "Customs")
