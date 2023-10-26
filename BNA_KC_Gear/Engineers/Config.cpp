@@ -24,7 +24,7 @@ class CfgWeapons
         hiddenSelectionsMaterials[] = {"", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat", ""};
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Gear\Infantry\Data\Helmets\Engineer\Helmet_Engineer.paa",
+            "\BNA_KC_Gear\Engineers\Data\Textures\Helmets\Helmet_Engineer.paa",
             "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
             "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
         };
@@ -47,7 +47,7 @@ class CfgWeapons
         displayName = "[KC] ENG Helm (Base) - Brown Camo";
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Gear\Infantry\Data\Helmets\Engineer\Helmet_Engineer_CamoBrown.paa",
+            "\BNA_KC_Gear\Engineers\Data\Textures\Helmets\Helmet_Engineer_CamoBrown.paa",
             "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
             "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
         };
@@ -58,7 +58,7 @@ class CfgWeapons
         displayName = "[KC] ENG Helm (Base) - Grey Camo";
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Gear\Infantry\Data\Helmets\Engineer\Helmet_Engineer_CamoGrey.paa",
+            "\BNA_KC_Gear\Engineers\Data\Textures\Helmets\Helmet_Engineer_CamoGrey.paa",
             "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
             "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
         };
