@@ -13,8 +13,10 @@ class CfgPatches
                 // Engineer Helmet
             "LS_units_clones",
                 // Vest models
+            "SWLB_clones",
+                // Vest models / textures
             "SWLB_CEE"
-                // Vest models
+                // Vest models / textures
         };
         units[] =
         {
