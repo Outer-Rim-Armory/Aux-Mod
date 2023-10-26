@@ -50,7 +50,7 @@ class CfgVehicles
 
         hiddenselectionstextures[] =
         {
-            "\3as\3AS_btlb\data\chasis_co.paa",
+            "\3as\3AS_btlb\textures\chasis_shadow_co.paa",
             "\3as\3AS_btlb\data\detail_co.paa",
             "\3as\3AS_btlb\data\interior_co.paa"
         };
@@ -65,7 +65,7 @@ class CfgVehicles
                 factions[] = {"BNA_KC_Faction"};
                 textures[] =
                 {
-                    "\3as\3AS_btlb\data\chasis_co.paa",
+                    "\3as\3AS_btlb\textures\chasis_shadow_co.paa",
                     "\3as\3AS_btlb\data\detail_co.paa",
                     "\3as\3AS_btlb\data\interior_co.paa"
                 };
@@ -75,7 +75,7 @@ class CfgVehicles
                 displayName = "Standard Leader";
                 textures[] =
                 {
-                    "\3as\3AS_btlb\textures\chasis_redleader_co.paa",
+                    "\3as\3AS_btlb\textures\chasis_shadowleader_co.paa",
                     "\3as\3AS_btlb\data\detail_co.paa",
                     "\3as\3AS_btlb\data\interior_co.paa"
                 };
