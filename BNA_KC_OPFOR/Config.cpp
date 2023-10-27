@@ -78,3 +78,33 @@ class CfgVehicles
         picture = "";
     };
 };
+
+
+class CfgEditorSubcategories
+{
+    class BNA_KC_SubCat_OPFOR_Infantry
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Infantry";
+    };
+
+    class BNA_KC_SubCat_OPFOR_Tanks: BNA_KC_SubCat_OPFOR_Infantry
+    {
+        displayName = "Tanks";
+    };
+
+    class BNA_KC_SubCat_OPFOR_Helicopters: BNA_KC_SubCat_OPFOR_Infantry
+    {
+        displayName = "Helicopters";
+    };
+
+    class BNA_KC_SubCat_OPFOR_Planes: BNA_KC_SubCat_OPFOR_Infantry
+    {
+        displayName = "Planes";
+    };
+};

@@ -29,3 +29,18 @@ class CfgVehicles
     // │      Vehicles     │
     // └───────────────────┘
 };
+
+
+class CfgFactionClasses
+{
+    class BNA_KC_OPFOR_EPF
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "[KC] El Presidente Forces";
+    };
+};
