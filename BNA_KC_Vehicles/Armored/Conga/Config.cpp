@@ -7,7 +7,10 @@ class CfgVehicles
     class APC_Wheeled_01_base_F;
     class OPTRE_M413_base: APC_Wheeled_01_base_F
     {
-        class Turrets;
+        class Turrets
+        {
+            class MainTurret;
+        };
         class AnimationSources;
     };
     class OPTRE_M412_IFV_UNSC: OPTRE_M413_base
@@ -121,7 +124,16 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Conga_MGS_Base: OPTRE_M413_base
+    class OPTRE_M413_MGS_UNSC: OPTRE_M413_base
+    {
+        class AnimationSources: AnimationSources
+        {
+            class muzzle_hide;
+            class muzzle_rot;
+            class recoil_source;
+        };
+    };
+    class BNA_KC_Conga_MGS_Base: OPTRE_M413_MGS_UNSC
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -181,6 +193,43 @@ class CfgVehicles
                     "\OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
                     "\OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
                 };
+            };
+        };
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] = {"OPTRE_105mm_M556", "OPTRE_M670_ATGM_Launcher"};
+                magazines[] =
+                {
+                    "OPTRE_60Rnd_105mm_APBC",
+                    "OPTRE_60Rnd_105mm_SAPHE",
+                    "OPTRE_60Rnd_105mm_HEAT",
+                    "OPTRE_60Rnd_105mm_APBC",
+                    "OPTRE_60Rnd_105mm_SAPHE",
+                    "OPTRE_60Rnd_105mm_HEAT",
+                    "OPTRE_60Rnd_105mm_APBC",
+                    "OPTRE_60Rnd_105mm_SAPHE",
+                    "OPTRE_60Rnd_105mm_HEAT",
+                    "OPTRE_2Rnd_GAT_missiles"
+                };
+            };
+        };
+
+        class AnimationSources: AnimationSources
+        {
+            class muzzle_hide: muzzle_hide
+            {
+                weapon = "OPTRE_105mm_M556";
+            };
+            class muzzle_rot: muzzle_rot
+            {
+                weapon = "OPTRE_105mm_M556";
+            };
+            class recoil_source: recoil_source
+            {
+                weapon = "OPTRE_105mm_M556";
             };
         };
     };
