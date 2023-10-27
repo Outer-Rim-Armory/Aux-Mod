@@ -253,6 +253,9 @@ class CfgVehicles
             "\ls_vehicles_ground\aat\data\black\gun_black_co.paa"
         };
 
+        textureList[] = {};
+        class TextureSources {};
+
         class Turrets: Turrets
         {
             class MainTurret: MainTurret
