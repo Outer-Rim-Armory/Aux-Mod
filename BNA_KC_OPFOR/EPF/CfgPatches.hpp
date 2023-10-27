@@ -32,9 +32,10 @@ class CfgPatches
         weapons[] =
         {
             // Uniforms
-            "BNA_KC_EPF_Uniform"
+            "BNA_KC_EPF_Uniform",
 
             // Vests
+            "BNA_KC_EPF_Vest"
         };
 
         skipWhenMissingDependencies = 1;

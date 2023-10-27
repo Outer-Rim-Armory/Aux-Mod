@@ -30,6 +30,47 @@ class CfgWeapons
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
+    class V_PlateCarrier1_rgr;
+    class ls_redforVest_base: V_PlateCarrier1_rgr
+    {
+        class ItemInfo;
+    };
+    class BNA_KC_OPFOR_Vest_Base: ls_redforVest_base
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo;
+        };
+    };
+    class BNA_KC_EPF_Vest: BNA_KC_OPFOR_Vest_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[EPF] Light Vest";
+        descriptionShort = "Armor Level III";
+
+        model = "\sc_equipment\data\watchdog\wd_vest_basic.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] =
+        {
+            "\sc_equipment\data\marine\textures\vest_green_co.paa"
+        };
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo"};
+            uniformModel = "\sc_equipment\data\watchdog\wd_vest_basic.p3d";
+
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen;
+                class Chest;
+                class Diaphragm;
+            };
+        };
+    };
 };
 
 
