@@ -13,13 +13,13 @@ class BNA_KC_Plesioth_EPF: BNA_KC_Plesioth
 
     hiddenSelectionsTextures[] =
     {
-            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_lopo_co.paa",
-            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_tur_wood_co.paa",
-            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\det_3_co.paa",
-            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_decals_ca.paa",
-            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_net_wood_ca.paa",
-            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_net_wood_ca.paa",
-            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\mine_roller_co.paa"
-        };
+        "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_lopo_co.paa",
+        "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_tur_wood_co.paa",
+        "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\det_3_co.paa",
+        "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_decals_ca.paa",
+        "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_net_wood_ca.paa",
+        "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_net_wood_ca.paa",
+        "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\mine_roller_co.paa"
+    };
     textureList[] = {"TechnoUnion", 0, "EPF", 1};
 };
