@@ -1,5 +1,5 @@
-class BNA_KC_AAT_CIS;
-class BNA_KC_AAT_TU: BNA_KC_AAT_CIS
+class BNA_KC_AAT_Base;
+class BNA_KC_AAT_TU: BNA_KC_AAT_Base
 {
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
