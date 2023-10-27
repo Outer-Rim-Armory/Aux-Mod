@@ -68,6 +68,39 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_EPF_Vest_Medium: BNA_KC_EPF_Vest
+    {
+        displayName = "[EPF] Medium Vest";
+        descriptionShort = "Armor Level IV";
+        model = "\sc_equipment\data\marine\mr_vest.p3d";
+        hiddenSelections[] = {"camo", "camo1"};
+        hiddenSelectionsTextures[] =
+        {
+            "\sc_equipment\data\marine\textures\vest_green_co.paa",
+            "\sc_equipment\data\marine\textures\legs_green_co.paa"
+        };
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\marine\mr_vest.p3d";
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen: Abdomen
+                {
+                    armor = 20;
+                };
+                class Chest: Chest
+                {
+                    armor = 20;
+                };
+                class Diaphragm: Diaphragm
+                {
+                    armor = 20;
+                };
+            };
+        };
+    };
+
     class BNA_KC_EPF_Vest_AssaultMedium: BNA_KC_EPF_Vest
     {
         displayName = "[EPF] Medium Assault Vest";
