@@ -179,6 +179,7 @@ class CfgVehicles
     // ┌───────────────────┐
     // │     Backpacks     │
     // └───────────────────┘
+    #include "CfgBackpacks.hpp"
 
     // ┌───────────────────┐
     // │      Vehicles     │

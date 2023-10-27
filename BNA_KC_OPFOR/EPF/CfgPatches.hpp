@@ -23,9 +23,19 @@ class CfgPatches
         units[] =
         {
             // Units
-            "BNA_KC_EPF_Unit_Base"
+            "BNA_KC_EPF_Unit_Base",
+            "BNA_KC_EPF_Backpack_Predef_Rifleman",
+            "BNA_KC_EPF_Backpack_Heavy",
+            "BNA_KC_EPF_Backpack_Heavy_Predef_AT",
+            "BNA_KC_EPF_Backpack_Heavy_Predef_AA",
+            "BNA_KC_EPF_Backpack_Assault",
+            "BNA_KC_EPF_Backpack_Assault_Predef_Heavy",
+            "BNA_KC_EPF_Backpack_Assault_Predef_Medium",
+            "BNA_KC_EPF_Backpack_RTO",
+            "BNA_KC_EPF_Backpack_RTO_Predef_SL"
 
             // Backpacks
+            "BNA_KC_EPF_Backpack",
 
             // Vehicles
         };
