@@ -4,7 +4,24 @@
 
 class CfgVehicles
 {
-    class Tank_F;
+    class All;
+    class AllVehicles: All
+    {
+        class NewTurret;
+    };
+    class Land: AllVehicles {};
+    class LandVehicle: Land {};
+    class Tank: LandVehicle {};
+    class Tank_F: Tank
+    {
+        class Turrets
+        {
+            class MainTurret: NewTurret
+            {
+                class Turrets;
+            };
+        };
+    };
     class 3AS_AAT_base_F: Tank_F
     {
         class Turrets;
@@ -197,24 +214,6 @@ class CfgVehicles
         armor = 1250;
     };
 
-    class All;
-    class AllVehicles: All
-    {
-        class NewTurret;
-    };
-    class Land: AllVehicles {};
-    class LandVehicle: Land {};
-    class Tank: LandVehicle {};
-    class Tank_F: Tank
-    {
-        class Turrets
-        {
-            class MainTurret: NewTurret
-            {
-                class Turrets;
-            };
-        };
-    };
     class ls_ground_aat_base: Tank_F
     {
         class Turrets: Turrets
