@@ -51,16 +51,22 @@ class CfgWeapons
 
         model = "\sc_equipment\data\wasp\wp_helmet_visor.p3d";
         hiddenSelections[] = {"camo", "camo1"};
-        hiddenSelectionsTextures[] =
-        {
-            "\sc_equipment\data\wasp\textures\helmet_green_co.paa",
-            "\sc_equipment\data\wasp\textures\visor_co.paa"
-        };
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\helmet_green_co.paa"};
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo", "camo1"};
             uniformModel = "\sc_equipment\data\wasp\wp_helmet_visor.p3d";
+        };
+    };
+
+    class BNA_KC_EPF_Helmet_Visor_Goggles: BNA_KC_EPF_Helmet_Visor
+    {
+        displayName = "[EPF] Visor Helmet";
+        hiddenSelectionsTextures[] =
+        {
+            "\sc_equipment\data\wasp\textures\helmet_green_co.paa",
+            "\sc_equipment\data\wasp\textures\visor_co.paa"
         };
     };
 

@@ -53,8 +53,8 @@ class BNA_KC_EPF_Unit_AT: BNA_KC_EPF_Unit_Rifleman
     magazines[] = {"Aux12thFleet_Mag_E5", "Aux12thFleet_Mag_E60R_AT"};
     respawnMagazines[] = {"Aux12thFleet_Mag_E5", "Aux12thFleet_Mag_E60R_AT"};
 
-    linkedItems[] = {"BNA_KC_EPF_Helmet_Visor", "BNA_KC_EPF_Vest_AssaultMedium", BASE_LINKED_ITEMS};
-    respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_Visor", "BNA_KC_EPF_Vest_AssaultMedium", BASE_LINKED_ITEMS};
+    linkedItems[] = {"BNA_KC_EPF_Helmet_Visor_Goggles", "BNA_KC_EPF_Vest_AssaultMedium", BASE_LINKED_ITEMS};
+    respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_Visor_Goggles", "BNA_KC_EPF_Vest_AssaultMedium", BASE_LINKED_ITEMS};
     backpack = "BNA_KC_EPF_Backpack_Heavy_Predef_AT";
 };
 
