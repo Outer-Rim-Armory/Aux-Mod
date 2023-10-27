@@ -39,6 +39,7 @@ class CfgPatches
             // Units
             "BNA_KC_TU_Unit_Base",
             "BNA_KC_TU_Unit_Rifleman",
+            "BNA_KC_TU_Unit_Rifleman_Shield",
             "BNA_KC_TU_Unit_AssaultHeavy",
             "BNA_KC_TU_Unit_AssaultMedium",
             "BNA_KC_TU_Unit_AT",
