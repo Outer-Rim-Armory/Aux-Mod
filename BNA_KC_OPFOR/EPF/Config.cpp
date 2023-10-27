@@ -242,17 +242,6 @@ class CfgVehicles
     // ┌───────────────────┐
     // │       Units       │
     // └───────────────────┘
-    class BNA_KC_OPFOR_Unit_Base;
-    class BNA_KC_EPF_Unit_Base: BNA_KC_OPFOR_Unit_Base
-    {
-        faction = "BNA_KC_OPFOR_EPF";
-        editorSubcategory = "BNA_KC_SubCat_OPFOR_Infantry";
-
-        model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
-        uniformClass = "BNA_KC_EPF_Uniform";
-        hiddenSelections[] = {"camo", "insignia"};
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_green_co.paa"};
-    };
     #include "CfgUnits.hpp"
 
     // ┌───────────────────┐
