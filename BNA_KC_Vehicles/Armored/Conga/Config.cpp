@@ -35,7 +35,7 @@ class CfgVehicles
 
         // Editor Attributes
         side = 0;
-        editorPreview = "\OPTRE_Vehicles_Tracked\Scorpion\data\UI\OPTRE_M808B_UNSC.jpg";
+        // editorPreview = "";
 
         displayName = "Conga IFV";
 
