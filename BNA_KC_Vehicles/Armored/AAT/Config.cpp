@@ -226,6 +226,7 @@ class CfgVehicles
                 };
             };
         };
+        class HitPoints;
     };
     class BNA_KC_AAT_King_Base: ls_ground_aat_base
     {
@@ -294,6 +295,38 @@ class CfgVehicles
             {
                 source = "reload";
                 weapon = "3AS_AATCannon";
+            };
+        };
+
+        class HitPoints: HitPoints
+        {
+            class HitHull
+            {
+                armor = 800;
+                explosionshielding = 2;
+                material = -1;
+                minimalhit = 0.14;
+                name = "hull_hit";
+                passthrough = 0.03;
+                radius = 0.25;
+                visual = "zbytek";
+            };
+            class HitEngine: HitHull
+            {
+                explosionShielding = 1;
+                minimalHit = 0.24;
+                name = "engine_hit";
+                passThrough = 0.08;
+                radius = 0.33;
+                visual = "motor";
+            };
+            class HitAmmo_L: HitEngine
+            {
+                name = "ammo_l_hit";
+            };
+            class HitAmmo_R: HitEngine
+            {
+                name = "ammo_r_hit";
             };
         };
     };
