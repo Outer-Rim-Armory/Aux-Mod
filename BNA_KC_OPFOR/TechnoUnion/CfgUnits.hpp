@@ -27,8 +27,8 @@ class BNA_KC_TU_Unit_Rifleman: BNA_KC_TU_Unit_Base
         "FirstAidKit"
     };
 
-    linkedItems[] = {"SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", BASE_LINKED_ITEMS};
-    respawnLinkedItems[] = {"SC_Helmet_EN_Desert", "SC_Vest_WD_Basic_Desert", BASE_LINKED_ITEMS};
+    linkedItems[] = {"BNA_KC_TU_Helmet", "BNA_KC_TU_Vest", BASE_LINKED_ITEMS};
+    respawnLinkedItems[] = {"BNA_KC_TU_Helmet", "BNA_KC_TU_Vest", BASE_LINKED_ITEMS};
     backpack = "BNA_KC_TU_Backpack_Predef_Rifleman";
 };
 
@@ -53,8 +53,8 @@ class BNA_KC_TU_Unit_AT: BNA_KC_TU_Unit_Rifleman
     magazines[] = {"Aux12thFleet_Mag_E5", "Aux12thFleet_Mag_E60R_AT"};
     respawnMagazines[] = {"Aux12thFleet_Mag_E5", "Aux12thFleet_Mag_E60R_AT"};
 
-    linkedItems[] = {"SC_Helmet_WP_EUD_Desert_V", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
-    respawnLinkedItems[] = {"SC_Helmet_WP_EUD_Desert_V", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
+    linkedItems[] = {"BNA_KC_TU_Helmet_Visor_Goggles", "BNA_KC_TU_Vest_AssaultMedium", BASE_LINKED_ITEMS};
+    respawnLinkedItems[] = {"BNA_KC_TU_Helmet_Visor_Goggles", "BNA_KC_TU_Vest_AssaultMedium", BASE_LINKED_ITEMS};
     backpack = "BNA_KC_TU_Backpack_Heavy_Predef_AT";
 };
 
@@ -82,8 +82,8 @@ class BNA_KC_TU_Unit_AssaultHeavy: BNA_KC_TU_Unit_Rifleman
     magazines[] = {"Aux12thFleet_Mag_E5C"};
     respawnMagazines[] = {"Aux12thFleet_Mag_E5C"};
 
-    linkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Heavy_Desert", BASE_LINKED_ITEMS};
-    respawnLinkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Heavy_Desert", BASE_LINKED_ITEMS};
+    linkedItems[] = {"BNA_KC_TU_Helmet_Assault", "BNA_KC_TU_Vest_AssaultHeavy", BASE_LINKED_ITEMS};
+    respawnLinkedItems[] = {"BNA_KC_TU_Helmet_Assault", "BNA_KC_TU_Vest_AssaultHeavy", BASE_LINKED_ITEMS};
     backpack = "BNA_KC_TU_Backpack_Assault_Predef_Heavy";
 };
 
@@ -91,8 +91,8 @@ class BNA_KC_TU_Unit_AssaultMedium: BNA_KC_TU_Unit_AssaultHeavy
 {
     displayName = "Medium Assault";
     editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\AssaultMedium.jpg";
-    linkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
-    respawnLinkedItems[] = {"SC_Helmet_RN_Desert", "SC_Vest_WD_Medium_Desert", BASE_LINKED_ITEMS};
+    linkedItems[] = {"BNA_KC_TU_Helmet_Assault", "BNA_KC_TU_Vest_AssaultMedium", BASE_LINKED_ITEMS};
+    respawnLinkedItems[] = {"BNA_KC_TU_Helmet_Assault", "BNA_KC_TU_Vest_AssaultMedium", BASE_LINKED_ITEMS};
     backpack = "BNA_KC_TU_Backpack_Assault_Predef_Medium";
 };
 
@@ -102,8 +102,8 @@ class BNA_KC_TU_Unit_SL: BNA_KC_TU_Unit_Rifleman
     editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\SL.jpg";
     icon = "iconManLeader";
 
-    linkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
-    respawnLinkedItems[] = {"SC_Helmet_WD_Desert_V", "SC_Vest_SMR_Desert", BASE_LINKED_ITEMS};
+    linkedItems[] = {"BNA_KC_TU_Helmet_Heavy", "BNA_KC_TU_Vest_Medium", BASE_LINKED_ITEMS};
+    respawnLinkedItems[] = {"BNA_KC_TU_Helmet_Heavy", "BNA_KC_TU_Vest_Medium", BASE_LINKED_ITEMS};
     backpack = "BNA_KC_TU_Backpack_RTO_Predef_SL";
 };
 
@@ -121,7 +121,7 @@ class BNA_KC_TU_Unit_Melee: BNA_KC_TU_Unit_Base
     magazines[] = {"WBK_Cybercrystal"};
     respawnMagazines[] = {"WBK_Cybercrystal"};
 
-    linkedItems[] = {"SC_Helmet_WP_Desert", "SC_Vest_WP_Light_Desert", BASE_LINKED_ITEMS};
-    respawnLinkedItems[] = {"SC_Helmet_WP_Desert", "SC_Vest_WP_Light_Desert", BASE_LINKED_ITEMS};
+    linkedItems[] = {"BNA_KC_TU_Helmet_Visor", "BNA_KC_TU_Vest", BASE_LINKED_ITEMS};
+    respawnLinkedItems[] = {"BNA_KC_TU_Helmet_Visor", "BNA_KC_TU_Vest", BASE_LINKED_ITEMS};
     backpack = "BNA_KC_TU_Backpack_Heavy";
 };
