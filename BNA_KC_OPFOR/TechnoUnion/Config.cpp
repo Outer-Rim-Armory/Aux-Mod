@@ -5,6 +5,84 @@
 
 class CfgWeapons
 {
+    // ┌───────────────────┐
+    // │      Helmets      │
+    // └───────────────────┘
+    class ls_redforHelmet_base;
+    class BNA_KC_OPFOR_Helmet_Base: ls_redforHelmet_base
+    {
+        class ItemInfo;
+    };
+    class BNA_KC_TU_Helmet: BNA_KC_OPFOR_Helmet_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[TU] Helmet";
+
+        model = "\sc_equipment\data\enforcer\en_helmet.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\enforcer\textures\helmet_desert_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo"};
+            uniformModel = "\sc_equipment\data\enforcer\en_helmet.p3d";
+        };
+    };
+
+    class BNA_KC_TU_Helmet_Assault: BNA_KC_TU_Helmet
+    {
+        displayName = "[TU] Assault Helmet";
+
+        model = "\sc_equipment\data\ranger\rn_helmet.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\ranger\textures\helmet_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\ranger\rn_helmet.p3d";
+        };
+    };
+
+    class BNA_KC_TU_Helmet_Visor: BNA_KC_TU_Helmet
+    {
+        displayName = "[TU] Visor Helmet";
+
+        model = "\sc_equipment\data\wasp\wp_helmet_visor.p3d";
+        hiddenSelections[] = {"camo", "camo1"};
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\helmet_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo", "camo1"};
+            uniformModel = "\sc_equipment\data\wasp\wp_helmet_visor.p3d";
+        };
+    };
+
+    class BNA_KC_TU_Helmet_Visor_Goggles: BNA_KC_TU_Helmet_Visor
+    {
+        displayName = "[TU] Visor Helmet (Goggles)";
+        hiddenSelectionsTextures[] =
+        {
+            "\sc_equipment\data\wasp\textures\helmet_co.paa",
+            "\sc_equipment\data\wasp\textures\visor_co.paa"
+        };
+    };
+
+    class BNA_KC_TU_Helmet_Heavy: BNA_KC_TU_Helmet
+    {
+        displayName = "[TU] Heavy Helmet";
+
+        model = "\sc_equipment\data\watchdog\wd_helmet_heavy.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\helmet_desert_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\watchdog\wd_helmet_heavy.p3d";
+        };
+    };
+
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘

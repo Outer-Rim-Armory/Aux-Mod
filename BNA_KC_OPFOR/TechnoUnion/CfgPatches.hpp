@@ -63,6 +63,14 @@ class CfgPatches
         };
         weapons[] =
         {
+            // Helmets
+            "BNA_KC_TU_Helmet",
+            "BNA_KC_TU_Helmet_Assault",
+            "BNA_KC_TU_Helmet_Visor",
+            "BNA_KC_TU_Helmet_Visor_Goggles",
+            "BNA_KC_TU_Helmet_Heavy",
+
+            // Uniforms
             "BNA_KC_TU_Uniform"
         };
 
