@@ -36,6 +36,7 @@ class CfgVehicles
         scopeCurator = 0;
 
         // Editor Attributes
+        side = 0;
         editorPreview = "\OPTRE_Vehicles_Tracked\Scorpion\data\UI\OPTRE_M808B_UNSC.jpg";
 
         displayName = "Plesioth";
