@@ -97,7 +97,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC TU] Techno Union Uniform";
+        displayName = "[TU] Techno Union Uniform";
 
         class ItemInfo: ItemInfo
         {
@@ -162,7 +162,7 @@ class CfgGlasses
     class Shadow_Mask;
     class BNA_KC_Glasses_TU_Mask: Shadow_Mask
     {
-        displayName = "[KC TU] Face Guard";
+        displayName = "[TU] Face Guard";
         identityTypes[] = {"BNA_KC_TechnoUnion", 1};
         picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
     };

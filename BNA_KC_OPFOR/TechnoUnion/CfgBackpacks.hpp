@@ -6,7 +6,7 @@ class BNA_KC_TU_Backpack: BNA_KC_OPFOR_Backpack_Base
     scopeArsenal = 2;
     scopeCurator = 2;
 
-    displayName = "[KC TU] Backpack";
+    displayName = "[TU] Backpack";
     descriptionshort = "Techno Union Backpack";
 
     model = "\sc_equipment\data\marine\mr_backpack.p3d";
@@ -33,7 +33,7 @@ class BNA_KC_TU_Backpack_Predef_Rifleman: BNA_KC_TU_Backpack
 
 class BNA_KC_TU_Backpack_Heavy: BNA_KC_TU_Backpack
 {
-    displayName = "[KC TU] Heavy Backpack";
+    displayName = "[TU] Heavy Backpack";
     maximumLoad = 450;
     mass = 35;
 
@@ -79,7 +79,7 @@ class BNA_KC_TU_Backpack_Heavy_Predef_AA: BNA_KC_TU_Backpack_Heavy
 
 class BNA_KC_TU_Backpack_Assault: BNA_KC_TU_Backpack
 {
-    displayName = "[KC TU] Assault Backpack";
+    displayName = "[TU] Assault Backpack";
     maximumLoad = 300;
     mass = 35;
 
@@ -117,7 +117,7 @@ class BNA_KC_TU_Backpack_Assault_Predef_Medium: BNA_KC_TU_Backpack_Assault_Prede
 
 class BNA_KC_TU_Backpack_RTO: BNA_KC_TU_Backpack
 {
-    displayName = "[KC TU] Radio Backpack";
+    displayName = "[TU] Radio Backpack";
     mass = 35;
 
     model = "\sc_equipment\data\watchdog\wd_backpack_sl.p3d";
