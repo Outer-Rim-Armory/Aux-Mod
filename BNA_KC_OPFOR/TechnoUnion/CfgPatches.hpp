@@ -30,11 +30,14 @@ class CfgPatches
                 // Shadow Mask picture
             "A3_Weapons_F_Ammoboxes",
                 // Base backpack
-            "LFPModels"
+            "LFPModels",
                 // Shadow Mask
+            "BNA_KC_Vehicles_AAT"
+                // AAT
         };
         units[] =
         {
+            // Units
             "BNA_KC_TU_Unit_Base",
             "BNA_KC_TU_Unit_Rifleman",
             "BNA_KC_TU_Unit_AssaultHeavy",
@@ -44,6 +47,7 @@ class CfgPatches
             "BNA_KC_TU_Unit_SL",
             "BNA_KC_TU_Unit_Melee",
 
+            // Backpacks
             "BNA_KC_TU_Backpack",
             "BNA_KC_TU_Backpack_Predef_Rifleman",
             "BNA_KC_TU_Backpack_Heavy",
@@ -53,7 +57,10 @@ class CfgPatches
             "BNA_KC_TU_Backpack_Assault_Predef_Heavy",
             "BNA_KC_TU_Backpack_Assault_Predef_Medium",
             "BNA_KC_TU_Backpack_RTO",
-            "BNA_KC_TU_Backpack_RTO_Predef_SL"
+            "BNA_KC_TU_Backpack_RTO_Predef_SL",
+
+            // Vehicles
+            "BNA_KC_AAT_TU"
         };
         weapons[] =
         {
