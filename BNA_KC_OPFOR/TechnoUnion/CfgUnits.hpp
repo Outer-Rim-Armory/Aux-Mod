@@ -5,7 +5,7 @@ class BNA_KC_TU_Unit_Rifleman: BNA_KC_TU_Unit_Base
     scopeCurator = 2;
 
     displayName = "Rifleman";
-    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Rifleman.jpg";
+    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Previews\Rifleman.jpg";
 
     weapons[] = {"BNA_KC_E5", "", "Throw", "Put"};
     respawnWeapons[] = {"BNA_KC_E5", "", "Throw", "Put"};
@@ -35,7 +35,7 @@ class BNA_KC_TU_Unit_Rifleman: BNA_KC_TU_Unit_Base
 class BNA_KC_TU_Unit_Rifleman_Shield: BNA_KC_TU_Unit_Rifleman
 {
     displayName = "Rifleman (Shield)";
-    // editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Rifleman.jpg";
+    // editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Previews\Rifleman.jpg";
 
     weapons[] = {"BNA_KC_E5_Shielded", "", "Throw", "Put"};
     respawnWeapons[] = {"BNA_KC_E5_Shielded", "", "Throw", "Put"};
@@ -44,7 +44,7 @@ class BNA_KC_TU_Unit_Rifleman_Shield: BNA_KC_TU_Unit_Rifleman
 class BNA_KC_TU_Unit_AT: BNA_KC_TU_Unit_Rifleman
 {
     displayName = "Rifleman (AT)";
-    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Rifleman_AT.jpg";
+    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Previews\Rifleman_AT.jpg";
     icon = "iconManAT";
 
     weapons[] = {"BNA_KC_E5", "", "BNA_KC_E60R_AT", "Throw", "Put"};
@@ -73,7 +73,7 @@ class BNA_KC_TU_Unit_AA: BNA_KC_TU_Unit_AT
 class BNA_KC_TU_Unit_AssaultHeavy: BNA_KC_TU_Unit_Rifleman
 {
     displayName = "Heavy Assault";
-    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\AssaultHeavy.jpg";
+    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Previews\AssaultHeavy.jpg";
     icon = "iconManMG";
 
     weapons[] = {"BNA_KC_E5C_Stock", "", "Throw", "Put"};
@@ -90,7 +90,7 @@ class BNA_KC_TU_Unit_AssaultHeavy: BNA_KC_TU_Unit_Rifleman
 class BNA_KC_TU_Unit_AssaultMedium: BNA_KC_TU_Unit_AssaultHeavy
 {
     displayName = "Medium Assault";
-    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\AssaultMedium.jpg";
+    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Previews\AssaultMedium.jpg";
     linkedItems[] = {"BNA_KC_TU_Helmet_Assault", "BNA_KC_TU_Vest_AssaultMedium", BASE_LINKED_ITEMS};
     respawnLinkedItems[] = {"BNA_KC_TU_Helmet_Assault", "BNA_KC_TU_Vest_AssaultMedium", BASE_LINKED_ITEMS};
     backpack = "BNA_KC_TU_Backpack_Assault_Predef_Medium";
@@ -99,7 +99,7 @@ class BNA_KC_TU_Unit_AssaultMedium: BNA_KC_TU_Unit_AssaultHeavy
 class BNA_KC_TU_Unit_SL: BNA_KC_TU_Unit_Rifleman
 {
     displayName = "Squad Leader";
-    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\SL.jpg";
+    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Previews\SL.jpg";
     icon = "iconManLeader";
 
     linkedItems[] = {"BNA_KC_TU_Helmet_Heavy", "BNA_KC_TU_Vest_Medium", BASE_LINKED_ITEMS};
@@ -114,7 +114,7 @@ class BNA_KC_TU_Unit_Melee: BNA_KC_TU_Unit_Base
     scopeCurator = 2;
 
     displayName = "Swordsman (Rush)";
-    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Melee.jpg";
+    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Previews\Melee.jpg";
 
     weapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
     respawnWeapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
