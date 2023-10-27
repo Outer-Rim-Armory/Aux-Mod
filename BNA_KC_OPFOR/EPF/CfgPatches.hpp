@@ -22,9 +22,19 @@ class CfgPatches
         };
         units[] =
         {
+            // Units
+            "BNA_KC_EPF_Unit_Base"
+
+            // Backpacks
+
+            // Vehicles
         };
         weapons[] =
         {
+            // Uniforms
+            "BNA_KC_EPF_Uniform"
+
+            // Vests
         };
 
         skipWhenMissingDependencies = 1;
