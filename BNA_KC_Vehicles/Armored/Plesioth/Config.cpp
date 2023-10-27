@@ -23,6 +23,12 @@ class CfgVehicles
             class CargoTurret7;
             class CargoTurret8;
         };
+        class AnimationSources
+        {
+            class muzzle_rot_cannon;
+            class recoil_source;
+            class muzzle_rot_coax;
+        };
     };
     class OPTRE_M808B_UNSC: OPTRE_M808B_base {};
     class BNA_KC_Plesioth_Base: OPTRE_M808B_UNSC
@@ -99,6 +105,22 @@ class CfgVehicles
             class CargoTurret6: CargoTurret6 {};
             class CargoTurret7: CargoTurret7 {};
             class CargoTurret8: CargoTurret8 {};
+        };
+
+        class AnimationSources: AnimationSources
+        {
+            class muzzle_rot_cannon: muzzle_rot_cannon
+            {
+                weapon = "OPTRE_90mm_M512";
+            };
+            class recoil_source: recoil_source
+            {
+                weapon = "OPTRE_90mm_M512";
+            };
+            class muzzle_rot_coax: muzzle_rot_coax
+            {
+                weapon = "OPTRE_M247T_Coax";
+            };
         };
     };
 };
