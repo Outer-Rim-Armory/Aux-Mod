@@ -24,6 +24,9 @@ class CfgPatches
         {
             // Units
             "BNA_KC_EPF_Unit_Base",
+
+            // Backpacks
+            "BNA_KC_EPF_Backpack",
             "BNA_KC_EPF_Backpack_Predef_Rifleman",
             "BNA_KC_EPF_Backpack_Heavy",
             "BNA_KC_EPF_Backpack_Heavy_Predef_AT",
@@ -33,9 +36,6 @@ class CfgPatches
             "BNA_KC_EPF_Backpack_Assault_Predef_Medium",
             "BNA_KC_EPF_Backpack_RTO",
             "BNA_KC_EPF_Backpack_RTO_Predef_SL"
-
-            // Backpacks
-            "BNA_KC_EPF_Backpack",
 
             // Vehicles
         };
