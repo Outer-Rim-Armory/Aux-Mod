@@ -43,7 +43,6 @@ class CfgVehicles
     {
         faction = "BNA_KC_OPFOR_EPF";
         editorSubcategory = "BNA_KC_SubCat_OPFOR_Infantry";
-        identityTypes[] = {"LanguageENG_F", "Head_NATO", "BNA_KC_TechnoUnion"};
 
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         uniformClass = "BNA_KC_EPF_Uniform";
