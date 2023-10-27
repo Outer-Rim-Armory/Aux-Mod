@@ -15,6 +15,8 @@ class CfgPatches
                 // BX models/texture
             "JLTS_characters_DroidArmor",
                 // Crew Unit
+            "BNA_KC_Vehicles_AAT"
+                // AAT
         };
         units[] =
         {
