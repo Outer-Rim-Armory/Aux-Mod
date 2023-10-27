@@ -212,6 +212,9 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"3AS\3AS_AAT\data\Red_AAT_CO.paa"};
         accuracy = 1000;
         armor = 1250;
+
+        textureList[] = {};
+        class TextureSources {};
     };
 
     class ls_ground_aat_base: Tank_F
