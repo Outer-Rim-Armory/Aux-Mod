@@ -1,6 +1,10 @@
 class BNA_KC_AAT_Base;
 class BNA_KC_AAT_TU: BNA_KC_AAT_Base
 {
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
 
