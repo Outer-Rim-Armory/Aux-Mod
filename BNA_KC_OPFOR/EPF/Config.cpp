@@ -64,6 +64,19 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_EPF_Helmet_Heavy: BNA_KC_EPF_Helmet
+    {
+        displayName = "[EPF] Heavy Helmet";
+
+        model = "\sc_equipment\data\watchdog\wd_helmet_heavy.p3d";
+        hiddenSelectionsTextures[] = {"sc_equipment\data\watchdog\textures\helmet_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\watchdog\wd_helmet_heavy.p3d";
+        };
+    };
+
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
