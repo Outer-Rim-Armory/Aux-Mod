@@ -11,7 +11,6 @@ class BNA_KC_EPF_Backpack: BNA_KC_OPFOR_Backpack_Base
     model = "\sc_equipment\data\marine\mr_backpack.p3d";
     hiddenSelections[] = {"camo"};
     hiddenSelectionsTextures[] = {"\sc_equipment\data\marine\textures\backpack_green_co.paa"};
-    picture = "\sc_equipment\data\icons\icon_se_ca.paa";
 };
 class BNA_KC_EPF_Backpack_Predef_Rifleman: BNA_KC_EPF_Backpack
 {
@@ -38,7 +37,6 @@ class BNA_KC_EPF_Backpack_Heavy: BNA_KC_EPF_Backpack
 
     model = "\sc_equipment\data\wasp\wp_backpack.p3d";
     hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_green_co.paa"};
-    picture = "\sc_equipment\data\icons\icon_se_ca.paa";
 };
 class BNA_KC_EPF_Backpack_Heavy_Predef_AT: BNA_KC_EPF_Backpack_Heavy
 {
@@ -84,7 +82,6 @@ class BNA_KC_EPF_Backpack_Assault: BNA_KC_EPF_Backpack
 
     model = "\sc_equipment\data\wasp\wp_backpack_sl.p3d";
     hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_green__co.paa"};
-    picture = "\sc_equipment\data\icons\icon_se_ca.paa";
 };
 class BNA_KC_EPF_Backpack_Assault_Predef_Heavy: BNA_KC_EPF_Backpack_Assault
 {
@@ -121,7 +118,6 @@ class BNA_KC_EPF_Backpack_RTO: BNA_KC_EPF_Backpack
 
     model = "\sc_equipment\data\watchdog\wd_backpack_sl.p3d";
     hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\backpack_co.paa"};
-    picture = "\sc_equipment\data\icons\icon_ar_ca.paa";
 
     // TFAR Long Range
     tf_hasLRradio = 1;
