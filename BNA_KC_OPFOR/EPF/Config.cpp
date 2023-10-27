@@ -19,7 +19,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[EPF] Techno Union Uniform";
+        displayName = "[EPF] Uniform";
 
         class ItemInfo: ItemInfo
         {
