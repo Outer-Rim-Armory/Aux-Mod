@@ -197,7 +197,37 @@ class CfgVehicles
         armor = 1250;
     };
 
-    class ls_ground_aat_base;
+    class All;
+    class AllVehicles: All
+    {
+        class NewTurret;
+    };
+    class Land: AllVehicles {};
+    class LandVehicle: Land {};
+    class Tank: LandVehicle {};
+    class Tank_F: Tank
+    {
+        class Turrets
+        {
+            class MainTurret: NewTurret
+            {
+                class Turrets;
+            };
+        };
+    };
+    class ls_ground_aat_base: Tank_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                class Turrets: Turrets
+                {
+                    class CommanderOptics;
+                };
+            };
+        };
+    };
     class BNA_KC_AAT_King_Base: ls_ground_aat_base
     {
         // Mod Info
@@ -221,6 +251,20 @@ class CfgVehicles
             "\ls_vehicles_ground\aat\data\black\body1_black_co.paa",
             "\ls_vehicles_ground\aat\data\black\body2_black_co.paa",
             "\ls_vehicles_ground\aat\data\black\gun_black_co.paa"
+        };
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                class Turrets: Turrets
+                {
+                    class CommanderOptics: CommanderOptics
+                    {
+
+                    };
+                };
+            };
         };
     };
 };
