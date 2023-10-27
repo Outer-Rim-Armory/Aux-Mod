@@ -39,23 +39,20 @@ class CfgVehicles
             };
         };
     };
-    class BNA_KC_AAT_CIS: 3AS_AAT
+    class BNA_KC_AAT_Base: 3AS_AAT
     {
         // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 2;
-        scopeCurator = 2;
+        scope = 1;
+        scopeCurator = 0;
 
         // Editor Attributes
-        faction = "BNA_KC_OPFOR_CIS";
-        editorSubcategory = "BNA_KC_SubCat_CIS_Tanks";
+        editorPreview = "\3as\3as_AAT\images\3AS_AAT.jpg";
 
         displayName = "AAT";
-        crew = "JLTS_Droid_B1_Crew";
-        typicalCargo[] = {"JLTS_Droid_B1_Crew"};
 
         hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\CIS_AAT_CO.paa"};
 

@@ -9,16 +9,12 @@ class CfgPatches
         {
             "BNA_KC_Vehicles",
                 // Core Config
-            "3AS_AAT",
+            "3AS_AAT"
                 // AAT
-            "BNA_KC_OPFOR_CIS",
-                // Faction / Subcategory
-            "JLTS_characters_DroidArmor",
-                // Crew Unit
         };
         units[] =
         {
-            "BNA_KC_AAT_CIS"
+            "BNA_KC_AAT_Base"
         };
         weapons[] = {};
     };
