@@ -21,8 +21,12 @@ class CfgPatches
                 // E-5C
             "BNA_KC_Weapons_E60R",
                 // E-60R
-            "OPTRE_FC_Weapons_PlasmaGrenade"
+            "OPTRE_FC_Weapons_PlasmaGrenade",
                 // Plasma Grenade
+            "BNA_KC_Vehicles_AAT",
+                // AAT
+            "BNA_KC_Vehicles_Plesioth"
+                // Plesioth
         };
         units[] =
         {
@@ -47,9 +51,10 @@ class CfgPatches
             "BNA_KC_EPF_Backpack_Assault_Predef_Heavy",
             "BNA_KC_EPF_Backpack_Assault_Predef_Medium",
             "BNA_KC_EPF_Backpack_RTO",
-            "BNA_KC_EPF_Backpack_RTO_Predef_SL"
+            "BNA_KC_EPF_Backpack_RTO_Predef_SL",
 
             // Vehicles
+            "BNA_KC_Plesioth_EPF"
         };
         weapons[] =
         {

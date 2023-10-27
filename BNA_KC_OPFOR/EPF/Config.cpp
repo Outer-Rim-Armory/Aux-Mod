@@ -117,6 +117,7 @@ class CfgVehicles
     // ┌───────────────────┐
     // │      Vehicles     │
     // └───────────────────┘
+    #include "CfgVehicles.hpp"
 };
 
 

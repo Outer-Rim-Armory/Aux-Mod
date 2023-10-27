@@ -31,8 +31,10 @@ class CfgPatches
                 // Base backpack
             "LFPModels",
                 // Shadow Mask
-            "BNA_KC_Vehicles_AAT"
+            "BNA_KC_Vehicles_AAT",
                 // AAT
+            "BNA_KC_Vehicles_Plesioth"
+                // Plesioth
         };
         units[] =
         {
@@ -60,7 +62,8 @@ class CfgPatches
             "BNA_KC_TU_Backpack_RTO_Predef_SL",
 
             // Vehicles
-            "BNA_KC_AAT_TU"
+            "BNA_KC_AAT_TU",
+            "BNA_KC_Plesioth_TU"
         };
         weapons[] =
         {
