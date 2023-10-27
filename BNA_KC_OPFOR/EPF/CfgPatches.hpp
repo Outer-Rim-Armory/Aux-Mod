@@ -47,9 +47,10 @@ class CfgPatches
             "BNA_KC_EPF_Backpack_Assault_Predef_Heavy",
             "BNA_KC_EPF_Backpack_Assault_Predef_Medium",
             "BNA_KC_EPF_Backpack_RTO",
-            "BNA_KC_EPF_Backpack_RTO_Predef_SL"
+            "BNA_KC_EPF_Backpack_RTO_Predef_SL",
 
             // Vehicles
+            "BNA_KC_Plesioth_EPF"
         };
         weapons[] =
         {
