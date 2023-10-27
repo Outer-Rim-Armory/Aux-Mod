@@ -33,8 +33,10 @@ class CfgPatches
                 // Shadow Mask
             "BNA_KC_Vehicles_AAT",
                 // AAT
-            "BNA_KC_Vehicles_Plesioth"
+            "BNA_KC_Vehicles_Plesioth",
                 // Plesioth
+            "BNA_KC_Vehicles_Conga"
+                // Conga
         };
         units[] =
         {
@@ -63,7 +65,9 @@ class CfgPatches
 
             // Vehicles
             "BNA_KC_AAT_TU",
-            "BNA_KC_Plesioth_TU"
+            "BNA_KC_Plesioth_TU",
+            "BNA_KC_Conga_IFV_TU",
+            "BNA_KC_Conga_MGS_TU"
         };
         weapons[] =
         {
