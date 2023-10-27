@@ -44,6 +44,20 @@ class BNA_KC_AAT_Heavy_TU: BNA_KC_AAT_Heavy_Base
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
 };
 
+class BNA_KC_AAT_King_Base;
+class BNA_KC_AAT_King_TU: BNA_KC_AAT_King_Base
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    faction = "BNA_KC_OPFOR_TU";
+    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+
+    crew = "BNA_KC_TU_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
+};
+
 class BNA_KC_Plesioth_Base;
 class BNA_KC_Plesioth_TU: BNA_KC_Plesioth_Base
 {

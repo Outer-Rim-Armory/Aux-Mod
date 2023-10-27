@@ -66,6 +66,7 @@ class CfgPatches
             // Vehicles
             "BNA_KC_AAT_TU",
             "BNA_KC_AAT_Heavy_TU",
+            "BNA_KC_AAT_King_TU",
             "BNA_KC_Plesioth_TU",
             "BNA_KC_Conga_IFV_TU",
             "BNA_KC_Conga_MGS_TU"
