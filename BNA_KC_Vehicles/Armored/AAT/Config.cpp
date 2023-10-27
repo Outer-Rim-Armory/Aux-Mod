@@ -256,13 +256,44 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
+                weapons[] = {"3AS_AATCannon", "SmokeLauncher"};
+                magazines[] =
+                {
+                    "3AS_24Rnd_AAT_AP",
+                    "3AS_24Rnd_AAT_AP",
+                    "SmokeLauncherMag"
+                };
+
                 class Turrets: Turrets
                 {
                     class CommanderOptics: CommanderOptics
                     {
-
+                        weapons[] = {"3AS_AAT_Repeater", "SmokeLauncher"};
+                        magazines[] =
+                        {
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "SmokeLauncherMag"
+                        };
                     };
                 };
+            };
+        };
+
+        class AnimationSourcs
+        {
+            class recoil_source
+            {
+                source = "reload";
+                weapon = "3AS_AATCannon";
             };
         };
     };
