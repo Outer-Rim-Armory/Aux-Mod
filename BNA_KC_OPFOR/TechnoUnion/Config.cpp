@@ -108,6 +108,132 @@ class CfgWeapons
     // ┌───────────────────┐
     // │       Vests       │
     // └───────────────────┘
+    class V_PlateCarrier1_rgr;
+    class ls_redforVest_base: V_PlateCarrier1_rgr
+    {
+        class ItemInfo;
+    };
+    class BNA_KC_OPFOR_Vest_Base: ls_redforVest_base
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo;
+        };
+    };
+    class BNA_KC_TU_Vest: BNA_KC_OPFOR_Vest_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[TU] Light Vest";
+
+        model = "\sc_equipment\data\watchdog\wd_vest_basic.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\vest_desert_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo"};
+            uniformModel = "\sc_equipment\data\watchdog\wd_vest_basic.p3d";
+
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen;
+                class Chest;
+                class Diaphragm;
+            };
+        };
+    };
+
+    class BNA_KC_TU_Vest_Medium: BNA_KC_TU_Vest
+    {
+        displayName = "[TU] Medium Vest";
+        descriptionShort = "Armor Level IV";
+        model = "\sc_equipment\data\marine\mr_vest.p3d";
+        hiddenSelections[] = {"camo", "camo1"};
+        hiddenSelectionsTextures[] =
+        {
+            "\sc_equipment\data\marine\textures\vest_co.paa",
+            "\sc_equipment\data\marine\textures\legs_co.paa"
+        };
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo", "camo1"};
+            uniformModel = "\sc_equipment\data\marine\mr_vest.p3d";
+
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen: Abdomen
+                {
+                    armor = 20;
+                };
+                class Chest: Chest
+                {
+                    armor = 20;
+                };
+                class Diaphragm: Diaphragm
+                {
+                    armor = 20;
+                };
+            };
+        };
+    };
+
+    class BNA_KC_TU_Vest_AssaultMedium: BNA_KC_TU_Vest
+    {
+        displayName = "[TU] Medium Assault Vest";
+        descriptionShort = "Armor Level IV";
+        model = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen: Abdomen
+                {
+                    armor = 20;
+                };
+                class Chest: Chest
+                {
+                    armor = 20;
+                };
+                class Diaphragm: Diaphragm
+                {
+                    armor = 20;
+                };
+            };
+        };
+    };
+
+    class BNA_KC_TU_Vest_AssaultHeavy: BNA_KC_TU_Vest
+    {
+        displayName = "[TU] Heavy Assault Vest";
+        descriptionShort = "Armor Level V";
+        model = "\sc_equipment\data\watchdog\wd_vest_heavy.p3d";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\watchdog\wd_vest_heavy.p3d";
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen: Abdomen
+                {
+                    armor = 25;
+                };
+                class Chest: Chest
+                {
+                    armor = 25;
+                };
+                class Diaphragm: Diaphragm
+                {
+                    armor = 25;
+                };
+            };
+        };
+    };
 };
 
 

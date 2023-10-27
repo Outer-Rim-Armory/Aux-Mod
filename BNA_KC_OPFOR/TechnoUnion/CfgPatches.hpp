@@ -71,7 +71,13 @@ class CfgPatches
             "BNA_KC_TU_Helmet_Heavy",
 
             // Uniforms
-            "BNA_KC_TU_Uniform"
+            "BNA_KC_TU_Uniform",
+
+            // Vests
+            "BNA_KC_TU_Vest",
+            "BNA_KC_TU_Vest_Medium",
+            "BNA_KC_TU_Vest_AssaultMedium",
+            "BNA_KC_TU_Vest_AssaultHeavy"
         };
 
         skipWhenMissingDependencies = 1;
