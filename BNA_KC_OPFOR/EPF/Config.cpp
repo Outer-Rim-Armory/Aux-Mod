@@ -52,7 +52,7 @@ class CfgWeapons
 
         model = "\sc_equipment\data\watchdog\wd_vest_basic.p3d";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\marine\textures\vest_green_co.paa"};
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\vest_co.paa"};
 
         class ItemInfo: ItemInfo
         {
@@ -82,7 +82,9 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
+            hiddenSelections[] = {"camo", "camo1"};
             uniformModel = "\sc_equipment\data\marine\mr_vest.p3d";
+
             class HitpointsProtectionInfo: HitpointsProtectionInfo
             {
                 class Abdomen: Abdomen
@@ -106,7 +108,6 @@ class CfgWeapons
         displayName = "[EPF] Medium Assault Vest";
         descriptionShort = "Armor Level IV";
         model = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\vest_co.paa"};
 
         class ItemInfo: ItemInfo
         {
