@@ -296,7 +296,7 @@ class CfgGlasses
     class Shadow_Mask;
     class BNA_KC_Glasses_TU_Mask: Shadow_Mask
     {
-        displayName = "[TU] Face Guard";
+        displayName = "[KC] Face Guard";
         identityTypes[] = {"BNA_KC_TechnoUnion", 1};
         picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
     };
