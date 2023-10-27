@@ -37,8 +37,8 @@ class BNA_KC_EPF_Unit_Rifleman_Shield: BNA_KC_EPF_Unit_Rifleman
     displayName = "Rifleman (Shield)";
     // editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Rifleman.jpg";
 
-    weapons[] = {"BNA_KC_E5_RiotShield", "", "Throw", "Put"};
-    respawnWeapons[] = {"BNA_KC_E5_RiotShield", "", "Throw", "Put"};
+    weapons[] = {"BNA_KC_E5_Shielded", "", "Throw", "Put"};
+    respawnWeapons[] = {"BNA_KC_E5_Shielded", "", "Throw", "Put"};
 };
 
 class BNA_KC_EPF_Unit_AT: BNA_KC_EPF_Unit_Rifleman
