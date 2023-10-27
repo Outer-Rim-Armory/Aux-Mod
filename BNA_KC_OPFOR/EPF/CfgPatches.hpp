@@ -25,6 +25,7 @@ class CfgPatches
             // Units
             "BNA_KC_EPF_Unit_Base",
             "BNA_KC_EPF_Unit_Rifleman",
+            "BNA_KC_EPF_Unit_Rifleman_Shield",
             "BNA_KC_EPF_Unit_AT",
             "BNA_KC_EPF_Unit_AA",
             "BNA_KC_EPF_Unit_AssaultHeavy",
