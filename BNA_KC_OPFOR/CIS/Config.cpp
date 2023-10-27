@@ -221,6 +221,11 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
     };
+
+    // ┌───────────────────┐
+    // │      Vehicles     │
+    // └───────────────────┘
+    #include "CfgVehicles.hpp"
 };
 
 
