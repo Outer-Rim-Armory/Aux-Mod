@@ -95,6 +95,33 @@ class CfgWeapons
             };
         };
     };
+
+    class BNA_KC_EPF_Vest_Heavy: BNA_KC_EPF_Vest
+    {
+        displayName = "[EPF] Heavy Vest";
+        descriptionShort = "Armor Level V";
+        model = "\sc_equipment\data\watchdog\wd_vest_heavy.p3d";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\watchdog\wd_vest_heavy.p3d";
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen: Abdomen
+                {
+                    armor = 25;
+                };
+                class Chest: Chest
+                {
+                    armor = 25;
+                };
+                class Diaphragm: Diaphragm
+                {
+                    armor = 25;
+                };
+            };
+        };
+    };
 };
 
 
