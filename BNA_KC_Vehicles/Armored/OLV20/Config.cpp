@@ -16,7 +16,7 @@ class CfgVehicles
             class MainTurret;
         };
     };
-    class BNA_KC_APC_OLV20: O_APC_Wheeled_02_rcws_v2_F
+    class BNA_KC_OLV20: O_APC_Wheeled_02_rcws_v2_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -129,5 +129,11 @@ class CfgVehicles
         };
 
         INVENTORY_VEHICLE_BASE(2)
+    };
+
+    class BNA_KC_APC_OLV20: BNA_KC_OLV20
+    {
+        scope = 1;
+        scopeCurator = 0;
     };
 };
