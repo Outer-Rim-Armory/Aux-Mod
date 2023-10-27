@@ -1,5 +1,5 @@
-class BNA_KC_Plesioth;
-class BNA_KC_Plesioth_EPF: BNA_KC_Plesioth
+class BNA_KC_Plesioth_Base;
+class BNA_KC_Plesioth_EPF: BNA_KC_Plesioth_Base
 {
     // Scope
     scope = 2;

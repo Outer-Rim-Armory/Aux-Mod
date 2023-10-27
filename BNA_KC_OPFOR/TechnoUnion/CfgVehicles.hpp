@@ -26,8 +26,8 @@ class BNA_KC_AAT_TU: BNA_KC_AAT_CIS
     };
 };
 
-class BNA_KC_Plesioth;
-class BNA_KC_Plesioth_TU: BNA_KC_Plesioth
+class BNA_KC_Plesioth_Base;
+class BNA_KC_Plesioth_TU: BNA_KC_Plesioth_Base
 {
     // Scope
     scope = 2;
