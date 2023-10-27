@@ -49,7 +49,6 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[EPF] Light Vest";
-        descriptionShort = "Armor Level III";
 
         model = "\sc_equipment\data\watchdog\wd_vest_basic.p3d";
         hiddenSelections[] = {"camo"};

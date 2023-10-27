@@ -28,6 +28,7 @@ class CfgWeapons
     class BNA_KC_OPFOR_Vest_Base: ls_redforVest_base
     {
         displayName = "OPFOR Vest Base";
+        descriptionShort = "Armor Level III";
     };
 };
 
