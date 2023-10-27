@@ -51,3 +51,55 @@ class BNA_KC_Plesioth_TU: BNA_KC_Plesioth_Base
     };
     textureList[] = {"TechnoUnion", 1, "EPF", 0};
 };
+
+class BNA_KC_Conga_IFV_Base;
+class BNA_KC_Conga_IFV_TU: BNA_KC_Conga_IFV_Base
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    faction = "BNA_KC_OPFOR_TU";
+    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+
+    crew = "BNA_KC_TU_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
+
+    hiddenSelectionsTextures[] =
+    {
+        "\OPTRE_Vehicles\Bison\data\Bison_Body_tan_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_Misc_tan_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
+    };
+    textureList[] = {"TechnoUnion", 1, "EPF", 0};
+};
+
+class BNA_KC_Conga_MGS_Base;
+class BNA_KC_Conga_MGS_TU: BNA_KC_Conga_MGS_Base
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    faction = "BNA_KC_OPFOR_TU";
+    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+
+    crew = "BNA_KC_TU_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
+
+    hiddenSelectionsTextures[] =
+    {
+        "\OPTRE_Vehicles\Bison\data\Bison_Body_tan_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_Misc_tan_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
+        "\OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
+    };
+    textureList[] = {"TechnoUnion", 1, "EPF", 0};
+};
