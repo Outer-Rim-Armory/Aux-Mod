@@ -136,5 +136,52 @@ class CfgVehicles
         // editorPreview = "";
 
         displayName = "Conga MGS";
+
+        hiddenSelectionsTextures[] =
+        {
+            "\OPTRE_Vehicles\Bison\data\Bison_Body_tan_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_Misc_tan_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
+        };
+
+        textureList[] = {"TechnoUnion", 1, "EPF", 0};
+        class TextureSources
+        {
+            class TechnoUnion
+            {
+                author = "Article 2 Studios";
+                displayName = "Techno Union";
+                factions[] = {"BNA_KC_OPFOR_TU"};
+                textures[] =
+                {
+                    "\OPTRE_Vehicles\Bison\data\Bison_Body_tan_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_Misc_tan_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
+                };
+            };
+            class EPF: TechnoUnion
+            {
+                displayName = "El President Forces";
+                factions[] = {"BNA_KC_OPFOR_EPF"};
+                textures[] =
+                {
+                    "\OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
+                    "\OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
+                };
+            };
+        };
     };
 };
