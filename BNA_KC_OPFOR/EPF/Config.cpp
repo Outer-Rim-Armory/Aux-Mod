@@ -251,7 +251,7 @@ class CfgVehicles
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         uniformClass = "BNA_KC_EPF_Uniform";
         hiddenSelections[] = {"camo", "insignia"};
-        hiddenSelectionsTextures[] = {"sc_equipment\data\combat_uniform\cu_green_co.paa"};
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_green_co.paa"};
     };
     #include "CfgUnits.hpp"
 
