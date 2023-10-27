@@ -50,17 +50,13 @@ class CfgWeapons
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
-    class ls_redforUniform_base;
-    class BNA_KC_OPFOR_Uniform_Base: ls_redforUniform_base
+    class BNA_KC_OPFOR_Uniform_Base;
+    class BNA_KC_TU_Uniform: BNA_KC_OPFOR_Uniform_Base
     {
         class ItemInfo;
     };
-    class BNA_KC_EPF_Uniform: BNA_KC_OPFOR_Uniform_Base
+    class BNA_KC_EPF_Uniform: BNA_KC_TU_Uniform
     {
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
         displayName = "[EPF] Uniform";
 
         class ItemInfo: ItemInfo
