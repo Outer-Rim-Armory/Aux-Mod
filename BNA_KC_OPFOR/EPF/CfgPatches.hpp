@@ -17,8 +17,10 @@ class CfgPatches
                 // E-5
             "BNA_KC_Weapons_E5C",
                 // E-5C
-            "BNA_KC_Weapons_E60R"
+            "BNA_KC_Weapons_E60R",
                 // E-60R
+            "OPTRE_FC_Weapons_PlasmaGrenade"
+                // Plasma Grenade
         };
         units[] =
         {

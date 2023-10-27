@@ -26,6 +26,7 @@ class BNA_KC_EPF_Backpack_Predef_Rifleman: BNA_KC_EPF_Backpack
         TRANSMAG_XX(SmokeShell, 2)
         TRANSMAG_XX(ShieldGrenade_Mag, 2)
         TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        TRANSMAG_XX(OPTRE_FC_PlasmaGrenade, 5)
     };
 };
 
@@ -54,6 +55,7 @@ class BNA_KC_EPF_Backpack_Heavy_Predef_AT: BNA_KC_EPF_Backpack_Heavy
         TRANSMAG_XX(SmokeShell, 2)
         TRANSMAG_XX(ShieldGrenade_Mag, 2)
         TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        TRANSMAG_XX(OPTRE_FC_PlasmaGrenade, 5)
     };
 };
 class BNA_KC_EPF_Backpack_Heavy_Predef_AA: BNA_KC_EPF_Backpack_Heavy
@@ -71,6 +73,7 @@ class BNA_KC_EPF_Backpack_Heavy_Predef_AA: BNA_KC_EPF_Backpack_Heavy
         TRANSMAG_XX(SmokeShell, 2)
         TRANSMAG_XX(ShieldGrenade_Mag, 2)
         TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        TRANSMAG_XX(OPTRE_FC_PlasmaGrenade, 5)
     };
 };
 
@@ -97,6 +100,7 @@ class BNA_KC_EPF_Backpack_Assault_Predef_Heavy: BNA_KC_EPF_Backpack_Assault
         TRANSMAG_XX(SmokeShell, 2)
         TRANSMAG_XX(ShieldGrenade_Mag, 2)
         TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        TRANSMAG_XX(OPTRE_FC_PlasmaGrenade, 5)
     };
 };
 class BNA_KC_EPF_Backpack_Assault_Predef_Medium: BNA_KC_EPF_Backpack_Assault_Predef_Heavy
@@ -108,6 +112,7 @@ class BNA_KC_EPF_Backpack_Assault_Predef_Medium: BNA_KC_EPF_Backpack_Assault_Pre
         TRANSMAG_XX(SmokeShell, 2)
         TRANSMAG_XX(ShieldGrenade_Mag, 2)
         TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        TRANSMAG_XX(OPTRE_FC_PlasmaGrenade, 5)
     };
 };
 
@@ -142,5 +147,6 @@ class BNA_KC_EPF_Backpack_RTO_Predef_SL: BNA_KC_EPF_Backpack_RTO
         TRANSMAG_XX(SmokeShell, 2)
         TRANSMAG_XX(ShieldGrenade_Mag, 2)
         TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        TRANSMAG_XX(OPTRE_FC_PlasmaGrenade, 5)
     };
 };
