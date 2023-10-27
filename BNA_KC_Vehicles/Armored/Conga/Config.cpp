@@ -120,4 +120,21 @@ class CfgVehicles
             };
         };
     };
+
+    class BNA_KC_Conga_MGS_Base: OPTRE_M413_base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+
+        // Editor Attributes
+        side = 0;
+        // editorPreview = "";
+
+        displayName = "Conga MGS";
+    };
 };

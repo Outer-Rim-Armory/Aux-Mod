@@ -18,7 +18,8 @@ class CfgPatches
         };
         units[] =
         {
-            "BNA_KC_Conga_IFV_Base"
+            "BNA_KC_Conga_IFV_Base",
+            "BNA_KC_Conga_MGS_Base"
         };
         weapons[] = {};
     };
