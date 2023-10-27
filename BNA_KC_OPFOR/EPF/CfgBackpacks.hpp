@@ -81,7 +81,7 @@ class BNA_KC_EPF_Backpack_Assault: BNA_KC_EPF_Backpack
     mass = 35;
 
     model = "\sc_equipment\data\wasp\wp_backpack_sl.p3d";
-    hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_green__co.paa"};
+    hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_green_co.paa"};
 };
 class BNA_KC_EPF_Backpack_Assault_Predef_Heavy: BNA_KC_EPF_Backpack_Assault
 {
