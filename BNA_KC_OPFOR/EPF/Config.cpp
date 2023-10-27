@@ -8,61 +8,31 @@ class CfgWeapons
     // ┌───────────────────┐
     // │      Helmets      │
     // └───────────────────┘
-    class ls_redforHelmet_base;
-    class BNA_KC_OPFOR_Helmet_Base: ls_redforHelmet_base
+    class BNA_KC_TU_Helmet;
+    class BNA_KC_EPF_Helmet: BNA_KC_TU_Helmet
     {
-        class ItemInfo;
-    };
-    class BNA_KC_EPF_Helmet: BNA_KC_OPFOR_Helmet_Base
-    {
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
         displayName = "[EPF] Helmet";
-
-        model = "\sc_equipment\data\enforcer\en_helmet.p3d";
-        hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\sc_equipment\data\enforcer\textures\helmet_olive_co.paa"};
-
-        class ItemInfo: ItemInfo
-        {
-            hiddenSelections[] = {"camo"};
-            uniformModel = "\sc_equipment\data\enforcer\en_helmet.p3d";
-        };
     };
 
-    class BNA_KC_EPF_Helmet_Assault: BNA_KC_EPF_Helmet
+    class BNA_KC_TU_Helmet_Assault;
+    class BNA_KC_EPF_Helmet_Assault: BNA_KC_TU_Helmet_Assault
     {
         displayName = "[EPF] Assault Helmet";
-
-        model = "\sc_equipment\data\ranger\rn_helmet.p3d";
         hiddenSelectionsTextures[] = {"sc_equipment\data\ranger\textures\helmet_green_co.paa"};
-
-        class ItemInfo: ItemInfo
-        {
-            uniformModel = "\sc_equipment\data\ranger\rn_helmet.p3d";
-        };
     };
 
-    class BNA_KC_EPF_Helmet_Visor: BNA_KC_EPF_Helmet
+    class BNA_KC_TU_Helmet_Visor;
+    class BNA_KC_EPF_Helmet_Visor: BNA_KC_TU_Helmet_Visor
     {
         displayName = "[EPF] Visor Helmet";
-
-        model = "\sc_equipment\data\wasp\wp_helmet_visor.p3d";
-        hiddenSelections[] = {"camo", "camo1"};
         hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\helmet_green_co.paa"};
-
-        class ItemInfo: ItemInfo
-        {
-            hiddenSelections[] = {"camo", "camo1"};
-            uniformModel = "\sc_equipment\data\wasp\wp_helmet_visor.p3d";
-        };
     };
 
-    class BNA_KC_EPF_Helmet_Visor_Goggles: BNA_KC_EPF_Helmet_Visor
+    class BNA_KC_TU_Helmet_Visor_Goggles;
+    class BNA_KC_EPF_Helmet_Visor_Goggles: BNA_KC_TU_Helmet_Visor_Goggles
     {
-        displayName = "[EPF] Visor Helmet";
+        displayName = "[EPF] Visor Helmet (Goggles)";
         hiddenSelectionsTextures[] =
         {
             "\sc_equipment\data\wasp\textures\helmet_green_co.paa",
@@ -70,17 +40,11 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_EPF_Helmet_Heavy: BNA_KC_EPF_Helmet
+    class BNA_KC_TU_Helmet_Heavy;
+    class BNA_KC_EPF_Helmet_Heavy: BNA_KC_TU_Helmet_Heavy
     {
         displayName = "[EPF] Heavy Helmet";
-
-        model = "\sc_equipment\data\watchdog\wd_helmet_heavy.p3d";
         hiddenSelectionsTextures[] = {"sc_equipment\data\watchdog\textures\helmet_co.paa"};
-
-        class ItemInfo: ItemInfo
-        {
-            uniformModel = "\sc_equipment\data\watchdog\wd_helmet_heavy.p3d";
-        };
     };
 
     // ┌────────────────────┐
