@@ -11,9 +11,8 @@ class CfgPatches
                 // Base OPFOR unit, uniform, etc.
             "sc_equipment",
                 // Uniform textures
-                // Backpacks
-            "sc_props",
                 // Vest
+                // Backpacks
             "BNA_KC_Weapons_E5",
                 // E-5
             "BNA_KC_Weapons_E5C",
