@@ -21,8 +21,12 @@ class CfgPatches
                 // E-5C
             "BNA_KC_Weapons_E60R",
                 // E-60R
-            "OPTRE_FC_Weapons_PlasmaGrenade"
+            "OPTRE_FC_Weapons_PlasmaGrenade",
                 // Plasma Grenade
+            "BNA_KC_Vehicles_AAT",
+                // AAT
+            "BNA_KC_Vehicles_Plesioth"
+                // Plesioth
         };
         units[] =
         {
