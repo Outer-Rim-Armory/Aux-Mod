@@ -148,6 +148,18 @@ class CfgWeapons
         JLTS_isFried = 1;
         magazines[] = {};
     };
+
+    class BNA_KC_E5_Shielded: BNA_KC_E5_RiotShield
+    {
+        class LinkedItems
+        {
+            class LinkedItemsUnder
+            {
+                slot = "UnderBarrelSlot ";
+                item = "JLTS_riot_shield_droid_attachment";
+            };
+        };
+    };
 };
 
 

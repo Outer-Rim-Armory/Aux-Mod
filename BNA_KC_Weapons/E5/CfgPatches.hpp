@@ -23,7 +23,8 @@ class CfgPatches
             "BNA_KC_E5",
             "BNA_KC_E5_Fried",
             "BNA_KC_E5_RiotShield",
-            "BNA_KC_E5_RiotShield_Fried"
+            "BNA_KC_E5_RiotShield_Fried",
+            "BNA_KC_E5_Shielded"
         };
         magazines[] =
         {

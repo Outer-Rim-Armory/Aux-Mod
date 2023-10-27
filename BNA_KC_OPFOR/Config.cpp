@@ -28,6 +28,7 @@ class CfgWeapons
     class BNA_KC_OPFOR_Vest_Base: ls_redforVest_base
     {
         displayName = "OPFOR Vest Base";
+        descriptionShort = "Armor Level III";
     };
 };
 
@@ -76,5 +77,35 @@ class CfgVehicles
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         picture = "";
+    };
+};
+
+
+class CfgEditorSubcategories
+{
+    class BNA_KC_SubCat_OPFOR_Infantry
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Infantry";
+    };
+
+    class BNA_KC_SubCat_OPFOR_Tanks: BNA_KC_SubCat_OPFOR_Infantry
+    {
+        displayName = "Tanks";
+    };
+
+    class BNA_KC_SubCat_OPFOR_Helicopters: BNA_KC_SubCat_OPFOR_Infantry
+    {
+        displayName = "Helicopters";
+    };
+
+    class BNA_KC_SubCat_OPFOR_Planes: BNA_KC_SubCat_OPFOR_Infantry
+    {
+        displayName = "Planes";
     };
 };
