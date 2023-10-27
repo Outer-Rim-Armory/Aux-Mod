@@ -196,4 +196,31 @@ class CfgVehicles
         accuracy = 1000;
         armor = 1250;
     };
+
+    class ls_ground_aat_base;
+    class BNA_KC_AAT_King_Base: ls_ground_aat_base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+
+        // Editor Attributes
+        editorPreview = "\3as\3as_AAT\images\3AS_AAT.jpg";
+
+        displayName = "AAT (King)";
+
+        armor = 2000;
+        armorStructural = 10;
+
+        hiddenSelectionsTextures[] =
+        {
+            "\ls_vehicles_ground\aat\data\black\body1_black_co.paa",
+            "\ls_vehicles_ground\aat\data\black\body2_black_co.paa",
+            "\ls_vehicles_ground\aat\data\black\gun_black_co.paa"
+        };
+    };
 };

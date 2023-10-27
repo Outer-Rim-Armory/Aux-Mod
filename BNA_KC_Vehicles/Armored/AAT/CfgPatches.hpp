@@ -9,13 +9,16 @@ class CfgPatches
         {
             "BNA_KC_Vehicles",
                 // Core Config
-            "3AS_AAT"
+            "3AS_AAT",
                 // AAT
+            "ls_vehicles_ground"
+                // AAT, LS model for King AAT
         };
         units[] =
         {
             "BNA_KC_AAT_Base",
-            "BNA_KC_AAT_Heavy_Base"
+            "BNA_KC_AAT_Heavy_Base",
+            "BNA_KC_AAT_King_Base"
         };
         weapons[] = {};
     };
