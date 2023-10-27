@@ -188,4 +188,12 @@ class CfgVehicles
             };
         };
     };
+
+    class BNA_KC_AAT_Heavy_Base: BNA_KC_AAT_Base
+    {
+        displayName = "AAT (Heavy)";
+        hiddenSelectionsTextures[] = {"3AS\3AS_AAT\data\Red_AAT_CO.paa"};
+        accuracy = 1000;
+        armor = 1250;
+    };
 };
