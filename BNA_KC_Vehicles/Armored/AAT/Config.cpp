@@ -39,7 +39,7 @@ class CfgVehicles
             };
         };
     };
-    class BNA_KC_AAT: 3AS_AAT
+    class BNA_KC_AAT_CIS: 3AS_AAT
     {
         // Mod Info
         dlc = "BNA_KC";
