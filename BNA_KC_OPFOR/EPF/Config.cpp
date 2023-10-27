@@ -5,6 +5,33 @@
 
 class CfgWeapons
 {
+    // ┌───────────────────┐
+    // │      Helmets      │
+    // └───────────────────┘
+    class ls_redforHelmet_base;
+    class BNA_KC_OPFOR_Helmet_Base: ls_redforHelmet_base
+    {
+        class ItemInfo;
+    };
+    class BNA_KC_EPF_Helmet: BNA_KC_OPFOR_Helmet_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[EPF] Helmet";
+
+        model = "\sc_equipment\data\enforcer\en_helmet.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\enforcer\textures\helmet_olive_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo"};
+            uniformModel = "\sc_equipment\data\enforcer\en_helmet.p3d";
+        };
+    };
+
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘

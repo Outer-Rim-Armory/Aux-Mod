@@ -48,6 +48,9 @@ class CfgPatches
         };
         weapons[] =
         {
+            // Helmets
+            "BNA_KC_EPF_Helmet",
+
             // Uniforms
             "BNA_KC_EPF_Uniform",
 
