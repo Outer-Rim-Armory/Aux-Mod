@@ -68,9 +68,9 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_EPF_Vest_Medium: BNA_KC_EPF_Vest
+    class BNA_KC_EPF_Vest_AssaultMedium: BNA_KC_EPF_Vest
     {
-        displayName = "[EPF] Medium Vest";
+        displayName = "[EPF] Medium Assault Vest";
         descriptionShort = "Armor Level IV";
         model = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
         hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\vest_co.paa"};
@@ -96,9 +96,9 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_EPF_Vest_Heavy: BNA_KC_EPF_Vest
+    class BNA_KC_EPF_Vest_AssaultHeavy: BNA_KC_EPF_Vest
     {
-        displayName = "[EPF] Heavy Vest";
+        displayName = "[EPF] Heavy Assault Vest";
         descriptionShort = "Armor Level V";
         model = "\sc_equipment\data\watchdog\wd_vest_heavy.p3d";
 
