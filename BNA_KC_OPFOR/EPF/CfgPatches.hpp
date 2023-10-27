@@ -8,7 +8,9 @@ class CfgPatches
         requiredAddons[] =
         {
             "BNA_KC_OPFOR",
-                // Base OPFOR unit, uniform, etc.
+                // Subcategories
+            "BNA_KC_OPFOR_TechnoUnion",
+                // Base helmet, uniform, etc.
             "sc_equipment",
                 // Uniform textures
                 // Vests
@@ -55,6 +57,7 @@ class CfgPatches
             "BNA_KC_EPF_Helmet",
             "BNA_KC_EPF_Helmet_Assault",
             "BNA_KC_EPF_Helmet_Visor",
+            "BNA_KC_EPF_Helmet_Visor_Goggles",
             "BNA_KC_EPF_Helmet_Heavy",
 
             // Uniforms

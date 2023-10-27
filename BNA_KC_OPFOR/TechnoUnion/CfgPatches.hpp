@@ -39,6 +39,7 @@ class CfgPatches
             // Units
             "BNA_KC_TU_Unit_Base",
             "BNA_KC_TU_Unit_Rifleman",
+            "BNA_KC_TU_Unit_Rifleman_Shield",
             "BNA_KC_TU_Unit_AssaultHeavy",
             "BNA_KC_TU_Unit_AssaultMedium",
             "BNA_KC_TU_Unit_AT",
@@ -63,7 +64,21 @@ class CfgPatches
         };
         weapons[] =
         {
-            "BNA_KC_TU_Uniform"
+            // Helmets
+            "BNA_KC_TU_Helmet",
+            "BNA_KC_TU_Helmet_Assault",
+            "BNA_KC_TU_Helmet_Visor",
+            "BNA_KC_TU_Helmet_Visor_Goggles",
+            "BNA_KC_TU_Helmet_Heavy",
+
+            // Uniforms
+            "BNA_KC_TU_Uniform",
+
+            // Vests
+            "BNA_KC_TU_Vest",
+            "BNA_KC_TU_Vest_Medium",
+            "BNA_KC_TU_Vest_AssaultMedium",
+            "BNA_KC_TU_Vest_AssaultHeavy"
         };
 
         skipWhenMissingDependencies = 1;

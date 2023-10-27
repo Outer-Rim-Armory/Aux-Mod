@@ -2,7 +2,7 @@ class BNA_KC_AAT_CIS;
 class BNA_KC_AAT_TU: BNA_KC_AAT_CIS
 {
     faction = "BNA_KC_OPFOR_TU";
-    editorSubcategory = "BNA_KC_SubCat_TU_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};

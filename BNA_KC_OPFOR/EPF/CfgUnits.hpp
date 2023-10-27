@@ -1,31 +1,10 @@
-class BNA_KC_EPF_Unit_Rifleman: BNA_KC_EPF_Unit_Base
+class BNA_KC_TU_Unit_Rifleman;
+class BNA_KC_EPF_Unit_Rifleman: BNA_KC_TU_Unit_Rifleman
 {
-    // Scope
-    scope = 2;
-    scopeCurator = 2;
-
-    displayName = "Rifleman";
+    faction = "BNA_KC_OPFOR_EPF";
+    uniformClass = "BNA_KC_EPF_Uniform";
+    hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_green_co.paa"};
     // editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Rifleman.jpg";
-
-    weapons[] = {"BNA_KC_E5", "", "Throw", "Put"};
-    respawnWeapons[] = {"BNA_KC_E5", "", "Throw", "Put"};
-
-    magazines[] = {"Aux12thFleet_Mag_E5"};
-    respawnMagazines[] = {"Aux12thFleet_Mag_E5"};
-    items[] =
-    {
-        // Other
-        ITEM_10("ACE_elasticBandage"),
-        ITEM_4("ACE_tourniquet"),
-        "FirstAidKit"
-    };
-    respawnItems[] =
-    {
-        // Other
-        ITEM_10("ACE_elasticBandage"),
-        ITEM_4("ACE_tourniquet"),
-        "FirstAidKit"
-    };
 
     linkedItems[] = {"BNA_KC_EPF_Helmet", "BNA_KC_EPF_Vest", BASE_LINKED_ITEMS};
     respawnLinkedItems[] = {"BNA_KC_EPF_Helmet", "BNA_KC_EPF_Vest", BASE_LINKED_ITEMS};
@@ -53,8 +32,8 @@ class BNA_KC_EPF_Unit_AT: BNA_KC_EPF_Unit_Rifleman
     magazines[] = {"Aux12thFleet_Mag_E5", "Aux12thFleet_Mag_E60R_AT"};
     respawnMagazines[] = {"Aux12thFleet_Mag_E5", "Aux12thFleet_Mag_E60R_AT"};
 
-    linkedItems[] = {"BNA_KC_EPF_Helmet_Visor", "BNA_KC_EPF_Vest_AssaultMedium", BASE_LINKED_ITEMS};
-    respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_Visor", "BNA_KC_EPF_Vest_AssaultMedium", BASE_LINKED_ITEMS};
+    linkedItems[] = {"BNA_KC_EPF_Helmet_Visor_Goggles", "BNA_KC_EPF_Vest_AssaultMedium", BASE_LINKED_ITEMS};
+    respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_Visor_Goggles", "BNA_KC_EPF_Vest_AssaultMedium", BASE_LINKED_ITEMS};
     backpack = "BNA_KC_EPF_Backpack_Heavy_Predef_AT";
 };
 
@@ -107,19 +86,13 @@ class BNA_KC_EPF_Unit_SL: BNA_KC_EPF_Unit_Rifleman
     backpack = "BNA_KC_EPF_Backpack_RTO_Predef_SL";
 };
 
-class BNA_KC_EPF_Unit_Melee: BNA_KC_EPF_Unit_Base
+class BNA_KC_TU_Unit_Melee;
+class BNA_KC_EPF_Unit_Melee: BNA_KC_TU_Unit_Melee
 {
-    // Scope
-    scope = 2;
-    scopeCurator = 2;
-
-    displayName = "Swordsman (Rush)";
+    faction = "BNA_KC_OPFOR_EPF";
+    uniformClass = "BNA_KC_EPF_Uniform";
+    hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_green_co.paa"};
     // editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Textures\Previews\Melee.jpg";
-
-    weapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
-    respawnWeapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
-    magazines[] = {"WBK_Cybercrystal"};
-    respawnMagazines[] = {"WBK_Cybercrystal"};
 
     linkedItems[] = {"BNA_KC_EPF_Helmet_Visor", "BNA_KC_EPF_Vest", BASE_LINKED_ITEMS};
     respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_Visor", "BNA_KC_EPF_Vest", BASE_LINKED_ITEMS};
