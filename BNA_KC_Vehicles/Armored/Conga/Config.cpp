@@ -4,10 +4,14 @@
 
 class CfgVehicles
 {
-    class APC_Wheeled_01_base_F;
+    class Wheeled_APC_F;
+    class APC_Wheeled_01_base_F: Wheeled_APC_F
+    {
+        class Turrets;
+    };
     class OPTRE_M413_base: APC_Wheeled_01_base_F
     {
-        class Turrets
+        class Turrets: Turrets
         {
             class MainTurret;
         };
