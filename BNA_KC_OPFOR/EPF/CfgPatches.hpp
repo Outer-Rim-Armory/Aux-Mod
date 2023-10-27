@@ -24,6 +24,13 @@ class CfgPatches
         {
             // Units
             "BNA_KC_EPF_Unit_Base",
+            "BNA_KC_EPF_Unit_Rifleman",
+            "BNA_KC_EPF_Unit_AT",
+            "BNA_KC_EPF_Unit_AA",
+            "BNA_KC_EPF_Unit_AssaultHeavy",
+            "BNA_KC_EPF_Unit_AssaultMedium",
+            "BNA_KC_EPF_Unit_SL",
+            "BNA_KC_EPF_Unit_Melee",
 
             // Backpacks
             "BNA_KC_EPF_Backpack",
