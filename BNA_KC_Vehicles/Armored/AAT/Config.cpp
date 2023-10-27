@@ -249,6 +249,7 @@ class CfgVehicles
         armor = 2000;
         armorStructural = 10;
 
+        hiddenselections[] = {"body1", "body2", "gun"};
         hiddenSelectionsTextures[] =
         {
             "\ls_vehicles_ground\aat\data\black\body1_black_co.paa",
