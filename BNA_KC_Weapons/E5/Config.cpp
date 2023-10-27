@@ -155,7 +155,7 @@ class CfgWeapons
         {
             class LinkedItemsUnder
             {
-                slot = "UnderBarrelSlot ";
+                slot = "UnderBarrelSlot";
                 item = "JLTS_riot_shield_droid_attachment";
             };
         };
