@@ -51,6 +51,7 @@ class CfgPatches
             // Helmets
             "BNA_KC_EPF_Helmet",
             "BNA_KC_EPF_Helmet_Assault",
+            "BNA_KC_EPF_Helmet_Visor",
 
             // Uniforms
             "BNA_KC_EPF_Uniform",
