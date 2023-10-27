@@ -324,6 +324,11 @@ class CfgVehicles
             TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
         };
     };
+
+    // ┌───────────────────┐
+    // │      Vehicles     │
+    // └───────────────────┘
+    #include "CfgVehicles.hpp"
 };
 
 
@@ -353,6 +358,11 @@ class CfgEditorSubcategories
         scopeCurator = 2;
 
         displayName = "Infantry";
+    };
+
+    class BNA_KC_SubCat_TU_Tanks: BNA_KC_SubCat_TU_Infantry
+    {
+        displayName = "Tanks";
     };
 };
 

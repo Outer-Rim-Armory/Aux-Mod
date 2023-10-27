@@ -241,7 +241,7 @@ class CfgFactionClasses
 
 class CfgEditorSubcategories
 {
-    class BNA_KC_SubCat_CIS_SpecOps
+    class BNA_KC_SubCat_CIS_Infantry
     {
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
@@ -249,6 +249,16 @@ class CfgEditorSubcategories
         scope = 2;
         scopeCurator = 2;
 
+        displayName = "Infantry";
+    };
+
+    class BNA_KC_SubCat_CIS_SpecOps: BNA_KC_SubCat_CIS_Infantry
+    {
         displayName = "Spec Ops";
+    };
+
+    class BNA_KC_SubCat_CIS_Tanks: BNA_KC_SubCat_CIS_Infantry
+    {
+        displayName = "Tanks";
     };
 };
