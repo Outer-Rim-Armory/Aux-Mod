@@ -32,6 +32,19 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_EPF_Helmet_Assault: BNA_KC_EPF_Helmet
+    {
+        displayName = "[EPF] Assault Helmet";
+
+        model = "\sc_equipment\data\ranger\rn_helmet.p3d";
+        hiddenSelectionsTextures[] = {"sc_equipment\data\ranger\textures\helmet_green_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\ranger\rn_helmet.p3d";
+        };
+    };
+
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
