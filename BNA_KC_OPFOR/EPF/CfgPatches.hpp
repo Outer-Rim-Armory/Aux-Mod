@@ -35,7 +35,8 @@ class CfgPatches
             "BNA_KC_EPF_Uniform",
 
             // Vests
-            "BNA_KC_EPF_Vest"
+            "BNA_KC_EPF_Vest",
+            "BNA_KC_EPF_Vest_Medium"
         };
 
         skipWhenMissingDependencies = 1;

@@ -52,10 +52,7 @@ class CfgWeapons
 
         model = "\sc_equipment\data\watchdog\wd_vest_basic.p3d";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] =
-        {
-            "\sc_equipment\data\marine\textures\vest_green_co.paa"
-        };
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\marine\textures\vest_green_co.paa"};
 
         class ItemInfo: ItemInfo
         {
@@ -67,6 +64,34 @@ class CfgWeapons
                 class Abdomen;
                 class Chest;
                 class Diaphragm;
+            };
+        };
+    };
+
+    class BNA_KC_EPF_Vest_Medium: BNA_KC_EPF_Vest
+    {
+        displayName = "[EPF] Medium Vest";
+        descriptionShort = "Armor Level IV";
+        model = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\vest_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Abdomen: Abdomen
+                {
+                    armor = 20;
+                };
+                class Chest: Chest
+                {
+                    armor = 20;
+                };
+                class Diaphragm: Diaphragm
+                {
+                    armor = 20;
+                };
             };
         };
     };
