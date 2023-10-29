@@ -18,7 +18,9 @@ class CfgPatches
         };
         units[] =
         {
-            "BNA_KC_Rathian_Base"
+            "BNA_KC_Rathian_Base",
+            "BNA_KC_Rathian_CAP_Base",
+            "BNA_KC_Rathian_CAS_Base"
         };
         weapons[] = {};
     };
