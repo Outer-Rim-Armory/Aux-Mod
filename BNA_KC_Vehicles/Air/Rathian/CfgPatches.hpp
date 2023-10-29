@@ -10,7 +10,7 @@ class CfgPatches
             "BNA_KC_Vehicles",
                 // Core Config
             "OPTRE_Vehicles_Hornet",
-                // Bison
+                // Hornet
             "BNA_KC_Vehicles_Weapons",
                 // Weapons
             "BNA_KC_Vehicles_Sounds"
