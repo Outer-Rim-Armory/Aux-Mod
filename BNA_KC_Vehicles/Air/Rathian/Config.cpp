@@ -4,7 +4,11 @@
 
 class CfgVehicles
 {
-    class OPTRE_Hornet_base;
+    class Helicopter_Base_H;
+    class OPTRE_Hornet_base: Helicopter_Base_H
+    {
+        class ACE_SelfActions;
+    };
     class BNA_KC_Rathian_Base: OPTRE_Hornet_base
     {
         // Mod Info
@@ -39,6 +43,11 @@ class CfgVehicles
                 factions[] = {"BNA_KC_OPFOR_EPF"};
                 textures[] = {"\OPTRE_Vehicles_Air\hornet\data\hornet_hull_standard_co.paa"};
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            HUD_CHANGER
         };
     };
 
