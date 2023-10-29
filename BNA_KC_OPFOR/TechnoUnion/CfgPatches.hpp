@@ -74,7 +74,9 @@ class CfgPatches
             "BNA_KC_Plesioth_TU",
             "BNA_KC_Conga_IFV_TU",
             "BNA_KC_Conga_MGS_TU",
-            "BNA_KC_AST_TU"
+            "BNA_KC_AST_TU",
+            "BNA_KC_Rathian_CAP_TU",
+            "BNA_KC_Rathian_CAS_TU"
         };
         weapons[] =
         {
