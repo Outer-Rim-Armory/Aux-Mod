@@ -45,4 +45,12 @@ class CfgEditorSubcategories
     {
         displayName = "Speeders";
     };
+    class BNA_KC_SubCat_Planes: BNA_KC_SubCat_VAir
+    {
+        displayName = "Planes";
+    };
+    class BNA_KC_SubCat_Helicopters: BNA_KC_SubCat_VAir
+    {
+        displayName = "Helicopters";
+    };
 };
