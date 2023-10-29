@@ -62,7 +62,8 @@ class CfgPatches
             // Vehicles
             "BNA_KC_Plesioth_EPF",
             "BNA_KC_Conga_IFV_EPF",
-            "BNA_KC_Conga_MGS_EPF"
+            "BNA_KC_Conga_MGS_EPF",
+            "BNA_KC_AST_TU"
         };
         weapons[] =
         {
