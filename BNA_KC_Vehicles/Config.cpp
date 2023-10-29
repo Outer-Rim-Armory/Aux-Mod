@@ -41,4 +41,8 @@ class CfgEditorSubcategories
     {
         displayName = "Static Weapons";
     };
+    class BNA_KC_SubCat_Speeders: BNA_KC_SubCat_VAir
+    {
+        displayName = "Speeders";
+    };
 };

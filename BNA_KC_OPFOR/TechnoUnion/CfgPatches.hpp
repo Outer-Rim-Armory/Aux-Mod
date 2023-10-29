@@ -31,12 +31,16 @@ class CfgPatches
                 // Base backpack
             "LFPModels",
                 // Shadow Mask
+            "BNA_KC_Vehicles",
+                // Subcategories
             "BNA_KC_Vehicles_AAT",
                 // AAT
             "BNA_KC_Vehicles_Plesioth",
                 // Plesioth
-            "BNA_KC_Vehicles_Conga"
+            "BNA_KC_Vehicles_Conga",
                 // Conga
+            "BNA_KC_Vehicles_AST"
+                // Armored Scout Tank
         };
         units[] =
         {

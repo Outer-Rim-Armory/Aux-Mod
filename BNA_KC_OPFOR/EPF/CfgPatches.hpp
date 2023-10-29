@@ -23,12 +23,16 @@ class CfgPatches
                 // E-60R
             "OPTRE_FC_Weapons_PlasmaGrenade",
                 // Plasma Grenade
+            "BNA_KC_Vehicles",
+                // Subcategory
             "BNA_KC_Vehicles_AAT",
                 // AAT
             "BNA_KC_Vehicles_Plesioth",
                 // Plesioth
-            "BNA_KC_Vehicles_Conga"
+            "BNA_KC_Vehicles_Conga",
                 // Conga
+            "BNA_KC_Vehicles_AST"
+                // Armored Scout Tank
         };
         units[] =
         {
