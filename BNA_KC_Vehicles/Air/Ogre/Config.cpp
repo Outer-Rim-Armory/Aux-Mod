@@ -25,6 +25,17 @@ class CfgVehicles
 
         displayName = "Ogre";
 
+        weapons[] = {"CMFlareLauncher"};
+        magazines[] =
+        {
+            "168Rnd_CMFlare_Chaff_Magazine"
+        };
+
+        tf_hasLRradio = 1;
+        tf_range = 25000;
+        tf_isolatedAmount = 0.4;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+
         hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
 
         textureList[] = {"TechnoUnion", 1, "EPF", 0};
