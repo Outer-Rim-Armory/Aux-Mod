@@ -83,10 +83,10 @@ class CfgPatches
             "BNA_KC_AST_TU",
             "BNA_KC_Ogre_TU",
             "BNA_KC_Ogre_Armed_TU",
-            "BNA_KC_Rathian_CAP_TU",
-            "BNA_KC_Rathian_CAS_TU",
             "BNA_KC_Vespoid_TU",
-            "BNA_KC_Vespoid_Armed_TU"
+            "BNA_KC_Vespoid_Armed_TU",
+            "BNA_KC_Rathian_CAP_TU",
+            "BNA_KC_Rathian_CAS_TU"
         };
         weapons[] =
         {
