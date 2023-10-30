@@ -54,28 +54,28 @@ class CfgVehicles
     class BNA_KC_Rathian_CAP_Base: BNA_KC_Rathian_Base
     {
         displayName = "Rathian (CAP)";
-        weapons[] = {"OPTRE_GUA23A", "CMFlareLauncher", "Laserdesignator_pilotCamera", "OPTRE_missiles_C2GMLS"};
+        weapons[] = {"OPTRE_GUA23A", "OPTRE_missiles_C2GMLS", "CMFlareLauncher", "Laserdesignator_pilotCamera"};
         magazines[] =
         {
             "OPTRE_2000Rnd_20mm_HEIAP",
-            "168Rnd_CMFlare_Chaff_Magazine",
-            "Laserbatteries",
             "OPTRE_8Rnd_C2GMLS_missiles",
-            "OPTRE_8Rnd_C2GMLS_missiles"
+            "OPTRE_8Rnd_C2GMLS_missiles",
+            "168Rnd_CMFlare_Chaff_Magazine",
+            "Laserbatteries"
         };
     };
 
     class BNA_KC_Rathian_CAS_Base: BNA_KC_Rathian_Base
     {
         displayName = "Rathian (CAS)";
-        weapons[] = {"OPTRE_GUA23A", "CMFlareLauncher", "Laserdesignator_pilotCamera", "OPTRE_missiles_C2GMLS"};
+        weapons[] = {"OPTRE_GUA23A", "OPTRE_missiles_C2GMLS", "CMFlareLauncher", "Laserdesignator_pilotCamera"};
         magazines[] =
         {
             "OPTRE_2000Rnd_20mm_HEIAP",
-            "168Rnd_CMFlare_Chaff_Magazine",
-            "Laserbatteries",
             "OPTRE_8Rnd_C2GMLS_missiles",
-            "OPTRE_8Rnd_C2GMLS_missiles"
+            "OPTRE_8Rnd_C2GMLS_missiles",
+            "168Rnd_CMFlare_Chaff_Magazine",
+            "Laserbatteries"
         };
     };
 };
