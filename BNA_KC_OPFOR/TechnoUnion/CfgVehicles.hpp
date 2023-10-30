@@ -185,3 +185,37 @@ class BNA_KC_Rathian_CAS_TU: BNA_KC_Rathian_CAS_Base
     hiddenSelectionsTextures[] = {"\OPTRE_Vehicles_Air\hornet\data\hornet_hull_desert_co.paa"};
     textureList[] = {"TechnoUnion", 1, "EPF", 0};
 };
+
+class BNA_KC_Ogre_Base;
+class BNA_KC_Ogre_TU: BNA_KC_Ogre_Base
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    faction = "BNA_KC_OPFOR_TU";
+    editorSubcategory = "BNA_KC_SubCat_Helicopters";
+
+    crew = "BNA_KC_TU_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
+
+    hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
+    textureList[] = {"TechnoUnion", 1, "EPF", 0};
+};
+
+class BNA_KC_Ogre_Armed_Base;
+class BNA_KC_Ogre_Armed_TU: BNA_KC_Ogre_Armed_Base
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    faction = "BNA_KC_OPFOR_TU";
+    editorSubcategory = "BNA_KC_SubCat_Helicopters";
+
+    crew = "BNA_KC_TU_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
+
+    hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
+    textureList[] = {"TechnoUnion", 1, "EPF", 0};
+};

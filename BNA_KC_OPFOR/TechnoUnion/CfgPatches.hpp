@@ -39,8 +39,10 @@ class CfgPatches
                 // Plesioth
             "BNA_KC_Vehicles_Conga",
                 // Conga
-            "BNA_KC_Vehicles_AST"
+            "BNA_KC_Vehicles_AST",
                 // Armored Scout Tank
+            "BNA_KC_Vehicles_Ogre"
+                // Ogre
         };
         units[] =
         {
@@ -76,7 +78,9 @@ class CfgPatches
             "BNA_KC_Conga_MGS_TU",
             "BNA_KC_AST_TU",
             "BNA_KC_Rathian_CAP_TU",
-            "BNA_KC_Rathian_CAS_TU"
+            "BNA_KC_Rathian_CAS_TU",
+            "BNA_KC_Ogre_TU",
+            "BNA_KC_Ogre_Armed_TU"
         };
         weapons[] =
         {

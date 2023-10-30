@@ -73,6 +73,7 @@ class CfgVehicles
 
     class BNA_KC_Ogre_Armed_Base: BNA_KC_Ogre_Base
     {
+        displayName = "Ogre (Armed)";
         class Turrets: Turrets
         {
             class CopilotTurret: CopilotTurret
