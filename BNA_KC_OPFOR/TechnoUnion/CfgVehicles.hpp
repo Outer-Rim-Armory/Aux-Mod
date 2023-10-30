@@ -219,3 +219,47 @@ class BNA_KC_Ogre_Armed_TU: BNA_KC_Ogre_Armed_Base
     hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
     textureList[] = {"TechnoUnion", 1, "EPF", 0};
 };
+
+class BNA_KC_Vespoid_Base;
+class BNA_KC_Vespoid_TU: BNA_KC_Vespoid_Base
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    faction = "BNA_KC_OPFOR_TU";
+    editorSubcategory = "BNA_KC_SubCat_Helicopters";
+
+    crew = "BNA_KC_TU_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
+
+    hiddenSelectionsTextures[] =
+    {
+        "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Main_co.paa",
+        "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Attachments_co.paa",
+        "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Interior_co.paa"
+    };
+    textureList[] = {"TechnoUnion", 1, "EPF", 0};
+};
+
+class BNA_KC_Vespoid_Armed_Base;
+class BNA_KC_Vespoid_Armed_TU: BNA_KC_Vespoid_Armed_Base
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    faction = "BNA_KC_OPFOR_TU";
+    editorSubcategory = "BNA_KC_SubCat_Helicopters";
+
+    crew = "BNA_KC_TU_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
+
+    hiddenSelectionsTextures[] =
+    {
+        "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Main_co.paa",
+        "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Attachments_co.paa",
+        "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Interior_co.paa"
+    };
+    textureList[] = {"TechnoUnion", 1, "EPF", 0};
+};
