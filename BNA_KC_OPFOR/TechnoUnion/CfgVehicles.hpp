@@ -12,7 +12,7 @@ class BNA_KC_AAT_TU: BNA_KC_AAT_Base
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
 
     hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
-    editorPreview = "\3as\3AS_AAT\images\3AS_AAT_tan.jpg";
+    editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_Tan.jpg";
 
     textureList[] =
     {

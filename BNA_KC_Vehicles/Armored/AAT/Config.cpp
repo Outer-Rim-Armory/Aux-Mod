@@ -67,7 +67,7 @@ class CfgVehicles
         scopeCurator = 0;
 
         // Editor Attributes
-        editorPreview = "\3as\3as_AAT\images\3AS_AAT.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_Blue.jpg";
 
         displayName = "AAT";
 
@@ -210,6 +210,7 @@ class CfgVehicles
     {
         displayName = "AAT (Heavy)";
         hiddenSelectionsTextures[] = {"3AS\3AS_AAT\data\Red_AAT_CO.paa"};
+        editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_Red.jpg";
         accuracy = 1000;
         armor = 1250;
 
@@ -242,7 +243,7 @@ class CfgVehicles
         scopeCurator = 0;
 
         // Editor Attributes
-        editorPreview = "\3as\3as_AAT\images\3AS_AAT.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_King.jpg";
 
         displayName = "AAT (King)";
 
