@@ -67,6 +67,7 @@ class BNA_KC_Plesioth_TU: BNA_KC_Plesioth_Base
 
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorPreview = "\BNA_KC_Vehicles\Armored\Plesioth\Data\Previews\Plesioth_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
