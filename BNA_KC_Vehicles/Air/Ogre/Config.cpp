@@ -50,6 +50,7 @@ class CfgVehicles
         tf_isolatedAmount = 0.4;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
 
+        hiddenSelections[] = {"camo1", "camo3", "clan", "clan_text", "insignia", "attach_gun"};
         hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
 
         textureList[] = {"TechnoUnion", 1, "EPF", 0};
@@ -74,6 +75,8 @@ class CfgVehicles
     class BNA_KC_Ogre_Armed_Base: BNA_KC_Ogre_Base
     {
         displayName = "Ogre (Armed)";
+        hiddenSelections[] = {"camo1", "camo3", "clan", "clan_text", "insignia"};
+
         class Turrets: Turrets
         {
             class CopilotTurret: CopilotTurret
