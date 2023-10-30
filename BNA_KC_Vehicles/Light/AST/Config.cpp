@@ -24,6 +24,7 @@ class CfgVehicles
         scopeCurator = 0;
 
         displayName = "Armored Scout Tank";
+        editorPreview = "\BNA_KC_Vehicles\Light\AST\Data\Previews\Scout_Tank.jpg";
 
         class Turrets: Turrets
         {
