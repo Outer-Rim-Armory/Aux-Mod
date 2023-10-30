@@ -18,6 +18,7 @@ class CfgVehicles
     };
     class OPTRE_Pelican_F: Helicopter_Base_H
     {
+        class ACE_SelfActions;
         class Turrets: Turrets
         {
             class CopilotTurret;
@@ -69,6 +70,11 @@ class CfgVehicles
                 factions[] = {"BNA_KC_OPFOR_EPF"};
                 textures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_standard_CO.paa"};
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            HUD_CHANGER
         };
     };
 
