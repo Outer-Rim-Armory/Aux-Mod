@@ -18,7 +18,8 @@ class CfgPatches
         };
         units[] =
         {
-
+            "BNA_KC_Vespoid_Base",
+            "BNA_KC_Vespoid_Armed_Base"
         };
         weapons[] = {};
     };
