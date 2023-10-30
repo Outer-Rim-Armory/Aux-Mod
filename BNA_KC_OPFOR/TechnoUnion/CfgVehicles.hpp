@@ -197,7 +197,7 @@ class BNA_KC_Vespoid_TU: BNA_KC_Vespoid_Base
 
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
-    editorPreview = "\BNA_KC_Vehicles\Air\Rathian\Data\Previews\Rathian_Tan.jpg";
+    editorPreview = "\BNA_KC_Vehicles\Air\Vespoid\Data\Previews\Vespoid_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
@@ -220,7 +220,7 @@ class BNA_KC_Vespoid_Armed_TU: BNA_KC_Vespoid_Armed_Base
 
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
-    editorPreview = "\BNA_KC_Vehicles\Air\Rathian\Data\Previews\Rathian_Tan.jpg";
+    editorPreview = "\BNA_KC_Vehicles\Air\Vespoid\Data\Previews\Vespoid_Armed_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
@@ -243,6 +243,7 @@ class BNA_KC_Rathian_CAP_TU: BNA_KC_Rathian_CAP_Base
 
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
+    editorPreview = "\BNA_KC_Vehicles\Air\Rathian\Data\Previews\Rathian_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
@@ -260,6 +261,7 @@ class BNA_KC_Rathian_CAS_TU: BNA_KC_Rathian_CAS_Base
 
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
+    editorPreview = "\BNA_KC_Vehicles\Air\Rathian\Data\Previews\Rathian_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};

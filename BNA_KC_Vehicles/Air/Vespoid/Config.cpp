@@ -22,7 +22,7 @@ class CfgVehicles
 
         // Editor Attributes
         side = 0;
-        // editorPreview = "";
+        editorPreview = "\BNA_KC_Vehicles\Air\Vespoid\Data\Previews\Vespoid_Tan.jpg";
 
         displayName = "Vespoid";
 
@@ -77,6 +77,7 @@ class CfgVehicles
     class BNA_KC_Vespoid_Armed_Base: BNA_KC_Vespoid_Base
     {
         displayName = "Vespoid (Armed)";
+        editorPreview = "\BNA_KC_Vehicles\Air\Vespoid\Data\Previews\Vespoid_Armed_Tan.jpg";
 
         weapons[] = {"OPTRE_M638", "CMFlareLauncher","Laserdesignator_pilotCamera"};
         magazines[] =
