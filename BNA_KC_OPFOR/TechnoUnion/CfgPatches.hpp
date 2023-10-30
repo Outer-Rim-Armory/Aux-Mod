@@ -43,10 +43,10 @@ class CfgPatches
                 // Armored Scout Tank
             "BNA_KC_Vehicles_Ogre",
                 // Ogre
-            "BNA_KC_Vehicles_Rathian",
-                // Rathian
-            "BNA_KC_Vehicles_Vespoid"
+            "BNA_KC_Vehicles_Vespoid",
                 // Vespoid
+            "BNA_KC_Vehicles_Rathian"
+                // Rathian
         };
         units[] =
         {
@@ -81,10 +81,10 @@ class CfgPatches
             "BNA_KC_Conga_IFV_TU",
             "BNA_KC_Conga_MGS_TU",
             "BNA_KC_AST_TU",
-            "BNA_KC_Rathian_CAP_TU",
-            "BNA_KC_Rathian_CAS_TU",
             "BNA_KC_Ogre_TU",
             "BNA_KC_Ogre_Armed_TU",
+            "BNA_KC_Rathian_CAP_TU",
+            "BNA_KC_Rathian_CAS_TU",
             "BNA_KC_Vespoid_TU",
             "BNA_KC_Vespoid_Armed_TU"
         };
