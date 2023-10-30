@@ -4,7 +4,11 @@
 
 class CfgVehicles
 {
-    class OPTRE_falcon_base_unarmed;
+    class OPTRE_falcon_base;
+    class OPTRE_falcon_base_unarmed: OPTRE_falcon_base
+    {
+        class Components;
+    };
     class BNA_KC_Vespoid_Base: OPTRE_falcon_base_unarmed
     {
         // Mod Info
