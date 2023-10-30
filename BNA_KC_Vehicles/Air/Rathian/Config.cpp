@@ -21,7 +21,7 @@ class CfgVehicles
 
         // Editor Attributes
         side = 0;
-        // editorPreview = "";
+        editorPreview = "\BNA_KC_Vehicles\Air\Rathian\Data\Previews\Rathian_Tan.jpg";
 
         displayName = "Rathian";
 
