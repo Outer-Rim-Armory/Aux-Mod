@@ -42,7 +42,7 @@ class CfgVehicles
 
         // Editor Attributes
         side = 0;
-        // editorPreview = "";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Conga\Data\Previews\Conga_IFV_Tan.jpg";
 
         displayName = "Conga IFV";
 
@@ -149,7 +149,7 @@ class CfgVehicles
 
         // Editor Attributes
         side = 0;
-        // editorPreview = "";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Conga\Data\Previews\Conga_MGS_Tan.jpg";
 
         displayName = "Conga MGS";
 

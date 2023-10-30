@@ -93,6 +93,7 @@ class BNA_KC_Conga_IFV_TU: BNA_KC_Conga_IFV_Base
 
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorPreview = "\BNA_KC_Vehicles\Armored\Conga\Data\Previews\Conga_IFV_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
@@ -119,6 +120,7 @@ class BNA_KC_Conga_MGS_TU: BNA_KC_Conga_MGS_Base
 
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorPreview = "\BNA_KC_Vehicles\Armored\Conga\Data\Previews\Conga_MGS_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
