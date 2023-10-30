@@ -36,7 +36,7 @@ class CfgVehicles
 
         // Editor Attributes
         side = 0;
-        // editorPreview = "";
+        editorPreview = "\BNA_KC_Vehicles\Air\Ogre\Data\Previews\Ogre_Tan.jpg";
 
         displayName = "Ogre";
 
@@ -81,6 +81,7 @@ class CfgVehicles
     class BNA_KC_Ogre_Armed_Base: BNA_KC_Ogre_Base
     {
         displayName = "Ogre (Armed)";
+        editorPreview = "\BNA_KC_Vehicles\Air\Ogre\Data\Previews\Ogre_Armed_Tan.jpg";
         hiddenSelections[] = {"camo1", "camo3", "clan", "clan_text", "insignia"};
 
         class Turrets: Turrets

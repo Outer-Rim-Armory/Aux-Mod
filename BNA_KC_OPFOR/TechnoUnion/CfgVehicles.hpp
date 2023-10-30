@@ -161,6 +161,7 @@ class BNA_KC_Ogre_TU: BNA_KC_Ogre_Base
 
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
+    editorPreview = "\BNA_KC_Vehicles\Air\Ogre\Data\Previews\Ogre_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
@@ -178,6 +179,7 @@ class BNA_KC_Ogre_Armed_TU: BNA_KC_Ogre_Armed_Base
 
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
+    editorPreview = "\BNA_KC_Vehicles\Air\Ogre\Data\Previews\Ogre_Armed_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
