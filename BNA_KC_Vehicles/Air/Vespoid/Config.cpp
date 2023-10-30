@@ -7,6 +7,7 @@ class CfgVehicles
     class OPTRE_falcon_base;
     class OPTRE_falcon_base_unarmed: OPTRE_falcon_base
     {
+        class ACE_SelfActions;
         class Components;
     };
     class BNA_KC_Vespoid_Base: OPTRE_falcon_base_unarmed
@@ -65,6 +66,11 @@ class CfgVehicles
                     "\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"
                 };
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            HUD_CHANGER
         };
     };
 
