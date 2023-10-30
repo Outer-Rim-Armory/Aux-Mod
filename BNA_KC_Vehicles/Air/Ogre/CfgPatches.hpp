@@ -18,7 +18,8 @@ class CfgPatches
         };
         units[] =
         {
-            "BNA_KC_Ogre_Base"
+            "BNA_KC_Ogre_Base",
+            "BNA_KC_Ogre_Armed_Base"
         };
         weapons[] = {};
     };
