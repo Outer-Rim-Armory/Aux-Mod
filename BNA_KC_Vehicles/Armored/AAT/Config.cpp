@@ -111,7 +111,7 @@ class CfgVehicles
             class Red: CIS
             {
                 displayName = "Red";
-                factions[] = {"BNA_KC_OPFOR_CIS", "BNA_KC_OPFOR_TU", "BNA_KC_OPFOR_EPF"};
+                factions[] = {};
                 textures[] = {"\3AS\3AS_AAT\data\Red_AAT_CO.paa"};
             };
             class Desert: Red
