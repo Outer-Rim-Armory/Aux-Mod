@@ -22,7 +22,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC CIS] BX Commando Droid";
+        displayName = "[CIS] BX Commando Droid";
 
         class ItemInfo: ItemInfo
         {
@@ -37,7 +37,7 @@ class CfgWeapons
     };
     class BNA_KC_CIS_Uniform_BXDroid_Actor: BNA_KC_Uniform_Base
     {
-        displayName = "[KC CIS] BX Commando Droid (Actor)";
+        displayName = "[CIS] BX Commando Droid (Actor)";
         class ItemInfo: ItemInfo
         {
             uniformClass = "BNA_KC_CIS_Unit_BXDroid_Actor";
@@ -65,7 +65,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[KC CIS] BX Commando Droid [Gun Vest]";
+        displayName = "[CIS] BX Commando Droid";
         model = "\SWLB_clones\SWLB_clone_basic_armor.p3d";
 
         class ItemInfo: ItemInfo
@@ -84,7 +84,7 @@ class CfgWeapons
     };
     class BNA_KC_CIS_Vest_BXDroid_Melee: BNA_KC_CIS_Vest_BXDroid
     {
-        displayName = "[KC CIS] BX Commando Droid [Melee Vest]";
+        displayName = "[CIS] BX Commando Droid (Melee)";
         model = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
         class ItemInfo: ItemInfo
         {
@@ -99,11 +99,12 @@ class CfgWeapons
     };
     class BNA_KC_CIS_Vest_BXDroid_Actor: BNA_KC_Vest_Basic
     {
-        displayName = "[KC CIS] BX Commando Droid (Actor)";
+        displayName = "[CIS] BX Commando Droid (Actor)";
         picture = "\ls_data\icons\LS_logo_ca.paa";
     };
     class BNA_KC_CIS_Vest_BXDroid_Melee_Actor: BNA_KC_CIS_Vest_BXDroid_Actor
     {
+        displayName = "[CIS] BX Commando Droid (Actor, Melee)";
         model = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
         class ItemInfo: ItemInfo
         {
@@ -129,7 +130,7 @@ class CfgVehicles
         impactDamageMultiplier = 0.5;
         minTotalDamageThreshold = 0.001;
 
-        identityTypes[] = { "", "Head_NATO" };
+        identityTypes[] = {"", "Head_NATO"};
 
         impactEffectsBlood = "ImpactMetal";
         impactEffectsNoBlood = "ImpactMetal";
@@ -141,13 +142,13 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] BX Commando Droid";
+        displayName = "BX Commando Droid";
 
         // Editor Properties
-        editorSubcategory = "BNA_KC_SubCat_CIS_SpecOps";
+        editorSubcategory = "BNA_KC_SubCat_CIS_SpecialForces";
         editorPreview = "\BNA_KC_OPFOR\CIS\Data\Textures\Previews\BXDroid.jpg";
 
-        uniformClass = "BNA_KC_OPFOR_Uniform_BXDroid";
+        uniformClass = "BNA_KC_CIS_Uniform_BXDroid";
         model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
@@ -155,14 +156,14 @@ class CfgVehicles
         weapons[] =
         {
             "BNA_KC_E5",
-            "SWLW_RG4D",
+            "",
             "Throw",
             "Put"
         };
         respawnWeapons[] =
         {
             "BNA_KC_E5",
-            "SWLW_RG4D",
+            "",
             "Throw",
             "Put"
         };
@@ -170,7 +171,6 @@ class CfgVehicles
         {
             // Ammo
             ITEM_11("Aux12thFleet_Mag_E5"),
-            ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             // Smokes
@@ -180,7 +180,6 @@ class CfgVehicles
         {
             // Ammo
             ITEM_11("Aux12thFleet_Mag_E5"),
-            ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             // Smokes
@@ -257,9 +256,9 @@ class CfgEditorSubcategories
         displayName = "Infantry";
     };
 
-    class BNA_KC_SubCat_CIS_SpecOps: BNA_KC_SubCat_CIS_Infantry
+    class BNA_KC_SubCat_CIS_SpecialForces: BNA_KC_SubCat_CIS_Infantry
     {
-        displayName = "Spec Ops";
+        displayName = "Special Forces";
     };
 
     class BNA_KC_SubCat_CIS_Tanks: BNA_KC_SubCat_CIS_Infantry
