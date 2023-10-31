@@ -20,7 +20,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_SubCat_VLight";
         editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet_Unarmed.jpg";
 
-        displayName = "Hornet Strike Vehicle (Unarmed)";
+        displayName = "Hornet Strike Vehicle";
         crew = "BNA_KC_Unit_ARF";
         typicalCargo[] = {"BNA_KC_Unit_ARF"};
         side = 1;
