@@ -39,6 +39,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Juggernaut\Data\Previews\Juggernaut.jpg";
 
         displayName = "HAVw A6 Juggernaut";
         crew = "BNA_KC_Unit_Phase2_Tanker";

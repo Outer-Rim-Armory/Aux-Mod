@@ -18,7 +18,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VDrones";
-        editorPreview = "\BNA_KC_Vehicles\Light\Khezu\Data\Previews\Khezu_Unarmed.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Light\Khezu\Data\Previews\Khezu.jpg";
 
         displayName = "Khezu (Unarmed)";
 
@@ -93,7 +93,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VDrones";
-        editorPreview = "\BNA_KC_Vehicles\Light\Khezu\Data\Previews\Khezu_Armed.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Light\Khezu\Data\Previews\Khezu_Turret.jpg";
 
         displayName = "Khezu (HMG/GMG)";
 

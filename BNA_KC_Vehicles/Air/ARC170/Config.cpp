@@ -30,6 +30,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VAir";
+        editorPreview = "\BNA_KC_Vehicles\Air\ARC170\Data\Previews\ARC170.jpg";
 
         displayName = "ARC-170";
         crew = "BNA_KC_Unit_Phase2_Pilot";

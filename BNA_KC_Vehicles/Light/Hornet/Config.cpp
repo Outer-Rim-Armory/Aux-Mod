@@ -18,7 +18,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
-        editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet_Unarmed.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet.jpg";
 
         displayName = "Hornet Strike Vehicle";
         crew = "BNA_KC_Unit_ARF";

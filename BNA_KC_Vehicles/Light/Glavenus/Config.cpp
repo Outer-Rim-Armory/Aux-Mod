@@ -18,7 +18,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VLight";
-        editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Unarmed.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus.jpg";
 
         displayName = "Glavenus (Unarmed)";
         crew = "BNA_KC_Unit_Phase2_CT";
