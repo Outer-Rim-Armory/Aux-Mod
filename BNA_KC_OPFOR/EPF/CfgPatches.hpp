@@ -60,6 +60,9 @@ class CfgPatches
             "BNA_KC_EPF_Backpack_RTO_Predef_SL",
 
             // Vehicles
+            "BNA_KC_AAT_EPF",
+            "BNA_KC_AAT_Heavy_EPF",
+            "BNA_KC_AAT_King_EPF",
             "BNA_KC_Plesioth_EPF",
             "BNA_KC_Conga_IFV_EPF",
             "BNA_KC_Conga_MGS_EPF",
