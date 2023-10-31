@@ -28,7 +28,7 @@ class BNA_KC_Unit_Axel: BNA_KC_Unit_Phase2_Base
     };
 };
 
-class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
+class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
     editorSubcategory = "BNA_KC_Customs";
