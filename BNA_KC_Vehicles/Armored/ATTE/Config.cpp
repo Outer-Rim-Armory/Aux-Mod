@@ -18,6 +18,7 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorPreview = "\BNA_KC_Vehicles\Armored\ATTE\Data\Previews\ATTE.jpg";
 
         displayName = "AT-TE";
         crew = "BNA_KC_Unit_Phase2_Tanker";
