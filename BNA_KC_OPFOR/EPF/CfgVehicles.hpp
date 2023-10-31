@@ -152,6 +152,61 @@ class BNA_KC_AST_EPF: BNA_KC_AST_Base
     typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
 };
 
+class BNA_KC_Hornet_Unarmed;
+class BNA_KC_Hornet_EPF: BNA_KC_Hornet_Unarmed
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    side = 0;
+    faction = "BNA_KC_OPFOR_EPF";
+    editorSubcategory = "BNA_KC_SubCat_Cars";
+
+    crew = "BNA_KC_EPF_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
+
+    // Remove DC-15S and magazines
+    class TransportWeapons {};
+    class TransportMagazines {};
+};
+
+class BNA_KC_Hornet_MG;
+class BNA_KC_Hornet_MG_EPF: BNA_KC_Hornet_MG
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    side = 0;
+    faction = "BNA_KC_OPFOR_EPF";
+    editorSubcategory = "BNA_KC_SubCat_Cars";
+
+    crew = "BNA_KC_EPF_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
+
+    class TransportWeapons {};
+    class TransportMagazines {};
+};
+
+class BNA_KC_Hornet_AT;
+class BNA_KC_Hornet_AT_EPF: BNA_KC_Hornet_AT
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    side = 0;
+    faction = "BNA_KC_OPFOR_EPF";
+    editorSubcategory = "BNA_KC_SubCat_Cars";
+
+    crew = "BNA_KC_EPF_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
+
+    class TransportWeapons {};
+    class TransportMagazines {};
+};
+
 class BNA_KC_Ogre_Base;
 class BNA_KC_Ogre_EPF: BNA_KC_Ogre_Base
 {

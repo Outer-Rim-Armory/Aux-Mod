@@ -33,6 +33,8 @@ class CfgPatches
                 // Conga
             "BNA_KC_Vehicles_AST",
                 // Armored Scout Tank
+            "BNA_KC_Vehicles_Hornet",
+                // Hornet
             "BNA_KC_Vehicles_Ogre",
                 // Ogre
             "BNA_KC_Vehicles_Vespoid",
@@ -73,6 +75,9 @@ class CfgPatches
             "BNA_KC_Conga_IFV_EPF",
             "BNA_KC_Conga_MGS_EPF",
             "BNA_KC_AST_EPF",
+            "BNA_KC_Hornet_EPF",
+            "BNA_KC_Hornet_MG_EPF",
+            "BNA_KC_Hornet_AT_EPF",
             "BNA_KC_Ogre_EPF",
             "BNA_KC_Ogre_Armed_EPF",
             "BNA_KC_Vespoid_EPF",
