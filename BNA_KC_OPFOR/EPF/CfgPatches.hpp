@@ -66,7 +66,13 @@ class CfgPatches
             "BNA_KC_Plesioth_EPF",
             "BNA_KC_Conga_IFV_EPF",
             "BNA_KC_Conga_MGS_EPF",
-            "BNA_KC_AST_TU"
+            "BNA_KC_AST_EPF",
+            "BNA_KC_Ogre_EPF",
+            "BNA_KC_Ogre_Armed_EPF",
+            "BNA_KC_Vespoid_EPF",
+            "BNA_KC_Vespoid_Armed_EPF",
+            "BNA_KC_Rathian_CAP_EPF",
+            "BNA_KC_Rathian_CAS_EPF"
         };
         weapons[] =
         {
