@@ -35,7 +35,7 @@ class BNA_KC_TU_Unit_Rifleman: BNA_KC_TU_Unit_Base
 class BNA_KC_TU_Unit_Rifleman_Shield: BNA_KC_TU_Unit_Rifleman
 {
     displayName = "Rifleman (Shield)";
-    // editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Previews\Rifleman.jpg";
+    editorPreview = "\BNA_KC_OPFOR\TechnoUnion\Data\Previews\Rifleman_Shield.jpg";
 
     weapons[] = {"BNA_KC_E5_Shielded", "", "Throw", "Put"};
     respawnWeapons[] = {"BNA_KC_E5_Shielded", "", "Throw", "Put"};
