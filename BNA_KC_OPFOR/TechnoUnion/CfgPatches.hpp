@@ -31,12 +31,22 @@ class CfgPatches
                 // Base backpack
             "LFPModels",
                 // Shadow Mask
+            "BNA_KC_Vehicles",
+                // Subcategories
             "BNA_KC_Vehicles_AAT",
                 // AAT
             "BNA_KC_Vehicles_Plesioth",
                 // Plesioth
-            "BNA_KC_Vehicles_Conga"
+            "BNA_KC_Vehicles_Conga",
                 // Conga
+            "BNA_KC_Vehicles_AST",
+                // Armored Scout Tank
+            "BNA_KC_Vehicles_Ogre",
+                // Ogre
+            "BNA_KC_Vehicles_Vespoid",
+                // Vespoid
+            "BNA_KC_Vehicles_Rathian"
+                // Rathian
         };
         units[] =
         {
@@ -65,9 +75,18 @@ class CfgPatches
 
             // Vehicles
             "BNA_KC_AAT_TU",
+            "BNA_KC_AAT_Heavy_TU",
+            "BNA_KC_AAT_King_TU",
             "BNA_KC_Plesioth_TU",
             "BNA_KC_Conga_IFV_TU",
-            "BNA_KC_Conga_MGS_TU"
+            "BNA_KC_Conga_MGS_TU",
+            "BNA_KC_AST_TU",
+            "BNA_KC_Ogre_TU",
+            "BNA_KC_Ogre_Armed_TU",
+            "BNA_KC_Vespoid_TU",
+            "BNA_KC_Vespoid_Armed_TU",
+            "BNA_KC_Rathian_CAP_TU",
+            "BNA_KC_Rathian_CAS_TU"
         };
         weapons[] =
         {

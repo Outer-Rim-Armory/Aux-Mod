@@ -4,7 +4,24 @@
 
 class CfgVehicles
 {
-    class Tank_F;
+    class All;
+    class AllVehicles: All
+    {
+        class NewTurret;
+    };
+    class Land: AllVehicles {};
+    class LandVehicle: Land {};
+    class Tank: LandVehicle {};
+    class Tank_F: Tank
+    {
+        class Turrets
+        {
+            class MainTurret: NewTurret
+            {
+                class Turrets;
+            };
+        };
+    };
     class 3AS_AAT_base_F: Tank_F
     {
         class Turrets;
@@ -50,7 +67,7 @@ class CfgVehicles
         scopeCurator = 0;
 
         // Editor Attributes
-        editorPreview = "\3as\3as_AAT\images\3AS_AAT.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_Blue.jpg";
 
         displayName = "AAT";
 
@@ -185,6 +202,139 @@ class CfgVehicles
             {
                 source = "ammorandom";
                 weapon = "3AS_AAT_Repeater";
+            };
+        };
+    };
+
+    class BNA_KC_AAT_Heavy_Base: BNA_KC_AAT_Base
+    {
+        displayName = "AAT (Heavy)";
+        hiddenSelectionsTextures[] = {"3AS\3AS_AAT\data\Red_AAT_CO.paa"};
+        editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_Red.jpg";
+        accuracy = 1000;
+        armor = 1250;
+
+        textureList[] = {};
+        class TextureSources {};
+    };
+
+    class ls_ground_aat_base: Tank_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                class Turrets: Turrets
+                {
+                    class CommanderOptics;
+                };
+            };
+        };
+        class HitPoints;
+    };
+    class BNA_KC_AAT_King_Base: ls_ground_aat_base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+
+        // Editor Attributes
+        editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_King.jpg";
+
+        displayName = "AAT (King)";
+
+        armor = 2000;
+        armorStructural = 10;
+
+        hiddenselections[] = {"body1", "body2", "gun"};
+        hiddenSelectionsTextures[] =
+        {
+            "\ls_vehicles_ground\aat\data\black\body1_black_co.paa",
+            "\ls_vehicles_ground\aat\data\black\body2_black_co.paa",
+            "\ls_vehicles_ground\aat\data\black\gun_black_co.paa"
+        };
+
+        textureList[] = {};
+        class TextureSources {};
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] = {"3AS_AATCannon", "SmokeLauncher"};
+                magazines[] =
+                {
+                    "3AS_24Rnd_AAT_AP",
+                    "3AS_24Rnd_AAT_AP",
+                    "SmokeLauncherMag"
+                };
+
+                class Turrets: Turrets
+                {
+                    class CommanderOptics: CommanderOptics
+                    {
+                        weapons[] = {"3AS_AAT_Repeater", "SmokeLauncher"};
+                        magazines[] =
+                        {
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "SmokeLauncherMag"
+                        };
+                    };
+                };
+            };
+        };
+
+        class AnimationSourcs
+        {
+            class recoil_source
+            {
+                source = "reload";
+                weapon = "3AS_AATCannon";
+            };
+        };
+
+        class HitPoints: HitPoints
+        {
+            class HitHull
+            {
+                armor = 800;
+                explosionshielding = 2;
+                material = -1;
+                minimalhit = 0.14;
+                name = "hull_hit";
+                passthrough = 0.03;
+                radius = 0.25;
+                visual = "zbytek";
+            };
+            class HitEngine: HitHull
+            {
+                explosionShielding = 1;
+                minimalHit = 0.24;
+                name = "engine_hit";
+                passThrough = 0.08;
+                radius = 0.33;
+                visual = "motor";
+            };
+            class HitAmmo_L: HitEngine
+            {
+                name = "ammo_l_hit";
+            };
+            class HitAmmo_R: HitEngine
+            {
+                name = "ammo_r_hit";
             };
         };
     };

@@ -12,7 +12,7 @@ class BNA_KC_AAT_CIS: BNA_KC_AAT_Base
     typicalCargo[] = {"JLTS_Droid_B1_Crew"};
 
     hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\CIS_AAT_CO.paa"};
-    editorPreview = "\3as\3as_AAT\images\3AS_AAT.jpg";
+    editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_Blue.jpg";
 
     textureList[] =
     {

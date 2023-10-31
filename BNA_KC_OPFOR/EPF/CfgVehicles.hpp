@@ -75,3 +75,19 @@ class BNA_KC_Conga_MGS_EPF: BNA_KC_Conga_MGS_Base
     };
     textureList[] = {"TechnoUnion", 0, "EPF", 1};
 };
+
+class BNA_KC_AST_Base;
+class BNA_KC_AST_EPF: BNA_KC_AST_Base
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    faction = "BNA_KC_OPFOR_EPF";
+    editorSubcategory = "BNA_KC_SubCat_Speeders";
+
+    displayName = "Fango";
+
+    crew = "BNA_KC_EPF_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
+};

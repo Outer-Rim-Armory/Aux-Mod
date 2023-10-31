@@ -43,7 +43,7 @@ class CfgVehicles
 
         // Editor Attributes
         side = 0;
-        editorPreview = "\OPTRE_Vehicles_Tracked\Scorpion\data\UI\OPTRE_M808B_UNSC.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Plesioth\Data\Previews\Plesioth_Tan.jpg";
 
         displayName = "Plesioth";
 
