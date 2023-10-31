@@ -24,7 +24,7 @@ class CfgPatches
             "OPTRE_FC_Weapons_PlasmaGrenade",
                 // Plasma Grenade
             "BNA_KC_Vehicles",
-                // Subcategory
+                // Subcategories
             "BNA_KC_Vehicles_AAT",
                 // AAT
             "BNA_KC_Vehicles_Plesioth",
