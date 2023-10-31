@@ -207,6 +207,36 @@ class BNA_KC_Hornet_AT_EPF: BNA_KC_Hornet_AT
     class TransportMagazines {};
 };
 
+class BNA_KC_Khezu_Unarmed;
+class BNA_KC_Khezu_EPF: BNA_KC_Khezu_Unarmed
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    side = 0;
+    faction = "BNA_KC_OPFOR_EPF";
+    editorSubcategory = "BNA_KC_SubCat_Drones";
+
+    crew = "BNA_KC_EPF_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
+};
+
+class BNA_KC_Khezu_Armed;
+class BNA_KC_Khezu_Armed_EPF: BNA_KC_Khezu_Armed
+{
+    // Scope
+    scope = 2;
+    scopeCurator = 2;
+
+    side = 0;
+    faction = "BNA_KC_OPFOR_EPF";
+    editorSubcategory = "BNA_KC_SubCat_Drones";
+
+    crew = "BNA_KC_EPF_Unit_Rifleman";
+    typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
+};
+
 class BNA_KC_Ogre_Base;
 class BNA_KC_Ogre_EPF: BNA_KC_Ogre_Base
 {

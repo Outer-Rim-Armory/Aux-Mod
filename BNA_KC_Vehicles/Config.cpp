@@ -49,6 +49,10 @@ class CfgEditorSubcategories
     {
         displayName = "Speeders";
     };
+    class BNA_KC_SubCat_Drones: BNA_KC_SubCat_VAir
+    {
+        displayName = "Drones";
+    };
     class BNA_KC_SubCat_Planes: BNA_KC_SubCat_VAir
     {
         displayName = "Planes";
