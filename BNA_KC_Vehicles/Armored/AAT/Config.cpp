@@ -77,7 +77,7 @@ class CfgVehicles
         {
             "CIS", 1,
             "TradeFederation", 0,
-            "Green", 0,
+            "EPF", 0,
             "Red", 0,
             "Desert", 0,
             "Geonosis", 0,
@@ -102,48 +102,49 @@ class CfgVehicles
                 factions[] = {"BNA_KC_OPFOR_TU"};
                 textures[] = {"\3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
             };
-            class Green: CIS
+            class EPF: CIS
             {
-                displayName = "Green";
-                factions[] = {"BNA_KC_OPFOR_CIS", "BNA_KC_OPFOR_TU"};
+                displayName = "El Presidente Forces";
+                factions[] = {"BNA_KC_OPFOR_EPF"};
                 textures[] = {"\3AS\3AS_AAT\data\Green_AAT_CO.paa"};
             };
-            class Red: Green
+            class Red: CIS
             {
                 displayName = "Red";
+                factions[] = {};
                 textures[] = {"\3AS\3AS_AAT\data\Red_AAT_CO.paa"};
             };
-            class Desert: Green
+            class Desert: Red
             {
                 displayName = "Camo - Desert";
                 textures[] = {"\3AS\3AS_AAT\data\Desert_AAT_CO.paa"};
             };
-            class Geonosis: Green
+            class Geonosis: Red
             {
                 displayName = "Camo - Geonosis";
                 textures[] = {"\3AS\3AS_AAT\data\Geonosis_AAT_CO.paa"};
             };
-            class Woodland: Green
+            class Woodland: Red
             {
                 displayName = "Camo - Woodland";
                 textures[] = {"\3AS\3AS_AAT\data\Woodland_AAT_CO.paa"};
             };
-            class Tropical: Green
+            class Tropical: Red
             {
                 displayName = "Camo - Tropical";
                 textures[] = {"\3AS\3AS_AAT\data\Tropical_AAT_CO.paa"};
             };
-            class Arid: Green
+            class Arid: Red
             {
                 displayName = "Camo - Arid";
                 textures[] = {"\3AS\3AS_AAT\data\Arid_AAT_CO.paa"};
             };
-            class Winter: Green
+            class Winter: Red
             {
                 displayName = "Camo - Winter";
                 textures[] = {"\3AS\3AS_AAT\data\Winter_AAT_CO.paa"};
             };
-            class Aqua: Green
+            class Aqua: Red
             {
                 displayName = "Camo - Aqua";
                 textures[] = {"\3AS\3AS_AAT\data\Aqua_AAT_CO.paa"};

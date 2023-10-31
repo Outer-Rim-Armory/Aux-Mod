@@ -24,15 +24,25 @@ class CfgPatches
             "OPTRE_FC_Weapons_PlasmaGrenade",
                 // Plasma Grenade
             "BNA_KC_Vehicles",
-                // Subcategory
+                // Subcategories
             "BNA_KC_Vehicles_AAT",
                 // AAT
             "BNA_KC_Vehicles_Plesioth",
                 // Plesioth
             "BNA_KC_Vehicles_Conga",
                 // Conga
-            "BNA_KC_Vehicles_AST"
+            "BNA_KC_Vehicles_Hornet",
+                // Hornet
+            "BNA_KC_Vehicles_Khezu",
+                // Khezu
+            "BNA_KC_Vehicles_AST",
                 // Armored Scout Tank
+            "BNA_KC_Vehicles_Ogre",
+                // Ogre
+            "BNA_KC_Vehicles_Vespoid",
+                // Vespoid
+            "BNA_KC_Vehicles_Rathian"
+                // Rathian
         };
         units[] =
         {
@@ -60,10 +70,24 @@ class CfgPatches
             "BNA_KC_EPF_Backpack_RTO_Predef_SL",
 
             // Vehicles
+            "BNA_KC_AAT_EPF",
+            "BNA_KC_AAT_Heavy_EPF",
+            "BNA_KC_AAT_King_EPF",
             "BNA_KC_Plesioth_EPF",
             "BNA_KC_Conga_IFV_EPF",
             "BNA_KC_Conga_MGS_EPF",
-            "BNA_KC_AST_TU"
+            "BNA_KC_Hornet_EPF",
+            "BNA_KC_Hornet_MG_EPF",
+            "BNA_KC_Hornet_AT_EPF",
+            "BNA_KC_Khezu_EPF",
+            "BNA_KC_Khezu_Armed_EPF",
+            "BNA_KC_AST_EPF",
+            "BNA_KC_Ogre_EPF",
+            "BNA_KC_Ogre_Armed_EPF",
+            "BNA_KC_Vespoid_EPF",
+            "BNA_KC_Vespoid_Armed_EPF",
+            "BNA_KC_Rathian_CAP_EPF",
+            "BNA_KC_Rathian_CAS_EPF"
         };
         weapons[] =
         {

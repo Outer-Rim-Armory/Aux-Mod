@@ -18,7 +18,7 @@ class BNA_KC_AAT_CIS: BNA_KC_AAT_Base
     {
         "CIS", 1,
         "TradeFederation", 0,
-        "Green", 0,
+        "EPF", 0,
         "Red", 0,
         "Desert", 0,
         "Geonosis", 0,
