@@ -172,4 +172,19 @@ class CfgVehicles
             };
         };
     };
+
+    class BNA_KC_ATTE_Command: BNA_KC_ATTE
+    {
+        displayName = "AT-TE (Command)";
+        animationList[] =
+        {
+            "ShowATTENuts", 1,
+            "ShowATTEIntPassenger", 1,
+            "ShowATTEIntBackPassenger", 1,
+            "ShowATTEIntCommand", 0,
+            "ShowATTERebelMod", 1
+        };
+
+        tf_range = 45000; // 1.5x range
+    };
 };
