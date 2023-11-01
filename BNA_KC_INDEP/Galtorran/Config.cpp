@@ -1,6 +1,6 @@
 #include "CfgPatches.hpp"
 #include "CfgGroups.hpp"
-#include "..\..\BNA_KC_OPFOR\Macros.hpp"
+#include "\BNA_KC_INDEP\Macros.hpp"
 
 
 class CfgWeapons
