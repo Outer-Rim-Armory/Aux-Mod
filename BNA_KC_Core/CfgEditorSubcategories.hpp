@@ -19,6 +19,10 @@ class CfgEditorSubcategories
     {
         displayName = "Tanks";
     };
+    class BNA_KC_SubCat_Walkers: BNA_KC_SubCat_Infantry
+    {
+        displayName = "Walkers";
+    };
     class BNA_KC_SubCat_Cars: BNA_KC_SubCat_Infantry
     {
         displayName = "Cars";
