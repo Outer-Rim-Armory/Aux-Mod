@@ -22,7 +22,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorSubcategory = "BNA_KC_SubCat_Walkers";
         editorPreview = "\BNA_KC_Vehicles\Armored\ATAP\Data\Previews\ATAP.jpg";
 
         displayName = "AT-AP";

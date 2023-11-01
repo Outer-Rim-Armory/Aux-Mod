@@ -67,6 +67,7 @@ class CfgVehicles
         scopeCurator = 0;
 
         // Editor Attributes
+        editorSubcategory = "BNA_KC_SubCat_Tanks";
         editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_Blue.jpg";
 
         displayName = "AAT";

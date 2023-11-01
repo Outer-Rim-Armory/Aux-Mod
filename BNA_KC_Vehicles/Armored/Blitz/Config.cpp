@@ -51,7 +51,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorSubcategory = "BNA_KC_SubCat_Tanks";
         editorPreview = "\BNA_KC_Vehicles\Armored\Blitz\Data\Previews\Blitz.jpg";
 
         displayName = "Blitz Assault Tank";

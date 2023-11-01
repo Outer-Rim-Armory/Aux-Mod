@@ -29,7 +29,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorSubcategory = "BNA_KC_SubCat_Tanks";
         editorPreview = "\BNA_KC_Vehicles\Armored\RX200\Data\Previews\RX200.jpg";
 
         displayName = "RX-200";
