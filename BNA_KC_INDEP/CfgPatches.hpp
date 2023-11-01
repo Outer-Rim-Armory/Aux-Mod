@@ -8,8 +8,10 @@ class CfgPatches
         {
             "BNA_KC_Core",
                 // Core Addon
-            "ls_armor_greenfor"
+            "ls_armor_greenfor",
                 // Base unit, uniform, vest
+            "A3_Weapons_F_Ammoboxes"
+                // Base backpack
         };
         units[] =
         {
