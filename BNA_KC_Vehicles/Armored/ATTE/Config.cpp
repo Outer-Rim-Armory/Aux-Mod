@@ -28,15 +28,15 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Body.paa",
-            "\3as\3as_atte\data\atte_chasis_co.paa",
-            "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Cockpit.paa",
-            "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Turrets.paa",
-            "\3as\3as_atte\data\atte_underpiping_co.paa",
-            "\3as\3as_atte\data\atte_middleleg_co.paa"
+            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
+            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+            "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
         };
 
-        textureList[] = {"Standard", 0, "Imperial", "KeeliCompany", 1};
+        textureList[] = {"Standard", 1, "Imperial", 0};
         class TextureSources
         {
             class Standard
@@ -46,12 +46,12 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    "\3as\3as_atte\data\atte_hull_TCW_co.paa",
-                    "\3as\3as_atte\data\atte_chasis_co.paa",
-                    "\3as\3as_atte\data\atte_cockpit_TCW_co.paa",
-                    "\3as\3as_atte\data\atte_turrets_TCW_co.paa",
-                    "\3as\3as_atte\data\atte_underpiping_co.paa",
-                    "\3as\3as_atte\data\atte_middleleg_TCW_co.paa"
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
                 };
             };
             class Imperial: Standard
@@ -59,27 +59,12 @@ class CfgVehicles
                 displayName = "Imperial";
                 textures[] =
                 {
-                    "\3as\3as_atte\data\atte_hull_Imp_co.paa",
-                    "\3as\3as_atte\data\atte_chasis_co.paa",
-                    "\3as\3as_atte\data\atte_cockpit_Imp_co.paa",
-                    "\3as\3as_atte\data\atte_turrets_Imp_co.paa",
-                    "\3as\3as_atte\data\atte_underpiping_co.paa",
-                    "\3as\3as_atte\data\atte_middleleg_Imp_co.paa"
-                };
-            };
-            class KeeliCompany: Standard
-            {
-                author = "Dexus";
-                displayName = "Keeli Company";
-                factions[] = {};
-                textures[] =
-                {
-                    "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Body.paa",
-                    "\3as\3as_atte\data\atte_chasis_co.paa",
-                    "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Cockpit.paa",
-                    "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Turrets.paa",
-                    "\3as\3as_atte\data\atte_underpiping_co.paa",
-                    "\3as\3as_atte\data\atte_middleleg_co.paa"
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_Imp_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_Imp_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
                 };
             };
         };
