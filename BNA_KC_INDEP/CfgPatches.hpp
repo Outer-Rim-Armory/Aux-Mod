@@ -6,7 +6,10 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "BNA_KC_Gear"
+            "BNA_KC_Core",
+                // Core Addon
+            "ls_armor_greenfor"
+                // Base unit, uniform, vest
         };
         units[] =
         {
