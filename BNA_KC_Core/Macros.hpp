@@ -37,3 +37,8 @@
 
 // Utils Macros
 #define QUOTE(TEXT) #TEXT
+
+// Slot IDs
+#define UNIFORM_SLOT 801
+#define VEST_SLOT 701
+#define BACKPACK_SLOT 901
