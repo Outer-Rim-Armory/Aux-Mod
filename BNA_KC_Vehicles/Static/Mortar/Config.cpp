@@ -70,7 +70,7 @@ class CfgWeapons
     };
     class BNA_KC_Mortar_M190_Turret: 3AS_mortar_82mm
     {
-        displayName = "[KC] Model 190 Mortar System";
+        displayName = "Model 190 Mortar System";
         magazines[] =
         {
             "BNA_KC_Mag_3Rnd_82mm_HE",
@@ -481,7 +481,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] M-190 Mortar System";
+        displayName = "M-190 Mortar System";
 
         hiddenSelectionsTextures[] =
         {
