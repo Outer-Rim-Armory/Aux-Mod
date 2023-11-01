@@ -4,7 +4,14 @@
 
 class CfgVehicles
 {
-    class 3as_ATTE_base;
+    class Tank_F;
+    class 3as_ATTE_base: Tank_F
+    {
+        class VehicleTransport
+        {
+            class Carrier;
+        };
+    };
     class BNA_KC_ATTE: 3as_ATTE_base
     {
         // Mod Info
@@ -92,17 +99,18 @@ class CfgVehicles
 
         // Makes the 3AS AT-TE compatible with the vanilla vehicle-in-vehicle system
         // Credit: CrimzonKat @ https://ptb.discord.com/channels/461042140756180992/1062396582848372807
-        class VehicleTransport
+        class VehicleTransport: VehicleTransport
         {
             class Cargo
             {
-                parachuteClass = B_Parachute_02_F;
+                parachuteClass = "B_Parachute_02_F";
                 parachuteHeightLimit = 40;
                 canBeTransported = 1;
-                dimensions[] = { "ftr_muzzle", "btl_muzzle" };
+                dimensions[] = {"ftr_muzzle", "btl_muzzle"};
 
                 BNA_KC_SpecialLoad = 1;
             };
+            class Carrier: Carrier {};
         };
     };
 };
