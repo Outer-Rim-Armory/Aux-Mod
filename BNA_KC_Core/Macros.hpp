@@ -30,3 +30,6 @@
     name = #ITEM; \
     count = COUNT; \
 };
+
+// Base Unit Linked Items
+#define BASE_LINKED_ITEMS "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"
