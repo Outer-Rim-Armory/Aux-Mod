@@ -7,6 +7,7 @@ class CfgVehicles
     class Tank_F;
     class 3as_ATTE_base: Tank_F
     {
+        class UserActions;
         class VehicleTransport
         {
             class Carrier;
@@ -76,7 +77,7 @@ class CfgVehicles
             };
         };
 
-        class UserActions
+        class UserActions: UserActions
         {
             class PlayAlarm
             {
