@@ -20,7 +20,7 @@ class CfgVehicles
 
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
-		editorSubcategory = "BNA_KC_SubCat_VStaticShips";
+		editorSubcategory = "BNA_KC_SubCat_StaticShips";
 
 		displayName = "[KC] The Resurgance - Venator (Open Fully Hollowed)";
 
@@ -90,7 +90,7 @@ class CfgVehicles
 
         // Editor Attributes
         editorCategory = "BNA_KC_Objects";
-		editorSubcategory = "BNA_KC_SubCat_VStaticShips";
+		editorSubcategory = "BNA_KC_SubCat_StaticShips";
 
 		displayName = "[KC] The Resurgance - Venator (Zeus)";
 
@@ -124,7 +124,7 @@ class CfgVehicles
 
 class CfgEditorSubcategories
 {
-	class BNA_KC_SubCat_VStaticShips
+	class BNA_KC_SubCat_StaticShips
 	{
 		dlc = "BNA_KC";
 		author = "SweMonkey and DartRuffian";
