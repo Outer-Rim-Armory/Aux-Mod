@@ -31,6 +31,10 @@ class CfgEditorSubcategories
     {
         displayName = "Walkers";
     };
+    class BNA_KC_SubCat_Armored: BNA_KC_SubCat_Infantry
+    {
+        displayName = "Armored"; // Generic category
+    };
     class BNA_KC_SubCat_Cars: BNA_KC_SubCat_Infantry
     {
         displayName = "Cars";
@@ -42,6 +46,10 @@ class CfgEditorSubcategories
     class BNA_KC_SubCat_Drones: BNA_KC_SubCat_Infantry
     {
         displayName = "Drones";
+    };
+    class BNA_KC_SubCat_Light: BNA_KC_SubCat_Infantry
+    {
+        displayName = "Light"; // Generic category
     };
     class BNA_KC_SubCat_Turrets: BNA_KC_SubCat_Infantry
     {
@@ -56,5 +64,9 @@ class CfgEditorSubcategories
     class BNA_KC_SubCat_Helicopters: BNA_KC_SubCat_Infantry
     {
         displayName = "Helicopters";
+    };
+    class BNA_KC_SubCat_Aircraft: BNA_KC_SubCat_Infantry
+    {
+        displayName = "Aircraft"; // Generic category
     };
 };
