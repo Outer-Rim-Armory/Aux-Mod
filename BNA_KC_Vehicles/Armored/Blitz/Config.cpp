@@ -210,35 +210,6 @@ class CfgVehicles
             };
         };
 
-        class AnimationSources: AnimationSources
-        {
-            class muzzle_hide_cannon
-            {
-                source = "reload";
-                weapon = "BNA_KC_120_Tankgun";
-            };
-            class muzzle_rot_cannon
-            {
-                source = "ammorandom";
-                weapon = "BNA_KC_120_Tankgun";
-            };
-            class muzzle_rot_cmdr
-            {
-                source = "ammorandom";
-                weapon = "HMG_127_MBT";
-            };
-            class recoil_source
-            {
-                source = "reload";
-                weapon = "BNA_KC_120_Tankgun";
-            };
-            class commander_gun_recoil
-            {
-                source = "reload";
-                weapon = "HMG_127_MBT";
-            };
-        };
-
         class Turrets: Turrets
         {
             class MainTurret: MainTurret
@@ -282,6 +253,35 @@ class CfgVehicles
                     "BNA_KC_100rnd_Coax_Mag",
                     "BNA_KC_100rnd_Coax_Mag"
                 };
+            };
+        };
+
+        class AnimationSources: AnimationSources
+        {
+            class muzzle_hide_cannon
+            {
+                source = "reload";
+                weapon = "BNA_KC_120_Tankgun";
+            };
+            class muzzle_rot_cannon
+            {
+                source = "ammorandom";
+                weapon = "BNA_KC_120_Tankgun";
+            };
+            class muzzle_rot_cmdr
+            {
+                source = "ammorandom";
+                weapon = "HMG_127_MBT";
+            };
+            class recoil_source
+            {
+                source = "reload";
+                weapon = "BNA_KC_120_Tankgun";
+            };
+            class commander_gun_recoil
+            {
+                source = "reload";
+                weapon = "HMG_127_MBT";
             };
         };
 
