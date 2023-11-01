@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
 			"3as_GNK_Prop",
                 // Gonk
             "3AS_Prop_Terminals",
