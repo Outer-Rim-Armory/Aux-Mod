@@ -145,11 +145,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Phase2_Tanker", "SWLB_clone_recon_armor", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Phase2_Tanker", "SWLB_clone_recon_armor", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Phase2_Tanker", "SWLB_clone_recon_armor", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Phase2_Tanker", "SWLB_clone_recon_armor", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         backpack = "ls_mandalorian_light_backpack";
     };
@@ -165,11 +165,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Phase1_Tanker", "SWLB_clone_recon_armor", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Phase1_Tanker", "SWLB_clone_recon_armor", "lsd_gar_p1Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Phase1_Tanker", "SWLB_clone_recon_armor", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Phase1_Tanker", "SWLB_clone_recon_armor", "lsd_gar_p1Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         backpack = "ls_mandalorian_light_backpack";
     };

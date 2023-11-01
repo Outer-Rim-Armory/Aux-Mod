@@ -20,11 +20,11 @@ class BNA_KC_Unit_Axel: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Axel", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Axel", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Axel", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Axel", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -46,11 +46,11 @@ class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Burnt", "BNA_KC_Vest_Medic_Platoon", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Burnt", "BNA_KC_Vest_Medic_Platoon", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Burnt", "BNA_KC_Vest_Medic_Platoon", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Burnt", "BNA_KC_Vest_Medic_Platoon", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -72,11 +72,11 @@ class BNA_KC_Unit_Dexus: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armo
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -98,11 +98,11 @@ class BNA_KC_Unit_Drake: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armo
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_ARC_Drake", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARC_Drake", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_ARC_Drake", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARC_Drake", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     backpack = "BNA_KC_Backpack_ARC";
 };
@@ -125,11 +125,11 @@ class BNA_KC_Unit_Fil: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Fil", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Fil", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Fil", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Fil", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -151,11 +151,11 @@ class BNA_KC_Unit_FilSquad: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_FilSquad", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_FilSquad", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_FilSquad", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_FilSquad", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -177,11 +177,11 @@ class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase2_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase2_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     backpack = "BNA_KC_Backpack_ARC";
 };
@@ -204,11 +204,11 @@ class BNA_KC_Unit_Keeli: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Keeli", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase2_Keeli", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Keeli", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase2_Keeli", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 class BNA_KC_Unit_Keeli_CamoBrown: BNA_KC_Unit_Phase2_Base
@@ -229,11 +229,11 @@ class BNA_KC_Unit_Keeli_CamoBrown: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoBrown", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase2_Keeli_CamoBrown", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoBrown", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase2_Keeli_CamoBrown", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 class BNA_KC_Unit_Keeli_CamoGrey: BNA_KC_Unit_Phase2_Base
@@ -254,11 +254,11 @@ class BNA_KC_Unit_Keeli_CamoGrey: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoGrey", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase2_Keeli_CamoGrey", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoGrey", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase2_Keeli_CamoGrey", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -280,11 +280,11 @@ class BNA_KC_Unit_Ponds: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Ponds", "BNA_KC_Vest_Officer_Ponds", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Ponds", "BNA_KC_Vest_Officer_Ponds", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Ponds", "BNA_KC_Vest_Officer_Ponds", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Ponds", "BNA_KC_Vest_Officer_Ponds", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -303,11 +303,11 @@ class BNA_KC_Unit_PondsTrooper: BNA_KC_Unit_Ponds
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_PondsTrooper", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_PondsTrooper", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_PondsTrooper", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_PondsTrooper", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -329,11 +329,11 @@ class BNA_KC_Unit_Rat: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_BARC_Rat", "BNA_KC_Vest_Officer_Rat", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_BARC_Rat", "BNA_KC_Vest_Officer_Rat", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_BARC_Rat", "BNA_KC_Vest_Officer_Rat", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_BARC_Rat", "BNA_KC_Vest_Officer_Rat", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -355,11 +355,11 @@ class BNA_KC_Unit_Sin: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_ARF_Sin", "BNA_KC_Vest_CSFC", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARF_Sin", "BNA_KC_Vest_CSFC", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_ARF_Sin", "BNA_KC_Vest_CSFC", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARF_Sin", "BNA_KC_Vest_CSFC", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -381,11 +381,11 @@ class BNA_KC_Unit_Stone: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Stone", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Stone", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Stone", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Stone", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -407,11 +407,11 @@ class BNA_KC_Unit_Tyrant: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_ARC_Tyrant", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARC_Tyrant", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_ARC_Tyrant", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARC_Tyrant", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     backpack = "BNA_KC_Backpack_ARC";
 };
@@ -440,11 +440,11 @@ class BNA_KC_Unit_Insulated_Dexus: BNA_KC_Unit_Insulated_Trooper
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Insulated_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Insulated_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -466,11 +466,11 @@ class BNA_KC_Unit_Insulated_Joe: BNA_KC_Unit_Insulated_Trooper
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Joe", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Insulated_Joe", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Joe", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Insulated_Joe", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -492,10 +492,10 @@ class BNA_KC_Unit_Insulated_Keeli: BNA_KC_Unit_Insulated_Trooper
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Keeli", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Insulated_Keeli", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Keeli", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Insulated_Keeli", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
