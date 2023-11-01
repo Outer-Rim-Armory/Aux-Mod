@@ -32,7 +32,8 @@
 };
 
 // Base Unit Linked Items
-#define BASE_LINKED_ITEMS "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"
+#define LINKED_ITEMS "ItemMap", "ItemCompass", "ItemGPS", "ItemWatch"
+#define LINKED_ITEMS_RADIO LINKED_ITEMS, "ItemRadio"
 
 
 // Utils Macros
