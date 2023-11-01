@@ -1,17 +1,6 @@
 #include "CfgPatches.hpp"
 #include "..\..\Common\Macros.hpp"
 
-#define GAMMOTH_COMMON() dlc = "BNA_KC"; \
-author = "SweMonkey and DartRuffian"; \
-scope = 2; \
-scopeCurator = 2; \
-faction = "BNA_KC_Faction"; \
-editorSubcategory = "BNA_KC_SubCat_VSupport"; \
-crew = "BNA_KC_Unit_Phase2_CT"; \
-typicalCargo[] = {"BNA_KC_Unit_Phase2_CT"}; \
-side = 1; \
-weapons[] = {"BNA_KC_Gammoth_Horn"};
-
 
 class CfgVehicles
 {
@@ -28,7 +17,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VSupport";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
 
         displayName = "Gammoth (Base)"
         crew = "BNA_KC_Unit_Phase2_CT";
