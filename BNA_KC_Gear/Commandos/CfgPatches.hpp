@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
             "BNA_KC_Gear_SpecialForces",
                 // SF Unit, Uniform, etc. as base
             "BNA_KC_Gear_Infantry",

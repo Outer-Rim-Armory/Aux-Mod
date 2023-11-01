@@ -7,8 +7,10 @@ class CfgPatches
         requiredVersion = 1;
         requiredAddons[] =
         {
-            "BNA_KC_Gear_Weapons",
-                // Predfined / Custom Weapons
+            "BNA_KC_Core",
+                // Core Addon
+            "BNA_KC_Weapons_DC15S",
+                // Weapon & magazines for units
             "ls_armor_bluefor",
                 // P1 and P2 helmets
                 // Insulated Helmet

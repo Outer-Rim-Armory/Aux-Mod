@@ -7,9 +7,11 @@ class CfgPatches
         requiredVersion = 1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
             "BNA_KC_Gear_Infantry",
-                // Base KC Unit
-                // Officer Pauldron Texture (For ARC Vest)
+                // Base unit, uniform, etc.
+                // Officer pauldron texture
             "ls_armor_bluefor",
                 // ARF Helm
                 // BARC Helm

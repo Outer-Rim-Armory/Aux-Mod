@@ -7,6 +7,7 @@ class CfgPatches
         requiredVersion = 1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
             "BNA_KC_Gear_Infantry",
             "BNA_KC_Gear_Airborne",
             "BNA_KC_Gear_Engineers",

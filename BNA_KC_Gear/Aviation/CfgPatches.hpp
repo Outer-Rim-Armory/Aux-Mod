@@ -7,12 +7,14 @@ class CfgPatches
         requiredVersion = 1;
         requiredAddons[] =
         {
-            "ls_armor_bluefor",
-                // Phase 1 Pilot Helmet
-                // Phase 2 Pilot Helmet
-            "BNA_KC_Gear_Infantry"
+            "BNA_KC_Core",
+                // Core Addon
+            "BNA_KC_Gear_Infantry",
                 // Base Unit
                 // Base Uniform
+            "ls_armor_bluefor"
+                // Phase 1 Pilot Helmet
+                // Phase 2 Pilot Helmet
         };
         units[] =
         {
