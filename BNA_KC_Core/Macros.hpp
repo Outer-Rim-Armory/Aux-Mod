@@ -42,3 +42,7 @@
 #define UNIFORM_SLOT 801
 #define VEST_SLOT 701
 #define BACKPACK_SLOT 901
+
+// Armor Macros
+#define HEARING_PROTECTION_CREW ace_hearing_lowerVolume = 0.6; \
+ace_hearing_protection = 0.85;
