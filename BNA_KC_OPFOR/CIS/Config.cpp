@@ -241,28 +241,3 @@ class CfgFactionClasses
         displayName = "[KC] CIS";
     };
 };
-
-
-class CfgEditorSubcategories
-{
-    class BNA_KC_SubCat_CIS_Infantry
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Infantry";
-    };
-
-    class BNA_KC_SubCat_CIS_SpecialForces: BNA_KC_SubCat_CIS_Infantry
-    {
-        displayName = "Special Forces";
-    };
-
-    class BNA_KC_SubCat_CIS_Tanks: BNA_KC_SubCat_CIS_Infantry
-    {
-        displayName = "Tanks";
-    };
-};
