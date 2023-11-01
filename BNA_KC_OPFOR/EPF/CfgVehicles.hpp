@@ -65,6 +65,7 @@ class BNA_KC_Plesioth_EPF: BNA_KC_Plesioth_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_EPF";
     editorSubcategory = "BNA_KC_SubCat_Tanks";
 
@@ -91,6 +92,7 @@ class BNA_KC_Conga_IFV_EPF: BNA_KC_Conga_IFV_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_EPF";
     editorSubcategory = "BNA_KC_SubCat_Tanks";
 
@@ -117,6 +119,7 @@ class BNA_KC_Conga_MGS_EPF: BNA_KC_Conga_MGS_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_EPF";
     editorSubcategory = "BNA_KC_SubCat_Tanks";
 
@@ -238,6 +241,7 @@ class BNA_KC_Ogre_EPF: BNA_KC_Ogre_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_EPF";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Ogre\Data\Previews\Ogre_Green.jpg";
@@ -256,6 +260,7 @@ class BNA_KC_Ogre_Armed_EPF: BNA_KC_Ogre_Armed_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_EPF";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Ogre\Data\Previews\Ogre_Armed_Green.jpg";
@@ -274,6 +279,7 @@ class BNA_KC_Vespoid_EPF: BNA_KC_Vespoid_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_EPF";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Vespoid\Data\Previews\Vespoid_Green.jpg";
@@ -297,6 +303,7 @@ class BNA_KC_Vespoid_Armed_EPF: BNA_KC_Vespoid_Armed_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_EPF";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Vespoid\Data\Previews\Vespoid_Armed_Green.jpg";
@@ -320,6 +327,7 @@ class BNA_KC_Rathian_CAP_EPF: BNA_KC_Rathian_CAP_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_EPF";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Rathian\Data\Previews\Rathian_Green.jpg";
@@ -338,6 +346,7 @@ class BNA_KC_Rathian_CAS_EPF: BNA_KC_Rathian_CAS_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_EPF";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Rathian\Data\Previews\Rathian_Green.jpg";

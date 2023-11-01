@@ -65,6 +65,7 @@ class BNA_KC_Plesioth_TU: BNA_KC_Plesioth_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Tanks";
     editorPreview = "\BNA_KC_Vehicles\Armored\Plesioth\Data\Previews\Plesioth_Tan.jpg";
@@ -92,6 +93,7 @@ class BNA_KC_Conga_IFV_TU: BNA_KC_Conga_IFV_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Tanks";
     editorPreview = "\BNA_KC_Vehicles\Armored\Conga\Data\Previews\Conga_IFV_Tan.jpg";
@@ -119,6 +121,7 @@ class BNA_KC_Conga_MGS_TU: BNA_KC_Conga_MGS_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Tanks";
     editorPreview = "\BNA_KC_Vehicles\Armored\Conga\Data\Previews\Conga_MGS_Tan.jpg";
@@ -146,6 +149,7 @@ class BNA_KC_AST_TU: BNA_KC_AST_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Speeders";
 
@@ -162,6 +166,7 @@ class BNA_KC_Ogre_TU: BNA_KC_Ogre_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Ogre\Data\Previews\Ogre_Tan.jpg";
@@ -180,6 +185,7 @@ class BNA_KC_Ogre_Armed_TU: BNA_KC_Ogre_Armed_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Ogre\Data\Previews\Ogre_Armed_Tan.jpg";
@@ -198,6 +204,7 @@ class BNA_KC_Vespoid_TU: BNA_KC_Vespoid_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Vespoid\Data\Previews\Vespoid_Tan.jpg";
@@ -221,6 +228,7 @@ class BNA_KC_Vespoid_Armed_TU: BNA_KC_Vespoid_Armed_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Vespoid\Data\Previews\Vespoid_Armed_Tan.jpg";
@@ -244,6 +252,7 @@ class BNA_KC_Rathian_CAP_TU: BNA_KC_Rathian_CAP_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Rathian\Data\Previews\Rathian_Tan.jpg";
@@ -262,6 +271,7 @@ class BNA_KC_Rathian_CAS_TU: BNA_KC_Rathian_CAS_Base
     scope = 2;
     scopeCurator = 2;
 
+    side = 0;
     faction = "BNA_KC_OPFOR_TU";
     editorSubcategory = "BNA_KC_SubCat_Helicopters";
     editorPreview = "\BNA_KC_Vehicles\Air\Rathian\Data\Previews\Rathian_Tan.jpg";
