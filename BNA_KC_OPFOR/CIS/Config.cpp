@@ -198,11 +198,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_CIS_Vest_BXDroid", "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_CIS_Vest_BXDroid", "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
         };
     };
 
