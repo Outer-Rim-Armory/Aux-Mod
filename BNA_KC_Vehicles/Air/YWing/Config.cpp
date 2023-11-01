@@ -27,7 +27,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAir";
+        editorSubcategory = "BNA_KC_SubCat_Planes";
         editorPreview = "\BNA_KC_Vehicles\Air\YWing\Data\Previews\BTLB_YWing.jpg";
 
         displayName = "BTL-B Y-Wing";

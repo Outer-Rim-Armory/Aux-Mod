@@ -22,6 +22,7 @@ class CfgVehicles
 
         // Editor Attributes
         side = 0;
+        editorSubcategory = "BNA_KC_SubCat_Helicopters";
         editorPreview = "\BNA_KC_Vehicles\Air\Vespoid\Data\Previews\Vespoid_Tan.jpg";
 
         displayName = "Vespoid";

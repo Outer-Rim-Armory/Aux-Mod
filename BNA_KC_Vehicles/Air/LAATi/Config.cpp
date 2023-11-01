@@ -24,7 +24,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAir";
+        editorSubcategory = "BNA_KC_SubCat_Helicopters";
         side = 1;
 
         displayName = "LAAT/i (Base)";
