@@ -35,7 +35,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa",
@@ -143,7 +143,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa",
@@ -245,7 +245,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa",

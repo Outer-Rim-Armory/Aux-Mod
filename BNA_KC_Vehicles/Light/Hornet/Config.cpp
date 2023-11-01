@@ -38,7 +38,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Brown Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",
@@ -113,7 +113,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Brown Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",
@@ -227,7 +227,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Brown Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",

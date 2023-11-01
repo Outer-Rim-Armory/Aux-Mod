@@ -63,7 +63,7 @@ class CfgVehicles
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\3as\3AS_btlb\textures\chasis_shadow_co.paa",

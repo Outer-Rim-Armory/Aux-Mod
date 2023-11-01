@@ -35,7 +35,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Khezu\Data\Textures\CamoKC\Body.paa",
@@ -110,7 +110,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Khezu\Data\Textures\CamoKC\Body.paa",

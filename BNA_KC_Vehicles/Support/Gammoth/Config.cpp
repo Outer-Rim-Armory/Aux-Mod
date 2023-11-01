@@ -34,7 +34,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Support\Gammoth\Data\Textures\Body\Body_CamoKC.paa",

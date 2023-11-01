@@ -124,7 +124,7 @@ class CfgVehicles
             {
                 author = "???";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Body.paa",

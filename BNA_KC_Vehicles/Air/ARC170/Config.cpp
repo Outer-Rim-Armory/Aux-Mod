@@ -70,7 +70,7 @@ class CfgVehicles
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\3as\3as_arc170\Data\Main_Frame_co.paa",
@@ -82,6 +82,7 @@ class CfgVehicles
             {
                 author = "DartRuffian";
                 displayName = "Keeli Company";
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Air\ARC170\Data\Textures\KeeliCompany\Main_Frame.paa",

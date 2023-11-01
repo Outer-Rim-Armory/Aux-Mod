@@ -45,7 +45,7 @@ class CfgVehicles
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] = {"\3as\3AS_RX200\data\DefaultMaterial_CO.paa"};
             };
             class KeeliCompany: Standard

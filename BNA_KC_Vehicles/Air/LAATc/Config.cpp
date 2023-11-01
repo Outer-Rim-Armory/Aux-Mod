@@ -54,7 +54,7 @@ class CfgVehicles
             {
                 author = "Legion Studios";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\lsd_vehicles_heli\laatc\data\auxiliary_co.paa",
@@ -68,6 +68,7 @@ class CfgVehicles
             {
                 author = "Dexus";
                 displayName = "Keeli Company";
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Auxiliary.paa",

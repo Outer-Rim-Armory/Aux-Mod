@@ -43,7 +43,7 @@ class CfgVehicles
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\3as\3as_atte\data\atte_hull_TCW_co.paa",
@@ -71,6 +71,7 @@ class CfgVehicles
             {
                 author = "Dexus";
                 displayName = "Keeli Company";
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Body.paa",

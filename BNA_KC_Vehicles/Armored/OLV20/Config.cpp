@@ -51,7 +51,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Body.paa",
