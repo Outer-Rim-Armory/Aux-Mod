@@ -92,7 +92,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VDrones";
+        editorSubcategory = "BNA_KC_SubCat_Drones";
         editorPreview = "\BNA_KC_Vehicles\Light\Khezu\Data\Previews\Khezu_Turret.jpg";
 
         displayName = "Khezu (HMG/GMG)";
