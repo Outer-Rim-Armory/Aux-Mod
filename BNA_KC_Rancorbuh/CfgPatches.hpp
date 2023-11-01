@@ -6,6 +6,8 @@ class CfgPatches
         requiredVersion = 1.6;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
             "WBK_ZombieCreatures",
                 // Smasher unit and script
             "A3_Characters_F",
