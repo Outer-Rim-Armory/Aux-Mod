@@ -377,13 +377,12 @@ class CfgVehicles
             "\3as\3as_static\Mortar\data\tube.rvmat"
         };
 
+        // Editor Attributes
+        side = 1;
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_Turrets";
         editorPreview = "\BNA_KC_Vehicles\Static\Mortar\Data\Previews\Mortar_GAR.jpg";
         icon = "\3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
-
-        // Editor Attributes
-        faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VStatic";
-        side = 1;
 
         class Turrets: Turrets
         {
