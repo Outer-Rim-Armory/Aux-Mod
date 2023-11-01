@@ -294,20 +294,20 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
-            TRANSMAG_XX(SmokeShell, 2)
-            TRANSMAG_XX(ShieldGrenade_Mag, 2)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(ls_mag_classC_thermalDet, 2)
+            MAG_XX(SmokeShell, 2)
+            MAG_XX(ShieldGrenade_Mag, 2)
         };
     };
     class BNA_KC_Galtorran_Backpack_Predef_Marksman: BNA_KC_Galtorran_Backpack_Predef_Rifleman
     {
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_HI12, 15)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
-            TRANSMAG_XX(SmokeShell, 2)
-            TRANSMAG_XX(ShieldGrenade_Mag, 2)
+            MAG_XX(BNA_KC_Mag_HI12, 15)
+            MAG_XX(ls_mag_classC_thermalDet, 2)
+            MAG_XX(SmokeShell, 2)
+            MAG_XX(ShieldGrenade_Mag, 2)
         };
     };
 
@@ -329,24 +329,24 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenade_Mag, 4)
-            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
-            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(ls_mag_classC_thermalDet, 4)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenade_Mag, 4)
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
+            MAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
     class BNA_KC_Galtorran_Veteran_Backpack_Predef_Marksman: BNA_KC_Galtorran_Veteran_Backpack_Predef_Rifleman
     {
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_HI12, 15)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenade_Mag, 4)
-            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
-            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
+            MAG_XX(BNA_KC_Mag_HI12, 15)
+            MAG_XX(ls_mag_classC_thermalDet, 4)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenade_Mag, 4)
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
+            MAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
 
@@ -369,28 +369,28 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(ls_mag_classB_thermalDet, 3)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenadePersonal_Mag, 2)
-            TRANSMAG_XX(SquadShieldMagazine, 2)
-            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
-            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
-            TRANSMAG_XX(BNA_KC_Grenade_BactaBomb, 1)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(ls_mag_classB_thermalDet, 3)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenadePersonal_Mag, 2)
+            MAG_XX(SquadShieldMagazine, 2)
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
+            MAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
+            MAG_XX(BNA_KC_Grenade_BactaBomb, 1)
         };
     };
     class BNA_KC_Galtorran_Elite_Backpack_Predef_Marksman: BNA_KC_Galtorran_Elite_Backpack
     {
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_HI12, 15)
-            TRANSMAG_XX(ls_mag_classB_thermalDet, 3)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenadePersonal_Mag, 2)
-            TRANSMAG_XX(SquadShieldMagazine, 2)
-            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
-            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
-            TRANSMAG_XX(BNA_KC_Grenade_BactaBomb, 1)
+            MAG_XX(BNA_KC_Mag_HI12, 15)
+            MAG_XX(ls_mag_classB_thermalDet, 3)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenadePersonal_Mag, 2)
+            MAG_XX(SquadShieldMagazine, 2)
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
+            MAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
+            MAG_XX(BNA_KC_Grenade_BactaBomb, 1)
         };
     };
 
@@ -411,22 +411,22 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(SC_MPML_M_AT, 3)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
-            TRANSMAG_XX(SmokeShell, 2)
-            TRANSMAG_XX(ShieldGrenade_Mag, 2)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(SC_MPML_M_AT, 3)
+            MAG_XX(ls_mag_classC_thermalDet, 2)
+            MAG_XX(SmokeShell, 2)
+            MAG_XX(ShieldGrenade_Mag, 2)
         };
     };
     class BNA_KC_Galtorran_Backpack_Heavy_Predef_AA: BNA_KC_Galtorran_Backpack_Heavy_Predef_AT
     {
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(SC_MPML_M_AA, 3)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 2)
-            TRANSMAG_XX(SmokeShell, 2)
-            TRANSMAG_XX(ShieldGrenade_Mag, 2)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(SC_MPML_M_AA, 3)
+            MAG_XX(ls_mag_classC_thermalDet, 2)
+            MAG_XX(SmokeShell, 2)
+            MAG_XX(ShieldGrenade_Mag, 2)
         };
     };
 
@@ -444,26 +444,26 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(3AS_JLTS_MK43_AT, 2)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenade_Mag, 4)
-            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
-            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(3AS_JLTS_MK43_AT, 2)
+            MAG_XX(ls_mag_classC_thermalDet, 4)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenade_Mag, 4)
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
+            MAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
     class BNA_KC_Galtorran_Veteran_Backpack_Heavy_Predef_AA: BNA_KC_Galtorran_Veteran_Backpack_Heavy_Predef_AT
     {
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(3AS_JLTS_MK39_AA, 2)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenade_Mag, 4)
-            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
-            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(3AS_JLTS_MK39_AA, 2)
+            MAG_XX(ls_mag_classC_thermalDet, 4)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenade_Mag, 4)
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
+            MAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
 
@@ -481,28 +481,28 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(3AS_JLTS_MK43_AT, 2)
-            TRANSMAG_XX(ls_mag_classB_thermalDet, 3)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenadePersonal_Mag, 2)
-            TRANSMAG_XX(SquadShieldMagazine, 2)
-            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
-            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
-            TRANSMAG_XX(BNA_KC_Grenade_BactaBomb, 1)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(3AS_JLTS_MK43_AT, 2)
+            MAG_XX(ls_mag_classB_thermalDet, 3)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenadePersonal_Mag, 2)
+            MAG_XX(SquadShieldMagazine, 2)
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
+            MAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
+            MAG_XX(BNA_KC_Grenade_BactaBomb, 1)
         };
     };
     class BNA_KC_Galtorran_Elite_Backpack_Heavy_Predef_AA: BNA_KC_Galtorran_Elite_Backpack_Heavy_Predef_AT
     {
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(3AS_JLTS_MK39_AA, 2)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenade_Mag, 4)
-            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
-            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(3AS_JLTS_MK39_AA, 2)
+            MAG_XX(ls_mag_classC_thermalDet, 4)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenade_Mag, 4)
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
+            MAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
 
@@ -526,22 +526,22 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenade_Mag, 3)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(ls_mag_classC_thermalDet, 4)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenade_Mag, 3)
         };
     };
     class BNA_KC_Galtorran_Veteran_Backpack_RTO_Predef_SL: BNA_KC_Galtorran_Backpack_RTO_Predef_SL
     {
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(ls_mag_classC_thermalDet, 4)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenade_Mag, 4)
-            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
-            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(ls_mag_classC_thermalDet, 4)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenade_Mag, 4)
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 1)
+            MAG_XX(JMSLLTE_dioxis_HandGrenade, 1)
         };
     };
 
@@ -560,14 +560,14 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            TRANSMAG_XX(BNA_KC_Mag_LW38_Green, 15)
-            TRANSMAG_XX(ls_mag_classB_thermalDet, 3)
-            TRANSMAG_XX(SmokeShell, 4)
-            TRANSMAG_XX(ShieldGrenadePersonal_Mag, 2)
-            TRANSMAG_XX(SquadShieldMagazine, 1)
-            TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
-            TRANSMAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
-            TRANSMAG_XX(BNA_KC_Grenade_BactaBomb, 1)
+            MAG_XX(BNA_KC_Mag_LW38_Green, 15)
+            MAG_XX(ls_mag_classB_thermalDet, 3)
+            MAG_XX(SmokeShell, 4)
+            MAG_XX(ShieldGrenadePersonal_Mag, 2)
+            MAG_XX(SquadShieldMagazine, 1)
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 3)
+            MAG_XX(JMSLLTE_dioxis_HandGrenade, 3)
+            MAG_XX(BNA_KC_Grenade_BactaBomb, 1)
         };
     };
 };
