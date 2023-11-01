@@ -100,11 +100,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Vest_Jedi", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Vest_Jedi", "SWLB_comlink", LINKED_ITEMS
         };
         backpack = "BNA_KC_Backpack_Radio_Invisible";
     };
