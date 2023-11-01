@@ -9,6 +9,10 @@ class CfgEditorSubcategories
         scopeCurator = 2;
         displayName = "Infantry";
     };
+    class BNA_KC_SubCat_Crewmen: BNA_KC_SubCat_Infantry
+    {
+        displayName = "Crewmen";
+    };
     class BNA_KC_SubCat_SpecialForces: BNA_KC_SubCat_Infantry
     {
         displayName = "Special Forces";
