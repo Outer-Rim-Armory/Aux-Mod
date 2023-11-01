@@ -324,7 +324,7 @@ class CfgVehicles
         // Editor Properties
         faction = "BNA_KC_Faction";
 
-        displayName = "[KC] INF Trooper (Base)"
+        displayName = "INF Trooper (Base)"
         uniformClass = "BNA_KC_Uniform_Base";
 
         // Inventory
@@ -422,7 +422,7 @@ class CfgVehicles
         editorSubcategory = "BNA_KC_INF_P1";
         editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\Base.jpg";
 
-        displayName = "[KC] INF P1 Trooper (Base)"
+        displayName = "INF P1 Trooper (Base)"
 
         uniformClass = "BNA_KC_Uniform_Base";
     };
@@ -458,8 +458,7 @@ class CfgVehicles
 
     class BNA_KC_Unit_Insulated_Trooper: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] INF Snow - Trooper";
-        editorSubcategory = "BNA_KC_INF_Snow";
+        displayName = "INF Snow - Trooper";
         editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Trooper_Insulated.jpg";
 
         // Uniform Model & Textures
@@ -695,16 +694,5 @@ class CfgEditorSubcategories
         scopeCurator = 2;
 
         displayName = "Infantry - Specializations";
-    };
-
-    class BNA_KC_INF_Snow
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Infantry - Snow";
     };
 };
