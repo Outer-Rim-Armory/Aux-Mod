@@ -14,6 +14,7 @@ scopeArsenal =
     2: Class is available in the Arsenal.
 */
 #include "CfgPatches.hpp"
+#include "CfgEditorSubcategories.hpp"
 
 
 class CfgMods
