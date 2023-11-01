@@ -254,7 +254,7 @@ class CfgVehicles
     class BNA_KC_TU_Unit_Base: BNA_KC_OPFOR_Unit_Base
     {
         faction = "BNA_KC_OPFOR_TU";
-        editorSubcategory = "BNA_KC_SubCat_OPFOR_Infantry";
+        editorSubcategory = "BNA_KC_SubCat_Infantry";
         identityTypes[] = {"LanguageENG_F", "Head_NATO", "BNA_KC_TechnoUnion"};
 
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";

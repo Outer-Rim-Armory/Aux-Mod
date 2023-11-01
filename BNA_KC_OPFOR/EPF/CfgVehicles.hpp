@@ -6,7 +6,7 @@ class BNA_KC_AAT_EPF: BNA_KC_AAT_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_EPF";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
 
     crew = "BNA_KC_EPF_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
@@ -38,7 +38,7 @@ class BNA_KC_AAT_Heavy_EPF: BNA_KC_AAT_Heavy_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_EPF";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
 
     crew = "BNA_KC_EPF_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
@@ -52,7 +52,7 @@ class BNA_KC_AAT_King_EPF: BNA_KC_AAT_King_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_EPF";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
 
     crew = "BNA_KC_EPF_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
@@ -66,7 +66,7 @@ class BNA_KC_Plesioth_EPF: BNA_KC_Plesioth_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_EPF";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
 
     crew = "BNA_KC_EPF_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
@@ -92,7 +92,7 @@ class BNA_KC_Conga_IFV_EPF: BNA_KC_Conga_IFV_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_EPF";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
 
     crew = "BNA_KC_EPF_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};
@@ -118,7 +118,7 @@ class BNA_KC_Conga_MGS_EPF: BNA_KC_Conga_MGS_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_EPF";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
 
     crew = "BNA_KC_EPF_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_EPF_Unit_Rifleman"};

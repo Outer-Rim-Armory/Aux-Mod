@@ -6,7 +6,7 @@ class BNA_KC_AAT_TU: BNA_KC_AAT_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_TU";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
@@ -38,7 +38,7 @@ class BNA_KC_AAT_Heavy_TU: BNA_KC_AAT_Heavy_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_TU";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
@@ -52,7 +52,7 @@ class BNA_KC_AAT_King_TU: BNA_KC_AAT_King_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_TU";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
     typicalCargo[] = {"BNA_KC_TU_Unit_Rifleman"};
@@ -66,7 +66,7 @@ class BNA_KC_Plesioth_TU: BNA_KC_Plesioth_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_TU";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
     editorPreview = "\BNA_KC_Vehicles\Armored\Plesioth\Data\Previews\Plesioth_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
@@ -93,7 +93,7 @@ class BNA_KC_Conga_IFV_TU: BNA_KC_Conga_IFV_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_TU";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
     editorPreview = "\BNA_KC_Vehicles\Armored\Conga\Data\Previews\Conga_IFV_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
@@ -120,7 +120,7 @@ class BNA_KC_Conga_MGS_TU: BNA_KC_Conga_MGS_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_TU";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
     editorPreview = "\BNA_KC_Vehicles\Armored\Conga\Data\Previews\Conga_MGS_Tan.jpg";
 
     crew = "BNA_KC_TU_Unit_Rifleman";
