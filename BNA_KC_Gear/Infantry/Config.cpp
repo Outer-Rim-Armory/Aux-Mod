@@ -674,17 +674,6 @@ class CfgEditorSubcategories
         displayName = "Infantry - Phase 2";
     };
 
-    class BNA_KC_INF_Camo
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Infantry - Camo";
-    };
-
     class BNA_KC_INF_Certs
     {
         dlc = "BNA_KC";
