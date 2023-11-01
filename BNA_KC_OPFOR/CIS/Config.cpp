@@ -145,7 +145,7 @@ class CfgVehicles
         displayName = "BX Commando Droid";
 
         // Editor Properties
-        editorSubcategory = "BNA_KC_SubCat_CIS_SpecialForces";
+        editorSubcategory = "BNA_KC_SubCat_SpecialForces";
         editorPreview = "\BNA_KC_OPFOR\CIS\Data\Previews\BXDroid.jpg";
 
         uniformClass = "BNA_KC_CIS_Uniform_BXDroid";
