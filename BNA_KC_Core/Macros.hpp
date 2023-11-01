@@ -33,3 +33,7 @@
 
 // Base Unit Linked Items
 #define BASE_LINKED_ITEMS "ItemMap", "ItemRadio", "ItemCompass", "ItemGPS", "ItemWatch"
+
+
+// Utils Macros
+#define QUOTE(TEXT) #TEXT
