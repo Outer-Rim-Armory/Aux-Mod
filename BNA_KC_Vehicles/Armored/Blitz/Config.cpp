@@ -271,7 +271,7 @@ class CfgVehicles
             class muzzle_rot_cmdr
             {
                 source = "ammorandom";
-                weapon = "HMG_127_MBT";
+                weapon = "BNA_KC_Coax";
             };
             class recoil_source
             {
@@ -281,7 +281,7 @@ class CfgVehicles
             class commander_gun_recoil
             {
                 source = "reload";
-                weapon = "HMG_127_MBT";
+                weapon = "BNA_KC_Coax";
             };
         };
 
