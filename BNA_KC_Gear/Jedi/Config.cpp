@@ -51,7 +51,7 @@ class CfgVehicles
     class BNA_KC_Unit_Phase2_Base;
     class BNA_KC_Unit_Jedi_Commander: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] Jedi Commander";
+        displayName = "Jedi Commander";
         editorSubcategory = "BNA_KC_SubCat_Jedi";
         editorPreview = "\BNA_KC_Gear\Jedi\Data\Previews\Jedi_Commander.jpg";
 

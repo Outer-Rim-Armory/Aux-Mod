@@ -131,7 +131,7 @@ class CfgVehicles
     class BNA_KC_Unit_Phase2_Base;
     class BNA_KC_Unit_Phase2_Tanker: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] ARMR P2 Tanker";
+        displayName = "ARMR P2 Tanker";
         editorSubcategory = "BNA_KC_SubCat_Crewmen";
         editorPreview = "\BNA_KC_Gear\Armored\Data\Previews\Phase2_Tanker.jpg";
 
@@ -157,7 +157,7 @@ class CfgVehicles
     class BNA_KC_Unit_Phase1_Base;
     class BNA_KC_Unit_Phase1_Tanker: BNA_KC_Unit_Phase1_Base
     {
-        displayName = "[KC] ARMR P1 Tanker";
+        displayName = "ARMR P1 Tanker";
         editorSubcategory = "BNA_KC_SubCat_Crewmen";
         editorPreview = "\BNA_KC_Gear\Armored\Data\Previews\Phase1_Tanker.jpg";
 

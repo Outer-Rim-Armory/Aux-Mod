@@ -132,7 +132,7 @@ class CfgVehicles
     class BNA_KC_Unit_Phase2_Base;
     class BNA_KC_Unit_Phase2_Pilot: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] AVI P2 Pilot";
+        displayName = "AVI P2 Pilot";
         editorSubcategory = "BNA_KC_SubCat_Crewmen";
         editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\Phase2_Pilot.jpg";
 
@@ -155,7 +155,7 @@ class CfgVehicles
 
     class BNA_KC_Unit_Phase2_Pilot_Officer: BNA_KC_Unit_Phase2_Pilot
     {
-        displayName = "[KC] AVI P2 Pilot (Officer)";
+        displayName = "AVI P2 Pilot (Officer)";
         editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\Phase2_Pilot_Officer.jpg";
 
         uniformClass = "BNA_KC_Uniform_Pilot_Officer";
@@ -178,7 +178,7 @@ class CfgVehicles
     class BNA_KC_Unit_Phase1_Base;
     class BNA_KC_Unit_Phase1_Pilot: BNA_KC_Unit_Phase1_Base
     {
-        displayName = "[KC] AVI P1 Pilot";
+        displayName = "AVI P1 Pilot";
         editorSubcategory = "BNA_KC_SubCat_Crewmen";
         editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\Phase1_Pilot.jpg";
 
