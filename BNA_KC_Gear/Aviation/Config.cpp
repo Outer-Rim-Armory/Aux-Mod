@@ -133,7 +133,7 @@ class CfgVehicles
     class BNA_KC_Unit_Phase2_Pilot: BNA_KC_Unit_Phase2_Base
     {
         displayName = "[KC] AVI P2 Pilot";
-        editorSubcategory = "BNA_KC_Aviation";
+        editorSubcategory = "BNA_KC_SubCat_Crewmen";
         editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\Phase2_Pilot.jpg";
 
         uniformClass = "BNA_KC_Uniform_Pilot";
@@ -179,7 +179,7 @@ class CfgVehicles
     class BNA_KC_Unit_Phase1_Pilot: BNA_KC_Unit_Phase1_Base
     {
         displayName = "[KC] AVI P1 Pilot";
-        editorSubcategory = "BNA_KC_Aviation";
+        editorSubcategory = "BNA_KC_SubCat_Crewmen";
         editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\Phase1_Pilot.jpg";
 
         uniformClass = "BNA_KC_Uniform_Pilot";
@@ -191,20 +191,5 @@ class CfgVehicles
         {
             "BNA_KC_Helmet_Phase1_Pilot", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
-    };
-};
-
-
-class CfgEditorSubcategories
-{
-    class BNA_KC_Aviation
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Aviation";
     };
 };
