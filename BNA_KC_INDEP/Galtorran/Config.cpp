@@ -272,7 +272,7 @@ class CfgVehicles
         scopeCurator = 2;
 
         displayName = "Rifleman";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\Rifleman.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T1\Rifleman.png";
 
         weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "Throw", "Put"};
         respawnWeapons[] = {"BNA_KC_LW38_Green_Scoped", "", "Throw", "Put"};
@@ -288,7 +288,7 @@ class CfgVehicles
     {
         displayName = "Veteran Rifleman";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\Rifleman_T2.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T2\Rifleman.png";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Veteran_Backpack_Predef_Rifleman";
@@ -297,7 +297,7 @@ class CfgVehicles
     {
         displayName = "Elite Rifleman";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\Rifleman_T3.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T3\Rifleman.png";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_Predef_Rifleman";
@@ -306,7 +306,7 @@ class CfgVehicles
     class BNA_KC_Galtorran_Unit_AT: BNA_KC_Galtorran_Unit_Rifleman
     {
         displayName = "Rifleman (AT)";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\AT.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T1\Rifleman_AT.png";
         icon = "iconManAT";
 
         weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "SC_MPML", "Throw", "Put"};
@@ -321,7 +321,7 @@ class CfgVehicles
     {
         displayName = "Veteran Rifleman (AT)";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\AT_T2.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T2\Rifleman_AT.png";
 
         weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "3AS_PLX1_F", "Throw", "Put"};
         respawnWeapons[] = {"BNA_KC_LW38_Green_Scoped", "", "3AS_PLX1_F", "Throw", "Put"};
@@ -337,7 +337,7 @@ class CfgVehicles
     {
         displayName = "Elite Rifleman (AT)";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\AT_T3.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T3\Rifleman_AT.png";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_Heavy_Predef_AT";
@@ -346,7 +346,7 @@ class CfgVehicles
     class BNA_KC_Galtorran_Unit_AA: BNA_KC_Galtorran_Unit_Rifleman
     {
         displayName = "Rifleman (AA)";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\AT.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T1\Rifleman_AT.png";
         icon = "iconManAT";
 
         weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "SC_MPML", "Throw", "Put"};
@@ -361,7 +361,7 @@ class CfgVehicles
     {
         displayName = "Veteran Rifleman (AA)";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\AT_T2.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T2\Rifleman_AT.png";
 
         weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "3AS_PLX1_F", "Throw", "Put"};
         respawnWeapons[] = {"BNA_KC_LW38_Green_Scoped", "", "3AS_PLX1_F", "Throw", "Put"};
@@ -377,7 +377,7 @@ class CfgVehicles
     {
         displayName = "Elite Rifleman (AA)";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\AT_T3.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T3\Rifleman_AT.png";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_Heavy_Predef_AA";
@@ -386,7 +386,7 @@ class CfgVehicles
     class BNA_KC_Galtorran_Unit_Marksman: BNA_KC_Galtorran_Unit_Rifleman
     {
         displayName = "Marksman";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\Marksman.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T1\Marksman.png";
         icon = "LSiconMarksman";
 
         weapons[] = {"BNA_KC_HI12", "", "Throw", "Put"};
@@ -403,7 +403,7 @@ class CfgVehicles
     {
         displayName = "Veteran Marksman";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\Marksman_T2.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T2\Marksman.png";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_MVI_UL_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_MVI_UL_CNM", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Veteran_Backpack_Predef_Marksman";
@@ -412,7 +412,7 @@ class CfgVehicles
     {
         displayName = "Elite Marksman";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\Marksman_T3.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T3\Marksman.png";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_Predef_Marksman";
@@ -421,7 +421,7 @@ class CfgVehicles
     class BNA_KC_Galtorran_Unit_SL: BNA_KC_Galtorran_Unit_Rifleman
     {
         displayName = "Squad Leader";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\SL.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T1\SL.png";
         icon = "iconManLeader";
 
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_SL", "BNA_KC_Galtorran_Vest", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
@@ -432,7 +432,7 @@ class CfgVehicles
     {
         displayName = "Veteran Squad Leader";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\SL_T2.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T2\SL.png";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Veteran_Backpack_RTO_Predef_SL";
@@ -441,7 +441,7 @@ class CfgVehicles
     {
         displayName = "Elite Squad Leader";
         editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\SL_T3.jpg";
+        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T3\SL.png";
         linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Elite_Backpack_RTO_Predef_SL";
