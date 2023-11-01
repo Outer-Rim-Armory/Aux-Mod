@@ -27,10 +27,10 @@ class CfgVehicles
         scopeCurator = 2;
 
         // Editor Attributes
-        faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VArmored";
-        editorPreview = "\BNA_KC_Vehicles\Armored\OLV20\Data\Previews\OLV20.jpg";
         side = 1;
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_APCs";
+        editorPreview = "\BNA_KC_Vehicles\Armored\OLV20\Data\Previews\OLV20.jpg";
 
         displayName = "OLV-20";
         crew = "BNA_KC_Unit_Phase2_Tanker";
@@ -51,7 +51,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Body.paa",

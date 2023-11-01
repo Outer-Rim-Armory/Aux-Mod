@@ -41,7 +41,7 @@ class CfgVehicles
         scopeCurator = 0;
 
         // Editor Attributes
-        side = 0;
+        editorSubcategory = "BNA_KC_SubCat_APCs";
         editorPreview = "\BNA_KC_Vehicles\Armored\Conga\Data\Previews\Conga_IFV_Tan.jpg";
 
         displayName = "Conga IFV";

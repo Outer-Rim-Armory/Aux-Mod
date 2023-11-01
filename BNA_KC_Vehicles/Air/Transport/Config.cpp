@@ -21,7 +21,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAir";
+        editorSubcategory = "BNA_KC_SubCat_Planes";
         editorPreview = "\BNA_KC_Vehicles\Air\Transport\Data\Previews\RepublicTransport.jpg";
 
         displayName = "Republic Transport";
@@ -51,7 +51,7 @@ class CfgVehicles
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\3as\3as_starships\data\hs_ext_co.paa",
@@ -73,6 +73,7 @@ class CfgVehicles
             {
                 author = "Dexus";
                 displayName = "Keeli Company";
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Air\Transport\Data\Textures\KeeliCompany\Body.paa",

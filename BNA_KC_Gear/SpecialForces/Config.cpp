@@ -1,4 +1,6 @@
 #include "CfgPatches.hpp"
+#include "\BNA_KC_Gear\Macros.hpp"
+
 
 class CfgWeapons
 {
@@ -384,7 +386,7 @@ class CfgVehicles
     class BNA_KC_Unit_Phase2_Base;
     class BNA_KC_Unit_ARC: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] SF ARC Trooper";
+        displayName = "ARC Trooper";
         editorSubcategory = "BNA_KC_SF";
         editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARC.jpg";
 
@@ -409,7 +411,7 @@ class CfgVehicles
 
     class BNA_KC_Unit_ARC_Night: BNA_KC_Unit_ARC
     {
-        displayName = "[KC] SF ARC Trooper (Night Camo)";
+        displayName = "ARC Trooper (Night Camo)";
         editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARC_Night.jpg";
 
         uniformClass = "BNA_KC_Uniform_ARC_Night";
@@ -432,7 +434,7 @@ class CfgVehicles
 
     class BNA_KC_Unit_ARF: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] SF ARF Trooper";
+        displayName = "ARF Trooper";
         editorSubcategory = "BNA_KC_SF";
         editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARF.jpg";
 
@@ -457,7 +459,7 @@ class CfgVehicles
 
     class BNA_KC_Unit_BARC: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] SF BARC Trooper";
+        displayName = "BARC Trooper";
         editorSubcategory = "BNA_KC_SF";
         editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\BARC.jpg";
 

@@ -7,8 +7,10 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
             "BNA_KC_Vehicles",
-                // Core Config
+                // Core Vehicle Addon
             "A3_Air_F_Exp_VTOL_01",
                 // Blackfish
             "ls_vehicles_weapons",

@@ -17,7 +17,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VDrones";
+        editorSubcategory = "BNA_KC_SubCat_Drones";
         editorPreview = "\BNA_KC_Vehicles\Light\Khezu\Data\Previews\Khezu.jpg";
 
         displayName = "Khezu (Unarmed)";
@@ -35,7 +35,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Khezu\Data\Textures\CamoKC\Body.paa",
@@ -92,7 +92,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VDrones";
+        editorSubcategory = "BNA_KC_SubCat_Drones";
         editorPreview = "\BNA_KC_Vehicles\Light\Khezu\Data\Previews\Khezu_Turret.jpg";
 
         displayName = "Khezu (HMG/GMG)";
@@ -110,7 +110,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Khezu\Data\Textures\CamoKC\Body.paa",

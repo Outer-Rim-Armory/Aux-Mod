@@ -17,7 +17,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
         editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet.jpg";
 
         displayName = "Hornet Strike Vehicle";
@@ -38,7 +38,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Brown Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",
@@ -92,7 +92,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
         editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet_MG.jpg";
 
         displayName = "Hornet Strike Vehicle (MG)";
@@ -113,7 +113,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Brown Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",
@@ -205,7 +205,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
         editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet_Launcher.jpg";
 
         displayName = "Hornet Strike Vehicle (AT)";
@@ -227,7 +227,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Brown Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",

@@ -1,5 +1,5 @@
 #include "CfgPatches.hpp"
-#include "..\Macros.hpp"
+#include "\BNA_KC_Gear\Macros.hpp"
 
 
 class CfgWeapons
@@ -131,8 +131,8 @@ class CfgVehicles
     class BNA_KC_Unit_Phase2_Base;
     class BNA_KC_Unit_Phase2_Tanker: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] ARMR P2 Tanker";
-        editorSubcategory = "BNA_KC_Armored";
+        displayName = "ARMR P2 Tanker";
+        editorSubcategory = "BNA_KC_SubCat_Crewmen";
         editorPreview = "\BNA_KC_Gear\Armored\Data\Previews\Phase2_Tanker.jpg";
 
         uniformClass = "BNA_KC_Uniform_Tanker";
@@ -157,8 +157,8 @@ class CfgVehicles
     class BNA_KC_Unit_Phase1_Base;
     class BNA_KC_Unit_Phase1_Tanker: BNA_KC_Unit_Phase1_Base
     {
-        displayName = "[KC] ARMR P1 Tanker";
-        editorSubcategory = "BNA_KC_Armored";
+        displayName = "ARMR P1 Tanker";
+        editorSubcategory = "BNA_KC_SubCat_Crewmen";
         editorPreview = "\BNA_KC_Gear\Armored\Data\Previews\Phase1_Tanker.jpg";
 
         uniformClass = "BNA_KC_Uniform_Tanker";
@@ -172,20 +172,5 @@ class CfgVehicles
             "BNA_KC_Helmet_Phase1_Tanker", "SWLB_clone_recon_armor", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
         };
         backpack = "ls_mandalorian_light_backpack";
-    };
-};
-
-
-class CfgEditorSubcategories
-{
-    class BNA_KC_Armored
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Armored";
     };
 };

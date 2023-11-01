@@ -6,7 +6,7 @@ class BNA_KC_AAT_CIS: BNA_KC_AAT_Base
     scopeCurator = 2;
 
     faction = "BNA_KC_OPFOR_CIS";
-    editorSubcategory = "BNA_KC_SubCat_OPFOR_Tanks";
+    editorSubcategory = "BNA_KC_SubCat_Tanks";
 
     crew = "JLTS_Droid_B1_Crew";
     typicalCargo[] = {"JLTS_Droid_B1_Crew"};

@@ -145,7 +145,7 @@ class CfgVehicles
         displayName = "BX Commando Droid";
 
         // Editor Properties
-        editorSubcategory = "BNA_KC_SubCat_CIS_SpecialForces";
+        editorSubcategory = "BNA_KC_SubCat_SpecialForces";
         editorPreview = "\BNA_KC_OPFOR\CIS\Data\Previews\BXDroid.jpg";
 
         uniformClass = "BNA_KC_CIS_Uniform_BXDroid";
@@ -198,11 +198,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_CIS_Vest_BXDroid", "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_CIS_Vest_BXDroid", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink_droid", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_CIS_Vest_BXDroid", "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
         };
     };
 
@@ -239,30 +239,5 @@ class CfgFactionClasses
         scopeCurator = 2;
 
         displayName = "[KC] CIS";
-    };
-};
-
-
-class CfgEditorSubcategories
-{
-    class BNA_KC_SubCat_CIS_Infantry
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Infantry";
-    };
-
-    class BNA_KC_SubCat_CIS_SpecialForces: BNA_KC_SubCat_CIS_Infantry
-    {
-        displayName = "Special Forces";
-    };
-
-    class BNA_KC_SubCat_CIS_Tanks: BNA_KC_SubCat_CIS_Infantry
-    {
-        displayName = "Tanks";
     };
 };

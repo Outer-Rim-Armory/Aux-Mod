@@ -24,7 +24,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Walkers";
 
         displayName = "AT-RT";
         uniformClass = "BNA_KC_Uniform_ATRT";

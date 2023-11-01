@@ -22,7 +22,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorSubcategory = "BNA_KC_SubCat_Walkers";
         editorPreview = "\BNA_KC_Vehicles\Armored\ATAP\Data\Previews\ATAP.jpg";
 
         displayName = "AT-AP";
@@ -42,7 +42,7 @@ class CfgVehicles
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\3as\3AS_ATAP\data\Hull_CO.paa",
@@ -54,6 +54,7 @@ class CfgVehicles
             {
                 author = "Rev";
                 displayName = "Keeli Company";
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\KeeliCompany\Body.paa",
@@ -61,8 +62,9 @@ class CfgVehicles
                     "\BNA_KC_Vehicles\Armored\ATAP\Data\Textures\KeeliCompany\Legs.paa"
                 };
             };
-            class CamoGrey: KeeliCompany
+            class CamoGrey: Standard
             {
+                author = "Rev";
                 displayName = "Grey Camo";
                 textures[] =
                 {

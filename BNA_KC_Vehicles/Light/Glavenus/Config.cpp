@@ -17,7 +17,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
         editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus.jpg";
 
         displayName = "Glavenus (Unarmed)";
@@ -35,7 +35,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa",
@@ -125,7 +125,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
         editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Turret.jpg";
 
         displayName = "Glavenus (HMG)";
@@ -143,7 +143,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa",
@@ -227,7 +227,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
         editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Turret.jpg";
 
         displayName = "Glavenus (GMG)";
@@ -245,7 +245,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa",

@@ -7,6 +7,10 @@ class CfgPatches
         requiredVersion = 1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
+            "BNA_KC_Gear_Infantry",
+                // Base unit, uniform, etc.
             "lsd_armor_bluefor",
                 // Jedi Commander Armor
                 // Jedi Commander Unit

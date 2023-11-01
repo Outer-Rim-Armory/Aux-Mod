@@ -29,7 +29,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorSubcategory = "BNA_KC_SubCat_APCs";
         editorPreview = "\BNA_KC_Vehicles\Armored\Badger\Data\Previews\Badger.jpg";
 
         displayName = "Badger IFV";
@@ -124,7 +124,7 @@ class CfgVehicles
             {
                 author = "???";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Body.paa",

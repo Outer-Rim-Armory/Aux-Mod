@@ -42,7 +42,7 @@ class CfgVehicles
         scopeCurator = 0;
 
         // Editor Attributes
-        side = 0;
+        editorSubcategory = "BNA_KC_SubCat_Tanks";
         editorPreview = "\BNA_KC_Vehicles\Armored\Plesioth\Data\Previews\Plesioth_Tan.jpg";
 
         displayName = "Plesioth";

@@ -29,7 +29,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorSubcategory = "BNA_KC_SubCat_Tanks";
         editorPreview = "\BNA_KC_Vehicles\Armored\RX200\Data\Previews\RX200.jpg";
 
         displayName = "RX-200";
@@ -45,7 +45,7 @@ class CfgVehicles
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] = {"\3as\3AS_RX200\data\DefaultMaterial_CO.paa"};
             };
             class KeeliCompany: Standard

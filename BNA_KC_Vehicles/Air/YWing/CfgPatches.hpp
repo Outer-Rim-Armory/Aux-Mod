@@ -7,8 +7,10 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
             "BNA_KC_Vehicles",
-                // Core Config
+                // Core Vehicle Addon
             "3AS_BTLB_Bomber",
                 // BTL-B Y-Wing
             "ls_vehicles_weapons",

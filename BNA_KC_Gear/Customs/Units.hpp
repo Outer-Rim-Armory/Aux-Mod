@@ -8,7 +8,7 @@ class BNA_KC_Unit_Axel: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Axel.jpg";
 
-    displayName = "[KC] Axel";
+    displayName = "Axel";
     uniformClass = "BNA_KC_Uniform_Axel";
     hiddenSelectionsTextures[] =
     {
@@ -34,7 +34,7 @@ class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Burnt.jpg";
 
-    displayName = "[KC] Burnt";
+    displayName = "Burnt";
     uniformClass = "BNA_KC_Uniform_Burnt";
     hiddenSelectionsTextures[] =
     {
@@ -60,7 +60,7 @@ class BNA_KC_Unit_Dexus: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armo
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Dexus.jpg";
 
-    displayName = "[KC] Dexus";
+    displayName = "Dexus";
     uniformClass = "BNA_KC_Uniform_Dexus";
     hiddenSelectionsTextures[] =
     {
@@ -86,7 +86,7 @@ class BNA_KC_Unit_Drake: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armo
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Drake.jpg";
 
-    displayName = "[KC] Drake";
+    displayName = "Drake";
     uniformClass = "BNA_KC_Uniform_Drake";
     hiddenSelectionsTextures[] =
     {
@@ -113,7 +113,7 @@ class BNA_KC_Unit_Fil: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Fil.jpg";
 
-    displayName = "[KC] Fil";
+    displayName = "Fil";
     uniformClass = "BNA_KC_Uniform_Fil";
     hiddenSelectionsTextures[] =
     {
@@ -139,7 +139,7 @@ class BNA_KC_Unit_FilSquad: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\FilSquad.jpg";
 
-    displayName = "[KC] Fil's Squad Member";
+    displayName = "Fil's Squad Member";
     uniformClass = "BNA_KC_Uniform_FilSquad";
     hiddenSelectionsTextures[] =
     {
@@ -165,7 +165,7 @@ class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Joe.jpg";
 
-    displayName = "[KC] Joe";
+    displayName = "Joe";
     uniformClass = "BNA_KC_Uniform_Joe";
     hiddenSelectionsTextures[] =
     {
@@ -192,7 +192,7 @@ class BNA_KC_Unit_Keeli: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Keeli.jpg";
 
-    displayName = "[KC] Keeli";
+    displayName = "Keeli";
     uniformClass = "BNA_KC_Uniform_Keeli";
     hiddenSelectionsTextures[] =
     {
@@ -217,7 +217,7 @@ class BNA_KC_Unit_Keeli_CamoBrown: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Keeli_CamoBrown.jpg";
 
-    displayName = "[KC] Keeli (Brown Camo)";
+    displayName = "Keeli (Brown Camo)";
     uniformClass = "BNA_KC_Uniform_Keeli_CamoBrown";
     hiddenSelectionsTextures[] =
     {
@@ -242,7 +242,7 @@ class BNA_KC_Unit_Keeli_CamoGrey: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Keeli_CamoGrey.jpg";
 
-    displayName = "[KC] Keeli (Grey Camo)";
+    displayName = "Keeli (Grey Camo)";
     uniformClass = "BNA_KC_Uniform_Keeli_CamoGrey";
     hiddenSelectionsTextures[] =
     {
@@ -268,7 +268,7 @@ class BNA_KC_Unit_Ponds: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Ponds.jpg";
 
-    displayName = "[187th] Ponds";
+    displayName = "Ponds";
     uniformClass = "BNA_KC_Uniform_Ponds";
     hiddenSelectionsTextures[] =
     {
@@ -290,7 +290,7 @@ class BNA_KC_Unit_Ponds: BNA_KC_Unit_Phase2_Base
 
 class BNA_KC_Unit_PondsTrooper: BNA_KC_Unit_Ponds
 {
-    displayName = "[187th] Trooper";
+    displayName = "Ponds Trooper";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\PondsTrooper.jpg";
     uniformClass = "BNA_KC_Uniform_PondsTrooper";
     hiddenSelectionsTextures[] =
@@ -317,7 +317,7 @@ class BNA_KC_Unit_Rat: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Rat.jpg";
 
-    displayName = "[KC] Rat";
+    displayName = "Rat";
     uniformClass = "BNA_KC_Uniform_Rat";
     hiddenSelectionsTextures[] =
     {
@@ -343,7 +343,7 @@ class BNA_KC_Unit_Sin: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Sin.jpg";
 
-    displayName = "[KC] Sin";
+    displayName = "Sin";
     uniformClass = "BNA_KC_Uniform_Sin";
     hiddenSelectionsTextures[] =
     {
@@ -369,7 +369,7 @@ class BNA_KC_Unit_Stone: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Stone.jpg";
 
-    displayName = "[KC] Stone";
+    displayName = "Stone";
     uniformClass = "BNA_KC_Uniform_Stone";
     hiddenSelectionsTextures[] =
     {
@@ -395,7 +395,7 @@ class BNA_KC_Unit_Tyrant: BNA_KC_Unit_Phase2_Base
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Tyrant.jpg";
 
-    displayName = "[KC] Tyrant";
+    displayName = "Tyrant";
     uniformClass = "BNA_KC_Uniform_Tyrant";
     hiddenSelectionsTextures[] =
     {
@@ -428,7 +428,7 @@ class BNA_KC_Unit_Insulated_Dexus: BNA_KC_Unit_Insulated_Trooper
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Dexus_Insulated.jpg";
 
-    displayName = "[KC] Dexus (Snow)";
+    displayName = "Dexus (Snow)";
     uniformClass = "BNA_KC_Uniform_Insulated_Dexus";
     hiddenSelectionsTextures[] =
     {
@@ -454,7 +454,7 @@ class BNA_KC_Unit_Insulated_Joe: BNA_KC_Unit_Insulated_Trooper
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Joe_Insulated.jpg";
 
-    displayName = "[KC] Joe (Snow)";
+    displayName = "Joe (Snow)";
     uniformClass = "BNA_KC_Uniform_Insulated_Joe";
     hiddenSelectionsTextures[] =
     {
@@ -480,7 +480,7 @@ class BNA_KC_Unit_Insulated_Keeli: BNA_KC_Unit_Insulated_Trooper
     editorSubcategory = "BNA_KC_Customs";
     editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Keeli_Insulated.jpg";
 
-    displayName = "[KC] Keeli (Snow)";
+    displayName = "Keeli (Snow)";
     uniformClass = "BNA_KC_Uniform_Insulated_Keeli";
     hiddenSelectionsTextures[] =
     {

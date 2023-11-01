@@ -23,11 +23,11 @@ class BNA_KC_TU_Backpack_Predef_Rifleman: BNA_KC_TU_Backpack
 
     class TransportMagazines
     {
-        TRANSMAG_XX(Aux12thFleet_Mag_E5, 10)
-        TRANSMAG_XX(SC_IG3, 2)
-        TRANSMAG_XX(SmokeShell, 2)
-        TRANSMAG_XX(ShieldGrenade_Mag, 2)
-        TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        MAG_XX(Aux12thFleet_Mag_E5, 10)
+        MAG_XX(SC_IG3, 2)
+        MAG_XX(SmokeShell, 2)
+        MAG_XX(ShieldGrenade_Mag, 2)
+        MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
     };
 };
 
@@ -50,13 +50,13 @@ class BNA_KC_TU_Backpack_Heavy_Predef_AT: BNA_KC_TU_Backpack_Heavy
 
     class TransportMagazines
     {
-        TRANSMAG_XX(Aux12thFleet_Mag_E5, 10)
-        TRANSMAG_XX(Aux12thFleet_Mag_E60R_HE, 3)
-        TRANSMAG_XX(Aux12thFleet_Mag_E60R_AT, 3)
-        TRANSMAG_XX(SC_IG3, 2)
-        TRANSMAG_XX(SmokeShell, 2)
-        TRANSMAG_XX(ShieldGrenade_Mag, 2)
-        TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        MAG_XX(Aux12thFleet_Mag_E5, 10)
+        MAG_XX(Aux12thFleet_Mag_E60R_HE, 3)
+        MAG_XX(Aux12thFleet_Mag_E60R_AT, 3)
+        MAG_XX(SC_IG3, 2)
+        MAG_XX(SmokeShell, 2)
+        MAG_XX(ShieldGrenade_Mag, 2)
+        MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
     };
 };
 class BNA_KC_TU_Backpack_Heavy_Predef_AA: BNA_KC_TU_Backpack_Heavy
@@ -68,12 +68,12 @@ class BNA_KC_TU_Backpack_Heavy_Predef_AA: BNA_KC_TU_Backpack_Heavy
 
     class TransportMagazines
     {
-        TRANSMAG_XX(Aux12thFleet_Mag_E5, 10)
-        TRANSMAG_XX(Aux12thFleet_Mag_E60R_AA, 6)
-        TRANSMAG_XX(SC_IG3, 2)
-        TRANSMAG_XX(SmokeShell, 2)
-        TRANSMAG_XX(ShieldGrenade_Mag, 2)
-        TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        MAG_XX(Aux12thFleet_Mag_E5, 10)
+        MAG_XX(Aux12thFleet_Mag_E60R_AA, 6)
+        MAG_XX(SC_IG3, 2)
+        MAG_XX(SmokeShell, 2)
+        MAG_XX(ShieldGrenade_Mag, 2)
+        MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
     };
 };
 
@@ -96,22 +96,22 @@ class BNA_KC_TU_Backpack_Assault_Predef_Heavy: BNA_KC_TU_Backpack_Assault
 
     class TransportMagazines
     {
-        TRANSMAG_XX(Aux12thFleet_Mag_E5C, 10)
-        TRANSMAG_XX(SC_IG3, 2)
-        TRANSMAG_XX(SmokeShell, 2)
-        TRANSMAG_XX(ShieldGrenade_Mag, 2)
-        TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        MAG_XX(Aux12thFleet_Mag_E5C, 10)
+        MAG_XX(SC_IG3, 2)
+        MAG_XX(SmokeShell, 2)
+        MAG_XX(ShieldGrenade_Mag, 2)
+        MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
     };
 };
 class BNA_KC_TU_Backpack_Assault_Predef_Medium: BNA_KC_TU_Backpack_Assault_Predef_Heavy
 {
     class TransportMagazines
     {
-        TRANSMAG_XX(Aux12thFleet_Mag_E5C, 10)
-        TRANSMAG_XX(SC_IG3, 2)
-        TRANSMAG_XX(SmokeShell, 2)
-        TRANSMAG_XX(ShieldGrenade_Mag, 2)
-        TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        MAG_XX(Aux12thFleet_Mag_E5C, 10)
+        MAG_XX(SC_IG3, 2)
+        MAG_XX(SmokeShell, 2)
+        MAG_XX(ShieldGrenade_Mag, 2)
+        MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
     };
 };
 
@@ -142,10 +142,10 @@ class BNA_KC_TU_Backpack_RTO_Predef_SL: BNA_KC_TU_Backpack_RTO
 
     class TransportMagazines
     {
-        TRANSMAG_XX(Aux12thFleet_Mag_E5, 10)
-        TRANSMAG_XX(SC_IG3, 2)
-        TRANSMAG_XX(SmokeShell, 2)
-        TRANSMAG_XX(ShieldGrenade_Mag, 2)
-        TRANSMAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
+        MAG_XX(Aux12thFleet_Mag_E5, 10)
+        MAG_XX(SC_IG3, 2)
+        MAG_XX(SmokeShell, 2)
+        MAG_XX(ShieldGrenade_Mag, 2)
+        MAG_XX(JMSLLTE_thermalimploder_HandGrenade, 5)
     };
 };

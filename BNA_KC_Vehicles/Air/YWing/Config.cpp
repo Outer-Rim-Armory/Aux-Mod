@@ -27,7 +27,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAir";
+        editorSubcategory = "BNA_KC_SubCat_Planes";
         editorPreview = "\BNA_KC_Vehicles\Air\YWing\Data\Previews\BTLB_YWing.jpg";
 
         displayName = "BTL-B Y-Wing";
@@ -63,7 +63,7 @@ class CfgVehicles
             {
                 author = "3rd Army Studios";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\3as\3AS_btlb\textures\chasis_shadow_co.paa",

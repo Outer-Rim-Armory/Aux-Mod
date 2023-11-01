@@ -51,7 +51,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorSubcategory = "BNA_KC_SubCat_Tanks";
         editorPreview = "\BNA_KC_Vehicles\Armored\Blitz\Data\Previews\Blitz.jpg";
 
         displayName = "Blitz Assault Tank";
@@ -148,7 +148,7 @@ class CfgVehicles
             {
                 author = "Rev";
                 displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Armored\Blitz\Data\Textures\KeeliCompany\Body.paa",

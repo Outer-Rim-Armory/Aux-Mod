@@ -20,7 +20,7 @@ class CfgVehicles
         scopeCurator = 0;
 
         // Editor Attributes
-        side = 0;
+        editorSubcategory = "BNA_KC_SubCat_Helicopters";
         editorPreview = "\BNA_KC_Vehicles\Air\Rathian\Data\Previews\Rathian_Tan.jpg";
 
         displayName = "Rathian";
