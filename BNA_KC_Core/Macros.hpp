@@ -9,8 +9,8 @@
 #define ITEM_8(a) a, a, a, a, a, a, a, a
 #define ITEM_9(a) a, a, a, a, a, a, a, a, a
 #define ITEM_10(a) a, a, a, a, a, a, a, a, a, a
-#define ITEM_11(a) a, a, a, a, a, a, a, a, a, a, a
-#define ITEM_12(a) a, a, a, a, a, a, a, a, a, a, a, a
+#define ITEM_11(a) ITEM_10(a), a
+#define ITEM_12(a) ITEM_10(a), ITEM_2(a)
 
 // Transport
 #define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \
