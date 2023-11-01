@@ -41,24 +41,4 @@ class CfgEditorSubcategories
     {
         displayName = "Static Weapons";
     };
-    class BNA_KC_SubCat_Cars: BNA_KC_SubCat_VAir
-    {
-        displayName = "Cars";
-    };
-    class BNA_KC_SubCat_Speeders: BNA_KC_SubCat_VAir
-    {
-        displayName = "Speeders";
-    };
-    class BNA_KC_SubCat_Drones: BNA_KC_SubCat_VAir
-    {
-        displayName = "Drones";
-    };
-    class BNA_KC_SubCat_Planes: BNA_KC_SubCat_VAir
-    {
-        displayName = "Planes";
-    };
-    class BNA_KC_SubCat_Helicopters: BNA_KC_SubCat_VAir
-    {
-        displayName = "Helicopters";
-    };
 };
