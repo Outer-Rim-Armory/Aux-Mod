@@ -174,7 +174,6 @@ class CfgVehicles
     {
         displayName = "Republic Commando"
         editorPreview = "\SWLB_clones_spec\data\ui\editorPreviews\SWLB_clone_commando_base.jpg";
-        editorSubcategory = "BNA_KC_Subcat_Commandos";
 
         uniformClass = "BNA_KC_Uniform_Katarn";
         model = "\ls_armor_bluefor\uniform\sob\commando\ls_sob_commando_uniform.p3d";
@@ -251,20 +250,5 @@ class CfgVehicles
             "\SWLB_clones_spec\backpacks\data\backpack_tech_co.paa"
         };
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
-    };
-};
-
-
-class CfgEditorSubcategories
-{
-    class BNA_KC_Subcat_Commandos
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Commandos";
     };
 };
