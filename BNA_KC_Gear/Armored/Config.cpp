@@ -1,5 +1,5 @@
 #include "CfgPatches.hpp"
-#include "..\Macros.hpp"
+#include "\BNA_KC_Gear\Macros.hpp"
 
 
 class CfgWeapons
