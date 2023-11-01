@@ -7,8 +7,10 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
             "BNA_KC_Vehicles",
-                // Core Config
+                // Core Vehicle Addon
             "OPTRE_Vehicles_Air_Falcon",
                 // Falcon
             "BNA_KC_Vehicles_Weapons",
