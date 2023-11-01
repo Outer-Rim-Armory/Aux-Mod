@@ -343,43 +343,31 @@ class CfgVehicles
         backpack = "BNA_KC_Galtorran_Elite_Backpack_Heavy_Predef_AT";
     };
 
-    class BNA_KC_Galtorran_Unit_AA: BNA_KC_Galtorran_Unit_Rifleman
+    class BNA_KC_Galtorran_Unit_AA: BNA_KC_Galtorran_Unit_AT
     {
         displayName = "Rifleman (AA)";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T1\Rifleman_AT.png";
-        icon = "iconManAT";
-
-        weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "SC_MPML", "Throw", "Put"};
-        respawnWeapons[] = {"BNA_KC_LW38_Green_Scoped", "", "SC_MPML", "Throw", "Put"};
 
         magazines[] = {"BNA_KC_Mag_LW38_Green", "SC_MPML_M_AA"};
         respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "SC_MPML_M_AA"};
 
         backpack = "BNA_KC_Galtorran_Backpack_Heavy_Predef_AA";
     };
-    class BNA_KC_Galtorran_Unit_AA_T2: BNA_KC_Galtorran_Unit_AA
+    class BNA_KC_Galtorran_Unit_AA_T2: BNA_KC_Galtorran_Unit_AT_T2
     {
         displayName = "Veteran Rifleman (AA)";
-        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T2";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T2\Rifleman_AT.png";
-
-        weapons[] = {"BNA_KC_LW38_Green_Scoped", "", "3AS_PLX1_F", "Throw", "Put"};
-        respawnWeapons[] = {"BNA_KC_LW38_Green_Scoped", "", "3AS_PLX1_F", "Throw", "Put"};
 
         magazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK39_AA"};
         respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK39_AA"};
 
-        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T2", "BNA_KC_Galtorran_Vest_Medium", "OPTRE_NVG_HURS_CNM", BASE_LINKED_ITEMS};
         backpack = "BNA_KC_Galtorran_Veteran_Backpack_Heavy_Predef_AA";
     };
-    class BNA_KC_Galtorran_Unit_AA_T3: BNA_KC_Galtorran_Unit_AA_T2
+    class BNA_KC_Galtorran_Unit_AA_T3: BNA_KC_Galtorran_Unit_AT_T3
     {
         displayName = "Elite Rifleman (AA)";
-        editorSubcategory = "BNA_KC_SubCat_Galtorran_Infantry_T3";
-        editorPreview = "\BNA_KC_INDEP\Galtorran\Data\Textures\Previews\T3\Rifleman_AT.png";
-        linkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
-        respawnLinkedItems[] = {"BNA_KC_Galtorran_Helmet_T3", "BNA_KC_Galtorran_Vest_Heavy", BASE_LINKED_ITEMS};
+
+        magazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK39_AA"};
+        respawnMagazines[] = {"BNA_KC_Mag_LW38_Green", "3AS_JLTS_MK39_AA"};
+
         backpack = "BNA_KC_Galtorran_Elite_Backpack_Heavy_Predef_AA";
     };
 
