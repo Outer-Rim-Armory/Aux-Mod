@@ -566,6 +566,18 @@ class CfgWeapons
 		};
 	};
 
+    class 3AS_Mass_Driver_Cannon;
+    class BNA_KC_ATTE_MassDriver: 3AS_Mass_Driver_Cannon
+    {
+        displayName = "Mass Driver Cannon";
+    };
+
+    class 3AS_ATTE_Turret;
+    class BNA_KC_ATTE_Turrets: 3AS_ATTE_Turret
+    {
+        displayName = "Point Defense Turret";
+    };
+
     class Cannon_30mm_Plane_CAS_02_F;
     class 3AS_ARC_Light_Canon: Cannon_30mm_Plane_CAS_02_F
     {

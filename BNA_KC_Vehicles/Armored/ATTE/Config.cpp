@@ -4,10 +4,20 @@
 
 class CfgVehicles
 {
-    class Tank_F;
+    class Tank;
+    class Tank_F: Tank
+    {
+        class Turrets;
+    };
     class 3as_ATTE_base: Tank_F
     {
         class UserActions;
+        class Turrets: Turrets
+        {
+            class MainTurretFront;
+            class MainTurretBack;
+            class MainTurretTop;
+        };
         class VehicleTransport
         {
             class Carrier;
@@ -93,6 +103,47 @@ class CfgVehicles
 
                 condition = "ace_player == currentPilot this;";
                 statement = "playSound3D ['BNA_KC_Vehicles\VehicleSounds\Data\Audio\ATTE\alarm.ogg', this, false, getPosASL this, 5, 1, 100];";
+            };
+        };
+
+        class Turrets: Turrets
+        {
+            class MainTurretFront: MainTurretFront
+            {
+                weapons[] = {"BNA_KC_ATTE_Turrets"};
+                magazines[] =
+                {
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells"
+                };
+            };
+            class MainTurretBack: MainTurretBack
+            {
+                weapons[] = {"BNA_KC_ATTE_Turrets"};
+                magazines[] =
+                {
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells"
+                };
+            };
+            class MainTurretTop: MainTurretTop
+            {
+                weapons[] = {"BNA_KC_ATTE_MassDriver", "SmokeLauncher"};
+                magazines[] =
+                {
+                    "3AS_30Rnd_Mass_Driver_shells",
+                    "3AS_30Rnd_Mass_Driver_shells",
+                    "3AS_30Rnd_Mass_Driver_shells",
+                    "SmokeLauncherMag"
+                };
             };
         };
 
