@@ -213,11 +213,10 @@ class BNA_KC_Unit_Keeli: BNA_KC_Unit_Phase2_Base
 };
 class BNA_KC_Unit_Keeli_CamoBrown: BNA_KC_Unit_Phase2_Base
 {
-    // Editor Attributes
-    editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Keeli_CamoBrown.jpg";
+    // Scope
+    scope = 1;
+    scopeCurator = 0;
 
-    displayName = "Keeli (Brown Camo)";
     uniformClass = "BNA_KC_Uniform_Keeli_CamoBrown";
     hiddenSelectionsTextures[] =
     {
@@ -225,40 +224,19 @@ class BNA_KC_Unit_Keeli_CamoBrown: BNA_KC_Unit_Phase2_Base
         "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Camo\Brown\Uniform_Keeli_CamoBrown_Lower.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
-
-    // Loadout
-    linkedItems[] =
-    {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoBrown", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
-    };
-    respawnLinkedItems[] =
-    {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoBrown", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
-    };
 };
 class BNA_KC_Unit_Keeli_CamoGrey: BNA_KC_Unit_Phase2_Base
 {
-    // Editor Attributes
-    editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Keeli_CamoGrey.jpg";
+    // Scope
+    scope = 1;
+    scopeCurator = 0;
 
-    displayName = "Keeli (Grey Camo)";
     uniformClass = "BNA_KC_Uniform_Keeli_CamoGrey";
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Camo\Grey\Uniform_Keeli_CamoGrey_Upper.paa",
         "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Camo\Grey\Uniform_Keeli_CamoGrey_Lower.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-    };
-
-    // Loadout
-    linkedItems[] =
-    {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoGrey", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
-    };
-    respawnLinkedItems[] =
-    {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoGrey", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
