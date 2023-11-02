@@ -1,10 +1,10 @@
 /*
-Custom Visor Color Names
-* Red   : Crimson
-* Blue  : Bacta
-* Purple: Plasma
-* Green : Kyber
-*/
+ * Custom Visor Color Names
+ * Red   : Crimson
+ * Blue  : Bacta
+ * Purple: Plasma
+ * Green : Kyber
+ */
 
 
 // ┌───────────────────┐
