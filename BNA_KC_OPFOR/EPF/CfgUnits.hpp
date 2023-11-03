@@ -9,6 +9,8 @@ class BNA_KC_EPF_Unit_Rifleman: BNA_KC_TU_Unit_Rifleman
     linkedItems[] = {"BNA_KC_EPF_Helmet", "BNA_KC_EPF_Vest", LINKED_ITEMS_RADIO};
     respawnLinkedItems[] = {"BNA_KC_EPF_Helmet", "BNA_KC_EPF_Vest", LINKED_ITEMS_RADIO};
     backpack = "BNA_KC_EPF_Backpack_Predef_Rifleman";
+
+    class EventHandlers;
 };
 
 class BNA_KC_EPF_Unit_Rifleman_Shield: BNA_KC_EPF_Unit_Rifleman
@@ -118,6 +120,8 @@ class BNA_KC_EPF_Unit_Presidente: BNA_KC_EPF_Unit_Rifleman
         "\a3\characters_f_aow\uniforms\data\Ribbon_01_US_CO.paa"
     };
 
+    identityTypes[] = {"ElPresidente", "G_NATO_default"};
+
     weapons[] = {};
     respawnWeapons[] = {};
     magazines[] = {};
@@ -127,4 +131,9 @@ class BNA_KC_EPF_Unit_Presidente: BNA_KC_EPF_Unit_Rifleman
     linkedItems[] = {"BNA_KC_EPF_Helmet_Presidente", "OPTRE_Glasses_Cigar", LINKED_ITEMS_RADIO};
     respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_Presidente", "OPTRE_Glasses_Cigar", LINKED_ITEMS_RADIO};
     backpack = "";
+
+    class EventHandlers: EventHandlers
+    {
+        init = "(_this select 0) setIdentity 'ElPresidente'";
+    };
 };

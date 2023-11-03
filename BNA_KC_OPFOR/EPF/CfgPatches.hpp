@@ -21,6 +21,8 @@ class CfgPatches
                 // Officer Cap
             "A3_Characters_F_AoW",
                 // Officer Uniform
+            "A3_Characters_F_Heads",
+                // Persian Head 1
             "BNA_KC_Weapons_E5",
                 // E-5
             "BNA_KC_Weapons_E5C",
