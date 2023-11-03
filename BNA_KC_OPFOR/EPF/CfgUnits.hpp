@@ -120,7 +120,7 @@ class BNA_KC_EPF_Unit_Presidente: BNA_KC_EPF_Unit_Rifleman
         "\a3\characters_f_aow\uniforms\data\Ribbon_01_US_CO.paa"
     };
 
-    identityTypes[] = {"ElPresidente", "G_NATO_default"};
+    identityTypes[] = {"ElPresidente"};
 
     weapons[] = {};
     respawnWeapons[] = {};
