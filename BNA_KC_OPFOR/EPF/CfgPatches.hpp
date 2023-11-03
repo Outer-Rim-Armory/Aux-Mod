@@ -17,6 +17,10 @@ class CfgPatches
                 // Uniform textures
                 // Vests
                 // Backpacks
+            "A3_Characters_F_AoW_Headgear",
+                // Officer Cap
+            "A3_Characters_F_AoW",
+                // Officer Uniform
             "BNA_KC_Weapons_E5",
                 // E-5
             "BNA_KC_Weapons_E5C",
@@ -99,9 +103,11 @@ class CfgPatches
             "BNA_KC_EPF_Helmet_Visor",
             "BNA_KC_EPF_Helmet_Visor_Goggles",
             "BNA_KC_EPF_Helmet_Heavy",
+            "BNA_KC_EPF_Helmet_Presidente",
 
             // Uniforms
             "BNA_KC_EPF_Uniform",
+            "BNA_KC_EPF_Uniform_Presidente",
 
             // Vests
             "BNA_KC_EPF_Vest",

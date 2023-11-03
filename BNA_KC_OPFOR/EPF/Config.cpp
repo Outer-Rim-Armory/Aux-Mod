@@ -13,6 +13,7 @@ class CfgWeapons
     {
         displayName = "[EPF] Helmet";
         hiddenSelectionsTextures[] = {"\sc_equipment\data\enforcer\textures\helmet_olive_co.paa"};
+        class ItemInfo;
     };
 
     class BNA_KC_TU_Helmet_Assault;
@@ -47,6 +48,22 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {"sc_equipment\data\watchdog\textures\helmet_co.paa"};
     };
 
+    class BNA_KC_EPF_Helmet_Presidente: BNA_KC_EPF_Helmet
+    {
+        displayName = "[EPF] El Presidente Cap";
+        model = "\A3\Characters_F_AoW\Headgear\ParadeDressCap_01_F.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\a3\Characters_F_AoW\Headgear\Data\ParadeDressCap_01_US_F_CO.paa"};
+        hiddenSelectionsMaterials[] = {"\a3\Characters_F_AoW\Headgear\Data\ParadeDressCap_01_US_F.rvmat"};
+        picture = "\A3\Characters_F_AoW\Headgear\Data\UI\icon_H_ParadeDressCap_01_US_F_CA.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo"};
+            uniformModel = "\A3\Characters_F_AoW\Headgear\ParadeDressCap_01_F.p3d";
+        };
+    };
+
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
@@ -58,10 +75,18 @@ class CfgWeapons
     class BNA_KC_EPF_Uniform: BNA_KC_TU_Uniform
     {
         displayName = "[EPF] Uniform";
-
         class ItemInfo: ItemInfo
         {
             uniformClass = "BNA_KC_EPF_Unit_Base";
+        };
+    };
+
+    class BNA_KC_EPF_Uniform_Presidente: BNA_KC_EPF_Uniform
+    {
+        displayName = "[EPF] El Preidente Uniform";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_EPF_Unit_Presidente";
         };
     };
 
