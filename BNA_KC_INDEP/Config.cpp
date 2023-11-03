@@ -49,6 +49,8 @@ class CfgVehicles
         respawnMagazines[] = {};
         items[] = {};
         respawnItems[] = {};
+        linkedItems[] = {};
+        respawnLinkedItems[] = {};
         backpack = "";
     };
 

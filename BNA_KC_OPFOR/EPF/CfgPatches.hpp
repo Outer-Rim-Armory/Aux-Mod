@@ -62,6 +62,7 @@ class CfgPatches
             "BNA_KC_EPF_Unit_AssaultMedium",
             "BNA_KC_EPF_Unit_SL",
             "BNA_KC_EPF_Unit_Melee",
+            "BNA_KC_EPF_Unit_Presidente",
 
             // Backpacks
             "BNA_KC_EPF_Backpack",

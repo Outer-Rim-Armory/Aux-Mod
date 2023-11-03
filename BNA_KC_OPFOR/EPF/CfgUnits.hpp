@@ -98,3 +98,33 @@ class BNA_KC_EPF_Unit_Melee: BNA_KC_TU_Unit_Melee
     respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_Visor", "BNA_KC_EPF_Vest", LINKED_ITEMS_RADIO};
     backpack = "BNA_KC_EPF_Backpack_Heavy";
 };
+
+class BNA_KC_EPF_Unit_Presidente: BNA_KC_EPF_Unit_Rifleman
+{
+    // Editor Properties
+    editorSubcategory = "BNA_KC_SubCat_Special";
+
+    displayName = "El Presidente"
+    uniformClass = "BNA_KC_EPF_Uniform_Presidente";
+
+    model = "\a3\Characters_F_AoW\Uniforms\ParadeUniform_01_F";
+    hiddenSelections[] = {"camo1", "camo2", "camo3", "ribbon", "nametag"};
+    hiddenSelectionsMaterials[] = {"", "", "\a3\Characters_F_AoW\Uniforms\Data\ParadeUniform_Decorated_01_US.rvmat"};
+    hiddenSelectionsTextures[] =
+    {
+        "\a3\Characters_F_AoW\Uniforms\Data\ParadeUniform_01_US_CO.paa",
+        "\a3\Characters_F_AoW\Uniforms\Data\ParadeUniform_01_US_CO.paa",
+        "\a3\characters_f_aow\uniforms\data\ParadeUniform_Decorated_01_US_CO.paa",
+        "\a3\characters_f_aow\uniforms\data\Ribbon_01_US_CO.paa"
+    };
+
+    weapons[] = {};
+    respawnWeapons[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    items[] = {};
+    respawnItems[] = {};
+    linkedItems[] = {"BNA_KC_EPF_Helmet_Presidente", "OPTRE_Glasses_Cigar", LINKED_ITEMS_RADIO};
+    respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_Presidente", "OPTRE_Glasses_Cigar", LINKED_ITEMS_RADIO};
+    backpack = "";
+};
