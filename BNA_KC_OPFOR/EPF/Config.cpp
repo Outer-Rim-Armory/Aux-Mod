@@ -85,7 +85,7 @@ class CfgWeapons
         displayName = "[EPF] Uniform";
         class ItemInfo: ItemInfo
         {
-            uniformClass = "BNA_KC_EPF_Unit_Base";
+            uniformClass = "BNA_KC_EPF_Unit_Rifleman";
         };
     };
 
