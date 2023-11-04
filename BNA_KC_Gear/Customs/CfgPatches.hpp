@@ -99,6 +99,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Keeli_Crimson",
             "BNA_KC_Helmet_Phase2_Lou",
             "BNA_KC_Helmet_Phase2_Lou_Plasma",
+            "BNA_KC_Helmet_Phase2_Leon",
             "BNA_KC_Helmet_Phase2_Ox",
             "BNA_KC_Helmet_Phase2_Patriot",
             "BNA_KC_Helmet_Phase2_Ponds",

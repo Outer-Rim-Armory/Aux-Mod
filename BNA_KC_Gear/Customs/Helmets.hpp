@@ -771,6 +771,16 @@ class BNA_KC_Helmet_Phase2_Keeli_CamoGrey_Crimson: BNA_KC_Helmet_Phase2_Keeli_Ca
     };
 };
 
+class BNA_KC_Helmet_Phase2_Leon: BNA_KC_Helmet_Phase2_Axel
+{
+    displayName = "[KC] INF P2 Helm ('Leon')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Leon.paa",
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
 class BNA_KC_Helmet_Phase2_Lou: BNA_KC_Helmet_Phase2_Axel
 {
     BNAKC_Helmet_Toggle = 1;
