@@ -83,7 +83,7 @@ class CfgWeapons
 
     class BNA_KC_EPF_Uniform_Presidente: BNA_KC_EPF_Uniform
     {
-        displayName = "[EPF] El Preidente Uniform";
+        displayName = "[EPF] El Presidente Uniform";
         class ItemInfo: ItemInfo
         {
             uniformClass = "BNA_KC_EPF_Unit_Presidente";
