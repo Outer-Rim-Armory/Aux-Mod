@@ -21,7 +21,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "Model 190 Mortar System";
+        displayName = "[KC] Model 190 Mortar System";
         picture = "\ls_weapons\_ui\rps6_ca.paa"; // Temp picture
         drySound[] = {};
 
