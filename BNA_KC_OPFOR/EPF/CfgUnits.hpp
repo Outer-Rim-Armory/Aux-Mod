@@ -111,7 +111,6 @@ class BNA_KC_EPF_Unit_Presidente: BNA_KC_EPF_Unit_Rifleman
 
     model = "\a3\Characters_F_AoW\Uniforms\ParadeUniform_01_F";
     hiddenSelections[] = {"camo1", "camo2", "camo3", "ribbon", "nametag"};
-    hiddenSelectionsMaterials[] = {"", "", "\a3\Characters_F_AoW\Uniforms\Data\ParadeUniform_Decorated_01_US.rvmat"};
     hiddenSelectionsTextures[] =
     {
         "\a3\Characters_F_AoW\Uniforms\Data\ParadeUniform_01_US_CO.paa",
@@ -119,6 +118,7 @@ class BNA_KC_EPF_Unit_Presidente: BNA_KC_EPF_Unit_Rifleman
         "\a3\characters_f_aow\uniforms\data\ParadeUniform_Decorated_01_US_CO.paa",
         "\a3\characters_f_aow\uniforms\data\Ribbon_01_US_CO.paa"
     };
+    hiddenSelectionsMaterials[] = {"", "", "\a3\Characters_F_AoW\Uniforms\Data\ParadeUniform_Decorated_01_US.rvmat"};
 
     identityTypes[] = {"ElPresidente"};
 
