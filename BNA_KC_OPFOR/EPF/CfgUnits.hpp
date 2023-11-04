@@ -162,7 +162,7 @@ class BNA_KC_EPF_Unit_General: BNA_KC_EPF_Unit_Presidente
     };
     items[] = {};
     respawnItems[] = {};
-    linkedItems[] = {"BNA_KC_EPF_Helmet_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
-    respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
+    linkedItems[] = {"BNA_KC_EPF_Helmet_General", "BNA_KC_EPF_Vest_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
+    respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_General", "BNA_KC_EPF_Vest_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
     backpack = "";
 };

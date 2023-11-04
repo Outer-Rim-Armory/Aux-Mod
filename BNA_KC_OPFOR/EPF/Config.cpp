@@ -115,6 +115,7 @@ class CfgWeapons
     {
         displayName = "[EPF] Light Vest";
         hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\vest_co.paa"};
+        class ItemInfo;
     };
 
     class BNA_KC_TU_Vest_Medium;
@@ -140,6 +141,24 @@ class CfgWeapons
     {
         displayName = "[EPF] Heavy Assault Vest";
         hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\vest_co.paa"};
+    };
+
+    class BNA_KC_EPF_Vest_General: BNA_KC_EPF_Vest
+    {
+        displayName = "[EPF] El General Vest";
+        model = "\sc_equipment\data\samurai\sam_vest_light.p3d";
+        hiddenSelections[] = {"camo", "camo1"};
+        hiddenSelectionsTextures[] =
+        {
+            "\sc_equipment\data\samurai\textures\torso_black_co.paa",
+            "\sc_equipment\data\samurai\textures\legs_black_co.paa"
+        };
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo", "camo1"};
+            uniformModel = "\sc_equipment\data\samurai\sam_vest_light.p3d";
+        };
     };
 };
 
