@@ -208,4 +208,11 @@ class CfgIdentities
         pitch = 1;
         speaker = "Male01ENG";
     };
+
+    class ElGeneral: ElPresidente
+    {
+        face = "GreekHead_A3_04";
+        name = "El General";
+        nameSound = "El General";
+    };
 };

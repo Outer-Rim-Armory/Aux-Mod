@@ -148,6 +148,8 @@ class BNA_KC_EPF_Unit_General: BNA_KC_EPF_Unit_Presidente
     hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_black_co.paa"};
     hiddenSelectionsMaterials[] = {"\a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat"};
 
+    identityTypes[] = {"ElPresidente"};
+
     weapons[] = {"BNA_KC_DC17M", "BNA_KC_DC15SA", "Throw", "Put"};
     respawnWeapons[] = {"BNA_KC_DC17M", "BNA_KC_DC15SA", "Throw", "Put"};
     magazines[] =
@@ -169,4 +171,9 @@ class BNA_KC_EPF_Unit_General: BNA_KC_EPF_Unit_Presidente
     linkedItems[] = {"BNA_KC_EPF_Helmet_General", "BNA_KC_EPF_Vest_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
     respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_General", "BNA_KC_EPF_Vest_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
     backpack = "";
+
+    class EventHandlers: EventHandlers
+    {
+        init = "(_this select 0) setIdentity 'ElGeneral'";
+    };
 };
