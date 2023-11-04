@@ -148,10 +148,18 @@ class BNA_KC_EPF_Unit_General: BNA_KC_EPF_Unit_Presidente
     hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_black_co.paa"};
     hiddenSelectionsMaterials[] = {"\a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat"};
 
-    weapons[] = {"Throw", "Put"};
-    respawnWeapons[] = {"Throw", "Put"};
-    magazines[] = {};
-    respawnMagazines[] = {};
+    weapons[] = {"BNA_KC_DC17M", "BNA_KC_DC15SA", "Throw", "Put"};
+    respawnWeapons[] = {"BNA_KC_DC17M", "BNA_KC_DC15SA", "Throw", "Put"};
+    magazines[] =
+    {
+        "Aux12thFleet_Mag_60Rnd_DC17M",
+        "Aux12thFleet_Mag_7Rnd_DC15SA"
+    };
+    respawnMagazines[] =
+    {
+        "Aux12thFleet_Mag_60Rnd_DC17M",
+        "Aux12thFleet_Mag_7Rnd_DC15SA"
+    };
     items[] = {};
     respawnItems[] = {};
     linkedItems[] = {"BNA_KC_EPF_Helmet_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
