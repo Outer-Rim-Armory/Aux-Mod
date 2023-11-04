@@ -137,3 +137,24 @@ class BNA_KC_EPF_Unit_Presidente: BNA_KC_EPF_Unit_Rifleman
         init = "(_this select 0) setIdentity 'ElPresidente'";
     };
 };
+
+class BNA_KC_EPF_Unit_General: BNA_KC_EPF_Unit_Presidente
+{
+    displayName = "El General"
+    uniformClass = "BNA_KC_EPF_Uniform_General";
+
+    model = "\A3\Characters_F_Exp\Gendarmerie\B_GEN_Commander_F.p3d";
+    hiddenSelections[] = {"camo", "insignia"};
+    hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_black_co.paa"};
+    hiddenSelectionsMaterials[] = {"\a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat"};
+
+    weapons[] = {};
+    respawnWeapons[] = {};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    items[] = {};
+    respawnItems[] = {};
+    linkedItems[] = {"BNA_KC_EPF_Helmet_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
+    respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
+    backpack = "";
+};
