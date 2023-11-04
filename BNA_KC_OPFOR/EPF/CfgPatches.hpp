@@ -23,14 +23,6 @@ class CfgPatches
                 // Officer Uniform
             "A3_Characters_F_Heads",
                 // Persian Head 1
-            "BNA_KC_Weapons_E5",
-                // E-5
-            "BNA_KC_Weapons_E5C",
-                // E-5C
-            "BNA_KC_Weapons_E60R",
-                // E-60R
-            "OPTRE_FC_Weapons_PlasmaGrenade",
-                // Plasma Grenade
             "BNA_KC_Vehicles",
                 // Subcategories
             "BNA_KC_Vehicles_AAT",
