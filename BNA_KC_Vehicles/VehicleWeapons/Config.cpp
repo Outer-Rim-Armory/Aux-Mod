@@ -1,176 +1,6 @@
 #include "CfgPatches.hpp"
 #include "CfgSoundSets.hpp"
-
-
-class CfgAmmo
-{
-    class Sh_120mm_APFSDS_Tracer_Red;
-    class BNA_KC_120_AT_Ammo: Sh_120mm_APFSDS_Tracer_Red
-    {
-        //simulation = "shotShell";
-        model = "swlw_main\Effects\laser_red.p3d";
-        effectfly = "SWLW_plasma_red";
-        coefgravity = 0;
-    };
-
-	class Sh_120mm_HE_Tracer_Red;
-    class BNA_KC_120_HE_Ammo: Sh_120mm_HE_Tracer_Red
-    {
-        //simulation = "shotShell";
-        model = "swlw_main\Effects\laser_red.p3d";
-        effectfly = "SWLW_plasma_red";
-        coefgravity = 0;
-    };
-
-    class Sh_120mm_HEAT_MP_T_Red;
-    class BNA_KC_120_HEAT_Ammo: Sh_120mm_HEAT_MP_T_Red
-    {
-        //simulation = "shotShell";
-        model = "swlw_main\Effects\laser_red.p3d";
-        effectfly = "SWLW_plasma_red";
-        coefgravity = 0;
-    };
-
-    class B_127x99_Ball;
-    class BNA_KC_Coax_Ammo: B_127x99_Ball
-    {
-        model = "ls_weapons_core\Effects\laser_blue.p3d";
-        effectfly = "ls_plasma_blue";
-        coefgravity = 0;
-    };
-
-	class B_20mm_Tracer_Red;
-	class BNA_KC_20mm_Ammo: B_20mm_Tracer_Red
-	{
-		model = "ls_weapons_core\Effects\laser_blue.p3d";
-        effectfly = "ls_plasma_blue";
-        coefgravity = 0;
-	};
-	class Sh_105mm_HEAT_MP;
-	class BNA_KC_105mm_Ammo: Sh_105mm_HEAT_MP
-	{
-		model = "3as\3AS_Weapons\Data\tracer_shell_Green.p3d";
-        coefgravity = 0;
-	};
-	class B_40mm_GPR_Tracer_Red;
-	class BNA_KC_40mm_GPR_Ammo: B_40mm_GPR_Tracer_Red
-	{
-		model = "ls_weapons_core\Effects\laser_blue.p3d";
-        effectfly = "ls_plasma_blue";
-        coefgravity = 0;
-	};
-	class B_40mm_APFSDS_Tracer_Red;
-	class BNA_KC_40mm_APFSDS_Ammo: B_40mm_APFSDS_Tracer_Red
-	{
-        model = "swlw_main\Effects\laser_red.p3d";
-        effectfly = "SWLW_plasma_red";
-        coefgravity = 0;
-	};
-
-    class 3AS_ATRT_bluePlasma;
-    class BNA_KC_ATRT_Turret_Ammo: 3AS_ATRT_bluePlasma
-    {
-        caliber = 6; // How much geometry the bullet can pass through
-        hit = 120;      // Damage when bullet speed is >= typicalSpeed
-        typicalSpeed = 400;
-        coefgravity = 0;
-
-        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
-        effectfly = "JLTS_plasma_blue";
-    };
-};
-
-
-class CfgMagazines
-{
-	class 30Rnd_120mm_HE_shells_Tracer_Red;
-    class BNA_KC_120_HE_Mag: 30Rnd_120mm_HE_shells_Tracer_Red
-    {
-        displayName = "HE Ammunition";
-        displayNameShort = "HE";
-        descriptionShort = "HE";
-        count = 20;
-        ammo = "BNA_KC_120_HE_Ammo";
-    };
-
-    class 20Rnd_120mm_APFSDS_shells_Tracer_Red;
-    class BNA_KC_120_AT_Mag: 20Rnd_120mm_APFSDS_shells_Tracer_Red
-    {
-        displayName = "AP Ammunition";
-        displayNameShort = "AP";
-        descriptionShort = "AP";
-        ammo = "BNA_KC_120_AT_Ammo";
-    };
-
-    class 20Rnd_120mm_HEAT_MP_T_Red;
-    class BNA_KC_120_HEAT_Mag: 20Rnd_120mm_HEAT_MP_T_Red
-    {
-        displayName = "HEAT Ammunition";
-        displayNameShort = "HEAT";
-        descriptionShort = "HEAT";
-        ammo = "BNA_KC_120_HEAT_Ammo";
-    };
-
-    class 100Rnd_127x99_mag_Tracer_Red;
-    class BNA_KC_100rnd_Coax_Mag: 100Rnd_127x99_mag_Tracer_Red
-    {
-        ammo = "BNA_KC_Coax_Ammo";
-        displayName = "100rnd Mag";
-        displayNameShort = "100rnd Mag";
-        descriptionShort = "100rnd Mag";
-        tracersEvery=1;
-    };
-    class BNA_KC_500rnd_Coax_Mag: BNA_KC_100rnd_Coax_Mag
-    {
-        displayName = "500rnd Mag";
-        displayNameShort = "500rnd Mag";
-        descriptionShort = "500rnd Mag";
-
-        count = 500;
-    };
-    class BNA_KC_1000rnd_Coax_Mag: BNA_KC_100rnd_Coax_Mag
-    {
-        displayName = "1000rnd Mag";
-        displayNameShort = "1000rnd Mag";
-        descriptionShort = "1000rnd Mag";
-
-        count = 1000;
-    };
-
-	class 4000Rnd_20mm_Tracer_Red_shells;
-	class BNA_KC_4000rnd_20mm: 4000Rnd_20mm_Tracer_Red_shells
-	{
-		ammo = "BNA_KC_20mm_Ammo";
-		tracersEvery=1;
-	};
-	class 100Rnd_105mm_HEAT_MP;
-	class BNA_KC_100rnd_105mm: 100Rnd_105mm_HEAT_MP
-	{
-		ammo = "BNA_KC_105mm_Ammo";
-		tracersEvery=1;
-	};
-	class 240Rnd_40mm_GPR_Tracer_Red_shells;
-	class BNA_KC_40mm_GPR_240rnd: 240Rnd_40mm_GPR_Tracer_Red_shells
-	{
-		ammo = "BNA_KC_40mm_GPR_Ammo";
-		tracersEvery=1;
-	};
-	class 160Rnd_40mm_APFSDS_Tracer_Red_shells;
-	class BNA_KC_40mm_APFSDS_160rnd: 160Rnd_40mm_APFSDS_Tracer_Red_shells
-	{
-		ammo = "BNA_KC_40mm_APFSDS_Ammo";
-		tracersEvery=1;
-	};
-
-    class 3AS_9999Rnd_ATRT_Mag;
-    class BNA_KC_9999Rnd_ATRT_Turret_Magazine: 3AS_9999Rnd_ATRT_Mag
-    {
-        ammo = "BNA_KC_ATRT_Turret_Ammo";
-        displayName = "[KC] AT-RT Turret Battery Pack";
-        displayNameShort = "";
-        descriptionShort = "Standard battery pack for the AT-RT";
-    };
-};
+#include "CfgAmmo.hpp"
 
 
 class CfgWeapons
@@ -735,6 +565,23 @@ class CfgWeapons
 			};
 		};
 	};
+
+    class 3AS_Mass_Driver_Cannon;
+    class BNA_KC_ATTE_MassDriver: 3AS_Mass_Driver_Cannon
+    {
+        displayName = "Mass Driver Cannon";
+        magazines[] =
+        {
+            "3AS_30Rnd_Mass_Driver_shells",
+            "3AS_10Rnd_Siege_Cannon_HHE_shells"
+        };
+    };
+
+    class 3AS_ATTE_Turret;
+    class BNA_KC_ATTE_Turrets: 3AS_ATTE_Turret
+    {
+        displayName = "Point Defense Turret";
+    };
 
     class Cannon_30mm_Plane_CAS_02_F;
     class 3AS_ARC_Light_Canon: Cannon_30mm_Plane_CAS_02_F

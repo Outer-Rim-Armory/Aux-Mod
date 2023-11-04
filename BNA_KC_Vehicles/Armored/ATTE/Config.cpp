@@ -4,7 +4,25 @@
 
 class CfgVehicles
 {
-    class 3as_ATTE_base;
+    class Tank;
+    class Tank_F: Tank
+    {
+        class Turrets;
+    };
+    class 3as_ATTE_base: Tank_F
+    {
+        class UserActions;
+        class Turrets: Turrets
+        {
+            class MainTurretFront;
+            class MainTurretBack;
+            class MainTurretTop;
+        };
+        class VehicleTransport
+        {
+            class Carrier;
+        };
+    };
     class BNA_KC_ATTE: 3as_ATTE_base
     {
         // Mod Info
@@ -12,8 +30,8 @@ class CfgVehicles
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 1;
-        scopeCurator = 1;
+        scope = 2;
+        scopeCurator = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -28,15 +46,15 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Body.paa",
-            "\3as\3as_atte\data\atte_chasis_co.paa",
-            "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Cockpit.paa",
-            "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Turrets.paa",
-            "\3as\3as_atte\data\atte_underpiping_co.paa",
-            "\3as\3as_atte\data\atte_middleleg_co.paa"
+            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
+            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+            "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
         };
 
-        textureList[] = {"Standard", 0, "Imperial", "KeeliCompany", 1};
+        textureList[] = {"Standard", 1, "Imperial", 0};
         class TextureSources
         {
             class Standard
@@ -46,12 +64,12 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    "\3as\3as_atte\data\atte_hull_TCW_co.paa",
-                    "\3as\3as_atte\data\atte_chasis_co.paa",
-                    "\3as\3as_atte\data\atte_cockpit_TCW_co.paa",
-                    "\3as\3as_atte\data\atte_turrets_TCW_co.paa",
-                    "\3as\3as_atte\data\atte_underpiping_co.paa",
-                    "\3as\3as_atte\data\atte_middleleg_TCW_co.paa"
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
                 };
             };
             class Imperial: Standard
@@ -59,32 +77,17 @@ class CfgVehicles
                 displayName = "Imperial";
                 textures[] =
                 {
-                    "\3as\3as_atte\data\atte_hull_Imp_co.paa",
-                    "\3as\3as_atte\data\atte_chasis_co.paa",
-                    "\3as\3as_atte\data\atte_cockpit_Imp_co.paa",
-                    "\3as\3as_atte\data\atte_turrets_Imp_co.paa",
-                    "\3as\3as_atte\data\atte_underpiping_co.paa",
-                    "\3as\3as_atte\data\atte_middleleg_Imp_co.paa"
-                };
-            };
-            class KeeliCompany: Standard
-            {
-                author = "Dexus";
-                displayName = "Keeli Company";
-                factions[] = {};
-                textures[] =
-                {
-                    "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Body.paa",
-                    "\3as\3as_atte\data\atte_chasis_co.paa",
-                    "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Cockpit.paa",
-                    "\BNA_KC_Vehicles\Armored\ATTE\Data\Textures\KeeliCompany\Turrets.paa",
-                    "\3as\3as_atte\data\atte_underpiping_co.paa",
-                    "\3as\3as_atte\data\atte_middleleg_co.paa"
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_Imp_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_Imp_co.paa",
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
                 };
             };
         };
 
-        class UserActions
+        class UserActions: UserActions
         {
             class PlayAlarm
             {
@@ -103,48 +106,45 @@ class CfgVehicles
             };
         };
 
-        // Increase headlight brightness
-        class Reflectors
+        class Turrets: Turrets
         {
-            class Left
+            class MainTurretFront: MainTurretFront
             {
-                color[] = {1900, 1800, 1700};
-                ambient[] = {5, 5, 5};
-                intensity = 25;
-
-                innerAngle = 45;
-                outerAngle = 139;
-                coneFadeCoef = 10;
-
-                dayLight = 0;
-
-                size = 1;
-                flareSize = 0;
-                useFlare = 0;
-
-                hitpoint = "ftl_gun";
-                direction = "Light_L_end";
-                position = "ftl_gun";
-                selection = "ftl_gun";
+                weapons[] = {"BNA_KC_ATTE_Turrets"};
+                magazines[] =
+                {
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells"
+                };
             };
-
-            class Left2: Left
+            class MainTurretBack: MainTurretBack
             {
-                hitpoint = "ftl_gun";
-                position = "ftl_gun";
+                weapons[] = {"BNA_KC_ATTE_Turrets"};
+                magazines[] =
+                {
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "3AS_250Rnd_ATTE_30mm_MP_shells"
+                };
             };
-
-            class Right: Left
+            class MainTurretTop: MainTurretTop
             {
-                direction = "Light_R_end";
-                hitpoint = "ftr_gun";
-                position = "ftr_gun";
-                selection = "ftr_gun";
-            };
-            class Right2: Right
-            {
-                hitpoint = "ftr_gun";
-                position = "ftr_gun";
+                weapons[] = {"BNA_KC_ATTE_MassDriver", "SmokeLauncher"};
+                magazines[] =
+                {
+                    "3AS_30Rnd_Mass_Driver_shells",
+                    "3AS_30Rnd_Mass_Driver_shells",
+                    "3AS_30Rnd_Mass_Driver_shells",
+                    "3AS_10Rnd_Siege_Cannon_HHE_shells",
+                    "SmokeLauncherMag"
+                };
             };
         };
 
@@ -152,17 +152,40 @@ class CfgVehicles
 
         // Makes the 3AS AT-TE compatible with the vanilla vehicle-in-vehicle system
         // Credit: CrimzonKat @ https://ptb.discord.com/channels/461042140756180992/1062396582848372807
-        class VehicleTransport
+        class VehicleTransport: VehicleTransport
         {
             class Cargo
             {
-                parachuteClass = B_Parachute_02_F;
+                parachuteClass = "B_Parachute_02_F";
                 parachuteHeightLimit = 40;
                 canBeTransported = 1;
-                dimensions[] = { "ftr_muzzle", "btl_muzzle" };
+                dimensions[] = {"ftr_muzzle", "btl_muzzle"};
 
                 BNA_KC_SpecialLoad = 1;
             };
+            class Carrier: Carrier
+            {
+                /*
+                limit1: [-1.53034, -1.97604, 4.07491] (front)
+                limit2: [-1.80491, -5.06474, 3.0456] (back)
+                */
+                cargoBayDimensions[] = {{-1.53034, 1, 4.07491}, "limit2"};
+            };
         };
+    };
+
+    class BNA_KC_ATTE_Command: BNA_KC_ATTE
+    {
+        displayName = "AT-TE (Command)";
+        animationList[] =
+        {
+            "ShowATTENuts", 1,
+            "ShowATTEIntPassenger", 1,
+            "ShowATTEIntBackPassenger", 1,
+            "ShowATTEIntCommand", 0,
+            "ShowATTERebelMod", 1
+        };
+
+        tf_range = 45000; // 1.5x range
     };
 };
