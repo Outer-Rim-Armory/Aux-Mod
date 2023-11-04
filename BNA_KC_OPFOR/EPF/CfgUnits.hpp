@@ -152,16 +152,20 @@ class BNA_KC_EPF_Unit_General: BNA_KC_EPF_Unit_Presidente
     respawnWeapons[] = {"BNA_KC_DC17M", "BNA_KC_DC15SA", "Throw", "Put"};
     magazines[] =
     {
-        "Aux12thFleet_Mag_60Rnd_DC17M",
-        "Aux12thFleet_Mag_7Rnd_DC15SA"
+        ITEM_10("Aux12thFleet_Mag_60Rnd_DC17M"),
+        ITEM_4("Aux12thFleet_Mag_7Rnd_DC15SA"),
+        ITEM_2("SmokeShell"),
+        ITEM_2("SC_IG3")
     };
     respawnMagazines[] =
     {
-        "Aux12thFleet_Mag_60Rnd_DC17M",
-        "Aux12thFleet_Mag_7Rnd_DC15SA"
+        ITEM_10("Aux12thFleet_Mag_60Rnd_DC17M"),
+        ITEM_4("Aux12thFleet_Mag_7Rnd_DC15SA"),
+        ITEM_2("SmokeShell"),
+        ITEM_2("SC_IG3")
     };
-    items[] = {};
-    respawnItems[] = {};
+    items[] = {"FirstAidKit"};
+    respawnItems[] = {"FirstAidKit"};
     linkedItems[] = {"BNA_KC_EPF_Helmet_General", "BNA_KC_EPF_Vest_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
     respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_General", "BNA_KC_EPF_Vest_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
     backpack = "";
