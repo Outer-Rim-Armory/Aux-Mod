@@ -122,8 +122,8 @@ class BNA_KC_EPF_Unit_Presidente: BNA_KC_EPF_Unit_Rifleman
 
     identityTypes[] = {"ElPresidente"};
 
-    weapons[] = {};
-    respawnWeapons[] = {};
+    weapons[] = {"Throw", "Put"};
+    respawnWeapons[] = {"Throw", "Put"};
     magazines[] = {};
     respawnMagazines[] = {};
     items[] = {};
@@ -148,8 +148,8 @@ class BNA_KC_EPF_Unit_General: BNA_KC_EPF_Unit_Presidente
     hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_black_co.paa"};
     hiddenSelectionsMaterials[] = {"\a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat"};
 
-    weapons[] = {};
-    respawnWeapons[] = {};
+    weapons[] = {"Throw", "Put"};
+    respawnWeapons[] = {"Throw", "Put"};
     magazines[] = {};
     respawnMagazines[] = {};
     items[] = {};
