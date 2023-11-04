@@ -64,6 +64,14 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_EPF_Helmet_General: BNA_KC_EPF_Helmet_Presidente
+    {
+        displayName = "[EPF] El General Cap";
+        hiddenSelectionsTextures[] = {"\a3\Characters_F_AoW\Headgear\Data\ParadeDressCap_01_AAF_F_CO.paa"};
+        hiddenSelectionsMaterials[] = {"\a3\Characters_F_AoW\Headgear\Data\ParadeDressCap_01_AAF_F.rvmat"};
+        picture = "\A3\Characters_F_AoW\Headgear\Data\UI\icon_H_ParadeDressCap_01_AAF_F_CA.paa";
+    };
+
     // ┌────────────────────┐
     // │      Uniforms      │
     // └────────────────────┘
@@ -87,6 +95,15 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformClass = "BNA_KC_EPF_Unit_Presidente";
+        };
+    };
+
+    class BNA_KC_EPF_Uniform_General: BNA_KC_EPF_Uniform
+    {
+        displayName = "[EPF] El General Uniform";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_EPF_Unit_General";
         };
     };
 

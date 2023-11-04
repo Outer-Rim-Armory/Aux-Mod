@@ -107,10 +107,12 @@ class CfgPatches
             "BNA_KC_EPF_Helmet_Visor_Goggles",
             "BNA_KC_EPF_Helmet_Heavy",
             "BNA_KC_EPF_Helmet_Presidente",
+            "BNA_KC_EPF_Helmet_General",
 
             // Uniforms
             "BNA_KC_EPF_Uniform",
             "BNA_KC_EPF_Uniform_Presidente",
+            "BNA_KC_EPF_Uniform_General",
 
             // Vests
             "BNA_KC_EPF_Vest",
