@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "Macros.hpp"
 
 
 class CfgWeapons
@@ -42,6 +43,8 @@ class CfgVehicles
     {
         displayName = "INDEP Unit Base";
         uniformClass = "BNA_KC_INDEP_Uniform_Base";
+
+        modelSides[] = {INDEP};
 
         weapons[] = {"Throw", "Put"};
         respawnWeapons[] = {"Throw", "Put"};
