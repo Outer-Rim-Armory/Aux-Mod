@@ -142,6 +142,7 @@ class CfgVehicles
                     "3AS_30Rnd_Mass_Driver_shells",
                     "3AS_30Rnd_Mass_Driver_shells",
                     "3AS_30Rnd_Mass_Driver_shells",
+                    "3AS_10Rnd_Siege_Cannon_HHE_shells",
                     "SmokeLauncherMag"
                 };
             };

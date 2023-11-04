@@ -570,6 +570,11 @@ class CfgWeapons
     class BNA_KC_ATTE_MassDriver: 3AS_Mass_Driver_Cannon
     {
         displayName = "Mass Driver Cannon";
+        magazines[] =
+        {
+            "3AS_30Rnd_Mass_Driver_shells",
+            "3AS_10Rnd_Siege_Cannon_HHE_shells"
+        };
     };
 
     class 3AS_ATTE_Turret;
