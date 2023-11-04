@@ -17,14 +17,12 @@ class CfgPatches
                 // Uniform textures
                 // Vests
                 // Backpacks
-            "BNA_KC_Weapons_E5",
-                // E-5
-            "BNA_KC_Weapons_E5C",
-                // E-5C
-            "BNA_KC_Weapons_E60R",
-                // E-60R
-            "OPTRE_FC_Weapons_PlasmaGrenade",
-                // Plasma Grenade
+            "A3_Characters_F_AoW_Headgear",
+                // Officer Cap
+            "A3_Characters_F_AoW",
+                // Officer Uniform
+            "A3_Characters_F_Heads",
+                // Persian Head 1
             "BNA_KC_Vehicles",
                 // Subcategories
             "BNA_KC_Vehicles_AAT",
@@ -58,6 +56,7 @@ class CfgPatches
             "BNA_KC_EPF_Unit_AssaultMedium",
             "BNA_KC_EPF_Unit_SL",
             "BNA_KC_EPF_Unit_Melee",
+            "BNA_KC_EPF_Unit_Presidente",
 
             // Backpacks
             "BNA_KC_EPF_Backpack",
@@ -99,15 +98,20 @@ class CfgPatches
             "BNA_KC_EPF_Helmet_Visor",
             "BNA_KC_EPF_Helmet_Visor_Goggles",
             "BNA_KC_EPF_Helmet_Heavy",
+            "BNA_KC_EPF_Helmet_Presidente",
+            "BNA_KC_EPF_Helmet_General",
 
             // Uniforms
             "BNA_KC_EPF_Uniform",
+            "BNA_KC_EPF_Uniform_Presidente",
+            "BNA_KC_EPF_Uniform_General",
 
             // Vests
             "BNA_KC_EPF_Vest",
             "BNA_KC_EPF_Vest_Medium",
             "BNA_KC_EPF_Vest_AssaultMedium",
-            "BNA_KC_EPF_Vest_AssaultHeavy"
+            "BNA_KC_EPF_Vest_AssaultHeavy",
+            "BNA_KC_EPF_Vest_General"
         };
 
         skipWhenMissingDependencies = 1;

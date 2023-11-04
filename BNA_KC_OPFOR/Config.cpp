@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "Macros.hpp"
 
 
 class CfgWeapons
@@ -44,12 +45,16 @@ class CfgVehicles
         displayName = "OPFOR Unit Base";
         uniformClass = "BNA_KC_OPFOR_Uniform_Base";
 
-        weapons[] = {};
-        respawnWeapons[] = {};
+        modelSides[] = {OPFOR};
+
+        weapons[] = {"Throw", "Put"};
+        respawnWeapons[] = {"Throw", "Put"};
         magazines[] = {};
         respawnMagazines[] = {};
         items[] = {};
         respawnItems[] = {};
+        linkedItems[] = {};
+        respawnLinkedItems[] = {};
         backpack = "";
     };
 

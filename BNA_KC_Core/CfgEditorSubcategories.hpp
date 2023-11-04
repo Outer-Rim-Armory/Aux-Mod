@@ -17,6 +17,10 @@ class CfgEditorSubcategories
     {
         displayName = "Special Forces";
     };
+    class BNA_KC_SubCat_Special: BNA_KC_SubCat_Infantry
+    {
+        displayName = "Special"; // Used for things like faction officers
+    };
 
     // Ground Vehicles
     class BNA_KC_SubCat_Tanks: BNA_KC_SubCat_Infantry

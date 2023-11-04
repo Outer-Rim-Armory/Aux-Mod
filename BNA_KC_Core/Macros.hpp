@@ -47,3 +47,8 @@
 // Armor Macros
 #define HEARING_PROTECTION_CREW ace_hearing_lowerVolume = 0.6; \
 ace_hearing_protection = 0.85;
+
+#define OPFOR 0
+#define BLUFOR 1
+#define INDEP 2
+#define CIVILIAN 3

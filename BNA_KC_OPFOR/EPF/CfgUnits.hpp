@@ -9,6 +9,8 @@ class BNA_KC_EPF_Unit_Rifleman: BNA_KC_TU_Unit_Rifleman
     linkedItems[] = {"BNA_KC_EPF_Helmet", "BNA_KC_EPF_Vest", LINKED_ITEMS_RADIO};
     respawnLinkedItems[] = {"BNA_KC_EPF_Helmet", "BNA_KC_EPF_Vest", LINKED_ITEMS_RADIO};
     backpack = "BNA_KC_EPF_Backpack_Predef_Rifleman";
+
+    class EventHandlers;
 };
 
 class BNA_KC_EPF_Unit_Rifleman_Shield: BNA_KC_EPF_Unit_Rifleman
@@ -97,4 +99,81 @@ class BNA_KC_EPF_Unit_Melee: BNA_KC_TU_Unit_Melee
     linkedItems[] = {"BNA_KC_EPF_Helmet_Visor", "BNA_KC_EPF_Vest", LINKED_ITEMS_RADIO};
     respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_Visor", "BNA_KC_EPF_Vest", LINKED_ITEMS_RADIO};
     backpack = "BNA_KC_EPF_Backpack_Heavy";
+};
+
+class BNA_KC_EPF_Unit_Presidente: BNA_KC_EPF_Unit_Rifleman
+{
+    // Editor Properties
+    editorSubcategory = "BNA_KC_SubCat_Special";
+
+    displayName = "El Presidente"
+    uniformClass = "BNA_KC_EPF_Uniform_Presidente";
+
+    model = "\a3\Characters_F_AoW\Uniforms\ParadeUniform_01_F";
+    hiddenSelections[] = {"camo1", "camo2", "camo3", "ribbon", "nametag"};
+    hiddenSelectionsTextures[] =
+    {
+        "\a3\Characters_F_AoW\Uniforms\Data\ParadeUniform_01_US_CO.paa",
+        "\a3\Characters_F_AoW\Uniforms\Data\ParadeUniform_01_US_CO.paa",
+        "\a3\characters_f_aow\uniforms\data\ParadeUniform_Decorated_01_US_CO.paa",
+        "\a3\characters_f_aow\uniforms\data\Ribbon_01_US_CO.paa"
+    };
+    hiddenSelectionsMaterials[] = {"", "", "\a3\Characters_F_AoW\Uniforms\Data\ParadeUniform_Decorated_01_US.rvmat"};
+
+    identityTypes[] = {"ElPresidente"};
+
+    weapons[] = {"Throw", "Put"};
+    respawnWeapons[] = {"Throw", "Put"};
+    magazines[] = {};
+    respawnMagazines[] = {};
+    items[] = {};
+    respawnItems[] = {};
+    linkedItems[] = {"BNA_KC_EPF_Helmet_Presidente", "OPTRE_Glasses_Cigar", LINKED_ITEMS_RADIO};
+    respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_Presidente", "OPTRE_Glasses_Cigar", LINKED_ITEMS_RADIO};
+    backpack = "";
+
+    class EventHandlers: EventHandlers
+    {
+        init = "(_this select 0) setIdentity 'ElPresidente'";
+    };
+};
+
+class BNA_KC_EPF_Unit_General: BNA_KC_EPF_Unit_Presidente
+{
+    displayName = "El General"
+    uniformClass = "BNA_KC_EPF_Uniform_General";
+
+    model = "\A3\Characters_F_Exp\Gendarmerie\B_GEN_Commander_F.p3d";
+    hiddenSelections[] = {"camo", "insignia"};
+    hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_black_co.paa"};
+    hiddenSelectionsMaterials[] = {"\a3\characters_f_beta\indep\data\ia_soldier_01_clothing.rvmat"};
+
+    identityTypes[] = {"ElPresidente"};
+
+    weapons[] = {"BNA_KC_DC17M", "BNA_KC_DC15SA", "Throw", "Put"};
+    respawnWeapons[] = {"BNA_KC_DC17M", "BNA_KC_DC15SA", "Throw", "Put"};
+    magazines[] =
+    {
+        ITEM_10("Aux12thFleet_Mag_60Rnd_DC17M"),
+        ITEM_4("Aux12thFleet_Mag_7Rnd_DC15SA"),
+        ITEM_2("SmokeShell"),
+        ITEM_2("SC_IG3")
+    };
+    respawnMagazines[] =
+    {
+        ITEM_10("Aux12thFleet_Mag_60Rnd_DC17M"),
+        ITEM_4("Aux12thFleet_Mag_7Rnd_DC15SA"),
+        ITEM_2("SmokeShell"),
+        ITEM_2("SC_IG3")
+    };
+    items[] = {"FirstAidKit"};
+    respawnItems[] = {"FirstAidKit"};
+    linkedItems[] = {"BNA_KC_EPF_Helmet_General", "BNA_KC_EPF_Vest_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
+    respawnLinkedItems[] = {"BNA_KC_EPF_Helmet_General", "BNA_KC_EPF_Vest_General", "SC_MDFCape", LINKED_ITEMS_RADIO};
+    backpack = "";
+
+    class EventHandlers: EventHandlers
+    {
+        init = "(_this select 0) setIdentity 'ElGeneral'";
+    };
 };
