@@ -4,6 +4,14 @@
  *
  * Arguments:
  * object: Object - The object to become a healing area.
+ * healRadius: Number - (Optional, default -1)
+ *    Distance to check units for. If no value is passed, checks CfgVehicles entry for typeOf _object for BNA_KC_Medical_areaHealRadius.
+ * _healRate: Number - (Optional, default -1)
+ *    Time between healing actions. If no value is passed, checks CfgVehicles entry for typeOf _object for BNA_KC_Medical_areaHealRate.
+ * _maxPatients: Number - (Optional, default 0)
+ *    Maximum number of patients that can be healed at a time.
+ *    Values <0 signify unlimited patients.
+ *    If no value is passed, checks CfgVehicles entry for typeOf _object for BNA_KC_Medical_areaHealMaxPatients.
  *
  * Return Value:
  * None
