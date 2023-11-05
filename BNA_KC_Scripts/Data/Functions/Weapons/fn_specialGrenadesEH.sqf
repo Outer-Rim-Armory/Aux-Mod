@@ -88,7 +88,7 @@ params ["_eventHandlerType"];
 
             case "BACTA":
             {
-                private ["_healDuration", "_healRadius", "_healRate", "_currentTime", "_endTime"];
+                private ["_healDuration", "_healRadius", "_healRate", "_maxPatients", "_currentTime", "_endTime"];
                 _healDuration =
                 [
                     configFile >> "CfgMagazines" >> _magazine,
@@ -108,7 +108,13 @@ params ["_eventHandlerType"];
                     "BNA_KC_Medical_areaHealRate",
                     5
                 ] call BIS_fnc_returnConfigEntry;
-                [_projectile, _healRadius, _healRate] call BNAKC_fnc_areaSlowHeal;
+                _maxPatients =
+                [
+                    configFile >> "CfgMagazines" >> _magazine,
+                    "BNA_KC_Medical_areaHealMaxPatients",
+                    0
+                ] call BIS_fnc_returnConfigEntry;
+                [_projectile, _healRadius, _healRate, _maxPatients] call BNAKC_fnc_areaSlowHeal;
 
                 _currentTime = time max serverTime;
                 _endTime = _currentTime + _healDuration;

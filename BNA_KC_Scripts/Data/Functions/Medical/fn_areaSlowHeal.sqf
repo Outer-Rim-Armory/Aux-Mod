@@ -13,8 +13,8 @@
  */
 
 
-params [["_object", objNull, [objNull]], ["_healRadius", -1, [0]], ["_healRate", -1, [0]]];
-private ["_maxPatients", "_currentPatients", "_objectName"];
+params [["_object", objNull, [objNull]], ["_healRadius", -1, [0]], ["_healRate", -1, [0]], ["_maxPatients", 0, [0]]];
+private ["_currentPatients", "_objectName"];
 
 if (isNull _object) exitWith {};
 
@@ -43,12 +43,15 @@ if (_healRate isEqualTo -1) then
         6
     ] call BIS_fnc_returnConfigEntry;
 };
-_maxPatients =
-[
-    configFile >> "CfgVehicles" >> typeOf _object,
-    "BNA_KC_Medical_areaHealMaxPatients",
-    2
-] call BIS_fnc_returnConfigEntry;
+if (_maxPatients isEqualTo 0) then
+{
+    _maxPatients =
+    [
+        configFile >> "CfgVehicles" >> typeOf _object,
+        "BNA_KC_Medical_areaHealMaxPatients",
+        2
+    ] call BIS_fnc_returnConfigEntry;
+};
 
 _currentPatients = [];
 _object setVariable ["BNA_KC_healHandlers", []];
