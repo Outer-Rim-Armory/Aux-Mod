@@ -163,14 +163,7 @@ class CfgVehicles
 
                 BNA_KC_SpecialLoad = 1;
             };
-            class Carrier: Carrier
-            {
-                /*
-                limit1: [-1.53034, -1.97604, 4.07491] (front)
-                limit2: [-1.80491, -5.06474, 3.0456] (back)
-                */
-                cargoBayDimensions[] = {{-1.53034, 1, 4.07491}, "limit2"};
-            };
+            class Carrier: Carrier {};
         };
     };
 
@@ -188,6 +181,18 @@ class CfgVehicles
             "ShowATTEIntBackPassenger", 1,
             "ShowATTEIntCommand", 0,
             "ShowATTERebelMod", 1
+        };
+
+        class VehicleTransport: VehicleTransport
+        {
+            class Carrier: Carrier
+            {
+                /*
+                limit1: [-1.53034, -1.97604, 4.07491] (front)
+                limit2: [-1.80491, -5.06474, 3.0456] (back)
+                */
+                cargoBayDimensions[] = {{-1.53034, 1, 4.07491}, "limit2"};
+            };
         };
     };
 
