@@ -41,6 +41,14 @@ class CfgVehicles
         displayName = "AT-TE (Base)";
         crew = "BNA_KC_Unit_Phase2_Tanker";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
+        animationList[] =
+        {
+            "ShowATTENuts", 1,
+            "ShowATTEIntPassenger", 0,
+            "ShowATTEIntBackPassenger", 0,
+            "ShowATTEIntCommand", 1,
+            "ShowATTERebelMod", 1
+        };
 
         ace_cargo_space = 10;
 
@@ -177,9 +185,9 @@ class CfgVehicles
         animationList[] =
         {
             "ShowATTENuts", 1,
-            "ShowATTEIntPassenger", 1,
-            "ShowATTEIntBackPassenger", 1,
-            "ShowATTEIntCommand", 0,
+            "ShowATTEIntPassenger", 0,
+            "ShowATTEIntBackPassenger", 0,
+            "ShowATTEIntCommand", 1,
             "ShowATTERebelMod", 1
         };
 
