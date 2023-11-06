@@ -57,6 +57,7 @@ class CfgPatches
             "BNA_KC_EPF_Unit_SL",
             "BNA_KC_EPF_Unit_Melee",
             "BNA_KC_EPF_Unit_Presidente",
+            "BNA_KC_EPF_Unit_General",
 
             // Backpacks
             "BNA_KC_EPF_Backpack",
