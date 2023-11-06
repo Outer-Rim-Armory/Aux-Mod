@@ -23,22 +23,22 @@ class CfgVehicles
             class Carrier;
         };
     };
-    class BNA_KC_ATTE: 3as_ATTE_base
+    class BNA_KC_ATTE_Base: 3as_ATTE_base
     {
         // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 2;
-        scopeCurator = 2;
+        scope = 1;
+        scopeCurator = 0;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_Walkers";
         editorPreview = "\BNA_KC_Vehicles\Armored\ATTE\Data\Previews\ATTE.jpg";
 
-        displayName = "AT-TE";
+        displayName = "AT-TE (Base)";
         crew = "BNA_KC_Unit_Phase2_Tanker";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
 
@@ -174,8 +174,29 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_ATTE_Command: BNA_KC_ATTE
+    class BNA_KC_ATTE: BNA_KC_ATTE_Base
     {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "AT-TE";
+        animationList[] =
+        {
+            "ShowATTENuts", 1,
+            "ShowATTEIntPassenger", 1,
+            "ShowATTEIntBackPassenger", 1,
+            "ShowATTEIntCommand", 0,
+            "ShowATTERebelMod", 1
+        };
+    };
+
+    class BNA_KC_ATTE_Command: BNA_KC_ATTE_Base
+    {
+        // Scope
+        scope = 2;
+        scopeCurator = 2;
+
         displayName = "AT-TE (Command)";
         animationList[] =
         {
