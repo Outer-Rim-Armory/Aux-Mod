@@ -230,24 +230,24 @@ class CfgSFX
         BNA_KC_Ambient_Let_There_Be_Carnage[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Let_There_Be_Carnage.ogg",db+50,1,500,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
-	class BNA_KC_Ambient_EPF_Radio_1
+	class BNA_KC_Ambient_EPF_Radio_1_SFX
 	{
         name = "[KC] Holonet News";
-        sounds[] = {BNA_KC_Ambient_EPF_Radio_1_SFX};
+        sounds[] = {BNA_KC_Ambient_EPF_Radio_1};
         BNA_KC_Ambient_EPF_Radio_1[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_1.ogg",db+80,1,100,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
-	class BNA_KC_Ambient_EPF_Radio_2
+	class BNA_KC_Ambient_EPF_Radio_2_SFX
 	{
         name = "[KC] Holonet News 2";
-        sounds[] = {BNA_KC_Ambient_EPF_Radio_2_SFX};
+        sounds[] = {BNA_KC_Ambient_EPF_Radio_2};
         BNA_KC_Ambient_EPF_Radio_2[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_2.ogg",db+80,1,100,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
-	class BNA_KC_Ambient_EPF_Radio_3
+	class BNA_KC_Ambient_EPF_Radio_3_SFX
 	{
         name = "[KC] Holonet News 3";
-        sounds[] = {BNA_KC_Ambient_EPF_Radio_3_SFX};
+        sounds[] = {BNA_KC_Ambient_EPF_Radio_3};
         BNA_KC_Ambient_EPF_Radio_3[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_3.ogg",db+80,1,100,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
