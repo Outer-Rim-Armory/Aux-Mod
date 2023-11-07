@@ -319,16 +319,19 @@ class CfgSounds
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Let_There_Be_Carnage.ogg", db+50, 1, 500, 1, 2, 3, 4};
         titles[] = {2, "'Let there be carnage!'"};
     };
+    class BNA_KC_Ambient_Holonet
     {
         name = "Holonet News";
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_1.ogg", db+20, 1, 500, 1};
         titles[] = {2, "'Holonet News'"};
     };
+    class BNA_KC_Ambient_Holonet_2
     {
         name = "Holonet News 2";
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_2.ogg", db+20, 1, 500, 1};
         titles[] = {2, "'Holonet News 2'"};
     };
+    class BNA_KC_Ambient_Holonet_3
     {
         name = "Holonet News 3";
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_3.ogg", db+20, 1, 500, 1};
