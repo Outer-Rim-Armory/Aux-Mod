@@ -1,5 +1,6 @@
 #include "CfgPatches.hpp"
 #include "CfgSoundSets.hpp"
+#include "CfgMagazines.hpp"
 #include "CfgAmmo.hpp"
 
 
