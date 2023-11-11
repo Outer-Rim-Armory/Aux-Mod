@@ -115,6 +115,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Sytha",
             "BNA_KC_Helmet_Phase2_Tugz",
             "BNA_KC_Helmet_Phase2_Tyrant",
+            "BNA_KC_Helmet_Phase2_Tyrant_Crimson",
             "BNA_KC_Helmet_Phase2_Vortex",
             "BNA_KC_Helmet_Phase2_Woods",
 
