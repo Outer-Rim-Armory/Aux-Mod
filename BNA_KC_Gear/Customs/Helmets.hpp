@@ -956,11 +956,33 @@ class BNA_KC_Helmet_Phase2_Tugz: BNA_KC_Helmet_Phase2_Axel
 
 class BNA_KC_Helmet_Phase2_Tyrant: BNA_KC_Helmet_Phase2_Axel
 {
-    displayName = "[KC] INF P2 Helm ('Tyrant)";
+    BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Tyrant";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Tyrant_Crimson";
+
+    displayName = "[KC] INF P2 Helm ('Tyrant')";
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Tyrant.paa",
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
+    };
+};
+class BNA_KC_Helmet_Phase2_Tyrant_Crimson: BNA_KC_Helmet_Phase2_Tyrant
+{
+    // Scopes
+    scope = 1;
+    scopeArsenal = 1;
+
+    displayName = "[KC] INF P2 Helm ('Tyrant') [Crimson Visor]";
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Tyrant.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Visors\Visor_Crimson.paa",
     };
 };
 
@@ -1294,15 +1316,33 @@ class BNA_KC_Helmet_ARC_Hagrid_Plasma: BNA_KC_Helmet_ARC_Hagrid
 
 class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC_Drake
 {
-    BNAKC_Helmet_Toggle = 0;
+    BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_ARC_Tyrant";
-    BNAKC_Helmet_On  = "BNA_KC_Helmet_ARC_Tyrant";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_ARC_Tyrant_Crimson";
 
     displayName = "[KC] SF ARC Helm ('Tyrant')";
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\SpecialForces\ARC\Helmet_ARC_Tyrant.paa",
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+    };
+};
+class BNA_KC_Helmet_ARC_Tyrant_Crimson: BNA_KC_Helmet_ARC_Drake
+{
+    // Scopes
+    scope = 1;
+    scopeArsenal = 1;
+
+    displayName = "[KC] SF ARC Helm ('Tyrant') [Crimson Visor]";
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\SpecialForces\ARC\Helmet_ARC_Tyrant.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Visors\Visor_Crimson.paa"
     };
 };
 

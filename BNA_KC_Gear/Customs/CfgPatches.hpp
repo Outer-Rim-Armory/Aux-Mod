@@ -115,6 +115,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Sytha",
             "BNA_KC_Helmet_Phase2_Tugz",
             "BNA_KC_Helmet_Phase2_Tyrant",
+            "BNA_KC_Helmet_Phase2_Tyrant_Crimson",
             "BNA_KC_Helmet_Phase2_Vortex",
             "BNA_KC_Helmet_Phase2_Woods",
 
@@ -151,6 +152,7 @@ class CfgPatches
             "BNA_KC_Helmet_ARC_Hagrid",
             "BNA_KC_Helmet_ARC_Hagrid_Plasma",
             "BNA_KC_Helmet_ARC_Tyrant",
+            "BNA_KC_Helmet_ARC_Tyrant_Crimson",
             "BNA_KC_Helmet_ARF_Patriot",
             "BNA_KC_Helmet_ARF_Sin",
             "BNA_KC_Helmet_BARC_Rat",
