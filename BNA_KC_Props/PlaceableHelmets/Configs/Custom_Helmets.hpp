@@ -72,6 +72,7 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Swoop, [KC] INF P2 Helm ('Swoop'), BNA_KC_H
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Sytha, [KC] INF P2 Helm ('Sytha'), BNA_KC_Helmet_Phase2_Sytha, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Tugz, [KC] INF P2 Helm ('Tugz'), BNA_KC_Helmet_Phase2_Tugz, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Tyrant, [KC] INF P2 Helm ('Tyrant'), BNA_KC_Helmet_Phase2_Tyrant, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Tyrant_Crimson, [KC] INF P2 Helm ('Tyrant') [Crimson Visor], BNA_KC_Helmet_Phase2_Tyrant_Crimson, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Vortex, [KC] INF P2 Helm ('Vortex'), BNA_KC_Helmet_Phase2_Vortex, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Woods, [KC] INF P2 Helm ('Woods'), BNA_KC_Helmet_Phase2_Woods, "Customs")
 
@@ -116,6 +117,7 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Drake_Bacta, [KC] SF ARC Helm ('Drake') [B
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Hagrid, [KC] SF ARC Helm ('Hagrid'), BNA_KC_Helmet_ARC_Hagrid, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Hagrid_Plasma, [KC] SF ARC Helm ('Hagrid') [Plasma Visor], BNA_KC_Helmet_ARC_Hagrid_Plasma, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Tyrant, [KC] SF ARC Helm ('Tyrant'), BNA_KC_Helmet_ARC_Tyrant, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Tyrant_Crimson, [KC] SF ARC Helm ('Tyrant') [Crimson Visor], BNA_KC_Helmet_ARC_Tyrant_Crimson, "Customs")
 
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARF_Patriot, [KC] SF ARF Helm ('Patriot'), BNA_KC_Helmet_ARF_Patriot, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARF_Sin, [KC] SF ARF Helm ('Sin'), BNA_KC_Helmet_ARF_Sin, "Customs")
