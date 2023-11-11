@@ -960,7 +960,7 @@ class BNA_KC_Helmet_Phase2_Tyrant: BNA_KC_Helmet_Phase2_Axel
     BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase2_Tyrant";
     BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase2_Tyrant_Crimson";
 
-    displayName = "[KC] INF P2 Helm ('Tyrant)";
+    displayName = "[KC] INF P2 Helm ('Tyrant')";
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Tyrant.paa",
@@ -973,7 +973,7 @@ class BNA_KC_Helmet_Phase2_Tyrant_Crimson: BNA_KC_Helmet_Phase2_Tyrant
     scope = 1;
     scopeArsenal = 1;
 
-    displayName = "[KC] INF P2 Helm ('Tyrant) [Crimson Visor]";
+    displayName = "[KC] INF P2 Helm ('Tyrant') [Crimson Visor]";
     hiddenSelectionsMaterials[] =
     {
         "",
