@@ -1316,7 +1316,7 @@ class BNA_KC_Helmet_ARC_Hagrid_Plasma: BNA_KC_Helmet_ARC_Hagrid
 
 class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC_Drake
 {
-    BNAKC_Helmet_Toggle = 0;
+    BNAKC_Helmet_Toggle = 1;
     BNAKC_Helmet_Off = "BNA_KC_Helmet_ARC_Tyrant";
     BNAKC_Helmet_On  = "BNA_KC_Helmet_ARC_Tyrant_Crimson";
 
