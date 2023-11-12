@@ -400,11 +400,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_ARC", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+            "BNA_KC_Helmet_ARC", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "BNA_KC_Goggles_ARC_Bracers", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_ARC", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+            "BNA_KC_Helmet_ARC", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "BNA_KC_Goggles_ARC_Bracers", "SWLB_comlink", LINKED_ITEMS
         };
         backpack = "BNA_KC_Backpack_ARC";
     };
@@ -424,11 +424,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_ARC_Night", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+            "BNA_KC_Helmet_ARC_Night", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "BNA_KC_Goggles_ARC_Bracers", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_ARC_Night", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+            "BNA_KC_Helmet_ARC_Night", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "BNA_KC_Goggles_ARC_Bracers", "SWLB_comlink", LINKED_ITEMS
         };
     };
 
