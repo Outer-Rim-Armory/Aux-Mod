@@ -522,6 +522,14 @@ class CfgGlasses
         ACE_OverlayCracked = "\SWLB_equipment\facewears\data\P2_HUD_cracked_ca.paa";
         ACE_OverlayDirt = "\A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
     };
+
+    class BNA_KC_Goggles_ARC_Bracers: BNA_KC_Goggles_ARF_Flaps
+    {
+        displayName = "[KC] ARC Bracers";
+        model = "\BNA_KC_Gear\SpecialForces\Data\Models\Bracelets\ARC_Bracelets.p3d";
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+    };
 };
 
 
