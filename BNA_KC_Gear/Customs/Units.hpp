@@ -72,11 +72,11 @@ class BNA_KC_Unit_Dexus: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armo
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
