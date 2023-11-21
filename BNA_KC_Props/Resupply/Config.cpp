@@ -144,6 +144,9 @@ class CfgVehicles
             MAG_XX(BNA_KC_Mag_HI12, 20)
             MAG_XX(Aux12thFleet_Mag_DP23_HP, 20)
             MAG_XX(JLTS_Z6_mag, 5)
+            MAG_XX(3AS_JLTS_MK39_AA, 1)
+            MAG_XX(3AS_JLTS_MK43_AT, 1)
+            MAG_XX(3AS_JLTS_MK44_HE, 1)
         };
     };
     class BNA_KC_Resupply_PlatoonAmmo_Heavy: BNA_KC_Resupply_SquadAmmo_Heavy
@@ -155,6 +158,9 @@ class CfgVehicles
             MAG_XX(BNA_KC_Mag_HI12, 120)
             MAG_XX(Aux12thFleet_Mag_DP23_HP, 120)
             MAG_XX(JLTS_Z6_mag, 10)
+            MAG_XX(3AS_JLTS_MK39_AA, 3)
+            MAG_XX(3AS_JLTS_MK43_AT, 3)
+            MAG_XX(3AS_JLTS_MK44_HE, 3)
         };
     };
 
