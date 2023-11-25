@@ -1327,7 +1327,7 @@ class BNA_KC_Helmet_ARC_Tyrant: BNA_KC_Helmet_ARC_Drake
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_ARC_Tyrant_Crimson: BNA_KC_Helmet_ARC_Drake
+class BNA_KC_Helmet_ARC_Tyrant_Crimson: BNA_KC_Helmet_ARC_Tyrant
 {
     // Scopes
     scope = 1;
