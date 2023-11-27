@@ -63,6 +63,16 @@ class CfgVehicles
                     "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\KeeliCompany\Weapons.paa"
                 };
             };
+            class CamoGrey: Standard
+            {
+                author = "Rev";
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\CamoGrey\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\CamoGrey\Weapons.paa"
+                };
+            };
         };
 
         INVENTORY_VEHICLE_BASE(3)
