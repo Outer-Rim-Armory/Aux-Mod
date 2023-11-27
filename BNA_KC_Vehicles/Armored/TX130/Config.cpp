@@ -30,7 +30,7 @@ class CfgVehicles
             "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\KeeliCompany\Weapons.paa"
         };
 
-        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1};
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "CamoGrey", 0};
         class TextureSources
         {
             class Standard
@@ -55,12 +55,22 @@ class CfgVehicles
             };
             class KeeliCompany: Standard
             {
-                author = "Dexus";
+                author = "Rev";
                 displayName = "Keeli Company";
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\KeeliCompany\Body.paa",
                     "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\KeeliCompany\Weapons.paa"
+                };
+            };
+            class CamoGrey: Standard
+            {
+                author = "Rev";
+                displayName = "Grey Camo";
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\CamoGrey\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\TX130\Data\Textures\CamoGrey\Weapons.paa"
                 };
             };
         };
