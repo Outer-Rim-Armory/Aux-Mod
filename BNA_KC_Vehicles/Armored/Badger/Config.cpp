@@ -117,7 +117,7 @@ class CfgVehicles
             "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
         };
 
-        textureList[] = {"Standard", 1};
+        textureList[] = {"Standard", 1, "CamoGrey", 0};
         class TextureSources
         {
             class Standard
@@ -130,6 +130,20 @@ class CfgVehicles
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Body.paa",
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Addons.paa",
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+                };
+            };
+
+            class CamoGrey: Standard
+            {
+                author = "Rev";
+                displayName = "Grey Camo"
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\CamoGrey\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\CamoGrey\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\CamoGrey\Tow.paa",
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
                 };
