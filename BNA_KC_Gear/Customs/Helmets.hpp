@@ -621,6 +621,16 @@ class BNA_KC_Helmet_Phase2_Hazard: BNA_KC_Helmet_Phase2_Axel
     };
 };
 
+class BNA_KC_Helmet_Phase2_Jackal: BNA_KC_Helmet_Phase2_Axel
+{
+    displayName = "[KC] INF P2 Helm ('Jackal')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Jackal.paa",
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
 class BNA_KC_Helmet_Phase2_Jaws: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Jaws')";

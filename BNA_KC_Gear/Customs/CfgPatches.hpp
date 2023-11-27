@@ -91,6 +91,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Grey",
             "BNA_KC_Helmet_Phase2_Harry",
             "BNA_KC_Helmet_Phase2_Hazard",
+            "BNA_KC_Helmet_Phase2_Jackal",
             "BNA_KC_Helmet_Phase2_Jaws",
             "BNA_KC_Helmet_Phase2_Jester",
             "BNA_KC_Helmet_Phase2_Joe",
