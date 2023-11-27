@@ -117,7 +117,7 @@ class CfgVehicles
             "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
         };
 
-        textureList[] = {"Standard", 1, "CamoGrey", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "KeeliCompanyDamaged", 0, "CamoGrey", 0};
         class TextureSources
         {
             class Standard
