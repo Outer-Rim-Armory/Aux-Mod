@@ -135,9 +135,22 @@ class CfgVehicles
                 };
             };
 
-            class CamoGrey: Standard
+            class KeeliCompany: Standard
             {
                 author = "Rev";
+                displayName = "Keeli Company"
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+                };
+            };
+
+            class CamoGrey: KeeliCompany
+            {
                 displayName = "Grey Camo"
                 textures[] =
                 {
