@@ -55,7 +55,7 @@ class CfgVehicles
             };
             class KeeliCompany: Standard
             {
-                author = "Dexus";
+                author = "Rev";
                 displayName = "Keeli Company";
                 textures[] =
                 {
