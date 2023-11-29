@@ -18,8 +18,9 @@ class CfgPatches
                 // Ammo
             "JLTS_weapons_RPS6",
                 // RPS-6
-            "ls_weapons"
+            "ls_weapons",
                 // RPS-6
+            "cba_disposable"
         };
         units[] = {};
         weapons[] =

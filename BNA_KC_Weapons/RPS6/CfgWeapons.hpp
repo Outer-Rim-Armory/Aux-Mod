@@ -21,6 +21,8 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
+
+        class EventHandlers;
     };
 
     class BNA_KC_RPS6_Disposable: BNA_KC_RPS6_Base
@@ -32,6 +34,11 @@ class CfgWeapons
         displayName = "[KC] RPS-6";
         descriptionShort = "Single-use Rocket Tube";
         JLTS_friedItem = "BNA_KC_RPS6_Fried";
+
+        class EventHandlers: EventHandlers
+        {
+            fired = "_this call CBA_fnc_firedDisposable";
+        };
     };
 
     class BNA_KC_RPS6_Loaded: BNA_KC_RPS6_Disposable
