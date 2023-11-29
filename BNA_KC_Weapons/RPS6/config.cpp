@@ -1,4 +1,5 @@
 #include "CfgWeapons.hpp"
+#include "CfgMagazines.hpp"
 
 
 class CfgPatches
