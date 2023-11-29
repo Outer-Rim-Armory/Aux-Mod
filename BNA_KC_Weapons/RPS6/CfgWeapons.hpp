@@ -34,6 +34,26 @@ class CfgWeapons
         JLTS_friedItem = "BNA_KC_RPS6_Fried";
     };
 
+    class BNA_KC_RPS6_Loaded: BNA_KC_RPS6_Disposable
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
+        magazines[] = {"ls_mag_rpg_1rnd_disposable"};
+    };
+
+    class BNA_KC_RPS6_Used: BNA_KC_RPS6_Disposable
+    {
+        // Scope
+        scope = 1;
+        scopeArsenal = 0;
+
+        displayName = "[KC] RPS-6 (Used)";
+        descriptionShort = "Used Rocket Tube";
+        magazines[] = {};
+    };
+
     class BNA_KC_RPS6_Disposable_Fried: BNA_KC_RPS6_Disposable
     {
         // Scope
