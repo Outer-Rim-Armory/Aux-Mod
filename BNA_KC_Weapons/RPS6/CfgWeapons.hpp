@@ -69,7 +69,7 @@ class CfgWeapons
 
         displayName = "[KC] RPS-6 (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        // picture = "\BNA_KC_Weapons\RPS6\data\ui\RPS6_Fried_ca.paa";
+        picture = "\BNA_KC_Weapons\RPS6\data\ui\RPS6_Fried_ca.paa";
 
         JLTS_isFried = 1;
         magazines[] = {};
