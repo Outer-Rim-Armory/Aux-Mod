@@ -7,7 +7,7 @@ class CfgMagazines
         displayName = "[12th Fleet] RPS-6 AT Missile";
         displayNameShort = "AT";
         descriptionShort = "Anti-Tank Missile<br/>Rounds: 1<br/>Used In: RPS-6";
-        // ammo = "Aux12thFleet_Ammo_RPS6_AT";
+        ammo = "Aux12thFleet_Ammo_RPS6_AT";
 
         JLTS_hasEMPProtection = 1;
 
