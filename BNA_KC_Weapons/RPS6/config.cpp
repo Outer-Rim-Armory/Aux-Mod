@@ -25,7 +25,7 @@ class CfgPatches
         weapons[] =
         {
             "BNA_KC_RPS6_Base",
-            "BNA_KC_RPS6",
+            "BNA_KC_RPS6_Disposable",
             "BNA_KC_RPS6_Loaded",
             "BNA_KC_RPS6_Used",
             "BNA_KC_RPS6_Fried",
