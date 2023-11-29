@@ -21,9 +21,9 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
-            "BNA_KC_RPS6_Base",
-            "BNA_KC_RPS6",
-            "BNA_KC_RPS6_Fried"
+            "BNA_KC_RPS7_Base",
+            "BNA_KC_RPS7",
+            "BNA_KC_RPS7_Fried"
         };
         magazines[] = {};
         ammo[] = {};
