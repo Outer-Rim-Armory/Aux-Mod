@@ -1,6 +1,10 @@
 class CfgWeapons
 {
-    class ls_weapon_rps6;
+    class ls_launcher_base;
+    class ls_weapon_rps6: ls_launcher_base
+    {
+        class Single;
+    };
     class BNA_KC_RPS6_Base: ls_weapon_rps6
     {
         // Mod Info
@@ -23,6 +27,14 @@ class CfgWeapons
         JLTS_hasEMPProtection = 0;
 
         class EventHandlers;
+
+        class Single: Single
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_RPS6"};
+            };
+        };
     };
 
     class BNA_KC_RPS6_Disposable: BNA_KC_RPS6_Base
@@ -75,7 +87,11 @@ class CfgWeapons
         magazines[] = {};
     };
 
-    class JLTS_RPS6;
+    class launch_RPG32_F;
+    class JLTS_RPS6: launch_RPG32_F
+    {
+        class Single;
+    };
     class BNA_KC_RPS7_Base: JLTS_RPS6
     {
         // Mod Info
@@ -96,6 +112,14 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
+
+        class Single: Single
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {"BNA_KC_SoundSet_RPS7"};
+            };
+        };
     };
 
     class BNA_KC_RPS7: BNA_KC_RPS7_Base
