@@ -138,7 +138,16 @@ class CfgWeapons
         {
             class UnderBarrelSlot: UnderBarrelSlot
             {
-                compatibleItems[] = {"JLTS_riot_shield_attachment"};
+                compatibleItems[] =
+                {
+                    "JLTS_riot_shield_attachment",
+                    "JLTS_riot_shield_212_attachment",
+                    "JLTS_riot_shield_501_attachment",
+                    "JLTS_riot_shield_101_attachment",
+                    "JLTS_riot_shield_CG_attachment",
+                    "JLTS_riot_shield_GD_attachment",
+                    "JLTS_riot_shield_droid_attachment"
+                };
             };
         };
     };
