@@ -3,6 +3,7 @@ class CfgWeapons
     class ls_launcher_base;
     class ls_weapon_rps6: ls_launcher_base
     {
+        class WeaponSlotsInfo;
         class Single;
     };
     class BNA_KC_RPS6_Base: ls_weapon_rps6
@@ -27,6 +28,11 @@ class CfgWeapons
         JLTS_hasEMPProtection = 0;
 
         class EventHandlers;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            mass = RPS6_MASS_LAUNCHER;
+        };
 
         class Single: Single
         {
@@ -90,6 +96,7 @@ class CfgWeapons
     class launch_RPG32_F;
     class JLTS_RPS6: launch_RPG32_F
     {
+        class WeaponSlotsInfo;
         class Single;
     };
     class BNA_KC_RPS7_Base: JLTS_RPS6
@@ -112,6 +119,11 @@ class CfgWeapons
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            mass = RPS7_MASS_LAUNCHER;
+        };
 
         class Single: Single
         {

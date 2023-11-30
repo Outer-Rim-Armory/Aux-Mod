@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 #include "..\Macros.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
