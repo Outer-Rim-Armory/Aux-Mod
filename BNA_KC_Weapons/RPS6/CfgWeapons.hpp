@@ -20,7 +20,7 @@ class CfgWeapons
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
-        magazines[] = {"ls_mag_rpg_1rnd"};
+        magazines[] = {"Aux12thFleet_Mag_RPS6_HEAT"};
         magazineWell[] = {};
 
         // JLTS emp system

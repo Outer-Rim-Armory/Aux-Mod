@@ -1,5 +1,20 @@
 class CfgMagazines
 {
+    class ls_mag_rpg_1rnd;
+    class Aux12thFleet_Mag_RPS6_HEAT: ls_mag_rpg_1rnd
+    {
+        author = "DartRuffian and SweMonkey";
+        displayName = "[12th Fleet] RPS-6 HEAT Rocket";
+        displayNameShort = "HEAT";
+        descriptionShort = "High Explosive Anti-Tank Missile<br/>Rounds: 1<br/>Used In: RPS-6";
+        ammo = "Aux12thFleet_Ammo_RPS6_HEAT";
+
+        JLTS_hasEMPProtection = 1;
+
+        allowedSlots[] = {VEST_SLOT, BACKPACK_SLOT};
+        mass = RPS6_MASS_MAGAZINE;
+    };
+
     class JLTS_RPS6_mag;
     class Aux12thFleet_Mag_RPS7_AT: JLTS_RPS6_mag
     {
