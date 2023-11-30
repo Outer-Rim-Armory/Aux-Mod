@@ -36,7 +36,5 @@ class CfgPatches
             "BNA_KC_RPS7",
             "BNA_KC_RPS7_Fried"
         };
-        magazines[] = {};
-        ammo[] = {};
     };
 };
