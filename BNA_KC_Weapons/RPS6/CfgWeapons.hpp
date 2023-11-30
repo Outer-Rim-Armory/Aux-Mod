@@ -45,13 +45,10 @@ class CfgWeapons
 
     class BNA_KC_RPS6_Disposable: BNA_KC_RPS6_Base
     {
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
-
         displayName = "[KC] RPS-6";
         descriptionShort = "Single-use Rocket Tube";
         JLTS_friedItem = "BNA_KC_RPS6_Fried";
+        magazineReloadTime = 0.1;
 
         class EventHandlers: EventHandlers
         {
@@ -62,10 +59,15 @@ class CfgWeapons
     class BNA_KC_RPS6_Loaded: BNA_KC_RPS6_Disposable
     {
         // Scope
-        scope = 1;
-        scopeArsenal = 0;
+        scope = 2;
+        scopeArsenal = 2;
 
-        magazines[] = {"ls_mag_rpg_1rnd_disposable"};
+        magazines[] = {"CBA_FakeLauncherMagazine"};
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            mass = RPS6_MASS_LAUNCHER + RPS6_MASS_MAGAZINE;
+        };
     };
 
     class BNA_KC_RPS6_Used: BNA_KC_RPS6_Disposable
@@ -76,7 +78,7 @@ class CfgWeapons
 
         displayName = "[KC] RPS-6 (Used)";
         descriptionShort = "Used Rocket Tube";
-        magazines[] = {};
+        magazines[] = {"CBA_FakeLauncherMagazine"};
     };
 
     class BNA_KC_RPS6_Disposable_Fried: BNA_KC_RPS6_Disposable
