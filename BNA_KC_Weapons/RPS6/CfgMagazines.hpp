@@ -12,7 +12,7 @@ class CfgMagazines
         JLTS_hasEMPProtection = 1;
 
         allowedSlots[] = {VEST_SLOT, BACKPACK_SLOT};
-        mass = 100;
+        mass = RPS7_MASS_MAGAZINE;
     };
 
     class Aux12thFleet_Mag_RPS7_HE: Aux12thFleet_Mag_RPS7_AT
