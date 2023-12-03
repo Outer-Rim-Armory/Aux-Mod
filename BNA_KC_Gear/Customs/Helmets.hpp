@@ -1391,6 +1391,17 @@ class BNA_KC_Helmet_ARF_Sin: BNA_KC_Helmet_ARF_Patriot
     };
 };
 
+class BNA_KC_Helmet_ARF_Tugz: BNA_KC_Helmet_ARF_Patriot
+{
+    displayName = "[KC] SF ARF Helm ('Tugz')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\SpecialForces\ARF\Helmet_ARF_Tugz.paa",
+        "",
+        "\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+    };
+};
+
 class BNA_KC_Helmet_BARC;
 class BNA_KC_Helmet_BARC_Rat: BNA_KC_Helmet_BARC
 {

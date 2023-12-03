@@ -123,6 +123,7 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Tyrant_Crimson, SF ARC Helm ('Tyrant') [Cr
 
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARF_Patriot, SF ARF Helm ('Patriot'), BNA_KC_Helmet_ARF_Patriot, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_ARF_Sin, SF ARF Helm ('Sin'), BNA_KC_Helmet_ARF_Sin, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_ARF_Tugz, SF ARF Helm ('Tugz'), BNA_KC_Helmet_ARF_Tugz, "Customs")
 
 HELMET_HOLDER(BNA_KC_HelmetHolder_BARC_Rat, SF BARC Helm ('Rat'), BNA_KC_Helmet_BARC_Rat, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_BARC_Rat_Crimson, SF BARC Helm ('Rat') [Crimson Visor], BNA_KC_Helmet_BARC_Rat, "Customs")

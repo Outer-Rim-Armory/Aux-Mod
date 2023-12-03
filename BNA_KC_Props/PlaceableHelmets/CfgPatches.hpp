@@ -191,6 +191,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_ARC_Tyrant_Crimson",
             "BNA_KC_HelmetHolder_ARF_Patriot",
             "BNA_KC_HelmetHolder_ARF_Sin",
+            "BNA_KC_HelmetHolder_ARF_Tugz",
             "BNA_KC_HelmetHolder_BARC_Rat",
             "BNA_KC_HelmetHolder_BARC_Rat_Crimson"
         };
