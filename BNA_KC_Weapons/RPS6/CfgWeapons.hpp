@@ -118,6 +118,8 @@ class CfgWeapons
         magazines[] = {"Aux12thFleet_Mag_RPS7_AT", "Aux12thFleet_Mag_RPS7_HE"};
         magazineWell[] = {};
 
+        modelOptics = "\ls_weapons\tertiary\rps6\ls_scope_rps6.p3d";
+
         // JLTS emp system
         JLTS_hasElectronics = 1;
         JLTS_hasEMPProtection = 0;
