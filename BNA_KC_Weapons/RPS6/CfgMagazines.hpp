@@ -11,7 +11,7 @@ class CfgMagazines
 
         JLTS_hasEMPProtection = 1;
 
-        allowedSlots[] = {VEST_SLOT, BACKPACK_SLOT};
+        allowedSlots[] = {BACKPACK_SLOT};
         mass = RPS6_MASS_MAGAZINE;
     };
 
@@ -26,7 +26,7 @@ class CfgMagazines
 
         JLTS_hasEMPProtection = 1;
 
-        allowedSlots[] = {VEST_SLOT, BACKPACK_SLOT};
+        allowedSlots[] = {BACKPACK_SLOT};
         mass = RPS7_MASS_MAGAZINE;
     };
 
