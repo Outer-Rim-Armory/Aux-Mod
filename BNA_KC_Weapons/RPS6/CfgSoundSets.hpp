@@ -3,9 +3,13 @@ class CfgSoundShaders
     class BNA_KC_SoundShader_Weapon_Base;
     class BNA_KC_SoundShader_RPS6: BNA_KC_SoundShader_Weapon_Base
     {
+        // Will eventually recieve it's own sound effects
+        volumeFactor = 5;
         samples[] =
         {
-            {"BNA_KC_Weapons\DC15S\Data\Audio\DC15S_Fire1.wss", 1, 1}
+            {"\BNA_KC_Weapons\RPS6\data\audio\RPS7_Fire1.wss", 1, 1},
+            {"\BNA_KC_Weapons\RPS6\data\audio\RPS7_Fire2.wss", 1, 1},
+            {"\BNA_KC_Weapons\RPS6\data\audio\RPS7_Fire3.wss", 1, 1}
         };
     };
 
