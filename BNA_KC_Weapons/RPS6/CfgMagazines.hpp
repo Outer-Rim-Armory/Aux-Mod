@@ -6,7 +6,7 @@ class CfgMagazines
         author = "DartRuffian and SweMonkey";
         displayName = "[12th Fleet] RPS-6 HEAT Rocket";
         displayNameShort = "HEAT";
-        descriptionShort = "High Explosive Anti-Tank Missile<br/>Rounds: 1<br/>Used In: RPS-6";
+        descriptionShort = "High Explosive Anti-Tank Rocket<br/>Rounds: 1<br/>Used In: RPS-6";
         ammo = "Aux12thFleet_Ammo_RPS6_HEAT";
 
         JLTS_hasEMPProtection = 1;
@@ -19,9 +19,9 @@ class CfgMagazines
     class Aux12thFleet_Mag_RPS7_AT: JLTS_RPS6_mag
     {
         author = "DartRuffian and SweMonkey";
-        displayName = "[12th Fleet] RPS-7 AT Missile";
+        displayName = "[12th Fleet] RPS-7 AT Rocket";
         displayNameShort = "AT";
-        descriptionShort = "Anti-Tank Missile<br/>Rounds: 1<br/>Used In: RPS-7";
+        descriptionShort = "Anti-Tank Rocket<br/>Rounds: 1<br/>Used In: RPS-7";
         ammo = "Aux12thFleet_Ammo_RPS7_AT";
 
         JLTS_hasEMPProtection = 1;
@@ -32,9 +32,9 @@ class CfgMagazines
 
     class Aux12thFleet_Mag_RPS7_HE: Aux12thFleet_Mag_RPS7_AT
     {
-        displayName = "[12th Fleet] RPS-7 HE Missile";
+        displayName = "[12th Fleet] RPS-7 HE Rocket";
         displayNameShort = "HE";
-        descriptionShort = "High Explosive Missile<br/>Rounds: 1<br/>Used In: RPS-7";
+        descriptionShort = "High Explosive Rocket<br/>Rounds: 1<br/>Used In: RPS-7";
         // ammo = "Aux12thFleet_Ammo_RPS7_HE";
 
         model = "\A3\weapons_f\launchers\RPG32\tbg32v_rocket_item.p3d";
