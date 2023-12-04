@@ -87,8 +87,8 @@ class CfgVehicles
 
         // Deployable properties
         BNA_KC_Deployable_item = "BNA_KC_Deployable_MedicalDroid_Item";
-        BNA_KC_Deployable_placeTime = 5; // How long in seconds it takes to place down
-        BNA_KC_Deployable_pickupTime = 8; // How long in seconds it takes to pick up
+        BNA_KC_Deployable_placeTime = 20;  // How long in seconds it takes to place down
+        BNA_KC_Deployable_pickupTime = 20; // How long in seconds it takes to pick up
 
         // Sound effects
         BNA_KC_Object_soundLoop = "BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss";
