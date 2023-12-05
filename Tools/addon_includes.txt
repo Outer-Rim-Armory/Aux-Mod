@@ -1,0 +1,1 @@
+*.p3d;*.paa;*.rvmat;*.wss;*.sqf;*.wav;*.ogg;*.jpg
