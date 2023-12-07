@@ -3,7 +3,7 @@
 
 class CfgPatches
 {
-    class BNA_KC_Core
+    class BNA_KC_Main
     {
         author = "SweMonkey and DartRuffian";
         requiredVersion = REQUIRED_VERSION;
