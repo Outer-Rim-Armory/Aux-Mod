@@ -82,6 +82,8 @@ class CfgWeapons
         };
     };
 
+    #include "configs/Uniforms.hpp"
+
     class V_PlateCarrier1_rgr;
     class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
     {
