@@ -1,5 +1,12 @@
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
+#undef PREP
+#ifdef DISABLE_COMPILE_CACHE
+    #define PREP(fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
+#else
+    #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
+#endif
+
 #define SCOPE_PUBLIC scope = 2; \
 scopeArsenal = 2; \
 scopeCurator = 2
