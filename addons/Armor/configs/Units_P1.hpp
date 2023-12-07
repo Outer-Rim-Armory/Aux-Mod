@@ -1,7 +1,7 @@
 class BNA_KC_Unit_Phase1_CR: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 00 - Clone Recruit";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\CR.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CR);
 
     uniformClass = "BNA_KC_Uniform_CR";
 
@@ -18,7 +18,7 @@ class BNA_KC_Unit_Phase1_CR: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_CT: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 01 - Clone Trooper";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\CT.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CT);
 
     uniformClass = "BNA_KC_Uniform_CT";
 
@@ -35,7 +35,7 @@ class BNA_KC_Unit_Phase1_CT: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_SCT: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 02 - Senior Clone Trooper";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\SCT.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_SCT);
 
     uniformClass = "BNA_KC_Uniform_SCT";
 
@@ -52,7 +52,7 @@ class BNA_KC_Unit_Phase1_SCT: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_VCT: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 03 - Veteran Clone Trooper";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\VCT.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_VCT);
 
     uniformClass = "BNA_KC_Uniform_VCT";
 
@@ -71,7 +71,7 @@ class BNA_KC_Unit_Phase1_VCT: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_CLC: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 04 - Clone Lance Corporal";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\CLC.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CLC);
 
     uniformClass = "BNA_KC_Uniform_CLC";
 
@@ -88,7 +88,7 @@ class BNA_KC_Unit_Phase1_CLC: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_CPL: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 05 - Clone Corporal";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\CPL.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CPL);
 
     uniformClass = "BNA_KC_Uniform_CPL";
 
@@ -107,7 +107,7 @@ class BNA_KC_Unit_Phase1_CPL: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_CS: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 06 - Clone Sergeant";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\CS.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CS);
 
     uniformClass = "BNA_KC_Uniform_CS";
 
@@ -124,7 +124,7 @@ class BNA_KC_Unit_Phase1_CS: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_CSS: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 07 - Clone Staff Sergeant";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\CSS.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CSS);
 
     uniformClass = "BNA_KC_Uniform_CSS";
 
@@ -141,7 +141,7 @@ class BNA_KC_Unit_Phase1_CSS: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_CSFC: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 08 - Clone Sergeant First Class";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\CSFC.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CSFC);
 
     uniformClass = "BNA_KC_Uniform_CSFC";
 
@@ -158,7 +158,7 @@ class BNA_KC_Unit_Phase1_CSFC: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_CMS: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 09 - Clone Master Sergeant";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\CMS.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CMS);
 
     uniformClass = "BNA_KC_Uniform_CSFC";
 
@@ -175,7 +175,7 @@ class BNA_KC_Unit_Phase1_CMS: BNA_KC_Unit_Phase1_Base
 class BNA_KC_Unit_Phase1_CSM: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 10 - Clone Sergeant Major";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\CSM.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CSM);
 
     uniformClass = "BNA_KC_Uniform_CSM";
 

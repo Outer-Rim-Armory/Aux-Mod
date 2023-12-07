@@ -7,6 +7,9 @@
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 
+#define EDITOR_PREVIEW(CLASS) QPATHTOF(data\previews\CLASS.jpg)
+#define EEDITOR_PREVIEW(COMPONENT,CLASS) QUOTE(PATHTOF_SYS(PREFIX,COMPONENT,data\previews\CLASS.jpg))
+
 #define SCOPE_PUBLIC scope = 2; \
 scopeArsenal = 2; \
 scopeCurator = 2
