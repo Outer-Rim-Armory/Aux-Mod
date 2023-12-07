@@ -4,7 +4,7 @@ prefix = "BNA_KC"
 mainprefix = "BNA"
 
 [version]
-path = "addons/core/script_version.hpp"
+path = "addons/main/script_version.hpp"
 git_hash = 0
 
 [files]
@@ -27,7 +27,32 @@ url = "https://github.com/DartRuffian/KeeliCompanyAux"
 
 [hemtt.launch.default]
 workshop = [
-    "450814997" # CBA
+    "450814997",  # CBA
+    "463939057",  # ACE
+    "894678801",  # TFAR
+    "2369477168", # ADT
+    "623475643",  # 3DEN
+    "1779063631", # ZEN
+    "2018593688", # ZEN ACE Compat
+    "1940589429", # JLTS
+    "2058554822", # 3AS
+    "2215872933", # 3AS Terrains
+    "2162749089", # LS
+    "1969012355", # LS TFAR
+    "2320596778", # LS Battlefields
+    "1686872930", # SDT
+    "2567352444", # WBK Droids
+    "2061309401", # LFP
+    "1393068220", # Kobra
+    "2306758518", # Kobra LS
+    "2323185592", # Lightsabers and Force
+    "769440155",  # OPTRE
+    "1572627279", # OPTRE First Contact
+    "2173635424", # 501st Aux
+    "2915485125", # Burn 'Em
+    "767380317",  # Blastcore
+    "2789152015", # WBK Zombies
+    "2478080991"  # Scion Conflict
 ]
 presets = []
 dlc = []
@@ -36,7 +61,32 @@ parameters = []
 
 [hemtt.launch.previews]
 workshop = [
-    "450814997" # CBA
+    "450814997",  # CBA
+    "463939057",  # ACE
+    "894678801",  # TFAR
+    "2369477168", # ADT
+    "623475643",  # 3DEN
+    "1779063631", # ZEN
+    "2018593688", # ZEN ACE Compat
+    "1940589429", # JLTS
+    "2058554822", # 3AS
+    "2215872933", # 3AS Terrains
+    "2162749089", # LS
+    "1969012355", # LS TFAR
+    "2320596778", # LS Battlefields
+    "1686872930", # SDT
+    "2567352444", # WBK Droids
+    "2061309401", # LFP
+    "1393068220", # Kobra
+    "2306758518", # Kobra LS
+    "2323185592", # Lightsabers and Force
+    "769440155",  # OPTRE
+    "1572627279", # OPTRE First Contact
+    "2173635424", # 501st Aux
+    "2915485125", # Burn 'Em
+    "767380317",  # Blastcore
+    "2789152015", # WBK Zombies
+    "2478080991"  # Scion Conflict
 ]
 presets = []
 dlc = []
