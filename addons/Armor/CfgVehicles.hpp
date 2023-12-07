@@ -7,7 +7,7 @@ class CfgVehicles
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
-        faction = "BNA_KC_Faction";
+        faction = "BNA_KC_Faction_KC";
 
         displayName = "INF Trooper (Base)";
         uniformClass = "BNA_KC_Uniform_Base";
