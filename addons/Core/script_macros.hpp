@@ -1,4 +1,4 @@
-// #include "\x\cba\addons\main\script_macros_common.hpp"
+#include "\x\cba\addons\main\script_macros_common.hpp"
 
 #define SCOPE_PUBLIC scope = 2; \
 scopeArsenal = 2; \
