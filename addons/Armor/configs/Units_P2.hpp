@@ -46,10 +46,8 @@ class BNA_KC_Unit_Phase2_CT: BNA_KC_Unit_Phase2_Base
 
 class BNA_KC_Unit_Phase2_CT_Legacy: BNA_KC_Unit_Phase2_Base
 {
+    SCOPE_HIDDEN;
     displayName = "INF 01 - Clone Trooper";
-
-    scope = 1;        // Hides the unit in the Editor
-    scopeCurator = 0; // Hides the unit in Zeus
 
     uniformClass = "BNA_KC_Uniform_CT_Legacy";
     hiddenSelectionsTextures[] =
@@ -461,8 +459,7 @@ class BNA_KC_Unit_Phase2_1LT: BNA_KC_Unit_Phase2_WO
 // Camo Units
 class BNA_KC_Unit_Phase2_Recruit_CamoBrown: BNA_KC_Unit_Phase2_Base
 {
-    scope = 1;
-    scopeCurator = 0;
+    SCOPE_HIDDEN;
     uniformClass = "BNA_KC_Uniform_Recruit_CamoBrown";
     hiddenSelectionsTextures[] =
     {
