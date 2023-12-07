@@ -1,7 +1,7 @@
 class BNA_KC_Unit_Phase2_CR: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 00 - Clone Recruit";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\CR.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CR);
 
     uniformClass = "BNA_KC_Uniform_CR";
     hiddenSelectionsTextures[] =
@@ -24,7 +24,7 @@ class BNA_KC_Unit_Phase2_CR: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_CT: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 01 - Clone Trooper";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\CT.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CT);
 
     uniformClass = "BNA_KC_Uniform_CT";
     hiddenSelectionsTextures[] =
@@ -66,7 +66,7 @@ class BNA_KC_Unit_Phase2_CT_Legacy: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_SCT: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 02 - Senior Clone Trooper";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\SCT.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_SCT);
 
     uniformClass = "BNA_KC_Uniform_SCT";
     hiddenSelectionsTextures[] =
@@ -89,7 +89,7 @@ class BNA_KC_Unit_Phase2_SCT: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_VCT: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 03 - Veteran Clone Trooper";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\VCT.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_VCT);
 
     uniformClass = "BNA_KC_Uniform_VCT";
     hiddenSelectionsTextures[] =
@@ -114,7 +114,7 @@ class BNA_KC_Unit_Phase2_VCT: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_CLC: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 04 - Clone Lance Corporal";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\CLC.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CLC);
 
     uniformClass = "BNA_KC_Uniform_CLC";
     hiddenSelectionsTextures[] =
@@ -137,7 +137,7 @@ class BNA_KC_Unit_Phase2_CLC: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_CPL: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 05 - Clone Corporal";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\CPL.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CPL);
 
     uniformClass = "BNA_KC_Uniform_CPL";
     hiddenSelectionsTextures[] =
@@ -162,7 +162,7 @@ class BNA_KC_Unit_Phase2_CPL: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_CS: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 06 - Clone Sergeant";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\CS.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CS);
 
     uniformClass = "BNA_KC_Uniform_CS";
     hiddenSelectionsTextures[] =
@@ -185,7 +185,7 @@ class BNA_KC_Unit_Phase2_CS: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_CSS: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 07 - Clone Staff Sergeant";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\CSS.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CSS);
 
     uniformClass = "BNA_KC_Uniform_CSS";
     hiddenSelectionsTextures[] =
@@ -208,7 +208,7 @@ class BNA_KC_Unit_Phase2_CSS: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_CSFC: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 08 - Clone Sergeant First Class";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\CSFC.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CSFC);
 
     uniformClass = "BNA_KC_Uniform_CSFC";
     hiddenSelectionsTextures[] =
@@ -231,7 +231,7 @@ class BNA_KC_Unit_Phase2_CSFC: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_CMS: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 09 - Clone Master Sergeant";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\CMS.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CMS);
 
     uniformClass = "BNA_KC_Uniform_CSFC";
     hiddenSelectionsTextures[] =
@@ -254,7 +254,7 @@ class BNA_KC_Unit_Phase2_CMS: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 10 - Clone Sergeant Major";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\CSM.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CSM);
 
     uniformClass = "BNA_KC_Uniform_CSM";
     hiddenSelectionsTextures[] =
@@ -278,7 +278,7 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_WO: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 11 - Clone Warrant Officer";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\WO.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_WO);
 
     uniformClass = "BNA_KC_Uniform_WO";
     hiddenSelectionsTextures[] =
@@ -303,7 +303,7 @@ class BNA_KC_Unit_Phase2_WO: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Phase2_WO2: BNA_KC_Unit_Phase2_WO
 {
     displayName = "INF 12 - Clone Warrant Officer 2";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\WO2.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_WO2);
 
     uniformClass = "BNA_KC_Uniform_WO2";
     hiddenSelectionsTextures[] =
@@ -326,7 +326,7 @@ class BNA_KC_Unit_Phase2_WO2: BNA_KC_Unit_Phase2_WO
 class BNA_KC_Unit_Phase2_WO3: BNA_KC_Unit_Phase2_WO
 {
     displayName = "INF 13 - Clone Warrant Officer 3";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\WO3.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_WO3);
 
     uniformClass = "BNA_KC_Uniform_WO";
     hiddenSelectionsTextures[] =
@@ -349,7 +349,7 @@ class BNA_KC_Unit_Phase2_WO3: BNA_KC_Unit_Phase2_WO
 class BNA_KC_Unit_Phase2_LT: BNA_KC_Unit_Phase2_WO
 {
     displayName = "INF 14 - Clone Lieutenant";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\LT.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_LT);
 
     uniformClass = "BNA_KC_Uniform_LT";
     hiddenSelectionsTextures[] =
@@ -372,7 +372,7 @@ class BNA_KC_Unit_Phase2_LT: BNA_KC_Unit_Phase2_WO
 class BNA_KC_Unit_Phase2_1LT: BNA_KC_Unit_Phase2_WO
 {
     displayName = "INF 15 - Clone 1st Lieutenant";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\1LT.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_1LT);
 
     uniformClass = "BNA_KC_Uniform_LT";
     hiddenSelectionsTextures[] =
@@ -548,7 +548,7 @@ class BNA_KC_Unit_Phase2_Officer_CamoGrey: BNA_KC_Unit_Phase2_Recruit_CamoBrown
 class BNA_KC_Unit_Phase2_Insulated_Trooper: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF Snow - Trooper";
-    editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Trooper_Insulated.jpg";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_Insulated_Trooper);
 
     // Uniform Model & Textures
     uniformClass = "BNA_KC_Uniform_Insulated";
