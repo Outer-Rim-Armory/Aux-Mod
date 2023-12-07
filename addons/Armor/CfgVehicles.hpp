@@ -9,7 +9,7 @@ class CfgVehicles
 
         faction = "BNA_KC_Faction";
 
-        displayName = "INF Trooper (Base)"
+        displayName = "INF Trooper (Base)";
         uniformClass = "BNA_KC_Uniform_Base";
 
         // Inventory
@@ -32,40 +32,40 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11("Aux12thFleet_Mag_DC15S"),
+            // ITEM_11("Aux12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("Aux12thFleet_Mag_DC17"),
+            // ITEM_2("Aux12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
-            ITEM_2("ls_mag_classC_thermalDet"),
-            ITEM_3("ShieldGrenade_Mag"),
+            // ITEM_2("ls_mag_classC_thermalDet"),
+            // ITEM_3("ShieldGrenade_Mag"),
             // Smokes
-            ITEM_3("3AS_SmokeWhite"),
-            ITEM_3("3AS_SmokeBlue"),
-            ITEM_3("3AS_SmokeGreen")
+            // ITEM_3("3AS_SmokeWhite"),
+            // ITEM_3("3AS_SmokeBlue"),
+            // ITEM_3("3AS_SmokeGreen")
         };
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11("Aux12thFleet_Mag_DC15S"),
+            // ITEM_11("Aux12thFleet_Mag_DC15S"),
             // Stun rounds would go here
-            ITEM_2("Aux12thFleet_Mag_DC17"),
+            // ITEM_2("Aux12thFleet_Mag_DC17"),
             // Stun rounds would go here
             // Grenades
-            ITEM_2("ls_mag_classC_thermalDet"),
-            ITEM_3("ShieldGrenade_Mag"),
+            // ITEM_2("ls_mag_classC_thermalDet"),
+            // ITEM_3("ShieldGrenade_Mag"),
             // Smokes
-            ITEM_3("3AS_SmokeWhite"),
-            ITEM_3("3AS_SmokeBlue"),
-            ITEM_3("3AS_SmokeGreen")
+            // ITEM_3("3AS_SmokeWhite"),
+            // ITEM_3("3AS_SmokeBlue"),
+            // ITEM_3("3AS_SmokeGreen")
         };
         items[] =
         {
             // Medical
-            ITEM_10("ACE_elasticBandage"),
-            ITEM_4("ACE_tourniquet"),
+            // ITEM_10("ACE_elasticBandage"),
+            // ITEM_4("ACE_tourniquet"),
             // Other
-            ITEM_3("ACE_CableTie"),
+            // ITEM_3("ACE_CableTie"),
             "ACE_EntrenchingTool",
             "ItemcTabHCam",
             "ACE_IR_Strobe_Item",
@@ -75,10 +75,10 @@ class CfgVehicles
         respawnItems[] =
         {
             // Medical
-            ITEM_10("ACE_elasticBandage"),
-            ITEM_4("ACE_tourniquet"),
+            // ITEM_10("ACE_elasticBandage"),
+            // ITEM_4("ACE_tourniquet"),
             // Other
-            ITEM_3("ACE_CableTie"),
+            // ITEM_3("ACE_CableTie"),
             "ACE_EntrenchingTool",
             "ItemcTabHCam",
             "ACE_IR_Strobe_Item",
@@ -105,9 +105,9 @@ class CfgVehicles
 
         // Editor Properties
         editorSubcategory = "BNA_KC_INF_P1";
-        editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase1\Base.jpg";
+        editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_Base);
 
-        displayName = "INF P1 Trooper (Base)"
+        displayName = "INF P1 Trooper (Base)";
 
         uniformClass = "BNA_KC_Uniform_Base";
     };
@@ -120,7 +120,7 @@ class CfgVehicles
 
         // Editor Properties
         editorSubcategory = "BNA_KC_INF_P2";
-        editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Phase2\Base.jpg";
+        editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_Base);
 
         // Uniform textures would be applied here ; default textures listed
         uniformClass = "BNA_KC_Uniform_Base";
