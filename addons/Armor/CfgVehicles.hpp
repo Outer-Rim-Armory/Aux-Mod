@@ -141,33 +141,6 @@ class CfgVehicles
         };
     };
 
-    class BNA_KC_Unit_Insulated_Trooper: BNA_KC_Unit_Phase2_Base
-    {
-        displayName = "INF Snow - Trooper";
-        editorPreview = "\BNA_KC_Gear\Infantry\Data\Previews\Trooper_Insulated.jpg";
-
-        // Uniform Model & Textures
-        uniformClass = "BNA_KC_Uniform_Insulated";
-        model = "\lsd_armor_bluefor\uniform\gar\phase2Insulated\lsd_gar_phase2Insulated_uniform.p3d";
-        hiddenSelections[] = {"_upper", "_lower", "_undersuit"};
-        hiddenSelectionsTextures[] =
-        {
-            "\BNA_KC_Gear\Infantry\Data\Uniforms\Insulated\Uniform_Insulated_Upper.paa",
-            "\BNA_KC_Gear\Infantry\Data\Uniforms\Insulated\Uniform_Insulated_Lower.paa",
-            "\lsd_armor_bluefor\uniform\gar\phase2Insulated\data\undersuit_co.paa"
-        };
-
-        // Inventory
-        linkedItems[] =
-        {
-            "BNA_KC_Helmet_Insulated", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
-        };
-        respawnLinkedItems[] =
-        {
-            "BNA_KC_Helmet_Insulated", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
-        };
-    };
-
     #include "configs/Units_P1.hpp"
     #include "configs/Units_P2.hpp"
 };
