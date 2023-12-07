@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "CfgEditorSubcategories.hpp"
 
 
 class CfgPatches
