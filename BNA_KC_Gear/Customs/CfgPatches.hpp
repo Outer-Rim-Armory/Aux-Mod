@@ -173,6 +173,8 @@ class CfgPatches
             "BNA_KC_Uniform_Drake",
             "BNA_KC_Uniform_Fil",
             "BNA_KC_Uniform_FilSquad",
+            "BNA_KC_Uniform_Howzer_Blue",
+            "BNA_KC_Uniform_Howzer_Brown",
             "BNA_KC_Uniform_Joe",
             "BNA_KC_Uniform_Keeli",
             "BNA_KC_Uniform_Ponds",

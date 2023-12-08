@@ -63,6 +63,24 @@ class BNA_KC_Uniform_FilSquad: BNA_KC_Uniform_Axel
     };
 };
 
+class BNA_KC_Uniform_Howzer_Blue: BNA_KC_Uniform_Axel
+{
+    displayName = "[KC] INF Armor ('Howzer') - Blue";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Howzer_Brown";
+    };
+};
+
+class BNA_KC_Uniform_Howzer_Brown: BNA_KC_Uniform_Axel
+{
+    displayName = "[KC] INF Armor ('Howzer') - Brown";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Howzer_Brown";
+    };
+};
+
 class BNA_KC_Uniform_Joe: BNA_KC_Uniform_Axel
 {
     displayName = "[KC] INF Armor ('Joe')";
