@@ -182,6 +182,9 @@ class CfgPatches
             // Insulated (Snow) Helmets
             "BNA_KC_Helmet_Insulated",
 
+            // Other
+            "BNA_KC_Helmet_Phase12_Base",
+
             // Uniforms
             "BNA_KC_Uniform_Base",
             "BNA_KC_Uniform_CR",
