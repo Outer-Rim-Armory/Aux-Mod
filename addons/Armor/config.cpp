@@ -62,6 +62,7 @@ class CfgPatches
             "BNA_KC_Unit_Phase2_NCO_CamoGrey",
             "BNA_KC_Unit_Phase2_Officer_CamoBrown",
             "BNA_KC_Unit_Phase2_Officer_CamoGrey",
+            "BNA_KC_Unit_Phase2_Insulated_Base",
             "BNA_KC_Unit_Phase2_Insulated_CT"
         };
         weapons[] =
@@ -159,7 +160,8 @@ class CfgPatches
             "BNA_KC_Uniform_NCO_CamoGrey",
             "BNA_KC_Uniform_Officer_CamoBrown",
             "BNA_KC_Uniform_Officer_CamoGrey",
-            "BNA_KC_Unit_Phase2_Insulated_CT",
+            "BNA_KC_Uniform_Phase2_Insulated_Base",
+            "BNA_KC_Uniform_Phase2_Insulated_CT",
             "BNA_KC_Vest_Basic"
         };
     };

@@ -246,9 +246,18 @@ class BNA_KC_Uniform_Officer_CamoGrey: BNA_KC_Uniform_Base
     };
 };
 
+class BNA_KC_Uniform_Phase2_Insulated_Base: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF P2 Snow Armor (Base)";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_Insulated_Base";
+    };
+};
+
 class BNA_KC_Uniform_Phase2_Insulated_CT: BNA_KC_Uniform_Base
 {
-    displayName = "[KC] INF P2 Snow 01 (Trooper)";
+    displayName = "[KC] INF P2 Snow Armor 01 (Trooper)";
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_Phase2_Insulated_CT";
