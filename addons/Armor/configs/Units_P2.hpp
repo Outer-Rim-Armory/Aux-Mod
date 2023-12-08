@@ -542,19 +542,19 @@ class BNA_KC_Unit_Phase2_Officer_CamoGrey: BNA_KC_Unit_Phase2_Recruit_CamoBrown
     };
 };
 
-class BNA_KC_Unit_Phase2_Insulated_Trooper: BNA_KC_Unit_Phase2_Base
+class BNA_KC_Unit_Phase2_Insulated_CT: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF Snow - Trooper";
     editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_Insulated_Trooper);
 
     // Uniform Model & Textures
-    uniformClass = "BNA_KC_Uniform_Phase2_Insulated_Enlisted";
+    uniformClass = "BNA_KC_Uniform_Phase2_Insulated_CT";
     model = "\lsd_armor_bluefor\uniform\gar\phase2Insulated\lsd_gar_phase2Insulated_uniform.p3d";
     hiddenSelections[] = {"_upper", "_lower", "_undersuit"};
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\insulated\Enlisted_upper_co.paa),
-        QPATHTOF(data\uniforms\insulated\Enlisted_lower_co.paa),
+        QPATHTOF(data\uniforms\insulated\CT_upper_co.paa),
+        QPATHTOF(data\uniforms\insulated\CT_lower_co.paa),
         "\lsd_armor_bluefor\uniform\gar\phase2Insulated\data\undersuit_co.paa"
     };
 

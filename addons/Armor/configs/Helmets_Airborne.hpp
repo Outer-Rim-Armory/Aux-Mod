@@ -1,8 +1,8 @@
-class BNA_KC_Helmet_Airborne_Enlisted: BNA_KC_Helmet_Base
+class BNA_KC_Helmet_Airborne_CT: BNA_KC_Helmet_Base
 {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] AB Helm (Enlisted)";
+    displayName = "[KC] AB Helm 01 (Trooper)";
 
     model = "\lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
     hiddenSelections[] = {"camo1", "visor"};
@@ -13,7 +13,7 @@ class BNA_KC_Helmet_Airborne_Enlisted: BNA_KC_Helmet_Base
     };
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\airborne\Enlisted_camo1_co.paa)
+        QPATHTOF(data\helmets\airborne\CT_camo1_co.paa)
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
 
@@ -26,11 +26,11 @@ class BNA_KC_Helmet_Airborne_Enlisted: BNA_KC_Helmet_Base
     subItems[] = {"BNA_KC_NVG_Chip"};
 };
 
-class BNA_KC_Helmet_Airborne_Enlisted_v2: BNA_KC_Helmet_Airborne
+class BNA_KC_Helmet_Airborne_CT_v2: BNA_KC_Helmet_Airborne_CT
 {
-    displayName = "[KC] AB Helm (Enlisted, Version 2)";
+    displayName = "[KC] AB Helm 01 (Trooper, v2)";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\airborne\Enlisted_v2_camo1_co.paa)
+        QPATHTOF(data\helmets\airborne\CT_v2_camo1_co.paa)
     };
 };
