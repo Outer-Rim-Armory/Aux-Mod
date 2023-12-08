@@ -59,6 +59,8 @@ class CfgWeapons
 
     #include "configs/Helmets_P1.hpp"
     #include "configs/Helmets_P2.hpp"
+    #include "configs/Helmets_Airborne.hpp"
+    #include "configs/Helmets_Engineer.hpp"
 
     class ls_blueforUniform_base;
     class ls_gar_phase2_uniform: ls_blueforUniform_base
