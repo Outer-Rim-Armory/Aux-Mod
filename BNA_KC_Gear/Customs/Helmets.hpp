@@ -1524,3 +1524,42 @@ class BNA_KC_Helmet_Insulated_Keeli: BNA_KC_Helmet_Insulated_Dexus
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Insulated\Helmet_Insulated_Keeli.paa"
     };
 };
+
+// ┌────────────────────┐
+// │    P1-2 Helmets    │
+// └────────────────────┘
+class BNA_KC_Helmet_Phase12_Base;
+class BNA_KC_Helmet_Phase12_Joe: BNA_KC_Helmet_Phase12_Base
+{
+    // NVG Script
+    BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase12_Joe";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase12_Joe_Crimson";
+
+    displayName = "[KC] INF P1-2 Helm ('Joe')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1-2\Helmet_P12_Joe.paa",
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+
+    BNA_KC_isCustom = 1;
+};
+class BNA_KC_Helmet_Phase12_Joe_Crimson: BNA_KC_Helmet_Phase12_Joe
+{
+    // Scopes
+    scope = 1;
+    scopeArsenal = 1;
+
+    displayName = "[KC] INF P1-2 Helm ('Joe') [Crimson Visor]";
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1-2\Helmet_P12_Joe.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Visors\Visor_Crimson.paa",
+    };
+};
