@@ -80,11 +80,11 @@ class CfgWeapons
 
         displayName = "[KC] INF P1-2 Helm (Base)";
 
-        model = "\SWLB_clones\SWLB_clone_P1_2_helmet.p3d";
+        model = "\ls_armor_bluefor\helmet\gar\rex\ls_gar_rex_helmet.p3d";
         hiddenSelections[] = {"camo1", "visor"};
         hiddenSelectionsTextures[] =
         {
-            "\SWLB_clones\data\helmet_P1_2_co.paa",
+            "\ls_armor_bluefor\helmet\gar\rex\data\helmet_co.paa",
             "\ls_armor_bluefor\helmet\gar\rex\data\visor_co.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_p1_2_ca.paa";
@@ -92,7 +92,7 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo1", "visor"};
-            uniformModel = "\SWLB_clones\SWLB_clone_P1_2_helmet.p3d";
+            uniformModel = "\ls_armor_bluefor\helmet\gar\rex\ls_gar_rex_helmet.p3d";
         };
     };
 

@@ -1540,7 +1540,7 @@ class BNA_KC_Helmet_Phase12_Joe: BNA_KC_Helmet_Phase12_Base
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1-2\Helmet_P12_Joe.paa",
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+        "\ls_armor_bluefor\helmet\gar\rex\data\visor_co.paa"
     };
 
     BNA_KC_isCustom = 1;
