@@ -346,3 +346,21 @@ class BNA_KC_Helmet_Phase2_Officer_CamoGrey: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
+
+class BNA_KC_Helmet_Phase2_Insulated_Enlisted: BNA_KC_Helmet_Phase2_Base
+{
+    displayName = "[KC] INF P2 Snow Helm (Enlisted)";
+
+    model = "\ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
+    hiddenSelections[] = {"Camo1"};
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\insulated\Enlisted_camo1_co.paa)
+    };
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"Camo1"};
+        uniformModel = "\ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
+    };
+};
