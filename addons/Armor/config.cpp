@@ -124,6 +124,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_NCO_CamoGrey",
             "BNA_KC_Helmet_Phase2_Officer_CamoBrown",
             "BNA_KC_Helmet_Phase2_Officer_CamoGrey",
+            "BNA_KC_Helmet_Phase2_Insulated_Base",
             "BNA_KC_Helmet_Phase2_Insulated_CT",
             "BNA_KC_Helmet_Airborne_Base",
             "BNA_KC_Helmet_Airborne_CT",
