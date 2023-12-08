@@ -1,3 +1,25 @@
+class BNA_KC_Helmet_Phase2_Base: BNA_KC_Helmet_Base
+{
+    SCOPE_PUBLIC;
+
+    displayName = "[KC] INF P2 Helm (Base)";
+
+    model = "\ls_armor_bluefor\helmet\gar\phase2\ls_gar_phase2_helmet.p3d";
+    hiddenSelections[] = {"camo1", "visor"};
+    hiddenSelectionsTextures[] =
+    {
+        "\ls_armor_bluefor\helmet\gar\phase2\data\helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+    picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
+
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[] = {"camo1", "visor"};
+        uniformModel = "\ls_armor_bluefor\helmet\gar\phase2\ls_gar_phase2_helmet.p3d";
+    };
+};
+
 class BNA_KC_Helmet_Phase2_CR: BNA_KC_Helmet_Phase2_Base
 {
     displayName = "[KC] INF P2 Helm 00 (Recruit)";
