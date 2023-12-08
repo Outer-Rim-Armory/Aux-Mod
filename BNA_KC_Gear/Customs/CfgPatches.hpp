@@ -60,6 +60,8 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Fil",
             "BNA_KC_Helmet_Phase1_Grey",
             "BNA_KC_Helmet_Phase1_Hazard",
+            "BNA_KC_Helmet_Phase1_Howzer_Blue",
+            "BNA_KC_Helmet_Phase1_Howzer_Brown",
             "BNA_KC_Helmet_Phase1_Jaws",
             "BNA_KC_Helmet_Phase1_Jester",
             "BNA_KC_Helmet_Phase1_Joe",

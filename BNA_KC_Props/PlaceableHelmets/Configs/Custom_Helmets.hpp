@@ -15,6 +15,8 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Drake_Bacta, INF P1 Helm ('Drake') [Bacta V
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Fil, INF P1 Helm ('Fil'), BNA_KC_Helmet_Phase1_Fil, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Grey, INF P1 Helm ('Grey'), BNA_KC_Helmet_Phase1_Grey, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Hazard, INF P1 Helm ('Hazard'), BNA_KC_Helmet_Phase1_Hazard, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Howzer_Blue, INF P1 Helm ('Howzer') - Blue, BNA_KC_Helmet_Phase1_Howzer_Blue, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Howzer_Brown, INF P1 Helm ('Howzer') - Brown, BNA_KC_Helmet_Phase1_Howzer_Brown, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Jaws, INF P1 Helm ('Jaws'), BNA_KC_Helmet_Phase1_Jaws, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Jester, INF P1 Helm ('Jester'), BNA_KC_Helmet_Phase1_Jester, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Joe, INF P1 Helm ('Joe'), BNA_KC_Helmet_Phase1_Joe, "Customs")

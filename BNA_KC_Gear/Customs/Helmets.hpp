@@ -232,6 +232,28 @@ class BNA_KC_Helmet_Phase1_Hazard: BNA_KC_Helmet_Phase1_Axel
     };
 };
 
+class BNA_KC_Helmet_Phase1_Howzer_Blue: BNA_KC_Helmet_Phase1_Axel
+{
+    displayName = "[KC] INF P1 Helm ('Howzer') - Blue";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Howzer_Blue.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1_Howzer_Brown: BNA_KC_Helmet_Phase1_Howzer_Blue
+{
+    displayName = "[KC] INF P1 Helm ('Howzer') - Brown";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Howzer_Brown.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
 class BNA_KC_Helmet_Phase1_Jaws: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Jaws')";
