@@ -42,21 +42,21 @@ class BNA_KC_Helmet_Phase2_Pilot_Officer: BNA_KC_Helmet_Phase2_Pilot_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Pilot_Enlisted_CamoBrown: BNA_KC_Helmet_Phase2_Pilot_Airman
+class BNA_KC_Helmet_Phase2_Pilot_Officer_CamoBrown: BNA_KC_Helmet_Phase2_Pilot_Officer
 {
-    displayName = "[KC] AVI P2 Helm 01+ (Enlisted) - Brown Camo";
+    displayName = "[KC] AVI P2 Helm 11+ (Officer) - Brown Camo";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\phase2Pilot\camo\brown\Enlisted_camo1_co.paa),
+        QPATHTOF(data\helmets\phase2Pilot\camo\brown\Officer_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_Pilot_CamoGrey: BNA_KC_Helmet_Phase2_Pilot_Airman
+class BNA_KC_Helmet_Phase2_Pilot_Officer_CamoGrey: BNA_KC_Helmet_Phase2_Pilot_Officer
 {
-    displayName = "[KC] AVI P2 Helm 01+ (Enlisted) - Grey Camo";
+    displayName = "[KC] AVI P2 Helm 11+ (Officer) - Grey Camo";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\phase2Pilot\camo\grey\Enlisted_camo1_co.paa),
+        QPATHTOF(data\helmets\phase2Pilot\camo\grey\Officer_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
     };
 };
