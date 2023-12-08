@@ -545,7 +545,7 @@ class BNA_KC_Unit_Phase2_Officer_CamoGrey: BNA_KC_Unit_Phase2_Recruit_CamoBrown
 class BNA_KC_Unit_Phase2_Insulated_CT: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF Snow - Trooper";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_Insulated_Trooper);
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_Insulated_CT);
 
     // Uniform Model & Textures
     uniformClass = "BNA_KC_Uniform_Phase2_Insulated_CT";
