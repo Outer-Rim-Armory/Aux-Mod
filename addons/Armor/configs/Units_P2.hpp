@@ -561,10 +561,10 @@ class BNA_KC_Unit_Phase2_Insulated_CT: BNA_KC_Unit_Phase2_Base
     // Inventory
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        "BNA_KC_Helmet_Phase2_Insulated_CT", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        "BNA_KC_Helmet_Phase2_Insulated_CT", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
