@@ -193,6 +193,7 @@ class CfgPatches
             "BNA_KC_Vest_Officer_Keeli",
             "BNA_KC_Vest_Officer_Ponds",
             "BNA_KC_Vest_Officer_Rat",
+            "BNA_KC_Vest_WO_Howzer",
 
             // NVGs
             "BNA_KC_NVG_Officer_Keeli"

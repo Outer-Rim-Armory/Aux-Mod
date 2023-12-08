@@ -51,6 +51,18 @@ class CfgWeapons
         BNA_KC_isCustom = 1;
     };
 
+    class BNA_KC_Vest_WO;
+    class BNA_KC_Vest_WO_Howzer: BNA_KC_Vest_WO
+    {
+        displayName = "[KC] INF Vest 11 ('Howzer')";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Customs\Data\Textures\Vests\Vest_WO_Howzer.paa"
+        };
+
+        BNA_KC_isCustom = 1;
+    };
+
 
     // ┌──────────────────┐
     // │       NVGs       │
