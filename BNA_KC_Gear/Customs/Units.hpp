@@ -163,7 +163,7 @@ class BNA_KC_Unit_Howzer_Blue: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\FilSquad.jpg";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\BNA_KC_Unit_Howzer_Blue.jpg";
 
     displayName = "Howzer (Blue)";
     uniformClass = "BNA_KC_Uniform_Howzer_Blue";
@@ -187,7 +187,7 @@ class BNA_KC_Unit_Howzer_Blue: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Howzer_Brown: BNA_KC_Unit_Howzer_Blue
 {
     // Editor Attributes
-    // editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\FilSquad.jpg";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\BNA_KC_Unit_Howzer_Brown.jpg";
 
     displayName = "Howzer (Brown)";
     uniformClass = "BNA_KC_Uniform_Howzer_Brown";
@@ -201,11 +201,11 @@ class BNA_KC_Unit_Howzer_Brown: BNA_KC_Unit_Howzer_Blue
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Howzer_Brown", "BNA_KC_Vest_WO_Howzer", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        "BNA_KC_Helmet_Phase2_Howzer_Brown", "BNA_KC_Vest_WO", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Howzer_Brown", "BNA_KC_Vest_WO_Howzer", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        "BNA_KC_Helmet_Phase2_Howzer_Brown", "BNA_KC_Vest_WO", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
