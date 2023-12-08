@@ -548,7 +548,7 @@ class BNA_KC_Unit_Phase2_Insulated_Trooper: BNA_KC_Unit_Phase2_Base
     editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_Insulated_Trooper);
 
     // Uniform Model & Textures
-    uniformClass = "BNA_KC_Uniform_Insulated";
+    uniformClass = "BNA_KC_Uniform_Phase2_Insulated_Enlisted";
     model = "\lsd_armor_bluefor\uniform\gar\phase2Insulated\lsd_gar_phase2Insulated_uniform.p3d";
     hiddenSelections[] = {"_upper", "_lower", "_undersuit"};
     hiddenSelectionsTextures[] =

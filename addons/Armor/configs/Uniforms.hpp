@@ -245,3 +245,12 @@ class BNA_KC_Uniform_Officer_CamoGrey: BNA_KC_Uniform_Base
         uniformClass = "BNA_KC_Unit_Phase2_Officer_CamoGrey";
     };
 };
+
+class BNA_KC_Uniform_Phase2_Insulated_Enlisted: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] INF P2 Snow Armor (Enlisted)";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_Insulated_Trooper";
+    };
+};

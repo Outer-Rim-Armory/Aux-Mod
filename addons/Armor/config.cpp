@@ -156,6 +156,7 @@ class CfgPatches
             "BNA_KC_Uniform_NCO_CamoGrey",
             "BNA_KC_Uniform_Officer_CamoBrown",
             "BNA_KC_Uniform_Officer_CamoGrey",
+            "BNA_KC_Unit_Phase2_Insulated_Trooper",
             "BNA_KC_Vest_Basic"
         };
     };
