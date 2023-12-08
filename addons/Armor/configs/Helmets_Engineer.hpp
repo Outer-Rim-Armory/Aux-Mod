@@ -1,15 +1,15 @@
-class BNA_KC_Helmet_Engineer_CT: BNA_KC_Helmet_Base
+class BNA_KC_Helmet_Engineer_Base: BNA_KC_Helmet_Base
 {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] ENG Helm 01 (Trooper)";
+    displayName = "[KC] ENG Helm (Base)";
 
     model = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
     hiddenSelections[] = {"camo1", "illum", "visor"};
     hiddenSelectionsMaterials[] = {"", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat", ""};
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\engineer\CT_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\engineer\data\helmet_co.paa",
         "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
         "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
     };
@@ -24,6 +24,17 @@ class BNA_KC_Helmet_Engineer_CT: BNA_KC_Helmet_Base
     {
         hiddenSelections[] = {"camo1", "illum", "visor"};
         uniformModel = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
+    };
+};
+
+class BNA_KC_Helmet_Engineer_CT: BNA_KC_Helmet_Engineer_Base
+{
+    displayName = "[KC] ENG Helm 01 (Trooper)";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\engineer\CT_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
+        "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
     };
 };
 

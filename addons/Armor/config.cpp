@@ -128,6 +128,7 @@ class CfgPatches
             "BNA_KC_Helmet_Airborne_Base",
             "BNA_KC_Helmet_Airborne_CT",
             "BNA_KC_Helmet_Airborne_CT_v2",
+            "BNA_KC_Helmet_Engineer_Base",
             "BNA_KC_Helmet_Engineer_CT",
             "BNA_KC_Helmet_Engineer_Enlisted_CamoBrown",
             "BNA_KC_Helmet_Engineer_Enlisted_CamoGrey",
