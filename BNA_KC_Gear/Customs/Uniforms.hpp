@@ -68,7 +68,7 @@ class BNA_KC_Uniform_Howzer_Blue: BNA_KC_Uniform_Axel
     displayName = "[KC] INF Armor ('Howzer') - Blue";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Howzer_Brown";
+        uniformClass = "BNA_KC_Unit_Howzer_Blue";
     };
 };
 

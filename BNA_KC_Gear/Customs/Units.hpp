@@ -159,6 +159,56 @@ class BNA_KC_Unit_FilSquad: BNA_KC_Unit_Phase2_Base
     };
 };
 
+class BNA_KC_Unit_Howzer_Blue: BNA_KC_Unit_Phase2_Base
+{
+    // Editor Attributes
+    editorSubcategory = "BNA_KC_Customs";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\FilSquad.jpg";
+
+    displayName = "Howzer (Blue)";
+    uniformClass = "BNA_KC_Uniform_Howzer_Blue";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Blue_Upper.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Blue_Lower.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    // Loadout
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Blue", "BNA_KC_Vest_WO_Howzer", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Blue", "BNA_KC_Vest_WO_Howzer", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+};
+class BNA_KC_Unit_Howzer_Brown: BNA_KC_Unit_Howzer_Blue
+{
+    // Editor Attributes
+    // editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\FilSquad.jpg";
+
+    displayName = "Howzer (Brown)";
+    uniformClass = "BNA_KC_Uniform_Howzer_Brown";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Brown_Upper.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Brown_Lower.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    // Loadout
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Brown", "BNA_KC_Vest_WO_Howzer", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Brown", "BNA_KC_Vest_WO_Howzer", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+};
+
 class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes

@@ -26,6 +26,8 @@ class CfgPatches
             "BNA_KC_Unit_Drake",
             "BNA_KC_Unit_Fil",
             "BNA_KC_Unit_FilSquad",
+            "BNA_KC_Unit_Howzer_Blue",
+            "BNA_KC_Unit_Howzer_Brown",
             "BNA_KC_Unit_Joe",
             "BNA_KC_Unit_Keeli",
             "BNA_KC_Unit_Ponds",
