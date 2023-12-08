@@ -654,6 +654,26 @@ class BNA_KC_Helmet_Phase2_Hazard: BNA_KC_Helmet_Phase2_Axel
     };
 };
 
+class BNA_KC_Helmet_Phase2_Howzer_Blue: BNA_KC_Helmet_Phase2_Axel
+{
+    displayName = "[KC] INF P2 Helm ('Howzer') - Blue";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Howzer_Blue.paa",
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_Howzer_Brown: BNA_KC_Helmet_Phase2_Howzer_Blue
+{
+    displayName = "[KC] INF P2 Helm ('Howzer') - Brown";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Howzer_Brown.paa",
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
 class BNA_KC_Helmet_Phase2_Jackal: BNA_KC_Helmet_Phase2_Axel
 {
     displayName = "[KC] INF P2 Helm ('Jackal')";

@@ -137,6 +137,8 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P2_Grey",
             "BNA_KC_HelmetHolder_P2_Harry",
             "BNA_KC_HelmetHolder_P2_Hazard",
+            "BNA_KC_HelmetHolder_P2_Howzer_Blue",
+            "BNA_KC_HelmetHolder_P2_Howzer_Brown",
             "BNA_KC_HelmetHolder_P2_Jackal",
             "BNA_KC_HelmetHolder_P2_Jaws",
             "BNA_KC_HelmetHolder_P2_Jester",

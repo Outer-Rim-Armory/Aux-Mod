@@ -52,6 +52,8 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P2_FilSquad, INF P2 Helm ('Fil's Squad'), BNA_
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Grey, INF P2 Helm ('Grey'), BNA_KC_Helmet_Phase2_Grey, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Harry, INF P2 Helm ('Harry'), BNA_KC_Helmet_Phase2_Harry, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Hazard, INF P2 Helm ('Hazard'), BNA_KC_Helmet_Phase2_Hazard, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Howzer_Blue, INF P2 Helm ('Howzer') - Blue, BNA_KC_Helmet_Phase2_Howzer_Blue, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Howzer_Brown, INF P2 Helm ('Howzer') - Brown, BNA_KC_Helmet_Phase2_Howzer_Brown, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Jackal, INF P2 Helm ('Jackal'), BNA_KC_Helmet_Phase2_Jackal, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Jaws, INF P2 Helm ('Jaws'), BNA_KC_Helmet_Phase2_Jaws, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P2_Jester, INF P2 Helm ('Jester'), BNA_KC_Helmet_Phase2_Jester, "Customs")
