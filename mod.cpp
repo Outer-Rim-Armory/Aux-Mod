@@ -8,5 +8,4 @@ logoOver = "logo_kc_ca.paa";
 tooltip = "KC Mod";
 tooltipOwned = "KC Mod Owned";
 overview = "A mod containing retextures and weapon balance changes for the Keeli Company Arma 3 unit.";
-author = "DartRuffian";
 overviewPicture = "logo_kc_ca.paa";
