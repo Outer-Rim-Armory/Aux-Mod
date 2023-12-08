@@ -57,6 +57,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Dexus_Bacta",
             "BNA_KC_Helmet_Phase1_Drake",
             "BNA_KC_Helmet_Phase1_Drake_Bacta",
+            "BNA_KC_Helmet_Phase1_Fil",
             "BNA_KC_Helmet_Phase1_Grey",
             "BNA_KC_Helmet_Phase1_Hazard",
             "BNA_KC_Helmet_Phase1_Jaws",

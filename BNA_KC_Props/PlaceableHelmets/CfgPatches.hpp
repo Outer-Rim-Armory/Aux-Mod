@@ -101,6 +101,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P1_Dexus_Bacta",
             "BNA_KC_HelmetHolder_P1_Drake",
             "BNA_KC_HelmetHolder_P1_Drake_Bacta",
+            "BNA_KC_HelmetHolder_P1_Fil",
             "BNA_KC_HelmetHolder_P1_Grey",
             "BNA_KC_HelmetHolder_P1_Hazard",
             "BNA_KC_HelmetHolder_P1_Jaws",

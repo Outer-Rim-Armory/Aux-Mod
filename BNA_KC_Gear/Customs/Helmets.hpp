@@ -199,6 +199,17 @@ class BNA_KC_Helmet_Phase1_Drake_Bacta: BNA_KC_Helmet_Phase1_Drake
     };
 };
 
+class BNA_KC_Helmet_Phase1_Fil: BNA_KC_Helmet_Phase1_Axel
+{
+    displayName = "[KC] INF P1 Helm ('Fil')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Fil.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
 class BNA_KC_Helmet_Phase1_Grey: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Grey')";
