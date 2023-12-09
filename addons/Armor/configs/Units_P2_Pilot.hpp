@@ -21,7 +21,7 @@ class BNA_KC_Unit_Phase2_CXA: BNA_KC_Unit_Phase2_Base
     };
 };
 
-class BNA_KC_Unit_Phase2_CXE: BNA_KC_Unit_Phase2_Pilot
+class BNA_KC_Unit_Phase2_CXE: BNA_KC_Unit_Phase2_CXA
 {
     displayName = "AVI P2 Pilot (Ensign)";
     editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\Phase2_Pilot_Officer.jpg";
