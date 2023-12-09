@@ -172,7 +172,7 @@ class BNA_KC_Helmet_Phase1_CSM: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-// class BNA_KC_Helmet_Phase1_LT: BNA_KC_Helmet_Phase1_Base
+// class BNA_KC_Helmet_Phase1_CL: BNA_KC_Helmet_Phase1_Base
 // {
 //     displayName = "[KC] INF P1 Helm 11 (Lieutenant)";
 //     hiddenSelectionsTextures[] =

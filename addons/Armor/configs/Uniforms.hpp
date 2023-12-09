@@ -132,12 +132,12 @@ class BNA_KC_Uniform_WO3: BNA_KC_Uniform_Base
     };
 };
 
-class BNA_KC_Uniform_LT: BNA_KC_Uniform_Base
+class BNA_KC_Uniform_CL: BNA_KC_Uniform_Base
 {
     displayName = "[KC] INF Armor 14 (Lieutenant)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_LT";
+        uniformClass = "BNA_KC_Unit_Phase2_CL";
     };
 };
 

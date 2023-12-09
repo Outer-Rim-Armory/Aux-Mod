@@ -189,19 +189,19 @@ class BNA_KC_Unit_Phase1_CSM: BNA_KC_Unit_Phase1_Base
     };
 };
 
-// class BNA_KC_Unit_Phase1_LT: BNA_KC_Unit_Phase1_Base
+// class BNA_KC_Unit_Phase1_CL: BNA_KC_Unit_Phase1_Base
 // {
 //     displayName = "INF 11 - Clone Lieutenant";
 
-//     uniformClass = "BNA_KC_Uniform_LT";
+//     uniformClass = "BNA_KC_Uniform_CL";
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         "BNA_KC_Helmet_Phase1_CL", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         "BNA_KC_Helmet_Phase1_CL", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };
 
@@ -227,7 +227,7 @@ class BNA_KC_Unit_Phase1_CSM: BNA_KC_Unit_Phase1_Base
 // {
 //     displayName = "INF 13 - Clone 1st Lieutenant";
 
-//     uniformClass = "BNA_KC_Uniform_LT";
+//     uniformClass = "BNA_KC_Uniform_CL";
 
 //     linkedItems[] =
 //     {
