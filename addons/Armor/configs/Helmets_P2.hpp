@@ -252,7 +252,7 @@ class BNA_KC_Helmet_Phase2_CL: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_1LT: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_CL1: BNA_KC_Helmet_Phase2_Base
 {
     displayName = "[KC] INF P2 Helm 15 (1st Lieutenant)";
     hiddenSelectionsTextures[] =

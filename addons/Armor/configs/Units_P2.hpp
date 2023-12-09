@@ -367,10 +367,10 @@ class BNA_KC_Unit_Phase2_CL: BNA_KC_Unit_Phase2_WO
     };
 };
 
-class BNA_KC_Unit_Phase2_1LT: BNA_KC_Unit_Phase2_WO
+class BNA_KC_Unit_Phase2_CL1: BNA_KC_Unit_Phase2_WO
 {
     displayName = "INF 15 - Clone 1st Lieutenant";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_1LT);
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CL1);
 
     uniformClass = "BNA_KC_Uniform_CL";
     hiddenSelectionsTextures[] =
@@ -382,11 +382,11 @@ class BNA_KC_Unit_Phase2_1LT: BNA_KC_Unit_Phase2_WO
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_1LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        "BNA_KC_Helmet_Phase2_CL1", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_1LT", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        "BNA_KC_Helmet_Phase2_CL1", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 

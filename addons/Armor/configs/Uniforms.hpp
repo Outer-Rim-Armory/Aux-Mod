@@ -141,12 +141,12 @@ class BNA_KC_Uniform_CL: BNA_KC_Uniform_Base
     };
 };
 
-class BNA_KC_Uniform_1LT: BNA_KC_Uniform_Base
+class BNA_KC_Uniform_CL1: BNA_KC_Uniform_Base
 {
     displayName = "[KC] INF Armor 15 (1st Lieutenant)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_1LT";
+        uniformClass = "BNA_KC_Unit_Phase2_CL1";
     };
 };
 
