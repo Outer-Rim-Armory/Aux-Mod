@@ -248,7 +248,7 @@ class BNA_KC_Uniform_Officer_CamoGrey: BNA_KC_Uniform_Base
 
 class BNA_KC_Uniform_CXA: BNA_KC_Uniform_Base
 {
-    displayName = "[KC] AVI Armor 01+ (Airman)";
+    displayName = "[KC] AVI Armor 01 (Airman)";
 
     class ItemInfo: ItemInfo
     {
@@ -258,11 +258,11 @@ class BNA_KC_Uniform_CXA: BNA_KC_Uniform_Base
 
 class BNA_KC_Uniform_CXE: BNA_KC_Uniform_Base
 {
-    displayName = "[KC] AVI Armor 11+ (Ensign)";
+    displayName = "[KC] AVI Armor 11 (Ensign)";
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_Pilot_CXE";
+        uniformClass = "BNA_KC_Unit_Phase2_CXE";
     };
 };
 
