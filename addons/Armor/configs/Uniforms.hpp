@@ -246,6 +246,26 @@ class BNA_KC_Uniform_Officer_CamoGrey: BNA_KC_Uniform_Base
     };
 };
 
+class BNA_KC_Uniform_CXA: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] AVI Armor 01+ (Airman)";
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_CXA";
+    };
+};
+
+class BNA_KC_Uniform_CXE: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] AVI Armor 11+ (Ensign)";
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_Pilot_CXE";
+    };
+};
+
 class BNA_KC_Uniform_Phase2_Insulated_Base: BNA_KC_Uniform_Base
 {
     displayName = "[KC] INF P2 Snow Armor (Base)";
