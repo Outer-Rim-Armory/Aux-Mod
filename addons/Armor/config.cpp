@@ -64,6 +64,8 @@ class CfgPatches
             "BNA_KC_Unit_Phase2_Officer_CamoGrey",
             "BNA_KC_Unit_Phase2_Insulated_Base",
             "BNA_KC_Unit_Phase2_Insulated_CT",
+            "BNA_KC_Unit_Phase2_CXA",
+            "BNA_KC_Unit_Phase2_CXE",
             "BNA_KC_Uniform_CXA",
             "BNA_KC_Uniform_CXE"
         };
