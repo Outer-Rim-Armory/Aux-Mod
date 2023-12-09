@@ -247,7 +247,7 @@ class BNA_KC_Helmet_Phase2_CL: BNA_KC_Helmet_Phase2_Base
     displayName = "[KC] INF P2 Helm 14 (Lieutenant)";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\phase2\LT_camo1_co.paa),
+        QPATHTOF(data\helmets\phase2\CL_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
