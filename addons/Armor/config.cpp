@@ -65,7 +65,9 @@ class CfgPatches
             "BNA_KC_Unit_Phase2_Insulated_Base",
             "BNA_KC_Unit_Phase2_Insulated_CT",
             "BNA_KC_Unit_Phase2_CXA",
-            "BNA_KC_Unit_Phase2_CXE"
+            "BNA_KC_Unit_Phase2_CXE",
+            "BNA_KC_Unit_Phase1_Tanker_CT",
+            "BNA_KC_Unit_Phase2_Tanker_CT"
         };
         weapons[] =
         {
