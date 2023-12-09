@@ -266,6 +266,15 @@ class BNA_KC_Uniform_CXE: BNA_KC_Uniform_Base
     };
 };
 
+class BNA_KC_Uniform_Tanker_CT: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] ARMR Armor 01 (Trooper)";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_Phase2_Tanker_CT";
+    };
+};
+
 class BNA_KC_Uniform_Phase2_Insulated_Base: BNA_KC_Uniform_Base
 {
     displayName = "[KC] INF P2 Snow Armor (Base)";
