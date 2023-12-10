@@ -191,6 +191,8 @@ class CfgPatches
             "BNA_KC_Uniform_Phase2_Insulated_CT",
             "BNA_KC_Uniform_CXA",
             "BNA_KC_Uniform_CXE",
+            "BNA_KC_Uniform_ARC_CT",
+            "BNA_KC_Uniform_ARC_Enlisted_CamoNight",
             "BNA_KC_Vest_Basic"
         };
     };
