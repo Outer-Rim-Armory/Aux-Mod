@@ -8,10 +8,10 @@ class BNA_KC_Unit_Phase1_Tanker_CT: BNA_KC_Unit_Phase1_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_Tanker_CT", "BNA_KC_Vest_Recon", "lsd_gar_p1Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        "BNA_KC_Helmet_Phase1_Tanker_CT", "BNA_KC_Vest_Recon", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_Tanker_CT", "BNA_KC_Vest_Recon", "lsd_gar_p1Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        "BNA_KC_Helmet_Phase1_Tanker_CT", "BNA_KC_Vest_Recon", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
