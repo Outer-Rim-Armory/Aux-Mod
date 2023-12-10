@@ -141,6 +141,7 @@ class CfgPatches
             "BNA_KC_Helmet_ARC_Enlisted_CamoBrown",
             "BNA_KC_Helmet_ARC_Enlisted_CamoGrey",
             "BNA_KC_Helmet_ARC_Enlisted_CamoNight",
+            "BNA_KC_Helmet_Phase1_ARC_CT",
             "BNA_KC_Helmet_Airborne_Base",
             "BNA_KC_Helmet_Airborne_CT",
             "BNA_KC_Helmet_Airborne_CT_v2",

@@ -278,3 +278,14 @@ class BNA_KC_Helmet_Phase1_Officer_CamoGrey: BNA_KC_Helmet_Phase1_Base
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
 };
+
+class BNA_KC_Helmet_Phase1_ARC_CT: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] SF ARC P1 Helm 01 (Trooper)";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\ARC_CT_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
