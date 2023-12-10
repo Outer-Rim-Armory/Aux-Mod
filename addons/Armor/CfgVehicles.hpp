@@ -97,50 +97,6 @@ class CfgVehicles
         backpack = "";
     };
 
-    class BNA_KC_Unit_Phase1_Base: BNA_KC_Unit_Base
-    {
-        // Scope
-        scope = 2;
-        scopeCurator = 2;
-
-        // Editor Properties
-        editorSubcategory = "BNA_KC_INF_P1";
-        editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_Base);
-
-        displayName = "INF P1 Trooper (Base)";
-
-        uniformClass = "BNA_KC_Uniform_Base";
-    };
-
-    class BNA_KC_Unit_Phase2_Base: BNA_KC_Unit_Base
-    {
-        // Scope
-        scope = 2;
-        scopeCurator = 2;
-
-        // Editor Properties
-        editorSubcategory = "BNA_KC_INF_P2";
-        editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_Base);
-
-        // Uniform textures would be applied here ; default textures listed
-        uniformClass = "BNA_KC_Uniform_Base";
-        hiddenSelectionsTextures[] =
-        {
-            "\ls_armor_bluefor\uniform\gar\phase2\data\camo1_co.paa",
-            "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
-            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-        };
-
-        linkedItems[] =
-        {
-            "BNA_KC_Helmet_Phase2_Base", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
-        };
-        respawnLinkedItems[] =
-        {
-            "BNA_KC_Helmet_Phase2_Base", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
-        };
-    };
-
     #include "configs/Units_P1.hpp"
     #include "configs/Units_P2.hpp"
     #include "configs/Units_P1_Pilot.hpp"

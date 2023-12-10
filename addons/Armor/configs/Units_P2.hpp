@@ -1,3 +1,29 @@
+class BNA_KC_Unit_Phase2_Base: BNA_KC_Unit_Base
+{
+    SCOPE_PUBLIC;
+
+    // Editor Properties
+    editorSubcategory = "BNA_KC_INF_P2";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_Base);
+
+    uniformClass = "BNA_KC_Uniform_Base";
+    hiddenSelectionsTextures[] =
+    {
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo1_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Base", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Base", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class BNA_KC_Unit_Phase2_CR: BNA_KC_Unit_Phase2_Base
 {
     displayName = "INF 00 - Clone Recruit";

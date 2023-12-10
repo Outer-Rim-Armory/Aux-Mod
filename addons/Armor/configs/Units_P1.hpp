@@ -1,3 +1,16 @@
+class BNA_KC_Unit_Phase1_Base: BNA_KC_Unit_Base
+{
+    SCOPE_PUBLIC;
+
+    // Editor Properties
+    editorSubcategory = "BNA_KC_INF_P1";
+    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_Base);
+
+    displayName = "INF P1 Trooper (Base)";
+
+    uniformClass = "BNA_KC_Uniform_Base";
+};
+
 class BNA_KC_Unit_Phase1_CR: BNA_KC_Unit_Phase1_Base
 {
     displayName = "INF 00 - Clone Recruit";
