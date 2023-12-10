@@ -1,15 +1,18 @@
-# In-Dev
-Exported Textures/
-*.psd
-*.txt
+# HEMTT
+hemtt/
+.hemttout/
+releases/
 
-# Developer Files
+# Development
 !Developer Files
+references/
 
-# Workspace & Settings
-!.vscode/
-Tools/
-References/
+# Textures
+Exports/
+*.spp
+*.spp.painter_lock
+*.psd
 
 # Other
+# Move to optionals/
 BNA_KC_Memes

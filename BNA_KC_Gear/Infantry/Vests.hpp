@@ -425,6 +425,17 @@ class BNA_KC_Vest_Pauldron: BNA_KC_Vest_Officer
     };
 };
 
+class BNA_KC_Vest_WO: BNA_KC_Vest_Pauldron
+{
+    displayName = "[KC] INF Vest 11 (Warrant Officer)";
+
+    model = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Infantry\Data\Vests\Vest_WO.paa"
+    };
+};
+
 class BNA_KC_Vest_Kama: BNA_KC_Vest_Officer
 {
     displayName = "[KC] INF Vest XX (Kama)";
