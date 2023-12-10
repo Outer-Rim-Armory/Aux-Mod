@@ -1,6 +1,6 @@
 class BNA_KC_Unit_ARC_CT: BNA_KC_Unit_Phase2_Base
 {
-    displayName = "SF 01 - ARC Trooper";
+    displayName = "SF ARC 01 - Trooper";
     editorSubcategory = "BNA_KC_EdSubCat_SpecialForces";
     editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_ARC_CT);
 

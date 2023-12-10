@@ -277,7 +277,7 @@ class BNA_KC_Uniform_Tanker_CT: BNA_KC_Uniform_Base
 
 class BNA_KC_Uniform_ARC_CT: BNA_KC_Uniform_Base
 {
-    displayName = "[KC] SF Armor 01 (Trooper)";
+    displayName = "[KC] SF ARC Armor 01 (Trooper)";
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_ARC_CT";
@@ -286,7 +286,7 @@ class BNA_KC_Uniform_ARC_CT: BNA_KC_Uniform_Base
 
 class BNA_KC_Uniform_ARC_Enlisted_CamoNight: BNA_KC_Uniform_ARC_CT
 {
-    displayName = "[KC] SF Armor 01+ (Enlisted) - Night Camo";
+    displayName = "[KC] SF ARC Armor 01+ (Enlisted) - Night Camo";
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_ARC_Enlisted_CamoNight";
