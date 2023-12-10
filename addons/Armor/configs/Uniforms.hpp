@@ -293,6 +293,15 @@ class BNA_KC_Uniform_ARC_Enlisted_CamoNight: BNA_KC_Uniform_ARC_CT
     };
 };
 
+class BNA_KC_Uniform_ARF_CT: BNA_KC_Uniform_Base
+{
+    displayName = "[KC] SF ARF Armor 01 (Trooper)";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = "BNA_KC_Unit_ARF_CT";
+    };
+};
+
 class BNA_KC_Uniform_Phase2_Insulated_Base: BNA_KC_Uniform_Base
 {
     displayName = "[KC] INF P2 Snow Armor (Base)";
