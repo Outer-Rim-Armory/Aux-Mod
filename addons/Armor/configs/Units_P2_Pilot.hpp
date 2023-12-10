@@ -7,8 +7,8 @@ class BNA_KC_Unit_Phase2_CXA: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CXA";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CXA_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CXA_lower_co.paa),
+        QPATHTOF(data\uniforms\pilot\CXA_upper_co.paa),
+        QPATHTOF(data\uniforms\pilot\CXA_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
     linkedItems[] =
@@ -29,8 +29,8 @@ class BNA_KC_Unit_Phase2_CXE: BNA_KC_Unit_Phase2_CXA
     uniformClass = "BNA_KC_Uniform_CXE";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CXE_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CXE_lower_co.paa),
+        QPATHTOF(data\uniforms\pilot\CXE_upper_co.paa),
+        QPATHTOF(data\uniforms\pilot\CXE_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
     linkedItems[] =
