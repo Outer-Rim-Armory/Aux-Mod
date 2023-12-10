@@ -69,7 +69,9 @@ class CfgPatches
             "BNA_KC_Unit_Phase2_CXA",
             "BNA_KC_Unit_Phase2_CXE",
             "BNA_KC_Unit_Phase1_Tanker_CT",
-            "BNA_KC_Unit_Phase2_Tanker_CT"
+            "BNA_KC_Unit_Phase2_Tanker_CT",
+            "BNA_KC_Unit_ARC_CT",
+            "BNA_KC_Unit_ARC_Enlisted_CamoNight"
         };
         weapons[] =
         {
