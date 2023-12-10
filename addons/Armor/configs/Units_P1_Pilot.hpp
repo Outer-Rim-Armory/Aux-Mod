@@ -8,10 +8,10 @@ class BNA_KC_Unit_Phase1_CXA: BNA_KC_Unit_Phase2_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        "BNA_KC_Helmet_Phase1_Pilot_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        "BNA_KC_Helmet_Phase1_Pilot_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };

@@ -13,11 +13,11 @@ class BNA_KC_Unit_Phase2_CXA: BNA_KC_Unit_Phase2_Base
     };
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        "BNA_KC_Helmet_Phase2_Pilot_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        "BNA_KC_Helmet_Phase2_Pilot_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -35,10 +35,10 @@ class BNA_KC_Unit_Phase2_CXE: BNA_KC_Unit_Phase2_CXA
     };
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CXE", "BNA_KC_Vest_Officer", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        "BNA_KC_Helmet_Phase2_Pilot_CXE", "BNA_KC_Vest_Officer", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_CXE", "BNA_KC_Vest_Officer", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        "BNA_KC_Helmet_Phase2_Pilot_CXE", "BNA_KC_Vest_Officer", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
