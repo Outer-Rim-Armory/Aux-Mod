@@ -2,7 +2,7 @@ class BNA_KC_Unit_Jedi_Knight: BNA_KC_Unit_Base
 {
     SCOPE_HIDDEN;
     displayName = "Jedi Knight";
-    editorSubcategory = "BNA_KC_EdSubCat_Jedi";
+    editorSubcategory = "BNA_KC_EdSubCat_Special";
 
     uniformClass = "BNA_KC_Uniform_Jedi_Knight";
     model = "\lsd_armor_bluefor\uniform\gar\jediCommander\lsd_gar_jediCommander_uniform.p3d";
