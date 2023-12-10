@@ -98,10 +98,10 @@ class CfgVehicles
     };
 
     #include "configs/Units_P1.hpp"
-    #include "configs/Units_P2.hpp"
     #include "configs/Units_P1_Pilot.hpp"
-    #include "configs/Units_P2_Pilot.hpp"
     #include "configs/Units_P1_Tanker.hpp"
+    #include "configs/Units_P2.hpp"
+    #include "configs/Units_P2_Pilot.hpp"
     #include "configs/Units_P2_Tanker.hpp"
     #include "configs/Units_ARC.hpp"
     #include "configs/Units_ARF.hpp"
