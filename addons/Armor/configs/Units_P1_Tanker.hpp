@@ -1,7 +1,7 @@
 class BNA_KC_Unit_Phase1_Tanker_CT: BNA_KC_Unit_Phase1_Base
 {
     displayName = "ARMR P1 Tanker";
-    editorSubcategory = "BNA_KC_SubCat_Crewmen";
+    editorSubcategory = "BNA_KC_EdSubCat_Crewmen";
     editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_Tanker_CT);
 
     uniformClass = "BNA_KC_Uniform_Tanker_CT";

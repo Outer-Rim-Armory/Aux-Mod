@@ -1,7 +1,7 @@
 class BNA_KC_Unit_Phase2_CXA: BNA_KC_Unit_Phase2_Base
 {
     displayName = "AVI P2 Pilot 1 (Airman)";
-    editorSubcategory = "BNA_KC_SubCat_Crewmen";
+    editorSubcategory = "BNA_KC_EdSubCat_Crewmen";
     editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CXA);
 
     uniformClass = "BNA_KC_Uniform_CXA";
