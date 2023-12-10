@@ -32,8 +32,8 @@ class BNA_KC_Unit_Phase2_CR: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CR";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CR_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CR_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CR_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CR_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -55,8 +55,8 @@ class BNA_KC_Unit_Phase2_CT: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CT";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CT_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CT_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CT_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CT_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -78,8 +78,8 @@ class BNA_KC_Unit_Phase2_CT_Legacy: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CT_Legacy";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CT_legacy_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CT_legacy_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CT_legacy_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CT_legacy_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -95,8 +95,8 @@ class BNA_KC_Unit_Phase2_SCT: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_SCT";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\SCT_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\SCT_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\SCT_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\SCT_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -118,8 +118,8 @@ class BNA_KC_Unit_Phase2_VCT: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_VCT";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\VCT_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\VCT_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\VCT_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\VCT_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -143,8 +143,8 @@ class BNA_KC_Unit_Phase2_CLC: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CLC";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CLC_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CLC_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CLC_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CLC_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -166,8 +166,8 @@ class BNA_KC_Unit_Phase2_CPL: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CPL";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CPL_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CPL_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CPL_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CPL_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -191,8 +191,8 @@ class BNA_KC_Unit_Phase2_CS: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CS";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CS_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CS_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CS_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CS_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -214,8 +214,8 @@ class BNA_KC_Unit_Phase2_CSS: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CSS";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CSS_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CSS_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CSS_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CSS_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -237,8 +237,8 @@ class BNA_KC_Unit_Phase2_CSFC: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CSFC";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CSFC_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CSFC_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CSFC_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CSFC_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -260,8 +260,8 @@ class BNA_KC_Unit_Phase2_CMS: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CSFC";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CMS_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CMS_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CMS_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CMS_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -283,8 +283,8 @@ class BNA_KC_Unit_Phase2_CSM: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_CSM";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CSM_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CSM_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CSM_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CSM_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -307,8 +307,8 @@ class BNA_KC_Unit_Phase2_WO: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_WO";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\WO_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\WO_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\WO_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\WO_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -332,8 +332,8 @@ class BNA_KC_Unit_Phase2_WO2: BNA_KC_Unit_Phase2_WO
     uniformClass = "BNA_KC_Uniform_WO2";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\WO2_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\WO2_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\WO2_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\WO2_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -355,8 +355,8 @@ class BNA_KC_Unit_Phase2_WO3: BNA_KC_Unit_Phase2_WO
     uniformClass = "BNA_KC_Uniform_WO";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\WO3_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\WO3_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\WO3_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\WO3_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -378,8 +378,8 @@ class BNA_KC_Unit_Phase2_CL: BNA_KC_Unit_Phase2_WO
     uniformClass = "BNA_KC_Uniform_CL";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CL_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CL_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CL_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CL_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -401,8 +401,8 @@ class BNA_KC_Unit_Phase2_CL1: BNA_KC_Unit_Phase2_WO
     uniformClass = "BNA_KC_Uniform_CL";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\CL1_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CL1_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CL1_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CL1_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -423,8 +423,8 @@ class BNA_KC_Unit_Phase2_CL1: BNA_KC_Unit_Phase2_WO
 //     uniformClass = "BNA_KC_Uniform_CAP";
 //     hiddenSelectionsTextures[] =
 //     {
-//         QPATHTOF(data\uniforms\standard\CAP_upper_co.paa),
-//         QPATHTOF(data\uniforms\standard\CAP_lower_co.paa),
+//         QPATHTOF(data\uniforms\infantry\CAP_upper_co.paa),
+//         QPATHTOF(data\uniforms\infantry\CAP_lower_co.paa),
 //         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 //     };
 
@@ -445,8 +445,8 @@ class BNA_KC_Unit_Phase2_CL1: BNA_KC_Unit_Phase2_WO
 //     uniformClass = "BNA_KC_Uniform_MAJ";
 //     hiddenSelectionsTextures[] =
 //     {
-//         QPATHTOF(data\uniforms\standard\MAJ_upper_co.paa),
-//         QPATHTOF(data\uniforms\standard\MAJ_lower_co.paa),
+//         QPATHTOF(data\uniforms\infantry\MAJ_upper_co.paa),
+//         QPATHTOF(data\uniforms\infantry\MAJ_lower_co.paa),
 //         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 //     };
 
@@ -467,8 +467,8 @@ class BNA_KC_Unit_Phase2_CL1: BNA_KC_Unit_Phase2_WO
 //     uniformClass = "BNA_KC_Uniform_CMD";
 //     hiddenSelectionsTextures[] =
 //     {
-//         QPATHTOF(data\uniforms\standard\CMD_upper_co.paa),
-//         QPATHTOF(data\uniforms\standard\CMD_lower_co.paa),
+//         QPATHTOF(data\uniforms\infantry\CMD_upper_co.paa),
+//         QPATHTOF(data\uniforms\infantry\CMD_lower_co.paa),
 //         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
 //     };
 
@@ -489,8 +489,8 @@ class BNA_KC_Unit_Phase2_Recruit_CamoBrown: BNA_KC_Unit_Phase2_Base
     uniformClass = "BNA_KC_Uniform_Recruit_CamoBrown";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\camo\brown\Recruit_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\camo\brown\Recruit_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\brown\Recruit_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\brown\Recruit_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
@@ -499,8 +499,8 @@ class BNA_KC_Unit_Phase2_Recruit_CamoGrey: BNA_KC_Unit_Phase2_Recruit_CamoBrown
     uniformClass = "BNA_KC_Uniform_Recruit_CamoGrey";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\camo\grey\Recruit_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\camo\grey\Recruit_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\grey\Recruit_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\grey\Recruit_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
@@ -510,8 +510,8 @@ class BNA_KC_Unit_Phase2_Enlisted_CamoBrown: BNA_KC_Unit_Phase2_Recruit_CamoBrow
     uniformClass = "BNA_KC_Uniform_Enlisted_CamoBrown";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\camo\brown\Enlisted_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\camo\brown\Enlisted_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\brown\Enlisted_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\brown\Enlisted_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
@@ -520,8 +520,8 @@ class BNA_KC_Unit_Phase2_Enlisted_CamoGrey: BNA_KC_Unit_Phase2_Recruit_CamoBrown
     uniformClass = "BNA_KC_Uniform_Enlisted_CamoGrey";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\camo\grey\Enlisted_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\camo\grey\Enlisted_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\grey\Enlisted_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\grey\Enlisted_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
@@ -531,8 +531,8 @@ class BNA_KC_Unit_Phase2_NCO_CamoBrown: BNA_KC_Unit_Phase2_Recruit_CamoBrown
     uniformClass = "BNA_KC_Uniform_NCO_CamoBrown";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\camo\brown\NCO_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\camo\brown\NCO_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\brown\NCO_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\brown\NCO_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
@@ -541,8 +541,8 @@ class BNA_KC_Unit_Phase2_NCO_CamoGrey: BNA_KC_Unit_Phase2_Recruit_CamoBrown
     uniformClass = "BNA_KC_Uniform_NCO_CamoGrey";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\camo\grey\NCO_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\camo\grey\NCO_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\grey\NCO_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\grey\NCO_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
@@ -552,8 +552,8 @@ class BNA_KC_Unit_Phase2_Officer_CamoBrown: BNA_KC_Unit_Phase2_Recruit_CamoBrown
     uniformClass = "BNA_KC_Uniform_Officer_CamoBrown";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\camo\brown\Officer_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\camo\brown\Officer_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\brown\Officer_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\brown\Officer_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
@@ -562,8 +562,8 @@ class BNA_KC_Unit_Phase2_Officer_CamoGrey: BNA_KC_Unit_Phase2_Recruit_CamoBrown
     uniformClass = "BNA_KC_Uniform_Officer_CamoGrey";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\camo\grey\Officer_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\camo\grey\Officer_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\grey\Officer_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\camo\grey\Officer_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
