@@ -352,8 +352,8 @@ class BNA_KC_Unit_Phase2_CL: BNA_KC_Unit_Phase2_WO
     uniformClass = "BNA_KC_Uniform_CL";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\LT_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\LT_lower_co.paa),
+        QPATHTOF(data\uniforms\standard\CL_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\CL_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
@@ -375,8 +375,8 @@ class BNA_KC_Unit_Phase2_CL1: BNA_KC_Unit_Phase2_WO
     uniformClass = "BNA_KC_Uniform_CL";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\1LT_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\1LT_lower_co.paa),
+        QPATHTOF(data\uniforms\standard\CL1_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\CL1_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
