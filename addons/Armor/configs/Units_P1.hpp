@@ -3,7 +3,7 @@ class BNA_KC_Unit_Phase1_Base: BNA_KC_Unit_Base
     SCOPE_PUBLIC;
 
     // Editor Properties
-    editorSubcategory = "BNA_KC_INF_P1";
+    editorSubcategory = "BNA_KC_EdSubCat_INF_P1";
     editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_Base);
 
     displayName = "INF P1 Trooper (Base)";

@@ -3,7 +3,7 @@ class BNA_KC_Unit_Phase2_Base: BNA_KC_Unit_Base
     SCOPE_PUBLIC;
 
     // Editor Properties
-    editorSubcategory = "BNA_KC_INF_P2";
+    editorSubcategory = "BNA_KC_EdSubCat_INF_P2";
     editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_Base);
 
     uniformClass = "BNA_KC_Uniform_Base";
