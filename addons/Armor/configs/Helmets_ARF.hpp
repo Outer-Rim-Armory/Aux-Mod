@@ -48,7 +48,7 @@ class BNA_KC_Helmet_ARF_Enlisted_CamoBrown: BNA_KC_Helmet_ARF_CT
     displayName = "[KC] SF ARF Helm 01+ (Enlisted) - Brown Camo";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\arf\camo\brown\CT_camo1_co.paa),
+        QPATHTOF(data\helmets\arf\camo\brown\Enlisted_camo1_co.paa),
         "",
         "\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
     };
@@ -59,7 +59,7 @@ class BNA_KC_Helmet_ARF_Enlisted_CamoGrey: BNA_KC_Helmet_ARF_CT
     displayName = "[KC] SF ARF Helm 01+ (Enlisted) - Brown Camo";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\arf\camo\grey\CT_camo1_co.paa),
+        QPATHTOF(data\helmets\arf\camo\grey\Enlisted_camo1_co.paa),
         "",
         "\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
     };
