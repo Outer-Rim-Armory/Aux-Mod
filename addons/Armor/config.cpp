@@ -75,7 +75,19 @@ class CfgPatches
             "BNA_KC_Unit_ARF_CT",
             "BNA_KC_Unit_Commando_Base",
             "BNA_KC_Unit_Jedi_Knight",
-            "BNA_KC_Unit_Jedi_Commander"
+            "BNA_KC_Unit_Jedi_Commander",
+            "BNA_KC_Backpack_Base",
+            "BNA_KC_Backpack",
+            "BNA_KC_Backpack_Heavy_Base",
+            "BNA_KC_Backpack_Heavy",
+            "BNA_KC_Backpack_Radio_Base",
+            "BNA_KC_Backpack_Radio",
+            "BNA_KC_Backpack_Medic_Base",
+            "BNA_KC_Backpack_Medic",
+            "BNA_KC_Backpack_Medic_Heavy_Base",
+            "BNA_KC_Backpack_Medic_Heavy",
+            "BNA_KC_Backpack_Medic_Radio_Base",
+            "BNA_KC_Backpack_Medic_Radio"
         };
         weapons[] =
         {
