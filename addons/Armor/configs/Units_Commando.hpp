@@ -1,6 +1,6 @@
 class BNA_KC_Unit_Commando_Base: BNA_KC_Unit_ARC_CT
 {
-    displayName = "SF Commando - Base"
+    displayName = "SF Commando - Base";
     editorPreview = "\SWLB_clones_spec\data\ui\editorPreviews\SWLB_clone_commando_base.jpg";
 
     uniformClass = "BNA_KC_Uniform_Commando_Base";
