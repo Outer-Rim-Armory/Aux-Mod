@@ -87,7 +87,9 @@ class CfgPatches
             "BNA_KC_Backpack_Medic_Heavy_Base",
             "BNA_KC_Backpack_Medic_Heavy",
             "BNA_KC_Backpack_Medic_Radio_Base",
-            "BNA_KC_Backpack_Medic_Radio"
+            "BNA_KC_Backpack_Medic_Radio",
+            "BNA_KC_Backpack_Radio_Mini_Base",
+            "BNA_KC_Backpack_Radio_Mini"
         };
         weapons[] =
         {
