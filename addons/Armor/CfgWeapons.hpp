@@ -49,6 +49,7 @@ class CfgWeapons
     };
 
     #include "configs/Uniforms.hpp"
+    #include "configs/Uniforms_Commando.hpp"
     #include "configs/Uniforms_Jedi.hpp"
 
     class V_PlateCarrier1_rgr;
