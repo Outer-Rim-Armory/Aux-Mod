@@ -73,6 +73,7 @@ class CfgPatches
             "BNA_KC_Unit_ARC_CT",
             "BNA_KC_Unit_ARC_Enlisted_CamoNight",
             "BNA_KC_Unit_ARF_CT",
+            "BNA_KC_Unit_Commando_Base",
             "BNA_KC_Unit_Jedi_Knight",
             "BNA_KC_Unit_Jedi_Commander"
         };
@@ -208,6 +209,7 @@ class CfgPatches
             "BNA_KC_Uniform_ARC_CT",
             "BNA_KC_Uniform_ARC_Enlisted_CamoNight",
             "BNA_KC_Uniform_ARF_CT",
+            "BNA_KC_Uniform_Commando_Base",
             "BNA_KC_Uniform_Jedi_Knight",
             "BNA_KC_Uniform_Jedi_Commander",
             "BNA_KC_Vest_Basic"
