@@ -284,29 +284,29 @@ class CfgVehicles
         };
         picture = QPATHTOF(data\ui\Backpack_Medic_Radio_ca.paa);
     };
-};
 
-class BNA_KC_Backpack_Radio_Mini_Base: BNA_KC_Backpack_Radio_Base
-{
-    displayName = "[KC] INF Radio Attachment (Base)";
-
-    model = "\SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
-    hiddenSelections[] = {"main", "accumulator"};
-    hiddenSelectionsTextures[] =
+    class BNA_KC_Backpack_Radio_Mini_Base: BNA_KC_Backpack_Radio_Base
     {
-        "\SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_co.paa",
-        "\SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_accumulator_co.paa"
-    };
-    picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_RTO_mini_backpack_ca.paa";
-};
+        displayName = "[KC] INF Radio Attachment (Base)";
 
-class BNA_KC_Backpack_Radio_Mini: BNA_KC_Backpack_Radio_Mini_Base
-{
-    displayName = "[KC] INF Radio Attachment";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\backpacks\miniRadio\camo1_co.paa),
-        QPATHTOF(data\backpacks\miniRadio\camo2_co.paa)
+        model = "\SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
+        hiddenSelections[] = {"main", "accumulator"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_co.paa",
+            "\SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_accumulator_co.paa"
+        };
+        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_RTO_mini_backpack_ca.paa";
     };
-    picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
+
+    class BNA_KC_Backpack_Radio_Mini: BNA_KC_Backpack_Radio_Mini_Base
+    {
+        displayName = "[KC] INF Radio Attachment";
+        hiddenSelectionsTextures[] =
+        {
+            QPATHTOF(data\backpacks\miniRadio\camo1_co.paa),
+            QPATHTOF(data\backpacks\miniRadio\camo2_co.paa)
+        };
+        picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
+    };
 };
