@@ -31,6 +31,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] DC-17M (Base)";
+        baseWeapon = "BNA_KC_DC17M_Base";
 
         modes[] = {"FullAuto", "Single"};
         muzzles[] = {"this", "Stun"};
@@ -149,6 +150,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] DC-17M";
+        baseWeapon = "BNA_KC_DC17M";
     };
 };
 

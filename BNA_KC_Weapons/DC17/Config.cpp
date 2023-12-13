@@ -233,9 +233,9 @@ class CfgWeapons
     class BNA_KC_DC17_RiotShield_Fried: BNA_KC_DC17_RiotShield
     {
         displayName = "[KC] DC-17 (Fried)";
+        baseWeapon = "BNA_KC_DC17_RiotShield_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
-        baseWeapon = "BNA_KC_DC17_RiotShield_Fried";
 
         JLTS_isFried = 1;
         magazines[] = {};
@@ -258,8 +258,8 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] GR-20";
-        descriptionShort = "A GR-10 modified to shoot pressurized<br/>bacta canisters instead of plasma.";
         baseWeapon = "BNA_KC_GR20";
+        descriptionShort = "A GR-10 modified to shoot pressurized<br/>bacta canisters instead of plasma.";
 
         JLTS_canHaveShield = 0;
         JLTS_friedItem = "BNA_KC_GR20_Fried";
@@ -284,9 +284,9 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] GR-20 (Fried)";
+        baseWeapon = "BNA_KC_GR20_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
-        baseWeapon = "BNA_KC_GR20_Fried";
 
         JLTS_isFried = 1;
 

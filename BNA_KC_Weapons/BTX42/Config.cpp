@@ -15,6 +15,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] BlastTech X-42 Flamethrower (Base)";
+        baseWeapon = "BNA_KC_BTX42_Base";
 
         // Model
         model = "3AS\3AS_Weapons\X42\BX42.p3d";
@@ -41,13 +42,15 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] BlastTech X-42 Flamethrower";
-        magazines[] = { "BNA_KC_Mag_300Rnd_BTX42" };
+        baseWeapon = "BNA_KC_BTX42";
+        magazines[] = {"BNA_KC_Mag_300Rnd_BTX42"};
     };
 
     class BNA_KC_BTX45_Heavy: BNA_KC_BTX42
     {
         displayName = "[KC] BlastTech X-45 Heavy Flamethrower";
-        magazines[] = { "BNA_KC_Mag_150Rnd_BTX42" };
+        baseWeapon = "BNA_KC_BTX45_Heavy";
+        magazines[] = {"BNA_KC_Mag_150Rnd_BTX42"};
 
         WBK_BurnEm_FlamethrowerDistance = 40;
     };

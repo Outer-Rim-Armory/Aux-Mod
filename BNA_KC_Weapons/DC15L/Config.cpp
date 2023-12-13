@@ -118,8 +118,8 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] DC-15L (Fried)";
-        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         baseWeapon = "BNA_KC_DC15L_Fried";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\BNA_KC_Weapons\DC15L\Data\Textures\UI\DC15L_Fried_UI.paa";
 
         JLTS_isFried = 1;

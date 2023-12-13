@@ -106,9 +106,9 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] DP-23 (Fried)";
+        baseWeapon = "BNA_KC_DP23_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_fried_ui_ca.paa";
-        baseWeapon = "BNA_KC_DP23_Fried";
 
         JLTS_shieldedWeapon = "BNA_KC_DP23_RiotShield_Fried";
         JLTS_isFried = 1;

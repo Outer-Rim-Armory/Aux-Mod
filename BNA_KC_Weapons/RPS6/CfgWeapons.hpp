@@ -17,6 +17,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] RPS-6 (Base)";
+        baseWeapon = "BNA_KC_RPS6_Base";
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
@@ -46,6 +47,7 @@ class CfgWeapons
     class BNA_KC_RPS6_Disposable: BNA_KC_RPS6_Base
     {
         displayName = "[KC] RPS-6";
+        baseWeapon = "BNA_KC_RPS6_Disposable";
         descriptionShort = "Single-use Rocket Tube";
         JLTS_friedItem = "BNA_KC_RPS6_Fried";
         magazineReloadTime = 0.1;
@@ -62,6 +64,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
+        baseWeapon = "BNA_KC_RPS6_Loaded";
         magazines[] = {"CBA_FakeLauncherMagazine"};
 
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -77,6 +80,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] RPS-6 (Used)";
+        baseWeapon = "BNA_KC_RPS6_Used";
         descriptionShort = "Used Rocket Tube";
         magazines[] = {"CBA_FakeLauncherMagazine"};
     };
@@ -88,6 +92,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] RPS-6 (Fried)";
+        baseWeapon = "BNA_KC_RPS6_Disposable_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\BNA_KC_Weapons\RPS6\data\ui\RPS6_Fried_ca.paa";
 
@@ -112,6 +117,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] RPS-7 (Base)";
+        baseWeapon = "BNA_KC_RPS7_Base";
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
@@ -145,6 +151,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] RPS-7";
+        baseWeapon = "BNA_KC_RPS7";
         JLTS_friedItem = "BNA_KC_RPS7_Fried";
     };
 
@@ -155,6 +162,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] RPS-7 (Fried)";
+        baseWeapon = "BNA_KC_RPS7_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\RPS6\data\ui\RPS6_fried_ui_ca.paa";
 

@@ -10,6 +10,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] Z-6 (Base)";
+        baseWeapon = "BNA_KC_Z6_Base";
 
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2"};
         muzzles[] = {"this"};
@@ -27,6 +28,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] Z-6";
+        baseWeapon = "BNA_KC_Z6";
     };
 
     class BNA_KC_Z6_Fried: BNA_KC_Z6
