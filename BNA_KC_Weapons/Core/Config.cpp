@@ -90,7 +90,7 @@ class CfgAmmo
 
     class Aux12thFleet_Ammo_AutoRifle_Blue: Aux12thFleet_Ammo_Rifle_Blue
     {
-        hit = 17.5;
+        hit = 19;
         caliber = 2.8;
         tracerscale = 1.5;
     };
