@@ -22,6 +22,7 @@ class CfgVehicles
 
         displayName = "Khezu (Unarmed)";
 
+        armor = 200;
         fuelCapacity = 82.5;
         fuelConsumptionRate = 0.01;
 

@@ -27,6 +27,7 @@ class CfgVehicles
 
         weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
+        armor = 200;
         fuelCapacity = 82.5;
         fuelConsumptionRate = 0.01;
 
