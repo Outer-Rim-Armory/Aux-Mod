@@ -27,6 +27,9 @@ class CfgVehicles
 
         weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
 
+        fuelCapacity = 82.5;
+        fuelConsumptionRate = 0.01;
+
         hiddenSelectionsTextures[] = {};
         textureList[] = {"KeeliCompany", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources

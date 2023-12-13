@@ -22,6 +22,9 @@ class CfgVehicles
 
         displayName = "Khezu (Unarmed)";
 
+        fuelCapacity = 82.5;
+        fuelConsumptionRate = 0.01;
+
         maxSpeed = 135;
         enginePower = 276;
         engineMOI = 1.0;
