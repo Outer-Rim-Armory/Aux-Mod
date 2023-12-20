@@ -324,7 +324,7 @@ class CLASS(Unit_Phase2_WO): CLASS(Unit_Phase2_Base)
     backpack = QCLASS(Backpack_Radio_Mini);
 };
 
-class CLASS(Unit_Phase2_WO2): CLASS(Unit_Phase2_WO)
+class CLASS(Unit_Phase2_WO2): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 12 - Clone Warrant Officer 2";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_WO2));
@@ -347,7 +347,7 @@ class CLASS(Unit_Phase2_WO2): CLASS(Unit_Phase2_WO)
     };
 };
 
-class CLASS(Unit_Phase2_WO3): CLASS(Unit_Phase2_WO)
+class CLASS(Unit_Phase2_WO3): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 13 - Clone Warrant Officer 3";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_WO3));
@@ -370,7 +370,7 @@ class CLASS(Unit_Phase2_WO3): CLASS(Unit_Phase2_WO)
     };
 };
 
-class CLASS(Unit_Phase2_CL): CLASS(Unit_Phase2_WO)
+class CLASS(Unit_Phase2_CL): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 14 - Clone Lieutenant";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CL));
@@ -393,7 +393,7 @@ class CLASS(Unit_Phase2_CL): CLASS(Unit_Phase2_WO)
     };
 };
 
-class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_WO)
+class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 15 - Clone 1st Lieutenant";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CL1));
@@ -416,7 +416,7 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_WO)
     };
 };
 
-// class CLASS(Unit_Phase2_CAP): CLASS(Unit_Phase2_WO)
+// class CLASS(Unit_Phase2_CAP): CLASS(Unit_Phase2_Base)
 // {
 //     displayName = "INF 16 - Clone Captain";
 
@@ -438,7 +438,7 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_WO)
 //     };
 // };
 
-// class CLASS(Unit_Phase2_MAJ): CLASS(Unit_Phase2_WO)
+// class CLASS(Unit_Phase2_MAJ): CLASS(Unit_Phase2_Base)
 // {
 //     displayName = "INF 17 - Clone Major";
 
@@ -460,7 +460,7 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_WO)
 //     };
 // };
 
-// class CLASS(Unit_Phase2_CMD): CLASS(Unit_Phase2_WO)
+// class CLASS(Unit_Phase2_CMD): CLASS(Unit_Phase2_Base)
 // {
 //     displayName = "INF 18 - Clone Commander";
 
