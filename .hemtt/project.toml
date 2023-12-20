@@ -4,7 +4,7 @@ prefix = "BNA_KC"
 mainprefix = "BNA"
 
 [version]
-path = "addons/main/script_version.hpp"
+path = "addons/Core/script_version.hpp"
 git_hash = 0
 
 [files]

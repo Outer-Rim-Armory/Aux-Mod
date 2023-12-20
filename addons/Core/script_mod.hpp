@@ -2,7 +2,7 @@
 #define PREFIX BNA_KC
 #define MOD_NAME Keeli Company Auxillary Mod
 
-#include "\BNA\BNA_KC\addons\Main\script_version.hpp"
+#include "\BNA\BNA_KC\addons\Core\script_version.hpp"
 
 #define REQUIRED_VERSION 2.14
 

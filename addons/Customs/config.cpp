@@ -13,7 +13,7 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            QCLASS(Main),
+            QCLASS(Core),
             QCLASS(Armor)
         };
         units[] = {};
