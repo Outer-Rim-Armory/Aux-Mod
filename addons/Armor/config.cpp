@@ -7,9 +7,10 @@
 
 class CfgPatches
 {
-    class BNA_KC_Armor
+    class ADDON
     {
         author = "SweMonkey and DartRuffian";
+        name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
@@ -228,5 +229,6 @@ class CfgPatches
             "BNA_KC_Uniform_Jedi_Commander",
             "BNA_KC_Vest_Basic"
         };
+        VERSION_CONFIG;
     };
 };

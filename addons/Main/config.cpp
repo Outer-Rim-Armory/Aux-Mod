@@ -4,9 +4,10 @@
 
 class CfgPatches
 {
-    class BNA_KC_Main
+    class ADDON
     {
         author = "SweMonkey and DartRuffian";
+        name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
@@ -15,5 +16,6 @@ class CfgPatches
         };
         units[] = {};
         weapons[] = {};
+        VERSION_CONFIG;
     };
 };
