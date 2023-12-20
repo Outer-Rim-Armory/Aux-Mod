@@ -1,4 +1,4 @@
-class BNA_KC_Helmet_BARC_Base: BNA_KC_Helmet_Base
+class CLASS(Helmet_BARC_Base): CLASS(Helmet_Base)
 {
     SCOPE_PUBLIC;
 
@@ -20,7 +20,7 @@ class BNA_KC_Helmet_BARC_Base: BNA_KC_Helmet_Base
     };
 };
 
-class BNA_KC_Helmet_BARC_CT: BNA_KC_Helmet_BARC_Base
+class CLASS(Helmet_BARC_CT): CLASS(Helmet_BARC_Base)
 {
     displayName = "[KC] SF BARC Helm 01 (Trooper)";
     hiddenSelectionsTextures[] =

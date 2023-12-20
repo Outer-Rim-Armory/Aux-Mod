@@ -1,321 +1,321 @@
-class BNA_KC_Uniform_CR: BNA_KC_Uniform_Base
+class CLASS(Uniform_CR): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 00 (Recruit)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CR";
+        uniformClass = QCLASS(Unit_Phase2_CR);
     };
 };
 
-class BNA_KC_Uniform_CT: BNA_KC_Uniform_Base
+class CLASS(Uniform_CT): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 01 (Trooper)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CT";
+        uniformClass = QCLASS(Unit_Phase2_CT);
     };
 };
-class BNA_KC_Uniform_CT_Legacy: BNA_KC_Uniform_Base
+class CLASS(Uniform_CT_Legacy): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 01 (Trooper, Legacy)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CT_Legacy";
+        uniformClass = QCLASS(Unit_Phase2_CT_Legacy);
     };
 };
 
-class BNA_KC_Uniform_SCT: BNA_KC_Uniform_Base
+class CLASS(Uniform_SCT): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 02 (Senior Trooper)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_SCT";
+        uniformClass = QCLASS(Unit_Phase2_SCT);
     };
 };
 
-class BNA_KC_Uniform_VCT: BNA_KC_Uniform_Base
+class CLASS(Uniform_VCT): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 03 (Veteran Trooper)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_VCT";
+        uniformClass = QCLASS(Unit_Phase2_VCT);
     };
 };
 
-class BNA_KC_Uniform_CLC: BNA_KC_Uniform_Base
+class CLASS(Uniform_CLC): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 04 (Lance Corporal)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CLC";
+        uniformClass = QCLASS(Unit_Phase2_CLC);
     };
 };
 
-class BNA_KC_Uniform_CPL: BNA_KC_Uniform_Base
+class CLASS(Uniform_CPL): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 05 (Corporal)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CPL";
+        uniformClass = QCLASS(Unit_Phase2_CPL);
     };
 };
 
-class BNA_KC_Uniform_CS: BNA_KC_Uniform_Base
+class CLASS(Uniform_CS): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 06 (Sergeant)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CS";
+        uniformClass = QCLASS(Unit_Phase2_CS);
     };
 };
 
-class BNA_KC_Uniform_CSS: BNA_KC_Uniform_Base
+class CLASS(Uniform_CSS): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 07 (Staff Sergeant)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CSS";
+        uniformClass = QCLASS(Unit_Phase2_CSS);
     };
 };
 
-class BNA_KC_Uniform_CSFC: BNA_KC_Uniform_Base
+class CLASS(Uniform_CSFC): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 08 (Sergeant First Class)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CSFC";
+        uniformClass = QCLASS(Unit_Phase2_CSFC);
     };
 };
 
-class BNA_KC_Uniform_CMS: BNA_KC_Uniform_Base
+class CLASS(Uniform_CMS): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 09 (Master Sergeant)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CMS";
+        uniformClass = QCLASS(Unit_Phase2_CMS);
     };
 };
 
-class BNA_KC_Uniform_CSM: BNA_KC_Uniform_Base
+class CLASS(Uniform_CSM): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 10 (Sergeant Major)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CSM";
+        uniformClass = QCLASS(Unit_Phase2_CSM);
     };
 };
 
-class BNA_KC_Uniform_WO: BNA_KC_Uniform_Base
+class CLASS(Uniform_WO): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 11 (Warrant Officer)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_WO";
+        uniformClass = QCLASS(Unit_Phase2_WO);
     };
 };
 
-class BNA_KC_Uniform_WO2: BNA_KC_Uniform_Base
+class CLASS(Uniform_WO2): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 12 (Warrant Officer 2)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_WO2";
+        uniformClass = QCLASS(Unit_Phase2_WO2);
     };
 };
 
-class BNA_KC_Uniform_WO3: BNA_KC_Uniform_Base
+class CLASS(Uniform_WO3): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 13 (Warrant Officer 3)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_WO3";
+        uniformClass = QCLASS(Unit_Phase2_WO3);
     };
 };
 
-class BNA_KC_Uniform_CL: BNA_KC_Uniform_Base
+class CLASS(Uniform_CL): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 14 (Lieutenant)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CL";
+        uniformClass = QCLASS(Unit_Phase2_CL);
     };
 };
 
-class BNA_KC_Uniform_CL1: BNA_KC_Uniform_Base
+class CLASS(Uniform_CL1): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 15 (1st Lieutenant)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CL1";
+        uniformClass = QCLASS(Unit_Phase2_CL1);
     };
 };
 
-// class BNA_KC_Uniform_CAP: BNA_KC_Uniform_Base
+// class CLASS(Uniform_CAP): CLASS(Uniform_Base)
 // {
 //     displayName = "[KC] INF Armor 16 (Captain)";
 //     class ItemInfo: ItemInfo
 //     {
-//         uniformClass = "BNA_KC_Unit_Phase2_CAP";
+//         uniformClass = QCLASS(Unit_Phase2_CAP);
 //     };
 // };
 
-// class BNA_KC_Uniform_MAJ: BNA_KC_Uniform_Base
+// class CLASS(Uniform_MAJ): CLASS(Uniform_Base)
 // {
 //     displayName = "[KC] INF Armor 17 (Major)";
 //     class ItemInfo: ItemInfo
 //     {
-//         uniformClass = "BNA_KC_Unit_Phase2_MAJ";
+//         uniformClass = QCLASS(Unit_Phase2_MAJ);
 //     };
 // };
 
-// class BNA_KC_Uniform_CMD: BNA_KC_Uniform_Base
+// class CLASS(Uniform_CMD): CLASS(Uniform_Base)
 // {
 //     displayName = "[KC] INF Armor 18 (Commander)";
 //     class ItemInfo: ItemInfo
 //     {
-//         uniformClass = "BNA_KC_Unit_Phase2_CMD";
+//         uniformClass = QCLASS(Unit_Phase2_CMD);
 //     };
 // };
 
 // Camo Uniforms
-class BNA_KC_Uniform_Recruit_CamoBrown: BNA_KC_Uniform_Base
+class CLASS(Uniform_Recruit_CamoBrown): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 00 (Recruit) - Brown Camo";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_Recruit_CamoBrown";
+        uniformClass = QCLASS(Unit_Phase2_Recruit_CamoBrown);
     };
 };
-class BNA_KC_Uniform_Recruit_CamoGrey: BNA_KC_Uniform_Base
+class CLASS(Uniform_Recruit_CamoGrey): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 00 (Recruit) - Grey Camo";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_Recruit_CamoGrey";
+        uniformClass = QCLASS(Unit_Phase2_Recruit_CamoGrey);
     };
 };
 
-class BNA_KC_Uniform_Enlisted_CamoBrown: BNA_KC_Uniform_Base
+class CLASS(Uniform_Enlisted_CamoBrown): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 01+ (Enlisted) - Brown Camo";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_Enlisted_CamoBrown";
+        uniformClass = QCLASS(Unit_Phase2_Enlisted_CamoBrown);
     };
 };
-class BNA_KC_Uniform_Enlisted_CamoGrey: BNA_KC_Uniform_Base
+class CLASS(Uniform_Enlisted_CamoGrey): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 01+ (Enlisted) - Grey Camo";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_Enlisted_CamoGrey";
+        uniformClass = QCLASS(Unit_Phase2_Enlisted_CamoGrey);
     };
 };
 
-class BNA_KC_Uniform_NCO_CamoBrown: BNA_KC_Uniform_Base
+class CLASS(Uniform_NCO_CamoBrown): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 06+ (NCO) - Brown Camo";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_NCO_CamoBrown";
+        uniformClass = QCLASS(Unit_Phase2_NCO_CamoBrown);
     };
 };
-class BNA_KC_Uniform_NCO_CamoGrey: BNA_KC_Uniform_Base
+class CLASS(Uniform_NCO_CamoGrey): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 06+ (NCO) - Grey Camo";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_NCO_CamoGrey";
+        uniformClass = QCLASS(Unit_Phase2_NCO_CamoGrey);
     };
 };
 
-class BNA_KC_Uniform_Officer_CamoBrown: BNA_KC_Uniform_Base
+class CLASS(Uniform_Officer_CamoBrown): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 12+ (Officer) - Brown Camo";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_Officer_CamoBrown";
+        uniformClass = QCLASS(Unit_Phase2_Officer_CamoBrown);
     };
 };
-class BNA_KC_Uniform_Officer_CamoGrey: BNA_KC_Uniform_Base
+class CLASS(Uniform_Officer_CamoGrey): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor 12+ (Officer) - Grey Camo";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_Officer_CamoGrey";
+        uniformClass = QCLASS(Unit_Phase2_Officer_CamoGrey);
     };
 };
 
-class BNA_KC_Uniform_CXA: BNA_KC_Uniform_Base
+class CLASS(Uniform_CXA): CLASS(Uniform_Base)
 {
     displayName = "[KC] AVI Armor 01 (Airman)";
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CXA";
+        uniformClass = QCLASS(Unit_Phase2_CXA);
     };
 };
 
-class BNA_KC_Uniform_CXE: BNA_KC_Uniform_Base
+class CLASS(Uniform_CXE): CLASS(Uniform_Base)
 {
     displayName = "[KC] AVI Armor 11 (Ensign)";
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_CXE";
+        uniformClass = QCLASS(Unit_Phase2_CXE);
     };
 };
 
-class BNA_KC_Uniform_Tanker_CT: BNA_KC_Uniform_Base
+class CLASS(Uniform_Tanker_CT): CLASS(Uniform_Base)
 {
     displayName = "[KC] ARMR Armor 01 (Trooper)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_Tanker_CT";
+        uniformClass = QCLASS(Unit_Phase2_Tanker_CT);
     };
 };
 
-class BNA_KC_Uniform_ARC_CT: BNA_KC_Uniform_Base
+class CLASS(Uniform_ARC_CT): CLASS(Uniform_Base)
 {
     displayName = "[KC] SF ARC Armor 01 (Trooper)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_ARC_CT";
+        uniformClass = QCLASS(Unit_ARC_CT);
     };
 };
 
-class BNA_KC_Uniform_ARC_Enlisted_CamoNight: BNA_KC_Uniform_ARC_CT
+class CLASS(Uniform_ARC_Enlisted_CamoNight): CLASS(Uniform_ARC_CT)
 {
     displayName = "[KC] SF ARC Armor 01+ (Enlisted) - Night Camo";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_ARC_Enlisted_CamoNight";
+        uniformClass = QCLASS(Unit_ARC_Enlisted_CamoNight);
     };
 };
 
-class BNA_KC_Uniform_ARF_CT: BNA_KC_Uniform_Base
+class CLASS(Uniform_ARF_CT): CLASS(Uniform_Base)
 {
     displayName = "[KC] SF ARF Armor 01 (Trooper)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_ARF_CT";
+        uniformClass = QCLASS(Unit_ARF_CT);
     };
 };
 
-class BNA_KC_Uniform_Phase2_Insulated_Base: BNA_KC_Uniform_Base
+class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF P2 Snow Armor (Base)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_Insulated_Base";
+        uniformClass = QCLASS(Unit_Phase2_Insulated_Base);
     };
 };
 
-class BNA_KC_Uniform_Phase2_Insulated_CT: BNA_KC_Uniform_Base
+class CLASS(Uniform_Phase2_Insulated_CT): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF P2 Snow Armor 01 (Trooper)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Phase2_Insulated_CT";
+        uniformClass = QCLASS(Unit_Phase2_Insulated_CT);
     };
 };

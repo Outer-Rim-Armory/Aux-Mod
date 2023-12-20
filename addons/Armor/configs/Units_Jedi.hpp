@@ -1,10 +1,10 @@
-class BNA_KC_Unit_Jedi_Knight: BNA_KC_Unit_Base
+class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base)
 {
     SCOPE_HIDDEN;
     displayName = "Jedi Knight";
-    editorSubcategory = "BNA_KC_EdSubCat_Special";
+    editorSubcategory = QCLASS(EdSubCat_Special);
 
-    uniformClass = "BNA_KC_Uniform_Jedi_Knight";
+    uniformClass = QCLASS(Uniform_Jedi_Knight);
     model = "\lsd_armor_bluefor\uniform\gar\jediCommander\lsd_gar_jediCommander_uniform.p3d";
     hiddenSelections[] = {"armor_camo", "robe_camo", "belt_camo", "under_camo"};
     hiddenSelectionsTextures[] =
@@ -37,18 +37,18 @@ class BNA_KC_Unit_Jedi_Knight: BNA_KC_Unit_Base
     items[] = {};
     respawnItems[] = {};
 
-    linkedItems[] = {"BNA_KC_Vest_Jedi", "SWLB_comlink", LINKED_ITEMS};
-    respawnLinkedItems[] = {"BNA_KC_Vest_Jedi", "SWLB_comlink", LINKED_ITEMS};
-    backpack = "BNA_KC_Backpack_Radio_Invisible";
+    linkedItems[] = {QCLASS(Vest_Jedi), "SWLB_comlink", LINKED_ITEMS};
+    respawnLinkedItems[] = {QCLASS(Vest_Jedi), "SWLB_comlink", LINKED_ITEMS};
+    backpack = QCLASS(Backpack_Radio_Invisible);
 };
 
-class BNA_KC_Unit_Jedi_Commander: BNA_KC_Unit_Jedi_Knight
+class CLASS(Unit_Jedi_Commander): CLASS(Unit_Jedi_Knight)
 {
     SCOPE_PUBLIC;
     displayName = "Jedi Commander";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Jedi_Commander);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Jedi_Commander));
 
-    uniformClass = "BNA_KC_Uniform_Jedi_Commander";
+    uniformClass = QCLASS(Uniform_Jedi_Commander);
 
     weapons[] =
     {

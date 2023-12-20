@@ -1,10 +1,10 @@
 class CfgWeapons
 {
     class ls_gar_phase2_helmet;
-    class BNA_KC_Helmet_Base: ls_gar_phase2_helmet
+    class CLASS(Helmet_Base): ls_gar_phase2_helmet
     {
         SCOPE_PRIVATE;
-        dlc = "BNA_KC";
+        dlc = QUOTE(PREFIX);
         author = "SweMonkey and DartRuffian";
 
         picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
@@ -31,11 +31,11 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class BNA_KC_Uniform_Base: ls_gar_phase2_uniform
+    class CLASS(Uniform_Base): ls_gar_phase2_uniform
     {
         SCOPE_PUBLIC;
 
-        dlc = "BNA_KC";
+        dlc = QUOTE(PREFIX);
         author = "SweMonkey and DartRuffian";
 
         displayName = "[KC] INF Armor (Base)";
@@ -43,7 +43,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            uniformClass = "BNA_KC_Unit_Phase1_Base";
+            uniformClass = QCLASS(Unit_Phase1_Base);
             uniformType = "Neopren";
         };
     };
@@ -57,11 +57,11 @@ class CfgWeapons
     {
         class ItemInfo;
     };
-    class BNA_KC_Vest_Basic: SWLB_clone_basic_armor
+    class CLASS(Vest_Basic): SWLB_clone_basic_armor
     {
         SCOPE_PUBLIC;
 
-        dlc = "BNA_KC";
+        dlc = QUOTE(PREFIX);
         author = "SweMonkey and DartRuffian";
 
         displayName = "[KC] INF Vest 01 (Trooper)";

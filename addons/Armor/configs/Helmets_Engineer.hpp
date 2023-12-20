@@ -1,4 +1,4 @@
-class BNA_KC_Helmet_Engineer_Base: BNA_KC_Helmet_Base
+class CLASS(Helmet_Engineer_Base): CLASS(Helmet_Base)
 {
     SCOPE_PUBLIC;
 
@@ -27,7 +27,7 @@ class BNA_KC_Helmet_Engineer_Base: BNA_KC_Helmet_Base
     };
 };
 
-class BNA_KC_Helmet_Engineer_CT: BNA_KC_Helmet_Engineer_Base
+class CLASS(Helmet_Engineer_CT): CLASS(Helmet_Engineer_Base)
 {
     displayName = "[KC] ENG Helm 01 (Trooper)";
     hiddenSelectionsTextures[] =
@@ -38,7 +38,7 @@ class BNA_KC_Helmet_Engineer_CT: BNA_KC_Helmet_Engineer_Base
     };
 };
 
-class BNA_KC_Helmet_Engineer_Enlisted_CamoBrown: BNA_KC_Helmet_Engineer_CT
+class CLASS(Helmet_Engineer_Enlisted_CamoBrown): CLASS(Helmet_Engineer_CT)
 {
     displayName = "[KC] ENG Helm 01 (Enlisted) - Brown Camo";
     hiddenSelectionsTextures[] =
@@ -49,7 +49,7 @@ class BNA_KC_Helmet_Engineer_Enlisted_CamoBrown: BNA_KC_Helmet_Engineer_CT
     };
 };
 
-class BNA_KC_Helmet_Engineer_Enlisted_CamoGrey: BNA_KC_Helmet_Engineer_CT
+class CLASS(Helmet_Engineer_Enlisted_CamoGrey): CLASS(Helmet_Engineer_CT)
 {
     displayName = "[KC] ENG Helm 01 (Enlisted) - Grey Camo";
     hiddenSelectionsTextures[] =

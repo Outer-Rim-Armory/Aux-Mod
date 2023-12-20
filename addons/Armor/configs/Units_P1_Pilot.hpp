@@ -1,17 +1,17 @@
-class BNA_KC_Unit_Phase1_CXA: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_CXA): CLASS(Unit_Phase1_Base)
 {
     displayName = "AVI P1 Pilot 1 (Airman)";
-    editorSubcategory = "BNA_KC_EdSubCat_Crewmen";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CXA);
+    editorSubcategory = QCLASS(EdSubCat_Crewmen);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CXA));
 
-    uniformClass = "BNA_KC_Uniform_CXA";
+    uniformClass = QCLASS(Uniform_CXA);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_Pilot_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_Pilot_CXA), QCLASS(Vest_Basic), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_Pilot_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_Pilot_CXA), QCLASS(Vest_Basic), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };

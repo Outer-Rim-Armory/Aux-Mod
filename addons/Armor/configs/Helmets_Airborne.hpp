@@ -1,4 +1,4 @@
-class BNA_KC_Helmet_Airborne_Base: BNA_KC_Helmet_Base
+class CLASS(Helmet_Airborne_Base): CLASS(Helmet_Base)
 {
     SCOPE_PUBLIC;
 
@@ -18,7 +18,7 @@ class BNA_KC_Helmet_Airborne_Base: BNA_KC_Helmet_Base
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
 
-    subItems[] = {"BNA_KC_NVG_Chip"};
+    subItems[] = {QCLASS(NVG_Chip)};
 
     class ItemInfo: ItemInfo
     {
@@ -26,7 +26,7 @@ class BNA_KC_Helmet_Airborne_Base: BNA_KC_Helmet_Base
         uniformModel = "\lsd_armor_bluefor\helmet\gar\airborne\lsd_gar_airborne_helmet.p3d";
     };
 };
-class BNA_KC_Helmet_Airborne_CT: BNA_KC_Helmet_Airborne_Base
+class CLASS(Helmet_Airborne_CT): CLASS(Helmet_Airborne_Base)
 {
     displayName = "[KC] AB Helm 01 (Trooper)";
     hiddenSelectionsTextures[] =
@@ -35,7 +35,7 @@ class BNA_KC_Helmet_Airborne_CT: BNA_KC_Helmet_Airborne_Base
     };
 };
 
-class BNA_KC_Helmet_Airborne_CT_v2: BNA_KC_Helmet_Airborne_CT
+class CLASS(Helmet_Airborne_CT_v2): CLASS(Helmet_Airborne_CT)
 {
     displayName = "[KC] AB Helm 01 (Trooper, v2)";
     hiddenSelectionsTextures[] =

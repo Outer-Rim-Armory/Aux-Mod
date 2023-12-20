@@ -1,59 +1,59 @@
 class CfgEditorSubcategories
 {
     // Units
-    class BNA_KC_EdSubCat_Infantry
+    class CLASS(EdSubCat_Infantry)
     {
         displayName = "Infantry";
     };
-    class BNA_KC_EdSubCat_Crewmen
+    class CLASS(EdSubCat_Crewmen)
     {
         displayName = "Crewmen";
     };
-    class BNA_KC_EdSubCat_SpecialForces
+    class CLASS(EdSubCat_SpecialForces)
     {
         displayName = "Special Forces";
     };
-    class BNA_KC_EdSubCat_Special
+    class CLASS(EdSubCat_Special)
     {
         displayName = "Special"; // Used for things like faction officers
     };
 
     // Ground Vehicles
-    class BNA_KC_EdSubCat_Tanks
+    class CLASS(EdSubCat_Tanks)
     {
         displayName = "Tanks";
     };
-    class BNA_KC_EdSubCat_APCs
+    class CLASS(EdSubCat_APCs)
     {
         displayName = "APCs";
     };
-    class BNA_KC_EdSubCat_Walkers
+    class CLASS(EdSubCat_Walkers)
     {
         displayName = "Walkers";
     };
-    class BNA_KC_EdSubCat_Cars
+    class CLASS(EdSubCat_Cars)
     {
         displayName = "Cars";
     };
-    class BNA_KC_EdSubCat_Speeders
+    class CLASS(EdSubCat_Speeders)
     {
         displayName = "Speeders";
     };
-    class BNA_KC_EdSubCat_Drones
+    class CLASS(EdSubCat_Drones)
     {
         displayName = "Drones";
     };
-    class BNA_KC_EdSubCat_Turrets
+    class CLASS(EdSubCat_Turrets)
     {
         displayName = "Turrets";
     };
 
     // Air Vehicles
-    class BNA_KC_EdSubCat_Planes
+    class CLASS(EdSubCat_Planes)
     {
         displayName = "Planes";
     };
-    class BNA_KC_EdSubCat_Helicopters
+    class CLASS(EdSubCat_Helicopters)
     {
         displayName = "Helicopters";
     };

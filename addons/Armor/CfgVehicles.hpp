@@ -1,30 +1,30 @@
 class CfgVehicles
 {
     class lsd_gar_trooper_phase1;
-    class BNA_KC_Unit_Base: lsd_gar_trooper_phase1
+    class CLASS(Unit_Base): lsd_gar_trooper_phase1
     {
         SCOPE_PRIVATE;
-        dlc = "BNA_KC";
+        dlc = QUOTE(PREFIX);
         author = "SweMonkey and DartRuffian";
 
-        faction = "BNA_KC_Faction_KC";
+        faction = QCLASS(Faction_KC);
 
         displayName = "INF Trooper (Base)";
-        uniformClass = "BNA_KC_Uniform_Base";
+        uniformClass = QCLASS(Uniform_Base);
 
         // Inventory
         weapons[] =
         {
-            "BNA_KC_DC15S",
-            "BNA_KC_DC17",
+            QCLASS(DC15S),
+            QCLASS(DC17),
             "SWLB_clone_binocular",
             "Throw",               // Allows the unit to throw grenades
             "Put"                  // Allows the unit to place explosives
         };
         respawnWeapons[] =
         {
-            "BNA_KC_DC15S",
-            "BNA_KC_DC17",
+            QCLASS(DC15S),
+            QCLASS(DC17),
             "SWLB_clone_binocular",
             "Throw",
             "Put"
@@ -88,11 +88,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Phase1_Base", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+            QCLASS(Helmet_Phase1_Base), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Phase1_Base", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+            QCLASS(Helmet_Phase1_Base), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
         };
         backpack = "";
     };
@@ -109,7 +109,7 @@ class CfgVehicles
     #include "configs/Units_Jedi.hpp"
 
     class SWLB_clone_backpack;
-    class BNA_KC_Backpack_Base: SWLB_clone_backpack
+    class CLASS(Backpack_Base): SWLB_clone_backpack
     {
         SCOPE_PUBLIC;
         author = "SweMonkey and DartRuffian";
@@ -125,7 +125,7 @@ class CfgVehicles
         maximumLoad = 400;
     };
 
-    class BNA_KC_Backpack: BNA_KC_Backpack_Base
+    class CLASS(Backpack): CLASS(Backpack_Base)
     {
         displayName = "[KC] INF Backpack";
         hiddenSelectionsTextures[] =
@@ -136,7 +136,7 @@ class CfgVehicles
         picture = QPATHTOF(data\ui\Backpack_ca.paa);
     };
 
-    class BNA_KC_Backpack_Heavy_Base: BNA_KC_Backpack_Base
+    class CLASS(Backpack_Heavy_Base): CLASS(Backpack_Base)
     {
         displayName = "[KC] INF Heavy Backpack (Base)";
 
@@ -149,7 +149,7 @@ class CfgVehicles
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_heavy_ca.paa";
     };
 
-    class BNA_KC_Backpack_Heavy: BNA_KC_Backpack_Heavy_Base
+    class CLASS(Backpack_Heavy): CLASS(Backpack_Heavy_Base)
     {
         displayName = "[KC] INF Heavy Backpack";
 
@@ -162,7 +162,7 @@ class CfgVehicles
         picture = QPATHTOF(data\ui\Backpack_Heavy_ca.paa);
     };
 
-    class BNA_KC_Backpack_Radio_Base: BNA_KC_Backpack_Base
+    class CLASS(Backpack_Radio_Base): CLASS(Backpack_Base)
     {
         displayName = "[KC] INF Radio Backpack (Base)";
 
@@ -186,7 +186,7 @@ class CfgVehicles
         tf_subtype = "digital_lr";
     };
 
-    class BNA_KC_Backpack_Radio: BNA_KC_Backpack_Radio_Base
+    class CLASS(Backpack_Radio): CLASS(Backpack_Radio_Base)
     {
         displayName = "[KC] INF Radio Backpack";
 
@@ -201,7 +201,7 @@ class CfgVehicles
         picture = QPATHTOF(data\ui\Backpack_Radio_ca.paa);
     };
 
-    class BNA_KC_Backpack_Medic_Base: BNA_KC_Backpack_Base
+    class CLASS(Backpack_Medic_Base): CLASS(Backpack_Base)
     {
         displayName = "[KC] INF Medic Backpack (Base)";
 
@@ -215,7 +215,7 @@ class CfgVehicles
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_medic_ca.paa";
     };
 
-    class BNA_KC_Backpack_Medic: BNA_KC_Backpack_Medic_Base
+    class CLASS(Backpack_Medic): CLASS(Backpack_Medic_Base)
     {
         displayName = "[KC] INF Medic Backpack";
 
@@ -229,7 +229,7 @@ class CfgVehicles
         picture = QPATHTOF(data\ui\Backpack_Medic_ca.paa);
     };
 
-    class BNA_KC_Backpack_Medic_Heavy_Base: BNA_KC_Backpack_Base
+    class CLASS(Backpack_Medic_Heavy_Base): CLASS(Backpack_Base)
     {
         displayName = "[KC] INF Medic Heavy Backpack (Base)";
 
@@ -242,7 +242,7 @@ class CfgVehicles
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_heavy_ca.paa";
     };
 
-    class BNA_KC_Backpack_Medic_Heavy: BNA_KC_Backpack_Medic_Heavy_Base
+    class CLASS(Backpack_Medic_Heavy): CLASS(Backpack_Medic_Heavy_Base)
     {
         displayName = "[KC] INF Medic Heavy Backpack";
 
@@ -255,7 +255,7 @@ class CfgVehicles
         picture = QPATHTOF(data\ui\Backpack_Medic_Heavy_ca.paa);
     };
 
-    class BNA_KC_Backpack_Medic_Radio_Base: BNA_KC_Backpack_Radio_Base
+    class CLASS(Backpack_Medic_Radio_Base): CLASS(Backpack_Radio_Base)
     {
         displayName = "[KC] INF Medic Radio Backpack (Base)";
 
@@ -270,7 +270,7 @@ class CfgVehicles
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_medic_ca.paa";
     };
 
-    class BNA_KC_Backpack_Medic_Radio: BNA_KC_Backpack_Medic_Radio_Base
+    class CLASS(Backpack_Medic_Radio): CLASS(Backpack_Medic_Radio_Base)
     {
         displayName = "[KC] INF Medic Radio Backpack";
 
@@ -285,7 +285,7 @@ class CfgVehicles
         picture = QPATHTOF(data\ui\Backpack_Medic_Radio_ca.paa);
     };
 
-    class BNA_KC_Backpack_Radio_Mini_Base: BNA_KC_Backpack_Radio_Base
+    class CLASS(Backpack_Radio_Mini_Base): CLASS(Backpack_Radio_Base)
     {
         displayName = "[KC] INF Radio Attachment (Base)";
 
@@ -299,7 +299,7 @@ class CfgVehicles
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_RTO_mini_backpack_ca.paa";
     };
 
-    class BNA_KC_Backpack_Radio_Mini: BNA_KC_Backpack_Radio_Mini_Base
+    class CLASS(Backpack_Radio_Mini): CLASS(Backpack_Radio_Mini_Base)
     {
         displayName = "[KC] INF Radio Attachment";
         hiddenSelectionsTextures[] =

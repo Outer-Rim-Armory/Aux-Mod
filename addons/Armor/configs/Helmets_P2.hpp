@@ -1,4 +1,4 @@
-class BNA_KC_Helmet_Phase2_Base: BNA_KC_Helmet_Base
+class CLASS(Helmet_Phase2_Base): CLASS(Helmet_Base)
 {
     SCOPE_PUBLIC;
 
@@ -20,7 +20,7 @@ class BNA_KC_Helmet_Phase2_Base: BNA_KC_Helmet_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CR: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CR): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 00 (Recruit)";
     hiddenSelectionsTextures[] =
@@ -29,7 +29,7 @@ class BNA_KC_Helmet_Phase2_CR: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_CR_Legacy: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CR_Legacy): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 00 (Recruit, Legacy)";
     hiddenSelectionsTextures[] =
@@ -39,7 +39,7 @@ class BNA_KC_Helmet_Phase2_CR_Legacy: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CT: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CT): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 01 (Trooper)";
     hiddenSelectionsTextures[] =
@@ -48,7 +48,7 @@ class BNA_KC_Helmet_Phase2_CT: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_CT_v2: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CT_v2): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 01 (Trooper, Version 2)";
     hiddenSelectionsTextures[] =
@@ -57,7 +57,7 @@ class BNA_KC_Helmet_Phase2_CT_v2: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_CT_Legacy: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CT_Legacy): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 01 (Trooper, Legacy)";
     hiddenSelectionsTextures[] =
@@ -67,7 +67,7 @@ class BNA_KC_Helmet_Phase2_CT_Legacy: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_SCT: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_SCT): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 02 (Senior Trooper)";
     hiddenSelectionsTextures[] =
@@ -76,7 +76,7 @@ class BNA_KC_Helmet_Phase2_SCT: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_SCT_Legacy: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_SCT_Legacy): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 02 (Senior Trooper, Legacy)";
     hiddenSelectionsTextures[] =
@@ -86,7 +86,7 @@ class BNA_KC_Helmet_Phase2_SCT_Legacy: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_VCT: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_VCT): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 03 (Veteran Trooper)";
     hiddenSelectionsTextures[] =
@@ -95,7 +95,7 @@ class BNA_KC_Helmet_Phase2_VCT: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_VCT_Legacy: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_VCT_Legacy): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 03 (Veteran Trooper, Legacy)";
     hiddenSelectionsTextures[] =
@@ -105,7 +105,7 @@ class BNA_KC_Helmet_Phase2_VCT_Legacy: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CLC: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CLC): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 04 (Lance Corporal)";
     hiddenSelectionsTextures[] =
@@ -114,7 +114,7 @@ class BNA_KC_Helmet_Phase2_CLC: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_CLC_Legacy: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CLC_Legacy): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 04 (Lance Corporal, Legacy)";
     hiddenSelectionsTextures[] =
@@ -124,7 +124,7 @@ class BNA_KC_Helmet_Phase2_CLC_Legacy: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CPL: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CPL): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 05 (Corporal)";
     hiddenSelectionsTextures[] =
@@ -134,7 +134,7 @@ class BNA_KC_Helmet_Phase2_CPL: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CS: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CS): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 06 (Sergeant)";
     hiddenSelectionsTextures[] =
@@ -143,7 +143,7 @@ class BNA_KC_Helmet_Phase2_CS: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_CS_Legacy: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CS_Legacy): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 06 (Sergeant, Legacy)";
     hiddenSelectionsTextures[] =
@@ -153,7 +153,7 @@ class BNA_KC_Helmet_Phase2_CS_Legacy: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CSS: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CSS): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 07 (Staff Sergeant)";
     hiddenSelectionsTextures[] =
@@ -163,7 +163,7 @@ class BNA_KC_Helmet_Phase2_CSS: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CSFC: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CSFC): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 08 (Sergeant First Class)";
     hiddenSelectionsTextures[] =
@@ -173,7 +173,7 @@ class BNA_KC_Helmet_Phase2_CSFC: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CMS: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CMS): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 09 (Master Sergeant)";
     hiddenSelectionsTextures[] =
@@ -182,7 +182,7 @@ class BNA_KC_Helmet_Phase2_CMS: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_CMS_Legacy: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CMS_Legacy): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 09 (Master Sergeant, Legacy)";
     hiddenSelectionsTextures[] =
@@ -192,7 +192,7 @@ class BNA_KC_Helmet_Phase2_CMS_Legacy: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CSM: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CSM): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 10 (Sergeant Major)";
     hiddenSelectionsTextures[] =
@@ -202,7 +202,7 @@ class BNA_KC_Helmet_Phase2_CSM: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Officer: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_Officer): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 11+ (Officer)";
     hiddenSelectionsTextures[] =
@@ -212,7 +212,7 @@ class BNA_KC_Helmet_Phase2_Officer: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_WO: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_WO): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 11 (Warrant Officer)";
     hiddenSelectionsTextures[] =
@@ -222,7 +222,7 @@ class BNA_KC_Helmet_Phase2_WO: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_WO2: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_WO2): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 12 (Warrant Officer 2)";
     hiddenSelectionsTextures[] =
@@ -232,7 +232,7 @@ class BNA_KC_Helmet_Phase2_WO2: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_WO3: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_WO3): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 13 (Warrant Officer 3)";
     hiddenSelectionsTextures[] =
@@ -242,7 +242,7 @@ class BNA_KC_Helmet_Phase2_WO3: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CL: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CL): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 14 (Lieutenant)";
     hiddenSelectionsTextures[] =
@@ -252,7 +252,7 @@ class BNA_KC_Helmet_Phase2_CL: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_CL1: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_CL1): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 15 (1st Lieutenant)";
     hiddenSelectionsTextures[] =
@@ -262,7 +262,7 @@ class BNA_KC_Helmet_Phase2_CL1: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-// class BNA_KC_Helmet_Phase2_CPT: BNA_KC_Helmet_Phase2_Base
+// class CLASS(Helmet_Phase2_CPT): CLASS(Helmet_Phase2_Base)
 // {
 //     displayName = "[KC] INF P2 Helm 16 (Captain)";
 //     hiddenSelectionsTextures[] =
@@ -272,7 +272,7 @@ class BNA_KC_Helmet_Phase2_CL1: BNA_KC_Helmet_Phase2_Base
 //     };
 // };
 
-// class BNA_KC_Helmet_Phase2_MAJ: BNA_KC_Helmet_Phase2_Base
+// class CLASS(Helmet_Phase2_MAJ): CLASS(Helmet_Phase2_Base)
 // {
 //     displayName = "[KC] INF P2 Helm 17 ()";
 //     hiddenSelectionsTextures[] =
@@ -282,7 +282,7 @@ class BNA_KC_Helmet_Phase2_CL1: BNA_KC_Helmet_Phase2_Base
 //     };
 // };
 
-// class BNA_KC_Helmet_Phase2_COM: BNA_KC_Helmet_Phase2_Base
+// class CLASS(Helmet_Phase2_COM): CLASS(Helmet_Phase2_Base)
 // {
 //     displayName = "[KC] INF P2 Helm 18 (Commander)";
 //     hiddenSelectionsTextures[] =
@@ -293,7 +293,7 @@ class BNA_KC_Helmet_Phase2_CL1: BNA_KC_Helmet_Phase2_Base
 // };
 
 // Camo Helmets
-class BNA_KC_Helmet_Phase2_Recruit_CamoBrown: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_Recruit_CamoBrown): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 00 (Recruit) - Brown Camo";
     hiddenSelectionsTextures[] =
@@ -302,7 +302,7 @@ class BNA_KC_Helmet_Phase2_Recruit_CamoBrown: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_Recruit_CamoGrey: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_Recruit_CamoGrey): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 00 (Recruit) - Grey Camo";
     hiddenSelectionsTextures[] =
@@ -312,7 +312,7 @@ class BNA_KC_Helmet_Phase2_Recruit_CamoGrey: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Enlisted_CamoBrown: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_Enlisted_CamoBrown): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 01+ (Enlisted) - Brown Camo";
     hiddenSelectionsTextures[] =
@@ -321,7 +321,7 @@ class BNA_KC_Helmet_Phase2_Enlisted_CamoBrown: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_Enlisted_CamoGrey: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_Enlisted_CamoGrey): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 01+ (Enlisted) - Grey Camo";
     hiddenSelectionsTextures[] =
@@ -331,7 +331,7 @@ class BNA_KC_Helmet_Phase2_Enlisted_CamoGrey: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_NCO_CamoBrown: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_NCO_CamoBrown): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 06+ (NCO) - Brown Camo";
     hiddenSelectionsTextures[] =
@@ -340,7 +340,7 @@ class BNA_KC_Helmet_Phase2_NCO_CamoBrown: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_NCO_CamoGrey: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_NCO_CamoGrey): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 06+ (NCO) - Grey Camo";
     hiddenSelectionsTextures[] =
@@ -350,7 +350,7 @@ class BNA_KC_Helmet_Phase2_NCO_CamoGrey: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Officer_CamoBrown: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_Officer_CamoBrown): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 12+ (Officer) - Brown Camo";
     hiddenSelectionsTextures[] =
@@ -359,7 +359,7 @@ class BNA_KC_Helmet_Phase2_Officer_CamoBrown: BNA_KC_Helmet_Phase2_Base
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_Officer_CamoGrey: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_Officer_CamoGrey): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm 12+ (Officer) - Grey Camo";
     hiddenSelectionsTextures[] =

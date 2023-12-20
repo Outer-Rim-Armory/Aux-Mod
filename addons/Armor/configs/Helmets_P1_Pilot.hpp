@@ -1,4 +1,4 @@
-class BNA_KC_Helmet_Phase1_Pilot_Base: BNA_KC_Helmet_Base
+class CLASS(Helmet_Phase1_Pilot_Base): CLASS(Helmet_Base)
 {
     SCOPE_PUBLIC;
 
@@ -23,7 +23,7 @@ class BNA_KC_Helmet_Phase1_Pilot_Base: BNA_KC_Helmet_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Pilot_CXA: BNA_KC_Helmet_Phase1_Pilot_Base
+class CLASS(Helmet_Phase1_Pilot_CXA): CLASS(Helmet_Phase1_Pilot_Base)
 {
     displayName = "[KC] AVI P1 Helm 01+ (Airman)";
     hiddenSelectionsTextures[] =

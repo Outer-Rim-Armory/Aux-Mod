@@ -1,10 +1,10 @@
-class BNA_KC_Unit_ARC_CT: BNA_KC_Unit_Phase2_Base
+class CLASS(Unit_ARC_CT): CLASS(Unit_Phase2_Base)
 {
     displayName = "SF ARC 01 - Trooper";
-    editorSubcategory = "BNA_KC_EdSubCat_SpecialForces";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_ARC_CT);
+    editorSubcategory = QCLASS(EdSubCat_SpecialForces);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_ARC_CT));
 
-    uniformClass = "BNA_KC_Uniform_ARC_CT";
+    uniformClass = QCLASS(Uniform_ARC_CT);
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\uniforms\arc\CT_upper_co.paa),
@@ -14,20 +14,20 @@ class BNA_KC_Unit_ARC_CT: BNA_KC_Unit_Phase2_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_ARC_CT", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARC_CT), QCLASS(Vest_Arc), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_ARC_CT", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARC_CT), QCLASS(Vest_ARC), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    backpack = "BNA_KC_Backpack_ARC";
+    backpack = QCLASS(Backpack_ARC);
 };
 
-class BNA_KC_Unit_ARC_Enlisted_CamoNight: BNA_KC_Unit_ARC_CT
+class CLASS(Unit_ARC_Enlisted_CamoNight): CLASS(Unit_ARC_CT)
 {
     SCOPE_HIDDEN;
 
-    uniformClass = "BNA_KC_Uniform_ARC_Enlisted_CamoNight";
+    uniformClass = QCLASS(Uniform_ARC_Enlisted_CamoNight);
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\uniforms\arc\camo\night\CT_upper_co.paa),

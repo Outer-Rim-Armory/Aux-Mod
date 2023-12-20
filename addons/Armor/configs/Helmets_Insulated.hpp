@@ -1,4 +1,4 @@
-class BNA_KC_Helmet_Phase2_Insulated_Base: BNA_KC_Helmet_Phase2_Base
+class CLASS(Helmet_Phase2_Insulated_Base): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Snow Helm (Base)";
 
@@ -13,7 +13,7 @@ class BNA_KC_Helmet_Phase2_Insulated_Base: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_Insulated_CT: BNA_KC_Helmet_Phase2_Insulated_Base
+class CLASS(Helmet_Phase2_Insulated_CT): CLASS(Helmet_Phase2_Insulated_Base)
 {
     displayName = "[KC] INF P2 Snow Helm 01 (Trooper)";
     hiddenSelectionsTextures[] =

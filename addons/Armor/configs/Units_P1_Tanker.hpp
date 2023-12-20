@@ -1,17 +1,17 @@
-class BNA_KC_Unit_Phase1_Tanker_CT: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_Tanker_CT): CLASS(Unit_Phase1_Base)
 {
     displayName = "ARMR P1 Tanker";
-    editorSubcategory = "BNA_KC_EdSubCat_Crewmen";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_Tanker_CT);
+    editorSubcategory = QCLASS(EdSubCat_Crewmen);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_Tanker_CT));
 
-    uniformClass = "BNA_KC_Uniform_Tanker_CT";
+    uniformClass = QCLASS(Uniform_Tanker_CT);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_Tanker_CT", "BNA_KC_Vest_Recon", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_Tanker_CT), QCLASS(Vest_Recon), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_Tanker_CT", "BNA_KC_Vest_Recon", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_Tanker_CT), QCLASS(Vest_Recon), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };

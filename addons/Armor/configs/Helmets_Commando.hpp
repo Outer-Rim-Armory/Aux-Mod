@@ -1,4 +1,4 @@
-class BNA_KC_Helmet_Commando_Base: BNA_KC_Helmet_ARC_Base
+class CLASS(Helmet_Commando_Base): CLASS(Helmet_ARC_Base)
 {
     displayName = "[KC] SF Commando Helm (Base)";
 

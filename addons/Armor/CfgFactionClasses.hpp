@@ -1,11 +1,11 @@
 class CfgFactionClasses
 {
-    class BNA_KC_Faction_GAR
+    class CLASS(Faction_GAR)
     {
         displayName = "[KC] Grand Army of the Republic";
     };
 
-    class BNA_KC_Faction_KC
+    class CLASS(Faction_KC)
     {
         displayName = "[KC] Keeli Company";
     };

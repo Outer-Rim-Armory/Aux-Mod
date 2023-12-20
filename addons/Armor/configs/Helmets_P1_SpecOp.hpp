@@ -1,4 +1,4 @@
-class BNA_KC_Helmet_Phase1_Tanker_Base: BNA_KC_Helmet_Base
+class CLASS(Helmet_Phase1_Tanker_Base): CLASS(Helmet_Base)
 {
     SCOPE_PUBLIC;
 
@@ -12,7 +12,7 @@ class BNA_KC_Helmet_Phase1_Tanker_Base: BNA_KC_Helmet_Base
         "\ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
     };
 
-    subItems[] = {"BNA_KC_NVG_Chip"};
+    subItems[] = {QCLASS(NVG_Chip)};
 
     HEARING_PROTECTION_CREW
 
@@ -23,7 +23,7 @@ class BNA_KC_Helmet_Phase1_Tanker_Base: BNA_KC_Helmet_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_Tanker_CT: BNA_KC_Helmet_Phase1_Tanker_Base
+class CLASS(Helmet_Phase1_Tanker_CT): CLASS(Helmet_Phase1_Tanker_Base)
 {
     displayName = "[KC] ARMR P1 Helm 01 (Trooper)";
     hiddenSelectionsTextures[] =
@@ -32,7 +32,7 @@ class BNA_KC_Helmet_Phase1_Tanker_CT: BNA_KC_Helmet_Phase1_Tanker_Base
         "\ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase1_Tanker_CT_v2: BNA_KC_Helmet_Phase1_Tanker_CT
+class CLASS(Helmet_Phase1_Tanker_CT_v2): CLASS(Helmet_Phase1_Tanker_CT)
 {
     displayName = "[KC] ARMR P1 Helm 01 (Trooper, v2)";
     hiddenSelectionsTextures[] =

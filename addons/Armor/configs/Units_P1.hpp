@@ -1,301 +1,301 @@
-class BNA_KC_Unit_Phase1_Base: BNA_KC_Unit_Base
+class CLASS(Unit_Phase1_Base): CLASS(Unit_Base)
 {
     SCOPE_PUBLIC;
 
     // Editor Properties
-    editorSubcategory = "BNA_KC_EdSubCat_INF_P1";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_Base);
+    editorSubcategory = QCLASS(EdSubCat_INF_P1);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_Base));
 
     displayName = "INF P1 Trooper (Base)";
 
-    uniformClass = "BNA_KC_Uniform_Base";
+    uniformClass = QCLASS(Uniform_Base);
 };
 
-class BNA_KC_Unit_Phase1_CR: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_CR): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 00 - Clone Recruit";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CR);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CR));
 
-    uniformClass = "BNA_KC_Uniform_CR";
+    uniformClass = QCLASS(Uniform_CR);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CR", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CR), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CR", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CR), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class BNA_KC_Unit_Phase1_CT: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_CT): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 01 - Clone Trooper";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CT);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CT));
 
-    uniformClass = "BNA_KC_Uniform_CT";
+    uniformClass = QCLASS(Uniform_CT);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CT", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CT", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class BNA_KC_Unit_Phase1_SCT: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_SCT): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 02 - Senior Clone Trooper";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_SCT);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_SCT));
 
-    uniformClass = "BNA_KC_Uniform_SCT";
+    uniformClass = QCLASS(Uniform_SCT);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_SCT", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_SCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_SCT", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_SCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class BNA_KC_Unit_Phase1_VCT: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_VCT): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 03 - Veteran Clone Trooper";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_VCT);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_VCT));
 
-    uniformClass = "BNA_KC_Uniform_VCT";
+    uniformClass = QCLASS(Uniform_VCT);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_VCT", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_VCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_VCT", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_VCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
 // Start of JNCO Ranks
 
-class BNA_KC_Unit_Phase1_CLC: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_CLC): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 04 - Clone Lance Corporal";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CLC);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CLC));
 
-    uniformClass = "BNA_KC_Uniform_CLC";
+    uniformClass = QCLASS(Uniform_CLC);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CLC", "BNA_KC_Vest_CLC", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CLC), QCLASS(Vest_CLC), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CLC", "BNA_KC_Vest_CLC", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CLC), QCLASS(Vest_CLC), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class BNA_KC_Unit_Phase1_CPL: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_CPL): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 05 - Clone Corporal";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CPL);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CPL));
 
-    uniformClass = "BNA_KC_Uniform_CPL";
+    uniformClass = QCLASS(Uniform_CPL);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CPL", "BNA_KC_Vest_CPL", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CPL), QCLASS(Vest_CPL), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CPL", "BNA_KC_Vest_CPL", "BNA_KC_NVG_Chip", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CPL), QCLASS(Vest_CPL), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
 // Start of NCO Ranks
 
-class BNA_KC_Unit_Phase1_CS: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_CS): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 06 - Clone Sergeant";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CS);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CS));
 
-    uniformClass = "BNA_KC_Uniform_CS";
+    uniformClass = QCLASS(Uniform_CS);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CS", "BNA_KC_Vest_CS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CS), QCLASS(Vest_CS), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CS", "BNA_KC_Vest_CS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CS), QCLASS(Vest_CS), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class BNA_KC_Unit_Phase1_CSS: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_CSS): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 07 - Clone Staff Sergeant";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CSS);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CSS));
 
-    uniformClass = "BNA_KC_Uniform_CSS";
+    uniformClass = QCLASS(Uniform_CSS);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CSS", "BNA_KC_Vest_CSS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CSS), QCLASS(Vest_CSS), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CSS", "BNA_KC_Vest_CSS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CSS), QCLASS(Vest_CSS), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class BNA_KC_Unit_Phase1_CSFC: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_CSFC): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 08 - Clone Sergeant First Class";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CSFC);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CSFC));
 
-    uniformClass = "BNA_KC_Uniform_CSFC";
+    uniformClass = QCLASS(Uniform_CSFC);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CSFC", "BNA_KC_Vest_CSFC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CSFC), QCLASS(Vest_CSFC), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CSFC", "BNA_KC_Vest_CSFC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CSFC), QCLASS(Vest_CSFC), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class BNA_KC_Unit_Phase1_CMS: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_CMS): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 09 - Clone Master Sergeant";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CMS);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CMS));
 
-    uniformClass = "BNA_KC_Uniform_CSFC";
+    uniformClass = QCLASS(Uniform_CSFC);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CMS", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CMS), QCLASS(Vest_CMS), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CMS", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CMS), QCLASS(Vest_CMS), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class BNA_KC_Unit_Phase1_CSM: BNA_KC_Unit_Phase1_Base
+class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 10 - Clone Sergeant Major";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase1_CSM);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CSM));
 
-    uniformClass = "BNA_KC_Uniform_CSM";
+    uniformClass = QCLASS(Uniform_CSM);
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CSM", "BNA_KC_Vest_CSM", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CSM), QCLASS(Vest_CSM), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase1_CSM", "BNA_KC_Vest_CSM", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CSM), QCLASS(Vest_CSM), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-// class BNA_KC_Unit_Phase1_CL: BNA_KC_Unit_Phase1_Base
+// class CLASS(Unit_Phase1_CL): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 11 - Clone Lieutenant";
 
-//     uniformClass = "BNA_KC_Uniform_CL";
+//     uniformClass = QCLASS(Uniform_CL);
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_CL", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_CL), QCLASS(Vest_Officer), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_CL", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Rangefinder", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_CL), QCLASS(Vest_Officer), QCLASS(NVG_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };
 
 // // Start of Officer Ranks
 
-// class BNA_KC_Unit_Phase1_WO: BNA_KC_Unit_Phase1_Base
+// class CLASS(Unit_Phase1_WO): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 12 - Clone Warrant Officer";
 
-//     uniformClass = "BNA_KC_Uniform_WO";
+//     uniformClass = QCLASS(Uniform_WO);
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_WO", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_WO), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_WO", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_WO), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };
 
-// class BNA_KC_Unit_Phase1_CL1: BNA_KC_Unit_Phase1_Base
+// class CLASS(Unit_Phase1_CL1): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 13 - Clone 1st Lieutenant";
 
-//     uniformClass = "BNA_KC_Uniform_CL";
+//     uniformClass = QCLASS(Uniform_CL);
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_CL1", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_CL1), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_CL1", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_CL1), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };
 
-// class BNA_KC_Unit_Phase1_CAP: BNA_KC_Unit_Phase1_Base
+// class CLASS(Unit_Phase1_CAP): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 14 - Clone Captain";
 
-//     uniformClass = "BNA_KC_Uniform_CAP";
+//     uniformClass = QCLASS(Uniform_CAP);
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_CAP", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_CAP), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_CAP", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_CAP), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };
 
-// class BNA_KC_Unit_Phase1_MAJ: BNA_KC_Unit_Phase1_Base
+// class CLASS(Unit_Phase1_MAJ): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 15 - Clone Major";
 
-//     uniformClass = "BNA_KC_Uniform_MAJ";
+//     uniformClass = QCLASS(Uniform_MAJ);
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_MAJ", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_MAJ), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_MAJ", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_MAJ), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };
 
-// class BNA_KC_Unit_Phase1_CMD: BNA_KC_Unit_Phase1_Base
+// class CLASS(Unit_Phase1_CMD): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 16 - Clone Commander";
 
-//     uniformClass = "BNA_KC_Uniform_CMD";
+//     uniformClass = QCLASS(Uniform_CMD);
 
 //     linkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_CMD", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_CMD), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         "BNA_KC_Helmet_Phase1_CMD", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase1_CMD), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };

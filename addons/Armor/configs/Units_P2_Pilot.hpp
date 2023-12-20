@@ -1,10 +1,10 @@
-class BNA_KC_Unit_Phase2_CXA: BNA_KC_Unit_Phase2_Base
+class CLASS(Unit_Phase2_CXA): CLASS(Unit_Phase2_Base)
 {
     displayName = "AVI P2 Pilot 1 (Airman)";
-    editorSubcategory = "BNA_KC_EdSubCat_Crewmen";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CXA);
+    editorSubcategory = QCLASS(EdSubCat_Crewmen);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CXA));
 
-    uniformClass = "BNA_KC_Uniform_CXA";
+    uniformClass = QCLASS(Uniform_CXA);
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\uniforms\pilot\CXA_upper_co.paa),
@@ -13,20 +13,20 @@ class BNA_KC_Unit_Phase2_CXA: BNA_KC_Unit_Phase2_Base
     };
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Pilot_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Pilot_CXA), QCLASS(Vest_Basic), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Pilot_CXA", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Pilot_CXA), QCLASS(Vest_Basic), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class BNA_KC_Unit_Phase2_CXE: BNA_KC_Unit_Phase2_CXA
+class CLASS(Unit_Phase2_CXE): CLASS(Unit_Phase2_CXA)
 {
     displayName = "AVI P2 Pilot 11 (Ensign)";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_Phase2_CXE);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CXE));
 
-    uniformClass = "BNA_KC_Uniform_CXE";
+    uniformClass = QCLASS(Uniform_CXE);
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\uniforms\pilot\CXE_upper_co.paa),
@@ -35,10 +35,10 @@ class BNA_KC_Unit_Phase2_CXE: BNA_KC_Unit_Phase2_CXA
     };
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Pilot_CXE", "BNA_KC_Vest_Officer", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Pilot_CXE), QCLASS(Vest_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Pilot_CXE", "BNA_KC_Vest_Officer", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Pilot_CXE), QCLASS(Vest_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };

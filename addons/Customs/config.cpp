@@ -13,8 +13,8 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            "BNA_KC_Main",
-            "BNA_KC_Armor"
+            QCLASS(Main),
+            QCLASS(Armor)
         };
         units[] = {};
         weapons[] = {};

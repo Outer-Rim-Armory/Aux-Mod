@@ -1,4 +1,4 @@
-class BNA_KC_Helmet_ARC_Base: BNA_KC_Helmet_Base
+class CLASS(Helmet_ARC_Base): CLASS(Helmet_Base)
 {
     SCOPE_PUBLIC;
 
@@ -20,7 +20,7 @@ class BNA_KC_Helmet_ARC_Base: BNA_KC_Helmet_Base
     };
 };
 
-class BNA_KC_Helmet_ARC_CT: BNA_KC_Helmet_ARC_Base
+class CLASS(Helmet_ARC_CT): CLASS(Helmet_ARC_Base)
 {
     displayName = "[KC] SF ARC P1.5 Helm 01 (Trooper)";
     hiddenSelectionsTextures[] =
@@ -30,7 +30,7 @@ class BNA_KC_Helmet_ARC_CT: BNA_KC_Helmet_ARC_Base
     };
 };
 
-class BNA_KC_Helmet_ARC_CT_v2: BNA_KC_Helmet_ARC_CT
+class CLASS(Helmet_ARC_CT_v2): CLASS(Helmet_ARC_CT)
 {
     displayName = "[KC] SF ARC P1.5 Helm 01 (Trooper, v2)";
     hiddenSelectionsTextures[] =
@@ -40,7 +40,7 @@ class BNA_KC_Helmet_ARC_CT_v2: BNA_KC_Helmet_ARC_CT
     };
 };
 
-class BNA_KC_Helmet_ARC_Enlisted_CamoBrown: BNA_KC_Helmet_ARC_CT
+class CLASS(Helmet_ARC_Enlisted_CamoBrown): CLASS(Helmet_ARC_CT)
 {
     displayName = "[KC] SF ARC P1.5 Helm 01 (Enlisted) - Brown Camo";
     hiddenSelectionsTextures[] =
@@ -50,7 +50,7 @@ class BNA_KC_Helmet_ARC_Enlisted_CamoBrown: BNA_KC_Helmet_ARC_CT
     };
 };
 
-class BNA_KC_Helmet_ARC_Enlisted_CamoGrey: BNA_KC_Helmet_ARC_CT
+class CLASS(Helmet_ARC_Enlisted_CamoGrey): CLASS(Helmet_ARC_CT)
 {
     displayName = "[KC] SF ARC P1.5 Helm 01 (Enlisted) - Grey Camo";
     hiddenSelectionsTextures[] =
@@ -60,7 +60,7 @@ class BNA_KC_Helmet_ARC_Enlisted_CamoGrey: BNA_KC_Helmet_ARC_CT
     };
 };
 
-class BNA_KC_Helmet_ARC_Enlisted_CamoNight: BNA_KC_Helmet_ARC_CT
+class CLASS(Helmet_ARC_Enlisted_CamoNight): CLASS(Helmet_ARC_CT)
 {
     displayName = "[KC] SF ARC P1.5 Helm 01 (Enlisted) - Night Camo";
     hiddenSelectionsTextures[] =

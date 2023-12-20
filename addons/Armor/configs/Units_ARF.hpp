@@ -1,10 +1,10 @@
-class BNA_KC_Unit_ARF_CT: BNA_KC_Unit_Phase2_Base
+class CLASS(Unit_ARF_CT): CLASS(Unit_Phase2_Base)
 {
     displayName = "SF ARF 01 - Trooper";
-    editorSubcategory = "BNA_KC_EdSubCat_SpecialForces";
-    editorPreview = EDITOR_PREVIEW(BNA_KC_Unit_ARF_CT);
+    editorSubcategory = QCLASS(EdSubCat_SpecialForces);
+    editorPreview = EDITOR_PREVIEW(CLASS(Unit_ARF_CT));
 
-    uniformClass = "BNA_KC_Uniform_ARF_CT";
+    uniformClass = QCLASS(Uniform_ARF_CT);
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\uniforms\arf\CT_upper_co.paa),
@@ -14,10 +14,10 @@ class BNA_KC_Unit_ARF_CT: BNA_KC_Unit_Phase2_Base
 
     linkedItems[] =
     {
-        "BNA_KC_Helmet_ARF_CT", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARF_CT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_ARF_CT", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARF_CT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };

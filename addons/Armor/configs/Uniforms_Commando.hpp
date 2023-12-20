@@ -1,4 +1,4 @@
-class BNA_KC_Uniform_Commando_Base: BNA_KC_Uniform_ARC_CT
+class CLASS(Uniform_Commando_Base): CLASS(Uniform_ARC_CT)
 {
     displayName = "[KC] SF Commando Armor (Base)";
     model = "\ls_armor_bluefor\uniform\gar\phase2\ls_gar_phase2_uniform_groundholder.p3d";
@@ -6,6 +6,6 @@ class BNA_KC_Uniform_Commando_Base: BNA_KC_Uniform_ARC_CT
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = "BNA_KC_Unit_Commando_Base";
+        uniformClass = QCLASS(Unit_Commando_Base);
     };
 };
