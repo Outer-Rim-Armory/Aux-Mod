@@ -50,7 +50,7 @@ class CLASS(Helmet_Phase2_CT): CLASS(Helmet_Phase2_Base)
 };
 class CLASS(Helmet_Phase2_CT_v2): CLASS(Helmet_Phase2_Base)
 {
-    displayName = "[KC] INF P2 Helm 01 (Trooper, Version 2)";
+    displayName = "[KC] INF P2 Helm 01 (Trooper, v2)";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase2\CT_v2_camo1_co.paa),

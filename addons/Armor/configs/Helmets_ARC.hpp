@@ -30,7 +30,7 @@ class CLASS(Helmet_ARC_CT): CLASS(Helmet_ARC_Base)
     };
 };
 
-class CLASS(Helmet_ARC_CT_v2): CLASS(Helmet_ARC_CT)
+class CLASS(Helmet_ARC_CT_Legacy): CLASS(Helmet_ARC_CT)
 {
     displayName = "[KC] SF ARC P1.5 Helm 01 (Trooper, v2)";
     hiddenSelectionsTextures[] =

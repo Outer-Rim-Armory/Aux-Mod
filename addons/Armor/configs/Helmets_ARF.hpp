@@ -32,9 +32,9 @@ class CLASS(Helmet_ARF_CT): CLASS(Helmet_ARF_Base)
     };
 };
 
-class CLASS(Helmet_ARF_CT_v2): CLASS(Helmet_ARF_CT)
+class CLASS(Helmet_ARF_CT_Legacy): CLASS(Helmet_ARF_CT)
 {
-    displayName = "[KC] SF ARF Helm 01 (Trooper, v2)";
+    displayName = "[KC] SF ARF Helm 01 (Trooper, Legacy)";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\arf\CT_v2_camo1_co.paa),
