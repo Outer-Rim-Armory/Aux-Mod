@@ -162,6 +162,7 @@ class CLASS(Unit_Phase2_CPL): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 05 - Clone Corporal";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CPL));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CPL);
     hiddenSelectionsTextures[] =
@@ -187,6 +188,7 @@ class CLASS(Unit_Phase2_CS): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 06 - Clone Sergeant";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CS));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CS);
     hiddenSelectionsTextures[] =
@@ -210,6 +212,7 @@ class CLASS(Unit_Phase2_CSS): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 07 - Clone Staff Sergeant";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CSS));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSS);
     hiddenSelectionsTextures[] =
@@ -233,6 +236,7 @@ class CLASS(Unit_Phase2_CSFC): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 08 - Clone Sergeant First Class";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CSFC));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSFC);
     hiddenSelectionsTextures[] =
@@ -256,6 +260,7 @@ class CLASS(Unit_Phase2_CMS): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 09 - Clone Master Sergeant";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CMS));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSFC);
     hiddenSelectionsTextures[] =
@@ -279,6 +284,7 @@ class CLASS(Unit_Phase2_CSM): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 10 - Clone Sergeant Major";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CSM));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSM);
     hiddenSelectionsTextures[] =
@@ -303,6 +309,7 @@ class CLASS(Unit_Phase2_WO): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 11 - Clone Warrant Officer";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_WO));
+    icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_WO);
     hiddenSelectionsTextures[] =
@@ -328,6 +335,7 @@ class CLASS(Unit_Phase2_WO2): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 12 - Clone Warrant Officer 2";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_WO2));
+    icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_WO2);
     hiddenSelectionsTextures[] =
@@ -351,6 +359,7 @@ class CLASS(Unit_Phase2_WO3): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 13 - Clone Warrant Officer 3";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_WO3));
+    icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_WO3);
     hiddenSelectionsTextures[] =
@@ -374,6 +383,7 @@ class CLASS(Unit_Phase2_CL): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 14 - Clone Lieutenant";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CL));
+    icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_CL);
     hiddenSelectionsTextures[] =
@@ -397,6 +407,7 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 15 - Clone 1st Lieutenant";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CL1));
+    icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_CL);
     hiddenSelectionsTextures[] =
@@ -419,6 +430,7 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base)
 // class CLASS(Unit_Phase2_CAP): CLASS(Unit_Phase2_Base)
 // {
 //     displayName = "INF 16 - Clone Captain";
+//     icon = "iconManOfficer";
 
 //     uniformClass = QCLASS(Uniform_CAP);
 //     hiddenSelectionsTextures[] =
@@ -441,6 +453,7 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base)
 // class CLASS(Unit_Phase2_MAJ): CLASS(Unit_Phase2_Base)
 // {
 //     displayName = "INF 17 - Clone Major";
+//     icon = "iconManOfficer";
 
 //     uniformClass = QCLASS(Uniform_MAJ);
 //     hiddenSelectionsTextures[] =
@@ -463,6 +476,7 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base)
 // class CLASS(Unit_Phase2_CMD): CLASS(Unit_Phase2_Base)
 // {
 //     displayName = "INF 18 - Clone Commander";
+//     icon = "iconManOfficer";
 
 //     uniformClass = QCLASS(Uniform_CMD);
 //     hiddenSelectionsTextures[] =
@@ -526,8 +540,9 @@ class CLASS(Unit_Phase2_Enlisted_CamoGrey): CLASS(Unit_Phase2_Recruit_CamoBrown)
     };
 };
 
-class CLASS(Unit_Phase2_NCO_CamoBrown): CLASS(Unit_Phase2_Recruit_CamoBrown)
+class CLASS(Unit_Phase2_NCO_CamoBrown): CLASS(Unit_Phase2_CS)
 {
+    SCOPE_HIDDEN;
     uniformClass = QCLASS(Uniform_NCO_CamoBrown);
     hiddenSelectionsTextures[] =
     {
@@ -536,7 +551,7 @@ class CLASS(Unit_Phase2_NCO_CamoBrown): CLASS(Unit_Phase2_Recruit_CamoBrown)
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
-class CLASS(Unit_Phase2_NCO_CamoGrey): CLASS(Unit_Phase2_Recruit_CamoBrown)
+class CLASS(Unit_Phase2_NCO_CamoGrey): CLASS(Unit_Phase2_NCO_CamoBrown)
 {
     uniformClass = QCLASS(Uniform_NCO_CamoGrey);
     hiddenSelectionsTextures[] =
@@ -547,8 +562,9 @@ class CLASS(Unit_Phase2_NCO_CamoGrey): CLASS(Unit_Phase2_Recruit_CamoBrown)
     };
 };
 
-class CLASS(Unit_Phase2_Officer_CamoBrown): CLASS(Unit_Phase2_Recruit_CamoBrown)
+class CLASS(Unit_Phase2_Officer_CamoBrown): CLASS(Unit_Phase2_WO)
 {
+    SCOPE_HIDDEN;
     uniformClass = QCLASS(Uniform_Officer_CamoBrown);
     hiddenSelectionsTextures[] =
     {
@@ -557,7 +573,7 @@ class CLASS(Unit_Phase2_Officer_CamoBrown): CLASS(Unit_Phase2_Recruit_CamoBrown)
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
-class CLASS(Unit_Phase2_Officer_CamoGrey): CLASS(Unit_Phase2_Recruit_CamoBrown)
+class CLASS(Unit_Phase2_Officer_CamoGrey): CLASS(Unit_Phase2_Officer_CamoBrown)
 {
     uniformClass = QCLASS(Uniform_Officer_CamoGrey);
     hiddenSelectionsTextures[] =
