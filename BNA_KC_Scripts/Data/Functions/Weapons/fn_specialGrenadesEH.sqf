@@ -74,9 +74,7 @@ params ["_eventHandlerType"];
                 _nearbyUnits = _position nearEntities [["CAManBase", "Air", "Car", "Motorcycle", "Tank"], _radiusDroid];
                 _crewedUnits = [];
                 {
-                    private ["_crew"];
-                    _crew = _x call ace_common_fnc_getVehicleCrew;
-                    _crewedUnits append _crew;
+                    _crewedUnits append (crew _x);
                 } forEach _nearbyUnits;
                 _nearbyUnits append _crewedUnits;
                 _nearbyUnits = _nearbyUnits arrayIntersect _nearbyUnits;
