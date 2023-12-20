@@ -1,3 +1,6 @@
+#ifdef __A3_DEBUG__
+    #include "\BNA\BNA_KC\addons\Core\script_debug.hpp"
+#endif
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
 #undef PREP
