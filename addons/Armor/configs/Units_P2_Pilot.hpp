@@ -25,6 +25,7 @@ class CLASS(Unit_Phase2_CXE): CLASS(Unit_Phase2_CXA)
 {
     displayName = "AVI P2 Pilot 11 (Ensign)";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CXE));
+    icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_CXE);
     hiddenSelectionsTextures[] =

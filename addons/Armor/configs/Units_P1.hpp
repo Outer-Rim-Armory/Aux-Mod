@@ -102,6 +102,7 @@ class CLASS(Unit_Phase1_CPL): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 05 - Clone Corporal";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CPL));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CPL);
 
@@ -121,6 +122,7 @@ class CLASS(Unit_Phase1_CS): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 06 - Clone Sergeant";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CS));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CS);
 
@@ -138,6 +140,7 @@ class CLASS(Unit_Phase1_CSS): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 07 - Clone Staff Sergeant";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CSS));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSS);
 
@@ -155,6 +158,7 @@ class CLASS(Unit_Phase1_CSFC): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 08 - Clone Sergeant First Class";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CSFC));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSFC);
 
@@ -172,6 +176,7 @@ class CLASS(Unit_Phase1_CMS): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 09 - Clone Master Sergeant";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CMS));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSFC);
 
@@ -189,6 +194,7 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 10 - Clone Sergeant Major";
     editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CSM));
+    icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSM);
 
@@ -205,6 +211,7 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 // class CLASS(Unit_Phase1_CL): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 11 - Clone Lieutenant";
+//     icon = "iconManOfficer";
 
 //     uniformClass = QCLASS(Uniform_CL);
 
@@ -223,6 +230,7 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 // class CLASS(Unit_Phase1_WO): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 12 - Clone Warrant Officer";
+//     icon = "iconManOfficer";
 
 //     uniformClass = QCLASS(Uniform_WO);
 
@@ -239,6 +247,7 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 // class CLASS(Unit_Phase1_CL1): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 13 - Clone 1st Lieutenant";
+//     icon = "iconManOfficer";
 
 //     uniformClass = QCLASS(Uniform_CL);
 
@@ -255,6 +264,7 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 // class CLASS(Unit_Phase1_CAP): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 14 - Clone Captain";
+//     icon = "iconManOfficer";
 
 //     uniformClass = QCLASS(Uniform_CAP);
 
@@ -271,6 +281,7 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 // class CLASS(Unit_Phase1_MAJ): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 15 - Clone Major";
+//     icon = "iconManOfficer";
 
 //     uniformClass = QCLASS(Uniform_MAJ);
 
@@ -287,6 +298,7 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 // class CLASS(Unit_Phase1_CMD): CLASS(Unit_Phase1_Base)
 // {
 //     displayName = "INF 16 - Clone Commander";
+//     icon = "iconManOfficer";
 
 //     uniformClass = QCLASS(Uniform_CMD);
 

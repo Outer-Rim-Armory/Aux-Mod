@@ -3,6 +3,7 @@ class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base)
     SCOPE_HIDDEN;
     displayName = "Jedi Knight";
     editorSubcategory = QCLASS(EdSubCat_Special);
+    icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_Jedi_Knight);
     model = "\lsd_armor_bluefor\uniform\gar\jediCommander\lsd_gar_jediCommander_uniform.p3d";
