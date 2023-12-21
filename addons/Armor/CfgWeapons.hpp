@@ -303,6 +303,7 @@ class CfgWeapons
             QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
             QPATHTOF(data\vests\infantry\heavy\CPL_camo1_co.paa)          // Pauldron
         };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
     };
 
     class CLASS(Vest_CS): CLASS(Vest_Basic)
@@ -315,6 +316,7 @@ class CfgWeapons
             QPATHTOF(data\vests\infantry\heavy\CS_camo1_co.paa),       // Pauldron
             QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa) // Kama
         };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 
         class ItemInfo: ItemInfo
         {
@@ -331,6 +333,7 @@ class CfgWeapons
             QPATHTOF(data\vests\infantry\heavy\CSS_camo1_co.paa),
             QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
         };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
     };
 
     class CLASS(Vest_CSFC): CLASS(Vest_CS)
@@ -341,6 +344,7 @@ class CfgWeapons
             QPATHTOF(data\vests\infantry\heavy\CSFC_camo1_co.paa),
             QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
         };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
     };
 
     class CLASS(Vest_CSM): CLASS(Vest_CS)
@@ -351,6 +355,7 @@ class CfgWeapons
             QPATHTOF(data\vests\infantry\heavy\CSM_camo1_co.paa),
             QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
         };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
     };
 
     class CLASS(Vest_Officer): CLASS(Vest_Basic)
