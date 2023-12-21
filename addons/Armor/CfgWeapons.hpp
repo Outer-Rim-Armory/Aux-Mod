@@ -592,6 +592,8 @@ class CfgWeapons
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
     };
 
+    #include "configs\Vests_Airborne.hpp"
+
     class CLASS(Vest_ARC): CLASS(Vest_Basic)
     {
         displayName = "[KC] SF ARC Vest";
