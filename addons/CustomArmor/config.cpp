@@ -19,6 +19,9 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(Helmet_Phase2_Insulated_Dexus),
+            QCLASS(Helmet_Phase2_Insulated_Joe),
+            QCLASS(Helmet_Phase2_Insulated_Keeli),
             QCLASS(Helmet_ARC_Drake),
             QCLASS(Helmet_ARC_DrakeBacta),
             QCLASS(Helmet_ARC_Hagrid),
