@@ -1,0 +1,1 @@
+class CLASS(Helmet_ARF_Base);

@@ -1,0 +1,1 @@
+class CLASS(Helmet_Phase1_Pilot_Base);

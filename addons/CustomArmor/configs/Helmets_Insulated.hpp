@@ -1,0 +1,1 @@
+class CLASS(Helmet_Phase2_Insulated_Base);
