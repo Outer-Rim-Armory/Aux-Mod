@@ -203,7 +203,7 @@ class CfgWeapons
 
         // Remove the model and textures
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
-        modelOptics = QPATHTOF(data\nvgs\empty\empty.p3d);
+        modelOptics = QPATHTOEF(Core,data\models\empty\empty.p3d);
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
@@ -211,8 +211,8 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {};
-            uniformModel = "\BNA_KC_Core\data\nvgs\empty\empty.p3d";
-            modelOff = "\BNA_KC_Core\data\nvgs\empty\empty.p3d";
+            uniformModel = QPATHTOEF(Core,data\models\empty\empty.p3d);
+            modelOff = QPATHTOEF(Core,data\models\empty\empty.p3d);
         };
     };
 
