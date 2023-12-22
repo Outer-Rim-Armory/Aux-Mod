@@ -309,4 +309,6 @@ class CfgVehicles
         };
         picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
     };
+
+    #include "configs\GroundHolders.hpp"
 };
