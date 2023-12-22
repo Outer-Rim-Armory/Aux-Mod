@@ -170,7 +170,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Vest_ForceRecon_Officer: BNA_KC_Vest_ForceRecon
+    class CLASS(Vest_ForceRecon_Officer): CLASS(Vest_ForceRecon)
     {
         displayName = "[KC] SF XX Vest (Force Recon Officer)";
 
