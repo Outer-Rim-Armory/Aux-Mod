@@ -1,7 +1,7 @@
 class CLASS(Helmet_ARC_Base);
 class CLASS(Helmet_ARC_Drake): CLASS(Helmet_ARC_Base)
 {
-    displayName = "[KC] SF ARC Helm ('Drake')";
+    displayName = "[KC] SF ARC P1.5 Helm ('Drake')";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\arc\Drake_camo1_co.paa),
@@ -33,7 +33,7 @@ class CLASS(Helmet_ARC_DrakeBacta): CLASS(Helmet_ARC_Drake)
 
 class CLASS(Helmet_ARC_Hagrid): CLASS(Helmet_ARC_Base)
 {
-    displayName = "[KC] SF ARC Helm ('Hagrid')";
+    displayName = "[KC] SF ARC P1.5 Helm ('Hagrid')";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\arc\Hagrid_camo1_co.paa),
@@ -65,7 +65,7 @@ class CLASS(Helmet_ARC_HagridPlasma): CLASS(Helmet_ARC_Hagrid)
 
 class CLASS(Helmet_ARC_Tyrant): CLASS(Helmet_ARC_Base)
 {
-    displayName = "[KC] SF ARC Helm ('Tyrant')";
+    displayName = "[KC] SF ARC P1.5 Helm ('Tyrant')";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\arc\Tyrant_camo1_co.paa),
