@@ -10,9 +10,9 @@ class CLASS(Helmet_ARC_Drake): CLASS(Helmet_ARC_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_ARC_Drake);
-    GVAR(helmetOn) = QCLASS(Helmet_ARC_DrakeBacta);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_ARC_Drake);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_ARC_DrakeBacta);
 };
 class CLASS(Helmet_ARC_DrakeBacta): CLASS(Helmet_ARC_Drake)
 {
@@ -42,9 +42,9 @@ class CLASS(Helmet_ARC_Hagrid): CLASS(Helmet_ARC_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_ARC_Hagrid);
-    GVAR(helmetOn) = QCLASS(Helmet_ARC_HagridPlasma);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_ARC_Hagrid);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_ARC_HagridPlasma);
 };
 class CLASS(Helmet_ARC_HagridPlasma): CLASS(Helmet_ARC_Hagrid)
 {
@@ -74,9 +74,9 @@ class CLASS(Helmet_ARC_Tyrant): CLASS(Helmet_ARC_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_ARC_Tyrant);
-    GVAR(helmetOn) = QCLASS(Helmet_ARC_TyrantCrimson);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_ARC_Tyrant);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_ARC_TyrantCrimson);
 };
 class CLASS(Helmet_ARC_TyrantCrimson): CLASS(Helmet_ARC_Tyrant)
 {

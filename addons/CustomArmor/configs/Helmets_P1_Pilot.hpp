@@ -25,9 +25,9 @@ class CLASS(Helmet_Phase1_Pilot_Blue): CLASS(Helmet_Phase1_Pilot_Base)
     subItems[] = {};
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_Phase1_Pilot_Blue);
-    GVAR(helmetOn) = QCLASS(Helmet_Phase1_Pilot_BlueBacta);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Pilot_Blue);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_Phase1_Pilot_BlueBacta);
 };
 class CLASS(Helmet_Phase1_Pilot_BlueBacta): CLASS(Helmet_Phase1_Pilot_Blue)
 {

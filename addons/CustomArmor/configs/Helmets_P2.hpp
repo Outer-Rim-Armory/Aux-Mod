@@ -21,9 +21,9 @@ class CLASS(Helmet_Phase2_Bob): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_Phase2_Bob);
-    GVAR(helmetOn) = QCLASS(Helmet_Phase2_BobKyber);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Bob);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_Phase2_BobKyber);
 };
 class CLASS(Helmet_Phase2_BobKyber): CLASS(Helmet_Phase2_Bob)
 {
@@ -50,9 +50,9 @@ class CLASS(Helmet_Phase2_Burnt): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_Phase2_Burnt);
-    GVAR(helmetOn) = QCLASS(Helmet_Phase2_BurntBacta);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Burnt);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_Phase2_BurntBacta);
 };
 class CLASS(Helmet_Phase2_BurntBacta): CLASS(Helmet_Phase2_Burnt)
 {
@@ -79,7 +79,7 @@ class CLASS(Helmet_Phase2_Dexus): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
+    EGVAR(Armor,nvCanToggle) = TRUE;
     GVAR(toggleOff) = QCLASS(Helmet_Phase2_Dexus);
     GVAR(toggleOn) = QCLASS(Helmet_Phase2_DexusBacta);
 };
@@ -216,9 +216,9 @@ class CLASS(Helmet_Phase2_Joe): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_Phase2_Joe);
-    GVAR(helmetOn) = QCLASS(Helmet_Phase2_JoeCrimson);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Joe);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_Phase2_JoeCrimson);
 };
 class CLASS(Helmet_Phase2_JoeCrimson): CLASS(Helmet_Phase2_Joe)
 {
@@ -245,9 +245,9 @@ class CLASS(Helmet_Phase2_Keeli): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_Phase2_Keeli);
-    GVAR(helmetOn) = QCLASS(Helmet_Phase2_KeeliCrimson);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Keeli);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_Phase2_KeeliCrimson);
 };
 class CLASS(Helmet_Phase2_KeeliCrimson): CLASS(Helmet_Phase2_Keeli)
 {
@@ -273,9 +273,9 @@ class CLASS(Helmet_Phase2_Keeli_CamoBrown): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_Phase2_Keeli_CamoBrown);
-    GVAR(helmetOn) = QCLASS(Helmet_Phase2_KeeliCrimson_CamoBrown);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Keeli_CamoBrown);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_Phase2_KeeliCrimson_CamoBrown);
 };
 class CLASS(Helmet_Phase2_KeeliCrimson_CamoBrown): CLASS(Helmet_Phase2_Keeli_CamoBrown)
 {
@@ -301,9 +301,9 @@ class CLASS(Helmet_Phase2_Keeli_CamoGrey): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_Phase2_Keeli_CamoGrey);
-    GVAR(helmetOn) = QCLASS(Helmet_Phase2_KeeliCrimson_CamoGrey);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Keeli_CamoGrey);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_Phase2_KeeliCrimson_CamoGrey);
 };
 class CLASS(Helmet_Phase2_KeeliCrimson_CamoGrey): CLASS(Helmet_Phase2_Keeli_CamoGrey)
 {
@@ -342,9 +342,9 @@ class CLASS(Helmet_Phase2_Lou): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_Phase2_Lou);
-    GVAR(helmetOn) = QCLASS(Helmet_Phase2_LouPlasma);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Lou);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_Phase2_LouPlasma);
 };
 class CLASS(Helmet_Phase2_LouPlasma): CLASS(Helmet_Phase2_Lou)
 {
@@ -552,9 +552,9 @@ class CLASS(Helmet_Phase2_Tyrant): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_Phase2_Tyrant);
-    GVAR(helmetOn) = QCLASS(Helmet_Phase2_TyrantCrimson);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Tyrant);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_Phase2_TyrantCrimson);
 };
 class CLASS(Helmet_Phase2_TyrantCrimson): CLASS(Helmet_Phase2_Tyrant)
 {

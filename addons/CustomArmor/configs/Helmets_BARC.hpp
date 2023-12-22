@@ -9,9 +9,9 @@ class CLASS(Helmet_BARC_Rat): CLASS(Helmet_BARC_Base)
     };
 
     GVAR(isCustom) = TRUE;
-    GVAR(canHelmetToggle) = TRUE;
-    GVAR(helmetOff) = QCLASS(Helmet_BARC_Rat);
-    GVAR(helmetOn) = QCLASS(Helmet_BARC_RatCrimson);
+    EGVAR(Armor,nvCanToggle) = TRUE;
+    EGVAR(Armor,nvHelmetOff) = QCLASS(Helmet_BARC_Rat);
+    EGVAR(Armor,nvHelmetOn) = QCLASS(Helmet_BARC_RatCrimson);
 };
 class CLASS(Helmet_BARC_RatCrimson): CLASS(Helmet_BARC_Rat)
 {
