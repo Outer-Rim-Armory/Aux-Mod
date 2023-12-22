@@ -83,6 +83,18 @@ scopeCurator = 0
     count = COUNT; \
 }
 
+#define GROUND_CLASS(WEAP_NAME) DOUBLES(Ground,WEAP_NAME)
+#define QGROUND_CLASS(WEAP_NAME) QUOTE(GROUND_CLASS(WEAP_NAME))
+#define GROUND_HOLDER(WEAP_NAME, DISPLAY_NAME) class GROUND_CLASS: DOUBLES(Ground,CLASS(Holder_Base)) \
+{ \
+    SCOPE_PUBLIC; \
+    displayName = DISPLAY_NAME; \
+    class TransportItems \
+    { \
+        ITEM_XX(CLASS(WEAP_NAME),1); \
+    }; \
+}
+
 // Item Types
 #define TYPE_HEADGEAR 605
 #define TYPE_VEST 701

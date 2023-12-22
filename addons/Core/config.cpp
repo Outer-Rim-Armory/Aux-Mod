@@ -1,5 +1,7 @@
 #include "script_component.hpp"
+#include "CfgEditorCategories.hpp"
 #include "CfgEditorSubcategories.hpp"
+#include "CfgVehicles.hpp"
 
 
 class CfgPatches

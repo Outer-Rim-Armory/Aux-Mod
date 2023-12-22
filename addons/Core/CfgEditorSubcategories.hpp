@@ -57,4 +57,10 @@ class CfgEditorSubcategories
     {
         displayName = "Helicopters";
     };
+
+    // Objects
+    class CLASS(Edsubcat_Helmets)
+    {
+        displayName = "Helmets";
+    };
 };
