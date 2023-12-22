@@ -27,7 +27,9 @@ class CfgPatches
             QCLASS(Helmet_ARC_TyrantCrimson),
             QCLASS(Helmet_ARF_Patriot),
             QCLASS(Helmet_ARF_Sin),
-            QCLASS(Helmet_ARF_Tugz)
+            QCLASS(Helmet_ARF_Tugz),
+            QCLASS(Helmet_BARC_Rat),
+            QCLASS(Helmet_BARC_RatCrimson)
         };
         VERSION_CONFIG;
     };
