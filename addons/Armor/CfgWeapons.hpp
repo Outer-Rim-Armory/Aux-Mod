@@ -187,4 +187,121 @@ class CfgWeapons
             uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Officer.p3d";
         };
     };
+
+    class ls_nvg_base;
+    class lsd_gar_standard_nvg: ls_nvg_base
+    {
+        class ItemInfo;
+    };
+    class CLASS(NVG_Chip): lsd_gar_standard_nvg
+    {
+        SCOPE_PUBLIC;
+        displayName = "[KC] Clone NV Chip";
+
+        visionMode[] = {"Normal", "NVG", "TI"};
+        thermalMode[] = {WHOT};
+
+        // Remove the model and textures
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        modelOptics = QPATHTOF(data\nvgs\empty\empty.p3d);
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {};
+            uniformModel = "\BNA_KC_Core\data\nvgs\empty\empty.p3d";
+            modelOff = "\BNA_KC_Core\data\nvgs\empty\empty.p3d";
+        };
+    };
+
+    class CLASS(NVG_Visor): CLASS(NVG_Chip)
+    {
+        displayName = "[KC] Clone P2 NV Visor";
+
+        model = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] =
+        {
+            QPATHTOF(data\nvgs\visor_camo1_co.paa)
+        };
+        picture = "\lsd_equipment_bluefor\nvg\gar\_ui\icon_SWLB_clone_nvg_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
+            modelOff = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_off.p3d";
+        };
+    };
+    class CLASS(NVG_Visor_v2): CLASS(NVG_Visor)
+    {
+        displayName = "[KC] Clone P2 NVG Visor (v2)";
+        hiddenSelectionsTextures[] =
+        {
+            QPATHTOF(data\nvgs\visor_v2_camo1_co.paa)
+        };
+    };
+
+    class CLASS(NVG_Rangefinder): CLASS(NVG_Chip)
+    {
+        displayName = "[KC] Clone P2 Rangefinder (CS+)";
+
+        model = "\lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] =
+        {
+            QPATHTOF(data\nvgs\rangefinder_camo1_co.paa)
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_rangefinder_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1"};
+            uniformModel = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
+            modelOff = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
+        };
+    };
+
+    class CLASS(NVG_Officer): CLASS(NVG_Chip)
+    {
+        displayName = "[KC] Clone P2 Officer Visor (WO+)";
+
+        model = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] =
+        {
+            QPATHTOF(data\nvgs\officer_camo1_co.paa)
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
+            modelOff = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
+        };
+    };
+
+    class CLASS(NVG_Engineer): CLASS(NVG_Chip)
+    {
+        displayName = "[KC] Engineer Comms";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\SWLB_clone_nvg_co.paa",
+            "\SWLB_clones\data\SWLB_clone_nvg_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+            modelOff = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+        };
+    };
 };
