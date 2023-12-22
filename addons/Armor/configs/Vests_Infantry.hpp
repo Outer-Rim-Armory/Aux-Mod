@@ -158,8 +158,8 @@ class CLASS(Vest_Hazard): CLASS(Vest_Basic)
     hiddenSelections[] = {"camo1", "camo2"};
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\light_accessories_co.paa",  // Suspenders
-        "\SWLB_clones\data\officer_accessories_co.paa" // Kama
+        "\SWLB_clones\data\light_accessories_co.paa",               // Suspenders
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa), // Kama
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
 
@@ -257,7 +257,7 @@ class CLASS(Vest_CSM): CLASS(Vest_CS)
 
 class CLASS(Vest_Officer): CLASS(Vest_Basic)
 {
-    displayName = "[KC] INF Vest 12 (Officer)";
+    displayName = "[KC] INF Vest 12+ (Officer)";
 
     model = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
     hiddenSelections[] = {"camo1"};
@@ -299,14 +299,14 @@ class CLASS(Vest_Officer): CLASS(Vest_Basic)
 
 class CLASS(Vest_Officer_v2): CLASS(Vest_Officer)
 {
-    displayName = "[KC] INF Vest 12 (Officer, v2)";
+    displayName = "[KC] INF Vest 12+ (Officer, v2)";
 
     model = "\SWLB_CEE\data\SWLB_CEE_Officer_Tactical.p3d";
     hiddenSelections[] = {"camo1", "camo2"};
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\officer_accessories_co.paa", // Kama and Pauldron
-        "\SWLB_clones\data\light_accessories_co.paa"    // Suspenders
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa), // Kama and Pauldron
+        "\SWLB_clones\data\light_accessories_co.paa"                // Suspenders
     };
 
     class ItemInfo: ItemInfo
@@ -322,7 +322,7 @@ class CLASS(Vest_Pauldron): CLASS(Vest_Officer)
     model = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\officer_accessories_co.paa" // Pauldron
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa), // Pauldron
     };
 
     class ItemInfo: ItemInfo
@@ -336,7 +336,7 @@ class CLASS(Vest_WO): CLASS(Vest_Pauldron)
     displayName = "[KC] INF Vest 11 (Warrant Officer)";
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\officer_accessories_co.paa" // TODO: Update to WO texture when merging
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
     };
 };
 
@@ -347,8 +347,8 @@ class CLASS(Vest_Kama): CLASS(Vest_Officer)
     hiddenSelections[] = {"camo1", "rank"};
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\officer_accessories_co.paa", // Kama
-        ""                                              // Rank
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa), // Kama
+        ""                                                          // Rank
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_kama_armor_ca.paa";
 
@@ -366,7 +366,7 @@ class CLASS(Vest_Tactical_Commander): CLASS(Vest_Officer)
     hiddenSelections[] = {"camo1", "camo2", "pauldron"};
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\officer_accessories_co.paa",              // Kama
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa),  // Kama
         "\SWLB_clones\data\light_accessories_co.paa",                // Suspenders
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa) // Pauldron
     };
@@ -387,8 +387,8 @@ class CLASS(Vest_Commander): CLASS(Vest_Officer)
     hiddenSelections[] = {"camo1", "rank"};
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\officer_accessories_co.paa", // Kama and Pauldron
-        ""                                              // Rank
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa), // Kama and Pauldron
+        ""                                                          // Rank
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_commander_armor_ca.paa";
 
@@ -404,7 +404,7 @@ class CLASS(Vest_Commander_v2): CLASS(Vest_Commander)
     displayName = "[KC] INF Vest 18 (Commander, v2)";
     hiddenSelectionsTextures[] =
     {
-        "\SWLB_clones\data\officer_accessories_co.paa",
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa),
         "\SWLB_clones\data\rank_co.paa"
     };
 };
