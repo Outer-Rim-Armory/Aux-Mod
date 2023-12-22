@@ -17,7 +17,15 @@ class CfgPatches
             QCLASS(Armor)
         };
         units[] = {};
-        weapons[] = {};
+        weapons[] =
+        {
+            QCLASS(Helmet_ARC_Drake),
+            QCLASS(Helmet_ARC_DrakeBacta),
+            QCLASS(Helmet_ARC_Hagrid),
+            QCLASS(Helmet_ARC_HagridPlasma),
+            QCLASS(Helmet_ARC_Tyrant),
+            QCLASS(Helmet_ARC_TyrantCrimson)
+        };
         VERSION_CONFIG;
     };
 };

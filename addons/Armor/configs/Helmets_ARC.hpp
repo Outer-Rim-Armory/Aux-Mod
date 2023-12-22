@@ -9,13 +9,20 @@ class CLASS(Helmet_ARC_Base): CLASS(Helmet_Base)
     hiddenSelectionsTextures[] =
     {
         "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
-        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
+    };
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
     picture = "\lsd_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
 
     class ItemInfo: ItemInfo
     {
-        hiddenSelections[] = {"camo1", "visor"};
+        hiddenSelections[] = {"camo1", "visor", "illum"};
         uniformModel = "\lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";
     };
 };
