@@ -8,9 +8,9 @@ class CLASS(Helmet_ARC_Base): CLASS(Helmet_Base)
     hiddenSelections[] = {"camo1", "visor", "illum"};
     hiddenSelectionsTextures[] =
     {
-        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
-        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
-        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa", // Main Helmet
+        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",  // Visor
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa", // Fin Light
     };
     hiddenSelectionsMaterials[] =
     {
@@ -33,7 +33,8 @@ class CLASS(Helmet_ARC_CT): CLASS(Helmet_ARC_Base)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\arc\CT_camo1_co.paa),
-        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
 };
 
@@ -43,7 +44,8 @@ class CLASS(Helmet_ARC_CT_Legacy): CLASS(Helmet_ARC_CT)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\arc\CT_v2_camo1_co.paa),
-        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
 };
 
@@ -53,7 +55,8 @@ class CLASS(Helmet_ARC_Enlisted_CamoBrown): CLASS(Helmet_ARC_CT)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\arc\camo\brown\Enlisted_camo1_co.paa),
-        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
 };
 
@@ -63,7 +66,8 @@ class CLASS(Helmet_ARC_Enlisted_CamoGrey): CLASS(Helmet_ARC_CT)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\arc\camo\grey\Enlisted_camo1_co.paa),
-        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
 };
 
@@ -73,6 +77,7 @@ class CLASS(Helmet_ARC_Enlisted_CamoNight): CLASS(Helmet_ARC_CT)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\arc\camo\night\Enlisted_camo1_co.paa),
-        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
 };

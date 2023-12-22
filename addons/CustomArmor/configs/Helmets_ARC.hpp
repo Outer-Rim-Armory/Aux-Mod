@@ -6,7 +6,7 @@ class CLASS(Helmet_ARC_Drake): CLASS(Helmet_ARC_Base)
     {
         QPATHTOF(data\helmets\arc\Drake_camo1_co.paa),
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
-        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
 
     GVAR(isCustom) = TRUE;
@@ -21,7 +21,7 @@ class CLASS(Helmet_ARC_DrakeBacta): CLASS(Helmet_ARC_Drake)
     {
         QPATHTOF(data\helmets\arc\Drake_camo1_co.paa),
         QPATHTOF(data\visors\Bacta_camo2_co.paa),
-        QPATHTOF(data\helmets\arc\Drake_camo1_co.paa)
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
     hiddenSelectionsMaterials[] =
     {
@@ -38,7 +38,7 @@ class CLASS(Helmet_ARC_Hagrid): CLASS(Helmet_ARC_Base)
     {
         QPATHTOF(data\helmets\arc\Hagrid_camo1_co.paa),
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
-        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
 
     GVAR(isCustom) = TRUE;
@@ -53,7 +53,7 @@ class CLASS(Helmet_ARC_HagridPlasma): CLASS(Helmet_ARC_Hagrid)
     {
         QPATHTOF(data\helmets\arc\Hagrid_camo1_co.paa),
         QPATHTOF(data\visors\Plasma_camo2_co.paa),
-        QPATHTOF(data\helmets\arc\Hagrid_camo1_co.paa)
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
     hiddenSelectionsMaterials[] =
     {
@@ -70,7 +70,7 @@ class CLASS(Helmet_ARC_Tyrant): CLASS(Helmet_ARC_Base)
     {
         QPATHTOF(data\helmets\arc\Tyrant_camo1_co.paa),
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
-        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
 
     GVAR(isCustom) = TRUE;
@@ -85,7 +85,7 @@ class CLASS(Helmet_ARC_TyrantCrimson): CLASS(Helmet_ARC_Tyrant)
     {
         QPATHTOF(data\helmets\arc\Tyrant_camo1_co.paa),
         QPATHTOF(data\visors\Crimson_camo2_co.paa),
-        QPATHTOF(data\helmets\arc\Tyrant_camo1_co.paa)
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
     };
     hiddenSelectionsMaterials[] =
     {
