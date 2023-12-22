@@ -116,6 +116,9 @@ ace_hearing_protection = 0.85;
 #define ALL_SIDES OPFOR, BLUFOR, INDEP, CIVILIAN
 
 // NVGs
+#define VISION_NORMAL 0
+#define VISION_NV 1
+#define VISION_THERMAL 2
 #define WHOT 0
 #define BHOT 1
 #define GHOT 2
