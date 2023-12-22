@@ -2,6 +2,7 @@
 #include "CfgEditorSubcategories.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgEventHandlers.hpp"
 
 
 class CfgPatches

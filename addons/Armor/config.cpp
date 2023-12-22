@@ -4,6 +4,7 @@
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgUnitInsignia.hpp"
+#include "CfgEventHandlers.hpp"
 
 
 class CfgPatches
