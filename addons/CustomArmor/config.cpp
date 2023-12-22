@@ -24,7 +24,10 @@ class CfgPatches
             QCLASS(Helmet_ARC_Hagrid),
             QCLASS(Helmet_ARC_HagridPlasma),
             QCLASS(Helmet_ARC_Tyrant),
-            QCLASS(Helmet_ARC_TyrantCrimson)
+            QCLASS(Helmet_ARC_TyrantCrimson),
+            QCLASS(Helmet_ARF_Patriot),
+            QCLASS(Helmet_ARF_Sin),
+            QCLASS(Helmet_ARF_Tugz)
         };
         VERSION_CONFIG;
     };
