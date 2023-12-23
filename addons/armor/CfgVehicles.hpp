@@ -177,7 +177,7 @@ class CfgVehicles
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_RTO_ca.paa";
 
         // TFAR Long Range
-        tf_hasLRradio = 1;
+        tf_hasLRradio = TRUE;
         tf_range = 25000;
 
         tf_dialog = "SWLB_clone_rto_radio_dialog";
@@ -308,6 +308,124 @@ class CfgVehicles
             QPATHTOF(data\backpacks\miniRadio\camo2_co.paa)
         };
         picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
+    };
+
+    class CLASS(Jetpack_JT12): CLASS(Backpack_Base)
+    {
+        displayName = "[KC] JT-12 Jetpack";
+
+        model = "\MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa"};
+        picture = "\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
+
+        JLTS_isJumppack = TRUE;
+        JLTS_settingsDialog = "JLTS_clone_jumppack_dialog";
+
+        JLTS_energy[] = {15,150};
+        JLTS_jumpLimits[] = {50,{2,50},"default"};
+        JLTS_steeringCoef = 0.1;
+        JLTS_recharge = 2;
+
+        JLTS_effectPoints[] = {"effect_left", "effect_right"};
+        JLTS_sounds[] =
+        {
+            {"\MRC\JLTS\jumppacks\sounds\ignite.wss",1,1},
+            {"\MRC\JLTS\jumppacks\sounds\ignite_fail.wss",3,1},
+            {"\MRC\JLTS\jumppacks\sounds\stop.wss",1,1},
+            {"\MRC\JLTS\jumppacks\sounds\stop_emergency.wss",5,1},
+            "JLTS_jumppack_error",
+            "JLTS_SFX_jumppack_idle"
+        };
+    };
+    class CLASS(Jetpack_JT12_LR): CLASS(Jetpack_JT12)
+    {
+        displayName = "[KC] JT-12 Jetpack [LR]";
+
+        // TFAR Long Range
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+    };
+
+    class CLASS(Jetpack_CDV21): CLASS(Jetpack_JT12)
+    {
+        displayName = "[KC] CDV-21 Droppack";
+
+        model = "\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_co.paa"};
+        picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
+
+        JLTS_energy[] = {10,100};
+        JLTS_jumpLimits[] = {50,{2,15},"default"};
+        JLTS_recharge = 1;
+    };
+
+    class CLASS(Jetpack_CDV21_LR): CLASS(Jetpack_JT12)
+    {
+        displayName = "[KC] CDV-21 Droppack [LR]";
+
+        // TFAR Long Range
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+    };
+
+    class CLASS(Jetpack_CDV19): CLASS(Jetpack_JT12)
+    {
+        displayName = "[KC] CDV-19 Jetpack";
+
+        model = "\MRC\JLTS\characters\CloneArmor\CloneJumppackMC.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_mc_co.paa"};
+        picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
+
+        JLTS_energy[] = {5,50};
+        JLTS_jumpLimits[] = {15,{2,30},"default"};
+        JLTS_steeringCoef = 0.02;
+        JLTS_effectPoints[] = {"effect"};
+    };
+
+    class CLASS(Jetpack_CDV19_LR): CLASS(Jetpack_CDV19)
+    {
+        displayName = "[KC] CDV-19 Jetpack [LR]";
+
+        // TFAR Long Range
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+    };
+
+    class CLASS(Jetpack_Droid): CLASS(Jetpack_JT12)
+    {
+        displayName = "[KC] Battle Droid Jetpack";
+
+        model = "\MRC\JLTS\characters\DroidArmor\DroidJetpackB1.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_co.paa"};
+        picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_jetpack_ui_ca.paa";
+
+        JLTS_energy[] = {25,150};
+        JLTS_settingsDialog = "JLTS_droid_jumppack_dialog";
+        JLTS_steeringCoef = 0.06;
+    };
+
+    class CLASS(Jetpack_DroidRocket): CLASS(Jetpack_Droid)
+    {
+        displayName = "[KC] Battle Droid Jetpack (Rocket)";
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_rocket_co.paa"};
     };
 
     #include "configs\GroundHolders.hpp"
