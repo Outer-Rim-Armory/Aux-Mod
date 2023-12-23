@@ -121,7 +121,26 @@ class CfgPatches
             QCLASS(Helmet_ARF_Sin),
             QCLASS(Helmet_ARF_Tugz),
             QCLASS(Helmet_BARC_Rat),
-            QCLASS(Helmet_BARC_RatCrimson)
+            QCLASS(Helmet_BARC_RatCrimson),
+            QCLASS(Uniform_Axel),
+            QCLASS(Uniform_Burnt),
+            QCLASS(Uniform_Dexus),
+            QCLASS(Uniform_Drake),
+            QCLASS(Uniform_Fil),
+            QCLASS(Uniform_FilSquad),
+            QCLASS(Uniform_Joe),
+            QCLASS(Uniform_Keeli),
+            QCLASS(Uniform_Keeli_CamoBrown),
+            QCLASS(Uniform_Keeli_CamoGrey),
+            QCLASS(Uniform_Ponds),
+            QCLASS(Uniform_PondsTrooper),
+            QCLASS(Uniform_Rat),
+            QCLASS(Uniform_Sin),
+            QCLASS(Uniform_Stone),
+            QCLASS(Uniform_Tyrant),
+            QCLASS(Uniform_Insulated_Dexus),
+            QCLASS(Uniform_Insulated_Joe),
+            QCLASS(Uniform_Insulated_Keeli),
         };
         VERSION_CONFIG;
     };

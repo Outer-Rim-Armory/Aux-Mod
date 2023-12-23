@@ -10,4 +10,6 @@ class CfgWeapons
     #include "configs\Helmets_ARC.hpp"
     #include "configs\Helmets_ARF.hpp"
     #include "configs\Helmets_BARC.hpp"
+
+    #include "configs\Uniforms.hpp"
 };
