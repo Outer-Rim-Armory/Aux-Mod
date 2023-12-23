@@ -54,6 +54,7 @@ class CfgPatches
             QCLASS(Helmet_Phase1_Pilot_Blue),
             QCLASS(Helmet_Phase1_Pilot_BlueBacta),
             QCLASS(Helmet_Phase1_Pilot_Mischief),
+            QCLASS(Helmet_Phase1_Tanker_Grey),
             QCLASS(Helmet_Phase2_Axel),
             QCLASS(Helmet_Phase2_Bob),
             QCLASS(Helmet_Phase2_BobKyber),
