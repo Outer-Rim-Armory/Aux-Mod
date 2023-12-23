@@ -12,19 +12,19 @@ class CfgWeapons
         class ItemInfo;
     };
 
-    #include "configs/Helmets_P1.hpp"
-    #include "configs/Helmets_P1_Pilot.hpp"
-    #include "configs/Helmets_P1_SpecOp.hpp"
-    #include "configs/Helmets_P2.hpp"
-    #include "configs/Helmets_P2_Pilot.hpp"
-    #include "configs/Helmets_P2_SpecOp.hpp"
-    #include "configs/Helmets_Airborne.hpp"
-    #include "configs/Helmets_Engineer.hpp"
-    #include "configs/Helmets_Insulated.hpp"
-    #include "configs/Helmets_ARC.hpp"
-    #include "configs/Helmets_ARF.hpp"
-    #include "configs/Helmets_BARC.hpp"
-    #include "configs/Helmets_Commando.hpp"
+    #include "configs\Helmets_P1.hpp"
+    #include "configs\Helmets_P1_Pilot.hpp"
+    #include "configs\Helmets_P1_SpecOp.hpp"
+    #include "configs\Helmets_P2.hpp"
+    #include "configs\Helmets_P2_Pilot.hpp"
+    #include "configs\Helmets_P2_SpecOp.hpp"
+    #include "configs\Helmets_Airborne.hpp"
+    #include "configs\Helmets_Engineer.hpp"
+    #include "configs\Helmets_Insulated.hpp"
+    #include "configs\Helmets_ARC.hpp"
+    #include "configs\Helmets_ARF.hpp"
+    #include "configs\Helmets_BARC.hpp"
+    #include "configs\Helmets_Commando.hpp"
 
     class ls_blueforUniform_base;
     class ls_gar_phase2_uniform: ls_blueforUniform_base
@@ -48,9 +48,9 @@ class CfgWeapons
         };
     };
 
-    #include "configs/Uniforms.hpp"
-    #include "configs/Uniforms_Commando.hpp"
-    #include "configs/Uniforms_Jedi.hpp"
+    #include "configs\Uniforms.hpp"
+    #include "configs\Uniforms_Commando.hpp"
+    #include "configs\Uniforms_Jedi.hpp"
 
     class V_PlateCarrier1_rgr;
     class SWLB_clone_basic_armor: V_PlateCarrier1_rgr
