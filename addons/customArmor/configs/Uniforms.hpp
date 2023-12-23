@@ -122,14 +122,14 @@ class CLASS(Uniform_Ponds): CLASS(Uniform_Base)
     };
 };
 
-class CLASS(Uniform_PondsTrooper): CLASS(Uniform_Base)
+class CLASS(Uniform_Trooper187th): CLASS(Uniform_Base)
 {
     displayName = "[187th] INF Armor";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Unit_PondsTrooper);
+        uniformClass = QCLASS(Unit_Trooper187th);
     };
 };
 
