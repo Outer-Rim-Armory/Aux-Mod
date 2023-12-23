@@ -1,1 +1,0 @@
-class CLASS(Unit_Phase2_Tanker_CT);

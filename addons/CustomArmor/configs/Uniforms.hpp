@@ -1,1 +1,0 @@
-CLASS(Uniform_Base);
