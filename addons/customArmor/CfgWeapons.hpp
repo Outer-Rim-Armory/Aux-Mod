@@ -61,5 +61,7 @@ class CfgWeapons
         {
             QPATHTOF(data\nvgs\Officer_Keeli_camo1_co.paa)
         };
+
+        GVAR(isCustom) = TRUE;
     };
 };
