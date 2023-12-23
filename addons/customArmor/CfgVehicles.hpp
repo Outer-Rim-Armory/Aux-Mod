@@ -17,4 +17,6 @@ class CfgVehicles
 
         GVAR(isCustom) = TRUE;
     };
+
+    #include "configs\GroundHolders.hpp"
 };
