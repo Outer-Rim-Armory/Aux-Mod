@@ -449,7 +449,7 @@ class CLASS(Helmet_Phase2_Scvrpio): CLASS(Helmet_Phase2_Base)
     displayName = "[KC] INF P2 Helm ('Scvrpio')";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\phase2\Scvrpio.paa),
+        QPATHTOF(data\helmets\phase2\Scvrpio_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 
