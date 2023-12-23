@@ -1,7 +1,7 @@
 class CfgSoundShaders
 {
-    class CLASS(SoundShader_Weapon_Base);
-    class CLASS(SoundShader_DC15A_Single): CLASS(SoundShader_Weapon_Base)
+    class CLASS(SoundShader_WeaponShot_Base);
+    class CLASS(SoundShader_DC15AShot_Single): CLASS(SoundShader_WeaponShot_Base)
     {
         samples[] =
         {
@@ -11,7 +11,7 @@ class CfgSoundShaders
             {QPATHTOF(data\audio\Fire4.wss), 1, 1}
         };
     };
-    class CLASS(SoundShader_DC15A_FullAuto): CLASS(SoundShader_DC15A_Single)
+    class CLASS(SoundShader_DC15AShot_FullAuto): CLASS(SoundShader_DC15AShot_Single)
     {
         samples[] =
         {
