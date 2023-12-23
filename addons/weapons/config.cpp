@@ -1,4 +1,7 @@
 #include "script_component.hpp"
+#include "CfgWeapons.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgAmmo.hpp"
 #include "CfgEventHandlers.hpp"
 
 
