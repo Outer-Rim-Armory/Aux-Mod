@@ -17,7 +17,28 @@ class CfgPatches
             QCLASS(core),
             QCLASS(armor)
         };
-        units[] = {};
+        units[] =
+        {
+            QCLASS(Unit_Axel),
+            QCLASS(Unit_Burnt),
+            QCLASS(Unit_Dexus),
+            QCLASS(Unit_Drake),
+            QCLASS(Unit_Fil),
+            QCLASS(Unit_FilSquad),
+            QCLASS(Unit_Joe),
+            QCLASS(Unit_Keeli),
+            QCLASS(Unit_Keeli_CamoBrown),
+            QCLASS(Unit_Keeli_CamoGrey),
+            QCLASS(Unit_Ponds),
+            QCLASS(Unit_PondsTrooper),
+            QCLASS(Unit_Rat),
+            QCLASS(Unit_Sin),
+            QCLASS(Unit_Stone),
+            QCLASS(Unit_Tyrant),
+            QCLASS(Unit_Phase2_Insulated_Dexus),
+            QCLASS(Unit_Phase2_Insulated_Joe),
+            QCLASS(Unit_Phase2_Insulated_Keeli)
+        };
         weapons[] =
         {
             QCLASS(Helmet_Phase1_Axel),

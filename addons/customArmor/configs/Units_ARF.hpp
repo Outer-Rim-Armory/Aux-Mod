@@ -1,1 +1,0 @@
-class CLASS(Unit_ARF_CT);
