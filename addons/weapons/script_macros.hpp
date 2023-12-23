@@ -1,3 +1,15 @@
+#define AMMO_USAGE_NONE 0
+#define AMMO_USAGE_LIGHT 1
+#define AMMO_USAGE_MARKING 2
+#define AMMO_USAGE_CONCEALMENT 4
+#define AMMO_USAGE_COUNTERMEASURES 8
+#define AMMO_USAGE_MINE 16
+#define AMMO_USAGE_UNDERWATER 32
+#define AMMO_USAGE_INFANTRY 64
+#define AMMO_USAGE_VEHICLES 128
+#define AMMO_USAGE_AIRCRAFT 256
+#define AMMO_USAGE_ARMORED_VEHICLES 512
+
 #define PLASMA_SOUNDS bulletFly[] = {"bulletFly1",0.2,"bulletFly2",0.2,"bulletFly3",0.2,"bulletFly4",0.2,"bulletFly5",0.2}; \
 bulletFly1[] = {"MRC\JLTS\weapons\Core\sounds\plasma_flyby\plasma_flyby_1",2.23872,1,100}; \
 bulletFly2[] = {"MRC\JLTS\weapons\Core\sounds\plasma_flyby\plasma_flyby_2",2.23872,1,100}; \

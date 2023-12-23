@@ -13,6 +13,9 @@ class CfgAmmo
         deflecting = 0;
         cartridge = "";
 
+        aiAmmoUsageFlags = AMMO_USAGE_INFANTRY;
+        ACE_muzzleVelocityVariationSD = 0;
+
         supersoniccrackfar[] = {};
         supersoniccracknear[] = {};
 
@@ -64,6 +67,50 @@ class CfgAmmo
         effectfly = "JLTS_plasma_green";
     };
 
+    class CLASS(Bullet_PlasmaCarbine_Blue): CLASS(Bullet_PlasmaBase)
+    {
+        SCOPE_PUBLIC;
+
+        hit = 10;
+        caliber = 1;
+        typicalSpeed = 820;
+        dangerRadiusHit = 12;
+        dangerRadiusBulletClose = 8;
+        suppressionRadiusHit = 8;
+        suppressionRadiusBulletClose = 6;
+        cost = 1.2;
+
+        audibleFire = 40;
+        timeToLive = 4;
+        tracerEndTime = 10;
+        tracerScale = 0.8;
+        tracerStartTime = 0.05;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+
+        ACE_ammoTempMuzzleVelocityShifts[] = {-26.55, -25.47, -22.85, -20.12, -16.98, -12.8, -7.64, -1.53, 5.96, 15.17, 26.19};
+        ACE_ballisticCoefficients[] = {0.263};
+        ACE_barrelLengths[] = {254,406.4,508,609.6,660.4,762};
+        ACE_bulletLength = 32.893;
+        ACE_bulletMass = 7.9704;
+        ACE_caliber = 6.706;
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {730,760,788,800,810,830};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_velocityBoundaries[] = {};
+    };
+    class CLASS(Bullet_PlasmaCarbine_Red): CLASS(Bullet_PlasmaCarbine_Blue)
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+    };
+    class CLASS(Bullet_PlasmaCarbine_Green): CLASS(Bullet_PlasmaCarbine_Blue)
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+        effectfly = "JLTS_plasma_green";
+    };
+
     class Aux12thFleet_Ammo_AutoRifle_Blue: CLASS(Bullet_PlasmaRifle_Blue)
     {
         hit = 17.5;
@@ -71,19 +118,6 @@ class CfgAmmo
         tracerscale = 1.5;
     };
     class Aux12thFleet_Ammo_AutoRifle_Red: Aux12thFleet_Ammo_AutoRifle_Blue
-    {
-        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
-        effectfly = "JLTS_plasma_red";
-    };
-
-    class JLTS_bullet_carbine_blue;
-    class Aux12thFleet_Ammo_Carbine_Blue: JLTS_bullet_carbine_blue
-    {
-        coefgravity = 0.01;
-        PLASMA_SOUNDS;
-        PLASMA_EFFECTS;
-    };
-    class Aux12thFleet_Ammo_Carbine_Red: Aux12thFleet_Ammo_Carbine_Blue
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
