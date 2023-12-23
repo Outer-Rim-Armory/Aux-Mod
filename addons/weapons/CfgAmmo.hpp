@@ -64,7 +64,7 @@ class CfgAmmo
         effectfly = "JLTS_plasma_green";
     };
 
-    class Aux12thFleet_Ammo_AutoRifle_Blue: Aux12thFleet_Ammo_Rifle_Blue
+    class Aux12thFleet_Ammo_AutoRifle_Blue: CLASS(Bullet_PlasmaRifle_Blue)
     {
         hit = 17.5;
         caliber = 2.8;

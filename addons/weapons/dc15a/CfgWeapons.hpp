@@ -1,6 +1,9 @@
 class CfgWeapons
 {
+    class CLASS(Muzzle_Stun);
+    class CLASS(Muzzle_Stun_Fried);
     class UGL_F;
+
     class arifle_MX_Base_F;
     class JLTS_DC15A: arifle_MX_Base_F
     {
@@ -24,7 +27,6 @@ class CfgWeapons
         {
             class StandardSound;
         };
-        class Stun;
     };
     class CLASS(DC15A_Base): JLTS_DC15A_plastic
     {

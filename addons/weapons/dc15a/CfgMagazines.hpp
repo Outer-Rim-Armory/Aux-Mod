@@ -1,5 +1,6 @@
 class CfgMagazines
 {
+    class CLASS(Mag_Base);
     class CLASS(Mag_60rnd_DC15A): CLASS(Mag_Base)
     {
         SCOPE_PUBLIC;
