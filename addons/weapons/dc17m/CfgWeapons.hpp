@@ -108,8 +108,8 @@ class CfgWeapons
             dispersion = 0.0001;
             class StandardSound
             {
-                soundSetShot[] = {QCLASS(SoundSet_DC1Shot7M_Single)};
-                soundSetShotWater[] = {QCLASS(SoundSet_DC1Shot7M_Single)};
+                soundSetShot[] = {QCLASS(SoundSet_DC17MShot_Single)};
+                soundSetShotWater[] = {QCLASS(SoundSet_DC17MShot_Single)};
             };
         };
         class FullAuto: FullAuto
