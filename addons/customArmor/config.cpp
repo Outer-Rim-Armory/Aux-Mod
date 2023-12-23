@@ -162,6 +162,7 @@ class CfgPatches
             QCLASS(Uniform_Insulated_Dexus),
             QCLASS(Uniform_Insulated_Joe),
             QCLASS(Uniform_Insulated_Keeli),
+            QCLASS(NVG_Officer_Keeli)
         };
         VERSION_CONFIG;
     };
