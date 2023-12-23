@@ -688,7 +688,8 @@ soundWood80[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Ricochet_Gener
 soundWood81[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Ricochet_Generic_12",2.81838,1,99}; \
 soundWood82[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Ricochet_Generic_13",2.81838,1,75}; \
 soundWood83[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Ricochet_Generic_14",2.81838,1,75}; \
-soundWood9[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Impact_Wood_01",0.501187,1,75}
+soundWood9[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Impact_Wood_01",0.501187,1,75}; \
+class SuperSonicCrack {}
 
 #define PLASMA_EFFECTS craterEffects = ""; \
 craterShape = ""; \
