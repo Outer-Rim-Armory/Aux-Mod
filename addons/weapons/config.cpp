@@ -16,7 +16,9 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            QCLASS(core)
+            QCLASS(core),
+            "JLTS_weapons_Core",
+            "3AS_Main"
         };
         units[] = {};
         weapons[] =
