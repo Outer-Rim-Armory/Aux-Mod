@@ -105,6 +105,7 @@ class CfgWeapons
     #include "configs\Vests_Airborne.hpp"
     #include "configs\Vests_Engineer.hpp"
     #include "configs\Vests_ARC.hpp"
+    #include "configs\Vests_Commando.hpp"
 
     class BNA_KC_Vest_ARF: CLASS(Vest_Basic)
     {

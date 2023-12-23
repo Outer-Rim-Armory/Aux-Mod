@@ -325,7 +325,12 @@ class CfgPatches
             QCLASS(Uniform_Commando_Base),
             QCLASS(Uniform_Jedi_Knight),
             QCLASS(Uniform_Jedi_Commander),
-            QCLASS(Vest_Basic)
+            QCLASS(Vest_Basic),
+            QCLASS(Vest_Commando_Basic),
+            QCLASS(Vest_Commando_EOD),
+            QCLASS(Vest_Commando_SL),
+            QCLASS(Vest_Commando_Sniper),
+            QCLASS(Vest_Commando_Tech)
         };
         VERSION_CONFIG;
     };
