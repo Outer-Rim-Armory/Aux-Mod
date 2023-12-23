@@ -37,7 +37,8 @@ class CfgPatches
             QCLASS(Unit_Tyrant),
             QCLASS(Unit_Phase2_Insulated_Dexus),
             QCLASS(Unit_Phase2_Insulated_Joe),
-            QCLASS(Unit_Phase2_Insulated_Keeli)
+            QCLASS(Unit_Phase2_Insulated_Keeli),
+            QCLASS(Backpack_Keeli)
         };
         weapons[] =
         {
