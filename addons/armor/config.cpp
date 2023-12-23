@@ -378,7 +378,15 @@ class CfgPatches
             QCLASS(Vest_Commando_EOD),
             QCLASS(Vest_Commando_SL),
             QCLASS(Vest_Commando_Sniper),
-            QCLASS(Vest_Commando_Tech)
+            QCLASS(Vest_Commando_Tech),
+            QCLASS(NVG_Chip)
+            QCLASS(NVG_Visor),
+            QCLASS(NVG_Visor_v2),
+            QCLASS(NVG_Rangefinder),
+            QCLASS(NVG_Officer),
+            QCLASS(NVG_Engineer),
+            QCLASS(NVG_Commando_Visor),
+            QCLASS(NVG_Commando_Antenna)
         };
         VERSION_CONFIG;
     };

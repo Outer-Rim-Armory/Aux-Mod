@@ -305,4 +305,23 @@ class CfgWeapons
             modelOff = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
         };
     };
+
+    class CLASS(NVG_Commando_Visor): CLASS(NVG_Chip)
+    {
+        displayName = "[KC] SF Commando Visor";
+        model = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
+        hiddenSelections[] = {"illum", "camo1"};
+        hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        hiddenSelectionsTextures[] = {"\SWLB_clones_spec\data\helmet_co.paa", "\SWLB_clones_spec\data\helmet_co.paa"};
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_ca.paa";
+    };
+
+    class CLASS(NVG_Commando_Antenna): CLASS(NVG_Chip)
+    {
+        displayName = "[KC] SF Commando Antenna";
+        model = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\SWLB_clones_spec\data\helmet_co.paa"};
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_antenna_ca.paa";
+    };
 };
