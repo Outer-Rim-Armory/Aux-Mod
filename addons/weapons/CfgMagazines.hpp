@@ -1,51 +1,109 @@
 class CfgMagazines
 {
-    class JLTS_stun_mag_short;
-    class Aux12thFleet_Mag_StunShort: JLTS_stun_mag_short
+    class CA_Magazine;
+    class CLASS(Mag_Base): CA_Magazine
     {
+        SCOPE_PRIVATE;
         author = "DartRuffian and Dexus";
-        displayName = "[12th Fleet] Stun Energy Cell (Short)";
+
+        model = "";
+        modelSpecial = "";
+        modelSpecialIsProxy = FALSE;
+
+        tracersEvery = 1;
+        count = 1;
+
+        JLTS_hasElectronics = TRUE;
+        JLTS_hasEMPProtection = TRUE;
+    };
+
+    class CLASS(Mag_StunShort): CLASS(Mag_Base)
+    {
+        SCOPE_PUBLIC;
+        displayName = "[KC] Stun Energy Cell (Short)";
         displayNameShort = "Stun (Short)";
         descriptionShort = "Stun Energy Cell<br/>Rounds: 10<br/>Duration: 5 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M";
 
-        JLTS_hasEMPProtection = 1;
+        type = TYPE_MAGAZINE_HANDGUN_AND_GL;
+        weaponPoolAvailable = TRUE;
         JLTS_stunDuration = 5;
 
-        ammo = "Aux12thFleet_Ammo_Stun";
+        ammo = QCLASS(Bullet_Stun);
         count = 10;
     };
 
-    class Aux12thFleet_Mag_StunLong: Aux12thFleet_Mag_StunShort
+    class CLASS(Mag_StunLong): CLASS(Mag_StunShort)
     {
-        displayName = "[12th Fleet] Stun Energy Cell (Long)";
+        displayName = "[KC] Stun Energy Cell (Long)";
         displayNameShort = "Stun (Long)";
-        descriptionShort = "Stun Energy Cell<br/>Rounds: 5<br/>Duration: 15 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M";
+        descriptionShort = "Stun Energy Cell<br/>Rounds: 5<br/>Duration: 10 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M";
 
         JLTS_stunDuration = 15;
         count = 5;
     };
 
-    class UGL_FlareWhite_F;
-    class CLASS(Mag_UGL_FlareBlue): UGL_FlareWhite_F
+    class CLASS(Mag_UGL_FlareBase): CLASS(Mag_Base)
     {
-        author = "DartRuffian and SweMonkey";
-        displayName = "[KC] Flare Round (Blue)";
-        displayNameShort = "Blue Flare";
-        descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: EGLM, 3GL";
-        picture = QPATHTOF(data\ui\Mag_FlareBlue_ca.paa);
+        displayName = "[KC] Flare Round (Base)";
+        displayNameShort = "Base Flare";
+        descriptionShort = "Type: Flare Round - Base <br />Rounds: 1<br />Used in: UGLs, Flare Guns";
 
-        ammo = QCLASS(Flare_Blue);
+        type = TYPE_MAGAZINE_HANDGUN_AND_GL;
+
+        initSpeed = 80;
+        mass = 4;
         count = 1;
 
-        JLTS_hasEMPProtection = 1;
+        model = "\A3\Weapons_F\Ammo\UGL_Flare.p3d";
+        picture = "\A3\Weapons_F\Data\UI\gear_UGL_Flare_CA.paa";
+
+        nameSound = "";
     };
 
-    class CLASS(Mag_3Rnd_UGL_FlareBlue): CLASS(Mag_UGL_FlareBlue)
+    class CLASS(Mag_UGL_FlareBlue): CLASS(Mag_UGL_FlareBase)
     {
-        displayName = "[KC] 3Rnd 3GL Flares (Blue)";
+        SCOPE_PUBLIC;
+        displayName = "[KC] Flare Round (Blue)";
+        displayNameShort = "Blue Flare";
+        descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: UGLs, Flare Guns";
+        picture = QPATHTOF(data\ui\Mag_FlareBlue_ca.paa);
+
+        weaponPoolAvailable = TRUE;
+
+        ammo = QCLASS(Flare_Blue);
+    };
+    class CLASS(Mag_UGL_3rnd_FlareBlue): CLASS(Mag_UGL_FlareBlue)
+    {
+        displayName = "[KC] 3Rnd Flare Round (Blue)";
         displayNameShort = "3Rnd Blue Flare";
-        descriptionShort = "Type: Flare Rounds - Blue <br />Rounds: 3 <br />Used in: EGLM, 3GL";
+        descriptionShort = "Type: Flare - Blue <br />Rounds: 3 <br />Used in: UGLs, Flare Guns";
         mass = 12;
         count = 3;
+    };
+
+
+    // ! LEGACY CLASSES
+    class Aux12thFleet_Mag_StunShort: CLASS(Mag_StunShort)
+    {
+        SCOPE_HIDDEN;
+        descriptionShort = "Stun Energy Cell<br/>Rounds: 10<br/>Duration: 5 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
+    };
+
+    class Aux12thFleet_Mag_StunLong: CLASS(Mag_StunLong)
+    {
+        SCOPE_HIDDEN;
+        descriptionShort = "Stun Energy Cell<br/>Rounds: 5<br/>Duration: 15 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
+    };
+
+    class CLASS(UGL_FlareBlue): CLASS(Mag_UGL_FlareBlue)
+    {
+        SCOPE_HIDDEN;
+        descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: EGLM, 3GL<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
+    };
+
+    class CLASS(3Rnd_UGL_FlareBlue): CLASS(Mag_UGL_3rnd_FlareBlue)
+    {
+        SCOPE_HIDDEN;
+        descriptionShort = "Type: Flare Rounds - Blue <br />Rounds: 3 <br />Used in: EGLM, 3GL <br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
 };
