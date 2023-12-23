@@ -40,7 +40,7 @@ class CfgMagazines
         JLTS_hasEMPProtection = 1;
     };
 
-    class CLASS(Mag_3Rnd_UGL_FlareBlue): CLASS(UGL_FlareBlue)
+    class CLASS(Mag_3Rnd_UGL_FlareBlue): CLASS(Mag_UGL_FlareBlue)
     {
         displayName = "[KC] 3Rnd 3GL Flares (Blue)";
         displayNameShort = "3Rnd Blue Flare";
