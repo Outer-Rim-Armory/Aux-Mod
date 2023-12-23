@@ -1,4 +1,4 @@
-#define BULLET_SOUNDS bulletFly[] = {"bulletFly1",0.2,"bulletFly2",0.2,"bulletFly3",0.2,"bulletFly4",0.2,"bulletFly5",0.2}; \
+#define PLASMA_SOUNDS bulletFly[] = {"bulletFly1",0.2,"bulletFly2",0.2,"bulletFly3",0.2,"bulletFly4",0.2,"bulletFly5",0.2}; \
 bulletFly1[] = {"MRC\JLTS\weapons\Core\sounds\plasma_flyby\plasma_flyby_1",2.23872,1,100}; \
 bulletFly2[] = {"MRC\JLTS\weapons\Core\sounds\plasma_flyby\plasma_flyby_2",2.23872,1,100}; \
 bulletFly3[] = {"MRC\JLTS\weapons\Core\sounds\plasma_flyby\plasma_flyby_3",2.23872,1,100}; \
@@ -678,7 +678,7 @@ soundWood82[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Ricochet_Gener
 soundWood83[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Ricochet_Generic_14",2.81838,1,75}; \
 soundWood9[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Impact_Wood_01",0.501187,1,75}
 
-#define BULLET_EFFECTS craterEffects = ""; \
+#define PLASMA_EFFECTS craterEffects = ""; \
 craterShape = ""; \
 craterWaterEffects = "ImpactEffectsWater"; \
 ExplosionEffects = "3AS_ImpactPlasma"; \

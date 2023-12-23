@@ -1,18 +1,64 @@
 class CfgAmmo
 {
-    class JLTS_bullet_rifle_blue;
-    class Aux12thFleet_Ammo_Rifle_Blue: JLTS_bullet_rifle_blue
+    class BulletBase;
+    class CLASS(Bullet_Base): BulletBase
     {
-        coefgravity = 0.01;
-        BULLET_SOUNDS;
-        BULLET_EFFECTS;
+        SCOPE_PRIVATE;
     };
-    class Aux12thFleet_Ammo_Rifle_Red: Aux12thFleet_Ammo_Rifle_Blue
+
+    class CLASS(Bullet_PlasmaBase): CLASS(Bullet_Base)
+    {
+        coefGravity = 0.01;
+        airFriction = 0;
+        deflecting = 0;
+        cartridge = "";
+
+        supersoniccrackfar[] = {};
+        supersoniccracknear[] = {};
+
+        PLASMA_SOUNDS;
+        PLASMA_EFFECTS;
+    };
+
+    class CLASS(Bullet_PlasmaRifle_Blue): CLASS(Bullet_PlasmaBase)
+    {
+        SCOPE_PUBLIC;
+
+        hit = 16;
+        caliber = 2;
+        typicalSpeed = 890;
+        dangerRadiusHit = 14;
+        dangerRadiusBulletClose = 10;
+        suppressionRadiusHit = 10;
+        suppressionRadiusBulletClose = 8;
+        cost = 6;
+
+        audibleFire = 80;
+        tracerEndTime = 10;
+        tracerScale = 1.1;
+        tracerStartTime = 0.05;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+
+        ACE_ammoTempMuzzleVelocityShifts[] = {-26.55, -25.47, -22.85, -20.12, -16.98, -12.8, -7.64, -1.53, 5.96, 15.17, 26.19};
+        ACE_ballisticCoefficients[] = {0.322};
+        ACE_barrelLengths[] = {508, 660.4, 711.2};
+        ACE_bulletLength = 39.573;
+        ACE_bulletMass = 16.2;
+        ACE_caliber = 8.585;
+        ACE_dragModel = 7;
+        ACE_muzzleVelocities[] = {880, 915, 925};
+        ACE_muzzleVelocityVariationSD = 0.3;
+        ACE_standardAtmosphere = "ICAO";
+        ACE_velocityBoundaries[] = {};
+    };
+    class CLASS(Bullet_PlasmaRifle_Red): CLASS(Bullet_PlasmaRifle_Blue)
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
     };
-    class Aux12thFleet_Ammo_Rifle_Green: Aux12thFleet_Ammo_Rifle_Blue
+    class CLASS(Bullet_PlasmaRifle_Green): CLASS(Bullet_PlasmaRifle_Blue)
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
@@ -34,8 +80,8 @@ class CfgAmmo
     class Aux12thFleet_Ammo_Carbine_Blue: JLTS_bullet_carbine_blue
     {
         coefgravity = 0.01;
-        BULLET_SOUNDS;
-        BULLET_EFFECTS;
+        PLASMA_SOUNDS;
+        PLASMA_EFFECTS;
     };
     class Aux12thFleet_Ammo_Carbine_Red: Aux12thFleet_Ammo_Carbine_Blue
     {
@@ -46,8 +92,8 @@ class CfgAmmo
     class JLTS_bullet_sniper_blue;
     class Aux12thFleet_Ammo_Sniper_Blue: JLTS_bullet_sniper_blue
     {
-        BULLET_SOUNDS;
-        BULLET_EFFECTS;
+        PLASMA_SOUNDS;
+        PLASMA_EFFECTS;
 
         coefgravity = 0.01;
         ACE_ballisticCoefficients[] = {0.322};
@@ -65,8 +111,8 @@ class CfgAmmo
     class Aux12thFleet_Ammo_Pistol_Blue: JLTS_bullet_pistol_blue
     {
         coefgravity = 0.01;
-        BULLET_SOUNDS;
-        BULLET_EFFECTS;
+        PLASMA_SOUNDS;
+        PLASMA_EFFECTS;
     };
 
     class B_12Gauge_Pellets_Submunition;
