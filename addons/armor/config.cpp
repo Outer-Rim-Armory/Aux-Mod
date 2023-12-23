@@ -379,7 +379,7 @@ class CfgPatches
             QCLASS(Vest_Commando_SL),
             QCLASS(Vest_Commando_Sniper),
             QCLASS(Vest_Commando_Tech),
-            QCLASS(NVG_Chip)
+            QCLASS(NVG_Chip),
             QCLASS(NVG_Visor),
             QCLASS(NVG_Visor_v2),
             QCLASS(NVG_Rangefinder),
