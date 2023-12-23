@@ -397,12 +397,12 @@ class CLASS(Helmet_Phase2_Ponds): CLASS(Helmet_Phase2_Base)
     GVAR(isCustom) = TRUE;
 };
 
-class CLASS(Helmet_Phase2_Trooper187th): CLASS(Helmet_Phase2_Base)
+class CLASS(Helmet_Phase2_Trooper187): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[187th] INF P2 Helm";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\phase2\Trooper187th_camo1_co.paa),
+        QPATHTOF(data\helmets\phase2\Trooper187_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 

@@ -129,14 +129,14 @@ class CLASS(Unit_Ponds): CLASS(Unit_Phase2_Base)
     };
 };
 
-class CLASS(Unit_Trooper187th): CLASS(Unit_Phase2_Base)
+class CLASS(Unit_Trooper187): CLASS(Unit_Phase2_Base)
 {
     SCOPE_HIDDEN;
-    uniformClass = QCLASS(Uniform_Trooper187th);
+    uniformClass = QCLASS(Uniform_Trooper187);
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\standard\Trooper187th_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\Trooper187th_lower_co.paa),
+        QPATHTOF(data\uniforms\standard\Trooper187_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Trooper187_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
