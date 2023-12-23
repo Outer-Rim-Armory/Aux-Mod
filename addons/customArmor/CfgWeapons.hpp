@@ -26,7 +26,11 @@ class CfgWeapons
         GVAR(isCustom) = TRUE;
     };
 
-    class CLASS(Vest_Officer);
+    class CLASS(Vest_Basic);
+    class CLASS(Vest_Officer): CLASS(Vest_Basic)
+    {
+        class ItemInfo;
+    };
     class CLASS(Vest_Officer_Ponds): CLASS(Vest_Officer)
     {
         displayName = "[KC] INF Vest 12+ ('Ponds')";
