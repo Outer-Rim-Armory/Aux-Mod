@@ -27,7 +27,7 @@ class CfgWeapons
     };
 
     class CLASS(Vest_Officer);
-    class CLASS(Vest_Officer_Ponds): CLASS(Vest_Officer);
+    class CLASS(Vest_Officer_Ponds): CLASS(Vest_Officer)
     {
         displayName = "[KC] INF Vest 12+ ('Ponds')";
         hiddenSelectionsTextures[] =
@@ -42,7 +42,7 @@ class CfgWeapons
             containerClass = "Supply250"; // To match medic vests
         };
     };
-    class CLASS(Vest_Officer_Rat): CLASS(Vest_Officer);
+    class CLASS(Vest_Officer_Rat): CLASS(Vest_Officer)
     {
         displayName = "[KC] INF Vest 12+ ('Rat')";
         hiddenSelectionsTextures[] =
