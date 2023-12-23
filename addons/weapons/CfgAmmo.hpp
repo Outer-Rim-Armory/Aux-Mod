@@ -281,10 +281,21 @@ class CfgAmmo
         submunitionAmmo = QCLASS(Bullet_PlasmaPistol_Green);
     };
 
-    class JLTS_bullet_stun;
-    class Aux12thFleet_Ammo_Stun: JLTS_bullet_stun
+    class CLASS(Bullet_PlasmaStun): CLASS(Bullet_PlasmaPistol_Blue)
     {
-        coefgravity = 0.01;
+        hit = 0;
+        typicalSpeed = 30;
+        dangerRadiusHit = -1;
+        dangerRadiusBulletClose = -1;
+        suppressionRadiusHit = -1;
+        suppressionRadiusBulletClose = -1;
+
+        aiAmmoUsageFlags = AMMO_USAGE_NONE;
+
+        model = "\MRC\JLTS\weapons\Core\effects\stun.p3d";
+        timetolive = 3;
+
+        JLTS_isStunAmmo = TRUE;
     };
 
     class F_40mm_White;
