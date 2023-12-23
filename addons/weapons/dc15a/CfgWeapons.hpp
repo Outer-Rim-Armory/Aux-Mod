@@ -34,12 +34,11 @@ class CfgWeapons
 
         modes[] = {"Single", "FullAuto"};
         muzzles[] = {"this", "Stun", "EGLM"};
-        magazines[] = {"Aux12thFleet_Mag_DC15A"};
+        magazines[] = {QCLASS(Mag_60rnd_DC15A), "Aux12thFleet_Mag_DC15A"};
         magazineWell[] = {};
 
         canShootInWater = TRUE;
 
-        // JLTS emp system
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
@@ -47,25 +46,25 @@ class CfgWeapons
         {
             class CowsSlot: CowsSlot
             {
-                compatibleItems[] =
+                class CompatibleItems
                 {
                     // Medium
-                    "Aux501_cows_MRCO",
-                    "Aux501_cows_MRCO_2",
-                    "Aux501_cows_MRCO_3",
+                    Aux501_cows_MRCO = TRUE;
+                    Aux501_cows_MRCO_2 = TRUE;
+                    Aux501_cows_MRCO_3 = TRUE;
                     // Sights
-                    "Aux501_cows_Holoscope",
-                    "Aux501_cows_Holoscope_2",
-                    "Aux501_cows_Holoscope_3"
+                    Aux501_cows_Holoscope = TRUE;
+                    Aux501_cows_Holoscope_2 = TRUE;
+                    Aux501_cows_Holoscope_3 = TRUE;
                 };
             };
             class PointerSlot: PointerSlot
             {
-                compatibleItems[]  =
+                class CompatibleItems
                 {
-                    "acc_pointer_ir",
-                    "ace_acc_pointer_green",
-                    "jlts_dc17sa_flashlight"
+                    acc_pointer_ir = TRUE;
+                    ace_acc_pointer_green = TRUE;
+                    jlts_dc17sa_flashlight = TRUE;
                 };
             };
         };
@@ -90,12 +89,7 @@ class CfgWeapons
                 soundSetShotWater[] = {QCLASS(SoundSet_DC15A_Single)};
             };
         };
-        class Stun: Stun
-        {
-            displayName = "Stun";
-            magazines[] = {};
-            magazineWell[] = {"BNA_KC_Stuns"};
-        };
+        class Stun: CLASS(Muzzle_Stun) {};
 
         class EGLM: UGL_F
         {
@@ -107,10 +101,10 @@ class CfgWeapons
             discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"};
             discreteDistanceInitIndex = 0;
 
-            useExternalOptic = 0;
-            useModelOptics = 0;
+            useExternalOptic = FALSE;
+            useModelOptics = FALSE;
 
-            canShootInWater = 0;
+            canShootInWater = FALSE;
             magazines[] = {};
             magazineWell[] = {QCLASS(UGL_Common)};
         };
@@ -136,11 +130,7 @@ class CfgWeapons
         JLTS_isFried = TRUE;
         magazines[] = {};
 
-        class Stun: Stun
-        {
-            displayName = "Stun (Fried)";
-            magazines[] = {};
-        };
+        class Stun: CLASS(Muzzle_Stun_Fried) {};
     };
 
     class CLASS(DC15A_UGL): CLASS(DC15A_Base)
@@ -167,6 +157,8 @@ class CfgWeapons
 
         JLTS_friedItem = QCLASS(DC15A_UGL_Fried);
         JLTS_repairTime = 35;
+
+        class Stun: CLASS(Muzzle_Stun) {};
     };
 
     class CLASS(DC15A_UGL_Fried): CLASS(DC15A_UGL)
@@ -185,5 +177,7 @@ class CfgWeapons
             displayName = "Grenade Launcher (Fried)";
             magazines[] = {};
         };
+
+        class Stun: CLASS(Muzzle_Stun_Fried) {};
     };
 };

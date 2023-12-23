@@ -29,10 +29,5 @@ class CfgPatches
             QCLASS(DC15A_UGL),
             QCLASS(DC15A_UGL_Fried)
         };
-        magazines[] =
-        {
-            "Aux12thFleet_Mag_DC15A"
-        };
-        ammo[] = {};
     };
 };

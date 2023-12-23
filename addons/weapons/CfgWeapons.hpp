@@ -6,9 +6,17 @@ class CfgWeapons
         displayName = "Stun";
         magazines[] =
         {
+            QCLASS(Mag_StunShort),
+            QCLASS(Mag_StunLong),
             "Aux12thFleet_Mag_StunShort",
             "Aux12thFleet_Mag_StunLong"
         };
         magazineWell[] = {};
+    };
+
+    class CLASS(Muzzle_Stun_Fried): CLASS(Muzzle_Stun)
+    {
+        displayName = "Stun (Fried)";
+        magazines[] = {};
     };
 };
