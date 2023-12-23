@@ -1,0 +1,1 @@
+class CLASS(Unit_Phase2_Base);
