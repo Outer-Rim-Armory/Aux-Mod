@@ -77,8 +77,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {QCLASS(SoundSet_DC15A_Single)};
-                soundSetShotWater[] = {QCLASS(SoundSet_DC15A_Single)};
+                soundSetShot[] = {QCLASS(SoundSet_DC15AShot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_DC15AShot)};
             };
         };
         class FullAuto: FullAuto
@@ -87,8 +87,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {QCLASS(SoundSet_DC15A_Single)};
-                soundSetShotWater[] = {QCLASS(SoundSet_DC15A_Single)};
+                soundSetShot[] = {QCLASS(SoundSet_DC15AShot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_DC15AShot)};
             };
         };
         class Stun: CLASS(Muzzle_Stun) {};
