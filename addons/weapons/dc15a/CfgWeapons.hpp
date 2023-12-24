@@ -130,8 +130,8 @@ class CfgWeapons
 
         displayName = "[KC] DC-15A (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_fried_ui_ca.paa";
         baseWeapon = QCLASS(DC15A_Fried);
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_fried_ui_ca.paa";
 
         JLTS_isFried = TRUE;
         magazines[] = {};
@@ -144,6 +144,7 @@ class CfgWeapons
         SCOPE_PUBLIC;
 
         displayName = "[KC] DC-15A UGL";
+        baseWeapon = QCLASS(DC15A_UGL);
         muzzles[] = {"this", "EGLM"};
 
         // Model & Textures
@@ -174,6 +175,7 @@ class CfgWeapons
         displayName = "[KC] DC-15A UGL (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_UGL_plastic_fried_ui_ca.paa";
+        baseWeapon = QCLASS(DC15A_UGL_Fried);
 
         JLTS_isFried = TRUE;
         magazines[] = {};

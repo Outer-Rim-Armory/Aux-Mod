@@ -8,15 +8,16 @@ class CfgWeapons
 
         displayName = "[KC] X-42 Flamethrower (Base)";
         descriptionShort = "BlastTech Flamethrower";
-
-        // Model
-        model = "\3AS\3AS_Weapons\X42\BX42.p3d";
+        baseWeapon = QCLASS(X42_Base);
         picture = "\3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
+
+        model = "\3AS\3AS_Weapons\X42\BX42.p3d";
         handAnim[] =
         {
             "OFP2_ManSkeleton",
             "\3AS\3AS_Weapons\Data\Anim\BX42.rtm"
         };
+
 
         WBK_BurnEm_RequiredBackpack = "";
         WBK_BurnEm_FlamethrowerParticlePos = "[[-0.32, 0.3, -0.3], 'leftHand']";
@@ -30,6 +31,7 @@ class CfgWeapons
         SCOPE_PUBLIC;
 
         displayName = "[KC] X-42 Heavy Flamethrower";
+        baseWeapon = QCLASS(X42);
         magazines[] = {QCLASS(Mag_150rnd_X42)};
 
         WBK_BurnEm_FlamethrowerDistance = 40;
