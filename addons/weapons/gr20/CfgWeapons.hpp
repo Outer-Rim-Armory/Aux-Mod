@@ -15,6 +15,7 @@ class CfgWeapons
         muzzles[] = {"Launcher"};
         magazines[] = {};
 
+        JLTS_canHaveShield = FALSE;
         canShootInWater = FALSE;
 
         class Launcher: Launcher
@@ -33,7 +34,6 @@ class CfgWeapons
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
 
         baseWeapon = QCLASS(GR20_Fried);
-        JLTS_canHaveShield = FALSE;
         JLTS_isFried = TRUE;
 
         class Launcher: Launcher
