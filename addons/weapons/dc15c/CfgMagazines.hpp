@@ -1,17 +1,16 @@
 class CfgMagazines
 {
-    class CLASS(Mag_Base);
-    class CLASS(Mag_1rnd_WeaponName): CLASS(Mag_Base)
+    class CLASS(Mag_60rnd_DC15S);
+    class CLASS(Mag_40rnd_DC15C): CLASS(Mag_60rnd_DC15S)
     {
-        SCOPE_PUBLIC;
-        displayName = "[KC] WeaponName Energy Cell";
-        displayNameShort = "Standard Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 1<br/>Used In: WeaponName";
+        displayName = "[KC] DC-15C Energy Cell";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 40<br/>Used In: DC-15C";
+        count = 40;
+    };
 
-        // model = "";
-        // picture = "";
-
-        ammo = QCLASS(Bullet_PlasmaRifle_Blue);
-        count = 1;
+    class Aux12thFleet_Mag_DC15C: CLASS(Mag_40rnd_DC15C)
+    {
+        SCOPE_HIDDEN;
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 40<br/>Used In: DC-15C<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
 };
