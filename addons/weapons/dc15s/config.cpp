@@ -1,4 +1,6 @@
 #include "script_component.hpp"
+#include "CfgSoundShaders.hpp"
+#include "CfgSoundSets.hpp"
 
 
 class CfgPatches
