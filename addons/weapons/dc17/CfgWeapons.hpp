@@ -35,7 +35,6 @@ class CfgWeapons
         {
             textureType = "semi";
 
-            // For AI units
             maxRange = 400;
             maxRangeProbab = 0.05;
             midRange = 200;
