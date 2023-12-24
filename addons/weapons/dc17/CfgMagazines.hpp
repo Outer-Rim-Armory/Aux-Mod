@@ -14,4 +14,10 @@ class CfgMagazines
         ammo = QCLASS(Bullet_PlasmaPistol_Blue);
         count = 20;
     };
+
+    class Aux12thFleet_Mag_DC17: CLASS(Mag_20rnd_DC17)
+    {
+        SCOPE_HIDDEN;
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 20<br/>Used In: DC-17<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
+    };
 };
