@@ -81,19 +81,21 @@ class CfgMagazines
     class Aux12thFleet_Mag_60Rnd_DC17M: CLASS(Mag_60Rnd_DC17M)
     {
         SCOPE_HIDDEN;
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: DC-17M";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: DC-17M<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
     class Aux12thFleet_Mag_90Rnd_DC17M: CLASS(Mag_90Rnd_DC17M)
     {
         SCOPE_HIDDEN;
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 90<br/>Used In: DC-17M";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 90<br/>Used In: DC-17M<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
     class Aux12thFleet_Mag_5Rnd_DC17M_Sniper: CLASS(Mag_5Rnd_DC17M_Sniper)
     {
         SCOPE_HIDDEN;
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 5<br/>Used In: DC-17M<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
     class Aux12thFleet_Mag_1Rnd_DC17M_AT: CLASS(Mag_1Rnd_DC17M_AT)
     {
         SCOPE_HIDDEN;
+        descriptionShort = "Anti-Armor Energy Cell<br/>Rounds: 1<br/>Used In: DC-17M<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
 };
