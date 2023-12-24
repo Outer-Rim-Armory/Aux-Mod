@@ -19,7 +19,7 @@ class CfgWeapons
         };
 
         WBK_BurnEm_RequiredBackpack = "";
-        WBK_BurnEm_FlamethrowerParticlePos = "[-0.32, 0.3, -0.3], 'leftHand']";
+        WBK_BurnEm_FlamethrowerParticlePos = "[[-0.32, 0.3, -0.3], 'leftHand']";
 
         magazines[] = {};
         magazineWell[] = {};
@@ -29,16 +29,7 @@ class CfgWeapons
     {
         SCOPE_PUBLIC;
 
-        displayName = "[KC] X-42 Flamethrower";
-        magazines[] = {QCLASS(Mag_300rnd_X42)};
-
-        WBK_BurnEm_FlamethrowerDistance = 20;
-    };
-
-    class CLASS(X42_Heavy): CLASS(X42_Base)
-    {
-        SCOPE_PUBLIC;
-        displayName = "[KC] X-45 Heavy Flamethrower";
+        displayName = "[KC] X-42 Heavy Flamethrower";
         magazines[] = {QCLASS(Mag_150rnd_X42)};
 
         WBK_BurnEm_FlamethrowerDistance = 40;
@@ -49,7 +40,7 @@ class CfgWeapons
         SCOPE_HIDDEN;
         descriptionShort = "BlastTech Flamethrower<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
-    class CLASS(BTX45_Heavy): CLASS(X42_Heavy)
+    class CLASS(BTX45_Heavy): CLASS(X42)
     {
         SCOPE_HIDDEN;
         descriptionShort = "BlastTech Flamethrower<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
