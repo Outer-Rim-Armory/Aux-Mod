@@ -12,6 +12,7 @@ class CfgWeapons
         author = "SweMonkey and DartRuffian";
 
         displayName = "[KC] RPS-6 (Base)";
+        baseWeapon = QCLASS(RPS6_Base);
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
@@ -43,9 +44,11 @@ class CfgWeapons
         SCOPE_HIDDEN;
         displayName = "[KC] RPS-6";
         descriptionShort = "Single-use Rocket Tube";
+        baseWeapon = QCLASS(RPS6_Disposable);
+
         magazineReloadTime = 0.1;
 
-        JLTS_friedItem = QCLASS(RPS6_Fried);
+        JLTS_friedItem = QCLASS(RPS6_Disposable_Fried);
 
         class EventHandlers: EventHandlers
         {
@@ -57,6 +60,7 @@ class CfgWeapons
     {
         SCOPE_PUBLIC;
 
+        baseWeapon = QCLASS(RPS6_Loaded);
         magazines[] = {"CBA_FakeLauncherMagazine"};
 
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -69,8 +73,22 @@ class CfgWeapons
     {
         SCOPE_HIDDEN;
 
+        JLTS_hasEMPProtection = TRUE; // No point in making a fried version
+
         displayName = "[KC] RPS-6 (Used)";
         descriptionShort = "Used Rocket Tube";
         magazines[] = {"CBA_FakeLauncherMagazine"};
+    };
+
+    class CLASS(RPS6_Disposable_Fried): CLASS(RPS6_Disposable)
+    {
+        SCOPE_HIDDEN;
+        displayName = "[KC] RPS-6 (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = QPATHTOF(rps6\data\ui\RPS6_Fried_ca.paa);
+        baseWeapon = QCLASS(RPS6_Disposable_Fried);
+
+        JLTS_isFried = TRUE;
+        JLTS_baseWeapon = QCLASS(RPS6_Disposable);
     };
 };
