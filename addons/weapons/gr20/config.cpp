@@ -19,6 +19,8 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(GR20),
+            QCLASS(GR20_Fried)
         };
         VERSION_CONFIG;
     };
