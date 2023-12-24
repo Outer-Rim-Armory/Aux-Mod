@@ -152,9 +152,9 @@ class CfgWeapons
             "\MRC\JLTS\weapons\DC15S\anims\DC15S_shielded_handanim.rtm"
         };
 
-        // reloadAction = "GestureReload";
-        // inertia = 0.80000001;
-        recoil = "recoil_pdw"; // More recoil since the gun is held in one hand
+        reloadAction = "GestureReload";
+        inertia = 0.80000001;
+        recoil = "recoil_pdw";
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
