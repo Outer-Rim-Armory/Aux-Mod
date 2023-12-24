@@ -4,29 +4,26 @@
 #include "CfgAmmo.hpp"
 #include "CfgSoundShaders.hpp"
 #include "CfgSoundSets.hpp"
-#include "CfgEventHandlers.hpp"
 
 
 class CfgPatches
 {
-    class ADDON
+    class SUBADDON
     {
         author = "SweMonkey and DartRuffian";
-        name = COMPONENT_NAME;
+        addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            QCLASS(core),
-            "JLTS_weapons_Core",
-            "3AS_Main",
-            "SWLW_main"
+            QUOTE(ADDON),
+            "SWLW_clones_spec",
+            "3AS_Main"
         };
         units[] = {};
         weapons[] =
         {
-            QCLASS(Muzzle_Stun),
-            QCLASS(Muzzle_Stun_Fried)
+            QCLASS(DC17M_Base),
+            QCLASS(DC17M)
         };
-        VERSION_CONFIG;
     };
 };

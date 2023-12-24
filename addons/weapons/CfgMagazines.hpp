@@ -28,7 +28,7 @@ class CfgMagazines
         weaponPoolAvailable = TRUE;
         JLTS_stunDuration = 5;
 
-        ammo = QCLASS(Bullet_Stun);
+        ammo = QCLASS(Bullet_PlasmaStun);
         count = 10;
     };
 
