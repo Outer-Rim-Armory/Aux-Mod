@@ -19,7 +19,7 @@ class CfgWeapons
         };
 
         WBK_BurnEm_RequiredBackpack = "";
-        WBK_BurnEm_FlamethrowerParticlePos[] = {{-0.32, 0.3, -0.3}, "leftHand"};
+        WBK_BurnEm_FlamethrowerParticlePos = "[-0.32, 0.3, -0.3], 'leftHand']";
 
         magazines[] = {};
         magazineWell[] = {};
