@@ -2,6 +2,7 @@
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgAmmo.hpp"
+#include "CBA_DisposableLaunchers.hpp"
 
 
 class CfgPatches
