@@ -20,4 +20,10 @@ class CfgMagazines
         allowedSlots[] = {BACKPACK_SLOT};
         mass = MASS_MAGAZINE;
     };
+
+    class Aux12thFleet_Mag_RPS6_HEAT: CLASS(Mag_1rnd_RPS6_HEAT_Disposable)
+    {
+        SCOPE_HIDDEN;
+        descriptionShort = "High Explosive Anti-Tank Rocket<br/>Rounds: 1<br/>Used In: RPS-6<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
+    };
 };
