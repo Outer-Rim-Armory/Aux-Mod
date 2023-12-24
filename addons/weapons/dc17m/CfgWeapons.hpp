@@ -23,6 +23,7 @@ class CfgWeapons
         author = "SweMonkey and DartRuffian";
 
         displayName = "[KC] DC-17M (Base)";
+        baseWeapon = QCLASS(DC17M_Base);
 
         modes[] = {"FullAuto", "Single"};
         muzzles[] = {"this", "Stun"};
@@ -143,5 +144,6 @@ class CfgWeapons
         SCOPE_PUBLIC;
 
         displayName = "[KC] DC-17M";
+        baseWeapon = QCLASS(DC17M);
     };
 };

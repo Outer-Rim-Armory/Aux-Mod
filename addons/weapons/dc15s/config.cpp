@@ -1,7 +1,6 @@
 #include "script_component.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
-#include "CfgAmmo.hpp"
 #include "CfgSoundShaders.hpp"
 #include "CfgSoundSets.hpp"
 
@@ -17,14 +16,19 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            "SWLW_clones_spec",
-            "3AS_Main"
+            "JLTS_weapons_DC15S",
+            "Aux501_Patch_Accessories",
+            "JLTS_weapons_DC17SA",
+            "ace_laserpointer"
         };
         units[] = {};
         weapons[] =
         {
-            QCLASS(DC17M_Base),
-            QCLASS(DC17M)
+            QCLASS(DC15S_Base),
+            QCLASS(DC15S),
+            QCLASS(DC15S_Fried),
+            QCLASS(DC15S_RiotShield),
+            QCLASS(DC15S_RiotShield_Fried)
         };
         VERSION_CONFIG;
     };
