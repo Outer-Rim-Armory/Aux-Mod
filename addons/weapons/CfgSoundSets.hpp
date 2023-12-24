@@ -17,4 +17,10 @@ class CfgSoundSets
         doppler = 0;
         loop = 0;
     };
+
+    class CLASS(SoundSet_RocketShot): CLASS(SoundSet_WeaponShot_Base)
+    {
+        volumeFactor = 5;
+        soundShaders[] = {QCLASS(SoundShader_RocketShot)};
+    };
 };

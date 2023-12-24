@@ -337,4 +337,64 @@ class CfgAmmo
         thrustTime = 1.5;
         typicalSpeed = 1000;
     };
+
+    class RocketBase;
+    class CLASS(Rocket_Base): RocketBase
+    {
+        SCOPE_PRIVATE;
+
+        hit = 150;
+        indirectHit = 100;
+        indirectHitRange = 10;
+        cost = 100;
+        maxSpeed = 140;
+        explosive = 1;
+        fuseDistance = 10;
+        initTime = 0;
+        maneuvrability = 0;
+        airFriction = 0.075;
+        sideAirFriction = 0.075;
+        airLock = 0;
+        irLock = 1;
+
+        thrust = 500;
+        thrustTime = 0.1;
+        timeToLive = 10;
+        triggerOnImpact = 1;
+        deleteParentWhenTriggered = 0;
+        warheadName = "TandemHEAT";
+        simulationStep = 0.02;
+
+        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        allowAgainstInfantry = FALSE;
+
+        model = "\A3\weapons_f\launchers\RPG32\pg32v_rocket.p3d";
+        effectsMissile = "EmptyEffect";
+        explosionEffects = "M136_Explode";
+        craterEffects = "M136_Smoke";
+        effectsMissileInit = "";
+
+        submunitionAmmo = QCLASS(Rocket_Submunition_Base);
+        submunitionDirectionType = "SubmunitionModelDirection";
+        submunitionInitialOffset[] = {0, 0, -0.2};
+        submunitionInitSpeed = 1000;
+        submunitionParentSpeedCoef = 0;
+
+        multiSoundHit[] = {"soundHit1", 0.34, "soundHit2", 0.33, "soundHit3", 0.33};
+        soundFly[] = {"\A3\Sounds_F\arsenal\weapons\Launchers\RPG32\Fly_RPG32", 0.316228, 1.5, 900};
+        soundHit1[] = {"\A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_01", 2.51189, 1, 1800};
+        soundHit2[] = {"\A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02", 2.51189, 1, 1800};
+        soundHit3[] = {"\A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03", 2.51189, 1, 1800};
+        soundSetExplosion[] = {"RocketsLight_Exp_SoundSet", "RocketsLight_Tail_SoundSet", "Explosion_Debris_SoundSet"};
+    };
+
+    class SubmunitionCore;
+    class CLASS(Rocket_Submunition_Base): SubmunitionCore
+    {
+        SCOPE_PRIVATE;
+
+        hit = 480;
+        caliber = 43.3333;
+        warheadName = "TandemHEAT";
+    };
 };
