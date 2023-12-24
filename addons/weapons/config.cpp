@@ -12,7 +12,7 @@ class CfgPatches
 {
     class ADDON
     {
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =

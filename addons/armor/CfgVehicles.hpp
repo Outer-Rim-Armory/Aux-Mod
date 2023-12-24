@@ -5,7 +5,7 @@ class CfgVehicles
     {
         SCOPE_PRIVATE;
         dlc = QUOTE(PREFIX);
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
 
         faction = QCLASS(Faction_KC);
 
@@ -112,7 +112,7 @@ class CfgVehicles
     class CLASS(Backpack_Base): SWLB_clone_backpack
     {
         SCOPE_PUBLIC;
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
 
         displayName = "[KC] INF Backpack (Base)";
         hiddenSelections[] = {"camo1", "cover", "heavy", "medic", "RTO"};

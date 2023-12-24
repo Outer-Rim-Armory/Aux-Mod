@@ -8,7 +8,7 @@ class CfgWeapons
     class CLASS(DC15SA_Base): SWLW_DC15SA
     {
         SCOPE_PRIVATE;
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
 
         displayName = "[KC] DC-15SA (Base)";
 

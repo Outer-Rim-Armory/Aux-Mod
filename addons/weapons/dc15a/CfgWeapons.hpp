@@ -31,7 +31,7 @@ class CfgWeapons
     class CLASS(DC15A_Base): JLTS_DC15A_plastic
     {
         SCOPE_PRIVATE;
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
 
         displayName = "[KC] DC-15A (Base)";
         baseWeapon = QCLASS(DC15A_Base);

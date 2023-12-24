@@ -1,6 +1,8 @@
 #define MAINPREFIX BNA
 #define PREFIX BNA_KC
 #define MOD_NAME Keeli Company Auxillary Mod
+#define AUTHORS DartRuffian, SweMonkey, Dexus, Rev, Sin
+#define QAUTHORS "DartRuffian", "SweMonkey", "Dexus", "Rev", "Sin"
 
 #include "\BNA\BNA_KC\addons\core\script_version.hpp"
 

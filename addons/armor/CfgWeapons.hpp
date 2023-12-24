@@ -5,7 +5,7 @@ class CfgWeapons
     {
         SCOPE_PRIVATE;
         dlc = QUOTE(PREFIX);
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
 
         picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
 
@@ -36,7 +36,7 @@ class CfgWeapons
         SCOPE_PUBLIC;
 
         dlc = QUOTE(PREFIX);
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
 
         displayName = "[KC] INF Armor (Base)";
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
@@ -62,7 +62,7 @@ class CfgWeapons
         SCOPE_PUBLIC;
 
         dlc = QUOTE(PREFIX);
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
 
         displayName = "[KC] INF Vest 01 (Trooper)";
 

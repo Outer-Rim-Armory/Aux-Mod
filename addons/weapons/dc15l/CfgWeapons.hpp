@@ -17,7 +17,7 @@ class CfgWeapons
     class CLASS(DC15L_Base): 3AS_DC15L_F
     {
         SCOPE_PRIVATE;
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
 
         displayName = "[KC] DC-15L (Base)";
         descriptionShort = "Automatic Blaster Rifle";
