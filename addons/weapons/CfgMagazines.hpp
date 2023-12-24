@@ -24,6 +24,9 @@ class CfgMagazines
         displayNameShort = "Stun (Short)";
         descriptionShort = "Stun Energy Cell<br/>Rounds: 10<br/>Duration: 5 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M";
 
+        model = "\MRC\JLTS\weapons\Core\stun_mag.p3d";
+        picture = "\MRC\JLTS\weapons\Core\data\ui\stun_mag_ui_ca.paa";
+
         type = TYPE_MAGAZINE_HANDGUN_AND_GL;
         weaponPoolAvailable = TRUE;
         JLTS_stunDuration = 5;
