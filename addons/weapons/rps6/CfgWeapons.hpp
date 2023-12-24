@@ -49,6 +49,7 @@ class CfgWeapons
         magazineReloadTime = 0.1;
 
         JLTS_friedItem = QCLASS(RPS6_Disposable_Fried);
+        JLTS_repairTime = 10;
 
         class EventHandlers: EventHandlers
         {
