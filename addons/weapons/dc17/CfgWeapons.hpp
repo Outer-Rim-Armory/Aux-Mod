@@ -8,7 +8,7 @@ class CfgWeapons
 
     // "Fake" UGL Muzzle because the vanilla ones cause issues on pistols
     class Rifle_Base_F;
-    class CLASS(Muzzle_Launcher): Rifle_Base_F
+    class CLASS(Muzzle_FakeUGL): Rifle_Base_F
     {
         displayName = "Launcher";
         magazines[] = {};
@@ -128,7 +128,7 @@ class CfgWeapons
             reloadMagazineSound[] = {"\A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07", 1, 1, 10};
         };
 
-        class Launcher: CLASS(Muzzle_Launcher)
+        class Launcher: CLASS(Muzzle_FakeUGL)
         {
             displayName = "Flare Launcher";
             magazineWell[] = {QCLASS(MagWell_3Rnd_UGL_Flares)};
