@@ -17,7 +17,7 @@ class CfgMagazines
         ammo = QCLASS(Rocket_RPS6);
         count = 1;
 
-        allowedSlots[] = {BACKPACK_SLOT};
+        allowedSlots[] = {TYPE_BACKPACK};
         mass = MASS_MAGAZINE;
     };
 
