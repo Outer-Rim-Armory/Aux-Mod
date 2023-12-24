@@ -46,7 +46,7 @@ class CfgWeapons
 
         // JLTS emp system
         JLTS_hasElectronics = TRUE;
-        JLTS_hasEMPProtection = TRUE;
+        JLTS_hasEMPProtection = FALSE;
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
