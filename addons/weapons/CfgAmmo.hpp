@@ -299,8 +299,14 @@ class CfgAmmo
     };
 
     class F_40mm_White;
-    class BNA_KC_Flare_Blue: F_40mm_White
+    class CLASS(Flare_Base): F_40mm_White
     {
+        SCOPE_PRIVATE;
+    };
+
+    class CLASS(Flare_Blue): CLASS(Flare_Base)
+    {
+        SCOPE_PUBLIC;
         lightColor[] = {0.25, 0.25, 0.5, 0.5};
     };
 
