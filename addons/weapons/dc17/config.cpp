@@ -23,6 +23,12 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(Muzzle_Launcher),
+            QCLASS(DC17_Base),
+            QCLASS(DC17),
+            QCLASS(DC17_Fried),
+            QCLASS(DC17_RiotShield),
+            QCLASS(DC17_RiotShield_Fried)
         };
         VERSION_CONFIG;
     };
