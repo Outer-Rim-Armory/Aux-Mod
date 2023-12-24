@@ -1,17 +1,30 @@
 class CfgMagazines
 {
     class CLASS(Mag_Base);
-    class CLASS(Mag_1rnd_WeaponName): CLASS(Mag_Base)
+    class CLASS(Mag_300rnd_X42): CLASS(Mag_Base)
     {
         SCOPE_PUBLIC;
-        displayName = "[KC] WeaponName Energy Cell";
-        displayNameShort = "Standard Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 1<br/>Used In: WeaponName";
+        displayName = "[KC] X-42 Fuel Tank";
+        descriptionShort = QUOTE(Flamethrower Fuel Tank<br/>Burn Time: __EVAL(300/60) minutes<br/>Used In: X-42 Flamethrower);
 
-        // model = "";
-        // picture = "";
+        initSpeed = 50;
+        mass = 50;
 
-        ammo = QCLASS(Bullet_PlasmaRifle_Blue);
-        count = 1;
+        model = "\MRC\JLTS\contraband\Credits\icecream.p3d";
+        picture = "\MRC\JLTS\contraband\Credits\data\ui\icecream_ui_ca.paa";
+
+        ammo = "Flamethrower_Fuel";
+        count = 300;
+    };
+
+    class CLASS(Mag_150rnd_X42): CLASS(Mag_300rnd_X42)
+    {
+        displayName = "[KC] X-45 Heavy Fuel Tank";
+        descriptionShort = QUOTE(Flamethrower Fuel Tank<br/>Burn Time: __EVAL(150/60) minutes<br/>Used In: X-45 Heavy Flamethrower);
+
+        model = "\MRC\JLTS\contraband\Credits\icecream.p3d";
+        picture = "\MRC\JLTS\contraband\Credits\data\ui\icecream_ui_ca.paa";
+
+        count = 150;
     };
 };
