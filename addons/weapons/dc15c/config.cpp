@@ -24,6 +24,9 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(DC15C_Base),
+            QCLASS(DC15C),
+            QCLASS(DC15C_Fried)
         };
         VERSION_CONFIG;
     };
