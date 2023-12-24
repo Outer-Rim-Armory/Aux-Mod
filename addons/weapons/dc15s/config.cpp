@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "CfgMagazines.hpp"
 #include "CfgSoundShaders.hpp"
 #include "CfgSoundSets.hpp"
 
