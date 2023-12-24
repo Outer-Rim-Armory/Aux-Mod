@@ -6,6 +6,10 @@ class CfgMagazines
         SCOPE_PRIVATE;
         author = "DartRuffian and Dexus";
 
+        displayName = "";
+        displayNameShort = "";
+        descriptionShort = "";
+
         model = "";
         modelSpecial = "";
         modelSpecialIsProxy = FALSE;
