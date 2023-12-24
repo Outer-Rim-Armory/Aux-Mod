@@ -1,7 +1,7 @@
 class CfgMagazines
 {
     class CLASS(Mag_Base);
-    class CLASS(Mag_1rnd_RPS6_Disposable): CLASS(Mag_Base)
+    class CLASS(Mag_1rnd_RPS6_HEAT_Disposable): CLASS(Mag_Base)
     {
         SCOPE_PUBLIC;
         displayName = "[KC] RPS-6 HEAT Disposable Rocket";
