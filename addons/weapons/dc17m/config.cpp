@@ -11,6 +11,7 @@ class CfgPatches
     class SUBADDON
     {
         author = "SweMonkey and DartRuffian";
+        name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
@@ -25,5 +26,6 @@ class CfgPatches
             QCLASS(DC17M_Base),
             QCLASS(DC17M)
         };
+        VERSION_CONFIG;
     };
 };

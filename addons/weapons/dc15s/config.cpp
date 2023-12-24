@@ -10,6 +10,7 @@ class CfgPatches
     class SUBADDON
     {
         author = "SweMonkey and DartRuffian";
+        name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
@@ -29,5 +30,6 @@ class CfgPatches
             QCLASS(DC15S_RiotShield),
             QCLASS(DC15S_RiotShield_Fried)
         };
+        VERSION_CONFIG;
     };
 };
