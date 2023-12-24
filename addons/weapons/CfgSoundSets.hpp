@@ -20,6 +20,7 @@ class CfgSoundSets
 
     class CLASS(SoundSet_RocketShot): CLASS(SoundSet_WeaponShot_Base)
     {
+        volumeFactor = 5;
         soundShaders[] = {QCLASS(SoundShader_RocketShot)};
     };
 };
