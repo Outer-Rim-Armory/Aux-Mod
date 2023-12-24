@@ -310,8 +310,9 @@ class CfgAmmo
         lightColor[] = {0.25, 0.25, 0.5, 0.5};
     };
 
+    // TODO: Update to inherit from base KC bullet
     class SWLW_ammo_40mm_at;
-    class Aux12thFleet_Ammo_40mm_AT: SWLW_ammo_40mm_at
+    class CLASS(Bullet_Plasma40mm_AT): SWLW_ammo_40mm_at
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
@@ -320,14 +321,14 @@ class CfgAmmo
         hit = 800;
         typicalSpeed = 1550;
 
-        submunitionammo = "Aux12thFleet_Ammo_40mm_AT_SubAmmo";
+        submunitionAmmo = QCLASS(Bullet_Plasma40mm_ATSubmunition);
         submunitionInitialOffset[] = {0,0, -0.5};
         submunitionInitSpeed = 1000;
         submunitionParentSpeedCoef = 0;
     };
 
     class ammo_Penetrator_Titan_AT;
-    class Aux12thFleet_Ammo_40mm_AT_SubAmmo: ammo_Penetrator_Titan_AT
+    class CLASS(Bullet_Plasma40mm_ATSubmunition): ammo_Penetrator_Titan_AT
     {
         hit = 650;
         caliber = 60;

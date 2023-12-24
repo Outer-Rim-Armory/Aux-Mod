@@ -18,7 +18,8 @@ class CfgPatches
         {
             QCLASS(core),
             "JLTS_weapons_Core",
-            "3AS_Main"
+            "3AS_Main",
+            "SWLW_main"
         };
         units[] = {};
         weapons[] =

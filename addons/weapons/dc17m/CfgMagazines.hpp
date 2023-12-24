@@ -70,7 +70,7 @@ class CfgMagazines
         modelSpecialIsProxy = TRUE;
         modelSpecial = "\SWLW_clones_spec\DC17M_magazine_at.p3d";
 
-        ammo = QCLASS(Bullet_PlasmaDC17M_AT);
+        ammo = QCLASS(Bullet_Plasma40mm_AT);
         count = 1; // 1 rounds per 20 mass
         mass = 20;
         initSpeed = 510;
