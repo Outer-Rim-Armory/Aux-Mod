@@ -40,6 +40,7 @@ class CfgWeapons
 
     class CLASS(RPS6_Disposable): CLASS(RPS6_Base)
     {
+        SCOPE_HIDDEN;
         displayName = "[KC] RPS-6";
         descriptionShort = "Single-use Rocket Tube";
         magazineReloadTime = 0.1;
