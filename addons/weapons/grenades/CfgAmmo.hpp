@@ -3,8 +3,10 @@ class CfgAmmo
     class CLASS(Grenade_Base_Ammo);
     class CLASS(Grenade_EMP_Ammo): CLASS(Grenade_Base_Ammo)
     {
-        hit = 0;
-        indirectHit = 0;
+        hit = 0.01;
+        indirectHit = 0.01;
+        indirectHitRange = 10;
+        explosive = 0.01;
         explosionTime = 5;
         JLTS_isEMPAmmo = 1;
 
