@@ -341,7 +341,7 @@ class CfgAmmo
     class RocketBase;
     class CLASS(Rocket_Base): RocketBase
     {
-        SCOPE_PRIVATE;
+        SCOPE_PUBLIC;
 
         hit = 150;
         indirectHit = 100;
@@ -365,7 +365,7 @@ class CfgAmmo
         warheadName = "TandemHEAT";
         simulationStep = 0.02;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_VEHICLES + AMMO_USAGE_AIRCRAFT + AMMO_USAGE_ARMORED_VEHICLES);
         allowAgainstInfantry = FALSE;
 
         model = "\A3\weapons_f\launchers\RPG32\pg32v_rocket.p3d";
@@ -374,7 +374,7 @@ class CfgAmmo
         craterEffects = "M136_Smoke";
         effectsMissileInit = "";
 
-        submunitionAmmo = QCLASS(Rocket_Submunition_Base);
+        submunitionAmmo = "";
         submunitionDirectionType = "SubmunitionModelDirection";
         submunitionInitialOffset[] = {0, 0, -0.2};
         submunitionInitSpeed = 1000;
@@ -386,12 +386,41 @@ class CfgAmmo
         soundHit2[] = {"\A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02", 2.51189, 1, 1800};
         soundHit3[] = {"\A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03", 2.51189, 1, 1800};
         soundSetExplosion[] = {"RocketsLight_Exp_SoundSet", "RocketsLight_Tail_SoundSet", "Explosion_Debris_SoundSet"};
+
+        class CamShakeFire
+        {
+            distance = 35.7771;
+            duration = 0.8;
+            frequency = 20;
+            power = 2.11474;
+        };
+        class CamShakePlayerFire
+        {
+            distance = 1;
+            duration = 0.1;
+            frequency = 20;
+            power = 1;
+        };
+        class CamShakeHit
+        {
+            distance = 1;
+            duration = 0.6;
+            frequency = 20;
+            power = 110;
+        };
+        class CamShakeExplode
+        {
+            distance = 99.3296;
+            duration = 1.4;
+            frequency = 20;
+            power = 11;
+        };
     };
 
-    class SubmunitionCore;
-    class CLASS(Rocket_Submunition_Base): SubmunitionCore
+    class ammo_Penetrator_Base;
+    class CLASS(Rocket_Submunition_Base): ammo_Penetrator_Base
     {
-        SCOPE_PRIVATE;
+        SCOPE_PUBLIC;
 
         hit = 480;
         caliber = 43.3333;
