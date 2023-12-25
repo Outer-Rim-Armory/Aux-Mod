@@ -374,7 +374,7 @@ class CfgAmmo
         craterEffects = "M136_Smoke";
         effectsMissileInit = "";
 
-        submunitionAmmo = QCLASS(Rocket_Submunition_Base);
+        submunitionAmmo = "";
         submunitionDirectionType = "SubmunitionModelDirection";
         submunitionInitialOffset[] = {0, 0, -0.2};
         submunitionInitSpeed = 1000;
