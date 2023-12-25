@@ -5,15 +5,15 @@ class CfgAmmo
     {
         hit = 0;
         indirectHit = 0;
-        explosive = 0;
         explosionTime = 5;
+        JLTS_isEMPAmmo = 1;
 
         ace_frag_enabled = 0;
         ace_frag_skip = 1;
         ace_frag_metal = 0;
         ace_frag_charge = 0;
 
-        model = "\ls_weapons\grenades\thermalDet\ls_grenade_thermalDet";
+        model = "\ls_weapons\grenades\thermalDet\ls_grenade_thermalDet.p3d";
 
         // Sound and visual effects
         ace_grenades_pullPinSound[] = {"\ls_sounds\weapons\grenade\pin.wss", 3, 1, 10};
