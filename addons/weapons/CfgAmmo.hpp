@@ -386,6 +386,35 @@ class CfgAmmo
         soundHit2[] = {"\A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_02", 2.51189, 1, 1800};
         soundHit3[] = {"\A3\Sounds_F\arsenal\weapons\Launchers\Titan\Explosion_titan_missile_03", 2.51189, 1, 1800};
         soundSetExplosion[] = {"RocketsLight_Exp_SoundSet", "RocketsLight_Tail_SoundSet", "Explosion_Debris_SoundSet"};
+
+        class CamShakeFire
+        {
+            distance = 35.7771;
+            duration = 0.8;
+            frequency = 20;
+            power = 2.11474;
+        };
+        class CamShakePlayerFire
+        {
+            distance = 1;
+            duration = 0.1;
+            frequency = 20;
+            power = 1;
+        };
+        class CamShakeHit
+        {
+            distance = 1;
+            duration = 0.6;
+            frequency = 20;
+            power = 110;
+        };
+        class CamShakeExplode
+        {
+            distance = 99.3296;
+            duration = 1.4;
+            frequency = 20;
+            power = 11;
+        };
     };
 
     class SubmunitionCore;
