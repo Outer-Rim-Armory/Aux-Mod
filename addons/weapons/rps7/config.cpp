@@ -15,11 +15,15 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            "JLTS_Weapons_RPS6"
+            "JLTS_Weapons_RPS6",
+            "ls_weapons"
         };
         units[] = {};
         weapons[] =
         {
+            QCLASS(RPS7_Base),
+            QCLASS(RPS7),
+            QCLASS(RPS7_Fried)
         };
         VERSION_CONFIG;
     };
