@@ -4,7 +4,6 @@ class CfgVehicles
     class CLASS(Unit_Base): lsd_gar_trooper_phase1
     {
         SCOPE_PRIVATE;
-        dlc = QUOTE(PREFIX);
         author = "Keeli Company Aux Team";
 
         faction = QCLASS(Faction_KC);

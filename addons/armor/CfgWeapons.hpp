@@ -4,7 +4,6 @@ class CfgWeapons
     class CLASS(Helmet_Base): ls_gar_phase2_helmet
     {
         SCOPE_PRIVATE;
-        dlc = QUOTE(PREFIX);
         author = "Keeli Company Aux Team";
 
         picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
@@ -35,7 +34,6 @@ class CfgWeapons
     {
         SCOPE_PUBLIC;
 
-        dlc = QUOTE(PREFIX);
         author = "Keeli Company Aux Team";
 
         displayName = "[KC] INF Armor (Base)";
@@ -61,7 +59,6 @@ class CfgWeapons
     {
         SCOPE_PUBLIC;
 
-        dlc = QUOTE(PREFIX);
         author = "Keeli Company Aux Team";
 
         displayName = "[KC] INF Vest 01 (Trooper)";
