@@ -90,6 +90,17 @@ class CfgMagazines
     };
 
 
+    class CLASS(Mag_Grenade_Base): CLASS(Mag_Base)
+    {
+        mass = 10;
+        initSpeed = 18;
+        maxLeadSpeed = 6.94444;
+
+        nameSound = "handgrenade";
+        count = 1;
+    };
+
+
     // ! LEGACY CLASSES
     class Aux12thFleet_Mag_StunShort: CLASS(Mag_StunShort)
     {

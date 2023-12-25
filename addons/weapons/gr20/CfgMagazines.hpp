@@ -9,7 +9,7 @@ class CfgMagazines
         descriptionShort = "Pressurized Bacta Gas<br/>Rounds: 1<br/>Used In: GR-20<br/>Nicknamed the 'Bacta Bomb' by Republic Medics";
 
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
-        picture = QPATHTOF(data\ui\Mag_MedicAmmo_ca.paa);
+        picture = QPATHTOF(data\ui\Mag_GrenadeBacta_ca.paa);
 
         ammo = QCLASS(Bullet_BactaSmoke); // Most likely a temporary name
         count = 1;
