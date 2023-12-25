@@ -341,7 +341,7 @@ class CfgAmmo
     class RocketBase;
     class CLASS(Rocket_Base): RocketBase
     {
-        SCOPE_PRIVATE;
+        SCOPE_PUBLIC;
 
         hit = 150;
         indirectHit = 100;
@@ -365,7 +365,7 @@ class CfgAmmo
         warheadName = "TandemHEAT";
         simulationStep = 0.02;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_VEHICLES + AMMO_USAGE_AIRCRAFT + AMMO_USAGE_ARMORED_VEHICLES);
         allowAgainstInfantry = FALSE;
 
         model = "\A3\weapons_f\launchers\RPG32\pg32v_rocket.p3d";
@@ -417,10 +417,10 @@ class CfgAmmo
         };
     };
 
-    class SubmunitionCore;
-    class CLASS(Rocket_Submunition_Base): SubmunitionCore
+    class ammo_Penetrator_Base;
+    class CLASS(Rocket_Submunition_Base): ammo_Penetrator_Base
     {
-        SCOPE_PRIVATE;
+        SCOPE_PUBLIC;
 
         hit = 480;
         caliber = 43.3333;

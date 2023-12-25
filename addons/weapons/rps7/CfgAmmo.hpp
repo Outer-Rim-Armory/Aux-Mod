@@ -33,4 +33,17 @@ class CfgAmmo
             power = 22;
         };
     };
+
+    class CLASS(Rocket_RPS7_AT): CLASS(Rocket_Base)
+    {
+        SCOPE_PUBLIC;
+
+        hit = 250;
+        indirectHit = 28;
+        indirectHitRange = 3;
+        submunitionAmmo = QCLASS(Rocket_Submunition_Base);
+        irLock = 0;
+
+        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES);
+    };
 };
