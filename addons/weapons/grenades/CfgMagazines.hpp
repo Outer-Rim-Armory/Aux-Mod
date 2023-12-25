@@ -24,6 +24,8 @@ class CfgMagazines
         descriptionShort = "Type: Bacta Grenade<br />Duration: 20 sec<br />Used in: Hand<br />Nicknamed the 'Bacta Bomb'.";
         picture = QPATHTOF(data\ui\Mag_GrenadeBacta_ca.paa);
 
+        ammo = QCLASS(Grenade_Bacta_Ammo);
+
         GVAR(bactaDuration) = BACTA_DURATION_DEFAULT;
         EGVAR(medical,areaHealRadius) = MEDICAL_HEAL_RADIUS_DEFAULT;
         EGVAR(medical,areaHealRate) = MEDICAL_HEAL_RATE_DEFAULT;
