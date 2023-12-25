@@ -16,8 +16,6 @@
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
 private [];
 
-TRACE_7("fnc_fired", _unit, _weapon, _muzzle, _mode, _ammo, _magazine, _projectile);
-
 if (toLowerANSI _weapon isEqualTo "throw") then {
 	_this call FUNC(grenadeHandler);
 };
