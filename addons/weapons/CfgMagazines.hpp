@@ -4,7 +4,7 @@ class CfgMagazines
     class CLASS(Mag_Base): CA_Magazine
     {
         SCOPE_PRIVATE;
-        author = "DartRuffian and Dexus";
+        author = "Keeli Company Aux Team";
 
         displayName = "";
         displayNameShort = "";
