@@ -20,7 +20,7 @@ class CfgAmmo
         soundFly[] = {"\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40};
         soundSetExplosion[] = {};
 
-        explosionEffects = "JLTS_fx_exp_EMP";
+        explosionEffects = QCLASS(Effect_GrenadeEMP_Explosion);
         explosionEffectRadius = 3;
         explosionForceCoef = 0;
 

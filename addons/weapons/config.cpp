@@ -6,6 +6,8 @@
 #include "CfgSoundShaders.hpp"
 #include "CfgSoundSets.hpp"
 #include "CfgEventHandlers.hpp"
+#include "CfgEffects.hpp"
+#include "CfgCloudlets.hpp"
 
 
 class CfgPatches
