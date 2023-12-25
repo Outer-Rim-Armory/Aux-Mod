@@ -11,7 +11,6 @@ class CfgMagazines
 
         ammo = QCLASS(Grenade_EMP_Ammo);
 
-        GVAR(grenadeType) = GRENADE_TYPE_EMP;
         GVAR(empRadiusDroid) = EMP_RADIUS_DROID_DEFAULT;
         GVAR(empRadiusDroideka) = EMP_RADIUS_DROIDEKA_DEFAULT;
         GVAR(empRadiusVehicle) = EMP_RADIUS_VEHICLE_DEFAULT;
@@ -25,9 +24,6 @@ class CfgMagazines
         descriptionShort = "Type: Bacta Grenade<br />Duration: 20 sec<br />Used in: Hand<br />Nicknamed the 'Bacta Bomb'.";
         picture = QPATHTOF(data\ui\Mag_GrenadeBacta_ca.paa);
 
-        ammo = QCLASS(Grenade_Bacta_Ammo);
-
-        GVAR(grenadeType) = GRENADE_TYPE_BACTA;
         GVAR(bactaDuration) = BACTA_DURATION_DEFAULT;
         EGVAR(medical,areaHealRadius) = MEDICAL_HEAL_RADIUS_DEFAULT;
         EGVAR(medical,areaHealRate) = MEDICAL_HEAL_RATE_DEFAULT;
