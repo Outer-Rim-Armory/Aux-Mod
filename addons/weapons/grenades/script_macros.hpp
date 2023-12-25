@@ -1,3 +1,4 @@
+#define TYPE_NORMAL -1
 #define TYPE_EMP 0
 #define TYPE_BACTA 1
 
