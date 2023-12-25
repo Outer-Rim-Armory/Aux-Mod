@@ -2,6 +2,8 @@
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgAmmo.hpp"
+#include "CfgEffects.hpp"
+#include "CfgCloudlets.hpp"
 
 
 class CfgPatches
