@@ -14,7 +14,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            "JLTS_RPS6"
+            "JLTS_Weapons_RPS6"
         };
         units[] = {};
         weapons[] =
