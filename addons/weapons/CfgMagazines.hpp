@@ -4,7 +4,7 @@ class CfgMagazines
     class CLASS(Mag_Base): CA_Magazine
     {
         SCOPE_PRIVATE;
-        author = "DartRuffian and Dexus";
+        author = "Keeli Company Aux Team";
 
         displayName = "";
         displayNameShort = "";
@@ -87,6 +87,17 @@ class CfgMagazines
         descriptionShort = "Type: Flare - Blue <br />Rounds: 3 <br />Used in: UGLs, Flare Guns";
         mass = 12;
         count = 3;
+    };
+
+
+    class CLASS(Mag_Grenade_Base): CLASS(Mag_Base)
+    {
+        mass = 10;
+        initSpeed = 18;
+        maxLeadSpeed = 6.94444;
+
+        nameSound = "handgrenade";
+        count = 1;
     };
 
 

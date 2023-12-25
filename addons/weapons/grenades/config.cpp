@@ -1,34 +1,29 @@
 #include "script_component.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
-#include "CfgMagazineWells.hpp"
 #include "CfgAmmo.hpp"
-#include "CfgSoundShaders.hpp"
-#include "CfgSoundSets.hpp"
-#include "CfgEventHandlers.hpp"
 #include "CfgEffects.hpp"
 #include "CfgCloudlets.hpp"
 
 
 class CfgPatches
 {
-    class ADDON
+    class SUBADDON
     {
         author = "Keeli Company Aux Team";
         name = COMPONENT_NAME;
+        addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            QCLASS(core),
+            QUOTE(ADDON),
+            "ls_weapons",
             "JLTS_weapons_Core",
-            "3AS_Main",
-            "SWLW_main"
+            "3AS_Equipment"
         };
         units[] = {};
         weapons[] =
         {
-            QCLASS(Muzzle_Stun),
-            QCLASS(Muzzle_Stun_Fried)
         };
         VERSION_CONFIG;
     };

@@ -426,4 +426,13 @@ class CfgAmmo
         caliber = 43.3333;
         warheadName = "TandemHEAT";
     };
+
+    class GrenadeHand;
+    class CLASS(Grenade_Base_Ammo): GrenadeHand
+    {
+        aiAmmoUsageFlags = AMMO_USAGE_INFANTRY;
+    };
+
+    class SmokeShell;
+    class CLASS(GrenadeSmoke_Base_Ammo): SmokeShell {};
 };
