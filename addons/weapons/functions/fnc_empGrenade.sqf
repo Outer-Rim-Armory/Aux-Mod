@@ -51,14 +51,6 @@ _positionASL = getPosASL _projectile;
 _positionAGL = ASLToAGL _positionASL;
 
 _nearbyUnits = [_positionAGL, _radiusDroid] call BNA_KC_core_fnc_getNearbyUnits;
-_nearbyUnits = _nearbyUnits select {
-    private _isDroid = [
-        configFile >> "CfgWeapons" >> uniform _x,
-        QGVARMAIN(isDroidArmor),
-        FALSE
-    ] call BIS_fnc_returnConfigEntry;
-    _isDroid isEqualTo TRUE or (toLowerAnsi typeOf _x find "b1") > 0;
-};
 
 _nearbyVehicles = _positionAGL nearEntities [["Air", "LandVehicle"], _radiusVehicle];
 _nearbyVehicles = _nearbyVehicles select {
@@ -75,5 +67,7 @@ _nearbyDroidekas = _positionAGL nearEntities [["3AS_Deka_Static_Base", "3AS_Deka
 _droidekaShields = _positionAGL nearObjects [["RD501_Droideka_Shield"], _radiusDroideka];
 
 TRACE_5("EMP Grenade", _positionAGL, _nearbyUnits, _nearbyVehicles, _nearbyDroidekas, _droidekaShields);
+
+[_nearbyUnits, _unit] call FUNC(droidDeathEffect);
 
 true;
