@@ -35,6 +35,11 @@ _units = _units select {
     _x setDamage [1, true, _killer];
     playSound3D [
         selectRandom getArray (configFile >> "CfgJLTSDeathSounds" >> "DeathDroid" >> "emp"),
-        _x
+        objNull,
+        false,
+        getPosASL _x,
+        5,
+        1,
+        75
     ];
 } forEach _units;
