@@ -58,7 +58,24 @@ if (_time <= 0) exitWith {};
         // Faster to remove the same magazine multiple times than to
         // remove duplicate values
         {
-            _vehicle removeMagazineTurret [_turretPath, _x];
+            _vehicle removeMagazineTurret [_x, _turretPath];
         } forEach _magazines;
     } forEach (allTurrets _vehicle);
+
+    [
+        {
+            params ["_vehicle", "_fuel", "_magsDriver", "_magsTurrets"];
+
+            _vehicle setFuel _fuel;
+            {_vehicle addMagazine _x;} forEach _magsDriver;
+            {
+                _x params ["_turretPath", "_magazines"];
+                {
+                    _vehicle addMagazineTurret [_x, _turretPath];
+                } forEach _magazines;
+            } forEach _magsTurrets;
+        },
+        [_vehicle, _fuel, _magsDriver, _magsTurrets],
+        _time
+    ] call CBA_fnc_waitAndExecute;
 } forEach _vehicles;
