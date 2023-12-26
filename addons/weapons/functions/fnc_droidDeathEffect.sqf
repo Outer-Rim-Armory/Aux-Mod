@@ -20,8 +20,6 @@ params [
 private [];
 TRACE_2("fnc_droidDeathEffect", _units, _killer);
 
-if (count _units isEqualTo 0) exitWith {};
-
 _units = _units select {
     private _isDroid = [
         configFile >> "CfgWeapons" >> uniform _x,
@@ -30,6 +28,8 @@ _units = _units select {
     ] call BIS_fnc_returnConfigEntry;
     _isDroid isEqualTo TRUE or (toLowerAnsi typeOf _x find "b1") > 0;
 };
+
+if (count _units isEqualTo 0) exitWith {};
 
 {
     _x setDamage [1, true, _killer];
