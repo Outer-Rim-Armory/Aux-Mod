@@ -1,10 +1,10 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Kills a compatible unit and plays a death sound.
+ * An array of units is filtered to remove non-droid units, which are then killed and plays a death sound effect.
  *
  * Arguments:
- * 0: Array of battle droids (units) <ARRAY>
+ * 0: Array of units to potentially kill <ARRAY>
  *
  * Return Value:
  * None
@@ -18,7 +18,7 @@ params [
 	["_killer", objNull, [objNull]]
 ];
 private [];
-TRACE_2("fnc_droidDeath", _units, _killer);
+TRACE_2("fnc_droidDeathEffect", _units, _killer);
 
 if (count _units isEqualTo 0) exitWith {};
 
