@@ -63,7 +63,7 @@ _nearbyVehicles = _nearbyVehicles select {
 
 // 3AS and 501st Droidekas use different methods of shields, and require different handling
 _nearbyDroidekas = _positionAGL nearEntities [["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDroideka];
-_droidekaShields = _positionAGL nearObjects [["RD501_Droideka_Shield"], _radiusDroideka];
+_droidekaShields = _positionAGL nearObjects ["RD501_Droideka_Shield", _radiusDroideka];
 
 TRACE_5("EMP Grenade", _positionAGL, _nearbyUnits, _nearbyVehicles, _nearbyDroidekas, _droidekaShields);
 
