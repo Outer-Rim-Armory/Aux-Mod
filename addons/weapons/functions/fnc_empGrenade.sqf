@@ -50,7 +50,7 @@ _radiusVehicle = [
 _positionASL = getPosASL _projectile;
 _positionAGL = ASLToAGL _positionASL;
 
-_nearbyUnits = [_positionAGL, _radiusDroid] call BNA_KC_core_fnc_getNearbyUnits;
+_nearbyUnits = [_positionAGL, _radiusDroid] call EFUNC(core,getNearbyUnits);
 
 _nearbyVehicles = _positionAGL nearEntities [["Air", "LandVehicle"], _radiusVehicle];
 _nearbyVehicles = _nearbyVehicles select {
