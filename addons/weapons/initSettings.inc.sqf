@@ -1,13 +1,4 @@
 [
-    QGVAR(globalSwitch),
-    "CHECKBOX",
-    ["Global Toggle", "Enables/disables jetpacks and droppacks."],
-    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
-    true,
-    1
-] call CBA_fnc_addSetting;
-
-[
     QGVAR(empVehicleDisableDuration),
     "SLIDER",
     ["EMP - Vehicle Disable Duration", "The time in seconds that a vehicle is disabled for by an emp weapon."],
