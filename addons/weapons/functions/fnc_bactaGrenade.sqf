@@ -1,0 +1,31 @@
+#include "..\script_component.hpp"
+/*
+ * Author: DartRuffian
+ * Handles bacta grenades
+ *
+ * Arguments:
+ * 0: The unit that threw the grenade <OBJECT>
+ * 1: Class name of the ammo type thrown <STRING>
+ * 2: Class name of the magazine (grenade) thrown <STRING>
+ * 3: Projectile object <OBJECT>
+ *
+ * Return Value:
+ * Whether the area healing was successfully created <BOOL>
+ *
+ * Examples:
+ * [ace_player, "BNA_KC_Grenade_Bacta", "BNA_KC_Grenade_Bacta_Ammo", _projectile] call BNA_KC_weapons_fnc_bactaGrenade;
+ */
+
+params [
+    ["_unit", objNull, [objNull]],
+    ["_ammo", "", [""]],
+    ["_magazine", "", [""]],
+    ["_projectile", objNull, [objNull]]
+];
+private [];
+TRACE_4("fnc_bactaGrenade", _unit, _ammo, _magazine, _projectile);
+
+if (isNull _unit or isNull _projectile) exitWith {false;};
+if (_ammo isEqualTo "" or _magazine isEqualTo "") exitWith {false;};
+
+true;
