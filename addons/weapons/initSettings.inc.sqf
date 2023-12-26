@@ -6,6 +6,16 @@
     [0, 30, 5, 0],
     TRUE
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(empDisableDroidkaShields),
+    "CHECKBOX",
+    ["EMP - Disable Droideka Shields", "Whether emp weapons can disable Droideka shields"],
+    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
+    true,
+    TRUE
+] call CBA_fnc_addSetting;
+
 [
     QGVAR(empTCWSoundEnabled),
     "CHECKBOX",
@@ -13,6 +23,7 @@
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     false
 ] call CBA_fnc_addSetting;
+
 [
     QGVAR(empTCWSoundVolume),
     "SLIDER",
@@ -20,6 +31,7 @@
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     [0, 1, 1, 1]
 ] call CBA_fnc_addSetting;
+
 [
     QGVAR(empTCWSoundPitch),
     "SLIDER",
