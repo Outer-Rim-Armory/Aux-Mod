@@ -27,7 +27,7 @@ _nearbyUnits = [];
 
 if (_includeCrewed) then {
     _nearbyUnits = _positionAGL nearEntities [["CAManBase", "LandVehicle", "Air"], _radius];
-    _nearbyUnits apply {crew _x};
+    _nearbyUnits = flatten (_nearbyUnits apply {crew _x});
 } else {
     _nearbyUnits = _positionAGL nearEntities ["CAManBase", _radius];
 };
