@@ -28,7 +28,6 @@ TRACE_4("fnc_empGrenade", _unit, _ammo, _magazine, _projectile);
 if (isNull _unit or isNull _projectile) exitWith {false;};
 if (_ammo isEqualTo "" or _magazine isEqualTo "") exitWith {false;};
 
-_positionATL = getPosATL _projectile;
 _radiusDroid = [
     configFile >> "CfgMagazines" >> _magazine,
     QGVAR(empRadiusDroid),
