@@ -60,5 +60,6 @@ _droidekaShields = _positionAGL nearObjects ["RD501_Droideka_Shield", _radiusDro
 TRACE_5("EMP Grenade", _positionAGL, _nearbyUnits, _nearbyVehicles, _nearbyDroidekas, _droidekaShields);
 
 [_nearbyUnits, _unit] call FUNC(droidDeathEffect);
+[_nearbyVehicles, GVAR(empVehicleDisableDuration)] call FUNC(disableVehicles);
 
 true;
