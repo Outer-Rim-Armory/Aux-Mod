@@ -24,10 +24,9 @@ _grenadeType = [
 
 _explodeDelay = [
     configFile >> "CfgAmmo" >> _ammo,
-    explosionTime,
-    0.1
+    "explosionTime",
+    0
 ] call BIS_fnc_returnConfigEntry;
-_explodeDelay = _explodeDelay - 0.1;
 
 if (_grenadeType isEqualTo GRENADE_TYPE_NORMAL) exitWith {};
 
