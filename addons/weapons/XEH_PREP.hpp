@@ -3,4 +3,5 @@ PREP(grenadeHandler);
 PREP(empGrenade);
 PREP(bactaGrenade);
 PREP(droidDeathEffect);
+PREP(disableVehicles);
 PREP(attachmentSwap);

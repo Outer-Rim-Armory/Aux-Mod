@@ -52,14 +52,6 @@ _positionAGL = ASLToAGL _positionASL;
 _nearbyUnits = [_positionAGL, _radiusDroid] call EFUNC(core,getNearbyUnits);
 
 _nearbyVehicles = _positionAGL nearEntities [["Air", "LandVehicle"], _radiusVehicle];
-_nearbyVehicles = _nearbyVehicles select {
-    private _canBeDisabled = [
-        configFile >> "CfgVehicles" >> typeOf _x,
-        QGVAR(empCanBeDisabled),
-        FALSE
-    ] call BIS_fnc_returnConfigEntry;
-    _canBeDisabled isEqualTo TRUE;
-};
 
 // 3AS and 501st Droidekas use different methods of shields, and require different handling
 _nearbyDroidekas = _positionAGL nearEntities [["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDroideka];
