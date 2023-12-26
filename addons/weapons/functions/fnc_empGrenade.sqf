@@ -61,5 +61,6 @@ TRACE_5("EMP Grenade", _positionAGL, _nearbyUnits, _nearbyVehicles, _nearbyDroid
 
 [_nearbyUnits, _unit] call FUNC(droidDeathEffect);
 [_nearbyVehicles, GVAR(empVehicleDisableDuration)] call FUNC(disableVehicles);
+[_nearbyDroidekas, _droidekaShields] call FUNC(disableDroidekaShields);
 
 true;
