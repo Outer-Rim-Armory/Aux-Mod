@@ -28,4 +28,52 @@ TRACE_4("fnc_empGrenade", _unit, _ammo, _magazine, _projectile);
 if (isNull _unit or isNull _projectile) exitWith {false;};
 if (_ammo isEqualTo "" or _magazine isEqualTo "") exitWith {false;};
 
+_positionATL = getPosATL _projectile;
+_radiusDroid = [
+    configFile >> "CfgMagazines" >> _magazine,
+    QGVAR(empRadiusDroid),
+    EMP_RADIUS_DROID_DEFAULT
+] call BIS_fnc_returnConfigEntry;
+_radiusDroideka = [
+    configFile >> "CfgMagazines" >> _magazine,
+    QGVAR(empRadiusDroideka),
+    EMP_RADIUS_DROIDEKA_DEFAULT
+] call BIS_fnc_returnConfigEntry;
+_radiusVehicle = [
+    configFile >> "CfgMagazines" >> _magazine,
+    QGVAR(empRadiusVehicle),
+    EMP_RADIUS_VEHICLE_DEFAULT
+] call BIS_fnc_returnConfigEntry;
+
+// TODO: event to play sound per-client based on given setting
+
+_positionASL = getPosASL _projectile;
+_positionAGL = ASLToAGL _positionASL;
+
+_nearbyUnits = [_positionAGL, _radiusDroid] call BNA_KC_core_fnc_getNearbyUnits;
+_nearbyUnits = _nearbyUnits select {
+    private _isDroid = [
+        configFile >> "CfgWeapons" >> uniform _x,
+        QGVARMAIN(isDroidArmor),
+        FALSE
+    ] call BIS_fnc_returnConfigEntry;
+    _isDroid isEqualTo TRUE or (toLowerAnsi typeOf _x find "b1") > 0;
+};
+
+_nearbyVehicles = _positionAGL nearEntities [["Air", "LandVehicle"], _radiusVehicle];
+_nearbyVehicles = _nearbyVehicles select {
+    private _canBeDisabled = [
+        configFile >> "CfgVehicles" >> typeOf _x,
+        QGVAR(empCanBeDisabled),
+        FALSE
+    ] call BIS_fnc_returnConfigEntry;
+    _canBeDisabled isEqualTo TRUE;
+};
+
+// 3AS and 501st Droidekas use different methods of shields, and require different handling
+_nearbyDroidekas = _positionAGL nearEntities [["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDroideka];
+_droidekaShields = _positionAGL nearObjects [["RD501_Droideka_Shield"], _radiusDroideka];
+
+TRACE_5("EMP Grenade", _positionAGL, _nearbyUnits, _nearbyVehicles, _nearbyDroidekas, _droidekaShields);
+
 true;
