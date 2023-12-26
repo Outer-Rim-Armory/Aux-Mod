@@ -22,7 +22,7 @@ params [
     ["_magazine", "", [""]],
     ["_projectile", objNull, [objNull]]
 ];
-private [];
+private ["_radiusDroid", "_radiusDroideka", "_radiusVehicle", "_positionASL", "_positionAGL", "_nearbyUnits", "_nearbyVehicles", "_nearbyDroidekas", "_droidekaShields"];
 TRACE_4("fnc_empGrenade", _unit, _ammo, _magazine, _projectile);
 
 if (isNull _unit or isNull _projectile) exitWith {false;};
