@@ -107,8 +107,8 @@ class CfgWeapons
         displayName = "[KC] DC-15S (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_fried_ui_ca.paa";
-
         baseWeapon = QCLASS(DC15S_Fried);
+
         JLTS_shieldedWeapon = QCLASS(DC15S_RiotShield_Fried);
         JLTS_isFried = TRUE;
         magazines[] = {};
@@ -121,8 +121,8 @@ class CfgWeapons
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-15S (Shield)";
-
         baseWeapon = QCLASS(DC15S_RiotShield);
+
         JLTS_isShielded = TRUE;
         JLTS_baseWeapon = QCLASS(DC15S);
         JLTS_friedItem = QCLASS(DC15S_RiotShield_Fried);
@@ -166,8 +166,8 @@ class CfgWeapons
         displayName = "[KC] DC-15S (Shield, Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_fried_ui_ca.paa";
-
         baseWeapon = QCLASS(DC15S_RiotShield_Fried);
+
         JLTS_baseWeapon = QCLASS(DC15S_Fried);
         JLTS_isFried = TRUE;
         magazines[] = {};

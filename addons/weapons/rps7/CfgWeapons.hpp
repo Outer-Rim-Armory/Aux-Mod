@@ -12,6 +12,7 @@ class CfgWeapons
         author = "Keeli Company Aux Team";
 
         displayName = "[KC] RPS-7 (Base)";
+        baseWeapon = QCLASS(RPS7_Base);
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
@@ -43,6 +44,7 @@ class CfgWeapons
         SCOPE_PUBLIC;
 
         displayName = "[KC] RPS-7";
+        baseWeapon = QCLASS(RPS7);
         JLTS_friedItem = QCLASS(RPS7_Fried);
     };
 
@@ -53,6 +55,7 @@ class CfgWeapons
         displayName = "[KC] RPS-7 (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\RPS6\data\ui\RPS6_fried_ui_ca.paa";
+        baseWeapon = QCLASS(RPS7_Fried);
 
         JLTS_isFried = TRUE;
         magazines[] = {};

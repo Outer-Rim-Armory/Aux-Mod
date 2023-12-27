@@ -8,8 +8,8 @@ class CfgWeapons
 
         displayName = "[KC] X-42 Flamethrower (Base)";
         descriptionShort = "BlastTech Flamethrower";
-        baseWeapon = QCLASS(X42_Base);
         picture = "\3AS\3AS_Weapons\X42\Data\BTX42_ui_ca.paa";
+        baseWeapon = QCLASS(X42_Base);
 
         model = "\3AS\3AS_Weapons\X42\BX42.p3d";
         handAnim[] =

@@ -11,6 +11,7 @@ class CfgWeapons
         author = "Keeli Company Aux Team";
 
         displayName = "[KC] DC-15SA (Base)";
+        baseWeapon = QCLASS(DC15SA_Base);
 
         modes[] = {"Single", "FullAuto"};
         muzzles[] = {"this"};
@@ -56,5 +57,6 @@ class CfgWeapons
     {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-15SA";
+        baseWeapon = QCLASS(DC15SA);
     };
 };

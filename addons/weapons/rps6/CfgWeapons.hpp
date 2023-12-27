@@ -74,11 +74,13 @@ class CfgWeapons
     {
         SCOPE_HIDDEN;
 
-        JLTS_hasEMPProtection = TRUE; // No point in making a fried version
-
         displayName = "[KC] RPS-6 (Used)";
         descriptionShort = "Used Rocket Tube";
+        baseWeapon = QCLASS(RPS6_Used);
+
         magazines[] = {"CBA_FakeLauncherMagazine"};
+
+        JLTS_hasEMPProtection = TRUE; // No point in making a fried version
     };
 
     class CLASS(RPS6_Disposable_Fried): CLASS(RPS6_Disposable)

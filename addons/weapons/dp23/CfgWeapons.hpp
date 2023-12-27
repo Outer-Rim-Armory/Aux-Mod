@@ -74,6 +74,7 @@ class CfgWeapons
 
         displayName = "[KC] DP-23";
         baseWeapon = QCLASS(DP23);
+
         JLTS_shieldedWeapon = QCLASS(DP23_RiotShield);
         JLTS_friedItem = QCLASS(DP23_Fried);
     };

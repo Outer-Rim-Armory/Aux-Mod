@@ -31,9 +31,9 @@ class CfgWeapons
         author = "Keeli Company Aux Team";
 
         displayName = "[KC] DC-15C (Base)";
-        baseWeapon = QCLASS(DC15C_Base);
         descriptionShort = "Blaster Rifle";
         picture = QPATHTOF(dc15c\data\ui\DC15C_ca.paa);
+        baseWeapon = QCLASS(DC15C_Base);
 
         modes[] = {"FullAuto", "Single"};
         muzzles[] = {"this"};

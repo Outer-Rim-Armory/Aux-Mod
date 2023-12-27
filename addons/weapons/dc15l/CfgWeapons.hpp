@@ -21,8 +21,8 @@ class CfgWeapons
 
         displayName = "[KC] DC-15L (Base)";
         descriptionShort = "Automatic Blaster Rifle";
-        baseWeapon = QCLASS(DC15L_Base);
         picture = QPATHTOF(dc15l\data\ui\DC15L_ca.paa);
+        baseWeapon = QCLASS(DC15L_Base);
 
         modes[] = {"FullAuto"};
         muzzles[] = {"this"};
@@ -100,8 +100,8 @@ class CfgWeapons
 
         displayName = "[KC] DC-15L (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        baseWeapon = QCLASS(DC15L_Fried);
         picture = QPATHTOF(dc15l\data\ui\DC15L_Fried_ca.paa);
+        baseWeapon = QCLASS(DC15L_Fried);
 
         JLTS_isFried = TRUE;
         magazines[] = {};

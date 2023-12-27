@@ -112,6 +112,7 @@ class CfgWeapons
 
         displayName = "[KC] Westar-M5";
         baseWeapon = QCLASS(WestarM5);
+
         JLTS_friedItem = QCLASS(WestarM5_Fried);
     };
 

@@ -93,6 +93,7 @@ class CfgWeapons
 
         displayName = "[KC] DC-15X";
         baseWeapon = QCLASS(DC15X);
+
         JLTS_friedItem = QCLASS(DC15X_Fried);
 
         class LinkedItems

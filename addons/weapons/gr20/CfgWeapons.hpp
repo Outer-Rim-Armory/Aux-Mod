@@ -32,8 +32,8 @@ class CfgWeapons
 
         displayName = "[KC] GR-20 (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-
         baseWeapon = QCLASS(GR20_Fried);
+
         JLTS_isFried = TRUE;
 
         class Launcher: Launcher
