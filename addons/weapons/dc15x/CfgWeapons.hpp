@@ -1,3 +1,5 @@
+class Mode_SemiAuto;
+
 class CfgWeapons
 {
     class Rifle_Base_F;
@@ -81,8 +83,8 @@ class CfgWeapons
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {QCLASS(SoundSet_DC15XShot_Single)};
-                soundSetShotWater[] = {QCLASS(SoundSet_DC15XShot_Single)};
+                soundSetShot[] = {QCLASS(SoundSet_DC15XShot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_DC15XShot)};
             };
         };
     };

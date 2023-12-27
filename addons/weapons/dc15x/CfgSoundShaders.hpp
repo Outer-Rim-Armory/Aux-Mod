@@ -1,7 +1,7 @@
 class CfgSoundShaders
 {
     class CLASS(SoundShader_WeaponShot_Base);
-    class CLASS(SoundShader_DC15XShot): CLASS(SoundShader_DC15XShot_Base)
+    class CLASS(SoundShader_DC15XShot): CLASS(SoundShader_WeaponShot_Base)
     {
         samples[] =
         {
