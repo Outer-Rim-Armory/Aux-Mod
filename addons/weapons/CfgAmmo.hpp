@@ -267,6 +267,8 @@ class CfgAmmo
         ACE_bulletMass = 7.9704;
         ACE_caliber = 6.706;
         ACE_muzzleVelocities[] = {730,760,788,800,810,830};
+        fireSpreadAngle = 8;
+        triggerTime = 0.0003; // Gives the shotgun pellet spread
     };
     class CLASS(Bullet_PlasmaScatter_Red): CLASS(Bullet_PlasmaScatter_Blue)
     {
