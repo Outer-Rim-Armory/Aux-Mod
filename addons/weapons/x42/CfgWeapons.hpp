@@ -47,7 +47,7 @@ class CfgWeapons
         displayName = "[KC] X-42 Heavy Flamethrower (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         baseWeapon = QCLASS(X42_Fried);
-        picture = QPATHTOF(btx42\data\ui\X42_Fried_ca.paa);
+        picture = QPATHTOF(x42\data\ui\X42_Fried_ca.paa);
 
         magazines[] = {};
 
