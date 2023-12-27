@@ -24,6 +24,11 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QGVAR(DP23_Base),
+            QGVAR(DP23),
+            QGVAR(DP23_Fried),
+            QGVAR(DP23_RiotShield),
+            QGVAR(DP23_RiotShield_Fried)
         };
         VERSION_CONFIG;
     };
