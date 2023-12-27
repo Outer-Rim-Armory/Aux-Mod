@@ -25,6 +25,12 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(E5_Base),
+            QCLASS(E5),
+            QCLASS(E5_Fried),
+            QCLASS(E5_RiotShield),
+            QCLASS(E5_RiotShield_Fried),
+            QCLASS(E5_Shielded)
         };
         VERSION_CONFIG;
     };
