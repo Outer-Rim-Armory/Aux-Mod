@@ -10,6 +10,10 @@
 #define AMMO_USAGE_AIRCRAFT 256
 #define AMMO_USAGE_ARMORED_VEHICLES 512
 
+#define ATTACHMENTS_POINTER_BASE acc_pointer_ir = TRUE;
+ace_acc_pointer_green = TRUE;
+jlts_dc17sa_flashlight = TRUE
+
 // Scripted Grenades
 #define GRENADE_TYPE_NORMAL -1
 #define GRENADE_TYPE_EMP 0

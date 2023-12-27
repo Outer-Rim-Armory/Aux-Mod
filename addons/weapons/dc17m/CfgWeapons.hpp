@@ -97,9 +97,7 @@ class CfgWeapons
             {
                 class CompatibleItems
                 {
-                    acc_pointer_ir = TRUE;
-                    ace_acc_pointer_green = TRUE;
-                    jlts_dc17sa_flashlight = TRUE;
+                    ATTACHMENTS_POINTER_BASE;
                 };
             };
         };
