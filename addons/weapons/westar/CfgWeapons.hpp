@@ -167,4 +167,36 @@ class CfgWeapons
         descriptionShort = "Blaster Rifle<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
         baseWeapon = QCLASS(Westar_M5_UGL);
     };
+
+    class ItemCore;
+    class InventoryOpticsItem_Base_F;
+    class 3AS_Optic_Scope_WestarM5: ItemCore
+    {
+        class ItemInfo: InventoryOpticsItem_Base_F
+        {
+            class OpticsModes
+            {
+                class 3AS_Scope_Optics;
+                class 3AS_OverSights_Optic;
+            };
+        };
+    };
+    class CLASS(WestarM5_Scope): 3AS_Optic_Scope_WestarM5
+    {
+        displayName = "[KC] Westar-M5 Long Scope";
+        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_scope_ui.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            class OpticsModes: OpticsModes
+            {
+                class Scope: 3AS_Scope_Optics
+                {
+                    visionMode[] = {"Normal", "NVG", "TI"};
+                    thermalMode[] = {WHOT};
+                };
+                class Sights: 3AS_OverSights_Optic {};
+            };
+        };
+    };
 };
