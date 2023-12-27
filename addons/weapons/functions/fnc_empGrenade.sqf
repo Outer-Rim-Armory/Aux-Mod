@@ -22,7 +22,7 @@ params [
     ["_magazine", "", [""]],
     ["_projectile", objNull, [objNull]]
 ];
-private ["_radiusDroid", "_radiusDroideka", "_radiusVehicle", "_positionASL", "_positionAGL", "_nearbyUnits", "_nearbyVehicles", "_nearbyDroidekas", "_droidekaShields"];
+private ["_radiusDroid", "_radiusDroideka", "_radiusVehicle", "_positionASL", "_positionAGL", "_nearbyPlayers", "_nearbyUnits", "_nearbyVehicles", "_nearbyDroidekas", "_droidekaShields"];
 TRACE_4("fnc_empGrenade", _unit, _ammo, _magazine, _projectile);
 
 if (isNull _unit or isNull _projectile) exitWith {false;};
@@ -44,10 +44,25 @@ _radiusVehicle = [
     EMP_RADIUS_VEHICLE_DEFAULT
 ] call BIS_fnc_returnConfigEntry;
 
-// TODO: event to play sound per-client based on given setting
-
 _positionASL = getPosASL _projectile;
 _positionAGL = ASLToAGL _positionASL;
+
+_nearbyPlayers = [_positionAGL, 70] call EFUNC(core,getNearbyUnits);
+_nearbyPlayers = _nearbyPlayers select {
+    _x call ace_common_fnc_isPlayer
+};
+{
+    [QEGVAR(core,localSound), [
+            QPATHTOF(data\audio\emp\TCW_Explode.wss),
+            "\MRC\JLTS\weapons\Core\sounds\emp_exp\exp_emp_1.wss",
+            _positionASL,
+            QGVAR(empTCWSoundEnabled),
+            QGVAR(empSoundVolume),
+            QGVAR(empSoundPitch)
+        ],
+        _x
+    ] call CBA_fnc_targetEvent;
+} forEach _nearbyPlayers;
 
 _nearbyUnits = [_positionAGL, _radiusDroid] call EFUNC(core,getNearbyUnits);
 
