@@ -71,35 +71,17 @@ class CfgWeapons
                 class CompatibleItems
                 {
                     SWLW_attachment_scope_DC17M_sniper = TRUE;
-                    // Short
-                    Aux501_cows_RCO = TRUE;
-                    Aux501_cows_RCO_2 = TRUE;
-                    Aux501_cows_RCO_3 = TRUE;
-                    // Medium
-                    Aux501_cows_MRCO = TRUE;
-                    Aux501_cows_MRCO_2 = TRUE;
-                    Aux501_cows_MRCO_3 = TRUE;
-                    // Long
-                    Aux501_cows_DMS = TRUE;
-                    Aux501_cows_DMS_2 = TRUE;
-                    Aux501_cows_DMS_3 = TRUE;
-                    Aux501_cows_DMS_4 = TRUE;
-                    Aux501_cows_HoloScope = TRUE;
-                    Aux501_cows_HoloScope_2 = TRUE;
-                    Aux501_cows_HoloScope_3 = TRUE;
-                    // Sights
-                    Aux501_cows_Holosight = TRUE;
-                    Aux501_cows_Holosight_2 = TRUE;
-                    Aux501_cows_Holosight_3 = TRUE;
+                    ATTACHMENTS_OPTIC_SHORT;
+                    ATTACHMENTS_OPTIC_MEDIUM;
+                    ATTACHMENTS_OPTIC_LONG;
+                    ATTACHMENTS_OPTIC_SIGHTS;
                 };
             };
             class PointerSlot: PointerSlot_Rail
             {
                 class CompatibleItems
                 {
-                    acc_pointer_ir = TRUE;
-                    ace_acc_pointer_green = TRUE;
-                    jlts_dc17sa_flashlight = TRUE;
+                    ATTACHMENTS_POINTER_BASE;
                 };
             };
         };

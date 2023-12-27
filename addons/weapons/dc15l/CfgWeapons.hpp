@@ -49,11 +49,7 @@ class CfgWeapons
             {
                 class CompatibleItems
                 {
-                    // Long
-                    Aux501_cows_DMS = TRUE;
-                    Aux501_cows_DMS_2 = TRUE;
-                    Aux501_cows_DMS_3 = TRUE;
-                    Aux501_cows_DMS_4 = TRUE;
+                    ATTACHMENTS_OPTIC_LONG;
                     // Sights
                     3as_optic_dc15l = TRUE;
                 };
@@ -62,9 +58,7 @@ class CfgWeapons
             {
                 class CompatibleItems
                 {
-                    acc_pointer_ir = TRUE;
-                    ace_acc_pointer_green = TRUE;
-                    jlts_dc17sa_flashlight = TRUE;
+                    ATTACHMENTS_POINTER_BASE;
                 };
             };
         };

@@ -52,23 +52,15 @@ class CfgWeapons
             {
                 class CompatibleItems
                 {
-                    // Medium
-                    Aux501_cows_MRCO = TRUE;
-                    Aux501_cows_MRCO_2 = TRUE;
-                    Aux501_cows_MRCO_3 = TRUE;
-                    // Sights
-                    Aux501_cows_Holoscope = TRUE;
-                    Aux501_cows_Holoscope_2 = TRUE;
-                    Aux501_cows_Holoscope_3 = TRUE;
+                    ATTACHMENTS_OPTIC_MEDIUM;
+                    ATTACHMENTS_OPTIC_SIGHTS;
                 };
             };
             class PointerSlot: PointerSlot
             {
                 class CompatibleItems
                 {
-                    acc_pointer_ir = TRUE;
-                    ace_acc_pointer_green = TRUE;
-                    jlts_dc17sa_flashlight = TRUE;
+                    ATTACHMENTS_POINTER_BASE;
                 };
             };
         };
