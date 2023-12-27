@@ -14,4 +14,10 @@ class CfgMagazines
         ammo = QCLASS(Bullet_PlasmaRifle_Blue);
         count = 60;
     };
+
+    class Aux12thFleet_Mag_WestarM5: CLASS(Mag_60rnd_WestarM5)
+    {
+        SCOPE_HIDDEN;
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: Westar-M5<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
+    };
 };
