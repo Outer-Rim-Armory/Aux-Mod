@@ -40,7 +40,7 @@ class CfgWeapons
         JLTS_friedItem = QCLASS(X42_Fried);
     };
 
-    class CLASS(X42_Fried): CLASS(X42_Base)
+    class CLASS(X42_Fried): CLASS(X42)
     {
         SCOPE_HIDDEN;
 
