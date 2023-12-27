@@ -267,6 +267,8 @@ class CfgAmmo
         ACE_bulletMass = 7.9704;
         ACE_caliber = 6.706;
         ACE_muzzleVelocities[] = {730,760,788,800,810,830};
+        fireSpreadAngle = 8;
+        triggerTime = 0.0003; // Gives the shotgun pellet spread
     };
     class CLASS(Bullet_PlasmaScatter_Red): CLASS(Bullet_PlasmaScatter_Blue)
     {
@@ -279,6 +281,23 @@ class CfgAmmo
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
         submunitionAmmo = QCLASS(Bullet_PlasmaPistol_Green);
+    };
+
+    class CLASS(Bullet_PlasmaScatterHP_Blue): CLASS(Bullet_PlasmaScatter_Blue)
+    {
+        submunitionAmmo = QCLASS(Bullet_PlasmaCarbine_Blue);
+    };
+    class CLASS(Bullet_PlasmaScatterHP_Red): CLASS(Bullet_PlasmaScatterHP_Blue)
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+        submunitionAmmo = QCLASS(Bullet_PlasmaCarbine_Red);
+    };
+    class CLASS(Bullet_PlasmaScatterHP_Green): CLASS(Bullet_PlasmaScatterHP_Blue)
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+        effectfly = "JLTS_plasma_green";
+        submunitionAmmo = QCLASS(Bullet_PlasmaCarbine_Green);
     };
 
     class CLASS(Bullet_PlasmaStun): CLASS(Bullet_PlasmaPistol_Blue)
