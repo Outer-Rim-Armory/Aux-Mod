@@ -104,8 +104,7 @@ class CfgWeapons
 
                 class CompatibleItems
                 {
-                    Aux501_cows_pistol = TRUE;
-                    Aux501_cows_pistol_2 = TRUE;
+                    ATTACHMENTS_OPTIC_PISTOL;
                 };
             };
             class UnderBarrelSlot;

@@ -59,19 +59,9 @@ class CfgWeapons
             {
                 class CompatibleItems
                 {
-                    // Short
-                    Aux501_cows_RCO = TRUE;
-                    Aux501_cows_RCO_2 = TRUE;
-                    Aux501_cows_RCO_3 = TRUE;
-                    // Medium
-                    Aux501_cows_MRCO = TRUE;
-                    Aux501_cows_MRCO_2 = TRUE;
-                    Aux501_cows_MRCO_3 = TRUE;
-                    // Sights
-                    Aux501_cows_Holosight = TRUE;
-                    Aux501_cows_Holosight_2 = TRUE;
-                    Aux501_cows_Holosight_3 = TRUE;
-                    Aux501_cows_reflex_optic = TRUE;
+                    ATTACHMENTS_OPTIC_SHORT;
+                    ATTACHMENTS_OPTIC_MEDIUM;
+                    ATTACHMENTS_OPTIC_SIGHTS;
                 };
             };
             class PointerSlot: PointerSlot

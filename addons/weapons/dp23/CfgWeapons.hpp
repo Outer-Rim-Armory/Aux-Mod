@@ -44,10 +44,7 @@ class CfgWeapons
             {
                 class CompatibleItems
                 {
-                    Aux501_cows_RCO = TRUE;
-                    Aux501_cows_RCO_2 = TRUE;
-                    Aux501_cows_RCO_3 = TRUE;
-                    Aux501_cows_reflex_optic = TRUE;
+                    ATTACHMENTS_OPTIC_SHORT;
                 };
             };
             class PointerSlot: PointerSlot
