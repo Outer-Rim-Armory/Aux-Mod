@@ -26,7 +26,8 @@ class CfgPatches
         {
             QCLASS(DC15X_Base),
             QCLASS(DC15X),
-            QCLASS(DC15X_Fried)
+            QCLASS(DC15X_Fried),
+            QCLASS(DC15X_Scope)
         };
         VERSION_CONFIG;
     };
