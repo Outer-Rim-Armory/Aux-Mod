@@ -23,6 +23,8 @@ private [];
 if !(_positionAGL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionAGL);};
 if (_radius <= 0) exitWith {};
 
+TRACE_3("fnc_getNearbyUnits", _positionAGL, _radius, _includeCrewed);
+
 _nearbyUnits = [];
 
 if (_includeCrewed) then {

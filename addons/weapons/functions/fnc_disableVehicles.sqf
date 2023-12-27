@@ -30,6 +30,8 @@ _vehicles = _vehicles select {
     _canBeDisabled isEqualTo TRUE;
 };
 
+TRACE_2("fnc_disableVehicles", _vehicles, _time);
+
 if (count _vehicles isEqualTo 0) exitWith {};
 if (_time <= 0) exitWith {};
 

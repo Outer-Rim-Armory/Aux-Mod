@@ -18,7 +18,6 @@ params [
 	["_killer", objNull, [objNull]]
 ];
 private [];
-TRACE_2("fnc_droidDeathEffect", _units, _killer);
 
 _units = _units select {
     private _isDroid = [
@@ -28,6 +27,8 @@ _units = _units select {
     ] call BIS_fnc_returnConfigEntry;
     _isDroid isEqualTo TRUE or (toLowerAnsi typeOf _x find "b1") > 0;
 };
+
+TRACE_2("fnc_droidDeathEffect", _units, _killer);
 
 if (count _units isEqualTo 0) exitWith {};
 
