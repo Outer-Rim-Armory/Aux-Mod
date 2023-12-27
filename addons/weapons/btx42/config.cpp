@@ -23,6 +23,7 @@ class CfgPatches
         {
             QCLASS(X42_Base),
             QCLASS(X42),
+            QCLASS(X42_Fried),
             QCLASS(BTX42),
             QCLASS(BTX45_Heavy)
         };
