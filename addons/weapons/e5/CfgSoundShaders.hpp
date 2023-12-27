@@ -1,14 +1,13 @@
 class CfgSoundShaders
 {
     class CLASS(SoundShader_WeaponShot_Base);
-    class CLASS(SoundShader_WeaponNameShot): CLASS(SoundShader_WeaponShot_Base)
+    class CLASS(SoundShader_E5Shot): CLASS(SoundShader_WeaponShot_Base)
     {
         samples[] =
         {
-            {QPATHTOF(subAddonName\data\audio\Fire1.wss), 1, 1},
-            {QPATHTOF(subAddonName\data\audio\Fire2.wss), 1, 1},
-            {QPATHTOF(subAddonName\data\audio\Fire3.wss), 1, 1},
-            {QPATHTOF(subAddonName\data\audio\Fire4.wss), 1, 1}
+            {"\3AS\3AS_Main\Sounds\E5\E51.ogg", 1},
+            {"\3AS\3AS_Main\Sounds\E5\E52.ogg", 1},
+            {"\3AS\3AS_Main\Sounds\E5\E53.ogg", 1}
         };
     };
 };
