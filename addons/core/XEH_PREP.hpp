@@ -1,1 +1,2 @@
 PREP(getNearbyUnits);
+PREP(playLocalSound);
