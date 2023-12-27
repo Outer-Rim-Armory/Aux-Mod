@@ -19,23 +19,23 @@
 [
     QGVAR(empTCWSoundEnabled),
     "CHECKBOX",
-    ["Clone Wars Sound Enabled", "Uses the The Clone Wars style sound effect for Droid Poppers.<br/>WARNING: Can potentially trigger tinnitus or other hearing problems."],
+    ["Sound - Use Clone Wars Style", "Uses the The Clone Wars style sound effect for Droid Poppers.<br/>WARNING: Can potentially trigger tinnitus or other hearing problems."],
     [QUOTE(MOD_NAME), "EMP"],
     false
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(empTCWSoundVolume),
+    QGVAR(empSoundVolume),
     "SLIDER",
-    ["Clone Wars Sound Volume", "Volume for the The Clone Wars style sound."],
+    ["Sound - Volume", "Volume for the EMP explosion sound."],
     [QUOTE(MOD_NAME), "EMP"],
     [0, 1, 1, 1]
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(empTCWSoundPitch),
+    QGVAR(empSoundPitch),
     "SLIDER",
-    ["Clone Wars Sound Pitch", "Pitch for the The Clone Wars style sound."],
+    ["Sound - Pitch", "Pitch for the EMP explosion sound."],
     [QUOTE(MOD_NAME), "EMP"],
     [0, 1, 1, 1]
 ] call CBA_fnc_addSetting;
