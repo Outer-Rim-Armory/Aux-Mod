@@ -52,6 +52,9 @@ class CfgWeapons
         fireLightIntensity = 0.2;
         recoil = "recoil_smg_03";
 
+        JLTS_hasElectronics = TRUE;
+        JLTS_hasEMPProtection = FALSE;
+
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class CowsSlot: CowsSlot
@@ -109,6 +112,20 @@ class CfgWeapons
 
         displayName = "[KC] Westar-M5";
         baseWeapon = QCLASS(WestarM5);
+        JLTS_friedItem = QCLASS(WestarM5_Fried);
+    };
+
+    class CLASS(WestarM5_Fried): CLASS(WestarM5)
+    {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] Westar-M5 (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = QPATHTOF(westar\data\ui\WestarM5_Fried_ca.paa);
+        baseWeapon = QCLASS(WestarM5_Fried);
+
+        JLTS_isFried = TRUE;
+        magazines[] = {};
     };
 
     class CLASS(WestarM5_UGL): CLASS(WestarM5_Base)
@@ -152,6 +169,25 @@ class CfgWeapons
 
             reloadAction = "GestureReloadMXUGL";
             reloadMagazineSound[] = {"\A3\Sounds_F\arsenal\weapons\Rifles\MX\Mx_UGL_reload", 1, 1, 10};
+        };
+    };
+
+    class CLASS(WestarM5_UGL_Fried): CLASS(WestarM5_UGL)
+    {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] Westar-M5 UGL (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = QPATHTOF(westar\data\ui\WestarM5_Fried_ca.paa);
+        baseWeapon = QCLASS(WestarM5_UGL_Fried);
+
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+
+        class UGL: UGL
+        {
+            displayName = "Grenade Launcher (Fried)";
+            magazineWell[] = {};
         };
     };
 

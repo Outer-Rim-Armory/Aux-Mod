@@ -28,6 +28,8 @@ class CfgPatches
             QCLASS(WestarM5_Base),
             QCLASS(WestarM5),
             QCLASS(WestarM5_UGL),
+            QCLASS(WestarM5_Fried),
+            QCLASS(WestarM5_UGL_Fried),
             QCLASS(Westar_M5),
             QCLASS(Westar_M5_UGL),
             QCLASS(WestarM5_Scope)
