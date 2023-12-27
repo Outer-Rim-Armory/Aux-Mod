@@ -15,13 +15,13 @@ class CfgMagazines
         count = 30;
     };
 
-    class CLASS(Mag_15rnd_DP23): CLASS(Mag_30rnd_DP23)
+    class CLASS(Mag_15rnd_DP23_HP): CLASS(Mag_30rnd_DP23)
     {
         displayName = "[KC] DP-23 HP Energy Cell";
-        displayNameShort = "Medium Energy";
+        displayNameShort = "Standard Energy";
         descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 15<br/>Used In: DP-23";
 
-        // ammo = QCLASS(Bullet_PlasmaScatterHP_Blue);
+        ammo = QCLASS(Bullet_PlasmaScatterHP_Blue);
         count = 15;
     };
 
@@ -30,7 +30,7 @@ class CfgMagazines
         SCOPE_HIDDEN;
         descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 30<br/>Used In: DP-23<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
-    class Aux12thFleet_Mag_DP23_HP: CLASS(Mag_15rnd_DP23)
+    class Aux12thFleet_Mag_DP23_HP: CLASS(Mag_15rnd_DP23_HP)
     {
         SCOPE_HIDDEN;
         descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 15<br/>Used In: DP-23<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
