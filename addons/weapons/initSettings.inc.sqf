@@ -10,7 +10,7 @@
 [
     QGVAR(empDisableDroidkaShields),
     "CHECKBOX",
-    ["Disable Droideka Shields", "Whether emp weapons can disable Droideka shields"],
+    ["Disable Droideka Shields", "Whether emp weapons can disable Droideka shields."],
     [QUOTE(MOD_NAME), "EMP"],
     true,
     TRUE
