@@ -25,6 +25,11 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(WestarM5_Base),
+            QCLASS(WestarM5),
+            QCLASS(WestarM5_UGL),
+            QCLASS(Westar_M5),
+            QCLASS(Westar_M5_UGL)
         };
         VERSION_CONFIG;
     };
