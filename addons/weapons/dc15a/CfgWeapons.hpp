@@ -37,7 +37,7 @@ class CfgWeapons
         baseWeapon = QCLASS(DC15A_Base);
 
         modes[] = {"Single", "FullAuto"};
-        muzzles[] = {"this", "Stun", "EGLM"};
+        muzzles[] = {"this", "Stun"};
         magazines[] = {QCLASS(Mag_60rnd_DC15A), "Aux12thFleet_Mag_DC15A"};
         magazineWell[] = {};
 
@@ -86,24 +86,6 @@ class CfgWeapons
             };
         };
         class Stun: CLASS(Muzzle_Stun) {};
-
-        class EGLM: UGL_F
-        {
-            displayName = "Grenade Launcher";
-            descriptionShort = "UGL";
-
-            cameraDir = "OP_look";
-            discreteDistance[] = {100, 200, 300, 400};
-            discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"};
-            discreteDistanceInitIndex = 0;
-
-            useExternalOptic = FALSE;
-            useModelOptics = FALSE;
-
-            canShootInWater = FALSE;
-            magazines[] = {};
-            magazineWell[] = {QCLASS(MagWell_UGL_Common)};
-        };
     };
 
     class CLASS(DC15A): CLASS(DC15A_Base)
@@ -112,7 +94,6 @@ class CfgWeapons
 
         displayName = "[KC] DC-15A";
         baseWeapon = QCLASS(DC15A);
-        muzzles[] = {"this", "Stun"};
 
         JLTS_friedItem = QCLASS(DC15A_Fried);
     };
@@ -137,7 +118,7 @@ class CfgWeapons
 
         displayName = "[KC] DC-15A UGL";
         baseWeapon = QCLASS(DC15A_UGL);
-        muzzles[] = {"this", "EGLM"};
+        muzzles[] = {"this", "UGL"};
 
         // Model & Textures
         model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl_plastic.p3d";
@@ -156,6 +137,24 @@ class CfgWeapons
 
         JLTS_friedItem = QCLASS(DC15A_UGL_Fried);
         JLTS_repairTime = 35;
+
+        class UGL: UGL_F
+        {
+            displayName = "Grenade Launcher";
+            descriptionShort = "UGL";
+
+            cameraDir = "OP_look";
+            discreteDistance[] = {100, 200, 300, 400};
+            discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"};
+            discreteDistanceInitIndex = 0;
+
+            useExternalOptic = FALSE;
+            useModelOptics = FALSE;
+
+            canShootInWater = FALSE;
+            magazines[] = {};
+            magazineWell[] = {QCLASS(MagWell_UGL_Common)};
+        };
     };
 
     class CLASS(DC15A_UGL_Fried): CLASS(DC15A_UGL)
@@ -170,10 +169,11 @@ class CfgWeapons
         JLTS_isFried = TRUE;
         magazines[] = {};
 
-        class EGLM: EGLM
+        class UGL: UGL
         {
             displayName = "Grenade Launcher (Fried)";
             magazines[] = {};
+            magazineWell[] = {};
         };
     };
 };
