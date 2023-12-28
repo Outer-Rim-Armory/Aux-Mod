@@ -61,18 +61,14 @@ _function = {
 
     if (_bloodLevel < DEFAULT_BLOOD_VOLUME) then {
         _fullHealed = false;
-        _bloodLevel = _bloodLevel + GVAR(bactaBloodRestoreAmount);
-    } else {
-        _bloodLevel = DEFAULT_BLOOD_VOLUME;
+        _bloodLevel = (_bloodLevel + GVAR(bactaBloodRestoreAmount)) min DEFAULT_BLOOD_VOLUME;
     };
 
     _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
 
     if (_painLevel > 0) then {
         _fullHealed = false;
-        _painLevel = _painLevel - GVAR(bactaPainReductionAmount);
-    } else {
-        _painLevel = 0;
+        _painLevel = (_painLevel - GVAR(bactaPainReductionAmount)) max 0;
     };
 
     _unit setVariable ["ace_medical_pain", _painLevel, true];
