@@ -20,6 +20,11 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(E5C_Base),
+            QCLASS(E5C),
+            QCLASS(E5C_Fried),
+            QCLASS(E5C_Stock),
+            QCLASS(E5C_Stock_Fried)
         };
         VERSION_CONFIG;
     };
