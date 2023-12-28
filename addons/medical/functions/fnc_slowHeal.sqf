@@ -40,11 +40,8 @@ _function = {
 
     INFO_4("Slow Healer %1 | (Pre-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
 
-    _fullHealed = true;
-
     if (count _wounds > 0) then {
         private ["_bodyPart", "_bodyPartWounds"];
-        _fullHealed = false;
 
         _bodyPart = selectRandom keys _wounds;
         _bodyPartWounds = _wounds get _bodyPart;
@@ -60,14 +57,12 @@ _function = {
     _unit setVariable ["ace_medical_openWounds", _wounds, true];
 
     if (_bloodLevel < DEFAULT_BLOOD_VOLUME) then {
-        _fullHealed = false;
         _bloodLevel = (_bloodLevel + GVAR(bactaBloodRestoreAmount)) min DEFAULT_BLOOD_VOLUME;
     };
 
     _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
 
     if (_painLevel > 0) then {
-        _fullHealed = false;
         _painLevel = (_painLevel - GVAR(bactaPainReductionAmount)) max 0;
     };
 
@@ -75,7 +70,7 @@ _function = {
 
     INFO_4("Slow Healer %1 | (Post-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
 
-    if (_fullHealed) then {
+    if (count _wounds isEqualTo 0 and _bloodLevel isEqualTo DEFAULT_BLOOD_VOLUME and _painLevel isEqualTo 0) then {
         INFO_2("Slow Healer %1 | (Exit) Treatment complete, full healing $2", _handle, _unit);
         [_unit, _unit] call ace_medical_treatment_fnc_fullHeal;
     };
