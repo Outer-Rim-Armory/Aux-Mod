@@ -57,6 +57,15 @@ _function = {
 
     _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
 
+    _painLevel = _unit getVariable ["ace_medical_pain", 0];
+    if (_painLevel > 0) then {
+        _painLevel = _painLevel - GVAR(bactaPainReductionAmount);
+    } else {
+        _painLevel = 0;
+    };
+
+    _unit setVariable ["ace_medical_pain", _painLevel, true];
+
     INFO_2("Slow Healer %1 | (Post-Bandage) _wounds=%2", _handle, _wounds);
 
     // _unit setVariable ["ace_medical_fractures", [0, 0, 0, 0, 0, 0], true];
