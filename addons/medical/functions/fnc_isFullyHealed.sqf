@@ -17,7 +17,6 @@
 params [
     ["_unit", objNull, [objNull]]
 ];
-private ["_bloodPressure"];
 
 if (
     isNull _unit or {
