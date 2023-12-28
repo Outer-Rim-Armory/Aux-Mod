@@ -75,6 +75,8 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Ox",
             "BNA_KC_Helmet_Phase1_Patriot",
             "BNA_KC_Helmet_Phase1_Ponds",
+            "BNA_KC_Helmet_Phase1_Rat",
+            "BNA_KC_Helmet_Phase1_Rat_Crimson",
             "BNA_KC_Helmet_Phase1_Rev",
             "BNA_KC_Helmet_Phase1_Rodger",
             "BNA_KC_Helmet_Phase1_Sin",

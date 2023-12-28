@@ -118,6 +118,8 @@ class CfgPatches
             "BNA_KC_HelmetHolder_P1_Ox",
             "BNA_KC_HelmetHolder_P1_Patriot",
             "BNA_KC_HelmetHolder_P1_Ponds",
+            "BNA_KC_HelmetHolder_P1_Rat",
+            "BNA_KC_HelmetHolder_P1_Rat_Crimson",
             "BNA_KC_HelmetHolder_P1_Rev",
             "BNA_KC_HelmetHolder_P1_Rodger",
             "BNA_KC_HelmetHolder_P1_Sin",

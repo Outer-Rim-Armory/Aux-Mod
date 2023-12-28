@@ -415,6 +415,42 @@ class BNA_KC_Helmet_Phase1_Ponds: BNA_KC_Helmet_Phase1_Axel
     };
 };
 
+class BNA_KC_Helmet_Phase1_Rat: BNA_KC_Helmet_Phase1_Axel
+{
+    BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Rat";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase1_Rat_Crimson";
+
+    displayName = "[KC] INF P1 Helm ('Rat')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Rat.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1_Rat_Crimson: BNA_KC_Helmet_Phase1_Rat
+{
+    // Scopes
+    scope = 1;
+    scopeArsenal = 1;
+
+    displayName = "[KC] INF P1 Helm ('Rat') [Crimson Visor]";
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Rat.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Visors\Visor_Crimson.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
 class BNA_KC_Helmet_Phase1_Rev: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Rev')";

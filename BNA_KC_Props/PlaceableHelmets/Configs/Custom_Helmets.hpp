@@ -28,6 +28,8 @@ HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Lou_Plasma, INF P1 Helm ('Lou') [Plasma Vis
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Ox, INF P1 Helm ('Ox'), BNA_KC_Helmet_Phase1_Ox, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Patriot, INF P1 Helm ('Patriot'), BNA_KC_Helmet_Phase1_Patriot, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Ponds, INF P1 Helm ('Ponds'), BNA_KC_Helmet_Phase1_Ponds, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Rat, INF P1 Helm ('Rat'), BNA_KC_Helmet_Phase1_Rat, "Customs")
+HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Rat_Crimson, INF P1 Helm ('Rat') [Crimson Visor], BNA_KC_Helmet_Phase1_Rat_Crimson, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Rev, INF P1 Helm ('Rev'), BNA_KC_Helmet_Phase1_Rev, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Rodger, INF P1 Helm ('Rodger'), BNA_KC_Helmet_Phase1_Rodger, "Customs")
 HELMET_HOLDER(BNA_KC_HelmetHolder_P1_Sin, INF P1 Helm ('Sin'), BNA_KC_Helmet_Phase1_Sin, "Customs")
