@@ -25,10 +25,9 @@ params
     ["_delay", 0, [0]],
     ["_parameters", []]
 ];
-private ["_pfhHandler"];
 TRACE_5("fnc_tempPFH", _function, _condition, _exitCode, _delay, _parameters);
 
-_pfhHandler = [{
+[{
         params ["_args", "_handle"];
         _args params ["_function", "_condition", "_exitCode", "_parameters"];
         _parameters = [_handle] + _parameters;
@@ -43,5 +42,3 @@ _pfhHandler = [{
     _delay,
     [_function, _condition, _exitCode, _parameters]
 ] call CBA_fnc_addPerFrameHandler;
-
-_pfhHandler;
