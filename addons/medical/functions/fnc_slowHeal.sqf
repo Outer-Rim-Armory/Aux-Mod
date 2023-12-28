@@ -5,7 +5,7 @@
  *
  * Arguments:
  * 0: The unit to heal <OBJECT>
- * 1: Delay between healing actions <NUMBER>
+ * 1: The rate of healing actions <NUMBER>
  *
  * Return Value:
  * CBA Per Frame Handler ID or -1 if invalid parameters <NUMBER>
@@ -16,10 +16,10 @@
 
 params [
     ["_unit", objNull, [objNull]],
-    ["_delay", 0, [0]]
+    ["_rate", 0, [0]]
 ];
 private ["_function", "_condition", "_exitCode", "_healHandler", "_fullHealed"];
-TRACE_2("fnc_slowHeal", _unit, _delay);
+TRACE_2("fnc_slowHeal", _unit, _rate);
 
 if (
     isNull _unit or {
@@ -94,7 +94,7 @@ _healHandler = [
     _function,
     _condition,
     _exitCode,
-    _delay,
+    _rate,
     [_unit]
 ] call EFUNC(core,tempPFH);
 
