@@ -1,17 +1,19 @@
 class CfgMagazines
 {
-    class CLASS(Mag_Base);
-    class CLASS(Mag_1rnd_WeaponName): CLASS(Mag_Base)
+    class CLASS(Mag_60rnd_DC15A);
+    class CLASS(Mag_60rnd_LW38): CLASS(Mag_60rnd_DC15A)
     {
-        SCOPE_PUBLIC;
-        displayName = "[KC] WeaponName Energy Cell";
-        displayNameShort = "Standard Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 1<br/>Used In: WeaponName";
+        displayName = "[KC] LW-38 Energy Cell";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: LW-38";
 
-        // model = "";
-        // picture = "";
+        model = "\LF_Weapon_Unit\lw38m\mag.p3d";
+        picture = "\LF_Weapon_Unit\lw38m\ui\mag.paa";
+    };
 
-        ammo = QCLASS(Bullet_PlasmaRifle_Blue);
-        count = 1;
+    class CLASS(Mag_60rnd_LW38_Green): CLASS(Mag_60rnd_LW38)
+    {
+        SCOPE_HIDDEN;
+        displayName = "[KC] LW-38 Energy Cell (Green)";
+        ammo = QCLASS(Bullet_PlasmaRifle_Green);
     };
 };
