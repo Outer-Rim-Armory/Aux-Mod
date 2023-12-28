@@ -13,6 +13,7 @@ class CfgMagazines
 
         ammo = QCLASS(Bullet_PlasmaRifle_Blue);
         count = 60;
+        initSpeed = 472;
     };
 
     class Aux12thFleet_Mag_WestarM5: CLASS(Mag_60rnd_WestarM5)

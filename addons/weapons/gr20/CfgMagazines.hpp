@@ -14,6 +14,7 @@ class CfgMagazines
         ammo = QCLASS(Bullet_BactaSmoke); // Most likely a temporary name
         count = 1;
         mass = 4;
+        initSpeed = 80;
     };
 
     class CLASS(Mag_GR20): CLASS(Mag_1rnd_GR20)

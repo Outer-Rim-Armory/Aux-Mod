@@ -14,6 +14,8 @@ class CfgMagazines
         ammo = QCLASS(Bullet_PlasmaPistol_Blue);
         count = 7;
         mass = 8;
+        initspeed = 350;
+        maxLeadSpeed = 27.7778;
     };
 
     class CLASS(Mag_15rnd_DC15SA): CLASS(Mag_7rnd_DC15SA)

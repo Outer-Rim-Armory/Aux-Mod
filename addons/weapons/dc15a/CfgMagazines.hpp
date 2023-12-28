@@ -12,7 +12,7 @@ class CfgMagazines
         picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
 
         ammo = QCLASS(Bullet_PlasmaRifle_Blue);
-        count = 80;
+        count = 60;
         mass = 10;
     };
 

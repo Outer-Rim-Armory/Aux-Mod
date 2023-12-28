@@ -17,6 +17,7 @@ class CfgMagazines
         tracersEvery = 1;
         count = 1;
         mass = 0;
+        initSpeed = 774;
 
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = TRUE;
