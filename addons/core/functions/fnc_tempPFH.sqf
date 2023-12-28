@@ -26,6 +26,7 @@ params
     ["_parameters", []]
 ];
 private ["_pfhHandler"];
+TRACE_5("fnc_tempPFH", _function, _condition, _exitCode, _delay, _parameters);
 
 _pfhHandler = [{
         params ["_args", "_handle"];
