@@ -8,7 +8,7 @@
  * 1: Delay between healing actions <NUMBER>
  *
  * Return Value:
- * CBA Per Frame Handler ID, -1 if error, or nothing if unit is already healed <NUMBER>
+ * CBA Per Frame Handler ID or -1 if invalid parameters <NUMBER>
  *
  * Examples:
  * [player, 10] call BNA_KC_medical_fnc_slowHeal;
@@ -24,7 +24,7 @@ TRACE_2("fnc_slowHeal", _unit, _delay);
 if (
     isNull _unit or {
         !(_unit isKindOf "CAManBase") or
-        _unit getVariable ["BNA_KC_medical_slowHealHandler", -1] isEqualTo -1
+        !(_unit getVariable [QGVAR(slowHealHandler), -1] isEqualTo -1)
     }
 ) exitWith {-1};
 
@@ -80,6 +80,7 @@ _function = {
     INFO_4("Slow Healer %1 | (Post-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
 
     if (_fullHealed) then {
+        INFO_2("Slow Healer %1 | (Exit) Treatment complete, full healing $2", _handle, _unit);
         [_unit, _unit] call ace_medical_treatment_fnc_fullHeal;
     };
 
@@ -94,7 +95,8 @@ _condition = {
 };
 
 _exitCode = {
-    // params ["_handle", "_unit"];
+    params ["_handle", "_unit"];
+    INFO_2("Slow Healer %1 | (Exit) Removing handler from %2", _handle, _unit);
 };
 
 _healHandler = [
