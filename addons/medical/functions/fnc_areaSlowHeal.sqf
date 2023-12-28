@@ -45,11 +45,11 @@ _function = {
     _currentPatients = _object getVariable [QGVAR(currentPatients), []];
 
     _units = [_positionAGL, _radius] call EFUNC(core,getNearbyUnits);
-    _units select {
+    _units = _units select {
         !(_x call FUNC(isFullyHealed) or _x in _currentPatients);
     };
 
-    INFO_2("Area Healer %1 | (Start) _units=%1", _handle, _units);
+    INFO_2("Area Healer %1 | (Start) _units=%2", _handle, _units);
 };
 
 _condition = {
