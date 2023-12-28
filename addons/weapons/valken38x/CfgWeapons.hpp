@@ -23,7 +23,7 @@ class CfgWeapons
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
 
-        displayName = "[KC] Valken-38X (Base)";
+        displayName = "[KC] Valken-38x (Base)";
         baseWeapon = QCLASS(Valken38x_Base);
         picture = QPATHTOF(valken38x\data\ui\Valken38x_ca.paa);
 
@@ -87,7 +87,7 @@ class CfgWeapons
     {
         SCOPE_PUBLIC;
 
-        displayName = "[KC] Valken-38X";
+        displayName = "[KC] Valken-38x";
         baseWeapon = QCLASS(Valken38x);
         JLTS_friedItem = QCLASS(Valken38x_Fried);
     };
@@ -95,7 +95,7 @@ class CfgWeapons
     {
         SCOPE_HIDDEN;
 
-        displayName = "[KC] Valken-38X (Fried)";
+        displayName = "[KC] Valken-38x (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = QPATHTOF(valken38x\data\ui\Valken38x_Fried_ca.paa);
         baseWeapon = QCLASS(Valken38x_Fried);
