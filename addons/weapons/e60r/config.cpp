@@ -26,6 +26,12 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(E60R_AT_Base),
+            QCLASS(E60R_AT),
+            QCLASS(E60R_AT_Fried),
+            QCLASS(E60R_AA_Base),
+            QCLASS(E60R_AA),
+            QCLASS(E60R_AA_Fried)
         };
         VERSION_CONFIG;
     };
