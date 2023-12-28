@@ -31,40 +31,36 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            // ITEM_11("Aux12thFleet_Mag_DC15S"),
-            // Stun rounds would go here
-            // ITEM_2("Aux12thFleet_Mag_DC17"),
-            // Stun rounds would go here
+            ITEM_11(QCLASS(Mag_60rnd_DC15S)),
+            ITEM_2(QCLASS(Mag_20rnd_DC17)),
             // Grenades
-            // ITEM_2("ls_mag_classC_thermalDet"),
-            // ITEM_3("ShieldGrenade_Mag"),
+            ITEM_2("ls_mag_classC_thermalDet"),
+            ITEM_3("ShieldGrenade_Mag"),
             // Smokes
-            // ITEM_3("3AS_SmokeWhite"),
-            // ITEM_3("3AS_SmokeBlue"),
-            // ITEM_3("3AS_SmokeGreen")
+            ITEM_3("3AS_SmokeWhite"),
+            ITEM_3("3AS_SmokeBlue"),
+            ITEM_3("3AS_SmokeGreen")
         };
         respawnMagazines[] =
         {
             // Ammo
-            // ITEM_11("Aux12thFleet_Mag_DC15S"),
-            // Stun rounds would go here
-            // ITEM_2("Aux12thFleet_Mag_DC17"),
-            // Stun rounds would go here
+            ITEM_11(QCLASS(Mag_60rnd_DC15S)),
+            ITEM_2(QCLASS(Mag_20rnd_DC17)),
             // Grenades
-            // ITEM_2("ls_mag_classC_thermalDet"),
-            // ITEM_3("ShieldGrenade_Mag"),
+            ITEM_2("ls_mag_classC_thermalDet"),
+            ITEM_3("ShieldGrenade_Mag"),
             // Smokes
-            // ITEM_3("3AS_SmokeWhite"),
-            // ITEM_3("3AS_SmokeBlue"),
-            // ITEM_3("3AS_SmokeGreen")
+            ITEM_3("3AS_SmokeWhite"),
+            ITEM_3("3AS_SmokeBlue"),
+            ITEM_3("3AS_SmokeGreen")
         };
         items[] =
         {
             // Medical
-            // ITEM_10("ACE_elasticBandage"),
-            // ITEM_4("ACE_tourniquet"),
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
             // Other
-            // ITEM_3("ACE_CableTie"),
+            ITEM_3("ACE_CableTie"),
             "ACE_EntrenchingTool",
             "ItemcTabHCam",
             "ACE_IR_Strobe_Item",
@@ -74,10 +70,10 @@ class CfgVehicles
         respawnItems[] =
         {
             // Medical
-            // ITEM_10("ACE_elasticBandage"),
-            // ITEM_4("ACE_tourniquet"),
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
             // Other
-            // ITEM_3("ACE_CableTie"),
+            ITEM_3("ACE_CableTie"),
             "ACE_EntrenchingTool",
             "ItemcTabHCam",
             "ACE_IR_Strobe_Item",
