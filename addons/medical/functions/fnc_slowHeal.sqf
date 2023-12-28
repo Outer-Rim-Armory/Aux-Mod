@@ -18,7 +18,7 @@ params [
     ["_unit", objNull, [objNull]],
     ["_delay", 0, [0]]
 ];
-private ["_function", "_condition", "_exitCode", "_healHandler"];
+private ["_function", "_condition", "_exitCode", "_healHandler", "_fullHealed"];
 TRACE_2("fnc_slowHeal", _unit, _delay);
 
 if (isNull _unit) exitWith {-1;};
@@ -37,8 +37,12 @@ _function = {
 
     INFO_4("Slow Healer %1 | (Pre-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
 
+    _fullHealed = true;
+
     if (count _wounds > 0) then {
         private ["_bodyPart", "_bodyPartWounds"];
+        _fullHealed = false;
+
         _bodyPart = selectRandom keys _wounds;
         _bodyPartWounds = _wounds get _bodyPart;
         _bodyPartWounds deleteAt (random count _bodyPartWounds);
@@ -53,6 +57,7 @@ _function = {
     _unit setVariable ["ace_medical_openWounds", _wounds, true];
 
     if (_bloodLevel < 6) then {
+        _fullHealed = false;
         _bloodLevel = _bloodLevel + GVAR(bactaBloodRestoreAmount);
     } else {
         _bloodLevel = 6;
@@ -61,6 +66,7 @@ _function = {
     _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
 
     if (_painLevel > 0) then {
+        _fullHealed = false;
         _painLevel = _painLevel - GVAR(bactaPainReductionAmount);
     } else {
         _painLevel = 0;
@@ -70,10 +76,9 @@ _function = {
 
     INFO_4("Slow Healer %1 | (Post-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
 
-    // _unit setVariable ["ace_medical_fractures", [0, 0, 0, 0, 0, 0], true];
-    // if (_unit getVariable ["ace_isUnconscious", false]) then {
-    //     [_unit, false, 0, true] call ace_medical_fnc_setUnconscious;
-    // };
+    if (_fullHealed) then {
+        [_unit, _unit] call ace_medical_treatment_fnc_fullHeal;
+    };
 
     // Update aim effect and blood loss
     [_unit] call ace_medical_engine_fnc_updateDamageEffects;
