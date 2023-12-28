@@ -22,7 +22,7 @@ class CfgMagazines
 
         picture = "\LF_Weapon_Unit\DC17SA\ui\dc17ammo_co.paa";
 
-        // ammo = QCLASS(Bullet_PlasmaSniperAP_Yellow);
+        ammo = QCLASS(Bullet_PlasmaSniperAP_Yellow);
         count = 10;
     };
 };

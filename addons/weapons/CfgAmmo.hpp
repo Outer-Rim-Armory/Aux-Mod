@@ -153,6 +153,20 @@ class CfgAmmo
         effectfly = "JLTS_plasma_green";
     };
 
+    class CLASS(Bullet_PlasmaSniperAP_Blue): CLASS(Bullet_PlasmaSniper_Blue)
+    {
+        hit = 45;
+        caliber = 15;
+        ACE_caliber = 15;
+        typicalSpeed = 700;
+        ACE_bulletMass = 30;
+    };
+    class CLASS(Bullet_PlasmaSniperAP_Yellow): CLASS(Bullet_PlasmaSniperAP_Blue)
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
+        effectfly = "JLTS_plasma_yellow";
+    };
+
     class CLASS(Bullet_PlasmaAutoRifle_Blue): CLASS(Bullet_PlasmaBase)
     {
         SCOPE_PUBLIC;
