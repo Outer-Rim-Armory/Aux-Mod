@@ -446,6 +446,49 @@ class CfgAmmo
         warheadName = "TandemHEAT";
     };
 
+    class MissileBase;
+    class CLASS(Missile_Base): MissileBase
+    {
+        SCOPE_PUBLIC;
+
+        hit = 80;
+        indirectHit = 60;
+        indirectHitRange = 6;
+        cost = 1000;
+        maxSpeed = 850;
+        ace_frag_skip = 1;
+
+        proximityExplosionDistance = 10;
+        missileKeepLockedCone = 75;
+        missileLockCone = 4;
+        missileLockMaxDistance = 3500;
+        missileLockMaxSpeed = 250;
+        missileLockMinDistance = 100;
+
+        fuseDistance = 50;
+        initTime = 0.25;
+        maneuvrability = 15;
+        airFriction = 0.145;
+        sideAirFriction = 0.1;
+        airLock = 2;
+        irLock = 1;
+
+        thrust = 380;
+        thrustTime = 2.25;
+        timeToLive = 15;
+        trackLead = 0.95;
+
+        warheadName = "HE";
+        simulationStep = 0.002;
+
+        aiAmmoUsageFlags = AMMO_USAGE_AIRCRAFT;
+
+        model = "\A3\Weapons_F_beta\Launchers\titan\titan_missile_atl_fly.p3d";
+        explosionEffects = "AA_Explode";
+        craterEffects = "AA_Smoke";
+        soundSetExplosion[] = {"RocketsHeavy_Exp_SoundSet", "RocketsHeavy_Tail_SoundSet", "Explosion_Debris_SoundSet"};
+    };
+
     class GrenadeHand;
     class CLASS(Grenade_Base_Ammo): GrenadeHand
     {
