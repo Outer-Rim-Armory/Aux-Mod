@@ -25,7 +25,7 @@ if (isNull _unit) exitWith {-1};
 
 _function = {
     params ["_handle", "_unit"];
-    private ["_wounds"];
+    private ["_wounds", "_bloodLevel"];
 
     if (isGamePaused) then {continue};
 
@@ -47,6 +47,15 @@ _function = {
 
         _unit setVariable ["ace_medical_openWounds", _wounds, true];
     };
+
+    _bloodLevel = _unit getVariable ["ace_medical_bloodVolume", 6];
+    if (_bloodLevel < 6) then {
+        _bloodLevel = _bloodLevel + GVAR(bactaBloodRestoreAmount);
+    } else {
+        _bloodLevel = 6;
+    };
+
+    _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
 
     INFO_2("Slow Healer %1 | (Post-Bandage) _wounds=%2", _handle, _wounds);
 
