@@ -25,6 +25,9 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(Valken38x_Base),
+            QCLASS(Valken38x),
+            QCLASS(Valken38x_Fried)
         };
         VERSION_CONFIG;
     };
