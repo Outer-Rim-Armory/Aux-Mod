@@ -88,6 +88,7 @@ _condition = {
 _exitCode = {
     params ["_handle", "_unit"];
     INFO_2("Slow Healer %1 | (Exit) Removing handler from %2", _handle, _unit);
+    _unit setVariable [QGVAR(slowHealHandler), nil];
 };
 
 _healHandler = [
