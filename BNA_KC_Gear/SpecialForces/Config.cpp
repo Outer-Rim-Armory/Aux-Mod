@@ -293,6 +293,16 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Vest_ARC_Imperial: BNA_KC_Vest_ARC
+    {
+        displayName = "[KC] SF ARC Vest (Imperial)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\Vest_ARC_Imperial_Chest.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\Vest_ARC_Imperial_Officer.paa"
+        };
+    };
+
     class BNA_KC_Vest_ARC_v2: BNA_KC_Vest_Basic
     {
         displayName = "[KC] SF ARC Vest (v2)";
