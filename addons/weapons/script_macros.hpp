@@ -489,7 +489,7 @@ soundRubber6[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\rubber_06",0.891251,1,75}
 soundRubber7[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\tyre_07",0.891251,1,50}; \
 soundRubber8[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\tyre_08",0.891251,1,50}; \
 soundSetBulletFly[] = {"JLTS_plasma_bullet_flyby_soundSet"}; \
-soundSetSonicCrack[] = {}; \
+soundSetSonicCrack[] = {"JLTS_plasma_bullet_flyby_soundSet"}; \
 soundTrigger[] = {}; \
 soundTyre1[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\tyre_01",1.77828,1,75}; \
 soundTyre2[] = {"A3\Sounds_F\arsenal\sfx\bullet_hits\tyre_02",1.77828,1,75}; \
@@ -728,6 +728,8 @@ soundWood81[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Ricochet_Gener
 soundWood82[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Ricochet_Generic_13",2.81838,1,75}; \
 soundWood83[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Ricochet_Generic_14",2.81838,1,75}; \
 soundWood9[] = {"A3\Sounds_F_Enoch\Assets\Arsenal\Bullet_Impacts\Impact_Wood_01",0.501187,1,75}; \
+superSonicCrackFar[] = {}; \
+superSonicCrackNear[] = {}; \
 class SuperSonicCrack {}
 
 #define PLASMA_EFFECTS craterEffects = ""; \
