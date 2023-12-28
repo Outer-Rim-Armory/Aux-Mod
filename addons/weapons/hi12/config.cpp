@@ -17,7 +17,6 @@ class CfgPatches
         {
             QUOTE(ADDON),
             "LF_Weapon_Unit_hi12",
-            "Aux501_Patch_Accessories",
             "JLTS_weapons_DC17SA",
             "ace_laserpointer"
         };
