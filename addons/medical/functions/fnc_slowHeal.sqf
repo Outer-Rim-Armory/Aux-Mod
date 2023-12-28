@@ -30,8 +30,10 @@ _function = {
     if (isGamePaused) then {continue};
 
     _wounds = _unit getVariable ["ace_medical_openWounds", createHashmap];
+    _bloodLevel = _unit getVariable ["ace_medical_bloodVolume", 6];
+    _painLevel = _unit getVariable ["ace_medical_pain", 0];
 
-    INFO_2("Slow Healer %1 | (Pre-Bandage) _wounds=%2", _handle, _wounds);
+    INFO_4("Slow Healer %1 | (Pre-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
 
     if (count _wounds > 0) then {
         private ["_bodyPart", "_bodyPartWounds"];
@@ -44,11 +46,10 @@ _function = {
         } else {
             _wounds set [_bodyPart, _bodyPartWounds];
         };
-
-        _unit setVariable ["ace_medical_openWounds", _wounds, true];
     };
 
-    _bloodLevel = _unit getVariable ["ace_medical_bloodVolume", 6];
+    _unit setVariable ["ace_medical_openWounds", _wounds, true];
+
     if (_bloodLevel < 6) then {
         _bloodLevel = _bloodLevel + GVAR(bactaBloodRestoreAmount);
     } else {
@@ -57,7 +58,6 @@ _function = {
 
     _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
 
-    _painLevel = _unit getVariable ["ace_medical_pain", 0];
     if (_painLevel > 0) then {
         _painLevel = _painLevel - GVAR(bactaPainReductionAmount);
     } else {
@@ -66,7 +66,7 @@ _function = {
 
     _unit setVariable ["ace_medical_pain", _painLevel, true];
 
-    INFO_2("Slow Healer %1 | (Post-Bandage) _wounds=%2", _handle, _wounds);
+    INFO_4("Slow Healer %1 | (Post-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
 
     // _unit setVariable ["ace_medical_fractures", [0, 0, 0, 0, 0, 0], true];
     // if (_unit getVariable ["ace_isUnconscious", false]) then {
