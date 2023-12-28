@@ -156,8 +156,6 @@ class CfgWeapons
 
         JLTS_friedItem = QCLASS(DC15A_UGL_Fried);
         JLTS_repairTime = 35;
-
-        class Stun: CLASS(Muzzle_Stun) {};
     };
 
     class CLASS(DC15A_UGL_Fried): CLASS(DC15A_UGL)
@@ -177,7 +175,5 @@ class CfgWeapons
             displayName = "Grenade Launcher (Fried)";
             magazines[] = {};
         };
-
-        class Stun: CLASS(Muzzle_Stun_Fried) {};
     };
 };
