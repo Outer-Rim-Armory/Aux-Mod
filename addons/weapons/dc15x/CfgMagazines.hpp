@@ -13,6 +13,7 @@ class CfgMagazines
 
         ammo = QCLASS(Bullet_PlasmaSniper_Blue);
         count = 15;
+        mass = 10;
     };
 
     class Aux12thFleet_Mag_DC15X: CLASS(Mag_15rnd_DC15X)

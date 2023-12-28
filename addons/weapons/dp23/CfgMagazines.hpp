@@ -13,6 +13,7 @@ class CfgMagazines
 
         ammo = QCLASS(Bullet_PlasmaScatter_Blue);
         count = 30;
+        mass = 10;
     };
 
     class CLASS(Mag_15rnd_DP23_HP): CLASS(Mag_30rnd_DP23)
