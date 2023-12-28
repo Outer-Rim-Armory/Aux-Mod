@@ -1,17 +1,28 @@
 class CfgMagazines
 {
-    class CLASS(Mag_Base);
-    class CLASS(Mag_1rnd_WeaponName): CLASS(Mag_Base)
+    class CLASS(Mag_15rnd_DC15X);
+    class CLASS(Mag_25rnd_Valken38x): CLASS(Mag_15rnd_DC15X)
     {
         SCOPE_PUBLIC;
-        displayName = "[KC] WeaponName Energy Cell";
-        displayNameShort = "Standard Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 1<br/>Used In: WeaponName";
+        displayName = "[KC] Valken-38x Energy Cell";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 25<br/>Used In: Valken-38x";
 
-        // model = "";
-        // picture = "";
+        model = "\LF_Weapon_Unit\valken\valken_mag.p3d";
+        modelSpecial = "\LF_Weapon_Unit\valken\valken_mag.p3d";
+        modelSpecialIsProxy = TRUE;
 
-        ammo = QCLASS(Bullet_PlasmaRifle_Blue);
-        count = 1;
+        count = 25;
+        initSpeed = 910;
+    };
+
+    class CLASS(Mag_10rnd_Valken38x_AP): CLASS(Mag_25rnd_Valken38x)
+    {
+        displayName = "[KC] Valken-38x AP Energy Cell";
+        descriptionShort = "Armor Piercing Energy Cell Pack<br/>Rounds: 10<br/>Used In: Valken-38x";
+
+        picture = "\LF_Weapon_Unit\DC17SA\ui\dc17ammo_co.paa";
+
+        // ammo = QCLASS(Bullet_PlasmaSniperAP_Yellow);
+        count = 10;
     };
 };
