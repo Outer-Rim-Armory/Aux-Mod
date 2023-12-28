@@ -23,6 +23,12 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(LW38_Base),
+            QCLASS(LW38),
+            QCLASS(LW38_Fried),
+            QCLASS(LW38_Green),
+            QCLASS(LW38_Green_Fried),
+            QCLASS(LW38_Green_Scoped)
         };
         VERSION_CONFIG;
     };
