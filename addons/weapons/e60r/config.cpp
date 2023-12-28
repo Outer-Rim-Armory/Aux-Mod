@@ -4,6 +4,9 @@
 #include "CfgAmmo.hpp"
 #include "CfgSoundShaders.hpp"
 #include "CfgSoundSets.hpp"
+#include "CfgEffects.hpp"
+#include "CfgCloudlets.hpp"
+#include "CfgLights.hpp"
 
 
 class CfgPatches
