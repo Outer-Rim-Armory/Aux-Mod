@@ -428,6 +428,29 @@ class CfgVehicles
         backpack = "BNA_KC_Backpack_ARC";
     };
 
+    class BNA_KC_Unit_ARC_Imperial: BNA_KC_Unit_ARC
+    {
+        displayName = "ARC Trooper (Imperial)";
+        // editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARC_Night.jpg";
+
+        uniformClass = "BNA_KC_Uniform_ARC_Imperial";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Imperial_Upper.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Imperial_Lower.paa",
+            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        };
+
+        linkedItems[] =
+        {
+            "BNA_KC_Helmet_ARC_Imperial", "BNA_KC_Vest_Arc_Imperial", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        };
+        respawnLinkedItems[] =
+        {
+            "BNA_KC_Helmet_ARC_Imperial", "BNA_KC_Vest_Arc_Imperial", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        };
+    };
+
     class BNA_KC_Unit_ARC_Night: BNA_KC_Unit_ARC
     {
         displayName = "ARC Trooper (Night Camo)";

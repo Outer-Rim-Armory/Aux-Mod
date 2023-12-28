@@ -29,6 +29,7 @@ class CfgPatches
             // Units
             "BNA_KC_Unit_ARC",
             "BNA_KC_Unit_ARC_Night",
+            "BNA_KC_Unit_ARC_Imperial",
             "BNA_KC_Unit_ARF",
             "BNA_KC_Unit_BARC",
 
