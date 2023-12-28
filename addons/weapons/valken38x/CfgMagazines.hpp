@@ -25,4 +25,16 @@ class CfgMagazines
         ammo = QCLASS(Bullet_PlasmaSniperAP_Yellow);
         count = 10;
     };
+
+    class CLASS(Mag_Valken38X): CLASS(Mag_25rnd_Valken38x)
+    {
+        SCOPE_HIDDEN;
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 25<br/>Used In: Valken-38x<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
+    };
+
+    class CLASS(Mag_Valken38X_AP): CLASS(Mag_10rnd_Valken38x_AP)
+    {
+        SCOPE_HIDDEN;
+        descriptionShort = "Armor Piercing Energy Cell Pack<br/>Rounds: 10<br/>Used In: Valken-38x<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
+    };
 };
