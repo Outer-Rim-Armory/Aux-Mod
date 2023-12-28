@@ -12,10 +12,15 @@ class CfgMagazines
         picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_tbg32v_rocket_ca.paa";
 
         ammo = QCLASS(Rocket_E60R_HE);
+        type = TYPE_MAGAZINE_MISSILE;
         count = 1;
+        initSpeed = 140;
+        maxLeadSpeed = 23;
+        value = 5;
 
         allowedSlots[] = {TYPE_VEST, TYPE_BACKPACK};
         mass = 40;
+        nameSound = "handgrenade";
     };
 
     class CLASS(Mag_1rnd_E60R_AT): CLASS(Mag_1rnd_E60R_HE)
@@ -42,5 +47,7 @@ class CfgMagazines
 
         ammo = QCLASS(Missile_E60R_AA);
         mass = 60;
+        initSpeed = 18;
+        maxLeadSpeed = 277.778;
     };
 };

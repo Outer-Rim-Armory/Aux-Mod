@@ -1,3 +1,5 @@
+class SensorTemplateIR;
+
 class CfgAmmo
 {
     class BulletBase;
@@ -446,7 +448,11 @@ class CfgAmmo
         warheadName = "TandemHEAT";
     };
 
-    class MissileBase;
+    class MissileCore;
+    class MissileBase: MissileCore
+    {
+        class Components;
+    };
     class CLASS(Missile_Base): MissileBase
     {
         SCOPE_PUBLIC;
@@ -487,6 +493,68 @@ class CfgAmmo
         explosionEffects = "AA_Explode";
         craterEffects = "AA_Smoke";
         soundSetExplosion[] = {"RocketsHeavy_Exp_SoundSet", "RocketsHeavy_Tail_SoundSet", "Explosion_Debris_SoundSet"};
+
+        class CamShakeFire
+        {
+            distance = 61.9677;
+            duration = 1.6;
+            frequency = 20;
+            power = 2.78316;
+        };
+        class CamShakePlayerFire
+        {
+            distance = 1;
+            duration = 0.1;
+            frequency = 20;
+            power = 3;
+        };
+        class CamShakeHit
+        {
+            distance = 1;
+            duration = 0.6;
+            frequency = 20;
+            power = 110;
+        };
+        class CamShakeExplode
+        {
+            distance = 147.905;
+            duration = 2;
+            frequency = 20;
+            power = 22;
+        };
+
+        class Components: Components
+        {
+            class SensorsManagerComponent
+            {
+                class Components
+                {
+                    class IRSensorComponent: SensorTemplateIR
+                    {
+                        angleRangeHorizontal = 7;
+                        angleRangeVertical = 4.5;
+                        groundNoiseDistanceCoef = 0.2;
+                        maxGroundNoiseDistance = 50;
+                        maxTrackableSpeed = 250;
+
+                        class GroundTarget
+                        {
+                            maxRange = 2500;
+                            minRange = 500;
+                            objectDistanceLimitCoef = 1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        class AirTarget
+                        {
+                            maxRange = 3500;
+                            minRange = 500;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                    };
+                };
+            };
+        };
     };
 
     class GrenadeHand;
