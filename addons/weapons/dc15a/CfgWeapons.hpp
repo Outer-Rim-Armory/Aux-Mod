@@ -140,7 +140,7 @@ class CfgWeapons
         muzzles[] = {"this", "EGLM"};
 
         // Model & Textures
-        model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl.p3d";
+        model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl_plastic.p3d";
         hiddenSelections[] = {"camo1", "camo2", "illum"};
         hiddenSelectionsMaterials[] = {"", "", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
         hiddenSelectionsTextures[] =
