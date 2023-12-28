@@ -40,7 +40,7 @@ class CfgMagazines
         model = "\A3\Weapons_F_beta\Launchers\titan\titan_missile_atl";
         picture = "\A3\Weapons_F_beta\Launchers\titan\Data\UI\gear_titan_missile_atl_CA.paa";
 
-        ammo = QCLASS(Rocket_E60R_AA);
+        ammo = QCLASS(Missile_E60R_AA);
         mass = 60;
     };
 };

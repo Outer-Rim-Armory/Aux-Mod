@@ -59,4 +59,14 @@ class CfgAmmo
         thrustTime = 1.5;
         typicalSpeed = 1000;
     };
+
+    class CLASS(Missile_Base);
+    class CLASS(Missile_E60R_AA): CLASS(Missile_Base)
+    {
+        SCOPE_PUBLIC;
+
+        cmImmunity = 0.5;
+        // effectsMissile = "Aux12thFleet_Particle_E60_Fly";
+        soundFly[] = {"\swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
+    };
 };
