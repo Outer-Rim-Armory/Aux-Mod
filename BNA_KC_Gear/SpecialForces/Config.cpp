@@ -214,6 +214,15 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Uniform_ARC_Imperial: BNA_KC_Uniform_Base
+    {
+        displayName = "[KC] SF ARC Uniform (Imperial)";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_Unit_ARC_Imperial";
+        };
+    };
+
     class BNA_KC_Uniform_ARF: BNA_KC_Uniform_Base
     {
         displayName = "[KC] SF ARF Uniform";

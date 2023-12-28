@@ -54,6 +54,7 @@ class CfgPatches
             // Uniforms
             "BNA_KC_Uniform_ARC",
             "BNA_KC_Uniform_ARC_Night",
+            "BNA_KC_Uniform_ARC_Imperial",
             "BNA_KC_Uniform_ARF",
 
             // Vests
