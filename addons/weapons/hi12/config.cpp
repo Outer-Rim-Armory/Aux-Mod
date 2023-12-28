@@ -24,6 +24,9 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(HI12_Base),
+            QCLASS(HI12),
+            QCLASS(HI12_Fried)
         };
         VERSION_CONFIG;
     };
