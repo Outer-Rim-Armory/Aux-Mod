@@ -18,10 +18,12 @@ params [
     ["_unit", objNull, [objNull]],
     ["_delay", 0, [0]]
 ];
-private ["_function", "_condition", "_exitCode"];
+private ["_function", "_condition", "_exitCode", "_healHandler"];
 TRACE_2("fnc_slowHeal", _unit, _delay);
 
-if (isNull _unit) exitWith {-1};
+if (isNull _unit) exitWith {-1;};
+if (!(_unit isKindOf "CAManBase")) exitWith {-1;};
+if (_unit getVariable [QGVAR(slowHealHandler), -1] isEqualTo -1) exitWith {WARNING_1("Tried to assign slow heal handler to %1, but unit is already being healed.", _unit); -1;};
 
 _function = {
     params ["_handle", "_unit"];
@@ -87,10 +89,13 @@ _exitCode = {
     // params ["_handle", "_unit"];
 };
 
-[
+_healHandler = [
     _function,
     _condition,
     _exitCode,
     _delay,
     [_unit]
 ] call EFUNC(core,tempPFH);
+
+_unit setVariable [QGVAR(slowHealHandler), _healHandler];
+_healHandler;
