@@ -18,6 +18,7 @@ class CfgMagazines
     class CLASS(Mag_10rnd_Valken38x_AP): CLASS(Mag_25rnd_Valken38x)
     {
         displayName = "[KC] Valken-38x AP Energy Cell";
+        displayNameShort = "Armor Piercing";
         descriptionShort = "Armor Piercing Energy Cell Pack<br/>Rounds: 10<br/>Used In: Valken-38x";
 
         picture = "\LF_Weapon_Unit\DC17SA\ui\dc17ammo_co.paa";
