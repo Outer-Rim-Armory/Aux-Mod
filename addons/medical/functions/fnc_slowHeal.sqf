@@ -21,9 +21,12 @@ params [
 private ["_function", "_condition", "_exitCode", "_healHandler", "_fullHealed"];
 TRACE_2("fnc_slowHeal", _unit, _delay);
 
-if (isNull _unit) exitWith {-1;};
-if (!(_unit isKindOf "CAManBase")) exitWith {-1;};
-if (_unit getVariable [QGVAR(slowHealHandler), -1] isEqualTo -1) exitWith {WARNING_1("Tried to assign slow heal handler to %1, but unit is already being healed.", _unit); -1;};
+if (
+    isNull _unit or {
+        !(_unit isKindOf "CAManBase") or
+        _unit getVariable ["BNA_KC_medical_slowHealHandler", -1] isEqualTo -1
+    }
+) exitWith {-1};
 
 _function = {
     params ["_handle", "_unit"];
