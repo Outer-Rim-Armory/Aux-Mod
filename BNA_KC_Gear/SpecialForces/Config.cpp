@@ -74,6 +74,16 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Helmet_ARC_Imperial: BNA_KC_Helmet_ARC
+    {
+        displayName = "[KC] SF ARC Helm (Imperial)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARC_Imperial.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Visors\Visor_ARC_Imperial.paa"
+        };
+    };
+
     class BNA_KC_Helmet_Phase1_ARC: BNA_KC_Helmet_ARC
     {
         displayName = "[KC] SF P1 ARC Helm";

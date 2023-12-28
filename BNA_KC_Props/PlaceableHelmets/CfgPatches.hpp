@@ -84,6 +84,7 @@ class CfgPatches
             "BNA_KC_HelmetHolder_ARC",
             "BNA_KC_HelmetHolder_ARC_v2",
             "BNA_KC_HelmetHolder_ARC_Night",
+            "BNA_KC_HelmetHolder_ARC_Imperial",
             "BNA_KC_HelmetHolder_ARF",
             "BNA_KC_HelmetHolder_ARF_v2",
             "BNA_KC_HelmetHolder_BARC",
