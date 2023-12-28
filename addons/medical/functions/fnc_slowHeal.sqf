@@ -41,10 +41,10 @@ _function = {
         _bodyPartWounds = _wounds get _bodyPart;
         _bodyPartWounds deleteAt (random count _bodyPartWounds);
 
-        if (count _bodyPartWounds isEqualTo 0) then {
-            _wounds deleteAt _bodyPart;
-        } else {
+        if (count _bodyPartWounds > 0) then {
             _wounds set [_bodyPart, _bodyPartWounds];
+        } else {
+            _wounds deleteAt _bodyPart;
         };
     };
 
