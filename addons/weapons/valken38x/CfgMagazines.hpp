@@ -25,6 +25,8 @@ class CfgMagazines
 
         ammo = QCLASS(Bullet_PlasmaSniperAP_Yellow);
         count = 10;
+        initSpeed = 1300;
+        mass = 15;
     };
 
     class CLASS(Mag_Valken38X): CLASS(Mag_25rnd_Valken38x)
