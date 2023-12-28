@@ -441,7 +441,7 @@ class CfgVehicles
     class BNA_KC_Unit_ARC_Imperial: BNA_KC_Unit_ARC
     {
         displayName = "ARC Trooper (Imperial)";
-        // editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARC_Night.jpg";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\BNA_KC_Unit_ARC_Imperial.jpg";
 
         uniformClass = "BNA_KC_Uniform_ARC_Imperial";
         hiddenSelectionsTextures[] =
