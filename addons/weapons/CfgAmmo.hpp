@@ -25,9 +25,6 @@ class CfgAmmo
         ACE_muzzleVelocityVariationSD = 0.3;
         ACE_velocityBoundaries[] = {};
 
-        supersoniccrackfar[] = {};
-        supersoniccracknear[] = {};
-
         PLASMA_SOUNDS;
         PLASMA_EFFECTS;
     };
