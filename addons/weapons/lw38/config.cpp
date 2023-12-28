@@ -16,9 +16,9 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            "Aux501_Patch_Accessories",
-            "JLTS_weapons_DC17SA",
-            "ace_laserpointer"
+            QCLASS(weapons_dc15a),
+            "LF_Weapon_Unit_lw38m",
+            "LF_Weapon_Unit_Westar45"
         };
         units[] = {};
         weapons[] =
