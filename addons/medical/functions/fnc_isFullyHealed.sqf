@@ -24,7 +24,7 @@ if (
         !alive _unit or
         !(typeOf _unit isKindOf "CAManbase") or
         count (_unit getVariable ["ace_medical_openWounds", []]) > 0 or
-        (_unit getVariable ["ace_medical_bloodVolume", 6]) < 6 or
+        (_unit getVariable ["ace_medical_bloodVolume", DEFAULT_BLOOD_VOLUME]) < DEFAULT_BLOOD_VOLUME or
         _unit getVariable ["ace_medical_inCardiacArrest", false] or
         _unit getVariable ["ace_medical_pain", 0] > 0
     }

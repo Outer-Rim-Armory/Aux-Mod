@@ -35,7 +35,7 @@ _function = {
     if (isGamePaused) then {continue};
 
     _wounds = _unit getVariable ["ace_medical_openWounds", createHashmap];
-    _bloodLevel = _unit getVariable ["ace_medical_bloodVolume", 6];
+    _bloodLevel = _unit getVariable ["ace_medical_bloodVolume", DEFAULT_BLOOD_VOLUME];
     _painLevel = _unit getVariable ["ace_medical_pain", 0];
 
     INFO_4("Slow Healer %1 | (Pre-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
@@ -59,11 +59,11 @@ _function = {
 
     _unit setVariable ["ace_medical_openWounds", _wounds, true];
 
-    if (_bloodLevel < 6) then {
+    if (_bloodLevel < DEFAULT_BLOOD_VOLUME) then {
         _fullHealed = false;
         _bloodLevel = _bloodLevel + GVAR(bactaBloodRestoreAmount);
     } else {
-        _bloodLevel = 6;
+        _bloodLevel = DEFAULT_BLOOD_VOLUME;
     };
 
     _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
