@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Checks if a given unit is mostly healed. Not every stat is checked, just common variables such as open wounds, blood volume, etc.
+ * Sorts an array of units based on the number of open wounds they have.
  *
  * Arguments:
  * 0: Array of units <ARRAY>

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Checks if a given unit is mostly healed. Not every stat is checked, just common variables such as open wounds, blood volume, etc.
+ * Slowly heals all units within a given radius.
  *
  * Arguments:
  * 0: Source for healing <OBJECT>
