@@ -44,23 +44,27 @@ _function = {
     _positionAGL = ASLToAGL getPosASL _object;
     _currentPatients = _object getVariable [QGVAR(currentPatients), []];
 
-    // Remove out of range / full healed patients
-    for "_i" from 0 to (count _currentPatients - 1) do {
-        _currentPatients#_i params ["_unit", "_handlerID"];
+    TRACE_1(FORMAT_1("Area Healer %1 |",_handle),_currentPatients);
 
-        if (_unit call FUNC(isFullyHealed)) then {
-            _unit setVariable [QGVAR(canBeHealed), false]; // Causes the PFH to remove itself and call its exit code
-            _currentPatients deleteAt _i;
+    // Remove out of range / full healed patients
+    if !(_currentPatients isEqualTo []) then {
+        for "_i" from 0 to (count _currentPatients - 1) do {
+            _currentPatients#_i params ["_unit", "_handlerID"];
+
+            if (_unit call FUNC(isFullyHealed)) then {
+                _unit setVariable [QGVAR(canBeHealed), false]; // Causes the PFH to remove itself and call its exit code
+                _currentPatients deleteAt _i;
+            };
         };
     };
 
+    _unitsToHeal = _currentPatients apply {_x#0;};
     _nearbyUnits = [_positionAGL, _radius] call EFUNC(core,getNearbyUnits);
     _nearbyUnits = _nearbyUnits select {
-        !(_x call FUNC(isFullyHealed) or _x in _currentPatients);
+        !(_x call FUNC(isFullyHealed) or _x in _unitsToHeal);
     };
     _nearbyUnits = _nearbyUnits call FUNC(sortByInjuries);
 
-    _unitsToHeal = _currentPatients apply {_x#0;};
     _unitsToHeal append _nearbyUnits;
 
     if (_maxPatients > 0) then {
@@ -78,7 +82,7 @@ _function = {
         _currentPatients pushBack [_x, _healHandlerID];
 
         _object setVariable [QGVAR(currentPatients), _currentPatients, true];
-    } forEach (_unitsToHeal - _currentPatients);
+    } forEach (_unitsToHeal - (_currentPatients apply {_x#0}));
 };
 
 _condition = {
