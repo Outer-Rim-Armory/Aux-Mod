@@ -36,7 +36,7 @@ if (
 ) exitWith {};
 
 _function = {
-    params ["_handle", "_object", "_radius", "_maxPatients"];
+    params ["_handle", "_object", "_radius", "_rate", "_maxPatients"];
     private ["_positionAGL", "_currentPatients", "_nearbyUnits", "_unitsToHeal"];
 
     if (isGamePaused) then {continue};
@@ -68,15 +68,26 @@ _function = {
     };
 
     TRACE_3(FORMAT_1("Area Healer %1 |",_handle),_unitsToHeal,_currentPatients,_nearbyUnits);
+
+    // Start healing new patients
+    {
+        private ["_healHandlerID"];
+        INFO_3("Area Healer %1 | Healing %2 every %3 seconds",_handler,_x,_rate);
+
+        _healHandlerID = [_x, _rate] call FUNC(slowHeal);
+        _currentPatients pushBack [_x, _healHandlerID];
+
+        _object setVariable [QGVAR(currentPatients), _currentPatients, true];
+    } forEach (_unitsToHeal - _currentPatients);
 };
 
 _condition = {
-    params ["_handle", "_object", "_radius", "_maxPatients"];
+    params ["_handle", "_object", "_radius", "_rate", "_maxPatients"];
     !isNull _object;
 };
 
 _exitCode = {
-    params ["_handle", "_object", "_radius", "_maxPatients"];
+    params ["_handle", "_object", "_radius", "_rate", "_maxPatients"];
     INFO_2("Area Healer %1 | (Exit) Removing handler from %2", _handle, _object);
 };
 
@@ -85,7 +96,7 @@ _areaHandler = [
     _condition,
     _exitCode,
     _rate,
-    [_object, _radius, _maxPatients]
+    [_object, _radius, _rate, _maxPatients]
 ] call EFUNC(core,tempPFH);
 
 _object setVariable [QGVAR(areaHealHandler), _areaHandler];
