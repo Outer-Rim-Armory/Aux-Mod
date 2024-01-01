@@ -1,6 +1,15 @@
 class CfgWeapons
 {
-    class JLTS_Z6;
+    class LMG_Mk200_F;
+    class JLTS_Z6: LMG_Mk200_F
+    {
+        class manual;
+        class close;
+        class medium;
+        class short;
+        class far_optic1;
+        class far_optic2;
+    };
     class CLASS(Z6_Base): JLTS_Z6
     {
         SCOPE_PRIVATE;
@@ -16,6 +25,55 @@ class CfgWeapons
 
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
+
+        class manual: manual
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
+            };
+        };
+        class close: close
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
+            };
+        };
+        class short: short
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
+            };
+        };
+        class medium: medium
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
+            };
+        };
+        class far_optic1: far_optic1
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
+            };
+        };
+        class far_optic2: far_optic2
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
+            };
+        };
     };
 
     class CLASS(Z6): CLASS(Z6_Base)
