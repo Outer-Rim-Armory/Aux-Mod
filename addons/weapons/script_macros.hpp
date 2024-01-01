@@ -34,10 +34,10 @@ Aux501_cows_pistol_2 = TRUE
 ace_acc_pointer_green = TRUE; \
 jlts_dc17sa_flashlight = TRUE
 
-// Scripted Grenades
-#define GRENADE_TYPE_NORMAL -1
-#define GRENADE_TYPE_EMP 0
-#define GRENADE_TYPE_BACTA 1
+// Special Ammo Types
+#define AMMO_TYPE_NORMAL -1
+#define AMMO_TYPE_EMP 0
+#define AMMO_TYPE_BACTA 1
 
 #define EMP_RADIUS_DROID_DEFAULT 10
 #define EMP_RADIUS_DROIDEKA_DEFAULT 10

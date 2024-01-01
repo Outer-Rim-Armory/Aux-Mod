@@ -3,7 +3,7 @@ class CfgAmmo
     class CLASS(Grenade_Base_Ammo);
     class CLASS(Grenade_EMP_Ammo): CLASS(Grenade_Base_Ammo)
     {
-        GVAR(grenadeType) = GRENADE_TYPE_EMP;
+        GVAR(ammoType) = AMMO_TYPE_EMP;
         hit = 0.01;
         indirectHit = 0.01;
         indirectHitRange = 10;
@@ -36,7 +36,7 @@ class CfgAmmo
     class CLASS(GrenadeSmoke_Base_Ammo);
     class CLASS(Grenade_Bacta_Ammo): CLASS(GrenadeSmoke_Base_Ammo)
     {
-        GVAR(grenadeType) = GRENADE_TYPE_BACTA;
+        GVAR(ammoType) = AMMO_TYPE_BACTA;
         simulation = "shotSmoke";
         deflectionSlowDown = 0;
 
