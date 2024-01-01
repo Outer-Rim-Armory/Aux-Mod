@@ -24,6 +24,7 @@ params [
 private ["_unitsAndWounds"];
 TRACE_2("fnc_sortByInjuries", _units, _order);
 
+if !(_units isEqualType []) then {_units = [_units];};
 _units = _units select {_x isKindOf "CAManBase"};
 if (_units isEqualTo []) exitWith {_units;};
 
