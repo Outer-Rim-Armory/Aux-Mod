@@ -1,7 +1,8 @@
 #include "script_component.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
-
+#include "CfgSoundShaders.hpp"
+#include "CfgSoundSets.hpp"
 
 class CfgPatches
 {
@@ -14,15 +15,14 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(weapons_dc17),
-            QCLASS(weapons_grenades)
+            "JLTS_weapons_Z6"
         };
         units[] = {};
         weapons[] =
         {
-            QCLASS(GR20),
-            QCLASS(GR20_Fried)
+            QCLASS(Z6_Base),
+            QCLASS(Z6),
+            QCLASS(Z6_Fried)
         };
-        VERSION_CONFIG;
     };
 };

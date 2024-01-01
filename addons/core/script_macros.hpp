@@ -40,6 +40,8 @@
 #define EDITOR_PREVIEW(CLASS) QPATHTOF(data\previews\CLASS.jpg)
 #define EEDITOR_PREVIEW(COMPONENT,CLASS) QUOTE(PATHTOF_SYS(PREFIX,COMPONENT,data\previews\CLASS.jpg))
 
+#define QQPATHTOF(var1) QUOTE(QPATHTOF(var1))
+
 #define SCOPE_PUBLIC scope = 2; \
 scopeArsenal = 2; \
 scopeCurator = 2
