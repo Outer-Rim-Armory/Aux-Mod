@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
 
 
@@ -19,7 +20,10 @@ class CfgPatches
             "ace_medical_status",
             "ace_medical_treatment"
         };
-        units[] = {};
+        units[] =
+        {
+            QCLASS(Deployable_MedicalDroid)
+        };
         weapons[] = {};
         VERSION_CONFIG;
     };
