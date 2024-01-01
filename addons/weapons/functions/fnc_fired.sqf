@@ -14,8 +14,14 @@
  */
 
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
-private [];
+private ["_simulation"];
 
-if (toLowerANSI _weapon isEqualTo "throw") then {
-	_this call FUNC(grenadeHandler);
+_simulation = [
+    (configFile >> "CfgAmmo" >> _ammo),
+    "simulation",
+    ""
+] call BIS_fnc_returnConfigEntry;
+
+if (toLowerANSI _simulation in ["shotgrenade", "shotsmoke", "shotsmokex"]) then {
+    _this call FUNC(grenadeHandler);
 };
