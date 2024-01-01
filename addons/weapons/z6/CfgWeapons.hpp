@@ -1,47 +1,42 @@
 class CfgWeapons
 {
     class JLTS_Z6;
-    class BNA_KC_Z6_Base: JLTS_Z6
+    class CLASS(Z6_Base): JLTS_Z6
     {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 1;
-        scopeArsenal = 0;
+        SCOPE_PRIVATE;
+        author = "Keeli Company Aux Team";
 
         displayName = "[KC] Z-6 (Base)";
-        baseWeapon = "BNA_KC_Z6_Base";
+        baseWeapon = QCLASS(Z6_Base);
 
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2"};
         muzzles[] = {"this"};
-        magazines[] = {"Aux12thFleet_Mag_Z6"};
+        magazines[] = {QCLASS(Mag_300rnd_Z6), "Aux12thFleet_Mag_Z6"};
         magazineWell[] = {};
 
-        // JLTS emp system
-        JLTS_hasElectronics = 1;
-        JLTS_hasEMPProtection = 0;
+        JLTS_hasElectronics = TRUE;
+        JLTS_hasEMPProtection = FALSE;
     };
 
-    class BNA_KC_Z6: BNA_KC_Z6_Base
+    class CLASS(Z6): CLASS(Z6_Base)
     {
-        scope = 2;
-        scopeArsenal = 2;
+        SCOPE_PUBLIC;
 
         displayName = "[KC] Z-6";
-        baseWeapon = "BNA_KC_Z6";
+        baseWeapon = QCLASS(Z6);
+
+        JLTS_friedItem = QCLASS(Z6_Fried);
     };
 
-    class BNA_KC_Z6_Fried: BNA_KC_Z6
+    class CLASS(Z6_Fried): CLASS(Z6)
     {
-        // Scope
-        scope = 1;
-        scopeArsenal = 0;
+        SCOPE_HIDDEN;
 
         displayName = "[KC] Z-6 (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\Z6\data\ui\Z6_fried_ui_ca.paa";
 
-        JLTS_isFried = 1;
+        JLTS_isFried = TRUE;
         magazines[] = {};
     };
 };
