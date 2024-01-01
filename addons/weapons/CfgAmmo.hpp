@@ -164,11 +164,28 @@ class CfgAmmo
         effectfly = "JLTS_plasma_yellow";
     };
 
+    class CLASS(Bullet_PlasmaMachineGun_Blue): class CLASS(Bullet_PlasmaCarbine_Blue)
+    {
+        hit = 15;
+        caliber = 2.5;
+        tracerscale = 1.3;
+    };
+    class CLASS(Bullet_PlasmaMachineGun_Red): class CLASS(Bullet_MachineGun_Blue)
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+    };
+    class CLASS(Bullet_PlasmaMachineGun_Green): class CLASS(Bullet_MachineGun_Blue)
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+        effectfly = "JLTS_plasma_green";
+    };
+
     class CLASS(Bullet_PlasmaAutoRifle_Blue): CLASS(Bullet_PlasmaBase)
     {
         SCOPE_PUBLIC;
 
-        hit = 17.5;
+        hit = 19;
         caliber = 2.8;
         typicalSpeed = 890;
         dangerRadiusHit = 14;
