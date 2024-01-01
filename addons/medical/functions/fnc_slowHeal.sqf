@@ -82,13 +82,14 @@ _function = {
 
 _condition = {
     params ["_handle", "_unit"];
-    alive _unit and !(_unit call FUNC(isFullyHealed));
+    alive _unit and !(_unit call FUNC(isFullyHealed)) and _unit getVariable [QGVAR(canBeHealed), true];
 };
 
 _exitCode = {
     params ["_handle", "_unit"];
     INFO_2("Slow Healer %1 | (Exit) Removing handler from %2", _handle, _unit);
     _unit setVariable [QGVAR(slowHealHandler), nil];
+    _unit setVariable [QGVAR(canBeHealed), nil];
 };
 
 _healHandler = [
