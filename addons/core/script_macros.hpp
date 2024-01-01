@@ -1,5 +1,5 @@
 #ifdef __A3_DEBUG__
-    #include "\BNA\BNA_KC\addons\core\script_debug.hpp"
+    #include "\ORA\BNA_KC\addons\core\script_debug.hpp"
 #endif
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
@@ -86,9 +86,9 @@ scopeCurator = 0
     count = COUNT; \
 }
 
-#define GROUND_CLASS(WEAP_NAME) DOUBLES(Ground,WEAP_NAME)
+#define GROUND_CLASS(WEAP_NAME) DOUBLES(Ground,CLASS(WEAP_NAME))
 #define QGROUND_CLASS(WEAP_NAME) QUOTE(GROUND_CLASS(WEAP_NAME))
-#define GROUND_HOLDER(WEAP_NAME, DISPLAY_NAME) class GROUND_CLASS(WEAP_NAME): DOUBLES(Ground,CLASS(Holder_Base)) \
+#define GROUND_HOLDER(WEAP_NAME, DISPLAY_NAME) class GROUND_CLASS(WEAP_NAME): GROUND_CLASS(Holder_Base) \
 { \
     SCOPE_PUBLIC; \
     displayName = DISPLAY_NAME; \

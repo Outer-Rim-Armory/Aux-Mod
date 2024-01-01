@@ -1,10 +1,10 @@
-#define MAINPREFIX BNA
+#define MAINPREFIX ORA
 #define PREFIX BNA_KC
 #define MOD_NAME Keeli Company Auxillary Mod
 #define AUTHORS DartRuffian, SweMonkey, Dexus, Rev, Sin
 #define QAUTHORS "DartRuffian", "SweMonkey", "Dexus", "Rev", "Sin"
 
-#include "\BNA\BNA_KC\addons\core\script_version.hpp"
+#include "\ORA\BNA_KC\addons\core\script_version.hpp"
 
 #define REQUIRED_VERSION 2.14
 
