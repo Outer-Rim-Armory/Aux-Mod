@@ -1,5 +1,6 @@
 #include "script_component.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
 
 
 class CfgPatches
@@ -14,7 +15,10 @@ class CfgPatches
             QCLASS(core),
             "WBK_ZombieCreatures"
         };
-        units[] = {};
+        units[] =
+        {
+            QCLASS(Creature_Rancor)
+        };
         weapons[] = {};
         VERSION_CONFIG;
     };
