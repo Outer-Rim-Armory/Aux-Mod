@@ -4,4 +4,9 @@ class CfgEditorSubcategories
     {
         displayName = "Flags";
     };
+
+    class CLASS(EdSubcat_StaticShips)
+    {
+        displayName = "Static Ships";
+    };
 };

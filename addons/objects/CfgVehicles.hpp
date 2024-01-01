@@ -65,4 +65,6 @@ class CfgVehicles
         displayName = "KC Damaged Flag (Horizontal)";
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_Damaged_Mirrored_co.paa)};
     };
+
+    #include "configs\Resurgence_Parts.hpp"
 };
