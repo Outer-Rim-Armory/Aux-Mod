@@ -51,6 +51,9 @@ class CfgPatches
             QCLASS(Venator_Resurgence_Interior6),
             QCLASS(Venator_Resurgence_Interior7),
             QCLASS(Venator_Resurgence_Interior8),
+            QCLASS(Venator_Resurgence_ClosedFullyHollowed),
+            QCLASS(Venator_Resurgence_OpenFullyHollowed),
+            QCLASS(Venator_Resurgence_Zeus)
         };
         weapons[] = {};
         VERSION_CONFIG;
