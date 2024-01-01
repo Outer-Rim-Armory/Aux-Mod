@@ -32,7 +32,7 @@ _unitsAndWounds = _units apply {[
     _x
 ]};
 
-_unitsAndWounds sort false;
+_unitsAndWounds sort _order;
 _units = _unitsAndWounds apply {_x#1};
 
 _units;
