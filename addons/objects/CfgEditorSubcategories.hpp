@@ -9,4 +9,9 @@ class CfgEditorSubcategories
     {
         displayName = "Static Ships";
     };
+
+    class CLASS(EdSubcat_Resupply)
+    {
+        displayName = "Resupply";
+    };
 };

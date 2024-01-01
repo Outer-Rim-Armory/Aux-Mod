@@ -26,6 +26,15 @@ class CfgPatches
             QCLASS(Flag_KC_Damaged_Vertical),
             QCLASS(Flag_KC_Damaged_Horizontal),
             QCLASS(Flag_KC_Damaged_Horizontal_Mirrored),
+
+            QCLASS(Resupply_Base),
+            QCLASS(Resupply_SquadAmmo),
+            QCLASS(Resupply_PlatoonAmmo),
+            QCLASS(Resupply_SquadAmmo_Heavy),
+            QCLASS(Resupply_PlatoonAmmo_Heavy),
+            QCLASS(Resupply_SquadMedical),
+            QCLASS(Resupply_PlatoonMedical),
+
             QCLASS(Venator_Resurgence_Body1_1),
             QCLASS(Venator_Resurgence_Body1_2),
             QCLASS(Venator_Resurgence_Body2_1),
