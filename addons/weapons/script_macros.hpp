@@ -34,20 +34,16 @@ Aux501_cows_pistol_2 = TRUE
 ace_acc_pointer_green = TRUE; \
 jlts_dc17sa_flashlight = TRUE
 
-// Scripted Grenades
-#define GRENADE_TYPE_NORMAL -1
-#define GRENADE_TYPE_EMP 0
-#define GRENADE_TYPE_BACTA 1
+// Special Ammo Types
+#define AMMO_TYPE_NORMAL -1
+#define AMMO_TYPE_EMP 0
+#define AMMO_TYPE_BACTA 1
 
 #define EMP_RADIUS_DROID_DEFAULT 10
 #define EMP_RADIUS_DROIDEKA_DEFAULT 10
 #define EMP_RADIUS_VEHICLE_DEFAULT 10
 
 #define BACTA_DURATION_DEFAULT 20
-// TODO: Move to medical addon (when made)
-#define MEDICAL_HEAL_RADIUS_DEFAULT 20
-#define MEDICAL_HEAL_RATE_DEFAULT 0.5
-#define MEDICAL_HEAL_MAXPATIENTS_DEFAULT -1
 
 #define PLASMA_SOUNDS bulletFly[] = {"bulletFly1",0.2,"bulletFly2",0.2,"bulletFly3",0.2,"bulletFly4",0.2,"bulletFly5",0.2}; \
 bulletFly1[] = {"MRC\JLTS\weapons\Core\sounds\plasma_flyby\plasma_flyby_1",2.23872,1,100}; \

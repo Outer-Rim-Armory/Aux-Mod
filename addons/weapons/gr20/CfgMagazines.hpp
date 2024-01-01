@@ -11,10 +11,15 @@ class CfgMagazines
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
         picture = QPATHTOF(data\ui\Mag_GrenadeBacta_ca.paa);
 
-        ammo = QCLASS(Bullet_BactaSmoke); // Most likely a temporary name
+        ammo = QCLASS(Grenade_Bacta_Ammo);
         count = 1;
         mass = 4;
         initSpeed = 80;
+
+        GVAR(bactaDuration) = BACTA_DURATION_DEFAULT;
+        EGVAR(medical,areaHealRadius) = MEDICAL_HEAL_RADIUS_DEFAULT;
+        EGVAR(medical,areaHealRate) = MEDICAL_HEAL_RATE_DEFAULT;
+        EGVAR(medical,areaHealMaxPatients) = MEDICAL_HEAL_MAXPATIENTS_DEFAULT;
     };
 
     class CLASS(Mag_GR20): CLASS(Mag_1rnd_GR20)

@@ -14,12 +14,12 @@
  */
 
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
-private ["_grenadeType", "_explodeDelay"];
+private ["_ammoType", "_explodeDelay"];
 
-_grenadeType = [
+_ammoType = [
     configFile >> "CfgAmmo" >> _ammo,
-    QGVAR(grenadeType),
-    GRENADE_TYPE_NORMAL
+    QGVAR(ammoType),
+    AMMO_TYPE_NORMAL
 ] call BIS_fnc_returnConfigEntry;
 
 _explodeDelay = [
@@ -28,22 +28,22 @@ _explodeDelay = [
     0
 ] call BIS_fnc_returnConfigEntry;
 
-if (_grenadeType isEqualTo GRENADE_TYPE_NORMAL) exitWith {};
+if (_ammoType isEqualTo AMMO_TYPE_NORMAL) exitWith {};
 
 [
     {
-        params ["_grenadeType", "_explodeDelay", "_unit", "_ammo", "_magazine", "_projectile"];
+        params ["_ammoType", "_explodeDelay", "_unit", "_ammo", "_magazine", "_projectile"];
 
-        switch (_grenadeType) do {
-            case GRENADE_TYPE_EMP: {
+        switch (_ammoType) do {
+            case AMMO_TYPE_EMP: {
                 [_unit, _ammo, _magazine, _projectile] call FUNC(empGrenade);
             };
-            case GRENADE_TYPE_BACTA: {
+            case AMMO_TYPE_BACTA: {
                 [_unit, _ammo, _magazine, _projectile] call FUNC(bactaGrenade);
             };
             default {};
         };
     },
-    [_grenadeType, _explodeDelay, _unit, _ammo, _magazine, _projectile],
+    [_ammoType, _explodeDelay, _unit, _ammo, _magazine, _projectile],
     _explodeDelay
 ] call CBA_fnc_waitAndExecute;

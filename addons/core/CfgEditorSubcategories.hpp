@@ -63,4 +63,8 @@ class CfgEditorSubcategories
     {
         displayName = "Helmets";
     };
+    class CLASS(Edsubcat_Droids)
+    {
+        displayName = "Droids";
+    };
 };
