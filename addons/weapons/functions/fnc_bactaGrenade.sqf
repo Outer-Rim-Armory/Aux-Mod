@@ -55,7 +55,7 @@ _maxPatients = [
     0
 ] call BIS_fnc_returnConfigEntry;
 
-TRACE_4("fnc_bactaGrenade | Heal parameters",_projectile,_radius,_rate,_maxPatients,_duration);
+TRACE_5("fnc_bactaGrenade | Heal parameters",_projectile,_radius,_rate,_maxPatients,_duration);
 
 INFO_1("Created area healing for bacta grenade %1",_projectile);
 _healerID = [_projectile, _radius, _rate, _maxPatients] call EFUNC(medical,areaSlowHeal);
