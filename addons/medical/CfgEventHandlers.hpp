@@ -13,3 +13,14 @@ class Extended_PreInit_EventHandlers
         init = QUOTE(call COMPILE_SCRIPT(XEH_preInit));
     };
 };
+
+class Extended_Init_EventHandlers
+{
+    class CLASS(Deployable_MedicalDroid)
+    {
+        class GVAR(areaSlowHealInit)
+        {
+            init = QUOTE(_this call FUNC(areaHealerInit));
+        };
+    };
+};
