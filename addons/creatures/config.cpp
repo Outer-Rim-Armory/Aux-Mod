@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgFactionClasses.hpp"
 
 
 class CfgPatches
