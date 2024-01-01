@@ -70,7 +70,7 @@ _function = {
 
     INFO_4("Slow Healer %1 | (Post-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
 
-    if (count _wounds isEqualTo 0 and _bloodLevel isEqualTo DEFAULT_BLOOD_VOLUME and _painLevel isEqualTo 0) then {
+    if (count _wounds isEqualTo 0 and _bloodLevel isEqualTo DEFAULT_BLOOD_VOLUME and _painLevel isEqualTo 0 and GVAR(bactaFullHealOnComplete)) then {
         INFO_2("Slow Healer %1 | (Exit) Treatment complete, full healing $2", _handle, _unit);
         [_unit, _unit] call ace_medical_treatment_fnc_fullHeal;
     };

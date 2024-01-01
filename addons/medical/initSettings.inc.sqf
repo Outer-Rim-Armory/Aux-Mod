@@ -15,3 +15,12 @@
     [0, 1, 0.1, 0],
     TRUE
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(bactaFullHealOnComplete),
+    "CHECKBOX",
+    ["Full Heal when Complete", "Slow healing sources will full heal a unit when there are no remaining actions."],
+    [QUOTE(MOD_NAME), "Bacta"],
+    true,
+    TRUE
+] call CBA_fnc_addSetting;
