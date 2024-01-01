@@ -6,7 +6,7 @@ class CfgMagazines
         SCOPE_PUBLIC;
         displayName = "[KC] Pressurized Bacta Canister";
         displayNameShort = "Bacta Bomb";
-        descriptionShort = "Pressurized Bacta Gas<br/>Rounds: 1<br/>Used In: GR-20<br/>Nicknamed the 'Bacta Bomb' by Republic Medics";
+        descriptionShort = "Pressurized Bacta Gas<br/>Rounds: 1<br/>Used In: GR-20<br/>Nicknamed the 'Bacta Bomb'.";
 
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
         picture = QPATHTOF(data\ui\Mag_GrenadeBacta_ca.paa);
