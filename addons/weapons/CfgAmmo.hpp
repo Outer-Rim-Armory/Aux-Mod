@@ -164,18 +164,18 @@ class CfgAmmo
         effectfly = "JLTS_plasma_yellow";
     };
 
-    class CLASS(Bullet_PlasmaMachineGun_Blue): class CLASS(Bullet_PlasmaCarbine_Blue)
+    class CLASS(Bullet_PlasmaMachineGun_Blue): CLASS(Bullet_PlasmaCarbine_Blue)
     {
         hit = 15;
         caliber = 2.5;
         tracerscale = 1.3;
     };
-    class CLASS(Bullet_PlasmaMachineGun_Red): class CLASS(Bullet_MachineGun_Blue)
+    class CLASS(Bullet_PlasmaMachineGun_Red): CLASS(Bullet_PlasmaMachineGun_Blue)
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
     };
-    class CLASS(Bullet_PlasmaMachineGun_Green): class CLASS(Bullet_MachineGun_Blue)
+    class CLASS(Bullet_PlasmaMachineGun_Green): CLASS(Bullet_PlasmaMachineGun_Blue)
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
