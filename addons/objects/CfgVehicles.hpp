@@ -179,7 +179,7 @@ class CfgVehicles
             MAG_XX(3Rnd_HE_Grenade_shell,15);
 
             // Secondary Ammo
-            MAG_XX(CLASS(Mag_60rnd_DC15A),50);
+            MAG_XX(CLASS(Mag_20rnd_DC17),50);
 
             // Launcher Ammo
             MAG_XX(3AS_JLTS_MK39_AA,5);
@@ -196,9 +196,9 @@ class CfgVehicles
         displayName = "Heavy Ammo Crate (Squad)";
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_25rnd_Valken38x_AP),20);
+            MAG_XX(CLASS(Mag_10rnd_Valken38x_AP),20);
             MAG_XX(CLASS(Mag_30rnd_HI12),20);
-            MAG_XX(CLASS(Mag_30rnd_DP23_HP),20);
+            MAG_XX(CLASS(Mag_15rnd_DP23_HP),20);
             MAG_XX(Aux501_Weapons_Mags_10mw400,5);
             MAG_XX(3AS_JLTS_MK39_AA,1);
             MAG_XX(3AS_JLTS_MK43_AT,1);
@@ -210,9 +210,9 @@ class CfgVehicles
         displayName = "Heavy Ammo Crate (Platoon)";
         class TransportMagazines: TransportMagazines
         {
-            MAG_XX(CLASS(Mag_25rnd_Valken38x_AP),120);
+            MAG_XX(CLASS(Mag_10rnd_Valken38x_AP),120);
             MAG_XX(CLASS(Mag_30rnd_HI12),120);
-            MAG_XX(CLASS(Mag_30rnd_DP23_HP),120);
+            MAG_XX(CLASS(Mag_15rnd_DP23_HP),120);
             MAG_XX(Aux501_Weapons_Mags_10mw400,10);
             MAG_XX(3AS_JLTS_MK39_AA,3);
             MAG_XX(3AS_JLTS_MK43_AT,3);
