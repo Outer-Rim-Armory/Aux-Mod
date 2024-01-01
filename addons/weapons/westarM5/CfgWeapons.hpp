@@ -122,7 +122,7 @@ class CfgWeapons
 
         displayName = "[KC] Westar-M5 (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        picture = QPATHTOF(westar\data\ui\WestarM5_Fried_ca.paa);
+        picture = QPATHTOF(westarM5\data\ui\WestarM5_Fried_ca.paa);
         baseWeapon = QCLASS(WestarM5_Fried);
 
         JLTS_isFried = TRUE;
@@ -179,7 +179,7 @@ class CfgWeapons
 
         displayName = "[KC] Westar-M5 UGL (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        picture = QPATHTOF(westar\data\ui\WestarM5_Fried_ca.paa);
+        picture = QPATHTOF(westarM5\data\ui\WestarM5_Fried_ca.paa);
         baseWeapon = QCLASS(WestarM5_UGL_Fried);
 
         JLTS_isFried = TRUE;
