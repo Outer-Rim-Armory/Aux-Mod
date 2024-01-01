@@ -199,7 +199,7 @@ class CfgVehicles
             MAG_XX(CLASS(Mag_10rnd_Valken38x_AP),20);
             MAG_XX(CLASS(Mag_30rnd_HI12),20);
             MAG_XX(CLASS(Mag_15rnd_DP23_HP),20);
-            MAG_XX(Aux501_Weapons_Mags_10mw400,5);
+            MAG_XX(CLASS(Mag_300rnd_Z6),5);
             MAG_XX(3AS_JLTS_MK39_AA,1);
             MAG_XX(3AS_JLTS_MK43_AT,1);
             MAG_XX(3AS_JLTS_MK44_HE,1);
@@ -213,7 +213,7 @@ class CfgVehicles
             MAG_XX(CLASS(Mag_10rnd_Valken38x_AP),120);
             MAG_XX(CLASS(Mag_30rnd_HI12),120);
             MAG_XX(CLASS(Mag_15rnd_DP23_HP),120);
-            MAG_XX(Aux501_Weapons_Mags_10mw400,10);
+            MAG_XX(CLASS(Mag_300rnd_Z6),10);
             MAG_XX(3AS_JLTS_MK39_AA,3);
             MAG_XX(3AS_JLTS_MK43_AT,3);
             MAG_XX(3AS_JLTS_MK44_HE,3);
