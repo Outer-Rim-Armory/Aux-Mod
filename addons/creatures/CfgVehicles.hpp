@@ -6,7 +6,11 @@ class CfgVehicles
         displayName = "Rancor";
         uniformClass = QCLASS(Uniform_Rancor);
         nakedUniform = QCLASS(Uniform_Rancor);
+
         model = QPATHTOF(data\rancor\Rancor.p3d);
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        hiddenSelectionsMaterials[] = {};
 
         faction = QCLASS(Faction_Creatures);
         editorSubcategory = QCLASS(EdSubCat_Special);

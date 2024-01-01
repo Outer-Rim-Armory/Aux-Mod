@@ -12,6 +12,8 @@ class CfgWeapons
         class ItemInfo: UniformItem
         {
             containerclass = "Supply200";
+            uniformClass = QCLASS(Creature_Rancor);
+            uniformModel = "-";
             mass = 30;
         };
     };
