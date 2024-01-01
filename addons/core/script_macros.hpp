@@ -1,5 +1,5 @@
 #ifdef __A3_DEBUG__
-    #include "\BNA\BNA_KC\addons\core\script_debug.hpp"
+    #include "\ORA\BNA_KC\addons\core\script_debug.hpp"
 #endif
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
