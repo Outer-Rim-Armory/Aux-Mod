@@ -18,7 +18,13 @@ class CfgPatches
         };
         units[] =
         {
-            s
+            QCLASS(Resupply_Base),
+            QCLASS(Resupply_SquadAmmo),
+            QCLASS(Resupply_PlatoonAmmo),
+            QCLASS(Resupply_SquadAmmo_Heavy),
+            QCLASS(Resupply_PlatoonAmmo_Heavy),
+            QCLASS(Resupply_SquadMedical),
+            QCLASS(Resupply_PlatoonMedical)
         };
         weapons[] = {};
         VERSION_CONFIG;
