@@ -22,5 +22,9 @@ class Extended_Init_EventHandlers
         {
             init = QUOTE(_this call FUNC(areaHealerInit));
         };
+        class GVAR(soundLoopInit)
+        {
+            init = QUOTE(_this call EFUNC(core,soundLoopInit));
+        };
     };
 };
