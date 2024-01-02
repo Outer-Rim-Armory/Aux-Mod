@@ -52,8 +52,7 @@ _deployableItems = (_player call ace_common_fnc_uniqueItems) select {
         {
             params ["_target", "_player", "_item"];
             TRACE_3("Deploy action",_target,_player,_item);
-            systemChat format ["%1 deployed %2", _player, _item];
-            // [_player, _item] call FUNC(deployItem);
+            [_player, _item] call FUNC(deployItem);
         },
         {true},
         {},
