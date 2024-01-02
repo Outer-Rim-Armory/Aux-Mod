@@ -47,7 +47,7 @@ _deployTime = [
     {
         // On Success
         _this#0 params ["_unit", "_objectClass", "_item"];
-        private ["_direction", "_positionASL", "_object", "_action"];
+        private ["_direction", "_positionASL", "_object", "_interactionPos", "_action"];
         _unit playAction "PutDown";
 
         _unit removeItem _item;
@@ -57,6 +57,12 @@ _deployTime = [
 
         _object = _objectClass createVehicle [0, 0, 0];
         _object setPosASL _positionASL;
+
+        _interactionPos = [
+            configFile >> "CfgVehicles" >> _objectClass,
+            QGVAR(interactionPosition),
+            [0, 0, 0]
+        ] call BIS_fnc_returnConfigEntry;
 
         _action = [
             format [QUOTE(GVAR(pickup_%1)), _x],
@@ -70,7 +76,7 @@ _deployTime = [
             {true},
             {},
             [_object, _item],
-            [0, 0, 1],
+            _interactionPos,
             2.5
         ] call ace_interact_menu_fnc_createAction;
 

@@ -20,15 +20,6 @@ class CfgVehicles
         EGVAR(core,soundLoopDelay) = 15;
 
         EGVAR(objects,pickupTime) = 20;
-
-        class ACE_Actions
-        {
-            class ACE_MainActions
-            {
-                selection = "interaction_point";
-                distance = 5;
-                condition = "true";
-            };
-        };
+        EGVAR(objects,interactionPosition)[] = {0, 0, 1};
     };
 };
