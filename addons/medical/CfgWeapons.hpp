@@ -14,6 +14,7 @@ class CfgWeapons
 
         EGVAR(objects,isDeployable) = TRUE;
         EGVAR(objects,deployTime) = 20;
+        EGVAR(objects,deployedObject) = QCLASS(Deployable_MedicalDroid);
 
         class ItemInfo: CBA_MiscItem_ItemInfo
         {

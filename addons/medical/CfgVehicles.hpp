@@ -18,5 +18,7 @@ class CfgVehicles
 
         EGVAR(core,soundLoop) = QPATHTOF(data\audio\MedicalDroid_Treat.wss);
         EGVAR(core,soundLoopDelay) = 15;
+
+        EGVAR(objects,pickupTime) = 20;
     };
 };
