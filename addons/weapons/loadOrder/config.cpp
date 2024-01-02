@@ -31,7 +31,7 @@ class CfgPatches
             QCLASS(weapons_rps7),
             QCLASS(weapons_valken38x),
             QCLASS(weapons_westarM5),
-            QCLASS(weapons_x42),
+            // QCLASS(weapons_x42), // Not included due to Burn 'Em requirement, causes circular dependency
             QCLASS(weapons_z6)
         };
         units[] = {};
