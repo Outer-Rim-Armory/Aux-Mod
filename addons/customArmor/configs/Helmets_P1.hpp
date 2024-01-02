@@ -317,7 +317,7 @@ class CLASS(Helmet_Phase1_LouPlasma): CLASS(Helmet_Phase1_Lou)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase1\Lou_camo1_co.paa),
-        QPATHTOF(data\visors\Bacta_camo2_co.paa),
+        QPATHTOF(data\visors\Plasma_camo2_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
     hiddenSelectionsMaterials[] =
