@@ -70,27 +70,27 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\ships\Resurgence\Body1_co.paa),
-            QPATHTOF(data\ships\Resurgence\Body2_co.paa),
-            QPATHTOF(data\ships\Resurgence\Body3_co.paa),
-            QPATHTOF(data\ships\Resurgence\Body4_co.paa),
-            QPATHTOF(data\ships\Resurgence\Body5_co.paa),
-            QPATHTOF(data\ships\Resurgence\Body6_co.paa),
-            QPATHTOF(data\ships\Resurgence\Body7_co.paa),
-            QPATHTOF(data\ships\Resurgence\Body8_co.paa),
-            QPATHTOF(data\ships\Resurgence\Body9_co.paa),
-            QPATHTOF(data\ships\Resurgence\Body10_co.paa),
-            QPATHTOF(data\ships\Resurgence\Door_co.paa),
-            QPATHTOF(data\ships\Resurgence\Engine_co.paa),
-            QPATHTOF(data\ships\Resurgence\Interior1_co.paa),
-            QPATHTOF(data\ships\Resurgence\Interior2_co.paa),
-            QPATHTOF(data\ships\Resurgence\Interior3_co.paa),
-            QPATHTOF(data\ships\Resurgence\Interior4_co.paa),
-            QPATHTOF(data\ships\Resurgence\Interior5_co.paa),
-            QPATHTOF(data\ships\Resurgence\Interior6_co.paa),
-            QPATHTOF(data\ships\Resurgence\Interior7_co.paa),
-            QPATHTOF(data\ships\Resurgence\Interior8_co.paa),
-            QPATHTOF(data\ships\Resurgence\Bridge_co.paa)
+            QPATHTOF(ships\data\Resurgence\Body1_co.paa),
+            QPATHTOF(ships\data\Resurgence\Body2_co.paa),
+            QPATHTOF(ships\data\Resurgence\Body3_co.paa),
+            QPATHTOF(ships\data\Resurgence\Body4_co.paa),
+            QPATHTOF(ships\data\Resurgence\Body5_co.paa),
+            QPATHTOF(ships\data\Resurgence\Body6_co.paa),
+            QPATHTOF(ships\data\Resurgence\Body7_co.paa),
+            QPATHTOF(ships\data\Resurgence\Body8_co.paa),
+            QPATHTOF(ships\data\Resurgence\Body9_co.paa),
+            QPATHTOF(ships\data\Resurgence\Body10_co.paa),
+            QPATHTOF(ships\data\Resurgence\Door_co.paa),
+            QPATHTOF(ships\data\Resurgence\Engine_co.paa),
+            QPATHTOF(ships\data\Resurgence\Interior1_co.paa),
+            QPATHTOF(ships\data\Resurgence\Interior2_co.paa),
+            QPATHTOF(ships\data\Resurgence\Interior3_co.paa),
+            QPATHTOF(ships\data\Resurgence\Interior4_co.paa),
+            QPATHTOF(ships\data\Resurgence\Interior5_co.paa),
+            QPATHTOF(ships\data\Resurgence\Interior6_co.paa),
+            QPATHTOF(ships\data\Resurgence\Interior7_co.paa),
+            QPATHTOF(ships\data\Resurgence\Interior8_co.paa),
+            QPATHTOF(ships\data\Resurgence\Bridge_co.paa)
         };
     };
 };
