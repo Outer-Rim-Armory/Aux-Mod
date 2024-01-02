@@ -15,5 +15,8 @@ class CfgVehicles
         GVAR(areaHealRadius) = 7;
         GVAR(areaHealRate) = 6;
         GVAR(areaHealMaxPatients) = 2;
+
+        EGVAR(core,soundLoop) = QPATHTOF(data\audio\MedicalDroid_Treat.wss);
+        EGVAR(core,soundLoopDelay) = 15;
     };
 };
