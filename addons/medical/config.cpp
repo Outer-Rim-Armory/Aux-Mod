@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
 #include "ACE_Medical_Facilities.hpp"
