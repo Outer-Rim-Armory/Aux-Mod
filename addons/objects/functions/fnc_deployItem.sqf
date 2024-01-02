@@ -8,7 +8,7 @@
  * 1: The item class name to deploy <STRING>
  *
  * Return Value:
- * Whether the item was deployed or not <BOOL>
+ * None
  *
  * Example:
  * [player, "someItem"] call BNA_KC_objects_fnc_deployItem;
@@ -27,7 +27,7 @@ _objectClass = [
     ""
 ] call BIS_fnc_returnConfigEntry;
 
-if (isNull _unit or {_item isEqualTo "" or _objectClass isEqualTo ""}) exitWith {false};
+if (isNull _unit or {_item isEqualTo "" or _objectClass isEqualTo ""}) exitWith {};
 
 _objectName = [
     configFile >> "CfgVehicles" >> _objectClass,
