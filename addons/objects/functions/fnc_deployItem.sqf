@@ -47,7 +47,7 @@ _deployTime = [
     {
         // On Success
         _this#0 params ["_unit", "_objectClass", "_item"];
-        private ["_direction", "_positionASL", "_object"];
+        private ["_direction", "_positionASL", "_object", "_action"];
         _unit playAction "PutDown";
 
         _unit removeItem _item;
@@ -57,6 +57,24 @@ _deployTime = [
 
         _object = _objectClass createVehicle [0, 0, 0];
         _object setPosASL _positionASL;
+
+        _action = [
+            format [QUOTE(GVAR(pickup_%1)), _x],
+            "Pick Up",
+            "",
+            {
+                params ["_target", "_player", "_params"];
+                _params params ["_object", "_item"];
+                [_player, _object, _item] call FUNC(pickupItem);
+            },
+            {true},
+            {},
+            [_object, _item],
+            [0, 0, 1],
+            2.5
+        ] call ace_interact_menu_fnc_createAction;
+
+        [_object, TYPE_ACE_INTERACT_ACTION, [], _action] call ace_interact_menu_fnc_addActionToObject;
     },
     {
         // On Failure
