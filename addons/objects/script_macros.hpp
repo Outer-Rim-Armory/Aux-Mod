@@ -4,10 +4,11 @@
 #define UNIFORMMENU_PAGE_RANKUNIFORMS 1
 #define UNIFORMMENU_PAGE_DETACHMENTHELMETS 2
 #define UNIFORMMENU_GETPAGE ace_player getVariable [QQGVAR(UniformMenu_Page), MENU_PAGE_HOME]
-#define UNIFORMMENU_SETPAGE(var1) ace_player getVariable [QQGVAR(UniformMenu_Page), var1]
+#define UNIFORMMENU_SETPAGE(var1) ace_player setVariable [QQGVAR(UniformMenu_Page), var1]
 
+#define LOADOUTMENU_PAGE_WEAPONS 1
 #define LOADOUTMENU_GETPAGE ace_player getVariable [QQGVAR(LoadoutMenu_Page), MENU_PAGE_HOME]
-#define LOADOUTMENU_SETPAGE(var1) ace_player getVariable [QQGVAR(LoadoutMenu_Page), var1]
+#define LOADOUTMENU_SETPAGE(var1) ace_player setVariable [QQGVAR(LoadoutMenu_Page), var1]
 
 
 #define LOADOUTS_RANKS_ENLISTED "CR", "CT", "SCT", "VCT", "CLC", "CPL"
