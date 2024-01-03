@@ -180,7 +180,7 @@ class CfgVehicles
 
         class UserActions
         {
-            class AssignMedic
+            class Assign_Medic
             {
                 displayName = QUOTE(<t color='#c40000'><img image=QQPATHTOEF(armor,data\insignias\Medic_White_ca.paa)/> Assign Medic Permissions</t>);
 
@@ -194,19 +194,19 @@ class CfgVehicles
                 condition = QUOTE(!(ace_player getUnitTrait 'Medic'));
                 statement = QUOTE(ace_player setUnitTrait [ARR_2('Medic',true)]);
             };
-            class UnassignMedic: AssignMedic
+            class Unassign_Medic: Assign_Medic
             {
                 displayName = QUOTE(<t color='#c40000'><img image=QQPATHTOEF(armor,data\insignias\Medic_White_ca.paa)/> Unassign Medic Permissions</t>);
                 condition = QUOTE(ace_player getUnitTrait 'Medic');
                 statement = QUOTE(ace_player setUnitTrait [ARR_2('Medic',false)]);
             };
-            class AssignEngineer: AssignMedic
+            class Assign_Engineer: Assign_Medic
             {
                 displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(armor,data\insignias\EOD_White_ca.paa)/> Assign Engineer Permissions</t>);
                 condition = QUOTE(!(ace_player getUnitTrait 'Engineer'));
                 statement = QUOTE(ace_player setUnitTrait [ARR_2('Engineer',true)]);
             };
-            class UnassignEngineer: AssignEngineer
+            class Unassign_Engineer: Assign_Engineer
             {
                 displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(armor,data\insignias\EOD_White_ca.paa)/> Unassign Engineer Permissions</t>);
                 condition = QUOTE(ace_player getUnitTrait 'Engineer');
