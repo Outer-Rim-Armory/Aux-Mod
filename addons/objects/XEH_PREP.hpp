@@ -4,3 +4,4 @@ PREP(pickupItem);
 PREP(openArsenal);
 PREP(registerLoadouts);
 PREP(applyLoadout);
+PREP(loadoutBoxInit);
