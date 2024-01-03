@@ -32,6 +32,8 @@ _arsenalItems = switch (toLowerANSI _type) do {
         _attachments = _attachments apply {compatibleItems _x};
         flatten _attachments;
     };
+
+    default {[]};
 };
 
 [ace_player, _arsenalItems] call ace_arsenal_fnc_addVirtualItems;
