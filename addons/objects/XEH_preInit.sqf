@@ -3,3 +3,4 @@
 #include "XEH_PREP.hpp"
 
 call FUNC(registerLoadouts);
+call FUNC(registerWeapons);
