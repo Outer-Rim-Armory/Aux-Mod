@@ -10,8 +10,9 @@
 #define LOADOUTMENU_SETPAGE(var1) ace_player getVariable [QQGVAR(LoadoutMenu_Page), var1]
 
 
-#define LOADOUTS_RANKS ["CR", "CT", "SCT", "VCT", "CLC", "CPL", "CS", "CSS", "CSFC", "CMS", "CSM", "WO", "WO2", "WO3", "LT", "1LT", "CAP", "MAJ", "COM"]
-#define LOADOUTS_RANKS_NCO ["CS", "CSS", "CSFC", "CMS", "CSM"]
-#define LOADOUTS_RANKS_OFFICER ["WO", "WO2", "WO3", "LT", "1LT", "CAP", "MAJ", "COM"]
+#define LOADOUTS_RANKS_ENLISTED "CR", "CT", "SCT", "VCT", "CLC", "CPL"
+#define LOADOUTS_RANKS_NCO "CS", "CSS", "CSFC", "CMS", "CSM"
+#define LOADOUTS_RANKS_OFFICER "WO", "WO2", "WO3", "LT", "1LT", "CAP", "MAJ", "COM"
+#define LOADOUTS_RANKS_LIST [LOADOUTS_RANKS_ENLISTED, LOADOUTS_RANKS_NCO, LOADOUTS_RANKS_OFFICER]
 #define LOADOUTS_WEAPONS_LIST ["DC15A", "DC15S", "DC15C"]
-#define LOADOUTS_KITS ["Rifleman", "Squad Leader"]
+#define LOADOUTS_KITS_LIST ["Rifleman", "Squad Leader"]
