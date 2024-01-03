@@ -14,7 +14,8 @@ class CfgPatches
         requiredAddons[] =
         {
             QCLASS(core),
-            "ls_flags"
+            "ls_flags",
+            "3as_GNK_Prop"
         };
         units[] =
         {
@@ -24,7 +25,13 @@ class CfgPatches
             QCLASS(Flag_KC_Damaged_Pole),
             QCLASS(Flag_KC_Damaged_Vertical),
             QCLASS(Flag_KC_Damaged_Horizontal),
-            QCLASS(Flag_KC_Damaged_Horizontal_Mirrored)
+            QCLASS(Flag_KC_Damaged_Horizontal_Mirrored),
+            QCLASS(Gonk_Base),
+            QCLASS(Gonk_Uniforms),
+            QCLASS(Gonk_Loadouts),
+            QCLASS(Gonk_Permissions),
+            QCLASS(Utility_Arsenal),
+            QCLASS(Utility_FullHeal)
         };
         weapons[] = {};
         VERSION_CONFIG;

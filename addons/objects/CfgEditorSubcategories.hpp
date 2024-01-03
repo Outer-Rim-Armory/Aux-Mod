@@ -14,4 +14,9 @@ class CfgEditorSubcategories
     {
         displayName = "Resupply";
     };
+
+    class CLASS(EdSubcat_Utility)
+    {
+        displayName = "Utility";
+    };
 };
