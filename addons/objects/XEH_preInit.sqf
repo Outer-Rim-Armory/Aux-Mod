@@ -4,3 +4,4 @@
 
 call FUNC(registerLoadouts);
 call FUNC(registerWeapons);
+call FUNC(registerRankLoadouts);

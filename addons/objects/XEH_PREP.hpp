@@ -8,3 +8,4 @@ PREP(registerWeapons);
 PREP(giveWeapon);
 PREP(canShowWeaponOption);
 PREP(loadoutBoxInit);
+PREP(registerRankLoadouts);
