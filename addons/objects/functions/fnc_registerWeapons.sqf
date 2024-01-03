@@ -19,7 +19,7 @@ params [
 private ["_weapons"];
 TRACE_1("fnc_registerWeapons",_rebuild);
 
-_weapons = missionNamespace getVariable [QGVAR(_weapons), createHashmap];
+_weapons = missionNamespace getVariable [QGVAR(weapons), createHashMap];
 if (count _weapons isNotEqualTo 0 and !_rebuild) exitWith {
     _weapons;
 };

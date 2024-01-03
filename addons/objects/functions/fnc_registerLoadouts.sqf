@@ -19,7 +19,7 @@ params [
 private ["_loadouts"];
 TRACE_1("fnc_registerLoadouts",_rebuild);
 
-_loadouts = missionNamespace getVariable [QGVAR(_loadouts), createHashmap];
+_loadouts = missionNamespace getVariable [QGVAR(loadouts), createHashMap];
 if (count _loadouts isNotEqualTo 0 and !_rebuild) exitWith {
     _loadouts;
 };
