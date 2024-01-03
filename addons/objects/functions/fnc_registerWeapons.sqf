@@ -1,16 +1,16 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Assigns a specified loadout to the player
+ * Registers weapon options to missionNamespace
  *
  * Arguments:
- * weapon: String - Name of the weapon to load
+ * 0: Whether to rebuild the weapons hashmap <BOOL>
  *
  * Return Value:
- * None
+ * All registered weapons <HASHMAP>
  *
  * Example:
- * "Rifleman" call BNAKC_fnc_grabLoadout;
+ * call BNA_KC_objects_fnc_registerWeapons;
  */
 
 params [
