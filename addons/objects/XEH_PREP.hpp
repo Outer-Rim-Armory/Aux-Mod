@@ -5,4 +5,5 @@ PREP(openArsenal);
 PREP(registerLoadouts);
 PREP(registerWeapons);
 PREP(applyLoadout);
+PREP(canShowWeaponOption);
 PREP(loadoutBoxInit);

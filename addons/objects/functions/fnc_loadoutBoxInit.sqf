@@ -40,3 +40,24 @@ if (isNull _object) exitWith {};
         QUOTE(LOADOUTMENU_GETPAGE isEqualTo MENU_PAGE_HOME)
     ];
 } forEach LOADOUTS_KITS_LIST;
+
+{
+    _object addAction
+    [
+        format ["<t color='#FFFFFF'>%1</t>", _x],
+        {
+            params ["_target", "_caller", "_actionId", "_arguments"];
+            _arguments params ["_weapon"];
+            _weapon call FUNC(giveWeapon);
+            ace_player setVariable [QGVAR(LoadoutMenu_Page), nil];
+        },
+        [_x],
+        (count LOADOUTS_WEAPONS_LIST) - _forEachIndex,
+        false,
+        false,
+        "",
+        format [QUOTE(%1 call FUNC(canShowWeaponOption)), str _x]
+    ];
+} forEach LOADOUTS_WEAPONS_LIST;
+
+nil;
