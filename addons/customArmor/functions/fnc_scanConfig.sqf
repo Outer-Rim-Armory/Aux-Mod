@@ -19,7 +19,7 @@ params [
 private ["_customItems"];
 
 _customItems = missionNamespace getVariable [QGVAR(customItems), []];
-if (count _customItems isEqualTo 0 and !_rebuild) exitWith {
+if (_customItems isNotEqualTo [] and !_rebuild) exitWith {
     _customItems;
 };
 
