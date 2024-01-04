@@ -27,7 +27,7 @@ _hasShield = [
 
 if (isNull _vehicle or {
     _hasShield isEqualTo FALSE or
-    !(_vehicle getVariable [QGVAR(shieldActive), false])
+    !(_vehicle getVariable [QGVAR(isActive), false])
 }) exitWith {false};
 
 
