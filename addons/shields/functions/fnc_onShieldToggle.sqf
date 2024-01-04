@@ -20,7 +20,7 @@ _message = switch (_isActive) do {
 	case true: {
 		[_vehicle, true, true] call FUNC(getHealth) params ["_health", "_maxHealth"];
 		format [
-			"<t color='%1'>%2</t>",
+			"Shield <t color='#00FF00'>Enabled</t> | Strength <t color=%1'>%2</t>",
 			[_health, _maxHealth] call FUNC(healthColor),
 			_health
 		]
