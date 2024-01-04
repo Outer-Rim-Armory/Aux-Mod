@@ -32,9 +32,7 @@ if (isNull _vehicle or {
 }) exitWith {false};
 
 
-{
-    _x allowDamage false;
-} forEach crew _vehicle;
+{_x allowDamage false;} forEach crew _vehicle;
 
 _vehicle setVariable [QGVAR(isActive), true, true];
 
