@@ -1,1 +1,2 @@
 PREP(canActivate);
+PREP(canDeactivate);

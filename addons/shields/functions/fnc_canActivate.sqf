@@ -13,7 +13,6 @@
  * ace_player call BNA_KC_shields_canActivate;
  */
 
-
 params [
     ["_unit", objNull, [objNull]]
 ];
