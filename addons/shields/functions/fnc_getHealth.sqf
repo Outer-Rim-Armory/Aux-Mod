@@ -11,7 +11,7 @@
  * Shield health <NUMBER>
  *
  * Example:
- * objectParent ace_player call BNA_KC_shields_getHealth;
+ * objectParent ace_player call BNA_KC_shields_fnc_getHealth;
  */
 
 params [

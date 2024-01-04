@@ -11,7 +11,7 @@
  * Hex code for color <STRING>
  *
  * Example:
- * [50, 100] call BNA_KC_shields_getHealth;
+ * [50, 100] call BNA_KC_shields_fnc_healthColor;
  */
 
 params [

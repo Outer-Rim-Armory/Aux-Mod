@@ -10,7 +10,7 @@
  * Whether the unit can deactivate their vehicle's shield <BOOL>
  *
  * Example:
- * ace_player call BNA_KC_shields_canDeactivate;
+ * ace_player call BNA_KC_shields_fnc_canDeactivate;
  */
 
 params [

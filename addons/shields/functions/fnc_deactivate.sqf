@@ -10,7 +10,7 @@
  * Whether the vehicle's shield was deactivated <BOOL>
  *
  * Example:
- * objectParent ace_player call BNA_KC_shields_deactivate;
+ * objectParent ace_player call BNA_KC_shields_fnc_deactivate;
  */
 
 params [
