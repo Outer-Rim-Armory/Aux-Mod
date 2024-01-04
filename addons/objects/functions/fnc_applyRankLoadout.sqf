@@ -27,7 +27,7 @@ _values params ["_helmet", "_uniform", "_vest", "_nvg"];
 _magazines = magazines ace_player;
 _items = items ace_player;
 
-{removeMagazine _x} forEach _magazines;
+{ace_player removeMagazine _x} forEach _magazines;
 removeAllItems ace_player;
 
 ace_player addHeadgear _helmet;
