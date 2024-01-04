@@ -21,9 +21,9 @@ class CfgVehicles
                 selection = "airbrake1_axis";
                 distance = 2;
 
-                condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canFullRechargeShield));
-                statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(shieldFullChargeAction));
-                modifierFunction = QUOTE(_this call FUNC(shieldActionModifier));
+                // condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canFullRechargeShield));
+                // statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(shieldFullChargeAction));
+                // modifierFunction = QUOTE(_this call FUNC(shieldActionModifier));
             };
             class RechargeShield_Right: RechargeShield_Left
             {
@@ -33,7 +33,27 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            // Self actions
+            class CLASS(Shield)
+            {
+                displayName = "Shield Health: %1";
+                condition = "true";
+                statement = "";
+                // modifierFunction = QUOTE(_this call FUNC(modifyInteraction))
+
+                class Activate
+                {
+                    displayName = "Activate Shield";
+                    condition = QUOTE(ace_player call FUNC(canActivate));
+                    statement = QUOTE(_this call FUNC(activate));
+                };
+
+                class Deactivate
+                {
+                    displayName = "Deactivate Shield";
+                    condition = QUOTE(ace_player call FUNC(canDectivate));
+                    statement = QUOTE(_this call FUNC(deactivate));
+                };
+            };
         };
     };
 };
