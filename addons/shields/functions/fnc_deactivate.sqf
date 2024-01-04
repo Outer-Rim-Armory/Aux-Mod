@@ -17,7 +17,7 @@ params [
     ["_vehicle", objNull, [objNull]]
 ];
 private ["_hasShield", "_shieldHealth"];
-TRACE_1("fnc_activate",_vehicle);
+TRACE_1("fnc_deactivate",_vehicle);
 
 _hasShield = [
     configFile >> "CfgVehicles" >> typeOf _vehicle,
