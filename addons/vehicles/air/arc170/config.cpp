@@ -19,6 +19,7 @@ class CfgPatches
         };
         units[] =
         {
+            QCLASS(ARC170)
         };
         weapons[] = {};
         VERSION_CONFIG;
