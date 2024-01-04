@@ -23,4 +23,12 @@ class Extended_Init_EventHandlers
             clientInit = QUOTE(_this call FUNC(loadoutBoxInit));
         };
     };
+
+    class CLASS(Gonk_Uniforms)
+    {
+        class GVAR(uniformBoxInit)
+        {
+            clientInit = QUOTE(_this call FUNC(uniformBoxInit));
+        };
+    };
 };

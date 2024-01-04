@@ -10,3 +10,4 @@ PREP(canShowWeaponOption);
 PREP(loadoutBoxInit);
 PREP(registerRankLoadouts);
 PREP(applyRankLoadout);
+PREP(uniformBoxInit);
