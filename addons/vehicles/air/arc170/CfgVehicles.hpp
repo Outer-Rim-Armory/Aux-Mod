@@ -41,11 +41,6 @@ class CfgVehicles
             "Laserbatteries"
         };
 
-        GVAR(hasShield) = TRUE;
-        GVAR(shieldMaxHealth) = 20;
-        GVAR(shieldRegenTime) = 10; // Time in seconds without taking damage to start regenerating
-        GVAR(shieldRegenRate) = 1;  // Health to regen after _regenTime
-
         // TODO: Update textures to use new base 3AS textures
         hiddenSelectionsTextures[] =
         {
@@ -83,28 +78,9 @@ class CfgVehicles
             };
         };
 
-        class ACE_Actions: ACE_Actions
-        {
-            class RechargeShield_Left
-            {
-                displayName = "Recharge Shield: %1";
-                selection = "airbrake1_axis";
-                distance = 2;
-
-                condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canFullRechargeShield));
-                statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(shieldFullChargeAction));
-                modifierFunction = QUOTE(_this call FUNC(shieldActionModifier));
-            };
-            class RechargeShield_Right: RechargeShield_Left
-            {
-                selection = "airbrake2_axis";
-            };
-        };
-
         class ACE_SelfActions: ACE_SelfActions
         {
             // INTERACTION_HUD_CHANGER;
-            // INTERACTION_SHIELD_ACTIONS;
 
             class SpawnCrew
             {

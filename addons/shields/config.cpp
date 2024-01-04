@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
 
 
@@ -11,7 +12,8 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            QCLASS(core)
+            QCLASS(core),
+            QEGVAR(vehicles,loadOrder)
         };
         units[] = {};
         weapons[] = {};
