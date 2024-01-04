@@ -38,7 +38,7 @@ _vehicle setVariable [QGVAR(isActive), true, true];
 
 if (_vehicle getVariable [QGVAR(health), -1] isEqualTo -1) then {
     _shieldHealth = [
-        (configFile >> "CfgVehicles" >> typeOf _vehicle),
+        configFile >> "CfgVehicles" >> typeOf _vehicle,
         QGVAR(health),
         SHIELD_HEALTH_DEFAULT
     ] call BIS_fnc_returnConfigEntry;
