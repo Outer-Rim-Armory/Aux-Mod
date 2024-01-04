@@ -22,7 +22,7 @@ params [
     ["_returnMax", false, [true]]
 ];
 private ["_maxHealth", "_health", "_return"];
-TRACE_2("fnc_getHealth",_vehicle,_returnPercent,_returnMax);
+TRACE_3("fnc_getHealth",_vehicle,_returnPercent,_returnMax);
 
 _hasShield = [
     configFile >> "CfgVehicles" >> typeOf _vehicle,
