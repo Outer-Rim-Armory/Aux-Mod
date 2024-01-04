@@ -23,7 +23,8 @@ class CfgPatches
             "SWLB_equipment_backpacks",
             "SWLB_Clones",
             "SWLB_CEE",
-            "JLTS_core"
+            "JLTS_core",
+            "JLTS_characters_CloneArmor2"
         };
         units[] =
         {
