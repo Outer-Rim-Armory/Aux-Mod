@@ -14,6 +14,9 @@
 
 #define CLASS(var1) DOUBLES(PREFIX,var1)
 #define QCLASS(var1) QUOTE(CLASS(var1))
+#define QQCLASS(var1) QUOTE(QCLASS(var1))
+
+#define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> var1)
 
 #define GETVAR_SYS(var1,var2) getVariable [ARR_2(QUOTE(var1),var2)]
 #define SETVAR_SYS(var1,var2) setVariable [ARR_2(QUOTE(var1),var2)]
@@ -41,6 +44,7 @@
 #define EEDITOR_PREVIEW(COMPONENT,CLASS) QUOTE(PATHTOF_SYS(PREFIX,COMPONENT,data\previews\CLASS.jpg))
 
 #define QQPATHTOF(var1) QUOTE(QPATHTOF(var1))
+#define QQPATHTOEF(var1,var2) QUOTE(QPATHTOEF(var1,var2))
 
 #define SCOPE_PUBLIC scope = 2; \
 scopeArsenal = 2; \

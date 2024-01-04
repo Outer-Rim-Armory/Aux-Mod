@@ -18,8 +18,8 @@ params [
 ];
 private ["_customItems"];
 
-_customItems = GETMVAR(GVAR(customItems),[]);
-if (count _customItems isEqualTo 0 and !_rebuild) exitWith {
+_customItems = missionNamespace getVariable [QGVAR(customItems), []];
+if (_customItems isNotEqualTo [] and !_rebuild) exitWith {
     _customItems;
 };
 
