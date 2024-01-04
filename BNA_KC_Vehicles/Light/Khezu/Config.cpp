@@ -7,6 +7,7 @@ class CfgVehicles
     class Car_F;
     class UGV_01_base_F: Car_F
     {
+        class Turrets;
         class HitPoints;
     };
     class B_UGV_01_F: UGV_01_base_F
@@ -158,17 +159,23 @@ class CfgVehicles
         };
     };
 
-    class Car_F;
-    class UGV_01_base_F: Car_F
-    {
-        class Turrets;
-    };
     class UGV_01_rcws_base_F: UGV_01_base_F
     {
         class Turrets: Turrets
         {
             class MainTurret;
             class CargoTurret_01;
+        };
+        class HitPoints: HitPoints
+        {
+            class HitBody;
+            class HitEngine;
+            class HitFuel;
+            class HitHull;
+            class HitLBWheel;
+            class HitLFWheel;
+            class HitRBWheel;
+            class HitRFWheel;
         };
     };
     class B_UGV_01_rcws_F: UGV_01_rcws_base_F {};
@@ -246,6 +253,64 @@ class CfgVehicles
                 };
             };
             class CargoTurret_01: CargoTurret_01 {};
+        };
+
+        class HitPoints: HitPoints
+        {
+            class HitBody: HitBody
+            {
+                armor = 4;
+                explosionShielding = 1;
+                passThrough = 1;
+                minimalHit = 0.01;
+            };
+            class HitEngine: HitEngine
+            {
+                armor = 0.5;
+                explosionShielding = 0.4;
+                minimalHit = 0.2;
+                passThrough = 0.4;
+            };
+            class HitFuel: HitFuel
+            {
+                armor = 0.5;
+                explosionShielding = 0.1;
+                minimalHit = 0.2;
+                passThrough = 0.2;
+            };
+            class HitHull: HitHull
+            {
+                armor = 1;
+                explosionShielding = 0.2;
+                minimalHit = 0.2;
+                passThrough = 0.2;
+            };
+            class HitLBWheel: HitLBWheel
+            {
+                armor = 0.2;
+                explosionShielding = 4;
+                passThrough = 0.3;
+            };
+            class HitLFWheel: HitLFWheel
+            {
+                armor = -250;
+                explosionShielding = 4;
+                minimalHit = -0.016;
+                passThrough = 0;
+            };
+            class HitRBWheel: HitRBWheel
+            {
+                armor = 0.2;
+                explosionShielding = 4;
+                passThrough = 0.3;
+            };
+            class HitRFWheel: HitRFWheel
+            {
+                armor = -250;
+                explosionShielding = 4;
+                minimalHit = -0.016;
+                passThrough = 0;
+            };
         };
     };
 };
