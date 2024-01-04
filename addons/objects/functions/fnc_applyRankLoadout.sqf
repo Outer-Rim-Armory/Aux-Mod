@@ -23,8 +23,12 @@ _rankLoadouts = missionNamespace getVariable [QGVAR(rankLoadouts), [] call FUNC(
 _values = _rankLoadouts getOrDefaultCall [_rank, {hint format ["Rank '%1' does not exist.", _rank];}];
 _values params ["_helmet", "_uniform", "_vest", "_nvg"];
 
+// Save and then remove all inventory items
 _magazines = magazines ace_player;
 _items = items ace_player;
+
+{removeMagazine _x} forEach _magazines;
+removeAllItems ace_player;
 
 ace_player addHeadgear _helmet;
 ace_player forceAddUniform _uniform;
