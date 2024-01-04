@@ -1,11 +1,13 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Returns a vehicle's shield health.
+ * Returns a vehicle's shield health. Can optionally return max health and current health, or format health as a percent.
  *
  * Arguments:
  * 0: The vehicle <OBJECT>
  * 1: Whether to return the value as a percent (optional, default: false) <BOOL>
+ * 2: Return max health with current health (optional, default: false)
+ *    - [currentHealth, maxHealth]
  *
  * Return Value:
  * Shield health <NUMBER>
@@ -16,10 +18,11 @@
 
 params [
     ["_vehicle", objNull, [objNull]],
-    ["_returnPercent", false, [true]]
+    ["_returnPercent", false, [true]],
+    ["_returnMax", false, [true]]
 ];
-private ["_maxHealth", "_health"];
-TRACE_2("fnc_getHealth",_vehicle,_returnPercent);
+private ["_maxHealth", "_health", "_return"];
+TRACE_2("fnc_getHealth",_vehicle,_returnPercent,_returnMax);
 
 _hasShield = [
     configFile >> "CfgVehicles" >> typeOf _vehicle,
@@ -39,8 +42,17 @@ _maxHealth = [
 ] call BIS_fnc_returnConfigEntry;
 _health = _vehicle getVariable [QGVAR(health), _maxHealth];
 
-if (_returnPercent) then {
-    _health = round ((_health / _maxHealth) * 100);
+_return = switch (true) do {
+    case (_returnPercent and !_returnMax): {
+        round ((_health / _maxHealth) * 100);
+    };
+    case (_returnPercent and _returnMax): {
+        [round ((_health / _maxHealth) * 100), 100];
+    };
+    case (!_returnPercent and _returnMax): {
+        [_health, _maxHealth];
+    };
+    default {_health;};
 };
 
-_health;
+_return;
