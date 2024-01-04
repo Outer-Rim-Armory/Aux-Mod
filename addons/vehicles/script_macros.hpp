@@ -69,6 +69,28 @@
     }; \
 };
 
+#define INTERACTION_SHIELD_ACTIONS class Shield \
+{ \
+    displayName = "Shield Health: %1"; \
+    condition = "true"; \
+    statement = ""; \
+    modifierFunction = QUTOE(_this call FUNC(shieldActionModifier)); \
+    runOnHover = FALSE; \
+
+    class Activate \
+    { \
+        displayName = "Activate Shield"; \
+        condition = QUOTE(!(_this#0 getVariable [QQGVAR(shieldActive), false]) and ace_player == driver (_this#0) and !(_this#0 getVariable ['BNA_KC_Shield_isRecharging', false])); \
+        statement = QUOTE(_this#0 call FUNC(activateShield)); \
+    }; \
+    class Deactivate \
+    { \
+        displayName = "Deactivate Shield"; \
+        condition = QUOTE(_this#0 getVariable [QQGVAR(shieldActive), false] and ace_player == driver (_this#0)); \
+        statement = QUOTE(_this#0 call FUNC(deactivateShield)); \
+    }; \
+};
+
 #define INVENTORY_VEHICLE_BASE(CREW_COUNT) class TransportWeapons \
 { \
     WEAP_XX(CLASS(DC15S),__EVAL(1 * CREW_COUNT)); \
