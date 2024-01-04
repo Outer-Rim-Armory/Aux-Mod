@@ -30,8 +30,8 @@ if (isNull _vehicle or {
     !alive _vehicle or
     _unit isNotEqualTo (currentPilot _vehicle) or
     _hasShield isEqualTo FALSE or
-    _vehicle getVariable [QGVAR(shieldActive), false] or
-    _vehicle getVariable [QGVAR(shieldRecharging), false]
+    _vehicle getVariable [QGVAR(isActive), false] or
+    _vehicle getVariable [QGVAR(isRecharging), false]
 }) exitWith {false};
 
 true;

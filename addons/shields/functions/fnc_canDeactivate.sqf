@@ -24,7 +24,7 @@ _vehicle = objectParent _unit;
 if (isNull _vehicle or {
     !alive _vehicle or
     _unit isNotEqualTo (currentPilot _vehicle) or
-    !(_vehicle getVariable [QGVAR(shieldActive), false])
+    !(_vehicle getVariable [QGVAR(isActive), false])
 }) exitWith {false};
 
 true;
