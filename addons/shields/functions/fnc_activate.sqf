@@ -16,7 +16,7 @@
 params [
     ["_vehicle", objNull, [objNull]]
 ];
-private ["_hasShield", "_shieldHealth", "_fullCrew"];
+private ["_hasShield", "_shieldHealth"];
 TRACE_1("fnc_activate",_vehicle);
 
 _hasShield = [
