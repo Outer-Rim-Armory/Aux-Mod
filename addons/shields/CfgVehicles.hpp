@@ -9,9 +9,9 @@ class CfgVehicles
     class CLASS(ARC170): 3AS_ARC_170_Base
     {
         GVAR(hasShield) = TRUE;
-        GVAR(health) = 20;
-        GVAR(regenDelay) = 10;
-        GVAR(regenAmount) = 1;
+        GVAR(health) = SHIELD_HEALTH_DEFAULT;
+        GVAR(regenDelay) = SHIELD_REGEN_TIME_DEFAULT;
+        GVAR(regenAmount) = SHIELD_REGEN_RATE_DEFAULT;
 
         class ACE_Actions: ACE_Actions
         {
