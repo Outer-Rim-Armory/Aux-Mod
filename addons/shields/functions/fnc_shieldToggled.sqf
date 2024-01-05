@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * ["BNA_KC_shields_shieldToggled", {call BNA_KC_shields_fnc_onShieldToggle}];
+ * ["BNA_KC_shields_shieldToggled", {call BNA_KC_shields_fnc_shieldToggled}];
  */
 
 params ["_vehicle", "_isActive", "_health"];

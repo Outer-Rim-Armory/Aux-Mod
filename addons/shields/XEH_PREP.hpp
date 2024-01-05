@@ -7,6 +7,6 @@ PREP(getHealth);
 PREP(handleDamage);
 PREP(healthColor);
 PREP(modifyInteraction);
-PREP(onShieldToggle);
 PREP(removeShieldHandlers);
 PREP(shieldHealthChanged);
+PREP(shieldToggled);
