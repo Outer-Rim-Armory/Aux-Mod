@@ -50,7 +50,7 @@ class CfgVehicles
                 class Deactivate
                 {
                     displayName = "Deactivate Shield";
-                    condition = QUOTE(ace_player call FUNC(canDectivate));
+                    condition = QUOTE(ace_player call FUNC(canDeactivate));
                     statement = QUOTE(_this call FUNC(deactivate));
                 };
             };

@@ -20,10 +20,15 @@ private ["_vehicle"];
 TRACE_1("fnc_canDeactivate",_unit);
 
 _vehicle = objectParent _unit;
+_hasShield = [
+    configFile >> "CfgVehicles" >> typeOf _vehicle,
+    QGVAR(hasShield),
+    FALSE
+];
 
 if (isNull _vehicle or {
-    !alive _vehicle or
     _unit isNotEqualTo (currentPilot _vehicle) or
+    _hasShield isEqualTo FALSE or
     !(_vehicle getVariable [QGVAR(isActive), false])
 }) exitWith {false};
 
