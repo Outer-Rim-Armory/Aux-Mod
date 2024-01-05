@@ -4,10 +4,7 @@
  * Modifier for the main shield ace action
  *
  * Arguments:
- * target: Object - The object the action is assigned to
- * player: Object - ace_player
- * params: Array - Parameters passed to the ace action
- * actionData: Array - Action name, icon, etc.
+ * See https://ace3.acemod.org/wiki/framework/interactionmenu-framework
  *
  * Return Value:
  * None
