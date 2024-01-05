@@ -33,27 +33,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            class CLASS(Shield)
-            {
-                displayName = "Shield Health: %1";
-                condition = "true";
-                statement = "";
-                modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
-
-                class Activate
-                {
-                    displayName = "Activate Shield";
-                    condition = QUOTE(ace_player call FUNC(canActivate));
-                    statement = QUOTE(_this call FUNC(activate));
-                };
-
-                class Deactivate
-                {
-                    displayName = "Deactivate Shield";
-                    condition = QUOTE(ace_player call FUNC(canDeactivate));
-                    statement = QUOTE(_this call FUNC(deactivate));
-                };
-            };
+            SELFINTERACTION_SHIELD_TOGGLE;
         };
     };
 };
