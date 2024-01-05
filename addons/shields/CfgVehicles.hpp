@@ -10,8 +10,8 @@ class CfgVehicles
     {
         GVAR(hasShield) = TRUE;
         GVAR(health) = SHIELD_HEALTH_DEFAULT;
-        GVAR(regenDelay) = SHIELD_REGEN_TIME_DEFAULT;
-        GVAR(regenAmount) = SHIELD_REGEN_RATE_DEFAULT;
+        GVAR(regenDelay) = SHIELD_REGEN_DELAY_DEFAULT;
+        GVAR(regenAmount) = SHIELD_REGEN_AMOUNT_DEFAULT;
 
         class ACE_Actions: ACE_Actions
         {
