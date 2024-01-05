@@ -23,7 +23,7 @@ class CfgVehicles
 
                 // condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canFullRechargeShield));
                 // statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(shieldFullChargeAction));
-                // modifierFunction = QUOTE(_this call FUNC(shieldActionModifier));
+                // modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
             };
             class RechargeShield_Right: RechargeShield_Left
             {
@@ -38,7 +38,7 @@ class CfgVehicles
                 displayName = "Shield Health: %1";
                 condition = "true";
                 statement = "";
-                // modifierFunction = QUOTE(_this call FUNC(modifyInteraction))
+                modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
 
                 class Activate
                 {
