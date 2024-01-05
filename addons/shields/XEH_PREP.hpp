@@ -9,4 +9,5 @@ PREP(healthColor);
 PREP(modifyInteraction);
 PREP(removeShieldHandlers);
 PREP(shieldHealthChanged);
+PREP(shieldRegenHandler);
 PREP(shieldToggled);

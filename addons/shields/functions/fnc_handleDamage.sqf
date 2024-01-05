@@ -32,15 +32,16 @@ if (_newHealth isEqualTo 0) then {
 };
 
 _currentTime = CBA_missionTime;
-_lastSound = _vehicle getVariable [QGVAR(lastHitSound), -SHIELD_HIT_SOUND_COOLDOWN];
+_lastHitSound = _vehicle getVariable [QGVAR(lastHitSound), -SHIELD_HIT_SOUND_COOLDOWN];
 
-if ((_currentTime - _lastSound) >= SHIELD_HIT_SOUND_COOLDOWN) then {
+if ((_currentTime - _lastHitSound) >= SHIELD_HIT_SOUND_COOLDOWN) then {
     playSound3D [
         format ["\lsb_sounds\deflector\shield_hit%1.wss", floor (random 7) + 1],
         _vehicle
     ];
+    _vehicle setVariable [QGVAR(lastHitSound), _currentTime];
 };
-_vehicle setVariable [QGVAR(lastHitSound), _currentTime, true];
+_vehicle setVariable [QGVAR(lastHit), _currentTime];
 
 // Set damage on selection
 _vehicle getHit _selection;
