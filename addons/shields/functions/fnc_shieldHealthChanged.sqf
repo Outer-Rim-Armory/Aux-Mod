@@ -18,14 +18,15 @@
  */
 
 params ["_vehicle", "_oldHealth", "_newHealth"];
-private ["_maxHealth", "_message"];
+private ["_maxHealth", "_healthPercent", "_message"];
 TRACE_3("fnc_shieldHealthChanged",_vehicle,_oldHealth,_newHealth);
 
 _maxHealth = ([_vehicle, false, true] call FUNC(getHealth)) select 1;
+_healthPercent = [_vehicle, true] call FUNC(getHealth);
 _message = format [
     "Strength <t color='%1'>%2%3</t>",
     [_health, _maxHealth] call FUNC(healthColor),
-    _health,
+    _healthPercent,
     "%"
 ];
 
