@@ -22,6 +22,6 @@ private ["_color"];
 TRACE_2("fnc_healthColor",_health,_maxHealth);
 
 _color = SHIELD_DAMAGE_COLOR_SCALE select (
-	linearConversion [0, 1, (_health/_maxHealth), 0, 8, true]
+    linearConversion [0, 1, (_health/_maxHealth), 0, 8, true]
 );
 _color;

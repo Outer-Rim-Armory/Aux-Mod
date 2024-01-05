@@ -33,12 +33,12 @@ TRACE_5("fnc_attachmentSwap", _unit, _weapon, _newMagazine, _isEnabled, _attachm
 
 if (_isEnabled isEqualTo FALSE) exitWith {};
 if (count _attachments isEqualTo 0) exitWith {
-	WARNING_2("Weapon %1 has %2 enabled but does not have any attachments set.", _weapon, QGVAR(attachmentSwapEnabled))
+    WARNING_2("Weapon %1 has %2 enabled but does not have any attachments set.", _weapon, QGVAR(attachmentSwapEnabled))
 };
 
 {
-	private ["_property", "_attachment", "_matches"];
-	_x params ["_property", "_attachment"];
+    private ["_property", "_attachment", "_matches"];
+    _x params ["_property", "_attachment"];
 
     _matches = [
         configFile >> "CfgMagazines" >> _newMagazine#0,
@@ -49,6 +49,6 @@ if (count _attachments isEqualTo 0) exitWith {
     // Only add the first attachment that matches
     if (_matches isEqualTo TRUE) exitWith {
         _unit addWeaponItem [_weapon, _attachment, true];
-		INFO_2("Adding attachment %1 to %2", _attachment, _weapon);
+        INFO_2("Adding attachment %1 to %2", _attachment, _weapon);
     };
 } forEach _attachments;

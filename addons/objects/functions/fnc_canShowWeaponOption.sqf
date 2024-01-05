@@ -14,7 +14,7 @@
  */
 
 params [
-	["_weapon", "", [""]]
+    ["_weapon", "", [""]]
 ];
 private ["_mos", "_loadouts", "_mosWeapons", "_loadoutPage"];
 TRACE_1("fnc_canShowWeaponOption",_weapon);

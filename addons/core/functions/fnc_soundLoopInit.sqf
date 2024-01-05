@@ -14,7 +14,7 @@
  */
 
 params [
-	["_object", objNull, [objNull]]
+    ["_object", objNull, [objNull]]
 ];
 private ["_filePath", "_soundDelay"];
 TRACE_1("fnc_soundLoopInit",_object);
