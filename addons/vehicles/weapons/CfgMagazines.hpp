@@ -79,12 +79,19 @@ class CfgMagazines
         tracersEvery=1;
     };
 
-    class 3AS_9999Rnd_ATRT_Mag;
-    class BNA_KC_9999Rnd_ATRT_Turret_Magazine: 3AS_9999Rnd_ATRT_Mag
+    class CLASS(Mag_Base);
+    class CLASS(Mag_9999Rnd_ATRT): CLASS(Mag_Base)
     {
-        ammo = "BNA_KC_ATRT_Turret_Ammo";
+        SCOPE_HIDDEN;
         displayName = "[KC] AT-RT Turret Battery Pack";
-        displayNameShort = "";
-        descriptionShort = "Standard battery pack for the AT-RT";
+        displayNameShort = "Standard Energy";
+        descriptionShort = "Energy Cell Pack<br/>Used In AT-RT";
+        ammo = QCLASS(Bullet_PlasmaATRT_Blue);
+
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+
+        initSpeed = 400;
+        mass = 10;
     };
 };

@@ -62,10 +62,10 @@ class CfgAmmo
     };
 
     class 3AS_ATRT_bluePlasma;
-    class BNA_KC_ATRT_Turret_Ammo: 3AS_ATRT_bluePlasma
+    class CLASS(Bullet_PlasmaATRT_Blue): 3AS_ATRT_bluePlasma
     {
-        caliber = 6; // How much geometry the bullet can pass through
-        hit = 120;      // Damage when bullet speed is >= typicalSpeed
+        caliber = 6;
+        hit = 120;
         typicalSpeed = 400;
         coefGravity = 0.01;
 

@@ -17,7 +17,8 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(weapons)
+            QCLASS(weapons),
+            "3AS_Weapons"
         };
         units[] = {};
         weapons[] =
