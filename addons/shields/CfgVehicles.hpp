@@ -21,9 +21,9 @@ class CfgVehicles
                 selection = "airbrake1_axis";
                 distance = 2;
 
-                // condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canFullRechargeShield));
-                // statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(shieldFullChargeAction));
-                // modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
+                condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canExternalRecharge));
+                statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(externalRecharge));
+                modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
             };
             class RechargeShield_Right: RechargeShield_Left
             {
