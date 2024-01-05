@@ -61,10 +61,10 @@ class CfgMagazines
         tracersEvery=1;
     };
     class 100Rnd_105mm_HEAT_MP;
-    class BNA_KC_100rnd_105mm: 100Rnd_105mm_HEAT_MP
+    class CLASS(Mag_100rnd_105mm): 100Rnd_105mm_HEAT_MP
     {
-        ammo = "BNA_KC_105mm_Ammo";
-        tracersEvery=1;
+        ammo = QCLASS(Bullet_PlasmaCannon_105mm_Green);
+        tracersEvery = 1;
     };
     class 240Rnd_40mm_GPR_Tracer_Red_shells;
     class BNA_KC_40mm_GPR_240rnd: 240Rnd_40mm_GPR_Tracer_Red_shells

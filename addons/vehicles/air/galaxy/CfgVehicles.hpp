@@ -45,12 +45,12 @@ class CfgVehicles
             {
                 weapons[] =
                 {
-                    QCLASS(105mm),
+                    QCLASS(Cannon_105mm),
                     QCLASS(Gatling_20mm)
                 };
                 magazines[] =
                 {
-                    QCLASS(100rnd_105mm),
+                    QCLASS(Mag_100rnd_105mm),
                     QCLASS(4000rnd_20mm)
                 };
             };

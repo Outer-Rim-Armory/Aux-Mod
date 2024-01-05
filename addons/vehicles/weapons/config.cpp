@@ -23,6 +23,7 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(Cannon_105mm)
         };
         VERSION_CONFIG;
     };

@@ -40,7 +40,7 @@ class CfgAmmo
         coefGravity = 0.01;
     };
     class Sh_105mm_HEAT_MP;
-    class BNA_KC_105mm_Ammo: Sh_105mm_HEAT_MP
+    class CLASS(Bullet_PlasmaCannon_105mm_Green): Sh_105mm_HEAT_MP
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";

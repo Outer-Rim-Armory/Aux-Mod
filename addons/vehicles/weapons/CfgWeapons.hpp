@@ -403,18 +403,15 @@ class CfgWeapons
     {
         class player;
     };
-    class BNA_KC_105mm: cannon_105mm_VTOL_01
+    class CLASS(Cannon_105mm): cannon_105mm_VTOL_01
     {
-        magazines[]=
+        magazines[] =
         {
-            "BNA_KC_100rnd_105mm"
+            QCLASS(Mag_100rnd_105mm)
         };
         class player: player
         {
-            sounds[]=
-            {
-                "StandardSound"
-            };
+            sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
                 closure1[]=
