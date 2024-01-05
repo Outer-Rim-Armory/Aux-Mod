@@ -14,8 +14,8 @@ class CfgPatches
         {
             QUOTE(ADDON),
             QCLASS(armor),
-            QCLASS(vehicles_weapons),
-            QCLASS(vehicles_sounds)
+            QGVAR(weapons),
+            QGVAR(sounds)
         };
         units[] =
         {
