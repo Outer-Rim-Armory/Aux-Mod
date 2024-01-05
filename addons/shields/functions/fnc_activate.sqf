@@ -32,9 +32,8 @@ if (isNull _vehicle or {
 }) exitWith {false};
 
 
-{_x allowDamage false;} forEach crew _vehicle;
-
 _vehicle setVariable [QGVAR(isActive), true, true];
+{_x allowDamage false;} forEach crew _vehicle;
 
 if (_vehicle getVariable [QGVAR(health), -1] isEqualTo -1) then {
     _shieldHealth = [
@@ -45,7 +44,7 @@ if (_vehicle getVariable [QGVAR(health), -1] isEqualTo -1) then {
     _vehicle setVariable [QGVAR(health), _shieldHealth, true];
 };
 
-// _vehicle call FUNC(addShieldHandlers);
+_vehicle call FUNC(addShieldHandlers);
 
 [QGVAR(shieldToggled), [
     _vehicle,

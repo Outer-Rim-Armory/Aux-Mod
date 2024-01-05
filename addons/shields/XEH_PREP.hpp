@@ -1,8 +1,11 @@
 PREP(activate);
+PREP(addShieldHandlers);
 PREP(canActivate);
 PREP(canDeactivate);
 PREP(deactivate);
 PREP(getHealth);
+PREP(handleDamage);
 PREP(healthColor);
 PREP(modifyInteraction);
 PREP(onShieldToggle);
+PREP(removeShieldHandlers);

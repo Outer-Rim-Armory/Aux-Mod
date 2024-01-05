@@ -31,11 +31,10 @@ if (isNull _vehicle or {
 }) exitWith {false};
 
 
+_vehicle setVariable [QGVAR(isActive), false, true];
 {_x allowDamage true;} forEach crew _vehicle;
 
-_vehicle setVariable [QGVAR(isActive), false, true];
-
-// _vehicle call FUNC(removeShieldHandlers);
+_vehicle call FUNC(removeShieldHandlers);
 
 [QGVAR(shieldToggled), [
     _vehicle,
