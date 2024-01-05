@@ -166,7 +166,7 @@ class CfgAmmo
 
     class CLASS(Bullet_PlasmaMachineGun_Blue): CLASS(Bullet_PlasmaCarbine_Blue)
     {
-        hit = 15;
+        hit = 19;
         caliber = 2.5;
         tracerscale = 1.3;
     };
