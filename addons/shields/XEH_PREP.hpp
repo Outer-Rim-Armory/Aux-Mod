@@ -9,3 +9,4 @@ PREP(healthColor);
 PREP(modifyInteraction);
 PREP(onShieldToggle);
 PREP(removeShieldHandlers);
+PREP(shieldHealthChanged);
