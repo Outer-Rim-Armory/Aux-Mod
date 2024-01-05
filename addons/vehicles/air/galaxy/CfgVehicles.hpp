@@ -35,7 +35,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            // INTERACTION_HUD_CHANGER
+            SELFINTERACTION_HUD_CHANGER;
         };
 
         class Turrets: Turrets
@@ -65,7 +65,7 @@ class CfgVehicles
             };
         };
 
-        INVENTORY_VEHICLE_BASE(4)
+        INVENTORY_VEHICLE_BASE(4);
     };
     class CLASS(HAG_Base): CLASS(Galaxy_Gunship)
     {
@@ -94,10 +94,10 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            // INTERACTION_HUD_CHANGER
+            SELFINTERACTION_HUD_CHANGER;
         };
 
-        INVENTORY_VEHICLE_BASE(4)
+        INVENTORY_VEHICLE_BASE(4);
     };
     class CLASS(HVT_Base): CLASS(Galaxy_Transport_Vehicle)
     {
@@ -126,10 +126,10 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            // INTERACTION_HUD_CHANGER
+            SELFINTERACTION_HUD_CHANGER;
         };
 
-        INVENTORY_VEHICLE_BASE(4)
+        INVENTORY_VEHICLE_BASE(4);
     };
     class CLASS(HIT_Base): CLASS(Galaxy_Transport_Infantry)
     {

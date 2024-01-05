@@ -79,7 +79,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            // INTERACTION_HUD_CHANGER;
+            SELFINTERACTION_HUD_CHANGER;
 
             class SpawnCrew
             {
