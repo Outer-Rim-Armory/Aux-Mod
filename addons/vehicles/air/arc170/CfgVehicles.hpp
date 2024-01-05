@@ -41,7 +41,6 @@ class CfgVehicles
             "Laserbatteries"
         };
 
-        // TODO: Update textures to use new base 3AS textures
         hiddenSelectionsTextures[] =
         {
             QPATHTOF(air\arc170\data\textures\Main_Frame_co.paa),
