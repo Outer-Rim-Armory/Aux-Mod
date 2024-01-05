@@ -32,3 +32,5 @@ _message = switch (_isActive) do {
 };
 
 [_message, 1.5, currentPilot _vehicle] call ace_common_fnc_displaytextstructured;
+
+nil;
