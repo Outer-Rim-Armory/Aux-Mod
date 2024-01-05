@@ -27,10 +27,10 @@ TRACE_2("fnc_disableDroidekaShields", _droidekas, _shields);
 // Faster to not check the array counts and to just loop over an empty array
 
 {
-	_x setHitPointDamage ["HitShield", 1];
-	_x animateSource ["ShieldLayer_BaseFront", 1, true]; // Shield won't update until hit or animated
+    _x setHitPointDamage ["HitShield", 1];
+    _x animateSource ["ShieldLayer_BaseFront", 1, true]; // Shield won't update until hit or animated
 } forEach _droidekas;
 
 {
-	deleteVehicle _x;
+    deleteVehicle _x;
 } forEach _shields;

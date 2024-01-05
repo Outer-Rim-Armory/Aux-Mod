@@ -1,0 +1,15 @@
+PREP(activate);
+PREP(addShieldHandlers);
+PREP(canActivate);
+PREP(canDeactivate);
+PREP(canExternalRecharge);
+PREP(deactivate);
+PREP(externalRecharge);
+PREP(getHealth);
+PREP(handleDamage);
+PREP(healthColor);
+PREP(modifyInteraction);
+PREP(removeShieldHandlers);
+PREP(shieldHealthChanged);
+PREP(shieldRegenHandler);
+PREP(shieldToggled);

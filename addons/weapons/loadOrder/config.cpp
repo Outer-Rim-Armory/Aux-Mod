@@ -12,27 +12,27 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(weapons_dc15a),
-            QCLASS(weapons_dc15c),
-            QCLASS(weapons_dc15l),
-            QCLASS(weapons_dc15s),
-            QCLASS(weapons_dc15sa),
-            QCLASS(weapons_dc15x),
-            QCLASS(weapons_dc17),
-            QCLASS(weapons_dc17m),
-            QCLASS(weapons_dp23),
-            QCLASS(weapons_e5),
-            QCLASS(weapons_e5c),
-            QCLASS(weapons_e60r),
-            QCLASS(weapons_gr20),
-            QCLASS(weapons_hi12),
-            QCLASS(weapons_lw38),
-            QCLASS(weapons_rps6),
-            QCLASS(weapons_rps7),
-            QCLASS(weapons_valken38x),
-            QCLASS(weapons_westarM5),
-            // QCLASS(weapons_x42), // Not included due to Burn 'Em requirement, causes circular dependency
-            QCLASS(weapons_z6)
+            QGVAR(dc15a),
+            QGVAR(dc15c),
+            QGVAR(dc15l),
+            QGVAR(dc15s),
+            QGVAR(dc15sa),
+            QGVAR(dc15x),
+            QGVAR(dc17),
+            QGVAR(dc17m),
+            QGVAR(dp23),
+            QGVAR(e5),
+            QGVAR(e5c),
+            QGVAR(e60r),
+            QGVAR(gr20),
+            QGVAR(hi12),
+            QGVAR(lw38),
+            QGVAR(rps6),
+            QGVAR(rps7),
+            QGVAR(valken38x),
+            QGVAR(westarM5),
+            // QGVAR(x42), // Not included due to Burn 'Em requirement, causes circular dependency
+            QGVAR(z6)
         };
         units[] = {};
         weapons[] = {};

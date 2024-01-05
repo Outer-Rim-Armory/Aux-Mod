@@ -15,7 +15,7 @@
 
 params [
     ["_units", []],
-	["_killer", objNull, [objNull]]
+    ["_killer", objNull, [objNull]]
 ];
 private [];
 
