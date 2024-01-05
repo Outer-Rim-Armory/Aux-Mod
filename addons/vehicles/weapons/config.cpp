@@ -16,7 +16,8 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            QUOTE(ADDON)
+            QUOTE(ADDON),
+            QCLASS(weapons)
         };
         units[] = {};
         weapons[] =
