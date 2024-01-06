@@ -109,7 +109,7 @@ class CfgVehicles
         {
             class MainTurretFront: MainTurretFront
             {
-                weapons[] = {"BNA_KC_ATTE_Turrets"};
+                weapons[] = {QCLASS(Turret_ATTE)};
                 magazines[] =
                 {
                     "3AS_250Rnd_ATTE_30mm_MP_shells",
@@ -122,7 +122,7 @@ class CfgVehicles
             };
             class MainTurretBack: MainTurretBack
             {
-                weapons[] = {"BNA_KC_ATTE_Turrets"};
+                weapons[] = {QCLASS(Turret_ATTE)};
                 magazines[] =
                 {
                     "3AS_250Rnd_ATTE_30mm_MP_shells",
@@ -135,7 +135,7 @@ class CfgVehicles
             };
             class MainTurretTop: MainTurretTop
             {
-                weapons[] = {"BNA_KC_ATTE_MassDriver", "SmokeLauncher"};
+                weapons[] = {QCLASS(Cannon_ATTE_MassDriver), "SmokeLauncher"};
                 magazines[] =
                 {
                     "3AS_30Rnd_Mass_Driver_shells",

@@ -449,7 +449,7 @@ class CfgWeapons
     };
 
     class 3AS_Mass_Driver_Cannon;
-    class BNA_KC_ATTE_MassDriver: 3AS_Mass_Driver_Cannon
+    class CLASS(Cannon_ATTE_MassDriver): 3AS_Mass_Driver_Cannon
     {
         displayName = "Mass Driver Cannon";
         magazines[] =
@@ -460,7 +460,7 @@ class CfgWeapons
     };
 
     class 3AS_ATTE_Turret;
-    class BNA_KC_ATTE_Turrets: 3AS_ATTE_Turret
+    class CLASS(Turret_ATTE): 3AS_ATTE_Turret
     {
         displayName = "Point Defense Turret";
     };
