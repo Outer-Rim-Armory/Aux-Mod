@@ -391,11 +391,12 @@ class CfgWeapons
     };
 
     class gatling_20mm_VTOL_01;
-    class BNA_KC_Gatling_20mm: gatling_20mm_VTOL_01
+    class CLASS(Gatling_20mm): gatling_20mm_VTOL_01
     {
-        magazines[]=
+        displayName = "Blaster Cannon";
+        magazines[] =
         {
-            "BNA_KC_4000rnd_20mm"
+            QCLASS(Mag_4000rnd_Gatling_20mm)
         };
     };
     class cannon_105mm;
@@ -403,137 +404,19 @@ class CfgWeapons
     {
         class player;
     };
-    class BNA_KC_105mm: cannon_105mm_VTOL_01
+    class CLASS(Cannon_105mm): cannon_105mm_VTOL_01
     {
-        magazines[]=
+        displayName = "Heavy Energy Cannon";
+        magazines[] =
         {
-            "BNA_KC_100rnd_105mm"
+            QCLASS(Mag_100rnd_Cannon_105mm)
         };
         class player: player
         {
-            sounds[]=
+            sounds[] = {"StandardSound"};
+            class StandardSound
             {
-                "StandardSound"
-            };
-            class BaseSoundModeType
-            {
-                closure1[]=
-                {
-                    "A3\sounds_f\weapons\gatling\gatling_rotation_short_2",
-                    0.316228,
-                    1,
-                    20
-                };
-                closure2[]=
-                {
-                    "A3\sounds_f\weapons\gatling\gatling_rotation_short_3",
-                    0.316228,
-                    1,
-                    20
-                };
-                soundClosure[]=
-                {
-                    "closure1",
-                    0.5,
-                    "closure2",
-                    0.5
-                };
-            };
-            class StandardSound: BaseSoundModeType
-            {
-                begin1[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin2[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin3[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin4[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin5[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin6[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin7[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin8[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin9[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin10[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                soundBegin[]=
-                {
-                    "begin1",
-                    0.1,
-                    "begin2",
-                    0.1,
-                    "begin3",
-                    0.1,
-                    "begin4",
-                    0.1,
-                    "begin5",
-                    0.1,
-                    "begin6",
-                    0.1,
-                    "begin7",
-                    0.1,
-                    "begin8",
-                    0.1,
-                    "begin9",
-                    0.1,
-                    "begin10",
-                    0.1
-                };
+                soundSetShot[] = {QCLASS(SoundSet_Cannon_105mm_Shot)};
             };
         };
 
@@ -544,22 +427,23 @@ class CfgWeapons
         class HE;
         class AP;
     };
-    class BNA_KC_40mm_VTOL: autocannon_40mm_VTOL_01
+    class CLASS(Autocannon_40mm): autocannon_40mm_VTOL_01
     {
+        displayName = "Autocannon";
         class HE: HE
         {
-            magazines[]=
+            displayName = "Autocannon";
+            magazines[] =
             {
-                //"240Rnd_40mm_GPR_Tracer_Red_shells"
-                "BNA_KC_40mm_GPR_240rnd"
+                QCLASS(Mag_240Rnd_Autocannon_GPR)
             };
         };
         class AP: AP
         {
-            magazines[]=
+            displayName = "Autocannon";
+            magazines[] =
             {
-                //"160Rnd_40mm_APFSDS_Tracer_Red_shells"
-                "BNA_KC_40mm_APFSDS_160rnd"
+                QCLASS(Mag_160Rnd_Autocannon_APFSDS)
             };
         };
     };

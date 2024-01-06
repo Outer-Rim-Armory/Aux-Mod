@@ -8,7 +8,6 @@ class CfgMagazines
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 240<br/>Used In: DC-15L";
 
-        model = "\A3\weapons_F\ammo\mag_univ.p3d";
         picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
 
         ammo = QCLASS(Bullet_PlasmaAutoRifle_Blue);

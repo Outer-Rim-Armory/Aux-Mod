@@ -1,5 +1,13 @@
 class CfgMagazines
 {
+    class CLASS(Mag_Base);
+    class CLASS(Mag_VehicleBase): CLASS(Mag_Base)
+    {
+        type = TYPE_DEFAULT;
+        weaponPoolAvailable = FALSE;
+        mass = 8;
+    };
+
     class 30Rnd_120mm_HE_shells_Tracer_Red;
     class BNA_KC_120_HE_Mag: 30Rnd_120mm_HE_shells_Tracer_Red
     {
@@ -54,32 +62,66 @@ class CfgMagazines
         count = 1000;
     };
 
-    class 4000Rnd_20mm_Tracer_Red_shells;
-    class BNA_KC_4000rnd_20mm: 4000Rnd_20mm_Tracer_Red_shells
+    class CLASS(Mag_4000rnd_Gatling_20mm): CLASS(Mag_VehicleBase)
     {
-        ammo = "BNA_KC_20mm_Ammo";
-        tracersEvery=1;
-    };
-    class 100Rnd_105mm_HEAT_MP;
-    class BNA_KC_100rnd_105mm: 100Rnd_105mm_HEAT_MP
-    {
-        ammo = "BNA_KC_105mm_Ammo";
-        tracersEvery=1;
-    };
-    class 240Rnd_40mm_GPR_Tracer_Red_shells;
-    class BNA_KC_40mm_GPR_240rnd: 240Rnd_40mm_GPR_Tracer_Red_shells
-    {
-        ammo = "BNA_KC_40mm_GPR_Ammo";
-        tracersEvery=1;
-    };
-    class 160Rnd_40mm_APFSDS_Tracer_Red_shells;
-    class BNA_KC_40mm_APFSDS_160rnd: 160Rnd_40mm_APFSDS_Tracer_Red_shells
-    {
-        ammo = "BNA_KC_40mm_APFSDS_Ammo";
-        tracersEvery=1;
+        SCOPE_PUBLIC;
+        displayNameShort = "High Energy";
+        ammo = QCLASS(Bullet_PlasmaGatling_20mm_Blue);
+        count = 4000;
+
+        nameSound = "cannon";
+
+        initSpeed = 1030;
+        maxLeadSpeed = 83.3333;
+        weight = 126;
     };
 
-    class CLASS(Mag_Base);
+    class CLASS(Mag_100rnd_Cannon_105mm): CLASS(Mag_VehicleBase)
+    {
+        SCOPE_PUBLIC;
+        displayNameShort = "High Energy";
+        ammo = QCLASS(Bullet_PlasmaCannon_105mm_Green);
+        count = 100;
+
+        nameSound = "cannon";
+
+        initSpeed = 1330;
+        maxLeadSpeed = 25;
+        muzzleImpulseFactor[] = {0.5, 3};
+    };
+
+    class CLASS(Mag_240Rnd_Autocannon_GPR): CLASS(Mag_VehicleBase)
+    {
+        SCOPE_PUBLIC;
+        displayName = "GPR-T";
+        displayNameShort = "GPR-T";
+        displayNameMFDFormat = "GPR-T";
+        ammo = QCLASS(Bullet_PlasmaAutocannon_GPR_Blue);
+        count = 240;
+
+        nameSound = "cannon";
+
+        initSpeed = 1035;
+        maxLeadSpeed = 83.3333;
+        muzzleImpulseFactor[] = {1, 6};
+    };
+
+    class CLASS(Mag_160Rnd_Autocannon_APFSDS): CLASS(Mag_VehicleBase)
+    {
+        SCOPE_PUBLIC;
+        displayName = "APFSDS-T";
+        displayNameShort = "APFSDS-T";
+        displayNameMFDFormat = "APFSDS-T";
+        ammo = QCLASS(Bullet_PlasmaAutocannon_APFSDS_Red);
+        count = 160;
+
+        nameSound = "cannon";
+
+        initSpeed = 1600;
+        maxLeadSpeed = 83.3333;
+        muzzleImpulseFactor[] = {0.5, 2};
+    };
+
     class CLASS(Mag_9999Rnd_ATRT): CLASS(Mag_Base)
     {
         SCOPE_HIDDEN;
@@ -88,7 +130,6 @@ class CfgMagazines
         descriptionShort = "Energy Cell Pack<br/>Used In AT-RT";
         ammo = QCLASS(Bullet_PlasmaATRT_Blue);
 
-        model = "\A3\weapons_F\ammo\mag_univ.p3d";
         picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
 
         initSpeed = 400;

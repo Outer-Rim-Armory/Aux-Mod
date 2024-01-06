@@ -199,7 +199,6 @@ class CfgWeapons
         visionMode[] = {"Normal", "NVG", "TI"};
         thermalMode[] = {WHOT};
 
-        // Remove the model and textures
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
         modelOptics = QPATHTOEF(core,data\models\empty\empty.p3d);
         hiddenSelections[] = {};

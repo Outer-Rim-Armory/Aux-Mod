@@ -19,7 +19,12 @@ class CfgPatches
         };
         units[] =
         {
-            QCLASS(ARC170)
+            QCLASS(Galaxy_Gunship),
+            QCLASS(Galaxy_Transport_Vehicle),
+            QCLASS(Galaxy_Transport_Infantry),
+            QCLASS(HAG_Base),
+            QCLASS(HVT_Base),
+            QCLASS(HIT_Base)
         };
         weapons[] = {};
         VERSION_CONFIG;

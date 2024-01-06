@@ -1,5 +1,7 @@
 class CfgAmmo
 {
+    // TODO: Make base bullet classes for vehicles
+    // Will be done Some Day™️, but not today
     class Sh_120mm_APFSDS_Tracer_Red;
     class BNA_KC_120_AT_Ammo: Sh_120mm_APFSDS_Tracer_Red
     {
@@ -11,6 +13,7 @@ class CfgAmmo
     class Sh_120mm_HE_Tracer_Red;
     class BNA_KC_120_HE_Ammo: Sh_120mm_HE_Tracer_Red
     {
+
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
         coefGravity = 0.01;
@@ -33,28 +36,28 @@ class CfgAmmo
     };
 
     class B_20mm_Tracer_Red;
-    class BNA_KC_20mm_Ammo: B_20mm_Tracer_Red
+    class CLASS(Bullet_PlasmaGatling_20mm_Blue): B_20mm_Tracer_Red
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
         coefGravity = 0.01;
     };
     class Sh_105mm_HEAT_MP;
-    class BNA_KC_105mm_Ammo: Sh_105mm_HEAT_MP
+    class CLASS(Bullet_PlasmaCannon_105mm_Green): Sh_105mm_HEAT_MP
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
         coefGravity = 0.01;
     };
     class B_40mm_GPR_Tracer_Red;
-    class BNA_KC_40mm_GPR_Ammo: B_40mm_GPR_Tracer_Red
+    class CLASS(Bullet_PlasmaAutocannon_GPR_Blue): B_40mm_GPR_Tracer_Red
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
         coefGravity = 0.01;
     };
     class B_40mm_APFSDS_Tracer_Red;
-    class BNA_KC_40mm_APFSDS_Ammo: B_40mm_APFSDS_Tracer_Red
+    class CLASS(Bullet_PlasmaAutocannon_APFSDS_Red): B_40mm_APFSDS_Tracer_Red
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";

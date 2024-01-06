@@ -18,11 +18,15 @@ class CfgPatches
         {
             QUOTE(ADDON),
             QCLASS(weapons),
-            "3AS_Weapons"
+            "3AS_Weapons",
+            "3AS_Static"
         };
         units[] = {};
         weapons[] =
         {
+            QCLASS(Autocannon_40mm),
+            QCLASS(Cannon_105mm),
+            QCLASS(Gatling_20mm)
         };
         VERSION_CONFIG;
     };
