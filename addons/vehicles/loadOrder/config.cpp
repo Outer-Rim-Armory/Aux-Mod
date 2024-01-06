@@ -12,7 +12,8 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QGVAR(arc170)
+            QGVAR(arc170),
+            QGVAR(galaxy)
         };
         units[] = {};
         weapons[] = {};
