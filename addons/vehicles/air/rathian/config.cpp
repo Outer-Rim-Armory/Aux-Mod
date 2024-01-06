@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "CfgVehicles.hpp"
 
 
 class CfgPatches
@@ -12,17 +13,17 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QGVAR(arc170),
-            QGVAR(galaxy),
-            QGVAR(laatc),
-            QGVAR(laati),
-            QGVAR(ogre),
-            QGVAR(rathian),
-            QGVAR(transport),
-            QGVAR(vespoid),
-            QGVAR(ywing)
+            QGVAR(weapons),
+            QGVAR(sounds),
+            "OPTRE_Vehicles_Hornet"
         };
-        units[] = {};
+        units[] =
+        {
+            QCLASS(Rathian_Base),
+            QCLASS(Rathian_CAP_Base),
+            QCLASS(Rathian_CAS_Base)
+        };
         weapons[] = {};
+        VERSION_CONFIG;
     };
 };

@@ -28,7 +28,7 @@ class CfgVehicles
         vehicleClass = "Helicopter";
         availableForSupportTypes[] = {"CAS_Heli", "Transport", "Drop"};
 
-        tas_can_impulse = 0;
+        tas_can_impulse = FALSE;
         ls_impulsor_soundOn = QCLASS(Sound_ImpulseOn);
         ls_impulsor_soundOff = QCLASS(Sound_ImpulseOff);
         ls_impulsor_fuelDrain_1 = 0;
@@ -100,7 +100,7 @@ class CfgVehicles
             };
             class Imperial: Standard
             {
-                author = "Charger";
+                author = "3rd Army Studios";
                 displayName = "Imperial";
                 textures[] =
                 {
@@ -113,7 +113,7 @@ class CfgVehicles
             };
             class KeeliCompany: Standard
             {
-                author = "Dexus";
+                author = "Keeli Company Aux Team";
                 displayName = "Keeli Company";
                 factions[] = {};
                 textures[] =
@@ -127,7 +127,7 @@ class CfgVehicles
             };
             class Akali: Standard
             {
-                author = "Rev";
+                author = "Keeli Company Aux Team";
                 displayName = "Akali";
                 textures[] =
                 {
@@ -140,7 +140,7 @@ class CfgVehicles
             };
             class TwiLek: Standard
             {
-                author = "Rev";
+                author = "Keeli Company Aux Team";
                 displayName = "Twi'Lek";
                 textures[] =
                 {
