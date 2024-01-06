@@ -61,7 +61,7 @@ class CfgVehicles
             };
             class KeeliCompany: Standard
             {
-                author = "Dexus";
+                author = "Keeli Company Aux Team";
                 displayName = "Keeli Company";
                 factions[] = {};
                 textures[] =
