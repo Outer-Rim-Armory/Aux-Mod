@@ -36,4 +36,32 @@ class CfgVehicles
             SELFINTERACTION_SHIELD_TOGGLE;
         };
     };
+
+    class BTL_Base;
+    class CLASS(BTLB_YWing): BTL_Base
+    {
+        GVAR(hasShield) = TRUE;
+        GVAR(health) = 15;
+        GVAR(regenDelay) = SHIELD_REGEN_DELAY_DEFAULT;
+        GVAR(regenAmount) = SHIELD_REGEN_AMOUNT_DEFAULT;
+
+        class ACE_Actions: ACE_Actions
+        {
+            class RechargeShield
+            {
+                displayName = "Recharge Shield: %1";
+                position = "[0, -4, 0.4]";
+                distance = 5;
+
+                condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canExternalRecharge));
+                statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(externalRecharge));
+                modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
+            };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            SELFINTERACTION_SHIELD_TOGGLE;
+        };
+    };
 };
