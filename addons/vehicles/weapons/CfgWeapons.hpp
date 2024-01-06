@@ -406,6 +406,7 @@ class CfgWeapons
     };
     class CLASS(Cannon_105mm): cannon_105mm_VTOL_01
     {
+        displayName = "Heavy Energy Cannon";
         magazines[] =
         {
             QCLASS(Mag_100rnd_Cannon_105mm)

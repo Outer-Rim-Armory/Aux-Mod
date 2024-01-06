@@ -78,6 +78,7 @@ class CfgMagazines
     class 100Rnd_105mm_HEAT_MP;
     class CLASS(Mag_100rnd_Cannon_105mm): 100Rnd_105mm_HEAT_MP
     {
+        displayNameShort = "High Energy";
         ammo = QCLASS(Bullet_PlasmaCannon_105mm_Green);
         tracersEvery = 1;
     };
