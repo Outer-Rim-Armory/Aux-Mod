@@ -28,7 +28,7 @@ class CfgVehicles
         vehicleClass = "Helicopter";
         availableForSupportTypes[] = {"CAS_Heli", "Transport", "Drop"};
 
-        tas_can_impulse = 0;
+        tas_can_impulse = FALSE;
         ls_impulsor_soundOn = QCLASS(Sound_ImpulseOn);
         ls_impulsor_soundOff = QCLASS(Sound_ImpulseOff);
         ls_impulsor_fuelDrain_1 = 0;
