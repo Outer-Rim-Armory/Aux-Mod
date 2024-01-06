@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "CfgVehicles.hpp"
 
 
 class CfgPatches
@@ -12,20 +13,18 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            // Air
-            QGVAR(arc170),
-            QGVAR(galaxy),
-            QGVAR(laatc),
-            QGVAR(laati),
-            QGVAR(ogre),
-            QGVAR(rathian),
-            QGVAR(transport),
-            QGVAR(vespoid),
-            QGVAR(ywing),
-            // Land
-            QGVAR(aat)
+            QGVAR(weapons),
+            QGVAR(sounds),
+            "3AS_AAT",
+            "ls_vehicles_ground"
         };
-        units[] = {};
+        units[] =
+        {
+            QCLASS(AAT_Base),
+            QCLASS(AAT_Heavy_Base),
+            QCLASS(AAT_King_Base)
+        };
         weapons[] = {};
+        VERSION_CONFIG;
     };
 };
