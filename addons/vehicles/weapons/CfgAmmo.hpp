@@ -1,5 +1,7 @@
 class CfgAmmo
 {
+    // TODO: Make base bullet classes for vehicles
+    // Will be done Some Day™️, but not today
     class Sh_120mm_APFSDS_Tracer_Red;
     class BNA_KC_120_AT_Ammo: Sh_120mm_APFSDS_Tracer_Red
     {
@@ -33,7 +35,7 @@ class CfgAmmo
     };
 
     class B_20mm_Tracer_Red;
-    class BNA_KC_20mm_Ammo: B_20mm_Tracer_Red
+    class CLASS(Bullet_PlasmaGatling_20mm_Blue): B_20mm_Tracer_Red
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";

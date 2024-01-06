@@ -1,5 +1,12 @@
 class CfgMagazines
 {
+    class CLASS(Mag_Base);
+    class CLASS(Mag_VehicleBase): CLASS(Mag_Base)
+    {
+        type = TYPE_DEFAULT;
+        weaponPoolAvailable = FALSE;
+    };
+
     class 30Rnd_120mm_HE_shells_Tracer_Red;
     class BNA_KC_120_HE_Mag: 30Rnd_120mm_HE_shells_Tracer_Red
     {
@@ -54,11 +61,19 @@ class CfgMagazines
         count = 1000;
     };
 
-    class 4000Rnd_20mm_Tracer_Red_shells;
-    class BNA_KC_4000rnd_20mm: 4000Rnd_20mm_Tracer_Red_shells
+    class CLASS(Mag_4000rnd_Gatling_20mm): CLASS(Mag_VehicleBase)
     {
-        ammo = "BNA_KC_20mm_Ammo";
-        tracersEvery=1;
+        SCOPE_PUBLIC;
+        displayNameShort = "High Energy";
+        ammo = QCLASS(Bullet_PlasmaGatling_20mm_Blue);
+        count = 4000;
+
+        nameSound = "cannon";
+
+        initSpeed = 1030;
+        maxLeadSpeed = 83.3333;
+        mass = 8;
+        weight = 126;
     };
     class 100Rnd_105mm_HEAT_MP;
     class CLASS(Mag_100rnd_Cannon_105mm): 100Rnd_105mm_HEAT_MP
@@ -79,7 +94,6 @@ class CfgMagazines
         tracersEvery=1;
     };
 
-    class CLASS(Mag_Base);
     class CLASS(Mag_9999Rnd_ATRT): CLASS(Mag_Base)
     {
         SCOPE_HIDDEN;
@@ -88,7 +102,6 @@ class CfgMagazines
         descriptionShort = "Energy Cell Pack<br/>Used In AT-RT";
         ammo = QCLASS(Bullet_PlasmaATRT_Blue);
 
-        model = "\A3\weapons_F\ammo\mag_univ.p3d";
         picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
 
         initSpeed = 400;

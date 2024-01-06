@@ -10,7 +10,7 @@ class CfgMagazines
         displayNameShort = "";
         descriptionShort = "";
 
-        model = "";
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
         modelSpecial = "";
         modelSpecialIsProxy = FALSE;
 
