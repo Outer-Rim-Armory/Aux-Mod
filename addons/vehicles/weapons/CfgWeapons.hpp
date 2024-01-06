@@ -495,7 +495,7 @@ class CfgWeapons
         displayName = "Light Energy Blaster Cannon";
     };
 
-    class BNA_KC_YWing_Cannon_Heavy: CLASS(Cannon_ARC)
+    class CLASS(Cannon_YWing): CLASS(Cannon_ARC)
     {
         displayName = "Heavy Energy Blaster Cannon";
         magazines[] = {"3AS_BTLB_450Rnd_Heavy_Shells"};

@@ -24,7 +24,7 @@ class CfgVehicles
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
-        weapons[] = {"BNA_KC_YWing_Cannon_Heavy", "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
+        weapons[] = {QCLASS(Cannon_YWing), "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
         magazines[] =
         {
             "3AS_BTLB_450Rnd_Heavy_Shells",
