@@ -89,17 +89,37 @@ class CfgMagazines
         maxLeadSpeed = 25;
         muzzleImpulseFactor[] = {0.5, 3};
     };
-    class 240Rnd_40mm_GPR_Tracer_Red_shells;
-    class BNA_KC_40mm_GPR_240rnd: 240Rnd_40mm_GPR_Tracer_Red_shells
+
+    class CLASS(Mag_240Rnd_Autocannon_GPR): CLASS(Mag_VehicleBase)
     {
-        ammo = "BNA_KC_40mm_GPR_Ammo";
-        tracersEvery=1;
+        SCOPE_PUBLIC;
+        displayName = "GPR-T";
+        displayNameShort = "GPR-T";
+        displayNameMFDFormat = "GPR-T";
+        ammo = QCLASS(Bullet_PlasmaAutocannon_GPR_Blue);
+        count = 240;
+
+        nameSound = "cannon";
+
+        initSpeed = 1035;
+        maxLeadSpeed = 83.3333;
+        muzzleImpulseFactor[] = {1, 6};
     };
-    class 160Rnd_40mm_APFSDS_Tracer_Red_shells;
-    class BNA_KC_40mm_APFSDS_160rnd: 160Rnd_40mm_APFSDS_Tracer_Red_shells
+
+    class CLASS(Mag_160Rnd_Autocannon_APFSDS): CLASS(Mag_VehicleBase)
     {
-        ammo = "BNA_KC_40mm_APFSDS_Ammo";
-        tracersEvery=1;
+        SCOPE_PUBLIC;
+        displayName = "APFSDS-T";
+        displayNameShort = "APFSDS-T";
+        displayNameMFDFormat = "APFSDS-T";
+        ammo = QCLASS(Bullet_PlasmaAutocannon_APFSDS_Red);
+        count = 160;
+
+        nameSound = "cannon";
+
+        initSpeed = 1600;
+        maxLeadSpeed = 83.3333;
+        muzzleImpulseFactor[] = {0.5, 2};
     };
 
     class CLASS(Mag_9999Rnd_ATRT): CLASS(Mag_Base)

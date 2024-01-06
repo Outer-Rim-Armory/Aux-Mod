@@ -427,22 +427,23 @@ class CfgWeapons
         class HE;
         class AP;
     };
-    class BNA_KC_40mm_VTOL: autocannon_40mm_VTOL_01
+    class CLASS(Autocannon_40mm): autocannon_40mm_VTOL_01
     {
+        displayName = "Autocannon";
         class HE: HE
         {
-            magazines[]=
+            displayName = "Autocannon";
+            magazines[] =
             {
-                //"240Rnd_40mm_GPR_Tracer_Red_shells"
-                "BNA_KC_40mm_GPR_240rnd"
+                QCLASS(Mag_240Rnd_Autocannon_GPR)
             };
         };
         class AP: AP
         {
-            magazines[]=
+            displayName = "Autocannon";
+            magazines[] =
             {
-                //"160Rnd_40mm_APFSDS_Tracer_Red_shells"
-                "BNA_KC_40mm_APFSDS_160rnd"
+                QCLASS(Mag_160Rnd_Autocannon_APFSDS)
             };
         };
     };
