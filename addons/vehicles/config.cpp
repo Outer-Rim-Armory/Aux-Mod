@@ -12,6 +12,8 @@ class CfgPatches
         requiredAddons[] =
         {
             QCLASS(core),
+            QCLASS(armor),
+            "ls_vehicles_weapons",
             "ls_functions"
         };
         units[] = {};

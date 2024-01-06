@@ -13,7 +13,6 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(armor),
             QCLASS(vehicles_weapons),
             QCLASS(vehicles_sounds)
         };
