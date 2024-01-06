@@ -18,7 +18,8 @@ class CfgPatches
         {
             QUOTE(ADDON),
             QCLASS(weapons),
-            "3AS_Weapons"
+            "3AS_Weapons",
+            "3AS_Static"
         };
         units[] = {};
         weapons[] =

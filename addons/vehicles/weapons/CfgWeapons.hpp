@@ -407,130 +407,14 @@ class CfgWeapons
     {
         magazines[] =
         {
-            QCLASS(Mag_100rnd_105mm)
+            QCLASS(Mag_100rnd_Cannon_105mm)
         };
         class player: player
         {
             sounds[] = {"StandardSound"};
-            class BaseSoundModeType
+            class StandardSound
             {
-                closure1[]=
-                {
-                    "A3\sounds_f\weapons\gatling\gatling_rotation_short_2",
-                    0.316228,
-                    1,
-                    20
-                };
-                closure2[]=
-                {
-                    "A3\sounds_f\weapons\gatling\gatling_rotation_short_3",
-                    0.316228,
-                    1,
-                    20
-                };
-                soundClosure[]=
-                {
-                    "closure1",
-                    0.5,
-                    "closure2",
-                    0.5
-                };
-            };
-            class StandardSound: BaseSoundModeType
-            {
-                begin1[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin2[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin3[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin4[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin5[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin6[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin7[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin8[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin9[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                begin10[]=
-                {
-                    "3AS\3as_static\XX10\data\SFX\gatcannon",
-                    0.94999999,
-                    1,
-                    2000
-                };
-                soundBegin[]=
-                {
-                    "begin1",
-                    0.1,
-                    "begin2",
-                    0.1,
-                    "begin3",
-                    0.1,
-                    "begin4",
-                    0.1,
-                    "begin5",
-                    0.1,
-                    "begin6",
-                    0.1,
-                    "begin7",
-                    0.1,
-                    "begin8",
-                    0.1,
-                    "begin9",
-                    0.1,
-                    "begin10",
-                    0.1
-                };
+                soundSetShot[] = {QCLASS(SoundSet_Cannon_105mm_Shot)};
             };
         };
 

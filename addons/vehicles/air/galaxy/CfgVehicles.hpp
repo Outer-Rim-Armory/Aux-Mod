@@ -50,7 +50,7 @@ class CfgVehicles
                 };
                 magazines[] =
                 {
-                    QCLASS(Mag_100rnd_105mm),
+                    QCLASS(Mag_100rnd_Cannon_105mm),
                     QCLASS(4000rnd_20mm)
                 };
             };
