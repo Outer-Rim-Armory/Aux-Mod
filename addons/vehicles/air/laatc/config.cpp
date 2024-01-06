@@ -13,12 +13,13 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(armor),
             QGVAR(weapons),
-            QGVAR(sounds)
+            QGVAR(sounds),
+            "lsd_vehicles_heli"
         };
         units[] =
         {
+            QCLASS(LAATc)
         };
         weapons[] = {};
         VERSION_CONFIG;
