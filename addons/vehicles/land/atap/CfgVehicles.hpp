@@ -68,25 +68,10 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            class TFAR_IntercomChannel
-            {
-                displayName = "Intercom Channel";
-                condition = "true";
-                statement = "";
-
-                class TFAR_IntercomChannel_disabled
-                {
-                    displayName = "Disabled";
-                    condition = QUOTE(_vehicle = vehicle ACE_Player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != -1);
-                    statement = QUOTE((vehicle ACE_Player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-1,true)]);
-                };
-                class TFAR_IntercomChannel_2
-                {
-                    displayName = "Crew";
-                    condition = QUOTE(_vehicle = vehicle ace_Player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != 1);
-                    statement = QUOTE((vehicle ace_Player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),1,true)]);
-                };
-            };
+            INTERCOM_START;
+                INTERCOM_DISABLED;
+                INTERCOM_CREW;
+            INTERCOM_END;
         };
 
         class UserActions: UserActions
