@@ -31,6 +31,9 @@ class CfgVehicles
         cabinCloseSound[] = {QPATHTOF(sounds\data\audio\arc170\Canopy_Close.wss), 1.77828, 1, 40};
         cabinCloseSoundInternal[] = {QPATHTOF(sounds\data\audio\arc170\Canopy_Close.wss), 10, 1, 40};
 
+        ls_vehicle_SFoilsAnims[] = {"SFoil"};
+        ls_vehicle_SFoilsToggleSounds[] = {QCLASS(Sound_ARC170_SFoils_Toggle), QCLASS(Sound_ARC170_SFoils_Toggle)};
+
         weapons[] = {QCLASS(Cannon_ARC), "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
         magazines[] =
         {
@@ -118,7 +121,7 @@ class CfgVehicles
 
         class UserActions: UserActions
         {
-            class deploySfoils
+            class DeploySfoils
             {
                 displayName = "Deploy S-Foils";
 
@@ -129,17 +132,17 @@ class CfgVehicles
                 hideOnUse = 1;
                 priority = 1.5;
 
-                condition = QUOTE((this animationSourcePhase 'SFoil' == 1) and (ace_player isEqualTo currentPilot this) and {speed this > 1});
-                statement = QUOTE(playSound3D [ARR_2(QQPATHTOF(sounds\data\audio\arc170\SFoils_Toggle.wss),this)]; this animateSource [ARR_2('SFoil',0)]);
+                condition = QUOTE((this animationSourcePhase 'SFoil' == 1) and {(ace_player isEqualTo currentPilot this) and speed this > 1});
+                statement = QUOTE([ARR_2('SFoils',true)] call ls_fnc_keybind_operationFrameWork;);
             };
-            class undeploySfoils: deploySfoils
+            class UndeploySfoils: DeploySfoils
             {
                 displayName = "Fold S-Foils";
-                condition = QUOTE((this animationSourcePhase 'SFoil' == 0) and (ace_player isEqualTo currentPilot this) and {speed this > 1});
-                statement = QUOTE(playSound3D [ARR_2(QQPATHTOF(sounds\data\audio\arc170\SFoils_Toggle.wss),this)]; this animateSource [ARR_2('SFoil',1)]);
+                condition = QUOTE((this animationSourcePhase 'SFoil' == 0) and {(ace_player isEqualTo currentPilot this)});
+                statement = QUOTE([ARR_2('SFoils',true)] call ls_fnc_keybind_operationFrameWork;);
             };
 
-            class Plane_Fighter_03_Eject: deploySfoils
+            class Plane_Fighter_03_Eject: DeploySfoils
             {
                 displayName = "<t font='RobotoCondensedBold'>Eject</t>";
                 condition = QUOTE(ace_player in this and {speed this > 1});

@@ -18,6 +18,12 @@ class CfgSounds
         sound[] = {"\ls_sounds\vehicles\laatSeries\LAAT_ramp.wss", 5, 1, 100};
     };
 
+    class CLASS(Sound_ARC170_SFoils_Toggle): CLASS(Sound_LAAT_DoorsOpen)
+    {
+        name = "S-Foils Opened/Closed";
+        sound[] = {QPATHTOF(sounds\data\audio\arc170\SFoils_Toggle.wss), 5, 1, 100};
+    };
+
     class CLASS(Sound_ImpulseOn): CLASS(Sound_LAAT_DoorsOpen)
     {
         name = "LAAT Impulse On";
