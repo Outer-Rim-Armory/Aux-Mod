@@ -13,9 +13,9 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(armor),
             QGVAR(weapons),
-            QGVAR(sounds)
+            QGVAR(sounds),
+            "3AS_ARC_170"
         };
         units[] =
         {

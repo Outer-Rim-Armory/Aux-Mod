@@ -18,6 +18,7 @@ class CfgPatches
         {
             QUOTE(ADDON),
             QCLASS(weapons),
+            "3AS_Main",
             "3AS_Weapons",
             "3AS_VehicleWeapons",
             "3AS_Static"
