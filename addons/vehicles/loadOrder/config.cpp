@@ -13,7 +13,13 @@ class CfgPatches
         {
             QUOTE(ADDON),
             QGVAR(arc170),
-            QGVAR(galaxy)
+            QGVAR(galaxy),
+            QGVAR(laatc),
+            QGVAR(laati),
+            QGVAR(ogre),
+            QGVAR(rathian),
+            QGVAR(transport),
+            QGVAR(vespoid)
         };
         units[] = {};
         weapons[] = {};
