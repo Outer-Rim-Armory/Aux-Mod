@@ -31,7 +31,7 @@ class CfgVehicles
         cabinCloseSound[] = {QPATHTOF(sounds\data\audio\arc170\Canopy_Close.wss), 1.77828, 1, 40};
         cabinCloseSoundInternal[] = {QPATHTOF(sounds\data\audio\arc170\Canopy_Close.wss), 10, 1, 40};
 
-        weapons[] = {"BNA_KC_ARC_Cannon_Medium", "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
+        weapons[] = {QCLASS(Cannon_ARC), "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
         magazines[] =
         {
             "3AS_ARC_500Rnd_Light_Shells",
@@ -151,7 +151,7 @@ class CfgVehicles
         {
             class LaserPilot: LaserPilot
             {
-                weapons[] = {"BNA_KC_ARC_TailCannon_Heavy"};
+                weapons[] = {QCLASS(Cannon_ARC_Heavy)};
 
                 // Re-Do a bunch of work because the 501st Aux breaks things
                 discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 1000, 1200, 1500, 1800, 2100};
@@ -177,7 +177,7 @@ class CfgVehicles
             };
             class Reargun: Reargun
             {
-                weapons[] = {"BNA_KC_ARC_TailCannon_Light", "ls_weapon_CMFlareLauncher"};
+                weapons[] = {QCLASS(Cannon_ARC_Light), "ls_weapon_CMFlareLauncher"};
                 magazines[] = {"3AS_ARC_500Rnd_Light_Shells", "ls_mag_240rnd_CMFlareChaff_blue"};
             };
         };
