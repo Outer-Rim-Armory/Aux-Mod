@@ -17,6 +17,7 @@ class CfgVehicles
 
         displayName = "AT-AP";
         crew = QCLASS(Unit_Phase2_Tanker_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
         hiddenSelectionsTextures[] =
         {
