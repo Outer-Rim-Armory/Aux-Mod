@@ -19,7 +19,8 @@ class CfgPatches
             QGVAR(ogre),
             QGVAR(rathian),
             QGVAR(transport),
-            QGVAR(vespoid)
+            QGVAR(vespoid),
+            QGVAR(ywing)
         };
         units[] = {};
         weapons[] = {};
