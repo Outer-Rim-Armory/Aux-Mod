@@ -5,6 +5,7 @@ class CfgMagazines
     {
         type = TYPE_DEFAULT;
         weaponPoolAvailable = FALSE;
+        mass = 8;
     };
 
     class 30Rnd_120mm_HE_shells_Tracer_Red;
@@ -72,15 +73,21 @@ class CfgMagazines
 
         initSpeed = 1030;
         maxLeadSpeed = 83.3333;
-        mass = 8;
         weight = 126;
     };
-    class 100Rnd_105mm_HEAT_MP;
-    class CLASS(Mag_100rnd_Cannon_105mm): 100Rnd_105mm_HEAT_MP
+
+    class CLASS(Mag_100rnd_Cannon_105mm): CLASS(Mag_VehicleBase)
     {
+        SCOPE_PUBLIC;
         displayNameShort = "High Energy";
         ammo = QCLASS(Bullet_PlasmaCannon_105mm_Green);
-        tracersEvery = 1;
+        count = 100;
+
+        nameSound = "cannon";
+
+        initSpeed = 1330;
+        maxLeadSpeed = 25;
+        muzzleImpulseFactor[] = {0.5, 3};
     };
     class 240Rnd_40mm_GPR_Tracer_Red_shells;
     class BNA_KC_40mm_GPR_240rnd: 240Rnd_40mm_GPR_Tracer_Red_shells
