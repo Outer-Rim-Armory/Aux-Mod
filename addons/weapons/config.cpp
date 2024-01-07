@@ -20,6 +20,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QCLASS(core),
+            QCLASS(particles),
             "JLTS_weapons_Core",
             "3AS_Main",
             "SWLW_main"

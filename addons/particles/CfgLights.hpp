@@ -5,8 +5,8 @@ class CfgLights
     {
         color[] = {0.941, 0.443, 1};
         intensity = 1e8;
-        dayLight = 1;
-        useFlare = 1;
+        dayLight = TRUE;
+        useFlare = TRUE;
         flareSize = 1.5;
         flareMaxDistance = 6000;
     };
