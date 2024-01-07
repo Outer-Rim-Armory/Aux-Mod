@@ -221,4 +221,58 @@ class CfgSoundShaders
             {QPATHTOF(sounds\data\audio\apc\Engine.wss), 1}
         };
     };
+
+    class APC_Wheeled_01_Engine_RPM0_INT_SoundShader;
+    class CLASS(APC_Engine_RPM0_INT_SoundShader): APC_Wheeled_01_Engine_RPM0_INT_SoundShader
+    {
+        samples[] =
+        {
+            {QPATHTOF(sounds\data\audio\apc\Engine.wss), 1}
+        };
+    };
+
+    class APC_Wheeled_01_Engine_RPM1_INT_SoundShader;
+    class CLASS(SoundShader_Badger_Engine_RPM1_INT): APC_Wheeled_01_Engine_RPM1_INT_SoundShader
+    {
+        samples[] =
+        {
+            {QPATHTOF(sounds\data\audio\apc\Engine.wss), 1}
+        };
+    };
+
+    class APC_Wheeled_01_Engine_RPM2_INT_SoundShader;
+    class CLASS(SoundShader_Badger_Engine_RPM2_INT): APC_Wheeled_01_Engine_RPM2_INT_SoundShader
+    {
+        samples[] =
+        {
+            {QPATHTOF(sounds\data\audio\apc\Engine.wss), 1}
+        };
+    };
+
+    class APC_Wheeled_01_Engine_RPM3_INT_SoundShader;
+    class CLASS(SoundShader_Badger_Engine_RPM3_INT): APC_Wheeled_01_Engine_RPM3_INT_SoundShader
+    {
+        samples[] =
+        {
+            {QPATHTOF(sounds\data\audio\apc\Engine.wss), 1}
+        };
+    };
+
+    class APC_Wheeled_01_Engine_RPM4_INT_SoundShader;
+    class CLASS(SoundShader_Badger_Engine_RPM4_INT): APC_Wheeled_01_Engine_RPM4_INT_SoundShader
+    {
+        samples[] =
+        {
+            {QPATHTOF(sounds\data\audio\apc\Engine.wss), 1}
+        };
+    };
+
+    class APC_Wheeled_01_Engine_RPM5_INT_SoundShader;
+    class CLASS(SoundShader_Badger_Engine_RPM5_INT): APC_Wheeled_01_Engine_RPM5_INT_SoundShader
+    {
+        samples[] =
+        {
+            {QPATHTOF(sounds\data\audio\apc\Engine.wss), 1}
+        };
+    };
 };

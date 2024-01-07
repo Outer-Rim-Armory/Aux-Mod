@@ -36,12 +36,13 @@ class CfgVehicles
         {
             soundSetsInt[] =
             {
-                "APC_Wheeled_01_Engine_RPM0_INT_SoundSet",
-                "APC_Wheeled_01_Engine_RPM1_INT_SoundSet",
-                "APC_Wheeled_01_Engine_RPM2_INT_SoundSet",
-                "APC_Wheeled_01_Engine_RPM3_INT_SoundSet",
-                "APC_Wheeled_01_Engine_RPM4_INT_SoundSet",
-                "APC_Wheeled_01_Engine_RPM5_INT_SoundSet",
+                QCLASS(SoundSet_Badger_Engine_RPM0_INT),
+                QCLASS(SoundSet_Badger_Engine_RPM1_INT),
+                QCLASS(SoundSet_Badger_Engine_RPM2_INT),
+                QCLASS(SoundSet_Badger_Engine_RPM3_INT),
+                QCLASS(SoundSet_Badger_Engine_RPM4_INT),
+                QCLASS(SoundSet_Badger_Engine_RPM5_INT),
+                QCLASS(SoundSet_Badger_Engine_RPM6_INT),
                 "APC_Wheeled_01_Interior_Tone_Engine_Off_SoundSet",
                 "APC_Wheeled_01_Interior_Tone_Engine_On_SoundSet",
                 "APC_Wheeled_01_Rattling_INT_SoundSet",
