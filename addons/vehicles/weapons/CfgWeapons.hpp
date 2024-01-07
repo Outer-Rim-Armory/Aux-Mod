@@ -18,18 +18,7 @@ class CfgWeapons
         {
             class StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankShotDistant",
-                    10,
-                    1,
-                    1800
-                };
-                soundBegin[] =
-                {
-                    "begin1",
-                    1
-                };
+                soundSetShot[] = {QCLASS(SoundSet_Cannon_Blitz_Shot)};
             };
         };
     };
