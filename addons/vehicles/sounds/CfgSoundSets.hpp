@@ -1,18 +1,18 @@
 class CfgSoundSets
 {
     class MBT_01_Engine_RPM0_EXT_SoundSet;
-    class CLASS(Engine_RPM0_EXT_SoundSet): MBT_01_Engine_RPM0_EXT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM0_EXT): MBT_01_Engine_RPM0_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM0_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM0_EXT)};
         sound3DProcessingType = "VehicleExt_3DProcessingType";
         posOffset[] = {0,0,-4};
         volumeFactor = 0.85000002;
     };
 
     class MBT_01_Engine_RPM1_EXT_SoundSet;
-    class CLASS(Engine_RPM1_EXT_SoundSet): MBT_01_Engine_RPM1_EXT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM1_EXT): MBT_01_Engine_RPM1_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM1_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM1_EXT)};
         sound3DProcessingType = "VehicleExt_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,-4};
@@ -20,9 +20,9 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM2_EXT_SoundSet;
-    class CLASS(Engine_RPM2_EXT_SoundSet): MBT_01_Engine_RPM2_EXT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM2_EXT): MBT_01_Engine_RPM2_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM2_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM2_EXT)};
         sound3DProcessingType = "VehicleExt_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,-4};
@@ -30,9 +30,9 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM3_EXT_SoundSet;
-    class CLASS(Engine_RPM3_EXT_SoundSet): MBT_01_Engine_RPM3_EXT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM3_EXT): MBT_01_Engine_RPM3_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM3_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM3_EXT)};
         sound3DProcessingType = "VehicleExt_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,-4};
@@ -40,9 +40,9 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM4_EXT_SoundSet;
-    class CLASS(Engine_RPM4_EXT_SoundSet): MBT_01_Engine_RPM4_EXT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM4_EXT): MBT_01_Engine_RPM4_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM4_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM4_EXT)};
         sound3DProcessingType = "VehicleExt_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,-4};
@@ -50,9 +50,9 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM5_EXT_SoundSet;
-    class CLASS(Engine_RPM5_EXT_SoundSet): MBT_01_Engine_RPM5_EXT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM5_EXT): MBT_01_Engine_RPM5_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM5_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM5_EXT)};
         sound3DProcessingType = "VehicleExt_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,-4};
@@ -60,9 +60,9 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM6_EXT_SoundSet;
-    class CLASS(Engine_RPM6_EXT_SoundSet): MBT_01_Engine_RPM6_EXT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM6_EXT): MBT_01_Engine_RPM6_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM6_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM6_EXT)};
         sound3DProcessingType = "VehicleExt_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,-4};
@@ -70,18 +70,18 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM0_INT_SoundSet;
-    class CLASS(Engine_RPM0_INT_SoundSet): MBT_01_Engine_RPM0_INT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM0_INT): MBT_01_Engine_RPM0_INT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM0_INT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM0_INT)};
         sound3DProcessingType = "VehicleInt_Back_3DProcessingType";
         posOffset[] = {0,0,0};
         volumeFactor = 0.85000002;
     };
 
     class MBT_01_Engine_RPM1_INT_SoundSet;
-    class CLASS(Engine_RPM1_INT_SoundSet): MBT_01_Engine_RPM1_INT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM1_INT): MBT_01_Engine_RPM1_INT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM1_INT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM1_INT)};
         sound3DProcessingType = "VehicleInt_Back_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,0};
@@ -89,9 +89,9 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM2_INT_SoundSet;
-    class CLASS(Engine_RPM2_INT_SoundSet): MBT_01_Engine_RPM2_INT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM2_INT): MBT_01_Engine_RPM2_INT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM2_INT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM2_INT)};
         sound3DProcessingType = "VehicleInt_Back_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,0};
@@ -99,9 +99,9 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM3_INT_SoundSet;
-    class CLASS(Engine_RPM3_INT_SoundSet): MBT_01_Engine_RPM3_INT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM3_INT): MBT_01_Engine_RPM3_INT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM3_INT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM03_INT)};
         sound3DProcessingType = "VehicleInt_Back_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,0};
@@ -109,9 +109,9 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM4_INT_SoundSet;
-    class CLASS(Engine_RPM4_INT_SoundSet): MBT_01_Engine_RPM4_INT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM4_INT): MBT_01_Engine_RPM4_INT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM4_INT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM4_INT)};
         sound3DProcessingType = "VehicleInt_Back_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,0};
@@ -119,9 +119,9 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM5_INT_SoundSet;
-    class CLASS(Engine_RPM5_INT_SoundSet): MBT_01_Engine_RPM5_INT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM5_INT): MBT_01_Engine_RPM5_INT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM5_INT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM5_INT)};
         sound3DProcessingType = "VehicleInt_Back_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,0};
@@ -129,9 +129,9 @@ class CfgSoundSets
     };
 
     class MBT_01_Engine_RPM6_INT_SoundSet;
-    class CLASS(Engine_RPM6_INT_SoundSet): MBT_01_Engine_RPM6_INT_SoundSet
+    class CLASS(SoundSet_Blitz_Engine_RPM6_INT): MBT_01_Engine_RPM6_INT_SoundSet
     {
-        soundShaders[] = {QCLASS(Engine_RPM6_INT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM6_INT)};
         sound3DProcessingType = "VehicleInt_Back_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,0};

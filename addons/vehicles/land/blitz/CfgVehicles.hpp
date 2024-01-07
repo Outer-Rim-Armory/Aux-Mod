@@ -41,7 +41,7 @@ class CfgVehicles
         author = "Keeli Company Aux Team";
 
         faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Tankers);
+        editorSubcategory = QCLASS(EdSubCat_Tanks);
         editorPreview = QPATHTOF(land\blitz\data\previews\CLASS(Blitz).jpg);
 
         displayName = "Blitz Assault Tank";
@@ -56,13 +56,13 @@ class CfgVehicles
         {
             soundSetsInt[] =
             {
-                "BNA_KC_Engine_RPM0_INT_SoundSet",
-                "BNA_KC_Engine_RPM1_INT_SoundSet",
-                "BNA_KC_Engine_RPM2_INT_SoundSet",
-                "BNA_KC_Engine_RPM3_INT_SoundSet",
-                "BNA_KC_Engine_RPM4_INT_SoundSet",
-                "BNA_KC_Engine_RPM5_INT_SoundSet",
-                "BNA_KC_Engine_RPM6_INT_SoundSet",
+                QCLASS(SoundSet_Blitz_Engine_RPM0_INT),
+                QCLASS(SoundSet_Blitz_Engine_RPM1_INT),
+                QCLASS(SoundSet_Blitz_Engine_RPM2_INT),
+                QCLASS(SoundSet_Blitz_Engine_RPM3_INT),
+                QCLASS(SoundSet_Blitz_Engine_RPM4_INT),
+                QCLASS(SoundSet_Blitz_Engine_RPM5_INT),
+                QCLASS(SoundSet_Blitz_Engine_RPM6_INT),
                 // "MBT_01_Engine_INT_Burst_SoundSet",
                 "MBT_01_Tracks_01_INT_SoundSet",
                 "MBT_01_Tracks_02_INT_SoundSet",
@@ -91,13 +91,13 @@ class CfgVehicles
             };
             soundSetsExt[] =
             {
-                "BNA_KC_Engine_RPM0_EXT_SoundSet",
-                "BNA_KC_Engine_RPM1_EXT_SoundSet",
-                "BNA_KC_Engine_RPM2_EXT_SoundSet",
-                "BNA_KC_Engine_RPM3_EXT_SoundSet",
-                "BNA_KC_Engine_RPM4_EXT_SoundSet",
-                "BNA_KC_Engine_RPM5_EXT_SoundSet",
-                "BNA_KC_Engine_RPM6_EXT_SoundSet",
+                QCLASS(SoundSet_Blitz_Engine_RPM0_EXT),
+                QCLASS(SoundSet_Blitz_Engine_RPM1_EXT),
+                QCLASS(SoundSet_Blitz_Engine_RPM2_EXT),
+                QCLASS(SoundSet_Blitz_Engine_RPM3_EXT),
+                QCLASS(SoundSet_Blitz_Engine_RPM4_EXT),
+                QCLASS(SoundSet_Blitz_Engine_RPM5_EXT),
+                QCLASS(SoundSet_Blitz_Engine_RPM6_EXT),
                 //"MBT_01_Engine_EXT_Burst_SoundSet",
                 "MBT_01_Tracks_01_EXT_SoundSet",
                 "MBT_01_Tracks_02_EXT_SoundSet",
@@ -199,7 +199,7 @@ class CfgVehicles
                             QCLASS(Mag_100rnd_Coax),
                             QCLASS(Mag_100rnd_Coax),
                             QCLASS(Mag_100rnd_Coax),
-                            QCLASS(Mag_100rnd_Coax)
+                            QCLASS(Mag_100rnd_Coax),
                             "SmokeLauncherMag"
                         };
                     };

@@ -1,7 +1,7 @@
 class CfgSoundShaders
 {
     class MBT_01_Engine_RPM0_EXT_SoundShader;
-    class CLASS(Engine_RPM0_EXT_SoundShader): MBT_01_Engine_RPM0_EXT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM0_EXT): MBT_01_Engine_RPM0_EXT_SoundShader
     {
         samples[] =
         {
@@ -13,7 +13,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM1_EXT_SoundShader;
-    class CLASS(Engine_RPM1_EXT_SoundShader): MBT_01_Engine_RPM1_EXT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM1_EXT): MBT_01_Engine_RPM1_EXT_SoundShader
     {
         samples[] =
         {
@@ -25,7 +25,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM2_EXT_SoundShader;
-    class CLASS(Engine_RPM2_EXT_SoundShader): MBT_01_Engine_RPM2_EXT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM2_EXT): MBT_01_Engine_RPM2_EXT_SoundShader
     {
         samples[] =
         {
@@ -37,7 +37,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM3_EXT_SoundShader;
-    class CLASS(Engine_RPM3_EXT_SoundShader): MBT_01_Engine_RPM3_EXT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM3_EXT): MBT_01_Engine_RPM3_EXT_SoundShader
     {
         samples[] =
         {
@@ -49,7 +49,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM4_EXT_SoundShader;
-    class CLASS(Engine_RPM4_EXT_SoundShader): MBT_01_Engine_RPM4_EXT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM4_EXT): MBT_01_Engine_RPM4_EXT_SoundShader
     {
         samples[] =
         {
@@ -61,7 +61,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM5_EXT_SoundShader;
-    class CLASS(Engine_RPM5_EXT_SoundShader): MBT_01_Engine_RPM5_EXT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM5_EXT): MBT_01_Engine_RPM5_EXT_SoundShader
     {
         samples[] =
         {
@@ -73,7 +73,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM6_EXT_SoundShader;
-    class CLASS(Engine_RPM6_EXT_SoundShader): MBT_01_Engine_RPM6_EXT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM6_EXT): MBT_01_Engine_RPM6_EXT_SoundShader
     {
         samples[] =
         {
@@ -85,7 +85,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM0_INT_SoundShader;
-    class CLASS(Engine_RPM0_INT_SoundShader): MBT_01_Engine_RPM0_INT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM0_INT): MBT_01_Engine_RPM0_INT_SoundShader
     {
         samples[] =
         {
@@ -97,7 +97,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM1_INT_SoundShader;
-    class CLASS(Engine_RPM1_INT_SoundShader): MBT_01_Engine_RPM1_INT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM1_INT): MBT_01_Engine_RPM1_INT_SoundShader
     {
         samples[] =
         {
@@ -109,7 +109,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM2_INT_SoundShader;
-    class CLASS(Engine_RPM2_INT_SoundShader): MBT_01_Engine_RPM2_INT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM2_INT): MBT_01_Engine_RPM2_INT_SoundShader
     {
         samples[] =
         {
@@ -121,7 +121,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM3_INT_SoundShader;
-    class CLASS(Engine_RPM3_INT_SoundShader): MBT_01_Engine_RPM3_INT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM3_INT): MBT_01_Engine_RPM3_INT_SoundShader
     {
         samples[] =
         {
@@ -133,7 +133,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM4_INT_SoundShader;
-    class CLASS(Engine_RPM4_INT_SoundShader): MBT_01_Engine_RPM4_INT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM4_INT): MBT_01_Engine_RPM4_INT_SoundShader
     {
         samples[] =
         {
@@ -145,7 +145,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM5_INT_SoundShader;
-    class CLASS(Engine_RPM5_INT_SoundShader): MBT_01_Engine_RPM5_INT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM5_INT): MBT_01_Engine_RPM5_INT_SoundShader
     {
         samples[] =
         {
@@ -157,7 +157,7 @@ class CfgSoundShaders
     };
 
     class MBT_01_Engine_RPM6_INT_SoundShader;
-    class CLASS(Engine_RPM6_INT_SoundShader): MBT_01_Engine_RPM6_INT_SoundShader
+    class CLASS(SoundShader_Blitz_Engine_RPM6_INT): MBT_01_Engine_RPM6_INT_SoundShader
     {
         samples[] =
         {
