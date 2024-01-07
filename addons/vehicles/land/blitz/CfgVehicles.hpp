@@ -48,10 +48,10 @@ class CfgVehicles
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
-        soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\tank\EngineShutdown.wss), 30, 1, 100};
-        soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\tank\EngineShutdown.wss), 1, 1};
-        soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\tank\EngineStartup.wss), 30, 1, 100};
-        soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\tank\EngineStartup.wss), 1, 1};
+        soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\tank\Shutdown.wss), 30, 1, 100};
+        soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\tank\Shutdown.wss), 1, 1};
+        soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\tank\Startup.wss), 30, 1, 100};
+        soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\tank\Startup.wss), 1, 1};
         class Sounds
         {
             soundSetsInt[] =
