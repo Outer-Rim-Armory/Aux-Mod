@@ -190,7 +190,7 @@ class CfgVehicles
                     {
                         weapons[] =
                         {
-                            "BNA_KC_CommanderGun",
+                            QCLASS(Coax_Commander),
                             "SmokeLauncher"
                         };
                         magazines[] =

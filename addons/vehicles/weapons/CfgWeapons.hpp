@@ -295,7 +295,7 @@ class CfgWeapons
     {
         class manual;
     };
-    class BNA_KC_CommanderGun: HMG_127_MBT
+    class CLASS(Coax_Commander): HMG_127_MBT
     {
         displayName = "Commander Gun";
         magazines[] =
@@ -304,32 +304,9 @@ class CfgWeapons
         };
         class manual: manual
         {
-            sounds[] =
+            class StandardSound
             {
-                "StandardSound"
-            };
-            class BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
-            };
-            class StandardSound: BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] =
-                {
-                    "MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] =
-                {
-                    "begin1",
-                    1
-                };
+                soundSetShot[] = {QCLASS(SoundSet_DC15AShot)};
             };
         };
     };
