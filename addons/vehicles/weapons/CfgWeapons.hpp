@@ -254,46 +254,24 @@ class CfgWeapons
     {
         class manual;
     };
-    class BNA_KC_Coax: LMG_coax
+    class CLASS(Coax_Badger): LMG_coax
     {
         displayName = "Co-Axial";
         magazines[] =
         {
-            "BNA_KC_100rnd_Coax_Mag",
-            "BNA_KC_500rnd_Coax_Mag",
-            "BNA_KC_1000rnd_Coax_Mag"
+            QCLASS(Mag_100rnd_Coax),
+            QCLASS(Mag_500rnd_Coax),
+            QCLASS(Mag_1000rnd_Coax)
         };
+        drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
 
         class GunParticles {};
 
         class manual: manual
         {
-            sounds[] =
+            class StandardSound
             {
-                "StandardSound"
-            };
-            class BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
-            };
-            class StandardSound: BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC15A\Data\Audio\DC15A_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] =
-                {
-                    "begin1",
-                    1
-                };
+                soundSetShot[] = {QCLASS(SoundSet_DC15AShot)};
             };
         };
     };
@@ -309,9 +287,9 @@ class CfgWeapons
         drySound[] = { "MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10 };
         magazines[] =
         {
-            "BNA_KC_100rnd_Coax_Mag",
-            "BNA_KC_500rnd_Coax_Mag",
-            "BNA_KC_1000rnd_Coax_Mag"
+            QCLASS(Mag_100rnd_Coax),
+            QCLASS(Mag_500rnd_Coax),
+            QCLASS(Mag_1000rnd_Coax)
         };
 
         // Removes the smoke effect from the gun
@@ -356,7 +334,7 @@ class CfgWeapons
         displayName = "Commander Gun";
         magazines[] =
         {
-            "BNA_KC_100rnd_Coax_Mag"
+            QCLASS(Mag_100rnd_Coax)
         };
         class manual: manual
         {

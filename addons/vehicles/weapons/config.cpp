@@ -32,6 +32,7 @@ class CfgPatches
             QCLASS(Cannon_ARC_Heavy),
             QCLASS(Cannon_ARC_Light),
             QCLASS(Cannon_YWing),
+            QCLASS(Coax_Badger),
             QCLASS(Gatling_20mm),
         };
         VERSION_CONFIG;

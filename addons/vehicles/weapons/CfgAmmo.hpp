@@ -2,6 +2,9 @@ class CfgAmmo
 {
     // TODO: Make base bullet classes for vehicles
     // Will be done Some Day™️, but not today
+
+    // TODO: Update flyby sounds with JLTS and/or 3AS sounds. See weapons addon for property/class names
+
     class Sh_120mm_APFSDS_Tracer_Red;
     class BNA_KC_120_AT_Ammo: Sh_120mm_APFSDS_Tracer_Red
     {
@@ -28,7 +31,7 @@ class CfgAmmo
     };
 
     class B_127x99_Ball;
-    class BNA_KC_Coax_Ammo: B_127x99_Ball
+    class CLASS(Bullet_PlasmaCoax_Blue): B_127x99_Ball
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";

@@ -36,29 +36,25 @@ class CfgMagazines
         ammo = "BNA_KC_120_HEAT_Ammo";
     };
 
-    class 100Rnd_127x99_mag_Tracer_Red;
-    class BNA_KC_100rnd_Coax_Mag: 100Rnd_127x99_mag_Tracer_Red
+    class CLASS(Mag_100rnd_Coax): CLASS(Mag_VehicleBase)
     {
-        ammo = "BNA_KC_Coax_Ammo";
-        displayName = "100rnd Mag";
-        displayNameShort = "100rnd Mag";
-        descriptionShort = "100rnd Mag";
-        tracersEvery=1;
-    };
-    class BNA_KC_500rnd_Coax_Mag: BNA_KC_100rnd_Coax_Mag
-    {
-        displayName = "500rnd Mag";
-        displayNameShort = "500rnd Mag";
-        descriptionShort = "500rnd Mag";
+        SCOPE_PUBLIC;
+        ammo = QCLASS(Bullet_PlasmaCoax_Blue);
+        count = 100;
 
+        nameSound = "mgun";
+
+        initSpeed = 910;
+        maxLeadSpeed = 36.1111;
+        weight = 126;
+        muzzleImpulseFactor[] = {0.05, 0.05};
+    };
+    class CLASS(Mag_500rnd_Coax): CLASS(Mag_100rnd_Coax)
+    {
         count = 500;
     };
-    class BNA_KC_1000rnd_Coax_Mag: BNA_KC_100rnd_Coax_Mag
+    class CLASS(Mag_1000rnd_Coax): CLASS(Mag_100rnd_Coax)
     {
-        displayName = "1000rnd Mag";
-        displayNameShort = "1000rnd Mag";
-        descriptionShort = "1000rnd Mag";
-
         count = 1000;
     };
 

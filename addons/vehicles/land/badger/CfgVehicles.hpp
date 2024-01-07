@@ -174,7 +174,7 @@ class CfgVehicles
                 weapons[] =
                 {
                     "BNA_KC40mm_CTWS",
-                    "BNA_KC_Coax"
+                    QCLASS(Coax_Badger)
                 };
                 magazines[] =
                 {
@@ -186,11 +186,11 @@ class CfgVehicles
                     "40Rnd_40mm_APFSDS_Tracer_Red_shells",
                     "40Rnd_40mm_APFSDS_Tracer_Red_shells",
                     "40Rnd_40mm_APFSDS_Tracer_Red_shells",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag"
+                    QCLASS(Mag_100rnd_Coax),
+                    QCLASS(Mag_100rnd_Coax),
+                    QCLASS(Mag_100rnd_Coax),
+                    QCLASS(Mag_100rnd_Coax),
+                    QCLASS(Mag_100rnd_Coax)
                 };
             };
         };
