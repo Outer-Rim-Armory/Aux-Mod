@@ -26,6 +26,7 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(Autocannon_Badger),
             QCLASS(Autocannon_40mm),
             QCLASS(Cannon_105mm),
             QCLASS(Cannon_ARC),

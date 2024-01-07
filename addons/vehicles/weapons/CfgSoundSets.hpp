@@ -28,4 +28,15 @@ class CfgSoundSets
 
         distanceFilter = "explosionDistanceFreqAttenuationFilter";
     };
+
+    class CLASS(SoundSet_Autocannon_Badger_Shot): CLASS(SoundSet_VehicleWeapon_Base)
+    {
+        soundShaders[] = {QCLASS(SoundShader_Autocannon_Badger_Shot)};
+        sound3DProcessingType = "ExplosionMedium3DProcessingType";
+
+        volumeCurve = "InverseSquare1Curve";
+        volumeFactor = 1;
+
+        distanceFilter = "explosionDistanceFreqAttenuationFilter";
+    };
 };

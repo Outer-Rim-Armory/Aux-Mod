@@ -173,7 +173,7 @@ class CfgVehicles
             {
                 weapons[] =
                 {
-                    "BNA_KC40mm_CTWS",
+                    QCLASS(Autocannon_Badger),
                     QCLASS(Coax_Badger)
                 };
                 magazines[] =

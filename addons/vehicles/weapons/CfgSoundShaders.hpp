@@ -15,4 +15,13 @@ class CfgSoundShaders
             {"\3AS\3as_static\XX10\data\SFX\GatCannon.wss", 1}
         };
     };
+
+    class CLASS(SoundShader_Autocannon_Badger_Shot): CLASS(SoundShader_VehicleWeapon_Base)
+    {
+        rangeCurve = "CannonCloseShotCurve";
+        samples[] =
+        {
+            {QPATHTOF(weapons\data\audio\apc\cannon\Fire1.wss), 1}
+        };
+    };
 };

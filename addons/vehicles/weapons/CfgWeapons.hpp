@@ -43,13 +43,9 @@ class CfgWeapons
         class medium;
         class far;
     };
-    class BNA_KC40mm_CTWS: autocannon_40mm_CTWS
+    class CLASS(Autocannon_Badger): autocannon_40mm_CTWS
     {
-        muzzles[] =
-        {
-            "HE",
-            "AP"
-        };
+        muzzles[] = {"HE", "AP"};
         class HE: autocannon_Base_F
         {
             displayName = "$STR_A3_autocannon_40mm_CTWS0";
@@ -63,30 +59,15 @@ class CfgWeapons
             class player: player
             {
                 dispersion = 0.0015;
-                sounds[] =
-                {
-                    "StandardSound"
-                };
                 class StandardSound
                 {
-                    begin1[] =
-                    {
-                        "BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCCannon",
-                        1.9952624,
-                        1,
-                        1500
-                    };
-                    soundBegin[] =
-                    {
-                        "begin1",
-                        0.33000001
-                    };
+                    soundSetShot[] = {QCLASS(SoundSet_Autocannon_Badger_Shot)};
                 };
             };
             class close: player
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 3;
                 burstRangeMax = 6;
                 aiRateOfFire = 1;
@@ -101,8 +82,8 @@ class CfgWeapons
             };
             class short: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 5;
                 aiRateOfFire = 2;
@@ -117,8 +98,8 @@ class CfgWeapons
             };
             class medium: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 3;
                 aiRateOfFire = 2;
@@ -133,8 +114,8 @@ class CfgWeapons
             };
             class far: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 1;
                 aiRateOfFire = 2;
@@ -161,24 +142,9 @@ class CfgWeapons
             class player: player
             {
                 dispersion = 0.00089999998;
-                sounds[] =
-                {
-                    "StandardSound"
-                };
                 class StandardSound
                 {
-                    begin1[] =
-                    {
-                        "BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCCannon",
-                        1.9952624,
-                        1,
-                        1500
-                    };
-                    soundBegin[] =
-                    {
-                        "begin1",
-                        0.33000001
-                    };
+                    soundSetShot[] = {QCLASS(SoundSet_Autocannon_Badger_Shot)};
                 };
             };
             class close: player
@@ -199,8 +165,8 @@ class CfgWeapons
             };
             class short: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 5;
                 aiRateOfFire = 2;
@@ -215,8 +181,8 @@ class CfgWeapons
             };
             class medium: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 3;
                 aiRateOfFire = 2;
@@ -231,8 +197,8 @@ class CfgWeapons
             };
             class far: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 1;
                 aiRateOfFire = 2;
