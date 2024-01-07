@@ -248,7 +248,7 @@ class BNA_KC_Uniform_Officer_CamoGrey: BNA_KC_Uniform_Base
 
 class BNA_KC_Uniform_Phase1Geo_NCO: BNA_KC_Uniform_Base
 {
-    displayName = "[KC] INF P1 Armor 06 (NCO)";
+    displayName = "[KC] INF GEO Armor 02 (NCO)";
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_Phase1Geo_NCO";
@@ -257,7 +257,7 @@ class BNA_KC_Uniform_Phase1Geo_NCO: BNA_KC_Uniform_Base
 
 class BNA_KC_Unit_Phase1Geo_Officer: BNA_KC_Uniform_Base
 {
-    displayName = "[KC] INF P1 Armor 11 (Officer)";
+    displayName = "[KC] INF GEO Armor 03 (Officer)";
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_Phase1Geo_Officer";
@@ -266,7 +266,7 @@ class BNA_KC_Unit_Phase1Geo_Officer: BNA_KC_Uniform_Base
 
 class BNA_KC_Uniform_Phase1Geo_Captain: BNA_KC_Uniform_Base
 {
-    displayName = "[KC] INF P1 Armor 16 (Captain)";
+    displayName = "[KC] INF GEO Armor 04 (CPT)";
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_Phase1Geo_Captain";
@@ -275,7 +275,7 @@ class BNA_KC_Uniform_Phase1Geo_Captain: BNA_KC_Uniform_Base
 
 class BNA_KC_Uniform_Phase1Geo_Commander: BNA_KC_Uniform_Base
 {
-    displayName = "[KC] INF P1 Armor 18 (Commander)";
+    displayName = "[KC] INF GEO Armor 05 (CMD)";
     class ItemInfo: ItemInfo
     {
         uniformClass = "BNA_KC_Unit_Phase1Geo_Commander";

@@ -258,7 +258,7 @@ class BNA_KC_Helmet_Phase1_Officer_CamoGrey: BNA_KC_Helmet_Phase1_Base
 
 class BNA_KC_Helmet_Phase1Geo_NCO: BNA_KC_Helmet_Phase1_Base
 {
-    displayName = "[KC] INF P1 Helm 06 (NCO)";
+    displayName = "[KC] INF GEO Helm 06 (NCO)";
     hiddenSelectionsTextures[] =
     {
         "\SWLB_clones\data\SWLB_clone_P1Sergeant_helmet_co.paa",
@@ -269,7 +269,7 @@ class BNA_KC_Helmet_Phase1Geo_NCO: BNA_KC_Helmet_Phase1_Base
 
 class BNA_KC_Helmet_Phase1Geo_Officer: BNA_KC_Helmet_Phase1_Base
 {
-    displayName = "[KC] INF P1 Helm 11 (Officer)";
+    displayName = "[KC] INF GEO Helm 11 (Officer)";
     hiddenSelectionsTextures[] =
     {
         "\SWLB_clones\data\SWLB_clone_P1Lieutenant_helmet_co.paa",
@@ -280,7 +280,7 @@ class BNA_KC_Helmet_Phase1Geo_Officer: BNA_KC_Helmet_Phase1_Base
 
 class BNA_KC_Helmet_Phase1Geo_Captain: BNA_KC_Helmet_Phase1_Base
 {
-    displayName = "[KC] INF P1 Helm 16 (Captain)";
+    displayName = "[KC] INF GEO Helm 16 (CPT)";
     hiddenSelectionsTextures[] =
     {
         "\SWLB_clones\data\SWLB_clone_P1Captain_helmet_co.paa",
@@ -291,7 +291,7 @@ class BNA_KC_Helmet_Phase1Geo_Captain: BNA_KC_Helmet_Phase1_Base
 
 class BNA_KC_Helmet_Phase1Geo_Commander: BNA_KC_Helmet_Phase1_Base
 {
-    displayName = "[KC] INF P1 Helm 18 (Commander)";
+    displayName = "[KC] INF GEO Helm 18 (CMD)";
     hiddenSelectionsTextures[] =
     {
         "\SWLB_clones\data\SWLB_clone_P1Commander_helmet_co.paa",
