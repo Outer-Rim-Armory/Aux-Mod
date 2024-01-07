@@ -20,7 +20,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_APCs);
-        editorPreview = QPATHTOF(land\atte\data\previews\CLASS(Badger).jpg);
+        editorPreview = QPATHTOF(land\badger\data\previews\CLASS(Badger).jpg);
 
         displayName = "Badger IFV";
         crew = QCLASS(Unit_Phase2_Tanker_CT);
@@ -100,11 +100,11 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(badger\data\textures\KeeliCompany\Body_co.paa),
-            QPATHTOF(badger\data\textures\KeeliCompany\Addons_co.paa),
-            QPATHTOF(badger\data\textures\KeeliCompany\Tow_co.paa),
-            QPATHTOF(badger\data\textures\Standard\CamoNet_co.paa),
-            QPATHTOF(badger\data\textures\Standard\Cage_co.paa)
+            QPATHTOF(land\badger\data\textures\KeeliCompany\Body_co.paa),
+            QPATHTOF(land\badger\data\textures\KeeliCompany\Addons_co.paa),
+            QPATHTOF(land\badger\data\textures\KeeliCompany\Tow_co.paa),
+            QPATHTOF(land\badger\data\textures\Standard\CamoNet_co.paa),
+            QPATHTOF(land\badger\data\textures\Standard\Cage_co.paa)
         };
 
         textureList[] = {"Standard", 0, "KeeliCompany", 1, "KeeliCompanyDamaged", 0, "CamoGrey", 0};
@@ -117,11 +117,11 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    QPATHTOF(badger\data\textures\Standard\Body_co.paa),
-                    QPATHTOF(badger\data\textures\Standard\Addons_co.paa),
-                    QPATHTOF(badger\data\textures\Standard\Tow_co.paa),
-                    QPATHTOF(badger\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(badger\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\badger\data\textures\Standard\Body_co.paa),
+                    QPATHTOF(land\badger\data\textures\Standard\Addons_co.paa),
+                    QPATHTOF(land\badger\data\textures\Standard\Tow_co.paa),
+                    QPATHTOF(land\badger\data\textures\Standard\CamoNet_co.paa),
+                    QPATHTOF(land\badger\data\textures\Standard\Cage_co.paa)
                 };
             };
 
@@ -130,11 +130,11 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    QPATHTOF(badger\data\textures\KeeliCompany\Body_co.paa),
-                    QPATHTOF(badger\data\textures\KeeliCompany\Addons_co.paa),
-                    QPATHTOF(badger\data\textures\KeeliCompany\Tow_co.paa),
-                    QPATHTOF(badger\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(badger\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\badger\data\textures\KeeliCompany\Body_co.paa),
+                    QPATHTOF(land\badger\data\textures\KeeliCompany\Addons_co.paa),
+                    QPATHTOF(land\badger\data\textures\KeeliCompany\Tow_co.paa),
+                    QPATHTOF(land\badger\data\textures\Standard\CamoNet_co.paa),
+                    QPATHTOF(land\badger\data\textures\Standard\Cage_co.paa)
                 };
             };
 
@@ -143,11 +143,11 @@ class CfgVehicles
                 displayName = "Keeli Company (Damaged)";
                 textures[] =
                 {
-                    QPATHTOF(badger\data\textures\KeeliCompanyDamaged\Body_co.paa),
-                    QPATHTOF(badger\data\textures\KeeliCompanyDamaged\Addons_co.paa),
-                    QPATHTOF(badger\data\textures\KeeliCompanyDamaged\Tow_co.paa),
-                    QPATHTOF(badger\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(badger\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\badger\data\textures\KeeliCompanyDamaged\Body_co.paa),
+                    QPATHTOF(land\badger\data\textures\KeeliCompanyDamaged\Addons_co.paa),
+                    QPATHTOF(land\badger\data\textures\KeeliCompanyDamaged\Tow_co.paa),
+                    QPATHTOF(land\badger\data\textures\Standard\CamoNet_co.paa),
+                    QPATHTOF(land\badger\data\textures\Standard\Cage_co.paa)
                 };
             };
 
@@ -156,11 +156,11 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    QPATHTOF(badger\data\textures\CamoGrey\Body_co.paa),
-                    QPATHTOF(badger\data\textures\CamoGrey\Addons_co.paa),
-                    QPATHTOF(badger\data\textures\CamoGrey\Tow_co.paa),
-                    QPATHTOF(badger\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(badger\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\badger\data\textures\CamoGrey\Body_co.paa),
+                    QPATHTOF(land\badger\data\textures\CamoGrey\Addons_co.paa),
+                    QPATHTOF(land\badger\data\textures\CamoGrey\Tow_co.paa),
+                    QPATHTOF(land\badger\data\textures\Standard\CamoNet_co.paa),
+                    QPATHTOF(land\badger\data\textures\Standard\Cage_co.paa)
                 };
             };
         };
