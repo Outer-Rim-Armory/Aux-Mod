@@ -68,12 +68,13 @@ class CfgVehicles
             };
             soundSetsExt[] =
             {
-                "BNA_KC_APC_Engine_RPM0_EXT_SoundSet",
-                "BNA_KC_APC_Engine_RPM1_EXT_SoundSet",
-                "BNA_KC_APC_Engine_RPM2_EXT_SoundSet",
-                "BNA_KC_APC_Engine_RPM3_EXT_SoundSet",
-                "BNA_KC_APC_Engine_RPM4_EXT_SoundSet",
-                "BNA_KC_APC_Engine_RPM5_EXT_SoundSet",
+                QCLASS(SoundSet_Badger_Engine_RPM0_EXT),
+                QCLASS(SoundSet_Badger_Engine_RPM1_EXT),
+                QCLASS(SoundSet_Badger_Engine_RPM2_EXT),
+                QCLASS(SoundSet_Badger_Engine_RPM3_EXT),
+                QCLASS(SoundSet_Badger_Engine_RPM4_EXT),
+                QCLASS(SoundSet_Badger_Engine_RPM5_EXT),
+                QCLASS(SoundSet_Badger_Engine_RPM6_EXT),
                 "APC_Wheeled_01_Rattling_EXT_SoundSet",
                 "APC_Wheeled_01_Stress_EXT_SoundSet",
                 "APC_Wheeled_01_Rain_EXT_SoundSet",

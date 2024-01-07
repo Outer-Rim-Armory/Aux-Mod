@@ -178,7 +178,7 @@ class CfgSoundShaders
     };
 
     class APC_Wheeled_01_Engine_RPM1_EXT_SoundShader;
-    class CLASS(APC_Engine_RPM1_EXT_SoundShader): APC_Wheeled_01_Engine_RPM1_EXT_SoundShader
+    class CLASS(SoundShader_Badger_Engine_RPM1_EXT): APC_Wheeled_01_Engine_RPM1_EXT_SoundShader
     {
         samples[] =
         {
@@ -187,7 +187,7 @@ class CfgSoundShaders
     };
 
     class APC_Wheeled_01_Engine_RPM2_EXT_SoundShader;
-    class CLASS(APC_Engine_RPM2_EXT_SoundShader): APC_Wheeled_01_Engine_RPM2_EXT_SoundShader
+    class CLASS(SoundShader_Badger_Engine_RPM2_EXT): APC_Wheeled_01_Engine_RPM2_EXT_SoundShader
     {
         samples[] =
         {
@@ -196,7 +196,7 @@ class CfgSoundShaders
     };
 
     class APC_Wheeled_01_Engine_RPM3_EXT_SoundShader;
-    class CLASS(APC_Engine_RPM3_EXT_SoundShader): APC_Wheeled_01_Engine_RPM3_EXT_SoundShader
+    class CLASS(SoundShader_Badger_Engine_RPM3_EXT): APC_Wheeled_01_Engine_RPM3_EXT_SoundShader
     {
         samples[] =
         {
@@ -205,7 +205,7 @@ class CfgSoundShaders
     };
 
     class APC_Wheeled_01_Engine_RPM4_EXT_SoundShader;
-    class CLASS(APC_Engine_RPM4_EXT_SoundShader): APC_Wheeled_01_Engine_RPM4_EXT_SoundShader
+    class CLASS(SoundShader_Badger_Engine_RPM4_EXT): APC_Wheeled_01_Engine_RPM4_EXT_SoundShader
     {
         samples[] =
         {
@@ -214,7 +214,7 @@ class CfgSoundShaders
     };
 
     class APC_Wheeled_01_Engine_RPM5_EXT_SoundShader;
-    class CLASS(APC_Engine_RPM5_EXT_SoundShader): APC_Wheeled_01_Engine_RPM5_EXT_SoundShader
+    class CLASS(SoundShader_Badger_Engine_RPM5_EXT): APC_Wheeled_01_Engine_RPM5_EXT_SoundShader
     {
         samples[] =
         {

@@ -139,38 +139,38 @@ class CfgSoundSets
     };
 
     class APC_Wheeled_01_Engine_RPM0_EXT_SoundSet;
-    class CLASS(APC_Engine_RPM0_EXT_SoundSet): APC_Wheeled_01_Engine_RPM0_EXT_SoundSet
+    class CLASS(SoundSet_Badger_Engine_RPM0_EXT): APC_Wheeled_01_Engine_RPM0_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(APC_Engine_RPM0_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Badger_Engine_RPM0_EXT)};
     };
 
     class APC_Wheeled_01_Engine_RPM1_EXT_SoundSet;
-    class CLASS(APC_Engine_RPM1_EXT_SoundSet): APC_Wheeled_01_Engine_RPM1_EXT_SoundSet
+    class CLASS(SoundSet_Badger_Engine_RPM1_EXT): APC_Wheeled_01_Engine_RPM1_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(APC_Engine_RPM1_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Badger_Engine_RPM1_EXT)};
     };
 
     class APC_Wheeled_01_Engine_RPM2_EXT_SoundSet;
-    class CLASS(APC_Engine_RPM2_EXT_SoundSet): APC_Wheeled_01_Engine_RPM2_EXT_SoundSet
+    class CLASS(SoundSet_Badger_Engine_RPM2_EXT): APC_Wheeled_01_Engine_RPM2_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(APC_Engine_RPM2_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Badger_Engine_RPM2_EXT)};
     };
 
     class APC_Wheeled_01_Engine_RPM3_EXT_SoundSet;
-    class CLASS(APC_Engine_RPM3_EXT_SoundSet): APC_Wheeled_01_Engine_RPM3_EXT_SoundSet
+    class CLASS(SoundSet_Badger_Engine_RPM3_EXT): APC_Wheeled_01_Engine_RPM3_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(APC_Engine_RPM3_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Badger_Engine_RPM3_EXT)};
     };
 
     class APC_Wheeled_01_Engine_RPM4_EXT_SoundSet;
-    class CLASS(APC_Engine_RPM4_EXT_SoundSet): APC_Wheeled_01_Engine_RPM4_EXT_SoundSet
+    class CLASS(SoundSet_Badger_Engine_RPM4_EXT): APC_Wheeled_01_Engine_RPM4_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(APC_Engine_RPM4_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Badger_Engine_RPM4_EXT)};
     };
 
     class APC_Wheeled_01_Engine_RPM5_EXT_SoundSet;
-    class CLASS(APC_Engine_RPM5_EXT_SoundSet): APC_Wheeled_01_Engine_RPM5_EXT_SoundSet
+    class CLASS(SoundSet_Badger_Engine_RPM5_EXT): APC_Wheeled_01_Engine_RPM5_EXT_SoundSet
     {
-        soundShaders[] = {QCLASS(APC_Engine_RPM5_EXT_SoundShader)};
+        soundShaders[] = {QCLASS(SoundShader_Badger_Engine_RPM5_EXT)};
     };
 };
