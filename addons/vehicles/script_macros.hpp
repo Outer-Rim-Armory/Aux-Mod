@@ -80,10 +80,16 @@
     condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != -1); \
     statement = QUOTE((objectParent ace_player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-1,true)]); \
 }
+#define INTERCOM_CARGO class TFAR_IntercomChannel_1 \
+{ \
+    displayName = "Cargo"; \
+    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != 1); \
+    statement = QUOTE((objectParent ace_Player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),0,true)]); \
+}
 #define INTERCOM_CREW class TFAR_IntercomChannel_2 \
 { \
     displayName = "Crew"; \
-    condition = QUOTE(_vehicle = objectParent ace_Player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != 1); \
+    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != 1); \
     statement = QUOTE((objectParent ace_Player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),1,true)]); \
 }
 
