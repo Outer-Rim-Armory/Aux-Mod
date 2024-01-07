@@ -1,4 +1,4 @@
-#define SELFINTERACTION_HUD_CHANGER class LS_HUD_Changer \
+#define HUD_CHANGER class LS_HUD_Changer \
 { \
     displayName = "Change HUD Color"; \
     condition = QUOTE(ace_player == currentPilot (_this#0) and isEngineOn (_this#0)); \

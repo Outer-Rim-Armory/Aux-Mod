@@ -70,7 +70,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            SELFINTERACTION_HUD_CHANGER;
+            HUD_CHANGER;
 
             INTERCOM_START;
                 INTERCOM_DISABLED;

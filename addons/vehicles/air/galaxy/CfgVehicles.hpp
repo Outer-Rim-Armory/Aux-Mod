@@ -35,7 +35,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            SELFINTERACTION_HUD_CHANGER;
+            HUD_CHANGER;
         };
 
         class Turrets: Turrets
@@ -94,7 +94,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            SELFINTERACTION_HUD_CHANGER;
+            HUD_CHANGER;
         };
 
         INVENTORY_VEHICLE_BASE(4);
@@ -126,7 +126,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            SELFINTERACTION_HUD_CHANGER;
+            HUD_CHANGER;
         };
 
         INVENTORY_VEHICLE_BASE(4);
