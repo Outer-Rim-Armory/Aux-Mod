@@ -5,8 +5,8 @@ class CfgAmmo
 
     // TODO: Update flyby sounds with JLTS and/or 3AS sounds. See weapons addon for property/class names
 
-    class Sh_120mm_APFSDS_Tracer_Red;
-    class BNA_KC_120_AT_Ammo: Sh_120mm_APFSDS_Tracer_Red
+    class Sh_120mm_HEAT_MP_T_Red;
+    class CLASS(Bullet_PlasmaBlitz_HEAT): Sh_120mm_HEAT_MP_T_Red
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
@@ -14,7 +14,7 @@ class CfgAmmo
     };
 
     class Sh_120mm_HE_Tracer_Red;
-    class BNA_KC_120_HE_Ammo: Sh_120mm_HE_Tracer_Red
+    class CLASS(Bullet_PlasmaBlitz_HE): Sh_120mm_HE_Tracer_Red
     {
 
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
@@ -22,8 +22,8 @@ class CfgAmmo
         coefGravity = 0.01;
     };
 
-    class Sh_120mm_HEAT_MP_T_Red;
-    class BNA_KC_120_HEAT_Ammo: Sh_120mm_HEAT_MP_T_Red
+    class Sh_120mm_APFSDS_Tracer_Red;
+    class CLASS(Bullet_PlasmaBlitz_AT): Sh_120mm_APFSDS_Tracer_Red
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";

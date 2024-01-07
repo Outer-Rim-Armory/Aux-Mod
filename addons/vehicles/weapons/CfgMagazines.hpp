@@ -8,32 +8,38 @@ class CfgMagazines
         mass = 8;
     };
 
-    class 30Rnd_120mm_HE_shells_Tracer_Red;
-    class BNA_KC_120_HE_Mag: 30Rnd_120mm_HE_shells_Tracer_Red
+    class CLASS(Mag_20rnd_Cannon_Blitz_HEAT): CLASS(Mag_VehicleBase)
     {
-        displayName = "HE Ammunition";
-        displayNameShort = "HE";
-        descriptionShort = "HE";
-        count = 20;
-        ammo = "BNA_KC_120_HE_Ammo";
-    };
-
-    class 20Rnd_120mm_APFSDS_shells_Tracer_Red;
-    class BNA_KC_120_AT_Mag: 20Rnd_120mm_APFSDS_shells_Tracer_Red
-    {
-        displayName = "AP Ammunition";
-        displayNameShort = "AP";
-        descriptionShort = "AP";
-        ammo = "BNA_KC_120_AT_Ammo";
-    };
-
-    class 20Rnd_120mm_HEAT_MP_T_Red;
-    class BNA_KC_120_HEAT_Mag: 20Rnd_120mm_HEAT_MP_T_Red
-    {
-        displayName = "HEAT Ammunition";
+        SCOPE_PUBLIC;
+        displayName = "HEAT";
         displayNameShort = "HEAT";
-        descriptionShort = "HEAT";
-        ammo = "BNA_KC_120_HEAT_Ammo";
+        ammo = QCLASS(Bullet_PlasmaBlitz_HEAT);
+        count = 20;
+
+        nameSound = "cannon";
+
+        initSpeed = 1330;
+        maxLeadSpeed = 25;
+        weight = 126;
+        muzzleImpulseFactor[] = {0.5, 3};
+    };
+
+    class CLASS(Mag_20rnd_Cannon_Blitz_HE): CLASS(Mag_20rnd_Cannon_Blitz_HEAT)
+    {
+        displayName = "HE";
+        displayNameShort = "HE";
+        ammo = QCLASS(Bullet_PlasmaBlitz_HE);
+
+        initSpeed = 1410;
+        muzzleImpulseFactor[] = {1, 6};
+    };
+
+    class CLASS(Mag_20rnd_Cannon_Blitz_AT): CLASS(Mag_20rnd_Cannon_Blitz_HEAT)
+    {
+        displayName = "AT";
+        displayNameShort = "AT";
+        ammo = QCLASS(Bullet_PlasmaBlitz_AT);
+        initSpeed = 1750;
     };
 
     class CLASS(Mag_100rnd_Coax): CLASS(Mag_VehicleBase)

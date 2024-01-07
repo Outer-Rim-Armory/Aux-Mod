@@ -5,14 +5,14 @@ class CfgWeapons
     {
         class player;
     };
-    class BNA_KC_120_Tankgun: cannon_120mm
+    class CLASS(Cannon_Blitz): cannon_120mm
     {
         displayName = "Main Cannon";
         magazines[] =
         {
-            "BNA_KC_120_AT_Mag",
-            "BNA_KC_120_HEAT_Mag",
-            "BNA_KC_120_HE_Mag"
+            QCLASS(Mag_20rnd_Cannon_Blitz_HEAT),
+            QCLASS(Mag_20rnd_Cannon_Blitz_HE),
+            QCLASS(Mag_20rnd_Cannon_Blitz_AT)
         };
         class player: player
         {

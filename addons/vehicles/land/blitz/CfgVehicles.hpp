@@ -207,14 +207,14 @@ class CfgVehicles
 
                 weapons[] =
                 {
-                    "BNA_KC_120_Tankgun",
+                    QCLASS(Cannon_Blitz),
                     QCLASS(Coax_Badger)
                 };
                 magazines[] =
                 {
-                    "BNA_KC_120_AT_Mag",
-                    "BNA_KC_120_HEAT_Mag",
-                    "BNA_KC_120_HE_Mag",
+                    QCLASS(Mag_20rnd_Cannon_Blitz_HEAT),
+                    QCLASS(Mag_20rnd_Cannon_Blitz_HE),
+                    QCLASS(Mag_20rnd_Cannon_Blitz_AT),
                     QCLASS(Mag_100rnd_Coax),
                     QCLASS(Mag_100rnd_Coax),
                     QCLASS(Mag_100rnd_Coax),
@@ -229,12 +229,12 @@ class CfgVehicles
             class muzzle_hide_cannon
             {
                 source = "reload";
-                weapon = "BNA_KC_120_Tankgun";
+                weapon = QCLASS(Cannon_Blitz);
             };
             class muzzle_rot_cannon
             {
                 source = "ammorandom";
-                weapon = "BNA_KC_120_Tankgun";
+                weapon = QCLASS(Cannon_Blitz);
             };
             class muzzle_rot_cmdr
             {
@@ -244,7 +244,7 @@ class CfgVehicles
             class recoil_source
             {
                 source = "reload";
-                weapon = "BNA_KC_120_Tankgun";
+                weapon = QCLASS(Cannon_Blitz);
             };
             class commander_gun_recoil
             {
