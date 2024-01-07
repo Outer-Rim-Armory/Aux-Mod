@@ -293,6 +293,26 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Vest_Phase1Geo_ARC_Lieutenant: BNA_KC_Vest_ARC_Light
+    {
+        displayName = "[KC] SF P1 ARC Vest (Lieutenant)";
+        hiddenSelectionsTextures[] =
+        {
+            "",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\ARC_LT_camo2_co.paa"
+        };
+    };
+
+    class BNA_KC_Vest_Phase1Geo_ARC_Captain: BNA_KC_Vest_ARC_Light
+    {
+        displayName = "[KC] SF P1 ARC Vest (Captain)";
+        hiddenSelectionsTextures[] =
+        {
+            "",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\ARC_CAP_camo2_co.paa"
+        };
+    };
+
     class BNA_KC_Vest_ARC_Imperial: BNA_KC_Vest_ARC
     {
         displayName = "[KC] SF ARC Vest (Imperial)";
