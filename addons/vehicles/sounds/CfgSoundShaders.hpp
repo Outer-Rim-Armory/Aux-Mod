@@ -169,7 +169,7 @@ class CfgSoundShaders
     };
 
     class APC_Wheeled_01_Engine_RPM0_EXT_SoundShader;
-    class CLASS(APC_Engine_RPM0_EXT_SoundShader): APC_Wheeled_01_Engine_RPM0_EXT_SoundShader
+    class CLASS(SoundShader_Badger_Engine_RPM0_EXT): APC_Wheeled_01_Engine_RPM0_EXT_SoundShader
     {
         samples[] =
         {
