@@ -325,19 +325,19 @@ class CfgWeapons
     {
         class player;
     };
-    class CLASS(Cannon_105mm): cannon_105mm_VTOL_01
+    class CLASS(Cannon_Galaxy): cannon_105mm_VTOL_01
     {
         displayName = "Heavy Energy Cannon";
         magazines[] =
         {
-            QCLASS(Mag_100rnd_Cannon_105mm)
+            QCLASS(Mag_100rnd_Cannon_Galaxy)
         };
         class player: player
         {
             sounds[] = {"StandardSound"};
             class StandardSound
             {
-                soundSetShot[] = {QCLASS(SoundSet_Cannon_105mm_Shot)};
+                soundSetShot[] = {QCLASS(SoundSet_Cannon_Galaxy_Shot)};
             };
         };
 

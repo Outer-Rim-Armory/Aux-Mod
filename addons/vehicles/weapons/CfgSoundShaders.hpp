@@ -16,7 +16,7 @@ class CfgSoundShaders
         };
     };
 
-    class CLASS(SoundShader_Cannon_105mm_Shot): CLASS(SoundShader_VehicleWeapon_Base)
+    class CLASS(SoundShader_Cannon_Galaxy_Shot): CLASS(SoundShader_VehicleWeapon_Base)
     {
         rangeCurve = "CannonCloseShotCurve";
         samples[] =

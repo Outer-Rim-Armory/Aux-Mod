@@ -28,10 +28,10 @@ class CfgPatches
         {
             QCLASS(Autocannon_Badger),
             QCLASS(Autocannon_40mm),
-            QCLASS(Cannon_105mm),
             QCLASS(Cannon_ARC),
             QCLASS(Cannon_ARC_Heavy),
             QCLASS(Cannon_ARC_Light),
+            QCLASS(Cannon_Galaxy),
             QCLASS(Cannon_YWing),
             QCLASS(Coax_Badger),
             QCLASS(Coax_Commander),

@@ -72,11 +72,11 @@ class CfgMagazines
         weight = 126;
     };
 
-    class CLASS(Mag_100rnd_Cannon_105mm): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_100rnd_Cannon_Galaxy): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayNameShort = "High Energy";
-        ammo = QCLASS(Bullet_PlasmaCannon_105mm_Green);
+        ammo = QCLASS(Bullet_PlasmaCannon_Galaxy_Green);
         count = 100;
 
         nameSound = "cannon";
