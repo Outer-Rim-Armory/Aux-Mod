@@ -422,17 +422,16 @@ class CfgWeapons
     };
 
     class 3AS_ATRT_Weapon_F;
-    class BNA_KC_ATRT_Turret: 3AS_ATRT_Weapon_F
+    class CLASS(Turret_ATRT): 3AS_ATRT_Weapon_F
     {
-        // Mod Info
-        dlc = "BNA_KC";
+        SCOPE_HIDDEN;
         author = "Keeli Company Aux Team";
 
         displayName = "AT-RT Turret";
         descriptionShort = "";
         picture = QPATHTOF(weapons\data\ui\ATRT_Turret_ca.paa);
 
-        magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
+        magazines[] = {QCLASS(Mag_9999rnd_ATRT)};
         magazineWell[] = {};
     };
 

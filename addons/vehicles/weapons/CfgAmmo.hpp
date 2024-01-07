@@ -70,8 +70,8 @@ class CfgAmmo
     class 3AS_ATRT_bluePlasma;
     class CLASS(Bullet_PlasmaATRT_Blue): 3AS_ATRT_bluePlasma
     {
-        caliber = 6;
         hit = 120;
+        caliber = 6;
         typicalSpeed = 400;
         coefGravity = 0.01;
 
