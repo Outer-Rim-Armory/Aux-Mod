@@ -275,6 +275,7 @@ class CfgPatches
             "BNA_KC_NVG_Visor",
             "BNA_KC_NVG_Visor_v2",
             "BNA_KC_NVG_Rangefinder",
+            "BNA_KC_NVG_P1_Rangefinder",
             "BNA_KC_NVG_Officer"
         };
     };
