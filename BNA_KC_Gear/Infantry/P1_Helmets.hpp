@@ -255,3 +255,47 @@ class BNA_KC_Helmet_Phase1_Officer_CamoGrey: BNA_KC_Helmet_Phase1_Base
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
 };
+
+class BNA_KC_Helmet_Phase1Geo_NCO: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF P1 Helm 06 (NCO)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Sergeant_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1Geo_Officer: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF P1 Helm 11 (Officer)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Lieutenant_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1Geo_Captain: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF P1 Helm 16 (Captain)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Captain_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1Geo_Commander: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF P1 Helm 18 (Commander)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Commander_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};

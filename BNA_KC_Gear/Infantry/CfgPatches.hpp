@@ -129,6 +129,12 @@ class CfgPatches
             // "BNA_KC_Helmet_Phase1_LT",
             // "BNA_KC_Helmet_Phase1_Officer",
 
+            // Phase 1 Geonosis
+            "BNA_KC_Helmet_Phase1Geo_NCO",
+            "BNA_KC_Helmet_Phase1Geo_Officer",
+            "BNA_KC_Helmet_Phase1Geo_Captain",
+            "BNA_KC_Helmet_Phase1Geo_Commander",
+
             // Camo Phase 1 Helmets
             "BNA_KC_Helmet_Phase1_Recruit_CamoBrown",
             "BNA_KC_Helmet_Phase1_Enlisted_CamoBrown",
