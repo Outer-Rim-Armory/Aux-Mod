@@ -5,7 +5,7 @@ class CfgSoundShaders
     {
         samples[] =
         {
-            {"\swlw_rework\sounds\launcher\E60R_shot.wss", 10, 1}
+            {"\swlw_rework\sounds\launcher\E60R_shot.wss", 1}
         };
     };
 };

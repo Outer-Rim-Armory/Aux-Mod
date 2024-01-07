@@ -5,7 +5,7 @@ class CfgSoundShaders
     {
         samples[] =
         {
-            {QPATHTOF(hi12\data\audio\Fire1.wss), 1, 1}
+            {QPATHTOF(hi12\data\audio\Fire1.wss), 1}
         };
     };
 };

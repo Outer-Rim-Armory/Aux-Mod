@@ -5,7 +5,7 @@ class CfgSoundShaders
     {
         samples[] =
         {
-            {"\MRC\JLTS\weapons\DP23\sounds\dp23_fire.wss", 1, 1}
+            {"\MRC\JLTS\weapons\DP23\sounds\dp23_fire.wss", 1}
         };
     };
 };
