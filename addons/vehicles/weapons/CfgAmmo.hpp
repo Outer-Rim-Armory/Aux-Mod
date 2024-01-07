@@ -53,14 +53,14 @@ class CfgAmmo
         coefGravity = 0.01;
     };
     class B_40mm_GPR_Tracer_Red;
-    class CLASS(Bullet_PlasmaAutocannon_GPR_Blue): B_40mm_GPR_Tracer_Red
+    class CLASS(Bullet_PlasmaAutocannon_Galaxy_GPR_Blue): B_40mm_GPR_Tracer_Red
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
         coefGravity = 0.01;
     };
     class B_40mm_APFSDS_Tracer_Red;
-    class CLASS(Bullet_PlasmaAutocannon_APFSDS_Red): B_40mm_APFSDS_Tracer_Red
+    class CLASS(Bullet_PlasmaAutocannon_Galaxy_APFSDS_Red): B_40mm_APFSDS_Tracer_Red
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";

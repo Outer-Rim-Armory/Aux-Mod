@@ -86,13 +86,13 @@ class CfgMagazines
         muzzleImpulseFactor[] = {0.5, 3};
     };
 
-    class CLASS(Mag_240Rnd_Autocannon_GPR): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_240Rnd_Autocannon_Galaxy_GPR): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayName = "GPR-T";
         displayNameShort = "GPR-T";
         displayNameMFDFormat = "GPR-T";
-        ammo = QCLASS(Bullet_PlasmaAutocannon_GPR_Blue);
+        ammo = QCLASS(Bullet_PlasmaAutocannon_Galaxy_GPR_Blue);
         count = 240;
 
         nameSound = "cannon";
@@ -102,13 +102,13 @@ class CfgMagazines
         muzzleImpulseFactor[] = {1, 6};
     };
 
-    class CLASS(Mag_160Rnd_Autocannon_APFSDS): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_160Rnd_Autocannon_Galaxy_APFSDS): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayName = "APFSDS-T";
         displayNameShort = "APFSDS-T";
         displayNameMFDFormat = "APFSDS-T";
-        ammo = QCLASS(Bullet_PlasmaAutocannon_APFSDS_Red);
+        ammo = QCLASS(Bullet_PlasmaAutocannon_Galaxy_APFSDS_Red);
         count = 160;
 
         nameSound = "cannon";

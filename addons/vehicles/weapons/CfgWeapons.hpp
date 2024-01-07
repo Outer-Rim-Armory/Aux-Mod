@@ -348,7 +348,7 @@ class CfgWeapons
         class HE;
         class AP;
     };
-    class CLASS(Autocannon_40mm): autocannon_40mm_VTOL_01
+    class CLASS(Autocannon_Galaxy): autocannon_40mm_VTOL_01
     {
         displayName = "Autocannon";
         class HE: HE
@@ -356,7 +356,7 @@ class CfgWeapons
             displayName = "Autocannon";
             magazines[] =
             {
-                QCLASS(Mag_240Rnd_Autocannon_GPR)
+                QCLASS(Mag_240Rnd_Autocannon_Galaxy_GPR)
             };
         };
         class AP: AP
@@ -364,7 +364,7 @@ class CfgWeapons
             displayName = "Autocannon";
             magazines[] =
             {
-                QCLASS(Mag_160Rnd_Autocannon_APFSDS)
+                QCLASS(Mag_160Rnd_Autocannon_Galaxy_APFSDS)
             };
         };
     };

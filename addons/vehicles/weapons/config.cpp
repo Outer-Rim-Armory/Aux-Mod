@@ -27,7 +27,7 @@ class CfgPatches
         weapons[] =
         {
             QCLASS(Autocannon_Badger),
-            QCLASS(Autocannon_40mm),
+            QCLASS(Autocannon_Galaxy),
             QCLASS(Cannon_ARC),
             QCLASS(Cannon_ARC_Heavy),
             QCLASS(Cannon_ARC_Light),

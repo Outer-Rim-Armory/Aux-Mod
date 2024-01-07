@@ -56,11 +56,11 @@ class CfgVehicles
             };
             class GunnerTurret_02: GunnerTurret_02
             {
-                weapons[] = {QCLASS(Autocannon_40mm)};
+                weapons[] = {QCLASS(Autocannon_Galaxy)};
                 magazines[] =
                 {
-                    QCLASS(Mag_240Rnd_Autocannon_GPR),
-                    QCLASS(Mag_160Rnd_Autocannon_APFSDS)
+                    QCLASS(Mag_240Rnd_Autocannon_Galaxy_GPR),
+                    QCLASS(Mag_160Rnd_Autocannon_Galaxy_APFSDS)
                 };
             };
         };
