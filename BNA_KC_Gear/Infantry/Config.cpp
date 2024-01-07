@@ -316,7 +316,7 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            uniformModel = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
+            uniformModel = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_p1Rangefinder_nvg_on.p3d";
             modelOff = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_p1Rangefinder_nvg_off.p3d";
         };
     };
