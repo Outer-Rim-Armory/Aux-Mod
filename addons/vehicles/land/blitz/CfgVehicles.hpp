@@ -195,10 +195,11 @@ class CfgVehicles
                         };
                         magazines[] =
                         {
-                            "BNA_KC_100rnd_Coax_Mag",
-                            "BNA_KC_100rnd_Coax_Mag",
-                            "BNA_KC_100rnd_Coax_Mag",
-                            "BNA_KC_100rnd_Coax_Mag",
+                            QCLASS(Mag_100rnd_Coax),
+                            QCLASS(Mag_100rnd_Coax),
+                            QCLASS(Mag_100rnd_Coax),
+                            QCLASS(Mag_100rnd_Coax),
+                            QCLASS(Mag_100rnd_Coax)
                             "SmokeLauncherMag"
                         };
                     };
@@ -207,18 +208,18 @@ class CfgVehicles
                 weapons[] =
                 {
                     "BNA_KC_120_Tankgun",
-                    "BNA_KC_Coax"
+                    QCLASS(Coax_Badger)
                 };
                 magazines[] =
                 {
                     "BNA_KC_120_AT_Mag",
                     "BNA_KC_120_HEAT_Mag",
                     "BNA_KC_120_HE_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag",
-                    "BNA_KC_100rnd_Coax_Mag"
+                    QCLASS(Mag_100rnd_Coax),
+                    QCLASS(Mag_100rnd_Coax),
+                    QCLASS(Mag_100rnd_Coax),
+                    QCLASS(Mag_100rnd_Coax),
+                    QCLASS(Mag_100rnd_Coax)
                 };
             };
         };
@@ -238,7 +239,7 @@ class CfgVehicles
             class muzzle_rot_cmdr
             {
                 source = "ammorandom";
-                weapon = "BNA_KC_Coax";
+                weapon = QCLASS(Coax_Badger);
             };
             class recoil_source
             {
@@ -248,7 +249,7 @@ class CfgVehicles
             class commander_gun_recoil
             {
                 source = "reload";
-                weapon = "BNA_KC_Coax";
+                weapon = QCLASS(Coax_Badger);
             };
         };
 
