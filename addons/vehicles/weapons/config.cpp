@@ -35,7 +35,7 @@ class CfgPatches
             QCLASS(Cannon_YWing),
             QCLASS(Coax_Badger),
             QCLASS(Coax_Commander),
-            QCLASS(Gatling_20mm)
+            QCLASS(Gatling_Galaxy)
         };
         VERSION_CONFIG;
     };

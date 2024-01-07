@@ -312,12 +312,12 @@ class CfgWeapons
     };
 
     class gatling_20mm_VTOL_01;
-    class CLASS(Gatling_20mm): gatling_20mm_VTOL_01
+    class CLASS(Gatling_Galaxy): gatling_20mm_VTOL_01
     {
         displayName = "Blaster Cannon";
         magazines[] =
         {
-            QCLASS(Mag_4000rnd_Gatling_20mm)
+            QCLASS(Mag_4000rnd_Gatling_Galaxy)
         };
     };
     class cannon_105mm;

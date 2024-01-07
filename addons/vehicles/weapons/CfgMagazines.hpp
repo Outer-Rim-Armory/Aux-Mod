@@ -58,11 +58,11 @@ class CfgMagazines
         count = 1000;
     };
 
-    class CLASS(Mag_4000rnd_Gatling_20mm): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_4000rnd_Gatling_Galaxy): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayNameShort = "High Energy";
-        ammo = QCLASS(Bullet_PlasmaGatling_20mm_Blue);
+        ammo = QCLASS(Bullet_PlasmaGatling_Galaxy_Blue);
         count = 4000;
 
         nameSound = "cannon";

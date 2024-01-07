@@ -46,12 +46,12 @@ class CfgVehicles
                 weapons[] =
                 {
                     QCLASS(Cannon_Galaxy),
-                    QCLASS(Gatling_20mm)
+                    QCLASS(Gatling_Galaxy)
                 };
                 magazines[] =
                 {
                     QCLASS(Mag_100rnd_Cannon_Galaxy),
-                    QCLASS(Mag_4000rnd_Gatling_20mm)
+                    QCLASS(Mag_4000rnd_Gatling_Galaxy)
                 };
             };
             class GunnerTurret_02: GunnerTurret_02

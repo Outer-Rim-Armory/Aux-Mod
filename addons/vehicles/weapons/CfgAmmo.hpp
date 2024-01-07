@@ -39,7 +39,7 @@ class CfgAmmo
     };
 
     class B_20mm_Tracer_Red;
-    class CLASS(Bullet_PlasmaGatling_20mm_Blue): B_20mm_Tracer_Red
+    class CLASS(Bullet_PlasmaGatling_Galaxy_Blue): B_20mm_Tracer_Red
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
