@@ -64,6 +64,7 @@ class CfgVehicles
             class MainTurret;
             class CargoTurret_01;
         };
+        class AnimationSources;
     };
     class B_UGV_01_rcws_F: UGV_01_rcws_base_F {};
     class CLASS(Khezu_Armed): B_UGV_01_rcws_F
@@ -134,6 +135,20 @@ class CfgVehicles
                 };
             };
             class CargoTurret_01: CargoTurret_01 {};
+        };
+
+        class AnimationSources: AnimationSources
+        {
+            class muzzle_rot_MG
+            {
+                source = "ammorandom";
+                weapon = QCLASS(Coax_Badger);
+            };
+            class muzzle_hide_MG
+            {
+                source = "reload";
+                weapon = QCLASS(Coax_Badger);
+            };
         };
     };
 };
