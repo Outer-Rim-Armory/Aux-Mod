@@ -31,4 +31,6 @@ _name = [
     "Tripod"
 ] call BIS_fnc_returnConfigEntry;
 
-_actionData set [1, format ["%1 %2", _actionData#1, _name]];
+_actionName = _actionData#1;
+_actionName = [_actionName, "Tripod", _name] call EFUNC(core,stringReplace);
+_actionData set [1, _actionName];
