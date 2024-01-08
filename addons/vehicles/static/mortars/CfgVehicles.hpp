@@ -119,11 +119,7 @@ class CfgVehicles
         {
             class ACE_MainActions
             {
-                displayName = "Mortar";
-                selection = "gunnerview";
-                condition = "true";
-                distance = 4;
-                class ace_csw_pickUp
+                class GVAR(CSW_PickUp)
                 {
                     displayName = "Disassemble Tripod";
                     condition = "call ace_csw_fnc_assemble_canPickupTripod";
