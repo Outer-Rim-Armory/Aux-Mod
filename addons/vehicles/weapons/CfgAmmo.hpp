@@ -78,4 +78,88 @@ class CfgAmmo
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
     };
+
+    class Sh_155mm_AMOS;
+    class CLASS(Shell_PlasmaMortar_82mm_HE): Sh_155mm_AMOS
+    {
+        hit = 340;
+        dangerRadiusHit = 750;
+        indirectHit = 125;
+        indirectHitRange = 30;
+        suppressionRadiusHit = 75;
+        explosive = 0.8;
+
+        cost = 200;
+
+        effectFly = "JLTS_plasma_blue";
+        effectFlare = "FlareShell";
+        effectsFire = "CannonFire";
+        effectsMissile = "ExplosionEffects";
+        effectsSmoke = "SmokeShellWhite";
+        explosionEffects = "MortarExplosion";
+
+        MORTAR_SOUND_AMMO;
+
+        class CamShakeExplode
+        {
+            distance = 216.443;
+            duration = 1.8;
+            frequency = 20;
+            power = 16.4;
+        };
+        class CamShakeFire
+        {
+            distance = 72.4431;
+            duration = 1.8;
+            frequency = 20;
+            power = 3.00922;
+        };
+        class CamShakeHit
+        {
+            distance = 1;
+            duration = 0.6;
+            frequency = 20;
+            power = 82;
+        };
+        class CamShakePlayerFire
+        {
+            distance = 1;
+            duration = 0.6;
+            frequency = 20;
+            power = 82;
+        };
+    };
+
+    class ShotDeployBase;
+    class CLASS(Shell_Mortar_SmokeWhite): ShotDeployBase
+    {
+        model = "\A3\weapons_f\ammo\shell";
+        submunitionAmmo = "SmokeShellArty";
+
+        effectFlare = "FlareShell";
+        effectsFire = "CannonFire";
+        effectsMissile = "ExplosionEffects";
+        effectsSmoke = "SmokeShellWhite";
+        explosionEffects = "MortarExplosion";
+
+        MORTAR_SOUND_AMMO;
+    };
+    class CLASS(Shell_Mortar_SmokeBlue): CLASS(Shell_Mortar_SmokeWhite)
+    {
+        submunitionAmmo = QCLASS(Shell_Mortar_SmokeBlue_Submunition);
+    };
+    class CLASS(Shell_Mortar_SmokeRed): CLASS(Shell_Mortar_SmokeWhite)
+    {
+        submunitionAmmo = QCLASS(Shell_Mortar_SmokeRed_Submunition);
+    };
+
+    class SmokeShellArty;
+    class CLASS(Shell_Mortar_SmokeBlue_Submunition): SmokeShellArty
+    {
+        effectsSmoke = QCLASS(Effects_SmokeShellBlue);
+    };
+    class CLASS(Shell_Mortar_SmokeRed_Submunition): SmokeShellArty
+    {
+        effectsSmoke = QCLASS(Effects_SmokeShellRed);
+    };
 };
