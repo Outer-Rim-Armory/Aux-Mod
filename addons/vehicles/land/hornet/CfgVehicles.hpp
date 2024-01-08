@@ -123,12 +123,12 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                weapons[] = {"BNA_KC_Mounted_MG"};
+                weapons[] = {QCLASS(MachineGun_Hornet)};
                 magazines[] =
                 {
-                    "BNA_KC_1000rnd_Coax_Mag",
-                    "BNA_KC_1000rnd_Coax_Mag",
-                    "BNA_KC_1000rnd_Coax_Mag"
+                    QCLASS(Mag_1000rnd_Coax),
+                    QCLASS(Mag_1000rnd_Coax),
+                    QCLASS(Mag_1000rnd_Coax)
                 };
             };
             class CargoTurret_01: CargoTurret_01 {};
@@ -143,17 +143,17 @@ class CfgVehicles
             class Minigun
             {
                 source = "revolving";
-                weapon = "BNA_KC_Mounted_MG";
+                weapon = QCLASS(MachineGun_Hornet);
             };
             class muzzle_hide
             {
                 source = "reload";
-                weapon = "BNA_KC_Mounted_MG";
+                weapon = QCLASS(MachineGun_Hornet);
             };
             class muzzle_rot
             {
                 source = "ammorandom";
-                weapon = "BNA_KC_Mounted_MG";
+                weapon = QCLASS(MachineGun_Hornet);
             };
         };
     };
@@ -235,22 +235,22 @@ class CfgVehicles
             class VoronaMuzzle_reload
             {
                 source = "reload";
-                weapon = "BNA_KC_Mounted_MissileLauncher";
+                weapon = QCLASS(Launcher_Hornet);
             };
             class VoronaMuzzle_reloadMagazine
             {
                 source = "reloadMagazine";
-                weapon = "BNA_KC_Mounted_MissileLauncher";
+                weapon = QCLASS(Launcher_Hornet);
             };
             class VoronaMuzzle_revolving
             {
                 source = "revolving";
-                weapon = "BNA_KC_Mounted_MissileLauncher";
+                weapon = QCLASS(Launcher_Hornet);
             };
             class VoronaMuzzle_rot
             {
                 source = "ammorandom";
-                weapon = "BNA_KC_Mounted_MissileLauncher";
+                weapon = QCLASS(Launcher_Hornet);
             };
         };
 
@@ -258,7 +258,7 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                weapons[] = {"BNA_KC_Mounted_MissileLauncher"};
+                weapons[] = {QCLASS(Launcher_Hornet)};
             };
             class CargoTurret_01: CargoTurret_01 {};
             class CargoTurret_02: CargoTurret_02 {};

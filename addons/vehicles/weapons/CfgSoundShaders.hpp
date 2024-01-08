@@ -33,4 +33,21 @@ class CfgSoundShaders
             {QPATHTOF(weapons\data\audio\tank\cannon\Fire1.wss), 1}
         };
     };
+
+    class CLASS(SoundShader_Rocket_Hornet_Shot): CLASS(SoundShader_VehicleWeapon_Base)
+    {
+        rangeCurve = "CannonCloseShotCurve";
+        samples[] =
+        {
+            {QPATHTOF(weapons\data\audio\hornet\rocket\Fire1.wss), 1}
+        };
+    };
+
+    class CLASS(SoundShader_MachineGun_Hornet_Shot): CLASS(SoundShader_VehicleWeapon_Base)
+    {
+        samples[] =
+        {
+            {QPATHTOF(weapons\data\audio\hornet\mg\Fire1.wss), 1}
+        };
+    };
 };

@@ -236,10 +236,10 @@ class CfgWeapons
     {
         class manual;
     };
-    class BNA_KC_Mounted_MG: LMG_Minigun_Transport
+    class CLASS(MachineGun_Hornet): LMG_Minigun_Transport
     {
         displayName = "Machine Gun";
-        drySound[] = { "MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10 };
+        drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
         magazines[] =
         {
             QCLASS(Mag_100rnd_Coax),
@@ -247,35 +247,30 @@ class CfgWeapons
             QCLASS(Mag_1000rnd_Coax)
         };
 
-        // Removes the smoke effect from the gun
         class GunParticles {};
 
         class manual: manual
         {
-            sounds[] =  { "StandardSound" };
             class StandardSound
             {
-                weaponSoundEffect = "";
-                begin1[] = { "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Hornet\Hornet_MG_Fire.wss", 3, 1, 1800 };
-                soundBegin[] = { "begin1", 1 };
+                soundSetShot[] = {QCLASS(SoundSet_MachineGun_Hornet_Shot)};
 
-                closure1[] = { "A3\sounds_f\weapons\gatling\gatling_rotation_short_2", 0.316228, 1, 20 };
-                closure2[] = { "A3\sounds_f\weapons\gatling\gatling_rotation_short_3", 0.316228, 1, 20 };
-                soundClosure[] = { "closure1", 0.5, "closure2", 0.5 };
+                closure1[] = {"\A3\sounds_f\weapons\gatling\gatling_rotation_short_2", 0.316228, 1, 20};
+                closure2[] = {"\A3\sounds_f\weapons\gatling\gatling_rotation_short_3", 0.316228, 1, 20};
+                soundClosure[] = {"closure1", 0.5, "closure2", 0.5};
             };
         };
     };
 
     class missiles_Vorona;
-    class BNA_KC_Mounted_MissileLauncher: missiles_Vorona
+    class CLASS(Launcher_Hornet): missiles_Vorona
     {
         displayName = "Missile Launcher";
-        drySound[] = { "", 1, 1 };
+        drySound[] = {"", 1, 1};
 
         class StandardSound
         {
-            begin1[] = { "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Hornet\Hornet_AT_Fire.wss", 5, 1, 1100 };
-            soundBegin[] = { "begin1", 1 };
+            soundSetShot[] = {QCLASS(SoundSet_Rocket_Hornet_Shot)};
         };
     };
 

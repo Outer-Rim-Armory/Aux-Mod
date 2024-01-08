@@ -50,4 +50,20 @@ class CfgSoundSets
 
         distanceFilter = "explosionDistanceFreqAttenuationFilter";
     };
+
+    class CLASS(SoundSet_Rocket_Hornet_Shot): CLASS(SoundSet_VehicleWeapon_Base)
+    {
+        soundShaders[] = {QCLASS(SoundShader_Rocket_Hornet_Shot)};
+        sound3DProcessingType = "ExplosionMedium3DProcessingType";
+
+        volumeCurve = "InverseSquare1Curve";
+        volumeFactor = 1.8;
+
+        distanceFilter = "explosionDistanceFreqAttenuationFilter";
+    };
+
+    class CLASS(SoundSet_MachineGun_Hornet_Shot): CLASS(SoundSet_VehicleWeapon_Base)
+    {
+        soundShaders[] = {QCLASS(SoundShader_MachineGun_Hornet_Shot)};
+    };
 };
