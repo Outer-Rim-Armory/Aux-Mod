@@ -523,7 +523,7 @@ class CfgWeapons
     class CLASS(Mortar_M190_Turret): CLASS(Mortar_Turret_Base)
     {
         SCOPE_PUBLIC;
-        displayName = "Model 190 Mortar System";
+        displayName = "M-190 Mortar System";
         magazines[] =
         {
             QCLASS(Mag_3Rnd_Mortar_82mm_HE),
