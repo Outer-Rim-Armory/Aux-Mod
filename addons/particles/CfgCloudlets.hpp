@@ -122,4 +122,14 @@ class CfgCloudlets
         size[] = {2, 4, 4};
         lifeTime = 3;
     };
+
+    class SmokeShellWhiteSmall;
+    class CLASS(Cloudlet_Mortar_SmokeShellBlue): SmokeShellWhiteSmall
+    {
+        color[] = {{0.1183, 0.1867, 1, 1}};
+    };
+    class CLASS(Cloudlet_Mortar_SmokeShellRed): SmokeShellWhiteSmall
+    {
+        color[] = {{1, 0.1383, 0.1353, 1}};
+    };
 };

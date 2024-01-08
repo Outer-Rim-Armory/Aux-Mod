@@ -91,7 +91,7 @@ class CfgAmmo
 
         cost = 200;
 
-        effectFly = "JLTS_plasma_blue";
+        effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
         effectFlare = "FlareShell";
         effectsFire = "CannonFire";
         effectsMissile = "ExplosionEffects";
@@ -156,10 +156,10 @@ class CfgAmmo
     class SmokeShellArty;
     class CLASS(Shell_Mortar_SmokeBlue_Submunition): SmokeShellArty
     {
-        effectsSmoke = QCLASS(Effects_SmokeShellBlue);
+        effectsSmoke = QCLASS(Effects_Mortar_SmokeShellBlue);
     };
     class CLASS(Shell_Mortar_SmokeRed_Submunition): SmokeShellArty
     {
-        effectsSmoke = QCLASS(Effects_SmokeShellRed);
+        effectsSmoke = QCLASS(Effects_Mortar_SmokeShellRed);
     };
 };

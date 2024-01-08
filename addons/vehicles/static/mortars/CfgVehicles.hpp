@@ -196,10 +196,10 @@ class CfgVehicles
             {
                 magazines[] =
                 {
-                    QCLASS(Mag_3Rnd_M190_HE),
-                    QCLASS(Mag_3Rnd_M190_SmokeWhite),
-                    QCLASS(Mag_3Rnd_M190_SmokeBlue),
-                    QCLASS(Mag_3Rnd_M190_SmokeRed)
+                    QCLASS(Mag_3Rnd_Mortar_82mm_HE),
+                    QCLASS(Mag_3Rnd_Mortar_SmokeWhite),
+                    QCLASS(Mag_3Rnd_Mortar_SmokeBlue),
+                    QCLASS(Mag_3Rnd_Mortar_SmokeRed)
                 };
                 weapons[] = {QCLASS(Mortar_M190_Turret)};
             };
