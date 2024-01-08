@@ -6,7 +6,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
         author = "Keeli Company Aux Team";
 
-        action = QCLASS(Faction_KC);
+        faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
         editorPreview = QPATHTOF(land\hornet\data\previews\CLASS(Hornet_Unarmed).jpg);
 
@@ -75,7 +75,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
         author = "Keeli Company Aux Team";
 
-        action = QCLASS(Faction_KC);
+        faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
         editorPreview = QPATHTOF(land\hornet\data\previews\CLASS(Hornet_MG).jpg);
 
@@ -181,7 +181,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
         author = "Keeli Company Aux Team";
 
-        action = QCLASS(Faction_KC);
+        faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
         editorPreview = QPATHTOF(land\hornet\data\previews\CLASS(Hornet_AT).jpg);
 
