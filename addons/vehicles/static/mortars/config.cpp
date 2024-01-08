@@ -16,6 +16,7 @@ class CfgPatches
             QUOTE(ADDON),
             QGVAR(weapons),
             QGVAR(sounds),
+            "ace_csw",
             "ace_mk6mortar",
             "3AS_Mortar",
             "3AS_Main",
