@@ -23,7 +23,23 @@ class CfgPatches
             QGVAR(vespoid),
             QGVAR(ywing),
             // Land
-            QGVAR(aat)
+            QGVAR(aat),
+            QGVAR(atap),
+            QGVAR(atrt),
+            QGVAR(atte),
+            QGVAR(badger),
+            QGVAR(blitz),
+            QGVAR(conga),
+            QGVAR(gammoth),
+            QGVAR(glavenus),
+            QGVAR(hornet),
+            QGVAR(juggernaut),
+            QGVAR(khezu),
+            QGVAR(olv20),
+            QGVAR(plesioth),
+            QGVAR(rx200),
+            QGVAR(scoutTank),
+            QGVAR(tx130)
         };
         units[] = {};
         weapons[] = {};
