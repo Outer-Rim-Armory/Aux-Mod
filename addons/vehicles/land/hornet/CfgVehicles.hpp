@@ -17,7 +17,7 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            QCLASS(land\hornet\data\textures\Body_CamoKC_co.paa),
+            QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
         };
@@ -31,7 +31,7 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    QCLASS(land\hornet\data\textures\Body_CamoKC_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
                 };
@@ -41,7 +41,7 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    QCLASS(land\hornet\data\textures\Body_CamoGrey_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Body_CamoGrey_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
                 };
@@ -86,7 +86,7 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            QCLASS(land\hornet\data\textures\Body_CamoKC_co.paa),
+            QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
         };
@@ -100,7 +100,7 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    QCLASS(land\hornet\data\textures\Body_CamoKC_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
                 };
@@ -110,7 +110,7 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    QCLASS(land\hornet\data\textures\Body_CamoGrey_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Body_CamoGrey_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
                 };
@@ -192,11 +192,11 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            QCLASS(land\hornet\data\textures\Body_CamoKC_co.paa),
+            QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-            QCLASS(land\hornet\data\textures\Launcher_co.paa),
-            QCLASS(land\hornet\data\textures\Launcher_co.paa)
+            QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+            QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
         };
         class TextureSources
         {
@@ -207,11 +207,11 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    QCLASS(land\hornet\data\textures\Body_CamoKC_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-                    QCLASS(land\hornet\data\textures\Launcher.paa),
-                    QCLASS(land\hornet\data\textures\Launcher.paa)
+                    QPATHTOF(land\hornet\data\textures\Launcher.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher.paa)
                 };
             };
             class GreyCamo: BrownCamo
@@ -219,11 +219,11 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    QCLASS(land\hornet\data\textures\Body_CamoGrey_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Body_CamoGrey_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-                    QCLASS(land\hornet\data\textures\Launcher.paa),
-                    QCLASS(land\hornet\data\textures\Launcher.paa)
+                    QPATHTOF(land\hornet\data\textures\Launcher.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher.paa)
                 };
             };
         };
