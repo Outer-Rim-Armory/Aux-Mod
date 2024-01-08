@@ -57,7 +57,7 @@ class CfgSoundSets
         sound3DProcessingType = "ExplosionMedium3DProcessingType";
 
         volumeCurve = "InverseSquare1Curve";
-        volumeFactor = 1.8;
+        volumeFactor = 3;
 
         distanceFilter = "explosionDistanceFreqAttenuationFilter";
     };
