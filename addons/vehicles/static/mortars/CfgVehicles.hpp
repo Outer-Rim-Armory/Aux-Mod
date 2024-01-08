@@ -7,7 +7,7 @@ class CfgVehicles
         {
             class ace_csw_deploy
             {
-                // modifierFunction = QUOTE(call FUNC(deployModifier));
+                modifierFunction = QUOTE(call FUNC(cswDeployModifier));
             };
         };
 
@@ -48,10 +48,6 @@ class CfgVehicles
         class HitPoints
         {
             class HitBody;
-        };
-        class ACE_Actions
-        {
-            class ACE_MainActions;
         };
         class UserActions;
         class assembleInfo;
@@ -111,30 +107,28 @@ class CfgVehicles
 
         class ACE_CSW
         {
-            enabled = TRUE;
-            disassembleTo = "";
-
             ammoLoadTime = 5;
             ammoUnloadTime = 5;
             desiredAmmo = 3;
 
             magazineLocation = QUOTE(_target selectionPosition 'usti hlavne');
-            proxyWeapon = "";
         };
         delete assembleInfo; // Removes base game disassemble option
 
-        class ACE_Actions: ACE_Actions
+        class ACE_Actions
         {
-            displayName = "Mortar";
-            selection = "gunnerview";
-            condition = "true";
-            distance = 4;
-
-            class ACE_MainActions: ACE_MainActions
+            class ACE_MainActions
             {
+                displayName = "Mortar";
+                selection = "gunnerview";
+                condition = "true";
+                distance = 4;
                 class ace_csw_pickUp
                 {
-                    // modifierFunction = QUOTE(_this call FUNC(deployModifier));
+                    displayName = "Disassemble Tripod";
+                    condition = "call ace_csw_fnc_assemble_canPickupTripod";
+                    statement = "call ace_csw_fnc_assemble_pickupTripod";
+                    modifierFunction = QUOTE(call FUNC(cswDeployModifier));
                 };
             };
         };
@@ -207,9 +201,10 @@ class CfgVehicles
 
         class ACE_CSW: ACE_CSW
         {
+            enabled = TRUE;
             disassembleTo = QCLASS(Mortar_M190_Carry);
             proxyWeapon = QCLASS(Mortar_M190_ProxyWeapon);
-            name = "M-190 Mortar";
+            displayName = "M-190 Mortar";
         };
     };
 };

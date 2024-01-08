@@ -23,9 +23,9 @@ class CfgWeapons
         {
             // See https://ace3.acemod.org/wiki/framework/crew-served-weapons-framework.html#22-carryable-tripod
             deploy = QCLASS(Mortar_M190);
-            type = "mount"; // Used for tripod (mortar)
+            type = "mount";
 
-            name = "[KC] M-190 Mortar System";
+            displayName = "M-190 Mortar System";
 
             deployTime = 1;
             pickupTime = 1;
