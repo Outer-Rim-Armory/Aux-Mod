@@ -28,10 +28,10 @@ class CfgVehicles
 
         armor = 600;
 
-        soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\apc\Startup.wss), 0.79432821, 1};
-        soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\apc\Shutdown.wss), 0.79432821, 1};
-        soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\apc\Startup.wss), 1, 1, 100};
-        soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\apc\Shutdown.wss), 1, 1, 10};
+        soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\badger\Startup.wss), 0.79432821, 1};
+        soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\badger\Shutdown.wss), 0.79432821, 1};
+        soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\badger\Startup.wss), 1, 1, 100};
+        soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\badger\Shutdown.wss), 1, 1, 10};
         class Sounds
         {
             soundSetsInt[] =

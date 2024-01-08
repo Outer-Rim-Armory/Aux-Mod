@@ -17,7 +17,7 @@ class CfgVehicles
         displayName = "Armored Scout Tank";
 
         editorSubcategory = QCLASS(EdSubCat_Speeders);
-        editorPreview = QPATHTOF(land\scoutTank\data\previews\CLASS(ScoutTank).jpg);
+        editorPreview = QPATHTOF(land\scoutblitz\data\previews\CLASS(ScoutTank).jpg);
 
         class Turrets: Turrets
         {

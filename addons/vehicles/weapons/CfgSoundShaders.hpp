@@ -12,7 +12,7 @@ class CfgSoundShaders
         rangeCurve = "CannonCloseShotCurve";
         samples[] =
         {
-            {QPATHTOF(weapons\data\audio\apc\cannon\Fire1.wss), 1}
+            {QPATHTOF(weapons\data\audio\badger\cannon\Fire1.wss), 1}
         };
     };
 
@@ -30,7 +30,7 @@ class CfgSoundShaders
         rangeCurve = "CannonCloseShotCurve";
         samples[] =
         {
-            {QPATHTOF(weapons\data\audio\tank\cannon\Fire1.wss), 1}
+            {QPATHTOF(weapons\data\audio\blitz\cannon\Fire1.wss), 1}
         };
     };
 
