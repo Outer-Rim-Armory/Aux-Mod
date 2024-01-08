@@ -178,8 +178,8 @@ class TransportBackpacks {}; \
 class TransportItems \
 { \
     ITEM_XX(ACE_elasticBandage,30); \
-    ITEM_XX(ACE_elasticBandage,20); \
-    ITEM_XX(ACE_elasticBandage,15); \
+    ITEM_XX(ACE_packingBandage,20); \
+    ITEM_XX(ACE_quickclot,15); \
     ITEM_XX(ACE_salineIV,1); \
     ITEM_XX(ACE_salineIV_500,1); \
     ITEM_XX(ACE_salineIV_250,2); \
@@ -188,4 +188,4 @@ class TransportItems \
     ITEM_XX(RD501_Painkiller,5); \
     ITEM_XX(ACE_tourniquet,8); \
     ITEM_XX(ACE_splint,2); \
-};
+}
