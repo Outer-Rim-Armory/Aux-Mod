@@ -39,7 +39,9 @@ class CfgPatches
             QGVAR(plesioth),
             QGVAR(rx200),
             QGVAR(scoutTank),
-            QGVAR(tx130)
+            QGVAR(tx130),
+            // Static
+            QGVAR(mortars)
         };
         units[] = {};
         weapons[] = {};
