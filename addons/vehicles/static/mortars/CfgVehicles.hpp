@@ -121,7 +121,7 @@ class CfgVehicles
             {
                 class GVAR(CSW_PickUp)
                 {
-                    displayName = "Disassemble Tripod";
+                    displayName = "Disassemble";
                     condition = "call ace_csw_fnc_assemble_canPickupTripod";
                     statement = "call ace_csw_fnc_assemble_pickupTripod";
                     modifierFunction = QUOTE(call FUNC(cswDeployModifier));
