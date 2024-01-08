@@ -21,7 +21,8 @@ class CfgPatches
             "3AS_Main",
             "3AS_Weapons",
             "3AS_VehicleWeapons",
-            "3AS_Static"
+            "3AS_Static",
+            "3AS_Mortar"
         };
         units[] = {};
         weapons[] =
@@ -35,7 +36,9 @@ class CfgPatches
             QCLASS(Cannon_YWing),
             QCLASS(Coax_Badger),
             QCLASS(Coax_Commander),
-            QCLASS(Gatling_Galaxy)
+            QCLASS(Gatling_Galaxy),
+            QCLASS(Mortar_Turret_Base),
+            QCLASS(Mortar_M190_Turret)
         };
         VERSION_CONFIG;
     };

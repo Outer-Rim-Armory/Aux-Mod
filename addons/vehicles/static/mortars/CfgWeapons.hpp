@@ -40,64 +40,7 @@ class CfgWeapons
         };
     };
 
-    class CannonCore;
-    class 3AS_Mortar_82mm: CannonCore
-    {
-        class Single1;
-        class Burst1;
-    };
-    class CLASS(Mortar_M190_Turret): 3AS_Mortar_82mm
-    {
-        displayName = "Model 190 Mortar System";
-        magazines[] =
-        {
-            QCLASS(Mag_3Rnd_M190_HE),
-            QCLASS(Mag_3Rnd_M190_SmokeWhite),
-            QCLASS(Mag_3Rnd_M190_SmokeBlue),
-            QCLASS(Mag_3Rnd_M190_SmokeRed)
-        };
-
-        MORTAR_SOUND_FIRE;
-
-        class Single1: Single1
-        {
-            displayName = "$STR_A3_mortar_82mm_Single10";
-            artilleryCharge = MORTAR_RANGE_SMALL;
-            reloadTime = 4;
-
-            MORTAR_SOUND_FIRE;
-        };
-        class Single2: Single1
-        {
-            displayName = "$STR_A3_mortar_82mm_Single20";
-            showToPlayer = FALSE;
-            artilleryCharge = MORTAR_RANGE_MEDIUM;
-        };
-        class Single3: Single1
-        {
-            displayName = "$STR_A3_mortar_82mm_Single30";
-            artilleryCharge = MORTAR_RANGE_FAR;
-        };
-
-        class Burst1: Burst1
-        {
-            displayName = "$STR_A3_mortar_82mm_Burst10";
-            artilleryCharge = MORTAR_RANGE_SMALL;
-            reloadTime = 4;
-
-            MORTAR_SOUND_FIRE;
-        };
-        class Burst2: Burst1
-        {
-            displayName = "$STR_A3_mortar_82mm_Burst20";
-            artilleryCharge = MORTAR_RANGE_MEDIUM;
-        };
-        class Burst3: Burst1
-        {
-            displayName = "$STR_A3_mortar_82mm_Single30";
-            artilleryCharge = MORTAR_RANGE_FAR;
-        };
-    };
+    class CLASS(Mortar_M190_Turret);
     class CLASS(Mortar_M190_ProxyWeapon): CLASS(Mortar_M190_Turret)
     {
         magazineReloadTime = 0.5;

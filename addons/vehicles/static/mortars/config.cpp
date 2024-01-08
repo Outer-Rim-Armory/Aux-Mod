@@ -27,7 +27,11 @@ class CfgPatches
             QCLASS(Mortar_Base),
             QCLASS(Mortar_M190)
         };
-        weapons[] = {};
+        weapons[] =
+        {
+            QCLASS(Mortar_M190_Carry),
+            QCLASS(Mortar_M190_ProxyWeapon)
+        };
         VERSION_CONFIG;
     };
 };

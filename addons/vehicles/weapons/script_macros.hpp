@@ -1,0 +1,3 @@
+#define M190_RANGE_SMALL 0.3504
+#define M190_RANGE_MEDIUM 0.7/*Unused*/
+#define M190_RANGE_FAR 0.4953

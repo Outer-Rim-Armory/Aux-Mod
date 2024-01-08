@@ -477,4 +477,92 @@ class CfgWeapons
             100
         };
     };
+
+    class CannonCore;
+    class 3AS_Mortar_82mm: CannonCore
+    {
+        class Single1;
+        class Burst1;
+    };
+    class CLASS(Mortar_Turret_Base): 3AS_Mortar_82mm
+    {
+        SCOPE_PRIVATE;
+        MORTAR_SOUND_FIRE;
+
+        class Single1: Single1
+        {
+            artilleryCharge = 0.35;
+            MORTAR_SOUND_FIRE;
+        };
+        class Single2: Single1
+        {
+            displayName = "$STR_A3_mortar_82mm_Burst20";
+            artilleryCharge = 0.7;
+        };
+        class Single3: Single1
+        {
+            displayName = "$STR_A3_mortar_82mm_Single30";
+            artilleryCharge = 1;
+        };
+
+        class Burst1: Burst1
+        {
+            MORTAR_SOUND_FIRE;
+        };
+        class Burst2: Burst1
+        {
+            displayName = "$STR_A3_mortar_82mm_Burst20";
+            artilleryCharge = 0.7;
+        };
+        class Burst3: Burst1
+        {
+            displayName = "$STR_A3_mortar_82mm_Single30";
+            artilleryCharge = 1;
+        };
+    };
+    class CLASS(Mortar_M190_Turret): CLASS(Mortar_Turret_Base)
+    {
+        SCOPE_PUBLIC;
+        displayName = "Model 190 Mortar System";
+        magazines[] =
+        {
+            QCLASS(Mag_3Rnd_M190_HE),
+            QCLASS(Mag_3Rnd_M190_SmokeWhite),
+            QCLASS(Mag_3Rnd_M190_SmokeBlue),
+            QCLASS(Mag_3Rnd_M190_SmokeRed)
+        };
+
+        class Single1: Single1
+        {
+            artilleryCharge = M190_RANGE_SMALL;
+            reloadTime = 4;
+        };
+        class Single2: Single2
+        {
+            artilleryCharge = M190_RANGE_MEDIUM;
+            showToPlayer = FALSE;
+            reloadTime = 4;
+        };
+        class Single3: Single3
+        {
+            artilleryCharge = M190_RANGE_FAR;
+            reloadTime = 4;
+        };
+
+        class Burst1: Burst1
+        {
+            artilleryCharge = M190_RANGE_SMALL;
+            reloadTime = 4;
+        };
+        class Burst2: Burst2
+        {
+            artilleryCharge = M190_RANGE_MEDIUM;
+            reloadTime = 4;
+        };
+        class Burst3: Burst3
+        {
+            artilleryCharge = M190_RANGE_FAR;
+            reloadTime = 4;
+        };
+    };
 };
