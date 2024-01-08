@@ -31,24 +31,25 @@ class CfgVehicles
         };
     };
 
-    class StaticMortar;
-    class Mortar_01_base_F: StaticMortar
+    class StaticWeapon;
+    class StaticMortar: StaticWeapon
     {
         class Turrets;
-        class HitPoints;
-        class ACE_Actions;
     };
-    class B_Mortar_01_F: Mortar_01_base_F
+    class Mortar_01_base_F: StaticMortar
     {
         class Turrets: Turrets
         {
             class MainTurret;
         };
-        class HitPoints: HitPoints
+    };
+    class B_Mortar_01_F: Mortar_01_base_F
+    {
+        class HitPoints
         {
             class HitBody;
         };
-        class ACE_Actions: ACE_Actions
+        class ACE_Actions
         {
             class ACE_MainActions;
         };
@@ -57,7 +58,7 @@ class CfgVehicles
     };
     class CLASS(Mortar_Base): B_Mortar_01_F
     {
-        SCOPE_PUBLIC;
+        SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
 
         editorSubcategory = QCLASS(EdSubCat_Turrets);
