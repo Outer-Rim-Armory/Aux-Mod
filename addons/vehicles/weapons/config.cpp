@@ -4,6 +4,7 @@
 #include "CfgAmmo.hpp"
 #include "CfgSoundShaders.hpp"
 #include "CfgSoundSets.hpp"
+#include "ACE_CSW_Groups.hpp"
 
 
 class CfgPatches
