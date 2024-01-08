@@ -41,7 +41,7 @@ class CfgVehicles
                 {
                     QPATHTOF(land\olv20\data\textures\CamoKC\Body_co.paa),
                     QPATHTOF(land\olv20\data\textures\CamoKC\Wheels_co.paa),
-                    QPATHTOF(land\olv20\data\textures\CamoKC\Turret_co.paa),
+                    QPATHTOF(data\csatTurret\CamoKC\Turret_co.paa),
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -53,7 +53,7 @@ class CfgVehicles
                 {
                     QPATHTOF(land\olv20\data\textures\CamoBrown\Body_co.paa),
                     QPATHTOF(land\olv20\data\textures\CamoBrown\Wheels_co.paa),
-                    QPATHTOF(land\olv20\data\textures\CamoBrown\Turret_co.paa),
+                    QPATHTOF(data\csatTurret\CamoBrown\Turret_co.paa),
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -65,7 +65,7 @@ class CfgVehicles
                 {
                     QPATHTOF(land\olv20\data\textures\CamoGrey\Body_co.paa),
                     QPATHTOF(land\olv20\data\textures\CamoGrey\Wheels_co.paa),
-                    QPATHTOF(land\olv20\data\textures\CamoGrey\Turret_co.paa),
+                    QPATHTOF(data\csatTurret\CamoGrey\Turret_co.paa),
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
