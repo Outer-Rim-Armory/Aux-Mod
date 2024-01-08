@@ -189,3 +189,11 @@ class TransportItems \
     ITEM_XX(ACE_tourniquet,8); \
     ITEM_XX(ACE_splint,2); \
 }
+
+#define CSW_MAG_CARRY(MAG) class MAG##_CSW: MAG \
+{ \
+    scope = 2; \
+    scopeArsenal = 2; \
+    type = TYPE_MAGAZINE_PRIMARY_AND_THROW; \
+    mass = 300; \
+}
