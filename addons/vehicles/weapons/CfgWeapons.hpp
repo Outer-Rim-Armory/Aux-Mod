@@ -432,7 +432,7 @@ class CfgWeapons
 
     // Horns & Alarms
     class CarHorn;
-    class BNA_KC_Juggernaut_Horn: CarHorn
+    class CLASS(Horn_Juggernaut): CarHorn
     {
         displayName = "Juggernaut Horn";
         drySound[] =
@@ -444,7 +444,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Juggernaut_Alarm: CarHorn
+    class CLASS(Alarm_Juggernaut): CarHorn
     {
         displayName = "Alarm";
         drySound[] =
@@ -456,7 +456,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Glavenus_Horn: CarHorn
+    class CLASS(Horn_Glavenus): CarHorn
     {
         drySound[] =
         {
@@ -467,7 +467,7 @@ class CfgWeapons
         };
     };
 
-    class BNA_KC_Gammoth_Horn: CarHorn
+    class CLASS(Horn_Gammoth): CarHorn
     {
         drySound[] =
         {
