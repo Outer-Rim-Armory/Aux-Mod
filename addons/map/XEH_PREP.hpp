@@ -1,1 +1,2 @@
 PREP(markSelf);
+PREP(markSelfInsertChildren);
