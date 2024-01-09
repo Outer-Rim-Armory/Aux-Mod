@@ -1,4 +1,5 @@
 #include "script_component.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
 
 
