@@ -208,7 +208,7 @@ class CfgVehicles
                 weapons[] =
                 {
                     QCLASS(Cannon_Blitz),
-                    QCLASS(Coax_Badger)
+                    QCLASS(Coax_Reek)
                 };
                 magazines[] =
                 {
@@ -239,7 +239,7 @@ class CfgVehicles
             class muzzle_rot_cmdr
             {
                 source = "ammorandom";
-                weapon = QCLASS(Coax_Badger);
+                weapon = QCLASS(Coax_Reek);
             };
             class recoil_source
             {
@@ -249,7 +249,7 @@ class CfgVehicles
             class commander_gun_recoil
             {
                 source = "reload";
-                weapon = QCLASS(Coax_Badger);
+                weapon = QCLASS(Coax_Reek);
             };
         };
 

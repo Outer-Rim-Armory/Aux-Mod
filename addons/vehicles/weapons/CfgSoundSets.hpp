@@ -18,9 +18,9 @@ class CfgSoundSets
         loop = 0;
     };
 
-    class CLASS(SoundSet_Autocannon_Badger_Shot): CLASS(SoundSet_VehicleWeapon_Base)
+    class CLASS(SoundSet_Autocannon_Reek_Shot): CLASS(SoundSet_VehicleWeapon_Base)
     {
-        soundShaders[] = {QCLASS(SoundShader_Autocannon_Badger_Shot)};
+        soundShaders[] = {QCLASS(SoundShader_Autocannon_Reek_Shot)};
         sound3DProcessingType = "ExplosionMedium3DProcessingType";
 
         volumeCurve = "InverseSquare1Curve";

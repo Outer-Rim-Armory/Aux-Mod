@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class BNA_KC_Vehicles_Badger
+    class BNA_KC_Vehicles_Reek
     {
         addonRootClass= "BNA_KC_Vehicles";
         author = "SweMonkey and DartRuffian";
@@ -10,7 +10,7 @@ class CfgPatches
             "BNA_KC_Vehicles",
                 // Core Config
             "A3_Armor_F_Beta_APC_Wheeled_01",
-                // Badger
+                // Reek
             "BNA_KC_Vehicles_Weapons",
                 // Weapons
             "BNA_KC_Vehicles_Sounds",
@@ -20,8 +20,8 @@ class CfgPatches
         };
         units[] =
         {
-            "BNA_KC_Badger",
-            "BNA_KC_APC_Badger"
+            "BNA_KC_Reek",
+            "BNA_KC_APC_Reek"
         };
         weapons[] = {};
     };

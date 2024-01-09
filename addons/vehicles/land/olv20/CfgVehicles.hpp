@@ -97,7 +97,7 @@ class CfgVehicles
             {
                 weapons[] =
                 {
-                    QCLASS(Coax_Badger),
+                    QCLASS(Coax_Reek),
                     "GMG_40mm",
                     "SmokeLauncher"
                 };

@@ -27,7 +27,7 @@ class CfgPatches
             QGVAR(atap),
             QGVAR(atrt),
             QGVAR(atte),
-            QGVAR(badger),
+            QGVAR(reek),
             QGVAR(blitz),
             QGVAR(conga),
             QGVAR(gammoth),

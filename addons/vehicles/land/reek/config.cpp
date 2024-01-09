@@ -18,8 +18,8 @@ class CfgPatches
         };
         units[] =
         {
-            QCLASS(Badger),
-            QCLASS(APC_Badger)
+            QCLASS(Reek),
+            QCLASS(APC_Reek)
         };
         weapons[] = {};
         VERSION_CONFIG;

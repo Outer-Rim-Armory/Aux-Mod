@@ -174,12 +174,12 @@ class CfgVehicles
             class muzzle_hide
             {
                 source = "reload";
-                weapon = QCLASS(Coax_Badger);
+                weapon = QCLASS(Coax_Reek);
             };
             class muzzle_rot
             {
                 source = "ammorandom";
-                weapon = QCLASS(Coax_Badger);
+                weapon = QCLASS(Coax_Reek);
             };
         };
 
@@ -187,7 +187,7 @@ class CfgVehicles
         {
             class MainTurret: MainTurret
             {
-                weapons[] = {QCLASS(Coax_Badger)};
+                weapons[] = {QCLASS(Coax_Reek)};
                 magazines[] =
                 {
                     QCLASS(MAG_1000rnd_Coax),

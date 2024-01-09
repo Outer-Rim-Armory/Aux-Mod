@@ -17,7 +17,7 @@ class CfgVehicles
             class MainTurret;
         };
     };
-    class BNA_KC_Badger: B_APC_Wheeled_01_cannon_F
+    class BNA_KC_Reek: B_APC_Wheeled_01_cannon_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -30,9 +30,9 @@ class CfgVehicles
         // Editor Attributes
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_APCs";
-        editorPreview = "\BNA_KC_Vehicles\Armored\Badger\Data\Previews\Badger.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Reek\Data\Previews\Reek.jpg";
 
-        displayName = "Badger IFV";
+        displayName = "Reek IFV";
         crew = "BNA_KC_Unit_Phase2_Tanker";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
 
@@ -110,11 +110,11 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Body.paa",
-            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Addons.paa",
-            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Tow.paa",
-            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
-            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+            "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\KeeliCompany\Body.paa",
+            "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\KeeliCompany\Addons.paa",
+            "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\KeeliCompany\Tow.paa",
+            "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\CamoNet.paa",
+            "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\Cage.paa"
         };
 
         textureList[] = {"Standard", 0, "KeeliCompany", 1, "KeeliCompanyDamaged", 0, "CamoGrey", 0};
@@ -127,11 +127,11 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Body.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Addons.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Tow.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\CamoNet.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\Cage.paa"
                 };
             };
 
@@ -141,11 +141,11 @@ class CfgVehicles
                 displayName = "Keeli Company"
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Body.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Addons.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Tow.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\KeeliCompany\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\KeeliCompany\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\KeeliCompany\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\CamoNet.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\Cage.paa"
                 };
             };
 
@@ -154,11 +154,11 @@ class CfgVehicles
                 displayName = "Keeli Company (Damaged)"
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompanyDamaged\Body.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompanyDamaged\Addons.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompanyDamaged\Tow.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\KeeliCompanyDamaged\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\KeeliCompanyDamaged\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\KeeliCompanyDamaged\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\CamoNet.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\Cage.paa"
                 };
             };
 
@@ -167,11 +167,11 @@ class CfgVehicles
                 displayName = "Grey Camo"
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\CamoGrey\Body.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\CamoGrey\Addons.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\CamoGrey\Tow.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
-                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\CamoGrey\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\CamoGrey\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\CamoGrey\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\CamoNet.paa",
+                    "\BNA_KC_Vehicles\Armored\Reek\Data\Textures\Standard\Cage.paa"
                 };
             };
         };
@@ -207,7 +207,7 @@ class CfgVehicles
         INVENTORY_VEHICLE_BASE(3)
     };
 
-    class BNA_KC_APC_Badger: BNA_KC_Badger
+    class BNA_KC_APC_Reek: BNA_KC_Reek
     {
         scope = 1;
         scopeCurator = 0;

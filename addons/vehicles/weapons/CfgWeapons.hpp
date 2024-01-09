@@ -32,7 +32,7 @@ class CfgWeapons
         class medium;
         class far;
     };
-    class CLASS(Autocannon_Badger): autocannon_40mm_CTWS
+    class CLASS(Autocannon_Reek): autocannon_40mm_CTWS
     {
         muzzles[] = {"HE", "AP"};
         class HE: autocannon_Base_F
@@ -50,7 +50,7 @@ class CfgWeapons
                 dispersion = 0.0015;
                 class StandardSound
                 {
-                    soundSetShot[] = {QCLASS(SoundSet_Autocannon_Badger_Shot)};
+                    soundSetShot[] = {QCLASS(SoundSet_Autocannon_Reek_Shot)};
                 };
             };
             class close: player
@@ -133,7 +133,7 @@ class CfgWeapons
                 dispersion = 0.00089999998;
                 class StandardSound
                 {
-                    soundSetShot[] = {QCLASS(SoundSet_Autocannon_Badger_Shot)};
+                    soundSetShot[] = {QCLASS(SoundSet_Autocannon_Reek_Shot)};
                 };
             };
             class close: player
@@ -209,7 +209,7 @@ class CfgWeapons
     {
         class manual;
     };
-    class CLASS(Coax_Badger): LMG_coax
+    class CLASS(Coax_Reek): LMG_coax
     {
         displayName = "Co-Axial";
         magazines[] =

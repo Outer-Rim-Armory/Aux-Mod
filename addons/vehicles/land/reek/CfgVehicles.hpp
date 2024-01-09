@@ -13,36 +13,36 @@ class CfgVehicles
             class MainTurret;
         };
     };
-    class CLASS(Badger): B_APC_Wheeled_01_cannon_F
+    class CLASS(Reek): B_APC_Wheeled_01_cannon_F
     {
         SCOPE_PUBLIC;
         author = "Keeli Company Aux Team";
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_APCs);
-        editorPreview = QPATHTOF(land\badger\data\previews\CLASS(Badger).jpg);
+        editorPreview = QPATHTOF(land\reek\data\previews\CLASS(Reek).jpg);
 
-        displayName = "Badger IFV";
+        displayName = "Reek IFV";
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
         armor = 600;
 
-        soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\badger\Startup.wss), 0.79432821, 1};
-        soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\badger\Shutdown.wss), 0.79432821, 1};
-        soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\badger\Startup.wss), 1, 1, 100};
-        soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\badger\Shutdown.wss), 1, 1, 10};
+        soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\reek\Startup.wss), 0.79432821, 1};
+        soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\reek\Shutdown.wss), 0.79432821, 1};
+        soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\reek\Startup.wss), 1, 1, 100};
+        soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\reek\Shutdown.wss), 1, 1, 10};
         class Sounds
         {
             soundSetsInt[] =
             {
-                QCLASS(SoundSet_Badger_Engine_RPM0_INT),
-                QCLASS(SoundSet_Badger_Engine_RPM1_INT),
-                QCLASS(SoundSet_Badger_Engine_RPM2_INT),
-                QCLASS(SoundSet_Badger_Engine_RPM3_INT),
-                QCLASS(SoundSet_Badger_Engine_RPM4_INT),
-                QCLASS(SoundSet_Badger_Engine_RPM5_INT),
-                QCLASS(SoundSet_Badger_Engine_RPM6_INT),
+                QCLASS(SoundSet_Reek_Engine_RPM0_INT),
+                QCLASS(SoundSet_Reek_Engine_RPM1_INT),
+                QCLASS(SoundSet_Reek_Engine_RPM2_INT),
+                QCLASS(SoundSet_Reek_Engine_RPM3_INT),
+                QCLASS(SoundSet_Reek_Engine_RPM4_INT),
+                QCLASS(SoundSet_Reek_Engine_RPM5_INT),
+                QCLASS(SoundSet_Reek_Engine_RPM6_INT),
                 "APC_Wheeled_01_Interior_Tone_Engine_Off_SoundSet",
                 "APC_Wheeled_01_Interior_Tone_Engine_On_SoundSet",
                 "APC_Wheeled_01_Rattling_INT_SoundSet",
@@ -69,13 +69,13 @@ class CfgVehicles
             };
             soundSetsExt[] =
             {
-                QCLASS(SoundSet_Badger_Engine_RPM0_EXT),
-                QCLASS(SoundSet_Badger_Engine_RPM1_EXT),
-                QCLASS(SoundSet_Badger_Engine_RPM2_EXT),
-                QCLASS(SoundSet_Badger_Engine_RPM3_EXT),
-                QCLASS(SoundSet_Badger_Engine_RPM4_EXT),
-                QCLASS(SoundSet_Badger_Engine_RPM5_EXT),
-                QCLASS(SoundSet_Badger_Engine_RPM6_EXT),
+                QCLASS(SoundSet_Reek_Engine_RPM0_EXT),
+                QCLASS(SoundSet_Reek_Engine_RPM1_EXT),
+                QCLASS(SoundSet_Reek_Engine_RPM2_EXT),
+                QCLASS(SoundSet_Reek_Engine_RPM3_EXT),
+                QCLASS(SoundSet_Reek_Engine_RPM4_EXT),
+                QCLASS(SoundSet_Reek_Engine_RPM5_EXT),
+                QCLASS(SoundSet_Reek_Engine_RPM6_EXT),
                 "APC_Wheeled_01_Rattling_EXT_SoundSet",
                 "APC_Wheeled_01_Stress_EXT_SoundSet",
                 "APC_Wheeled_01_Rain_EXT_SoundSet",
@@ -102,11 +102,11 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(land\badger\data\textures\KeeliCompany\Body_co.paa),
-            QPATHTOF(land\badger\data\textures\KeeliCompany\Addons_co.paa),
-            QPATHTOF(land\badger\data\textures\KeeliCompany\Tow_co.paa),
-            QPATHTOF(land\badger\data\textures\Standard\CamoNet_co.paa),
-            QPATHTOF(land\badger\data\textures\Standard\Cage_co.paa)
+            QPATHTOF(land\reek\data\textures\KeeliCompany\Body_co.paa),
+            QPATHTOF(land\reek\data\textures\KeeliCompany\Addons_co.paa),
+            QPATHTOF(land\reek\data\textures\KeeliCompany\Tow_co.paa),
+            QPATHTOF(land\reek\data\textures\Standard\CamoNet_co.paa),
+            QPATHTOF(land\reek\data\textures\Standard\Cage_co.paa)
         };
 
         textureList[] = {"Standard", 0, "KeeliCompany", 1, "KeeliCompanyDamaged", 0, "CamoGrey", 0};
@@ -119,11 +119,11 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    QPATHTOF(land\badger\data\textures\Standard\Body_co.paa),
-                    QPATHTOF(land\badger\data\textures\Standard\Addons_co.paa),
-                    QPATHTOF(land\badger\data\textures\Standard\Tow_co.paa),
-                    QPATHTOF(land\badger\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(land\badger\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\reek\data\textures\Standard\Body_co.paa),
+                    QPATHTOF(land\reek\data\textures\Standard\Addons_co.paa),
+                    QPATHTOF(land\reek\data\textures\Standard\Tow_co.paa),
+                    QPATHTOF(land\reek\data\textures\Standard\CamoNet_co.paa),
+                    QPATHTOF(land\reek\data\textures\Standard\Cage_co.paa)
                 };
             };
 
@@ -132,11 +132,11 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    QPATHTOF(land\badger\data\textures\KeeliCompany\Body_co.paa),
-                    QPATHTOF(land\badger\data\textures\KeeliCompany\Addons_co.paa),
-                    QPATHTOF(land\badger\data\textures\KeeliCompany\Tow_co.paa),
-                    QPATHTOF(land\badger\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(land\badger\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\reek\data\textures\KeeliCompany\Body_co.paa),
+                    QPATHTOF(land\reek\data\textures\KeeliCompany\Addons_co.paa),
+                    QPATHTOF(land\reek\data\textures\KeeliCompany\Tow_co.paa),
+                    QPATHTOF(land\reek\data\textures\Standard\CamoNet_co.paa),
+                    QPATHTOF(land\reek\data\textures\Standard\Cage_co.paa)
                 };
             };
 
@@ -145,11 +145,11 @@ class CfgVehicles
                 displayName = "Keeli Company (Damaged)";
                 textures[] =
                 {
-                    QPATHTOF(land\badger\data\textures\KeeliCompanyDamaged\Body_co.paa),
-                    QPATHTOF(land\badger\data\textures\KeeliCompanyDamaged\Addons_co.paa),
-                    QPATHTOF(land\badger\data\textures\KeeliCompanyDamaged\Tow_co.paa),
-                    QPATHTOF(land\badger\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(land\badger\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\reek\data\textures\KeeliCompanyDamaged\Body_co.paa),
+                    QPATHTOF(land\reek\data\textures\KeeliCompanyDamaged\Addons_co.paa),
+                    QPATHTOF(land\reek\data\textures\KeeliCompanyDamaged\Tow_co.paa),
+                    QPATHTOF(land\reek\data\textures\Standard\CamoNet_co.paa),
+                    QPATHTOF(land\reek\data\textures\Standard\Cage_co.paa)
                 };
             };
 
@@ -158,11 +158,11 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    QPATHTOF(land\badger\data\textures\CamoGrey\Body_co.paa),
-                    QPATHTOF(land\badger\data\textures\CamoGrey\Addons_co.paa),
-                    QPATHTOF(land\badger\data\textures\CamoGrey\Tow_co.paa),
-                    QPATHTOF(land\badger\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(land\badger\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\reek\data\textures\CamoGrey\Body_co.paa),
+                    QPATHTOF(land\reek\data\textures\CamoGrey\Addons_co.paa),
+                    QPATHTOF(land\reek\data\textures\CamoGrey\Tow_co.paa),
+                    QPATHTOF(land\reek\data\textures\Standard\CamoNet_co.paa),
+                    QPATHTOF(land\reek\data\textures\Standard\Cage_co.paa)
                 };
             };
         };
@@ -173,8 +173,8 @@ class CfgVehicles
             {
                 weapons[] =
                 {
-                    QCLASS(Autocannon_Badger),
-                    QCLASS(Coax_Badger)
+                    QCLASS(Autocannon_Reek),
+                    QCLASS(Coax_Reek)
                 };
                 magazines[] =
                 {
@@ -198,7 +198,7 @@ class CfgVehicles
         INVENTORY_VEHICLE_BASE(3);
     };
 
-    class CLASS(APC_Badger): CLASS(Badger)
+    class CLASS(APC_Reek): CLASS(Reek)
     {
         SCOPE_HIDDEN;
     };

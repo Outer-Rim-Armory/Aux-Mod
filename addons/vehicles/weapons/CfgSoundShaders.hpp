@@ -7,12 +7,12 @@ class CfgSoundShaders
         samples[] = {};
     };
 
-    class CLASS(SoundShader_Autocannon_Badger_Shot): CLASS(SoundShader_VehicleWeapon_Base)
+    class CLASS(SoundShader_Autocannon_Reek_Shot): CLASS(SoundShader_VehicleWeapon_Base)
     {
         rangeCurve = "CannonCloseShotCurve";
         samples[] =
         {
-            {QPATHTOF(weapons\data\audio\badger\cannon\Fire1.wss), 1}
+            {QPATHTOF(weapons\data\audio\reek\cannon\Fire1.wss), 1}
         };
     };
 

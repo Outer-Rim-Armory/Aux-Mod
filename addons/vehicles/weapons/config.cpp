@@ -28,14 +28,14 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
-            QCLASS(Autocannon_Badger),
+            QCLASS(Autocannon_Reek),
             QCLASS(Autocannon_Galaxy),
             QCLASS(Cannon_ARC),
             QCLASS(Cannon_ARC_Heavy),
             QCLASS(Cannon_ARC_Light),
             QCLASS(Cannon_Galaxy),
             QCLASS(Cannon_YWing),
-            QCLASS(Coax_Badger),
+            QCLASS(Coax_Reek),
             QCLASS(Coax_Commander),
             QCLASS(Gatling_Galaxy),
             QCLASS(Mortar_Turret_Base),
