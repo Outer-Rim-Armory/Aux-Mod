@@ -10,7 +10,7 @@
  * The array of custom items <ARRAY>
  *
  * Example:
- * call BNA_KC_customArmor_fnc_scanConfig;
+ * call BNA_KC_custom_armor_fnc_scanConfig;
  */
 
 params [
