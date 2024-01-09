@@ -21,8 +21,6 @@ params [
 private ["_cooldown", "_lastUsedEMP"];
 TRACE_1("fnc_canUseVehicleEMP",_vehicle);
 
-systemChat str _this;
-
 if (isNull _vehicle or {
 	!isEngineOn _vehicle or
 	getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> QGVAR(hasVehicleEMP)) == FALSE
