@@ -51,6 +51,7 @@ class CfgVehicles
         };
         class UserActions;
         class assembleInfo;
+        class ace_csw;
     };
     class CLASS(Mortar_Base): B_Mortar_01_F
     {
@@ -105,7 +106,7 @@ class CfgVehicles
             };
         };
 
-        class ACE_CSW
+        class ace_csw: ace_csw
         {
             ammoLoadTime = 5;
             ammoUnloadTime = 5;
@@ -114,20 +115,6 @@ class CfgVehicles
             magazineLocation = QUOTE(_target selectionPosition 'usti hlavne');
         };
         delete assembleInfo; // Removes base game disassemble option
-
-        class ACE_Actions
-        {
-            class ACE_MainActions
-            {
-                class GVAR(CSW_PickUp)
-                {
-                    displayName = "Disassemble Tripod";
-                    condition = "call ace_csw_fnc_assemble_canPickupTripod";
-                    statement = "call ace_csw_fnc_assemble_pickupTripod";
-                    modifierFunction = QUOTE(call FUNC(cswDeployModifier));
-                };
-            };
-        };
 
         class UserActions: UserActions
         {
@@ -195,7 +182,7 @@ class CfgVehicles
             };
         };
 
-        class ACE_CSW: ACE_CSW
+        class ace_csw: ace_csw
         {
             enabled = TRUE;
             disassembleTo = QCLASS(Mortar_M190_Carry);
