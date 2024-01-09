@@ -13,7 +13,7 @@ class CfgPatches
             QUOTE(ADDON),
             "3AS_Weapons_WestarM5",
             "SWLW_clones",
-            "Aux501_Patch_Accessories",
+            QGVAR(accessories),
             "JLTS_weapons_DC17SA",
             "ace_laserpointer"
         };
