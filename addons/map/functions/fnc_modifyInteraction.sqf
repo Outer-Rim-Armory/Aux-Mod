@@ -24,6 +24,6 @@ _colorCode = [
     "color",
     [0, 0, 0, 1]
 ] call BIS_fnc_returnConfigEntry;
-(_actionData select 2) set [1, [_colorCode] call EFUNC(rgbToHex)];
+(_actionData select 2) set [1, [_colorCode] call EFUNC(core,rgbToHex)];
 
 nil;
