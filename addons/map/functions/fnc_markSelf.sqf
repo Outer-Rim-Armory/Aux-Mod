@@ -17,8 +17,8 @@
  */
 
 params [
-	[["_channel", GVAR(markSelfChannel), [0]]],
-	[["_color", GVAR(markSelfColor), [""]]]
+    [["_channel", GVAR(markSelfChannel), [0]]],
+    [["_color", GVAR(markSelfColor), [""]]]
 ];
 private ["_marker"];
 TRACE_2("fnc_markSelf",_channel,_color);
@@ -26,12 +26,12 @@ TRACE_2("fnc_markSelf",_channel,_color);
 if (_channel isEqualTo -2) then {_channel = currentChannel};
 
 _marker = createMarkerLocal [
-	format [
-		"_USER_DEFINED #%1/%2/%3",
-		getPlayerID ace_player,
-		diag_tickTime,
-		_channel
-	],
+    format [
+        "_USER_DEFINED #%1/%2/%3",
+        getPlayerID ace_player,
+        diag_tickTime,
+        _channel
+    ],
     position ace_player,
     _channel,
     ace_player

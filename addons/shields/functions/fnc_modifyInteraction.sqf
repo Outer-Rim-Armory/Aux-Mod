@@ -22,9 +22,9 @@ _color = [_health, _maxHealth] call FUNC(healthColor);
 
 _actionName = _actionData#1;
 _actionName = format [_actionName, format [
-	"<t color='%1'>%2%3</t>",
-	_color,
-	_health,
-	"%"
+    "<t color='%1'>%2%3</t>",
+    _color,
+    _health,
+    "%"
 ]];
 _actionData set [1, _actionName];

@@ -16,7 +16,7 @@
  */
 
 params [
-	["_vehicle", objNull, [objNull]]
+    ["_vehicle", objNull, [objNull]]
 ];
 private ["_cooldown", "_lastUsedEMP"];
 TRACE_1("fnc_useVehicleEMP",_vehicle);

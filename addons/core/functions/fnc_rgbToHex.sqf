@@ -16,7 +16,7 @@
  */
 
 params [
-	["_color", [0, 0, 0], [[]], [3, 4]]
+    ["_color", [0, 0, 0], [[]], [3, 4]]
 ];
 private ["_colorMultiplier", "_colorStr"];
 TRACE_1("fnc_rgbToHex",_color);
@@ -28,7 +28,7 @@ if (count _color > 3) then {
 };
 
 _color = _color apply {
-	(_x * _colorMultiplier) call ace_common_fnc_toHex;
+    (_x * _colorMultiplier) call ace_common_fnc_toHex;
 };
 _colorStr = "#" + (_color joinString "");
 _colorStr;

@@ -16,20 +16,20 @@
  */
 
 params [
-	["_vehicle", objNull, [objNull]]
+    ["_vehicle", objNull, [objNull]]
 ];
 private ["_cooldown", "_lastUsedEMP"];
 TRACE_1("fnc_canUseVehicleEMP",_vehicle);
 
 if (isNull _vehicle or {
-	!isEngineOn _vehicle or
-	getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> QGVAR(hasVehicleEMP)) == FALSE
+    !isEngineOn _vehicle or
+    getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> QGVAR(hasVehicleEMP)) == FALSE
 }) exitWith {false};
 
 _cooldown = [
-	configFile >> "CfgVehicles" >> typeOf _vehicle,
-	QGVAR(vehicleEMPCooldown),
-	EMP_VEHICLE_COOLDOWN_DEFAULT
+    configFile >> "CfgVehicles" >> typeOf _vehicle,
+    QGVAR(vehicleEMPCooldown),
+    EMP_VEHICLE_COOLDOWN_DEFAULT
 ] call BIS_fnc_returnConfigEntry;
 
 _lastUsedEMP = _vehicle getVariable [QGVAR(lastUsedEMP), -_cooldown];
