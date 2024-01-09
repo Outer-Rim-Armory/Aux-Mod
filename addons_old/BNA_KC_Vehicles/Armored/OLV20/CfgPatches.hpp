@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class BNA_KC_Vehicles_OLV20
+    class BNA_KC_Vehicles_Hydra
     {
         addonRootClass= "BNA_KC_Vehicles";
         author = "SweMonkey and DartRuffian";
@@ -20,8 +20,8 @@ class CfgPatches
         };
         units[] =
         {
-            "BNA_KC_OLV20",
-            "BNA_KC_APC_OLV20"
+            "BNA_KC_Hydra",
+            "BNA_KC_APC_Hydra"
         };
         weapons[] = {};
     };

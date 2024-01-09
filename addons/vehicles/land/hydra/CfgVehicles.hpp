@@ -12,7 +12,7 @@ class CfgVehicles
             class MainTurret;
         };
     };
-    class CLASS(OLV20): O_APC_Wheeled_02_rcws_v2_F
+    class CLASS(Hydra): O_APC_Wheeled_02_rcws_v2_F
     {
         SCOPE_PUBLIC;
         author = "Keeli Company Aux Team";
@@ -20,9 +20,9 @@ class CfgVehicles
         side = BLUFOR;
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_APCs);
-        editorPreview = QPATHTOF(land\olv20\data\previews\CLASS(OLV20).jpg);
+        editorPreview = QPATHTOF(land\hydra\data\previews\CLASS(Hydra).jpg);
 
-        displayName = "OLV-20";
+        displayName = "Hydra";
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
@@ -39,8 +39,8 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    QPATHTOF(land\olv20\data\textures\CamoKC\Body_co.paa),
-                    QPATHTOF(land\olv20\data\textures\CamoKC\Wheels_co.paa),
+                    QPATHTOF(land\hydra\data\textures\CamoKC\Body_co.paa),
+                    QPATHTOF(land\hydra\data\textures\CamoKC\Wheels_co.paa),
                     QPATHTOF(data\csatTurret\CamoKC\Turret_co.paa),
                     "", // Camo Net Texture
                     ""  // Cage Texture
@@ -51,8 +51,8 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    QPATHTOF(land\olv20\data\textures\CamoBrown\Body_co.paa),
-                    QPATHTOF(land\olv20\data\textures\CamoBrown\Wheels_co.paa),
+                    QPATHTOF(land\hydra\data\textures\CamoBrown\Body_co.paa),
+                    QPATHTOF(land\hydra\data\textures\CamoBrown\Wheels_co.paa),
                     QPATHTOF(data\csatTurret\CamoBrown\Turret_co.paa),
                     "", // Camo Net Texture
                     ""  // Cage Texture
@@ -63,8 +63,8 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    QPATHTOF(land\olv20\data\textures\CamoGrey\Body_co.paa),
-                    QPATHTOF(land\olv20\data\textures\CamoGrey\Wheels_co.paa),
+                    QPATHTOF(land\hydra\data\textures\CamoGrey\Body_co.paa),
+                    QPATHTOF(land\hydra\data\textures\CamoGrey\Wheels_co.paa),
                     QPATHTOF(data\csatTurret\CamoGrey\Turret_co.paa),
                     "", // Camo Net Texture
                     ""  // Cage Texture
@@ -114,10 +114,5 @@ class CfgVehicles
         };
 
         INVENTORY_VEHICLE_BASE(2);
-    };
-
-    class CLASS(APC_OLV20): CLASS(OLV20)
-    {
-        SCOPE_HIDDEN;
     };
 };

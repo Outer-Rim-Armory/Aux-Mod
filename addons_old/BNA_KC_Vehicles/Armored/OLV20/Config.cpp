@@ -16,7 +16,7 @@ class CfgVehicles
             class MainTurret;
         };
     };
-    class BNA_KC_OLV20: O_APC_Wheeled_02_rcws_v2_F
+    class BNA_KC_Hydra: O_APC_Wheeled_02_rcws_v2_F
     {
         // Mod Info
         dlc = "BNA_KC";
@@ -30,9 +30,9 @@ class CfgVehicles
         side = 1;
         faction = "BNA_KC_Faction";
         editorSubcategory = "BNA_KC_SubCat_APCs";
-        editorPreview = "\BNA_KC_Vehicles\Armored\OLV20\Data\Previews\OLV20.jpg";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Hydra\Data\Previews\Hydra.jpg";
 
-        displayName = "OLV-20";
+        displayName = "Hydra";
         crew = "BNA_KC_Unit_Phase2_Tanker";
         typicalCargo[] = {"BNA_KC_Unit_Phase2_Tanker"};
 
@@ -54,9 +54,9 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Body.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Wheels.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Turret.paa",
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoKC\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoKC\Wheels.paa",
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoKC\Turret.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -66,9 +66,9 @@ class CfgVehicles
                 displayName = "Brown Camo";
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Body.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Wheels.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Turret.paa",
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoBrown\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoBrown\Wheels.paa",
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoBrown\Turret.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -78,9 +78,9 @@ class CfgVehicles
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoGrey\Body.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoGrey\Wheels.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoGrey\Turret.paa",
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoGrey\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoGrey\Wheels.paa",
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoGrey\Turret.paa",
                     "", // Camo Net Texture
                     ""  // Cage Texture
                 };
@@ -131,7 +131,7 @@ class CfgVehicles
         INVENTORY_VEHICLE_BASE(2)
     };
 
-    class BNA_KC_APC_OLV20: BNA_KC_OLV20
+    class BNA_KC_APC_Hydra: BNA_KC_Hydra
     {
         scope = 1;
         scopeCurator = 0;

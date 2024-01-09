@@ -35,7 +35,7 @@ class CfgPatches
             QGVAR(hornet),
             QGVAR(juggernaut),
             QGVAR(khezu),
-            QGVAR(olv20),
+            QGVAR(hydra),
             QGVAR(plesioth),
             QGVAR(rx200),
             QGVAR(scoutTank),

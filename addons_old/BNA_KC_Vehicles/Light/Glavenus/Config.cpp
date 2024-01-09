@@ -50,7 +50,7 @@ class CfgVehicles
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoKC\Body.paa",
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoKC\Body2.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Turret.paa"
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoKC\Turret.paa"
                 };
             };
             class CamoBrown: KeeliCompany
@@ -60,7 +60,7 @@ class CfgVehicles
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoBrown\Body.paa",
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoBrown\Body2.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Turret.paa"
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoBrown\Turret.paa"
                 };
             };
             class CamoGrey: KeeliCompany
@@ -70,7 +70,7 @@ class CfgVehicles
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoGrey\Body.paa",
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoGrey\Body2.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoGrey\Turret.paa"
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoGrey\Turret.paa"
                 };
             };
         };
@@ -158,7 +158,7 @@ class CfgVehicles
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoKC\Body.paa",
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoKC\Body2.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Turret.paa"
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoKC\Turret.paa"
                 };
             };
             class CamoBrown: KeeliCompany
@@ -168,7 +168,7 @@ class CfgVehicles
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoBrown\Body.paa",
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoBrown\Body2.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Turret.paa"
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoBrown\Turret.paa"
                 };
             };
             class CamoGrey: KeeliCompany
@@ -178,7 +178,7 @@ class CfgVehicles
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoGrey\Body.paa",
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoGrey\Body2.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoGrey\Turret.paa"
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoGrey\Turret.paa"
                 };
             };
         };
@@ -260,7 +260,7 @@ class CfgVehicles
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoKC\Body.paa",
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoKC\Body2.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoKC\Turret.paa"
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoKC\Turret.paa"
                 };
             };
             class CamoBrown: KeeliCompany
@@ -270,7 +270,7 @@ class CfgVehicles
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoBrown\Body.paa",
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoBrown\Body2.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoBrown\Turret.paa"
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoBrown\Turret.paa"
                 };
             };
             class CamoGrey: KeeliCompany
@@ -280,7 +280,7 @@ class CfgVehicles
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoGrey\Body.paa",
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\CamoGrey\Body2.paa",
-                    "\BNA_KC_Vehicles\Armored\OLV20\Data\Textures\CamoGrey\Turret.paa"
+                    "\BNA_KC_Vehicles\Armored\Hydra\Data\Textures\CamoGrey\Turret.paa"
                 };
             };
         };

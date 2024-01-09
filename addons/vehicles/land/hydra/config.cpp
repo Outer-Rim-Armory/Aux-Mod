@@ -18,8 +18,7 @@ class CfgPatches
         };
         units[] =
         {
-            QCLASS(OLV20),
-            QCLASS(APC_OLV20)
+            QCLASS(Hydra)
         };
         weapons[] = {};
         VERSION_CONFIG;

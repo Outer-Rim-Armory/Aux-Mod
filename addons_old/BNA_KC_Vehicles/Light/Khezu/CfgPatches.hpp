@@ -13,7 +13,7 @@ class CfgPatches
                 // Stomper
             "BNA_KC_Vehicles_Weapons",
                 // Co-Ax
-            "BNA_KC_Vehicles_OLV20"
+            "BNA_KC_Vehicles_Hydra"
                 // Turret texture
         };
         units[] =
