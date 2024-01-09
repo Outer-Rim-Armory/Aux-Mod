@@ -37,7 +37,8 @@ _presetDisplayNames insert [0, ["Disabled"]];
         ["BLUFOR", "OPFOR", "INDEP", "BLU/OPFOR", "All Sides"],
         0
     ],
-    TRUE
+    TRUE,
+    {call FUNC(registerPreset);}
 ] call CBA_fnc_addSetting;
 
 [
@@ -46,5 +47,6 @@ _presetDisplayNames insert [0, ["Disabled"]];
     ["Budget", "Budget for ACE Fortify."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     "100", // Kept as edit box for nicer ui
-    TRUE
+    TRUE,
+    {call FUNC(registerPreset);}
 ] call CBA_fnc_addSetting;
