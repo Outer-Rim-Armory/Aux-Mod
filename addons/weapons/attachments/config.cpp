@@ -17,6 +17,8 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
+            QCLASS(Optic_Base),
+            QCLASS(Optic_Holosight)
         };
         VERSION_CONFIG;
     };
