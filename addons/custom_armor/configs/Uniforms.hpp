@@ -181,9 +181,9 @@ class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base)
 {
     class ItemInfo;
 };
-class CLASS(Uniform_Insulated_Dexus): CLASS(Uniform_Phase2_Insulated_Base)
+class CLASS(Uniform_Phase2_Insulated_Dexus): CLASS(Uniform_Phase2_Insulated_Base)
 {
-    displayName = "[KC] INF Snow Armor ('Dexus')";
+    displayName = "[KC] INF P2 Snow Armor ('Dexus')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -192,9 +192,9 @@ class CLASS(Uniform_Insulated_Dexus): CLASS(Uniform_Phase2_Insulated_Base)
     };
 };
 
-class CLASS(Uniform_Insulated_Joe): CLASS(Uniform_Phase2_Insulated_Base)
+class CLASS(Uniform_Phase2_Insulated_Joe): CLASS(Uniform_Phase2_Insulated_Base)
 {
-    displayName = "[KC] INF Snow Armor ('Joe')";
+    displayName = "[KC] INF P2 Snow Armor ('Joe')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -203,9 +203,9 @@ class CLASS(Uniform_Insulated_Joe): CLASS(Uniform_Phase2_Insulated_Base)
     };
 };
 
-class CLASS(Uniform_Insulated_Keeli): CLASS(Uniform_Phase2_Insulated_Base)
+class CLASS(Uniform_Phase2_Insulated_Keeli): CLASS(Uniform_Phase2_Insulated_Base)
 {
-    displayName = "[KC] INF Snow Armor ('Keeli')";
+    displayName = "[KC] INF P2 Snow Armor ('Keeli')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
