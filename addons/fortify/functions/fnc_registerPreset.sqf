@@ -17,6 +17,10 @@ params [];
 private ["_allObjects", "_presets"];
 INFO("fnc_registerPreset");
 
+{
+    [_x, 0, []] call acex_fortify_fnc_registerObjects;
+} forEach [west, east, independent];
+
 if (GVAR(preset) isEqualTo "Disabled") exitWith {};
 
 _allObjects = [];
@@ -43,8 +47,10 @@ _objects = [
 
 _allObjects append _objects;
 
-[
-    GVAR(side),
-    parseNumber GVAR(budget),
-    _allObjects
-] call acex_fortify_fnc_registerObjects;
+{
+    [
+        _x,
+        parseNumber GVAR(budget),
+        _allObjects
+    ] call acex_fortify_fnc_registerObjects;
+} forEach GVAR(sides);
