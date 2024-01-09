@@ -306,6 +306,21 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_NVG_P1_Rangefinder: BNA_KC_NVG_Rangefinder
+    {
+        displayName = "[KC] Clone P1 Rangefinder (CS+)";
+
+        model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"\lsd_equipment_bluefor\accessories\gar\visor\data\swlb_clone_nvg_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_p1Rangefinder_nvg_on.p3d";
+            modelOff = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_p1Rangefinder_nvg_off.p3d";
+        };
+    };
+
     class BNA_KC_NVG_Officer: BNA_KC_NVG_Chip
     {
         displayName = "[KC] Clone P2 Officer Visor (WO+)";

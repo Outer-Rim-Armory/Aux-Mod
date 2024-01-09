@@ -61,6 +61,8 @@ class CfgPatches
             // Vests
             "BNA_KC_Vest_ARC",
             "BNA_KC_Vest_ARC_Light",
+            "BNA_KC_Vest_Phase1Geo_ARC_Lieutenant",
+            "BNA_KC_Vest_Phase1Geo_ARC_Captain",
             "BNA_KC_Vest_ARC_v2",
             "BNA_KC_Vest_ARF",
             "BNA_KC_Vest_ForceRecon",
