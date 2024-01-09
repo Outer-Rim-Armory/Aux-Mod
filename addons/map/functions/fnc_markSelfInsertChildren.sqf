@@ -18,7 +18,7 @@
 params ["_target", "_player", "_params"];
 private ["_colorNames", "_actions"];
 TRACE_3("fnc_markSelfInsertChildren",_target,_player,_params);
-_colorNames = parseSimpleArray GVAR(selfMarkColors);
+_colorNames = parseSimpleArray GVAR(quickMarkColors);
 _actions = [];
 
 {
