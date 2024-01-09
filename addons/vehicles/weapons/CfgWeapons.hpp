@@ -5,31 +5,20 @@ class CfgWeapons
     {
         class player;
     };
-    class BNA_KC_120_Tankgun: cannon_120mm
+    class CLASS(Cannon_Blitz): cannon_120mm
     {
         displayName = "Main Cannon";
         magazines[] =
         {
-            "BNA_KC_120_AT_Mag",
-            "BNA_KC_120_HEAT_Mag",
-            "BNA_KC_120_HE_Mag"
+            QCLASS(Mag_20rnd_Cannon_Blitz_HEAT),
+            QCLASS(Mag_20rnd_Cannon_Blitz_HE),
+            QCLASS(Mag_20rnd_Cannon_Blitz_AT)
         };
         class player: player
         {
             class StandardSound
             {
-                begin1[] =
-                {
-                    "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Tank\TankShotDistant",
-                    10,
-                    1,
-                    1800
-                };
-                soundBegin[] =
-                {
-                    "begin1",
-                    1
-                };
+                soundSetShot[] = {QCLASS(SoundSet_Cannon_Blitz_Shot)};
             };
         };
     };
@@ -43,13 +32,9 @@ class CfgWeapons
         class medium;
         class far;
     };
-    class BNA_KC40mm_CTWS: autocannon_40mm_CTWS
+    class CLASS(Autocannon_Badger): autocannon_40mm_CTWS
     {
-        muzzles[] =
-        {
-            "HE",
-            "AP"
-        };
+        muzzles[] = {"HE", "AP"};
         class HE: autocannon_Base_F
         {
             displayName = "$STR_A3_autocannon_40mm_CTWS0";
@@ -63,30 +48,15 @@ class CfgWeapons
             class player: player
             {
                 dispersion = 0.0015;
-                sounds[] =
-                {
-                    "StandardSound"
-                };
                 class StandardSound
                 {
-                    begin1[] =
-                    {
-                        "BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCCannon",
-                        1.9952624,
-                        1,
-                        1500
-                    };
-                    soundBegin[] =
-                    {
-                        "begin1",
-                        0.33000001
-                    };
+                    soundSetShot[] = {QCLASS(SoundSet_Autocannon_Badger_Shot)};
                 };
             };
             class close: player
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 3;
                 burstRangeMax = 6;
                 aiRateOfFire = 1;
@@ -101,8 +71,8 @@ class CfgWeapons
             };
             class short: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 5;
                 aiRateOfFire = 2;
@@ -117,8 +87,8 @@ class CfgWeapons
             };
             class medium: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 3;
                 aiRateOfFire = 2;
@@ -133,8 +103,8 @@ class CfgWeapons
             };
             class far: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 1;
                 aiRateOfFire = 2;
@@ -161,24 +131,9 @@ class CfgWeapons
             class player: player
             {
                 dispersion = 0.00089999998;
-                sounds[] =
-                {
-                    "StandardSound"
-                };
                 class StandardSound
                 {
-                    begin1[] =
-                    {
-                        "BNA_KC_Vehicles\VehicleSounds\Data\Audio\APC\APCCannon",
-                        1.9952624,
-                        1,
-                        1500
-                    };
-                    soundBegin[] =
-                    {
-                        "begin1",
-                        0.33000001
-                    };
+                    soundSetShot[] = {QCLASS(SoundSet_Autocannon_Badger_Shot)};
                 };
             };
             class close: player
@@ -199,8 +154,8 @@ class CfgWeapons
             };
             class short: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 5;
                 aiRateOfFire = 2;
@@ -215,8 +170,8 @@ class CfgWeapons
             };
             class medium: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 3;
                 aiRateOfFire = 2;
@@ -231,8 +186,8 @@ class CfgWeapons
             };
             class far: close
             {
-                aiBurstTerminable = 1;
-                showToPlayer = 0;
+                aiBurstTerminable = TRUE;
+                showToPlayer = FALSE;
                 burst = 1;
                 burstRangeMax = 1;
                 aiRateOfFire = 2;
@@ -254,46 +209,24 @@ class CfgWeapons
     {
         class manual;
     };
-    class BNA_KC_Coax: LMG_coax
+    class CLASS(Coax_Badger): LMG_coax
     {
         displayName = "Co-Axial";
         magazines[] =
         {
-            "BNA_KC_100rnd_Coax_Mag",
-            "BNA_KC_500rnd_Coax_Mag",
-            "BNA_KC_1000rnd_Coax_Mag"
+            QCLASS(Mag_100rnd_Coax),
+            QCLASS(Mag_500rnd_Coax),
+            QCLASS(Mag_1000rnd_Coax)
         };
+        drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
 
         class GunParticles {};
 
         class manual: manual
         {
-            sounds[] =
+            class StandardSound
             {
-                "StandardSound"
-            };
-            class BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
-            };
-            class StandardSound: BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] =
-                {
-                    "BNA_KC_Weapons\DC15A\Data\Audio\DC15A_Fire1.wss",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] =
-                {
-                    "begin1",
-                    1
-                };
+                soundSetShot[] = {QCLASS(SoundSet_DC15AShot)};
             };
         };
     };
@@ -303,46 +236,41 @@ class CfgWeapons
     {
         class manual;
     };
-    class BNA_KC_Mounted_MG: LMG_Minigun_Transport
+    class CLASS(MachineGun_Hornet): LMG_Minigun_Transport
     {
         displayName = "Machine Gun";
-        drySound[] = { "MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10 };
+        drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
         magazines[] =
         {
-            "BNA_KC_100rnd_Coax_Mag",
-            "BNA_KC_500rnd_Coax_Mag",
-            "BNA_KC_1000rnd_Coax_Mag"
+            QCLASS(Mag_100rnd_Coax),
+            QCLASS(Mag_500rnd_Coax),
+            QCLASS(Mag_1000rnd_Coax)
         };
 
-        // Removes the smoke effect from the gun
         class GunParticles {};
 
         class manual: manual
         {
-            sounds[] =  { "StandardSound" };
             class StandardSound
             {
-                weaponSoundEffect = "";
-                begin1[] = { "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Hornet\Hornet_MG_Fire.wss", 3, 1, 1800 };
-                soundBegin[] = { "begin1", 1 };
+                soundSetShot[] = {QCLASS(SoundSet_MachineGun_Hornet_Shot)};
 
-                closure1[] = { "A3\sounds_f\weapons\gatling\gatling_rotation_short_2", 0.316228, 1, 20 };
-                closure2[] = { "A3\sounds_f\weapons\gatling\gatling_rotation_short_3", 0.316228, 1, 20 };
-                soundClosure[] = { "closure1", 0.5, "closure2", 0.5 };
+                closure1[] = {"\A3\sounds_f\weapons\gatling\gatling_rotation_short_2", 0.316228, 1, 20};
+                closure2[] = {"\A3\sounds_f\weapons\gatling\gatling_rotation_short_3", 0.316228, 1, 20};
+                soundClosure[] = {"closure1", 0.5, "closure2", 0.5};
             };
         };
     };
 
     class missiles_Vorona;
-    class BNA_KC_Mounted_MissileLauncher: missiles_Vorona
+    class CLASS(Launcher_Hornet): missiles_Vorona
     {
         displayName = "Missile Launcher";
-        drySound[] = { "", 1, 1 };
+        drySound[] = {"", 1, 1};
 
         class StandardSound
         {
-            begin1[] = { "BNA_KC_Vehicles\VehicleSounds\Data\Audio\Hornet\Hornet_AT_Fire.wss", 5, 1, 1100 };
-            soundBegin[] = { "begin1", 1 };
+            soundSetShot[] = {QCLASS(SoundSet_Rocket_Hornet_Shot)};
         };
     };
 
@@ -351,52 +279,29 @@ class CfgWeapons
     {
         class manual;
     };
-    class BNA_KC_CommanderGun: HMG_127_MBT
+    class CLASS(Coax_Commander): HMG_127_MBT
     {
         displayName = "Commander Gun";
         magazines[] =
         {
-            "BNA_KC_100rnd_Coax_Mag"
+            QCLASS(Mag_100rnd_Coax)
         };
         class manual: manual
         {
-            sounds[] =
+            class StandardSound
             {
-                "StandardSound"
-            };
-            class BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                closure1[] = {};
-                closure2[] = {};
-                soundClosure[] = {};
-            };
-            class StandardSound: BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] =
-                {
-                    "MRC\JLTS\weapons\DC15A\sounds\dc15a_fire",
-                    1,
-                    1,
-                    1800
-                };
-                soundBegin[] =
-                {
-                    "begin1",
-                    1
-                };
+                soundSetShot[] = {QCLASS(SoundSet_DC15AShot)};
             };
         };
     };
 
     class gatling_20mm_VTOL_01;
-    class CLASS(Gatling_20mm): gatling_20mm_VTOL_01
+    class CLASS(Gatling_Galaxy): gatling_20mm_VTOL_01
     {
         displayName = "Blaster Cannon";
         magazines[] =
         {
-            QCLASS(Mag_4000rnd_Gatling_20mm)
+            QCLASS(Mag_4000rnd_Gatling_Galaxy)
         };
     };
     class cannon_105mm;
@@ -404,19 +309,19 @@ class CfgWeapons
     {
         class player;
     };
-    class CLASS(Cannon_105mm): cannon_105mm_VTOL_01
+    class CLASS(Cannon_Galaxy): cannon_105mm_VTOL_01
     {
         displayName = "Heavy Energy Cannon";
         magazines[] =
         {
-            QCLASS(Mag_100rnd_Cannon_105mm)
+            QCLASS(Mag_100rnd_Cannon_Galaxy)
         };
         class player: player
         {
             sounds[] = {"StandardSound"};
             class StandardSound
             {
-                soundSetShot[] = {QCLASS(SoundSet_Cannon_105mm_Shot)};
+                soundSetShot[] = {QCLASS(SoundSet_Cannon_Galaxy_Shot)};
             };
         };
 
@@ -427,7 +332,7 @@ class CfgWeapons
         class HE;
         class AP;
     };
-    class CLASS(Autocannon_40mm): autocannon_40mm_VTOL_01
+    class CLASS(Autocannon_Galaxy): autocannon_40mm_VTOL_01
     {
         displayName = "Autocannon";
         class HE: HE
@@ -435,7 +340,7 @@ class CfgWeapons
             displayName = "Autocannon";
             magazines[] =
             {
-                QCLASS(Mag_240Rnd_Autocannon_GPR)
+                QCLASS(Mag_240Rnd_Autocannon_Galaxy_GPR)
             };
         };
         class AP: AP
@@ -443,13 +348,13 @@ class CfgWeapons
             displayName = "Autocannon";
             magazines[] =
             {
-                QCLASS(Mag_160Rnd_Autocannon_APFSDS)
+                QCLASS(Mag_160Rnd_Autocannon_Galaxy_APFSDS)
             };
         };
     };
 
     class 3AS_Mass_Driver_Cannon;
-    class BNA_KC_ATTE_MassDriver: 3AS_Mass_Driver_Cannon
+    class CLASS(Cannon_ATTE_MassDriver): 3AS_Mass_Driver_Cannon
     {
         displayName = "Mass Driver Cannon";
         magazines[] =
@@ -460,7 +365,7 @@ class CfgWeapons
     };
 
     class 3AS_ATTE_Turret;
-    class BNA_KC_ATTE_Turrets: 3AS_ATTE_Turret
+    class CLASS(Turret_ATTE): 3AS_ATTE_Turret
     {
         displayName = "Point Defense Turret";
     };
@@ -512,17 +417,16 @@ class CfgWeapons
     };
 
     class 3AS_ATRT_Weapon_F;
-    class BNA_KC_ATRT_Turret: 3AS_ATRT_Weapon_F
+    class CLASS(Turret_ATRT): 3AS_ATRT_Weapon_F
     {
-        // Mod Info
-        dlc = "BNA_KC";
+        SCOPE_HIDDEN;
         author = "Keeli Company Aux Team";
 
         displayName = "AT-RT Turret";
         descriptionShort = "";
         picture = QPATHTOF(weapons\data\ui\ATRT_Turret_ca.paa);
 
-        magazines[] = {"BNA_KC_9999Rnd_ATRT_Turret_Magazine"};
+        magazines[] = {QCLASS(Mag_9999rnd_ATRT)};
         magazineWell[] = {};
     };
 
@@ -571,6 +475,94 @@ class CfgWeapons
             5,
             1,
             100
+        };
+    };
+
+    class CannonCore;
+    class 3AS_Mortar_82mm: CannonCore
+    {
+        class Single1;
+        class Burst1;
+    };
+    class CLASS(Mortar_Turret_Base): 3AS_Mortar_82mm
+    {
+        SCOPE_PRIVATE;
+        MORTAR_SOUND_FIRE;
+
+        class Single1: Single1
+        {
+            artilleryCharge = 0.35;
+            MORTAR_SOUND_FIRE;
+        };
+        class Single2: Single1
+        {
+            displayName = "$STR_A3_mortar_82mm_Burst20";
+            artilleryCharge = 0.7;
+        };
+        class Single3: Single1
+        {
+            displayName = "$STR_A3_mortar_82mm_Single30";
+            artilleryCharge = 1;
+        };
+
+        class Burst1: Burst1
+        {
+            MORTAR_SOUND_FIRE;
+        };
+        class Burst2: Burst1
+        {
+            displayName = "$STR_A3_mortar_82mm_Burst20";
+            artilleryCharge = 0.7;
+        };
+        class Burst3: Burst1
+        {
+            displayName = "$STR_A3_mortar_82mm_Single30";
+            artilleryCharge = 1;
+        };
+    };
+    class CLASS(Mortar_M190_Turret): CLASS(Mortar_Turret_Base)
+    {
+        SCOPE_PUBLIC;
+        displayName = "M-190 Mortar System";
+        magazines[] =
+        {
+            QCLASS(Mag_3Rnd_Mortar_82mm_HE),
+            QCLASS(Mag_3Rnd_Mortar_SmokeWhite),
+            QCLASS(Mag_3Rnd_Mortar_SmokeBlue),
+            QCLASS(Mag_3Rnd_Mortar_SmokeRed)
+        };
+
+        class Single1: Single1
+        {
+            artilleryCharge = M190_RANGE_SMALL;
+            reloadTime = 4;
+        };
+        class Single2: Single2
+        {
+            artilleryCharge = M190_RANGE_MEDIUM;
+            showToPlayer = FALSE;
+            reloadTime = 4;
+        };
+        class Single3: Single3
+        {
+            artilleryCharge = M190_RANGE_FAR;
+            reloadTime = 4;
+        };
+
+        class Burst1: Burst1
+        {
+            artilleryCharge = M190_RANGE_SMALL;
+            reloadTime = 4;
+        };
+        class Burst2: Burst2
+        {
+            artilleryCharge = M190_RANGE_MEDIUM;
+            reloadTime = 4;
+        };
+        class Burst3: Burst3
+        {
+            artilleryCharge = M190_RANGE_FAR;
+            reloadTime = 4;
         };
     };
 };

@@ -8,65 +8,67 @@ class CfgMagazines
         mass = 8;
     };
 
-    class 30Rnd_120mm_HE_shells_Tracer_Red;
-    class BNA_KC_120_HE_Mag: 30Rnd_120mm_HE_shells_Tracer_Red
+    class CLASS(Mag_20rnd_Cannon_Blitz_HEAT): CLASS(Mag_VehicleBase)
     {
-        displayName = "HE Ammunition";
-        displayNameShort = "HE";
-        descriptionShort = "HE";
-        count = 20;
-        ammo = "BNA_KC_120_HE_Ammo";
-    };
-
-    class 20Rnd_120mm_APFSDS_shells_Tracer_Red;
-    class BNA_KC_120_AT_Mag: 20Rnd_120mm_APFSDS_shells_Tracer_Red
-    {
-        displayName = "AP Ammunition";
-        displayNameShort = "AP";
-        descriptionShort = "AP";
-        ammo = "BNA_KC_120_AT_Ammo";
-    };
-
-    class 20Rnd_120mm_HEAT_MP_T_Red;
-    class BNA_KC_120_HEAT_Mag: 20Rnd_120mm_HEAT_MP_T_Red
-    {
-        displayName = "HEAT Ammunition";
+        SCOPE_PUBLIC;
+        displayName = "HEAT";
         displayNameShort = "HEAT";
-        descriptionShort = "HEAT";
-        ammo = "BNA_KC_120_HEAT_Ammo";
+        ammo = QCLASS(Bullet_PlasmaBlitz_HEAT);
+        count = 20;
+
+        nameSound = "cannon";
+
+        initSpeed = 1330;
+        maxLeadSpeed = 25;
+        weight = 126;
+        muzzleImpulseFactor[] = {0.5, 3};
     };
 
-    class 100Rnd_127x99_mag_Tracer_Red;
-    class BNA_KC_100rnd_Coax_Mag: 100Rnd_127x99_mag_Tracer_Red
+    class CLASS(Mag_20rnd_Cannon_Blitz_HE): CLASS(Mag_20rnd_Cannon_Blitz_HEAT)
     {
-        ammo = "BNA_KC_Coax_Ammo";
-        displayName = "100rnd Mag";
-        displayNameShort = "100rnd Mag";
-        descriptionShort = "100rnd Mag";
-        tracersEvery=1;
-    };
-    class BNA_KC_500rnd_Coax_Mag: BNA_KC_100rnd_Coax_Mag
-    {
-        displayName = "500rnd Mag";
-        displayNameShort = "500rnd Mag";
-        descriptionShort = "500rnd Mag";
+        displayName = "HE";
+        displayNameShort = "HE";
+        ammo = QCLASS(Bullet_PlasmaBlitz_HE);
 
+        initSpeed = 1410;
+        muzzleImpulseFactor[] = {1, 6};
+    };
+
+    class CLASS(Mag_20rnd_Cannon_Blitz_AT): CLASS(Mag_20rnd_Cannon_Blitz_HEAT)
+    {
+        displayName = "AT";
+        displayNameShort = "AT";
+        ammo = QCLASS(Bullet_PlasmaBlitz_AT);
+        initSpeed = 1750;
+    };
+
+    class CLASS(Mag_100rnd_Coax): CLASS(Mag_VehicleBase)
+    {
+        SCOPE_PUBLIC;
+        ammo = QCLASS(Bullet_PlasmaCoax_Blue);
+        count = 100;
+
+        nameSound = "mgun";
+
+        initSpeed = 910;
+        maxLeadSpeed = 36.1111;
+        weight = 126;
+        muzzleImpulseFactor[] = {0.05, 0.05};
+    };
+    class CLASS(Mag_500rnd_Coax): CLASS(Mag_100rnd_Coax)
+    {
         count = 500;
     };
-    class BNA_KC_1000rnd_Coax_Mag: BNA_KC_100rnd_Coax_Mag
+    class CLASS(Mag_1000rnd_Coax): CLASS(Mag_100rnd_Coax)
     {
-        displayName = "1000rnd Mag";
-        displayNameShort = "1000rnd Mag";
-        descriptionShort = "1000rnd Mag";
-
         count = 1000;
     };
 
-    class CLASS(Mag_4000rnd_Gatling_20mm): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_4000rnd_Gatling_Galaxy): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayNameShort = "High Energy";
-        ammo = QCLASS(Bullet_PlasmaGatling_20mm_Blue);
+        ammo = QCLASS(Bullet_PlasmaGatling_Galaxy_Blue);
         count = 4000;
 
         nameSound = "cannon";
@@ -76,11 +78,11 @@ class CfgMagazines
         weight = 126;
     };
 
-    class CLASS(Mag_100rnd_Cannon_105mm): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_100rnd_Cannon_Galaxy): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayNameShort = "High Energy";
-        ammo = QCLASS(Bullet_PlasmaCannon_105mm_Green);
+        ammo = QCLASS(Bullet_PlasmaCannon_Galaxy_Green);
         count = 100;
 
         nameSound = "cannon";
@@ -90,13 +92,13 @@ class CfgMagazines
         muzzleImpulseFactor[] = {0.5, 3};
     };
 
-    class CLASS(Mag_240Rnd_Autocannon_GPR): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_240Rnd_Autocannon_Galaxy_GPR): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayName = "GPR-T";
         displayNameShort = "GPR-T";
         displayNameMFDFormat = "GPR-T";
-        ammo = QCLASS(Bullet_PlasmaAutocannon_GPR_Blue);
+        ammo = QCLASS(Bullet_PlasmaAutocannon_Galaxy_GPR_Blue);
         count = 240;
 
         nameSound = "cannon";
@@ -106,13 +108,13 @@ class CfgMagazines
         muzzleImpulseFactor[] = {1, 6};
     };
 
-    class CLASS(Mag_160Rnd_Autocannon_APFSDS): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_160Rnd_Autocannon_Galaxy_APFSDS): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayName = "APFSDS-T";
         displayNameShort = "APFSDS-T";
         displayNameMFDFormat = "APFSDS-T";
-        ammo = QCLASS(Bullet_PlasmaAutocannon_APFSDS_Red);
+        ammo = QCLASS(Bullet_PlasmaAutocannon_Galaxy_APFSDS_Red);
         count = 160;
 
         nameSound = "cannon";
@@ -135,4 +137,49 @@ class CfgMagazines
         initSpeed = 400;
         mass = 10;
     };
+
+    class CLASS(Mag_3Rnd_Mortar_82mm_HE): CLASS(Mag_VehicleBase)
+    {
+        SCOPE_HIDDEN;
+        displayName = "[KC] 3Rnd Mortar HE Shells";
+        displayNameShort = "3Rnd HE";
+        displayNameMFDFormat = "HE";
+        ammo = QCLASS(Shell_PlasmaMortar_82mm_HE);
+        count = 3;
+
+        model = "\z\ace\addons\mk6mortar\data\l16_ammo_he.p3d";
+        picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
+        nameSound = "heat";
+
+        initSpeed = 200;
+        muzzleImpulseFactor[] = {0, 0};
+    };
+    CSW_MAG_CONVERSION(CLASS(Mag_3Rnd_Mortar_82mm_HE));
+
+    class CLASS(Mag_3Rnd_Mortar_SmokeWhite): CLASS(Mag_3Rnd_Mortar_82mm_HE)
+    {
+        displayName = "[KC] 3Rnd Mortar White Smoke Shells";
+        displayNameShort = "3Rnd W Smoke";
+        ammo = QCLASS(Shell_Mortar_SmokeWhite);
+
+        model = "\z\ace\addons\mk6mortar\data\l16_ammo_smk_white.p3d";
+        picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_smk_white_ca.paa";
+    };
+    CSW_MAG_CONVERSION(CLASS(Mag_3Rnd_Mortar_SmokeWhite));
+
+    class CLASS(Mag_3Rnd_Mortar_SmokeBlue): CLASS(Mag_3Rnd_Mortar_SmokeWhite)
+    {
+        displayName = "[KC] 3Rnd Mortar Blue Smoke Shells";
+        displayNameShort = "3Rnd B Smoke";
+        ammo = QCLASS(Shell_Mortar_SmokeBlue);
+    };
+    CSW_MAG_CONVERSION(CLASS(Mag_3Rnd_Mortar_SmokeBlue));
+
+    class CLASS(Mag_3Rnd_Mortar_SmokeRed): CLASS(Mag_3Rnd_Mortar_SmokeWhite)
+    {
+        displayName = "[KC] 3Rnd Mortar Red Smoke Shells";
+        displayNameShort = "3Rnd R Smoke";
+        ammo = QCLASS(Shell_Mortar_SmokeRed);
+    };
+    CSW_MAG_CONVERSION(CLASS(Mag_3Rnd_Mortar_SmokeRed));
 };

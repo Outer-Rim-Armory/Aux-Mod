@@ -5,7 +5,7 @@
 
 #define SHIELD_DAMAGE_COLOR_SCALE ["#FF0000", "#FF4400", "#FF7D16", "#FF9916", "#FCB121", "#FFD52C", "#FFEC4D", "#FFFF7E", "#FFFFFF"]
 
-#define SELFINTERACTION_SHIELD_TOGGLE class CLASS(Shield) \
+#define SHIELD_TOGGLE class CLASS(Shield) \
 { \
     displayName = "Shield Health: %1"; \
     condition = "true"; \

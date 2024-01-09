@@ -1,4 +1,4 @@
-#define SELFINTERACTION_HUD_CHANGER class LS_HUD_Changer \
+#define HUD_CHANGER class LS_HUD_Changer \
 { \
     displayName = "Change HUD Color"; \
     condition = QUOTE(ace_player == currentPilot (_this#0) and isEngineOn (_this#0)); \
@@ -67,6 +67,33 @@
         statement = QUOTE([ARR_5(0,0,0,0,_this#0)] call ls_utility_fnc_hudColorChange); \
     }; \
 }
+
+#define INTERCOM_START class TFAR_IntercomChannel \
+{ \
+    displayName = "Intercom Channel"; \
+    condition = "true"; \
+    statement = ""
+
+#define INTERCOM_DISABLED class TFAR_IntercomChannel_disabled \
+{ \
+    displayName = "Disabled"; \
+    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != -1); \
+    statement = QUOTE((objectParent ace_player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-1,true)]); \
+}
+#define INTERCOM_CARGO class TFAR_IntercomChannel_1 \
+{ \
+    displayName = "Cargo"; \
+    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != 1); \
+    statement = QUOTE((objectParent ace_Player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),0,true)]); \
+}
+#define INTERCOM_CREW class TFAR_IntercomChannel_2 \
+{ \
+    displayName = "Crew"; \
+    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != 1); \
+    statement = QUOTE((objectParent ace_Player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),1,true)]); \
+}
+
+#define INTERCOM_END }
 
 #define INVENTORY_VEHICLE_BASE(CREW_COUNT) class TransportWeapons \
 { \
@@ -151,8 +178,8 @@ class TransportBackpacks {}; \
 class TransportItems \
 { \
     ITEM_XX(ACE_elasticBandage,30); \
-    ITEM_XX(ACE_elasticBandage,20); \
-    ITEM_XX(ACE_elasticBandage,15); \
+    ITEM_XX(ACE_packingBandage,20); \
+    ITEM_XX(ACE_quickclot,15); \
     ITEM_XX(ACE_salineIV,1); \
     ITEM_XX(ACE_salineIV_500,1); \
     ITEM_XX(ACE_salineIV_250,2); \
@@ -161,4 +188,12 @@ class TransportItems \
     ITEM_XX(RD501_Painkiller,5); \
     ITEM_XX(ACE_tourniquet,8); \
     ITEM_XX(ACE_splint,2); \
-};
+}
+
+#define CSW_MAG_CARRY(MAG) class MAG##_CSW: MAG \
+{ \
+    scope = 2; \
+    scopeArsenal = 2; \
+    type = TYPE_MAGAZINE_PRIMARY_AND_THROW; \
+    mass = 300; \
+}

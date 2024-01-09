@@ -5,7 +5,7 @@ class CfgSoundShaders
     {
         samples[] =
         {
-            {"\SWLW_clones_spec\sounds\DC17M_sniper_fire.wss", 1, 1}
+            {"\SWLW_clones_spec\sounds\DC17M_sniper_fire.wss", 1}
         };
     };
 
@@ -13,10 +13,10 @@ class CfgSoundShaders
     {
         samples[] =
         {
-            {QPATHTOF(dc17m\data\audio\fullAuto\Fire1.wss), 1, 1},
-            {QPATHTOF(dc17m\data\audio\fullAuto\Fire2.wss), 1, 1},
-            {QPATHTOF(dc17m\data\audio\fullAuto\Fire3.wss), 1, 1},
-            {QPATHTOF(dc17m\data\audio\fullAuto\Fire4.wss), 1, 1}
+            {QPATHTOF(dc17m\data\audio\fullAuto\Fire1.wss), 1},
+            {QPATHTOF(dc17m\data\audio\fullAuto\Fire2.wss), 1},
+            {QPATHTOF(dc17m\data\audio\fullAuto\Fire3.wss), 1},
+            {QPATHTOF(dc17m\data\audio\fullAuto\Fire4.wss), 1}
         };
     };
 };

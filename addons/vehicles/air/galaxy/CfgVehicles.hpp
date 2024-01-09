@@ -35,7 +35,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            SELFINTERACTION_HUD_CHANGER;
+            HUD_CHANGER;
         };
 
         class Turrets: Turrets
@@ -45,22 +45,22 @@ class CfgVehicles
             {
                 weapons[] =
                 {
-                    QCLASS(Cannon_105mm),
-                    QCLASS(Gatling_20mm)
+                    QCLASS(Cannon_Galaxy),
+                    QCLASS(Gatling_Galaxy)
                 };
                 magazines[] =
                 {
-                    QCLASS(Mag_100rnd_Cannon_105mm),
-                    QCLASS(Mag_4000rnd_Gatling_20mm)
+                    QCLASS(Mag_100rnd_Cannon_Galaxy),
+                    QCLASS(Mag_4000rnd_Gatling_Galaxy)
                 };
             };
             class GunnerTurret_02: GunnerTurret_02
             {
-                weapons[] = {QCLASS(Autocannon_40mm)};
+                weapons[] = {QCLASS(Autocannon_Galaxy)};
                 magazines[] =
                 {
-                    QCLASS(Mag_240Rnd_Autocannon_GPR),
-                    QCLASS(Mag_160Rnd_Autocannon_APFSDS)
+                    QCLASS(Mag_240Rnd_Autocannon_Galaxy_GPR),
+                    QCLASS(Mag_160Rnd_Autocannon_Galaxy_APFSDS)
                 };
             };
         };
@@ -94,7 +94,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            SELFINTERACTION_HUD_CHANGER;
+            HUD_CHANGER;
         };
 
         INVENTORY_VEHICLE_BASE(4);
@@ -126,7 +126,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            SELFINTERACTION_HUD_CHANGER;
+            HUD_CHANGER;
         };
 
         INVENTORY_VEHICLE_BASE(4);

@@ -18,14 +18,52 @@ class CfgSoundSets
         loop = 0;
     };
 
-    class CLASS(SoundSet_Cannon_105mm_Shot): CLASS(SoundSet_VehicleWeapon_Base)
+    class CLASS(SoundSet_Autocannon_Badger_Shot): CLASS(SoundSet_VehicleWeapon_Base)
     {
-        soundShaders[] = {QCLASS(SoundShader_Cannon_105mm_Shot)};
+        soundShaders[] = {QCLASS(SoundShader_Autocannon_Badger_Shot)};
+        sound3DProcessingType = "ExplosionMedium3DProcessingType";
+
+        volumeCurve = "InverseSquare1Curve";
+        volumeFactor = 1;
+
+        distanceFilter = "explosionDistanceFreqAttenuationFilter";
+    };
+
+    class CLASS(SoundSet_Cannon_Galaxy_Shot): CLASS(SoundSet_VehicleWeapon_Base)
+    {
+        soundShaders[] = {QCLASS(SoundShader_Cannon_Galaxy_Shot)};
         sound3DProcessingType = "ExplosionMedium3DProcessingType";
 
         volumeCurve = "InverseSquare1Curve";
         volumeFactor = 1.8;
 
         distanceFilter = "explosionDistanceFreqAttenuationFilter";
+    };
+
+    class CLASS(SoundSet_Cannon_Blitz_Shot): CLASS(SoundSet_VehicleWeapon_Base)
+    {
+        soundShaders[] = {QCLASS(SoundShader_Cannon_Blitz_Shot)};
+        sound3DProcessingType = "ExplosionMedium3DProcessingType";
+
+        volumeCurve = "InverseSquare1Curve";
+        volumeFactor = 1.8;
+
+        distanceFilter = "explosionDistanceFreqAttenuationFilter";
+    };
+
+    class CLASS(SoundSet_Rocket_Hornet_Shot): CLASS(SoundSet_VehicleWeapon_Base)
+    {
+        soundShaders[] = {QCLASS(SoundShader_Rocket_Hornet_Shot)};
+        sound3DProcessingType = "ExplosionMedium3DProcessingType";
+
+        volumeCurve = "InverseSquare1Curve";
+        volumeFactor = 3;
+
+        distanceFilter = "explosionDistanceFreqAttenuationFilter";
+    };
+
+    class CLASS(SoundSet_MachineGun_Hornet_Shot): CLASS(SoundSet_VehicleWeapon_Base)
+    {
+        soundShaders[] = {QCLASS(SoundShader_MachineGun_Hornet_Shot)};
     };
 };

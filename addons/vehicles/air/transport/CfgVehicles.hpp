@@ -75,7 +75,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            SELFINTERACTION_HUD_CHANGER;
+            HUD_CHANGER;
         };
 
         INVENTORY_VEHICLE_BASE(2);

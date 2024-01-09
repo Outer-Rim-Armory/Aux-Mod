@@ -33,7 +33,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            SELFINTERACTION_SHIELD_TOGGLE;
+            SHIELD_TOGGLE;
         };
     };
 
@@ -61,7 +61,7 @@ class CfgVehicles
 
         class ACE_SelfActions: ACE_SelfActions
         {
-            SELFINTERACTION_SHIELD_TOGGLE;
+            SHIELD_TOGGLE;
         };
     };
 };

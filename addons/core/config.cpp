@@ -15,7 +15,8 @@ class CfgPatches
         requiredAddons[] =
         {
             "A3_Data_F_Decade_Loadorder",
-            "cba_main"
+            "cba_main",
+            ACE_ADDONS
         };
         units[] = {};
         weapons[] = {};

@@ -12,6 +12,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
+            // Air
             QGVAR(arc170),
             QGVAR(galaxy),
             QGVAR(laatc),
@@ -20,7 +21,27 @@ class CfgPatches
             QGVAR(rathian),
             QGVAR(transport),
             QGVAR(vespoid),
-            QGVAR(ywing)
+            QGVAR(ywing),
+            // Land
+            QGVAR(aat),
+            QGVAR(atap),
+            QGVAR(atrt),
+            QGVAR(atte),
+            QGVAR(badger),
+            QGVAR(blitz),
+            QGVAR(conga),
+            QGVAR(gammoth),
+            QGVAR(glavenus),
+            QGVAR(hornet),
+            QGVAR(juggernaut),
+            QGVAR(khezu),
+            QGVAR(olv20),
+            QGVAR(plesioth),
+            QGVAR(rx200),
+            QGVAR(scoutTank),
+            QGVAR(tx130),
+            // Static
+            QGVAR(mortars)
         };
         units[] = {};
         weapons[] = {};

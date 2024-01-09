@@ -5,7 +5,7 @@ class CfgSoundShaders
     {
         samples[] =
         {
-            {QPATHTOF(dc15l\data\audio\Fire1.wss), 1, 1}
+            {QPATHTOF(dc15l\data\audio\Fire1.wss), 1}
         };
     };
 };
