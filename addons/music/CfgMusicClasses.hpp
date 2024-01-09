@@ -1,22 +1,22 @@
 class CfgMusicClasses
 {
-    class BNA_KC_SWMusic
+    class CLASS(MusicCat_StarWars)
     {
         displayName = "[KC] Star Wars";
     };
-    class BNA_KC_VGMusic
+    class CLASS(MusicCat_VideoGames)
     {
         displayName = "[KC] Video Games";
     };
-    class BNA_KC_AnimeMusic
+    class CLASS(MusicCat_Anime)
     {
         displayName = "[KC] Anime";
     };
-    class BNA_KC_OtherMusic
+    class CLASS(MusicCat_Other)
     {
         displayName = "[KC] Other";
     };
-    class BNA_KC_SFX
+    class CLASS(MusicCat_SFX)
     {
         displayName = "[KC] Sound Effects"
     };
