@@ -430,7 +430,6 @@ class CfgWeapons
         magazineWell[] = {};
     };
 
-    // Horns & Alarms
     class CarHorn;
     class CLASS(Horn_Juggernaut): CarHorn
     {
