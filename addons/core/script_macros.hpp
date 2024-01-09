@@ -18,6 +18,8 @@
 
 #define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> var1)
 
+#define ACE_ADDONS "ace_arsenal", "ace_csw", "ace_dagr", "ace_explosives", "ace_interact_menu", "ace_interaction", "ace_medical", "ace_medical_ai", "ace_medical_blood", "ace_medical_damage", "ace_medical_engine", "ace_medical_feedback", "ace_medical_gui", "ace_medical_statemachine", "ace_medical_status", "ace_medical_treatment", "ace_medical_vitals"
+
 #define GETVAR_SYS(var1,var2) getVariable [ARR_2(QUOTE(var1),var2)]
 #define SETVAR_SYS(var1,var2) setVariable [ARR_2(QUOTE(var1),var2)]
 #define SETPVAR_SYS(var1,var2) setVariable [ARR_3(QUOTE(var1),var2,true)]
