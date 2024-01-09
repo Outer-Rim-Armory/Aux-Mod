@@ -30,7 +30,7 @@ class CfgPatches
             QGVAR(rps6),
             QGVAR(rps7),
             QGVAR(valken38x),
-            QGVAR(westarM5),
+            QGVAR(westar_m5),
             // QGVAR(x42), // Not included due to Burn 'Em requirement, causes circular dependency
             QGVAR(z6)
         };

@@ -38,7 +38,7 @@ class CfgPatches
             QGVAR(hydra),
             QGVAR(plesioth),
             QGVAR(rx200),
-            QGVAR(scoutTank),
+            QGVAR(scout_tank),
             QGVAR(tx130),
             // Static
             QGVAR(mortars)

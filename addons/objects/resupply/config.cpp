@@ -13,7 +13,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(weapons_loadOrder),
+            QCLASS(weapons_load_order),
             "3AS_Prop_Crates"
         };
         units[] =

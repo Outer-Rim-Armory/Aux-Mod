@@ -13,7 +13,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QCLASS(core),
-            QEGVAR(vehicles,loadOrder)
+            QEGVAR(vehicles,load_order)
         };
         units[] = {};
         weapons[] = {};
