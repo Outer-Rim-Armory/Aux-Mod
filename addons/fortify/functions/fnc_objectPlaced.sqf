@@ -15,6 +15,7 @@
 
 params ["_player", "_side", "_objectPlaced"];
 private ["_positionASL"];
+TRACE_3("fnc_objectPlaced",_player,_side,_objectPlaced);
 
 _positionASL = getPosASL _objectPlaced;
 
