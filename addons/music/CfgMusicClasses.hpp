@@ -18,6 +18,6 @@ class CfgMusicClasses
     };
     class CLASS(MusicCat_SFX)
     {
-        displayName = "[KC] Sound Effects"
+        displayName = "[KC] Sound Effects";
     };
 };
