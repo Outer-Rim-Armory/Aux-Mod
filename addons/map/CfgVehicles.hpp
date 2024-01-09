@@ -14,7 +14,7 @@ class CfgVehicles
                 condition = QUOTE(GVAR(showMarkSelfAction));
                 statement = QUOTE([] call FUNC(markSelf));
                 modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
-                insertChildren = QUOTE(_this call FUNC(markSelfChildren));
+                insertChildren = QUOTE(_this call FUNC(insertChildren));
             };
         };
     };

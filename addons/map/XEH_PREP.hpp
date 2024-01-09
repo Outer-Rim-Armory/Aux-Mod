@@ -1,3 +1,3 @@
+PREP(insertChildren);
 PREP(markSelf);
-PREP(markSelfInsertChildren);
 PREP(modifyInteraction);
