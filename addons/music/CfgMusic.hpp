@@ -4,7 +4,7 @@ class CfgMusic
     {
         name = "[BsG] Online OST"; // Name displayed in music list
         // Battlestar Galactica
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Battlestar_Galactica_Online.ogg",db+0,1}; // Path to audio file, volume, pitch
+        sound[] = {QPATHTOF(data\music\Battlestar_Galactica_Online.ogg), db+0, 1}; // Path to audio file, volume, pitch
         duration = 531; // Song duration in seconds
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -12,7 +12,7 @@ class CfgMusic
     {
         name = "[BsG] Prelude To War";
         // Battle Star Galactica
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\battlestar_galactica_prelude_to_war.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\battlestar_galactica_prelude_to_war.ogg), db+0, 1};
         duration = 502;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -22,7 +22,7 @@ class CfgMusic
     {
         name = "[Aot] Before Lights Out";
         // Attack on Titan
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\AoT_Before_Lights_Out.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\AoT_Before_Lights_Out.ogg), db+0, 1};
         duration = 173;
         musicClass = "BNA_KC_AnimeMusic"; // Music category
     };
@@ -30,7 +30,7 @@ class CfgMusic
     {
         name = "[AoT] Vogel im Käfig";
         // Attack on Titan
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Vogel_im_Käfig.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Vogel_im_Käfig.ogg), db+0, 1};
         duration = 380;
         musicClass = "BNA_KC_AnimeMusic"; // Music category
     };
@@ -38,7 +38,7 @@ class CfgMusic
     {
         name = "[AoT] Symphonic Suite";
         // Attack on Titan
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SymphonicSuite.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SymphonicSuite.ogg), db+0, 1};
         duration = 313;
         musicClass = "BNA_KC_AnimeMusic"; // Music category
     };
@@ -46,7 +46,7 @@ class CfgMusic
     {
         name = "[AoT] YouSeeBIGGIRL";
         // Attack on Titan
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\YouSeeBIGGIRL.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\YouSeeBIGGIRL.ogg), db+0, 1};
         duration = 359;
         musicClass = "BNA_KC_AnimeMusic"; // Music category
     };
@@ -55,14 +55,14 @@ class CfgMusic
     class BNA_KC_CLU
     {
         name = "[Tron] C.L.U";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\C.L.U.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\C.L.U.ogg), db+0, 1};
         duration = 279;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
     class BNA_KC_Rectifier
     {
         name = "[Tron] Rectifier";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Rectifier.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Rectifier.ogg), db+0, 1};
         duration = 134;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -72,7 +72,7 @@ class CfgMusic
     {
         name = "[Shogun] A New Enemy";
         // Total War: Shogun 2 Fall of the Samurai
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\A_New_Enemy-Shogun.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\A_New_Enemy-Shogun.ogg), db+0, 1};
         duration = 270;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -80,7 +80,7 @@ class CfgMusic
     {
         name = "[Shogun] Oyoiyoi";
         // Total War: Shogun 2 Fall of the Samurai
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Oyoiyoi.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Oyoiyoi.ogg), db+0, 1};
         duration = 153;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -88,7 +88,7 @@ class CfgMusic
     {
         name = "[Shogun] Tsunami";
         // Total War: Shogun 2 Fall of the Samurai
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Tsunami.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Tsunami.ogg), db+0, 1};
         duration = 124;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -98,7 +98,7 @@ class CfgMusic
     {
         name = "[TW] Arabic Victory";
         // Rome: Total War
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Arabic_Victory-Rome.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Arabic_Victory-Rome.ogg), db+0, 1};
         duration = 78;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -106,7 +106,7 @@ class CfgMusic
     {
         name = "[TW] Divinitus";
         // Rome: Total War
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Divinitus-Rome.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Divinitus-Rome.ogg), db+0, 1};
         duration = 110;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -114,7 +114,7 @@ class CfgMusic
     {
         name = "[TW] Eastern Intro";
         // Rome: Total War
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Eastern_Intro-Rome.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Eastern_Intro-Rome.ogg), db+0, 1};
         duration = 90;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -122,7 +122,7 @@ class CfgMusic
     {
         name = "[TW] Journey to Rome";
         // Rome: Total War
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Journey_to_Rome-Rome.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Journey_to_Rome-Rome.ogg), db+0, 1};
         duration = 139;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -130,7 +130,7 @@ class CfgMusic
     {
         name = "[TW] Mayhem";
         // Rome: Total War
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Mayhem-Rome.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Mayhem-Rome.ogg), db+0, 1};
         duration = 219;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -138,7 +138,7 @@ class CfgMusic
     {
         name = "[TW] Melee Cafe";
         // Rome: Total War
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Melee_Cafe-Rome.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Melee_Cafe-Rome.ogg), db+0, 1};
         duration = 173;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -146,7 +146,7 @@ class CfgMusic
     {
         name = "[TW] Mobilize";
         // Rome: Total War
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Mobilize-Rome.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Mobilize-Rome.ogg), db+0, 1};
         duration = 116;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -154,7 +154,7 @@ class CfgMusic
     {
         name = "[TW] Soldiers Chant";
         // Rome: Total War
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Soldiers_Chant-Rome.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Soldiers_Chant-Rome.ogg), db+0, 1};
         duration = 161;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -163,69 +163,69 @@ class CfgMusic
     class BNA_KC_SW_Delightful
     {
         name = "[SW] Delightful";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ahsoka_Delightful.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Ahsoka_Delightful.ogg), db+0, 1};
         duration = 136;
         musicClass = "BNA_KC_SWMusic";
     };
     class BNA_KC_SW_IonCannon: BNA_KC_SW_Delightful
     {
         name = "[SW] Ion Cannon";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ion_Cannon_Kevin_Kiner.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Ion_Cannon_Kevin_Kiner.ogg), db+0, 1};
         duration = 128;
     };
     class BNA_KC_SW_ARCTrooper_Epic: BNA_KC_SW_Delightful
     {
         name = "[SW] ARC Trooper Theme (Epic)";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SW_ARCTrooper_Epic.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SW_ARCTrooper_Epic.ogg), db+0, 1};
         duration = 251;
     };
     class BNA_KC_SW_BattleOfChristophsis_Epic: BNA_KC_SW_Delightful
     {
         name = "[SW] Battle of Christophsis (Epic)";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SW_BattleOfChristophsis_Epic.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SW_BattleOfChristophsis_Epic.ogg), db+0, 1};
         duration = 281;
     };
     class BNA_KC_SW_CloneThemeTwoSteps: BNA_KC_SW_Delightful
     {
         name = "[SW] Clone Theme (Two Steps from Hell)";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SW_CloneThemeTwoSteps.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SW_CloneThemeTwoSteps.ogg), db+0, 1};
         duration = 291;
     };
     class BNA_KC_SW_DuelOfTheFates_Epic: BNA_KC_SW_Delightful
     {
         name = "[SW] Duel of the Fates (Epic)";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SW_DuelOfTheFates_Epic.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SW_DuelOfTheFates_Epic.ogg), db+0, 1};
         duration = 364;
     };
     class BNA_KC_SW_LandingOnRyloth: BNA_KC_SW_Delightful
     {
         name = "[SW] Landing on Ryloth";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SW_LandingOnRyloth.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SW_LandingOnRyloth.ogg), db+0, 1};
         duration = 102;
     };
     class BNA_KC_SW_ObiWanVDarthVader: BNA_KC_SW_Delightful
     {
         name = "[SW] Obi Wan vs Darth Vader";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SW_ObiWanVDarthVader.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SW_ObiWanVDarthVader.ogg), db+0, 1};
         duration = 250;
     };
     class BNA_KC_SW_TheBattleInTheSnow: BNA_KC_SW_Delightful
     {
         name = "[SW] The Battle in the Snow";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SW_TheBattleInTheSnow.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SW_TheBattleInTheSnow.ogg), db+0, 1};
         duration = 222;
     };
     class BNA_KC_SW_TimeToMeetTheNatives: BNA_KC_SW_Delightful
     {
         name = "[SW] Time to Meet the Natives";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SW_TimeToMeetTheNatives.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SW_TimeToMeetTheNatives.ogg), db+0, 1};
         duration = 96;
     };
 
     class BNA_KC_SW_GeonosisRadioChatter
     {
         name = "[SW] Geonosis Radio Chatter";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Geonosis_Radio_Chatter.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Geonosis_Radio_Chatter.ogg), db+0, 1};
         duration = 544;
         musicClass = "BNA_KC_SFX";
     };
@@ -235,7 +235,7 @@ class CfgMusic
     {
         name = "[Ace] Comona";
         // Ace Combat
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Comona_Ace_Combat.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Comona_Ace_Combat.ogg), db+0, 1};
         duration = 161;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -243,28 +243,28 @@ class CfgMusic
     {
         name = "[Ace] Enchanter";
         // Ace Combat
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Enchanter_Ace_Combat.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Enchanter_Ace_Combat.ogg), db+0, 1};
         duration = 485;
     };
     class BNA_KC_Ace_MagicSpear: BNA_KC_Ace_Comona
     {
         name = "[Ace] Magic Spear";
         // Ace Combat
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Magic_Spear_Ace_Combat.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Magic_Spear_Ace_Combat.ogg), db+0, 1};
         duration = 246;
     };
     class BNA_KC_Ace_SolSquadron: BNA_KC_Ace_Comona
     {
         name = "[Ace] Sol Squadron";
         // Ace Combat
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ace_SolSquadron.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Ace_SolSquadron.ogg), db+0, 1};
         duration = 223;
     };
     class BNA_KC_Ace_Werewolf: BNA_KC_Ace_Comona
     {
         name = "[Ace] Werewolf";
         // Ace Combat
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ace_Werewolf.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Ace_Werewolf.ogg), db+0, 1};
         duration = 459;
     };
 
@@ -273,7 +273,7 @@ class CfgMusic
     {
         name = "[COD] 115";
         // Call of Duty
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\COD_115.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\COD_115.ogg), db+0, 1};
         duration = 228;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -282,14 +282,14 @@ class CfgMusic
     class BNA_KC_DOOM_Harbringer
     {
         name = "[DOOM] Harbringer";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\DOOM_Harbringer.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\DOOM_Harbringer.ogg), db+0, 1};
         duration = 432;
         musicClass = "BNA_KC_VGMusic"; // "Keeli Video Game Music";
     };
     class BNA_KC_DOOM_RipAndTear: BNA_KC_DOOM_Harbringer
     {
         name = "[DOOM] Rip and Tear";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\DOOM_RipAndTear.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\DOOM_RipAndTear.ogg), db+0, 1};
         duration = 257;
     };
 
@@ -297,21 +297,21 @@ class CfgMusic
     class BNA_KC_SquadMain
     {
         name = "[Squad] Main Theme";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\squad_main.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\squad_main.ogg), db+0, 1};
         duration = 180;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
     class BNA_KC_SquadDowntime
     {
         name = "[Squad] Downtime";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\squad_downtime.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\squad_downtime.ogg), db+0, 1};
         duration = 187;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
     class BNA_KC_SquadZechariah
     {
         name = "[Squad] Zechariah";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\squad_zechariah.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\squad_zechariah.ogg), db+0, 1};
         duration = 187;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -320,32 +320,32 @@ class CfgMusic
     class BNA_KC_Halo_DeliverHope
     {
         name = "[Halo] Deliver Hope";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Deliver_Hope.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Deliver_Hope.ogg), db+0, 1};
         duration = 120;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
     class BNA_KC_Halo_DeliverHope_Piano: BNA_KC_Halo_DeliverHope
     {
         name = "[Halo] Deliver Hope (Piano)";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Deliver_Hope_Piano.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Deliver_Hope_Piano.ogg), db+0, 1};
         duration = 127;
     };
     class BNA_KC_Halo_FinishTheFight: BNA_KC_Halo_DeliverHope
     {
         name = "[Halo] Finish the Fight";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Halo_FinishTheFight.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Halo_FinishTheFight.ogg), db+0, 1};
         duration = 147;
     };
     class BNA_KC_Halo_LongNightOfSolace: BNA_KC_Halo_DeliverHope
     {
         name = "[Halo] Long Night of Solace";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Halo_LongNightOfSolace.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Halo_LongNightOfSolace.ogg), db+0, 1};
         duration = 706;
     };
     class BNA_KC_Halo_NeverForget: BNA_KC_Halo_DeliverHope
     {
         name = "[Halo] Never Forget";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Halo_NeverForget.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Halo_NeverForget.ogg), db+0, 1};
         duration = 187;
     };
 
@@ -354,7 +354,7 @@ class CfgMusic
     {
         name = "[WT] Main Theme";
         // War Thunder
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\war_thunder_main.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\war_thunder_main.ogg), db+0, 1};
         duration = 292;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -364,7 +364,7 @@ class CfgMusic
     {
         name = "[LoU] No Escape (All Gone)";
         // The Last of Us
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\All_Gone_No_Escape.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\All_Gone_No_Escape.ogg), db+0, 1};
         duration = 174;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -374,7 +374,7 @@ class CfgMusic
     {
         name = "[AS] Shepherd of Fire";
         // Avenged Sevenfold
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Avenged_Sevenfold_Shepherd_Of_Fire.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Avenged_Sevenfold_Shepherd_Of_Fire.ogg), db+0, 1};
         duration = 319;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -384,7 +384,7 @@ class CfgMusic
     {
         name = "[RD] Elven Dirge - I Lament";
         // Richard Daskas
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\RD_Elven_Dirge_I_Lament.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\RD_Elven_Dirge_I_Lament.ogg), db+0, 1};
         duration = 196;
         musicClass = "BNA_KC_OtherMusic";
     };
@@ -394,7 +394,7 @@ class CfgMusic
     {
         name = "[Chern] Bridge of Death";
         // Chernobyl TV Series
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Bridge_of_Death_Chernobyl.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Bridge_of_Death_Chernobyl.ogg), db+0, 1};
         duration = 284;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -404,7 +404,7 @@ class CfgMusic
     {
         name = "[MH] Fatalis Medley";
         // Monster Hunter
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Fatalis_Medley_Monster_Hunter.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Fatalis_Medley_Monster_Hunter.ogg), db+0, 1};
         duration = 1093;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -414,7 +414,7 @@ class CfgMusic
     {
         name = "[MG] It Has To Be This Way";
         // Metal Gear
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\It_Has_To_Be_This_Way.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\It_Has_To_Be_This_Way.ogg), db+0, 1};
         duration = 175;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -422,21 +422,21 @@ class CfgMusic
     {
         name = "[MG] The Rules of Nature";
         // Metal Gear
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\MG_RulesOfNature.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\MG_RulesOfNature.ogg), db+0, 1};
         duration = 150;
     };
     class BNA_KC_MG_TheOnlyThingIKnowForReal: BNA_KC_MG_ItHasToBeThisWay
     {
         name = "[MG] The Only Thing I Know For Real";
         // Metal Gear
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\MG_TheOnlyThingIKnowForReal.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\MG_TheOnlyThingIKnowForReal.ogg), db+0, 1};
         duration = 146;
     };
     class BNA_KC_MG_TheStainsOfTime: BNA_KC_MG_ItHasToBeThisWay
     {
         name = "[MG] The Stains of Time";
         // Metal Gear
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\MG_TheStainsOfTime.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\MG_TheStainsOfTime.ogg), db+0, 1};
         duration = 130;
     };
 
@@ -444,7 +444,7 @@ class CfgMusic
     {
         name = "[MW] Theme (Calm)";
         // Modern Warfare
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\MW_ThemeCalm.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\MW_ThemeCalm.ogg), db+0, 1};
         duration = 206;
         musicClass = "BNA_KC_VGMusic";
     };
@@ -452,14 +452,14 @@ class CfgMusic
     {
         name = "[MW] Theme (Hopeful)";
         // Modern Warfare
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\MW_ThemeHopeful.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\MW_ThemeHopeful.ogg), db+0, 1};
         duration = 167;
     };
     class BNA_KC_MW_ThemeHype: BNA_KC_MW_ThemeCalm
     {
         name = "[MW] Theme (Hype)";
         // Modern Warfare
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\MW_ThemeHype.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\MW_ThemeHype.ogg), db+0, 1};
         duration = 336;
     };
 
@@ -468,7 +468,7 @@ class CfgMusic
     {
         name = "[PW] Theme (Calm)";
         // Project Wingman
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\PW_MignightLight.ogg.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\PW_MignightLight.ogg.ogg), db+0, 1};
         duration = 191;
         musicClass = "BNA_KC_VGMusic";
     };
@@ -476,14 +476,14 @@ class CfgMusic
     {
         name = "[PW] Peacekeeper";
         // Project Wingman
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\PW_Peacekeeper.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\PW_Peacekeeper.ogg), db+0, 1};
         duration = 185;
     };
     class BNA_KC_PW_Presidia: BNA_KC_PW_MidnightLight
     {
         name = "[PW] Presidia";
         // Project Wingman
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\PW_Presidia.ogg.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\PW_Presidia.ogg.ogg), db+0, 1};
         duration = 318;
     };
 
@@ -492,7 +492,7 @@ class CfgMusic
     {
         name = "[SS] To The Gallows";
         // Secession Studios
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SS_ToTheGallows.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SS_ToTheGallows.ogg), db+0, 1};
         duration = 346;
         musicClass = "BNA_KC_OtherMusic";
     };
@@ -500,7 +500,7 @@ class CfgMusic
     {
         name = "[SS] With No Mercy";
         // Secession Studios
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\SS_WithNoMercy.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\SS_WithNoMercy.ogg), db+0, 1};
         duration = 355;
     };
 
@@ -509,7 +509,7 @@ class CfgMusic
     {
         name = "[DbS] Broly's Theme";
         // Dragon Ball Super
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\dbs_brolys_theme.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\dbs_brolys_theme.ogg), db+0, 1};
         duration = 473;
         musicClass = "BNA_KC_AnimeMusic"; // Music category
     };
@@ -519,7 +519,7 @@ class CfgMusic
     {
         name = "[IntrStlr] Mountains";
         // Interstellar
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\intersellar_mountains.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\intersellar_mountains.ogg), db+0, 1};
         duration = 219;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -529,7 +529,7 @@ class CfgMusic
     {
         name = "[PR] Main Theme";
         // Project Reality
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\project_reality_main.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\project_reality_main.ogg), db+0, 1};
         duration = 501;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -538,7 +538,7 @@ class CfgMusic
     class BNA_KC_Transformers_ArrivalToEarth
     {
         name = "[Transformers] Arrival To Earth (Hopeful)";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Arrival_To_Earth.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Arrival_To_Earth.ogg), db+0, 1};
         duration = 315;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -547,7 +547,7 @@ class CfgMusic
     class BNA_KC_AxeManTheme
     {
         name = "Axe Man Theme (Hype/Hopeful)";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Axe_Man_Theme.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Axe_Man_Theme.ogg), db+0, 1};
         duration = 92;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -556,7 +556,7 @@ class CfgMusic
     class BNA_KC_FleetAdmiralFujitora
     {
         name = "Fleet Admiral Fujitora";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Fleet_Admiral_Fujitora.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Fleet_Admiral_Fujitora.ogg), db+0, 1};
         duration = 67;
         musicClass = "BNA_KC_AnimeMusic"; // Music category
     };
@@ -565,7 +565,7 @@ class CfgMusic
     class BNA_KC_Transformers_ForestBattle
     {
         name = "[Transformers] Forest Battle";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Forest_Battle.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Forest_Battle.ogg), db+0, 1};
         duration = 122;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -574,7 +574,7 @@ class CfgMusic
     class BNA_KC_Transformers_Prime
     {
         name = "[Transformers] Prime";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Prime.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Prime.ogg), db+0, 1};
         duration = 128;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -583,7 +583,7 @@ class CfgMusic
     class BNA_KC_RampartAndWilco
     {
         name = "Rampart and Wilco (Tense)";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Rampart_and_Wilco.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Rampart_and_Wilco.ogg), db+0, 1};
         duration = 127;
         musicClass = "BNA_KC_SWMusic"; // Music category
     };
@@ -592,7 +592,7 @@ class CfgMusic
     class BNA_KC_RylothLastStand
     {
         name = "Ryloth Last Stand";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ryloth_Last_Stand.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Ryloth_Last_Stand.ogg), db+0, 1};
         duration = 123;
         musicClass = "BNA_KC_SWMusic"; // Music category
     };
@@ -601,7 +601,7 @@ class CfgMusic
     class BNA_KC_Transformers_Scorponok
     {
         name = "[Transformers] Scorponok (Motivational)";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Scorponok.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Scorponok.ogg), db+0, 1};
         duration = 273;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -610,7 +610,7 @@ class CfgMusic
     class BNA_KC_SW_ImSoSorry
     {
         name = "[SW] Im So Sorry (Hopeless)";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Im_so_Sorry.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Im_so_Sorry.ogg), db+0, 1};
         duration = 135;
         musicClass = "BNA_KC_SWMusic"; // Music category
     };
@@ -619,7 +619,7 @@ class CfgMusic
     class BNA_KC_ElPresidente
     {
         name = "El Presidente";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\El_Presidente.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\El_Presidente.ogg), db+0, 1};
         duration = 129;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -628,7 +628,7 @@ class CfgMusic
     class BNA_KC_Nest
     {
         name = "[Transformers II] Nest";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Nest.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Nest.ogg), db+0, 1};
         duration = 124;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -637,7 +637,7 @@ class CfgMusic
     class BNA_KC_FatherG
     {
         name = "Father G";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Father_G.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Father_G.ogg), db+0, 1};
         duration = 262;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -646,7 +646,7 @@ class CfgMusic
     class BNA_KC_Mayday
     {
         name = "[TBB] Mayday";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Mayday.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Mayday.ogg), db+0, 1};
         duration = 325;
         musicClass = "BNA_KC_SWMusic"; // Music category
     };
@@ -655,7 +655,7 @@ class CfgMusic
     class BNA_KC_EPF
     {
         name = "The EPF ";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\EPF_Forces.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\EPF_Forces.ogg), db+0, 1};
         duration = 198;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -664,7 +664,7 @@ class CfgMusic
     class BNA_KC_TU1
     {
         name = "Techno Union BM 1 ";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Techno_Union1.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Techno_Union1.ogg), db+0, 1};
         duration = 202;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -673,7 +673,7 @@ class CfgMusic
     class BNA_KC_TU2
     {
         name = "Techno Union BM 2 ";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Techno_Union2.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Techno_Union2.ogg), db+0, 1};
         duration = 202;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -682,7 +682,7 @@ class CfgMusic
     class BNA_KC_RoseAtNightfall
     {
         name = "Rose At Nightfall ";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Rose_At_Nightfall.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Rose_At_Nightfall.ogg), db+0, 1};
         duration = 252;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -691,7 +691,7 @@ class CfgMusic
     class BNA_KC_TheAllSpark
     {
         name = "[Transformers I] The All Spark ";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\The_All_Spark.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\The_All_Spark.ogg), db+0, 1};
         duration = 214;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -701,7 +701,7 @@ class CfgMusic
     class BNA_KC_ElGeneral1
     {
         name = "[EPF] El General Speech 1";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\El_General1.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\El_General1.ogg), db+0, 1};
         duration = 49;
         musicClass = "BNA_KC_SFX"; // Music category
     };
@@ -711,7 +711,7 @@ class CfgMusic
     class BNA_KC_ElGeneral2
     {
         name = "[EPF] El General Speech 2";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\El_General2.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\El_General2.ogg), db+0, 1};
         duration = 52;
         musicClass = "BNA_KC_SFX"; // Music category
     };
@@ -721,7 +721,7 @@ class CfgMusic
     class BNA_KC_Bastard
     {
         name = "[MGR] Slippery Little Bastard";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Slippery_Little_Bastard.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Slippery_Little_Bastard.ogg), db+0, 1};
         duration = 125;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -731,7 +731,7 @@ class CfgMusic
     class BNA_KC_ZodDisbandsCouncil
     {
         name = "[MoS] Zod Disband's Council";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Superman_ZodDisbandsCouncil.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Superman_ZodDisbandsCouncil.ogg), db+0, 1};
         duration = 125;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -741,7 +741,7 @@ class CfgMusic
     class BNA_KC_ArmstrongArrival
     {
         name = "[MGR] The Senators Arrival";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\The_Senators_Arrival.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\The_Senators_Arrival.ogg), db+0, 1};
         duration = 34;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -751,7 +751,7 @@ class CfgMusic
     class BNA_KC_Umbara_Landing
     {
         name = "[CW] Umbara Landing";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Umbara_Landing.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Umbara_Landing.ogg), db+0, 1};
         duration = 202;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -761,7 +761,7 @@ class CfgMusic
     class BNA_KC_Umbara_1
     {
         name = "[CW] Umbara Music";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\CWA_Umbara.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\CWA_Umbara.ogg), db+0, 1};
         duration = 147;
         musicClass = "BNA_KC_SWMusic"; // Music category
     };
@@ -771,7 +771,7 @@ class CfgMusic
     class BNA_KC_Umbara_2
     {
         name = "[CW] Umbara Music 2";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\CWA_Umbara_2.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\CWA_Umbara_2.ogg), db+0, 1};
         duration = 235;
         musicClass = "BNA_KC_SWMusic"; // Music category
     };
@@ -781,7 +781,7 @@ class CfgMusic
     class BNA_KC_Umbara_3
     {
         name = "[CW] Umbara Music 3";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\CWA_Umbara_3.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\CWA_Umbara_3.ogg), db+0, 1};
         duration = 125;
         musicClass = "BNA_KC_SWMusic"; // Music category
     };
@@ -791,7 +791,7 @@ class CfgMusic
     class BNA_KC_TU3
     {
         name = "Techno Union BM 3";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Techno_Union3.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Techno_Union3.ogg), db+0, 1};
         duration = 150;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
@@ -800,7 +800,7 @@ class CfgMusic
     class BNA_KC_Woods_Betrayal
     {
         name = "Wood's Betrayal";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Wood's_Betrayal.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Wood's_Betrayal.ogg), db+0, 1};
         duration = 350;
         musicClass = "BNA_KC_SWMusic"; // Music category
     };
@@ -809,7 +809,7 @@ class CfgMusic
     class BNA_KC_Infection
     {
         name = "OutBreak";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Infection.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\Infection.ogg), db+0, 1};
         duration = 232;
         musicClass = "BNA_KC_VGMusic"; // Music category
     };
@@ -818,7 +818,7 @@ class CfgMusic
     class BNA_KC_WWZ
     {
         name = "WWZ";
-        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\WWZ.ogg",db+0,1};
+        sound[] = {QPATHTOF(data\music\WWZ.ogg), db+0, 1};
         duration = 221;
         musicClass = "BNA_KC_OtherMusic"; // Music category
     };
