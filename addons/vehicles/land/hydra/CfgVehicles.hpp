@@ -26,6 +26,12 @@ class CfgVehicles
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
+        EGVAR(weapons,hasVehicleEMP) = TRUE;
+        EGVAR(weapons,vehicleEMPCooldown) = 15;
+        EGVAR(weapons,empRadiusDroid) = EMP_RADIUS_DROID_DEFAULT;
+        EGVAR(weapons,empRadiusDroideka) = 15;
+        EGVAR(weapons,empRadiusVehicle) = 15;
+
         hiddenSelectionsTextures[] = {};
         textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         animationList[] = {"showCanisters", FALSE, "showTools", FALSE};
@@ -86,8 +92,8 @@ class CfgVehicles
                 hideOnUse = TRUE;
                 priority = 5;
 
-                // condition = QUOTE(this call BNAKC_fnc_canUseEMP;);
-                // statement = QUOTE(this call BNAKC_fnc_activateEMP;);
+                condition = QUOTE(ace_player isEqualTo currentPilot this and this call EFUNC(weapons,canUseVehicleEMP););
+                statement = QUOTE(this call EFUNC(weapons,useVehicleEMP););
             };
         };
 

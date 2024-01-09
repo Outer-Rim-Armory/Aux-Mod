@@ -1,8 +1,10 @@
-PREP(fired);
-PREP(grenadeHandler);
-PREP(empGrenade);
+PREP(attachmentSwap);
 PREP(bactaGrenade);
+PREP(canUseVehicleEMP);
 PREP(droidDeathEffect);
 PREP(disableVehicles);
 PREP(disableDroidekaShields);
-PREP(attachmentSwap);
+PREP(empGrenade);
+PREP(fired);
+PREP(grenadeHandler);
+PREP(useVehicleEMP);
