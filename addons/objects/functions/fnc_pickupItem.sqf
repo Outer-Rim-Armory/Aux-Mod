@@ -71,3 +71,5 @@ _pickupTime = [
         };
     }
 ] call ace_common_fnc_progressBar;
+
+nil;

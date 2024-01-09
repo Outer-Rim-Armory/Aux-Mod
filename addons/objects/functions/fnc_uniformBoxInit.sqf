@@ -51,3 +51,5 @@ _rankColor = {
         QUOTE(UNIFORMMENU_GETPAGE isEqualTo UNIFORMMENU_PAGE_RANKUNIFORMS)
     ];
 } forEach LOADOUTS_RANKS_LIST;
+
+nil;

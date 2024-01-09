@@ -25,7 +25,7 @@ params [
     ["_maxPatients", 0, [0]]
 ];
 private ["_function", "_condition", "_exitCode", "_healHandler", "_fullHealed"];
-TRACE_4("fnc_areaSlowHeal", _object, _radius, _rate, _maxPatients);
+TRACE_4("fnc_areaSlowHeal",_object,_radius,_rate,_maxPatients);
 
 if (
     isNull _object or {
@@ -92,7 +92,7 @@ _condition = {
 
 _exitCode = {
     params ["_handle", "_object", "_radius", "_rate", "_maxPatients"];
-    INFO_2("Area Healer %1 | (Exit) Removing handler from %2", _handle, _object);
+    INFO_2("Area Healer %1 | (Exit) Removing handler from %2",_handle,_object);
 };
 
 _areaHandler = [

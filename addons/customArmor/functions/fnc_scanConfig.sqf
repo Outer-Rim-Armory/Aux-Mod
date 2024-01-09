@@ -17,6 +17,7 @@ params [
     ["_rebuild", false, [false]]
 ];
 private ["_customItems"];
+TRACE_1("fnc_scanConfig",_rebuild);
 
 _customItems = missionNamespace getVariable [QGVAR(customItems), []];
 if (_customItems isNotEqualTo [] and !_rebuild) exitWith {

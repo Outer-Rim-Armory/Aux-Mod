@@ -41,3 +41,4 @@ _maxPatients = [
 ] call BIS_fnc_returnConfigEntry;
 
 [_object, _radius, _rate, _maxPatients] call FUNC(areaSlowHeal);
+nil;

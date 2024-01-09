@@ -28,7 +28,7 @@ _units = _units select {
     _isDroid isEqualTo TRUE or (toLowerAnsi typeOf _x find "b1") > 0;
 };
 
-TRACE_2("fnc_droidDeathEffect", _units, _killer);
+TRACE_2("fnc_droidDeathEffect",_units,_killer);
 
 if (count _units isEqualTo 0) exitWith {};
 

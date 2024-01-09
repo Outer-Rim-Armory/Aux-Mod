@@ -23,7 +23,7 @@ params [
     ["_replace", "", []]
 ];
 private ["_return", "_len", "_pos"];
-TRACE_3("fnc_stringReplace", _str, _find, _replace);
+TRACE_3("fnc_stringReplace",_str,_find,_replace);
 
 if (_str isEqualTo "") exitWith {WARNING_1("Empty string passed to %1",_fnc_scriptName)};
 

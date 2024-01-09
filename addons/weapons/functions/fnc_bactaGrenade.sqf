@@ -23,7 +23,7 @@ params [
     ["_projectile", objNull, [objNull]]
 ];
 private ["_duration", "_radius", "_rate", "_maxPatients", "_healerID"];
-TRACE_4("fnc_bactaGrenade", _unit, _ammo, _magazine, _projectile);
+TRACE_4("fnc_bactaGrenade",_unit,_ammo,_magazine,_projectile);
 
 if (isNull _unit or {
     isNull _projectile or

@@ -23,7 +23,7 @@ params [
     ["_projectile", objNull, [objNull]]
 ];
 private ["_radiusDroid", "_radiusDroideka", "_radiusVehicle", "_positionASL", "_positionAGL", "_nearbyPlayers", "_nearbyUnits", "_nearbyVehicles", "_nearbyDroidekas", "_droidekaShields"];
-TRACE_4("fnc_empGrenade", _unit, _ammo, _magazine, _projectile);
+TRACE_4("fnc_empGrenade",_unit,_ammo,_magazine,_projectile);
 
 if (isNull _unit or isNull _projectile) exitWith {false;};
 if (_ammo isEqualTo "" or _magazine isEqualTo "") exitWith {false;};
@@ -72,7 +72,7 @@ _nearbyVehicles = _positionAGL nearEntities [["Air", "LandVehicle"], _radiusVehi
 _nearbyDroidekas = _positionAGL nearEntities [["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDroideka];
 _droidekaShields = _positionAGL nearObjects ["RD501_Droideka_Shield", _radiusDroideka];
 
-TRACE_5("EMP Grenade", _positionAGL, _nearbyUnits, _nearbyVehicles, _nearbyDroidekas, _droidekaShields);
+TRACE_5("EMP Grenade",_positionAGL,_nearbyUnits,_nearbyVehicles,_nearbyDroidekas,_droidekaShields);
 
 [_nearbyUnits, _unit] call FUNC(droidDeathEffect);
 [_nearbyVehicles, GVAR(empVehicleDisableDuration)] call FUNC(disableVehicles);

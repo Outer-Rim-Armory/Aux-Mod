@@ -34,3 +34,4 @@ _soundDelay = [
 ] call BIS_fnc_returnConfigEntry;
 
 [_object, _filePath, _soundDelay] call FUNC(soundLoop);
+nil;

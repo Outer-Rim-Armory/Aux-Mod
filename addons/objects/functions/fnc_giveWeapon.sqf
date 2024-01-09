@@ -34,3 +34,5 @@ _weaponValues params ["_weapon", "_magazines"];
 } forEach _magazines;
 
 ace_player addWeapon _weapon;
+
+nil;

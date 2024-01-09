@@ -19,10 +19,9 @@ params [
     ["_droidekas", []],
     ["_shields", []]
 ];
+TRACE_2("fnc_disableDroidekaShields",_droidekas,_shields);
 
 if (!GVAR(empDisableDroidkaShields)) exitWith {};
-
-TRACE_2("fnc_disableDroidekaShields", _droidekas, _shields);
 
 // Faster to not check the array counts and to just loop over an empty array
 

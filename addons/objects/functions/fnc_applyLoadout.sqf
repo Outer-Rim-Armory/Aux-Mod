@@ -55,3 +55,5 @@ ace_player addWeapon _launcher;
         ace_player addItem (_x#0);
     };
 } forEach _items;
+
+nil;

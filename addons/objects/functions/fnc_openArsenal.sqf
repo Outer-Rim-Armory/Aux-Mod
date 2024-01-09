@@ -38,3 +38,5 @@ _arsenalItems = switch (toLowerANSI _type) do {
 
 [ace_player, _arsenalItems] call ace_arsenal_fnc_addVirtualItems;
 [ace_player, ace_player] call ace_arsenal_fnc_openBox;
+
+nil;

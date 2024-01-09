@@ -25,7 +25,7 @@ params
     ["_delay", 0, [0]],
     ["_parameters", []]
 ];
-TRACE_5("fnc_tempPFH", _function, _condition, _exitCode, _delay, _parameters);
+TRACE_5("fnc_tempPFH",_function,_condition,_exitCode,_delay,_parameters);
 
 [{
         params ["_args", "_handle"];

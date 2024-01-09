@@ -20,7 +20,7 @@ private ["_canToggle", "_helmetOff", "_helmetOn"];
 _canToggle = [configfile >> "CfgWeapons" >> headgear _person, QGVAR(nvCanToggle), FALSE] call BIS_fnc_returnConfigEntry;
 _helmetOff = [configfile >> "CfgWeapons" >> headgear _person, QGVAR(nvHelmetOff), ""] call BIS_fnc_returnConfigEntry;
 _helmetOn = [configfile >> "CfgWeapons" >> headgear _person, QGVAR(nvHelmetOn), ""] call BIS_fnc_returnConfigEntry;
-TRACE_3("fnc_nvHelmetToggle", _canToggle, _helmetOff, _helmetOn);
+TRACE_3("fnc_nvHelmetToggle",_canToggle,_helmetOff,_helmetOn);
 
 if (_canToggle isEqualTo FALSE) exitWith {};
 if (_helmetOff isEqualTo "" or _helmetOn isEqualTo "") exitWith {

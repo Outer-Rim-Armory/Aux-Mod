@@ -19,7 +19,7 @@ params [
     ["_rate", 0, [0]]
 ];
 private ["_function", "_condition", "_exitCode", "_healHandler", "_fullHealed"];
-TRACE_2("fnc_slowHeal", _unit, _rate);
+TRACE_2("fnc_slowHeal",_unit,_rate);
 
 if (
     isNull _unit or {
@@ -38,7 +38,7 @@ _function = {
     _bloodLevel = _unit getVariable ["ace_medical_bloodVolume", DEFAULT_BLOOD_VOLUME];
     _painLevel = _unit getVariable ["ace_medical_pain", 0];
 
-    INFO_4("Slow Healer %1 | (Pre-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
+    INFO_4("Slow Healer %1 | (Pre-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4",_handle,_wounds,_bloodLevel,_painLevel);
 
     if (count _wounds > 0) then {
         private ["_bodyPart", "_bodyPartWounds"];
@@ -68,10 +68,10 @@ _function = {
 
     _unit setVariable ["ace_medical_pain", _painLevel, true];
 
-    INFO_4("Slow Healer %1 | (Post-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4", _handle, _wounds, _bloodLevel, _painLevel);
+    INFO_4("Slow Healer %1 | (Post-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4",_handle,_wounds,_bloodLevel,_painLevel);
 
     if (count _wounds isEqualTo 0 and _bloodLevel isEqualTo DEFAULT_BLOOD_VOLUME and _painLevel isEqualTo 0 and GVAR(bactaFullHealOnComplete)) then {
-        INFO_2("Slow Healer %1 | (Exit) Treatment complete, full healing $2", _handle, _unit);
+        INFO_2("Slow Healer %1 | (Exit) Treatment complete, full healing %2",_handle,_unit);
         [_unit, _unit] call ace_medical_treatment_fnc_fullHeal;
     };
 
@@ -87,7 +87,7 @@ _condition = {
 
 _exitCode = {
     params ["_handle", "_unit"];
-    INFO_2("Slow Healer %1 | (Exit) Removing handler from %2", _handle, _unit);
+    INFO_2("Slow Healer %1 | (Exit) Removing handler from %2",_handle,_unit);
     _unit setVariable [QGVAR(slowHealHandler), nil];
     _unit setVariable [QGVAR(canBeHealed), nil];
 };

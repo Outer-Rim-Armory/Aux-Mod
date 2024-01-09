@@ -27,9 +27,9 @@ params [
     ["_pitch", "1", [""]]
 ];
 private [];
-TRACE_6("fnc_playLocalSound", _trueFile, _falseFile, _condition, _positionASL, _volume, _pitch);
+TRACE_6("fnc_playLocalSound",_trueFile,_falseFile,_condition,_positionASL,_volume,_pitch);
 
-if !(_positionASL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionASL);};
+if !(_positionASL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)",_fnc_scriptName,_positionASL);};
 
 if (call compile _condition) then {
     playSound3D [
@@ -56,3 +56,5 @@ if (call compile _condition) then {
         true
     ];
 };
+
+nil;

@@ -47,3 +47,5 @@ ace_player linkItem _nvg;
 {
     ace_player addMagazine _x;
 } forEach _magazines;
+
+nil;

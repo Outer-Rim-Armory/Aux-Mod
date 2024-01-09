@@ -17,7 +17,7 @@
 params [
     ["_unit", objNull, [objNull]]
 ];
-TRACE_1("fnc_isFullyHealed", _unit);
+TRACE_1("fnc_isFullyHealed",_unit);
 
 if (
     isNull _unit or {

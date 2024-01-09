@@ -68,7 +68,7 @@ _nearbyVehicles = _nearbyVehicles - [_vehicle];
 _nearbyDroidekas = _positionAGL nearEntities [["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDroideka];
 _droidekaShields = _positionAGL nearObjects ["RD501_Droideka_Shield", _radiusDroideka];
 
-TRACE_5("Vehicle EMP", _positionAGL, _nearbyUnits, _nearbyVehicles, _nearbyDroidekas, _droidekaShields);
+TRACE_5("Vehicle EMP",_positionAGL,_nearbyUnits,_nearbyVehicles,_nearbyDroidekas,_droidekaShields);
 
 [_nearbyUnits, _unit] call FUNC(droidDeathEffect);
 [_nearbyVehicles, GVAR(empVehicleDisableDuration)] call FUNC(disableVehicles);

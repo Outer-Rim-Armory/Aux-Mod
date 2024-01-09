@@ -20,10 +20,9 @@ params [
     ["_includeCrewed", true, [true]]
 ];
 private [];
-if !(_positionAGL isEqualTypeParams [0,0,0]) exitWith {WARNING_2("Array of non-numbers passed to %1. (%2)", _fnc_scriptName, _positionAGL);};
-if (_radius <= 0) exitWith {};
+TRACE_3("fnc_getNearbyUnits",_positionAGL,_radius,_includeCrewed);
 
-TRACE_3("fnc_getNearbyUnits", _positionAGL, _radius, _includeCrewed);
+if (!(_positionAGL isEqualTypeParams [0,0,0]) and _radius <= 0) exitWith {};
 
 _nearbyUnits = [];
 
