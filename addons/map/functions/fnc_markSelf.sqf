@@ -17,8 +17,8 @@
  */
 
 params [
-    [["_channel", GVAR(markSelfChannel), [0]]],
-    [["_color", GVAR(markSelfColor), [""]]]
+    ["_channel", GVAR(markSelfChannel), [0]],
+    ["_color", GVAR(markSelfColor), [""]]
 ];
 private ["_marker"];
 TRACE_2("fnc_markSelf",_channel,_color);
