@@ -17,3 +17,8 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgSounds.hpp"
+#include "CfgSFX.hpp"
+#include "CfgMusicClasses.hpp"
+#include "CfgMusic.hpp"
