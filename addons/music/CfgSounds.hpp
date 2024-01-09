@@ -42,17 +42,17 @@ class CfgSounds
         sound[] = {QPATHTOF(data\ambient\Carnage_Roar.ogg), "db+50", 1, 500, 1, 2, 3, 4};
         titles[] = {2, "Roaring"};
     };
-    class CLASS(Sound_Carnage_Roar_2): BNA_KC_Ambient_Carnage_Roar
+    class CLASS(Sound_Carnage_Roar_2): CLASS(Sound_Carnage_Roar)
     {
         name = "Carnage Roar 2";
         sound[] = {QPATHTOF(data\ambient\Carnage_Roar_2.ogg), "db+50", 1, 500, 1, 2, 3, 4};
     };
-    class CLASS(Sound_Carnage_Roar_3): BNA_KC_Ambient_Carnage_Roar
+    class CLASS(Sound_Carnage_Roar_3): CLASS(Sound_Carnage_Roar)
     {
         name = "Carnage Roar 3";
         sound[] = {QPATHTOF(data\ambient\Carnage_Roar_3.ogg), "db+50", 1, 500, 1, 2, 3, 4};
     };
-    class CLASS(Sound_Carnage_Roar_4): BNA_KC_Ambient_Carnage_Roar
+    class CLASS(Sound_Carnage_Roar_4): CLASS(Sound_Carnage_Roar)
     {
         name = "Carnage Roar 4";
         sound[] = {QPATHTOF(data\ambient\Carnage_Roar_4.ogg), "db+50", 1, 500, 1, 2, 3, 4};
