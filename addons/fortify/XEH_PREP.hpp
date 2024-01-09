@@ -1,1 +1,2 @@
+PREP(objectPlaced);
 PREP(registerPreset);
