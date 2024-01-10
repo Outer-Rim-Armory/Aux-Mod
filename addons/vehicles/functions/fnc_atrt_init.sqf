@@ -11,7 +11,7 @@
  * None
  *
  * Examples:
- * _atrt call FUNC(atrtInit);
+ * _atrt call FUNC(atrt_init);
  *
  * Public: Yes
  */
@@ -20,7 +20,7 @@ params [
     ["_atrt", objNull, [objNull]]
 ];
 private [];
-TRACE_1("fnc_atrtInit",_atrt);
+TRACE_1("fnc_atrt_init",_atrt);
 
 if (isNull _atrt) exitWith {};
 
@@ -30,16 +30,16 @@ _atrt enableStamina false;
 
 _atrt addAction ["Drive", {
         params ["_atrt", "_rider"];
-        [_atrt, _rider] call FUNC(mountATRT);
+        [_atrt, _rider] call FUNC(atrt_mount);
     }, [], 1.5, true, true, "",
-    QUOTE([ARR_2(_originalTarget,_this)] call FUNC(canMountATRT)), 4
+    QUOTE([ARR_2(_originalTarget,_this)] call FUNC(atrt_canMount)), 4
 ];
 
 _atrt addAction ["Dismount", {
         params ["_atrt"];
-        _atrt call FUNC(dismountATRT);
+        _atrt call FUNC(atrt_dismount);
     }, [], 1.5, true, true, "",
-    QUOTE([ARR_2(_originalTarget,ace_player)] call FUNC(canDismountATRT)), 4
+    QUOTE([ARR_2(_originalTarget,ace_player)] call FUNC(atrt_canDismount)), 4
 ];
 
-_atrt addEventHandler ["HandleDamage", LINKFUNC(atrtHandleDamage)];
+_atrt addEventHandler ["HandleDamage", LINKFUNC(atrt_handleDamage)];

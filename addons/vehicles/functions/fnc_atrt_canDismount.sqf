@@ -12,7 +12,7 @@
  * Whether the given unit can dismount the AT-RT <BOOL>
  *
  * Examples:
- * [_atrt, ace_player] call FUNC(canDisountATRT);
+ * [_atrt, ace_player] call FUNC(atrt_canDismount);
  *
  * Public: Yes
  */
@@ -22,7 +22,7 @@ params [
     ["_unit", objNull, [objNull]]
 ];
 private [];
-TRACE_2("fnc_canDismountATRT",_atrt,_unit);
+TRACE_2("fnc_atrt_canDismount",_atrt,_unit);
 
 if (_unit isEqualTo (_atrt getVariable [QGVAR(rider), objNull])) exitWith {true};
 

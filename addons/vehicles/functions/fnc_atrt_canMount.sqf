@@ -12,7 +12,7 @@
  * Whether the given unit can ride the AT-RT <BOOL>
  *
  * Examples:
- * [_atrt, ace_player] call FUNC(canMountATRT);
+ * [_atrt, ace_player] call FUNC(atrt_canMount);
  *
  * Public: Yes
  */
@@ -22,7 +22,7 @@ params [
     ["_unit", objNull, [objNull]]
 ];
 private [];
-TRACE_2("fnc_canMountATRT",_atrt,_unit);
+TRACE_2("fnc_atrt_canMount",_atrt,_unit);
 
 if (!alive _atrt or {
     _unit isKindOf "3AS_ATRT_Base" or

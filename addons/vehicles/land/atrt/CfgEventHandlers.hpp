@@ -4,7 +4,7 @@ class Extended_Init_EventHandlers
     {
         class 3AS_ATRT_Init
         {
-            init = QUOTE(_this select 0 call FUNC(atrtInit));
+            init = QUOTE(_this select 0 call FUNC(atrt_init));
         };
     };
 };

@@ -12,7 +12,7 @@
  * None
  *
  * Examples:
- * [_atrt, ace_player] call FUNC(dismountATRT);
+ * [_atrt, ace_player] call FUNC(atrt_dismount);
  *
  * Public: Yes
  */
@@ -21,14 +21,14 @@ params [
     ["_atrt", objNull, [objNull]]
 ];
 private ["_rider", "_direction", "_positionATL"];
-TRACE_1("fnc_dismountATRT",_atrt);
+TRACE_1("fnc_atrt_dismount",_atrt);
 
 _rider = _atrt getVariable [QGVAR(rider), objNull];
 if (isNull _rider) exitWith {};
 
 _atrt disableAI "ANIM";
 _atrt setVariable [QGVAR(rider), objNull, true];
-_rider setVariable [QGVAR(isRidingATRT), false, true];
+_rider setVariable [QGVAR(atrt_isRiding), false, true];
 
 _direction = direction _atrt;
 _positionATL = getPosATL _atrt;
@@ -47,7 +47,7 @@ _rider remoteControl objNull;
 
 inGameUISetEventHandler ["Action", ""];
 
-[_rider, "blockThrow", QGVAR(ridingATRT), false] call ace_common_fnc_statusEffect_set;
+[_rider, "blockThrow", QGVAR(atrt_isRiding), false] call ace_common_fnc_statusEffect_set;
 
 _rider switchMove "";
 

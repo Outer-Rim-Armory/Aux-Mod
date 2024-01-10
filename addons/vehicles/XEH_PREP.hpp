@@ -1,8 +1,8 @@
+PREP(atrt_canDismount);
+PREP(atrt_canMount);
 PREP(atrt_deathEffects);
-PREP(atrtHandleDamage);
-PREP(atrtInit);
-PREP(canDismountATRT);
-PREP(canMountATRT);
+PREP(atrt_dismount);
+PREP(atrt_handleDamage);
+PREP(atrt_init);
+PREP(atrt_mount);
 PREP(cswDeployModifier);
-PREP(dismountATRT);
-PREP(mountATRT);
