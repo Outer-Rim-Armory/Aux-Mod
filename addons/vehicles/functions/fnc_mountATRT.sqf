@@ -37,6 +37,11 @@ inGameUISetEventHandler ["Action", "if ((_this select 3) isEqualTo ""BackFromUAV
 
 [_rider, "blockThrow", QGVAR(ridingATRT), true] call ace_common_fnc_statusEffect_set;
 
-[{_this switchMove "driver_Quadbike"}, _rider, 1.5] call CBA_fnc_waitAndExecute;
+[{
+    // Prevent animation if mounting and dismounting quickly
+    if (_this getVariable [QGVAR(isRidingATRT), false]) then {
+        _this switchMove "driver_Quadbike"
+    }
+}, _rider, 1.5] call CBA_fnc_waitAndExecute;
 
 nil;

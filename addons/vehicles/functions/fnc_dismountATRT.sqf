@@ -20,7 +20,7 @@
 params [
     ["_atrt", objNull, [objNull]]
 ];
-private ["_rider"];
+private ["_rider", "_direction", "_positionATL"];
 TRACE_1("fnc_dismountATRT",_atrt);
 
 _rider = _atrt getVariable [QGVAR(rider), objNull];
@@ -29,5 +29,26 @@ if (isNull _rider) exitWith {};
 _atrt disableAI "ANIM";
 _atrt setVariable [QGVAR(rider), objNull, true];
 _rider setVariable [QGVAR(isRidingATRT), false, true];
+
+_direction = direction _atrt;
+_positionATL = getPosATL _atrt;
+_positionATL = [
+    _positionATL#0 - 0.35 + sin (_direction - 90),
+    _positionATL#1 - 0.3 + cos (_direction - 90),
+    _positionATL#2
+];
+
+detach _rider;
+_rider setDir _direction - 90;
+_rider setPosATL _positionATL;
+
+_rider switchCamera cameraView;
+_rider remoteControl objNull;
+
+inGameUISetEventHandler ["Action", ""];
+
+[_rider, "blockThrow", QGVAR(ridingATRT), false] call ace_common_fnc_statusEffect_set;
+
+_rider switchMove "";
 
 nil;
