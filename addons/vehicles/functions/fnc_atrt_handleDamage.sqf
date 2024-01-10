@@ -20,7 +20,7 @@ private ["_atrtHealth"];
 TRACE_2("fnc_atrt_handleDamage",_atrt,_damage);
 
 _atrtHealth = _atrt getVariable [QGVAR(health), ATRT_HEALTH];
-_atrtHealth = _atrtHealth - _damage;
+_atrtHealth = (_atrtHealth - _damage) max 0;
 _atrt setVariable [QGVAR(health), _atrtHealth, true];
 
 if (_atrtHealth <= 0) then {
