@@ -124,13 +124,14 @@ class CfgMagazines
         muzzleImpulseFactor[] = {0.5, 2};
     };
 
-    class CLASS(Mag_9999Rnd_ATRT): CLASS(Mag_Base)
+    class CLASS(Mag_9999rnd_ATRT): CLASS(Mag_Base)
     {
         SCOPE_HIDDEN;
         displayName = "[KC] AT-RT Turret Battery Pack";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Used In AT-RT";
         ammo = QCLASS(Bullet_PlasmaATRT_Blue);
+        count = 9999;
 
         picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
 
