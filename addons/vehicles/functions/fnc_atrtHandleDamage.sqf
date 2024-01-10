@@ -24,7 +24,7 @@ _atrtHealth = _atrtHealth - _damage;
 _atrt setVariable [QGVAR(health), _atrtHealth, true];
 
 if (_atrtHealth <= 0) then {
-    // _atrt call BNAKC_fnc_spawnATRTSmoke;
+    _atrt call FUNC(atrt_deathEffects);
     _atrt call FUNC(dismountATRT);
     _atrt setDamage 1;
 

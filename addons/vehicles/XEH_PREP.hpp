@@ -1,3 +1,4 @@
+PREP(atrt_deathEffects);
 PREP(atrtHandleDamage);
 PREP(atrtInit);
 PREP(canDismountATRT);
