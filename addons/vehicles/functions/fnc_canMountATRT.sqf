@@ -1,0 +1,33 @@
+#include "..\script_component.hpp"
+/*
+ * Author: 3AS
+ * Edited by DartRuffian
+ * Determines whether a unit can mount an AT-RT
+ *
+ * Arguments:
+ * 0: The AT-RT <OBJECT>
+ * 1: The unit attempting to ride the AT-RT <OBJECT>
+ *
+ * Return Value:
+ * Whether the given unit can ride the AT-RT <BOOL>
+ *
+ * Examples:
+ * [_atrt, ace_player] call FUNC(canMountATRT);
+ *
+ * Public: Yes
+ */
+
+params [
+    ["_atrt", objNull, [objNull]],
+    ["_unit", objNull, [objNull]]
+];
+private [];
+TRACE_2("fnc_canMountATRT",_atrt,_unit);
+
+if (!alive _atrt or {
+    _unit isKindOf "3AS_ATRT_Base" or
+    !(_unit call ace_common_fnc_isAwake) or
+    !(isNull (_atrt getVariable [QGVAR(rider), objNull]))
+}) exitWith {false};
+
+true;

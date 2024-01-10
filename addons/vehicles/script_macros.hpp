@@ -1,3 +1,5 @@
+#define ATRT_HEALTH 50
+
 #define HUD_CHANGER class LS_HUD_Changer \
 { \
     displayName = "Change HUD Color"; \
