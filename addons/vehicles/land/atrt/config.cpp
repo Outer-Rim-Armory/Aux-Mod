@@ -1,7 +1,4 @@
 #include "script_component.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgWeapons.hpp"
-
 
 class CfgPatches
 {
@@ -26,3 +23,7 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"
+#include "CfgEventHandlers.hpp"
