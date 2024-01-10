@@ -28,4 +28,15 @@ _atrt enableAI "ANIM";
 _atrt setVariable [QGVAR(rider), _rider, true];
 _rider setVariable [QGVAR(isRidingATRT), true, true];
 
+_rider attachTo [_atrt, [0, 0, 0], "seat"];
+_rider switchMove "ChopperLight_C_LIn_H";
+
+_atrt switchCamera cameraView;
+_rider remoteControl _atrt;
+inGameUISetEventHandler ["Action", "if ((_this select 3) isEqualTo ""BackFromUAV"") then {true};"]; // Disables "Release UAV Controls" action
+
+[_rider, "blockThrow", QGVAR(ridingATRT), true] call ace_common_fnc_statusEffect_set;
+
+[{_this switchMove "driver_Quadbike"}, _rider, 1.5] call CBA_fnc_waitAndExecute;
+
 nil;
