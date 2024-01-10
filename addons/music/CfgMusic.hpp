@@ -1,5 +1,14 @@
 class CfgMusic
 {
+    /* Macro Explanation
+    * First value is the class name without prefix
+        - This gets other text added to it, SW_AhsokaDelightful becomes BNA_KC_Music_SW_AhsokaDelightful
+    * Second value is the name of the sound that gets displayed
+        - Should be prefixed with what game/movie/etc. the song is from
+    * Third value is the length of the track
+    * Fourth value is what category the song should go in
+        - This gets formatted as BNA_KC_MusicCat_<value> so StarWars becomes BNA_KC_MusicCat_StarWars
+    */
     // ACE Combat
     MUSIC(ACE_Comona,"[ACE] Comona",161,VideoGames);
     MUSIC(ACE_Enchanter,"[ACE] Enchanter",485,VideoGames);

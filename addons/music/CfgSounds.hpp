@@ -1,5 +1,12 @@
 class CfgSounds
 {
+    /* Macro Explanation
+    * First value is the class name without prefix
+      - This gets other text added to it, Restaurant becomes BNA_KC_Sound_Restaurant
+    * Second value is the name of the sound that gets displayed
+    * Third value is the file name and extension.
+      - Macro goes looking in the data/ambience folder
+    */
     SOUND(Restaurant,"Restaurant Ambience",Restaurant_Ambience.ogg,"Restaurant chatter");
     SOUND(Incoming,"Incoming Alarm",incoming_incoming.ogg,"Incoming! Incoming!");
     SOUND(Disturbance,"Disturbance in the force",Disturbance.ogg,"You sense a disturbance in the force...");
