@@ -1,3 +1,4 @@
+PREP(atrtHandleDamage);
 PREP(atrtInit);
 PREP(canDismountATRT);
 PREP(canMountATRT);

@@ -41,3 +41,5 @@ _atrt addAction ["Dismount", {
     }, [], 1.5, true, true, "",
     QUOTE([ARR_2(_originalTarget,ace_player)] call FUNC(canDismountATRT)), 4
 ];
+
+_atrt addEventHandler ["HandleDamage", LINKFUNC(atrtHandleDamage)];
