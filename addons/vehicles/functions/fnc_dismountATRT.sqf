@@ -18,11 +18,13 @@
  */
 
 params [
-    ["_atrt", objNull, [objNull]],
-    ["_rider", objNull, [objNull]]
+    ["_atrt", objNull, [objNull]]
 ];
-private [];
-TRACE_2("fnc_dismountATRT",_atrt,_rider);
+private ["_rider"];
+TRACE_1("fnc_dismountATRT",_atrt);
+
+_rider = _atrt getVariable [QGVAR(rider), objNull];
+if (isNull _rider) exitWith {};
 
 _atrt disableAI "ANIM";
 _atrt setVariable [QGVAR(rider), objNull, true];

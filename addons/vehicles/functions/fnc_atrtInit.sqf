@@ -36,8 +36,8 @@ _atrt addAction ["Drive", {
 ];
 
 _atrt addAction ["Dismount", {
-        params ["_atrt", "_rider"];
-        [_atrt, _rider] call FUNC(dismountATRT);
+        params ["_atrt"];
+        _atrt call FUNC(dismountATRT);
     }, [], 1.5, true, true, "",
     QUOTE([ARR_2(_originalTarget,ace_player)] call FUNC(canDismountATRT)), 4
 ];
