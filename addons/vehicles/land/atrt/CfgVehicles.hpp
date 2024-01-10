@@ -9,7 +9,7 @@ class CfgVehicles
     };
     class CLASS(ATRT): 3AS_ATRT
     {
-        SCOPE_HIDDEN;
+        SCOPE_PUBLIC;
         author = "Keeli Company Aux Team";
 
         faction = QCLASS(Faction_KC);
@@ -29,11 +29,5 @@ class CfgVehicles
         allowedHeadgearB[] = {""};
         headgearList[] = {""};
         identityTypes[] = {"LanguageENG_F", "Head_NATO", "Head_Euro"};
-
-        class EventHandlers: EventHandlers
-        {
-            init = "";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        };
     };
 };
