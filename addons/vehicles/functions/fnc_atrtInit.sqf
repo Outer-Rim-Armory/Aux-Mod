@@ -33,3 +33,10 @@ _atrt addAction ["Drive", {
     }, [], 1.5, true, true, "",
     QUOTE([ARR_2(_originalTarget,_this)] call FUNC(canMountATRT)), 4
 ];
+
+_atrt addAction ["Dismount", {
+        params ["_atrt", "_rider"];
+        [_atrt, _rider] call FUNC(dismountATRT);
+    }, [], 1.5, true, true, "",
+    QUOTE([ARR_2(_originalTarget,_this)] call FUNC(canDismountATRT)), 4
+];
