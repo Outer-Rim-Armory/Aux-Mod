@@ -11,14 +11,14 @@ class CfgPatches
                 // Core Config
             "3AS_AAT",
                 // AAT
-            "BNA_KC_OPFOR_CIS",
-                // Faction / Subcategory
-            "JLTS_characters_DroidArmor",
-                // Crew Unit
+            "ls_vehicles_ground"
+                // AAT, LS model for King AAT
         };
         units[] =
         {
-            "BNA_KC_AAT"
+            "BNA_KC_AAT_Base",
+            "BNA_KC_AAT_Heavy_Base",
+            "BNA_KC_AAT_King_Base"
         };
         weapons[] = {};
     };

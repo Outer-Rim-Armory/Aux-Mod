@@ -34,7 +34,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAir";
+        editorSubcategory = "BNA_KC_SubCat_Planes";
 
         displayName = "Galaxy HAG";
         crew = "BNA_KC_Unit_Phase2_Pilot";
@@ -101,7 +101,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAir";
+        editorSubcategory = "BNA_KC_SubCat_Planes";
 
         displayName = "Galaxy HVT";
         crew = "BNA_KC_Unit_Phase2_Pilot";
@@ -141,7 +141,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAir";
+        editorSubcategory = "BNA_KC_SubCat_Planes";
 
         displayName = "Galaxy HIT";
         crew = "BNA_KC_Unit_Phase2_Pilot";

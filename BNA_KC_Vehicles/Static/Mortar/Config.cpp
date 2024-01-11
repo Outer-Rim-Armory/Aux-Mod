@@ -70,7 +70,7 @@ class CfgWeapons
     };
     class BNA_KC_Mortar_M190_Turret: 3AS_mortar_82mm
     {
-        displayName = "[KC] Model 190 Mortar System";
+        displayName = "Model 190 Mortar System";
         magazines[] =
         {
             "BNA_KC_Mag_3Rnd_82mm_HE",
@@ -377,13 +377,12 @@ class CfgVehicles
             "\3as\3as_static\Mortar\data\tube.rvmat"
         };
 
-        editorPreview = "\BNA_KC_Vehicles\Static\Data\Textures\Previews\Mortar_M190.jpg";
-        icon = "\3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
-
         // Editor Attributes
-        faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VStatic";
         side = 1;
+        faction = "BNA_KC_Faction";
+        editorSubcategory = "BNA_KC_SubCat_Turrets";
+        editorPreview = "\BNA_KC_Vehicles\Static\Mortar\Data\Previews\Mortar_GAR.jpg";
+        icon = "\3AS\3as_static\Mortar\Data\ui\Mortar_top_ca.paa";
 
         class Turrets: Turrets
         {
@@ -482,7 +481,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
 
-        displayName = "[KC] M-190 Mortar System";
+        displayName = "M-190 Mortar System";
 
         hiddenSelectionsTextures[] =
         {

@@ -100,9 +100,9 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] LW-38 (Fried)";
+        baseWeapon = "BNA_KC_LW38_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\BNA_KC_Weapons\LW38\Data\Textures\UI\LW38_Fried_UI.paa";
-        baseWeapon = "BNA_KC_LW38_Fried";
 
         JLTS_isFried = 1;
         magazines[] = {};
@@ -120,9 +120,9 @@ class CfgWeapons
     class BNA_KC_LW38_Green_Fried: BNA_KC_LW38_Green
     {
         displayName = "[KC] LW-38 (Fried)";
+        baseWeapon = "BNA_KC_LW38_Green_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\BNA_KC_Weapons\LW38\Data\Textures\UI\LW38_Fried_UI.paa";
-        baseWeapon = "BNA_KC_LW38_Green_Fried";
 
         JLTS_isFried = 1;
         magazines[] = {};

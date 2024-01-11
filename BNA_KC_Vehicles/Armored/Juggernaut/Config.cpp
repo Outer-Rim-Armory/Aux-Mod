@@ -11,11 +11,11 @@ class CfgVehicles
     };
     class 3AS_Jug_base_F: Wheeled_Apc_F
     {
-        class HitPoints: HitPoints
-        {
-            class HitBody;
-            class HitHull;
-        };
+        // class HitPoints: HitPoints
+        // {
+        //     class HitBody;
+        //     class HitHull;
+        // };
         class UserActions
         {
             class Crow_Nest_Up;
@@ -38,7 +38,8 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorSubcategory = "BNA_KC_SubCat_APCs";
+        editorPreview = "\BNA_KC_Vehicles\Armored\Juggernaut\Data\Previews\Juggernaut.jpg";
 
         displayName = "HAVw A6 Juggernaut";
         crew = "BNA_KC_Unit_Phase2_Tanker";
@@ -53,19 +54,19 @@ class CfgVehicles
         };
 
         // Look at https://community.bistudio.com/wiki/Arma_3:_Soldier_Protection for info on what each value does
-        class HitPoints: HitPoints
-        {
-            class HitBody: HitBody
-            {
-                armor = 2;
-                explosionShielding = 0.15;
-            };
-            class HitHull: HitHull
-            {
-                armor = 2;
-                explosionShielding = 0.85;
-            };
-        };
+        // class HitPoints: HitPoints
+        // {
+        //     class HitBody: HitBody
+        //     {
+        //         armor = 2;
+        //         explosionShielding = 0.15;
+        //     };
+        //     class HitHull: HitHull
+        //     {
+        //         armor = 2;
+        //         explosionShielding = 0.85;
+        //     };
+        // };
 
         class UserActions: UserActions
         {

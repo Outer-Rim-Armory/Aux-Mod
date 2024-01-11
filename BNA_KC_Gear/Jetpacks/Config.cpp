@@ -1,8 +1,7 @@
 #include "CfgPatches.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgRscTitles.hpp"
-
-#define QUOTE(CODE) #CODE
+#include "\BNA_KC_Gear\Macros.hpp"
 
 
 class CfgWeapons

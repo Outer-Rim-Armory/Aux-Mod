@@ -1,4 +1,6 @@
 #include "CfgPatches.hpp"
+#include "\BNA_KC_Gear\Macros.hpp"
+
 
 class CfgWeapons
 {
@@ -69,6 +71,16 @@ class CfgWeapons
         {
             "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARC_Night.paa",
             "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+        };
+    };
+
+    class BNA_KC_Helmet_ARC_Imperial: BNA_KC_Helmet_ARC
+    {
+        displayName = "[KC] SF ARC Helm (Imperial)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARC_Imperial.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Visors\Visor_ARC_Imperial.paa"
         };
     };
 
@@ -202,6 +214,15 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Uniform_ARC_Imperial: BNA_KC_Uniform_Base
+    {
+        displayName = "[KC] SF ARC Uniform (Imperial)";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_Unit_ARC_Imperial";
+        };
+    };
+
     class BNA_KC_Uniform_ARF: BNA_KC_Uniform_Base
     {
         displayName = "[KC] SF ARF Uniform";
@@ -271,6 +292,138 @@ class CfgWeapons
             "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
         };
     };
+
+    class BNA_KC_Vest_Phase1Geo_ARC_Officer: BNA_KC_Vest_ARC_Light
+    {
+        displayName = "[KC] SF GEO ARC Vest 01 (Officer)";
+        hiddenSelectionsTextures[] =
+        {
+            "",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\ARC_P1_LT_camo2_co.paa"
+        };
+    };
+
+    class BNA_KC_Vest_Phase1Geo_ARC_Captain: BNA_KC_Vest_ARC_Light
+    {
+        displayName = "[KC] SF GEO ARC Vest 02 (Captain)";
+        hiddenSelectionsTextures[] =
+        {
+            "",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\ARC_P1_CAP_camo2_co.paa"
+        };
+    };
+
+    class BNA_KC_Vest_ARC_Imperial: BNA_KC_Vest_ARC
+    {
+        displayName = "[KC] SF ARC Vest (Imperial)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\Vest_ARC_Imperial_Chest.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\Vest_ARC_Imperial_Officer.paa"
+        };
+    };
+
+    class BNA_KC_Vest_ARC_v2: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] SF ARC Vest (v2)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Commander.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa",
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Commander.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_ARF: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] SF ARF Vest";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2", "camo3"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_ForceRecon: BNA_KC_Vest_Basic
+    {
+        displayName = "[KC] SF XX Vest (Force Recon)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa",
+            "\SWLB_clones\data\light_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_ForceRecon_NCO: BNA_KC_Vest_ForceRecon
+    {
+        displayName = "[KC] SF XX Vest (Force Recon NCO)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa",
+            "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Heavy_Accessories.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "camo2", "camo3"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+        };
+    };
+
+    class BNA_KC_Vest_ForceRecon_Officer: BNA_KC_Vest_ForceRecon
+    {
+        displayName = "[KC] SF XX Vest (Force Recon Officer)";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Officer.p3d";
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_clones\data\light_accessories_co.paa",
+            "\SWLB_clones\data\officer_accessories_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Officer.p3d";
+        };
+    };
 };
 
 
@@ -282,9 +435,9 @@ class CfgVehicles
     class BNA_KC_Unit_Phase2_Base;
     class BNA_KC_Unit_ARC: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] SF ARC Trooper";
+        displayName = "ARC Trooper";
         editorSubcategory = "BNA_KC_SF";
-        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Textures\Previews\ARC.jpg";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARC.jpg";
 
         uniformClass = "BNA_KC_Uniform_ARC";
         hiddenSelectionsTextures[] =
@@ -296,20 +449,42 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_ARC", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_ARC", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_ARC", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_ARC", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         backpack = "BNA_KC_Backpack_ARC";
     };
 
+    class BNA_KC_Unit_ARC_Imperial: BNA_KC_Unit_ARC
+    {
+        displayName = "ARC Trooper (Imperial)";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\BNA_KC_Unit_ARC_Imperial.jpg";
+
+        uniformClass = "BNA_KC_Uniform_ARC_Imperial";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Imperial_Upper.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Imperial_Lower.paa",
+            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        };
+
+        linkedItems[] =
+        {
+            "BNA_KC_Helmet_ARC_Imperial", "BNA_KC_Vest_Arc_Imperial", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        };
+        respawnLinkedItems[] =
+        {
+            "BNA_KC_Helmet_ARC_Imperial", "BNA_KC_Vest_Arc_Imperial", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        };
+    };
+
     class BNA_KC_Unit_ARC_Night: BNA_KC_Unit_ARC
     {
-        displayName = "[KC] SF ARC Trooper (Night Camo)";
-        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Textures\Previews\ARC_Night.jpg";
-
+        scope = 1;
+        scopeCurator = 0;
         uniformClass = "BNA_KC_Uniform_ARC_Night";
         hiddenSelectionsTextures[] =
         {
@@ -317,22 +492,13 @@ class CfgVehicles
             "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Night_Lower.paa",
             "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
         };
-
-        linkedItems[] =
-        {
-            "BNA_KC_Helmet_ARC_Night", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
-        };
-        respawnLinkedItems[] =
-        {
-            "BNA_KC_Helmet_ARC_Night", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
-        };
     };
 
     class BNA_KC_Unit_ARF: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] SF ARF Trooper";
+        displayName = "ARF Trooper";
         editorSubcategory = "BNA_KC_SF";
-        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Textures\Previews\ARF.jpg";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARF.jpg";
 
         uniformClass = "BNA_KC_Uniform_ARF";
         hiddenSelectionsTextures[] =
@@ -344,30 +510,30 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_ARF", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_ARF", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_ARF", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_ARF", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         backpack = "BNA_KC_Backpack";
     };
 
     class BNA_KC_Unit_BARC: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] SF BARC Trooper";
+        displayName = "BARC Trooper";
         editorSubcategory = "BNA_KC_SF";
-        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Textures\Previews\BARC.jpg";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\BARC.jpg";
 
         uniformClass = "BNA_KC_Uniform_CT";
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_BARC", "SWLB_clone_recon_armor", "BNA_KC_NVG_Visor", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_BARC", "SWLB_clone_recon_armor", "BNA_KC_NVG_Visor", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_BARC", "SWLB_clone_recon_armor", "BNA_KC_NVG_Visor", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_BARC", "SWLB_clone_recon_armor", "BNA_KC_NVG_Visor", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         backpack = "BNA_KC_Backpack";
     };

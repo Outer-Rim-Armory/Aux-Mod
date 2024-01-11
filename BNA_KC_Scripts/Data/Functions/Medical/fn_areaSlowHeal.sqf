@@ -4,6 +4,14 @@
  *
  * Arguments:
  * object: Object - The object to become a healing area.
+ * healRadius: Number - (Optional, default -1)
+ *    Distance to check units for. If no value is passed, checks CfgVehicles entry for typeOf _object for BNA_KC_Medical_areaHealRadius.
+ * _healRate: Number - (Optional, default -1)
+ *    Time between healing actions. If no value is passed, checks CfgVehicles entry for typeOf _object for BNA_KC_Medical_areaHealRate.
+ * _maxPatients: Number - (Optional, default 0)
+ *    Maximum number of patients that can be healed at a time.
+ *    Values <0 signify unlimited patients.
+ *    If no value is passed, checks CfgVehicles entry for typeOf _object for BNA_KC_Medical_areaHealMaxPatients.
  *
  * Return Value:
  * None
@@ -13,8 +21,8 @@
  */
 
 
-params [["_object", objNull, [objNull]], ["_healRate", -1, [0]]];
-private ["_healRadius", "_maxPatients", "_currentPatients", "_objectName"];
+params [["_object", objNull, [objNull]], ["_healRadius", -1, [0]], ["_healRate", -1, [0]], ["_maxPatients", 0, [0]]];
+private ["_currentPatients", "_objectName"];
 
 if (isNull _object) exitWith {};
 
@@ -24,15 +32,18 @@ if (CBA_missionTime == 0) then
     waitUntil {sleep 3; CBA_missionTime > 0;};
 };
 
-_healRadius =
-[
-    configFile >> "CfgVehicles" >> typeOf _object,
-    "BNA_KC_Medical_areaHealRadius",
-    7
-] call BIS_fnc_returnConfigEntry;
+if (_healRadius isEqualTo -1) then
+{
+    // Allows passing a custom heal radius, if none is passed, check the object is CfgVehicles
+    _healRadius =
+    [
+        configFile >> "CfgVehicles" >> typeOf _object,
+        "BNA_KC_Medical_areaHealRadius",
+        7
+    ] call BIS_fnc_returnConfigEntry;
+};
 if (_healRate isEqualTo -1) then
 {
-    // Allows passing a custom heal rate, if none is passed, check the object is CfgVehicles
     _healRate =
     [
         configFile >> "CfgVehicles" >> typeOf _object,
@@ -40,12 +51,15 @@ if (_healRate isEqualTo -1) then
         6
     ] call BIS_fnc_returnConfigEntry;
 };
-_maxPatients =
-[
-    configFile >> "CfgVehicles" >> typeOf _object,
-    "BNA_KC_Medical_areaHealMaxPatients",
-    2
-] call BIS_fnc_returnConfigEntry;
+if (_maxPatients isEqualTo 0) then
+{
+    _maxPatients =
+    [
+        configFile >> "CfgVehicles" >> typeOf _object,
+        "BNA_KC_Medical_areaHealMaxPatients",
+        2
+    ] call BIS_fnc_returnConfigEntry;
+};
 
 _currentPatients = [];
 _object setVariable ["BNA_KC_healHandlers", []];

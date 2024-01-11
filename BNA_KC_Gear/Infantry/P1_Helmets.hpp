@@ -72,12 +72,12 @@ class BNA_KC_Helmet_Phase1_VCT: BNA_KC_Helmet_Phase1_Base
     };
 };
 
-class BNA_KC_Helmet_Phase1_LCPL: BNA_KC_Helmet_Phase1_Base
+class BNA_KC_Helmet_Phase1_CLC: BNA_KC_Helmet_Phase1_Base
 {
     displayName = "[KC] INF P1 Helm 04 (Lance Corporal)";
     hiddenSelectionsTextures[] =
     {
-        "\BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Helmet_P1_LCPL.paa",
+        "\BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Helmet_P1_CLC.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
@@ -251,6 +251,50 @@ class BNA_KC_Helmet_Phase1_Officer_CamoGrey: BNA_KC_Helmet_Phase1_Base
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Infantry\Data\Helmets\Phase 1\Camo\Grey\Helmet_P1_Officer_CamoGrey.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1Geo_NCO: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF GEO Helm 06 (NCO)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Sergeant_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1Geo_Officer: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF GEO Helm 11 (Officer)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Lieutenant_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1Geo_Captain: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF GEO Helm 16 (CPT)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Captain_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1Geo_Commander: BNA_KC_Helmet_Phase1_Base
+{
+    displayName = "[KC] INF GEO Helm 18 (CMD)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Commander_helmet_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };

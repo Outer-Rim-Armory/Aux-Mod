@@ -130,9 +130,9 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] HI-12 (Fried)";
+        baseWeapon = "BNA_KC_HI12_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\BNA_KC_Weapons\HI12\Data\Textures\UI\HI12_Fried_UI.paa";
-        baseWeapon = "BNA_KC_HI12_Fried";
 
         JLTS_isFried = 1;
         magazines[] = {};

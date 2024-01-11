@@ -127,6 +127,27 @@ class CfgVehicles
         sound = "BNA_KC_Ambient_Let_There_Be_Carnage_SFX";
         displayName = "[KC] Let There Be CARNAGE!!!";
     };
+	class BNA_KC_Ambient_EPF_Radio_1: Sound
+	{
+        author = "Keeli";
+        scope = 2;
+        sound = "BNA_KC_Ambient_EPF_Radio_1_SFX";
+        displayName = "[KC] Holonet News";
+    };
+	class BNA_KC_Ambient_EPF_Radio_2: Sound
+	{
+        author = "Keeli";
+        scope = 2;
+        sound = "BNA_KC_Ambient_EPF_Radio_2_SFX";
+        displayName = "[KC] Holonet News 2";
+    };
+	class BNA_KC_Ambient_EPF_Radio_3: Sound
+	{
+        author = "Keeli";
+        scope = 2;
+        sound = "BNA_KC_Ambient_EPF_Radio_3_SFX";
+        displayName = "[KC] Holonet News 3";
+    };
 };
 
 
@@ -209,6 +230,27 @@ class CfgSFX
         BNA_KC_Ambient_Let_There_Be_Carnage[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Let_There_Be_Carnage.ogg",db+50,1,500,1,2,3,4};
         empty[] = {"",0,0,0,0,0,0,0};
     };
+	class BNA_KC_Ambient_EPF_Radio_1_SFX
+	{
+        name = "[KC] Holonet News";
+        sounds[] = {BNA_KC_Ambient_EPF_Radio_1};
+        BNA_KC_Ambient_EPF_Radio_1[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_1.ogg",db+80,1,100,1,2,3,4};
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
+	class BNA_KC_Ambient_EPF_Radio_2_SFX
+	{
+        name = "[KC] Holonet News 2";
+        sounds[] = {BNA_KC_Ambient_EPF_Radio_2};
+        BNA_KC_Ambient_EPF_Radio_2[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_2.ogg",db+80,1,100,1,2,3,4};
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
+	class BNA_KC_Ambient_EPF_Radio_3_SFX
+	{
+        name = "[KC] Holonet News 3";
+        sounds[] = {BNA_KC_Ambient_EPF_Radio_3};
+        BNA_KC_Ambient_EPF_Radio_3[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_3.ogg",db+80,1,100,1,2,3,4};
+        empty[] = {"",0,0,0,0,0,0,0};
+    };
 };
 
 
@@ -276,6 +318,24 @@ class CfgSounds
         name = "Let There Be Carnage";
         sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\Let_There_Be_Carnage.ogg", db+50, 1, 500, 1, 2, 3, 4};
         titles[] = {2, "'Let there be carnage!'"};
+    };
+    class BNA_KC_Ambient_Holonet
+    {
+        name = "Holonet News";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_1.ogg", db+20, 1, 500, 1};
+        titles[] = {2, "'Holonet News'"};
+    };
+    class BNA_KC_Ambient_Holonet_2
+    {
+        name = "Holonet News 2";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_2.ogg", db+20, 1, 500, 1};
+        titles[] = {2, "'Holonet News 2'"};
+    };
+    class BNA_KC_Ambient_Holonet_3
+    {
+        name = "Holonet News 3";
+        sound[] = {"BNA_KC_ZeusAudioModule\Data\Audio\Ambience\EPF_Radio_3.ogg", db+20, 1, 500, 1};
+        titles[] = {2, "'Holonet News 3'"};
     };
 };
 

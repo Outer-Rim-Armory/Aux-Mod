@@ -22,7 +22,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VAir";
+        editorSubcategory = "BNA_KC_SubCat_Helicopters";
         editorPreview = "\BNA_KC_Vehicles\Air\LAATc\Data\Previews\LAATc.jpg";
 
         displayName = "LAAT/c";
@@ -54,7 +54,7 @@ class CfgVehicles
             {
                 author = "Legion Studios";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\lsd_vehicles_heli\laatc\data\auxiliary_co.paa",
@@ -68,6 +68,7 @@ class CfgVehicles
             {
                 author = "Dexus";
                 displayName = "Keeli Company";
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Air\LAATc\Data\Textures\KeeliCompany\Auxiliary.paa",

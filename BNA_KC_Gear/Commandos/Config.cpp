@@ -1,4 +1,6 @@
 #include "CfgPatches.hpp"
+#include "\BNA_KC_Gear\Macros.hpp"
+
 
 class CfgWeapons
 {
@@ -172,7 +174,6 @@ class CfgVehicles
     {
         displayName = "Republic Commando"
         editorPreview = "\SWLB_clones_spec\data\ui\editorPreviews\SWLB_clone_commando_base.jpg";
-        editorSubcategory = "BNA_KC_Subcat_Commandos";
 
         uniformClass = "BNA_KC_Uniform_Katarn";
         model = "\ls_armor_bluefor\uniform\sob\commando\ls_sob_commando_uniform.p3d";
@@ -185,11 +186,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Katarn", "BNA_KC_Vest_Katarn_Basic", "BNA_KC_NVG_Chip", "lsd_gar_republicCommando_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Katarn", "BNA_KC_Vest_Katarn_Basic", "BNA_KC_NVG_Chip", "lsd_gar_republicCommando_hud", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Katarn", "BNA_KC_Vest_Katarn_Basic", "BNA_KC_NVG_Chip", "lsd_gar_republicCommando_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Katarn", "BNA_KC_Vest_Katarn_Basic", "BNA_KC_NVG_Chip", "lsd_gar_republicCommando_hud", "SWLB_comlink", LINKED_ITEMS
         };
         backpack = "BNA_KC_Backack_Katarn";
     };
@@ -249,20 +250,5 @@ class CfgVehicles
             "\SWLB_clones_spec\backpacks\data\backpack_tech_co.paa"
         };
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
-    };
-};
-
-
-class CfgEditorSubcategories
-{
-    class BNA_KC_Subcat_Commandos
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Commandos";
     };
 };

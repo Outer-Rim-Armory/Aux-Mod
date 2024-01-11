@@ -7,8 +7,10 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
             "BNA_KC_Vehicles",
-                // Core Config
+                // Core Vehicle Addon
             "lsd_vehicles_heli",
                 // LAAT/c
             "ls_vehicles_weapons",
@@ -16,10 +18,8 @@ class CfgPatches
                 // Flares
             "BNA_KC_Gear_Aviation",
                 // Pilot unit
-            "BNA_KC_Vehicles_Sounds",
+            "BNA_KC_Vehicles_Sounds"
                 // Impulse sounds
-            "ls_functions"
-                // Impulse script
         };
         units[] =
         {

@@ -48,7 +48,7 @@ params ["_eventHandlerType"];
         {
             case "EMP":
             {
-                private ["_radiusDroid", "_radiusDeka", "_radiusVehicle", "_nearbyUnits", "_shieldObjects", "_tasDekas", "_tanks"];
+                private ["_radiusDroid", "_radiusDeka", "_radiusVehicle", "_nearbyUnits", "_crewedUnits", "_shieldObjects", "_tasDekas", "_tanks"];
 
                 [ATLToASL _position] remoteExec ["BNAKC_fnc_playDroidPopperSound", [0, -2] select isDedicated];
 
@@ -71,7 +71,13 @@ params ["_eventHandlerType"];
                     5
                 ] call BIS_fnc_returnConfigEntry;
 
-                _nearbyUnits = _position nearEntities ["CAManBase", _radiusDroid];
+                _nearbyUnits = _position nearEntities [["CAManBase", "Air", "Car", "Motorcycle", "Tank"], _radiusDroid];
+                _crewedUnits = [];
+                {
+                    _crewedUnits append (crew _x);
+                } forEach _nearbyUnits;
+                _nearbyUnits append _crewedUnits;
+                _nearbyUnits = _nearbyUnits arrayIntersect _nearbyUnits;
 
                 _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];
                 _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka];
@@ -88,7 +94,7 @@ params ["_eventHandlerType"];
 
             case "BACTA":
             {
-                private ["_healDuration", "_currentTime", "_endTime"];
+                private ["_healDuration", "_healRadius", "_healRate", "_maxPatients", "_currentTime", "_endTime"];
                 _healDuration =
                 [
                     configFile >> "CfgMagazines" >> _magazine,
@@ -96,13 +102,25 @@ params ["_eventHandlerType"];
                     5
                 ] call BIS_fnc_returnConfigEntry;
 
+                _healRadius =
+                [
+                    configFile >> "CfgMagazines" >> _magazine,
+                    "BNA_KC_Medical_areaHealRadius",
+                    5
+                ] call BIS_fnc_returnConfigEntry;
                 _healRate =
                 [
                     configFile >> "CfgMagazines" >> _magazine,
                     "BNA_KC_Medical_areaHealRate",
                     5
                 ] call BIS_fnc_returnConfigEntry;
-                [_projectile, _healRate] call BNAKC_fnc_areaSlowHeal;
+                _maxPatients =
+                [
+                    configFile >> "CfgMagazines" >> _magazine,
+                    "BNA_KC_Medical_areaHealMaxPatients",
+                    0
+                ] call BIS_fnc_returnConfigEntry;
+                [_projectile, _healRadius, _healRate, _maxPatients] call BNAKC_fnc_areaSlowHeal;
 
                 _currentTime = time max serverTime;
                 _endTime = _currentTime + _healDuration;

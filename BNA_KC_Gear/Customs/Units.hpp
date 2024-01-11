@@ -5,10 +5,11 @@ class BNA_KC_Unit_Phase2_Base;
 class BNA_KC_Unit_Axel: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Axel.jpg";
 
-    displayName = "[KC] Axel";
+    displayName = "Axel";
     uniformClass = "BNA_KC_Uniform_Axel";
     hiddenSelectionsTextures[] =
     {
@@ -20,21 +21,22 @@ class BNA_KC_Unit_Axel: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Axel", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Axel", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Axel", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Axel", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
-class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
+class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Burnt.jpg";
 
-    displayName = "[KC] Burnt";
+    displayName = "Burnt";
     uniformClass = "BNA_KC_Uniform_Burnt";
     hiddenSelectionsTextures[] =
     {
@@ -46,21 +48,22 @@ class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armo
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Burnt", "BNA_KC_Vest_Medic_Platoon", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Burnt", "BNA_KC_Vest_Medic_Platoon", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Burnt", "BNA_KC_Vest_Medic_Platoon", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Burnt", "BNA_KC_Vest_Medic_Platoon", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
 class BNA_KC_Unit_Dexus: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Dexus.jpg";
 
-    displayName = "[KC] Dexus";
+    displayName = "Dexus";
     uniformClass = "BNA_KC_Uniform_Dexus";
     hiddenSelectionsTextures[] =
     {
@@ -72,21 +75,22 @@ class BNA_KC_Unit_Dexus: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armo
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_CMS", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
 class BNA_KC_Unit_Drake: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Drake.jpg";
 
-    displayName = "[KC] Drake";
+    displayName = "Drake";
     uniformClass = "BNA_KC_Uniform_Drake";
     hiddenSelectionsTextures[] =
     {
@@ -98,11 +102,11 @@ class BNA_KC_Unit_Drake: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armo
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_ARC_Drake", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARC_Drake", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_ARC_Drake", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARC_Drake", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     backpack = "BNA_KC_Backpack_ARC";
 };
@@ -111,9 +115,9 @@ class BNA_KC_Unit_Fil: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Fil.jpg";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Fil.jpg";
 
-    displayName = "[KC] Fil";
+    displayName = "Fil";
     uniformClass = "BNA_KC_Uniform_Fil";
     hiddenSelectionsTextures[] =
     {
@@ -125,11 +129,11 @@ class BNA_KC_Unit_Fil: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Fil", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Fil", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Fil", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Fil", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -137,9 +141,9 @@ class BNA_KC_Unit_FilSquad: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\FilSquad.jpg";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\FilSquad.jpg";
 
-    displayName = "[KC] Fil's Squad Member";
+    displayName = "Fil's Squad Member";
     uniformClass = "BNA_KC_Uniform_FilSquad";
     hiddenSelectionsTextures[] =
     {
@@ -151,21 +155,72 @@ class BNA_KC_Unit_FilSquad: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_FilSquad", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_FilSquad", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_FilSquad", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_FilSquad", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+};
+
+class BNA_KC_Unit_Howzer_Blue: BNA_KC_Unit_Phase2_Base
+{
+    // Editor Attributes
+    editorSubcategory = "BNA_KC_Customs";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\BNA_KC_Unit_Howzer_Blue.jpg";
+
+    displayName = "Howzer (Blue)";
+    uniformClass = "BNA_KC_Uniform_Howzer_Blue";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Blue_Upper.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Blue_Lower.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    // Loadout
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Blue", "BNA_KC_Vest_WO_Howzer", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Blue", "BNA_KC_Vest_WO_Howzer", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+};
+class BNA_KC_Unit_Howzer_Brown: BNA_KC_Unit_Howzer_Blue
+{
+    // Editor Attributes
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\BNA_KC_Unit_Howzer_Brown.jpg";
+
+    displayName = "Howzer (Brown)";
+    uniformClass = "BNA_KC_Uniform_Howzer_Brown";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Brown_Upper.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Brown_Lower.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    // Loadout
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Brown", "BNA_KC_Vest_WO", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Brown", "BNA_KC_Vest_WO", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
 class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Joe.jpg";
 
-    displayName = "[KC] Joe";
+    displayName = "Joe";
     uniformClass = "BNA_KC_Uniform_Joe";
     hiddenSelectionsTextures[] =
     {
@@ -177,11 +232,11 @@ class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase12_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase12_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     backpack = "BNA_KC_Backpack_ARC";
 };
@@ -189,10 +244,11 @@ class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Keeli: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Keeli.jpg";
 
-    displayName = "[KC] Keeli";
+    displayName = "Keeli";
     uniformClass = "BNA_KC_Uniform_Keeli";
     hiddenSelectionsTextures[] =
     {
@@ -204,20 +260,19 @@ class BNA_KC_Unit_Keeli: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Keeli", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase2_Keeli", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Keeli", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Phase2_Keeli", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 class BNA_KC_Unit_Keeli_CamoBrown: BNA_KC_Unit_Phase2_Base
 {
-    // Editor Attributes
-    editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Keeli_CamoBrown.jpg";
+    // Scope
+    scope = 1;
+    scopeCurator = 0;
 
-    displayName = "[KC] Keeli (Brown Camo)";
     uniformClass = "BNA_KC_Uniform_Keeli_CamoBrown";
     hiddenSelectionsTextures[] =
     {
@@ -225,24 +280,13 @@ class BNA_KC_Unit_Keeli_CamoBrown: BNA_KC_Unit_Phase2_Base
         "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Camo\Brown\Uniform_Keeli_CamoBrown_Lower.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
-
-    // Loadout
-    linkedItems[] =
-    {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoBrown", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
-    };
-    respawnLinkedItems[] =
-    {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoBrown", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
-    };
 };
 class BNA_KC_Unit_Keeli_CamoGrey: BNA_KC_Unit_Phase2_Base
 {
-    // Editor Attributes
-    editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Keeli_CamoGrey.jpg";
+    // Scope
+    scope = 1;
+    scopeCurator = 0;
 
-    displayName = "[KC] Keeli (Grey Camo)";
     uniformClass = "BNA_KC_Uniform_Keeli_CamoGrey";
     hiddenSelectionsTextures[] =
     {
@@ -250,25 +294,15 @@ class BNA_KC_Unit_Keeli_CamoGrey: BNA_KC_Unit_Phase2_Base
         "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Camo\Grey\Uniform_Keeli_CamoGrey_Lower.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
-
-    // Loadout
-    linkedItems[] =
-    {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoGrey", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
-    };
-    respawnLinkedItems[] =
-    {
-        "BNA_KC_Helmet_Phase2_Keeli_CamoGrey", "BNA_KC_Vest_Officer_Keeli", "BNA_KC_NVG_Officer", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
-    };
 };
 
 class BNA_KC_Unit_Ponds: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Ponds.jpg";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Ponds.jpg";
 
-    displayName = "[187th] Ponds";
+    displayName = "Ponds";
     uniformClass = "BNA_KC_Uniform_Ponds";
     hiddenSelectionsTextures[] =
     {
@@ -280,18 +314,18 @@ class BNA_KC_Unit_Ponds: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Ponds", "BNA_KC_Vest_Officer_Ponds", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Ponds", "BNA_KC_Vest_Officer_Ponds", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Ponds", "BNA_KC_Vest_Officer_Ponds", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Ponds", "BNA_KC_Vest_Officer_Ponds", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
 class BNA_KC_Unit_PondsTrooper: BNA_KC_Unit_Ponds
 {
-    displayName = "[187th] Trooper";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\PondsTrooper.jpg";
+    displayName = "Ponds Trooper";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\PondsTrooper.jpg";
     uniformClass = "BNA_KC_Uniform_PondsTrooper";
     hiddenSelectionsTextures[] =
     {
@@ -303,21 +337,22 @@ class BNA_KC_Unit_PondsTrooper: BNA_KC_Unit_Ponds
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_PondsTrooper", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_PondsTrooper", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_PondsTrooper", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_PondsTrooper", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
 class BNA_KC_Unit_Rat: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Rat.jpg";
 
-    displayName = "[KC] Rat";
+    displayName = "Rat";
     uniformClass = "BNA_KC_Uniform_Rat";
     hiddenSelectionsTextures[] =
     {
@@ -329,21 +364,22 @@ class BNA_KC_Unit_Rat: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_BARC_Rat", "BNA_KC_Vest_Officer_Rat", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_BARC_Rat", "BNA_KC_Vest_Officer_Rat", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_BARC_Rat", "BNA_KC_Vest_Officer_Rat", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_BARC_Rat", "BNA_KC_Vest_Officer_Rat", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
 class BNA_KC_Unit_Sin: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Sin.jpg";
 
-    displayName = "[KC] Sin";
+    displayName = "Sin";
     uniformClass = "BNA_KC_Uniform_Sin";
     hiddenSelectionsTextures[] =
     {
@@ -355,11 +391,11 @@ class BNA_KC_Unit_Sin: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_ARF_Sin", "BNA_KC_Vest_CSFC", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARF_Sin", "BNA_KC_Vest_CSFC", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_ARF_Sin", "BNA_KC_Vest_CSFC", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARF_Sin", "BNA_KC_Vest_CSFC", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
@@ -367,9 +403,9 @@ class BNA_KC_Unit_Stone: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Stone.jpg";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Stone.jpg";
 
-    displayName = "[KC] Stone";
+    displayName = "Stone";
     uniformClass = "BNA_KC_Uniform_Stone";
     hiddenSelectionsTextures[] =
     {
@@ -381,21 +417,22 @@ class BNA_KC_Unit_Stone: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Stone", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Stone", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Stone", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Phase2_Stone", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
 class BNA_KC_Unit_Tyrant: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Tyrant.jpg";
 
-    displayName = "[KC] Tyrant";
+    displayName = "Tyrant";
     uniformClass = "BNA_KC_Uniform_Tyrant";
     hiddenSelectionsTextures[] =
     {
@@ -407,11 +444,11 @@ class BNA_KC_Unit_Tyrant: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_ARC_Tyrant", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARC_Tyrant", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_ARC_Tyrant", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_ARC_Tyrant", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     backpack = "BNA_KC_Backpack_ARC";
 };
@@ -425,10 +462,11 @@ class BNA_KC_Unit_Insulated_Trooper;
 class BNA_KC_Unit_Insulated_Dexus: BNA_KC_Unit_Insulated_Trooper
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Dexus_Insulated.jpg";
 
-    displayName = "[KC] Dexus (Snow)";
+    displayName = "Dexus (Snow)";
     uniformClass = "BNA_KC_Uniform_Insulated_Dexus";
     hiddenSelectionsTextures[] =
     {
@@ -440,21 +478,22 @@ class BNA_KC_Unit_Insulated_Dexus: BNA_KC_Unit_Insulated_Trooper
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Insulated_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Insulated_Dexus", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
 class BNA_KC_Unit_Insulated_Joe: BNA_KC_Unit_Insulated_Trooper
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Joe_Insulated.jpg";
 
-    displayName = "[KC] Joe (Snow)";
+    displayName = "Joe (Snow)";
     uniformClass = "BNA_KC_Uniform_Insulated_Joe";
     hiddenSelectionsTextures[] =
     {
@@ -466,21 +505,22 @@ class BNA_KC_Unit_Insulated_Joe: BNA_KC_Unit_Insulated_Trooper
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Joe", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Insulated_Joe", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Joe", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+        "BNA_KC_Helmet_Insulated_Joe", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };
 
 class BNA_KC_Unit_Insulated_Keeli: BNA_KC_Unit_Insulated_Trooper
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Textures\Previews\Keeli_Insulated.jpg";
 
-    displayName = "[KC] Keeli (Snow)";
+    displayName = "Keeli (Snow)";
     uniformClass = "BNA_KC_Uniform_Insulated_Keeli";
     hiddenSelectionsTextures[] =
     {
@@ -492,10 +532,10 @@ class BNA_KC_Unit_Insulated_Keeli: BNA_KC_Unit_Insulated_Trooper
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Keeli", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Insulated_Keeli", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Insulated_Keeli", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr", "lsd_gar_p2Interior_hud"
+        "BNA_KC_Helmet_Insulated_Keeli", "BNA_KC_Vest_Basic", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
 };

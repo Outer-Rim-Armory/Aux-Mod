@@ -13,7 +13,7 @@
  */
 
 
-private ["_weapons"];
+private ["_weapons", "_compatibleItems"];
 
 _weapons = [primaryWeapon ace_player, handgunWeapon ace_player, secondaryWeapon ace_player];
 _compatibleItems = [];
@@ -34,5 +34,5 @@ _compatibleItems = [];
 } forEach _weapons;
 
 
-[player, _compatibleItems] call ace_arsenal_fnc_addvirtualitems;
+[player, _compatibleItems] call ace_arsenal_fnc_addVirtualItems;
 [player, player] call ace_arsenal_fnc_openBox;

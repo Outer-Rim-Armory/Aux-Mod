@@ -20,6 +20,7 @@ class CfgPatches
         };
         units[] =
         {
+            "BNA_KC_OLV20",
             "BNA_KC_APC_OLV20"
         };
         weapons[] = {};

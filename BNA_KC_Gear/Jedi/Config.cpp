@@ -1,4 +1,5 @@
 #include "CfgPatches.hpp"
+#include "\BNA_KC_Gear\Macros.hpp"
 
 
 class CfgWeapons
@@ -50,9 +51,9 @@ class CfgVehicles
     class BNA_KC_Unit_Phase2_Base;
     class BNA_KC_Unit_Jedi_Commander: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] Jedi Commander";
+        displayName = "Jedi Commander";
         editorSubcategory = "BNA_KC_SubCat_Jedi";
-        editorPreview = "\BNA_KC_Gear\Jedi\Data\Textures\Previews\Jedi_Commander.jpg";
+        editorPreview = "\BNA_KC_Gear\Jedi\Data\Previews\Jedi_Commander.jpg";
 
         uniformClass = "BNA_KC_Uniform_Jedi_Commander";
         model = "\lsd_armor_bluefor\uniform\gar\jediCommander\lsd_gar_jediCommander_uniform.p3d";
@@ -99,11 +100,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Vest_Jedi", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Vest_Jedi", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Vest_Jedi", "SWLB_comlink", LINKED_ITEMS
         };
         backpack = "BNA_KC_Backpack_Radio_Invisible";
     };

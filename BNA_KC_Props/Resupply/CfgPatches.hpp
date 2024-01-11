@@ -7,6 +7,8 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
 			"3AS_Prop_Crates",
 				// All of the 3AS resupply crates
             "A3_Structures_F_Items_Vessels",

@@ -6,7 +6,12 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
-            "BNA_KC_Gear"
+            "BNA_KC_Core",
+                // Core Addon
+            "ls_armor_redfor",
+                // Base unit, uniform, vest
+            "A3_Weapons_F_Ammoboxes"
+                // Base backpack
         };
         units[] =
         {

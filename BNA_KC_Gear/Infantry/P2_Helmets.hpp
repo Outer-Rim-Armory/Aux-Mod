@@ -83,21 +83,21 @@ class BNA_KC_Helmet_Phase2_VCT_Legacy: BNA_KC_Helmet_Phase2_Base
     };
 };
 
-class BNA_KC_Helmet_Phase2_LCPL: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_CLC: BNA_KC_Helmet_Phase2_Base
 {
     displayName = "[KC] INF Helm 04 (Lance Corporal)";
     hiddenSelectionsTextures[] =
     {
-        "\BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_LCPL.paa",
+        "\BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_CLC.paa",
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
-class BNA_KC_Helmet_Phase2_LCPL_Legacy: BNA_KC_Helmet_Phase2_Base
+class BNA_KC_Helmet_Phase2_CLC_Legacy: BNA_KC_Helmet_Phase2_Base
 {
     displayName = "[KC] INF Helm 04 (Lance Corporal, Legacy)";
     hiddenSelectionsTextures[] =
     {
-        "\BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_LCPL_Legacy.paa",
+        "\BNA_KC_Gear\Infantry\Data\Helmets\Phase 2\Helmet_P2_CLC_Legacy.paa",
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };

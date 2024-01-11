@@ -40,6 +40,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] DC-15A (Base)";
+        baseWeapon = "BNA_KC_DC15A_Base";
 
         modes[] = {"Single", "FullAuto"};
         muzzles[] = {"this", "Stun", "EGLM"};
@@ -132,6 +133,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15A";
+        baseWeapon = "BNA_KC_DC15A";
         muzzles[] = {"this", "Stun"};
 
         JLTS_friedItem = "BNA_KC_DC15A_Fried";
@@ -142,6 +144,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] DC-15A (Fried)";
+        baseWeapon = "BNA_KC_DC15A_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_fried_ui_ca.paa";
 
@@ -162,6 +165,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15A UGL";
+        baseWeapon = "BNA_KC_DC15A_UGL";
         muzzles[] = {"this", "EGLM"};
 
         // Model & Textures
@@ -189,6 +193,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] DC-15A UGL (Fried)";
+        baseWeapon = "BNA_KC_DC15A_UGL_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_UGL_plastic_fried_ui_ca.paa";
 

@@ -131,9 +131,9 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] DC-15X (Fried)";
+        baseWeapon = "BNA_KC_DC15X_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_fried_ui_ca.paa";
-        baseWeapon = "BNA_KC_DC15X_Fried";
 
         JLTS_isFried = 1;
         magazines[] = {};

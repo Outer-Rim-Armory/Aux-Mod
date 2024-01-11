@@ -29,7 +29,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VArmored";
+        editorSubcategory = "BNA_KC_SubCat_APCs";
         editorPreview = "\BNA_KC_Vehicles\Armored\Badger\Data\Previews\Badger.jpg";
 
         displayName = "Badger IFV";
@@ -110,26 +110,66 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Body.paa",
-            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Addons.paa",
-            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Tow.paa",
+            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Body.paa",
+            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Addons.paa",
+            "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Tow.paa",
             "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
             "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
         };
 
-        textureList[] = {"Standard", 1};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "KeeliCompanyDamaged", 0, "CamoGrey", 0};
         class TextureSources
         {
             class Standard
             {
                 author = "???";
                 displayName = "Standard";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Body.paa",
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Addons.paa",
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+                };
+            };
+
+            class KeeliCompany: Standard
+            {
+                author = "Rev";
+                displayName = "Keeli Company"
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompany\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+                };
+            };
+
+            class KeeliCompanyDamaged: KeeliCompany
+            {
+                displayName = "Keeli Company (Damaged)"
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompanyDamaged\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompanyDamaged\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\KeeliCompanyDamaged\Tow.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
+                };
+            };
+
+            class CamoGrey: KeeliCompany
+            {
+                displayName = "Grey Camo"
+                textures[] =
+                {
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\CamoGrey\Body.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\CamoGrey\Addons.paa",
+                    "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\CamoGrey\Tow.paa",
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\CamoNet.paa",
                     "\BNA_KC_Vehicles\Armored\Badger\Data\Textures\Standard\Cage.paa"
                 };

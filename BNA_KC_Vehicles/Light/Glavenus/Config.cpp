@@ -17,8 +17,8 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
-        editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Unarmed.jpg";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
+        editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus.jpg";
 
         displayName = "Glavenus (Unarmed)";
         crew = "BNA_KC_Unit_Phase2_CT";
@@ -26,6 +26,10 @@ class CfgVehicles
         side = 1;
 
         weapons[] = {"BNA_KC_Glavenus_Horn", "SmokeLauncher"};
+
+        armor = 200;
+        fuelCapacity = 82.5;
+        fuelConsumptionRate = 0.01;
 
         hiddenSelectionsTextures[] = {};
         textureList[] = {"KeeliCompany", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0};
@@ -35,7 +39,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa",
@@ -125,7 +129,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
         editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Turret.jpg";
 
         displayName = "Glavenus (HMG)";
@@ -143,7 +147,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa",
@@ -227,7 +231,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
         editorPreview = "\BNA_KC_Vehicles\Light\Glavenus\Data\Previews\Glavenus_Turret.jpg";
 
         displayName = "Glavenus (GMG)";
@@ -245,7 +249,7 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Keeli Company";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
                     "\BNA_KC_Vehicles\Light\Glavenus\Data\Textures\KeeliCompany\Body.paa",

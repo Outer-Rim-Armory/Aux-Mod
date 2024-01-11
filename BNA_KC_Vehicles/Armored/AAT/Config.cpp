@@ -4,7 +4,24 @@
 
 class CfgVehicles
 {
-    class Tank_F;
+    class All;
+    class AllVehicles: All
+    {
+        class NewTurret;
+    };
+    class Land: AllVehicles {};
+    class LandVehicle: Land {};
+    class Tank: LandVehicle {};
+    class Tank_F: Tank
+    {
+        class Turrets
+        {
+            class MainTurret: NewTurret
+            {
+                class Turrets;
+            };
+        };
+    };
     class 3AS_AAT_base_F: Tank_F
     {
         class Turrets;
@@ -39,23 +56,21 @@ class CfgVehicles
             };
         };
     };
-    class BNA_KC_AAT: 3AS_AAT
+    class BNA_KC_AAT_Base: 3AS_AAT
     {
         // Mod Info
         dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 2;
-        scopeCurator = 2;
+        scope = 1;
+        scopeCurator = 0;
 
         // Editor Attributes
-        faction = "BNA_KC_OPFOR_CIS";
-        editorSubcategory = "BNA_KC_SubCat_CIS_Tanks";
+        editorSubcategory = "BNA_KC_SubCat_Tanks";
+        editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_Blue.jpg";
 
         displayName = "AAT";
-        crew = "JLTS_Droid_B1_Crew";
-        typicalCargo[] = {"JLTS_Droid_B1_Crew"};
 
         hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\CIS_AAT_CO.paa"};
 
@@ -63,7 +78,7 @@ class CfgVehicles
         {
             "CIS", 1,
             "TradeFederation", 0,
-            "Green", 0,
+            "EPF", 0,
             "Red", 0,
             "Desert", 0,
             "Geonosis", 0,
@@ -85,49 +100,52 @@ class CfgVehicles
             class TradeFederation: CIS
             {
                 displayName = "Trade Federation";
+                factions[] = {"BNA_KC_OPFOR_TU"};
                 textures[] = {"\3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
             };
-            class Green: CIS
+            class EPF: CIS
             {
-                displayName = "Green";
+                displayName = "El Presidente Forces";
+                factions[] = {"BNA_KC_OPFOR_EPF"};
                 textures[] = {"\3AS\3AS_AAT\data\Green_AAT_CO.paa"};
             };
             class Red: CIS
             {
                 displayName = "Red";
+                factions[] = {};
                 textures[] = {"\3AS\3AS_AAT\data\Red_AAT_CO.paa"};
             };
-            class Desert
+            class Desert: Red
             {
                 displayName = "Camo - Desert";
                 textures[] = {"\3AS\3AS_AAT\data\Desert_AAT_CO.paa"};
             };
-            class Geonosis
+            class Geonosis: Red
             {
                 displayName = "Camo - Geonosis";
                 textures[] = {"\3AS\3AS_AAT\data\Geonosis_AAT_CO.paa"};
             };
-            class Woodland
+            class Woodland: Red
             {
                 displayName = "Camo - Woodland";
                 textures[] = {"\3AS\3AS_AAT\data\Woodland_AAT_CO.paa"};
             };
-            class Tropical
+            class Tropical: Red
             {
                 displayName = "Camo - Tropical";
                 textures[] = {"\3AS\3AS_AAT\data\Tropical_AAT_CO.paa"};
             };
-            class Arid
+            class Arid: Red
             {
                 displayName = "Camo - Arid";
                 textures[] = {"\3AS\3AS_AAT\data\Arid_AAT_CO.paa"};
             };
-            class Winter
+            class Winter: Red
             {
                 displayName = "Camo - Winter";
                 textures[] = {"\3AS\3AS_AAT\data\Winter_AAT_CO.paa"};
             };
-            class Aqua
+            class Aqua: Red
             {
                 displayName = "Camo - Aqua";
                 textures[] = {"\3AS\3AS_AAT\data\Aqua_AAT_CO.paa"};
@@ -186,6 +204,139 @@ class CfgVehicles
             {
                 source = "ammorandom";
                 weapon = "3AS_AAT_Repeater";
+            };
+        };
+    };
+
+    class BNA_KC_AAT_Heavy_Base: BNA_KC_AAT_Base
+    {
+        displayName = "AAT (Heavy)";
+        hiddenSelectionsTextures[] = {"3AS\3AS_AAT\data\Red_AAT_CO.paa"};
+        editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_Red.jpg";
+        accuracy = 1000;
+        armor = 1250;
+
+        textureList[] = {};
+        class TextureSources {};
+    };
+
+    class ls_ground_aat_base: Tank_F
+    {
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                class Turrets: Turrets
+                {
+                    class CommanderOptics;
+                };
+            };
+        };
+        class HitPoints;
+    };
+    class BNA_KC_AAT_King_Base: ls_ground_aat_base
+    {
+        // Mod Info
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        // Scope
+        scope = 1;
+        scopeCurator = 0;
+
+        // Editor Attributes
+        editorPreview = "\BNA_KC_Vehicles\Armored\AAT\Data\Previews\AAT_King.jpg";
+
+        displayName = "AAT (King)";
+
+        armor = 2000;
+        armorStructural = 10;
+
+        hiddenselections[] = {"body1", "body2", "gun"};
+        hiddenSelectionsTextures[] =
+        {
+            "\ls_vehicles_ground\aat\data\black\body1_black_co.paa",
+            "\ls_vehicles_ground\aat\data\black\body2_black_co.paa",
+            "\ls_vehicles_ground\aat\data\black\gun_black_co.paa"
+        };
+
+        textureList[] = {};
+        class TextureSources {};
+
+        class Turrets: Turrets
+        {
+            class MainTurret: MainTurret
+            {
+                weapons[] = {"3AS_AATCannon", "SmokeLauncher"};
+                magazines[] =
+                {
+                    "3AS_24Rnd_AAT_AP",
+                    "3AS_24Rnd_AAT_AP",
+                    "SmokeLauncherMag"
+                };
+
+                class Turrets: Turrets
+                {
+                    class CommanderOptics: CommanderOptics
+                    {
+                        weapons[] = {"3AS_AAT_Repeater", "SmokeLauncher"};
+                        magazines[] =
+                        {
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "3AS_500Rnd_ATT_RedPlasma",
+                            "SmokeLauncherMag"
+                        };
+                    };
+                };
+            };
+        };
+
+        class AnimationSourcs
+        {
+            class recoil_source
+            {
+                source = "reload";
+                weapon = "3AS_AATCannon";
+            };
+        };
+
+        class HitPoints: HitPoints
+        {
+            class HitHull
+            {
+                armor = 800;
+                explosionshielding = 2;
+                material = -1;
+                minimalhit = 0.14;
+                name = "hull_hit";
+                passthrough = 0.03;
+                radius = 0.25;
+                visual = "zbytek";
+            };
+            class HitEngine: HitHull
+            {
+                explosionShielding = 1;
+                minimalHit = 0.24;
+                name = "engine_hit";
+                passThrough = 0.08;
+                radius = 0.33;
+                visual = "motor";
+            };
+            class HitAmmo_L: HitEngine
+            {
+                name = "ammo_l_hit";
+            };
+            class HitAmmo_R: HitEngine
+            {
+                name = "ammo_r_hit";
             };
         };
     };

@@ -17,36 +17,36 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
-        editorPreview = "\BNA_KC_Vehicles\Light\Data\Textures\Previews\BNA_KC_Hornet_Unarmed.jpg";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
+        editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet.jpg";
 
-        displayName = "Hornet Strike Vehicle (Unarmed)";
+        displayName = "Hornet Strike Vehicle";
         crew = "BNA_KC_Unit_ARF";
         typicalCargo[] = {"BNA_KC_Unit_ARF"};
         side = 1;
 
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa",
+            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
         };
-        textureList[] = {"CamoBrown", 1, "CamoGrey", 0};
+        textureList[] = {"CamoKC", 1, "CamoGrey", 0};
         class TextureSources
         {
-            class CamoBrown
+            class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Brown Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa",
+                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
                 };
             };
-            class CamoGrey: CamoBrown
+            class CamoGrey: CamoKC
             {
                 displayName = "Grey Camo";
                 textures[] =
@@ -92,7 +92,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
         editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet_MG.jpg";
 
         displayName = "Hornet Strike Vehicle (MG)";
@@ -102,26 +102,26 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa",
+            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
         };
-        textureList[] = {"CamoBrown", 1, "CamoGrey", 0};
+        textureList[] = {"CamoKC", 1, "CamoGrey", 0};
         class TextureSources
         {
-            class CamoBrown
+            class CamoKC
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Brown Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa",
+                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
                 };
             };
-            class CamoGrey: CamoBrown
+            class CamoGrey: CamoKC
             {
                 displayName = "Grey Camo";
                 textures[] =
@@ -205,7 +205,7 @@ class CfgVehicles
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
-        editorSubcategory = "BNA_KC_SubCat_VLight";
+        editorSubcategory = "BNA_KC_SubCat_Cars";
         editorPreview = "\BNA_KC_Vehicles\Light\Hornet\Data\Previews\Hornet_Launcher.jpg";
 
         displayName = "Hornet Strike Vehicle (AT)";
@@ -215,7 +215,7 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa",
+            "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
             "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Launcher.paa",
@@ -227,10 +227,10 @@ class CfgVehicles
             {
                 author = "SweMonkey and DartRuffian";
                 displayName = "Brown Camo";
-                factions[] = {"BNA_KC_Faction"};
+                factions[] = {};
                 textures[] =
                 {
-                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoBrown.paa",
+                    "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Body_CamoKC.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
                     "\BNA_KC_Vehicles\Light\Hornet\Data\Textures\Launcher.paa",

@@ -87,8 +87,8 @@ class CfgVehicles
 
         // Deployable properties
         BNA_KC_Deployable_item = "BNA_KC_Deployable_MedicalDroid_Item";
-        BNA_KC_Deployable_placeTime = 5; // How long in seconds it takes to place down
-        BNA_KC_Deployable_pickupTime = 8; // How long in seconds it takes to pick up
+        BNA_KC_Deployable_placeTime = 20;  // How long in seconds it takes to place down
+        BNA_KC_Deployable_pickupTime = 20; // How long in seconds it takes to pick up
 
         // Sound effects
         BNA_KC_Object_soundLoop = "BNA_KC_Props\Deployables\Data\Audio\FX7_Ambient.wss";
@@ -99,7 +99,7 @@ class CfgVehicles
         BNA_KC_Medical_areaHealMaxPatients = 2; // Maximum amount of units that can be healed at a time
 
         model = "RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
-        editorPreview = "\BNA_KC_Props\Gonks\Data\Textures\Previews\FX7.jpg";
+        editorPreview = "\BNA_KC_Props\Gonks\Data\Previews\FX7.jpg";
 
         class ACE_Actions
         {

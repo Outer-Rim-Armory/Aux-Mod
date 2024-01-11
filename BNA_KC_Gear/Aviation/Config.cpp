@@ -1,5 +1,5 @@
 #include "CfgPatches.hpp"
-#include "..\Macros.hpp"
+#include "\BNA_KC_Gear\Macros.hpp"
 
 
 class CfgWeapons
@@ -132,9 +132,9 @@ class CfgVehicles
     class BNA_KC_Unit_Phase2_Base;
     class BNA_KC_Unit_Phase2_Pilot: BNA_KC_Unit_Phase2_Base
     {
-        displayName = "[KC] AVI P2 Pilot";
-        editorSubcategory = "BNA_KC_Aviation";
-        editorPreview = "\BNA_KC_Gear\Aviation\Data\Textures\Previews\Phase2_Pilot.jpg";
+        displayName = "AVI P2 Pilot";
+        editorSubcategory = "BNA_KC_SubCat_Crewmen";
+        editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\Phase2_Pilot.jpg";
 
         uniformClass = "BNA_KC_Uniform_Pilot";
         hiddenSelectionsTextures[] =
@@ -145,18 +145,18 @@ class CfgVehicles
         };
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Phase2_Pilot", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Phase2_Pilot", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Phase2_Pilot", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Phase2_Pilot", "BNA_KC_Vest_Basic", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
     };
 
     class BNA_KC_Unit_Phase2_Pilot_Officer: BNA_KC_Unit_Phase2_Pilot
     {
-        displayName = "[KC] AVI P2 Pilot (Officer)";
-        editorPreview = "\BNA_KC_Gear\Aviation\Data\Textures\Previews\Phase2_Pilot_Officer.jpg";
+        displayName = "AVI P2 Pilot (Officer)";
+        editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\Phase2_Pilot_Officer.jpg";
 
         uniformClass = "BNA_KC_Uniform_Pilot_Officer";
         hiddenSelectionsTextures[] =
@@ -167,44 +167,29 @@ class CfgVehicles
         };
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Phase2_Pilot_Officer", "BNA_KC_Vest_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Phase2_Pilot_Officer", "BNA_KC_Vest_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Phase2_Pilot_Officer", "BNA_KC_Vest_Officer", "lsd_gar_p2Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Phase2_Pilot_Officer", "BNA_KC_Vest_Officer", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
     };
 
     class BNA_KC_Unit_Phase1_Base;
     class BNA_KC_Unit_Phase1_Pilot: BNA_KC_Unit_Phase1_Base
     {
-        displayName = "[KC] AVI P1 Pilot";
-        editorSubcategory = "BNA_KC_Aviation";
-        editorPreview = "\BNA_KC_Gear\Aviation\Data\Textures\Previews\Phase1_Pilot.jpg";
+        displayName = "AVI P1 Pilot";
+        editorSubcategory = "BNA_KC_SubCat_Crewmen";
+        editorPreview = "\BNA_KC_Gear\Aviation\Data\Previews\Phase1_Pilot.jpg";
 
         uniformClass = "BNA_KC_Uniform_Pilot";
         linkedItems[] =
         {
-            "BNA_KC_Helmet_Phase1_Pilot", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Phase1_Pilot", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            "BNA_KC_Helmet_Phase1_Pilot", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", "ItemMap", "SWLB_comlink", "ItemCompass", "TFAR_microdagr"
+            "BNA_KC_Helmet_Phase1_Pilot", "BNA_KC_Vest_Basic", "lsd_gar_p1Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
-    };
-};
-
-
-class CfgEditorSubcategories
-{
-    class BNA_KC_Aviation
-    {
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
-
-        scope = 2;
-        scopeCurator = 2;
-
-        displayName = "Aviation";
     };
 };

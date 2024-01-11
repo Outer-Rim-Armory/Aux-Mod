@@ -7,10 +7,15 @@ class CfgPatches
         requiredVersion = 1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
             "BNA_KC_Gear_Infantry",
+            "BNA_KC_Gear_Airborne",
+            "BNA_KC_Gear_Engineers",
             "BNA_KC_Gear_Armored",
             "BNA_KC_Gear_Aviation",
-            "BNA_KC_Gear_SpecialForces"
+            "BNA_KC_Gear_Commandos",
+            "BNA_KC_Gear_SpecialForces",
+            "BNA_KC_Gear_Jedi"
         };
         units[] =
         {
@@ -21,6 +26,8 @@ class CfgPatches
             "BNA_KC_Unit_Drake",
             "BNA_KC_Unit_Fil",
             "BNA_KC_Unit_FilSquad",
+            "BNA_KC_Unit_Howzer_Blue",
+            "BNA_KC_Unit_Howzer_Brown",
             "BNA_KC_Unit_Joe",
             "BNA_KC_Unit_Keeli",
             "BNA_KC_Unit_Ponds",
@@ -52,8 +59,11 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Dexus_Bacta",
             "BNA_KC_Helmet_Phase1_Drake",
             "BNA_KC_Helmet_Phase1_Drake_Bacta",
+            "BNA_KC_Helmet_Phase1_Fil",
             "BNA_KC_Helmet_Phase1_Grey",
             "BNA_KC_Helmet_Phase1_Hazard",
+            "BNA_KC_Helmet_Phase1_Howzer_Blue",
+            "BNA_KC_Helmet_Phase1_Howzer_Brown",
             "BNA_KC_Helmet_Phase1_Jaws",
             "BNA_KC_Helmet_Phase1_Jester",
             "BNA_KC_Helmet_Phase1_Joe",
@@ -65,6 +75,8 @@ class CfgPatches
             "BNA_KC_Helmet_Phase1_Ox",
             "BNA_KC_Helmet_Phase1_Patriot",
             "BNA_KC_Helmet_Phase1_Ponds",
+            "BNA_KC_Helmet_Phase1_Rat",
+            "BNA_KC_Helmet_Phase1_Rat_Crimson",
             "BNA_KC_Helmet_Phase1_Rev",
             "BNA_KC_Helmet_Phase1_Rodger",
             "BNA_KC_Helmet_Phase1_Sin",
@@ -86,6 +98,9 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Grey",
             "BNA_KC_Helmet_Phase2_Harry",
             "BNA_KC_Helmet_Phase2_Hazard",
+            "BNA_KC_Helmet_Phase2_Howzer_Blue",
+            "BNA_KC_Helmet_Phase2_Howzer_Brown",
+            "BNA_KC_Helmet_Phase2_Jackal",
             "BNA_KC_Helmet_Phase2_Jaws",
             "BNA_KC_Helmet_Phase2_Jester",
             "BNA_KC_Helmet_Phase2_Joe",
@@ -94,6 +109,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Keeli_Crimson",
             "BNA_KC_Helmet_Phase2_Lou",
             "BNA_KC_Helmet_Phase2_Lou_Plasma",
+            "BNA_KC_Helmet_Phase2_Leon",
             "BNA_KC_Helmet_Phase2_Ox",
             "BNA_KC_Helmet_Phase2_Patriot",
             "BNA_KC_Helmet_Phase2_Ponds",
@@ -101,6 +117,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Rev",
             "BNA_KC_Helmet_Phase2_Rodger",
             "BNA_KC_Helmet_Phase2_Sage",
+            "BNA_KC_Helmet_Phase2_Scvrpio",
             "BNA_KC_Helmet_Phase2_Sogi",
             "BNA_KC_Helmet_Phase2_Splashdown",
             "BNA_KC_Helmet_Phase2_Star",
@@ -109,6 +126,7 @@ class CfgPatches
             "BNA_KC_Helmet_Phase2_Sytha",
             "BNA_KC_Helmet_Phase2_Tugz",
             "BNA_KC_Helmet_Phase2_Tyrant",
+            "BNA_KC_Helmet_Phase2_Tyrant_Crimson",
             "BNA_KC_Helmet_Phase2_Vortex",
             "BNA_KC_Helmet_Phase2_Woods",
 
@@ -145,8 +163,10 @@ class CfgPatches
             "BNA_KC_Helmet_ARC_Hagrid",
             "BNA_KC_Helmet_ARC_Hagrid_Plasma",
             "BNA_KC_Helmet_ARC_Tyrant",
+            "BNA_KC_Helmet_ARC_Tyrant_Crimson",
             "BNA_KC_Helmet_ARF_Patriot",
             "BNA_KC_Helmet_ARF_Sin",
+            "BNA_KC_Helmet_ARF_Tugz",
             "BNA_KC_Helmet_BARC_Rat",
             "BNA_KC_Helmet_BARC_Rat_Crimson",
 
@@ -157,6 +177,8 @@ class CfgPatches
             "BNA_KC_Uniform_Drake",
             "BNA_KC_Uniform_Fil",
             "BNA_KC_Uniform_FilSquad",
+            "BNA_KC_Uniform_Howzer_Blue",
+            "BNA_KC_Uniform_Howzer_Brown",
             "BNA_KC_Uniform_Joe",
             "BNA_KC_Uniform_Keeli",
             "BNA_KC_Uniform_Ponds",
@@ -175,6 +197,7 @@ class CfgPatches
             "BNA_KC_Vest_Officer_Keeli",
             "BNA_KC_Vest_Officer_Ponds",
             "BNA_KC_Vest_Officer_Rat",
+            "BNA_KC_Vest_WO_Howzer",
 
             // NVGs
             "BNA_KC_NVG_Officer_Keeli"

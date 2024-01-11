@@ -7,12 +7,16 @@ class CfgPatches
         requiredVersion = 0.1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
 			"3as_GNK_Prop",
                 // Gonk
             "3AS_Prop_Terminals",
                 // Terminal
-            "RD501_patch_fx7_droid"
+            "RD501_patch_fx7_droid",
                 // Model of FX-7
+            "cba_xeh"
+                // XEH
         };
         units[] =
 		{

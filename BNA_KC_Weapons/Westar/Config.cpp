@@ -47,8 +47,8 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] Westar-M5 (Base)";
-        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
         baseWeapon = "BNA_KC_WestarM5_Base";
+        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
 
         modes[] = {"Single", "Burst", "FullAuto"};
         muzzles[] = {"this"};

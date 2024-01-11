@@ -7,9 +7,11 @@ class CfgPatches
         requiredVersion = 1;
         requiredAddons[] =
         {
+            "BNA_KC_Core",
+                // Core Addon
             "BNA_KC_Gear_Infantry",
-                // Base KC Unit
-                // Officer Pauldron Texture (For ARC Vest)
+                // Base unit, uniform, etc.
+                // Officer pauldron texture
             "ls_armor_bluefor",
                 // ARF Helm
                 // BARC Helm
@@ -27,6 +29,7 @@ class CfgPatches
             // Units
             "BNA_KC_Unit_ARC",
             "BNA_KC_Unit_ARC_Night",
+            "BNA_KC_Unit_ARC_Imperial",
             "BNA_KC_Unit_ARF",
             "BNA_KC_Unit_BARC",
 
@@ -41,6 +44,7 @@ class CfgPatches
             "BNA_KC_Helmet_ARC_CamoGrey",
             "BNA_KC_Helmet_ARC_v2",
             "BNA_KC_Helmet_ARC_Night",
+            "BNA_KC_Helmet_ARC_Imperial",
             "BNA_KC_Helmet_Phase1_ARC",
             "BNA_KC_Helmet_ARF",
             "BNA_KC_Helmet_ARF_CamoBrown",
@@ -51,11 +55,19 @@ class CfgPatches
             // Uniforms
             "BNA_KC_Uniform_ARC",
             "BNA_KC_Uniform_ARC_Night",
+            "BNA_KC_Uniform_ARC_Imperial",
             "BNA_KC_Uniform_ARF",
 
             // Vests
             "BNA_KC_Vest_ARC",
-            "BNA_KC_Vest_ARC_Light"
+            "BNA_KC_Vest_ARC_Light",
+            "BNA_KC_Vest_Phase1Geo_ARC_Lieutenant",
+            "BNA_KC_Vest_Phase1Geo_ARC_Captain",
+            "BNA_KC_Vest_ARC_v2",
+            "BNA_KC_Vest_ARF",
+            "BNA_KC_Vest_ForceRecon",
+            "BNA_KC_Vest_ForceRecon_NCO",
+            "BNA_KC_Vest_ForceRecon_Officer"
         };
     };
 };
