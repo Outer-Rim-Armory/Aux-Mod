@@ -9,7 +9,7 @@ class CfgVehicles
     {
         armor = 2;
         armorStructural = 3;
-        explosionShielding = 0.3
+        explosionShielding = 0.3;
         impactDamageMultiplier = 0.5;
         minTotalDamageThreshold = 0.001;
 
