@@ -186,4 +186,18 @@ class CfgVehicles
             /*QCLASS(CIS_Vest_Droid_BX), */"JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
         };
     };
+
+    class CLASS(AAT_Base);
+    class CLASS(AAT_CIS): CLASS(AAT_Base)
+    {
+        SCOPE_PUBLIC;
+
+        faction = QCLASS(Faction_CIS);
+
+        crew = QCLASS(CIS_Unit_Droid_B1_Crew);
+        typicalCargo[] = {QCLASS(CIS_Unit_Droid_B1_Crew)};
+
+        hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\CIS_AAT_CO.paa"};
+        editorPreview = QPATHTOEF(vehicles,land\aat\data\previews\CLASS(AAT_Blue).jpg);
+    };
 };

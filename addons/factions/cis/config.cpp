@@ -19,7 +19,8 @@ class CfgPatches
             QCLASS(CIS_Unit_Droid_Base),
             QCLASS(CIS_Unit_Droid_B1),
             QCLASS(CIS_Unit_Droid_B1_Crew),
-            QCLASS(CIS_Unit_Droid_BX)
+            QCLASS(CIS_Unit_Droid_BX),
+            QCLASS(AAT_CIS)
         };
         weapons[] =
         {
