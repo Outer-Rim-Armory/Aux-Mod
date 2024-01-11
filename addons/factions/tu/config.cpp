@@ -1,0 +1,72 @@
+#include "script_component.hpp"
+
+class CfgPatches
+{
+    class SUBADDON
+    {
+        author = "Keeli Company Aux Team";
+        name = COMPONENT_NAME;
+        addonRootClass = QUOTE(ADDON);
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] =
+        {
+            QUOTE(ADDON),
+            "sc_equipment"
+        };
+        units[] =
+        {
+            QCLASS(TU_Unit_Base),
+            QCLASS(TU_Unit_Rifleman),
+            QCLASS(TU_Unit_Rifleman_Shield),
+            QCLASS(TU_Unit_AssaultHeavy),
+            QCLASS(TU_Unit_AssaultMedium),
+            QCLASS(TU_Unit_AT),
+            QCLASS(TU_Unit_AA),
+            QCLASS(TU_Unit_SL),
+            QCLASS(TU_Unit_Melee),
+            QCLASS(TU_Backpack),
+            QCLASS(TU_Backpack_Predef_Rifleman),
+            QCLASS(TU_Backpack_Heavy),
+            QCLASS(TU_Backpack_Heavy_Predef_AT),
+            QCLASS(TU_Backpack_Heavy_Predef_AA),
+            QCLASS(TU_Backpack_Assault),
+            QCLASS(TU_Backpack_Assault_Predef_Heavy),
+            QCLASS(TU_Backpack_Assault_Predef_Medium),
+            QCLASS(TU_Backpack_RTO),
+            QCLASS(TU_Backpack_RTO_Predef_SL),
+            QCLASS(AAT_TU),
+            QCLASS(AAT_Heavy_TU),
+            QCLASS(AAT_King_TU),
+            QCLASS(Plesioth_TU),
+            QCLASS(Conga_IFV_TU),
+            QCLASS(Conga_MGS_TU),
+            QCLASS(AST_TU),
+            QCLASS(Ogre_TU),
+            QCLASS(Ogre_Armed_TU),
+            QCLASS(Vespoid_TU),
+            QCLASS(Vespoid_Armed_TU),
+            QCLASS(Rathian_CAP_TU),
+            QCLASS(Rathian_CAS_TU)
+        };
+        weapons[] =
+        {
+            QCLASS(TU_Helmet),
+            QCLASS(TU_Helmet_Assault),
+            QCLASS(TU_Helmet_Visor),
+            QCLASS(TU_Helmet_Visor_Goggles),
+            QCLASS(TU_Helmet_Heavy),
+            QCLASS(TU_Uniform),
+            QCLASS(TU_Vest),
+            QCLASS(TU_Vest_Medium),
+            QCLASS(TU_Vest_AssaultMedium),
+            QCLASS(TU_Vest_AssaultHeavy)
+        };
+        VERSION_CONFIG;
+
+        skipWhenMissingDependencies = TRUE;
+    };
+};
+
+#include "CfgVehicles.hpp"
+#include "CfgWeapons.hpp"
+#include "CfgFactionClasses.hpp"
