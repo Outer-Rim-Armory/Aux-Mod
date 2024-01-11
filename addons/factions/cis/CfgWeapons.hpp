@@ -7,7 +7,6 @@ class CfgWeapons
     };
     class CLASS(CIS_Uniform_Base): CLASS(OPFOR_Uniform_Base)
     {
-        EGVAR(medical,canBleed) = FALSE;
         class ItemInfo: ItemInfo
         {
 
@@ -18,6 +17,7 @@ class CfgWeapons
         JLTS_isDroid = TRUE;
         JLTS_hasEMPProtection = FALSE;
         JLTS_deathSounds = "DeathDroid";
+        EGVAR(medical,canBleed) = FALSE;
 
         model = "\MRC\JLTS\characters\DroidArmor\DroidUniformB1.p3d";
         picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
@@ -27,6 +27,18 @@ class CfgWeapons
             mass = 40;
             uniformClass = QCLASS(CIS_Unit_Droid_Base);
             containerClass = "Supply150";
+        };
+    };
+
+    class CLASS(CIS_Uniform_Droid_B1): CLASS(CIS_Uniform_Droid_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[CIS] B1 Battle Droid";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(CIS_Unit_Droid_B1);
         };
     };
 

@@ -7,6 +7,9 @@ class CfgVehicles
     };
     class CLASS(CIS_Unit_Droid_Base): CLASS(CIS_Unit_Base)
     {
+        model = "\MRC\JLTS\characters\DroidArmor\DroidUniformB1.p3d";
+        hiddenSelections[] = {"camo1"};
+
         armor = 2;
         armorStructural = 3;
         explosionShielding = 0.3;
@@ -17,6 +20,43 @@ class CfgVehicles
 
         impactEffectsBlood = "ImpactMetal";
         impactEffectsNoBlood = "ImpactMetal";
+
+        weapons[] =
+        {
+            QCLASS(E5),
+            "",
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] =
+        {
+            QCLASS(E5),
+            "",
+            "Throw",
+            "Put"
+        };
+
+        magazines[] =
+        {
+            ITEM_5(QCLASS(Mag_100rnd_E5))/*,
+            ITEM_2("ls_mag_classC_thermalDet"),
+            ITEM_3("3AS_SmokeWhite")*/
+        };
+        respawnMagazines[] =
+        {
+            ITEM_5(QCLASS(Mag_100rnd_E5))/*,
+            ITEM_2("ls_mag_classC_thermalDet"),
+            ITEM_3("3AS_SmokeWhite")*/
+        };
+
+        linkedItems[] =
+        {
+            "JLTS_NVG_droid_chip_1", "SWLB_comlink_droid", LINKED_ITEMS
+        };
+        respawnLinkedItems[] =
+        {
+            "JLTS_NVG_droid_chip_1", "SWLB_comlink_droid", LINKED_ITEMS
+        };
 
         class SoundBleeding {breath[] = {};};
         class SoundBreath {breath[] = {};};
@@ -70,6 +110,22 @@ class CfgVehicles
         class SoundInjured {breath[] = {};};
         class SoundRecovered {breath[] = {};};
     };
+
+    class CLASS(CIS_Unit_Droid_B1): CLASS(CIS_Unit_Droid_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "B1 Battle Droid";
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1);
+
+        editorSubcategory = QCLASS(EdSubCat_Infantry);
+        editorPreview = "\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
+
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"};
+
+        backpack = "JLTS_B1_backpack";
+    };
+
     class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base)
     {
         SCOPE_PUBLIC;
@@ -81,33 +137,17 @@ class CfgVehicles
         uniformClass = QCLASS(CIS_Uniform_Droid_BX);
 
         model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
-        hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
-
-        weapons[] =
-        {
-            QCLASS(E5),
-            "",
-            "Throw",
-            "Put"
-        };
-        respawnWeapons[] =
-        {
-            QCLASS(E5),
-            "",
-            "Throw",
-            "Put"
-        };
 
         magazines[] =
         {
-            ITEM_11(QCLASS(Mag_100rnd_E5)),
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("3AS_SmokeWhite")
         };
         respawnMagazines[] =
         {
-            ITEM_11(QCLASS(Mag_100rnd_E5)),
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("3AS_SmokeWhite")
         };
