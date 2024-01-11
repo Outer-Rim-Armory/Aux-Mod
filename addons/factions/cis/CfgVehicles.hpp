@@ -28,6 +28,10 @@ class CfgVehicles
         displayName = "BX Commando Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_BX);
 
+        model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
+
         weapons[] =
         {
             QCLASS(E5),
