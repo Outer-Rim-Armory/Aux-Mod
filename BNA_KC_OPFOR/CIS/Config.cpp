@@ -102,7 +102,7 @@ class CfgWeapons
     };
     class BNA_KC_CIS_Vest_BX_Droid_Melee: BNA_KC_CIS_Vest_BX_Droid
     {
-        displayName = "[CIS] BX Commando Droid (Melee)";
+        displayName = "[CIS] BX Commando Droid [Melee Vest]";
         model = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
         class ItemInfo: ItemInfo
         {
@@ -122,7 +122,6 @@ class CfgWeapons
     };
     class BNA_KC_CIS_Vest_BX_Droid_Melee_Actor: BNA_KC_CIS_Vest_BX_Droid_Actor
     {
-        displayName = "[CIS] BX Commando Droid (Actor, Melee)";
         model = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
         class ItemInfo: ItemInfo
         {
@@ -464,14 +463,14 @@ class CfgVehicles
         weapons[] =
         {
             "BNA_KC_E5",
-            "",
+            "SWLW_RG4D",
             "Throw",
             "Put"
         };
         respawnWeapons[] =
         {
             "BNA_KC_E5",
-            "",
+            "SWLW_RG4D",
             "Throw",
             "Put"
         };
@@ -479,6 +478,7 @@ class CfgVehicles
         {
             // Ammo
             ITEM_11("Aux12thFleet_Mag_E5"),
+            ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             // Smokes
@@ -488,6 +488,7 @@ class CfgVehicles
         {
             // Ammo
             ITEM_11("Aux12thFleet_Mag_E5"),
+            ITEM_2("SWLW_RG4D_Mag"),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             // Smokes
@@ -522,11 +523,6 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
     };
-
-    // ┌───────────────────┐
-    // │      Vehicles     │
-    // └───────────────────┘
-    #include "CfgVehicles.hpp"
 };
 
 
@@ -541,5 +537,30 @@ class CfgFactionClasses
         scopeCurator = 2;
 
         displayName = "[KC] CIS";
+    };
+};
+
+
+class CfgEditorSubcategories
+{
+    class BNA_KC_SubCat_CIS_Infantry
+    {
+        dlc = "BNA_KC";
+        author = "SweMonkey and DartRuffian";
+
+        scope = 2;
+        scopeCurator = 2;
+
+        displayName = "Infantry";
+    };
+
+    class BNA_KC_SubCat_CIS_SpecOps: BNA_KC_SubCat_CIS_Infantry
+    {
+        displayName = "Spec Ops";
+    };
+
+    class BNA_KC_SubCat_CIS_Tanks: BNA_KC_SubCat_CIS_Infantry
+    {
+        displayName = "Tanks";
     };
 };
