@@ -17,6 +17,58 @@ class CfgVehicles
 
         impactEffectsBlood = "ImpactMetal";
         impactEffectsNoBlood = "ImpactMetal";
+
+        class SoundBleeding {breath[] = {};};
+        class SoundBreath {breath[] = {};};
+        class SoundBurning {breath[] = {};};
+        class SoundChoke {breath[] = {};};
+        class SoundDrown {breath[] = {};};
+        class SoundEnvironExt
+        {
+            generic[] =
+            {
+                {"walk", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 15}},
+                {"walk", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 15}},
+                {"walk", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 15}},
+                {"walk", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 15}},
+                {"tactical", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 15}},
+                {"tactical", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 15}},
+                {"tactical", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 15}},
+                {"tactical", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 15}},
+                {"run", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 30}},
+                {"run", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 30}},
+                {"run", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 30}},
+                {"run", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 30}},
+                {"sprint", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 45}},
+                {"sprint", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 45}},
+                {"sprint", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 45}},
+                {"sprint", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 45}}
+            };
+        };
+        class SoundEquipment
+        {
+            soldier[] =
+            {
+                {"walk", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 15}},
+                {"walk", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 15}},
+                {"walk", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 15}},
+                {"walk", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 15}},
+                {"tactical", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 15}},
+                {"tactical", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 15}},
+                {"tactical", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 15}},
+                {"tactical", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 15}},
+                {"run", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 30}},
+                {"run", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 30}},
+                {"run", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 30}},
+                {"run", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 30}},
+                {"sprint", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 45}},
+                {"sprint", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 45}},
+                {"sprint", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 45}},
+                {"sprint", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 45}}
+            };
+        };
+        class SoundInjured {breath[] = {};};
+        class SoundRecovered {breath[] = {};};
     };
     class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base)
     {
