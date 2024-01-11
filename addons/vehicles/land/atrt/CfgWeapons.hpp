@@ -11,6 +11,8 @@ class CfgWeapons
         JLTS_hasStunProtection = TRUE;
         picture = QPATHTOF(land\atrt\data\ui\ATRT_ca.paa);
 
+        EGVAR(medical,canBleed) = FALSE;
+
         class ItemInfo: ItemInfo
         {
             uniformClass = QCLASS(ATRT);

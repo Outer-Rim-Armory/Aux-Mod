@@ -7,6 +7,7 @@ class CfgWeapons
     };
     class CLASS(CIS_Uniform_Base): CLASS(OPFOR_Uniform_Base)
     {
+        EGVAR(medical,canBleed) = FALSE;
         class ItemInfo: ItemInfo
         {
 
