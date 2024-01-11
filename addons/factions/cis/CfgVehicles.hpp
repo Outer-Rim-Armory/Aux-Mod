@@ -179,11 +179,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            /*QCLASS(CIS_Vest_Droid_BX), */"JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
+            QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
         };
         respawnLinkedItems[] =
         {
-            /*QCLASS(CIS_Vest_Droid_BX), */"JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
+            QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
         };
     };
 

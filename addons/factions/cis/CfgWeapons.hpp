@@ -65,4 +65,47 @@ class CfgWeapons
             uniformClass = QCLASS(CIS_Unit_Droid_BX);
         };
     };
+
+    class Vest_NoCamo_Base;
+    class V_PlateCarrier1_rgr: Vest_NoCamo_Base
+    {
+        class ItemInfo: ItemInfo
+        {
+            class HitpointsProtectionInfo
+            {
+                class Abdomen;
+                class Body;
+                class Chest;
+                class Diaphragm;
+            };
+        };
+    };
+    class ls_redforVest_base: V_PlateCarrier1_rgr {};
+    class CLASS(OPFOR_Vest_Base): ls_redforVest_base {};
+    class CLASS(CIS_Vest_Droid_BX): CLASS(OPFOR_Vest_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[CIS] BX Commando Droid";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
+            class HitpointsProtectionInfo: HitpointsProtectionInfo
+            {
+                class Legs
+                {
+                    hitpointName = "HitLegs";
+                    armor = 6;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
+
+    class CLASS(Vest_Basic);
+    class CLASS(CIS_Vest_Droid_BX_Actor): CLASS(Vest_Basic)
+    {
+        displayName = "[CIS] BX Commando Droid (Actor)";
+    };
 };

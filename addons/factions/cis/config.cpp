@@ -11,6 +11,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
+            QCLASS(armor),
             "JLTS_characters_DroidArmor"
         };
         units[] =
@@ -28,7 +29,9 @@ class CfgPatches
             QCLASS(CIS_Uniform_Droid_Base),
             QCLASS(CIS_Uniform_Droid_B1),
             QCLASS(CIS_Uniform_Droid_B1_Crew),
-            QCLASS(CIS_Uniform_Droid_BX)
+            QCLASS(CIS_Uniform_Droid_BX),
+            QCLASS(CIS_Vest_Droid_BX),
+            QCLASS(CIS_Vest_Droid_BX_Actor)
         };
         VERSION_CONFIG;
     };
