@@ -1,7 +1,13 @@
+// Global toggle for compile cache
+// #define DISABLE_COMPILE_CACHE
+
 #ifdef __A3_DEBUG__
     #include "\ORA\BNA_KC\addons\core\script_debug.hpp"
 #endif
 #include "\x\cba\addons\main\script_macros_common.hpp"
+
+#define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
+#define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
 
 #undef PREP
 #ifdef DISABLE_COMPILE_CACHE
