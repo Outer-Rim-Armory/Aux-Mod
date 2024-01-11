@@ -1,5 +1,12 @@
 #define ATRT_HEALTH 50
 
+#define SKIN_SWITCHER class GVAR(switchSkin) \
+{ \
+    displayName = "Switch Vehicle Skin"; \
+    condition = QUOTE(call FUNC(skin_canSwitch)); \
+    insertChildren = QUOTE(call FUNC(skin_insertChildren)); \
+}
+
 #define HUD_CHANGER class LS_HUD_Changer \
 { \
     displayName = "Change HUD Color"; \
