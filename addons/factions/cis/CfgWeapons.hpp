@@ -29,4 +29,16 @@ class CfgWeapons
             containerClass = "Supply150";
         };
     };
+
+    class CLASS(CIS_Uniform_Droid_BX): CLASS(CIS_Uniform_DroidBase)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[CIS] BX Commando Droid";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(CIS_Unit_Droid_BX);
+        };
+    };
 };
