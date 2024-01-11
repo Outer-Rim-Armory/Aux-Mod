@@ -2,4 +2,6 @@
 
 call FUNC(registerPreset);
 
-["acex_fortify_objectPlaced", LINKFUNC(objectPlaced)] call CBA_fnc_addEventHandler;
+["CBA_settingsInitialized", {
+	["acex_fortify_objectPlaced", LINKFUNC(objectPlaced)] call CBA_fnc_addEventHandler;
+}] call CBA_fnc_addEventHandler;
