@@ -126,6 +126,21 @@ class CfgVehicles
         backpack = "JLTS_B1_backpack";
     };
 
+    class CLASS(CIS_Unit_Droid_B1_Crew): CLASS(CIS_Unit_Droid_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "B1 Crew Droid";
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Crew);
+
+        editorSubcategory = QCLASS(EdSubCat_Crewmen);
+        editorPreview = "\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_Crew.jpg";
+
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_crew_co.paa"};
+
+        backpack = "JLTS_B1_backpack";
+    };
+
     class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base)
     {
         SCOPE_PUBLIC;

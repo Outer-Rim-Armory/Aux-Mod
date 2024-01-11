@@ -42,6 +42,18 @@ class CfgWeapons
         };
     };
 
+    class CLASS(CIS_Uniform_Droid_B1_Crew): CLASS(CIS_Uniform_Droid_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[CIS] B1 Crew Droid";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(CIS_Unit_Droid_B1_Crew);
+        };
+    };
+
     class CLASS(CIS_Uniform_Droid_BX): CLASS(CIS_Uniform_Droid_Base)
     {
         SCOPE_PUBLIC;
