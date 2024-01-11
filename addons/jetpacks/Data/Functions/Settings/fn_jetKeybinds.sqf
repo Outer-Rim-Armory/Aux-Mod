@@ -2,7 +2,7 @@
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"  // Key Codes
 
 [
-    ["Keeli Company Aux Mod", "Jetpacks"],
+    ["Keeli Company Auxillary Mod", "Jetpacks"],
     "BNA_KC_Jetpacks_key_ActivateJetpack",
     ["Activate Jetpack", "Accellerates the user upward."],
     {
@@ -35,7 +35,7 @@
 ] call CBA_fnc_AddKeybind;
 
 [
-    ["Keeli Company Aux Mod", "Jetpacks"],
+    ["Keeli Company Auxillary Mod", "Jetpacks"],
     "BNA_KC_Jetpacks_key_SlowFall",
     ["Activate Slow Fall", "Slows the user down while falling."],
     {
@@ -55,7 +55,7 @@
 ] call CBA_fnc_AddKeybind;
 
 [
-    ["Keeli Company Aux Mod", "Jetpacks"],
+    ["Keeli Company Auxillary Mod", "Jetpacks"],
     "BNA_KC_Jetpacks_key_Hover",
     ["Toggle Hover", "Puts the user into a hover state. Only activates if not touching the ground."],
     {

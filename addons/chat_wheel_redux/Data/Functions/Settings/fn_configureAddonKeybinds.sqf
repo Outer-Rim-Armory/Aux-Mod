@@ -3,7 +3,7 @@
 #include "\a3\ui_f\hpp\defineDIKCodes.inc"  // Key Codes
 
 [
-    ["Keeli Company Aux Mod", "Chat Wheel Menu"],
+    ["Keeli Company Auxillary Mod", "Chat Wheel Menu"],
     "CWR_OpenMenu",
     ["Open Menu", "Opens the custom chat menu."],
     {
