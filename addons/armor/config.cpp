@@ -1,11 +1,4 @@
 #include "script_component.hpp"
-#include "CfgFactionClasses.hpp"
-#include "CfgEditorSubcategories.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgUnitInsignia.hpp"
-#include "CfgEventHandlers.hpp"
-
 
 class CfgPatches
 {
@@ -396,3 +389,10 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgFactionClasses.hpp"
+#include "CfgEditorSubcategories.hpp"
+#include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgUnitInsignia.hpp"
+#include "CfgEventHandlers.hpp"

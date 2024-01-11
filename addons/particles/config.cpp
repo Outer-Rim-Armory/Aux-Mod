@@ -1,8 +1,4 @@
 #include "script_component.hpp"
-#include "CfgParticles.hpp"
-#include "CfgCloudlets.hpp"
-#include "CfgLights.hpp"
-
 
 class CfgPatches
 {
@@ -20,3 +16,7 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgParticles.hpp"
+#include "CfgCloudlets.hpp"
+#include "CfgLights.hpp"

@@ -1,6 +1,4 @@
 #include "script_component.hpp"
-#include "CfgVehicles.hpp"
-
 
 class CfgPatches
 {
@@ -23,3 +21,5 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgVehicles.hpp"

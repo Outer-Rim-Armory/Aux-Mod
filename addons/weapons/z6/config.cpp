@@ -1,8 +1,4 @@
 #include "script_component.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgMagazines.hpp"
-#include "CfgSoundShaders.hpp"
-#include "CfgSoundSets.hpp"
 
 class CfgPatches
 {
@@ -26,3 +22,8 @@ class CfgPatches
         };
     };
 };
+
+#include "CfgWeapons.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgSoundShaders.hpp"
+#include "CfgSoundSets.hpp"

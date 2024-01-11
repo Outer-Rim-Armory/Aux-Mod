@@ -1,14 +1,4 @@
 #include "script_component.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgMagazines.hpp"
-#include "CfgMagazineWells.hpp"
-#include "CfgAmmo.hpp"
-#include "CfgSoundShaders.hpp"
-#include "CfgSoundSets.hpp"
-#include "CfgEventHandlers.hpp"
-#include "CfgEffects.hpp"
-#include "CfgCloudlets.hpp"
-
 
 class CfgPatches
 {
@@ -34,3 +24,13 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgWeapons.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgMagazineWells.hpp"
+#include "CfgAmmo.hpp"
+#include "CfgSoundShaders.hpp"
+#include "CfgSoundSets.hpp"
+#include "CfgEventHandlers.hpp"
+#include "CfgEffects.hpp"
+#include "CfgCloudlets.hpp"

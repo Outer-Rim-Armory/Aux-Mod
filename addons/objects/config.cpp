@@ -1,8 +1,4 @@
 #include "script_component.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgEditorSubcategories.hpp"
-#include "CfgEventHandlers.hpp"
-
 
 class CfgPatches
 {
@@ -37,3 +33,7 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgVehicles.hpp"
+#include "CfgEditorSubcategories.hpp"
+#include "CfgEventHandlers.hpp"

@@ -1,6 +1,4 @@
 #include "script_component.hpp"
-#include "CfgEventHandlers.hpp"
-
 
 class CfgPatches
 {
@@ -21,3 +19,5 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgEventHandlers.hpp"

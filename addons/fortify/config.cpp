@@ -1,7 +1,4 @@
 #include "script_component.hpp"
-#include "CfgEventHandlers.hpp"
-#include "ACEX_Fortify_Presets.hpp"
-
 
 class CfgPatches
 {
@@ -20,3 +17,6 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgEventHandlers.hpp"
+#include "ACEX_Fortify_Presets.hpp"

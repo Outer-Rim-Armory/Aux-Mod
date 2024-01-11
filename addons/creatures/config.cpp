@@ -1,8 +1,4 @@
 #include "script_component.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgVehicles.hpp"
-#include "CfgFactionClasses.hpp"
-
 
 class CfgPatches
 {
@@ -26,3 +22,7 @@ class CfgPatches
         skipWhenMissingDependencies = TRUE;
     };
 };
+
+#include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgFactionClasses.hpp"

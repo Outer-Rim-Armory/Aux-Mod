@@ -1,8 +1,4 @@
 #include "script_component.hpp"
-#include "CfgSounds.hpp"
-#include "CfgSoundShaders.hpp"
-#include "CfgSoundSets.hpp"
-
 
 class CfgPatches
 {
@@ -21,3 +17,7 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgSounds.hpp"
+#include "CfgSoundShaders.hpp"
+#include "CfgSoundSets.hpp"
