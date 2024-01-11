@@ -37,7 +37,12 @@ class CfgVehicles
         };
     };
 
-    class BTL_Base;
+    class Plane_Fighter_03_dynamicLoadout_base_F;
+    class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F
+    {
+        class ACE_Actions;
+        class ACE_SelfActions;
+    };
     class CLASS(BTLB_YWing): BTL_Base
     {
         GVAR(hasShield) = TRUE;

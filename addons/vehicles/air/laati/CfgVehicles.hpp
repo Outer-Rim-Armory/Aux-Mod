@@ -1,14 +1,14 @@
 class CfgVehicles
 {
-    class B_Heli_Attack_01_base_F;
-    class 3as_laat_Base: B_Heli_Attack_01_base_F
+    class Helicopter_Base_H;
+    class 3AS_LAAT_Base: Helicopter_Base_H
     {
         class ACE_SelfActions;
         class AnimationSources;
         class Turrets;
         class pilotCamera;
     };
-    class CLASS(LAATi_Base): 3as_laat_Base
+    class CLASS(LAATi_Base): 3AS_LAAT_Base
     {
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";

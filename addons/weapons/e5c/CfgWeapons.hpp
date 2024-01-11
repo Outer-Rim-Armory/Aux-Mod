@@ -31,7 +31,7 @@ class CfgWeapons
         class Manual: Mode_FullAuto
         {
             sounds[] = {"StandardSound"};
-            class StandardSound: StandardSound
+            class StandardSound
             {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
