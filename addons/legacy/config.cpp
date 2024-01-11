@@ -30,7 +30,6 @@ class CfgPatches
     class CLASS(Gear_SpecialForces): ADDON {};
     class CLASS(INDEP): ADDON {};
     class CLASS(INDEP_Galtorran): ADDON {};
-    class CLASS(INDEP_Galtorran): ADDON {};
     class CLASS(OPFOR): ADDON {};
     class CLASS(OPFOR_CIS): ADDON {};
     class CLASS(OPFOR_EPF): ADDON {};
