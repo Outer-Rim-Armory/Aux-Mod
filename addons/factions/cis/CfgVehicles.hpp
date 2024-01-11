@@ -5,7 +5,7 @@ class CfgVehicles
     {
         faction = QCLASS(Faction_CIS);
     };
-    class CLASS(CIS_Unit_DroidBase): CLASS(CIS_Unit_Base)
+    class CLASS(CIS_Unit_Droid_Base): CLASS(CIS_Unit_Base)
     {
         armor = 2;
         armorStructural = 3;
@@ -18,7 +18,7 @@ class CfgVehicles
         impactEffectsBlood = "ImpactMetal";
         impactEffectsNoBlood = "ImpactMetal";
     };
-    class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_DroidBase)
+    class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base)
     {
         SCOPE_PUBLIC;
 

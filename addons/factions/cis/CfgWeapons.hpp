@@ -13,7 +13,7 @@ class CfgWeapons
 
         };
     };
-    class CLASS(CIS_Uniform_DroidBase): CLASS(CIS_Uniform_Base)
+    class CLASS(CIS_Uniform_Droid_Base): CLASS(CIS_Uniform_Base)
     {
         JLTS_isDroid = TRUE;
         JLTS_hasEMPProtection = FALSE;
@@ -25,12 +25,12 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             mass = 40;
-            uniformClass = QCLASS(CIS_Unit_DroidBase);
+            uniformClass = QCLASS(CIS_Unit_Droid_Base);
             containerClass = "Supply150";
         };
     };
 
-    class CLASS(CIS_Uniform_Droid_BX): CLASS(CIS_Uniform_DroidBase)
+    class CLASS(CIS_Uniform_Droid_BX): CLASS(CIS_Uniform_Droid_Base)
     {
         SCOPE_PUBLIC;
 
