@@ -149,7 +149,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\sc_equipment\data\marine\textures\backpack_co.paa"};
         picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
-    class CLASS(Backpack_Predef_Rifleman): CLASS(TU_Backpack)
+    class CLASS(TU_Backpack_Predef_Rifleman): CLASS(TU_Backpack)
     {
         SCOPE_HIDDEN;
 
