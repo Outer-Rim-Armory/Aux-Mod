@@ -118,7 +118,6 @@ class CfgVehicles
         displayName = "B1 Battle Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1);
 
-        editorSubcategory = QCLASS(EdSubCat_Infantry);
         editorPreview = "\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
 
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"};

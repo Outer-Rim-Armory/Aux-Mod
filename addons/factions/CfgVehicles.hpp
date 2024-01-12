@@ -8,6 +8,8 @@ class CfgVehicles
         displayName = "OPFOR Unit Base";
         uniformClass = "BNA_KC_OPFOR_Uniform_Base";
 
+        editorSubcategory = QCLASS(EdSubCat_Infantry);
+
         modelSides[] = {OPFOR};
 
         weapons[] = {"Throw", "Put"};
