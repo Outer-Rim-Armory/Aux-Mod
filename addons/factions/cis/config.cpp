@@ -37,6 +37,6 @@ class CfgPatches
     };
 };
 
-#include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgFactionClasses.hpp"
