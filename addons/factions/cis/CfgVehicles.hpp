@@ -3,6 +3,7 @@ class CfgVehicles
     class CLASS(OPFOR_Unit_Base);
     class CLASS(CIS_Unit_Base): CLASS(OPFOR_Unit_Base)
     {
+        SCOPE_HIDDEN;
         faction = QCLASS(Faction_CIS);
     };
     class CLASS(CIS_Unit_Droid_Base): CLASS(CIS_Unit_Base)
