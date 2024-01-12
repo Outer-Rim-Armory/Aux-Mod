@@ -136,8 +136,8 @@ class CfgVehicles
         backpack = QCLASS(TU_Backpack_Heavy);
     };
 
-    class CLASS(OPFOR_Backpack_Base);
-    class CLASS(TU_Backpack): CLASS(OPFOR_Backpack_Base)
+    class CLASS(Other_Backpack_Base);
+    class CLASS(TU_Backpack): CLASS(Other_Backpack_Base)
     {
         SCOPE_PUBLIC;
 
@@ -219,7 +219,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_100rnd_E5C),10);
+            MAG_XX(CLASS(Mag_150rnd_E5C),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -230,7 +230,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_100rnd_E5C),10);
+            MAG_XX(CLASS(Mag_150rnd_E5C),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
