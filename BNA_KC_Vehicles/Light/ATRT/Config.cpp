@@ -3,8 +3,6 @@
 #include "..\..\Common\Macros.hpp"
 
 
-class CBA_Extended_EventHandlers_base;
-
 class CfgVehicles
 {
     class 3AS_ATRT_Base;
@@ -19,8 +17,8 @@ class CfgVehicles
         author = "SweMonkey and DartRuffian";
 
         // Scope
-        scope = 1;
-        scopeCurator = 0;
+        scope = 2;
+        scopeCurator = 2;
 
         // Editor Attributes
         faction = "BNA_KC_Faction";
@@ -45,11 +43,6 @@ class CfgVehicles
         // {
         //     "\BNA_KC_Vehicles\Light\ATRT\Data\Textures\Body.paa"
         // };
-        class EventHandlers: EventHandlers
-        {
-            init = "";
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
-        };
 
         class VehicleTransport
         {
