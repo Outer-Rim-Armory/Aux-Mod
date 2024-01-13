@@ -11,7 +11,8 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            "sc_equipment"
+            "sc_equipment",
+            "LFPModels"
         };
         units[] =
         {
@@ -69,5 +70,6 @@ class CfgPatches
 
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgGlasses.hpp"
 #include "CfgGroups.hpp"
 #include "CfgFactionClasses.hpp"

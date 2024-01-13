@@ -5,7 +5,7 @@ class CfgVehicles
     {
         SCOPE_HIDDEN;
         faction = QCLASS(Faction_TU);
-        identityTypes[] = {"LanguageENG_F", "Head_NATO"/*, QCLASS(TechnoUnion)*/};
+        identityTypes[] = {"LanguageENG_F", "Head_NATO", QCLASS(TechnoUnion)};
 
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         uniformClass = QCLASS(TU_Uniform);
