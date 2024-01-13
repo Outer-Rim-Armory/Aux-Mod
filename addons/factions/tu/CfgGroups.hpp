@@ -26,7 +26,7 @@ class CfgGroups
                     };
                     class Object1: Object0
                     {
-                        vehicle = QCLASS(Unit_Rifleman);
+                        vehicle = QCLASS(TU_Unit_Rifleman);
                         rank = "Private";
                         position[] = {5, -5, 0};
                     };
