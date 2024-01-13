@@ -217,4 +217,279 @@ class CfgVehicles
         linkedItems[] = {LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {LINKED_ITEMS_RADIO};
     };
+
+    class CLASS(Other_Backpack_Base);
+    class CLASS(GM_Backpack): CLASS(Other_Backpack_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[GM] Backpack";
+        descriptionshort = "Gal'torran Military Backpack";
+
+        model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+        hiddenSelections[] = {"camo1", "AP_Heavy", "biofoam"};
+        hiddenSelectionsTextures[] = {"\OPTRE_Weapons\Backpacks\data\ruck_black_CO.paa"};
+        picture = "\OPTRE_weapons\backpacks\icons\rucksack_black.paa";
+    };
+    class CLASS(GM_Backpack_Predef_Rifleman): CLASS(GM_Backpack)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(ls_mag_classC_thermalDet,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+        };
+    };
+    class CLASS(GM_Backpack_Predef_Marksman): CLASS(GM_Backpack_Predef_Rifleman)
+    {
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_30rnd_HI12),15);
+            MAG_XX(ls_mag_classC_thermalDet,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+        };
+    };
+
+    class CLASS(GM_Veteran_Backpack): CLASS(GM_Backpack)
+    {
+        displayName = "[GM] Veteran Backpack";
+        maximumLoad = 250;
+        model = "\3AS\3AS_Characters\Commando\3AS_Katarn_BackPack.p3d";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Characters\Commando\data\Katarn_Backpack_Standard_CO.paa"};
+        picture = "\3AS\3AS_Characters\Commando\data\UI\Katarn_Backpack_Unmarked_UI_ca.paa";
+    };
+    class CLASS(GM_Veteran_Backpack_Predef_Rifleman): CLASS(GM_Veteran_Backpack)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(ls_mag_classC_thermalDet,4);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenade_Mag,4);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,1);
+            MAG_XX(JMSLLTE_dioxis_HandGrenade,1);
+        };
+    };
+    class CLASS(GM_Veteran_Backpack_Predef_Marksman): CLASS(GM_Veteran_Backpack_Predef_Rifleman)
+    {
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_30rnd_HI12),15);
+            MAG_XX(ls_mag_classC_thermalDet,4);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenade_Mag,4);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,1);
+            MAG_XX(JMSLLTE_dioxis_HandGrenade,1);
+        };
+    };
+
+    class CLASS(GM_Elite_Backpack): CLASS(GM_Backpack)
+    {
+        displayName = "[GM] Elite Backpack";
+        maximumLoad = 350;
+
+        model = "\SentinelBackpack\SentinelBackpack.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\sc_newequipment2\Sentinel\Night\Back\DefaultMaterial_CO.paa"};
+        picture = "\SentinelBackpack\icon_ar_ca.paa";
+    };
+    class CLASS(GM_Elite_Backpack_Predef_Rifleman): CLASS(GM_Elite_Backpack)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(ls_mag_classB_thermalDet,3);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenadePersonal_Mag,2);
+            MAG_XX(SquadShieldMagazine,2);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,3);
+            MAG_XX(JMSLLTE_dioxis_HandGrenade,3);
+            MAG_XX(CLASS(Grenade_Bacta),1);
+        };
+    };
+    class CLASS(GM_Elite_Backpack_Predef_Marksman): CLASS(GM_Elite_Backpack)
+    {
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_30rnd_HI12),15);
+            MAG_XX(ls_mag_classB_thermalDet,3);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenadePersonal_Mag,2);
+            MAG_XX(SquadShieldMagazine,2);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,3);
+            MAG_XX(JMSLLTE_dioxis_HandGrenade,3);
+            MAG_XX(CLASS(Grenade_Bacta),1);
+        };
+    };
+
+    class CLASS(GM_Backpack_Heavy): CLASS(GM_Backpack)
+    {
+        displayName = "[GM] Heavy Backpack";
+        maximumLoad = 350;
+
+        model = "\OPTRE_weapons\backpacks\ODST_ruck.p3d";
+        hiddenSelections[] = {"camo1", "biofoam"};
+    };
+    class CLASS(GM_Backpack_Heavy_Predef_AT): CLASS(GM_Backpack_Heavy)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(SC_MPML_M_AT,3);
+            MAG_XX(ls_mag_classC_thermalDet,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+        };
+    };
+    class CLASS(GM_Backpack_Heavy_Predef_AA): CLASS(GM_Backpack_Heavy_Predef_AT)
+    {
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(SC_MPML_M_AA,3);
+            MAG_XX(ls_mag_classC_thermalDet,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+        };
+    };
+
+    class CLASS(GM_Veteran_Backpack_Heavy): CLASS(GM_Veteran_Backpack)
+    {
+        displayName = "[GM] Veteran Heavy Backpack";
+        maximumLoad = 450;
+    };
+    class CLASS(GM_Veteran_Backpack_Heavy_Predef_AT): CLASS(GM_Veteran_Backpack_Heavy)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(3AS_JLTS_MK43_AT,2);
+            MAG_XX(ls_mag_classC_thermalDet,4);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenade_Mag,4);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,1);
+            MAG_XX(JMSLLTE_dioxis_HandGrenade,1);
+        };
+    };
+    class CLASS(GM_Veteran_Backpack_Heavy_Predef_AA): CLASS(GM_Veteran_Backpack_Heavy_Predef_AT)
+    {
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(3AS_JLTS_MK39_AA,2);
+            MAG_XX(ls_mag_classC_thermalDet,4);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenade_Mag,4);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,1);
+            MAG_XX(JMSLLTE_dioxis_HandGrenade,1);
+        };
+    };
+
+    class CLASS(GM_Elite_Backpack_Heavy): CLASS(GM_Elite_Backpack)
+    {
+        displayName = "[GM] Elite Heavy Backpack";
+        maximumLoad = 550;
+    };
+    class CLASS(GM_Elite_Backpack_Heavy_Predef_AT): CLASS(GM_Elite_Backpack_Heavy)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(3AS_JLTS_MK43_AT,2);
+            MAG_XX(ls_mag_classB_thermalDet,3);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenadePersonal_Mag,2);
+            MAG_XX(SquadShieldMagazine,2);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,3);
+            MAG_XX(JMSLLTE_dioxis_HandGrenade,3);
+            MAG_XX(CLASS(Grenade_Bacta),1);
+        };
+    };
+    class CLASS(GM_Elite_Backpack_Heavy_Predef_AA): CLASS(GM_Elite_Backpack_Heavy_Predef_AT)
+    {
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(3AS_JLTS_MK39_AA,2);
+            MAG_XX(ls_mag_classC_thermalDet,4);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenade_Mag,4);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,1);
+            MAG_XX(JMSLLTE_dioxis_HandGrenade,1);
+        };
+    };
+
+    class CLASS(GM_Backpack_RTO): CLASS(GM_Backpack)
+    {
+        displayName = "[GM] Radio Backpack";
+
+        model = "\OPTRE_unsc_units\army\rucksack.p3d";
+        hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Addons"};
+        hiddenSelectionsTextures[] = {"\optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_sno_co.paa"};
+        picture = "\OPTRE_weapons\backpacks\icons\icon_b_anprc521_ca.paa";
+
+        maximumLoad = 250;
+    };
+    class CLASS(GM_Backpack_RTO_Predef_SL): CLASS(GM_Backpack_RTO)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(ls_mag_classC_thermalDet,4);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenade_Mag,3);
+        };
+    };
+    class CLASS(GM_Veteran_Backpack_RTO_Predef_SL): CLASS(GM_Backpack_RTO_Predef_SL)
+    {
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(ls_mag_classC_thermalDet,4);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenade_Mag,4);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,1);
+            MAG_XX(JMSLLTE_dioxis_HandGrenade,1);
+        };
+    };
+
+    class CLASS(GM_Elite_Backpack_RTO): CLASS(GM_Backpack_RTO)
+    {
+        displayName = "[GM] Elite Radio Backpack";
+        hiddenSelectionsTextures[] = {"\optre_unsc_units\army\data\soft_backpack_co.paa", "optre_unsc_units\army\data\commopack_blk_co.paa"};
+        maximumLoad = 300;
+    };
+    class CLASS(GM_Elite_Backpack_RTO_Predef_SL): CLASS(GM_Elite_Backpack_RTO)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(ls_mag_classB_thermalDet,3);
+            MAG_XX(SmokeShell,4);
+            MAG_XX(ShieldGrenadePersonal_Mag,2);
+            MAG_XX(SquadShieldMagazine,1);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,3);
+            MAG_XX(JMSLLTE_dioxis_HandGrenade,3);
+            MAG_XX(CLASS(Grenade_Bacta),1);
+        };
+    };
 };
