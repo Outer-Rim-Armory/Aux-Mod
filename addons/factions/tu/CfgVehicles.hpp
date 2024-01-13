@@ -346,8 +346,8 @@ class CfgVehicles
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
     };
 
-    class CLASS(AST_Base);
-    class CLASS(AST_TU): CLASS(AST_Base)
+    class CLASS(ScoutTank_Base);
+    class CLASS(ScoutTank_TU): CLASS(ScoutTank_Base)
     {
         SCOPE_PUBLIC;
 
