@@ -270,4 +270,171 @@ class CfgVehicles
             MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
         };
     };
+
+    class CLASS(AAT_Base);
+    class CLASS(AAT_TU): CLASS(AAT_Base)
+    {
+        SCOPE_PUBLIC;
+
+        faction = QCLASS(Faction_TU);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
+        editorPreview = QPATHTOEF(vehicles,land\aat\data\previews\CLASS(AAT_Tan).jpg);
+    };
+
+    class CLASS(AAT_Heavy_Base);
+    class CLASS(AAT_Heavy_TU): CLASS(AAT_Heavy_Base)
+    {
+        SCOPE_PUBLIC;
+
+        faction = QCLASS(Faction_TU);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class CLASS(AAT_King_Base);
+    class CLASS(AAT_King_TU): CLASS(AAT_King_Base)
+    {
+        SCOPE_PUBLIC;
+
+        faction = QCLASS(Faction_TU);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class BNA_KC_Plesioth_Base;
+    class BNA_KC_Plesioth_TU: BNA_KC_Plesioth_Base
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_TU);
+        editorPreview = QPATHTOEF(vehicles,land\plesioth\data\previews\CLASS(Plesioth_Tan).jpg);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class CLASS(Conga_IFV_Base);
+    class CLASS(Conga_IFV_TU): CLASS(Conga_IFV_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_TU);
+        editorPreview = QPATHTOEF(vehicles,land\conga\data\previews\CLASS(Conga_IFV_Tan).jpg);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class CLASS(Conga_MGS_Base);
+    class CLASS(Conga_MGS_TU): CLASS(Conga_MGS_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_TU);
+        editorPreview = QPATHTOEF(vehicles,land\conga\data\previews\CLASS(Conga_MGS_Tan).jpg);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class CLASS(AST_Base);
+    class CLASS(AST_TU): CLASS(AST_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_TU);
+
+        displayName = "Fango";
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class CLASS(Ogre_Base);
+    class CLASS(Ogre_TU): CLASS(Ogre_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_TU);
+        editorPreview = QPATHTOEF(vehicles,air\ogre\data\previews\CLASS(Ogre_Tan).jpg);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class CLASS(Ogre_Armed_Base);
+    class CLASS(Ogre_Armed_TU): CLASS(Ogre_Armed_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_TU);
+        editorPreview = QPATHTOEF(vehicles,air\ogre\data\previews\CLASS(Ogre_Armed_Tan).jpg);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class CLASS(Vespoid_Base);
+    class CLASS(Vespoid_TU): CLASS(Vespoid_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_TU);
+        editorPreview = QPATHTOEF(vehicles,air\vespoid\data\previews\CLASS(Vespoid_Tan).jpg);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class CLASS(Vespoid_Armed_Base);
+    class CLASS(Vespoid_Armed_TU): CLASS(Vespoid_Armed_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_TU);
+        editorPreview = QPATHTOEF(vehicles,air\vespoid\data\previews\CLASS(Vespoid_Armed_Tan).jpg);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class CLASS(Rathian_CAP_Base);
+    class CLASS(Rathian_CAP_TU): CLASS(Rathian_CAP_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_TU);
+        editorPreview = QPATHTOEF(vehicles,air\rathian\data\previews\CLASS(Rathian_Tan).jpg);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
+
+    class CLASS(Rathian_CAS_Base);
+    class CLASS(Rathian_CAS_TU): CLASS(Rathian_CAS_Base)
+    {
+        SCOPE_HIDDEN;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_TU);
+        editorPreview = QPATHTOEF(vehicles,air\rathian\data\previews\CLASS(Rathian_Tan).jpg);
+
+        crew = QCLASS(TU_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+    };
 };
