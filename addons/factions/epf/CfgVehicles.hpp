@@ -105,10 +105,10 @@ class CfgVehicles
 
     class CLASS(EPF_Unit_Presidente): CLASS(EPF_Unit_Rifleman)
     {
-        editorSubcategory = QCLASS(EdSubCat_Special);
-
         displayName = "El Presidente";
         uniformClass = QCLASS(EPF_Uniform_Presidente);
+        editorSubcategory = QCLASS(EdSubCat_Special);
+        editorPreview = EDITOR_PREVIEW(EPF_Unit_Presidente);
 
         model = "\a3\Characters_F_AoW\Uniforms\ParadeUniform_01_F";
         hiddenSelections[] = {"camo1", "camo2", "camo3", "ribbon", "nametag"};
@@ -143,6 +143,7 @@ class CfgVehicles
     {
         displayName = "El General";
         uniformClass = QCLASS(EPF_Uniform_General);
+        editorPreview = EDITOR_PREVIEW(EPF_Unit_General);
 
         model = "\A3\Characters_F_Exp\Gendarmerie\B_GEN_Commander_F.p3d";
         hiddenSelections[] = {"camo", "insignia"};
