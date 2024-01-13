@@ -81,3 +81,4 @@ class CfgPatches
 #include "CfgVehicles.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgEditorSubcategories.hpp"
+#include "CfgGroups.hpp"
