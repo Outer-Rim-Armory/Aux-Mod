@@ -23,8 +23,8 @@ class CfgWeapons
 
         displayName = "[KC] Short Range Holosight";
 
-        model = QPATHTOF(attachments\data\optics\Holosight.p3d);
-        picture = QPATHTOF(attachments\data\optics\Holosight_ca.paa);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\Holosight.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\optics\Holosight_ca.paa);
 
         class ItemInfo: ItemInfo
         {
