@@ -71,7 +71,6 @@ class CfgPatches
             QCLASS(GM_Vest_Medium),
             QCLASS(GM_Vest_Heavy)
         };
-        weapons[] = {};
         VERSION_CONFIG;
 
         skipWhenMissingDependencies = TRUE;
@@ -81,3 +80,4 @@ class CfgPatches
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgFactionClasses.hpp"
+#include "CfgEditorSubcategories.hpp"

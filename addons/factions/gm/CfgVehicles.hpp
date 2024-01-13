@@ -5,7 +5,7 @@ class CfgVehicles
     {
         SCOPE_HIDDEN;
         faction = QCLASS(Faction_GM);
-        editorSubcategory = QCLASS(SubCat_GM_Infantry_T1);
+        editorSubcategory = QCLASS(EdSubCat_GM_INF_T1);
 
         items[] =
         {
@@ -48,7 +48,7 @@ class CfgVehicles
     class CLASS(GM_Unit_Rifleman_T2): CLASS(GM_Unit_Rifleman)
     {
         displayName = "Veteran Rifleman";
-        editorSubcategory = QCLASS(SubCat_GM_Infantry_T2);
+        editorSubcategory = QCLASS(EdSubCat_GM_INF_T2);
         editorPreview = EDITOR_PREVIEW(GM_Unit_Rifleman_T2);
         linkedItems[] = {QCLASS(GM_Helmet_T2), QCLASS(GM_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet_T2), QCLASS(GM_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -57,7 +57,7 @@ class CfgVehicles
     class CLASS(GM_Unit_Rifleman_T3): CLASS(GM_Unit_Rifleman_T2)
     {
         displayName = "Elite Rifleman";
-        editorSubcategory = QCLASS(SubCat_GM_Infantry_T3);
+        editorSubcategory = QCLASS(EdSubCat_GM_INF_T3);
         editorPreview = EDITOR_PREVIEW(GM_Unit_Rifleman_T3);
         linkedItems[] = {QCLASS(GM_Helmet_T3), QCLASS(GM_Vest_Heavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet_T3), QCLASS(GM_Vest_Heavy), LINKED_ITEMS_RADIO};
@@ -81,7 +81,7 @@ class CfgVehicles
     class CLASS(GM_Unit_AT_T2): CLASS(GM_Unit_AT)
     {
         displayName = "Veteran Rifleman (AT)";
-        editorSubcategory = QCLASS(SubCat_GM_Infantry_T2);
+        editorSubcategory = QCLASS(EdSubCat_GM_INF_T2);
         editorPreview = EDITOR_PREVIEW(GM_Unit_AT_T2);
 
         weapons[] = {QCLASS(LW38_Green_Scoped), "", "3AS_PLX1_F", "Throw", "Put"};
@@ -97,7 +97,7 @@ class CfgVehicles
     class CLASS(GM_Unit_AT_T3): CLASS(GM_Unit_AT_T2)
     {
         displayName = "Elite Rifleman (AT)";
-        editorSubcategory = QCLASS(SubCat_GM_Infantry_T3);
+        editorSubcategory = QCLASS(EdSubCat_GM_INF_T3);
         editorPreview = EDITOR_PREVIEW(GM_Unit_AT_T3);
         linkedItems[] = {QCLASS(GM_Helmet_T3), QCLASS(GM_Vest_Heavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet_T3), QCLASS(GM_Vest_Heavy), LINKED_ITEMS_RADIO};
@@ -151,7 +151,7 @@ class CfgVehicles
     class CLASS(GM_Unit_Marksman_T2): CLASS(GM_Unit_Marksman)
     {
         displayName = "Veteran Marksman";
-        editorSubcategory = QCLASS(SubCat_GM_Infantry_T2);
+        editorSubcategory = QCLASS(EdSubCat_GM_INF_T2);
         editorPreview = EDITOR_PREVIEW(GM_Unit_Marksman_T2);
         linkedItems[] = {QCLASS(GM_Helmet_T2), QCLASS(GM_Vest_Medium), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet_T2), QCLASS(GM_Vest_Medium), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
@@ -160,7 +160,7 @@ class CfgVehicles
     class CLASS(GM_Unit_Marksman_T3): CLASS(GM_Unit_Marksman_T2)
     {
         displayName = "Elite Marksman";
-        editorSubcategory = QCLASS(SubCat_GM_Infantry_T3);
+        editorSubcategory = QCLASS(EdSubCat_GM_INF_T3);
         editorPreview = EDITOR_PREVIEW(GM_Unit_Marksman_T3);
         linkedItems[] = {QCLASS(GM_Helmet_T3), QCLASS(GM_Vest_Heavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet_T3), QCLASS(GM_Vest_Heavy), LINKED_ITEMS_RADIO};
@@ -180,7 +180,7 @@ class CfgVehicles
     class CLASS(GM_Unit_SL_T2): CLASS(GM_Unit_SL)
     {
         displayName = "Veteran Squad Leader";
-        editorSubcategory = QCLASS(SubCat_GM_Infantry_T2);
+        editorSubcategory = QCLASS(EdSubCat_GM_INF_T2);
         editorPreview = EDITOR_PREVIEW(GM_Unit_SL_T2);
         linkedItems[] = {QCLASS(GM_Helmet_T2), QCLASS(GM_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet_T2), QCLASS(GM_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -189,7 +189,7 @@ class CfgVehicles
     class CLASS(GM_Unit_SL_T3): CLASS(GM_Unit_SL_T2)
     {
         displayName = "Elite Squad Leader";
-        editorSubcategory = QCLASS(SubCat_GM_Infantry_T3);
+        editorSubcategory = QCLASS(EdSubCat_GM_INF_T3);
         editorPreview = EDITOR_PREVIEW(GM_Unit_SL_T3);
         linkedItems[] = {QCLASS(GM_Helmet_T3), QCLASS(GM_Vest_Heavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet_T3), QCLASS(GM_Vest_Heavy), LINKED_ITEMS_RADIO};
