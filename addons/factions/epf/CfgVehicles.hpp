@@ -178,4 +178,117 @@ class CfgVehicles
             init = QUOTE((_this select 0) setIdentity QQCLASS(ElGeneral));
         };
     };
+
+    class CLASS(TU_Backpack);
+    class CLASS(EPF_Backpack): CLASS(TU_Backpack)
+    {
+        displayName = "[EPF] Backpack";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\marine\textures\backpack_green_co.paa"};
+    };
+    class CLASS(EPF_Backpack_Predef_Rifleman): CLASS(EPF_Backpack)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(Aux12thFleet_Mag_E5,10);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+    };
+
+    class CLASS(TU_Backpack_Heavy);
+    class CLASS(EPF_Backpack_Heavy): CLASS(TU_Backpack_Heavy)
+    {
+        displayName = "[EPF] Heavy Backpack";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_green_co.paa"};
+    };
+    class CLASS(EPF_Backpack_Heavy_Predef_AT): CLASS(EPF_Backpack_Heavy)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(Aux12thFleet_Mag_E5,10);
+            MAG_XX(Aux12thFleet_Mag_E60R_HE,3);
+            MAG_XX(Aux12thFleet_Mag_E60R_AT,3);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+    };
+    class CLASS(EPF_Backpack_Heavy_Predef_AA): CLASS(EPF_Backpack_Heavy)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(Aux12thFleet_Mag_E5,10);
+            MAG_XX(Aux12thFleet_Mag_E60R_AA,6);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+    };
+
+    class CLASS(TU_Backpack_Assault);
+    class CLASS(EPF_Backpack_Assault): CLASS(TU_Backpack_Assault)
+    {
+        displayName = "[EPF] Assault Backpack";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_green_co.paa"};
+    };
+    class CLASS(EPF_Backpack_Assault_Predef_Heavy): CLASS(EPF_Backpack_Assault)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(Aux12thFleet_Mag_E5C,10);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+    };
+    class CLASS(EPF_Backpack_Assault_Predef_Medium): CLASS(EPF_Backpack_Assault_Predef_Heavy)
+    {
+        class TransportMagazines
+        {
+            MAG_XX(Aux12thFleet_Mag_E5C,10);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+    };
+
+    class CLASS(TU_Backpack_RTO);
+    class CLASS(EPF_Backpack_RTO): CLASS(TU_Backpack_RTO)
+    {
+        displayName = "[EPF] Radio Backpack";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\backpack_co.paa"};
+    };
+    class CLASS(EPF_Backpack_RTO_Predef_SL): CLASS(EPF_Backpack_RTO)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(Aux12thFleet_Mag_E5,10);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+    };
 };
