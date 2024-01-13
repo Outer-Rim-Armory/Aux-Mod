@@ -73,3 +73,4 @@ class CfgPatches
 #include "CfgGlasses.hpp"
 #include "CfgGroups.hpp"
 #include "CfgFactionClasses.hpp"
+#include "CfgEventHandlers.hpp"
