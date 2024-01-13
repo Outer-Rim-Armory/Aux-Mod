@@ -38,8 +38,8 @@ class CfgVehicles
         weapons[] = {QCLASS(LW38_Green_Scoped), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(LW38_Green_Scoped), "", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_LW38_Green)};
-        respawnMagazines[] = {QCLASS(Mag_LW38_Green)};
+        magazines[] = {QCLASS(Mag_60rnd_LW38_Green)};
+        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green)};
 
         linkedItems[] = {QCLASS(GM_Helmet), QCLASS(GM_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet), QCLASS(GM_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -73,8 +73,8 @@ class CfgVehicles
         weapons[] = {QCLASS(LW38_Green_Scoped), "", "SC_MPML", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(LW38_Green_Scoped), "", "SC_MPML", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_LW38_Green), "SC_MPML_M_AT"};
-        respawnMagazines[] = {QCLASS(Mag_LW38_Green), "SC_MPML_M_AT"};
+        magazines[] = {QCLASS(Mag_60rnd_LW38_Green), "SC_MPML_M_AT"};
+        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green), "SC_MPML_M_AT"};
 
         backpack = QCLASS(GM_Backpack_Heavy_Predef_AT);
     };
@@ -87,8 +87,8 @@ class CfgVehicles
         weapons[] = {QCLASS(LW38_Green_Scoped), "", "3AS_PLX1_F", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(LW38_Green_Scoped), "", "3AS_PLX1_F", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_LW38_Green), "3AS_JLTS_MK43_AT"};
-        respawnMagazines[] = {QCLASS(Mag_LW38_Green), "3AS_JLTS_MK43_AT"};
+        magazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK43_AT"};
+        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK43_AT"};
 
         linkedItems[] = {QCLASS(GM_Helmet_T2), QCLASS(GM_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet_T2), QCLASS(GM_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -108,8 +108,8 @@ class CfgVehicles
     {
         displayName = "Rifleman (AA)";
 
-        magazines[] = {QCLASS(Mag_LW38_Green), "SC_MPML_M_AA"};
-        respawnMagazines[] = {QCLASS(Mag_LW38_Green), "SC_MPML_M_AA"};
+        magazines[] = {QCLASS(Mag_60rnd_LW38_Green), "SC_MPML_M_AA"};
+        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green), "SC_MPML_M_AA"};
 
         backpack = QCLASS(GM_Backpack_Heavy_Predef_AA);
     };
@@ -117,8 +117,8 @@ class CfgVehicles
     {
         displayName = "Veteran Rifleman (AA)";
 
-        magazines[] = {QCLASS(Mag_LW38_Green), "3AS_JLTS_MK39_AA"};
-        respawnMagazines[] = {QCLASS(Mag_LW38_Green), "3AS_JLTS_MK39_AA"};
+        magazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
+        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
 
         backpack = QCLASS(GM_Veteran_Backpack_Heavy_Predef_AA);
     };
@@ -126,8 +126,8 @@ class CfgVehicles
     {
         displayName = "Elite Rifleman (AA)";
 
-        magazines[] = {QCLASS(Mag_LW38_Green), "3AS_JLTS_MK39_AA"};
-        respawnMagazines[] = {QCLASS(Mag_LW38_Green), "3AS_JLTS_MK39_AA"};
+        magazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
+        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
 
         backpack = QCLASS(GM_Elite_Backpack_Heavy_Predef_AA);
     };
@@ -141,8 +141,8 @@ class CfgVehicles
         weapons[] = {QCLASS(HI12), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(HI12), "", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_HI12)};
-        respawnMagazines[] = {QCLASS(Mag_HI12)};
+        magazines[] = {QCLASS(Mag_30rnd_HI12)};
+        respawnMagazines[] = {QCLASS(Mag_30rnd_HI12)};
 
         linkedItems[] = {QCLASS(GM_Helmet), QCLASS(GM_Vest), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet), QCLASS(GM_Vest), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
