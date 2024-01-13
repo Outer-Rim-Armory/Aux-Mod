@@ -291,4 +291,313 @@ class CfgVehicles
             MAG_XX(OPTRE_FC_PlasmaGrenade,5);
         };
     };
+
+    class CLASS(AAT_Base);
+    class CLASS(AAT_EPF): CLASS(AAT_Base)
+    {
+        SCOPE_PUBLIC;
+
+        faction = QCLASS(Faction_EPF);
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\Green_AAT_CO.paa"};
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\aat,CLASS(AAT_Green));
+
+        textureList[] =
+        {
+            "CIS", 0,
+            "TradeFederation", 0,
+            "EPF", 1,
+            "Red", 0,
+            "Desert", 0,
+            "Geonosis", 0,
+            "Woodland", 0,
+            "Tropical", 0,
+            "Arid", 0,
+            "Winter", 0,
+            "Aqua", 0
+        };
+    };
+
+    class CLASS(AAT_Heavy_Base);
+    class CLASS(AAT_Heavy_EPF): CLASS(AAT_Heavy_Base)
+    {
+        SCOPE_PUBLIC;
+
+        faction = QCLASS(Faction_EPF);
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+    };
+
+    class CLASS(AAT_King_Base);
+    class CLASS(AAT_King_EPF): CLASS(AAT_King_Base)
+    {
+        SCOPE_PUBLIC;
+
+        faction = QCLASS(Faction_EPF);
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+    };
+
+    class CLASS(Plesioth_Base);
+    class CLASS(Plesioth_EPF): CLASS(Plesioth_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\plesioth,CLASS(Plesioth_Green));
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] =
+        {
+            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_lopo_co.paa",
+            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_tur_wood_co.paa",
+            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\det_3_co.paa",
+            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_decals_ca.paa",
+            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_net_wood_ca.paa",
+            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_net_wood_ca.paa",
+            "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\mine_roller_co.paa"
+        };
+        textureList[] = {"TechnoUnion", 0, "EPF", 1};
+    };
+
+    class CLASS(Conga_IFV_Base);
+    class CLASS(Conga_IFV_EPF): CLASS(Conga_IFV_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\conga,CLASS(Conga_IFV_Green));
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] =
+        {
+            "\OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
+        };
+        textureList[] = {"TechnoUnion", 0, "EPF", 1};
+    };
+
+    class CLASS(Conga_MGS_Base);
+    class CLASS(Conga_MGS_EPF): CLASS(Conga_MGS_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\conga,CLASS(Conga_MGS_Green));
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] =
+        {
+            "\OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
+            "\OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
+        };
+        textureList[] = {"TechnoUnion", 0, "EPF", 1};
+    };
+
+    class CLASS(ScoutTank_Base);
+    class CLASS(ScoutTank_EPF): CLASS(ScoutTank_Base)
+    {
+        SCOPE_PUBLIC;
+
+        faction = QCLASS(Faction_EPF);
+
+        displayName = "Fango";
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+    };
+
+    class CLASS(Hornet_Unarmed);
+    class CLASS(Hornet_EPF): CLASS(Hornet_Unarmed)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        // Remove DC-15S and magazines
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(Hornet_MG);
+    class CLASS(Hornet_MG_EPF): CLASS(Hornet_MG)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(Hornet_AT);
+    class CLASS(Hornet_AT_EPF): CLASS(Hornet_AT)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(Khezu_Unarmed);
+    class CLASS(Khezu_EPF): CLASS(Khezu_Unarmed)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+    };
+
+    class CLASS(Khezu_Armed);
+    class CLASS(Khezu_Armed_EPF): CLASS(Khezu_Armed)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+    };
+
+    class CLASS(Ogre_Base);
+    class CLASS(Ogre_EPF): CLASS(Ogre_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\ogre,CLASS(Ogre_Green));
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_standard_CO.paa"};
+        textureList[] = {"TechnoUnion", 0, "EPF", 1};
+    };
+
+    class CLASS(Ogre_Armed_Base);
+    class CLASS(Ogre_Armed_EPF): CLASS(Ogre_Armed_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\ogre,CLASS(Ogre_Armed_Green));
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_standard_CO.paa"};
+        textureList[] = {"TechnoUnion", 0, "EPF", 1};
+    };
+
+    class CLASS(Vespoid_Base);
+    class CLASS(Vespoid_EPF): CLASS(Vespoid_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,CLASS(Vespoid_Green));
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] =
+        {
+            "\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa",
+            "\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa",
+            "\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"
+        };
+        textureList[] = {"TechnoUnion", 0, "EPF", 1};
+    };
+
+    class CLASS(Vespoid_Armed_Base);
+    class CLASS(Vespoid_Armed_EPF): CLASS(Vespoid_Armed_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,CLASS(Vespoid_Armed_Green));
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] =
+        {
+            "\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa",
+            "\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa",
+            "\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"
+        };
+        textureList[] = {"TechnoUnion", 0, "EPF", 1};
+    };
+
+    class CLASS(Rathian_CAP_Base);
+    class CLASS(Rathian_CAP_EPF): CLASS(Rathian_CAP_Base)
+    {
+        SCOPE_PUBLIC;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,CLASS(Rathian_Green));
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] = {"\OPTRE_Vehicles_Air\hornet\data\hornet_hull_standard_co.paa"};
+        textureList[] = {"TechnoUnion", 0, "EPF", 1};
+    };
+
+    class CLASS(Rathian_CAS_Base);
+    class CLASS(Rathian_CAS_EPF): CLASS(Rathian_CAS_Base)
+    {
+        SCOPE_HIDDEN;
+
+        side = OPFOR;
+        faction = QCLASS(Faction_EPF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,CLASS(Rathian_Green));
+
+        crew = QCLASS(EPF_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
+
+        hiddenSelectionsTextures[] = {"\OPTRE_Vehicles_Air\hornet\data\hornet_hull_standard_co.paa"};
+        textureList[] = {"TechnoUnion", 0, "EPF", 1};
+    };
 };
