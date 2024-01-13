@@ -57,8 +57,7 @@ class CfgVehicles
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
 
-        // Editor Attributes
-        editorSubcategory =QCLASS(EdSubCat_Tanks);
+        editorSubcategory = QCLASS(EdSubCat_Tanks);
         editorPreview = QPATHTOF(land\aat\data\previews\CLASS(AAT_Blue).jpg);
 
         displayName = "AAT";
@@ -230,8 +229,8 @@ class CfgVehicles
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
 
-        // Editor Attributes
-        editorPreview = QPATHTOF(land\aat\data\previews\CLASS(AAT_King).jpg);
+        editorSubcategory = QCLASS(EdSubCat_Tanks);
+        editorPreview = QPATHTOF(land\aat\data\previews\CLASS(AAT_King_Base).jpg);
 
         displayName = "AAT (King)";
 
