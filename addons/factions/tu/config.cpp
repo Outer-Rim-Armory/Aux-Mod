@@ -70,7 +70,7 @@ class CfgPatches
 
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgGlasses.hpp"
-#include "CfgGroups.hpp"
 #include "CfgFactionClasses.hpp"
+#include "CfgGroups.hpp"
+#include "CfgGlasses.hpp"
 #include "CfgEventHandlers.hpp"
