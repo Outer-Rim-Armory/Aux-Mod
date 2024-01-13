@@ -109,6 +109,7 @@ class CfgVehicles
         uniformClass = QCLASS(EPF_Uniform_Presidente);
         editorSubcategory = QCLASS(EdSubCat_Special);
         editorPreview = EDITOR_PREVIEW(EPF_Unit_Presidente);
+        icon = "iconManOfficer";
 
         model = "\a3\Characters_F_AoW\Uniforms\ParadeUniform_01_F";
         hiddenSelections[] = {"camo1", "camo2", "camo3", "ribbon", "nametag"};

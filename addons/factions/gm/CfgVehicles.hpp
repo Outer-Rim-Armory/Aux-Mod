@@ -202,6 +202,7 @@ class CfgVehicles
 
         displayName = "General Vex";
         editorSubcategory = QCLASS(EdSubCat_Special);
+        icon = "iconManOfficer";
 
         uniformClass = QCLASS(GM_Uniform_Vex);
         model = "\armor_unit\Merc_Armor_Tayrus.p3d";
