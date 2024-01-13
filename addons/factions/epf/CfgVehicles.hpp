@@ -191,7 +191,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(Aux12thFleet_Mag_E5,10);
+            MAG_XX(CLASS(Mag_100rnd_E5),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -212,9 +212,9 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(Aux12thFleet_Mag_E5,10);
-            MAG_XX(Aux12thFleet_Mag_E60R_HE,3);
-            MAG_XX(Aux12thFleet_Mag_E60R_AT,3);
+            MAG_XX(CLASS(Mag_100rnd_E5),10);
+            MAG_XX(CLASS(Mag_1rnd_E60R_HE),3);
+            MAG_XX(CLASS(Mag_1rnd_E60R_AT),3);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -228,8 +228,8 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(Aux12thFleet_Mag_E5,10);
-            MAG_XX(Aux12thFleet_Mag_E60R_AA,6);
+            MAG_XX(CLASS(Mag_100rnd_E5),10);
+            MAG_XX(CLASS(Mag_1rnd_E60R_AA),6);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -250,7 +250,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(Aux12thFleet_Mag_E5C,10);
+            MAG_XX(CLASS(Mag_100rnd_E5C),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -262,7 +262,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(Aux12thFleet_Mag_E5C,10);
+            MAG_XX(CLASS(Mag_100rnd_E5C),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -283,7 +283,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(Aux12thFleet_Mag_E5,10);
+            MAG_XX(CLASS(Mag_100rnd_E5),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
