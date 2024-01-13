@@ -17,11 +17,11 @@ class CfgWeapons
         };
     };
 
-    class CLASS(Optic_Holosight): CLASS(Optic_Base)
+    class CLASS(Optic_SR_Holosight): CLASS(Optic_Base)
     {
         SCOPE_PUBLIC;
 
-        displayName = "[KC] Holosight";
+        displayName = "[KC] Short Range Holosight";
 
         model = QPATHTOF(attachments\data\optics\Holosight.p3d);
         picture = QPATHTOF(attachments\data\optics\Holosight_ca.paa);
