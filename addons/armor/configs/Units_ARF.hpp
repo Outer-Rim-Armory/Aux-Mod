@@ -2,7 +2,7 @@ class CLASS(Unit_ARF_CT): CLASS(Unit_Phase2_Base)
 {
     displayName = "SF ARF 01 - Trooper";
     editorSubcategory = QCLASS(EdSubCat_SpecialForces);
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_ARF_CT));
+    editorPreview = EDITOR_PREVIEW(Unit_ARF_CT);
 
     uniformClass = QCLASS(Uniform_ARF_CT);
     hiddenSelectionsTextures[] =

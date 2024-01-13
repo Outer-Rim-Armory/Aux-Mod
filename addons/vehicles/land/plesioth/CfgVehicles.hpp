@@ -27,13 +27,13 @@ class CfgVehicles
         };
     };
     class OPTRE_M808B_UNSC: OPTRE_M808B_base {};
-    class BNA_KC_Plesioth_Base: OPTRE_M808B_UNSC
+    class CLASS(Plesioth_Base): OPTRE_M808B_UNSC
     {
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
 
         editorSubcategory = QCLASS(EdSubCat_Tanks);
-        editorPreview = QPATHTOF(land\plesioth\data\previews\CLASS(Plesioth_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Plesioth_Tan);
 
         displayName = "Plesioth";
 

@@ -17,8 +17,8 @@ class CfgVehicles
             QCLASS(DC15S),
             QCLASS(DC17),
             "SWLB_clone_binocular",
-            "Throw",               // Allows the unit to throw grenades
-            "Put"                  // Allows the unit to place explosives
+            "Throw",
+            "Put"
         };
         respawnWeapons[] =
         {
@@ -59,26 +59,12 @@ class CfgVehicles
             // Medical
             ITEM_10("ACE_elasticBandage"),
             ITEM_4("ACE_tourniquet"),
-            // Other
-            ITEM_3("ACE_CableTie"),
-            "ACE_EntrenchingTool",
-            "ItemcTabHCam",
-            "ACE_IR_Strobe_Item",
-            "ACE_Flashlight_XL50",
-            "ACE_MapTools"
         };
         respawnItems[] =
         {
             // Medical
             ITEM_10("ACE_elasticBandage"),
-            ITEM_4("ACE_tourniquet"),
-            // Other
-            ITEM_3("ACE_CableTie"),
-            "ACE_EntrenchingTool",
-            "ItemcTabHCam",
-            "ACE_IR_Strobe_Item",
-            "ACE_Flashlight_XL50",
-            "ACE_MapTools"
+            ITEM_4("ACE_tourniquet")
         };
 
         linkedItems[] =

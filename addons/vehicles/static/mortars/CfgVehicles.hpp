@@ -154,7 +154,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         faction = QCLASS(Faction_KC);
-        editorPreview = QPATHTOF(static\mortar\data\previews\CLASS(Mortar_M190).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\static\SUBCOMPONENT,Mortar_M190);
 
         displayName = "M-190 Mortar System";
         crew = QCLASS(Unit_Phase2_CT);

@@ -8,7 +8,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Drones);
-        editorPreview = QPATHTOF(land\khezu\data\previews\CLASS(Khezu_Unarmed).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Khezu_Unarmed);
 
         displayName = "Khezu (Unarmed)";
 
@@ -74,7 +74,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Drones);
-        editorPreview = QPATHTOF(land\khezu\data\previews\CLASS(Khezu_Armed).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Khezu_Armed);
 
         displayName = "Khezu (HMG/GMG)";
 

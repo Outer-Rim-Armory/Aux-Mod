@@ -18,7 +18,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Planes);
-        editorPreview = QPATHTOF(air\ywing\data\previews\CLASS(BTLB_YWing).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,BTLB_YWing);
 
         displayName = "BTL-B Y-Wing";
         crew = QCLASS(Unit_Phase2_CXA);

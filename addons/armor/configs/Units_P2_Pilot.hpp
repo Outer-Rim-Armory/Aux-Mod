@@ -2,7 +2,7 @@ class CLASS(Unit_Phase2_CXA): CLASS(Unit_Phase2_Base)
 {
     displayName = "AVI P2 Pilot 1 (Airman)";
     editorSubcategory = QCLASS(EdSubCat_Crewmen);
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CXA));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CXA);
 
     uniformClass = QCLASS(Uniform_CXA);
     hiddenSelectionsTextures[] =
@@ -24,7 +24,7 @@ class CLASS(Unit_Phase2_CXA): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CXE): CLASS(Unit_Phase2_CXA)
 {
     displayName = "AVI P2 Pilot 11 (Ensign)";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CXE));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CXE);
     icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_CXE);

@@ -57,9 +57,8 @@ class CfgVehicles
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
 
-        // Editor Attributes
-        editorSubcategory =QCLASS(EdSubCat_Tanks);
-        editorPreview = QPATHTOF(land\aat\data\previews\CLASS(AAT_Blue).jpg);
+        editorSubcategory = QCLASS(EdSubCat_Tanks);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_Blue);
 
         displayName = "AAT";
 
@@ -203,7 +202,7 @@ class CfgVehicles
     {
         displayName = "AAT (Heavy)";
         hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\Red_AAT_CO.paa"};
-        editorPreview = QPATHTOF(land\aat\data\previews\CLASS(AAT_Red).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_Red);
         accuracy = 1000;
         armor = 1250;
 
@@ -230,8 +229,8 @@ class CfgVehicles
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
 
-        // Editor Attributes
-        editorPreview = QPATHTOF(land\aat\data\previews\CLASS(AAT_King).jpg);
+        editorSubcategory = QCLASS(EdSubCat_Tanks);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_King_Base);
 
         displayName = "AAT (King)";
 

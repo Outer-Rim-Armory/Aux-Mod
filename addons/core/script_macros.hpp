@@ -28,8 +28,12 @@
 
 #define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> QUOTE(var1))
 
-#define EDITOR_PREVIEW(CLASS) QPATHTOF(data\previews\CLASS.jpg)
-#define EEDITOR_PREVIEW(COMPONENT,CLASS) QUOTE(PATHTOF_SYS(PREFIX,COMPONENT,data\previews\CLASS.jpg))
+#ifdef SUBCOMPONENT
+    #define EDITOR_PREVIEW(var1) QPATHTOF(SUBCOMPONENT\data\previews\CLASS(var1).jpg)
+#else
+    #define EDITOR_PREVIEW(var1) QPATHTOF(data\previews\CLASS(var1).jpg)
+#endif
+#define EEDITOR_PREVIEW(var1,var2) QUOTE(PATHTOF_SYS(PREFIX,var1,data\previews\CLASS(var2).jpg))
 
 #define QQPATHTOF(var1) QUOTE(QPATHTOF(var1))
 #define QQPATHTOEF(var1,var2) QUOTE(QPATHTOEF(var1,var2))
@@ -61,6 +65,7 @@ scopeCurator = 0
 #define ITEM_9(a) a, a, a, a, a, a, a, a, a
 #define ITEM_10(a) a, a, a, a, a, a, a, a, a, a
 #define ITEM_11(a) ITEM_10(a), a
+#define ITEM_20(a) ITEM_10(a), ITEM_10(a)
 
 #define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \
 { \

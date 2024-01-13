@@ -14,7 +14,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Walkers);
-        // editorPreview = QPATHTOF(land\atrt\data\previews\CLASS(ATRT).jpg);
+        // editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,ATRT);
 
         displayName = "AT-RT";
         uniformClass = QCLASS(Uniform_ATRT);

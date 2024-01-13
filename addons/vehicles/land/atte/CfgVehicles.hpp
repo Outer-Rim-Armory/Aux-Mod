@@ -26,7 +26,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Walkers);
-        editorPreview = QPATHTOF(land\atte\data\previews\CLASS(ATTE_Base).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,ATTE_Base);
 
         displayName = "AT-TE (Base)";
         crew = QCLASS(Unit_Phase2_Tanker_CT);

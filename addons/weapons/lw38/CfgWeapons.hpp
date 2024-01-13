@@ -102,6 +102,7 @@ class CfgWeapons
 
     class CLASS(LW38_Green): CLASS(LW38_Base)
     {
+        SCOPE_HIDDEN;
         displayName = "[KC] LW-38";
         baseWeapon = QCLASS(LW38_Green);
         JLTS_friedItem = QCLASS(LW38_Green_Fried);

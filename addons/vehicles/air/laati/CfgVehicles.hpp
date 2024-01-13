@@ -1,14 +1,14 @@
 class CfgVehicles
 {
-    class B_Heli_Attack_01_base_F;
-    class 3as_laat_Base: B_Heli_Attack_01_base_F
+    class Helicopter_Base_H;
+    class 3AS_LAAT_Base: Helicopter_Base_H
     {
         class ACE_SelfActions;
         class AnimationSources;
         class Turrets;
         class pilotCamera;
     };
-    class CLASS(LAATi_Base): 3as_laat_Base
+    class CLASS(LAATi_Base): 3AS_LAAT_Base
     {
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
@@ -263,7 +263,7 @@ class CfgVehicles
     {
         SCOPE_PUBLIC;
         displayName = "LAAT/i MK1";
-        editorPreview = QPATHTOF(air\laati\data\previews\CLASS(LAATi_MK1).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1);
 
         class AnimationSources: AnimationSources
         {
@@ -290,7 +290,7 @@ class CfgVehicles
     class CLASS(LAATi_MK1_Lamps): BNA_KC_LAATi_MK1
     {
         displayName = "LAAT/i MK1 (Lamps)";
-        editorPreview = QPATHTOF(air\laati\data\previews\CLASS(LAATi_MK1_Lamps).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1_Lamps);
 
         class AnimationSources: AnimationSources
         {
@@ -310,7 +310,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "LAAT/i MK2";
-        editorPreview = QPATHTOF(air\laati\data\previews\CLASS(LAATi_MK2).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2);
 
         class AnimationSources: AnimationSources
         {
@@ -337,7 +337,7 @@ class CfgVehicles
     class CLASS(LAATi_MK2_Lamps): CLASS(LAATi_MK2)
     {
         displayName = "LAAT/i MK2 (Lamps)";
-        editorPreview = QPATHTOF(air\laati\data\previews\CLASS(LAATi_MK2_Lamps).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2_Lamps);
         class AnimationSources: AnimationSources
         {
             class Lamps: Lamps

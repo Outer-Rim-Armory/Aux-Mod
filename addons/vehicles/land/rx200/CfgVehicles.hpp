@@ -20,7 +20,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Tanks);
-        editorPreview = QPATHTOF(land\rx200\data\previews\CLASS(RX200_Base).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,RX200_Base);
 
         displayName = "RX-200";
         crew = QCLASS(Unit_Phase2_Tanker_CT);

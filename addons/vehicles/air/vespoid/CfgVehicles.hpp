@@ -12,7 +12,7 @@ class CfgVehicles
         author = "Keeli Company Aux Team";
 
         editorSubcategory = QCLASS(EdSubCat_Helicopters);
-        editorPreview = QPATHTOF(air\vespoid\data\previews\CLASS(Vespoid_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Vespoid_Tan);
 
         displayName = "Vespoid";
 
@@ -67,7 +67,7 @@ class CfgVehicles
     class CLASS(Vespoid_Armed_Base): CLASS(Vespoid_Base)
     {
         displayName = "Vespoid (Armed)";
-        editorPreview = QPATHTOF(air\vespoid\data\previews\CLASS(Vespoid_Armed_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Vespoid_Armed_Tan);
 
         weapons[] = {"OPTRE_M638", "CMFlareLauncher","Laserdesignator_pilotCamera"};
         magazines[] =

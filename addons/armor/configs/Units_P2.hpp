@@ -4,7 +4,7 @@ class CLASS(Unit_Phase2_Base): CLASS(Unit_Base)
 
     // Editor Properties
     editorSubcategory = QCLASS(EdSubCat_INF_P2);
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_Base));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_Base);
 
     uniformClass = QCLASS(Uniform_Base);
     hiddenSelectionsTextures[] =
@@ -27,7 +27,7 @@ class CLASS(Unit_Phase2_Base): CLASS(Unit_Base)
 class CLASS(Unit_Phase2_CR): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 00 - Clone Recruit";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CR));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CR);
 
     uniformClass = QCLASS(Uniform_CR);
     hiddenSelectionsTextures[] =
@@ -50,7 +50,7 @@ class CLASS(Unit_Phase2_CR): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CT): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 01 - Clone Trooper";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CT));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CT);
 
     uniformClass = QCLASS(Uniform_CT);
     hiddenSelectionsTextures[] =
@@ -90,7 +90,7 @@ class CLASS(Unit_Phase2_CT_Legacy): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_SCT): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 02 - Senior Clone Trooper";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_SCT));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_SCT);
 
     uniformClass = QCLASS(Uniform_SCT);
     hiddenSelectionsTextures[] =
@@ -113,7 +113,7 @@ class CLASS(Unit_Phase2_SCT): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_VCT): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 03 - Veteran Clone Trooper";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_VCT));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_VCT);
 
     uniformClass = QCLASS(Uniform_VCT);
     hiddenSelectionsTextures[] =
@@ -138,7 +138,7 @@ class CLASS(Unit_Phase2_VCT): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CLC): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 04 - Clone Lance Corporal";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CLC));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CLC);
 
     uniformClass = QCLASS(Uniform_CLC);
     hiddenSelectionsTextures[] =
@@ -161,7 +161,7 @@ class CLASS(Unit_Phase2_CLC): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CPL): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 05 - Clone Corporal";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CPL));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CPL);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CPL);
@@ -187,7 +187,7 @@ class CLASS(Unit_Phase2_CPL): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CS): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 06 - Clone Sergeant";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CS));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CS);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CS);
@@ -211,7 +211,7 @@ class CLASS(Unit_Phase2_CS): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CSS): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 07 - Clone Staff Sergeant";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CSS));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CSS);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSS);
@@ -235,7 +235,7 @@ class CLASS(Unit_Phase2_CSS): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CSFC): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 08 - Clone Sergeant First Class";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CSFC));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CSFC);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSFC);
@@ -259,7 +259,7 @@ class CLASS(Unit_Phase2_CSFC): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CMS): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 09 - Clone Master Sergeant";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CMS));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CMS);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSFC);
@@ -283,7 +283,7 @@ class CLASS(Unit_Phase2_CMS): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CSM): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 10 - Clone Sergeant Major";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CSM));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CSM);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSM);
@@ -308,7 +308,7 @@ class CLASS(Unit_Phase2_CSM): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_WO): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 11 - Clone Warrant Officer";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_WO));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_WO);
     icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_WO);
@@ -334,7 +334,7 @@ class CLASS(Unit_Phase2_WO): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_WO2): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 12 - Clone Warrant Officer 2";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_WO2));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_WO2);
     icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_WO2);
@@ -358,7 +358,7 @@ class CLASS(Unit_Phase2_WO2): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_WO3): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 13 - Clone Warrant Officer 3";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_WO3));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_WO3);
     icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_WO3);
@@ -382,7 +382,7 @@ class CLASS(Unit_Phase2_WO3): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CL): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 14 - Clone Lieutenant";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CL));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CL);
     icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_CL);
@@ -406,7 +406,7 @@ class CLASS(Unit_Phase2_CL): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF 15 - Clone 1st Lieutenant";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_CL1));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CL1);
     icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_CL);
@@ -587,7 +587,7 @@ class CLASS(Unit_Phase2_Officer_CamoGrey): CLASS(Unit_Phase2_Officer_CamoBrown)
 class CLASS(Unit_Phase2_Insulated_Base): CLASS(Unit_Phase2_Base)
 {
     displayName = "INF Snow - Base";
-    // editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_Insulated_Base);
+    // editorPreview = EDITOR_PREVIEW(Unit_Phase2_Insulated_Base);
 
     // Uniform Model & Textures
     uniformClass = QCLASS(Uniform_Phase2_Insulated_Base);
@@ -614,7 +614,7 @@ class CLASS(Unit_Phase2_Insulated_Base): CLASS(Unit_Phase2_Base)
 class CLASS(Unit_Phase2_Insulated_CT): CLASS(Unit_Phase2_Insulated_Base)
 {
     displayName = "INF Snow 01 - Trooper";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase2_Insulated_CT));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_Insulated_CT);
 
     // Uniform Model & Textures
     uniformClass = QCLASS(Uniform_Phase2_Insulated_CT);

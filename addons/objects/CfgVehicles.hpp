@@ -77,7 +77,7 @@ class CfgVehicles
         // Editor Attributes
         editorCategory = QCLASS(Objects);
         editorSubcategory = QCLASS(EdSubcat_Utility);
-        editorPreview = EDITOR_PREVIEW(CLASS(Gonk_Base));
+        editorPreview = EDITOR_PREVIEW(Gonk_Base);
 
         class EventHandlers
         {
@@ -220,7 +220,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
         displayName = "Arsenal Terminal";
         model = "\3AS\3AS_Props\Terminals\Terminal_short.p3d";
-        editorPreview = EDITOR_PREVIEW(CLASS(Utility_Arsenal));
+        editorPreview = EDITOR_PREVIEW(Utility_Arsenal);
 
         class UserActions
         {
@@ -251,7 +251,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
         displayName = "Full Heal Droid";
         model = "\RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
-        editorPreview = EDITOR_PREVIEW(CLASS(Utility_FullHeal));
+        editorPreview = EDITOR_PREVIEW(Utility_FullHeal);
 
         class UserActions
         {
