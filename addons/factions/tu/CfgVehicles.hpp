@@ -18,7 +18,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "Rifleman";
-        editorPreview = QPATHTOF(tu\data\previews\CLASS(TU_Unit_Rifleman).jpg);
+        editorPreview = EDITOR_PREVIEW(TU_Unit_Rifleman);
 
         weapons[] = {QCLASS(E5), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(E5), "", "Throw", "Put"};
@@ -48,7 +48,7 @@ class CfgVehicles
     class CLASS(TU_Unit_Rifleman_Shield): CLASS(TU_Unit_Rifleman)
     {
         displayName = "Rifleman (Shield)";
-        editorPreview = QPATHTOF(tu\data\previews\CLASS(TU_Unit_Rifleman_Shield).jpg);
+        editorPreview = EDITOR_PREVIEW(TU_Unit_Rifleman_Shield);
 
         weapons[] = {QCLASS(E5_Shielded), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(E5_Shielded), "", "Throw", "Put"};
@@ -57,7 +57,7 @@ class CfgVehicles
     class CLASS(TU_Unit_AT): CLASS(TU_Unit_Rifleman)
     {
         displayName = "Rifleman (AT)";
-        editorPreview = QPATHTOF(tu\data\previews\CLASS(TU_Unit_AT).jpg);
+        editorPreview = EDITOR_PREVIEW(TU_Unit_AT);
         icon = "iconManAT";
 
         weapons[] = {QCLASS(E5), "", QCLASS(E60R_AT), "Throw", "Put"};
@@ -86,7 +86,7 @@ class CfgVehicles
     class CLASS(TU_Unit_AssaultHeavy): CLASS(TU_Unit_Rifleman)
     {
         displayName = "Heavy Assault";
-        editorPreview = QPATHTOF(tu\data\previews\CLASS(TU_Unit_AssaultHeavy).jpg);
+        editorPreview = EDITOR_PREVIEW(TU_Unit_AssaultHeavy);
         icon = "iconManMG";
 
         weapons[] = {QCLASS(E5C_Stock), "", "Throw", "Put"};
@@ -103,7 +103,7 @@ class CfgVehicles
     class CLASS(TU_Unit_AssaultMedium): CLASS(TU_Unit_AssaultHeavy)
     {
         displayName = "Medium Assault";
-        editorPreview = QPATHTOF(tu\data\previews\CLASS(TU_Unit_AssaultMedium).jpg);
+        editorPreview = EDITOR_PREVIEW(TU_Unit_AssaultMedium);
         linkedItems[] = {QCLASS(TU_Helmet_Assault), QCLASS(TU_Vest_AssaultMedium), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(TU_Helmet_Assault), QCLASS(TU_Vest_AssaultMedium), LINKED_ITEMS_RADIO};
         backpack = QCLASS(TU_Backpack_Assault_Predef_Medium);
@@ -112,7 +112,7 @@ class CfgVehicles
     class CLASS(TU_Unit_SL): CLASS(TU_Unit_Rifleman)
     {
         displayName = "Squad Leader";
-        editorPreview = QPATHTOF(tu\data\previews\CLASS(TU_Unit_SL).jpg);
+        editorPreview = EDITOR_PREVIEW(TU_Unit_SL);
         icon = "iconManLeader";
 
         linkedItems[] = {QCLASS(TU_Helmet_Heavy), QCLASS(TU_Vest_Medium), LINKED_ITEMS_RADIO};
@@ -125,7 +125,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "Swordsman (Rush)";
-        editorPreview = QPATHTOF(tu\data\previews\CLASS(TU_Unit_Melee).jpg);
+        editorPreview = EDITOR_PREVIEW(TU_Unit_Melee);
 
         weapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
         respawnWeapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
@@ -282,7 +282,7 @@ class CfgVehicles
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
 
         hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
-        editorPreview = QPATHTOEF(vehicles,land\aat\data\previews\CLASS(AAT_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\aat,AAT_Tan);
     };
 
     class CLASS(AAT_Heavy_Base);
@@ -314,7 +314,7 @@ class CfgVehicles
 
         side = OPFOR;
         faction = QCLASS(Faction_TU);
-        editorPreview = QPATHTOEF(vehicles,land\plesioth\data\previews\CLASS(Plesioth_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\plesioth,Plesioth_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -327,7 +327,7 @@ class CfgVehicles
 
         side = OPFOR;
         faction = QCLASS(Faction_TU);
-        editorPreview = QPATHTOEF(vehicles,land\conga\data\previews\CLASS(Conga_IFV_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\conga,Conga_IFV_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -340,7 +340,7 @@ class CfgVehicles
 
         side = OPFOR;
         faction = QCLASS(Faction_TU);
-        editorPreview = QPATHTOEF(vehicles,land\conga\data\previews\CLASS(Conga_MGS_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\conga,Conga_MGS_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -367,7 +367,7 @@ class CfgVehicles
 
         side = OPFOR;
         faction = QCLASS(Faction_TU);
-        editorPreview = QPATHTOEF(vehicles,air\ogre\data\previews\CLASS(Ogre_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\ogre,Ogre_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -380,7 +380,7 @@ class CfgVehicles
 
         side = OPFOR;
         faction = QCLASS(Faction_TU);
-        editorPreview = QPATHTOEF(vehicles,air\ogre\data\previews\CLASS(Ogre_Armed_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\ogre,Ogre_Armed_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -393,7 +393,7 @@ class CfgVehicles
 
         side = OPFOR;
         faction = QCLASS(Faction_TU);
-        editorPreview = QPATHTOEF(vehicles,air\vespoid\data\previews\CLASS(Vespoid_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -406,7 +406,7 @@ class CfgVehicles
 
         side = OPFOR;
         faction = QCLASS(Faction_TU);
-        editorPreview = QPATHTOEF(vehicles,air\vespoid\data\previews\CLASS(Vespoid_Armed_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -419,7 +419,7 @@ class CfgVehicles
 
         side = OPFOR;
         faction = QCLASS(Faction_TU);
-        editorPreview = QPATHTOEF(vehicles,air\rathian\data\previews\CLASS(Rathian_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -432,7 +432,7 @@ class CfgVehicles
 
         side = OPFOR;
         faction = QCLASS(Faction_TU);
-        editorPreview = QPATHTOEF(vehicles,air\rathian\data\previews\CLASS(Rathian_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};

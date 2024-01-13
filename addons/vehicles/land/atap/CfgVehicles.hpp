@@ -13,7 +13,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Walkers);
-        editorPreview = QPATHTOF(land\atap\data\previews\CLASS(ATAP).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,ATAP);
 
         displayName = "AT-AP";
         crew = QCLASS(Unit_Phase2_Tanker_CT);

@@ -8,7 +8,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
-        editorPreview = QPATHTOF(land\glavenus\data\previews\CLASS(Glavenus_Unarmed).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Glavenus_Unarmed);
 
         displayName = "Glavenus (Unarmed)";
         crew = QCLASS(Unit_Phase2_CT);
@@ -71,7 +71,7 @@ class CfgVehicles
     class CLASS(Glavenus_Medic): CLASS(Glavenus_Unarmed)
     {
         displayName = "Glavenus (Medic)";
-        editorPreview = QPATHTOF(land\glavenus\data\previews\CLASS(Glavenus_Medic).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Glavenus_Medic);
 
         weapons[] = {QCLASS(Horn_Glavenus), "SmokeLauncher"};
         attendant = 1;
@@ -110,7 +110,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
-        editorPreview = QPATHTOF(land\glavenus\data\previews\CLASS(Glavenus_HMG).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Glavenus_HMG);
 
         displayName = "Glavenus (HMG)";
         crew = QCLASS(Unit_Phase2_CT);
@@ -206,7 +206,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
-        editorPreview = QPATHTOF(land\glavenus\data\previews\CLASS(Glavenus_HMG).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Glavenus_HMG);
 
         displayName = "Glavenus (GMG)";
         crew = QCLASS(Unit_Phase2_CT);

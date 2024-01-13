@@ -47,7 +47,7 @@ class CLASS(Unit_Jedi_Commander): CLASS(Unit_Jedi_Knight)
 {
     SCOPE_PUBLIC;
     displayName = "Jedi Commander";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Jedi_Commander));
+    editorPreview = EDITOR_PREVIEW(Unit_Jedi_Commander);
 
     uniformClass = QCLASS(Uniform_Jedi_Commander);
 

@@ -4,7 +4,7 @@ class CLASS(Unit_Phase1_Base): CLASS(Unit_Base)
 
     // Editor Properties
     editorSubcategory = QCLASS(EdSubCat_INF_P1);
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_Base));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_Base);
 
     displayName = "INF P1 Trooper (Base)";
 
@@ -14,7 +14,7 @@ class CLASS(Unit_Phase1_Base): CLASS(Unit_Base)
 class CLASS(Unit_Phase1_CR): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 00 - Clone Recruit";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CR));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_CR);
 
     uniformClass = QCLASS(Uniform_CR);
 
@@ -31,7 +31,7 @@ class CLASS(Unit_Phase1_CR): CLASS(Unit_Phase1_Base)
 class CLASS(Unit_Phase1_CT): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 01 - Clone Trooper";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CT));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_CT);
 
     uniformClass = QCLASS(Uniform_CT);
 
@@ -48,7 +48,7 @@ class CLASS(Unit_Phase1_CT): CLASS(Unit_Phase1_Base)
 class CLASS(Unit_Phase1_SCT): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 02 - Senior Clone Trooper";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_SCT));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_SCT);
 
     uniformClass = QCLASS(Uniform_SCT);
 
@@ -65,7 +65,7 @@ class CLASS(Unit_Phase1_SCT): CLASS(Unit_Phase1_Base)
 class CLASS(Unit_Phase1_VCT): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 03 - Veteran Clone Trooper";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_VCT));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_VCT);
 
     uniformClass = QCLASS(Uniform_VCT);
 
@@ -84,7 +84,7 @@ class CLASS(Unit_Phase1_VCT): CLASS(Unit_Phase1_Base)
 class CLASS(Unit_Phase1_CLC): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 04 - Clone Lance Corporal";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CLC));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_CLC);
 
     uniformClass = QCLASS(Uniform_CLC);
 
@@ -101,7 +101,7 @@ class CLASS(Unit_Phase1_CLC): CLASS(Unit_Phase1_Base)
 class CLASS(Unit_Phase1_CPL): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 05 - Clone Corporal";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CPL));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_CPL);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CPL);
@@ -121,7 +121,7 @@ class CLASS(Unit_Phase1_CPL): CLASS(Unit_Phase1_Base)
 class CLASS(Unit_Phase1_CS): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 06 - Clone Sergeant";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CS));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_CS);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CS);
@@ -139,7 +139,7 @@ class CLASS(Unit_Phase1_CS): CLASS(Unit_Phase1_Base)
 class CLASS(Unit_Phase1_CSS): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 07 - Clone Staff Sergeant";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CSS));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_CSS);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSS);
@@ -157,7 +157,7 @@ class CLASS(Unit_Phase1_CSS): CLASS(Unit_Phase1_Base)
 class CLASS(Unit_Phase1_CSFC): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 08 - Clone Sergeant First Class";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CSFC));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_CSFC);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSFC);
@@ -175,7 +175,7 @@ class CLASS(Unit_Phase1_CSFC): CLASS(Unit_Phase1_Base)
 class CLASS(Unit_Phase1_CMS): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 09 - Clone Master Sergeant";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CMS));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_CMS);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSFC);
@@ -193,7 +193,7 @@ class CLASS(Unit_Phase1_CMS): CLASS(Unit_Phase1_Base)
 class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 {
     displayName = "INF 10 - Clone Sergeant Major";
-    editorPreview = EDITOR_PREVIEW(CLASS(Unit_Phase1_CSM));
+    editorPreview = EDITOR_PREVIEW(Unit_Phase1_CSM);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSM);

@@ -62,7 +62,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Transport";
-        editorPreview = QPATHTOF(land\gammoth\data\previews\CLASS(Gammoth_Transport).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Transport);
     };
 
     class CLASS(Gammoth_Covered): CLASS(Gammoth_Base)
@@ -70,7 +70,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Transport (Covered)";
-        editorPreview = QPATHTOF(land\gammoth\data\previews\CLASS(Gammoth_Covered).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Covered);
 
         model = "\A3\Soft_F_EPC\Truck_03\Truck_03_covered_F.p3d";
         hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "Camo4"};
@@ -117,7 +117,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Ammo Truck";
-        editorPreview = QPATHTOF(land\gammoth\data\previews\CLASS(Gammoth_Ammo).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Ammo);
 
         ace_cargo_space = 8;
         ace_rearm_defaultSupply = 1200;
@@ -175,7 +175,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Medical Truck";
-        editorPreview = QPATHTOF(land\gammoth\data\previews\CLASS(Gammoth_Medical).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Medical);
 
         ace_cargo_space = 8;
         supplyRadius = 10;
@@ -229,7 +229,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Repair Truck";
-        editorPreview = QPATHTOF(land\gammoth\data\previews\CLASS(Gammoth_Repair).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Repair);
 
         ace_cargo_space = 12;
         ace_repair_canRepair = 1;
@@ -279,7 +279,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Refuel Truck";
-        editorPreview = QPATHTOF(land\gammoth\data\previews\CLASS(Gammoth_Refuel).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Refuel);
 
         ace_cargo_space = 4;
         ace_refuel_canReceive = 1;
@@ -339,7 +339,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Device Truck";
-        editorPreview = QPATHTOF(land\gammoth\data\previews\CLASS(Gammoth_Device).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Device);
 
         ace_cargo_space = 4;
         aggregateReflectors[] = {{"Left", "Right", "Left2", "Right2"}, {"Light_1"}};

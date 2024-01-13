@@ -29,7 +29,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_APCs);
-        editorPreview = QPATHTOF(land\juggernaut\data\previews\CLASS(Juggernaut).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Juggernaut);
 
         displayName = "HAVw A6 Juggernaut";
         crew = QCLASS(Unit_Phase2_Tanker_CT);

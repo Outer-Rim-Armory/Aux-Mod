@@ -32,7 +32,7 @@ class CfgVehicles
         author = "Keeli Company Aux Team";
 
         editorSubcategory = QCLASS(EdSubCat_APCs);
-        editorPreview = QPATHTOF(land\conga\data\previews\CLASS(Conga_IFV_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Conga_IFV_Tan);
 
         displayName = "Conga IFV";
 
@@ -133,7 +133,7 @@ class CfgVehicles
         author = "SweMonkey and DartRuffian";
 
         editorSubcategory = QCLASS(EdSubCat_APCs);
-        editorPreview = QPATHTOF(land\conga\data\previews\CLASS(Conga_MGS_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Conga_MGS_Tan);
 
         displayName = "Conga MGS";
 

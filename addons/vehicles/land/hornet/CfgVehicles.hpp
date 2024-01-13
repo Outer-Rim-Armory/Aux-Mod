@@ -8,7 +8,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
-        editorPreview = QPATHTOF(land\hornet\data\previews\CLASS(Hornet_Unarmed).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
 
         displayName = "Hornet Strike Vehicle";
         crew = QCLASS(Unit_Phase2_CT);
@@ -77,7 +77,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
-        editorPreview = QPATHTOF(land\hornet\data\previews\CLASS(Hornet_MG).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_MG);
 
         displayName = "Hornet Strike Vehicle (MG)";
         crew = QCLASS(Unit_Phase2_CT);
@@ -183,7 +183,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
-        editorPreview = QPATHTOF(land\hornet\data\previews\CLASS(Hornet_AT).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_AT);
 
         displayName = "Hornet Strike Vehicle (AT)";
         crew = QCLASS(Unit_Phase2_CT);

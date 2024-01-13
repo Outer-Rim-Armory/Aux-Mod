@@ -146,7 +146,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         editorSubcategory = QCLASS(EdSubCat_SpecialForces);
-        editorPreview = QPATHTOF(cis\data\previews\CLASS(CIS_Unit_Droid_BX).jpg);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX);
 
         displayName = "BX Commando Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_BX);
@@ -198,6 +198,6 @@ class CfgVehicles
         typicalCargo[] = {QCLASS(CIS_Unit_Droid_B1_Crew)};
 
         hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\CIS_AAT_CO.paa"};
-        editorPreview = QPATHTOEF(vehicles,land\aat\data\previews\CLASS(AAT_Blue).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\aat,AAT_Blue);
     };
 };

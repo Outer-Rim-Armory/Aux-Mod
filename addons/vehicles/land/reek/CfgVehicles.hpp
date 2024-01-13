@@ -20,7 +20,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_APCs);
-        editorPreview = QPATHTOF(land\reek\data\previews\CLASS(Reek).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Reek);
 
         displayName = "Reek IFV";
         crew = QCLASS(Unit_Phase2_Tanker_CT);

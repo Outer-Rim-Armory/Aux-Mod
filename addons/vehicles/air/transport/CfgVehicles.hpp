@@ -12,7 +12,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Helicopters);
-        editorPreview = QPATHTOF(air\transport\data\previews\CLASS(RepublicTransport).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,RepublicTransport);
 
         displayName = "Republic Transport";
         crew = QCLASS(Unit_Phase2_CXA);

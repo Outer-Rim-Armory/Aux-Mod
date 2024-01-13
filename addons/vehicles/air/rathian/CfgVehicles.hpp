@@ -11,7 +11,7 @@ class CfgVehicles
         author = "Keeli Company Aux Team";
 
         editorSubcategory = QCLASS(EdSubCat_Helicopters);
-        editorPreview = QPATHTOF(air\rathian\data\previews\CLASS(Rathian_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Rathian_Tan);
 
         displayName = "Rathian";
 

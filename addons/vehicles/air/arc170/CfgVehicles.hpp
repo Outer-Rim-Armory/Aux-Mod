@@ -20,7 +20,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Planes);
-        editorPreview = QPATHTOF(air\arc170\data\previews\CLASS(ARC170).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,ARC170);
 
         displayName = "ARC-170";
         crew = QCLASS(Unit_Phase2_CXA);

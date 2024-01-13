@@ -26,7 +26,7 @@ class CfgVehicles
         author = "Keeli Company Aux Team";
 
         editorSubcategory = QCLASS(EdSubCat_Helicopters);
-        editorPreview = QPATHTOF(air\ogre\data\previews\CLASS(Ogre_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Ogre_Tan);
 
         displayName = "Ogre";
 
@@ -71,7 +71,7 @@ class CfgVehicles
     class CLASS(Ogre_Armed_Base): CLASS(Ogre_Base)
     {
         displayName = "Ogre (Armed)";
-        editorPreview = QPATHTOF(air\ogre\data\previews\CLASS(Ogre_Armed_Tan).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Ogre_Armed_Tan);
         hiddenSelections[] = {"camo1", "camo3", "clan", "clan_text", "insignia"};
 
         class Turrets: Turrets

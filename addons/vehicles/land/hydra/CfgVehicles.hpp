@@ -20,7 +20,7 @@ class CfgVehicles
         side = BLUFOR;
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_APCs);
-        editorPreview = QPATHTOF(land\hydra\data\previews\CLASS(Hydra).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hydra);
 
         displayName = "Hydra";
         crew = QCLASS(Unit_Phase2_Tanker_CT);

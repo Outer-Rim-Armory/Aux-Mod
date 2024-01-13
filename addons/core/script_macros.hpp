@@ -29,11 +29,11 @@
 #define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> QUOTE(var1))
 
 #ifdef SUBCOMPONENT
-    #define EDITOR_PREVIEW(CLASS) QPATHTOF(SUBCOMPONENT\data\previews\CLASS.jpg)
+    #define EDITOR_PREVIEW(var1) QPATHTOF(SUBCOMPONENT\data\previews\CLASS(var1).jpg)
 #else
-    #define EDITOR_PREVIEW(CLASS) QPATHTOF(data\previews\CLASS.jpg)
+    #define EDITOR_PREVIEW(var1) QPATHTOF(data\previews\CLASS(var1).jpg)
 #endif
-#define EEDITOR_PREVIEW(COMPONENT,CLASS) QUOTE(PATHTOF_SYS(PREFIX,COMPONENT,data\previews\CLASS.jpg))
+#define EEDITOR_PREVIEW(var1,var2) QUOTE(PATHTOF_SYS(PREFIX,var1,data\previews\CLASS(var2).jpg))
 
 #define QQPATHTOF(var1) QUOTE(QPATHTOF(var1))
 #define QQPATHTOEF(var1,var2) QUOTE(QPATHTOEF(var1,var2))

@@ -10,7 +10,7 @@ class CfgVehicles
         editorSubcategory = QCLASS(Edsubcat_Droids);
 
         model = "\RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
-        editorPreview = EDITOR_PREVIEW(CLASS(Deployable_MedicalDroid));
+        editorPreview = EDITOR_PREVIEW(Deployable_MedicalDroid);
 
         GVAR(areaHealRadius) = 7;
         GVAR(areaHealRate) = 6;

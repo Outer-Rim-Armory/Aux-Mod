@@ -8,7 +8,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Tanks);
-        editorPreview = QPATHTOF(land\tx130\data\previews\CLASS(TX130_M1).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_M1);
 
         displayName = "TX-130 Saber Tank";
         crew = QCLASS(Unit_Phase2_Tanker_CT);

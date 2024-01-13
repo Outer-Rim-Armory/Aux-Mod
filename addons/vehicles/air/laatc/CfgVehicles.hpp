@@ -13,7 +13,7 @@ class CfgVehicles
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Helicopters);
-        editorPreview = QPATHTOF(air\laatc\data\previews\CLASS(LAATc).jpg);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATc);
 
         displayName = "LAAT/c";
         crew = QCLASS(Unit_Phase2_CXA);
