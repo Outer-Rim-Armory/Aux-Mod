@@ -10,26 +10,26 @@
 #define AMMO_USAGE_AIRCRAFT 256
 #define AMMO_USAGE_ARMORED_VEHICLES 512
 
-#define ATTACHMENTS_OPTIC_SHORT /*Aux501_cows_RCO = TRUE; \
+#define ATTACHMENTS_OPTIC_SHORT Aux501_cows_RCO = TRUE; \
 Aux501_cows_RCO_2 = TRUE; \
-Aux501_cows_RCO_3 = TRUE;*/ \
+Aux501_cows_RCO_3 = TRUE; \
 CLASS(Optic_Holosight) = TRUE
-#define ATTACHMENTS_OPTIC_MEDIUM /*Aux501_cows_MRCO = TRUE; \
+#define ATTACHMENTS_OPTIC_MEDIUM Aux501_cows_MRCO = TRUE; \
 Aux501_cows_MRCO_2 = TRUE; \
-Aux501_cows_MRCO_3 = TRUE*/
-#define ATTACHMENTS_OPTIC_LONG /*Aux501_cows_DMS = TRUE; \
+Aux501_cows_MRCO_3 = TRUE
+#define ATTACHMENTS_OPTIC_LONG Aux501_cows_DMS = TRUE; \
 Aux501_cows_DMS_2 = TRUE; \
 Aux501_cows_DMS_3 = TRUE; \
 Aux501_cows_DMS_4 = TRUE; \
 Aux501_cows_HoloScope = TRUE; \
 Aux501_cows_HoloScope_2 = TRUE; \
-Aux501_cows_HoloScope_3 = TRUE*/
-#define ATTACHMENTS_OPTIC_SIGHTS /*Aux501_cows_Holosight = TRUE; \
+Aux501_cows_HoloScope_3 = TRUE
+#define ATTACHMENTS_OPTIC_SIGHTS Aux501_cows_Holosight = TRUE; \
 Aux501_cows_Holosight_2 = TRUE; \
 Aux501_cows_Holosight_3 = TRUE; \
-Aux501_cows_reflex_optic = TRUE*/
-#define ATTACHMENTS_OPTIC_PISTOL /*Aux501_cows_pistol = TRUE; \
-Aux501_cows_pistol_2 = TRUE*/
+Aux501_cows_reflex_optic = TRUE
+#define ATTACHMENTS_OPTIC_PISTOL Aux501_cows_pistol = TRUE; \
+Aux501_cows_pistol_2 = TRUE
 
 #define ATTACHMENTS_POINTER_BASE acc_pointer_ir = TRUE; \
 ace_acc_pointer_green = TRUE; \
