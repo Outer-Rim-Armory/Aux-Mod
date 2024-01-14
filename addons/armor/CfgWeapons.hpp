@@ -213,21 +213,32 @@ class CfgWeapons
         };
     };
 
-    class CLASS(NVG_phase2_Visor): CLASS(NVG_Chip)
+    class CLASS(NVG_phase1_Visor): CLASS(NVG_Chip)
     {
-        displayName = "[KC] Clone P2 NV Visor";
+        displayName = "[KC] Clone P1 NV Visor";
 
-        model = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
+        model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_p1Visor_nvg_on.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
-        hiddenSelectionsTextures[] =
-        {
-            QPATHTOF(data\nvgs\visor_camo1_co.paa)
-        };
+        hiddenSelectionsTextures[] = {"\lsd_equipment_bluefor\accessories\gar\visor\data\SWLB_clone_nvg_co.paa"};
         picture = "\lsd_equipment_bluefor\nvg\gar\_ui\icon_SWLB_clone_nvg_ca.paa";
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_p1Visor_nvg_on.p3d";
+            modelOff = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_p1Visor_nvg_off.p3d";
+        };
+    };
+
+    class CLASS(NVG_phase2_Visor): CLASS(NVG_phase1_Visor)
+    {
+        displayName = "[KC] Clone P2 NV Visor";
+
+        model = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\visor_camo1_co.paa)};
+
+        class ItemInfo: ItemInfo
+        {
             uniformModel = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
             modelOff = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_off.p3d";
         };
