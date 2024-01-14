@@ -387,6 +387,7 @@ class CfgPatches
             QCLASS(NVG_Chip),
             QCLASS(NVG_phase2_Visor),
             QCLASS(NVG_phase2_Visor_v2),
+            QCLASS(NVG_phase1_Rangefinder),
             QCLASS(NVG_phase2_Rangefinder),
             QCLASS(NVG_phase2_Officer),
             QCLASS(NVG_Engineer),

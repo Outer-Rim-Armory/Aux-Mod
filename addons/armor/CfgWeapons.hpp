@@ -241,21 +241,32 @@ class CfgWeapons
         };
     };
 
-    class CLASS(NVG_phase2_Rangefinder): CLASS(NVG_Chip)
+    class CLASS(NVG_phase1_Rangefinder): CLASS(NVG_Chip)
     {
-        displayName = "[KC] Clone P2 Rangefinder (CS+)";
+        displayName = "[KC] ARC P1 Rangefinder";
 
-        model = "\lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
+        model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] =
-        {
-            QPATHTOF(data\nvgs\rangefinder_camo1_co.paa)
-        };
+        hiddenSelectionsTextures[] = {"\lsd_equipment_bluefor\accessories\gar\visor\data\swlb_clone_nvg_co.paa"};
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_rangefinder_ca.paa";
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo1"};
+            uniformModel = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_p1Rangefinder_nvg_on.p3d";
+            modelOff = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_p1Rangefinder_nvg_off.p3d";
+        };
+    };
+
+    class CLASS(NVG_phase2_Rangefinder): CLASS(NVG_phase1_Rangefinder)
+    {
+        displayName = "[KC] Clone P2 Rangefinder (CS+)";
+
+        model = "\lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\rangefinder_camo1_co.paa)};
+
+        class ItemInfo: ItemInfo
+        {
             uniformModel = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
             modelOff = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
         };
