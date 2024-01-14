@@ -334,7 +334,7 @@ class CLASS(Uniform_phase1Geo_Enlisted): CLASS(Uniform_Base)
     displayName = "[KC] INF GEO 01 (Enlisted)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Uniform_phase1Geo_Enlisted);
+        uniformClass = QCLASS(Unit_phase1Geo_Enlisted);
     };
 };
 
@@ -343,7 +343,7 @@ class CLASS(Uniform_phase1Geo_NCO): CLASS(Uniform_Base)
     displayName = "[KC] INF GEO 02 (NCO)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Uniform_phase1Geo_NCO);
+        uniformClass = QCLASS(Unit_phase1Geo_NCO);
     };
 };
 
@@ -352,7 +352,7 @@ class CLASS(Uniform_phase1Geo_Officer): CLASS(Uniform_Base)
     displayName = "[KC] INF GEO 03 (Officer)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Uniform_phase1Geo_Officer);
+        uniformClass = QCLASS(Unit_phase1Geo_Officer);
     };
 };
 
@@ -361,7 +361,7 @@ class CLASS(Uniform_phase1Geo_Captain): CLASS(Uniform_Base)
     displayName = "[KC] INF GEO 04 (Captain)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Uniform_phase1Geo_Captain);
+        uniformClass = QCLASS(Unit_phase1Geo_Captain);
     };
 };
 
@@ -370,6 +370,6 @@ class CLASS(Uniform_phase1Geo_Commander): CLASS(Uniform_Base)
     displayName = "[KC] INF GEO 05 (Commander)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Uniform_phase1Geo_Commander);
+        uniformClass = QCLASS(Unit_phase1Geo_Commander);
     };
 };
