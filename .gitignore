@@ -6,7 +6,7 @@ releases/
 # Development
 !Developer Files
 references/
-addons/dev/missions
+optionals/dev/missions
 
 # Textures
 Exports/
