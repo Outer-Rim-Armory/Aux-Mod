@@ -188,7 +188,7 @@ class CLASS(Uniform_Phase2_Insulated_Dexus): CLASS(Uniform_Phase2_Insulated_Base
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Unit_Insulated_Dexus);
+        uniformClass = QCLASS(Unit_Phase2_Insulated_Dexus);
     };
 };
 
@@ -199,7 +199,7 @@ class CLASS(Uniform_Phase2_Insulated_Joe): CLASS(Uniform_Phase2_Insulated_Base)
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Unit_Insulated_Joe);
+        uniformClass = QCLASS(Unit_Phase2_Insulated_Joe);
     };
 };
 
@@ -210,6 +210,6 @@ class CLASS(Uniform_Phase2_Insulated_Keeli): CLASS(Uniform_Phase2_Insulated_Base
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Unit_Insulated_Keeli);
+        uniformClass = QCLASS(Unit_Phase2_Insulated_Keeli);
     };
 };
