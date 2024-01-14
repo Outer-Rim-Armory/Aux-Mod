@@ -52,4 +52,6 @@ class CfgPatches
     class CLASS(Vehicles_Light): ADDON {};
     class CLASS(Vehicles_Support): ADDON {};
     class CLASS(Vehicles_Drones): ADDON {};
+    class CLASS(Vehicles_Badger): ADDON {};
+    class CLASS(Vehicles_OLV20): ADDON {};
 };
