@@ -69,6 +69,28 @@ class CLASS(Uniform_FilSquad): CLASS(Uniform_Base)
     };
 };
 
+class CLASS(Uniform_HowzerBlue): CLASS(Uniform_Base)
+{
+    displayName = "[KC] INF Armor ('Howzer') [Blue]";
+    GVAR(isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = QCLASS(Unit_Phase2_HowzerBlue);
+    };
+};
+
+class CLASS(Uniform_HowzerBrown): CLASS(Uniform_Base)
+{
+    displayName = "[KC] INF Armor ('Howzer') [Brown]";
+    GVAR(isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = QCLASS(Unit_Phase2_HowzerBrown);
+    };
+};
+
 class CLASS(Uniform_Joe): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor ('Joe')";

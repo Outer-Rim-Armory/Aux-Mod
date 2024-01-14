@@ -71,6 +71,52 @@ class CLASS(Unit_FilSquad): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_Phase2_HowzerBlue): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Howzer (Blue)";
+    uniformClass = QCLASS(Uniform_HowzerBlue);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\HowzerBlue_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\HowzerBlue_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    editorSubcategory = QCLASS(EdSubCat_Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_HowzerBlue);
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_HowzerBlue), QCLASS(Vest_WO_Howzer), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_HowzerBlue), QCLASS(Vest_WO_Howzer), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+};
+class CLASS(Unit_Phase2_HowzerBrown): CLASS(Unit_Phase2_HowzerBlue)
+{
+    displayName = "Howzer (Brown)";
+    uniformClass = QCLASS(Uniform_HowzerBrown);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\HowzerBrown_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\HowzerBrown_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_HowzerBrown);
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_HowzerBrown), QCLASS(Vest_WO), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_HowzerBrown), QCLASS(Vest_WO), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+};
+
 class CLASS(Unit_Joe): CLASS(Unit_Phase2_Base)
 {
     SCOPE_HIDDEN;

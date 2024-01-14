@@ -170,6 +170,30 @@ class CLASS(Helmet_Phase2_Hazard): CLASS(Helmet_Phase2_Base)
     GVAR(isCustom) = TRUE;
 };
 
+class CLASS(Helmet_Phase2_HowzerBlue): CLASS(Helmet_Phase2_Base)
+{
+    displayName = "[KC] INF P2 Helm ('Howzer') [Blue]";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase2\HowzerBlue_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+
+    GVAR(isCustom) = TRUE;
+};
+
+class CLASS(Helmet_Phase2_HowzerBrown): CLASS(Helmet_Phase2_Base)
+{
+    displayName = "[KC] INF P2 Helm ('Howzer') [Brown]";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase2\HowzerBrown_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+
+    GVAR(isCustom) = TRUE;
+};
+
 class CLASS(Helmet_Phase2_Jackal): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm ('Jackal')";

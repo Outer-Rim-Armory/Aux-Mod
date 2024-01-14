@@ -16,7 +16,7 @@ class CfgWeapons
     class CLASS(Vest_Commander);
     class CLASS(Vest_Commander_Keeli): CLASS(Vest_Commander)
     {
-        displayName = "[KC] INF Vest 18 ('Keeli')";
+        displayName = "[KC] INF Vest ('Keeli')";
         hiddenSelectionsTextures[] =
         {
             QPATHTOF(data\vests\officer\Keeli_camo1_co.paa),
@@ -33,7 +33,7 @@ class CfgWeapons
     };
     class CLASS(Vest_Officer_Ponds): CLASS(Vest_Officer)
     {
-        displayName = "[KC] INF Vest 12+ ('Ponds')";
+        displayName = "[KC] INF Vest ('Ponds')";
         hiddenSelectionsTextures[] =
         {
             QPATHTOF(data\vests\officer\Ponds_camo1_co.paa)
@@ -48,10 +48,21 @@ class CfgWeapons
     };
     class CLASS(Vest_Officer_Rat): CLASS(Vest_Officer)
     {
-        displayName = "[KC] INF Vest 12+ ('Rat')";
+        displayName = "[KC] INF Vest ('Rat')";
         hiddenSelectionsTextures[] =
         {
             QPATHTOF(data\vests\officer\Rat_camo1_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+
+    class CLASS(Vest_WO_Howzer): CLASS(Vest_Officer)
+    {
+        displayName = "[KC] INF Vest ('Howzer')";
+        hiddenSelectionsTextures[] =
+        {
+            QPATHTOF(data\vests\officer\Howzer_camo1_co.paa)
         };
 
         GVAR(isCustom) = TRUE;
