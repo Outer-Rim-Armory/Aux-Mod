@@ -30,7 +30,7 @@ class CfgWeapons
         {
             class OpticsModes
             {
-                class ACO
+                class Sight
                 {
                     opticsID = 1;
                     useModelOptics = FALSE;
