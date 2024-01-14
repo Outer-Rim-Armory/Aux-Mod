@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+// TODO: Make dev an optional addon, so that it is not included in release
+
 class CfgPatches
 {
     class ADDON
