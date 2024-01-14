@@ -1,0 +1,129 @@
+name = "Keeli Company Auxillary Mod"
+author = "DartRuffian"
+prefix = "BNA_KC"
+mainprefix = "ORA"
+
+[version]
+path = "addons/core/script_version.hpp"
+git_hash = 0
+
+[files]
+include = [
+    "mod.cpp",
+    "meta.cpp",
+    "logo_kc_ca.paa",
+    # "LICENSE",
+    "README.md"
+]
+exclude = [
+    "*.spp",
+    "*.spp.painter_lock",
+    "*.psd"
+]
+
+[properties]
+author = "DartRuffian"
+url = "https://github.com/DartRuffian/KeeliCompanyAux"
+
+[hemtt.launch.default]
+workshop = [
+    "450814997",  # CBA
+    "463939057",  # ACE
+    "894678801",  # TFAR
+    "2369477168", # ADT
+    "623475643",  # 3DEN
+    "1779063631", # ZEN
+    "2018593688", # ZEN ACE Compat
+    "1940589429", # JLTS
+    "2332457910", # JLTS TFAR
+    "2058554822", # 3AS
+    "2215872933", # 3AS Terrains
+    "2162749089", # LS
+    "1969012355", # LS TFAR
+    "2320596778", # LS Battlefields
+    "2291129343", # Improved Melee System
+    "2567352444", # WBK Droids
+    "2061309401", # LFP
+    "1393068220", # Kobra
+    "769440155",  # OPTRE
+    "2173635424", # 501st Aux
+    "767380317"   # Blastcore # Only used to test particle effects
+]
+presets = []
+dlc = []
+optionals = ["dev"]
+parameters = ["ORA\\BNA_KC\\addons\\dev\\missions\\AuxTest.VR\\mission.sqm"]
+
+[hemtt.launch.full]
+workshop = [
+    "450814997",  # CBA
+    "463939057",  # ACE
+    "894678801",  # TFAR
+    "2369477168", # ADT
+    "623475643",  # 3DEN
+    "1779063631", # ZEN
+    "2018593688", # ZEN ACE Compat
+    "1940589429", # JLTS
+    "2332457910", # JLTS TFAR
+    "2058554822", # 3AS
+    "2215872933", # 3AS Terrains
+    "2162749089", # LS
+    "1969012355", # LS TFAR
+    "2320596778", # LS Battlefields
+    # "1686872930", # SDT # ! Not currently used
+    "2291129343", # Improved Melee System
+    "2567352444", # WBK Droids
+    "2061309401", # LFP
+    "1393068220", # Kobra
+    "2306758518", # Kobra LS
+    "2323185592", # Lightsabers and Force
+    "769440155",  # OPTRE
+    "1572627279", # OPTRE First Contact
+    "2173635424", # 501st Aux
+    "2915485125", # Burn 'Em
+    "767380317",  # Blastcore
+    "2789152015", # WBK Zombies
+    "2478080991"  # Scion Conflict
+]
+presets = []
+dlc = []
+optionals = ["dev"]
+parameters = ["ORA\\BNA_KC\\addons\\dev\\missions\\AuxTest.VR\\mission.sqm"]
+
+[hemtt.launch.previews]
+workshop = [
+    "450814997",  # CBA
+    "463939057",  # ACE
+    "894678801",  # TFAR
+    "2369477168", # ADT
+    "623475643",  # 3DEN
+    "1779063631", # ZEN
+    "2018593688", # ZEN ACE Compat
+    "1940589429", # JLTS
+    "2058554822", # 3AS
+    "2215872933", # 3AS Terrains
+    "2162749089", # LS
+    "1969012355", # LS TFAR
+    "2320596778", # LS Battlefields
+    "1686872930", # SDT
+    "2567352444", # WBK Droids
+    "2061309401", # LFP
+    "1393068220", # Kobra
+    "2306758518", # Kobra LS
+    "2291129343", # Improved Melee System
+    "2323185592", # Lightsabers and Force
+    "769440155",  # OPTRE
+    "1572627279", # OPTRE First Contact
+    "2173635424", # 501st Aux
+    "2915485125", # Burn 'Em
+    "767380317",  # Blastcore
+    "2789152015", # WBK Zombies
+    "2478080991"  # Scion Conflict
+]
+presets = []
+dlc = []
+optionals = []
+parameters = [
+    "C:\\Users\\skull\\OneDrive\\Documents\\Arma 3 - Other Profiles\\Previews\\missions\\Previews.VR\\mission.sqm",
+    "-name=Previews"
+]

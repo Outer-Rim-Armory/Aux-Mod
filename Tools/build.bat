@@ -1,3 +1,4 @@
-cd ./Tools
-call pack.bat
-call launch.bat
+@echo off
+@REM hemtt.exe script update_build.rhai
+hemtt.exe build
+pause
