@@ -13,7 +13,3 @@ Exports/
 *.spp
 *.spp.painter_lock
 *.psd
-
-# Other
-# Move to optionals/
-BNA_KC_Memes
