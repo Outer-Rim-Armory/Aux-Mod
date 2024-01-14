@@ -1,6 +1,12 @@
+class CBA_Extended_EventHandlers_base;
+
 class CfgVehicles
 {
-    class ls_redforUnit_base;
+    class O_Soldier_02_F;
+    class ls_redforUnit_base: O_Soldier_02_F
+    {
+        class EventHandlers;
+    };
     class CLASS(OPFOR_Unit_Base): ls_redforUnit_base
     {
         SCOPE_PRIVATE;
@@ -21,9 +27,18 @@ class CfgVehicles
         linkedItems[] = {};
         respawnLinkedItems[] = {};
         backpack = "";
+
+        class EventHandlers: EventHandlers
+        {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+        };
     };
 
-    class ls_greenforUnit_base;
+    class I_Soldier_02_F;
+    class ls_greenforUnit_base: I_Soldier_02_F
+    {
+        class EventHandlers;
+    };
     class CLASS(INDEP_Unit_Base): ls_greenforUnit_base
     {
         SCOPE_PRIVATE;
@@ -41,6 +56,11 @@ class CfgVehicles
         linkedItems[] = {};
         respawnLinkedItems[] = {};
         backpack = "";
+
+        class EventHandlers: EventHandlers
+        {
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+        };
     };
 
     class Bag_Base;

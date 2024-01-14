@@ -27,14 +27,14 @@ class CfgVehicles
         respawnMagazines[] = {QCLASS(Mag_100rnd_E5)};
         items[] =
         {
-            // Other
+            // Medical
             ITEM_10("ACE_elasticBandage"),
             ITEM_4("ACE_tourniquet"),
             "FirstAidKit"
         };
         respawnItems[] =
         {
-            // Other
+            // Medical
             ITEM_10("ACE_elasticBandage"),
             ITEM_4("ACE_tourniquet"),
             "FirstAidKit"
@@ -143,7 +143,6 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "[TU] Backpack";
-        descriptionshort = "Techno Union Backpack";
 
         model = "\sc_equipment\data\marine\mr_backpack.p3d";
         hiddenSelections[] = {"camo"};
@@ -248,8 +247,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\backpack_desert_co.paa"};
         picture = "\sc_equipment\data\icons\icon_ar_ca.paa";
 
-        // TFAR Long Range
-        tf_hasLRradio = 1;
+        tf_hasLRradio = TRUE;
         tf_range = 25000;
 
         tf_dialog = "mr3000_radio_dialog";

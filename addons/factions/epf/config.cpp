@@ -11,7 +11,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QGVAR(tu)
+            "sc_equipment"
         };
         units[] =
         {
@@ -84,3 +84,4 @@ class CfgPatches
 #include "CfgFactionClasses.hpp"
 #include "CfgGroups.hpp"
 #include "CfgIdentities.hpp"
+#include "CfgEventHandlers.hpp"

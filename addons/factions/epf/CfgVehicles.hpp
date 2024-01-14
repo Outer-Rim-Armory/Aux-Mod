@@ -1,12 +1,43 @@
 class CfgVehicles
 {
-    class CLASS(TU_Unit_Rifleman);
-    class CLASS(EPF_Unit_Rifleman): CLASS(TU_Unit_Rifleman)
+    class CLASS(OPFOR_Unit_Base);
+    class CLASS(EPF_Unit_Base): CLASS(OPFOR_Unit_Base)
     {
+        SCOPE_HIDDEN;
         faction = QCLASS(Faction_EPF);
         uniformClass = QCLASS(EPF_Uniform);
+
+        model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
+        hiddenSelections[] = {"camo", "insignia"};
         hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_green_co.paa"};
+    };
+
+    class CLASS(EPF_Unit_Rifleman): CLASS(EPF_Unit_Base)
+    {
+        SCOPE_PUBLIC;
+        displayName = "Rifleman";
         editorPreview = EDITOR_PREVIEW(EPF_Unit_Rifleman);
+
+        weapons[] = {QCLASS(E5), "", "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(E5), "", "Throw", "Put"};
+
+        magazines[] = {QCLASS(Mag_100rnd_E5)};
+        respawnMagazines[] = {QCLASS(Mag_100rnd_E5)};
+
+        items[] =
+        {
+            // Medical
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+            "FirstAidKit"
+        };
+        respawnItems[] =
+        {
+            // Medical
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+            "FirstAidKit"
+        };
 
         linkedItems[] = {QCLASS(EPF_Helmet), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(EPF_Helmet), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
@@ -90,13 +121,17 @@ class CfgVehicles
         backpack = QCLASS(EPF_Backpack_RTO_Predef_SL);
     };
 
-    class CLASS(TU_Unit_Melee);
-    class CLASS(EPF_Unit_Melee): CLASS(TU_Unit_Melee)
+    class CLASS(EPF_Unit_Melee): CLASS(EPF_Unit_Base)
     {
-        faction = QCLASS(Faction_EPF);
-        uniformClass = QCLASS(EPF_Uniform);
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_green_co.paa"};
+        SCOPE_PUBLIC;
+
+        displayName = "Swordsman (Rush)";
         editorPreview = EDITOR_PREVIEW(EPF_Unit_Melee);
+
+        weapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
+        respawnWeapons[] = {"", "WBK_SciFi_Sword_2", "Throw", "Put"};
+        magazines[] = {"WBK_Cybercrystal"};
+        respawnMagazines[] = {"WBK_Cybercrystal"};
 
         linkedItems[] = {QCLASS(EPF_Helmet_Visor), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(EPF_Helmet_Visor), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
@@ -181,11 +216,17 @@ class CfgVehicles
         };
     };
 
-    class CLASS(TU_Backpack);
-    class CLASS(EPF_Backpack): CLASS(TU_Backpack)
+    class CLASS(Other_Backpack_Base);
+    class CLASS(EPF_Backpack): CLASS(Other_Backpack_Base)
     {
+        SCOPE_PUBLIC;
+
         displayName = "[EPF] Backpack";
+
+        model = "\sc_equipment\data\marine\mr_backpack.p3d";
+        hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\sc_equipment\data\marine\textures\backpack_green_co.paa"};
+        picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
     class CLASS(EPF_Backpack_Predef_Rifleman): CLASS(EPF_Backpack)
     {
@@ -202,11 +243,15 @@ class CfgVehicles
         };
     };
 
-    class CLASS(TU_Backpack_Heavy);
-    class CLASS(EPF_Backpack_Heavy): CLASS(TU_Backpack_Heavy)
+    class CLASS(EPF_Backpack_Heavy): CLASS(EPF_Backpack)
     {
         displayName = "[EPF] Heavy Backpack";
+        maximumLoad = 450;
+        mass = 35;
+
+        model = "\sc_equipment\data\wasp\wp_backpack.p3d";
         hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_green_co.paa"};
+        picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
     class CLASS(EPF_Backpack_Heavy_Predef_AT): CLASS(EPF_Backpack_Heavy)
     {
@@ -240,11 +285,15 @@ class CfgVehicles
         };
     };
 
-    class CLASS(TU_Backpack_Assault);
-    class CLASS(EPF_Backpack_Assault): CLASS(TU_Backpack_Assault)
+    class CLASS(EPF_Backpack_Assault): CLASS(EPF_Backpack)
     {
         displayName = "[EPF] Assault Backpack";
+        maximumLoad = 300;
+        mass = 35;
+
+        model = "\sc_equipment\data\wasp\wp_backpack_sl.p3d";
         hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_green_co.paa"};
+        picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
     class CLASS(EPF_Backpack_Assault_Predef_Heavy): CLASS(EPF_Backpack_Assault)
     {
@@ -273,11 +322,21 @@ class CfgVehicles
         };
     };
 
-    class CLASS(TU_Backpack_RTO);
-    class CLASS(EPF_Backpack_RTO): CLASS(TU_Backpack_RTO)
+    class CLASS(EPF_Backpack_RTO): CLASS(EPF_Backpack)
     {
         displayName = "[EPF] Radio Backpack";
+        mass = 35;
+
+        model = "\sc_equipment\data\watchdog\wd_backpack_sl.p3d";
         hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\backpack_co.paa"};
+
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+
+        tf_dialog = "mr3000_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_east_radio_code";
+        tf_subtype = "digital_lr";
     };
     class CLASS(EPF_Backpack_RTO_Predef_SL): CLASS(EPF_Backpack_RTO)
     {

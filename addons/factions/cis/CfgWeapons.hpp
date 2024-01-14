@@ -66,11 +66,14 @@ class CfgWeapons
         };
     };
 
-    class VestItem;
-    class Vest_NoCamo_Base;
+    class ItemCore;
+    class Vest_NoCamo_Base: ItemCore
+    {
+        class ItemInfo;
+    };
     class V_PlateCarrier1_rgr: Vest_NoCamo_Base
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {

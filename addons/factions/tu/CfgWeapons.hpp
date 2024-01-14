@@ -40,7 +40,6 @@ class CfgWeapons
         displayName = "[TU] Visor Helmet";
 
         model = "\sc_equipment\data\wasp\wp_helmet.p3d";
-        hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\helmet_co.paa"};
 
         class ItemInfo: ItemInfo
@@ -98,11 +97,14 @@ class CfgWeapons
         };
     };
 
-    class VestItem;
-    class Vest_NoCamo_Base;
+    class ItemCore;
+    class Vest_NoCamo_Base: ItemCore
+    {
+        class ItemInfo;
+    };
     class V_PlateCarrier1_rgr: Vest_NoCamo_Base
     {
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
         {
             class HitpointsProtectionInfo
             {
@@ -143,6 +145,7 @@ class CfgWeapons
     {
         displayName = "[TU] Medium Vest";
         descriptionShort = "Armor Level IV";
+
         model = "\sc_equipment\data\marine\mr_vest.p3d";
         hiddenSelections[] = {"camo", "camo1"};
         hiddenSelectionsTextures[] =
