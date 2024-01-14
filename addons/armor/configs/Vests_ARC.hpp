@@ -61,6 +61,27 @@ class CLASS(Vest_ARC_Imperial): CLASS(Vest_ARC)
     };
 };
 
+
+class CLASS(Vest_ARC_Phase1Geo_Officer): CLASS(Vest_ARC)
+{
+    displayName = "[KC] SF ARC GEO 01 (Officer)";
+    hiddenSelectionsTextures[] =
+    {
+        "",
+        QPATHTOF(data\vests\arc\LT_P1_camo2_co.paa)
+    };
+};
+
+class CLASS(Vest_ARC_Phase1Geo_Captain): CLASS(Vest_ARC)
+{
+    displayName = "[KC] SF ARC GEO 02 (Captain)";
+    hiddenSelectionsTextures[] =
+    {
+        "",
+        QPATHTOF(data\vests\arc\CAP_P1_camo2_co.paa)
+    };
+};
+
 class CLASS(Vest_ARC_v2): CLASS(Vest_ARC)
 {
     displayName = "[KC] SF ARC Vest (v2)";

@@ -377,6 +377,8 @@ class CfgPatches
             QCLASS(Vest_ARC_Light),
             QCLASS(Vest_ARC_v2),
             QCLASS(Vest_ARC_Imperial),
+            QCLASS(Vest_ARC_Phase1Geo_Officer),
+            QCLASS(Vest_ARC_Phase1Geo_Captain),
             QCLASS(Vest_Commando_Basic),
             QCLASS(Vest_Commando_EOD),
             QCLASS(Vest_Commando_SL),
