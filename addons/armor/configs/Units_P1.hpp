@@ -312,7 +312,7 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 //     };
 // };
 
-class CLASS(Unit_phase1Geo_Enlisted): CLASS(Unit_phase1_Base)
+class CLASS(Unit_phase1Geo_Enlisted): CLASS(Unit_Phase1_Base)
 {
     SCOPE_HIDDEN;
     uniformClass = QCLASS(Uniform_phase1Geo_Enlisted);
