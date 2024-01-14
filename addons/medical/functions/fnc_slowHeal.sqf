@@ -40,40 +40,40 @@ _function = {
 
     INFO_4("Slow Healer %1 | (Pre-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4",_handle,_wounds,_bloodLevel,_painLevel);
 
-    if (count _wounds > 0) then {
-        private ["_bodyPart", "_bodyPartWounds"];
+    switch (true) do {
+        case (count _wounds > 0): {
+            private ["_bodyPart", "_bodyPartWounds"];
 
-        _bodyPart = selectRandom keys _wounds;
-        _bodyPartWounds = _wounds get _bodyPart;
-        _bodyPartWounds deleteAt (random count _bodyPartWounds);
+            _bodyPart = selectRandom keys _wounds;
+            _bodyPartWounds = _wounds get _bodyPart;
+            _bodyPartWounds deleteAt (random count _bodyPartWounds);
 
-        if (count _bodyPartWounds > 0) then {
-            _wounds set [_bodyPart, _bodyPartWounds];
-        } else {
-            _wounds deleteAt _bodyPart;
+            if (count _bodyPartWounds > 0) then {
+                _wounds set [_bodyPart, _bodyPartWounds];
+            } else {
+                _wounds deleteAt _bodyPart;
+            };
+
+            _unit setVariable ["ace_medical_openWounds", _wounds, true];
+        };
+
+        case (_bloodLevel < DEFAULT_BLOOD_VOLUME): {
+            _bloodLevel = (_bloodLevel + GVAR(bactaBloodRestoreAmount)) min DEFAULT_BLOOD_VOLUME;
+            _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
+        };
+
+        case (_painLevel > 0): {
+            _painLevel = (_painLevel - GVAR(bactaPainReductionAmount)) max 0;
+            _unit setVariable ["ace_medical_pain", _painLevel, true];
+        };
+
+        default {
+            INFO_2("Slow Healer %1 | (Exit) Treatment complete for unit %2",_handle,_unit);
+            if (GVAR(bactaFullHealOnComplete)) then {[_unit, _unit] call ace_medical_treatment_fnc_fullHeal;};
         };
     };
 
-    _unit setVariable ["ace_medical_openWounds", _wounds, true];
-
-    if (_bloodLevel < DEFAULT_BLOOD_VOLUME) then {
-        _bloodLevel = (_bloodLevel + GVAR(bactaBloodRestoreAmount)) min DEFAULT_BLOOD_VOLUME;
-    };
-
-    _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
-
-    if (_painLevel > 0) then {
-        _painLevel = (_painLevel - GVAR(bactaPainReductionAmount)) max 0;
-    };
-
-    _unit setVariable ["ace_medical_pain", _painLevel, true];
-
     INFO_4("Slow Healer %1 | (Post-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4",_handle,_wounds,_bloodLevel,_painLevel);
-
-    if (count _wounds isEqualTo 0 and _bloodLevel isEqualTo DEFAULT_BLOOD_VOLUME and _painLevel isEqualTo 0 and GVAR(bactaFullHealOnComplete)) then {
-        INFO_2("Slow Healer %1 | (Exit) Treatment complete, full healing %2",_handle,_unit);
-        [_unit, _unit] call ace_medical_treatment_fnc_fullHeal;
-    };
 
     // Update aim effect and blood loss
     [_unit] call ace_medical_engine_fnc_updateDamageEffects;
