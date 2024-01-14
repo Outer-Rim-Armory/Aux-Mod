@@ -13,3 +13,14 @@ class Extended_PreInit_EventHandlers
         init = QUOTE(call COMPILE_SCRIPT(XEH_preInit));
     };
 };
+
+class Extended_GetIn_EventHandlers
+{
+    class All
+    {
+        class GVAR(setIntercomChannel)
+        {
+            getIn = QUOTE(_this call FUNC(setIntercomChannel));
+        };
+    };
+};
