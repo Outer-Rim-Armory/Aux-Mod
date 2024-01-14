@@ -401,5 +401,6 @@ class CfgPatches
 #include "CfgEditorSubcategories.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgGlasses.hpp"
 #include "CfgUnitInsignia.hpp"
 #include "CfgEventHandlers.hpp"
