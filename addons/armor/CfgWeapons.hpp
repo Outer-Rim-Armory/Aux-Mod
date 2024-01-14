@@ -213,7 +213,7 @@ class CfgWeapons
         };
     };
 
-    class CLASS(NVG_Visor): CLASS(NVG_Chip)
+    class CLASS(NVG_phase2_Visor): CLASS(NVG_Chip)
     {
         displayName = "[KC] Clone P2 NV Visor";
 
@@ -232,7 +232,7 @@ class CfgWeapons
             modelOff = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_off.p3d";
         };
     };
-    class CLASS(NVG_Visor_v2): CLASS(NVG_Visor)
+    class CLASS(NVG_phase2_Visor_v2): CLASS(NVG_phase2_Visor)
     {
         displayName = "[KC] Clone P2 NVG Visor (v2)";
         hiddenSelectionsTextures[] =
@@ -241,7 +241,7 @@ class CfgWeapons
         };
     };
 
-    class CLASS(NVG_Rangefinder): CLASS(NVG_Chip)
+    class CLASS(NVG_phase2_Rangefinder): CLASS(NVG_Chip)
     {
         displayName = "[KC] Clone P2 Rangefinder (CS+)";
 
@@ -261,7 +261,7 @@ class CfgWeapons
         };
     };
 
-    class CLASS(NVG_Officer): CLASS(NVG_Chip)
+    class CLASS(NVG_phase2_Officer): CLASS(NVG_Chip)
     {
         displayName = "[KC] Clone P2 Officer Visor (WO+)";
 

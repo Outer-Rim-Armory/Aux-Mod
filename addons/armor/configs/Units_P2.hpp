@@ -200,11 +200,11 @@ class CLASS(Unit_Phase2_CS): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CS), QCLASS(Vest_CS), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CS), QCLASS(Vest_CS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CS), QCLASS(Vest_CS), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CS), QCLASS(Vest_CS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -224,11 +224,11 @@ class CLASS(Unit_Phase2_CSS): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CSS), QCLASS(Vest_CSS), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CSS), QCLASS(Vest_CSS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CSS), QCLASS(Vest_CSS), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CSS), QCLASS(Vest_CSS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -248,11 +248,11 @@ class CLASS(Unit_Phase2_CSFC): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CSFC), QCLASS(Vest_CSFC), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CSFC), QCLASS(Vest_CSFC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CSFC), QCLASS(Vest_CSFC), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CSFC), QCLASS(Vest_CSFC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -272,11 +272,11 @@ class CLASS(Unit_Phase2_CMS): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CMS), QCLASS(Vest_CMS), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CMS), QCLASS(Vest_CMS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CMS), QCLASS(Vest_CMS), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CMS), QCLASS(Vest_CMS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -296,11 +296,11 @@ class CLASS(Unit_Phase2_CSM): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CSM), QCLASS(Vest_CSM), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CSM), QCLASS(Vest_CSM), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CSM), QCLASS(Vest_CSM), QCLASS(NVG_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CSM), QCLASS(Vest_CSM), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -321,11 +321,11 @@ class CLASS(Unit_Phase2_WO): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        QCLASS(Helmet_Phase2_WO), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_WO), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_WO), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_WO), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 
     backpack = QCLASS(Backpack_Radio_Mini);
@@ -347,11 +347,11 @@ class CLASS(Unit_Phase2_WO2): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        QCLASS(Helmet_Phase2_WO2), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_WO2), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_WO2), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_WO2), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -371,11 +371,11 @@ class CLASS(Unit_Phase2_WO3): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        QCLASS(Helmet_Phase2_WO3), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_WO3), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_WO3), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_WO3), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -395,11 +395,11 @@ class CLASS(Unit_Phase2_CL): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CL), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CL), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CL), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CL), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -419,11 +419,11 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CL1), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CL1), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_CL1), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_CL1), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -442,11 +442,11 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base)
 
 //     linkedItems[] =
 //     {
-//         QCLASS(Helmet_Phase2_CAP), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase2_CAP), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         QCLASS(Helmet_Phase2_CAP), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase2_CAP), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };
 
@@ -465,11 +465,11 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base)
 
 //     linkedItems[] =
 //     {
-//         QCLASS(Helmet_Phase2_MAJ), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase2_MAJ), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         QCLASS(Helmet_Phase2_MAJ), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase2_MAJ), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };
 
@@ -488,11 +488,11 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base)
 
 //     linkedItems[] =
 //     {
-//         QCLASS(Helmet_Phase2_CMD), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase2_CMD), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 //     respawnLinkedItems[] =
 //     {
-//         QCLASS(Helmet_Phase2_CMD), QCLASS(Vest_Officer), QCLASS(NVG_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//         QCLASS(Helmet_Phase2_CMD), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };
 

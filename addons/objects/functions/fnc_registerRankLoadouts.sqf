@@ -50,8 +50,8 @@ _rankLoadouts = createHashMap;
     };
 
     _nvg = switch (true) do {
-        case (_x in [LOADOUTS_RANKS_NCO]): {QCLASS(NVG_Rangefinder)};
-        case (_x in [LOADOUTS_RANKS_OFFICER]): {QCLASS(NVG_Officer)};
+        case (_x in [LOADOUTS_RANKS_NCO]): {QCLASS(NVG_phase2_Rangefinder)};
+        case (_x in [LOADOUTS_RANKS_OFFICER]): {QCLASS(NVG_phase2_Officer)};
         default {QCLASS(NVG_Chip)};
     };
 

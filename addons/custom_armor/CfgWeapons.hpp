@@ -68,8 +68,8 @@ class CfgWeapons
         GVAR(isCustom) = TRUE;
     };
 
-    class CLASS(NVG_Officer);
-    class CLASS(NVG_Officer_Keeli): CLASS(NVG_Officer)
+    class CLASS(NVG_phase2_Officer);
+    class CLASS(NVG_phase2_Officer_Keeli): CLASS(NVG_phase2_Officer)
     {
         displayName = "[KC] Clone P2 Officer Visor ('Keeli')";
         hiddenSelectionsTextures[] =
