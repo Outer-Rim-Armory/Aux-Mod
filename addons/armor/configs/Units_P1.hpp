@@ -311,3 +311,59 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 //         QCLASS(Helmet_Phase1_CMD), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Officer), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
 //     };
 // };
+
+class CLASS(Unit_phase1Geo_Enlisted): CLASS(Unit_phase1_Base)
+{
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_phase1Geo_Enlisted);
+    hiddenSelectionsTextures[] =
+    {
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo1_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+
+class CLASS(Unit_phase1Geo_NCO): CLASS(Unit_phase1Geo_Enlisted)
+{
+    uniformClass = QCLASS(Uniform_phase1Geo_NCO);
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Sergeant_armor1_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+
+class CLASS(Unit_phase1Geo_Officer): CLASS(Unit_phase1Geo_NCO)
+{
+    uniformClass = QCLASS(Uniform_phase1Geo_Officer);
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Lieutenant_armor1_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+
+class CLASS(Unit_phase1Geo_Captain): CLASS(Unit_phase1Geo_NCO)
+{
+    uniformClass = QCLASS(Uniform_phase1Geo_Captain);
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Captain_armor1_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+
+class CLASS(Unit_phase1Geo_Commander): CLASS(Unit_phase1Geo_NCO)
+{
+    uniformClass = QCLASS(Uniform_phase1Geo_Commander);
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Commander_armor1_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
