@@ -289,3 +289,58 @@ class CLASS(Helmet_Phase1_ARC_CT): CLASS(Helmet_Phase1_Base)
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
 };
+
+class CLASS(Helmet_phase1Geo_Enlisted): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF GEO Helm 01 (Enlisted)";
+    hiddenSelectionsTextures[] =
+    {
+        "\ls_armor_bluefor\helmet\gar\phase1\data\helmet_P1_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_phase1Geo_NCO): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF GEO Helm 02 (NCO)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Sergeant_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_phase1Geo_Officer): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF GEO Helm 03 (Officer)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Lieutenant_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_phase1Geo_Captain): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF GEO Helm 04 (CPT)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Captain_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_phase1Geo_Commander): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF GEO Helm 05 (CMD)";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Commander_helmet_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
