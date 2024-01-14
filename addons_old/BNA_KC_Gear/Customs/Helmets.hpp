@@ -199,6 +199,17 @@ class BNA_KC_Helmet_Phase1_Drake_Bacta: BNA_KC_Helmet_Phase1_Drake
     };
 };
 
+class BNA_KC_Helmet_Phase1_Fil: BNA_KC_Helmet_Phase1_Axel
+{
+    displayName = "[KC] INF P1 Helm ('Fil')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Fil.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
 class BNA_KC_Helmet_Phase1_Grey: BNA_KC_Helmet_Phase1_Axel
 {
     displayName = "[KC] INF P1 Helm ('Grey')";
@@ -216,6 +227,28 @@ class BNA_KC_Helmet_Phase1_Hazard: BNA_KC_Helmet_Phase1_Axel
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Hazard.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1_Howzer_Blue: BNA_KC_Helmet_Phase1_Axel
+{
+    displayName = "[KC] INF P1 Helm ('Howzer') - Blue";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Howzer_Blue.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1_Howzer_Brown: BNA_KC_Helmet_Phase1_Howzer_Blue
+{
+    displayName = "[KC] INF P1 Helm ('Howzer') - Brown";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Howzer_Brown.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
@@ -378,6 +411,42 @@ class BNA_KC_Helmet_Phase1_Ponds: BNA_KC_Helmet_Phase1_Axel
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Ponds.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1_Rat: BNA_KC_Helmet_Phase1_Axel
+{
+    BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase1_Rat";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase1_Rat_Crimson";
+
+    displayName = "[KC] INF P1 Helm ('Rat')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Rat.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase1_Rat_Crimson: BNA_KC_Helmet_Phase1_Rat
+{
+    // Scopes
+    scope = 1;
+    scopeArsenal = 1;
+
+    displayName = "[KC] INF P1 Helm ('Rat') [Crimson Visor]";
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1\Helmet_P1_Rat.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Visors\Visor_Crimson.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
 };
@@ -617,6 +686,26 @@ class BNA_KC_Helmet_Phase2_Hazard: BNA_KC_Helmet_Phase2_Axel
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Hazard.paa",
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_Howzer_Blue: BNA_KC_Helmet_Phase2_Axel
+{
+    displayName = "[KC] INF P2 Helm ('Howzer') - Blue";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Howzer_Blue.paa",
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class BNA_KC_Helmet_Phase2_Howzer_Brown: BNA_KC_Helmet_Phase2_Howzer_Blue
+{
+    displayName = "[KC] INF P2 Helm ('Howzer') - Brown";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 2\Helmet_P2_Howzer_Brown.paa",
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
@@ -1469,5 +1558,44 @@ class BNA_KC_Helmet_Insulated_Keeli: BNA_KC_Helmet_Insulated_Dexus
     hiddenSelectionsTextures[] =
     {
         "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Insulated\Helmet_Insulated_Keeli.paa"
+    };
+};
+
+// ┌────────────────────┐
+// │    P1-2 Helmets    │
+// └────────────────────┘
+class BNA_KC_Helmet_Phase12_Base;
+class BNA_KC_Helmet_Phase12_Joe: BNA_KC_Helmet_Phase12_Base
+{
+    // NVG Script
+    BNAKC_Helmet_Toggle = 1;
+    BNAKC_Helmet_Off = "BNA_KC_Helmet_Phase12_Joe";
+    BNAKC_Helmet_On  = "BNA_KC_Helmet_Phase12_Joe_Crimson";
+
+    displayName = "[KC] INF P1-2 Helm ('Joe')";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1-2\Helmet_P12_Joe.paa",
+        "\ls_armor_bluefor\helmet\gar\rex\data\visor_co.paa"
+    };
+
+    BNA_KC_isCustom = 1;
+};
+class BNA_KC_Helmet_Phase12_Joe_Crimson: BNA_KC_Helmet_Phase12_Joe
+{
+    // Scopes
+    scope = 1;
+    scopeArsenal = 1;
+
+    displayName = "[KC] INF P1-2 Helm ('Joe') [Crimson Visor]";
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Helmets\Standard\Phase 1-2\Helmet_P12_Joe.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Visors\Visor_Crimson.paa",
     };
 };

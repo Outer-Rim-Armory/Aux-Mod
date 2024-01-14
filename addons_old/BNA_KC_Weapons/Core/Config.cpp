@@ -90,7 +90,7 @@ class CfgAmmo
 
     class Aux12thFleet_Ammo_AutoRifle_Blue: Aux12thFleet_Ammo_Rifle_Blue
     {
-        hit = 17.5;
+        hit = 19;
         caliber = 2.8;
         tracerscale = 1.5;
     };
@@ -109,6 +109,18 @@ class CfgAmmo
         BULLET_EFFECTS
     };
     class Aux12thFleet_Ammo_Carbine_Red: Aux12thFleet_Ammo_Carbine_Blue
+    {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+    };
+
+    class Aux12thFleet_Ammo_MachineGun_Blue: Aux12thFleet_Ammo_Carbine_Blue
+    {
+        hit = 15;
+        caliber = 2.5;
+        tracerscale = 1.3;
+    };
+    class Aux12thFleet_Ammo_MachineGun_Red: Aux12thFleet_Ammo_MachineGun_Blue
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";

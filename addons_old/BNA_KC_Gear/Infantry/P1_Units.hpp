@@ -286,3 +286,49 @@ class BNA_KC_Unit_Phase1_CSM: BNA_KC_Unit_Phase1_Base
 //         "BNA_KC_Helmet_Phase1_CMD", "BNA_KC_Vest_Officer", "BNA_KC_NVG_Officer", "lsd_gar_p1Interior_hud", "SWLB_comlink", LINKED_ITEMS
 //     };
 // };
+
+class BNA_KC_Unit_Phase1Geo_NCO: BNA_KC_Unit_Phase1_Base
+{
+    scope = 1;
+    scopeCurator = 0;
+    uniformClass = "BNA_KC_Uniform_Phase1Geo_NCO";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Sergeant_armor1_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+
+class BNA_KC_Unit_Phase1Geo_Officer: BNA_KC_Unit_Phase1Geo_NCO
+{
+    uniformClass = "BNA_KC_Uniform_Phase1Geo_Officer";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Lieutenant_armor1_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+
+class BNA_KC_Unit_Phase1Geo_Captain: BNA_KC_Unit_Phase1Geo_NCO
+{
+    uniformClass = "BNA_KC_Uniform_Phase1Geo_Captain";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Captain_armor1_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+
+class BNA_KC_Unit_Phase1Geo_Commander: BNA_KC_Unit_Phase1Geo_NCO
+{
+    uniformClass = "BNA_KC_Uniform_Phase1Geo_Commander";
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_clones\data\SWLB_clone_P1Commander_armor1_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};

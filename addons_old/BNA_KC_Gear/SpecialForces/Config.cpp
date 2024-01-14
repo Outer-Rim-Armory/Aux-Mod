@@ -74,6 +74,16 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Helmet_ARC_Imperial: BNA_KC_Helmet_ARC
+    {
+        displayName = "[KC] SF ARC Helm (Imperial)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Helmets\Helmet_ARC_Imperial.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Visors\Visor_ARC_Imperial.paa"
+        };
+    };
+
     class BNA_KC_Helmet_Phase1_ARC: BNA_KC_Helmet_ARC
     {
         displayName = "[KC] SF P1 ARC Helm";
@@ -204,6 +214,15 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Uniform_ARC_Imperial: BNA_KC_Uniform_Base
+    {
+        displayName = "[KC] SF ARC Uniform (Imperial)";
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = "BNA_KC_Unit_ARC_Imperial";
+        };
+    };
+
     class BNA_KC_Uniform_ARF: BNA_KC_Uniform_Base
     {
         displayName = "[KC] SF ARF Uniform";
@@ -271,6 +290,36 @@ class CfgWeapons
         {
             "",
             "\BNA_KC_Gear\Infantry\Data\Vests\Vest_Officer.paa"
+        };
+    };
+
+    class BNA_KC_Vest_Phase1Geo_ARC_Officer: BNA_KC_Vest_ARC_Light
+    {
+        displayName = "[KC] SF GEO ARC Vest 01 (Officer)";
+        hiddenSelectionsTextures[] =
+        {
+            "",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\ARC_P1_LT_camo2_co.paa"
+        };
+    };
+
+    class BNA_KC_Vest_Phase1Geo_ARC_Captain: BNA_KC_Vest_ARC_Light
+    {
+        displayName = "[KC] SF GEO ARC Vest 02 (Captain)";
+        hiddenSelectionsTextures[] =
+        {
+            "",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\ARC_P1_CAP_camo2_co.paa"
+        };
+    };
+
+    class BNA_KC_Vest_ARC_Imperial: BNA_KC_Vest_ARC
+    {
+        displayName = "[KC] SF ARC Vest (Imperial)";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\Vest_ARC_Imperial_Chest.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Vests\Vest_ARC_Imperial_Officer.paa"
         };
     };
 
@@ -409,26 +458,39 @@ class CfgVehicles
         backpack = "BNA_KC_Backpack_ARC";
     };
 
+    class BNA_KC_Unit_ARC_Imperial: BNA_KC_Unit_ARC
+    {
+        displayName = "ARC Trooper (Imperial)";
+        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\BNA_KC_Unit_ARC_Imperial.jpg";
+
+        uniformClass = "BNA_KC_Uniform_ARC_Imperial";
+        hiddenSelectionsTextures[] =
+        {
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Imperial_Upper.paa",
+            "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Imperial_Lower.paa",
+            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        };
+
+        linkedItems[] =
+        {
+            "BNA_KC_Helmet_ARC_Imperial", "BNA_KC_Vest_Arc_Imperial", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        };
+        respawnLinkedItems[] =
+        {
+            "BNA_KC_Helmet_ARC_Imperial", "BNA_KC_Vest_Arc_Imperial", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        };
+    };
+
     class BNA_KC_Unit_ARC_Night: BNA_KC_Unit_ARC
     {
-        displayName = "ARC Trooper (Night Camo)";
-        editorPreview = "\BNA_KC_Gear\SpecialForces\Data\Previews\ARC_Night.jpg";
-
+        scope = 1;
+        scopeCurator = 0;
         uniformClass = "BNA_KC_Uniform_ARC_Night";
         hiddenSelectionsTextures[] =
         {
             "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Night_Upper.paa",
             "\BNA_KC_Gear\SpecialForces\Data\Textures\Uniforms\Uniform_ARC_Night_Lower.paa",
             "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-        };
-
-        linkedItems[] =
-        {
-            "BNA_KC_Helmet_ARC_Night", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
-        };
-        respawnLinkedItems[] =
-        {
-            "BNA_KC_Helmet_ARC_Night", "BNA_KC_Vest_Arc", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
         };
     };
 

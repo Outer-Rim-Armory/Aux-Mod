@@ -5,8 +5,9 @@ class BNA_KC_Unit_Phase2_Base;
 class BNA_KC_Unit_Axel: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Axel.jpg";
 
     displayName = "Axel";
     uniformClass = "BNA_KC_Uniform_Axel";
@@ -31,8 +32,9 @@ class BNA_KC_Unit_Axel: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Burnt.jpg";
 
     displayName = "Burnt";
     uniformClass = "BNA_KC_Uniform_Burnt";
@@ -57,8 +59,9 @@ class BNA_KC_Unit_Burnt: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Dexus: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Dexus.jpg";
 
     displayName = "Dexus";
     uniformClass = "BNA_KC_Uniform_Dexus";
@@ -83,8 +86,9 @@ class BNA_KC_Unit_Dexus: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armo
 class BNA_KC_Unit_Drake: BNA_KC_Unit_Phase2_Base // Update to 1LT when rank armor is done.
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Drake.jpg";
 
     displayName = "Drake";
     uniformClass = "BNA_KC_Uniform_Drake";
@@ -159,11 +163,62 @@ class BNA_KC_Unit_FilSquad: BNA_KC_Unit_Phase2_Base
     };
 };
 
-class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
+class BNA_KC_Unit_Howzer_Blue: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Joe.jpg";
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\BNA_KC_Unit_Howzer_Blue.jpg";
+
+    displayName = "Howzer (Blue)";
+    uniformClass = "BNA_KC_Uniform_Howzer_Blue";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Blue_Upper.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Blue_Lower.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    // Loadout
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Blue", "BNA_KC_Vest_WO_Howzer", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Blue", "BNA_KC_Vest_WO_Howzer", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+};
+class BNA_KC_Unit_Howzer_Brown: BNA_KC_Unit_Howzer_Blue
+{
+    // Editor Attributes
+    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\BNA_KC_Unit_Howzer_Brown.jpg";
+
+    displayName = "Howzer (Brown)";
+    uniformClass = "BNA_KC_Uniform_Howzer_Brown";
+    hiddenSelectionsTextures[] =
+    {
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Brown_Upper.paa",
+        "\BNA_KC_Gear\Customs\Data\Textures\Uniforms\Uniform_Howzer_Brown_Lower.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    // Loadout
+    linkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Brown", "BNA_KC_Vest_WO", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+    respawnLinkedItems[] =
+    {
+        "BNA_KC_Helmet_Phase2_Howzer_Brown", "BNA_KC_Vest_WO", "BNA_KC_NVG_Chip", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+    };
+};
+
+class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
+{
+    // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
+    editorSubcategory = "BNA_KC_Customs";
 
     displayName = "Joe";
     uniformClass = "BNA_KC_Uniform_Joe";
@@ -177,11 +232,11 @@ class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
     // Loadout
     linkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        "BNA_KC_Helmet_Phase12_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     respawnLinkedItems[] =
     {
-        "BNA_KC_Helmet_Phase2_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
+        "BNA_KC_Helmet_Phase12_Joe", "BNA_KC_Vest_ARC", "BNA_KC_NVG_Rangefinder", "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
     };
     backpack = "BNA_KC_Backpack_ARC";
 };
@@ -189,8 +244,9 @@ class BNA_KC_Unit_Joe: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Keeli: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Keeli.jpg";
 
     displayName = "Keeli";
     uniformClass = "BNA_KC_Uniform_Keeli";
@@ -292,8 +348,9 @@ class BNA_KC_Unit_PondsTrooper: BNA_KC_Unit_Ponds
 class BNA_KC_Unit_Rat: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Rat.jpg";
 
     displayName = "Rat";
     uniformClass = "BNA_KC_Uniform_Rat";
@@ -318,8 +375,9 @@ class BNA_KC_Unit_Rat: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Sin: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Sin.jpg";
 
     displayName = "Sin";
     uniformClass = "BNA_KC_Uniform_Sin";
@@ -370,8 +428,9 @@ class BNA_KC_Unit_Stone: BNA_KC_Unit_Phase2_Base
 class BNA_KC_Unit_Tyrant: BNA_KC_Unit_Phase2_Base
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Tyrant.jpg";
 
     displayName = "Tyrant";
     uniformClass = "BNA_KC_Uniform_Tyrant";
@@ -403,8 +462,9 @@ class BNA_KC_Unit_Insulated_Trooper;
 class BNA_KC_Unit_Insulated_Dexus: BNA_KC_Unit_Insulated_Trooper
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Dexus_Insulated.jpg";
 
     displayName = "Dexus (Snow)";
     uniformClass = "BNA_KC_Uniform_Insulated_Dexus";
@@ -429,8 +489,9 @@ class BNA_KC_Unit_Insulated_Dexus: BNA_KC_Unit_Insulated_Trooper
 class BNA_KC_Unit_Insulated_Joe: BNA_KC_Unit_Insulated_Trooper
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Joe_Insulated.jpg";
 
     displayName = "Joe (Snow)";
     uniformClass = "BNA_KC_Uniform_Insulated_Joe";
@@ -455,8 +516,9 @@ class BNA_KC_Unit_Insulated_Joe: BNA_KC_Unit_Insulated_Trooper
 class BNA_KC_Unit_Insulated_Keeli: BNA_KC_Unit_Insulated_Trooper
 {
     // Editor Attributes
+    scope = 1;
+    scopeCurator = 0;
     editorSubcategory = "BNA_KC_Customs";
-    editorPreview = "\BNA_KC_Gear\Customs\Data\Previews\Keeli_Insulated.jpg";
 
     displayName = "Keeli (Snow)";
     uniformClass = "BNA_KC_Uniform_Insulated_Keeli";

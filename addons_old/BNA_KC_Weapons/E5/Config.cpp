@@ -87,9 +87,9 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] E-5";
+        baseWeapon = "BNA_KC_E5";
         JLTS_shieldedWeapon = "BNA_KC_E5_RiotShield";
         JLTS_friedItem = "BNA_KC_E5_Fried";
-        baseWeapon = "BNA_KC_E5";
     };
     class BNA_KC_E5_Fried: BNA_KC_E5
     {
@@ -97,9 +97,8 @@ class CfgWeapons
         scope = 1;
         scopeArsenal = 0;
 
-        baseWeapon = "BNA_KC_E5_Fried";
-
         displayName = "[KC] E-5 (Fried)";
+        baseWeapon = "BNA_KC_E5_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\E5\data\ui\E5_fried_ui_ca.paa";
 

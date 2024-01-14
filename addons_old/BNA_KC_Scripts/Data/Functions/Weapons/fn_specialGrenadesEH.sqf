@@ -48,7 +48,7 @@ params ["_eventHandlerType"];
         {
             case "EMP":
             {
-                private ["_radiusDroid", "_radiusDeka", "_radiusVehicle", "_nearbyUnits", "_crewedUnits", "_shieldObjects", "_tasDekas", "_tanks"];
+                private ["_radiusDroid", "_radiusDeka", "_radiusVehicle", "_nearbyUnits", "_shieldObjects", "_tasDekas", "_tanks"];
 
                 [ATLToASL _position] remoteExec ["BNAKC_fnc_playDroidPopperSound", [0, -2] select isDedicated];
 
@@ -71,15 +71,7 @@ params ["_eventHandlerType"];
                     5
                 ] call BIS_fnc_returnConfigEntry;
 
-                _nearbyUnits = _position nearEntities [["CAManBase", "Air", "Car", "Motorcycle", "Tank"], _radiusDroid];
-                _crewedUnits = [];
-                {
-                    private ["_crew"];
-                    _crew = _x call ace_common_fnc_getVehicleCrew;
-                    _crewedUnits append _crew;
-                } forEach _nearbyUnits;
-                _nearbyUnits append _crewedUnits;
-                _nearbyUnits = _nearbyUnits arrayIntersect _nearbyUnits;
+                _nearbyUnits = _position nearEntities ["CAManBase", _radiusDroid];
 
                 _shieldObjects = nearestObjects [_position, ["RD501_Droideka_Shield"], _radiusDeka];
                 _tasDekas = nearestObjects [_position, ["3AS_Deka_Static_Base", "3AS_Deka_Static_Sniper_Base"], _radiusDeka];

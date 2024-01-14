@@ -19,6 +19,7 @@ class CfgWeapons
         scopeArsenal = 0;
 
         displayName = "[KC] DC-15SA (Base)";
+        baseWeapon = "BNA_KC_DC15SA_Base";
 
         modes[] = {"Single", "FullAuto"};
         muzzles[] = {"this"};
@@ -64,6 +65,7 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] DC-15SA";
+        baseWeapon = "BNA_KC_DC15SA";
     };
 };
 

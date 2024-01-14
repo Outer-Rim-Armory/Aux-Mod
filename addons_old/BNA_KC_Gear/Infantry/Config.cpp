@@ -72,6 +72,30 @@ class CfgWeapons
         };
     };
 
+    class BNA_KC_Helmet_Phase12_Base: BNA_KC_Helmet_Base
+    {
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[KC] INF P1-2 Helm (Base)";
+
+        model = "\ls_armor_bluefor\helmet\gar\rex\ls_gar_rex_helmet.p3d";
+        hiddenSelections[] = {"camo1", "visor"};
+        hiddenSelectionsTextures[] =
+        {
+            "\ls_armor_bluefor\helmet\gar\rex\data\helmet_co.paa",
+            "\ls_armor_bluefor\helmet\gar\rex\data\visor_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_p1_2_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1", "visor"};
+            uniformModel = "\ls_armor_bluefor\helmet\gar\rex\ls_gar_rex_helmet.p3d";
+        };
+    };
+
     class BNA_KC_Helmet_Insulated: BNA_KC_Helmet_Base
     {
         // Scope
@@ -279,6 +303,21 @@ class CfgWeapons
             hiddenSelections[] = {"Camo1"};
             uniformModel = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
             modelOff = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
+        };
+    };
+
+    class BNA_KC_NVG_P1_Rangefinder: BNA_KC_NVG_Rangefinder
+    {
+        displayName = "[KC] Clone P1 Rangefinder (CS+)";
+
+        model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
+        hiddenSelections[] = {"Camo1"};
+        hiddenSelectionsTextures[] = {"\lsd_equipment_bluefor\accessories\gar\visor\data\swlb_clone_nvg_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_p1Rangefinder_nvg_on.p3d";
+            modelOff = "\lsd_equipment_bluefor\accessories\gar\rangefinder\lsd_gar_p1Rangefinder_nvg_off.p3d";
         };
     };
 

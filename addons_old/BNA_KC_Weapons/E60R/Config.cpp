@@ -69,8 +69,8 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] E-60R (AA)";
-        JLTS_friedItem = "BNA_KC_E60R_AA_Fried";
         baseWeapon = "BNA_KC_E60R_AA";
+        JLTS_friedItem = "BNA_KC_E60R_AA_Fried";
     };
     class BNA_KC_E60R_AA_Fried: BNA_KC_E60R_AA
     {
@@ -78,9 +78,8 @@ class CfgWeapons
         scope = 1;
         scopeArsenal = 0;
 
-        baseWeapon = "BNA_KC_E60R_AA_Fried";
-
         displayName = "[KC] E-60R (AA, Fried)";
+        baseWeapon = "BNA_KC_E60R_AA_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\BNA_KC_Weapons\E60R\Data\Textures\UI\E60R_Fried_UI.paa";
 
@@ -152,8 +151,8 @@ class CfgWeapons
         scopeArsenal = 2;
 
         displayName = "[KC] E-60R (AT)";
-        JLTS_friedItem = "BNA_KC_E60R_AT_Fried";
         baseWeapon = "BNA_KC_E60R_AT";
+        JLTS_friedItem = "BNA_KC_E60R_AT_Fried";
     };
     class BNA_KC_E60R_AT_Fried: BNA_KC_E60R_AT
     {
@@ -161,9 +160,8 @@ class CfgWeapons
         scope = 1;
         scopeArsenal = 0;
 
-        baseWeapon = "BNA_KC_E60R_AT_Fried";
-
         displayName = "[KC] E-60R (AT, Fried)";
+        baseWeapon = "BNA_KC_E60R_AT_Fried";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\BNA_KC_Weapons\E60R\Data\Textures\UI\E60R_Fried_UI.paa";
 

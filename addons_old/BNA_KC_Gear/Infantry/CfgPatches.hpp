@@ -54,6 +54,12 @@ class CfgPatches
             // "BNA_KC_Unit_Phase1_MAJ",
             // "BNA_KC_Unit_Phase1_CMD",
 
+            // Phase 1 Geonosis
+            "BNA_KC_Unit_Phase1Geo_NCO",
+            "BNA_KC_Unit_Phase1Geo_Officer",
+            "BNA_KC_Unit_Phase1Geo_Captain",
+            "BNA_KC_Unit_Phase1Geo_Commander",
+
             // Camo Phase 2 Units
             "BNA_KC_Unit_Phase1_Recruit_CamoBrown",
             "BNA_KC_Unit_Phase1_Recruit_CamoGrey",
@@ -129,6 +135,12 @@ class CfgPatches
             // "BNA_KC_Helmet_Phase1_LT",
             // "BNA_KC_Helmet_Phase1_Officer",
 
+            // Phase 1 Geonosis
+            "BNA_KC_Helmet_Phase1Geo_NCO",
+            "BNA_KC_Helmet_Phase1Geo_Officer",
+            "BNA_KC_Helmet_Phase1Geo_Captain",
+            "BNA_KC_Helmet_Phase1Geo_Commander",
+
             // Camo Phase 1 Helmets
             "BNA_KC_Helmet_Phase1_Recruit_CamoBrown",
             "BNA_KC_Helmet_Phase1_Enlisted_CamoBrown",
@@ -182,6 +194,9 @@ class CfgPatches
             // Insulated (Snow) Helmets
             "BNA_KC_Helmet_Insulated",
 
+            // Other
+            "BNA_KC_Helmet_Phase12_Base",
+
             // Uniforms
             "BNA_KC_Uniform_Base",
             "BNA_KC_Uniform_CR",
@@ -204,6 +219,12 @@ class CfgPatches
             // "BNA_KC_Uniform_CPT",
             // "BNA_KC_Uniform_MAJ",
             // "BNA_KC_Uniform_COM",
+
+            // Phase 1 Geonosis
+            "BNA_KC_Uniform_Phase1Geo_NCO",
+            "BNA_KC_Uniform_Phase1Geo_Officer",
+            "BNA_KC_Uniform_Phase1Geo_Captain",
+            "BNA_KC_Uniform_Phase1Geo_Commander",
 
             // Camo Uniforms
             "BNA_KC_Uniform_Recruit_CamoBrown",
@@ -245,6 +266,7 @@ class CfgPatches
             "BNA_KC_Vest_Commander",
             "BNA_KC_Vest_Commander_v2",
             "BNA_KC_Vest_Pauldron",
+            "BNA_KC_Vest_WO",
             "BNA_KC_Vest_Kama",
             "BNA_KC_Vest_Tactical_Commander",
 
@@ -253,6 +275,7 @@ class CfgPatches
             "BNA_KC_NVG_Visor",
             "BNA_KC_NVG_Visor_v2",
             "BNA_KC_NVG_Rangefinder",
+            "BNA_KC_NVG_P1_Rangefinder",
             "BNA_KC_NVG_Officer"
         };
     };
