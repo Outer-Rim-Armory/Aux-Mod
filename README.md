@@ -4,7 +4,8 @@
 
 <div id="user-content-toc">
   <ul>
-    <summary><h1 style="display: inline-block;">Keeli Company Aux Mod</h1></summary>
+    <summary><h1 style="display: inline-block;">Keeli Company Aux Mod</h1><br>
+    Version 0.0.0</summary>
   </ul>
 </div>
 
@@ -14,7 +15,7 @@
 
 </h3>
 
-[![Developer Team Size](https://img.shields.io/github/contributors/DartRuffian/KeeliCompanyAux?logo=github&label=Dev%20Team%20Size&labelColor=444D56)](https://github.com/DartRuffian/KeeliCompanyAux/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/DartRuffian/KeeliCompanyAux?logo=github&label=Contributors&labelColor=444D56)](https://github.com/DartRuffian/KeeliCompanyAux/graphs/contributors)
 [![Discord](https://img.shields.io/discord/397600745173549057?logo=discord&label=Join%20the%20Unit&&labelColor=24292E&color=5865F2)](https://discord.gg/ZKPt3GjxQC)
 [![Last Updated](https://img.shields.io/steam/update-date/2791896289?logo=steam&label=Last%20Updated&labelColor=2a475e&color=66c0f4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2791896289)
 
@@ -30,7 +31,7 @@ Unit description
 <br>
 <br>
 
---- 
+---
 
 ## Detachments
 
