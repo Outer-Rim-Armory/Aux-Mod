@@ -284,6 +284,15 @@ class CLASS(Uniform_ARC_CT): CLASS(Uniform_Base)
     };
 };
 
+class CLASS(Uniform_ARC_Imperial): CLASS(Uniform_Base)
+{
+    displayName = "[KC] SF ARC EMP Armor";
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = QCLASS(Unit_ARC_Imperial);
+    };
+};
+
 class CLASS(Uniform_ARC_Enlisted_CamoNight): CLASS(Uniform_ARC_CT)
 {
     displayName = "[KC] SF ARC Armor 01+ (Enlisted) - Night Camo";

@@ -49,6 +49,17 @@ class CLASS(Helmet_ARC_CT_Legacy): CLASS(Helmet_ARC_CT)
     };
 };
 
+class CLASS(Helmet_ARC_Imperial): CLASS(Helmet_ARC_Base)
+{
+    displayName = "[KC] SF ARC EMP Helm";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\arc\Imperial_camo1_co.paa),
+        QPATHTOF(data\helmets\arc\Imperial_camo2_co.paa),
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
+    };
+};
+
 class CLASS(Helmet_ARC_Enlisted_CamoBrown): CLASS(Helmet_ARC_CT)
 {
     displayName = "[KC] SF ARC P1.5 Helm 01 (Enlisted) - Brown Camo";

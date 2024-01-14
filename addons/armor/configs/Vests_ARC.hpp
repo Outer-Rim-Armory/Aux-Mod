@@ -51,6 +51,16 @@ class CLASS(Vest_ARC_Light): CLASS(Vest_ARC)
     };
 };
 
+class CLASS(Vest_ARC_Imperial): CLASS(Vest_ARC)
+{
+    displayName = "[KC] SF ARC EMP";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\vests\arc\Imperial_camo1_co.paa),
+        QPATHTOF(data\vests\arc\Imperial_camo2_co.paa)
+    };
+};
+
 class CLASS(Vest_ARC_v2): CLASS(Vest_ARC)
 {
     displayName = "[KC] SF ARC Vest (v2)";
