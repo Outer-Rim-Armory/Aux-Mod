@@ -62,12 +62,23 @@ class CfgWeapons
 
                     distanceZoomMin = 300;
                     distanceZoomMax = 300;
-                    discretefov[] = {QUOTE(__EVAL(0.25/2)), QUOTE(__EVAL(0.25/6))};
-                    discreteInitIndex = 1;
 
                     opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                 };
             };
         };
+    };
+    class CLASS(Optic_MR_Holosight2): CLASS(Optic_MR_Holosight)
+    {
+        displayName = "[KC] Medium Range Holosight 2";
+        model = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight2.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight2_ca.paa);
+    };
+
+    class CLASS(Optic_MR_Holosight3): CLASS(Optic_MR_Holosight)
+    {
+        displayName = "[KC] Medium Range Holosight 3";
+        model = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight3.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight3_ca.paa);
     };
 };

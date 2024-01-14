@@ -12,11 +12,10 @@
 
 #define ATTACHMENTS_OPTIC_SHORT Aux501_cows_RCO = TRUE; \
 Aux501_cows_RCO_2 = TRUE; \
-Aux501_cows_RCO_3 = TRUE; \
-CLASS(Optic_MR_Holosight) = TRUE
-#define ATTACHMENTS_OPTIC_MEDIUM Aux501_cows_MRCO = TRUE; \
-Aux501_cows_MRCO_2 = TRUE; \
-Aux501_cows_MRCO_3 = TRUE
+Aux501_cows_RCO_3 = TRUE
+#define ATTACHMENTS_OPTIC_MEDIUM CLASS(Optic_MR_Holosight) = TRUE; \
+CLASS(Optic_MR_Holosight2) = TRUE; \
+CLASS(Optic_MR_Holosight3) = TRUE
 #define ATTACHMENTS_OPTIC_LONG Aux501_cows_DMS = TRUE; \
 Aux501_cows_DMS_2 = TRUE; \
 Aux501_cows_DMS_3 = TRUE; \
