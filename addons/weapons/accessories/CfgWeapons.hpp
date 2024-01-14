@@ -17,14 +17,14 @@ class CfgWeapons
         };
     };
 
-    class CLASS(Optic_SR_Holosight): CLASS(Optic_Base)
+    class CLASS(Optic_MR_Holosight): CLASS(Optic_Base)
     {
         SCOPE_PUBLIC;
 
-        displayName = "[KC] Short Range Holosight";
+        displayName = "[KC] Medium Range Holosight";
 
-        model = QPATHTOF(SUBCOMPONENT\data\optics\Holosight.p3d);
-        picture = QPATHTOF(SUBCOMPONENT\data\optics\Holosight_ca.paa);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight_ca.paa);
 
         ace_scopeHeightAboveRail = 4.48584;
 
@@ -35,6 +35,7 @@ class CfgWeapons
                 class Sight
                 {
                     opticsID = 1;
+                    memoryPointCamera = "eye";
                     useModelOptics = FALSE;
 
                     opticsFlare = FALSE;
@@ -43,12 +44,28 @@ class CfgWeapons
                     opticsZoomMax = 1.25;
                     opticsZoomInit = 0.75;
 
-                    distanceZoomMin = 200;
-                    distanceZoomMax = 200;
-                    memoryPointCamera = "eye";
+                    distanceZoomMin = 300;
+                    distanceZoomMax = 300;
 
                     visionMode[] = {};
                     opticsPPEffects[] = {"OpticsBlur1"};
+                };
+
+                class Scope: Sight
+                {
+                    opticsID = 2;
+                    memoryPointCamera = "opticView";
+
+                    opticsZoomMin = __EVAL(0.25/6);
+                    opticsZoomMax = __EVAL(0.25/2);
+                    opticsZoomInit = __EVAL(0.25/2);
+
+                    distanceZoomMin = 300;
+                    distanceZoomMax = 300;
+                    discretefov[] = {QUOTE(__EVAL(0.25/2)), QUOTE(__EVAL(0.25/6))};
+                    discreteInitIndex = 1;
+
+                    opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
                 };
             };
         };
