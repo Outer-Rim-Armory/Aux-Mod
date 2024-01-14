@@ -7,7 +7,7 @@ class CfgWeapons
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
         weaponInfoType = "RscWeaponZeroing";
-        intertia = 0;
+        inertia = 0;
 
         class ItemInfo: InventoryOpticsItem_Base_F
         {
@@ -26,6 +26,8 @@ class CfgWeapons
         model = QPATHTOF(SUBCOMPONENT\data\optics\Holosight.p3d);
         picture = QPATHTOF(SUBCOMPONENT\data\optics\Holosight_ca.paa);
 
+        ace_scopeHeightAboveRail = 4.48584;
+
         class ItemInfo: ItemInfo
         {
             class OpticsModes
@@ -34,15 +36,17 @@ class CfgWeapons
                 {
                     opticsID = 1;
                     useModelOptics = FALSE;
+
+                    opticsFlare = FALSE;
+                    opticsDisablePeripherialVision = FALSE;
                     opticsZoomMin = 0.25;
                     opticsZoomMax = 1.25;
                     opticsZoomInit = 0.75;
+
+                    distanceZoomMin = 200;
+                    distanceZoomMax = 200;
                     memoryPointCamera = "eye";
-                    opticsFlare = 0;
-                    opticsDisablePeripherialVision = FALSE;
-                    distanceZoomMin = 100;
-                    distanceZoomMax = 100;
-                    cameraDir = "";
+
                     visionMode[] = {};
                     opticsPPEffects[] = {"OpticsBlur1"};
                 };
