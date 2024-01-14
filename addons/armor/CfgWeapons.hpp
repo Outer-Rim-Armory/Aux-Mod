@@ -254,7 +254,7 @@ class CfgWeapons
 
     class CLASS(NVG_phase1_Rangefinder): CLASS(NVG_Chip)
     {
-        displayName = "[KC] ARC P1 Rangefinder";
+        displayName = "[KC] Clone P1 Rangefinder";
 
         model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
         hiddenSelections[] = {"camo1"};
@@ -283,23 +283,39 @@ class CfgWeapons
         };
     };
 
-    class CLASS(NVG_phase2_Officer): CLASS(NVG_Chip)
+    class CLASS(NVG_phase1_Officer): CLASS(NVG_Chip)
     {
-        displayName = "[KC] Clone P2 Officer Visor (WO+)";
+        displayName = "[KC] Clone P1 Officer Visor (WO+)";
 
-        model = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
-        hiddenSelections[] = {"camo1", "camo2"};
+        model = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\nvgs\officer_camo1_co.paa)
+            "\lsd_equipment_bluefor\accessories\gar\visor\data\SWLB_clone_nvg_co.paa",
+            "\lsd_equipment_bluefor\accessories\gar\visor\data\SWLB_clone_nvg_co.paa",
+            ""
         };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+        picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_cc_ca.paa";
 
         class ItemInfo: ItemInfo
         {
-            hiddenSelections[] = {"camo1", "camo2"};
-            uniformModel = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
-            modelOff = "\SWLB_clones\SWLB_clone_ccVisor.p3d";
+            hiddenSelections[] = {"camo1", "camo2", "camo3"};
+            uniformModel = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
+            modelOff = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
+        };
+    };
+
+    class CLASS(NVG_phase2_Officer): CLASS(NVG_phase1_Officer)
+    {
+        displayName = "[KC] Clone P2 Officer Visor (WO+)";
+
+        model = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\officer_camo1_co.paa)};
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
+            modelOff = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
         };
     };
 
