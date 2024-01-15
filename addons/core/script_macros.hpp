@@ -138,7 +138,7 @@ scopeCurator = 0
 #define TYPE_ACE_INTERACT_SELF 1
 
 #define HEARING_PROTECTION_CREW ace_hearing_lowerVolume = 0.6; \
-ace_hearing_protection = 0.85;
+ace_hearing_protection = 0.85
 
 // Linked Items
 #define LINKED_ITEMS "ItemMap", "ItemCompass", "ItemGPS", "ItemWatch"
