@@ -23,6 +23,17 @@ class CLASS(Helmet_Phase1_Pilot_Base): CLASS(Helmet_Base)
     };
 };
 
+class CLASS(Helmet_Phase1Geo_Pilot): CLASS(Helmet_Phase1_Pilot_Base)
+{
+    displayName = "[KC] AVI GEO Helm";
+    hiddenSelectionsTextures[] =
+    {
+        "\swlb_cee\data\swlb_p1_pilot_helmet_republic_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
+    };
+};
+
 class CLASS(Helmet_Phase1_Pilot_CXA): CLASS(Helmet_Phase1_Pilot_Base)
 {
     displayName = "[KC] AVI P1 Helm 01+ (Airman)";

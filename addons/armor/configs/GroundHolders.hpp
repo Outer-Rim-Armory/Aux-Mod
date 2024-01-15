@@ -22,6 +22,7 @@ GROUND_HOLDER(Helmet_Engineer_CT,"ENG Helm 01 (Trooper)");
 GROUND_HOLDER(Helmet_Engineer_Enlisted_CamoBrown,"ENG Helm 01 (Enlisted) - Brown Camo");
 GROUND_HOLDER(Helmet_Engineer_Enlisted_CamoGrey,"ENG Helm 01 (Enlisted) - Grey Camo");
 GROUND_HOLDER(Helmet_Phase1_Pilot_Base,"AVI P1 Helm (Base)");
+GROUND_HOLDER(Helmet_Phase1Geo_Pilot,"AVI GEO Helm");
 GROUND_HOLDER(Helmet_Phase1_Pilot_CXA,"AVI P1 Helm 01+ (Airman)");
 GROUND_HOLDER(Helmet_Phase1_Tanker_Base,"ARMR P1 Helm (Base)");
 GROUND_HOLDER(Helmet_Phase1_Tanker_CT,"ARMR P1 Helm 01 (Trooper)");
