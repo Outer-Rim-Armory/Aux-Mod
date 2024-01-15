@@ -17,7 +17,8 @@
 
         "files.associations":
         {
-            "*.hpp": "cpp"
+            "*.hpp": "cpp",
+            "*.inc": "cpp"
         },
 
         "C_Cpp.errorSquiggles": "disabled"
