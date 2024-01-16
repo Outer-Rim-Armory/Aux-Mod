@@ -9,3 +9,5 @@ PREP(cswDeployModifier);
 PREP(setIntercomChannel);
 PREP(skin_canSwitch);
 PREP(skin_insertChildren);
+PREP(vivCanLoad);
+PREP(vivLoad);

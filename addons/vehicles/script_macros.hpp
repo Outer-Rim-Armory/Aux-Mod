@@ -1,5 +1,7 @@
 #define ATRT_HEALTH 50
 
+#define VIV_PICKUP_RANGE 30
+
 #define SKIN_SWITCHER class GVAR(switchSkin) \
 { \
     displayName = "Switch Vehicle Skin"; \

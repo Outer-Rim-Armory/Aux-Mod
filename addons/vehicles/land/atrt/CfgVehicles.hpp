@@ -29,5 +29,13 @@ class CfgVehicles
         allowedHeadgearB[] = {""};
         headgearList[] = {""};
         identityTypes[] = {"LanguageENG_F", "Head_NATO", "Head_Euro"};
+
+        class VehicleTransport
+        {
+            class Cargo
+            {
+                GVAR(vivOverride) = TRUE;
+            };
+        };
     };
 };
