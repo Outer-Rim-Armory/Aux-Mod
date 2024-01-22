@@ -38,7 +38,6 @@ class CfgWeapons
         flashSize = 0.5;
 
         recoil = "recoil_SMG_03";
-        recoilProne = "assaultRifleBase";
 
         maxZeroing = 1000;
 
