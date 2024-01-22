@@ -23,6 +23,8 @@ class CfgWeapons
         magazines[] = {QCLASS(Mag_300rnd_Z6), "Aux12thFleet_Mag_Z6"};
         magazineWell[] = {};
 
+        recoil = "recoil_lim";
+
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
