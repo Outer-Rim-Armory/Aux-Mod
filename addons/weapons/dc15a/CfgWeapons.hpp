@@ -67,6 +67,7 @@ class CfgWeapons
 
         class Single: Single
         {
+            reloadTime = 0.098361;
             class StandardSound: StandardSound
             {
                 soundBegin[] = {};
@@ -77,6 +78,8 @@ class CfgWeapons
         };
         class FullAuto: FullAuto
         {
+            reloadTime = 0.098361;
+
             class StandardSound: StandardSound
             {
                 soundBegin[] = {};

@@ -76,6 +76,7 @@ class CfgWeapons
         class Single: Single
         {
             dispersion = 0.00087;
+            reloadTime = 0.096;
 
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
@@ -89,6 +90,7 @@ class CfgWeapons
         class FullAuto: FullAuto
         {
             dispersion = 0.00087;
+            reloadTime = 0.096;
 
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound
