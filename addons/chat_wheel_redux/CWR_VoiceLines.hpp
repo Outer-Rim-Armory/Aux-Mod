@@ -10,7 +10,26 @@ class CWR_VoiceLines
             "ChatWheelRedux\Data\Audio\NeedMedic\NeedAMedic.wss",
             "ChatWheelRedux\Data\Audio\NeedMedic\NotSureIfICanMakeIt.wss",
             "ChatWheelRedux\Data\Audio\NeedMedic\StartingToHurt.wss",
-            "ChatWheelRedux\Data\Audio\NeedMedic\TroubleBreathing.wss"
+            "ChatWheelRedux\Data\Audio\NeedMedic\TroubleBreathing.wss",
+            "ChatWheelRedux\Data\Audio\NeedMedic\ImHit.wss",
+            "ChatWheelRedux\Data\Audio\NeedMedic\INeedAMedicOverHere.wss",
+            "ChatWheelRedux\Data\Audio\NeedMedic\IRequireMedicalSupport.wss",
+            "ChatWheelRedux\Data\Audio\NeedMedic\Pain.wss",
+            "ChatWheelRedux\Data\Audio\NeedMedic\Pain2.wss",
+            "ChatWheelRedux\Data\Audio\NeedMedic\Pain3.wss",
+            "ChatWheelRedux\Data\Audio\NeedMedic\Pain4.wss"
+        };
+    };
+
+    class NeedHelp
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\NeedHelp\INeedAssistance.wss",
+            "ChatWheelRedux\Data\Audio\NeedHelp\INeedAssistance2.wss",
+            "ChatWheelRedux\Data\Audio\NeedHelp\INeedBackup.wss",
+            "ChatWheelRedux\Data\Audio\NeedHelp\INeedReinforcementsOnMyPosition.wss",
+            "ChatWheelRedux\Data\Audio\NeedHelp\WhereAreThoseReinforcements.wss"
         };
     };
 
