@@ -12,6 +12,32 @@ class CfgVehicles
 
         displayName = "Khezu (Unarmed)";
 
+        armor = 200;
+        fuelCapacity = 82.5;
+        fuelConsumptionRate = 0.01;
+
+        maxSpeed = 135;
+        enginePower = 276;
+        engineMOI = 1.0;
+        maxOmega = 471;
+        idleRpm = 1000;
+        redRpm = 4000;
+        peakTorque = 1546;
+        torqueCurve[] =
+        {
+            {0, 0.3},
+            {0.178, 0.5},
+            {0.25, 0.85},
+            {0.4, 0.95},
+            {0.5, 1},
+            {0.625, 0.95},
+            {0.75, 0.7},
+            {1, 0.5}
+        };
+        dampingRateFullThrottle = 0.08;
+        dampingRateZeroThrottleClutchDisengaged = 0.35;
+        dampingRateZeroThrottleClutchEngaged = 2;
+
         hiddenSelectionsTextures[] =
         {
             QPATHTOF(land\khezu\data\textures\CamoKC\Body_co.paa),
@@ -77,6 +103,32 @@ class CfgVehicles
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Khezu_Armed);
 
         displayName = "Khezu (HMG/GMG)";
+
+        armor = 200;
+        fuelCapacity = 82.5;
+        fuelConsumptionRate = 0.01;
+
+        maxSpeed = 135;
+        enginePower = 276;
+        engineMOI = 1.0;
+        maxOmega = 471;
+        idleRpm = 1000;
+        redRpm = 4000;
+        peakTorque = 1546;
+        torqueCurve[] =
+        {
+            {0, 0.3},
+            {0.178, 0.5},
+            {0.25, 0.85},
+            {0.4, 0.95},
+            {0.5, 1},
+            {0.625, 0.95},
+            {0.75, 0.7},
+            {1, 0.5}
+        };
+        dampingRateFullThrottle = 0.08;
+        dampingRateZeroThrottleClutchDisengaged = 0.35;
+        dampingRateZeroThrottleClutchEngaged = 2;
 
         hiddenSelectionsTextures[] =
         {
