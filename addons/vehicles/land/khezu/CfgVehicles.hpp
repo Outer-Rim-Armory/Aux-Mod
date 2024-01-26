@@ -1,6 +1,33 @@
 class CfgVehicles
 {
-    class B_UGV_01_F;
+    class Car;
+    class Car_F: Car
+    {
+        class HitPoints
+        {
+            class HitBody;
+        };
+    };
+    class UGV_01_base_F: Car_F
+    {
+        class Turrets;
+
+        class HitPoints: HitPoints
+        {
+            class HitHull;
+            class HitEngine;
+            class HitFuel;
+
+            class HitLFWheel;
+            class HitLF2Wheel;
+            class HitLMWheel;
+
+            class HitRFWheel;
+            class HitRF2Wheel;
+            class HitRMWheel;
+        };
+    };
+    class B_UGV_01_F: UGV_01_base_F {};
     class CLASS(Khezu_Unarmed): B_UGV_01_F
     {
         SCOPE_PUBLIC;
@@ -76,13 +103,69 @@ class CfgVehicles
                 };
             };
         };
+
+        class HitPoints: HitPoints
+        {
+            class HitBody: HitBody
+            {
+                armor = 4;
+                explosionShielding = 1;
+                passThrough = 1;
+                minimalHit = 0.01;
+            };
+            class HitHull: HitHull
+            {
+                armor = 1;
+                explosionShielding = 0.2;
+                minimalHit = 0.2;
+                passThrough = 0.2;
+            };
+            class HitEngine: HitEngine
+            {
+                armor = 0.5;
+                explosionShielding = 0.4;
+                minimalHit = 0.2;
+                passThrough = 0.4;
+            };
+            class HitFuel: HitFuel
+            {
+                armor = 0.5;
+                explosionShielding = 0.1;
+                minimalHit = 0.2;
+                passThrough = 0.2;
+            };
+
+            class HitLFWheel: HitLFWheel
+            {
+                name = "wheel_1_1";
+                armor = 0.5;
+                explosionShielding = 4;
+                passThrough = 0.3;
+            };
+            class HitLF2Wheel: HitLFWheel
+            {
+                name = "wheel_1_2";
+            };
+            class HitLMWheel: HitLFWheel
+            {
+                name = "wheel_1_3";
+            };
+
+            class HitRFWheel: HitLFWheel
+            {
+                name = "wheel_2_1";
+            };
+            class HitRF2Wheel: HitLFWheel
+            {
+                name = "wheel_2_2";
+            };
+            class HitRMWheel: HitLFWheel
+            {
+                name = "wheel_2_3";
+            };
+        };
     };
 
-    class Car_F;
-    class UGV_01_base_F: Car_F
-    {
-        class Turrets;
-    };
     class UGV_01_rcws_base_F: UGV_01_base_F
     {
         class Turrets: Turrets
@@ -170,6 +253,67 @@ class CfgVehicles
                     QPATHTOF(land\khezu\data\textures\CamoGrey\Body2_co.paa),
                     QPATHTOF(data\csatTurret\CamoGrey\Turret_co.paa)
                 };
+            };
+        };
+
+        class HitPoints: HitPoints
+        {
+            class HitBody: HitBody
+            {
+                armor = 4;
+                explosionShielding = 1;
+                passThrough = 1;
+                minimalHit = 0.01;
+            };
+            class HitHull: HitHull
+            {
+                armor = 1;
+                explosionShielding = 0.2;
+                minimalHit = 0.2;
+                passThrough = 0.2;
+            };
+            class HitEngine: HitEngine
+            {
+                armor = 0.5;
+                explosionShielding = 0.4;
+                minimalHit = 0.2;
+                passThrough = 0.4;
+            };
+            class HitFuel: HitFuel
+            {
+                armor = 0.5;
+                explosionShielding = 0.1;
+                minimalHit = 0.2;
+                passThrough = 0.2;
+            };
+
+            class HitLFWheel: HitLFWheel
+            {
+                name = "wheel_1_1";
+                armor = 0.5;
+                explosionShielding = 4;
+                passThrough = 0.3;
+            };
+            class HitLF2Wheel: HitLFWheel
+            {
+                name = "wheel_1_2";
+            };
+            class HitLMWheel: HitLFWheel
+            {
+                name = "wheel_1_3";
+            };
+
+            class HitRFWheel: HitLFWheel
+            {
+                name = "wheel_2_1";
+            };
+            class HitRF2Wheel: HitLFWheel
+            {
+                name = "wheel_2_2";
+            };
+            class HitRMWheel: HitLFWheel
+            {
+                name = "wheel_2_3";
             };
         };
 
