@@ -57,6 +57,7 @@ class CfgWeapons
         GVAR(isCustom) = TRUE;
     };
 
+    class CLASS(Vest_WO);
     class CLASS(Vest_WO_Howzer): CLASS(Vest_WO)
     {
         displayName = "[KC] INF Vest ('Howzer')";
