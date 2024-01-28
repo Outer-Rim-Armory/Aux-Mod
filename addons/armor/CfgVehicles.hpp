@@ -306,6 +306,18 @@ class CfgVehicles
         };
         picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
     };
+    class CLASS(Backpack_ARC): CLASS(Backpack_Medic_Radio_Base)
+    {
+        displayName = "[KC] ARC Trooper Backpack";
+
+        model = "\SWLB_equipment\backpacks\SWLB_clone_arc_backpack.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] =
+        {
+            "\SWLB_equipment\backpacks\data\SWLB_clone_arc_backpack_co.paa"
+        };
+        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_arc_backpack_ca.paa";
+    };
 
     class CLASS(Backack_Commando): CLASS(Backpack_Base)
     {

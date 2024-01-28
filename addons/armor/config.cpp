@@ -95,6 +95,7 @@ class CfgPatches
             QCLASS(Backpack_Medic_Radio),
             QCLASS(Backpack_Radio_Mini_Base),
             QCLASS(Backpack_Radio_Mini),
+            QCLASS(Backack_ARC),
             QCLASS(Backack_Commando),
             QCLASS(Backack_Commando_EOD),
             QCLASS(Backack_Commando_RTO),
