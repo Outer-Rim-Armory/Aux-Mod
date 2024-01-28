@@ -273,6 +273,7 @@ class CfgPatches
             QCLASS(Uniform_Phase2_Insulated_Joe),
             QCLASS(Uniform_Phase2_Insulated_Keeli),
             QCLASS(Vest_Commander_Keeli),
+            QCLASS(Vest_Officer_Keeli),
             QCLASS(Vest_Officer_Ponds),
             QCLASS(Vest_Officer_Rat),
             QCLASS(Vest_WO_Howzer),
