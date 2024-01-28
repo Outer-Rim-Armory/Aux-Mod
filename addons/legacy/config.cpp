@@ -16,7 +16,9 @@ class CfgPatches
         weapons[] =
         {
             QCLASS(Helmet_ARF),
-            QCLASS(Uniform_ARF)
+            QCLASS(Helmet_ARC),
+            QCLASS(Uniform_ARF),
+            QCLASS(Uniform_ARC)
         };
         VERSION_CONFIG;
     };
