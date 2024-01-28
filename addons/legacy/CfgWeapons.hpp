@@ -31,4 +31,10 @@ class CfgWeapons
             uniformClass = QCLASS(Unit_ARC_CT);
         };
     };
+
+    class CLASS(Vest_Commander_Keeli);
+    class CLASS(Vest_Officer_Keeli): CLASS(Vest_Commander_Keeli)
+    {
+        SCOPE_HIDDEN;
+    };
 };

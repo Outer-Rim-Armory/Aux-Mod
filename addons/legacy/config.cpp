@@ -18,7 +18,8 @@ class CfgPatches
             QCLASS(Helmet_ARF),
             QCLASS(Helmet_ARC),
             QCLASS(Uniform_ARF),
-            QCLASS(Uniform_ARC)
+            QCLASS(Uniform_ARC),
+            QCLASS(Vest_Officer_Keeli)
         };
         VERSION_CONFIG;
     };
