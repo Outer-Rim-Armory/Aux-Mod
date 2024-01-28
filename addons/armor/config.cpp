@@ -372,7 +372,6 @@ class CfgPatches
             QCLASS(Vest_CSM),
             QCLASS(Vest_Officer),
             QCLASS(Vest_Officer_v2),
-            QCLASS(Vest_Pauldron),
             QCLASS(Vest_WO),
             QCLASS(Vest_Kama),
             QCLASS(Vest_Tactical_Commander),
