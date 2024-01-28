@@ -49,6 +49,6 @@ inGameUISetEventHandler ["Action", ""];
 
 [_rider, "blockThrow", QGVAR(atrt_isRiding), false] call ace_common_fnc_statusEffect_set;
 
-_rider switchMove "";
+[_rider, ""] remoteExec ["switchMove"];
 
 nil;
