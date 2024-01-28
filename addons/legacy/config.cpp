@@ -9,10 +9,15 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            QCLASS(core)
+            QCLASS(core),
+            QCLASS(armor)
         };
         units[] = {};
-        weapons[] = {};
+        weapons[] =
+        {
+            QCLASS(Helmet_ARF),
+            QCLASS(Uniform_ARF)
+        };
         VERSION_CONFIG;
     };
 
@@ -55,3 +60,5 @@ class CfgPatches
     class CLASS(Vehicles_Badger): ADDON {};
     class CLASS(Vehicles_OLV20): ADDON {};
 };
+
+#include "CfgWeapons.hpp"
