@@ -12,7 +12,12 @@ class CfgPatches
             QCLASS(core),
             QCLASS(armor)
         };
-        units[] = {};
+        units[] =
+        {
+            QCLASS(Ven_Resurgence_ClosedFullyHollowed),
+            QCLASS(Ven_Resurgence_OpenFullyHollowed),
+            QCLASS(Ven_Resurgence_Zeus)
+        };
         weapons[] =
         {
             QCLASS(Helmet_ARF),
@@ -65,3 +70,4 @@ class CfgPatches
 };
 
 #include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
