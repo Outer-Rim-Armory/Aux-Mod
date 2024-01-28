@@ -117,6 +117,14 @@ class CfgVehicles
         picture = QPATHTOF(data\ui\Backpack_ca.paa);
     };
 
+    class CLASS(Backpack_Invis): CLASS(Backpack)
+    {
+        displayName = "[KC] INF Backpack (Invis)";
+        model = QPATHTOEF(core,data\models\empty\empty.p3d);
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+    };
+
     class CLASS(Backpack_Heavy_Base): CLASS(Backpack_Base)
     {
         displayName = "[KC] INF Heavy Backpack (Base)";
@@ -180,6 +188,14 @@ class CfgVehicles
             "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
         };
         picture = QPATHTOF(data\ui\Backpack_Radio_ca.paa);
+    };
+
+    class CLASS(Backpack_Radio_Invis): CLASS(Backpack)
+    {
+        displayName = "[KC] INF Radio Backpack (Invis)";
+        model = QPATHTOEF(core,data\models\empty\empty.p3d);
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
     };
 
     class CLASS(Backpack_Medic_Base): CLASS(Backpack_Base)
