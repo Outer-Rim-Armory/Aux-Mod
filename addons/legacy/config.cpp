@@ -17,6 +17,8 @@ class CfgPatches
         };
         units[] =
         {
+            QCLASS(Unit_ARC),
+            QCLASS(Unit_ARF),
             QCLASS(Unit_Phase1_Pilot),
             QCLASS(Unit_Phase2_Pilot),
             QCLASS(Unit_Phase2_Pilot_Officer),

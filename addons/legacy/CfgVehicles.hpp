@@ -1,5 +1,17 @@
 class CfgVehicles
 {
+    class CLASS(Unit_ARC_CT);
+    class CLASS(Unit_ARC): CLASS(Unit_ARC_CT)
+    {
+        SCOPE_HIDDEN;
+    };
+
+    class CLASS(Unit_ARF_CT);
+    class CLASS(Unit_ARF): CLASS(Unit_ARF_CT)
+    {
+        SCOPE_HIDDEN;
+    };
+
     class CLASS(Unit_Phase1_CXA);
     class CLASS(Unit_Phase1_Pilot): CLASS(Unit_Phase1_CXA)
     {
