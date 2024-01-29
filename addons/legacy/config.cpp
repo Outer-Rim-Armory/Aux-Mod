@@ -17,6 +17,8 @@ class CfgPatches
         };
         units[] =
         {
+            QCLASS(Unit_Phase1_Tanker),
+            QCLASS(Unit_Phase2_Tanker),
             QCLASS(Ven_Resurgence_ClosedFullyHollowed),
             QCLASS(Ven_Resurgence_OpenFullyHollowed),
             QCLASS(Ven_Resurgence_Zeus),
@@ -28,8 +30,13 @@ class CfgPatches
         {
             QCLASS(Helmet_ARF),
             QCLASS(Helmet_ARC),
+            QCLASS(Helmet_Phase1_Tanker),
+            QCLASS(Helmet_Phase1_Tanker_v2),
+            QCLASS(Helmet_Phase2_Tanker),
+            QCLASS(Helmet_Phase2_Tanker_v2),
             QCLASS(Uniform_ARF),
             QCLASS(Uniform_ARC),
+            QCLASS(Uniform_Tanker),
             QCLASS(Vest_Officer_Keeli)
         };
         VERSION_CONFIG;
