@@ -35,7 +35,7 @@ class CfgPatches
         VERSION_CONFIG;
     };
 
-    class CLASS(Legacy_Base): CLASS(Legacy_Base)
+    class CLASS(Legacy_Base)
     {
         units[] = {};
         weapons[] = {};
