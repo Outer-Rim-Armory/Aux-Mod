@@ -19,7 +19,10 @@ class CfgPatches
         {
             QCLASS(Ven_Resurgence_ClosedFullyHollowed),
             QCLASS(Ven_Resurgence_OpenFullyHollowed),
-            QCLASS(Ven_Resurgence_Zeus)
+            QCLASS(Ven_Resurgence_Zeus),
+            QCLASS(OLV20),
+            QCLASS(Badger),
+            QCLASS(APC_Badger)
         };
         weapons[] =
         {
