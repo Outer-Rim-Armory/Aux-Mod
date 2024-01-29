@@ -210,8 +210,8 @@ class CfgVehicles
                     QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-                    QPATHTOF(land\hornet\data\textures\Launcher.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher.paa)
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
                 };
             };
             class GreyCamo: BrownCamo
@@ -222,8 +222,8 @@ class CfgVehicles
                     QPATHTOF(land\hornet\data\textures\Body_CamoGrey_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-                    QPATHTOF(land\hornet\data\textures\Launcher.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher.paa)
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
                 };
             };
         };

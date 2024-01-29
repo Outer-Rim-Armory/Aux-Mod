@@ -29,7 +29,7 @@ _atrt setVariable [QGVAR(rider), _rider, true];
 _rider setVariable [QGVAR(atrt_isRiding), true, true];
 
 _rider attachTo [_atrt, [0, 0, 0], "seat"];
-_rider switchMove "ChopperLight_C_LIn_H";
+[_rider, "ChopperLight_C_LIn_H"] remoteExec ["switchMove"];
 
 _atrt switchCamera cameraView;
 _rider remoteControl _atrt;
@@ -40,7 +40,7 @@ inGameUISetEventHandler ["Action", "if ((_this select 3) isEqualTo ""BackFromUAV
 [{
     // Prevent animation if mounting and dismounting quickly
     if (_this getVariable [QGVAR(atrt_isRiding), false]) then {
-        _this switchMove "driver_Quadbike"
+        [_this, "driver_Quadbike"] remoteExec ["switchMove"];
     }
 }, _rider, 1.5] call CBA_fnc_waitAndExecute;
 
