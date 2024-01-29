@@ -10,7 +10,8 @@ class CfgPatches
         requiredAddons[] =
         {
             QCLASS(core),
-            QCLASS(armor)
+            QCLASS(armor),
+            QCLASS(objects_ships)
         };
         units[] =
         {
