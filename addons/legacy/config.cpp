@@ -11,7 +11,9 @@ class CfgPatches
         {
             QCLASS(core),
             QCLASS(armor),
-            QCLASS(objects_ships)
+            QCLASS(objects_ships),
+            QCLASS(vehicles_hydra),
+            QCLASS(vehicles_reek)
         };
         units[] =
         {

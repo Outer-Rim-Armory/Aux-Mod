@@ -17,4 +17,17 @@ class CfgVehicles
     {
         SCOPE_HIDDEN;
     };
+
+    class CLASS(Hydra);
+    class CLASS(OLV20): CLASS(Hydra)
+    {
+        SCOPE_HIDDEN;
+    };
+
+    class CLASS(Reek);
+    class CLASS(Badger): CLASS(Reek)
+    {
+        SCOPE_HIDDEN;
+    };
+    class CLASS(APC_Badger): CLASS(Badger) {};
 };
