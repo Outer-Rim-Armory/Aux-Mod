@@ -21,3 +21,4 @@ class CfgPatches
 #include "CfgSFX.hpp"
 #include "CfgMusicClasses.hpp"
 #include "CfgMusic.hpp"
+#include "CfgVehicles.hpp"
