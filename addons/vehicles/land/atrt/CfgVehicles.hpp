@@ -1,5 +1,3 @@
-class CBA_Extended_EventHandlers_base;
-
 class CfgVehicles
 {
     class 3AS_ATRT_Base;
