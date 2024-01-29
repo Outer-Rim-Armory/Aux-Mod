@@ -1,5 +1,23 @@
 class CfgVehicles
 {
+    class CLASS(Unit_Phase1_CXA);
+    class CLASS(Unit_Phase1_Pilot): CLASS(Unit_Phase1_CXA)
+    {
+        SCOPE_HIDDEN;
+    };
+
+    class CLASS(Unit_Phase2_CXA);
+    class CLASS(Unit_Phase2_Pilot): CLASS(Unit_Phase2_CXA)
+    {
+        SCOPE_HIDDEN;
+    };
+
+    class CLASS(Unit_Phase2_CXE);
+    class CLASS(Unit_Phase2_Pilot_Officer): CLASS(Unit_Phase2_CXE)
+    {
+        SCOPE_HIDDEN;
+    };
+
     class CLASS(Unit_Phase1_Tanker_CT);
     class CLASS(Unit_Phase1_Tanker): CLASS(Unit_Phase1_Tanker_CT)
     {

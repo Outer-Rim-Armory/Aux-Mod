@@ -12,6 +12,24 @@ class CfgWeapons
         SCOPE_HIDDEN;
     };
 
+    class CLASS(Helmet_Phase1_Pilot_CXA);
+    class CLASS(Helmet_Phase1_Pilot): CLASS(Helmet_Phase1_Pilot_CXA)
+    {
+        SCOPE_HIDDEN;
+    };
+
+    class CLASS(Helmet_Phase2_Pilot_CXA);
+    class CLASS(Helmet_Phase2_Pilot): CLASS(Helmet_Phase2_Pilot_CXA)
+    {
+        SCOPE_HIDDEN;
+    };
+
+    class CLASS(Helmet_Phase2_Pilot_CXE);
+    class CLASS(Helmet_Phase2_Pilot_Officer): CLASS(Helmet_Phase2_Pilot_CXE)
+    {
+        SCOPE_HIDDEN;
+    };
+
     class CLASS(Helmet_Phase1_Tanker_CT);
     class CLASS(Helmet_Phase1_Tanker): CLASS(Helmet_Phase1_Tanker_CT)
     {
@@ -44,6 +62,18 @@ class CfgWeapons
 
     class CLASS(Uniform_ARC_CT);
     class CLASS(Uniform_ARC): CLASS(Uniform_ARC_CT)
+    {
+        SCOPE_HIDDEN;
+    };
+
+    class CLASS(Uniform_CXA);
+    class CLASS(Uniform_Pilot): CLASS(Uniform_CXA)
+    {
+        SCOPE_HIDDEN;
+    };
+
+    class CLASS(Uniform_CXE);
+    class CLASS(Uniform_Pilot_Officer): CLASS(Uniform_CXE)
     {
         SCOPE_HIDDEN;
     };
