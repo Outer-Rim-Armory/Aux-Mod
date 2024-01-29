@@ -25,10 +25,6 @@ class CfgWeapons
 
         GVAR(isCustom) = TRUE;
     };
-    class CLASS(Vest_Officer_Keeli): CLASS(Vest_Commander_Keeli)
-    {
-        SCOPE_HIDDEN;
-    };
 
     class CLASS(Vest_Basic);
     class CLASS(Vest_Officer): CLASS(Vest_Basic)
@@ -61,7 +57,8 @@ class CfgWeapons
         GVAR(isCustom) = TRUE;
     };
 
-    class CLASS(Vest_WO_Howzer): CLASS(Vest_Officer)
+    class CLASS(Vest_WO);
+    class CLASS(Vest_WO_Howzer): CLASS(Vest_WO)
     {
         displayName = "[KC] INF Vest ('Howzer')";
         hiddenSelectionsTextures[] =

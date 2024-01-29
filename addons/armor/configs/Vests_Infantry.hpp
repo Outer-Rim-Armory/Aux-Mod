@@ -316,27 +316,18 @@ class CLASS(Vest_Officer_v2): CLASS(Vest_Officer)
     };
 };
 
-class CLASS(Vest_Pauldron): CLASS(Vest_Officer)
+class CLASS(Vest_WO): CLASS(Vest_Officer)
 {
-    displayName = "[KC] INF Vest XX (Pauldron)";
+    displayName = "[KC] INF Vest 11 (Warrant Officer)";
     model = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa), // Pauldron
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa) // Pauldron
     };
 
     class ItemInfo: ItemInfo
     {
         uniformModel = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
-    };
-};
-
-class CLASS(Vest_WO): CLASS(Vest_Pauldron)
-{
-    displayName = "[KC] INF Vest 11 (Warrant Officer)";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
     };
 };
 

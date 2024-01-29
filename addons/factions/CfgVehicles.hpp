@@ -1,4 +1,4 @@
-class CBA_Extended_EventHandlers_base;
+class CBA_Extended_EventHandlers;
 
 class CfgVehicles
 {
@@ -30,7 +30,7 @@ class CfgVehicles
 
         class EventHandlers: EventHandlers
         {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
         };
     };
 
@@ -59,7 +59,7 @@ class CfgVehicles
 
         class EventHandlers: EventHandlers
         {
-            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
+            class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
         };
     };
 
