@@ -81,7 +81,6 @@ class CfgVehicles
 
         class EventHandlers
         {
-            // Using CBA_Extended_EventHandlers_base was creating a class reference in CfgVehicles
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
         };
     };

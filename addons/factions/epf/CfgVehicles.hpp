@@ -238,7 +238,6 @@ class CfgVehicles
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
             MAG_XX(OPTRE_FC_PlasmaGrenade,5);
         };
     };
@@ -265,7 +264,6 @@ class CfgVehicles
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
             MAG_XX(OPTRE_FC_PlasmaGrenade,5);
         };
     };
@@ -280,7 +278,6 @@ class CfgVehicles
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
             MAG_XX(OPTRE_FC_PlasmaGrenade,5);
         };
     };
@@ -301,11 +298,10 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_100rnd_E5C),10);
+            MAG_XX(CLASS(Mag_150rnd_E5C),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
             MAG_XX(OPTRE_FC_PlasmaGrenade,5);
         };
     };
@@ -313,11 +309,10 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_100rnd_E5C),10);
+            MAG_XX(CLASS(Mag_150rnd_E5C),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
             MAG_XX(OPTRE_FC_PlasmaGrenade,5);
         };
     };
@@ -348,7 +343,6 @@ class CfgVehicles
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
             MAG_XX(OPTRE_FC_PlasmaGrenade,5);
         };
     };

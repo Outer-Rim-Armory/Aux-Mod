@@ -19,7 +19,7 @@ params ["_vehicle", "_role", "_unit"];
 private [];
 TRACE_3("fnc_setIntercomChannel",_vehicle,_role,_unit);
 
-if !(isMultiplayer and _unit call ace_common_fnc_isplayer) exitWith {};
+if !(isMultiplayer and _unit call ace_common_fnc_isPlayer) exitWith {};
 
 switch (_role) do {
     case "driver";
