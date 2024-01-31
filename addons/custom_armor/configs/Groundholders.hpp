@@ -107,11 +107,11 @@ GROUND_HOLDER(Helmet_ARC_Drake,"SF ARC Helm ('Drake')");
 GROUND_HOLDER(Helmet_ARC_DrakeBacta,"SF ARC Helm ('Drake') [Bacta Visor]");
 GROUND_HOLDER(Helmet_ARC_Hagrid,"SF ARC Helm ('Hagrid')");
 GROUND_HOLDER(Helmet_ARC_HagridPlasma,"SF ARC Helm ('Hagrid') [Plasma Visor]");
+GROUND_HOLDER(Helmet_ARC_Sin,"SF ARF Helm ('Sin')");
 GROUND_HOLDER(Helmet_ARC_Tyrant,"SF ARC Helm ('Tyrant')");
 GROUND_HOLDER(Helmet_ARC_TyrantCrimson,"SF ARC Helm ('Tyrant') [Crimson Visor]");
 
 GROUND_HOLDER(Helmet_ARF_Patriot,"SF ARF Helm ('Patriot')");
-GROUND_HOLDER(Helmet_ARF_Sin,"SF ARF Helm ('Sin')");
 GROUND_HOLDER(Helmet_ARF_Tugz,"SF ARF Helm ('Tugz')");
 
 GROUND_HOLDER(Helmet_BARC_Rat,"SF BARC Helm ('Rat')");

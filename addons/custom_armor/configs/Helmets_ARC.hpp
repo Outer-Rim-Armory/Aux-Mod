@@ -63,6 +63,19 @@ class CLASS(Helmet_ARC_HagridPlasma): CLASS(Helmet_ARC_Hagrid)
     };
 };
 
+class CLASS(Helmet_ARC_Sin): CLASS(Helmet_ARC_Base)
+{
+    displayName = "[KC] SF ARC P1.5 Helm ('Sin')";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\arc\Sin_camo1_co.paa),
+        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
+    };
+
+    GVAR(isCustom) = TRUE;
+};
+
 class CLASS(Helmet_ARC_Tyrant): CLASS(Helmet_ARC_Base)
 {
     displayName = "[KC] SF ARC P1.5 Helm ('Tyrant')";
@@ -70,7 +83,7 @@ class CLASS(Helmet_ARC_Tyrant): CLASS(Helmet_ARC_Base)
     {
         QPATHTOF(data\helmets\arc\Tyrant_camo1_co.paa),
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
-        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa",
+        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
     };
 
     GVAR(isCustom) = TRUE;
