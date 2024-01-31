@@ -16,6 +16,7 @@ class CfgPatches
         {
             QCLASS(Unit_Axel),
             QCLASS(Unit_Burnt),
+            QCLASS(Unit_Defter),
             QCLASS(Unit_Dexus),
             QCLASS(Unit_Drake),
             QCLASS(Unit_Fil),
@@ -253,6 +254,7 @@ class CfgPatches
             QCLASS(Helmet_BARC_RatCrimson),
             QCLASS(Uniform_Axel),
             QCLASS(Uniform_Burnt),
+            QCLASS(Uniform_Defter),
             QCLASS(Uniform_Dexus),
             QCLASS(Uniform_Drake),
             QCLASS(Uniform_Fil),
