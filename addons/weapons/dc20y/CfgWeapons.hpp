@@ -14,10 +14,9 @@ class CfgWeapons
 
         // magazines[] =
         // {
-        //     QCLASS(Mag_60Rnd_DC17M),
-        //     QCLASS(Mag_90Rnd_DC17M),
-        //     QCLASS(Mag_5Rnd_DC17M_Sniper),
-        //     QCLASS(Mag_1Rnd_DC17M_AT)
+        //     QCLASS(Mag_10Rnd_DC20Y),
+        //     QCLASS(Mag_3Rnd_DC20Y_AP),
+        //     QCLASS(Mag_5Rnd_DC20Y_HE)
         // };
         magazineWell[] = {};
 
