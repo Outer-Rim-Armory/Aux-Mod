@@ -20,7 +20,7 @@ class CfgVehicles
         impactEffectsBlood = "ImpactMetal";
 
         weapons[] = {QCLASS(Turret_ATRT)};
-        magazines[] = {QCLASS(Mag_9999rnd_ATRT)};
+        magazines[] = {QCLASS(Mag_9999Rnd_ATRT)};
 
         allowedfacewear[] = {""};
         allowedHeadgear[] = {""};

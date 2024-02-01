@@ -324,9 +324,9 @@ class CfgVehicles
                 weapons[] = {QCLASS(Coax_Reek), "GMG_40mm"};
                 magazines[] =
                 {
-                    QCLASS(Mag_1000rnd_Coax),
-                    QCLASS(Mag_1000rnd_Coax),
-                    QCLASS(Mag_1000rnd_Coax),
+                    QCLASS(Mag_1000Rnd_Coax),
+                    QCLASS(Mag_1000Rnd_Coax),
+                    QCLASS(Mag_1000Rnd_Coax),
                     "200Rnd_40mm_G_belt"
                 };
             };

@@ -23,8 +23,8 @@ class CfgVehicles
         weapons[] = {QCLASS(E5), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(E5), "", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_100rnd_E5)};
-        respawnMagazines[] = {QCLASS(Mag_100rnd_E5)};
+        magazines[] = {QCLASS(Mag_100Rnd_E5)};
+        respawnMagazines[] = {QCLASS(Mag_100Rnd_E5)};
         items[] =
         {
             // Medical
@@ -63,8 +63,8 @@ class CfgVehicles
         weapons[] = {QCLASS(E5), "", QCLASS(E60R_AT), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(E5), "", QCLASS(E60R_AT), "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_100rnd_E5), QCLASS(Mag_1rnd_E60R_AT)};
-        respawnMagazines[] = {QCLASS(Mag_100rnd_E5), QCLASS(Mag_1rnd_E60R_AT)};
+        magazines[] = {QCLASS(Mag_100Rnd_E5), QCLASS(Mag_1Rnd_E60R_AT)};
+        respawnMagazines[] = {QCLASS(Mag_100Rnd_E5), QCLASS(Mag_1Rnd_E60R_AT)};
 
         linkedItems[] = {QCLASS(TU_Helmet_Visor_Goggles), QCLASS(TU_Vest_AssaultMedium), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(TU_Helmet_Visor_Goggles), QCLASS(TU_Vest_AssaultMedium), LINKED_ITEMS_RADIO};
@@ -78,8 +78,8 @@ class CfgVehicles
         weapons[] = {QCLASS(E5), "", QCLASS(E60R_AA), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(E5), "", QCLASS(E60R_AA), "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_100rnd_E5), QCLASS(Mag_1rnd_E60R_AA)};
-        respawnMagazines[] = {QCLASS(Mag_100rnd_E5), QCLASS(Mag_1rnd_E60R_AA)};
+        magazines[] = {QCLASS(Mag_100Rnd_E5), QCLASS(Mag_1Rnd_E60R_AA)};
+        respawnMagazines[] = {QCLASS(Mag_100Rnd_E5), QCLASS(Mag_1Rnd_E60R_AA)};
         backpack = QCLASS(TU_Backpack_Heavy_Predef_AA);
     };
 
@@ -92,8 +92,8 @@ class CfgVehicles
         weapons[] = {QCLASS(E5C_Stock), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(E5C_Stock), "", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_150rnd_E5C)};
-        respawnMagazines[] = {QCLASS(Mag_150rnd_E5C)};
+        magazines[] = {QCLASS(Mag_150Rnd_E5C)};
+        respawnMagazines[] = {QCLASS(Mag_150Rnd_E5C)};
 
         linkedItems[] = {QCLASS(TU_Helmet_Assault), QCLASS(TU_Vest_AssaultHeavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(TU_Helmet_Assault), QCLASS(TU_Vest_AssaultHeavy), LINKED_ITEMS_RADIO};
@@ -155,7 +155,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_100rnd_E5),10);
+            MAG_XX(CLASS(Mag_100Rnd_E5),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -179,9 +179,9 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_100rnd_E5),10);
-            MAG_XX(CLASS(Mag_1rnd_E60R_HE),3);
-            MAG_XX(CLASS(Mag_1rnd_E60R_AT),3);
+            MAG_XX(CLASS(Mag_100Rnd_E5),10);
+            MAG_XX(CLASS(Mag_1Rnd_E60R_HE),3);
+            MAG_XX(CLASS(Mag_1Rnd_E60R_AT),3);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -194,8 +194,8 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_100rnd_E5),10);
-            MAG_XX(CLASS(Mag_1rnd_E60R_AA),6);
+            MAG_XX(CLASS(Mag_100Rnd_E5),10);
+            MAG_XX(CLASS(Mag_1Rnd_E60R_AA),6);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -219,7 +219,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_150rnd_E5C),10);
+            MAG_XX(CLASS(Mag_150Rnd_E5C),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -230,7 +230,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_150rnd_E5C),10);
+            MAG_XX(CLASS(Mag_150Rnd_E5C),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -261,7 +261,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_100rnd_E5),10);
+            MAG_XX(CLASS(Mag_100Rnd_E5),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);

@@ -16,7 +16,7 @@ class CfgWeapons
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_1rnd_RPS6_HEAT_Disposable), "Aux12thFleet_Mag_RPS6_HEAT"};
+        magazines[] = {QCLASS(Mag_1Rnd_RPS6_HEAT_Disposable), "Aux12thFleet_Mag_RPS6_HEAT"};
         magazineWell[] = {};
 
         // JLTS emp system

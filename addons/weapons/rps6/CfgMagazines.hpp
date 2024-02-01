@@ -1,7 +1,7 @@
 class CfgMagazines
 {
     class CLASS(Mag_Base);
-    class CLASS(Mag_1rnd_RPS6_HEAT_Disposable): CLASS(Mag_Base)
+    class CLASS(Mag_1Rnd_RPS6_HEAT_Disposable): CLASS(Mag_Base)
     {
         SCOPE_PUBLIC;
         displayName = "[KC] RPS-6 HEAT Disposable Rocket";
@@ -22,7 +22,7 @@ class CfgMagazines
         mass = MASS_MAGAZINE;
     };
 
-    class Aux12thFleet_Mag_RPS6_HEAT: CLASS(Mag_1rnd_RPS6_HEAT_Disposable)
+    class Aux12thFleet_Mag_RPS6_HEAT: CLASS(Mag_1Rnd_RPS6_HEAT_Disposable)
     {
         SCOPE_HIDDEN;
         descriptionShort = "High Explosive Anti-Tank Rocket<br/>Rounds: 1<br/>Used In: RPS-6<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";

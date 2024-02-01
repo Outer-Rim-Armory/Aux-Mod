@@ -31,7 +31,7 @@ class CfgWeapons
 
         modes[] = {"Single", "FullAuto"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_60rnd_LW38), QCLASS(Mag_60rnd_LW38_Green)};
+        magazines[] = {QCLASS(Mag_60Rnd_LW38), QCLASS(Mag_60Rnd_LW38_Green)};
 
         reloadAction = "GestureReloadMX";
         reloadMagazineSound[] = {"\LF_Weapon_Unit\westar45\data\sounds\westar55reload.wss", 3, 1, 10};

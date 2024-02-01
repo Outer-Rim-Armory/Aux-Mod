@@ -17,7 +17,7 @@ class CfgWeapons
         baseWeapon = QCLASS(E5C_Base);
 
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_150rnd_E5C)};
+        magazines[] = {QCLASS(Mag_150Rnd_E5C)};
         magazineWell[] = {};
 
         canShootInWater = TRUE;

@@ -1,7 +1,7 @@
 class CfgMagazines
 {
     class CLASS(Mag_Base);
-    class CLASS(Mag_1rnd_WeaponName): CLASS(Mag_Base)
+    class CLASS(Mag_10Rnd_WeaponName): CLASS(Mag_Base)
     {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-20Y Energy Cell";

@@ -33,7 +33,7 @@ class CfgWeapons
             "medium"
         };
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_30rnd_HI12)};
+        magazines[] = {QCLASS(Mag_30Rnd_HI12)};
         magazineWell[] = {};
 
         canShootInWater = TRUE;

@@ -186,11 +186,11 @@ class CfgVehicles
                     "40Rnd_40mm_APFSDS_Tracer_Red_shells",
                     "40Rnd_40mm_APFSDS_Tracer_Red_shells",
                     "40Rnd_40mm_APFSDS_Tracer_Red_shells",
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax)
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax)
                 };
             };
         };
