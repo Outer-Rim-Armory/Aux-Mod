@@ -146,5 +146,11 @@ class CfgVehicles
             proxyWeapon = QCLASS(Mortar_M190_ProxyWeapon);
             displayName = "M-190 Mortar";
         };
+
+        // Most mortars should have pick up option, but not this one
+        class UserActions: UserActions
+        {
+            delete GVAR(CSW_PickUp);
+        };
     };
 };
