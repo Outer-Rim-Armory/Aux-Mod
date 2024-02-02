@@ -81,7 +81,7 @@ class CfgVehicles
         {
             ammoLoadTime = 5;
             ammoUnloadTime = 5;
-            desiredAmmo = 3;
+            desiredAmmo = 6;
 
             magazineLocation = QUOTE(_target selectionPosition 'usti hlavne');
         };
