@@ -23,14 +23,14 @@ class CLASS(Unit_ARC_CT): CLASS(Unit_Phase2_Base)
     backpack = QCLASS(Backpack_ARC);
 };
 
-class CLASS(Unit_ARC_Imperial): CLASS(Unit_ARC_CT)
+class CLASS(Unit_ARC_NightShade): CLASS(Unit_ARC_CT)
 {
     SCOPE_HIDDEN;
-    uniformClass = QCLASS(Uniform_ARC_Imperial);
+    uniformClass = QCLASS(Uniform_ARC_NightShade);
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\uniforms\arc\Imperial_upper_co.paa),
-        QPATHTOF(data\uniforms\arc\Imperial_lower_co.paa),
+        QPATHTOF(data\uniforms\arc\NightShade_upper_co.paa),
+        QPATHTOF(data\uniforms\arc\NightShade_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
