@@ -1,28 +1,30 @@
 class CfgVehicles
 {
-    class StaticWeapon;
-    class StaticMortar: StaticWeapon
-    {
-        class Turrets;
-    };
-    class Mortar_01_base_F: StaticMortar
-    {
-        class Turrets: Turrets
-        {
-            class MainTurret;
-        };
-    };
-    class B_Mortar_01_F: Mortar_01_base_F
+    class LandVehicle;
+    class StaticWeapon: LandVehicle
     {
         class HitPoints
         {
             class HitBody;
         };
-        class UserActions;
+    };
+    class StaticMortar: StaticWeapon {};
+    class Mortar_01_base_F: StaticMortar
+    {
+        class Turrets;
+    };
+    class B_Mortar_01_F: Mortar_01_base_F {};
+    class 3AS_Republic_Mortar: B_Mortar_01_F
+    {
         class assembleInfo;
         class ace_csw;
+        class UserActions;
+        class Turrets: Turrets
+        {
+            class MainTurret;
+        };
     };
-    class CLASS(Mortar_Base): B_Mortar_01_F
+    class CLASS(Mortar_Base): 3AS_Republic_Mortar
     {
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
@@ -101,20 +103,6 @@ class CfgVehicles
 
                 condition = QUOTE([ARR_2(this,ace_player)] call ace_csw_fnc_assemble_canPickupTripod);
                 statement = QUOTE([ARR_2(this,ace_player)] call ace_csw_fnc_assemble_pickupTripod);
-            };
-        };
-
-        class Damage
-        {
-            tex[] = {};
-            mat[] =
-            {
-                "3AS\3AS_Static\mortar\data\base.rvmat",
-                "A3\Static_F_Gamma\data\StaticTurret_01_damage.rvmat",
-                "A3\Static_F_Gamma\data\StaticTurret_01_destruct.rvmat",
-                "3AS\3AS_Static\mortar\data\tube.rvmat",
-                "A3\Static_F_Gamma\data\StaticTurret_02_damage.rvmat",
-                "A3\Static_F_Gamma\data\StaticTurret_02_destruct.rvmat"
             };
         };
     };
