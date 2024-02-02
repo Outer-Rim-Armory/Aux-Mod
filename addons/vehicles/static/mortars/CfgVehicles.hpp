@@ -25,7 +25,7 @@ class CfgVehicles
                 hideOnUse = TRUE;
                 priority = 5;
 
-                condition = QUOTE(ace_player call ace_csw_fnc_assemble_canDeployTripod);
+                condition = QUOTE(ace_player isEqualTo this and GVAR(showCSWUserAction) and ace_player call ace_csw_fnc_assemble_canDeployTripod);
                 statement = QUOTE(ace_player call ace_csw_fnc_assemble_deployTripod);
             };
         };
