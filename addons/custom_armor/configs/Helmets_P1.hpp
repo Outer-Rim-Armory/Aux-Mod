@@ -442,6 +442,38 @@ class CLASS(Helmet_Phase1_Swoop): CLASS(Helmet_Phase1_Base)
     };
 };
 
+class CLASS(Helmet_Phase1_Tyrant): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF P1 Helm ('Tyrant')";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Tyrant_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+
+    GVAR(isCustom) = TRUE;
+    EGVAR(armor,nvCanToggle) = TRUE;
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Tyrant);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase1_TyrantCrimson);
+};
+class CLASS(Helmet_Phase1_TyrantCrimson): CLASS(Helmet_Phase1_Tyrant)
+{
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Tyrant_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
+
 class CLASS(Helmet_Phase1_Woods): CLASS(Helmet_Phase1_Base)
 {
     displayName = "[KC] INF P1 Helm ('Woods')";
