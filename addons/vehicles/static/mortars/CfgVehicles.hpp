@@ -1,36 +1,5 @@
 class CfgVehicles
 {
-    class Man;
-    class CAManBase: Man
-    {
-        class ACE_SelfActions
-        {
-            class ace_csw_deploy
-            {
-                modifierFunction = QUOTE(call FUNC(cswDeployModifier));
-            };
-        };
-
-        class UserActions
-        {
-            class GVAR(CSW_Deploy)
-            {
-                displayName = "Deploy Tripod";
-                displayNameDefault = "";
-
-                position = "camera";
-                radius = 30;
-                onlyForPlayer = FALSE;
-
-                hideOnUse = TRUE;
-                priority = 5;
-
-                condition = QUOTE(ace_player call ace_csw_fnc_assemble_canDeployTripod);
-                statement = QUOTE(ace_player call ace_csw_fnc_assemble_deployTripod);
-            };
-        };
-    };
-
     class StaticWeapon;
     class StaticMortar: StaticWeapon
     {

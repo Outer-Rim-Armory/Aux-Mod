@@ -138,23 +138,10 @@ class CfgWeapons
         };
     };
 
-    class ItemCore;
-    class Vest_NoCamo_Base: ItemCore
-    {
-        class ItemInfo;
-    };
+    class Vest_NoCamo_Base;
     class V_PlateCarrier1_rgr: Vest_NoCamo_Base
     {
-        class ItemInfo: ItemInfo
-        {
-            class HitpointsProtectionInfo
-            {
-                class Abdomen;
-                class Body;
-                class Chest;
-                class Diaphragm;
-            };
-        };
+        class ItemInfo;
     };
     class ls_redforVest_base: V_PlateCarrier1_rgr {};
     class CLASS(OPFOR_Vest_Base): ls_redforVest_base {};
@@ -172,13 +159,6 @@ class CfgWeapons
         {
             hiddenSelections[] = {"camo"};
             uniformModel = "\sc_equipment\data\watchdog\wd_vest_basic.p3d";
-
-            class HitpointsProtectionInfo: HitpointsProtectionInfo
-            {
-                class Abdomen;
-                class Chest;
-                class Diaphragm;
-            };
         };
     };
 
@@ -199,22 +179,6 @@ class CfgWeapons
         {
             hiddenSelections[] = {"camo", "camo1"};
             uniformModel = "\sc_equipment\data\marine\mr_vest.p3d";
-
-            class HitpointsProtectionInfo: HitpointsProtectionInfo
-            {
-                class Abdomen: Abdomen
-                {
-                    armor = 20;
-                };
-                class Chest: Chest
-                {
-                    armor = 20;
-                };
-                class Diaphragm: Diaphragm
-                {
-                    armor = 20;
-                };
-            };
         };
     };
 
@@ -228,21 +192,6 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformModel = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
-            class HitpointsProtectionInfo: HitpointsProtectionInfo
-            {
-                class Abdomen: Abdomen
-                {
-                    armor = 20;
-                };
-                class Chest: Chest
-                {
-                    armor = 20;
-                };
-                class Diaphragm: Diaphragm
-                {
-                    armor = 20;
-                };
-            };
         };
     };
 
@@ -256,21 +205,6 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformModel = "\sc_equipment\data\watchdog\wd_vest_heavy.p3d";
-            class HitpointsProtectionInfo: HitpointsProtectionInfo
-            {
-                class Abdomen: Abdomen
-                {
-                    armor = 25;
-                };
-                class Chest: Chest
-                {
-                    armor = 25;
-                };
-                class Diaphragm: Diaphragm
-                {
-                    armor = 25;
-                };
-            };
         };
     };
 

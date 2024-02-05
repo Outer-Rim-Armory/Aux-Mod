@@ -190,7 +190,7 @@ class CfgVehicles
         picture = QPATHTOF(data\ui\Backpack_Radio_ca.paa);
     };
 
-    class CLASS(Backpack_Radio_Invis): CLASS(Backpack)
+    class CLASS(Backpack_Radio_Invis): CLASS(Backpack_Radio_Base)
     {
         displayName = "[KC] INF Radio Backpack (Invis)";
         model = QPATHTOEF(core,data\models\empty\empty.p3d);

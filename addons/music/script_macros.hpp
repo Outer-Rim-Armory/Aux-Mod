@@ -30,5 +30,5 @@
     name = var2; \
     sound[] = {QPATHTOF(data\music\var1##.ogg), "db+0", 1}; \
     duration = var3; \
-    musicClass = QCLASS(MusicCat_##var4##); \
+    musicClass = QCLASS(DOUBLES(MusicCat,var4)); \
 }

@@ -58,7 +58,7 @@ _maxPatients = [
 TRACE_5("fnc_bactaGrenade | Heal parameters",_projectile,_radius,_rate,_maxPatients,_duration);
 
 INFO_1("Created area healing for bacta grenade %1",_projectile);
-_healerID = [_projectile, _radius, _rate, _maxPatients] call EFUNC(medical,areaSlowHeal);
+_healerID = [_projectile, _radius, _rate, GVAR(bactaBloodRestoreAmount), GVAR(bactaPainReductionAmount), GVAR(bactaFullHealOnComplete), _maxPatients] call EFUNC(medical,areaSlowHeal);
 
 [{deleteVehicle _this; INFO_1("Deleted bacta grenade %1",_this);}, _projectile, _duration] call CBA_fnc_waitAndExecute;
 

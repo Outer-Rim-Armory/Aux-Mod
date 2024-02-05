@@ -16,7 +16,7 @@ class CLASS(Helmet_Phase2_Tanker_Catholic): CLASS(Helmet_Phase2_Tanker_Base)
     EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_Tanker_CatholicKyber);
 };
 
-class CLASS(Helmet_Phase2_Tanker_CatholicKyber): CLASS(Helmet_Phase2_Tanker_Base)
+class CLASS(Helmet_Phase2_Tanker_CatholicKyber): CLASS(Helmet_Phase2_Tanker_Catholic)
 {
     SCOPE_HIDDEN;
     hiddenSelectionsTextures[] =
