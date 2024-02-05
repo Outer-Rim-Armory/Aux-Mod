@@ -15,6 +15,16 @@ class CfgPatches
         };
         units[] =
         {
+            QGROUND_CLASS(Helmet_Phase1_HowzerBlue),
+            QGROUND_CLASS(Helmet_Phase1_HowzerBrown),
+            QGROUND_CLASS(Helmet_Phase1_91st_Ponds),
+            QGROUND_CLASS(Helmet_Phase2_Fil),
+            QGROUND_CLASS(Helmet_Phase2_FilSquad),
+            QGROUND_CLASS(Helmet_Phase2_HowzerBlue),
+            QGROUND_CLASS(Helmet_Phase2_HowzerBrown),
+            QGROUND_CLASS(Helmet_Phase2_91st_Ponds),
+            QGROUND_CLASS(Helmet_Phase2_91st_Stone),
+            QGROUND_CLASS(Helmet_Phase2_187th)
         };
         weapons[] =
         {
