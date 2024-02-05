@@ -152,11 +152,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            QCLASS(Helmet_Phase2_CG_Stone), "lsd_gar_clone_vest", QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+            QCLASS(Helmet_Phase2_CG_Stone), QCLASS(Vest_Holster), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
         };
         respawnLinkedItems[] =
         {
-            QCLASS(Helmet_Phase2_CG_Stone), "lsd_gar_clone_vest", QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+            QCLASS(Helmet_Phase2_CG_Stone), QCLASS(Vest_Holster), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
         };
     };
 
