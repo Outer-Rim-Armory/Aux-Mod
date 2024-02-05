@@ -122,4 +122,81 @@ class CfgWeapons
 
         EGVAR(custom_armor,isCustom) = TRUE;
     };
+
+    class CLASS(Uniform_Fil): CLASS(Uniform_Base)
+    {
+        displayName = "[KC] INF Armor ('Fil')";
+        GVAR(isCustom) = TRUE;
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(Unit_Fil);
+        };
+    };
+
+    class CLASS(Uniform_FilSquad): CLASS(Uniform_Base)
+    {
+        displayName = "[KC] INF Armor ('Fil's Squad')";
+        GVAR(isCustom) = TRUE;
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(Unit_FilSquad);
+        };
+    };
+
+    class CLASS(Uniform_HowzerBlue): CLASS(Uniform_Base)
+    {
+        displayName = "[KC] INF Armor ('Howzer') [Blue]";
+        GVAR(isCustom) = TRUE;
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(Unit_Phase2_HowzerBlue);
+        };
+    };
+
+    class CLASS(Uniform_HowzerBrown): CLASS(Uniform_Base)
+    {
+        displayName = "[KC] INF Armor ('Howzer') [Brown]";
+        GVAR(isCustom) = TRUE;
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(Unit_Phase2_HowzerBrown);
+        };
+    };
+
+    class CLASS(Uniform_91st_Ponds): CLASS(Uniform_Base)
+    {
+        displayName = "[91st] INF Armor ('Ponds')";
+        GVAR(isCustom) = TRUE;
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(Unit_Ponds);
+        };
+    };
+
+    class CLASS(Uniform_91st_Stone): CLASS(Uniform_Base)
+    {
+        displayName = "[91st] INF Armor ('Stone')";
+        GVAR(isCustom) = TRUE;
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(Unit_Stone);
+        };
+    };
+
+    class CLASS(Uniform_187th): CLASS(Uniform_Base)
+    {
+        displayName = "[187th] INF Armor";
+        GVAR(isCustom) = TRUE;
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(Unit_Trooper187th);
+        };
+    };
 };

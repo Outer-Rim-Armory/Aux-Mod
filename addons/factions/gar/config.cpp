@@ -37,7 +37,14 @@ class CfgPatches
             QCLASS(Helmet_Phase2_HowzerBrown),
             QCLASS(Helmet_Phase2_91st_Ponds),
             QCLASS(Helmet_Phase2_91st_Stone),
-            QCLASS(Helmet_Phase2_187th)
+            QCLASS(Helmet_Phase2_187th),
+            QCLASS(Uniform_Fil),
+            QCLASS(Uniform_FilSquad),
+            QCLASS(Uniform_HowzerBlue),
+            QCLASS(Uniform_HowzerBrown),
+            QCLASS(Uniform_91st_Ponds),
+            QCLASS(Uniform_91st_Stone),
+            QCLASS(Uniform_187th),
         };
         VERSION_CONFIG;
     };
