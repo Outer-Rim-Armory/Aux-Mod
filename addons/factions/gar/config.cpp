@@ -11,12 +11,24 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(armor)
+            QCLASS(custom_armor)
         };
         units[] =
         {
         };
-        weapons[] = {};
+        weapons[] =
+        {
+            QCLASS(Helmet_Phase1_HowzerBlue),
+            QCLASS(Helmet_Phase1_HowzerBrown),
+            QCLASS(Helmet_Phase1_91st_Ponds),
+            QCLASS(Helmet_Phase2_Fil),
+            QCLASS(Helmet_Phase2_FilSquad),
+            QCLASS(Helmet_Phase2_HowzerBlue),
+            QCLASS(Helmet_Phase2_HowzerBrown),
+            QCLASS(Helmet_Phase2_91st_Ponds),
+            QCLASS(Helmet_Phase2_91st_Stone),
+            QCLASS(Helmet_Phase2_187th)
+        };
         VERSION_CONFIG;
     };
 };

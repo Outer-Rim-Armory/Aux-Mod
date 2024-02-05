@@ -203,32 +203,6 @@ class CLASS(Helmet_Phase1_Hazard): CLASS(Helmet_Phase1_Base)
     GVAR(isCustom) = TRUE;
 };
 
-class CLASS(Helmet_Phase1_HowzerBlue): CLASS(Helmet_Phase1_Base)
-{
-    displayName = "[KC] INF P1 Helm ('Howzer') [Blue]";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase1\HowzerBlue_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
-class CLASS(Helmet_Phase1_HowzerBrown): CLASS(Helmet_Phase1_Base)
-{
-    displayName = "[KC] INF P1 Helm ('Howzer') [Brown]";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase1\HowzerBrown_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
 class CLASS(Helmet_Phase1_Jaws): CLASS(Helmet_Phase1_Base)
 {
     displayName = "[KC] INF P1 Helm ('Jaws')";
@@ -371,17 +345,6 @@ class CLASS(Helmet_Phase1_Patriot): CLASS(Helmet_Phase1_Base)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase1\Patriot_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
-    };
-};
-
-class CLASS(Helmet_Phase1_Ponds): CLASS(Helmet_Phase1_Base)
-{
-    displayName = "[KC] INF P1 Helm ('Ponds')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase1\Ponds_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
