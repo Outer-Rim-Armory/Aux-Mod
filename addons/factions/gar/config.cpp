@@ -15,6 +15,13 @@ class CfgPatches
         };
         units[] =
         {
+            QCLASS(Unit_Fil),
+            QCLASS(Unit_FilSquad),
+            QCLASS(Unit_Phase2_HowzerBlue),
+            QCLASS(Unit_Phase2_HowzerBrown),
+            QCLASS(Unit_91st_Ponds),
+            QCLASS(Unit_91st_Stone),
+            QCLASS(Unit_187th_Trooper),
             QGROUND_CLASS(Helmet_Phase1_HowzerBlue),
             QGROUND_CLASS(Helmet_Phase1_HowzerBrown),
             QGROUND_CLASS(Helmet_Phase1_91st_Ponds),
