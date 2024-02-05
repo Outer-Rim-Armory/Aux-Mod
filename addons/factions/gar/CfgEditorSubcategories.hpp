@@ -5,6 +5,11 @@ class CfgEditorSubcategories
         displayName = "91st MRC";
     };
 
+    class CLASS(EdSubCat_CoruscantGuard)
+    {
+        displayName = "Coruscant Guard";
+    };
+
     class CLASS(EdSubCat_187th)
     {
         displayName = "187th Battalion";

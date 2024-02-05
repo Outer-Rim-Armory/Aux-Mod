@@ -99,9 +99,9 @@ class CfgWeapons
         EGVAR(custom_armor,isCustom) = TRUE;
     };
 
-    class CLASS(Helmet_Phase2_91st_Stone): CLASS(Helmet_Phase2_Base)
+    class CLASS(Helmet_Phase2_CG_Stone): CLASS(Helmet_Phase2_Base)
     {
-        displayName = "[91st] INF P2 Helm ('Stone')";
+        displayName = "[CG] INF P2 Helm ('Stone')";
         hiddenSelectionsTextures[] =
         {
             QPATHTOF(SUBCOMPONENT\data\helmets\phase2\Stone_camo1_co.paa),
@@ -183,14 +183,14 @@ class CfgWeapons
         };
     };
 
-    class CLASS(Uniform_91st_Stone): CLASS(Uniform_Base)
+    class CLASS(Uniform_CG_Stone): CLASS(Uniform_Base)
     {
-        displayName = "[91st] INF Armor ('Stone')";
+        displayName = "[CG] INF Armor ('Stone')";
         EGVAR(custom_armor,isCustom) = TRUE;
 
         class ItemInfo: ItemInfo
         {
-            uniformClass = QCLASS(Unit_91st_Stone);
+            uniformClass = QCLASS(Unit_CG_Stone);
         };
     };
 

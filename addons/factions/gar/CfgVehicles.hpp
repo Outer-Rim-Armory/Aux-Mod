@@ -9,7 +9,7 @@ class CfgVehicles
     GROUND_HOLDER(Helmet_Phase2_HowzerBlue,"INF P2 Helm ('Howzer') [Blue]");
     GROUND_HOLDER(Helmet_Phase2_HowzerBrown,"INF P2 Helm ('Howzer') [Brown]");
     GROUND_HOLDER(Helmet_Phase2_91st_Ponds,"INF P2 Helm ('Ponds')");
-    GROUND_HOLDER(Helmet_Phase2_91st_Stone,"INF P2 Helm ('Stone')");
+    GROUND_HOLDER(Helmet_Phase2_CG_Stone,"INF P2 Helm ('Stone')");
     GROUND_HOLDER(Helmet_Phase2_187th,"INF P2 Helm (187th Trooper)");
 
     class CLASS(Unit_Phase2_Base);
@@ -135,14 +135,14 @@ class CfgVehicles
         };
     };
 
-    class CLASS(Unit_91st_Stone): CLASS(Unit_Phase2_Base)
+    class CLASS(Unit_CG_Stone): CLASS(Unit_Phase2_Base)
     {
         displayName = "Commander Stone";
         faction = QCLASS(Faction_GAR);
-        editorSubcategory = QCLASS(EdSubCat_91st);
-        editorPreview = EDITOR_PREVIEW(Unit_91st_Stone);
+        editorSubcategory = QCLASS(EdSubCat_CoruscantGuard);
+        editorPreview = EDITOR_PREVIEW(Unit_CG_Stone);
 
-        uniformClass = QCLASS(Uniform_91st_Stone);
+        uniformClass = QCLASS(Uniform_CG_Stone);
         hiddenSelectionsTextures[] =
         {
             QPATHTOF(SUBCOMPONENT\data\uniforms\standard\Stone_upper_co.paa),
@@ -152,11 +152,11 @@ class CfgVehicles
 
         linkedItems[] =
         {
-            QCLASS(Helmet_Phase2_91st_Stone), "lsd_gar_clone_vest", QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+            QCLASS(Helmet_Phase2_CG_Stone), "lsd_gar_clone_vest", QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
         };
         respawnLinkedItems[] =
         {
-            QCLASS(Helmet_Phase2_91st_Stone), "lsd_gar_clone_vest", QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+            QCLASS(Helmet_Phase2_CG_Stone), "lsd_gar_clone_vest", QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
         };
     };
 
