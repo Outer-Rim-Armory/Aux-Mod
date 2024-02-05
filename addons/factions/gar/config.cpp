@@ -11,7 +11,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(custom_armor)
+            QCLASS(armor)
         };
         units[] =
         {
