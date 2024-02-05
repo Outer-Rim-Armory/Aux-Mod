@@ -23,6 +23,19 @@ class CLASS(Unit_Burnt): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_Defter): CLASS(Unit_Phase2_Base)
+{
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Defter);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Defter_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Defter_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+
+
 class CLASS(Unit_Dexus): CLASS(Unit_Phase2_Base)
 {
     SCOPE_HIDDEN;

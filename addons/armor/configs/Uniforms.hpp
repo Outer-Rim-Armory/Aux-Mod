@@ -284,12 +284,12 @@ class CLASS(Uniform_ARC_CT): CLASS(Uniform_Base)
     };
 };
 
-class CLASS(Uniform_ARC_Imperial): CLASS(Uniform_Base)
+class CLASS(Uniform_ARC_NightShade): CLASS(Uniform_Base)
 {
-    displayName = "[KC] SF ARC EMP Armor";
+    displayName = "[KC] SF ARC Armor (NightShade)";
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Unit_ARC_Imperial);
+        uniformClass = QCLASS(Unit_ARC_NightShade);
     };
 };
 

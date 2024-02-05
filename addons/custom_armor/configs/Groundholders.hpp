@@ -30,6 +30,8 @@ GROUND_HOLDER(Helmet_Phase1_Rodger,"INF P1 Helm ('Rodger')");
 GROUND_HOLDER(Helmet_Phase1_Sin,"INF P1 Helm ('Sin')");
 GROUND_HOLDER(Helmet_Phase1_Splashdown,"INF P1 Helm ('Splashdown')");
 GROUND_HOLDER(Helmet_Phase1_Swoop,"INF P1 Helm ('Swoop')");
+GROUND_HOLDER(Helmet_Phase1_Tyrant,"INF P1 Helm ('Tyrant')");
+GROUND_HOLDER(Helmet_Phase1_TyrantCrimson,"INF P1 Helm ('Tyrant') [Crimson Visor]");
 GROUND_HOLDER(Helmet_Phase1_Woods,"INF P1 Helm ('Woods')");
 
 GROUND_HOLDER(Helmet_Phase1_Pilot_Bailout,"AVI P1 Helm ('Bailout')");
@@ -84,8 +86,6 @@ GROUND_HOLDER(Helmet_Phase2_Stone,"INF P2 Helm ('Stone')");
 GROUND_HOLDER(Helmet_Phase2_Swoop,"INF P2 Helm ('Swoop')");
 GROUND_HOLDER(Helmet_Phase2_Sytha,"INF P2 Helm ('Sytha')");
 GROUND_HOLDER(Helmet_Phase2_Tugz,"INF P2 Helm ('Tugz')");
-GROUND_HOLDER(Helmet_Phase2_Tyrant,"INF P2 Helm ('Tyrant')");
-GROUND_HOLDER(Helmet_Phase2_TyrantCrimson,"INF P2 Helm ('Tyrant') [Crimson Visor]");
 GROUND_HOLDER(Helmet_Phase2_Vortex,"INF P2 Helm ('Vortex')");
 GROUND_HOLDER(Helmet_Phase2_Woods,"INF P2 Helm ('Woods')");
 
@@ -107,11 +107,11 @@ GROUND_HOLDER(Helmet_ARC_Drake,"SF ARC Helm ('Drake')");
 GROUND_HOLDER(Helmet_ARC_DrakeBacta,"SF ARC Helm ('Drake') [Bacta Visor]");
 GROUND_HOLDER(Helmet_ARC_Hagrid,"SF ARC Helm ('Hagrid')");
 GROUND_HOLDER(Helmet_ARC_HagridPlasma,"SF ARC Helm ('Hagrid') [Plasma Visor]");
+GROUND_HOLDER(Helmet_ARC_Sin,"SF ARF Helm ('Sin')");
 GROUND_HOLDER(Helmet_ARC_Tyrant,"SF ARC Helm ('Tyrant')");
 GROUND_HOLDER(Helmet_ARC_TyrantCrimson,"SF ARC Helm ('Tyrant') [Crimson Visor]");
 
 GROUND_HOLDER(Helmet_ARF_Patriot,"SF ARF Helm ('Patriot')");
-GROUND_HOLDER(Helmet_ARF_Sin,"SF ARF Helm ('Sin')");
 GROUND_HOLDER(Helmet_ARF_Tugz,"SF ARF Helm ('Tugz')");
 
 GROUND_HOLDER(Helmet_BARC_Rat,"SF BARC Helm ('Rat')");

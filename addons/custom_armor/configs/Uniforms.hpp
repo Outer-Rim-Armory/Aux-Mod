@@ -25,6 +25,17 @@ class CLASS(Uniform_Burnt): CLASS(Uniform_Base)
     };
 };
 
+class CLASS(Uniform_Defter): CLASS(Uniform_Base)
+{
+    displayName = "[KC] INF Armor ('Defter')";
+    GVAR(isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = QCLASS(Unit_Defter);
+    };
+};
+
 class CLASS(Uniform_Dexus): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor ('Dexus')";
