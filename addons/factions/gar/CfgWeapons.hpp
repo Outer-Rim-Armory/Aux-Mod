@@ -6,7 +6,7 @@ class CfgWeapons
         displayName = "[KC] INF P1 Helm ('Howzer') [Blue]";
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\helmets\phase1\HowzerBlue_camo1_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\helmets\phase1\HowzerBlue_camo1_co.paa),
             "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
             "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
         };
@@ -19,7 +19,7 @@ class CfgWeapons
         displayName = "[KC] INF P1 Helm ('Howzer') [Brown]";
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\helmets\phase1\HowzerBrown_camo1_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\helmets\phase1\HowzerBrown_camo1_co.paa),
             "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
             "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
         };
@@ -32,7 +32,7 @@ class CfgWeapons
         displayName = "[91st] INF P1 Helm ('Ponds')";
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\helmets\phase1\Ponds_camo1_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\helmets\phase1\Ponds_camo1_co.paa),
             "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
             "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
         };
@@ -44,7 +44,7 @@ class CfgWeapons
         displayName = "[KC] INF P2 Helm ('Fil')";
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\helmets\phase2\Fil_camo1_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\helmets\phase2\Fil_camo1_co.paa),
             "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
         };
 
@@ -56,7 +56,7 @@ class CfgWeapons
         displayName = "[KC] INF P2 Helm ('Fil's Squad')";
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\helmets\phase2\FilSquad_camo1_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\helmets\phase2\FilSquad_camo1_co.paa),
             "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
         };
 
@@ -68,7 +68,7 @@ class CfgWeapons
         displayName = "[KC] INF P2 Helm ('Howzer') [Blue]";
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\helmets\phase2\HowzerBlue_camo1_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\helmets\phase2\HowzerBlue_camo1_co.paa),
             "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
         };
 
@@ -80,7 +80,7 @@ class CfgWeapons
         displayName = "[KC] INF P2 Helm ('Howzer') [Brown]";
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\helmets\phase2\HowzerBrown_camo1_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\helmets\phase2\HowzerBrown_camo1_co.paa),
             "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
         };
 
@@ -92,7 +92,7 @@ class CfgWeapons
         displayName = "[91st] INF P2 Helm ('Ponds')";
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\helmets\phase2\Ponds_camo1_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\helmets\phase2\Ponds_camo1_co.paa),
             "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
         };
 
@@ -104,7 +104,7 @@ class CfgWeapons
         displayName = "[91st] INF P2 Helm ('Stone')";
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\helmets\phase2\Stone_camo1_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\helmets\phase2\Stone_camo1_co.paa),
             "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
         };
 
@@ -116,7 +116,7 @@ class CfgWeapons
         displayName = "[187th] INF P2 Helm";
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(data\helmets\phase2\187th_camo1_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\helmets\phase2\187th_camo1_co.paa),
             "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
         };
 
