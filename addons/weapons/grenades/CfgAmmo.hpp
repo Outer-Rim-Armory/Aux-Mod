@@ -9,10 +9,10 @@ class CfgAmmo
         indirectHitRange = 10;
         explosive = 0.01;
         explosionTime = 5;
-        JLTS_isEMPAmmo = 1;
+        JLTS_isEMPAmmo = FALSE;
 
-        ace_frag_enabled = 0;
-        ace_frag_skip = 1;
+        ace_frag_enabled = FALSE;
+        ace_frag_skip = TRUE;
         ace_frag_metal = 0;
         ace_frag_charge = 0;
 

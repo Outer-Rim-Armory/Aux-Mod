@@ -5,7 +5,7 @@ GROUND_HOLDER(Helmet_Airborne_CT_v2,"AB Helm 01 (Trooper, v2)");
 GROUND_HOLDER(Helmet_ARC_Base,"SF ARC P1.5 Helm (Base)");
 GROUND_HOLDER(Helmet_ARC_CT,"SF ARC P1.5 Helm 01 (Trooper)");
 GROUND_HOLDER(Helmet_ARC_CT_Legacy,"SF ARC P1.5 Helm 01 (Trooper, Legacy)");
-GROUND_HOLDER(Helmet_ARC_Imperial,"SF ARC EMP Helm");
+GROUND_HOLDER(Helmet_ARC_NightShade,"SF ARC P1.5 Helm (NightShade)");
 GROUND_HOLDER(Helmet_ARC_Enlisted_CamoBrown,"SF ARC P1.5 Helm 01 (Enlisted) - Brown Camo");
 GROUND_HOLDER(Helmet_ARC_Enlisted_CamoGrey,"SF ARC P1.5 Helm 01 (Enlisted) - Grey Camo");
 GROUND_HOLDER(Helmet_ARC_Enlisted_CamoNight,"SF ARC P1.5 Helm 01 (Enlisted) - Night Camo");

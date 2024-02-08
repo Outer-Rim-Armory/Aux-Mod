@@ -80,8 +80,8 @@ class CLASS(Helmet_Phase2_Dexus): CLASS(Helmet_Phase2_Base)
 
     GVAR(isCustom) = TRUE;
     EGVAR(armor,nvCanToggle) = TRUE;
-    EGVAR(armor,toggleOff) = QCLASS(Helmet_Phase2_Dexus);
-    EGVAR(armor,toggleOn) = QCLASS(Helmet_Phase2_DexusBacta);
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Dexus);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_DexusBacta);
 };
 class CLASS(Helmet_Phase2_DexusBacta): CLASS(Helmet_Phase2_Dexus)
 {
@@ -563,36 +563,6 @@ class CLASS(Helmet_Phase2_Tugz): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-};
-
-
-class CLASS(Helmet_Phase2_Tyrant): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[KC] INF P2 Helm ('Tyrant')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\Tyrant_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
-    };
-
-    GVAR(isCustom) = TRUE;
-    EGVAR(armor,nvCanToggle) = TRUE;
-    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Tyrant);
-    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_TyrantCrimson);
-};
-class CLASS(Helmet_Phase2_TyrantCrimson): CLASS(Helmet_Phase2_Tyrant)
-{
-    SCOPE_HIDDEN;
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\Tyrant_camo1_co.paa),
-        QPATHTOF(data\visors\Crimson_camo2_co.paa)
-    };
-    hiddenSelectionsMaterials[] =
-    {
-        "",
-        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
-    };
 };
 
 class CLASS(Helmet_Phase2_Vortex): CLASS(Helmet_Phase2_Base)
