@@ -80,8 +80,8 @@ class CLASS(Helmet_Phase2_Dexus): CLASS(Helmet_Phase2_Base)
 
     GVAR(isCustom) = TRUE;
     EGVAR(armor,nvCanToggle) = TRUE;
-    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Burnt);
-    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_BurntBacta);
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Dexus);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_DexusBacta);
 };
 class CLASS(Helmet_Phase2_DexusBacta): CLASS(Helmet_Phase2_Dexus)
 {
