@@ -25,7 +25,7 @@ params [
     ["_condition", {true}, [{}]]
 ];
 private ["_function"];
-TRACE_3("fnc_soundLoop",_object,_filePath,_delay);
+TRACE_4("fnc_soundLoop",_object,_filePath,_delay,_condition);
 
 if (isNull _object or {
     _filePath isEqualTo "" or
