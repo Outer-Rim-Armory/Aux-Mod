@@ -37,13 +37,9 @@ _function = {
     }, [_object, _filePath, _delay, _function], _delay] call CBA_fnc_waitAndExecute;
 };
 
-[
-    {
-        params ["_object", "_filePath", "_delay", "_function"];
-        [_object, _filePath, _delay, _function] call _function;
-    },
-    [_object, _filePath, _delay, _function],
-    _delay
-] call CBA_fnc_waitAndExecute;
+[{
+    params ["_object", "_filePath", "_delay", "_function"];
+    [_object, _filePath, _delay, _function] call _function;
+}, [_object, _filePath, _delay, _function], _delay] call CBA_fnc_waitAndExecute;
 
 nil;
