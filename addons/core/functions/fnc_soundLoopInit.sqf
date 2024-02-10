@@ -21,17 +21,9 @@ TRACE_1("fnc_soundLoopInit",_object);
 
 if (isNull _object) exitWith {};
 
-_filePath = [
-    configFile >> "CfgVehicles" >> typeOf _object,
-    QGVAR(soundLoop),
-    ""
-] call BIS_fnc_returnConfigEntry;
+_filePath = getText (configFile >> "CfgVehicles" >> typeOf _object >> QGVAR(soundLoop))
 
-_soundDelay = [
-    configFile >> "CfgVehicles" >> typeOf _object,
-    QGVAR(soundLoopDelay),
-    ""
-] call BIS_fnc_returnConfigEntry;
+_soundDelay = getNumber (configFile >> "CfgVehicles" >> typeOf _object >> QGVAR(soundLoopDelay))
 
 [_object, _filePath, _soundDelay] call FUNC(soundLoop);
 nil;
