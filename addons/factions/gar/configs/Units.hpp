@@ -122,6 +122,31 @@ class CLASS(Unit_FilSquad): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_GC_Trooper): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Clone Trooper";
+    faction = QCLASS(Faction_GAR);
+    editorSubcategory = QCLASS(EdSubCat_GreenCompany);
+    editorPreview = EDITOR_PREVIEW(Unit_GC_Trooper);
+
+    uniformClass = QCLASS(Uniform_GC);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\GC_upper_co.paa),
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\GC_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_GC), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_GC), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Phase2_HowzerBlue): CLASS(Unit_Phase2_Base)
 {
     displayName = "Captain Howzer";

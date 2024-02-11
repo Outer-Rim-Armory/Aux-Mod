@@ -57,6 +57,17 @@ class CLASS(Uniform_FilSquad): CLASS(Uniform_Base)
     };
 };
 
+class CLASS(Uniform_GC): CLASS(Uniform_Base)
+{
+    displayName = "[GC] INF Armor";
+    EGVAR(custom_armor,isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = QCLASS(Unit_GC_Trooper);
+    };
+};
+
 class CLASS(Uniform_HowzerBlue): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor ('Howzer') [Blue]";

@@ -28,6 +28,7 @@ class CfgPatches
 
             QGROUND_CLASS(Helmet_Phase1_CG),
             QGROUND_CLASS(Helmet_Phase1_DC),
+            QGROUND_CLASS(Helmet_Phase1_GC),
             QGROUND_CLASS(Helmet_Phase1_HowzerBlue),
             QGROUND_CLASS(Helmet_Phase1_HowzerBrown),
             QGROUND_CLASS(Helmet_Phase1_212th),
@@ -38,6 +39,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase2_DC),
             QGROUND_CLASS(Helmet_Phase2_Fil),
             QGROUND_CLASS(Helmet_Phase2_FilSquad),
+            QGROUND_CLASS(Helmet_Phase2_GC),
             QGROUND_CLASS(Helmet_Phase2_HowzerBlue),
             QGROUND_CLASS(Helmet_Phase2_HowzerBrown),
             QGROUND_CLASS(Helmet_Phase2_187th),
@@ -48,6 +50,7 @@ class CfgPatches
         {
             QCLASS(Helmet_Phase1_CG),
             QCLASS(Helmet_Phase1_DC),
+            QCLASS(Helmet_Phase1_GC),
             QCLASS(Helmet_Phase1_HowzerBlue),
             QCLASS(Helmet_Phase1_HowzerBrown),
             QCLASS(Helmet_Phase1_91st_Ponds),
@@ -57,6 +60,7 @@ class CfgPatches
             QCLASS(Helmet_Phase2_DC),
             QCLASS(Helmet_Phase2_Fil),
             QCLASS(Helmet_Phase2_FilSquad),
+            QCLASS(Helmet_Phase2_GC),
             QCLASS(Helmet_Phase2_HowzerBlue),
             QCLASS(Helmet_Phase2_HowzerBrown),
             QCLASS(Helmet_Phase2_187th),

@@ -15,6 +15,11 @@ class CfgEditorSubcategories
         displayName = "Fil's Squad";
     };
 
+    class CLASS(EdSubCat_GreenCompany)
+    {
+        displayName = "Green Company";
+    };
+
     class CLASS(EdSubCat_HowzerSquad)
     {
         displayName = "Howzer's Squad";
