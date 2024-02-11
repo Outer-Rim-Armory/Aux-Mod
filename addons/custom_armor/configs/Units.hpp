@@ -60,76 +60,6 @@ class CLASS(Unit_Drake): CLASS(Unit_Phase2_Base)
     };
 };
 
-class CLASS(Unit_Fil): CLASS(Unit_Phase2_Base)
-{
-    SCOPE_HIDDEN;
-    uniformClass = QCLASS(Uniform_Fil);
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\uniforms\standard\Fil_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\Fil_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-    };
-};
-
-class CLASS(Unit_FilSquad): CLASS(Unit_Phase2_Base)
-{
-    SCOPE_HIDDEN;
-    uniformClass = QCLASS(Uniform_FilSquad);
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\uniforms\standard\FilSquad_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\FilSquad_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-    };
-};
-
-class CLASS(Unit_Phase2_HowzerBlue): CLASS(Unit_Phase2_Base)
-{
-    displayName = "Howzer (Blue)";
-    uniformClass = QCLASS(Uniform_HowzerBlue);
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\uniforms\standard\HowzerBlue_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\HowzerBlue_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-    };
-
-    editorSubcategory = QCLASS(EdSubCat_Customs);
-    editorPreview = EDITOR_PREVIEW(Unit_Phase2_HowzerBlue);
-
-    linkedItems[] =
-    {
-        QCLASS(Helmet_Phase2_HowzerBlue), QCLASS(Vest_WO_Howzer), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
-    };
-    respawnLinkedItems[] =
-    {
-        QCLASS(Helmet_Phase2_HowzerBlue), QCLASS(Vest_WO_Howzer), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
-    };
-};
-class CLASS(Unit_Phase2_HowzerBrown): CLASS(Unit_Phase2_HowzerBlue)
-{
-    displayName = "Howzer (Brown)";
-    uniformClass = QCLASS(Uniform_HowzerBrown);
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\uniforms\standard\HowzerBrown_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\HowzerBrown_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-    };
-
-    editorPreview = EDITOR_PREVIEW(Unit_Phase2_HowzerBrown);
-
-    linkedItems[] =
-    {
-        QCLASS(Helmet_Phase2_HowzerBrown), QCLASS(Vest_WO), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
-    };
-    respawnLinkedItems[] =
-    {
-        QCLASS(Helmet_Phase2_HowzerBrown), QCLASS(Vest_WO), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", "SWLB_comlink", LINKED_ITEMS
-    };
-};
-
 class CLASS(Unit_Joe): CLASS(Unit_Phase2_Base)
 {
     SCOPE_HIDDEN;
@@ -176,30 +106,6 @@ class CLASS(Unit_Keeli_CamoGrey): CLASS(Unit_Phase2_Base)
     };
 };
 
-class CLASS(Unit_Ponds): CLASS(Unit_Phase2_Base)
-{
-    SCOPE_HIDDEN;
-    uniformClass = QCLASS(Uniform_Ponds);
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\uniforms\standard\Ponds_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\Ponds_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-    };
-};
-
-class CLASS(Unit_Trooper187): CLASS(Unit_Phase2_Base)
-{
-    SCOPE_HIDDEN;
-    uniformClass = QCLASS(Uniform_Trooper187);
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\uniforms\standard\Trooper187_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\Trooper187_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-    };
-};
-
 class CLASS(Unit_Rat): CLASS(Unit_Phase2_Base)
 {
     SCOPE_HIDDEN;
@@ -220,18 +126,6 @@ class CLASS(Unit_Sin): CLASS(Unit_Phase2_Base)
     {
         QPATHTOF(data\uniforms\standard\Sin_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Sin_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-    };
-};
-
-class CLASS(Unit_Stone): CLASS(Unit_Phase2_Base)
-{
-    SCOPE_HIDDEN;
-    uniformClass = QCLASS(Uniform_Stone);
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\uniforms\standard\Stone_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\Stone_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };

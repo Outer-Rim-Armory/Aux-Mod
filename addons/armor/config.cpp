@@ -356,6 +356,7 @@ class CfgPatches
             QCLASS(Uniform_Jedi_Knight),
             QCLASS(Uniform_Jedi_Commander),
             QCLASS(Vest_Basic),
+            QCLASS(Vest_Holster),
             QCLASS(Vest_Assault),
             QCLASS(Vest_Grenadier),
             QCLASS(Vest_Heavy),
