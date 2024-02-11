@@ -16,6 +16,6 @@
 params ["_unit"];
 
 private _backpack = backpack _unit;
-private _isJetpack = GET_NUMBER(configFile >> "CfgVehicles" >> _backpack >> "BNA_KC_Jet_isJetpack", 0);
+private _isJetpack = GET_NUMBER(configFile >> "CfgVehicles" >> _backpack >> "BNA_KC_Jet_isJetpack",0);
 
 [false, true] select _isJetpack;
