@@ -65,7 +65,7 @@ class CfgVehicles
 
     class CLASS(Unit_Phase2_HowzerBlue): CLASS(Unit_Phase2_Base)
     {
-        displayName = "Captain Howzer (Blue)";
+        displayName = "Captain Howzer";
         faction = QCLASS(Faction_GAR);
         editorSubcategory = QCLASS(EdSubCat_HowzerSquad);
         editorPreview = EDITOR_PREVIEW(Unit_Phase2_HowzerBlue);
