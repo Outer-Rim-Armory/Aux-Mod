@@ -385,6 +385,17 @@ class CLASS(Helmet_Phase1_Rodger): CLASS(Helmet_Phase1_Base)
     };
 };
 
+class CLASS(Helmet_Phase1_Sage): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF P1 Helm ('Sage')";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Sage_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
 class CLASS(Helmet_Phase1_Sin): CLASS(Helmet_Phase1_Base)
 {
     displayName = "[KC] INF P1 Helm ('Sin')";
