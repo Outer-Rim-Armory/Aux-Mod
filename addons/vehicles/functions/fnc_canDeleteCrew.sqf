@@ -22,9 +22,7 @@ private ["_allCrew"];
 TRACE_1("fnc_canDeleteCrew",_vehicle);
 
 _crew = [_vehicle, ["driver", "commander", "gunner", "turret"]] call ace_common_fnc_getVehicleCrew;
-
 if (isNull _vehicle or {!(ace_player in _crew)}) exitWith {false};
 
 _crew = _crew select {!isPlayer _x};
-
 !(_crew isEqualTo []);
