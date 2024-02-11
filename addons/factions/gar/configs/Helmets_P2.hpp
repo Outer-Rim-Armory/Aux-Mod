@@ -81,6 +81,18 @@ class CLASS(Helmet_Phase2_187th): CLASS(Helmet_Phase2_Base)
     EGVAR(custom_armor,isCustom) = TRUE;
 };
 
+class CLASS(Helmet_Phase2_212th): CLASS(Helmet_Phase2_Base)
+{
+    displayName = "[212th] INF P2 Helm";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(SUBCOMPONENT\data\helmets\phase2\212th_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+
+    EGVAR(custom_armor,isCustom) = TRUE;
+};
+
 class CLASS(Helmet_Phase2_91st_Ponds): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[91st] INF P2 Helm ('Ponds')";

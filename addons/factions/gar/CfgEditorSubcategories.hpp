@@ -1,18 +1,13 @@
 class CfgEditorSubcategories
 {
-    class CLASS(EdSubCat_91st)
-    {
-        displayName = "91st MRC";
-    };
-
     class CLASS(EdSubCat_CoruscantGuard)
     {
         displayName = "Coruscant Guard";
     };
 
-    class CLASS(EdSubCat_187th)
+    class CLASS(EdSubCat_FilSquad)
     {
-        displayName = "187th Battalion";
+        displayName = "Fil's Squad";
     };
 
     class CLASS(EdSubCat_HowzerSquad)
@@ -20,8 +15,18 @@ class CfgEditorSubcategories
         displayName = "Howzer's Squad";
     };
 
-    class CLASS(EdSubCat_FilSquad)
+    class CLASS(EdSubCat_187th)
     {
-        displayName = "Fil's Squad";
+        displayName = "187th Battalion";
+    };
+
+    class CLASS(EdSubCat_212th)
+    {
+        displayName = "212th Attack Battalion";
+    };
+
+    class CLASS(EdSubCat_91st)
+    {
+        displayName = "91st MRC";
     };
 };
