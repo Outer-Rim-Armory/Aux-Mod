@@ -13,7 +13,8 @@ CWR_messagesHashMap =
         ["Vehicle", "[vl-ContactVic]Contact! Vehicle [direction], bearing [bearing]! [distance]!"],
         ["Fortification", "[vl-ContactFort]Contact! Fortification [direction], bearing [bearing]! [distance]!"],
         ["Low Ammo", "[vl-NeedAmmo]I need ammo for my [weapon]!"],
-        ["ACE Check", "[vl-Status]Status [status]!"],
+        ["Call ACE Check", "[vl-AskStatus]ACE check!"],
+        ["ACE Response", "[vl-Status]Status [status]!"],
         ["Launchers", "[launcher]"],
         ["Custom 1", "Default Message"], // Configurable messages that can be set in the addon options
         ["Custom 2", "Default Message"],
@@ -51,11 +52,11 @@ CWR_OpenDistanceMenu =
 {
     params ["_message"];
     sleep 0.05;
-    
+
     private _distanceList = ["Close", "Mid", "Far"];
     CWR_distanceMessageList = _distanceList apply { [_message, "[distance]", _x] call CWR_fnc_stringReplace; };
     // distanceMessageList must be global because no other values can be passed to the expression parameter of BIS_fnc_CreateMenu
-    
+
     [
         "How far?",
         "CWR_Menu_Distance",
@@ -72,10 +73,10 @@ CWR_OpenStatusMenu =
 {
     params ["_message"];
     sleep 0.05;
-    
+
     private _statusList = ["Green", "Yellow", "Orange", "Red", "Black"];
     CWR_statusMessageList = _statusList apply { [_message, "[status]", _x] call CWR_fnc_stringReplace; };
-    
+
     [
         "How are you?",
         "CWR_Menu_Status",
@@ -92,10 +93,10 @@ CWR_OpenLauncherMenu =
 {
     params ["_message"];
     sleep 0.05;
-    
+
     CWR_launcherMessageList = ([CWR_launcherMessagesHashMap] call CBA_fnc_hashValues) apply
     { [_message, "[launcher]", _x] call CWR_fnc_stringReplace; };
-    
+
     [
         "Launcher",
         "CWR_Menu_Launcher",
