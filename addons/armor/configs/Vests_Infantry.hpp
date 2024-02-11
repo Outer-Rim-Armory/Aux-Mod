@@ -3,11 +3,11 @@ class CLASS(Vest_Holster): CLASS(Vest_Basic)
     displayName = "[KC] INF Vest (Holster)";
 
     model = "\ls_armor_bluefor\vest\gar\clone\lsd_gar_clone_vest.p3d";
-    // hiddenSelections[] = {"r_thigh_holster"};
-    // hiddenSelectionsTextures[] =
-    // {
-    //     "\SWLB_clones\data\light_accessories_co.paa" // Holster // ! Need to find correct texture
-    // };
+    hiddenSelections[] = {"r_thigh_holster"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_core\data\common_textures\accessories\officer_accessories_co.paa" // Holster
+    };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
 
     class ItemInfo: ItemInfo
