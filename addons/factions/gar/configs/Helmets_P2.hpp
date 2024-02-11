@@ -21,6 +21,18 @@ class CLASS(Helmet_Phase2_CG_Stone): CLASS(Helmet_Phase2_CG)
     };
 };
 
+class CLASS(Helmet_Phase2_DC): CLASS(Helmet_Phase2_Base)
+{
+    displayName = "[DC] INF P2 Helm";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(SUBCOMPONENT\data\helmets\phase2\DC_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+
+    EGVAR(custom_armor,isCustom) = TRUE;
+};
+
 class CLASS(Helmet_Phase2_Fil): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm ('Fil')";

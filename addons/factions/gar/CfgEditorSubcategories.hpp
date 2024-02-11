@@ -5,6 +5,11 @@ class CfgEditorSubcategories
         displayName = "Coruscant Guard";
     };
 
+    class CLASS(EdSubCat_DoomCompany)
+    {
+        displayName = "Doom Company";
+    };
+
     class CLASS(EdSubCat_FilSquad)
     {
         displayName = "Fil's Squad";

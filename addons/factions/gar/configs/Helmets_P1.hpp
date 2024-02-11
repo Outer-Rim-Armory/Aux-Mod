@@ -11,6 +11,18 @@ class CLASS(Helmet_Phase1_CG): CLASS(Helmet_Phase1_Base)
     EGVAR(custom_armor,isCustom) = TRUE;
 };
 
+class CLASS(Helmet_Phase1_DC): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[DC] INF P1 Helm";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(SUBCOMPONENT\data\helmets\phase1\DC_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+    };
+
+    EGVAR(custom_armor,isCustom) = TRUE;
+};
+
 class CLASS(Helmet_Phase1_HowzerBlue): CLASS(Helmet_Phase1_Base)
 {
     displayName = "[KC] INF P1 Helm ('Howzer') [Blue]";

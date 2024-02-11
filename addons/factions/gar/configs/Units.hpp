@@ -47,6 +47,31 @@ class CLASS(Unit_CG_Stone): CLASS(Unit_CG_Trooper)
     };
 };
 
+class CLASS(Unit_DC_Trooper): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Clone Trooper";
+    faction = QCLASS(Faction_GAR);
+    editorSubcategory = QCLASS(EdSubCat_DoomCompany);
+    editorPreview = EDITOR_PREVIEW(Unit_DC_Trooper);
+
+    uniformClass = QCLASS(Uniform_DC);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\DC_upper_co.paa),
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\DC_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_DC), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_DC), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Fil): CLASS(Unit_Phase2_Base)
 {
     displayName = "Commander Fil";

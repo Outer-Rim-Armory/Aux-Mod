@@ -10,7 +10,7 @@ class CLASS(Uniform_CG): CLASS(Uniform_Base)
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Unit_CG);
+        uniformClass = QCLASS(Unit_CG_Trooper);
     };
 };
 
@@ -21,6 +21,17 @@ class CLASS(Uniform_CG_Stone): CLASS(Uniform_CG)
     class ItemInfo: ItemInfo
     {
         uniformClass = QCLASS(Unit_CG_Stone);
+    };
+};
+
+class CLASS(Uniform_DC): CLASS(Uniform_Base)
+{
+    displayName = "[DC] INF Armor";
+    EGVAR(custom_armor,isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = QCLASS(Unit_DC_Trooper);
     };
 };
 
