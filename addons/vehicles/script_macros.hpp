@@ -9,17 +9,17 @@
     insertChildren = QUOTE(call FUNC(skin_insertChildren)); \
 }
 
-#define AI_CREW class SpawnCrew \
+#define AI_CREW_SPAWNER class SpawnCrew \
 { \
     displayName = "Create Vehicle Crew"; \
-    condition = QUOTE(_this#0 emptyPositions '' > 0 and ace_player in (_this#0 call ace_common_fnc_getVehicleCrew)); \
-    statement = QUOTE((group ace_player) createVehicleCrew _this#0); \
+    condition = QUOTE(_this call FUNC(canSpawnCrew)); \
+    statement = QUOTE((group ace_player) createVehicleCrew _this); \
 }; \
 class DeleteCrew \
 { \
     displayName = "Delete Vehicle Crew"; \
-    condition = QUOTE(false in (_this#0 call ace_common_fnc_getVehicleCrew apply {_x call ace_common_fnc_isPlayer;}) and ace_player in (_this#0 call ace_common_fnc_getVehicleCrew)); \
-    statement = QUOTE({_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)); \
+    condition = QUOTE(_this call FUNC(canDeleteCrew)); \
+    statement = QUOTE({_this deleteVehicleCrew _x;} forEach (_this call ace_common_fnc_getVehicleCrew)); \
 }
 
 #define HUD_CHANGER class LS_HUD_Changer \
