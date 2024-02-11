@@ -4,6 +4,7 @@ GROUND_HOLDER(Helmet_Phase1_Burnt,"INF P1 Helm ('Burnt')");
 GROUND_HOLDER(Helmet_Phase1_BurntBacta,"INF P1 Helm ('Burnt') [Bacta Visor]");
 GROUND_HOLDER(Helmet_Phase1_Catholic,"INF P1 Helm ('Catholic')");
 GROUND_HOLDER(Helmet_Phase1_CatholicKyber,"INF P1 Helm ('Catholic') [Kyber Visor]");
+GROUND_HOLDER(Helmet_Phase1_Cutthroat,"INF P1 Helm ('Cutthroat')");
 GROUND_HOLDER(Helmet_Phase1_Defter,"INF P1 Helm ('Defter')");
 GROUND_HOLDER(Helmet_Phase1_DefterBacta,"INF P1 Helm ('Defter') [Bacta Visor]");
 GROUND_HOLDER(Helmet_Phase1_Dexus,"INF P1 Helm ('Dexus')");
