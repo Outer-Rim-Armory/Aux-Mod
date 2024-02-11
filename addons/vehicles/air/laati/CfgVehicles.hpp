@@ -75,7 +75,7 @@ class CfgVehicles
         // Textures
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(air\laati\data\textures\KeeliCompany\Body_co.paa),
+            QPATHTOF(air\laati\data\textures\KeeliCompany\Hull_co.paa),
             QPATHTOF(air\laati\data\textures\KeeliCompany\Wings_co.paa),
             "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
             "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
@@ -118,7 +118,7 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    QPATHTOF(air\laati\data\textures\KeeliCompany\Body_co.paa),
+                    QPATHTOF(air\laati\data\textures\KeeliCompany\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\KeeliCompany\Wings_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
@@ -142,7 +142,7 @@ class CfgVehicles
                 displayName = "Akali";
                 textures[] =
                 {
-                    QPATHTOF(air\laati\data\textures\Akali\Body_co.paa),
+                    QPATHTOF(air\laati\data\textures\Akali\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\Akali\Wings_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
@@ -154,7 +154,7 @@ class CfgVehicles
                 displayName = "Twi'Lek";
                 textures[] =
                 {
-                    QPATHTOF(air\laati\data\textures\TwiLek\Body_co.paa),
+                    QPATHTOF(air\laati\data\textures\TwiLek\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\TwiLek\Wings_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
