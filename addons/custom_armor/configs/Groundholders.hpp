@@ -94,6 +94,9 @@ GROUND_HOLDER(Helmet_Phase2_Insulated_Dexus,"INF P2 Snow Helm ('Dexus')");
 GROUND_HOLDER(Helmet_Phase2_Insulated_Joe,"INF P2 Snow Helm ('Joe')");
 GROUND_HOLDER(Helmet_Phase2_Insulated_Keeli,"INF P2 Snow Helm ('Keeli')");
 
+GROUND_HOLDER(Helmet_Engineer_Bob,"ENG Helm ('Bob')");
+GROUND_HOLDER(Helmet_Engineer_BobKyber,"ENG Helm ('Bob') [Kyber Visor]");
+
 
 GROUND_HOLDER(Helmet_ARC_Drake,"SF ARC Helm ('Drake')");
 GROUND_HOLDER(Helmet_ARC_DrakeBacta,"SF ARC Helm ('Drake') [Bacta Visor]");
