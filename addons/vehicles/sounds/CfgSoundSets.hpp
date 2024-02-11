@@ -101,7 +101,7 @@ class CfgSoundSets
     class MBT_01_Engine_RPM3_INT_SoundSet;
     class CLASS(SoundSet_Blitz_Engine_RPM3_INT): MBT_01_Engine_RPM3_INT_SoundSet
     {
-        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM03_INT)};
+        soundShaders[] = {QCLASS(SoundShader_Blitz_Engine_RPM3_INT)};
         sound3DProcessingType = "VehicleInt_Back_3DProcessingType";
         volumeCurve = "InverseSquare3Curve";
         posOffset[] = {0,0,0};

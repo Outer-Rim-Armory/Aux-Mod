@@ -6,6 +6,9 @@
  * Arguments:
  * 0: The unit to heal <OBJECT>
  * 1: The rate of healing actions <NUMBER>
+ * 2: Amount of blood to add per action (Optional, default: 0.25) <NUMBER>
+ * 3: Amount of pain to reduce per action (Optional, default: 0.1) <NUMBER>
+ * 4: Whether to full heal the patient after completion (Optional, default false) <BOOL>
  *
  * Return Value:
  * CBA Per Frame Handler ID or -1 if invalid parameters <NUMBER>
@@ -16,7 +19,10 @@
 
 params [
     ["_unit", objNull, [objNull]],
-    ["_rate", 0, [0]]
+    ["_rate", 0, [0]],
+    ["_bloodRestore", 0.25, [0]],
+    ["_painReduce", 0.1, [0]],
+    ["_fullHealOnCompletion", false, [false]]
 ];
 private ["_function", "_condition", "_exitCode", "_healHandler", "_fullHealed"];
 TRACE_2("fnc_slowHeal",_unit,_rate);
@@ -58,18 +64,18 @@ _function = {
         };
 
         case (_bloodLevel < DEFAULT_BLOOD_VOLUME): {
-            _bloodLevel = (_bloodLevel + GVAR(bactaBloodRestoreAmount)) min DEFAULT_BLOOD_VOLUME;
+            _bloodLevel = (_bloodLevel + _bloodRestore) min DEFAULT_BLOOD_VOLUME;
             _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
         };
 
         case (_painLevel > 0): {
-            _painLevel = (_painLevel - GVAR(bactaPainReductionAmount)) max 0;
+            _painLevel = (_painLevel - _painReduce) max 0;
             _unit setVariable ["ace_medical_pain", _painLevel, true];
         };
 
         default {
             INFO_2("Slow Healer %1 | (Exit) Treatment complete for unit %2",_handle,_unit);
-            if (GVAR(bactaFullHealOnComplete)) then {[_unit, _unit] call ace_medical_treatment_fnc_fullHeal;};
+            if (_fullHealOnCompletion) then {[_unit, _unit] call ace_medical_treatment_fnc_fullHeal;};
         };
     };
 

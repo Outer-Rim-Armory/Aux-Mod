@@ -7,7 +7,10 @@
  * 0: Source for healing <OBJECT>
  * 1: Radius to heal units in <NUMBER>
  * 2: Delay between healing actions <NUMBER>
- * 3: Maximum number of patients <NUMBER>
+ * 3: Amount of blood to add per action (Optional, default: 0.25) <NUMBER>
+ * 4: Amount of pain to reduce per action (Optional, default: 0.1) <NUMBER>
+ * 5: Whether to full heal the patient after completion (Optional, default false) <BOOL>
+ * 6: Maximum number of patients (Optional, default: 0) <NUMBER>
  *    - Values < 0 signify no maximum number of patients.
  *
  * Return Value:
@@ -22,6 +25,9 @@ params [
     ["_object", objNull, [objNull]],
     ["_radius", -1, [0]],
     ["_rate", -1, [0]],
+    ["_bloodRestore", 0.25, [0]],
+    ["_painReduce", 0.1, [0]],
+    ["_fullHealOnCompletion", false, [false]],
     ["_maxPatients", 0, [0]]
 ];
 private ["_function", "_condition", "_exitCode", "_healHandler", "_fullHealed"];
@@ -78,7 +84,7 @@ _function = {
         private ["_healHandlerID"];
         INFO_3("Area Healer %1 | Healing %2 every %3 seconds",_handler,_x,_rate);
 
-        _healHandlerID = [_x, _rate] call FUNC(slowHeal);
+        _healHandlerID = [_x, _rate, _bloodRestore, _painReduce, _fullHealOnCompletion] call FUNC(slowHeal);
         _currentPatients pushBack [_x, _healHandlerID];
 
         _object setVariable [QGVAR(currentPatients), _currentPatients, true];
