@@ -7,6 +7,7 @@ class CfgVehicles
     };
     class 3AS_ATTE_base: Tank_F
     {
+        class ACE_SelfActions;
         class UserActions;
         class Turrets: Turrets
         {
@@ -98,6 +99,11 @@ class CfgVehicles
                     "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
                 };
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            AI_CREW_SPAWNER;
         };
 
         class UserActions: UserActions

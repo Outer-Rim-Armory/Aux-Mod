@@ -12,6 +12,7 @@ class CfgVehicles
         //     class HitBody;
         //     class HitHull;
         // };
+        class ACE_SelfActions;
         class UserActions
         {
             class Crow_Nest_Up;
@@ -57,6 +58,11 @@ class CfgVehicles
         //         explosionShielding = 0.85;
         //     };
         // };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            AI_CREW_SPAWNER;
+        };
 
         class UserActions: UserActions
         {

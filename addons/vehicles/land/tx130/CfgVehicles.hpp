@@ -1,6 +1,10 @@
 class CfgVehicles
 {
-    class 3AS_Saber_M1;
+    class 3AS_Saber_Base;
+    class 3AS_Saber_M1: 3AS_Saber_Base
+    {
+        class ACE_SelfActions;
+    };
     class CLASS(TX130_M1): 3AS_Saber_M1
     {
         SCOPE_PUBLIC;
@@ -66,6 +70,11 @@ class CfgVehicles
         };
 
         INVENTORY_VEHICLE_BASE(3);
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            AI_CREW_SPAWNER;
+        };
     };
 
     class CLASS(Saber_M1): CLASS(TX130_M1)
