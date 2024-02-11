@@ -5,6 +5,8 @@ PREP(atrt_dismount);
 PREP(atrt_handleDamage);
 PREP(atrt_init);
 PREP(atrt_mount);
+PREP(canDeleteCrew);
+PREP(canSpawnCrew);
 PREP(cswDeployModifier);
 PREP(setIntercomChannel);
 PREP(skin_canSwitch);
