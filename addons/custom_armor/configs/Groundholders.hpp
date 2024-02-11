@@ -4,6 +4,7 @@ GROUND_HOLDER(Helmet_Phase1_Burnt,"INF P1 Helm ('Burnt')");
 GROUND_HOLDER(Helmet_Phase1_BurntBacta,"INF P1 Helm ('Burnt') [Bacta Visor]");
 GROUND_HOLDER(Helmet_Phase1_Catholic,"INF P1 Helm ('Catholic')");
 GROUND_HOLDER(Helmet_Phase1_CatholicKyber,"INF P1 Helm ('Catholic') [Kyber Visor]");
+GROUND_HOLDER(Helmet_Phase1_Cutthroat,"INF P1 Helm ('Cutthroat')");
 GROUND_HOLDER(Helmet_Phase1_Defter,"INF P1 Helm ('Defter')");
 GROUND_HOLDER(Helmet_Phase1_DefterBacta,"INF P1 Helm ('Defter') [Bacta Visor]");
 GROUND_HOLDER(Helmet_Phase1_Dexus,"INF P1 Helm ('Dexus')");
@@ -24,6 +25,7 @@ GROUND_HOLDER(Helmet_Phase1_Ox,"INF P1 Helm ('Ox')");
 GROUND_HOLDER(Helmet_Phase1_Patriot,"INF P1 Helm ('Patriot')");
 GROUND_HOLDER(Helmet_Phase1_Rev,"INF P1 Helm ('Rev')");
 GROUND_HOLDER(Helmet_Phase1_Rodger,"INF P1 Helm ('Rodger')");
+GROUND_HOLDER(Helmet_Phase1_Sage,"INF P1 Helm ('Sage')");
 GROUND_HOLDER(Helmet_Phase1_Sin,"INF P1 Helm ('Sin')");
 GROUND_HOLDER(Helmet_Phase1_Splashdown,"INF P1 Helm ('Splashdown')");
 GROUND_HOLDER(Helmet_Phase1_Swoop,"INF P1 Helm ('Swoop')");
@@ -91,6 +93,9 @@ GROUND_HOLDER(Helmet_Phase2_Tanker_Grey,"ARMR P2 Helm ('Grey')");
 GROUND_HOLDER(Helmet_Phase2_Insulated_Dexus,"INF P2 Snow Helm ('Dexus')");
 GROUND_HOLDER(Helmet_Phase2_Insulated_Joe,"INF P2 Snow Helm ('Joe')");
 GROUND_HOLDER(Helmet_Phase2_Insulated_Keeli,"INF P2 Snow Helm ('Keeli')");
+
+GROUND_HOLDER(Helmet_Engineer_Bob,"ENG Helm ('Bob')");
+GROUND_HOLDER(Helmet_Engineer_BobKyber,"ENG Helm ('Bob') [Kyber Visor]");
 
 
 GROUND_HOLDER(Helmet_ARC_Drake,"SF ARC Helm ('Drake')");

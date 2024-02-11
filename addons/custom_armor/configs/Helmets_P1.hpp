@@ -78,6 +78,19 @@ class CLASS(Helmet_Phase1_CatholicKyber): CLASS(Helmet_Phase1_Catholic)
     };
 };
 
+class CLASS(Helmet_Phase1_Cutthroat): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF P1 Helm ('Cutthroat')";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Cutthroat_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+
+    GVAR(isCustom) = TRUE;
+};
+
 class CLASS(Helmet_Phase1_Defter): CLASS(Helmet_Phase1_Base)
 {
     displayName = "[KC] INF P1 Helm ('Defter')";
@@ -367,6 +380,17 @@ class CLASS(Helmet_Phase1_Rodger): CLASS(Helmet_Phase1_Base)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase1\Rodger_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase1_Sage): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF P1 Helm ('Sage')";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Sage_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
