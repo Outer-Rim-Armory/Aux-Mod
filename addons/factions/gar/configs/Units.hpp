@@ -147,12 +147,12 @@ class CLASS(Unit_GC_Trooper): CLASS(Unit_Phase2_Base)
     };
 };
 
-class CLASS(Unit_Phase2_HowzerBlue): CLASS(Unit_Phase2_Base)
+class CLASS(Unit_HowzerBlue): CLASS(Unit_Phase2_Base)
 {
     displayName = "Captain Howzer";
     faction = QCLASS(Faction_GAR);
     editorSubcategory = QCLASS(EdSubCat_HowzerSquad);
-    editorPreview = EDITOR_PREVIEW(Unit_Phase2_HowzerBlue);
+    editorPreview = EDITOR_PREVIEW(Unit_HowzerBlue);
 
     uniformClass = QCLASS(Uniform_HowzerBlue);
     hiddenSelectionsTextures[] =
@@ -171,10 +171,10 @@ class CLASS(Unit_Phase2_HowzerBlue): CLASS(Unit_Phase2_Base)
         QCLASS(Helmet_Phase2_HowzerBlue), QCLASS(Vest_WO_Howzer), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
-class CLASS(Unit_Phase2_HowzerBrown): CLASS(Unit_Phase2_HowzerBlue)
+class CLASS(Unit_HowzerBrown): CLASS(Unit_HowzerBlue)
 {
     displayName = "Captain Howzer (Brown)";
-    editorPreview = EDITOR_PREVIEW(Unit_Phase2_HowzerBrown);
+    editorPreview = EDITOR_PREVIEW(Unit_HowzerBrown);
 
     uniformClass = QCLASS(Uniform_HowzerBrown);
     hiddenSelectionsTextures[] =

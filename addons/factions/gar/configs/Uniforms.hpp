@@ -75,7 +75,7 @@ class CLASS(Uniform_HowzerBlue): CLASS(Uniform_Base)
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Unit_Phase2_HowzerBlue);
+        uniformClass = QCLASS(Unit_HowzerBlue);
     };
 };
 
@@ -86,7 +86,7 @@ class CLASS(Uniform_HowzerBrown): CLASS(Uniform_Base)
 
     class ItemInfo: ItemInfo
     {
-        uniformClass = QCLASS(Unit_Phase2_HowzerBrown);
+        uniformClass = QCLASS(Unit_HowzerBrown);
     };
 };
 
