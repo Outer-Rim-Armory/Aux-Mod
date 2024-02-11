@@ -32,10 +32,10 @@ if (!(_unit call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround _unit) ex
 _jetpack = backpack _unit;
 
 // Obtain effect point names
-_effectPoints = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectPoints", []);
-_effectTypes  = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effects", []);
+_effectPoints = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectPoints",[]);
+_effectTypes  = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effects",[]);
 _defaultColor = [1, 1, 1]; // Can't include [] with commas inside in a macro
-_lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_lightColor", _defaultColor);
+_lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_lightColor",_defaultColor);
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
 if (_totalEffects + (count _effectTypes * count _effectPoints) > BNA_KC_Jet_ParticleLimit) then
