@@ -21,7 +21,7 @@ class CLASS(Helmet_Engineer_BobKyber): CLASS(Helmet_Engineer_Bob)
     {
         QPATHTOF(data\helmets\engineer\Bob_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
-        QPATHTOF(data\visors\Kyber_camo2_co.paa)
+        QPATHTOF(data\visors\Kyber_Engineer_camo2_co.paa) // Normal texture appears sideways
     };
     hiddenSelectionsMaterials[] =
     {
