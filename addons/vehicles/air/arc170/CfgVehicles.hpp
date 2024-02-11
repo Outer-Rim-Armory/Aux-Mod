@@ -84,18 +84,7 @@ class CfgVehicles
         {
             HUD_CHANGER;
 
-            class SpawnCrew
-            {
-                displayName = "Create Vehicle Crew";
-                condition = QUOTE(_this#0 emptyPositions '' > 0 and ace_player in (_this#0 call ace_common_fnc_getVehicleCrew));
-                statement = QUOTE((group ace_player) createVehicleCrew _this#0);
-            };
-            class DeleteCrew
-            {
-                displayName = "Delete Vehicle Crew";
-                condition = QUOTE(false in (_this#0 call ace_common_fnc_getVehicleCrew apply {_x call ace_common_fnc_isPlayer;}) and ace_player in (_this#0 call ace_common_fnc_getVehicleCrew));
-                statement = QUOTE({_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew));
-            };
+            AI_CREW;
 
             INTERCOM_START;
                 INTERCOM_DISABLED;
