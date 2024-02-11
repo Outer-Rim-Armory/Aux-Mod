@@ -158,6 +158,9 @@ class CfgMusic
     // World War Z
     MUSIC(WWZ_MainTheme,"[WWZ] Main Theme",221,Other);
 
+    // Other
+    MUSIC(Blank,"Stop Music",0,Other);
+
 
     // Unknown
     class BNA_KC_AxeManTheme
