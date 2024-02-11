@@ -123,11 +123,34 @@ class CfgVehicles
         };
     };
 
-    class CLASS(Unit_CG_Stone): CLASS(Unit_Phase2_Base)
+    class CLASS(Unit_CG_Trooper): CLASS(Unit_Phase2_Base)
     {
-        displayName = "Commander Stone";
+        displayName = "Clone Trooper";
         faction = QCLASS(Faction_GAR);
         editorSubcategory = QCLASS(EdSubCat_CoruscantGuard);
+        editorPreview = EDITOR_PREVIEW(Unit_CG_Trooper);
+
+        uniformClass = QCLASS(Uniform_CG);
+        hiddenSelectionsTextures[] =
+        {
+            QPATHTOF(SUBCOMPONENT\data\uniforms\standard\CG_upper_co.paa),
+            QPATHTOF(SUBCOMPONENT\data\uniforms\standard\CG_lower_co.paa),
+            "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        };
+
+        linkedItems[] =
+        {
+            QCLASS(Helmet_Phase2_CG), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        };
+        respawnLinkedItems[] =
+        {
+            QCLASS(Helmet_Phase2_CG), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        };
+    };
+
+    class CLASS(Unit_CG_Stone): CLASS(Unit_CG_Trooper)
+    {
+        displayName = "Commander Stone";
         editorPreview = EDITOR_PREVIEW(Unit_CG_Stone);
 
         uniformClass = QCLASS(Uniform_CG_Stone);

@@ -20,6 +20,7 @@ class CfgPatches
             QCLASS(Unit_Phase2_HowzerBlue),
             QCLASS(Unit_Phase2_HowzerBrown),
             QCLASS(Unit_91st_Ponds),
+            QCLASS(Unit_CG),
             QCLASS(Unit_CG_Stone),
             QCLASS(Unit_187th_Trooper),
             QGROUND_CLASS(Helmet_Phase1_HowzerBlue),
@@ -53,7 +54,8 @@ class CfgPatches
             QCLASS(Uniform_HowzerBlue),
             QCLASS(Uniform_HowzerBrown),
             QCLASS(Uniform_91st_Ponds),
-            QCLASS(Uniform_91st_Stone),
+            QCLASS(Uniform_CG),
+            QCLASS(Uniform_CG_Stone),
             QCLASS(Uniform_187th),
         };
         VERSION_CONFIG;

@@ -205,10 +205,20 @@ class CfgWeapons
         };
     };
 
-    class CLASS(Uniform_CG_Stone): CLASS(Uniform_Base)
+    class CLASS(Uniform_CG): CLASS(Uniform_Base)
+    {
+        displayName = "[CG] INF Armor";
+        EGVAR(custom_armor,isCustom) = TRUE;
+
+        class ItemInfo: ItemInfo
+        {
+            uniformClass = QCLASS(Unit_CG);
+        };
+    };
+
+    class CLASS(Uniform_CG_Stone): CLASS(Uniform_CG)
     {
         displayName = "[CG] INF Armor ('Stone')";
-        EGVAR(custom_armor,isCustom) = TRUE;
 
         class ItemInfo: ItemInfo
         {
