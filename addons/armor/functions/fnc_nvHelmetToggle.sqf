@@ -24,7 +24,7 @@ TRACE_3("fnc_nvHelmetToggle",_canToggle,_helmetOff,_helmetOn);
 
 if (_canToggle isEqualTo FALSE) exitWith {};
 if (_helmetOff isEqualTo "" or _helmetOn isEqualTo "") exitWith {
-    WARNING_2("Headgear %1 has %2 enabled but does not have an on and/or off version set.", headgear _person, QGVAR(nvCanToggle))
+    WARNING_2("Headgear %1 has %2 enabled but does not have an on and/or off version set.",headgear _person,QGVAR(nvCanToggle))
 };
 
 switch (_visionMode) do {

@@ -30,7 +30,7 @@ private _refuelAction =
         playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_start.wss", _player];
 
         private _jetpack = backpack _player;
-        private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_fuel", 100);
+        private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_fuel",100);
         [_player, _maxFuel] call BNAKC_Jetpacks_fnc_setJetpackFuel; // JetpackRefuel can take either the unit or a backpack object
     },
     {

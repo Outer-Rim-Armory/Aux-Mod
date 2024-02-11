@@ -33,9 +33,9 @@ else
 };
 
 // Don't set fuel value for non-jetpacks
-if (GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> "BNA_KC_Jet_isJetpack", 0) isEqualTo 0) exitWith {};
+if (GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> "BNA_KC_Jet_isJetpack",0) isEqualTo 0) exitWith {};
 
-private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> "BNA_KC_Jet_fuel", 100);
+private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> "BNA_KC_Jet_fuel",100);
 _fuelAmount = _fuelAmount min _maxFuel; // Prevents the jetpack being "over-filled"
 _fuelAmount = _fuelAmount max 0; // Prevents fuel from going negative
 
