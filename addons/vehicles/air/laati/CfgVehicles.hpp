@@ -125,9 +125,20 @@ class CfgVehicles
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
-            class Akali: Standard
+            class KeeliCompany2: KeeliCompany
             {
-                author = "Keeli Company Aux Team";
+                displayName = "Keeli Company 2";
+                textures[] =
+                {
+                    QPATHTOF(air\laati\data\textures\KeeliCompany2\Hull_co.paa),
+                    QPATHTOF(air\laati\data\textures\KeeliCompany2\Wings_co.paa),
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class Akali: KeeliCompany
+            {
                 displayName = "Akali";
                 textures[] =
                 {
@@ -138,9 +149,8 @@ class CfgVehicles
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
-            class TwiLek: Standard
+            class TwiLek: KeeliCompany
             {
-                author = "Keeli Company Aux Team";
                 displayName = "Twi'Lek";
                 textures[] =
                 {
