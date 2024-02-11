@@ -1,7 +1,7 @@
 class CfgVehicles
 {
-    class WeaponHolder;
-    class DOUBLES(Ground,CLASS(Holder_Base)): WeaponHolder
+    class Headgear_Base_F;
+    class DOUBLES(Ground,CLASS(Holder_Base)): Headgear_Base_F
     {
         SCOPE_PRIVATE;
         editorCategory = QCLASS(Objects);
