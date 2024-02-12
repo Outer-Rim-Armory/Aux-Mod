@@ -82,7 +82,7 @@ _loadouts = createHashMapFromArray [
             ["ACE_elasticBandage", 20],
             ["ACE_tourniquet", 4],
             ["ACE_surgicalKit", 1],
-            ["RD501_Painkiller", 3],
+            [QEGVAR(medical,Painkiller), 3],
             ["ItemcTab", 1],
             ["ItemcTabHCam", 1]
         ]

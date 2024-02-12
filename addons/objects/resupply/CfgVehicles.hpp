@@ -177,7 +177,7 @@ class CfgVehicles
             // Drugs
             ITEM_XX(ACE_morphine,5);
             ITEM_XX(ACE_epinephrine,5);
-            ITEM_XX(RD501_Painkiller,10);
+            ITEM_XX(EGVAR(medical,Painkiller),10);
 
             // Misc
             ITEM_XX(ACE_tourniquet,12);
@@ -213,7 +213,7 @@ class CfgVehicles
             // Drugs
             ITEM_XX(ACE_morphine,13);
             ITEM_XX(ACE_epinephrine,13);
-            ITEM_XX(RD501_Painkiller,20);
+            ITEM_XX(EGVAR(medical,Painkiller),20);
 
             // Misc
             ITEM_XX(ACE_tourniquet,12);
