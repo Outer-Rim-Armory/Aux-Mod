@@ -16,7 +16,6 @@ class CfgVehicles
     class B_Mortar_01_F: Mortar_01_base_F {};
     class 3AS_Republic_Mortar: B_Mortar_01_F
     {
-        class assembleInfo;
         class ace_csw;
         class UserActions;
         class Turrets: Turrets
@@ -73,7 +72,15 @@ class CfgVehicles
 
             magazineLocation = QUOTE(_target selectionPosition 'usti hlavne');
         };
-        delete assembleInfo; // Removes base game disassemble option
+
+        class assembleInfo
+        {
+            assembleTo = "";
+            base = "";
+            displayName = "";
+            dissasembleTo[] = {};
+            primary = 0;
+        };
 
         class UserActions: UserActions
         {
@@ -136,9 +143,6 @@ class CfgVehicles
         };
 
         // Most mortars should have pick up option, but not this one
-        class UserActions: UserActions
-        {
-            delete GVAR(CSW_PickUp);
-        };
+        class UserActions {};
     };
 };
