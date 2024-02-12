@@ -7,7 +7,7 @@ class ACE_Medical_Treatment_Actions
         displayNameProgress = "Injecting Painkiller...";
 
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
-        items[] = {QGVAR(PainKiller)};
+        items[] = {QGVAR(Painkiller)};
         treatmentTime = 1;
     };
 
