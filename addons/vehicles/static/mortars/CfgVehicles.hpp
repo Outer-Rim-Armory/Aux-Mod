@@ -59,12 +59,8 @@ class CfgVehicles
                 magazines[] = {};
                 weapons[] = {};
 
-                // Maximum and minimum angles for mortar turret
-                maxElev = 25.762;
-                maxOutElev = 20;
-
+                maxElev = 21.79; // Increasing lowers mininum range
                 minElev = -30;
-                minOutElev = -4;
             };
         };
 
