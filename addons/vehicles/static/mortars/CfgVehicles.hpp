@@ -42,15 +42,7 @@ class CfgVehicles
         ace_dragging_dragPosition[] = {0, 1.2, 0};
         ace_dragging_canCarry = TRUE;
         ace_dragging_carryPosition[] = {0, 1.2, 0};
-
-        model = "\3AS\3AS_Static\Mortar\model\RepublicMortar.p3d";
-        hiddenSelections[] = {"Camo_1", "Camo_2"};
-        hiddenSelectionsMaterials[] =
-        {
-            "\3AS\3AS_Static\Mortar\data\base.rvmat",
-            "\3AS\3AS_Static\Mortar\data\tube.rvmat"
-        };
-        icon = "\3AS\3AS_Static\Mortar\data\ui\Mortar_top_ca.paa";
+        ace_dragging_dragDirection = 0;
 
         class Turrets: Turrets
         {
