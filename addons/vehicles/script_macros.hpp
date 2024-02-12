@@ -12,14 +12,14 @@
 #define AI_CREW_SPAWNER class SpawnCrew \
 { \
     displayName = "Create Vehicle Crew"; \
-    condition = QUOTE(_this call FUNC(canSpawnCrew)); \
+    condition = QUOTE(_this#0 call FUNC(canSpawnCrew)); \
     statement = QUOTE((group ace_player) createVehicleCrew _this#0); \
 }; \
 class DeleteCrew \
 { \
     displayName = "Delete Vehicle Crew"; \
-    condition = QUOTE(_this call FUNC(canDeleteCrew)); \
-    statement = QUOTE({_this deleteVehicleCrew _x;} forEach (_this call ace_common_fnc_getVehicleCrew)); \
+    condition = QUOTE(_this#0 call FUNC(canDeleteCrew)); \
+    statement = QUOTE({_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)); \
 }
 
 #define HUD_CHANGER class LS_HUD_Changer \
