@@ -108,7 +108,7 @@ class CfgVehicles
         faction = QCLASS(Faction_KC);
         editorPreview = EEDITOR_PREVIEW(vehicles\static\SUBCOMPONENT,Mortar_M190);
 
-        displayName = "M-190 Mortar System";
+        displayName = "M-190 Disposable Mortar System";
         crew = QCLASS(Unit_Phase2_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         side = BLUFOR;
