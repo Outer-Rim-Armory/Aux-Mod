@@ -13,7 +13,7 @@
 { \
     displayName = "Create Vehicle Crew"; \
     condition = QUOTE(_this call FUNC(canSpawnCrew)); \
-    statement = QUOTE((group ace_player) createVehicleCrew _this); \
+    statement = QUOTE((group ace_player) createVehicleCrew _this#0); \
 }; \
 class DeleteCrew \
 { \
