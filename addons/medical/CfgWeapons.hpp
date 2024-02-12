@@ -8,7 +8,7 @@ class CfgWeapons
         author = "Keeli Company Aux Team";
 
         displayName = "[KC] FX-7 Medical Droid";
-        picture = QPATHTOEF(armor,data\insignias\Medic_ca.paa);
+        picture = QPATHTOEF(core,data\ui\Medic_ca.paa);
 
         model = "\RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
 
