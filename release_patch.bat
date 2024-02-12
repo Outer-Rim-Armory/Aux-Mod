@@ -1,4 +1,5 @@
 @echo off
-hemtt.exe script update_build.rhai
-hemtt.exe release
+winget install --id=BrettMayson.HEMTT  -e
+hemtt script update_build.rhai
+hemtt release
 pause
