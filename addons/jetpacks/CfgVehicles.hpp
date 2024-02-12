@@ -84,4 +84,20 @@ class CfgVehicles
     {
         BNA_KC_Jet_freefallHeight = 100000;
     };
+
+    class BNA_KC_Resupply_Base;
+    class BNA_KC_Resupply_JetpackFuel: BNA_KC_Resupply_Base
+    {
+        displayName = "Jetpack Fuel Tank";
+
+        ace_cargo_size = 2;
+        ace_dragging_canDrag = 0;
+        ace_dragging_canCarry = 0;
+
+        model = "\A3\Structures_F\Items\Vessels\WaterTank_F.p3d";
+        editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WaterTank_F.jpg";
+        hiddenSelections[] = {};
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = {};
+    };
 };
