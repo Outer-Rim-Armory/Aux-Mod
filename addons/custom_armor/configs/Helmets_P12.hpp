@@ -10,3 +10,17 @@ class CLASS(Helmet_Phase12_Joe): CLASS(Helmet_Phase12_Base)
 
     GVAR(isCustom) = TRUE;
 };
+class CLASS(Helmet_Phase12_JoeCrimson): CLASS(Helmet_Phase12_Joe)
+{
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase12\Joe_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa)
+    };
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};

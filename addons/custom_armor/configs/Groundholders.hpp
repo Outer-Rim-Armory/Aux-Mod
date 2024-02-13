@@ -95,6 +95,7 @@ GROUND_HOLDER(Helmet_Phase2_Insulated_Joe,"INF P2 Snow Helm ('Joe')");
 GROUND_HOLDER(Helmet_Phase2_Insulated_Keeli,"INF P2 Snow Helm ('Keeli')");
 
 GROUND_HOLDER(Helmet_Phase12_Joe,"INF P1-2 Helm ('Joe')");
+GROUND_HOLDER(Helmet_Phase12_JoeCrimson,"INF P1-2 Helm ('Joe') [Crimson Visor]");
 
 GROUND_HOLDER(Helmet_Engineer_Bob,"ENG Helm ('Bob')");
 GROUND_HOLDER(Helmet_Engineer_BobKyber,"ENG Helm ('Bob') [Kyber Visor]");
