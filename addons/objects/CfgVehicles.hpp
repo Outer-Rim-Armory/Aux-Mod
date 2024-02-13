@@ -133,7 +133,7 @@ class CfgVehicles
             class DetachmentHelmet_Tanker: ChangeMenu_Uniforms
             {
                 displayName = "<t color='#FFFFFF'>Grab Crew Helmet</t>";
-                condition = QUOTE(UNIFORMMENU_GETPAGE == MENU_PAGE_HOME);
+                condition = QUOTE(UNIFORMMENU_GETPAGE == UNIFORMMENU_PAGE_DETACHMENTHELMETS);
                 statement = QUOTE(ace_player addHeadgear QQCLASS(Helmet_Phase2_Tanker_CT));
             };
         };
