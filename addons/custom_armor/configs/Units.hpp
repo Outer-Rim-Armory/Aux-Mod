@@ -136,12 +136,11 @@ class CLASS(Unit_Joe): CLASS(Unit_Phase2_Base)
 
     linkedItems[] =
     {
-        // TODO: Re-add Joe's "Rex" helmet
-        QCLASS(Helmet_Phase2_Joe), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase12_Joe), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] =
     {
-        QCLASS(Helmet_Phase2_Joe), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase12_Joe), QCLASS(Vest_Officer), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
