@@ -169,6 +169,15 @@ class CfgVehicles
                 condition = QUOTE(LOADOUTMENU_GETPAGE == MENU_PAGE_HOME);
                 statement = QUOTE('attachments' call FUNC(openArsenal));
             };
+
+            class Add_Radio: ChangeMenu_Home
+            {
+                displayName = "<t color='#FFFFFF'>Add Radio</t>";
+                priority = 0;
+
+                condition = QUOTE(LOADOUTMENU_GETPAGE == MENU_PAGE_HOME);
+                statement = QUOTE(ace_player linkItem 'SWLB_comlink');
+            };
         };
     };
 
@@ -237,10 +246,17 @@ class CfgVehicles
                 condition = "true";
                 statement = QUOTE([ARR_3(ace_player,ace_player,true)] call ace_arsenal_fnc_openBox;);
             };
+
             class Arsenal_BIS: Arsenal_ACE
             {
                 displayName = "<t color='#E6E6E6'><img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\rearm_ca.paa'/> Open BIS Arsenal</t>";
                 statement = QUOTE([ARR_2('Open',[true])] call BIS_fnc_arsenal;);
+            };
+
+            class Add_Radio: Arsenal_ACE
+            {
+                displayName = "<t color='#E6E6E6'><img image='\a3\modules_f_curator\data\portraitradio_ca.paa'/> Add Radio</t>";
+                statement = QUOTE(ace_player linkItem 'SWLB_comlink');
             };
         };
     };
