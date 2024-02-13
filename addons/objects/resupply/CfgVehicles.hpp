@@ -142,7 +142,7 @@ class CfgVehicles
     class CLASS(Resupply_PlatoonAmmo_Heavy): CLASS(Resupply_SquadAmmo_Heavy)
     {
         displayName = "Heavy Ammo Crate (Platoon)";
-        class TransportMagazines: TransportMagazines
+        class TransportMagazines
         {
             MAG_XX(CLASS(Mag_10rnd_Valken38x_AP),120);
             MAG_XX(CLASS(Mag_30rnd_HI12),120);
