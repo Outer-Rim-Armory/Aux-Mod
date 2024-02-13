@@ -115,12 +115,12 @@ class CfgVehicles
                 statement = QUOTE(UNIFORMMENU_SETPAGE(UNIFORMMENU_PAGE_DETACHMENTHELMETS));
             };
 
-            class Arsenal_Customs: ChangeMenu_Uniforms
+            class Arsenal_Customize: ChangeMenu_Uniforms
             {
                 priority = 98;
-                displayName = "<t color='#FFFFFF'>Customs Arsenal</t>";
+                displayName = "<t color='#FFFFFF'>Customize Loadout</t>";
                 condition = QUOTE(UNIFORMMENU_GETPAGE == MENU_PAGE_HOME);
-                statement = QUOTE('customs' call FUNC(openArsenal));
+                statement = QUOTE('customize' call FUNC(openArsenal));
             };
 
             class ChangeMenu_Home: ChangeMenu_Uniforms
