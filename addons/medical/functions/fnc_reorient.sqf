@@ -19,7 +19,9 @@ params [
     ["_patient", objNull, [objNull]]
 ];
 
-if (_patient call ace_medical_status_fnc_hasStableVitals) then {
+_random = random 1;
+
+if (_patient call ace_medical_status_fnc_hasStableVitals and {_random >= GVAR(reorient_successChance)}) then {
     [_patient, false] call ace_medical_fnc_setUnconscious;
     true;
 } else {
