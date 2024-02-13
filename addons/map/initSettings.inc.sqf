@@ -41,7 +41,7 @@ _markerColorNames = _markerColors apply {
 [
     QGVAR(quickMarkColors),
     "EDITBOX",
-    ["Quick Mark Colors", "List of colors CfgMarkerColors class names."],
+    ["Quick Mark Colors", "List of CfgMarkerColors class names."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     "['ColorBlack', 'ColorBlue', 'ColorRed', 'ColorGreen']"
 ] call CBA_fnc_addSetting;
