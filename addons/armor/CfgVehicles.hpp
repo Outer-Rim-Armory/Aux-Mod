@@ -306,7 +306,7 @@ class CfgVehicles
         };
         picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
     };
-    class CLASS(Backpack_ARC): CLASS(Backpack_Medic_Radio_Base)
+    class CLASS(Backpack_ARC): CLASS(Backpack_Radio_Base)
     {
         displayName = "[KC] ARC Trooper Backpack";
 
