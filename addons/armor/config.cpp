@@ -205,7 +205,8 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase2_Officer_CamoBrown),
             QGROUND_CLASS(Helmet_Phase2_Officer_CamoGrey),
             QGROUND_CLASS(Helmet_Phase2_Insulated_Base),
-            QGROUND_CLASS(Helmet_Phase2_Insulated_CT)
+            QGROUND_CLASS(Helmet_Phase2_Insulated_CT),
+            QGROUND_CLASS(Helmet_Phase12_Base)
         };
         weapons[] =
         {
@@ -274,6 +275,7 @@ class CfgPatches
             QCLASS(Helmet_Phase2_Officer_CamoGrey),
             QCLASS(Helmet_Phase2_Insulated_Base),
             QCLASS(Helmet_Phase2_Insulated_CT),
+            QCLASS(Helmet_Phase12_Base),
             QCLASS(Helmet_ARC_Base),
             QCLASS(Helmet_ARC_CT),
             QCLASS(Helmet_ARC_CT_Legacy),
