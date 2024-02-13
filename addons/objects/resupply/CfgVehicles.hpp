@@ -14,7 +14,7 @@ class CfgVehicles
 
         editorCategory = QCLASS(Objects);
         editorSubcategory = QCLASS(EdSubcat_Resupply);
-        editorPreview = EEDITOR_PREVIEW(objects\resupply,CLASS(Resupply_Base));
+        editorPreview = EDITOR_PREVIEW(Resupply_Base);
 
         ace_cargo_size = 1;
         ace_cargo_noRename = TRUE;
@@ -36,7 +36,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
-        editorPreview = EEDITOR_PREVIEW(objects\resupply,CLASS(Resupply_SquadAmmo));
+        editorPreview = EDITOR_PREVIEW(Resupply_SquadAmmo);
 
         class TransportMagazines
         {
@@ -160,7 +160,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"};
-        editorPreview = EEDITOR_PREVIEW(objects\resupply,CLASS(Resupply_SquadMedical));
+        editorPreview = EDITOR_PREVIEW(Resupply_SquadMedical);
 
         class TransportItems
         {
@@ -236,7 +236,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
-        // editorPreview = EDITOR_PREVIEW(CLASS(Resupply_DisposableLaunchers));
+        // editorPreview = EDITOR_PREVIEW(Resupply_DisposableLaunchers);
 
         class TransportWeapons
         {
