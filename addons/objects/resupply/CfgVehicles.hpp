@@ -228,4 +228,19 @@ class CfgVehicles
             MAG_XX(CLASS(Mag_1rnd_GR20),4);
         };
     };
+
+    class CLASS(Resupply_DisposableLaunchers): CLASS(Resupply_Base)
+    {
+        displayName = "RPS-6 Launcher Crate";
+
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        // editorPreview = EDITOR_PREVIEW(CLASS(Resupply_DisposableLaunchers));
+
+        class TransportWeapons
+        {
+            WEAP_XX(CLASS(RPS6_Loaded),10);
+        };
+    };
 };
