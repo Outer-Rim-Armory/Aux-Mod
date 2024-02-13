@@ -29,7 +29,7 @@
     "SLIDER",
     ["Sound - Volume", "Volume for the EMP explosion sound."],
     [QUOTE(MOD_NAME), "EMP"],
-    [0, 1, 1, 1]
+    [0, 1, 1, 0, true]
 ] call CBA_fnc_addSetting;
 
 [
@@ -37,7 +37,7 @@
     "SLIDER",
     ["Sound - Pitch", "Pitch for the EMP explosion sound."],
     [QUOTE(MOD_NAME), "EMP"],
-    [0, 1, 1, 1]
+    [0, 1, 1, 0, true]
 ] call CBA_fnc_addSetting;
 
 if (ADDON_LOADED(CLASS(medical))) then {
@@ -46,7 +46,7 @@ if (ADDON_LOADED(CLASS(medical))) then {
         "SLIDER",
         ["Blood Restore Amount", "Amount of blood given to the patient on each iteration."],
         [QUOTE(MOD_NAME), "Bacta"],
-        [0, 1, 0.25, 0],
+        [0, 1, 0.25, 2],
         TRUE
     ] call CBA_fnc_addSetting;
 
@@ -55,7 +55,7 @@ if (ADDON_LOADED(CLASS(medical))) then {
         "SLIDER",
         ["Pain Reduction", "Amount of pain reducted from the patient on each iteration."],
         [QUOTE(MOD_NAME), "Bacta"],
-        [0, 1, 0.1, 0],
+        [0, 1, 0.1, 2],
         TRUE
     ] call CBA_fnc_addSetting;
 

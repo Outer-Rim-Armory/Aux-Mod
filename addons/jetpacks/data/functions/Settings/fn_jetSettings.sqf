@@ -4,7 +4,7 @@
     "SLIDER",
     ["Fuel Rate", "Multiplier for fuel usage."],
     ["Keeli Company Auxillary Mod", "Jetpacks"],
-    [0, 3, 1, 1], // 0-300%, defaults to 100%
+    [0, 3, 1, 0, true], // 0-300%, defaults to 100%
     1
 ] call CBA_fnc_addSetting;
 
