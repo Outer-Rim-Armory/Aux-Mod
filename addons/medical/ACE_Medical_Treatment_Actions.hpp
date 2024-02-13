@@ -8,6 +8,7 @@ class ACE_Medical_Treatment_Actions
 
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         items[] = {QGVAR(Painkiller)};
+        litter[] = {{QGVAR(litter_Painkiller)}};
         treatmentTime = 1;
     };
 
