@@ -9,6 +9,10 @@
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 #define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
 
+#define EGVAR_ACE(var1,var2) TRIPLES(ace,var1,var2)
+#define QEGVAR_ACE(var1,var2) QUOTE(EGVAR_ACE(var1,var2))
+#define EFUNC_ACE(var1,var2) TRIPLES(DOUBLES(ace,var1),fnc,var2)
+
 #undef PREP
 #ifdef DISABLE_COMPILE_CACHE
     #define LINKFUNC(x) {_this call FUNC(x)}
