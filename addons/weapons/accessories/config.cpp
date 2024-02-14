@@ -18,6 +18,9 @@ class CfgPatches
             QCLASS(Optic_Base),
             QCLASS(Optic_Pistol),
             QCLASS(Optic_Pistol2),
+            QCLASS(Optic_SR_Holosight),
+            QCLASS(Optic_SR_Holosight2),
+            QCLASS(Optic_SR_Holosight3),
             QCLASS(Optic_MR_Holosight),
             QCLASS(Optic_MR_Holosight2),
             QCLASS(Optic_MR_Holosight3)

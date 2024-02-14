@@ -10,9 +10,9 @@
 #define AMMO_USAGE_AIRCRAFT 256
 #define AMMO_USAGE_ARMORED_VEHICLES 512
 
-#define ATTACHMENTS_OPTIC_SHORT Aux501_cows_RCO = TRUE; \
-Aux501_cows_RCO_2 = TRUE; \
-Aux501_cows_RCO_3 = TRUE
+#define ATTACHMENTS_OPTIC_SHORT CLASS(Optic_SR_Holosight) = TRUE; \
+CLASS(Optic_SR_Holosight2) = TRUE; \
+CLASS(Optic_SR_Holosight3) = TRUE
 #define ATTACHMENTS_OPTIC_MEDIUM CLASS(Optic_MR_Holosight) = TRUE; \
 CLASS(Optic_MR_Holosight2) = TRUE; \
 CLASS(Optic_MR_Holosight3) = TRUE

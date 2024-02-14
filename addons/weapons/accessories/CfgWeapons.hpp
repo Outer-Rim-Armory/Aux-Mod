@@ -25,9 +25,9 @@ class CfgWeapons
 
                     opticsFlare = FALSE;
                     opticsDisablePeripherialVision = FALSE;
-                    opticsZoomMin = 0.25;
-                    opticsZoomMax = 1.25;
                     opticsZoomInit = 0.75;
+                    opticsZoomMax = 1.25;
+                    opticsZoomMin = 0.25;
 
                     distanceZoomMax = 50;
                     distanceZoomMin = 50;
@@ -58,6 +58,55 @@ class CfgWeapons
         picture = QPATHTOF(SUBCOMPONENT\data\optics\Pistol_Holosight2_ca.paa);
     };
 
+    class CLASS(Optic_SR_Holosight): CLASS(Optic_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Short Range Holosight";
+
+        model = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight_ca.paa);
+
+        ace_scopeHeightAboveRail = 4.48584;
+
+        class ItemInfo: ItemInfo
+        {
+            class OpticsModes: OpticsModes
+            {
+                class Sight: Sight {};
+
+                class Scope: Sight
+                {
+                    opticsID = 2;
+                    memoryPointCamera = "opticView";
+
+                    opticsZoomInit = __EVAL(0.25/2);
+                    opticsZoomMax = __EVAL(0.25/2);
+                    opticsZoomMin = __EVAL(0.25/6);
+
+                    distanceZoomMin = 300;
+                    distanceZoomMax = 300;
+
+                    opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+                };
+            };
+        };
+    };
+
+    class CLASS(Optic_SR_Holosight2): CLASS(Optic_SR_Holosight)
+    {
+        displayName = "[KC] Short Range Holosight 2";
+        model = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight2.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight2_ca.paa);
+    };
+
+    class CLASS(Optic_SR_Holosight3): CLASS(Optic_SR_Holosight)
+    {
+        displayName = "[KC] Short Range Holosight 3";
+        model = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight3.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight3_ca.paa);
+    };
+
     class CLASS(Optic_MR_Holosight): CLASS(Optic_Base)
     {
         SCOPE_PUBLIC;
@@ -73,14 +122,16 @@ class CfgWeapons
         {
             class OpticsModes: OpticsModes
             {
+                class Sight: Sight {};
+
                 class Scope: Sight
                 {
                     opticsID = 2;
                     memoryPointCamera = "opticView";
 
-                    opticsZoomMin = __EVAL(0.25/6);
-                    opticsZoomMax = __EVAL(0.25/2);
                     opticsZoomInit = __EVAL(0.25/2);
+                    opticsZoomMax = __EVAL(0.25/2);
+                    opticsZoomMin = __EVAL(0.25/6);
 
                     distanceZoomMin = 300;
                     distanceZoomMax = 300;
