@@ -27,8 +27,8 @@ Aux501_cows_HoloScope_3 = TRUE
 Aux501_cows_Holosight_2 = TRUE; \
 Aux501_cows_Holosight_3 = TRUE; \
 Aux501_cows_reflex_optic = TRUE
-#define ATTACHMENTS_OPTIC_PISTOL Aux501_cows_pistol = TRUE; \
-Aux501_cows_pistol_2 = TRUE
+#define ATTACHMENTS_OPTIC_PISTOL CLASS(Optic_Pistol) = TRUE; \
+CLASS(Optic_Pistol2) = TRUE
 
 #define ATTACHMENTS_POINTER_BASE acc_pointer_ir = TRUE; \
 ace_acc_pointer_green = TRUE; \
