@@ -14,22 +14,7 @@ class CfgWeapons
             modelOptics = "\A3\Weapons_F\empty.p3d";
             optics = TRUE;
             opticType = OPTIC_ZOOM_LEVEL_LOW;
-        };
-    };
 
-    class CLASS(Optic_Pistol): CLASS(Optic_Base)
-    {
-        SCOPE_PUBLIC;
-
-        displayName = "[KC] Pistol Holosight";
-
-        model = QPATHTOF(SUBCOMPONENT\data\optics\Pistol_Holosight.p3d);
-        picture = QPATHTOF(SUBCOMPONENT\data\optics\Pistol_Holosight_ca.paa);
-
-        ace_scopeHeightAboveRail = 2.8;
-
-        class ItemInfo: ItemInfo
-        {
             class OpticsModes
             {
                 class Sight
@@ -54,6 +39,18 @@ class CfgWeapons
         };
     };
 
+    class CLASS(Optic_Pistol): CLASS(Optic_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Pistol Holosight";
+
+        model = QPATHTOF(SUBCOMPONENT\data\optics\Pistol_Holosight.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\optics\Pistol_Holosight_ca.paa);
+
+        ace_scopeHeightAboveRail = 2.8;
+    };
+
     class CLASS(Optic_Pistol2): CLASS(Optic_Pistol)
     {
         displayName = "[KC] Pistol Holosight 2";
@@ -74,27 +71,8 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo
         {
-            class OpticsModes
+            class OpticsModes: OpticsModes
             {
-                class Sight
-                {
-                    opticsID = 1;
-                    memoryPointCamera = "eye";
-                    useModelOptics = FALSE;
-
-                    opticsFlare = FALSE;
-                    opticsDisablePeripherialVision = FALSE;
-                    opticsZoomMin = 0.25;
-                    opticsZoomMax = 1.25;
-                    opticsZoomInit = 0.75;
-
-                    distanceZoomMin = 300;
-                    distanceZoomMax = 300;
-
-                    visionMode[] = {};
-                    opticsPPEffects[] = {"OpticsBlur1"};
-                };
-
                 class Scope: Sight
                 {
                     opticsID = 2;
