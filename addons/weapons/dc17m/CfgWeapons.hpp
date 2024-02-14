@@ -74,7 +74,9 @@ class CfgWeapons
                     ATTACHMENTS_OPTIC_SHORT;
                     ATTACHMENTS_OPTIC_MEDIUM;
                     ATTACHMENTS_OPTIC_LONG;
-                    ATTACHMENTS_OPTIC_SIGHTS;
+                    CLASS(Optic_Holosight) = TRUE;
+                    CLASS(Optic_Holosight2) = TRUE;
+                    CLASS(Optic_Holosight3) = TRUE;
                 };
             };
             class PointerSlot: PointerSlot_Rail
