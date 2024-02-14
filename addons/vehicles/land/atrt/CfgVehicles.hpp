@@ -1,5 +1,3 @@
-class CBA_Extended_EventHandlers_base;
-
 class CfgVehicles
 {
     class 3AS_ATRT_Base;
@@ -29,5 +27,13 @@ class CfgVehicles
         allowedHeadgearB[] = {""};
         headgearList[] = {""};
         identityTypes[] = {"LanguageENG_F", "Head_NATO", "Head_Euro"};
+
+        class VehicleTransport
+        {
+            class Cargo
+            {
+                GVAR(vivOverride) = TRUE;
+            };
+        };
     };
 };

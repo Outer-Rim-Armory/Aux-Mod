@@ -1,10 +1,25 @@
 #define ATRT_HEALTH 50
 
+#define VIV_PICKUP_RANGE 30
+
 #define SKIN_SWITCHER class GVAR(switchSkin) \
 { \
     displayName = "Switch Vehicle Skin"; \
     condition = QUOTE(call FUNC(skin_canSwitch)); \
     insertChildren = QUOTE(call FUNC(skin_insertChildren)); \
+}
+
+#define AI_CREW_SPAWNER class SpawnCrew \
+{ \
+    displayName = "Create Vehicle Crew"; \
+    condition = QUOTE(_this#0 call FUNC(canSpawnCrew)); \
+    statement = QUOTE((group ace_player) createVehicleCrew _this#0); \
+}; \
+class DeleteCrew \
+{ \
+    displayName = "Delete Vehicle Crew"; \
+    condition = QUOTE(_this#0 call FUNC(canDeleteCrew)); \
+    statement = QUOTE({_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)); \
 }
 
 #define HUD_CHANGER class LS_HUD_Changer \
@@ -124,7 +139,7 @@ class TransportItems \
     ITEM_XX(ACE_quikclot,__EVAL(15 * CREW_COUNT)); \
     ITEM_XX(ACE_tourniquet,__EVAL(4 * CREW_COUNT)); \
     ITEM_XX(ACE_splint,__EVAL(2 * CREW_COUNT)); \
-    ITEM_XX(RD501_Painkiller,__EVAL(3 * CREW_COUNT)); \
+    ITEM_XX(EGVAR(medical,Painkiller),__EVAL(3 * CREW_COUNT)); \
     ITEM_XX(ACE_epinephrine,__EVAL(2 * CREW_COUNT)); \
     ITEM_XX(ToolKit,1); \
 }; \
@@ -155,7 +170,7 @@ class TransportBackpacks {}; \
 class TransportItems \
 { \
     ITEM_XX(ACE_elasticBandage,20); \
-    ITEM_XX(RD501_Painkiller,5); \
+    ITEM_XX(EGVAR(medical,Painkiller),5); \
     ITEM_XX(ACE_tourniquet,4); \
     ITEM_XX(ACE_splint,2); \
 }
@@ -194,7 +209,7 @@ class TransportItems \
     ITEM_XX(ACE_salineIV_250,2); \
     ITEM_XX(ACE_morphine,2); \
     ITEM_XX(ACE_epinephrine,2); \
-    ITEM_XX(RD501_Painkiller,5); \
+    ITEM_XX(EGVAR(medical,Painkiller),5); \
     ITEM_XX(ACE_tourniquet,8); \
     ITEM_XX(ACE_splint,2); \
 }

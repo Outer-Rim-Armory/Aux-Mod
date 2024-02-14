@@ -14,7 +14,7 @@ class CLASS(Helmet_Phase2_Tanker_Base): CLASS(Helmet_Base)
 
     subItems[] = {QCLASS(NVG_Chip)};
 
-    HEARING_PROTECTION_CREW
+    HEARING_PROTECTION_CREW;
 
     class ItemInfo: ItemInfo
     {

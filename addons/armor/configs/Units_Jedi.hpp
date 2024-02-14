@@ -40,7 +40,7 @@ class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base)
 
     linkedItems[] = {QCLASS(Vest_Jedi), "SWLB_comlink", LINKED_ITEMS};
     respawnLinkedItems[] = {QCLASS(Vest_Jedi), "SWLB_comlink", LINKED_ITEMS};
-    backpack = QCLASS(Backpack_Radio_Invisible);
+    backpack = QCLASS(Backpack_Radio_Invis);
 };
 
 class CLASS(Unit_Jedi_Commander): CLASS(Unit_Jedi_Knight)

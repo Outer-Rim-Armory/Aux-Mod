@@ -12,6 +12,12 @@ class CLASS(Helmet_Phase1_Base): CLASS(Helmet_Base)
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
     picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
 
     class ItemInfo: ItemInfo

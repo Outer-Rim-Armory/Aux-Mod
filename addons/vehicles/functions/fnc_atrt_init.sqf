@@ -43,3 +43,9 @@ _atrt addAction ["Dismount", {
 ];
 
 _atrt addEventHandler ["HandleDamage", LINKFUNC(atrt_handleDamage)];
+_atrt addEventHandler ["Deleted", {
+    params ["_entity"];
+    private ["_allEffects"];
+    _allEffects = _entity getVariable [QGVAR(atrt_deathEffects), []];
+    { deleteVehicle _x; } forEach _allEffects;
+}];

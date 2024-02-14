@@ -9,6 +9,10 @@
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 #define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
 
+#define EGVAR_ACE(var1,var2) TRIPLES(ace,var1,var2)
+#define QEGVAR_ACE(var1,var2) QUOTE(EGVAR_ACE(var1,var2))
+#define EFUNC_ACE(var1,var2) TRIPLES(DOUBLES(ace,var1),fnc,var2)
+
 #undef PREP
 #ifdef DISABLE_COMPILE_CACHE
     #define LINKFUNC(x) {_this call FUNC(x)}
@@ -25,6 +29,8 @@
 #define CLASS(var1) DOUBLES(PREFIX,var1)
 #define QCLASS(var1) QUOTE(CLASS(var1))
 #define QQCLASS(var1) QUOTE(QCLASS(var1))
+
+#define EDSUBCAT(var1) QCLASS(DOUBLES(EdSubCat,var1))
 
 #define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> QUOTE(var1))
 
@@ -138,7 +144,7 @@ scopeCurator = 0
 #define TYPE_ACE_INTERACT_SELF 1
 
 #define HEARING_PROTECTION_CREW ace_hearing_lowerVolume = 0.6; \
-ace_hearing_protection = 0.85;
+ace_hearing_protection = 0.85
 
 // Linked Items
 #define LINKED_ITEMS "ItemMap", "ItemCompass", "ItemGPS", "ItemWatch"

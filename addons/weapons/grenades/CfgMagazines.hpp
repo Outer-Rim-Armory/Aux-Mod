@@ -27,8 +27,8 @@ class CfgMagazines
         ammo = QCLASS(Grenade_Bacta_Ammo);
 
         GVAR(bactaDuration) = BACTA_DURATION_DEFAULT;
-        EGVAR(medical,areaHealRadius) = MEDICAL_HEAL_RADIUS_DEFAULT;
-        EGVAR(medical,areaHealRate) = MEDICAL_HEAL_RATE_DEFAULT;
-        EGVAR(medical,areaHealMaxPatients) = MEDICAL_HEAL_MAXPATIENTS_DEFAULT;
+        EGVAR(medical,areaHealRadius) = BACTA_RADIUS_DEFAULT;
+        EGVAR(medical,areaHealRate) = BACTA_RATE_DEFAULT;
+        EGVAR(medical,areaHealMaxPatients) = BACTA_MAXPATIENTS_DEFAULT;
     };
 };

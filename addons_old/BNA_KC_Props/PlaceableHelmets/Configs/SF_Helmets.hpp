@@ -1,7 +1,0 @@
-HELMET_HOLDER(BNA_KC_HelmetHolder_ARC, SF ARC Helm, BNA_KC_Helmet_ARC, "SF")
-HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_v2, SF ARC Helm (v2), BNA_KC_Helmet_ARC_v2, "SF")
-HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Night, SF ARC Helm (Night), BNA_KC_Helmet_ARC_Night, "SF")
-HELMET_HOLDER(BNA_KC_HelmetHolder_ARC_Imperial, SF ARC Helm (Imperial), BNA_KC_Helmet_ARC_Imperial, "SF")
-HELMET_HOLDER(BNA_KC_HelmetHolder_ARF, SF ARF 01 Helm (Enlisted), BNA_KC_Helmet_ARF, "SF")
-HELMET_HOLDER(BNA_KC_HelmetHolder_ARF_v2, SF ARF 01 Helm (Enlisted, v2), BNA_KC_Helmet_ARF_v2, "SF")
-HELMET_HOLDER(BNA_KC_HelmetHolder_BARC, SF BARC Helm, BNA_KC_Helmet_BARC, "SF")

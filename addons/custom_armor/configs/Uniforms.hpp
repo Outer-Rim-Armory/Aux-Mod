@@ -25,6 +25,17 @@ class CLASS(Uniform_Burnt): CLASS(Uniform_Base)
     };
 };
 
+class CLASS(Uniform_Defter): CLASS(Uniform_Base)
+{
+    displayName = "[KC] INF Armor ('Defter')";
+    GVAR(isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = QCLASS(Unit_Defter);
+    };
+};
+
 class CLASS(Uniform_Dexus): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor ('Dexus')";
@@ -44,50 +55,6 @@ class CLASS(Uniform_Drake): CLASS(Uniform_Base)
     class ItemInfo: ItemInfo
     {
         uniformClass = QCLASS(Unit_Drake);
-    };
-};
-
-class CLASS(Uniform_Fil): CLASS(Uniform_Base)
-{
-    displayName = "[KC] INF Armor ('Fil')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Fil);
-    };
-};
-
-class CLASS(Uniform_FilSquad): CLASS(Uniform_Base)
-{
-    displayName = "[KC] INF Armor ('Fil's Squad')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_FilSquad);
-    };
-};
-
-class CLASS(Uniform_HowzerBlue): CLASS(Uniform_Base)
-{
-    displayName = "[KC] INF Armor ('Howzer') [Blue]";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Phase2_HowzerBlue);
-    };
-};
-
-class CLASS(Uniform_HowzerBrown): CLASS(Uniform_Base)
-{
-    displayName = "[KC] INF Armor ('Howzer') [Brown]";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Phase2_HowzerBrown);
     };
 };
 
@@ -133,28 +100,6 @@ class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Base)
     };
 };
 
-class CLASS(Uniform_Ponds): CLASS(Uniform_Base)
-{
-    displayName = "[187th] INF Armor ('Ponds')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Ponds);
-    };
-};
-
-class CLASS(Uniform_Trooper187): CLASS(Uniform_Base)
-{
-    displayName = "[187th] INF Armor";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Trooper187);
-    };
-};
-
 class CLASS(Uniform_Rat): CLASS(Uniform_Base)
 {
     displayName = "[KC] INF Armor ('Rat')";
@@ -174,17 +119,6 @@ class CLASS(Uniform_Sin): CLASS(Uniform_Base)
     class ItemInfo: ItemInfo
     {
         uniformClass = QCLASS(Unit_Sin);
-    };
-};
-
-class CLASS(Uniform_Stone): CLASS(Uniform_Base)
-{
-    displayName = "[KC] INF Armor ('Stone')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Stone);
     };
 };
 

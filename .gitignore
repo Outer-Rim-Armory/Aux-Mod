@@ -13,3 +13,6 @@ Exports/
 *.spp
 *.spp.painter_lock
 *.psd
+
+# Legacy
+addons_old/

@@ -80,8 +80,8 @@ class CLASS(Helmet_Phase2_Dexus): CLASS(Helmet_Phase2_Base)
 
     GVAR(isCustom) = TRUE;
     EGVAR(armor,nvCanToggle) = TRUE;
-    EGVAR(armor,toggleOff) = QCLASS(Helmet_Phase2_Dexus);
-    EGVAR(armor,toggleOn) = QCLASS(Helmet_Phase2_DexusBacta);
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Dexus);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_DexusBacta);
 };
 class CLASS(Helmet_Phase2_DexusBacta): CLASS(Helmet_Phase2_Dexus)
 {
@@ -104,30 +104,6 @@ class CLASS(Helmet_Phase2_Evo): CLASS(Helmet_Phase2_Base)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase2\Evo_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
-class CLASS(Helmet_Phase2_Fil): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[KC] INF P2 Helm ('Fil')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\Fil_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
-class CLASS(Helmet_Phase2_FilSquad): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[KC] INF P2 Helm ('Fil's Squad')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\FilSquad_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 
@@ -164,30 +140,6 @@ class CLASS(Helmet_Phase2_Hazard): CLASS(Helmet_Phase2_Base)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase2\Hazard_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
-class CLASS(Helmet_Phase2_HowzerBlue): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[KC] INF P2 Helm ('Howzer') [Blue]";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\HowzerBlue_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
-class CLASS(Helmet_Phase2_HowzerBrown): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[KC] INF P2 Helm ('Howzer') [Brown]";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\HowzerBrown_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 
@@ -409,30 +361,6 @@ class CLASS(Helmet_Phase2_Patriot): CLASS(Helmet_Phase2_Base)
     GVAR(isCustom) = TRUE;
 };
 
-class CLASS(Helmet_Phase2_Ponds): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[187th] INF P2 Helm ('Ponds')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\Ponds_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
-class CLASS(Helmet_Phase2_Trooper187): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[187th] INF P2 Helm";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\Trooper187_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
 class CLASS(Helmet_Phase2_Rev): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm ('Rev')";
@@ -517,18 +445,6 @@ class CLASS(Helmet_Phase2_Star): CLASS(Helmet_Phase2_Base)
     GVAR(isCustom) = TRUE;
 };
 
-class CLASS(Helmet_Phase2_Stone): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[KC] INF P2 Helm ('Stone')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\Stone_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
 class CLASS(Helmet_Phase2_Swoop): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm ('Swoop')";
@@ -563,36 +479,6 @@ class CLASS(Helmet_Phase2_Tugz): CLASS(Helmet_Phase2_Base)
     };
 
     GVAR(isCustom) = TRUE;
-};
-
-
-class CLASS(Helmet_Phase2_Tyrant): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[KC] INF P2 Helm ('Tyrant')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\Tyrant_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa",
-    };
-
-    GVAR(isCustom) = TRUE;
-    EGVAR(armor,nvCanToggle) = TRUE;
-    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Tyrant);
-    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_TyrantCrimson);
-};
-class CLASS(Helmet_Phase2_TyrantCrimson): CLASS(Helmet_Phase2_Tyrant)
-{
-    SCOPE_HIDDEN;
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\Tyrant_camo1_co.paa),
-        QPATHTOF(data\visors\Crimson_camo2_co.paa)
-    };
-    hiddenSelectionsMaterials[] =
-    {
-        "",
-        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
-    };
 };
 
 class CLASS(Helmet_Phase2_Vortex): CLASS(Helmet_Phase2_Base)

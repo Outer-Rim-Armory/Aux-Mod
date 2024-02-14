@@ -1,26 +1,17 @@
 [
-    QGVAR(bactaBloodRestoreAmount),
-    "SLIDER",
-    ["Blood Restore Amount", "Amount of blood given to the patient on each iteration."],
-    [QUOTE(MOD_NAME), "Bacta"],
-    [0, 1, 0.25, 0],
+    QGVAR(reorient_medicRequired),
+    "LIST",
+    ["Reorient - Required Medic Level", "Medical level required to reorient a patient."],
+    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
+    [[0, 1, 2, 50], ["Anyone", "Medic", "Doctors", "No one"], 3],
     TRUE
 ] call CBA_fnc_addSetting;
 
 [
-    QGVAR(bactaPainReductionAmount),
+    QGVAR(reorient_successChance),
     "SLIDER",
-    ["Pain Reduction", "Amount of pain reducted from the patient on each iteration."],
-    [QUOTE(MOD_NAME), "Bacta"],
-    [0, 1, 0.1, 0],
-    TRUE
-] call CBA_fnc_addSetting;
-
-[
-    QGVAR(bactaFullHealOnComplete),
-    "CHECKBOX",
-    ["Full Heal when Complete", "Slow healing sources will full heal a unit when there are no remaining actions."],
-    [QUOTE(MOD_NAME), "Bacta"],
-    true,
+    ["Reorient - Success Chance", "Percent chance of a reorient treatment waking up a patient."],
+    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
+    [0, 1, 0.65, 0, true],
     TRUE
 ] call CBA_fnc_addSetting;

@@ -37,6 +37,8 @@ class CfgWeapons
         fireLightIntensity = 0.2;
         flashSize = 0.5;
 
+        recoil = "recoil_SMG_03";
+
         maxZeroing = 1000;
 
         // JLTS emp system
@@ -66,7 +68,7 @@ class CfgWeapons
         class FullAuto: FullAuto
         {
             dispersion = 0.00075;
-            recoil = "recoil_auto_primary_3outof10";
+            recoil = "recoil_auto_mx";
             recoilProne = "recoil_auto_prone_mx";
 
             maxRange = 80;

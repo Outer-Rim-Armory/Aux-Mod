@@ -525,10 +525,10 @@ class CfgWeapons
         displayName = "M-190 Mortar System";
         magazines[] =
         {
-            QCLASS(Mag_3Rnd_Mortar_82mm_HE),
-            QCLASS(Mag_3Rnd_Mortar_SmokeWhite),
-            QCLASS(Mag_3Rnd_Mortar_SmokeBlue),
-            QCLASS(Mag_3Rnd_Mortar_SmokeRed)
+            QCLASS(Mag_6Rnd_Mortar_82mm_HE),
+            QCLASS(Mag_6Rnd_Mortar_SmokeWhite),
+            QCLASS(Mag_6Rnd_Mortar_SmokeBlue),
+            QCLASS(Mag_6Rnd_Mortar_SmokeRed)
         };
 
         class Single1: Single1

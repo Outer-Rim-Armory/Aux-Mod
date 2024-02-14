@@ -24,7 +24,7 @@ if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_
 private _jetpack = backpack ace_player;
 
 // Get path to sound effect
-private _sound = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSound", "");
+private _sound = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectSound","");
 private _volume = 0.05; // Increase volume for each movement key (including slow fall and rising)
 
 _volumeCoef =

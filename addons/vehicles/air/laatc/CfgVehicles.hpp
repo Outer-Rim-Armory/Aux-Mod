@@ -96,6 +96,13 @@ class CfgVehicles
                 shortcut = "User20";
                 statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick);
             };
+
+            class LoadVehicle: Impulse
+            {
+                displayName = "Load Vehicle";
+                condition = QUOTE(ace_player isEqualTo currentPilot this and this call FUNC(vivCanLoad));
+                statement = QUOTE(this call FUNC(vivLoad));
+            };
         };
 
         INVENTORY_VEHICLE_BASE(1);

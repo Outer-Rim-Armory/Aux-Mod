@@ -6,7 +6,9 @@ class CfgWeapons
     #include "configs\Helmets_P2.hpp"
     #include "configs\Helmets_P2_Pilot.hpp"
     #include "configs\Helmets_P2_SpecOp.hpp"
+    #include "configs\Helmets_P12.hpp"
     #include "configs\Helmets_Insulated.hpp"
+    #include "configs\Helmets_Engineer.hpp"
     #include "configs\Helmets_ARC.hpp"
     #include "configs\Helmets_ARF.hpp"
     #include "configs\Helmets_BARC.hpp"
@@ -57,7 +59,8 @@ class CfgWeapons
         GVAR(isCustom) = TRUE;
     };
 
-    class CLASS(Vest_WO_Howzer): CLASS(Vest_Officer)
+    class CLASS(Vest_WO);
+    class CLASS(Vest_WO_Howzer): CLASS(Vest_WO)
     {
         displayName = "[KC] INF Vest ('Howzer')";
         hiddenSelectionsTextures[] =

@@ -1,3 +1,22 @@
+class CLASS(Vest_Holster): CLASS(Vest_Basic)
+{
+    displayName = "[KC] INF Vest (Holster)";
+
+    model = "\ls_armor_bluefor\vest\gar\clone\lsd_gar_clone_vest.p3d";
+    hiddenSelections[] = {"r_thigh_holster"};
+    hiddenSelectionsTextures[] =
+    {
+        "\SWLB_core\data\common_textures\accessories\officer_accessories_co.paa" // Holster
+    };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+
+    class ItemInfo: ItemInfo
+    {
+        uniformModel = "\ls_armor_bluefor\vest\gar\clone\lsd_gar_clone_vest.p3d";
+        hiddenSelections[] = {"r_thigh_holster"};
+    };
+};
+
 class CLASS(Vest_Assault): CLASS(Vest_Basic)
 {
     displayName = "[KC] INF Vest 01 (Assault)";
@@ -316,27 +335,18 @@ class CLASS(Vest_Officer_v2): CLASS(Vest_Officer)
     };
 };
 
-class CLASS(Vest_Pauldron): CLASS(Vest_Officer)
+class CLASS(Vest_WO): CLASS(Vest_Officer)
 {
-    displayName = "[KC] INF Vest XX (Pauldron)";
+    displayName = "[KC] INF Vest 11 (Warrant Officer)";
     model = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa), // Pauldron
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa) // Pauldron
     };
 
     class ItemInfo: ItemInfo
     {
         uniformModel = "\SWLB_clones\SWLB_clone_lieutenant_armor.p3d";
-    };
-};
-
-class CLASS(Vest_WO): CLASS(Vest_Pauldron)
-{
-    displayName = "[KC] INF Vest 11 (Warrant Officer)";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
     };
 };
 

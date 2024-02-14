@@ -1,59 +1,29 @@
 class CfgVehicles
 {
-    class Man;
-    class CAManBase: Man
-    {
-        class ACE_SelfActions
-        {
-            class ace_csw_deploy
-            {
-                modifierFunction = QUOTE(call FUNC(cswDeployModifier));
-            };
-        };
-
-        class UserActions
-        {
-            class GVAR(CSW_Deploy)
-            {
-                displayName = "Deploy Tripod";
-                displayNameDefault = "";
-
-                position = "camera";
-                radius = 30;
-                onlyForPlayer = FALSE;
-
-                hideOnUse = TRUE;
-                priority = 5;
-
-                condition = QUOTE(ace_player call ace_csw_fnc_assemble_canDeployTripod);
-                statement = QUOTE(ace_player call ace_csw_fnc_assemble_deployTripod);
-            };
-        };
-    };
-
-    class StaticWeapon;
-    class StaticMortar: StaticWeapon
-    {
-        class Turrets;
-    };
-    class Mortar_01_base_F: StaticMortar
-    {
-        class Turrets: Turrets
-        {
-            class MainTurret;
-        };
-    };
-    class B_Mortar_01_F: Mortar_01_base_F
+    class LandVehicle;
+    class StaticWeapon: LandVehicle
     {
         class HitPoints
         {
             class HitBody;
         };
-        class UserActions;
-        class assembleInfo;
-        class ace_csw;
     };
-    class CLASS(Mortar_Base): B_Mortar_01_F
+    class StaticMortar: StaticWeapon {};
+    class Mortar_01_base_F: StaticMortar
+    {
+        class Turrets;
+    };
+    class B_Mortar_01_F: Mortar_01_base_F {};
+    class 3AS_Republic_Mortar: B_Mortar_01_F
+    {
+        class ace_csw;
+        class UserActions;
+        class Turrets: Turrets
+        {
+            class MainTurret;
+        };
+    };
+    class CLASS(Mortar_Base): 3AS_Republic_Mortar
     {
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
@@ -71,15 +41,7 @@ class CfgVehicles
         ace_dragging_dragPosition[] = {0, 1.2, 0};
         ace_dragging_canCarry = TRUE;
         ace_dragging_carryPosition[] = {0, 1.2, 0};
-
-        model = "\3AS\3AS_Static\Mortar\model\RepublicMortar.p3d";
-        hiddenSelections[] = {"Camo_1", "Camo_2"};
-        hiddenSelectionsMaterials[] =
-        {
-            "\3AS\3AS_Static\Mortar\data\base.rvmat",
-            "\3AS\3AS_Static\Mortar\data\tube.rvmat"
-        };
-        icon = "\3AS\3AS_Static\Mortar\data\ui\Mortar_top_ca.paa";
+        ace_dragging_dragDirection = 0;
 
         class Turrets: Turrets
         {
@@ -88,12 +50,8 @@ class CfgVehicles
                 magazines[] = {};
                 weapons[] = {};
 
-                // Maximum and minimum angles for mortar turret
-                maxElev = 25.762;
-                maxOutElev = 20;
-
+                maxElev = 21.79; // Increasing lowers mininum range
                 minElev = -30;
-                minOutElev = -4;
             };
         };
 
@@ -110,11 +68,19 @@ class CfgVehicles
         {
             ammoLoadTime = 5;
             ammoUnloadTime = 5;
-            desiredAmmo = 3;
+            desiredAmmo = 6;
 
             magazineLocation = QUOTE(_target selectionPosition 'usti hlavne');
         };
-        delete assembleInfo; // Removes base game disassemble option
+
+        class assembleInfo
+        {
+            assembleTo = "";
+            base = "";
+            displayName = "";
+            dissasembleTo[] = {};
+            primary = 0;
+        };
 
         class UserActions: UserActions
         {
@@ -134,20 +100,6 @@ class CfgVehicles
                 statement = QUOTE([ARR_2(this,ace_player)] call ace_csw_fnc_assemble_pickupTripod);
             };
         };
-
-        class Damage
-        {
-            tex[] = {};
-            mat[] =
-            {
-                "\3AS\3AS_Static\mortar\data\base.rvmat",
-                "\A3\Static_F_Gamma\data\StaticTurret_01_damage.rvmat",
-                "\A3\Static_F_Gamma\data\StaticTurret_01_destruct.rvmat",
-                "\3AS\3AS_Static\mortar\data\tube.rvmat",
-                "\A3\Static_F_Gamma\data\StaticTurret_02_damage.rvmat",
-                "\A3\Static_F_Gamma\data\StaticTurret_02_destruct.rvmat"
-            };
-        };
     };
     class CLASS(Mortar_M190): CLASS(Mortar_Base)
     {
@@ -156,7 +108,7 @@ class CfgVehicles
         faction = QCLASS(Faction_KC);
         editorPreview = EEDITOR_PREVIEW(vehicles\static\SUBCOMPONENT,Mortar_M190);
 
-        displayName = "M-190 Mortar System";
+        displayName = "M-190 Disposable Mortar System";
         crew = QCLASS(Unit_Phase2_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         side = BLUFOR;
@@ -173,10 +125,10 @@ class CfgVehicles
             {
                 magazines[] =
                 {
-                    QCLASS(Mag_3Rnd_Mortar_82mm_HE),
-                    QCLASS(Mag_3Rnd_Mortar_SmokeWhite),
-                    QCLASS(Mag_3Rnd_Mortar_SmokeBlue),
-                    QCLASS(Mag_3Rnd_Mortar_SmokeRed)
+                    QCLASS(Mag_6Rnd_Mortar_82mm_HE),
+                    QCLASS(Mag_6Rnd_Mortar_SmokeWhite),
+                    QCLASS(Mag_6Rnd_Mortar_SmokeBlue),
+                    QCLASS(Mag_6Rnd_Mortar_SmokeRed)
                 };
                 weapons[] = {QCLASS(Mortar_M190_Turret)};
             };
@@ -189,5 +141,8 @@ class CfgVehicles
             proxyWeapon = QCLASS(Mortar_M190_ProxyWeapon);
             displayName = "M-190 Mortar";
         };
+
+        // Most mortars should have pick up option, but not this one
+        class UserActions {};
     };
 };

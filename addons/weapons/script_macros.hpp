@@ -45,6 +45,10 @@ jlts_dc17sa_flashlight = TRUE
 
 #define EMP_VEHICLE_COOLDOWN_DEFAULT 25
 
+#define BACTA_RADIUS_DEFAULT 20
+#define BACTA_RATE_DEFAULT 0.5
+#define BACTA_MAXPATIENTS_DEFAULT -1
+
 #define BACTA_DURATION_DEFAULT 20
 
 #define PLASMA_SOUNDS bulletFly[] = {"bulletFly1",0.2,"bulletFly2",0.2,"bulletFly3",0.2,"bulletFly4",0.2,"bulletFly5",0.2}; \

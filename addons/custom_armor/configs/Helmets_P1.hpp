@@ -78,6 +78,19 @@ class CLASS(Helmet_Phase1_CatholicKyber): CLASS(Helmet_Phase1_Catholic)
     };
 };
 
+class CLASS(Helmet_Phase1_Cutthroat): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF P1 Helm ('Cutthroat')";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Cutthroat_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+
+    GVAR(isCustom) = TRUE;
+};
+
 class CLASS(Helmet_Phase1_Defter): CLASS(Helmet_Phase1_Base)
 {
     displayName = "[KC] INF P1 Helm ('Defter')";
@@ -196,32 +209,6 @@ class CLASS(Helmet_Phase1_Hazard): CLASS(Helmet_Phase1_Base)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase1\Hazard_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
-class CLASS(Helmet_Phase1_HowzerBlue): CLASS(Helmet_Phase1_Base)
-{
-    displayName = "[KC] INF P1 Helm ('Howzer') [Blue]";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase1\HowzerBlue_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
-class CLASS(Helmet_Phase1_HowzerBrown): CLASS(Helmet_Phase1_Base)
-{
-    displayName = "[KC] INF P1 Helm ('Howzer') [Brown]";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase1\HowzerBrown_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
@@ -376,17 +363,6 @@ class CLASS(Helmet_Phase1_Patriot): CLASS(Helmet_Phase1_Base)
     };
 };
 
-class CLASS(Helmet_Phase1_Ponds): CLASS(Helmet_Phase1_Base)
-{
-    displayName = "[KC] INF P1 Helm ('Ponds')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase1\Ponds_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
-    };
-};
-
 class CLASS(Helmet_Phase1_Rev): CLASS(Helmet_Phase1_Base)
 {
     displayName = "[KC] INF P1 Helm ('Rev')";
@@ -404,6 +380,17 @@ class CLASS(Helmet_Phase1_Rodger): CLASS(Helmet_Phase1_Base)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase1\Rodger_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase1_Sage): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF P1 Helm ('Sage')";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Sage_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
@@ -439,6 +426,38 @@ class CLASS(Helmet_Phase1_Swoop): CLASS(Helmet_Phase1_Base)
         QPATHTOF(data\helmets\phase1\Swoop_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase1_Tyrant): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF P1 Helm ('Tyrant')";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Tyrant_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+
+    GVAR(isCustom) = TRUE;
+    EGVAR(armor,nvCanToggle) = TRUE;
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Tyrant);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase1_TyrantCrimson);
+};
+class CLASS(Helmet_Phase1_TyrantCrimson): CLASS(Helmet_Phase1_Tyrant)
+{
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Tyrant_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
 

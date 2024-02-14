@@ -10,6 +10,7 @@ class CfgPatches
         requiredAddons[] =
         {
             "BNA_KC_armor",
+            "BNA_KC_objects_resupply"
         };
         units[] =
         {
@@ -21,7 +22,9 @@ class CfgPatches
             "BNA_KC_Jetpack_CDV21_LR",
 
             "BNA_KC_Jetpack_Droid",
-            "BNA_KC_Jetpack_Droid_Rocket"
+            "BNA_KC_Jetpack_Droid_Rocket",
+
+            "BNA_KC_Resupply_JetpackFuel"
         };
         weapons[] =
         {
@@ -33,8 +36,10 @@ class CfgPatches
 };
 
 #include "CfgWeapons.hpp"
+#include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgFunctions.hpp"
 #include "CfgCloudlets.hpp"
 #include "CfgRscTitles.hpp"
 #include "Cfg3DEN.hpp"
+#include "CfgEventHandlers.hpp"
