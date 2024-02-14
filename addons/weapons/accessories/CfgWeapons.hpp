@@ -155,4 +155,60 @@ class CfgWeapons
         model = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight3.p3d);
         picture = QPATHTOF(SUBCOMPONENT\data\ui\MR_Holosight3_ca.paa);
     };
+
+    class CLASS(Optic_LR_Holosight): CLASS(Optic_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Long Range Holosight";
+
+        model = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\ui\LR_Holosight_ca.paa);
+
+        ace_scopeHeightAboveRail = 4.48584;
+
+        class ItemInfo: ItemInfo
+        {
+            class OpticsModes: OpticsModes
+            {
+                class Sight: Sight {};
+
+                class Scope: Sight
+                {
+                    opticsID = 2;
+                    memoryPointCamera = "opticView";
+
+                    opticsZoomInit = __EVAL(0.25/2);
+                    opticsZoomMax = __EVAL(0.25/2);
+                    opticsZoomMin = __EVAL(0.25/6);
+
+                    distanceZoomMin = 300;
+                    distanceZoomMax = 300;
+
+                    opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+                };
+            };
+        };
+    };
+
+    class CLASS(Optic_LR_Holosight2): CLASS(Optic_LR_Holosight)
+    {
+        displayName = "[KC] Long Range Holosight 2";
+        model = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight2.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\ui\LR_Holosight2_ca.paa);
+    };
+
+    class CLASS(Optic_LR_Holosight3): CLASS(Optic_LR_Holosight)
+    {
+        displayName = "[KC] Long Range Holosight 3";
+        model = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight3.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\ui\LR_Holosight3_ca.paa);
+    };
+
+    class CLASS(Optic_LR_Holosight4): CLASS(Optic_LR_Holosight)
+    {
+        displayName = "[KC] Long Range Holosight 4";
+        model = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight4.p3d);
+        picture = QPATHTOF(SUBCOMPONENT\data\ui\LR_Holosight3_ca.paa);
+    };
 };
