@@ -27,7 +27,10 @@ class CfgPatches
             QCLASS(Optic_LR_Holosight),
             QCLASS(Optic_LR_Holosight2),
             QCLASS(Optic_LR_Holosight3),
-            QCLASS(Optic_LR_Holosight4)
+            QCLASS(Optic_LR_Holosight4),
+            QCLASS(Optic_Holoscope),
+            QCLASS(Optic_Holoscope2),
+            QCLASS(Optic_Holoscope3)
         };
         VERSION_CONFIG;
     };
