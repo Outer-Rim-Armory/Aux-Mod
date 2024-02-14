@@ -287,4 +287,42 @@ class CfgWeapons
         model = QPATHTOF(SUBCOMPONENT\data\optics\Holosight3.p3d);
         picture = QPATHTOF(SUBCOMPONENT\data\ui\Holosight3_ca.paa);
     };
+
+    class CLASS(Optic_Reflex): CLASS(Optic_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Reflex Scope";
+
+        model = "\3AS\3AS_Weapons\DC15C\3AS_DC15C_Reflex_f.p3d";
+        picture = "\A3\Weapons_F_EPA\Acc\data\UI\gear_acco_yorris_CA.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            mass = 6;
+            modelOptics = "\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+
+            class OpticsModes: OpticsModes
+            {
+                class Sight: Sight {};
+
+                class Scope: Sight
+                {
+                    opticsID = 2;
+                    memoryPointCamera = "opticView";
+
+                    useModelOptics = TRUE;
+                    opticsZoomInit = __EVAL(0.25/2);
+                    opticsZoomMax = __EVAL(0.25/2);
+                    opticsZoomMin = __EVAL(0.25/2);
+
+                    distanceZoomMin = 100;
+                    distanceZoomMax = 100;
+
+                    visionMode[] = {"Normal", "NVG"};
+                    opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
+                };
+            };
+        };
+    };
 };

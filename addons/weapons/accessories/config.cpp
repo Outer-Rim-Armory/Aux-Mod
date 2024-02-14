@@ -10,7 +10,8 @@ class CfgPatches
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            QUOTE(ADDON)
+            QUOTE(ADDON),
+            "3AS_Weapons_DC15C"
         };
         units[] = {};
         weapons[] =
@@ -33,7 +34,8 @@ class CfgPatches
             QCLASS(Optic_Holosight3),
             QCLASS(Optic_Holoscope),
             QCLASS(Optic_Holoscope2),
-            QCLASS(Optic_Holoscope3)
+            QCLASS(Optic_Holoscope3),
+            QCLASS(Optic_Reflex)
         };
         VERSION_CONFIG;
     };

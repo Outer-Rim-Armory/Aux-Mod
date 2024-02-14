@@ -26,7 +26,7 @@ CLASS(Optic_Holoscope3) = TRUE
 #define ATTACHMENTS_OPTIC_SIGHTS CLASS(Optic_Holosight) = TRUE; \
 CLASS(Optic_Holosight2) = TRUE; \
 CLASS(Optic_Holosight3) = TRUE; \
-Aux501_cows_reflex_optic = TRUE
+CLASS(Optic_Reflex) = TRUE
 #define ATTACHMENTS_OPTIC_PISTOL CLASS(Optic_Pistol) = TRUE; \
 CLASS(Optic_Pistol2) = TRUE
 
