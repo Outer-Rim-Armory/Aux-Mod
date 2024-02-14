@@ -32,7 +32,7 @@ CLASS(Optic_Pistol2) = TRUE
 
 #define ATTACHMENTS_POINTER_BASE acc_pointer_ir = TRUE; \
 ace_acc_pointer_green = TRUE; \
-jlts_dc17sa_flashlight = TRUE
+JLTS_DC17SA_Flashlight = TRUE
 
 // Special Ammo Types
 #define AMMO_TYPE_NORMAL -1
