@@ -22,7 +22,7 @@ private ["_arsenalItems"];
 TRACE_1("fnc_openArsenal",_type);
 
 _arsenalItems = switch (toLowerANSI _type) do {
-    case "customs": {
+    case "customize": {
         missionNamespace getVariable [QEGVAR(custom_armor,customItems), []];
     };
 
