@@ -11,7 +11,9 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            "3AS_Weapons_DC15C"
+            "3AS_Weapons_DC15C",
+            "3AS_Weapons_WestarM5",
+            "SWLW_Clones"
         };
         units[] = {};
         weapons[] =
@@ -37,7 +39,8 @@ class CfgPatches
             QCLASS(Optic_Holoscope3),
             QCLASS(Optic_Reflex),
             QCLASS(Optic_LRPS),
-            QCLASS(Optic_DC15X)
+            QCLASS(Optic_DC15X),
+            QCLASS(Optic_WestarM5)
         };
         VERSION_CONFIG;
     };

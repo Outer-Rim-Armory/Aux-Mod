@@ -496,4 +496,59 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\DC15X\data\DC15X_scope_co.paa"};
         picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_scope_ui_ca.paa";
     };
+
+    class CLASS(Optic_WestarM5): CLASS(Optic_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Westar-M5 Long Scope";
+        model = "\3AS\3AS_Weapons\WestarM5\3AS_Westar_Scope_F.p3d";
+        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_scope_ui.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            modelOptics = "\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
+            mass = 7;
+
+            class OpticsModes: OpticsModes
+            {
+                class Sight: Sight
+                {
+                    opticsZoomInit = 0.75;
+                    opticsZoomMax = 1.1;
+                    opticsZoomMin = 0.375;
+
+                    discreteDistance[] = {100, 300, 400, 500, 600, 700, 800, 900, 1000};
+                    discreteDistanceInitIndex = 1;
+                    discreteFov[] = {};
+                    discreteInitIndex = 0;
+
+                    distanceZoomMax = 1000;
+                    distanceZoomMin = 100;
+
+                    modelOptics[] = {"\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d"};
+                    nFovLimit = 0.07;
+                };
+                class Scope: Sight
+                {
+                    opticsID = 2;
+                    memoryPointCamera = "opticView";
+                    useModelOptics = TRUE;
+
+                    discreteFov[] = {0.0416, 0.0138};
+                    discreteInitIndex = 0;
+
+                    opticsDisablePeripherialVision = TRUE;
+                    opticsFlare = TRUE;
+
+                    opticsZoomInit = 0.0416;
+                    opticsZoomMax = 0.0416;
+                    opticsZoomMin = 0.0138;
+
+                    visionMode[] = {"Normal", "NVG", "TI"};
+                    opticsPPEffects[] = {"OpticsCHAbera1", "OpticsBlur1"};
+                };
+            };
+        };
+    };
 };
