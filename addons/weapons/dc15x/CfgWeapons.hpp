@@ -47,7 +47,7 @@ class CfgWeapons
                 class CompatibleItems
                 {
                     CLASS(DC15X_Scope) = TRUE;
-                    Aux501_cows_lrps = TRUE;
+                    CLASS(Optic_LRPS) = TRUE;
                 };
             };
             class PointerSlot: PointerSlot
