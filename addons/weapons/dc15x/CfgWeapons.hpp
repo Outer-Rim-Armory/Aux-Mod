@@ -46,7 +46,7 @@ class CfgWeapons
             {
                 class CompatibleItems
                 {
-                    CLASS(DC15X_Scope) = TRUE;
+                    CLASS(Optic_DC15X) = TRUE;
                     CLASS(Optic_LRPS) = TRUE;
                 };
             };
@@ -101,7 +101,7 @@ class CfgWeapons
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = QCLASS(DC15X_Scope);
+                item = QCLASS(Optic_DC15X);
             };
         };
     };
@@ -116,34 +116,5 @@ class CfgWeapons
 
         JLTS_isFried = TRUE;
         magazines[] = {};
-    };
-
-    class optic_LRPS;
-    class InventoryOpticsItem_Base_F;
-    class jlts_dc15x_scope: optic_LRPS
-    {
-        class ItemInfo: InventoryOpticsItem_Base_F
-        {
-            class OpticsModes
-            {
-                class Snip;
-            };
-        };
-    };
-    class CLASS(DC15X_Scope): jlts_dc15x_scope
-    {
-        author = "Keeli Company Aux Team";
-        displayName = "[KC] DC-15X Scope";
-        class ItemInfo: ItemInfo
-        {
-            class OpticsModes: OpticsModes
-            {
-                class Snip: Snip
-                {
-                    visionMode[] = {"Normal", "NVG", "TI"};
-                    thermalMode[] = {WHOT};
-                };
-            };
-        };
     };
 };

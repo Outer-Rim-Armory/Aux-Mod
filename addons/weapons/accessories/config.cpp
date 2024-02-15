@@ -36,7 +36,8 @@ class CfgPatches
             QCLASS(Optic_Holoscope2),
             QCLASS(Optic_Holoscope3),
             QCLASS(Optic_Reflex),
-            QCLASS(Optic_LRPS)
+            QCLASS(Optic_LRPS),
+            QCLASS(Optic_DC15X)
         };
         VERSION_CONFIG;
     };

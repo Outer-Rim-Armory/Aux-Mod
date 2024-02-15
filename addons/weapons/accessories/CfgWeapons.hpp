@@ -20,6 +20,7 @@ class CfgWeapons
                 class Sight
                 {
                     opticsID = 1;
+                    cameraDir = "";
                     memoryPointCamera = "eye";
                     useModelOptics = FALSE;
 
@@ -335,6 +336,14 @@ class CfgWeapons
         model = "\A3\Weapons_F_EPA\Acc\acco_marksman_F.p3d";
         picture = "\A3\Weapons_F\acc\Data\UI\icon_optic_DMS_ca.paa";
 
+        inertia = 0.2;
+
+        ace_scopeAdjust_Horizontal[] = {-8, 8};
+        ace_scopeAdjust_HorizontalIncrement = 0.1;
+        ace_scopeAdjust_Vertical[] = {0, 27};
+        ace_scopeAdjust_VerticalIncrement = 0.1;
+        ace_scopeHeightAboveRail = 4.2098;
+
         class ItemInfo: ItemInfo
         {
             modelOptics = "\A3\Weapons_F\acc\reticle_sniper_F.p3d";
@@ -344,7 +353,6 @@ class CfgWeapons
             {
                 class Sight: Sight
                 {
-                    cameraDir = "";
                     discreteDistance[] = {200};
                     discreteDistanceInitIndex = 0;
                     discreteFov[] = {};
@@ -380,6 +388,25 @@ class CfgWeapons
                     visionMode[] = {"Normal", "NVG", "TI"};
                     thermalMode[] = {WHOT, BHOT};
                 };
+            };
+        };
+    };
+
+    class CLASS(Optic_DC15X): CLASS(Optic_LRPS)
+    {
+        displayName = "[KC] DC-15X Scope";
+        descriptionShort = "Long range scope<br/>Magnification: 6x-25x";
+
+        model = "\MRC\JLTS\weapons\DC15X\DC15X_scope.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\DC15X\data\DC15X_scope_co.paa"};
+        picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_scope_ui_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            class OpticsModes: OpticsModes
+            {
+                class Scope: Scope {};
             };
         };
     };
