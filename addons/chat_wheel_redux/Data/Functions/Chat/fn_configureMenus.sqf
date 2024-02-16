@@ -14,7 +14,7 @@ CWR_messagesHashMap =
         ["Fortification", "[vl-ContactFort]Contact! Fortification [direction], bearing [bearing]! [distance]!"],
         ["Low Ammo", "[vl-NeedAmmo]I need ammo for my [weapon]!"],
         ["Call ACE Check", "[vl-AskStatus]ACE check!"],
-        ["ACE Response", "[vl-Status]Status [status]!"],
+        ["ACE Response", "Status [status]!"],
         ["Launchers", "[launcher]"],
         ["Custom 1", "Default Message"], // Configurable messages that can be set in the addon options
         ["Custom 2", "Default Message"],
@@ -75,7 +75,7 @@ CWR_OpenStatusMenu =
     sleep 0.05;
 
     private _statusList = ["Green", "Yellow", "Orange", "Red", "Black"];
-    CWR_statusMessageList = _statusList apply { [_message, "[status]", _x] call CWR_fnc_stringReplace; };
+    CWR_statusMessageList = _statusList apply { [_message, "[status]", format ["[vl-Status%1]%2", _x, _x]] call CWR_fnc_stringReplace; };
 
     [
         "How are you?",
