@@ -4,7 +4,7 @@ class XtdGearModels
     {
         class CLASS(Helmet_Airborne)
         {
-            label = "[KC] Airborne Helmets";
+            label = "Airborne Helmets";
             author = "Keeli Company Aux Team";
             options[] = {"camo", "Base", "CT", "CT_v2"};
 
