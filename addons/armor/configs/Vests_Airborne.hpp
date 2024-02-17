@@ -67,6 +67,7 @@ class CLASS(Vest_Airborne_CT_Light): CLASS(Vest_Basic)
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Ammo
         ""                                                            // Pauldron
     };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
 
     class ItemInfo: ItemInfo
     {
