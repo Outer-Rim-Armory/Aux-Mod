@@ -399,5 +399,259 @@ class XtdGearModels
                 class CT { label = "CT"; };
             };
         };
+
+        class CLASS(Uniforms_Ranks_Infantry)
+        {
+            label = "Infantry Rank Uniforms";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Base",
+                    "CR",
+                    "CT",
+                    "CT_Legacy",
+                    "SCT",
+                    "VCT",
+                    "CLC",
+                    "CPL",
+                    "CS",
+                    "CSS",
+                    "CSFC",
+                    "CMS",
+                    "CSM",
+                    "WO",
+                    "WO2",
+                    "WO3",
+                    "CL",
+                    "CL1",
+                    "Recruit_CamoBrown",
+                    "Recruit_CamoGrey",
+                    "Enlisted_CamoBrown",
+                    "Enlisted_CamoGrey",
+                    "NCO_CamoBrown",
+                    "NCO_CamoGrey",
+                    "Officer_CamoBrown",
+                    "Officer_CamoGrey"
+                };
+
+                class Base { label = "Base"; };
+                class CR { label = "CR"; };
+                class CT { label = "CT"; };
+                class CT_Legacy { label = "CT (Legacy)"; };
+                class SCT { label = "SCT"; };
+                class VCT { label = "VCT"; };
+                class CLC { label = "CLC"; };
+                class CPL { label = "CPL"; };
+                class CS { label = "CS"; };
+                class CSS { label = "CSS"; };
+                class CSFC { label = "CSFC"; };
+                class CMS { label = "CMS"; };
+                class CSM { label = "CSM"; };
+                class WO { label = "WO"; };
+                class WO2 { label = "WO2"; };
+                class WO3 { label = "WO3"; };
+                class CL { label = "CL"; };
+                class CL1 { label = "CL1"; };
+                class Recruit_CamoBrown { label = "RCT Brown"; };
+                class Recruit_CamoGrey { label = "RCT Grey"; };
+                class Enlisted_CamoBrown { label = "ENL Brown"; };
+                class Enlisted_CamoGrey { label = "ENL Grey"; };
+                class NCO_CamoBrown { label = "NCO Brown"; };
+                class NCO_CamoGrey { label = "NCO Grey"; };
+                class Officer_CamoBrown { label = "OFF Brown"; };
+                class Officer_CamoGrey { label = "OFF Grey"; };
+            };
+        };
+
+        class CLASS(Uniforms_Ranks_Geonosis)
+        {
+            label = "Geonosis Rank Uniforms";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Trooper",
+                    "NCO",
+                    "Officer",
+                    "Captain",
+                    "Commander"
+                };
+
+                class Trooper { label = "Trooper"; };
+                class NCO { label = "NCO"; };
+                class Officer { label = "Officer"; };
+                class Captain { label = "Captain"; };
+                class Commander { label = "Commander"; };
+            };
+        };
+
+        class CLASS(Uniforms_Insulated_Phase2)
+        {
+            label = "Insulated Uniforms (P2)";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Base",
+                    "CT"
+                };
+
+                class Base { label = "Base"; };
+                class CT { label = "CT"; };
+            };
+        };
+
+        class CLASS(Uniforms_Pilot)
+        {
+            label = "Pilot Uniforms";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "CXA",
+                    "CXE"
+                };
+
+                class CXA { label = "CXA"; };
+                class CXE { label = "CXE"; };
+            };
+        };
+
+        class CLASS(Uniforms_Tanker)
+        {
+            label = "Tanker Uniforms";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "CT"
+                };
+
+                class CT { label = "CT"; };
+            };
+        };
+
+        class CLASS(Uniforms_ARC)
+        {
+            label = "ARC Uniforms";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "CT",
+                    "NightShade",
+                    "Enlisted_CamoNight"
+                };
+
+                class CT { label = "CT"; };
+                class NightShade { label = "NightShade"; };
+                class Enlisted_CamoNight { label = "ENL Night"; };
+            };
+        };
+
+        class CLASS(Uniforms_ARF)
+        {
+            label = "ARF Uniforms";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "CT"
+                };
+
+                class CT { label = "CT"; };
+            };
+        };
+
+        class CLASS(Uniforms_Custom)
+        {
+            label = "Custom Uniforms";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Axel",
+                    "Burnt",
+                    "Defter",
+                    "Dexus",
+                    "Drake",
+                    "Joe",
+                    "Keeli",
+                    "Keeli_CamoBrown",
+                    "Keeli_CamoGrey",
+                    "Rat",
+                    "Sin",
+                    "Tyrant"
+                };
+
+                class Axel { label = "Axel"; };
+                class Burnt { label = "Burnt"; };
+                class Defter { label = "Defter"; };
+                class Dexus { label = "Dexus"; };
+                class Drake { label = "Drake"; };
+                class Joe { label = "Joe"; };
+                class Keeli { label = "Keeli"; };
+                class Keeli_CamoBrown { label = "Keeli Brown"; };
+                class Keeli_CamoGrey { label = "Keeli Grey"; };
+                class Rat { label = "Rat"; };
+                class Sin { label = "Sin"; };
+                class Tyrant { label = "Tyrant"; };
+            };
+        };
+
+        class CLASS(Uniforms_Insulated_Custom)
+        {
+            label = "Custom Insulated Uniforms (P2)";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Dexus",
+                    "Joe",
+                    "Keeli"
+                };
+
+                class Dexus { label = "Dexus"; };
+                class Joe { label = "Joe"; };
+                class Keeli { label = "Keeli"; };
+            };
+        };
     };
 };

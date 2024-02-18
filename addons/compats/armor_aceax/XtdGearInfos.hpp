@@ -18,5 +18,16 @@ class XtdGearInfos
         #include "configs\Helmets_ARC.hpp"
         #include "configs\Helmets_ARF.hpp"
         #include "configs\Helmets_BARC.hpp"
+
+        #include "configs\Uniforms_Ranks_Infantry.hpp"
+        #include "configs\Uniforms_Ranks_Geonosis.hpp"
+        #include "configs\Uniforms_P2_Insulated.hpp"
+        #include "configs\Uniforms_Pilot.hpp"
+        #include "configs\Uniforms_Tanker.hpp"
+        #include "configs\Uniforms_ARC.hpp"
+        #include "configs\Uniforms_ARF.hpp"
+
+        #include "configs\Uniforms_Custom.hpp"
+        #include "configs\Uniforms_Custom_Insulated.hpp"
     };
 };
