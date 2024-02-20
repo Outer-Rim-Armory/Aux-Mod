@@ -66,6 +66,84 @@ class XtdGearModels
             };
         };
 
+        class CLASS(Helmets_Phase2_Custom)
+        {
+            label = "Custom Helmets (P2)";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Axel",
+                    "Bob",
+                    "Burnt",
+                    "Dexus",
+                    "Evo",
+                    "Grey",
+                    "Harry",
+                    "Hazard",
+                    "Jackal",
+                    "Jaws",
+                    "Jester",
+                    "Joe",
+                    "Keeli",
+                    "Keeli_CamoBrown",
+                    "Keeli_CamoGrey",
+                    "Leon",
+                    "Lou",
+                    "Ox",
+                    "Patriot",
+                    "Rev",
+                    "Rodger",
+                    "Sage",
+                    "Scvrpio",
+                    "Sogi",
+                    "Splashdown",
+                    "Star",
+                    "Swoop",
+                    "Sytha",
+                    "Tugz",
+                    "Vortex",
+                    "Woods"
+                };
+
+                class Axel { label = "Axel"; };
+                class Bob { label = "Bob"; };
+                class Burnt { label = "Burnt"; };
+                class Dexus { label = "Dexus"; };
+                class Evo { label = "Evo"; };
+                class Grey { label = "Grey"; };
+                class Harry { label = "Harry"; };
+                class Hazard { label = "Hazard"; };
+                class Jackal { label = "Jackal"; };
+                class Jaws { label = "Jaws"; };
+                class Jester { label = "Jester"; };
+                class Joe { label = "Joe"; };
+                class Keeli { label = "Keeli"; };
+                class Keeli_CamoBrown { label = "Keeli Brown"; };
+                class Keeli_CamoGrey { label = "Keeli Grey"; };
+                class Leon { label = "Leon"; };
+                class Lou { label = "Lou"; };
+                class Ox { label = "Ox"; };
+                class Patriot { label = "Patriot"; };
+                class Rev { label = "Rev"; };
+                class Rodger { label = "Rodger"; };
+                class Sage { label = "Sage"; };
+                class Scvrpio { label = "Scvrpio"; };
+                class Sogi { label = "Sogi"; };
+                class Splashdown { label = "Splashdown"; };
+                class Star { label = "Star"; };
+                class Swoop { label = "Swoop"; };
+                class Sytha { label = "Sytha"; };
+                class Tugz { label = "Tugz"; };
+                class Vortex { label = "Vortex"; };
+                class Woods { label = "Woods"; };
+            };
+        };
+
         class CLASS(Uniforms_Custom)
         {
             label = "Custom Uniforms";
