@@ -88,6 +88,28 @@ class XtdGearModels
             };
         };
 
+        class CLASS(Helmets_Pilot_Phase2_Custom)
+        {
+            label = "Custom Pilot Helmets (P2)";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Bailout",
+                    "Blue",
+                    "Mischief"
+                };
+
+                class Bailout { label = "Bailout"; };
+                class Blue { label = "Blue"; };
+                class Mischief { label = "Mischief"; };
+            };
+        };
+
         class CLASS(Helmets_Tanker_Phase1_Custom)
         {
             label = "Custom Tanker Helmets (P1)";
