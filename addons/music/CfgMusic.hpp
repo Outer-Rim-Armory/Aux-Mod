@@ -163,6 +163,7 @@ class CfgMusic
 
     // HellDivers 2
     MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);
+    MUSIC(HD_Loadout_Theme,"Loadout Select",332,VideoGames);
 
 
     // Unknown
