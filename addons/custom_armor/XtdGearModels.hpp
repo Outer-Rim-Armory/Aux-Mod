@@ -88,6 +88,24 @@ class XtdGearModels
             };
         };
 
+        class CLASS(Helmets_Tanker_Phase1_Custom)
+        {
+            label = "Custom Tanker Helmets (P1)";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Grey"
+                };
+
+                class Grey { label = "Grey"; };
+            };
+        };
+
         class CLASS(Helmets_Phase2_Custom)
         {
             label = "Custom Helmets (P2)";
