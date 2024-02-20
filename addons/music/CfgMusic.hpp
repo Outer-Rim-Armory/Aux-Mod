@@ -161,6 +161,9 @@ class CfgMusic
     // Other
     MUSIC(Blank,"Stop Music",0,Other);
 
+    // HellDivers 2
+    MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);
+
 
     // Unknown
     class BNA_KC_AxeManTheme
