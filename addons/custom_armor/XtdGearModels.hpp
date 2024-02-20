@@ -88,48 +88,6 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Pilot_Phase2_Custom)
-        {
-            label = "Custom Pilot Helmets (P2)";
-            author = "Keeli Company Aux Team";
-            options[] = {"camo"};
-
-            class camo
-            {
-                changeInGame = FALSE;
-                values[] =
-                {
-                    "Bailout",
-                    "Blue",
-                    "Mischief"
-                };
-
-                class Bailout { label = "Bailout"; };
-                class Blue { label = "Blue"; };
-                class Mischief { label = "Mischief"; };
-            };
-        };
-
-        class CLASS(Helmets_Tanker_Phase2_Custom)
-        {
-            label = "Custom Tanker Helmets (P2)";
-            author = "Keeli Company Aux Team";
-            options[] = {"camo"};
-
-            class camo
-            {
-                changeInGame = FALSE;
-                values[] =
-                {
-                    "Catholic",
-                    "Grey"
-                };
-
-                class Catholic { label = "Catholic"; };
-                class Grey { label = "Grey"; };
-            };
-        };
-
         class CLASS(Helmets_Tanker_Phase1_Custom)
         {
             label = "Custom Tanker Helmets (P1)";
@@ -223,6 +181,70 @@ class XtdGearModels
                 class Tugz { label = "Tugz"; };
                 class Vortex { label = "Vortex"; };
                 class Woods { label = "Woods"; };
+            };
+        };
+
+        class CLASS(Helmets_Insulated_Phase2_Custom)
+        {
+            label = "Custom Snow Helmets (P2)";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Dexus",
+                    "Joe",
+                    "Keeli"
+                };
+
+                class Dexus { label = "Dexus"; };
+                class Joe { label = "Joe"; };
+                class Keeli { label = "Keeli"; };
+            };
+        };
+
+        class CLASS(Helmets_Pilot_Phase2_Custom)
+        {
+            label = "Custom Pilot Helmets (P2)";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Bailout",
+                    "Blue",
+                    "Mischief"
+                };
+
+                class Bailout { label = "Bailout"; };
+                class Blue { label = "Blue"; };
+                class Mischief { label = "Mischief"; };
+            };
+        };
+
+        class CLASS(Helmets_Tanker_Phase2_Custom)
+        {
+            label = "Custom Tanker Helmets (P2)";
+            author = "Keeli Company Aux Team";
+            options[] = {"camo"};
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Catholic",
+                    "Grey"
+                };
+
+                class Catholic { label = "Catholic"; };
+                class Grey { label = "Grey"; };
             };
         };
 
