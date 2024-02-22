@@ -381,5 +381,25 @@ class XtdGearModels
                 class Keeli { label = "Keeli"; };
             };
         };
+
+        class CLASS(Vests_Custom): CLASS(Helmets_Phase1_Custom)
+        {
+            label = "Custom Vests";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Keeli",
+                    "Ponds",
+                    "Rat"
+                };
+
+                class Keeli { label = "Keeli"; };
+                class Ponds { label = "Ponds"; };
+                class Rat { label = "Rat"; };
+            };
+        };
     };
 };

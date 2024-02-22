@@ -26,5 +26,11 @@ class XtdGearInfos
         #include "XtdGear\Uniforms_Tanker.hpp"
         #include "XtdGear\Uniforms_ARC.hpp"
         #include "XtdGear\Uniforms_ARF.hpp"
+
+        #include "XtdGear\Vests_Infantry.hpp"
+        #include "XtdGear\Vests_Airborne.hpp"
+        #include "XtdGear\Vests_Engineer.hpp"
+        #include "XtdGear\Vests_ARC.hpp"
+        #include "XtdGear\Vests_Commando.hpp"
     };
 };

@@ -591,5 +591,215 @@ class XtdGearModels
                 class CT { label = "CT"; };
             };
         };
+
+        class CLASS(Vests_Infantry): CLASS(Helmets_Phase1)
+        {
+            label = "Infantry Vests";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Basic",
+                    "Holster",
+                    "Assault",
+                    "Grenadier",
+                    "Heavy",
+                    "Heavy_v2",
+                    "Specialist",
+                    "Recon",
+                    "Recon_Survival",
+                    "Hazard",
+                    "Kama",
+                    "Tactical_Commander"
+                };
+
+                class Basic { label = "Basic"; };
+                class Holster { label = "Holster"; };
+                class Assault { label = "Assault"; };
+                class Grenadier { label = "Grenadier"; };
+                class Heavy { label = "Heavy"; };
+                class Heavy_v2 { label = "Heavy (v2)"; };
+                class Specialist { label = "Specialist"; };
+                class Recon { label = "Recon"; };
+                class Recon_Survival { label = "Survival"; };
+                class Hazard { label = "Hazard"; };
+                class Kama { label = "Kama"; };
+                class Tactical_Commander { label = "Tactical Commander"; };
+            };
+        };
+
+        class CLASS(Vests_Infantry_Ranked): CLASS(Helmets_Phase1)
+        {
+            label = "Infantry Ranked Vests";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "CLC",
+                    "CPL",
+                    "CS",
+                    "CSS",
+                    "CSFC",
+                    "CSM",
+                    "Officer",
+                    "Officer_v2",
+                    "WO",
+                    "CMD",
+                    "CMD_v2"
+                };
+
+                class CLC { label = "CLC"; };
+                class CPL { label = "CPL"; };
+                class CS { label = "CS"; };
+                class CSS { label = "CSS"; };
+                class CSFC { label = "CSFC"; };
+                class CSM { label = "CSM"; };
+                class Officer { label = "Officer"; };
+                class Officer_v2 { label = "Officer (v2)"; };
+                class WO { label = "WO"; };
+                class CMD { label = "CMD"; };
+                class CMD_v2 { label = "CMD (v2)"; };
+            };
+        };
+
+        class CLASS(Vests_Infantry_Medic): CLASS(Helmets_Phase1)
+        {
+            label = "Infantry Medic Vests";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Medic",
+                    "Senior",
+                    "Medic_v2",
+                    "Senior_v2",
+                    "Platoon"
+                };
+
+                class Medic { label = "Medic"; };
+                class Senior { label = "Senior"; };
+                class Medic_v2 { label = "Medic (v2)"; };
+                class Senior_v2 { label = "Senior (v2)"; };
+                class Platoon { label = "Platoon"; };
+            };
+        };
+
+        class CLASS(Vests_Airborne): CLASS(Helmets_Phase1)
+        {
+            label = "Airborne Vests";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "CT",
+                    "CT_Light",
+                    "CS",
+                    "CS_Light",
+                    "Officer"
+                };
+
+                class CT { label = "Trooper"; };
+                class CT_Light { label = "Trooper (Light)"; };
+                class CS { label = "NCO"; };
+                class CS_Light { label = "NCO (Light)"; };
+                class Officer { label = "Officer"; };
+            };
+        };
+
+        class CLASS(Vests_Airborne_Medic): CLASS(Helmets_Phase1)
+        {
+            label = "Airborne Medic Vests";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Trooper",
+                    "NCO"
+                };
+
+                class Trooper { label = "Trooper"; };
+                class NCO { label = "NCO"; };
+            };
+        };
+
+        class CLASS(Vests_Engineer): CLASS(Helmets_Phase1)
+        {
+            label = "Engineer Vests";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "CT",
+                    "CS",
+                    "Officer"
+                };
+
+                class CT { label = "Trooper"; };
+                class CS { label = "NCO"; };
+                class Officer { label = "Officer"; };
+            };
+        };
+
+        class CLASS(Vests_ARC): CLASS(Helmets_Phase1)
+        {
+            label = "ARC Vests";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Trooper",
+                    "Alternate",
+                    "Light",
+                    "NightShade",
+                    "GEO_Officer",
+                    "GEO_Captain"
+                };
+
+                class Trooper { label = "Trooper"; };
+                class Alternate { label = "Alternate"; };
+                class Light { label = "Light"; };
+                class NightShade { label = "NightShade"; };
+                class GEO_Officer { label = "GEO Officer"; };
+                class GEO_Captain { label = "GEO Captain"; };
+            };
+        };
+
+        class CLASS(Vests_Commando): CLASS(Helmets_Phase1)
+        {
+            label = "Commando Vests";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Basic",
+                    "SL",
+                    "EOD",
+                    "Sniper",
+                    "Tech"
+                };
+
+                class Basic { label = "Basic"; };
+                class SL { label = "Squad Leader"; };
+                class EOD { label = "EOD"; };
+                class Sniper { label = "Sniper"; };
+                class Tech { label = "Tech"; };
+            };
+        };
     };
 };

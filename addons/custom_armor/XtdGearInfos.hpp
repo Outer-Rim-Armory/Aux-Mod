@@ -21,5 +21,7 @@ class XtdGearInfos
 
         #include "XtdGear\Uniforms.hpp"
         #include "XtdGear\Uniforms_P2_Insulated.hpp"
+
+        #include "XtdGear\Vests.hpp"
     };
 };

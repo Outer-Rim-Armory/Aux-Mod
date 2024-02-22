@@ -14,18 +14,6 @@ class CLASS(Vest_Commando_Basic): CLASS(Vest_ARC)
     };
 };
 
-class CLASS(Vest_Commando_EOD): CLASS(Vest_Commando_Basic)
-{
-    displayName = "[KC] SF Commando EOD Vest";
-    model = "\SWLB_clones_spec\SWLB_clone_commando_eod_armor.p3d";
-    picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_eod_armor_k1_ca.paa";
-
-    class ItemInfo: ItemInfo
-    {
-        uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_eod_armor.p3d";
-    };
-};
-
 class CLASS(Vest_Commando_SL): CLASS(Vest_Commando_Basic)
 {
     displayName = "[KC] SF Commando SL Pauldron";
@@ -35,6 +23,18 @@ class CLASS(Vest_Commando_SL): CLASS(Vest_Commando_Basic)
     class ItemInfo: ItemInfo
     {
         uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_sl_armor.p3d";
+    };
+};
+
+class CLASS(Vest_Commando_EOD): CLASS(Vest_Commando_Basic)
+{
+    displayName = "[KC] SF Commando EOD Vest";
+    model = "\SWLB_clones_spec\SWLB_clone_commando_eod_armor.p3d";
+    picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_eod_armor_k1_ca.paa";
+
+    class ItemInfo: ItemInfo
+    {
+        uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_eod_armor.p3d";
     };
 };
 
