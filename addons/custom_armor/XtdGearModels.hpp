@@ -66,11 +66,9 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Pilot_Phase1_Custom)
+        class CLASS(Helmets_Pilot_Phase1_Custom): CLASS(Helmets_Phase1_Custom)
         {
             label = "Custom Pilot Helmets (P1)";
-            author = "Keeli Company Aux Team";
-            options[] = {"camo"};
 
             class camo
             {
@@ -88,11 +86,9 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Tanker_Phase1_Custom)
+        class CLASS(Helmets_Tanker_Phase1_Custom): CLASS(Helmets_Phase1_Custom)
         {
             label = "Custom Tanker Helmets (P1)";
-            author = "Keeli Company Aux Team";
-            options[] = {"camo"};
 
             class camo
             {
@@ -106,11 +102,9 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Phase2_Custom)
+        class CLASS(Helmets_Phase2_Custom): CLASS(Helmets_Phase1_Custom)
         {
             label = "Custom Helmets (P2)";
-            author = "Keeli Company Aux Team";
-            options[] = {"camo"};
 
             class camo
             {
@@ -184,11 +178,9 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Insulated_Phase2_Custom)
+        class CLASS(Helmets_Insulated_Phase2_Custom): CLASS(Helmets_Phase1_Custom)
         {
             label = "Custom Snow Helmets (P2)";
-            author = "Keeli Company Aux Team";
-            options[] = {"camo"};
 
             class camo
             {
@@ -206,11 +198,9 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Pilot_Phase2_Custom)
+        class CLASS(Helmets_Pilot_Phase2_Custom): CLASS(Helmets_Phase1_Custom)
         {
             label = "Custom Pilot Helmets (P2)";
-            author = "Keeli Company Aux Team";
-            options[] = {"camo"};
 
             class camo
             {
@@ -228,11 +218,9 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Tanker_Phase2_Custom)
+        class CLASS(Helmets_Tanker_Phase2_Custom): CLASS(Helmets_Phase1_Custom)
         {
             label = "Custom Tanker Helmets (P2)";
-            author = "Keeli Company Aux Team";
-            options[] = {"camo"};
 
             class camo
             {
@@ -248,11 +236,97 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_Custom)
+        class CLASS(Helmets_Phase12_Custom): CLASS(Helmets_Phase1_Custom)
+        {
+            label = "Custom Helmets (P1-2)";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Joe"
+                };
+
+                class Joe { label = "Joe"; };
+            };
+        };
+
+        class CLASS(Helmets_Engineer_Custom): CLASS(Helmets_Phase1_Custom)
+        {
+            label = "Custom Engineer Helmets";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Bob"
+                };
+
+                class Bob { label = "Bob"; };
+            };
+        };
+
+        class CLASS(Helmets_ARC_Custom): CLASS(Helmets_Phase1_Custom)
+        {
+            label = "Custom ARC Helmets";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Drake",
+                    "Hagrid",
+                    "Sin",
+                    "Tyrant"
+                };
+
+                class Drake { label = "Drake"; };
+                class Hagrid { label = "Hagrid"; };
+                class Sin { label = "Sin"; };
+                class Tyrant { label = "Tyrant"; };
+            };
+        };
+
+        class CLASS(Helmets_ARF_Custom): CLASS(Helmets_Phase1_Custom)
+        {
+            label = "Custom ARF Helmets";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Patriot",
+                    "Tugz"
+                };
+
+                class Patriot { label = "Patriot"; };
+                class Tugz { label = "Tugz"; };
+            };
+        };
+
+        class CLASS(Helmets_BARC_Custom): CLASS(Helmets_Phase1_Custom)
+        {
+            label = "Custom BARC Helmets";
+
+            class camo
+            {
+                changeInGame = FALSE;
+                values[] =
+                {
+                    "Rat"
+                };
+
+                class Rat { label = "Rat"; };
+            };
+        };
+
+        class CLASS(Uniforms_Custom): CLASS(Helmets_Phase1_Custom)
         {
             label = "Custom Uniforms";
-            author = "Keeli Company Aux Team";
-            options[] = {"camo"};
 
             class camo
             {
@@ -288,11 +362,9 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_Insulated_Custom)
+        class CLASS(Uniforms_Insulated_Custom): CLASS(Helmets_Phase1_Custom)
         {
             label = "Custom Insulated Uniforms (P2)";
-            author = "Keeli Company Aux Team";
-            options[] = {"camo"};
 
             class camo
             {
