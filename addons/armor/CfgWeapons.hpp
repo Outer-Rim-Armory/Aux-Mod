@@ -349,6 +349,13 @@ class CfgWeapons
         hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
         hiddenSelectionsTextures[] = {"\SWLB_clones_spec\data\helmet_co.paa", "\SWLB_clones_spec\data\helmet_co.paa"};
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"illum", "camo1"};
+            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
+            modelOff = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
+        };
     };
 
     class CLASS(NVG_Commando_Antenna): CLASS(NVG_Chip)
@@ -358,5 +365,12 @@ class CfgWeapons
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\SWLB_clones_spec\data\helmet_co.paa"};
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_antenna_ca.paa";
+
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelections[] = {"camo1"};
+            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
+            modelOff = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
+        };
     };
 };
