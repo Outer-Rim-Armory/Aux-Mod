@@ -23,6 +23,8 @@ GROUND_HOLDER(Helmet_Phase1_Lou,"INF P1 Helm ('Lou')");
 GROUND_HOLDER(Helmet_Phase1_LouPlasma,"INF P1 Helm ('Lou') [Plasma Visor]");
 GROUND_HOLDER(Helmet_Phase1_Ox,"INF P1 Helm ('Ox')");
 GROUND_HOLDER(Helmet_Phase1_Patriot,"INF P1 Helm ('Patriot')");
+GROUND_HOLDER(Helmet_Phase1_Rat,"INF P1 Helm ('Rat')");
+GROUND_HOLDER(Helmet_Phase1_RatCrimson,"INF P1 Helm ('Rat') [Crimson Visor]");
 GROUND_HOLDER(Helmet_Phase1_Rev,"INF P1 Helm ('Rev')");
 GROUND_HOLDER(Helmet_Phase1_Rodger,"INF P1 Helm ('Rodger')");
 GROUND_HOLDER(Helmet_Phase1_Sage,"INF P1 Helm ('Sage')");
