@@ -29,6 +29,7 @@ class XtdGearModels
                     "Lou",
                     "Ox",
                     "Patriot",
+                    "Rat",
                     "Rev",
                     "Rodger",
                     "Sage",
@@ -55,6 +56,7 @@ class XtdGearModels
                 class Lou { label = "Lou"; };
                 class Ox { label = "Ox"; };
                 class Patriot { label = "Patriot"; };
+                class Rat { label = "Rat"; };
                 class Rev { label = "Rev"; };
                 class Rodger { label = "Rodger"; };
                 class Sage { label = "Sage"; };

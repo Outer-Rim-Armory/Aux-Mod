@@ -18,6 +18,7 @@ class CLASS(Helmet_Phase1_Keeli): CLASS(Helmet_Phase1_Axel) { camo = "Keeli"; };
 class CLASS(Helmet_Phase1_Lou): CLASS(Helmet_Phase1_Axel) { camo = "Lou"; };
 class CLASS(Helmet_Phase1_Ox): CLASS(Helmet_Phase1_Axel) { camo = "Ox"; };
 class CLASS(Helmet_Phase1_Patriot): CLASS(Helmet_Phase1_Axel) { camo = "Patriot"; };
+class CLASS(Helmet_Phase1_Rat): CLASS(Helmet_Phase1_Axel) { camo = "Rat"; };
 class CLASS(Helmet_Phase1_Rev): CLASS(Helmet_Phase1_Axel) { camo = "Rev"; };
 class CLASS(Helmet_Phase1_Rodger): CLASS(Helmet_Phase1_Axel) { camo = "Rodger"; };
 class CLASS(Helmet_Phase1_Sage): CLASS(Helmet_Phase1_Axel) { camo = "Sage"; };
