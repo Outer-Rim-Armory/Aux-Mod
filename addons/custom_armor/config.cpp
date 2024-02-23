@@ -270,3 +270,5 @@ class CfgPatches
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
+#include "XtdGearModels.hpp"
+#include "XtdGearInfos.hpp"
