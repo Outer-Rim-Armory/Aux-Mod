@@ -126,7 +126,7 @@ if (ace_player getVariable ["BNA_KC_Jet_hover", false]) then
 };
 
 // Slow player down mid-air, used to simulate air-resistance
-private _airResistanceCoef = -0.1 * diag_deltaTime * BNA_KC_Jet_AirResistance;
+private _airResistanceCoef = -0.1 * diag_deltaTime * GVAR(airResistance);
 private _airResistance = _velocity vectorMultiply _airResistanceCoef;
 _velocity = _velocity vectorAdd _airResistance;
 

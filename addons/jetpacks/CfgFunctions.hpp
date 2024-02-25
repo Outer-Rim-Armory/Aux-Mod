@@ -48,22 +48,6 @@ class CfgFunctions
 
             class getFuelCan {};
         };
-
-        class Settings
-        {
-            file = "BNA_KC_Gear\Jetpacks\Data\Functions\Settings";
-            class jetKeybinds {};
-            class jetSettings {};
-        };
-    };
-};
-
-
-class Extended_PreInit_EventHandlers
-{
-    class BNA_KC_Jetpacks_Settings
-    {
-        init = "call BNAKC_Jetpacks_fnc_jetKeybinds; call BNAKC_Jetpacks_fnc_jetSettings;";
     };
 };
 

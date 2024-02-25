@@ -42,7 +42,7 @@ private _fuelCoef =
 for "_i" from 1 to _fuelCoef + 1 do
 {
     // Increase fuel cost for each movement action
-    _fuel = (_fuel - ((BASE_FUEL_COST * diag_deltaTime) * BNA_KC_Jet_FuelRate) max 0);
+    _fuel = (_fuel - ((BASE_FUEL_COST * diag_deltaTime) * GVAR(fuelDrainCoefficient)) max 0);
 };
 
 _jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuel, true];
