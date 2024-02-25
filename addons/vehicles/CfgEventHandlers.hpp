@@ -39,7 +39,7 @@ class Extended_Killed_EventHandlers
     {
         class GVAR(autoEject)
         {
-            killed = QUOTE(_this call FUNC(autoEject));
+            killedServer = QUOTE(_this call FUNC(autoEject));
         };
     };
 };
