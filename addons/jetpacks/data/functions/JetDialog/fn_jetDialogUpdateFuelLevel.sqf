@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Event handler to update the jetpack's fuel display whenever the amount of fuel changes

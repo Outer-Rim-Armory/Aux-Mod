@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Removed jetpack effects from a given unit.

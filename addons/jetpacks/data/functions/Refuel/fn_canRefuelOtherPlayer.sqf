@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Checks if a player can refuel another player's jetpack.

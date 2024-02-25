@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * OnLoad handler for the Jetpack fuel dialog (BNA_KC_Jet_Dialog).

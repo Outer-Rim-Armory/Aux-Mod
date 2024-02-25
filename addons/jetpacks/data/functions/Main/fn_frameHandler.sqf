@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Handles player movement while jetpacking. Deletes itself when player is no longer using a jetpack.

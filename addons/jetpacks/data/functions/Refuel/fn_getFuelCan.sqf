@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Checks if a given unit has a fuel can in their inventory, and returns the class name fuel level.

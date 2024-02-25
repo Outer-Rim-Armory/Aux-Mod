@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Returns current fuel level of a given jetpack, can optionally return value as percentage of current fuel / max fuel (range from 0..1).

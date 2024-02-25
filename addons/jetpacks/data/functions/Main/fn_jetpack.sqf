@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * "Controller" function for jetpack system. Handles spawning jetpack handlers if player can jetpack,

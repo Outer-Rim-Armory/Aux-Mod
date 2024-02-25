@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Uses fuel from a player's fuel can to refuel another player's jetpack.

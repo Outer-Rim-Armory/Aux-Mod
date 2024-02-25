@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * ACE Action modifier function to set the action's icon to the picture of the backpack the unit is wearing.

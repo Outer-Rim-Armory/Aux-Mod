@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Authors: DartRuffian
  * Plays sound effects while a player is using a jetpack. Sound effects stop being played when player is no longer using a jetpack.

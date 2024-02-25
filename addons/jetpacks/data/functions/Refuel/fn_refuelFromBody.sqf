@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Assigns jetpack refuel action to units, allows refueling from dead bodies.
@@ -79,7 +80,7 @@ private _refuelHandler =
     private _fuelDiff = round (_targetFuel - _targetNewFuel);
 
     private _fuelCanNewFuel = _fuelCanFuel + _fuelDiff; // Give difference to player
-    
+
     _player removeMagazine _fuelCan;
     _player addMagazine [_fuelCan, _fuelCanNewFuel];
 

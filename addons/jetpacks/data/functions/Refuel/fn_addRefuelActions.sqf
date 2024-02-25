@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Assigns jetpack refuel actions to a specified class(es). May be tweaked in the future, but serves its purpose for now.

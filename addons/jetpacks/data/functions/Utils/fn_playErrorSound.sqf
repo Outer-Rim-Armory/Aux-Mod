@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Plays the jetpack error sound if the given unit matches certain conditions.

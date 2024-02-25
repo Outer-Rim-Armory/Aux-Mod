@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Authors: Clock, modified by DartRuffian
  * Handles spawning the visual effects for jetpacks. Effects are deleted when unit can no longer jetpack or touches the ground.
