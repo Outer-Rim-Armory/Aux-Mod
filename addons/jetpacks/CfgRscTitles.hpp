@@ -1,12 +1,10 @@
+// TODO: Move to script_macros.hpp and update names
 // Window sizes, measured in % of screen size
 #define WINDOW_WIDTH 0.025
 #define WINDOW_HEIGHT 0.3
 
 #define WINDOW_X 0.95
 #define WINDOW_Y 0.5
-
-#define QUOTE(var1) #var1
-#define ARR_2(var1,var2) var1, var2
 
 // Center display formula - displays in center of screen
 // _x = (safeZoneX + (safeZoneWAbs / 2)) - (WINDOW_X / 2);
@@ -16,14 +14,14 @@ class RscTitles
 {
     class RscPicture;
 
-    class BNA_KC_Jet_Dialog
+    class BNA_KC_Jet_Dialog // TODO: Renamed to GVAR(FuelDisplay)
     {
         // See https://community.bistudio.com/wiki/Arma:_GUI_Configuration#HUDs
 
         // Custom HUD element for jetpack fuel
         idd = 8000; // Custom id, should be unique
         // enableSimulation = 1; // ?
-        movingEnable = 1; // Allow the player to move the display in the "Customize Layout" menu
+        movingEnable = TRUE; // Allow the player to move the display in the "Customize Layout" menu
         duration = 9.9999998e+010; // Make menu last "forever", will be closed if jetpack is removed
 
         // 0.5 second fate in/out

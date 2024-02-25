@@ -1,16 +1,16 @@
-// #include "script_component.hpp"
+#include "script_component.hpp"
 
 class CfgPatches
 {
-    class BNA_KC_jetpacks
+    class ADDON
     {
         author = "Keeli Company Aux Team";
-        name = "BNA_KC - Jetpacks";
-        requiredVersion = 2.14;
+        name = COMPONENT_NAME;
+        requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            "BNA_KC_armor",
-            "BNA_KC_objects_resupply"
+            QCLASS(armor),
+            QEGVAR(objects,resupply)
         };
         units[] =
         {
@@ -31,7 +31,7 @@ class CfgPatches
             "BNA_KC_Jetpack_FuelCan_Empty",
             "BNA_KC_Jetpack_FuelCan_Mag"
         };
-        // VERSION_CONFIG;
+        VERSION_CONFIG;
     };
 };
 

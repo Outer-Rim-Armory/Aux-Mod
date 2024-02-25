@@ -1,10 +1,10 @@
 class Extended_Init_EventHandlers
 {
-    class BNA_KC_Resupply_JetpackFuel
+    class CLASS(Resupply_JetpackFuel)
     {
-        class BNA_KC_Jetpacks_refuelAction
+        class GVAR(refuel)
         {
-            init = "_this#0 lockInventory true; [_this#0, 1] call BNAKC_Jetpacks_fnc_addRefuelActions";
+            init = QUOTE(_this#0 lockInventory true; [ARR_2(_this#0,1)] call BNAKC_jetpacks_fnc_addRefuelActions);
         };
     };
 };

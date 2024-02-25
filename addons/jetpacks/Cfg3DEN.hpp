@@ -4,23 +4,23 @@ class Cfg3DEN
     {
         class AttributeCategories
         {
-            class BNA_KC
+            class PREFIX
             {
                 displayName = "Keeli Company Aux";
-                collapsed = 1;
+                collapsed = TRUE;
                 class Attributes
                 {
-                    class BNA_KC_isJetpackRefuelStation
+                    class GVAR(isRefuelStation)
                     {
                         displayName = "Jetpack Refuel Station";
                         tooltip = "Set if the object should act as a jetpack refuel station";
-                        property = "BNA_KC_isJetpackRefuelStationID";
+                        property = QGVAR(isRefuelStationID);
 
                         control = "CheckboxNumber";
-                        defaultValue = 0;
+                        defaultValue = FALSE;
 
                         condition = "objectHasInventoryCargo";
-                        expression = "[_this, _value] call BNAKC_Jetpacks_fnc_addRefuelActions";
+                        expression = QUOTE([ARR_2(_this,_value)] call BNAKC_Jetpacks_fnc_addRefuelActions);
                     };
                 };
             };

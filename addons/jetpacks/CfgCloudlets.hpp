@@ -2,6 +2,7 @@ class CfgCloudlets
 {
     // https://community.bistudio.com/wiki/Arma_3:_Particle_Effects
     // Blastcore modifies the original flare effect, causes some issues with the jetpacks
+    // TODO: Move to particles addon
     class Flare2;
     class BNA_KC_Effects_FlareBase: Flare2
     {
