@@ -29,6 +29,6 @@
     "SLIDER",
     ["Auto Eject - Timeout", "The maximum amount of time to wait for a vehicle to hit the ground after being destroyed."],
     [QUOTE(MOD_NAME), "Vehicles"],
-    [0, 60, 15, 0],
+    [0, 60, 30, 0],
     TRUE
 ] call CBA_fnc_addSetting;
