@@ -1,7 +1,7 @@
 class CfgMagazines
 {
     class CA_Magazine;
-    class BNA_KC_Jetpack_FuelCan_Mag: CA_Magazine
+    class CLASS(Jetpack_FuelCan_Mag): CA_Magazine
     {
         SCOPE_PUBLIC;
 

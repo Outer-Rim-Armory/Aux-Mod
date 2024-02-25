@@ -2,11 +2,9 @@ class CfgWeapons
 {
     class CBA_MiscItem;
     class CBA_MiscItem_ItemInfo;
-    class BNA_KC_Jetpack_FuelCan_Empty: CBA_MiscItem
+    class CLASS(Jetpack_FuelCan_Empty): CBA_MiscItem
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
 
         SCOPE_PUBLIC;
 

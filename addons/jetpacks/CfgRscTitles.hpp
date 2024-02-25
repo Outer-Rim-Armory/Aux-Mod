@@ -14,7 +14,7 @@ class RscTitles
 {
     class RscPicture;
 
-    class BNA_KC_Jet_Dialog // TODO: Renamed to GVAR(FuelDisplay)
+    class CLASS(Jet_Dialog) // TODO: Renamed to GVAR(FuelDisplay)
     {
         // See https://community.bistudio.com/wiki/Arma:_GUI_Configuration#HUDs
 
@@ -84,7 +84,7 @@ class CfgUIGrids
     {
         class Variables
         {
-            class BNA_KC_Jet_Grid_jetpackFuel
+            class CLASS(Grid_jetpackFuel)
             {
                 // Variable for saving the position of the UI control
                 displayName = "Jetpack Fuel";
@@ -107,7 +107,7 @@ class CfgUIGrids
                 class Variables
                 {
                     // Default values (roughly on the right side of the screen)
-                    BNA_KC_Jet_Grid_jetpackFuel[]=
+                    CLASS(Grid_jetpackFuel)[]=
                     {
 
                         {

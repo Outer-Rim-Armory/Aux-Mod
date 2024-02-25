@@ -10,26 +10,17 @@ class CfgPatches
         requiredAddons[] =
         {
             QCLASS(armor),
-            QEGVAR(objects,resupply)
+            QEGVAR(objects,resupply),
+            "ace_refuel"
         };
         units[] =
         {
-            "BNA_KC_Jetpack_JT12",
-            "BNA_KC_Jetpack_JT12_LR",
-            "BNA_KC_Jetpack_CDV19",
-            "BNA_KC_Jetpack_CDV19_LR",
-            "BNA_KC_Jetpack_CDV21",
-            "BNA_KC_Jetpack_CDV21_LR",
-
-            "BNA_KC_Jetpack_Droid",
-            "BNA_KC_Jetpack_Droid_Rocket",
-
-            "BNA_KC_Resupply_JetpackFuel"
+            QCLASS(Resupply_JetpackFuel)
         };
         weapons[] =
         {
-            "BNA_KC_Jetpack_FuelCan_Empty",
-            "BNA_KC_Jetpack_FuelCan_Mag"
+            QCLASS(Jetpack_FuelCan_Empty),
+            QCLASS(Jetpack_FuelCan_Mag)
         };
         VERSION_CONFIG;
     };
