@@ -16,7 +16,7 @@ class CfgWeapons
 
         ACE_isTool = TRUE;
 
-        picture = "\BNA_KC_Gear\Jetpacks\Data\Textures\UI\BNA_KC_Jet_FuelCan.paa";
+        picture = QPATHTOF(data\ui\FuelCan_ca.paa);
         model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
 
         class ItemInfo: CBA_MiscItem_ItemInfo

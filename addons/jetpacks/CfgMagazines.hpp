@@ -14,7 +14,7 @@ class CfgMagazines
         BNA_KC_Jet_isFuelCan = TRUE;
         BNA_KC_Jet_fuelCanItem = "BNA_KC_Jetpack_FuelCan_Empty";
 
-        picture = "\BNA_KC_Gear\Jetpacks\Data\Textures\UI\BNA_KC_Jet_FuelCan.paa";
+        picture = QPATHTOF(data\ui\FuelCan_ca.paa);
         model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
     };
 };

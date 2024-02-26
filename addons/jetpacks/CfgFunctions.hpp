@@ -5,7 +5,7 @@ class CfgFunctions
     {
         class Main
         {
-            file = "BNA_KC_Gear\Jetpacks\Data\Functions\Main";
+            file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\Main";
             class jetpack {};
             class frameHandler {};
             class effectHandler {};
@@ -16,7 +16,7 @@ class CfgFunctions
 
         class JetDialog
         {
-            file = "BNA_KC_Gear\Jetpacks\Data\Functions\JetDialog";
+            file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\JetDialog";
             class jetDialogOnLoad {};
             class jetDialogUpdateFuelLevel {};
             class shouldShowJetDialog {};
@@ -26,7 +26,7 @@ class CfgFunctions
 
         class Utils
         {
-            file = "BNA_KC_Gear\Jetpacks\Data\Functions\Utils";
+            file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\Utils";
             class hasJetpack {};
             class canUseJetpack {};
             class getJetpackFuel {};
@@ -35,7 +35,7 @@ class CfgFunctions
 
         class Fuel
         {
-            file = "BNA_KC_Gear\Jetpacks\Data\Functions\Refuel";
+            file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\Refuel";
             class setJetpackFuel {};
             class addRefuelActions {};
 
