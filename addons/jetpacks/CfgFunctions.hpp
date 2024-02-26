@@ -44,8 +44,6 @@ class CfgFunctions
             class refuelOtherPlayer {};
             class canRefuelOtherPlayer {};
 
-            class addJetpackNameIcon {};
-
             class getFuelCan {};
         };
     };

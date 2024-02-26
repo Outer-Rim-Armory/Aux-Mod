@@ -28,7 +28,7 @@ class CfgVehicles
 
                     condition = "_this call BNAKC_Jetpacks_fnc_canRefuelFromBody";
                     statement = "_this call BNAKC_Jetpacks_fnc_refuelFromBody";
-                    modifierFunction = "_this call BNAKC_Jetpacks_fnc_addJetpackNameIcon";
+                    modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
                 };
 
                 class GVAR(refuelPlayer)
@@ -40,7 +40,7 @@ class CfgVehicles
 
                     condition = "_this call BNAKC_Jetpacks_fnc_canRefuelOtherPlayer";
                     statement = "_this call BNAKC_Jetpacks_fnc_refuelOtherPlayer";
-                    modifierFunction = "_this call BNAKC_Jetpacks_fnc_addJetpackNameIcon";
+                    modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
                 };
             };
         };
