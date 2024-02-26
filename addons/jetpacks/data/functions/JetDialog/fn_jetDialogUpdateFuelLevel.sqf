@@ -22,7 +22,7 @@ params ["_unit", "_jetpack", "_oldFuel", "_currentFuel"];
 // Remove display if it shouldn't be shown (i.e. piloting a vehicle, etc.)
 if !(_unit call BNAKC_Jetpacks_fnc_shouldShowJetDialog) exitWith
 {
-    ("BNA_KC_Jet_DialogLayer" call BIS_fnc_RscLayer) cutFadeOut 0.5;
+    (QGVAR(RscFuelDisplay_Layer) call BIS_fnc_RscLayer) cutFadeOut 0.5;
 };
 
 // Variables

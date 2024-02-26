@@ -1,19 +1,23 @@
-class CLASS(Jet_Dialog) // TODO: Renamed to GVAR(FuelDisplay)
+// Window sizes, measured in % of screen size
+#define WINDOW_WIDTH 0.025
+#define WINDOW_HEIGHT 0.3
+
+#define WINDOW_X 0.95
+#define WINDOW_Y 0.5
+
+class GVAR(RscFuelDisplay)
 {
     // See https://community.bistudio.com/wiki/Arma:_GUI_Configuration#HUDs
 
-    // Custom HUD element for jetpack fuel
-    idd = 8000; // Custom id, should be unique
-    // enableSimulation = 1; // ?
-    movingEnable = TRUE; // Allow the player to move the display in the "Customize Layout" menu
-    duration = 9.9999998e+010; // Make menu last "forever", will be closed if jetpack is removed
+    idd = 8000;
+    movingEnable = TRUE;
+    duration = 9.9999998e+010;
 
-    // 0.5 second fate in/out
     fadeIn = 0.5;
     fadeOut = 0.5;
 
-    onLoad = "[_this] call BNAKC_Jetpacks_fnc_jetDialogOnLoad;"; // Code to run when loaded
-    onUnload = ""; // Same thing but when unloaded
+    onLoad = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(RscFuelDisplay),_this select 0)];);
+    onUnload = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(RscFuelDisplay),nil)]);
 
     // List of all the UI elements
     controls[] =
@@ -25,10 +29,10 @@ class CLASS(Jet_Dialog) // TODO: Renamed to GVAR(FuelDisplay)
     // See https://community.bistudio.com/wiki/Arma:_GUI_Configuration#Controls
     class background: RscPicture
     {
-        idc = 9000; // Id for this control
-        moving = 1; // Control will be moved when the display is dragged
+        idc = 9000;
+        moving = TRUE;
 
-        text = "#(argb,8,8,3)color(0,0,0,0.7)"; // Procedural texture - https://community.bistudio.com/wiki/Procedural_Textures
+        text = "#(argb,8,8,3)color(0,0,0,0.7)";
 
         // Control size
         w = WINDOW_WIDTH;
