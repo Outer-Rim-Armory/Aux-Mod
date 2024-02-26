@@ -32,5 +32,6 @@ class CfgPatches
 #include "CfgFunctions.hpp"
 #include "CfgCloudlets.hpp"
 #include "CfgRscTitles.hpp"
+#include "CfgUIGrids.hpp"
 #include "Cfg3DEN.hpp"
 #include "CfgEventHandlers.hpp"
