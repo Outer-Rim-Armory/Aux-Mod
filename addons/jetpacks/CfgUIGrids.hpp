@@ -4,19 +4,13 @@ class CfgUIGrids
     {
         class Variables
         {
-            class GVAR(Grid_jetpackFuel)
+            class GVAR(Grid_fuelDisplay)
             {
                 // Variable for saving the position of the UI control
                 displayName = "Jetpack Fuel";
                 description = "Fuel display for jetpacks.";
                 preview = QPATHTOF(data\ui\FuelDisplay_preview_ca.paa);
-                saveToProfile[] = {0, 1};
-                /*
-                0: Save X coordinate
-                1: Save Y coordinate
-                2: Save width (if resizing is allowed)
-                3: Save height (if resizing is allowed)
-                */
+                saveToProfile[] = {IGUI_SAVEX, IGUI_SAVEY};
             };
         };
 
@@ -27,7 +21,7 @@ class CfgUIGrids
                 class Variables
                 {
                     // Default values (roughly on the right side of the screen)
-                    GVAR(Grid_jetpackFuel)[]=
+                    GVAR(Grid_fuelDisplay)[]=
                     {
 
                         {

@@ -39,8 +39,8 @@ class GVAR(RscFuelDisplay)
         h = WINDOW_HEIGHT;
 
         // Control position
-        x = QUOTE(profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_jetpackFuel_X),safeZoneX + WINDOW_X * safeZoneW)]); // Near the right side of the screen
-        y = QUOTE(profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_jetpackFuel_Y),(safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2))]); // Centers the bar vertically
+        x = QUOTE(profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_fuelDisplay_X),safeZoneX + WINDOW_X * safeZoneW)]); // Near the right side of the screen
+        y = QUOTE(profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_fuelDisplay_Y),(safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2))]); // Centers the bar vertically
     };
 
     class fuel: RscPicture
@@ -58,7 +58,7 @@ class GVAR(RscFuelDisplay)
         h = FUEL_HEIGHT;
 
         // Control position
-        x = QUOTE((profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_jetpackFuel_X),safeZoneX + WINDOW_X * safeZoneW)]) + ((WINDOW_WIDTH / 2) - (FUEL_WIDTH / 2)));
-        y = QUOTE((profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_jetpackFuel_Y),(safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2))]) + ((WINDOW_HEIGHT / 2) - (FUEL_HEIGHT / 2)));
+        x = QUOTE((profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_fuelDisplay_X),safeZoneX + WINDOW_X * safeZoneW)]) + ((WINDOW_WIDTH / 2) - (FUEL_WIDTH / 2)));
+        y = QUOTE((profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_fuelDisplay_Y),(safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2))]) + ((WINDOW_HEIGHT / 2) - (FUEL_HEIGHT / 2)));
     };
 };

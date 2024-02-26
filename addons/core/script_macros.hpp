@@ -178,3 +178,9 @@ ace_hearing_protection = 0.85
 // Booleans
 #define TRUE 1
 #define FALSE 0
+
+#define IGUI_SAVEX 0
+#define IGUI_SAVEY 1
+#define IGUI_SAVEW 2
+#define IGUI_SAVEH 3
+#define IGUI_SAVEALL IGUI_SAVEX, IGUI_SAVEY, IGUI_SAVEW, IGUI_SAVEH
