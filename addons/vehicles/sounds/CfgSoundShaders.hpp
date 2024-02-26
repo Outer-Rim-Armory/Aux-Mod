@@ -223,7 +223,7 @@ class CfgSoundShaders
     };
 
     class APC_Wheeled_01_Engine_RPM0_INT_SoundShader;
-    class CLASS(APC_Engine_RPM0_INT_SoundShader): APC_Wheeled_01_Engine_RPM0_INT_SoundShader
+    class CLASS(SoundShader_Reek_Engine_RPM0_INT): APC_Wheeled_01_Engine_RPM0_INT_SoundShader
     {
         samples[] =
         {
