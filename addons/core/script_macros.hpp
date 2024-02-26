@@ -44,6 +44,10 @@
 #define QQPATHTOF(var1) QUOTE(QPATHTOF(var1))
 #define QQPATHTOEF(var1,var2) QUOTE(QPATHTOEF(var1,var2))
 
+#define IGUI_GVAR(var1) DOUBLES(IGUI,GVAR(var1))
+#define QIGUI_GVAR(var1) QUOTE(IGUI_GVAR(var1))
+#define QQIGUI_GVAR(var1) QUOTE(QIGUI_GVAR(var1))
+
 #define SCOPE_PUBLIC scope = 2; \
 scopeArsenal = 2; \
 scopeCurator = 2

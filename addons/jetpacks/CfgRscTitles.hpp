@@ -51,8 +51,8 @@ class RscTitles
             h = WINDOW_HEIGHT;
 
             // Control position
-            x = QUOTE(profileNamespace getVariable [ARR_2('IGUI_BNA_KC_Jet_Grid_jetpackFuel_X',safeZoneX + WINDOW_X * safeZoneW)]); // Near the right side of the screen
-            y = QUOTE(profileNamespace getVariable [ARR_2('IGUI_BNA_KC_Jet_Grid_jetpackFuel_Y',(safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2))]); // Centers the bar vertically
+            x = QUOTE(profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_jetpackFuel_X),safeZoneX + WINDOW_X * safeZoneW)]); // Near the right side of the screen
+            y = QUOTE(profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_jetpackFuel_Y),(safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2))]); // Centers the bar vertically
         };
 
         class fuel: RscPicture
@@ -70,8 +70,8 @@ class RscTitles
             h = FUEL_HEIGHT;
 
             // Control position
-            x = QUOTE((profileNamespace getVariable [ARR_2('IGUI_BNA_KC_Jet_Grid_jetpackFuel_X',safeZoneX + WINDOW_X * safeZoneW)]) + ((WINDOW_WIDTH / 2) - (FUEL_WIDTH / 2)));
-            y = QUOTE((profileNamespace getVariable [ARR_2('IGUI_BNA_KC_Jet_Grid_jetpackFuel_Y',(safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2))]) + ((WINDOW_HEIGHT / 2) - (FUEL_HEIGHT / 2)));
+            x = QUOTE((profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_jetpackFuel_X),safeZoneX + WINDOW_X * safeZoneW)]) + ((WINDOW_WIDTH / 2) - (FUEL_WIDTH / 2)));
+            y = QUOTE((profileNamespace getVariable [ARR_2(QQIGUI_GVAR(Grid_jetpackFuel_Y),(safeZoneY + (safeZoneH / 2)) - (WINDOW_HEIGHT / 2))]) + ((WINDOW_HEIGHT / 2) - (FUEL_HEIGHT / 2)));
         };
     };
 };
@@ -84,11 +84,11 @@ class CfgUIGrids
     {
         class Variables
         {
-            class CLASS(Grid_jetpackFuel)
+            class GVAR(Grid_jetpackFuel)
             {
                 // Variable for saving the position of the UI control
                 displayName = "Jetpack Fuel";
-                description = "Fuel display for jetpacks";
+                description = "Fuel display for jetpacks.";
                 preview = QPATHTOF(data\ui\FuelDisplay_preview_ca.paa);
                 saveToProfile[] = {0, 1};
                 /*
@@ -107,7 +107,7 @@ class CfgUIGrids
                 class Variables
                 {
                     // Default values (roughly on the right side of the screen)
-                    CLASS(Grid_jetpackFuel)[]=
+                    GVAR(Grid_jetpackFuel)[]=
                     {
 
                         {
