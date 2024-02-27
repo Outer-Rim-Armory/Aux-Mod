@@ -9,6 +9,9 @@ class CLASS(Helmet_Phase12_Joe): CLASS(Helmet_Phase12_Base)
     };
 
     GVAR(isCustom) = TRUE;
+    EGVAR(armor,nvCanToggle) = TRUE;
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase12_Joe);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase12_JoeCrimson);
 };
 class CLASS(Helmet_Phase12_JoeCrimson): CLASS(Helmet_Phase12_Joe)
 {
