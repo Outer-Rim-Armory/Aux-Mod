@@ -20,7 +20,6 @@ class CfgFunctions
             class jetDialogUpdateFuelLevel {};
             class shouldShowJetDialog {};
             class jetDialogShowHide {};
-            class jetDialogShowHideCreateHandlers {};
         };
 
         class Utils
