@@ -100,7 +100,7 @@ class CfgVehicles
             class LoadVehicle: Impulse
             {
                 displayName = "Load Vehicle";
-                condition = QUOTE(ace_player isEqualTo currentPilot this and this call FUNC(vivCanLoad));
+                condition = QUOTE(ace_player isEqualTo currentPilot this and {this call FUNC(vivCanLoad)});
                 statement = QUOTE(this call FUNC(vivLoad));
             };
         };
