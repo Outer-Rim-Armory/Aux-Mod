@@ -66,7 +66,7 @@ class CLASS(Helmet_Phase1_CatholicKyber): CLASS(Helmet_Phase1_Catholic)
     SCOPE_HIDDEN;
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\phase1\Burnt_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\Catholic_camo1_co.paa),
         QPATHTOF(data\visors\Kyber_camo2_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
