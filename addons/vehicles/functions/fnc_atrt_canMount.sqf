@@ -9,7 +9,7 @@
  * 1: The unit attempting to ride the AT-RT <OBJECT>
  *
  * Return Value:
- * Whether the given unit can ride the AT-RT <BOOL>
+ * True if the AT-RT can be mounted, otherwise false  <BOOL>
  *
  * Examples:
  * [_atrt, ace_player] call FUNC(atrt_canMount);

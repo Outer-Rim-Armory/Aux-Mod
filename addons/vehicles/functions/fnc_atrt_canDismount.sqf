@@ -9,7 +9,7 @@
  * 1: The unit attempting to dismount the AT-RT <OBJECT>
  *
  * Return Value:
- * Whether the given unit can dismount the AT-RT <BOOL>
+ * True if the AT-RT can be dismounted, otherwise false <BOOL>
  *
  * Examples:
  * [_atrt, ace_player] call FUNC(atrt_canDismount);

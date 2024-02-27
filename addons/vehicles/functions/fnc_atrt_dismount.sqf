@@ -2,11 +2,10 @@
 /*
  * Author: 3AS
  * Edited by DartRuffian
- * Mounts a unit on an AT-RT
+ * Dismounts an AT-RT.
  *
  * Arguments:
  * 0: The AT-RT <OBJECT>
- * 1: The unit dismounting the AT-RT <OBJECT>
  *
  * Return Value:
  * None
