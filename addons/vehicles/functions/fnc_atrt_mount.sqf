@@ -25,9 +25,9 @@ private [];
 TRACE_2("fnc_atrt_mount",_atrt,_rider);
 
 _atrt enableAI "ANIM";
-_atrt setVariable [QGVAR(atrt_rider), _rider];
+_atrt setVariable ["TAS_ATRT_rider", _rider];
 _rider setVariable [QGVAR(atrt_riding), _atrt];
-_rider setVariable [QGVAR(atrt_isRiding), true, true];
+_rider setVariable ["TAS_ATRT_isRiding", true, true];
 
 _rider attachTo [_atrt, [0, 0, 0], "seat"];
 [_rider, "ChopperLight_C_LIn_H"] remoteExec ["switchMove"];
@@ -36,11 +36,11 @@ _atrt switchCamera cameraView;
 _rider remoteControl _atrt;
 inGameUISetEventHandler ["Action", "if ((_this select 3) isEqualTo ""BackFromUAV"") then {true};"]; // Disables "Release UAV Controls" action
 
-[_rider, "blockThrow", QGVAR(atrt_isRiding), true] call ace_common_fnc_statusEffect_set;
+[_rider, "blockThrow", "TAS_ATRT_isRiding", true] call ace_common_fnc_statusEffect_set;
 
 [{
     // Prevent animation if mounting and dismounting quickly
-    if (_this getVariable [QGVAR(atrt_isRiding), false]) then {
+    if (_this getVariable ["TAS_ATRT_isRiding", false]) then {
         [_this, "driver_Quadbike"] remoteExec ["switchMove"];
     }
 }, _rider, 1.5] call CBA_fnc_waitAndExecute;
