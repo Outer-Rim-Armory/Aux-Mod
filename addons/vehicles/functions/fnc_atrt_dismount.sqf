@@ -23,11 +23,12 @@ params [
 private ["_rider", "_direction", "_positionATL"];
 TRACE_1("fnc_atrt_dismount",_atrt);
 
-_rider = _atrt getVariable [QGVAR(rider), objNull];
+_rider = _atrt getVariable [QGVAR(atrt_rider), objNull];
 if (isNull _rider) exitWith {};
 
 _atrt disableAI "ANIM";
-_atrt setVariable [QGVAR(rider), objNull, true];
+_atrt setVariable [QGVAR(atrt_rider), objNull];
+_rider setVariable [QGVAR(atrt_riding), objNull];
 _rider setVariable [QGVAR(atrt_isRiding), false, true];
 
 _direction = direction _atrt;

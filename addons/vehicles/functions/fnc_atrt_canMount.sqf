@@ -27,7 +27,7 @@ TRACE_2("fnc_atrt_canMount",_atrt,_unit);
 if (!alive _atrt or {
     _unit isKindOf "3AS_ATRT_Base" or
     !(_unit call ace_common_fnc_isAwake) or
-    !(isNull (_atrt getVariable [QGVAR(rider), objNull]))
+    !(isNull (_atrt getVariable [QGVAR(atrt_rider), objNull]))
 }) exitWith {false};
 
 true;

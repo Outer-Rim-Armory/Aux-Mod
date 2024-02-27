@@ -24,6 +24,6 @@ params [
 private [];
 TRACE_2("fnc_atrt_canDismount",_atrt,_unit);
 
-if (_unit isEqualTo (_atrt getVariable [QGVAR(rider), objNull])) exitWith {true};
+if (_unit isEqualTo (_atrt getVariable [QGVAR(atrt_rider), objNull])) exitWith {true};
 
 false;

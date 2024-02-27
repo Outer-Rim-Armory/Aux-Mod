@@ -25,7 +25,8 @@ private [];
 TRACE_2("fnc_atrt_mount",_atrt,_rider);
 
 _atrt enableAI "ANIM";
-_atrt setVariable [QGVAR(rider), _rider, true];
+_atrt setVariable [QGVAR(atrt_rider), _rider];
+_rider setVariable [QGVAR(atrt_riding), _atrt];
 _rider setVariable [QGVAR(atrt_isRiding), true, true];
 
 _rider attachTo [_atrt, [0, 0, 0], "seat"];
