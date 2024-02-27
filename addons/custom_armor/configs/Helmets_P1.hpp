@@ -297,7 +297,7 @@ class CLASS(Helmet_Phase1_KeeliCrimson): CLASS(Helmet_Phase1_Keeli)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase1\Keeli_camo1_co.paa),
-        QPATHTOF(data\visors\Bacta_camo2_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
     hiddenSelectionsMaterials[] =
