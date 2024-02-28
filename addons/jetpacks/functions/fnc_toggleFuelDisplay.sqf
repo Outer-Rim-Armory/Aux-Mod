@@ -13,7 +13,7 @@
  * call FUNC(toggleFuelDisplay);
  */
 
-private ["_fnc_isNotCrew", "_jetpack", "_fuel"];
+private ["_fnc_isNotCrew", "_display"];
 TRACE_1("fnc_toggleFuelDisplay",ace_player);
 
 // Returns true when unit is either not in a vehicle,
@@ -38,12 +38,16 @@ if !(alive ace_player and
     false;
 };
 
-(QGVAR(RscFuelDisplay_Layer) call BIS_fnc_RscLayer) cutRsc [
-    QGVAR(RscFuelDisplay),
-    "PLAIN",
-    1,
-    false
-];
+_display = uiNamespace getVariable [QGVAR(RscFuelDisplay), displayNull];
+if (isNull _display) then {
+    (QGVAR(RscFuelDisplay_Layer) call BIS_fnc_RscLayer) cutRsc [
+        QGVAR(RscFuelDisplay),
+        "PLAIN",
+        1,
+        false
+    ];
+};
+
 
 ace_player call FUNC(updateFuelDisplay);
 
