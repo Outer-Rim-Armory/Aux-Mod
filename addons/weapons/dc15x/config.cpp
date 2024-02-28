@@ -11,8 +11,8 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
+            QGVAR(accessories),
             "JLTS_weapons_DC15X",
-            "Aux501_Patch_Accessories",
             "JLTS_weapons_DC17SA",
             "ace_laserpointer"
         };
@@ -21,8 +21,7 @@ class CfgPatches
         {
             QCLASS(DC15X_Base),
             QCLASS(DC15X),
-            QCLASS(DC15X_Fried),
-            QCLASS(DC15X_Scope)
+            QCLASS(DC15X_Fried)
         };
         VERSION_CONFIG;
     };

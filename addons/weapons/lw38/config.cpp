@@ -11,7 +11,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(weapons_dc15a),
+            QGVAR(dc15a),
             "LF_Weapon_Unit_lw38m",
             "LF_Weapon_Unit_Westar45"
         };

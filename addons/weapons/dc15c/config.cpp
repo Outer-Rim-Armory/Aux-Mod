@@ -11,10 +11,10 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(weapons_dc15s),
+            QGVAR(dc15s),
+            QGVAR(accessories),
             "3AS_Main",
             "3AS_Weapons_DC15C",
-            "Aux501_Patch_Accessories",
             "JLTS_weapons_DC17SA",
             "ace_laserpointer"
         };
