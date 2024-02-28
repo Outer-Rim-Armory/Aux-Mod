@@ -36,7 +36,7 @@ if !(_fuelCan isKindOf "CA_Magazine") then
 };
 
 private _fuelCanMaxFuel = [(configFile >> "CfgMagazines" >> _fuelCan), "count", 400] call BIS_fnc_returnConfigEntry;
-private _targetFuel = _target call BNA_KC_Jetpacks_fnc_getJetpackFuel;
+private _targetFuel = _target call FUNC(getFuel);
 
 private _fuelToRefill = round (((_fuelCanFuel + _targetFuel) min _fuelCanMaxFuel) - _fuelCanFuel);
 private _refuelTime = _fuelToRefill / REFUEL_PER_SECOND;
@@ -57,7 +57,7 @@ private _refuelHandler =
 
     if (_player getVariable ["BNA_KC_Jetpack_isRefuelingFromBody", false] isEqualTo false) exitWith { call _removeSelf; };
     if ([_player, true] call BNA_KC_Jetpacks_fnc_getFuelCan isEqualTo ["", 0]) exitWith { call _removeSelf; };
-    if ([_target, true] call BNA_KC_Jetpacks_fnc_getJetpackFuel == 0) exitWith { call _removeSelf; };
+    if ([_target, true] call FUNC(getFuel) == 0) exitWith { call _removeSelf; };
 
     [_player, true] call BNA_KC_Jetpacks_fnc_getFuelCan params ["_fuelCan", "_fuelCanFuel"];
     if !(_fuelCan isKindOf "CA_Magazine") then
@@ -73,7 +73,7 @@ private _refuelHandler =
 
         _player addMagazine [_fuelCan, 1];
     };
-    private _targetFuel = _target call BNA_KC_Jetpacks_fnc_getJetpackFuel;
+    private _targetFuel = _target call FUNC(getFuel);
 
     // Remove up to REFUEL_PER_SECOND fuel units, cap at 0 in case it goes negative
     private _targetNewFuel = (_targetFuel - REFUEL_PER_SECOND) max 0;
@@ -84,7 +84,7 @@ private _refuelHandler =
     _player removeMagazine _fuelCan;
     _player addMagazine [_fuelCan, _fuelCanNewFuel];
 
-    backpackContainer _target setVariable ["BNA_KC_Jet_currentFuel", _targetNewFuel]; // Set fuel manually since refuel func updates display locally
+    backpackContainer _target setVariable [QGVAR(fuel), _targetNewFuel]; // Set fuel manually since refuel func updates display locally
 };
 
 

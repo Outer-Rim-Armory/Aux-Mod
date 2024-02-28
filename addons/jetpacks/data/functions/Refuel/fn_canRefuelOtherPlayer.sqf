@@ -21,6 +21,6 @@ params ["_target", "_player", "_params"];
 (_player call ace_common_fnc_isEngineer) and
 !([_player, false, true] call BNA_KC_Jetpacks_fnc_getFuelCan isEqualTo ["", 0]) and
 _target call BNA_KC_Jetpacks_fnc_hasJetpack and
-[_target, true] call BNA_KC_Jetpacks_fnc_getJetpackFuel < 1 and
+[_target, true] call FUNC(getFuel) < 1 and
 alive _target and
 _player distance _target <= 1.75;

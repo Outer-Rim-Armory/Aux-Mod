@@ -18,7 +18,6 @@ class CfgFunctions
         {
             file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\Utils";
             class canUseJetpack {};
-            class getJetpackFuel {};
             class playErrorSound {};
         };
 

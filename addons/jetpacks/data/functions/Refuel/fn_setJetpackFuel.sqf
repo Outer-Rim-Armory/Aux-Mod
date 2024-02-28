@@ -36,11 +36,11 @@ else
 // Don't set fuel value for non-jetpacks
 if (GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> QGVAR(isJetpack),0) isEqualTo 0) exitWith {};
 
-private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> "BNA_KC_Jet_fuel",100);
+private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpackClass >> QGVAR(fuel),100);
 _fuelAmount = _fuelAmount min _maxFuel; // Prevents the jetpack being "over-filled"
 _fuelAmount = _fuelAmount max 0; // Prevents fuel from going negative
 
-_jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuelAmount, true];
+_jetpack setVariable [QGVAR(fuel), _fuelAmount, true];
 if (_sendEvent) then
 {
     [QGVAR(fuelChanged), [ace_player, _jetpack, _oldFuel, _fuel]] call CBA_fnc_localEvent;

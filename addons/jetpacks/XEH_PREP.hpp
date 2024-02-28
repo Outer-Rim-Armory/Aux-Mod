@@ -1,3 +1,4 @@
+PREP(getFuel);
 PREP(hasJetpack);
 PREP(modifyInteraction);
 PREP(toggleFuelDisplay);

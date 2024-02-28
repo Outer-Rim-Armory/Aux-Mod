@@ -17,12 +17,12 @@
 params ["_unit"];
 
 private _jetpack = backpackContainer _unit;
-private _maxFuel = [_jetpack] call BNA_KC_Jetpacks_fnc_getJetpackFuel;
+private _maxFuel = _jetpack call FUNC(getFuel);
 
 private _canJetpack =
 (
     _unit call BNA_KC_Jetpacks_fnc_hasJetpack and       // True if unit is wearing a KC jetpack
-    _jetpack getVariable ["BNA_KC_Jet_currentFuel", _maxFuel] > 0 and // True if unit has any amount of fuel in a jetpack
+    _jetpack getVariable [QGVAR(fuel), _maxFuel] > 0 and // True if unit has any amount of fuel in a jetpack
     isNull (objectParent _unit) and           // True if unit is not in a vehicle, faster than vehicle _unit
     lifeState _unit != "INCAPACITATED" and    // True if unit is uncon
     !(surfaceIsWater getPos _unit and {((getPosASLW _unit) select 2) < 0.2}) and // True if unit is not in water

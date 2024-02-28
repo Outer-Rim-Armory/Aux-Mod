@@ -52,7 +52,7 @@ class CfgVehicles
         JLTS_isJumppack = FALSE;
 
         GVAR(isJetpack) = TRUE;
-        BNA_KC_Jet_fuel = 100;
+        GVAR(fuel) = 100;
         BNA_KC_Jet_speed = 2;     // Jetpack speed, effects how fast you move in the air
         BNA_KC_Jet_strength = 15; // Jetpack strength, effects fast the player rises
 
