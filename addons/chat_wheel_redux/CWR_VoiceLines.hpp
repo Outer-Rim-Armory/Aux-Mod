@@ -89,4 +89,16 @@ class CWR_VoiceLines
             "ChatWheelRedux\Data\Audio\Sorry\SorrySir.wss"
         };
     };
+
+    class Follow
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\Follow\AlrightSquadFollowMe.wss",
+            "ChatWheelRedux\Data\Audio\Follow\AlrightSquadFollowMe2.wss",
+            "ChatWheelRedux\Data\Audio\Follow\RallyUpAndFollowMe.wss",
+            "ChatWheelRedux\Data\Audio\Follow\SquadWithMe.wss",
+            "ChatWheelRedux\Data\Audio\Follow\WithMeBrothers.wss"
+        };
+    };
 };
