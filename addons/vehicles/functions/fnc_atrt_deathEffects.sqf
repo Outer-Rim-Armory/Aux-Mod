@@ -39,8 +39,8 @@ _sparks setParticleClass "3AS_ImpactSparksPlasma1";
 _sparks setDropInterval 0.05;
 _sparks attachTo [_atrt, [0, 0, 0], _memPoint];
 
-_effects = _atrt getVariable [QGVAR(atrt_deathEffects), []];
+_effects = _atrt getVariable ["TAS_ATRT_effects", []];
 _effects append [_smoke, _sparks];
 
-_atrt setVariable [QGVAR(atrt_deathEffects), _effects, true];
+_atrt setVariable ["TAS_ATRT_effects", _effects, true];
 _effects;
