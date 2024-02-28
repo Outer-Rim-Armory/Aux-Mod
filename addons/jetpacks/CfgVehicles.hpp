@@ -10,8 +10,8 @@ class CfgVehicles
                 displayName = "Clear Effects";
                 icon = "";
 
-                condition = "!(_player getVariable ['BNA_KC_Jet_effectSources', []] isEqualTo []) and isTouchingGround _player";
-                statement = "_player call BNA_KC_Jetpacks_fnc_deleteEffects";
+                condition = QUOTE(isTouchingGround _player and {(_player getVariable [ARR_2(QQGVAR(effectSources),[])] isNotEqualTo [])});
+                statement = QUOTE(_player call FUNC(clearEffects));
             };
         };
         class ACE_Actions

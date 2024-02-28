@@ -58,7 +58,7 @@ if (_totalEffects + (count _effectTypes * count _effectPoints) > GVAR(particleLi
     {
         params ["_unit", "_effectPoints", "_effectTypes", "_lightColor"];
 
-        private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
+        private _effectSources = _unit getVariable [QGVAR(effectSources), []];
 
         // Spawn effects for each effect point
         {
@@ -99,7 +99,7 @@ if (_totalEffects + (count _effectTypes * count _effectPoints) > GVAR(particleLi
         } forEach _effectPoints;
 
         // Save for later removal upon landing by the jetpack handler
-        _unit setVariable ["BNA_KC_Jet_effectSources", _effectSources, true];
+        _unit setVariable [QGVAR(effectSources), _effectSources, true];
 
         // Update total effects, used for setting a cap of jetpack effects
         private _totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];

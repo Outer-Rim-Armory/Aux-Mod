@@ -9,7 +9,6 @@ class CfgFunctions
             class jetpack {};
             class frameHandler {};
             class effectHandler {};
-            class deleteEffects {};
             class soundHandler {};
             class fuelHandler {};
         };

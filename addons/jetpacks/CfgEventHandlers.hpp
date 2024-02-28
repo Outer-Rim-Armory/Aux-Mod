@@ -40,7 +40,7 @@ class Extended_Killed_EventHandlers
     {
         class GVAR(clearEffects)
         {
-            killed = QUOTE(_this call BNA_KC_Jetpacks_fnc_deleteEffects);
+            killed = QUOTE(_this call FUNC(clearEffects));
         };
     };
 };
@@ -51,7 +51,7 @@ class Extended_Deleted_EventHandlers
     {
         class GVAR(clearEffects)
         {
-            deleted = QUOTE(_this call BNA_KC_Jetpacks_fnc_deleteEffects);
+            deleted = QUOTE(_this call FUNC(clearEffects));
         };
     };
 };

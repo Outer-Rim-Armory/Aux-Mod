@@ -39,7 +39,7 @@ if (!(ace_player call BNA_KC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace
      // Wait a bit before removing effects, makes it look nicer
     [
         {
-            ace_player call BNA_KC_Jetpacks_fnc_deleteEffects;
+            ace_player call FUNC(clearEffects);
             [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler;
             BNA_KC_Jet_JetpackSoundHandle = nil;
         },

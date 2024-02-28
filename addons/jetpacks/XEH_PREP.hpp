@@ -1,3 +1,4 @@
+PREP(clearEffects);
 PREP(getFuel);
 PREP(hasJetpack);
 PREP(modifyInteraction);

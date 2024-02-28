@@ -32,7 +32,7 @@ _fnc_isNotCrew = {
 if !(alive ace_player and
     {!(ace_player call EFUNC(core,inFeatureCamera))} and
     {ace_player call _fnc_isNotCrew} and
-    {ace_player call BNA_KC_Jetpacks_fnc_hasJetpack}
+    {ace_player call FUNC(hasJetpack)}
 ) exitWith {
     (QGVAR(RscFuelDisplay_Layer) call BIS_fnc_RscLayer) cutFadeOut 0.5;
     false;
