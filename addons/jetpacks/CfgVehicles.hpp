@@ -52,9 +52,9 @@ class CfgVehicles
         JLTS_isJumppack = FALSE;
 
         GVAR(isJetpack) = TRUE;
-        GVAR(fuel) = 100;
-        BNA_KC_Jet_speed = 2;     // Jetpack speed, effects how fast you move in the air
-        BNA_KC_Jet_strength = 15; // Jetpack strength, effects fast the player rises
+        GVAR(fuel) = JETPACK_FUEL_DEFAULT;
+        BNA_KC_Jet_speed = JETPACK_SPEED_DEFAULT;     // Jetpack speed, effects how fast you move in the air
+        BNA_KC_Jet_strength = JETPACK_STRENGTH_DEFAULT; // Jetpack strength, effects fast the player rises
 
         // Effects
         BNA_KC_Jet_effectPoints[] = {"effect_left", "effect_right"}; // Points to spawn effects, these come from the JLTS model
