@@ -184,3 +184,5 @@ ace_hearing_protection = 0.85
 #define IGUI_SAVEW 2
 #define IGUI_SAVEH 3
 #define IGUI_SAVEALL IGUI_SAVEX, IGUI_SAVEY, IGUI_SAVEW, IGUI_SAVEH
+
+#define CLAMP(var1,lower,upper) lower max (var1 min upper)

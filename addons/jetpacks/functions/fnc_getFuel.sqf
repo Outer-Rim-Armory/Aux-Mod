@@ -1,42 +1,36 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Returns current fuel level of a given jetpack, can optionally return value as percentage of current fuel / max fuel (range from 0..1).
+ * Sets the fuel level of a unit's jetpack.
+ * Can optionally return fuel level as a percentage of max fuel.
  *
  * Arguments:
- * 0: Entity to check, can be unit or backpackContainer <OBJECT>
+ * 0: Unit to check <OBJECT>
  * 1: Return value as percentage (optional, default: false) <BOOL>
  *
  * Return Value:
  * Remaining fuel <NUMBER>
  *
  * Example:
- * (backpackContainer ace_player) call FUNC(getFuel);
  * [ace_player, true] call FUNC(getFuel);
+ *
+ * Public: Yes
  */
 
 params [
-    ["_entity", objNull, [objNull]],
+    ["_unit", objNull, [objNull]],
     ["_returnPercent", false, [false]]
 ];
-private ["_jetpack", "_jetpackClass", "_maxFuel", "_fuel"];
-TRACE_2("fnc_getFuel",_entity,_returnPercent);
+private ["_jetpack", "_maxFuel", "_fuel"];
+TRACE_2("fnc_getFuel",_unit,_returnPercent);
 
-if (isNull _entity) exitWith {};
+_jetpack = backpackContainer _unit;
 
-_jetpack = objNull;
-_jetpackClass = "";
+if (isNull _unit or {!(_unit call FUNC(hasJetpack))}) exitWith {"Failed in getFuel"};
 
-if (_entity isKindOf "CAManBase") then {
-    _jetpack = backpackContainer _entity;
-    _jetpackClass = backpack _entity;
-} else {
-    _jetpack = _entity;
-    _jetpackClass = typeOf _entity;
-};
-
-_maxFuel = getNumber (configFile >> "CfgVehicles" >> _jetpackClass >> QGVAR(fuel));
+_maxFuel = _jetpack getVariable [QGVAR(maxFuel), 100];
 _fuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];
+
 _jetpack setVariable [QGVAR(fuel), _fuel, true];
 _jetpack setVariable [QGVAR(maxFuel), _maxFuel, true];
 

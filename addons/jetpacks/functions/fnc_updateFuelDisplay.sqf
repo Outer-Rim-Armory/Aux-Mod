@@ -26,7 +26,7 @@ _ctrlFuel = _display displayCtrl IDC_FUELDISPLAY_FUEL;
 _ctrlFuelPos = ctrlPosition _ctrlFuel;
 
 // Decrease height
-_heightModifier = FUELDISPLAY_FUEL_H * ([_jetpack, true] call FUNC(getFuel));
+_heightModifier = FUELDISPLAY_FUEL_H * ([_unit, true] call FUNC(getFuel));
 _ctrlFuel ctrlSetPositionH _heightModifier;
 
 // Move display down

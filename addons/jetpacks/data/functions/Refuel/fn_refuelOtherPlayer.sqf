@@ -76,7 +76,7 @@ private _refuelHandler =
         _player addMagazine [_fuelCan, _fuelCanNewFuel];
     };
 
-    [_target, _targetNewFuel, false] call BNA_KC_Jetpacks_fnc_setJetpackFuel;
+    [_target, _targetNewFuel, false] call BNA_KC_Jetpacks_fnc_setFuel;
     [QGVAR(fuelChanged), [_target, backpackContainer _target, _targetFuel, _targetNewFuel], _target] call CBA_fnc_targetEvent;
 };
 

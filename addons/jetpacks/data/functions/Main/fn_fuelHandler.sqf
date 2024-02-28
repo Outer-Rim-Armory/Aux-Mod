@@ -24,7 +24,7 @@ if (!(ace_player call BNA_KC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace
 // Fuel levels are stored in the backpack object, makes it a bit more realistic
 private _jetpack = backpackContainer ace_player;
 
-private _fuel = _jetpack call FUNC(getFuel);
+private _fuel = ace_player call FUNC(getFuel);
 private _oldFuel = _fuel;
 
 private _fuelCoef =
@@ -46,5 +46,4 @@ for "_i" from 1 to _fuelCoef + 1 do
     _fuel = (_fuel - ((BASE_FUEL_COST * diag_deltaTime) * GVAR(fuelDrainCoefficient)) max 0);
 };
 
-_jetpack setVariable [QGVAR(fuel), _fuel, true];
-[QGVAR(fuelChanged), [ace_player, _jetpack, _oldFuel, _fuel]] call CBA_fnc_localEvent;
+[ace_player, _fuel] call FUNC(setFuel);

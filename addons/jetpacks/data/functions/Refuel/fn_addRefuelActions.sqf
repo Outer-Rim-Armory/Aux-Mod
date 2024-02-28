@@ -32,7 +32,7 @@ private _refuelAction =
 
         private _jetpack = backpack _player;
         private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> QGVAR(fuel),100);
-        [_player, _maxFuel] call BNA_KC_Jetpacks_fnc_setJetpackFuel; // JetpackRefuel can take either the unit or a backpack object
+        [_player, _maxFuel] call BNA_KC_Jetpacks_fnc_setFuel;
     },
     {
         // Condition

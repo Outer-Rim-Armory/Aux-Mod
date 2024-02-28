@@ -9,3 +9,5 @@
 
 #define FUELDISPLAY_FUEL_W FUELDISPLAY_W * 0.5
 #define FUELDISPLAY_FUEL_H FUELDISPLAY_H * 0.95
+
+#define IS_JETPACK(var1) getNumber (configFile >> "CfgVehicles" >> var1 >> QGVAR(isJetpack)) isEqualTo TRUE

@@ -24,7 +24,6 @@ class CfgFunctions
         class Fuel
         {
             file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\Refuel";
-            class setJetpackFuel {};
             class addRefuelActions {};
 
             class refuelFromBody {};

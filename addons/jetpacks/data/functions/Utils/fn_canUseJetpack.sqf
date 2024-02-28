@@ -17,7 +17,7 @@
 params ["_unit"];
 
 private _jetpack = backpackContainer _unit;
-private _maxFuel = _jetpack call FUNC(getFuel);
+private _maxFuel = _unit call FUNC(getFuel);
 
 private _canJetpack =
 (
