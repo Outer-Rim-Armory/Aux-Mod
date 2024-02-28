@@ -11,8 +11,8 @@ class CfgMagazines
         count = 400; // Amount of fuel that can be carried
         mass = 60;
 
-        BNA_KC_Jet_isFuelCan = TRUE;
-        BNA_KC_Jet_fuelCanItem = "BNA_KC_Jetpack_FuelCan_Empty";
+        GVAR(isFuelCan) = TRUE;
+        GVAR(fuelCanItem) = QCLASS(Jetpack_FuelCan_Empty);
 
         picture = QPATHTOF(data\ui\FuelCan_ca.paa);
         model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";

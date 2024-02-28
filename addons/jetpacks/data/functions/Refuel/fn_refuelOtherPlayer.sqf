@@ -66,8 +66,8 @@ private _refuelHandler =
         private _fuelCanItem =
         [
             (configFile >> "CfgMagazines" >> _fuelCan),
-            "BNA_KC_Jet_fuelCanItem",
-            "BNA_KC_Jetpack_FuelCan_Empty"
+            QGVAR(fuelCanItem),
+            QCLASS(Jetpack_FuelCan_Empty)
         ] call BIS_fnc_returnConfigEntry;
         _player addItem _fuelcanItem;
     }

@@ -22,7 +22,7 @@ private _fuelLevel = 0;
 // Search for partially filled cans
 {
     _x params ["_magazine", "_ammoCount"];
-    private _isCan = [(configFile >> "CfgMagazines" >> _magazine), "BNA_KC_Jet_isFuelCan", 0] call BIS_fnc_returnConfigEntry;
+    private _isCan = [(configFile >> "CfgMagazines" >> _magazine), QGVAR(isFuelCan), 0] call BIS_fnc_returnConfigEntry;
     if (_ignoreFull) then
     {
         private _maxFuel =
@@ -45,7 +45,7 @@ if !(_ignoreEmpty) then
 {
     // Search for empty fuel cans
     {
-        private _isCan = [(configFile >> "CfgWeapons" >> _x), "BNA_KC_Jet_isFuelCan", 0] call BIS_fnc_returnConfigEntry;
+        private _isCan = [(configFile >> "CfgWeapons" >> _x), QGVAR(isFuelCan), 0] call BIS_fnc_returnConfigEntry;
         if (_isCan isEqualTo 1) exitWith { _canClass = _x; };
     } forEach items _unit;
 };

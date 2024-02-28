@@ -30,8 +30,8 @@ if !(_fuelCan isKindOf "CA_Magazine") then
     _fuelCan =
     [
         (configFile >> "CfgWeapons" >> _fuelCan),
-        "BNA_KC_Jet_fuelCanMag",
-        "BNA_KC_Jetpack_FuelCan_Mag"
+        QGVAR(fuelCanMag),
+        QCLASS(Jetpack_FuelCan_Mag)
     ] call BIS_fnc_returnConfigEntry;
 };
 
@@ -67,8 +67,8 @@ private _refuelHandler =
         _fuelCan =
         [
             (configFile >> "CfgWeapons" >> _fuelCan),
-            "BNA_KC_Jet_fuelCanMag",
-            "BNA_KC_Jetpack_FuelCan_Mag"
+            QGVAR(fuelCanMag),
+            QCLASS(Jetpack_FuelCan_Mag)
         ] call BIS_fnc_returnConfigEntry;
 
         _player addMagazine [_fuelCan, 1];

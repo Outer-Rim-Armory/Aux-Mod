@@ -11,8 +11,8 @@ class CfgWeapons
         displayName = "[KC] Jetpack Fuel Can (Empty)";
         descriptionShort = "An empty Jetpack fuel can.";
 
-        BNA_KC_Jet_isFuelCan = TRUE;
-        BNA_KC_Jet_fuelCanMag = "BNA_KC_Jetpack_FuelCan_Mag";
+        GVAR(isFuelCan) = TRUE;
+        GVAR(fuelCanMag) = QCLASS(Jetpack_FuelCan_Mag);
 
         ACE_isTool = TRUE;
 
