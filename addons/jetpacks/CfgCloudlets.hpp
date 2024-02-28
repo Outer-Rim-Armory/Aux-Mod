@@ -2,8 +2,9 @@ class CfgCloudlets
 {
     // https://community.bistudio.com/wiki/Arma_3:_Particle_Effects
     // Blastcore modifies the original flare effect, causes some issues with the jetpacks
+    // TODO: Move to particles addon
     class Flare2;
-    class BNA_KC_Effects_FlareBase: Flare2
+    class CLASS(Effects_FlareBase): Flare2
     {
         angle = 0;
         angleVar = 360;
@@ -47,7 +48,7 @@ class CfgCloudlets
         volume = 0.8;
         weight = 1;
     };
-    class BNA_KC_Effects_JetpackFire_Blue: BNA_KC_Effects_FlareBase
+    class CLASS(Effects_JetpackFire_Blue): CLASS(Effects_FlareBase)
     {
         // colorCoef to color the whole particle, not just the middle
         colorCoef[] =
@@ -65,7 +66,7 @@ class CfgCloudlets
     };
 
     class AirFireSparks;
-    class BNA_KC_Effects_SparksBase: AirFireSparks
+    class CLASS(Effects_SparksBase): AirFireSparks
     {
         angle = 0;
         angleVar = 360;
@@ -110,7 +111,7 @@ class CfgCloudlets
         volume = 1;
         weight = 1.05;
     };
-    class BNA_KC_Effects_JetpackSparks_Blue: BNA_KC_Effects_SparksBase
+    class CLASS(Effects_JetpackSparks_Blue): CLASS(Effects_SparksBase)
     {
         color[] =
         {
@@ -138,7 +139,7 @@ class CfgCloudlets
 
     // There's probably a better particle to base the smoke off of
     class MediumSmoke;
-    class BNA_KC_Effects_SmokeBase: MediumSmoke
+    class CLASS(Effects_SmokeBase): MediumSmoke
     {
         angle = 0;
         angleVar = 1;
@@ -181,7 +182,7 @@ class CfgCloudlets
         volume = 0.04;
         weight = 0.05;
     };
-    class BNA_KC_Effects_JetpackSmoke: BNA_KC_Effects_SmokeBase
+    class CLASS(Effects_JetpackSmoke): CLASS(Effects_SmokeBase)
     {
         color[] =
         {

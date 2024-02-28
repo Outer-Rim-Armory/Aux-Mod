@@ -1,10 +1,57 @@
+class Extended_PreStart_EventHandlers
+{
+    class ADDON
+    {
+        init = QUOTE(call COMPILE_SCRIPT(XEH_preStart));
+    };
+};
+
+class Extended_PreInit_EventHandlers
+{
+    class ADDON
+    {
+        init = QUOTE(call COMPILE_SCRIPT(XEH_preInit));
+    };
+};
+
+class Extended_PostInit_EventHandlers
+{
+    class ADDON
+    {
+        init = QUOTE(call COMPILE_SCRIPT(XEH_postInit));
+        clientInit = QUOTE(call COMPILE_SCRIPT(XEH_postInitClient));
+    };
+};
+
 class Extended_Init_EventHandlers
 {
-    class BNA_KC_Resupply_JetpackFuel
+    class CLASS(Resupply_JetpackFuel)
     {
-        class BNA_KC_Jetpacks_refuelAction
+        class GVAR(refuel)
         {
-            init = "_this#0 lockInventory true; [_this#0, 1] call BNAKC_Jetpacks_fnc_addRefuelActions";
+            init = QUOTE(_this#0 lockInventory true; _this#0 call FUNC(addRefuelAction));
+        };
+    };
+};
+
+class Extended_Killed_EventHandlers
+{
+    class CAManBase
+    {
+        class GVAR(clearEffects)
+        {
+            killed = QUOTE(_this call FUNC(clearEffects));
+        };
+    };
+};
+
+class Extended_Deleted_EventHandlers
+{
+    class CAManBase
+    {
+        class GVAR(clearEffects)
+        {
+            deleted = QUOTE(_this call FUNC(clearEffects));
         };
     };
 };

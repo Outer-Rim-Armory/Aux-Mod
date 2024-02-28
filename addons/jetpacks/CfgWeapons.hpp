@@ -2,25 +2,21 @@ class CfgWeapons
 {
     class CBA_MiscItem;
     class CBA_MiscItem_ItemInfo;
-    class BNA_KC_Jetpack_FuelCan_Empty: CBA_MiscItem
+    class CLASS(Jetpack_FuelCan_Empty): CBA_MiscItem
     {
-        // Mod Info
-        dlc = "BNA_KC";
-        author = "SweMonkey and DartRuffian";
+        author = "Keeli Company Aux Team";
 
-        // Scope
-        scope = 2;
-        scopeArsenal = 2;
+        SCOPE_PUBLIC;
 
         displayName = "[KC] Jetpack Fuel Can (Empty)";
         descriptionShort = "An empty Jetpack fuel can.";
 
-        BNA_KC_Jet_isFuelCan = 1;
-        BNA_KC_Jet_fuelCanMag = "BNA_KC_Jetpack_FuelCan_Mag";
+        GVAR(isFuelCan) = TRUE;
+        GVAR(fuelCanMag) = QCLASS(Jetpack_FuelCan_Mag);
 
-        ACE_isTool = 1;
+        ACE_isTool = TRUE;
 
-        picture = "\BNA_KC_Gear\Jetpacks\Data\Textures\UI\BNA_KC_Jet_FuelCan.paa";
+        picture = QPATHTOF(data\ui\FuelCan_ca.paa);
         model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
 
         class ItemInfo: CBA_MiscItem_ItemInfo
