@@ -101,4 +101,20 @@ class CWR_VoiceLines
             "ChatWheelRedux\Data\Audio\Follow\WithMeBrothers.wss"
         };
     };
+
+    class ContactInfClose
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\ContactInfClose\DroidForcesDangerClose.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\EnemyClankersApproaching.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\EnemyClankersSpotted.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\SeppiesClosingIn.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\WatchItWatchItDroidsNearby.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\WeHaveEnemyForcesWithinThePerimeter.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\WeHaveEnemyForcesWithinThePerimeter2.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\WeHaveHostileForcesNearby.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\WeHaveHostilesNearby.wss"
+        };
+    };
 };
