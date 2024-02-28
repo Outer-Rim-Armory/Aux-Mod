@@ -20,7 +20,7 @@ params [["_boost", false]];
 
 // Exit if unit does not have / can not use a jetpack
 if !(ace_player call FUNC(hasJetpack)) exitWith {};
-if !(ace_player call BNA_KC_Jetpacks_fnc_canUseJetpack) exitWith {
+if !(ace_player call FUNC(canJetpack)) exitWith {
     ace_player call FUNC(playErrorSound);
 };
 

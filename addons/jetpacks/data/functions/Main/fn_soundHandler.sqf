@@ -20,7 +20,7 @@ if (isGamePaused) exitWith {};  // Can cause sound effects to build up
 #define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
 
 // Don't play effects for units on the ground or who can't jetpack
-if (!(ace_player call BNA_KC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_player) exitWith {};
+if (!(ace_player call FUNC(canJetpack)) or isTouchingGround ace_player) exitWith {};
 
 private _jetpack = backpack ace_player;
 

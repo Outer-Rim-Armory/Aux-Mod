@@ -28,7 +28,7 @@ _totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
 if (_totalEffects >= GVAR(particleLimit)) exitWith {};
 
 // Don't play effects for units on the ground or who can't jetpack
-if (!(_unit call BNA_KC_Jetpacks_fnc_canUseJetpack) or isTouchingGround _unit) exitWith {};
+if (!(_unit call FUNC(canJetpack)) or isTouchingGround _unit) exitWith {};
 
 _jetpack = backpack _unit;
 

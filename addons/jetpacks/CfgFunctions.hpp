@@ -13,12 +13,6 @@ class CfgFunctions
             class fuelHandler {};
         };
 
-        class Utils
-        {
-            file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\Utils";
-            class canUseJetpack {};
-        };
-
         class Fuel
         {
             file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\Refuel";

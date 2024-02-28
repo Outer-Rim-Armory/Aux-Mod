@@ -1,3 +1,4 @@
+PREP(canJetpack);
 PREP(clearEffects);
 PREP(getFuel);
 PREP(hasJetpack);
