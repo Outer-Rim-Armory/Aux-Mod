@@ -25,6 +25,7 @@ TRACE_1("fnc_vivLoad",_vehicle);
 _object = _vehicle getVariable [QGVAR(vivLoadTarget), objNull];
 
 if (!isNull _object) then {
+    playSound "TAS_Clamps";
     _vehicle setVehicleCargo _object;
 };
 

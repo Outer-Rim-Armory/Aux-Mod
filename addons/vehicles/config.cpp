@@ -12,7 +12,8 @@ class CfgPatches
             QCLASS(core),
             QCLASS(armor),
             "ls_vehicles_weapons",
-            "ls_functions"
+            "ls_functions",
+            "3AS_LAAT_Cargo"
         };
         units[] = {};
         weapons[] = {};
