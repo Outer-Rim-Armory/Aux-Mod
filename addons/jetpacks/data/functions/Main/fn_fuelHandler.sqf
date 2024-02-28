@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * BNA_KC_Jet_JetpackFuelHandle = [BNAKC_Jetpacks_fnc_fuelHandler] call CBA_fnc_AddPerFrameHandler;
+ * BNA_KC_Jet_JetpackFuelHandle = [BNA_KC_Jetpacks_fnc_fuelHandler] call CBA_fnc_AddPerFrameHandler;
  */
 
 
@@ -18,14 +18,14 @@
 if (isGamePaused) exitWith {};  // Don't use fuel if player is paused (in singleplayer)
 
 // Don't play effects for units on the ground or who can't jetpack
-if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_player) exitWith {};
+if (!(ace_player call BNA_KC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_player) exitWith {};
 
 // backpackContainer returns the backpack object instead of just the class name
 // Fuel levels are stored in the backpack object, makes it a bit more realistic
 private _jetpack = backpackContainer ace_player;
 
-private _oldFuel = [_jetpack] call BNAKC_Jetpacks_fnc_getJetpackFuel;
-private _fuel = [_jetpack] call BNAKC_Jetpacks_fnc_getJetpackFuel;
+private _oldFuel = [_jetpack] call BNA_KC_Jetpacks_fnc_getJetpackFuel;
+private _fuel = [_jetpack] call BNA_KC_Jetpacks_fnc_getJetpackFuel;
 
 private _fuelCoef =
 (

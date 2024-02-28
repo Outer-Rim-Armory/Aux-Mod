@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * BNA_KC_Jet_JetpackHandle = [BNAKC_Jetpacks_fnc_frameHandler] call CBA_fnc_AddPerFrameHandler;
+ * BNA_KC_Jet_JetpackHandle = [BNA_KC_Jetpacks_fnc_frameHandler] call CBA_fnc_AddPerFrameHandler;
  */
 
 // Contants and macros
@@ -24,7 +24,7 @@ if (isGamePaused) exitWith {};
 private _thisHandler = _this select 1;
 
 // Check if player can use jetpack, could potentially change while FH is running, such as dying; going uncon; etc.
-if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_player) exitWith
+if (!(ace_player call BNA_KC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_player) exitWith
 {
     [_thisHandler] call CBA_fnc_removePerFrameHandler;
     BNA_KC_Jet_JetpackHandle = nil; // Set to nil, just removing the handler keeps the global variable's value
@@ -39,7 +39,7 @@ if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_
      // Wait a bit before removing effects, makes it look nicer
     [
         {
-            ace_player call BNAKC_Jetpacks_fnc_deleteEffects;
+            ace_player call BNA_KC_Jetpacks_fnc_deleteEffects;
             [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler;
             BNA_KC_Jet_JetpackSoundHandle = nil;
         },

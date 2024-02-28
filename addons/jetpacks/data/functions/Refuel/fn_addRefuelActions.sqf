@@ -11,7 +11,7 @@
  * None
  *
  * Examples:
- * [cursorObject, 1] call BNAKC_Jetpacks_fnc_addRefuelActions;
+ * [cursorObject, 1] call BNA_KC_Jetpacks_fnc_addRefuelActions;
  */
 
 
@@ -32,12 +32,12 @@ private _refuelAction =
 
         private _jetpack = backpack _player;
         private _maxFuel = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_fuel",100);
-        [_player, _maxFuel] call BNAKC_Jetpacks_fnc_setJetpackFuel; // JetpackRefuel can take either the unit or a backpack object
+        [_player, _maxFuel] call BNA_KC_Jetpacks_fnc_setJetpackFuel; // JetpackRefuel can take either the unit or a backpack object
     },
     {
         // Condition
         params ["_target", "_player", "_params"];
-        _player call BNAKC_Jetpacks_fnc_hasJetpack;
+        _player call BNA_KC_Jetpacks_fnc_hasJetpack;
     }
 ] call ace_interact_menu_fnc_createAction;
 

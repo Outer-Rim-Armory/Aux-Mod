@@ -10,7 +10,7 @@
  * Boolean, whether the sound was played or not
  *
  * Example:
- * [player] call BNAKC_Jetpacks_fnc_playErrorSound;
+ * [player] call BNA_KC_Jetpacks_fnc_playErrorSound;
  */
 
 

@@ -11,7 +11,7 @@
  * Array format [className, fuelLevel]
  *
  * Examples:
- * player call BNAKC_Jetpacks_fnc_getFuelCan;
+ * player call BNA_KC_Jetpacks_fnc_getFuelCan;
  */
 
 

@@ -29,7 +29,7 @@ class Extended_Init_EventHandlers
     {
         class GVAR(refuel)
         {
-            init = QUOTE(_this#0 lockInventory true; [ARR_2(_this#0,1)] call BNAKC_jetpacks_fnc_addRefuelActions);
+            init = QUOTE(_this#0 lockInventory true; [ARR_2(_this#0,1)] call BNA_KC_Jetpacks_fnc_addRefuelActions);
         };
     };
 };
@@ -40,7 +40,7 @@ class Extended_Killed_EventHandlers
     {
         class GVAR(clearEffects)
         {
-            killed = QUOTE(_this call BNAKC_Jetpacks_fnc_deleteEffects);
+            killed = QUOTE(_this call BNA_KC_Jetpacks_fnc_deleteEffects);
         };
     };
 };
@@ -51,7 +51,7 @@ class Extended_Deleted_EventHandlers
     {
         class GVAR(clearEffects)
         {
-            deleted = QUOTE(_this call BNAKC_Jetpacks_fnc_deleteEffects);
+            deleted = QUOTE(_this call BNA_KC_Jetpacks_fnc_deleteEffects);
         };
     };
 };

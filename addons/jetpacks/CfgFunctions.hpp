@@ -1,7 +1,7 @@
 // TODO: Move to PREP
 class CfgFunctions
 {
-    class BNAKC_Jetpacks
+    class BNA_KC_Jetpacks
     {
         class Main
         {

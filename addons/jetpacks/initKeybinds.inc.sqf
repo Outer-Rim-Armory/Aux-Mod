@@ -12,7 +12,7 @@
         ace_player setVariable ["BNA_KC_Jet_hover", false];
 
         ace_player setVariable ["BNA_KC_Jet_rise", true];
-        true call BNAKC_Jetpacks_fnc_jetpack;
+        true call BNA_KC_Jetpacks_fnc_jetpack;
     },     // KeyDown
     {
         ace_player setVariable ["BNA_KC_Jet_rise", false];
@@ -33,7 +33,7 @@
     {
         if !(isTouchingGround ace_player) then {
             ace_player setVariable ["BNA_KC_Jet_slowFall", true];
-            false call BNAKC_Jetpacks_fnc_jetpack;
+            false call BNA_KC_Jetpacks_fnc_jetpack;
         };
     },     // KeyDown
     {

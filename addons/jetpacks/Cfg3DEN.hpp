@@ -20,7 +20,7 @@ class Cfg3DEN
                         defaultValue = FALSE;
 
                         condition = "objectHasInventoryCargo";
-                        expression = QUOTE([ARR_2(_this,_value)] call BNAKC_Jetpacks_fnc_addRefuelActions);
+                        expression = QUOTE([ARR_2(_this,_value)] call BNA_KC_Jetpacks_fnc_addRefuelActions);
                     };
                 };
             };

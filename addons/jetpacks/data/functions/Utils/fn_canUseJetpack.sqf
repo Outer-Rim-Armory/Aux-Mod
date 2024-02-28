@@ -10,18 +10,18 @@
  * Boolean - True if unit can use a jetpack
  *
  * Example:
- * ace_player call BNAKC_Jetpacks_fnc_canUseJetpack; // Returns true if unit can jetpack
+ * ace_player call BNA_KC_Jetpacks_fnc_canUseJetpack; // Returns true if unit can jetpack
  */
 
 
 params ["_unit"];
 
 private _jetpack = backpackContainer _unit;
-private _maxFuel = [_jetpack] call BNAKC_Jetpacks_fnc_getJetpackFuel;
+private _maxFuel = [_jetpack] call BNA_KC_Jetpacks_fnc_getJetpackFuel;
 
 private _canJetpack =
 (
-    _unit call BNAKC_Jetpacks_fnc_hasJetpack and       // True if unit is wearing a KC jetpack
+    _unit call BNA_KC_Jetpacks_fnc_hasJetpack and       // True if unit is wearing a KC jetpack
     _jetpack getVariable ["BNA_KC_Jet_currentFuel", _maxFuel] > 0 and // True if unit has any amount of fuel in a jetpack
     isNull (objectParent _unit) and           // True if unit is not in a vehicle, faster than vehicle _unit
     lifeState _unit != "INCAPACITATED" and    // True if unit is uncon

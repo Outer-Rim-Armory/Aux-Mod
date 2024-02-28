@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * ['BNA_KC_Jet_JetpackFired', BNAKC_Jetpacks_fnc_effectHandler] call CBA_fnc_addEventHandler;
+ * ['BNA_KC_Jet_JetpackFired', BNA_KC_Jetpacks_fnc_effectHandler] call CBA_fnc_addEventHandler;
  */
 
 
@@ -28,7 +28,7 @@ _totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
 if (_totalEffects >= GVAR(particleLimit)) exitWith {};
 
 // Don't play effects for units on the ground or who can't jetpack
-if (!(_unit call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround _unit) exitWith {};
+if (!(_unit call BNA_KC_Jetpacks_fnc_canUseJetpack) or isTouchingGround _unit) exitWith {};
 
 _jetpack = backpack _unit;
 

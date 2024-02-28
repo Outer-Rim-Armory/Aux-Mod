@@ -11,7 +11,7 @@ class CfgVehicles
                 icon = "";
 
                 condition = "!(_player getVariable ['BNA_KC_Jet_effectSources', []] isEqualTo []) and isTouchingGround _player";
-                statement = "_player call BNAKC_Jetpacks_fnc_deleteEffects";
+                statement = "_player call BNA_KC_Jetpacks_fnc_deleteEffects";
             };
         };
         class ACE_Actions
@@ -26,8 +26,8 @@ class CfgVehicles
                     distance = 1.75;
                     // exceptions[] = { "isNotInside", "isNotSitting", "isNotSwimming", "isNotDragging", "isNotCarrying" };
 
-                    condition = "_this call BNAKC_Jetpacks_fnc_canRefuelFromBody";
-                    statement = "_this call BNAKC_Jetpacks_fnc_refuelFromBody";
+                    condition = "_this call BNA_KC_Jetpacks_fnc_canRefuelFromBody";
+                    statement = "_this call BNA_KC_Jetpacks_fnc_refuelFromBody";
                     modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
                 };
 
@@ -38,8 +38,8 @@ class CfgVehicles
 
                     distance = 1.75;
 
-                    condition = "_this call BNAKC_Jetpacks_fnc_canRefuelOtherPlayer";
-                    statement = "_this call BNAKC_Jetpacks_fnc_refuelOtherPlayer";
+                    condition = "_this call BNA_KC_Jetpacks_fnc_canRefuelOtherPlayer";
+                    statement = "_this call BNA_KC_Jetpacks_fnc_refuelOtherPlayer";
                     modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
                 };
             };

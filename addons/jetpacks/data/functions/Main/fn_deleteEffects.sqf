@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * player call BNAKC_Jetpacks_fnc_deleteEffects;
+ * player call BNA_KC_Jetpacks_fnc_deleteEffects;
  */
 
 

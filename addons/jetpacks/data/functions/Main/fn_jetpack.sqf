@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * call BNAKC_Jetpacks_fnc_jetpack;
+ * call BNA_KC_Jetpacks_fnc_jetpack;
  */
 
 
@@ -19,10 +19,10 @@
 params [["_boost", false]];
 
 // Exit if unit does not have / can not use a jetpack
-if !(ace_player call BNAKC_Jetpacks_fnc_hasJetpack) exitWith {};
-if !(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) exitWith
+if !(ace_player call BNA_KC_Jetpacks_fnc_hasJetpack) exitWith {};
+if !(ace_player call BNA_KC_Jetpacks_fnc_canUseJetpack) exitWith
 {
-    ace_player call BNAKC_Jetpacks_fnc_playErrorSound;
+    ace_player call BNA_KC_Jetpacks_fnc_playErrorSound;
 };
 
 // Jetpack properties
@@ -56,7 +56,7 @@ if (isNil "BNA_KC_Jet_JetpackHandle") then
 
     BNA_KC_Jet_JetpackHandle =
     [
-        BNAKC_Jetpacks_fnc_frameHandler
+        BNA_KC_Jetpacks_fnc_frameHandler
     ] call CBA_fnc_AddPerFrameHandler;
 }
 else
@@ -69,7 +69,7 @@ if (isNil "BNA_KC_Jet_JetpackSoundHandle") then
 {
     BNA_KC_Jet_JetpackSoundHandle =
     [
-        BNAKC_Jetpacks_fnc_soundHandler,
+        BNA_KC_Jetpacks_fnc_soundHandler,
         0.3 // Time inbetween each execution
     ] call CBA_fnc_AddPerFrameHandler;
 };
@@ -79,7 +79,7 @@ if (isNil "BNA_KC_Jet_JetpackFuelHandle") then
 {
     BNA_KC_Jet_JetpackFuelHandle =
     [
-        BNAKC_Jetpacks_fnc_fuelHandler,
+        BNA_KC_Jetpacks_fnc_fuelHandler,
         0.5 // Time inbetween each execution
     ] call CBA_fnc_AddPerFrameHandler;
 };

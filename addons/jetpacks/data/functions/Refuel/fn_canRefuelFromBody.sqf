@@ -13,14 +13,14 @@
  * None
  *
  * Examples:
- * [cursorObject, player, []] call BNAKC_Jetpacks_fnc_canRefuelFromBody;
+ * [cursorObject, player, []] call BNA_KC_Jetpacks_fnc_canRefuelFromBody;
  */
 
 
 params ["_target", "_player", "_params"];
 
 (_player call ace_common_fnc_isEngineer) and
-!([_player, true] call BNAKC_Jetpacks_fnc_getFuelCan isEqualTo ["", 0]) and
-_target call BNAKC_Jetpacks_fnc_hasJetpack and
-_target call BNAKC_Jetpacks_fnc_getJetpackFuel > 0 and
+!([_player, true] call BNA_KC_Jetpacks_fnc_getFuelCan isEqualTo ["", 0]) and
+_target call BNA_KC_Jetpacks_fnc_hasJetpack and
+_target call BNA_KC_Jetpacks_fnc_getJetpackFuel > 0 and
 !alive _target;
