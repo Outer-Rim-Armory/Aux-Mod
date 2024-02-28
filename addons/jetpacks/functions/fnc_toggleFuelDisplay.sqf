@@ -45,8 +45,6 @@ if !(alive ace_player and
     false
 ];
 
-_jetpack = backpackContainer ace_player;
-_fuel = ace_player call FUNC(getFuel);
-[ace_player, _jetpack, _fuel, _fuel] call FUNC(updateFuelDisplay);
+ace_player call FUNC(updateFuelDisplay);
 
 true;

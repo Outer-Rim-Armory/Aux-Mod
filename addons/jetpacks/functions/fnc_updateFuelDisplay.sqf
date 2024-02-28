@@ -16,7 +16,7 @@
  * [QGVAR(fuelChanged), LINKFUNC(updateFuelDisplay)] call CBA_fnc_addEventHandler;
  */
 
-params ["_unit", "_jetpack", "_oldFuel", "_currentFuel"];
+params ["_unit"];
 private ["_display", "_ctrlFuel", "_ctrlFuelPos", "_heightModifier", "_oldHeight", "_newHeight"];
 
 if (_unit isNotEqualTo ace_player) exitWith {};
