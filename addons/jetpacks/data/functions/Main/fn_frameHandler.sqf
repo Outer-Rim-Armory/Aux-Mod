@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Handles player movement while jetpacking. Deletes itself when player is no longer using a jetpack.
@@ -9,7 +10,7 @@
  * None
  *
  * Example:
- * BNA_KC_Jet_JetpackHandle = [BNAKC_Jetpacks_fnc_frameHandler] call CBA_fnc_AddPerFrameHandler;
+ * BNA_KC_Jet_JetpackHandle = [BNA_KC_Jetpacks_fnc_frameHandler] call CBA_fnc_AddPerFrameHandler;
  */
 
 // Contants and macros
@@ -23,7 +24,7 @@ if (isGamePaused) exitWith {};
 private _thisHandler = _this select 1;
 
 // Check if player can use jetpack, could potentially change while FH is running, such as dying; going uncon; etc.
-if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_player) exitWith
+if (!(ace_player call FUNC(canJetpack)) or isTouchingGround ace_player) exitWith
 {
     [_thisHandler] call CBA_fnc_removePerFrameHandler;
     BNA_KC_Jet_JetpackHandle = nil; // Set to nil, just removing the handler keeps the global variable's value
@@ -38,7 +39,7 @@ if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_
      // Wait a bit before removing effects, makes it look nicer
     [
         {
-            ace_player call BNAKC_Jetpacks_fnc_deleteEffects;
+            ace_player call FUNC(clearEffects);
             [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler;
             BNA_KC_Jet_JetpackSoundHandle = nil;
         },
@@ -50,8 +51,8 @@ if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_
 
 // Jetpack properties
 private _jetpack = backpack ace_player;
-private _jetSpeed = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_speed",1);
-private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_strength",1);
+private _jetSpeed = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_speed",JETPACK_SPEED_DEFAULT);
+private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_strength",JETPACK_STRENGTH_DEFAULT);
 
 // Speed, position, and direction
 // Used for calculating mid-air movement
@@ -126,7 +127,7 @@ if (ace_player getVariable ["BNA_KC_Jet_hover", false]) then
 };
 
 // Slow player down mid-air, used to simulate air-resistance
-private _airResistanceCoef = -0.1 * diag_deltaTime * BNA_KC_Jet_AirResistance;
+private _airResistanceCoef = -0.1 * diag_deltaTime * GVAR(airResistance);
 private _airResistance = _velocity vectorMultiply _airResistanceCoef;
 _velocity = _velocity vectorAdd _airResistance;
 

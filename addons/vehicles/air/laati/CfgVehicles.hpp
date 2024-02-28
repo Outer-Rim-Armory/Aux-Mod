@@ -215,6 +215,13 @@ class CfgVehicles
                 condition = QUOTE(ace_player == currentPilot this and this animationSourcePhase 'ramp' == 1;);
                 statement = QUOTE([ARR_2('ramp',true)] call ls_fnc_keybind_operationFrameWork;);
             };
+
+            class LoadVehicle: Impulse
+            {
+                displayName = "Load Vehicle";
+                condition = QUOTE(ace_player isEqualTo currentPilot this and {this call FUNC(vivCanLoad)});
+                statement = QUOTE(this call FUNC(vivLoad));
+            };
         };
 
         class AnimationSources: AnimationSources

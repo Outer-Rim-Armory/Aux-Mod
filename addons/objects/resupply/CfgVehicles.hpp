@@ -14,7 +14,7 @@ class CfgVehicles
 
         editorCategory = QCLASS(Objects);
         editorSubcategory = QCLASS(EdSubcat_Resupply);
-        editorPreview = EEDITOR_PREVIEW(objects\resupply,CLASS(Resupply_Base));
+        editorPreview = EDITOR_PREVIEW(Resupply_Base);
 
         ace_cargo_size = 1;
         ace_cargo_noRename = TRUE;
@@ -36,7 +36,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
-        editorPreview = EEDITOR_PREVIEW(objects\resupply,CLASS(Resupply_SquadAmmo));
+        editorPreview = EDITOR_PREVIEW(Resupply_SquadAmmo);
 
         class TransportMagazines
         {
@@ -142,7 +142,7 @@ class CfgVehicles
     class CLASS(Resupply_PlatoonAmmo_Heavy): CLASS(Resupply_SquadAmmo_Heavy)
     {
         displayName = "Heavy Ammo Crate (Platoon)";
-        class TransportMagazines: TransportMagazines
+        class TransportMagazines
         {
             MAG_XX(CLASS(Mag_10rnd_Valken38x_AP),120);
             MAG_XX(CLASS(Mag_30rnd_HI12),120);
@@ -160,7 +160,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"};
-        editorPreview = EEDITOR_PREVIEW(objects\resupply,CLASS(Resupply_SquadMedical));
+        editorPreview = EDITOR_PREVIEW(Resupply_SquadMedical);
 
         class TransportItems
         {
@@ -226,6 +226,21 @@ class CfgVehicles
             MAG_XX(SquadShieldMagazine,6);
             MAG_XX(CLASS(Grenade_Bacta),10);
             MAG_XX(CLASS(Mag_1rnd_GR20),4);
+        };
+    };
+
+    class CLASS(Resupply_DisposableLaunchers): CLASS(Resupply_Base)
+    {
+        displayName = "RPS-6 Launcher Crate";
+
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        // editorPreview = EDITOR_PREVIEW(Resupply_DisposableLaunchers);
+
+        class TransportWeapons
+        {
+            WEAP_XX(CLASS(RPS6_Loaded),10);
         };
     };
 };

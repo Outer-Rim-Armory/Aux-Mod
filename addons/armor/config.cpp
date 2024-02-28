@@ -429,3 +429,5 @@ class CfgPatches
 #include "CfgGlasses.hpp"
 #include "CfgUnitInsignia.hpp"
 #include "CfgEventHandlers.hpp"
+#include "XtdGearModels.hpp"
+#include "XtdGearInfos.hpp"

@@ -58,6 +58,8 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase1_LouPlasma),
             QGROUND_CLASS(Helmet_Phase1_Ox),
             QGROUND_CLASS(Helmet_Phase1_Patriot),
+            QGROUND_CLASS(Helmet_Phase1_Rat),
+            QGROUND_CLASS(Helmet_Phase1_RatCrimson),
             QGROUND_CLASS(Helmet_Phase1_Rev),
             QGROUND_CLASS(Helmet_Phase1_Rodger),
             QGROUND_CLASS(Helmet_Phase1_Sage),
@@ -159,6 +161,8 @@ class CfgPatches
             QCLASS(Helmet_Phase1_LouPlasma),
             QCLASS(Helmet_Phase1_Ox),
             QCLASS(Helmet_Phase1_Patriot),
+            QCLASS(Helmet_Phase1_Rat),
+            QCLASS(Helmet_Phase1_RatCrimson),
             QCLASS(Helmet_Phase1_Rev),
             QCLASS(Helmet_Phase1_Rodger),
             QCLASS(Helmet_Phase1_Sage),
@@ -266,3 +270,5 @@ class CfgPatches
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
+#include "XtdGearModels.hpp"
+#include "XtdGearInfos.hpp"

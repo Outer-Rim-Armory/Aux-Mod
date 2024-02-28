@@ -66,7 +66,7 @@ class CLASS(Helmet_Phase1_CatholicKyber): CLASS(Helmet_Phase1_Catholic)
     SCOPE_HIDDEN;
     hiddenSelectionsTextures[] =
     {
-        QPATHTOF(data\helmets\phase1\Burnt_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\Catholic_camo1_co.paa),
         QPATHTOF(data\visors\Kyber_camo2_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
@@ -264,7 +264,7 @@ class CLASS(Helmet_Phase1_JoeCrimson): CLASS(Helmet_Phase1_Joe)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase1\Joe_camo1_co.paa),
-        QPATHTOF(data\visors\Bacta_camo2_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
     hiddenSelectionsMaterials[] =
@@ -297,7 +297,7 @@ class CLASS(Helmet_Phase1_KeeliCrimson): CLASS(Helmet_Phase1_Keeli)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase1\Keeli_camo1_co.paa),
-        QPATHTOF(data\visors\Bacta_camo2_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
     hiddenSelectionsMaterials[] =
@@ -360,6 +360,38 @@ class CLASS(Helmet_Phase1_Patriot): CLASS(Helmet_Phase1_Base)
         QPATHTOF(data\helmets\phase1\Patriot_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase1_Rat): CLASS(Helmet_Phase1_Base)
+{
+    displayName = "[KC] INF P1 Helm ('Rat')";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Rat_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+
+    GVAR(isCustom) = TRUE;
+    EGVAR(armor,nvCanToggle) = TRUE;
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Rat);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase1_RatCrimson);
+};
+class CLASS(Helmet_Phase1_RatCrimson): CLASS(Helmet_Phase1_Rat)
+{
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase1\Rat_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+    hiddenSelectionsMaterials[] =
+    {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
 

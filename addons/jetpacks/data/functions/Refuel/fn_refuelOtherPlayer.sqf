@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Author: DartRuffian
  * Uses fuel from a player's fuel can to refuel another player's jetpack.
@@ -12,7 +13,7 @@
  * None
  *
  * Examples:
- * [cursorObject, player, []] call BNAKC_Jetpacks_fnc_refuelOtherPlayer;
+ * [cursorObject, player, []] call BNA_KC_Jetpacks_fnc_refuelOtherPlayer;
  */
 
 
@@ -21,11 +22,11 @@ params ["_target", "_player", "_params"];
 
 // Get a fuel can and it's fuel level from the unit's inventory
 // Empty cans are CBA_miscItems, non-empty cans are magazines
-[_player, false, true] call BNAKC_Jetpacks_fnc_getFuelCan params ["_fuelCan", "_fuelCanFuel"];
+[_player, false, true] call BNA_KC_Jetpacks_fnc_getFuelCan params ["_fuelCan", "_fuelCanFuel"];
 
 private _fuelCanMaxFuel = [(configFile >> "CfgMagazines" >> _fuelCan), "count", 400] call BIS_fnc_returnConfigEntry;
-private _targetFuel = _target call BNAKC_Jetpacks_fnc_getJetpackFuel;
-private _targetMaxFuel = [(configFile >> "CfgVehicles" >> backpack _target), "BNA_KC_Jet_fuel", 100] call BIS_fnc_returnConfigEntry;
+private _targetFuel = _target call FUNC(getFuel);
+private _targetMaxFuel = [(configFile >> "CfgVehicles" >> backpack _target), QGVAR(fuel), JETPACK_FUEL_DEFAULT] call BIS_fnc_returnConfigEntry;
 
 private _fuelToRefill = round ((_fuelCanFuel + _targetFuel) min _targetMaxFuel) - _targetFuel;
 private _refuelTime = _fuelToRefill / REFUEL_PER_SECOND;
@@ -45,12 +46,12 @@ private _refuelHandler =
     playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_loop.wss", _player, false, getPosASL _player, 1, 1, 8];
 
     if (_player getVariable ["BNA_KC_Jetpack_isRefuelingPlayer", false] isEqualTo false) exitWith { call _removeSelf; };
-    if ([_player, true] call BNAKC_Jetpacks_fnc_getFuelCan isEqualTo ["", 0]) exitWith { call _removeSelf; };
-    if ([_target, true] call BNAKC_Jetpacks_fnc_getJetpackFuel == 1) exitWith { call _removeSelf; };
+    if ([_player, true] call BNA_KC_Jetpacks_fnc_getFuelCan isEqualTo ["", 0]) exitWith { call _removeSelf; };
+    if ([_target, true] call FUNC(getFuel) == 1) exitWith { call _removeSelf; };
 
-    [_player, true] call BNAKC_Jetpacks_fnc_getFuelCan params ["_fuelCan", "_fuelCanFuel"];
-    private _targetFuel = _target call BNAKC_Jetpacks_fnc_getJetpackFuel;
-    private _targetMaxFuel = [(configFile >> "CfgVehicles" >> backpack _target), "BNA_KC_Jet_fuel", 100] call BIS_fnc_returnConfigEntry;
+    [_player, true] call BNA_KC_Jetpacks_fnc_getFuelCan params ["_fuelCan", "_fuelCanFuel"];
+    private _targetFuel = _target call FUNC(getFuel);
+    private _targetMaxFuel = [(configFile >> "CfgVehicles" >> backpack _target), QGVAR(fuel), JETPACK_FUEL_DEFAULT] call BIS_fnc_returnConfigEntry;
 
     // Remove up to REFUEL_PER_SECOND fuel units, cap at 0 in case it goes negative
     private _targetNewFuel = (_targetFuel + REFUEL_PER_SECOND) min _targetMaxFuel;
@@ -65,8 +66,8 @@ private _refuelHandler =
         private _fuelCanItem =
         [
             (configFile >> "CfgMagazines" >> _fuelCan),
-            "BNA_KC_Jet_fuelCanItem",
-            "BNA_KC_Jetpack_FuelCan_Empty"
+            QGVAR(fuelCanItem),
+            QCLASS(Jetpack_FuelCan_Empty)
         ] call BIS_fnc_returnConfigEntry;
         _player addItem _fuelcanItem;
     }
@@ -75,8 +76,8 @@ private _refuelHandler =
         _player addMagazine [_fuelCan, _fuelCanNewFuel];
     };
 
-    [_target, _targetNewFuel, false] call BNAKC_Jetpacks_fnc_setJetpackFuel;
-    ["BNA_KC_Jet_FuelChanged", [_target, backpackContainer _target, _targetFuel, _targetNewFuel], _target] call CBA_fnc_targetEvent;
+    [_target, _targetNewFuel, false] call BNA_KC_Jetpacks_fnc_setFuel;
+    [QGVAR(fuelChanged), [_target, backpackContainer _target, _targetFuel, _targetNewFuel], _target] call CBA_fnc_targetEvent;
 };
 
 

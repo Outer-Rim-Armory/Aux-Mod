@@ -1,37 +1,28 @@
-// #include "script_component.hpp"
+#include "script_component.hpp"
 
 class CfgPatches
 {
-    class BNA_KC_jetpacks
+    class ADDON
     {
         author = "Keeli Company Aux Team";
-        name = "BNA_KC - Jetpacks";
-        requiredVersion = 2.14;
+        name = COMPONENT_NAME;
+        requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
-            "BNA_KC_armor",
-            "BNA_KC_objects_resupply"
+            QCLASS(armor),
+            QEGVAR(objects,resupply),
+            "ace_refuel"
         };
         units[] =
         {
-            "BNA_KC_Jetpack_JT12",
-            "BNA_KC_Jetpack_JT12_LR",
-            "BNA_KC_Jetpack_CDV19",
-            "BNA_KC_Jetpack_CDV19_LR",
-            "BNA_KC_Jetpack_CDV21",
-            "BNA_KC_Jetpack_CDV21_LR",
-
-            "BNA_KC_Jetpack_Droid",
-            "BNA_KC_Jetpack_Droid_Rocket",
-
-            "BNA_KC_Resupply_JetpackFuel"
+            QCLASS(Resupply_JetpackFuel)
         };
         weapons[] =
         {
-            "BNA_KC_Jetpack_FuelCan_Empty",
-            "BNA_KC_Jetpack_FuelCan_Mag"
+            QCLASS(Jetpack_FuelCan_Empty),
+            QCLASS(Jetpack_FuelCan_Mag)
         };
-        // VERSION_CONFIG;
+        VERSION_CONFIG;
     };
 };
 
@@ -41,5 +32,6 @@ class CfgPatches
 #include "CfgFunctions.hpp"
 #include "CfgCloudlets.hpp"
 #include "CfgRscTitles.hpp"
+#include "CfgUIGrids.hpp"
 #include "Cfg3DEN.hpp"
 #include "CfgEventHandlers.hpp"

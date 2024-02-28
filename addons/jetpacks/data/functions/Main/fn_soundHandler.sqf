@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Authors: DartRuffian
  * Plays sound effects while a player is using a jetpack. Sound effects stop being played when player is no longer using a jetpack.
@@ -9,7 +10,7 @@
  * None
  *
  * Example:
- * BNA_KC_Jet_JetpackSoundHandle = [BNAKC_Jetpacks_fnc_frameHandler] call CBA_fnc_AddPerFrameHandler;
+ * BNA_KC_Jet_JetpackSoundHandle = [BNA_KC_Jetpacks_fnc_frameHandler] call CBA_fnc_AddPerFrameHandler;
  */
 
 
@@ -19,7 +20,7 @@ if (isGamePaused) exitWith {};  // Can cause sound effects to build up
 #define GET_STRING(config, defaultValue) (if (isText (config)) then {getText (config)} else {defaultValue})
 
 // Don't play effects for units on the ground or who can't jetpack
-if (!(ace_player call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround ace_player) exitWith {};
+if (!(ace_player call FUNC(canJetpack)) or isTouchingGround ace_player) exitWith {};
 
 private _jetpack = backpack ace_player;
 
