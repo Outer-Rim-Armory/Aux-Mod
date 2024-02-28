@@ -23,20 +23,15 @@ params ["_unit", "_jetpack", "_oldFuel", "_currentFuel"];
 private _display = missionNamespace getVariable ["BNA_KC_Jet_fuelDisplay", [displayNull]] select 0;
 
 // Get current display values
-private _ctrlFuel = _display displayCtrl 9001; // Idc for the fuel control
-private _ctrlFuelPos = ctrlPosition _ctrlFuel; // Returns array of x, y, width, height
-
-// Sizes for the fuel display, these values MUST match the ones defined in BNA_KC_Jet_Dialog
-#define WINDOW_HEIGHT 0.3
-#define FUEL_HEIGHT WINDOW_HEIGHT * 0.95// 95% height of background
-
+private _ctrlFuel = _display displayCtrl IDC_FUELDISPLAY_FUEL;
+private _ctrlFuelPos = ctrlPosition _ctrlFuel;
 // Decrease height
 private _ctrlFuelOldHeight = _ctrlFuelPos select 3;
-_ctrlFuel ctrlSetPositionH FUEL_HEIGHT * ([_jetpack, true] call BNAKC_Jetpacks_fnc_getJetpackFuel); // Returns value from 0 to 1
+_ctrlFuel ctrlSetPositionH FUELDISPLAY_FUEL_H * ([_jetpack, true] call BNAKC_Jetpacks_fnc_getJetpackFuel); // Returns value from 0 to 1
 
 // Move display downwards
 // Get difference in height
-private _ctrlFuelNewHeight = _ctrlFuelOldHeight - (FUEL_HEIGHT * ([_jetpack, true] call BNAKC_Jetpacks_fnc_getJetpackFuel));
+private _ctrlFuelNewHeight = _ctrlFuelOldHeight - (FUELDISPLAY_FUEL_H * ([_jetpack, true] call BNAKC_Jetpacks_fnc_getJetpackFuel));
 // Move display downwards by height difference
 _ctrlFuel ctrlSetPositionY (_ctrlFuelPos # 1) + (_ctrlFuelNewHeight);
 
