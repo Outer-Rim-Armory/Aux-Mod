@@ -14,12 +14,6 @@ class CfgFunctions
             class fuelHandler {};
         };
 
-        class JetDialog
-        {
-            file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\JetDialog";
-            class jetDialogUpdateFuelLevel {};
-        };
-
         class Utils
         {
             file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\Utils";

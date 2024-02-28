@@ -47,6 +47,6 @@ if !(alive ace_player and
 
 _jetpack = backpackContainer ace_player;
 _fuel = _jetpack call BNAKC_Jetpacks_fnc_getJetpackFuel;
-[ace_player, _jetpack, _fuel, _fuel] call BNAKC_Jetpacks_fnc_jetDialogUpdateFuelLevel;
+[ace_player, _jetpack, _fuel, _fuel] call FUNC(updateFuelDisplay);
 
 true;

@@ -43,5 +43,5 @@ _fuelAmount = _fuelAmount max 0; // Prevents fuel from going negative
 _jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuelAmount, true];
 if (_sendEvent) then
 {
-    ["BNA_KC_Jet_FuelChanged", [ace_player, _jetpack, _oldFuel, _fuel]] call CBA_fnc_globalEvent;
+    [QGVAR(fuelChanged), [ace_player, _jetpack, _oldFuel, _fuel]] call CBA_fnc_localEvent;
 };

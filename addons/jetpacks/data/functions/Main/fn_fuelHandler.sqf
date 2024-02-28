@@ -47,4 +47,4 @@ for "_i" from 1 to _fuelCoef + 1 do
 };
 
 _jetpack setVariable ["BNA_KC_Jet_currentFuel", _fuel, true];
-["BNA_KC_Jet_FuelChanged", [ace_player, _jetpack, _oldFuel, _fuel]] call CBA_fnc_LocalEvent;
+[QGVAR(fuelChanged), [ace_player, _jetpack, _oldFuel, _fuel]] call CBA_fnc_localEvent;

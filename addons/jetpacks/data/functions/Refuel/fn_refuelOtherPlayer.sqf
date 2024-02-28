@@ -77,7 +77,7 @@ private _refuelHandler =
     };
 
     [_target, _targetNewFuel, false] call BNAKC_Jetpacks_fnc_setJetpackFuel;
-    ["BNA_KC_Jet_FuelChanged", [_target, backpackContainer _target, _targetFuel, _targetNewFuel], _target] call CBA_fnc_targetEvent;
+    [QGVAR(fuelChanged), [_target, backpackContainer _target, _targetFuel, _targetNewFuel], _target] call CBA_fnc_targetEvent;
 };
 
 
