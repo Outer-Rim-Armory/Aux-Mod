@@ -39,6 +39,7 @@ class CfgMagazines
 
         ammo = QCLASS(Bullet_PlasmaStun);
         count = 10;
+        mass = 6;
     };
 
     class CLASS(Mag_StunLong): CLASS(Mag_StunShort)
