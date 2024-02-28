@@ -33,7 +33,7 @@ if !(CWR_AutoMessages_Uncon) exitWith {};
         _nearbyPlayers = [_unit, _nearbyPlayers] call CWR_fnc_sortByDistance;
         format ["Sorted _nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
 
-        private _closestPlayer = _nearbyPlayers#1;
+        private _closestPlayer = _nearbyPlayers#0;
 
         [_closestPlayer, format ["%1 is down!", name _unit]] call CWR_fnc_sendLocalMessage;
 
