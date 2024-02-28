@@ -10,7 +10,7 @@
  * None
  *
  * Examples:
- * modifierFunction = "_this call BNA_KC_shields_fnc_modifyInteraction;"
+ * modifierFunction = QUOTE(_this call FUNC(modifyInteraction);)
  */
 
 params ["_target", "_player", "_params", "_actionData"];
