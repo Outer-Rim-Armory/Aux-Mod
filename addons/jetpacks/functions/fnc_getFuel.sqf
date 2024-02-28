@@ -26,7 +26,7 @@ TRACE_2("fnc_getFuel",_unit,_returnPercent);
 
 _jetpack = backpackContainer _unit;
 
-if (isNull _unit or {!(_unit call FUNC(hasJetpack))}) exitWith {"Failed in getFuel"};
+if (isNull _unit or {!(_unit call FUNC(hasJetpack))}) exitWith {};
 
 _maxFuel = _jetpack getVariable [QGVAR(maxFuel), 100];
 _fuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];

@@ -28,7 +28,7 @@ _jetpack = backpackContainer _unit;
 if (isNull _unit or
     {_fuelAmount < 0} or
     {!(_unit call FUNC(hasJetpack))}
-) exitWith {"Failed in setFuel"};
+) exitWith {};
 
 _maxFuel = _jetpack getVariable [QGVAR(maxFuel), 100]; // TODO: replace with macro default
 _oldFuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];
