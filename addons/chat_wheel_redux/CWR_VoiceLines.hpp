@@ -75,4 +75,18 @@ class CWR_VoiceLines
             "ChatWheelRedux\Data\Audio\Unconscious\TrooperDown.wss"
         };
     };
+
+    class Sorry
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\Sorry\IHopeTheyDontWriteAReport.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\MyApologies.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\Sorry.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\Sorry2.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\SorryAboutThat.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\SorryIHopeTheyDontWriteAReport.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\SorrySir.wss"
+        };
+    };
 };
