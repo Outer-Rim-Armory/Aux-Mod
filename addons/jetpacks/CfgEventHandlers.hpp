@@ -29,7 +29,7 @@ class Extended_Init_EventHandlers
     {
         class GVAR(refuel)
         {
-            init = QUOTE(_this#0 lockInventory true; [ARR_2(_this#0,1)] call BNA_KC_Jetpacks_fnc_addRefuelActions);
+            init = QUOTE(_this#0 lockInventory true; _this#0 call FUNC(addRefuelAction));
         };
     };
 };

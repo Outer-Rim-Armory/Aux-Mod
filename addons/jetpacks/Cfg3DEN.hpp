@@ -13,14 +13,14 @@ class Cfg3DEN
                     class GVAR(isRefuelStation)
                     {
                         displayName = "Jetpack Refuel Station";
-                        tooltip = "Set if the object should act as a jetpack refuel station";
+                        tooltip = "Set if the object should act as a jetpack refuel station.";
                         property = QGVAR(isRefuelStationID);
 
                         control = "CheckboxNumber";
                         defaultValue = FALSE;
 
                         condition = "objectHasInventoryCargo";
-                        expression = QUOTE([ARR_2(_this,_value)] call BNA_KC_Jetpacks_fnc_addRefuelActions);
+                        expression = QUOTE([ARR_2(_this,_value)] call FUNC(addRefuelAction));
                     };
                 };
             };

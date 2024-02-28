@@ -16,8 +16,6 @@ class CfgFunctions
         class Fuel
         {
             file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\Refuel";
-            class addRefuelActions {};
-
             class refuelFromBody {};
             class canRefuelFromBody {};
             class refuelOtherPlayer {};
