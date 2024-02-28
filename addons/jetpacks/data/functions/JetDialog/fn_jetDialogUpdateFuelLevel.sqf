@@ -19,12 +19,6 @@
 
 params ["_unit", "_jetpack", "_oldFuel", "_currentFuel"];
 
-// Remove display if it shouldn't be shown (i.e. piloting a vehicle, etc.)
-if !(_unit call BNAKC_Jetpacks_fnc_shouldShowJetDialog) exitWith
-{
-    (QGVAR(RscFuelDisplay_Layer) call BIS_fnc_RscLayer) cutFadeOut 0.5;
-};
-
 // Variables
 private _display = missionNamespace getVariable ["BNA_KC_Jet_fuelDisplay", [displayNull]] select 0;
 

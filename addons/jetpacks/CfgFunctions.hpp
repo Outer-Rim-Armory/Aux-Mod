@@ -18,8 +18,6 @@ class CfgFunctions
         {
             file = "\ORA\BNA_KC\addons\jetpacks\Data\Functions\JetDialog";
             class jetDialogUpdateFuelLevel {};
-            class shouldShowJetDialog {};
-            class jetDialogShowHide {};
         };
 
         class Utils
