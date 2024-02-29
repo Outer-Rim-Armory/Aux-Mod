@@ -22,6 +22,6 @@ class CfgSFX
     SOUND_FX(EPF_Radio,"[KC] Holonet News",EPF_Radio.ogg);
     SOUND_FX(EPF_Radio2,"[KC] Holonet News 2",EPF_Radio2.ogg);
     SOUND_FX(EPF_Radio3,"[KC] Holonet News 3",EPF_Radio3.ogg);
+    SOUND_FX(EPF_PresidenteSpeech,"[KC] El Presidente Speech",EPF_PresidenteSpeech.ogg);
     SOUND_FX(TDI_Theme,"[KC] Total Drama Island Theme",TDI_Theme.ogg);
-    SOUND_FX(Pres_Speech,"[KC] El Presidente Speech",Pres_Speech.ogg);
 };

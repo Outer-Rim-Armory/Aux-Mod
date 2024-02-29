@@ -21,6 +21,6 @@ class CfgSounds
     SOUND(EPF_Radio,"Holownet News",EPF_Radio.ogg,"News broadcast");
     SOUND(EPF_Radio2,"Holownet News 2",EPF_Radio2.ogg,"News broadcast");
     SOUND(EPF_Radio3,"Holownet News 3",EPF_Radio3.ogg,"News broadcast");
-    SOUND_FX(TDI_Theme,"[KC] Total Drama Island Theme",TDI_Theme.ogg);
-    SOUND_FX(Pres_Speech,"[KC] El Presidente Speech",Pres_Speech.ogg);
+    SOUND(EPF_PresidenteSpeech,"[KC] El Presidente Speech",EPF_PresidenteSpeech.ogg,"El Presidente speech");
+    SOUND(TDI_Theme,"[KC] Total Drama Island Theme",TDI_Theme.ogg,"Total Drama Island theme");
 };
