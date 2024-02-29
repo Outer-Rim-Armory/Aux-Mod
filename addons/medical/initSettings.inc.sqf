@@ -3,7 +3,7 @@
     "LIST",
     ["Reorient - Required Medic Level", "Medical level required to reorient a patient."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
-    [[0, 1, 2, 50], ["Anyone", "Medic", "Doctors", "No one"], 3],
+    [[0, 1, 2, 50], ["Anyone", "Medics", "Doctors", "No one"], 3],
     TRUE
 ] call CBA_fnc_addSetting;
 
