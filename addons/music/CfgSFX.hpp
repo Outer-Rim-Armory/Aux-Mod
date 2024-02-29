@@ -19,7 +19,9 @@ class CfgSFX
     SOUND_FX(CarnageRoar3,"[KC] Carnage Roar 3",Carnage_Roar3.ogg);
     SOUND_FX(CarnageRoar4,"[KC] Carnage Roar 4",Carnage_Roar4.ogg);
     SOUND_FX(LetThereBeCarnage,"[KC] Let There Be Carnage",Let_There_Be_Carnage.ogg);
-    SOUND_FX(EPF_Radio,"[KC] Holownet News",EPF_Radio.ogg);
-    SOUND_FX(EPF_Radio2,"[KC] Holownet News 2",EPF_Radio2.ogg);
-    SOUND_FX(EPF_Radio3,"[KC] Holownet News 3",EPF_Radio3.ogg);
+    SOUND_FX(EPF_Radio,"[KC] Holonet News",EPF_Radio.ogg);
+    SOUND_FX(EPF_Radio2,"[KC] Holonet News 2",EPF_Radio2.ogg);
+    SOUND_FX(EPF_Radio3,"[KC] Holonet News 3",EPF_Radio3.ogg);
+    SOUND_FX(TDI_Theme,"[KC] Total Drama Island Theme",TDI_Theme.ogg);
+    SOUND_FX(Pres_Speech,"[KC] El Presidente Speech",Pres_Speech.ogg);
 };
