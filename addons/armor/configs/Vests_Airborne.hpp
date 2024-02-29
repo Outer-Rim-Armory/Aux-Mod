@@ -67,6 +67,7 @@ class CLASS(Vest_Airborne_CT_Light): CLASS(Vest_Basic)
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Ammo
         ""                                                            // Pauldron
     };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
 
     class ItemInfo: ItemInfo
     {
@@ -77,7 +78,7 @@ class CLASS(Vest_Airborne_CT_Light): CLASS(Vest_Basic)
 
 class CLASS(Vest_Airborne_CS_Light): CLASS(Vest_Airborne_CT_Light)
 {
-    displayName = "[KC] AB Vest 06 (Sergeant, Light)";
+    displayName = "[KC] AB Vest 06 (NCO, Light)";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
@@ -89,7 +90,7 @@ class CLASS(Vest_Airborne_CS_Light): CLASS(Vest_Airborne_CT_Light)
 
 class CLASS(Vest_Airborne_LifeSaver): CLASS(Vest_Medic)
 {
-    displayName = "[KC] AB MED Vest 01+ (Life Saver)";
+    displayName = "[KC] AB MED Vest 01 (Life Saver)";
     model = "\SWLB_CEE\data\SWLB_CEE_Airborne_CFR.p3d";
     hiddenSelections[] = {"camo1", "camo2", "ammo", "pauldron"};
     hiddenSelectionsTextures[] =
@@ -110,7 +111,7 @@ class CLASS(Vest_Airborne_LifeSaver): CLASS(Vest_Medic)
 
 class CLASS(Vest_Airborne_LifeSaverNCO): CLASS(Vest_Airborne_LifeSaver)
 {
-    displayName = "[KC] AB MED Vest 04+ (NCO Life Saver)";
+    displayName = "[KC] AB MED Vest 04 (NCO Life Saver)";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\vests\infantry\heavy\Medic_v2_camo1_co.paa),

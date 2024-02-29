@@ -272,7 +272,7 @@ class CfgWeapons
 
     class CLASS(NVG_phase2_Rangefinder): CLASS(NVG_phase1_Rangefinder)
     {
-        displayName = "[KC] Clone P2 Rangefinder (CS+)";
+        displayName = "[KC] Clone P2 Rangefinder";
 
         model = "\lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
         hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\rangefinder_camo1_co.paa)};
@@ -286,7 +286,7 @@ class CfgWeapons
 
     class CLASS(NVG_phase1_Officer): CLASS(NVG_Chip)
     {
-        displayName = "[KC] Clone P1 Officer Visor (WO+)";
+        displayName = "[KC] Clone P1 Officer Visor";
 
         model = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
         hiddenSelections[] = {"camo1", "camo2", "camo3"};
@@ -308,7 +308,7 @@ class CfgWeapons
 
     class CLASS(NVG_phase2_Officer): CLASS(NVG_phase1_Officer)
     {
-        displayName = "[KC] Clone P2 Officer Visor (WO+)";
+        displayName = "[KC] Clone P2 Officer Visor";
 
         model = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
         hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\officer_camo1_co.paa)};

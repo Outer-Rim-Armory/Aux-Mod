@@ -24,7 +24,7 @@ class CLASS(Helmet_Phase2_Pilot_Base): CLASS(Helmet_Base)
 
 class CLASS(Helmet_Phase2_Pilot_CXA): CLASS(Helmet_Phase2_Pilot_Base)
 {
-    displayName = "[KC] AVI P2 Helm 01+ (Airman)";
+    displayName = "[KC] AVI P2 Helm 01 (Airman)";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase2Pilot\CXA_camo1_co.paa),
@@ -34,7 +34,7 @@ class CLASS(Helmet_Phase2_Pilot_CXA): CLASS(Helmet_Phase2_Pilot_Base)
 
 class CLASS(Helmet_Phase2_Pilot_CXE): CLASS(Helmet_Phase2_Pilot_Base)
 {
-    displayName = "[KC] AVI P2 Helm 11+ (Ensign)";
+    displayName = "[KC] AVI P2 Helm 06 (Ensign)";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase2Pilot\CXE_camo1_co.paa),
@@ -44,7 +44,7 @@ class CLASS(Helmet_Phase2_Pilot_CXE): CLASS(Helmet_Phase2_Pilot_Base)
 
 class CLASS(Helmet_Phase2_Pilot_Officer_CamoBrown): CLASS(Helmet_Phase2_Pilot_CXE)
 {
-    displayName = "[KC] AVI P2 Helm 11+ (Officer) - Brown Camo";
+    displayName = "[KC] AVI P2 Helm 06+ (Officer) - Brown Camo";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase2Pilot\camo\brown\Officer_camo1_co.paa),
@@ -53,7 +53,7 @@ class CLASS(Helmet_Phase2_Pilot_Officer_CamoBrown): CLASS(Helmet_Phase2_Pilot_CX
 };
 class CLASS(Helmet_Phase2_Pilot_Officer_CamoGrey): CLASS(Helmet_Phase2_Pilot_CXE)
 {
-    displayName = "[KC] AVI P2 Helm 11+ (Officer) - Grey Camo";
+    displayName = "[KC] AVI P2 Helm 06+ (Officer) - Grey Camo";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase2Pilot\camo\grey\Officer_camo1_co.paa),
