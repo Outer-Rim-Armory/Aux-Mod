@@ -26,7 +26,7 @@ class ACE_Medical_Treatment_Actions
         condition = QUOTE(!(_patient call ace_common_fnc_isAwake));
         callbackFailure = "";
         callbackProgress = "";
-        callbackSuccess = QUOTE(_patient call FUNC(reorient));
+        callbackSuccess = QUOTE([ARR_2(_medic,_patient)] call FUNC(reorient));
         callbackStart = "";
 
         animationMedic = "";
