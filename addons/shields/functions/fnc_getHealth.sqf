@@ -24,16 +24,12 @@ params [
 private ["_maxHealth", "_health", "_return"];
 TRACE_3("fnc_getHealth",_vehicle,_returnPercent,_returnMax);
 
-_hasShield = [
-    configFile >> "CfgVehicles" >> typeOf _vehicle,
-    QGVAR(hasShield),
-    FALSE
-];
+_hasShield = getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> QGVAR(hasShield));
 
-if (isNull _vehicle or {
-    !alive _vehicle or
-    _hasShield isEqualTo FALSE
-}) exitWith {0};
+if (isNull _vehicle or
+    {!alive _vehicle} or
+    {_hasShield isEqualTo FALSE}
+) exitWith {-1};
 
 _maxHealth = [
     configFile >> "CfgVehicles" >> typeOf _vehicle,

@@ -27,12 +27,12 @@ _shieldHealth = [_vehicle, true] call FUNC(getHealth);
 _hasToolkit = false;
 {if (_x in items _unit) exitWith {_hasToolKit = true};} forEach ace_repair_allToolKits;
 
-if (isNull _vehicle or {
-    !isTouchingGround _vehicle or
-    isNull _unit or
-    !(_unit call ace_repair_fnc_isEngineer) or
-    !_hasToolkit or
-    _shieldHealth == 100
-}) exitWith {false;};
+if (isNull _vehicle or
+    {!isTouchingGround _vehicle} or
+    {isNull _unit} or
+    {!_hasToolkit} or
+    {_shieldHealth == 100} or
+    {!(_unit call ace_repair_fnc_isEngineer)}
+) exitWith {false;};
 
 true;
