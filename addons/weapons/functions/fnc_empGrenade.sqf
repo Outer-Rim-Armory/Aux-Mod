@@ -25,8 +25,12 @@ params [
 private ["_radiusDroid", "_radiusDroideka", "_radiusVehicle", "_positionASL", "_positionAGL", "_nearbyPlayers", "_nearbyUnits", "_nearbyVehicles", "_nearbyDroidekas", "_droidekaShields"];
 TRACE_4("fnc_empGrenade",_unit,_ammo,_magazine,_projectile);
 
-if (isNull _unit or isNull _projectile) exitWith {false;};
-if (_ammo isEqualTo "" or _magazine isEqualTo "") exitWith {false;};
+if (!GVAR(empEnabled) or
+    {isNull _unit} or
+    {isNull _projectile} or
+    {_ammo isEqualTo ""} or
+    {_magazine isEqualTo ""}
+) exitWith {false;};
 
 _radiusDroid = [
     configFile >> "CfgMagazines" >> _magazine,
