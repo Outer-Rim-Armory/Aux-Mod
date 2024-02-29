@@ -15,3 +15,12 @@
     [0, 1, 0.65, 0, true],
     TRUE
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(reorient_treatmentTime),
+    "SLIDER",
+    ["Reorient - Treatment Time", "Treatment time for the reorient action."],
+    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
+    [1, 30, 8, 0],
+    TRUE
+] call CBA_fnc_addSetting;

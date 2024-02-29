@@ -21,7 +21,7 @@ class ACE_Medical_Treatment_Actions
         allowedSelections[] = {"Head"};
 
         medicRequired = QGVAR(reorient_medicRequired);
-        treatmentTime = 2;
+        treatmentTime = QGVAR(reorient_treatmentTime);
 
         condition = QUOTE(!(_patient call ace_common_fnc_isAwake));
         callbackFailure = "";
