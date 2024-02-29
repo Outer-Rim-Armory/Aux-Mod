@@ -1,4 +1,13 @@
 [
+    QGVAR(empEnabled),
+    "CHECKBOX",
+    ["Enabled", "Enables EMP weapon systems."],
+    [QUOTE(MOD_NAME), "EMP"],
+    true,
+    TRUE
+] call CBA_fnc_addSetting;
+
+[
     QGVAR(empVehicleDisableDuration),
     "SLIDER",
     ["Vehicle Disable Duration", "The time in seconds that a vehicle is disabled for by an emp weapon."],
@@ -41,6 +50,15 @@
 ] call CBA_fnc_addSetting;
 
 if (ADDON_LOADED(CLASS(medical))) then {
+    [
+        QGVAR(bactaEnabled),
+        "CHECKBOX",
+        ["Enabled", "Enables bacta grenades."],
+        [QUOTE(MOD_NAME), "Bacta"],
+        true,
+        TRUE
+    ] call CBA_fnc_addSetting;
+
     [
         QGVAR(bactaBloodRestoreAmount),
         "SLIDER",

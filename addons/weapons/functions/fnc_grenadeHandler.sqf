@@ -36,10 +36,14 @@ if (_ammoType isEqualTo AMMO_TYPE_NORMAL) exitWith {};
 
         switch (_ammoType) do {
             case AMMO_TYPE_EMP: {
-                [_unit, _ammo, _magazine, _projectile] call FUNC(empGrenade);
+                if (GVAR(empEnabled)) then {
+                    [_unit, _ammo, _magazine, _projectile] call FUNC(empGrenade);
+                };
             };
             case AMMO_TYPE_BACTA: {
-                [_unit, _ammo, _magazine, _projectile] call FUNC(bactaGrenade);
+                if (GVAR(bactaEnabled)) then {
+                    [_unit, _ammo, _magazine, _projectile] call FUNC(bactaGrenade);
+                };
             };
             default {};
         };
