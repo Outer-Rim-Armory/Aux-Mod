@@ -29,7 +29,7 @@ class ACE_Medical_Treatment_Actions
         callbackSuccess = QUOTE(_patient call FUNC(reorient));
         callbackStart = "";
 
-        animationMedic = "AwopPknlMstpSgthWrflDnon_End";
-        animationMedicProne = "AwopPpneMstpSgthWnonDnon_Fast_End";
+        animationMedic = "";
+        animationMedicProne = "";
     };
 };
