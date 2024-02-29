@@ -23,7 +23,7 @@ class ACE_Medical_Treatment_Actions
         medicRequired = QGVAR(reorient_medicRequired);
         treatmentTime = 2;
 
-        condition = QUOTE(!([_patient] call ace_common_fnc_isAwake));
+        condition = QUOTE(!(_patient call ace_common_fnc_isAwake));
         callbackFailure = "";
         callbackProgress = "";
         callbackSuccess = QUOTE(_patient call FUNC(reorient));
