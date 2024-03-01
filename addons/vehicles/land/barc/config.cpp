@@ -13,7 +13,8 @@ class CfgPatches
             QUOTE(ADDON),
             QGVAR(weapons),
             QGVAR(sounds),
-            "3AS_LightVics_Barc"
+            "3AS_LightVics_Barc",
+            "ls_vehicles_ground"
         };
         units[] =
         {
