@@ -37,7 +37,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_LightVics\3AS_BARC\data\barc_rep_co.paa"};
 
-        weapons[] = {"3AS_BARC_repeater", "ls_speeder_AP"};
+        weapons[] = {QCLASS(Turret_BARC), "ls_speeder_AP"};
         magazines[] =
         {
             "3AS_BARC_Mag",
