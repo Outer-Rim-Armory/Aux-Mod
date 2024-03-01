@@ -66,10 +66,11 @@ class CfgVehicles
             };
         };
 
-        soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\barc\Engine_On.wss), 1, 1, 200};
-        soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\barc\Engine_On.wss), 1, 1, 200};
-        soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\barc\Engine_Off.wss), 1, 1, 200};
-        soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\barc\Engine_Off.wss), 1, 1, 200};
+        // Engine_On refuses to convert to .wss for seemingly no reason
+        soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\barc\Engine_On.ogg), 1, 1};
+        soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\barc\Engine_Off.wss), 1, 1};
+        soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\barc\Engine_On.ogg), 1, 1, 100};
+        soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\barc\Engine_Off.wss), 1, 1, 100};
 
         // TODO: WIP
         /*
