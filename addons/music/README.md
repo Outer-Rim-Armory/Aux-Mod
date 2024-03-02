@@ -45,4 +45,4 @@ MUSIC(MC_Sweden,"[MC] Sweden",575,VideoGames);
    3. Third is the range in meters that the sound can be heard from, the most common range is 100 meters.
 5. Go to `CfgVehicles.hpp` and use the `SOUND_OBJ` macro.
    1. First value is the name of the sound without the file extenstion. **This should match the name in `CfgSounds`.**
-   2. Second is the name of the sound in-game, it should begin with "[KC]".
+   2. Second is the name of the sound in-game, it should begin with "[KC]" and be in quotes.
