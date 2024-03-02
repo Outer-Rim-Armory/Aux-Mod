@@ -10,7 +10,7 @@ class CfgVehicles
                 displayName = "Clear Effects";
                 icon = "";
 
-                condition = QUOTE(isTouchingGround _player and {(_player getVariable [ARR_2(QQGVAR(effectSources),[])] isNotEqualTo [])});
+                condition = QUOTE(isTouchingGround _player and {_player call FUNC(hasJetpack)});
                 statement = QUOTE(_player call FUNC(clearEffects));
             };
         };
