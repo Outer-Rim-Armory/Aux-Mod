@@ -1,5 +1,8 @@
 # Music
 
+#### | [Music](https://github.com/DartRuffian/KeeliCompanyAux/tree/docs/music-readme/addons/music#music-1) | [Sound Effects](https://github.com/DartRuffian/KeeliCompanyAux/tree/docs/music-readme/addons/music#ambient-sounds) |
+
+
 This is a general description on how to add music, sounds, and sound effects to Arma in the Keeli Company Auxillary mod.
 
 "Important" audio files like music, ambient sounds, etc. should be `.ogg` files. They allow for higher quality compared to other file types, like Arma's `.wss` file.
