@@ -27,3 +27,22 @@ MUSIC(MC_Sweden,"[MC] Sweden",575,VideoGames);
    2. Second is the name of the music track in-game, it should have tag and song name in quotes.
    3. Third is the length of the song in seconds. If it's incorrect, it will likely have issues when played in game.
    4. Fourth is the music category the song belongs to. These are defined in `CfgMusicClasses.hpp`, just include the shortned name, `StarWars`, `VideoGames`, `Other`, etc.
+
+## Ambient Sounds
+
+"Ambient sounds" as we use them can be played with the "Play Sound" module in Zeus, but can be tricky to set up since they require three different classes to be made for them to work properly.
+
+### Steps
+1. Place your `.ogg` file in `addons\music\data\ambience`
+2. The name is not as specific as it is for music, most names will work but try to keep them similarly named.
+3. Go to `CfgSounds.hpp` and use the `SOUND` macro to set up your sound effect.
+   1. First value is the name of the sound without the file extension. **It must match.**__**
+   2. Second is the name of the sound effect in-game, it should be in quotes.
+   3. Third is the subtitles that will play when the sound is used.
+4. Go to `CfgSFX.hpp` and use the `SOUND_FX` macro.
+   1. First value is the name of the sound without the file extenstion. **This should match the name in `CfgSounds`.**
+   2. Second is the name of the sound in-game, this is what is shown in the "Play Sound" module, it should start with "[KC]" and be in quotes.
+   3. Third is the range in meters that the sound can be heard from, the most common range is 100 meters.
+5. Go to `CfgVehicles.hpp` and use the `SOUND_OBJ` macro.
+   1. First value is the name of the sound without the file extenstion. **This should match the name in `CfgSounds`.**
+   2. Second is the name of the sound in-game, it should begin with "[KC]".
