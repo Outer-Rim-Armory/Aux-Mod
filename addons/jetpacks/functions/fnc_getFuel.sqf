@@ -28,7 +28,7 @@ _jetpack = backpackContainer _unit;
 
 if (isNull _unit or {!(_unit call FUNC(hasJetpack))}) exitWith {};
 
-_maxFuel = _jetpack getVariable [QGVAR(maxFuel), 100];
+_maxFuel = _jetpack getVariable [QGVAR(maxFuel), JETPACK_FUEL_DEFAULT];
 _fuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];
 
 _jetpack setVariable [QGVAR(fuel), _fuel, true];
