@@ -1,6 +1,7 @@
 PREP(addRefuelAction);
 PREP(canJetpack);
 PREP(canRefuelFromBody);
+PREP(canRefuelPlayer);
 PREP(clearEffects);
 PREP(getFuel);
 PREP(hasJetpack);
