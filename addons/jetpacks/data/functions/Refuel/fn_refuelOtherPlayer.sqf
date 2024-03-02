@@ -26,7 +26,7 @@ params ["_target", "_player", "_params"];
 
 private _fuelCanMaxFuel = [(configFile >> "CfgMagazines" >> _fuelCan), "count", 400] call BIS_fnc_returnConfigEntry;
 private _targetFuel = _target call FUNC(getFuel);
-private _targetMaxFuel = [(configFile >> "CfgVehicles" >> backpack _target), QGVAR(fuel), JETPACK_FUEL_DEFAULT] call BIS_fnc_returnConfigEntry;
+private _targetMaxFuel = [(configFile >> "CfgVehicles" >> backpack _target), QGVAR(fuel), 100] call BIS_fnc_returnConfigEntry;
 
 private _fuelToRefill = round ((_fuelCanFuel + _targetFuel) min _targetMaxFuel) - _targetFuel;
 private _refuelTime = _fuelToRefill / REFUEL_PER_SECOND;
@@ -51,7 +51,7 @@ private _refuelHandler =
 
     [_player, true] call BNA_KC_Jetpacks_fnc_getFuelCan params ["_fuelCan", "_fuelCanFuel"];
     private _targetFuel = _target call FUNC(getFuel);
-    private _targetMaxFuel = [(configFile >> "CfgVehicles" >> backpack _target), QGVAR(fuel), JETPACK_FUEL_DEFAULT] call BIS_fnc_returnConfigEntry;
+    private _targetMaxFuel = [(configFile >> "CfgVehicles" >> backpack _target), QGVAR(fuel), 100] call BIS_fnc_returnConfigEntry;
 
     // Remove up to REFUEL_PER_SECOND fuel units, cap at 0 in case it goes negative
     private _targetNewFuel = (_targetFuel + REFUEL_PER_SECOND) min _targetMaxFuel;

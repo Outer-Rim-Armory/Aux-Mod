@@ -30,7 +30,7 @@ if (isNull _unit or
     {!(_unit call FUNC(hasJetpack))}
 ) exitWith {};
 
-_maxFuel = _jetpack getVariable [QGVAR(maxFuel), JETPACK_FUEL_DEFAULT];
+_maxFuel = _jetpack getVariable [QGVAR(maxFuel), 100]; // TODO: replace with macro default
 _oldFuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];
 _fuelAmount = CLAMP(_fuelAmount,0,_maxFuel);
 
