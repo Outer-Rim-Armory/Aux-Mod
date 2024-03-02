@@ -15,7 +15,7 @@
  */
 
 
-params ["_unit", ["_ignoreFull", true], ["_ignoreEmpty", false]];
+params ["_unit", ["_ignoreFull", false], ["_ignoreEmpty", false]];
 
 private _canClass = "";
 private _fuelLevel = 0;
