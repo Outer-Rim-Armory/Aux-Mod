@@ -104,6 +104,7 @@ class CfgVehicles
         };
 
         maximumLoad = 400;
+        EGVAR(custom_armor,isCustom) = TRUE;
     };
 
     class CLASS(Backpack): CLASS(Backpack_Base)
@@ -306,7 +307,7 @@ class CfgVehicles
         };
         picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
     };
-    class CLASS(Backpack_ARC): CLASS(Backpack_Medic_Radio_Base)
+    class CLASS(Backpack_ARC): CLASS(Backpack_Radio_Base)
     {
         displayName = "[KC] ARC Trooper Backpack";
 
@@ -332,6 +333,7 @@ class CfgVehicles
         };
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
         maximumLoad = 450;
+        EGVAR(custom_armor,isCustom) = FALSE;
     };
 
     class CLASS(Backack_Commando_EOD): CLASS(Backack_Commando)
@@ -398,6 +400,7 @@ class CfgVehicles
             "JLTS_jumppack_error",
             "JLTS_SFX_jumppack_idle"
         };
+        EGVAR(custom_armor,isCustom) = FALSE;
     };
     class CLASS(Jetpack_JT12_LR): CLASS(Jetpack_JT12)
     {

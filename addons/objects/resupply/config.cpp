@@ -24,7 +24,8 @@ class CfgPatches
             QCLASS(Resupply_SquadAmmo_Heavy),
             QCLASS(Resupply_PlatoonAmmo_Heavy),
             QCLASS(Resupply_SquadMedical),
-            QCLASS(Resupply_PlatoonMedical)
+            QCLASS(Resupply_PlatoonMedical),
+            QCLASS(Resupply_DisposableLaunchers),
         };
         weapons[] = {};
         VERSION_CONFIG;

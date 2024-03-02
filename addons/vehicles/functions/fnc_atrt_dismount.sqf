@@ -2,11 +2,10 @@
 /*
  * Author: 3AS
  * Edited by DartRuffian
- * Mounts a unit on an AT-RT
+ * Dismounts an AT-RT.
  *
  * Arguments:
  * 0: The AT-RT <OBJECT>
- * 1: The unit dismounting the AT-RT <OBJECT>
  *
  * Return Value:
  * None
@@ -23,12 +22,13 @@ params [
 private ["_rider", "_direction", "_positionATL"];
 TRACE_1("fnc_atrt_dismount",_atrt);
 
-_rider = _atrt getVariable [QGVAR(rider), objNull];
+_rider = _atrt getVariable ["TAS_ATRT_rider", objNull];
 if (isNull _rider) exitWith {};
 
 _atrt disableAI "ANIM";
-_atrt setVariable [QGVAR(rider), objNull, true];
-_rider setVariable [QGVAR(atrt_isRiding), false, true];
+_atrt setVariable ["TAS_ATRT_rider", objNull];
+_rider setVariable [QGVAR(atrt_riding), objNull];
+_rider setVariable ["TAS_ATRT_isRiding", false, true];
 
 _direction = direction _atrt;
 _positionATL = getPosATL _atrt;
@@ -47,7 +47,7 @@ _rider remoteControl objNull;
 
 inGameUISetEventHandler ["Action", ""];
 
-[_rider, "blockThrow", QGVAR(atrt_isRiding), false] call ace_common_fnc_statusEffect_set;
+[_rider, "blockThrow", "TAS_ATRT_isRiding", false] call ace_common_fnc_statusEffect_set;
 
 [_rider, ""] remoteExec ["switchMove"];
 

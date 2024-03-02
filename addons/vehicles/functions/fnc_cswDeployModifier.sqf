@@ -22,7 +22,7 @@ if (_target isEqualTo _player) then {
     // Placing csw weapon
     _configPath = configFile >> "CfgWeapons" >> secondaryWeapon _player >> "ACE_CSW";
 } else {
-    _configPath = configFile >> "CfgVehicles" >> typeOf _target;
+    _configPath = configOf _target;
 };
 
 _name = [

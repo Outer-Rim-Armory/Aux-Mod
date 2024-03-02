@@ -1,5 +1,5 @@
 // Global toggle for compile cache
-// #define DISABLE_COMPILE_CACHE
+#define DISABLE_COMPILE_CACHE
 
 #ifdef __A3_DEBUG__
     #include "\ORA\BNA_KC\addons\core\script_debug.hpp"
@@ -8,6 +8,10 @@
 
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
 #define DEFUNC(var1,var2) TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)
+
+#define EGVAR_ACE(var1,var2) TRIPLES(ace,var1,var2)
+#define QEGVAR_ACE(var1,var2) QUOTE(EGVAR_ACE(var1,var2))
+#define EFUNC_ACE(var1,var2) TRIPLES(DOUBLES(ace,var1),fnc,var2)
 
 #undef PREP
 #ifdef DISABLE_COMPILE_CACHE
@@ -26,6 +30,8 @@
 #define QCLASS(var1) QUOTE(CLASS(var1))
 #define QQCLASS(var1) QUOTE(QCLASS(var1))
 
+#define EDSUBCAT(var1) QCLASS(DOUBLES(EdSubCat,var1))
+
 #define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> QUOTE(var1))
 
 #ifdef SUBCOMPONENT
@@ -37,6 +43,10 @@
 
 #define QQPATHTOF(var1) QUOTE(QPATHTOF(var1))
 #define QQPATHTOEF(var1,var2) QUOTE(QPATHTOEF(var1,var2))
+
+#define IGUI_GVAR(var1) DOUBLES(IGUI,GVAR(var1))
+#define QIGUI_GVAR(var1) QUOTE(IGUI_GVAR(var1))
+#define QQIGUI_GVAR(var1) QUOTE(QIGUI_GVAR(var1))
 
 #define SCOPE_PUBLIC scope = 2; \
 scopeArsenal = 2; \
@@ -96,6 +106,9 @@ scopeCurator = 0
         ITEM_XX(CLASS(WEAP_NAME),1); \
     }; \
 }
+
+// Conditions
+#define IS_STOPPED(var1) isTouchingGround var1 and {speed var1 < 1 and speed var1 > -1}
 
 // Weapon Types
 #define TYPE_WEAPON_PRIMARY 1
@@ -165,3 +178,11 @@ ace_hearing_protection = 0.85
 // Booleans
 #define TRUE 1
 #define FALSE 0
+
+#define IGUI_SAVEX 0
+#define IGUI_SAVEY 1
+#define IGUI_SAVEW 2
+#define IGUI_SAVEH 3
+#define IGUI_SAVEALL IGUI_SAVEX, IGUI_SAVEY, IGUI_SAVEW, IGUI_SAVEH
+
+#define CLAMP(var1,lower,upper) lower max (var1 min upper)

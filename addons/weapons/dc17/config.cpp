@@ -11,8 +11,8 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
+            QGVAR(accessories),
             "JLTS_weapons_DC17SA",
-            "Aux501_Patch_Accessories",
             "ace_laserpointer"
         };
         units[] = {};

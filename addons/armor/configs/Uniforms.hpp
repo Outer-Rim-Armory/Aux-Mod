@@ -258,7 +258,7 @@ class CLASS(Uniform_CXA): CLASS(Uniform_Base)
 
 class CLASS(Uniform_CXE): CLASS(Uniform_Base)
 {
-    displayName = "[KC] AVI Armor 11 (Ensign)";
+    displayName = "[KC] AVI Armor 06 (Ensign)";
 
     class ItemInfo: ItemInfo
     {

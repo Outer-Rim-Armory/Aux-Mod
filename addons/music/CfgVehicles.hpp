@@ -20,4 +20,6 @@ class CfgVehicles
     SOUND_OBJ(EPF_Radio,"[KC] Holownet News");
     SOUND_OBJ(EPF_Radio2,"[KC] Holownet News 2");
     SOUND_OBJ(EPF_Radio3,"[KC] Holownet News 3");
+    SOUND_OBJ(EPF_PresidenteSpeech,"[KC] El Presidente Speech");
+    SOUND_OBJ(TDI_Theme,"[KC] Total Drama Island Theme");
 };

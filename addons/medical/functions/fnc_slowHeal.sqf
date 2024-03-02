@@ -40,9 +40,9 @@ _function = {
 
     if (isGamePaused) then {continue};
 
-    _wounds = _unit getVariable ["ace_medical_openWounds", createHashmap];
-    _bloodLevel = _unit getVariable ["ace_medical_bloodVolume", DEFAULT_BLOOD_VOLUME];
-    _painLevel = _unit getVariable ["ace_medical_pain", 0];
+    _wounds = GET_OPEN_WOUNDS(_unit);
+    _bloodLevel = GET_BLOOD_VOLUME(_unit);
+    _painLevel = GET_PAIN(_unit);
 
     INFO_4("Slow Healer %1 | (Pre-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4",_handle,_wounds,_bloodLevel,_painLevel);
 
@@ -60,17 +60,17 @@ _function = {
                 _wounds deleteAt _bodyPart;
             };
 
-            _unit setVariable ["ace_medical_openWounds", _wounds, true];
+            _unit setVariable [VAR_OPEN_WOUNDS, _wounds, true];
         };
 
         case (_bloodLevel < DEFAULT_BLOOD_VOLUME): {
             _bloodLevel = (_bloodLevel + _bloodRestore) min DEFAULT_BLOOD_VOLUME;
-            _unit setVariable ["ace_medical_bloodVolume", _bloodLevel, true];
+            _unit setVariable [VAR_BLOOD_VOL, _bloodLevel, true];
         };
 
         case (_painLevel > 0): {
             _painLevel = (_painLevel - _painReduce) max 0;
-            _unit setVariable ["ace_medical_pain", _painLevel, true];
+            _unit setVariable [VAR_PAIN, _painLevel, true];
         };
 
         default {

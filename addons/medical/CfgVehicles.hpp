@@ -22,4 +22,10 @@ class CfgVehicles
         EGVAR(objects,pickupTime) = 20;
         EGVAR(objects,interactionPosition)[] = {0, 0, 1};
     };
+
+    class ACE_MedicalLitterBase;
+    class GVAR(litter_Painkiller): ACE_MedicalLitterBase
+    {
+        model = "\kobra\442_misc\medical\StimPerigen.p3d";
+    };
 };

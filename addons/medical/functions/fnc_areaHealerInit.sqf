@@ -23,22 +23,18 @@ TRACE_1("fnc_areaHealerInit",_object);
 if (isNull _object) exitWith {};
 
 _radius = [
-    configFile >> "CfgVehicles" >> typeOf _object,
+    configOf _object,
     QGVAR(areaHealRadius),
     -1
 ] call BIS_fnc_returnConfigEntry;
 
 _rate = [
-    configFile >> "CfgVehicles" >> typeOf _object,
+    configOf _object,
     QGVAR(areaHealRate),
     -1
 ] call BIS_fnc_returnConfigEntry;
 
-_maxPatients = [
-    configFile >> "CfgVehicles" >> typeOf _object,
-    QGVAR(areaHealMaxPatients),
-    0
-] call BIS_fnc_returnConfigEntry;
+_maxPatients = getNumber (configOf _object >> QGVAR(areaHealMaxPatients));
 
 [_object, _radius, _rate, _maxPatients] call FUNC(areaSlowHeal);
 nil;

@@ -5,7 +5,7 @@ class CLASS(Uniform_Base): ls_gar_phase2_uniform
 };
 class CLASS(Uniform_Axel): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Axel')";
+    displayName = "[KC] Custom Armor ('Axel')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -16,7 +16,7 @@ class CLASS(Uniform_Axel): CLASS(Uniform_Base)
 
 class CLASS(Uniform_Burnt): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Burnt')";
+    displayName = "[KC] Custom Armor ('Burnt')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -27,7 +27,7 @@ class CLASS(Uniform_Burnt): CLASS(Uniform_Base)
 
 class CLASS(Uniform_Defter): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Defter')";
+    displayName = "[KC] Custom Armor ('Defter')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -38,7 +38,7 @@ class CLASS(Uniform_Defter): CLASS(Uniform_Base)
 
 class CLASS(Uniform_Dexus): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Dexus')";
+    displayName = "[KC] Custom Armor ('Dexus')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -49,7 +49,7 @@ class CLASS(Uniform_Dexus): CLASS(Uniform_Base)
 
 class CLASS(Uniform_Drake): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Drake')";
+    displayName = "[KC] Custom Armor ('Drake')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -60,7 +60,7 @@ class CLASS(Uniform_Drake): CLASS(Uniform_Base)
 
 class CLASS(Uniform_Joe): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Joe')";
+    displayName = "[KC] Custom Armor ('Joe')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -71,7 +71,7 @@ class CLASS(Uniform_Joe): CLASS(Uniform_Base)
 
 class CLASS(Uniform_Keeli): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Keeli')";
+    displayName = "[KC] Custom Armor ('Keeli')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -81,7 +81,7 @@ class CLASS(Uniform_Keeli): CLASS(Uniform_Base)
 };
 class CLASS(Uniform_Keeli_CamoBrown): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Keeli') - Brown Camo";
+    displayName = "[KC] Custom Armor ('Keeli') - Brown Camo";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -91,7 +91,7 @@ class CLASS(Uniform_Keeli_CamoBrown): CLASS(Uniform_Base)
 };
 class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Keeli') - Grey Camo";
+    displayName = "[KC] Custom Armor ('Keeli') - Grey Camo";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -102,7 +102,7 @@ class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Base)
 
 class CLASS(Uniform_Rat): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Rat')";
+    displayName = "[KC] Custom Armor ('Rat')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -113,7 +113,7 @@ class CLASS(Uniform_Rat): CLASS(Uniform_Base)
 
 class CLASS(Uniform_Sin): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Sin')";
+    displayName = "[KC] Custom Armor ('Sin')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -124,7 +124,7 @@ class CLASS(Uniform_Sin): CLASS(Uniform_Base)
 
 class CLASS(Uniform_Tyrant): CLASS(Uniform_Base)
 {
-    displayName = "[KC] INF Armor ('Tyrant')";
+    displayName = "[KC] Custom Armor ('Tyrant')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -139,7 +139,7 @@ class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base)
 };
 class CLASS(Uniform_Phase2_Insulated_Dexus): CLASS(Uniform_Phase2_Insulated_Base)
 {
-    displayName = "[KC] INF P2 Snow Armor ('Dexus')";
+    displayName = "[KC] Custom P2 Snow Armor ('Dexus')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -150,7 +150,7 @@ class CLASS(Uniform_Phase2_Insulated_Dexus): CLASS(Uniform_Phase2_Insulated_Base
 
 class CLASS(Uniform_Phase2_Insulated_Joe): CLASS(Uniform_Phase2_Insulated_Base)
 {
-    displayName = "[KC] INF P2 Snow Armor ('Joe')";
+    displayName = "[KC] Custom P2 Snow Armor ('Joe')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo
@@ -161,7 +161,7 @@ class CLASS(Uniform_Phase2_Insulated_Joe): CLASS(Uniform_Phase2_Insulated_Base)
 
 class CLASS(Uniform_Phase2_Insulated_Keeli): CLASS(Uniform_Phase2_Insulated_Base)
 {
-    displayName = "[KC] INF P2 Snow Armor ('Keeli')";
+    displayName = "[KC] Custom P2 Snow Armor ('Keeli')";
     GVAR(isCustom) = TRUE;
 
     class ItemInfo: ItemInfo

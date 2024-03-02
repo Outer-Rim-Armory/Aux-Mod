@@ -24,7 +24,7 @@ TRACE_3("fnc_shieldRegenHandler",_vehicle,_regenDelay,_regenAmount);
 [_vehicle, false, true] call FUNC(getHealth) params ["_health", "_maxHealth"];
 
 _function = {
-    params ["_handle", "_vehicle", "_regenDelay", "_regenAmount", "_maxHealth"];
+    params ["", "_vehicle", "_regenDelay", "_regenAmount", "_maxHealth"];
     private ["_currentTime", "_lastHit", "_health", "_newHealth"];
 
     if (isGamePaused) then {continue;};
@@ -34,7 +34,7 @@ _function = {
     _health = _vehicle getVariable [QGVAR(health), _maxHealth];
     _newHealth = (_health + _regenAmount) min _maxHealth;
 
-    TRACE_5("Attemping recharge",_vehicle,_currentTime,_lastHit,_health,_newHealth);
+    TRACE_6("Attemping recharge",_vehicle,_regenDelay,_currentTime,_lastHit,_health,_newHealth);
 
     if (_health < _maxHealth and {
         _currentTime >= (_lastHit + _regenDelay)
@@ -45,7 +45,7 @@ _function = {
 };
 
 _condition = {
-    params ["_handle", "_vehicle", "_regenDelay", "_regenAmount", "_maxHealth"];
+    params ["", "_vehicle"];
     alive _vehicle;
 };
 

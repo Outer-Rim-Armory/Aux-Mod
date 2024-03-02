@@ -36,7 +36,7 @@ class CLASS(Helmet_Phase1Geo_Pilot): CLASS(Helmet_Phase1_Pilot_Base)
 
 class CLASS(Helmet_Phase1_Pilot_CXA): CLASS(Helmet_Phase1_Pilot_Base)
 {
-    displayName = "[KC] AVI P1 Helm 01+ (Airman)";
+    displayName = "[KC] AVI P1 Helm 01 (Airman)";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase1Pilot\CXA_camo1_co.paa),

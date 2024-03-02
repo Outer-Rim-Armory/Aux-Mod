@@ -1,3 +1,4 @@
 @echo off
-hemtt.exe build
+winget install --id=BrettMayson.HEMTT  -e
+hemtt build
 pause

@@ -2,6 +2,7 @@ class DOUBLES(Ground,CLASS(Holder_Base));
 GROUND_HOLDER(Helmet_Airborne_Base,"AB Helm (Base)");
 GROUND_HOLDER(Helmet_Airborne_CT,"AB Helm 01 (Trooper)");
 GROUND_HOLDER(Helmet_Airborne_CT_v2,"AB Helm 01 (Trooper, v2)");
+
 GROUND_HOLDER(Helmet_ARC_Base,"SF ARC P1.5 Helm (Base)");
 GROUND_HOLDER(Helmet_ARC_CT,"SF ARC P1.5 Helm 01 (Trooper)");
 GROUND_HOLDER(Helmet_ARC_CT_Legacy,"SF ARC P1.5 Helm 01 (Trooper, Legacy)");
@@ -9,24 +10,31 @@ GROUND_HOLDER(Helmet_ARC_NightShade,"SF ARC P1.5 Helm (NightShade)");
 GROUND_HOLDER(Helmet_ARC_Enlisted_CamoBrown,"SF ARC P1.5 Helm 01 (Enlisted) - Brown Camo");
 GROUND_HOLDER(Helmet_ARC_Enlisted_CamoGrey,"SF ARC P1.5 Helm 01 (Enlisted) - Grey Camo");
 GROUND_HOLDER(Helmet_ARC_Enlisted_CamoNight,"SF ARC P1.5 Helm 01 (Enlisted) - Night Camo");
+
 GROUND_HOLDER(Helmet_ARF_Base,"SF ARF Helm (Base)");
 GROUND_HOLDER(Helmet_ARF_CT,"SF ARF Helm 01 (Trooper)");
 GROUND_HOLDER(Helmet_ARF_CT_Legacy,"SF ARF Helm 01 (Trooper, Legacy)");
 GROUND_HOLDER(Helmet_ARF_Enlisted_CamoBrown,"SF ARF Helm 01 (Enlisted) - Brown Camo");
 GROUND_HOLDER(Helmet_ARF_Enlisted_CamoGrey,"SF ARF Helm 01 (Enlisted) - Grey Camo");
+
 GROUND_HOLDER(Helmet_BARC_Base,"SF BARC Helm (Base)");
 GROUND_HOLDER(Helmet_BARC_CT,"SF BARC Helm 01 (Trooper)");
+
 GROUND_HOLDER(Helmet_Commando_Base,"SF Commando Helm (Base)");
+
 GROUND_HOLDER(Helmet_Engineer_Base,"ENG Helm (Base)");
 GROUND_HOLDER(Helmet_Engineer_CT,"ENG Helm 01 (Trooper)");
 GROUND_HOLDER(Helmet_Engineer_Enlisted_CamoBrown,"ENG Helm 01 (Enlisted) - Brown Camo");
 GROUND_HOLDER(Helmet_Engineer_Enlisted_CamoGrey,"ENG Helm 01 (Enlisted) - Grey Camo");
+
 GROUND_HOLDER(Helmet_Phase1_Pilot_Base,"AVI P1 Helm (Base)");
 GROUND_HOLDER(Helmet_Phase1Geo_Pilot,"AVI GEO Helm");
-GROUND_HOLDER(Helmet_Phase1_Pilot_CXA,"AVI P1 Helm 01+ (Airman)");
+GROUND_HOLDER(Helmet_Phase1_Pilot_CXA,"AVI P1 Helm 01 (Airman)");
+
 GROUND_HOLDER(Helmet_Phase1_Tanker_Base,"ARMR P1 Helm (Base)");
 GROUND_HOLDER(Helmet_Phase1_Tanker_CT,"ARMR P1 Helm 01 (Trooper)");
 GROUND_HOLDER(Helmet_Phase1_Tanker_CT_v2,"ARMR P1 Helm 01 (Trooper, v2)");
+
 GROUND_HOLDER(Helmet_Phase1_Base,"INF P1 Helm (Base)");
 GROUND_HOLDER(Helmet_Phase1_CR,"INF P1 Helm 00 (Recruit)");
 GROUND_HOLDER(Helmet_Phase1_CT,"INF P1 Helm 01 (Trooper)");
@@ -50,17 +58,21 @@ GROUND_HOLDER(Helmet_Phase1_NCO_CamoBrown,"INF P1 Helm 06+ (NCO) - Brown Camo");
 GROUND_HOLDER(Helmet_Phase1_NCO_CamoGrey,"INF P1 Helm 06+ (NCO) - Grey Camo");
 GROUND_HOLDER(Helmet_Phase1_Officer_CamoBrown,"INF P1 Helm 12+ (Officer) - Brown Camo");
 GROUND_HOLDER(Helmet_Phase1_Officer_CamoGrey,"INF P1 Helm 12+ (Officer) - Grey Camo");
+
 GROUND_HOLDER(Helmet_Phase1_ARC_CT,"SF ARC P1 Helm 01 (Trooper)");
+
 GROUND_HOLDER(Helmet_Phase2_Pilot_Base,"AVI P2 Helm (Base)");
-GROUND_HOLDER(Helmet_Phase2_Pilot_CXA,"AVI P2 Helm 01+ (Airman)");
-GROUND_HOLDER(Helmet_Phase2_Pilot_CXE,"AVI P2 Helm 11+ (Ensign)");
-GROUND_HOLDER(Helmet_Phase2_Pilot_Officer_CamoBrown,"AVI P2 Helm 11+ (Officer) - Brown Camo");
-GROUND_HOLDER(Helmet_Phase2_Pilot_Officer_CamoGrey,"AVI P2 Helm 11+ (Officer) - Grey Camo");
+GROUND_HOLDER(Helmet_Phase2_Pilot_CXA,"AVI P2 Helm 01 (Airman)");
+GROUND_HOLDER(Helmet_Phase2_Pilot_CXE,"AVI P2 Helm 06 (Ensign)");
+GROUND_HOLDER(Helmet_Phase2_Pilot_Officer_CamoBrown,"AVI P2 Helm 02 (Officer) - Brown Camo");
+GROUND_HOLDER(Helmet_Phase2_Pilot_Officer_CamoGrey,"AVI P2 Helm 02 (Officer) - Grey Camo");
+
 GROUND_HOLDER(Helmet_Phase2_Tanker_Base,"ARMR P2 Helm (Base)");
 GROUND_HOLDER(Helmet_Phase2_Tanker_CT,"ARMR P2 Helm 01 (Trooper)");
 GROUND_HOLDER(Helmet_Phase2_Tanker_CT_v2,"ARMR P2 Helm 01 (Trooper, v2)");
 GROUND_HOLDER(Helmet_Phase2_Tanker_Enlisted_CamoBrown,"ARMR P2 Helm 01 (Enlisted) - Brown Camo");
 GROUND_HOLDER(Helmet_Phase2_Tanker_Enlisted_CamoGrey,"ARMR P2 Helm 01 (Enlisted) - Grey Camo");
+
 GROUND_HOLDER(Helmet_Phase2_Base,"INF P2 Helm (Base)");
 GROUND_HOLDER(Helmet_Phase2_CR,"INF P2 Helm 00 (Recruit)");
 GROUND_HOLDER(Helmet_Phase2_CR_Legacy,"INF P2 Helm 00 (Recruit, Legacy)");
@@ -95,5 +107,8 @@ GROUND_HOLDER(Helmet_Phase2_NCO_CamoBrown,"INF P2 Helm 06+ (NCO) - Brown Camo");
 GROUND_HOLDER(Helmet_Phase2_NCO_CamoGrey,"INF P2 Helm 06+ (NCO) - Grey Camo");
 GROUND_HOLDER(Helmet_Phase2_Officer_CamoBrown,"INF P2 Helm 12+ (Officer) - Brown Camo");
 GROUND_HOLDER(Helmet_Phase2_Officer_CamoGrey,"INF P2 Helm 12+ (Officer) - Grey Camo");
+
 GROUND_HOLDER(Helmet_Phase2_Insulated_Base,"INF P2 Snow Helm (Base)");
 GROUND_HOLDER(Helmet_Phase2_Insulated_CT,"INF P2 Snow Helm 01 (Trooper)");
+
+GROUND_HOLDER(Helmet_Phase12_Base,"INF P1-2 Helm (Base)");

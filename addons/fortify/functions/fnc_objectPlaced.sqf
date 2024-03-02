@@ -22,8 +22,7 @@ _positionASL = getPosASL _objectPlaced;
 switch (typeOf _objectPlaced) do {
     case "Land_PierLadder_F": {
         _positionASL set [2, _positionASL#2 + 2];
+        _objectPlaced setPosASL _positionASL;
     };
     default {};
 };
-
-_objectPlaced setPosASL _positionASL;

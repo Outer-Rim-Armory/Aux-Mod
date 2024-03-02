@@ -23,21 +23,9 @@ TRACE_1("fnc_useVehicleEMP",_vehicle);
 
 _vehicle setVariable [QGVAR(lastUsedEMP), CBA_missionTime];
 
-_radiusDroid = [
-    configFile >> "CfgVehicles" >> typeOf _vehicle,
-    QGVAR(empRadiusDroid),
-    EMP_RADIUS_DROID_DEFAULT
-] call BIS_fnc_returnConfigEntry;
-_radiusDroideka = [
-    configFile >> "CfgVehicles" >> typeOf _vehicle,
-    QGVAR(empRadiusDroideka),
-    EMP_RADIUS_DROIDEKA_DEFAULT
-] call BIS_fnc_returnConfigEntry;
-_radiusVehicle = [
-    configFile >> "CfgVehicles" >> typeOf _vehicle,
-    QGVAR(empRadiusVehicle),
-    EMP_RADIUS_VEHICLE_DEFAULT
-] call BIS_fnc_returnConfigEntry;
+_radiusDroid = getNumber (configOf _vehicle >> QGVAR(empRadiusDroid));
+_radiusDroideka = getNumber (configOf _vehicle >> QGVAR(empRadiusDroideka));
+_radiusVehicle = getNumber (configOf _vehicle >> QGVAR(empRadiusVehicle));
 
 _positionASL = getPosASL _vehicle;
 _positionAGL = ASLToAGL _positionASL;
@@ -48,15 +36,13 @@ _nearbyPlayers = _nearbyPlayers select {
 };
 {
     [QEGVAR(core,localSound), [
-            QPATHTOF(data\audio\emp\TCW_Explode.wss),
-            "\MRC\JLTS\weapons\Core\sounds\emp_exp\exp_emp_1.wss",
-            _positionASL,
-            QGVAR(empTCWSoundEnabled),
-            QGVAR(empSoundVolume),
-            QGVAR(empSoundPitch)
-        ],
-        _x
-    ] call CBA_fnc_targetEvent;
+        QPATHTOF(data\audio\emp\TCW_Explode.wss),
+        "\MRC\JLTS\weapons\Core\sounds\emp_exp\exp_emp_1.wss",
+        _positionASL,
+        QGVAR(empTCWSoundEnabled),
+        QGVAR(empSoundVolume),
+        QGVAR(empSoundPitch)
+    ], _x] call CBA_fnc_targetEvent;
 } forEach _nearbyPlayers;
 
 _nearbyUnits = [_positionAGL, _radiusDroid] call EFUNC(core,getNearbyUnits);

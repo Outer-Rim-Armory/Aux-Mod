@@ -115,12 +115,12 @@ class CfgVehicles
                 statement = QUOTE(UNIFORMMENU_SETPAGE(UNIFORMMENU_PAGE_DETACHMENTHELMETS));
             };
 
-            class Arsenal_Customs: ChangeMenu_Uniforms
+            class Arsenal_Customize: ChangeMenu_Uniforms
             {
                 priority = 98;
-                displayName = "<t color='#FFFFFF'>Customs Arsenal</t>";
+                displayName = "<t color='#FFFFFF'>Customize Loadout</t>";
                 condition = QUOTE(UNIFORMMENU_GETPAGE == MENU_PAGE_HOME);
-                statement = QUOTE('customs' call FUNC(openArsenal));
+                statement = QUOTE('customize' call FUNC(openArsenal));
             };
 
             class ChangeMenu_Home: ChangeMenu_Uniforms
@@ -133,7 +133,7 @@ class CfgVehicles
             class DetachmentHelmet_Tanker: ChangeMenu_Uniforms
             {
                 displayName = "<t color='#FFFFFF'>Grab Crew Helmet</t>";
-                condition = QUOTE(UNIFORMMENU_GETPAGE == MENU_PAGE_HOME);
+                condition = QUOTE(UNIFORMMENU_GETPAGE == UNIFORMMENU_PAGE_DETACHMENTHELMETS);
                 statement = QUOTE(ace_player addHeadgear QQCLASS(Helmet_Phase2_Tanker_CT));
             };
         };
@@ -169,6 +169,15 @@ class CfgVehicles
                 condition = QUOTE(LOADOUTMENU_GETPAGE == MENU_PAGE_HOME);
                 statement = QUOTE('attachments' call FUNC(openArsenal));
             };
+
+            class Add_Radio: ChangeMenu_Home
+            {
+                displayName = "<t color='#FFFFFF'>Add Radio</t>";
+                priority = 0;
+
+                condition = QUOTE(LOADOUTMENU_GETPAGE == MENU_PAGE_HOME);
+                statement = QUOTE(ace_player linkItem 'SWLB_comlink');
+            };
         };
     };
 
@@ -181,7 +190,7 @@ class CfgVehicles
         {
             class Assign_Medic
             {
-                displayName = QUOTE(<t color='#c40000'><img image=QQPATHTOEF(armor,data\insignias\Medic_White_ca.paa)/> Assign Medic Permissions</t>);
+                displayName = QUOTE(<t color='#c40000'><img image=QQPATHTOEF(core,data\ui\Medic_White_ca.paa)/> Assign Medic Permissions</t>);
 
                 position = "camera";
                 radius = 3;
@@ -195,19 +204,19 @@ class CfgVehicles
             };
             class Unassign_Medic: Assign_Medic
             {
-                displayName = QUOTE(<t color='#c40000'><img image=QQPATHTOEF(armor,data\insignias\Medic_White_ca.paa)/> Unassign Medic Permissions</t>);
+                displayName = QUOTE(<t color='#c40000'><img image=QQPATHTOEF(core,data\ui\Medic_White_ca.paa)/> Unassign Medic Permissions</t>);
                 condition = QUOTE(ace_player getUnitTrait 'Medic');
                 statement = QUOTE(ace_player setUnitTrait [ARR_2('Medic',false)]);
             };
             class Assign_Engineer: Assign_Medic
             {
-                displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(armor,data\insignias\EOD_White_ca.paa)/> Assign Engineer Permissions</t>);
+                displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(core,data\ui\EOD_White_ca.paa)/> Assign Engineer Permissions</t>);
                 condition = QUOTE(!(ace_player getUnitTrait 'Engineer'));
                 statement = QUOTE(ace_player setUnitTrait [ARR_2('Engineer',true)]);
             };
             class Unassign_Engineer: Assign_Engineer
             {
-                displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(armor,data\insignias\EOD_White_ca.paa)/> Unassign Engineer Permissions</t>);
+                displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(core,data\ui\EOD_White_ca.paa)/> Unassign Engineer Permissions</t>);
                 condition = QUOTE(ace_player getUnitTrait 'Engineer');
                 statement = QUOTE(ace_player setUnitTrait [ARR_2('Engineer',false)]);
             };
@@ -237,10 +246,17 @@ class CfgVehicles
                 condition = "true";
                 statement = QUOTE([ARR_3(ace_player,ace_player,true)] call ace_arsenal_fnc_openBox;);
             };
+
             class Arsenal_BIS: Arsenal_ACE
             {
                 displayName = "<t color='#E6E6E6'><img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\rearm_ca.paa'/> Open BIS Arsenal</t>";
                 statement = QUOTE([ARR_2('Open',[true])] call BIS_fnc_arsenal;);
+            };
+
+            class Add_Radio: Arsenal_ACE
+            {
+                displayName = "<t color='#E6E6E6'><img image='\a3\modules_f_curator\data\portraitradio_ca.paa'/> Add Radio</t>";
+                statement = QUOTE(ace_player linkItem 'SWLB_comlink');
             };
         };
     };

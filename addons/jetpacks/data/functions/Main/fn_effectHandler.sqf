@@ -1,3 +1,4 @@
+#include "..\..\..\script_component.hpp"
 /*
  * Authors: Clock, modified by DartRuffian
  * Handles spawning the visual effects for jetpacks. Effects are deleted when unit can no longer jetpack or touches the ground.
@@ -10,7 +11,7 @@
  * None
  *
  * Example:
- * ['BNA_KC_Jet_JetpackFired', BNAKC_Jetpacks_fnc_effectHandler] call CBA_fnc_addEventHandler;
+ * ['BNA_KC_Jet_JetpackFired', BNA_KC_Jetpacks_fnc_effectHandler] call CBA_fnc_addEventHandler;
  */
 
 
@@ -24,10 +25,10 @@ private ["_jetpack", "_totalEffects", "_remainingSlots", "_effectPoints", "_effe
 if !(hasInterface) exitWith {};
 
 _totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
-if (_totalEffects >= BNA_KC_Jet_ParticleLimit) exitWith {};
+if (_totalEffects >= GVAR(particleLimit)) exitWith {};
 
 // Don't play effects for units on the ground or who can't jetpack
-if (!(_unit call BNAKC_Jetpacks_fnc_canUseJetpack) or isTouchingGround _unit) exitWith {};
+if (!(_unit call FUNC(canJetpack)) or isTouchingGround _unit) exitWith {};
 
 _jetpack = backpack _unit;
 
@@ -38,11 +39,11 @@ _defaultColor = [1, 1, 1]; // Can't include [] with commas inside in a macro
 _lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_lightColor",_defaultColor);
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
-if (_totalEffects + (count _effectTypes * count _effectPoints) > BNA_KC_Jet_ParticleLimit) then
+if (_totalEffects + (count _effectTypes * count _effectPoints) > GVAR(particleLimit)) then
 {
 
     // Particle "slots" remaining
-    _remainingSlots = (BNA_KC_Jet_ParticleLimit - _totalEffects) min 0;
+    _remainingSlots = (GVAR(particleLimit) - _totalEffects) min 0;
     // format ["_remainingSlots = %1", _remainingSlots] call BNAKC_fnc_devLog;
 
     _remainingSlots = floor (_remainingSlots / count _effectPoints);
@@ -57,7 +58,7 @@ if (_totalEffects + (count _effectTypes * count _effectPoints) > BNA_KC_Jet_Part
     {
         params ["_unit", "_effectPoints", "_effectTypes", "_lightColor"];
 
-        private _effectSources = _unit getVariable ["BNA_KC_Jet_effectSources", []];
+        private _effectSources = _unit getVariable [QGVAR(effectSources), []];
 
         // Spawn effects for each effect point
         {
@@ -98,7 +99,7 @@ if (_totalEffects + (count _effectTypes * count _effectPoints) > BNA_KC_Jet_Part
         } forEach _effectPoints;
 
         // Save for later removal upon landing by the jetpack handler
-        _unit setVariable ["BNA_KC_Jet_effectSources", _effectSources, true];
+        _unit setVariable [QGVAR(effectSources), _effectSources, true];
 
         // Update total effects, used for setting a cap of jetpack effects
         private _totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
