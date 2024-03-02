@@ -21,9 +21,8 @@ TRACE_1("fnc_soundLoopInit",_object);
 
 if (isNull _object) exitWith {};
 
-_filePath = getText (configFile >> "CfgVehicles" >> typeOf _object >> QGVAR(soundLoop));
-
-_soundDelay = getNumber (configFile >> "CfgVehicles" >> typeOf _object >> QGVAR(soundLoopDelay));
+_filePath = getText (configOf _object >> QGVAR(soundLoop));
+_soundDelay = getNumber (configOf _object >> QGVAR(soundLoopDelay));
 
 [_object, _filePath, _soundDelay] call FUNC(soundLoop);
 nil;

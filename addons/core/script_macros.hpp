@@ -1,5 +1,5 @@
 // Global toggle for compile cache
-// #define DISABLE_COMPILE_CACHE
+#define DISABLE_COMPILE_CACHE
 
 #ifdef __A3_DEBUG__
     #include "\ORA\BNA_KC\addons\core\script_debug.hpp"

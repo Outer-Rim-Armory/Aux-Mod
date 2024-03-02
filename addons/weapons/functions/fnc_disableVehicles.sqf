@@ -22,11 +22,7 @@ params [
 private [];
 
 _vehicles = _vehicles select {
-    private _canBeDisabled = [
-        configFile >> "CfgVehicles" >> typeOf _x,
-        QGVAR(empCanBeDisabled),
-        FALSE
-    ] call BIS_fnc_returnConfigEntry;
+    private _canBeDisabled = getNumber (configOf _x >> QGVAR(empCanBeDisabled));
     _canBeDisabled isEqualTo TRUE;
 };
 

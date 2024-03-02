@@ -10,7 +10,7 @@ class CfgVehicles
                 displayName = "Clear Effects";
                 icon = "";
 
-                condition = QUOTE(isTouchingGround _player and {(_player getVariable [ARR_2(QQGVAR(effectSources),[])] isNotEqualTo [])});
+                condition = QUOTE(isTouchingGround _player and {_player call FUNC(hasJetpack)});
                 statement = QUOTE(_player call FUNC(clearEffects));
             };
         };
@@ -26,8 +26,8 @@ class CfgVehicles
                     distance = 1.75;
                     // exceptions[] = { "isNotInside", "isNotSitting", "isNotSwimming", "isNotDragging", "isNotCarrying" };
 
-                    condition = "_this call BNA_KC_Jetpacks_fnc_canRefuelFromBody";
-                    statement = "_this call BNA_KC_Jetpacks_fnc_refuelFromBody";
+                    condition = QUOTE(call FUNC(canRefuelFromBody));
+                    statement = QUOTE(call FUNC(refuelFromBody));
                     modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
                 };
 
@@ -38,8 +38,8 @@ class CfgVehicles
 
                     distance = 1.75;
 
-                    condition = "_this call BNA_KC_Jetpacks_fnc_canRefuelOtherPlayer";
-                    statement = "_this call BNA_KC_Jetpacks_fnc_refuelOtherPlayer";
+                    condition = QUOTE(call FUNC(canRefuelPlayer));
+                    statement = QUOTE(call FUNC(refuelOtherPlayer));
                     modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
                 };
             };

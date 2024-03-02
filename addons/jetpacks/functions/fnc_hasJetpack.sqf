@@ -14,9 +14,6 @@
  */
 
 params ["_unit"];
-private ["_isJetpack"];
 TRACE_1("fnc_hasJetpack",_unit);
 
-_isJetpack = getNumber (configFile >> "CfgVehicles" >> backpack _unit >> QGVAR(isJetpack));
-
-[false, true] select _isJetpack;
+getNumber ((configOf backpackContainer _unit) >> QGVAR(isJetpack)) > FALSE

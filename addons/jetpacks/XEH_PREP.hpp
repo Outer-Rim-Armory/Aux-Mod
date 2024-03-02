@@ -1,7 +1,10 @@
 PREP(addRefuelAction);
 PREP(canJetpack);
+PREP(canRefuelFromBody);
+PREP(canRefuelPlayer);
 PREP(clearEffects);
 PREP(getFuel);
+PREP(getFuelCan);
 PREP(hasJetpack);
 PREP(modifyInteraction);
 PREP(playErrorSound);

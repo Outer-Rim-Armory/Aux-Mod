@@ -30,17 +30,8 @@ _getOutHandler = _vehicle addEventHandler ["GetOut", {
 }];
 _vehicle setVariable [QGVAR(getOutHandler), _getOutHandler, true];
 
-_regenDelay = [
-    configFile >> "CfgVehicles" >> typeOf _vehicle,
-    QGVAR(regenDelay),
-    SHIELD_REGEN_DELAY_DEFAULT
-] call BIS_fnc_returnConfigEntry;
-
-_regenAmount = [
-    configFile >> "CfgVehicles" >> typeOf _vehicle,
-    QGVAR(regenAmount),
-    SHIELD_REGEN_AMOUNT_DEFAULT
-] call BIS_fnc_returnConfigEntry;
+_regenDelay = getNumber (configOf _vehicle >> QGVAR(regenDelay));
+_regenAmount = getNumber (configOf _vehicle >> QGVAR(regenAmount));
 
 _regenHandler = [_vehicle, _regenDelay, _regenAmount] call FUNC(shieldRegenHandler);
 _vehicle setVariable [QGVAR(regenHandler), _regenHandler];
