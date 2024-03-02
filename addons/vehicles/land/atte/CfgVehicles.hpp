@@ -1,11 +1,11 @@
 class CfgVehicles
 {
-    class Tank;
-    class Tank_F: Tank
+    class Wheeled_APC_F;
+    class APC_Wheeled_01_base_F: Wheeled_APC_F
     {
         class Turrets;
     };
-    class 3AS_ATTE_base: Tank_F
+    class 3AS_ATTE_base: APC_Wheeled_01_base_F
     {
         class ACE_SelfActions;
         class UserActions;
