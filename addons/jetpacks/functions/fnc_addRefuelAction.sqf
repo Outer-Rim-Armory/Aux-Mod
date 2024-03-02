@@ -30,7 +30,7 @@ _action = [QGVAR(refuel), "Refuel Jetpack", "\z\ace\addons\refuel\ui\icon_refuel
     playSound3D ["\a3\missions_f_oldman\data\sound\refueling\refueling_start.wss", _player];
 
     _jetpack = backpackContainer _player;
-    _maxFuel = _jetpack getVariable [QGVAR(maxFuel), JETPACK_FUEL_DEFAULT];
+    _maxFuel = _jetpack getVariable [QGVAR(maxFuel), 100]; // TODO: Replace with macro default
     [_player, _maxFuel] call BNA_KC_Jetpacks_fnc_setFuel;
 }, {
     params ["_target", "_player", "_params"];
