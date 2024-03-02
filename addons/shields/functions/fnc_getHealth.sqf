@@ -24,18 +24,14 @@ params [
 private ["_maxHealth", "_health", "_return"];
 TRACE_3("fnc_getHealth",_vehicle,_returnPercent,_returnMax);
 
-_hasShield = getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> QGVAR(hasShield));
+_hasShield = getNumber (configOf _vehicle >> QGVAR(hasShield));
 
 if (isNull _vehicle or
     {!alive _vehicle} or
     {_hasShield isEqualTo FALSE}
 ) exitWith {-1};
 
-_maxHealth = [
-    configFile >> "CfgVehicles" >> typeOf _vehicle,
-    QGVAR(health),
-    SHIELD_HEALTH_DEFAULT
-] call BIS_fnc_returnConfigEntry;
+_maxHealth = getNumber (configOf _vehicle >> QGVAR(health));
 _health = _vehicle getVariable [QGVAR(health), _maxHealth];
 
 _return = switch (true) do {

@@ -19,7 +19,7 @@ params ["_target", "_player", "_params"];
 private ["_textureSources"];
 TRACE_3("fnc_skin_canSwitch",_target,_player,_params);
 
-_textureSources = getArray (configFile >> "CfgVehicles" >> typeOf _target >> "textureList");
+_textureSources = getArray (configOf _target >> "textureList");
 
 
 count _textureSources >= 2 and {

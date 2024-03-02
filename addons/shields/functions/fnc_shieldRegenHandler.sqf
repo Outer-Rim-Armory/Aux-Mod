@@ -24,7 +24,6 @@ TRACE_3("fnc_shieldRegenHandler",_vehicle,_regenDelay,_regenAmount);
 [_vehicle, false, true] call FUNC(getHealth) params ["_health", "_maxHealth"];
 
 _function = {
-    systemChat str CBA_missionTime;
     params ["", "_vehicle", "_regenDelay", "_regenAmount", "_maxHealth"];
     private ["_currentTime", "_lastHit", "_health", "_newHealth"];
 

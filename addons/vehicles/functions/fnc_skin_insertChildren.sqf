@@ -20,9 +20,7 @@ private ["_actions", "_textureSources"];
 TRACE_3("fnc_skin_insertChildren",_target,_player,_params);
 
 _actions = [];
-_textureSources = configProperties [
-    configFile >> "CfgVehicles" >> typeOf _target >> "TextureSources"
-];
+_textureSources = configProperties [configOf _target >> "TextureSources"];
 
 {
     private ["_displayName", "_textures", "_childStatement", "_action"];

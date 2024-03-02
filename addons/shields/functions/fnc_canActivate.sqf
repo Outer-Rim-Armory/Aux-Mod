@@ -20,7 +20,7 @@ private ["_vehicle", "_hasShield"];
 TRACE_1("fnc_canActivate",_unit);
 
 _vehicle = objectParent _unit;
-_hasShield = getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> QGVAR(hasShield));
+_hasShield = getNumber (configOf _vehicle >> QGVAR(hasShield));
 
 if (isNull _vehicle or
     {!alive _vehicle} or

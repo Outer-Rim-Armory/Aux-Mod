@@ -23,11 +23,7 @@ params [
 private ["_hasShield", "_shieldHealth"];
 TRACE_2("fnc_canExternalRecharge",_vehicle,_unit);
 
-_regenDelay = [
-    configFile >> "CfgVehicles" >> typeOf _vehicle,
-    QGVAR(regenDelay),
-    SHIELD_REGEN_DELAY_DEFAULT
-] call BIS_fnc_returnConfigEntry;
+_regenDelay = getNumber (configOf _vehicle >> QGVAR(regenDelay));
 
 _vehicle setVariable [QGVAR(isRecharging), true, true];
 _vehicle call FUNC(deactivate);
@@ -40,11 +36,7 @@ _vehicle call FUNC(deactivate);
         _this#0 params ["_vehicle", "_unit"];
         private ["_maxHealth"];
 
-        _maxHealth = [
-            configFile >> "CfgVehicles" >> typeOf _vehicle,
-            QGVAR(health),
-            SHIELD_HEALTH_DEFAULT
-        ] call BIS_fnc_returnConfigEntry;
+        _maxHealth = getNumber (configOf _vehicle >> QGVAR(health));
 
         _vehicle setVariable [QGVAR(health), _maxHealth];
         _vehicle setVariable [QGVAR(isRecharging), nil, true];
