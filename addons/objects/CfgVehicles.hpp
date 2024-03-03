@@ -199,26 +199,26 @@ class CfgVehicles
                 hideOnUse = TRUE;
                 priority = 100;
 
-                condition = QUOTE(!(ace_player getUnitTrait 'Medic'));
-                statement = QUOTE(ace_player setUnitTrait [ARR_2('Medic',true)]);
+                condition = QUOTE(!(ace_player getVariable [ARR_2('ace_medical_medicClass',false)]));
+                statement = QUOTE(ace_player setVariable [ARR_2('ace_medical_medicClass',true)]);
             };
             class Unassign_Medic: Assign_Medic
             {
                 displayName = QUOTE(<t color='#c40000'><img image=QQPATHTOEF(core,data\ui\Medic_White_ca.paa)/> Unassign Medic Permissions</t>);
-                condition = QUOTE(ace_player getUnitTrait 'Medic');
-                statement = QUOTE(ace_player setUnitTrait [ARR_2('Medic',false)]);
+                condition = QUOTE(ace_player getVariable [ARR_2('ace_medical_medicClass',false)]);
+                statement = QUOTE(ace_player setVariable [ARR_2('ace_medical_medicClass',false)]);
             };
             class Assign_Engineer: Assign_Medic
             {
                 displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(core,data\ui\EOD_White_ca.paa)/> Assign Engineer Permissions</t>);
-                condition = QUOTE(!(ace_player getUnitTrait 'Engineer'));
-                statement = QUOTE(ace_player setUnitTrait [ARR_2('Engineer',true)]);
+                condition = QUOTE(!(ace_player getVariable [ARR_2('ace_isEngineer',false)]));
+                statement = QUOTE(ace_player setVariable [ARR_2('ace_isEngineer',true)]);
             };
             class Unassign_Engineer: Assign_Engineer
             {
                 displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(core,data\ui\EOD_White_ca.paa)/> Unassign Engineer Permissions</t>);
-                condition = QUOTE(ace_player getUnitTrait 'Engineer');
-                statement = QUOTE(ace_player setUnitTrait [ARR_2('Engineer',false)]);
+                condition = QUOTE(ace_player getVariable [ARR_2('ace_isEngineer',false)]);
+                statement = QUOTE(ace_player setVariable [ARR_2('ace_isEngineer',false)]);
             };
         };
     };
