@@ -33,7 +33,7 @@ class CfgWeapons
                     distanceZoomMax = 50;
                     distanceZoomMin = 50;
 
-                    visionMode[] = {"Normal"};
+                    visionMode[] = {};
                     thermalMode[] = {WHOT, BHOT};
                     opticsPPEffects[] = {"OpticsBlur1"};
                 };
