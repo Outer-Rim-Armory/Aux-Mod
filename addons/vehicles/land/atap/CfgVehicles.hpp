@@ -1,7 +1,7 @@
 class CfgVehicles
 {
-    class MBT_01_arty_base_F;
-    class 3AS_ATAP_Base: MBT_01_arty_base_F
+    class APC_Wheeled_01_base_F;
+    class 3AS_ATAP_Base: APC_Wheeled_01_base_F
     {
         class ACE_SelfActions;
         class UserActions;
