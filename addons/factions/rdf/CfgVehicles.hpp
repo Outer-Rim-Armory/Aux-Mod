@@ -103,7 +103,7 @@ class CfgVehicles
 
         displayName = "[RDF] Backpack";
 
-        model = "\sc_equipment\data\marine\mr_backpack.p3d";
+        model = "\sc_equipment\data\watchdog\wd_backpack.p3d";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\backpack_guard_co.paa"};
         picture = "\sc_equipment\data\icons\icon_ar_ca.paa";
