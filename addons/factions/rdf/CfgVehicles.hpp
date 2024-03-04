@@ -96,5 +96,10 @@ class CfgVehicles
             MAG_XX(ShieldGrenade_Mag,2);
             MAG_XX(ls_mag_classC_thermalDet,3);
         };
+
+        class TransportItems
+        {
+            ITEM_XX(JLTS_riot_shield_501_item,1);
+        };
     };
 };
