@@ -12,6 +12,48 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_black_co.paa"};
     };
 
+    class CLASS(RDF_Unit_Rifleman_DC15C): CLASS(RDF_Unit_Base)
+    {
+        SCOPE_PUBLIC;
+        displayName = "Rifleman";
+        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Rifleman_DC15C);
+
+        weapons[] = {QCLASS(DC15C), QCLASS(DC17), "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(DC15C), QCLASS(DC17), "Throw", "Put"};
+
+        magazines[] =
+        {
+            QCLASS(Mag_40rnd_DC15C),
+            QCLASS(Mag_20rnd_DC17)
+        };
+        respawnMagazines[] =
+        {
+            QCLASS(Mag_40rnd_DC15C),
+            QCLASS(Mag_20rnd_DC17)
+        };
+
+        items[] =
+        {
+            ITEM_15("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+            ITEM_2("ACE_bloodIV_250"),
+            "JLTS_ids_police",
+            "JLTS_riot_shield_501_item"
+        };
+        respawnItems[] =
+        {
+            ITEM_15("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+            ITEM_2("ACE_bloodIV_250"),
+            "JLTS_ids_police",
+            "JLTS_riot_shield_501_item"
+        };
+
+        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(RDF_Backpack_Predef_Rifleman_DC15C);
+    };
+
     class CLASS(RDF_Unit_Grenadier): CLASS(RDF_Unit_Base)
     {
         SCOPE_PUBLIC;
@@ -39,20 +81,18 @@ class CfgVehicles
             ITEM_15("ACE_elasticBandage"),
             ITEM_4("ACE_tourniquet"),
             ITEM_2("ACE_bloodIV_250"),
-            "FirstAidKit",
-            "JLTS_ids_police"
+            "JLTS_ids_police",           "JLTS_riot_shield_501_item"
         };
         respawnItems[] =
         {
             ITEM_15("ACE_elasticBandage"),
             ITEM_4("ACE_tourniquet"),
             ITEM_2("ACE_bloodIV_250"),
-            "FirstAidKit",
-            "JLTS_ids_police"
+            "JLTS_ids_police",           "JLTS_riot_shield_501_item"
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_Predef_Grenadier);
     };
 
@@ -70,6 +110,26 @@ class CfgVehicles
 
         maximumLoad = 600;
     };
+
+    class CLASS(RDF_Backpack_Predef_Rifleman_DC15C): CLASS(RDF_Backpack)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_40rnd_DC15C),15);
+            MAG_XX(CLASS(Mag_20rnd_DC17),5);
+            MAG_XX(CLASS(Grenade_EMP),5);
+            MAG_XX(3AS_SmokeWhite,2);
+            MAG_XX(3AS_SmokeBlue,2);
+            MAG_XX(3AS_SmokeRed,2);
+            MAG_XX(3AS_SmokeYellow,2);
+            MAG_XX(3AS_SmokePurple,1);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(ls_mag_classC_thermalDet,3);
+        };
+    };
+
     class CLASS(RDF_Backpack_Predef_Grenadier): CLASS(RDF_Backpack)
     {
         SCOPE_HIDDEN;
@@ -95,11 +155,6 @@ class CfgVehicles
             MAG_XX(3AS_SmokePurple,1);
             MAG_XX(ShieldGrenade_Mag,2);
             MAG_XX(ls_mag_classC_thermalDet,3);
-        };
-
-        class TransportItems
-        {
-            ITEM_XX(JLTS_riot_shield_501_item,1);
         };
     };
 };
