@@ -51,8 +51,8 @@ class CfgVehicles
             "JLTS_ids_police"
         };
 
-        // linkedItems[] = {QCLASS(EPF_Helmet), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
-        // respawnLinkedItems[] = {QCLASS(EPF_Helmet), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_Predef_Grenadier);
     };
 
