@@ -150,6 +150,51 @@ class CfgVehicles
         backpack = QCLASS(RDF_Backpack_Predef_Rifleman);
     };
 
+    class CLASS(RDF_Unit_Rifleman_AT): CLASS(RDF_Unit_Rifleman)
+    {
+        displayName = "Rifleman (AT)";
+        icon = "iconManAT";
+        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Rifleman_AT);
+
+        weapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS7), "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS7), "Throw", "Put"};
+
+        magazines[] =
+        {
+            QCLASS(Mag_80rnd_DC15S),
+            QCLASS(Mag_20rnd_DC17),
+            QCLASS(Mag_1rnd_RPS7_AT)
+        };
+        respawnMagazines[] =
+        {
+            QCLASS(Mag_80rnd_DC15S),
+            QCLASS(Mag_20rnd_DC17),
+            QCLASS(Mag_1rnd_RPS7_AT)
+        };
+        backpack = QCLASS(RDF_Backpack_Predef_Rifleman_AT);
+    };
+
+    class CLASS(RDF_Unit_Rifleman_AT_Disposable): CLASS(RDF_Unit_Rifleman_AT)
+    {
+        displayName = "Rifleman (AT, Disposable)";
+        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Rifleman_AT_Disposable);
+
+        weapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS6_Loaded), "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS6_Loaded), "Throw", "Put"};
+
+        magazines[] =
+        {
+            QCLASS(Mag_80rnd_DC15S),
+            QCLASS(Mag_20rnd_DC17)
+        };
+        respawnMagazines[] =
+        {
+            QCLASS(Mag_80rnd_DC15S),
+            QCLASS(Mag_20rnd_DC17)
+        };
+        backpack = QCLASS(RDF_Backpack_Predef_Rifleman);
+    };
+
     class CLASS(Other_Backpack_Base);
     class CLASS(RDF_Backpack): CLASS(Other_Backpack_Base)
     {
@@ -182,6 +227,17 @@ class CfgVehicles
         };
     };
 
+    class CLASS(RDF_Backpack_Predef_Rifleman_DC15S): CLASS(RDF_Backpack_Predef_Rifleman)
+    {
+        class TransportMagazines: TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_80rnd_DC15S),15);
+            MAG_XX(CLASS(Mag_20rnd_DC17),5);
+            MAG_XX(CLASS(Mag_StunLong),5);
+            MAG_XX(CLASS(Mag_StunShort),5);
+        };
+    };
+
     class CLASS(RDF_Backpack_Predef_Grenadier): CLASS(RDF_Backpack_Predef_Rifleman)
     {
         class TransportMagazines: TransportMagazines
@@ -203,6 +259,19 @@ class CfgVehicles
         class TransportMagazines
         {
             MAG_XX(CLASS(Mag_240rnd_DC15L),15);
+        };
+    };
+
+    class CLASS(RDF_Backpack_Predef_Rifleman_AT): CLASS(RDF_Backpack_Predef_Rifleman)
+    {
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_80rnd_DC15S),16);
+            MAG_XX(CLASS(Mag_20rnd_DC17),6);
+            MAG_XX(CLASS(Mag_StunLong),5);
+            MAG_XX(CLASS(Mag_StunShort),5);
+            MAG_XX(CLASS(Mag_1rnd_RPS7_HE),2);
+            MAG_XX(CLASS(Mag_1rnd_RPS7_AT),1);
         };
     };
 };
