@@ -77,6 +77,15 @@ class CfgWeapons
             };
         };
 
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = QCLASS(Optic_WestarM5);
+            };
+        };
+
         class Single: Single
         {
             sounds[] = {"StandardSound"};

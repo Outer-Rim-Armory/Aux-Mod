@@ -195,6 +195,25 @@ class CfgVehicles
         backpack = QCLASS(RDF_Backpack_Predef_Rifleman);
     };
 
+    class CLASS(RDF_Unit_SWAT): CLASS(RDF_Unit_Base)
+    {
+        SCOPE_PUBLIC;
+        displayName = "SWAT Rifleman";
+        editorSubcategory = EDSUBCAT(SpecialForces);
+        // editorPreview = EDITOR_PREVIEW(RDF_Unit_SWAT);
+
+        weapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Throw", "Put"};
+
+        magazines[] = {};
+        respawnMagazines[] = {};
+
+        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(RDF_Backpack_SWAT_Predef_Rifleman);
+    };
+
+
     class CLASS(Other_Backpack_Base);
     class CLASS(RDF_Backpack): CLASS(Other_Backpack_Base)
     {
@@ -272,6 +291,39 @@ class CfgVehicles
             MAG_XX(CLASS(Mag_StunShort),5);
             MAG_XX(CLASS(Mag_1rnd_RPS7_HE),2);
             MAG_XX(CLASS(Mag_1rnd_RPS7_AT),1);
+        };
+    };
+
+    class CLASS(RDF_Backpack_SWAT): CLASS(RDF_Backpack)
+    {
+        displayName = "[RDF] SWAT Backpack";
+
+        model = "\sc_equipment\data\wasp\wp_backpack.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_black_co.paa"};
+        // maximumLoad = 600;
+    };
+
+    class CLASS(RDF_Backpack_SWAT_Predef_Rifleman): CLASS(RDF_Backpack_SWAT)
+    {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_60rnd_WestarM5),16);
+            MAG_XX(CLASS(Mag_30Rnd_DC15SA),6);
+            MAG_XX(CLASS(Mag_15Rnd_DC15SA),5);
+            MAG_XX(CLASS(Mag_7Rnd_DC15SA),5);
+            MAG_XX(CLASS(Grenade_EMP),5);
+            MAG_XX(3AS_SmokeWhite,2);
+            MAG_XX(3AS_SmokeBlue,2);
+            MAG_XX(3AS_SmokeRed,2);
+            MAG_XX(3AS_SmokeYellow,2);
+            MAG_XX(3AS_SmokePurple,1);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(ShieldGrenadePersonal_Mag,1);
+            MAG_XX(ls_mag_classA_thermalDet,3);
+            MAG_XX(ls_mag_classB_thermalDet,3);
+            MAG_XX(ls_mag_classC_thermalDet,3);
         };
     };
 };

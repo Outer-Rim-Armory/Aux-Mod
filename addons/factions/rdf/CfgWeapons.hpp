@@ -78,14 +78,33 @@ class CfgWeapons
 
     class CLASS(RDF_Vest_Medium): CLASS(RDF_Vest)
     {
-        SCOPE_PUBLIC;
-
         displayName = "[RDF] Medium Vest";
         model = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
 
         class ItemInfo: ItemInfo
         {
             uniformModel = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+            containerClass = "Supply300";
+
+            SC_VEST_HITPOINTS_MEDIUM;
+        };
+    };
+
+    class CLASS(RDF_Vest_Swat): CLASS(RDF_Vest)
+    {
+        displayName = "[RDF] SWAT Vest";
+        model = "\sc_equipment\data\marine\mr_vest.p3d";
+        hiddenSelections[] = {"camo", "camo1"};
+        hiddenSelectionsTextures[] =
+        {
+            "\sc_equipment\data\marine\textures\vest_mp_co.paa",
+            "\sc_equipment\data\marine\textures\legs_mp_co.paa"
+        };
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\marine\mr_vest.p3d";
+            hiddenSelections[] = {"camo", "camo1"};
 
             SC_VEST_HITPOINTS_MEDIUM;
         };

@@ -22,7 +22,8 @@ class CfgPatches
             QCLASS(RDF_Unit_Autorifleman),
             QCLASS(RDF_Unit_Marksman),
             QCLASS(RDF_Unit_Rifleman_AT),
-            QCLASS(RDF_Unit_Rifleman_AT_Disposable)
+            QCLASS(RDF_Unit_Rifleman_AT_Disposable),
+            QCLASS(RDF_Unit_SWAT)
         };
         weapons[] =
         {
@@ -30,7 +31,8 @@ class CfgPatches
             QCLASS(RDF_Helmet_Marksman),
             QCLASS(RDF_Uniform),
             QCLASS(RDF_Vest),
-            QCLASS(RDF_Vest_Medium)
+            QCLASS(RDF_Vest_Medium),
+            QCLASS(RDF_Vest_Swat)
         };
         VERSION_CONFIG;
     };
