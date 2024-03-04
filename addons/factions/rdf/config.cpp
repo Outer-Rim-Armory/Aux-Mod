@@ -23,7 +23,8 @@ class CfgPatches
             QCLASS(RDF_Unit_Marksman),
             QCLASS(RDF_Unit_Rifleman_AT),
             QCLASS(RDF_Unit_Rifleman_AT_Disposable),
-            QCLASS(RDF_Unit_SWAT)
+            QCLASS(RDF_Unit_SWAT),
+            QCLASS(RDF_Unit_SWAT_Chaingun)
         };
         weapons[] =
         {
