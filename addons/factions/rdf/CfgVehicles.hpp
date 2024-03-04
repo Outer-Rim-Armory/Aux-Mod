@@ -49,8 +49,8 @@ class CfgVehicles
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_Predef_Rifleman);
     };
 
@@ -95,8 +95,8 @@ class CfgVehicles
             "3Rnd_HE_Grenade_shell"
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_Predef_Grenadier);
     };
 
@@ -119,9 +119,35 @@ class CfgVehicles
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_Predef_Autorifleman);
+    };
+
+    class CLASS(RDF_Unit_Marksman): CLASS(RDF_Unit_Base)
+    {
+        SCOPE_PUBLIC;
+        displayName = "Marksman";
+        icon = "JLTS_iconManSniper";
+        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Autorifleman);
+
+        weapons[] = {QCLASS(DC15X), QCLASS(DC17), "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(DC15X), QCLASS(DC17), "Throw", "Put"};
+
+        magazines[] =
+        {
+            ITEM_16(QCLASS(Mag_15rnd_DC15X)),
+            ITEM_6(QCLASS(Mag_20rnd_DC17))
+        };
+        respawnMagazines[] =
+        {
+            ITEM_16(QCLASS(Mag_15rnd_DC15X)),
+            ITEM_6(QCLASS(Mag_20rnd_DC17))
+        };
+
+        linkedItems[] = {QCLASS(RDF_Helmet_Marksman), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(RDF_Helmet_Marksman), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(RDF_Backpack_Predef_Rifleman);
     };
 
     class CLASS(Other_Backpack_Base);

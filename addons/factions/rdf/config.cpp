@@ -19,10 +19,13 @@ class CfgPatches
             QCLASS(RDF_Unit_Rifleman),
             QCLASS(RDF_Unit_Rifleman_DC15C),
             QCLASS(RDF_Unit_Grenadier),
-            QCLASS(RDF_Unit_Autorifleman)
+            QCLASS(RDF_Unit_Autorifleman),
+            QCLASS(RDF_Unit_Marksman)
         };
         weapons[] =
         {
+            QCLASS(RDF_Helmet),
+            QCLASS(RDF_Helmet_Marksman),
             QCLASS(RDF_Uniform)
         };
         VERSION_CONFIG;

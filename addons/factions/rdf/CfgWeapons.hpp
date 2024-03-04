@@ -21,6 +21,19 @@ class CfgWeapons
         };
     };
 
+    class CLASS(RDF_Helmet_Marksman): CLASS(RDF_Helmet)
+    {
+        displayName = "[RDF] Marksman Helmet";
+
+        model = "\sc_equipment\data\ranger\rn_helmet.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\ranger\textures\helmet_urban_co.paa"};
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\ranger\rn_helmet.p3d";
+        };
+    };
+
     class ls_blueforUniform_base;
     class CLASS(BLUFOR_Uniform_Base): ls_blueforUniform_base
     {
@@ -47,19 +60,34 @@ class CfgWeapons
     {
         SCOPE_PUBLIC;
 
-        displayName = "[RDF] Vest";
+        displayName = "[RDF] Light Vest";
 
-        model = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+        model = "\sc_equipment\data\watchdog\wd_vest_light.p3d";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\sc_equipment\data\watchdog\textures\vest_guard_co.paa"};
 
         class ItemInfo: ItemInfo
         {
             hiddenSelections[] = {"camo"};
-            uniformModel = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+            uniformModel = "\sc_equipment\data\watchdog\wd_vest_light.p3d";
             containerClass = "Supply250";
 
             SC_VEST_HITPOINTS_LIGHT;
+        };
+    };
+
+    class CLASS(RDF_Vest_Medium): CLASS(RDF_Vest)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "[RDF] Medium Vest";
+        model = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+
+        class ItemInfo: ItemInfo
+        {
+            uniformModel = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+
+            SC_VEST_HITPOINTS_MEDIUM;
         };
     };
 };
