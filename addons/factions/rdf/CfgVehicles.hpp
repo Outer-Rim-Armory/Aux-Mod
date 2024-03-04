@@ -100,6 +100,30 @@ class CfgVehicles
         backpack = QCLASS(RDF_Backpack_Predef_Grenadier);
     };
 
+    class CLASS(RDF_Unit_Autorifleman): CLASS(RDF_Unit_Base)
+    {
+        SCOPE_PUBLIC;
+        displayName = "Autorifleman";
+        icon = "iconManMG";
+        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Autorifleman);
+
+        weapons[] = {QCLASS(DC15L), QCLASS(DC17), "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(DC15L), QCLASS(DC17), "Throw", "Put"};
+
+        magazines[] =
+        {
+            ITEM_6(QCLASS(Mag_20rnd_DC17))
+        };
+        respawnMagazines[] =
+        {
+            ITEM_6(QCLASS(Mag_20rnd_DC17))
+        };
+
+        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(RDF_Backpack_Predef_Autorifleman);
+    };
+
     class CLASS(Other_Backpack_Base);
     class CLASS(RDF_Backpack): CLASS(Other_Backpack_Base)
     {
@@ -145,6 +169,14 @@ class CfgVehicles
             MAG_XX(3Rnd_SmokeOrange_Grenade_shell,2);
             MAG_XX(3Rnd_SmokeGreen_Grenade_shell,2);
             MAG_XX(CLASS(Mag_UGL_3rnd_FlareBlue),2);
+        };
+    };
+
+    class CLASS(RDF_Backpack_Predef_Autorifleman): CLASS(RDF_Backpack_Predef_Rifleman)
+    {
+        class TransportMagazines
+        {
+            MAG_XX(CLASS(Mag_240rnd_DC15L),15);
         };
     };
 };

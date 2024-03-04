@@ -16,8 +16,10 @@ class CfgPatches
         units[] =
         {
             QCLASS(RDF_Unit_Base),
+            QCLASS(RDF_Unit_Rifleman),
             QCLASS(RDF_Unit_Rifleman_DC15C),
-            QCLASS(RDF_Unit_Grenadier)
+            QCLASS(RDF_Unit_Grenadier),
+            QCLASS(RDF_Unit_Autorifleman)
         };
         weapons[] =
         {
