@@ -24,7 +24,18 @@ class CfgPatches
             QCLASS(RDF_Unit_Rifleman_AT),
             QCLASS(RDF_Unit_Rifleman_AT_Disposable),
             QCLASS(RDF_Unit_SWAT),
-            QCLASS(RDF_Unit_SWAT_Chaingun)
+            QCLASS(RDF_Unit_SWAT_Chaingun),
+            QCLASS(RDF_Backpack),
+            QCLASS(RDF_Backpack_Predef_Rifleman),
+            QCLASS(RDF_Backpack_Predef_Rifleman_DC15S),
+            QCLASS(RDF_Backpack_Predef_Grenadier),
+            QCLASS(RDF_Backpack_Predef_Autorifleman),
+            QCLASS(RDF_Backpack_Predef_Rifleman_AT),
+            QCLASS(RDF_Backpack_SWAT),
+            QCLASS(RDF_Backpack_SWAT_Predef_Rifleman),
+            QCLASS(RDF_Backpack_SWAT_Predef_Chaingun),
+            QCLASS(RDF_Backpack_Medic),
+            QCLASS(RDF_Backpack_Medic_Predef_Medic),
         };
         weapons[] =
         {
