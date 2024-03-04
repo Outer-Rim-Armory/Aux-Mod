@@ -1,7 +1,7 @@
 class CfgWeapons
 {
-    class lsd_blueforUnit_base;
-    class CLASS(BLUFOR_Uniform_Base): lsd_blueforUnit_base
+    class ls_blueforUniform_base;
+    class CLASS(BLUFOR_Uniform_Base): ls_blueforUniform_base
     {
         class ItemInfo;
     };

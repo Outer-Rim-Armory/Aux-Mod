@@ -76,6 +76,7 @@ scopeCurator = 0
 #define ITEM_9(a) a, a, a, a, a, a, a, a, a
 #define ITEM_10(a) a, a, a, a, a, a, a, a, a, a
 #define ITEM_11(a) ITEM_10(a), a
+#define ITEM_15(a) ITEM_10(a), ITEM_5(a)
 #define ITEM_20(a) ITEM_10(a), ITEM_10(a)
 
 #define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \
