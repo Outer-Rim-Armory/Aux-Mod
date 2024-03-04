@@ -57,6 +57,7 @@ class CfgWeapons
         {
             hiddenSelections[] = {"camo"};
             uniformModel = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+            containerClass = "Supply250";
 
             SC_VEST_HITPOINTS_LIGHT;
         };
