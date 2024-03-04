@@ -103,7 +103,7 @@
     }; \
 }
 
-#define SC_VEST_HITPOINTS_MEDIUM class HitpointsProtectionInfo { \
+#define SC_VEST_HITPOINTS_MEDIUM class HitpointsProtectionInfo {
     class Abdomen \
     { \
         armor = 14; \
