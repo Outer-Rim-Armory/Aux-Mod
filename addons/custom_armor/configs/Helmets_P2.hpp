@@ -361,18 +361,6 @@ class CLASS(Helmet_Phase2_Patriot): CLASS(Helmet_Phase2_Base)
     GVAR(isCustom) = TRUE;
 };
 
-class CLASS(Helmet_Phase2_Rev): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[KC] INF P2 Helm ('Rev')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\phase2\Rev_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
-
 class CLASS(Helmet_Phase2_Rodger): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm ('Rodger')";

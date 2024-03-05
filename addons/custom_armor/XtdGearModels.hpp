@@ -132,7 +132,6 @@ class XtdGearModels
                     "Lou",
                     "Ox",
                     "Patriot",
-                    "Rev",
                     "Rodger",
                     "Sage",
                     "Scvrpio",
@@ -164,7 +163,6 @@ class XtdGearModels
                 class Lou { label = "Lou"; };
                 class Ox { label = "Ox"; };
                 class Patriot { label = "Patriot"; };
-                class Rev { label = "Rev"; };
                 class Rodger { label = "Rodger"; };
                 class Sage { label = "Sage"; };
                 class Scvrpio { label = "Scvrpio"; };

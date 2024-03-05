@@ -70,7 +70,6 @@ GROUND_HOLDER(Helmet_Phase2_Lou,"INF P2 Helm ('Lou')");
 GROUND_HOLDER(Helmet_Phase2_LouPlasma,"INF P2 Helm ('Lou') [Plasma Visor]");
 GROUND_HOLDER(Helmet_Phase2_Ox,"INF P2 Helm ('Ox')");
 GROUND_HOLDER(Helmet_Phase2_Patriot,"INF P2 Helm ('Patriot')");
-GROUND_HOLDER(Helmet_Phase2_Rev,"INF P2 Helm ('Rev')");
 GROUND_HOLDER(Helmet_Phase2_Rodger,"INF P2 Helm ('Rodger')");
 GROUND_HOLDER(Helmet_Phase2_Sage,"INF P2 Helm ('Sage')");
 GROUND_HOLDER(Helmet_Phase2_Scvrpio,"INF P2 Helm ('Scvrpio')");
