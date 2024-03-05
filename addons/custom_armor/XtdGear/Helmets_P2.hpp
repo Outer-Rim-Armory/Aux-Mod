@@ -25,6 +25,7 @@ class CLASS(Helmet_Phase2_Rodger): CLASS(Helmet_Phase2_Axel) { camo = "Rodger"; 
 class CLASS(Helmet_Phase2_Sage): CLASS(Helmet_Phase2_Axel) { camo = "Sage"; };
 class CLASS(Helmet_Phase2_Scvrpio): CLASS(Helmet_Phase2_Axel) { camo = "Scvrpio"; };
 class CLASS(Helmet_Phase2_Sogi): CLASS(Helmet_Phase2_Axel) { camo = "Sogi"; };
+class CLASS(Helmet_Phase2_Splashdown): CLASS(Helmet_Phase2_Axel) { camo = "Splashdown"; };
 class CLASS(Helmet_Phase2_Star): CLASS(Helmet_Phase2_Axel) { camo = "Star"; };
 class CLASS(Helmet_Phase2_Swoop): CLASS(Helmet_Phase2_Axel) { camo = "Swoop"; };
 class CLASS(Helmet_Phase2_Sytha): CLASS(Helmet_Phase2_Axel) { camo = "Sytha"; };

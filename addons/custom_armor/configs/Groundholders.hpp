@@ -74,6 +74,7 @@ GROUND_HOLDER(Helmet_Phase2_Rodger,"INF P2 Helm ('Rodger')");
 GROUND_HOLDER(Helmet_Phase2_Sage,"INF P2 Helm ('Sage')");
 GROUND_HOLDER(Helmet_Phase2_Scvrpio,"INF P2 Helm ('Scvrpio')");
 GROUND_HOLDER(Helmet_Phase2_Sogi,"INF P2 Helm ('Sogi')");
+GROUND_HOLDER(Helmet_Phase2_Splashdown,"INF P2 Helm ('Splashdown')");
 GROUND_HOLDER(Helmet_Phase2_Star,"INF P2 Helm ('Star')");
 GROUND_HOLDER(Helmet_Phase2_Swoop,"INF P2 Helm ('Swoop')");
 GROUND_HOLDER(Helmet_Phase2_Sytha,"INF P2 Helm ('Sytha')");

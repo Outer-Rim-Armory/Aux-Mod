@@ -408,6 +408,19 @@ class CLASS(Helmet_Phase2_Sogi): CLASS(Helmet_Phase2_Base)
     GVAR(isCustom) = TRUE;
 };
 
+
+class CLASS(Helmet_Phase2_Splashdown): CLASS(Helmet_Phase2_Base)
+{
+    displayName = "[KC] INF P2 Helm ('Splashdown')";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase2\Splashdown_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+
+    GVAR(isCustom) = TRUE;
+};
+
 class CLASS(Helmet_Phase2_Star): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm ('Star')";
