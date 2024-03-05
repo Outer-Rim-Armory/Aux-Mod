@@ -1,14 +1,11 @@
 class CfgSoundShaders
 {
     class CLASS(SoundShader_WeaponShot_Base);
-    class CLASS(SoundShader_WeaponNameShot): CLASS(SoundShader_WeaponShot_Base)
+    class CLASS(SoundShader_DC20YShot): CLASS(SoundShader_WeaponShot_Base)
     {
         samples[] =
         {
-            {QPATHTOF(SUBCOMPONENT\data\audio\Fire1.wss), 1, 1},
-            {QPATHTOF(SUBCOMPONENT\data\audio\Fire2.wss), 1, 1},
-            {QPATHTOF(SUBCOMPONENT\data\audio\Fire3.wss), 1, 1},
-            {QPATHTOF(SUBCOMPONENT\data\audio\Fire4.wss), 1, 1}
+            {QPATHTOF(SUBCOMPONENT\data\audio\Fire1.wss), 1, 1}
         };
     };
 };
