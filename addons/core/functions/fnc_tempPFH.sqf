@@ -17,8 +17,7 @@
  * call Aux193_Core_fnc_createTempPFH;
  */
 
-params
-[
+params [
     ["_function", {}, [{}]],
     ["_condition", {true}, [{}]],
     ["_exitCode", {}, [{}]],

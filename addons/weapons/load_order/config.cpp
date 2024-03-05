@@ -11,6 +11,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
+            QGVAR(accessories),
             QGVAR(dc15a),
             QGVAR(dc15c),
             QGVAR(dc15l),

@@ -1,12 +1,13 @@
 class CfgVehicles
 {
-    class Tank;
-    class Tank_F: Tank
+    class Wheeled_APC_F;
+    class APC_Wheeled_01_base_F: Wheeled_APC_F
     {
         class Turrets;
     };
-    class 3AS_ATTE_base: Tank_F
+    class 3AS_ATTE_base: APC_Wheeled_01_base_F
     {
+        class ACE_SelfActions;
         class UserActions;
         class Turrets: Turrets
         {
@@ -45,15 +46,15 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
+            QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Shell_co.paa),
             "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
-            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+            QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Detail_co.paa),
+            QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Legs_co.paa),
             "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
             "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
         };
 
-        textureList[] = {"Standard", 1, "Imperial", 0};
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1};
         class TextureSources
         {
             class Standard
@@ -84,6 +85,25 @@ class CfgVehicles
                     "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
                 };
             };
+            class KeeliCompany: Standard
+            {
+                displayName = "Keeli Company";
+                author = "Keeli Company Aux Team";
+                textures[] =
+                {
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Shell_co.paa),
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Detail_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Legs_co.paa),
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+                };
+            };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            AI_CREW_SPAWNER;
         };
 
         class UserActions: UserActions

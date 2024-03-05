@@ -19,16 +19,12 @@ params [
 private ["_hasShield", "_shieldHealth"];
 TRACE_1("fnc_deactivate",_vehicle);
 
-_hasShield = [
-    configFile >> "CfgVehicles" >> typeOf _vehicle,
-    QGVAR(hasShield),
-    FALSE
-];
+_hasShield = getNumber (configOf _vehicle >> QGVAR(hasShield));
 
-if (isNull _vehicle or {
-    _hasShield isEqualTo FALSE or
-    !(_vehicle getVariable [QGVAR(isActive), false])
-}) exitWith {false};
+if (isNull _vehicle or
+    {_hasShield isEqualTo FALSE} or
+    {!(_vehicle getVariable [QGVAR(isActive), false])}
+) exitWith {false};
 
 
 _vehicle setVariable [QGVAR(isActive), false, true];
@@ -37,9 +33,7 @@ _vehicle setVariable [QGVAR(isActive), false, true];
 _vehicle call FUNC(removeShieldHandlers);
 
 [QGVAR(shieldToggled), [
-    _vehicle,
-    false,
-    _vehicle getVariable QGVAR(health)
+    _vehicle, false, _vehicle getVariable QGVAR(health)
 ]] call CBA_fnc_localEvent;
 
 true;

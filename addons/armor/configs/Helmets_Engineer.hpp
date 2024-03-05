@@ -6,17 +6,17 @@ class CLASS(Helmet_Engineer_Base): CLASS(Helmet_Base)
 
     model = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
     hiddenSelections[] = {"camo1", "illum", "visor"};
-    hiddenSelectionsMaterials[] = {"", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat", ""};
     hiddenSelectionsTextures[] =
     {
         "\ls_armor_bluefor\helmet\gar\engineer\data\helmet_co.paa",
         "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
         "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
     };
+    hiddenSelectionsMaterials[] = {"", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat", ""};
     picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_engineer_helmet_ca.paa";
 
     // LS Headlamp
-    ls_lighting_hasLight = 1;
+    ls_lighting_hasLight = TRUE;
     ls_lighting_itemType = "headgear";
     ls_lighting_attachedBone = "head";
 

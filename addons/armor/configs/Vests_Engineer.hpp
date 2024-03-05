@@ -1,6 +1,6 @@
 class CLASS(Vest_Engineer_CT): CLASS(Vest_Basic)
 {
-    displayName = "[KC] ENG Vest 01+ (Trooper)";
+    displayName = "[KC] ENG Vest 01 (Trooper)";
 
     model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest.p3d";
     hiddenSelections[] = {"camo1", "camo2"};
@@ -20,7 +20,7 @@ class CLASS(Vest_Engineer_CT): CLASS(Vest_Basic)
 
 class CLASS(Vest_Engineer_CS): CLASS(Vest_CS)
 {
-    displayName = "[KC] ENG Vest 06+ (NCO)";
+    displayName = "[KC] ENG Vest 06 (NCO)";
 
     model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_NCO.p3d";
     hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4", "camo5", "camo6", "ammo"};
@@ -44,7 +44,7 @@ class CLASS(Vest_Engineer_CS): CLASS(Vest_CS)
 
 class CLASS(Vest_Engineer_Officer): CLASS(Vest_Officer)
 {
-    displayName = "[KC] ENG Vest 12+ (Officer)";
+    displayName = "[KC] ENG Vest 12 (Officer)";
 
     model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Vest_Officer.p3d";
     hiddenSelections[] = {"camo1", "camo2"};

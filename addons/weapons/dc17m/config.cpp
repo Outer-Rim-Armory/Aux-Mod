@@ -11,6 +11,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
+            QGVAR(accessories),
             "SWLW_clones_spec",
             "3AS_Main"
         };

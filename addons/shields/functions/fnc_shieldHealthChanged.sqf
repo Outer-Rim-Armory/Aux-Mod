@@ -30,6 +30,6 @@ _message = format [
     "%"
 ];
 
-[_message, 1.5, currentPilot _vehicle] call ace_common_fnc_displaytextstructured;
+["ace_common_displayTextStructured", [_message, 1.5, currentPilot _vehicle], currentPilot _vehicle] call CBA_fnc_targetEvent;
 
 nil;

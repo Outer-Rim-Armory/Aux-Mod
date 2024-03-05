@@ -139,14 +139,14 @@ class CfgMagazines
         mass = 10;
     };
 
-    class CLASS(Mag_3Rnd_Mortar_82mm_HE): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_6Rnd_Mortar_82mm_HE): CLASS(Mag_VehicleBase)
     {
         SCOPE_HIDDEN;
-        displayName = "[KC] 3Rnd Mortar HE Shells";
-        displayNameShort = "3Rnd HE";
+        displayName = "[KC] 6Rnd Mortar HE Shells";
+        displayNameShort = "6Rnd HE";
         displayNameMFDFormat = "HE";
         ammo = QCLASS(Shell_PlasmaMortar_82mm_HE);
-        count = 3;
+        count = 6;
 
         model = "\z\ace\addons\mk6mortar\data\l16_ammo_he.p3d";
         picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_he_ca.paa";
@@ -155,32 +155,32 @@ class CfgMagazines
         initSpeed = 200;
         muzzleImpulseFactor[] = {0, 0};
     };
-    CSW_MAG_CONVERSION(CLASS(Mag_3Rnd_Mortar_82mm_HE));
+    CSW_MAG_CONVERSION(CLASS(Mag_6Rnd_Mortar_82mm_HE));
 
-    class CLASS(Mag_3Rnd_Mortar_SmokeWhite): CLASS(Mag_3Rnd_Mortar_82mm_HE)
+    class CLASS(Mag_6Rnd_Mortar_SmokeWhite): CLASS(Mag_6Rnd_Mortar_82mm_HE)
     {
-        displayName = "[KC] 3Rnd Mortar White Smoke Shells";
-        displayNameShort = "3Rnd W Smoke";
+        displayName = "[KC] 6Rnd Mortar White Smoke Shells";
+        displayNameShort = "6Rnd W Smoke";
         ammo = QCLASS(Shell_Mortar_SmokeWhite);
 
         model = "\z\ace\addons\mk6mortar\data\l16_ammo_smk_white.p3d";
         picture = "\z\ace\addons\mk6mortar\UI\w_l16_ammo_smk_white_ca.paa";
     };
-    CSW_MAG_CONVERSION(CLASS(Mag_3Rnd_Mortar_SmokeWhite));
+    CSW_MAG_CONVERSION(CLASS(Mag_6Rnd_Mortar_SmokeWhite));
 
-    class CLASS(Mag_3Rnd_Mortar_SmokeBlue): CLASS(Mag_3Rnd_Mortar_SmokeWhite)
+    class CLASS(Mag_6Rnd_Mortar_SmokeBlue): CLASS(Mag_6Rnd_Mortar_SmokeWhite)
     {
-        displayName = "[KC] 3Rnd Mortar Blue Smoke Shells";
-        displayNameShort = "3Rnd B Smoke";
+        displayName = "[KC] 6Rnd Mortar Blue Smoke Shells";
+        displayNameShort = "6Rnd B Smoke";
         ammo = QCLASS(Shell_Mortar_SmokeBlue);
     };
-    CSW_MAG_CONVERSION(CLASS(Mag_3Rnd_Mortar_SmokeBlue));
+    CSW_MAG_CONVERSION(CLASS(Mag_6Rnd_Mortar_SmokeBlue));
 
-    class CLASS(Mag_3Rnd_Mortar_SmokeRed): CLASS(Mag_3Rnd_Mortar_SmokeWhite)
+    class CLASS(Mag_6Rnd_Mortar_SmokeRed): CLASS(Mag_6Rnd_Mortar_SmokeWhite)
     {
-        displayName = "[KC] 3Rnd Mortar Red Smoke Shells";
-        displayNameShort = "3Rnd R Smoke";
+        displayName = "[KC] 6Rnd Mortar Red Smoke Shells";
+        displayNameShort = "6Rnd R Smoke";
         ammo = QCLASS(Shell_Mortar_SmokeRed);
     };
-    CSW_MAG_CONVERSION(CLASS(Mag_3Rnd_Mortar_SmokeRed));
+    CSW_MAG_CONVERSION(CLASS(Mag_6Rnd_Mortar_SmokeRed));
 };

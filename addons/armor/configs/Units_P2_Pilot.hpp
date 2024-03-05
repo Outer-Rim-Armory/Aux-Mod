@@ -23,7 +23,7 @@ class CLASS(Unit_Phase2_CXA): CLASS(Unit_Phase2_Base)
 
 class CLASS(Unit_Phase2_CXE): CLASS(Unit_Phase2_CXA)
 {
-    displayName = "AVI P2 Pilot 11 (Ensign)";
+    displayName = "AVI P2 Pilot 06 (Ensign)";
     editorPreview = EDITOR_PREVIEW(Unit_Phase2_CXE);
     icon = "iconManOfficer";
 

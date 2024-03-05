@@ -11,7 +11,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(weapons_dc15x),
+            QGVAR(dc15x),
             "LF_Weapon_Unit_Valken38X",
             "3AS_Weapons_DC15L",
             "JLTS_weapons_DC17SA",

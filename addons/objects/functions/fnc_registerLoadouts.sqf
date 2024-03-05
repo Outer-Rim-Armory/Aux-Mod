@@ -26,10 +26,10 @@ if (count _loadouts isNotEqualTo 0 and !_rebuild) exitWith {
 
 _loadouts = createHashMapFromArray [
     ["Rifleman", [
-        "",                  // Launcher
-        "",                  // Binoculars
-        "",                  // Vest
-        QCLASS(Backpack),    // Backpack
+        "",                     // Launcher
+        "",                     // Binoculars
+        "",                     // Vest
+        QCLASS(Backpack_Invis), // Backpack
         ["DC15A", "DC15S"],
         [
             // Magazines (Grenades)
@@ -56,7 +56,7 @@ _loadouts = createHashMapFromArray [
         "",
         "JLTS_CloneBinocular",
         "",
-        QCLASS(Backpack),
+        QCLASS(Backpack_Invis),
         ["DC15A", "DC15S", "DC15C"],
         [
             ["ls_mag_classC_thermalDet", 4],
@@ -82,7 +82,7 @@ _loadouts = createHashMapFromArray [
             ["ACE_elasticBandage", 20],
             ["ACE_tourniquet", 4],
             ["ACE_surgicalKit", 1],
-            ["RD501_Painkiller", 3],
+            [QEGVAR(medical,Painkiller), 3],
             ["ItemcTab", 1],
             ["ItemcTabHCam", 1]
         ]

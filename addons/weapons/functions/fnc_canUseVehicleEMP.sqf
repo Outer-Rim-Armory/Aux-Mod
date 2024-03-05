@@ -23,14 +23,10 @@ TRACE_1("fnc_canUseVehicleEMP",_vehicle);
 
 if (isNull _vehicle or {
     !isEngineOn _vehicle or
-    getNumber (configFile >> "CfgVehicles" >> typeOf _vehicle >> QGVAR(hasVehicleEMP)) == FALSE
+    getNumber (configOf _vehicle >> QGVAR(hasVehicleEMP)) == FALSE
 }) exitWith {false};
 
-_cooldown = [
-    configFile >> "CfgVehicles" >> typeOf _vehicle,
-    QGVAR(vehicleEMPCooldown),
-    EMP_VEHICLE_COOLDOWN_DEFAULT
-] call BIS_fnc_returnConfigEntry;
+_cooldown = getNumber (configOf _vehicle >> QGVAR(vehicleEMPCooldown));
 
 _lastUsedEMP = _vehicle getVariable [QGVAR(lastUsedEMP), -_cooldown];
 

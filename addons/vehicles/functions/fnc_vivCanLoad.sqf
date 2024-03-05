@@ -28,7 +28,7 @@ if (isNull _vehicle or {_range <= 0}) exitWith {false};
 _objects = nearestObjects [_vehicle, [], _range];
 
 _objects = _objects select {
-    _configPath = configFile >> "CfgVehicles" >> typeOf _x >> "VehicleTransport" >> "Cargo";
+    _configPath = configOf _x >> "VehicleTransport" >> "Cargo";
     getNumber (_configPath >> "canBeTransported") + getNumber (_configPath >> QGVAR(vivOverride)) >= 1;
 };
 

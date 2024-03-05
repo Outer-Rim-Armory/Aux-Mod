@@ -276,7 +276,7 @@ class CLASS(Vest_CSM): CLASS(Vest_CS)
 
 class CLASS(Vest_Officer): CLASS(Vest_Basic)
 {
-    displayName = "[KC] INF Vest 12+ (Officer)";
+    displayName = "[KC] INF Vest 12 (Officer)";
 
     model = "\SWLB_clones\SWLB_clone_officer_armor.p3d";
     hiddenSelections[] = {"camo1"};
@@ -318,7 +318,7 @@ class CLASS(Vest_Officer): CLASS(Vest_Basic)
 
 class CLASS(Vest_Officer_v2): CLASS(Vest_Officer)
 {
-    displayName = "[KC] INF Vest 12+ (Officer, v2)";
+    displayName = "[KC] INF Vest 12 (Officer, v2)";
 
     model = "\SWLB_CEE\data\SWLB_CEE_Officer_Tactical.p3d";
     hiddenSelections[] = {"camo1", "camo2"};

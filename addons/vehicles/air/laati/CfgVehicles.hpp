@@ -75,7 +75,7 @@ class CfgVehicles
         // Textures
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(air\laati\data\textures\KeeliCompany\Body_co.paa),
+            QPATHTOF(air\laati\data\textures\KeeliCompany\Hull_co.paa),
             QPATHTOF(air\laati\data\textures\KeeliCompany\Wings_co.paa),
             "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
             "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
@@ -118,33 +118,43 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    QPATHTOF(air\laati\data\textures\KeeliCompany\Body_co.paa),
+                    QPATHTOF(air\laati\data\textures\KeeliCompany\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\KeeliCompany\Wings_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
-            class Akali: Standard
+            class KeeliCompany2: KeeliCompany
             {
-                author = "Keeli Company Aux Team";
+                displayName = "Keeli Company 2";
+                textures[] =
+                {
+                    QPATHTOF(air\laati\data\textures\KeeliCompany2\Hull_co.paa),
+                    QPATHTOF(air\laati\data\textures\KeeliCompany2\Wings_co.paa),
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class Akali: KeeliCompany
+            {
                 displayName = "Akali";
                 textures[] =
                 {
-                    QPATHTOF(air\laati\data\textures\Akali\Body_co.paa),
+                    QPATHTOF(air\laati\data\textures\Akali\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\Akali\Wings_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
-            class TwiLek: Standard
+            class TwiLek: KeeliCompany
             {
-                author = "Keeli Company Aux Team";
                 displayName = "Twi'Lek";
                 textures[] =
                 {
-                    QPATHTOF(air\laati\data\textures\TwiLek\Body_co.paa),
+                    QPATHTOF(air\laati\data\textures\TwiLek\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\TwiLek\Wings_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
@@ -204,6 +214,13 @@ class CfgVehicles
                 displayName = "Close Ramp";
                 condition = QUOTE(ace_player == currentPilot this and this animationSourcePhase 'ramp' == 1;);
                 statement = QUOTE([ARR_2('ramp',true)] call ls_fnc_keybind_operationFrameWork;);
+            };
+
+            class LoadVehicle: Impulse
+            {
+                displayName = "Load Vehicle";
+                condition = QUOTE(ace_player isEqualTo currentPilot this and {this call FUNC(vivCanLoad)});
+                statement = QUOTE(this call FUNC(vivLoad));
             };
         };
 

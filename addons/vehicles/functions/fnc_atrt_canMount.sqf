@@ -9,7 +9,7 @@
  * 1: The unit attempting to ride the AT-RT <OBJECT>
  *
  * Return Value:
- * Whether the given unit can ride the AT-RT <BOOL>
+ * True if the AT-RT can be mounted, otherwise false  <BOOL>
  *
  * Examples:
  * [_atrt, ace_player] call FUNC(atrt_canMount);
@@ -27,7 +27,7 @@ TRACE_2("fnc_atrt_canMount",_atrt,_unit);
 if (!alive _atrt or {
     _unit isKindOf "3AS_ATRT_Base" or
     !(_unit call ace_common_fnc_isAwake) or
-    !(isNull (_atrt getVariable [QGVAR(rider), objNull]))
+    !(isNull (_atrt getVariable ["TAS_ATRT_rider", objNull]))
 }) exitWith {false};
 
 true;

@@ -75,4 +75,46 @@ class CWR_VoiceLines
             "ChatWheelRedux\Data\Audio\Unconscious\TrooperDown.wss"
         };
     };
+
+    class Sorry
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\Sorry\IHopeTheyDontWriteAReport.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\MyApologies.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\Sorry.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\Sorry2.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\SorryAboutThat.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\SorryIHopeTheyDontWriteAReport.wss",
+            "ChatWheelRedux\Data\Audio\Sorry\SorrySir.wss"
+        };
+    };
+
+    class Follow
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\Follow\AlrightSquadFollowMe.wss",
+            "ChatWheelRedux\Data\Audio\Follow\AlrightSquadFollowMe2.wss",
+            "ChatWheelRedux\Data\Audio\Follow\RallyUpAndFollowMe.wss",
+            "ChatWheelRedux\Data\Audio\Follow\SquadWithMe.wss",
+            "ChatWheelRedux\Data\Audio\Follow\WithMeBrothers.wss"
+        };
+    };
+
+    class ContactInfClose
+    {
+        voiceLines[] =
+        {
+            "ChatWheelRedux\Data\Audio\ContactInfClose\DroidForcesDangerClose.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\EnemyClankersApproaching.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\EnemyClankersSpotted.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\SeppiesClosingIn.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\WatchItWatchItDroidsNearby.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\WeHaveEnemyForcesWithinThePerimeter.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\WeHaveEnemyForcesWithinThePerimeter2.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\WeHaveHostileForcesNearby.wss",
+            "ChatWheelRedux\Data\Audio\ContactInfClose\WeHaveHostilesNearby.wss"
+        };
+    };
 };

@@ -11,9 +11,9 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
+            QGVAR(accessories),
             "3AS_Weapons_WestarM5",
             "SWLW_clones",
-            "Aux501_Patch_Accessories",
             "JLTS_weapons_DC17SA",
             "ace_laserpointer"
         };
@@ -26,8 +26,7 @@ class CfgPatches
             QCLASS(WestarM5_Fried),
             QCLASS(WestarM5_UGL_Fried),
             QCLASS(Westar_M5),
-            QCLASS(Westar_M5_UGL),
-            QCLASS(WestarM5_Scope)
+            QCLASS(Westar_M5_UGL)
         };
         VERSION_CONFIG;
     };

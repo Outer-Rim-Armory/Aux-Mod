@@ -11,7 +11,7 @@ class CfgPatches
         requiredAddons[] =
         {
             QUOTE(ADDON),
-            QCLASS(weapons_e5),
+            QGVAR(e5),
             "JLTS_weapons_E5C"
         };
         units[] = {};

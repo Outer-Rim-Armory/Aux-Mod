@@ -26,7 +26,10 @@ class CfgPatches
         {
             QCLASS(Deployable_MedicalDroid)
         };
-        weapons[] = {};
+        weapons[] =
+        {
+            QGVAR(Painkiller)
+        };
         VERSION_CONFIG;
     };
 };
@@ -34,4 +37,6 @@ class CfgPatches
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
+#include "ACE_Medical_Treatment.hpp"
+#include "ACE_Medical_Treatment_Actions.hpp"
 #include "ACE_Medical_Facilities.hpp"

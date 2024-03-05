@@ -46,6 +46,6 @@ _atrt addEventHandler ["HandleDamage", LINKFUNC(atrt_handleDamage)];
 _atrt addEventHandler ["Deleted", {
     params ["_entity"];
     private ["_allEffects"];
-    _allEffects = _entity getVariable [QGVAR(atrt_deathEffects), []];
+    _allEffects = _entity getVariable ["TAS_ATRT_effects", []];
     { deleteVehicle _x; } forEach _allEffects;
 }];
