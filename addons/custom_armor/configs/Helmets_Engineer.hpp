@@ -30,16 +30,3 @@ class CLASS(Helmet_Engineer_BobKyber): CLASS(Helmet_Engineer_Bob)
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
-
-class CLASS(Helmet_Engineer_Splashdown): CLASS(Helmet_Engineer_Base)
-{
-    displayName = "[KC] ENG Helm ('Splashdown')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(data\helmets\engineer\Splashdown_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
-        "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
-    };
-
-    GVAR(isCustom) = TRUE;
-};
