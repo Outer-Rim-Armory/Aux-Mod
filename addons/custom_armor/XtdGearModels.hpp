@@ -264,7 +264,7 @@ class XtdGearModels
                 };
 
                 class Bob { label = "Bob"; };
-                class Bob { label = "Splashdown"; };
+                class Splashdown { label = "Splashdown"; };
             };
         };
 
@@ -300,10 +300,12 @@ class XtdGearModels
                 values[] =
                 {
                     "Patriot",
+                    "Rev",
                     "Tugz"
                 };
 
                 class Patriot { label = "Patriot"; };
+                class Rev { label = "Rev"; };
                 class Tugz { label = "Tugz"; };
             };
         };

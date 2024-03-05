@@ -111,6 +111,7 @@ GROUND_HOLDER(Helmet_ARC_Tyrant,"SF ARC Helm ('Tyrant')");
 GROUND_HOLDER(Helmet_ARC_TyrantCrimson,"SF ARC Helm ('Tyrant') [Crimson Visor]");
 
 GROUND_HOLDER(Helmet_ARF_Patriot,"SF ARF Helm ('Patriot')");
+GROUND_HOLDER(Helmet_ARF_Rev,"SF ARF Helm ('Rev')");
 GROUND_HOLDER(Helmet_ARF_Tugz,"SF ARF Helm ('Tugz')");
 
 GROUND_HOLDER(Helmet_BARC_Rat,"SF BARC Helm ('Rat')");
