@@ -4,4 +4,5 @@ class CLASS(Helmet_ARF_Patriot)
     camo = "Patriot";
 };
 class CLASS(Helmet_ARF_Rev): CLASS(Helmet_ARF_Patriot) { camo = "Rev"; };
+class CLASS(Helmet_ARF_Sogi): CLASS(Helmet_ARF_Patriot) { camo = "Sogi"; };
 class CLASS(Helmet_ARF_Tugz): CLASS(Helmet_ARF_Patriot) { camo = "Tugz"; };

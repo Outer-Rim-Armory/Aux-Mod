@@ -131,6 +131,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_ARC_TyrantCrimson),
             QGROUND_CLASS(Helmet_ARF_Patriot),
             QGROUND_CLASS(Helmet_ARF_Rev),
+            QGROUND_CLASS(Helmet_ARF_Sogi),
             QGROUND_CLASS(Helmet_ARF_Tugz),
             QGROUND_CLASS(Helmet_BARC_Rat),
             QGROUND_CLASS(Helmet_BARC_RatCrimson)
@@ -238,6 +239,7 @@ class CfgPatches
             QCLASS(Helmet_ARC_TyrantCrimson),
             QCLASS(Helmet_ARF_Patriot),
             QCLASS(Helmet_ARF_Rev),
+            QCLASS(Helmet_ARF_Sogi),
             QCLASS(Helmet_ARF_Tugz),
             QCLASS(Helmet_BARC_Rat),
             QCLASS(Helmet_BARC_RatCrimson),

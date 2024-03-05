@@ -301,11 +301,13 @@ class XtdGearModels
                 {
                     "Patriot",
                     "Rev",
+                    "Sogi",
                     "Tugz"
                 };
 
                 class Patriot { label = "Patriot"; };
                 class Rev { label = "Rev"; };
+                class Sogi { label = "Sogi"; };
                 class Tugz { label = "Tugz"; };
             };
         };
