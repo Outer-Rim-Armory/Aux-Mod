@@ -100,7 +100,6 @@ GROUND_HOLDER(Helmet_Phase12_JoeCrimson,"INF P1-2 Helm ('Joe') [Crimson Visor]")
 
 GROUND_HOLDER(Helmet_Engineer_Bob,"ENG Helm ('Bob')");
 GROUND_HOLDER(Helmet_Engineer_BobKyber,"ENG Helm ('Bob') [Kyber Visor]");
-GROUND_HOLDER(Helmet_Engineer_Splashdown,"ENG Helm ('Splashdown')");
 
 
 GROUND_HOLDER(Helmet_ARC_Drake,"SF ARC Helm ('Drake')");

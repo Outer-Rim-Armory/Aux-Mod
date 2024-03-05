@@ -261,12 +261,10 @@ class XtdGearModels
                 changeInGame = FALSE;
                 values[] =
                 {
-                    "Bob",
-                    "Splashdown"
+                    "Bob"
                 };
 
                 class Bob { label = "Bob"; };
-                class Splashdown { label = "Splashdown"; };
             };
         };
 
