@@ -11,7 +11,7 @@
  * True if patient wakes up, otherwise false
  *
  * Examples:
- * player call FUNC(reorient);
+ * [player, unit] call FUNC(reorient);
  *
  * Public: Yes
  */
