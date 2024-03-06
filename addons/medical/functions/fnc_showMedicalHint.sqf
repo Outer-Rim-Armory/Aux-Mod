@@ -20,9 +20,9 @@ params ["_medic", "_patient"];
 private ["_message", "_image"];
 TRACE_2("fnc_showMedicalHint",_medic,_patient);
 
-// ! Add _medic == _patient check before release
 if (GVAR(medicalHint_message) == "" or
-    {ace_medical_gui_pendingReopen}
+    {ace_medical_gui_pendingReopen} or
+    {_medic == _patient}
 ) exitWith {};
 
 _message = format [GVAR(medicalHint_message), GET_NAME(_medic)];
