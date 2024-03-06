@@ -24,3 +24,11 @@
     [1, 30, 8, 0],
     TRUE
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(medicalHint_message),
+    "EDITBOX",
+    ["Medical Message", "Displays a message to a patient when you open their medical menu. An empty message will not be displayed. '%1' will be replaced with your name."],
+    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
+    ""
+] call CBA_fnc_addSetting;
