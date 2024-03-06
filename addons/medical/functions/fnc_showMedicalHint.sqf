@@ -25,7 +25,7 @@ if (GVAR(medicalHint_message) == "" or
     {ace_medical_gui_pendingReopen}
 ) exitWith {};
 
-_message = format [GVAR(medicalHint_message), [_medic, false, true] call ace_common_fnc_getName];
+_message = format [GVAR(medicalHint_message), GET_NAME(_medic)];
 _message = format ["<t align='center'>%1</t>", _message];
 _image = "";
 
