@@ -9,7 +9,7 @@ class CfgVehicles
         editorCategory = QCLASS(Objects);
         editorSubcategory = QCLASS(Edsubcat_Droids);
 
-        model = "\RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
+        model = "\3AS\3AS_props\droids\models\3AS_medical_droid.p3d";
         editorPreview = EDITOR_PREVIEW(Deployable_MedicalDroid);
 
         GVAR(areaHealRadius) = 7;
@@ -20,7 +20,7 @@ class CfgVehicles
         EGVAR(core,soundLoopDelay) = 15;
 
         EGVAR(objects,pickupTime) = 20;
-        EGVAR(objects,interactionPosition)[] = {0, 0, 1};
+        EGVAR(objects,interactionPosition)[] = {0, 0, 0.3};
     };
 
     class ACE_MedicalLitterBase;
