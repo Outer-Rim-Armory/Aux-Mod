@@ -11,6 +11,7 @@ class CfgPatches
         {
             QCLASS(core),
             "3AS_Prop_Droids",
+            "442_misc_medical",
             "ace_medical",
             "ace_medical_ai",
             "ace_medical_blood",
