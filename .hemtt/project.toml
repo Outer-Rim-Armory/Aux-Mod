@@ -69,7 +69,7 @@ workshop = [
     "2789152015", # WBK Zombies
     "2478080991", # Scion Conflict
 ]
-presets = []
+presets = ["main"]
 dlc = []
 optionals = []
 parameters = [
