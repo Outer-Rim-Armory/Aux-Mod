@@ -37,21 +37,20 @@ class CLASS(Vest_Airborne_WO): CLASS(Vest_Officer)
 {
     displayName = "[KC] AB Vest 12 (Officer)";
     model = "\ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
-    hiddenSelections[] = {"camo1", "camo2", "camo3", "ammo", "pauldron"};
+    hiddenSelections[] = {"camo1", "camo2", "camo3", "ammo"};
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Bag and Chest Strap
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa),   // Kama
-        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa),   // ! Pauldron, currently broken
-        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Ammo
-        "",                                                           // NCO Pauldron
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa),   // Pauldron
+        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)  // Ammo
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
 
     class ItemInfo: ItemInfo
     {
         uniformModel = "\ls_armor_bluefor\vest\gar\airborneOfficer\ls_gar_airborneOfficer_vest.p3d";
-        hiddenSelections[] = {"camo1", "camo2", "camo3", "ammo", "pauldron"};
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "ammo"};
     };
 };
 
