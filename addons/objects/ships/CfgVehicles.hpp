@@ -6,7 +6,7 @@ class CfgVehicles
     class CLASS(Venator_Resurgence_ClosedFullyHollowed): venator_base_5
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorCategory = QCLASS(Objects);
         editorSubcategory = QCLASS(EdSubcat_StaticShips);
@@ -61,7 +61,7 @@ class CfgVehicles
     class CLASS(Venator_Resurgence_Zeus): venator_zeus
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorCategory = QCLASS(Objects);
         editorSubcategory = QCLASS(EdSubcat_StaticShips);

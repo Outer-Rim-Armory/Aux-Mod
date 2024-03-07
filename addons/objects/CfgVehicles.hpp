@@ -6,7 +6,7 @@ class CfgVehicles
     class CLASS(Flag_KC_Pole): ls_flag_base
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorCategory = QCLASS(Objects);
         editorSubcategory = QCLASS(EdSubCat_Flags);
@@ -23,7 +23,7 @@ class CfgVehicles
     class CLASS(Flag_KC_Vertical): ls_staticFlag_base
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorCategory = QCLASS(Objects);
         editorSubcategory = QCLASS(EdSubCat_Flags);
@@ -72,7 +72,7 @@ class CfgVehicles
     class CLASS(Gonk_Base): 3as_GNK
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         // Editor Attributes
         editorCategory = QCLASS(Objects);
@@ -199,26 +199,26 @@ class CfgVehicles
                 hideOnUse = TRUE;
                 priority = 100;
 
-                condition = QUOTE(!(ace_player getVariable [ARR_2('ace_medical_medicClass',false)]));
-                statement = QUOTE(ace_player setVariable [ARR_2('ace_medical_medicClass',true)]);
+                condition = QUOTE(!(ace_player call EFUNC(core,isMedic)));
+                statement = QUOTE([ARR_2(ace_player,1)] call EFUNC(core,setMedic));
             };
             class Unassign_Medic: Assign_Medic
             {
                 displayName = QUOTE(<t color='#c40000'><img image=QQPATHTOEF(core,data\ui\Medic_White_ca.paa)/> Unassign Medic Permissions</t>);
-                condition = QUOTE(ace_player getVariable [ARR_2('ace_medical_medicClass',false)]);
-                statement = QUOTE(ace_player setVariable [ARR_2('ace_medical_medicClass',false)]);
+                condition = QUOTE(ace_player call EFUNC(core,isMedic));
+                statement = QUOTE([ARR_2(ace_player,0)] call EFUNC(core,setMedic));
             };
             class Assign_Engineer: Assign_Medic
             {
                 displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(core,data\ui\EOD_White_ca.paa)/> Assign Engineer Permissions</t>);
-                condition = QUOTE(!(ace_player getVariable [ARR_2('ace_isEngineer',false)]));
-                statement = QUOTE(ace_player setVariable [ARR_2('ace_isEngineer',true)]);
+                condition = QUOTE(!(ace_player call EFUNC(core,isEngineer)));
+                statement = QUOTE([ARR_2(ace_player,true)] call EFUNC(core,setEngineer));
             };
             class Unassign_Engineer: Assign_Engineer
             {
                 displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(core,data\ui\EOD_White_ca.paa)/> Unassign Engineer Permissions</t>);
-                condition = QUOTE(ace_player getVariable [ARR_2('ace_isEngineer',false)]);
-                statement = QUOTE(ace_player setVariable [ARR_2('ace_isEngineer',false)]);
+                condition = QUOTE(ace_player call EFUNC(core,isEngineer));
+                statement = QUOTE([ARR_2(ace_player,false)] call EFUNC(core,setEngineer));
             };
         };
     };
@@ -265,7 +265,7 @@ class CfgVehicles
     {
         SCOPE_PUBLIC;
         displayName = "Full Heal Droid";
-        model = "\RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
+        model = "\3AS\3AS_props\droids\models\3AS_medical_droid.p3d";
         editorPreview = EDITOR_PREVIEW(Utility_FullHeal);
 
         class UserActions

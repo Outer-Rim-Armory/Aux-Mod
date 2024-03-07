@@ -31,7 +31,7 @@ class CfgVehicles
     class CLASS(Khezu_Unarmed): B_UGV_01_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Drones);
@@ -75,7 +75,7 @@ class CfgVehicles
         {
             class CamoKC
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company Camo";
                 factions[] = {};
                 textures[] =
@@ -179,7 +179,7 @@ class CfgVehicles
     class CLASS(Khezu_Armed): B_UGV_01_rcws_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Drones);
@@ -224,7 +224,7 @@ class CfgVehicles
         {
             class CamoKC
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company Camo";
                 factions[] = {};
                 textures[] =

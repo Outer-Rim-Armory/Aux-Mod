@@ -2,7 +2,7 @@ class CfgUnitInsignia
 {
     class CLASS(Insignia_KaminoCloner)
     {
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         displayName = "[KC] Kaminoan Cloner";
         texture = QPATHTOF(data\insignias\KaminoCloner_ca.paa);
     };

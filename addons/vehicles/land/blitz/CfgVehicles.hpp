@@ -38,7 +38,7 @@ class CfgVehicles
     class CLASS(Blitz): B_MBT_01_TUSK_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Tanks);
@@ -136,7 +136,7 @@ class CfgVehicles
         {
             class KeeliCompany
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company";
                 factions[] = {};
                 textures[] =

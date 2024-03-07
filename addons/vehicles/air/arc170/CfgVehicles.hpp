@@ -16,7 +16,7 @@ class CfgVehicles
     class CLASS(ARC170): 3AS_ARC_170_Base
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Planes);
@@ -68,7 +68,7 @@ class CfgVehicles
             };
             class KeeliCompany: Standard
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company";
                 factions[] = {};
                 textures[] =

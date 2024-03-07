@@ -4,7 +4,7 @@ class CfgVehicles
     class CLASS(Sound_Base): Sound
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
     };
     SOUND_OBJ(Restaurant,"[KC] Restaurant Ambience");
     SOUND_OBJ(Incoming,"[KC] Incoming Alarm");

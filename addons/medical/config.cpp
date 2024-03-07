@@ -4,12 +4,14 @@ class CfgPatches
 {
     class ADDON
     {
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
             QCLASS(core),
+            "3AS_Prop_Droids",
+            "442_misc_medical",
             "ace_medical",
             "ace_medical_ai",
             "ace_medical_blood",
@@ -24,10 +26,12 @@ class CfgPatches
         };
         units[] =
         {
-            QCLASS(Deployable_MedicalDroid)
+            QCLASS(Deployable_MedicalDroid),
+            QGVAR(litter_Painkiller)
         };
         weapons[] =
         {
+            QCLASS(Deployable_MedicalDroid_Item),
             QGVAR(Painkiller)
         };
         VERSION_CONFIG;

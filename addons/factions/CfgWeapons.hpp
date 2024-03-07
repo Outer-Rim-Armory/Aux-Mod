@@ -4,7 +4,7 @@ class CfgWeapons
     class CLASS(OPFOR_Helmet_Base): ls_redforHelmet_base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         displayName = "OPFOR Helmet Base";
     };
 
@@ -12,7 +12,7 @@ class CfgWeapons
     class CLASS(OPFOR_Uniform_Base): ls_redforUniform_base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         displayName = "OPFOR Uniform Base";
     };
 
@@ -20,7 +20,7 @@ class CfgWeapons
     class CLASS(OPFOR_Vest_Base): ls_redforVest_base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         displayName = "OPFOR Vest Base";
         descriptionShort = "Armor Level III";
     };
@@ -29,7 +29,7 @@ class CfgWeapons
     class CLASS(INDEP_Helmet_Base): ls_greenforHelmet_base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         displayName = "INDEP Helmet Base";
     };
 
@@ -37,7 +37,7 @@ class CfgWeapons
     class CLASS(INDEP_Uniform_Base): ls_greenforUniform_base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         displayName = "INDEP Uniform Base";
     };
 
@@ -45,7 +45,7 @@ class CfgWeapons
     class CLASS(INDEP_Vest_Base): ls_greenforVest_base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         displayName = "INDEP Vest Base";
     };
 };

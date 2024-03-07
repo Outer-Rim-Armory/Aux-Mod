@@ -5,7 +5,7 @@ class XtdGearModels
         class CLASS(Helmets_Phase1)
         {
             label = "Helmets (P1)";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -67,7 +67,7 @@ class XtdGearModels
         class CLASS(Helmets_Phase1_Geonosis)
         {
             label = "Helmets (Geonosis)";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -93,7 +93,7 @@ class XtdGearModels
         class CLASS(Helmets_Pilot_Phase1)
         {
             label = "Pilot Helmets (P1)";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -113,7 +113,7 @@ class XtdGearModels
         class CLASS(Helmets_Tanker_Phase1)
         {
             label = "Tanker Helmets (P1)";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -135,7 +135,7 @@ class XtdGearModels
         class CLASS(Helmets_Phase2)
         {
             label = "Helmets (P2)";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -209,7 +209,7 @@ class XtdGearModels
         class CLASS(Helmets_Insulated_Phase2)
         {
             label = "Insulated Helmets (P2)";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -229,7 +229,7 @@ class XtdGearModels
         class CLASS(Helmets_Pilot_Phase2)
         {
             label = "Pilot Helmets (P2)";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -255,7 +255,7 @@ class XtdGearModels
         class CLASS(Helmets_Tanker_Phase2)
         {
             label = "Tanker Helmets (P2)";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -281,7 +281,7 @@ class XtdGearModels
         class CLASS(Helmets_Airborne)
         {
             label = "Airborne Helmets";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -303,7 +303,7 @@ class XtdGearModels
         class CLASS(Helmets_Engineer)
         {
             label = "Engineer Helmets";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -327,7 +327,7 @@ class XtdGearModels
         class CLASS(Helmets_ARC)
         {
             label = "ARC Helmets";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -357,7 +357,7 @@ class XtdGearModels
         class CLASS(Helmets_ARF)
         {
             label = "ARF Helmets";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -383,7 +383,7 @@ class XtdGearModels
         class CLASS(Helmets_BARC)
         {
             label = "BARC Helmets";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -403,7 +403,7 @@ class XtdGearModels
         class CLASS(Uniforms_Ranks_Infantry)
         {
             label = "Infantry Rank Uniforms";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -471,7 +471,7 @@ class XtdGearModels
         class CLASS(Uniforms_Ranks_Geonosis)
         {
             label = "Geonosis Rank Uniforms";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -497,7 +497,7 @@ class XtdGearModels
         class CLASS(Uniforms_Insulated_Phase2)
         {
             label = "Insulated Uniforms (P2)";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -517,7 +517,7 @@ class XtdGearModels
         class CLASS(Uniforms_Pilot)
         {
             label = "Pilot Uniforms";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -537,7 +537,7 @@ class XtdGearModels
         class CLASS(Uniforms_Tanker)
         {
             label = "Tanker Uniforms";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -555,7 +555,7 @@ class XtdGearModels
         class CLASS(Uniforms_ARC)
         {
             label = "ARC Uniforms";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo
@@ -577,7 +577,7 @@ class XtdGearModels
         class CLASS(Uniforms_ARF)
         {
             label = "ARF Uniforms";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo

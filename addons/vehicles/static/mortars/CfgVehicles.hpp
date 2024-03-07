@@ -26,7 +26,7 @@ class CfgVehicles
     class CLASS(Mortar_Base): 3AS_Republic_Mortar
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorSubcategory = QCLASS(EdSubCat_Turrets);
 

@@ -1,7 +1,11 @@
 PREP(getNearbyUnits);
 PREP(inFeatureCamera);
+PREP(isEngineer);
+PREP(isMedic);
 PREP(playLocalSound);
 PREP(rgbToHex);
+PREP(setEngineer);
+PREP(setMedic);
 PREP(soundLoop);
 PREP(soundLoopInit);
 PREP(stringReplace);

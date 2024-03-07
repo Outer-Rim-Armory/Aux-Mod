@@ -4,7 +4,7 @@ class CfgVehicles
     class CLASS(Unit_Base): lsd_gar_trooper_phase1
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
 
@@ -93,7 +93,7 @@ class CfgVehicles
     class CLASS(Backpack_Base): SWLB_clone_backpack
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] INF Backpack (Base)";
         hiddenSelections[] = {"camo1", "cover", "heavy", "medic", "RTO"};

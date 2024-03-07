@@ -16,7 +16,7 @@ class CfgVehicles
     class CLASS(Reek): B_APC_Wheeled_01_cannon_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_APCs);
@@ -114,7 +114,7 @@ class CfgVehicles
         {
             class Standard
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Standard";
                 factions[] = {};
                 textures[] =

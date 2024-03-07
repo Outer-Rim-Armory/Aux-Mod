@@ -4,7 +4,7 @@ class CfgPatches
 {
     class SUBADDON
     {
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
