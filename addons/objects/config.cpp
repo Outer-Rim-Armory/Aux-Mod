@@ -11,7 +11,8 @@ class CfgPatches
         {
             QCLASS(core),
             "ls_flags",
-            "3as_GNK_Prop"
+            "3as_GNK_Prop",
+            "3AS_Prop_Droids"
         };
         units[] =
         {
