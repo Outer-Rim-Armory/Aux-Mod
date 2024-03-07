@@ -265,7 +265,7 @@ class CfgVehicles
     {
         SCOPE_PUBLIC;
         displayName = "Full Heal Droid";
-        model = "\RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
+        model = "\3AS\3AS_props\droids\models\3AS_medical_droid.p3d";
         editorPreview = EDITOR_PREVIEW(Utility_FullHeal);
 
         class UserActions
