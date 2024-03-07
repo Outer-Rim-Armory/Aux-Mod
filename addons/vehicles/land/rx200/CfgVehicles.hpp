@@ -16,7 +16,7 @@ class CfgVehicles
     class CLASS(RX200_Base): 3AS_RX200_Base
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Tanks);

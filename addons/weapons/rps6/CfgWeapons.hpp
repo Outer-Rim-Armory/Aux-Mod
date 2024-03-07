@@ -9,7 +9,7 @@ class CfgWeapons
     class CLASS(RPS6_Base): ls_weapon_rps6
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] RPS-6 (Base)";
         baseWeapon = QCLASS(RPS6_Base);

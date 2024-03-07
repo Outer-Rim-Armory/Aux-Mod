@@ -23,7 +23,7 @@ class CfgVehicles
     class CLASS(Ogre_Base): OPTRE_Pelican_F
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorSubcategory = QCLASS(EdSubCat_Helicopters);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Ogre_Tan);

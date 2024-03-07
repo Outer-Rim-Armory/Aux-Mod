@@ -26,7 +26,7 @@ class CfgVehicles
     class CLASS(Juggernaut): 3AS_Jug
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_APCs);

@@ -30,7 +30,7 @@ class CfgVehicles
     class CLASS(Plesioth_Base): OPTRE_M808B_UNSC
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorSubcategory = QCLASS(EdSubCat_Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Plesioth_Tan);

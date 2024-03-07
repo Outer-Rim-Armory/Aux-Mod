@@ -8,7 +8,7 @@ class CfgVehicles
     class CLASS(Resupply_Base): 3AS_Supply_Large_Prop
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "Crate";
 

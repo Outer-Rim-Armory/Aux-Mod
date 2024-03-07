@@ -34,7 +34,7 @@ class CfgWeapons
     class CLASS(WestarM5_Base): 3AS_WestarM5_F
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] Westar-M5 (Base)";
         descriptionShort = "Blaster Rifle";

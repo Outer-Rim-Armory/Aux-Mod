@@ -12,7 +12,7 @@ class CfgVehicles
     class CLASS(ScoutTank_Base): lsd_car_ast
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "Armored Scout Tank";
 

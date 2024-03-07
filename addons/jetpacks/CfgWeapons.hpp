@@ -4,7 +4,7 @@ class CfgWeapons
     class CBA_MiscItem_ItemInfo;
     class CLASS(Jetpack_FuelCan_Empty): CBA_MiscItem
     {
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         SCOPE_PUBLIC;
 

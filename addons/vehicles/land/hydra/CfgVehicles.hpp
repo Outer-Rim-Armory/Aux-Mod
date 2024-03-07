@@ -15,7 +15,7 @@ class CfgVehicles
     class CLASS(Hydra): O_APC_Wheeled_02_rcws_v2_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         side = BLUFOR;
         faction = QCLASS(Faction_KC);
@@ -40,7 +40,7 @@ class CfgVehicles
         {
             class CamoKC
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company Camo";
                 factions[] = {};
                 textures[] =

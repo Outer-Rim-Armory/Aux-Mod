@@ -21,7 +21,7 @@ class CfgWeapons
     class CLASS(Valken38x_Base): LFP_Valken38x
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] Valken-38x (Base)";
         baseWeapon = QCLASS(Valken38x_Base);

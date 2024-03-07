@@ -5,7 +5,7 @@ class CfgWeapons
     class CLASS(Optic_Base): ItemCore
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         weaponInfoType = "RscWeaponZeroing";
         inertia = 0;
 

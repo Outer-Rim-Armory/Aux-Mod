@@ -8,7 +8,7 @@ class CfgVehicles
     class CLASS(Rathian_Base): OPTRE_Hornet_base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorSubcategory = QCLASS(EdSubCat_Helicopters);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Rathian_Tan);

@@ -20,7 +20,7 @@ class CfgWeapons
     class CLASS(DC17M_Base): SWLW_DC17M
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] DC-17M (Base)";
         baseWeapon = QCLASS(DC17M_Base);

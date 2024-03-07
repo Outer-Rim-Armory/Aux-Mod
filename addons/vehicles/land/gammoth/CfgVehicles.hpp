@@ -4,7 +4,7 @@ class CfgVehicles
     class CLASS(Gammoth_Base): O_Truck_03_transport_F
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
@@ -22,7 +22,7 @@ class CfgVehicles
         {
             class CamoKC
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company Camo";
                 factions[] = {};
                 textures[] =
