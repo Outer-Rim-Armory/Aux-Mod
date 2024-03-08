@@ -11,7 +11,7 @@
  * True if patient wakes up, otherwise false
  *
  * Examples:
- * player call FUNC(reorient);
+ * [player, unit] call FUNC(reorient);
  *
  * Public: Yes
  */
@@ -26,7 +26,7 @@ TRACE_2("fnc_reorient",_medic,_patient);
 _random = random 1;
 
 // Non-public function, could potentially be changed
-[_patient, "activity", "%1 attempted to reorient patient", [[_medic, false, true] call ace_common_fnc_getName]] call ace_medical_treatment_fnc_addToLog;
+[_patient, "activity", "%1 attempted to reorient patient", [GET_NAME(_medic)]] call ace_medical_treatment_fnc_addToLog;
 
 if (!(_patient call ace_common_fnc_isAwake) and
     {_random >= GVAR(reorient_successChance)} and

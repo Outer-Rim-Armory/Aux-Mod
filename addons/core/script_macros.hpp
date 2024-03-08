@@ -186,3 +186,4 @@ ace_hearing_protection = 0.85
 #define IGUI_SAVEALL IGUI_SAVEX, IGUI_SAVEY, IGUI_SAVEW, IGUI_SAVEH
 
 #define CLAMP(var1,lower,upper) lower max (var1 min upper)
+#define GET_NAME(var1) [var1, false, true] call ace_common_fnc_getName
