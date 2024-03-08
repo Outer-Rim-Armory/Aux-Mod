@@ -14,7 +14,7 @@
  * The PFH id, or -1 if error <NUMBER>
  *
  * Example:
- * call Aux193_Core_fnc_createTempPFH;
+ * [_function, _condition, _exitCode] call BNA_KC_core_fnc_tempPFH;
  */
 
 params [
