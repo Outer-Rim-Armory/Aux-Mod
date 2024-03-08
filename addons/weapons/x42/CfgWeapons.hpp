@@ -4,7 +4,7 @@ class CfgWeapons
     class CLASS(X42_Base): M2_Flamethrower_01_F
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] X-42 Flamethrower (Base)";
         descriptionShort = "BlastTech Flamethrower";

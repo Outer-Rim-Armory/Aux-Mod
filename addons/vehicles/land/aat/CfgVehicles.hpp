@@ -55,7 +55,7 @@ class CfgVehicles
     class CLASS(AAT_Base): 3AS_AAT
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorSubcategory = QCLASS(EdSubCat_Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_Blue);
@@ -227,7 +227,7 @@ class CfgVehicles
     class CLASS(AAT_King_Base): ls_ground_aat_base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorSubcategory = QCLASS(EdSubCat_Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_King_Base);

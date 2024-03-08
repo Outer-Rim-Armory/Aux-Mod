@@ -8,7 +8,7 @@ class CfgVehicles
     class CLASS(TX130_M1): 3AS_Saber_M1
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Tanks);
@@ -49,7 +49,7 @@ class CfgVehicles
             };
             class KeeliCompany: Standard
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company";
                 textures[] =
                 {
@@ -59,7 +59,7 @@ class CfgVehicles
             };
             class CamoGrey: Standard
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Grey Camo";
                 textures[] =
                 {

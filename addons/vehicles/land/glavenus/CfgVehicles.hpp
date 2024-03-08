@@ -4,7 +4,7 @@ class CfgVehicles
     class CLASS(Glavenus_Unarmed): O_MRAP_02_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
@@ -23,7 +23,7 @@ class CfgVehicles
         {
             class KeeliCompany
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company";
                 factions[] = {};
                 textures[] =
@@ -106,7 +106,7 @@ class CfgVehicles
     class CLASS(Glavenus_HMG): O_MRAP_02_hmg_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
@@ -125,7 +125,7 @@ class CfgVehicles
         {
             class KeeliCompany
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company";
                 factions[] = {};
                 textures[] =
@@ -202,7 +202,7 @@ class CfgVehicles
     class CLASS(Glavenus_GMG): O_MRAP_02_gmg_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
@@ -221,7 +221,7 @@ class CfgVehicles
         {
             class KeeliCompany
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company";
                 factions[] = {};
                 textures[] =

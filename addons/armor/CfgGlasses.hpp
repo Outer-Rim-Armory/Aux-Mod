@@ -4,7 +4,7 @@ class CfgGlasses
     class CLASS(Facewear_ARF_Flaps): ls_combatGoggles_base
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] ARF Helmet Flaps";
 

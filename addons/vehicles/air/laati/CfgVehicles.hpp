@@ -11,7 +11,7 @@ class CfgVehicles
     class CLASS(LAATi_Base): 3AS_LAAT_Base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Helicopters);
@@ -113,7 +113,7 @@ class CfgVehicles
             };
             class KeeliCompany: Standard
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Keeli Company";
                 factions[] = {};
                 textures[] =

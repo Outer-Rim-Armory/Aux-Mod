@@ -5,7 +5,7 @@ class XtdGearModels
         class CLASS(CIS_Uniforms_B1)
         {
             label = "B1 Battle Droid";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo

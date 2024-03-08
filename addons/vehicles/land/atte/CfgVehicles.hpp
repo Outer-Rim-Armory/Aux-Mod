@@ -23,7 +23,7 @@ class CfgVehicles
     class CLASS(ATTE_Base): 3AS_ATTE_base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Walkers);
@@ -88,7 +88,7 @@ class CfgVehicles
             class KeeliCompany: Standard
             {
                 displayName = "Keeli Company";
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 textures[] =
                 {
                     QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Shell_co.paa),

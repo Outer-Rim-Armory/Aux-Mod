@@ -4,14 +4,15 @@ class CfgPatches
 {
     class ADDON
     {
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] =
         {
             QCLASS(core),
             "ls_flags",
-            "3as_GNK_Prop"
+            "3as_GNK_Prop",
+            "3AS_Prop_Droids"
         };
         units[] =
         {

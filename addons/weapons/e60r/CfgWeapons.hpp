@@ -8,7 +8,7 @@ class CfgWeapons
     class CLASS(E60R_AT_Base): launch_RPG32_F
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] E-60R (AT, Base)";
         baseWeapon = QCLASS(E60R_AT_Base);
@@ -80,7 +80,7 @@ class CfgWeapons
     class CLASS(E60R_AA_Base): JLTS_E60R_AT
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] E-60R (AA, Base)";
         baseWeapon = QCLASS(E60R_AA_Base);

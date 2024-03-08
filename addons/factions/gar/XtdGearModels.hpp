@@ -5,7 +5,7 @@ class XtdGearModels
         class CLASS(Helmets_Phase1_Units)
         {
             label = "Unit Helmets (P1)";
-            author = "Keeli Company Aux Team";
+            author = AUTHOR;
             options[] = {"camo"};
 
             class camo

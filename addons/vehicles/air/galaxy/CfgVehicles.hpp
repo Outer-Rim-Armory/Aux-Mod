@@ -21,7 +21,7 @@ class CfgVehicles
     class CLASS(Galaxy_Gunship): B_T_VTOL_01_armed_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Planes);
@@ -80,7 +80,7 @@ class CfgVehicles
     class CLASS(Galaxy_Transport_Vehicle): B_T_VTOL_01_vehicle_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Planes);
@@ -112,7 +112,7 @@ class CfgVehicles
     class CLASS(Galaxy_Transport_Infantry): B_T_VTOL_01_infantry_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Planes);

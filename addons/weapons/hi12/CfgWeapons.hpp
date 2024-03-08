@@ -18,7 +18,7 @@ class CfgWeapons
     class CLASS(HI12_Base): LFP_hi12
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] HI-12 (Base)";
         baseWeapon = QCLASS(HI12_Base);

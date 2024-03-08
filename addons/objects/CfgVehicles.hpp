@@ -6,7 +6,7 @@ class CfgVehicles
     class CLASS(Flag_KC_Pole): ls_flag_base
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorCategory = QCLASS(Objects);
         editorSubcategory = QCLASS(EdSubCat_Flags);
@@ -23,7 +23,7 @@ class CfgVehicles
     class CLASS(Flag_KC_Vertical): ls_staticFlag_base
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorCategory = QCLASS(Objects);
         editorSubcategory = QCLASS(EdSubCat_Flags);
@@ -72,7 +72,7 @@ class CfgVehicles
     class CLASS(Gonk_Base): 3as_GNK
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         // Editor Attributes
         editorCategory = QCLASS(Objects);
@@ -265,7 +265,7 @@ class CfgVehicles
     {
         SCOPE_PUBLIC;
         displayName = "Full Heal Droid";
-        model = "\RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
+        model = "\3AS\3AS_props\droids\models\3AS_medical_droid.p3d";
         editorPreview = EDITOR_PREVIEW(Utility_FullHeal);
 
         class UserActions

@@ -10,7 +10,7 @@ class CfgWeapons
     class CLASS(E5C_Base): JLTS_E5C
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] E-5C (Base)";
         descriptionShort = "Repeating Blaster";

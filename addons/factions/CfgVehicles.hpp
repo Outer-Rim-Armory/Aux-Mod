@@ -10,7 +10,7 @@ class CfgVehicles
     class CLASS(OPFOR_Unit_Base): ls_redforUnit_base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
         displayName = "OPFOR Unit Base";
         uniformClass = "BNA_KC_OPFOR_Uniform_Base";
 
@@ -67,7 +67,7 @@ class CfgVehicles
     class CLASS(Other_Backpack_Base): Bag_Base
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "Backpack Base";
         descriptionshort = "";

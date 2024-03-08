@@ -5,7 +5,7 @@ class CfgWeapons
     class CLASS(Deployable_MedicalDroid_Item): CBA_MiscItem
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] FX-7 Medical Droid";
         picture = QPATHTOEF(core,data\ui\Medic_ca.paa);
@@ -28,7 +28,7 @@ class CfgWeapons
     class GVAR(Painkiller): ACE_ItemCore
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] Painkiller Autoinjector";
         descriptionShort = "Used to combat light to moderate pain experiences.";

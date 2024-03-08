@@ -23,7 +23,7 @@ class CfgWeapons
     class CLASS(DP23_Base): JLTS_DP23
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] DP-23 (Base)";
         baseWeapon = QCLASS(DP23_Base);
