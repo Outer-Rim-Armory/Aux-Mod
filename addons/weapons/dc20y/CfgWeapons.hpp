@@ -1,6 +1,10 @@
 class CfgWeapons
 {
-    class OPTRE_M99A2S3;
+    class OPTRE_LongRifle_Base;
+    class OPTRE_M99A2S3: OPTRE_LongRifle_Base
+    {
+        class Single;
+    };
     class CLASS(DC20Y_Base): OPTRE_M99A2S3
     {
         SCOPE_PRIVATE;
@@ -38,6 +42,15 @@ class CfgWeapons
 
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
+
+        class Single: Single
+        {
+            class StandardSound
+            {
+                soundSetShot[] = {QCLASS(SoundSet_DC20YShot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_DC20YShot)};
+            };
+        };
     };
 
     class CLASS(DC20Y): CLASS(DC20Y_Base)
