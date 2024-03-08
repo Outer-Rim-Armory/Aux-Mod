@@ -4,7 +4,7 @@ class CfgVehicles
     class CLASS(Hornet_Unarmed): O_LSV_02_unarmed_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
@@ -26,7 +26,7 @@ class CfgVehicles
         {
             class CamoKC
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Brown Camo";
                 factions[] = {};
                 textures[] =
@@ -73,7 +73,7 @@ class CfgVehicles
     class CLASS(Hornet_MG): O_LSV_02_armed_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
@@ -95,7 +95,7 @@ class CfgVehicles
         {
             class CamoKC
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Brown Camo";
                 factions[] = {};
                 textures[] =
@@ -179,7 +179,7 @@ class CfgVehicles
     class CLASS(Hornet_AT): O_LSV_02_AT_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Cars);
@@ -202,7 +202,7 @@ class CfgVehicles
         {
             class BrownCamo
             {
-                author = "Keeli Company Aux Team";
+                author = AUTHOR;
                 displayName = "Brown Camo";
                 factions[] = {};
                 textures[] =

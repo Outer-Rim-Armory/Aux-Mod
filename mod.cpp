@@ -1,4 +1,4 @@
-author = "Keeli Company Aux Team";
+author = AUTHOR;
 picture = "logo_kc_ca.paa";
 actionName = "GitHub";
 action = "https://github.com/DartRuffian/KeeliCompanyAux";

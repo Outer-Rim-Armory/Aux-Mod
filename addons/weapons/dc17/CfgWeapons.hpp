@@ -79,7 +79,7 @@ class CfgWeapons
     class CLASS(DC17_Base): JLTS_DC17SA
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] DC-17 (Base)";
         baseWeapon = QCLASS(DC17_Base);

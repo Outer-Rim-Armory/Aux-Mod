@@ -8,7 +8,7 @@ class CfgVehicles
     class CLASS(ATRT): 3AS_ATRT
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = QCLASS(EdSubCat_Walkers);

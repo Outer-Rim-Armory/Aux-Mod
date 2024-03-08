@@ -8,7 +8,7 @@ class CfgWeapons
     class CLASS(Mortar_M190_Carry): Launcher_Base_F
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] Model 190 Mortar System";
         picture = "\ls_weapons\_ui\rps6_ca.paa";

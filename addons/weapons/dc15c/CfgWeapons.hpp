@@ -28,7 +28,7 @@ class CfgWeapons
     class CLASS(DC15C_Base): 3AS_DC15C_F
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] DC-15C (Base)";
         descriptionShort = "Blaster Rifle";

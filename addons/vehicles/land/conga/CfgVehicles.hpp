@@ -29,7 +29,7 @@ class CfgVehicles
     class CLASS(Conga_IFV_Base): OPTRE_M412_IFV_UNSC
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorSubcategory = QCLASS(EdSubCat_APCs);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Conga_IFV_Tan);
@@ -130,7 +130,7 @@ class CfgVehicles
     class CLASS(Conga_MGS_Base): OPTRE_M413_MGS_UNSC
     {
         SCOPE_PRIVATE;
-        author = "SweMonkey and DartRuffian";
+        author = AUTHOR;
 
         editorSubcategory = QCLASS(EdSubCat_APCs);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Conga_MGS_Tan);

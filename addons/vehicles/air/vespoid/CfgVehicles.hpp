@@ -9,7 +9,7 @@ class CfgVehicles
     class CLASS(Vespoid_Base): OPTRE_falcon_base_unarmed
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         editorSubcategory = QCLASS(EdSubCat_Helicopters);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Vespoid_Tan);

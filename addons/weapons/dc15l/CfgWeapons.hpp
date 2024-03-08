@@ -17,7 +17,7 @@ class CfgWeapons
     class CLASS(DC15L_Base): 3AS_DC15L_F
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] DC-15L (Base)";
         descriptionShort = "Automatic Blaster Rifle";

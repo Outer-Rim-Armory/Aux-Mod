@@ -13,7 +13,7 @@ class CfgWeapons
     class CLASS(Z6_Base): JLTS_Z6
     {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "[KC] Z-6 (Base)";
         baseWeapon = QCLASS(Z6_Base);

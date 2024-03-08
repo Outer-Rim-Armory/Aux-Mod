@@ -420,7 +420,7 @@ class CfgWeapons
     class CLASS(Turret_ATRT): 3AS_ATRT_Weapon_F
     {
         SCOPE_HIDDEN;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         displayName = "AT-RT Turret";
         descriptionShort = "";
