@@ -299,3 +299,27 @@ class CLASS(Helmet_Phase2_Officer_CamoGrey): CLASS(Helmet_Phase2_Base) {
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
+
+class CLASS(cloneHelmet_phase2_hologramTest): CLASS(Helmet_Phase2_Base)
+{
+    displayName = "[KC] INF P2 Hologram Test";
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase2\Hologram_camo1_co.paa),
+        "\SWLB_Core\data\common_textures\hologram\bluehologram_ca.paa"
+    };
+
+    class ItemInfo: ItemInfo
+    {
+        uniformModel = "\ls_armor_bluefor\helmet\gar\phase2Hologram\ls_gar_phase2Hologram_helmet.p3d";
+    };
+};
+
+class CLASS(cloneHelmet_phase2_hologramTest_v2): CLASS(cloneHelmet_phase2_hologramTest)
+{
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\helmets\phase2\Hologram_v2_camo1_co.paa),
+        "\SWLB_Core\data\common_textures\hologram\bluehologram_ca.paa"
+    };
+};
