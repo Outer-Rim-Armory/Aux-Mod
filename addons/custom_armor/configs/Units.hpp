@@ -71,6 +71,30 @@ class CLASS(Unit_Burnt): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_Catholic): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Catholic";
+
+    editorSubcategory = EDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Catholic);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Catholic_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Catholic_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_Tanker_Catholic), QCLASS(Vest_WO), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_Tanker_Catholic), QCLASS(Vest_WO), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Defter): CLASS(Unit_Phase2_Base)
 {
     displayName = "Defter";

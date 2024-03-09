@@ -346,6 +346,7 @@ class XtdGearModels
                     "Axel",
                     "Bob",
                     "Burnt",
+                    "Catholic",
                     "Defter",
                     "Dexus",
                     "Drake",
@@ -361,6 +362,7 @@ class XtdGearModels
                 class Axel { label = "Axel"; };
                 class Bob { label = "Bob"; };
                 class Burnt { label = "Burnt"; };
+                class Catholic { label = "Catholic"; };
                 class Defter { label = "Defter"; };
                 class Dexus { label = "Dexus"; };
                 class Drake { label = "Drake"; };
