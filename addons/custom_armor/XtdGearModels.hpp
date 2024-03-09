@@ -299,12 +299,14 @@ class XtdGearModels
                 changeInGame = FALSE;
                 values[] =
                 {
+                    "Defter",
                     "Patriot",
                     "Rev",
                     "Sogi",
                     "Tugz"
                 };
 
+                class Defter { label = "Defter"; };
                 class Patriot { label = "Patriot"; };
                 class Rev { label = "Rev"; };
                 class Sogi { label = "Sogi"; };
