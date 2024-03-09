@@ -15,6 +15,7 @@ class CfgPatches
         units[] =
         {
             QCLASS(Unit_Axel),
+            QCLASS(Unit_Bob),
             QCLASS(Unit_Burnt),
             QCLASS(Unit_Defter),
             QCLASS(Unit_Dexus),
@@ -252,6 +253,7 @@ class CfgPatches
             QCLASS(Helmet_BARC_Rat),
             QCLASS(Helmet_BARC_RatCrimson),
             QCLASS(Uniform_Axel),
+            QCLASS(Uniform_Bob),
             QCLASS(Uniform_Burnt),
             QCLASS(Uniform_Defter),
             QCLASS(Uniform_Dexus),

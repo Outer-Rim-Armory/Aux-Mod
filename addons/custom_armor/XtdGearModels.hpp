@@ -344,6 +344,7 @@ class XtdGearModels
                 values[] =
                 {
                     "Axel",
+                    "Bob",
                     "Burnt",
                     "Defter",
                     "Dexus",
@@ -358,6 +359,7 @@ class XtdGearModels
                 };
 
                 class Axel { label = "Axel"; };
+                class Bob { label = "Bob"; };
                 class Burnt { label = "Burnt"; };
                 class Defter { label = "Defter"; };
                 class Dexus { label = "Dexus"; };

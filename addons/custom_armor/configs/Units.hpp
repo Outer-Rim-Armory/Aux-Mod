@@ -23,6 +23,30 @@ class CLASS(Unit_Axel): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_Bob): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Bob";
+
+    editorSubcategory = EDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Bob);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Bob_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Bob_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Engineer_Bob), QCLASS(Vest_Engineer_CT), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Engineer_Bob), QCLASS(Vest_Engineer_CT), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Burnt): CLASS(Unit_Phase2_Base)
 {
     displayName = "Burnt";
