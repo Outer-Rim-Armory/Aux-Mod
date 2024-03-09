@@ -310,6 +310,30 @@ class CLASS(Unit_Sin): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_Sogi): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Sogi";
+
+    editorSubcategory = EDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Sogi);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Sogi_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Sogi_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_ARF_Sogi), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_ARF_Sogi), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base)
 {
     displayName = "Tyrant";

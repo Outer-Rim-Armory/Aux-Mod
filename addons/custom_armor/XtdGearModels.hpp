@@ -357,6 +357,7 @@ class XtdGearModels
                     "Keeli_CamoGrey",
                     "Rat",
                     "Sin",
+                    "Sogi",
                     "Tyrant"
                 };
 
@@ -374,6 +375,7 @@ class XtdGearModels
                 class Keeli_CamoGrey { label = "Keeli Grey"; };
                 class Rat { label = "Rat"; };
                 class Sin { label = "Sin"; };
+                class Sogi { label = "Sogi"; };
                 class Tyrant { label = "Tyrant"; };
             };
         };
