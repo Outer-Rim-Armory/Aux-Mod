@@ -135,7 +135,6 @@ class XtdGearModels
                     "Sage",
                     "Scvrpio",
                     "Sogi",
-                    "Splashdown",
                     "Star",
                     "Swoop",
                     "Sytha",
@@ -166,7 +165,6 @@ class XtdGearModels
                 class Sage { label = "Sage"; };
                 class Scvrpio { label = "Scvrpio"; };
                 class Sogi { label = "Sogi"; };
-                class Splashdown { label = "Splashdown"; };
                 class Star { label = "Star"; };
                 class Swoop { label = "Swoop"; };
                 class Sytha { label = "Sytha"; };
