@@ -145,6 +145,8 @@ class CfgPatches
             QGROUND_CLASS(Helmet_ARF_Rev),
             QGROUND_CLASS(Helmet_ARF_Sogi),
             QGROUND_CLASS(Helmet_ARF_Tugz),
+            QGROUND_CLASS(Helmet_BARC_Keeli),
+            QGROUND_CLASS(Helmet_BARC_KeeliCrimson),
             QGROUND_CLASS(Helmet_BARC_Rat),
             QGROUND_CLASS(Helmet_BARC_RatCrimson)
         };
@@ -261,6 +263,8 @@ class CfgPatches
             QCLASS(Helmet_ARF_Rev),
             QCLASS(Helmet_ARF_Sogi),
             QCLASS(Helmet_ARF_Tugz),
+            QCLASS(Helmet_BARC_Keeli),
+            QCLASS(Helmet_BARC_KeeliCrimson),
             QCLASS(Helmet_BARC_Rat),
             QCLASS(Helmet_BARC_RatCrimson),
             QCLASS(Uniform_Axel),

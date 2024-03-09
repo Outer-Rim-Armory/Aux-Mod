@@ -331,9 +331,11 @@ class XtdGearModels
                 changeInGame = FALSE;
                 values[] =
                 {
+                    "Keeli",
                     "Rat"
                 };
 
+                class Keeli { label = "Keeli"; };
                 class Rat { label = "Rat"; };
             };
         };
