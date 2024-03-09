@@ -26,6 +26,8 @@ class XtdGearModels
                     "Jester",
                     "Joe",
                     "Keeli",
+                    "Keeli_CamoBrown",
+                    "Keeli_CamoGrey",
                     "Lou",
                     "Ox",
                     "Patriot",
@@ -54,6 +56,8 @@ class XtdGearModels
                 class Jester { label = "Jester"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
+                class Keeli_CamoBrown { label = "Keeli Brown"; };
+                class Keeli_CamoGrey { label = "Keeli Grey"; };
                 class Lou { label = "Lou"; };
                 class Ox { label = "Ox"; };
                 class Patriot { label = "Patriot"; };

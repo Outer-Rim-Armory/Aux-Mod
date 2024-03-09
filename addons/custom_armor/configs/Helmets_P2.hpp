@@ -11,6 +11,7 @@ P2_HELMET_CUSTOM(Jackal);
 P2_HELMET_CUSTOM(Jaws);
 P2_HELMET_VISOR_CUSTOM(Joe,Crimson);
 P2_HELMET_VISOR_CUSTOM(Keeli,Crimson);
+
 class CLASS(Helmet_Phase2_Keeli_CamoBrown): CLASS(Helmet_Phase2_Base)
 {
     displayName = "[KC] INF P2 Helm ('Keeli') - Brown Camo";
