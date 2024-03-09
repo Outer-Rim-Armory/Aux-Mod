@@ -151,3 +151,52 @@ class CLASS(DOUBLES(Helmet_ARF,var1)##var2): CLASS(DOUBLES(Helmet_ARF,var1)) \
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat" \
     }; \
 }
+
+#define BARC_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_BARC,var1)): CLASS(Helmet_BARC_Base) \
+{ \
+    displayName = QUOTE([KC] SF BARC Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = \
+    { \
+        QPATHTOF(data\helmets\barc\DOUBLES(var1,camo1_co.paa)), \
+        "\ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo \
+    { \
+        model = QCLASS(Helmets_BARC_Custom); \
+        camo = QUOTE(var1); \
+    }; \
+}
+
+#define BARC_HELMET_VISOR_CUSTOM(var1,var2) class CLASS(DOUBLES(Helmet_BARC,var1)): CLASS(Helmet_BARC_Base) \
+{ \
+    displayName = QUOTE([KC] SF BARC Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = \
+    { \
+        QPATHTOF(data\helmets\barc\DOUBLES(var1,camo1_co.paa)), \
+        "\ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    EGVAR(armor,nvCanToggle) = TRUE; \
+    EGVAR(armor,nvHelmetOff) = QCLASS(DOUBLES(Helmet_BARC,var1)); \
+    EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_BARC,var1)##var2##); \
+    class XtdGearInfo \
+    { \
+        model = QCLASS(Helmets_BARC_Custom); \
+        camo = QUOTE(var1); \
+    }; \
+}; \
+class CLASS(DOUBLES(Helmet_BARC,var1)##var2): CLASS(DOUBLES(Helmet_BARC,var1)) \
+{ \
+    SCOPE_HIDDEN; \
+    hiddenSelectionsTextures[] = \
+    { \
+        QPATHTOF(data\helmets\barc\DOUBLES(var1,camo1_co.paa)), \
+        QPATHTOF(data\visors\DOUBLES(var2,camo2_co.paa)) \
+    }; \
+    hiddenSelectionsMaterials[] = \
+    { \
+        "", \
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat" \
+    }; \
+}
