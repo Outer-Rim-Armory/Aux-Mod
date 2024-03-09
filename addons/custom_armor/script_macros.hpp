@@ -452,7 +452,7 @@ class CLASS(DOUBLES(Helmet_ARF,var1)##var2): CLASS(DOUBLES(Helmet_ARF,var1)) \
     { \
         QPATHTOF(data\helmets\arF\DOUBLES(var1,camo1_co.paa)), \
         "", \
-        QPATHTOF(data\visors\DOUBLES(var2,camo2_co.paa)) \
+        QPATHTOF(data\visors\TRIPLES(var2,ARF,visor_co.paa)) \
     }; \
     hiddenSelectionsMaterials[] = \
     { \
