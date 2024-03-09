@@ -38,6 +38,6 @@ class CLASS(Vest_Medic)
     camo = "Medic";
 };
 class CLASS(Vest_MedicSenior): CLASS(Vest_Medic) { camo = "Senior"; };
-class CLASS(Vest_Medic_v2): CLASS(Vest_Medic) { camo = "Medic (v2)"; };
-class CLASS(Vest_MedicSenior_v2): CLASS(Vest_Medic) { camo = "Senior (v2)"; };
+class CLASS(Vest_Medic_v2): CLASS(Vest_Medic) { camo = "Medic_v2"; };
+class CLASS(Vest_MedicSenior_v2): CLASS(Vest_Medic) { camo = "Senior_v2"; };
 class CLASS(Vest_MedicPlatoon): CLASS(Vest_Medic) { camo = "Platoon"; };
