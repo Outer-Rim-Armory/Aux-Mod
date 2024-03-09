@@ -12,7 +12,6 @@ class XtdGearInfos
         #include "XtdGear\Helmets_P2_Tanker.hpp"
         #include "XtdGear\Helmets_P12.hpp"
 
-        #include "XtdGear\Helmets_Airborne.hpp"
         #include "XtdGear\Helmets_Engineer.hpp"
 
         #include "XtdGear\Uniforms.hpp"
