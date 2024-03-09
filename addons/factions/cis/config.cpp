@@ -41,4 +41,3 @@ class CfgPatches
 #include "CfgVehicles.hpp"
 #include "CfgFactionClasses.hpp"
 #include "XtdGearModels.hpp"
-#include "XtdGearInfos.hpp"
