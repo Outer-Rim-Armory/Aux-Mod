@@ -3,82 +3,14 @@ class CLASS(Uniform_Base): ls_gar_phase2_uniform
 {
     class ItemInfo;
 };
-class CLASS(Uniform_Axel): CLASS(Uniform_Base)
-{
-    displayName = "[KC] Custom Armor ('Axel')";
-    GVAR(isCustom) = TRUE;
+UNIFORM_CUSTOM(Axel);
+UNIFORM_CUSTOM(Burnt);
+UNIFORM_CUSTOM(Defter);
+UNIFORM_CUSTOM(Dexus);
+UNIFORM_CUSTOM(Drake);
+UNIFORM_CUSTOM(Joe);
+UNIFORM_CUSTOM(Keeli);
 
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Axel);
-    };
-};
-
-class CLASS(Uniform_Burnt): CLASS(Uniform_Base)
-{
-    displayName = "[KC] Custom Armor ('Burnt')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Burnt);
-    };
-};
-
-class CLASS(Uniform_Defter): CLASS(Uniform_Base)
-{
-    displayName = "[KC] Custom Armor ('Defter')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Defter);
-    };
-};
-
-class CLASS(Uniform_Dexus): CLASS(Uniform_Base)
-{
-    displayName = "[KC] Custom Armor ('Dexus')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Dexus);
-    };
-};
-
-class CLASS(Uniform_Drake): CLASS(Uniform_Base)
-{
-    displayName = "[KC] Custom Armor ('Drake')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Drake);
-    };
-};
-
-class CLASS(Uniform_Joe): CLASS(Uniform_Base)
-{
-    displayName = "[KC] Custom Armor ('Joe')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Joe);
-    };
-};
-
-class CLASS(Uniform_Keeli): CLASS(Uniform_Base)
-{
-    displayName = "[KC] Custom Armor ('Keeli')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Keeli);
-    };
-};
 class CLASS(Uniform_Keeli_CamoBrown): CLASS(Uniform_Base)
 {
     displayName = "[KC] Custom Armor ('Keeli') - Brown Camo";
@@ -87,6 +19,11 @@ class CLASS(Uniform_Keeli_CamoBrown): CLASS(Uniform_Base)
     class ItemInfo: ItemInfo
     {
         uniformClass = QCLASS(Unit_Keeli_CamoBrown);
+    };
+    class XtdGearInfo
+    {
+        model = QCLASS(Uniforms_Custom);
+        camo = "Keeli_CamoBrown";
     };
 };
 class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Base)
@@ -98,74 +35,21 @@ class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Base)
     {
         uniformClass = QCLASS(Unit_Keeli_CamoGrey);
     };
-};
-
-class CLASS(Uniform_Rat): CLASS(Uniform_Base)
-{
-    displayName = "[KC] Custom Armor ('Rat')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
+    class XtdGearInfo
     {
-        uniformClass = QCLASS(Unit_Rat);
+        model = QCLASS(Uniforms_Custom);
+        camo = "Keeli_CamoGrey";
     };
 };
 
-class CLASS(Uniform_Sin): CLASS(Uniform_Base)
-{
-    displayName = "[KC] Custom Armor ('Sin')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Sin);
-    };
-};
-
-class CLASS(Uniform_Tyrant): CLASS(Uniform_Base)
-{
-    displayName = "[KC] Custom Armor ('Tyrant')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Tyrant);
-    };
-};
+UNIFORM_CUSTOM(Rat);
+UNIFORM_CUSTOM(Sin);
+UNIFORM_CUSTOM(Tyrant);
 
 class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base)
 {
     class ItemInfo;
 };
-class CLASS(Uniform_Phase2_Insulated_Dexus): CLASS(Uniform_Phase2_Insulated_Base)
-{
-    displayName = "[KC] Custom P2 Snow Armor ('Dexus')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Phase2_Insulated_Dexus);
-    };
-};
-
-class CLASS(Uniform_Phase2_Insulated_Joe): CLASS(Uniform_Phase2_Insulated_Base)
-{
-    displayName = "[KC] Custom P2 Snow Armor ('Joe')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Phase2_Insulated_Joe);
-    };
-};
-
-class CLASS(Uniform_Phase2_Insulated_Keeli): CLASS(Uniform_Phase2_Insulated_Base)
-{
-    displayName = "[KC] Custom P2 Snow Armor ('Keeli')";
-    GVAR(isCustom) = TRUE;
-
-    class ItemInfo: ItemInfo
-    {
-        uniformClass = QCLASS(Unit_Phase2_Insulated_Keeli);
-    };
-};
+UNIFORM_INSULATED_P2_CUSTOM(Dexus);
+UNIFORM_INSULATED_P2_CUSTOM(Joe);
+UNIFORM_INSULATED_P2_CUSTOM(Keeli);

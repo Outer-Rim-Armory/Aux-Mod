@@ -510,3 +510,33 @@ class CLASS(DOUBLES(Helmet_BARC,var1)##var2): CLASS(DOUBLES(Helmet_BARC,var1)) \
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat" \
     }; \
 }
+
+#define UNIFORM_CUSTOM(var1) class CLASS(DOUBLES(Uniform,var1)): CLASS(Uniform_Base) \
+{ \
+    displayName = QUOTE([KC] Custom Armor ('##var1##')); \
+    GVAR(isCustom) = TRUE; \
+    class ItemInfo: ItemInfo \
+    { \
+        uniformClass = QCLASS(DOUBLES(Unit,var1)); \
+    }; \
+    class XtdGearInfo \
+    { \
+        model = QCLASS(Uniforms_Custom); \
+        camo = QUOTE(var1); \
+    }; \
+}
+
+#define UNIFORM_INSULATED_P2_CUSTOM(var1) class CLASS(DOUBLES(Uniform_Phase2_Insulated,var1)): CLASS(Uniform_Phase2_Insulated_Base) \
+{ \
+    displayName = QUOTE([KC] Custom P2 Snow Armor ('##var1##')); \
+    GVAR(isCustom) = TRUE; \
+    class ItemInfo: ItemInfo \
+    { \
+        uniformClass = QCLASS(DOUBLES(Unit_Phase2_Insulated,var1)); \
+    }; \
+    class XtdGearInfo \
+    { \
+        model = QCLASS(Uniforms_Insulated_Custom); \
+        camo = QUOTE(var1); \
+    }; \
+}
