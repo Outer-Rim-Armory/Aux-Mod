@@ -168,6 +168,30 @@ class CLASS(Unit_Drake): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_Hagrid): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Hagrid";
+
+    editorSubcategory = EDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Hagrid);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Hagrid_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Hagrid_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_ARC_Hagrid), QCLASS(Vest_ARC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_ARC_Hagrid), QCLASS(Vest_ARC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Joe): CLASS(Unit_Phase2_Base)
 {
     displayName = "Joe";

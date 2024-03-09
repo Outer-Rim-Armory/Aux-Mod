@@ -350,6 +350,7 @@ class XtdGearModels
                     "Defter",
                     "Dexus",
                     "Drake",
+                    "Hagrid",
                     "Joe",
                     "Keeli",
                     "Keeli_CamoBrown",
@@ -366,6 +367,7 @@ class XtdGearModels
                 class Defter { label = "Defter"; };
                 class Dexus { label = "Dexus"; };
                 class Drake { label = "Drake"; };
+                class Hagrid { label = "Hagrid"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
                 class Keeli_CamoBrown { label = "Keeli Brown"; };
