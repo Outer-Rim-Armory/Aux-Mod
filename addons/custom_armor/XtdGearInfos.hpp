@@ -15,7 +15,6 @@ class XtdGearInfos
         #include "XtdGear\Helmets_Airborne.hpp"
         #include "XtdGear\Helmets_Engineer.hpp"
 
-        #include "XtdGear\Helmets_ARF.hpp"
         #include "XtdGear\Helmets_BARC.hpp"
 
         #include "XtdGear\Uniforms.hpp"
