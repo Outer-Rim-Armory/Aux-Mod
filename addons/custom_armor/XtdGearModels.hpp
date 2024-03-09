@@ -140,6 +140,7 @@ class XtdGearModels
                     "Star",
                     "Swoop",
                     "Sytha",
+                    "Talyn",
                     "Tugz",
                     "Vortex",
                     "Woods"
@@ -170,6 +171,7 @@ class XtdGearModels
                 class Star { label = "Star"; };
                 class Swoop { label = "Swoop"; };
                 class Sytha { label = "Sytha"; };
+                class Talyn { label = "Talyn"; };
                 class Tugz { label = "Tugz"; };
                 class Vortex { label = "Vortex"; };
                 class Woods { label = "Woods"; };
