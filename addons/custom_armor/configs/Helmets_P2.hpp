@@ -9,7 +9,6 @@ P2_HELMET_CUSTOM(Harry);
 P2_HELMET_CUSTOM(Hazard);
 P2_HELMET_CUSTOM(Jackal);
 P2_HELMET_CUSTOM(Jaws);
-P2_HELMET_CUSTOM(Jester);
 P2_HELMET_VISOR_CUSTOM(Joe,Crimson);
 P2_HELMET_VISOR_CUSTOM(Keeli,Crimson);
 class CLASS(Helmet_Phase2_Keeli_CamoBrown): CLASS(Helmet_Phase2_Base)

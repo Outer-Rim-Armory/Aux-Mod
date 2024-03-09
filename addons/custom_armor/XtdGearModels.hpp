@@ -123,7 +123,6 @@ class XtdGearModels
                     "Hazard",
                     "Jackal",
                     "Jaws",
-                    "Jester",
                     "Joe",
                     "Keeli",
                     "Keeli_CamoBrown",
@@ -155,7 +154,6 @@ class XtdGearModels
                 class Hazard { label = "Hazard"; };
                 class Jackal { label = "Jackal"; };
                 class Jaws { label = "Jaws"; };
-                class Jester { label = "Jester"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
                 class Keeli_CamoBrown { label = "Keeli Brown"; };

@@ -56,7 +56,6 @@ GROUND_HOLDER(Helmet_Phase2_Harry,"INF P2 Helm ('Harry')");
 GROUND_HOLDER(Helmet_Phase2_Hazard,"INF P2 Helm ('Hazard')");
 GROUND_HOLDER(Helmet_Phase2_Jackal,"INF P2 Helm ('Jackal')");
 GROUND_HOLDER(Helmet_Phase2_Jaws,"INF P2 Helm ('Jaws')");
-GROUND_HOLDER(Helmet_Phase2_Jester,"INF P2 Helm ('Jester')");
 GROUND_HOLDER(Helmet_Phase2_Joe,"INF P2 Helm ('Joe')");
 GROUND_HOLDER(Helmet_Phase2_JoeCrimson,"INF P2 Helm ('Joe') [Crimson Visor]");
 GROUND_HOLDER(Helmet_Phase2_Keeli,"INF P2 Helm ('Keeli')");
