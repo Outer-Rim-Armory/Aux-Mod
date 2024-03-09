@@ -31,6 +31,7 @@ GROUND_HOLDER(Helmet_Phase1_Sage,"INF P1 Helm ('Sage')");
 GROUND_HOLDER(Helmet_Phase1_Sin,"INF P1 Helm ('Sin')");
 GROUND_HOLDER(Helmet_Phase1_Splashdown,"INF P1 Helm ('Splashdown')");
 GROUND_HOLDER(Helmet_Phase1_Swoop,"INF P1 Helm ('Swoop')");
+GROUND_HOLDER(Helmet_Phase1_Talyn,"INF P1 Helm ('Talyn')");
 GROUND_HOLDER(Helmet_Phase1_Tyrant,"INF P1 Helm ('Tyrant')");
 GROUND_HOLDER(Helmet_Phase1_TyrantCrimson,"INF P1 Helm ('Tyrant') [Crimson Visor]");
 GROUND_HOLDER(Helmet_Phase1_Woods,"INF P1 Helm ('Woods')");

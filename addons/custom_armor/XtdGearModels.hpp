@@ -36,6 +36,7 @@ class XtdGearModels
                     "Sin",
                     "Splashdown",
                     "Swoop",
+                    "Talyn",
                     "Tyrant",
                     "Woods"
                 };
@@ -63,6 +64,7 @@ class XtdGearModels
                 class Sin { label = "Sin"; };
                 class Splashdown { label = "Splashdown"; };
                 class Swoop { label = "Swoop"; };
+                class Talyn { label = "Talyn"; };
                 class Tyrant { label = "Tyrant"; };
                 class Woods { label = "Woods"; };
             };
