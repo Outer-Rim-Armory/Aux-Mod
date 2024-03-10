@@ -69,7 +69,7 @@ class CfgVehicles
         soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\barc\Engine_Off.wss), 1, 1, 100};
 
         // TODO: WIP
-
+        /*
         class Sounds: Sounds
         {
             class Engine: Engine
@@ -115,5 +115,6 @@ class CfgVehicles
                 sound[] = {QPATHTOF(sounds\data\audio\barc\Engine_Idle.ogg), 0.45, 1};
             };
         };
+        */
     };
 };
