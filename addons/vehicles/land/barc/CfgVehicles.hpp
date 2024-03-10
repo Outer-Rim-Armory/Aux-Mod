@@ -20,18 +20,18 @@ class CfgVehicles
     class CLASS(BARC): 3AS_BARC_Base
     {
         SCOPE_PUBLIC;
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
         editorSubcategory = EDSUBCAT(Speeders);
-        // editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,BARC);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,BARC);
 
         displayName = "BARC Speeder";
         crew = QCLASS(Unit_ARF_CT);
         typicalCargo[] = {QCLASS(Unit_ARF_CT)};
 
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\3AS\3AS_LightVics\3AS_BARC\data\barc_rep_co.paa"};
+        hiddenSelectionsTextures[] = {QPATHTOF(land\barc\data\textures\KeeliCompany\Body_co.paa)};
 
         weapons[] = {QCLASS(Turret_BARC), "ls_speeder_AP"};
         magazines[] =
@@ -42,7 +42,7 @@ class CfgVehicles
             "ls_50Rnd_speederHE_belt"
         };
 
-        textureList[] = {"Standard", 1, "KeeliCompany", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "Defter", 0};
         class TextureSources
         {
             class Standard
@@ -53,12 +53,17 @@ class CfgVehicles
                 textures[] = {"\3AS\3AS_LightVics\3AS_BARC\data\barc_rep_co.paa"};
             };
 
-            // Temporary textures
             class KeeliCompany: Standard
             {
                 displayName = "Keeli Company";
-                author = "Keeli Company Aux Team";
-                textures[] = {"\3AS\3AS_LightVics\3AS_BARC\data\barc_212_co.paa"};
+                author = AUTHOR;
+                textures[] = {QPATHTOF(land\barc\data\textures\KeeliCompany\Body_co.paa)};
+            };
+
+            class Defter: KeeliCompany
+            {
+                displayName = "Defter";
+                textures[] = {QPATHTOF(land\barc\data\textures\Defter\Body_co.paa)};
             };
         };
 

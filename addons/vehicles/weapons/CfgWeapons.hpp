@@ -440,7 +440,7 @@ class CfgWeapons
     };
     class CLASS(Turret_BARC): 3AS_BARC_Repeater
     {
-        author = "Keeli Company Aux Team";
+        author = AUTHOR;
 
         class manual: manual
         {
