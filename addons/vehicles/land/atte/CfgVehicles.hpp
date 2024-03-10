@@ -54,7 +54,7 @@ class CfgVehicles
             "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
         };
 
-        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1};
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 1};
         class TextureSources
         {
             class Standard
@@ -95,6 +95,34 @@ class CfgVehicles
                     "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
                     QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Detail_co.paa),
                     QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Legs_co.paa),
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+                };
+            };
+
+            class KeeliCompanyWhite: KeeliCompany
+            {
+                displayName = "Keeli Company (White)";
+                textures[] =
+                {
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompanyWhite\Shell_co.paa),
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompanyWhite\Detail_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompanyWhite\Legs_co.paa),
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+                };
+            };
+
+            class Rebecca: KeeliCompany
+            {
+                displayName = "Rebecca";
+                textures[] =
+                {
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\Rebecca\Shell_co.paa),
+                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompanyWhite\Detail_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompanyWhite\Legs_co.paa),
                     "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
                     "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
                 };
