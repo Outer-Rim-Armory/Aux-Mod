@@ -1,37 +1,7 @@
 class CLASS(Helmet_Phase2_Base);
-class CLASS(Helmet_Phase2_CG): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[CG] INF P2 Helm";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(SUBCOMPONENT\data\helmets\phase2\CG_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    EGVAR(custom_armor,isCustom) = TRUE;
-};
-
-class CLASS(Helmet_Phase2_CG_Stone): CLASS(Helmet_Phase2_CG)
-{
-    displayName = "[CG] INF P2 Helm ('Stone')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(SUBCOMPONENT\data\helmets\phase2\Stone_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-};
-
-class CLASS(Helmet_Phase2_DC): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[DC] INF P2 Helm";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(SUBCOMPONENT\data\helmets\phase2\DC_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    EGVAR(custom_armor,isCustom) = TRUE;
-};
+P2_HELMET_UNIT(CG);
+P2_HELMET_UNIT_NAME(CG,Stone);
+P2_HELMET_UNIT(DC);
 
 class CLASS(Helmet_Phase2_Fil): CLASS(Helmet_Phase2_Base)
 {
@@ -43,6 +13,12 @@ class CLASS(Helmet_Phase2_Fil): CLASS(Helmet_Phase2_Base)
     };
 
     EGVAR(custom_armor,isCustom) = TRUE;
+
+    class XtdGearInfo
+    {
+        model = QCLASS(Helmets_Phase2_Units);
+        camo = "KC_Fil";
+    };
 };
 
 class CLASS(Helmet_Phase2_FilSquad): CLASS(Helmet_Phase2_Base)
@@ -55,19 +31,15 @@ class CLASS(Helmet_Phase2_FilSquad): CLASS(Helmet_Phase2_Base)
     };
 
     EGVAR(custom_armor,isCustom) = TRUE;
-};
 
-class CLASS(Helmet_Phase2_GC): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[GC] INF P2 Helm";
-    hiddenSelectionsTextures[] =
+    class XtdGearInfo
     {
-        QPATHTOF(SUBCOMPONENT\data\helmets\phase2\GC_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+        model = QCLASS(Helmets_Phase2_Units);
+        camo = "KC_FilSquad";
     };
-
-    EGVAR(custom_armor,isCustom) = TRUE;
 };
+
+P2_HELMET_UNIT(GC);
 
 class CLASS(Helmet_Phase2_HowzerBlue): CLASS(Helmet_Phase2_Base)
 {
@@ -79,6 +51,12 @@ class CLASS(Helmet_Phase2_HowzerBlue): CLASS(Helmet_Phase2_Base)
     };
 
     EGVAR(custom_armor,isCustom) = TRUE;
+
+    class XtdGearInfo
+    {
+        model = QCLASS(Helmets_Phase2_Units);
+        camo = "KC_Howzer";
+    };
 };
 
 class CLASS(Helmet_Phase2_HowzerBrown): CLASS(Helmet_Phase2_Base)
@@ -91,40 +69,14 @@ class CLASS(Helmet_Phase2_HowzerBrown): CLASS(Helmet_Phase2_Base)
     };
 
     EGVAR(custom_armor,isCustom) = TRUE;
-};
 
-class CLASS(Helmet_Phase2_187th): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[187th] INF P2 Helm";
-    hiddenSelectionsTextures[] =
+    class XtdGearInfo
     {
-        QPATHTOF(SUBCOMPONENT\data\helmets\phase2\187th_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+        model = QCLASS(Helmets_Phase2_Units);
+        camo = "KC_HowzerBrown";
     };
-
-    EGVAR(custom_armor,isCustom) = TRUE;
 };
 
-class CLASS(Helmet_Phase2_212th): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[212th] INF P2 Helm";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(SUBCOMPONENT\data\helmets\phase2\212th_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    EGVAR(custom_armor,isCustom) = TRUE;
-};
-
-class CLASS(Helmet_Phase2_91st_Ponds): CLASS(Helmet_Phase2_Base)
-{
-    displayName = "[91st] INF P2 Helm ('Ponds')";
-    hiddenSelectionsTextures[] =
-    {
-        QPATHTOF(SUBCOMPONENT\data\helmets\phase2\Ponds_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
-    };
-
-    EGVAR(custom_armor,isCustom) = TRUE;
-};
+P2_HELMET_UNIT(187th);
+P2_HELMET_UNIT(212th);
+P2_HELMET_UNIT_NAME(91st,Ponds);
