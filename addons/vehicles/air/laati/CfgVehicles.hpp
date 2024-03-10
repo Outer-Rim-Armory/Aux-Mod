@@ -81,7 +81,7 @@ class CfgVehicles
             "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
         };
-        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "Akali", 0, "TwiLek", 0};
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompany2", 1, "Akali", 0, "TwiLek", 0};
         class TextureSources
         {
             class Standard
