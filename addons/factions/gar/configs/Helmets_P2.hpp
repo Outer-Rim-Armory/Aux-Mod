@@ -77,6 +77,7 @@ class CLASS(Helmet_Phase2_HowzerBrown): CLASS(Helmet_Phase2_Base)
     };
 };
 
+P2_HELMET_UNIT(104th);
 P2_HELMET_UNIT(187th);
 P2_HELMET_UNIT(212th);
 P2_HELMET_UNIT_NAME(91st,Ponds);

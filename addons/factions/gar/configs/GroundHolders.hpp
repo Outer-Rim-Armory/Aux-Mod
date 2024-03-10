@@ -6,6 +6,8 @@ GROUND_HOLDER(Helmet_Phase1_DC,"INF P1 Helm (DC)");
 GROUND_HOLDER(Helmet_Phase1_HowzerBlue,"INF P1 Helm ('Howzer') [Blue]");
 GROUND_HOLDER(Helmet_Phase1_HowzerBrown,"INF P1 Helm ('Howzer') [Brown]");
 
+GROUND_HOLDER(Helmet_Phase1_104th,"INF P1 Helm (104th)");
+
 GROUND_HOLDER(Helmet_Phase1_212th,"INF P1 Helm (212th)");
 
 GROUND_HOLDER(Helmet_Phase1_91st_Ponds,"INF P1 Helm ('Ponds')");
@@ -20,6 +22,8 @@ GROUND_HOLDER(Helmet_Phase2_FilSquad,"INF P2 Helm ('Fil's Squad')");
 
 GROUND_HOLDER(Helmet_Phase2_HowzerBlue,"INF P2 Helm ('Howzer') [Blue]");
 GROUND_HOLDER(Helmet_Phase2_HowzerBrown,"INF P2 Helm ('Howzer') [Brown]");
+
+GROUND_HOLDER(Helmet_Phase2_104th,"INF P2 Helm (104th)");
 
 GROUND_HOLDER(Helmet_Phase2_187th,"INF P2 Helm (187th)");
 
