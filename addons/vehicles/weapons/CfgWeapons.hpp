@@ -430,6 +430,40 @@ class CfgWeapons
         magazineWell[] = {};
     };
 
+    class 3AS_BARC_Repeater: CannonCore
+    {
+        class manual;
+        class short;
+        class close;
+        class medium;
+        class far;
+    };
+    class CLASS(Turret_BARC): 3AS_BARC_Repeater
+    {
+        author = AUTHOR;
+
+        class manual: manual
+        {
+            reloadTime = 0.2;
+        };
+        class short: short
+        {
+            reloadTime = 0.2;
+        };
+        class close: close
+        {
+            reloadTime = 0.2;
+        };
+        class medium: medium
+        {
+            reloadTime = 0.2;
+        };
+        class far: far
+        {
+            reloadTime = 0.2;
+        };
+    };
+
     class CarHorn;
     class CLASS(Horn_Juggernaut): CarHorn
     {
@@ -477,7 +511,6 @@ class CfgWeapons
         };
     };
 
-    class CannonCore;
     class 3AS_Mortar_82mm: CannonCore
     {
         class Single1;
