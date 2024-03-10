@@ -22,5 +22,5 @@ class CfgSounds
     SOUND(EPF_Radio3,"Holownet News 3","News broadcast");
     SOUND(EPF_PresidenteSpeech,"[KC] El Presidente Speech","El Presidente speech");
     SOUND(TDI_Theme,"[KC] Total Drama Island Theme","Total Drama Island theme");
-    SOUND(Poke_Village,"[KC] Poke Village Theme","Poke Village Theme");
+    SOUND(PokeVillage,"[KC] Poke Village Theme","Poke Village Theme");
 };
