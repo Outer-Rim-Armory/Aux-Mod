@@ -22,8 +22,10 @@ class CfgPatches
             QCLASS(Unit_FilSquad),
             QCLASS(Unit_HowzerBlue),
             QCLASS(Unit_HowzerBrown),
+            QCLASS(Unit_104th_Trooper),
             QCLASS(Unit_187th_Trooper),
             QCLASS(Unit_212th_Trooper),
+            QCLASS(Unit_501st_Trooper),
             QCLASS(Unit_91st_Ponds),
 
             QGROUND_CLASS(Helmet_Phase1_CG),
@@ -31,7 +33,9 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase1_GC),
             QGROUND_CLASS(Helmet_Phase1_HowzerBlue),
             QGROUND_CLASS(Helmet_Phase1_HowzerBrown),
+            QGROUND_CLASS(Helmet_Phase1_104th),
             QGROUND_CLASS(Helmet_Phase1_212th),
+            QGROUND_CLASS(Helmet_Phase1_501st),
             QGROUND_CLASS(Helmet_Phase1_91st_Ponds),
 
             QGROUND_CLASS(Helmet_Phase2_CG),
@@ -42,8 +46,10 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase2_GC),
             QGROUND_CLASS(Helmet_Phase2_HowzerBlue),
             QGROUND_CLASS(Helmet_Phase2_HowzerBrown),
+            QGROUND_CLASS(Helmet_Phase2_104th),
             QGROUND_CLASS(Helmet_Phase2_187th),
             QGROUND_CLASS(Helmet_Phase2_212th),
+            QGROUND_CLASS(Helmet_Phase2_501st),
             QGROUND_CLASS(Helmet_Phase2_91st_Ponds)
         };
         weapons[] =
@@ -53,6 +59,9 @@ class CfgPatches
             QCLASS(Helmet_Phase1_GC),
             QCLASS(Helmet_Phase1_HowzerBlue),
             QCLASS(Helmet_Phase1_HowzerBrown),
+            QCLASS(Helmet_Phase1_104th),
+            QCLASS(Helmet_Phase1_212th),
+            QCLASS(Helmet_Phase1_501st),
             QCLASS(Helmet_Phase1_91st_Ponds),
 
             QCLASS(Helmet_Phase2_CG),
@@ -63,8 +72,10 @@ class CfgPatches
             QCLASS(Helmet_Phase2_GC),
             QCLASS(Helmet_Phase2_HowzerBlue),
             QCLASS(Helmet_Phase2_HowzerBrown),
+            QCLASS(Helmet_Phase2_104th),
             QCLASS(Helmet_Phase2_187th),
             QCLASS(Helmet_Phase2_212th),
+            QCLASS(Helmet_Phase2_501st),
             QCLASS(Helmet_Phase2_91st_Ponds),
 
             QCLASS(Uniform_CG),
@@ -74,8 +85,10 @@ class CfgPatches
             QCLASS(Uniform_FilSquad),
             QCLASS(Uniform_HowzerBlue),
             QCLASS(Uniform_HowzerBrown),
+            QCLASS(Uniform_104th),
             QCLASS(Uniform_187th),
             QCLASS(Uniform_212th),
+            QCLASS(Uniform_501st),
             QCLASS(Uniform_91st_Ponds)
         };
         VERSION_CONFIG;

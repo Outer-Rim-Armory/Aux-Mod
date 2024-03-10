@@ -148,8 +148,6 @@ class XtdGearModels
                     "CR_Legacy",
                     "CT",
                     "CT_v2",
-                    "CT_v3",
-                    "CT_v4",
                     "SCT",
                     "VCT",
                     "CLC",

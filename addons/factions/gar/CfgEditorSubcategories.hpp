@@ -25,6 +25,11 @@ class CfgEditorSubcategories
         displayName = "Howzer's Squad";
     };
 
+    class CLASS(EdSubCat_104th)
+    {
+        displayName = "104th Wolfpack";
+    };
+
     class CLASS(EdSubCat_187th)
     {
         displayName = "187th Battalion";
@@ -33,6 +38,11 @@ class CfgEditorSubcategories
     class CLASS(EdSubCat_212th)
     {
         displayName = "212th Attack Battalion";
+    };
+
+    class CLASS(EdSubCat_501st)
+    {
+        displayName = "501st Legion";
     };
 
     class CLASS(EdSubCat_91st)

@@ -26,6 +26,8 @@ class XtdGearModels
                     "Jester",
                     "Joe",
                     "Keeli",
+                    "Keeli_CamoBrown",
+                    "Keeli_CamoGrey",
                     "Lou",
                     "Ox",
                     "Patriot",
@@ -36,6 +38,7 @@ class XtdGearModels
                     "Sin",
                     "Splashdown",
                     "Swoop",
+                    "Talyn",
                     "Tyrant",
                     "Woods"
                 };
@@ -53,6 +56,8 @@ class XtdGearModels
                 class Jester { label = "Jester"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
+                class Keeli_CamoBrown { label = "Keeli Brown"; };
+                class Keeli_CamoGrey { label = "Keeli Grey"; };
                 class Lou { label = "Lou"; };
                 class Ox { label = "Ox"; };
                 class Patriot { label = "Patriot"; };
@@ -63,6 +68,7 @@ class XtdGearModels
                 class Sin { label = "Sin"; };
                 class Splashdown { label = "Splashdown"; };
                 class Swoop { label = "Swoop"; };
+                class Talyn { label = "Talyn"; };
                 class Tyrant { label = "Tyrant"; };
                 class Woods { label = "Woods"; };
             };
@@ -123,7 +129,6 @@ class XtdGearModels
                     "Hazard",
                     "Jackal",
                     "Jaws",
-                    "Jester",
                     "Joe",
                     "Keeli",
                     "Keeli_CamoBrown",
@@ -136,10 +141,10 @@ class XtdGearModels
                     "Sage",
                     "Scvrpio",
                     "Sogi",
-                    "Splashdown",
                     "Star",
                     "Swoop",
                     "Sytha",
+                    "Talyn",
                     "Tugz",
                     "Vortex",
                     "Woods"
@@ -155,7 +160,6 @@ class XtdGearModels
                 class Hazard { label = "Hazard"; };
                 class Jackal { label = "Jackal"; };
                 class Jaws { label = "Jaws"; };
-                class Jester { label = "Jester"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
                 class Keeli_CamoBrown { label = "Keeli Brown"; };
@@ -168,10 +172,10 @@ class XtdGearModels
                 class Sage { label = "Sage"; };
                 class Scvrpio { label = "Scvrpio"; };
                 class Sogi { label = "Sogi"; };
-                class Splashdown { label = "Splashdown"; };
                 class Star { label = "Star"; };
                 class Swoop { label = "Swoop"; };
                 class Sytha { label = "Sytha"; };
+                class Talyn { label = "Talyn"; };
                 class Tugz { label = "Tugz"; };
                 class Vortex { label = "Vortex"; };
                 class Woods { label = "Woods"; };
@@ -261,10 +265,12 @@ class XtdGearModels
                 changeInGame = FALSE;
                 values[] =
                 {
-                    "Bob"
+                    "Bob",
+                    "Splashdown"
                 };
 
                 class Bob { label = "Bob"; };
+                class Splashdown { label = "Splashdown"; };
             };
         };
 
@@ -299,12 +305,16 @@ class XtdGearModels
                 changeInGame = FALSE;
                 values[] =
                 {
+                    "Defter",
+                    "Jester",
                     "Patriot",
                     "Rev",
                     "Sogi",
                     "Tugz"
                 };
 
+                class Defter { label = "Defter"; };
+                class Jester { label = "Jester"; };
                 class Patriot { label = "Patriot"; };
                 class Rev { label = "Rev"; };
                 class Sogi { label = "Sogi"; };
@@ -321,9 +331,11 @@ class XtdGearModels
                 changeInGame = FALSE;
                 values[] =
                 {
+                    "Keeli",
                     "Rat"
                 };
 
+                class Keeli { label = "Keeli"; };
                 class Rat { label = "Rat"; };
             };
         };
@@ -338,30 +350,38 @@ class XtdGearModels
                 values[] =
                 {
                     "Axel",
+                    "Bob",
                     "Burnt",
+                    "Catholic",
                     "Defter",
                     "Dexus",
                     "Drake",
+                    "Hagrid",
                     "Joe",
                     "Keeli",
                     "Keeli_CamoBrown",
                     "Keeli_CamoGrey",
                     "Rat",
                     "Sin",
+                    "Sogi",
                     "Tyrant"
                 };
 
                 class Axel { label = "Axel"; };
+                class Bob { label = "Bob"; };
                 class Burnt { label = "Burnt"; };
+                class Catholic { label = "Catholic"; };
                 class Defter { label = "Defter"; };
                 class Dexus { label = "Dexus"; };
                 class Drake { label = "Drake"; };
+                class Hagrid { label = "Hagrid"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
                 class Keeli_CamoBrown { label = "Keeli Brown"; };
                 class Keeli_CamoGrey { label = "Keeli Grey"; };
                 class Rat { label = "Rat"; };
                 class Sin { label = "Sin"; };
+                class Sogi { label = "Sogi"; };
                 class Tyrant { label = "Tyrant"; };
             };
         };

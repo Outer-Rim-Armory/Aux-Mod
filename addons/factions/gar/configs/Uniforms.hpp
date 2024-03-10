@@ -90,6 +90,23 @@ class CLASS(Uniform_HowzerBrown): CLASS(Uniform_Base)
     };
 };
 
+class CLASS(Uniform_104th): CLASS(Uniform_Base)
+{
+    displayName = "[104th] INF Armor";
+    EGVAR(custom_armor,isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = QCLASS(Unit_104th_Trooper);
+    };
+
+    class XtdGearInfo
+    {
+        model = QCLASS(Uniforms_Units);
+        camo = "KC_104th";
+    };
+};
+
 class CLASS(Uniform_187th): CLASS(Uniform_Base)
 {
     displayName = "[187th] INF Armor";
@@ -109,6 +126,23 @@ class CLASS(Uniform_212th): CLASS(Uniform_Base)
     class ItemInfo: ItemInfo
     {
         uniformClass = QCLASS(Unit_212th_Trooper);
+    };
+};
+
+class CLASS(Uniform_501st): CLASS(Uniform_Base)
+{
+    displayName = "[501st] INF Armor";
+    EGVAR(custom_armor,isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = QCLASS(Unit_501st_Trooper);
+    };
+
+    class XtdGearInfo
+    {
+        model = QCLASS(Uniforms_Units);
+        camo = "KC_501st";
     };
 };
 

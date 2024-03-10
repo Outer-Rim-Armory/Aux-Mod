@@ -194,6 +194,31 @@ class CLASS(Unit_HowzerBrown): CLASS(Unit_HowzerBlue)
     };
 };
 
+class CLASS(Unit_104th_Trooper): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Clone Trooper";
+    faction = QCLASS(Faction_GAR);
+    editorSubcategory = QCLASS(EdSubCat_104th);
+    editorPreview = EDITOR_PREVIEW(Unit_104th_Trooper);
+
+    uniformClass = QCLASS(Uniform_104th);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\104th_upper_co.paa),
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\104th_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_104th), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_104th), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_187th_Trooper): CLASS(Unit_Phase2_Base)
 {
     displayName = "Clone Trooper";
@@ -216,6 +241,31 @@ class CLASS(Unit_187th_Trooper): CLASS(Unit_Phase2_Base)
     respawnLinkedItems[] =
     {
         QCLASS(Helmet_Phase2_187th), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_501st_Trooper): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Clone Trooper";
+    faction = QCLASS(Faction_GAR);
+    editorSubcategory = QCLASS(EdSubCat_501st);
+    editorPreview = EDITOR_PREVIEW(Unit_501st_Trooper);
+
+    uniformClass = QCLASS(Uniform_501st);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\501st_upper_co.paa),
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\501st_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_501st), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_501st), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 

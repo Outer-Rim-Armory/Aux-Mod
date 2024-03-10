@@ -482,7 +482,7 @@ class CLASS(Vest_MedicSenior_v2): CLASS(Vest_Medic_v2)
         QPATHTOF(data\vests\infantry\heavy\Medic_v2_camo1_co.paa),
         QPATHTOF(data\vests\infantry\heavy\Medic_v2_camo1_co.paa),
         "",
-        ""
+        QPATHTOF(data\vests\infantry\heavy\Medic_v2_camo1_co.paa)
     };
 };
 

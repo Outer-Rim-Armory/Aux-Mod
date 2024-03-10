@@ -23,6 +23,30 @@ class CLASS(Unit_Axel): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_Bob): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Bob";
+
+    editorSubcategory = EDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Bob);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Bob_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Bob_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Engineer_Bob), QCLASS(Vest_Engineer_CT), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Engineer_Bob), QCLASS(Vest_Engineer_CT), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Burnt): CLASS(Unit_Phase2_Base)
 {
     displayName = "Burnt";
@@ -44,6 +68,30 @@ class CLASS(Unit_Burnt): CLASS(Unit_Phase2_Base)
     respawnLinkedItems[] =
     {
         QCLASS(Helmet_Phase2_Burnt), QCLASS(Vest_MedicPlatoon), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Catholic): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Catholic";
+
+    editorSubcategory = EDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Catholic);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Catholic_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Catholic_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_Tanker_Catholic), QCLASS(Vest_WO), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Phase2_Tanker_Catholic), QCLASS(Vest_WO), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -117,6 +165,30 @@ class CLASS(Unit_Drake): CLASS(Unit_Phase2_Base)
     respawnLinkedItems[] =
     {
         QCLASS(Helmet_ARC_Drake), QCLASS(Vest_ARC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Hagrid): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Hagrid";
+
+    editorSubcategory = EDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Hagrid);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Hagrid_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Hagrid_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_ARC_Hagrid), QCLASS(Vest_ARC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_ARC_Hagrid), QCLASS(Vest_ARC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -235,6 +307,30 @@ class CLASS(Unit_Sin): CLASS(Unit_Phase2_Base)
     respawnLinkedItems[] =
     {
         QCLASS(Helmet_ARC_Sin), QCLASS(Vest_ARC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Sogi): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Sogi";
+
+    editorSubcategory = EDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Sogi);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Sogi_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Sogi_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_ARF_Sogi), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_ARF_Sogi), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 

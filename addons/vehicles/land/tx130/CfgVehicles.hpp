@@ -20,11 +20,11 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] =
         {
-            QPATHTOF(land\tx130\data\textures\KeeliCompany\Body_co.paa),
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
             QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_co.paa)
         };
 
-        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "CamoGrey", 0};
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 1, "CamoGrey", 0};
         class TextureSources
         {
             class Standard
@@ -34,8 +34,8 @@ class CfgVehicles
                 factions[] = {};
                 textures[] =
                 {
-                    "\3as\3as_saber\data\saber_hull_co.paa",
-                    "\3as\3as_saber\data\saber_weapons_co.paa"
+                    "\3AS\3AS_Saber\data\saber_hull_co.paa",
+                    "\3AS\3AS_Saber\data\saber_weapons_co.paa"
                 };
             };
             class Imperial: Standard
@@ -43,8 +43,8 @@ class CfgVehicles
                 displayName = "Imperial";
                 textures[] =
                 {
-                    "\3AS\3as_saber\data\saber_Imp_hull_co.paa",
-                    "\3AS\3as_saber\data\saber_Imp_weapons_co.paa"
+                    "\3AS\3AS_Saber\data\saber_Imp_hull_co.paa",
+                    "\3AS\3AS_Saber\data\saber_Imp_weapons_co.paa"
                 };
             };
             class KeeliCompany: Standard
@@ -53,17 +53,25 @@ class CfgVehicles
                 displayName = "Keeli Company";
                 textures[] =
                 {
-                    QPATHTOF(land\tx130\data\textures\KeeliCompany\Body_co.paa),
+                    QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
                     QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_co.paa)
                 };
             };
-            class CamoGrey: Standard
+            class KeeliCompanyWhite: KeeliCompany
             {
-                author = AUTHOR;
+                displayName = "Keeli Company (White)";
+                textures[] =
+                {
+                    QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Weapons_co.paa)
+                };
+            };
+            class CamoGrey: KeeliCompany
+            {
                 displayName = "Grey Camo";
                 textures[] =
                 {
-                    QPATHTOF(land\tx130\data\textures\CamoGrey\Body_co.paa),
+                    QPATHTOF(land\tx130\data\textures\CamoGrey\Hull_co.paa),
                     QPATHTOF(land\tx130\data\textures\CamoGrey\Weapons_co.paa)
                 };
             };
