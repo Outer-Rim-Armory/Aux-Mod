@@ -22,6 +22,7 @@ class CfgPatches
             QCLASS(Unit_FilSquad),
             QCLASS(Unit_HowzerBlue),
             QCLASS(Unit_HowzerBrown),
+            QCLASS(Unit_104th_Trooper),
             QCLASS(Unit_187th_Trooper),
             QCLASS(Unit_212th_Trooper),
             QCLASS(Unit_91st_Ponds),
@@ -74,6 +75,7 @@ class CfgPatches
             QCLASS(Uniform_FilSquad),
             QCLASS(Uniform_HowzerBlue),
             QCLASS(Uniform_HowzerBrown),
+            QCLASS(Uniform_104th),
             QCLASS(Uniform_187th),
             QCLASS(Uniform_212th),
             QCLASS(Uniform_91st_Ponds)

@@ -25,6 +25,11 @@ class CfgEditorSubcategories
         displayName = "Howzer's Squad";
     };
 
+    class CLASS(EdSubCat_104th)
+    {
+        displayName = "104th Wolfpack";
+    };
+
     class CLASS(EdSubCat_187th)
     {
         displayName = "187th Battalion";

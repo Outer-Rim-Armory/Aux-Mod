@@ -85,6 +85,7 @@ class XtdGearModels
                     "KC_GC",
                     "KC_Howzer",
                     "KC_HowzerBrown",
+                    "KC_104th",
                     "KC_187th",
                     "KC_212th",
                     "KC_91st_Ponds"
@@ -98,6 +99,7 @@ class XtdGearModels
                 class KC_GC { label = "Green Comp"; };
                 class KC_Howzer { label = "Howzer"; };
                 class KC_HowzerBrown { label = "Howzer (KC)"; };
+                class KC_104th { label = "104th"; };
                 class KC_187th { label = "187th"; };
                 class KC_212th { label = "212th"; };
                 class KC_91st_Ponds { label = "91st (Ponds)"; };
