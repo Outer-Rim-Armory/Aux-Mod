@@ -44,6 +44,44 @@ class CfgVehicles
             QCLASS(Alarm_Juggernaut)
         };
 
+        hiddenSelectionsTextures[] =
+        {
+            QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\body_co.paa),
+            QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\guns_co.paa),
+            "\3AS\3AS_Jug\data\juggernaut_props_co.paa",
+            "\3AS\3AS_Jug\data\juggernaut_wheels_co.paa"
+        };
+
+        textureList[] = {"Standard", 0, "KeeliCompany", 1};
+        class TextureSources
+        {
+            class Standard
+            {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {};
+                textures[] =
+                {
+                    "\3AS\3AS_Jug\data\juggernaut_base_co.paa",
+                    "\3AS\3AS_Jug\data\juggernaut_guns_co.paa",
+                    "\3AS\3AS_Jug\data\juggernaut_props_co.paa",
+                    "\3AS\3AS_Jug\data\juggernaut_wheels_co.paa"
+                };
+            };
+            class KeeliCompany: Standard
+            {
+                author = AUTHOR;
+                displayName = "Keeli Company";
+                textures[] =
+                {
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\body_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\guns_co.paa),
+                    "\3AS\3AS_Jug\data\juggernaut_props_co.paa",
+                    "\3AS\3AS_Jug\data\juggernaut_wheels_co.paa"
+                };
+            };
+        };
+
         // Look at https://community.bistudio.com/wiki/Arma_3:_Soldier_Protection for info on what each value does
         // class HitPoints: HitPoints
         // {
