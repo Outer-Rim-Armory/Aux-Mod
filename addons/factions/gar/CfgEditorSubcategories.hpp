@@ -40,6 +40,11 @@ class CfgEditorSubcategories
         displayName = "212th Attack Battalion";
     };
 
+    class CLASS(EdSubCat_501st)
+    {
+        displayName = "501st Legion";
+    };
+
     class CLASS(EdSubCat_91st)
     {
         displayName = "91st MRC";

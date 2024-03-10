@@ -92,6 +92,7 @@ class XtdGearModels
                     "KC_104th",
                     "KC_187th",
                     "KC_212th",
+                    "KC_501st",
                     "KC_91st_Ponds"
                 };
 
@@ -106,6 +107,7 @@ class XtdGearModels
                 class KC_104th { label = "104th"; };
                 class KC_187th { label = "187th"; };
                 class KC_212th { label = "212th"; };
+                class KC_501st { label = "501st"; };
                 class KC_91st_Ponds { label = "91st (Ponds)"; };
             };
         };

@@ -129,6 +129,23 @@ class CLASS(Uniform_212th): CLASS(Uniform_Base)
     };
 };
 
+class CLASS(Uniform_501st): CLASS(Uniform_Base)
+{
+    displayName = "[501st] INF Armor";
+    EGVAR(custom_armor,isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo
+    {
+        uniformClass = QCLASS(Unit_501st_Trooper);
+    };
+
+    class XtdGearInfo
+    {
+        model = QCLASS(Uniforms_Units);
+        camo = "KC_501st";
+    };
+};
+
 class CLASS(Uniform_91st_Ponds): CLASS(Uniform_Base)
 {
     displayName = "[91st] INF Armor ('Ponds')";

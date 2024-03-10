@@ -25,6 +25,7 @@ class CfgPatches
             QCLASS(Unit_104th_Trooper),
             QCLASS(Unit_187th_Trooper),
             QCLASS(Unit_212th_Trooper),
+            QCLASS(Unit_501st_Trooper),
             QCLASS(Unit_91st_Ponds),
 
             QGROUND_CLASS(Helmet_Phase1_CG),
@@ -87,6 +88,7 @@ class CfgPatches
             QCLASS(Uniform_104th),
             QCLASS(Uniform_187th),
             QCLASS(Uniform_212th),
+            QCLASS(Uniform_501st),
             QCLASS(Uniform_91st_Ponds)
         };
         VERSION_CONFIG;
