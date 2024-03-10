@@ -34,6 +34,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase1_HowzerBrown),
             QGROUND_CLASS(Helmet_Phase1_104th),
             QGROUND_CLASS(Helmet_Phase1_212th),
+            QGROUND_CLASS(Helmet_Phase1_501st),
             QGROUND_CLASS(Helmet_Phase1_91st_Ponds),
 
             QGROUND_CLASS(Helmet_Phase2_CG),
@@ -47,6 +48,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase2_104th),
             QGROUND_CLASS(Helmet_Phase2_187th),
             QGROUND_CLASS(Helmet_Phase2_212th),
+            QGROUND_CLASS(Helmet_Phase2_501st),
             QGROUND_CLASS(Helmet_Phase2_91st_Ponds)
         };
         weapons[] =
@@ -58,6 +60,7 @@ class CfgPatches
             QCLASS(Helmet_Phase1_HowzerBrown),
             QCLASS(Helmet_Phase1_104th),
             QCLASS(Helmet_Phase1_212th),
+            QCLASS(Helmet_Phase1_501st),
             QCLASS(Helmet_Phase1_91st_Ponds),
 
             QCLASS(Helmet_Phase2_CG),
@@ -71,6 +74,7 @@ class CfgPatches
             QCLASS(Helmet_Phase2_104th),
             QCLASS(Helmet_Phase2_187th),
             QCLASS(Helmet_Phase2_212th),
+            QCLASS(Helmet_Phase2_501st),
             QCLASS(Helmet_Phase2_91st_Ponds),
 
             QCLASS(Uniform_CG),
