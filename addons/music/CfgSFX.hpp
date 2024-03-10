@@ -23,5 +23,5 @@ class CfgSFX
     SOUND_FX(EPF_Radio3,"[KC] Holonet News 3",100);
     SOUND_FX(EPF_PresidenteSpeech,"[KC] El Presidente Speech",100);
     SOUND_FX(TDI_Theme,"[KC] Total Drama Island Theme",100);
-    SOUND_FX(TDI_Theme,"[KC] Poke Village Theme",150);
+    SOUND_FX(PokeVillage,"[KC] Poke Village Theme",150);
 };
