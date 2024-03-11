@@ -74,6 +74,7 @@ class CfgVehicles
     class CLASS(Jetpack_CDV21): CLASS(Jetpack_JT12)
     {
         BNA_KC_Jet_strength = 0;
+        GVAR(strength) = 0;
     };
 
     class CLASS(Jetpack_CDV19): CLASS(Jetpack_JT12)
