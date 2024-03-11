@@ -35,3 +35,4 @@ class CfgPatches
 #include "CfgUIGrids.hpp"
 #include "Cfg3DEN.hpp"
 #include "CfgEventHandlers.hpp"
+#include "ACE_Arsenal_Stats.hpp"

@@ -187,3 +187,31 @@ ace_hearing_protection = 0.85
 
 #define CLAMP(var1,lower,upper) lower max (var1 min upper)
 #define GET_NAME(var1) [var1, false, true] call ace_common_fnc_getName
+
+
+// ACE Arsenal Tab values
+// Left Tabs
+#define ARSENAL_TAB_PRIMARY 0
+#define ARSENAL_TAB_HANDGUN 1
+#define ARSENAL_TAB_LAUNCHER 2
+#define ARSENAL_TAB_UNIFORM 3
+#define ARSENAL_TAB_VESTS 4
+#define ARSENAL_TAB_BACKPACKS 5
+#define ARSENAL_TAB_HEADGEAR 6
+#define ARSENAL_TAB_GOGGLES 7
+#define ARSENAL_TAB_NVGS 8
+#define ARSENAL_TAB_BINOCULARS 9
+#define ARSENAL_TAB_MAP 10
+#define ARSENAL_TAB_GPS 11
+#define ARSENAL_TAB_RADIO 12
+#define ARSENAL_TAB_COMPASS 13
+#define ARSENAL_TAB_WATCH 14
+// Right Tabs
+#define ARSENAL_TAB_OPTIC 0
+#define ARSENAL_TAB_SIDE 1
+#define ARSENAL_TAB_MUZZLE 2
+#define ARSENAL_TAB_BIPOD 3
+#define ARSENAL_TAB_MAGAZINE 4
+#define ARSENAL_TAB_MAGAZINE_GRENADES 5
+#define ARSENAL_TAB_MAGAZINE_EXPLOSIVES 6
+#define ARSENAL_TAB_MAGAZINE_MISC 7
