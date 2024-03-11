@@ -35,9 +35,9 @@ ace_acc_pointer_green = TRUE; \
 JLTS_DC17SA_Flashlight = TRUE
 
 // Special Ammo Types
-#define AMMO_TYPE_NORMAL -1
-#define AMMO_TYPE_EMP 0
-#define AMMO_TYPE_BACTA 1
+#define AMMO_TYPE_NORMAL 0
+#define AMMO_TYPE_EMP 1
+#define AMMO_TYPE_BACTA 2
 
 #define EMP_RADIUS_DROID_DEFAULT 10
 #define EMP_RADIUS_DROIDEKA_DEFAULT 10
