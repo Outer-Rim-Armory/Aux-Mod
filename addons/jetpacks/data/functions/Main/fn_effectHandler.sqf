@@ -24,7 +24,7 @@ params ["_unit"];
 private ["_jetpack", "_totalEffects", "_remainingSlots", "_effectPoints", "_effectTypes", "_defaultColor", "_lightColor"];
 if !(hasInterface) exitWith {};
 
-_totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
+_totalEffects = missionNamespace getVariable [QGVAR(totalEffects), 0];
 if (_totalEffects >= GVAR(particleLimit)) exitWith {};
 
 // Don't play effects for units on the ground or who can't jetpack
@@ -33,10 +33,10 @@ if (!(_unit call FUNC(canJetpack)) or isTouchingGround _unit) exitWith {};
 _jetpack = backpack _unit;
 
 // Obtain effect point names
-_effectPoints = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effectPoints",[]);
-_effectTypes  = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_effects",[]);
+_effectPoints = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> QGVAR(effectPoints),[]);
+_effectTypes  = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> QGVAR(effects),[]);
 _defaultColor = [1, 1, 1]; // Can't include [] with commas inside in a macro
-_lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_lightColor",_defaultColor);
+_lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> QGVAR(lightColor),_defaultColor);
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
 if (_totalEffects + (count _effectTypes * count _effectPoints) > GVAR(particleLimit)) then
@@ -102,9 +102,9 @@ if (_totalEffects + (count _effectTypes * count _effectPoints) > GVAR(particleLi
         _unit setVariable [QGVAR(effectSources), _effectSources, true];
 
         // Update total effects, used for setting a cap of jetpack effects
-        private _totalEffects = missionNamespace getVariable ["BNA_KC_Jet_totalEffects", 0];
+        private _totalEffects = missionNamespace getVariable [QGVAR(totalEffects), 0];
         _totalEffects = _totalEffects + count _effectSources;
-        missionNamespace setVariable ["BNA_KC_Jet_totalEffects", _totalEffects, true];
+        missionNamespace setVariable [QGVAR(totalEffects), _totalEffects, true];
     },
     [_unit, _effectPoints, _effectTypes, _lightColor],
     0.15

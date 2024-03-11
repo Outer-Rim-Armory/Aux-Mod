@@ -26,8 +26,8 @@ if !(ace_player call FUNC(canJetpack)) exitWith {
 
 // Jetpack properties
 private _jetpack = backpack ace_player;
-private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_strength",JETPACK_STRENGTH_DEFAULT);
-private _freefallHeight = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_freefallHeight",-1);
+private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> QGVAR(strength),JETPACK_STRENGTH_DEFAULT);
+private _freefallHeight = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> QGVAR(freefallHeight),-1);
 
 ace_player setUnitFreefallHeight _freefallHeight;
 
