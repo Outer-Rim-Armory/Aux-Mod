@@ -31,6 +31,7 @@ class CfgPatches
 #include "CfgAmmo.hpp"
 #include "CfgSoundShaders.hpp"
 #include "CfgSoundSets.hpp"
-#include "CfgEventHandlers.hpp"
 #include "CfgEffects.hpp"
 #include "CfgCloudlets.hpp"
+#include "CfgEventHandlers.hpp"
+#include "ACE_Arsenal_Stats.hpp"

@@ -429,7 +429,7 @@ class CfgVehicles
         JLTS_recharge = 1;
     };
 
-    class CLASS(Jetpack_CDV21_LR): CLASS(Jetpack_JT12)
+    class CLASS(Jetpack_CDV21_LR): CLASS(Jetpack_CDV21)
     {
         displayName = "[KC] CDV-21 Droppack [LR]";
 

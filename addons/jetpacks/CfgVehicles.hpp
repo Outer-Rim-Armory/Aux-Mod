@@ -54,7 +54,9 @@ class CfgVehicles
         GVAR(isJetpack) = TRUE;
         GVAR(fuel) = JETPACK_FUEL_DEFAULT;
         BNA_KC_Jet_speed = JETPACK_SPEED_DEFAULT;     // Jetpack speed, effects how fast you move in the air
+        GVAR(speed) = JETPACK_SPEED_DEFAULT;
         BNA_KC_Jet_strength = JETPACK_STRENGTH_DEFAULT; // Jetpack strength, effects fast the player rises
+        GVAR(strength) = JETPACK_STRENGTH_DEFAULT;
 
         // Effects
         BNA_KC_Jet_effectPoints[] = {"effect_left", "effect_right"}; // Points to spawn effects, these come from the JLTS model
@@ -72,6 +74,7 @@ class CfgVehicles
     class CLASS(Jetpack_CDV21): CLASS(Jetpack_JT12)
     {
         BNA_KC_Jet_strength = 0;
+        GVAR(strength) = 0;
     };
 
     class CLASS(Jetpack_CDV19): CLASS(Jetpack_JT12)
