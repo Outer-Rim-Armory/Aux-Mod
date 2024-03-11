@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Is EMP condition.
+ * Is Bacta condition.
  *
  * Arguments:
  * 0: Not used
@@ -15,7 +15,7 @@
 
 params ["", "_config"];
 private ["_ammo"];
-TRACE_1("fnc_statCondition_isEmp",_config);
+TRACE_1("fnc_statCondition_isBacta",_config);
 
 _ammo = getText (_config >> "ammo");
-getNumber (configFile >> "CfgAmmo" >> _ammo >> QGVAR(ammoType)) isEqualTo AMMO_TYPE_EMP;
+getNumber (configFile >> "CfgAmmo" >> _ammo >> QGVAR(ammoType)) isEqualTo AMMO_TYPE_BACTA;
