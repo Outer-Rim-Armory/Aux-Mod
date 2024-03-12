@@ -67,7 +67,17 @@ class CfgPatches
             QCLASS(GM_Backpack_RTO_Predef_SL),
             QCLASS(GM_Veteran_Backpack_RTO_Predef_SL),
             QCLASS(GM_Elite_Backpack_RTO),
-            QCLASS(GM_Elite_Backpack_RTO_Predef_SL)
+            QCLASS(GM_Elite_Backpack_RTO_Predef_SL),
+            QCLASS(GM_RLA_Backpack_Predef_Rifleman),
+            QCLASS(GM_RLA_Veteran_Backpack_Predef_Rifleman),
+            QCLASS(GM_RLA_Backpack_Heavy_Predef_AT),
+            QCLASS(GM_RLA_Veteran_Backpack_Heavy_Predef_AT),
+            QCLASS(GM_RLA_Backpack_Heavy_Predef_AA),
+            QCLASS(GM_RLA_Veteran_Backpack_Heavy_Predef_AA),
+            QCLASS(GM_RLA_Backpack_Predef_Marksman),
+            QCLASS(GM_RLA_Veteran_Backpack_Predef_Marksman),
+            QCLASS(GM_RLA_Backpack_RTO_Predef_SL),
+            QCLASS(GM_RLA_Veteran_Backpack_RTO_Predef_SL)
         };
         weapons[] =
         {

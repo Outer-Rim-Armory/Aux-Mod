@@ -588,4 +588,100 @@ class CfgVehicles
             MAG_XX(CLASS(Grenade_Bacta),1);
         };
     };
+
+    class CLASS(GM_RLA_Backpack_Predef_Rifleman): CLASS(GM_Backpack_Predef_Rifleman) {
+        displayName = "[GM-RLA] Backpack";
+        model = "\ls_equipment_greenfor\backpack\mandalorian\standard\ls_mandalorian_standard_backpack.p3d";
+        hiddenSelections[] = {"camo1", "bag", "bomb", "pouches"};
+        hiddenSelectionsTextures[] = {
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa",
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa"
+        };
+    };
+    class CLASS(GM_RLA_Veteran_Backpack_Predef_Rifleman): CLASS(GM_Veteran_Backpack_Predef_Rifleman) {
+        displayName = "[GM-RLA] Backpack";
+        model = "\ls_equipment_greenfor\backpack\mandalorian\standard\ls_mandalorian_standard_backpack.p3d";
+        hiddenSelections[] = {"camo1", "bag", "bomb", "pouches"};
+        hiddenSelectionsTextures[] = {
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa",
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa"
+        };
+    };
+
+    class CLASS(GM_RLA_Backpack_Predef_Marksman): CLASS(GM_Backpack_Predef_Marksman) {
+        displayName = "[GM-RLA] Backpack";
+        model = "\ls_equipment_greenfor\backpack\mandalorian\standard\ls_mandalorian_standard_backpack.p3d";
+        hiddenSelections[] = {"camo1", "bag", "bomb", "pouches"};
+        hiddenSelectionsTextures[] = {
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa",
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa"
+        };
+    };
+    class CLASS(GM_RLA_Veteran_Backpack_Predef_Marksman): CLASS(GM_Veteran_Backpack_Predef_Marksman) {
+        displayName = "[GM-RLA] Backpack";
+        model = "\ls_equipment_greenfor\backpack\mandalorian\standard\ls_mandalorian_standard_backpack.p3d";
+        hiddenSelections[] = {"camo1", "bag", "bomb", "pouches"};
+        hiddenSelectionsTextures[] = {
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa",
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa"
+        };
+    };
+
+    class CLASS(GM_RLA_Backpack_Heavy_Predef_AT): CLASS(GM_Backpack_Heavy_Predef_AT) {
+        displayName = "[GM-RLA] Backpack";
+        model = "\ls_equipment_greenfor\backpack\mandalorian\standard\ls_mandalorian_standard_backpack.p3d";
+        hiddenSelections[] = {"camo1", "bag", "bomb", "pouches"};
+        hiddenSelectionsTextures[] = {
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa",
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa"
+        };
+    };
+    class CLASS(GM_RLA_Veteran_Backpack_Heavy_Predef_AT): CLASS(GM_Veteran_Backpack_Heavy_Predef_AT) {
+        displayName = "[GM-RLA] Backpack";
+        model = "\ls_equipment_greenfor\backpack\mandalorian\standard\ls_mandalorian_standard_backpack.p3d";
+        hiddenSelections[] = {"camo1", "bag", "bomb", "pouches"};
+        hiddenSelectionsTextures[] = {
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa",
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa"
+        };
+    };
+
+    class CLASS(GM_RLA_Backpack_Heavy_Predef_AA): CLASS(GM_Backpack_Heavy_Predef_AA) {
+        displayName = "[GM-RLA] Backpack";
+        model = "\ls_equipment_greenfor\backpack\mandalorian\standard\ls_mandalorian_standard_backpack.p3d";
+        hiddenSelections[] = {"camo1", "bag", "bomb", "pouches"};
+        hiddenSelectionsTextures[] = {
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa",
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa"
+        };
+    };
+    class CLASS(GM_RLA_Veteran_Backpack_Heavy_Predef_AA): CLASS(GM_Veteran_Backpack_Heavy_Predef_AA) {
+        displayName = "[GM-RLA] Backpack";
+        model = "\ls_equipment_greenfor\backpack\mandalorian\standard\ls_mandalorian_standard_backpack.p3d";
+        hiddenSelections[] = {"camo1", "bag", "bomb", "pouches"};
+        hiddenSelectionsTextures[] = {
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa",
+            "\ls_equipment_greenfor\backpack\mandalorian\standard\data\backpack_co.paa"
+        };
+    };
+
+    class CLASS(GM_RLA_Backpack_RTO_Predef_SL): CLASS(GM_Backpack_RTO_Predef_SL) {
+        displayName = "[GM-RLA] Radio Backpack";
+        model = "\OPTRE_unsc_units\army\rucksack.p3d";
+        hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Addons"};
+        hiddenSelectionsTextures[] = {
+            "\optre_unsc_units\army\data\soft_backpack_co.paa",
+            "\optre_unsc_units\army\data\commopack_blk_co.paa"
+        };
+    };
+
+    class CLASS(GM_RLA_Veteran_Backpack_RTO_Predef_SL): CLASS(GM_Veteran_Backpack_RTO_Predef_SL) {
+        displayName = "[GM-RLA] Radio Backpack";
+        model = "\OPTRE_unsc_units\army\rucksack.p3d";
+        hiddenSelections[] = {"camo", "camo2", "B_Medic", "B_Addons"};
+        hiddenSelectionsTextures[] = {
+            "\optre_unsc_units\army\data\soft_backpack_co.paa",
+            "\optre_unsc_units\army\data\commopack_blk_co.paa"
+        };
+    };
 };
