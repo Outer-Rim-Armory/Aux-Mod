@@ -17,7 +17,7 @@ class CfgVehicles
         impactDamageMultiplier = 0.5;
         minTotalDamageThreshold = 0.001;
 
-        identityTypes[] = {"", "Head_NATO"};
+        identityTypes[] = {"lsd_voice_b1Droid"};
 
         impactEffectsBlood = "ImpactMetal";
         impactEffectsNoBlood = "ImpactMetal";
