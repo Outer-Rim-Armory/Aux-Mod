@@ -51,8 +51,8 @@ if (!(ace_player call FUNC(canJetpack)) or isTouchingGround ace_player) exitWith
 
 // Jetpack properties
 private _jetpack = backpack ace_player;
-private _jetSpeed = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_speed",JETPACK_SPEED_DEFAULT);
-private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> "BNA_KC_Jet_strength",JETPACK_STRENGTH_DEFAULT);
+private _jetSpeed = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> QGVAR(speed),JETPACK_SPEED_DEFAULT);
+private _jetStrength = GET_NUMBER(configFile >> "CfgVehicles" >> _jetpack >> QGVAR(strength),JETPACK_STRENGTH_DEFAULT);
 
 // Speed, position, and direction
 // Used for calculating mid-air movement

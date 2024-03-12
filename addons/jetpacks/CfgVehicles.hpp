@@ -53,38 +53,35 @@ class CfgVehicles
 
         GVAR(isJetpack) = TRUE;
         GVAR(fuel) = JETPACK_FUEL_DEFAULT;
-        BNA_KC_Jet_speed = JETPACK_SPEED_DEFAULT;     // Jetpack speed, effects how fast you move in the air
-        GVAR(speed) = JETPACK_SPEED_DEFAULT;
-        BNA_KC_Jet_strength = JETPACK_STRENGTH_DEFAULT; // Jetpack strength, effects fast the player rises
-        GVAR(strength) = JETPACK_STRENGTH_DEFAULT;
+        GVAR(speed) = JETPACK_SPEED_DEFAULT;     // Jetpack speed, effects how fast you move in the air
+        GVAR(strength) = JETPACK_STRENGTH_DEFAULT; // Jetpack strength, effects fast the player rises
 
         // Effects
-        BNA_KC_Jet_effectPoints[] = {"effect_left", "effect_right"}; // Points to spawn effects, these come from the JLTS model
-        BNA_KC_Jet_effects[] =
+        GVAR(effectPoints)[] = {"effect_left", "effect_right"}; // Points to spawn effects, these come from the JLTS model
+        GVAR(effects)[] =
         {
             QCLASS(Effects_JetpackFire_Blue),
             QCLASS(Effects_JetpackSmoke)
         };
-        BNA_KC_Jet_effectSound  = QPATHTOF(data\audio\Jetpack_Loop.wss);
-        BNA_KC_Jet_lightColor[] = {0, 0.1, 0.9};
+        GVAR(effectSound)  = QPATHTOF(data\audio\Jetpack_Loop.wss);
+        GVAR(lightColor)[] = {0, 0.1, 0.9};
 
-        BNA_KC_Jet_freefallHeight = 500;
+        GVAR(freefallHeight) = 500;
     };
 
     class CLASS(Jetpack_CDV21): CLASS(Jetpack_JT12)
     {
-        BNA_KC_Jet_strength = 0;
         GVAR(strength) = 0;
     };
 
     class CLASS(Jetpack_CDV19): CLASS(Jetpack_JT12)
     {
-        BNA_KC_Jet_effectPoints[] = {"effect"};
+        GVAR(effectPoints)[] = {"effect"};
     };
 
     class CLASS(Jetpack_Droid): CLASS(Jetpack_JT12)
     {
-        BNA_KC_Jet_freefallHeight = 100000;
+        GVAR(freefallHeight) = 100000;
     };
 
     class CLASS(Resupply_Base);
