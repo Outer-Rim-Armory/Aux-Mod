@@ -1,18 +1,15 @@
 # HEMTT
 hemtt/
+.hemtt/missions/~*
 .hemttout/
 releases/
 
 # Development
 !Developer Files
 references/
-optionals/dev/missions
 
 # Textures
 Exports/
 *.spp
 *.spp.painter_lock
 *.psd
-
-# Legacy
-addons_old/
