@@ -18,7 +18,9 @@ class CfgPatches
         units[] =
         {
             QCLASS(TX130_M1),
-            QCLASS(Saber_M1)
+            QCLASS(TX130_M1_Recon),
+            QCLASS(TX130_M1_GL),
+            QCLASS(TX130_Super)
         };
         weapons[] = {};
         VERSION_CONFIG;
