@@ -34,6 +34,16 @@ class CfgPatches
             QCLASS(GM_Unit_SL),
             QCLASS(GM_Unit_SL_T2),
             QCLASS(GM_Unit_SL_T3),
+            QCLASS(GM_RLA_Unit_Rifleman),
+            QCLASS(GM_RLA_Unit_Rifleman_T2),
+            QCLASS(GM_RLA_Unit_AT),
+            QCLASS(GM_RLA_Unit_AT_T2),
+            QCLASS(GM_RLA_Unit_AA),
+            QCLASS(GM_RLA_Unit_AA_T2),
+            QCLASS(GM_RLA_Unit_Marksman),
+            QCLASS(GM_RLA_Unit_Marksman_T2),
+            QCLASS(GM_RLA_Unit_SL),
+            QCLASS(GM_RLA_Unit_SL_T2),
             QCLASS(GM_Unit_Vex),
             QCLASS(GM_Backpack),
             QCLASS(GM_Backpack_Predef_Rifleman),
@@ -57,7 +67,17 @@ class CfgPatches
             QCLASS(GM_Backpack_RTO_Predef_SL),
             QCLASS(GM_Veteran_Backpack_RTO_Predef_SL),
             QCLASS(GM_Elite_Backpack_RTO),
-            QCLASS(GM_Elite_Backpack_RTO_Predef_SL)
+            QCLASS(GM_Elite_Backpack_RTO_Predef_SL),
+            QCLASS(GM_RLA_Backpack_Predef_Rifleman),
+            QCLASS(GM_RLA_Veteran_Backpack_Predef_Rifleman),
+            QCLASS(GM_RLA_Backpack_Heavy_Predef_AT),
+            QCLASS(GM_RLA_Veteran_Backpack_Heavy_Predef_AT),
+            QCLASS(GM_RLA_Backpack_Heavy_Predef_AA),
+            QCLASS(GM_RLA_Veteran_Backpack_Heavy_Predef_AA),
+            QCLASS(GM_RLA_Backpack_Predef_Marksman),
+            QCLASS(GM_RLA_Veteran_Backpack_Predef_Marksman),
+            QCLASS(GM_RLA_Backpack_RTO_Predef_SL),
+            QCLASS(GM_RLA_Veteran_Backpack_RTO_Predef_SL)
         };
         weapons[] =
         {
@@ -65,11 +85,15 @@ class CfgPatches
             QCLASS(GM_Helmet_SL),
             QCLASS(GM_Helmet_T2),
             QCLASS(GM_Helmet_T3),
+            QCLASS(GM_RLA_Helmet),
+            QCLASS(GM_RLA_Helmet_T2),
             QCLASS(GM_Uniform),
             QCLASS(GM_Uniform_Vex),
             QCLASS(GM_Vest),
             QCLASS(GM_Vest_Medium),
-            QCLASS(GM_Vest_Heavy)
+            QCLASS(GM_Vest_Heavy),
+            QCLASS(GM_RLA_Vest),
+            QCLASS(GM_RLA_Vest_Medium)
         };
         VERSION_CONFIG;
 

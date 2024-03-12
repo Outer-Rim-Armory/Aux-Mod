@@ -88,6 +88,26 @@ class CfgWeapons
         };
     };
 
+    class CLASS(GM_RLA_Helmet): CLASS(GM_Helmet) {
+        displayName = "[GM-RLA] Helmet";
+        hiddenSelectionsTextures[] = {
+            "\optre_unsc_units\army\data\helmet_odst_co.paa",
+            "\optre_unsc_units\army\data\helmet_visor_ca.paa",
+            "\optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "\optre_unsc_units\army\data\soft_packs_co.paa"
+        };
+    };
+
+    class CLASS(GM_RLA_Helmet_T2): CLASS(GM_Helmet_T2) {
+        displayName = "[GM-RLA] Veteran Helmet";
+        hiddenSelectionsTextures[] = {
+            "\optre_unsc_units\army\data\odst_helmet_stripes_co.paa",
+            "\optre_unsc_units\army\data\odst_helmet_visor_co.paa",
+            "\optre_unsc_units\army\data\ghillie_woodland_co.paa",
+            "\optre_unsc_units\army\data\soft_packs_co.paa"
+        };
+    };
+
     class ls_greenforUniform_base;
     class CLASS(INDEP_Uniform_Base): ls_greenforUniform_base
     {
@@ -208,6 +228,22 @@ class CfgWeapons
                     armor = 25;
                 };
             };
+        };
+    };
+
+    class CLASS(GM_RLA_Vest): CLASS(GM_Vest) {
+        displayName = "[GM-RLA] Vest";
+        hiddenSelectionsTextures[] = {
+            "\MDF\MDFTorso\Black\DefaultMaterial_CO.paa",
+            "\MDF\MDFLegs\Black\DefaultMaterial_CO.paa"
+        };
+    };
+
+    class CLASS(GM_RLA_Vest_Medium): CLASS(GM_Vest_Medium) {
+        displayName = "[GM-RLA] Medium Vest";
+        hiddenSelectionsTextures[] = {
+            "\MDF\MDFTorso\Black\DefaultMaterial_CO.paa",
+            "\MDF\MDFLegs\Black\DefaultMaterial_CO.paa"
         };
     };
 };
