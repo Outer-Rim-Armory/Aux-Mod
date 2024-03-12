@@ -10,7 +10,7 @@ class CfgWeapons
         displayName = "[KC] FX-7 Medical Droid";
         picture = QPATHTOEF(core,data\ui\Medic_ca.paa);
 
-        model = "\RD501_Vehicles\static\FX7Droid\FX7Droid.p3d";
+        model = "\3AS\3AS_props\droids\models\3AS_medical_droid.p3d";
 
         ACE_isMedicalItem = TRUE;
 
