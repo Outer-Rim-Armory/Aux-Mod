@@ -33,7 +33,8 @@ workshop = [
 presets = ["main"]
 dlc = []
 optionals = ["dev"]
-parameters = ["ORA\\BNA_KC\\addons\\dev\\missions\\AuxTest.VR\\mission.sqm"]
+mission = "AuxTest.VR"
+parameters = []
 
 [hemtt.launch.full]
 workshop = [
@@ -53,7 +54,8 @@ workshop = [
 presets = ["main"]
 dlc = []
 optionals = ["dev"]
-parameters = ["ORA\\BNA_KC\\addons\\dev\\missions\\AuxTest.VR\\mission.sqm"]
+mission = "AuxTest.VR"
+parameters = []
 
 [hemtt.launch.previews]
 workshop = [
