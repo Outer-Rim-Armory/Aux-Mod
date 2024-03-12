@@ -65,11 +65,15 @@ class CfgPatches
             QCLASS(GM_Helmet_SL),
             QCLASS(GM_Helmet_T2),
             QCLASS(GM_Helmet_T3),
+            QCLASS(GM_RLA_Helmet),
+            QCLASS(GM_RLA_Helmet_T2),
             QCLASS(GM_Uniform),
             QCLASS(GM_Uniform_Vex),
             QCLASS(GM_Vest),
             QCLASS(GM_Vest_Medium),
-            QCLASS(GM_Vest_Heavy)
+            QCLASS(GM_Vest_Heavy),
+            QCLASS(GM_RLA_Vest),
+            QCLASS(GM_RLA_Vest_Medium)
         };
         VERSION_CONFIG;
 
