@@ -84,9 +84,4 @@ class CfgVehicles
             AI_CREW_SPAWNER;
         };
     };
-
-    class CLASS(Saber_M1): CLASS(TX130_M1)
-    {
-        SCOPE_HIDDEN;
-    };
 };
