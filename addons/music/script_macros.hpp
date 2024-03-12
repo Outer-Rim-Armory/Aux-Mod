@@ -1,7 +1,7 @@
 #define SOUND_NAME(var1) TRIPLES(PREFIX,Sound,var1)
 #define SOUND_OBJ_NAME(var1) TRIPLES(PREFIX,Ambient,var1)
 #define SOUND_FX_NAME(var1) DOUBLES(SOUND_NAME(var1),SFX)
-#define MUSIC_NAME(var1) TRIPLES(Prefix,Music,var1)
+#define MUSIC_NAME(var1) TRIPLES(PREFIX,Music,var1)
 
 #define SOUND(var1,var2,var3) class SOUND_NAME(var1) \
 { \
