@@ -12,4 +12,8 @@ class CfgEditorSubcategories
     {
         displayName = "Infantry T3 - Elite";
     };
+    class CLASS(EdSubCat_GM_RLA)
+    {
+        displayName = "Roma Liberation Army";
+    };
 };
