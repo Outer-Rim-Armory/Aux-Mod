@@ -1,8 +1,6 @@
 #include "script_component.hpp"
 
 GVAR(activeJammers) = [];
-publicVariable QGVAR(activeJammers);
-
 GVAR(jammerHandler) = -1;
 
 ["CBA_settingsInitialized", {

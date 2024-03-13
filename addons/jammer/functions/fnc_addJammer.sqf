@@ -10,7 +10,7 @@
  * 3: Is active (optional, default: true) <BOOL>
  *
  * Return Value:
- * None
+ * True if jammer was added, otherwise false <BOOL>
  *
  * Example:
  * ["BNA_KC_jammer_addJammer", [_jammer, _radius]] call CBA_fnc_serverEvent;
@@ -44,5 +44,5 @@ if (GVAR(jammerHandler) < 0) then {
     [] call FUNC(jammerHandlerServer);
 };
 
-publicVariable QGVAR(activeJammers);
+[QGVAR(addJammerLocal), [_jammer, _radius, _strength]] call CBA_fnc_globalEvent;
 true;

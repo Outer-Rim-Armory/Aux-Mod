@@ -28,5 +28,5 @@ GVAR(activeJammers) deleteAt _index;
 _jammer setVariable [QGVAR(activeJammerIndex), nil, true];
 _jammer setVariable [QGVAR(isActive), nil, true];
 
-publicVariable QGVAR(activeJammers);
+[QGVAR(removeJammerLocal), _index] call CBA_fnc_globalEvent;
 true;
