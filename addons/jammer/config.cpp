@@ -6,7 +6,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QCLASS(core)
+            QCLASS(core),
+            "TFAR_core"
         };
         units[] = {};
         weapons[] = {};
