@@ -10,23 +10,16 @@
  * None
  *
  * Example:
- * ["BNA_KC_jammer_removeJammer", [_jammer]] call CBA_fnc_serverEvent;
+ * _jammer call BNA_KC_jammer_fnc_removeJammer;
  *
- * Public: No
+ * Public: Yes
  */
 
-params ["_jammer"];
-private ["_index"];
+params [
+    ["_jammer", objNull, [objNull]]
+];
 TRACE_1("fnc_removeJammer",_jammer);
 
-if (!isServer) exitWith {WARNING("fnc_removeJammer called from non-server context"); false;};
-
-_index = _jammer getVariable [QGVAR(activeJammerIndex), -1];
-if (isNull _jammer or {_index < 0}) exitWith {false};
-
-GVAR(activeJammers) deleteAt _index;
-_jammer setVariable [QGVAR(activeJammerIndex), nil, true];
-_jammer setVariable [QGVAR(isActive), nil, true];
-
-[QGVAR(removeJammerLocal), _index] call CBA_fnc_globalEvent;
-true;
+[{GVAR(ready)}, {
+    [QGVAR(removeJammer), _this] call CBA_fnc_serverEvent;
+}, [_jammer]] call CBA_fnc_waitUntilAndExecute;

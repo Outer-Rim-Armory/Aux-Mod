@@ -23,7 +23,7 @@ if (!isServer) exitWith {};
 _function = {
     if (isGamePaused) then {continue;};
 
-    {_x call FUNC(removeJammer)} forEach (GVAR(activeJammers) select {!alive (_x#0)});
+    {_x call FUNC(removeJammerServer)} forEach (GVAR(activeJammers) select {!alive (_x#0)});
     GVAR(activeJammers) = GVAR(activeJammers) select {!isNull (_x#0)};
     [QGVAR(updateInterference)] call CBA_fnc_globalEvent;
 };

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Makes a given object a radio jammer. Server execution only.
+ * Makes a given object a radio jammer.
  *
  * Arguments:
  * 0: Radio jammer <OBJECT>
@@ -10,12 +10,12 @@
  * 3: Is active (optional, default: true) <BOOL>
  *
  * Return Value:
- * True if jammer was added, otherwise false <BOOL>
+ * None
  *
  * Example:
- * ["BNA_KC_jammer_addJammer", [_jammer, _radius]] call CBA_fnc_serverEvent;
+ * [_jammer, _radius] call BNA_KC_jammer_fnc_addJammer;
  *
- * Public: No
+ * Public: Yes
  */
 
 params [
@@ -24,25 +24,9 @@ params [
     ["_strength", 100, [0]],
     ["_isActive", true, [true]]
 ];
-private ["_jammerObjects"];
 TRACE_4("fnc_addJammer",_jammer,_radius,_strength,_isActive);
 
-if (!isServer or
-    {!alive _jammer} or
-    {_radius < 0} or
-    {_strength < 0}
-) exitWith {false;};
-
-_jammerObjects = GVAR(activeJammers) apply {_x#0};
-if (_jammer in _jammerObjects) exitWith {false};
-
-GVAR(activeJammers) pushBack [_jammer, _radius, _strength];
-_jammer setVariable [QGVAR(activeJammerIndex), count GVAR(activeJammers) - 1, true];
-_jammer setVariable [QGVAR(isActive), _isActive, true];
-
-if (GVAR(jammerHandler) < 0) then {
-    GVAR(jammerHandler) = [] call FUNC(jammerHandlerServer);
-};
-
-[QGVAR(addJammerLocal), [_jammer, _radius, _strength]] call CBA_fnc_globalEvent;
-true;
+// Wait until add/remove handlers have been added
+[{GVAR(ready)}, {
+    [QGVAR(addJammer), _this] call CBA_fnc_serverEvent;
+}, [_jammer, _radius, _strength, _isActive]] call CBA_fnc_waitUntilAndExecute;
