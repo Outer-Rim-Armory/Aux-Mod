@@ -41,7 +41,7 @@ _jammer setVariable [QGVAR(activeJammerIndex), count GVAR(activeJammers) - 1, tr
 _jammer setVariable [QGVAR(isActive), _isActive, true];
 
 if (GVAR(jammerHandler) < 0) then {
-    [] call FUNC(jammerHandlerServer);
+    GVAR(jammerHandler) = [] call FUNC(jammerHandlerServer);
 };
 
 [QGVAR(addJammerLocal), [_jammer, _radius, _strength]] call CBA_fnc_globalEvent;
