@@ -19,7 +19,7 @@ params ["_jammer"];
 private ["_index"];
 TRACE_1("fnc_removeJammer",_jammer);
 
-if (!isServer) exitWith {false;};
+if (!isServer) exitWith {WARNING("fnc_removeJammer called from non-server context"); false;};
 
 _index = _jammer getVariable [QGVAR(activeJammerIndex), -1];
 if (isNull _jammer or {_index < 0}) exitWith {false};

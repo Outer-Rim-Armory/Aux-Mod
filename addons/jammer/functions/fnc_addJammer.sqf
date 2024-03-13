@@ -21,7 +21,7 @@
 params [
     ["_jammer", objNull, [objNull]],
     ["_radius", -1, [0]],
-    ["_strength", -1, [0]],
+    ["_strength", 100, [0]],
     ["_isActive", true, [true]]
 ];
 private ["_jammerObjects"];
@@ -39,6 +39,10 @@ if (_jammer in _jammerObjects) exitWith {false};
 GVAR(activeJammers) pushBack [_jammer, _radius, _strength];
 _jammer setVariable [QGVAR(activeJammerIndex), count GVAR(activeJammers) - 1, true];
 _jammer setVariable [QGVAR(isActive), _isActive, true];
+
+if (GVAR(jammerHandler) < 0) then {
+    [] call FUNC(jammerHandlerServer);
+};
 
 publicVariable QGVAR(activeJammers);
 true;
