@@ -49,6 +49,7 @@ class CfgWeapons
     };
 
     B1_UNIFORM(Crew);
+    B1_UNIFORM(Saboteur);
 
     class CLASS(CIS_Uniform_Droid_BX): CLASS(CIS_Uniform_Droid_Base)
     {
