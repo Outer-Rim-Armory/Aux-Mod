@@ -1,6 +1,7 @@
 #include "script_component.hpp"
 
 GVAR(activeJammers) = [];
+GVAR(interferenceFactor) = 0.625;
 
 ["CBA_settingsInitialized", {
     [QGVAR(addJammerLocal), {
@@ -14,4 +15,6 @@ GVAR(activeJammers) = [];
         if (isServer) exitWith {};
         GVAR(activeJammers) deleteAt _this;
     }] call CBA_fnc_addEventHandler;
+
+    [QGVAR(updateInterference), LINKFUNC(updateInterference)] call CBA_fnc_addEventHandler;
 }] call CBA_fnc_addEventHandler;
