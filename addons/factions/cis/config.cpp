@@ -43,5 +43,4 @@ class CfgPatches
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgFactionClasses.hpp"
-#include "CfgEventHandlers.hpp"
 #include "XtdGearModels.hpp"

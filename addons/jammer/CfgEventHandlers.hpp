@@ -23,4 +23,10 @@ class Extended_Init_EventHandlers {
             init = QUOTE([ARR_3(_this#0,300,150)] call FUNC(addJammer));
         };
     };
+
+    class CLASS(CIS_Unit_Droid_B1_Saboteur) {
+        class GVAR(init) {
+            init = QUOTE([ARR_2(_this#0,100)] call FUNC(addJammer));
+        };
+    };
 };
