@@ -26,6 +26,20 @@ class CfgVehicles
         // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
         // ls_impulsor_boostSpeed_2 = 600;
 
+        backRotorForceCoef = 1.8;
+        backRotorSpeed = 1;
+        bodyFrictionCoef = 1.9845;
+        brakeDistance = 400;
+
+        cyclicAsideForceCoef = 2.8;
+        cyclicForwardForceCoef = 2;
+
+        liftForceCoef = 3;
+
+        maxMainRotorDive = 7;
+        maxSpeed = 600;
+        startDuration = 4.5;
+
         weapons[] = {"ls_laat_gun", "ls_weapon_CMFlareLauncher"};
         magazines[] = {"200rnd_laat_he_mag", "200rnd_laat_he_mag", "ls_mag_240rnd_CMFlareChaff_blue", "ls_mag_240rnd_CMFlareChaff_blue"};
 
