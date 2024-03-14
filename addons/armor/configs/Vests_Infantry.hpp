@@ -155,8 +155,8 @@ class CLASS(Vest_Recon_Survival): CLASS(Vest_Basic)
     {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa),           // Chest Strap
         "\SWLB_core\data\common_textures\accessories\light_accessories_co.paa", // Side bags / back containers
-        DBUG_TEX_RED,                                                           // ! Arm Strap, currently broken
-        DBUG_TEX_GRN,                                                           // ! Holster, currently broken
+        "\SWLB_clones\data\mc_camo1_co.paa",                                    // Arm Strap
+        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa),           // Holster
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa),           // Ammo
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)            // Pauldron
     };
