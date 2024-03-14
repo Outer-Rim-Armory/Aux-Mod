@@ -16,3 +16,11 @@ class Extended_PostInit_EventHandlers {
         serverInit = QUOTE(call COMPILE_SCRIPT(XEH_postInitServer));
     };
 };
+
+class Extended_Init_EventHandlers {
+    class GVAR(communicationTower) {
+        class GVAR(init) {
+            init = QUOTE([ARR_3(_this#0,300,150)] call FUNC(addJammer));
+        };
+    };
+};
