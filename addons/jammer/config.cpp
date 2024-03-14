@@ -9,10 +9,13 @@ class CfgPatches {
             QCLASS(core),
             "TFAR_core"
         };
-        units[] = {};
+        units[] = {
+            QGVAR(communicationTower)
+        };
         weapons[] = {};
         VERSION_CONFIG;
     };
 };
 
+#include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
