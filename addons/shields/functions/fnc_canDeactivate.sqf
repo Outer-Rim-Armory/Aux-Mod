@@ -7,10 +7,12 @@
  * 0: The unit to check <OBJECT>
  *
  * Return Value:
- * Whether the unit can deactivate their vehicle's shield <BOOL>
+ * True if shield can be deactivated, otherwise false <BOOL>
  *
  * Example:
  * ace_player call BNA_KC_shields_fnc_canDeactivate;
+ *
+ * Public: Yes
  */
 
 params [

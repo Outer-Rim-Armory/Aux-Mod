@@ -1,16 +1,18 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Activates a vehicle's shield
+ * Activates a vehicle's shield.
  *
  * Arguments:
  * 0: The vehicle <OBJECT>
  *
  * Return Value:
- * Whether the vehicle's shield was activated <BOOL>
+ * True if shield was activated, otherwise false <BOOL>
  *
  * Example:
  * objectParent ace_player call BNA_KC_shields_fnc_activate;
+ *
+ * Public: Yes
  */
 
 params [

@@ -11,6 +11,8 @@
  *
  * Examples:
  * modifierFunction = "_this call BNA_KC_shields_fnc_modifyInteraction;"
+ *
+ * Public: No
  */
 
 params ["_target", "_player", "_params", "_actionData"];
