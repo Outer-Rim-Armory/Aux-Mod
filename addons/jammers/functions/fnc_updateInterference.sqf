@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call BNA_KC_jammer_fnc_updateInterference;
+ * call BNA_KC_jammers_fnc_updateInterference;
  *
  * Public: No
  */

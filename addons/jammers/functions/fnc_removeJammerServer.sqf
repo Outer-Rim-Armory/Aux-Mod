@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * ["BNA_KC_jammer_removeJammerServer", [_jammer]] call CBA_fnc_serverEvent;
+ * ["BNA_KC_jammers_removeJammerServer", [_jammer]] call CBA_fnc_serverEvent;
  *
  * Public: No
  */

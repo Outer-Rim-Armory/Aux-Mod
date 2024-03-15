@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [_jammer, _radius] call BNA_KC_jammer_fnc_addJammer;
+ * [_jammer, _radius] call BNA_KC_jammers_fnc_addJammer;
  *
  * Public: Yes
  */

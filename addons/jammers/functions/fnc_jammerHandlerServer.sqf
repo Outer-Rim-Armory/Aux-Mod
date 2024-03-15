@@ -10,7 +10,7 @@
  * The CBA PFH id <NUMBER>
  *
  * Example:
- * call BNA_KC_jammer_fnc_jammerHandlerServer;
+ * call BNA_KC_jammers_fnc_jammerHandlerServer;
  *
  * Public: No
  */

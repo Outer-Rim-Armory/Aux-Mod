@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * _jammer call BNA_KC_jammer_fnc_removeJammer;
+ * _jammer call BNA_KC_jammers_fnc_removeJammer;
  *
  * Public: Yes
  */

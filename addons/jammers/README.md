@@ -8,7 +8,7 @@ If multiple jammers are in range of the player, the average interference will be
 The objects listed below have jamming functionality already built in, but any object can be made into a jammer.
 
 | Name               | Range (m) | Strength |
-| :--                | :--       | :--     |
+| :--                | :--       | :--      |
 | Radio Jammer Tower | 5000      | 150      |
 | B1 Saboteur Droid  | 100       | 100      |
 
@@ -20,17 +20,17 @@ Any object can be turned into a jammer using the following code:
 - `_isActive` is whether the jammer is currently active (optional, default: true).
   - Can be set to have a jammer inactive at mission start, but enabled after some trigger.
 ```sqf
-[_object, _radius, _strength, _isActive] call BNA_KC_jammer_fnc_addJammer;
+[_object, _radius, _strength, _isActive] call BNA_KC_jammers_fnc_addJammer;
 ```
 
 A jammer will automatically be disabled if the object is destroyed or killed, but can be manually removed with:
 ```sqf
-_object call BNA_KC_jammer_fnc_removeJammer;
+_object call BNA_KC_jammers_fnc_removeJammer;
 ```
 
-or can be temporarily disabled by disabling the `BNA_KC_jammer_isActive` variable:
+or can be temporarily disabled by disabling the `BNA_KC_jammers_isActive` variable:
 ```sqf
-_object setVariable ["BNA_KC_jamer_isActive", false, true];
+_object setVariable ["BNA_KC_jammers_isActive", false, true];
 ```
 
 ## Settings

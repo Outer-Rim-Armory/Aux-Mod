@@ -13,7 +13,7 @@
  * True if jammer was added, otherwise false <BOOL>
  *
  * Example:
- * ["BNA_KC_jammer_addJammer", [_jammer, _radius, _strength, _isActive]] call CBA_fnc_serverEvent;
+ * ["BNA_KC_jammers_addJammer", [_jammer, _radius, _strength, _isActive]] call CBA_fnc_serverEvent;
  *
  * Public: No
  */
