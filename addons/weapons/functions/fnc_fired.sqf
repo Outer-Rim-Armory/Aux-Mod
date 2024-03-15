@@ -13,6 +13,7 @@
  * fired = "_this call BNA_KC_weapons_fnc_fired";
  */
 
+// TODO: Update to used "Exploded" EH for grenades
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
 private ["_simulation"];
 

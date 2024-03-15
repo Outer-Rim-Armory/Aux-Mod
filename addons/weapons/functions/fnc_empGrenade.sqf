@@ -53,7 +53,7 @@ _positionAGL = ASLToAGL _positionASL;
 
 _nearbyPlayers = [_positionAGL, 70] call EFUNC(core,getNearbyUnits);
 _nearbyPlayers = _nearbyPlayers select {
-    _x call ace_common_fnc_isPlayer
+    [_x, true] call ace_common_fnc_isPlayer
 };
 {
     [QEGVAR(core,localSound), [
@@ -69,7 +69,6 @@ _nearbyPlayers = _nearbyPlayers select {
 } forEach _nearbyPlayers;
 
 _nearbyUnits = [_positionAGL, _radiusDroid] call EFUNC(core,getNearbyUnits);
-
 _nearbyVehicles = _positionAGL nearEntities [["Air", "LandVehicle"], _radiusVehicle];
 
 // 3AS and 501st Droidekas use different methods of shields, and require different handling
