@@ -39,12 +39,14 @@ _fnc_updateInterference = {
         _interference = _strength * (1 - _signal) * GVAR(interferenceFactor);
 
         if(_averageInterference != 1) then {
-            _averageInterference = _averageInterference max _specificInterference;
+            _averageInterference = _averageInterference max _interference;
             _averageInterference = CLAMP(_averageInterference,1,_strength);
         } else {
             _averageInterference = _interference;
         };
     };
+    TRACE_7("updateInterference",_radius,_strength,_distance,_distanceFactor,_signal,_interference,_averageInterference);
+    systemChat format ["_averageInterference=%1",_averageInterference];
 };
 
 [GVAR(activeJammers), _fnc_updateInterference] call CBA_fnc_hashEachPair;
