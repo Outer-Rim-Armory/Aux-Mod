@@ -30,6 +30,7 @@
 #define QCLASS(var1) QUOTE(CLASS(var1))
 #define QQCLASS(var1) QUOTE(QCLASS(var1))
 
+#define FACTION(var1) QCLASS(DOUBLES(Faction,var1))
 #define EDSUBCAT(var1) QCLASS(DOUBLES(EdSubCat,var1))
 
 #define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> QUOTE(var1))
@@ -75,6 +76,8 @@ scopeCurator = 0
 #define ITEM_9(a) a, a, a, a, a, a, a, a, a
 #define ITEM_10(a) a, a, a, a, a, a, a, a, a, a
 #define ITEM_11(a) ITEM_10(a), a
+#define ITEM_15(a) ITEM_10(a), ITEM_5(a)
+#define ITEM_16(a) ITEM_10(a), ITEM_6(a)
 #define ITEM_20(a) ITEM_10(a), ITEM_10(a)
 
 #define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \

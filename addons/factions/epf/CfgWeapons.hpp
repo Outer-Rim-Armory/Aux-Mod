@@ -138,13 +138,11 @@ class CfgWeapons
         };
     };
 
-    class Vest_NoCamo_Base;
-    class V_PlateCarrier1_rgr: Vest_NoCamo_Base
+    class ls_redforVest_base;
+    class CLASS(OPFOR_Vest_Base): ls_redforVest_base
     {
         class ItemInfo;
     };
-    class ls_redforVest_base: V_PlateCarrier1_rgr {};
-    class CLASS(OPFOR_Vest_Base): ls_redforVest_base {};
     class CLASS(EPF_Vest): CLASS(OPFOR_Vest_Base)
     {
         SCOPE_PUBLIC;
@@ -159,6 +157,8 @@ class CfgWeapons
         {
             hiddenSelections[] = {"camo"};
             uniformModel = "\sc_equipment\data\watchdog\wd_vest_basic.p3d";
+
+            SC_VEST_HITPOINTS_LIGHT;
         };
     };
 
@@ -179,6 +179,8 @@ class CfgWeapons
         {
             hiddenSelections[] = {"camo", "camo1"};
             uniformModel = "\sc_equipment\data\marine\mr_vest.p3d";
+
+            SC_VEST_HITPOINTS_MEDIUM;
         };
     };
 
@@ -192,6 +194,8 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformModel = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
+
+            SC_VEST_HITPOINTS_MEDIUM;
         };
     };
 
@@ -205,6 +209,8 @@ class CfgWeapons
         class ItemInfo: ItemInfo
         {
             uniformModel = "\sc_equipment\data\watchdog\wd_vest_heavy.p3d";
+
+            SC_VEST_HITPOINTS_HEAVY;
         };
     };
 
