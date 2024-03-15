@@ -8,4 +8,7 @@ When a vehicle is destroyed, any unconscious crew members or passenegers will be
 Some vehicles come equipped with ACE self actions to allow the current pilot or driver of a vehicle to spawn AI crew members, as well as an action to remove all AI crew. This is mainly used in higher crew cost vehicles, such as the ARC-170, Juggernaut, etc.
 
 ## Texture Switcher
-All vehicles with multiple `TextureSources` come equipped with an ACE self interaction for the current pilot or driver of a vehicle to change the textures used for the vehicle. The vehicle must be stopped in order to change the texture.
+All vehicles with multiple `TextureSources` come equipped with an ACE self interaction for the current pilot or driver of the vehicle to change the textures used for the vehicle. The vehicle must be stopped in order to change the texture.
+
+## Auto-Intercom Setter
+When boarding a vehicle, your intercom will be automatically set to the corresponding channel: "crew" for drivers, gunners, and commanders and "cargo" for anything else.
