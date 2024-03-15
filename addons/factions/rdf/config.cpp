@@ -47,6 +47,8 @@ class CfgPatches
             QCLASS(RDF_Vest_Swat)
         };
         VERSION_CONFIG;
+
+        skipWhenMissingDependencies = TRUE;
     };
 };
 
