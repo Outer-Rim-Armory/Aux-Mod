@@ -1,8 +1,10 @@
 #define MAJOR 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define MINOR 8
 =======
+=======
+>>>>>>> 1c08be284be9e2f36ee956403f95ccfba8cef6f8
 #define MINOR 2
->>>>>>> be30c2cb0c634db565e39d3e7e3f10ec8c54ba58
 #define PATCH 4
 #define BUILD 0
