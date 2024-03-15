@@ -13,7 +13,7 @@
 * Examples:
 * [player, _unit] call FUNC(showMedicalHint);
 *
-* Public: Yes
+* Public: No
 */
 
 params ["_medic", "_patient"];

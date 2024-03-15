@@ -1,8 +1,7 @@
 class ACE_Medical_Treatment_Actions
 {
     class Morphine;
-    class GVAR(Painkiller): Morphine
-    {
+    class GVAR(Painkiller): Morphine {
         displayName = "Painkiller Autoinjector";
         displayNameProgress = "Injecting Painkiller...";
 
@@ -13,8 +12,7 @@ class ACE_Medical_Treatment_Actions
     };
 
     class CPR;
-    class GVAR(Reorient): CPR
-    {
+    class GVAR(Reorient): CPR {
         displayName = "Reorient Patient";
         displayNameProgress = "Reorienting...";
 

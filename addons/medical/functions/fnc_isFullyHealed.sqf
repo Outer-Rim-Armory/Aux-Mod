@@ -11,8 +11,9 @@
  *
  * Examples:
  * player call BNA_KC_medical_fnc_isFullyHealed;
+ *
+ * Public: Yes
  */
-
 
 params [
     ["_unit", objNull, [objNull]]

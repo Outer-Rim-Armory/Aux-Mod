@@ -14,8 +14,9 @@
  *
  * Example:
  * [_units] call BNA_KC_medical_fnc_sortByInjuries;
+ *
+ * Public: Yes
  */
-
 
 params [
     ["_units", []],

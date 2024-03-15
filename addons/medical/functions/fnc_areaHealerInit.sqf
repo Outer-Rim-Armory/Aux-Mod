@@ -11,8 +11,9 @@
  *
  * Example:
  * _source call BNA_KC_medical_fnc_areaHealerInit;
+ *
+ * Public: Yes
  */
-
 
 params [
     ["_object", objNull, [objNull]]

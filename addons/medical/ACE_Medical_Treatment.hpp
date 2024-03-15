@@ -1,9 +1,6 @@
-class ACE_Medical_Treatment
-{
-    class Medication
-    {
-        class GVAR(Painkiller)
-        {
+class ACE_Medical_Treatment {
+    class Medication {
+        class GVAR(Painkiller) {
             painReduce = 0.3;
 
             hrIncreaseLow[] = {-2, -4};
