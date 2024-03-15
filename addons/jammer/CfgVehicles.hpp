@@ -8,6 +8,9 @@ class CfgVehicles {
 
         displayName = "Radio Jammer Tower";
 
+        editorCategory = QEDCAT(Objects);
+        editorSubCategory = QEDSUBCAT(Utility);
+
         class EventHandlers {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers_base {};
         };
