@@ -20,7 +20,7 @@ class Extended_PostInit_EventHandlers {
 class Extended_Init_EventHandlers {
     class GVAR(communicationTower) {
         class GVAR(init) {
-            init = QUOTE([ARR_3(_this#0,300,150)] call FUNC(addJammer));
+            init = QUOTE([ARR_3(_this#0,5000,150)] call FUNC(addJammer));
         };
     };
 
