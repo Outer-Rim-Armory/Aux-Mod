@@ -46,7 +46,6 @@ _fnc_updateInterference = {
         };
     };
     TRACE_7("updateInterference",_radius,_strength,_distance,_distanceFactor,_signal,_interference,_averageInterference);
-    systemChat format ["_averageInterference=%1",_averageInterference];
 };
 
 [GVAR(activeJammers), _fnc_updateInterference] call CBA_fnc_hashEachPair;
