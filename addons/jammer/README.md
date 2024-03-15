@@ -8,8 +8,8 @@ If multiple jammers are in range of the player, the average interference will be
 The objects listed below have jamming functionality already built in, but any object can be made into a jammer.
 
 | Name               | Range (m) | Strength |
-| :-                 | :-:       | :--:     |
-| Radio Jammer Tower | 300       | 150      |
+| :--                | :--       | :--     |
+| Radio Jammer Tower | 5000      | 150      |
 | B1 Saboteur Droid  | 100       | 100      |
 
 ### Creating a custom jammer
