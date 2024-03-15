@@ -30,8 +30,12 @@
 #define QCLASS(var1) QUOTE(CLASS(var1))
 #define QQCLASS(var1) QUOTE(QCLASS(var1))
 
-#define FACTION(var1) QCLASS(DOUBLES(Faction,var1))
-#define EDSUBCAT(var1) QCLASS(DOUBLES(EdSubCat,var1))
+#define FACTION(var1) CLASS(DOUBLES(Faction,var1))
+#define QFACTION(var1) QCLASS(DOUBLES(Faction,var1))
+#define EDCAT(var1) CLASS(DOUBLES(EdCat,var1))
+#define QEDCAT(var1) QCLASS(DOUBLES(EdCat,var1))
+#define EDSUBCAT(var1) CLASS(DOUBLES(EdSubCat,var1))
+#define QEDSUBCAT(var1) QCLASS(DOUBLES(EdSubCat,var1))
 
 #define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> QUOTE(var1))
 

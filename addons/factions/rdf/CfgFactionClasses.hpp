@@ -1,6 +1,6 @@
 class CfgFactionClasses
 {
-    class CLASS(Faction_RDF)
+    class FACTION(RDF)
     {
         displayName = "[KC] Rlyoth Defense Force";
     };

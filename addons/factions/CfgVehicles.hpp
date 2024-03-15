@@ -14,7 +14,7 @@ class CfgVehicles
         displayName = "OPFOR Unit Base";
         uniformClass = QCLASS(BLUFOR_Uniform_Base);
 
-        editorSubcategory = EDSUBCAT(Infantry);
+        editorSubcategory = QEDSUBCAT(Infantry);
 
         modelSides[] = {OPFOR};
 

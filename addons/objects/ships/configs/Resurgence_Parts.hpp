@@ -114,7 +114,7 @@ class ven_door;
 class CLASS(Venator_Resurgence_Door): ven_door
 {
     SCOPE_PUBLIC;
-    editorCategory = QCLASS(Objects);
+    editorCategory = QEDCAT(Objects);
     editorSubcategory = QCLASS(EdSubcat_StaticShips);
 
     displayName = "Resurgence Door (Closed)";
@@ -125,7 +125,7 @@ class ven_door2;
 class CLASS(Venator_Resurgence_Door2): ven_door2
 {
     SCOPE_PUBLIC;
-    editorCategory = QCLASS(Objects);
+    editorCategory = QEDCAT(Objects);
     editorSubcategory = QCLASS(EdSubcat_StaticShips);
 
     displayName = "Resurgence Door (Open)";

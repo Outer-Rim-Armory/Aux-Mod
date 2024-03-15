@@ -4,7 +4,7 @@ class CfgVehicles
     class CLASS(RDF_Unit_Base): CLASS(BLUFOR_Unit_Base)
     {
         SCOPE_HIDDEN;
-        faction = FACTION(RDF);
+        faction = QFACTION(RDF);
         uniformClass = QCLASS(RDF_Uniform);
 
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
@@ -223,7 +223,7 @@ class CfgVehicles
     {
         SCOPE_PUBLIC;
         displayName = "SWAT Rifleman";
-        editorSubcategory = EDSUBCAT(SpecialForces);
+        editorSubcategory = QEDSUBCAT(SpecialForces);
         // editorPreview = EDITOR_PREVIEW(RDF_Unit_SWAT);
 
         weapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Throw", "Put"};

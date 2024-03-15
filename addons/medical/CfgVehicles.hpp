@@ -5,7 +5,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
 
         displayName = "FX-7 Medical Droid";
-        editorCategory = QCLASS(Objects);
+        editorCategory = QEDCAT(Objects);
         editorSubcategory = QCLASS(Edsubcat_Droids);
 
         model = "\3AS\3AS_props\droids\models\3AS_medical_droid.p3d";

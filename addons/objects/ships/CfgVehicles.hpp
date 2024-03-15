@@ -8,7 +8,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        editorCategory = QCLASS(Objects);
+        editorCategory = QEDCAT(Objects);
         editorSubcategory = QCLASS(EdSubcat_StaticShips);
 
         displayName = "Resurgence (Closed Fully Hollowed)";
@@ -63,7 +63,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        editorCategory = QCLASS(Objects);
+        editorCategory = QEDCAT(Objects);
         editorSubcategory = QCLASS(EdSubcat_StaticShips);
 
         displayName = "Resurgance (Zeus)";

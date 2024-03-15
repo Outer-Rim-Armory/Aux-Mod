@@ -198,7 +198,7 @@ class CfgVehicles
 
     class CLASS(GM_RLA_Unit_Rifleman): CLASS(GM_Unit_Rifleman)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Rifleman);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -207,7 +207,7 @@ class CfgVehicles
     };
     class CLASS(GM_RLA_Unit_Rifleman_T2): CLASS(GM_Unit_Rifleman_T2)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Rifleman_T2);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -217,7 +217,7 @@ class CfgVehicles
 
     class CLASS(GM_RLA_Unit_AT): CLASS(GM_Unit_AT)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -226,7 +226,7 @@ class CfgVehicles
     };
     class CLASS(GM_RLA_Unit_AT_T2): CLASS(GM_Unit_AT_T2)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT_T2);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -236,7 +236,7 @@ class CfgVehicles
 
     class CLASS(GM_RLA_Unit_AA): CLASS(GM_Unit_AA)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -245,7 +245,7 @@ class CfgVehicles
     };
     class CLASS(GM_RLA_Unit_AA_T2): CLASS(GM_Unit_AA_T2)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT_T2);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -255,7 +255,7 @@ class CfgVehicles
 
     class CLASS(GM_RLA_Unit_Marksman): CLASS(GM_Unit_Marksman)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Marksman);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
@@ -264,7 +264,7 @@ class CfgVehicles
     };
     class CLASS(GM_RLA_Unit_Marksman_T2): CLASS(GM_Unit_Marksman_T2)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Marksman_T2);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
@@ -274,7 +274,7 @@ class CfgVehicles
 
     class CLASS(GM_RLA_Unit_SL): CLASS(GM_Unit_SL)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_SL);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -283,7 +283,7 @@ class CfgVehicles
     };
     class CLASS(GM_RLA_Unit_SL_T2): CLASS(GM_Unit_SL_T2)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_SL_T2);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};

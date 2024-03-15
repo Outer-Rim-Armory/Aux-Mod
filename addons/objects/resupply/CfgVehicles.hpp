@@ -12,7 +12,7 @@ class CfgVehicles
 
         displayName = "Crate";
 
-        editorCategory = QCLASS(Objects);
+        editorCategory = QEDCAT(Objects);
         editorSubcategory = QCLASS(EdSubcat_Resupply);
         editorPreview = EDITOR_PREVIEW(Resupply_Base);
 
