@@ -10,7 +10,7 @@
  * The CBA PFH id <NUMBER>
  *
  * Example:
- * call BNA_KC_jammer_fnc_jammerHandlerServer;
+ * call BNA_KC_jammers_fnc_jammerHandlerServer;
  *
  * Public: No
  */
@@ -23,13 +23,17 @@ if (!isServer) exitWith {};
 _function = {
     if (isGamePaused) then {continue;};
 
-    {_x call FUNC(removeJammerServer)} forEach (GVAR(activeJammers) select {!alive (_x#0)});
-    GVAR(activeJammers) = GVAR(activeJammers) select {!isNull (_x#0)};
+    [GVAR(activeJammers), {
+        if (!alive _key) then {
+            _key call FUNC(removeJammerServer);
+        };
+        alive _key;
+    }] call CBA_fnc_hashFilter;
     [QGVAR(updateInterference)] call CBA_fnc_globalEvent;
 };
 
 _condition = {
-    GVAR(activeJammers) isNotEqualTo [];
+    [GVAR(activeJammers)] call CBA_fnc_hashSize > 0;
 };
 
 _exitCode = {

@@ -23,7 +23,7 @@ class CfgVehicles
         author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
-        editorSubcategory = EDSUBCAT(Speeders);
+        editorSubcategory = QEDSUBCAT(Speeders);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,BARC);
 
         displayName = "BARC Speeder";

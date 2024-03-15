@@ -10,24 +10,25 @@
  * None
  *
  * Example:
- * call BNA_KC_jammer_fnc_updateInterference;
+ * call BNA_KC_jammers_fnc_updateInterference;
  *
  * Public: No
  */
 
-private ["_averageInterference"];
+private ["_fnc_updateInterference"];
 if (!hasInterface) exitWith {};
 
 INFO_1("Updating interference for %1",ace_player);
 
-// Jammers are tracked separately on server/client
-GVAR(activeJammers) = GVAR(activeJammers) select {!isNull (_x#0)};
+// Jammers are tracked separately on server/client - Might no longer be necessary after using CBA hash
+// GVAR(activeJammers) = GVAR(activeJammers) select {!isNull (_x#0)};
 
 _averageInterference = 1;
 
-{
-    _x params ["_jammer", "_radius", "_strength"];
-    private ["_distance", "_distanceFactor", "_signal", "_interference"];
+_fnc_updateInterference = {
+    private ["_jammer", "_distance", "_distanceFactor", "_signal", "_interference"];
+    _jammer = _key;
+    _value params ["_radius", "_strength"];
 
     if !(_jammer getVariable [QGVAR(isActive), false]) then {continue;};
 
@@ -38,13 +39,16 @@ _averageInterference = 1;
         _interference = _strength * (1 - _signal) * GVAR(interferenceFactor);
 
         if(_averageInterference != 1) then {
-            _averageInterference = _averageInterference max _specificInterference;
+            _averageInterference = _averageInterference max _interference;
             _averageInterference = CLAMP(_averageInterference,1,_strength);
         } else {
             _averageInterference = _interference;
         };
     };
-} forEach GVAR(activeJammers);
+    TRACE_7("updateInterference",_radius,_strength,_distance,_distanceFactor,_signal,_interference,_averageInterference);
+};
+
+[GVAR(activeJammers), _fnc_updateInterference] call CBA_fnc_hashEachPair;
 
 _averageInterference = 0.1 max _averageInterference;
 ace_player setVariable ["tf_receivingDistanceMultiplicator", _averageInterference];

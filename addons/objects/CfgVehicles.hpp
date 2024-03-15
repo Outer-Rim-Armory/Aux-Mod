@@ -8,7 +8,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        editorCategory = QCLASS(Objects);
+        editorCategory = QEDCAT(Objects);
         editorSubcategory = QCLASS(EdSubCat_Flags);
 
         displayName = "KC Flag (Pole)";
@@ -25,7 +25,7 @@ class CfgVehicles
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        editorCategory = QCLASS(Objects);
+        editorCategory = QEDCAT(Objects);
         editorSubcategory = QCLASS(EdSubCat_Flags);
 
         displayName = "KC Flag (Vertical)";
@@ -75,7 +75,7 @@ class CfgVehicles
         author = AUTHOR;
 
         // Editor Attributes
-        editorCategory = QCLASS(Objects);
+        editorCategory = QEDCAT(Objects);
         editorSubcategory = QCLASS(EdSubcat_Utility);
         editorPreview = EDITOR_PREVIEW(Gonk_Base);
 

@@ -3,7 +3,7 @@ class CLASS(Unit_Axel): CLASS(Unit_Phase2_Base)
 {
     displayName = "Axel";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Axel);
     hiddenSelectionsTextures[] =
@@ -27,7 +27,7 @@ class CLASS(Unit_Bob): CLASS(Unit_Phase2_Base)
 {
     displayName = "Bob";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Bob);
     hiddenSelectionsTextures[] =
@@ -51,7 +51,7 @@ class CLASS(Unit_Burnt): CLASS(Unit_Phase2_Base)
 {
     displayName = "Burnt";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Burnt);
     hiddenSelectionsTextures[] =
@@ -75,7 +75,7 @@ class CLASS(Unit_Catholic): CLASS(Unit_Phase2_Base)
 {
     displayName = "Catholic";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Catholic);
     hiddenSelectionsTextures[] =
@@ -99,7 +99,7 @@ class CLASS(Unit_Defter): CLASS(Unit_Phase2_Base)
 {
     displayName = "Defter";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Defter);
     hiddenSelectionsTextures[] =
@@ -124,7 +124,7 @@ class CLASS(Unit_Dexus): CLASS(Unit_Phase2_Base)
 {
     displayName = "Dexus";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Dexus);
     hiddenSelectionsTextures[] =
@@ -148,7 +148,7 @@ class CLASS(Unit_Drake): CLASS(Unit_Phase2_Base)
 {
     displayName = "Drake";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Drake);
     hiddenSelectionsTextures[] =
@@ -172,7 +172,7 @@ class CLASS(Unit_Hagrid): CLASS(Unit_Phase2_Base)
 {
     displayName = "Hagrid";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Hagrid);
     hiddenSelectionsTextures[] =
@@ -196,7 +196,7 @@ class CLASS(Unit_Joe): CLASS(Unit_Phase2_Base)
 {
     displayName = "Joe";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Joe);
     hiddenSelectionsTextures[] =
@@ -220,7 +220,7 @@ class CLASS(Unit_Keeli): CLASS(Unit_Phase2_Base)
 {
     displayName = "Keeli";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Keeli);
     hiddenSelectionsTextures[] =
@@ -266,7 +266,7 @@ class CLASS(Unit_Rat): CLASS(Unit_Phase2_Base)
 {
     displayName = "Rat";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Rat);
     hiddenSelectionsTextures[] =
@@ -290,7 +290,7 @@ class CLASS(Unit_Sin): CLASS(Unit_Phase2_Base)
 {
     displayName = "Sin";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Sin);
     hiddenSelectionsTextures[] =
@@ -314,7 +314,7 @@ class CLASS(Unit_Sogi): CLASS(Unit_Phase2_Base)
 {
     displayName = "Sogi";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Sogi);
     hiddenSelectionsTextures[] =
@@ -338,7 +338,7 @@ class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base)
 {
     displayName = "Tyrant";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Tyrant);
     hiddenSelectionsTextures[] =
