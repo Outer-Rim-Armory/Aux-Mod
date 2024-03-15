@@ -20,7 +20,7 @@ if (!hasInterface) exitWith {};
 
 INFO_1("Updating interference for %1",ace_player);
 
-// Jammers are tracked separately on server/client
+// Jammers are tracked separately on server/client - Might no longer be necessary after using CBA hash
 // GVAR(activeJammers) = GVAR(activeJammers) select {!isNull (_x#0)};
 
 _averageInterference = 1;
