@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_1rnd_WeaponName): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_1rnd_WeaponName): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] WeaponName Energy Cell";
         displayNameShort = "Standard Energy";

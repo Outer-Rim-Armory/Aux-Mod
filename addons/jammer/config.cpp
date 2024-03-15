@@ -1,17 +1,16 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class SUBADDON {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
-        addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QUOTE(ADDON),
-            QGVAR(weapons),
-            QGVAR(sounds)
+            QCLASS(core),
+            "TFAR_core"
         };
         units[] = {
+            QGVAR(communicationTower)
         };
         weapons[] = {};
         VERSION_CONFIG;
@@ -19,3 +18,4 @@ class CfgPatches {
 };
 
 #include "CfgVehicles.hpp"
+#include "CfgEventHandlers.hpp"

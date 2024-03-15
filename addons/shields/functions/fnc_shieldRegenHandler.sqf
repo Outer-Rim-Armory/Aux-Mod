@@ -9,7 +9,7 @@
  * 2: Health to regenerate on each successful regen <NUMBER>
  *
  * Return Value:
- * The CBA PFH id
+ * The CBA PFH id <NUMBER>
  *
  * Example:
  * [objectParent ace_player, 3, 3] call BNA_KC_shields_shieldRegenHandler;

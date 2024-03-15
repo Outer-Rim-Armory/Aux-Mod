@@ -141,6 +141,18 @@ class CfgVehicles
         backpack = "JLTS_B1_backpack";
     };
 
+    class CLASS(CIS_Unit_Droid_B1_Saboteur): CLASS(CIS_Unit_Droid_Base)
+    {
+        SCOPE_PUBLIC;
+
+        displayName = "B1 Saboteur Droid";
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Saboteur);
+
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Rocket);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_rocket_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Saboteur);
+    };
+
     class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base)
     {
         SCOPE_PUBLIC;
@@ -185,6 +197,30 @@ class CfgVehicles
         {
             QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
         };
+    };
+
+    class CLASS(Other_Backpack_Base);
+    class CLASS(CIS_Backpack_Droid_B1): CLASS(Other_Backpack_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[CIS] Battle Droid Backpack";
+
+        model = "\MRC\JLTS\characters\DroidArmor\DroidBackpackB1.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_backpack_co.paa"};
+        picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_backpack_ui_ca.paa";
+
+        tf_dialog = "JLTS_droid_lr_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_east_radio_code";
+        tf_hasLRradio = TRUE;
+        tf_range = 15000;
+        tf_subtype = "digital_lr";
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_Saboteur): CLASS(CIS_Backpack_Droid_B1) {
+        displayName = "[CIS] Battle Droid Backpack (Saboteur)";
+        hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\B1_Saboteur_co.paa)};
     };
 
     class CLASS(AAT_Base);
