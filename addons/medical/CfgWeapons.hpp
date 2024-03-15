@@ -2,8 +2,7 @@ class CfgWeapons
 {
     class CBA_MiscItem;
     class CBA_MiscItem_ItemInfo;
-    class CLASS(Deployable_MedicalDroid_Item): CBA_MiscItem
-    {
+    class CLASS(Deployable_MedicalDroid_Item): CBA_MiscItem {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -25,8 +24,7 @@ class CfgWeapons
     };
 
     class ACE_ItemCore;
-    class GVAR(Painkiller): ACE_ItemCore
-    {
+    class GVAR(Painkiller): ACE_ItemCore {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -39,8 +37,7 @@ class CfgWeapons
 
         ACE_isMedicalItem = TRUE;
 
-        class ItemInfo: CBA_MiscItem_ItemInfo
-        {
+        class ItemInfo: CBA_MiscItem_ItemInfo {
             mass = 0.5;
         };
     };

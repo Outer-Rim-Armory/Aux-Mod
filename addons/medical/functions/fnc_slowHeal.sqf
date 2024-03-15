@@ -15,6 +15,8 @@
  *
  * Examples:
  * [player, 10] call BNA_KC_medical_fnc_slowHeal;
+ *
+ * Public: Yes
  */
 
 params [

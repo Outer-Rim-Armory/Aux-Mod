@@ -1,8 +1,7 @@
 class CfgVehicles
 {
     class ThingX;
-    class CLASS(Deployable_MedicalDroid): ThingX
-    {
+    class CLASS(Deployable_MedicalDroid): ThingX {
         SCOPE_PUBLIC;
 
         displayName = "FX-7 Medical Droid";
@@ -24,8 +23,7 @@ class CfgVehicles
     };
 
     class ACE_MedicalLitterBase;
-    class GVAR(litter_Painkiller): ACE_MedicalLitterBase
-    {
+    class GVAR(litter_Painkiller): ACE_MedicalLitterBase {
         model = "\kobra\442_misc\medical\StimPerigen.p3d";
     };
 };

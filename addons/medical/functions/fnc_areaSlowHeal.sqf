@@ -14,12 +14,13 @@
  *    - Values < 0 signify no maximum number of patients.
  *
  * Return Value:
- * None
+ * CBA PFH id <NUMBER>
  *
  * Example:
  * [_source, 5, 0.5, -1] call BNA_KC_medical_fnc_areaSlowHeal;
+ *
+ * Public: Yes
  */
-
 
 params [
     ["_object", objNull, [objNull]],

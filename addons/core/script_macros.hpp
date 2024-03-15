@@ -108,7 +108,7 @@ scopeCurator = 0
 }
 
 // Conditions
-#define IS_STOPPED(var1) isTouchingGround var1 and {speed var1 < 1 and speed var1 > -1}
+#define IS_STOPPED(var1) speed var1 < 1 and {speed var1 > -1}
 
 // Weapon Types
 #define TYPE_WEAPON_PRIMARY 1

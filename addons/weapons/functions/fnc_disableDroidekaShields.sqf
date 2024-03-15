@@ -13,23 +13,22 @@
  *
  * Examples:
  * [[_tasDroidekas], [_shieldObjects]] call BNA_KC_weapons_fnc_disableDroidekaShields;
+ *
+ * Public: Yes
  */
 
 params [
-    ["_droidekas", []],
-    ["_shields", []]
+    ["_droidekas", [], [[]]],
+    ["_shields", [], [[]]]
 ];
 TRACE_2("fnc_disableDroidekaShields",_droidekas,_shields);
 
 if (!GVAR(empDisableDroidkaShields)) exitWith {};
-
-// Faster to not check the array counts and to just loop over an empty array
 
 {
     _x setHitPointDamage ["HitShield", 1];
     _x animateSource ["ShieldLayer_BaseFront", 1, true]; // Shield won't update until hit or animated
 } forEach _droidekas;
 
-{
-    deleteVehicle _x;
-} forEach _shields;
+{deleteVehicle _x;} forEach _shields;
+nil;

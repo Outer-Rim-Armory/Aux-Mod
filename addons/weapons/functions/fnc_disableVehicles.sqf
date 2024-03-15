@@ -13,23 +13,24 @@
  *
  * Examples:
  * [[vehicle1, vehicle2], 10] call BNA_KC_weapons_fnc_disableVehicles;
+ *
+ * Public: Yes
  */
 
 params [
-    ["_vehicles", []],
+    ["_vehicles", [], [[]]],
     ["_time", 0, [0]]
 ];
-private [];
 
 _vehicles = _vehicles select {
-    private _canBeDisabled = getNumber (configOf _x >> QGVAR(empCanBeDisabled));
-    _canBeDisabled isEqualTo TRUE;
+    getNumber (configOf _x >> QGVAR(empCanBeDisabled)) isEqualTo TRUE;
 };
 
 TRACE_2("fnc_disableVehicles",_vehicles,_time);
 
-if (count _vehicles isEqualTo 0) exitWith {};
-if (_time <= 0) exitWith {};
+if (_vehicles isEqualTo [] or
+    {_time <= 0}
+) exitWith {};
 
 {
     private ["_vehicle", "_fuel", "_magsDriver", "_magsTurrets"];
@@ -77,3 +78,4 @@ if (_time <= 0) exitWith {};
         _time
     ] call CBA_fnc_waitAndExecute;
 } forEach _vehicles;
+nil;

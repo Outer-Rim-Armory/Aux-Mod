@@ -11,6 +11,8 @@
  *
  * Examples:
  * [unit1, unit2] call BNA_KC_weapons_fnc_droidDeath;
+ *
+ * Public: Yes
  */
 
 params [
@@ -20,11 +22,7 @@ params [
 private [];
 
 _units = _units select {
-    private _isDroid = [
-        configFile >> "CfgWeapons" >> uniform _x,
-        QGVARMAIN(isDroidArmor),
-        FALSE
-    ] call BIS_fnc_returnConfigEntry;
+    private _isDroid = getNumber (configFile >> uniform _x >> "JLTS_isDroid");
     _isDroid isEqualTo TRUE or (toLowerAnsi typeOf _x find "b1") > 0;
 };
 
@@ -44,3 +42,4 @@ if (count _units isEqualTo 0) exitWith {};
         75
     ];
 } forEach _units;
+nil;

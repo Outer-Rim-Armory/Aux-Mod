@@ -12,7 +12,7 @@
  * Examples:
  * ["ace_medical_blood_bloodDropCreated", LINKFUNC(bloodDropCreated)] call CBA_fnc_addEventHandler;
  *
- * Public: Yes
+ * Public: No
  */
 
 params [
