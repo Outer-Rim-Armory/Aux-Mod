@@ -8,7 +8,8 @@ class CLASS(Helmet_Phase1_Pilot_Mischief): CLASS(Helmet_Phase1_Pilot_Base)
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\phase1Pilot\Mischief_camo1_co.paa),
-        QPATHTOF(data\helmets\phase1Pilot\Mischief_camo2_co.paa)
+        QPATHTOF(data\helmets\phase1Pilot\Mischief_camo2_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
     };
     GVAR(isCustom) = TRUE;
     class XtdGearInfo
