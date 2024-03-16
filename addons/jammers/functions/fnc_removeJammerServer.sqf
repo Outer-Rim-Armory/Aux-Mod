@@ -15,15 +15,14 @@
  * Public: No
  */
 
-params ["_jammer"];
-private ["_index"];
+params ["_hash", "_jammer"];
 TRACE_1("fnc_removeJammerServer",_jammer);
 
 if (!isServer) exitWith {WARNING("fnc_removeJammerServer called from non-server context"); false;};
 if (isNull _jammer) exitWith {false};
 
-[GVAR(activeJammers), _jammer] call CBA_fnc_hashRem;
+GVAR(activeJammers) deleteAt _hash;
 _jammer setVariable [QGVAR(isActive), nil, true];
 
-[QGVAR(removeJammerLocal), _jammer] call CBA_fnc_globalEvent;
+[QGVAR(removeJammerLocal), _hash] call CBA_fnc_globalEvent;
 true;

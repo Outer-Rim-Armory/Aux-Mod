@@ -15,20 +15,20 @@
  * Public: No
  */
 
-private ["_fnc_updateInterference"];
+private ["_averageInterference"];
 if (!hasInterface) exitWith {};
 
 INFO_1("Updating interference for %1",ace_player);
 
-// Jammers are tracked separately on server/client - Might no longer be necessary after using CBA hash
-// GVAR(activeJammers) = GVAR(activeJammers) select {!isNull (_x#0)};
-
 _averageInterference = 1;
 
-_fnc_updateInterference = {
-    private ["_jammer", "_distance", "_distanceFactor", "_signal", "_interference"];
-    _jammer = _key;
-    _value params ["_radius", "_strength"];
+{
+    (GVAR(activeJammers) get _x) params ["_jammer", "_radius", "_strength"];
+    private ["_distance", "_distanceFactor", "_signal", "_interference"];
+
+    if (isNull _jammer) then {
+        GVAR(activeJammers) deleteAt _x;
+    };
 
     if !(_jammer getVariable [QGVAR(isActive), false]) then {continue;};
 
@@ -46,9 +46,7 @@ _fnc_updateInterference = {
         };
     };
     TRACE_7("updateInterference",_radius,_strength,_distance,_distanceFactor,_signal,_interference,_averageInterference);
-};
-
-[GVAR(activeJammers), _fnc_updateInterference] call CBA_fnc_hashEachPair;
+} forEach keys GVAR(activeJammers);
 
 _averageInterference = 0.1 max _averageInterference;
 ace_player setVariable ["tf_receivingDistanceMultiplicator", _averageInterference];

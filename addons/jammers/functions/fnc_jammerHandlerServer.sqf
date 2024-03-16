@@ -23,21 +23,22 @@ if (!isServer) exitWith {};
 _function = {
     if (isGamePaused) then {continue;};
 
-    [GVAR(activeJammers), {
-        if (!alive _key) then {
-            _key call FUNC(removeJammerServer);
+    {
+        _y params ["_jammer"];
+        if (isNull _jammer or {!alive _jammer}) then {
+            [_x, _jammer] call FUNC(removeJammerServer);
+            GVAR(activeJammers) deleteAt _x; // Manual removal for null objects
         };
-        alive _key;
-    }] call CBA_fnc_hashFilter;
-    [QGVAR(updateInterference)] call CBA_fnc_globalEvent;
+    } forEach GVAR(activeJammers);
+    [QGVAR(updateInterference)] call CBA_fnc_globalEvent; // TODO: Switch to client PFH?
 };
 
 _condition = {
-    [GVAR(activeJammers)] call CBA_fnc_hashSize > 0;
+    count GVAR(activeJammers) > 0;
 };
 
 _exitCode = {
-    INFO("No active jammers left, removing server PFH");
+    INFO("No active jammers left, removing server PFH.");
     GVAR(jammerHandler) = -1;
 };
 

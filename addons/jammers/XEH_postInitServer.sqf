@@ -1,6 +1,6 @@
 #include "script_component.hpp"
 
-GVAR(activeJammers) = [] call CBA_fnc_hashCreate;
+GVAR(activeJammers) = createHashmap;
 GVAR(jammerHandler) = -1;
 
 ["CBA_settingsInitialized", {
