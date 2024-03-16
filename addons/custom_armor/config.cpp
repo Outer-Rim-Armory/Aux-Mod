@@ -290,6 +290,7 @@ class CfgPatches
             QCLASS(Vest_Kama_Keeli),
             QCLASS(Vest_Officer_Ponds),
             QCLASS(Vest_Officer_Rat),
+            QCLASS(Vest_Kama_Rat),
             QCLASS(Vest_WO_Howzer),
             QCLASS(NVG_phase2_Officer_Keeli)
         };
