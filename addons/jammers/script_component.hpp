@@ -1,4 +1,4 @@
-#define COMPONENT jammer
+#define COMPONENT jammers
 #define COMPONENT_BEAUTIFIED Radio Jammer
 #include "\ORA\BNA_KC\addons\core\script_mod.hpp"
 
