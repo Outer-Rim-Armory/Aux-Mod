@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 GVAR(activeJammers) = createHashmap;
-GVAR(jammerHandler) = -1;
+GVAR(jammerHandlerClient) = -1;
 GVAR(interferenceFactor) = 0.625;
 
 ["CBA_settingsInitialized", {
@@ -11,8 +11,8 @@ GVAR(interferenceFactor) = 0.625;
         if (isServer) exitWith {}; // For singleplayer
         GVAR(activeJammers) set [_hash, [_jammer, _radius, _strength]];
 
-        if (GVAR(jammerHandler) < 0) then {
-            GVAR(jammerHandler) = [] call FUNC(jammerHandlerClient);
+        if (GVAR(jammerHandlerClient) < 0) then {
+            GVAR(jammerHandlerClient) = [] call FUNC(jammerHandlerClient);
         };
     }] call CBA_fnc_addEventHandler;
 

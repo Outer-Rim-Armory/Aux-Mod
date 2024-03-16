@@ -33,8 +33,8 @@ _hash = hashValue _jammer;
 GVAR(activeJammers) set [_hash, [_jammer, _radius, _strength]];
 _jammer setVariable [QGVAR(isActive), _isActive, true];
 
-if (GVAR(jammerHandler) < 0) then {
-    GVAR(jammerHandler) = [] call FUNC(jammerHandlerServer);
+if (GVAR(jammerHandlerServer) < 0) then {
+    GVAR(jammerHandlerServer) = [] call FUNC(jammerHandlerServer);
 };
 
 [QGVAR(addJammerLocal), [_hash, _jammer, _radius, _strength]] call CBA_fnc_globalEvent;

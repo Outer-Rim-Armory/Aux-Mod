@@ -38,7 +38,7 @@ _condition = {
 
 _exitCode = {
     INFO("No active jammers left, removing server PFH.");
-    GVAR(jammerHandler) = -1;
+    GVAR(jammerHandlerServer) = -1;
 };
 
 _jammerHandler = [

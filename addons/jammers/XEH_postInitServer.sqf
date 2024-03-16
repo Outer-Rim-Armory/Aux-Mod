@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 GVAR(activeJammers) = createHashmap;
-GVAR(jammerHandler) = -1;
+GVAR(jammerHandlerServer) = -1;
 
 ["CBA_settingsInitialized", {
     [QGVAR(addJammer), LINKFUNC(addJammerServer)] call CBA_fnc_addEventHandler;
