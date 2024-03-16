@@ -25,11 +25,11 @@ _function = {
 
     {
         _y params ["_jammer"];
-        if (isNull _jammer or {!alive _jammer}) then {
-            [_x, _jammer] call FUNC(removeJammerServer);
-            GVAR(activeJammers) deleteAt _x; // Manual removal for null objects
+        if (isNull _jammer) then {
+            GVAR(activeJammers) deleteAt _x;
         };
     } forEach GVAR(activeJammers);
+    [] call FUNC(updateInterference);
 };
 
 _condition = {
@@ -37,7 +37,7 @@ _condition = {
 };
 
 _exitCode = {
-    INFO("No active jammers left, removing server PFH.");
+    INFO("No active jammers left, removing client PFH.");
     GVAR(jammerHandler) = -1;
 };
 
