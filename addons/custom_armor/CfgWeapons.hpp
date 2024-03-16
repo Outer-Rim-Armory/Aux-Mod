@@ -26,6 +26,22 @@ class CfgWeapons
         };
 
         GVAR(isCustom) = TRUE;
+        class ItemInfo;
+    };
+
+    class CLASS(Vest_Kama_Keeli): CLASS(Vest_Commander_Keeli)
+    {
+        displayName = "[KC] INF Vest (Kama, 'Keeli')";
+        model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\officer\Keeli_camo1_co.paa),
+            "SWLB_Clones\data\mc_camo1_co.paa"
+        };
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+            hiddenSelections[] = {"camo1", "camo2"};
+        };
     };
 
     class CLASS(Vest_Basic);
@@ -48,6 +64,7 @@ class CfgWeapons
             containerClass = "Supply250"; // To match medic vests
         };
     };
+
     class CLASS(Vest_Officer_Rat): CLASS(Vest_Officer)
     {
         displayName = "[KC] INF Vest ('Rat')";
