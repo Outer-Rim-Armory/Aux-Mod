@@ -76,6 +76,21 @@ class CfgWeapons
         GVAR(isCustom) = TRUE;
     };
 
+    class CLASS(Vest_Kama_Rat): CLASS(Vest_Officer_Rat)
+    {
+        displayName = "[KC] INF Vest (Kama, 'Rat')";
+        model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\officer\Rat_camo1_co.paa),
+            "SWLB_Clones\data\mc_camo1_co.paa"
+        };
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+            hiddenSelections[] = {"camo1", "camo2"};
+        };
+    };
+
     class CLASS(Vest_WO);
     class CLASS(Vest_WO_Howzer): CLASS(Vest_WO)
     {
