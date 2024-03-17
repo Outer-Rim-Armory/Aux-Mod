@@ -95,6 +95,7 @@ class CfgVehicles {
     };
 
     class CLASS(CIS_Unit_Droid_B1): CLASS(CIS_Unit_Droid_Base) {
+        SCOPE_PUBLIC;
         displayName = "B1 Battle Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1);
 
