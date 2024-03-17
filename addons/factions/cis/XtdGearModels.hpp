@@ -11,6 +11,7 @@ class XtdGearModels {
                 values[] = {
                     "Standard",
                     "Marine",
+                    "Security",
                     "Commander",
                     "Crew",
                     "Pilot",
@@ -19,6 +20,7 @@ class XtdGearModels {
 
                 class Standard { label = "Standard"; };
                 class Marine { label = "Marine"; };
+                class Security { label = "Security"; };
                 class Commander { label = "Commander"; };
                 class Crew { label = "Crew"; };
                 class Pilot { label = "Pilot"; };
