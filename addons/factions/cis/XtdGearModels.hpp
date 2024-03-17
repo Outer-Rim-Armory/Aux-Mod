@@ -9,11 +9,15 @@ class XtdGearModels {
                 changeInGame = FALSE;
                 values[] = {
                     "Standard",
+                    "Marine",
+                    "Commander",
                     "Crew",
                     "Saboteur"
                 };
 
                 class Standard { label = "Standard"; };
+                class Marine { label = "Crew"Marine };
+                class Commander { label = "Commander"; };
                 class Crew { label = "Crew"; };
                 class Saboteur { label = "Saboteur"; };
             };

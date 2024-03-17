@@ -110,6 +110,17 @@ class CfgVehicles {
         backpack = "JLTS_B1_backpack";
     };
 
+    class CLASS(CIS_Unit_Droid_B1_Marine): CLASS(CIS_Unit_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "B1 Marine Droid";
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Marine);
+
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Marine);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_marine_co.paa"};
+        backpack = "JLTS_B1_backpack";
+    };
+
     class CLASS(CIS_Unit_Droid_B1_Commander): CLASS(CIS_Unit_Droid_Base) {
         SCOPE_PUBLIC;
 
