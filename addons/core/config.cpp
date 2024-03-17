@@ -13,13 +13,19 @@ class CfgPatches
             "cba_main",
             "ace_common"
         };
-        units[] = {};
-        weapons[] = {};
+        units[] = {
+            QUOTE(DOUBLES(Ground,CLASS(Holder_Base)))
+        };
+        weapons[] = {
+            QCLASS(ItemCore),
+            QCLASS(ItemCore_ItemInfo)
+        };
         VERSION_CONFIG;
     };
 };
 
 #include "CfgEditorCategories.hpp"
 #include "CfgEditorSubcategories.hpp"
+#include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
