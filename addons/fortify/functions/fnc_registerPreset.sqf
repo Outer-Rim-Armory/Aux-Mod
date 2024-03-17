@@ -1,34 +1,39 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Registers the selected preset and budget from CBA settings
+ * Registers a given preset and budget to a specific side(s).
  *
  * Arguments:
- * None
+ * 0: Class name from ACEX_Fortify_Presets <STRING>
+ * 1: Budget to use <NUMBER>
+ * 2: What side(s) to load the preset for (optional, default: [west]) <SIDE|ARRAY>
+ *    - Can be side or array of sides
  *
  * Return Value:
- * None
+ * True if a preset was loaded, otherwise false <BOOL>
  *
  * Example:
- * call FUNC(registerPreset);
+ * ["BNA_KC_fortify_Common", 100] call BNA_KC_fortify_fnc_registerPreset;
+ *
+ * Public: Yes
  */
 
-params [];
-private ["_allObjects", "_presets"];
-INFO("fnc_registerPreset");
+params [
+    ["_preset", "", [""]],
+    ["_budget", -1, [0]],
+    ["_sides", [west], [sideUnknown, []]]
+];
+private ["_allObjects", "_subPresets"];
+TRACE_3("fnc_registerPreset",_preset,_budget,_sides);
 
-{
-    [_x, 0, []] call acex_fortify_fnc_registerObjects;
-} forEach [west, east, independent];
+if (_preset isEqualTo "" or {_budget < 0}) exitWith {false};
 
-if (GVAR(preset) isEqualTo "Disabled") exitWith {};
+if !(_sides isEqualType []) then {
+    _sides = [_sides];
+};
 
 _allObjects = [];
-_presets = [
-    configFile >> "ACEX_Fortify_Presets" >> GVAR(preset),
-    "presets",
-    []
-] call BIS_fnc_returnConfigEntry;
+_subPresets = getArray (configFile >> "ACEX_Fortify_Presets" >> _preset >> "presets");
 
 {
     private ["_objects", "_presetName"];
@@ -37,20 +42,17 @@ _presets = [
     {_x pushBack _presetName} forEach _objects;
 
     _allObjects append _objects;
-} foreach _presets;
+} foreach _subPresets;
 
-_objects = [
-    configFile >> "ACEX_Fortify_Presets" >> GVAR(preset),
-    "objects",
-    []
-] call BIS_fnc_returnConfigEntry;
+_objects = getArray (configFile >> "ACEX_Fortify_Presets" >> _preset >> "objects");
 
 _allObjects append _objects;
 
 {
     [
         _x,
-        parseNumber GVAR(budget),
+        _budget,
         _allObjects
     ] call acex_fortify_fnc_registerObjects;
-} forEach GVAR(sides);
+} forEach _sides;
+true;
