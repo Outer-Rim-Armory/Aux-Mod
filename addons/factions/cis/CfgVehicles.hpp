@@ -109,6 +109,8 @@ class CfgVehicles {
         displayName = "B1 Heavy Droid";
         icon = "JLTS_iconManSupportGunner";
 
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Heavy);
+
         weapons[] = {
             QCLASS(E5C_Stock),
             "Throw",
@@ -177,7 +179,7 @@ class CfgVehicles {
         };
         respawnWeapons[] = {
             QCLASS(E5),
-            QCLASS(E60R_AT),
+            QCLASS(E60R_AA),
             "Throw",
             "Put"
         };
@@ -194,9 +196,11 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Marksman): CLASS(CIS_Unit_Droid_B1) {
-        displayName = "B1 Heavy Droid";
+    class CLASS(CIS_Unit_Droid_B1_Sniper): CLASS(CIS_Unit_Droid_B1) {
+        displayName = "B1 Sniper Droid";
         icon = "JLTS_iconManSniper";
+
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Sniper);
 
         weapons[] = {
             QCLASS(E5S),
@@ -225,7 +229,31 @@ class CfgVehicles {
 
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Marine);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_marine_co.paa"};
-        backpack = QCLASS(CIS_Backpack_Droid_B1);
+        backpack = QCLASS(CIS_Backpack_Droid_B1_predef_HE);
+
+        weapons[] = {
+            QCLASS(E5),
+            QCLASS(E60R_AT),
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] = {
+            QCLASS(E5),
+            QCLASS(E60R_AT),
+            "Throw",
+            "Put"
+        };
+
+        magazines[] = {
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
+            QCLASS(Mag_1rnd_E60R_HE_AI),
+            "ls_mag_classC_thermalDet"
+        };
+        respawnMagazines[] = {
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
+            QCLASS(Mag_1rnd_E60R_HE_AI),
+            "ls_mag_classC_thermalDet"
+        };
     };
 
     class CLASS(CIS_Unit_Droid_B1_Security): CLASS(CIS_Unit_Droid_B1) {
@@ -358,6 +386,13 @@ class CfgVehicles {
         tf_hasLRradio = TRUE;
         tf_range = 15000;
         tf_subtype = "digital_lr";
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_predef_HE): CLASS(CIS_Backpack_Droid_B1) {
+        SCOPE_HIDDEN;
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_1rnd_E60R_HE),3);
+        };
     };
 
     class CLASS(CIS_Backpack_Droid_B1_predef_AT): CLASS(CIS_Backpack_Droid_B1) {

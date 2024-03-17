@@ -18,7 +18,7 @@ class CfgPatches {
             QCLASS(CIS_Unit_Droid_B1_Heavy),
             QCLASS(CIS_Unit_Droid_B1_AT),
             QCLASS(CIS_Unit_Droid_B1_AA),
-            QCLASS(CIS_Unit_Droid_B1_Marksman),
+            QCLASS(CIS_Unit_Droid_B1_Sniper),
             QCLASS(CIS_Unit_Droid_B1_Marine),
             QCLASS(CIS_Unit_Droid_B1_Security),
             QCLASS(CIS_Unit_Droid_B1_Commander),
