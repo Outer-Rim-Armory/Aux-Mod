@@ -201,6 +201,18 @@ class CfgVehicles {
         backpack = "JLTS_B1_antenna_Geonosis";
     };
 
+    class CLASS(CIS_Unit_Droid_B1_Training): CLASS(CIS_Unit_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "B1 Battle Droid";
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
+
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Training);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"};
+        backpack = "JLTS_B1_backpack_Training";
+    };
+
     class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
         SCOPE_PUBLIC;
 

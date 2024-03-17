@@ -26,6 +26,7 @@ class XtdGearModels {
                 class Saboteur { label = "Saboteur"; };
                 class Standard_Geonosis { label = "Standard (Geo)"; };
                 class Commander_Geonosis { label = "Commander (Geo)"; };
+                class Standard_Training { label = "Standard (Training)"; };
             };
         };
     };

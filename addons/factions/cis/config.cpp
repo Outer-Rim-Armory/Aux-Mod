@@ -23,6 +23,7 @@ class CfgPatches {
             QCLASS(CIS_Unit_Droid_B1_Saboteur),
             QCLASS(CIS_Unit_Droid_B1_Geonosis),
             QCLASS(CIS_Unit_Droid_B1_Commander_Geonosis),
+            QCLASS(CIS_Unit_Droid_B1_Training),
             QCLASS(CIS_Unit_Droid_BX),
             QCLASS(CIS_Backpack_Droid_B1),
             QCLASS(CIS_Backpack_Droid_B1_Saboteur),
@@ -40,6 +41,7 @@ class CfgPatches {
             QCLASS(CIS_Uniform_Droid_B1_Saboteur),
             QCLASS(CIS_Uniform_Droid_B1_Geonosis),
             QCLASS(CIS_Uniform_Droid_B1_Commander_Geonosis),
+            QCLASS(CIS_Uniform_Droid_B1_Training),
             QCLASS(CIS_Uniform_Droid_BX),
             QCLASS(CIS_Vest_Droid_BX),
             QCLASS(CIS_Vest_Droid_BX_Actor)

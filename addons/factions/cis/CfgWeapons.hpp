@@ -62,6 +62,21 @@ class CfgWeapons
 
     B1_VARIANT_UNIFORM(Commander,Geonosis);
 
+    class CLASS(CIS_Uniform_Droid_B1_Training): CLASS(CIS_Uniform_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[CIS] B1 Battle Droid (Training)";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(CIS_Unit_Droid_B1_Training);
+        };
+
+        class XtdGearInfo {
+            model = QCLASS(CIS_Uniforms_B1);
+            camo = "Standard_Training";
+        };
+    };
+
     class CLASS(CIS_Uniform_Droid_BX): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;
 
