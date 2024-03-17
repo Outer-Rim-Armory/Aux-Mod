@@ -12,6 +12,7 @@ class XtdGearModels {
                     "Marine",
                     "Commander",
                     "Crew",
+                    "Pilot",
                     "Saboteur"
                 };
 
@@ -19,6 +20,7 @@ class XtdGearModels {
                 class Marine { label = "Crew"Marine };
                 class Commander { label = "Commander"; };
                 class Crew { label = "Crew"; };
+                class Pilot { label = "Pilot"; };
                 class Saboteur { label = "Saboteur"; };
             };
         };
