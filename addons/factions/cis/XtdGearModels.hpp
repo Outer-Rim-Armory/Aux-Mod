@@ -3,9 +3,10 @@ class XtdGearModels {
         class CLASS(CIS_Uniforms_B1) {
             label = "B1 Battle Droid";
             author = AUTHOR;
-            options[] = {"camo"};
+            options[] = {"camo", "variant"};
 
             class camo {
+                label = "Role";
                 changeInGame = FALSE;
                 values[] = {
                     "Standard",
@@ -13,9 +14,7 @@ class XtdGearModels {
                     "Commander",
                     "Crew",
                     "Pilot",
-                    "Saboteur",
-                    "Standard_Geonosis",
-                    "Commander_Geonosis"
+                    "Saboteur"
                 };
 
                 class Standard { label = "Standard"; };
@@ -24,9 +23,20 @@ class XtdGearModels {
                 class Crew { label = "Crew"; };
                 class Pilot { label = "Pilot"; };
                 class Saboteur { label = "Saboteur"; };
-                class Standard_Geonosis { label = "Standard (Geo)"; };
-                class Commander_Geonosis { label = "Commander (Geo)"; };
-                class Standard_Training { label = "Standard (Training)"; };
+            };
+
+            class variant {
+                label = "Variant";
+                changeInGame = FALSE;
+                values[] = {
+                    "Standard",
+                    "Geonosis",
+                    "Training"
+                };
+
+                class Standard { label = "Standard"; };
+                class Geonosis { label = "Geonosis"; };
+                class Training { label = "Training"; };
             };
         };
     };

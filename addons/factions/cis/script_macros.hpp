@@ -7,6 +7,7 @@
     class XtdGearInfo { \
         model = QCLASS(CIS_Uniforms_B1); \
         camo = QUOTE(var1); \
+        variant = "Standard"; \
     }; \
 }
 
@@ -19,6 +20,7 @@
     }; \
     class XtdGearInfo { \
         model = QCLASS(CIS_Uniforms_B1); \
-        camo = QUOTE(DOUBLES(var1,var2)); \
+        camo = QUOTE(var1); \
+        variant = QUOTE(var2); \
     }; \
 }

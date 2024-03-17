@@ -35,6 +35,7 @@ class CfgWeapons
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_B1);
             camo = "Standard";
+            variant = "Standard";
         };
     };
 
@@ -56,7 +57,8 @@ class CfgWeapons
 
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_B1);
-            camo = "Standard_Geonosis";
+            camo = "Standard";
+            variant = "Geonosis";
         };
     };
 
@@ -73,7 +75,8 @@ class CfgWeapons
 
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_B1);
-            camo = "Standard_Training";
+            camo = "Standard";
+            variant = "Training";
         };
     };
 
