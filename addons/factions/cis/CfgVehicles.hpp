@@ -105,11 +105,21 @@ class CfgVehicles {
         displayName = "B1 Battle Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1);
 
-        editorPreview = "\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_E5.jpg";
-
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"};
-
         backpack = "JLTS_B1_backpack";
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_Commander): CLASS(CIS_Unit_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "B1 Commander Droid";
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Commander);
+        icon = "iconManOfficer";
+
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_commander_co.paa"};
+        backpack = "JLTS_B1_antenna";
     };
 
     class CLASS(CIS_Unit_Droid_B1_Crew): CLASS(CIS_Unit_Droid_Base) {

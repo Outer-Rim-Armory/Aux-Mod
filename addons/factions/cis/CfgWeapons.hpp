@@ -38,6 +38,7 @@ class CfgWeapons
         };
     };
 
+    B1_UNIFORM(Commander);
     B1_UNIFORM(Crew);
     B1_UNIFORM(Saboteur);
 
