@@ -19,21 +19,23 @@
  */
 
 params ["_jammer", "_radius", "_strength", "_isActive"];
+private ["_hash"];
 TRACE_4("fnc_addJammerServer",_jammer,_radius,_strength,_isActive);
 
 if (!isServer or
     {!alive _jammer} or
     {_radius < 0} or
     {_strength < 0} or
-    {[GVAR(activeJammers), _jammer] call CBA_fnc_hashHasKey}
+    {hashValue _jammer in GVAR(activeJammers)}
 ) exitWith {false;};
 
-[GVAR(activeJammers), _jammer, [_radius, _strength]] call CBA_fnc_hashSet;
+_hash = hashValue _jammer;
+GVAR(activeJammers) set [_hash, [_jammer, _radius, _strength]];
 _jammer setVariable [QGVAR(isActive), _isActive, true];
 
-if (GVAR(jammerHandler) < 0) then {
-    GVAR(jammerHandler) = [] call FUNC(jammerHandlerServer);
+if (GVAR(jammerHandlerServer) < 0) then {
+    GVAR(jammerHandlerServer) = [] call FUNC(jammerHandlerServer);
 };
 
-[QGVAR(addJammerLocal), [_jammer, _radius, _strength]] call CBA_fnc_globalEvent;
+[QGVAR(addJammerLocal), [_hash, _jammer, _radius, _strength]] call CBA_fnc_globalEvent;
 true;

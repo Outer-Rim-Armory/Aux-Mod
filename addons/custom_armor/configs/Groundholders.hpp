@@ -123,7 +123,7 @@ GROUND_HOLDER(Helmet_ARF_Rev,"SF ARF Helm ('Rev')");
 GROUND_HOLDER(Helmet_ARF_Sogi,"SF ARF Helm ('Sogi')");
 GROUND_HOLDER(Helmet_ARF_Tugz,"SF ARF Helm ('Tugz')");
 
-GROUND_HOLDER(Helmet_BARC_Keeli,"SF BARC Helm ('Keeli')");
-GROUND_HOLDER(Helmet_BARC_KeeliCrimson,"SF BARC Helm ('Keeli') [Crimson Visor]");
-GROUND_HOLDER(Helmet_BARC_Rat,"SF BARC Helm ('Rat')");
-GROUND_HOLDER(Helmet_BARC_RatCrimson,"SF BARC Helm ('Rat') [Crimson Visor]");
+GROUND_HOLDER(Helmet_BARC_Keeli,"INF BARC Helm ('Keeli')");
+GROUND_HOLDER(Helmet_BARC_KeeliCrimson,"INF BARC Helm ('Keeli') [Crimson Visor]");
+GROUND_HOLDER(Helmet_BARC_Rat,"INF BARC Helm ('Rat')");
+GROUND_HOLDER(Helmet_BARC_RatCrimson,"INF BARC Helm ('Rat') [Crimson Visor]");

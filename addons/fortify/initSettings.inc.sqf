@@ -14,8 +14,6 @@ _presetDisplayNames = _presetNames apply {
     ] call BIS_fnc_returnConfigEntry;
     _name;
 };
-_presetNames insert [0, ["Disabled"]];
-_presetDisplayNames insert [0, ["Disabled"]];
 
 [
     QGVAR(preset),
@@ -23,8 +21,7 @@ _presetDisplayNames insert [0, ["Disabled"]];
     ["Preset", "Select what preset to use with ACE's Fortify System, or to disable it."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     [_presetNames, _presetDisplayNames, 2],
-    TRUE,
-    {call FUNC(registerPreset);}
+    TRUE
 ] call CBA_fnc_addSetting;
 
 [
@@ -37,8 +34,7 @@ _presetDisplayNames insert [0, ["Disabled"]];
         ["BLUFOR", "OPFOR", "INDEP", "BLU/OPFOR", "All Sides"],
         0
     ],
-    TRUE,
-    {call FUNC(registerPreset);}
+    TRUE
 ] call CBA_fnc_addSetting;
 
 [
@@ -47,6 +43,5 @@ _presetDisplayNames insert [0, ["Disabled"]];
     ["Budget", "Budget for ACE Fortify."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     "100", // Kept as edit box for nicer ui
-    TRUE,
-    {call FUNC(registerPreset);}
+    TRUE
 ] call CBA_fnc_addSetting;

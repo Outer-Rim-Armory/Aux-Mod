@@ -495,6 +495,12 @@ class CfgWeapons
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\DC15X\data\DC15X_scope_co.paa"};
         picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_scope_ui_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            class OpticsModes: OpticsModes {
+                class Scope: Scope {};
+            };
+        };
     };
 
     class CLASS(Optic_WestarM5): CLASS(Optic_Base)

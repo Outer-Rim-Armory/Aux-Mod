@@ -9,13 +9,13 @@
     insertChildren = QUOTE(call FUNC(skin_insertChildren)); \
 }
 
-#define AI_CREW_SPAWNER class SpawnCrew \
+#define AI_CREW_SPAWNER class GVAR(SpawnCrew) \
 { \
     displayName = "Create Vehicle Crew"; \
     condition = QUOTE(_this#0 call FUNC(canSpawnCrew)); \
     statement = QUOTE((group ace_player) createVehicleCrew _this#0); \
 }; \
-class DeleteCrew \
+class GVAR(DeleteCrew) \
 { \
     displayName = "Delete Vehicle Crew"; \
     condition = QUOTE(_this#0 call FUNC(canDeleteCrew)); \

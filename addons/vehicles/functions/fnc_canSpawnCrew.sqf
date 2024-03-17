@@ -10,7 +10,7 @@
  * True if AI can be spawned, false otherwise <BOOL>
  *
  * Examples:
- * [vehicle ace_player] call FUNC(canSpawnCrew);
+ * [vehicle ace_player] call BNA_KC_vehicles_fnc_canSpawnCrew;
  *
  * Public: Yes
  */

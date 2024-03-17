@@ -1,23 +1,24 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Inserts child actions for each of a vehicle's TextureSources
+ * Inserts child actions for each of a vehicle's TextureSources.
  *
  * Arguments:
- * See https://ace3.acemod.org/wiki/framework/interactionmenu-framework
+ * 0: The vehicle <OBJECT>
+ * 1: The player attempting to change the texture <OBJECT>
  *
  * Return Value:
  * Child actions <ARRAY>
  *
  * Examples:
- * insertChildren = call FUNC(skin_insertChildren);
+ * insertChildren = call BNA_KC_vehicles_fnc_skin_insertChildren;
  *
  * Public: Yes
  */
 
-params ["_target", "_player", "_params"];
+params ["_target", "_player"];
 private ["_actions", "_textureSources"];
-TRACE_3("fnc_skin_insertChildren",_target,_player,_params);
+TRACE_2("fnc_skin_insertChildren",_target,_player);
 
 _actions = [];
 _textureSources = configProperties [configOf _target >> "TextureSources"];

@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Creates a map marker on the player's position.
+ * Child actions for "Mark Self" interaction.
  *
  * Arguments:
  * See https://ace3.acemod.org/wiki/framework/interactionmenu-framework
@@ -10,9 +10,9 @@
  * Sub-actions <ARRAY>
  *
  * Example:
- * insertChildren = QUOTE(call FUNC(markSelfInsertChildren));
+ * insertChildren = "call BNA_KC_map_fnc_insertChildren";
  *
- * Public: Yes
+ * Public: No
  */
 
 params ["_target", "_player", "_params"];

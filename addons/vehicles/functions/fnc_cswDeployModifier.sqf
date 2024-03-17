@@ -11,6 +11,8 @@
  *
  * Examples:
  * modifierFunction = "_this call BNA_KC_vehicles_fnc_cswDeployModifier;"
+ *
+ * Public: No
  */
 
 params ["_target", "_player", "_params", "_actionData"];

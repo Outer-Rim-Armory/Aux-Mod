@@ -11,7 +11,7 @@
  * None
  *
  * Examples:
- * [_atrt, ace_player] call FUNC(atrt_dismount);
+ * [_atrt, ace_player] call BNA_KC_vehicles_fnc_atrt_dismount;
  *
  * Public: Yes
  */
