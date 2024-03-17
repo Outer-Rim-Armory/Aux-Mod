@@ -191,7 +191,7 @@ class CfgVehicles {
 
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_commander_co.paa"};
-        backpack = "JLTS_B1_antenna";
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Antenna);
     };
 
     class CLASS(CIS_Unit_Droid_B1_Crew): CLASS(CIS_Unit_Droid_B1) {
@@ -324,6 +324,13 @@ class CfgVehicles {
     class CLASS(CIS_Backpack_Droid_B1_Saboteur): CLASS(CIS_Backpack_Droid_B1) {
         displayName = "[CIS] Battle Droid Backpack (Saboteur)";
         hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\B1_Saboteur_co.paa)};
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_Antenna): CLASS(CIS_Backpack_Droid_B1) {
+        displayName = "[CIS] Battle Droid Antenna";
+        model = "\MRC\JLTS\characters\DroidArmor\DroidAntennaB1.p3d";
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_antenna_co.paa"};
+        picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_antenna_ui_ca.paa";
     };
 
     class CLASS(AAT_Base);
