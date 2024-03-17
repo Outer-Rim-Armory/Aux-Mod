@@ -151,7 +151,7 @@ class CfgVehicles {
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Pilot);
 
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Pilot);
-        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_crew_co.paa"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_pilot_co.paa"};
         backpack = "";
     };
 
