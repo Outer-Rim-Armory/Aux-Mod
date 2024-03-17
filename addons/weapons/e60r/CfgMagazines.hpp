@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_1rnd_E60R_HE): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_1rnd_E60R_HE): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] E-60R HE Rocket";
         displayNameShort = "HE";
@@ -23,8 +21,14 @@ class CfgMagazines
         nameSound = "handgrenade";
     };
 
-    class CLASS(Mag_1rnd_E60R_AT): CLASS(Mag_1rnd_E60R_HE)
-    {
+    // Hidden version for AI to use, used to fix AI not spawning with a rocket loaded
+    class CLASS(Mag_1rnd_E60R_HE_AI): CLASS(Mag_1rnd_E60R_HE) {
+        SCOPE_HIDDEN;
+        allowedSlots[] = {TYPE_UNIFORM, TYPE_VEST, TYPE_BACKPACK};
+        mass = 0;
+    };
+
+    class CLASS(Mag_1rnd_E60R_AT): CLASS(Mag_1rnd_E60R_HE) {
         displayName = "[KC] E-60R AT Rocket";
         displayNameShort = "AT";
         descriptionShort = "Anti-Tank Rocket<br/>Rounds: 1<br/>Used In: E-60R";
@@ -35,9 +39,13 @@ class CfgMagazines
         ammo = QCLASS(Rocket_E60R_AT);
         mass = 60;
     };
+    class CLASS(Mag_1rnd_E60R_AT_AI): CLASS(Mag_1rnd_E60R_AT) {
+        SCOPE_HIDDEN;
+        allowedSlots[] = {TYPE_UNIFORM, TYPE_VEST, TYPE_BACKPACK};
+        mass = 0;
+    };
 
-    class CLASS(Mag_1rnd_E60R_AA): CLASS(Mag_1rnd_E60R_HE)
-    {
+    class CLASS(Mag_1rnd_E60R_AA): CLASS(Mag_1rnd_E60R_HE) {
         displayName = "[KC] E-60R AA Missile";
         displayNameShort = "AA";
         descriptionShort = "Anti-Air Missile<br/>Rounds: 1<br/>Used In: E-60R";
@@ -49,5 +57,11 @@ class CfgMagazines
         mass = 60;
         initSpeed = 18;
         maxLeadSpeed = 277.778;
+    };
+
+    class CLASS(Mag_1rnd_E60R_AA_AI): CLASS(Mag_1rnd_E60R_AA) {
+        SCOPE_HIDDEN;
+        allowedSlots[] = {TYPE_UNIFORM, TYPE_VEST, TYPE_BACKPACK};
+        mass = 0;
     };
 };
