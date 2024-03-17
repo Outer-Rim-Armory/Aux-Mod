@@ -33,6 +33,7 @@ class CfgWeapons
     {
         displayName = "[KC] INF Vest (Kama, 'Keeli')";
         model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\officer\Keeli_camo1_co.paa),
             "SWLB_Clones\data\mc_camo1_co.paa"
@@ -80,6 +81,7 @@ class CfgWeapons
     {
         displayName = "[KC] INF Vest (Kama, 'Rat')";
         model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\officer\Rat_camo1_co.paa),
             "SWLB_Clones\data\mc_camo1_co.paa"
