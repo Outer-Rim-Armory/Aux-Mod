@@ -132,6 +132,7 @@ class CfgVehicles {
         displayName = "B1 Saboteur Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Saboteur);
 
+        editorSubcategory = QEDSUBCAT(Special);
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Rocket);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_rocket_co.paa"};
         backpack = QCLASS(CIS_Backpack_Droid_B1_Saboteur);
