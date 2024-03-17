@@ -100,19 +100,16 @@ class CfgVehicles {
     };
 
     class CLASS(CIS_Unit_Droid_B1): CLASS(CIS_Unit_Droid_Base) {
-        SCOPE_PUBLIC;
-
         displayName = "B1 Battle Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1);
 
+        editorSubcategory = QEDSUBCAT(CIS_B1s);
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"};
         backpack = "JLTS_B1_backpack";
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Marine): CLASS(CIS_Unit_Droid_Base) {
-        SCOPE_PUBLIC;
-
+    class CLASS(CIS_Unit_Droid_B1_Marine): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Marine Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Marine);
 
@@ -121,9 +118,7 @@ class CfgVehicles {
         backpack = "JLTS_B1_backpack";
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Security): CLASS(CIS_Unit_Droid_Base) {
-        SCOPE_PUBLIC;
-
+    class CLASS(CIS_Unit_Droid_B1_Security): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Security Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Security);
 
@@ -132,9 +127,7 @@ class CfgVehicles {
         backpack = "";
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Commander): CLASS(CIS_Unit_Droid_Base) {
-        SCOPE_PUBLIC;
-
+    class CLASS(CIS_Unit_Droid_B1_Commander): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Commander Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Commander);
         icon = "iconManOfficer";
@@ -144,33 +137,25 @@ class CfgVehicles {
         backpack = "JLTS_B1_antenna";
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Crew): CLASS(CIS_Unit_Droid_Base) {
-        SCOPE_PUBLIC;
-
+    class CLASS(CIS_Unit_Droid_B1_Crew): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Crew Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Crew);
 
-        editorSubcategory = QEDSUBCAT(Crewmen);
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Crew);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_crew_co.paa"};
         backpack = "JLTS_B1_backpack";
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Pilot): CLASS(CIS_Unit_Droid_Base) {
-        SCOPE_PUBLIC;
-
+    class CLASS(CIS_Unit_Droid_B1_Pilot): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Pilot Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Pilot);
 
-        editorSubcategory = QEDSUBCAT(Crewmen);
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Pilot);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_crew_co.paa"};
         backpack = "";
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Saboteur): CLASS(CIS_Unit_Droid_Base) {
-        SCOPE_PUBLIC;
-
+    class CLASS(CIS_Unit_Droid_B1_Saboteur): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Saboteur Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Saboteur);
 
@@ -180,10 +165,7 @@ class CfgVehicles {
         backpack = QCLASS(CIS_Backpack_Droid_B1_Saboteur);
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Geonosis): CLASS(CIS_Unit_Droid_Base) {
-        SCOPE_PUBLIC;
-
-        displayName = "B1 Battle Droid";
+    class CLASS(CIS_Unit_Droid_B1_Geonosis): CLASS(CIS_Unit_Droid_B1) {
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
 
         editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
@@ -201,10 +183,7 @@ class CfgVehicles {
         backpack = "JLTS_B1_antenna_Geonosis";
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Training): CLASS(CIS_Unit_Droid_Base) {
-        SCOPE_PUBLIC;
-
-        displayName = "B1 Battle Droid";
+    class CLASS(CIS_Unit_Droid_B1_Training): CLASS(CIS_Unit_Droid_B1) {
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
 
         editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
