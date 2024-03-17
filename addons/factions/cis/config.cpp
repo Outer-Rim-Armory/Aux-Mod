@@ -1,21 +1,17 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             QCLASS(armor),
             "JLTS_characters_DroidArmor"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(CIS_Unit_Base),
             QCLASS(CIS_Unit_Droid_Base),
             QCLASS(CIS_Unit_Droid_B1),
@@ -26,8 +22,7 @@ class CfgPatches
             QCLASS(CIS_Backpack_Droid_B1_Saboteur),
             QCLASS(AAT_CIS)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(CIS_Uniform_Base),
             QCLASS(CIS_Uniform_Droid_Base),
             QCLASS(CIS_Uniform_Droid_B1),

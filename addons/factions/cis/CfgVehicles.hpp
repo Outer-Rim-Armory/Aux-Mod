@@ -1,13 +1,10 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class CLASS(OPFOR_Unit_Base);
-    class CLASS(CIS_Unit_Base): CLASS(OPFOR_Unit_Base)
-    {
+    class CLASS(CIS_Unit_Base): CLASS(OPFOR_Unit_Base) {
         SCOPE_HIDDEN;
-        faction = QCLASS(Faction_CIS);
+        faction = QFACTION(CIS);
     };
-    class CLASS(CIS_Unit_Droid_Base): CLASS(CIS_Unit_Base)
-    {
+    class CLASS(CIS_Unit_Droid_Base): CLASS(CIS_Unit_Base) {
         model = "\MRC\JLTS\characters\DroidArmor\DroidUniformB1.p3d";
         hiddenSelections[] = {"camo1"};
 
@@ -22,40 +19,34 @@ class CfgVehicles
         impactEffectsBlood = "ImpactMetal";
         impactEffectsNoBlood = "ImpactMetal";
 
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(E5),
             "",
             "Throw",
             "Put"
         };
-        respawnWeapons[] =
-        {
+        respawnWeapons[] = {
             QCLASS(E5),
             "",
             "Throw",
             "Put"
         };
 
-        magazines[] =
-        {
+        magazines[] = {
             ITEM_5(QCLASS(Mag_100rnd_E5))/*,
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("3AS_SmokeWhite")*/
         };
-        respawnMagazines[] =
-        {
+        respawnMagazines[] = {
             ITEM_5(QCLASS(Mag_100rnd_E5))/*,
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("3AS_SmokeWhite")*/
         };
 
-        linkedItems[] =
-        {
+        linkedItems[] = {
             "JLTS_NVG_droid_chip_1", "SWLB_comlink_droid", LINKED_ITEMS
         };
-        respawnLinkedItems[] =
-        {
+        respawnLinkedItems[] = {
             "JLTS_NVG_droid_chip_1", "SWLB_comlink_droid", LINKED_ITEMS
         };
 
@@ -64,10 +55,8 @@ class CfgVehicles
         class SoundBurning {breath[] = {};};
         class SoundChoke {breath[] = {};};
         class SoundDrown {breath[] = {};};
-        class SoundEnvironExt
-        {
-            generic[] =
-            {
+        class SoundEnvironExt {
+            generic[] = {
                 {"walk", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 15}},
                 {"walk", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 15}},
                 {"walk", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 15}},
@@ -86,10 +75,8 @@ class CfgVehicles
                 {"sprint", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 45}}
             };
         };
-        class SoundEquipment
-        {
-            soldier[] =
-            {
+        class SoundEquipment {
+            soldier[] = {
                 {"walk", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 15}},
                 {"walk", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 15}},
                 {"walk", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 15}},
@@ -112,8 +99,7 @@ class CfgVehicles
         class SoundRecovered {breath[] = {};};
     };
 
-    class CLASS(CIS_Unit_Droid_B1): CLASS(CIS_Unit_Droid_Base)
-    {
+    class CLASS(CIS_Unit_Droid_B1): CLASS(CIS_Unit_Droid_Base) {
         SCOPE_PUBLIC;
 
         displayName = "B1 Battle Droid";
@@ -126,14 +112,13 @@ class CfgVehicles
         backpack = "JLTS_B1_backpack";
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Crew): CLASS(CIS_Unit_Droid_Base)
-    {
+    class CLASS(CIS_Unit_Droid_B1_Crew): CLASS(CIS_Unit_Droid_Base) {
         SCOPE_PUBLIC;
 
         displayName = "B1 Crew Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Crew);
 
-        editorSubcategory = QCLASS(EdSubCat_Crewmen);
+        editorSubcategory = QEDSUBCAT(Crewmen);
         editorPreview = "\MRC\JLTS\characters\DroidArmor\data\ui\editorPreviews\JLTS_Droid_B1_Crew.jpg";
 
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_crew_co.paa"};
@@ -141,8 +126,7 @@ class CfgVehicles
         backpack = "JLTS_B1_backpack";
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Saboteur): CLASS(CIS_Unit_Droid_Base)
-    {
+    class CLASS(CIS_Unit_Droid_B1_Saboteur): CLASS(CIS_Unit_Droid_Base) {
         SCOPE_PUBLIC;
 
         displayName = "B1 Saboteur Droid";
@@ -153,11 +137,10 @@ class CfgVehicles
         backpack = QCLASS(CIS_Backpack_Droid_B1_Saboteur);
     };
 
-    class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base)
-    {
+    class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
         SCOPE_PUBLIC;
 
-        editorSubcategory = QCLASS(EdSubCat_SpecialForces);
+        editorSubcategory = QEDSUBCAT(SpecialForces);
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX);
 
         displayName = "BX Commando Droid";
@@ -166,35 +149,29 @@ class CfgVehicles
         model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
         hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
 
-        magazines[] =
-        {
+        magazines[] = {
             ITEM_5(QCLASS(Mag_100rnd_E5)),
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("3AS_SmokeWhite")
         };
-        respawnMagazines[] =
-        {
+        respawnMagazines[] = {
             ITEM_5(QCLASS(Mag_100rnd_E5)),
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("3AS_SmokeWhite")
         };
-        items[] =
-        {
+        items[] = {
             // Other
             ITEM_5("ACE_CableTie")
         };
-        respawnItems[] =
-        {
+        respawnItems[] = {
             // Other
             ITEM_5("ACE_CableTie")
         };
 
-        linkedItems[] =
-        {
+        linkedItems[] = {
             QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
         };
-        respawnLinkedItems[] =
-        {
+        respawnLinkedItems[] = {
             QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
         };
     };
@@ -224,11 +201,10 @@ class CfgVehicles
     };
 
     class CLASS(AAT_Base);
-    class CLASS(AAT_CIS): CLASS(AAT_Base)
-    {
+    class CLASS(AAT_CIS): CLASS(AAT_Base) {
         SCOPE_PUBLIC;
 
-        faction = QCLASS(Faction_CIS);
+        faction = QFACTION(CIS);
 
         crew = QCLASS(CIS_Unit_Droid_B1_Crew);
         typicalCargo[] = {QCLASS(CIS_Unit_Droid_B1_Crew)};
