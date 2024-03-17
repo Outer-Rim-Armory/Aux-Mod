@@ -21,26 +21,21 @@ class CfgVehicles {
 
         weapons[] = {
             QCLASS(E5),
-            "",
             "Throw",
             "Put"
         };
         respawnWeapons[] = {
             QCLASS(E5),
-            "",
             "Throw",
             "Put"
         };
-
         magazines[] = {
-            ITEM_5(QCLASS(Mag_100rnd_E5))/*,
-            ITEM_2("ls_mag_classC_thermalDet"),
-            ITEM_3("3AS_SmokeWhite")*/
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
+            "ls_mag_classC_thermalDet"
         };
         respawnMagazines[] = {
-            ITEM_5(QCLASS(Mag_100rnd_E5))/*,
-            ITEM_2("ls_mag_classC_thermalDet"),
-            ITEM_3("3AS_SmokeWhite")*/
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
+            "ls_mag_classC_thermalDet"
         };
 
         linkedItems[] = {
@@ -106,7 +101,69 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(CIS_B1s);
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_co.paa"};
-        backpack = "JLTS_B1_backpack";
+        backpack = QCLASS(CIS_Backpack_Droid_B1);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_AT): CLASS(CIS_Unit_Droid_B1) {
+        displayName = "B1 Battle Droid (AT)";
+
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AT);
+        backpack = QCLASS(CIS_Backpack_Droid_B1_predef_AT);
+
+        weapons[] = {
+            QCLASS(E5),
+            QCLASS(E60R_AT),
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] = {
+            QCLASS(E5),
+            QCLASS(E60R_AT),
+            "Throw",
+            "Put"
+        };
+
+        magazines[] = {
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
+            QCLASS(Mag_1rnd_E60R_AT_AI),
+            "ls_mag_classC_thermalDet"
+        };
+        respawnMagazines[] = {
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
+            QCLASS(Mag_1rnd_E60R_AT_AI),
+            "ls_mag_classC_thermalDet"
+        };
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_AA): CLASS(CIS_Unit_Droid_B1) {
+        displayName = "B1 Battle Droid (AA)";
+
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AT);
+        backpack = QCLASS(CIS_Backpack_Droid_B1_predef_AA);
+
+        weapons[] = {
+            QCLASS(E5),
+            QCLASS(E60R_AA),
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] = {
+            QCLASS(E5),
+            QCLASS(E60R_AT),
+            "Throw",
+            "Put"
+        };
+
+        magazines[] = {
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
+            QCLASS(Mag_1rnd_E60R_AA_AI),
+            "ls_mag_classC_thermalDet"
+        };
+        respawnMagazines[] = {
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
+            QCLASS(Mag_1rnd_E60R_AA_AI),
+            "ls_mag_classC_thermalDet"
+        };
     };
 
     class CLASS(CIS_Unit_Droid_B1_Marine): CLASS(CIS_Unit_Droid_B1) {
@@ -115,7 +172,7 @@ class CfgVehicles {
 
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Marine);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_marine_co.paa"};
-        backpack = "JLTS_B1_backpack";
+        backpack = QCLASS(CIS_Backpack_Droid_B1);
     };
 
     class CLASS(CIS_Unit_Droid_B1_Security): CLASS(CIS_Unit_Droid_B1) {
@@ -143,7 +200,7 @@ class CfgVehicles {
 
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Crew);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_crew_co.paa"};
-        backpack = "JLTS_B1_backpack";
+        backpack = QCLASS(CIS_Backpack_Droid_B1);
     };
 
     class CLASS(CIS_Unit_Droid_B1_Pilot): CLASS(CIS_Unit_Droid_B1) {
@@ -248,6 +305,20 @@ class CfgVehicles {
         tf_hasLRradio = TRUE;
         tf_range = 15000;
         tf_subtype = "digital_lr";
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_predef_AT): CLASS(CIS_Backpack_Droid_B1) {
+        SCOPE_HIDDEN;
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_1rnd_E60R_AT),3);
+        };
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_predef_AA): CLASS(CIS_Backpack_Droid_B1) {
+        SCOPE_HIDDEN;
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_1rnd_E60R_AA),3);
+        };
     };
 
     class CLASS(CIS_Backpack_Droid_B1_Saboteur): CLASS(CIS_Backpack_Droid_B1) {
