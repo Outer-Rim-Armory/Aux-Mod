@@ -11,7 +11,7 @@
  * Whether the carrier vehicle can load another object in range.
  *
  * Examples:
- * vehicle player call FUNC(vivCanLoad);
+ * vehicle player call BNA_KC_vehicles_fnc_vivCanLoad;
  *
  * Public: Yes
  */
@@ -30,3 +30,4 @@ if (!isNull _object) then {
 };
 
 _vehicle setVariable [QGVAR(vivLoadTarget), nil];
+nil;

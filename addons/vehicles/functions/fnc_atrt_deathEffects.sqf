@@ -10,7 +10,7 @@
  * All death effects belonging to the AT-RT <ARRAY>
  *
  * Examples:
- * _atrt call FUNC(atrt_deathEffects);
+ * _atrt call BNA_KC_vehicles_fnc_atrt_deathEffects;
  *
  * Public: Yes
  */

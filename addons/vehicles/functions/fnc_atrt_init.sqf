@@ -19,7 +19,6 @@
 params [
     ["_atrt", objNull, [objNull]]
 ];
-private [];
 TRACE_1("fnc_atrt_init",_atrt);
 
 if (isNull _atrt) exitWith {};

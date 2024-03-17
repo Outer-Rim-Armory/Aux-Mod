@@ -2,7 +2,7 @@
 /*
  * Author: 3AS
  * Edited by DartRuffian
- * Determines whether a unit can mount an AT-RT
+ * Determines whether a unit can mount an AT-RT.
  *
  * Arguments:
  * 0: The AT-RT <OBJECT>
@@ -12,7 +12,7 @@
  * True if the AT-RT can be mounted, otherwise false  <BOOL>
  *
  * Examples:
- * [_atrt, ace_player] call FUNC(atrt_canMount);
+ * [_atrt, ace_player] call BNA_KC_vehicles_fnc_atrt_canMount;
  *
  * Public: Yes
  */
@@ -21,7 +21,6 @@ params [
     ["_atrt", objNull, [objNull]],
     ["_unit", objNull, [objNull]]
 ];
-private [];
 TRACE_2("fnc_atrt_canMount",_atrt,_unit);
 
 if (!alive _atrt or {

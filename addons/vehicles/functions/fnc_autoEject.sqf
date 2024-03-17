@@ -10,7 +10,7 @@
  * None
  *
  * Examples:
- * vehicle ace_player call FUNC(autoEject);
+ * objectParent ace_player call BNA_KC_vehicles_fnc_autoEject;
  *
  * Public: Yes
  */
