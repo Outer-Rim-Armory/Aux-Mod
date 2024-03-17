@@ -39,6 +39,7 @@ class CfgWeapons
     };
 
     B1_UNIFORM(Marine);
+    B1_UNIFORM(Security);
     B1_UNIFORM(Commander);
     B1_UNIFORM(Crew);
     B1_UNIFORM(Pilot);
