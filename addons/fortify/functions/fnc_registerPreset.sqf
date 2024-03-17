@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Registers a given preset and budget to a specific side(s).
+ * Registers a given preset and budget to a specific side(s). Server execution only.
  *
  * Arguments:
  * 0: Class name from ACEX_Fortify_Presets <STRING>
@@ -26,7 +26,7 @@ params [
 private ["_allObjects", "_subPresets"];
 TRACE_3("fnc_registerPreset",_preset,_budget,_sides);
 
-if (_preset isEqualTo "" or {_budget < 0}) exitWith {false};
+if (!isServer or {_preset isEqualTo ""} or {_budget < 0}) exitWith {false};
 
 if !(_sides isEqualType []) then {
     _sides = [_sides];
