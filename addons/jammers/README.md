@@ -1,5 +1,4 @@
 # Radio Jammers
-
 This system adds TFAR radio jammers, which gradually adds interference based on the player's distance to the jammer(s).
 
 If multiple jammers are in range of the player, the average interference will be used. A radio jammer can be any object, whether it's a unit; a vehicle; or a prop.
@@ -35,4 +34,6 @@ _object setVariable ["BNA_KC_jammers_isActive", false, true];
 
 ## Settings
 ### Update Rate
+Default Value: **1**
+
 How often (in seconds) the interference for players is updated. Lower number results in more accuracy, but uses more resources.
