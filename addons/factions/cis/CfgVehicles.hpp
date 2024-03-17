@@ -180,6 +180,27 @@ class CfgVehicles {
         backpack = QCLASS(CIS_Backpack_Droid_B1_Saboteur);
     };
 
+    class CLASS(CIS_Unit_Droid_B1_Geonosis): CLASS(CIS_Unit_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "B1 Battle Droid";
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
+
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Geonosis);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"};
+        backpack = "JLTS_B1_backpack_Geonosis";
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_Commander_Geonosis): CLASS(CIS_Unit_Droid_B1_Geonosis) {
+        displayName = "B1 Commander Droid";
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Commander_Geonosis);
+
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander_Geonosis);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1GeonosisCommander_co.paa"};
+        backpack = "JLTS_B1_antenna_Geonosis";
+    };
+
     class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
         SCOPE_PUBLIC;
 

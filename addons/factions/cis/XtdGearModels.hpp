@@ -13,7 +13,9 @@ class XtdGearModels {
                     "Commander",
                     "Crew",
                     "Pilot",
-                    "Saboteur"
+                    "Saboteur",
+                    "Standard_Geonosis",
+                    "Commander_Geonosis"
                 };
 
                 class Standard { label = "Standard"; };
@@ -22,6 +24,8 @@ class XtdGearModels {
                 class Crew { label = "Crew"; };
                 class Pilot { label = "Pilot"; };
                 class Saboteur { label = "Saboteur"; };
+                class Standard_Geonosis { label = "Standard (Geo)"; };
+                class Commander_Geonosis { label = "Commander (Geo)"; };
             };
         };
     };

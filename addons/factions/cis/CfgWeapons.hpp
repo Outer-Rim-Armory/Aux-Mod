@@ -45,6 +45,23 @@ class CfgWeapons
     B1_UNIFORM(Pilot);
     B1_UNIFORM(Saboteur);
 
+    class CLASS(CIS_Uniform_Droid_B1_Geonosis): CLASS(CIS_Uniform_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[CIS] B1 Battle Droid (Geonosis)";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(CIS_Unit_Droid_B1_Geonosis);
+        };
+
+        class XtdGearInfo {
+            model = QCLASS(CIS_Uniforms_B1);
+            camo = "Standard_Geonosis";
+        };
+    };
+
+    B1_VARIANT_UNIFORM(Commander,Geonosis);
+
     class CLASS(CIS_Uniform_Droid_BX): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;
 
