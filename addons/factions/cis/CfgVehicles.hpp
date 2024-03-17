@@ -194,6 +194,31 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(CIS_Unit_Droid_B1_Marksman): CLASS(CIS_Unit_Droid_B1) {
+        displayName = "B1 Heavy Droid";
+        icon = "JLTS_iconManSniper";
+
+        weapons[] = {
+            QCLASS(E5S),
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] = {
+            QCLASS(E5S),
+            "Throw",
+            "Put"
+        };
+
+        magazines[] = {
+            ITEM_10(QCLASS(Mag_20rnd_E5S)),
+            "ls_mag_classC_thermalDet"
+        };
+        respawnMagazines[] = {
+            ITEM_10(QCLASS(Mag_20rnd_E5S)),
+            "ls_mag_classC_thermalDet"
+        };
+    };
+
     class CLASS(CIS_Unit_Droid_B1_Marine): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Marine Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Marine);
