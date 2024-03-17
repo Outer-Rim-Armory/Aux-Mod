@@ -104,6 +104,31 @@ class CfgVehicles {
         backpack = QCLASS(CIS_Backpack_Droid_B1);
     };
 
+    class CLASS(CIS_Unit_Droid_B1_Heavy): CLASS(CIS_Unit_Droid_Base) {
+        displayName = "B1 Heavy Droid";
+        icon = "JLTS_iconManSupportGunner";
+
+        weapons[] = {
+            QCLASS(E5C_Stock),
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] = {
+            QCLASS(E5C_Stock),
+            "Throw",
+            "Put"
+        };
+
+        magazines[] = {
+            ITEM_5(QCLASS(Mag_150rnd_E5C)),
+            "ls_mag_classC_thermalDet"
+        };
+        respawnMagazines[] = {
+            ITEM_5(QCLASS(Mag_150rnd_E5C)),
+            "ls_mag_classC_thermalDet"
+        };
+    };
+
     class CLASS(CIS_Unit_Droid_B1_AT): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Battle Droid (AT)";
 

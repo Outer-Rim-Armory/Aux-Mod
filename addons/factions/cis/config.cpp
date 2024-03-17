@@ -15,6 +15,9 @@ class CfgPatches {
             QCLASS(CIS_Unit_Base),
             QCLASS(CIS_Unit_Droid_Base),
             QCLASS(CIS_Unit_Droid_B1),
+            QCLASS(CIS_Unit_Droid_B1_Heavy),
+            QCLASS(CIS_Unit_Droid_B1_AT),
+            QCLASS(CIS_Unit_Droid_B1_AA),
             QCLASS(CIS_Unit_Droid_B1_Marine),
             QCLASS(CIS_Unit_Droid_B1_Security),
             QCLASS(CIS_Unit_Droid_B1_Commander),
@@ -26,6 +29,8 @@ class CfgPatches {
             QCLASS(CIS_Unit_Droid_B1_Training),
             QCLASS(CIS_Unit_Droid_BX),
             QCLASS(CIS_Backpack_Droid_B1),
+            QCLASS(CIS_Backpack_Droid_B1_predef_AT),
+            QCLASS(CIS_Backpack_Droid_B1_predef_AA),
             QCLASS(CIS_Backpack_Droid_B1_Saboteur),
             QCLASS(CIS_Backpack_Droid_B1_Antenna),
             QCLASS(AAT_CIS)
