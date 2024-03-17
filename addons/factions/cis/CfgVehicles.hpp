@@ -256,6 +256,31 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(CIS_Unit_Droid_B1_CQC): CLASS(CIS_Unit_Droid_B1) {
+        displayName = "B1 Shotgun Droid";
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_CQC);
+
+        weapons[] = {
+            QCLASS(SBB3),
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] = {
+            QCLASS(SBB3),
+            "Throw",
+            "Put"
+        };
+
+        magazines[] = {
+            ITEM_5(QCLASS(Mag_25rnd_SBB3)),
+            "ls_mag_classC_thermalDet"
+        };
+        respawnMagazines[] = {
+            ITEM_5(QCLASS(Mag_25rnd_SBB3)),
+            "ls_mag_classC_thermalDet"
+        };
+    };
+
     class CLASS(CIS_Unit_Droid_B1_Security): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Security Droid";
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Security);
