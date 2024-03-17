@@ -105,7 +105,7 @@ class CfgVehicles {
         backpack = QCLASS(CIS_Backpack_Droid_B1);
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Heavy): CLASS(CIS_Unit_Droid_Base) {
+    class CLASS(CIS_Unit_Droid_B1_Heavy): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Heavy Droid";
         icon = "JLTS_iconManSupportGunner";
 
