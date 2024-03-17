@@ -19,7 +19,7 @@ class XtdGearModels {
                 };
 
                 class Standard { label = "Standard"; };
-                class Marine { label = "Crew"Marine };
+                class Marine { label = "Marine"; };
                 class Commander { label = "Commander"; };
                 class Crew { label = "Crew"; };
                 class Pilot { label = "Pilot"; };
