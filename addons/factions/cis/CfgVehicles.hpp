@@ -132,6 +132,7 @@ class CfgVehicles {
 
     class CLASS(CIS_Unit_Droid_B1_AT): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Battle Droid (AT)";
+        icon = "iconManAT";
 
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AT);
         backpack = QCLASS(CIS_Backpack_Droid_B1_predef_AT);
@@ -163,6 +164,7 @@ class CfgVehicles {
 
     class CLASS(CIS_Unit_Droid_B1_AA): CLASS(CIS_Unit_Droid_B1) {
         displayName = "B1 Battle Droid (AA)";
+        icon = "iconManAT";
 
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AT);
         backpack = QCLASS(CIS_Backpack_Droid_B1_predef_AA);
