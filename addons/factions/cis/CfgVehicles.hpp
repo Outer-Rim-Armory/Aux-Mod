@@ -168,7 +168,7 @@ class CfgVehicles {
         displayName = "B1 Battle Droid (AA)";
         icon = "iconManAT";
 
-        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AT);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AA);
         backpack = QCLASS(CIS_Backpack_Droid_B1_predef_AA);
 
         weapons[] = {
@@ -330,29 +330,114 @@ class CfgVehicles {
 
     class CLASS(CIS_Unit_Droid_B1_Geonosis): CLASS(CIS_Unit_Droid_B1) {
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
-
         editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Geonosis);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"};
-        backpack = "JLTS_B1_backpack_Geonosis";
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Geonosis);
     };
 
-    class CLASS(CIS_Unit_Droid_B1_Commander_Geonosis): CLASS(CIS_Unit_Droid_B1_Geonosis) {
-        displayName = "B1 Commander Droid";
-        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Commander_Geonosis);
+    class CLASS(CIS_Unit_Droid_B1_Heavy_Geonosis): CLASS(CIS_Unit_Droid_B1_Heavy) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Heavy_Geonosis);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Geonosis);
+    };
 
+    class CLASS(CIS_Unit_Droid_B1_AT_Geonosis): CLASS(CIS_Unit_Droid_B1_AT) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AT_Geonosis);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Geonosis_predef_AT);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_AA_Geonosis): CLASS(CIS_Unit_Droid_B1_AA) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AA_Geonosis);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Geonosis_predef_AA);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_Sniper_Geonosis): CLASS(CIS_Unit_Droid_B1_Sniper) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Sniper_Geonosis);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Geonosis);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_CQC_Geonosis): CLASS(CIS_Unit_Droid_B1_CQC) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_CQC_Geonosis);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Geonosis);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_Commander_Geonosis): CLASS(CIS_Unit_Droid_B1_Commander) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Commander_Geonosis);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander_Geonosis);
-        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1GeonosisCommander_co.paa"};
-        backpack = "JLTS_B1_antenna_Geonosis";
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Antenna_Geonosis);
     };
 
     class CLASS(CIS_Unit_Droid_B1_Training): CLASS(CIS_Unit_Droid_B1) {
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
-
         editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
         editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Training);
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"};
-        backpack = "JLTS_B1_backpack_Training";
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Training);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_Heavy_Training): CLASS(CIS_Unit_Droid_B1_Heavy) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Heavy_Training);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Training);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_AT_Training): CLASS(CIS_Unit_Droid_B1_AT) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AT_Training);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Training_predef_AT);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_AA_Training): CLASS(CIS_Unit_Droid_B1_AA) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AA_Training);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Training_predef_AA);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_Sniper_Training): CLASS(CIS_Unit_Droid_B1_Sniper) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Sniper_Training);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Training);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_CQC_Training): CLASS(CIS_Unit_Droid_B1_CQC) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_CQC_Training);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Training);
+    };
+
+    class CLASS(CIS_Unit_Droid_B1_Commander_Training): CLASS(CIS_Unit_Droid_B1) {
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
+        editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander_Training);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"};
+        backpack = QCLASS(CIS_Backpack_Droid_B1_Training);
     };
 
     class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
@@ -449,6 +534,40 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(CIS_Backpack_Droid_B1_Geonosis): CLASS(CIS_Backpack_Droid_B1) {
+        displayName = "[CIS] Battle Droid Backpack (Geonosis)";
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_backpack_co.paa"};
+
+        class XtdGearInfo: XtdGearInfo {
+            variant = "Geonosis";
+        };
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_Geonosis_predef_AT): CLASS(CIS_Backpack_Droid_B1_predef_AT) {
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_backpack_co.paa"};
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_Geonosis_predef_AA): CLASS(CIS_Backpack_Droid_B1_predef_AA) {
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_backpack_co.paa"};
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_Training): CLASS(CIS_Backpack_Droid_B1) {
+        displayName = "[CIS] Battle Droid Backpack (Training)";
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_backpack_co.paa"};
+
+        class XtdGearInfo: XtdGearInfo {
+            variant = "Training";
+        };
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_Training_predef_AT): CLASS(CIS_Backpack_Droid_B1_predef_AT) {
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_backpack_co.paa"};
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_Training_predef_AA): CLASS(CIS_Backpack_Droid_B1_predef_AA) {
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_backpack_co.paa"};
+    };
+
     class CLASS(CIS_Backpack_Droid_B1_Antenna): CLASS(CIS_Backpack_Droid_B1) {
         displayName = "[CIS] Battle Droid Antenna";
         model = "\MRC\JLTS\characters\DroidArmor\DroidAntennaB1.p3d";
@@ -458,6 +577,24 @@ class CfgVehicles {
         class XtdGearInfo: XtdGearInfo {
             camo = "Antenna";
             variant = "Standard";
+        };
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_Antenna_Geonosis): CLASS(CIS_Backpack_Droid_B1_Antenna) {
+        displayName = "[CIS] Battle Droid Antenna (Geonosis)";
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_antenna_co.paa"};
+
+        class XtdGearInfo: XtdGearInfo {
+            variant = "Geonosis";
+        };
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_Antenna_Training): CLASS(CIS_Backpack_Droid_B1_Antenna) {
+        displayName = "[CIS] Battle Droid Antenna (Training)";
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_antenna_co.paa"};
+
+        class XtdGearInfo: XtdGearInfo {
+            variant = "Training";
         };
     };
 
