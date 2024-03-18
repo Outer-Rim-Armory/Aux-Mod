@@ -18,7 +18,7 @@
  */
 
 #define BURN_THRESHOLD 1
-#define BURN_THRESHOLD_BURNEMREDUX 5
+#define BURN_THRESHOLD_BURNEMREDUX 4
 
 params ["_unit", "_ammo", "_sections"];
 private ["_fireDamage", "_intensity", "_burnEmDamage"];

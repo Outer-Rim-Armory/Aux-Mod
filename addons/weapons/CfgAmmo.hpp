@@ -354,6 +354,23 @@ class CfgAmmo
         effectfly = "JLTS_plasma_green";
     };
 
+    class CLASS(Bullet_slugBase): CLASS(Bullet_Base) {
+        airFriction = -0.008;
+        caliber = 1.037;
+        cartridge = "";
+        hit = 42;
+        indirectHit = 0;
+        indirectHitRange = 0;
+        typicalSpeed = 600;
+    };
+
+    class CLASS(Bullet_slugIncendiary): CLASS(Bullet_slugBase) {
+        SCOPE_PUBLIC;
+        GVAR(ammoType) = AMMO_TYPE_INCENDIARY;
+        GVAR(fireDamage) = 5;
+    };
+
+
     class CLASS(Bullet_PlasmaStun): CLASS(Bullet_PlasmaPistol_Blue)
     {
         hit = 0;

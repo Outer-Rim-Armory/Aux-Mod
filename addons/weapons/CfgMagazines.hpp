@@ -102,6 +102,27 @@ class CfgMagazines
         count = 1;
     };
 
+    class CLASS(Mag_2Rnd_slugIncendiary): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] 2Rnd Incendiary Slugs";
+        displayNameShort = "Incendiary Slug";
+        descriptionShort = "Incendiary Slug Rounds<br/>Rounds: 2<br/>Used in: DP-23";
+
+        model = "\A3\Weapons_F_Enoch\MagazineProxies\mag_12ga_hunter_2rnd";
+        hiddenSelections[] = {"camo", "cap2"};
+        hiddenSelectionsTextures[] = {"\A3\Weapons_F_Enoch\MagazineProxies\data\12GA_Slug_CO.paa"};
+        // modelSpecial = "\A3\Weapons_F_Enoch\MagazineProxies\mag_12ga_hunter_2rnd";
+        picture = "\A3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_2rnd_12gauge_slugs_CA.paa";
+
+        type = TYPE_MAGAZINE_PRIMARY_AND_THROW;
+        weaponPoolAvailable = TRUE;
+        initSpeed = 450;
+
+        ammo = QCLASS(Bullet_slugIncendiary);
+        count = 2;
+        mass = 6;
+    };
+
 
     // ! LEGACY CLASSES
     class Aux12thFleet_Mag_StunShort: CLASS(Mag_StunShort)
