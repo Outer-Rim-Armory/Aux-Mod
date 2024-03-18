@@ -64,11 +64,13 @@ class XtdGearModels {
                 values[] = {
                     "Standard",
                     "Saboteur",
+                    "Prototype",
                     "Antenna"
                 };
 
                 class Standard { label = "Standard"; };
                 class Saboteur { label = "Saboteur"; };
+                class Prototype { label = "Prototype"; };
                 class Antenna { label = "Antenna"; };
             };
 

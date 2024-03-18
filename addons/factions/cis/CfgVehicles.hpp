@@ -328,6 +328,36 @@ class CfgVehicles {
         backpack = QCLASS(CIS_Backpack_Droid_B1_Saboteur);
     };
 
+    class CLASS(CIS_Unit_Droid_B1_Prototype): CLASS(CIS_Unit_Droid_B1) {
+        displayName = "B1 Prototype Droid";
+        editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Prototype);
+
+        uniformClass = QCLASS(CIS_Uniform_Droid_B1_Prototype);
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_prototype_co.paa"};
+
+        weapons[] = {
+            QCLASS(E5),
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] = {
+            QCLASS(E5),
+            "Throw",
+            "Put"
+        };
+
+        magazines[] = {
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
+            ITEM_2("ls_mag_classC_thermalDet"),
+            ITEM_2("3AS_SmokeWhite")
+        };
+        respawnMagazines[] = {
+            ITEM_5(QCLASS(Mag_100rnd_E5)),
+            ITEM_2("ls_mag_classC_thermalDet"),
+            ITEM_2("3AS_SmokeWhite")
+        };
+    };
+
     class CLASS(CIS_Unit_Droid_B1_Geonosis): CLASS(CIS_Unit_Droid_B1) {
         uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
         editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
@@ -531,6 +561,15 @@ class CfgVehicles {
 
         class XtdGearInfo: XtdGearInfo {
             camo = "Saboteur";
+        };
+    };
+
+    class CLASS(CIS_Backpack_Droid_B1_Prototype): CLASS(CIS_Backpack_Droid_B1) {
+        displayName = "[CIS] Battle Droid Backpack (Prototype)";
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_backpack_prototype_co.paa"};
+
+        class XtdGearInfo: XtdGearInfo {
+            camo = "Prototype";
         };
     };
 
