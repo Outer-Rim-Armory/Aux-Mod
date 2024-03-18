@@ -9,7 +9,8 @@ class CfgPatches {
         requiredAddons[] = {
             QUOTE(ADDON),
             QCLASS(armor),
-            "JLTS_characters_DroidArmor"
+            "JLTS_characters_DroidArmor",
+            "SWLB_radios"
         };
         units[] = {
             QCLASS(CIS_Unit_Base),
