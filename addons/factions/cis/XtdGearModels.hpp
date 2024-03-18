@@ -36,9 +36,18 @@ class XtdGearModels {
                     "Training"
                 };
 
-                class Standard { label = "Standard"; };
-                class Geonosis { label = "Geonosis"; };
-                class Training { label = "Training"; };
+                class Standard {
+                    label = "Standard";
+                    image = "#(rgb,8,8,3)color(0.457,0.392,0.273,1)";
+                };
+                class Geonosis {
+                    label = "Geonosis";
+                    image = "#(rgb,8,8,3)color(0.122,0.035,0.016,1)";
+                };
+                class Training {
+                    label = "Training";
+                    image = "#(rgb,8,8,3)color(0.561,0.561,0.561,1)";
+                };
             };
         };
     };
