@@ -411,6 +411,12 @@ class CfgVehicles {
         tf_hasLRradio = TRUE;
         tf_range = 15000;
         tf_subtype = "digital_lr";
+
+        class XtdGearInfo {
+            model = QCLASS(CIS_Backpacks_B1);
+            camo = "Standard";
+            variant = "Standard";
+        };
     };
 
     class CLASS(CIS_Backpack_Droid_B1_predef_HE): CLASS(CIS_Backpack_Droid_B1) {
@@ -437,6 +443,10 @@ class CfgVehicles {
     class CLASS(CIS_Backpack_Droid_B1_Saboteur): CLASS(CIS_Backpack_Droid_B1) {
         displayName = "[CIS] Battle Droid Backpack (Saboteur)";
         hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\B1_Saboteur_co.paa)};
+
+        class XtdGearInfo: XtdGearInfo {
+            camo = "Saboteur";
+        };
     };
 
     class CLASS(CIS_Backpack_Droid_B1_Antenna): CLASS(CIS_Backpack_Droid_B1) {
@@ -444,6 +454,11 @@ class CfgVehicles {
         model = "\MRC\JLTS\characters\DroidArmor\DroidAntennaB1.p3d";
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_antenna_co.paa"};
         picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_antenna_ui_ca.paa";
+
+        class XtdGearInfo: XtdGearInfo {
+            camo = "Antenna";
+            variant = "Standard";
+        };
     };
 
     class CLASS(AAT_Base);
