@@ -80,7 +80,7 @@ class CfgVehicles
     };
 
     class CLASS(CIS_Backpack_Droid_B1);
-    class CLASS(CIS_Jetpack_Droid): CLASS(CIS_Backpack_Droid_B1) {
+    class CLASS(CIS_Jetpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
         JLTS_isJumppack = FALSE;
 
         GVAR(isJetpack) = TRUE;
