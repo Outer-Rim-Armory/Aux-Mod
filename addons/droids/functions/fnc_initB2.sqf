@@ -23,6 +23,6 @@ private ["_health"];
 TRACE_1("fnc_initB2",_unit);
 
 if (isNull _unit or {!alive _unit} or {!local _unit}) exitWith {};
-_unit setVariable ["Droid_Health", GVAR(healthB2), true];
 
+_unit setVariable ["Droid_Health", GVAR(healthB2), true];
 _unit execVM "\WebKnightsRobotics\AI\AI_WBK_B2_BattleDroid.sqf";
