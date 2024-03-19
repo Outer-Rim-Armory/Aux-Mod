@@ -509,6 +509,13 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 };
 
+class CLASS(CIS_Unit_Droid_B2_Jetpack): CLASS(CIS_Unit_Droid_B2) {
+    displayName = "B2-RP Super Battle Droid";
+    // uniformClass = QCLASS(CIS_Uniform_Droid_B2_Jetpack);
+    // editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B2_Jetpack);
+    backpack = QCLASS(CIS_Jetpack_Droid_B1);
+};
+
 class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
     SCOPE_PUBLIC;
 
