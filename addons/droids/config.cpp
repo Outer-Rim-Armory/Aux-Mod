@@ -7,12 +7,16 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QCLASS(core),
-            QEGVAR(factions,cis)
+            QEGVAR(factions,cis),
+            "WBK_DifferentRobotics_1"
         };
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
+
+        skipWhenMissingDependencies = TRUE;
     };
 };
 
+#include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
