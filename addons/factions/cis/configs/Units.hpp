@@ -487,7 +487,7 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     hiddenSelectionsTextures[] = {
         "\lsd_armor_redfor\uniform\cis\b2\data\arms_co.paa",
         "\lsd_armor_redfor\uniform\cis\b2\data\legs_co.paa",
-        "\lsd_armor_redfor\uniform\cis\b2\data\torso_co.paa"
+        QPATHTOF(cis\data\textures\uniform\b2\torso_co.paa)
     };
 
     weapons[] = {
