@@ -1,3 +1,5 @@
+#define DROID_LINKED_ITEMS "SWLB_Comlink_Droid"
+
 #define B1_UNIFORM(var1) class CLASS(DOUBLES(CIS_Uniform_Droid_B1,var1)): CLASS(CIS_Uniform_Droid_Base) { \
     SCOPE_PUBLIC; \
     displayName = QUOTE([CIS] B1 var1 Droid); \

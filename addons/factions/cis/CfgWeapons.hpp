@@ -80,6 +80,16 @@ class CfgWeapons
         };
     };
 
+    class CLASS(CIS_Uniform_Droid_B2): CLASS(CIS_Uniform_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[CIS] B2 Super Battle Droid";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(CIS_Unit_Droid_B2);
+        };
+    };
+
     class CLASS(CIS_Uniform_Droid_BX): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;
 

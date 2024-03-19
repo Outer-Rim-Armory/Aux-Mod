@@ -37,12 +37,8 @@ class CLASS(CIS_Unit_Droid_Base): CLASS(CIS_Unit_Base) {
         "ls_mag_classC_thermalDet"
     };
 
-    linkedItems[] = {
-        "JLTS_NVG_droid_chip_1", "SWLB_comlink_droid", LINKED_ITEMS
-    };
-    respawnLinkedItems[] = {
-        "JLTS_NVG_droid_chip_1", "SWLB_comlink_droid", LINKED_ITEMS
-    };
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 
     class SoundBleeding {breath[] = {};};
     class SoundBreath {breath[] = {};};
@@ -478,6 +474,41 @@ class CLASS(CIS_Unit_Droid_B1_Commander_Training): CLASS(CIS_Unit_Droid_B1) {
     backpack = QCLASS(CIS_Backpack_Droid_B1_Training);
 };
 
+class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
+    SCOPE_PUBLIC;
+
+    editorSubcategory = QEDSUBCAT(CIS_B2s);
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B2);
+
+    displayName = "B2 Super Battle Droid";
+    uniformClass = QCLASS(CIS_Uniform_Droid_B2);
+
+    model = "\lsd_armor_redfor\uniform\cis\b2\lsd_cis_b2_uniform";
+    hiddenSelections[] = {"camo_arms", "legs", "torso"};
+    hiddenSelectionsTextures[] = {
+        "\lsd_armor_redfor\uniform\cis\b2\data\arms_co.paa",
+        "\lsd_armor_redfor\uniform\cis\b2\data\legs_co.paa",
+        "\lsd_armor_redfor\uniform\cis\b2\data\torso_co.paa"
+    };
+
+    weapons[] = {
+        QCLASS(E5)
+    };
+    respawnWeapons[] = {
+        QCLASS(E5)
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5))
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5))
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
     SCOPE_PUBLIC;
 
@@ -509,10 +540,6 @@ class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
         ITEM_5("ACE_CableTie")
     };
 
-    linkedItems[] = {
-        QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
-    };
-    respawnLinkedItems[] = {
-        QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", "SWLB_comlink_droid", LINKED_ITEMS
-    };
+    linkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
 };
