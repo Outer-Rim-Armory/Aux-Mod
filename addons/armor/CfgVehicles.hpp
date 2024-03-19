@@ -472,25 +472,5 @@ class CfgVehicles
         tf_subtype = "digital_lr";
     };
 
-    class CLASS(Jetpack_Droid): CLASS(Jetpack_JT12)
-    {
-        displayName = "[KC] Battle Droid Jetpack";
-
-        model = "\MRC\JLTS\characters\DroidArmor\DroidJetpackB1.p3d";
-        hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_co.paa"};
-        picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_jetpack_ui_ca.paa";
-
-        JLTS_energy[] = {25,150};
-        JLTS_settingsDialog = "JLTS_droid_jumppack_dialog";
-        JLTS_steeringCoef = 0.06;
-    };
-
-    class CLASS(Jetpack_DroidRocket): CLASS(Jetpack_Droid)
-    {
-        displayName = "[KC] Battle Droid Jetpack (Rocket)";
-        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_rocket_co.paa"};
-    };
-
     #include "configs\GroundHolders.hpp"
 };

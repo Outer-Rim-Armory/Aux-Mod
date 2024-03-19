@@ -57,6 +57,8 @@ class CfgPatches {
             QCLASS(CIS_Backpack_Droid_B1_Antenna),
             QCLASS(CIS_Backpack_Droid_B1_Antenna_Geonosis),
             QCLASS(CIS_Backpack_Droid_B1_Antenna_Training),
+            QCLASS(CIS_Jetpack_Droid),
+            QCLASS(CIS_Jetpack_DroidRocket),
             QCLASS(AAT_CIS)
         };
         weapons[] = {

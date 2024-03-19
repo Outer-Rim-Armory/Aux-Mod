@@ -637,6 +637,38 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(CIS_Jetpack_Droid): CLASS(CIS_Backpack_Droid_B1) {
+        displayName = "[CIS] Battle Droid Jetpack";
+
+        model = "\MRC\JLTS\characters\DroidArmor\DroidJetpackB1.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_co.paa"};
+        picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_jetpack_ui_ca.paa";
+
+        JLTS_isJumppack = TRUE;
+        JLTS_settingsDialog = "JLTS_droid_jumppack_dialog";
+
+        JLTS_energy[] = {25,150};
+        JLTS_jumpLimits[] = {50, {2, 50}, "default"};
+        JLTS_steeringCoef = 0.06;
+        JLTS_recharge = 2;
+
+        JLTS_effectPoints[] = {"effect_left", "effect_right"};
+        JLTS_sounds[] = {
+            {"\MRC\JLTS\jumppacks\sounds\ignite.wss", 1, 1},
+            {"\MRC\JLTS\jumppacks\sounds\ignite_fail.wss", 3, 1},
+            {"\MRC\JLTS\jumppacks\sounds\stop.wss", 1, 1},
+            {"\MRC\JLTS\jumppacks\sounds\stop_emergency.wss", 5, 1},
+            "JLTS_jumppack_error",
+            "JLTS_SFX_jumppack_idle"
+        };
+    };
+
+    class CLASS(CIS_Jetpack_DroidRocket): CLASS(CIS_Jetpack_Droid) {
+        displayName = "[KC] Battle Droid Jetpack (Rocket)";
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_rocket_co.paa"};
+    };
+
     class CLASS(AAT_Base);
     class CLASS(AAT_CIS): CLASS(AAT_Base) {
         SCOPE_PUBLIC;
