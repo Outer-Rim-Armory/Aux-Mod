@@ -317,7 +317,6 @@ class CLASS(CIS_Unit_Droid_B1_Rocket): CLASS(CIS_Unit_Droid_B1) {
     displayName = "B1 Rocket Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Rocket);
 
-    editorSubcategory = QEDSUBCAT(Special);
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Rocket);
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_rocket_co.paa"};
     backpack = QCLASS(CIS_Jetpack_Droid_B1_Rocket);
