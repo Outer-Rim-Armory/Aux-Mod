@@ -81,6 +81,7 @@ class CfgPatches {
             QCLASS(CIS_Uniform_Droid_B1_Commander_Geonosis),
             QCLASS(CIS_Uniform_Droid_B1_Training),
             QCLASS(CIS_Uniform_Droid_B2),
+            QCLASS(CIS_Uniform_Droid_B2_Jetpack),
             QCLASS(CIS_Uniform_Droid_BX),
             QCLASS(CIS_Vest_Droid_BX),
             QCLASS(CIS_Vest_Droid_BX_Actor)

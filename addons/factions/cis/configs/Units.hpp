@@ -510,8 +510,13 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
 
 class CLASS(CIS_Unit_Droid_B2_Jetpack): CLASS(CIS_Unit_Droid_B2) {
     displayName = "B2-RP Super Battle Droid";
-    // uniformClass = QCLASS(CIS_Uniform_Droid_B2_Jetpack);
-    // editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B2_Jetpack);
+    uniformClass = QCLASS(CIS_Uniform_Droid_B2_Jetpack);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(cis\data\textures\uniform\b2\Jetpack_arms_co.paa),
+        QPATHTOF(cis\data\textures\uniform\b2\Jetpack_legs_co.paa),
+        QPATHTOF(cis\data\textures\uniform\b2\Jetpack_torso_co.paa)
+    };
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B2_Jetpack);
     backpack = QCLASS(CIS_Jetpack_Droid_B1);
 };
 
