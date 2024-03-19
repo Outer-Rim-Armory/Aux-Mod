@@ -126,7 +126,7 @@ class CLASS(CIS_Backpack_Droid_B1_Antenna_Training): CLASS(CIS_Backpack_Droid_B1
     };
 };
 
-class CLASS(CIS_Jetpack_Droid): CLASS(CIS_Backpack_Droid_B1) {
+class CLASS(CIS_Jetpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
     displayName = "[CIS] Battle Droid Jetpack";
 
     model = "\MRC\JLTS\characters\DroidArmor\DroidJetpackB1.p3d";
@@ -153,7 +153,7 @@ class CLASS(CIS_Jetpack_Droid): CLASS(CIS_Backpack_Droid_B1) {
     };
 };
 
-class CLASS(CIS_Jetpack_DroidRocket): CLASS(CIS_Jetpack_Droid) {
+class CLASS(CIS_Jetpack_Droid_B1_Rocket): CLASS(CIS_Jetpack_Droid_B1) {
     displayName = "[KC] Battle Droid Jetpack (Rocket)";
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_rocket_co.paa"};
 };
