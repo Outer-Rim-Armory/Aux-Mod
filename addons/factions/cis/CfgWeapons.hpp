@@ -89,15 +89,24 @@ class CfgWeapons
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(CIS_Unit_Droid_B2);
         };
+
+        class XtdGearInfo {
+            model = QCLASS(CIS_Uniforms_B2);
+            camo = "Standard";
+        };
     };
 
-    class CLASS(CIS_Uniform_Droid_B2_Jetpack): CLASS(CIS_Uniform_Droid_Base) {
+    class CLASS(CIS_Uniform_Droid_B2_Jetpack): CLASS(CIS_Uniform_Droid_B2) {
         SCOPE_PUBLIC;
 
         displayName = "[CIS] B2-RP Super Battle Droid";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(CIS_Unit_Droid_B2_Jetpack);
+        };
+
+        class XtdGearInfo: XtdGearInfo {
+            camo = "Jetpack";
         };
     };
 
@@ -108,6 +117,11 @@ class CfgWeapons
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(CIS_Unit_Droid_BX);
+        };
+
+        class XtdGearInfo {
+            model = QCLASS(CIS_Uniforms_BX);
+            camo = "Standard";
         };
     };
 

@@ -15,7 +15,7 @@ class XtdGearModels {
                     "Commander",
                     "Crew",
                     "Pilot",
-                    "Saboteur"
+                    "Rocket"
                 };
 
                 class Standard { label = "Standard"; };
@@ -24,7 +24,7 @@ class XtdGearModels {
                 class Commander { label = "Commander"; };
                 class Crew { label = "Crew"; };
                 class Pilot { label = "Pilot"; };
-                class Saboteur { label = "Saboteur"; };
+                class Rocket { label = "Rocket"; };
             };
 
             class variant {
@@ -48,6 +48,40 @@ class XtdGearModels {
                     label = "Training";
                     image = "#(rgb,8,8,3)color(0.561,0.561,0.561,1)";
                 };
+            };
+        };
+
+        class CLASS(CIS_Uniforms_B2) {
+            label = "B2 Super Battle Droid";
+            author = AUTHOR;
+            options[] = {"camo"};
+
+            class camo {
+                label = "Role";
+                changeInGame = FALSE;
+                values[] = {
+                    "Standard",
+                    "Jetpack"
+                };
+
+                class Standard { label = "Standard"; };
+                class Jetpack { label = "Jetpack"; };
+            };
+        };
+
+        class CLASS(CIS_Uniforms_BX) {
+            label = "BX Commando Droid";
+            author = AUTHOR;
+            options[] = {"camo"};
+
+            class camo {
+                label = "Role";
+                changeInGame = FALSE;
+                values[] = {
+                    "Standard"
+                };
+
+                class Standard { label = "Standard"; };
             };
         };
     };
