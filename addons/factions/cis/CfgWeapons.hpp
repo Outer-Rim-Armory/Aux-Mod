@@ -94,7 +94,7 @@ class CfgWeapons
     class CLASS(CIS_Uniform_Droid_B2_Jetpack): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;
 
-        displayName = "[CIS] B2-RP Super Battle4 Droid";
+        displayName = "[CIS] B2-RP Super Battle Droid";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(CIS_Unit_Droid_B2_Jetpack);

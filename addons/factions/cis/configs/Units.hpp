@@ -414,7 +414,7 @@ class CLASS(CIS_Unit_Droid_B1_Commander_Geonosis): CLASS(CIS_Unit_Droid_B1_Comma
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Commander_Geonosis);
     editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander_Geonosis);
-    hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"};
+    hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1GeonosisCommander_co.paa"};
     backpack = QCLASS(CIS_Backpack_Droid_B1_Antenna_Geonosis);
 };
 
