@@ -102,6 +102,7 @@ class CfgWeapons
     #include "configs\Vests_Infantry.hpp"
     #include "configs\Vests_Airborne.hpp"
     #include "configs\Vests_Engineer.hpp"
+    #include "configs\Vests_Tanker.hpp"
     #include "configs\Vests_ARC.hpp"
     #include "configs\Vests_Commando.hpp"
 

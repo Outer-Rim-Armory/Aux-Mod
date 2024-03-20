@@ -17,7 +17,8 @@ class CfgPatches
             "SWLB_Clones",
             "SWLB_CEE",
             "JLTS_core",
-            "JLTS_characters_CloneArmor2"
+            "JLTS_characters_CloneArmor2",
+            "SDT_gear"
         };
         units[] =
         {
@@ -393,6 +394,9 @@ class CfgPatches
             QCLASS(Vest_Engineer_CT),
             QCLASS(Vest_Engineer_CS),
             QCLASS(Vest_Engineer_Officer),
+            QCLASS(Vest_Tanker_CT),
+            QCLASS(Vest_Tanker_CS),
+            QCLASS(Vest_Tanker_WO),
             QCLASS(Vest_ARC),
             QCLASS(Vest_ARC_Light),
             QCLASS(Vest_ARC_v2),
