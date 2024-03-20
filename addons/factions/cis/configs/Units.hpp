@@ -13,6 +13,7 @@ class CLASS(CIS_Unit_Droid_Base): CLASS(CIS_Unit_Base) {
     impactDamageMultiplier = 0.5;
     minTotalDamageThreshold = 0.001;
 
+    genericNames = "JLTS_DroidsB1";
     identityTypes[] = {"lsd_voice_b1Droid"};
 
     impactEffectsBlood = "ImpactMetal";
