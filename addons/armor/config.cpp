@@ -106,8 +106,6 @@ class CfgPatches
             QCLASS(Jetpack_CDV21_LR),
             QCLASS(Jetpack_CDV19),
             QCLASS(Jetpack_CDV19_LR),
-            QCLASS(Jetpack_Droid),
-            QCLASS(Jetpack_DroidRocket),
             QGROUND_CLASS(Helmet_Airborne_Base),
             QGROUND_CLASS(Helmet_Airborne_CT),
             QGROUND_CLASS(Helmet_Airborne_CT_v2),

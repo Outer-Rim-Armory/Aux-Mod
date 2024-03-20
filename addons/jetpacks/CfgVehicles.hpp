@@ -79,8 +79,23 @@ class CfgVehicles
         GVAR(effectPoints)[] = {"effect"};
     };
 
-    class CLASS(Jetpack_Droid): CLASS(Jetpack_JT12)
-    {
+    class CLASS(CIS_Backpack_Droid_B1);
+    class CLASS(CIS_Jetpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
+        JLTS_isJumppack = FALSE;
+
+        GVAR(isJetpack) = TRUE;
+        GVAR(fuel) = JETPACK_FUEL_DEFAULT;
+        GVAR(speed) = JETPACK_SPEED_DEFAULT;
+        GVAR(strength) = JETPACK_STRENGTH_DEFAULT;
+
+        GVAR(effectPoints)[] = {"effect_left", "effect_right"};
+        GVAR(effects)[] = {
+            QCLASS(Effects_JetpackFire_Blue),
+            QCLASS(Effects_JetpackSmoke)
+        };
+        GVAR(effectSound)  = QPATHTOF(data\audio\Jetpack_Loop.wss);
+        GVAR(lightColor)[] = {0, 0.1, 0.9};
+
         GVAR(freefallHeight) = 100000;
     };
 

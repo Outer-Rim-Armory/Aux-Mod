@@ -1,7 +1,5 @@
-class CfgFactionClasses
-{
-    class CLASS(Faction_CIS)
-    {
+class CfgFactionClasses {
+    class FACTION(CIS) {
         displayName = "[KC] CIS";
     };
 };
