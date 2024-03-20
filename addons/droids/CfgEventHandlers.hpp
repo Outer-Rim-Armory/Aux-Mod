@@ -16,4 +16,9 @@ class Extended_InitPost_EventHandlers {
             init = QUOTE(_this#0 call FUNC(initB2));
         };
     };
+    class CLASS(CIS_Unit_Droid_B2) {
+        class GVAR(init) {
+            init = QUOTE(_this#0 call FUNC(initB1Prototype));
+        };
+    };
 };
