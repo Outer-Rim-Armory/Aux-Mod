@@ -45,6 +45,7 @@ class CfgWeapons
     B1_UNIFORM(Crew);
     B1_UNIFORM(Pilot);
     B1_UNIFORM(Rocket);
+    B1_UNIFORM(Prototype);
 
     class CLASS(CIS_Uniform_Droid_B1_Geonosis): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;

@@ -337,6 +337,7 @@ class CLASS(CIS_Unit_Droid_B1_Prototype): CLASS(CIS_Unit_Droid_B1) {
 
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Prototype);
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_prototype_co.paa"};
+    backpack = QCLASS(CIS_Backpack_Droid_B1_Prototype);
 
     weapons[] = {
         QCLASS(E5),
@@ -470,7 +471,7 @@ class CLASS(CIS_Unit_Droid_B1_Commander_Training): CLASS(CIS_Unit_Droid_B1) {
     editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander_Training);
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Training_co.paa"};
-    backpack = QCLASS(CIS_Backpack_Droid_B1_Training);
+    backpack = QCLASS(CIS_Backpack_Droid_B1_Antenna_Training);
 };
 
 class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {

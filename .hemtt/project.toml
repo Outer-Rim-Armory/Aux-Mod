@@ -64,7 +64,7 @@ workshop = [
     "1779063631", # ZEN
     "2018593688", # ZEN ACE Compat
     # "1686872930", # SDT # ! Not currently used
-    # "2567352444", # WBK Droids # ! Not currently used
+    "2567352444", # WBK Droids # TODO: Move assets to aux
     "1572627279", # OPTRE First Contact
     "2915485125", # Burn 'Em
     "767380317",  # Blastcore
