@@ -2,6 +2,9 @@ class CfgWeapons {
     class arifle_MX_Base_F;
     class JLTS_E5S: arifle_MX_Base_F {
         class Single;
+        class OpticsModes {
+            class Snip;
+        };
     };
     class CLASS(E5S_Base): JLTS_E5S {
         SCOPE_PRIVATE;
@@ -37,6 +40,12 @@ class CfgWeapons {
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_E5SShot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_E5SShot)};
+            };
+        };
+
+        class OpticsModes: OpticsModes {
+            class Snip: Snip {
+                thermalMode[] = {WHOT, BHOT};
             };
         };
     };
