@@ -1,9 +1,8 @@
-// Global toggle for compile cache
+// Global toggles for caching/logging
 // #define DISABLE_COMPILE_CACHE
+// #define DEBUG_MODE_FULL
+#define DEBUG_SYNCHRONOUS
 
-#ifdef __A3_DEBUG__
-    #include "\ORA\BNA_KC\addons\core\script_debug.hpp"
-#endif
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
