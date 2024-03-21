@@ -10,6 +10,11 @@ class CLASS(Vest_Tanker_CT): CLASS(Vest_Basic) {
         uniformModel = "\SDT_gear\SDT_gunner_vest.p3d";
         hiddenSelections[] = {"camo1"};
     };
+
+    class XtdGearInfo {
+        model = QCLASS(Vests_Tanker);
+        rank = "CT";
+    };
 };
 
 class CLASS(Vest_Tanker_CS): CLASS(Vest_Tanker_CT) {
@@ -29,6 +34,10 @@ class CLASS(Vest_Tanker_CS): CLASS(Vest_Tanker_CT) {
         uniformModel = "\SDT_gear\SDT_gunner_recon_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2", "holster", "pauldron"};
     };
+
+    class XtdGearInfo: XtdGearInfo {
+        rank = "CS";
+    };
 };
 
 class CLASS(Vest_Tanker_WO): CLASS(Vest_Tanker_CT) {
@@ -45,5 +54,9 @@ class CLASS(Vest_Tanker_WO): CLASS(Vest_Tanker_CT) {
     class ItemInfo: ItemInfo {
         uniformModel = "\SDT_gear\SDT_gunner_NCO_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
+    };
+
+    class XtdGearInfo: XtdGearInfo {
+        rank = "WO";
     };
 };
