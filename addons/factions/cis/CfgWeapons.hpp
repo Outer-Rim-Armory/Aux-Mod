@@ -121,9 +121,14 @@ class CfgWeapons
 
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_BX);
-            camo = "Standard";
+            role = "Standard";
         };
     };
+
+    BX_UNIFORM(Captain);
+    BX_UNIFORM(Diplomat);
+    BX_UNIFORM(Security);
+    BX_UNIFORM(Training);
 
     class ItemCore;
     class Vest_NoCamo_Base: ItemCore {

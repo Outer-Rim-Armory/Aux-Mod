@@ -48,6 +48,12 @@ class CfgPatches {
             QCLASS(CIS_Unit_Droid_B2),
             QCLASS(CIS_Unit_Droid_B2_Jetpack),
             QCLASS(CIS_Unit_Droid_BX),
+            QCLASS(CIS_Unit_Droid_BX_Shielded),
+            QCLASS(CIS_Unit_Droid_BX_Captain),
+            QCLASS(CIS_Unit_Droid_BX_Diplomat),
+            QCLASS(CIS_Unit_Droid_BX_Security),
+            QCLASS(CIS_Unit_Droid_BX_Security_Shielded),
+            QCLASS(CIS_Unit_Droid_BX_Training),
             QCLASS(CIS_Backpack_Droid_B1),
             QCLASS(CIS_Backpack_Droid_B1_predef_AT),
             QCLASS(CIS_Backpack_Droid_B1_predef_AA),
@@ -83,6 +89,10 @@ class CfgPatches {
             QCLASS(CIS_Uniform_Droid_B2),
             QCLASS(CIS_Uniform_Droid_B2_Jetpack),
             QCLASS(CIS_Uniform_Droid_BX),
+            QCLASS(CIS_Uniform_Droid_BX_Captain),
+            QCLASS(CIS_Uniform_Droid_BX_Diplomat),
+            QCLASS(CIS_Uniform_Droid_BX_Security),
+            QCLASS(CIS_Uniform_Droid_BX_Training),
             QCLASS(CIS_Vest_Droid_BX),
             QCLASS(CIS_Vest_Droid_BX_Actor)
         };

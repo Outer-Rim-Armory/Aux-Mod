@@ -72,16 +72,24 @@ class XtdGearModels {
         class CLASS(CIS_Uniforms_BX) {
             label = "BX Commando Droid";
             author = AUTHOR;
-            options[] = {"camo"};
+            options[] = {"role"};
 
-            class camo {
+            class role {
                 label = "Role";
                 changeInGame = FALSE;
                 values[] = {
-                    "Standard"
+                    "Standard",
+                    "Captain",
+                    "Diplomat",
+                    "Security",
+                    "Training",
                 };
 
                 class Standard { label = "Standard"; };
+                class Captain { label = "Captain"; };
+                class Diplomat { label = "Diplomat"; };
+                class Security { label = "Security"; };
+                class Training { label = "Training"; };
             };
         };
     };
