@@ -11,6 +11,12 @@ class Extended_PreInit_EventHandlers {
 };
 
 class Extended_InitPost_EventHandlers {
+    class CLASS(CIS_Unit_Droid_B1_Prototype) {
+        class GVAR(init) {
+            init = QUOTE(_this#0 call FUNC(initB1Prototype));
+        };
+    };
+
     class CLASS(CIS_Unit_Droid_B2) {
         class GVAR(init) {
             init = QUOTE(_this#0 call FUNC(initB2));
@@ -21,18 +27,12 @@ class Extended_InitPost_EventHandlers {
             init = "";
         };
     };
-
-    class CLASS(CIS_Unit_Droid_B1_Prototype) {
-        class GVAR(init) {
-            init = QUOTE(_this#0 call FUNC(initB1Prototype));
-        };
-    };
 };
 
 class Extended_Killed_EventHandlers {
     class CLASS(CIS_Unit_Droid_Base) {
         class GVAR(revive) {
-            killed = QUOTE(_this call FUNC(revive));
+            killed = QUOTE(_this#0 call FUNC(revive));
         };
     };
     class CLASS(CIS_Unit_Droid_B2) {
