@@ -525,13 +525,14 @@ class CLASS(CIS_Unit_Droid_B2_Jetpack): CLASS(CIS_Unit_Droid_B2) {
 class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
     SCOPE_PUBLIC;
 
-    editorSubcategory = QEDSUBCAT(SpecialForces);
+    editorSubcategory = QEDSUBCAT(CIS_BXs);
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX);
 
     displayName = "BX Commando Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_BX);
 
     model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
+    hiddenSelections[] = {"camo1"};
     hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
 
     magazines[] = {
@@ -555,4 +556,69 @@ class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
 
     linkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
     respawnLinkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+};
+
+class CLASS(CIS_Unit_Droid_BX_Shielded): CLASS(CIS_Unit_Droid_BX) {
+    displayName = "BX Commando Droid (Shield)";
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Shielded);
+
+    weapons[] = {
+        QCLASS(E5_Shielded),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5_Shielded),
+        "Throw",
+        "Put"
+    };
+};
+
+class CLASS(CIS_Unit_Droid_BX_Captain): CLASS(CIS_Unit_Droid_BX) {
+    displayName = "BX Commando Droid Captain";
+    icon = "iconManLeader";
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Captain);
+
+    uniformClass = QCLASS(CIS_Uniform_Droid_BX_Captain);
+    hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\specops\textures\bx_captain_co.paa"};
+};
+
+class CLASS(CIS_Unit_Droid_BX_Diplomat): CLASS(CIS_Unit_Droid_BX) {
+    displayName = "BX Commando Droid Diplomat";
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Diplomat);
+
+    uniformClass = QCLASS(CIS_Uniform_Droid_BX_Diplomat);
+    hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\specops\textures\bx_diplomat_co.paa"};
+};
+
+class CLASS(CIS_Unit_Droid_BX_Security): CLASS(CIS_Unit_Droid_BX) {
+    displayName = "BX Commando Droid Security";
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Security);
+
+    uniformClass = QCLASS(CIS_Uniform_Droid_BX_Security);
+    hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\specops\textures\bx_security_co.paa"};
+};
+
+class CLASS(CIS_Unit_Droid_BX_Security_Shielded): CLASS(CIS_Unit_Droid_BX_Security) {
+    displayName = "BX Commando Droid Security (Shield)";
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Security_Shielded);
+
+    weapons[] = {
+        QCLASS(E5_Shielded),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5_Shielded),
+        "Throw",
+        "Put"
+    };
+};
+
+class CLASS(CIS_Unit_Droid_BX_Training): CLASS(CIS_Unit_Droid_BX) {
+    displayName = "BX Commando Droid Training";
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Training);
+
+    uniformClass = QCLASS(CIS_Uniform_Droid_BX_Training);
+    hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\trainingCamo\textures\bx_training_co.paa"};
 };

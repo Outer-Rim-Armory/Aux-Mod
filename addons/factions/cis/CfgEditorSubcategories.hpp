@@ -11,4 +11,7 @@ class CfgEditorSubcategories {
     class EDSUBCAT(CIS_B2s) {
         displayName = "B2 Super Battle Droids";
     };
+    class EDSUBCAT(CIS_BXs) {
+        displayName = "BX Commando Droids";
+    };
 };
