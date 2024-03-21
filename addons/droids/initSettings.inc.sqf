@@ -12,6 +12,6 @@
     "CHECKBOX",
     ["Can Revive", "Whether some battle droids have a chance to revive on death."],
     [QUOTE(MOD_NAME), "Battle Droids"],
-    true,
+    false,
     TRUE
 ] call CBA_fnc_addSetting;
