@@ -750,6 +750,24 @@ class XtdGearModels
             };
         };
 
+        class CLASS(Vests_Tanker): CLASS(Helmets_Phase1) {
+            label = "Tanker Vests";
+            options[] = {"rank"};
+
+            class rank {
+                changeInGame = FALSE;
+                values[] = {
+                    "CT",
+                    "CS",
+                    "WO"
+                };
+
+                class CT { label = "Trooper"; };
+                class CS { label = "NCO"; };
+                class WO { label = "Officer"; };
+            };
+        };
+
         class CLASS(Vests_ARC): CLASS(Helmets_Phase1)
         {
             label = "ARC Vests";
