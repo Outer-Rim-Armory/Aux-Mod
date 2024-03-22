@@ -12,3 +12,19 @@ All vehicles with multiple `TextureSources` come equipped with an ACE self inter
 
 ## Auto-Intercom Setter
 When boarding a vehicle, your intercom will be automatically set to the corresponding channel: "crew" for drivers, gunners, and commanders and "cargo" for anything else.
+
+## Vehicle Spawner
+To make an object a vehicle spawner, you can call the `BNA_KC_vehicles_fnc_vehicleSpawner` function. This function adds actions for most vehicle types, these actions spawn their respective vehicle. It will also add an action to delete the last spawned vehicle.
+
+```sqf
+// _console is an object
+// _spawnPad is an object
+[_console, _spawnPad] call BNA_KC_vehicles_fnc_vehicleSpawner;
+```
+
+If you want to only spawn a certain type of vehicle you can specify the type. By default, most KC vehicles will be added.
+
+```sqf
+// _type can be any of: "all", "air", "land"
+[_console, _spawnPad, _type] call BNA_KC_vehicles_fnc_vehicleSpawner;
+```
