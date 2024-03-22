@@ -22,6 +22,8 @@
  * Public: Yes
  */
 
+#define SPAWN_OFFSET 3
+
 params [
     ["_console", objNull, [objNull]],
     ["_spawnPad", objNull, [objNull]],
@@ -64,9 +66,24 @@ _console addAction [
             _arguments params ["_vehicleClass", "_spawnPad", "_direction"];
             private ["_spawnPos"];
             _spawnPos = getPosATL _spawnPad;
-            _spawnPos set [2, _spawnPos#2 + 2];
-            GVAR(lastVehicle) = createVehicle [_vehicleClass, _spawnPos, [], 0, "CAN_COLLIDE"];
+            _spawnPos set [2, _spawnPos#2 + SPAWN_OFFSET];
+
+            if (_vehicleClass isKindOf "CAManBase") then {
+                private _group = createGroup [side _caller, true];
+                GVAR(lastVehicle) = _group createUnit [_vehicleClass, _spawnPos, [], 0, "CAN_COLLIDE"];
+            } else {
+                GVAR(lastVehicle) = createVehicle [_vehicleClass, _spawnPos, [], 0, "CAN_COLLIDE"];
+            };
             GVAR(lastVehicle) setDir _direction;
+
+            // Give plenty of time for init scripts to run
+            [{
+                // Respect vehicles that may have allowDamage scripts
+                if (isDamageAllowed GVAR(lastVehicle)) then {
+                    GVAR(lastVehicle) allowDamage false;
+                    [{GVAR(lastVehicle) allowDamage true;}, [], 10] call CBA_fnc_waitAndExecute;
+                };
+            }, [], 0.5] call CBA_fnc_waitAndExecute;
         }, [_x, _spawnPad, _direction], 99 - _forEachIndex, false, true, "", QUOTE(isNull (objectParent _this)), 5
     ];
 } forEach _vehicles;
