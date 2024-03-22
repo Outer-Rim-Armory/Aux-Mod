@@ -221,3 +221,50 @@ class TransportItems \
     type = TYPE_MAGAZINE_PRIMARY_AND_THROW; \
     mass = 300; \
 }
+
+#define VEHICLE_LIST_AIR [ \
+    QCLASS(ARC170), \
+    QCLASS(Galaxy_Gunship), \
+    QCLASS(Galaxy_Transport_Vehicle), \
+    QCLASS(Galaxy_Transport_Infantry), \
+    QCLASS(LAATc), \
+    QCLASS(LAATi_MK1), \
+    QCLASS(LAATi_MK1_Lamps), \
+    QCLASS(LAATi_MK2), \
+    QCLASS(LAATi_MK2_Lamps), \
+    QCLASS(RepublicTransport), \
+    QCLASS(BTLB_YWing) \
+]
+
+#define VEHICLE_LIST_LAND [ \
+    QCLASS(ATAP), \
+    QCLASS(ATRT), \
+    QCLASS(ATTE), \
+    QCLASS(BARC), \
+    QCLASS(Blitz), \
+    QCLASS(Gammoth_Transport), \
+    QCLASS(Gammoth_Covered), \
+    QCLASS(Gammoth_Ammo), \
+    QCLASS(Gammoth_Medical), \
+    QCLASS(Gammoth_Repair), \
+    QCLASS(Gammoth_Refuel), \
+    QCLASS(Gammoth_Device), \
+    QCLASS(Glavenus_Unarmed), \
+    QCLASS(Glavenus_Medic), \
+    QCLASS(Glavenus_HMG), \
+    QCLASS(Glavenus_GMG), \
+    QCLASS(Hornet_Unarmed), \
+    QCLASS(Hornet_MG), \
+    QCLASS(Hornet_AT), \
+    QCLASS(Hydra), \
+    QCLASS(Juggernaut), \
+    QCLASS(Khezu_Unarmed), \
+    QCLASS(Khezu_Armed), \
+    QCLASS(Reek), \
+    QCLASS(RX200_AA), \
+    QCLASS(RX200_Artillery), \
+    QCLASS(TX130_M1), \
+    QCLASS(TX130_M1_Recon), \
+    QCLASS(TX130_M1_GL), \
+    QCLASS(TX130_Super) \
+]
