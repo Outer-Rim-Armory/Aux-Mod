@@ -22,6 +22,13 @@ class GVAR(DeleteCrew) \
     statement = QUOTE({_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)); \
 }
 
+#define UNFLIP_VEHICLE class GVAR(Unflip) { \
+    displayName = "Unflip"; \
+    condition = QUOTE(alive _target and {!canMove _target}); \
+    statement = QUOTE(_target call FUNC(unflip)); \
+    distance = 10; \
+}
+
 #define HUD_CHANGER class LS_HUD_Changer \
 { \
     displayName = "Change HUD Color"; \

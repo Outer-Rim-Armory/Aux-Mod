@@ -27,11 +27,21 @@ class CfgVehicles {
 
     class LandVehicle;
     class Car: LandVehicle {
+        class ACE_Actions {
+            class ACE_MainActions {
+                UNFLIP_VEHICLE;
+            };
+        };
         class ACE_SelfActions {
             SKIN_SWITCHER;
         };
     };
     class Tank: LandVehicle {
+        class ACE_Actions {
+            class ACE_MainActions {
+                UNFLIP_VEHICLE;
+            };
+        };
         class ACE_SelfActions {
             SKIN_SWITCHER;
         };
@@ -39,11 +49,21 @@ class CfgVehicles {
 
     class Air;
     class Helicopter: Air {
+        class ACE_Actions {
+            class ACE_MainActions {
+                UNFLIP_VEHICLE;
+            };
+        };
         class ACE_SelfActions {
             SKIN_SWITCHER;
         };
     };
     class Plane: Air {
+        class ACE_Actions {
+            class ACE_MainActions {
+                UNFLIP_VEHICLE;
+            };
+        };
         class ACE_SelfActions {
             SKIN_SWITCHER;
         };
@@ -51,6 +71,11 @@ class CfgVehicles {
 
     class Ship;
     class Ship_F: Ship {
+        class ACE_Actions {
+            class ACE_MainActions {
+                UNFLIP_VEHICLE;
+            };
+        };
         class ACE_SelfActions {
             SKIN_SWITCHER;
         };
