@@ -76,14 +76,8 @@ _console addAction [
             };
             GVAR(lastVehicle) setDir _direction;
 
-            // Give plenty of time for init scripts to run
-            [{
-                // Respect vehicles that may have allowDamage scripts
-                if (isDamageAllowed GVAR(lastVehicle)) then {
-                    GVAR(lastVehicle) allowDamage false;
-                    [{GVAR(lastVehicle) allowDamage true;}, [], 10] call CBA_fnc_waitAndExecute;
-                };
-            }, [], 0.5] call CBA_fnc_waitAndExecute;
+            GVAR(lastVehicle) allowDamage false;
+            [{GVAR(lastVehicle) allowDamage true;}, [], 10] call CBA_fnc_waitAndExecute;
         }, [_x, _spawnPad, _direction], 99 - _forEachIndex, false, true, "", QUOTE(isNull (objectParent _this)), 5
     ];
 } forEach _vehicles;
