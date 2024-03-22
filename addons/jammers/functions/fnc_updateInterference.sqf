@@ -45,7 +45,7 @@ _averageInterference = 1;
             _averageInterference = _interference;
         };
     };
-    TRACE_7("updateInterference",_radius,_strength,_distance,_distanceFactor,_signal,_interference,_averageInterference);
+    TRACE_7("updateInterference loop",_radius,_strength,_distance,_distanceFactor,_signal,_interference,_averageInterference);
 } forEach keys GVAR(activeJammers);
 
 _averageInterference = 0.1 max _averageInterference;

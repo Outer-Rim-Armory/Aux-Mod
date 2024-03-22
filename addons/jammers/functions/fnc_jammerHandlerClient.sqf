@@ -10,15 +10,15 @@
  * The CBA PFH id <NUMBER>
  *
  * Example:
- * call BNA_KC_jammers_fnc_jammerHandlerServer;
+ * call BNA_KC_jammers_fnc_jammerHandlerClient;
  *
  * Public: No
  */
 
 private ["_function", "_condition", "_exitCode", "_jammerHandler"];
-TRACE_1("fnc_jammerHandlerServer",CBA_missionTime);
+TRACE_1("fnc_jammerHandlerClient",CBA_missionTime);
 
-if (!isServer) exitWith {};
+if (!hasInterface) exitWith {};
 
 _function = {
     if (isGamePaused) then {continue;};
