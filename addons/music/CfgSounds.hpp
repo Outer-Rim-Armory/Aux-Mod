@@ -16,6 +16,8 @@ class CfgSounds
     SOUND(CarnageRoar2,"Carnage Roar 2","Roaring");
     SOUND(CarnageRoar3,"Carnage Roar 3","Roaring");
     SOUND(CarnageRoar4,"Carnage Roar 4","Roaring");
+    SOUND(COD_HammerDownCounterSign,"Hammer Down Countersign","Radio transmission");
+    SOUND(COD_HammerDownProtocol,"Hammer Down Protocol","Radio transmission");
     SOUND(LetThereBeCarnage,"Let There Be Carnage","Let there be carnage!");
     SOUND(EPF_Radio,"Holownet News","News broadcast");
     SOUND(EPF_Radio2,"Holownet News 2","News broadcast");

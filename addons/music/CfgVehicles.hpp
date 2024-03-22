@@ -16,6 +16,8 @@ class CfgVehicles
     SOUND_OBJ(CarnageRoar2,"[KC] Carnage Roar 2");
     SOUND_OBJ(CarnageRoar3,"[KC] Carnage Roar 3");
     SOUND_OBJ(CarnageRoar4,"[KC] Carnage Roar 4");
+    SOUND_OBJ(COD_HammerDownCounterSign,"Hammer Down Countersign");
+    SOUND_OBJ(COD_HammerDownProtocol,"Hammer Down Protocol");
     SOUND_OBJ(LetThereBeCarnage,"[KC] Let There Be Carnage");
     SOUND_OBJ(EPF_Radio,"[KC] Holownet News");
     SOUND_OBJ(EPF_Radio2,"[KC] Holownet News 2");
