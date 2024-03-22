@@ -1,8 +1,6 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class Sound;
-    class CLASS(Sound_Base): Sound
-    {
+    class CLASS(Sound_Base): Sound {
         SCOPE_PRIVATE;
         author = AUTHOR;
     };

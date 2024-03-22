@@ -1,5 +1,4 @@
-class CfgSFX
-{
+class CfgSFX {
     /* Macro Explanation
     * First value is the class name without prefix
       - This gets other text added to it, Restaurant becomes BNA_KC_Sound_Restaurant_SFX

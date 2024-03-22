@@ -1,5 +1,4 @@
-class CfgMusic
-{
+class CfgMusic {
     /* Macro Explanation
     * First value is the class name without prefix
         - This gets other text added to it, SW_AhsokaDelightful becomes BNA_KC_Music_SW_AhsokaDelightful
