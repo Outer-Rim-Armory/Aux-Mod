@@ -19,12 +19,13 @@ To make an object a vehicle spawner, you can call the `BNA_KC_vehicles_fnc_vehic
 ```sqf
 // _console is an object
 // _spawnPad is an object
-[_console, _spawnPad] call BNA_KC_vehicles_fnc_vehicleSpawner;
+// _direction is a number between 0 and 360, this is the direction spawned vehicles will face.
+[_console, _spawnPad, _direction] call BNA_KC_vehicles_fnc_vehicleSpawner;
 ```
 
 If you want to only spawn a certain type of vehicle you can specify the type. By default, most KC vehicles will be added.
 
 ```sqf
 // _type can be any of: "all", "air", "land"
-[_console, _spawnPad, _type] call BNA_KC_vehicles_fnc_vehicleSpawner;
+[_console, _spawnPad, _direction, _type] call BNA_KC_vehicles_fnc_vehicleSpawner;
 ```

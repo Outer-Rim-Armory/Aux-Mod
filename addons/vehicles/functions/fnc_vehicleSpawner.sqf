@@ -6,7 +6,9 @@
  * Arguments:
  * 0: The object to add the actions to <OBJECT>
  * 1: The object to spawn the vehicles on <OBJECT>
- * 2: Type of vehicles to add actions for <STRING>
+ * 2: The direction spawned vehicles will face <NUMBER>
+ *    - Will be clamped between 0 and 360.
+ * 3: Type of vehicles to add actions for <STRING>
  *    All: All vehicle types
  *    Air: Air vehicles
  *    Land: Land vehicles
@@ -23,15 +25,14 @@
 params [
     ["_console", objNull, [objNull]],
     ["_spawnPad", objNull, [objNull]],
+    ["_direction", 0, [0]],
     ["_type", "all", [""]]
 ];
 private ["_vehicles"];
 TRACE_2("fnc_vehicleSpawner",_console,_spawnPad);
 
 if (isNull _console or {isNull _spawnPad}) exitWith {};
-
-systemChat str VEHICLE_LIST_AIR;
-// systemChat str VEHICLE_LIST_LAND;
+_direction = CLAMP(_direction,0,360);
 
 _vehicles = switch (toLowerANSI _type) do {
     case "all": {
@@ -41,8 +42,6 @@ _vehicles = switch (toLowerANSI _type) do {
     case "land": {VEHICLE_LIST_LAND;};
     default {[]};
 };
-
-systemChat str _vehicles;
 
 _console addAction [
     "<t font='RobotoCondensedBold' color='#FF0000'>Delete Last Vehicle</t>", {
@@ -62,11 +61,12 @@ _console addAction [
     _console addAction [
         format ["<t color='#FFFFFF'>Spawn %1</t>", _vehicleName], {
             params ["_target", "_caller", "_actionId", "_arguments"];
-            _arguments params ["_vehicleClass", "_spawnPad"];
+            _arguments params ["_vehicleClass", "_spawnPad", "_direction"];
             private ["_spawnPos"];
             _spawnPos = getPosATL _spawnPad;
             _spawnPos set [2, _spawnPos#2 + 2];
             GVAR(lastVehicle) = createVehicle [_vehicleClass, _spawnPos, [], 0, "CAN_COLLIDE"];
-        }, [_x, _spawnPad], 99 - _forEachIndex, false, true, "", QUOTE(isNull (objectParent _this)), 5
+            GVAR(lastVehicle) setDir _direction;
+        }, [_x, _spawnPad, _direction], 99 - _forEachIndex, false, true, "", QUOTE(isNull (objectParent _this)), 5
     ];
 } forEach _vehicles;
