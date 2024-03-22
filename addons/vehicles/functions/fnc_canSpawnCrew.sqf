@@ -27,5 +27,5 @@ if (isNull _vehicle or {!(ace_player in _crew)}) exitWith {false};
 _emptyCrewSeats = 0;
 {
     _emptyCrewSeats = _emptyCrewSeats + (_vehicle emptyPositions _x);
-} forEach ["Commander", "Driver", "Gunner"];
+} forEach ["Commander", "Driver", "Gunner", "Turret"];
 _emptyCrewSeats > 0;
