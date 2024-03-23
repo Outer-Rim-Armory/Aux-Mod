@@ -14,7 +14,8 @@ class CfgPatches {
         units[] = {};
         weapons[] = {
             QCLASS(B2Blaster_base),
-            QCLASS(B2Blaster)
+            QCLASS(B2Blaster),
+            QCLASS(B2Blaster_rocket)
         };
         VERSION_CONFIG;
     };
