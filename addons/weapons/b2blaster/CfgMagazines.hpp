@@ -1,15 +1,18 @@
 class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_1rnd_WeaponName): CLASS(Mag_Base) {
+    class CLASS(Mag_60rnd_B2Blaster): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
-        displayName = "[KC] WeaponName Energy Cell";
+        displayName = "[KC] B2 Blaster Energy Cell";
         displayNameShort = "Standard Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 1<br/>Used In: WeaponName";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: B2 Blaster";
 
-        // model = "";
-        // picture = "";
+        model = "\SWLW_droids\smgs\e5\e5_mag.p3d";
+        picture = "\SWLW_droids\smgs\e5\data\ui\e5_mag_ui.paa";
 
-        ammo = QCLASS(Bullet_PlasmaRifle_Blue);
-        count = 1;
+        initSpeed = 310;
+        mass = 15;
+
+        ammo = QCLASS(Bullet_PlasmaRifle_Red);
+        count = 60;
     };
 };
