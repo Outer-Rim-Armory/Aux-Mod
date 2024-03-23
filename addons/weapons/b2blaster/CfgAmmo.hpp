@@ -1,9 +1,4 @@
 class CfgAmmo {
-    class CLASS(Bullet_PlasmaRifle_Red);
-    // class CLASS(Bullet_PlasmaB2Blaster): CLASS(Bullet_PlasmaRifle_Red) {
-
-    // };
-
     // Attempting to inherit from Rocket_base caused framerate issues when firing.
     // Instead, I just made a "fake rocket" by modifying a normal ammo type.
     class CLASS(Bullet_Base);
