@@ -9,6 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             QUOTE(ADDON),
             QGVAR(e5),
+            "ls_weapons",
             "SWLW_droids"
         };
         units[] = {};

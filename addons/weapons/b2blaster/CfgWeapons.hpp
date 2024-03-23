@@ -108,7 +108,7 @@ class CfgWeapons {
             displayName = "Wrist Rocket Launcher";
             modes[] = {"Single"};
             muzzles[] = {"this"};
-            // magazines[] = {};
+            magazines[] = {QCLASS(Mag_3rnd_B2Blaster_rocket)};
 
             useModelOptics = TRUE;
             modelOptics = "\A3\weapons_f\reticle\Optics_Gunner_02_F.p3d";
