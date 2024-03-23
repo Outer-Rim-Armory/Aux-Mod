@@ -18,6 +18,7 @@ class CfgWeapons {
         canShootInWater = FALSE;
 
         model = QPATHTOF(b2Blaster\data\models\CLASS(B2Blaster.p3d));
+        handAnim[] = {"OFP2_ManSkeleton", "\3AS\3AS_Weapons\DWBlaster\Data\Anim\DualWrist_handanim.rtm"};
         picture = QPATHTOF(b2Blaster\data\ui\b2Blaster_ca.paa);
 
         useModelOptics = TRUE;

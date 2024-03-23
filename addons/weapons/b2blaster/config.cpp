@@ -10,7 +10,8 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(e5),
             "ls_weapons",
-            "SWLW_droids"
+            "SWLW_droids",
+            "3AS_Weapons_DWBlaster"
         };
         units[] = {};
         weapons[] = {
