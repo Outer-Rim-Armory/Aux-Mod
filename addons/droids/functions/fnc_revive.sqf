@@ -41,11 +41,15 @@ INFO_2("Reviving unit %1 (%2)",_unit,typeOf _unit);
     {_newUnit setObjectTextureGlobal [_forEachIndex, _x]} forEach _textures;
     switch (toLowerANSI _droidType) do {
         case "b2": {
-            _oldUnit setObjectTextureGlobal ["camo_arms", ""];
-            _oldUnit setObjectTextureGlobal ["torso", ""];
-            _newUnit setObjectTextureGlobal ["legs", ""];
-            [_newUnit, "AmovPpneMstpSrasWrflDnon", 2] call ace_common_fnc_doAnimation;
-            _newUnit setUnitPos "DOWN";
+            if (random 1 > 0.5) then {
+                _oldUnit setObjectTextureGlobal ["camo_arms", ""];
+                _oldUnit setObjectTextureGlobal ["torso", ""];
+                _newUnit setObjectTextureGlobal ["legs", ""];
+                [_newUnit, "AmovPpneMstpSrasWrflDnon", 2] call ace_common_fnc_doAnimation;
+                _newUnit setUnitPos "DOWN";
+            } else {
+                deleteVehicle _oldUnit;
+            };
         };
         default {deleteVehicle _oldUnit;};
     };
