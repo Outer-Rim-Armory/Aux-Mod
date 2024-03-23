@@ -23,7 +23,7 @@ class CfgWeapons {
         JLTS_hasEMPProtection = TRUE;
 
         WBK_BurnEm_requiredBackpack = "";
-        WBK_BurnEm_flamethrowerParticlePos = "[[-0.32, 0.3, -0.3], 'leftHand']";
+        WBK_BurnEm_flamethrowerParticlePos = "[[0, 0, 0], 'righthand']";
         WBK_BurnEm_flamethrowerDistance = 40;
     };
 };
