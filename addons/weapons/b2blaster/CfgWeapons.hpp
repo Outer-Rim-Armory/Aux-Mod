@@ -4,6 +4,8 @@ class CfgWeapons {
         displayName = "[KC] B2 Arm Blaster (Base)";
         baseWeapon = QCLASS(B2Blaster_base);
 
+        model = QPATHTOEF(weapons,data\b2Blaster\CLASS(B2Blaster.p3d));
+
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = TRUE;
     };
