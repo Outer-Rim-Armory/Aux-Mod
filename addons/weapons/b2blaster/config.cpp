@@ -24,5 +24,6 @@ class CfgPatches {
 
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
+#include "CfgAmmo.hpp"
 #include "CfgSoundShaders.hpp"
 #include "CfgSoundSets.hpp"

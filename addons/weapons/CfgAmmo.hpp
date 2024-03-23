@@ -6,15 +6,6 @@ class CfgAmmo
     class CLASS(Bullet_Base): BulletBase
     {
         SCOPE_PRIVATE;
-    };
-
-    class CLASS(Bullet_PlasmaBase): CLASS(Bullet_Base)
-    {
-        coefGravity = 0.01;
-        airFriction = 0;
-        deflecting = 0;
-        cartridge = "";
-
         aiAmmoUsageFlags = AMMO_USAGE_INFANTRY;
         audibleFire = 80;
 
@@ -24,6 +15,14 @@ class CfgAmmo
         ACE_transonicStabilityCoef = 1;
         ACE_muzzleVelocityVariationSD = 0.3;
         ACE_velocityBoundaries[] = {};
+    };
+
+    class CLASS(Bullet_PlasmaBase): CLASS(Bullet_Base)
+    {
+        coefGravity = 0.01;
+        airFriction = 0;
+        deflecting = 0;
+        cartridge = "";
 
         PLASMA_SOUNDS;
         PLASMA_EFFECTS;

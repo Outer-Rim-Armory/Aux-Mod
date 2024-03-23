@@ -28,7 +28,7 @@ class CfgMagazines {
         initSpeed = 100;
         mass = 15;
 
-        // ammo = QCLASS(Rocket_B2Blaster);
+        ammo = QCLASS(Rocket_B2Blaster);
         count = 3;
     };
 };
