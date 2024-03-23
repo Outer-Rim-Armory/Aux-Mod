@@ -12,10 +12,16 @@ class CfgWeapons {
         baseWeapon = QCLASS(B2Blaster_base);
 
         modes[] = {"Single", "close", "short", "medium", "FullAuto"};
+        muzzles[] = {"this", "RocketLauncher"};
         magazines[] = {QCLASS(Mag_60rnd_B2Blaster)};
+
+        canShootInWater = FALSE;
 
         model = QPATHTOF(b2Blaster\data\models\CLASS(B2Blaster.p3d));
         picture = QPATHTOF(b2Blaster\data\ui\b2Blaster_ca.paa);
+
+        useModelOptics = TRUE;
+        modelOptics = "\A3\weapons_f\reticle\Optics_Gunner_02_F.p3d";
 
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = TRUE;
@@ -34,6 +40,7 @@ class CfgWeapons {
             aiRateOfFire = 1;
             aiRateOfFireDistance = 500;
 
+            sounds[] = {"StandardSound"};
             class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_B2Blaster_Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_B2Blaster_Shot)};
@@ -90,9 +97,68 @@ class CfgWeapons {
             recoil = "recoil_auto_pdw";
             recoilProne = "recoil_auto_prone_pdw";
 
+            sounds[] = {"StandardSound"};
             class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_B2Blaster_Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_B2Blaster_Shot)};
+            };
+        };
+
+        class RocketLauncher: CLASS(E5_base) {
+            displayName = "Wrist Rocket Launcher";
+            modes[] = {"Single"};
+            muzzles[] = {"this"};
+            // magazines[] = {};
+
+            useModelOptics = TRUE;
+            modelOptics = "\A3\weapons_f\reticle\Optics_Gunner_02_F.p3d";
+
+            fireLightDuration = 0.05;
+            fireLightIntensity = 0.2;
+            fireLightDiffuse[] = {0.831, 0.231, 0.251};
+
+            aiDispersionCoefX = 6;
+            changeFiremodeSound[] = {"", 1, 1};
+            discreteDistanceInitIndex = 1;
+            drySound[] = {"\A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_02_SPGM\MMG_02_Dry", 0.177828, 1, 10};
+
+            inertia = 1.1;
+            initSpeed = -1;
+            maxRecoilSway = 0.008;
+            recoil = "recoil_mmg_01";
+            reloadAction = "ReloadMagazine";
+            reloadMagazineSound[] = {"\SWLW_droids\smgs\e5\sounds\e5_reload.wss",1.5, 1, 20};
+            swayDecaySpeed = 2;
+
+            ace_overheating_allowSwapBarrel = TRUE;
+            ace_overheating_closedBolt = FALSE;
+            ace_Overheating_Dispersion = 0;
+            ace_Overheating_JamChance = 0;
+            ace_overheating_mrbs = 3e+009;
+            ace_overheating_slowdownFactor = 0;
+            ace_overpressure_angle = 0;
+            ace_overpressure_damage = 0;
+            ace_overpressure_priority = 1;
+            ace_overpressure_range = 0;
+
+            class Single: Mode_SemiAuto {
+                reloadTime = 0.5;
+                recoil = "recoil_auto_primary_3outof10";
+                recoilProne = "recoil_single_prone_mx";
+
+                dispersion = 0.00073;
+                minRange = 5;
+                minRangeProbab = 0.1;
+                midRange = 150;
+                midRangeProbab = 0.6;
+                maxRange = 300;
+                maxRangeProbab = 0.3;
+                aiRateOfFire = 1;
+
+                sounds[] = {"StandardSound"};
+                class StandardSound {
+                    soundSetShot[] = {QCLASS(SoundSet_B2Rocket_Shot)};
+                };
             };
         };
     };
