@@ -115,7 +115,7 @@ class CfgWeapons {
 
             fireLightDuration = 0.05;
             fireLightIntensity = 0.2;
-            fireLightDiffuse[] = {0.831, 0.231, 0.251};
+            fireLightDiffuse[] = {0.831, 0.831, 0.251};
 
             aiDispersionCoefX = 6;
             changeFiremodeSound[] = {"", 1, 1};

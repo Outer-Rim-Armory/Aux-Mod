@@ -18,6 +18,18 @@ class CLASS(Effect_E60_Fly) {
     };
 };
 
+class CLASS(Effect_B2Blaster_rocket_Fly): CLASS(Effect_E60_Fly) {
+    class Sparks: Sparks {
+        type = QCLASS(Cloudlet_B2Blaster_rocket_Sparks);
+    };
+    class Smoke: Smoke {
+        type = QCLASS(Cloudlet_B2Blaster_rocket_Smoke);
+    };
+    class Light: Light {
+        type = QCLASS(Light_B2Blaster_rocket);
+    };
+};
+
 class CLASS(Effects_Mortar_SmokeShellBlue) {
     class Smoke {
         type = QCLASS(Cloudlet_Mortar_SmokeShellBlue);

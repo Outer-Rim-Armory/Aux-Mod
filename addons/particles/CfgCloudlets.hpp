@@ -104,6 +104,50 @@ class CfgCloudlets {
         circleVelocity[] = {0, 0, 0};
     };
 
+    class CLASS(Cloudlet_B2Blaster_rocket_Sparks): Default {
+        interval = 0.0009;
+        lifeTime = 2.5;
+        circleRadius = 0;
+        circleVelocity[] = {0, 0, 0};
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal";
+        particleFSNtieth = 16;
+        particleFSIndex = 13;
+        particleFSFrameCount = 2;
+        particleFSLoop = 0;
+        angleVar = 360;
+        animationName = "";
+        particleType = "Billboard";
+        timerPeriod = 3;
+        moveVelocity[] = {0, 0, 0};
+        rotationVelocity = 1;
+        weight = 100;
+        volume = 0.01;
+        rubbing = 0.3;
+        size[] = {0.12,0};
+        sizeCoef = 1;
+        color[] = {{1, 0.6, 0.4, -50}};
+        colorCoef[] = {1, 1, 1, 1};
+        emissiveColor[] = {{10, 6, 4, 1}};
+        animationSpeed[] = {1000};
+        animationSpeedCoef = 1;
+        randomDirectionPeriod = 0;
+        randomDirectionIntensity = 0;
+        onTimerScript = "";
+        beforeDestroyScript = "";
+        blockAIVisibility = 0;
+        bounceOnSurface = 0.1;
+        bounceOnSurfaceVar = 0.1;
+        lifeTimeVar = 5;
+        position[] = {0, 0, 0};
+        positionVar[] = {0.01, 0.01, 0.01};
+        moveVelocityVar[] = {1, 3, 1};
+        rotationVelocityVar = 0;
+        sizeVar = 0;
+        colorVar[] = {0.05, 0.05, 0.05, 5};
+        randomDirectionPeriodVar = 0;
+        randomDirectionIntensityVar = 0;
+    };
+
     class Missile3;
     class CLASS(Cloudlet_E60R_Smoke): Missile3 {
         color[] = {
@@ -114,6 +158,17 @@ class CfgCloudlets {
         interval = 0.0005;
         size[] = {2, 4, 4};
         lifeTime = 3;
+    };
+
+    class CLASS(Cloudlet_B2Blaster_rocket_Smoke): Missile3 {
+        color[] = {
+            {0, 0, 0, 0.5},
+            {120, 120, 120, 1},
+            {120, 120, 120, 1}
+        };
+        size[] = {0.3, 0.5, 0.5};
+        lifeTime = 1;
+        interval = 0.0005;
     };
 
     class SmokeShellWhiteSmall;

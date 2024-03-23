@@ -28,7 +28,7 @@ class CfgAmmo {
         muzzleEffect = "BIS_fnc_effectFiredRocket";
         explosionEffects = "ATMissileExplosion";
         nameSound = "missiles";
-        // effectFly = QCLASS(Particle_B2Blaster_rocket_fly);
+        effectFly = QCLASS(Effect_B2Blaster_rocket_Fly);
 
         airlock = TRUE;
         irTarget = TRUE;
