@@ -7,7 +7,7 @@ class CfgVehicles {
         respawnMagazines[] = {ITEM_10("SWLW_ZH73_Mag")};
 
         GVAR(reviveUnit) = QCLASS(CIS_Unit_Droid_B2_Revived);
-        GVAR(reviveChance) = 1;
+        GVAR(reviveChance) = 0.3;
     };
 
     class CLASS(CIS_Unit_Droid_B2_Revived): CLASS(CIS_Unit_Droid_B2) {
@@ -22,7 +22,7 @@ class CfgVehicles {
 
     class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
         GVAR(reviveUnit) = QCLASS(CIS_Unit_Droid_BX_Revived);
-        GVAR(reviveChance) = 1;
+        GVAR(reviveChance) = 0.6;
     };
 
     class CLASS(CIS_Unit_Droid_BX_Revived): CLASS(CIS_Unit_Droid_BX) {
