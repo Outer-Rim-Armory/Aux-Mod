@@ -1,31 +1,25 @@
-class CLASS(Effect_E60_Fly)
-{
-    class Sparks
-    {
+class CLASS(Effect_E60_Fly) {
+    class Sparks {
         simulation = "particles";
         type = QCLASS(Cloudlet_E60R_Sparks);
         position[] = {0, 0, 0};
         qualityLevel = 2;
     };
-    class Smoke
-    {
+    class Smoke {
         simulation = "particles";
         type = QCLASS(Cloudlet_E60R_Smoke);
         position[] = {0, 0, 0};
         qualityLevel = -1;
     };
-    class Light
-    {
+    class Light {
         simulation = "light";
         type = QCLASS(Light_E60R);
         position[] = {0, 0, 0};
     };
 };
 
-class CLASS(Effects_Mortar_SmokeShellBlue)
-{
-    class Smoke
-    {
+class CLASS(Effects_Mortar_SmokeShellBlue) {
+    class Smoke {
         type = QCLASS(Cloudlet_Mortar_SmokeShellBlue);
         simulation = "particles";
 
@@ -34,10 +28,8 @@ class CLASS(Effects_Mortar_SmokeShellBlue)
         interval = 1;
     };
 };
-class CLASS(Effects_Mortar_SmokeShellRed): CLASS(Effects_Mortar_SmokeShellBlue)
-{
-    class Smoke: Smoke
-    {
+class CLASS(Effects_Mortar_SmokeShellRed): CLASS(Effects_Mortar_SmokeShellBlue) {
+    class Smoke: Smoke {
         type = QCLASS(Cloudlet_Mortar_SmokeShellRed);
     };
 };

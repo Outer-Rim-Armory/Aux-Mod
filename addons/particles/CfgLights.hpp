@@ -1,8 +1,6 @@
-class CfgLights
-{
+class CfgLights {
     class RocketLight;
-    class CLASS(Light_E60R): RocketLight
-    {
+    class CLASS(Light_E60R): RocketLight {
         color[] = {0.941, 0.443, 1};
         intensity = 1e8;
         dayLight = TRUE;
