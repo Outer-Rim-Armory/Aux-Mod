@@ -31,4 +31,20 @@ class CfgMagazines {
         ammo = QCLASS(Rocket_B2Blaster);
         count = 3;
     };
+
+    class CLASS(Mag_3rnd_B2Blaster_grenadeLauncher): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] Wrist Grenade Launcher Pack";
+        displayNameShort = "Grenade Launcher";
+        descriptionShort = "Grenade Pack<br/>Rounds: 3<br/>Used In: Wrist Grenade Launcher";
+
+        model = "\SWLW_clones\machineguns\Z6\Z6_g_mag.p3d";
+        picture = "\SWLW_clones\machineguns\Z6\data\ui\Z6_mag_ui.paa";
+
+        initSpeed = 80;
+        mass = 4;
+
+        // ammo = QCLASS(Rocket_B2Blaster);
+        count = 3;
+    };
 };

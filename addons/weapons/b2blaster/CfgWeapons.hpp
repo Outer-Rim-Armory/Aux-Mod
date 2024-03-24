@@ -170,6 +170,16 @@ class CfgWeapons {
         baseWeapon = QCLASS(B2Blaster);
     };
 
+    class CLASS(B2Blaster_grenadeLauncher): CLASS(B2Blaster_base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] Wrist Grenade Launcher";
+        baseWeapon = QCLASS(B2Blaster_grenadeLauncher);
+
+        modes[] = {"Single"};
+        muzzles[] = {"this"};
+        magazines[] = {QCLASS(Mag_3rnd_B2Blaster_grenadeLauncher)};
+    };
+
     class CLASS(B2Blaster_rocket): CLASS(B2Blaster_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] Wrist Rocket Launcher";
