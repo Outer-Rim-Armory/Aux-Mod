@@ -512,6 +512,40 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 };
 
+class CLASS(CIS_Unit_Droid_B2_RocketLauncher): CLASS(CIS_Unit_Droid_B2) {
+    displayName = "B2-HA Super Battle Droid";
+    weapons[] = {
+        QCLASS(B2Blaster_rocket)
+    };
+    respawnWeapons[] = {
+        QCLASS(B2Blaster_rocket)
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_3rnd_B2Blaster_rocket))
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_3rnd_B2Blaster_rocket))
+    };
+};
+
+class CLASS(CIS_Unit_Droid_B2_Grenadier): CLASS(CIS_Unit_Droid_B2) {
+    displayName = "B2-GRN Super Battle Droid";
+    weapons[] = {
+        QCLASS(B2Blaster_grenadeLauncher)
+    };
+    respawnWeapons[] = {
+        QCLASS(B2Blaster_grenadeLauncher)
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_3rnd_B2Blaster_grenadeLauncher))
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_3rnd_B2Blaster_grenadeLauncher))
+    };
+};
+
 class CLASS(CIS_Unit_Droid_B2_Jetpack): CLASS(CIS_Unit_Droid_B2) {
     displayName = "B2-RP Super Battle Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B2_Jetpack);
