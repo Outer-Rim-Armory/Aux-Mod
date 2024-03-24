@@ -4,7 +4,11 @@ class RscDisplayMainMenuBackground
     {
         class Picture: RscPicture
         {
-            text = QPATHTOF(data\backgrounds\Background1.jpg);
+            x = "SafeZoneX";
+            y = "SafeZoneY";
+            h = "SafeZoneH";
+            w = "SafeZoneW";
+            text = QPATHTOF(data\backgrounds\Background1_co.paa);
         };
     };
 };
