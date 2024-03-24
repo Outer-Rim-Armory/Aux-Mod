@@ -178,6 +178,24 @@ class CfgWeapons {
         modes[] = {"Single"};
         muzzles[] = {"this"};
         magazines[] = {QCLASS(Mag_3rnd_B2Blaster_grenadeLauncher)};
+
+        class Single: Single {
+            reloadTime = 2.5;
+
+            maxRange = 500;
+            maxRangeProbab = 0.3;
+            midRange = 0;
+            midRangeProbab = 0.6;
+            minRange = 0;
+            minRangeProbab = 0.1;
+
+            sounds[] = {"StandardSound"};
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_B2GL_Shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_B2GL_Shot)};
+            };
+        };
+
     };
 
     class CLASS(B2Blaster_rocket): CLASS(B2Blaster_base) {

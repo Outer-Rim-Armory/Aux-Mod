@@ -12,4 +12,11 @@ class CfgSoundShaders {
             {"\SWLW_rework\sounds\launcher\PLX_shot.wss", 1, 1}
         };
     };
+
+    class CLASS(SoundShader_B2GL_Shot): CLASS(SoundShader_WeaponShot_Base) {
+        range = 2000;
+        samples[] = {
+            {"\SWLW_rework\sounds\e-series\E5S_shot.wss", 1, 1}
+        };
+    };
 };
