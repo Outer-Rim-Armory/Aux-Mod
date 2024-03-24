@@ -21,6 +21,7 @@ class CfgPatches
             QGVAR(dc15x),
             QGVAR(dc17),
             QGVAR(dc17m),
+            QGVAR(dc20y),
             QGVAR(dp23),
             QGVAR(e5),
             QGVAR(e5c),
