@@ -382,6 +382,32 @@ class CfgAmmo
         lightColor[] = {0.25, 0.25, 0.5, 0.5};
     };
 
+    class G_40mm_HE;
+    class CLASS(Grenade_B2Blaster): G_40mm_HE {
+        hit = 10;
+        dangerRadiusHit = 30;
+        indirectHit = 8;
+        indirectHitRange = 6;
+        explosionEffectsRadius = 20;
+        suppressionRadiusHit = 30;
+
+        typicalspeed = 30;
+        visibleFireTime = 1;
+        visibleFire = 0.5;
+        audibleFire = 0.05;
+        fuseDistance = 0;
+        explosionTime = 5;
+        timeToLive = 30;
+
+        explosionEffects = "VehicleExplosionEffects";
+        model = "\ls_weapons\grenades\thermalDet\ls_grenade_thermalDet.p3d";
+        soundFly[] = {"\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40};
+
+        ace_frag_enabled = FALSE;
+        ace_frag_skip = FALSE;
+        ace_frag_force = FALSE;
+    };
+
     // TODO: Update to inherit from base KC bullet
     class SWLW_ammo_40mm_at;
     class CLASS(Bullet_Plasma40mm_AT): SWLW_ammo_40mm_at

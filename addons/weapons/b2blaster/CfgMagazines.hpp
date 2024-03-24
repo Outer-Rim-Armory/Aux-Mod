@@ -39,12 +39,20 @@ class CfgMagazines {
         descriptionShort = "Grenade Pack<br/>Rounds: 3<br/>Used In: Wrist Grenade Launcher";
 
         model = "\SWLW_clones\machineguns\Z6\Z6_g_mag.p3d";
-        picture = "\SWLW_clones\machineguns\Z6\data\ui\Z6_mag_ui.paa";
+        modelSpecial = "\a3\Weapons_F\MagazineProxies\mag_40x36_HE_1rnd.p3d";
+        modelSpecialIsProxy = TRUE;
+        picture = "\SWLW_clones\machineguns\Z6\data\ui\Z6_g_mag_ui.paa";
+
+        nameSound = "";
 
         initSpeed = 80;
-        mass = 4;
+        mass = 15;
+        deleteIfEmpty = FALSE;
+        type = AMMO_USAGE_MINE;
 
-        // ammo = QCLASS(Rocket_B2Blaster);
+        tracersEvery = 0;
+
+        ammo = QCLASS(Grenade_B2Blaster);
         count = 3;
     };
 };
