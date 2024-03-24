@@ -493,17 +493,17 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     };
 
     weapons[] = {
-        QCLASS(E5)
+        QCLASS(B2Blaster)
     };
     respawnWeapons[] = {
-        QCLASS(E5)
+        QCLASS(B2Blaster)
     };
 
     magazines[] = {
-        ITEM_5(QCLASS(Mag_100rnd_E5))
+        ITEM_5(QCLASS(Mag_60rnd_B2Blaster))
     };
     respawnMagazines[] = {
-        ITEM_5(QCLASS(Mag_100rnd_E5))
+        ITEM_5(QCLASS(Mag_60rnd_B2Blaster))
     };
 
     linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
