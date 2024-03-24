@@ -106,8 +106,7 @@ class CfgAmmo
         effectfly = "JLTS_plasma_green";
     };
 
-    class CLASS(Bullet_PlasmaSniper_Blue): CLASS(Bullet_PlasmaBase)
-    {
+    class CLASS(Bullet_PlasmaSniper_Blue): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
         hit = 24;
@@ -132,11 +131,11 @@ class CfgAmmo
         effectfly = "JLTS_plasma_blue";
 
         ACE_ballisticCoefficients[] = {0.322};
-        ACE_barrelLengths[] = {508,660.4,711.2};
+        ACE_barrelLengths[] = {508, 660.4, 711.2};
         ACE_bulletLength = 39.573;
         ACE_bulletMass = 16.2;
         ACE_caliber = 8.585;
-        ACE_muzzleVelocities[] = {880,915,925};
+        ACE_muzzleVelocities[] = {880, 915, 925};
     };
     class CLASS(Bullet_PlasmaSniper_Red): CLASS(Bullet_PlasmaSniper_Blue)
     {

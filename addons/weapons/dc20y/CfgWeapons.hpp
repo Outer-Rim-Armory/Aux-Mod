@@ -13,11 +13,11 @@ class CfgWeapons {
         modes[] = {"Single"};
         muzzles[] = {"this"};
 
-        // magazines[] = {
-        //     QCLASS(Mag_10Rnd_DC20Y),
-        //     QCLASS(Mag_3Rnd_DC20Y_AP),
-        //     QCLASS(Mag_5Rnd_DC20Y_HE)
-        // };
+        magazines[] = {
+            QCLASS(Mag_10Rnd_DC20Y),
+            QCLASS(Mag_3Rnd_DC20Y_AP),
+            QCLASS(Mag_5Rnd_DC20Y_HE)
+        };
         magazineWell[] = {};
 
         drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
