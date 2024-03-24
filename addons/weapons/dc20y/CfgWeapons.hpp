@@ -1,12 +1,9 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class OPTRE_LongRifle_Base;
-    class OPTRE_M99A2S3: OPTRE_LongRifle_Base
-    {
+    class OPTRE_M99A2S3: OPTRE_LongRifle_Base {
         class Single;
     };
-    class CLASS(DC20Y_Base): OPTRE_M99A2S3
-    {
+    class CLASS(DC20Y_Base): OPTRE_M99A2S3 {
         SCOPE_PRIVATE;
         author = "Keeli Company Aux Team";
 
@@ -16,8 +13,7 @@ class CfgWeapons
         modes[] = {"Single"};
         muzzles[] = {"this"};
 
-        // magazines[] =
-        // {
+        // magazines[] = {
         //     QCLASS(Mag_10Rnd_DC20Y),
         //     QCLASS(Mag_3Rnd_DC20Y_AP),
         //     QCLASS(Mag_5Rnd_DC20Y_HE)
@@ -32,8 +28,7 @@ class CfgWeapons
         fireLightIntensity = 0.5;
         flashSize = 0.5;
 
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             QPATHTOF(SUBCOMPONENT\data\textures\camo_attach_co.paa),
             "",
             QPATHTOF(SUBCOMPONENT\data\textures\camo_front_co.paa),
@@ -43,18 +38,15 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
-        class Single: Single
-        {
-            class StandardSound
-            {
+        class Single: Single {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_DC20YShot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_DC20YShot)};
             };
         };
     };
 
-    class CLASS(DC20Y): CLASS(DC20Y_Base)
-    {
+    class CLASS(DC20Y): CLASS(DC20Y_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-20Y";
 
@@ -62,8 +54,7 @@ class CfgWeapons
         JLTS_friedItem = QCLASS(DC20Y_Fried);
     };
 
-    class CLASS(DC20Y_Fried): CLASS(DC20Y)
-    {
+    class CLASS(DC20Y_Fried): CLASS(DC20Y) {
         SCOPE_HIDDEN;
         displayName = "[KC] DC-20Y (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";

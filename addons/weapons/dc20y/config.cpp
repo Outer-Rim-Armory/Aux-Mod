@@ -1,24 +1,20 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
-        author = "Keeli Company Aux Team";
+class CfgPatches {
+    class SUBADDON {
+        author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
+            QGVAR(accessories),
             "OPTRE_Weapons_Sniper",
-            "Aux501_Patch_Accessories",
             "JLTS_weapons_DC17SA",
             "ace_laserpointer"
         };
         units[] = {};
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(DC20Y_Base),
             QCLASS(DC20Y),
             QCLASS(DC20Y_Fried)
