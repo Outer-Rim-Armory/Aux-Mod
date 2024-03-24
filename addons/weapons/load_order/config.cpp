@@ -12,6 +12,7 @@ class CfgPatches
         {
             QUOTE(ADDON),
             QGVAR(accessories),
+            QGVAR(b2Blaster),
             QGVAR(dc15a),
             QGVAR(dc15c),
             QGVAR(dc15l),
@@ -23,15 +24,16 @@ class CfgPatches
             QGVAR(dp23),
             QGVAR(e5),
             QGVAR(e5c),
+            QGVAR(e5s),
             QGVAR(e60r),
             QGVAR(gr20),
             QGVAR(hi12),
             QGVAR(lw38),
             QGVAR(rps6),
             QGVAR(rps7),
+            QGVAR(sbb3),
             QGVAR(valken38x),
             QGVAR(westar_m5),
-            // QGVAR(x42), // Not included due to Burn 'Em requirement, causes circular dependency
             QGVAR(z6)
         };
         units[] = {};
