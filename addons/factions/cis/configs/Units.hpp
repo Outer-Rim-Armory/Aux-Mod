@@ -487,8 +487,8 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     model = "\lsd_armor_redfor\uniform\cis\b2\lsd_cis_b2_uniform";
     hiddenSelections[] = {"camo_arms", "legs", "torso"};
     hiddenSelectionsTextures[] = {
-        "\lsd_armor_redfor\uniform\cis\b2\data\arms_co.paa",
-        "\lsd_armor_redfor\uniform\cis\b2\data\legs_co.paa",
+        QPATHTOF(cis\data\textures\uniform\b2\arms_co.paa),
+        QPATHTOF(cis\data\textures\uniform\b2\legs_co.paa),
         QPATHTOF(cis\data\textures\uniform\b2\torso_co.paa)
     };
 
