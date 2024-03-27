@@ -86,7 +86,7 @@ class CfgWeapons
 
         modes[] = {"Single"};
         muzzles[] = {"this", "Stun", "Launcher"};
-        magazines[] = {QCLASS(Mag_20rnd_DC17), "Aux12thFleet_Mag_DC17"};
+        magazines[] = {QCLASS(Mag_20Rnd_DC17), "Aux12thFleet_Mag_DC17"};
         magazineWell[] = {};
 
         canShootInWater = TRUE;

@@ -1,15 +1,12 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             QGVAR(accessories),
             QGVAR(b2Blaster),
@@ -21,6 +18,7 @@ class CfgPatches
             QGVAR(dc15x),
             QGVAR(dc17),
             QGVAR(dc17m),
+            QGVAR(dc20y),
             QGVAR(dp23),
             QGVAR(e5),
             QGVAR(e5c),

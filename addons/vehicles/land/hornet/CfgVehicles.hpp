@@ -126,9 +126,9 @@ class CfgVehicles
                 weapons[] = {QCLASS(MachineGun_Hornet)};
                 magazines[] =
                 {
-                    QCLASS(Mag_1000rnd_Coax),
-                    QCLASS(Mag_1000rnd_Coax),
-                    QCLASS(Mag_1000rnd_Coax)
+                    QCLASS(Mag_1000Rnd_Coax),
+                    QCLASS(Mag_1000Rnd_Coax),
+                    QCLASS(Mag_1000Rnd_Coax)
                 };
             };
             class CargoTurret_01: CargoTurret_01 {};

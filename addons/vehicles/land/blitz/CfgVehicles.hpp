@@ -197,11 +197,11 @@ class CfgVehicles
                         };
                         magazines[] =
                         {
-                            QCLASS(Mag_100rnd_Coax),
-                            QCLASS(Mag_100rnd_Coax),
-                            QCLASS(Mag_100rnd_Coax),
-                            QCLASS(Mag_100rnd_Coax),
-                            QCLASS(Mag_100rnd_Coax),
+                            QCLASS(Mag_100Rnd_Coax),
+                            QCLASS(Mag_100Rnd_Coax),
+                            QCLASS(Mag_100Rnd_Coax),
+                            QCLASS(Mag_100Rnd_Coax),
+                            QCLASS(Mag_100Rnd_Coax),
                             "SmokeLauncherMag"
                         };
                     };
@@ -214,14 +214,14 @@ class CfgVehicles
                 };
                 magazines[] =
                 {
-                    QCLASS(Mag_20rnd_Cannon_Blitz_HEAT),
-                    QCLASS(Mag_20rnd_Cannon_Blitz_HE),
-                    QCLASS(Mag_20rnd_Cannon_Blitz_AT),
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax)
+                    QCLASS(Mag_20Rnd_Cannon_Blitz_HEAT),
+                    QCLASS(Mag_20Rnd_Cannon_Blitz_HE),
+                    QCLASS(Mag_20Rnd_Cannon_Blitz_AT),
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax)
                 };
             };
         };

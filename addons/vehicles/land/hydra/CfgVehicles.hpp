@@ -109,9 +109,9 @@ class CfgVehicles
                 };
                 magazines[] =
                 {
-                    QCLASS(Mag_500rnd_Coax),
-                    QCLASS(Mag_500rnd_Coax),
-                    QCLASS(Mag_500rnd_Coax),
+                    QCLASS(Mag_500Rnd_Coax),
+                    QCLASS(Mag_500Rnd_Coax),
+                    QCLASS(Mag_500Rnd_Coax),
                     "96Rnd_40mm_G_belt",
                     "96Rnd_40mm_G_belt",
                     "SmokeLauncherMag"

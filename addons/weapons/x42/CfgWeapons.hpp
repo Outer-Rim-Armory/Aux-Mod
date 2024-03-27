@@ -22,7 +22,7 @@ class CfgWeapons
         WBK_BurnEm_RequiredBackpack = "";
         WBK_BurnEm_FlamethrowerParticlePos = "[[-0.32, 0.3, -0.3], 'leftHand']";
 
-        magazines[] = {QCLASS(Mag_150rnd_X42)};
+        magazines[] = {QCLASS(Mag_150Rnd_X42)};
         magazineWell[] = {};
 
         JLTS_hasElectronics = TRUE;

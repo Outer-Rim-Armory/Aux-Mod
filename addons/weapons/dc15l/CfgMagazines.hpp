@@ -1,7 +1,7 @@
 class CfgMagazines
 {
     class CLASS(Mag_Base);
-    class CLASS(Mag_240rnd_DC15L): CLASS(Mag_Base)
+    class CLASS(Mag_240Rnd_DC15L): CLASS(Mag_Base)
     {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-15L Energy Cell";
@@ -16,7 +16,7 @@ class CfgMagazines
         initSpeed = 417;
     };
 
-    class Aux12thFleet_Mag_DC15L: CLASS(Mag_240rnd_DC15L)
+    class Aux12thFleet_Mag_DC15L: CLASS(Mag_240Rnd_DC15L)
     {
         SCOPE_HIDDEN;
         descriptionShort = "Energy Cell Pack<br/>Rounds: 240<br/>Used In: DC-15L<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";

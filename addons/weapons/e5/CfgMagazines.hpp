@@ -1,7 +1,7 @@
 class CfgMagazines
 {
     class CLASS(Mag_Base);
-    class CLASS(Mag_100rnd_E5): CLASS(Mag_Base)
+    class CLASS(Mag_100Rnd_E5): CLASS(Mag_Base)
     {
         SCOPE_PUBLIC;
         displayName = "[KC] E-5 Energy Cell";

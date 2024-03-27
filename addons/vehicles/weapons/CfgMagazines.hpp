@@ -8,7 +8,7 @@ class CfgMagazines
         mass = 8;
     };
 
-    class CLASS(Mag_20rnd_Cannon_Blitz_HEAT): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_20Rnd_Cannon_Blitz_HEAT): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayName = "HEAT";
@@ -24,7 +24,7 @@ class CfgMagazines
         muzzleImpulseFactor[] = {0.5, 3};
     };
 
-    class CLASS(Mag_20rnd_Cannon_Blitz_HE): CLASS(Mag_20rnd_Cannon_Blitz_HEAT)
+    class CLASS(Mag_20Rnd_Cannon_Blitz_HE): CLASS(Mag_20Rnd_Cannon_Blitz_HEAT)
     {
         displayName = "HE";
         displayNameShort = "HE";
@@ -34,7 +34,7 @@ class CfgMagazines
         muzzleImpulseFactor[] = {1, 6};
     };
 
-    class CLASS(Mag_20rnd_Cannon_Blitz_AT): CLASS(Mag_20rnd_Cannon_Blitz_HEAT)
+    class CLASS(Mag_20Rnd_Cannon_Blitz_AT): CLASS(Mag_20Rnd_Cannon_Blitz_HEAT)
     {
         displayName = "AT";
         displayNameShort = "AT";
@@ -42,7 +42,7 @@ class CfgMagazines
         initSpeed = 1750;
     };
 
-    class CLASS(Mag_100rnd_Coax): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_100Rnd_Coax): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         ammo = QCLASS(Bullet_PlasmaCoax_Blue);
@@ -55,16 +55,16 @@ class CfgMagazines
         weight = 126;
         muzzleImpulseFactor[] = {0.05, 0.05};
     };
-    class CLASS(Mag_500rnd_Coax): CLASS(Mag_100rnd_Coax)
+    class CLASS(Mag_500Rnd_Coax): CLASS(Mag_100Rnd_Coax)
     {
         count = 500;
     };
-    class CLASS(Mag_1000rnd_Coax): CLASS(Mag_100rnd_Coax)
+    class CLASS(Mag_1000Rnd_Coax): CLASS(Mag_100Rnd_Coax)
     {
         count = 1000;
     };
 
-    class CLASS(Mag_4000rnd_Gatling_Galaxy): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_4000Rnd_Gatling_Galaxy): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayNameShort = "High Energy";
@@ -78,7 +78,7 @@ class CfgMagazines
         weight = 126;
     };
 
-    class CLASS(Mag_100rnd_Cannon_Galaxy): CLASS(Mag_VehicleBase)
+    class CLASS(Mag_100Rnd_Cannon_Galaxy): CLASS(Mag_VehicleBase)
     {
         SCOPE_PUBLIC;
         displayNameShort = "High Energy";
@@ -124,7 +124,7 @@ class CfgMagazines
         muzzleImpulseFactor[] = {0.5, 2};
     };
 
-    class CLASS(Mag_9999rnd_ATRT): CLASS(Mag_Base)
+    class CLASS(Mag_9999Rnd_ATRT): CLASS(Mag_Base)
     {
         SCOPE_HIDDEN;
         displayName = "[KC] AT-RT Turret Battery Pack";

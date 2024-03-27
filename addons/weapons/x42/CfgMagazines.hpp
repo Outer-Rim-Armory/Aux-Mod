@@ -1,7 +1,7 @@
 class CfgMagazines
 {
     class CLASS(Mag_Base);
-    class CLASS(Mag_150rnd_X42): CLASS(Mag_Base)
+    class CLASS(Mag_150Rnd_X42): CLASS(Mag_Base)
     {
         SCOPE_PUBLIC;
         displayName = "[KC] X-42 Fuel Tank";

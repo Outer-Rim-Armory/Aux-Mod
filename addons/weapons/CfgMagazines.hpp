@@ -82,7 +82,7 @@ class CfgMagazines
 
         ammo = QCLASS(Flare_Blue);
     };
-    class CLASS(Mag_UGL_3rnd_FlareBlue): CLASS(Mag_UGL_FlareBlue)
+    class CLASS(Mag_UGL_3Rnd_FlareBlue): CLASS(Mag_UGL_FlareBlue)
     {
         displayName = "[KC] 3Rnd Flare Round (Blue)";
         displayNameShort = "3Rnd Blue Flare";
@@ -122,7 +122,7 @@ class CfgMagazines
         descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: EGLM, 3GL<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
 
-    class CLASS(3Rnd_UGL_FlareBlue): CLASS(Mag_UGL_3rnd_FlareBlue)
+    class CLASS(3Rnd_UGL_FlareBlue): CLASS(Mag_UGL_3Rnd_FlareBlue)
     {
         SCOPE_HIDDEN;
         descriptionShort = "Type: Flare Rounds - Blue <br />Rounds: 3 <br />Used in: EGLM, 3GL <br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";

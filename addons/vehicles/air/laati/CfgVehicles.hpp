@@ -61,9 +61,9 @@ class CfgVehicles {
             "Laserbatteries",
             "Laserbatteries",
 
-            "ls_mag_300rnd_CMFlareChaff_blue",
-            "ls_mag_300rnd_CMFlareChaff_blue",
-            "ls_mag_300rnd_CMFlareChaff_blue",
+            "ls_mag_300Rnd_CMFlareChaff_blue",
+            "ls_mag_300Rnd_CMFlareChaff_blue",
+            "ls_mag_300Rnd_CMFlareChaff_blue",
             "SmokeLauncherMag"
         };
 
