@@ -11,6 +11,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_PlasmaDC20Y);
         count = 10;
+        mass = 15;
     };
 
     class CLASS(Mag_3Rnd_DC20Y_AP): CLASS(Mag_10Rnd_DC20Y) {
@@ -20,6 +21,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_PlasmaDC20Y_AP);
         count = 3;
+        mass = 30;
     };
 
     class CLASS(Mag_5Rnd_DC20Y_HE): CLASS(Mag_10Rnd_DC20Y) {
@@ -32,5 +34,6 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_PlasmaDC20Y_HE);
         count = 5;
+        mass = 25;
     };
 };
