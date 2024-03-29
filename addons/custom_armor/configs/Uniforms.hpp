@@ -46,6 +46,7 @@ class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Base)
 };
 
 UNIFORM_CUSTOM(Rat);
+UNIFORM_CUSTOM(Rev);
 UNIFORM_CUSTOM(Sin);
 UNIFORM_CUSTOM(Sogi);
 UNIFORM_CUSTOM(Tyrant);
