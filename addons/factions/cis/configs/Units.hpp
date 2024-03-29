@@ -480,6 +480,7 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
 
     editorSubcategory = QEDSUBCAT(CIS_B2s);
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B2);
+    genericNames = QCLASS(CIS_Droids_B2);
 
     displayName = "B2 Super Battle Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B2);
@@ -527,6 +528,7 @@ class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
 
     editorSubcategory = QEDSUBCAT(CIS_BXs);
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX);
+    genericNames = QCLASS(CIS_Droids_BX);
 
     displayName = "BX Commando Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_BX);

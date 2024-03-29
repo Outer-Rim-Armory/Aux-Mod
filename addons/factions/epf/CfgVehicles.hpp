@@ -7,6 +7,8 @@ class CfgVehicles
         faction = QCLASS(Faction_EPF);
         uniformClass = QCLASS(EPF_Uniform);
 
+        genericNames = QCLASS(EPF_Solider);
+
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         hiddenSelections[] = {"camo", "insignia"};
         hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_green_co.paa"};

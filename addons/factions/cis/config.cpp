@@ -9,6 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             QUOTE(ADDON),
             QCLASS(armor),
+            "JLTS_core_droids",
             "JLTS_characters_DroidArmor",
             "lsd_armor_redfor",
             "ls_armor_redfor",
@@ -104,4 +105,5 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgEditorSubcategories.hpp"
+#include "CfgWorlds.hpp"
 #include "XtdGearModels.hpp"

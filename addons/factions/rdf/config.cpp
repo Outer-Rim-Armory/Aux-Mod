@@ -55,3 +55,4 @@ class CfgPatches
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgFactionClasses.hpp"
+#include "CfgWorlds.hpp"

@@ -7,6 +7,8 @@ class CfgVehicles
         faction = QCLASS(Faction_GM);
         editorSubcategory = QCLASS(EdSubCat_GM_INF_T1);
 
+        genericNames = QCLASS(GM_Soldier);
+
         items[] =
         {
             // Medical
@@ -200,6 +202,7 @@ class CfgVehicles
     {
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Rifleman);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -209,6 +212,7 @@ class CfgVehicles
     {
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Rifleman_T2);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -219,6 +223,7 @@ class CfgVehicles
     {
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -228,6 +233,7 @@ class CfgVehicles
     {
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT_T2);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -238,6 +244,7 @@ class CfgVehicles
     {
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -247,6 +254,7 @@ class CfgVehicles
     {
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT_T2);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -257,6 +265,7 @@ class CfgVehicles
     {
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Marksman);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
@@ -266,6 +275,7 @@ class CfgVehicles
     {
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Marksman_T2);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
@@ -276,6 +286,7 @@ class CfgVehicles
     {
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_SL);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -285,6 +296,7 @@ class CfgVehicles
     {
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_SL_T2);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
