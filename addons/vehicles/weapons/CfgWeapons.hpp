@@ -417,8 +417,7 @@ class CfgWeapons
     };
 
     class 3AS_ATRT_Weapon_F;
-    class CLASS(Turret_ATRT): 3AS_ATRT_Weapon_F
-    {
+    class CLASS(Turret_ATRT): 3AS_ATRT_Weapon_F {
         SCOPE_HIDDEN;
         author = AUTHOR;
 
@@ -428,6 +427,24 @@ class CfgWeapons
 
         magazines[] = {QCLASS(Mag_9999Rnd_ATRT)};
         magazineWell[] = {};
+
+        class OpticsModes {
+            class Zoom {
+                cameraDir = "";
+                distanceZoomMax = 200;
+                distanceZoomMin = 200;
+                memoryPointCamera = "ATRT_Optics1";
+                opticsDisablePeripherialVision = 0;
+                opticsFlare = 0;
+                opticsID = 1;
+                opticsPPEffects[] = {"Default"};
+                opticsZoomInit = 0.75;
+                opticsZoomMax = 1.25;
+                opticsZoomMin = 0.25;
+                useModelOptics = 0;
+                visionMode[] = {};
+            };
+        };
     };
 
     class 3AS_BARC_Repeater: CannonCore
