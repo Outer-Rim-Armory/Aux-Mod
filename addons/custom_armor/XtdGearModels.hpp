@@ -362,8 +362,10 @@ class XtdGearModels
                     "Keeli_CamoBrown",
                     "Keeli_CamoGrey",
                     "Rat",
+                    "Rev",
                     "Sin",
                     "Sogi",
+                    "Splashdown",
                     "Tyrant"
                 };
 
@@ -380,8 +382,10 @@ class XtdGearModels
                 class Keeli_CamoBrown { label = "Keeli Brown"; };
                 class Keeli_CamoGrey { label = "Keeli Grey"; };
                 class Rat { label = "Rat"; };
+                class Rev { label = "Rev"; };
                 class Sin { label = "Sin"; };
                 class Sogi { label = "Sogi"; };
+                class Splashdown { label = "Splashdown"; };
                 class Tyrant { label = "Tyrant"; };
             };
         };
