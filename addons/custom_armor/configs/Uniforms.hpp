@@ -14,8 +14,7 @@ UNIFORM_CUSTOM(Hagrid);
 UNIFORM_CUSTOM(Joe);
 UNIFORM_CUSTOM(Keeli);
 
-class CLASS(Uniform_Keeli_CamoBrown): CLASS(Uniform_Keeli)
-{
+class CLASS(Uniform_Keeli_CamoBrown): CLASS(Uniform_Keeli) {
     displayName = "[KC] Custom Armor ('Keeli') - Brown Camo";
 
     class ItemInfo: ItemInfo {
@@ -25,8 +24,7 @@ class CLASS(Uniform_Keeli_CamoBrown): CLASS(Uniform_Keeli)
         camo = "Brown";
     };
 };
-class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Keeli)
-{
+class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Keeli) {
     displayName = "[KC] Custom Armor ('Keeli') - Grey Camo";
 
     class ItemInfo: ItemInfo {
