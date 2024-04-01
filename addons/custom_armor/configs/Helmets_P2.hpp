@@ -30,7 +30,7 @@ class CLASS(Helmet_Phase2_Keeli_CamoBrown): CLASS(Helmet_Phase2_Base)
     class XtdGearInfo
     {
         model = QCLASS(Helmets_Phase2_Custom);
-        camo = "Keeli_CamoBrown";
+        custom = "Keeli_CamoBrown";
     };
 };
 class CLASS(Helmet_Phase2_KeeliCrimson_CamoBrown): CLASS(Helmet_Phase2_Keeli_CamoBrown)
@@ -64,7 +64,7 @@ class CLASS(Helmet_Phase2_Keeli_CamoGrey): CLASS(Helmet_Phase2_Base)
     class XtdGearInfo
     {
         model = QCLASS(Helmets_Phase2_Custom);
-        camo = "Keeli_CamoGrey";
+        custom = "Keeli_CamoGrey";
     };
 };
 class CLASS(Helmet_Phase2_KeeliCrimson_CamoGrey): CLASS(Helmet_Phase2_Keeli_CamoGrey)

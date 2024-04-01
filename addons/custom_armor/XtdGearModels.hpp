@@ -6,9 +6,9 @@ class XtdGearModels
         {
             label = "Custom Helmets (P1)";
             author = AUTHOR;
-            options[] = {"camo"};
+            options[] = {"custom"};
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -80,7 +80,7 @@ class XtdGearModels
         {
             label = "Custom Pilot Helmets (P1)";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -100,7 +100,7 @@ class XtdGearModels
         {
             label = "Custom Tanker Helmets (P1)";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -116,7 +116,7 @@ class XtdGearModels
         {
             label = "Custom Helmets (P2)";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -190,7 +190,7 @@ class XtdGearModels
         {
             label = "Custom Snow Helmets (P2)";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -210,7 +210,7 @@ class XtdGearModels
         {
             label = "Custom Pilot Helmets (P2)";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -230,7 +230,7 @@ class XtdGearModels
         {
             label = "Custom Tanker Helmets (P2)";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -248,7 +248,7 @@ class XtdGearModels
         {
             label = "Custom Helmets (P1-2)";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -264,7 +264,7 @@ class XtdGearModels
         {
             label = "Custom Engineer Helmets";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -282,7 +282,7 @@ class XtdGearModels
         {
             label = "Custom ARC Helmets";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -304,7 +304,7 @@ class XtdGearModels
         {
             label = "Custom ARF Helmets";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -330,7 +330,7 @@ class XtdGearModels
         {
             label = "Custom BARC Helmets";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -348,7 +348,7 @@ class XtdGearModels
         {
             label = "Custom Uniforms";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -400,7 +400,7 @@ class XtdGearModels
         {
             label = "Custom Insulated Uniforms (P2)";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =
@@ -420,7 +420,7 @@ class XtdGearModels
         {
             label = "Custom Vests";
 
-            class camo
+            class custom
             {
                 changeInGame = FALSE;
                 values[] =

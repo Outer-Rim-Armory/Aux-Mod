@@ -26,7 +26,7 @@ class CLASS(Uniform_Keeli_CamoBrown): CLASS(Uniform_Base)
     class XtdGearInfo
     {
         model = QCLASS(Uniforms_Custom);
-        camo = "Keeli_CamoBrown";
+        custom = "Keeli_CamoBrown";
     };
 };
 class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Base)
@@ -41,7 +41,7 @@ class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Base)
     class XtdGearInfo
     {
         model = QCLASS(Uniforms_Custom);
-        camo = "Keeli_CamoGrey";
+        custom = "Keeli_CamoGrey";
     };
 };
 
