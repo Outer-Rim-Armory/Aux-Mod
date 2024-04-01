@@ -35,7 +35,12 @@ class XtdGearModels {
                     "CSS",
                     "CSFC",
                     "CMS",
-                    "CSM"
+                    "CSM",
+                    "WO",
+                    "WO2",
+                    "WO3",
+                    "CL",
+                    "CL1"
                 };
 
                 class Base { label = "Base"; };
@@ -53,6 +58,11 @@ class XtdGearModels {
                 class CSFC { label = "CSFC"; };
                 class CMS { label = "CMS"; };
                 class CSM { label = "CSM"; };
+                class WO { label = "WO"; };
+                class WO2 { label = "WO2"; };
+                class WO3 { label = "WO3"; };
+                class CL { label = "CL"; };
+                class CL1 { label = "CL1"; };
             };
         };
 

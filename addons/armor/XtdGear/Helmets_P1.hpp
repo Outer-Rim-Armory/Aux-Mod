@@ -18,11 +18,20 @@ class CLASS(Helmet_Phase1_CSFC): CLASS(Helmet_Phase1_Base) { rank = "CSFC"; };
 class CLASS(Helmet_Phase1_CMS): CLASS(Helmet_Phase1_Base) { rank = "CMS"; };
 class CLASS(Helmet_Phase1_CSM): CLASS(Helmet_Phase1_Base) { rank = "CSM"; };
 
-class CLASS(Helmet_Phase1_Recruit_CamoBrown): CLASS(Helmet_Phase1_Base) { rank = "Recruit_CamoBrown"; };
-class CLASS(Helmet_Phase1_Recruit_CamoGrey): CLASS(Helmet_Phase1_Base) { rank = "Recruit_CamoGrey"; };
-class CLASS(Helmet_Phase1_Enlisted_CamoBrown): CLASS(Helmet_Phase1_Base) { rank = "Enlisted_CamoBrown"; };
-class CLASS(Helmet_Phase1_Enlisted_CamoGrey): CLASS(Helmet_Phase1_Base) { rank = "Enlisted_CamoGrey"; };
-class CLASS(Helmet_Phase1_NCO_CamoBrown): CLASS(Helmet_Phase1_Base) { rank = "NCO_CamoBrown"; };
-class CLASS(Helmet_Phase1_NCO_CamoGrey): CLASS(Helmet_Phase1_Base) { rank = "NCO_CamoGrey"; };
-class CLASS(Helmet_Phase1_Officer_CamoBrown): CLASS(Helmet_Phase1_Base) { rank = "Officer_CamoBrown"; };
-class CLASS(Helmet_Phase1_Officer_CamoGrey): CLASS(Helmet_Phase1_Base) { rank = "Officer_CamoGrey"; };
+class CLASS(Helmet_Phase1_Recruit_CamoBrown): CLASS(Helmet_Phase1_CR) { camo = "Brown"; };
+class CLASS(Helmet_Phase1_Recruit_CamoGrey): CLASS(Helmet_Phase1_CR) { camo = "Grey"; };
+
+class CLASS(Helmet_Phase1_Enlisted_CamoBrown): CLASS(Helmet_Phase1_CT) { camo = "Brown"; };
+class CLASS(Helmet_Phase1_Enlisted_CamoGrey): CLASS(Helmet_Phase1_CT) { camo = "Grey"; };
+
+class CLASS(Helmet_Phase1_NCO_CamoBrown): CLASS(Helmet_Phase1_CS) { camo = "Brown"; };
+class CLASS(Helmet_Phase1_NCO_CamoGrey): CLASS(Helmet_Phase1_CS) { camo = "Grey"; };
+
+class CLASS(Helmet_Phase1_Officer_CamoBrown): CLASS(Helmet_Phase1_Base) {
+    rank = "WO";
+    camo = "Brown";
+};
+class CLASS(Helmet_Phase1_Officer_CamoGrey): CLASS(Helmet_Phase1_Base) {
+    rank = "WO";
+    camo = "Grey";
+};
