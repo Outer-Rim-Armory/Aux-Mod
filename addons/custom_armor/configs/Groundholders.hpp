@@ -1,4 +1,5 @@
 class DOUBLES(Ground,CLASS(Holder_Base));
+GROUND_HOLDER(Helmet_Phase1_Alvarez,"INF P1 Helm ('Alvarez')");
 GROUND_HOLDER(Helmet_Phase1_Axel,"INF P1 Helm ('Axel')");
 GROUND_HOLDER(Helmet_Phase1_Burnt,"INF P1 Helm ('Burnt')");
 GROUND_HOLDER(Helmet_Phase1_BurntBacta,"INF P1 Helm ('Burnt') [Bacta Visor]");

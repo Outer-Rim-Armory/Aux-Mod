@@ -36,6 +36,7 @@ class CfgPatches
             QCLASS(Unit_Phase2_Insulated_Joe),
             QCLASS(Unit_Phase2_Insulated_Keeli),
             QCLASS(Backpack_Keeli),
+            QGROUND_CLASS(Helmet_Phase1_Alvarez),
             QGROUND_CLASS(Helmet_Phase1_Axel),
             QGROUND_CLASS(Helmet_Phase1_Burnt),
             QGROUND_CLASS(Helmet_Phase1_BurntBacta),
@@ -154,6 +155,7 @@ class CfgPatches
         };
         weapons[] =
         {
+            QCLASS(Helmet_Phase1_Alvarez),
             QCLASS(Helmet_Phase1_Axel),
             QCLASS(Helmet_Phase1_Burnt),
             QCLASS(Helmet_Phase1_BurntBacta),
