@@ -188,7 +188,7 @@ class XtdGearModels
 
         class CLASS(Helmets_Insulated_Phase2_Custom): CLASS(Helmets_Phase1_Custom)
         {
-            label = "Custom Snow Helmets (P2)";
+            label = "Custom Insulated Helmets (P2)";
 
             class custom
             {
