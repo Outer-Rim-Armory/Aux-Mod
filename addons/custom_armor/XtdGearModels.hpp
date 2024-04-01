@@ -366,6 +366,7 @@ class XtdGearModels
                     "Sin",
                     "Sogi",
                     "Splashdown",
+                    "Tugz",
                     "Tyrant"
                 };
 
@@ -386,6 +387,7 @@ class XtdGearModels
                 class Sin { label = "Sin"; };
                 class Sogi { label = "Sogi"; };
                 class Splashdown { label = "Splashdown"; };
+                class Tugz { label = "Tugz"; };
                 class Tyrant { label = "Tyrant"; };
             };
         };

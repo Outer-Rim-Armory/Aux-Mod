@@ -50,6 +50,7 @@ UNIFORM_CUSTOM(Rev);
 UNIFORM_CUSTOM(Sin);
 UNIFORM_CUSTOM(Sogi);
 UNIFORM_CUSTOM(Splashdown);
+UNIFORM_CUSTOM(Tugz);
 UNIFORM_CUSTOM(Tyrant);
 
 class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base)

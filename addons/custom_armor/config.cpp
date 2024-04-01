@@ -290,6 +290,7 @@ class CfgPatches
             QCLASS(Uniform_Sin),
             QCLASS(Uniform_Sogi),
             QCLASS(Uniform_Splashdown),
+            QCLASS(Uniform_Tugz),
             QCLASS(Uniform_Tyrant),
             QCLASS(Uniform_Phase2_Insulated_Dexus),
             QCLASS(Uniform_Phase2_Insulated_Joe),

@@ -382,6 +382,30 @@ class CLASS(Unit_Splashdown): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_Tugz): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Tugz";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Tugz);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Tugz_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Tugz_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_ARF_Tugz), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_ARF_Tugz), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base)
 {
     displayName = "Tyrant";
