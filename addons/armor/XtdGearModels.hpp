@@ -17,16 +17,13 @@ class XtdGearModels {
     class CfgWeapons {
         class CLASS(Helmets_Phase1): CLASS(Rank_Base) {
             label = "Helmets (P1)";
-            options[] = {"rank", "camo"};
+            options[] = {"rank", "camo", "style"};
 
             class rank: rank {
                 values[] = {
                     "Base",
                     "CR",
                     "CT",
-                    "CT_v2",
-                    "CT_v3",
-                    "CT_v4",
                     "SCT",
                     "VCT",
                     "CLC",
@@ -46,9 +43,6 @@ class XtdGearModels {
                 class Base { label = "Base"; };
                 class CR { label = "CR"; };
                 class CT { label = "CT"; };
-                class CT_v2 { label = "CT v2"; };
-                class CT_v3 { label = "CT v3"; };
-                class CT_v4 { label = "CT v4"; };
                 class SCT { label = "SCT"; };
                 class VCT { label = "VCT"; };
                 class CLC { label = "CLC"; };
@@ -63,6 +57,16 @@ class XtdGearModels {
                 class WO3 { label = "WO3"; };
                 class CL { label = "CL"; };
                 class CL1 { label = "CL1"; };
+            };
+
+            class style: rank {
+                label = "Style";
+                values[] = {"Standard", "V2", "V3", "V4"};
+
+                class Standard { label = "Standard"; };
+                class V2 { label = "V2"; };
+                class V3 { label = "V3"; };
+                class V4 { label = "V4"; };
             };
         };
 

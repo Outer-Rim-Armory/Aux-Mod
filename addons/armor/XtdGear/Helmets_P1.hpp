@@ -1,13 +1,14 @@
 class CLASS(Helmet_Phase1_Base) {
     model = QCLASS(Helmets_Phase1);
     rank = "Base";
+    style = "Standard";
 };
 
 class CLASS(Helmet_Phase1_CR): CLASS(Helmet_Phase1_Base) { rank = "CR"; };
 class CLASS(Helmet_Phase1_CT): CLASS(Helmet_Phase1_Base) { rank = "CT"; };
-class CLASS(Helmet_Phase1_CT_v2): CLASS(Helmet_Phase1_Base) { rank = "CT_v2"; };
-class CLASS(Helmet_Phase1_CT_v3): CLASS(Helmet_Phase1_Base) { rank = "CT_v3"; };
-class CLASS(Helmet_Phase1_CT_v4): CLASS(Helmet_Phase1_Base) { rank = "CT_v4"; };
+class CLASS(Helmet_Phase1_CT_v2): CLASS(Helmet_Phase1_CT) { style = "V2"; };
+class CLASS(Helmet_Phase1_CT_v3): CLASS(Helmet_Phase1_CT) { style = "V3"; };
+class CLASS(Helmet_Phase1_CT_v4): CLASS(Helmet_Phase1_CT) { style = "V4"; };
 class CLASS(Helmet_Phase1_SCT): CLASS(Helmet_Phase1_Base) { rank = "SCT"; };
 class CLASS(Helmet_Phase1_VCT): CLASS(Helmet_Phase1_Base) { rank = "VCT"; };
 class CLASS(Helmet_Phase1_CLC): CLASS(Helmet_Phase1_Base) { rank = "CLC"; };
