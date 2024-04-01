@@ -4,11 +4,22 @@ class XtdGearModels {
         author = AUTHOR;
         options[] = {"rank"};
 
-        class rank: rank {
+        class rank {
             label = "Rank";
             alwaysSelectable = TRUE;
             changeInGame = FALSE;
             values[] = {};
+        };
+
+        class style: rank {
+            label = "Style";
+            alwaysSelectable  = FALSE;
+
+            class Standard { label = "Standard"; };
+            class Legacy { label = "Legacy"; };
+            class V2 { label = "V2"; };
+            class V3 { label = "V3"; };
+            class V4 { label = "V4"; };
         };
 
         XTDMODELS_CAMO;
@@ -59,14 +70,8 @@ class XtdGearModels {
                 class CL1 { label = "CL1"; };
             };
 
-            class style: rank {
-                label = "Style";
+            class style: style {
                 values[] = {"Standard", "V2", "V3", "V4"};
-
-                class Standard { label = "Standard"; };
-                class V2 { label = "V2"; };
-                class V3 { label = "V3"; };
-                class V4 { label = "V4"; };
             };
         };
 
@@ -164,14 +169,8 @@ class XtdGearModels {
                 class CL1 { label = "CL1"; };
             };
 
-            class style {
-                label = "Style";
-
+            class style: style {
                 values[] = {"Standard", "V2", "Legacy"};
-
-                class Standard { label = "Standard"; };
-                class V2 { label = "v2"; };
-                class Legacy { label = "Legacy"; };
             };
         };
 
