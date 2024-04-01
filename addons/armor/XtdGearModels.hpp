@@ -118,15 +118,13 @@ class XtdGearModels {
 
         class CLASS(Helmets_Phase2): CLASS(Rank_Base) {
             label = "Helmets (P2)";
-            options[] = {"rank", "camo"};
+            options[] = {"rank", "camo", "style"};
 
             class rank: rank {
                 values[] = {
                     "Base",
                     "CR",
-                    "CR_Legacy",
                     "CT",
-                    "CT_v2",
                     "SCT",
                     "VCT",
                     "CLC",
@@ -135,35 +133,41 @@ class XtdGearModels {
                     "CSS",
                     "CSFC",
                     "CMS",
-                    "CSM"
+                    "CSM",
+                    "WO",
+                    "WO2",
+                    "WO3",
+                    "CL",
+                    "CL1"
                 };
 
                 class Base { label = "Base"; };
                 class CR { label = "CR"; };
-                class CR_Legacy { label = "CR (Legacy)"; };
                 class CT { label = "CT"; };
-                class CT_v2 { label = "CT v2"; };
-                class CT_Legacy { label = "CT (Legacy)"; };
                 class SCT { label = "SCT"; };
-                class SCT_Legacy { label = "SCT (Legacy)"; };
                 class VCT { label = "VCT"; };
-                class VCT_Legacy { label = "VCT (Legacy)"; };
                 class CLC { label = "CLC"; };
-                class CLC_Legacy { label = "CLC (Legacy)"; };
                 class CPL { label = "CPL"; };
                 class CS { label = "CS"; };
-                class CS_Legacy { label = "CS (Legacy)"; };
                 class CSS { label = "CSS"; };
                 class CSFC { label = "CSFC"; };
                 class CMS { label = "CMS"; };
-                class CMS_Legacy { label = "CMS (Legacy)"; };
                 class CSM { label = "CSM"; };
-                class Officer { label = "Officer"; };
                 class WO { label = "WO"; };
                 class WO2 { label = "WO2"; };
                 class WO3 { label = "WO3"; };
                 class CL { label = "CL"; };
                 class CL1 { label = "CL1"; };
+            };
+
+            class style {
+                label = "Style";
+
+                values[] = {"Standard", "V2", "Legacy"};
+
+                class Standard { label = "Standard"; };
+                class V2 { label = "v2"; };
+                class Legacy { label = "Legacy"; };
             };
         };
 
@@ -171,9 +175,6 @@ class XtdGearModels {
             label = "Insulated Helmets (P2)";
 
             class rank: rank {
-                label = "Rank";
-                alwaysSelectable = TRUE;
-                changeInGame = FALSE;
                 values[] = {
                     "Base",
                     "CT"
@@ -441,10 +442,8 @@ class XtdGearModels {
             label = "Infantry Vests";
             options[] = {"type"};
 
-            class type {
+            class type: rank {
                 label = "Type";
-                alwaysSelectable = TRUE;
-                changeInGame = FALSE;
                 values[] = {
                     "Basic",
                     "Holster",
