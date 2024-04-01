@@ -13,7 +13,7 @@ private ["_markerColors", "_markerColorNames"];
     "LIST",
     ["Channel", "The channel to create markers in."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
-    [[-2, 0, 1, 2, 3, 4, 5], ["Auto", "Global", "Side", "Command", "Group", "Vehicle", "Direct"], 0]
+    [[-2, 0, 1, 2, 3, 4, 5], ["Auto", "Global", "Side", "Command", "Group", "Vehicle", "Direct"], 2]
 ] call CBA_fnc_addSetting;
 
 

@@ -10,7 +10,9 @@
  * None
  *
  * Example:
- * ["acex_fortify_objectPlaced", LINKFUNC(objectPlaced)] call CBA_fnc_addEventHandler;
+ * ["acex_fortify_objectPlaced", BNA_KC_fortify_fnc_objectPlaced] call CBA_fnc_addEventHandler;
+ *
+ * Public: No
  */
 
 params ["_player", "_side", "_objectPlaced"];

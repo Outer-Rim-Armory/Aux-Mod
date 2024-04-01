@@ -1,70 +1,58 @@
 class CfgEditorSubcategories
 {
     // Units
-    class CLASS(EdSubCat_Infantry)
-    {
+    class EDSUBCAT(Infantry) {
         displayName = "Infantry";
     };
-    class CLASS(EdSubCat_Crewmen)
-    {
+    class EDSUBCAT(Crewmen) {
         displayName = "Crewmen";
     };
-    class CLASS(EdSubCat_SpecialForces)
-    {
+    class EDSUBCAT(SpecialForces) {
         displayName = "Special Forces";
     };
-    class CLASS(EdSubCat_Special)
-    {
+    class EDSUBCAT(Special) {
         displayName = "Special"; // Used for things like faction officers
     };
 
     // Ground Vehicles
-    class CLASS(EdSubCat_Tanks)
-    {
+    class EDSUBCAT(Tanks) {
         displayName = "Tanks";
     };
-    class CLASS(EdSubCat_APCs)
-    {
+    class EDSUBCAT(APCs) {
         displayName = "APCs";
     };
-    class CLASS(EdSubCat_Walkers)
-    {
+    class EDSUBCAT(Walkers) {
         displayName = "Walkers";
     };
-    class CLASS(EdSubCat_Cars)
-    {
+    class EDSUBCAT(Cars) {
         displayName = "Cars";
     };
-    class CLASS(EdSubCat_Speeders)
-    {
+    class EDSUBCAT(Speeders) {
         displayName = "Speeders";
     };
-    class CLASS(EdSubCat_Drones)
-    {
+    class EDSUBCAT(Drones) {
         displayName = "Drones";
     };
-    class CLASS(EdSubCat_Turrets)
-    {
+    class EDSUBCAT(Turrets) {
         displayName = "Turrets";
     };
 
     // Air Vehicles
-    class CLASS(EdSubCat_Planes)
-    {
+    class EDSUBCAT(Planes) {
         displayName = "Planes";
     };
-    class CLASS(EdSubCat_Helicopters)
-    {
+    class EDSUBCAT(Helicopters) {
         displayName = "Helicopters";
     };
 
     // Objects
-    class CLASS(Edsubcat_Helmets)
-    {
+    class EDSUBCAT(Helmets) {
         displayName = "Helmets";
     };
-    class CLASS(Edsubcat_Droids)
-    {
+    class EDSUBCAT(Droids) {
         displayName = "Droids";
+    };
+    class EDSUBCAT(Utility) {
+        displayName = "Utility";
     };
 };

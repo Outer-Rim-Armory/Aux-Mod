@@ -1,20 +1,19 @@
-class ACEX_Fortify_Presets
-{
-    class GVAR(All)
-    {
+class ACEX_Fortify_Presets {
+    class GVAR(Disabled) {
+        displayName = "Disabled";
+    };
+
+    class GVAR(All) {
         displayName = "[KC] All Presets";
-        presets[] =
-        {
+        presets[] = {
             QGVAR(Common),
             QGVAR(FOB)
         };
     };
 
-    class GVAR(Common)
-    {
+    class GVAR(Common) {
         displayName = "[KC] Common";
-        objects[] =
-        {
+        objects[] = {
             // Hesco Objects
             {"Land_lsb_fob_hBarrier_1", 5},                   // Block
             {"Land_lsb_fob_hBarrier_3", 10},                  // Barrier (3 Block)
@@ -32,11 +31,9 @@ class ACEX_Fortify_Presets
         };
     };
 
-    class GVAR(FOB)
-    {
+    class GVAR(FOB) {
         displayName = "[KC] FOB Building";
-        objects[] =
-        {
+        objects[] = {
             {"Land_lsb_fob_hBarrier_tower", 15},
             {"3AS_Short_Wall_Bunker", 15},
             {"Land_OPTRE_watchtower_urban", 15},

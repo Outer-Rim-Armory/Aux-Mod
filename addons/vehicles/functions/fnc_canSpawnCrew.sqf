@@ -10,7 +10,7 @@
  * True if AI can be spawned, false otherwise <BOOL>
  *
  * Examples:
- * [vehicle ace_player] call FUNC(canSpawnCrew);
+ * [vehicle ace_player] call BNA_KC_vehicles_fnc_canSpawnCrew;
  *
  * Public: Yes
  */
@@ -27,5 +27,5 @@ if (isNull _vehicle or {!(ace_player in _crew)}) exitWith {false};
 _emptyCrewSeats = 0;
 {
     _emptyCrewSeats = _emptyCrewSeats + (_vehicle emptyPositions _x);
-} forEach ["Commander", "Driver", "Gunner"];
+} forEach ["Commander", "Driver", "Gunner", "Turret"];
 _emptyCrewSeats > 0;

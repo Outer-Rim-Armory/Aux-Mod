@@ -12,5 +12,7 @@ PREP(cswDeployModifier);
 PREP(setIntercomChannel);
 PREP(skin_canSwitch);
 PREP(skin_insertChildren);
+PREP(unflip);
+PREP(vehicleSpawner);
 PREP(vivCanLoad);
 PREP(vivLoad);

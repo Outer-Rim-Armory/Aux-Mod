@@ -25,10 +25,10 @@ params [
     ["_text", "", [""]],
     ["_includeTerrain", false, [false]]
 ];
-private ["_filter"];
+private ["_filter", "_location"];
 TRACE_3("fnc_updateLocation",_position,_text,_includeTerrain);
 
-if !(isServer) exitWith {WARNING("fnc_updateLocation should only be executed on server.")};
+if !(isServer) exitWith {WARNING("fnc_updateLocation executed from non-server context.")};
 
 _filter = [
     "NameCityCapital",

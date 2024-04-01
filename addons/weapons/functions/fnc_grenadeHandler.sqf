@@ -16,17 +16,8 @@
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
 private ["_ammoType", "_explodeDelay"];
 
-_ammoType = [
-    configFile >> "CfgAmmo" >> _ammo,
-    QGVAR(ammoType),
-    AMMO_TYPE_NORMAL
-] call BIS_fnc_returnConfigEntry;
-
-_explodeDelay = [
-    configFile >> "CfgAmmo" >> _ammo,
-    "explosionTime",
-    0
-] call BIS_fnc_returnConfigEntry;
+_ammoType = getNumber (configFile >> "CfgAmmo" >> _ammo >> QGVAR(ammoType));
+_explodeDelay = getNumber (configFile >> "CfgAmmo" >> _ammo >> "explosionTime");
 
 if (_ammoType isEqualTo AMMO_TYPE_NORMAL) exitWith {};
 

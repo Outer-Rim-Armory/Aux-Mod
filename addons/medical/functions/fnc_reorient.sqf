@@ -8,7 +8,7 @@
  * 1: Patient unit <OBJECT>
  *
  * Return Value:
- * True if patient wakes up, otherwise false
+ * True if patient wakes up, otherwise false <BOOL>
  *
  * Examples:
  * [player, unit] call FUNC(reorient);

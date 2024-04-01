@@ -464,7 +464,7 @@ class CLASS(DOUBLES(Helmet_ARF,var1)##var2): CLASS(DOUBLES(Helmet_ARF,var1)) \
 
 #define BARC_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_BARC,var1)): CLASS(Helmet_BARC_Base) \
 { \
-    displayName = QUOTE([KC] SF BARC Helm ('##var1##')); \
+    displayName = QUOTE([KC] INF BARC Helm ('##var1##')); \
     hiddenSelectionsTextures[] = \
     { \
         QPATHTOF(data\helmets\barc\DOUBLES(var1,camo1_co.paa)), \
@@ -480,7 +480,7 @@ class CLASS(DOUBLES(Helmet_ARF,var1)##var2): CLASS(DOUBLES(Helmet_ARF,var1)) \
 
 #define BARC_HELMET_VISOR_CUSTOM(var1,var2) class CLASS(DOUBLES(Helmet_BARC,var1)): CLASS(Helmet_BARC_Base) \
 { \
-    displayName = QUOTE([KC] SF BARC Helm ('##var1##')); \
+    displayName = QUOTE([KC] INF BARC Helm ('##var1##')); \
     hiddenSelectionsTextures[] = \
     { \
         QPATHTOF(data\helmets\barc\DOUBLES(var1,camo1_co.paa)), \

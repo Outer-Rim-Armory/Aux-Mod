@@ -1,9 +1,8 @@
 class CfgWeapons
 {
-    class CBA_MiscItem;
-    class CBA_MiscItem_ItemInfo;
-    class CLASS(Deployable_MedicalDroid_Item): CBA_MiscItem
-    {
+    class CLASS(ItemCore);
+    class CLASS(ItemCore_ItemInfo);
+    class CLASS(Deployable_MedicalDroid_Item): CLASS(ItemCore) {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -18,15 +17,14 @@ class CfgWeapons
         EGVAR(objects,deployTime) = 20;
         EGVAR(objects,deployedObject) = QCLASS(Deployable_MedicalDroid);
 
-        class ItemInfo: CBA_MiscItem_ItemInfo
-        {
+        class ItemInfo: CLASS(ItemCore_ItemInfo) {
             mass = 50;
         };
     };
 
-    class ACE_ItemCore;
-    class GVAR(Painkiller): ACE_ItemCore
-    {
+    class CLASS(ItemCore);
+    class CLASS(ItemCore_ItemInfo);
+    class GVAR(Painkiller): CLASS(ItemCore) {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -39,8 +37,7 @@ class CfgWeapons
 
         ACE_isMedicalItem = TRUE;
 
-        class ItemInfo: CBA_MiscItem_ItemInfo
-        {
+        class ItemInfo: CLASS(ItemCore_ItemInfo) {
             mass = 0.5;
         };
     };

@@ -17,7 +17,8 @@ class CfgPatches
             "SWLB_Clones",
             "SWLB_CEE",
             "JLTS_core",
-            "JLTS_characters_CloneArmor2"
+            "JLTS_characters_CloneArmor2",
+            "SDT_gear"
         };
         units[] =
         {
@@ -106,8 +107,6 @@ class CfgPatches
             QCLASS(Jetpack_CDV21_LR),
             QCLASS(Jetpack_CDV19),
             QCLASS(Jetpack_CDV19_LR),
-            QCLASS(Jetpack_Droid),
-            QCLASS(Jetpack_DroidRocket),
             QGROUND_CLASS(Helmet_Airborne_Base),
             QGROUND_CLASS(Helmet_Airborne_CT),
             QGROUND_CLASS(Helmet_Airborne_CT_v2),
@@ -395,6 +394,9 @@ class CfgPatches
             QCLASS(Vest_Engineer_CT),
             QCLASS(Vest_Engineer_CS),
             QCLASS(Vest_Engineer_Officer),
+            QCLASS(Vest_Tanker_CT),
+            QCLASS(Vest_Tanker_CS),
+            QCLASS(Vest_Tanker_WO),
             QCLASS(Vest_ARC),
             QCLASS(Vest_ARC_Light),
             QCLASS(Vest_ARC_v2),

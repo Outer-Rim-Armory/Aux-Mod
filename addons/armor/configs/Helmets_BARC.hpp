@@ -2,7 +2,7 @@ class CLASS(Helmet_BARC_Base): CLASS(Helmet_Base)
 {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF BARC Helm (Base)";
+    displayName = "[KC] INF BARC Helm (Base)";
 
     model = "\ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
     hiddenSelections[] = {"camo1", "visor"};
@@ -22,7 +22,7 @@ class CLASS(Helmet_BARC_Base): CLASS(Helmet_Base)
 
 class CLASS(Helmet_BARC_CT): CLASS(Helmet_BARC_Base)
 {
-    displayName = "[KC] SF BARC Helm 01 (Trooper)";
+    displayName = "[KC] INF BARC Helm 01 (Trooper)";
     hiddenSelectionsTextures[] =
     {
         QPATHTOF(data\helmets\barc\CT_camo1_co.paa),

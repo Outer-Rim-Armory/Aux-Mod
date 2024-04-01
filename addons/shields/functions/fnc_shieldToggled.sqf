@@ -13,6 +13,8 @@
  *
  * Example:
  * [QGVAR(shieldToggled), LINKFUNC(shieldToggled)];
+ *
+ * Public: No
  */
 
 params ["_vehicle", "_isActive", "_health"];

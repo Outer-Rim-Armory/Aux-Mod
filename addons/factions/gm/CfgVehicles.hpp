@@ -7,6 +7,8 @@ class CfgVehicles
         faction = QCLASS(Faction_GM);
         editorSubcategory = QCLASS(EdSubCat_GM_INF_T1);
 
+        genericNames = QCLASS(GM_Soldier);
+
         items[] =
         {
             // Medical
@@ -38,8 +40,8 @@ class CfgVehicles
         weapons[] = {QCLASS(LW38_Green_Scoped), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(LW38_Green_Scoped), "", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_60rnd_LW38_Green)};
-        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green)};
+        magazines[] = {QCLASS(Mag_60Rnd_LW38_Green)};
+        respawnMagazines[] = {QCLASS(Mag_60Rnd_LW38_Green)};
 
         linkedItems[] = {QCLASS(GM_Helmet), QCLASS(GM_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet), QCLASS(GM_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -73,8 +75,8 @@ class CfgVehicles
         weapons[] = {QCLASS(LW38_Green_Scoped), "", "SC_MPML", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(LW38_Green_Scoped), "", "SC_MPML", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_60rnd_LW38_Green), "SC_MPML_M_AT"};
-        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green), "SC_MPML_M_AT"};
+        magazines[] = {QCLASS(Mag_60Rnd_LW38_Green), "SC_MPML_M_AT"};
+        respawnMagazines[] = {QCLASS(Mag_60Rnd_LW38_Green), "SC_MPML_M_AT"};
 
         backpack = QCLASS(GM_Backpack_Heavy_Predef_AT);
     };
@@ -87,8 +89,8 @@ class CfgVehicles
         weapons[] = {QCLASS(LW38_Green_Scoped), "", "3AS_PLX1_F", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(LW38_Green_Scoped), "", "3AS_PLX1_F", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK43_AT"};
-        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK43_AT"};
+        magazines[] = {QCLASS(Mag_60Rnd_LW38_Green), "3AS_JLTS_MK43_AT"};
+        respawnMagazines[] = {QCLASS(Mag_60Rnd_LW38_Green), "3AS_JLTS_MK43_AT"};
 
         linkedItems[] = {QCLASS(GM_Helmet_T2), QCLASS(GM_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet_T2), QCLASS(GM_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -108,8 +110,8 @@ class CfgVehicles
     {
         displayName = "Rifleman (AA)";
 
-        magazines[] = {QCLASS(Mag_60rnd_LW38_Green), "SC_MPML_M_AA"};
-        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green), "SC_MPML_M_AA"};
+        magazines[] = {QCLASS(Mag_60Rnd_LW38_Green), "SC_MPML_M_AA"};
+        respawnMagazines[] = {QCLASS(Mag_60Rnd_LW38_Green), "SC_MPML_M_AA"};
 
         backpack = QCLASS(GM_Backpack_Heavy_Predef_AA);
     };
@@ -117,8 +119,8 @@ class CfgVehicles
     {
         displayName = "Veteran Rifleman (AA)";
 
-        magazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
-        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
+        magazines[] = {QCLASS(Mag_60Rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
+        respawnMagazines[] = {QCLASS(Mag_60Rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
 
         backpack = QCLASS(GM_Veteran_Backpack_Heavy_Predef_AA);
     };
@@ -126,8 +128,8 @@ class CfgVehicles
     {
         displayName = "Elite Rifleman (AA)";
 
-        magazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
-        respawnMagazines[] = {QCLASS(Mag_60rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
+        magazines[] = {QCLASS(Mag_60Rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
+        respawnMagazines[] = {QCLASS(Mag_60Rnd_LW38_Green), "3AS_JLTS_MK39_AA"};
 
         backpack = QCLASS(GM_Elite_Backpack_Heavy_Predef_AA);
     };
@@ -141,8 +143,8 @@ class CfgVehicles
         weapons[] = {QCLASS(HI12), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(HI12), "", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_30rnd_HI12)};
-        respawnMagazines[] = {QCLASS(Mag_30rnd_HI12)};
+        magazines[] = {QCLASS(Mag_30Rnd_HI12)};
+        respawnMagazines[] = {QCLASS(Mag_30Rnd_HI12)};
 
         linkedItems[] = {QCLASS(GM_Helmet), QCLASS(GM_Vest), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_Helmet), QCLASS(GM_Vest), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
@@ -198,8 +200,9 @@ class CfgVehicles
 
     class CLASS(GM_RLA_Unit_Rifleman): CLASS(GM_Unit_Rifleman)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Rifleman);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -207,8 +210,9 @@ class CfgVehicles
     };
     class CLASS(GM_RLA_Unit_Rifleman_T2): CLASS(GM_Unit_Rifleman_T2)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Rifleman_T2);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -217,8 +221,9 @@ class CfgVehicles
 
     class CLASS(GM_RLA_Unit_AT): CLASS(GM_Unit_AT)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -226,8 +231,9 @@ class CfgVehicles
     };
     class CLASS(GM_RLA_Unit_AT_T2): CLASS(GM_Unit_AT_T2)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT_T2);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -236,8 +242,9 @@ class CfgVehicles
 
     class CLASS(GM_RLA_Unit_AA): CLASS(GM_Unit_AA)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -245,8 +252,9 @@ class CfgVehicles
     };
     class CLASS(GM_RLA_Unit_AA_T2): CLASS(GM_Unit_AA_T2)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT_T2);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -255,8 +263,9 @@ class CfgVehicles
 
     class CLASS(GM_RLA_Unit_Marksman): CLASS(GM_Unit_Marksman)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Marksman);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
@@ -264,8 +273,9 @@ class CfgVehicles
     };
     class CLASS(GM_RLA_Unit_Marksman_T2): CLASS(GM_Unit_Marksman_T2)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Marksman_T2);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_MVI_UL_CNM", LINKED_ITEMS_RADIO};
@@ -274,8 +284,9 @@ class CfgVehicles
 
     class CLASS(GM_RLA_Unit_SL): CLASS(GM_Unit_SL)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_SL);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet), QCLASS(GM_RLA_Vest), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -283,8 +294,9 @@ class CfgVehicles
     };
     class CLASS(GM_RLA_Unit_SL_T2): CLASS(GM_Unit_SL_T2)
     {
-        editorSubcategory = EDSUBCAT(GM_RLA);
+        editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_SL_T2);
+        genericNames = QCLASS(RLA_Soldier);
 
         linkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(GM_RLA_Helmet_T2), QCLASS(GM_RLA_Vest_Medium), "OPTRE_NVG_HURS_CNM", LINKED_ITEMS_RADIO};
@@ -333,7 +345,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(ls_mag_classC_thermalDet,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -343,7 +355,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_30rnd_HI12),15);
+            MAG_XX(CLASS(Mag_30Rnd_HI12),15);
             MAG_XX(ls_mag_classC_thermalDet,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -365,7 +377,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(ls_mag_classC_thermalDet,4);
             MAG_XX(SmokeShell,4);
             MAG_XX(ShieldGrenade_Mag,4);
@@ -377,7 +389,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_30rnd_HI12),15);
+            MAG_XX(CLASS(Mag_30Rnd_HI12),15);
             MAG_XX(ls_mag_classC_thermalDet,4);
             MAG_XX(SmokeShell,4);
             MAG_XX(ShieldGrenade_Mag,4);
@@ -402,7 +414,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(ls_mag_classB_thermalDet,3);
             MAG_XX(SmokeShell,4);
             MAG_XX(ShieldGrenadePersonal_Mag,2);
@@ -416,7 +428,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_30rnd_HI12),15);
+            MAG_XX(CLASS(Mag_30Rnd_HI12),15);
             MAG_XX(ls_mag_classB_thermalDet,3);
             MAG_XX(SmokeShell,4);
             MAG_XX(ShieldGrenadePersonal_Mag,2);
@@ -441,7 +453,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(SC_MPML_M_AT,3);
             MAG_XX(ls_mag_classC_thermalDet,2);
             MAG_XX(SmokeShell,2);
@@ -452,7 +464,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(SC_MPML_M_AA,3);
             MAG_XX(ls_mag_classC_thermalDet,2);
             MAG_XX(SmokeShell,2);
@@ -471,7 +483,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(3AS_JLTS_MK43_AT,2);
             MAG_XX(ls_mag_classC_thermalDet,4);
             MAG_XX(SmokeShell,4);
@@ -484,7 +496,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(3AS_JLTS_MK39_AA,2);
             MAG_XX(ls_mag_classC_thermalDet,4);
             MAG_XX(SmokeShell,4);
@@ -505,7 +517,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(3AS_JLTS_MK43_AT,2);
             MAG_XX(ls_mag_classB_thermalDet,3);
             MAG_XX(SmokeShell,4);
@@ -520,7 +532,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(3AS_JLTS_MK39_AA,2);
             MAG_XX(ls_mag_classC_thermalDet,4);
             MAG_XX(SmokeShell,4);
@@ -547,7 +559,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(ls_mag_classC_thermalDet,4);
             MAG_XX(SmokeShell,4);
             MAG_XX(ShieldGrenade_Mag,3);
@@ -557,7 +569,7 @@ class CfgVehicles
     {
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(ls_mag_classC_thermalDet,4);
             MAG_XX(SmokeShell,4);
             MAG_XX(ShieldGrenade_Mag,4);
@@ -578,7 +590,7 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_60rnd_LW38_Green),15);
+            MAG_XX(CLASS(Mag_60Rnd_LW38_Green),15);
             MAG_XX(ls_mag_classB_thermalDet,3);
             MAG_XX(SmokeShell,4);
             MAG_XX(ShieldGrenadePersonal_Mag,2);

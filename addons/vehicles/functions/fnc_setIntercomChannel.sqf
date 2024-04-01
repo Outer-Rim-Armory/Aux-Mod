@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Sets a player's intercom channel based on their role
+ * Sets a player's intercom channel based on their role.
  *
  * Arguments:
  * 0: The vehicle <OBJECT>
@@ -12,7 +12,9 @@
  * None
  *
  * Examples:
- * [vehicle player, "driver", player] call FUNC(setIntercomChannel)
+ * [vehicle player, "driver", player] call BNA_KC_vehicles_fnc_setIntercomChannel;
+ *
+ * Public: No
  */
 
 params ["_vehicle", "_role", "_unit"];
@@ -30,3 +32,4 @@ switch (_role) do {
         _vehicle setVariable [format ["TFAR_IntercomSlot_%1", (netID _unit)], 0, true];
     };
 };
+nil;

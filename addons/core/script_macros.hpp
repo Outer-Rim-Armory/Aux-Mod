@@ -1,9 +1,8 @@
-// Global toggle for compile cache
+// Global toggles for caching/logging
 // #define DISABLE_COMPILE_CACHE
+// #define DEBUG_MODE_FULL
+#define DEBUG_SYNCHRONOUS
 
-#ifdef __A3_DEBUG__
-    #include "\ORA\BNA_KC\addons\core\script_debug.hpp"
-#endif
 #include "\x\cba\addons\main\script_macros_common.hpp"
 
 #define DFUNC(var1) TRIPLES(ADDON,fnc,var1)
@@ -30,7 +29,12 @@
 #define QCLASS(var1) QUOTE(CLASS(var1))
 #define QQCLASS(var1) QUOTE(QCLASS(var1))
 
-#define EDSUBCAT(var1) QCLASS(DOUBLES(EdSubCat,var1))
+#define FACTION(var1) CLASS(DOUBLES(Faction,var1))
+#define QFACTION(var1) QCLASS(DOUBLES(Faction,var1))
+#define EDCAT(var1) CLASS(DOUBLES(EdCat,var1))
+#define QEDCAT(var1) QCLASS(DOUBLES(EdCat,var1))
+#define EDSUBCAT(var1) CLASS(DOUBLES(EdSubCat,var1))
+#define QEDSUBCAT(var1) QCLASS(DOUBLES(EdSubCat,var1))
 
 #define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> QUOTE(var1))
 
@@ -75,6 +79,8 @@ scopeCurator = 0
 #define ITEM_9(a) a, a, a, a, a, a, a, a, a
 #define ITEM_10(a) a, a, a, a, a, a, a, a, a, a
 #define ITEM_11(a) ITEM_10(a), a
+#define ITEM_15(a) ITEM_10(a), ITEM_5(a)
+#define ITEM_16(a) ITEM_10(a), ITEM_6(a)
 #define ITEM_20(a) ITEM_10(a), ITEM_10(a)
 
 #define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \
@@ -108,7 +114,7 @@ scopeCurator = 0
 }
 
 // Conditions
-#define IS_STOPPED(var1) isTouchingGround var1 and {speed var1 < 1 and speed var1 > -1}
+#define IS_STOPPED(var1) speed var1 < 1 and {speed var1 > -1}
 
 // Weapon Types
 #define TYPE_WEAPON_PRIMARY 1

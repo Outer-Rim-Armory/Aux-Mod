@@ -9,17 +9,24 @@
     insertChildren = QUOTE(call FUNC(skin_insertChildren)); \
 }
 
-#define AI_CREW_SPAWNER class SpawnCrew \
+#define AI_CREW_SPAWNER class GVAR(SpawnCrew) \
 { \
     displayName = "Create Vehicle Crew"; \
     condition = QUOTE(_this#0 call FUNC(canSpawnCrew)); \
     statement = QUOTE((group ace_player) createVehicleCrew _this#0); \
 }; \
-class DeleteCrew \
+class GVAR(DeleteCrew) \
 { \
     displayName = "Delete Vehicle Crew"; \
     condition = QUOTE(_this#0 call FUNC(canDeleteCrew)); \
     statement = QUOTE({_this#0 deleteVehicleCrew _x;} forEach (_this#0 call ace_common_fnc_getVehicleCrew)); \
+}
+
+#define UNFLIP_VEHICLE class GVAR(Unflip) { \
+    displayName = "Unflip"; \
+    condition = QUOTE(alive _target and {!canMove _target}); \
+    statement = QUOTE(_target call FUNC(unflip)); \
+    distance = 10; \
 }
 
 #define HUD_CHANGER class LS_HUD_Changer \
@@ -126,11 +133,11 @@ class DeleteCrew \
 }; \
 class TransportMagazines \
 { \
-    MAG_XX(CLASS(Mag_80rnd_DC15S),__EVAL(5 * CREW_COUNT)); \
+    MAG_XX(CLASS(Mag_80Rnd_DC15S),__EVAL(5 * CREW_COUNT)); \
     MAG_XX(SmokeShellPurple,2); \
     MAG_XX(SmokeShellBlue,2); \
     MAG_XX(ACE_Chemlight_HiBlue,2); \
-    MAG_XX(CLASS(Mag_UGL_3rnd_FlareBlue),2); \
+    MAG_XX(CLASS(Mag_UGL_3Rnd_FlareBlue),2); \
 }; \
 class TransportItems \
 { \
@@ -148,11 +155,11 @@ class TransportBackpacks {}
 #define INVENTORY_VEHICLE_COMMON class TransportWeapons {}; \
 class TransportMagazines \
 { \
-    MAG_XX(CLASS(Mag_60rnd_DC15A),5); \
-    MAG_XX(CLASS(Mag_80rnd_DC15S),5); \
+    MAG_XX(CLASS(Mag_60Rnd_DC15A),5); \
+    MAG_XX(CLASS(Mag_80Rnd_DC15S),5); \
     MAG_XX(3Rnd_UGL_FlareWhite_F,2); \
     MAG_XX(3Rnd_UGL_FlareRed_F,2); \
-    MAG_XX(CLASS(Mag_UGL_3rnd_FlareBlue),2); \
+    MAG_XX(CLASS(Mag_UGL_3Rnd_FlareBlue),2); \
     MAG_XX(3Rnd_UGL_FlareCIR_F,2); \
     MAG_XX(3Rnd_Smoke_Grenade_shell,2); \
     MAG_XX(3Rnd_SmokeRed_Grenade_shell,2); \
@@ -162,8 +169,8 @@ class TransportMagazines \
     MAG_XX(3Rnd_SmokeBlue_Grenade_shell,2); \
     MAG_XX(3Rnd_SmokeOrange_Grenade_shell,2); \
     MAG_XX(3Rnd_HE_Grenade_shell,2); \
-    MAG_XX(CLASS(Mag_20rnd_DC17),5); \
-    MAG_XX(CLASS(Mag_1rnd_RPS7_AT),1); \
+    MAG_XX(CLASS(Mag_20Rnd_DC17),5); \
+    MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),1); \
     MAG_XX(ls_mag_classC_thermalDet,4); \
 }; \
 class TransportBackpacks {}; \
@@ -182,9 +189,9 @@ class TransportItems \
 }; \
 class TransportMagazines \
 { \
-    MAG_XX(CLASS(Mag_60rnd_DC15A),15); \
-    MAG_XX(CLASS(Mag_80rnd_DC15S),15); \
-    MAG_XX(CLASS(Mag_15rnd_DC15X),5); \
+    MAG_XX(CLASS(Mag_60Rnd_DC15A),15); \
+    MAG_XX(CLASS(Mag_80Rnd_DC15S),15); \
+    MAG_XX(CLASS(Mag_15Rnd_DC15X),5); \
 }; \
 class TransportBackpacks {}; \
 class TransportItems \
@@ -221,3 +228,50 @@ class TransportItems \
     type = TYPE_MAGAZINE_PRIMARY_AND_THROW; \
     mass = 300; \
 }
+
+#define VEHICLE_LIST_AIR [ \
+    QCLASS(ARC170), \
+    QCLASS(Galaxy_Gunship), \
+    QCLASS(Galaxy_Transport_Vehicle), \
+    QCLASS(Galaxy_Transport_Infantry), \
+    QCLASS(LAATc), \
+    QCLASS(LAATi_MK1), \
+    QCLASS(LAATi_MK1_Lamps), \
+    QCLASS(LAATi_MK2), \
+    QCLASS(LAATi_MK2_Lamps), \
+    QCLASS(RepublicTransport), \
+    QCLASS(BTLB_YWing) \
+]
+
+#define VEHICLE_LIST_LAND [ \
+    QCLASS(ATAP), \
+    QCLASS(ATRT), \
+    QCLASS(ATTE), \
+    QCLASS(BARC), \
+    QCLASS(Blitz), \
+    QCLASS(Gammoth_Transport), \
+    QCLASS(Gammoth_Covered), \
+    QCLASS(Gammoth_Ammo), \
+    QCLASS(Gammoth_Medical), \
+    QCLASS(Gammoth_Repair), \
+    QCLASS(Gammoth_Refuel), \
+    QCLASS(Gammoth_Device), \
+    QCLASS(Glavenus_Unarmed), \
+    QCLASS(Glavenus_Medic), \
+    QCLASS(Glavenus_HMG), \
+    QCLASS(Glavenus_GMG), \
+    QCLASS(Hornet_Unarmed), \
+    QCLASS(Hornet_MG), \
+    QCLASS(Hornet_AT), \
+    QCLASS(Hydra), \
+    QCLASS(Juggernaut), \
+    QCLASS(Khezu_Unarmed), \
+    QCLASS(Khezu_Armed), \
+    QCLASS(Reek), \
+    QCLASS(RX200_AA), \
+    QCLASS(RX200_Artillery), \
+    QCLASS(TX130_M1), \
+    QCLASS(TX130_M1_Recon), \
+    QCLASS(TX130_M1_GL), \
+    QCLASS(TX130_Super) \
+]

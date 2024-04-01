@@ -31,8 +31,8 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11(QCLASS(Mag_80rnd_DC15S)),
-            ITEM_2(QCLASS(Mag_20rnd_DC17)),
+            ITEM_11(QCLASS(Mag_80Rnd_DC15S)),
+            ITEM_2(QCLASS(Mag_20Rnd_DC17)),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("ShieldGrenade_Mag"),
@@ -44,8 +44,8 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11(QCLASS(Mag_80rnd_DC15S)),
-            ITEM_2(QCLASS(Mag_20rnd_DC17)),
+            ITEM_11(QCLASS(Mag_80Rnd_DC15S)),
+            ITEM_2(QCLASS(Mag_20Rnd_DC17)),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("ShieldGrenade_Mag"),
@@ -470,26 +470,6 @@ class CfgVehicles
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
-    };
-
-    class CLASS(Jetpack_Droid): CLASS(Jetpack_JT12)
-    {
-        displayName = "[KC] Battle Droid Jetpack";
-
-        model = "\MRC\JLTS\characters\DroidArmor\DroidJetpackB1.p3d";
-        hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_co.paa"};
-        picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_jetpack_ui_ca.paa";
-
-        JLTS_energy[] = {25,150};
-        JLTS_settingsDialog = "JLTS_droid_jumppack_dialog";
-        JLTS_steeringCoef = 0.06;
-    };
-
-    class CLASS(Jetpack_DroidRocket): CLASS(Jetpack_Droid)
-    {
-        displayName = "[KC] Battle Droid Jetpack (Rocket)";
-        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_rocket_co.paa"};
     };
 
     #include "configs\GroundHolders.hpp"

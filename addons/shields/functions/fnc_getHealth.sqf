@@ -14,6 +14,8 @@
  *
  * Example:
  * objectParent ace_player call BNA_KC_shields_fnc_getHealth;
+ *
+ * Public: Yes
  */
 
 params [

@@ -4,8 +4,8 @@
  * Creates a map marker on the player's position.
  *
  * Arguments:
- * 0: Channel to create the marker in (optional, default: GVAR(markSelfChannel)) <NUMBER>
- * 1: Class name of marker color (optional, default: GVAR(markSelfColor)) <STRING>
+ * 0: Channel to create the marker in (optional, default: markSelfChannel setting) <NUMBER>
+ * 1: Class name of marker color (optional, default: markSelfColor setting) <STRING>
  *
  * Return Value:
  * Marker's name or empty string if not unique <STRING>

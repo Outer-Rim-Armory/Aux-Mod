@@ -12,6 +12,8 @@
  *
  * Example:
  * [50, 100] call BNA_KC_shields_fnc_healthColor;
+ *
+ * Public: No
  */
 
 params [

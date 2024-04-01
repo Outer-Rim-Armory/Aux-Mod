@@ -21,7 +21,6 @@ params [
     ["_atrt", objNull, [objNull]],
     ["_rider", objNull, [objNull]]
 ];
-private [];
 TRACE_2("fnc_atrt_mount",_atrt,_rider);
 
 _atrt enableAI "ANIM";

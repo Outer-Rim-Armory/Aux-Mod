@@ -1,14 +1,11 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QCLASS(core)
         };
         units[] = {};
@@ -17,6 +14,6 @@ class CfgPatches
     };
 };
 
-#include "CfgParticles.hpp"
+#include "CfgEffects.hpp"
 #include "CfgCloudlets.hpp"
 #include "CfgLights.hpp"

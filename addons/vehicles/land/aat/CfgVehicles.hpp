@@ -62,6 +62,8 @@ class CfgVehicles
 
         displayName = "AAT";
 
+        EGVAR(weapons,empCanBeDisabled) = TRUE;
+
         hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\CIS_AAT_CO.paa"};
 
         textureList[] =

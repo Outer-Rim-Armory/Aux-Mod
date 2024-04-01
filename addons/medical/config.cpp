@@ -1,14 +1,11 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QCLASS(core),
             "3AS_Prop_Droids",
             "442_misc_medical",
@@ -24,13 +21,11 @@ class CfgPatches
             "ace_medical_treatment",
             "ace_medical_vitals"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Deployable_MedicalDroid),
             QGVAR(litter_Painkiller)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Deployable_MedicalDroid_Item),
             QGVAR(Painkiller)
         };

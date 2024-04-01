@@ -11,7 +11,7 @@
  * Whether the carrier vehicle can load another object in range.
  *
  * Examples:
- * vehicle player call FUNC(vivCanLoad);
+ * vehicle player call BNA_KC_vehicles_fnc_vivCanLoad;
  *
  * Public: Yes
  */
@@ -20,7 +20,7 @@ params [
     ["_vehicle", objNull, [objNull]],
     ["_range", VIV_PICKUP_RANGE, [0]]
 ];
-private ["_objects", "_configPath"];
+private ["_objects", "_configPath", "_canLoad"];
 TRACE_2("fnc_vivCanLoad",_vehicle,_range);
 
 if (isNull _vehicle or {_range <= 0}) exitWith {false};

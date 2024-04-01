@@ -84,4 +84,5 @@ class CfgPatches
 #include "CfgFactionClasses.hpp"
 #include "CfgGroups.hpp"
 #include "CfgIdentities.hpp"
+#include "CfgWorlds.hpp"
 #include "CfgEventHandlers.hpp"

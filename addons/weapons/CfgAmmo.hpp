@@ -6,15 +6,6 @@ class CfgAmmo
     class CLASS(Bullet_Base): BulletBase
     {
         SCOPE_PRIVATE;
-    };
-
-    class CLASS(Bullet_PlasmaBase): CLASS(Bullet_Base)
-    {
-        coefGravity = 0.01;
-        airFriction = 0;
-        deflecting = 0;
-        cartridge = "";
-
         aiAmmoUsageFlags = AMMO_USAGE_INFANTRY;
         audibleFire = 80;
 
@@ -24,6 +15,14 @@ class CfgAmmo
         ACE_transonicStabilityCoef = 1;
         ACE_muzzleVelocityVariationSD = 0.3;
         ACE_velocityBoundaries[] = {};
+    };
+
+    class CLASS(Bullet_PlasmaBase): CLASS(Bullet_Base)
+    {
+        coefGravity = 0.01;
+        airFriction = 0;
+        deflecting = 0;
+        cartridge = "";
 
         PLASMA_SOUNDS;
         PLASMA_EFFECTS;
@@ -107,8 +106,7 @@ class CfgAmmo
         effectfly = "JLTS_plasma_green";
     };
 
-    class CLASS(Bullet_PlasmaSniper_Blue): CLASS(Bullet_PlasmaBase)
-    {
+    class CLASS(Bullet_PlasmaSniper_Blue): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
         hit = 24;
@@ -133,11 +131,11 @@ class CfgAmmo
         effectfly = "JLTS_plasma_blue";
 
         ACE_ballisticCoefficients[] = {0.322};
-        ACE_barrelLengths[] = {508,660.4,711.2};
+        ACE_barrelLengths[] = {508, 660.4, 711.2};
         ACE_bulletLength = 39.573;
         ACE_bulletMass = 16.2;
         ACE_caliber = 8.585;
-        ACE_muzzleVelocities[] = {880,915,925};
+        ACE_muzzleVelocities[] = {880, 915, 925};
     };
     class CLASS(Bullet_PlasmaSniper_Red): CLASS(Bullet_PlasmaSniper_Blue)
     {
@@ -287,7 +285,7 @@ class CfgAmmo
         effectfly = "JLTS_plasma_blue";
 
         simulationStep = 0.0001;
-        submunitionAmmo = QCLASS(Bullet_PlasmaPistol_Blue);
+        submunitionAmmo = QCLASS(Bullet_PlasmaScatter_submunition_Blue);
         submunitionConeAngle = 1;
         submunitionConeType[] = {"poissondisc", 9};
 
@@ -304,30 +302,54 @@ class CfgAmmo
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
-        submunitionAmmo = QCLASS(Bullet_PlasmaPistol_Red);
+        submunitionAmmo = QCLASS(Bullet_PlasmaScatter_submunition_Red);
     };
     class CLASS(Bullet_PlasmaScatter_Green): CLASS(Bullet_PlasmaScatter_Blue)
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
-        submunitionAmmo = QCLASS(Bullet_PlasmaPistol_Green);
+        submunitionAmmo = QCLASS(Bullet_PlasmaScatter_submunition_Green);
+    };
+
+    class CLASS(Bullet_PlasmaScatter_submunition_Blue): CLASS(Bullet_PlasmaPistol_Blue) {
+        hit = 10;
+    };
+    class CLASS(Bullet_PlasmaScatter_submunition_Red): CLASS(Bullet_PlasmaScatter_submunition_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+    };
+    class CLASS(Bullet_PlasmaScatter_submunition_Green): CLASS(Bullet_PlasmaScatter_submunition_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+        effectfly = "JLTS_plasma_green";
     };
 
     class CLASS(Bullet_PlasmaScatterHP_Blue): CLASS(Bullet_PlasmaScatter_Blue)
     {
-        submunitionAmmo = QCLASS(Bullet_PlasmaCarbine_Blue);
+        submunitionAmmo = QCLASS(Bullet_PlasmaScatterHP_submunition_Blue);
     };
     class CLASS(Bullet_PlasmaScatterHP_Red): CLASS(Bullet_PlasmaScatterHP_Blue)
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
-        submunitionAmmo = QCLASS(Bullet_PlasmaCarbine_Red);
+        submunitionAmmo = QCLASS(Bullet_PlasmaScatterHP_submunition_Red);
     };
     class CLASS(Bullet_PlasmaScatterHP_Green): CLASS(Bullet_PlasmaScatterHP_Blue)
     {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
-        submunitionAmmo = QCLASS(Bullet_PlasmaCarbine_Green);
+        submunitionAmmo = QCLASS(Bullet_PlasmaScatterHP_submunition_Green);
+    };
+
+    class CLASS(Bullet_PlasmaScatterHP_submunition_Blue): CLASS(Bullet_PlasmaPistol_Blue) {
+        hit = 20;
+    };
+    class CLASS(Bullet_PlasmaScatterHP_submunition_Red): CLASS(Bullet_PlasmaScatterHP_submunition_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+    };
+    class CLASS(Bullet_PlasmaScatterHP_submunition_Green): CLASS(Bullet_PlasmaScatterHP_submunition_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
+        effectfly = "JLTS_plasma_green";
     };
 
     class CLASS(Bullet_PlasmaStun): CLASS(Bullet_PlasmaPistol_Blue)
@@ -357,6 +379,32 @@ class CfgAmmo
     {
         SCOPE_PUBLIC;
         lightColor[] = {0.25, 0.25, 0.5, 0.5};
+    };
+
+    class G_40mm_HE;
+    class CLASS(Grenade_B2Blaster): G_40mm_HE {
+        hit = 10;
+        dangerRadiusHit = 30;
+        indirectHit = 8;
+        indirectHitRange = 6;
+        explosionEffectsRadius = 20;
+        suppressionRadiusHit = 30;
+
+        typicalspeed = 30;
+        visibleFireTime = 1;
+        visibleFire = 0.5;
+        audibleFire = 0.05;
+        fuseDistance = 0;
+        explosionTime = 5;
+        timeToLive = 30;
+
+        explosionEffects = "VehicleExplosionEffects";
+        model = "\ls_weapons\grenades\thermalDet\ls_grenade_thermalDet.p3d";
+        soundFly[] = {"\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40};
+
+        ace_frag_enabled = FALSE;
+        ace_frag_skip = FALSE;
+        ace_frag_force = FALSE;
     };
 
     // TODO: Update to inherit from base KC bullet

@@ -3,7 +3,7 @@ class CLASS(Unit_Axel): CLASS(Unit_Phase2_Base)
 {
     displayName = "Axel";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Axel);
     hiddenSelectionsTextures[] =
@@ -27,7 +27,7 @@ class CLASS(Unit_Bob): CLASS(Unit_Phase2_Base)
 {
     displayName = "Bob";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Bob);
     hiddenSelectionsTextures[] =
@@ -51,7 +51,7 @@ class CLASS(Unit_Burnt): CLASS(Unit_Phase2_Base)
 {
     displayName = "Burnt";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Burnt);
     hiddenSelectionsTextures[] =
@@ -75,7 +75,7 @@ class CLASS(Unit_Catholic): CLASS(Unit_Phase2_Base)
 {
     displayName = "Catholic";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Catholic);
     hiddenSelectionsTextures[] =
@@ -99,7 +99,7 @@ class CLASS(Unit_Defter): CLASS(Unit_Phase2_Base)
 {
     displayName = "Defter";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Defter);
     hiddenSelectionsTextures[] =
@@ -124,7 +124,7 @@ class CLASS(Unit_Dexus): CLASS(Unit_Phase2_Base)
 {
     displayName = "Dexus";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Dexus);
     hiddenSelectionsTextures[] =
@@ -148,7 +148,7 @@ class CLASS(Unit_Drake): CLASS(Unit_Phase2_Base)
 {
     displayName = "Drake";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Drake);
     hiddenSelectionsTextures[] =
@@ -172,7 +172,7 @@ class CLASS(Unit_Hagrid): CLASS(Unit_Phase2_Base)
 {
     displayName = "Hagrid";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Hagrid);
     hiddenSelectionsTextures[] =
@@ -196,7 +196,7 @@ class CLASS(Unit_Joe): CLASS(Unit_Phase2_Base)
 {
     displayName = "Joe";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Joe);
     hiddenSelectionsTextures[] =
@@ -220,7 +220,7 @@ class CLASS(Unit_Keeli): CLASS(Unit_Phase2_Base)
 {
     displayName = "Keeli";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Keeli);
     hiddenSelectionsTextures[] =
@@ -266,7 +266,7 @@ class CLASS(Unit_Rat): CLASS(Unit_Phase2_Base)
 {
     displayName = "Rat";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Rat);
     hiddenSelectionsTextures[] =
@@ -286,11 +286,35 @@ class CLASS(Unit_Rat): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_Rev): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Rev";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Rev);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Rev_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Rev_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_ARF_Rev), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_ARF_Rev), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Sin): CLASS(Unit_Phase2_Base)
 {
     displayName = "Sin";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Sin);
     hiddenSelectionsTextures[] =
@@ -314,7 +338,7 @@ class CLASS(Unit_Sogi): CLASS(Unit_Phase2_Base)
 {
     displayName = "Sogi";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Sogi);
     hiddenSelectionsTextures[] =
@@ -334,11 +358,59 @@ class CLASS(Unit_Sogi): CLASS(Unit_Phase2_Base)
     };
 };
 
+class CLASS(Unit_Splashdown): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Splashdown";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Splashdown);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Splashdown_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Splashdown_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_Engineer_Splashdown), QCLASS(Vest_Engineer), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_Engineer_Splashdown), QCLASS(Vest_Engineer), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Tugz): CLASS(Unit_Phase2_Base)
+{
+    displayName = "Tugz";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Tugz);
+    hiddenSelectionsTextures[] =
+    {
+        QPATHTOF(data\uniforms\standard\Tugz_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Tugz_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] =
+    {
+        QCLASS(Helmet_ARF_Tugz), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] =
+    {
+        QCLASS(Helmet_ARF_Tugz), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base)
 {
     displayName = "Tyrant";
 
-    editorSubcategory = EDSUBCAT(Customs);
+    editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Tyrant);
     hiddenSelectionsTextures[] =

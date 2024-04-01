@@ -1,20 +1,14 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class Man;
-    class CAManBase: Man
-    {
-        class ACE_SelfActions
-        {
-            class ace_csw_deploy
-            {
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class ace_csw_deploy {
                 modifierFunction = QUOTE(call FUNC(cswDeployModifier));
             };
         };
 
-        class UserActions
-        {
-            class GVAR(CSW_Deploy)
-            {
+        class UserActions {
+            class GVAR(CSW_Deploy) {
                 displayName = "Deploy Tripod";
                 displayNameDefault = "";
 
@@ -32,42 +26,57 @@ class CfgVehicles
     };
 
     class LandVehicle;
-    class Car: LandVehicle
-    {
-        class ACE_SelfActions
-        {
+    class Car: LandVehicle {
+        class ACE_Actions {
+            class ACE_MainActions {
+                UNFLIP_VEHICLE;
+            };
+        };
+        class ACE_SelfActions {
             SKIN_SWITCHER;
         };
     };
-    class Tank: LandVehicle
-    {
-        class ACE_SelfActions
-        {
+    class Tank: LandVehicle {
+        class ACE_Actions {
+            class ACE_MainActions {
+                UNFLIP_VEHICLE;
+            };
+        };
+        class ACE_SelfActions {
             SKIN_SWITCHER;
         };
     };
 
     class Air;
-    class Helicopter: Air
-    {
-        class ACE_SelfActions
-        {
+    class Helicopter: Air {
+        class ACE_Actions {
+            class ACE_MainActions {
+                UNFLIP_VEHICLE;
+            };
+        };
+        class ACE_SelfActions {
             SKIN_SWITCHER;
         };
     };
-    class Plane: Air
-    {
-        class ACE_SelfActions
-        {
+    class Plane: Air {
+        class ACE_Actions {
+            class ACE_MainActions {
+                UNFLIP_VEHICLE;
+            };
+        };
+        class ACE_SelfActions {
             SKIN_SWITCHER;
         };
     };
 
     class Ship;
-    class Ship_F: Ship
-    {
-        class ACE_SelfActions
-        {
+    class Ship_F: Ship {
+        class ACE_Actions {
+            class ACE_MainActions {
+                UNFLIP_VEHICLE;
+            };
+        };
+        class ACE_SelfActions {
             SKIN_SWITCHER;
         };
     };

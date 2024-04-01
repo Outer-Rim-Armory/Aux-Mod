@@ -10,7 +10,7 @@
  * Zero <NUMBER>
  *
  * Examples:
- * _atrt addEventHandler ["HandleDamage",LINKFUNC(atrt_handleDamage)];
+ * _atrt addEventHandler ["HandleDamage", BNA_KC_vehicles_fnc_atrt_handleDamage];
  *
  * Public: No
  */

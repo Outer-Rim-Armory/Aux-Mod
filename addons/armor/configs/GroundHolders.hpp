@@ -17,8 +17,8 @@ GROUND_HOLDER(Helmet_ARF_CT_Legacy,"SF ARF Helm 01 (Trooper, Legacy)");
 GROUND_HOLDER(Helmet_ARF_Enlisted_CamoBrown,"SF ARF Helm 01 (Enlisted) - Brown Camo");
 GROUND_HOLDER(Helmet_ARF_Enlisted_CamoGrey,"SF ARF Helm 01 (Enlisted) - Grey Camo");
 
-GROUND_HOLDER(Helmet_BARC_Base,"SF BARC Helm (Base)");
-GROUND_HOLDER(Helmet_BARC_CT,"SF BARC Helm 01 (Trooper)");
+GROUND_HOLDER(Helmet_BARC_Base,"INF BARC Helm (Base)");
+GROUND_HOLDER(Helmet_BARC_CT,"INF BARC Helm 01 (Trooper)");
 
 GROUND_HOLDER(Helmet_Commando_Base,"SF Commando Helm (Base)");
 

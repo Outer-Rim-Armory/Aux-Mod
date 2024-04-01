@@ -29,8 +29,8 @@ class CfgVehicles
         {
             "3AS_BTLB_450Rnd_Heavy_Shells",
             "3AS_BTLB_450Rnd_Heavy_Shells",
-            "ls_mag_240rnd_CMFlareChaff_blue",
-            "ls_mag_240rnd_CMFlareChaff_blue",
+            "ls_mag_240Rnd_CMFlareChaff_blue",
+            "ls_mag_240Rnd_CMFlareChaff_blue",
             "Laserbatteries"
         };
 

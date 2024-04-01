@@ -39,8 +39,8 @@ class CfgVehicles
         {
             "3AS_ARC_500Rnd_Light_Shells",
             "3AS_ARC_500Rnd_Light_Shells",
-            "ls_mag_240rnd_CMFlareChaff_blue",
-            "ls_mag_240rnd_CMFlareChaff_blue",
+            "ls_mag_240Rnd_CMFlareChaff_blue",
+            "ls_mag_240Rnd_CMFlareChaff_blue",
             "Laserbatteries"
         };
 
@@ -154,7 +154,7 @@ class CfgVehicles
             class Reargun: Reargun
             {
                 weapons[] = {QCLASS(Cannon_ARC_Light), "ls_weapon_CMFlareLauncher"};
-                magazines[] = {"3AS_ARC_500Rnd_Light_Shells", "ls_mag_240rnd_CMFlareChaff_blue"};
+                magazines[] = {"3AS_ARC_500Rnd_Light_Shells", "ls_mag_240Rnd_CMFlareChaff_blue"};
             };
         };
 

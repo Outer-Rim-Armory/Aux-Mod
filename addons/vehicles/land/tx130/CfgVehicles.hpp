@@ -11,7 +11,7 @@ class CfgVehicles
         author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
-        editorSubcategory = EDSUBCAT(Tanks);
+        editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_M1);
 
         displayName = "TX-130 Saber Tank";
@@ -94,7 +94,7 @@ class CfgVehicles
         author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
-        editorSubcategory = EDSUBCAT(Tanks);
+        editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_M1_Recon);
 
         displayName = "TX-130 Saber Recon Tank";
@@ -164,7 +164,7 @@ class CfgVehicles
         author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
-        editorSubcategory = EDSUBCAT(Tanks);
+        editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_M1_GL);
 
         displayName = "TX-130 Saber Tank (GL)";
@@ -234,7 +234,7 @@ class CfgVehicles
         author = AUTHOR;
 
         faction = QCLASS(Faction_KC);
-        editorSubcategory = EDSUBCAT(Tanks);
+        editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_Super);
 
         displayName = "TX-130 Super Saber Tank";

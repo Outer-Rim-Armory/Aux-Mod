@@ -31,8 +31,8 @@ class CLASS(Unit_Commando_Base): CLASS(Unit_ARC_CT)
         magazines[] =
         {
             // Ammo
-            ITEM_11(QCLASS(Mag_60rnd_DC17M)),
-            ITEM_2(QCLASS(Mag_7rnd_DC15SA)),
+            ITEM_11(QCLASS(Mag_60Rnd_DC17M)),
+            ITEM_2(QCLASS(Mag_7Rnd_DC15SA)),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("ShieldGrenade_Mag"),
@@ -44,8 +44,8 @@ class CLASS(Unit_Commando_Base): CLASS(Unit_ARC_CT)
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11(QCLASS(Mag_60rnd_DC17M)),
-            ITEM_2(QCLASS(Mag_7rnd_DC15SA)),
+            ITEM_11(QCLASS(Mag_60Rnd_DC17M)),
+            ITEM_2(QCLASS(Mag_7Rnd_DC15SA)),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("ShieldGrenade_Mag"),

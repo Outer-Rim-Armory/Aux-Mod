@@ -1,29 +1,26 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Determines whether a player can switch their vehicle's skin
+ * Determines whether a player can switch their vehicle's skin.
  *
  * Arguments:
- * See https://ace3.acemod.org/wiki/framework/interactionmenu-framework
+ * 0: The vehicle <OBJECT>
+ * 1: The player attempting to change the texture <OBJECT>
  *
  * Return Value:
- * Whether a vehicle's skin can be changed <BOOL>
+ * True if the textures can be changed, otherwise false <BOOL>
  *
  * Examples:
- * condition = call FUNC(skin_canSwitch);
+ * condition = call BNA_KC_vehicles_fnc_skin_canSwitch;
  *
- * Public: Yes
+ * Public: No
  */
 
-params ["_target", "_player", "_params"];
+params ["_vehicle", "_player"];
 private ["_textureSources"];
-TRACE_3("fnc_skin_canSwitch",_target,_player,_params);
+TRACE_2("fnc_skin_canSwitch",_target,_vehicle);
 
-_textureSources = getArray (configOf _target >> "textureList");
+_textureSources = getArray (configOf _vehicle >> "textureList");
 
-
-count _textureSources >= 2 and {
-    alive _target and
-    _player isEqualTo currentPilot _target and
-    speed _target <= 1
-};
+count _textureSources >= 2 and {alive _vehicle} and
+{_player isEqualTo currentPilot _vehicle} and {IS_STOPPED(_vehicle)}

@@ -13,6 +13,7 @@ class CfgPatches
             QUOTE(ADDON),
             "3AS_Weapons_DC15C",
             "3AS_Weapons_WestarM5",
+            "JLTS_weapons_DC15X",
             "SWLW_Clones"
         };
         units[] = {};

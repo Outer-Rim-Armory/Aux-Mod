@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Handles bacta grenades
+ * Handles bacta grenades.
  *
  * Arguments:
  * 0: The unit that threw the grenade <OBJECT>
@@ -10,10 +10,12 @@
  * 3: Projectile object <OBJECT>
  *
  * Return Value:
- * Whether the area healing was successfully created <BOOL>
+ * True if area heal was created, otherwise false <BOOL>
  *
  * Examples:
  * [ace_player, "BNA_KC_Grenade_Bacta", "BNA_KC_Grenade_Bacta_Ammo", _projectile] call BNA_KC_weapons_fnc_bactaGrenade;
+ *
+ * Public: No
  */
 
 params [
@@ -50,11 +52,7 @@ _rate = [
     -1
 ] call BIS_fnc_returnConfigEntry;
 
-_maxPatients = [
-    configFile >> "CfgMagazines" >> _magazine,
-    QEGVAR(medical,areaHealMaxPatients),
-    0
-] call BIS_fnc_returnConfigEntry;
+_maxPatients = getNumber (configFile >> "CfgMagazines" >> _magazine >> QEGVAR(medical,areaHealMaxPatients));
 
 TRACE_5("fnc_bactaGrenade | Heal parameters",_projectile,_radius,_rate,_maxPatients,_duration);
 
