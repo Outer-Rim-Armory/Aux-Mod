@@ -1,6 +1,6 @@
-class CLASS(Helmet_BARC_Base)
-{
+class CLASS(Helmet_BARC_Base) {
     model = QCLASS(Helmets_BARC);
-    camo = "Base";
+    rank = "Base";
 };
-class CLASS(Helmet_BARC_CT): CLASS(Helmet_BARC_Base) { camo = "CT"; };
+
+class CLASS(Helmet_BARC_CT): CLASS(Helmet_BARC_Base) { rank = "CT"; };
