@@ -486,7 +486,7 @@ class CLASS(DOUBLES(Helmet_Phase12,var1)##var2): CLASS(DOUBLES(Helmet_Phase12,va
 }
 
 #define UNIFORM_INSULATED_P2_CUSTOM(var1) class CLASS(DOUBLES(Uniform_Phase2_Insulated,var1)): CLASS(Uniform_Phase2_Insulated_Base) { \
-    displayName = QUOTE([KC] Custom P2 Snow Armor ('##var1##')); \
+    displayName = QUOTE([KC] Custom P2 Insulated Armor ('##var1##')); \
     GVAR(isCustom) = TRUE; \
     class ItemInfo: ItemInfo { \
         uniformClass = QCLASS(DOUBLES(Unit_Phase2_Insulated,var1)); \

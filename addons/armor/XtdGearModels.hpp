@@ -11,6 +11,8 @@ class XtdGearModels {
             values[] = {};
         };
 
+        XTDMODELS_CAMO;
+
         class style: rank {
             label = "Style";
             alwaysSelectable  = FALSE;
@@ -21,8 +23,6 @@ class XtdGearModels {
             class V3 { label = "V3"; };
             class V4 { label = "V4"; };
         };
-
-        XTDMODELS_CAMO;
     };
 
     class CfgWeapons {
@@ -388,7 +388,7 @@ class XtdGearModels {
             };
         };
 
-        class CLASS(Uniforms_Insulated_Phase2)
+        class CLASS(Uniforms_Insulated_Phase2): CLASS(Rank_Base)
         {
             label = "Insulated Uniforms (P2)";
 
