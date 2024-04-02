@@ -279,10 +279,6 @@ class XtdGearModels {
 
             class camo: camo {
                 values[] = {"Brown", "Grey", "Night"};
-                class Night {
-                    label = "Night";
-                    image = "#(rgb,8,8,3)color(0.141,0.141,0.141,1)";
-                };
             };
 
             class style: style {
@@ -325,14 +321,13 @@ class XtdGearModels {
 
         class CLASS(Uniforms_Ranks_Infantry): CLASS(Rank_Base) {
             label = "Infantry Rank Uniforms";
-            options[] = {"rank", "camo"};
+            options[] = {"rank", "camo", "style"};
 
             class rank: rank {
                 values[] = {
                     "Base",
                     "CR",
                     "CT",
-                    "CT_Legacy",
                     "SCT",
                     "VCT",
                     "CLC",
@@ -352,7 +347,6 @@ class XtdGearModels {
                 class Base { label = "Base"; };
                 class CR { label = "CR"; };
                 class CT { label = "CT"; };
-                class CT_Legacy { label = "CT (Legacy)"; };
                 class SCT { label = "SCT"; };
                 class VCT { label = "VCT"; };
                 class CLC { label = "CLC"; };
@@ -367,6 +361,10 @@ class XtdGearModels {
                 class WO3 { label = "WO3"; };
                 class CL { label = "CL"; };
                 class CL1 { label = "CL1"; };
+            };
+
+            class style: style {
+                values[] = {"Standard", "Legacy"};
             };
         };
 
@@ -438,12 +436,15 @@ class XtdGearModels {
             class rank: rank {
                 values[] = {
                     "CT",
-                    "NightShade",
-                    "Enlisted_CamoNight"
+                    "NightShade"
                 };
 
                 class CT { label = "CT"; };
                 class NightShade { label = "NightShade"; };
+            };
+
+            class camo: camo {
+                values[] = {"Night"};
             };
         };
 

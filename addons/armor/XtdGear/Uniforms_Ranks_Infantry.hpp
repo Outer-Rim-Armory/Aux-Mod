@@ -1,11 +1,12 @@
 class CLASS(Uniform_Base) {
     model = QCLASS(Uniforms_Ranks_Infantry);
     rank = "Base";
+    style = "Standard";
 };
 
 class CLASS(Uniform_CR): CLASS(Uniform_Base) { rank = "CR"; };
 class CLASS(Uniform_CT): CLASS(Uniform_Base) { rank = "CT"; };
-class CLASS(Uniform_CT_Legacy): CLASS(Uniform_Base) { rank = "CT_Legacy"; };
+class CLASS(Uniform_CT_Legacy): CLASS(Uniform_CT) { style = "Legacy"; };
 class CLASS(Uniform_SCT): CLASS(Uniform_Base) { rank = "SCT"; };
 class CLASS(Uniform_VCT): CLASS(Uniform_Base) { rank = "VCT"; };
 class CLASS(Uniform_CLC): CLASS(Uniform_Base) { rank = "CLC"; };
