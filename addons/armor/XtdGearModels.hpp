@@ -111,17 +111,20 @@ class XtdGearModels {
 
         class CLASS(Helmets_Tanker_Phase1): CLASS(Rank_Base) {
             label = "Tanker Helmets (P1)";
+            options[] = {"rank", "style"};
 
             class rank: rank {
                 values[] = {
                     "Base",
-                    "CT",
-                    "CT_v2"
+                    "CT"
                 };
 
                 class Base { label = "Base"; };
                 class CT { label = "CT"; };
-                class CT_v2 { label = "CT v2"; };
+            };
+
+            class style: style {
+                values[] = {"Standard", "V2"};
             };
         };
 
@@ -207,34 +210,39 @@ class XtdGearModels {
 
         class CLASS(Helmets_Tanker_Phase2): CLASS(Rank_Base) {
             label = "Tanker Helmets (P2)";
-            options[] = {"rank", "camo"};
+            options[] = {"rank", "camo", "style"};
 
             class rank: rank {
                 values[] = {
                     "Base",
-                    "CT",
-                    "CT_v2"
+                    "CT"
                 };
 
                 class Base { label = "Base"; };
-                class CXA { label = "CXA"; };
-                class CXE { label = "CXE"; };
+                class CT { label = "CT"; };
+            };
+
+            class style: style {
+                values[] = {"Standard", "V2"};
             };
         };
 
         class CLASS(Helmets_Airborne): CLASS(Rank_Base) {
             label = "Airborne Helmets";
+            options[] = {"rank", "style"};
 
             class rank: rank {
                 values[] = {
                     "Base",
-                    "CT",
-                    "CT_v2"
+                    "CT"
                 };
 
                 class Base { label = "Base"; };
                 class CT { label = "CT"; };
-                class CT_v2 { label = "CT v2"; };
+            };
+
+            class style: style {
+                values[] = {"Standard", "V2"};
             };
         };
 
@@ -255,39 +263,49 @@ class XtdGearModels {
 
         class CLASS(Helmets_ARC): CLASS(Rank_Base) {
             label = "ARC Helmets";
-            options[] = {"rank", "camo"};
+            options[] = {"rank", "camo", "style"};
 
             class rank: rank {
                 values[] = {
                     "Base",
                     "CT",
-                    "CT_Legacy",
                     "NightShade"
                 };
 
                 class Base { label = "Base"; };
                 class CT { label = "CT"; };
-                class CT_Legacy { label = "CT (Legacy)"; };
                 class NightShade { label = "NightShade"; };
             };
 
-            class camo: camo {};
+            class camo: camo {
+                values[] = {"Brown", "Grey", "Night"};
+                class Night {
+                    label = "Night";
+                    image = "#(rgb,8,8,3)color(0.141,0.141,0.141,1)";
+                };
+            };
+
+            class style: style {
+                values[] = {"Standard", "Legacy"};
+            };
         };
 
         class CLASS(Helmets_ARF): CLASS(Rank_Base) {
             label = "ARF Helmets";
-            options[] = {"rank", "camo"};
+            options[] = {"rank", "camo", "style"};
 
             class rank: rank {
                 values[] = {
                     "Base",
-                    "CT",
-                    "CT_Legacy"
+                    "CT"
                 };
 
                 class Base { label = "Base"; };
                 class CT { label = "CT"; };
-                class CT_Legacy { label = "CT (Legacy)"; };
+            };
+
+            class style: style {
+                values[] = {"Standard", "Legacy"};
             };
         };
 
