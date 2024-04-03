@@ -26,7 +26,7 @@ _loadoutsMap = missionNamespace getVariable [QGVAR(loadouts), [] call FUNC(regis
 _loadoutValues = _loadoutsMap getOrDefaultCall [_loadoutName, {
     hint format ["Loadout '%1' does not exist.", _loadoutName];
 }];
-_loadoutValues params ["_launcher", "_binoculars", "_vest", "_backpack", "_weapons", "_magazines", "_items"];
+_loadoutValues params ["_sideArm", "_launcher", "_binoculars", "_vest", "_backpack", "_weapons", "_magazines", "_items"];
 
 {ace_player removeItems _x;} forEach items ace_player;
 {ace_player removeMagazines _x;} forEach magazines ace_player;
@@ -36,13 +36,12 @@ if (_vest != "") then {
 };
 
 if (_binoculars != "") then {
-    ace_player addWeapon _binoculars;
     ace_player addMagazine "Laserbatteries";
+    ace_player addWeapon _binoculars;
 };
 
 removeBackpack ace_player;
 ace_player addBackpack _backpack;
-ace_player addWeapon _launcher;
 
 {
     for "_i" from 1 to (_x#1) do {
@@ -55,5 +54,9 @@ ace_player addWeapon _launcher;
         ace_player addItem (_x#0);
     };
 } forEach _items;
+
+// Add weapons last so they are pre-loaded
+ace_player addWeapon _sideArm;
+ace_player addWeapon _launcher;
 
 nil;
