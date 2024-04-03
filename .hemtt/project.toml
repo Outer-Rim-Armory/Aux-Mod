@@ -28,6 +28,7 @@ workshop = [
     "1779063631", # ZEN
     "2018593688", # ZEN ACE Compat
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
+    "2954535667", # Warmantle Armory
     "767380317",  # Blastcore # Only used to test particle effects
 ]
 presets = ["main"]
@@ -49,6 +50,7 @@ workshop = [
     "2915485125", # Burn 'Em
     "767380317",  # Blastcore
     "2789152015", # WBK Zombies
+    "2954535667", # Warmantle Armory
     "2478080991", # Scion Conflict
 ]
 presets = ["main"]

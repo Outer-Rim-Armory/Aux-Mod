@@ -1,10 +1,8 @@
 class CBA_Extended_EventHandlers;
 
-class CfgVehicles
-{
+class CfgVehicles {
     class ls_flag_base;
-    class CLASS(Flag_KC_Pole): ls_flag_base
-    {
+    class CLASS(Flag_KC_Pole): ls_flag_base {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -13,15 +11,13 @@ class CfgVehicles
 
         displayName = "KC Flag (Pole)";
 
-        class EventHandlers
-        {
+        class EventHandlers {
             init = QUOTE((_this select 0) setFlagTexture QQPATHTOF(data\flags\KC_co.paa));
         };
     };
 
     class ls_staticFlag_base;
-    class CLASS(Flag_KC_Vertical): ls_staticFlag_base
-    {
+    class CLASS(Flag_KC_Vertical): ls_staticFlag_base {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -34,36 +30,30 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_Vertical_co.paa)};
     };
-    class CLASS(Flag_KC_Horizontal): CLASS(Flag_KC_Vertical)
-    {
+    class CLASS(Flag_KC_Horizontal): CLASS(Flag_KC_Vertical) {
         displayName = "KC Flag (Horizontal)";
 
         model = "\LS_statics_props\flags\ls_horizontal_flag";
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_co.paa)};
     };
 
-    class CLASS(Flag_KC_Damaged_Pole): CLASS(Flag_KC_Pole)
-    {
+    class CLASS(Flag_KC_Damaged_Pole): CLASS(Flag_KC_Pole) {
         displayName = "KC Damaged Flag (Pole)";
-        class EventHandlers
-        {
+        class EventHandlers {
             init = QUOTE((_this select 0) setFlagTexture QQPATHTOF(data\flags\KC_Damaged_co.paa));
         };
     };
-    class CLASS(Flag_KC_Damaged_Vertical): CLASS(Flag_KC_Vertical)
-    {
+    class CLASS(Flag_KC_Damaged_Vertical): CLASS(Flag_KC_Vertical) {
         displayName = "KC Damaged Flag (Vertical)";
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_Damaged_Vertical_co.paa)};
     };
-    class CLASS(Flag_KC_Damaged_Horizontal): CLASS(Flag_KC_Horizontal)
-    {
+    class CLASS(Flag_KC_Damaged_Horizontal): CLASS(Flag_KC_Horizontal) {
         displayName = "KC Damaged Flag (Horizontal, Mirrored)";
 
         model = "\LS_statics_props\flags\ls_horizontal_flag";
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_Damaged_co.paa)};
     };
-    class CLASS(Flag_KC_Damaged_Horizontal_Mirrored): CLASS(Flag_KC_Horizontal)
-    {
+    class CLASS(Flag_KC_Damaged_Horizontal_Mirrored): CLASS(Flag_KC_Horizontal) {
         displayName = "KC Damaged Flag (Horizontal)";
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_Damaged_Mirrored_co.paa)};
     };
@@ -119,18 +109,15 @@ class CfgVehicles
         };
     };
 
-    class CLASS(Utility_Arsenal): CLASS(Gonk_Base)
-    {
+    class CLASS(Utility_Arsenal): CLASS(Gonk_Base) {
         SCOPE_PUBLIC;
         displayName = "Arsenal Terminal";
         model = "\3AS\3AS_Props\Terminals\Terminal_short.p3d";
         editorPreview = EDITOR_PREVIEW(Utility_Arsenal);
 
-        class UserActions
-        {
-            class Arsenal_ACE
-            {
-                displayName = "<t color='#3996e7'><img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\rearm_ca.paa'/> Open ACE Arsenal</t>";
+        class UserActions {
+            class Arsenal_ACE {
+                displayName = QUOTE(<t color='#a02116'><img image=QQPATHTOEF(core,data\ui\ACE_logo_small_ca.paa)/> Open ACE Arsenal</t>);
 
                 position = "camera";
                 radius = 3;
@@ -143,31 +130,27 @@ class CfgVehicles
                 statement = QUOTE([ARR_3(ace_player,ace_player,true)] call ace_arsenal_fnc_openBox;);
             };
 
-            class Arsenal_BIS: Arsenal_ACE
-            {
-                displayName = "<t color='#E6E6E6'><img image='\a3\ui_f\data\IGUI\Cfg\simpleTasks\types\rearm_ca.paa'/> Open BIS Arsenal</t>";
+            class Arsenal_BIS: Arsenal_ACE {
+                // Bohemia Green, looks weird: #6BA539
+                displayName = QUOTE(<t color='#E6E6E6'><img image=QQPATHTOEF(core,data\ui\BIS_logo_small_ca.paa)/> Open BIS Arsenal</t>);
                 statement = QUOTE([ARR_2('Open',[true])] call BIS_fnc_arsenal;);
             };
 
-            class Add_Radio: Arsenal_ACE
-            {
+            class Add_Radio: Arsenal_ACE {
                 displayName = "<t color='#E6E6E6'><img image='\a3\modules_f_curator\data\portraitradio_ca.paa'/> Add Radio</t>";
                 statement = QUOTE(ace_player linkItem 'SWLB_comlink');
             };
         };
     };
 
-    class CLASS(Utility_FullHeal): CLASS(Gonk_Base)
-    {
+    class CLASS(Utility_FullHeal): CLASS(Gonk_Base) {
         SCOPE_PUBLIC;
         displayName = "Full Heal Droid";
         model = "\3AS\3AS_props\droids\models\3AS_medical_droid.p3d";
         editorPreview = EDITOR_PREVIEW(Utility_FullHeal);
 
-        class UserActions
-        {
-            class FullHeal
-            {
+        class UserActions {
+            class FullHeal {
                 displayName = "<t color='#c40000'><img image='z\ace\addons\zeus\ui\icon_module_zeus_heal_ca.paa'/> Recieve Treatment</t>";
 
                 position = "camera";
