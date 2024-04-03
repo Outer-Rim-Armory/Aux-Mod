@@ -16,6 +16,7 @@
  */
 
 private ["_loadoutConfig", "_weaponsConfig"];
+TRACE_0("fnc_scanConfig");
 
 _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
 
