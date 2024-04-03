@@ -30,8 +30,7 @@ _loadouts = createHashMapFromArray [
         "",                     // Binoculars
         "",                     // Vest
         QCLASS(Backpack_Invis), // Backpack
-        ["DC15A", "DC15S"],
-        [
+        ["DC15A", "DC15S"], [
             // Magazines (Grenades)
             ["ls_mag_classC_thermalDet", 2],
             ["3AS_SmokeWhite", 2],
@@ -39,8 +38,7 @@ _loadouts = createHashMapFromArray [
             ["3AS_SmokeGreen", 2],
             ["ShieldGrenade_Mag", 3],
             ["Chemlight_blue", 5]
-        ],
-        [   // Items
+        ], [   // Items
             ["ACE_CableTie", 5],
             ["ACE_EntrenchingTool", 1],
             ["ACE_Flashlight_XL50", 1],
@@ -57,8 +55,7 @@ _loadouts = createHashMapFromArray [
         "JLTS_CloneBinocular",
         "",
         QCLASS(Backpack_Invis),
-        ["DC15A", "DC15S", "DC15C"],
-        [
+        ["DC15A", "DC15S", "DC15C"], [
             ["ls_mag_classC_thermalDet", 4],
             ["3AS_SmokeWhite", 5],
             ["3AS_SmokeBlue", 3],
@@ -71,8 +68,7 @@ _loadouts = createHashMapFromArray [
             [QCLASS(Grenade_EMP), 3],
             [QCLASS(Mag_UGL_FlareBlue), 3],
             ["Laserbatteries", 2]
-        ],
-        [
+        ], [
             ["ACE_CableTie", 5],
             ["ACE_EntrenchingTool", 1],
             ["ACE_Flashlight_XL50", 1],

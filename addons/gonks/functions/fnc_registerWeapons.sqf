@@ -25,16 +25,13 @@ if (count _weapons isNotEqualTo 0 and !_rebuild) exitWith {
 };
 
 _weapons = createHashMapFromArray [
-    ["DC15A", [QCLASS(DC15A),
-    [
+    ["DC15A", [QCLASS(DC15A), [
         [QCLASS(Mag_60Rnd_DC15A), 10]
     ]]],
-    ["DC15S", [QCLASS(DC15S),
-    [
+    ["DC15S", [QCLASS(DC15S), [
         [QCLASS(Mag_80Rnd_DC15S), 10]
     ]]],
-    ["DC15C", [QCLASS(DC15C),
-    [
+    ["DC15C", [QCLASS(DC15C), [
         [QCLASS(Mag_40Rnd_DC15C), 10]
     ]]]
 ];
