@@ -21,7 +21,7 @@ TRACE_1("fnc_canShowWeaponOption",_weapon);
 
 _mos = ace_player getVariable [QGVAR(mos), "Rifleman"];
 _loadouts = missionNamespace getVariable [QGVAR(loadouts), [] call FUNC(registerWeapons)];
-_mosWeapons = (_loadouts getOrDefault [_mos, ["DC15A", "DC15S"]]) select 4;
+_mosWeapons = (_loadouts getOrDefault [_mos, ["DC15A", "DC15S"]]) select 5;
 
 _loadoutPage = ace_player getVariable [QGVAR(LoadoutMenu_Page), MENU_PAGE_HOME];
 _weapon in _mosWeapons and _loadoutPage == LOADOUTMENU_PAGE_WEAPONS;
