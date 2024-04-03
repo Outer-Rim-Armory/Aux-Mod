@@ -6,12 +6,17 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QCLASS(core)
+            QCLASS(core),
+            QCLASS(objects)
         };
-        units[] = {};
+        units[] = {
+            QCLASS(Gonk_Uniforms),
+            QCLASS(Gonk_Loadouts)
+        };
         weapons[] = {};
         VERSION_CONFIG;
     };
 };
 
+#include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
