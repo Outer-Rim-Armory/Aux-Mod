@@ -15,7 +15,7 @@
  * Public: No
  */
 
-private ["_loadoutConfig"];
+private ["_loadoutConfig", "_weaponsConfig"];
 
 _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
 
@@ -48,3 +48,12 @@ _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
 } forEach _loadoutConfig;
 
 publicVariable QGVAR(loadouts);
+
+_weaponsConfig = "true" configClasses (configFile >> QGVAR(weapons));
+
+{
+    private _magazines = getArray (_x >> "magazines");
+    GVAR(weapons) set [configName _x, _magazines];
+} forEach _weaponsConfig;
+
+publicVariable QGVAR(weapons);

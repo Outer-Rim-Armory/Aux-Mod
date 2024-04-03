@@ -16,7 +16,7 @@
 {"ACE_tourniquet", 4}, \
 {"ItemcTabHCam", 1}
 
-class CLASS(Gonks_Loadouts) {
+class GVAR(loadouts) {
     // Detachment
     class Infantry {
         label = "Nightfall";
