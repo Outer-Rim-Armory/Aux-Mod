@@ -56,14 +56,13 @@ _fnc_rankColor = {
 
     {
         _label = getText (configFile >> QGVAR(ranks) >> _detachment >> _x >> "label");
-        _order = getNumber (configFile >> QGVAR(ranks) >> _detachment >> _x >> "order");
         _object addAction [
             format ["<t color='%1'>Grab %2 Uniform</t>", _x call _fnc_rankColor, _x], {
                 params ["_target", "_caller", "_actionId", "_arguments"];
                 _arguments call FUNC(applyRank);
             },
             [_detachment, _x],
-            100 - _order,
+            100 - _y#0,
             false,
             false,
             "",

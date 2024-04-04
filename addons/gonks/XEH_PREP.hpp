@@ -1,5 +1,5 @@
 PREP(applyLoadout);
-PREP(applyRankLoadout);
+PREP(applyRank);
 PREP(canShowWeaponOption);
 PREP(giveWeapon);
 PREP(loadoutBoxInit);
