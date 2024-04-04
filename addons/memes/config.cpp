@@ -1,6 +1,6 @@
 #include "script_component.hpp"
-#if __MONTH__ == 4
-#if __DAY__ == 1
+
+#ifdef APRIL_FOOL
 class CfgPatches {
     class ADDON {
         author = AUTHOR;
@@ -16,5 +16,4 @@ class CfgPatches {
 };
 
 #include "CfgEventHandlers.hpp"
-#endif
 #endif
