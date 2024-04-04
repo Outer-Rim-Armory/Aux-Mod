@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Init function for a uniform box
+ * Init function for a uniform box.
  *
  * Arguments:
  * 0: The object to add the actions to <OBJECT>
@@ -15,15 +15,13 @@
  * Public: No
  */
 
-params [
-    ["_object", objNull, [objNull]]
-];
-private ["_rankColor"];
+params ["_object"];
+private ["_fnc_rankColor"];
 TRACE_1("fnc_uniformBoxInit",_object);
 
 if (isNull _object) exitWith {};
 
-_rankColor = {
+_fnc_rankColor = {
     params ["_rank"];
     private ["_color"];
 
@@ -38,20 +36,35 @@ _rankColor = {
 };
 
 {
+    private ["_detachment", "_label", "_order"];
+    _detachment = _x;
+    _label = getText (configFile >> QGVAR(ranks) >> _x >> "label");
+    _order = getNumber (configFile >> QGVAR(ranks) >> _x >> "order");
     _object addAction [
-        format ["<t color='%1'>Grab %2 Uniform</t>", _x call _rankColor, _x],
-        {
+        format ["<t color='#FFFFFF'>%1</t>", _label], {
             params ["_target", "_caller", "_actionId", "_arguments"];
-            _arguments params ["_rank"];
-            _rank call FUNC(applyRankLoadout);
         },
-        [_x],
-        _forEachIndex,
+        [],
+        100 - _order,
         false,
         false,
         "",
-        QUOTE(UNIFORMMENU_GETPAGE isEqualTo UNIFORMMENU_PAGE_RANKUNIFORMS)
+        QUOTE(GVAR(rankPage) == MENU_PAGE_HOME)
     ];
-} forEach LOADOUTS_RANKS_LIST;
+    // _object addAction [
+    //     format ["<t color='%1'>Grab %2 Uniform</t>", _x call _rankColor, _x],
+    //     {
+    //         params ["_target", "_caller", "_actionId", "_arguments"];
+    //         _arguments params ["_rank"];
+    //         _rank call FUNC(applyRankLoadout);
+    //     },
+    //     [_x],
+    //     _forEachIndex,
+    //     false,
+    //     false,
+    //     "",
+    //     QUOTE(UNIFORMMENU_GETPAGE isEqualTo UNIFORMMENU_PAGE_RANKUNIFORMS)
+    // ];
+} forEach GVAR(ranks);
 
 nil;

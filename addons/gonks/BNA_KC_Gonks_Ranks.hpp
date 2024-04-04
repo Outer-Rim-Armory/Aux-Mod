@@ -1,5 +1,7 @@
 class GVAR(ranks) {
     class Infantry {
+        label = "Nightfall";
+        order = 0;
         class CR {
             order = __COUNTER__;
             // See initSettings.inc.sqf for meanings
@@ -203,5 +205,30 @@ class GVAR(ranks) {
             vestP1 = QCLASS(Vest_Commander);
             vestP2 = QCLASS(Vest_Commander);
         };
+    };
+
+    class Engineer {
+        label = "Leviathan";
+        order = 1;
+    };
+
+    class Crewmen {
+        label = "Reeker";
+        order = 2;
+    };
+
+    class Aviation {
+        label = "Blurrg";
+        order = 3;
+    };
+
+    class ARF {
+        label = "Raptor";
+        order = 4;
+    };
+
+    class ARC {
+        label = "Spartan";
+        order = 5;
     };
 };
