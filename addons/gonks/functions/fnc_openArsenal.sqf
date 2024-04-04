@@ -12,7 +12,9 @@
  * None
  *
  * Example:
- * ["customs"] call BNA_KC_objects_fnc_openArsenal;
+ * ["customs"] call BNA_KC_gonks_fnc_openArsenal;
+ *
+ * Public: No
  */
 
 params [

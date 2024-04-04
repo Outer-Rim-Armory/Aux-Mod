@@ -10,7 +10,9 @@
  * None
  *
  * Example:
- * _box call BNA_KC_objects_fnc_loadoutBoxInit;
+ * _box call BNA_KC_gonks_fnc_loadoutBoxInit;
+ *
+ * Public: No
  */
 
 params [

@@ -10,7 +10,9 @@
  * Whether the option should be shown <BOOL>
  *
  * Example:
- * "DC15S" call BNA_KC_objects_fnc_canShowWeaponOption;
+ * "DC15S" call BNA_KC_gonks_fnc_canShowWeaponOption;
+ *
+ * Public: No
  */
 
 params [

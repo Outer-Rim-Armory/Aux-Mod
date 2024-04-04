@@ -10,7 +10,9 @@
  * None
  *
  * Example:
- * "CR" call BNA_KC_objects_fnc_applyRankLoadout;
+ * "CR" call BNA_KC_gonks_fnc_applyRankLoadout;
+ *
+ * Public: No
  */
 
 params [

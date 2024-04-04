@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * "DC15A" call BNA_KC_objects_fnc_giveWeapon;
+ * "DC15A" call BNA_KC_gonks_fnc_giveWeapon;
  */
 
 params [

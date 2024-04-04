@@ -11,7 +11,9 @@
  * None
  *
  * Example:
- * "Rifleman" call BNA_KC_objects_fnc_applyLoadout;
+ * "Rifleman" call BNA_KC_gonks_fnc_applyLoadout;
+ *
+ * Public: No
  */
 
 params [
