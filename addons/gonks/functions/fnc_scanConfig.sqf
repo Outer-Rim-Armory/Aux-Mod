@@ -18,6 +18,10 @@
 private ["_loadoutConfig", "_weaponsConfig"];
 TRACE_0("fnc_scanConfig");
 
+GVAR(loadouts) = createHashmap;
+GVAR(ranks) = createHashmap;
+GVAR(weapons) = createHashmap;
+
 _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
 
 {
