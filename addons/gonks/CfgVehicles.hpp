@@ -19,13 +19,6 @@ class CfgVehicles {
                 statement = QUOTE(UNIFORMMENU_SETPAGE(UNIFORMMENU_PAGE_RANKUNIFORMS););
             };
 
-            class ChangeMenu_Helmets: ChangeMenu_Uniforms {
-                priority = 99;
-                displayName = "<t color='#FFFFFF'>View Helmets</t>";
-                condition = QUOTE(UNIFORMMENU_GETPAGE == MENU_PAGE_HOME);
-                statement = QUOTE(UNIFORMMENU_SETPAGE(UNIFORMMENU_PAGE_DETACHMENTHELMETS));
-            };
-
             class Arsenal_Customize: ChangeMenu_Uniforms {
                 priority = 98;
                 displayName = "<t color='#FFFFFF'>Customize Loadout</t>";
@@ -37,12 +30,6 @@ class CfgVehicles {
                 displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>Home</t>";
                 condition = QUOTE(UNIFORMMENU_GETPAGE != MENU_PAGE_HOME);
                 statement = QUOTE(UNIFORMMENU_SETPAGE(nil));
-            };
-
-            class DetachmentHelmet_Tanker: ChangeMenu_Uniforms {
-                displayName = "<t color='#FFFFFF'>Grab Crew Helmet</t>";
-                condition = QUOTE(UNIFORMMENU_GETPAGE == UNIFORMMENU_PAGE_DETACHMENTHELMETS);
-                statement = QUOTE(ace_player addHeadgear QQCLASS(Helmet_Phase2_Tanker_CT));
             };
         };
     };
