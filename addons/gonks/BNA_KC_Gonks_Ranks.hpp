@@ -2,6 +2,8 @@ class GVAR(ranks) {
     class Infantry {
         label = "Nightfall";
         order = 0;
+
+        __COUNTER_RESET__
         class CR {
             order = __COUNTER__;
             // See initSettings.inc.sqf for meanings
@@ -210,25 +212,35 @@ class GVAR(ranks) {
     class Engineer {
         label = "Leviathan";
         order = 1;
+
+        __COUNTER_RESET__
     };
 
     class Crewmen {
         label = "Reeker";
         order = 2;
+
+        __COUNTER_RESET__
     };
 
     class Aviation {
         label = "Blurrg";
         order = 3;
+
+        __COUNTER_RESET__
     };
 
     class ARF {
         label = "Raptor";
         order = 4;
+
+        __COUNTER_RESET__
     };
 
     class ARC {
         label = "Spartan";
         order = 5;
+
+        __COUNTER_RESET__
     };
 };

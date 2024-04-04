@@ -5,31 +5,24 @@ class CfgVehicles {
         displayName = "Uniform Dispenser";
 
         class UserActions {
-            class ChangeMenu_Uniforms {
-                displayName = "<t color='#FFFFFF'>View Rank Uniforms</t>";
+            class Arsenal_Customize {
+                displayName = "<t color='#FFFFFF'>Customize Loadout</t>";
 
                 position = "camera";
                 radius = 3;
                 onlyForPlayer = TRUE;
 
                 hideOnUse = FALSE;
-                priority = 100;
+                priority = 0;
 
-                condition = QUOTE(UNIFORMMENU_GETPAGE == MENU_PAGE_HOME);
-                statement = QUOTE(UNIFORMMENU_SETPAGE(UNIFORMMENU_PAGE_RANKUNIFORMS););
-            };
-
-            class Arsenal_Customize: ChangeMenu_Uniforms {
-                priority = 98;
-                displayName = "<t color='#FFFFFF'>Customize Loadout</t>";
-                condition = QUOTE(UNIFORMMENU_GETPAGE == MENU_PAGE_HOME);
+                condition = QUOTE(GVAR(rankPage) == MENU_PAGE_HOME);
                 statement = QUOTE('customize' call FUNC(openArsenal));
             };
 
-            class ChangeMenu_Home: ChangeMenu_Uniforms {
+            class ChangeMenu_Home: Arsenal_Customize {
                 displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>Home</t>";
-                condition = QUOTE(UNIFORMMENU_GETPAGE != MENU_PAGE_HOME);
-                statement = QUOTE(UNIFORMMENU_SETPAGE(nil));
+                condition = QUOTE(GVAR(rankPage) != MENU_PAGE_HOME);
+                statement = QUOTE(GVAR(rankPage) = 0);
             };
         };
     };
