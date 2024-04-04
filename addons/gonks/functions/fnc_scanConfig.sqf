@@ -37,7 +37,7 @@ _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
         {
             private ["_loadout"];
             _loadout = _x;
-            _value = [
+            _value pushBack [configName _loadout,
                 getText (_loadout >> "label"),
                 getText (_loadout >> "handgun"),
                 getText (_loadout >> "launcher"),
