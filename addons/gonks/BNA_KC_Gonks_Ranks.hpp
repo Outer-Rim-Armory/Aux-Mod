@@ -1,6 +1,7 @@
 class GVAR(ranks) {
     class Infantry {
         class CR {
+            order = __COUNTER__;
             // See initSettings.inc.sqf for meanings
             helmetP0 = QCLASS(Helmet_phase1Geo_Enlisted);
             helmetP1 = QCLASS(Helmet_Phase1_CR);
@@ -23,24 +24,28 @@ class GVAR(ranks) {
             nvgP3 = QCLASS(NVG_Chip);
         };
         class CT: CR {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_CT);
             helmetP2 = QCLASS(Helmet_Phase2_CT);
             uniformP1 = QCLASS(Uniform_CT);
             uniformP2 = QCLASS(Uniform_CT);
         };
         class SCT: CR {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_SCT);
             helmetP2 = QCLASS(Helmet_Phase2_SCT);
             uniformP1 = QCLASS(Uniform_SCT);
             uniformP2 = QCLASS(Uniform_SCT);
         };
         class VCT: CR {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_VCT);
             helmetP2 = QCLASS(Helmet_Phase2_VCT);
             uniformP1 = QCLASS(Uniform_VCT);
             uniformP2 = QCLASS(Uniform_VCT);
         };
         class CLC: CR {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_CLC);
             helmetP2 = QCLASS(Helmet_Phase2_CLC);
 
@@ -51,6 +56,7 @@ class GVAR(ranks) {
             vestP2 = QCLASS(Vest_CLC);
         };
         class CPL: CR {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_CPL);
             helmetP2 = QCLASS(Helmet_Phase2_CPL);
 
@@ -61,6 +67,7 @@ class GVAR(ranks) {
             vestP2 = QCLASS(Vest_CPL);
         };
         class CS: CR {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_CS);
             helmetP2 = QCLASS(Helmet_Phase2_CS);
 
@@ -74,6 +81,7 @@ class GVAR(ranks) {
             nvgP2 = QCLASS(NVG_phase2_Rangefinder);
         };
         class CSS: CS {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_CSS);
             helmetP2 = QCLASS(Helmet_Phase2_CSS);
 
@@ -84,6 +92,7 @@ class GVAR(ranks) {
             vestP2 = QCLASS(Vest_CSS);
         };
         class CSFC: CS {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_CSFC);
             helmetP2 = QCLASS(Helmet_Phase2_CSFC);
 
@@ -94,6 +103,7 @@ class GVAR(ranks) {
             vestP2 = QCLASS(Vest_CSFC);
         };
         class CMS: CS {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_CMS);
             helmetP2 = QCLASS(Helmet_Phase2_CMS);
 
@@ -104,6 +114,7 @@ class GVAR(ranks) {
             vestP2 = QCLASS(Vest_CMS);
         };
         class CSM: CS {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_CSM);
             helmetP2 = QCLASS(Helmet_Phase2_CSM);
 
@@ -114,6 +125,7 @@ class GVAR(ranks) {
             vestP2 = QCLASS(Vest_CSM);
         };
         class WO: CR {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_WO);
             helmetP2 = QCLASS(Helmet_Phase2_WO);
 
@@ -127,6 +139,7 @@ class GVAR(ranks) {
             nvgP2 = QCLASS(NVG_phase2_Officer);
         };
         class WO2: WO {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_WO2);
             helmetP2 = QCLASS(Helmet_Phase2_WO2);
 
@@ -134,6 +147,7 @@ class GVAR(ranks) {
             uniformP2 = QCLASS(Uniform_WO2);
         };
         class WO3: WO {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_WO3);
             helmetP2 = QCLASS(Helmet_Phase2_WO3);
 
@@ -141,6 +155,7 @@ class GVAR(ranks) {
             uniformP2 = QCLASS(Uniform_WO3);
         };
         class LT: WO {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_LT);
             helmetP2 = QCLASS(Helmet_Phase2_LT);
 
@@ -151,6 +166,7 @@ class GVAR(ranks) {
             vestP2 = QCLASS(Vest_Officer);
         };
         class 1LT: WO {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_1LT);
             helmetP2 = QCLASS(Helmet_Phase2_1LT);
 
@@ -158,6 +174,7 @@ class GVAR(ranks) {
             uniformP2 = QCLASS(Uniform_1LT);
         };
         class CAP: WO {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_CAP);
             helmetP2 = QCLASS(Helmet_Phase2_CAP);
 
@@ -165,6 +182,7 @@ class GVAR(ranks) {
             uniformP2 = QCLASS(Uniform_CAP);
         };
         class MAJ: WO {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_MAJ);
             helmetP2 = QCLASS(Helmet_Phase2_MAJ);
 
@@ -175,6 +193,7 @@ class GVAR(ranks) {
             vestP2 = QCLASS(Vest_Commander);
         };
         class COM: WO {
+            order = __COUNTER__;
             helmetP1 = QCLASS(Helmet_Phase1_COM);
             helmetP2 = QCLASS(Helmet_Phase2_COM);
 

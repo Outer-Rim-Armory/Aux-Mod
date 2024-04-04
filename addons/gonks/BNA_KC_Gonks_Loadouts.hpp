@@ -20,11 +20,13 @@ class GVAR(loadouts) {
     // Detachment
     class Infantry {
         label = "Nightfall";
+        order = 0;
         // Squad role
         class Security {
             label = "Security";
             class Rifleman {
                 label = "Rifleman";
+                order = __COUNTER__;
                 handgun = QCLASS(DC17);
                 launcher = "";
                 binoculars = "";
@@ -41,6 +43,7 @@ class GVAR(loadouts) {
 
             class SquadLeader: Rifleman {
                 label = "Squad Leader";
+                order = __COUNTER__;
                 binoculars = "JLTS_CloneBinocular";
                 magazines[] = {
                     BASE_MAGAZINES,
@@ -62,6 +65,7 @@ class GVAR(loadouts) {
                     {"ItemcTab", 1}
                 };
             };
+            __COUNTER_RESET__
         };
         class Assault {
             label = "Assault";
@@ -72,17 +76,22 @@ class GVAR(loadouts) {
     };
     class Engineer {
         label = "Leviathan";
+        order = 1;
     };
     class Crewmen {
         label = "Reeker";
+        order = 2;
     };
     class Aviation {
         label = "Blurrg";
+        order = 3;
     };
     class ARF {
         label = "Raptor";
+        order = 4;
     };
     class ARC {
         label = "Spartan";
+        order = 5;
     };
 };

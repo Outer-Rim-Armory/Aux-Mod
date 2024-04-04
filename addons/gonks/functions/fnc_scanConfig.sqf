@@ -29,7 +29,7 @@ _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
 {
     private ["_detachment", "_value"];
     _detachment = _x;
-    _value = [];
+    _value = createHashmap;
 
     {
         private ["_squadType"];
@@ -37,7 +37,8 @@ _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
         {
             private ["_loadout"];
             _loadout = _x;
-            _value pushBack [configName _loadout,
+            _value set [configName _loadout, [
+                getNumber (_loadout >> "order"),
                 getText (_loadout >> "label"),
                 getText (_loadout >> "handgun"),
                 getText (_loadout >> "launcher"),
@@ -47,7 +48,7 @@ _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
                 getArray (_loadout >> "weapons"),
                 getArray (_loadout >> "magazines"),
                 getArray (_loadout >> "items")
-            ];
+            ]];
         } forEach ("true" configClasses _squadType);
     } forEach ("true" configClasses _detachment);
 
@@ -61,15 +62,16 @@ _ranksConfig = "true" configClasses (configFile >> QGVAR(ranks));
 {
     private ["_detachment", "_value"];
     _detachment = _x;
-    _value = [];
+    _value = createHashmap;
 
     {
-        _value pushBack [configName _x,
+        _value set [configName _x, [
+            getNumber (_x >> "order"),
             getText (_x >> format ["helmetP%1", GVAR(armorPhase)]),
             getText (_x >> format ["uniformP%1", GVAR(armorPhase)]),
             getText (_x >> format ["vest%1", GVAR(armorPhase)]),
             getText (_x >> format ["nvg%1", GVAR(armorPhase)])
-        ];
+        ]];
     } forEach ("true" configClasses _detachment);
 
     GVAR(ranks) set [configName _detachment, _value];
