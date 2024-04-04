@@ -16,7 +16,9 @@
  */
 
 private ["_loadoutConfig", "_weaponsConfig"];
-TRACE_0("fnc_scanConfig");
+TRACE_1("fnc_scanConfig",isServer);
+
+if (!isServer) exitWith {};
 
 GVAR(loadouts) = createHashmap;
 GVAR(ranks) = createHashmap;
