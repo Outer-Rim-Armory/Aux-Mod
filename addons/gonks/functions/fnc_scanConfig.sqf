@@ -69,8 +69,8 @@ _ranksConfig = "true" configClasses (configFile >> QGVAR(ranks));
             getNumber (_x >> "order"),
             getText (_x >> format ["helmetP%1", GVAR(armorPhase)]),
             getText (_x >> format ["uniformP%1", GVAR(armorPhase)]),
-            getText (_x >> format ["vest%1", GVAR(armorPhase)]),
-            getText (_x >> format ["nvg%1", GVAR(armorPhase)])
+            getText (_x >> format ["vestP%1", GVAR(armorPhase)]),
+            getText (_x >> format ["nvgP%1", GVAR(armorPhase)])
         ]];
     } forEach ("true" configClasses _detachment);
 
