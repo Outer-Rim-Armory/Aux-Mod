@@ -7,7 +7,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QCLASS(core)
+            QCLASS(core),
+            QEGVAR(weapons,dc15l)
         };
         units[] = {};
         weapons[] = {};
@@ -15,5 +16,6 @@ class CfgPatches {
     };
 };
 
+#include "CfgWeapons.hpp"
 #include "CfgEventHandlers.hpp"
 #endif
