@@ -21,4 +21,5 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
 #include "BNA_KC_Gonks_Loadouts.hpp"
+#include "BNA_KC_Gonks_Ranks.hpp"
 #include "BNA_KC_Gonks_Weapons.hpp"

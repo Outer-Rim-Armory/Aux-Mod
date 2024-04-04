@@ -50,6 +50,27 @@ _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
 
 publicVariable QGVAR(loadouts);
 
+_ranksConfig = "true" configClasses (configFile >> QGVAR(ranks));
+
+{
+    private ["_detachment", "_value"];
+    _detachment = _x;
+    _value = [];
+
+    {
+        _value pushBack [configName _x,
+            getText (_x >> format ["helmetP%1", GVAR(armorPhase)]),
+            getText (_x >> format ["uniformP%1", GVAR(armorPhase)]),
+            getText (_x >> format ["vest%1", GVAR(armorPhase)]),
+            getText (_x >> format ["nvg%1", GVAR(armorPhase)])
+        ];
+    } forEach ("true" configClasses _detachment);
+
+    GVAR(ranks) set [configName _detachment, _value];
+} forEach _ranksConfig;
+
+publicVariable QGVAR(ranks);
+
 _weaponsConfig = "true" configClasses (configFile >> QGVAR(weapons));
 
 {
