@@ -1,8 +1,5 @@
 #define MENU_PAGE_HOME 0
-#define UNIFORMMENU_PAGE_RANKUNIFORMS 1
-#define UNIFORMMENU_PAGE_DETACHMENTHELMETS 2
-#define UNIFORMMENU_GETPAGE ace_player getVariable [QQGVAR(UniformMenu_Page), MENU_PAGE_HOME]
-#define UNIFORMMENU_SETPAGE(var1) ace_player setVariable [QQGVAR(UniformMenu_Page), var1]
+#define RANKMENU_PAGE_UNIFORMS 1
 
 #define LOADOUTMENU_PAGE_WEAPONS 1
 #define LOADOUTMENU_GETPAGE ace_player getVariable [QQGVAR(LoadoutMenu_Page), MENU_PAGE_HOME]

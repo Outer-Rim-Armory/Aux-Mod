@@ -18,12 +18,6 @@ class CfgVehicles {
                 condition = QUOTE(GVAR(rankPage) == MENU_PAGE_HOME);
                 statement = QUOTE('customize' call FUNC(openArsenal));
             };
-
-            class ChangeMenu_Home: Arsenal_Customize {
-                displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>Home</t>";
-                condition = QUOTE(GVAR(rankPage) != MENU_PAGE_HOME);
-                statement = QUOTE(GVAR(rankPage) = 0);
-            };
         };
     };
 
