@@ -1,5 +1,8 @@
 #include "script_component.hpp"
 
-GVAR(rankPage) = 0;
+GVAR(rankPage) = MENU_PAGE_HOME;
 GVAR(rankTab) = "";
-GVAR(loadoutPage) = 0;
+
+GVAR(loadoutPage) = MENU_PAGE_HOME;
+GVAR(loadoutTab) = "";
+GVAR(loadoutSquadType) = "";

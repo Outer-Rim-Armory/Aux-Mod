@@ -51,13 +51,14 @@ _fnc_rankColor = {
         false,
         false,
         "",
-        QUOTE(GVAR(rankPage) == MENU_PAGE_HOME)
+        QUOTE(GVAR(rankPage) == MENU_PAGE_HOME),
+        3
     ];
 
     {
         _label = getText (configFile >> QGVAR(ranks) >> _detachment >> _x >> "label");
         _object addAction [
-            format ["<t color='%1'>Grab %2 Uniform</t>", _x call _fnc_rankColor, _x], {
+            format ["<t color='%1'>Grab %2 Uniform</t>", _x call _fnc_rankColor, _label], {
                 params ["_target", "_caller", "_actionId", "_arguments"];
                 _arguments call FUNC(applyRank);
             },
@@ -66,7 +67,8 @@ _fnc_rankColor = {
             false,
             false,
             "",
-            format [QUOTE(GVAR(rankPage) != MENU_PAGE_HOME and {GVAR(rankTab) == '%1'}), _detachment]
+            format [QUOTE(GVAR(rankPage) == RANKMENU_PAGE_UNIFORMS and {GVAR(rankTab) == '%1'}), _detachment],
+            3
         ];
     } forEach _y;
 } forEach GVAR(ranks);
@@ -81,7 +83,8 @@ _object addAction [
     false,
     false,
     "",
-    QUOTE(GVAR(rankPage) != MENU_PAGE_HOME and {GVAR(rankTab) != ''})
+    QUOTE(GVAR(rankPage) != MENU_PAGE_HOME and {GVAR(rankTab) != ''}),
+    3
 ];
 
 nil;

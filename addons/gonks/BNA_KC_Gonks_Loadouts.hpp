@@ -24,6 +24,7 @@ class GVAR(loadouts) {
         // Squad role
         class Security {
             label = "Security";
+            order = 0;
             class Rifleman {
                 label = "Rifleman";
                 order = __COUNTER__;
@@ -69,9 +70,11 @@ class GVAR(loadouts) {
         };
         class Assault {
             label = "Assault";
+            order = 1;
         };
         class Weapons {
             label = "Weapons";
+            order = 2;
         };
     };
     class Engineer {
