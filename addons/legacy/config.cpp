@@ -1,22 +1,18 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QCLASS(core),
             QCLASS(armor),
             QCLASS(objects_ships),
             QCLASS(vehicles_hydra),
             QCLASS(vehicles_reek)
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Unit_ARC),
             QCLASS(Unit_ARF),
             QCLASS(Unit_Phase1_Pilot),
@@ -31,8 +27,7 @@ class CfgPatches
             QCLASS(Badger),
             QCLASS(APC_Badger)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Helmet_ARF),
             QCLASS(Helmet_ARC),
             QCLASS(Helmet_Phase1_Pilot),
@@ -52,11 +47,14 @@ class CfgPatches
         VERSION_CONFIG;
     };
 
-    class CLASS(Legacy_Base)
-    {
+    class CLASS(Legacy_Base) {
         units[] = {};
         weapons[] = {};
     };
+
+    // Undefine macros that are in legacy names
+    #undef INDEP
+    #undef OPFOR
 
     class CLASS(Gear): CLASS(Legacy_Base) {};
     class CLASS(Gear_Airborne): CLASS(Legacy_Base) {};
