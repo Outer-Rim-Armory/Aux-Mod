@@ -4,8 +4,5 @@ PREP(canShowWeaponOption);
 PREP(giveWeapon);
 PREP(loadoutBoxInit);
 PREP(openArsenal);
-PREP(registerLoadouts);
-PREP(registerRankLoadouts);
-PREP(registerWeapons);
 PREP(scanConfig);
 PREP(uniformBoxInit);
