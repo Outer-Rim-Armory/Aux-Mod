@@ -5,4 +5,4 @@ PREP(giveWeapon);
 PREP(loadoutBoxInit);
 PREP(openArsenal);
 PREP(scanConfig);
-PREP(uniformBoxInit);
+PREP(rankBoxInit);

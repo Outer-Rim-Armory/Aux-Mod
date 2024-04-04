@@ -10,14 +10,14 @@
  * None
  *
  * Example:
- * _box call BNA_KC_gonks_fnc_uniformBoxInit;
+ * _box call BNA_KC_gonks_fnc_rankBoxInit;
  *
  * Public: No
  */
 
 params ["_object"];
 private ["_fnc_rankColor"];
-TRACE_1("fnc_uniformBoxInit",_object);
+TRACE_1("fnc_rankBoxInit",_object);
 
 if (isNull _object) exitWith {};
 

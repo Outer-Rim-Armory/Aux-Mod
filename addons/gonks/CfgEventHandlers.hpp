@@ -25,8 +25,8 @@ class Extended_InitPost_EventHandlers {
     };
 
     class CLASS(Gonk_Uniforms) {
-        class GVAR(uniformBoxInit) {
-            clientInit = QUOTE(_this call FUNC(uniformBoxInit));
+        class GVAR(rankBoxInit) {
+            clientInit = QUOTE(_this call FUNC(rankBoxInit));
         };
     };
 };
