@@ -29,30 +29,32 @@ _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
 {
     private ["_detachment", "_value"];
     _detachment = _x;
-    _value = createHashmap;
+    _squadTypes = createHashmap;
 
     {
         private ["_squadType"];
         _squadType = _x;
+        _squadLoadouts = createHashmap;
         {
             private ["_loadout"];
-            _loadout = _x;
-            _value set [configName _loadout, [
-                getNumber (_loadout >> "order"),
-                getText (_loadout >> "label"),
-                getText (_loadout >> "handgun"),
-                getText (_loadout >> "launcher"),
-                getText (_loadout >> "binoculars"),
-                getText (_loadout >> "vest"),
-                getText (_loadout >> "backpack"),
-                getArray (_loadout >> "weapons"),
-                getArray (_loadout >> "magazines"),
-                getArray (_loadout >> "items")
+            _squadLoadouts set [configName _x, [
+                getNumber (_x >> "order"),
+                getText (_x >> "label"),
+                getText (_x >> "handgun"),
+                getText (_x >> "launcher"),
+                getText (_x >> "binoculars"),
+                getText (_x >> "vest"),
+                getText (_x >> "backpack"),
+                getArray (_x >> "weapons"),
+                getArray (_x >> "magazines"),
+                getArray (_x >> "items")
             ]];
         } forEach ("true" configClasses _squadType);
+
+        _squadTypes set [configName _squadType, _squadLoadouts];
     } forEach ("true" configClasses _detachment);
 
-    GVAR(loadouts) set [configName _detachment, _value];
+    GVAR(loadouts) set [configName _detachment, _squadTypes];
 } forEach _loadoutConfig;
 
 publicVariable QGVAR(loadouts);
