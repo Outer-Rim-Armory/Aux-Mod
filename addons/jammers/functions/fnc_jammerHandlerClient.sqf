@@ -39,6 +39,8 @@ _condition = {
 _exitCode = {
     INFO("No active jammers left, removing client PFH.");
     GVAR(jammerHandlerClient) = -1;
+    ace_player setVariable ["tf_receivingDistanceMultiplicator", 1];
+    ace_player setVariable ["tf_sendingDistanceMultiplicator", 1];
 };
 
 _jammerHandler = [
