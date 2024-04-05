@@ -50,6 +50,7 @@ if (isNil "BNA_KC_Jet_JetpackHandle") then {
 
     // Event signalling a unit is starting a jetpack, EH handle visual particle effects
     ["BNA_KC_Jet_JetpackFired", [ace_player]] call CBA_fnc_GlobalEvent;
+    ace_player setVariable [QGVAR(usingJetpack), true, true];
 
     BNA_KC_Jet_JetpackHandle = [
         BNA_KC_Jetpacks_fnc_frameHandler

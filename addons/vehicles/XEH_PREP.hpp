@@ -7,6 +7,8 @@ PREP(atrt_init);
 PREP(atrt_mount);
 PREP(autoEject);
 PREP(canDeleteCrew);
+PREP(csw_canDeploy);
+PREP(csw_canPickup);
 PREP(canSpawnCrew);
 PREP(cswDeployModifier);
 PREP(setIntercomChannel);

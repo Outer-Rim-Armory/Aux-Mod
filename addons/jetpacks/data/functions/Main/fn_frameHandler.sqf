@@ -41,6 +41,7 @@ if (!(ace_player call FUNC(canJetpack)) or isTouchingGround ace_player) exitWith
             ace_player call FUNC(clearEffects);
             [BNA_KC_Jet_JetpackSoundHandle] call CBA_fnc_removePerFrameHandler;
             BNA_KC_Jet_JetpackSoundHandle = nil;
+            ace_player setVariable [QGVAR(usingJetpack), false, true];
         },
         [],
         0.1
