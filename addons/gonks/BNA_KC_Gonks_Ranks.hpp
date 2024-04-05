@@ -72,9 +72,11 @@ class GVAR(ranks) {
         };
         class CS: CR {
             order = __COUNTER__;
+            helmetP0 = QCLASS(Helmet_phase1Geo_NCO);
             helmetP1 = QCLASS(Helmet_Phase1_CS);
             helmetP2 = QCLASS(Helmet_Phase2_CS);
 
+            uniformP0 = QCLASS(Uniform_phase1Geo_NCO);
             uniformP1 = QCLASS(Uniform_CS);
             uniformP2 = QCLASS(Uniform_CS);
 
@@ -83,6 +85,7 @@ class GVAR(ranks) {
 
             nvgP1 = QCLASS(NVG_phase1_Rangefinder);
             nvgP2 = QCLASS(NVG_phase2_Rangefinder);
+            nvgP3 = QCLASS(NVG_phase2_Rangefinder);
         };
         class CSS: CS {
             order = __COUNTER__;
@@ -130,9 +133,11 @@ class GVAR(ranks) {
         };
         class WO: CR {
             order = __COUNTER__;
+            helmetP0 = QCLASS(Helmet_phase1Geo_Officer);
             helmetP1 = QCLASS(Helmet_Phase1_WO);
             helmetP2 = QCLASS(Helmet_Phase2_WO);
 
+            uniformP0 = QCLASS(Uniform_phase1Geo_Officer);
             uniformP1 = QCLASS(Uniform_WO);
             uniformP2 = QCLASS(Uniform_WO);
 
@@ -141,6 +146,7 @@ class GVAR(ranks) {
 
             nvgP1 = QCLASS(NVG_phase1_Officer);
             nvgP2 = QCLASS(NVG_phase2_Officer);
+            nvgP3 = QCLASS(NVG_phase2_Officer);
         };
         class WO2: WO {
             order = __COUNTER__;
@@ -179,9 +185,11 @@ class GVAR(ranks) {
         };
         class CAP: WO {
             order = __COUNTER__;
+            helmetP0 = QCLASS(Helmet_phase1Geo_Captain);
             helmetP1 = QCLASS(Helmet_Phase1_CAP);
             helmetP2 = QCLASS(Helmet_Phase2_CAP);
 
+            uniformP0 = QCLASS(Uniform_phase1Geo_Captain);
             uniformP1 = QCLASS(Uniform_CAP);
             uniformP2 = QCLASS(Uniform_CAP);
         };
@@ -198,9 +206,11 @@ class GVAR(ranks) {
         };
         class COM: WO {
             order = __COUNTER__;
+            helmetP0 = QCLASS(Helmet_phase1Geo_Commander);
             helmetP1 = QCLASS(Helmet_Phase1_COM);
             helmetP2 = QCLASS(Helmet_Phase2_COM);
 
+            uniformP0 = QCLASS(Uniform_phase1Geo_Commander);
             uniformP1 = QCLASS(Uniform_COM);
             uniformP2 = QCLASS(Uniform_COM);
 
