@@ -28,6 +28,7 @@ workshop = [
     "623475643",  # 3DEN
     "1779063631", # ZEN
     "2018593688", # ZEN ACE Compat
+    # "2173635424", # 501st Aux Mod
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
     "767380317",  # Blastcore # Only used to test particle effects
 ]
@@ -44,6 +45,7 @@ workshop = [
     "1779063631", # ZEN
     "2018593688", # ZEN ACE Compat
     "1686872930", # SDT
+    # "2173635424", # 501st Aux Mod
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
     "2522638637", # ACE Arsenal Extended
     "1572627279", # OPTRE First Contact
