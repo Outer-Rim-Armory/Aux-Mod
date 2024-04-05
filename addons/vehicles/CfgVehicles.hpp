@@ -4,7 +4,7 @@ class CfgVehicles {
         class ACE_SelfActions {
             class ace_csw_deploy {
                 condition = QUOTE(call FUNC(csw_canDeploy));
-                modifierFunction = QUOTE(call FUNC(cswDeployModifier));
+                modifierFunction = QUOTE(call FUNC(csw_modifyInteraction));
             };
         };
 
