@@ -43,21 +43,36 @@ if (isNull _object) exitWith {};
     {
         _squadType = _x;
         systemChat format ["Squad Type: %1", _squadType];
-        _label = getText (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> "label");
-        _order = getNumber (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> "order");
+        private _label = getText (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> "label");
+        private _order = getNumber (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> "order");
 
         [
             _object,
             format ["<t color='#FFFFFF'>%1</t>", _label], {
-                params ["", "", "", "_arguments"];
-                _arguments params ["_detachment", "_squadType"];
+                params ["", "", "", "_squadType"];
                 GVAR(loadoutPage) = LOADOUTMENU_PAGE_ROLE;
                 GVAR(loadoutSquadType) = _squadType;
             },
-            [_detachment, _squadType],
+            _squadType,
             format [QUOTE(GVAR(loadoutPage) == LOADOUTMENU_PAGE_SQUAD and {GVAR(loadoutTab) == '%1'}), _detachment],
             100 - _order
         ] call FUNC(addAction);
+
+        {
+            private _label = getText (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> _x >> "label");
+            private _order = getNumber (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> _x >> "order");
+            [
+                _object,
+                format ["<t color='#FFFFFF'>%1</t>", _label], {
+                    params ["", "", "", "_arguments"];
+                    _arguments call FUNC(applyLoadout);
+                    GVAR(loadoutPage) = LOADOUTMENU_PAGE_WEAPONS;
+                },
+                [_detachment, _squadType, _x],
+                format [QUOTE(GVAR(loadoutPage) == LOADOUTMENU_PAGE_ROLE and {GVAR(loadoutTab) == '%1'}), _detachment],
+                100 - _order
+            ] call FUNC(addAction);
+        } forEach _y;
     } forEach _y;
 } forEach GVAR(loadouts);
 
