@@ -30,7 +30,7 @@ if (isNull _object) exitWith {};
 
     [
         _object,
-        format ["<t color='#FFFFFF'>%1</t>", _x], {
+        format ["<t color='#FFFFFF'>%1</t>", _label], {
             params ["_target", "_caller", "_actionId", "_detachment"];
             GVAR(loadoutPage) = LOADOUTMENU_PAGE_SQUAD;
             GVAR(loadoutTab) = _detachment;
