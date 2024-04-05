@@ -66,14 +66,9 @@ _fnc_rankColor = {
     } forEach _y;
 } forEach GVAR(ranks);
 
-[
-    _object,
-    "<t font='RobotoCondensedBold' color='#FFFFFF'>Home</t>",{
-        GVAR(rankPage) = MENU_PAGE_HOME;
-        GVAR(rankTab) = "";
-    },
-    _x,
-    QUOTE(GVAR(rankPage) != MENU_PAGE_HOME and {GVAR(rankTab) != ''})
-] call FUNC(addAction);
+[ _object, "<t font='RobotoCondensedBold' color='#FFFFFF'>Home</t>",{
+    GVAR(rankPage) = MENU_PAGE_HOME;
+    GVAR(rankTab) = "";
+}] call FUNC(addAction);
 
 nil;
