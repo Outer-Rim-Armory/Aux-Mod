@@ -5,30 +5,31 @@
  * Applies a specified loadout to the ace_player
  *
  * Arguments:
- * 0: Name of the loadout to select <STRING>
+ * 0: Detachment <STRING>
+ * 1: Squad type <STRING>
+ * 2: Loadout <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * "Rifleman" call BNA_KC_gonks_fnc_applyLoadout;
+ * ["Infantry", "Security", "Rifleman"] call BNA_KC_gonks_fnc_applyLoadout;
  *
  * Public: No
  */
 
-params [
-    ["_loadoutName", "", [""]]
-];
-private ["_loadoutsMap", "_loadoutValues"];
-TRACE_1("fnc_applyLoadout",_loadoutName);
+params ["_detachment", "_squadType", "_loadout"];
+private [];
+TRACE_3("fnc_applyLoadout",_detachment,_squadType,_loadout);
 
-if (_loadoutName isEqualTo "") exitWith {};
-
-_loadoutsMap = missionNamespace getVariable [QGVAR(loadouts), [] call FUNC(registerLoadouts)];
-_loadoutValues = _loadoutsMap getOrDefaultCall [_loadoutName, {
-    hint format ["Loadout '%1' does not exist.", _loadoutName];
+_values = ((GVAR(loadouts) get _detachment) get _squadType) getOrDefaultCall [_loadout, {
+    [format ["No loadout found in '%1\%2\%3'", _detachment, _squadType, _loadout], true, 5] call ace_common_fnc_displayText;
+    [];
 }];
-_loadoutValues params ["_sideArm", "_launcher", "_binoculars", "_vest", "_backpack", "_weapons", "_magazines", "_items"];
+
+if (_values isEqualTo []) exitWith {};
+
+_values params ["", "", "_handgun", "_launcher", "_binoculars", "_vest", "_backpack", "", "_magazines", "_items"];
 
 {ace_player removeItems _x;} forEach items ace_player;
 {ace_player removeMagazines _x;} forEach magazines ace_player;
@@ -58,7 +59,7 @@ ace_player addBackpack _backpack;
 } forEach _items;
 
 // Add weapons last so they are pre-loaded
-ace_player addWeapon _sideArm;
+ace_player addWeapon _handgun;
 ace_player addWeapon _launcher;
 
 nil;

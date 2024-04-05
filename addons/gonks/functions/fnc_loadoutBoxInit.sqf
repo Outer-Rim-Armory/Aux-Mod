@@ -42,7 +42,6 @@ if (isNull _object) exitWith {};
 
     {
         _squadType = _x;
-        systemChat format ["Squad Type: %1", _squadType];
         private _label = getText (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> "label");
         private _order = getNumber (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> "order");
 
