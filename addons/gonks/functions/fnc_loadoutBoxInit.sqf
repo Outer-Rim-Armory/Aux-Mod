@@ -86,9 +86,7 @@ if (isNull _object) exitWith {};
         format ["<t color='#FFFFFF'>%1</t>", _label], {
             params ["", "", "", "_weapon"];
             _weapon call FUNC(giveWeapon);
-            GVAR(loadoutPage) = MENU_PAGE_HOME;
-            GVAR(loadoutTab) = "";
-            GVAR(loadoutSquadType) = "";
+            GVAR(loadoutPage) = LOADOUTMENU_PAGE_ROLE;
             GVAR(allowedWeapons) = [];
         },
         _x,
