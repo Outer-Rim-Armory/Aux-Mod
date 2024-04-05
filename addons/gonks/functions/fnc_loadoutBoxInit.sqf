@@ -60,14 +60,17 @@ if (isNull _object) exitWith {};
         {
             private _label = getText (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> _x >> "label");
             private _order = getNumber (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> _x >> "order");
+            private _allowedWeapons = getArray (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> _x >> "weapons");
             [
                 _object,
                 format ["<t color='#FFFFFF'>%1</t>", _label], {
                     params ["", "", "", "_arguments"];
-                    _arguments call FUNC(applyLoadout);
+                    _arguments params ["_detachment", "_squadType", "_loadout", "_allowedWeapons"];
+                    [_detachment, _squadType, _loadout] call FUNC(applyLoadout);
                     GVAR(loadoutPage) = LOADOUTMENU_PAGE_WEAPONS;
+                    GVAR(allowedWeapons) = _allowedWeapons;
                 },
-                [_detachment, _squadType, _x],
+                [_detachment, _squadType, _x, _allowedWeapons],
                 format [QUOTE(GVAR(loadoutPage) == LOADOUTMENU_PAGE_ROLE and {GVAR(loadoutTab) == '%1'}), _detachment],
                 100 - _order
             ] call FUNC(addAction);
@@ -75,30 +78,30 @@ if (isNull _object) exitWith {};
     } forEach _y;
 } forEach GVAR(loadouts);
 
-// {
-//     _object addAction
-//     [
-//         format ["<t color='#FFFFFF'>%1</t>", _x],
-//         {
-//             params ["_target", "_caller", "_actionId", "_arguments"];
-//             _arguments params ["_weapon"];
-//             _weapon call FUNC(giveWeapon);
-//             ace_player setVariable [QGVAR(LoadoutMenu_Page), nil];
-//         },
-//         [_x],
-//         (count LOADOUTS_WEAPONS_LIST) - _forEachIndex,
-//         false,
-//         false,
-//         "",
-//         format [QUOTE(%1 call FUNC(canShowWeaponOption)), str _x],
-//         3
-//     ];
-// } forEach LOADOUTS_WEAPONS_LIST;
+{
+    private _label = getText (configFile >> QGVAR(weapons) >> _x >> "label");
+    private _order = getNumber (configFile >> QGVAR(weapons) >> _x >> "order");
+    [
+        _object,
+        format ["<t color='#FFFFFF'>%1</t>", _label], {
+            params ["", "", "", "_weapon"];
+            _weapon call FUNC(giveWeapon);
+            GVAR(loadoutPage) = MENU_PAGE_HOME;
+            GVAR(loadoutTab) = "";
+            GVAR(loadoutSquadType) = "";
+            GVAR(allowedWeapons) = [];
+        },
+        _x,
+        format [QUOTE(GVAR(loadoutPage) == LOADOUTMENU_PAGE_WEAPONS and {'%1' in GVAR(allowedWeapons)}), _x],
+        100 - _order
+    ] call FUNC(addAction);
+} forEach GVAR(weapons);
 
-[ _object, "<t font='RobotoCondensedBold' color='#FFFFFF'>Home</t>",{
+[_object, "<t font='RobotoCondensedBold' color='#FFFFFF'>Home</t>",{
     GVAR(loadoutPage) = MENU_PAGE_HOME;
     GVAR(loadoutTab) = "";
     GVAR(loadoutSquadType) = "";
+    GVAR(allowedWeapons) = [];
 }] call FUNC(addAction);
 
 nil;

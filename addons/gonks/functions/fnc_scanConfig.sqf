@@ -84,8 +84,9 @@ publicVariable QGVAR(ranks);
 _weaponsConfig = "true" configClasses (configFile >> QGVAR(weapons));
 
 {
+    private _weapon = getText (_x >> "weapon");
     private _magazines = getArray (_x >> "magazines");
-    GVAR(weapons) set [configName _x, _magazines];
+    GVAR(weapons) set [configName _x, [_weapon, _magazines]];
 } forEach _weaponsConfig;
 
 publicVariable QGVAR(weapons);

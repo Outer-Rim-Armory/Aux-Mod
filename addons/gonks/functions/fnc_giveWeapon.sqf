@@ -1,10 +1,10 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Init function for a loadout box
+ * Gives a weapon and magazines to ace_player.
  *
  * Arguments:
- * 0: The object to add the actions to <OBJECT>
+ * 0: Weapon to add <OBJECT>
  *
  * Return Value:
  * None
@@ -13,18 +13,18 @@
  * "DC15A" call BNA_KC_gonks_fnc_giveWeapon;
  */
 
-params [
-    ["_weaponName", "", [""]]
-];
-private ["_weaponsMap", "_weaponValues"];
-TRACE_1("fnc_giveWeapon",_weaponName);
+params ["_weapon"];
+private ["_values"];
+TRACE_1("fnc_giveWeapon",_weapon);
 
-_weaponsMap = missionNamespace getVariable [QGVAR(weapons), [] call FUNC(registerWeapons)];
-_weaponValues = _weaponsMap getOrDefaultCall [_weaponName, {
-    hint format ["Weapon '%1' does not exist.", _weaponName];
+_values = GVAR(weapons) getOrDefaultCall [_weapon, {
+    [format ["Weapon kit '%1' does not exist.", _weapon], true, 5] call ace_common_fnc_displayText;
+    [];
 }];
 
-_weaponValues params ["_weapon", "_magazines"];
+if (_values isEqualTo []) exitWith {};
+
+_values params ["_weaponClass", "_magazines"];
 
 // Add the magazines first so the gun is pre-loaded
 {
@@ -33,6 +33,6 @@ _weaponValues params ["_weapon", "_magazines"];
     };
 } forEach _magazines;
 
-ace_player addWeapon _weapon;
+ace_player addWeapon _weaponClass;
 
 nil;

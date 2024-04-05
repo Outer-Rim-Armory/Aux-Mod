@@ -6,3 +6,5 @@ GVAR(rankTab) = "";
 GVAR(loadoutPage) = MENU_PAGE_HOME;
 GVAR(loadoutTab) = "";
 GVAR(loadoutSquadType) = "";
+
+GVAR(allowedWeapons) = []
