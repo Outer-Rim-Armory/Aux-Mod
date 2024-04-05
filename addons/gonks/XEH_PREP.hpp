@@ -1,3 +1,4 @@
+PREP(addAction);
 PREP(applyLoadout);
 PREP(applyRank);
 PREP(canShowWeaponOption);

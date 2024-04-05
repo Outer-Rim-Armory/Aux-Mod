@@ -28,20 +28,31 @@ if (isNull _object) exitWith {};
     _label = getText (configFile >> QGVAR(loadouts) >> _detachment >> "label");
     _order = getNumber (configFile >> QGVAR(loadouts) >> _detachment >> "order");
 
-    _object addAction [
+    [
+        _object,
         format ["<t color='#FFFFFF'>%1</t>", _x], {
             params ["_target", "_caller", "_actionId", "_detachment"];
             GVAR(loadoutPage) = LOADOUTMENU_PAGE_SQUAD;
             GVAR(loadoutTab) = _detachment;
         },
         _detachment,
-        100 - _order,
-        false,
-        false,
-        "",
         QUOTE(GVAR(loadoutPage) == MENU_PAGE_HOME),
-        3
-    ];
+        100 - _order
+    ] call FUNC(addAction);
+    // _object addAction [
+    //     format ["<t color='#FFFFFF'>%1</t>", _x], {
+    //         params ["_target", "_caller", "_actionId", "_detachment"];
+    //         GVAR(loadoutPage) = LOADOUTMENU_PAGE_SQUAD;
+    //         GVAR(loadoutTab) = _detachment;
+    //     },
+    //     _detachment,
+    //     100 - _order,
+    //     false,
+    //     false,
+    //     "",
+    //     QUOTE(GVAR(loadoutPage) == MENU_PAGE_HOME),
+    //     3
+    // ];
 
     {
         _squadType = _x;
@@ -49,21 +60,34 @@ if (isNull _object) exitWith {};
         _label = getText (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> "label");
         _order = getNumber (configFile >> QGVAR(loadouts) >> _detachment >> _squadType >> "order");
 
-        _object addAction [
+        [
+            _object,
             format ["<t color='#FFFFFF'>%1</t>", _label], {
-                params ["_target", "_caller", "_actionId", "_arguments"];
+                params ["", "", "", "_arguments"];
                 _arguments params ["_detachment", "_squadType"];
                 GVAR(loadoutPage) = LOADOUTMENU_PAGE_ROLE;
                 GVAR(loadoutSquadType) = _squadType;
             },
             [_detachment, _squadType],
-            100 - _order,
-            false,
-            false,
-            "",
             format [QUOTE(GVAR(loadoutPage) == LOADOUTMENU_PAGE_SQUAD and {GVAR(loadoutTab) == '%1'}), _detachment],
-            3
-        ];
+            100 - _order
+        ] call FUNC(addAction);
+
+        // _object addAction [
+        //     format ["<t color='#FFFFFF'>%1</t>", _label], {
+        //         params ["_target", "_caller", "_actionId", "_arguments"];
+        //         _arguments params ["_detachment", "_squadType"];
+        //         GVAR(loadoutPage) = LOADOUTMENU_PAGE_ROLE;
+        //         GVAR(loadoutSquadType) = _squadType;
+        //     },
+        //     [_detachment, _squadType],
+        //     100 - _order,
+        //     false,
+        //     false,
+        //     "",
+        //     format [QUOTE(GVAR(loadoutPage) == LOADOUTMENU_PAGE_SQUAD and {GVAR(loadoutTab) == '%1'}), _detachment],
+        //     3
+        // ];
     } forEach _y;
 } forEach GVAR(loadouts);
 
