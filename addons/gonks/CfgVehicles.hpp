@@ -26,33 +26,24 @@ class CfgVehicles {
         displayName = "Loadouts Gonk";
 
         class UserActions {
-            class ChangeMenu_Home {
-                displayName = "<t color='#FFFFFF' font='RobotoCondensedBold'>Home</t>";
+            class Arsenal_Attachments {
+                displayName = "<t color='#FFFFFF'>Weapon Attachments</t>";
 
                 position = "camera";
                 radius = 3;
                 onlyForPlayer = TRUE;
 
                 hideOnUse = FALSE;
-                priority = 100;
+                priority = 1;
 
-                condition = QUOTE(LOADOUTMENU_GETPAGE != MENU_PAGE_HOME);
-                statement = QUOTE(LOADOUTMENU_SETPAGE(nil));
-            };
-
-            class Arsenal_Attachments: ChangeMenu_Home {
-                displayName = "<t color='#FFFFFF'>Weapon Attachments</t>";
-                priority = 99;
-
-                condition = QUOTE(LOADOUTMENU_GETPAGE == MENU_PAGE_HOME);
+                condition = QUOTE(GVAR(loadoutPage) == MENU_PAGE_HOME);
                 statement = QUOTE('attachments' call FUNC(openArsenal));
             };
 
-            class Add_Radio: ChangeMenu_Home {
+            class Add_Radio: Arsenal_Attachments {
                 displayName = "<t color='#FFFFFF'>Add Radio</t>";
                 priority = 0;
 
-                condition = QUOTE(LOADOUTMENU_GETPAGE == MENU_PAGE_HOME);
                 statement = QUOTE(ace_player linkItem 'SWLB_comlink');
             };
         };

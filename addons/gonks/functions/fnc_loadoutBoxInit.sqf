@@ -81,4 +81,15 @@ if (isNull _object) exitWith {};
 //     ];
 // } forEach LOADOUTS_WEAPONS_LIST;
 
+[
+    _object,
+    "<t font='RobotoCondensedBold' color='#FFFFFF'>Home</t>",{
+        GVAR(loadoutPage) = MENU_PAGE_HOME;
+        GVAR(loadoutTab) = "";
+        GVAR(loadoutSquadType) = "";
+    },
+    _x,
+    QUOTE(GVAR(loadoutPage) != MENU_PAGE_HOME and {GVAR(loadoutTab) != ''})
+] call FUNC(addAction);
+
 nil;
