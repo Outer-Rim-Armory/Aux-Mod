@@ -37,8 +37,8 @@ if (isNull _object) exitWith {};
         },
         _detachment,
         QUOTE(GVAR(loadoutPage) == MENU_PAGE_HOME),
-        100 - _order
-    ] call FUNC(addAction);
+        3
+    ];
 
     {
         _squadType = _x;
@@ -56,8 +56,8 @@ if (isNull _object) exitWith {};
             },
             [_detachment, _squadType],
             format [QUOTE(GVAR(loadoutPage) == LOADOUTMENU_PAGE_SQUAD and {GVAR(loadoutTab) == '%1'}), _detachment],
-            100 - _order
-        ] call FUNC(addAction);
+            3
+        ];
     } forEach _y;
 } forEach GVAR(loadouts);
 
