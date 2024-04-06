@@ -1,4 +1,5 @@
-#define M190_RANGE_SMALL 0.4431
+// 800 meters
+#define M190_RANGE_SMALL 0.443
 #define M190_RANGE_MEDIUM 0.7/*Unused*/
 #define M190_RANGE_FAR 0.5647
 

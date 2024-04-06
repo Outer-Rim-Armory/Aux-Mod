@@ -41,7 +41,7 @@ class CfgVehicles {
                 magazines[] = {};
                 weapons[] = {};
 
-                maxElev = 21.79; // Increasing lowers mininum range // 37.19 gives 100m range on short
+                maxElev = 21.79; // Increasing lowers mininum range
                 minElev = -30;
             };
         };
