@@ -19,7 +19,7 @@ params [
 private ["_filePath", "_soundDelay"];
 TRACE_1("fnc_soundLoopInit",_object);
 
-if (isNull _object) exitWith {};
+if (!alive _object) exitWith {};
 
 _filePath = getText (configOf _object >> QGVAR(soundLoop));
 _soundDelay = getNumber (configOf _object >> QGVAR(soundLoopDelay));

@@ -27,7 +27,7 @@ params [
 private ["_function"];
 TRACE_4("fnc_soundLoop",_object,_filePath,_delay,_condition);
 
-if (isNull _object or {
+if (!alive _object or {
     _filePath isEqualTo "" or
     !([_object, _filePath, _delay] call _condition)
 }) exitWith {};
@@ -35,7 +35,7 @@ playSound3D [_filePath, objNull, false, getPosASL _object, 1, 1, 50];
 
 _function = {
     params ["_object", "_filePath", "_delay", "_function"];
-    if (isNull _object or !([_object, _filePath, _delay] call _condition)) exitWith {};
+    if (!alive _object or !([_object, _filePath, _delay] call _condition)) exitWith {};
     playSound3D [_filePath, objNull, false, getPosASL _object, 1, 1, 50];
 
     [{
