@@ -19,7 +19,8 @@ class CfgPatches {
             "ace_medical_statemachine",
             "ace_medical_status",
             "ace_medical_treatment",
-            "ace_medical_vitals"
+            "ace_medical_vitals",
+            "3AS_Prop_Droids"
         };
         units[] = {
             QCLASS(Deployable_MedicalDroid),

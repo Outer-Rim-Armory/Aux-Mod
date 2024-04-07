@@ -1,7 +1,7 @@
 class CfgVehicles
 {
-    class ThingX;
-    class CLASS(Deployable_MedicalDroid): ThingX {
+    class Land_3AS_Medical_Droid;
+    class CLASS(Deployable_MedicalDroid): Land_3AS_Medical_Droid {
         SCOPE_PUBLIC;
 
         displayName = "FX-7 Medical Droid";
