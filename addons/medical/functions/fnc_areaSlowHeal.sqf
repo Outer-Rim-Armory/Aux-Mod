@@ -51,7 +51,7 @@ _function = {
     _positionAGL = ASLToAGL getPosASL _object;
     _currentPatients = _object getVariable [QGVAR(currentPatients), []];
 
-    TRACE_1(FORMAT_1("Area Healer %1 |",_handle),_currentPatients);
+    TRACE_1(FORMAT_2("Area Healer %1 (%2) |",_handle,typeOf _object),_currentPatients);
 
     // Remove out of range / full healed patients
     if !(_currentPatients isEqualTo []) then {
@@ -78,12 +78,12 @@ _function = {
         _unitsToHeal = _unitsToHeal select [0, _maxPatients];
     };
 
-    TRACE_3(FORMAT_1("Area Healer %1 |",_handle),_unitsToHeal,_currentPatients,_nearbyUnits);
+    TRACE_3(FORMAT_2("Area Healer %1 (%2) |",_handle,typeOf _object),_unitsToHeal,_currentPatients,_nearbyUnits);
 
     // Start healing new patients
     {
         private ["_healHandlerID"];
-        INFO_3("Area Healer %1 | Healing %2 every %3 seconds",_handler,_x,_rate);
+        INFO_4("Area Healer %1 (%2) | Healing %3 every %4 seconds",_handler,typeOf _object,_x,_rate);
 
         _healHandlerID = [_x, _rate, _bloodRestore, _painReduce, _fullHealOnCompletion] call FUNC(slowHeal);
         _currentPatients pushBack [_x, _healHandlerID];
@@ -99,7 +99,7 @@ _condition = {
 
 _exitCode = {
     params ["_handle", "_object", "_radius", "_rate", "_maxPatients"];
-    INFO_2("Area Healer %1 | (Exit) Removing handler from %2",_handle,_object);
+    INFO_3("Area Healer %1 (%2) | (Exit) Removing handler from %3",_handle,typeOf _object,_object);
 };
 
 _areaHandler = [
