@@ -87,6 +87,7 @@ _function = {
 
         _healHandlerID = [_x, _rate, _bloodRestore, _painReduce, _fullHealOnCompletion] call FUNC(slowHeal);
         _currentPatients pushBack [_x, _healHandlerID];
+        ["ace_common_displayTextStructured", ["You are now being treated."], _x] call CBA_fnc_targetEvent;
 
         _object setVariable [QGVAR(currentPatients), _currentPatients, true];
     } forEach (_unitsToHeal - (_currentPatients apply {_x#0}));
