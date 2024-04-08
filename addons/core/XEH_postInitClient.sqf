@@ -31,15 +31,15 @@
     if (isNull objectParent _object) then {
         // say3D waits for the previous sound to finish, so use a dummy instead
         private _dummy = "#dynamicsound" createVehicleLocal [0, 0, 0];
-        _dummy attachTo [_object, [0, 0, 0], "camera"];
-        _dummy say3D [_sound, _distance, 1, false];
+        _dummy attachTo [_object, [0, 0, 0]];
+        _dummy say3D [_sound, _distance];
 
         [{
             detach _this;
             deleteVehicle _this;
-        }, _dummy, 5] call CBA_fnc_waitAndExecute;
+        }, _dummy, 10] call CBA_fnc_waitAndExecute;
     } else {
         // attachTo doesn't work within vehicles
-        _object say3D [_sound, _distance, 1, false];
+        _object say3D [_sound, _distance];
     };
 }] call CBA_fnc_addEventHandler;

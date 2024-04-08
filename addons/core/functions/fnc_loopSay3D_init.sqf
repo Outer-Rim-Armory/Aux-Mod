@@ -18,13 +18,16 @@
 params [
     ["_object", objNull, [objNull]]
 ];
-private ["_filePath", "_soundDelay"];
+private ["_sound", "_soundDelay", "_condition"];
 TRACE_1("fnc_loopSay3D_init",_object);
 
-if (isNull _object) exitWith {};
+if (isNull _object or {!hasInterface}) exitWith {};
 
-_filePath = getText (configOf _object >> QGVAR(soundLoop));
+_sound = getText (configOf _object >> QGVAR(soundLoop));
 _soundDelay = getNumber (configOf _object >> QGVAR(soundLoopDelay));
+_condition = compile (getText (configOf _object >> QGVAR(soundLoopCondition)));
 
-[_object, _filePath, _soundDelay] call FUNC(loopSay3D);
+[{!isNull findDisplay 46;}, {
+    _this call FUNC(loopSay3D);
+}, [_object, _sound, _soundDelay, _condition]] call CBA_fnc_waitUntilAndExecute;
 nil;
