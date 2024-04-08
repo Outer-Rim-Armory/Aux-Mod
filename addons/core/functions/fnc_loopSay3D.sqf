@@ -9,7 +9,7 @@
  * 2: Delay between each sound (optional: default 1) <NUMBER>
  * 3: Condition to play sound (optional: default {true}) <CODE>
  *    - Sound will be played as long as condition returns true.
- *      E.g. {alive _this#0;} would stop sounds when the object is dead.
+ *      E.g. {alive (_this#0);} would stop sounds when the object is dead.
  *    - Condition gets [_object, _sound, _delay] passed as parameters
  *
  * Return Value:
