@@ -9,4 +9,5 @@ PREP(setMedic);
 PREP(soundLoop);
 PREP(soundLoopInit);
 PREP(stringReplace);
+PREP(tempDisableDamage);
 PREP(tempPFH);
