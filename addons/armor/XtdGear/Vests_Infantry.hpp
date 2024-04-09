@@ -33,8 +33,10 @@ class CLASS(Vest_Commander_v2): CLASS(Vest_CLC) { rank = "CMD_v2"; };
 class CLASS(Vest_Medic) {
     model = QCLASS(Vests_Infantry_Medic);
     rank = "Medic";
+    style = "Standard";
 };
 class CLASS(Vest_MedicSenior): CLASS(Vest_Medic) { rank = "Senior"; };
-class CLASS(Vest_Medic_v2): CLASS(Vest_Medic) { rank = "Medic_v2"; };
-class CLASS(Vest_MedicSenior_v2): CLASS(Vest_Medic) { rank = "Senior_v2"; };
 class CLASS(Vest_MedicPlatoon): CLASS(Vest_Medic) { rank = "Platoon"; };
+
+class CLASS(Vest_Medic_v2): CLASS(Vest_Medic) { style = "V2"; };
+class CLASS(Vest_MedicSenior_v2): CLASS(Vest_MedicSenior) { style = "V2"; };

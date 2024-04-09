@@ -530,21 +530,22 @@ class XtdGearModels {
 
         class CLASS(Vests_Infantry_Medic): CLASS(Rank_Base) {
             label = "Infantry Medic Vests";
+            options[] = {"rank", "style"};
 
             class rank: rank {
                 values[] = {
                     "Medic",
                     "Senior",
-                    "Medic_v2",
-                    "Senior_v2",
                     "Platoon"
                 };
 
                 class Medic { label = "Medic"; };
                 class Senior { label = "Senior"; };
-                class Medic_v2 { label = "Medic (v2)"; };
-                class Senior_v2 { label = "Senior (v2)"; };
                 class Platoon { label = "Platoon"; };
+            };
+
+            class style: style {
+                values[] = {"Standard", "V2"};
             };
         };
 
