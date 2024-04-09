@@ -33,4 +33,9 @@ class XtdGearInfos {
         #include "XtdGear\Vests_ARC.hpp"
         #include "XtdGear\Vests_Commando.hpp"
     };
+
+    class CfgVehicles {
+        #include "XtdGear\Backpacks.hpp"
+        #include "XtdGear\Backpacks_Medic.hpp"
+    };
 };

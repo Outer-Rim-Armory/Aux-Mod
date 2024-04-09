@@ -667,4 +667,48 @@ class XtdGearModels {
             };
         };
     };
+
+    class CfgVehicles {
+        class CLASS(Backpacks): CLASS(Rank_Base) {
+            label = "Backpacks";
+            options[] = {"type", "style"};
+
+            class type: rank {
+                values[] = {
+                    "Basic",
+                    "Heavy",
+                    "Radio",
+                    "RadioMini"
+                };
+
+                class Basic { label = "Basic"; };
+                class Heavy { label = "Heavy"; };
+                class Radio { label = "Radio"; };
+                class RadioMini { label = "Radio Mini"; };
+            };
+
+            class style: style {
+                values[] = {"Standard", "KeeliCompany", "Invisible"};
+
+                class KeeliCompany: Standard { label = "KC"; };
+                class Invisible: Standard { label = "Invisible"; };
+            };
+        };
+
+        class CLASS(Backpacks_Medic): CLASS(Backpacks) {
+            label = "Medic Backpacks";
+
+            class type: type {
+                values[] = {
+                    "Basic",
+                    "Heavy",
+                    "Radio"
+                };
+            };
+
+            class style: style {
+                values[] = {"Standard", "KeeliCompany"};
+            };
+        };
+    };
 };
