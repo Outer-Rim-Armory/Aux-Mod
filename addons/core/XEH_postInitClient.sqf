@@ -15,3 +15,31 @@
 ["CBA_settingsInitialized", {
     [QGVAR(localSound), LINKFUNC(playLocalSound)] call CBA_fnc_addEventHandler;
 }] call CBA_fnc_addEventHandler;
+
+[QGVAR(say3D), {
+    params ["_object", "_sound", "_distance"];
+
+    if (ace_player distance _object > _distance) exitWith {};
+    _object say3D [_sound, _distance, 1, false];
+}] call CBA_fnc_addEventHandler;
+
+[QGVAR(forceSay3D), {
+    params ["_object", "_sound", "_distance"];
+
+    if (ace_player distance _object > _distance) exitWith {};
+
+    if (isNull objectParent _object) then {
+        // say3D waits for the previous sound to finish, so use a dummy instead
+        private _dummy = "#dynamicsound" createVehicleLocal [0, 0, 0];
+        _dummy attachTo [_object, [0, 0, 0]];
+        _dummy say3D [_sound, _distance];
+
+        [{
+            detach _this;
+            deleteVehicle _this;
+        }, _dummy, 10] call CBA_fnc_waitAndExecute;
+    } else {
+        // attachTo doesn't work within vehicles
+        _object say3D [_sound, _distance];
+    };
+}] call CBA_fnc_addEventHandler;
