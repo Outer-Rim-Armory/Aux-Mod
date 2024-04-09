@@ -48,6 +48,7 @@ _function = {
 
     INFO_4("Slow Healer %1 | (Pre-Treatment) _wounds=%2, _bloodLevel=%3, _painLevel=%4",_handle,_wounds,_bloodLevel,_painLevel);
 
+    ["ace_common_displayTextStructured", ["Recieving treatment.", 1.5, _unit], _unit] call CBA_fnc_targetEvent;
     switch (true) do {
         case (count _wounds > 0): {
             private ["_bodyPart", "_bodyPartWounds"];
@@ -77,7 +78,9 @@ _function = {
 
         default {
             INFO_2("Slow Healer %1 | (Exit) Treatment complete for unit %2",_handle,_unit);
-            if (_fullHealOnCompletion) then {[_unit, _unit] call ace_medical_treatment_fnc_fullHeal;};
+            if (_fullHealOnCompletion) then {
+                [_unit, _unit] call ace_medical_treatment_fnc_fullHeal;
+            };
         };
     };
 
@@ -96,6 +99,7 @@ _condition = {
 _exitCode = {
     params ["_handle", "_unit"];
     INFO_2("Slow Healer %1 | (Exit) Removing handler from %2",_handle,_unit);
+    ["ace_common_displayTextStructured", ["Finished recieving treatment.", 1.5, _unit], _unit] call CBA_fnc_targetEvent;
     _unit setVariable [QGVAR(slowHealHandler), nil];
     _unit setVariable [QGVAR(canBeHealed), nil];
 };

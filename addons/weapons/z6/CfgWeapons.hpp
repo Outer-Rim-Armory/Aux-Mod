@@ -20,7 +20,7 @@ class CfgWeapons
 
         modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_300rnd_Z6), "Aux12thFleet_Mag_Z6"};
+        magazines[] = {QCLASS(Mag_300Rnd_Z6), "Aux12thFleet_Mag_Z6"};
         magazineWell[] = {};
 
         recoil = "recoil_lim";

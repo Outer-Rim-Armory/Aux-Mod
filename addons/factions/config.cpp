@@ -1,14 +1,11 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QCLASS(core),
             QEGVAR(vehicles,load_order),
             "ls_armor_bluefor",
@@ -40,3 +37,4 @@ class CfgPatches
 
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgEventHandlers.hpp"

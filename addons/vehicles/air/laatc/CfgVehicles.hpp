@@ -41,7 +41,7 @@ class CfgVehicles
         startDuration = 4.5;
 
         weapons[] = {"ls_laat_gun", "ls_weapon_CMFlareLauncher"};
-        magazines[] = {"200rnd_laat_he_mag", "200rnd_laat_he_mag", "ls_mag_240rnd_CMFlareChaff_blue", "ls_mag_240rnd_CMFlareChaff_blue"};
+        magazines[] = {"200Rnd_laat_he_mag", "200Rnd_laat_he_mag", "ls_mag_240Rnd_CMFlareChaff_blue", "ls_mag_240Rnd_CMFlareChaff_blue"};
 
         hiddenSelectionsTextures[] =
         {

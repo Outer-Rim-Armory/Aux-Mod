@@ -10,9 +10,9 @@ class CfgWeapons
         displayName = "Main Cannon";
         magazines[] =
         {
-            QCLASS(Mag_20rnd_Cannon_Blitz_HEAT),
-            QCLASS(Mag_20rnd_Cannon_Blitz_HE),
-            QCLASS(Mag_20rnd_Cannon_Blitz_AT)
+            QCLASS(Mag_20Rnd_Cannon_Blitz_HEAT),
+            QCLASS(Mag_20Rnd_Cannon_Blitz_HE),
+            QCLASS(Mag_20Rnd_Cannon_Blitz_AT)
         };
         class player: player
         {
@@ -214,9 +214,9 @@ class CfgWeapons
         displayName = "Co-Axial";
         magazines[] =
         {
-            QCLASS(Mag_100rnd_Coax),
-            QCLASS(Mag_500rnd_Coax),
-            QCLASS(Mag_1000rnd_Coax)
+            QCLASS(Mag_100Rnd_Coax),
+            QCLASS(Mag_500Rnd_Coax),
+            QCLASS(Mag_1000Rnd_Coax)
         };
         drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
 
@@ -242,9 +242,9 @@ class CfgWeapons
         drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
         magazines[] =
         {
-            QCLASS(Mag_100rnd_Coax),
-            QCLASS(Mag_500rnd_Coax),
-            QCLASS(Mag_1000rnd_Coax)
+            QCLASS(Mag_100Rnd_Coax),
+            QCLASS(Mag_500Rnd_Coax),
+            QCLASS(Mag_1000Rnd_Coax)
         };
 
         class GunParticles {};
@@ -284,7 +284,7 @@ class CfgWeapons
         displayName = "Commander Gun";
         magazines[] =
         {
-            QCLASS(Mag_100rnd_Coax)
+            QCLASS(Mag_100Rnd_Coax)
         };
         class manual: manual
         {
@@ -301,7 +301,7 @@ class CfgWeapons
         displayName = "Blaster Cannon";
         magazines[] =
         {
-            QCLASS(Mag_4000rnd_Gatling_Galaxy)
+            QCLASS(Mag_4000Rnd_Gatling_Galaxy)
         };
     };
     class cannon_105mm;
@@ -314,7 +314,7 @@ class CfgWeapons
         displayName = "Heavy Energy Cannon";
         magazines[] =
         {
-            QCLASS(Mag_100rnd_Cannon_Galaxy)
+            QCLASS(Mag_100Rnd_Cannon_Galaxy)
         };
         class player: player
         {
@@ -426,7 +426,7 @@ class CfgWeapons
         descriptionShort = "";
         picture = QPATHTOF(weapons\data\ui\ATRT_Turret_ca.paa);
 
-        magazines[] = {QCLASS(Mag_9999rnd_ATRT)};
+        magazines[] = {QCLASS(Mag_9999Rnd_ATRT)};
         magazineWell[] = {};
     };
 

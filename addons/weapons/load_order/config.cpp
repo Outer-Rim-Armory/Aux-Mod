@@ -1,17 +1,15 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             QGVAR(accessories),
+            QGVAR(b2Blaster),
             QGVAR(dc15a),
             QGVAR(dc15c),
             QGVAR(dc15l),
@@ -20,18 +18,20 @@ class CfgPatches
             QGVAR(dc15x),
             QGVAR(dc17),
             QGVAR(dc17m),
+            QGVAR(dc20y),
             QGVAR(dp23),
             QGVAR(e5),
             QGVAR(e5c),
+            QGVAR(e5s),
             QGVAR(e60r),
             QGVAR(gr20),
             QGVAR(hi12),
             QGVAR(lw38),
             QGVAR(rps6),
             QGVAR(rps7),
+            QGVAR(sbb3),
             QGVAR(valken38x),
             QGVAR(westar_m5),
-            // QGVAR(x42), // Not included due to Burn 'Em requirement, causes circular dependency
             QGVAR(z6)
         };
         units[] = {};

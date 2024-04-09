@@ -13,6 +13,7 @@ class XtdGearModels
                 changeInGame = FALSE;
                 values[] =
                 {
+                    "Alvarez",
                     "Axel",
                     "Burnt",
                     "Catholic",
@@ -43,6 +44,7 @@ class XtdGearModels
                     "Woods"
                 };
 
+                class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };
@@ -119,6 +121,7 @@ class XtdGearModels
                 changeInGame = FALSE;
                 values[] =
                 {
+                    "Alvarez",
                     "Axel",
                     "Bob",
                     "Burnt",
@@ -150,6 +153,7 @@ class XtdGearModels
                     "Woods"
                 };
 
+                class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
                 class Bob { label = "Bob"; };
                 class Burnt { label = "Burnt"; };
@@ -362,8 +366,11 @@ class XtdGearModels
                     "Keeli_CamoBrown",
                     "Keeli_CamoGrey",
                     "Rat",
+                    "Rev",
                     "Sin",
                     "Sogi",
+                    "Splashdown",
+                    "Tugz",
                     "Tyrant"
                 };
 
@@ -380,8 +387,11 @@ class XtdGearModels
                 class Keeli_CamoBrown { label = "Keeli Brown"; };
                 class Keeli_CamoGrey { label = "Keeli Grey"; };
                 class Rat { label = "Rat"; };
+                class Rev { label = "Rev"; };
                 class Sin { label = "Sin"; };
                 class Sogi { label = "Sogi"; };
+                class Splashdown { label = "Splashdown"; };
+                class Tugz { label = "Tugz"; };
                 class Tyrant { label = "Tyrant"; };
             };
         };

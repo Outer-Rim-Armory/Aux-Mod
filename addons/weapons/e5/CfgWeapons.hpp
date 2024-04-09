@@ -31,7 +31,7 @@ class CfgWeapons
         baseWeapon = QCLASS(E5_Base);
 
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_100rnd_E5)};
+        magazines[] = {QCLASS(Mag_100Rnd_E5)};
         magazineWell[] = {};
 
         fireLightDiffuse[] = {1, 0, 0};

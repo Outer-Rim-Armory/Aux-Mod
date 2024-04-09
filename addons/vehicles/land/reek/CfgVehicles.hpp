@@ -1,20 +1,16 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class Wheeled_APC_F;
-    class APC_Wheeled_01_base_F: Wheeled_APC_F
-    {
+    class APC_Wheeled_01_base_F: Wheeled_APC_F {
         class Turrets;
     };
     class B_APC_Wheeled_01_base_F: APC_Wheeled_01_base_F {};
-    class B_APC_Wheeled_01_cannon_F: B_APC_Wheeled_01_base_F
-    {
-        class Turrets: Turrets
-        {
+    class B_APC_Wheeled_01_cannon_F: B_APC_Wheeled_01_base_F {
+        class ACE_SelfActions;
+        class Turrets: Turrets {
             class MainTurret;
         };
     };
-    class CLASS(Reek): B_APC_Wheeled_01_cannon_F
-    {
+    class CLASS(Reek): B_APC_Wheeled_01_cannon_F {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -32,10 +28,8 @@ class CfgVehicles
         soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\reek\Shutdown.wss), 0.79432821, 1};
         soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\reek\Startup.wss), 1, 1, 100};
         soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\reek\Shutdown.wss), 1, 1, 10};
-        class Sounds
-        {
-            soundSetsInt[] =
-            {
+        class Sounds {
+            soundSetsInt[] = {
                 QCLASS(SoundSet_Reek_Engine_RPM0_INT),
                 QCLASS(SoundSet_Reek_Engine_RPM1_INT),
                 QCLASS(SoundSet_Reek_Engine_RPM2_INT),
@@ -67,8 +61,7 @@ class CfgVehicles
                 "APC_Wheeled_01_Tires_Brake_Hard_INT_SoundSet",
                 "APC_Wheeled_01_Tires_Brake_Soft_INT_SoundSet"
             };
-            soundSetsExt[] =
-            {
+            soundSetsExt[] = {
                 QCLASS(SoundSet_Reek_Engine_RPM0_EXT),
                 QCLASS(SoundSet_Reek_Engine_RPM1_EXT),
                 QCLASS(SoundSet_Reek_Engine_RPM2_EXT),
@@ -100,8 +93,7 @@ class CfgVehicles
             };
         };
 
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             QPATHTOF(land\reek\data\textures\KeeliCompany\Body_co.paa),
             QPATHTOF(land\reek\data\textures\KeeliCompany\Addons_co.paa),
             QPATHTOF(land\reek\data\textures\KeeliCompany\Tow_co.paa),
@@ -110,15 +102,12 @@ class CfgVehicles
         };
 
         textureList[] = {"Standard", 0, "KeeliCompany", 1, "KeeliCompanyDamaged", 0, "CamoGrey", 0};
-        class TextureSources
-        {
-            class Standard
-            {
+        class TextureSources {
+            class Standard {
                 author = AUTHOR;
                 displayName = "Standard";
                 factions[] = {};
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\reek\data\textures\Standard\Body_co.paa),
                     QPATHTOF(land\reek\data\textures\Standard\Addons_co.paa),
                     QPATHTOF(land\reek\data\textures\Standard\Tow_co.paa),
@@ -127,11 +116,9 @@ class CfgVehicles
                 };
             };
 
-            class KeeliCompany: Standard
-            {
+            class KeeliCompany: Standard {
                 displayName = "Keeli Company";
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\reek\data\textures\KeeliCompany\Body_co.paa),
                     QPATHTOF(land\reek\data\textures\KeeliCompany\Addons_co.paa),
                     QPATHTOF(land\reek\data\textures\KeeliCompany\Tow_co.paa),
@@ -140,11 +127,9 @@ class CfgVehicles
                 };
             };
 
-            class KeeliCompanyDamaged: KeeliCompany
-            {
+            class KeeliCompanyDamaged: KeeliCompany {
                 displayName = "Keeli Company (Damaged)";
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\reek\data\textures\KeeliCompanyDamaged\Body_co.paa),
                     QPATHTOF(land\reek\data\textures\KeeliCompanyDamaged\Addons_co.paa),
                     QPATHTOF(land\reek\data\textures\KeeliCompanyDamaged\Tow_co.paa),
@@ -153,11 +138,9 @@ class CfgVehicles
                 };
             };
 
-            class CamoGrey: KeeliCompany
-            {
+            class CamoGrey: KeeliCompany {
                 displayName = "Grey Camo";
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\reek\data\textures\CamoGrey\Body_co.paa),
                     QPATHTOF(land\reek\data\textures\CamoGrey\Addons_co.paa),
                     QPATHTOF(land\reek\data\textures\CamoGrey\Tow_co.paa),
@@ -167,17 +150,13 @@ class CfgVehicles
             };
         };
 
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret
-            {
-                weapons[] =
-                {
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                weapons[] = {
                     QCLASS(Autocannon_Reek),
                     QCLASS(Coax_Reek)
                 };
-                magazines[] =
-                {
+                magazines[] = {
                     "60Rnd_40mm_GPR_Tracer_Red_shells",
                     "60Rnd_40mm_GPR_Tracer_Red_shells",
                     "60Rnd_40mm_GPR_Tracer_Red_shells",
@@ -186,20 +165,23 @@ class CfgVehicles
                     "40Rnd_40mm_APFSDS_Tracer_Red_shells",
                     "40Rnd_40mm_APFSDS_Tracer_Red_shells",
                     "40Rnd_40mm_APFSDS_Tracer_Red_shells",
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax),
-                    QCLASS(Mag_100rnd_Coax)
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax),
+                    QCLASS(Mag_100Rnd_Coax)
                 };
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions {
+            AI_CREW_SPAWNER;
         };
 
         INVENTORY_VEHICLE_BASE(3);
     };
 
-    class CLASS(APC_Reek): CLASS(Reek)
-    {
+    class CLASS(APC_Reek): CLASS(Reek) {
         SCOPE_HIDDEN;
     };
 };

@@ -13,7 +13,8 @@ class CfgPatches
             QUOTE(ADDON),
             "3AS_BX42",
             "WBK_PhoenixTreal_FlamethrowerMOD",
-            "M2"
+            "M2",
+            "JLTS_C_Credits"
         };
         units[] = {};
         weapons[] =

@@ -23,7 +23,7 @@ class CfgVehicles
         {
             "3as_ARC_500Rnd_Light_Shells",
             "3as_ARC_500Rnd_Light_Shells",
-            "ls_mag_300rnd_CMFlareChaff_blue",
+            "ls_mag_300Rnd_CMFlareChaff_blue",
             "Laserbatteries"
         };
 

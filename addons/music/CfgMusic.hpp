@@ -130,6 +130,7 @@ class CfgMusic {
     MUSIC(SW_TheBattleInTheSnow,"[SW] The Battle in the Snow",222,StarWars);
     MUSIC(SW_TimeToMeetTheNatives,"[SW] Time to Meet the Natives",96,StarWars);
     MUSIC(SW_UmbaraLanding,"[SW] Umbara Landing",202,StarWars);
+    MUSIC(SW_Felucia_Theme,"[SW] Battle of Felucia",204,StarWars);
 
     // Transformers
     MUSIC(TF_ArrivalToEarth,"[TF] Arrival To Earth",315,Other);
@@ -170,6 +171,8 @@ class CfgMusic {
 
     // Other
     MUSIC(Blank,"Stop Music",0,Other);
+    MUSIC(UNK_Admiral_Goliath,"Admiral Goliath",324,Other);
+    MUSIC(UNK_Kraken_Theme,"The Kraken",221,Other);
 
     // HellDivers 2
     MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);

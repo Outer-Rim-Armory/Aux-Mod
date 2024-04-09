@@ -106,3 +106,4 @@ class CfgPatches
 #include "CfgFactionClasses.hpp"
 #include "CfgEditorSubcategories.hpp"
 #include "CfgGroups.hpp"
+#include "CfgWorlds.hpp"

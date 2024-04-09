@@ -26,7 +26,7 @@ class CfgWeapons
 
         modes[] = {"FullAuto"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_240rnd_DC15L), "Aux12thFleet_Mag_DC15L"};
+        magazines[] = {QCLASS(Mag_240Rnd_DC15L), "Aux12thFleet_Mag_DC15L"};
         magazineWell[] = {};
 
         drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};

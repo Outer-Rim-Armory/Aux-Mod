@@ -33,41 +33,54 @@ Unit description
 
 ---
 
+## Mod Features
+The Keeli Company Aux mod focuses on creating custom and in-depth systems, as well as the standard features you would find in other unit aux mods such as custom textured equipment; vehicles; and balance tweaks. Each of these systems has a document outlining how to use that particular system.
+
+- [Chat Wheel](./addons/chat_wheel_redux/README.md)
+- [Fortify](./addons/fortify/README.md)
+- [Jetpacks](./addons/jetpacks/README.md)
+- [Map](./addons/map/README.md)
+- [Medical](./addons/medical/README.md)
+- [Radio Jammers](./addons/jammers/README.md)
+- [Vehicle Shields](./addons/shields/README.md)
+- [Vehicle Systems](./addons/vehicles/README.md)
+- [Weapon Systems](./addons/weapons/README.md)
+
 ## Detachments
 
-Keeli Company has several platoons to fit the play styles of its members. Letting people play the way they want to.
+Keeli Company has several platoons to fit the play styles of its members, letting people play the way they want to.
 
 ### Nightfall
 <div align=center>
-<img src=".github/kc_banner_nightfall.png" alt="Blurrgg Detachment"></img>
+<img src=".github/kc_banner_nightfall.png" alt="Nightfall Infantry Detachment"></img>
 </div>
 
 Infantry
 
 ### Blurrgg
 <div align=center>
-<img src=".github/kc_banner_blurrgg.png" alt="Blurrgg Detachment"></img>
+<img src=".github/kc_banner_blurrgg.png" alt="Blurrgg Aviation Detachment"></img>
 </div>
 
 Aviation
 
 ### Reeker
 <div align=center>
-<img src=".github/kc_banner_reeker.jpg" alt="Reeker Detachment"></img>
+<img src=".github/kc_banner_reeker.jpg" alt="Reeker Armored Detachment"></img>
 </div>
 
 Armored
 
 ### Spartan
 <div align=center>
-<img src=".github/kc_banner_spartan.png" alt="Spartan Detachment"></img>
+<img src=".github/kc_banner_spartan.png" alt="Spartan ARC Detachment"></img>
 </div>
 
 ARC
 
 ### Raptor
 <div align=center>
-<img src=".github/kc_banner_raptor.jpg" alt="Raptor Detachment"></img>
+<img src=".github/kc_banner_raptor.jpg" alt="Raptor ARF Platoon"></img>
 </div>
 
 ARF
@@ -80,28 +93,5 @@ This system is packed together with the [Keeli Company Aux Mod](https://steamcom
 <div align="center">
     <a href="https://youtu.be/fxOIdcdaZqA">
         <img src=".github\chat_wheel_redux_thumbnail.png" alt="Chat Wheel Redux" title="Chat Wheel Redux" width="480"/>
-    </a>
-</div>
-
-
-## Completely Custom Weapons and Equipment
-The Keeli Company aux implements weapons and equipment that haven't gotten as much attention as others from Star Wars, as well as completely new ones.
-
-### Droid Poppers
-EMP Greandes or "Droid Poppers" as republic troopers often called them, are small grenades that release a large burst of energy to disrupt electrical systems. This burst can completely disable simple B1 Battledroids, but only temporarily disables much more resiliant foes such as Droidekas or AATs. The shields of droidekas absorb most of the energy, overloading the shield but leaving the droideka itself perfectly fine.
-
-<div align="center">
-    <a href="https://youtu.be/XNol7PP5ZMs">
-        <img src=".github\droid_poppers_thumbnail.png" alt="Droid Poppers" title="Droid Poppers" width="480"/>
-    </a>
-</div>
-
-### Deployable Medical Droids
-A poweful tool meant for assisting Clone Medics on the front lines. The FX-7 medical droid helps deal with mass casuality scenarios by administiring medical aid to lighter injuries, letting medics focus on the more pressing patients.
-The FX-7 medical droid also instructs standard Clone Troopers how to treat their own injuries and the injuries of those around them. This lets Troopers handle the less critical wounds by stitching themselves and those around them.
-
-<div align="center">
-    <a href="https://youtu.be/Dqyx08xNIIA">
-        <img src=".github\fx7_medical_droid_thumbnail.png" alt="FX-7 Medical Droid" title="FX-7 Medical Droid" width="480"/>
     </a>
 </div>

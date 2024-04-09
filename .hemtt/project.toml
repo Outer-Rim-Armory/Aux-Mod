@@ -32,7 +32,7 @@ workshop = [
 ]
 presets = ["main"]
 dlc = []
-optionals = ["dev"]
+optionals = []
 mission = "AuxTest.VR"
 parameters = []
 
@@ -53,7 +53,7 @@ workshop = [
 ]
 presets = ["main"]
 dlc = []
-optionals = ["dev"]
+optionals = ["no_burn_screams"]
 mission = "AuxTest.VR"
 parameters = []
 

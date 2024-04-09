@@ -21,7 +21,7 @@ class CfgWeapons
         class Launcher: Launcher
         {
             displayName = "Bacta Launcher";
-            magazines[] = {QCLASS(Mag_1rnd_GR20), QCLASS(Mag_GR20)};
+            magazines[] = {QCLASS(Mag_1Rnd_GR20), QCLASS(Mag_GR20)};
             magazineWell[] = {};
         };
     };

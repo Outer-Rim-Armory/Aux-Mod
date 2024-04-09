@@ -26,10 +26,10 @@ class CfgVehicles
                 weapons[] = {"ls_hmp_gun", "ls_hmp_gun_2"};
                 magazines[] =
                 {
-                    "200rnd_hmp_he_mag",
-                    "200rnd_hmp_he_mag",
-                    "200rnd_hmp_apfsds_mag",
-                    "200rnd_hmp_apfsds_mag"
+                    "200Rnd_hmp_he_mag",
+                    "200Rnd_hmp_he_mag",
+                    "200Rnd_hmp_apfsds_mag",
+                    "200Rnd_hmp_apfsds_mag"
                 };
             };
         };

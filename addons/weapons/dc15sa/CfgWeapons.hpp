@@ -17,9 +17,9 @@ class CfgWeapons
         muzzles[] = {"this"};
         magazines[] =
         {
-            QCLASS(Mag_7rnd_DC15SA),
-            QCLASS(Mag_15rnd_DC15SA),
-            QCLASS(Mag_30rnd_DC15SA),
+            QCLASS(Mag_7Rnd_DC15SA),
+            QCLASS(Mag_15Rnd_DC15SA),
+            QCLASS(Mag_30Rnd_DC15SA),
             "Aux12thFleet_Mag_7Rnd_DC15SA",
             "Aux12thFleet_Mag_15Rnd_DC15SA",
             "Aux12thFleet_Mag_30Rnd_DC15SA"

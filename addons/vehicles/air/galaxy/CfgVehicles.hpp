@@ -31,7 +31,7 @@ class CfgVehicles
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
         weapons[] = {"ls_weapon_CMFlareLauncher"};
-        magazines[] = {"ls_mag_240rnd_CMFlareChaff_blue"};
+        magazines[] = {"ls_mag_240Rnd_CMFlareChaff_blue"};
 
         class ACE_SelfActions: ACE_SelfActions
         {
@@ -50,8 +50,8 @@ class CfgVehicles
                 };
                 magazines[] =
                 {
-                    QCLASS(Mag_100rnd_Cannon_Galaxy),
-                    QCLASS(Mag_4000rnd_Gatling_Galaxy)
+                    QCLASS(Mag_100Rnd_Cannon_Galaxy),
+                    QCLASS(Mag_4000Rnd_Gatling_Galaxy)
                 };
             };
             class GunnerTurret_02: GunnerTurret_02
@@ -90,7 +90,7 @@ class CfgVehicles
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
         weapons[] = {"ls_weapon_CMFlareLauncher"};
-        magazines[] = {"ls_mag_240rnd_CMFlareChaff_blue"};
+        magazines[] = {"ls_mag_240Rnd_CMFlareChaff_blue"};
 
         class ACE_SelfActions: ACE_SelfActions
         {
@@ -122,7 +122,7 @@ class CfgVehicles
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
         weapons[] = {"ls_weapon_CMFlareLauncher"};
-        magazines[] = {"ls_mag_240rnd_CMFlareChaff_blue"};
+        magazines[] = {"ls_mag_240Rnd_CMFlareChaff_blue"};
 
         class ACE_SelfActions: ACE_SelfActions
         {

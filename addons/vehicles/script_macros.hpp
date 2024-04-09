@@ -133,11 +133,11 @@ class GVAR(DeleteCrew) \
 }; \
 class TransportMagazines \
 { \
-    MAG_XX(CLASS(Mag_80rnd_DC15S),__EVAL(5 * CREW_COUNT)); \
+    MAG_XX(CLASS(Mag_80Rnd_DC15S),__EVAL(5 * CREW_COUNT)); \
     MAG_XX(SmokeShellPurple,2); \
     MAG_XX(SmokeShellBlue,2); \
     MAG_XX(ACE_Chemlight_HiBlue,2); \
-    MAG_XX(CLASS(Mag_UGL_3rnd_FlareBlue),2); \
+    MAG_XX(CLASS(Mag_UGL_3Rnd_FlareBlue),2); \
 }; \
 class TransportItems \
 { \
@@ -155,11 +155,11 @@ class TransportBackpacks {}
 #define INVENTORY_VEHICLE_COMMON class TransportWeapons {}; \
 class TransportMagazines \
 { \
-    MAG_XX(CLASS(Mag_60rnd_DC15A),5); \
-    MAG_XX(CLASS(Mag_80rnd_DC15S),5); \
+    MAG_XX(CLASS(Mag_60Rnd_DC15A),5); \
+    MAG_XX(CLASS(Mag_80Rnd_DC15S),5); \
     MAG_XX(3Rnd_UGL_FlareWhite_F,2); \
     MAG_XX(3Rnd_UGL_FlareRed_F,2); \
-    MAG_XX(CLASS(Mag_UGL_3rnd_FlareBlue),2); \
+    MAG_XX(CLASS(Mag_UGL_3Rnd_FlareBlue),2); \
     MAG_XX(3Rnd_UGL_FlareCIR_F,2); \
     MAG_XX(3Rnd_Smoke_Grenade_shell,2); \
     MAG_XX(3Rnd_SmokeRed_Grenade_shell,2); \
@@ -169,8 +169,8 @@ class TransportMagazines \
     MAG_XX(3Rnd_SmokeBlue_Grenade_shell,2); \
     MAG_XX(3Rnd_SmokeOrange_Grenade_shell,2); \
     MAG_XX(3Rnd_HE_Grenade_shell,2); \
-    MAG_XX(CLASS(Mag_20rnd_DC17),5); \
-    MAG_XX(CLASS(Mag_1rnd_RPS7_AT),1); \
+    MAG_XX(CLASS(Mag_20Rnd_DC17),5); \
+    MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),1); \
     MAG_XX(ls_mag_classC_thermalDet,4); \
 }; \
 class TransportBackpacks {}; \
@@ -189,9 +189,9 @@ class TransportItems \
 }; \
 class TransportMagazines \
 { \
-    MAG_XX(CLASS(Mag_60rnd_DC15A),15); \
-    MAG_XX(CLASS(Mag_80rnd_DC15S),15); \
-    MAG_XX(CLASS(Mag_15rnd_DC15X),5); \
+    MAG_XX(CLASS(Mag_60Rnd_DC15A),15); \
+    MAG_XX(CLASS(Mag_80Rnd_DC15S),15); \
+    MAG_XX(CLASS(Mag_15Rnd_DC15X),5); \
 }; \
 class TransportBackpacks {}; \
 class TransportItems \

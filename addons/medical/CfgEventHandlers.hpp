@@ -22,8 +22,8 @@ class Extended_Init_EventHandlers {
         class GVAR(areaSlowHealInit) {
             init = QUOTE(_this call FUNC(areaHealerInit));
         };
-        class GVAR(soundLoopInit) {
-            init = QUOTE(_this call EFUNC(core,soundLoopInit));
+        class GVAR(loopSay3D_init) {
+            init = QUOTE(_this call EFUNC(core,loopSay3D_init));
         };
     };
 };

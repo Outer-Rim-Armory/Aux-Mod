@@ -48,7 +48,7 @@ class CfgMagazineWells
         };
         KC_Magazines[] =
         {
-            QCLASS(Mag_UGL_3rnd_FlareBlue)
+            QCLASS(Mag_UGL_3Rnd_FlareBlue)
         };
     };
 
@@ -72,7 +72,7 @@ class CfgMagazineWells
         };
         KC_Magazines[] =
         {
-            QCLASS(Mag_UGL_3rnd_FlareBlue)
+            QCLASS(Mag_UGL_3Rnd_FlareBlue)
         };
         ACE_Magazines[] =
         {

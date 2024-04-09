@@ -5,7 +5,7 @@
 <div id="user-content-toc">
   <ul>
     <summary><h1 style="display: inline-block;">Keeli Company Aux Mod</h1><br>
-    Version 2.3.4</summary>
+    Version 2.6.4</summary>
   </ul>
 </div>
 

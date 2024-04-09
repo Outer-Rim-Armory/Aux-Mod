@@ -18,8 +18,8 @@ class CfgWeapons
         muzzles[] = {"this"};
         magazines[] =
         {
-            QCLASS(Mag_1rnd_E60R_HE),
-            QCLASS(Mag_1rnd_E60R_AT)
+            QCLASS(Mag_1Rnd_E60R_HE),
+            QCLASS(Mag_1Rnd_E60R_AT)
         };
         magazineWell[] = {};
 
@@ -88,7 +88,7 @@ class CfgWeapons
 
         modes[] = {"Single", "TopDown"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_1rnd_E60R_AA)};
+        magazines[] = {QCLASS(Mag_1Rnd_E60R_AA)};
         magazineWell[] = {};
 
         canShootInWater = FALSE;

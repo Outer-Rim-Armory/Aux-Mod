@@ -1,7 +1,7 @@
 class CfgMagazines
 {
-    class CLASS(Mag_60rnd_DC15A);
-    class CLASS(Mag_60rnd_LW38): CLASS(Mag_60rnd_DC15A)
+    class CLASS(Mag_60Rnd_DC15A);
+    class CLASS(Mag_60Rnd_LW38): CLASS(Mag_60Rnd_DC15A)
     {
         displayName = "[KC] LW-38 Energy Cell";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: LW-38";
@@ -10,7 +10,7 @@ class CfgMagazines
         picture = "\LF_Weapon_Unit\lw38m\ui\mag.paa";
     };
 
-    class CLASS(Mag_60rnd_LW38_Green): CLASS(Mag_60rnd_LW38)
+    class CLASS(Mag_60Rnd_LW38_Green): CLASS(Mag_60Rnd_LW38)
     {
         SCOPE_HIDDEN;
         displayName = "[KC] LW-38 Energy Cell (Green)";

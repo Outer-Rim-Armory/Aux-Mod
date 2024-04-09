@@ -1,4 +1,5 @@
 class DOUBLES(Ground,CLASS(Holder_Base));
+GROUND_HOLDER(Helmet_Phase1_Alvarez,"INF P1 Helm ('Alvarez')");
 GROUND_HOLDER(Helmet_Phase1_Axel,"INF P1 Helm ('Axel')");
 GROUND_HOLDER(Helmet_Phase1_Burnt,"INF P1 Helm ('Burnt')");
 GROUND_HOLDER(Helmet_Phase1_BurntBacta,"INF P1 Helm ('Burnt') [Bacta Visor]");
@@ -48,6 +49,7 @@ GROUND_HOLDER(Helmet_Phase1_Pilot_Mischief,"AVI P1 Helm ('Mischief')");
 GROUND_HOLDER(Helmet_Phase1_Tanker_Grey,"ARMR P1 Helm ('Grey')");
 
 
+GROUND_HOLDER(Helmet_Phase2_Alvarez,"INF P2 Helm ('Alvarez')");
 GROUND_HOLDER(Helmet_Phase2_Axel,"INF P2 Helm ('Axel')");
 GROUND_HOLDER(Helmet_Phase2_Bob,"INF P2 Helm ('Bob')");
 GROUND_HOLDER(Helmet_Phase2_BobKyber,"INF P2 Helm ('Bob') [Kyber Visor]");

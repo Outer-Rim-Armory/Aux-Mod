@@ -31,8 +31,8 @@ class CfgVehicles
         magazines[] =
         {
             // Ammo
-            ITEM_11(QCLASS(Mag_80rnd_DC15S)),
-            ITEM_2(QCLASS(Mag_20rnd_DC17)),
+            ITEM_11(QCLASS(Mag_80Rnd_DC15S)),
+            ITEM_2(QCLASS(Mag_20Rnd_DC17)),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("ShieldGrenade_Mag"),
@@ -44,8 +44,8 @@ class CfgVehicles
         respawnMagazines[] =
         {
             // Ammo
-            ITEM_11(QCLASS(Mag_80rnd_DC15S)),
-            ITEM_2(QCLASS(Mag_20rnd_DC17)),
+            ITEM_11(QCLASS(Mag_80Rnd_DC15S)),
+            ITEM_2(QCLASS(Mag_20Rnd_DC17)),
             // Grenades
             ITEM_2("ls_mag_classC_thermalDet"),
             ITEM_3("ShieldGrenade_Mag"),

@@ -1,25 +1,33 @@
-class CfgVehicles
-{
-    class ThingX;
-    class CLASS(Deployable_MedicalDroid): ThingX {
+class DefaultEventHandlers;
+
+class CfgVehicles {
+    class Land_3AS_Medical_Droid;
+    class CLASS(Deployable_MedicalDroid): Land_3AS_Medical_Droid {
         SCOPE_PUBLIC;
 
         displayName = "FX-7 Medical Droid";
         editorCategory = QEDCAT(Objects);
-        editorSubcategory = QCLASS(Edsubcat_Droids);
+        editorSubcategory = QEDSUBCAT(Droids);
 
-        model = "\3AS\3AS_props\droids\models\3AS_medical_droid.p3d";
         editorPreview = EDITOR_PREVIEW(Deployable_MedicalDroid);
+
+        simulation = "house";
+        sound = "";
 
         GVAR(areaHealRadius) = 7;
         GVAR(areaHealRate) = 6;
         GVAR(areaHealMaxPatients) = 2;
 
-        EGVAR(core,soundLoop) = QPATHTOF(data\audio\MedicalDroid_Treat.wss);
+        EGVAR(core,soundLoop) = QCLASS(MedicalDroid_Treat);
         EGVAR(core,soundLoopDelay) = 15;
+        EGVAR(core,soundLoopCondition) = QUOTE(alive (_this#0));
 
         EGVAR(objects,pickupTime) = 20;
-        EGVAR(objects,interactionPosition)[] = {0, 0, 0.3};
+        EGVAR(objects,interactionPosition)[] = {0, 0, 1.3};
+
+        class EventHandlers: DefaultEventHandlers {};
+
+        class DestructionEffects {};
     };
 
     class ACE_MedicalLitterBase;

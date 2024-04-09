@@ -41,19 +41,19 @@ class CfgVehicles
         class TransportMagazines
         {
             // Primary Ammo
-            MAG_XX(CLASS(Mag_60rnd_DC15A),10);
-            MAG_XX(CLASS(Mag_80rnd_DC15S),10);
-            MAG_XX(CLASS(Mag_40rnd_DC15C),10);
-            MAG_XX(CLASS(Mag_15rnd_DC15X),10);
-            MAG_XX(CLASS(Mag_240rnd_DC15L),10);
-            MAG_XX(CLASS(Mag_30rnd_DP23),10);
-            MAG_XX(CLASS(Mag_60rnd_WestarM5),10);
-            MAG_XX(CLASS(Mag_25rnd_Valken38x),10);
+            MAG_XX(CLASS(Mag_60Rnd_DC15A),10);
+            MAG_XX(CLASS(Mag_80Rnd_DC15S),10);
+            MAG_XX(CLASS(Mag_40Rnd_DC15C),10);
+            MAG_XX(CLASS(Mag_15Rnd_DC15X),10);
+            MAG_XX(CLASS(Mag_240Rnd_DC15L),10);
+            MAG_XX(CLASS(Mag_30Rnd_DP23),10);
+            MAG_XX(CLASS(Mag_60Rnd_WestarM5),10);
+            MAG_XX(CLASS(Mag_25Rnd_Valken38x),10);
 
             // UGL Ammo
             MAG_XX(3Rnd_UGL_FlareWhite_F,5);
             MAG_XX(3Rnd_UGL_FlareRed_F,5);
-            MAG_XX(CLASS(Mag_UGL_3rnd_FlareBlue),5);
+            MAG_XX(CLASS(Mag_UGL_3Rnd_FlareBlue),5);
             MAG_XX(3Rnd_UGL_FlareCIR_F,5);
             MAG_XX(3Rnd_Smoke_Grenade_shell,5);
             MAG_XX(3Rnd_SmokeRed_Grenade_shell,5);
@@ -65,12 +65,12 @@ class CfgVehicles
             MAG_XX(3Rnd_HE_Grenade_shell,5);
 
             // Secondary Ammo
-            MAG_XX(CLASS(Mag_20rnd_DC17),10);
+            MAG_XX(CLASS(Mag_20Rnd_DC17),10);
 
             // Launcher Ammo
             MAG_XX(3AS_JLTS_MK39_AA,2);
             MAG_XX(3AS_JLTS_MK44_HE,2);
-            MAG_XX(CLASS(Mag_1rnd_RPS7_AT),2);
+            MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),2);
 
             // Grenades
             MAG_XX(ls_mag_classC_thermalDet,8);
@@ -89,14 +89,14 @@ class CfgVehicles
         class TransportMagazines
         {
             // Primary Ammo
-            MAG_XX(CLASS(Mag_60rnd_DC15A),160);
-            MAG_XX(CLASS(Mag_80rnd_DC15S),160);
-            MAG_XX(CLASS(Mag_40rnd_DC15C),160);
-            MAG_XX(CLASS(Mag_15rnd_DC15X),160);
-            MAG_XX(CLASS(Mag_240rnd_DC15L),160);
-            MAG_XX(CLASS(Mag_30rnd_DP23),160);
-            MAG_XX(CLASS(Mag_60rnd_WestarM5),160);
-            MAG_XX(CLASS(Mag_25rnd_Valken38x),160);
+            MAG_XX(CLASS(Mag_60Rnd_DC15A),160);
+            MAG_XX(CLASS(Mag_80Rnd_DC15S),160);
+            MAG_XX(CLASS(Mag_40Rnd_DC15C),160);
+            MAG_XX(CLASS(Mag_15Rnd_DC15X),160);
+            MAG_XX(CLASS(Mag_240Rnd_DC15L),160);
+            MAG_XX(CLASS(Mag_30Rnd_DP23),160);
+            MAG_XX(CLASS(Mag_60Rnd_WestarM5),160);
+            MAG_XX(CLASS(Mag_25Rnd_Valken38x),160);
 
             // UGL Ammo
             MAG_XX(3Rnd_UGL_FlareWhite_F,15);
@@ -113,12 +113,12 @@ class CfgVehicles
             MAG_XX(3Rnd_HE_Grenade_shell,15);
 
             // Secondary Ammo
-            MAG_XX(CLASS(Mag_20rnd_DC17),50);
+            MAG_XX(CLASS(Mag_20Rnd_DC17),50);
 
             // Launcher Ammo
             MAG_XX(3AS_JLTS_MK39_AA,5);
             MAG_XX(3AS_JLTS_MK44_HE,5);
-            MAG_XX(CLASS(Mag_1rnd_RPS7_AT),10);
+            MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),10);
 
             // Grenades
             MAG_XX(ls_mag_classC_thermalDet,25);
@@ -130,10 +130,10 @@ class CfgVehicles
         displayName = "Heavy Ammo Crate (Squad)";
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_10rnd_Valken38x_AP),20);
-            MAG_XX(CLASS(Mag_30rnd_HI12),20);
-            MAG_XX(CLASS(Mag_15rnd_DP23_HP),20);
-            MAG_XX(CLASS(Mag_300rnd_Z6),5);
+            MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),20);
+            MAG_XX(CLASS(Mag_30Rnd_HI12),20);
+            MAG_XX(CLASS(Mag_15Rnd_DP23_HP),20);
+            MAG_XX(CLASS(Mag_300Rnd_Z6),5);
             MAG_XX(3AS_JLTS_MK39_AA,1);
             MAG_XX(3AS_JLTS_MK43_AT,1);
             MAG_XX(3AS_JLTS_MK44_HE,1);
@@ -144,10 +144,10 @@ class CfgVehicles
         displayName = "Heavy Ammo Crate (Platoon)";
         class TransportMagazines
         {
-            MAG_XX(CLASS(Mag_10rnd_Valken38x_AP),120);
-            MAG_XX(CLASS(Mag_30rnd_HI12),120);
-            MAG_XX(CLASS(Mag_15rnd_DP23_HP),120);
-            MAG_XX(CLASS(Mag_300rnd_Z6),10);
+            MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),120);
+            MAG_XX(CLASS(Mag_30Rnd_HI12),120);
+            MAG_XX(CLASS(Mag_15Rnd_DP23_HP),120);
+            MAG_XX(CLASS(Mag_300Rnd_Z6),10);
             MAG_XX(3AS_JLTS_MK39_AA,3);
             MAG_XX(3AS_JLTS_MK43_AT,3);
             MAG_XX(3AS_JLTS_MK44_HE,3);
@@ -190,7 +190,7 @@ class CfgVehicles
             MAG_XX(3AS_SmokePurple,2);
             MAG_XX(SquadShieldMagazine,2);
             MAG_XX(CLASS(Grenade_Bacta),5);
-            MAG_XX(CLASS(Mag_1rnd_GR20),2);
+            MAG_XX(CLASS(Mag_1Rnd_GR20),2);
         };
     };
     class CLASS(Resupply_PlatoonMedical): CLASS(Resupply_SquadMedical)
@@ -225,7 +225,7 @@ class CfgVehicles
             MAG_XX(3AS_SmokePurple,5);
             MAG_XX(SquadShieldMagazine,6);
             MAG_XX(CLASS(Grenade_Bacta),10);
-            MAG_XX(CLASS(Mag_1rnd_GR20),4);
+            MAG_XX(CLASS(Mag_1Rnd_GR20),4);
         };
     };
 
