@@ -462,7 +462,7 @@ class XtdGearModels {
 
         class CLASS(Vests_Infantry): CLASS(Rank_Base) {
             label = "Infantry Vests";
-            options[] = {"type"};
+            options[] = {"type", "style"};
 
             class type: rank {
                 label = "Type";
@@ -472,7 +472,6 @@ class XtdGearModels {
                     "Assault",
                     "Grenadier",
                     "Heavy",
-                    "Heavy_v2",
                     "Specialist",
                     "Recon",
                     "Recon_Survival",
@@ -486,7 +485,6 @@ class XtdGearModels {
                 class Assault { label = "Assault"; };
                 class Grenadier { label = "Grenadier"; };
                 class Heavy { label = "Heavy"; };
-                class Heavy_v2 { label = "Heavy (v2)"; };
                 class Specialist { label = "Specialist"; };
                 class Recon { label = "Recon"; };
                 class Recon_Survival { label = "Survival"; };
@@ -494,10 +492,15 @@ class XtdGearModels {
                 class Kama { label = "Kama"; };
                 class Tactical_Commander { label = "Tactical Commander"; };
             };
+
+            class style: style {
+                values[] = {"Standard", "V2"};
+            };
         };
 
         class CLASS(Vests_Infantry_Ranked): CLASS(Rank_Base) {
             label = "Infantry Ranked Vests";
+            options[] = {"rank", "style"};
 
             class rank: rank {
                 values[] = {
@@ -508,10 +511,8 @@ class XtdGearModels {
                     "CSFC",
                     "CSM",
                     "Officer",
-                    "Officer_v2",
                     "WO",
-                    "CMD",
-                    "CMD_v2"
+                    "CMD"
                 };
 
                 class CLC { label = "CLC"; };
@@ -521,10 +522,12 @@ class XtdGearModels {
                 class CSFC { label = "CSFC"; };
                 class CSM { label = "CSM"; };
                 class Officer { label = "Officer"; };
-                class Officer_v2 { label = "Officer (v2)"; };
                 class WO { label = "WO"; };
                 class CMD { label = "CMD"; };
-                class CMD_v2 { label = "CMD (v2)"; };
+            };
+
+            class style: style {
+                values[] = {"Standard", "V2"};
             };
         };
 
