@@ -31,20 +31,19 @@ params [
     ["_fullHealOnCompletion", false, [false]],
     ["_maxPatients", 0, [0]]
 ];
-private ["_function", "_condition", "_exitCode", "_healHandler", "_fullHealed"];
+private ["_function", "_condition", "_exitCode", "_areaHandler"];
 TRACE_4("fnc_areaSlowHeal",_object,_radius,_rate,_maxPatients);
 
-if (
-    isNull _object or {
-        _radius <= 0 or
-        _rate < 0 or
-        _maxPatients isEqualTo 0
-    }
+if (isNull _object or
+    {_radius <= 0} or
+    {_rate < 0} or
+    {_maxPatients isEqualTo 0}
 ) exitWith {};
 
 _function = {
-    params ["_handle", "_object", "_radius", "_rate", "_maxPatients"];
+    params ["_handle", "_object", "_radius", "_rate", "_bloodRestore", "_painReduce", "_fullHealOnCompletion", "_maxPatients"];
     private ["_positionAGL", "_currentPatients", "_nearbyUnits", "_unitsToHeal"];
+    TRACE_7(FORMAT_2("Area Healer %1 (%2) |",_handle,typeOf _object),_object,_radius,_rate,_bloodRestore,_painReduce,_fullHealOnCompletion,_maxPatients);
 
     if (isGamePaused) then {continue};
 
@@ -93,12 +92,12 @@ _function = {
 };
 
 _condition = {
-    params ["_handle", "_object", "_radius", "_rate", "_maxPatients"];
-    !isNull _object;
+    params ["", "_object"];
+    alive _object;
 };
 
 _exitCode = {
-    params ["_handle", "_object", "_radius", "_rate", "_maxPatients"];
+    params ["_handle", "_object", "_radius", "_rate", "_bloodRestore", "_painReduce", "_fullHealOnCompletion", "_maxPatients"];
     INFO_3("Area Healer %1 (%2) | (Exit) Removing handler from %3",_handle,typeOf _object,_object);
 };
 
@@ -107,7 +106,7 @@ _areaHandler = [
     _condition,
     _exitCode,
     _rate,
-    [_object, _radius, _rate, _maxPatients]
+    [_object, _radius, _rate, _bloodRestore, _painReduce, _fullHealOnCompletion, _maxPatients]
 ] call EFUNC(core,tempPFH);
 
 _object setVariable [QGVAR(areaHealHandler), _areaHandler];

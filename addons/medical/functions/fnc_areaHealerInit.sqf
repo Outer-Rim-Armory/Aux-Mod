@@ -37,5 +37,5 @@ _rate = [
 
 _maxPatients = getNumber (configOf _object >> QGVAR(areaHealMaxPatients));
 
-[_object, _radius, _rate, _maxPatients] call FUNC(areaSlowHeal);
+[_object, _radius, _rate, 0.25, 0.1, true, _maxPatients] call FUNC(areaSlowHeal);
 nil;
