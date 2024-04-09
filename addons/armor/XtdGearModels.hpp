@@ -660,7 +660,7 @@ class XtdGearModels {
                 };
 
                 class Basic { label = "Basic"; };
-                class SL { label = "Squad Leader"; };
+                class SL { label = "SL"; };
                 class EOD { label = "EOD"; };
                 class Sniper { label = "Sniper"; };
                 class Tech { label = "Tech"; };
