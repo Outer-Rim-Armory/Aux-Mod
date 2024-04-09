@@ -710,5 +710,22 @@ class XtdGearModels {
                 values[] = {"Standard", "KeeliCompany"};
             };
         };
+
+        class CLASS(Backpacks_Commando): CLASS(Backpacks) {
+            label = "Commando Backpacks";
+            options[] = {"type"};
+
+            class type: type {
+                values[] = {
+                    "Basic",
+                    "EOD",
+                    "Radio",
+                    "Tech"
+                };
+
+                class EOD { label = "EOD"; };
+                class Tech { label = "Tech"; };
+            };
+        };
     };
 };
