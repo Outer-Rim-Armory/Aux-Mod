@@ -548,24 +548,26 @@ class XtdGearModels {
             };
         };
 
-        class CLASS(Vests_Airborne): CLASS(Rank_Base)
-        {
+        class CLASS(Vests_Airborne): CLASS(Rank_Base) {
             label = "Airborne Vests";
+            options[] = {"rank", "style"};
 
             class rank: rank {
                 values[] = {
                     "CT",
-                    "CT_Light",
                     "CS",
-                    "CS_Light",
-                    "Officer"
+                    "WO"
                 };
 
                 class CT { label = "Trooper"; };
-                class CT_Light { label = "Trooper (Light)"; };
                 class CS { label = "NCO"; };
-                class CS_Light { label = "NCO (Light)"; };
-                class Officer { label = "Officer"; };
+                class WO { label = "Officer"; };
+            };
+
+            class style: style {
+                values[] = {"Standard", "Light"};
+
+                class Light { label = "Light"; };
             };
         };
 
@@ -574,12 +576,12 @@ class XtdGearModels {
 
             class rank: rank {
                 values[] = {
-                    "Trooper",
-                    "NCO"
+                    "CT",
+                    "CS"
                 };
 
-                class Trooper { label = "Trooper"; };
-                class NCO { label = "NCO"; };
+                class CT { label = "Trooper"; };
+                class CS { label = "NCO"; };
             };
         };
 
