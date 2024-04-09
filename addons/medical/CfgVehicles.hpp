@@ -26,6 +26,8 @@ class CfgVehicles {
         EGVAR(objects,interactionPosition)[] = {0, 0, 1.3};
 
         class EventHandlers: DefaultEventHandlers {};
+
+        class DestructionEffects {};
     };
 
     class ACE_MedicalLitterBase;
