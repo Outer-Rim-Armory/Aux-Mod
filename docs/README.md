@@ -16,7 +16,7 @@
 
 </h3>
 
-[![Contributors](https://img.shields.io/github/contributors/DartRuffian/KeeliCompanyAux?logo=github&label=Contributors&labelColor=444D56)](https://github.com/DartRuffian/KeeliCompanyAux/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/Outer-Rim-Armory/Aux-Mod?logo=github&label=Contributors&labelColor=444D56)](https://github.com/Outer-Rim-Armory/Aux-Mod/graphs/contributors)
 [![Discord](https://img.shields.io/discord/397600745173549057?logo=discord&label=Join%20the%20Unit&&labelColor=24292E&color=5865F2)](https://discord.gg/ZKPt3GjxQC)
 [![Last Updated](https://img.shields.io/steam/update-date/2791896289?logo=steam&label=Last%20Updated&labelColor=2a475e&color=66c0f4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2791896289)
 

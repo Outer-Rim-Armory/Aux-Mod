@@ -3,7 +3,6 @@ name: Bug report
 about: Create a report to help us improve
 title: ''
 labels: issue/bug-report
-assignees: DartRuffian
 
 ---
 
@@ -16,7 +15,7 @@ I ACKNOWLEDGE THE FOLLOWING BEFORE PROCEEDING:
 3. If I write an issue that has duplicates, the team may close my issue without further explanation or engagement (and without necessarily spending time to find the exact duplicate ID number).
 4. If I leave the title incomplete when filing the issue, the team may close my issue without further explanation or engagement.
 5. If I file something completely blank in the body, the team may close my issue without further explanation or engagement.
-6. If I file an issue without collecting logs (RPT file, etc...), the team may close my issue without further explanation or engagement. 
+6. If I file an issue without collecting logs (RPT file, etc...), the team may close my issue without further explanation or engagement.
 -->
 
 ## Environment
