@@ -7,7 +7,7 @@
 
 #include "\ORA\BNA_KC\addons\core\script_version.hpp"
 
-#define REQUIRED_VERSION 2.14
+#define REQUIRED_VERSION 2.16
 
 #define VERSION     MAJOR.MINOR
 #define VERSION_STR MAJOR.MINOR.PATCH.BUILD
