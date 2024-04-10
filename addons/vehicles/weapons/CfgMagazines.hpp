@@ -1,15 +1,12 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_VehicleBase): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_VehicleBase): CLASS(Mag_Base) {
         type = TYPE_DEFAULT;
         weaponPoolAvailable = FALSE;
         mass = 8;
     };
 
-    class CLASS(Mag_20Rnd_Cannon_Blitz_HEAT): CLASS(Mag_VehicleBase)
-    {
+    class CLASS(Mag_20Rnd_Cannon_Blitz_HEAT): CLASS(Mag_VehicleBase) {
         SCOPE_PUBLIC;
         displayName = "HEAT";
         displayNameShort = "HEAT";
@@ -24,8 +21,7 @@ class CfgMagazines
         muzzleImpulseFactor[] = {0.5, 3};
     };
 
-    class CLASS(Mag_20Rnd_Cannon_Blitz_HE): CLASS(Mag_20Rnd_Cannon_Blitz_HEAT)
-    {
+    class CLASS(Mag_20Rnd_Cannon_Blitz_HE): CLASS(Mag_20Rnd_Cannon_Blitz_HEAT) {
         displayName = "HE";
         displayNameShort = "HE";
         ammo = QCLASS(Bullet_PlasmaBlitz_HE);
@@ -34,16 +30,14 @@ class CfgMagazines
         muzzleImpulseFactor[] = {1, 6};
     };
 
-    class CLASS(Mag_20Rnd_Cannon_Blitz_AT): CLASS(Mag_20Rnd_Cannon_Blitz_HEAT)
-    {
+    class CLASS(Mag_20Rnd_Cannon_Blitz_AT): CLASS(Mag_20Rnd_Cannon_Blitz_HEAT) {
         displayName = "AT";
         displayNameShort = "AT";
         ammo = QCLASS(Bullet_PlasmaBlitz_AT);
         initSpeed = 1750;
     };
 
-    class CLASS(Mag_100Rnd_Coax): CLASS(Mag_VehicleBase)
-    {
+    class CLASS(Mag_100Rnd_Coax): CLASS(Mag_VehicleBase) {
         SCOPE_PUBLIC;
         ammo = QCLASS(Bullet_PlasmaCoax_Blue);
         count = 100;
@@ -55,17 +49,14 @@ class CfgMagazines
         weight = 126;
         muzzleImpulseFactor[] = {0.05, 0.05};
     };
-    class CLASS(Mag_500Rnd_Coax): CLASS(Mag_100Rnd_Coax)
-    {
+    class CLASS(Mag_500Rnd_Coax): CLASS(Mag_100Rnd_Coax) {
         count = 500;
     };
-    class CLASS(Mag_1000Rnd_Coax): CLASS(Mag_100Rnd_Coax)
-    {
+    class CLASS(Mag_1000Rnd_Coax): CLASS(Mag_100Rnd_Coax) {
         count = 1000;
     };
 
-    class CLASS(Mag_4000Rnd_Gatling_Galaxy): CLASS(Mag_VehicleBase)
-    {
+    class CLASS(Mag_4000Rnd_Gatling_Galaxy): CLASS(Mag_VehicleBase) {
         SCOPE_PUBLIC;
         displayNameShort = "High Energy";
         ammo = QCLASS(Bullet_PlasmaGatling_Galaxy_Blue);
@@ -78,8 +69,7 @@ class CfgMagazines
         weight = 126;
     };
 
-    class CLASS(Mag_100Rnd_Cannon_Galaxy): CLASS(Mag_VehicleBase)
-    {
+    class CLASS(Mag_100Rnd_Cannon_Galaxy): CLASS(Mag_VehicleBase) {
         SCOPE_PUBLIC;
         displayNameShort = "High Energy";
         ammo = QCLASS(Bullet_PlasmaCannon_Galaxy_Green);
@@ -92,8 +82,7 @@ class CfgMagazines
         muzzleImpulseFactor[] = {0.5, 3};
     };
 
-    class CLASS(Mag_240Rnd_Autocannon_Galaxy_GPR): CLASS(Mag_VehicleBase)
-    {
+    class CLASS(Mag_240Rnd_Autocannon_Galaxy_GPR): CLASS(Mag_VehicleBase) {
         SCOPE_PUBLIC;
         displayName = "GPR-T";
         displayNameShort = "GPR-T";
@@ -108,8 +97,7 @@ class CfgMagazines
         muzzleImpulseFactor[] = {1, 6};
     };
 
-    class CLASS(Mag_160Rnd_Autocannon_Galaxy_APFSDS): CLASS(Mag_VehicleBase)
-    {
+    class CLASS(Mag_160Rnd_Autocannon_Galaxy_APFSDS): CLASS(Mag_VehicleBase) {
         SCOPE_PUBLIC;
         displayName = "APFSDS-T";
         displayNameShort = "APFSDS-T";
@@ -124,8 +112,7 @@ class CfgMagazines
         muzzleImpulseFactor[] = {0.5, 2};
     };
 
-    class CLASS(Mag_9999Rnd_ATRT): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_9999Rnd_ATRT): CLASS(Mag_Base) {
         SCOPE_HIDDEN;
         displayName = "[KC] AT-RT Turret Battery Pack";
         displayNameShort = "Standard Energy";
@@ -139,8 +126,7 @@ class CfgMagazines
         mass = 10;
     };
 
-    class CLASS(Mag_6Rnd_Mortar_82mm_HE): CLASS(Mag_VehicleBase)
-    {
+    class CLASS(Mag_6Rnd_Mortar_82mm_HE): CLASS(Mag_VehicleBase) {
         SCOPE_HIDDEN;
         displayName = "[KC] 6Rnd Mortar HE Shells";
         displayNameShort = "6Rnd HE";
@@ -157,8 +143,7 @@ class CfgMagazines
     };
     CSW_MAG_CONVERSION(CLASS(Mag_6Rnd_Mortar_82mm_HE));
 
-    class CLASS(Mag_6Rnd_Mortar_SmokeWhite): CLASS(Mag_6Rnd_Mortar_82mm_HE)
-    {
+    class CLASS(Mag_6Rnd_Mortar_SmokeWhite): CLASS(Mag_6Rnd_Mortar_82mm_HE) {
         displayName = "[KC] 6Rnd Mortar White Smoke Shells";
         displayNameShort = "6Rnd W Smoke";
         ammo = QCLASS(Shell_Mortar_SmokeWhite);
@@ -168,16 +153,14 @@ class CfgMagazines
     };
     CSW_MAG_CONVERSION(CLASS(Mag_6Rnd_Mortar_SmokeWhite));
 
-    class CLASS(Mag_6Rnd_Mortar_SmokeBlue): CLASS(Mag_6Rnd_Mortar_SmokeWhite)
-    {
+    class CLASS(Mag_6Rnd_Mortar_SmokeBlue): CLASS(Mag_6Rnd_Mortar_SmokeWhite) {
         displayName = "[KC] 6Rnd Mortar Blue Smoke Shells";
         displayNameShort = "6Rnd B Smoke";
         ammo = QCLASS(Shell_Mortar_SmokeBlue);
     };
     CSW_MAG_CONVERSION(CLASS(Mag_6Rnd_Mortar_SmokeBlue));
 
-    class CLASS(Mag_6Rnd_Mortar_SmokeRed): CLASS(Mag_6Rnd_Mortar_SmokeWhite)
-    {
+    class CLASS(Mag_6Rnd_Mortar_SmokeRed): CLASS(Mag_6Rnd_Mortar_SmokeWhite) {
         displayName = "[KC] 6Rnd Mortar Red Smoke Shells";
         displayNameShort = "6Rnd R Smoke";
         ammo = QCLASS(Shell_Mortar_SmokeRed);
