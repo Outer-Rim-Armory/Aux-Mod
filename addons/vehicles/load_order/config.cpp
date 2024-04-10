@@ -1,16 +1,15 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
+            QGVAR(sounds),
+            QGVAR(weapons),
             // Air
             QGVAR(arc170),
             QGVAR(galaxy),
@@ -26,20 +25,22 @@ class CfgPatches
             QGVAR(atap),
             QGVAR(atrt),
             QGVAR(atte),
-            QGVAR(reek),
+            QGVAR(barc),
             QGVAR(blitz),
             QGVAR(conga),
             QGVAR(gammoth),
             QGVAR(glavenus),
             QGVAR(hornet),
+            QGVAR(hydra),
             QGVAR(juggernaut),
             QGVAR(khezu),
-            QGVAR(hydra),
             QGVAR(plesioth),
+            QGVAR(reek),
             QGVAR(rx200),
             QGVAR(scout_tank),
             QGVAR(tx130),
             // Static
+            QGVAR(command_post),
             QGVAR(mortars)
         };
         units[] = {};
