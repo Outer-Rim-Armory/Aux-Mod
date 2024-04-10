@@ -1,7 +1,3 @@
-<style type="text/css">
-    ol { list-style-type: upper-alpha; }
-</style>
-
 # Arma Public License No Derivatives (APL-ND)
 [![APL-ND License](https://www.bohemia.net/assets/img/licenses/APL-ND.png)](https://www.bohemia.net/community/licenses/arma-public-license-nd)
 
