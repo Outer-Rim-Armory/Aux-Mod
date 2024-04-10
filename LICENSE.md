@@ -1,7 +1,9 @@
 # Arma Public License No Derivatives (APL-ND)
 [![APL-ND License](https://www.bohemia.net/assets/img/licenses/APL-ND.png)](https://www.bohemia.net/community/licenses/arma-public-license-nd)
 
-If the content of this license is ever outdated, the content can be found on [Bohemia's website](https://www.bohemia.net/community/licenses/arma-public-license-nd).
+If the content of this license is ever outdated, the official license text can be found on [Bohemia's website](https://www.bohemia.net/community/licenses/arma-public-license-nd).
+
+If you are interested in reuploading and/or modifying assets from the Keeli Company Aux Mod, please reach out to `dartruffian` on Discord.
 <br>
 <br>
 
