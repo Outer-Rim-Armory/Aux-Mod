@@ -5,7 +5,8 @@
 <div id="user-content-toc">
   <ul>
     <summary><h1 style="display: inline-block;">Keeli Company Aux Mod</h1><br>
-    Version 0.0.0</summary>
+    Version 0.0.0<br>
+    <img style="padding-top:10px" src="https://www.bohemia.net/assets/img/licenses/APL-ND.png">*</summary>
   </ul>
 </div>
 
@@ -25,10 +26,9 @@
 <br>
 <br>
 
-**This page is a work-in-progess**, excuse the placeholder text!
+***All custom assets, scripts, etc. are licensed under APL-ND**. While containing original assets, this mod also includes re-uploads of other content with permission from their original authors.
 
-Unit description
-<br>
+If an addon contains re-uploaded or modified content, it will be noted in a `LICENSE` file located in that addon.
 <br>
 
 ---
