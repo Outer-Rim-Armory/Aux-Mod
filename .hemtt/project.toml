@@ -8,13 +8,7 @@ path = "addons/core/script_version.hpp"
 git_hash = 0
 
 [files]
-include = [
-    "mod.cpp",
-    "meta.cpp",
-    "logo_kc_ca.paa",
-    # "LICENSE",
-    "README.md",
-]
+include = ["mod.cpp", "meta.cpp", "logo_kc_ca.paa", "LICENSE.md", "README.md"]
 exclude = ["*.spp", "*.spp.painter_lock", "*.psd"]
 
 [properties]
