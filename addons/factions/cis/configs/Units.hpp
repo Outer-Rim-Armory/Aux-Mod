@@ -314,6 +314,16 @@ class CLASS(CIS_Unit_Droid_B1_Pilot): CLASS(CIS_Unit_Droid_B1) {
     backpack = "";
 };
 
+class CLASS(CIS_Unit_Droid_B1_Engineer): CLASS(CIS_Unit_Droid_B1) {
+    displayName = "B1 Engineer Droid";
+    uniformClass = QCLASS(CIS_Uniform_Droid_B1_Engineer);
+    icon = "iconManEngineer";
+
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Engineer);
+    hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\uniform\b1\Engineer_camo1_co.paa)};
+    backpack = QCLASS(CIS_Backpack_Droid_B1_Engineer);
+};
+
 class CLASS(CIS_Unit_Droid_B1_Rocket): CLASS(CIS_Unit_Droid_B1) {
     displayName = "B1 Rocket Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Rocket);
