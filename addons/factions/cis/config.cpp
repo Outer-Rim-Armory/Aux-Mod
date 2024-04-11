@@ -71,7 +71,9 @@ class CfgPatches {
             QCLASS(CIS_Backpack_Droid_B1_Antenna_Training),
             QCLASS(CIS_Jetpack_Droid_B1),
             QCLASS(CIS_Jetpack_Droid_B1_Rocket),
-            QCLASS(AAT_CIS)
+            QCLASS(CIS_AAT),
+            QCLASS(CIS_AAT_Heavy),
+            QCLASS(CIS_AAT_King)
         };
         weapons[] = {
             QCLASS(CIS_Uniform_Base),
