@@ -321,6 +321,26 @@ class CLASS(CIS_Unit_Droid_B1_Engineer): CLASS(CIS_Unit_Droid_B1) {
 
     engineer = TRUE;
 
+    weapons[] = {
+        QCLASS(SBB3),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(SBB3),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_25rnd_SBB3)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_25rnd_SBB3)),
+        "ls_mag_classC_thermalDet"
+    };
+
     items[] = {"ToolKit"};
     respawnItems[] = {"ToolKit"};
 
