@@ -1,5 +1,4 @@
-class CfgSFX
-{
+class CfgSFX {
     /* Macro Explanation
     * First value is the class name without prefix
       - This gets other text added to it, Restaurant becomes BNA_KC_Sound_Restaurant_SFX
@@ -17,6 +16,8 @@ class CfgSFX
     SOUND_FX(CarnageRoar2,"[KC] Carnage Roar 2",300);
     SOUND_FX(CarnageRoar3,"[KC] Carnage Roar 3",300);
     SOUND_FX(CarnageRoar4,"[KC] Carnage Roar 4",300);
+    SOUND_FX(COD_HammerDownCounterSign,"[KC] Hammer Down Countersign",300);
+    SOUND_FX(COD_HammerDownProtocol,"[KC] Hammer Down Protocol",300);
     SOUND_FX(LetThereBeCarnage,"[KC] Let There Be Carnage",300);
     SOUND_FX(EPF_Radio,"[KC] Holonet News",100);
     SOUND_FX(EPF_Radio2,"[KC] Holonet News 2",100);

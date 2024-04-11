@@ -1,5 +1,6 @@
 /*
- * Authors: Leopard20 and DartRuffian
+ * Authors: Leopard20
+ * Edited by DartRuffian
  * Determines which sound effect should play based on user settings, then plays that sound effect.
  *
  * Arguments:

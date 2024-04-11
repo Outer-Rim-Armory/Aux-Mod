@@ -1,6 +1,6 @@
 # Music
 
-#### | [Music](https://github.com/DartRuffian/KeeliCompanyAux/tree/docs/music-readme/addons/music#music-1) | [Sound Effects](https://github.com/DartRuffian/KeeliCompanyAux/tree/docs/music-readme/addons/music#ambient-sounds) |
+#### | [Music](https://github.com/Outer-Rim-Armory/Aux-Mod/tree/docs/music-readme/addons/music#music-1) | [Sound Effects](https://github.com/Outer-Rim-Armory/Aux-Mod/tree/docs/music-readme/addons/music#ambient-sounds) |
 
 
 This is a general description on how to add music, sounds, and sound effects to Arma in the Keeli Company Auxillary mod.

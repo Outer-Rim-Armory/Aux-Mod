@@ -1,5 +1,5 @@
 name = "Keeli Company Auxillary Mod"
-author = "DartRuffian"
+author = "Keeli Company Aux Team"
 prefix = "BNA_KC"
 mainprefix = "ORA"
 
@@ -11,15 +11,16 @@ git_hash = 0
 include = [
     "mod.cpp",
     "meta.cpp",
+    "logo_kc.png",
     "logo_kc_ca.paa",
-    # "LICENSE",
+    "LICENSE.md",
     "README.md",
 ]
 exclude = ["*.spp", "*.spp.painter_lock", "*.psd"]
 
 [properties]
-author = "DartRuffian"
-url = "https://github.com/DartRuffian/KeeliCompanyAux"
+author = "Keeli Company Aux Team"
+url = "https://github.com/Outer-Rim-Armory/Aux-Mod"
 
 [hemtt.launch.default]
 workshop = [

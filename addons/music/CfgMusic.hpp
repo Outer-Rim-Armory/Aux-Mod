@@ -1,5 +1,4 @@
-class CfgMusic
-{
+class CfgMusic {
     /* Macro Explanation
     * First value is the class name without prefix
         - This gets other text added to it, SW_AhsokaDelightful becomes BNA_KC_Music_SW_AhsokaDelightful
@@ -34,6 +33,17 @@ class CfgMusic
 
     // Call of Duty
     MUSIC(COD_115,"[COD] 115",228,VideoGames);
+    MUSIC(COD_Burning,"[COD] Burning",147,VideoGames);
+    MUSIC(COD_Chase,"[COD] Chase",126,VideoGames);
+    MUSIC(COD_Contingency,"[COD] Contingency",135,VideoGames);
+    MUSIC(COD_Evac,"[COD] Evac",113,VideoGames);
+    MUSIC(COD_GoingLoud,"[COD] Going Loud",190,VideoGames);
+    MUSIC(COD_GuerillaTactics,"[COD] Guerilla Tactics",178,VideoGames);
+    MUSIC(COD_Infiltration,"[COD] Infiltration",267,VideoGames);
+    MUSIC(COD_MoneyRun,"[COD] Money Run",136,VideoGames);
+    MUSIC(COD_Onwards,"[COD] Onwards",148,VideoGames);
+    MUSIC(COD_RetreatAndReveille,"[COD] Retreat And Reveille",177,VideoGames);
+    MUSIC(COD_Whitehouse,"[COD] Whitehouse",327,VideoGames);
 
     // Dragonball
     MUSIC(DB_BrolysTheme,"[DB] Broly's Theme",473,Anime);

@@ -1,0 +1,1 @@
+The B1 Engineer uniform and backpack textures were originally provided by Poly, which were then later modified. Specifically `factions\data\textures\uniform\b1\Engineer_camo1_co.paa` and `factions\data\textures\backpacks\b1\B1_Engineer_co.paa`.

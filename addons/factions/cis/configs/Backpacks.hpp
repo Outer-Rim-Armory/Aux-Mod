@@ -44,6 +44,15 @@ class CLASS(CIS_Backpack_Droid_B1_predef_AA): CLASS(CIS_Backpack_Droid_B1) {
     };
 };
 
+class CLASS(CIS_Backpack_Droid_B1_Engineer): CLASS(CIS_Backpack_Droid_B1) {
+    displayName = "[CIS] Battle Droid Backpack (Engineer)";
+    hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\B1_Engineer_co.paa)};
+
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Engineer";
+    };
+};
+
 class CLASS(CIS_Backpack_Droid_B1_Saboteur): CLASS(CIS_Backpack_Droid_B1) {
     displayName = "[CIS] Battle Droid Backpack (Saboteur)";
     hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\B1_Saboteur_co.paa)};

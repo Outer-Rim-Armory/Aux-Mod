@@ -29,6 +29,7 @@ class CfgPatches {
             QCLASS(CIS_Unit_Droid_B1_Commander),
             QCLASS(CIS_Unit_Droid_B1_Crew),
             QCLASS(CIS_Unit_Droid_B1_Pilot),
+            QCLASS(CIS_Unit_Droid_B1_Engineer),
             QCLASS(CIS_Unit_Droid_B1_Rocket),
             QCLASS(CIS_Unit_Droid_B1_Saboteur),
             QCLASS(CIS_Unit_Droid_B1_Prototype),
@@ -58,6 +59,7 @@ class CfgPatches {
             QCLASS(CIS_Backpack_Droid_B1),
             QCLASS(CIS_Backpack_Droid_B1_predef_AT),
             QCLASS(CIS_Backpack_Droid_B1_predef_AA),
+            QCLASS(CIS_Backpack_Droid_B1_Engineer),
             QCLASS(CIS_Backpack_Droid_B1_Saboteur),
             QCLASS(CIS_Backpack_Droid_B1_Prototype),
             QCLASS(CIS_Backpack_Droid_B1_Geonosis),
@@ -71,7 +73,9 @@ class CfgPatches {
             QCLASS(CIS_Backpack_Droid_B1_Antenna_Training),
             QCLASS(CIS_Jetpack_Droid_B1),
             QCLASS(CIS_Jetpack_Droid_B1_Rocket),
-            QCLASS(AAT_CIS)
+            QCLASS(CIS_AAT),
+            QCLASS(CIS_AAT_Heavy),
+            QCLASS(CIS_AAT_King)
         };
         weapons[] = {
             QCLASS(CIS_Uniform_Base),
@@ -82,6 +86,7 @@ class CfgPatches {
             QCLASS(CIS_Uniform_Droid_B1_Commander),
             QCLASS(CIS_Uniform_Droid_B1_Crew),
             QCLASS(CIS_Uniform_Droid_B1_Pilot),
+            QCLASS(CIS_Uniform_Droid_B1_Engineer),
             QCLASS(CIS_Uniform_Droid_B1_Rocket),
             QCLASS(CIS_Uniform_Droid_B1_Prototype),
             QCLASS(CIS_Uniform_Droid_B1_Geonosis),

@@ -1,12 +1,8 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class 3AS_ATRT_Base;
-    class 3AS_ATRT: 3AS_ATRT_Base
-    {
-        class EventHandlers;
+    class 3AS_ATRT: 3AS_ATRT_Base {
     };
-    class CLASS(ATRT): 3AS_ATRT
-    {
+    class CLASS(ATRT): 3AS_ATRT {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -28,10 +24,8 @@ class CfgVehicles
         headgearList[] = {""};
         identityTypes[] = {"LanguageENG_F", "Head_NATO", "Head_Euro"};
 
-        class VehicleTransport
-        {
-            class Cargo
-            {
+        class VehicleTransport {
+            class Cargo {
                 GVAR(vivOverride) = TRUE;
             };
         };

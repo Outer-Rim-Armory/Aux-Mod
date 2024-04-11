@@ -1,15 +1,12 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             QCLASS(weapons),
             "3AS_Main",
@@ -19,8 +16,7 @@ class CfgPatches
             "3AS_Mortar"
         };
         units[] = {};
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Autocannon_Reek),
             QCLASS(Autocannon_Galaxy),
             QCLASS(Cannon_ARC),

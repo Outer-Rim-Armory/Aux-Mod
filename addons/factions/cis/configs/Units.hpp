@@ -314,6 +314,41 @@ class CLASS(CIS_Unit_Droid_B1_Pilot): CLASS(CIS_Unit_Droid_B1) {
     backpack = "";
 };
 
+class CLASS(CIS_Unit_Droid_B1_Engineer): CLASS(CIS_Unit_Droid_B1) {
+    displayName = "B1 Engineer Droid";
+    uniformClass = QCLASS(CIS_Uniform_Droid_B1_Engineer);
+    icon = "iconManEngineer";
+
+    engineer = TRUE;
+
+    weapons[] = {
+        QCLASS(SBB3),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(SBB3),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_25rnd_SBB3)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_25rnd_SBB3)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    items[] = {"ToolKit"};
+    respawnItems[] = {"ToolKit"};
+
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Engineer);
+    hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\uniforms\B1_Engineer_camo1_co.paa)};
+    backpack = QCLASS(CIS_Backpack_Droid_B1_Engineer);
+};
+
 class CLASS(CIS_Unit_Droid_B1_Rocket): CLASS(CIS_Unit_Droid_B1) {
     displayName = "B1 Rocket Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Rocket);
@@ -467,7 +502,7 @@ class CLASS(CIS_Unit_Droid_B1_CQC_Training): CLASS(CIS_Unit_Droid_B1_CQC) {
     backpack = QCLASS(CIS_Backpack_Droid_B1_Training);
 };
 
-class CLASS(CIS_Unit_Droid_B1_Commander_Training): CLASS(CIS_Unit_Droid_B1) {
+class CLASS(CIS_Unit_Droid_B1_Commander_Training): CLASS(CIS_Unit_Droid_B1_Commander) {
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
     editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander_Training);
@@ -490,7 +525,7 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     hiddenSelectionsTextures[] = {
         "\lsd_armor_redfor\uniform\cis\b2\data\arms_co.paa",
         "\lsd_armor_redfor\uniform\cis\b2\data\legs_co.paa",
-        QPATHTOF(cis\data\textures\uniform\b2\torso_co.paa)
+        QPATHTOF(cis\data\textures\uniforms\B2_torso_co.paa)
     };
 
     weapons[] = {
@@ -515,9 +550,9 @@ class CLASS(CIS_Unit_Droid_B2_Jetpack): CLASS(CIS_Unit_Droid_B2) {
     displayName = "B2-RP Super Battle Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B2_Jetpack);
     hiddenSelectionsTextures[] = {
-        QPATHTOF(cis\data\textures\uniform\b2\Jetpack_arms_co.paa),
-        QPATHTOF(cis\data\textures\uniform\b2\Jetpack_legs_co.paa),
-        QPATHTOF(cis\data\textures\uniform\b2\Jetpack_torso_co.paa)
+        QPATHTOF(cis\data\textures\uniforms\B2_Jetpack_arms_co.paa),
+        QPATHTOF(cis\data\textures\uniforms\B2_Jetpack_legs_co.paa),
+        QPATHTOF(cis\data\textures\uniforms\B2_Jetpack_torso_co.paa)
     };
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B2_Jetpack);
     backpack = QCLASS(CIS_Jetpack_Droid_B1);

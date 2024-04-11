@@ -44,6 +44,7 @@ class CfgWeapons
     B1_UNIFORM(Commander);
     B1_UNIFORM(Crew);
     B1_UNIFORM(Pilot);
+    B1_UNIFORM(Engineer);
     B1_UNIFORM(Rocket);
     B1_UNIFORM(Prototype);
 
