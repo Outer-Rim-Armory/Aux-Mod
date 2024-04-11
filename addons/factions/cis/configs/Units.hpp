@@ -502,7 +502,7 @@ class CLASS(CIS_Unit_Droid_B1_CQC_Training): CLASS(CIS_Unit_Droid_B1_CQC) {
     backpack = QCLASS(CIS_Backpack_Droid_B1_Training);
 };
 
-class CLASS(CIS_Unit_Droid_B1_Commander_Training): CLASS(CIS_Unit_Droid_B1) {
+class CLASS(CIS_Unit_Droid_B1_Commander_Training): CLASS(CIS_Unit_Droid_B1_Commander) {
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Training);
     editorSubcategory = QEDSUBCAT(CIS_B1s_Training);
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander_Training);
