@@ -320,7 +320,7 @@ class CLASS(CIS_Unit_Droid_B1_Engineer): CLASS(CIS_Unit_Droid_B1) {
     icon = "iconManEngineer";
 
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Engineer);
-    hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\uniform\b1\Engineer_camo1_co.paa)};
+    hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\uniforms\B1_Engineer_camo1_co.paa)};
     backpack = QCLASS(CIS_Backpack_Droid_B1_Engineer);
 };
 
@@ -500,7 +500,7 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     hiddenSelectionsTextures[] = {
         "\lsd_armor_redfor\uniform\cis\b2\data\arms_co.paa",
         "\lsd_armor_redfor\uniform\cis\b2\data\legs_co.paa",
-        QPATHTOF(cis\data\textures\uniform\b2\torso_co.paa)
+        QPATHTOF(cis\data\textures\uniforms\B2_torso_co.paa)
     };
 
     weapons[] = {
@@ -525,9 +525,9 @@ class CLASS(CIS_Unit_Droid_B2_Jetpack): CLASS(CIS_Unit_Droid_B2) {
     displayName = "B2-RP Super Battle Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B2_Jetpack);
     hiddenSelectionsTextures[] = {
-        QPATHTOF(cis\data\textures\uniform\b2\Jetpack_arms_co.paa),
-        QPATHTOF(cis\data\textures\uniform\b2\Jetpack_legs_co.paa),
-        QPATHTOF(cis\data\textures\uniform\b2\Jetpack_torso_co.paa)
+        QPATHTOF(cis\data\textures\uniforms\B2_Jetpack_arms_co.paa),
+        QPATHTOF(cis\data\textures\uniforms\B2_Jetpack_legs_co.paa),
+        QPATHTOF(cis\data\textures\uniforms\B2_Jetpack_torso_co.paa)
     };
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B2_Jetpack);
     backpack = QCLASS(CIS_Jetpack_Droid_B1);
