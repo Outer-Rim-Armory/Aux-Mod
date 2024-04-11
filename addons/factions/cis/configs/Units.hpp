@@ -319,6 +319,11 @@ class CLASS(CIS_Unit_Droid_B1_Engineer): CLASS(CIS_Unit_Droid_B1) {
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Engineer);
     icon = "iconManEngineer";
 
+    engineer = TRUE;
+
+    items[] = {"ToolKit"};
+    respawnItems[] = {"ToolKit"};
+
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Engineer);
     hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\uniforms\B1_Engineer_camo1_co.paa)};
     backpack = QCLASS(CIS_Backpack_Droid_B1_Engineer);
