@@ -10,13 +10,11 @@
     condition = "true"; \
     statement = ""; \
     modifierFunction = QUOTE(_this call FUNC(modifyInteraction)); \
-
     class Activate { \
         displayName = "Activate Shield"; \
         condition = QUOTE(ace_player call FUNC(canActivate)); \
         statement = QUOTE(_this call FUNC(activate)); \
     }; \
-
     class Deactivate { \
         displayName = "Deactivate Shield"; \
         condition = QUOTE(ace_player call FUNC(canDeactivate)); \

@@ -37,8 +37,12 @@ class CfgWeapons {
         drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};
         reloadMagazineSound[] = {"\3AS\3AS_Main\Sounds\Old\Blaster_reload.wss", 1, 1, 30};
 
-        GVAR(attachmentSwapEnabled) = TRUE; // Enables attachment swapping
-        GVAR(attachments)[] =               // Array of magazine properties to check and the attachment to use { {QGVAR(isBlasterMag), "SWLW_attachment_DC17M_blaster"}, {QGVAR(isATMag), "SWLW_attachment_DC17M_at"}, {QGVAR(isSniperMag), "SWLW_attachment_DC17M_sniper"}
+        // Array of magazine properties to check and the attachment to use
+        GVAR(attachmentSwapEnabled) = TRUE;
+        GVAR(attachments)[] = {
+            {QGVAR(isBlasterMag), "SWLW_attachment_DC17M_blaster"},
+            {QGVAR(isATMag), "SWLW_attachment_DC17M_at"},
+            {QGVAR(isSniperMag), "SWLW_attachment_DC17M_sniper"}
         };
 
         canShootInWater = TRUE;
