@@ -83,18 +83,18 @@ scopeCurator = 0
 #define ITEM_16(a) ITEM_10(a), ITEM_6(a)
 #define ITEM_20(a) ITEM_10(a), ITEM_10(a)
 
-#define WEAP_XX(WEAP, COUNT) class _xx_##WEAP { \
-    weapon = #WEAP; \
+#define WEAP_XX(WEAP, COUNT) class DOUBLES(_xx,WEAP) { \
+    weapon = QUOTE(WEAP); \
     count = COUNT; \
 }
 
-#define MAG_XX(MAG, COUNT) class _xx_##MAG { \
-    magazine = #MAG; \
+#define MAG_XX(MAG, COUNT) class DOUBLES(_xx,MAG) { \
+    magazine = QUOTE(MAG); \
     count = COUNT; \
 }
 
-#define ITEM_XX(ITEM, COUNT) class _xx_##ITEM { \
-    name = #ITEM; \
+#define ITEM_XX(ITEM, COUNT) class DOUBLES(_xx,ITEM) { \
+    name = QUOTE(ITEM); \
     count = COUNT; \
 }
 
