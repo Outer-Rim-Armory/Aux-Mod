@@ -41,7 +41,7 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        editorSubcategory = QCLASS(EdSubCat_Tanks);
+        editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_Blue);
 
         displayName = "AAT";
@@ -67,17 +67,17 @@ class CfgVehicles {
             class CIS {
                 displayName = "CIS";
                 author = "$STR_3AS_Studio";
-                factions[] = {QCLASS(Faction_CIS)};
+                factions[] = {QFACTION(CIS)};
                 textures[] = {"\3AS\3AS_AAT\data\CIS_AAT_CO.paa"};
             };
             class TradeFederation: CIS {
                 displayName = "Trade Federation";
-                factions[] = {QCLASS(Faction_TU)};
+                factions[] = {QFACTION(TU)};
                 textures[] = {"\3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
             };
             class EPF: CIS {
                 displayName = "El Presidente Forces";
-                factions[] = {QCLASS(Faction_EPF)};
+                factions[] = {QFACTION(EPF)};
                 textures[] = {"\3AS\3AS_AAT\data\Green_AAT_CO.paa"};
             };
             class Red: CIS {
@@ -186,7 +186,7 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        editorSubcategory = QCLASS(EdSubCat_Tanks);
+        editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_King_Base);
 
         displayName = "AAT (King)";

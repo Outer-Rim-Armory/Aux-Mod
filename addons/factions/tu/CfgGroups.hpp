@@ -1,12 +1,12 @@
 class CfgGroups {
     class East {
-        class CLASS(Faction_TU) {
+        class FACTION(TU) {
             name = "[KC] Techno Union";
 
             class CLASS(TU_Infantry) {
                 name = "Infantry";
                 class RifleSquad {
-                    faction = QCLASS(Faction_TU);
+                    faction = QFACTION(TU);
                     name = "Rifleman Squad";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     side = 0;

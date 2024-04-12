@@ -29,8 +29,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Tanks);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Blitz);
 
         displayName = "Blitz Assault Tank";

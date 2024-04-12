@@ -4,8 +4,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Cars);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Glavenus_Unarmed);
 
         displayName = "Glavenus (Unarmed)";
@@ -91,8 +91,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Cars);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Glavenus_HMG);
 
         displayName = "Glavenus (HMG)";
@@ -171,8 +171,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Cars);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Glavenus_HMG);
 
         displayName = "Glavenus (GMG)";

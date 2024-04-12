@@ -1,6 +1,6 @@
 class CLASS(Unit_Phase1_CXA): CLASS(Unit_Phase1_Base) {
     displayName = "AVI P1 Pilot 1 (Airman)";
-    editorSubcategory = QCLASS(EdSubCat_Crewmen);
+    editorSubcategory = QEDSUBCAT(Crewmen);
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_CXA);
 
     uniformClass = QCLASS(Uniform_CXA);

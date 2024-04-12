@@ -1,5 +1,5 @@
 class CfgFactionClasses {
-    class CLASS(Faction_TU) {
+    class FACTION(TU) {
         displayName = "[KC] Techno Union";
     };
 };

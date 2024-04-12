@@ -8,7 +8,7 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        editorSubcategory = QCLASS(EdSubCat_Helicopters);
+        editorSubcategory = QEDSUBCAT(Helicopters);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Vespoid_Tan);
 
         displayName = "Vespoid";
@@ -31,7 +31,7 @@ class CfgVehicles {
             class TechnoUnion {
                 author = "Article 2 Studios";
                 displayName = "Techno Union";
-                factions[] = {QCLASS(Faction_TU)};
+                factions[] = {QFACTION(TU)};
                 textures[] = {
                     "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Main_co.paa",
                     "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Attachments_co.paa",
@@ -40,7 +40,7 @@ class CfgVehicles {
             };
             class EPF: TechnoUnion {
                 displayName = "El President Forces";
-                factions[] = {QCLASS(Faction_EPF)};
+                factions[] = {QFACTION(EPF)};
                 textures[] = {
                     "\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa",
                     "\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa",

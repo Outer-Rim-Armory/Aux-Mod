@@ -2,7 +2,7 @@ class CLASS(Unit_Phase2_Base): CLASS(Unit_Base) {
     SCOPE_PUBLIC;
 
     // Editor Properties
-    editorSubcategory = QCLASS(EdSubCat_INF_P2);
+    editorSubcategory = QEDSUBCAT(INF_P2);
     editorPreview = EDITOR_PREVIEW(Unit_Phase2_Base);
 
     uniformClass = QCLASS(Uniform_Base);

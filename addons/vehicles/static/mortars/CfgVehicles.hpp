@@ -21,7 +21,7 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        editorSubcategory = QCLASS(EdSubCat_Turrets);
+        editorSubcategory = QEDSUBCAT(Turrets);
 
         crew = QCLASS(Unit_Phase2_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
@@ -89,7 +89,7 @@ class CfgVehicles {
     class CLASS(Mortar_M190): CLASS(Mortar_Base) {
         SCOPE_PUBLIC;
 
-        faction = QCLASS(Faction_KC);
+        faction = QFACTION(KC);
         editorPreview = EEDITOR_PREVIEW(vehicles\static\SUBCOMPONENT,Mortar_M190);
 
         displayName = "M-190 Disposable Mortar System";

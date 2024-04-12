@@ -2,7 +2,7 @@ class CfgVehicles {
     class CLASS(OPFOR_Unit_Base);
     class CLASS(TU_Unit_Base): CLASS(OPFOR_Unit_Base) {
         SCOPE_HIDDEN;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
         identityTypes[] = {"LanguageENG_F", "Head_NATO", QCLASS(TechnoUnion)};
 
         genericNames = QCLASS(TU_Soldier);
@@ -247,7 +247,7 @@ class CfgVehicles {
     class CLASS(AAT_TU): CLASS(AAT_Base) {
         SCOPE_PUBLIC;
 
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -260,7 +260,7 @@ class CfgVehicles {
     class CLASS(AAT_Heavy_TU): CLASS(AAT_Heavy_Base) {
         SCOPE_PUBLIC;
 
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -270,7 +270,7 @@ class CfgVehicles {
     class CLASS(AAT_King_TU): CLASS(AAT_King_Base) {
         SCOPE_PUBLIC;
 
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -281,7 +281,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = OPFOR;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\plesioth,Plesioth_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
@@ -293,7 +293,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = OPFOR;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\conga,Conga_IFV_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
@@ -305,7 +305,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = OPFOR;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\conga,Conga_MGS_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
@@ -317,7 +317,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = OPFOR;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
 
         displayName = "Fango";
 
@@ -330,7 +330,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = OPFOR;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\ogre,Ogre_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
@@ -342,7 +342,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = OPFOR;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\ogre,Ogre_Armed_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
@@ -354,7 +354,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = OPFOR;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
@@ -366,7 +366,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = OPFOR;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
@@ -378,7 +378,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = OPFOR;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
@@ -390,7 +390,7 @@ class CfgVehicles {
         SCOPE_HIDDEN;
 
         side = OPFOR;
-        faction = QCLASS(Faction_TU);
+        faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);

@@ -10,7 +10,7 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {};
         hiddenSelectionsMaterials[] = {};
 
-        faction = QCLASS(Faction_Creatures);
-        editorSubcategory = QCLASS(EdSubCat_Special);
+        faction = QFACTION(Creatures);
+        editorSubcategory = QEDSUBCAT(Special);
     };
 };

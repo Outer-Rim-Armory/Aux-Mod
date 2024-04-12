@@ -23,8 +23,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_APCs);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(APCs);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Juggernaut);
 
         displayName = "HAVw A6 Juggernaut";

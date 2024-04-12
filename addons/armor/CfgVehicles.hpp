@@ -4,7 +4,7 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
+        faction = QFACTION(KC);
 
         displayName = "INF Trooper (Base)";
         uniformClass = QCLASS(Uniform_Base);

@@ -1,5 +1,5 @@
 class CfgFactionClasses {
-    class CLASS(Faction_GM) {
+    class FACTION(GM) {
         displayName = "[KC] Gal'torran Militia";
     };
 };

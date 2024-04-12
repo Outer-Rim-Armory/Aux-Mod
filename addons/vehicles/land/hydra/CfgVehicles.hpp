@@ -13,8 +13,8 @@ class CfgVehicles {
         author = AUTHOR;
 
         side = BLUFOR;
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_APCs);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(APCs);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hydra);
 
         displayName = "Hydra";

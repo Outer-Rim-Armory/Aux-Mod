@@ -26,7 +26,7 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        editorSubcategory = QCLASS(EdSubCat_Tanks);
+        editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Plesioth_Tan);
 
         displayName = "Plesioth";
@@ -46,7 +46,7 @@ class CfgVehicles {
             class TechnoUnion {
                 author = "Article 2 Studios";
                 displayName = "Techno Union";
-                factions[] = {QCLASS(Faction_TU)};
+                factions[] = {QFACTION(TU)};
                 textures[] = {
                     "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\camo\Scorp_base_desert_co.paa",
                     "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\camo\Scorp_tur_desert_co.paa",
@@ -59,7 +59,7 @@ class CfgVehicles {
             };
             class EPF: TechnoUnion {
                 displayName = "El President Forces";
-                factions[] = {QCLASS(Faction_EPF)};
+                factions[] = {QFACTION(EPF)};
                 textures[] = {
                     "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_lopo_co.paa",
                     "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_tur_wood_co.paa",

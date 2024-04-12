@@ -19,8 +19,8 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Walkers);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Walkers);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,ATTE_Base);
 
         displayName = "AT-TE (Base)";

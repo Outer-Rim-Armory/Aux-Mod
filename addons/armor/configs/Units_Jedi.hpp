@@ -1,7 +1,7 @@
 class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base) {
     SCOPE_HIDDEN;
     displayName = "Jedi Knight";
-    editorSubcategory = QCLASS(EdSubCat_Special);
+    editorSubcategory = QEDSUBCAT(Special);
     icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_Jedi_Knight);

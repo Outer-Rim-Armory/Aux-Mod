@@ -27,8 +27,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Drones);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Drones);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Khezu_Unarmed);
 
         displayName = "Khezu (Unarmed)";
@@ -144,8 +144,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Drones);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Drones);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Khezu_Armed);
 
         displayName = "Khezu (HMG/GMG)";

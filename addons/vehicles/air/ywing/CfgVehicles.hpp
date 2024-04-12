@@ -12,8 +12,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Planes);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Planes);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,BTLB_YWing);
 
         displayName = "BTL-B Y-Wing";

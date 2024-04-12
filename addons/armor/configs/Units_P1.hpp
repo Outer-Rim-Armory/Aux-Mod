@@ -2,7 +2,7 @@ class CLASS(Unit_Phase1_Base): CLASS(Unit_Base) {
     SCOPE_PUBLIC;
 
     // Editor Properties
-    editorSubcategory = QCLASS(EdSubCat_INF_P1);
+    editorSubcategory = QEDSUBCAT(INF_P1);
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_Base);
 
     displayName = "INF P1 Trooper (Base)";

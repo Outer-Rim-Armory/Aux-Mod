@@ -12,7 +12,7 @@ class CfgVehicles {
 
         displayName = "Armored Scout Tank";
 
-        editorSubcategory = QCLASS(EdSubCat_Speeders);
+        editorSubcategory = QEDSUBCAT(Speeders);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,ScoutTank_Base);
 
         class Turrets: Turrets {

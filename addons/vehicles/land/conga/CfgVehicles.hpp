@@ -23,7 +23,7 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        editorSubcategory = QCLASS(EdSubCat_APCs);
+        editorSubcategory = QEDSUBCAT(APCs);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Conga_IFV_Tan);
 
         displayName = "Conga IFV";
@@ -43,7 +43,7 @@ class CfgVehicles {
             class TechnoUnion {
                 author = "Article 2 Studios";
                 displayName = "Techno Union";
-                factions[] = {QCLASS(Faction_TU)};
+                factions[] = {QFACTION(TU)};
                 textures[] = {
                     "\OPTRE_Vehicles\Bison\data\Bison_Body_tan_CO.paa",
                     "\OPTRE_Vehicles\Bison\data\Bison_Misc_tan_CO.paa",
@@ -56,7 +56,7 @@ class CfgVehicles {
             };
             class EPF: TechnoUnion {
                 displayName = "El President Forces";
-                factions[] = {QCLASS(Faction_EPF)};
+                factions[] = {QFACTION(EPF)};
                 textures[] = {
                     "\OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
                     "\OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
@@ -108,7 +108,7 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        editorSubcategory = QCLASS(EdSubCat_APCs);
+        editorSubcategory = QEDSUBCAT(APCs);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Conga_MGS_Tan);
 
         displayName = "Conga MGS";
@@ -128,7 +128,7 @@ class CfgVehicles {
             class TechnoUnion {
                 author = "Article 2 Studios";
                 displayName = "Techno Union";
-                factions[] = {QCLASS(Faction_TU)};
+                factions[] = {QFACTION(TU)};
                 textures[] = {
                     "\OPTRE_Vehicles\Bison\data\Bison_Body_tan_CO.paa",
                     "\OPTRE_Vehicles\Bison\data\Bison_Misc_tan_CO.paa",
@@ -141,7 +141,7 @@ class CfgVehicles {
             };
             class EPF: TechnoUnion {
                 displayName = "El President Forces";
-                factions[] = {QCLASS(Faction_EPF)};
+                factions[] = {QFACTION(EPF)};
                 textures[] = {
                     "\OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
                     "\OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",

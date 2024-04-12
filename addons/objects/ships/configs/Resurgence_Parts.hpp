@@ -100,7 +100,7 @@ class ven_door;
 class CLASS(Venator_Resurgence_Door): ven_door {
     SCOPE_PUBLIC;
     editorCategory = QEDCAT(Objects);
-    editorSubcategory = QCLASS(EdSubcat_StaticShips);
+    editorSubcategory = QEDSUBCAT(StaticShips);
 
     displayName = "Resurgence Door (Closed)";
     hiddenSelectionsTextures[] = {QPATHTOF(ships\data\Resurgence\Door_co.paa)};
@@ -110,7 +110,7 @@ class ven_door2;
 class CLASS(Venator_Resurgence_Door2): ven_door2 {
     SCOPE_PUBLIC;
     editorCategory = QEDCAT(Objects);
-    editorSubcategory = QCLASS(EdSubcat_StaticShips);
+    editorSubcategory = QEDSUBCAT(StaticShips);
 
     displayName = "Resurgence Door (Open)";
     hiddenSelectionsTextures[] = {"", QPATHTOF(ships\data\Resurgence\Door_co.paa)};

@@ -7,7 +7,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
+        faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_M1);
 
@@ -77,7 +77,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
+        faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_M1_Recon);
 
@@ -147,7 +147,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
+        faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_M1_GL);
 
@@ -217,7 +217,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
+        faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Tanks);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_Super);
 

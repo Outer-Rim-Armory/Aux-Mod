@@ -8,8 +8,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Walkers);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Walkers);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,ATAP);
 
         displayName = "AT-AP";

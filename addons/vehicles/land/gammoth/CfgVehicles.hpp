@@ -4,8 +4,8 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Cars);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
 
         displayName = "Gammoth (Base)";
         crew = QCLASS(Unit_Phase2_CT);

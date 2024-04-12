@@ -19,7 +19,7 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        editorSubcategory = QCLASS(EdSubCat_Helicopters);
+        editorSubcategory = QEDSUBCAT(Helicopters);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Ogre_Tan);
 
         displayName = "Ogre";
@@ -42,12 +42,12 @@ class CfgVehicles {
             class TechnoUnion {
                 author = "Article 2 Studios";
                 displayName = "Techno Union";
-                factions[] = {QCLASS(Faction_TU)};
+                factions[] = {QFACTION(TU)};
                 textures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
             };
             class EPF: TechnoUnion {
                 displayName = "El President Forces";
-                factions[] = {QCLASS(Faction_EPF)};
+                factions[] = {QFACTION(EPF)};
                 textures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_standard_CO.paa"};
             };
         };

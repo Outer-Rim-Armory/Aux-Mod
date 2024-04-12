@@ -1,41 +1,41 @@
 class CfgEditorSubcategories {
-    class CLASS(EdSubCat_CoruscantGuard) {
+    class EDSUBCAT(CoruscantGuard) {
         displayName = "Coruscant Guard";
     };
 
-    class CLASS(EdSubCat_DoomCompany) {
+    class EDSUBCAT(DoomCompany) {
         displayName = "Doom Company";
     };
 
-    class CLASS(EdSubCat_FilSquad) {
+    class EDSUBCAT(FilSquad) {
         displayName = "Fil's Squad";
     };
 
-    class CLASS(EdSubCat_GreenCompany) {
+    class EDSUBCAT(GreenCompany) {
         displayName = "Green Company";
     };
 
-    class CLASS(EdSubCat_HowzerSquad) {
+    class EDSUBCAT(HowzerSquad) {
         displayName = "Howzer's Squad";
     };
 
-    class CLASS(EdSubCat_104th) {
+    class EDSUBCAT(104th) {
         displayName = "104th Wolfpack";
     };
 
-    class CLASS(EdSubCat_187th) {
+    class EDSUBCAT(187th) {
         displayName = "187th Battalion";
     };
 
-    class CLASS(EdSubCat_212th) {
+    class EDSUBCAT(212th) {
         displayName = "212th Attack Battalion";
     };
 
-    class CLASS(EdSubCat_501st) {
+    class EDSUBCAT(501st) {
         displayName = "501st Legion";
     };
 
-    class CLASS(EdSubCat_91st) {
+    class EDSUBCAT(91st) {
         displayName = "91st MRC";
     };
 };

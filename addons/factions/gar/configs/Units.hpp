@@ -1,8 +1,8 @@
 class CLASS(Unit_Phase2_Base);
 class CLASS(Unit_CG_Trooper): CLASS(Unit_Phase2_Base) {
     displayName = "Clone Trooper";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_CoruscantGuard);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(CoruscantGuard);
     editorPreview = EDITOR_PREVIEW(Unit_CG_Trooper);
 
     uniformClass = QCLASS(Uniform_CG);
@@ -41,8 +41,8 @@ class CLASS(Unit_CG_Stone): CLASS(Unit_CG_Trooper) {
 
 class CLASS(Unit_DC_Trooper): CLASS(Unit_Phase2_Base) {
     displayName = "Clone Trooper";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_DoomCompany);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(DoomCompany);
     editorPreview = EDITOR_PREVIEW(Unit_DC_Trooper);
 
     uniformClass = QCLASS(Uniform_DC);
@@ -62,8 +62,8 @@ class CLASS(Unit_DC_Trooper): CLASS(Unit_Phase2_Base) {
 
 class CLASS(Unit_Fil): CLASS(Unit_Phase2_Base) {
     displayName = "Commander Fil";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_FilSquad);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(FilSquad);
     editorPreview = EDITOR_PREVIEW(Unit_Fil);
 
     uniformClass = QCLASS(Uniform_Fil);
@@ -83,8 +83,8 @@ class CLASS(Unit_Fil): CLASS(Unit_Phase2_Base) {
 
 class CLASS(Unit_FilSquad): CLASS(Unit_Phase2_Base) {
     displayName = "Clone Trooper";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_FilSquad);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(FilSquad);
     editorPreview = EDITOR_PREVIEW(Unit_FilSquad);
 
     uniformClass = QCLASS(Uniform_FilSquad);
@@ -104,8 +104,8 @@ class CLASS(Unit_FilSquad): CLASS(Unit_Phase2_Base) {
 
 class CLASS(Unit_GC_Trooper): CLASS(Unit_Phase2_Base) {
     displayName = "Clone Trooper";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_GreenCompany);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(GreenCompany);
     editorPreview = EDITOR_PREVIEW(Unit_GC_Trooper);
 
     uniformClass = QCLASS(Uniform_GC);
@@ -125,8 +125,8 @@ class CLASS(Unit_GC_Trooper): CLASS(Unit_Phase2_Base) {
 
 class CLASS(Unit_HowzerBlue): CLASS(Unit_Phase2_Base) {
     displayName = "Captain Howzer";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_HowzerSquad);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(HowzerSquad);
     editorPreview = EDITOR_PREVIEW(Unit_HowzerBlue);
 
     uniformClass = QCLASS(Uniform_HowzerBlue);
@@ -164,8 +164,8 @@ class CLASS(Unit_HowzerBrown): CLASS(Unit_HowzerBlue) {
 
 class CLASS(Unit_104th_Trooper): CLASS(Unit_Phase2_Base) {
     displayName = "Clone Trooper";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_104th);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(104th);
     editorPreview = EDITOR_PREVIEW(Unit_104th_Trooper);
 
     uniformClass = QCLASS(Uniform_104th);
@@ -185,8 +185,8 @@ class CLASS(Unit_104th_Trooper): CLASS(Unit_Phase2_Base) {
 
 class CLASS(Unit_187th_Trooper): CLASS(Unit_Phase2_Base) {
     displayName = "Clone Trooper";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_187th);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(187th);
     editorPreview = EDITOR_PREVIEW(Unit_187th_Trooper);
 
     uniformClass = QCLASS(Uniform_187th);
@@ -206,8 +206,8 @@ class CLASS(Unit_187th_Trooper): CLASS(Unit_Phase2_Base) {
 
 class CLASS(Unit_501st_Trooper): CLASS(Unit_Phase2_Base) {
     displayName = "Clone Trooper";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_501st);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(501st);
     editorPreview = EDITOR_PREVIEW(Unit_501st_Trooper);
 
     uniformClass = QCLASS(Uniform_501st);
@@ -227,8 +227,8 @@ class CLASS(Unit_501st_Trooper): CLASS(Unit_Phase2_Base) {
 
 class CLASS(Unit_212th_Trooper): CLASS(Unit_Phase2_Base) {
     displayName = "Clone Trooper";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_212th);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(212th);
     editorPreview = EDITOR_PREVIEW(Unit_212th_Trooper);
 
     uniformClass = QCLASS(Uniform_212th);
@@ -248,8 +248,8 @@ class CLASS(Unit_212th_Trooper): CLASS(Unit_Phase2_Base) {
 
 class CLASS(Unit_91st_Ponds): CLASS(Unit_Phase2_Base) {
     displayName = "Commander Ponds";
-    faction = QCLASS(Faction_GAR);
-    editorSubcategory = QCLASS(EdSubCat_91st);
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(91st);
     editorPreview = EDITOR_PREVIEW(Unit_91st_Ponds);
 
     uniformClass = QCLASS(Uniform_91st_Ponds);

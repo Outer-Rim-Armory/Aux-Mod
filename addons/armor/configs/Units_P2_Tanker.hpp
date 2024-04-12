@@ -1,6 +1,6 @@
 class CLASS(Unit_Phase2_Tanker_CT): CLASS(Unit_Phase2_Base) {
     displayName = "ARMR P2 Tanker";
-    editorSubcategory = QCLASS(EdSubCat_Crewmen);
+    editorSubcategory = QEDSUBCAT(Crewmen);
     editorPreview = EDITOR_PREVIEW(Unit_Phase2_Tanker_CT);
 
     uniformClass = QCLASS(Uniform_Tanker);

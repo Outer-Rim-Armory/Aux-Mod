@@ -4,8 +4,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Cars);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
 
         displayName = "Hornet Strike Vehicle";
@@ -63,8 +63,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Cars);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_MG);
 
         displayName = "Hornet Strike Vehicle (MG)";
@@ -152,8 +152,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Cars);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_AT);
 
         displayName = "Hornet Strike Vehicle (AT)";

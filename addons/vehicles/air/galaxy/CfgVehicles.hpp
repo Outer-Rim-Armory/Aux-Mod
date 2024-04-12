@@ -17,8 +17,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Planes);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Planes);
 
         displayName = "Galaxy HAG";
         crew = QCLASS(Unit_Phase2_CXA);
@@ -66,8 +66,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Planes);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Planes);
 
         displayName = "Galaxy HVT";
         crew = QCLASS(Unit_Phase2_CXA);
@@ -94,8 +94,8 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Planes);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Planes);
 
         displayName = "Galaxy HIT";
         crew = QCLASS(Unit_Phase2_CXA);
