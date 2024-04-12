@@ -1,15 +1,12 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             "3AS_BX42",
             "WBK_PhoenixTreal_FlamethrowerMOD",
@@ -17,8 +14,7 @@ class CfgPatches
             "JLTS_C_Credits"
         };
         units[] = {};
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(X42_Base),
             QCLASS(X42),
             QCLASS(X42_Fried),

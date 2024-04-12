@@ -1,19 +1,14 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class APC_Wheeled_02_base_F;
-    class APC_Wheeled_02_base_v2_F: APC_Wheeled_02_base_F
-    {
+    class APC_Wheeled_02_base_v2_F: APC_Wheeled_02_base_F {
         class Turrets;
     };
-    class O_APC_Wheeled_02_rcws_v2_F: APC_Wheeled_02_base_v2_F
-    {
-        class Turrets: Turrets
-        {
+    class O_APC_Wheeled_02_rcws_v2_F: APC_Wheeled_02_base_v2_F {
+        class Turrets: Turrets {
             class MainTurret;
         };
     };
-    class CLASS(Hydra): O_APC_Wheeled_02_rcws_v2_F
-    {
+    class CLASS(Hydra): O_APC_Wheeled_02_rcws_v2_F {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -36,15 +31,12 @@ class CfgVehicles
         textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         animationList[] = {"showCanisters", FALSE, "showTools", FALSE};
 
-        class TextureSources
-        {
-            class CamoKC
-            {
+        class TextureSources {
+            class CamoKC {
                 author = AUTHOR;
                 displayName = "Keeli Company Camo";
                 factions[] = {};
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\hydra\data\textures\CamoKC\Body_co.paa),
                     QPATHTOF(land\hydra\data\textures\CamoKC\Wheels_co.paa),
                     QPATHTOF(data\csatTurret\CamoKC\Turret_co.paa),
@@ -52,11 +44,9 @@ class CfgVehicles
                     ""  // Cage Texture
                 };
             };
-            class CamoBrown: CamoKC
-            {
+            class CamoBrown: CamoKC {
                 displayName = "Brown Camo";
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\hydra\data\textures\CamoBrown\Body_co.paa),
                     QPATHTOF(land\hydra\data\textures\CamoBrown\Wheels_co.paa),
                     QPATHTOF(data\csatTurret\CamoBrown\Turret_co.paa),
@@ -64,11 +54,9 @@ class CfgVehicles
                     ""  // Cage Texture
                 };
             };
-            class CamoGrey: CamoKC
-            {
+            class CamoGrey: CamoKC {
                 displayName = "Grey Camo";
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\hydra\data\textures\CamoGrey\Body_co.paa),
                     QPATHTOF(land\hydra\data\textures\CamoGrey\Wheels_co.paa),
                     QPATHTOF(data\csatTurret\CamoGrey\Turret_co.paa),
@@ -78,10 +66,8 @@ class CfgVehicles
             };
         };
 
-        class UserActions
-        {
-            class ActivateEMP
-            {
+        class UserActions {
+            class ActivateEMP {
                 displayName = "<t font='RobotoCondensedBold'>Activate EMP</t>";
                 displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\iconLightning_ca.paa'>";
 
@@ -97,18 +83,14 @@ class CfgVehicles
             };
         };
 
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret
-            {
-                weapons[] =
-                {
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                weapons[] = {
                     QCLASS(Coax_Reek),
                     "GMG_40mm",
                     "SmokeLauncher"
                 };
-                magazines[] =
-                {
+                magazines[] = {
                     QCLASS(Mag_500Rnd_Coax),
                     QCLASS(Mag_500Rnd_Coax),
                     QCLASS(Mag_500Rnd_Coax),

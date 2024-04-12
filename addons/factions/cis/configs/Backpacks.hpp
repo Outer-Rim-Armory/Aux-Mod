@@ -152,11 +152,7 @@ class CLASS(CIS_Jetpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
     JLTS_recharge = 2;
 
     JLTS_effectPoints[] = {"effect_left", "effect_right"};
-    JLTS_sounds[] = {
-        {"\MRC\JLTS\jumppacks\sounds\ignite.wss", 1, 1},
-        {"\MRC\JLTS\jumppacks\sounds\ignite_fail.wss", 3, 1},
-        {"\MRC\JLTS\jumppacks\sounds\stop.wss", 1, 1},
-        {"\MRC\JLTS\jumppacks\sounds\stop_emergency.wss", 5, 1},
+    JLTS_sounds[] = { {"\MRC\JLTS\jumppacks\sounds\ignite.wss", 1, 1}, {"\MRC\JLTS\jumppacks\sounds\ignite_fail.wss", 3, 1}, {"\MRC\JLTS\jumppacks\sounds\stop.wss", 1, 1}, {"\MRC\JLTS\jumppacks\sounds\stop_emergency.wss", 5, 1},
         "JLTS_jumppack_error",
         "JLTS_SFX_jumppack_idle"
     };

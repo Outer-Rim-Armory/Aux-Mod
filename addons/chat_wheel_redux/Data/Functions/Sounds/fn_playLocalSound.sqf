@@ -15,10 +15,8 @@
 
 params ["_file", "_position"];
 
-if (CWR_Voice_EnableVoiceLines) then
-{
-    playSound3D
-    [
+if (CWR_Voice_EnableVoiceLines) then {
+    playSound3D [
         _file,
         objNull,
         false,

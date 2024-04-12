@@ -1,13 +1,10 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class OPTRE_falcon_base;
-    class OPTRE_falcon_base_unarmed: OPTRE_falcon_base
-    {
+    class OPTRE_falcon_base_unarmed: OPTRE_falcon_base {
         class ACE_SelfActions;
         class Components;
     };
-    class CLASS(Vespoid_Base): OPTRE_falcon_base_unarmed
-    {
+    class CLASS(Vespoid_Base): OPTRE_falcon_base_unarmed {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -23,34 +20,28 @@ class CfgVehicles
         thermalMode[] = {0};
 
         hiddenSelections[] = {"camo1", "camo2", "camo3", "attach_gun", "attach_sideguns"};
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Main_co.paa",
             "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Attachments_co.paa",
             "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Interior_co.paa"
         };
 
         textureList[] = {"TechnoUnion", 1, "EPF", 0};
-        class TextureSources
-        {
-            class TechnoUnion
-            {
+        class TextureSources {
+            class TechnoUnion {
                 author = "Article 2 Studios";
                 displayName = "Techno Union";
                 factions[] = {QCLASS(Faction_TU)};
-                textures[] =
-                {
+                textures[] = {
                     "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Main_co.paa",
                     "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Attachments_co.paa",
                     "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Interior_co.paa"
                 };
             };
-            class EPF: TechnoUnion
-            {
+            class EPF: TechnoUnion {
                 displayName = "El President Forces";
                 factions[] = {QCLASS(Faction_EPF)};
-                textures[] =
-                {
+                textures[] = {
                     "\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa",
                     "\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa",
                     "\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"
@@ -58,20 +49,17 @@ class CfgVehicles
             };
         };
 
-        class ACE_SelfActions: ACE_SelfActions
-        {
+        class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
         };
     };
 
-    class CLASS(Vespoid_Armed_Base): CLASS(Vespoid_Base)
-    {
+    class CLASS(Vespoid_Armed_Base): CLASS(Vespoid_Base) {
         displayName = "Vespoid (Armed)";
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Vespoid_Armed_Tan);
 
         weapons[] = {"OPTRE_M638", "CMFlareLauncher","Laserdesignator_pilotCamera"};
-        magazines[] =
-        {
+        magazines[] = {
             "OPTRE_2000Rnd_20mm_HE",
             "OPTRE_2000Rnd_20mm_HE",
             "168Rnd_CMFlare_Chaff_Magazine",
@@ -79,22 +67,17 @@ class CfgVehicles
         };
 
         hiddenSelections[] = {"camo1", "camo2", "camo3"};
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Main_co.paa",
             "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Attachments_co.paa",
             "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Interior_co.paa"
         };
 
-        class Components: Components
-        {
-            class TransportPylonsComponent
-            {
+        class Components: Components {
+            class TransportPylonsComponent {
                 UIPicture = "\optre_vehicles_air\falcon\FalconPylonPic.paa";
-                class Pylons
-                {
-                    class WingPylonRight1
-                    {
+                class Pylons {
+                    class WingPylonRight1 {
                         attachment = "OPTRE_16Rnd_Anvil1_missiles";
                         bay = -1;
                         hardpoints[] = {"OPAEX_Hardpoint_UH144"};
@@ -103,43 +86,34 @@ class CfgVehicles
                         turret[] = {};
                         UIposition[] = {0.35, 0.1};
                     };
-                    class WingPylonLeft1: WingPylonRight1
-                    {
+                    class WingPylonLeft1: WingPylonRight1 {
                         mirroredMissilePos = 1;
                         UIposition[] = {0.35, 0.467};
                     };
                 };
 
-                class Presets
-                {
-                    class Default
-                    {
+                class Presets {
+                    class Default {
                         displayName = "Empty";
                         attachment[] = {};
                     };
-                    class CAS_Rockets
-                    {
+                    class CAS_Rockets {
                         displayName = "CAS: ANVIL I";
-                        attachment[] =
-                        {
+                        attachment[] = {
                             "OPTRE_16Rnd_Anvil1_missiles",
                             "OPTRE_16Rnd_Anvil1_missiles"
                         };
                     };
-                    class CAS_Rockets_Guided
-                    {
+                    class CAS_Rockets_Guided {
                         displayName = "CAS: ANVIL II & III";
-                        attachment[] =
-                        {
+                        attachment[] = {
                             "OPTRE_16Rnd_Anvil2_missiles",
                             "OPTRE_16Rnd_Anvil3_missiles"
                         };
                     };
-                    class CAS_AT
-                    {
+                    class CAS_AT {
                         displayName = "AT";
-                        attachment[] =
-                        {
+                        attachment[] = {
                             "OPTRE_1Rnd_Jackknife_missile",
                             "OPTRE_1Rnd_Jackknife_missile"
                         };

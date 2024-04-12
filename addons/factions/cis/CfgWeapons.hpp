@@ -1,5 +1,4 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class ls_redforUniform_base;
     class CLASS(OPFOR_Uniform_Base): ls_redforUniform_base {
         class ItemInfo;

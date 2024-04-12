@@ -83,32 +83,27 @@ scopeCurator = 0
 #define ITEM_16(a) ITEM_10(a), ITEM_6(a)
 #define ITEM_20(a) ITEM_10(a), ITEM_10(a)
 
-#define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \
-{ \
+#define WEAP_XX(WEAP, COUNT) class _xx_##WEAP { \
     weapon = #WEAP; \
     count = COUNT; \
 }
 
-#define MAG_XX(MAG, COUNT) class _xx_##MAG \
-{ \
+#define MAG_XX(MAG, COUNT) class _xx_##MAG { \
     magazine = #MAG; \
     count = COUNT; \
 }
 
-#define ITEM_XX(ITEM, COUNT) class _xx_##ITEM \
-{ \
+#define ITEM_XX(ITEM, COUNT) class _xx_##ITEM { \
     name = #ITEM; \
     count = COUNT; \
 }
 
 #define GROUND_CLASS(WEAP_NAME) DOUBLES(Ground,CLASS(WEAP_NAME))
 #define QGROUND_CLASS(WEAP_NAME) QUOTE(GROUND_CLASS(WEAP_NAME))
-#define GROUND_HOLDER(WEAP_NAME, DISPLAY_NAME) class GROUND_CLASS(WEAP_NAME): GROUND_CLASS(Holder_Base) \
-{ \
+#define GROUND_HOLDER(WEAP_NAME, DISPLAY_NAME) class GROUND_CLASS(WEAP_NAME): GROUND_CLASS(Holder_Base) { \
     SCOPE_PUBLIC; \
     displayName = DISPLAY_NAME; \
-    class TransportItems \
-    { \
+    class TransportItems { \
         ITEM_XX(CLASS(WEAP_NAME),1); \
     }; \
 }

@@ -1,42 +1,31 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class Tank;
-    class Tank_F: Tank
-    {
-        class Turrets
-        {
+    class Tank_F: Tank {
+        class Turrets {
             class MainTurret;
         };
     };
-    class MBT_01_base_F: Tank_F
-    {
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret
-            {
+    class MBT_01_base_F: Tank_F {
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
                 class Turrets;
             };
         };
     };
     class B_MBT_01_base_F: MBT_01_base_F {};
     class B_MBT_01_cannon_F: B_MBT_01_base_F {};
-    class B_MBT_01_TUSK_F: B_MBT_01_cannon_F
-    {
+    class B_MBT_01_TUSK_F: B_MBT_01_cannon_F {
         class ACE_SelfActions;
         class AnimationSources;
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret
-            {
-                class Turrets: Turrets
-                {
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                class Turrets: Turrets {
                     class CommanderOptics;
                 };
             };
         };
     };
-    class CLASS(Blitz): B_MBT_01_TUSK_F
-    {
+    class CLASS(Blitz): B_MBT_01_TUSK_F {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -52,10 +41,8 @@ class CfgVehicles
         soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\blitz\Shutdown.wss), 1, 1};
         soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\blitz\Startup.wss), 30, 1, 100};
         soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\blitz\Startup.wss), 1, 1};
-        class Sounds
-        {
-            soundSetsInt[] =
-            {
+        class Sounds {
+            soundSetsInt[] = {
                 QCLASS(SoundSet_Blitz_Engine_RPM0_INT),
                 QCLASS(SoundSet_Blitz_Engine_RPM1_INT),
                 QCLASS(SoundSet_Blitz_Engine_RPM2_INT),
@@ -89,8 +76,7 @@ class CfgVehicles
                 "Tanks_Material_Strain_Int_SoundSet",
                 "Tank_General_Collision_Int_SoundSet"
             };
-            soundSetsExt[] =
-            {
+            soundSetsExt[] = {
                 QCLASS(SoundSet_Blitz_Engine_RPM0_EXT),
                 QCLASS(SoundSet_Blitz_Engine_RPM1_EXT),
                 QCLASS(SoundSet_Blitz_Engine_RPM2_EXT),
@@ -122,8 +108,7 @@ class CfgVehicles
             };
         };
 
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             QPATHTOF(land\blitz\data\textures\KeeliCompany\Body_co.paa),
             QPATHTOF(land\blitz\data\textures\KeeliCompany\Tow_co.paa),
             QPATHTOF(land\blitz\data\textures\KeeliCompany\Addons_co.paa),
@@ -132,37 +117,30 @@ class CfgVehicles
 
         textureList[] = {"KeeliCompany", 1, "WhiteRed", 0, "CamoGrey", 0};
         animationList[] = {"showCamonetCannon", FALSE, "showCamonetPlates1", FALSE, "showCamonetPlates2", FALSE, "showCamonetTurret", FALSE, "showCamonetHull", FALSE};
-        class TextureSources
-        {
-            class KeeliCompany
-            {
+        class TextureSources {
+            class KeeliCompany {
                 author = AUTHOR;
                 displayName = "Keeli Company";
                 factions[] = {};
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\blitz\data\textures\KeeliCompany\Body_co.paa),
                     QPATHTOF(land\blitz\data\textures\KeeliCompany\Tow_co.paa),
                     QPATHTOF(land\blitz\data\textures\KeeliCompany\Addons_co.paa),
                     QPATHTOF(land\blitz\data\textures\WhiteRed\Camonet_co.paa)
                 };
             };
-            class WhiteRed: KeeliCompany
-            {
+            class WhiteRed: KeeliCompany {
                 displayName = "White and Red";
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\blitz\data\textures\WhiteRed\Body_co.paa),
                     QPATHTOF(land\blitz\data\textures\WhiteRed\Tow_co.paa),
                     QPATHTOF(land\blitz\data\textures\WhiteRed\Addons_co.paa),
                     QPATHTOF(land\blitz\data\textures\WhiteRed\Camonet_co.paa)
                 };
             };
-            class CamoGrey: KeeliCompany
-            {
+            class CamoGrey: KeeliCompany {
                 displayName = "Grey Camo";
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\blitz\data\textures\CamoGrey\Body_co.paa),
                     QPATHTOF(land\blitz\data\textures\CamoGrey\Tow_co.paa),
                     QPATHTOF(land\blitz\data\textures\CamoGrey\Addons_co.paa),
@@ -171,8 +149,7 @@ class CfgVehicles
             };
         };
 
-        class ACE_SelfActions: ACE_SelfActions
-        {
+        class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
 
             INTERCOM_START;
@@ -182,21 +159,15 @@ class CfgVehicles
             INTERCOM_END;
         };
 
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret
-            {
-                class Turrets: Turrets
-                {
-                    class CommanderOptics: CommanderOptics
-                    {
-                        weapons[] =
-                        {
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                class Turrets: Turrets {
+                    class CommanderOptics: CommanderOptics {
+                        weapons[] = {
                             QCLASS(Coax_Commander),
                             "SmokeLauncher"
                         };
-                        magazines[] =
-                        {
+                        magazines[] = {
                             QCLASS(Mag_100Rnd_Coax),
                             QCLASS(Mag_100Rnd_Coax),
                             QCLASS(Mag_100Rnd_Coax),
@@ -207,13 +178,11 @@ class CfgVehicles
                     };
                 };
 
-                weapons[] =
-                {
+                weapons[] = {
                     QCLASS(Cannon_Blitz),
                     QCLASS(Coax_Reek)
                 };
-                magazines[] =
-                {
+                magazines[] = {
                     QCLASS(Mag_20Rnd_Cannon_Blitz_HEAT),
                     QCLASS(Mag_20Rnd_Cannon_Blitz_HE),
                     QCLASS(Mag_20Rnd_Cannon_Blitz_AT),
@@ -226,30 +195,24 @@ class CfgVehicles
             };
         };
 
-        class AnimationSources: AnimationSources
-        {
-            class muzzle_hide_cannon
-            {
+        class AnimationSources: AnimationSources {
+            class muzzle_hide_cannon {
                 source = "reload";
                 weapon = QCLASS(Cannon_Blitz);
             };
-            class muzzle_rot_cannon
-            {
+            class muzzle_rot_cannon {
                 source = "ammorandom";
                 weapon = QCLASS(Cannon_Blitz);
             };
-            class muzzle_rot_cmdr
-            {
+            class muzzle_rot_cmdr {
                 source = "ammorandom";
                 weapon = QCLASS(Coax_Reek);
             };
-            class recoil_source
-            {
+            class recoil_source {
                 source = "reload";
                 weapon = QCLASS(Cannon_Blitz);
             };
-            class commander_gun_recoil
-            {
+            class commander_gun_recoil {
                 source = "reload";
                 weapon = QCLASS(Coax_Reek);
             };
@@ -258,12 +221,9 @@ class CfgVehicles
         maximumLoad = 20000;
         INVENTORY_VEHICLE_BASE(3);
 
-        class ACE_Cargo
-        {
-            class Cargo
-            {
-                class Track
-                {
+        class ACE_Cargo {
+            class Cargo {
+                class Track {
                     type = "ACE_Track";
                     amount = 1;
                 };
@@ -271,8 +231,7 @@ class CfgVehicles
         };
     };
 
-    class CLASS(MBT_Slammer): CLASS(Blitz)
-    {
+    class CLASS(MBT_Slammer): CLASS(Blitz) {
         SCOPE_HIDDEN;
     };
 };

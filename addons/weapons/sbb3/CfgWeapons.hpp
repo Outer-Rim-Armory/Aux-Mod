@@ -3,8 +3,7 @@ class CfgWeapons {
     class JLTS_SBB3: arifle_MX_Base_F {
         class Single;
     };
-    class CLASS(SBB3_Base): JLTS_SBB3
-    {
+    class CLASS(SBB3_Base): JLTS_SBB3 {
         SCOPE_PRIVATE;
         author = AUTHOR;
 

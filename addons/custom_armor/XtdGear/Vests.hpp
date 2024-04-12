@@ -1,5 +1,4 @@
-class CLASS(Vest_Commander_Keeli)
-{
+class CLASS(Vest_Commander_Keeli) {
     model = QCLASS(Vests_Custom);
     camo = "Keeli";
 };

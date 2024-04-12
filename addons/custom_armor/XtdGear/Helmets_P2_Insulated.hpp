@@ -1,5 +1,4 @@
-class CLASS(Helmet_Phase2_Insulated_Dexus)
-{
+class CLASS(Helmet_Phase2_Insulated_Dexus) {
     model = QCLASS(Helmets_Insulated_Phase2_Custom);
     camo = "Dexus";
 };

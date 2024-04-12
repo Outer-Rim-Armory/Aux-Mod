@@ -1,5 +1,4 @@
-class CLASS(Helmet_phase1Geo_Enlisted)
-{
+class CLASS(Helmet_phase1Geo_Enlisted) {
     model = QCLASS(Helmets_Phase1_Geonosis);
     camo = "Trooper";
 };

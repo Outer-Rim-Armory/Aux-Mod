@@ -23,23 +23,22 @@ if !(_magazine isKindOf ["HandGrenade", configFile >> "CfgMagazines"]) exitWith 
 private _grenadeType = "Grenade";
 private _grenadeName = "";
 
-if (_magazine isKindOf ["SmokeShell", configFile >> "CfgMagazines"]) then
-{
+if (_magazine isKindOf ["SmokeShell", configFile >> "CfgMagazines"]) then {
     _grenadeType = "Smoke";
 };
 
-if !(toLowerANSI _magazine find "shield" isEqualTo -1) then // Check if "shield" is in the class name
-{
+if !(toLowerANSI _magazine find "shield" isEqualTo -1) then {
     _grenadeType = "Shield";
 
-    if !(toLowerANSI _magazine find "squad" isEqualTo -1) then
-    {
+    if !(toLowerANSI _magazine find "squad" isEqualTo -1) then {
         _grenadeType = "SquadShield";
         _grenadeName = "Squad Shield";
     };
 };
 
-if (_grenadeName == "") then { _grenadeName = _grenadeType };
+if (_grenadeName == "") then {
+    _grenadeName = _grenadeType
+};
 
 private _nearbyUnits = (getPosATL _sender) nearEntities ["CAManBase", 30];
 _nearbyUnits = _nearbyUnits select { isPlayer _x; };

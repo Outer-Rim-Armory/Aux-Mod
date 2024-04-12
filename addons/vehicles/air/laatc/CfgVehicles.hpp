@@ -1,13 +1,10 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class lsd_laatc_base;
-    class lsd_heli_laatc: lsd_laatc_base
-    {
+    class lsd_heli_laatc: lsd_laatc_base {
         class ACE_SelfActions;
         class UserActions;
     };
-    class CLASS(LAATc): lsd_heli_laatc
-    {
+    class CLASS(LAATc): lsd_heli_laatc {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -43,8 +40,7 @@ class CfgVehicles
         weapons[] = {"ls_laat_gun", "ls_weapon_CMFlareLauncher"};
         magazines[] = {"200Rnd_laat_he_mag", "200Rnd_laat_he_mag", "ls_mag_240Rnd_CMFlareChaff_blue", "ls_mag_240Rnd_CMFlareChaff_blue"};
 
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             QPATHTOF(air\laatc\data\textures\Auxiliary_co.paa),
             QPATHTOF(air\laatc\data\textures\Cockpit_co.paa),
             "\lsd_vehicles_heli\laatc\data\glass_ca.paa",
@@ -52,15 +48,12 @@ class CfgVehicles
             QPATHTOF(air\laatc\data\textures\Wings_co.paa)
         };
         textureList[] = {"Standard", 0, "KeeliCompany", 1};
-        class TextureSources
-        {
-            class Standard
-            {
+        class TextureSources {
+            class Standard {
                 author = "Legion Studios";
                 displayName = "Standard";
                 factions[] = {};
-                textures[] =
-                {
+                textures[] = {
                     "\lsd_vehicles_heli\laatc\data\auxiliary_co.paa",
                     "\lsd_vehicles_heli\laatc\data\standard\cockpit_co.paa",
                     "\lsd_vehicles_heli\laatc\data\glass_ca.paa",
@@ -68,13 +61,11 @@ class CfgVehicles
                     "\lsd_vehicles_heli\laatc\data\standard\wings_co.paa"
                 };
             };
-            class KeeliCompany: Standard
-            {
+            class KeeliCompany: Standard {
                 author = AUTHOR;
                 displayName = "Keeli Company";
                 factions[] = {};
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(air\laatc\data\textures\Auxiliary_co.paa),
                     QPATHTOF(air\laatc\data\textures\Cockpit_co.paa),
                     "\lsd_vehicles_heli\laatc\data\glass_ca.paa",
@@ -84,15 +75,12 @@ class CfgVehicles
             };
         };
 
-        class ACE_SelfActions: ACE_SelfActions
-        {
+        class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
         };
 
-        class UserActions: UserActions
-        {
-            class Impulse
-            {
+        class UserActions: UserActions {
+            class Impulse {
                 displayName = "Impulse";
                 position = "pilotview";
                 radius = 5;
@@ -104,15 +92,13 @@ class CfgVehicles
                 condition = QUOTE(isEngineOn this and ace_player == currentPilot this and !isTouchingGround this);
                 statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick);
             };
-            class Repulse: Impulse
-            {
+            class Repulse: Impulse {
                 displayName = "Repulse";
                 shortcut = "User20";
                 statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick);
             };
 
-            class LoadVehicle: Impulse
-            {
+            class LoadVehicle: Impulse {
                 displayName = "Load Vehicle";
                 condition = QUOTE(ace_player isEqualTo currentPilot this and {this call FUNC(vivCanLoad)});
                 statement = QUOTE(this call FUNC(vivLoad));

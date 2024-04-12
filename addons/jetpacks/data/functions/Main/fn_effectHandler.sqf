@@ -39,9 +39,7 @@ _defaultColor = [1, 1, 1]; // Can't include [] with commas inside in a macro
 _lightColor   = GET_ARRAY(configFile >> "CfgVehicles" >> _jetpack >> QGVAR(lightColor),_defaultColor);
 if (_effectPoints isEqualTo []) exitWith {}; // Don't spawn effects if there aren't any effect points
 
-if (_totalEffects + (count _effectTypes * count _effectPoints) > GVAR(particleLimit)) then
-{
-
+if (_totalEffects + (count _effectTypes * count _effectPoints) > GVAR(particleLimit)) then {
     // Particle "slots" remaining
     _remainingSlots = (GVAR(particleLimit) - _totalEffects) min 0;
     // format ["_remainingSlots = %1", _remainingSlots] call BNAKC_fnc_devLog;
@@ -66,13 +64,11 @@ if (_totalEffects + (count _effectTypes * count _effectPoints) > GVAR(particleLi
             private _positionModelEffectpoint = (backpackContainer _unit) selectionPosition [_x, "Memory"];
 
             // [0, 0, 0] is the default value if the point does not exist
-            if !(_positionModelEffectpoint isEqualTo [0, 0, 0]) then
-            {
+            if !(_positionModelEffectpoint isEqualTo [0, 0, 0]) then {
                 // Calculate effect position relative to player model
                 private _offsetEffect = (_positionModelEffectpoint vectorDiff POS_SPINE3);
 
-                if (currentWeapon _unit != "") then
-                {
+                if (currentWeapon _unit != "") then {
                     // Extra offset if unit is holding a weapon, animation causes the jetpack to move but not the points
                     _offsetEffect = _offsetEffect vectorAdd [-0.12, 0, 0.1];
                 };

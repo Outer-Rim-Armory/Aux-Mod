@@ -1,8 +1,6 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class CLASS(OPFOR_Unit_Base);
-    class CLASS(TU_Unit_Base): CLASS(OPFOR_Unit_Base)
-    {
+    class CLASS(TU_Unit_Base): CLASS(OPFOR_Unit_Base) {
         SCOPE_HIDDEN;
         faction = QCLASS(Faction_TU);
         identityTypes[] = {"LanguageENG_F", "Head_NATO", QCLASS(TechnoUnion)};
@@ -15,8 +13,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_tan_co.paa"};
     };
 
-    class CLASS(TU_Unit_Rifleman): CLASS(TU_Unit_Base)
-    {
+    class CLASS(TU_Unit_Rifleman): CLASS(TU_Unit_Base) {
         SCOPE_PUBLIC;
 
         displayName = "Rifleman";
@@ -27,15 +24,13 @@ class CfgVehicles
 
         magazines[] = {QCLASS(Mag_100Rnd_E5)};
         respawnMagazines[] = {QCLASS(Mag_100Rnd_E5)};
-        items[] =
-        {
+        items[] = {
             // Medical
             ITEM_10("ACE_elasticBandage"),
             ITEM_4("ACE_tourniquet"),
             "FirstAidKit"
         };
-        respawnItems[] =
-        {
+        respawnItems[] = {
             // Medical
             ITEM_10("ACE_elasticBandage"),
             ITEM_4("ACE_tourniquet"),
@@ -47,8 +42,7 @@ class CfgVehicles
         backpack = QCLASS(TU_Backpack_Predef_Rifleman);
     };
 
-    class CLASS(TU_Unit_Rifleman_Shield): CLASS(TU_Unit_Rifleman)
-    {
+    class CLASS(TU_Unit_Rifleman_Shield): CLASS(TU_Unit_Rifleman) {
         displayName = "Rifleman (Shield)";
         editorPreview = EDITOR_PREVIEW(TU_Unit_Rifleman_Shield);
 
@@ -56,8 +50,7 @@ class CfgVehicles
         respawnWeapons[] = {QCLASS(E5_Shielded), "", "Throw", "Put"};
     };
 
-    class CLASS(TU_Unit_AT): CLASS(TU_Unit_Rifleman)
-    {
+    class CLASS(TU_Unit_AT): CLASS(TU_Unit_Rifleman) {
         displayName = "Rifleman (AT)";
         editorPreview = EDITOR_PREVIEW(TU_Unit_AT);
         icon = "iconManAT";
@@ -73,8 +66,7 @@ class CfgVehicles
         backpack = QCLASS(TU_Backpack_Heavy_Predef_AT);
     };
 
-    class CLASS(TU_Unit_AA): CLASS(TU_Unit_AT)
-    {
+    class CLASS(TU_Unit_AA): CLASS(TU_Unit_AT) {
         displayName = "Rifleman (AA)";
 
         weapons[] = {QCLASS(E5), "", QCLASS(E60R_AA), "Throw", "Put"};
@@ -85,8 +77,7 @@ class CfgVehicles
         backpack = QCLASS(TU_Backpack_Heavy_Predef_AA);
     };
 
-    class CLASS(TU_Unit_AssaultHeavy): CLASS(TU_Unit_Rifleman)
-    {
+    class CLASS(TU_Unit_AssaultHeavy): CLASS(TU_Unit_Rifleman) {
         displayName = "Heavy Assault";
         editorPreview = EDITOR_PREVIEW(TU_Unit_AssaultHeavy);
         icon = "iconManMG";
@@ -102,8 +93,7 @@ class CfgVehicles
         backpack = QCLASS(TU_Backpack_Assault_Predef_Heavy);
     };
 
-    class CLASS(TU_Unit_AssaultMedium): CLASS(TU_Unit_AssaultHeavy)
-    {
+    class CLASS(TU_Unit_AssaultMedium): CLASS(TU_Unit_AssaultHeavy) {
         displayName = "Medium Assault";
         editorPreview = EDITOR_PREVIEW(TU_Unit_AssaultMedium);
         linkedItems[] = {QCLASS(TU_Helmet_Assault), QCLASS(TU_Vest_AssaultMedium), LINKED_ITEMS_RADIO};
@@ -111,8 +101,7 @@ class CfgVehicles
         backpack = QCLASS(TU_Backpack_Assault_Predef_Medium);
     };
 
-    class CLASS(TU_Unit_SL): CLASS(TU_Unit_Rifleman)
-    {
+    class CLASS(TU_Unit_SL): CLASS(TU_Unit_Rifleman) {
         displayName = "Squad Leader";
         editorPreview = EDITOR_PREVIEW(TU_Unit_SL);
         icon = "iconManLeader";
@@ -122,8 +111,7 @@ class CfgVehicles
         backpack = QCLASS(TU_Backpack_RTO_Predef_SL);
     };
 
-    class CLASS(TU_Unit_Melee): CLASS(TU_Unit_Base)
-    {
+    class CLASS(TU_Unit_Melee): CLASS(TU_Unit_Base) {
         SCOPE_PUBLIC;
 
         displayName = "Swordsman (Rush)";
@@ -140,8 +128,7 @@ class CfgVehicles
     };
 
     class CLASS(Other_Backpack_Base);
-    class CLASS(TU_Backpack): CLASS(Other_Backpack_Base)
-    {
+    class CLASS(TU_Backpack): CLASS(Other_Backpack_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[TU] Backpack";
@@ -151,12 +138,10 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\sc_equipment\data\marine\textures\backpack_co.paa"};
         picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
-    class CLASS(TU_Backpack_Predef_Rifleman): CLASS(TU_Backpack)
-    {
+    class CLASS(TU_Backpack_Predef_Rifleman): CLASS(TU_Backpack) {
         SCOPE_HIDDEN;
 
-        class TransportMagazines
-        {
+        class TransportMagazines {
             MAG_XX(CLASS(Mag_100Rnd_E5),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
@@ -165,8 +150,7 @@ class CfgVehicles
         };
     };
 
-    class CLASS(TU_Backpack_Heavy): CLASS(TU_Backpack)
-    {
+    class CLASS(TU_Backpack_Heavy): CLASS(TU_Backpack) {
         displayName = "[TU] Heavy Backpack";
         maximumLoad = 450;
         mass = 35;
@@ -175,12 +159,10 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_co.paa"};
         picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
-    class CLASS(TU_Backpack_Heavy_Predef_AT): CLASS(TU_Backpack_Heavy)
-    {
+    class CLASS(TU_Backpack_Heavy_Predef_AT): CLASS(TU_Backpack_Heavy) {
         SCOPE_HIDDEN;
 
-        class TransportMagazines
-        {
+        class TransportMagazines {
             MAG_XX(CLASS(Mag_100Rnd_E5),10);
             MAG_XX(CLASS(Mag_1Rnd_E60R_HE),3);
             MAG_XX(CLASS(Mag_1Rnd_E60R_AT),3);
@@ -190,12 +172,10 @@ class CfgVehicles
             MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
         };
     };
-    class CLASS(TU_Backpack_Heavy_Predef_AA): CLASS(TU_Backpack_Heavy)
-    {
+    class CLASS(TU_Backpack_Heavy_Predef_AA): CLASS(TU_Backpack_Heavy) {
         SCOPE_HIDDEN;
 
-        class TransportMagazines
-        {
+        class TransportMagazines {
             MAG_XX(CLASS(Mag_100Rnd_E5),10);
             MAG_XX(CLASS(Mag_1Rnd_E60R_AA),6);
             MAG_XX(SC_IG3,2);
@@ -205,8 +185,7 @@ class CfgVehicles
         };
     };
 
-    class CLASS(TU_Backpack_Assault): CLASS(TU_Backpack)
-    {
+    class CLASS(TU_Backpack_Assault): CLASS(TU_Backpack) {
         displayName = "[TU] Assault Backpack";
         maximumLoad = 300;
         mass = 35;
@@ -215,12 +194,10 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_co.paa"};
         picture = "\sc_equipment\data\icons\icon_se_ca.paa";
     };
-    class CLASS(TU_Backpack_Assault_Predef_Heavy): CLASS(TU_Backpack_Assault)
-    {
+    class CLASS(TU_Backpack_Assault_Predef_Heavy): CLASS(TU_Backpack_Assault) {
         SCOPE_HIDDEN;
 
-        class TransportMagazines
-        {
+        class TransportMagazines {
             MAG_XX(CLASS(Mag_150Rnd_E5C),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
@@ -228,10 +205,8 @@ class CfgVehicles
             MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
         };
     };
-    class CLASS(TU_Backpack_Assault_Predef_Medium): CLASS(TU_Backpack_Assault_Predef_Heavy)
-    {
-        class TransportMagazines
-        {
+    class CLASS(TU_Backpack_Assault_Predef_Medium): CLASS(TU_Backpack_Assault_Predef_Heavy) {
+        class TransportMagazines {
             MAG_XX(CLASS(Mag_150Rnd_E5C),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
@@ -240,8 +215,7 @@ class CfgVehicles
         };
     };
 
-    class CLASS(TU_Backpack_RTO): CLASS(TU_Backpack)
-    {
+    class CLASS(TU_Backpack_RTO): CLASS(TU_Backpack) {
         displayName = "[TU] Radio Backpack";
         mass = 35;
 
@@ -257,12 +231,10 @@ class CfgVehicles
         tf_encryptionCode = "tf_east_radio_code";
         tf_subtype = "digital_lr";
     };
-    class CLASS(TU_Backpack_RTO_Predef_SL): CLASS(TU_Backpack_RTO)
-    {
+    class CLASS(TU_Backpack_RTO_Predef_SL): CLASS(TU_Backpack_RTO) {
         SCOPE_HIDDEN;
 
-        class TransportMagazines
-        {
+        class TransportMagazines {
             MAG_XX(CLASS(Mag_100Rnd_E5),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
@@ -272,8 +244,7 @@ class CfgVehicles
     };
 
     class CLASS(AAT_Base);
-    class CLASS(AAT_TU): CLASS(AAT_Base)
-    {
+    class CLASS(AAT_TU): CLASS(AAT_Base) {
         SCOPE_PUBLIC;
 
         faction = QCLASS(Faction_TU);
@@ -286,8 +257,7 @@ class CfgVehicles
     };
 
     class CLASS(AAT_Heavy_Base);
-    class CLASS(AAT_Heavy_TU): CLASS(AAT_Heavy_Base)
-    {
+    class CLASS(AAT_Heavy_TU): CLASS(AAT_Heavy_Base) {
         SCOPE_PUBLIC;
 
         faction = QCLASS(Faction_TU);
@@ -297,8 +267,7 @@ class CfgVehicles
     };
 
     class CLASS(AAT_King_Base);
-    class CLASS(AAT_King_TU): CLASS(AAT_King_Base)
-    {
+    class CLASS(AAT_King_TU): CLASS(AAT_King_Base) {
         SCOPE_PUBLIC;
 
         faction = QCLASS(Faction_TU);
@@ -308,8 +277,7 @@ class CfgVehicles
     };
 
     class BNA_KC_Plesioth_Base;
-    class BNA_KC_Plesioth_TU: BNA_KC_Plesioth_Base
-    {
+    class BNA_KC_Plesioth_TU: BNA_KC_Plesioth_Base {
         SCOPE_PUBLIC;
 
         side = OPFOR;
@@ -321,8 +289,7 @@ class CfgVehicles
     };
 
     class CLASS(Conga_IFV_Base);
-    class CLASS(Conga_IFV_TU): CLASS(Conga_IFV_Base)
-    {
+    class CLASS(Conga_IFV_TU): CLASS(Conga_IFV_Base) {
         SCOPE_PUBLIC;
 
         side = OPFOR;
@@ -334,8 +301,7 @@ class CfgVehicles
     };
 
     class CLASS(Conga_MGS_Base);
-    class CLASS(Conga_MGS_TU): CLASS(Conga_MGS_Base)
-    {
+    class CLASS(Conga_MGS_TU): CLASS(Conga_MGS_Base) {
         SCOPE_PUBLIC;
 
         side = OPFOR;
@@ -347,8 +313,7 @@ class CfgVehicles
     };
 
     class CLASS(ScoutTank_Base);
-    class CLASS(ScoutTank_TU): CLASS(ScoutTank_Base)
-    {
+    class CLASS(ScoutTank_TU): CLASS(ScoutTank_Base) {
         SCOPE_PUBLIC;
 
         side = OPFOR;
@@ -361,8 +326,7 @@ class CfgVehicles
     };
 
     class CLASS(Ogre_Base);
-    class CLASS(Ogre_TU): CLASS(Ogre_Base)
-    {
+    class CLASS(Ogre_TU): CLASS(Ogre_Base) {
         SCOPE_PUBLIC;
 
         side = OPFOR;
@@ -374,8 +338,7 @@ class CfgVehicles
     };
 
     class CLASS(Ogre_Armed_Base);
-    class CLASS(Ogre_Armed_TU): CLASS(Ogre_Armed_Base)
-    {
+    class CLASS(Ogre_Armed_TU): CLASS(Ogre_Armed_Base) {
         SCOPE_PUBLIC;
 
         side = OPFOR;
@@ -387,8 +350,7 @@ class CfgVehicles
     };
 
     class CLASS(Vespoid_Base);
-    class CLASS(Vespoid_TU): CLASS(Vespoid_Base)
-    {
+    class CLASS(Vespoid_TU): CLASS(Vespoid_Base) {
         SCOPE_PUBLIC;
 
         side = OPFOR;
@@ -400,8 +362,7 @@ class CfgVehicles
     };
 
     class CLASS(Vespoid_Armed_Base);
-    class CLASS(Vespoid_Armed_TU): CLASS(Vespoid_Armed_Base)
-    {
+    class CLASS(Vespoid_Armed_TU): CLASS(Vespoid_Armed_Base) {
         SCOPE_PUBLIC;
 
         side = OPFOR;
@@ -413,8 +374,7 @@ class CfgVehicles
     };
 
     class CLASS(Rathian_CAP_Base);
-    class CLASS(Rathian_CAP_TU): CLASS(Rathian_CAP_Base)
-    {
+    class CLASS(Rathian_CAP_TU): CLASS(Rathian_CAP_Base) {
         SCOPE_PUBLIC;
 
         side = OPFOR;
@@ -426,8 +386,7 @@ class CfgVehicles
     };
 
     class CLASS(Rathian_CAS_Base);
-    class CLASS(Rathian_CAS_TU): CLASS(Rathian_CAS_Base)
-    {
+    class CLASS(Rathian_CAS_TU): CLASS(Rathian_CAS_Base) {
         SCOPE_HIDDEN;
 
         side = OPFOR;

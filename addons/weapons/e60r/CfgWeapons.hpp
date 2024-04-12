@@ -1,12 +1,9 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class Launcher_Base_F;
-    class launch_RPG32_F: Launcher_Base_F
-    {
+    class launch_RPG32_F: Launcher_Base_F {
         class Single;
     };
-    class CLASS(E60R_AT_Base): launch_RPG32_F
-    {
+    class CLASS(E60R_AT_Base): launch_RPG32_F {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -16,8 +13,7 @@ class CfgWeapons
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
-        magazines[] =
-        {
+        magazines[] = {
             QCLASS(Mag_1Rnd_E60R_HE),
             QCLASS(Mag_1Rnd_E60R_AT)
         };
@@ -41,25 +37,21 @@ class CfgWeapons
         ace_overpressure_priority = 1;
         ace_overpressure_range = 2;
 
-        class Single: Single
-        {
-            class StandardSound
-            {
+        class Single: Single {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_E60RShot)};
             };
         };
     };
 
-    class CLASS(E60R_AT): CLASS(E60R_AT_Base)
-    {
+    class CLASS(E60R_AT): CLASS(E60R_AT_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] E-60R (AT)";
         baseWeapon = QCLASS(E60R_AT);
         JLTS_friedItem = QCLASS(E60R_AT_Fried);
     };
-    class CLASS(E60R_AT_Fried): CLASS(E60R_AT)
-    {
+    class CLASS(E60R_AT_Fried): CLASS(E60R_AT) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] E-60R (AT, Fried)";
@@ -72,13 +64,11 @@ class CfgWeapons
     };
 
     class launch_Titan_short_base;
-    class JLTS_E60R_AT: launch_Titan_short_base
-    {
+    class JLTS_E60R_AT: launch_Titan_short_base {
         class Single;
         class TopDown;
     };
-    class CLASS(E60R_AA_Base): JLTS_E60R_AT
-    {
+    class CLASS(E60R_AA_Base): JLTS_E60R_AT {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -102,24 +92,19 @@ class CfgWeapons
         ace_overpressure_priority = 1;
         ace_overpressure_range = 2;
 
-        class Single: Single
-        {
-            class StandardSound
-            {
+        class Single: Single {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_E60RShot)};
             };
         };
-        class TopDown: TopDown
-        {
-            class StandardSound
-            {
+        class TopDown: TopDown {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_E60RShot)};
             };
         };
     };
 
-    class CLASS(E60R_AA): CLASS(E60R_AA_Base)
-    {
+    class CLASS(E60R_AA): CLASS(E60R_AA_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] E-60R (AA)";
@@ -127,8 +112,7 @@ class CfgWeapons
 
         JLTS_friedItem = QCLASS(E60R_AA_Fried);
     };
-    class CLASS(E60R_AA_Fried): CLASS(E60R_AA)
-    {
+    class CLASS(E60R_AA_Fried): CLASS(E60R_AA) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] E-60R (AA, Fried)";

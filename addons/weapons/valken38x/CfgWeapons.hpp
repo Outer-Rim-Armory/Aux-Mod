@@ -2,24 +2,19 @@ class PointerSlot;
 class UnderBarrelSlot;
 class Mode_SemiAuto;
 
-class CfgWeapons
-{
+class CfgWeapons {
     class LFP_rifle_base;
-    class LFP_Valken38x: LFP_rifle_base
-    {
+    class LFP_Valken38x: LFP_rifle_base {
         class WeaponSlotsInfo;
-        class Single: Mode_SemiAuto
-        {
+        class Single: Mode_SemiAuto {
             class StandardSound;
         };
-        class OpticsModes
-        {
+        class OpticsModes {
             class DC15Xscope_sights;
             class DC15Xscope_scope;
         };
     };
-    class CLASS(Valken38x_Base): LFP_Valken38x
-    {
+    class CLASS(Valken38x_Base): LFP_Valken38x {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -40,31 +35,24 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class PointerSlot: PointerSlot
-            {
-                class CompatibleItems
-                {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class PointerSlot: PointerSlot {
+                class CompatibleItems {
                     ATTACHMENTS_POINTER_BASE;
                 };
             };
-            class UnderBarrelSlot: UnderBarrelSlot
-            {
-                class CompatibleItems
-                {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class CompatibleItems {
                     3as_bipod_dc15l_f = TRUE;
                 };
             };
         };
 
-        class Single: Single
-        {
+        class Single: Single {
             dispersion = 0;
             reloadTime = 2;
 
-            class StandardSound: StandardSound
-            {
+            class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_Valken38xShot)};
@@ -72,27 +60,23 @@ class CfgWeapons
             };
         };
 
-        class OpticsModes: OpticsModes
-        {
+        class OpticsModes: OpticsModes {
             class Sights: DC15Xscope_sights {};
-            class Scope: DC15Xscope_scope
-            {
+            class Scope: DC15Xscope_scope {
                 visionMode[] = {"Normal", "NVG", "TI"};
                 thermalMode[] = {WHOT};
             };
         };
     };
 
-    class CLASS(Valken38x): CLASS(Valken38x_Base)
-    {
+    class CLASS(Valken38x): CLASS(Valken38x_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Valken-38x";
         baseWeapon = QCLASS(Valken38x);
         JLTS_friedItem = QCLASS(Valken38x_Fried);
     };
-    class CLASS(Valken38x_Fried): CLASS(Valken38x)
-    {
+    class CLASS(Valken38x_Fried): CLASS(Valken38x) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] Valken-38x (Fried)";

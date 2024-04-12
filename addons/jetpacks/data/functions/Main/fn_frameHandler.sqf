@@ -24,8 +24,7 @@ if (isGamePaused) exitWith {};
 private _thisHandler = _this select 1;
 
 // Check if player can use jetpack, could potentially change while FH is running, such as dying; going uncon; etc.
-if (!(ace_player call FUNC(canJetpack)) or isTouchingGround ace_player) exitWith
-{
+if (!(ace_player call FUNC(canJetpack)) or isTouchingGround ace_player) exitWith {
     [_thisHandler] call CBA_fnc_removePerFrameHandler;
     BNA_KC_Jet_JetpackHandle = nil; // Set to nil, just removing the handler keeps the global variable's value
 
@@ -63,8 +62,7 @@ private _speed = 0;
 
 // Mid-air movement, apply speed to unit based on keyboard input
 // Uses diag_deltaTime to account for performance
-if (inputAction "MoveForward" == 1) then
-{
+if (inputAction "MoveForward" == 1) then {
     _speed = _jetSpeed * BASE_SPEED * diag_deltaTime;
     _velocity =
     [
@@ -74,8 +72,7 @@ if (inputAction "MoveForward" == 1) then
     ];
 };
 
-if (inputAction "TurnLeft" == 1) then
-{
+if (inputAction "TurnLeft" == 1) then {
     _speed = _jetSpeed * BASE_SPEED * diag_deltaTime;
     _velocity =
     [
@@ -85,8 +82,7 @@ if (inputAction "TurnLeft" == 1) then
     ];
 };
 
-if (inputAction "TurnRight" == 1) then
-{
+if (inputAction "TurnRight" == 1) then {
     _speed = _jetSpeed * BASE_SPEED * diag_deltaTime;
     _velocity =
     [
@@ -96,8 +92,7 @@ if (inputAction "TurnRight" == 1) then
     ];
 };
 
-if (inputAction "MoveBack" == 1) then
-{
+if (inputAction "MoveBack" == 1) then {
     _speed = _jetSpeed * BASE_SPEED * diag_deltaTime;
     _velocity =
     [
@@ -107,19 +102,16 @@ if (inputAction "MoveBack" == 1) then
     ];
 };
 
-if (ace_player getvariable ["BNA_KC_Jet_rise", false]) then
-{
+if (ace_player getvariable ["BNA_KC_Jet_rise", false]) then {
     _velocity set [2, (_velocity#2) + (_jetStrength * diag_deltaTime)];
 };
 
-if (ace_player getVariable ["BNA_KC_Jet_slowFall", false]) then
-{
+if (ace_player getVariable ["BNA_KC_Jet_slowFall", false]) then {
     _velocity set [2, (_velocity#2) max -5];
     // Caps downward velocity
 };
 
-if (ace_player getVariable ["BNA_KC_Jet_hover", false]) then
-{
+if (ace_player getVariable ["BNA_KC_Jet_hover", false]) then {
     private _speed = random 2; // Get random number
     _speed = _speed - 1;       // Allows for potentially negative values, makes the hover not 100% perfect
 

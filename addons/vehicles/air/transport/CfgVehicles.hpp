@@ -1,12 +1,9 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class 3AS_Republic_Transport_01_Base;
-    class 3AS_Republic_Transport_01: 3AS_Republic_Transport_01_Base
-    {
+    class 3AS_Republic_Transport_01: 3AS_Republic_Transport_01_Base {
         class ACE_SelfActions;
     };
-    class CLASS(RepublicTransport): 3AS_Republic_Transport_01
-    {
+    class CLASS(RepublicTransport): 3AS_Republic_Transport_01 {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -19,53 +16,44 @@ class CfgVehicles
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
         weapons[] = {QCLASS(Cannon_ARC_Light), "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
-        magazines[] =
-        {
+        magazines[] = {
             "3as_ARC_500Rnd_Light_Shells",
             "3as_ARC_500Rnd_Light_Shells",
             "ls_mag_300Rnd_CMFlareChaff_blue",
             "Laserbatteries"
         };
 
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
            QPATHTOF(air\transport\data\textures\KeeliCompany\Body_co.paa),
             "\3as\3as_starships\data\hs_int_co.paa",
             "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
         };
 
         textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1};
-        class TextureSources
-        {
-            class Standard
-            {
+        class TextureSources {
+            class Standard {
                 author = "3rd Army Studios";
                 displayName = "Standard";
                 factions[] = {};
-                textures[] =
-                {
+                textures[] = {
                     "\3as\3as_starships\data\hs_ext_co.paa",
                     "\3as\3as_starships\data\hs_int_co.paa",
                     "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
                 };
             };
-            class Imperial: Standard
-            {
+            class Imperial: Standard {
                 displayName = "Imperial";
-                textures[] =
-                {
+                textures[] = {
                     "\3as\3as_starships\data\hs_Imp_ext_co.paa",
                     "\3as\3as_starships\data\hs_int_co.paa",
                     "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
                 };
             };
-            class KeeliCompany: Standard
-            {
+            class KeeliCompany: Standard {
                 author = AUTHOR;
                 displayName = "Keeli Company";
                 factions[] = {};
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(air\transport\data\textures\KeeliCompany\Body_co.paa),
                     "\3as\3as_starships\data\hs_int_co.paa",
                     "\a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa"
@@ -73,16 +61,14 @@ class CfgVehicles
             };
         };
 
-        class ACE_SelfActions: ACE_SelfActions
-        {
+        class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
         };
 
         INVENTORY_VEHICLE_BASE(2);
     };
 
-    class CLASS(RepubTransport): CLASS(RepublicTransport)
-    {
+    class CLASS(RepubTransport): CLASS(RepublicTransport) {
         SCOPE_HIDDEN;
     };
 };

@@ -5,20 +5,19 @@
 
 #define SHIELD_DAMAGE_COLOR_SCALE ["#FF0000", "#FF4400", "#FF7D16", "#FF9916", "#FCB121", "#FFD52C", "#FFEC4D", "#FFFF7E", "#FFFFFF"]
 
-#define SHIELD_TOGGLE class CLASS(Shield) \
-{ \
+#define SHIELD_TOGGLE class GVAR(toggle) { \
     displayName = "Shield Health: %1"; \
     condition = "true"; \
     statement = ""; \
     modifierFunction = QUOTE(_this call FUNC(modifyInteraction)); \
-    class Activate \
-    { \
+
+    class Activate { \
         displayName = "Activate Shield"; \
         condition = QUOTE(ace_player call FUNC(canActivate)); \
         statement = QUOTE(_this call FUNC(activate)); \
     }; \
-    class Deactivate \
-    { \
+
+    class Deactivate { \
         displayName = "Deactivate Shield"; \
         condition = QUOTE(ace_player call FUNC(canDeactivate)); \
         statement = QUOTE(_this call FUNC(deactivate)); \

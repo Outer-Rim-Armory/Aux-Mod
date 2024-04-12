@@ -1,5 +1,4 @@
-class CLASS(Uniform_ARC_CT)
-{
+class CLASS(Uniform_ARC_CT) {
     model = QCLASS(Uniforms_ARC);
     camo = "CT";
 };

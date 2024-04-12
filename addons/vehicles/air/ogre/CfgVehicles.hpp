@@ -1,27 +1,21 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class All;
-    class AllVehicles: All
-    {
+    class AllVehicles: All {
         class CargoTurret;
     };
     class Air: AllVehicles {};
     class Helicopter: Air {};
     class Helicopter_Base_F: Helicopter {};
-    class Helicopter_Base_H: Helicopter_Base_F
-    {
+    class Helicopter_Base_H: Helicopter_Base_F {
         class Turrets;
     };
-    class OPTRE_Pelican_F: Helicopter_Base_H
-    {
+    class OPTRE_Pelican_F: Helicopter_Base_H {
         class ACE_SelfActions;
-        class Turrets: Turrets
-        {
+        class Turrets: Turrets {
             class CopilotTurret;
         };
     };
-    class CLASS(Ogre_Base): OPTRE_Pelican_F
-    {
+    class CLASS(Ogre_Base): OPTRE_Pelican_F {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -31,8 +25,7 @@ class CfgVehicles
         displayName = "Ogre";
 
         weapons[] = {"CMFlareLauncher"};
-        magazines[] =
-        {
+        magazines[] = {
             "168Rnd_CMFlare_Chaff_Magazine"
         };
 
@@ -45,39 +38,32 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
 
         textureList[] = {"TechnoUnion", 1, "EPF", 0};
-        class TextureSources
-        {
-            class TechnoUnion
-            {
+        class TextureSources {
+            class TechnoUnion {
                 author = "Article 2 Studios";
                 displayName = "Techno Union";
                 factions[] = {QCLASS(Faction_TU)};
                 textures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
             };
-            class EPF: TechnoUnion
-            {
+            class EPF: TechnoUnion {
                 displayName = "El President Forces";
                 factions[] = {QCLASS(Faction_EPF)};
                 textures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_standard_CO.paa"};
             };
         };
 
-        class ACE_SelfActions: ACE_SelfActions
-        {
+        class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
         };
     };
 
-    class CLASS(Ogre_Armed_Base): CLASS(Ogre_Base)
-    {
+    class CLASS(Ogre_Armed_Base): CLASS(Ogre_Base) {
         displayName = "Ogre (Armed)";
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Ogre_Armed_Tan);
         hiddenSelections[] = {"camo1", "camo3", "clan", "clan_text", "insignia"};
 
-        class Turrets: Turrets
-        {
-            class CopilotTurret: CopilotTurret
-            {
+        class Turrets: Turrets {
+            class CopilotTurret: CopilotTurret {
                 animationSourceBody = "mainTurret";
                 animationSourceGun = "mainGun";
                 body = "mainTurret";
@@ -126,8 +112,7 @@ class CfgVehicles
                 visionMode[] = {"Normal", "NVG", "Ti"};
                 thermalMode[] = {0};
                 weapons[] = {"OPTRE_CHAINGUN40", "CMFlareLauncher", "Laserdesignator_mounted"};
-                magazines[] =
-                {
+                magazines[] = {
                     "OPTRE_1200Rnd_40mm_HE",
                     "OPTRE_1200Rnd_40mm_HE",
                     "OPTRE_1200Rnd_40mm_HE",
@@ -137,8 +122,7 @@ class CfgVehicles
                     "Laserbatteries"
                 };
             };
-            class CargoTurret_01: CargoTurret
-            {
+            class CargoTurret_01: CargoTurret {
                 ejectDeadGunner = 0;
                 enabledByAnimationSource = "cargoDoors";
                 gunnerAction = "passenger_inside_2";
@@ -154,8 +138,7 @@ class CfgVehicles
                 memoryPointsGetInGunnerDir = "pos_cargo_l_dir";
                 proxyIndex = 1;
             };
-            class CargoTurret_02: CargoTurret_01
-            {
+            class CargoTurret_02: CargoTurret_01 {
                 gunnerName = "Passenger (Right door)";
                 maxTurn = 50;
                 minTurn = -10;

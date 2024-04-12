@@ -1,20 +1,16 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class Car_F;
-    class Wheeled_Apc_F: Car_F
-    {
+    class Wheeled_Apc_F: Car_F {
         class HitPoints;
     };
-    class 3AS_Jug_base_F: Wheeled_Apc_F
-    {
+    class 3AS_Jug_base_F: Wheeled_Apc_F {
         // class HitPoints: HitPoints
         // {
         //     class HitBody;
         //     class HitHull;
         // };
         class ACE_SelfActions;
-        class UserActions
-        {
+        class UserActions {
             class Crow_Nest_Up;
             class Crow_Nest_Down;
             class Open_Rockets;
@@ -23,8 +19,7 @@ class CfgVehicles
     };
     class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F {};
     class 3AS_Jug: 3AS_B_Jug_01_base_F {};
-    class CLASS(Juggernaut): 3AS_Jug
-    {
+    class CLASS(Juggernaut): 3AS_Jug {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -38,14 +33,12 @@ class CfgVehicles
 
         ace_cargo_space = 20;
 
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Horn_Juggernaut),
             QCLASS(Alarm_Juggernaut)
         };
 
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\body_co.paa),
             QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\guns_co.paa),
             "\3AS\3AS_Jug\data\juggernaut_props_co.paa",
@@ -53,27 +46,22 @@ class CfgVehicles
         };
 
         textureList[] = {"Standard", 0, "KeeliCompany", 1};
-        class TextureSources
-        {
-            class Standard
-            {
+        class TextureSources {
+            class Standard {
                 author = "3rd Army Studios";
                 displayName = "Standard";
                 factions[] = {};
-                textures[] =
-                {
+                textures[] = {
                     "\3AS\3AS_Jug\data\juggernaut_base_co.paa",
                     "\3AS\3AS_Jug\data\juggernaut_guns_co.paa",
                     "\3AS\3AS_Jug\data\juggernaut_props_co.paa",
                     "\3AS\3AS_Jug\data\juggernaut_wheels_co.paa"
                 };
             };
-            class KeeliCompany: Standard
-            {
+            class KeeliCompany: Standard {
                 author = AUTHOR;
                 displayName = "Keeli Company";
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\body_co.paa),
                     QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\guns_co.paa),
                     "\3AS\3AS_Jug\data\juggernaut_props_co.paa",
@@ -97,27 +85,21 @@ class CfgVehicles
         //     };
         // };
 
-        class ACE_SelfActions: ACE_SelfActions
-        {
+        class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
         };
 
-        class UserActions: UserActions
-        {
-            class Crow_Nest_Up: Crow_Nest_Up
-            {
+        class UserActions: UserActions {
+            class Crow_Nest_Up: Crow_Nest_Up {
                 condition = QUOTE(this animationSourcePhase 'crownest' == 0 and alive this and ace_player == this turretUnit [4]);
             };
-            class Crow_Nest_Down: Crow_Nest_Down
-            {
+            class Crow_Nest_Down: Crow_Nest_Down {
                 condition = QUOTE(this animationSourcePhase 'crownest' == 5 and alive this and ace_player == this turretUnit [4]);
             };
-            class Open_Rockets: Open_Rockets
-            {
+            class Open_Rockets: Open_Rockets {
                 condition = QUOTE(this animationSourcePhase 'rocket_move' == 1  and alive this and ace_player == this turretUnit [3]);
             };
-            class Close_Rockets: Close_Rockets
-            {
+            class Close_Rockets: Close_Rockets {
                 condition = QUOTE(this animationSourcePhase 'rocket_move' == 0 and alive this and ace_player == this turretUnit [3]);
             };
         };

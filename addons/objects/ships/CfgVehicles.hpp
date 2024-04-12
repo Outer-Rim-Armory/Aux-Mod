@@ -1,19 +1,16 @@
-class CfgVehicles
-{
+class CfgVehicles {
     #include "configs\Resurgence_Parts.hpp"
 
     class venator_base_5;
-    class CLASS(Venator_Resurgence_ClosedFullyHollowed): venator_base_5
-    {
+    class CLASS(Venator_Resurgence_ClosedFullyHollowed): venator_base_5 {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
         editorCategory = QEDCAT(Objects);
-        editorSubcategory = QCLASS(EdSubcat_StaticShips);
+        editorSubcategory = QEDSUBCAT(StaticShips);
 
         displayName = "Resurgence (Closed Fully Hollowed)";
-        multiStructureParts[] =
-        {
+        multiStructureParts[] = {
             {QCLASS(Venator_Resurgence_Body1_1), "body1_1"},
             {QCLASS(Venator_Resurgence_Body1_2), "body1_2"},
             {QCLASS(Venator_Resurgence_Body2_1), "body2_1"},
@@ -33,11 +30,9 @@ class CfgVehicles
         };
     };
 
-    class CLASS(Venator_Resurgence_OpenFullyHollowed): CLASS(Venator_Resurgence_ClosedFullyHollowed)
-    {
+    class CLASS(Venator_Resurgence_OpenFullyHollowed): CLASS(Venator_Resurgence_ClosedFullyHollowed) {
         displayName = "Resurgence (Open Fully Hollowed)";
-        multiStructureParts[] =
-        {
+        multiStructureParts[] = {
             {QCLASS(Venator_Resurgence_Body1_1), "body1_1"},
             {QCLASS(Venator_Resurgence_Body1_2), "body1_2"},
             {QCLASS(Venator_Resurgence_Body2_1), "body2_1"},
@@ -58,18 +53,16 @@ class CfgVehicles
     };
 
     class venator_zeus;
-    class CLASS(Venator_Resurgence_Zeus): venator_zeus
-    {
+    class CLASS(Venator_Resurgence_Zeus): venator_zeus {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
         editorCategory = QEDCAT(Objects);
-        editorSubcategory = QCLASS(EdSubcat_StaticShips);
+        editorSubcategory = QEDSUBCAT(StaticShips);
 
         displayName = "Resurgance (Zeus)";
 
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             QPATHTOF(ships\data\Resurgence\Body1_co.paa),
             QPATHTOF(ships\data\Resurgence\Body2_co.paa),
             QPATHTOF(ships\data\Resurgence\Body3_co.paa),

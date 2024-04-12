@@ -1,5 +1,4 @@
-class CLASS(Vest_Basic)
-{
+class CLASS(Vest_Basic) {
     model = QCLASS(Vests_Infantry);
     camo = "Basic";
 };
@@ -16,8 +15,7 @@ class CLASS(Vest_Hazard): CLASS(Vest_Basic) { camo = "Hazard"; };
 class CLASS(Vest_Kama): CLASS(Vest_Basic) { camo = "Kama"; };
 class CLASS(Vest_Tactical_Commander): CLASS(Vest_Basic) { camo = "Tactical_Commander"; };
 
-class CLASS(Vest_CLC)
-{
+class CLASS(Vest_CLC) {
     model = QCLASS(Vests_Infantry_Ranked);
     camo = "CLC";
 };
@@ -32,8 +30,7 @@ class CLASS(Vest_WO): CLASS(Vest_CLC) { camo = "WO"; };
 class CLASS(Vest_Commander): CLASS(Vest_CLC) { camo = "CMD"; };
 class CLASS(Vest_Commander_v2): CLASS(Vest_CLC) { camo = "CMD_v2"; };
 
-class CLASS(Vest_Medic)
-{
+class CLASS(Vest_Medic) {
     model = QCLASS(Vests_Infantry_Medic);
     camo = "Medic";
 };

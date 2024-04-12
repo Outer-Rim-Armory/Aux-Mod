@@ -1,5 +1,4 @@
-class CLASS(Helmet_ARF_Base)
-{
+class CLASS(Helmet_ARF_Base) {
     model = QCLASS(Helmets_ARF);
     camo = "Base";
 };

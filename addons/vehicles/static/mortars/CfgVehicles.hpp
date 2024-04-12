@@ -1,30 +1,23 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class LandVehicle;
-    class StaticWeapon: LandVehicle
-    {
-        class HitPoints
-        {
+    class StaticWeapon: LandVehicle {
+        class HitPoints {
             class HitBody;
         };
     };
     class StaticMortar: StaticWeapon {};
-    class Mortar_01_base_F: StaticMortar
-    {
+    class Mortar_01_base_F: StaticMortar {
         class Turrets;
     };
     class B_Mortar_01_F: Mortar_01_base_F {};
-    class 3AS_Republic_Mortar: B_Mortar_01_F
-    {
+    class 3AS_Republic_Mortar: B_Mortar_01_F {
         class ace_csw;
         class UserActions;
-        class Turrets: Turrets
-        {
+        class Turrets: Turrets {
             class MainTurret;
         };
     };
-    class CLASS(Mortar_Base): 3AS_Republic_Mortar
-    {
+    class CLASS(Mortar_Base): 3AS_Republic_Mortar {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -43,10 +36,8 @@ class CfgVehicles
         ace_dragging_carryPosition[] = {0, 1.2, 0};
         ace_dragging_dragDirection = 0;
 
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret
-            {
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
                 magazines[] = {};
                 weapons[] = {};
 
@@ -55,17 +46,14 @@ class CfgVehicles
             };
         };
 
-        class HitPoints: HitPoints
-        {
-            class HitBody: HitBody
-            {
+        class HitPoints: HitPoints {
+            class HitBody: HitBody {
                 armor = 5;
                 armorStructural = 0.25;
             };
         };
 
-        class ace_csw: ace_csw
-        {
+        class ace_csw: ace_csw {
             ammoLoadTime = 5;
             ammoUnloadTime = 5;
             desiredAmmo = 6;
@@ -73,8 +61,7 @@ class CfgVehicles
             magazineLocation = QUOTE(_target selectionPosition 'usti hlavne');
         };
 
-        class assembleInfo
-        {
+        class assembleInfo {
             assembleTo = "";
             base = "";
             displayName = "";
@@ -82,10 +69,8 @@ class CfgVehicles
             primary = 0;
         };
 
-        class UserActions: UserActions
-        {
-            class GVAR(CSW_PickUp)
-            {
+        class UserActions: UserActions {
+            class GVAR(CSW_PickUp) {
                 displayName = "Disassemble Mortar";
                 displayNameDefault = "";
 
@@ -101,8 +86,7 @@ class CfgVehicles
             };
         };
     };
-    class CLASS(Mortar_M190): CLASS(Mortar_Base)
-    {
+    class CLASS(Mortar_M190): CLASS(Mortar_Base) {
         SCOPE_PUBLIC;
 
         faction = QCLASS(Faction_KC);
@@ -113,18 +97,14 @@ class CfgVehicles
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         side = BLUFOR;
 
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             "\3AS\3AS_Static\Mortar\data\base.001_co.paa",
             "\3AS\3AS_Static\Mortar\data\tube.001_co.paa"
         };
 
-        class Turrets: Turrets
-        {
-            class MainTurret: MainTurret
-            {
-                magazines[] =
-                {
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                magazines[] = {
                     QCLASS(Mag_6Rnd_Mortar_82mm_HE),
                     QCLASS(Mag_6Rnd_Mortar_SmokeWhite),
                     QCLASS(Mag_6Rnd_Mortar_SmokeBlue),
@@ -134,8 +114,7 @@ class CfgVehicles
             };
         };
 
-        class ace_csw: ace_csw
-        {
+        class ace_csw: ace_csw {
             enabled = TRUE;
             disassembleTo = QCLASS(Mortar_M190_Carry);
             proxyWeapon = QCLASS(Mortar_M190_ProxyWeapon);

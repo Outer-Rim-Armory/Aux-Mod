@@ -18,8 +18,7 @@ params ["_message"];
 
 _message = format["[%1] %2", _fnc_scriptNameParent, _message];
 
-if (CWR_Debug_ShowMessages) then
-{
+if (CWR_Debug_ShowMessages) then {
     systemChat _message;
 };
 diag_log _message;

@@ -1,5 +1,4 @@
-class CLASS(Uniform_Base)
-{
+class CLASS(Uniform_Base) {
     model = QCLASS(Uniforms_Ranks_Infantry);
     camo = "Base";
 };
