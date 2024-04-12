@@ -107,7 +107,11 @@ class CfgCloudlets {
         weight = 1.05;
     };
     class CLASS(Effects_JetpackSparks_Blue): CLASS(Effects_SparksBase) {
-        color[] = { {0.2, 0.2, 1, -6.5}, {0.2, 0.2, 1, -6}, {0.2, 0.2, 1, -5.5}, {0.2, 0.2, 1, -5}
+        color[] = {
+            {0.2, 0.2, 1, -6.5},
+            {0.2, 0.2, 1, -6},
+            {0.2, 0.2, 1, -5.5},
+            {0.2, 0.2, 1, -5}
         };
         colorVar[] = {0, 0.15, 0.15, 0}; // lets the color vary slightly
         colorCoef[] = {1, 1, 1, 1};
@@ -171,7 +175,11 @@ class CfgCloudlets {
         weight = 0.05;
     };
     class CLASS(Effects_JetpackSmoke): CLASS(Effects_SmokeBase) {
-        color[] = { {0.9, 0.9, 0.9, 0.08}, {0.9, 0.9, 0.9, 0.04}, {0.9, 0.9, 0.9, 0.01}, {0.9, 0.9, 0.9, 0.001}
+        color[] = {
+            {0.9, 0.9, 0.9, 0.08},
+            {0.9, 0.9, 0.9, 0.04},
+            {0.9, 0.9, 0.9, 0.01},
+            {0.9, 0.9, 0.9, 0.001}
         };
         colorCoef[] = {1, 1, 1, 1};
 

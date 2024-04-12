@@ -44,7 +44,15 @@ class CfgVehicles {
         idleRpm = 1000;
         redRpm = 4000;
         peakTorque = 1546;
-        torqueCurve[] = { {0, 0.3}, {0.178, 0.5}, {0.25, 0.85}, {0.4, 0.95}, {0.5, 1}, {0.625, 0.95}, {0.75, 0.7}, {1, 0.5}
+        torqueCurve[] = {
+            {0, 0.3},
+            {0.178, 0.5},
+            {0.25, 0.85},
+            {0.4, 0.95},
+            {0.5, 1},
+            {0.625, 0.95},
+            {0.75, 0.7},
+            {1, 0.5}
         };
         dampingRateFullThrottle = 0.08;
         dampingRateZeroThrottleClutchDisengaged = 0.35;
@@ -161,7 +169,15 @@ class CfgVehicles {
         idleRpm = 1000;
         redRpm = 4000;
         peakTorque = 1546;
-        torqueCurve[] = { {0, 0.3}, {0.178, 0.5}, {0.25, 0.85}, {0.4, 0.95}, {0.5, 1}, {0.625, 0.95}, {0.75, 0.7}, {1, 0.5}
+        torqueCurve[] = {
+            {0, 0.3},
+            {0.178, 0.5},
+            {0.25, 0.85},
+            {0.4, 0.95},
+            {0.5, 1},
+            {0.625, 0.95},
+            {0.75, 0.7},
+            {1, 0.5}
         };
         dampingRateFullThrottle = 0.08;
         dampingRateZeroThrottleClutchDisengaged = 0.35;

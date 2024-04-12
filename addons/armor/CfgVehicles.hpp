@@ -336,13 +336,17 @@ class CfgVehicles {
         JLTS_isJumppack = TRUE;
         JLTS_settingsDialog = "JLTS_clone_jumppack_dialog";
 
-        JLTS_energy[] = {15,150};
-        JLTS_jumpLimits[] = {50,{2,50},"default"};
+        JLTS_energy[] = {15, 150};
+        JLTS_jumpLimits[] = {50, {2, 50}, "default"};
         JLTS_steeringCoef = 0.1;
         JLTS_recharge = 2;
 
         JLTS_effectPoints[] = {"effect_left", "effect_right"};
-        JLTS_sounds[] = { {"\MRC\JLTS\jumppacks\sounds\ignite.wss",1,1}, {"\MRC\JLTS\jumppacks\sounds\ignite_fail.wss",3,1}, {"\MRC\JLTS\jumppacks\sounds\stop.wss",1,1}, {"\MRC\JLTS\jumppacks\sounds\stop_emergency.wss",5,1},
+        JLTS_sounds[] = {
+            {"\MRC\JLTS\jumppacks\sounds\ignite.wss", 1, 1},
+            {"\MRC\JLTS\jumppacks\sounds\ignite_fail.wss", 3, 1},
+            {"\MRC\JLTS\jumppacks\sounds\stop.wss", 1, 1},
+            {"\MRC\JLTS\jumppacks\sounds\stop_emergency.wss", 5, 1},
             "JLTS_jumppack_error",
             "JLTS_SFX_jumppack_idle"
         };
@@ -368,8 +372,8 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
 
-        JLTS_energy[] = {10,100};
-        JLTS_jumpLimits[] = {50,{2,15},"default"};
+        JLTS_energy[] = {10, 100};
+        JLTS_jumpLimits[] = {50, {2, 15}, "default"};
         JLTS_recharge = 1;
     };
 
@@ -395,7 +399,7 @@ class CfgVehicles {
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 
         JLTS_energy[] = {5,50};
-        JLTS_jumpLimits[] = {15,{2,30},"default"};
+        JLTS_jumpLimits[] = {15, {2, 30}, "default"};
         JLTS_steeringCoef = 0.02;
         JLTS_effectPoints[] = {"effect"};
     };
