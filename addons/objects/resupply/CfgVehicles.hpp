@@ -222,4 +222,16 @@ class CfgVehicles {
             WEAP_XX(CLASS(RPS6_Loaded),10);
         };
     };
+
+    class CLASS(Resupply_MortarLaunchers): CLASS(Resupply_Base) {
+        displayName = "M-190 Mortar Crate";
+
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+
+        class TransportWeapons {
+            WEAP_XX(CLASS(Mortar_M190_Carry),6);
+        };
+    };
 };
