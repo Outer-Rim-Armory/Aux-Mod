@@ -180,51 +180,44 @@ class CfgMusic {
 
 
     // Unknown
-    class BNA_KC_AxeManTheme
-    {
+    class BNA_KC_AxeManTheme {
         name = "Axe Man Theme (Hype/Hopeful)";
         sound[] = {QPATHTOF(data\music\UNK_AxeManTheme.ogg), "db+0", 1};
         duration = 92;
         musicClass = QCLASS(MusicCat_Other); // Music category
     };
-    class BNA_KC_Infection
-    {
+    class BNA_KC_Infection {
         name = "OutBreak";
         sound[] = {QPATHTOF(data\music\UNK_Infection.ogg), "db+0", 1};
         duration = 232;
         musicClass = QCLASS(MusicCat_VideoGames); // Music category
     };
-    class BNA_KC_Woods_Betrayal
-    {
+    class BNA_KC_Woods_Betrayal {
         name = "Wood's Betrayal";
         sound[] = {QPATHTOF(data\music\UNK_Wood's_Betrayal), "db+0", 1};
         duration = 350;
         musicClass = QCLASS(MusicCat_StarWars); // Music category
     };
-    class BNA_KC_TU1
-    {
+    class BNA_KC_TU1 {
         name = "Techno Union BM 1";
         sound[] = {QPATHTOF(data\music\UNK_TU_Theme.ogg), "db+0", 1};
         duration = 202;
         musicClass = QCLASS(MusicCat_Other); // Music category
     };
 
-    class BNA_KC_TU2
-    {
+    class BNA_KC_TU2 {
         name = "Techno Union BM 2";
         sound[] = {QPATHTOF(data\music\UNK_TU_Theme2.ogg), "db+0", 1};
         duration = 202;
         musicClass = QCLASS(MusicCat_Other); // Music category
     };
-    class BNA_KC_TU3
-    {
+    class BNA_KC_TU3 {
         name = "Techno Union BM 3";
         sound[] = {QPATHTOF(data\music\UNK_TU_Theme3.ogg), "db+0", 1};
         duration = 150;
         musicClass = QCLASS(MusicCat_Other); // Music category
     };
-    class BNA_KC_FatherG
-    {
+    class BNA_KC_FatherG {
         name = "Father G";
         sound[] = {QPATHTOF(data\music\UNK_FatherG.ogg), "db+0", 1};
         duration = 262;

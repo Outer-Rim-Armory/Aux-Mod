@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_150Rnd_X42): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_150Rnd_X42): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] X-42 Fuel Tank";
         descriptionShort = "Flamethrower Fuel Tank<br/>Burn Time: 2.5 minutes<br/>Used In: X-42 Heavy Flamethrower";

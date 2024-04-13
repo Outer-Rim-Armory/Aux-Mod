@@ -1,35 +1,28 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class CLASS(Muzzle_Stun);
     class CLASS(Muzzle_Stun_Fried);
     class UGL_F;
 
     class arifle_MX_Base_F;
-    class JLTS_DC15A: arifle_MX_Base_F
-    {
+    class JLTS_DC15A: arifle_MX_Base_F {
         class WeaponSlotsInfo;
         class Single;
         class FullAuto;
     };
-    class JLTS_DC15A_plastic: JLTS_DC15A
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
+    class JLTS_DC15A_plastic: JLTS_DC15A {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
         };
 
-        class Single: Single
-        {
+        class Single: Single {
             class StandardSound;
         };
-        class FullAuto: FullAuto
-        {
+        class FullAuto: FullAuto {
             class StandardSound;
         };
     };
-    class CLASS(DC15A_Base): JLTS_DC15A_plastic
-    {
+    class CLASS(DC15A_Base): JLTS_DC15A_plastic {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -46,42 +39,33 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot
-            {
-                class CompatibleItems
-                {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot {
+                class CompatibleItems {
                     ATTACHMENTS_OPTIC_MEDIUM;
                     ATTACHMENTS_OPTIC_SIGHTS;
                 };
             };
-            class PointerSlot: PointerSlot
-            {
-                class CompatibleItems
-                {
+            class PointerSlot: PointerSlot {
+                class CompatibleItems {
                     ATTACHMENTS_POINTER_BASE;
                 };
             };
         };
 
-        class Single: Single
-        {
+        class Single: Single {
             reloadTime = 0.098361;
-            class StandardSound: StandardSound
-            {
+            class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_DC15AShot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_DC15AShot)};
             };
         };
-        class FullAuto: FullAuto
-        {
+        class FullAuto: FullAuto {
             reloadTime = 0.098361;
 
-            class StandardSound: StandardSound
-            {
+            class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_DC15AShot)};
@@ -91,8 +75,7 @@ class CfgWeapons
         class Stun: CLASS(Muzzle_Stun) {};
     };
 
-    class CLASS(DC15A): CLASS(DC15A_Base)
-    {
+    class CLASS(DC15A): CLASS(DC15A_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] DC-15A";
@@ -100,8 +83,7 @@ class CfgWeapons
 
         JLTS_friedItem = QCLASS(DC15A_Fried);
     };
-    class CLASS(DC15A_Fried): CLASS(DC15A)
-    {
+    class CLASS(DC15A_Fried): CLASS(DC15A) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-15A (Fried)";
@@ -115,8 +97,7 @@ class CfgWeapons
         class Stun: CLASS(Muzzle_Stun_Fried) {};
     };
 
-    class CLASS(DC15A_UGL): CLASS(DC15A_Base)
-    {
+    class CLASS(DC15A_UGL): CLASS(DC15A_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] DC-15A UGL";
@@ -127,8 +108,7 @@ class CfgWeapons
         model = "\MRC\JLTS\weapons\DC15A\DC15A_ugl_plastic.p3d";
         hiddenSelections[] = {"camo1", "camo2", "illum"};
         hiddenSelectionsMaterials[] = {"", "", "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             "\MRC\JLTS\weapons\DC15A\data\DC15A_plastic_co.paa",
             "\MRC\JLTS\weapons\DC15A\data\DC15A_ugl_co.paa"
         };
@@ -141,8 +121,7 @@ class CfgWeapons
         JLTS_friedItem = QCLASS(DC15A_UGL_Fried);
         JLTS_repairTime = 35;
 
-        class UGL: UGL_F
-        {
+        class UGL: UGL_F {
             displayName = "Grenade Launcher";
             descriptionShort = "UGL";
 
@@ -160,8 +139,7 @@ class CfgWeapons
         };
     };
 
-    class CLASS(DC15A_UGL_Fried): CLASS(DC15A_UGL)
-    {
+    class CLASS(DC15A_UGL_Fried): CLASS(DC15A_UGL) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-15A UGL (Fried)";
@@ -172,8 +150,7 @@ class CfgWeapons
         JLTS_isFried = TRUE;
         magazines[] = {};
 
-        class UGL: UGL
-        {
+        class UGL: UGL {
             displayName = "Grenade Launcher (Fried)";
             magazines[] = {};
             magazineWell[] = {};

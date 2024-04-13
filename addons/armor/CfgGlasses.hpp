@@ -16,8 +16,7 @@ class CfgGlasses {
 
         model = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
         hiddenSelections[] = {"camo1", "camo2", "visor"};
-        hiddenSelectionsTextures[] =
-        {
+        hiddenSelectionsTextures[] = {
             "", // Main Helmet
             "\ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa", // Flaps
             "" // Visor

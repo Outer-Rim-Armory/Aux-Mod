@@ -27,8 +27,7 @@ private _jetpack = backpackContainer ace_player;
 private _fuel = ace_player call FUNC(getFuel);
 private _oldFuel = _fuel;
 
-private _fuelCoef =
-(
+private _fuelCoef = (
     // Count each movement key pressed
     ({
         inputAction _x == 1
@@ -40,8 +39,7 @@ private _fuelCoef =
     } count ["BNA_KC_Jet_rise", "BNA_KC_Jet_slowFall", "BNA_KC_Jet_hover"])
 );
 
-for "_i" from 1 to _fuelCoef + 1 do
-{
+for "_i" from 1 to _fuelCoef + 1 do {
     // Increase fuel cost for each movement action
     _fuel = (_fuel - ((BASE_FUEL_COST * diag_deltaTime) * GVAR(fuelDrainCoefficient)) max 0);
 };

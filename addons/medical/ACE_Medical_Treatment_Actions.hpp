@@ -1,5 +1,4 @@
-class ACE_Medical_Treatment_Actions
-{
+class ACE_Medical_Treatment_Actions {
     class Morphine;
     class GVAR(Painkiller): Morphine {
         displayName = "Painkiller Autoinjector";

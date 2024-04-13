@@ -1,15 +1,12 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             QGVAR(dc15s),
             QGVAR(accessories),
@@ -19,8 +16,7 @@ class CfgPatches
             "ace_laserpointer"
         };
         units[] = {};
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(DC15C_Base),
             QCLASS(DC15C),
             QCLASS(DC15C_Fried)

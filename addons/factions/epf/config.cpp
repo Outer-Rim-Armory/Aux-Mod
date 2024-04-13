@@ -1,20 +1,16 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             "sc_equipment"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(EPF_Unit_Base),
             QCLASS(EPF_Unit_Rifleman),
             QCLASS(EPF_Unit_Rifleman_Shield),
@@ -55,8 +51,7 @@ class CfgPatches
             QCLASS(Rathian_CAP_EPF),
             QCLASS(Rathian_CAS_EPF)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(EPF_Helmet),
             QCLASS(EPF_Helmet_Assault),
             QCLASS(EPF_Helmet_Visor),

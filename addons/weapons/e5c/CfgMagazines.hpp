@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_150Rnd_E5C): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_150Rnd_E5C): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] E-5C Energy Cell";
         displayNameShort = "Standard Energy";

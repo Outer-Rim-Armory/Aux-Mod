@@ -1,18 +1,13 @@
-class XtdGearModels
-{
-    class CfgWeapons
-    {
-        class CLASS(Helmets_Phase1_Units)
-        {
+class XtdGearModels {
+    class CfgWeapons {
+        class CLASS(Helmets_Phase1_Units) {
             label = "Unit Helmets (P1)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "KC_CG",
                     "KC_DC",
                     "KC_GC",
@@ -34,15 +29,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Phase2_Units): CLASS(Helmets_Phase1_Units)
-        {
+        class CLASS(Helmets_Phase2_Units): CLASS(Helmets_Phase1_Units) {
             label = "Unit Helmets (P2)";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "KC_CG",
                     "KC_CG_Stone",
                     "KC_DC",
@@ -72,15 +64,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_Units): CLASS(Helmets_Phase1_Units)
-        {
+        class CLASS(Uniforms_Units): CLASS(Helmets_Phase1_Units) {
             label = "Unit Uniforms";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "KC_CG",
                     "KC_CG_Stone",
                     "KC_DC",

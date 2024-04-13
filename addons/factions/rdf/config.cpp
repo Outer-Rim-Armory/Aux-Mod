@@ -1,20 +1,16 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = "Keeli Company Aux Team";
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             "sc_equipment"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(RDF_Unit_Base),
             QCLASS(RDF_Unit_Rifleman),
             QCLASS(RDF_Unit_Rifleman_DC15C),
@@ -37,8 +33,7 @@ class CfgPatches
             QCLASS(RDF_Backpack_Medic),
             QCLASS(RDF_Backpack_Medic_Predef_Medic),
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(RDF_Helmet),
             QCLASS(RDF_Helmet_Marksman),
             QCLASS(RDF_Uniform),

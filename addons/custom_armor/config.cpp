@@ -1,19 +1,15 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QCLASS(core),
             QCLASS(armor)
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Unit_Axel),
             QCLASS(Unit_Bob),
             QCLASS(Unit_Burnt),
@@ -154,8 +150,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_BARC_Rat),
             QGROUND_CLASS(Helmet_BARC_RatCrimson)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Helmet_Phase1_Alvarez),
             QCLASS(Helmet_Phase1_Axel),
             QCLASS(Helmet_Phase1_Burnt),

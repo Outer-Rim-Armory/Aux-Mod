@@ -1,15 +1,13 @@
-class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base)
-{
+class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base) {
     SCOPE_HIDDEN;
     displayName = "Jedi Knight";
-    editorSubcategory = QCLASS(EdSubCat_Special);
+    editorSubcategory = QEDSUBCAT(Special);
     icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_Jedi_Knight);
     model = "\lsd_armor_bluefor\uniform\gar\jediCommander\lsd_gar_jediCommander_uniform.p3d";
     hiddenSelections[] = {"armor_camo", "robe_camo", "belt_camo", "under_camo"};
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         "\lsd_armor_bluefor\uniform\gar\jediCommander\data\armor_co.paa",
         "\lsd_armor_bluefor\uniform\gar\jediCommander\data\robes_co.paa",
         "\lsd_armor_bluefor\uniform\gar\jediCommander\data\belt_co.paa",
@@ -17,16 +15,14 @@ class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base)
     };
 
     // Inventory
-    weapons[] =
-    {
+    weapons[] = {
         "",
         "",
         "SWLB_clone_binocular",
         "Throw",
         "Put"
     };
-    respawnWeapons[] =
-    {
+    respawnWeapons[] = {
         "",
         "",
         "SWLB_clone_binocular",
@@ -43,24 +39,21 @@ class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base)
     backpack = QCLASS(Backpack_Radio_Invis);
 };
 
-class CLASS(Unit_Jedi_Commander): CLASS(Unit_Jedi_Knight)
-{
+class CLASS(Unit_Jedi_Commander): CLASS(Unit_Jedi_Knight) {
     SCOPE_PUBLIC;
     displayName = "Jedi Commander";
     editorPreview = EDITOR_PREVIEW(Unit_Jedi_Commander);
 
     uniformClass = QCLASS(Uniform_Jedi_Commander);
 
-    weapons[] =
-    {
+    weapons[] = {
         "",
         "",
         "SWLB_clone_commander_binocular",
         "Throw",
         "Put"
     };
-    respawnWeapons[] =
-    {
+    respawnWeapons[] = {
         "",
         "",
         "SWLB_clone_commander_binocular",

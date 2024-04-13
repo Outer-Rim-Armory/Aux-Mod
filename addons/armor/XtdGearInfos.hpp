@@ -1,7 +1,5 @@
-class XtdGearInfos
-{
-    class CfgWeapons
-    {
+class XtdGearInfos {
+    class CfgWeapons {
         #include "XtdGear\Helmets_P1.hpp"
         #include "XtdGear\Helmets_P1_Geonosis.hpp"
         #include "XtdGear\Helmets_P1_Pilot.hpp"

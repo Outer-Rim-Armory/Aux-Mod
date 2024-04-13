@@ -28,8 +28,7 @@ private _jetpack = backpack ace_player;
 private _sound = GET_STRING(configFile >> "CfgVehicles" >> _jetpack >> QGVAR(effectSound),"");
 private _volume = 0.05; // Increase volume for each movement key (including slow fall and rising)
 
-_volumeCoef =
-(
+_volumeCoef = (
     // Count each movement key pressed
     ({
         inputAction _x == 1

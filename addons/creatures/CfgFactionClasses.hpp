@@ -1,7 +1,5 @@
-class CfgFactionClasses
-{
-    class CLASS(Faction_Creatures)
-    {
+class CfgFactionClasses {
+    class FACTION(Creatures) {
         displayName = "[KC] Creatures";
     };
 };

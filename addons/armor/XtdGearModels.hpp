@@ -1,18 +1,13 @@
-class XtdGearModels
-{
-    class CfgWeapons
-    {
-        class CLASS(Helmets_Phase1)
-        {
+class XtdGearModels {
+    class CfgWeapons {
+        class CLASS(Helmets_Phase1) {
             label = "Helmets (P1)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CR",
                     "CT",
@@ -64,17 +59,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Phase1_Geonosis)
-        {
+        class CLASS(Helmets_Phase1_Geonosis) {
             label = "Helmets (Geonosis)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Trooper",
                     "NCO",
                     "Officer",
@@ -90,17 +82,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Pilot_Phase1)
-        {
+        class CLASS(Helmets_Pilot_Phase1) {
             label = "Pilot Helmets (P1)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CXA"
                 };
@@ -110,17 +99,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Tanker_Phase1)
-        {
+        class CLASS(Helmets_Tanker_Phase1) {
             label = "Tanker Helmets (P1)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CT",
                     "CT_v2"
@@ -132,17 +118,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Phase2)
-        {
+        class CLASS(Helmets_Phase2) {
             label = "Helmets (P2)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CR",
                     "CR_Legacy",
@@ -204,17 +187,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Insulated_Phase2)
-        {
+        class CLASS(Helmets_Insulated_Phase2) {
             label = "Insulated Helmets (P2)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CT"
                 };
@@ -224,17 +204,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Pilot_Phase2)
-        {
+        class CLASS(Helmets_Pilot_Phase2) {
             label = "Pilot Helmets (P2)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CXA",
                     "CXE",
@@ -250,17 +227,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Tanker_Phase2)
-        {
+        class CLASS(Helmets_Tanker_Phase2) {
             label = "Tanker Helmets (P2)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CT",
                     "CT_v2",
@@ -276,17 +250,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Airborne)
-        {
+        class CLASS(Helmets_Airborne) {
             label = "Airborne Helmets";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE; // Can be changed from ACE interact
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CT",
                     "CT_v2"
@@ -298,17 +269,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Engineer)
-        {
+        class CLASS(Helmets_Engineer) {
             label = "Engineer Helmets";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CT",
                     "Enlisted_CamoBrown",
@@ -322,17 +290,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_ARC)
-        {
+        class CLASS(Helmets_ARC) {
             label = "ARC Helmets";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CT",
                     "CT_Legacy",
@@ -352,17 +317,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_ARF)
-        {
+        class CLASS(Helmets_ARF) {
             label = "ARF Helmets";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CT",
                     "CT_Legacy",
@@ -378,17 +340,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_BARC)
-        {
+        class CLASS(Helmets_BARC) {
             label = "BARC Helmets";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CT"
                 };
@@ -398,17 +357,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_Ranks_Infantry)
-        {
+        class CLASS(Uniforms_Ranks_Infantry) {
             label = "Infantry Rank Uniforms";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CR",
                     "CT",
@@ -466,17 +422,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_Ranks_Geonosis)
-        {
+        class CLASS(Uniforms_Ranks_Geonosis) {
             label = "Geonosis Rank Uniforms";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Trooper",
                     "NCO",
                     "Officer",
@@ -492,17 +445,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_Insulated_Phase2)
-        {
+        class CLASS(Uniforms_Insulated_Phase2) {
             label = "Insulated Uniforms (P2)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Base",
                     "CT"
                 };
@@ -512,17 +462,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_Pilot)
-        {
+        class CLASS(Uniforms_Pilot) {
             label = "Pilot Uniforms";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "CXA",
                     "CXE"
                 };
@@ -532,17 +479,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_Tanker)
-        {
+        class CLASS(Uniforms_Tanker) {
             label = "Tanker Uniforms";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "CT"
                 };
 
@@ -550,17 +494,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_ARC)
-        {
+        class CLASS(Uniforms_ARC) {
             label = "ARC Uniforms";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "CT",
                     "NightShade",
                     "Enlisted_CamoNight"
@@ -572,17 +513,14 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_ARF)
-        {
+        class CLASS(Uniforms_ARF) {
             label = "ARF Uniforms";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "CT"
                 };
 
@@ -590,15 +528,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Vests_Infantry): CLASS(Helmets_Phase1)
-        {
+        class CLASS(Vests_Infantry): CLASS(Helmets_Phase1) {
             label = "Infantry Vests";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Basic",
                     "Holster",
                     "Assault",
@@ -628,15 +563,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Vests_Infantry_Ranked): CLASS(Helmets_Phase1)
-        {
+        class CLASS(Vests_Infantry_Ranked): CLASS(Helmets_Phase1) {
             label = "Infantry Ranked Vests";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "CLC",
                     "CPL",
                     "CS",
@@ -664,15 +596,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Vests_Infantry_Medic): CLASS(Helmets_Phase1)
-        {
+        class CLASS(Vests_Infantry_Medic): CLASS(Helmets_Phase1) {
             label = "Infantry Medic Vests";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Medic",
                     "Senior",
                     "Medic_v2",
@@ -688,15 +617,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Vests_Airborne): CLASS(Helmets_Phase1)
-        {
+        class CLASS(Vests_Airborne): CLASS(Helmets_Phase1) {
             label = "Airborne Vests";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "CT",
                     "CT_Light",
                     "CS",
@@ -712,15 +638,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Vests_Airborne_Medic): CLASS(Helmets_Phase1)
-        {
+        class CLASS(Vests_Airborne_Medic): CLASS(Helmets_Phase1) {
             label = "Airborne Medic Vests";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Trooper",
                     "NCO"
                 };
@@ -730,15 +653,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Vests_Engineer): CLASS(Helmets_Phase1)
-        {
+        class CLASS(Vests_Engineer): CLASS(Helmets_Phase1) {
             label = "Engineer Vests";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "CT",
                     "CS",
                     "Officer"
@@ -768,15 +688,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Vests_ARC): CLASS(Helmets_Phase1)
-        {
+        class CLASS(Vests_ARC): CLASS(Helmets_Phase1) {
             label = "ARC Vests";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Trooper",
                     "Alternate",
                     "Light",
@@ -794,15 +711,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Vests_Commando): CLASS(Helmets_Phase1)
-        {
+        class CLASS(Vests_Commando): CLASS(Helmets_Phase1) {
             label = "Commando Vests";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Basic",
                     "SL",
                     "EOD",

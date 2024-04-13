@@ -1,13 +1,11 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class O_Truck_03_transport_F;
-    class CLASS(Gammoth_Base): O_Truck_03_transport_F
-    {
+    class CLASS(Gammoth_Base): O_Truck_03_transport_F {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        faction = QCLASS(Faction_KC);
-        editorSubcategory = QCLASS(EdSubCat_Cars);
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
 
         displayName = "Gammoth (Base)";
         crew = QCLASS(Unit_Phase2_CT);
@@ -18,35 +16,28 @@ class CfgVehicles
 
         hiddenSelectionsTextures[] = {};
         textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
-        class TextureSources
-        {
-            class CamoKC
-            {
+        class TextureSources {
+            class CamoKC {
                 author = AUTHOR;
                 displayName = "Keeli Company Camo";
                 factions[] = {};
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoKC_co.paa)
                 };
             };
-            class CamoBrown: CamoKC
-            {
+            class CamoBrown: CamoKC {
                 displayName = "Brown Camo";
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoBrown_co.paa)
                 };
             };
-            class CamoGrey: CamoKC
-            {
+            class CamoGrey: CamoKC {
                 displayName = "Grey Camo";
-                textures[] =
-                {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoGrey_co.paa)
@@ -57,16 +48,14 @@ class CfgVehicles
         INVENTORY_VEHICLE_BASE(2);
     };
 
-    class CLASS(Gammoth_Transport): CLASS(Gammoth_Base)
-    {
+    class CLASS(Gammoth_Transport): CLASS(Gammoth_Base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Transport";
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Transport);
     };
 
-    class CLASS(Gammoth_Covered): CLASS(Gammoth_Base)
-    {
+    class CLASS(Gammoth_Covered): CLASS(Gammoth_Base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Transport (Covered)";
@@ -77,32 +66,25 @@ class CfgVehicles
         picture = "\A3\Soft_F_EPC\Truck_03\Data\UI\truck_03_covered_CA.paa";
         icon = "\A3\Soft_F_EPC\Truck_03\Data\UI\map_Truck_03_Covered_CA.paa";
 
-        class TextureSources: TextureSources
-        {
-            class CamoKC: CamoKC
-            {
-                textures[] =
-                {
+        class TextureSources: TextureSources {
+            class CamoKC: CamoKC {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Covered\Covered_CamoKC_co.paa)
                 };
             };
-            class CamoBrown: CamoBrown
-            {
-                textures[] =
-                {
+            class CamoBrown: CamoBrown {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Covered\Covered_CamoBrown_co.paa)
                 };
             };
-            class CamoGrey: CamoGrey
-            {
-                textures[] =
-                {
+            class CamoGrey: CamoGrey {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoGrey_co.paa),
@@ -112,8 +94,7 @@ class CfgVehicles
         };
     };
 
-    class CLASS(Gammoth_Ammo): CLASS(Gammoth_Base)
-    {
+    class CLASS(Gammoth_Ammo): CLASS(Gammoth_Base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Ammo Truck";
@@ -135,32 +116,25 @@ class CfgVehicles
         picture = "\A3\Soft_F_EPC\Truck_03\Data\UI\truck_03_box_CA.paa";
         icon = "\A3\Soft_F_EPC\Truck_03\Data\UI\map_Truck_03_box_CA.paa";
 
-        class TextureSources: TextureSources
-        {
-            class CamoKC: CamoKC
-            {
-                textures[] =
-                {
+        class TextureSources: TextureSources {
+            class CamoKC: CamoKC {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoKC_co.paa),
                     "\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
                 };
             };
-            class CamoBrown: CamoBrown
-            {
-                textures[] =
-                {
+            class CamoBrown: CamoBrown {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoBrown_co.paa),
                    "\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
                 };
             };
-            class CamoGrey: CamoGrey
-            {
-                textures[] =
-                {
+            class CamoGrey: CamoGrey {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoGrey_co.paa),
@@ -170,8 +144,7 @@ class CfgVehicles
         };
     };
 
-    class CLASS(Gammoth_Medical): CLASS(Gammoth_Base)
-    {
+    class CLASS(Gammoth_Medical): CLASS(Gammoth_Base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Medical Truck";
@@ -189,32 +162,25 @@ class CfgVehicles
         picture = "\A3\Soft_F_EPC\Truck_03\Data\UI\truck_03_medevac_CA.paa";
         icon = "\A3\Soft_F_EPC\Truck_03\Data\UI\map_Truck_03_medevac_CA.paa";
 
-        class TextureSources: TextureSources
-        {
-            class CamoKC: CamoKC
-            {
-                textures[] =
-                {
+        class TextureSources: TextureSources {
+            class CamoKC: CamoKC {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Covered\Covered_CamoKC_co.paa)
                 };
             };
-            class CamoBrown: CamoBrown
-            {
-                textures[] =
-                {
+            class CamoBrown: CamoBrown {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Covered\Covered_CamoBrown_co.paa)
                 };
             };
-            class CamoGrey: CamoGrey
-            {
-                textures[] =
-                {
+            class CamoGrey: CamoGrey {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoGrey_co.paa),
@@ -224,8 +190,7 @@ class CfgVehicles
         };
     };
 
-    class CLASS(Gammoth_Repair): CLASS(Gammoth_Base)
-    {
+    class CLASS(Gammoth_Repair): CLASS(Gammoth_Base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Repair Truck";
@@ -242,30 +207,23 @@ class CfgVehicles
         picture = "\A3\Soft_F_EPC\Truck_03\Data\UI\truck_03_ammo_CA.paa";
         icon = "\A3\Soft_F_EPC\Truck_03\Data\UI\map_Truck_03_ammo_CA.paa";
 
-        class TextureSources: TextureSources
-        {
-            class CamoKC: CamoKC
-            {
-                textures[] =
-                {
+        class TextureSources: TextureSources {
+            class CamoKC: CamoKC {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Repair\Repair_CamoKC_co.paa)
                 };
             };
-            class CamoBrown: CamoBrown
-            {
-                textures[] =
-                {
+            class CamoBrown: CamoBrown {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Repair\Repair_CamoBrown_co.paa)
                 };
             };
-            class CamoGrey: CamoGrey
-            {
-                textures[] =
-                {
+            class CamoGrey: CamoGrey {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Repair\Repair_CamoGrey_co.paa)
@@ -274,8 +232,7 @@ class CfgVehicles
         };
     };
 
-    class CLASS(Gammoth_Refuel): CLASS(Gammoth_Base)
-    {
+    class CLASS(Gammoth_Refuel): CLASS(Gammoth_Base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Refuel Truck";
@@ -302,30 +259,23 @@ class CfgVehicles
         icon = "\A3\Soft_F_EPC\Truck_03\Data\UI\map_Truck_03_Fuel_CA.paa";
         mapSize = 11.07;
 
-        class TextureSources: TextureSources
-        {
-            class CamoKC: CamoKC
-            {
-                textures[] =
-                {
+        class TextureSources: TextureSources {
+            class CamoKC: CamoKC {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Fuel\Fuel_CamoKC_co.paa)
                 };
             };
-            class CamoBrown: CamoBrown
-            {
-                textures[] =
-                {
+            class CamoBrown: CamoBrown {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Fuel\Fuel_CamoBrown_co.paa)
                 };
             };
-            class CamoGrey: CamoGrey
-            {
-                textures[] =
-                {
+            class CamoGrey: CamoGrey {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Fuel\Fuel_CamoGrey_co.paa)
@@ -334,8 +284,7 @@ class CfgVehicles
         };
     };
 
-    class CLASS(Gammoth_Device): CLASS(Gammoth_Base)
-    {
+    class CLASS(Gammoth_Device): CLASS(Gammoth_Base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Device Truck";
@@ -351,12 +300,9 @@ class CfgVehicles
         picture = "\A3\Soft_F_EPC\Truck_03\Data\UI\truck_03_device_CA.paa";
         icon = "\A3\Soft_F_EPC\Truck_03\Data\UI\map_Truck_03_Device_CA.paa";
 
-        class TextureSources: TextureSources
-        {
-            class CamoKC: CamoKC
-            {
-                textures[] =
-                {
+        class TextureSources: TextureSources {
+            class CamoKC: CamoKC {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoKC_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoKC_co.paa),
@@ -364,10 +310,8 @@ class CfgVehicles
                     "\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
                 };
             };
-            class CamoBrown: CamoBrown
-            {
-                textures[] =
-                {
+            class CamoBrown: CamoBrown {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoBrown_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoBrown_co.paa),
@@ -375,10 +319,8 @@ class CfgVehicles
                     "\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
                 };
             };
-            class CamoGrey: CamoGrey
-            {
-                textures[] =
-                {
+            class CamoGrey: CamoGrey {
+                textures[] = {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoGrey_co.paa),

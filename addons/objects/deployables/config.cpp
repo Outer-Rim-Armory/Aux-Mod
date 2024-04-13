@@ -1,17 +1,12 @@
 #include "script_component.hpp"
-#include "CfgVehicles.hpp"
 
-
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON)
         };
         units[] = {};
@@ -19,3 +14,5 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgVehicles.hpp"

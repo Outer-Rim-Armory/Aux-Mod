@@ -1,5 +1,4 @@
-class CLASS(Vest_Commando_Basic)
-{
+class CLASS(Vest_Commando_Basic) {
     model = QCLASS(Vests_Commando);
     camo = "Basic";
 };

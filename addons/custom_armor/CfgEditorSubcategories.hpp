@@ -1,7 +1,5 @@
-class CfgEditorSubcategories
-{
-    class CLASS(EdSubCat_Customs)
-    {
+class CfgEditorSubcategories {
+    class EDSUBCAT(Customs) {
         displayName = "Customs";
     };
 };

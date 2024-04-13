@@ -1,21 +1,16 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class Rifle_Base_F;
-    class 3AS_DC15L_Base_F: Rifle_Base_F
-    {
+    class 3AS_DC15L_Base_F: Rifle_Base_F {
         class WeaponSlotsInfo;
     };
-    class 3AS_DC15L_F: 3AS_DC15L_Base_F
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
+    class 3AS_DC15L_F: 3AS_DC15L_Base_F {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
         };
         class FullAuto;
     };
-    class CLASS(DC15L_Base): 3AS_DC15L_F
-    {
+    class CLASS(DC15L_Base): 3AS_DC15L_F {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -45,28 +40,22 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot
-            {
-                class CompatibleItems
-                {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot {
+                class CompatibleItems {
                     ATTACHMENTS_OPTIC_LONG;
                     // Sights
                     3as_optic_dc15l = TRUE;
                 };
             };
-            class PointerSlot: PointerSlot
-            {
-                class CompatibleItems
-                {
+            class PointerSlot: PointerSlot {
+                class CompatibleItems {
                     ATTACHMENTS_POINTER_BASE;
                 };
             };
         };
 
-        class FullAuto: FullAuto
-        {
+        class FullAuto: FullAuto {
             dispersion = 0.00075;
             recoil = "recoil_auto_mx";
             recoilProne = "recoil_auto_prone_mx";
@@ -79,8 +68,7 @@ class CfgWeapons
             minRangeProbab = 0.2;
 
             sounds[] = {"StandardSound"};
-            class StandardSound
-            {
+            class StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_DC15LShot)};
@@ -89,15 +77,13 @@ class CfgWeapons
         };
     };
 
-    class CLASS(DC15L): CLASS(DC15L_Base)
-    {
+    class CLASS(DC15L): CLASS(DC15L_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-15L";
         baseWeapon = QCLASS(DC15L);
         JLTS_friedItem = QCLASS(DC15L_Fried);
     };
-    class CLASS(DC15L_Fried): CLASS(DC15L)
-    {
+    class CLASS(DC15L_Fried): CLASS(DC15L) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-15L (Fried)";

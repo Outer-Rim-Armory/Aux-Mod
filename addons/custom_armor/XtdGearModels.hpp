@@ -1,18 +1,13 @@
-class XtdGearModels
-{
-    class CfgWeapons
-    {
-        class CLASS(Helmets_Phase1_Custom)
-        {
+class XtdGearModels {
+    class CfgWeapons {
+        class CLASS(Helmets_Phase1_Custom) {
             label = "Custom Helmets (P1)";
             author = AUTHOR;
             options[] = {"camo"};
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Alvarez",
                     "Axel",
                     "Burnt",
@@ -76,15 +71,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Pilot_Phase1_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_Pilot_Phase1_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Pilot Helmets (P1)";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Bailout",
                     "Blue",
                     "Mischief"
@@ -96,15 +88,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Tanker_Phase1_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_Tanker_Phase1_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Tanker Helmets (P1)";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Grey"
                 };
 
@@ -112,15 +101,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Phase2_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_Phase2_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Helmets (P2)";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Alvarez",
                     "Axel",
                     "Bob",
@@ -186,15 +172,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Insulated_Phase2_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_Insulated_Phase2_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Snow Helmets (P2)";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Dexus",
                     "Joe",
                     "Keeli"
@@ -206,15 +189,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Pilot_Phase2_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_Pilot_Phase2_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Pilot Helmets (P2)";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Bailout",
                     "Blue",
                     "Mischief"
@@ -226,15 +206,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Tanker_Phase2_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_Tanker_Phase2_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Tanker Helmets (P2)";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Catholic",
                     "Grey"
                 };
@@ -244,15 +221,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Phase12_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_Phase12_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Helmets (P1-2)";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Joe"
                 };
 
@@ -260,15 +234,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_Engineer_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_Engineer_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Engineer Helmets";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Bob",
                     "Splashdown"
                 };
@@ -278,15 +249,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_ARC_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_ARC_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom ARC Helmets";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Drake",
                     "Hagrid",
                     "Sin",
@@ -300,15 +268,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_ARF_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_ARF_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom ARF Helmets";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Defter",
                     "Jester",
                     "Patriot",
@@ -326,15 +291,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Helmets_BARC_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Helmets_BARC_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom BARC Helmets";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Keeli",
                     "Rat"
                 };
@@ -344,15 +306,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Uniforms_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Uniforms";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Axel",
                     "Bob",
                     "Burnt",
@@ -396,15 +355,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Uniforms_Insulated_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Uniforms_Insulated_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Insulated Uniforms (P2)";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Dexus",
                     "Joe",
                     "Keeli"
@@ -416,15 +372,12 @@ class XtdGearModels
             };
         };
 
-        class CLASS(Vests_Custom): CLASS(Helmets_Phase1_Custom)
-        {
+        class CLASS(Vests_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Vests";
 
-            class camo
-            {
+            class camo {
                 changeInGame = FALSE;
-                values[] =
-                {
+                values[] = {
                     "Keeli",
                     "Ponds",
                     "Rat"

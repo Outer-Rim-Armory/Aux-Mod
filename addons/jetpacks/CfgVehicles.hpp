@@ -1,12 +1,8 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class Man;
-    class CAManBase: Man
-    {
-        class ACE_SelfActions
-        {
-            class GVAR(clearEffects)
-            {
+    class CAManBase: Man {
+        class ACE_SelfActions {
+            class GVAR(clearEffects) {
                 displayName = "Clear Effects";
                 icon = "";
 
@@ -14,12 +10,9 @@ class CfgVehicles
                 statement = QUOTE(_player call FUNC(clearEffects));
             };
         };
-        class ACE_Actions
-        {
-            class ACE_MainActions
-            {
-                class GVAR(refuelFromBody)
-                {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class GVAR(refuelFromBody) {
                     displayName = "Take fuel from %1";
                     icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
 
@@ -31,8 +24,7 @@ class CfgVehicles
                     modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
                 };
 
-                class GVAR(refuelPlayer)
-                {
+                class GVAR(refuelPlayer) {
                     displayName = "Refuel player's %1";
                     icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
 
@@ -47,8 +39,7 @@ class CfgVehicles
     };
 
     class CLASS(Backpack_Base);
-    class CLASS(Jetpack_JT12): CLASS(Backpack_Base)
-    {
+    class CLASS(Jetpack_JT12): CLASS(Backpack_Base) {
         JLTS_isJumppack = FALSE;
 
         GVAR(isJetpack) = TRUE;
@@ -58,8 +49,7 @@ class CfgVehicles
 
         // Effects
         GVAR(effectPoints)[] = {"effect_left", "effect_right"}; // Points to spawn effects, these come from the JLTS model
-        GVAR(effects)[] =
-        {
+        GVAR(effects)[] = {
             QCLASS(Effects_JetpackFire_Blue),
             QCLASS(Effects_JetpackSmoke)
         };
@@ -69,13 +59,11 @@ class CfgVehicles
         GVAR(freefallHeight) = 500;
     };
 
-    class CLASS(Jetpack_CDV21): CLASS(Jetpack_JT12)
-    {
+    class CLASS(Jetpack_CDV21): CLASS(Jetpack_JT12) {
         GVAR(strength) = 0;
     };
 
-    class CLASS(Jetpack_CDV19): CLASS(Jetpack_JT12)
-    {
+    class CLASS(Jetpack_CDV19): CLASS(Jetpack_JT12) {
         GVAR(effectPoints)[] = {"effect"};
     };
 
@@ -100,8 +88,7 @@ class CfgVehicles
     };
 
     class CLASS(Resupply_Base);
-    class CLASS(Resupply_JetpackFuel): CLASS(Resupply_Base)
-    {
+    class CLASS(Resupply_JetpackFuel): CLASS(Resupply_Base) {
         displayName = "Jetpack Fuel Tank";
 
         ace_cargo_size = 2;

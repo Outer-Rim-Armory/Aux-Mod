@@ -1,16 +1,13 @@
 #include "CWR_VoiceLines.hpp"
 
 
-class CfgPatches
-{
-    class ChatWheelRedux
-    {
+class CfgPatches {
+    class ChatWheelRedux {
         author = "DartRuffian";
         weapons[] = {};
         units[] = {};
         requiredversion = 0.1;
-        requiredaddons[] =
-        {
+        requiredaddons[] = {
             "cba_events",
             "cba_hashes",
             "cba_settings",
@@ -22,20 +19,16 @@ class CfgPatches
 #include "CfgHints.hpp"
 
 
-class CfgFunctions
-{
-    class CWR
-    {
-        class Settings
-        {
+class CfgFunctions {
+    class CWR {
+        class Settings {
             file = "ChatWheelRedux\Data\Functions\Settings";
             class configureAddonKeybinds {};
             class configureAddonOptions {};
             class createTagMenu {};
         };
 
-        class Chat
-        {
+        class Chat {
             file = "ChatWheelRedux\Data\Functions\Chat";
             class openChatWheel {};
             class processTags {};
@@ -44,14 +37,12 @@ class CfgFunctions
             class configureMenus {};
         };
 
-        class Sounds
-        {
+        class Sounds {
             file = "ChatWheelRedux\Data\Functions\Sounds";
             class playLocalSound {};
         };
 
-        class Utils
-        {
+        class Utils {
             file = "ChatWheelRedux\Data\Functions\Utils";
             class getDirFromBearing {};
             class stringReplace {};
@@ -66,8 +57,7 @@ class CfgFunctions
             class sortByDistance {};
         };
 
-        class EventHandlers
-        {
+        class EventHandlers {
             file = "ChatWheelRedux\Data\Functions\EventHandlers";
             class throwGrenadeMain {};
             class throwGrenadeEH {};
@@ -79,38 +69,30 @@ class CfgFunctions
 
 #define QUOTE(CODE) #CODE
 
-class Extended_PreInit_EventHandlers
-{
-    class CWR_ConfigureKeybinds
-    {
+class Extended_PreInit_EventHandlers {
+    class CWR_ConfigureKeybinds {
         init = QUOTE(call CWR_fnc_configureAddonKeybinds;);
     };
-    class CWR_ConfigureOptions
-    {
+    class CWR_ConfigureOptions {
         init = QUOTE(call CWR_fnc_configureAddonOptions;);
     };
-    class CWR_ConfigureChatMenus
-    {
+    class CWR_ConfigureChatMenus {
         init = QUOTE(call CWR_fnc_configureMenus;);
     };
 };
 
 
-class Extended_PostInit_EventHandlers
-{
+class Extended_PostInit_EventHandlers {
     class CWR_ChatWheel {
         clientInit = QUOTE(call compileScript ['\ChatWheelRedux\XEH_postInitClient.sqf']);
     };
-    class CWR_CreateTagDiary
-    {
+    class CWR_CreateTagDiary {
         init = QUOTE(call CWR_fnc_createTagMenu;);
     };
-    class CWR_ThrowGrenadeEH
-    {
+    class CWR_ThrowGrenadeEH {
         init = QUOTE(if isClass (configFile >> 'CfgPatches' >> 'ace_common') then { call CWR_fnc_throwGrenadeEHACE; } else { call CWR_fnc_throwGrenadeEH; };);
     };
-    class CWR_UnconciousEH
-    {
+    class CWR_UnconciousEH {
         init = QUOTE(call CWR_fnc_unconsciousEH);
     };
 };
