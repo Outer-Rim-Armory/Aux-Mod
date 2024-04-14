@@ -220,8 +220,9 @@ class CLASS(CIS_Unit_Droid_B1_Sniper): CLASS(CIS_Unit_Droid_B1) {
 };
 
 class CLASS(CIS_Unit_Droid_B1_Marine): CLASS(CIS_Unit_Droid_B1) {
-    displayName = "B1 Marine Droid";
+    displayName = "B1 Marine Droid (HE)";
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Marine);
+    icon = "iconManAT";
 
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Marine);
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_marine_co.paa"};
