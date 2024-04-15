@@ -62,10 +62,6 @@ class CfgMusic {
     // Interstellar
     MUSIC(INT_Mountains,"[INT] Mountains",219,Other);
 
-    // Isle of Dogs
-    MUSIC(IOD_ShintoShrine,"[IOD] Shinto Shrine",116,Other);
-    MUSIC(IOD_SushiScene,"[IOD] Sushi Scene",101,Other);
-
     // Last of Us
     MUSIC(LoU_AllGone,"[LoU] All Gone (No Escape)",174,VideoGames);
 
