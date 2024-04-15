@@ -388,8 +388,7 @@ class XtdGearModels {
             };
         };
 
-        class CLASS(Uniforms_Insulated_Phase2): CLASS(Rank_Base)
-        {
+        class CLASS(Uniforms_Insulated_Phase2): CLASS(Rank_Base) {
             label = "Insulated Uniforms (P2)";
 
             class rank: rank {
@@ -594,7 +593,6 @@ class XtdGearModels {
 
             class rank: rank {
                 changeInGame = FALSE;
-                values[] = {
                 values[] = {
                     "CT",
                     "CS",
