@@ -52,7 +52,9 @@ INFO_2("Reviving unit %1 (%2)",_unit,typeOf _unit);
                 deleteVehicle _oldUnit;
             };
         };
-        default {deleteVehicle _oldUnit;};
+        default {
+            deleteVehicle _oldUnit;
+        };
     };
 }, [_unit, _droidType], _reviveDelay] call CBA_fnc_waitAndExecute;
 nil;
