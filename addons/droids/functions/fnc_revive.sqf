@@ -6,7 +6,7 @@
  * Arguments:
  * 0: The unit <OBJECT>
  * 1: Type of droid to simulate <STRING>
- *    - B2: Old body is left, but has "camo_arms" and "torso" selections hidden.
+ *    - B2: Random chance to leave old body, but has "camo_arms" and "torso" selections hidden.
  *          New unit is forced to crawl and has "legs" selection hidden.
  *
  * Return Value:
@@ -41,6 +41,7 @@ INFO_2("Reviving unit %1 (%2)",_unit,typeOf _unit);
     {_newUnit setObjectTextureGlobal [_forEachIndex, _x]} forEach _textures;
     switch (toLowerANSI _droidType) do {
         case "b2": {
+            _newUnit setVariable ["Droid_Health", GVAR(healthB2) / 2, true];
             if (random 1 > 0.5) then {
                 _oldUnit setObjectTextureGlobal ["camo_arms", ""];
                 _oldUnit setObjectTextureGlobal ["torso", ""];
