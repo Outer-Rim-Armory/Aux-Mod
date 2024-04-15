@@ -15,8 +15,6 @@ class CfgWeapons {
         model = "\MRC\JLTS\characters\DroidArmor\DroidUniformB1.p3d";
         picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_uniform_ui_ca.paa";
 
-        JLTS_isDroid = TRUE;
-
         class ItemInfo: ItemInfo {
             mass = 40;
             uniformClass = QCLASS(CIS_Unit_Droid_Base);
