@@ -75,7 +75,17 @@ class CfgVehicles {
             "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
         };
-        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompany2", 1, "Akali", 0, "TwiLek", 0};
+
+        textureList[] = {
+            "Standard", 0,
+            "Imperial", 0,
+            "KeeliCompany", 1,
+            "KeeliCompany2", 1,
+            "Akali", 0,
+            "TwiLek", 0,
+            "Katarina", 0
+        };
+
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -136,6 +146,16 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(air\laati\data\textures\TwiLek\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\TwiLek\Wings_co.paa),
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class Katarina: KeeliCompany {
+                displayName = "Katarina";
+                textures[] = {
+                    QPATHTOF(air\laati\data\textures\Katarina\Hull_co.paa),
+                    QPATHTOF(air\laati\data\textures\Katarina\Wings_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"

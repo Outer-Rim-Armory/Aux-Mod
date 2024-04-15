@@ -1,5 +1,4 @@
-class CfgVehicles
-{
+class CfgVehicles {
     class Tank;
     class Tank_F: Tank {
         class Turrets;

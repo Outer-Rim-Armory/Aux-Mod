@@ -1,20 +1,16 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             QCLASS(armor)
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Unit_CG),
             QCLASS(Unit_CG_Stone),
             QCLASS(Unit_DC),
@@ -52,8 +48,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase2_501st),
             QGROUND_CLASS(Helmet_Phase2_91st_Ponds)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Helmet_Phase1_CG),
             QCLASS(Helmet_Phase1_DC),
             QCLASS(Helmet_Phase1_GC),

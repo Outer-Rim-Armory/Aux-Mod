@@ -1,8 +1,6 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class LMG_Mk200_F;
-    class JLTS_Z6: LMG_Mk200_F
-    {
+    class JLTS_Z6: LMG_Mk200_F {
         class manual;
         class close;
         class medium;
@@ -10,8 +8,7 @@ class CfgWeapons
         class far_optic1;
         class far_optic2;
     };
-    class CLASS(Z6_Base): JLTS_Z6
-    {
+    class CLASS(Z6_Base): JLTS_Z6 {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -28,58 +25,45 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
-        class manual: manual
-        {
-            class StandardSound
-            {
+        class manual: manual {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
             };
         };
-        class close: close
-        {
-            class StandardSound
-            {
+        class close: close {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
             };
         };
-        class short: short
-        {
-            class StandardSound
-            {
+        class short: short {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
             };
         };
-        class medium: medium
-        {
-            class StandardSound
-            {
+        class medium: medium {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
             };
         };
-        class far_optic1: far_optic1
-        {
-            class StandardSound
-            {
+        class far_optic1: far_optic1 {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
             };
         };
-        class far_optic2: far_optic2
-        {
-            class StandardSound
-            {
+        class far_optic2: far_optic2 {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
             };
         };
     };
 
-    class CLASS(Z6): CLASS(Z6_Base)
-    {
+    class CLASS(Z6): CLASS(Z6_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Z-6";
@@ -88,8 +72,7 @@ class CfgWeapons
         JLTS_friedItem = QCLASS(Z6_Fried);
     };
 
-    class CLASS(Z6_Fried): CLASS(Z6)
-    {
+    class CLASS(Z6_Fried): CLASS(Z6) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] Z-6 (Fried)";

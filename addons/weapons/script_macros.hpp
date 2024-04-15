@@ -738,8 +738,7 @@ class SuperSonicCrack {}
 craterShape = ""; \
 craterWaterEffects = "ImpactEffectsWater"; \
 ExplosionEffects = "3AS_ImpactPlasma"; \
-class HitEffects \
-{ \
+class HitEffects { \
     default_mat = "3AS_ImpactPlasma"; \
     Hit_Foliage_Dead = "3AS_ImpactPlasma"; \
     Hit_Foliage_green = "3AS_ImpactPlasma"; \

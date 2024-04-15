@@ -1,11 +1,7 @@
-class CfgUIGrids
-{
-    class IGUI
-    {
-        class Variables
-        {
-            class GVAR(Grid_fuelDisplay)
-            {
+class CfgUIGrids {
+    class IGUI {
+        class Variables {
+            class GVAR(Grid_fuelDisplay) {
                 // Variable for saving the position of the UI control
                 displayName = "Jetpack Fuel";
                 description = "Fuel display for jetpacks.";
@@ -14,17 +10,12 @@ class CfgUIGrids
             };
         };
 
-        class Presets
-        {
-            class Arma3
-            {
-                class Variables
-                {
+        class Presets {
+            class Arma3 {
+                class Variables {
                     // Default values (roughly on the right side of the screen)
-                    GVAR(Grid_fuelDisplay)[]=
-                    {
-
-                        {
+                    GVAR(Grid_fuelDisplay)[]= {
+ {
                             "safeZoneX + 0.95 * safeZoneW",
                             "(safeZoneY + (safeZoneH / 2)) - (0.3 / 2)",
                             0.025,

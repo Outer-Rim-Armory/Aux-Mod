@@ -1,8 +1,6 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class M2_Flamethrower_01_F;
-    class CLASS(X42_Base): M2_Flamethrower_01_F
-    {
+    class CLASS(X42_Base): M2_Flamethrower_01_F {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -12,8 +10,7 @@ class CfgWeapons
         baseWeapon = QCLASS(X42_Base);
 
         model = "\3AS\3AS_Weapons\X42\BX42.p3d";
-        handAnim[] =
-        {
+        handAnim[] = {
             "OFP2_ManSkeleton",
             "\3AS\3AS_Weapons\Data\Anim\BX42.rtm"
         };
@@ -29,8 +26,7 @@ class CfgWeapons
         JLTS_hasEMPProtection = FALSE;
     };
 
-    class CLASS(X42): CLASS(X42_Base)
-    {
+    class CLASS(X42): CLASS(X42_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] X-42 Heavy Flamethrower";
@@ -40,8 +36,7 @@ class CfgWeapons
         JLTS_friedItem = QCLASS(X42_Fried);
     };
 
-    class CLASS(X42_Fried): CLASS(X42)
-    {
+    class CLASS(X42_Fried): CLASS(X42) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] X-42 Heavy Flamethrower (Fried)";
@@ -54,13 +49,11 @@ class CfgWeapons
         JLTS_isFried = TRUE;
     };
 
-    class CLASS(BTX42): CLASS(X42)
-    {
+    class CLASS(BTX42): CLASS(X42) {
         SCOPE_HIDDEN;
         descriptionShort = "BlastTech Flamethrower<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
-    class CLASS(BTX45_Heavy): CLASS(X42)
-    {
+    class CLASS(BTX45_Heavy): CLASS(X42) {
         SCOPE_HIDDEN;
         descriptionShort = "BlastTech Flamethrower<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };

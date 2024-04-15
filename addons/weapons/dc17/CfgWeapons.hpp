@@ -1,15 +1,13 @@
 class Mode_SemiAuto;
 class CowsSlot_Rail;
 
-class CfgWeapons
-{
+class CfgWeapons {
     class CLASS(Muzzle_Stun);
     class CLASS(Muzzle_Stun_Fried);
 
     // "Fake" UGL Muzzle because the vanilla ones cause issues on pistols
     class Rifle_Base_F;
-    class CLASS(Muzzle_FakeUGL): Rifle_Base_F
-    {
+    class CLASS(Muzzle_FakeUGL): Rifle_Base_F {
         displayName = "Launcher";
         magazines[] = {};
         magazineWell[] = {};
@@ -32,8 +30,7 @@ class CfgWeapons
 
         autoFire = FALSE;
 
-        class Single: Mode_SemiAuto
-        {
+        class Single: Mode_SemiAuto {
             textureType = "semi";
 
             maxRange = 400;
@@ -45,13 +42,11 @@ class CfgWeapons
 
             nameSound = "";
             sounds[] = {"StandardSound"};
-            class BaseSoundModeType
-            {
+            class BaseSoundModeType {
                 closure1[] = {"\A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL", 1, 1, 10};
                 soundClosure[] = {"closure1", 1};
             };
-            class StandardSound: BaseSoundModeType
-            {
+            class StandardSound: BaseSoundModeType {
                 begin1[] = {"\A3\Sounds_F\arsenal\weapons\UGL\UGL_01", 0.707946, 1, 200};
                 begin2[] = {"\A3\Sounds_F\arsenal\weapons\UGL\UGL_02", 0.707946, 1, 200};
                 soundBegin[] = {"begin1", 0.5, "begin2", 0.5};
@@ -62,22 +57,18 @@ class CfgWeapons
     };
 
     class Pistol_Base_F;
-    class hgun_P07_F: Pistol_Base_F
-    {
+    class hgun_P07_F: Pistol_Base_F {
         class Single;
     };
-    class JLTS_DC17SA: hgun_P07_F
-    {
+    class JLTS_DC17SA: hgun_P07_F {
         class WeaponSlotsInfo;
 
-        class Single: Mode_SemiAuto
-        {
+        class Single: Mode_SemiAuto {
             class StandardSound;
         };
         class Stun;
     };
-    class CLASS(DC17_Base): JLTS_DC17SA
-    {
+    class CLASS(DC17_Base): JLTS_DC17SA {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -95,25 +86,20 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot_Rail
-            {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot_Rail {
                 iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
 
-                class CompatibleItems
-                {
+                class CompatibleItems {
                     ATTACHMENTS_OPTIC_PISTOL;
                 };
             };
             class UnderBarrelSlot;
         };
 
-        class Single: Single
-        {
-            class StandardSound: StandardSound
-            {
+        class Single: Single {
+            class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_DC17Shot)};
@@ -121,21 +107,18 @@ class CfgWeapons
             };
         };
 
-        class Stun: CLASS(Muzzle_Stun)
-        {
+        class Stun: CLASS(Muzzle_Stun) {
             reloadAction = "GestureReloadPistol";
             reloadMagazineSound[] = {"\A3\Sounds_F\arsenal\weapons\Pistols\P07\reload_P07", 1, 1, 10};
         };
 
-        class Launcher: CLASS(Muzzle_FakeUGL)
-        {
+        class Launcher: CLASS(Muzzle_FakeUGL) {
             displayName = "Flare Launcher";
             magazineWell[] = {QCLASS(MagWell_3Rnd_UGL_Flares)};
         };
     };
 
-    class CLASS(DC17): CLASS(DC17_Base)
-    {
+    class CLASS(DC17): CLASS(DC17_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] DC-17";
@@ -143,8 +126,7 @@ class CfgWeapons
         JLTS_shieldedWeapon = QCLASS(DC17_RiotShield);
         JLTS_friedItem = QCLASS(DC17_Fried);
     };
-    class CLASS(DC17_Fried): CLASS(DC17)
-    {
+    class CLASS(DC17_Fried): CLASS(DC17) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-17 (Fried)";
@@ -158,15 +140,13 @@ class CfgWeapons
 
         class Stun: CLASS(Muzzle_Stun_Fried);
 
-        class Launcher: Launcher
-        {
+        class Launcher: Launcher {
             displayName = "Flare Launcher (Fried)";
             magazines[] = {};
         };
     };
 
-    class CLASS(DC17_RiotShield): CLASS(DC17)
-    {
+    class CLASS(DC17_RiotShield): CLASS(DC17) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-17 (Shield)";
@@ -177,20 +157,16 @@ class CfgWeapons
         JLTS_friedItem = QCLASS(DC17_RiotShield_Fried);
 
         model = "\MRC\JLTS\weapons\DC17SA\DC17SA_shielded.p3d";
-        handAnim[] =
-        {
+        handAnim[] = {
             "OFP2_ManSkeleton",
             "\MRC\JLTS\weapons\DC17SA\anims\DC17SA_shielded_handanim.rtm"
         };
 
         recoil = "recoil_pdw";
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class UnderBarrelSlot: UnderBarrelSlot
-            {
-                class CompatibleItems
-                {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class CompatibleItems {
                     JLTS_riot_shield_attachment = TRUE;
                     JLTS_riot_shield_212_attachment = TRUE;
                     JLTS_riot_shield_501_attachment = TRUE;
@@ -202,8 +178,7 @@ class CfgWeapons
             };
         };
     };
-    class CLASS(DC17_RiotShield_Fried): CLASS(DC17_RiotShield)
-    {
+    class CLASS(DC17_RiotShield_Fried): CLASS(DC17_RiotShield) {
         displayName = "[KC] DC-17 (Shield, Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
@@ -215,8 +190,7 @@ class CfgWeapons
 
         class Stun: CLASS(Muzzle_Stun_Fried) {};
 
-        class Launcher: Launcher
-        {
+        class Launcher: Launcher {
             displayName = "Flare Launcher (Fried)";
             magazines[] = {};
             magazineWell[] = {};

@@ -595,6 +595,7 @@ class XtdGearModels {
             class rank: rank {
                 changeInGame = FALSE;
                 values[] = {
+                values[] = {
                     "CT",
                     "CS",
                     "Officer"

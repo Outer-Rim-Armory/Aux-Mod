@@ -1,7 +1,5 @@
-class CfgIdentities
-{
-    class CLASS(ElPresidente)
-    {
+class CfgIdentities {
+    class CLASS(ElPresidente) {
         face = "PersianHead_A3_02";
         glasses = "None";
         name = "El Presidente";
@@ -10,8 +8,7 @@ class CfgIdentities
         speaker = "Male01ENG";
     };
 
-    class CLASS(ElGeneral): CLASS(ElPresidente)
-    {
+    class CLASS(ElGeneral): CLASS(ElPresidente) {
         face = "GreekHead_A3_04";
         name = "El General";
         nameSound = "El General";

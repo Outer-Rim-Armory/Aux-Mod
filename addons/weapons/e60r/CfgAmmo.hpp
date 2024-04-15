@@ -1,8 +1,6 @@
-class CfgAmmo
-{
+class CfgAmmo {
     class CLASS(Rocket_Base);
-    class CLASS(Rocket_E60R_HE): CLASS(Rocket_Base)
-    {
+    class CLASS(Rocket_E60R_HE): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
 
         ace_frag_charge = 210;
@@ -31,8 +29,7 @@ class CfgAmmo
         soundFly[] = {"\swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
     };
 
-    class CLASS(Rocket_E60R_AT): CLASS(Rocket_Base)
-    {
+    class CLASS(Rocket_E60R_AT): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
 
         aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
@@ -49,8 +46,7 @@ class CfgAmmo
     };
 
     class CLASS(Rocket_Submunition_Base);
-    class CLASS(Rocket_E60R_AT_Submunition): CLASS(Rocket_Submunition_Base)
-    {
+    class CLASS(Rocket_E60R_AT_Submunition): CLASS(Rocket_Submunition_Base) {
         SCOPE_PUBLIC;
         hit = 480;
         caliber = 43.3333;
@@ -61,8 +57,7 @@ class CfgAmmo
     };
 
     class CLASS(Missile_Base);
-    class CLASS(Missile_E60R_AA): CLASS(Missile_Base)
-    {
+    class CLASS(Missile_E60R_AA): CLASS(Missile_Base) {
         SCOPE_PUBLIC;
 
         cmImmunity = 0.5;

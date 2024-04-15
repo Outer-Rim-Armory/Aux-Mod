@@ -48,42 +48,42 @@ class CLASS(CIS_Unit_Droid_Base): CLASS(CIS_Unit_Base) {
     class SoundDrown {breath[] = {};};
     class SoundEnvironExt {
         generic[] = {
-            {"walk", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 15}},
-            {"walk", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 15}},
-            {"walk", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 15}},
-            {"walk", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 15}},
-            {"tactical", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 15}},
-            {"tactical", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 15}},
-            {"tactical", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 15}},
-            {"tactical", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 15}},
-            {"run", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 30}},
-            {"run", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 30}},
-            {"run", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 30}},
-            {"run", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 30}},
-            {"sprint", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 45}},
-            {"sprint", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 45}},
-            {"sprint", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 45}},
-            {"sprint", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 45}}
+            {"walk", {QPATHTOF(cis\data\audio\walk\b1\Step1.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b1\Step2.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b1\Step3.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b1\Step4.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b1\Step1.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b1\Step2.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b1\Step3.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b1\Step4.wss), 2, 1, 15}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b1\Step1.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b1\Step2.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b1\Step3.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b1\Step4.wss), 2, 1, 30}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b1\Step1.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b1\Step2.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b1\Step3.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b1\Step4.wss), 2, 1, 45}}
         };
     };
     class SoundEquipment {
         soldier[] = {
-            {"walk", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 15}},
-            {"walk", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 15}},
-            {"walk", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 15}},
-            {"walk", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 15}},
-            {"tactical", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 15}},
-            {"tactical", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 15}},
-            {"tactical", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 15}},
-            {"tactical", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 15}},
-            {"run", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 30}},
-            {"run", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 30}},
-            {"run", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 30}},
-            {"run", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 30}},
-            {"sprint", {QPATHTOF(cis\data\audio\walk\Step1.wav), 2, 1, 45}},
-            {"sprint", {QPATHTOF(cis\data\audio\walk\Step2.wav), 2, 1, 45}},
-            {"sprint", {QPATHTOF(cis\data\audio\walk\Step3.wav), 2, 1, 45}},
-            {"sprint", {QPATHTOF(cis\data\audio\walk\Step4.wav), 2, 1, 45}}
+            {"walk", {QPATHTOF(cis\data\audio\walk\b1\Step1.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b1\Step2.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b1\Step3.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b1\Step4.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b1\Step1.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b1\Step2.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b1\Step3.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b1\Step4.wss), 2, 1, 15}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b1\Step1.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b1\Step2.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b1\Step3.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b1\Step4.wss), 2, 1, 30}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b1\Step1.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b1\Step2.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b1\Step3.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b1\Step4.wss), 2, 1, 45}}
         };
     };
     class SoundInjured {breath[] = {};};
@@ -220,8 +220,9 @@ class CLASS(CIS_Unit_Droid_B1_Sniper): CLASS(CIS_Unit_Droid_B1) {
 };
 
 class CLASS(CIS_Unit_Droid_B1_Marine): CLASS(CIS_Unit_Droid_B1) {
-    displayName = "B1 Marine Droid";
+    displayName = "B1 Marine Droid (HE)";
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Marine);
+    icon = "iconManAT";
 
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Marine);
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_marine_co.paa"};
@@ -544,6 +545,39 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
 
     linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
     respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+
+    class SoundEnvironExt {
+        generic[] = {
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 15}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 30}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 45}},
+        };
+    };
+    class SoundEquipment {
+        soldier[] = {
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 15}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 30}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 45}},
+        };
+    };
 };
 
 class CLASS(CIS_Unit_Droid_B2_Jetpack): CLASS(CIS_Unit_Droid_B2) {

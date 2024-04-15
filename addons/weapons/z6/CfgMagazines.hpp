@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_300Rnd_Z6): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_300Rnd_Z6): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] Z-6 Energy Cell";
         displayNameShort = "Standard Energy";
@@ -17,8 +15,7 @@ class CfgMagazines
         mass = 9;
     };
 
-    class Aux12thFleet_Mag_Z6: CLASS(Mag_300Rnd_Z6)
-    {
+    class Aux12thFleet_Mag_Z6: CLASS(Mag_300Rnd_Z6) {
         SCOPE_HIDDEN;
         descriptionShort = "Energy Cell Pack<br/>Rounds: 300<br/>Used In: Z-6<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };

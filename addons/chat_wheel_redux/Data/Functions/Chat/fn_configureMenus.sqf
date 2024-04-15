@@ -48,8 +48,7 @@ CWR_launcherMessagesHashMap =
 
 
 // Distance Menu, used to get the user's choice of close, medium, or far distances
-CWR_OpenDistanceMenu =
-{
+CWR_OpenDistanceMenu = {
     params ["_message"];
     sleep 0.05;
 
@@ -69,8 +68,7 @@ CWR_OpenDistanceMenu =
 };
 
 
-CWR_OpenStatusMenu =
-{
+CWR_OpenStatusMenu = {
     params ["_message"];
     sleep 0.05;
 
@@ -89,13 +87,13 @@ CWR_OpenStatusMenu =
 };
 
 
-CWR_OpenLauncherMenu =
-{
+CWR_OpenLauncherMenu = {
     params ["_message"];
     sleep 0.05;
 
-    CWR_launcherMessageList = ([CWR_launcherMessagesHashMap] call CBA_fnc_hashValues) apply
-    { [_message, "[launcher]", _x] call CWR_fnc_stringReplace; };
+    CWR_launcherMessageList = ([CWR_launcherMessagesHashMap] call CBA_fnc_hashValues) apply {
+        [_message, "[launcher]", _x] call CWR_fnc_stringReplace;
+    };
 
     [
         "Launcher",

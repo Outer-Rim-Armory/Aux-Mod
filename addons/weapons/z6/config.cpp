@@ -1,21 +1,17 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             "JLTS_weapons_Z6"
         };
         units[] = {};
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Z6_Base),
             QCLASS(Z6),
             QCLASS(Z6_Fried)

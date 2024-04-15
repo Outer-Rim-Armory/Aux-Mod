@@ -1,14 +1,11 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             "A3_Data_F_Decade_Loadorder",
             "cba_main",
             "ace_common"

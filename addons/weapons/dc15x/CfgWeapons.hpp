@@ -1,28 +1,22 @@
 class Mode_SemiAuto;
 
-class CfgWeapons
-{
+class CfgWeapons {
     class Rifle_Base_F;
-    class arifle_MX_Base_F: Rifle_Base_F
-    {
+    class arifle_MX_Base_F: Rifle_Base_F {
         class WeaponSlotsInfo;
     };
-    class JLTS_DC15X: arifle_MX_Base_F
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
+    class JLTS_DC15X: arifle_MX_Base_F {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
             class UnderBarrelSlot;
         };
 
-        class Single: Mode_SemiAuto
-        {
+        class Single: Mode_SemiAuto {
             class StandardSound;
         };
     };
-    class CLASS(DC15X_Base): JLTS_DC15X
-    {
+    class CLASS(DC15X_Base): JLTS_DC15X {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -40,33 +34,25 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot
-            {
-                class CompatibleItems
-                {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot {
+                class CompatibleItems {
                     CLASS(Optic_DC15X) = TRUE;
                     CLASS(Optic_LRPS) = TRUE;
                 };
             };
-            class PointerSlot: PointerSlot
-            {
-                class CompatibleItems
-                {
+            class PointerSlot: PointerSlot {
+                class CompatibleItems {
                     ATTACHMENTS_POINTER_BASE;
                 };
             };
-            class UnderBarrelSlot: UnderBarrelSlot
-            {
-                class CompatibleItems
-                {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class CompatibleItems {
                     bipod_01_f_blk = TRUE;
                 };
             };
         };
-        class Single: Single
-        {
+        class Single: Single {
             maxRange = 450;
             maxRangeProbab = 0.3;
             midRange = 250;
@@ -77,8 +63,7 @@ class CfgWeapons
             dispersion = 0.0003;
             reloadTime = 1.5;
 
-            class StandardSound: StandardSound
-            {
+            class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_DC15XShot)};
@@ -87,8 +72,7 @@ class CfgWeapons
         };
     };
 
-    class CLASS(DC15X): CLASS(DC15X_Base)
-    {
+    class CLASS(DC15X): CLASS(DC15X_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] DC-15X";
@@ -96,17 +80,14 @@ class CfgWeapons
 
         JLTS_friedItem = QCLASS(DC15X_Fried);
 
-        class LinkedItems
-        {
-            class LinkedItemsOptic
-            {
+        class LinkedItems {
+            class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = QCLASS(Optic_DC15X);
             };
         };
     };
-    class CLASS(DC15X_Fried): CLASS(DC15X)
-    {
+    class CLASS(DC15X_Fried): CLASS(DC15X) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-15X (Fried)";

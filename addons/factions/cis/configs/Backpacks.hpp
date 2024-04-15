@@ -146,7 +146,7 @@ class CLASS(CIS_Jetpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
     JLTS_isJumppack = TRUE;
     JLTS_settingsDialog = "JLTS_droid_jumppack_dialog";
 
-    JLTS_energy[] = {25,150};
+    JLTS_energy[] = {25, 150};
     JLTS_jumpLimits[] = {50, {2, 50}, "default"};
     JLTS_steeringCoef = 0.06;
     JLTS_recharge = 2;

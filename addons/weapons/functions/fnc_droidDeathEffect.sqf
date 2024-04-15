@@ -22,7 +22,7 @@ params [
 private [];
 
 _units = _units select {
-    private _isDroid = getNumber (configFile >> uniform _x >> "JLTS_isDroid");
+    private _isDroid = getNumber (configFile >> "CfgWeapons" >> uniform _x >> "JLTS_isDroid");
     _isDroid isEqualTo TRUE or (toLowerAnsi typeOf _x find "b1") > 0;
 };
 

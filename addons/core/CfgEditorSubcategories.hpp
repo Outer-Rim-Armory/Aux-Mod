@@ -1,5 +1,4 @@
-class CfgEditorSubcategories
-{
+class CfgEditorSubcategories {
     // Units
     class EDSUBCAT(Infantry) {
         displayName = "Infantry";

@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_7Rnd_DC15SA): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_7Rnd_DC15SA): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-15SA Energy Cell (7 Rnd)";
         displayNameShort = "Low Energy";
@@ -18,8 +16,7 @@ class CfgMagazines
         maxLeadSpeed = 27.7778;
     };
 
-    class CLASS(Mag_15Rnd_DC15SA): CLASS(Mag_7Rnd_DC15SA)
-    {
+    class CLASS(Mag_15Rnd_DC15SA): CLASS(Mag_7Rnd_DC15SA) {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-15SA Energy Cell (15 Rnd)";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DC-15SA";
@@ -28,8 +25,7 @@ class CfgMagazines
         mass = 13;
     };
 
-    class CLASS(Mag_30Rnd_DC15SA): CLASS(Mag_7Rnd_DC15SA)
-    {
+    class CLASS(Mag_30Rnd_DC15SA): CLASS(Mag_7Rnd_DC15SA) {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-15SA Energy Cell (30 Rnd)";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 30<br/>Used In: DC-15SA";

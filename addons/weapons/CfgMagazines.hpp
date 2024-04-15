@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CA_Magazine;
-    class CLASS(Mag_Base): CA_Magazine
-    {
+    class CLASS(Mag_Base): CA_Magazine {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -23,8 +21,7 @@ class CfgMagazines
         JLTS_hasEMPProtection = TRUE;
     };
 
-    class CLASS(Mag_StunShort): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_StunShort): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] Stun Energy Cell (Short)";
         displayNameShort = "Stun (Short)";
@@ -42,8 +39,7 @@ class CfgMagazines
         mass = 6;
     };
 
-    class CLASS(Mag_StunLong): CLASS(Mag_StunShort)
-    {
+    class CLASS(Mag_StunLong): CLASS(Mag_StunShort) {
         displayName = "[KC] Stun Energy Cell (Long)";
         displayNameShort = "Stun (Long)";
         descriptionShort = "Stun Energy Cell<br/>Rounds: 5<br/>Duration: 10 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M";
@@ -52,8 +48,7 @@ class CfgMagazines
         count = 5;
     };
 
-    class CLASS(Mag_UGL_FlareBase): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_UGL_FlareBase): CLASS(Mag_Base) {
         displayName = "[KC] Flare Round (Base)";
         displayNameShort = "Base Flare";
         descriptionShort = "Type: Flare Round - Base <br />Rounds: 1<br />Used in: UGLs, Flare Guns";
@@ -70,8 +65,7 @@ class CfgMagazines
         nameSound = "";
     };
 
-    class CLASS(Mag_UGL_FlareBlue): CLASS(Mag_UGL_FlareBase)
-    {
+    class CLASS(Mag_UGL_FlareBlue): CLASS(Mag_UGL_FlareBase) {
         SCOPE_PUBLIC;
         displayName = "[KC] Flare Round (Blue)";
         displayNameShort = "Blue Flare";
@@ -82,8 +76,7 @@ class CfgMagazines
 
         ammo = QCLASS(Flare_Blue);
     };
-    class CLASS(Mag_UGL_3Rnd_FlareBlue): CLASS(Mag_UGL_FlareBlue)
-    {
+    class CLASS(Mag_UGL_3Rnd_FlareBlue): CLASS(Mag_UGL_FlareBlue) {
         displayName = "[KC] 3Rnd Flare Round (Blue)";
         displayNameShort = "3Rnd Blue Flare";
         descriptionShort = "Type: Flare - Blue <br />Rounds: 3 <br />Used in: UGLs, Flare Guns";
@@ -92,8 +85,7 @@ class CfgMagazines
     };
 
 
-    class CLASS(Mag_Grenade_Base): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_Grenade_Base): CLASS(Mag_Base) {
         mass = 10;
         initSpeed = 18;
         maxLeadSpeed = 6.94444;
@@ -104,26 +96,22 @@ class CfgMagazines
 
 
     // ! LEGACY CLASSES
-    class Aux12thFleet_Mag_StunShort: CLASS(Mag_StunShort)
-    {
+    class Aux12thFleet_Mag_StunShort: CLASS(Mag_StunShort) {
         SCOPE_HIDDEN;
         descriptionShort = "Stun Energy Cell<br/>Rounds: 10<br/>Duration: 5 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
 
-    class Aux12thFleet_Mag_StunLong: CLASS(Mag_StunLong)
-    {
+    class Aux12thFleet_Mag_StunLong: CLASS(Mag_StunLong) {
         SCOPE_HIDDEN;
         descriptionShort = "Stun Energy Cell<br/>Rounds: 5<br/>Duration: 15 Seconds<br/>Used in: DC-15S, DC-15A, DC-17, DC-17M<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
 
-    class CLASS(UGL_FlareBlue): CLASS(Mag_UGL_FlareBlue)
-    {
+    class CLASS(UGL_FlareBlue): CLASS(Mag_UGL_FlareBlue) {
         SCOPE_HIDDEN;
         descriptionShort = "Type: Flare - Blue <br />Rounds: 1 <br />Used in: EGLM, 3GL<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };
 
-    class CLASS(3Rnd_UGL_FlareBlue): CLASS(Mag_UGL_3Rnd_FlareBlue)
-    {
+    class CLASS(3Rnd_UGL_FlareBlue): CLASS(Mag_UGL_3Rnd_FlareBlue) {
         SCOPE_HIDDEN;
         descriptionShort = "Type: Flare Rounds - Blue <br />Rounds: 3 <br />Used in: EGLM, 3GL <br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };

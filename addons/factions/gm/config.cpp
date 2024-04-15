@@ -1,23 +1,19 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             "OPTRE_UNSC_Units_Army",
             "OPTRE_UNSC_Units_NVGs",
             "OPTRE_Weapons_Backpacks",
             "SC_MDF"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(GM_Unit_Base),
             QCLASS(GM_Unit_Rifleman),
             QCLASS(GM_Unit_Rifleman_T2),
@@ -79,8 +75,7 @@ class CfgPatches
             QCLASS(GM_RLA_Backpack_RTO_Predef_SL),
             QCLASS(GM_RLA_Veteran_Backpack_RTO_Predef_SL)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(GM_Helmet),
             QCLASS(GM_Helmet_SL),
             QCLASS(GM_Helmet_T2),

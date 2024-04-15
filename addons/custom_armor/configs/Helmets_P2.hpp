@@ -16,6 +16,7 @@ P2_HELMET_VISOR_CUSTOM(Keeli,Crimson);
 class CLASS(Helmet_Phase2_Keeli_CamoBrown): CLASS(Helmet_Phase2_Keeli) {
     displayName = "[KC] INF P2 Helm ('Keeli') - Brown Camo";
     hiddenSelectionsTextures[] = {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\camo\brown\Keeli_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
@@ -28,11 +29,14 @@ class CLASS(Helmet_Phase2_Keeli_CamoBrown): CLASS(Helmet_Phase2_Keeli) {
     };
 };
 class CLASS(Helmet_Phase2_KeeliCrimson_CamoBrown): CLASS(Helmet_Phase2_Keeli_CamoBrown) {
+class CLASS(Helmet_Phase2_KeeliCrimson_CamoBrown): CLASS(Helmet_Phase2_Keeli_CamoBrown) {
     SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\camo\brown\Keeli_camo1_co.paa),
         QPATHTOF(data\visors\Crimson_camo2_co.paa)
     };
+    hiddenSelectionsMaterials[] = {
     hiddenSelectionsMaterials[] = {
         "",
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
@@ -40,6 +44,7 @@ class CLASS(Helmet_Phase2_KeeliCrimson_CamoBrown): CLASS(Helmet_Phase2_Keeli_Cam
 };
 class CLASS(Helmet_Phase2_Keeli_CamoGrey): CLASS(Helmet_Phase2_Keeli) {
     displayName = "[KC] INF P2 Helm ('Keeli') - Grey Camo";
+    hiddenSelectionsTextures[] = {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\camo\grey\Keeli_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
@@ -53,11 +58,14 @@ class CLASS(Helmet_Phase2_Keeli_CamoGrey): CLASS(Helmet_Phase2_Keeli) {
     };
 };
 class CLASS(Helmet_Phase2_KeeliCrimson_CamoGrey): CLASS(Helmet_Phase2_Keeli_CamoGrey) {
+class CLASS(Helmet_Phase2_KeeliCrimson_CamoGrey): CLASS(Helmet_Phase2_Keeli_CamoGrey) {
     SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\camo\grey\Keeli_camo1_co.paa),
         QPATHTOF(data\visors\Crimson_camo2_co.paa)
     };
+    hiddenSelectionsMaterials[] = {
     hiddenSelectionsMaterials[] = {
         "",
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"

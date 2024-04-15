@@ -230,191 +230,159 @@ class CLASS(Unit_Rat): CLASS(Unit_Phase2_Base) {
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_BARC_Rat), QCLASS(Vest_Officer_Rat), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_BARC_Rat), QCLASS(Vest_Officer_Rat), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Rev): CLASS(Unit_Phase2_Base)
-{
+class CLASS(Unit_Rev): CLASS(Unit_Phase2_Base) {
     displayName = "Rev";
 
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Rev);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Rev_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Rev_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_ARF_Rev), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_ARF_Rev), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Sin): CLASS(Unit_Phase2_Base)
-{
+class CLASS(Unit_Sin): CLASS(Unit_Phase2_Base) {
     displayName = "Sin";
 
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Sin);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Sin_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Sin_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_ARC_Sin), QCLASS(Vest_ARC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_ARC_Sin), QCLASS(Vest_ARC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Sogi): CLASS(Unit_Phase2_Base)
-{
+class CLASS(Unit_Sogi): CLASS(Unit_Phase2_Base) {
     displayName = "Sogi";
 
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Sogi);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Sogi_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Sogi_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_ARF_Sogi), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_ARF_Sogi), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Splashdown): CLASS(Unit_Phase2_Base)
-{
+class CLASS(Unit_Splashdown): CLASS(Unit_Phase2_Base) {
     displayName = "Splashdown";
 
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Splashdown);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Splashdown_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Splashdown_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Engineer_Splashdown), QCLASS(Vest_Engineer), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Engineer_Splashdown), QCLASS(Vest_Engineer), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Tugz): CLASS(Unit_Phase2_Base)
-{
+class CLASS(Unit_Tugz): CLASS(Unit_Phase2_Base) {
     displayName = "Tugz";
 
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Tugz);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Tugz_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Tugz_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_ARF_Tugz), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_ARF_Tugz), QCLASS(Vest_ARF), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base)
-{
+class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base) {
     displayName = "Tyrant";
 
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Tyrant);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Tyrant_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Tyrant_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_ARC_Tyrant), QCLASS(Vest_ARC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_ARC_Tyrant), QCLASS(Vest_ARC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
 class CLASS(Unit_Phase2_Insulated_Base);
-class CLASS(Unit_Phase2_Insulated_Dexus): CLASS(Unit_Phase2_Insulated_Base)
-{
+class CLASS(Unit_Phase2_Insulated_Dexus): CLASS(Unit_Phase2_Insulated_Base) {
     SCOPE_HIDDEN;
     uniformClass = QCLASS(Uniform_Phase2_Insulated_Dexus);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\insulated\Dexus_upper_co.paa),
         QPATHTOF(data\uniforms\insulated\Dexus_lower_co.paa),
         "\lsd_armor_bluefor\uniform\gar\phase2Insulated\data\undersuit_co.paa"
     };
 };
 
-class CLASS(Unit_Phase2_Insulated_Joe): CLASS(Unit_Phase2_Insulated_Base)
-{
+class CLASS(Unit_Phase2_Insulated_Joe): CLASS(Unit_Phase2_Insulated_Base) {
     SCOPE_HIDDEN;
     uniformClass = QCLASS(Uniform_Phase2_Insulated_Joe);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\insulated\Joe_upper_co.paa),
         QPATHTOF(data\uniforms\insulated\Joe_lower_co.paa),
         "\lsd_armor_bluefor\uniform\gar\phase2Insulated\data\undersuit_co.paa"
     };
 };
 
-class CLASS(Unit_Phase2_Insulated_Keeli): CLASS(Unit_Phase2_Insulated_Base)
-{
+class CLASS(Unit_Phase2_Insulated_Keeli): CLASS(Unit_Phase2_Insulated_Base) {
     SCOPE_HIDDEN;
     uniformClass = QCLASS(Uniform_Phase2_Insulated_Keeli);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\insulated\Keeli_upper_co.paa),
         QPATHTOF(data\uniforms\insulated\Keeli_lower_co.paa),
         "\lsd_armor_bluefor\uniform\gar\phase2Insulated\data\undersuit_co.paa"

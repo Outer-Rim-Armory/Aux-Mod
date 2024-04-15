@@ -1,14 +1,11 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QCLASS(core),
             "ls_armor_bluefor",
             "lsd_units_bluefor",
@@ -20,8 +17,7 @@ class CfgPatches
             "JLTS_characters_CloneArmor2",
             "SDT_gear"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Unit_Base),
             QCLASS(Unit_Phase1_Base),
             QCLASS(Unit_Phase1_CR),
@@ -207,8 +203,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase2_Insulated_CT),
             QGROUND_CLASS(Helmet_Phase12_Base)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Helmet_Base),
             QCLASS(Helmet_Phase1_Base),
             QCLASS(Helmet_Phase1_CR),

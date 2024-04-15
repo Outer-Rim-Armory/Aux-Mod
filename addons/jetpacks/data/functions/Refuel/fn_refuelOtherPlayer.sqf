@@ -31,13 +31,11 @@ private _targetMaxFuel = [(configFile >> "CfgVehicles" >> backpack _target), QGV
 private _fuelToRefill = round ((_fuelCanFuel + _targetFuel) min _targetMaxFuel) - _targetFuel;
 private _refuelTime = _fuelToRefill / REFUEL_PER_SECOND;
 
-private _refuelHandler =
-{
+private _refuelHandler = {
     _this#0 params ["_player", "_target"];
     private _handlerID = _this#1;
 
-    private _removeSelf =
-    {
+    private _removeSelf = {
         [_handlerID] call CBA_fnc_removePerFrameHandler;
         _player setVariable ["BNA_KC_Jetpack_isRefuelingPlayer", nil];
         playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_end.wss", _player, false, getPosASL _player, 1, 1, 8];
@@ -60,19 +58,15 @@ private _refuelHandler =
     private _fuelCanNewFuel = (_fuelCanFuel - _fuelDiff) max 0;
 
     _player removeMagazine _fuelCan;
-    if (_fuelCanNewFuel == 0) then
-    {
+    if (_fuelCanNewFuel == 0) then {
         // If the fuel can runs out of fuel, give the item version instead
-        private _fuelCanItem =
-        [
+        private _fuelCanItem = [
             (configFile >> "CfgMagazines" >> _fuelCan),
             QGVAR(fuelCanItem),
             QCLASS(Jetpack_FuelCan_Empty)
         ] call BIS_fnc_returnConfigEntry;
         _player addItem _fuelcanItem;
-    }
-    else
-    {
+    } else {
         _player addMagazine [_fuelCan, _fuelCanNewFuel];
     };
 
@@ -82,37 +76,29 @@ private _refuelHandler =
 
 
 // [_player, "Acts_TreatingWounded04"] call ace_common_fnc_doAnimation;
-[
-    _refuelTime,
-    [_player, _target, _refuelHandler],
-    {
-        // On Success
-        _this#0 params ["_player", "_args"];
-        _player setVariable ["BNA_KC_Jetpack_isRefuelingPlayer", nil];
-        cutText ["Finished refueling player's jetpack", "PLAIN DOWN"];
-    },
-    {
-        // On Failure
-        _this#0 params ["_player", "_args"];
-        _player setVariable ["BNA_KC_Jetpack_isRefuelingPlayer", nil];
-        cutText ["Cancelled refueling", "PLAIN DOWN"];
-    },
-    "Refueling...",
-    {
-        _this#0 params ["_player", "_target", "_refuelHandler"];
+[_refuelTime, [_player, _target, _refuelHandler], {
+    // On Success
+    _this#0 params ["_player", "_args"];
+    _player setVariable ["BNA_KC_Jetpack_isRefuelingPlayer", nil];
+    cutText ["Finished refueling player's jetpack", "PLAIN DOWN"];
+}, {
+    // On Failure
+    _this#0 params ["_player", "_args"];
+    _player setVariable ["BNA_KC_Jetpack_isRefuelingPlayer", nil];
+    cutText ["Cancelled refueling", "PLAIN DOWN"];
+}, "Refueling...", {
+    _this#0 params ["_player", "_target", "_refuelHandler"];
 
-        // Start refuel
-        if !(_player getVariable ["BNA_KC_Jetpack_isRefuelingPlayer", false]) then
-        {
-            playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_start.wss", _player, false, getPosASL _player, 1, 1, 8];
-            _player setVariable ["BNA_KC_Jetpack_isRefuelingPlayer", true];
-            [_refuelHandler, 1, [_player, _target]] call CBA_fnc_addPerFrameHandler;
-        };
+    // Start refuel
+    if !(_player getVariable ["BNA_KC_Jetpack_isRefuelingPlayer", false]) then {
+        playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_start.wss", _player, false, getPosASL _player, 1, 1, 8];
+        _player setVariable ["BNA_KC_Jetpack_isRefuelingPlayer", true];
+        [_refuelHandler, 1, [_player, _target]] call CBA_fnc_addPerFrameHandler;
+    };
 
-        // Conditions
-        lifeState _player != "INCAPACITATED" and
-        alive _player and
-        [_player] call ace_common_fnc_isAwake and
-        _player distance _target <= 2;
-    }
-] call ace_common_fnc_progressBar;
+    // Conditions
+    lifeState _player != "INCAPACITATED" and
+    alive _player and
+    [_player] call ace_common_fnc_isAwake and
+    _player distance _target <= 2;
+}] call ace_common_fnc_progressBar;

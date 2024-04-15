@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Grenade_Base);
-    class CLASS(Grenade_EMP): CLASS(Mag_Grenade_Base)
-    {
+    class CLASS(Grenade_EMP): CLASS(Mag_Grenade_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] Droid Popper";
         displayNameShort = "Droid Popper";
@@ -16,8 +14,7 @@ class CfgMagazines
         GVAR(empRadiusVehicle) = EMP_RADIUS_VEHICLE_DEFAULT;
     };
 
-    class CLASS(Grenade_Bacta): CLASS(Mag_Grenade_Base)
-    {
+    class CLASS(Grenade_Bacta): CLASS(Mag_Grenade_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] Pressurized Bacta Grenade";
         displayNameShort = "Bacta Bomb";

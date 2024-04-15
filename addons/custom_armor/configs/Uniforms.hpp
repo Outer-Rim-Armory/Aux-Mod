@@ -1,6 +1,5 @@
 class ls_gar_phase2_uniform;
-class CLASS(Uniform_Base): ls_gar_phase2_uniform
-{
+class CLASS(Uniform_Base): ls_gar_phase2_uniform {
     class ItemInfo;
 };
 UNIFORM_CUSTOM(Axel);
@@ -43,8 +42,7 @@ UNIFORM_CUSTOM(Splashdown);
 UNIFORM_CUSTOM(Tugz);
 UNIFORM_CUSTOM(Tyrant);
 
-class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base)
-{
+class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base) {
     class ItemInfo;
 };
 UNIFORM_INSULATED_P2_CUSTOM(Dexus);

@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_30Rnd_HI12): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_30Rnd_HI12): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] HI-12 Energy Cell";
         displayNameShort = "Standard Energy";

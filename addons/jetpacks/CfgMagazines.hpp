@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CA_Magazine;
-    class CLASS(Jetpack_FuelCan_Mag): CA_Magazine
-    {
+    class CLASS(Jetpack_FuelCan_Mag): CA_Magazine {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Jetpack Fuel Can";

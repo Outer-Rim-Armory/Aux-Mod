@@ -6,3 +6,12 @@
     [1, 50, 20, -1],
     TRUE
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(canRevive),
+    "CHECKBOX",
+    ["Can Revive", "Whether some battle droids have a chance to revive on death."],
+    [QUOTE(MOD_NAME), "Battle Droids"],
+    false,
+    TRUE
+] call CBA_fnc_addSetting;

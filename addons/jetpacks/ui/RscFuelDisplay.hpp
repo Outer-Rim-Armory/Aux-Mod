@@ -1,5 +1,4 @@
-class GVAR(RscFuelDisplay)
-{
+class GVAR(RscFuelDisplay) {
     idd = IDD_FUELDISPLAY;
     movingEnable = TRUE;
     duration = 9.9999998e+010;
@@ -10,14 +9,12 @@ class GVAR(RscFuelDisplay)
     onLoad = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(RscFuelDisplay),_this select 0)];);
     onUnload = QUOTE(uiNamespace setVariable [ARR_2(QQGVAR(RscFuelDisplay),nil)]);
 
-    controls[] =
-    {
+    controls[] = {
         "Background",
         "Fuel"
     };
 
-    class Background: RscPicture
-    {
+    class Background: RscPicture {
         idc = IDC_FUELDISPLAY_BACKGROUND;
         text = "#(argb,8,8,3)color(0,0,0,0.7)";
 
@@ -27,8 +24,7 @@ class GVAR(RscFuelDisplay)
         h = FUELDISPLAY_H;
     };
 
-    class Fuel: RscPicture
-    {
+    class Fuel: RscPicture {
         idc = IDC_FUELDISPLAY_FUEL;
         text = "#(argb,8,8,3)color(1,1,1,0.7)";
 
