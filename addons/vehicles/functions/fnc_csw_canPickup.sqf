@@ -23,7 +23,7 @@ params [
 TRACE_2("fnc_csw_canPickup",_unit,_weapon);
 
 if (!(_unit getVariable [QEGVAR(jetpacks,usingJetpack), false]) and
-    {[_weapon, _unit] call ace_csw_fnc_canPickupTripod}
+    {[_weapon, _unit] call ace_csw_fnc_assemble_canPickUpWeapon}
 ) exitWith {true};
 
 false;

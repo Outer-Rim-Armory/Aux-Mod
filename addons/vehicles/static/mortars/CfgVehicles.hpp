@@ -77,7 +77,7 @@ class CfgVehicles {
                 priority = 5;
 
                 condition = QUOTE(GVAR(csw_showDeployAction) and {[ARR_2(ace_player,this)] call FUNC(csw_canPickup)});
-                statement = QUOTE([ARR_2(this,ace_player)] call ace_csw_fnc_assemble_pickupTripod);
+                statement = QUOTE([ARR_2(this,ace_player)] call ace_csw_fnc_assemble_pickupWeapon);
             };
         };
     };
