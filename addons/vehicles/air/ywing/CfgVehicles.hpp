@@ -37,9 +37,9 @@ class CfgVehicles {
         };
 
         hiddenselectionstextures[] = {
-            "\3as\3AS_btlb\textures\chasis_shadow_co.paa",
-            "\3as\3AS_btlb\data\detail_co.paa",
-            "\3as\3AS_btlb\data\interior_co.paa"
+            "\3AS\3AS_BTLB\textures\chasis_shadow_co.paa",
+            "\3AS\3AS_BTLB\data\detail_co.paa",
+            "\3AS\3AS_BTLB\data\interior_co.paa"
         };
 
         textureList[] = {"Standard", 1, "StandardLeader", 0};
@@ -49,17 +49,17 @@ class CfgVehicles {
                 displayName = "Standard";
                 factions[] = {};
                 textures[] = {
-                    "\3as\3AS_btlb\textures\chasis_shadow_co.paa",
-                    "\3as\3AS_btlb\data\detail_co.paa",
-                    "\3as\3AS_btlb\data\interior_co.paa"
+                    "\3AS\3AS_BTLB\textures\chasis_shadow_co.paa",
+                    "\3AS\3AS_BTLB\data\detail_co.paa",
+                    "\3AS\3AS_BTLB\data\interior_co.paa"
                 };
             };
             class StandardLeader: Standard {
                 displayName = "Standard Leader";
                 textures[] = {
-                    "\3as\3AS_btlb\textures\chasis_shadowleader_co.paa",
-                    "\3as\3AS_btlb\data\detail_co.paa",
-                    "\3as\3AS_btlb\data\interior_co.paa"
+                    "\3AS\3AS_BTLB\textures\chasis_shadowleader_co.paa",
+                    "\3AS\3AS_BTLB\data\detail_co.paa",
+                    "\3AS\3AS_BTLB\data\interior_co.paa"
                 };
             };
         };
