@@ -1,7 +1,6 @@
-// 800 meters
 #define M190_RANGE_SMALL 0.443
 #define M190_RANGE_MEDIUM 0.7/*Unused*/
-#define M190_RANGE_FAR 0.5647
+#define M190_RANGE_FAR 0.5647/*Unused*/
 
 #define MORTAR_SOUND_FIRE reloadSound[] = {"\swlb_core\data\sounds\vehicles\mortar\weapon\mortar_reload.wss", 2, 1, 20}; \
 reloadMagazineSound[] = {"\swlb_core\data\sounds\vehicles\mortar\weapon\mortar_reloadMagazine.wss", 1, 1, 20}
