@@ -1,3 +1,4 @@
+// TODO: Update to use vanilla fire when Burn 'Em is not loaded
 class CfgWeapons {
     class 3AS_Flamer_Base;
     class CLASS(X42_base): 3AS_Flamer_Base {

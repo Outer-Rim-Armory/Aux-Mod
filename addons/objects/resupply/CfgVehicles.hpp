@@ -234,4 +234,34 @@ class CfgVehicles {
             WEAP_XX(CLASS(Mortar_M190_Carry),6);
         };
     };
+
+    class CLASS(Resupply_Weapons_GAR): CLASS(Resupply_Base) {
+        displayName = "Weapons Crate (GAR)";
+
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+
+        class TransportWeapons {
+            WEAP_XX(CLASS(DC15A),15);
+            WEAP_XX(CLASS(DC15C),15);
+            WEAP_XX(CLASS(DC15L),15);
+            WEAP_XX(CLASS(DC15S),15);
+            WEAP_XX(CLASS(DC15SA),15);
+            WEAP_XX(CLASS(DC15X),15);
+            WEAP_XX(CLASS(DC17),15);
+            WEAP_XX(CLASS(DC17M),15);
+            WEAP_XX(CLASS(DC20Y),15);
+            WEAP_XX(CLASS(DP23),15);
+            WEAP_XX(CLASS(GR20),15);
+            WEAP_XX(CLASS(HI12),15);
+            WEAP_XX(CLASS(LW38),15);
+            WEAP_XX(CLASS(RPS6_Loaded),15);
+            WEAP_XX(CLASS(RPS7),15);
+            WEAP_XX(CLASS(Valken38x),15);
+            WEAP_XX(CLASS(WestarM5),15);
+            WEAP_XX(CLASS(X42),15);
+            WEAP_XX(CLASS(Z6),15);
+        };
+    };
 };
