@@ -7,7 +7,7 @@ class CfgWeapons {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
-        displayName = "[KC] Model 190 Mortar System";
+        displayName = "[KC] M-190 Mortar System";
         picture = "\ls_weapons\_ui\rps6_ca.paa";
         drySound[] = {};
 

@@ -40,9 +40,6 @@ class CfgVehicles {
             class MainTurret: MainTurret {
                 magazines[] = {};
                 weapons[] = {};
-
-                maxElev = 21.79; // Increasing lowers mininum range
-                minElev = -30;
             };
         };
 
@@ -90,7 +87,7 @@ class CfgVehicles {
         faction = QFACTION(KC);
         editorPreview = EEDITOR_PREVIEW(vehicles\static\SUBCOMPONENT,Mortar_M190);
 
-        displayName = "M-190 Disposable Mortar System";
+        displayName = "M-190 Mortar System";
         crew = QCLASS(Unit_Phase2_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         side = BLUFOR;
@@ -102,13 +99,16 @@ class CfgVehicles {
 
         class Turrets: Turrets {
             class MainTurret: MainTurret {
+                weapons[] = {QCLASS(Mortar_M190_Turret)};
                 magazines[] = {
                     QCLASS(Mag_6Rnd_Mortar_82mm_HE),
                     QCLASS(Mag_6Rnd_Mortar_SmokeWhite),
                     QCLASS(Mag_6Rnd_Mortar_SmokeBlue),
                     QCLASS(Mag_6Rnd_Mortar_SmokeRed)
                 };
-                weapons[] = {QCLASS(Mortar_M190_Turret)};
+
+                maxElev = 38.56; // Increasing lowers mininum range
+                minElev = -30;
             };
         };
 
