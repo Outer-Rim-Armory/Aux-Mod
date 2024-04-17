@@ -5,7 +5,7 @@ class CfgVehicles {
         uniformClass = QCLASS(Uniform_Rancor);
         nakedUniform = QCLASS(Uniform_Rancor);
 
-        model = QPATHTOF(data\rancor\Rancor.p3d);
+        model = QPATHTOF(data\rancor\CLASS(Rancor.p3d));
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         hiddenSelectionsMaterials[] = {};
