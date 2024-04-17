@@ -46,7 +46,10 @@ class CfgVehicles {
 
         textureList[] = {
             "Standard", 0,
-            "KeeliCompany", 1
+            "KeeliCompany", 1,
+            "KeeliCompanyWhite", 0,
+            "CamoBrown", 0,
+            "CamoGrey", 0
         };
         class TextureSources {
             class Standard {
@@ -60,14 +63,45 @@ class CfgVehicles {
                     "\3AS\3AS_Jug\data\juggernaut_wheels_co.paa"
                 };
             };
+
             class KeeliCompany: Standard {
                 author = AUTHOR;
                 displayName = "Keeli Company";
                 textures[] = {
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Body_co.paa),
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Guns_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\KeeliCompany\Body_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\KeeliCompany\Guns_co.paa),
                     "\3AS\3AS_Jug\data\juggernaut_props_co.paa",
                     "\3AS\3AS_Jug\data\juggernaut_wheels_co.paa"
+                };
+            };
+
+            class KeeliCompanyWhite: KeeliCompany {
+                displayName = "Keeli Company (White)";
+                textures[] = {
+                    QPATHTOF(land\juggernaut\data\textures\KeeliCompanyWhite\Body_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\KeeliCompanyWhite\Guns_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\KeeliCompanyWhite\Props_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\KeeliCompanyWhite\Wheels_co.paa)
+                };
+            };
+
+            class CamoBrown: KeeliCompany {
+                displayName = "Brown Camo";
+                textures[] = {
+                    QPATHTOF(land\juggernaut\data\textures\CamoBrown\Body_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\CamoBrown\Guns_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\CamoBrown\Props_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\CamoBrown\Wheels_co.paa)
+                };
+            };
+
+            class CamoGrey: KeeliCompany {
+                displayName = "Grey Camo";
+                textures[] = {
+                    QPATHTOF(land\juggernaut\data\textures\CamoGrey\Body_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\CamoGrey\Guns_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\CamoGrey\Props_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\CamoGrey\Wheels_co.paa)
                 };
             };
         };
