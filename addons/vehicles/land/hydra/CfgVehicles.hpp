@@ -30,7 +30,7 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\hydra\data\textures\KeeliCompanyWhite\Body_co.paa),
             QPATHTOF(land\hydra\data\textures\KeeliCompanyWhite\Wheels_co.paa),
-            QPATHTOF(data\csatTurret\KCWhite_Turret_co.paa),
+            QPATHTOF(data\csatTurret\KeeliCompanyWhite_Turret_co.paa),
             "", // Camo Net Texture
             ""  // Cage Texture
         };
@@ -45,7 +45,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\hydra\data\textures\KeeliCompanyWhite\Body_co.paa),
                     QPATHTOF(land\hydra\data\textures\KeeliCompanyWhite\Wheels_co.paa),
-                    QPATHTOF(data\csatTurret\KCWhite_Turret_co.paa),
+                    QPATHTOF(data\csatTurret\KeeliCompanyWhite_Turret_co.paa),
                     "",
                     ""
                 };
