@@ -4,8 +4,7 @@ class CfgVehicles {
         class HitPoints;
     };
     class 3AS_Jug_base_F: Wheeled_Apc_F {
-        // class HitPoints: HitPoints
-        // {
+        // class HitPoints: HitPoints {
         //     class HitBody;
         //     class HitHull;
         // };
@@ -39,13 +38,16 @@ class CfgVehicles {
         };
 
         hiddenSelectionsTextures[] = {
-            QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\body_co.paa),
-            QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\guns_co.paa),
+            QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Body_co.paa),
+            QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Guns_co.paa),
             "\3AS\3AS_Jug\data\juggernaut_props_co.paa",
             "\3AS\3AS_Jug\data\juggernaut_wheels_co.paa"
         };
 
-        textureList[] = {"Standard", 0, "KeeliCompany", 1};
+        textureList[] = {
+            "Standard", 0,
+            "KeeliCompany", 1
+        };
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -62,8 +64,8 @@ class CfgVehicles {
                 author = AUTHOR;
                 displayName = "Keeli Company";
                 textures[] = {
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\body_co.paa),
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\guns_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Body_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Guns_co.paa),
                     "\3AS\3AS_Jug\data\juggernaut_props_co.paa",
                     "\3AS\3AS_Jug\data\juggernaut_wheels_co.paa"
                 };
@@ -71,15 +73,12 @@ class CfgVehicles {
         };
 
         // Look at https://community.bistudio.com/wiki/Arma_3:_Soldier_Protection for info on what each value does
-        // class HitPoints: HitPoints
-        // {
-        //     class HitBody: HitBody
-        //     {
+        // class HitPoints: HitPoints {
+        //     class HitBody: HitBody {
         //         armor = 2;
         //         explosionShielding = 0.15;
         //     };
-        //     class HitHull: HitHull
-        //     {
+        //     class HitHull: HitHull {
         //         armor = 2;
         //         explosionShielding = 0.85;
         //     };
