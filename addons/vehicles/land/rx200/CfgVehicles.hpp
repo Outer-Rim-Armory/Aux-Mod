@@ -23,18 +23,29 @@ class CfgVehicles {
 
         hiddenSelectionsTextures[] = {QPATHTOF(land\rx200\data\textures\Body_KC_co.paa)};
 
-        textureList[] = {"Standard", 0, "KeeliCompany", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0};
+        textureList[] = {
+            "Standard", 0,
+            "KeeliCompany", 1,
+            "KeeliCompanyWhite", 0,
+            "CamoKC", 0,
+            "CamoBrown", 0,
+            "CamoGrey", 0
+        };
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
                 displayName = "Standard";
                 factions[] = {};
-                textures[] = {"\3as\3AS_RX200\data\DefaultMaterial_CO.paa"};
+                textures[] = {"\3AS\3AS_RX200\data\DefaultMaterial_CO.paa"};
             };
             class KeeliCompany: Standard {
                 author = AUTHOR;
                 displayName = "Keeli Company";
                 textures[] = {QPATHTOF(land\rx200\data\textures\Body_KC_co.paa)};
+            };
+            class KeeliCompanyWhite: KeeliCompany {
+                displayName = "Keeli Company (White)";
+                textures[] = {QPATHTOF(land\rx200\data\textures\Body_KCWhite_co.paa)};
             };
             class CamoKC: KeeliCompany {
                 displayName = "Keeli Company Camo";
