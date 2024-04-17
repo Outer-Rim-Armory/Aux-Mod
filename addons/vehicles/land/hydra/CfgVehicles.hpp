@@ -27,41 +27,57 @@ class CfgVehicles {
         EGVAR(weapons,empRadiusDroideka) = 15;
         EGVAR(weapons,empRadiusVehicle) = 15;
 
-        hiddenSelectionsTextures[] = {};
-        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(land\hydra\data\textures\KeeliCompanyWhite\Body_co.paa),
+            QPATHTOF(land\hydra\data\textures\KeeliCompanyWhite\Wheels_co.paa),
+            QPATHTOF(data\csatTurret\KCWhite_Turret_co.paa),
+            "", // Camo Net Texture
+            ""  // Cage Texture
+        };
+        textureList[] = {"KeeliCompanyWhite", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0};
         animationList[] = {"showCanisters", FALSE, "showTools", FALSE};
 
         class TextureSources {
-            class CamoKC {
+            class KeeliCompanyWhite {
                 author = AUTHOR;
-                displayName = "Keeli Company Camo";
+                displayName = "Keeli Company (White)";
                 factions[] = {};
+                textures[] = {
+                    QPATHTOF(land\hydra\data\textures\KeeliCompanyWhite\Body_co.paa),
+                    QPATHTOF(land\hydra\data\textures\KeeliCompanyWhite\Wheels_co.paa),
+                    QPATHTOF(data\csatTurret\KCWhite_Turret_co.paa),
+                    "",
+                    ""
+                };
+            };
+            class CamoKC: KeeliCompanyWhite {
+                displayName = "Keeli Company Camo";
                 textures[] = {
                     QPATHTOF(land\hydra\data\textures\CamoKC\Body_co.paa),
                     QPATHTOF(land\hydra\data\textures\CamoKC\Wheels_co.paa),
-                    QPATHTOF(data\csatTurret\CamoKC\Turret_co.paa),
-                    "", // Camo Net Texture
-                    ""  // Cage Texture
+                    QPATHTOF(data\csatTurret\CamoKC_Turret_co.paa),
+                    "",
+                    ""
                 };
             };
-            class CamoBrown: CamoKC {
+            class CamoBrown: KeeliCompanyWhite {
                 displayName = "Brown Camo";
                 textures[] = {
                     QPATHTOF(land\hydra\data\textures\CamoBrown\Body_co.paa),
                     QPATHTOF(land\hydra\data\textures\CamoBrown\Wheels_co.paa),
-                    QPATHTOF(data\csatTurret\CamoBrown\Turret_co.paa),
-                    "", // Camo Net Texture
-                    ""  // Cage Texture
+                    QPATHTOF(data\csatTurret\CamoBrown_Turret_co.paa),
+                    "",
+                    ""
                 };
             };
-            class CamoGrey: CamoKC {
+            class CamoGrey: KeeliCompanyWhite {
                 displayName = "Grey Camo";
                 textures[] = {
                     QPATHTOF(land\hydra\data\textures\CamoGrey\Body_co.paa),
                     QPATHTOF(land\hydra\data\textures\CamoGrey\Wheels_co.paa),
-                    QPATHTOF(data\csatTurret\CamoGrey\Turret_co.paa),
-                    "", // Camo Net Texture
-                    ""  // Cage Texture
+                    QPATHTOF(data\csatTurret\CamoGrey_Turret_co.paa),
+                    "",
+                    ""
                 };
             };
         };

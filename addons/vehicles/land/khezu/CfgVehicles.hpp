@@ -186,7 +186,7 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\khezu\data\textures\CamoKC\Body_co.paa),
             QPATHTOF(land\khezu\data\textures\CamoKC\Body2_co.paa),
-            QPATHTOF(data\csatTurret\CamoKC\Turret_co.paa)
+            QPATHTOF(data\csatTurret\CamoKC_Turret_co.paa)
         };
         textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources {
@@ -197,7 +197,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\khezu\data\textures\CamoKC\Body_co.paa),
                     QPATHTOF(land\khezu\data\textures\CamoKC\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoKC\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoKC_Turret_co.paa)
                 };
             };
             class CamoBrown: CamoKC {
@@ -205,7 +205,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\khezu\data\textures\CamoBrown\Body_co.paa),
                     QPATHTOF(land\khezu\data\textures\CamoBrown\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoBrown\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoBrown_Turret_co.paa)
                 };
             };
             class CamoGrey: CamoKC {
@@ -213,7 +213,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\khezu\data\textures\CamoGrey\Body_co.paa),
                     QPATHTOF(land\khezu\data\textures\CamoGrey\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoGrey\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoGrey_Turret_co.paa)
                 };
             };
         };
