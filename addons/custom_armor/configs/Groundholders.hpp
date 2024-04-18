@@ -14,6 +14,7 @@ GROUND_HOLDER(Helmet_Phase1_DexusBacta,"INF P1 Helm ('Dexus') [Bacta Visor]");
 GROUND_HOLDER(Helmet_Phase1_Drake,"INF P1 Helm ('Drake')");
 GROUND_HOLDER(Helmet_Phase1_DrakeBacta,"INF P1 Helm ('Drake') [Bacta Visor]");
 GROUND_HOLDER(Helmet_Phase1_Grey,"INF P1 Helm ('Grey')");
+GROUND_HOLDER(Helmet_Phase1_Harry,"INF P1 Helm ('Harry')");
 GROUND_HOLDER(Helmet_Phase1_Hazard,"INF P1 Helm ('Hazard')");
 GROUND_HOLDER(Helmet_Phase1_Jaws,"INF P1 Helm ('Jaws')");
 GROUND_HOLDER(Helmet_Phase1_Jester,"INF P1 Helm ('Jester')");

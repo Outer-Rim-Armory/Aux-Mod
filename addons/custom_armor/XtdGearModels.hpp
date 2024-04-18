@@ -20,6 +20,7 @@ class XtdGearModels {
                     "Dexus",
                     "Drake",
                     "Grey",
+                    "Harry",
                     "Hazard",
                     "Jaws",
                     "Jester",
@@ -50,6 +51,7 @@ class XtdGearModels {
                 class Dexus { label = "Dexus"; };
                 class Drake { label = "Drake"; };
                 class Grey { label = "Grey"; };
+                class Harry { label = "Harry"; };
                 class Hazard { label = "Hazard"; };
                 class Jaws { label = "Jaws"; };
                 class Jester { label = "Jester"; };
