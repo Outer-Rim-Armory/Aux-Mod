@@ -46,7 +46,7 @@ class CLASS(DOUBLES(Helmet_Phase1,var1)##var2): CLASS(DOUBLES(Helmet_Phase1,var1
     displayName = QUOTE([KC] AVI P1 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase1Pilot\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa", \
+        QPATHTOF(data\helmets\phase1Pilot\DOUBLES(var1,camo2_co.paa)), \
         "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
