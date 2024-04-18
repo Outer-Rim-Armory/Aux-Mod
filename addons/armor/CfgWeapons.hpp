@@ -22,7 +22,7 @@ class CfgWeapons {
     #include "configs\Helmets_ARC.hpp"
     #include "configs\Helmets_ARF.hpp"
     #include "configs\Helmets_BARC.hpp"
-    #include "configs\Helmets_Commando.hpp"
+    #include "configs\Helmets_cloneCommando.hpp"
 
     class ls_blueforUniform_base;
     class ls_gar_phase2_uniform: ls_blueforUniform_base {
@@ -43,7 +43,7 @@ class CfgWeapons {
     };
 
     #include "configs\Uniforms.hpp"
-    #include "configs\Uniforms_Commando.hpp"
+    #include "configs\Uniforms_cloneCommando.hpp"
     #include "configs\Uniforms_Jedi.hpp"
 
     class V_PlateCarrier1_rgr;
@@ -91,7 +91,7 @@ class CfgWeapons {
     #include "configs\Vests_Engineer.hpp"
     #include "configs\Vests_Tanker.hpp"
     #include "configs\Vests_ARC.hpp"
-    #include "configs\Vests_Commando.hpp"
+    #include "configs\Vests_cloneCommando.hpp"
 
     class BNA_KC_Vest_ARF: CLASS(Vest_Basic) {
         displayName = "[KC] SF ARF Vest";
