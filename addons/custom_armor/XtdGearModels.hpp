@@ -12,6 +12,7 @@ class XtdGearModels {
                 values[] = {
                     "Alvarez",
                     "Axel",
+                    "Bond",
                     "Burnt",
                     "Catholic",
                     "Cutthroat",
@@ -41,6 +42,7 @@ class XtdGearModels {
 
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
+                class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };
                 class Cutthroat { label = "Cutthroat"; };
@@ -118,6 +120,7 @@ class XtdGearModels {
                     "Alvarez",
                     "Axel",
                     "Bob",
+                    "Bond",
                     "Burnt",
                     "Dexus",
                     "Evo",
@@ -148,6 +151,7 @@ class XtdGearModels {
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
                 class Bob { label = "Bob"; };
+                class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
                 class Dexus { label = "Dexus"; };
                 class Evo { label = "Evo"; };
