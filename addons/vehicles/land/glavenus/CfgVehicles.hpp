@@ -25,7 +25,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\KeeliCompany\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\KeeliCompany\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\KeeliCompany\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\KeeliCompanyWhite_Turret_co.paa)
                 };
             };
             class CamoKC: KeeliCompany {
@@ -33,7 +33,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\CamoKC\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\CamoKC\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoKC\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoKC_Turret_co.paa)
                 };
             };
             class CamoBrown: KeeliCompany {
@@ -41,7 +41,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\CamoBrown\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\CamoBrown\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoBrown\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoBrown_Turret_co.paa)
                 };
             };
             class CamoGrey: KeeliCompany {
@@ -49,7 +49,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\CamoGrey\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\CamoGrey\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoGrey\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoGrey_Turret_co.paa)
                 };
             };
         };
@@ -112,7 +112,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\KeeliCompany\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\KeeliCompany\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\KeeliCompany\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\KeeliCompanyWhite_Turret_co.paa)
                 };
             };
             class CamoKC: KeeliCompany {
@@ -120,7 +120,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\CamoKC\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\CamoKC\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoKC\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoKC_Turret_co.paa)
                 };
             };
             class CamoBrown: KeeliCompany {
@@ -128,7 +128,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\CamoBrown\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\CamoBrown\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoBrown\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoBrown_Turret_co.paa)
                 };
             };
             class CamoGrey: KeeliCompany {
@@ -136,7 +136,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\CamoGrey\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\CamoGrey\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoGrey\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoGrey_Turret_co.paa)
                 };
             };
         };
@@ -192,7 +192,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\KeeliCompany\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\KeeliCompany\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\KeeliCompany\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\KeeliCompanyWhite_Turret_co.paa)
                 };
             };
             class CamoKC: KeeliCompany {
@@ -200,7 +200,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\CamoKC\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\CamoKC\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoKC\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoKC_Turret_co.paa)
                 };
             };
             class CamoBrown: KeeliCompany {
@@ -208,7 +208,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\CamoBrown\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\CamoBrown\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoBrown\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoBrown_Turret_co.paa)
                 };
             };
             class CamoGrey: KeeliCompany {
@@ -216,7 +216,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\glavenus\data\textures\CamoGrey\Body_co.paa),
                     QPATHTOF(land\glavenus\data\textures\CamoGrey\Body2_co.paa),
-                    QPATHTOF(data\csatTurret\CamoGrey\Turret_co.paa)
+                    QPATHTOF(data\csatTurret\CamoGrey_Turret_co.paa)
                 };
             };
         };

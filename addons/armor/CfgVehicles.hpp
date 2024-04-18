@@ -106,7 +106,7 @@ class CfgVehicles {
 
     class CLASS(Backpack_Invis): CLASS(Backpack) {
         displayName = "[KC] INF Backpack (Invis)";
-        model = QPATHTOEF(core,data\models\empty\empty.p3d);
+        model = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
     };
@@ -170,7 +170,7 @@ class CfgVehicles {
 
     class CLASS(Backpack_Radio_Invis): CLASS(Backpack_Radio_Base) {
         displayName = "[KC] INF Radio Backpack (Invis)";
-        model = QPATHTOEF(core,data\models\empty\empty.p3d);
+        model = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
     };

@@ -33,17 +33,17 @@ class CfgMusic {
 
     // Call of Duty
     MUSIC(COD_115,"[COD] 115",228,VideoGames);
-    MUSIC(COD_Burning,"[COD] Burning",147,VideoGames);
-    MUSIC(COD_Chase,"[COD] Chase",126,VideoGames);
-    MUSIC(COD_Contingency,"[COD] Contingency",135,VideoGames);
-    MUSIC(COD_Evac,"[COD] Evac",113,VideoGames);
-    MUSIC(COD_GoingLoud,"[COD] Going Loud",190,VideoGames);
-    MUSIC(COD_GuerillaTactics,"[COD] Guerilla Tactics",178,VideoGames);
-    MUSIC(COD_Infiltration,"[COD] Infiltration",267,VideoGames);
-    MUSIC(COD_MoneyRun,"[COD] Money Run",136,VideoGames);
-    MUSIC(COD_Onwards,"[COD] Onwards",148,VideoGames);
-    MUSIC(COD_RetreatAndReveille,"[COD] Retreat And Reveille",177,VideoGames);
-    MUSIC(COD_Whitehouse,"[COD] Whitehouse",327,VideoGames);
+    // MUSIC(COD_Burning,"[COD] Burning",147,VideoGames);
+    // MUSIC(COD_Chase,"[COD] Chase",126,VideoGames);
+    // MUSIC(COD_Contingency,"[COD] Contingency",135,VideoGames);
+    // MUSIC(COD_Evac,"[COD] Evac",113,VideoGames);
+    // MUSIC(COD_GoingLoud,"[COD] Going Loud",190,VideoGames);
+    // MUSIC(COD_GuerillaTactics,"[COD] Guerilla Tactics",178,VideoGames);
+    // MUSIC(COD_Infiltration,"[COD] Infiltration",267,VideoGames);
+    // MUSIC(COD_MoneyRun,"[COD] Money Run",136,VideoGames);
+    // MUSIC(COD_Onwards,"[COD] Onwards",148,VideoGames);
+    // MUSIC(COD_RetreatAndReveille,"[COD] Retreat And Reveille",177,VideoGames);
+    // MUSIC(COD_Whitehouse,"[COD] Whitehouse",327,VideoGames);
 
     // Dragonball
     MUSIC(DB_BrolysTheme,"[DB] Broly's Theme",473,Anime);
@@ -61,10 +61,6 @@ class CfgMusic {
 
     // Interstellar
     MUSIC(INT_Mountains,"[INT] Mountains",219,Other);
-
-    // Isle of Dogs
-    MUSIC(IOD_ShintoShrine,"[IOD] Shinto Shrine",116,Other);
-    MUSIC(IOD_SushiScene,"[IOD] Sushi Scene",101,Other);
 
     // Last of Us
     MUSIC(LoU_AllGone,"[LoU] All Gone (No Escape)",174,VideoGames);

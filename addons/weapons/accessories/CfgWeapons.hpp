@@ -42,7 +42,7 @@ class CfgWeapons {
         displayName = "[KC] Pistol Holosight";
         descriptionShort = "Pistol scope<br/>Magnification: 1x";
 
-        model = QPATHTOF(SUBCOMPONENT\data\optics\Pistol_Holosight.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(Pistol_Holosight.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\Pistol_Holosight_ca.paa);
 
         ace_scopeHeightAboveRail = 2.8;
@@ -54,7 +54,7 @@ class CfgWeapons {
 
     class CLASS(Optic_Pistol2): CLASS(Optic_Pistol) {
         displayName = "[KC] Pistol Holosight 2";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\Pistol_Holosight2.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(Pistol_Holosight2.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\Pistol_Holosight2_ca.paa);
     };
 
@@ -64,13 +64,13 @@ class CfgWeapons {
         displayName = "[KC] Short Range Holosight";
         descriptionShort = "Short range rifle scope<br/>Magnification: 2-4x";
 
-        model = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(SR_Holosight.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\SR_Holosight_ca.paa);
 
         ace_scopeHeightAboveRail = 4.48584;
 
         class ItemInfo: ItemInfo {
-            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight.p3d);
+            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(SR_Holosight.p3d));
             mass = 8;
 
             class OpticsModes: OpticsModes {
@@ -98,21 +98,21 @@ class CfgWeapons {
 
     class CLASS(Optic_SR_Holosight2): CLASS(Optic_SR_Holosight) {
         displayName = "[KC] Short Range Holosight 2";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight2.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(SR_Holosight2.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\SR_Holosight2_ca.paa);
 
         class ItemInfo: ItemInfo {
-            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight2.p3d);
+            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(SR_Holosight2.p3d));
         };
     };
 
     class CLASS(Optic_SR_Holosight3): CLASS(Optic_SR_Holosight) {
         displayName = "[KC] Short Range Holosight 3";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight3.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(SR_Holosight3.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\SR_Holosight3_ca.paa);
 
         class ItemInfo: ItemInfo {
-            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\SR_Holosight3.p3d);
+            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(SR_Holosight3.p3d));
         };
     };
 
@@ -122,13 +122,13 @@ class CfgWeapons {
         displayName = "[KC] Medium Range Holosight";
         descriptionShort = "Medium range rifle scope<br/>Magnification: 2-6x";
 
-        model = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(MR_Holosight.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\MR_Holosight_ca.paa);
 
         ace_scopeHeightAboveRail = 4.48584;
 
         class ItemInfo: ItemInfo {
-            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight.p3d);
+            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(MR_Holosight.p3d));
             opticType = OPTIC_ZOOM_LEVEL_LONG;
             mass = 8;
 
@@ -155,21 +155,21 @@ class CfgWeapons {
 
     class CLASS(Optic_MR_Holosight2): CLASS(Optic_MR_Holosight) {
         displayName = "[KC] Medium Range Holosight 2";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight2.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(MR_Holosight2.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\MR_Holosight2_ca.paa);
 
         class ItemInfo: ItemInfo {
-            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight2.p3d);
+            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(MR_Holosight2.p3d));
         };
     };
 
     class CLASS(Optic_MR_Holosight3): CLASS(Optic_MR_Holosight) {
         displayName = "[KC] Medium Range Holosight 3";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight3.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(MR_Holosight3.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\MR_Holosight3_ca.paa);
 
         class ItemInfo: ItemInfo {
-            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\MR_Holosight3.p3d);
+            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(MR_Holosight3.p3d));
         };
     };
 
@@ -179,13 +179,13 @@ class CfgWeapons {
         displayName = "[KC] Long Range Holosight";
         descriptionShort = "Long range rifle scope<br/>Magnification: 4-6x";
 
-        model = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(LR_Holosight.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\LR_Holosight_ca.paa);
 
         ace_scopeHeightAboveRail = 4.48584;
 
         class ItemInfo: ItemInfo {
-            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight.p3d);
+            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(LR_Holosight.p3d));
             opticType = OPTIC_ZOOM_LEVEL_LONG;
             mass = 12;
 
@@ -218,31 +218,31 @@ class CfgWeapons {
 
     class CLASS(Optic_LR_Holosight2): CLASS(Optic_LR_Holosight) {
         displayName = "[KC] Long Range Holosight 2";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight2.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(LR_Holosight2.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\LR_Holosight2_ca.paa);
 
         class ItemInfo: ItemInfo {
-            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight2.p3d);
+            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(LR_Holosight2.p3d));
         };
     };
 
     class CLASS(Optic_LR_Holosight3): CLASS(Optic_LR_Holosight) {
         displayName = "[KC] Long Range Holosight 3";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight3.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(LR_Holosight3.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\LR_Holosight3_ca.paa);
 
         class ItemInfo: ItemInfo {
-            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight3.p3d);
+            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(LR_Holosight3.p3d));
         };
     };
 
     class CLASS(Optic_LR_Holosight4): CLASS(Optic_LR_Holosight) {
         displayName = "[KC] Long Range Holosight 4";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight4.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(LR_Holosight4.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\LR_Holosight3_ca.paa);
 
         class ItemInfo: ItemInfo {
-            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\LR_Holosight4.p3d);
+            modelOptics = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(LR_Holosight4.p3d));
         };
     };
 
@@ -252,7 +252,7 @@ class CfgWeapons {
         displayName = "[KC] Holo Sight";
         descriptionShort = "Holo sight<br/>Magnification: 1x";
 
-        model = QPATHTOF(SUBCOMPONENT\data\optics\Holosight.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(Holosight.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\Holosight_ca.paa);
 
         ace_scopeHeightAboveRail = 4.66933;
@@ -268,13 +268,13 @@ class CfgWeapons {
 
     class CLASS(Optic_Holosight2): CLASS(Optic_Holosight) {
         displayName = "[KC] Holo Sight 2";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\Holosight2.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(Holosight2.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\Holosight2_ca.paa);
     };
 
     class CLASS(Optic_Holosight3): CLASS(Optic_Holosight) {
         displayName = "[KC] Holo Sight 3";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\Holosight3.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(Holosight3.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\Holosight3_ca.paa);
     };
 
@@ -316,13 +316,13 @@ class CfgWeapons {
 
     class CLASS(Optic_Holoscope2): CLASS(Optic_Holoscope) {
         displayName = "[KC] Holo Scope 2";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\Holosight2.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(Holosight2.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\Holosight2_ca.paa);
     };
 
     class CLASS(Optic_Holoscope3): CLASS(Optic_Holoscope) {
         displayName = "[KC] Holo Scope 3";
-        model = QPATHTOF(SUBCOMPONENT\data\optics\Holosight3.p3d);
+        model = QPATHTOF(SUBCOMPONENT\data\optics\CLASS(Holosight3.p3d));
         picture = QPATHTOF(SUBCOMPONENT\data\ui\Holosight3_ca.paa);
     };
 

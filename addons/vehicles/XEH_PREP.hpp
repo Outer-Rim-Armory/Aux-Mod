@@ -5,6 +5,8 @@ PREP(atrt_dismount);
 PREP(atrt_handleDamage);
 PREP(atrt_init);
 PREP(atrt_mount);
+PREP(atrt_skin_canSwitch);
+PREP(atrt_skin_insertChildren);
 PREP(autoEject);
 PREP(canDeleteCrew);
 PREP(canSpawnCrew);

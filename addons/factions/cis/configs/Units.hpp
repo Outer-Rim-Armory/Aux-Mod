@@ -537,10 +537,12 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     };
 
     magazines[] = {
-        ITEM_5(QCLASS(Mag_60rnd_B2Blaster))
+        ITEM_5(QCLASS(Mag_60rnd_B2Blaster)),
+        QCLASS(Mag_3rnd_B2Blaster_rocket)
     };
     respawnMagazines[] = {
-        ITEM_5(QCLASS(Mag_60rnd_B2Blaster))
+        ITEM_5(QCLASS(Mag_60rnd_B2Blaster)),
+        QCLASS(Mag_3rnd_B2Blaster_rocket)
     };
 
     linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};

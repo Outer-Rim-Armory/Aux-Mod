@@ -175,15 +175,15 @@ class CfgWeapons {
         thermalMode[] = {WHOT};
 
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
-        modelOptics = QPATHTOEF(core,data\models\empty\empty.p3d);
+        modelOptics = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {};
-            uniformModel = QPATHTOEF(core,data\models\empty\empty.p3d);
-            modelOff = QPATHTOEF(core,data\models\empty\empty.p3d);
+            uniformModel = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
+            modelOff = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
         };
     };
 

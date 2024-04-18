@@ -4,55 +4,39 @@
  * Handles bacta grenades.
  *
  * Arguments:
- * 0: The unit that threw the grenade <OBJECT>
- * 1: Class name of the ammo type thrown <STRING>
- * 2: Class name of the magazine (grenade) thrown <STRING>
- * 3: Projectile object <OBJECT>
+ * 0: Projectile object <OBJECT>
  *
  * Return Value:
  * True if area heal was created, otherwise false <BOOL>
  *
  * Examples:
- * [ace_player, "BNA_KC_Grenade_Bacta", "BNA_KC_Grenade_Bacta_Ammo", _projectile] call BNA_KC_weapons_fnc_bactaGrenade;
+ * _projectile call BNA_KC_weapons_fnc_bactaGrenade;
  *
  * Public: No
  */
 
-params [
-    ["_unit", objNull, [objNull]],
-    ["_ammo", "", [""]],
-    ["_magazine", "", [""]],
-    ["_projectile", objNull, [objNull]]
-];
+params ["_projectile"];
 private ["_duration", "_radius", "_rate", "_maxPatients", "_healerID"];
-TRACE_4("fnc_bactaGrenade",_unit,_ammo,_magazine,_projectile);
+TRACE_1("fnc_bactaGrenade",_projectile);
 
-if (!GVAR(bactaEnabled) or
-    {isNull _unit} or
-    {isNull _projectile} or
-    {_ammo isEqualTo ""} or
-    {_magazine isEqualTo ""}
-) exitWith {false;};
+if (!GVAR(bactaEnabled) or {isNull _projectile}) exitWith {false;};
 
-_duration = [
-    configFile >> "CfgMagazines" >> _magazine,
+_duration = [configOf _projectile,
     QGVAR(bactaDuration),
     BACTA_DURATION_DEFAULT
 ] call BIS_fnc_returnConfigEntry;
 
-_radius = [
-    configFile >> "CfgMagazines" >> _magazine,
+_radius = [configOf _projectile,
     QEGVAR(medical,areaHealRadius),
     -1
 ] call BIS_fnc_returnConfigEntry;
 
-_rate = [
-    configFile >> "CfgMagazines" >> _magazine,
+_rate = [configOf _projectile,
     QEGVAR(medical,areaHealRate),
     -1
 ] call BIS_fnc_returnConfigEntry;
 
-_maxPatients = getNumber (configFile >> "CfgMagazines" >> _magazine >> QEGVAR(medical,areaHealMaxPatients));
+_maxPatients = getNumber (configOf _projectile >> QEGVAR(medical,areaHealMaxPatients));
 
 TRACE_5("fnc_bactaGrenade | Heal parameters",_projectile,_radius,_rate,_maxPatients,_duration);
 
