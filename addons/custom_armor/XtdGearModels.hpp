@@ -350,6 +350,7 @@ class XtdGearModels {
                     "Bob",
                     "Burnt",
                     "Catholic",
+                    "Cutthroat",
                     "Defter",
                     "Dexus",
                     "Drake",
@@ -369,6 +370,7 @@ class XtdGearModels {
                 class Bob { label = "Bob"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };
+                class Cutthroat { label = "Cutthroat"; };
                 class Defter { label = "Defter"; };
                 class Dexus { label = "Dexus"; };
                 class Drake { label = "Drake"; };

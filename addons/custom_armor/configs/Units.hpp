@@ -79,6 +79,26 @@ class CLASS(Unit_Catholic): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Cutthroat): CLASS(Unit_Phase2_Base) {
+    displayName = "Cutthroat";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Cutthroat);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Cutthroat_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Cutthroat_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase1_Cutthroat), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase1_Cutthroat), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Defter): CLASS(Unit_Phase2_Base) {
     displayName = "Defter";
 
