@@ -28,8 +28,23 @@ class CfgVehicles {
         GVAR(isCustom) = TRUE;
     };
 
+    class CLASS(Backpack_Radio_Base);
+    class CLASS(cloneBackpack_radio_Jaws): CLASS(Backpack_Radio_Base) {
+        displayName = "[KC] INF Radio Backpack ('Jaws')";
+
+        model = "\ls_equipment_bluefor\backpack\gar\backpack\ls_gar_radio_backpack.p3d";
+        hiddenselections[] = {"backpack", "radio", "screen"};
+        hiddenselectionstextures[] = {
+            QPATHTOF(data\backpacks\Jaws\Backpack_co.paa),
+            "\ls_equipment_bluefor\backpack\gar\backpack\data\radio_co.paa",
+            QPATHTOF(data\backpacks\Jaws\Screen_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+
     class CLASS(Backpack_Medic_Radio_Base);
-    class CLASS(cloneBackpack_medicRadio_Hazard): CLASS(Backpack_heavy_Base) {
+    class CLASS(cloneBackpack_medicRadio_Hazard): CLASS(Backpack_Medic_Radio_Base) {
         displayName = "[KC] INF Medic Radio Backpack ('Hazard')";
 
         model = "\ls_equipment_bluefor\backpack\gar\backpack\ls_gar_radio_backpack.p3d";
