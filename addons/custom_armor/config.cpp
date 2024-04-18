@@ -78,6 +78,7 @@ class CfgPatches {
             QGROUND_CLASS(Helmet_Phase1_Pilot_Bailout),
             QGROUND_CLASS(Helmet_Phase1_Pilot_Blue),
             QGROUND_CLASS(Helmet_Phase1_Pilot_BlueBacta),
+            QGROUND_CLASS(Helmet_Phase1_Pilot_Evo),
             QGROUND_CLASS(Helmet_Phase1_Pilot_Mischief),
             QGROUND_CLASS(Helmet_Phase1_Tanker_Grey),
             QGROUND_CLASS(Helmet_Phase2_Alvarez),

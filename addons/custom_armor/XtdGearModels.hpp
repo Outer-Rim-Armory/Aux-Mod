@@ -84,11 +84,13 @@ class XtdGearModels {
                 values[] = {
                     "Bailout",
                     "Blue",
+                    "Evo",
                     "Mischief"
                 };
 
                 class Bailout { label = "Bailout"; };
                 class Blue { label = "Blue"; };
+                class Evo { label = "Evo"; };
                 class Mischief { label = "Mischief"; };
             };
         };

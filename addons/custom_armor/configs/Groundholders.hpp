@@ -45,6 +45,7 @@ GROUND_HOLDER(Helmet_Phase1_Woods,"INF P1 Helm ('Woods')");
 GROUND_HOLDER(Helmet_Phase1_Pilot_Bailout,"AVI P1 Helm ('Bailout')");
 GROUND_HOLDER(Helmet_Phase1_Pilot_Blue,"AVI P1 Helm ('Blue')");
 GROUND_HOLDER(Helmet_Phase1_Pilot_BlueBacta,"AVI P1 Helm ('Blue') [Bacta Visor]");
+GROUND_HOLDER(Helmet_Phase1_Pilot_Evo,"AVI P1 Helm ('Evo')");
 GROUND_HOLDER(Helmet_Phase1_Pilot_Mischief,"AVI P1 Helm ('Mischief')");
 
 GROUND_HOLDER(Helmet_Phase1_Tanker_Grey,"ARMR P1 Helm ('Grey')");
