@@ -33,7 +33,7 @@ class CfgPatches {
             QCLASS(Unit_Phase2_Insulated_Dexus),
             QCLASS(Unit_Phase2_Insulated_Joe),
             QCLASS(Unit_Phase2_Insulated_Keeli),
-            QCLASS(cloneBackpack_Keeli),
+            QCLASS(cloneBackpack_standard_Keeli),
             QCLASS(cloneBackpack_heavy_Dexus),
             QGROUND_CLASS(Helmet_Phase1_Alvarez),
             QGROUND_CLASS(Helmet_Phase1_Axel),
