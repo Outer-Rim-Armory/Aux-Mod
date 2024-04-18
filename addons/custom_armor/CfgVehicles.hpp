@@ -5,8 +5,8 @@ class CfgVehicles {
     class CLASS(cloneBackpack_standard_Keeli): CLASS(cloneBackpack_standard) {
         displayName = "[KC] Clone Trooper Backpack ('Keeli')";
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\backpacks\Keeli_camo1_co.paa),
-            QPATHTOF(data\backpacks\Keeli_camo1_co.paa)
+            QPATHTOF(data\backpacks\Keeli\Backpack_co.paa),
+            QPATHTOF(data\backpacks\Keeli\Backpack_co.paa)
         };
 
         GVAR(isCustom) = TRUE;
