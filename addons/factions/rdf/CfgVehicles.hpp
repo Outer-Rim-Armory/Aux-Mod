@@ -240,8 +240,8 @@ class CfgVehicles {
     };
 
 
-    class CLASS(Other_Backpack_Base);
-    class CLASS(RDF_Backpack): CLASS(Other_Backpack_Base) {
+    class CLASS(backpack_base);
+    class CLASS(RDF_Backpack): CLASS(backpack_base) {
         SCOPE_PUBLIC;
 
         displayName = "[RDF] Backpack";

@@ -1,5 +1,5 @@
-class CLASS(Helmet_Commando_Base): CLASS(Helmet_ARC_Base) {
-    displayName = "[KC] SF Commando Helm (Base)";
+class CLASS(cloneCommando_helmet): CLASS(Helmet_ARC_Base) {
+    displayName = "[KC] SF Clone Commando Helm (Base)";
 
     model = "\ls_armor_bluefor\helmet\sob\commando\lsd_sob_commando_helmet.p3d";
     hiddenSelections[] = {"illum", "camo1"};

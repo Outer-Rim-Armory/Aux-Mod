@@ -38,8 +38,8 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Backpack_Base);
-    class CLASS(Jetpack_JT12): CLASS(Backpack_Base) {
+    class CLASS(cloneBackpack_base);
+    class CLASS(Jetpack_JT12): CLASS(cloneBackpack_base) {
         JLTS_isJumppack = FALSE;
 
         GVAR(isJetpack) = TRUE;

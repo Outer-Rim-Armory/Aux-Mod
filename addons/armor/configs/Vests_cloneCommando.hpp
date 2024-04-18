@@ -1,5 +1,5 @@
-class CLASS(Vest_Commando_Basic): CLASS(Vest_ARC) {
-    displayName = "[KC] SF Commando Vest";
+class CLASS(cloneCommando_basic_vest): CLASS(Vest_ARC) {
+    displayName = "[KC] SF Clone Commando Vest";
     model = "\SWLB_clones_spec\SWLB_clone_commando_basic_armor.p3d";
     hiddenSelections[] = {};
     hiddenSelectionsTextures[] = {};
@@ -12,8 +12,8 @@ class CLASS(Vest_Commando_Basic): CLASS(Vest_ARC) {
     };
 };
 
-class CLASS(Vest_Commando_SL): CLASS(Vest_Commando_Basic) {
-    displayName = "[KC] SF Commando SL Pauldron";
+class CLASS(cloneCommando_SL_vest): CLASS(cloneCommando_basic_vest) {
+    displayName = "[KC] SF Clone Commando SL Pauldron";
     model = "\SWLB_clones_spec\SWLB_clone_commando_sl_armor.p3d";
     picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_sl_armor_k1_ca.paa";
 
@@ -22,8 +22,8 @@ class CLASS(Vest_Commando_SL): CLASS(Vest_Commando_Basic) {
     };
 };
 
-class CLASS(Vest_Commando_EOD): CLASS(Vest_Commando_Basic) {
-    displayName = "[KC] SF Commando EOD Vest";
+class CLASS(cloneCommando_EOD_vest): CLASS(cloneCommando_basic_vest) {
+    displayName = "[KC] SF Clone Commando EOD Vest";
     model = "\SWLB_clones_spec\SWLB_clone_commando_eod_armor.p3d";
     picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_eod_armor_k1_ca.paa";
 
@@ -32,7 +32,7 @@ class CLASS(Vest_Commando_EOD): CLASS(Vest_Commando_Basic) {
     };
 };
 
-class CLASS(Vest_Commando_Sniper): CLASS(Vest_Commando_Basic) {
+class CLASS(cloneCommando_Sniper_vest): CLASS(cloneCommando_basic_vest) {
     displayName = "[KC] SF Commando Sniper Vest";
     model = "\SWLB_clones_spec\SWLB_clone_commando_sniper_armor.p3d";
     hiddenSelections[] = {"illum", "camo1"};
@@ -49,7 +49,7 @@ class CLASS(Vest_Commando_Sniper): CLASS(Vest_Commando_Basic) {
     };
 };
 
-class CLASS(Vest_Commando_Tech): CLASS(Vest_Commando_Basic) {
+class CLASS(cloneCommando_Tech_vest): CLASS(cloneCommando_basic_vest) {
     displayName = "[KC] SF Commando Tech Vest";
     model = "\SWLB_clones_spec\SWLB_clone_commando_tech_armor.p3d";
     hiddenSelections[] = {"camo1"};

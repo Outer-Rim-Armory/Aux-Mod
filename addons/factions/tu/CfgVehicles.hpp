@@ -127,8 +127,8 @@ class CfgVehicles {
         backpack = QCLASS(TU_Backpack_Heavy);
     };
 
-    class CLASS(Other_Backpack_Base);
-    class CLASS(TU_Backpack): CLASS(Other_Backpack_Base) {
+    class CLASS(backpack_base);
+    class CLASS(TU_Backpack): CLASS(backpack_base) {
         SCOPE_PUBLIC;
 
         displayName = "[TU] Backpack";

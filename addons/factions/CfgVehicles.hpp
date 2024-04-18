@@ -84,20 +84,4 @@ class CfgVehicles {
             class CBA_Extended_EventHandlers: CBA_Extended_EventHandlers {};
         };
     };
-
-    class Bag_Base;
-    class CLASS(Other_Backpack_Base): Bag_Base {
-        SCOPE_PRIVATE;
-        author = AUTHOR;
-
-        displayName = "Backpack Base";
-        descriptionshort = "";
-        maximumLoad = 200;
-        mass = 30;
-
-        model = "";
-        hiddenSelections[] = {};
-        hiddenSelectionsTextures[] = {};
-        picture = "";
-    };
 };
