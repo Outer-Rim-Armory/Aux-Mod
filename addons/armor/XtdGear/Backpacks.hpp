@@ -1,18 +1,18 @@
-class CLASS(Backpack_Base) {
+class CLASS(cloneBackpack_standard) {
     model = QCLASS(Backpacks);
     type = "Basic";
     style = "Standard";
 };
 
-class CLASS(Backpack): CLASS(Backpack_Base) {
+class CLASS(Backpack): CLASS(cloneBackpack_standard) {
     style = "KeeliCompany";
 };
 
-class CLASS(Backpack_Invis): CLASS(Backpack_Base) {
+class CLASS(Backpack_Invis): CLASS(cloneBackpack_standard) {
     style = "Invisible";
 };
 
-class CLASS(Backpack_Heavy_Base): CLASS(Backpack_Base) {
+class CLASS(Backpack_Heavy_Base): CLASS(cloneBackpack_standard) {
     type = "Heavy";
 };
 
@@ -20,7 +20,7 @@ class CLASS(Backpack_Heavy): CLASS(Backpack_Heavy_Base) {
     style = "KeeliCompany";
 };
 
-class CLASS(Backpack_Radio_Base): CLASS(Backpack_Base) {
+class CLASS(Backpack_Radio_Base): CLASS(cloneBackpack_standard) {
     type = "Radio";
 };
 
@@ -32,7 +32,7 @@ class CLASS(Backpack_Radio_Invis): CLASS(Backpack_Radio_Base) {
     style = "Invisible";
 };
 
-class CLASS(Backpack_Radio_Mini_Base): CLASS(Backpack_Base) {
+class CLASS(Backpack_Radio_Mini_Base): CLASS(cloneBackpack_standard) {
     type = "RadioMini";
 };
 

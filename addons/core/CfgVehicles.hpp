@@ -7,4 +7,11 @@ class CfgVehicles {
 
         class TransportItems {};
     };
+
+    class Bag_Base;
+    class CLASS(backpack_base): Bag_Base {
+        SCOPE_PRIVATE;
+        author = AUTHOR;
+        picture = QPATHTOF(ui\logo_kc_ca.paa);
+    };
 };
