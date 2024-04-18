@@ -19,10 +19,10 @@ class CfgVehicles {
         model = "\ls_equipment_bluefor\backpack\gar\heavyBackpack\ls_gar_heavy_backpack.p3d";
         hiddenselections[] = {"backpack", "cover", "pouches", "tube"};
         hiddenselectionstextures[] = {
-            QPATHTOF(data\backpacks\Dexus\backpack_co.paa),
-            QPATHTOF(data\backpacks\Dexus\cover_co.paa),
-            QPATHTOF(data\backpacks\Dexus\pouches_co.paa),
-            QPATHTOF(data\backpacks\Dexus\tube_co.paa),
+            QPATHTOF(data\backpacks\Dexus\Backpack_co.paa),
+            QPATHTOF(data\backpacks\Dexus\Cover_co.paa),
+            QPATHTOF(data\backpacks\Dexus\Pouches_co.paa),
+            QPATHTOF(data\backpacks\Dexus\Tube_co.paa),
         };
 
         GVAR(isCustom) = TRUE;
