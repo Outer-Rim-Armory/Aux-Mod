@@ -359,6 +359,7 @@ class XtdGearModels {
                     "Dexus",
                     "Drake",
                     "Hagrid",
+                    "Harry",
                     "Joe",
                     "Keeli",
                     "Rat",
@@ -379,6 +380,7 @@ class XtdGearModels {
                 class Dexus { label = "Dexus"; };
                 class Drake { label = "Drake"; };
                 class Hagrid { label = "Hagrid"; };
+                class Harry { label = "Harry"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
                 class Rat { label = "Rat"; };
