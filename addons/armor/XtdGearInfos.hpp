@@ -37,6 +37,6 @@ class XtdGearInfos {
     class CfgVehicles {
         #include "XtdGear\Backpacks.hpp"
         #include "XtdGear\Backpacks_Medic.hpp"
-        #include "XtdGear\cloneBackpacks_Commando.hpp"
+        #include "XtdGear\cloneBackpacks_commando.hpp"
     };
 };
