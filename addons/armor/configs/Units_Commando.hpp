@@ -1,6 +1,5 @@
-class CLASS(Unit_Commando_Base): CLASS(Unit_ARC_CT) {
-    displayName = "SF Commando - Base";
-    editorPreview = EDITOR_PREVIEW(Unit_Commando_Base);
+class CLASS(cloneCommando_unit_base): CLASS(Unit_ARC_CT) {
+    SCOPE_PRIVATE;
 
     uniformClass = QCLASS(Uniform_Commando_Base);
     model = "\ls_armor_bluefor\uniform\sob\commando\ls_sob_commando_uniform.p3d";
@@ -58,6 +57,12 @@ class CLASS(Unit_Commando_Base): CLASS(Unit_ARC_CT) {
         ITEM_10("ACE_elasticBandage"),
         ITEM_4("ACE_tourniquet")
     };
+};
+
+class CLASS(cloneCommando_unit): CLASS(cloneCommando_unit_base) {
+    SCOPE_PUBLIC;
+    displayName = "SF Clone Commando";
+    editorPreview = EDITOR_PREVIEW(cloneCommando_unit);
 
     linkedItems[] = {
         QCLASS(Helmet_Commando_Base), QCLASS(Vest_Commando_Basic), QCLASS(NVG_Chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
