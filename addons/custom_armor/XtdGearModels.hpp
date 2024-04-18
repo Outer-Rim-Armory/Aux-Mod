@@ -28,6 +28,7 @@ class XtdGearModels {
                     "Joe",
                     "Keeli",
                     "Lou",
+                    "Marge",
                     "Ox",
                     "Patriot",
                     "Rat",
@@ -59,6 +60,7 @@ class XtdGearModels {
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
                 class Lou { label = "Lou"; };
+                class Marge { label = "Marge"; };
                 class Ox { label = "Ox"; };
                 class Patriot { label = "Patriot"; };
                 class Rat { label = "Rat"; };
