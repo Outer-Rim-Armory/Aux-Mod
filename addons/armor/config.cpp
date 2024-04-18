@@ -83,6 +83,7 @@ class CfgPatches {
             QCLASS(Backpack_Invis),
             QCLASS(Backpack_Heavy_Base),
             QCLASS(Backpack_Heavy),
+            QCLASS(cloneBackpack_rocket),
             QCLASS(Backpack_Radio_Base),
             QCLASS(Backpack_Radio),
             QCLASS(Backpack_Radio_Invis),

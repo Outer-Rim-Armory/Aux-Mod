@@ -138,6 +138,21 @@ class CfgVehicles {
         picture = QPATHTOF(data\ui\Backpack_Heavy_ca.paa);
     };
 
+    class CLASS(cloneBackpack_rocket): CLASS(Backpack_Heavy_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] INF Heavy Backpack (Rocket)";
+
+        model = "\ls_equipment_bluefor\backpack\gar\backpack\ls_gar_rocket_backpack.p3d";
+        hiddenSelections[] = {"backpack", "holder", "rocket", "light", "pouches"};
+        hiddenSelectionsTextures[] = {
+            "\ls_equipment_bluefor\backpack\gar\backpack\data\backpack_eod_co.paa",
+            "\ls_equipment_bluefor\backpack\gar\backpack\data\holder_co.paa",
+            "\ls_equipment_bluefor\backpack\gar\backpack\data\rocket_co.paa",
+            "\ls_equipment_bluefor\backpack\gar\backpack\data\light_co.paa",
+            "\ls_equipment_bluefor\backpack\gar\backpack\data\pouches_co.paa"
+        };
+    };
+
     class CLASS(Backpack_Radio_Base): CLASS(cloneBackpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] INF Radio Backpack (Base)";
