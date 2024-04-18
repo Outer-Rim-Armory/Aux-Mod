@@ -36,7 +36,7 @@ class CfgPatches {
             QCLASS(cloneBackpack_standard_Keeli),
             QCLASS(cloneBackpack_heavy_Dexus),
             QCLASS(cloneBackpack_medicRadio_Hazard),
-            QCLASS(cloneBackpack_radio_Jaws),
+            QCLASS(cloneBackpack_radioHeavy_Jaws),
             QGROUND_CLASS(Helmet_Phase1_Alvarez),
             QGROUND_CLASS(Helmet_Phase1_Axel),
             QGROUND_CLASS(Helmet_Phase1_Bond),
