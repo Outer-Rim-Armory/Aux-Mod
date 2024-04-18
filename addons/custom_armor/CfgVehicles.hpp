@@ -28,5 +28,20 @@ class CfgVehicles {
         GVAR(isCustom) = TRUE;
     };
 
+    class CLASS(Backpack_Medic_Radio_Base);
+    class CLASS(cloneBackpack_medicRadio_Hazard): CLASS(Backpack_heavy_Base) {
+        displayName = "[KC] INF Medic Radio Backpack ('Hazard')";
+
+        model = "\ls_equipment_bluefor\backpack\gar\backpack\ls_gar_radio_backpack.p3d";
+        hiddenselections[] = {"backpack", "radio", "screen"};
+        hiddenselectionstextures[] = {
+            QPATHTOF(data\backpacks\Hazard\Backpack_co.paa),
+            "\ls_equipment_bluefor\backpack\gar\backpack\data\radio_co.paa",
+            QPATHTOF(data\backpacks\Hazard\Screen_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+
     #include "configs\GroundHolders.hpp"
 };
