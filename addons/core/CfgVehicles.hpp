@@ -12,6 +12,13 @@ class CfgVehicles {
     class CLASS(backpack_base): Bag_Base {
         SCOPE_PRIVATE;
         author = AUTHOR;
+
+        descriptionshort = "";
+        mass = 50;
+
+        model = "";
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
         picture = QPATHTOF(ui\logo_kc_ca.paa);
     };
 };

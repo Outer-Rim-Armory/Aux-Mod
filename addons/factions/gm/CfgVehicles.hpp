@@ -295,8 +295,8 @@ class CfgVehicles {
         respawnLinkedItems[] = {LINKED_ITEMS_RADIO};
     };
 
-    class CLASS(Other_Backpack_Base);
-    class CLASS(GM_Backpack): CLASS(Other_Backpack_Base) {
+    class CLASS(backpack_base);
+    class CLASS(GM_Backpack): CLASS(backpack_base) {
         SCOPE_PUBLIC;
 
         displayName = "[GM] Backpack";
@@ -381,6 +381,8 @@ class CfgVehicles {
         };
     };
     class CLASS(GM_Elite_Backpack_Predef_Marksman): CLASS(GM_Elite_Backpack) {
+        SCOPE_HIDDEN;
+
         class TransportMagazines {
             MAG_XX(CLASS(Mag_30Rnd_HI12),15);
             MAG_XX(ls_mag_classB_thermalDet,3);
