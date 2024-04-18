@@ -97,9 +97,9 @@ GROUND_HOLDER(Helmet_Phase2_Tanker_Catholic,"ARMR P2 Helm ('Catholic')");
 GROUND_HOLDER(Helmet_Phase2_Tanker_CatholicKyber,"ARMR P2 Helm ('Catholic') [Kyber Visor]");
 GROUND_HOLDER(Helmet_Phase2_Tanker_Grey,"ARMR P2 Helm ('Grey')");
 
-GROUND_HOLDER(Helmet_Phase2_Insulated_Dexus,"INF P2 Snow Helm ('Dexus')");
-GROUND_HOLDER(Helmet_Phase2_Insulated_Joe,"INF P2 Snow Helm ('Joe')");
-GROUND_HOLDER(Helmet_Phase2_Insulated_Keeli,"INF P2 Snow Helm ('Keeli')");
+GROUND_HOLDER(Helmet_Phase2_Insulated_Dexus,"INF P2 Insulated Helm ('Dexus')");
+GROUND_HOLDER(Helmet_Phase2_Insulated_Joe,"INF P2 Insulated Helm ('Joe')");
+GROUND_HOLDER(Helmet_Phase2_Insulated_Keeli,"INF P2 Insulated Helm ('Keeli')");
 
 GROUND_HOLDER(Helmet_Phase12_Joe,"INF P1-2 Helm ('Joe')");
 GROUND_HOLDER(Helmet_Phase12_JoeCrimson,"INF P1-2 Helm ('Joe') [Crimson Visor]");

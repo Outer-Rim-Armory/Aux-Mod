@@ -15,7 +15,7 @@ P1_HELMET_CUSTOM(Jester);
 P1_HELMET_VISOR_CUSTOM(Joe,Crimson);
 P1_HELMET_VISOR_CUSTOM(Keeli,Crimson);
 
-class CLASS(Helmet_Phase1_Keeli_CamoBrown): CLASS(Helmet_Phase1_Base) {
+class CLASS(Helmet_Phase1_Keeli_CamoBrown): CLASS(Helmet_Phase1_Keeli) {
     displayName = "[KC] INF P1 Helm ('Keeli') - Brown Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1\camo\brown\Keeli_camo1_co.paa),
@@ -23,14 +23,11 @@ class CLASS(Helmet_Phase1_Keeli_CamoBrown): CLASS(Helmet_Phase1_Base) {
         "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
     };
 
-    GVAR(isCustom) = TRUE;
-    EGVAR(armor,nvCanToggle) = TRUE;
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Keeli_CamoBrown);
     EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase1_KeeliCrimson_CamoBrown);
 
-    class XtdGearInfo {
-        model = QCLASS(Helmets_Phase1_Custom);
-        camo = "Keeli_CamoBrown";
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Brown";
     };
 };
 class CLASS(Helmet_Phase1_KeeliCrimson_CamoBrown): CLASS(Helmet_Phase1_Keeli_CamoBrown) {
@@ -46,21 +43,18 @@ class CLASS(Helmet_Phase1_KeeliCrimson_CamoBrown): CLASS(Helmet_Phase1_Keeli_Cam
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
-class CLASS(Helmet_Phase1_Keeli_CamoGrey): CLASS(Helmet_Phase1_Base) {
+class CLASS(Helmet_Phase1_Keeli_CamoGrey): CLASS(Helmet_Phase1_Keeli) {
     displayName = "[KC] INF P1 Helm ('Keeli') - Grey Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1\camo\grey\Keeli_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
     };
 
-    GVAR(isCustom) = TRUE;
-    EGVAR(armor,nvCanToggle) = TRUE;
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Keeli_CamoGrey);
     EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase1_KeeliCrimson_CamoGrey);
 
-    class XtdGearInfo {
-        model = QCLASS(Helmets_Phase1_Custom);
-        camo = "Keeli_CamoGrey";
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Grey";
     };
 };
 class CLASS(Helmet_Phase1_KeeliCrimson_CamoGrey): CLASS(Helmet_Phase1_Keeli_CamoGrey) {

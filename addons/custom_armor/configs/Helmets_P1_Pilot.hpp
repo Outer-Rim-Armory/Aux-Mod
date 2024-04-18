@@ -12,6 +12,6 @@ class CLASS(Helmet_Phase1_Pilot_Mischief): CLASS(Helmet_Phase1_Pilot_Base) {
     GVAR(isCustom) = TRUE;
     class XtdGearInfo {
         model = QCLASS(Helmets_Pilot_Phase1_Custom);
-        camo = "Mischief";
+        custom = "Mischief";
     };
 };

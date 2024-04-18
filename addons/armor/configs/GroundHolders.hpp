@@ -108,7 +108,7 @@ GROUND_HOLDER(Helmet_Phase2_NCO_CamoGrey,"INF P2 Helm 06+ (NCO) - Grey Camo");
 GROUND_HOLDER(Helmet_Phase2_Officer_CamoBrown,"INF P2 Helm 12+ (Officer) - Brown Camo");
 GROUND_HOLDER(Helmet_Phase2_Officer_CamoGrey,"INF P2 Helm 12+ (Officer) - Grey Camo");
 
-GROUND_HOLDER(Helmet_Phase2_Insulated_Base,"INF P2 Snow Helm (Base)");
-GROUND_HOLDER(Helmet_Phase2_Insulated_CT,"INF P2 Snow Helm 01 (Trooper)");
+GROUND_HOLDER(Helmet_Phase2_Insulated_Base,"INF P2 Insulated Helm (Base)");
+GROUND_HOLDER(Helmet_Phase2_Insulated_CT,"INF P2 Insulated Helm 01 (Trooper)");
 
 GROUND_HOLDER(Helmet_Phase12_Base,"INF P1-2 Helm (Base)");
