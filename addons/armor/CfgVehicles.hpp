@@ -286,7 +286,7 @@ class CfgVehicles {
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_arc_backpack_ca.paa";
     };
 
-    class CLASS(Backack_Commando): CLASS(cloneBackpack_base) {
+    class CLASS(cloneBackpack_commando): CLASS(cloneBackpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] SF Commando Backpack";
 
@@ -303,13 +303,13 @@ class CfgVehicles {
         EGVAR(custom_armor,isCustom) = FALSE;
     };
 
-    class CLASS(Backack_Commando_EOD): CLASS(Backack_Commando) {
+    class CLASS(cloneBackpack_commando_EOD): CLASS(cloneBackpack_commando) {
         displayName = "[KC] SF Commando EOD Backpack";
         model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_eod.p3d";
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_eod_ca.paa";
     };
 
-    class CLASS(Backack_Commando_RTO): CLASS(Backack_Commando) {
+    class CLASS(cloneBackpack_commando_RTO): CLASS(cloneBackpack_commando) {
         displayName = "[KC] SF Commando Radio Backpack";
         model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_rto.p3d";
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_rto_ca.paa";
@@ -324,7 +324,7 @@ class CfgVehicles {
         tf_subtype = "digital_lr";
     };
 
-    class CLASS(Backack_Commando_Tech): CLASS(Backack_Commando) {
+    class CLASS(cloneBackpack_commando_Tech): CLASS(cloneBackpack_commando) {
         displayName = "[KC] SF Commando Tech Backpack";
         model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_tech.p3d";
         hiddenSelections[] = {"illum", "camo1", "camo2"};

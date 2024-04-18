@@ -710,7 +710,7 @@ class XtdGearModels {
             };
         };
 
-        class CLASS(Backpacks_Commando): CLASS(Backpacks) {
+        class CLASS(cloneBackpacks_Commando): CLASS(Backpacks) {
             label = "Commando Backpacks";
             options[] = {"type"};
 

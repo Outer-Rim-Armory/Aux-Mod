@@ -11,53 +11,53 @@ class CLASS(Unit_Commando_Base): CLASS(Unit_ARC_CT) {
     };
 
     weapons[] = {
-            QCLASS(DC17M),
-            QCLASS(DC15SA),
-            "SWLB_clone_binocular",
-            "Throw",
-            "Put"
-        };
-        respawnWeapons[] = {
-            QCLASS(DC17M),
-            QCLASS(DC15SA),
-            "SWLB_clone_binocular",
-            "Throw",
-            "Put"
-        };
-        magazines[] = {
-            // Ammo
-            ITEM_11(QCLASS(Mag_60Rnd_DC17M)),
-            ITEM_2(QCLASS(Mag_7Rnd_DC15SA)),
-            // Grenades
-            ITEM_2("ls_mag_classC_thermalDet"),
-            ITEM_3("ShieldGrenade_Mag"),
-            // Smokes
-            ITEM_3("3AS_SmokeWhite"),
-            ITEM_3("3AS_SmokeBlue"),
-            ITEM_3("3AS_SmokeGreen")
-        };
-        respawnMagazines[] = {
-            // Ammo
-            ITEM_11(QCLASS(Mag_60Rnd_DC17M)),
-            ITEM_2(QCLASS(Mag_7Rnd_DC15SA)),
-            // Grenades
-            ITEM_2("ls_mag_classC_thermalDet"),
-            ITEM_3("ShieldGrenade_Mag"),
-            // Smokes
-            ITEM_3("3AS_SmokeWhite"),
-            ITEM_3("3AS_SmokeBlue"),
-            ITEM_3("3AS_SmokeGreen")
-        };
-        items[] = {
-            // Medical
-            ITEM_10("ACE_elasticBandage"),
-            ITEM_4("ACE_tourniquet"),
-        };
-        respawnItems[] = {
-            // Medical
-            ITEM_10("ACE_elasticBandage"),
-            ITEM_4("ACE_tourniquet")
-        };
+        QCLASS(DC17M),
+        QCLASS(DC15SA),
+        "SWLB_clone_binocular",
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(DC17M),
+        QCLASS(DC15SA),
+        "SWLB_clone_binocular",
+        "Throw",
+        "Put"
+    };
+    magazines[] = {
+        // Ammo
+        ITEM_11(QCLASS(Mag_60Rnd_DC17M)),
+        ITEM_2(QCLASS(Mag_7Rnd_DC15SA)),
+        // Grenades
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_3("ShieldGrenade_Mag"),
+        // Smokes
+        ITEM_3("3AS_SmokeWhite"),
+        ITEM_3("3AS_SmokeBlue"),
+        ITEM_3("3AS_SmokeGreen")
+    };
+    respawnMagazines[] = {
+        // Ammo
+        ITEM_11(QCLASS(Mag_60Rnd_DC17M)),
+        ITEM_2(QCLASS(Mag_7Rnd_DC15SA)),
+        // Grenades
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_3("ShieldGrenade_Mag"),
+        // Smokes
+        ITEM_3("3AS_SmokeWhite"),
+        ITEM_3("3AS_SmokeBlue"),
+        ITEM_3("3AS_SmokeGreen")
+    };
+    items[] = {
+        // Medical
+        ITEM_10("ACE_elasticBandage"),
+        ITEM_4("ACE_tourniquet"),
+    };
+    respawnItems[] = {
+        // Medical
+        ITEM_10("ACE_elasticBandage"),
+        ITEM_4("ACE_tourniquet")
+    };
 
     linkedItems[] = {
         QCLASS(Helmet_Commando_Base), QCLASS(Vest_Commando_Basic), QCLASS(NVG_Chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
@@ -65,5 +65,5 @@ class CLASS(Unit_Commando_Base): CLASS(Unit_ARC_CT) {
     respawnLinkedItems[] = {
         QCLASS(Helmet_Commando_Base), QCLASS(Vest_Commando_Basic), QCLASS(NVG_Chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    backpack = QCLASS(Backack_Commando);
+    backpack = QCLASS(cloneBackpack_commando);
 };
