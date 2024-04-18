@@ -28,6 +28,20 @@ class CfgVehicles {
         GVAR(isCustom) = TRUE;
     };
 
+    class CLASS(cloneBackpack_heavy_Rev): CLASS(Backpack_heavy_Base) {
+        displayName = "[KC] INF Heavy Backpack ('Rev')";
+
+        model = "\ls_equipment_bluefor\backpack\gar\heavyBackpack\ls_gar_heavy_backpack.p3d";
+        hiddenselections[] = {"backpack", "cover", "pouches", "tube"};
+        hiddenselectionstextures[] = {
+            QPATHTOF(data\backpacks\Rev\Backpack_co.paa),
+            QPATHTOF(data\backpacks\Rev\Cover_co.paa),
+            QPATHTOF(data\backpacks\Rev\Pouches_co.paa),
+            QPATHTOF(data\backpacks\Rev\Tube_co.paa),
+        };
+        GVAR(isCustom) = TRUE;
+    };
+
     class CLASS(Backpack_Radio_Base);
     class CLASS(cloneBackpack_radioHeavy_Jaws): CLASS(Backpack_Radio_Base) {
         displayName = "[KC] INF Radio Backpack ('Jaws')";
