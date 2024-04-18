@@ -90,7 +90,7 @@ class CfgVehicles {
             "\3AS\3AS_Saber\data\Saber_weapons_scout_co.paa"
         };
 
-        textureList[] = {"Standard", 1, "Imperial", 0/*, "KeeliCompany", 1, "KeeliCompanyWhite", 1, "CamoGrey", 0*/};
+        textureList[] = {"Standard", 1, "Imperial", 0, "Grey", 0};
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -101,6 +101,7 @@ class CfgVehicles {
                     "\3AS\3AS_Saber\data\Saber_weapons_scout_co.paa"
                 };
             };
+
             class Imperial: Standard {
                 displayName = "Imperial";
                 textures[] = {
@@ -108,6 +109,16 @@ class CfgVehicles {
                     "\3AS\3AS_Saber\data\saber_weapons_scout_Imp_co.paa"
                 };
             };
+
+            class Grey: Standard {
+                author = AUTHOR;
+                displayName = "Grey";
+                textures[] = {
+                    QPATHTOF(land\tx130\data\textures\Grey\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\Grey\Weapons_Scout_co.paa)
+                };
+            };
+
             // class KeeliCompany: Standard {
             //     author = AUTHOR;
             //     displayName = "Keeli Company";
