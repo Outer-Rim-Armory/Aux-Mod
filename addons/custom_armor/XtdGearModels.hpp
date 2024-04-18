@@ -12,6 +12,7 @@ class XtdGearModels {
                 values[] = {
                     "Alvarez",
                     "Axel",
+                    "Bond",
                     "Burnt",
                     "Catholic",
                     "Cutthroat",
@@ -19,12 +20,15 @@ class XtdGearModels {
                     "Dexus",
                     "Drake",
                     "Grey",
+                    "Harry",
                     "Hazard",
+                    "Henkie",
                     "Jaws",
                     "Jester",
                     "Joe",
                     "Keeli",
                     "Lou",
+                    "Marge",
                     "Ox",
                     "Patriot",
                     "Rat",
@@ -41,6 +45,7 @@ class XtdGearModels {
 
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
+                class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };
                 class Cutthroat { label = "Cutthroat"; };
@@ -48,12 +53,14 @@ class XtdGearModels {
                 class Dexus { label = "Dexus"; };
                 class Drake { label = "Drake"; };
                 class Grey { label = "Grey"; };
+                class Harry { label = "Harry"; };
                 class Hazard { label = "Hazard"; };
                 class Jaws { label = "Jaws"; };
                 class Jester { label = "Jester"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
                 class Lou { label = "Lou"; };
+                class Marge { label = "Marge"; };
                 class Ox { label = "Ox"; };
                 class Patriot { label = "Patriot"; };
                 class Rat { label = "Rat"; };
@@ -82,11 +89,13 @@ class XtdGearModels {
                 values[] = {
                     "Bailout",
                     "Blue",
+                    "Evo",
                     "Mischief"
                 };
 
                 class Bailout { label = "Bailout"; };
                 class Blue { label = "Blue"; };
+                class Evo { label = "Evo"; };
                 class Mischief { label = "Mischief"; };
             };
         };
@@ -118,12 +127,14 @@ class XtdGearModels {
                     "Alvarez",
                     "Axel",
                     "Bob",
+                    "Bond",
                     "Burnt",
                     "Dexus",
                     "Evo",
                     "Grey",
                     "Harry",
                     "Hazard",
+                    "Henkie",
                     "Jackal",
                     "Jaws",
                     "Joe",
@@ -148,6 +159,7 @@ class XtdGearModels {
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
                 class Bob { label = "Bob"; };
+                class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
                 class Dexus { label = "Dexus"; };
                 class Evo { label = "Evo"; };
@@ -346,10 +358,12 @@ class XtdGearModels {
                     "Bob",
                     "Burnt",
                     "Catholic",
+                    "Cutthroat",
                     "Defter",
                     "Dexus",
                     "Drake",
                     "Hagrid",
+                    "Harry",
                     "Joe",
                     "Keeli",
                     "Rat",
@@ -365,10 +379,12 @@ class XtdGearModels {
                 class Bob { label = "Bob"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };
+                class Cutthroat { label = "Cutthroat"; };
                 class Defter { label = "Defter"; };
                 class Dexus { label = "Dexus"; };
                 class Drake { label = "Drake"; };
                 class Hagrid { label = "Hagrid"; };
+                class Harry { label = "Harry"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
                 class Rat { label = "Rat"; };
