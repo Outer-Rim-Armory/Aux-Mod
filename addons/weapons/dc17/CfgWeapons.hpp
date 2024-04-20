@@ -54,8 +54,8 @@ class CfgWeapons {
             class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {QCLASS(SoundSet_DC17Shot)};
-                soundSetShotWater[] = {QCLASS(SoundSet_DC17Shot)};
+                soundSetShot[] = {QCLASS(SoundSet_DC17_shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_DC17_shot)};
             };
         };
 
@@ -179,10 +179,6 @@ class CfgWeapons {
             reloadTime = 0.17;
 
             sounds[] = {"StandardSound"};
-            class StandardSound {
-                soundSetShot[] = {QCLASS(SoundSet_DC17Shot)};
-                soundSetShotWater[] = {QCLASS(SoundSet_DC17Shot)};
-            };
         };
 
         class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -224,6 +220,20 @@ class CfgWeapons {
 
         modes[] = {"Single", "FullAuto"};
 
+        class Single: Single {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_dualDC17_shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_dualDC17_shot)};
+            };
+        };
+
+        class FullAuto: FullAuto {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_dualDC17_shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_dualDC17_shot)};
+            };
+        };
+
         JLTS_friedItem = QCLASS(DC17_dualCommander_fried);
     };
 
@@ -241,16 +251,10 @@ class CfgWeapons {
         class Stun: CLASS(Muzzle_Stun_Fried) {};
     };
 
-    class CLASS(DC17_dualARC): CLASS(DC17_dual_base) {
-        SCOPE_PUBLIC;
+    class CLASS(DC17_dualARC): CLASS(DC17_dualCommander) {
         displayName = "[KC] DC-17 (Dual ARC)";
         model = "\LF_Weapon_Unit\dc17dualarc\dc17arcdual.p3d";
         baseWeapon = QCLASS(DC17_dualARC);
-
-        magazines[] = {QCLASS(Mag_60Rnd_DC17_dualHP)};
-
-        modes[] = {"Single", "FullAuto"};
-
         JLTS_friedItem = QCLASS(DC17_dualARC_fried);
     };
 
