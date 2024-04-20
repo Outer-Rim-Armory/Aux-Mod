@@ -223,7 +223,7 @@ class CfgWeapons {
         JLTS_friedItem = QCLASS(DC17_dualCommander_fried);
     };
 
-    class CLASS(DC17_dualCommander_fried): CLASS(DC17_dualARC) {
+    class CLASS(DC17_dualCommander_fried): CLASS(DC17_dualCommander) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-17 (Dual Commander, Fried)";
