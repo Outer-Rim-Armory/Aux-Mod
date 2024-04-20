@@ -14,7 +14,6 @@ class CfgPatches {
         };
         units[] = {};
         weapons[] = {
-            QCLASS(Muzzle_FakeUGL),
             QCLASS(DC17_Base),
             QCLASS(DC17),
             QCLASS(DC17_Fried),
