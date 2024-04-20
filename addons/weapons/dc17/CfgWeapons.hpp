@@ -197,6 +197,8 @@ class CfgWeapons {
         displayName = "[KC] DC-17 (Dual)";
         baseWeapon = QCLASS(DC17_dual);
         JLTS_friedItem = QCLASS(DC17_dual_fried);
+
+        magazines[] = {QCLASS(Mag_40Rnd_DC17_dual)};
     };
 
     class CLASS(DC17_dual_fried): CLASS(DC17_dual) {
@@ -217,6 +219,8 @@ class CfgWeapons {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-17 (Dual Commander)";
         baseWeapon = QCLASS(DC17_dualCommander);
+
+        magazines[] = {QCLASS(Mag_60Rnd_DC17_dualHP)};
 
         modes[] = {"Single", "FullAuto"};
 
@@ -242,6 +246,8 @@ class CfgWeapons {
         displayName = "[KC] DC-17 (Dual ARC)";
         model = "\LF_Weapon_Unit\dc17dualarc\dc17arcdual.p3d";
         baseWeapon = QCLASS(DC17_dualARC);
+
+        magazines[] = {QCLASS(Mag_60Rnd_DC17_dualHP)};
 
         modes[] = {"Single", "FullAuto"};
 
