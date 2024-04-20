@@ -66,6 +66,8 @@ class CfgAmmo {
 
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
+
+        tracerScale = 1;
     };
 
     class Sh_155mm_AMOS;
