@@ -22,7 +22,9 @@ class CfgPatches {
             QCLASS(DC17_riotShield_fried),
             QCLASS(DC17_dual_base),
             QCLASS(DC17_dual),
-            QCLASS(DC17_dual_fried)
+            QCLASS(DC17_dual_fried),
+            QCLASS(DC17_dualARC),
+            QCLASS(DC17_dualARC_fried)
         };
         VERSION_CONFIG;
     };

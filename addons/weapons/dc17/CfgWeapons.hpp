@@ -1,4 +1,5 @@
 class Mode_SemiAuto;
+class Mode_FullAuto;
 class CowsSlot_Rail;
 
 class CfgWeapons {
@@ -152,17 +153,38 @@ class CfgWeapons {
         descriptionShort = "Dual blaster pistols";
 
         model = "LF_Weapon_Unit\dc17dualarc\dc17cdual.p3d";
-        // model = "\LF_Weapon_Unit\dc17dualarc\dc17arcdual.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         handAnim[] = {"OFP2_ManSkeleton", "\LF_Weapon_Unit\dc17dualarc\anim\attempt1.rtm"};
 
         muzzles[] = {"this", "Stun"};
 
-        reloadMagazineSound[] = {"\LF_Weapon_Unit\main\sounds\dc15_reload.wss", 0.8, 1, 10};
+        reloadAction = "ls_dualPistol_reload";
+        reloadMagazineSound[] = {"\SWLB_core\data\sounds\weapons\_reload\dual_reload.ogg", 3.54813, 1, 10};
+        // reloadMagazineSound[] = {"\LF_Weapon_Unit\main\sounds\dc15_reload.wss", 0.8, 1, 10};
         initSpeed = -1;
 
         JLTS_canHaveShield = FALSE;
+
+        class FullAuto: Mode_FullAuto {
+            aiRateOfFireDistance = 25;
+            dispersion = 0.0014545;
+
+            maxRange = 50;
+            maxRangeProbab = 0.1;
+            midRange = 25;
+            midRangeProbab = 0.6;
+            minRange = 5;
+            minRangeProbab = 0.3;
+
+            reloadTime = 0.17;
+
+            sounds[] = {"StandardSound"};
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_DC17Shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_DC17Shot)};
+            };
+        };
 
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot: CowsSlot {
@@ -185,6 +207,31 @@ class CfgWeapons {
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
         baseWeapon = QCLASS(DC17_dual_fried);
+
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+
+        class Stun: CLASS(Muzzle_Stun_Fried) {};
+    };
+
+    class CLASS(DC17_dualARC): CLASS(DC17_dual_base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] DC-17 (Dual ARC)";
+        model = "\LF_Weapon_Unit\dc17dualarc\dc17arcdual.p3d";
+        baseWeapon = QCLASS(DC17_dualARC);
+
+        modes[] = {"Single", "FullAuto"};
+
+        JLTS_friedItem = QCLASS(DC17_dualARC_fried);
+    };
+
+    class CLASS(DC17_dualARC_fried): CLASS(DC17_dualARC) {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] DC-17 (Dual ARC, Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
+        baseWeapon = QCLASS(DC17_dualARC_fried);
 
         JLTS_isFried = TRUE;
         magazines[] = {};
