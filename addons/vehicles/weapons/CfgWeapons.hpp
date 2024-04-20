@@ -361,6 +361,10 @@ class CfgWeapons {
 
         magazines[] = {QCLASS(Mag_9999Rnd_ATRT)};
         magazineWell[] = {};
+
+        fireLightDiffuse[] = {0, 0, 1};
+        fireLightIntensity = 0.5;
+        fireLightDuration = 0.07;
     };
 
     class 3AS_BARC_Repeater: CannonCore {
