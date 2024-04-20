@@ -5,6 +5,8 @@ class CfgWeapons {
     class CLASS(Muzzle_Stun);
     class CLASS(Muzzle_Stun_Fried);
 
+    class CLASS(Muzzle_FakeUGL);
+
     class Pistol_Base_F;
     class hgun_P07_F: Pistol_Base_F {
         class Single;
@@ -72,8 +74,8 @@ class CfgWeapons {
 
         displayName = "[KC] DC-17";
         baseWeapon = QCLASS(DC17);
-        JLTS_shieldedWeapon = QCLASS(DC17_RiotShield);
-        JLTS_friedItem = QCLASS(DC17_Fried);
+        JLTS_shieldedWeapon = QCLASS(DC17_riotShield);
+        JLTS_friedItem = QCLASS(DC17_fried);
     };
     class CLASS(DC17_fried): CLASS(DC17) {
         SCOPE_HIDDEN;
@@ -83,11 +85,11 @@ class CfgWeapons {
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
         baseWeapon = QCLASS(DC17_Fried);
 
-        JLTS_shieldedWeapon = QCLASS(DC17_RiotShield_Fried);
+        JLTS_shieldedWeapon = QCLASS(DC17_RiotShield_fried);
         JLTS_isFried = TRUE;
         magazines[] = {};
 
-        class Stun: CLASS(Muzzle_Stun_Fried);
+        class Stun: CLASS(Muzzle_Stun_Fried) {};
 
         class Launcher: Launcher {
             displayName = "Flare Launcher (Fried)";
@@ -103,7 +105,7 @@ class CfgWeapons {
 
         JLTS_isShielded = TRUE;
         JLTS_baseWeapon = QCLASS(DC17);
-        JLTS_friedItem = QCLASS(DC17_RiotShield_Fried);
+        JLTS_friedItem = QCLASS(DC17_riotShield_fried);
 
         model = "\MRC\JLTS\weapons\DC17SA\DC17SA_shielded.p3d";
         handAnim[] = {
@@ -131,9 +133,9 @@ class CfgWeapons {
         displayName = "[KC] DC-17 (Shield, Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
-        baseWeapon = QCLASS(DC17_RiotShield_Fried);
+        baseWeapon = QCLASS(DC17_RiotShield_fried);
 
-        JLTS_baseWeapon = QCLASS(DC17_Fried);
+        JLTS_baseWeapon = QCLASS(DC17_fried);
         JLTS_isFried = TRUE;
         magazines[] = {};
 
@@ -144,5 +146,49 @@ class CfgWeapons {
             magazines[] = {};
             magazineWell[] = {};
         };
+    };
+
+    class CLASS(DC17_dual_base): CLASS(DC17_base) {
+        descriptionShort = "Dual blaster pistols";
+
+        model = "LF_Weapon_Unit\dc17dualarc\dc17cdual.p3d";
+        // model = "\LF_Weapon_Unit\dc17dualarc\dc17arcdual.p3d";
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        handAnim[] = {"OFP2_ManSkeleton", "\LF_Weapon_Unit\dc17dualarc\anim\attempt1.rtm"};
+
+        muzzles[] = {"this", "Stun"};
+
+        reloadMagazineSound[] = {"\LF_Weapon_Unit\main\sounds\dc15_reload.wss", 0.8, 1, 10};
+        initSpeed = -1;
+
+        JLTS_canHaveShield = FALSE;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot {
+                class CompatibleItems {};
+            };
+        };
+    };
+
+    class CLASS(DC17_dual): CLASS(DC17_dual_base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] DC-17 (Dual)";
+        baseWeapon = QCLASS(DC17_dual);
+        JLTS_friedItem = QCLASS(DC17_dual_fried);
+    };
+
+    class CLASS(DC17_dual_fried): CLASS(DC17_dual) {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] DC-17 (Dual, Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
+        baseWeapon = QCLASS(DC17_dual_fried);
+
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+
+        class Stun: CLASS(Muzzle_Stun_Fried) {};
     };
 };
