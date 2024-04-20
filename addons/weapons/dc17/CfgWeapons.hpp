@@ -17,7 +17,7 @@ class CfgWeapons {
         };
         class Stun;
     };
-    class CLASS(DC17_Base): JLTS_DC17SA {
+    class CLASS(DC17_base): JLTS_DC17SA {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -67,7 +67,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(DC17): CLASS(DC17_Base) {
+    class CLASS(DC17): CLASS(DC17_base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] DC-17";
@@ -75,7 +75,7 @@ class CfgWeapons {
         JLTS_shieldedWeapon = QCLASS(DC17_RiotShield);
         JLTS_friedItem = QCLASS(DC17_Fried);
     };
-    class CLASS(DC17_Fried): CLASS(DC17) {
+    class CLASS(DC17_fried): CLASS(DC17) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-17 (Fried)";
@@ -95,7 +95,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(DC17_RiotShield): CLASS(DC17) {
+    class CLASS(DC17_riotShield): CLASS(DC17) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-17 (Shield)";
@@ -127,7 +127,7 @@ class CfgWeapons {
             };
         };
     };
-    class CLASS(DC17_RiotShield_Fried): CLASS(DC17_RiotShield) {
+    class CLASS(DC17_riotShield_fried): CLASS(DC17_riotShield) {
         displayName = "[KC] DC-17 (Shield, Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";

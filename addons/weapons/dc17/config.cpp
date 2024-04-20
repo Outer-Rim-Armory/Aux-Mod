@@ -14,11 +14,11 @@ class CfgPatches {
         };
         units[] = {};
         weapons[] = {
-            QCLASS(DC17_Base),
+            QCLASS(DC17_base),
             QCLASS(DC17),
-            QCLASS(DC17_Fried),
-            QCLASS(DC17_RiotShield),
-            QCLASS(DC17_RiotShield_Fried)
+            QCLASS(DC17_fried),
+            QCLASS(DC17_riotShield),
+            QCLASS(DC17_riotShield_fried)
         };
         VERSION_CONFIG;
     };
