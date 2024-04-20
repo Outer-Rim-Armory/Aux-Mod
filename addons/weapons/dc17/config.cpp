@@ -11,6 +11,7 @@ class CfgPatches {
             QGVAR(accessories),
             "JLTS_weapons_DC17SA",
             "LF_Weapon_Unit_dc17arc_dual",
+            "ls_animation_reloads",
             "ace_laserpointer"
         };
         units[] = {};
