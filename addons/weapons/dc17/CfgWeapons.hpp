@@ -161,7 +161,6 @@ class CfgWeapons {
 
         reloadAction = "ls_dualPistol_reload";
         reloadMagazineSound[] = {"\SWLB_core\data\sounds\weapons\_reload\dual_reload.ogg", 3.54813, 1, 10};
-        // reloadMagazineSound[] = {"\LF_Weapon_Unit\main\sounds\dc15_reload.wss", 0.8, 1, 10};
         initSpeed = -1;
 
         JLTS_canHaveShield = FALSE;
@@ -207,6 +206,30 @@ class CfgWeapons {
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
         baseWeapon = QCLASS(DC17_dual_fried);
+
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+
+        class Stun: CLASS(Muzzle_Stun_Fried) {};
+    };
+
+    class CLASS(DC17_dualCommander): CLASS(DC17_dual_base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] DC-17 (Dual Commander)";
+        baseWeapon = QCLASS(DC17_dualCommander);
+
+        modes[] = {"Single", "FullAuto"};
+
+        JLTS_friedItem = QCLASS(DC17_dualCommander_fried);
+    };
+
+    class CLASS(DC17_dualCommander_fried): CLASS(DC17_dualARC) {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] DC-17 (Dual Commander, Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_fried_ui_ca.paa";
+        baseWeapon = QCLASS(DC17_dualCommander_fried);
 
         JLTS_isFried = TRUE;
         magazines[] = {};
