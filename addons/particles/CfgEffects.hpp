@@ -30,7 +30,7 @@ class CLASS(Effect_B2Blaster_rocket_Fly): CLASS(Effect_E60_Fly) {
     };
 };
 
-class CLASS(Effects_Mortar_SmokeShellBlue) {
+class CLASS(Effect_Mortar_SmokeShellBlue) {
     class Smoke {
         type = QCLASS(Cloudlet_Mortar_SmokeShellBlue);
         simulation = "particles";
@@ -40,7 +40,7 @@ class CLASS(Effects_Mortar_SmokeShellBlue) {
         interval = 1;
     };
 };
-class CLASS(Effects_Mortar_SmokeShellRed): CLASS(Effects_Mortar_SmokeShellBlue) {
+class CLASS(Effect_Mortar_SmokeShellRed): CLASS(Effect_Mortar_SmokeShellBlue) {
     class Smoke: Smoke {
         type = QCLASS(Cloudlet_Mortar_SmokeShellRed);
     };
