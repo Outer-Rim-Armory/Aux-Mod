@@ -3,13 +3,16 @@ class XtdGearModels {
         class CLASS(Helmets_Phase1_Custom) {
             label = "Custom Helmets (P1)";
             author = AUTHOR;
-            options[] = {"camo"};
+            options[] = {"custom", "camo"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Alvarez",
                     "Axel",
+                    "Bond",
                     "Burnt",
                     "Catholic",
                     "Cutthroat",
@@ -17,14 +20,15 @@ class XtdGearModels {
                     "Dexus",
                     "Drake",
                     "Grey",
+                    "Harry",
                     "Hazard",
+                    "Henkie",
                     "Jaws",
                     "Jester",
                     "Joe",
                     "Keeli",
-                    "Keeli_CamoBrown",
-                    "Keeli_CamoGrey",
                     "Lou",
+                    "Marge",
                     "Ox",
                     "Patriot",
                     "Rat",
@@ -41,6 +45,7 @@ class XtdGearModels {
 
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
+                class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };
                 class Cutthroat { label = "Cutthroat"; };
@@ -48,14 +53,14 @@ class XtdGearModels {
                 class Dexus { label = "Dexus"; };
                 class Drake { label = "Drake"; };
                 class Grey { label = "Grey"; };
+                class Harry { label = "Harry"; };
                 class Hazard { label = "Hazard"; };
                 class Jaws { label = "Jaws"; };
                 class Jester { label = "Jester"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
-                class Keeli_CamoBrown { label = "Keeli Brown"; };
-                class Keeli_CamoGrey { label = "Keeli Grey"; };
                 class Lou { label = "Lou"; };
+                class Marge { label = "Marge"; };
                 class Ox { label = "Ox"; };
                 class Patriot { label = "Patriot"; };
                 class Rat { label = "Rat"; };
@@ -69,29 +74,39 @@ class XtdGearModels {
                 class Tyrant { label = "Tyrant"; };
                 class Woods { label = "Woods"; };
             };
+
+            XTDMODELS_CAMO;
         };
 
         class CLASS(Helmets_Pilot_Phase1_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Pilot Helmets (P1)";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Bailout",
                     "Blue",
+                    "Evo",
                     "Mischief"
                 };
 
                 class Bailout { label = "Bailout"; };
                 class Blue { label = "Blue"; };
+                class Evo { label = "Evo"; };
                 class Mischief { label = "Mischief"; };
             };
         };
 
         class CLASS(Helmets_Tanker_Phase1_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Tanker Helmets (P1)";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Grey"
@@ -104,24 +119,26 @@ class XtdGearModels {
         class CLASS(Helmets_Phase2_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Helmets (P2)";
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Alvarez",
                     "Axel",
                     "Bob",
+                    "Bond",
                     "Burnt",
                     "Dexus",
                     "Evo",
                     "Grey",
                     "Harry",
                     "Hazard",
+                    "Henkie",
                     "Jackal",
                     "Jaws",
                     "Joe",
                     "Keeli",
-                    "Keeli_CamoBrown",
-                    "Keeli_CamoGrey",
                     "Leon",
                     "Lou",
                     "Ox",
@@ -142,6 +159,7 @@ class XtdGearModels {
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
                 class Bob { label = "Bob"; };
+                class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
                 class Dexus { label = "Dexus"; };
                 class Evo { label = "Evo"; };
@@ -152,8 +170,6 @@ class XtdGearModels {
                 class Jaws { label = "Jaws"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
-                class Keeli_CamoBrown { label = "Keeli Brown"; };
-                class Keeli_CamoGrey { label = "Keeli Grey"; };
                 class Leon { label = "Leon"; };
                 class Lou { label = "Lou"; };
                 class Ox { label = "Ox"; };
@@ -173,9 +189,12 @@ class XtdGearModels {
         };
 
         class CLASS(Helmets_Insulated_Phase2_Custom): CLASS(Helmets_Phase1_Custom) {
-            label = "Custom Snow Helmets (P2)";
+            label = "Custom Insulated Helmets (P2)";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Dexus",
@@ -191,8 +210,11 @@ class XtdGearModels {
 
         class CLASS(Helmets_Pilot_Phase2_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Pilot Helmets (P2)";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Bailout",
@@ -208,8 +230,11 @@ class XtdGearModels {
 
         class CLASS(Helmets_Tanker_Phase2_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Tanker Helmets (P2)";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Catholic",
@@ -223,8 +248,11 @@ class XtdGearModels {
 
         class CLASS(Helmets_Phase12_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Helmets (P1-2)";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Joe"
@@ -236,8 +264,11 @@ class XtdGearModels {
 
         class CLASS(Helmets_Engineer_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Engineer Helmets";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Bob",
@@ -251,8 +282,11 @@ class XtdGearModels {
 
         class CLASS(Helmets_ARC_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom ARC Helmets";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Drake",
@@ -270,8 +304,11 @@ class XtdGearModels {
 
         class CLASS(Helmets_ARF_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom ARF Helmets";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Defter",
@@ -293,8 +330,11 @@ class XtdGearModels {
 
         class CLASS(Helmets_BARC_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom BARC Helmets";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Keeli",
@@ -309,21 +349,23 @@ class XtdGearModels {
         class CLASS(Uniforms_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Uniforms";
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Axel",
                     "Bob",
                     "Burnt",
                     "Catholic",
+                    "Cutthroat",
                     "Defter",
                     "Dexus",
                     "Drake",
                     "Hagrid",
+                    "Harry",
                     "Joe",
                     "Keeli",
-                    "Keeli_CamoBrown",
-                    "Keeli_CamoGrey",
                     "Rat",
                     "Rev",
                     "Sin",
@@ -337,14 +379,14 @@ class XtdGearModels {
                 class Bob { label = "Bob"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };
+                class Cutthroat { label = "Cutthroat"; };
                 class Defter { label = "Defter"; };
                 class Dexus { label = "Dexus"; };
                 class Drake { label = "Drake"; };
                 class Hagrid { label = "Hagrid"; };
+                class Harry { label = "Harry"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
-                class Keeli_CamoBrown { label = "Keeli Brown"; };
-                class Keeli_CamoGrey { label = "Keeli Grey"; };
                 class Rat { label = "Rat"; };
                 class Rev { label = "Rev"; };
                 class Sin { label = "Sin"; };
@@ -357,8 +399,11 @@ class XtdGearModels {
 
         class CLASS(Uniforms_Insulated_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Insulated Uniforms (P2)";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Dexus",
@@ -374,8 +419,11 @@ class XtdGearModels {
 
         class CLASS(Vests_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Vests";
+            options[] = {"custom"};
 
-            class camo {
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
                     "Keeli",

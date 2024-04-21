@@ -8,7 +8,7 @@
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Phase1_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -25,7 +25,7 @@
     EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Phase1,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Phase1_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }; \
 class CLASS(DOUBLES(Helmet_Phase1,var1)##var2): CLASS(DOUBLES(Helmet_Phase1,var1)) { \
@@ -46,13 +46,13 @@ class CLASS(DOUBLES(Helmet_Phase1,var1)##var2): CLASS(DOUBLES(Helmet_Phase1,var1
     displayName = QUOTE([KC] AVI P1 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase1Pilot\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa", \
+        QPATHTOF(data\helmets\phase1Pilot\DOUBLES(var1,camo2_co.paa)), \
         "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Pilot_Phase1_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -70,7 +70,7 @@ class CLASS(DOUBLES(Helmet_Phase1,var1)##var2): CLASS(DOUBLES(Helmet_Phase1,var1
     EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Phase1_Pilot,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Pilot_Phase1_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }; \
 class CLASS(DOUBLES(Helmet_Phase1_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase1_Pilot,var1)) { \
@@ -96,7 +96,7 @@ class CLASS(DOUBLES(Helmet_Phase1_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Tanker_Phase1_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -113,7 +113,7 @@ class CLASS(DOUBLES(Helmet_Phase1_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase
     EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Phase1_Tanker,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Tanker_Phase1_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }; \
 class CLASS(DOUBLES(Helmet_Phase1_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phase1_Tanker,var1)) { \
@@ -137,7 +137,7 @@ class CLASS(DOUBLES(Helmet_Phase1_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phas
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Phase2_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -153,7 +153,7 @@ class CLASS(DOUBLES(Helmet_Phase1_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phas
     EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Phase2,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Phase2_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }; \
 class CLASS(DOUBLES(Helmet_Phase2,var1)##var2): CLASS(DOUBLES(Helmet_Phase2,var1)) { \
@@ -177,7 +177,7 @@ class CLASS(DOUBLES(Helmet_Phase2,var1)##var2): CLASS(DOUBLES(Helmet_Phase2,var1
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Pilot_Phase2_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -194,7 +194,7 @@ class CLASS(DOUBLES(Helmet_Phase2,var1)##var2): CLASS(DOUBLES(Helmet_Phase2,var1
     EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Phase2_Pilot,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Pilot_Phase2_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }; \
 class CLASS(DOUBLES(Helmet_Phase2_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase2_Pilot,var1)) { \
@@ -218,7 +218,7 @@ class CLASS(DOUBLES(Helmet_Phase2_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Tanker_Phase2_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -235,7 +235,7 @@ class CLASS(DOUBLES(Helmet_Phase2_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase
     EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Phase2_Tanker,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Tanker_Phase2_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }; \
 class CLASS(DOUBLES(Helmet_Phase2_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phase2_Tanker,var1)) { \
@@ -250,6 +250,18 @@ class CLASS(DOUBLES(Helmet_Phase2_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phas
     }; \
 }
 
+#define P2_INSULATED_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_Phase2_Insulated,var1)): CLASS(Helmet_Phase2_Insulated_Base) { \
+    displayName = QUOTE([KC] INF P2 Insulated Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\insulated\DOUBLES(var1,camo1_co.paa)) \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Insulated_Phase2_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}
+
 #define ENGINEER_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_Engineer,var1)): CLASS(Helmet_Engineer_Base) { \
     displayName = QUOTE([KC] ENG Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
@@ -260,7 +272,7 @@ class CLASS(DOUBLES(Helmet_Phase2_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phas
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Engineer_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -277,7 +289,7 @@ class CLASS(DOUBLES(Helmet_Phase2_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phas
     EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Engineer,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Engineer_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }; \
 class CLASS(DOUBLES(Helmet_Engineer,var1)##var2): CLASS(DOUBLES(Helmet_Engineer,var1)) { \
@@ -304,7 +316,7 @@ class CLASS(DOUBLES(Helmet_Engineer,var1)##var2): CLASS(DOUBLES(Helmet_Engineer,
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
         model = QCLASS(Helmets_ARC_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -321,7 +333,7 @@ class CLASS(DOUBLES(Helmet_Engineer,var1)##var2): CLASS(DOUBLES(Helmet_Engineer,
     EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_ARC,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_ARC_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }; \
 class CLASS(DOUBLES(Helmet_ARC,var1)##var2): CLASS(DOUBLES(Helmet_ARC,var1)) { \
@@ -347,7 +359,7 @@ class CLASS(DOUBLES(Helmet_ARC,var1)##var2): CLASS(DOUBLES(Helmet_ARC,var1)) { \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
         model = QCLASS(Helmets_ARF_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -364,7 +376,7 @@ class CLASS(DOUBLES(Helmet_ARC,var1)##var2): CLASS(DOUBLES(Helmet_ARC,var1)) { \
     EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_ARF,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_ARF_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }; \
 class CLASS(DOUBLES(Helmet_ARF,var1)##var2): CLASS(DOUBLES(Helmet_ARF,var1)) { \
@@ -390,7 +402,7 @@ class CLASS(DOUBLES(Helmet_ARF,var1)##var2): CLASS(DOUBLES(Helmet_ARF,var1)) { \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
         model = QCLASS(Helmets_BARC_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -406,13 +418,53 @@ class CLASS(DOUBLES(Helmet_ARF,var1)##var2): CLASS(DOUBLES(Helmet_ARF,var1)) { \
     EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_BARC,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_BARC_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }; \
 class CLASS(DOUBLES(Helmet_BARC,var1)##var2): CLASS(DOUBLES(Helmet_BARC,var1)) { \
     SCOPE_HIDDEN; \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\barc\DOUBLES(var1,camo1_co.paa)), \
+        QPATHTOF(data\visors\DOUBLES(var2,camo2_co.paa)) \
+    }; \
+    hiddenSelectionsMaterials[] = { \
+        "", \
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat" \
+    }; \
+}
+
+#define P12_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_Phase12,var1)): CLASS(Helmet_Phase12_Base) { \
+    displayName = QUOTE([KC] INF P1-2 Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\phase12\DOUBLES(var1,camo1_co.paa)), \
+        "\ls_armor_bluefor\helmet\gar\rex\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Phase12_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}
+
+#define P12_HELMET_VISOR_CUSTOM(var1,var2) class CLASS(DOUBLES(Helmet_Phase12,var1)): CLASS(Helmet_Phase12_Base) { \
+    displayName = QUOTE([KC] INF P1-2 Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\phase12\DOUBLES(var1,camo1_co.paa)), \
+        "\ls_armor_bluefor\helmet\gar\rex\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Phase12_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+    EGVAR(armor,nvCanToggle) = TRUE; \
+    EGVAR(armor,nvHelmetOff) = QCLASS(DOUBLES(Helmet_Phase12,var1)); \
+    EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Phase12,var1)##var2##); \
+}; \
+class CLASS(DOUBLES(Helmet_Phase12,var1)##var2): CLASS(DOUBLES(Helmet_Phase12,var1)) { \
+    SCOPE_HIDDEN; \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\phase12\DOUBLES(var1,camo1_co.paa)), \
         QPATHTOF(data\visors\DOUBLES(var2,camo2_co.paa)) \
     }; \
     hiddenSelectionsMaterials[] = { \
@@ -429,18 +481,18 @@ class CLASS(DOUBLES(Helmet_BARC,var1)##var2): CLASS(DOUBLES(Helmet_BARC,var1)) {
     }; \
     class XtdGearInfo { \
         model = QCLASS(Uniforms_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }
 
 #define UNIFORM_INSULATED_P2_CUSTOM(var1) class CLASS(DOUBLES(Uniform_Phase2_Insulated,var1)): CLASS(Uniform_Phase2_Insulated_Base) { \
-    displayName = QUOTE([KC] Custom P2 Snow Armor ('##var1##')); \
+    displayName = QUOTE([KC] Custom P2 Insulated Armor ('##var1##')); \
     GVAR(isCustom) = TRUE; \
     class ItemInfo: ItemInfo { \
         uniformClass = QCLASS(DOUBLES(Unit_Phase2_Insulated,var1)); \
     }; \
     class XtdGearInfo { \
         model = QCLASS(Uniforms_Insulated_Custom); \
-        camo = QUOTE(var1); \
+        custom = QUOTE(var1); \
     }; \
 }

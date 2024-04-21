@@ -199,8 +199,8 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Other_Backpack_Base);
-    class CLASS(EPF_Backpack): CLASS(Other_Backpack_Base) {
+    class CLASS(backpack_base);
+    class CLASS(EPF_Backpack): CLASS(backpack_base) {
         SCOPE_PUBLIC;
 
         displayName = "[EPF] Backpack";

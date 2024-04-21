@@ -1,5 +1,5 @@
 class CLASS(Helmet_Phase2_Insulated_Base): CLASS(Helmet_Phase2_Base) {
-    displayName = "[KC] INF P2 Snow Helm (Base)";
+    displayName = "[KC] INF P2 Insulated Helm (Base)";
 
     model = "\ls_armor_bluefor\helmet\gar\phase2Insulated\ls_gar_phase2Insulated_helmet.p3d";
     hiddenSelections[] = {"Camo1"};
@@ -12,7 +12,7 @@ class CLASS(Helmet_Phase2_Insulated_Base): CLASS(Helmet_Phase2_Base) {
 };
 
 class CLASS(Helmet_Phase2_Insulated_CT): CLASS(Helmet_Phase2_Insulated_Base) {
-    displayName = "[KC] INF P2 Snow Helm 01 (Trooper)";
+    displayName = "[KC] INF P2 Insulated Helm 01 (Trooper)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\insulated\CT_camo1_co.paa)
     };

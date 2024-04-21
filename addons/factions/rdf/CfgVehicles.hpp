@@ -205,11 +205,11 @@ class CfgVehicles {
         respawnWeapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Throw", "Put"};
 
         magazines[] = {
-            QCLASS(Mag_60rnd_WestarM5),
+            QCLASS(Mag_99Rnd_WestarM5),
             QCLASS(Mag_30Rnd_DC15SA)
         };
         respawnMagazines[] = {
-            QCLASS(Mag_60rnd_WestarM5),
+            QCLASS(Mag_99Rnd_WestarM5),
             QCLASS(Mag_30Rnd_DC15SA)
         };
 
@@ -226,11 +226,11 @@ class CfgVehicles {
         respawnWeapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Aux501_Weaps_Z1000", "Throw", "Put"};
 
         magazines[] = {
-            QCLASS(Mag_60rnd_WestarM5),
+            QCLASS(Mag_99Rnd_WestarM5),
             QCLASS(Mag_30Rnd_DC15SA)
         };
         respawnMagazines[] = {
-            QCLASS(Mag_60rnd_WestarM5),
+            QCLASS(Mag_99Rnd_WestarM5),
             QCLASS(Mag_30Rnd_DC15SA)
         };
 
@@ -240,8 +240,8 @@ class CfgVehicles {
     };
 
 
-    class CLASS(Other_Backpack_Base);
-    class CLASS(RDF_Backpack): CLASS(Other_Backpack_Base) {
+    class CLASS(backpack_base);
+    class CLASS(RDF_Backpack): CLASS(backpack_base) {
         SCOPE_PUBLIC;
 
         displayName = "[RDF] Backpack";
@@ -320,7 +320,7 @@ class CfgVehicles {
         SCOPE_HIDDEN;
 
         class TransportMagazines {
-            MAG_XX(CLASS(Mag_60rnd_WestarM5),15);
+            MAG_XX(CLASS(Mag_99Rnd_WestarM5),15);
             MAG_XX(CLASS(Mag_30Rnd_DC15SA),5);
             MAG_XX(CLASS(Mag_15Rnd_DC15SA),5);
             MAG_XX(CLASS(Mag_7Rnd_DC15SA),5);
@@ -341,7 +341,7 @@ class CfgVehicles {
 
     class CLASS(RDF_Backpack_SWAT_Predef_Chaingun): CLASS(RDF_Backpack_SWAT_Predef_Rifleman) {
         class TransportMagazines: TransportMagazines {
-            MAG_XX(CLASS(Mag_60rnd_WestarM5),15);
+            MAG_XX(CLASS(Mag_99Rnd_WestarM5),15);
             MAG_XX(CLASS(Mag_30Rnd_DC15SA),5);
             MAG_XX(CLASS(Mag_15Rnd_DC15SA),5);
             MAG_XX(CLASS(Mag_7Rnd_DC15SA),5);

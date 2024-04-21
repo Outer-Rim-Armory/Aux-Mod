@@ -4,7 +4,7 @@ class CfgWeapons {
     class CLASS(Uniform_Rancor): Uniform_Base {
         SCOPE_HIDDEN;
         displayname = "Rancor Hide";
-        model = QPATHTOF(data\rancor\Rancor.p3d);
+        model = QPATHTOF(data\rancor\CLASS(Rancor.p3d));
         picture = "";
 
         class ItemInfo: UniformItem {

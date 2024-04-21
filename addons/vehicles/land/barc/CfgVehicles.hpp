@@ -27,7 +27,7 @@ class CfgVehicles {
         typicalCargo[] = {QCLASS(Unit_ARF_CT)};
 
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {QPATHTOF(land\barc\data\textures\KeeliCompany\Body_co.paa)};
+        hiddenSelectionsTextures[] = {QPATHTOF(land\barc\data\textures\KeeliCompany_Body_co.paa)};
 
         weapons[] = {QCLASS(Turret_BARC), "ls_speeder_AP"};
         magazines[] = {
@@ -37,7 +37,13 @@ class CfgVehicles {
             "ls_50Rnd_speederHE_belt"
         };
 
-        textureList[] = {"Standard", 0, "KeeliCompany", 1, "Defter", 0};
+        textureList[] = {
+            "Standard", 0,
+            "KeeliCompany", 1,
+            "CamoBrown", 0,
+            "CamoGrey", 0,
+            "Defter", 0
+        };
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -49,12 +55,27 @@ class CfgVehicles {
             class KeeliCompany: Standard {
                 displayName = "Keeli Company";
                 author = AUTHOR;
-                textures[] = {QPATHTOF(land\barc\data\textures\KeeliCompany\Body_co.paa)};
+                textures[] = {QPATHTOF(land\barc\data\textures\KeeliCompany_Body_co.paa)};
+            };
+
+            class KeeliCompanyWhite: KeeliCompany {
+                displayName = "Keeli Company (White)";
+                textures[] = {QPATHTOF(land\barc\data\textures\KeeliCompanyWhite_Body_co.paa)};
+            };
+
+            class CamoBrown: KeeliCompany {
+                displayName = "Brown Camo";
+                textures[] = {QPATHTOF(land\barc\data\textures\CamoBrown_Body_co.paa)};
+            };
+
+            class CamoGrey: KeeliCompany {
+                displayName = "Grey Camo";
+                textures[] = {QPATHTOF(land\barc\data\textures\CamoGrey_Body_co.paa)};
             };
 
             class Defter: KeeliCompany {
                 displayName = "Defter";
-                textures[] = {QPATHTOF(land\barc\data\textures\Defter\Body_co.paa)};
+                textures[] = {QPATHTOF(land\barc\data\textures\Defter_Body_co.paa)};
             };
         };
 

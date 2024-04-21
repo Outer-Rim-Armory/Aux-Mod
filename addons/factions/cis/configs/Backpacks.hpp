@@ -1,5 +1,5 @@
-class CLASS(Other_Backpack_Base);
-class CLASS(CIS_Backpack_Droid_B1): CLASS(Other_Backpack_Base) {
+class CLASS(backpack_base);
+class CLASS(CIS_Backpack_Droid_B1): CLASS(backpack_base) {
     SCOPE_PUBLIC;
 
     displayName = "[CIS] Battle Droid Backpack";
