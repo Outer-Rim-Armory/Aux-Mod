@@ -42,7 +42,7 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_15Rnd_DC15X),10);
             MAG_XX(CLASS(Mag_240Rnd_DC15L),10);
             MAG_XX(CLASS(Mag_30Rnd_DP23),10);
-            MAG_XX(CLASS(Mag_60Rnd_WestarM5),10);
+            MAG_XX(CLASS(Mag_99Rnd_WestarM5),10);
             MAG_XX(CLASS(Mag_25Rnd_Valken38x),10);
 
             // UGL Ammo
@@ -87,7 +87,7 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_15Rnd_DC15X),160);
             MAG_XX(CLASS(Mag_240Rnd_DC15L),160);
             MAG_XX(CLASS(Mag_30Rnd_DP23),160);
-            MAG_XX(CLASS(Mag_60Rnd_WestarM5),160);
+            MAG_XX(CLASS(Mag_99Rnd_WestarM5),160);
             MAG_XX(CLASS(Mag_25Rnd_Valken38x),160);
 
             // UGL Ammo
