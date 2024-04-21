@@ -503,4 +503,17 @@ class CfgWeapons {
             reloadTime = 4;
         };
     };
+
+    class GBU12BombLauncher;
+    class CLASS(Bomb_ProtonBombLauncher): GBU12BombLauncher {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        displayName = "Proton Bomb";
+        magazines[] = {
+            QCLASS(Mag_8Rnd_Bomb_Proton)
+        };
+
+        reloadTime = 0.5;
+    };
 };

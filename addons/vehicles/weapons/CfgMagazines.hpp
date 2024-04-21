@@ -166,4 +166,17 @@ class CfgMagazines {
         ammo = QCLASS(Shell_Mortar_SmokeRed);
     };
     CSW_MAG_CONVERSION(CLASS(Mag_6Rnd_Mortar_SmokeRed));
+
+
+    class CLASS(Mag_8Rnd_Bomb_Proton): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "Proton Bomb";
+        displayNameShort = "8Rnd Proton";
+
+        initSpeed = 0;
+        maxLeadSpeed = 25;
+
+        ammo = QCLASS(Bomb_Proton);
+        count = 8;
+    };
 };

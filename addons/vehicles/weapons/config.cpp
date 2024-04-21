@@ -13,7 +13,8 @@ class CfgPatches {
             "3AS_Weapons",
             "3AS_VehicleWeapons",
             "3AS_Static",
-            "3AS_Mortar"
+            "3AS_Mortar",
+            "3AS_Ammo"
         };
         units[] = {};
         weapons[] = {
