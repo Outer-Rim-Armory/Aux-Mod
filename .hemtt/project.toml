@@ -29,6 +29,7 @@ workshop = [
     "1779063631", # ZEN
     "2018593688", # ZEN ACE Compat
     # "2173635424", # 501st Aux Mod
+    "2522638637", # ACE Arsenal Extended
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
     "767380317",  # Blastcore # Only used to test particle effects
 ]

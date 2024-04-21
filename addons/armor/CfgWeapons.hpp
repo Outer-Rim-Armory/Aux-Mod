@@ -22,7 +22,7 @@ class CfgWeapons {
     #include "configs\Helmets_ARC.hpp"
     #include "configs\Helmets_ARF.hpp"
     #include "configs\Helmets_BARC.hpp"
-    #include "configs\Helmets_Commando.hpp"
+    #include "configs\Helmets_cloneCommando.hpp"
 
     class ls_blueforUniform_base;
     class ls_gar_phase2_uniform: ls_blueforUniform_base {
@@ -43,7 +43,7 @@ class CfgWeapons {
     };
 
     #include "configs\Uniforms.hpp"
-    #include "configs\Uniforms_Commando.hpp"
+    #include "configs\Uniforms_cloneCommando.hpp"
     #include "configs\Uniforms_Jedi.hpp"
 
     class V_PlateCarrier1_rgr;
@@ -91,7 +91,7 @@ class CfgWeapons {
     #include "configs\Vests_Engineer.hpp"
     #include "configs\Vests_Tanker.hpp"
     #include "configs\Vests_ARC.hpp"
-    #include "configs\Vests_Commando.hpp"
+    #include "configs\Vests_cloneCommando.hpp"
 
     class BNA_KC_Vest_ARF: CLASS(Vest_Basic) {
         displayName = "[KC] SF ARF Vest";
@@ -175,15 +175,15 @@ class CfgWeapons {
         thermalMode[] = {WHOT};
 
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
-        modelOptics = QPATHTOEF(core,data\models\empty\empty.p3d);
+        modelOptics = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {};
-            uniformModel = QPATHTOEF(core,data\models\empty\empty.p3d);
-            modelOff = QPATHTOEF(core,data\models\empty\empty.p3d);
+            uniformModel = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
+            modelOff = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
         };
     };
 

@@ -16,7 +16,6 @@ class CfgPatches {
             QCLASS(BLUFOR_Unit_Base),
             QCLASS(OPFOR_Unit_Base),
             QCLASS(INDEP_Unit_Base),
-            QCLASS(OtherSide_Backpack_Base)
         };
         weapons[] = {
             QCLASS(BLUFOR_Helmet_Base),

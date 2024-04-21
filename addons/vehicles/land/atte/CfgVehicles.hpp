@@ -39,37 +39,44 @@ class CfgVehicles {
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Shell_co.paa),
-            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+            "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
             QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Detail_co.paa),
             QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Legs_co.paa),
-            "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
-            "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+            "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+            "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
         };
 
-        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 1};
+        textureList[] = {
+            "Standard", 0,
+            "Imperial", 0,
+            "KeeliCompany", 1,
+            "KeeliCompanyWhite", 0,
+            "CamoBrown", 0,
+            "CamoGrey", 0
+        };
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
                 displayName = "Standard";
                 factions[] = {};
                 textures[] = {
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
-                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Shell_co.paa",
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
                 };
             };
             class Imperial: Standard {
                 displayName = "Imperial";
                 textures[] = {
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_Imp_co.paa",
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_Imp_co.paa",
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
-                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Shell_Imp_co.paa",
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Legs_Imp_co.paa",
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
                 };
             };
             class KeeliCompany: Standard {
@@ -77,35 +84,59 @@ class CfgVehicles {
                 author = AUTHOR;
                 textures[] = {
                     QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Shell_co.paa),
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
                     QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Detail_co.paa),
                     QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Legs_co.paa),
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
-                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
                 };
             };
 
             class KeeliCompanyWhite: KeeliCompany {
                 displayName = "Keeli Company (White)";
                 textures[] = {
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompanyWhite\Shell_co.paa),
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompanyWhite\Detail_co.paa),
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompanyWhite\Legs_co.paa),
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
-                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+                    QPATHTOF(land\atte\data\textures\KeeliCompanyWhite\Shell_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    QPATHTOF(land\atte\data\textures\KeeliCompanyWhite\Detail_co.paa),
+                    QPATHTOF(land\atte\data\textures\KeeliCompanyWhite\Legs_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
                 };
             };
 
             class Rebecca: KeeliCompany {
                 displayName = "Rebecca";
                 textures[] = {
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\Rebecca\Shell_co.paa),
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompanyWhite\Detail_co.paa),
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompanyWhite\Legs_co.paa),
-                    "\3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
-                    "\3as\3as_atte\data\textures\3as_atte_armor_co.paa"
+                    QPATHTOF(land\atte\data\textures\Rebecca\Shell_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    QPATHTOF(land\atte\data\textures\KeeliCompanyWhite\Detail_co.paa),
+                    QPATHTOF(land\atte\data\textures\KeeliCompanyWhite\Legs_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
+                };
+            };
+
+            class CamoBrown: KeeliCompany {
+                displayName = "Brown Camo";
+                textures[] = {
+                    QPATHTOF(land\atte\data\textures\CamoBrown\Shell_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    QPATHTOF(land\atte\data\textures\CamoBrown\Detail_co.paa),
+                    QPATHTOF(land\atte\data\textures\CamoBrown\Legs_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
+                };
+            };
+
+            class CamoGrey: KeeliCompany {
+                displayName = "Grey Camo";
+                textures[] = {
+                    QPATHTOF(land\atte\data\textures\CamoGrey\Shell_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    QPATHTOF(land\atte\data\textures\CamoGrey\Detail_co.paa),
+                    QPATHTOF(land\atte\data\textures\CamoGrey\Legs_co.paa),
+                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa",
+                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
                 };
             };
         };

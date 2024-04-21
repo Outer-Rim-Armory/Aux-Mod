@@ -13,15 +13,10 @@
  * fired = "_this call BNA_KC_weapons_fnc_fired";
  */
 
-// TODO: Update to used "Exploded" EH for grenades
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
 private ["_simulation"];
 
-_simulation = [
-    (configFile >> "CfgAmmo" >> _ammo),
-    "simulation",
-    ""
-] call BIS_fnc_returnConfigEntry;
+_simulation = getText (configOf _projectile >> "simulation");
 
 if (toLowerANSI _simulation in ["shotgrenade", "shotsmoke", "shotsmokex"]) then {
     _this call FUNC(grenadeHandler);

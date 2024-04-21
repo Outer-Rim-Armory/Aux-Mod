@@ -14,27 +14,26 @@
  */
 
 params ["_unit", "_weapon", "_muzzle", "_mode", "_ammo", "_magazine", "_projectile"];
-private ["_ammoType", "_explodeDelay"];
+private ["_ammoType"];
+TRACE_7("fnc_grenadeHandler",_unit,_weapon,_muzzle,_mode,_ammo,_magazine,_projectile);
 
-_ammoType = getNumber (configFile >> "CfgAmmo" >> _ammo >> QGVAR(ammoType));
-_explodeDelay = getNumber (configFile >> "CfgAmmo" >> _ammo >> "explosionTime");
-
+_ammoType = getNumber (configOf _projectile >> QGVAR(ammoType));
 if (_ammoType isEqualTo AMMO_TYPE_NORMAL) exitWith {};
 
-[
-    {
-        params ["_ammoType", "_explodeDelay", "_unit", "_ammo", "_magazine", "_projectile"];
+_projectile addEventHandler ["Explode", {
+    params ["_projectile", "_positionASL"];
+    private ["_ammoType"];
 
-        switch (_ammoType) do {
-            case AMMO_TYPE_EMP: {
-                [_unit, _ammo, _magazine, _projectile] call FUNC(empGrenade);
-            };
-            case AMMO_TYPE_BACTA: {
-                [_unit, _ammo, _magazine, _projectile] call FUNC(bactaGrenade);
-            };
-            default {};
+    _ammoType = getNumber (configOf _projectile >> QGVAR(ammoType));
+    switch (_ammoType) do {
+        case AMMO_TYPE_EMP: {
+            _projectile call FUNC(empGrenade);
         };
-    },
-    [_ammoType, _explodeDelay, _unit, _ammo, _magazine, _projectile],
-    _explodeDelay
-] call CBA_fnc_waitAndExecute;
+        case AMMO_TYPE_BACTA: {
+            _projectile call FUNC(bactaGrenade);
+        };
+        default {};
+    };
+}];
+
+nil;

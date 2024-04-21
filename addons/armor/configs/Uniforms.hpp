@@ -248,14 +248,14 @@ class CLASS(Uniform_ARF_CT): CLASS(Uniform_Base) {
 };
 
 class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base) {
-    displayName = "[KC] INF P2 Snow Armor (Base)";
+    displayName = "[KC] INF P2 Insulated Armor (Base)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_Insulated_Base);
     };
 };
 
 class CLASS(Uniform_Phase2_Insulated_CT): CLASS(Uniform_Base) {
-    displayName = "[KC] INF P2 Snow Armor 01 (Trooper)";
+    displayName = "[KC] INF P2 Insulated Armor 01 (Trooper)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_Insulated_CT);
     };
