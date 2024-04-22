@@ -108,6 +108,7 @@ class CfgPatches {
 
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgGroups.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgEditorSubcategories.hpp"
 #include "CfgWorlds.hpp"

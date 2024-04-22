@@ -25,4 +25,5 @@ class CfgPatches {
 #include "CfgEditorSubcategories.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgGroups.hpp"
 #include "CfgEventHandlers.hpp"
