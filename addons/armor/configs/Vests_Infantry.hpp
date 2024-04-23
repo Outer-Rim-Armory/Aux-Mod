@@ -57,7 +57,7 @@ class CLASS(Vest_Heavy): CLASS(Vest_Basic) {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Sling and Bag
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
         "\SWLB_clones\data\light_accessories_co.paa",                 // Grenades
-        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Pauldron
+        ""                                                            // Pauldron
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
 
@@ -79,7 +79,7 @@ class CLASS(Vest_Heavy_v2): CLASS(Vest_Heavy) {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa),           // Holster
         "\SWLB_core\data\common_textures\equipment\bag_co.paa",                 // Belt Bag
         "\SWLB_core\data\common_textures\accessories\light_accessories_co.paa", // Back Grenade
-        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)            // Pauldron
+        ""                                                                      // Pauldron
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 
