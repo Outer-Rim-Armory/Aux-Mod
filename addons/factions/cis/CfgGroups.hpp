@@ -163,9 +163,15 @@ class CfgGroups {
                 class AssaultSquad: RifleSquad {
                     name = "Assault Squad";
 
-                    class Object0: Object0 {};
-                    class Object1: Object1 {};
-                    class Object2: Object2 {};
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
                     class Object3: Object3 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Sniper);
                     };
@@ -200,17 +206,27 @@ class CfgGroups {
                 class LightAssaultSquad: RifleSquad {
                     name = "Assault Squad (Light)";
 
-                    class Object0: Object0 {};
-                    class Object1: Object1 {};
-                    class Object2: Object2 {};
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
                     class Object3: Object3 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
                     };
                     class Object4: Object4 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
                     };
-                    class Object5: Object5 {};
-                    class Object6: Object6 {};
+                    class Object5: Object5 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object6: Object6 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
                 };
 
                 class LightAssaultTeam: RifleTeam {
@@ -236,12 +252,18 @@ class CfgGroups {
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_CQC);
                     };
-                    class Object1: Object1 {};
-                    class Object2: Object2 {};
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
                     class Object3: Object3 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Sniper);
                     };
-                    class Object4: Object4 {};
+                    class Object4: Object4 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
                     class Object5: Object5 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
                     };
@@ -253,17 +275,27 @@ class CfgGroups {
                 class LightDefenseSquad: RifleSquad {
                     name = "Defense Squad (Light)";
 
-                    class Object0: Object0 {};
-                    class Object1: Object1 {};
-                    class Object2: Object2 {};
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
                     class Object3: Object3 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
                     };
                     class Object4: Object4 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
                     };
-                    class Object5: Object5 {};
-                    class Object6: Object6 {};
+                    class Object5: Object5 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object6: Object6 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
                 };
 
                 class WeaponsSquad: RifleSquad {
