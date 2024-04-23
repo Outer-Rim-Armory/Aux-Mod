@@ -202,9 +202,6 @@ class TransportItems { \
 
 #define VEHICLE_LIST_AIR [ \
     QCLASS(ARC170), \
-    QCLASS(Galaxy_Gunship), \
-    QCLASS(Galaxy_Transport_Vehicle), \
-    QCLASS(Galaxy_Transport_Infantry), \
     QCLASS(LAATc), \
     QCLASS(LAATi_MK1), \
     QCLASS(LAATi_MK1_Lamps), \
