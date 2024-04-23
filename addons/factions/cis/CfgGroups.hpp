@@ -3,6 +3,7 @@ class CfgGroups {
         class Object0;
         class Object1;
         class Object2;
+        class Object3;
     };
 
     class CLASS(SquadBase) {
@@ -40,7 +41,7 @@ class CfgGroups {
 
                 class RifleSquad: CLASS(SquadBase) {
                     faction = QFACTION(CIS);
-                    name = "B1 Squad";
+                    name = "Rifle Squad";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     side = OPFOR;
 
@@ -67,6 +68,26 @@ class CfgGroups {
                     };
                 };
 
+                class RifleTeam: CLASS(TeamBase) {
+                    faction = QFACTION(CIS);
+                    name = "Rifle Team";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    side = OPFOR;
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                };
+
                 class AntiArmorSquad: RifleSquad {
                     name = "Anti-Armor Squad";
 
@@ -83,6 +104,26 @@ class CfgGroups {
                     class Object6: Object6 {};
                 };
 
+                class AntiArmorTeam: CLASS(TeamBase) {
+                    faction = QFACTION(CIS);
+                    name = "Anti-Armor Team";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    side = OPFOR;
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_AT);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                };
+
                 class AntiAirSquad: RifleSquad {
                     name = "Anti-Air Squad";
 
@@ -97,6 +138,26 @@ class CfgGroups {
                     };
                     class Object5: Object5 {};
                     class Object6: Object6 {};
+                };
+
+                class AntiAirTeam: CLASS(TeamBase) {
+                    faction = QFACTION(CIS);
+                    name = "Anti-Air Team";
+                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
+                    side = OPFOR;
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_AA);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
                 };
 
                 class AssaultSquad: RifleSquad {
@@ -119,6 +180,23 @@ class CfgGroups {
                     };
                 };
 
+                class AssaultTeam: RifleTeam {
+                    name = "Assault Team";
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                };
+
                 class LightAssaultSquad: RifleSquad {
                     name = "Assault Squad (Light)";
 
@@ -133,6 +211,23 @@ class CfgGroups {
                     };
                     class Object5: Object5 {};
                     class Object6: Object6 {};
+                };
+
+                class LightAssaultTeam: RifleTeam {
+                    name = "Assault Team (Light)";
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_CQC);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
+                    };
                 };
 
                 class DefenseSquad: RifleSquad {
@@ -194,6 +289,23 @@ class CfgGroups {
                     };
                     class Object6: Object6 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_AT);
+                    };
+                };
+
+                class WeaponsTeam: RifleTeam {
+                    name = "Weapons Team";
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_CQC);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_AT);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1);
                     };
                 };
             };

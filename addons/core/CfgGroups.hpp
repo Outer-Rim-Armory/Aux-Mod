@@ -12,6 +12,9 @@ class CfgGroups {
         class Object2: Object1 {
             position[] = {-5, -5, 0};
         };
+        class Object3: Object1 {
+            position[] = {10, -10, 0};
+        };
     };
 
     class CLASS(SquadBase) {
