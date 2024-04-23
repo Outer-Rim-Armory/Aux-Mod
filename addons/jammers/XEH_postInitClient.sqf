@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-GVAR(activeJammers) = createHashmap;
 GVAR(jammerHandlerClient) = -1;
 GVAR(interferenceFactor) = 0.625;
 
