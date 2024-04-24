@@ -165,15 +165,6 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
-
-            INTERCOM_START;
-                INTERCOM_DISABLED;
-                INTERCOM_CARGO;
-                INTERCOM_CREW;
-                INTERCOM_MISC1;
-                INTERCOM_MISC2;
-                INTERCOM_MISC3;
-            INTERCOM_END;
         };
 
         class UserActions {

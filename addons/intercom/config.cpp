@@ -6,11 +6,14 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QEGVAR(vehicles,load_order)
+            QEGVAR(vehicles,load_order),
+            "TFAR_core"
         };
         units[] = {};
         weapons[] = {};
         VERSION_CONFIG;
+
+        skipWhenMissingDependencies = TRUE;
     };
 };
 

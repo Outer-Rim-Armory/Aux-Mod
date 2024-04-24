@@ -8,7 +8,6 @@ class CfgVehicles {
         //     class HitBody;
         //     class HitHull;
         // };
-        class ACE_SelfActions;
         class UserActions {
             class Crow_Nest_Up;
             class Crow_Nest_Down;
@@ -16,7 +15,9 @@ class CfgVehicles {
             class Close_Rockets;
         };
     };
-    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F {};
+    class 3AS_B_Jug_01_base_F: 3AS_Jug_base_F {
+        class ACE_SelfActions;
+    };
     class 3AS_Jug: 3AS_B_Jug_01_base_F {};
     class CLASS(Juggernaut): 3AS_Jug {
         SCOPE_PUBLIC;
@@ -120,15 +121,6 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
-
-            INTERCOM_START;
-                INTERCOM_DISABLED;
-                INTERCOM_CARGO;
-                INTERCOM_CREW;
-                INTERCOM_MISC1;
-                INTERCOM_MISC2;
-                INTERCOM_MISC3;
-            INTERCOM_END;
         };
 
         class UserActions: UserActions {

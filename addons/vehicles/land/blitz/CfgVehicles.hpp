@@ -151,11 +151,6 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
-
-            INTERCOM_START;
-                INTERCOM_DISABLED;
-                INTERCOM_CREW;
-            INTERCOM_END;
         };
 
         class Turrets: Turrets {
