@@ -87,23 +87,23 @@ class GVAR(deleteCrew) { \
 
 #define INTERCOM_START class TFAR_IntercomChannel { \
     displayName = "Intercom Channel"; \
-    condition = "true"; \
+    condition = QUOTE(ADDON_LOADED(TFAR_core)); \
     statement = ""
 
 #define INTERCOM_DISABLED class TFAR_IntercomChannel_disabled { \
     displayName = "Disabled"; \
-    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != -1); \
-    statement = QUOTE((objectParent ace_player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-1,true)]); \
+    condition = QUOTE([ARR_3(_target,_player,-1)] call FUNC(intercom_canSwitchChannel)); \
+    statement = QUOTE([ARR_3(_target,_player,-1)] call FUNC(intercom_setChannel)); \
 }
 #define INTERCOM_CARGO class TFAR_IntercomChannel_1 { \
     displayName = "Cargo"; \
-    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != 1); \
-    statement = QUOTE((objectParent ace_Player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),0,true)]); \
+    condition = QUOTE([ARR_3(_target,_player,0)] call FUNC(intercom_canSwitchChannel)); \
+    statement = QUOTE([ARR_3(_target,_player,0)] call FUNC(intercom_setChannel)); \
 }
 #define INTERCOM_CREW class TFAR_IntercomChannel_2 { \
     displayName = "Crew"; \
-    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != 1); \
-    statement = QUOTE((objectParent ace_Player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),1,true)]); \
+    condition = QUOTE([ARR_3(_target,_player,1)] call FUNC(intercom_canSwitchChannel)); \
+    statement = QUOTE([ARR_3(_target,_player,1)] call FUNC(intercom_setChannel)); \
 }
 
 #define INTERCOM_END }

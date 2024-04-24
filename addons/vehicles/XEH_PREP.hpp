@@ -11,6 +11,8 @@ PREP(autoEject);
 PREP(canDeleteCrew);
 PREP(canSpawnCrew);
 PREP(cswDeployModifier);
+PREP(intercom_canSwitchChannel);
+PREP(intercom_setChannel);
 PREP(setIntercomChannel);
 PREP(skin_canSwitch);
 PREP(skin_insertChildren);
