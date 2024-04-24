@@ -13,7 +13,7 @@ class Extended_PreInit_EventHandlers {
 class Extended_GetIn_EventHandlers {
     class All {
         class GVAR(autoSetChannel) {
-            getIn = QUOTE(call FUNC(autoSetChannel));
+            clientGetIn = QUOTE(call FUNC(autoSetChannel));
         };
     };
 };

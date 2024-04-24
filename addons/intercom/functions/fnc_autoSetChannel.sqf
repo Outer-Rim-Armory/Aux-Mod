@@ -21,7 +21,7 @@ params ["_vehicle", "_role", "_unit"];
 private [];
 TRACE_3("fnc_autoSetChannel",_vehicle,_role,_unit);
 
-if !([_unit, true] call ace_common_fnc_isPlayer) exitWith {};
+if !(GVAR(autoSetChannel_enabled)) exitWith {};
 
 switch (_role) do {
     case "driver";

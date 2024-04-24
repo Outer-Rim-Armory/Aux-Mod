@@ -1,5 +1,5 @@
 #define COMPONENT intercom
-#define COMPONENT_BEAUTIFIED Intercoms
+#define COMPONENT_BEAUTIFIED Intercom
 #include "\ORA\BNA_KC\addons\core\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
