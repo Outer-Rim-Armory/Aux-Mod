@@ -60,7 +60,7 @@ class CfgWeapons {
         SCOPE_HIDDEN;
         displayName = "[KC] DC-20Y (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        picture = QPATHTOF(dc20y\data\ui\DC20Y_Fried_ui_ca.paa);
+        picture = QPATHTOF(dc20y\data\ui\DC20Y_Fried_ca.paa);
         baseWeapon = QCLASS(DC20Y_Fried);
 
         JLTS_isFried = TRUE;
