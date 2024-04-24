@@ -73,11 +73,6 @@ class CfgVehicles {
             HUD_CHANGER;
 
             AI_CREW_SPAWNER;
-
-            INTERCOM_START;
-                INTERCOM_DISABLED;
-                INTERCOM_CREW;
-            INTERCOM_END;
         };
 
         class UserActions: UserActions {

@@ -21,7 +21,9 @@ class CfgVehicles {
             class muzzle_rot_coax;
         };
     };
-    class OPTRE_M808B_UNSC: OPTRE_M808B_base {};
+    class OPTRE_M808B_UNSC: OPTRE_M808B_base {
+        class ACE_SelfActions;
+    };
     class CLASS(Plesioth_Base): OPTRE_M808B_UNSC {
         SCOPE_PRIVATE;
         author = AUTHOR;
@@ -70,6 +72,9 @@ class CfgVehicles {
                     "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\mine_roller_co.paa"
                 };
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions {
         };
 
         class Turrets: Turrets {
