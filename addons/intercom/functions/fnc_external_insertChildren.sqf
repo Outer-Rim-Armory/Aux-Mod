@@ -22,7 +22,7 @@ TRACE_1("fnc_intercom_switchChannelExternalInsertChildren",_player);
 _vehicle = _player getVariable ["TFAR_externalIntercomVehicle", objNull];
 
 _channels = "true" configClasses (configOf _vehicle >> "ACE_SelfActions" >> "TFAR_IntercomChannel");
-_channels = _channels apply {[getText (_x >> "displayName"), getNumber (_x >> QEGVAR(intercom,radioCode))]}; // will be moved to own addon
+_channels = _channels apply {[getText (_x >> "displayName"), getNumber (_x >> QGVAR(radioCode))]};
 
 _actions = [];
 {
@@ -33,11 +33,11 @@ _actions = [];
         params ["_target", "_player", "_params"];
         _params params ["_name", "_channel"];
 
-        [_target, _player, _channel] call FUNC(intercom_setChannel);
+        [_target, _player, _channel] call FUNC(setChannel);
     };
 
-    _action = [format [QGVAR(setExternalIntercomChannel_%1), _x], _name, "", _childStatement, {true}, {}, _x] call ace_interact_menu_fnc_createAction;
-    _actions pushBack [_action, [], _target]; // New action, it's children, and the action's target
+    _action = [format [QGVAR(setExternalChannel_%1), _x], _name, "", _childStatement, {true}, {}, _x] call ace_interact_menu_fnc_createAction;
+    _actions pushBack [_action, [], _target];
 } forEach _channels;
 
 _actions;
