@@ -36,7 +36,7 @@
 #define EDSUBCAT(var1) CLASS(DOUBLES(EdSubCat,var1))
 #define QEDSUBCAT(var1) QCLASS(DOUBLES(EdSubCat,var1))
 
-#define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> QUOTE(var1))
+#define ADDON_LOADED(var1) 'var1' call ace_common_fnc_isModLoaded
 
 #ifdef SUBCOMPONENT
     #define EDITOR_PREVIEW(var1) QPATHTOF(SUBCOMPONENT\data\previews\CLASS(var1).jpg)

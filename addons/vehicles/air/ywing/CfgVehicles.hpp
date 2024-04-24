@@ -59,11 +59,6 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
-
-            INTERCOM_START;
-                INTERCOM_DISABLED;
-                INTERCOM_CREW;
-            INTERCOM_END;
         };
 
         class Turrets: Turrets {

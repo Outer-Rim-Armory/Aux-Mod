@@ -29,6 +29,7 @@ class CfgVehicles {
         };
     };
     class 3AS_AAT: 3AS_CIS_AAT_F {
+        class ACE_SelfActions;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 class Turrets: Turrets {
@@ -115,6 +116,9 @@ class CfgVehicles {
             };
         };
 
+        class ACE_SelfActions: ACE_SelfActions {
+        };
+
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 weapons[] = {"3AS_AATCannon", "SmokeLauncher"};
@@ -173,6 +177,7 @@ class CfgVehicles {
     };
 
     class ls_ground_aat_base: Tank_F {
+        class ACE_SelfActions;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 class Turrets: Turrets {
@@ -203,6 +208,9 @@ class CfgVehicles {
 
         textureList[] = {};
         class TextureSources {};
+
+        class ACE_SelfActions: ACE_SelfActions {
+        };
 
         class Turrets: Turrets {
             class MainTurret: MainTurret {
