@@ -46,6 +46,7 @@ class CfgVehicles {
         GVAR(fuel) = JETPACK_FUEL_DEFAULT;
         GVAR(speed) = JETPACK_SPEED_DEFAULT;     // Jetpack speed, effects how fast you move in the air
         GVAR(strength) = JETPACK_STRENGTH_DEFAULT; // Jetpack strength, effects fast the player rises
+        GVAR(canHover) = TRUE;
 
         // Effects
         GVAR(effectPoints)[] = {"effect_left", "effect_right"}; // Points to spawn effects, these come from the JLTS model
@@ -61,6 +62,7 @@ class CfgVehicles {
 
     class CLASS(Jetpack_CDV21): CLASS(Jetpack_JT12) {
         GVAR(strength) = 0;
+        GVAR(canHover) = FALSE;
     };
 
     class CLASS(Jetpack_CDV19): CLASS(Jetpack_JT12) {
@@ -75,6 +77,7 @@ class CfgVehicles {
         GVAR(fuel) = JETPACK_FUEL_DEFAULT;
         GVAR(speed) = JETPACK_SPEED_DEFAULT;
         GVAR(strength) = JETPACK_STRENGTH_DEFAULT;
+        GVAR(canHover) = TRUE;
 
         GVAR(effectPoints)[] = {"effect_left", "effect_right"};
         GVAR(effects)[] = {
