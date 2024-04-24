@@ -1,6 +1,6 @@
 #define INTERCOM_START class TFAR_IntercomChannel { \
     displayName = "Intercom Channel"; \
-    condition = QUOTE(ADDON_LOADED(TFAR_core)); \
+    condition = "true"; \
     statement = ""
 
 #define INTERCOM_DISABLED class TFAR_IntercomChannel_disabled { \
