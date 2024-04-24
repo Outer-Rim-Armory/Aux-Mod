@@ -340,6 +340,49 @@ class CfgGroups {
                         vehicle = QCLASS(CIS_Unit_Droid_B1);
                     };
                 };
+
+                class CommandSquad: RifleSquad {
+                    name = "Command Squad";
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Commander);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Security);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Security);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Security);
+                    };
+                    class Object4: Object4 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Security);
+                    };
+                    class Object5: Object5 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
+                    };
+                    class Object6: Object6 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
+                    };
+                };
+
+                class CommandTeam: RifleTeam {
+                    name = "Command Team";
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Commander);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Security);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Security);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B1_Security);
+                    };
+                };
             };
 
             class VehicleFiller {
