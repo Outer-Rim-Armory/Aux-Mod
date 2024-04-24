@@ -47,6 +47,7 @@
     QGVAR(key_toggleHover),
     ["Toggle Hover", "Puts the user into a hover state. Only activates if not touching the ground."],
     {
+        if (getNumber (configOf backpackContainer ace_player >> QGVAR(canHover)) <= FALSE) exitWith {};
         if !(isTouchingGround ace_player) then {
             _hoverState = !(ace_player getVariable ["BNA_KC_Jet_hover", false]);
             ace_player setVariable ["BNA_KC_Jet_hover", _hoverState];
