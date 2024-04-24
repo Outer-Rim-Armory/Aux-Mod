@@ -55,7 +55,12 @@ INFO_2("Reviving unit %1 (%2)",_unit,typeOf _unit);
             } else {
                 INFO("Forcing new B2 to walk, no WBK script");
                 deleteVehicle _oldUnit;
-                [_newUnit, "forceWalk", QUOTE(ADDON), true] call ace_common_fnc_statusEffect_set;
+                // Try to make a smooth movement from prone to B2 animation
+                _newUnit setUnitPos "DOWN";
+                [_newUnit, "AmovPpneMstpSrasWrflDnon", 2] call ace_common_fnc_doAnimation;
+                [{_this setUnitPos "MIDDLE";}, _newUnit, 1] call CBA_fnc_waitAndExecute;
+                [{_this setUnitPos "UP";}, _newUnit, 1.5] call CBA_fnc_waitAndExecute;
+                [{_this call FUNC(initB2);}, _newUnit, 3] call CBA_fnc_waitAndExecute;
             };
         };
         default {

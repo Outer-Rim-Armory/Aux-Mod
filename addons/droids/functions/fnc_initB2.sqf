@@ -19,14 +19,16 @@
 params [
     ["_unit", objNull, [objNull]]
 ];
-private ["_animation"];
+private ["_health", "_animation"];
 TRACE_1("fnc_initB2",_unit);
 
 _animation = animationState _unit;
 
 if (isNull _unit or {!alive _unit} or {!local _unit}) exitWith {};
 
-_unit setVariable ["Droid_Health", GVAR(healthB2), true];
+_health = _unit getVariable ["Droid_Health", GVAR(healthB2)];
+_unit setVariable ["Droid_Health", _health, true];
+
 [_unit, "forceWalk", QUOTE(ADDON), true] call ace_common_fnc_statusEffect_set;
 _unit execVM "\WebKnightsRobotics\AI\AI_WBK_B2_BattleDroid.sqf";
 
