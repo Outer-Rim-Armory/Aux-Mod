@@ -12,13 +12,6 @@ class CfgSoundShaders {
         };
     };
 
-    class CLASS(SoundShader_Cannon_Galaxy_Shot): CLASS(SoundShader_VehicleWeapon_Base) {
-        rangeCurve = "CannonCloseShotCurve";
-        samples[] = {
-            {"\3AS\3as_static\XX10\data\SFX\GatCannon.wss", 1}
-        };
-    };
-
     class CLASS(SoundShader_Cannon_Blitz_Shot): CLASS(SoundShader_VehicleWeapon_Base) {
         rangeCurve = "CannonCloseShotCurve";
         samples[] = {

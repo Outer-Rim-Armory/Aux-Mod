@@ -254,51 +254,6 @@ class CfgWeapons {
         };
     };
 
-    class gatling_20mm_VTOL_01;
-    class CLASS(Gatling_Galaxy): gatling_20mm_VTOL_01 {
-        displayName = "Blaster Cannon";
-        magazines[] = {
-            QCLASS(Mag_4000Rnd_Gatling_Galaxy)
-        };
-    };
-    class cannon_105mm;
-    class cannon_105mm_VTOL_01: cannon_105mm {
-        class player;
-    };
-    class CLASS(Cannon_Galaxy): cannon_105mm_VTOL_01 {
-        displayName = "Heavy Energy Cannon";
-        magazines[] = {
-            QCLASS(Mag_100Rnd_Cannon_Galaxy)
-        };
-        class player: player {
-            sounds[] = {"StandardSound"};
-            class StandardSound {
-                soundSetShot[] = {QCLASS(SoundSet_Cannon_Galaxy_Shot)};
-            };
-        };
-
-    };
-    class autocannon_40mm_CTWS;
-    class autocannon_40mm_VTOL_01: autocannon_40mm_CTWS {
-        class HE;
-        class AP;
-    };
-    class CLASS(Autocannon_Galaxy): autocannon_40mm_VTOL_01 {
-        displayName = "Autocannon";
-        class HE: HE {
-            displayName = "Autocannon";
-            magazines[] = {
-                QCLASS(Mag_240Rnd_Autocannon_Galaxy_GPR)
-            };
-        };
-        class AP: AP {
-            displayName = "Autocannon";
-            magazines[] = {
-                QCLASS(Mag_160Rnd_Autocannon_Galaxy_APFSDS)
-            };
-        };
-    };
-
     class 3AS_Mass_Driver_Cannon;
     class CLASS(Cannon_ATTE_MassDriver): 3AS_Mass_Driver_Cannon {
         displayName = "Mass Driver Cannon";
