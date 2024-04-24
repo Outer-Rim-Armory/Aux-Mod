@@ -12,7 +12,7 @@
  * True if channel can be switched, otherwise false <BOOL>
  *
  * Examples:
- * [_vehicle, ace_player, 1] call BNA_KC_vehicles_fnc_intercom_canSwitchChannel;
+ * [_vehicle, ace_player, 1] call BNA_KC_intercom_fnc_canSwitchChannel;
  *
  * Public: No
  */

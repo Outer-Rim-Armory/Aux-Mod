@@ -12,24 +12,24 @@
  * None
  *
  * Examples:
- * [vehicle player, "driver", player] call BNA_KC_vehicles_fnc_setIntercomChannel;
+ * [vehicle player, "driver", player] call BNA_KC_intercom_fnc_autoSetChannell;
  *
  * Public: No
  */
 
 params ["_vehicle", "_role", "_unit"];
 private [];
-TRACE_3("fnc_setIntercomChannel",_vehicle,_role,_unit);
+TRACE_3("fnc_autoSetChannel",_vehicle,_role,_unit);
 
-if !(isMultiplayer and _unit call ace_common_fnc_isPlayer) exitWith {};
+if !([_unit, true] call ace_common_fnc_isPlayer) exitWith {};
 
 switch (_role) do {
     case "driver";
     case "gunner": {
-        _vehicle setVariable [format ["TFAR_IntercomSlot_%1", (netID _unit)], 1, true];
+        [_vehicle, _unit, 1] call FUNC(setChannel);
     };
     default {
-        _vehicle setVariable [format ["TFAR_IntercomSlot_%1", (netID _unit)], 0, true];
+        [_vehicle, _unit] call FUNC(setChannel);
     };
 };
 nil;

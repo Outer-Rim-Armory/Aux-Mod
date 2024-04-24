@@ -10,7 +10,7 @@
  * Array of ACE actions <ARRAY>
  *
  * Examples:
- * ace_player call BNA_KC_vehicles_fnc_intercom_switchChannelExternalInsertChildren;
+ * ace_player call BNA_KC_intercom_fnc_external_insertChildren;
  *
  * Public: No
  */

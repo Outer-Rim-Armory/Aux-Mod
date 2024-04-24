@@ -16,14 +16,6 @@ class Extended_PostInit_EventHandlers {
     };
 };
 
-class Extended_GetIn_EventHandlers {
-    class All {
-        class GVAR(setIntercomChannel) {
-            getIn = QUOTE(_this call FUNC(setIntercomChannel));
-        };
-    };
-};
-
 class Extended_Killed_EventHandlers {
     class All {
         class GVAR(autoEject) {
