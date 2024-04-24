@@ -8,8 +8,6 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\Keeli\Backpack_co.paa),
             QPATHTOF(data\backpacks\Keeli\Backpack_co.paa)
         };
-
-        GVAR(isCustom) = TRUE;
     };
 
     class CLASS(Backpack_heavy_Base);
@@ -24,8 +22,6 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\Dexus\Pouches_co.paa),
             QPATHTOF(data\backpacks\Dexus\Tube_co.paa),
         };
-
-        GVAR(isCustom) = TRUE;
     };
 
     class CLASS(cloneBackpack_heavy_Rev): CLASS(Backpack_heavy_Base) {
@@ -39,7 +35,6 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\Rev\Pouches_co.paa),
             QPATHTOF(data\backpacks\Rev\Tube_co.paa),
         };
-        GVAR(isCustom) = TRUE;
     };
 
     class CLASS(Backpack_Radio_Base);
@@ -54,23 +49,19 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\Jaws\Screen_co.paa),
             "\ls_equipment_bluefor\backpack\gar\backpack\data\pouches_co.paa"
         };
-
-        GVAR(isCustom) = TRUE;
     };
 
     class CLASS(Backpack_Medic_Radio_Base);
     class CLASS(cloneBackpack_medicRadio_Hazard): CLASS(Backpack_Medic_Radio_Base) {
         displayName = "[KC] INF Medic Radio Backpack ('Hazard')";
 
-        model = "\ls_equipment_bluefor\backpack\gar\backpack\ls_gar_radio_backpack.p3d";
-        hiddenselections[] = {"backpack", "radio", "screen"};
-        hiddenselectionstextures[] = {
+        hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\Hazard\Backpack_co.paa),
-            "\ls_equipment_bluefor\backpack\gar\backpack\data\radio_co.paa",
-            QPATHTOF(data\backpacks\Hazard\Screen_co.paa)
+            "",
+            "",
+            QPATHTOF(data\backpacks\Hazard\Backpack_co.paa),
+            QPATHTOF(data\backpacks\Hazard\Backpack_co.paa)
         };
-
-        GVAR(isCustom) = TRUE;
     };
 
     #include "configs\GroundHolders.hpp"

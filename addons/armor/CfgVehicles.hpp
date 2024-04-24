@@ -251,8 +251,8 @@ class CfgVehicles {
             "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_medic_co.paa",
             "",
             "",
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
         };
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_medic_ca.paa";
     };
@@ -264,8 +264,8 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\standard\Medic_camo1_co.paa),
             "",
             "",
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
         };
         picture = QPATHTOF(data\ui\Backpack_Medic_Radio_ca.paa);
     };
