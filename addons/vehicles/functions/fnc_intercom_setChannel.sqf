@@ -12,7 +12,7 @@
  * None
  *
  * Examples:
- * [_vehicle, ace_player] call BNA_KC_vehicles_fnc_intercom_setChannel;
+ * [_vehicle, ace_player, 1] call BNA_KC_vehicles_fnc_intercom_setChannel;
  *
  * Public: No
  */
