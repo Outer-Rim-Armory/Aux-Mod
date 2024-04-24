@@ -12,6 +12,7 @@ class CLASS(Helmet_Phase2_Pilot_Base): CLASS(Helmet_Base) {
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_pilot_P2_helmet_ca.paa";
 
     HEARING_PROTECTION_CREW;
+    TFAR_externalIntercomWirelessCapable = TRUE;
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1", "visor"};
