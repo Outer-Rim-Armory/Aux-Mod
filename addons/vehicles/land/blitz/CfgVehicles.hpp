@@ -154,7 +154,6 @@ class CfgVehicles {
 
             INTERCOM_START;
                 INTERCOM_DISABLED;
-                INTERCOM_CARGO;
                 INTERCOM_CREW;
             INTERCOM_END;
         };
