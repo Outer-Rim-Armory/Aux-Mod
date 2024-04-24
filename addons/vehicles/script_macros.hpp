@@ -105,6 +105,21 @@ class GVAR(deleteCrew) { \
     condition = QUOTE([ARR_3(_target,_player,1)] call FUNC(intercom_canSwitchChannel)); \
     statement = QUOTE([ARR_3(_target,_player,1)] call FUNC(intercom_setChannel)); \
 }
+#define INTERCOM_MISC1 class TFAR_IntercomChannel_Misc1 { \
+    displayName = "Misc Channel 1"; \
+    condition = QUOTE([ARR_3(_target,_player,2)] call FUNC(intercom_canSwitchChannel)); \
+    statement = QUOTE([ARR_3(_target,_player,2)] call FUNC(intercom_setChannel)); \
+}
+#define INTERCOM_MISC2 class TFAR_IntercomChannel_Misc2 { \
+    displayName = "Misc Channel 2"; \
+    condition = QUOTE([ARR_3(_target,_player,3)] call FUNC(intercom_canSwitchChannel)); \
+    statement = QUOTE([ARR_3(_target,_player,3)] call FUNC(intercom_setChannel)); \
+}
+#define INTERCOM_MISC3 class TFAR_IntercomChannel_Misc3 { \
+    displayName = "Misc Channel 3"; \
+    condition = QUOTE([ARR_3(_target,_player,4)] call FUNC(intercom_canSwitchChannel)); \
+    statement = QUOTE([ARR_3(_target,_player,4)] call FUNC(intercom_setChannel)); \
+}
 
 #define INTERCOM_END }
 

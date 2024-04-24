@@ -176,6 +176,15 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
+
+            INTERCOM_START;
+                INTERCOM_DISABLED;
+                INTERCOM_CARGO;
+                INTERCOM_CREW;
+                INTERCOM_MISC1;
+                INTERCOM_MISC2;
+                INTERCOM_MISC3;
+            INTERCOM_END;
         };
 
         INVENTORY_VEHICLE_BASE(3);

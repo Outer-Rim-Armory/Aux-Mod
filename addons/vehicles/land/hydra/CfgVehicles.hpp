@@ -4,6 +4,7 @@ class CfgVehicles {
         class Turrets;
     };
     class O_APC_Wheeled_02_rcws_v2_F: APC_Wheeled_02_base_v2_F {
+        class ACE_SelfActions;
         class Turrets: Turrets {
             class MainTurret;
         };
@@ -97,6 +98,17 @@ class CfgVehicles {
                 condition = QUOTE(ace_player isEqualTo currentPilot this and this call EFUNC(weapons,canUseVehicleEMP););
                 statement = QUOTE(this call EFUNC(weapons,useVehicleEMP););
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions {
+            INTERCOM_START;
+                INTERCOM_DISABLED;
+                INTERCOM_CARGO;
+                INTERCOM_CREW;
+                INTERCOM_MISC1;
+                INTERCOM_MISC2;
+                INTERCOM_MISC3;
+            INTERCOM_END;
         };
 
         class Turrets: Turrets {

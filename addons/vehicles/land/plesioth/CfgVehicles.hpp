@@ -4,6 +4,7 @@ class CfgVehicles {
         class Turrets;
     };
     class OPTRE_M808B_base: B_MBT_01_cannon_F {
+        class ACE_SelfActions;
         class Turrets: Turrets {
             class MainTurret;
             class CargoTurret1;
@@ -70,6 +71,17 @@ class CfgVehicles {
                     "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\mine_roller_co.paa"
                 };
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions {
+            INTERCOM_START;
+                INTERCOM_DISABLED;
+                INTERCOM_CARGO;
+                INTERCOM_CREW;
+                INTERCOM_MISC1;
+                INTERCOM_MISC2;
+                INTERCOM_MISC3;
+            INTERCOM_END;
         };
 
         class Turrets: Turrets {
