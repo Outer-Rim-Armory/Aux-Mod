@@ -5,6 +5,13 @@ class CfgVehicles {
             class ace_csw_deploy {
                 modifierFunction = QUOTE(call FUNC(cswDeployModifier));
             };
+
+            class GVAR(switchChannelExternalIntercom) {
+                displayName = "Switch External Intercom Channel";
+                condition = QUOTE(!isNull (_player getVariable [ARR_2('TFAR_externalIntercomVehicle',objNull)]));
+                statement = "";
+                insertChildren = QUOTE(_player call FUNC(intercom_switchChannelExternalInsertChildren));
+            };
         };
 
         class UserActions {
