@@ -41,7 +41,7 @@ class CfgGroups {
 
                 class RifleSquad: CLASS(SquadBase) {
                     faction = QFACTION(CIS);
-                    name = "Rifle Squad";
+                    name = "B1 Rifle Squad";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     side = OPFOR;
 
@@ -70,7 +70,7 @@ class CfgGroups {
 
                 class RifleTeam: CLASS(TeamBase) {
                     faction = QFACTION(CIS);
-                    name = "Rifle Team";
+                    name = "B1 Rifle Team";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     side = OPFOR;
 
@@ -89,7 +89,7 @@ class CfgGroups {
                 };
 
                 class AntiArmorSquad: RifleSquad {
-                    name = "Anti-Armor Squad";
+                    name = "B1 Anti-Armor Squad";
 
                     class Object0: Object0 {};
                     class Object1: Object1 {};
@@ -104,11 +104,8 @@ class CfgGroups {
                     class Object6: Object6 {};
                 };
 
-                class AntiArmorTeam: CLASS(TeamBase) {
-                    faction = QFACTION(CIS);
-                    name = "Anti-Armor Team";
-                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
-                    side = OPFOR;
+                class AntiArmorTeam: RifleTeam {
+                    name = "B1 Anti-Armor Team";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1);
@@ -125,7 +122,7 @@ class CfgGroups {
                 };
 
                 class AntiAirSquad: RifleSquad {
-                    name = "Anti-Air Squad";
+                    name = "B1 Anti-Air Squad";
 
                     class Object0: Object0 {};
                     class Object1: Object1 {};
@@ -140,11 +137,8 @@ class CfgGroups {
                     class Object6: Object6 {};
                 };
 
-                class AntiAirTeam: CLASS(TeamBase) {
-                    faction = QFACTION(CIS);
-                    name = "Anti-Air Team";
-                    icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
-                    side = OPFOR;
+                class AntiAirTeam: RifleTeam {
+                    name = "B1 Anti-Air Team";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1);
@@ -161,7 +155,7 @@ class CfgGroups {
                 };
 
                 class AssaultSquad: RifleSquad {
-                    name = "Assault Squad";
+                    name = "B1 Assault Squad";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1);
@@ -187,7 +181,7 @@ class CfgGroups {
                 };
 
                 class AssaultTeam: RifleTeam {
-                    name = "Assault Team";
+                    name = "B1 Assault Team";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1);
@@ -204,7 +198,7 @@ class CfgGroups {
                 };
 
                 class LightAssaultSquad: RifleSquad {
-                    name = "Assault Squad (Light)";
+                    name = "B1 Assault Squad (Light)";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1);
@@ -230,7 +224,7 @@ class CfgGroups {
                 };
 
                 class LightAssaultTeam: RifleTeam {
-                    name = "Assault Team (Light)";
+                    name = "B1 Assault Team (Light)";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_CQC);
@@ -247,7 +241,7 @@ class CfgGroups {
                 };
 
                 class DefenseSquad: RifleSquad {
-                    name = "Defense Squad";
+                    name = "B1 Defense Squad";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_CQC);
@@ -273,7 +267,7 @@ class CfgGroups {
                 };
 
                 class LightDefenseSquad: RifleSquad {
-                    name = "Defense Squad (Light)";
+                    name = "B1 Defense Squad (Light)";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1);
@@ -299,7 +293,7 @@ class CfgGroups {
                 };
 
                 class WeaponsSquad: RifleSquad {
-                    name = "Weapons Squad";
+                    name = "B1 Weapons Squad";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Heavy);
@@ -325,7 +319,7 @@ class CfgGroups {
                 };
 
                 class WeaponsTeam: RifleTeam {
-                    name = "Weapons Team";
+                    name = "B1 Weapons Team";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_CQC);
@@ -342,7 +336,7 @@ class CfgGroups {
                 };
 
                 class CommandSquad: RifleSquad {
-                    name = "Command Squad";
+                    name = "B1 Command Squad";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Commander);
@@ -368,7 +362,7 @@ class CfgGroups {
                 };
 
                 class CommandTeam: RifleTeam {
-                    name = "Command Team";
+                    name = "B1 Command Team";
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Commander);
