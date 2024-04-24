@@ -15,7 +15,9 @@ class XtdGearModels {
                     "Commander",
                     "Crew",
                     "Pilot",
-                    "Rocket"
+                    "Engineer",
+                    "Rocket",
+                    "Prototype"
                 };
 
                 class Standard { label = "Standard"; };
@@ -24,7 +26,9 @@ class XtdGearModels {
                 class Commander { label = "Commander"; };
                 class Crew { label = "Crew"; };
                 class Pilot { label = "Pilot"; };
+                class Engineer { label = "Engineer"; };
                 class Rocket { label = "Rocket"; };
+                class Prototype { label = "Prototype"; };
             };
 
             class variant {
