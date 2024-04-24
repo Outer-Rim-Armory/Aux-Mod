@@ -19,7 +19,7 @@
  */
 
 params ["_vehicle", "_player", ["_channel", -2]];
-TRACE_3("fnc_intercom_setChannel",_vehicle,_player,_channel);
+TRACE_3("fnc_setChannel",_vehicle,_player,_channel);
 
 if (_channel == -2) then {
     _channel = _vehicle getVariable ["TFAR_defaultIntercomSlot", TFAR_defaultIntercomSlot];

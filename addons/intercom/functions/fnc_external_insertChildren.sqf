@@ -17,12 +17,12 @@
 
 params ["_player"];
 private ["_vehicle", "_channels", "_actions"];
-TRACE_1("fnc_intercom_switchChannelExternalInsertChildren",_player);
+TRACE_1("fnc_external_insertChildren",_player);
 
 _vehicle = _player getVariable ["TFAR_externalIntercomVehicle", objNull];
 
 _channels = "true" configClasses (configOf _vehicle >> "ACE_SelfActions" >> "TFAR_IntercomChannel");
-_channels = _channels apply {[getText (_x >> "displayName"), getNumber (_x >> QGVAR(radioCode))]};
+_channels = _channels apply {[getText (_x >> "displayName"), getNumber (_x >> QGVAR(channelId))]};
 
 _actions = [];
 {

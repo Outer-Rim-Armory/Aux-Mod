@@ -19,7 +19,7 @@
 
 params ["_vehicle", "_player", "_channel"];
 private ["_intercom"];
-TRACE_3("fnc_intercom_canSwitchChannel",_vehicle,_player,_channel);
+TRACE_3("fnc_canSwitchChannel",_vehicle,_player,_channel);
 
 _intercom = _vehicle getVariable [format ["TFAR_IntercomSlot_%1", netID ace_player], -2];
 

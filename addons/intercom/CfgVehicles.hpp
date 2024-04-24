@@ -11,6 +11,94 @@ class CfgVehicles {
         };
     };
 
+    // Add channel id to base actions
+    class AllVehicles;
+    class Air: AllVehicles {
+        class ACE_SelfActions;
+    };
+    class Helicopter: Air {
+        class ACE_SelfActions: ACE_SelfActions {
+            class TFAR_IntercomChannel {
+                class TFAR_IntercomChannel_disabled {
+                    GVAR(channelId) = -1;
+                };
+                class TFAR_IntercomChannel_1 {
+                    GVAR(channelId) = 0;
+                };
+                class TFAR_IntercomChannel_2 {
+                    GVAR(channelId) = 1;
+                };
+                class TFAR_IntercomChannel_Misc_1 {
+                    GVAR(channelId) = 2;
+                };
+                class TFAR_IntercomChannel_Misc_2 {
+                    GVAR(channelId) = 3;
+                };
+                class TFAR_IntercomChannel_Misc_3 {
+                    GVAR(channelId) = 4;
+                };
+            };
+        };
+    };
+
+    class Plane: Air {
+        class ACE_SelfActions: ACE_SelfActions {
+            class TFAR_IntercomChannel {
+                class TFAR_IntercomChannel_disabled {
+                    GVAR(channelId) = -1;
+                };
+                class TFAR_IntercomChannel_1 {
+                    GVAR(channelId) = 0;
+                };
+                class TFAR_IntercomChannel_2 {
+                    GVAR(channelId) = 1;
+                };
+                class TFAR_IntercomChannel_Misc_1 {
+                    GVAR(channelId) = 2;
+                };
+                class TFAR_IntercomChannel_Misc_2 {
+                    GVAR(channelId) = 3;
+                };
+                class TFAR_IntercomChannel_Misc_3 {
+                    GVAR(channelId) = 4;
+                };
+            };
+        };
+    };
+
+    class LandVehicle;
+    class Car: LandVehicle {
+        class ACE_SelfActions;
+    };
+    class Car_F: Car {};
+    class Wheeled_APC_F: Car_F {
+        class ACE_SelfActions: ACE_SelfActions {
+            class TFAR_IntercomChannel {
+                class TFAR_IntercomChannel_disabled {
+                    GVAR(channelId) = -1;
+                };
+                class TFAR_IntercomChannel_1 {
+                    GVAR(channelId) = 0;
+                };
+                class TFAR_IntercomChannel_2 {
+                    GVAR(channelId) = 1;
+                };
+                class TFAR_IntercomChannel_Misc_1 {
+                    GVAR(channelId) = 2;
+                };
+                class TFAR_IntercomChannel_Misc_2 {
+                    GVAR(channelId) = 3;
+                };
+                class TFAR_IntercomChannel_Misc_3 {
+                    GVAR(channelId) = 4;
+                };
+            };
+        };
+    };
+
+
+    // Custom KC actions for specific vehicles
+
     class Plane_Fighter_03_dynamicLoadout_base_F;
     class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F {
         class ACE_SelfActions;
@@ -235,8 +323,7 @@ class CfgVehicles {
         };
     };
 
-    class Wheeled_Apc_F;
-    class 3AS_Jug_base_F: Wheeled_Apc_F {
+    class 3AS_Jug_base_F: Wheeled_APC_F {
         // class HitPoints: HitPoints {
         //     class HitBody;
         //     class HitHull;
