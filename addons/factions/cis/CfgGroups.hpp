@@ -383,14 +383,57 @@ class CfgGroups {
                         vehicle = QCLASS(CIS_Unit_Droid_B1_Security);
                     };
                 };
+
+                class B2Squad: RifleSquad {
+                    name = "B2 Squad";
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object4: Object4 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object5: Object5 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object6: Object6 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                };
+
+                class B2Team: RifleTeam {
+                    name = "B2 Team";
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                };
             };
 
             class VehicleFiller {
                 name = "Vehicle Fillers";
 
-                class HMP: CLASS(SectionBase) {
+                class HMP_B1: CLASS(SectionBase) {
                     faction = QFACTION(CIS);
-                    name = "HMP Section";
+                    name = "HMP B1 Section";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     side = 0;
 
@@ -431,6 +474,47 @@ class CfgGroups {
                         vehicle = QCLASS(CIS_Unit_Droid_B1);
                     };
                     delete Object12;
+                };
+
+                class HMP_B2: HMP_B1 {
+                    name = "HMP B2 Section";
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object4: Object4 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object5: Object5 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object6: Object6 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object7: Object7 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object8: Object8 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object9: Object9 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object10: Object10 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
+                    class Object11: Object11 {
+                        vehicle = QCLASS(CIS_Unit_Droid_B2);
+                    };
                 };
             };
         };
