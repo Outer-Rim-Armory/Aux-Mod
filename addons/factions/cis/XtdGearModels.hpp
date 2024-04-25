@@ -3,11 +3,12 @@ class XtdGearModels {
         class CLASS(CIS_Uniforms_B1) {
             label = "B1 Battle Droid";
             author = AUTHOR;
-            options[] = {"camo", "variant"};
+            options[] = {"type", "variant"};
 
-            class camo {
-                label = "Role";
+            class type {
+                label = "Type";
                 changeInGame = FALSE;
+                alwaysSelectable = TRUE;
                 values[] = {
                     "Standard",
                     "Marine",
@@ -58,10 +59,10 @@ class XtdGearModels {
         class CLASS(CIS_Uniforms_B2) {
             label = "B2 Super Battle Droid";
             author = AUTHOR;
-            options[] = {"camo"};
+            options[] = {"type"};
 
-            class camo {
-                label = "Role";
+            class type {
+                label = "Type";
                 changeInGame = FALSE;
                 values[] = {
                     "Standard",
@@ -76,10 +77,10 @@ class XtdGearModels {
         class CLASS(CIS_Uniforms_BX) {
             label = "BX Commando Droid";
             author = AUTHOR;
-            options[] = {"role"};
+            options[] = {"type"};
 
-            class role {
-                label = "Role";
+            class type {
+                label = "Type";
                 changeInGame = FALSE;
                 values[] = {
                     "Standard",
@@ -102,19 +103,22 @@ class XtdGearModels {
         class CLASS(CIS_Backpacks_B1) {
             label = "B1 Battle Droid";
             author = AUTHOR;
-            options[] = {"camo", "variant"};
+            options[] = {"type", "variant"};
 
-            class camo {
+            class type {
                 label = "Type";
                 changeInGame = FALSE;
+                alwaysSelectable = TRUE;
                 values[] = {
                     "Standard",
+                    "Engineer",
                     "Saboteur",
                     "Prototype",
                     "Antenna"
                 };
 
                 class Standard { label = "Standard"; };
+                class Engineer { label = "Engineer"; };
                 class Saboteur { label = "Saboteur"; };
                 class Prototype { label = "Prototype"; };
                 class Antenna { label = "Antenna"; };
@@ -141,6 +145,23 @@ class XtdGearModels {
                     label = "Training";
                     image = "#(rgb,8,8,3)color(0.561,0.561,0.561,1)";
                 };
+            };
+        };
+
+        class CLASS(CIS_Jetpacks): CLASS(CIS_Backpacks_B1) {
+            label = "B1 Jetpacks";
+            options[] = {"type"};
+
+            class type {
+                label = "Type";
+                changeInGame = FALSE;
+                values[] = {
+                    "Standard",
+                    "Rocket"
+                };
+
+                class Standard { label = "Standard"; };
+                class Rocket { label = "Rocket"; };
             };
         };
     };
