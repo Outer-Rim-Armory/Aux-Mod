@@ -55,4 +55,19 @@ class CfgMagazines {
         ammo = QCLASS(Grenade_B2Blaster);
         count = 3;
     };
+
+    class CLASS(Mag_150rnd_B2Blaster_flamer): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] Wrist Flamethrower Fuel Tank";
+        descriptionShort = "Flamethrower Fuel Tank<br/>Burn Time: 2.5 minutes<br/>Used In: Wrist Mounted Flamethrower";
+
+        initSpeed = 50;
+        mass = 130;
+
+        model = "\MRC\JLTS\contraband\Credits\icecream.p3d";
+        picture = "\MRC\JLTS\contraband\Credits\data\ui\icecream_ui_ca.paa";
+
+        ammo = QCLASS(Bullet_flamethrower);
+        count = 150;
+    };
 };

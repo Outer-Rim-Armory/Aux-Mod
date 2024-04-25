@@ -7,21 +7,15 @@ class CfgPatches {
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QUOTE(ADDON),
-            QGVAR(b2Blaster),
-            "WBK_PhoenixTreal_FlamethrowerMOD",
-            "M2",
-            "JLTS_C_Credits"
+            QEGVAR(weapons,load_order),
+            "WBK_PhoenixTreal_FlamethrowerMOD"
         };
         units[] = {};
-        weapons[] = {
-            QCLASS(B2Blaster_flamer)
-        };
+        weapons[] = {};
         VERSION_CONFIG;
 
         skipWhenMissingDependencies = TRUE;
     };
 };
 
-#include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
