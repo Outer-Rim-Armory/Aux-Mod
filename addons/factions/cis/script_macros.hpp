@@ -28,6 +28,6 @@
         uniformClass = QCLASS(DOUBLES(CIS_Unit_Droid_BX,var1)); \
     }; \
     class XtdGearInfo: XtdGearInfo { \
-        role = QUOTE(var1); \
+        type = QUOTE(var1); \
     }; \
 }

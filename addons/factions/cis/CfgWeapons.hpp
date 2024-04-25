@@ -113,7 +113,7 @@ class CfgWeapons {
 
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_BX);
-            role = "Standard";
+            type = "Standard";
         };
     };
 

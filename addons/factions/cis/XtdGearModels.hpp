@@ -77,10 +77,10 @@ class XtdGearModels {
         class CLASS(CIS_Uniforms_BX) {
             label = "BX Commando Droid";
             author = AUTHOR;
-            options[] = {"role"};
+            options[] = {"type"};
 
-            class role {
-                label = "Role";
+            class type {
+                label = "Type";
                 changeInGame = FALSE;
                 values[] = {
                     "Standard",
