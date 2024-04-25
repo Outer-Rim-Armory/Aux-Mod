@@ -17,6 +17,8 @@ class CfgWeapons {
         magazines[] = {QCLASS(Mag_150Rnd_X42)};
         magazineWell[] = {};
 
+        modes[] = {"FullAuto"};
+
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
     };
