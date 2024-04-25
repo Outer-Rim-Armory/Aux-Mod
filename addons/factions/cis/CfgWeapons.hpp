@@ -47,6 +47,18 @@ class CfgWeapons {
     B1_UNIFORM(Rocket);
     B1_UNIFORM(Prototype);
 
+    class CLASS(CIS_Uniform_Droid_B1_PrototypeCommander): CLASS(CIS_Uniform_Droid_B1) {
+        displayName = "[CIS] B1 Prototype Commander Droid";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(CIS_Unit_Droid_B1_PrototypeCommander);
+        };
+
+        class XtdGearInfo: XtdGearInfo {
+            type = "PrototypeCommander";
+        };
+    };
+
     class CLASS(CIS_Uniform_Droid_B1_Geonosis): CLASS(CIS_Uniform_Droid_B1) {
         displayName = "[CIS] B1 Battle Droid (Geonosis)";
 

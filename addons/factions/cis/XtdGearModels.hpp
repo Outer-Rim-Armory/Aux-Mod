@@ -114,6 +114,7 @@ class XtdGearModels {
                     "Engineer",
                     "Saboteur",
                     "Prototype",
+                    "PrototypeCommander",
                     "Antenna"
                 };
 
@@ -121,6 +122,7 @@ class XtdGearModels {
                 class Engineer { label = "Engineer"; };
                 class Saboteur { label = "Saboteur"; };
                 class Prototype { label = "Prototype"; };
+                class PrototypeCommander { label = "Prototype Commander"; };
                 class Antenna { label = "Antenna"; };
             };
 
