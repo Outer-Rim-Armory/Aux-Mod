@@ -1,3 +1,5 @@
+#include "\ORA\BNA_KC\addons\core\data\hpp\defineDIKCodes.inc"
+
 [
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     QGVAR(key_activateJetpack),
