@@ -31,6 +31,6 @@ if ((side (group _newPlayer)) isEqualTo sideLogic) exitWith {
     GVAR(suppressedEH) = -1;
 };
 
-GVAR(suppressedEH) = _newPlayer addEventHandler ["Suppressed", {_this call FUNC(handleSuppressed)}];
+GVAR(suppressedEH) = _newPlayer addEventHandler ["Suppressed", LINKFUNC(handleSuppressed)];
 
 nil;
