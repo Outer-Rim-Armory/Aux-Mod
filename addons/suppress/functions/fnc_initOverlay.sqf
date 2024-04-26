@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 /*
  * Author: SzwedzikPL
  * Creates suppress overlay
@@ -8,9 +8,9 @@
 if !(isNull (uiNamespace getVariable [QGVAR(overlay), displayNull])) exitWith {};
 
 waitUntil {
-  sleep 0.1;
-  QGVAR(overlay) cutRsc [QGVAR(overlay), "PLAIN", -1, false];
-  !(isNull (uiNamespace getVariable [QGVAR(overlay), displayNull]))
+    sleep 0.1;
+    QGVAR(overlay) cutRsc [QGVAR(overlay), "PLAIN", -1, false];
+    !(isNull (uiNamespace getVariable [QGVAR(overlay), displayNull]))
 };
 
 private _display = uiNamespace getVariable QGVAR(overlay);
