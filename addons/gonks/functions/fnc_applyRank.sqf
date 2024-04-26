@@ -1,27 +1,33 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Applies a given rank loadout to ace_player
+ * Applies a given rank loadout to ace_player.
  *
  * Arguments:
- * 0: Rank loadout key from BNA_KC_objects_rankLoadouts
+ * 0: Detachment <STRING>
+ * 1: Rank <STRING>
  *
  * Return Value:
  * None
  *
  * Example:
- * "CR" call BNA_KC_objects_fnc_applyRankLoadout;
+ * ["Infantry", "CR"] call BNA_KC_gonks_fnc_applyRankLoadout;
+ *
+ * Public: No
  */
 
-params [
-    ["_rank", "", [""]]
-];
+params ["_detachment", "_rank"];
 private ["_rankLoadouts", "_values"];
-TRACE_1("fnc_applyRankLoadout",_rank);
+TRACE_2("fnc_applyRank",_detachment,_rank);
 
-_rankLoadouts = missionNamespace getVariable [QGVAR(rankLoadouts), [] call FUNC(registerRankLoadouts)];
-_values = _rankLoadouts getOrDefaultCall [_rank, {hint format ["Rank '%1' does not exist.", _rank];}];
-_values params ["_helmet", "_uniform", "_vest", "_nvg"];
+_values = (GVAR(ranks) get _detachment) getOrDefaultCall [_rank, {
+    [format ["Rank '%1' does not exist or does not have a loadout.", _rank], true, 5] call ace_common_fnc_displayText;
+    [];
+}];
+
+if (_values isEqualTo []) exitWith {};
+
+_values params ["", "_helmet", "_uniform", "_vest", "_nvg"];
 
 // Save and then remove all inventory items
 _magazines = magazines ace_player;

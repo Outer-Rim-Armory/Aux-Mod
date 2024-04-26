@@ -30,7 +30,8 @@ workshop = [
     "2018593688", # ZEN ACE Compat
     "2522638637", # ACE Arsenal Extended
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
-    "767380317",  # Blastcore # Only used to test particle effects
+    # "2954535667", # Warmantle Armory # Unused
+    "767380317", # Blastcore # Only used to test particle effects
 ]
 presets = ["main"]
 dlc = []
@@ -44,6 +45,7 @@ workshop = [
     "1572627279", # OPTRE First Contact
     "2915485125", # Burn 'Em
     "2789152015", # WBK Zombies
+    # "2954535667", # Warmantle Armory # Unused
     "2478080991", # Scion Conflict
 ]
 optionals = ["no_burn_screams"]
