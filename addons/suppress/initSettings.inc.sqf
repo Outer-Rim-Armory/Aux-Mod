@@ -1,3 +1,13 @@
+[
+    QGVAR(enabled),
+    "CHECKBOX",
+    ["Enabled", "Enables/disables suppression."],
+    [QUOTE(MOD_NAME), LSTRING(category_displayName)],
+    false,
+    true,
+    {},
+    TRUE
+] call CBA_fnc_addSetting;
 
 [
     QGVAR(overlayOpacity),

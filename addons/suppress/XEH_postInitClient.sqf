@@ -1,5 +1,7 @@
 #include "script_component.hpp"
 
+if !(GVAR(enabled)) exitWith {};
+
 GVAR(suppressedEH) = -1;
 GVAR(interruptingDisplays) = [];
 GVAR(displayInterrupt) = false;

@@ -20,6 +20,8 @@
 params ["_newPlayer", "_oldPlayer"];
 TRACE_2("fnc_handlePlayerChanged",_newPlayer,_oldPlayer);
 
+if !(GVAR(enabled)) exitWith {};
+
 if (!(isNull _oldPlayer) && (GVAR(suppressedEH) isNotEqualTo -1)) then {
     _oldPlayer removeEventHandler ["Suppressed", GVAR(suppressedEH)];
 };
