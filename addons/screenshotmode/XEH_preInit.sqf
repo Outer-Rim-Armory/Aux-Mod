@@ -5,3 +5,5 @@ PREP_RECOMPILE_START;
 PREP_RECOMPILE_END;
 
 #include "initKeybinds.inc.sqf"
+
+ADDON = true;

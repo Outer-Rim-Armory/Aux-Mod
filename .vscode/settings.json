@@ -8,6 +8,7 @@
     "files.insertFinalNewline": false,
 
     "files.associations": {
+        "*.cpp": "cpp",
         "*.hpp": "cpp"
     },
 
