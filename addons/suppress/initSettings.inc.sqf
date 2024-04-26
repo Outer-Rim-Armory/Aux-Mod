@@ -6,7 +6,7 @@
     false,
     true,
     {},
-    TRUE
+    true
 ] call CBA_fnc_addSetting;
 
 [
