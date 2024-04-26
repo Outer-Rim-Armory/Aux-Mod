@@ -12,6 +12,12 @@
 #define QEGVAR_ACE(var1,var2) QUOTE(EGVAR_ACE(var1,var2))
 #define EFUNC_ACE(var1,var2) TRIPLES(DOUBLES(ace,var1),fnc,var2)
 
+#ifdef DEBUG_MODE_FULL
+    #define TRACE_0(MESSAGE) LOG_SYS_FILELINENUMBERS('TRACE',str diag_frameNo + ' ' + (MESSAGE))
+#else
+    #define TRACE_0(MESSAGE) /* disabled */
+#endif
+
 #undef PREP
 #ifdef DISABLE_COMPILE_CACHE
     #define LINKFUNC(x) {_this call FUNC(x)}

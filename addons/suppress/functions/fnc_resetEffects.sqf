@@ -16,8 +16,15 @@
  * Public: No
  */
 
-private _display = uiNamespace getVariable [QGVAR(overlay), displayNull];
+private ["_display", "_overlayCtrl"];
+TRACE_0("fnc_resetEffects");
+
+_display = uiNamespace getVariable [QGVAR(overlay), displayNull];
+
 if (isNull _display) exitWith {};
-private _overlayCtrl = _display displayCtrl IDC_OVERLAY;
+
+_overlayCtrl = _display displayCtrl IDC_OVERLAY;
 _overlayCtrl ctrlSetFade 1;
 _overlayCtrl ctrlCommit 0;
+
+nil;

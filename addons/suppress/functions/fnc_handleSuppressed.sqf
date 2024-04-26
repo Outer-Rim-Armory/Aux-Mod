@@ -16,7 +16,9 @@
  * Public: No
  */
 
-params ["_unit", "_distance", "_shooter", "", "_ammoObject"];
+params ["_unit", "_distance", "_shooter", "", "_projectile"];
+private ["_newSuppress", "_display", "_overlayCtrl", "_curSuppress", "_suppress"];
+TRACE_4("fnc_handleSuppressed",_unit,_distance,_shooter,_projectile);
 
 if (
     // Exit if EH is triggered for remote unit - should not happen
@@ -33,27 +35,30 @@ if (
     {!(isNull _shooter) && {((_unit distance _shooter) < GVAR(shooterMinDistance))}}
 ) exitWith {};
 
-private _newSuppress = linearConversion [GVAR(projectileMaxDistance), 1, _distance, 0, 1, true];
+_newSuppress = linearConversion [GVAR(projectileMaxDistance), 1, _distance, 0, 1, true];
 
 // Exit if shot has no effect
 if (_newSuppress isEqualTo 0) exitWith {};
 
 // Check line of sight
-if (GVAR(checkLOS) && {(lineIntersectsSurfaces [eyePos _unit, getPosASL _ammoObject, _unit, _ammoObject, true, 1]) isNotEqualTo []}) exitWith {};
+if (GVAR(checkLOS) && {
+    (lineIntersectsSurfaces [eyePos _unit, getPosASL _projectile, _unit, _projectile, true, 1]) isNotEqualTo []
+}) exitWith {};
 
-private _display = uiNamespace getVariable [QGVAR(overlay), displayNull];
+_display = uiNamespace getVariable [QGVAR(overlay), displayNull];
 // Exit if no display - should not happen
 if (isNull _display) exitWith {};
 
-private _overlayCtrl = _display displayCtrl IDC_OVERLAY;
-private _curSuppress = 1 - (ctrlFade _overlayCtrl);
+_overlayCtrl = _display displayCtrl IDC_OVERLAY;
+_curSuppress = 1 - (ctrlFade _overlayCtrl);
 
-private _suppress = (_newSuppress + _curSuppress) min 1;
+_suppress = (_newSuppress + _curSuppress) min 1;
 
 _overlayCtrl ctrlSetFade (1 - _suppress);
 _overlayCtrl ctrlCommit 0.07;
-_overlayCtrl spawn {
-    sleep 0.07;
+[{
     _this ctrlSetFade 1;
     _this ctrlCommit GVAR(overlayFadeoutTime);
-};
+}, _overlayCtrl, 0.07] call CBA_fnc_waitAndExecute;
+
+nil;

@@ -17,10 +17,13 @@
  */
 
 params ["_displayClass"];
+TRACE_1("fnc_displayLoad",_displayClass);
 
 GVAR(interruptingDisplays) pushBackUnique _displayClass;
 GVAR(displayInterrupt) = (GVAR(interruptingDisplays) isNotEqualTo []);
 
 if (GVAR(displayInterrupt)) then {
-    0 call FUNC(resetEffects);
+    call FUNC(resetEffects);
 };
+
+nil;
