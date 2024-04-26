@@ -11,6 +11,7 @@ let current = HEMTT.project().version().minor();
 let next = current + 1;
 
 script_version.replace(prefix + current.to_string(), prefix + next.to_string());
+script_version.replace("#define PATCH " + current.to_string(), "#define PATCH 0");
 script_version.replace("#define BUILD " + current.to_string(), "#define BUILD 0");
 
 // Write the modified contents to script_version.hpp
