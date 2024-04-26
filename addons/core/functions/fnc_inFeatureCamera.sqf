@@ -8,7 +8,7 @@
  * None
  *
  * Return Value:
- * Whether the local player is in a feature camera <BOOL>
+ * True if in a movement blocking feature camera, otherwise false <BOOL>
  *
  * Example:
  * call FUNC(inFeatureCamera);
