@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-GVAR(activeJammers) = createHashmap;
 GVAR(jammerHandlerServer) = -1;
 
 ["CBA_settingsInitialized", {

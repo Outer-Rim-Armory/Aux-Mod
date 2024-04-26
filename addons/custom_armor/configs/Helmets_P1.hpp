@@ -74,6 +74,7 @@ class CLASS(Helmet_Phase1_KeeliCrimson_CamoGrey): CLASS(Helmet_Phase1_Keeli_Camo
     };
 };
 
+P1_HELMET_CUSTOM(Kujo);
 P1_HELMET_VISOR_CUSTOM(Lou,Plasma);
 P1_HELMET_CUSTOM(Marge);
 P1_HELMET_CUSTOM(Ox);

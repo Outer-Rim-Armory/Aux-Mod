@@ -399,6 +399,16 @@ class CLASS(CIS_Unit_Droid_B1_Prototype): CLASS(CIS_Unit_Droid_B1) {
     };
 };
 
+class CLASS(CIS_Unit_Droid_B1_PrototypeCommander): CLASS(CIS_Unit_Droid_B1_Prototype) {
+    displayName = "B1 Prototype Commander Droid";
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_PrototypeCommander);
+    icon = "iconManOfficer";
+
+    uniformClass = QCLASS(CIS_Uniform_Droid_B1_PrototypeCommander);
+    hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_prototype_commander_co.paa"};
+    backpack = QCLASS(CIS_Backpack_Droid_B1_Prototype);
+};
+
 class CLASS(CIS_Unit_Droid_B1_Geonosis): CLASS(CIS_Unit_Droid_B1) {
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
     editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);

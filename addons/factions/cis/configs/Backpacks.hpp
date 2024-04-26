@@ -18,7 +18,7 @@ class CLASS(CIS_Backpack_Droid_B1): CLASS(backpack_base) {
 
     class XtdGearInfo {
         model = QCLASS(CIS_Backpacks_B1);
-        camo = "Standard";
+        type = "Standard";
         variant = "Standard";
     };
 };
@@ -49,7 +49,7 @@ class CLASS(CIS_Backpack_Droid_B1_Engineer): CLASS(CIS_Backpack_Droid_B1) {
     hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\B1_Engineer_co.paa)};
 
     class XtdGearInfo: XtdGearInfo {
-        camo = "Engineer";
+        type = "Engineer";
     };
 };
 
@@ -58,7 +58,7 @@ class CLASS(CIS_Backpack_Droid_B1_Saboteur): CLASS(CIS_Backpack_Droid_B1) {
     hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\B1_Saboteur_co.paa)};
 
     class XtdGearInfo: XtdGearInfo {
-        camo = "Saboteur";
+        type = "Saboteur";
     };
 };
 
@@ -67,7 +67,7 @@ class CLASS(CIS_Backpack_Droid_B1_Prototype): CLASS(CIS_Backpack_Droid_B1) {
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_backpack_prototype_co.paa"};
 
     class XtdGearInfo: XtdGearInfo {
-        camo = "Prototype";
+        type = "Prototype";
     };
 };
 
@@ -112,7 +112,7 @@ class CLASS(CIS_Backpack_Droid_B1_Antenna): CLASS(CIS_Backpack_Droid_B1) {
     picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_antenna_ui_ca.paa";
 
     class XtdGearInfo: XtdGearInfo {
-        camo = "Antenna";
+        type = "Antenna";
         variant = "Standard";
     };
 };
@@ -160,9 +160,18 @@ class CLASS(CIS_Jetpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
         "JLTS_jumppack_error",
         "JLTS_SFX_jumppack_idle"
     };
+
+    class XtdGearInfo {
+        model = QCLASS(CIS_Jetpacks);
+        type = "Standard";
+    };
 };
 
 class CLASS(CIS_Jetpack_Droid_B1_Rocket): CLASS(CIS_Jetpack_Droid_B1) {
     displayName = "[KC] Battle Droid Jetpack (Rocket)";
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_rocket_co.paa"};
+
+    class XtdGearInfo: XtdGearInfo {
+        type = "Rocket";
+    };
 };

@@ -13,6 +13,7 @@ class CLASS(Helmet_Phase1_Tanker_Base): CLASS(Helmet_Base) {
     subItems[] = {QCLASS(NVG_Chip)};
 
     HEARING_PROTECTION_CREW;
+    TFAR_externalIntercomWirelessCapable = TRUE;
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"Camo1", "visor"};

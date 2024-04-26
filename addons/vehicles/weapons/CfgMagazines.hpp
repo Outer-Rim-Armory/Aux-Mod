@@ -56,62 +56,6 @@ class CfgMagazines {
         count = 1000;
     };
 
-    class CLASS(Mag_4000Rnd_Gatling_Galaxy): CLASS(Mag_VehicleBase) {
-        SCOPE_PUBLIC;
-        displayNameShort = "High Energy";
-        ammo = QCLASS(Bullet_PlasmaGatling_Galaxy_Blue);
-        count = 4000;
-
-        nameSound = "cannon";
-
-        initSpeed = 1030;
-        maxLeadSpeed = 83.3333;
-        weight = 126;
-    };
-
-    class CLASS(Mag_100Rnd_Cannon_Galaxy): CLASS(Mag_VehicleBase) {
-        SCOPE_PUBLIC;
-        displayNameShort = "High Energy";
-        ammo = QCLASS(Bullet_PlasmaCannon_Galaxy_Green);
-        count = 100;
-
-        nameSound = "cannon";
-
-        initSpeed = 1330;
-        maxLeadSpeed = 25;
-        muzzleImpulseFactor[] = {0.5, 3};
-    };
-
-    class CLASS(Mag_240Rnd_Autocannon_Galaxy_GPR): CLASS(Mag_VehicleBase) {
-        SCOPE_PUBLIC;
-        displayName = "GPR-T";
-        displayNameShort = "GPR-T";
-        displayNameMFDFormat = "GPR-T";
-        ammo = QCLASS(Bullet_PlasmaAutocannon_Galaxy_GPR_Blue);
-        count = 240;
-
-        nameSound = "cannon";
-
-        initSpeed = 1035;
-        maxLeadSpeed = 83.3333;
-        muzzleImpulseFactor[] = {1, 6};
-    };
-
-    class CLASS(Mag_160Rnd_Autocannon_Galaxy_APFSDS): CLASS(Mag_VehicleBase) {
-        SCOPE_PUBLIC;
-        displayName = "APFSDS-T";
-        displayNameShort = "APFSDS-T";
-        displayNameMFDFormat = "APFSDS-T";
-        ammo = QCLASS(Bullet_PlasmaAutocannon_Galaxy_APFSDS_Red);
-        count = 160;
-
-        nameSound = "cannon";
-
-        initSpeed = 1600;
-        maxLeadSpeed = 83.3333;
-        muzzleImpulseFactor[] = {0.5, 2};
-    };
-
     class CLASS(Mag_9999Rnd_ATRT): CLASS(Mag_Base) {
         SCOPE_HIDDEN;
         displayName = "[KC] AT-RT Turret Battery Pack";

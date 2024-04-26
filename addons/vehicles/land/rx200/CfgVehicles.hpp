@@ -62,10 +62,6 @@ class CfgVehicles {
         };
 
         class ACE_SelfActions: ACE_SelfActions {
-            INTERCOM_START;
-                INTERCOM_DISABLED;
-                INTERCOM_CREW;
-            INTERCOM_END;
         };
 
         class Turrets: Turrets {

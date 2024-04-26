@@ -19,12 +19,15 @@
  */
 
 params ["_unit", ["_droidType", ""]];
-private ["_reviveChance", "_reviveDelay"];
-TRACE_2("fnc_revive",_unit,_forceCrawl);
+private ["_reviveUnit", "_reviveChance", "_reviveDelay"];
+TRACE_2("fnc_revive",_unit,_droidType);
 
 if (!GVAR(canRevive) or {isNull _unit} or {!local _unit}) exitWith {};
 
+_reviveUnit = getText (configOf _unit >> QGVAR(reviveUnit));
 _reviveChance = getNumber (configOf _unit >> QGVAR(reviveChance));
+
+if (_reviveUnit == "" or {_reviveChance <= 0}) exitWith {};
 
 if !(random 1 <= _reviveChance) exitWith {};
 
@@ -43,13 +46,21 @@ INFO_2("Reviving unit %1 (%2)",_unit,typeOf _unit);
         case "b2": {
             _newUnit setVariable ["Droid_Health", GVAR(healthB2) / 2, true];
             if (random 1 > 0.5) then {
+                INFO("Forcing new B2 to crawl, hiding textures");
                 _oldUnit setObjectTextureGlobal ["camo_arms", ""];
                 _oldUnit setObjectTextureGlobal ["torso", ""];
                 _newUnit setObjectTextureGlobal ["legs", ""];
                 [_newUnit, "AmovPpneMstpSrasWrflDnon", 2] call ace_common_fnc_doAnimation;
                 _newUnit setUnitPos "DOWN";
             } else {
+                INFO("Forcing new B2 to walk, no WBK script");
                 deleteVehicle _oldUnit;
+                // Try to make a smooth movement from prone to B2 animation
+                _newUnit setUnitPos "DOWN";
+                [_newUnit, "AmovPpneMstpSrasWrflDnon", 2] call ace_common_fnc_doAnimation;
+                [{_this setUnitPos "MIDDLE";}, _newUnit, 1] call CBA_fnc_waitAndExecute;
+                [{_this setUnitPos "UP";}, _newUnit, 1.5] call CBA_fnc_waitAndExecute;
+                [{_this call FUNC(initB2);}, _newUnit, 3] call CBA_fnc_waitAndExecute;
             };
         };
         default {

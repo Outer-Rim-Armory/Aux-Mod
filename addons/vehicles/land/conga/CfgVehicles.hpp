@@ -10,6 +10,7 @@ class CfgVehicles {
         class AnimationSources;
     };
     class OPTRE_M412_IFV_UNSC: OPTRE_M413_base {
+        class ACE_SelfActions;
         class Turrets: Turrets {
             class MainTurret;
         };
@@ -69,6 +70,9 @@ class CfgVehicles {
             };
         };
 
+        class ACE_SelfActions: ACE_SelfActions {
+        };
+
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 weapons[] = {"OPTRE_M230", "OPTRE_M670_ATGM_Launcher"};
@@ -98,6 +102,7 @@ class CfgVehicles {
     };
 
     class OPTRE_M413_MGS_UNSC: OPTRE_M413_base {
+        class ACE_SelfActions;
         class AnimationSources: AnimationSources {
             class muzzle_hide;
             class muzzle_rot;
@@ -152,6 +157,9 @@ class CfgVehicles {
                     "\OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
                 };
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions {
         };
 
         class Turrets: Turrets {

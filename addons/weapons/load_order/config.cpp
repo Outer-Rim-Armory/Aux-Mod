@@ -32,6 +32,7 @@ class CfgPatches {
             QGVAR(sbb3),
             QGVAR(valken38x),
             QGVAR(westar_m5),
+            QGVAR(x42),
             QGVAR(z6)
         };
         units[] = {};
