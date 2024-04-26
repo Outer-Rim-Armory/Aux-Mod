@@ -11,5 +11,5 @@ addMissionEventHandler ["Loaded", LINKFUNC(initOverlay)];
   call FUNC(initOverlay);
 
   // Add unit EH and tigger it for current unit
-  ["unit", LINKFUNC(handleSuppressed), true] call CBA_fnc_addPlayerEventHandler;
+  ["unit", LINKFUNC(handlePlayerChanged), true] call CBA_fnc_addPlayerEventHandler;
 }] call CBA_fnc_addEventHandler;
