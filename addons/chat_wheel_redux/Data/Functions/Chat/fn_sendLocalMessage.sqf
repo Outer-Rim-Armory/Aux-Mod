@@ -22,7 +22,6 @@ _message = _message call CWR_fnc_processTags;
 // submenu function before an option is selected.
 if (typeName _message isNotEqualTo "STRING") exitWith {};
 
-if (CWR_AutoMessages_Enabled) then
-{
+if (CWR_AutoMessages_Enabled) then {
     _sender groupChat _message;
 };

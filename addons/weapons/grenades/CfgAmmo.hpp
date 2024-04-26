@@ -1,9 +1,6 @@
-class CfgAmmo
-{
+class CfgAmmo {
     class CLASS(Grenade_Base_Ammo);
-    class CLASS(Grenade_EMP_Ammo): CLASS(Grenade_Base_Ammo)
-    {
-        GVAR(ammoType) = AMMO_TYPE_EMP;
+    class CLASS(Grenade_EMP_Ammo): CLASS(Grenade_Base_Ammo) {
         hit = 0.01;
         indirectHit = 0.01;
         indirectHitRange = 10;
@@ -31,12 +28,15 @@ class CfgAmmo
         craterShape = "";
 
         aiAmmoUsageFlags = AMMO_USAGE_NONE;
+
+        GVAR(ammoType) = AMMO_TYPE_EMP;
+        GVAR(empRadiusDroid) = EMP_RADIUS_DROID_DEFAULT;
+        GVAR(empRadiusDroideka) = EMP_RADIUS_DROIDEKA_DEFAULT;
+        GVAR(empRadiusVehicle) = EMP_RADIUS_VEHICLE_DEFAULT;
     };
 
     class CLASS(GrenadeSmoke_Base_Ammo);
-    class CLASS(Grenade_Bacta_Ammo): CLASS(GrenadeSmoke_Base_Ammo)
-    {
-        GVAR(ammoType) = AMMO_TYPE_BACTA;
+    class CLASS(Grenade_Bacta_Ammo): CLASS(GrenadeSmoke_Base_Ammo) {
         simulation = "shotSmoke";
         deflectionSlowDown = 0;
 
@@ -45,5 +45,11 @@ class CfgAmmo
         smokeColor[] = {0.38, 0.54, 0.91, 0.35};
 
         aiAmmoUsageFlags = AMMO_USAGE_NONE;
+
+        GVAR(ammoType) = AMMO_TYPE_BACTA;
+        GVAR(bactaDuration) = BACTA_DURATION_DEFAULT;
+        EGVAR(medical,areaHealRadius) = BACTA_RADIUS_DEFAULT;
+        EGVAR(medical,areaHealRate) = BACTA_RATE_DEFAULT;
+        EGVAR(medical,areaHealMaxPatients) = BACTA_MAXPATIENTS_DEFAULT;
     };
 };

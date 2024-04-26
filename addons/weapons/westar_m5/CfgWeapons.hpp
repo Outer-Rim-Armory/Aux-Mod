@@ -1,38 +1,30 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class UGL_F;
     class Rifle_Base_F;
-    class 3AS_WestarM5_Base_F: Rifle_Base_F
-    {
+    class 3AS_WestarM5_Base_F: Rifle_Base_F {
         class WeaponSlotsInfo;
 
         class Single;
         class Burst;
         class FullAuto;
     };
-    class 3AS_WestarM5_F: 3AS_WestarM5_Base_F
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
+    class 3AS_WestarM5_F: 3AS_WestarM5_Base_F {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
         };
 
-        class Single: Single
-        {
+        class Single: Single {
             class StandardSound;
         };
-        class Burst: Burst
-        {
+        class Burst: Burst {
             class StandardSound;
         };
-        class FullAuto: FullAuto
-        {
+        class FullAuto: FullAuto {
             class StandardSound;
         };
     };
-    class CLASS(WestarM5_Base): 3AS_WestarM5_F
-    {
+    class CLASS(WestarM5_Base): 3AS_WestarM5_F {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -43,7 +35,7 @@ class CfgWeapons
 
         modes[] = {"Single", "Burst", "FullAuto"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_60Rnd_WestarM5), "Aux12thFleet_Mag_WestarM5"};
+        magazines[] = {QCLASS(Mag_99Rnd_WestarM5), "Aux12thFleet_Mag_WestarM5"};
         magazineWell[] = {};
 
         canShootInWater = TRUE;
@@ -55,12 +47,9 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot
-            {
-                class CompatibleItems
-                {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot {
+                class CompatibleItems {
                     CLASS(Optic_WestarM5) = TRUE;
                     ATTACHMENTS_OPTIC_SHORT;
                     ATTACHMENTS_OPTIC_MEDIUM;
@@ -68,55 +57,44 @@ class CfgWeapons
                     ATTACHMENTS_OPTIC_SIGHTS;
                 };
             };
-            class PointerSlot: PointerSlot
-            {
-                class CompatibleItems
-                {
+            class PointerSlot: PointerSlot {
+                class CompatibleItems {
                     ATTACHMENTS_POINTER_BASE;
                 };
             };
         };
 
-        class LinkedItems
-        {
-            class LinkedItemsOptic
-            {
+        class LinkedItems {
+            class LinkedItemsOptic {
                 slot = "CowsSlot";
                 item = QCLASS(Optic_WestarM5);
             };
         };
 
-        class Single: Single
-        {
+        class Single: Single {
             sounds[] = {"StandardSound"};
-            class StandardSound: StandardSound
-            {
+            class StandardSound: StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_WestarM5Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_WestarM5Shot)};
             };
         };
-        class Burst: Burst
-        {
+        class Burst: Burst {
             sounds[] = {"StandardSound"};
-            class StandardSound: StandardSound
-            {
+            class StandardSound: StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_WestarM5Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_WestarM5Shot)};
             };
         };
-        class FullAuto: FullAuto
-        {
+        class FullAuto: FullAuto {
             sounds[] = {"StandardSound"};
-            class StandardSound: StandardSound
-            {
+            class StandardSound: StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_WestarM5Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_WestarM5Shot)};
             };
         };
     };
 
-    class CLASS(WestarM5): CLASS(WestarM5_Base)
-    {
+    class CLASS(WestarM5): CLASS(WestarM5_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Westar-M5";
@@ -125,8 +103,7 @@ class CfgWeapons
         JLTS_friedItem = QCLASS(WestarM5_Fried);
     };
 
-    class CLASS(WestarM5_Fried): CLASS(WestarM5)
-    {
+    class CLASS(WestarM5_Fried): CLASS(WestarM5) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] Westar-M5 (Fried)";
@@ -138,8 +115,7 @@ class CfgWeapons
         magazines[] = {};
     };
 
-    class CLASS(WestarM5_UGL): CLASS(WestarM5_Base)
-    {
+    class CLASS(WestarM5_UGL): CLASS(WestarM5_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Westar-M5 UGL";
@@ -149,15 +125,13 @@ class CfgWeapons
 
         model = "\3AS\3AS_Weapons\WestarM5\3AS_Westar_M5_GL.p3d";
 
-        class UGL: UGL_F
-        {
+        class UGL: UGL_F {
             displayName = "Grenade Launcher";
             descriptionShort = "UGL";
 
             cameraDir = "OP_look";
             discreteDistance[] = {50, 75, 100, 150, 200, 250, 300, 350, 400};
-            discreteDistanceCameraPoint[] =
-            {
+            discreteDistanceCameraPoint[] = {
                 "OP_eye_50",
                 "OP_eye_75",
                 "OP_eye_100",
@@ -182,8 +156,7 @@ class CfgWeapons
         };
     };
 
-    class CLASS(WestarM5_UGL_Fried): CLASS(WestarM5_UGL)
-    {
+    class CLASS(WestarM5_UGL_Fried): CLASS(WestarM5_UGL) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] Westar-M5 UGL (Fried)";
@@ -194,21 +167,18 @@ class CfgWeapons
         JLTS_isFried = TRUE;
         magazines[] = {};
 
-        class UGL: UGL
-        {
+        class UGL: UGL {
             displayName = "Grenade Launcher (Fried)";
             magazineWell[] = {};
         };
     };
 
-    class CLASS(Westar_M5): CLASS(WestarM5)
-    {
+    class CLASS(Westar_M5): CLASS(WestarM5) {
         SCOPE_HIDDEN;
         descriptionShort = "Blaster Rifle<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
         baseWeapon = QCLASS(Westar_M5);
     };
-    class CLASS(Westar_M5_UGL): CLASS(WestarM5_UGL)
-    {
+    class CLASS(Westar_M5_UGL): CLASS(WestarM5_UGL) {
         SCOPE_HIDDEN;
         descriptionShort = "Blaster Rifle<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
         baseWeapon = QCLASS(Westar_M5_UGL);

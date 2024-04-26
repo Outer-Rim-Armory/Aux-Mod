@@ -17,8 +17,7 @@
 
 
 params ["_posOrObject", "_array", ["_order", true]];
-private _sortByDistance = _array apply
-{
+private _sortByDistance = _array apply {
     [_posOrObject distance _x, _x];
 };
 _sortByDistance sort _order;

@@ -1,7 +1,5 @@
-class CfgSoundSets
-{
-    class CLASS(SoundSet_WeaponShot_Base)
-    {
+class CfgSoundSets {
+    class CLASS(SoundSet_WeaponShot_Base) {
         soundShaders[] = {QCLASS(SoundShader_WeaponShot_Base)};
         soundShadersLimit = 1;
         sound3DProcessingType = "WeaponMediumShot3DProcessingType";
@@ -18,8 +16,7 @@ class CfgSoundSets
         loop = 0;
     };
 
-    class CLASS(SoundSet_RocketShot): CLASS(SoundSet_WeaponShot_Base)
-    {
+    class CLASS(SoundSet_RocketShot): CLASS(SoundSet_WeaponShot_Base) {
         volumeFactor = 5;
         soundShaders[] = {QCLASS(SoundShader_RocketShot)};
     };

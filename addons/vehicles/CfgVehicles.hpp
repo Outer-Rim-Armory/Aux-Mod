@@ -1,6 +1,16 @@
 class CfgVehicles {
     class Man;
     class CAManBase: Man {
+        class ACE_Actions {
+            class ACE_MainActions {
+                class GVAR(eject) {
+                    displayName = "Eject";
+                    exceptions[] = {"isNotSitting", "isNotInside"};
+                    condition = QUOTE(!isNull objectParent _target);
+                    statement = QUOTE(moveOut _target);
+                };
+            };
+        };
         class ACE_SelfActions {
             class ace_csw_deploy {
                 modifierFunction = QUOTE(call FUNC(cswDeployModifier));

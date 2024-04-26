@@ -12,7 +12,11 @@
 #define QEGVAR_ACE(var1,var2) QUOTE(EGVAR_ACE(var1,var2))
 #define EFUNC_ACE(var1,var2) TRIPLES(DOUBLES(ace,var1),fnc,var2)
 
-#define TRACE_0(MESSAGE) LOG_SYS_FILELINENUMBERS('TRACE',str diag_frameNo + ' ' + (MESSAGE))
+#ifdef DEBUG_MODE_FULL
+    #define TRACE_0(MESSAGE) LOG_SYS_FILELINENUMBERS('TRACE',str diag_frameNo + ' ' + (MESSAGE))
+#else
+    #define TRACE_0(MESSAGE) /* disabled */
+#endif
 
 #undef PREP
 #ifdef DISABLE_COMPILE_CACHE
@@ -38,7 +42,7 @@
 #define EDSUBCAT(var1) CLASS(DOUBLES(EdSubCat,var1))
 #define QEDSUBCAT(var1) QCLASS(DOUBLES(EdSubCat,var1))
 
-#define ADDON_LOADED(var1) isClass (configFile >> 'CfgPatches' >> QUOTE(var1))
+#define ADDON_LOADED(var1) 'var1' call ace_common_fnc_isModLoaded
 
 #ifdef SUBCOMPONENT
     #define EDITOR_PREVIEW(var1) QPATHTOF(SUBCOMPONENT\data\previews\CLASS(var1).jpg)
@@ -85,32 +89,27 @@ scopeCurator = 0
 #define ITEM_16(a) ITEM_10(a), ITEM_6(a)
 #define ITEM_20(a) ITEM_10(a), ITEM_10(a)
 
-#define WEAP_XX(WEAP, COUNT) class _xx_##WEAP \
-{ \
-    weapon = #WEAP; \
+#define WEAP_XX(WEAP, COUNT) class DOUBLES(_xx,WEAP) { \
+    weapon = QUOTE(WEAP); \
     count = COUNT; \
 }
 
-#define MAG_XX(MAG, COUNT) class _xx_##MAG \
-{ \
-    magazine = #MAG; \
+#define MAG_XX(MAG, COUNT) class DOUBLES(_xx,MAG) { \
+    magazine = QUOTE(MAG); \
     count = COUNT; \
 }
 
-#define ITEM_XX(ITEM, COUNT) class _xx_##ITEM \
-{ \
-    name = #ITEM; \
+#define ITEM_XX(ITEM, COUNT) class DOUBLES(_xx,ITEM) { \
+    name = QUOTE(ITEM); \
     count = COUNT; \
 }
 
 #define GROUND_CLASS(WEAP_NAME) DOUBLES(Ground,CLASS(WEAP_NAME))
 #define QGROUND_CLASS(WEAP_NAME) QUOTE(GROUND_CLASS(WEAP_NAME))
-#define GROUND_HOLDER(WEAP_NAME, DISPLAY_NAME) class GROUND_CLASS(WEAP_NAME): GROUND_CLASS(Holder_Base) \
-{ \
+#define GROUND_HOLDER(WEAP_NAME, DISPLAY_NAME) class GROUND_CLASS(WEAP_NAME): GROUND_CLASS(Holder_Base) { \
     SCOPE_PUBLIC; \
     displayName = DISPLAY_NAME; \
-    class TransportItems \
-    { \
+    class TransportItems { \
         ITEM_XX(CLASS(WEAP_NAME),1); \
     }; \
 }

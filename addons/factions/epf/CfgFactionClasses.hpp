@@ -1,7 +1,5 @@
-class CfgFactionClasses
-{
-    class CLASS(Faction_EPF)
-    {
+class CfgFactionClasses {
+    class FACTION(EPF) {
         displayName = "[KC] El Presidente Forces";
     };
 };

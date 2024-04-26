@@ -1,5 +1,4 @@
-class CfgMusic
-{
+class CfgMusic {
     /* Macro Explanation
     * First value is the class name without prefix
         - This gets other text added to it, SW_AhsokaDelightful becomes BNA_KC_Music_SW_AhsokaDelightful
@@ -34,6 +33,17 @@ class CfgMusic
 
     // Call of Duty
     MUSIC(COD_115,"[COD] 115",228,VideoGames);
+    // MUSIC(COD_Burning,"[COD] Burning",147,VideoGames);
+    // MUSIC(COD_Chase,"[COD] Chase",126,VideoGames);
+    // MUSIC(COD_Contingency,"[COD] Contingency",135,VideoGames);
+    // MUSIC(COD_Evac,"[COD] Evac",113,VideoGames);
+    // MUSIC(COD_GoingLoud,"[COD] Going Loud",190,VideoGames);
+    // MUSIC(COD_GuerillaTactics,"[COD] Guerilla Tactics",178,VideoGames);
+    // MUSIC(COD_Infiltration,"[COD] Infiltration",267,VideoGames);
+    // MUSIC(COD_MoneyRun,"[COD] Money Run",136,VideoGames);
+    // MUSIC(COD_Onwards,"[COD] Onwards",148,VideoGames);
+    // MUSIC(COD_RetreatAndReveille,"[COD] Retreat And Reveille",177,VideoGames);
+    // MUSIC(COD_Whitehouse,"[COD] Whitehouse",327,VideoGames);
 
     // Dragonball
     MUSIC(DB_BrolysTheme,"[DB] Broly's Theme",473,Anime);
@@ -51,6 +61,10 @@ class CfgMusic
 
     // Interstellar
     MUSIC(INT_Mountains,"[INT] Mountains",219,Other);
+
+    // Isle of Dogs
+    MUSIC(IOD_ShintoShrine,"[IOD] Shinto Shrine",116,Other);
+    MUSIC(IOD_SushiScene,"[IOD] Sushi Scene",101,Other);
 
     // Last of Us
     MUSIC(LoU_AllGone,"[LoU] All Gone (No Escape)",174,VideoGames);
@@ -170,51 +184,44 @@ class CfgMusic
 
 
     // Unknown
-    class BNA_KC_AxeManTheme
-    {
+    class BNA_KC_AxeManTheme {
         name = "Axe Man Theme (Hype/Hopeful)";
         sound[] = {QPATHTOF(data\music\UNK_AxeManTheme.ogg), "db+0", 1};
         duration = 92;
         musicClass = QCLASS(MusicCat_Other); // Music category
     };
-    class BNA_KC_Infection
-    {
+    class BNA_KC_Infection {
         name = "OutBreak";
         sound[] = {QPATHTOF(data\music\UNK_Infection.ogg), "db+0", 1};
         duration = 232;
         musicClass = QCLASS(MusicCat_VideoGames); // Music category
     };
-    class BNA_KC_Woods_Betrayal
-    {
+    class BNA_KC_Woods_Betrayal {
         name = "Wood's Betrayal";
         sound[] = {QPATHTOF(data\music\UNK_Wood's_Betrayal), "db+0", 1};
         duration = 350;
         musicClass = QCLASS(MusicCat_StarWars); // Music category
     };
-    class BNA_KC_TU1
-    {
+    class BNA_KC_TU1 {
         name = "Techno Union BM 1";
         sound[] = {QPATHTOF(data\music\UNK_TU_Theme.ogg), "db+0", 1};
         duration = 202;
         musicClass = QCLASS(MusicCat_Other); // Music category
     };
 
-    class BNA_KC_TU2
-    {
+    class BNA_KC_TU2 {
         name = "Techno Union BM 2";
         sound[] = {QPATHTOF(data\music\UNK_TU_Theme2.ogg), "db+0", 1};
         duration = 202;
         musicClass = QCLASS(MusicCat_Other); // Music category
     };
-    class BNA_KC_TU3
-    {
+    class BNA_KC_TU3 {
         name = "Techno Union BM 3";
         sound[] = {QPATHTOF(data\music\UNK_TU_Theme3.ogg), "db+0", 1};
         duration = 150;
         musicClass = QCLASS(MusicCat_Other); // Music category
     };
-    class BNA_KC_FatherG
-    {
+    class BNA_KC_FatherG {
         name = "Father G";
         sound[] = {QPATHTOF(data\music\UNK_FatherG.ogg), "db+0", 1};
         duration = 262;

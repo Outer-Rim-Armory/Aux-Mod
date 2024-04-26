@@ -12,8 +12,7 @@ class Extended_PreInit_EventHandlers {
 
 class Extended_PostInit_EventHandlers {
     class ADDON {
-        clientInit = QUOTE(call COMPILE_SCRIPT(XEH_postInitClient));
-        serverInit = QUOTE(call COMPILE_SCRIPT(XEH_postInitServer));
+        init = QUOTE(call COMPILE_SCRIPT(XEH_postInit));
     };
 };
 
@@ -22,8 +21,8 @@ class Extended_Init_EventHandlers {
         class GVAR(areaSlowHealInit) {
             init = QUOTE(_this call FUNC(areaHealerInit));
         };
-        class GVAR(soundLoopInit) {
-            init = QUOTE(_this call EFUNC(core,soundLoopInit));
+        class GVAR(loopSay3D_init) {
+            init = QUOTE(_this call EFUNC(core,loopSay3D_init));
         };
     };
 };

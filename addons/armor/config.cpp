@@ -1,14 +1,11 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QCLASS(core),
             "ls_armor_bluefor",
             "lsd_units_bluefor",
@@ -20,8 +17,7 @@ class CfgPatches
             "JLTS_characters_CloneArmor2",
             "SDT_gear"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Unit_Base),
             QCLASS(Unit_Phase1_Base),
             QCLASS(Unit_Phase1_CR),
@@ -77,14 +73,17 @@ class CfgPatches
             QCLASS(Unit_ARC_NightShade),
             QCLASS(Unit_ARC_Enlisted_CamoNight),
             QCLASS(Unit_ARF_CT),
-            QCLASS(Unit_Commando_Base),
+            QCLASS(cloneCommando_unit_base),
+            QCLASS(cloneCommando_unit),
             QCLASS(Unit_Jedi_Knight),
             QCLASS(Unit_Jedi_Commander),
-            QCLASS(Backpack_Base),
+            QCLASS(cloneBackpack_base),
+            QCLASS(cloneBackpack_standard),
             QCLASS(Backpack),
             QCLASS(Backpack_Invis),
             QCLASS(Backpack_Heavy_Base),
             QCLASS(Backpack_Heavy),
+            QCLASS(cloneBackpack_rocket),
             QCLASS(Backpack_Radio_Base),
             QCLASS(Backpack_Radio),
             QCLASS(Backpack_Radio_Invis),
@@ -97,10 +96,10 @@ class CfgPatches
             QCLASS(Backpack_Radio_Mini_Base),
             QCLASS(Backpack_Radio_Mini),
             QCLASS(Backack_ARC),
-            QCLASS(Backack_Commando),
-            QCLASS(Backack_Commando_EOD),
-            QCLASS(Backack_Commando_RTO),
-            QCLASS(Backack_Commando_Tech),
+            QCLASS(cloneBackpack_commando),
+            QCLASS(cloneBackpack_commando_EOD),
+            QCLASS(cloneBackpack_commando_RTO),
+            QCLASS(cloneBackpack_commando_Tech),
             QCLASS(Jetpack_JT12),
             QCLASS(Jetpack_JT12_LR),
             QCLASS(Jetpack_CDV21),
@@ -207,8 +206,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase2_Insulated_CT),
             QGROUND_CLASS(Helmet_Phase12_Base)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Helmet_Base),
             QCLASS(Helmet_Phase1_Base),
             QCLASS(Helmet_Phase1_CR),
@@ -314,6 +312,7 @@ class CfgPatches
             QCLASS(Helmet_Phase2_Tanker_CT_v2),
             QCLASS(Helmet_Phase2_Tanker_Enlisted_CamoBrown),
             QCLASS(Helmet_Phase2_Tanker_Enlisted_CamoGrey),
+            QCLASS(cloneCommando_helmet),
             QCLASS(Uniform_Base),
             QCLASS(Uniform_phase1Geo_Enlisted),
             QCLASS(Uniform_phase1Geo_NCO),
@@ -353,7 +352,7 @@ class CfgPatches
             QCLASS(Uniform_ARC_NightShade),
             QCLASS(Uniform_ARC_Enlisted_CamoNight),
             QCLASS(Uniform_ARF_CT),
-            QCLASS(Uniform_Commando_Base),
+            QCLASS(cloneCommando_uniform),
             QCLASS(Uniform_Jedi_Knight),
             QCLASS(Uniform_Jedi_Commander),
             QCLASS(Vest_Basic),
@@ -403,11 +402,11 @@ class CfgPatches
             QCLASS(Vest_ARC_NightShade),
             QCLASS(Vest_ARC_Phase1Geo_Officer),
             QCLASS(Vest_ARC_Phase1Geo_Captain),
-            QCLASS(Vest_Commando_Basic),
-            QCLASS(Vest_Commando_EOD),
-            QCLASS(Vest_Commando_SL),
-            QCLASS(Vest_Commando_Sniper),
-            QCLASS(Vest_Commando_Tech),
+            QCLASS(cloneCommando_basic_vest),
+            QCLASS(cloneCommando_SL_vest),
+            QCLASS(cloneCommando_EOD_vest),
+            QCLASS(cloneCommando_Sniper_vest),
+            QCLASS(cloneCommando_Tech_vest),
             QCLASS(NVG_Chip),
             QCLASS(NVG_phase1_Visor),
             QCLASS(NVG_phase2_Visor),

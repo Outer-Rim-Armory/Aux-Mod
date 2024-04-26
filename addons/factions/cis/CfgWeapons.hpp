@@ -1,5 +1,4 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class ls_redforUniform_base;
     class CLASS(OPFOR_Uniform_Base): ls_redforUniform_base {
         class ItemInfo;
@@ -34,7 +33,7 @@ class CfgWeapons
 
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_B1);
-            camo = "Standard";
+            type = "Standard";
             variant = "Standard";
         };
     };
@@ -44,39 +43,44 @@ class CfgWeapons
     B1_UNIFORM(Commander);
     B1_UNIFORM(Crew);
     B1_UNIFORM(Pilot);
+    B1_UNIFORM(Engineer);
     B1_UNIFORM(Rocket);
     B1_UNIFORM(Prototype);
 
-    class CLASS(CIS_Uniform_Droid_B1_Geonosis): CLASS(CIS_Uniform_Droid_Base) {
-        SCOPE_PUBLIC;
+    class CLASS(CIS_Uniform_Droid_B1_PrototypeCommander): CLASS(CIS_Uniform_Droid_B1) {
+        displayName = "[CIS] B1 Prototype Commander Droid";
 
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(CIS_Unit_Droid_B1_PrototypeCommander);
+        };
+
+        class XtdGearInfo: XtdGearInfo {
+            type = "PrototypeCommander";
+        };
+    };
+
+    class CLASS(CIS_Uniform_Droid_B1_Geonosis): CLASS(CIS_Uniform_Droid_B1) {
         displayName = "[CIS] B1 Battle Droid (Geonosis)";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(CIS_Unit_Droid_B1_Geonosis);
         };
 
-        class XtdGearInfo {
-            model = QCLASS(CIS_Uniforms_B1);
-            camo = "Standard";
+        class XtdGearInfo: XtdGearInfo {
             variant = "Geonosis";
         };
     };
 
     B1_VARIANT_UNIFORM(Commander,Geonosis);
 
-    class CLASS(CIS_Uniform_Droid_B1_Training): CLASS(CIS_Uniform_Droid_Base) {
-        SCOPE_PUBLIC;
-
+    class CLASS(CIS_Uniform_Droid_B1_Training): CLASS(CIS_Uniform_Droid_B1) {
         displayName = "[CIS] B1 Battle Droid (Training)";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(CIS_Unit_Droid_B1_Training);
         };
 
-        class XtdGearInfo {
-            model = QCLASS(CIS_Uniforms_B1);
-            camo = "Standard";
+        class XtdGearInfo: XtdGearInfo {
             variant = "Training";
         };
     };
@@ -92,7 +96,7 @@ class CfgWeapons
 
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_B2);
-            camo = "Standard";
+            type = "Standard";
         };
     };
 
@@ -106,7 +110,7 @@ class CfgWeapons
         };
 
         class XtdGearInfo: XtdGearInfo {
-            camo = "Jetpack";
+            type = "Jetpack";
         };
     };
 
@@ -121,7 +125,7 @@ class CfgWeapons
 
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_BX);
-            role = "Standard";
+            type = "Standard";
         };
     };
 

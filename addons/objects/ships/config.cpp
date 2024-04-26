@@ -1,22 +1,16 @@
 #include "script_component.hpp"
-#include "CfgVehicles.hpp"
 
-
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             "ls_venator"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Venator_Resurgence_Body1_1),
             QCLASS(Venator_Resurgence_Body1_2),
             QCLASS(Venator_Resurgence_Body2_1),
@@ -50,3 +44,5 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgVehicles.hpp"

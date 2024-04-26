@@ -1,15 +1,12 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             QGVAR(weapons),
             QGVAR(sounds),
@@ -18,13 +15,11 @@ class CfgPatches
             "3AS_Main",
             "ls_vehicles_ground"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Mortar_Base),
             QCLASS(Mortar_M190)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Mortar_M190_Carry),
             QCLASS(Mortar_M190_ProxyWeapon)
         };

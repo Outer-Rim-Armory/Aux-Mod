@@ -30,7 +30,7 @@ _fnc_isNotCrew = {
 };
 
 if !(alive ace_player and
-    {!(ace_player call EFUNC(core,inFeatureCamera))} and
+    {call CBA_fnc_getActiveFeatureCamera == ""} and
     {ace_player call _fnc_isNotCrew} and
     {ace_player call FUNC(hasJetpack)}
 ) exitWith {

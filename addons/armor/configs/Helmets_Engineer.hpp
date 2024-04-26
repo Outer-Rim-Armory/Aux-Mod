@@ -1,13 +1,11 @@
-class CLASS(Helmet_Engineer_Base): CLASS(Helmet_Base)
-{
+class CLASS(Helmet_Engineer_Base): CLASS(Helmet_Base) {
     SCOPE_PUBLIC;
 
     displayName = "[KC] ENG Helm (Base)";
 
     model = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
     hiddenSelections[] = {"camo1", "illum", "visor"};
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         "\ls_armor_bluefor\helmet\gar\engineer\data\helmet_co.paa",
         "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
         "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
@@ -20,40 +18,33 @@ class CLASS(Helmet_Engineer_Base): CLASS(Helmet_Base)
     ls_lighting_itemType = "headgear";
     ls_lighting_attachedBone = "head";
 
-    class ItemInfo: ItemInfo
-    {
+    class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1", "illum", "visor"};
         uniformModel = "\ls_armor_bluefor\helmet\gar\engineer\ls_gar_engineer_helmet.p3d";
     };
 };
 
-class CLASS(Helmet_Engineer_CT): CLASS(Helmet_Engineer_Base)
-{
+class CLASS(Helmet_Engineer_CT): CLASS(Helmet_Engineer_Base) {
     displayName = "[KC] ENG Helm 01 (Trooper)";
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\engineer\CT_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
         "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
     };
 };
 
-class CLASS(Helmet_Engineer_Enlisted_CamoBrown): CLASS(Helmet_Engineer_CT)
-{
+class CLASS(Helmet_Engineer_Enlisted_CamoBrown): CLASS(Helmet_Engineer_CT) {
     displayName = "[KC] ENG Helm 01 (Enlisted) - Brown Camo";
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\engineer\camo\brown\Enlisted_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
         "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"
     };
 };
 
-class CLASS(Helmet_Engineer_Enlisted_CamoGrey): CLASS(Helmet_Engineer_CT)
-{
+class CLASS(Helmet_Engineer_Enlisted_CamoGrey): CLASS(Helmet_Engineer_CT) {
     displayName = "[KC] ENG Helm 01 (Enlisted) - Grey Camo";
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\engineer\camo\grey\Enlisted_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa",
         "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa"

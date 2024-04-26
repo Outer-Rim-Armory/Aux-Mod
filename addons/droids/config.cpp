@@ -10,7 +10,10 @@ class CfgPatches {
             QEGVAR(factions,cis),
             "WBK_DifferentRobotics_1"
         };
-        units[] = {};
+        units[] = {
+            QCLASS(CIS_Unit_Droid_B2_Revived),
+            QCLASS(CIS_Unit_Droid_BX_Revived)
+        };
         weapons[] = {};
         VERSION_CONFIG;
 

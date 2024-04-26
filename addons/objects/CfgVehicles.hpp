@@ -7,7 +7,7 @@ class CfgVehicles {
         author = AUTHOR;
 
         editorCategory = QEDCAT(Objects);
-        editorSubcategory = QCLASS(EdSubCat_Flags);
+        editorSubcategory = QEDSUBCAT(Flags);
 
         displayName = "KC Flag (Pole)";
 
@@ -22,7 +22,7 @@ class CfgVehicles {
         author = AUTHOR;
 
         editorCategory = QEDCAT(Objects);
-        editorSubcategory = QCLASS(EdSubCat_Flags);
+        editorSubcategory = QEDSUBCAT(Flags);
 
         displayName = "KC Flag (Vertical)";
 

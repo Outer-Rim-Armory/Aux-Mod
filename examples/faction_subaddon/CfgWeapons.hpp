@@ -7,7 +7,7 @@ class CfgWeapons {
     class CLASS(INDEP_Uniform_Base): ls_greenforUniform_base {
         class ItemInfo;
     };
-    class CLASS(Faction_Uniform): CLASS(OPFOR_Uniform_Base) {
+    class FACTION(Uniform): CLASS(OPFOR_Uniform_Base) {
         SCOPE_PUBLIC;
     };
 };

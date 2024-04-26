@@ -1,5 +1,4 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class CLASS(ItemCore);
     class CLASS(ItemCore_ItemInfo);
     class CLASS(Deployable_MedicalDroid_Item): CLASS(ItemCore) {

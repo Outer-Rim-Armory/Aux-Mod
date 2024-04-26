@@ -19,7 +19,8 @@ class CfgPatches {
             QCLASS(B2Blaster_base),
             QCLASS(B2Blaster),
             QCLASS(B2Blaster_grenadeLauncher),
-            QCLASS(B2Blaster_rocket)
+            QCLASS(B2Blaster_rocket),
+            QCLASS(B2Blaster_flamer)
         };
         VERSION_CONFIG;
     };

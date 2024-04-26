@@ -1,27 +1,21 @@
 class Mode_SemiAuto;
 
-class CfgWeapons
-{
+class CfgWeapons {
     class Rifle_Base_F;
-    class arifle_MX_Base_F: Rifle_Base_F
-    {
+    class arifle_MX_Base_F: Rifle_Base_F {
         class WeaponSlotsInfo;
     };
-    class JLTS_DP23: arifle_MX_Base_F
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
+    class JLTS_DP23: arifle_MX_Base_F {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
             class UnderBarrelSlot;
         };
-        class Single: Mode_SemiAuto
-        {
+        class Single: Mode_SemiAuto {
             class StandardSound;
         };
     };
-    class CLASS(DP23_Base): JLTS_DP23
-    {
+    class CLASS(DP23_Base): JLTS_DP23 {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -38,28 +32,21 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot
-            {
-                class CompatibleItems
-                {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot {
+                class CompatibleItems {
                     ATTACHMENTS_OPTIC_SHORT;
                 };
             };
-            class PointerSlot: PointerSlot
-            {
-                class CompatibleItems
-                {
+            class PointerSlot: PointerSlot {
+                class CompatibleItems {
                     ATTACHMENTS_POINTER_BASE;
                 };
             };
         };
 
-        class Single: Single
-        {
-            class StandardSound: StandardSound
-            {
+        class Single: Single {
+            class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_DP23Shot)};
@@ -68,8 +55,7 @@ class CfgWeapons
         };
     };
 
-    class CLASS(DP23): CLASS(DP23_Base)
-    {
+    class CLASS(DP23): CLASS(DP23_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] DP-23";
@@ -78,8 +64,7 @@ class CfgWeapons
         JLTS_shieldedWeapon = QCLASS(DP23_RiotShield);
         JLTS_friedItem = QCLASS(DP23_Fried);
     };
-    class CLASS(DP23_Fried): CLASS(DP23)
-    {
+    class CLASS(DP23_Fried): CLASS(DP23) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DP-23 (Fried)";
@@ -92,8 +77,7 @@ class CfgWeapons
         magazines[] = {};
     };
 
-    class CLASS(DP23_RiotShield): CLASS(DP23)
-    {
+    class CLASS(DP23_RiotShield): CLASS(DP23) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DP-23 (Shield)";
@@ -110,12 +94,9 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {"\MRC\JLTS\weapons\DP23\data\DP23_co.paa", "\MRC\JLTS\weapons\Shield\data\shield_co.paa"};
         handAnim[] = {"OFP2_ManSkeleton", "\MRC\JLTS\weapons\DP23\anims\DP23_shielded_handanim.rtm"};
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class UnderBarrelSlot: UnderBarrelSlot
-            {
-                class CompatibleItems
-                {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class CompatibleItems {
                     JLTS_riot_shield_attachment = TRUE;
                     JLTS_riot_shield_212_attachment = TRUE;
                     JLTS_riot_shield_501_attachment = TRUE;
@@ -127,8 +108,7 @@ class CfgWeapons
             };
         };
     };
-    class CLASS(DP23_RiotShield_Fried): CLASS(DP23_RiotShield)
-    {
+    class CLASS(DP23_RiotShield_Fried): CLASS(DP23_RiotShield) {
         displayName = "[KC] DP-23 (Shield, Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_fried_ui_ca.paa";

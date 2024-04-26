@@ -1,29 +1,23 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QCLASS(core),
             QEGVAR(vehicles,load_order),
             "ls_armor_bluefor",
             "ls_armor_redfor",
             "ls_armor_greenfor"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(BLUFOR_Unit_Base),
             QCLASS(OPFOR_Unit_Base),
             QCLASS(INDEP_Unit_Base),
-            QCLASS(OtherSide_Backpack_Base)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(BLUFOR_Helmet_Base),
             QCLASS(BLUFOR_Uniform_Base),
             QCLASS(BLUFOR_Vest_Base),
@@ -40,3 +34,4 @@ class CfgPatches
 
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"
+#include "CfgEventHandlers.hpp"

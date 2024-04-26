@@ -1,21 +1,17 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QCLASS(core),
             "ls_flags",
             "3as_GNK_Prop",
             "3AS_Prop_Droids"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Flag_KC_Pole),
             QCLASS(Flag_KC_Vertical),
             QCLASS(Flag_KC_Horizontal),

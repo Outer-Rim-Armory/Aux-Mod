@@ -1,32 +1,25 @@
 class Mode_SemiAuto;
 class Mode_FullAuto;
 
-class CfgWeapons
-{
+class CfgWeapons {
     class Rifle_Base_F;
-    class 3AS_DC15C_Base_F: Rifle_Base_F
-    {
+    class 3AS_DC15C_Base_F: Rifle_Base_F {
         class WeaponSlotsInfo;
     };
-    class 3AS_DC15C_F: 3AS_DC15C_Base_F
-    {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
+    class 3AS_DC15C_F: 3AS_DC15C_Base_F {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
         };
 
-        class Single: Mode_SemiAuto
-        {
+        class Single: Mode_SemiAuto {
             class StandardSound;
         };
-        class FullAuto: Mode_FullAuto
-        {
+        class FullAuto: Mode_FullAuto {
             class StandardSound;
         };
     };
-    class CLASS(DC15C_Base): 3AS_DC15C_F
-    {
+    class CLASS(DC15C_Base): 3AS_DC15C_F {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -53,48 +46,39 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot: CowsSlot
-            {
-                class CompatibleItems
-                {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot {
+                class CompatibleItems {
                     ATTACHMENTS_OPTIC_SHORT;
                     ATTACHMENTS_OPTIC_MEDIUM;
                     ATTACHMENTS_OPTIC_SIGHTS;
                 };
             };
-            class PointerSlot: PointerSlot
-            {
-                class CompatibleItems
-                {
+            class PointerSlot: PointerSlot {
+                class CompatibleItems {
                     ATTACHMENTS_POINTER_BASE;
                 };
             };
         };
 
-        class Single: Single
-        {
+        class Single: Single {
             dispersion = 0.00087;
             reloadTime = 0.096;
 
             sounds[] = {"StandardSound"};
-            class StandardSound: StandardSound
-            {
+            class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_DC15SShot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_DC15SShot)};
             };
         };
-        class FullAuto: FullAuto
-        {
+        class FullAuto: FullAuto {
             dispersion = 0.00087;
             reloadTime = 0.096;
 
             sounds[] = {"StandardSound"};
-            class StandardSound: StandardSound
-            {
+            class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_DC15SShot)};
@@ -103,16 +87,14 @@ class CfgWeapons
         };
     };
 
-    class CLASS(DC15C): CLASS(DC15C_Base)
-    {
+    class CLASS(DC15C): CLASS(DC15C_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] DC-15C";
         baseWeapon = QCLASS(DC15C);
         JLTS_friedItem = QCLASS(DC15C_Fried);
     };
-    class CLASS(DC15C_Fried): CLASS(DC15C)
-    {
+    class CLASS(DC15C_Fried): CLASS(DC15C) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] DC-15C (Fried)";

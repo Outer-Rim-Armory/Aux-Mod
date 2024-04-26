@@ -15,8 +15,7 @@ soundHit4[] = {"\SWLB_core\data\sounds\vehicles\mortar\weapon\mortar_hit4.wss", 
 soundHit5[] = {"\SWLB_core\data\sounds\vehicles\mortar\weapon\mortar_hit5.wss", 2.51189, 1, 1900}
 
 
-#define CSW_MAG_CONVERSION(MAG) class DOUBLES(MAG,CSW): MAG \
-{ \
+#define CSW_MAG_CONVERSION(MAG) class DOUBLES(MAG,CSW): MAG { \
     SCOPE_PUBLIC; \
     type = TYPE_MAGAZINE_PRIMARY_AND_THROW; \
     mass = 300; \

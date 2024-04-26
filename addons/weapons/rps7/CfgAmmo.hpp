@@ -1,8 +1,6 @@
-class CfgAmmo
-{
+class CfgAmmo {
     class CLASS(Rocket_Base);
-    class CLASS(Rocket_RPS7_HE): CLASS(Rocket_Base)
-    {
+    class CLASS(Rocket_RPS7_HE): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
 
         hit = 200;
@@ -25,8 +23,7 @@ class CfgAmmo
         ace_frag_metal = 400;
         ace_vehicle_damage_incendiary = 0.2;
 
-        class CamShakeExplode
-        {
+        class CamShakeExplode {
             distance = 123.905;
             duration = 2;
             frequency = 20;
@@ -34,8 +31,7 @@ class CfgAmmo
         };
     };
 
-    class CLASS(Rocket_RPS7_AT): CLASS(Rocket_Base)
-    {
+    class CLASS(Rocket_RPS7_AT): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
 
         hit = 250;
