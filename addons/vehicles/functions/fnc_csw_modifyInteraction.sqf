@@ -10,14 +10,14 @@
  * None
  *
  * Examples:
- * modifierFunction = "_this call BNA_KC_vehicles_fnc_cswDeployModifier;"
+ * modifierFunction = "_this call BNA_KC_vehicles_fnc_csw_modifyInteraction;"
  *
  * Public: No
  */
 
 params ["_target", "_player", "_params", "_actionData"];
 private ["_configPath", "_name", "_actionName"];
-TRACE_4("fnc_cswDeployModifier",_target,_player,_params,_actionData);
+TRACE_4("fnc_csw_modifyInteraction",_target,_player,_params,_actionData);
 
 _configPath = "";
 if (_target isEqualTo _player) then {

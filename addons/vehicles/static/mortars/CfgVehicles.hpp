@@ -40,9 +40,6 @@ class CfgVehicles {
             class MainTurret: MainTurret {
                 magazines[] = {};
                 weapons[] = {};
-
-                maxElev = 21.79; // Increasing lowers mininum range
-                minElev = -30;
             };
         };
 
@@ -53,12 +50,10 @@ class CfgVehicles {
             };
         };
 
-        class ace_csw: ace_csw {
+        class ace_csw {
             ammoLoadTime = 5;
             ammoUnloadTime = 5;
             desiredAmmo = 6;
-
-            magazineLocation = QUOTE(_target selectionPosition 'usti hlavne');
         };
 
         class assembleInfo {
@@ -81,8 +76,8 @@ class CfgVehicles {
                 hideOnUse = TRUE;
                 priority = 5;
 
-                condition = QUOTE([ARR_2(this,ace_player)] call ace_csw_fnc_assemble_canPickupTripod);
-                statement = QUOTE([ARR_2(this,ace_player)] call ace_csw_fnc_assemble_pickupTripod);
+                condition = QUOTE(GVAR(csw_showDeployAction) and {[ARR_2(ace_player,this)] call FUNC(csw_canPickup)});
+                statement = QUOTE([ARR_2(this,ace_player)] call ace_csw_fnc_assemble_pickupWeapon);
             };
         };
     };
@@ -92,7 +87,7 @@ class CfgVehicles {
         faction = QFACTION(KC);
         editorPreview = EEDITOR_PREVIEW(vehicles\static\SUBCOMPONENT,Mortar_M190);
 
-        displayName = "M-190 Disposable Mortar System";
+        displayName = "M-190 Mortar System";
         crew = QCLASS(Unit_Phase2_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         side = BLUFOR;
@@ -104,24 +99,26 @@ class CfgVehicles {
 
         class Turrets: Turrets {
             class MainTurret: MainTurret {
+                weapons[] = {QCLASS(Mortar_M190_Turret)};
                 magazines[] = {
                     QCLASS(Mag_6Rnd_Mortar_82mm_HE),
                     QCLASS(Mag_6Rnd_Mortar_SmokeWhite),
                     QCLASS(Mag_6Rnd_Mortar_SmokeBlue),
                     QCLASS(Mag_6Rnd_Mortar_SmokeRed)
                 };
-                weapons[] = {QCLASS(Mortar_M190_Turret)};
+
+                maxElev = 38.56; // Increasing lowers mininum range
+                minElev = -30;
             };
         };
 
         class ace_csw: ace_csw {
             enabled = TRUE;
-            disassembleTo = QCLASS(Mortar_M190_Carry);
+            disassembleTurret = "";
+            disassembleWeapon = QCLASS(Mortar_M190_Carry);
             proxyWeapon = QCLASS(Mortar_M190_ProxyWeapon);
             displayName = "M-190 Mortar";
+            magazineLocation = QUOTE(_target selectionPosition 'usti hlavne');
         };
-
-        // Most mortars should have pick up option, but not this one
-        class UserActions {};
     };
 };

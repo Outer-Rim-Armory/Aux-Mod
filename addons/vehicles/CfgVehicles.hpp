@@ -13,7 +13,8 @@ class CfgVehicles {
         };
         class ACE_SelfActions {
             class ace_csw_deploy {
-                modifierFunction = QUOTE(call FUNC(cswDeployModifier));
+                condition = QUOTE(call FUNC(csw_canDeploy));
+                modifierFunction = QUOTE(call FUNC(csw_modifyInteraction));
             };
         };
 
@@ -29,7 +30,7 @@ class CfgVehicles {
                 hideOnUse = TRUE;
                 priority = 5;
 
-                condition = QUOTE(ace_player isEqualTo this and GVAR(showCSWUserAction) and ace_player call ace_csw_fnc_assemble_canDeployTripod);
+                condition = QUOTE(GVAR(csw_showDeployAction) and {ace_player isEqualTo this} and {ace_player call FUNC(csw_canDeploy)});
                 statement = QUOTE(ace_player call ace_csw_fnc_assemble_deployTripod);
             };
         };

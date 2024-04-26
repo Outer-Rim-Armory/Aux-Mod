@@ -65,6 +65,9 @@ class CfgAmmo {
 
         MORTAR_SOUND_AMMO;
 
+        soundFakeFall[] = {"soundFakeFall0", 1};
+        soundFakeFall0[] = {QPATHTOF(sounds\data\audio\mortar\Fall1.wss), 3.16228, 1, 1000};
+
         class CamShakeExplode {
             distance = 216.443;
             duration = 1.8;

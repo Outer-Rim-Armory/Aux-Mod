@@ -432,7 +432,8 @@ class CfgWeapons {
         };
 
         class Single1: Single1 {
-            artilleryCharge = M190_RANGE_SMALL;
+            displayName = "Semi";
+            artilleryCharge = M190_RANGE_FAR;
             reloadTime = 4;
         };
         class Single2: Single2 {
@@ -442,6 +443,7 @@ class CfgWeapons {
         };
         class Single3: Single3 {
             artilleryCharge = M190_RANGE_FAR;
+            showToPlayer = FALSE;
             reloadTime = 4;
         };
 
