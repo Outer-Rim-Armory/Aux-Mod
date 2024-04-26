@@ -10,16 +10,24 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(accessories),
             "JLTS_weapons_DC17SA",
+            "LF_Weapon_Unit_dc17arc_dual",
+            "ls_animation_reloads",
             "ace_laserpointer"
         };
         units[] = {};
         weapons[] = {
-            QCLASS(Muzzle_FakeUGL),
-            QCLASS(DC17_Base),
+            QCLASS(DC17_base),
             QCLASS(DC17),
-            QCLASS(DC17_Fried),
-            QCLASS(DC17_RiotShield),
-            QCLASS(DC17_RiotShield_Fried)
+            QCLASS(DC17_fried),
+            QCLASS(DC17_riotShield),
+            QCLASS(DC17_riotShield_fried),
+            QCLASS(DC17_dual_base),
+            QCLASS(DC17_dual),
+            QCLASS(DC17_dual_fried),
+            QCLASS(DC17_dualCommander),
+            QCLASS(DC17_dualCommander_fried),
+            QCLASS(DC17_dualARC),
+            QCLASS(DC17_dualARC_fried)
         };
         VERSION_CONFIG;
     };
@@ -27,5 +35,6 @@ class CfgPatches {
 
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
+#include "CfgAmmo.hpp"
 #include "CfgSoundShaders.hpp"
 #include "CfgSoundSets.hpp"

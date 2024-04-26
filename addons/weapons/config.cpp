@@ -15,7 +15,8 @@ class CfgPatches {
         units[] = {};
         weapons[] = {
             QCLASS(Muzzle_Stun),
-            QCLASS(Muzzle_Stun_Fried)
+            QCLASS(Muzzle_Stun_Fried),
+            QCLASS(Muzzle_FakeUGL)
         };
         VERSION_CONFIG;
     };
