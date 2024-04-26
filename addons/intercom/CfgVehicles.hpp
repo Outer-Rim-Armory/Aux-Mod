@@ -129,6 +129,21 @@ class CfgVehicles {
         };
     };
 
+    class lsd_laatc_base;
+    class lsd_heli_laatc: lsd_laatc_base {
+        class ACE_SelfActions;
+    };
+    class CLASS(LAATc): lsd_heli_laatc {
+        TFAR_hasIntercom = FALSE;
+
+        class ACE_SelfActions: ACE_SelfActions {
+            INTERCOM_START;
+                INTERCOM_DISABLED;
+                INTERCOM_CREW;
+            INTERCOM_END;
+        };
+    };
+
     class OPTRE_Pelican_F: Helicopter_Base_H {
         class ACE_SelfActions;
     };

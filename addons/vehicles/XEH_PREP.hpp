@@ -13,7 +13,6 @@ PREP(csw_canDeploy);
 PREP(csw_canPickup);
 PREP(csw_modifyInteraction);
 PREP(canSpawnCrew);
-PREP(cswDeployModifier);
 PREP(skin_canSwitch);
 PREP(skin_insertChildren);
 PREP(unflip);
