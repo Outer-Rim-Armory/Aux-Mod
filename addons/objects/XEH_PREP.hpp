@@ -1,13 +1,3 @@
-PREP(applyLoadout);
-PREP(applyRankLoadout);
-PREP(canShowWeaponOption);
 PREP(deployInsertChildren);
 PREP(deployItem);
-PREP(giveWeapon);
-PREP(loadoutBoxInit);
-PREP(openArsenal);
 PREP(pickupItem);
-PREP(registerLoadouts);
-PREP(registerRankLoadouts);
-PREP(registerWeapons);
-PREP(uniformBoxInit);
