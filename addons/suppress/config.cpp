@@ -14,4 +14,5 @@ class CfgPatches {
     };
 };
 
+#include "RscTitles.hpp"
 #include "CfgEventHandlers.hpp"
