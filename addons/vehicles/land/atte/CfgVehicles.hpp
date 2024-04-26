@@ -5,7 +5,6 @@ class CfgVehicles {
     };
     class 3AS_ATTE_base: APC_Wheeled_01_base_F {
         class ACE_SelfActions;
-        class UserActions;
         class Turrets: Turrets {
             class MainTurretFront;
             class MainTurretBack;
@@ -36,6 +35,8 @@ class CfgVehicles {
         };
 
         ace_cargo_space = 10;
+
+        weapons[] = {QCLASS(Alarm_Juggernaut)};
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Shell_co.paa),
@@ -143,23 +144,6 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
-        };
-
-        class UserActions: UserActions {
-            class PlayAlarm {
-                displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>Play Alarm</t>";
-                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
-
-                position = "pilotview";
-                radius = 30;
-                onlyForPlayer = FALSE;
-
-                hideOnUse = TRUE;
-                priority = 5;
-
-                condition = QUOTE(ace_player == currentPilot this;);
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\atte\Alarm.ogg),objNull,false,getPosASL this,5,1,100)];);
-            };
         };
 
         class Turrets: Turrets {

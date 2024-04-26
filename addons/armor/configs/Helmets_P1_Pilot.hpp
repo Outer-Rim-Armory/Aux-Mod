@@ -13,6 +13,7 @@ class CLASS(Helmet_Phase1_Pilot_Base): CLASS(Helmet_Base) {
     picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
 
     HEARING_PROTECTION_CREW;
+    TFAR_externalIntercomWirelessCapable = TRUE;
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1", "camo2", "visor"};

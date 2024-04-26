@@ -69,8 +69,8 @@ class CfgVehicles {
 
         // Textures
         hiddenSelectionsTextures[] = {
-            QPATHTOF(air\laati\data\textures\KeeliCompany\Hull_co.paa),
-            QPATHTOF(air\laati\data\textures\KeeliCompany\Wings_co.paa),
+            QPATHTOF(air\laati\data\textures\KeeliCompany2\Hull_co.paa),
+            QPATHTOF(air\laati\data\textures\KeeliCompany2\Wings_co.paa),
             "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
             "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
             "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
@@ -79,7 +79,7 @@ class CfgVehicles {
         textureList[] = {
             "Standard", 0,
             "Imperial", 0,
-            "KeeliCompany", 1,
+            "KeeliCompany", 0,
             "KeeliCompany2", 1,
             "Akali", 0,
             "TwiLek", 0,

@@ -11,7 +11,7 @@ class CfgMagazines {
         model = "\MRC\JLTS\contraband\Credits\icecream.p3d";
         picture = "\MRC\JLTS\contraband\Credits\data\ui\icecream_ui_ca.paa";
 
-        ammo = "Flamethrower_Fuel";
+        ammo = QCLASS(Bullet_flamethrower);
         count = 150;
     };
 };

@@ -26,16 +26,6 @@ class CfgSoundSets {
         distanceFilter = "explosionDistanceFreqAttenuationFilter";
     };
 
-    class CLASS(SoundSet_Cannon_Galaxy_Shot): CLASS(SoundSet_VehicleWeapon_Base) {
-        soundShaders[] = {QCLASS(SoundShader_Cannon_Galaxy_Shot)};
-        sound3DProcessingType = "ExplosionMedium3DProcessingType";
-
-        volumeCurve = "InverseSquare1Curve";
-        volumeFactor = 1.8;
-
-        distanceFilter = "explosionDistanceFreqAttenuationFilter";
-    };
-
     class CLASS(SoundSet_Cannon_Blitz_Shot): CLASS(SoundSet_VehicleWeapon_Base) {
         soundShaders[] = {QCLASS(SoundShader_Cannon_Blitz_Shot)};
         sound3DProcessingType = "ExplosionMedium3DProcessingType";

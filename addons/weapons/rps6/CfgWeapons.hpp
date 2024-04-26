@@ -52,7 +52,6 @@ class CfgWeapons {
     class CLASS(RPS6_Loaded): CLASS(RPS6_Disposable) {
         SCOPE_PUBLIC;
 
-        baseWeapon = QCLASS(RPS6_Loaded);
         magazines[] = {"CBA_FakeLauncherMagazine"};
 
         class WeaponSlotsInfo: WeaponSlotsInfo {
@@ -65,8 +64,6 @@ class CfgWeapons {
 
         displayName = "[KC] RPS-6 (Used)";
         descriptionShort = "Used Rocket Tube";
-        baseWeapon = QCLASS(RPS6_Used);
-
         magazines[] = {"CBA_FakeLauncherMagazine"};
 
         JLTS_hasEMPProtection = TRUE; // No point in making a fried version
@@ -77,7 +74,6 @@ class CfgWeapons {
         displayName = "[KC] RPS-6 (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = QPATHTOF(rps6\data\ui\RPS6_Fried_ca.paa);
-        baseWeapon = QCLASS(RPS6_Disposable_Fried);
 
         JLTS_isFried = TRUE;
         JLTS_baseWeapon = QCLASS(RPS6_Disposable);

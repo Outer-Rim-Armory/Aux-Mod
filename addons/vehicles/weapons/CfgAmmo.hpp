@@ -32,31 +32,6 @@ class CfgAmmo {
         coefGravity = 0.01;
     };
 
-    class B_20mm_Tracer_Red;
-    class CLASS(Bullet_PlasmaGatling_Galaxy_Blue): B_20mm_Tracer_Red {
-        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
-        effectfly = "JLTS_plasma_blue";
-        coefGravity = 0.01;
-    };
-    class Sh_105mm_HEAT_MP;
-    class CLASS(Bullet_PlasmaCannon_Galaxy_Green): Sh_105mm_HEAT_MP {
-        model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
-        effectfly = "JLTS_plasma_green";
-        coefGravity = 0.01;
-    };
-    class B_40mm_GPR_Tracer_Red;
-    class CLASS(Bullet_PlasmaAutocannon_Galaxy_GPR_Blue): B_40mm_GPR_Tracer_Red {
-        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
-        effectfly = "JLTS_plasma_blue";
-        coefGravity = 0.01;
-    };
-    class B_40mm_APFSDS_Tracer_Red;
-    class CLASS(Bullet_PlasmaAutocannon_Galaxy_APFSDS_Red): B_40mm_APFSDS_Tracer_Red {
-        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
-        effectfly = "JLTS_plasma_red";
-        coefGravity = 0.01;
-    };
-
     class 3AS_ATRT_bluePlasma;
     class CLASS(Bullet_PlasmaATRT_Blue): 3AS_ATRT_bluePlasma {
         hit = 120;

@@ -85,29 +85,6 @@ class GVAR(deleteCrew) { \
     }; \
 }
 
-#define INTERCOM_START class TFAR_IntercomChannel { \
-    displayName = "Intercom Channel"; \
-    condition = "true"; \
-    statement = ""
-
-#define INTERCOM_DISABLED class TFAR_IntercomChannel_disabled { \
-    displayName = "Disabled"; \
-    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != -1); \
-    statement = QUOTE((objectParent ace_player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-1,true)]); \
-}
-#define INTERCOM_CARGO class TFAR_IntercomChannel_1 { \
-    displayName = "Cargo"; \
-    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != 1); \
-    statement = QUOTE((objectParent ace_Player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),0,true)]); \
-}
-#define INTERCOM_CREW class TFAR_IntercomChannel_2 { \
-    displayName = "Crew"; \
-    condition = QUOTE(_vehicle = objectParent ace_player; _intercom = _vehicle getVariable [ARR_2(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),-2)]; if (_intercom == -2) then {_intercom = _vehicle getVariable [ARR_2('TFAR_defaultIntercomSlot',TFAR_defaultIntercomSlot)]}; _intercom != 1); \
-    statement = QUOTE((objectParent ace_Player) setVariable [ARR_3(FORMAT_1('TFAR_IntercomSlot_%1',netID ace_player),1,true)]); \
-}
-
-#define INTERCOM_END }
-
 #define INVENTORY_VEHICLE_BASE(CREW_COUNT) class TransportWeapons { \
     WEAP_XX(CLASS(DC15S),__EVAL(1 * CREW_COUNT)); \
     WEAP_XX(CLASS(DC17),1); \
@@ -202,9 +179,6 @@ class TransportItems { \
 
 #define VEHICLE_LIST_AIR [ \
     QCLASS(ARC170), \
-    QCLASS(Galaxy_Gunship), \
-    QCLASS(Galaxy_Transport_Vehicle), \
-    QCLASS(Galaxy_Transport_Infantry), \
     QCLASS(LAATc), \
     QCLASS(LAATi_MK1), \
     QCLASS(LAATi_MK1_Lamps), \

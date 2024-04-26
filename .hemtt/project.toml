@@ -31,7 +31,8 @@ workshop = [
     # "2173635424", # 501st Aux Mod
     "2522638637", # ACE Arsenal Extended
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
-    "767380317",  # Blastcore # Only used to test particle effects
+    # "2954535667", # Warmantle Armory # Unused
+    "767380317", # Blastcore # Only used to test particle effects
 ]
 presets = ["main"]
 dlc = []
@@ -40,44 +41,18 @@ mission = "AuxTest.VR"
 parameters = []
 
 [hemtt.launch.full]
+extends = "default"
 workshop = [
-    "2369477168", # ADT
-    "623475643",  # 3DEN
-    "1779063631", # ZEN
-    "2018593688", # ZEN ACE Compat
-    "1686872930", # SDT
-    # "2173635424", # 501st Aux Mod
-    "2567352444", # WBK Droids # TODO: Move assets to aux itself
-    "2522638637", # ACE Arsenal Extended
     "1572627279", # OPTRE First Contact
     "2915485125", # Burn 'Em
-    "767380317",  # Blastcore
     "2789152015", # WBK Zombies
+    # "2954535667", # Warmantle Armory # Unused
     "2478080991", # Scion Conflict
 ]
-presets = ["main"]
-dlc = []
 optionals = ["no_burn_screams"]
-mission = "AuxTest.VR"
-parameters = []
 
 [hemtt.launch.previews]
-workshop = [
-    "2369477168", # ADT
-    "623475643",  # 3DEN
-    "1779063631", # ZEN
-    "2018593688", # ZEN ACE Compat
-    "1686872930", # SDT
-    "2567352444", # WBK Droids # TODO: Move assets to aux
-    "1572627279", # OPTRE First Contact
-    "2915485125", # Burn 'Em
-    "767380317",  # Blastcore
-    "2789152015", # WBK Zombies
-    "2478080991", # Scion Conflict
-]
-presets = ["main"]
-dlc = []
-optionals = []
+extends = "full"
 parameters = [
     "C:\\Users\\skull\\OneDrive\\Documents\\Arma 3 - Other Profiles\\Previews\\missions\\Previews.VR\\mission.sqm",
     "-name=Previews",

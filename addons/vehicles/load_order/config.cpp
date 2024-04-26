@@ -12,7 +12,6 @@ class CfgPatches {
             QGVAR(weapons),
             // Air
             QGVAR(arc170),
-            QGVAR(galaxy),
             QGVAR(laatc),
             QGVAR(laati),
             QGVAR(ogre),

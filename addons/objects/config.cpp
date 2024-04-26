@@ -20,8 +20,6 @@ class CfgPatches {
             QCLASS(Flag_KC_Damaged_Horizontal),
             QCLASS(Flag_KC_Damaged_Horizontal_Mirrored),
             QCLASS(Gonk_Base),
-            QCLASS(Gonk_Uniforms),
-            QCLASS(Gonk_Loadouts),
             QCLASS(Gonk_Permissions),
             QCLASS(Utility_Arsenal),
             QCLASS(Utility_FullHeal)

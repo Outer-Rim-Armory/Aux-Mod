@@ -15,6 +15,76 @@ class CfgAmmo {
         ACE_velocityBoundaries[] = {};
     };
 
+    class CLASS(Bullet_flamethrower): CLASS(Bullet_Base) {
+        SCOPE_PUBLIC;
+
+        cost = 2;
+        airFriction = 0.1;
+        coefGravity = 0.01;
+        maxSpeed = 25;
+        deflecting = 0;
+
+        caliber = 0.5;
+        hit = 10;
+        indirectHit = 6.5;
+        indirectHitRange = 2.5;
+        typicalSpeed = 0.12;
+        explosive = 1;
+        fuseDistance = 1;
+        triggerTime = 0.05;
+
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+        effectFly = "SmallFire";
+        cartridge = "";
+        explosionEffects = "Flame_Explosion";
+        craterEffects = "";
+        audibleFire = 12;
+
+        submunitionAmmo = QCLASS(Bullet_flamethrower_sub);
+        submunitionConeAngle = 4;
+        submunitionConeType[] = {"poissondisc", 4};
+
+        timeToLive = 2;
+        tracerEndTime = 0.1;
+        tracerScale = 0.001;
+        tracerStartTime = 0.01;
+        visibleFire = 32;
+        visibleFireTime = 20;
+    };
+
+    class CLASS(Bullet_flamethrower_sub): CLASS(Bullet_Base) {
+        SCOPE_PUBLIC;
+
+        cost = 2;
+        airFriction = 0;
+        coefGravity = 0.25;
+        maxSpeed = 25;
+        deflecting = 0;
+
+        caliber = 0.5;
+        hit = 10;
+        indirectHit = 5;
+        indirectHitRange = 1;
+        typicalSpeed = 0.12;
+        explosive = 1;
+        fuseDistance = 1;
+        triggerTime = 0.05;
+
+        model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
+        effectFly = "SmallFire";
+        cartridge = "";
+        explosionEffects = "Flame_Explosion";
+        craterEffects = "";
+        audibleFire = 12;
+
+        timeToLive = 3.5;
+        tracerEndTime = 0.1;
+        tracerScale = 0.01;
+        tracerStartTime = 0.01;
+        visibleFire = 32;
+        visibleFireTime = 20;
+    };
+
     class CLASS(Bullet_PlasmaBase): CLASS(Bullet_Base) {
         coefGravity = 0.01;
         airFriction = 0;
