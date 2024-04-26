@@ -38,6 +38,15 @@ class CfgVehicles {
         };
     };
 
+    class Helicopter;
+    class ParachuteBase: Helicopter {
+        class ACE_SelfActions {
+            class ACE_CutParachute {
+                condition = QUOTE(_target getVariable [ARR_2('ace_parachute_canCut',false)] or _player call FUNC(hasJetpack));
+            };
+        };
+    };
+
     class CLASS(cloneBackpack_base);
     class CLASS(Jetpack_JT12): CLASS(cloneBackpack_base) {
         JLTS_isJumppack = FALSE;

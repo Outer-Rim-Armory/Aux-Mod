@@ -9,7 +9,8 @@ class CfgPatches {
             QCLASS(armor),
             QEGVAR(factions,cis),
             QEGVAR(objects,resupply),
-            "ace_refuel"
+            "ace_refuel",
+            "ace_parachute"
         };
         units[] = {
             QCLASS(Resupply_JetpackFuel)
