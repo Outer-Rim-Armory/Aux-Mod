@@ -12,7 +12,7 @@ class GVAR(overlay) {
             y = "safezoneY";
             w = "safezoneWAbs";
             h = "safezoneH";
-            text = QPATHTOF(data\overlay_medium.paa);
+            text = QPATHTOF(data\overlayMedium_ca.paa);
             colortext[] = {0, 0, 0, 1};
         };
     };
