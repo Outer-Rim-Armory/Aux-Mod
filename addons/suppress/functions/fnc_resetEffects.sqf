@@ -1,7 +1,19 @@
 #include "..\script_component.hpp"
 /*
  * Author: SzwedzikPL
+ * Edited by DartRuffian
  * Resets suppression effect
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Examples:
+ * [] call BNA_KC_suppress_fnc_resetEffects;
+ *
+ * Public: No
  */
 
 private _display = uiNamespace getVariable [QGVAR(overlay), displayNull];

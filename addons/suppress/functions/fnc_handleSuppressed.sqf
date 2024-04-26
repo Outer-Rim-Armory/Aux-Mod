@@ -1,7 +1,19 @@
 #include "..\script_component.hpp"
 /*
  * Author: SzwedzikPL
+ * Edited by DartRuffian
  * Handles suppressed EH
+ *
+ * Arguments:
+ * See https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Suppressed
+ *
+ * Return Value:
+ * None
+ *
+ * Examples:
+ * See https://community.bistudio.com/wiki/Arma_3:_Event_Handlers#Suppressed
+ *
+ * Public: No
  */
 
 params ["_unit", "_distance", "_shooter", "", "_ammoObject"];

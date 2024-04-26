@@ -1,7 +1,19 @@
 #include "..\script_component.hpp"
 /*
  * Author: SzwedzikPL
+ * Edited by DartRuffian
  * Creates suppress overlay
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Examples:
+ * [] call BNA_KC_suppress_fnc_initOverlay;
+ *
+ * Public: No
  */
 
 // Exit if already created
