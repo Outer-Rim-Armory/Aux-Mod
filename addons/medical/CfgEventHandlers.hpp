@@ -22,7 +22,7 @@ class Extended_Init_EventHandlers {
             init = QUOTE(_this call FUNC(areaHealerInit));
         };
         class GVAR(loopSay3D_init) {
-            init = QUOTE(_this call EFUNC(core,loopSay3D_init));
+            serverInit = QUOTE(_this call EFUNC(core,loopSay3D_init));
         };
     };
 };
