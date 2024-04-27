@@ -12,4 +12,10 @@ class CfgSoundShaders {
             {QPATHTOF(data\audio\rocketFire\Fire3.wss), 1, 1}
         };
     };
+
+    class CLASS(SoundShader_flamethrowerStart): CLASS(SoundShader_WeaponShot_Base) {
+        samples[] = {
+            {QPATHTOF(data\audio\flamethrower\Start.wss), 1, 1}
+        };
+    };
 };
