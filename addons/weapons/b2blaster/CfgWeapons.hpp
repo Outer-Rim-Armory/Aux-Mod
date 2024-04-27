@@ -222,5 +222,32 @@ class CfgWeapons {
         WBK_BurnEm_RequiredBackpack = "";
         WBK_BurnEm_flamethrowerParticlePos = "[[0, 0, 0], 'righthand']";
         WBK_BurnEm_FlamethrowerSoundArray = "['flamethrower_start', 'flamethrower_looping', 4.8, 'flamethrower_end']";
+
+        modes[] = {"FullAuto", "close", "short", "medium"};
+        muzzles[] = {"this"};
+
+        class close: close {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
+            };
+        };
+
+        class short: short {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
+            };
+        };
+
+        class medium: medium {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
+            };
+        };
+
+        class FullAuto: FullAuto {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
+            };
+        };
     };
 };
