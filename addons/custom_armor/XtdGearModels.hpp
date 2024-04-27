@@ -27,6 +27,7 @@ class XtdGearModels {
                     "Jester",
                     "Joe",
                     "Keeli",
+                    "Kujo",
                     "Lou",
                     "Marge",
                     "Ox",
@@ -59,6 +60,7 @@ class XtdGearModels {
                 class Jester { label = "Jester"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
+                class Kujo { label = "Kujo"; };
                 class Lou { label = "Lou"; };
                 class Marge { label = "Marge"; };
                 class Ox { label = "Ox"; };
@@ -139,6 +141,7 @@ class XtdGearModels {
                     "Jaws",
                     "Joe",
                     "Keeli",
+                    "Kujo",
                     "Leon",
                     "Lou",
                     "Ox",
@@ -170,6 +173,7 @@ class XtdGearModels {
                 class Jaws { label = "Jaws"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
+                class Kujo { label = "Kujo"; };
                 class Leon { label = "Leon"; };
                 class Lou { label = "Lou"; };
                 class Ox { label = "Ox"; };
