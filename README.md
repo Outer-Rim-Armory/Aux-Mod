@@ -38,6 +38,7 @@ The Keeli Company Aux mod focuses on creating custom and in-depth systems, as we
 
 - [Chat Wheel](./addons/chat_wheel_redux/README.md)
 - [Fortify](./addons/fortify/README.md)
+- [Gonk Droids](./addons/gonks/README.md)
 - [Jetpacks](./addons/jetpacks/README.md)
 - [Map](./addons/map/README.md)
 - [Medical](./addons/medical/README.md)
