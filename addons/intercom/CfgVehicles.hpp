@@ -338,18 +338,6 @@ class CfgVehicles {
         };
     };
 
-    class 3AS_Jug_base_F: Wheeled_APC_F {
-        // class HitPoints: HitPoints {
-        //     class HitBody;
-        //     class HitHull;
-        // };
-        class UserActions {
-            class Crow_Nest_Up;
-            class Crow_Nest_Down;
-            class Open_Rockets;
-            class Close_Rockets;
-        };
-    };
     class 3AS_B_Jug_01_base_F;
     class 3AS_Jug: 3AS_B_Jug_01_base_F {
         class ACE_SelfActions;
