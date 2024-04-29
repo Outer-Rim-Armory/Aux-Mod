@@ -28,7 +28,9 @@
 
 ***All custom assets, scripts, etc. are licensed under APL-ND**. While containing original assets, this mod also includes re-uploads of other content with permission from their original authors.
 
-If an addon contains re-uploaded or modified content, it will be noted in a `LICENSE` file located in that addon.
+If an addon contains re-uploaded or modified content, it will be noted in a `LICENSE.md` file located in that addon.
+
+If you would like to reupload content from the Keeli Company aux mod, leave a comment in the [Reuploading Content from the Keeli Company Aux Mod](https://github.com/Outer-Rim-Armory/Aux-Mod/discussions/223) discussion post. **Asking does not guarentee a yes. Reuploading and not asking guarentees a DMCA.**
 <br>
 
 ---
