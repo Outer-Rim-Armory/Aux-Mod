@@ -1,10 +1,11 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Init function for a loadout box
+ * Init function for a loadout box.
  *
  * Arguments:
  * 0: The object to add the actions to <OBJECT>
+ * No effect when ran on the server.
  *
  * Return Value:
  * None
@@ -12,7 +13,7 @@
  * Example:
  * _box call BNA_KC_gonks_fnc_loadoutBoxInit;
  *
- * Public: No
+ * Public: Yes
  */
 
 params [
@@ -20,7 +21,7 @@ params [
 ];
 TRACE_1("fnc_loadoutBoxInit",_object);
 
-if (isNull _object) exitWith {};
+if (isNull _object or !hasInterface) exitWith {};
 
 {
     private ["_detachment", "_label", "_order"];
