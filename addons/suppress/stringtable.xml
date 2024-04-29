@@ -67,25 +67,25 @@
       <German>Die Ausklingzeit des Effekts in Sekunden.</German>
     </Key>
     <Key ID="STR_BNA_KC_Suppress_projectileMaxDistance_name">
-      <English>Projectile max distance</English>
+      <English>Projectile maximum distance</English>
       <Polish>Maksymalny dystans od pocisku</Polish>
       <Russian>Максимальная дистанция до снаряда</Russian>
       <German>Maximale Entfernung zum Projektil</German>
     </Key>
     <Key ID="STR_BNA_KC_Suppress_projectileMaxDistance_tooltip">
-      <English>Max distance from passing projectile in meters. Projectiles passing at larger distance won't be taken into account.</English>
+      <English>Maximum distance from passing projectile in meters. Projectiles passing at larger distance won't be taken into account.</English>
       <Polish>Maksymalny dystans od przelatującego pocisku w metrach. Pociski przelatujące na większym dystansie nie będą brane pod uwagę.</Polish>
       <Russian>Максимальное расстояние пролетающего снаряда. Снаряды, пролетающие на большем расстоянии не будут создавать эффект подавления.</Russian>
       <German>Maximale Entfernung vom vorbeifliegenden Projektil in Metern. Projektile die in größerer Entfernung vorbeifliegenden werden nicht berücksichtigt.</German>
     </Key>
     <Key ID="STR_BNA_KC_Suppress_shooterMinDistance_name">
-      <English>Min distance from shooter</English>
+      <English>Minimum distance from shooter</English>
       <Polish>Minimalny dystans od strzelca</Polish>
       <Russian>Минимальная дистанция до стрелка</Russian>
       <German>Kleinste Entfernung vom Schützen</German>
     </Key>
     <Key ID="STR_BNA_KC_Suppress_shooterMinDistance_tooltip">
-      <English>Min distance from shooter in meters. This option can be used to disable effect in CQB situations, 0 to disable min distance.</English>
+      <English>Minimum distance from shooter in meters. This option can be used to disable effect in CQB situations, 0 to disable min distance.</English>
       <Polish>Minimalny dystans od strzelca w metrach. Za pomocą tej opcji można wyłączyć efekt przygwożdżenia podczas walki na bliski dystanc, 0 aby wyłaczyć.</Polish>
       <Russian>Минимальная дистанция до стрелка в метрах. Данная опция может использоваться для отключения в случаях боя в ограниченном пространстве. Значение 0 отключает опцию.</Russian>
       <German>Kleinste Entfernung vom Schützen in Metern. Diese Option kann verwendet werden, um den Effekt in Häuserkämpfen zu deaktivieren. Ein wert von 0 deaktiviert den Mindestabstand.</German>

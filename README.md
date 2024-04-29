@@ -36,14 +36,20 @@ If an addon contains re-uploaded or modified content, it will be noted in a `LIC
 ## Mod Features
 The Keeli Company Aux mod focuses on creating custom and in-depth systems, as well as the standard features you would find in other unit aux mods such as custom textured equipment; vehicles; and balance tweaks. Each of these systems has a document outlining how to use that particular system.
 
+- [Armor](./addons/armor/README.md)
 - [Chat Wheel](./addons/chat_wheel_redux/README.md)
+- [Creatures](./addons/creatures/README.md)
+- [Custom Armor](./addons/creatures/README.md)
 - [Droids](./addons/droids/README.md)
 - [Fortify](./addons/fortify/README.md)
 - [Gonk Droids](./addons/gonks/README.md)
+- [Intercom](./addons/intercom/README.md)
 - [Jetpacks](./addons/jetpacks/README.md)
 - [Map](./addons/map/README.md)
 - [Medical](./addons/medical/README.md)
 - [Radio Jammers](./addons/jammers/README.md)
+- [Screenshot Mode](./addons/screenshotmode/README.md)
+- [Suppress](./addons/suppress/README.md)
 - [Vehicle Shields](./addons/shields/README.md)
 - [Vehicle Systems](./addons/vehicles/README.md)
 - [Weapon Systems](./addons/weapons/README.md)
