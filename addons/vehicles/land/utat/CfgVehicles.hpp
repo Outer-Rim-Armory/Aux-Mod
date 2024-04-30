@@ -12,7 +12,7 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
-        hiddenSelections[] = {"primary", "secondary"};
+        hiddenSelections[] = {"camo", "camo1"}; // 3AS bug, missing comma in original config
         hiddenSelectionsTextures[] = {DBUG_TEX_RED, DBUG_TEX_GRN};
     };
 };
