@@ -23,12 +23,10 @@ params ["_target", "_player", "_params"];
 // Get a fuel can and it's fuel level from the unit's inventory
 // Empty cans are CBA_miscItems, non-empty cans are magazines
 [_player, true] call BNA_KC_Jetpacks_fnc_getFuelCan params ["_fuelCan", "_fuelCanFuel"];
-if !(_fuelCan isKindOf "CA_Magazine") then
-{
+if !(_fuelCan isKindOf "CA_Magazine") then {
     // Fuel can is empty, get magazine data
     // Not actually converted (i.e. remove item and add mag) because magazines with no ammo are not include in `magazines unit`
-    _fuelCan =
-    [
+    _fuelCan = [
         (configFile >> "CfgWeapons" >> _fuelCan),
         QGVAR(fuelCanMag),
         QCLASS(Jetpack_FuelCan_Mag)
@@ -41,13 +39,11 @@ private _targetFuel = _target call FUNC(getFuel);
 private _fuelToRefill = round (((_fuelCanFuel + _targetFuel) min _fuelCanMaxFuel) - _fuelCanFuel);
 private _refuelTime = _fuelToRefill / REFUEL_PER_SECOND;
 
-private _refuelHandler =
-{
+private _refuelHandler = {
     _this#0 params ["_player", "_target"];
     private _handlerID = _this#1;
 
-    private _removeSelf =
-    {
+    private _removeSelf = {
         [_handlerID] call CBA_fnc_removePerFrameHandler;
         _player setVariable ["BNA_KC_Jetpack_isRefuelingFromBody", nil];
         playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_end.wss", _player, false, getPosASL _player, 1, 1, 8];
@@ -60,8 +56,7 @@ private _refuelHandler =
     if ([_target, true] call FUNC(getFuel) == 0) exitWith { call _removeSelf; };
 
     [_player, true] call BNA_KC_Jetpacks_fnc_getFuelCan params ["_fuelCan", "_fuelCanFuel"];
-    if !(_fuelCan isKindOf "CA_Magazine") then
-    {
+    if !(_fuelCan isKindOf "CA_Magazine") then {
         // Fuel can is empty, needs to be converted to magazine
         _player removeItem _fuelCan;
         _fuelCan =
@@ -89,36 +84,28 @@ private _refuelHandler =
 
 
 // [_player, "Acts_TreatingWounded04"] call ace_common_fnc_doAnimation;
-[
-    _refuelTime,
-    [_player, _target, _refuelHandler],
-    {
-        // On Success
-        _this#0 params ["_player", "_args"];
-        _player setVariable ["BNA_KC_Jetpack_isRefuelingFromBody", nil];
-        cutText ["Finished collecting fuel", "PLAIN DOWN"];
-    },
-    {
-        // On Failure
-        _this#0 params ["_player", "_args"];
-        _player setVariable ["BNA_KC_Jetpack_isRefuelingFromBody", nil];
-        cutText ["Cancelled", "PLAIN DOWN"];
-    },
-    "Refueling...",
-    {
-        _this#0 params ["_player", "_target", "_refuelHandler"];
+[ _refuelTime, [_player, _target, _refuelHandler], {
+    // On Success
+    _this#0 params ["_player", "_args"];
+    _player setVariable ["BNA_KC_Jetpack_isRefuelingFromBody", nil];
+    cutText ["Finished collecting fuel", "PLAIN DOWN"];
+}, {
+    // On Failure
+    _this#0 params ["_player", "_args"];
+    _player setVariable ["BNA_KC_Jetpack_isRefuelingFromBody", nil];
+    cutText ["Cancelled", "PLAIN DOWN"];
+}, "Refueling...", {
+    _this#0 params ["_player", "_target", "_refuelHandler"];
 
-        // Start refuel
-        if !(_player getVariable ["BNA_KC_Jetpack_isRefuelingFromBody", false]) then
-        {
-            playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_start.wss", _player, false, getPosASL _player, 1, 1, 8];
-            _player setVariable ["BNA_KC_Jetpack_isRefuelingFromBody", true];
-            [_refuelHandler, 1, [_player, _target]] call CBA_fnc_addPerFrameHandler;
-        };
+    // Start refuel
+    if !(_player getVariable ["BNA_KC_Jetpack_isRefuelingFromBody", false]) then {
+        playSound3D ["a3\missions_f_oldman\data\sound\refueling\refueling_start.wss", _player, false, getPosASL _player, 1, 1, 8];
+        _player setVariable ["BNA_KC_Jetpack_isRefuelingFromBody", true];
+        [_refuelHandler, 1, [_player, _target]] call CBA_fnc_addPerFrameHandler;
+    };
 
-        // Conditions
-        lifeState _player != "INCAPACITATED" and
-        alive _player and
-        [_player] call ace_common_fnc_isAwake;
-    }
-] call ace_common_fnc_progressBar;
+    // Conditions
+    lifeState _player != "INCAPACITATED" and
+    alive _player and
+    [_player] call ace_common_fnc_isAwake;
+}] call ace_common_fnc_progressBar;

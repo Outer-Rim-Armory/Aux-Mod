@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_15Rnd_DC15X): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_15Rnd_DC15X): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-15X Energy Cell";
         displayNameShort = "High Energy";
@@ -16,8 +14,7 @@ class CfgMagazines
         mass = 10;
     };
 
-    class Aux12thFleet_Mag_DC15X: CLASS(Mag_15Rnd_DC15X)
-    {
+    class Aux12thFleet_Mag_DC15X: CLASS(Mag_15Rnd_DC15X) {
         SCOPE_HIDDEN;
         descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DC-15X<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };

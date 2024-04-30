@@ -1,11 +1,9 @@
-class CfgCloudlets
-{
+class CfgCloudlets {
     // https://community.bistudio.com/wiki/Arma_3:_Particle_Effects
     // Blastcore modifies the original flare effect, causes some issues with the jetpacks
     // TODO: Move to particles addon
     class Flare2;
-    class CLASS(Effects_FlareBase): Flare2
-    {
+    class CLASS(Effects_FlareBase): Flare2 {
         angle = 0;
         angleVar = 360;
         animationName = "";
@@ -48,11 +46,9 @@ class CfgCloudlets
         volume = 0.8;
         weight = 1;
     };
-    class CLASS(Effects_JetpackFire_Blue): CLASS(Effects_FlareBase)
-    {
+    class CLASS(Effects_JetpackFire_Blue): CLASS(Effects_FlareBase) {
         // colorCoef to color the whole particle, not just the middle
-        colorCoef[] =
-        {
+        colorCoef[] = {
             // R, G, B, A
             0,
             0.1,
@@ -66,8 +62,7 @@ class CfgCloudlets
     };
 
     class AirFireSparks;
-    class CLASS(Effects_SparksBase): AirFireSparks
-    {
+    class CLASS(Effects_SparksBase): AirFireSparks {
         angle = 0;
         angleVar = 360;
         animationName = "";
@@ -111,10 +106,8 @@ class CfgCloudlets
         volume = 1;
         weight = 1.05;
     };
-    class CLASS(Effects_JetpackSparks_Blue): CLASS(Effects_SparksBase)
-    {
-        color[] =
-        {
+    class CLASS(Effects_JetpackSparks_Blue): CLASS(Effects_SparksBase) {
+        color[] = {
             {0.2, 0.2, 1, -6.5},
             {0.2, 0.2, 1, -6},
             {0.2, 0.2, 1, -5.5},
@@ -139,8 +132,7 @@ class CfgCloudlets
 
     // There's probably a better particle to base the smoke off of
     class MediumSmoke;
-    class CLASS(Effects_SmokeBase): MediumSmoke
-    {
+    class CLASS(Effects_SmokeBase): MediumSmoke {
         angle = 0;
         angleVar = 1;
         animationName = "";
@@ -182,10 +174,8 @@ class CfgCloudlets
         volume = 0.04;
         weight = 0.05;
     };
-    class CLASS(Effects_JetpackSmoke): CLASS(Effects_SmokeBase)
-    {
-        color[] =
-        {
+    class CLASS(Effects_JetpackSmoke): CLASS(Effects_SmokeBase) {
+        color[] = {
             {0.9, 0.9, 0.9, 0.08},
             {0.9, 0.9, 0.9, 0.04},
             {0.9, 0.9, 0.9, 0.01},

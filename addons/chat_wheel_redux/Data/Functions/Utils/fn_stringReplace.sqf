@@ -18,8 +18,7 @@
 params ["_str", "_find", ["_replace", ""]];
 private ["_return", "_len", "_pos"];
 
-if ( !(_find isEqualType []) ) then
-{
+if ( !(_find isEqualType []) ) then {
     _find = [_find];
 };
 

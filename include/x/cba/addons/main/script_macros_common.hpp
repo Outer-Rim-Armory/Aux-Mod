@@ -1415,8 +1415,7 @@ Author:
     Spooner
 ------------------------------------------- */
 #define ASSERT_TRUE(CONDITION,MESSAGE) \
-    if (not (CONDITION)) then \
-    { \
+    if (not (CONDITION)) then { \
         ASSERTION_ERROR('Assertion (CONDITION) failed!\n\n' + (MESSAGE)); \
     }
 
@@ -1437,8 +1436,7 @@ Author:
     Spooner
 ------------------------------------------- */
 #define ASSERT_FALSE(CONDITION,MESSAGE) \
-    if (CONDITION) then \
-    { \
+    if (CONDITION) then { \
         ASSERTION_ERROR('Assertion (not (CONDITION)) failed!\n\n' + (MESSAGE)) \
     }
 
@@ -1461,8 +1459,7 @@ Author:
     Spooner
 ------------------------------------------- */
 #define ASSERT_OP(A,OPERATOR,B,MESSAGE) \
-    if (not ((A) OPERATOR (B))) then \
-    { \
+    if (not ((A) OPERATOR (B))) then { \
         ASSERTION_ERROR('Assertion (A OPERATOR B) failed!\n' + 'A: ' + (str (A)) + '\n' + 'B: ' + (str (B)) + "\n\n" + (MESSAGE)); \
     }
 
@@ -1484,8 +1481,7 @@ Author:
     Spooner
 ------------------------------------------- */
 #define ASSERT_DEFINED(VARIABLE,MESSAGE) \
-    if (isNil VARIABLE) then \
-    { \
+    if (isNil VARIABLE) then { \
         ASSERTION_ERROR('Assertion (VARIABLE is defined) failed!\n\n' + (MESSAGE)); \
     }
 
@@ -1513,12 +1509,10 @@ Author:
     Killswitch
 ------------------------------------------- */
 #define TEST_TRUE(CONDITION, MESSAGE) \
-    if (CONDITION) then \
-    { \
+    if (CONDITION) then { \
         TEST_SUCCESS('(CONDITION)'); \
     } \
-    else \
-    { \
+    else { \
         TEST_FAIL('(CONDITION) ' + (MESSAGE)); \
     }
 
@@ -1540,12 +1534,10 @@ Author:
     Killswitch
 ------------------------------------------- */
 #define TEST_FALSE(CONDITION, MESSAGE) \
-    if (not (CONDITION)) then \
-    { \
+    if (not (CONDITION)) then { \
         TEST_SUCCESS('(not (CONDITION))'); \
     } \
-    else \
-    { \
+    else { \
         TEST_FAIL('(not (CONDITION)) ' + (MESSAGE)); \
     }
 
@@ -1569,12 +1561,10 @@ Author:
     Killswitch
 ------------------------------------------- */
 #define TEST_OP(A,OPERATOR,B,MESSAGE) \
-    if ((A) OPERATOR (B)) then \
-    { \
+    if ((A) OPERATOR (B)) then { \
         TEST_SUCCESS('(A OPERATOR B)') \
     } \
-    else \
-    { \
+    else { \
         TEST_FAIL('(A OPERATOR B)') \
     };
 
@@ -1629,12 +1619,10 @@ Author:
     Killswitch
 ------------------------------------------- */
 #define TEST_DEFINED(VARIABLE,MESSAGE) \
-    if (not isNil VARIABLE) then \
-    { \
+    if (not isNil VARIABLE) then { \
         TEST_SUCCESS('(' + VARIABLE + ' is defined)'); \
     } \
-    else \
-    { \
+    else { \
         TEST_FAIL('(' + VARIABLE + ' is not defined)' + (MESSAGE)); \
     }
 

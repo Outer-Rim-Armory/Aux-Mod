@@ -1,27 +1,25 @@
 #include "script_component.hpp"
 
-class CfgPatches
-{
-    class ADDON
-    {
+class CfgPatches {
+    class ADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QCLASS(core),
             QCLASS(armor)
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Unit_Axel),
             QCLASS(Unit_Bob),
             QCLASS(Unit_Burnt),
             QCLASS(Unit_Catholic),
+            QCLASS(Unit_Cutthroat),
             QCLASS(Unit_Defter),
             QCLASS(Unit_Dexus),
             QCLASS(Unit_Drake),
             QCLASS(Unit_Hagrid),
+            QCLASS(Unit_Harry),
             QCLASS(Unit_Joe),
             QCLASS(Unit_Keeli),
             QCLASS(Unit_Keeli_CamoBrown),
@@ -35,9 +33,14 @@ class CfgPatches
             QCLASS(Unit_Phase2_Insulated_Dexus),
             QCLASS(Unit_Phase2_Insulated_Joe),
             QCLASS(Unit_Phase2_Insulated_Keeli),
-            QCLASS(Backpack_Keeli),
+            QCLASS(cloneBackpack_standard_Keeli),
+            QCLASS(cloneBackpack_heavy_Dexus),
+            QCLASS(cloneBackpack_heavy_Rev),
+            QCLASS(cloneBackpack_medicRadio_Hazard),
+            QCLASS(cloneBackpack_radioHeavy_Jaws),
             QGROUND_CLASS(Helmet_Phase1_Alvarez),
             QGROUND_CLASS(Helmet_Phase1_Axel),
+            QGROUND_CLASS(Helmet_Phase1_Bond),
             QGROUND_CLASS(Helmet_Phase1_Burnt),
             QGROUND_CLASS(Helmet_Phase1_BurntBacta),
             QGROUND_CLASS(Helmet_Phase1_Catholic),
@@ -50,7 +53,9 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase1_Drake),
             QGROUND_CLASS(Helmet_Phase1_DrakeBacta),
             QGROUND_CLASS(Helmet_Phase1_Grey),
+            QGROUND_CLASS(Helmet_Phase1_Harry),
             QGROUND_CLASS(Helmet_Phase1_Hazard),
+            QGROUND_CLASS(Helmet_Phase1_Henkie),
             QGROUND_CLASS(Helmet_Phase1_Jaws),
             QGROUND_CLASS(Helmet_Phase1_Jester),
             QGROUND_CLASS(Helmet_Phase1_Joe),
@@ -61,8 +66,10 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase1_KeeliCrimson_CamoBrown),
             QGROUND_CLASS(Helmet_Phase1_Keeli_CamoGrey),
             QGROUND_CLASS(Helmet_Phase1_KeeliCrimson_CamoGrey),
+            QGROUND_CLASS(Helmet_Phase1_Kujo),
             QGROUND_CLASS(Helmet_Phase1_Lou),
             QGROUND_CLASS(Helmet_Phase1_LouPlasma),
+            QGROUND_CLASS(Helmet_Phase1_Marge),
             QGROUND_CLASS(Helmet_Phase1_Ox),
             QGROUND_CLASS(Helmet_Phase1_Patriot),
             QGROUND_CLASS(Helmet_Phase1_Rat),
@@ -80,12 +87,14 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase1_Pilot_Bailout),
             QGROUND_CLASS(Helmet_Phase1_Pilot_Blue),
             QGROUND_CLASS(Helmet_Phase1_Pilot_BlueBacta),
+            QGROUND_CLASS(Helmet_Phase1_Pilot_Evo),
             QGROUND_CLASS(Helmet_Phase1_Pilot_Mischief),
             QGROUND_CLASS(Helmet_Phase1_Tanker_Grey),
             QGROUND_CLASS(Helmet_Phase2_Alvarez),
             QGROUND_CLASS(Helmet_Phase2_Axel),
             QGROUND_CLASS(Helmet_Phase2_Bob),
             QGROUND_CLASS(Helmet_Phase2_BobKyber),
+            QGROUND_CLASS(Helmet_Phase2_Bond),
             QGROUND_CLASS(Helmet_Phase2_Burnt),
             QGROUND_CLASS(Helmet_Phase2_BurntBacta),
             QGROUND_CLASS(Helmet_Phase2_Dexus),
@@ -94,6 +103,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase2_Grey),
             QGROUND_CLASS(Helmet_Phase2_Harry),
             QGROUND_CLASS(Helmet_Phase2_Hazard),
+            QGROUND_CLASS(Helmet_Phase2_Henkie),
             QGROUND_CLASS(Helmet_Phase2_Jackal),
             QGROUND_CLASS(Helmet_Phase2_Jaws),
             QGROUND_CLASS(Helmet_Phase2_Joe),
@@ -104,6 +114,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_Phase2_KeeliCrimson_CamoBrown),
             QGROUND_CLASS(Helmet_Phase2_Keeli_CamoGrey),
             QGROUND_CLASS(Helmet_Phase2_KeeliCrimson_CamoGrey),
+            QGROUND_CLASS(Helmet_Phase2_Kujo),
             QGROUND_CLASS(Helmet_Phase2_Leon),
             QGROUND_CLASS(Helmet_Phase2_Lou),
             QGROUND_CLASS(Helmet_Phase2_LouPlasma),
@@ -154,8 +165,7 @@ class CfgPatches
             QGROUND_CLASS(Helmet_BARC_Rat),
             QGROUND_CLASS(Helmet_BARC_RatCrimson)
         };
-        weapons[] =
-        {
+        weapons[] = {
             QCLASS(Helmet_Phase1_Alvarez),
             QCLASS(Helmet_Phase1_Axel),
             QCLASS(Helmet_Phase1_Burnt),
@@ -170,7 +180,9 @@ class CfgPatches
             QCLASS(Helmet_Phase1_Drake),
             QCLASS(Helmet_Phase1_DrakeBacta),
             QCLASS(Helmet_Phase1_Grey),
+            QCLASS(Helmet_Phase1_Harry),
             QCLASS(Helmet_Phase1_Hazard),
+            QCLASS(Helmet_Phase1_Henkie),
             QCLASS(Helmet_Phase1_Jaws),
             QCLASS(Helmet_Phase1_Jester),
             QCLASS(Helmet_Phase1_Joe),
@@ -181,8 +193,10 @@ class CfgPatches
             QCLASS(Helmet_Phase1_KeeliCrimson_CamoBrown),
             QCLASS(Helmet_Phase1_Keeli_CamoGrey),
             QCLASS(Helmet_Phase1_KeeliCrimson_CamoGrey),
+            QCLASS(Helmet_Phase1_Kujo),
             QCLASS(Helmet_Phase1_Lou),
             QCLASS(Helmet_Phase1_LouPlasma),
+            QCLASS(Helmet_Phase1_Marge),
             QCLASS(Helmet_Phase1_Ox),
             QCLASS(Helmet_Phase1_Patriot),
             QCLASS(Helmet_Phase1_Rat),
@@ -214,6 +228,7 @@ class CfgPatches
             QCLASS(Helmet_Phase2_Grey),
             QCLASS(Helmet_Phase2_Harry),
             QCLASS(Helmet_Phase2_Hazard),
+            QCLASS(Helmet_Phase2_Henkie),
             QCLASS(Helmet_Phase2_Jackal),
             QCLASS(Helmet_Phase2_Jaws),
             QCLASS(Helmet_Phase2_Joe),
@@ -224,6 +239,7 @@ class CfgPatches
             QCLASS(Helmet_Phase2_KeeliCrimson_CamoBrown),
             QCLASS(Helmet_Phase2_Keeli_CamoGrey),
             QCLASS(Helmet_Phase2_KeeliCrimson_CamoGrey),
+            QCLASS(Helmet_Phase2_Kujo),
             QCLASS(Helmet_Phase2_Leon),
             QCLASS(Helmet_Phase2_Lou),
             QCLASS(Helmet_Phase2_LouPlasma),
@@ -277,10 +293,12 @@ class CfgPatches
             QCLASS(Uniform_Bob),
             QCLASS(Uniform_Burnt),
             QCLASS(Uniform_Catholic),
+            QCLASS(Uniform_Cutthroat),
             QCLASS(Uniform_Defter),
             QCLASS(Uniform_Dexus),
             QCLASS(Uniform_Drake),
             QCLASS(Uniform_Hagrid),
+            QCLASS(Uniform_Harry),
             QCLASS(Uniform_Joe),
             QCLASS(Uniform_Keeli),
             QCLASS(Uniform_Keeli_CamoBrown),

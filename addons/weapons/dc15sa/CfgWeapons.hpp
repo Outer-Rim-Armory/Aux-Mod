@@ -1,12 +1,9 @@
-class CfgWeapons
-{
+class CfgWeapons {
     class Pistol_Base_F;
-    class SWLW_DC15SA: Pistol_Base_F
-    {
+    class SWLW_DC15SA: Pistol_Base_F {
         class Single;
     };
-    class CLASS(DC15SA_Base): SWLW_DC15SA
-    {
+    class CLASS(DC15SA_Base): SWLW_DC15SA {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -15,8 +12,7 @@ class CfgWeapons
 
         modes[] = {"Single", "FullAuto"};
         muzzles[] = {"this"};
-        magazines[] =
-        {
+        magazines[] = {
             QCLASS(Mag_7Rnd_DC15SA),
             QCLASS(Mag_15Rnd_DC15SA),
             QCLASS(Mag_30Rnd_DC15SA),
@@ -34,18 +30,15 @@ class CfgWeapons
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = TRUE;
 
-        class Single: Single
-        {
+        class Single: Single {
             recoil = "recoil_pistol_light";
             recoilProne = "recoil_prone_pistol_light";
-            class StandardSound
-            {
+            class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_DC15SAShot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_DC15SAShot)};
             };
         };
-        class FullAuto: Single
-        {
+        class FullAuto: Single {
             autoFire = TRUE;
             textureType = "fullAuto";
             dispersion = 0.001;
@@ -53,8 +46,7 @@ class CfgWeapons
         };
     };
 
-    class CLASS(DC15SA): CLASS(DC15SA_Base)
-    {
+    class CLASS(DC15SA): CLASS(DC15SA_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-15SA";
         baseWeapon = QCLASS(DC15SA);

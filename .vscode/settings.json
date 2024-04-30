@@ -7,8 +7,8 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": false,
 
-    "files.associations":
-    {
+    "files.associations": {
+        "*.cpp": "cpp",
         "*.hpp": "cpp"
     },
 

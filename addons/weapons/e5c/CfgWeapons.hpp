@@ -1,14 +1,11 @@
 class Mode_FullAuto;
 
-class CfgWeapons
-{
+class CfgWeapons {
     class LMG_Mk200_F;
-    class JLTS_E5C: LMG_Mk200_F
-    {
+    class JLTS_E5C: LMG_Mk200_F {
         class WeaponSlotsInfo;
     };
-    class CLASS(E5C_Base): JLTS_E5C
-    {
+    class CLASS(E5C_Base): JLTS_E5C {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -28,11 +25,9 @@ class CfgWeapons
 
         fireLightDiffuse[] = {1, 0, 0};
 
-        class Manual: Mode_FullAuto
-        {
+        class Manual: Mode_FullAuto {
             sounds[] = {"StandardSound"};
-            class StandardSound
-            {
+            class StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
                 soundSetShot[] = {QCLASS(SoundSet_E5Shot)};
@@ -41,8 +36,7 @@ class CfgWeapons
         };
     };
 
-    class CLASS(E5C): CLASS(E5C_Base)
-    {
+    class CLASS(E5C): CLASS(E5C_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] E-5C";
@@ -50,8 +44,7 @@ class CfgWeapons
 
         JLTS_friedItem = QCLASS(E5C_Fried);
     };
-    class CLASS(E5C_Fried): CLASS(E5C)
-    {
+    class CLASS(E5C_Fried): CLASS(E5C) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] E-5C (Fried)";
@@ -64,8 +57,7 @@ class CfgWeapons
         magazines[] = {};
     };
 
-    class CLASS(E5C_Stock): CLASS(E5C_Base)
-    {
+    class CLASS(E5C_Stock): CLASS(E5C_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] E-5C (Stock)";
@@ -77,13 +69,11 @@ class CfgWeapons
         handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\e5c\anims\e5c_stock_handanim.rtm"};
         picture = "\MRC\JLTS\weapons\e5c\data\ui\e5c_stock_ui_ca.paa";
 
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 132;
         };
     };
-    class CLASS(E5C_Stock_Fried): CLASS(E5C_Stock)
-    {
+    class CLASS(E5C_Stock_Fried): CLASS(E5C_Stock) {
         SCOPE_HIDDEN;
 
         displayName = "[KC] E-5C (Stock, Fried)";

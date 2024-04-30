@@ -18,13 +18,11 @@
 
 params ["_str", ["_removeDouble", true], ["_removeSingle", true]];
 
-if (_removeDouble) then
-{
+if (_removeDouble) then {
     _str = [_str, '"', ""] call CWR_fnc_stringReplace;
 };
 
-if (_removeDouble) then
-{
+if (_removeDouble) then {
     _str = [_str, "'", ""] call CWR_fnc_stringReplace;
 };
 

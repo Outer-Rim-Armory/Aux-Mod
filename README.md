@@ -5,7 +5,8 @@
 <div id="user-content-toc">
   <ul>
     <summary><h1 style="display: inline-block;">Keeli Company Aux Mod</h1><br>
-    Version 2.6.4</summary>
+    Version 2.6.1<br>
+    <img style="padding-top:10px" src="https://www.bohemia.net/assets/img/licenses/APL-ND.png">*</summary>
   </ul>
 </div>
 
@@ -15,7 +16,7 @@
 
 </h3>
 
-[![Contributors](https://img.shields.io/github/contributors/DartRuffian/KeeliCompanyAux?logo=github&label=Contributors&labelColor=444D56)](https://github.com/DartRuffian/KeeliCompanyAux/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/Outer-Rim-Armory/Aux-Mod?logo=github&label=Contributors&labelColor=444D56)](https://github.com/Outer-Rim-Armory/Aux-Mod/graphs/contributors)
 [![Discord](https://img.shields.io/discord/397600745173549057?logo=discord&label=Join%20the%20Unit&&labelColor=24292E&color=5865F2)](https://discord.gg/ZKPt3GjxQC)
 [![Last Updated](https://img.shields.io/steam/update-date/2791896289?logo=steam&label=Last%20Updated&labelColor=2a475e&color=66c0f4)](https://steamcommunity.com/sharedfiles/filedetails/?id=2791896289)
 
@@ -25,10 +26,11 @@
 <br>
 <br>
 
-**This page is a work-in-progess**, excuse the placeholder text!
+***All custom assets, scripts, etc. are licensed under APL-ND**. While containing original assets, this mod also includes re-uploads of other content with permission from their original authors.
 
-Unit description
-<br>
+If an addon contains re-uploaded or modified content, it will be noted in a `LICENSE.md` file located in that addon.
+
+If you would like to reupload content from the Keeli Company aux mod, leave a comment in the [Reuploading Content from the Keeli Company Aux Mod](https://github.com/Outer-Rim-Armory/Aux-Mod/discussions/223) discussion post. **Asking does not guarentee a yes. Reuploading and not asking guarentees a DMCA.**
 <br>
 
 ---
@@ -36,12 +38,20 @@ Unit description
 ## Mod Features
 The Keeli Company Aux mod focuses on creating custom and in-depth systems, as well as the standard features you would find in other unit aux mods such as custom textured equipment; vehicles; and balance tweaks. Each of these systems has a document outlining how to use that particular system.
 
+- [Armor](./addons/armor/README.md)
 - [Chat Wheel](./addons/chat_wheel_redux/README.md)
+- [Creatures](./addons/creatures/README.md)
+- [Custom Armor](./addons/creatures/README.md)
+- [Droids](./addons/droids/README.md)
 - [Fortify](./addons/fortify/README.md)
+- [Gonk Droids](./addons/gonks/README.md)
+- [Intercom](./addons/intercom/README.md)
 - [Jetpacks](./addons/jetpacks/README.md)
 - [Map](./addons/map/README.md)
 - [Medical](./addons/medical/README.md)
 - [Radio Jammers](./addons/jammers/README.md)
+- [Screenshot Mode](./addons/screenshotmode/README.md)
+- [Suppress](./addons/suppress/README.md)
 - [Vehicle Shields](./addons/shields/README.md)
 - [Vehicle Systems](./addons/vehicles/README.md)
 - [Weapon Systems](./addons/weapons/README.md)

@@ -1,9 +1,8 @@
-class CLASS(Unit_Phase1_Base): CLASS(Unit_Base)
-{
+class CLASS(Unit_Phase1_Base): CLASS(Unit_Base) {
     SCOPE_PUBLIC;
 
     // Editor Properties
-    editorSubcategory = QCLASS(EdSubCat_INF_P1);
+    editorSubcategory = QEDSUBCAT(INF_P1);
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_Base);
 
     displayName = "INF P1 Trooper (Base)";
@@ -11,199 +10,166 @@ class CLASS(Unit_Phase1_Base): CLASS(Unit_Base)
     uniformClass = QCLASS(Uniform_Base);
 };
 
-class CLASS(Unit_Phase1_CR): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_CR): CLASS(Unit_Phase1_Base) {
     displayName = "INF 00 - Clone Recruit";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_CR);
 
     uniformClass = QCLASS(Uniform_CR);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_CR), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_CR), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Phase1_CT): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_CT): CLASS(Unit_Phase1_Base) {
     displayName = "INF 01 - Clone Trooper";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_CT);
 
     uniformClass = QCLASS(Uniform_CT);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_CT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_CT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Phase1_SCT): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_SCT): CLASS(Unit_Phase1_Base) {
     displayName = "INF 02 - Senior Clone Trooper";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_SCT);
 
     uniformClass = QCLASS(Uniform_SCT);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_SCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_SCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Phase1_VCT): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_VCT): CLASS(Unit_Phase1_Base) {
     displayName = "INF 03 - Veteran Clone Trooper";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_VCT);
 
     uniformClass = QCLASS(Uniform_VCT);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_VCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_VCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
 // Start of JNCO Ranks
 
-class CLASS(Unit_Phase1_CLC): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_CLC): CLASS(Unit_Phase1_Base) {
     displayName = "INF 04 - Clone Lance Corporal";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_CLC);
 
     uniformClass = QCLASS(Uniform_CLC);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_CLC), QCLASS(Vest_CLC), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_CLC), QCLASS(Vest_CLC), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Phase1_CPL): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_CPL): CLASS(Unit_Phase1_Base) {
     displayName = "INF 05 - Clone Corporal";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_CPL);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CPL);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_CPL), QCLASS(Vest_CPL), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_CPL), QCLASS(Vest_CPL), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
 // Start of NCO Ranks
 
-class CLASS(Unit_Phase1_CS): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_CS): CLASS(Unit_Phase1_Base) {
     displayName = "INF 06 - Clone Sergeant";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_CS);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CS);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_CS), QCLASS(Vest_CS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_CS), QCLASS(Vest_CS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Phase1_CSS): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_CSS): CLASS(Unit_Phase1_Base) {
     displayName = "INF 07 - Clone Staff Sergeant";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_CSS);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSS);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_CSS), QCLASS(Vest_CSS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_CSS), QCLASS(Vest_CSS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Phase1_CSFC): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_CSFC): CLASS(Unit_Phase1_Base) {
     displayName = "INF 08 - Clone Sergeant First Class";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_CSFC);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSFC);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_CSFC), QCLASS(Vest_CSFC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_CSFC), QCLASS(Vest_CSFC), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Phase1_CMS): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_CMS): CLASS(Unit_Phase1_Base) {
     displayName = "INF 09 - Clone Master Sergeant";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_CMS);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSFC);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_CMS), QCLASS(Vest_CMS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_CMS), QCLASS(Vest_CMS), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
-class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base) {
     displayName = "INF 10 - Clone Sergeant Major";
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_CSM);
     icon = "iconManLeader";
 
     uniformClass = QCLASS(Uniform_CSM);
 
-    linkedItems[] =
-    {
+    linkedItems[] = {
         QCLASS(Helmet_Phase1_CSM), QCLASS(Vest_CSM), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    respawnLinkedItems[] =
-    {
+    respawnLinkedItems[] = {
         QCLASS(Helmet_Phase1_CSM), QCLASS(Vest_CSM), QCLASS(NVG_phase2_Rangefinder), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
@@ -312,56 +278,46 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base)
 //     };
 // };
 
-class CLASS(Unit_phase1Geo_Enlisted): CLASS(Unit_Phase1_Base)
-{
+class CLASS(Unit_phase1Geo_Enlisted): CLASS(Unit_Phase1_Base) {
     SCOPE_HIDDEN;
     uniformClass = QCLASS(Uniform_phase1Geo_Enlisted);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         "\ls_armor_bluefor\uniform\gar\phase2\data\camo1_co.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
 
-class CLASS(Unit_phase1Geo_NCO): CLASS(Unit_phase1Geo_Enlisted)
-{
+class CLASS(Unit_phase1Geo_NCO): CLASS(Unit_phase1Geo_Enlisted) {
     uniformClass = QCLASS(Uniform_phase1Geo_NCO);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         "\SWLB_clones\data\SWLB_clone_P1Sergeant_armor1_co.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
 
-class CLASS(Unit_phase1Geo_Officer): CLASS(Unit_phase1Geo_NCO)
-{
+class CLASS(Unit_phase1Geo_Officer): CLASS(Unit_phase1Geo_NCO) {
     uniformClass = QCLASS(Uniform_phase1Geo_Officer);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         "\SWLB_clones\data\SWLB_clone_P1Lieutenant_armor1_co.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
 
-class CLASS(Unit_phase1Geo_Captain): CLASS(Unit_phase1Geo_NCO)
-{
+class CLASS(Unit_phase1Geo_Captain): CLASS(Unit_phase1Geo_NCO) {
     uniformClass = QCLASS(Uniform_phase1Geo_Captain);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         "\SWLB_clones\data\SWLB_clone_P1Captain_armor1_co.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
 
-class CLASS(Unit_phase1Geo_Commander): CLASS(Unit_phase1Geo_NCO)
-{
+class CLASS(Unit_phase1Geo_Commander): CLASS(Unit_phase1Geo_NCO) {
     uniformClass = QCLASS(Uniform_phase1Geo_Commander);
-    hiddenSelectionsTextures[] =
-    {
+    hiddenSelectionsTextures[] = {
         "\SWLB_clones\data\SWLB_clone_P1Commander_armor1_co.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"

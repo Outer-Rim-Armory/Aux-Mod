@@ -10,9 +10,6 @@ Some vehicles come equipped with ACE self actions to allow the current pilot or 
 ## Texture Switcher
 All vehicles with multiple `TextureSources` come equipped with an ACE self interaction for the current pilot or driver of the vehicle to change the textures used for the vehicle. The vehicle must be stopped in order to change the texture.
 
-## Auto-Intercom Setter
-When boarding a vehicle, your intercom will be automatically set to the corresponding channel: "crew" for drivers, gunners, and commanders and "cargo" for anything else.
-
 ## Vehicle Spawner
 To make an object a vehicle spawner, you can call the `BNA_KC_vehicles_fnc_vehicleSpawner` function. This function adds actions for most vehicle types, these actions spawn their respective vehicle. It will also add an action to delete the last spawned vehicle.
 

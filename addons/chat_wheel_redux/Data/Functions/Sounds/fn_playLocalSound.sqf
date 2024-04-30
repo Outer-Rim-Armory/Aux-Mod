@@ -1,5 +1,6 @@
 /*
- * Authors: Leopard20 and DartRuffian
+ * Authors: Leopard20
+ * Edited by DartRuffian
  * Determines which sound effect should play based on user settings, then plays that sound effect.
  *
  * Arguments:
@@ -14,10 +15,8 @@
 
 params ["_file", "_position"];
 
-if (CWR_Voice_EnableVoiceLines) then
-{
-    playSound3D
-    [
+if (CWR_Voice_EnableVoiceLines) then {
+    playSound3D [
         _file,
         objNull,
         false,

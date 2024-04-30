@@ -14,8 +14,7 @@
 
 params ["_bearing"];
 
-private _direction = switch (true) do
-{
+private _direction = switch (true) do {
     case ((_bearing <= 22.5) OR (_bearing >= 337.5)): { "North" };
     case (_bearing <= 67.5): { "Northeast" };
     case (_bearing <= 112.5): { "East" };

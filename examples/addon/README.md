@@ -1,0 +1,2 @@
+# Example Addon
+Example addon.

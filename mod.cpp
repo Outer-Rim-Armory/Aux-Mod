@@ -1,7 +1,7 @@
 author = "Keeli Company Aux Team";
 picture = "logo_kc_ca.paa";
 actionName = "GitHub";
-action = "https://github.com/DartRuffian/KeeliCompanyAux";
+action = "https://github.com/Outer-Rim-Armory/Aux-Mod";
 description = "KC Aux - Version 0.0.0";
 logo = "logo_kc_ca.paa";
 logoOver = "logo_kc_ca.paa";

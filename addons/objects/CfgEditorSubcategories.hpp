@@ -1,17 +1,13 @@
-class CfgEditorSubcategories
-{
-    class CLASS(EdSubCat_Flags)
-    {
+class CfgEditorSubcategories {
+    class EDSUBCAT(Flags) {
         displayName = "Flags";
     };
 
-    class CLASS(EdSubcat_StaticShips)
-    {
+    class EDSUBCAT(StaticShips) {
         displayName = "Static Ships";
     };
 
-    class CLASS(EdSubcat_Resupply)
-    {
+    class EDSUBCAT(Resupply) {
         displayName = "Resupply";
     };
 };

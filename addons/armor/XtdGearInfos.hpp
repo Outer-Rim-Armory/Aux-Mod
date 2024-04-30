@@ -1,7 +1,7 @@
-class XtdGearInfos
-{
-    class CfgWeapons
-    {
+// Done externally since these are sometimes inherited from
+// TODO: Only declare base classes externally
+class XtdGearInfos {
+    class CfgWeapons {
         #include "XtdGear\Helmets_P1.hpp"
         #include "XtdGear\Helmets_P1_Geonosis.hpp"
         #include "XtdGear\Helmets_P1_Pilot.hpp"
@@ -32,5 +32,11 @@ class XtdGearInfos
         #include "XtdGear\Vests_Engineer.hpp"
         #include "XtdGear\Vests_ARC.hpp"
         #include "XtdGear\Vests_Commando.hpp"
+    };
+
+    class CfgVehicles {
+        #include "XtdGear\Backpacks.hpp"
+        #include "XtdGear\Backpacks_Medic.hpp"
+        #include "XtdGear\cloneBackpacks_commando.hpp"
     };
 };

@@ -6,4 +6,5 @@ PREP_RECOMPILE_END;
 
 #include "initSettings.inc.sqf"
 
+ADDON = true;
 GVAR(ready) = false;

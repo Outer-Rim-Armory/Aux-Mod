@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Handles EMP grenades
+ * Handles EMP grenades.
  *
  * Arguments:
  * 0: The unit that threw the grenade <OBJECT>
@@ -13,37 +13,29 @@
  * Whether the emp grenade activated successfully <BOOL>
  *
  * Examples:
- * [ace_player, "BNA_KC_Grenade_EMP", "BNA_KC_Grenade_EMP_Ammo", _projectile] call BNA_KC_weapons_fnc_empGrenade;
+ * _projectile call BNA_KC_weapons_fnc_empGrenade;
  */
 
-params [
-    ["_unit", objNull, [objNull]],
-    ["_ammo", "", [""]],
-    ["_magazine", "", [""]],
-    ["_projectile", objNull, [objNull]]
-];
+params ["_projectile"];
 private ["_radiusDroid", "_radiusDroideka", "_radiusVehicle", "_positionASL", "_positionAGL", "_nearbyPlayers", "_nearbyUnits", "_nearbyVehicles", "_nearbyDroidekas", "_droidekaShields"];
 TRACE_4("fnc_empGrenade",_unit,_ammo,_magazine,_projectile);
 
-if (!GVAR(empEnabled) or
-    {isNull _unit} or
-    {isNull _projectile} or
-    {_ammo isEqualTo ""} or
-    {_magazine isEqualTo ""}
-) exitWith {false;};
+if (!GVAR(empEnabled) or {isNull _projectile}) exitWith {false;};
 
 _radiusDroid = [
-    configFile >> "CfgMagazines" >> _magazine,
+    configOf _projectile,
     QGVAR(empRadiusDroid),
     EMP_RADIUS_DROID_DEFAULT
 ] call BIS_fnc_returnConfigEntry;
+
 _radiusDroideka = [
-    configFile >> "CfgMagazines" >> _magazine,
+    configOf _projectile,
     QGVAR(empRadiusDroideka),
     EMP_RADIUS_DROIDEKA_DEFAULT
 ] call BIS_fnc_returnConfigEntry;
+
 _radiusVehicle = [
-    configFile >> "CfgMagazines" >> _magazine,
+    configOf _projectile,
     QGVAR(empRadiusVehicle),
     EMP_RADIUS_VEHICLE_DEFAULT
 ] call BIS_fnc_returnConfigEntry;
@@ -57,15 +49,13 @@ _nearbyPlayers = _nearbyPlayers select {
 };
 {
     [QEGVAR(core,localSound), [
-            QPATHTOF(data\audio\emp\TCW_Explode.wss),
-            "\MRC\JLTS\weapons\Core\sounds\emp_exp\exp_emp_1.wss",
-            _positionASL,
-            QGVAR(empTCWSoundEnabled),
-            QGVAR(empSoundVolume),
-            QGVAR(empSoundPitch)
-        ],
-        _x
-    ] call CBA_fnc_targetEvent;
+        QPATHTOF(data\audio\emp\TCW_Explode.wss),
+        "\MRC\JLTS\weapons\Core\sounds\emp_exp\exp_emp_1.wss",
+        _positionASL,
+        QGVAR(empTCWSoundEnabled),
+        QGVAR(empSoundVolume),
+        QGVAR(empSoundPitch)
+    ], _x] call CBA_fnc_targetEvent;
 } forEach _nearbyPlayers;
 
 _nearbyUnits = [_positionAGL, _radiusDroid] call EFUNC(core,getNearbyUnits);

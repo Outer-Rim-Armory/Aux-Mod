@@ -1,8 +1,6 @@
-class CfgMagazines
-{
+class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_1Rnd_GR20): CLASS(Mag_Base)
-    {
+    class CLASS(Mag_1Rnd_GR20): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] Pressurized Bacta Canister";
         displayNameShort = "Bacta Bomb";
@@ -21,8 +19,7 @@ class CfgMagazines
         EGVAR(medical,areaHealMaxPatients) = BACTA_MAXPATIENTS_DEFAULT;
     };
 
-    class CLASS(Mag_GR20): CLASS(Mag_1Rnd_GR20)
-    {
+    class CLASS(Mag_GR20): CLASS(Mag_1Rnd_GR20) {
         SCOPE_HIDDEN;
         descriptionShort = "Pressurized Bacta Gas<br/>Rounds: 1<br/>Used In: GR-20<br/>Nicknamed the 'Bacta Bomb' by Republic Medics<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
     };

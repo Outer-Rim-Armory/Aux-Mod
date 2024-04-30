@@ -1,23 +1,18 @@
 #include "script_component.hpp"
-#include "CfgVehicles.hpp"
 
 
-class CfgPatches
-{
-    class SUBADDON
-    {
+class CfgPatches {
+    class SUBADDON {
         author = AUTHOR;
         name = COMPONENT_NAME;
         addonRootClass = QUOTE(ADDON);
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] =
-        {
+        requiredAddons[] = {
             QUOTE(ADDON),
             QCLASS(weapons_load_order),
             "3AS_Prop_Crates"
         };
-        units[] =
-        {
+        units[] = {
             QCLASS(Resupply_Base),
             QCLASS(Resupply_SquadAmmo),
             QCLASS(Resupply_PlatoonAmmo),
@@ -31,3 +26,5 @@ class CfgPatches
         VERSION_CONFIG;
     };
 };
+
+#include "CfgVehicles.hpp"
