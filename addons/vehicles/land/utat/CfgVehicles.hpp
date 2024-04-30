@@ -13,6 +13,9 @@ class CfgVehicles {
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
         hiddenSelections[] = {"camo", "camo1"}; // 3AS bug, missing comma in original config
-        hiddenSelectionsTextures[] = {DBUG_TEX_RED, DBUG_TEX_GRN};
+        hiddenSelectionsTextures[] = {
+            "\3AS\3AS_UTAT\data\utat_primary_co.paa",
+            "\3AS\3AS_UTAT\data\utat_primary_co.paa"
+        };
     };
 };
