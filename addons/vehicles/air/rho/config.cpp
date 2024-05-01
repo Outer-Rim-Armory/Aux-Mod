@@ -10,10 +10,10 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(weapons),
             QGVAR(sounds),
-            "3AS_Republic_Heli_Nu"
+            "3AS_Republic_Heli_Rho"
         };
         units[] = {
-            QCLASS(Nu)
+            QCLASS(Rho)
         };
         weapons[] = {};
         VERSION_CONFIG;

@@ -1,13 +1,13 @@
 class CfgVehicles {
-    class 3AS_Nu_REP_F;
-    class CLASS(Nu): 3AS_Nu_REP_F {
+    class 3AS_Rho_REP_F;
+    class CLASS(Rho): 3AS_Rho_REP_F {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Helicopters);
 
-        displayName = "Nu-class Attack Shuttle";
+        displayName = "Rho-class Transport Shuttle";
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
@@ -19,17 +19,13 @@ class CfgVehicles {
 
         weapons[] = {
             "ParticleBeamCannon_Nu",
-            "ls_weapon_CMFlareLauncher",
-            "SmokeLauncher"
+            "ls_weapon_CMFlareLauncher"
         };
         magazines[] = {
             "3AS_Nu_5000Rnd_HE",
             "3AS_Nu_5000Rnd_HE",
             "3AS_Nu_5000Rnd_HE",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "SmokeLauncherMag"
+            "ls_mag_300Rnd_CMFlareChaff_blue"
         };
 
         textureList[] = {
@@ -44,9 +40,9 @@ class CfgVehicles {
                 displayName = "Standard";
                 factions[] = {};
                 textures[] = {
-                    "\3AS\3AS_republic_heli\nu_class\data\hull_co.paa",
+                    "\3AS\3AS_republic_heli\rho_class\data\hull_rho_co.paa",
                     "\3AS\3AS_republic_heli\nu_class\data\hull_front_co.paa",
-                    "\3AS\3AS_republic_heli\nu_class\data\wings_co.paa",
+                    "\3AS\3AS_republic_heli\rho_class\data\wings_rho_co.paa",
                     "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
                     "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
                     "\3AS\3AS_republic_heli\rho_class\data\interior_co.paa",
@@ -56,9 +52,9 @@ class CfgVehicles {
             class Imperial: Standard {
                 displayName = "Imperial";
                 textures[] = {
-                    "\3AS\3AS_republic_heli\nu_class\data\hull_Imp_co.paa",
+                    "\3AS\3AS_republic_heli\rho_class\data\hull_rho_Imp_co.paa",
                     "\3AS\3AS_republic_heli\nu_class\data\hull_front_imp_co.paa",
-                    "\3AS\3AS_republic_heli\nu_class\data\wings_Imp_co.paa",
+                    "\3AS\3AS_republic_heli\rho_class\data\wings_rho_Imp_co.paa",
                     "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
                     "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
                     "\3AS\3AS_republic_heli\rho_class\data\interior_co.paa",
