@@ -14,7 +14,11 @@ class CfgPatches {
         };
         units[] = {
             QCLASS(Rho),
-            QCLASS(Rho_medical)
+            QCLASS(Rho_medical),
+            QCLASS(Rho_crate_base),
+            QCLASS(Rho_crateBarracks),
+            QCLASS(Rho_crateTransport),
+            QCLASS(Rho_crateMedical)
         };
         weapons[] = {};
         VERSION_CONFIG;
@@ -23,3 +27,4 @@ class CfgPatches {
 
 #include "CfgVehicles.hpp"
 #include "CfgEventHandlers.hpp"
+#include "ACE_Medical_Facilities.hpp"
