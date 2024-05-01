@@ -27,4 +27,8 @@ class CfgSounds {
         name = "LAAT Impulse Off";
         sound[] = {QPATHTOF(sounds\data\audio\impulse\ImpulseOff.wss), 5, 1, 800};
     };
+    class CLASS(Sound_Horn_Wyvern): CLASS(Sound_LAAT_DoorsOpen) {
+        name = "Wyvern Horn";
+        sound[] = {QPATHTOF(sounds\data\audio\laati\WyvernHorn.wss), 5, 1, 1000};
+    };
 };
