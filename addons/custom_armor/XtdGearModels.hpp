@@ -432,11 +432,13 @@ class XtdGearModels {
                 alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
+                    "Dexus",
                     "Keeli",
                     "Ponds",
                     "Rat"
                 };
 
+                class Dexus { label = "Dexus"; };
                 class Keeli { label = "Keeli"; };
                 class Ponds { label = "Ponds"; };
                 class Rat { label = "Rat"; };
