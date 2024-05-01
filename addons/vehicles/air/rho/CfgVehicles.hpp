@@ -28,7 +28,7 @@ class CfgVehicles {
         magazines[] = {
             "3AS_Nu_5000Rnd_HE",
             "3AS_Nu_5000Rnd_HE",
-            "3AS_Nu_5000Rnd_HE",
+            "ls_mag_300Rnd_CMFlareChaff_blue",
             "ls_mag_300Rnd_CMFlareChaff_blue"
         };
 
