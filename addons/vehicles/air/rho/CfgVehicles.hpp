@@ -9,6 +9,7 @@ class CfgVehicles {
 
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Helicopters);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rho,Rho);
 
         displayName = "Rho-class Transport Shuttle";
         crew = QCLASS(Unit_Phase2_CXA);
@@ -88,6 +89,7 @@ class CfgVehicles {
 
     class CLASS(Rho_medical): CLASS(Rho) {
         displayName = "Rho-class Transport Shuttle (Medical)";
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rho,Rho_medical);
         attendant = 1;
 
         hiddenSelectionsTextures[] = {

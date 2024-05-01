@@ -9,6 +9,7 @@ class CfgVehicles {
 
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Helicopters);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\nu,Nu);
 
         displayName = "Nu-class Attack Shuttle";
         crew = QCLASS(Unit_Phase2_CXA);
