@@ -38,6 +38,7 @@ class CfgPatches {
             QGVAR(rx200),
             QGVAR(scout_tank),
             QGVAR(tx130),
+            QGVAR(utat),
             // Static
             QGVAR(command_post),
             QGVAR(mortars)
