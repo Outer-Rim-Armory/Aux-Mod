@@ -320,6 +320,7 @@ class XtdGearModels {
                     "Patriot",
                     "Rev",
                     "Sogi",
+                    "Tanker",
                     "Tugz"
                 };
 
@@ -328,6 +329,7 @@ class XtdGearModels {
                 class Patriot { label = "Patriot"; };
                 class Rev { label = "Rev"; };
                 class Sogi { label = "Sogi"; };
+                class Tanker { label = "Tanker"; };
                 class Tugz { label = "Tugz"; };
             };
         };
