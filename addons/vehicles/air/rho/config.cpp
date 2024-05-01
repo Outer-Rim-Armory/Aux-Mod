@@ -13,7 +13,8 @@ class CfgPatches {
             "3AS_Republic_Heli_Rho"
         };
         units[] = {
-            QCLASS(Rho)
+            QCLASS(Rho),
+            QCLASS(Rho_medical)
         };
         weapons[] = {};
         VERSION_CONFIG;

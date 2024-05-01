@@ -75,5 +75,40 @@ class CfgVehicles {
             //     };
             // };
         };
+
+        INVENTORY_VEHICLE_BASE(3);
+    };
+
+    class CLASS(Rho_medical): CLASS(Rho) {
+        displayName = "Rho-class Transport Shuttle (Medical)";
+        attendant = 1;
+
+        hiddenSelectionsTextures[] = {
+            "\3AS\3AS_republic_heli\rho_class\data\hull_rho_Medical_co.paa",
+            "\3AS\3AS_republic_heli\rho_class\data\hull_front_medical_co.paa",
+            "\3AS\3AS_republic_heli\rho_class\data\wings_rho_Medical_co.paa",
+            "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
+            "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
+            "\3AS\3AS_republic_heli\rho_class\data\interior_co.paa",
+            "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
+        };
+
+        textureList[] = {"Standard", 1};
+        class TextureSources {
+            class Standard {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {};
+                textures[] = {
+                    "\3AS\3AS_republic_heli\rho_class\data\hull_rho_Medical_co.paa",
+                    "\3AS\3AS_republic_heli\rho_class\data\hull_front_medical_co.paa",
+                    "\3AS\3AS_republic_heli\rho_class\data\wings_rho_Medical_co.paa",
+                    "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
+                    "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
+                    "\3AS\3AS_republic_heli\rho_class\data\interior_co.paa",
+                    "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
+                };
+            };
+        };
     };
 };
