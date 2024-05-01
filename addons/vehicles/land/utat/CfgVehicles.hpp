@@ -46,5 +46,17 @@ class CfgVehicles {
         };
 
         INVENTORY_VEHICLE_BASE(9);
+
+        class VehicleTransport {
+            class Cargo {
+                canBeTransported = TRUE;
+                dimensions[] = {
+                    {-3.61739,  5.24512, 1.25418},
+                    { 1.94353, -9.91646, 12.53851}
+                };
+                parachuteClass = "B_Parachute_02_F";
+                parachuteHeightLimit = 40;
+            };
+        };
     };
 };
