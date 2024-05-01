@@ -57,6 +57,11 @@ class CfgVehicles {
             SKIN_SWITCHER;
         };
     };
+    class StaticWeapon: LandVehicle {
+        class ACE_SelfActions {
+            SKIN_SWITCHER;
+        };
+    };
 
     class Air;
     class Helicopter: Air {
