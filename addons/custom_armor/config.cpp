@@ -159,6 +159,7 @@ class CfgPatches {
             QGROUND_CLASS(Helmet_ARF_Patriot),
             QGROUND_CLASS(Helmet_ARF_Rev),
             QGROUND_CLASS(Helmet_ARF_Sogi),
+            QGROUND_CLASS(Helmet_ARF_Tanker),
             QGROUND_CLASS(Helmet_ARF_Tugz),
             QGROUND_CLASS(Helmet_BARC_Keeli),
             QGROUND_CLASS(Helmet_BARC_KeeliCrimson),
@@ -285,6 +286,7 @@ class CfgPatches {
             QCLASS(Helmet_ARF_Patriot),
             QCLASS(Helmet_ARF_Rev),
             QCLASS(Helmet_ARF_Sogi),
+            QCLASS(Helmet_ARF_Tanker),
             QCLASS(Helmet_ARF_Tugz),
             QCLASS(Helmet_BARC_Keeli),
             QCLASS(Helmet_BARC_KeeliCrimson),
@@ -320,6 +322,7 @@ class CfgPatches {
             QCLASS(Vest_Officer_Ponds),
             QCLASS(Vest_Officer_Rat),
             QCLASS(Vest_Kama_Rat),
+            QCLASS(cloneVest_heavy_Dexus),
             QCLASS(Vest_WO_Howzer),
             QCLASS(NVG_phase2_Officer_Keeli)
         };

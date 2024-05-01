@@ -81,6 +81,7 @@ class CfgVehicles {
             "Imperial", 0,
             "KeeliCompany", 0,
             "KeeliCompany2", 1,
+            "Wyvern", 1,
             "Akali", 0,
             "TwiLek", 0,
             "Katarina", 0
@@ -127,6 +128,16 @@ class CfgVehicles {
                     QPATHTOF(air\laati\data\textures\KeeliCompany2\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\KeeliCompany2\Wings_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class Wyvern: KeeliCompany {
+                displayName = "Wyvern";
+                textures[] = {
+                    QPATHTOF(air\laati\data\textures\Wyvern\Hull_co.paa),
+                    QPATHTOF(air\laati\data\textures\Wyvern\Wings_co.paa),
+                    QPATHTOF(air\laati\data\textures\Wyvern\Weapons_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };

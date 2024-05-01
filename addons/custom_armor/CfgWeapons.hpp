@@ -92,6 +92,20 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
     };
 
+    class CLASS(Vest_Heavy);
+    class CLASS(cloneVest_heavy_Dexus): CLASS(Vest_Heavy) {
+        displayName = "[KC] INF Heavy Vest ('Dexus')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\heavy\Dexus_accessories_co.paa),
+            QPATHTOF(data\vests\heavy\Dexus_accessories_co.paa),
+            QPATHTOF(data\vests\heavy\Dexus_accessories_co.paa),
+            "\SWLB_clones\data\light_accessories_co.paa",
+            ""
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+
     class CLASS(NVG_phase2_Officer);
     class CLASS(NVG_phase2_Officer_Keeli): CLASS(NVG_phase2_Officer) {
         displayName = "[KC] Clone P2 Officer Visor ('Keeli')";
