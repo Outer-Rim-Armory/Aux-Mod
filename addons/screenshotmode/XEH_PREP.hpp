@@ -1,1 +1,2 @@
 PREP(toggleHud);
+PREP(toggleJLTS)

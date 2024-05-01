@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [] call BNA_KC_screenshotMode_fnc_toggle;
+ * [] call BNA_KC_screenshotMode_fnc_toggleHud;
  */
 
 INFO("Toggling screenshot mode");
@@ -22,8 +22,10 @@ if (GVAR(active)) then {
     GVAR(vanillaHud) = shownHUD;
     showHUD [false, false, false, false, false, false, false, false];
     showChat false;
+    call FUNC(toggleJLTS);
 } else {
     // Show hud
     showHud GVAR(vanillaHud);
     showChat true;
+    call FUNC(toggleJLTS);
 };
