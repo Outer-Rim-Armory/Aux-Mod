@@ -1,5 +1,8 @@
 class CfgVehicles {
-    class 3AS_UTAT;
+    class 3AS_UTAT_01_Base;
+    class 3AS_UTAT: 3AS_UTAT_01_Base {
+        class ACE_SelfActions;
+    };
     class CLASS(UTAT): 3AS_UTAT {
         SCOPE_PUBLIC;
 
@@ -36,6 +39,10 @@ class CfgVehicles {
                     QPATHTOF(land\utat\data\textures\KeeliCompany\Secondary_co.paa)
                 };
             };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions {
+            AI_CREW_SPAWNER;
         };
     };
 };
