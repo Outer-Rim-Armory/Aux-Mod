@@ -1,0 +1,12 @@
+allowFunctionsRecompile = 1;
+
+class CfgFunctions
+{
+	class LS
+	{
+		class keybind_operationFrameWork
+		{
+			file = "\Functions\fn_keybind_operationFrameWork.sqf";
+		};
+	};
+};

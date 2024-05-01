@@ -53,7 +53,5 @@ optionals = ["no_burn_screams"]
 
 [hemtt.launch.previews]
 extends = "full"
-parameters = [
-    "C:\\Users\\skull\\OneDrive\\Documents\\Arma 3 - Other Profiles\\Previews\\missions\\Previews.VR\\mission.sqm",
-    "-name=Previews",
-]
+mission = "Previews.VR"
+parameters = ["-name=Previews"]
