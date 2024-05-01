@@ -81,6 +81,7 @@ class CfgVehicles {
             "Imperial", 0,
             "KeeliCompany", 0,
             "KeeliCompany2", 1,
+            "Wyvern", 1,
             "Akali", 0,
             "TwiLek", 0,
             "Katarina", 0
@@ -127,6 +128,16 @@ class CfgVehicles {
                     QPATHTOF(air\laati\data\textures\KeeliCompany2\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\KeeliCompany2\Wings_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class Wyvern: KeeliCompany {
+                displayName = "Wyvern";
+                textures[] = {
+                    QPATHTOF(air\laati\data\textures\Wyvern\Hull_co.paa),
+                    QPATHTOF(air\laati\data\textures\Wyvern\Wings_co.paa),
+                    QPATHTOF(air\laati\data\textures\Wyvern\Weapons_co.paa),
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
@@ -212,6 +223,12 @@ class CfgVehicles {
                 displayName = "Load Vehicle";
                 condition = QUOTE(ace_player isEqualTo currentPilot this and {this call FUNC(vivCanLoad)});
                 statement = QUOTE(this call FUNC(vivLoad));
+            };
+
+            class HornWyvern: Impulse {
+                displayName = "Play Horn";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Wyvern' and {ace_player == currentPilot this});
+                statement = QUOTE([ARR_2(this,QQCLASS(Sound_Horn_Wyvern))] call FUNC(playHorn));
             };
         };
 
