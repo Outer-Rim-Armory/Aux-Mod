@@ -115,8 +115,8 @@ class CfgVehicles {
         class VehicleTransport: VehicleTransport {
             class Carrier: Carrier {
                 cargoBayDimensions[] = {
-                    {-5.3,  6.29704, -6.038520},
-                    { 4, -11.3391, -0.820282}
+                    {-5.3, 6.29704, -6.038520},
+                    { 4,  -11.3391, -0.820282}
                     /* Original
                     {-4,  6.29704, -6.038520},
                     { 4, -11.3391, -0.820282}
