@@ -112,6 +112,21 @@ class CfgVehicles {
         };
     };
 
+    class lsd_laatc_base;
+    class lsd_heli_laatc: lsd_laatc_base {
+        class ACE_SelfActions;
+    };
+    class CLASS(LAATc): lsd_heli_laatc {
+        TFAR_hasIntercom = FALSE;
+
+        class ACE_SelfActions: ACE_SelfActions {
+            INTERCOM_START;
+                INTERCOM_DISABLED;
+                INTERCOM_CREW;
+            INTERCOM_END;
+        };
+    };
+
     class Helicopter_Base_H;
     class 3AS_LAAT_Base: Helicopter_Base_H {
         class ACE_SelfActions;
@@ -129,17 +144,19 @@ class CfgVehicles {
         };
     };
 
-    class lsd_laatc_base;
-    class lsd_heli_laatc: lsd_laatc_base {
+    class 3AS_Nu_Base_F;
+    class 3AS_Nu_REP_F: 3AS_Nu_Base_F {
         class ACE_SelfActions;
     };
-    class CLASS(LAATc): lsd_heli_laatc {
-        TFAR_hasIntercom = FALSE;
-
+    class CLASS(Nu): 3AS_Nu_REP_F {
         class ACE_SelfActions: ACE_SelfActions {
             INTERCOM_START;
                 INTERCOM_DISABLED;
+                INTERCOM_CARGO;
                 INTERCOM_CREW;
+                INTERCOM_MISC1;
+                INTERCOM_MISC2;
+                INTERCOM_MISC3;
             INTERCOM_END;
         };
     };
@@ -169,6 +186,23 @@ class CfgVehicles {
                 INTERCOM_DISABLED;
                 INTERCOM_CARGO;
                 INTERCOM_CREW;
+            INTERCOM_END;
+        };
+    };
+
+    class 3AS_Rho_Base_F;
+    class 3AS_Rho_REP_F: 3AS_Rho_Base_F {
+        class ACE_SelfActions;
+    };
+    class CLASS(Rho): 3AS_Rho_REP_F {
+        class ACE_SelfActions: ACE_SelfActions {
+            INTERCOM_START;
+                INTERCOM_DISABLED;
+                INTERCOM_CARGO;
+                INTERCOM_CREW;
+                INTERCOM_MISC1;
+                INTERCOM_MISC2;
+                INTERCOM_MISC3;
             INTERCOM_END;
         };
     };
