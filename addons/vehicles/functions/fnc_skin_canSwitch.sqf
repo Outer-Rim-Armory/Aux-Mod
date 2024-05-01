@@ -22,5 +22,9 @@ TRACE_2("fnc_skin_canSwitch",_target,_vehicle);
 
 _textureSources = getArray (configOf _vehicle >> "textureList");
 
+if (_vehicle isKindOf "StaticWeapon") exitWith {
+    count _textureSources > 2 and {alive _vehicle};
+};
+
 count _textureSources > 2 and {alive _vehicle} and
 {_player isEqualTo currentPilot _vehicle} and {IS_STOPPED(_vehicle)};
