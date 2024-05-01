@@ -1,5 +1,8 @@
 class CfgVehicles {
-    class 3AS_Nu_REP_F;
+    class 3AS_Nu_Base_F;
+    class 3AS_Nu_REP_F: 3AS_Nu_Base_F {
+        class ACE_SelfActions;
+    };
     class CLASS(Nu): 3AS_Nu_REP_F {
         SCOPE_PUBLIC;
         author = AUTHOR;
@@ -78,6 +81,10 @@ class CfgVehicles {
             //         "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
             //     };
             // };
+        };
+
+        class ACE_SelfActions: ACE_SelfActions {
+            HUD_CHANGER;
         };
 
         INVENTORY_VEHICLE_BASE(3);
