@@ -30,10 +30,12 @@ _textureSources = configProperties [configOf _target >> "TextureSources"];
     _textures = getArray (_x >> "textures");
 
     _childStatement = {
-        params ["_target", "_player", "_textures"];
+        params ["_target", "_player", "_params"];
+        _params params ["_config", "_textures"];
         {
             _target setObjectTextureGlobal [_forEachIndex, _x];
         } forEach _textures;
+        _target setVariable [QGVAR(currentSkin), configName _config, true];
     };
 
     _action = [
@@ -43,7 +45,7 @@ _textureSources = configProperties [configOf _target >> "TextureSources"];
         _childStatement,
         {true},
         {},
-        _textures,
+        [_x, _textures],
         [],
         0,
         [0, 0, 1, 1]

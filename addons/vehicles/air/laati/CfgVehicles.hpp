@@ -224,6 +224,12 @@ class CfgVehicles {
                 condition = QUOTE(ace_player isEqualTo currentPilot this and {this call FUNC(vivCanLoad)});
                 statement = QUOTE(this call FUNC(vivLoad));
             };
+
+            class HornWyvern: Impulse {
+                displayName = "Play Horn";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Wyvern' and {ace_player == currentPilot this});
+                statement = QUOTE([ARR_2(this,QQCLASS(Sound_Horn_Wyvern))] call FUNC(playHorn));
+            };
         };
 
         class AnimationSources: AnimationSources {
