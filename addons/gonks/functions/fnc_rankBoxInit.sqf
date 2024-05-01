@@ -1,7 +1,8 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Init function for a uniform box.
+ * Init function for a rank box.
+ * No effect when ran on the server.
  *
  * Arguments:
  * 0: The object to add the actions to <OBJECT>
@@ -12,14 +13,14 @@
  * Example:
  * _box call BNA_KC_gonks_fnc_rankBoxInit;
  *
- * Public: No
+ * Public: Yes
  */
 
 params ["_object"];
 private ["_fnc_rankColor"];
 TRACE_1("fnc_rankBoxInit",_object);
 
-if (isNull _object) exitWith {};
+if (isNull _object or !hasInterface) exitWith {};
 
 _fnc_rankColor = {
     params ["_rank"];
