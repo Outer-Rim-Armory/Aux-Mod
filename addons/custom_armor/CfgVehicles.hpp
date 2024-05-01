@@ -20,7 +20,7 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\Dexus\Backpack_co.paa),
             QPATHTOF(data\backpacks\Dexus\Cover_co.paa),
             QPATHTOF(data\backpacks\Dexus\Pouches_co.paa),
-            QPATHTOF(data\backpacks\Dexus\Tube_co.paa),
+            QPATHTOF(data\backpacks\Dexus\Tube_co.paa)
         };
     };
 
@@ -33,7 +33,7 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\Rev\Backpack_co.paa),
             QPATHTOF(data\backpacks\Rev\Cover_co.paa),
             QPATHTOF(data\backpacks\Rev\Pouches_co.paa),
-            QPATHTOF(data\backpacks\Rev\Tube_co.paa),
+            QPATHTOF(data\backpacks\Rev\Tube_co.paa)
         };
     };
 
@@ -55,12 +55,13 @@ class CfgVehicles {
     class CLASS(cloneBackpack_medicRadio_Hazard): CLASS(Backpack_Medic_Radio_Base) {
         displayName = "[KC] INF Medic Radio Backpack ('Hazard')";
 
-        hiddenSelectionsTextures[] = {
+        model = "\ls_equipment_bluefor\backpack\gar\heavyBackpack\ls_gar_heavy_backpack.p3d";
+        hiddenselections[] = {"backpack", "cover", "pouches", "tube"};
+        hiddenselectionstextures[] = {
             QPATHTOF(data\backpacks\Hazard\Backpack_co.paa),
-            "",
-            "",
-            QPATHTOF(data\backpacks\Hazard\Backpack_co.paa),
-            QPATHTOF(data\backpacks\Hazard\Backpack_co.paa)
+            "\ls_equipment_bluefor\backpack\gar\backpack\data\cover_co.paa",
+            "\ls_equipment_bluefor\backpack\gar\backpack\data\pouches_co.paa",
+            QPATHTOF(data\backpacks\Hazard\Tube_co.paa)
         };
     };
 
