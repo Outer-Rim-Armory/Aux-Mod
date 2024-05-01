@@ -342,11 +342,13 @@ class XtdGearModels {
                 changeInGame = FALSE;
                 values[] = {
                     "Keeli",
-                    "Rat"
+                    "Rat",
+                    "Weenie"
                 };
 
                 class Keeli { label = "Keeli"; };
                 class Rat { label = "Rat"; };
+                class Weenie { label = "Weenie"; };
             };
         };
 
