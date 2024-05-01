@@ -3,7 +3,7 @@
     "CHECKBOX",
     ["Enabled", "Enables/disables suppression."],
     [QUOTE(MOD_NAME), LSTRING(category_displayName)],
-    false,
+    true,
     true,
     {},
     true
