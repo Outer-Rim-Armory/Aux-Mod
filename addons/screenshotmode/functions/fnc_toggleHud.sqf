@@ -22,6 +22,8 @@ if (GVAR(active)) then {
     GVAR(vanillaHud) = shownHUD;
     showHUD [false, false, false, false, false, false, false, false];
     showChat false;
+    hintSilent "";
+
     call FUNC(toggleJLTS);
 } else {
     // Show hud
