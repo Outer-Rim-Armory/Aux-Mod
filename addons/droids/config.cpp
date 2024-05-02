@@ -7,8 +7,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QCLASS(core),
-            QEGVAR(factions,cis),
-            "WBK_DifferentRobotics_1"
+            QEGVAR(factions,cis)
         };
         units[] = {
             QCLASS(CIS_Unit_Droid_B2_Revived),
@@ -16,8 +15,6 @@ class CfgPatches {
         };
         weapons[] = {};
         VERSION_CONFIG;
-
-        skipWhenMissingDependencies = TRUE;
     };
 };
 
