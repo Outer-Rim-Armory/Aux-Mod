@@ -502,4 +502,21 @@ class CfgVehicles {
             INTERCOM_END;
         };
     };
+
+    class 3AS_UTAT_01_Base;
+    class 3AS_UTAT: 3AS_UTAT_01_Base {
+        class ACE_SelfActions;
+    };
+    class CLASS(UTAT): 3AS_UTAT {
+        class ACE_SelfActions: ACE_SelfActions {
+            INTERCOM_START;
+                INTERCOM_DISABLED;
+                INTERCOM_CARGO;
+                INTERCOM_CREW;
+                INTERCOM_MISC1;
+                INTERCOM_MISC2;
+                INTERCOM_MISC3;
+            INTERCOM_END;
+        };
+    };
 };

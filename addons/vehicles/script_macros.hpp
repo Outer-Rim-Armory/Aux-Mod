@@ -221,5 +221,6 @@ class TransportItems { \
     QCLASS(TX130_M1), \
     QCLASS(TX130_M1_Recon), \
     QCLASS(TX130_M1_GL), \
-    QCLASS(TX130_Super) \
+    QCLASS(TX130_Super), \
+    QCLASS(UTAT) \
 ]

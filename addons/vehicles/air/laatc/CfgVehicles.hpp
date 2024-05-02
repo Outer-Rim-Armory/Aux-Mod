@@ -1,5 +1,10 @@
 class CfgVehicles {
-    class lsd_laatc_base;
+    class Helicopter_Base_H;
+    class lsd_laatc_base: Helicopter_Base_H {
+        class VehicleTransport {
+            class Carrier;
+        };
+    };
     class lsd_heli_laatc: lsd_laatc_base {
         class ACE_SelfActions;
         class UserActions;
@@ -106,5 +111,18 @@ class CfgVehicles {
         };
 
         INVENTORY_VEHICLE_BASE(1);
+
+        class VehicleTransport: VehicleTransport {
+            class Carrier: Carrier {
+                cargoBayDimensions[] = {
+                    {-5.3, 6.29704, -6.038520},
+                    { 4,  -11.3391, -0.820282}
+                    /* Original
+                    {-4,  6.29704, -6.038520},
+                    { 4, -11.3391, -0.820282}
+                    */
+                };
+            };
+        };
     };
 };
