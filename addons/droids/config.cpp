@@ -22,4 +22,6 @@ class CfgPatches {
 };
 
 #include "CfgVehicles.hpp"
+#include "CfgMovesBasic.hpp"
+#include "CfgMovesMaleSdr.hpp"
 #include "CfgEventHandlers.hpp"
