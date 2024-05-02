@@ -185,7 +185,10 @@ class TransportItems { \
     QCLASS(LAATi_MK2), \
     QCLASS(LAATi_MK2_Lamps), \
     QCLASS(RepublicTransport), \
-    QCLASS(BTLB_YWing) \
+    QCLASS(BTLB_YWing), \
+    QCLASS(Nu), \
+    QCLASS(Rho), \
+    QCLASS(Rho_medical) \
 ]
 
 #define VEHICLE_LIST_LAND [ \

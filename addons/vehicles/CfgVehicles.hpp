@@ -6,7 +6,7 @@ class CfgVehicles {
                 class GVAR(eject) {
                     displayName = "Eject";
                     exceptions[] = {"isNotSitting", "isNotInside"};
-                    condition = QUOTE(!isNull objectParent _target);
+                    condition = QUOTE(call FUNC(canEjectUnit));
                     statement = QUOTE(moveOut _target);
                 };
             };
@@ -53,6 +53,11 @@ class CfgVehicles {
                 UNFLIP_VEHICLE;
             };
         };
+        class ACE_SelfActions {
+            SKIN_SWITCHER;
+        };
+    };
+    class StaticWeapon: LandVehicle {
         class ACE_SelfActions {
             SKIN_SWITCHER;
         };
