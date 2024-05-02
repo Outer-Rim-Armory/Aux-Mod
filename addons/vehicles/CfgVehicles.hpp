@@ -6,7 +6,7 @@ class CfgVehicles {
                 class GVAR(eject) {
                     displayName = "Eject";
                     exceptions[] = {"isNotSitting", "isNotInside"};
-                    condition = QUOTE(!isNull objectParent _target);
+                    condition = QUOTE(call FUNC(canEjectUnit));
                     statement = QUOTE(moveOut _target);
                 };
             };
