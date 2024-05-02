@@ -15,12 +15,13 @@
 
 private ["_isJetpack"];
 
-// Will need testing, the UI might just be immediately recreate the hud
-_isJetpack = [backpack ace_player, true] call JLTS_fnc_jumpIsJumppack;
+if (GVAR(active) and {backpack ace_player call JLTS_fnc_jumpIsJumppack;}) then {
 
-if (GVAR(active) and _isJetpack) then {
-    ("JLTS_jumppack_energyDisplayLayer" call BIS_fnc_rscLayer) cutFadeOut 1;
-    missionNamespace setVariable ["JLTS_jumppack_var_energyDisplay", nil];
+
+    [{
+        ("JLTS_jumppack_energyDisplayLayer" call BIS_fnc_rscLayer) cutFadeOut 0;
+        missionNamespace setVariable ["JLTS_jumppack_var_energyDisplay", [displayNull]];
+    }, {GVAR(active)}] call EFUNC(core,tempPFH);
 } else {
     ("JLTS_jumppack_energyDisplayLayer" call BIS_fnc_rscLayer) cutRsc ["JLTS_jumppack_energy_dialog", "PLAIN", 1, false];
 };
