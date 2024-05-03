@@ -8,7 +8,8 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QCLASS(core),
-            QEGVAR(weapons,dc15l)
+            QEGVAR(weapons,load_order),
+            QEGVAR(vehicles,load_order)
         };
         units[] = {};
         weapons[] = {};
@@ -17,5 +18,6 @@ class CfgPatches {
 };
 
 #include "CfgWeapons.hpp"
+#include "CfgSounds.hpp"
 #include "CfgEventHandlers.hpp"
 #endif
