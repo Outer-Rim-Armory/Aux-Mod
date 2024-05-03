@@ -24,4 +24,5 @@ class CfgSounds {
     SOUND(EPF_PresidenteSpeech,"[KC] El Presidente Speech","El Presidente speech");
     SOUND(TDI_Theme,"[KC] Total Drama Island Theme","Total Drama Island theme");
     SOUND(PokeVillage,"[KC] Poke Village Theme","Poke Village Theme");
+    SOUND(Droid_Marching,"[KC] CIS Droid March","CIS Droid March");
 };
