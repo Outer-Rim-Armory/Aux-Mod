@@ -15,7 +15,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {
             QCLASS(Westar35C_base),
-            QCLASS(Westar35C)
+            QCLASS(Westar35C),
+            QCLASS(Westar35S_base),
+            QCLASS(Westar35S)
         };
         VERSION_CONFIG;
     };
