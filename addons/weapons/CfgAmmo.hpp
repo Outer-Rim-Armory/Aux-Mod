@@ -129,6 +129,10 @@ class CfgAmmo {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
     };
+    class CLASS(Bullet_PlasmaRifle_Yellow): CLASS(Bullet_PlasmaRifle_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
+        effectfly = "JLTS_plasma_yellow";
+    };
 
     class CLASS(Bullet_PlasmaCarbine_Blue): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
@@ -165,6 +169,10 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaCarbine_Green): CLASS(Bullet_PlasmaCarbine_Blue) {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
+    };
+    class CLASS(Bullet_PlasmaCarbine_Yellow): CLASS(Bullet_PlasmaCarbine_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
+        effectfly = "JLTS_plasma_yellow";
     };
 
     class CLASS(Bullet_PlasmaSniper_Blue): CLASS(Bullet_PlasmaBase) {
