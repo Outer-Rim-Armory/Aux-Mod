@@ -129,6 +129,10 @@ class CfgAmmo {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
     };
+    class CLASS(Bullet_PlasmaRifle_Yellow): CLASS(Bullet_PlasmaRifle_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
+        effectfly = "JLTS_plasma_yellow";
+    };
 
     class CLASS(Bullet_PlasmaCarbine_Blue): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
@@ -165,6 +169,10 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaCarbine_Green): CLASS(Bullet_PlasmaCarbine_Blue) {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
+    };
+    class CLASS(Bullet_PlasmaCarbine_Yellow): CLASS(Bullet_PlasmaCarbine_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
+        effectfly = "JLTS_plasma_yellow";
     };
 
     class CLASS(Bullet_PlasmaSniper_Blue): CLASS(Bullet_PlasmaBase) {
@@ -355,6 +363,11 @@ class CfgAmmo {
         effectfly = "JLTS_plasma_green";
         submunitionAmmo = QCLASS(Bullet_PlasmaScatter_submunition_Green);
     };
+    class CLASS(Bullet_PlasmaScatter_Yellow): CLASS(Bullet_PlasmaScatter_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
+        effectfly = "JLTS_plasma_yellow";
+        submunitionAmmo = QCLASS(Bullet_PlasmaScatter_submunition_Yellow);
+    };
 
     class CLASS(Bullet_PlasmaScatter_submunition_Blue): CLASS(Bullet_PlasmaPistol_Blue) {
         hit = 10;
@@ -366,6 +379,10 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaScatter_submunition_Green): CLASS(Bullet_PlasmaScatter_submunition_Blue) {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
+    };
+    class CLASS(Bullet_PlasmaScatter_submunition_Yellow): CLASS(Bullet_PlasmaScatter_submunition_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
+        effectfly = "JLTS_plasma_Yellow";
     };
 
     class CLASS(Bullet_PlasmaScatterHP_Blue): CLASS(Bullet_PlasmaScatter_Blue) {
@@ -381,6 +398,11 @@ class CfgAmmo {
         effectfly = "JLTS_plasma_green";
         submunitionAmmo = QCLASS(Bullet_PlasmaScatterHP_submunition_Green);
     };
+    class CLASS(Bullet_PlasmaScatterHP_Yellow): CLASS(Bullet_PlasmaScatterHP_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
+        effectfly = "JLTS_plasma_yellow";
+        submunitionAmmo = QCLASS(Bullet_PlasmaScatterHP_submunition_Yellow);
+    };
 
     class CLASS(Bullet_PlasmaScatterHP_submunition_Blue): CLASS(Bullet_PlasmaPistol_Blue) {
         hit = 20;
@@ -392,6 +414,10 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaScatterHP_submunition_Green): CLASS(Bullet_PlasmaScatterHP_submunition_Blue) {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
+    };
+    class CLASS(Bullet_PlasmaScatterHP_submunition_Yellow): CLASS(Bullet_PlasmaScatterHP_submunition_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
+        effectfly = "JLTS_plasma_yellow";
     };
 
     class CLASS(Bullet_PlasmaStun): CLASS(Bullet_PlasmaPistol_Blue) {
