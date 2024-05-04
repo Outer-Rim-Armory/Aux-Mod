@@ -3,7 +3,6 @@ class CfgWeapons {
     class Rifle_Base_F;
     class 3AS_WestarM5_Base_F: Rifle_Base_F {
         class WeaponSlotsInfo;
-
         class Single;
         class Burst;
         class FullAuto;
