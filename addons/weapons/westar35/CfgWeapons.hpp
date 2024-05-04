@@ -23,7 +23,14 @@ class CfgWeapons {
         JLTS_hasEMPProtection = TRUE; // make fried weapons eventually
     };
 
-    class ls_weapon_westar35s_primary;
+    class UGL_F;
+    class ls_rifle_base;
+    class ls_weapon_westar35s_base: ls_rifle_base {
+        class Scatter: UGL_F {
+            class Single;
+        };
+    };
+    class ls_weapon_westar35s_primary: ls_weapon_westar35s_base {};
     class CLASS(Westar35S_base): ls_weapon_westar35s_primary {
         SCOPE_PRIVATE;
         author = AUTHOR;
@@ -36,6 +43,17 @@ class CfgWeapons {
         magazineWell[] = {};
 
         canShootInWater = TRUE;
+
+        class Scatter: Scatter {
+            magazines[] = {QCLASS(Mag_10Rnd_Westar35S_scatter)};
+            recoil = "JLTS_scatter_recoil";
+            recoilProne = "JLTS_scatter_recoil";
+
+            class Single: Single {
+                recoil = "M240Recoil";
+                recoilProne = "M240Recoil";
+            };
+        };
     };
 
     class CLASS(Westar35S): CLASS(Westar35S_base) {
