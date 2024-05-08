@@ -102,11 +102,11 @@ class CfgVehicles {
                 showWindow = FALSE;
 
                 condition = QUOTE(this call FUNC(canImpulse));
-                statement = QUOTE(this call ls_vehicle_fnc_impulseJoystick;);
+                statement = QUOTE(this call ls_vehicle_fnc_impulseJoystick);
             };
             class ImpulseOff: ImpulseOn {
                 displayName = "Repulse";
-                statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick;);
+                statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick);
             };
             class RampOpen: RampOpen {
                 condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 0});

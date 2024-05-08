@@ -1,7 +1,10 @@
 class CfgVehicles {
     class Helicopter_Base_H;
     class 3AS_Rho_Base_F: Helicopter_Base_H {
-        class UserActions;
+        class UserActions {
+            class RampOpen;
+            class RampClose;
+        };
     };
     class 3AS_Rho_REP_F: 3AS_Rho_Base_F {
         class ACE_SelfActions;
@@ -84,6 +87,8 @@ class CfgVehicles {
         };
 
         class UserActions: UserActions {
+            // Impulse actions don't appear for some reason, I cannot figure out why
+            // Keybind works fine
             class ImpulseOn {
                 displayName = "Impulse";
                 position = "pilotview";
@@ -95,11 +100,11 @@ class CfgVehicles {
                 showWindow = FALSE;
 
                 condition = QUOTE(this call FUNC(canImpulse));
-                statement = QUOTE(this call ls_vehicle_fnc_impulseJoystick;);
+                statement = QUOTE(this call ls_vehicle_fnc_impulseJoystick);
             };
             class ImpulseOff: ImpulseOn {
                 displayName = "Repulse";
-                statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick;);
+                statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick);
             };
             class RampOpen: RampOpen {
                 condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 0});
