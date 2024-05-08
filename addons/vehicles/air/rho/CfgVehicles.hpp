@@ -1,10 +1,7 @@
 class CfgVehicles {
     class Helicopter_Base_H;
     class 3AS_Rho_Base_F: Helicopter_Base_H {
-        class UserActions {
-            class RampOpen;
-            class RampClose;
-        };
+        class UserActions;
     };
     class 3AS_Rho_REP_F: 3AS_Rho_Base_F {
         class ACE_SelfActions;
@@ -105,10 +102,10 @@ class CfgVehicles {
                 statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick;);
             };
             class RampOpen: RampOpen {
-                condition = QUOTE(ace_player == currentPilot this and {this animationSourcePhase 'ramp' == 0} and {alive this});
+                condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 0});
             };
             class RampClose: RampClose {
-                condition = QUOTE(ace_player == currentPilot this and {this animationSourcePhase 'ramp' == 1} and {alive this});
+                condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 1});
             };
         };
 
