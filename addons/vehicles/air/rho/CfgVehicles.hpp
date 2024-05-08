@@ -162,8 +162,9 @@ class CfgVehicles {
 
         crew = QCLASS(Unit_Phase2_CT);
 
-        textureList[] = {"Republic", 1, "Imperial", 0};
+        ace_cargo_space = 50;
 
+        textureList[] = {"Republic", 1, "Imperial", 0};
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -233,6 +234,12 @@ class CfgVehicles {
                     "\3AS\3AS_republic_heli\rho_class\data\clone_bed_co.paa",
                     "\3AS\3AS_republic_heli\rho_class\data\interior_co.paa"
                 };
+            };
+        };
+
+        class ACE_Cargo {
+            class Cargo {
+                CARGO_XX(CLASS(Resupply_platoonMedical),1);
             };
         };
     };
