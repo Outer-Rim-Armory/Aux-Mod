@@ -1,5 +1,11 @@
 class CfgVehicles {
-    class 3AS_Rho_Base_F;
+    class Helicopter_Base_H;
+    class 3AS_Rho_Base_F: Helicopter_Base_H {
+        class UserActions {
+            class RampOpen;
+            class RampClose;
+        };
+    };
     class 3AS_Rho_REP_F: 3AS_Rho_Base_F {
         class ACE_SelfActions;
     };
@@ -15,11 +21,7 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
-        tas_can_impulse = FALSE;
-        ls_impulsor_soundOn = QCLASS(Sound_ImpulseOn);
-        ls_impulsor_soundOff = QCLASS(Sound_ImpulseOff);
-        ls_impulsor_fuelDrain_1 = 0;
-        ls_impulsor_fuelDrain_2 = 0;
+        IMPULSE_SETTINGS;
 
         weapons[] = {
             "ParticleBeamCannon_Nu",
@@ -82,6 +84,32 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
+        };
+
+        class UserActions: UserActions {
+            class ImpulseOn {
+                displayName = "Impulse";
+                position = "pilotview";
+                radius = 5;
+                priority = 9;
+
+                onlyforplayer = FALSE;
+                hideOnUse = TRUE;
+                showWindow = FALSE;
+
+                condition = QUOTE(this call FUNC(canImpulse));
+                statement = QUOTE(this call ls_vehicle_fnc_impulseJoystick;);
+            };
+            class ImpulseOff: ImpulseOn {
+                displayName = "Repulse";
+                statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick;);
+            };
+            class RampOpen: RampOpen {
+                condition = QUOTE(ace_player == currentPilot this and {this animationSourcePhase 'ramp' == 0} and {alive this});
+            };
+            class RampClose: RampClose {
+                condition = QUOTE(ace_player == currentPilot this and {this animationSourcePhase 'ramp' == 1} and {alive this});
+            };
         };
 
         INVENTORY_VEHICLE_BASE(3);

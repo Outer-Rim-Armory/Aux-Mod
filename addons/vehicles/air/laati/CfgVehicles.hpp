@@ -25,11 +25,7 @@ class CfgVehicles {
         vehicleClass = "Helicopter";
         availableForSupportTypes[] = {"CAS_Heli", "Transport", "Drop"};
 
-        tas_can_impulse = FALSE;
-        ls_impulsor_soundOn = QCLASS(Sound_ImpulseOn);
-        ls_impulsor_soundOff = QCLASS(Sound_ImpulseOff);
-        ls_impulsor_fuelDrain_1 = 0;
-        ls_impulsor_fuelDrain_2 = 0;
+        IMPULSE_SETTINGS;
 
         ls_vehicle_rampAnims[] = {"ramp"};
         ls_vehicle_rampToggleSounds[] = {QCLASS(Sound_LAAT_Ramp), QCLASS(Sound_LAAT_Ramp)};
@@ -189,12 +185,12 @@ class CfgVehicles {
                 hideOnUse = TRUE;
                 showWindow = FALSE;
 
-                condition = QUOTE(isEngineOn this and ace_player == currentPilot this and !isTouchingGround this;);
-                statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick;);
+                condition = QUOTE(this call FUNC(canImpulse));
+                statement = QUOTE(this call ls_vehicle_fnc_impulseJoystick;);
             };
             class Repulse: Impulse {
                 displayName = "Repulse";
-                statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick;);
+                statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick;);
             };
 
             class DoorsOpen: Impulse {
