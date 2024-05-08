@@ -2,6 +2,7 @@ PREP(getNearbyUnits);
 PREP(inFeatureCamera);
 PREP(isEngineer);
 PREP(isMedic);
+PREP(isVehicleCrew);
 PREP(loopSay3D_init);
 PREP(loopSay3D);
 PREP(playLocalSound);
