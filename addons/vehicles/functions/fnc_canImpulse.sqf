@@ -16,5 +16,6 @@
  */
 
 params ["_vehicle"];
+TRACE_1("fnc_canImpulse",_vehicle);
 
 isEngineOn _vehicle and {ace_player == currentPilot _vehicle} and {!isTouchingGround _vehicle};
