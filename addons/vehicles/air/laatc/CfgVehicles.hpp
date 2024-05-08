@@ -86,7 +86,7 @@ class CfgVehicles {
                 radius = 5;
 
                 shortcut = "User19";
-                onlyforplayer = 0;
+                onlyForPlayer = 0;
                 hideOnUse = 1;
 
                 condition = QUOTE(this call FUNC(canImpulse));

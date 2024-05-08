@@ -181,7 +181,7 @@ class CfgVehicles {
                 radius = 5;
                 priority = 9;
 
-                onlyforplayer = FALSE;
+                onlyForPlayer = FALSE;
                 hideOnUse = TRUE;
                 showWindow = FALSE;
 
