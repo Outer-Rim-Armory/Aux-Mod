@@ -1,9 +1,44 @@
 class CfgWeapons {
+    class H_HelmetO_ViperSP_hex_F;
+    class CLASS(helmet_base): H_HelmetO_ViperSP_hex_F {
+        class ItemInfo;
+    };
+    class CLASS(mandalorian_helmet_base): CLASS(helmet_base) {
+        class ItemInfo: ItemInfo {};
+    };
+
+    class CLASS(mandalorian_helmet_traditional): CLASS(mandalorian_helmet_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Traditional Mandalorian Helmet";
+
+        model = "\z\tgf\addons\helmets\traditional\traditional_helmet.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] = {
+            "\z\tgf\addons\helmets\traditional\data\camo1_co.paa",
+            "\z\tgf\addons\helmets\traditional\data\camo2_co.paa"
+        };
+        picture = "\z\tgf\addons\helmets\traditional\data\traditional_helmet.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\z\tgf\addons\helmets\traditional\traditional_helmet.p3d";
+        }
+    };
+
+    class CLASS(mandalorian_helmet_traditional_Dart): CLASS(mandalorian_helmet_traditional) {
+        displayName = "[KC] Traditional Mandalorian Helmet ('Dart')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(mandalorian\data\helmets\traditional\Dart_camo1_co.paa),
+            QPATHTOF(mandalorian\data\helmets\traditional\Dart_camo2_co.paa)
+        };
+    };
+
     class ls_greenforUniform_base;
     class CLASS(INDEP_Uniform_Base): ls_greenforUniform_base {
         class ItemInfo;
     };
-    class FACTION(mandalorian_uniform_base): CLASS(INDEP_Uniform_Base) {
+    class CLASS(mandalorian_uniform_base): CLASS(INDEP_Uniform_Base) {
         SCOPE_PUBLIC;
     };
 
@@ -34,6 +69,7 @@ class CfgWeapons {
 
         class ItemInfo: ItemInfo {
             uniformModel = "\z\tgf\addons\armour\medium_armour\medium_armour.p3d";
+            hiddenSelections[] = {"camo1", "camo2"};
             class HitpointsprotectionInfo {
                 class Neck {
                     hitPointName = "HitNeck";

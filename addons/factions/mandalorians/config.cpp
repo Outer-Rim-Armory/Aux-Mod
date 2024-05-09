@@ -12,6 +12,9 @@ class CfgPatches {
         units[] = {
         };
         weapons[] = {
+            QCLASS(mandalorian_helmet_base),
+            QCLASS(mandalorian_helmet_traditional),
+            QCLASS(mandalorian_helmet_traditional_Dart),
             QCLASS(mandalorian_vest_base),
             QCLASS(mandalorian_vest_medium),
             QCLASS(mandalorian_vest_medium_Dart)
