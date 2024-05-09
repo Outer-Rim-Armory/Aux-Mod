@@ -10,7 +10,7 @@ class ACEX_Fortify_Presets {
         presets[] = {
             QGVAR(common),
             QGVAR(fob),
-            QGVAR(camoflauge)
+            QGVAR(camouflage)
         };
     };
 
@@ -52,8 +52,8 @@ class ACEX_Fortify_Presets {
         };
     };
 
-    class GVAR(camoflauge) {
-        displayName = "Camoflauge";
+    class GVAR(camouflage) {
+        displayName = "Camouflage";
         objects[] = {
             {"CamoNet_INDP_F", 10},
             {"CamoNet_INDP_open_F", 10},
