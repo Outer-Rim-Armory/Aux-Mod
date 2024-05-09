@@ -20,6 +20,8 @@ params ["_player", "_camera"];
 TRACE_2("fnc_onMenuOpen",_player,_camera);
 
 // Hide blueforce tracker
-group _player setVariable ["ace_map_hideBlueForceMarker", _camera == "curator", true];
+if (GVAR(hideZeusGroup)) then {
+    group _player setVariable ["ace_map_hideBlueForceMarker", _camera == "curator", true];
+};
 
 nil;
