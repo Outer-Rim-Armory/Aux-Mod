@@ -17,7 +17,10 @@ class CfgPatches {
             QCLASS(mandalorian_helmet_traditional_Dart),
             QCLASS(mandalorian_vest_base),
             QCLASS(mandalorian_vest_medium),
-            QCLASS(mandalorian_vest_medium_Dart)
+            QCLASS(mandalorian_vest_medium_Dart),
+            QCLASS(mandalorianNvg_base),
+            QCLASS(mandalorianNvg_rangefinder),
+            QCLASS(mandalorianNvg_rangefinder_Dart)
         };
         VERSION_CONFIG;
     };

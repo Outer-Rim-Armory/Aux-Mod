@@ -23,14 +23,14 @@ class CfgWeapons {
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo1", "camo2"};
             uniformModel = "\z\tgf\addons\helmets\traditional\traditional_helmet.p3d";
-        }
+        };
     };
 
     class CLASS(mandalorian_helmet_traditional_Dart): CLASS(mandalorian_helmet_traditional) {
         displayName = "[KC] Traditional Mandalorian Helmet ('Dart')";
         hiddenSelectionsTextures[] = {
-            QPATHTOF(mandalorian\data\helmets\traditional\Dart_camo1_co.paa),
-            QPATHTOF(mandalorian\data\helmets\traditional\Dart_camo2_co.paa)
+            QPATHTOF(mandalorians\data\helmets\traditional\Dart_camo1_co.paa),
+            QPATHTOF(mandalorians\data\helmets\traditional\Dart_camo2_co.paa)
         };
     };
 
@@ -135,6 +135,45 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {
             QPATHTOF(mandalorians\data\vests\medium\Dart_camo1_co.paa),
             QPATHTOF(mandalorians\data\vests\medium\Dart_camo2_co.paa)
+        };
+    };
+
+    class NVGoggles;
+    class CLASS(nvg_base): NVGoggles {
+        class ItemInfo;
+    };
+    class CLASS(mandalorianNvg_base): CLASS(nvg_base) {
+        class ItemInfo: ItemInfo {
+            mass = 10;
+        };
+    };
+
+    class CLASS(mandalorianNvg_rangefinder): CLASS(mandalorianNvg_base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] Mandalorian Rangefinder";
+
+        visionMode[] = {"Normal", "NVG", "TI"};
+
+        model = "\z\tgf\addons\nvg\rangefinder_r\rangefinder_off_r.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {
+            "\z\tgf\addons\nvg\rangefinder_r\data\camo1_co.paa"
+        };
+        picture = "\z\tgf\addons\nvg\rangefinder_r\data\mando_range.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"camo1"};
+            uniformModel = "\z\tgf\addons\nvg\rangefinder_r\rangefinder_on_r.p3d";
+            modelOff = "\z\tgf\addons\nvg\rangefinder_r\rangefinder_off_r.p3d";
+        };
+    };
+
+    class CLASS(mandalorianNvg_rangefinder_Dart): CLASS(mandalorianNvg_rangefinder) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] Mandalorian Rangefinder ('Dart')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(mandalorians\data\nvgs\rangefinder\Dart_camo1_co.paa)
         };
     };
 };

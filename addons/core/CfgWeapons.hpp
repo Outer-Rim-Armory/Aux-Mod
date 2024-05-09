@@ -4,6 +4,8 @@ class CfgWeapons {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
+        subItems[] = {};
+
         picture = QPATHTOF(data\ui\logo_kc_ca.paa);
     };
 
@@ -20,8 +22,9 @@ class CfgWeapons {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
+        visionMode[] = {"Normal", "NVG"};
         thermalMode[] = {WHOT};
-        modelOptics = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
+        modelOptics = QPATHTOF(data\models\empty\CLASS(empty.p3d));
 
         picture = QPATHTOF(data\ui\logo_kc_ca.paa);
     };
