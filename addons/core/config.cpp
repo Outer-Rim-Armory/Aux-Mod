@@ -15,7 +15,8 @@ class CfgPatches {
         };
         weapons[] = {
             QCLASS(ItemCore),
-            QCLASS(ItemCore_ItemInfo)
+            QCLASS(ItemCore_ItemInfo),
+            QCLASS(vest_base)
         };
         VERSION_CONFIG;
     };
