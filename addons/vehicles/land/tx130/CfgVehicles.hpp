@@ -1,3 +1,15 @@
+#define VEHICLE_TRANSPORT class VehicleTransport { \
+    class Cargo { \
+        canBeTransported = TRUE; \
+        dimensions[] = { \
+            "wheel_1_2_axis", \
+            "wheel_2_7_bound" \
+        }; \
+        parachuteClass = "B_Parachute_02_F"; \
+        parachuteHeightLimit = 40; \
+    }; \
+}
+
 class CfgVehicles {
     class 3AS_Saber_Base;
     class 3AS_Saber_M1: 3AS_Saber_Base {
@@ -63,6 +75,7 @@ class CfgVehicles {
         };
 
         INVENTORY_VEHICLE_BASE(3);
+        VEHICLE_TRANSPORT;
 
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
@@ -144,6 +157,7 @@ class CfgVehicles {
         };
 
         INVENTORY_VEHICLE_BASE(3);
+        VEHICLE_TRANSPORT;
 
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
@@ -214,6 +228,7 @@ class CfgVehicles {
         };
 
         INVENTORY_VEHICLE_BASE(3);
+        VEHICLE_TRANSPORT;
 
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
@@ -284,6 +299,7 @@ class CfgVehicles {
         };
 
         INVENTORY_VEHICLE_BASE(3);
+        VEHICLE_TRANSPORT;
 
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;

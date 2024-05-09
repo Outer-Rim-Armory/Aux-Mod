@@ -135,6 +135,7 @@ class CfgMusic {
     MUSIC(SW_TimeToMeetTheNatives,"[SW] Time to Meet the Natives",96,StarWars);
     MUSIC(SW_UmbaraLanding,"[SW] Umbara Landing",202,StarWars);
     MUSIC(SW_Felucia_Theme,"[SW] Battle of Felucia",204,StarWars);
+    MUSIC(Thrawn_Theme,"[SW] Thrawn Theme",336,StarWars);
 
     // Transformers
     MUSIC(TF_ArrivalToEarth,"[TF] Arrival To Earth",315,Other);
@@ -143,6 +144,7 @@ class CfgMusic {
     MUSIC(TF_Scorponok,"[TF] Scorponok's Theme",273,Other);
     MUSIC(TF_Nest,"[TF] Nest",124,Other);
     MUSIC(TF_TheAllSpark,"[TF] The All Spark",214,Other);
+    MUSIC(EPF_Anthem,"EPF Anthem",228,Other);
 
     // Tron
     MUSIC(Tron_CLU,"[Tron] C.L.U",279,Other);
@@ -181,6 +183,7 @@ class CfgMusic {
     // HellDivers 2
     MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);
     MUSIC(HD_Loadout_Theme,"Loadout Select",332,VideoGames);
+    MUSIC(RDF_Downfall,"RDF Downfall",355,VideoGames);
 
 
     // Unknown

@@ -25,4 +25,5 @@ class CfgSFX {
     SOUND_FX(EPF_PresidenteSpeech,"[KC] El Presidente Speech",100);
     SOUND_FX(TDI_Theme,"[KC] Total Drama Island Theme",100);
     SOUND_FX(PokeVillage,"[KC] Poke Village Theme",300);
+    SOUND_FX(Droid_Marching,"[KC] CIS Droid March",600);
 };

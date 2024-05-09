@@ -14,8 +14,10 @@ class CfgPatches {
             QGVAR(arc170),
             QGVAR(laatc),
             QGVAR(laati),
+            QGVAR(nu),
             QGVAR(ogre),
             QGVAR(rathian),
+            QGVAR(rho),
             QGVAR(transport),
             QGVAR(vespoid),
             QGVAR(ywing),
@@ -38,6 +40,7 @@ class CfgPatches {
             QGVAR(rx200),
             QGVAR(scout_tank),
             QGVAR(tx130),
+            QGVAR(utat),
             // Static
             QGVAR(command_post),
             QGVAR(mortars)

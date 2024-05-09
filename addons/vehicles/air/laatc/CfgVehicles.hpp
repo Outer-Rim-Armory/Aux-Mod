@@ -1,5 +1,10 @@
 class CfgVehicles {
-    class lsd_laatc_base;
+    class Helicopter_Base_H;
+    class lsd_laatc_base: Helicopter_Base_H {
+        class VehicleTransport {
+            class Carrier;
+        };
+    };
     class lsd_heli_laatc: lsd_laatc_base {
         class ACE_SelfActions;
         class UserActions;
@@ -16,12 +21,7 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
-        ls_impulsor_soundOn = QCLASS(Sound_ImpulseOn);
-        ls_impulsor_soundOff = QCLASS(Sound_ImpulseOff);
-        ls_impulsor_fuelDrain_1 = 0;
-        ls_impulsor_fuelDrain_2 = 0;
-        // ls_impulsor_boostSpeed_1 = 400; // Impulse speeds, default values listed
-        // ls_impulsor_boostSpeed_2 = 600;
+        IMPULSE_SETTINGS;
 
         backRotorForceCoef = 1.8;
         backRotorSpeed = 1;
@@ -86,16 +86,16 @@ class CfgVehicles {
                 radius = 5;
 
                 shortcut = "User19";
-                onlyforplayer = 0;
+                onlyForPlayer = 0;
                 hideOnUse = 1;
 
-                condition = QUOTE(isEngineOn this and ace_player == currentPilot this and !isTouchingGround this);
-                statement = QUOTE(this call ls_vehicle_fnc_ImpulseJoystick);
+                condition = QUOTE(this call FUNC(canImpulse));
+                statement = QUOTE(this call ls_vehicle_fnc_impulseJoystick);
             };
             class Repulse: Impulse {
                 displayName = "Repulse";
                 shortcut = "User20";
-                statement = QUOTE(this call ls_vehicle_fnc_RepulseJoystick);
+                statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick);
             };
 
             class LoadVehicle: Impulse {
@@ -106,5 +106,18 @@ class CfgVehicles {
         };
 
         INVENTORY_VEHICLE_BASE(1);
+
+        class VehicleTransport: VehicleTransport {
+            class Carrier: Carrier {
+                cargoBayDimensions[] = {
+                    {-5.3, 6.29704, -6.038520},
+                    { 4,  -11.3391, -0.820282}
+                    /* Original
+                    {-4,  6.29704, -6.038520},
+                    { 4, -11.3391, -0.820282}
+                    */
+                };
+            };
+        };
     };
 };

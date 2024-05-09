@@ -2,6 +2,14 @@
 
 #define VIV_PICKUP_RANGE 30
 
+#define IMPULSE_SETTINGS tas_can_impulse = FALSE; \
+ls_impulsor_soundOn = QCLASS(Sound_ImpulseOn); \
+ls_impulsor_soundOff = QCLASS(Sound_ImpulseOff); \
+ls_impulsor_boostSpeed_1 = 400; \
+ls_impulsor_boostSpeed_2 = 600; \
+ls_impulsor_fuelDrain_1 = 0; \
+ls_impulsor_fuelDrain_2 = 0 \
+
 #define SKIN_SWITCHER class GVAR(switchSkin) { \
     displayName = "Switch Vehicle Skin"; \
     condition = QUOTE(call FUNC(skin_canSwitch)); \
@@ -185,7 +193,10 @@ class TransportItems { \
     QCLASS(LAATi_MK2), \
     QCLASS(LAATi_MK2_Lamps), \
     QCLASS(RepublicTransport), \
-    QCLASS(BTLB_YWing) \
+    QCLASS(BTLB_YWing), \
+    QCLASS(Nu), \
+    QCLASS(Rho), \
+    QCLASS(Rho_medical) \
 ]
 
 #define VEHICLE_LIST_LAND [ \
@@ -218,5 +229,6 @@ class TransportItems { \
     QCLASS(TX130_M1), \
     QCLASS(TX130_M1_Recon), \
     QCLASS(TX130_M1_GL), \
-    QCLASS(TX130_Super) \
+    QCLASS(TX130_Super), \
+    QCLASS(UTAT) \
 ]
