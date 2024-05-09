@@ -14,9 +14,11 @@ class CfgPatches {
             QUOTE(DOUBLES(Ground,CLASS(Holder_Base)))
         };
         weapons[] = {
+            QCLASS(helmet_base),
+            QCLASS(vest_base),
+            QCLASS(nvg_base),
             QCLASS(ItemCore),
-            QCLASS(ItemCore_ItemInfo),
-            QCLASS(vest_base)
+            QCLASS(ItemCore_ItemInfo)
         };
         VERSION_CONFIG;
     };
