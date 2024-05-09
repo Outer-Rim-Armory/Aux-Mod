@@ -10,6 +10,10 @@ class CfgPatches {
             QUOTE(ADDON)
         };
         units[] = {
+            QCLASS(mandalorianBackpack_base),
+            QCLASS(mandalorianBackpack_jt12),
+            QCLASS(mandalorianBackpack_jt12_Dart),
+            QCLASS(mandalorianBackpack_z6)
         };
         weapons[] = {
             QCLASS(mandalorianHelmet_base),
