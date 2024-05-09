@@ -207,7 +207,7 @@ class CfgPatches {
             QGROUND_CLASS(Helmet_Phase12_Base)
         };
         weapons[] = {
-            QCLASS(Helmet_Base),
+            QCLASS(cloneHelmet_base),
             QCLASS(Helmet_Phase1_Base),
             QCLASS(Helmet_Phase1_CR),
             QCLASS(Helmet_Phase1_CT),
