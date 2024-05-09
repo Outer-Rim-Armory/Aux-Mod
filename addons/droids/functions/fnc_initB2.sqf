@@ -41,7 +41,7 @@ if !(isNull objectParent _unit) then {
 
 _unit addEventHandler ["GetOutMan", {
     params ["_unit"];
-    [_unit, "B2_SupperBattleDroid_idle", 2] call ace_common_fnc_doAnimation;
+    [_unit, QGVAR(B2_idle), 2] call ace_common_fnc_doAnimation;
 }];
 
 nil;
