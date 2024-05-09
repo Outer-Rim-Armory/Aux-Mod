@@ -1,6 +1,6 @@
 class CfgVehicles {
     class O_Truck_03_transport_F;
-    class CLASS(Gammoth_Base): O_Truck_03_transport_F {
+    class CLASS(Gammoth_base): O_Truck_03_transport_F {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -48,14 +48,14 @@ class CfgVehicles {
         INVENTORY_VEHICLE_BASE(2);
     };
 
-    class CLASS(Gammoth_Transport): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Transport): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Transport";
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Transport);
     };
 
-    class CLASS(Gammoth_Covered): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Covered): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Transport (Covered)";
@@ -94,7 +94,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Gammoth_Ammo): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Ammo): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Ammo Truck";
@@ -144,7 +144,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Gammoth_Medical): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Medical): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Medical Truck";
@@ -190,7 +190,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Gammoth_Repair): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Repair): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Repair Truck";
@@ -232,7 +232,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Gammoth_Refuel): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Refuel): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Refuel Truck";
@@ -284,7 +284,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Gammoth_Device): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Device): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Device Truck";
