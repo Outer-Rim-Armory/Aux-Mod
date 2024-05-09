@@ -14,6 +14,9 @@ class CfgVehicles {
 
         weapons[] = {QCLASS(Horn_Gammoth)};
 
+        terrainCoef = 2.5; // was 1.8
+        maxSpeed = 120; // was 90
+
         hiddenSelectionsTextures[] = {};
         textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources {
