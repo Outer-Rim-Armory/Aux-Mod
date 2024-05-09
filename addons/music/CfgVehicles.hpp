@@ -23,4 +23,5 @@ class CfgVehicles {
     SOUND_OBJ(EPF_PresidenteSpeech,"[KC] El Presidente Speech");
     SOUND_OBJ(TDI_Theme,"[KC] Total Drama Island Theme");
     SOUND_OBJ(PokeVillage,"[KC] Poke Village Theme");
+    SOUND_OBJ(Droid_Marching,"[KC] CIS Droid March");
 };

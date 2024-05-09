@@ -137,6 +137,7 @@ GROUND_HOLDER(Helmet_ARF_Tugz,"SF ARF Helm ('Tugz')");
 
 GROUND_HOLDER(Helmet_BARC_Keeli,"INF BARC Helm ('Keeli')");
 GROUND_HOLDER(Helmet_BARC_KeeliCrimson,"INF BARC Helm ('Keeli') [Crimson Visor]");
+GROUND_HOLDER(Helmet_BARC_Lines,"INF BARC Helm ('Lines')");
 GROUND_HOLDER(Helmet_BARC_Rat,"INF BARC Helm ('Rat')");
 GROUND_HOLDER(Helmet_BARC_RatCrimson,"INF BARC Helm ('Rat') [Crimson Visor]");
 GROUND_HOLDER(Helmet_BARC_Weenie,"INF BARC Helm ('Weenie')");

@@ -2,6 +2,14 @@
 
 #define VIV_PICKUP_RANGE 30
 
+#define IMPULSE_SETTINGS tas_can_impulse = FALSE; \
+ls_impulsor_soundOn = QCLASS(Sound_ImpulseOn); \
+ls_impulsor_soundOff = QCLASS(Sound_ImpulseOff); \
+ls_impulsor_boostSpeed_1 = 400; \
+ls_impulsor_boostSpeed_2 = 600; \
+ls_impulsor_fuelDrain_1 = 0; \
+ls_impulsor_fuelDrain_2 = 0 \
+
 #define SKIN_SWITCHER class GVAR(switchSkin) { \
     displayName = "Switch Vehicle Skin"; \
     condition = QUOTE(call FUNC(skin_canSwitch)); \

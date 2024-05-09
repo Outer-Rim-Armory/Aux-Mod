@@ -5,7 +5,7 @@
 <div id="user-content-toc">
   <ul>
     <summary><h1 style="display: inline-block;">Keeli Company Aux Mod</h1><br>
-    Version 2.6.1<br>
+    Version 2.7.2<br>
     <img style="padding-top:10px" src="https://www.bohemia.net/assets/img/licenses/APL-ND.png">*</summary>
   </ul>
 </div>
@@ -28,9 +28,7 @@
 
 ***All custom assets, scripts, etc. are licensed under APL-ND**. While containing original assets, this mod also includes re-uploads of other content with permission from their original authors.
 
-If an addon contains re-uploaded or modified content, it will be noted in a `LICENSE.md` file located in that addon.
-
-If you would like to reupload content from the Keeli Company aux mod, leave a comment in the [Reuploading Content from the Keeli Company Aux Mod](https://github.com/Outer-Rim-Armory/Aux-Mod/discussions/223) discussion post. **Asking does not guarentee a yes. Reuploading and not asking guarentees a DMCA.**
+If an addon contains re-uploaded or modified content, it will be noted in a `LICENSE` file located in that addon.
 <br>
 
 ---
@@ -38,20 +36,12 @@ If you would like to reupload content from the Keeli Company aux mod, leave a co
 ## Mod Features
 The Keeli Company Aux mod focuses on creating custom and in-depth systems, as well as the standard features you would find in other unit aux mods such as custom textured equipment; vehicles; and balance tweaks. Each of these systems has a document outlining how to use that particular system.
 
-- [Armor](./addons/armor/README.md)
 - [Chat Wheel](./addons/chat_wheel_redux/README.md)
-- [Creatures](./addons/creatures/README.md)
-- [Custom Armor](./addons/creatures/README.md)
-- [Droids](./addons/droids/README.md)
 - [Fortify](./addons/fortify/README.md)
-- [Gonk Droids](./addons/gonks/README.md)
-- [Intercom](./addons/intercom/README.md)
 - [Jetpacks](./addons/jetpacks/README.md)
 - [Map](./addons/map/README.md)
 - [Medical](./addons/medical/README.md)
 - [Radio Jammers](./addons/jammers/README.md)
-- [Screenshot Mode](./addons/screenshotmode/README.md)
-- [Suppress](./addons/suppress/README.md)
 - [Vehicle Shields](./addons/shields/README.md)
 - [Vehicle Systems](./addons/vehicles/README.md)
 - [Weapon Systems](./addons/weapons/README.md)

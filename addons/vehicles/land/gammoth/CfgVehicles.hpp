@@ -1,6 +1,6 @@
 class CfgVehicles {
     class O_Truck_03_transport_F;
-    class CLASS(Gammoth_Base): O_Truck_03_transport_F {
+    class CLASS(Gammoth_base): O_Truck_03_transport_F {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -13,6 +13,9 @@ class CfgVehicles {
         side = BLUFOR;
 
         weapons[] = {QCLASS(Horn_Gammoth)};
+
+        terrainCoef = 2.5; // was 1.8
+        maxSpeed = 120; // was 90
 
         hiddenSelectionsTextures[] = {};
         textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
@@ -48,18 +51,18 @@ class CfgVehicles {
         INVENTORY_VEHICLE_BASE(2);
     };
 
-    class CLASS(Gammoth_Transport): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Transport): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Transport";
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Transport);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\gammoth,Gammoth_Transport);
     };
 
-    class CLASS(Gammoth_Covered): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Covered): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Transport (Covered)";
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Covered);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\gammoth,Gammoth_Covered);
 
         model = "\A3\Soft_F_EPC\Truck_03\Truck_03_covered_F.p3d";
         hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "Camo4"};
@@ -94,11 +97,11 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Gammoth_Ammo): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Ammo): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Ammo Truck";
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Ammo);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\gammoth,Gammoth_Ammo);
 
         ace_cargo_space = 8;
         ace_rearm_defaultSupply = 1200;
@@ -144,11 +147,11 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Gammoth_Medical): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Medical): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Medical Truck";
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Medical);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\gammoth,Gammoth_Medical);
 
         ace_cargo_space = 8;
         supplyRadius = 10;
@@ -190,11 +193,11 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Gammoth_Repair): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Repair): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Repair Truck";
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Repair);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\gammoth,Gammoth_Repair);
 
         ace_cargo_space = 12;
         ace_repair_canRepair = 1;
@@ -232,11 +235,11 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Gammoth_Refuel): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Refuel): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Refuel Truck";
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Refuel);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\gammoth,Gammoth_Refuel);
 
         ace_cargo_space = 4;
         ace_refuel_canReceive = 1;
@@ -284,11 +287,11 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Gammoth_Device): CLASS(Gammoth_Base) {
+    class CLASS(Gammoth_Device): CLASS(Gammoth_base) {
         SCOPE_PUBLIC;
 
         displayName = "Gammoth Device Truck";
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Gammoth_Device);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\gammoth,Gammoth_Device);
 
         ace_cargo_space = 4;
         aggregateReflectors[] = {{"Left", "Right", "Left2", "Right2"}, {"Light_1"}};
