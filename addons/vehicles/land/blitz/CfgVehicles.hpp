@@ -217,10 +217,7 @@ class CfgVehicles {
 
         class ACE_Cargo {
             class Cargo {
-                class Track {
-                    type = "ACE_Track";
-                    amount = 1;
-                };
+                CARGO_XX(ACE_TRACK,1);
             };
         };
     };

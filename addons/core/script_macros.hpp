@@ -104,6 +104,11 @@ scopeCurator = 0
     count = COUNT; \
 }
 
+#define CARGO_XX(ITEM, COUNT) class ITEM { \
+    type = QUOTE(ITEM); \
+    amount = COUNT; \
+}
+
 #define GROUND_CLASS(WEAP_NAME) DOUBLES(Ground,CLASS(WEAP_NAME))
 #define QGROUND_CLASS(WEAP_NAME) QUOTE(GROUND_CLASS(WEAP_NAME))
 #define GROUND_HOLDER(WEAP_NAME, DISPLAY_NAME) class GROUND_CLASS(WEAP_NAME): GROUND_CLASS(Holder_Base) { \

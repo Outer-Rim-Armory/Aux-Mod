@@ -10,6 +10,7 @@ PREP(atrt_skin_insertChildren);
 PREP(autoEject);
 PREP(canDeleteCrew);
 PREP(canEjectUnit);
+PREP(canImpulse);
 PREP(canSpawnCrew);
 PREP(csw_canDeploy);
 PREP(csw_canPickup);

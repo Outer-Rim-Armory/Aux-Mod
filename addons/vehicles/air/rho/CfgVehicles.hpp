@@ -1,5 +1,11 @@
 class CfgVehicles {
-    class 3AS_Rho_Base_F;
+    class Helicopter_Base_H;
+    class 3AS_Rho_Base_F: Helicopter_Base_H {
+        class UserActions {
+            class RampOpen;
+            class RampClose;
+        };
+    };
     class 3AS_Rho_REP_F: 3AS_Rho_Base_F {
         class ACE_SelfActions;
     };
@@ -15,11 +21,7 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
-        tas_can_impulse = FALSE;
-        ls_impulsor_soundOn = QCLASS(Sound_ImpulseOn);
-        ls_impulsor_soundOff = QCLASS(Sound_ImpulseOff);
-        ls_impulsor_fuelDrain_1 = 0;
-        ls_impulsor_fuelDrain_2 = 0;
+        IMPULSE_SETTINGS;
 
         weapons[] = {
             "ParticleBeamCannon_Nu",
@@ -84,6 +86,34 @@ class CfgVehicles {
             HUD_CHANGER;
         };
 
+        class UserActions: UserActions {
+            // Impulse actions don't appear for some reason, I cannot figure out why
+            // Keybind works fine
+            class ImpulseOn {
+                displayName = "Impulse";
+                position = "pilotview";
+                radius = 5;
+                priority = 9;
+
+                onlyForPlayer = FALSE;
+                hideOnUse = TRUE;
+                showWindow = FALSE;
+
+                condition = QUOTE(this call FUNC(canImpulse));
+                statement = QUOTE(this call ls_vehicle_fnc_impulseJoystick);
+            };
+            class ImpulseOff: ImpulseOn {
+                displayName = "Repulse";
+                statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick);
+            };
+            class RampOpen: RampOpen {
+                condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 0});
+            };
+            class RampClose: RampClose {
+                condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 1});
+            };
+        };
+
         INVENTORY_VEHICLE_BASE(3);
     };
 
@@ -132,8 +162,9 @@ class CfgVehicles {
 
         crew = QCLASS(Unit_Phase2_CT);
 
-        textureList[] = {"Republic", 1, "Imperial", 0};
+        ace_cargo_space = 50;
 
+        textureList[] = {"Republic", 1, "Imperial", 0};
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -203,6 +234,12 @@ class CfgVehicles {
                     "\3AS\3AS_republic_heli\rho_class\data\clone_bed_co.paa",
                     "\3AS\3AS_republic_heli\rho_class\data\interior_co.paa"
                 };
+            };
+        };
+
+        class ACE_Cargo {
+            class Cargo {
+                CARGO_XX(CLASS(Resupply_platoonMedical),1);
             };
         };
     };
