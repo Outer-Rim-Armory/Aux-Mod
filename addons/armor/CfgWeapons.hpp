@@ -1,6 +1,6 @@
 class CfgWeapons {
     class ls_gar_phase2_helmet;
-    class CLASS(Helmet_Base): ls_gar_phase2_helmet {
+    class CLASS(cloneHelmet_base): ls_gar_phase2_helmet {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
