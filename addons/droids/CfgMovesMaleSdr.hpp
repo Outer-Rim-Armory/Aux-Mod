@@ -24,7 +24,7 @@ class CfgMovesMaleSdr: CfgMovesBasic {
             InterpolateTo[] = {
                 QGVAR(B2_idle),
                 0.0099999998,
-                GVAR(B2_walk),
+                QGVAR(B2_walk),
                 0.0099999998,
                 "Unconscious",
                 0.1
@@ -56,7 +56,7 @@ class CfgMovesMaleSdr: CfgMovesBasic {
             aiming = "empty";
             speed = -1.2;
             duty = 0;
-            looped = false;
+            looped = FALSE;
             weaponIK = FALSE;
             showHandGun = TRUE;
             disableWeapons = TRUE;
