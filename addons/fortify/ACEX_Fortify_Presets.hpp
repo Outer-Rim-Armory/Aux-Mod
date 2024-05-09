@@ -30,7 +30,10 @@ class ACEX_Fortify_Presets {
 
             // Other
             {"Land_PierLadder_F", 10}, // Ladder
-            {"Land_Plank_01_8m_F", 10} // Plank, 8m
+            {"Land_Plank_01_8m_F", 10}, // Plank, 8m
+            {"Land_ClutterCutter_large_F", 0},
+            {"Land_ClutterCutter_medium_F", 0},
+            {"Land_ClutterCutter_small_F", 0}
         };
     };
 
