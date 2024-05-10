@@ -20,16 +20,11 @@ TRACE_0("fnc_onArsenalOpen_ace");
 
 _loadouts = profileNamespace getVariable ["ace_arsenal_saved_loadouts", []];
 
-_fnc_getReplacementItem = {
-    params ["_class"];
-    [configFile >> QGVARMAIN(replacementItems), _class, _class] call BIS_fnc_returnConfigEntry;
-};
-
 // From: https://github.com/acemod/ACE3/blob/master/addons/arsenal/functions/fnc_verifyLoadout.sqf#L39-L85
 _fnc_filterLoadout = {
     _this apply {
         if (_x isEqualType "" && {_x != ""}) then {
-            _name = _x call _fnc_getReplacementItem;
+            _name = _x call FUNC(getReplacementItem);
             _name
         } else {
             if (_x isEqualType []) then {

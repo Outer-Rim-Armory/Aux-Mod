@@ -1,4 +1,5 @@
 PREP(getNearbyUnits);
+PREP(getReplacementItem);
 PREP(inFeatureCamera);
 PREP(isEngineer);
 PREP(isMedic);
