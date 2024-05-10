@@ -22,10 +22,10 @@ class GVAR(ranks) {
             vestP2 = QCLASS(Vest_Basic);
             vestP3 = QCLASS(Vest_Basic);
 
-            nvgP0 = QCLASS(NVG_Chip);
-            nvgP1 = QCLASS(NVG_Chip);
-            nvgP2 = QCLASS(NVG_Chip);
-            nvgP3 = QCLASS(NVG_Chip);
+            nvgP0 = QCLASS(cloneNvg_chip);
+            nvgP1 = QCLASS(cloneNvg_chip);
+            nvgP2 = QCLASS(cloneNvg_chip);
+            nvgP3 = QCLASS(cloneNvg_chip);
         };
         class CT: CR {
             order = __COUNTER__;

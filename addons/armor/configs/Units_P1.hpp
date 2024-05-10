@@ -17,10 +17,10 @@ class CLASS(Unit_Phase1_CR): CLASS(Unit_Phase1_Base) {
     uniformClass = QCLASS(Uniform_CR);
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase1_CR), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CR), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase1_CR), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CR), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -31,10 +31,10 @@ class CLASS(Unit_Phase1_CT): CLASS(Unit_Phase1_Base) {
     uniformClass = QCLASS(Uniform_CT);
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase1_CT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase1_CT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -45,10 +45,10 @@ class CLASS(Unit_Phase1_SCT): CLASS(Unit_Phase1_Base) {
     uniformClass = QCLASS(Uniform_SCT);
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase1_SCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_SCT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase1_SCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_SCT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -59,10 +59,10 @@ class CLASS(Unit_Phase1_VCT): CLASS(Unit_Phase1_Base) {
     uniformClass = QCLASS(Uniform_VCT);
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase1_VCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_VCT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase1_VCT), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_VCT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -75,10 +75,10 @@ class CLASS(Unit_Phase1_CLC): CLASS(Unit_Phase1_Base) {
     uniformClass = QCLASS(Uniform_CLC);
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase1_CLC), QCLASS(Vest_CLC), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CLC), QCLASS(Vest_CLC), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase1_CLC), QCLASS(Vest_CLC), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CLC), QCLASS(Vest_CLC), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -90,10 +90,10 @@ class CLASS(Unit_Phase1_CPL): CLASS(Unit_Phase1_Base) {
     uniformClass = QCLASS(Uniform_CPL);
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase1_CPL), QCLASS(Vest_CPL), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CPL), QCLASS(Vest_CPL), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase1_CPL), QCLASS(Vest_CPL), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase1_CPL), QCLASS(Vest_CPL), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
