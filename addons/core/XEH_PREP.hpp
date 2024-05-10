@@ -5,6 +5,7 @@ PREP(isMedic);
 PREP(isVehicleCrew);
 PREP(loopSay3D_init);
 PREP(loopSay3D);
+PREP(onArsenalOpen);
 PREP(playLocalSound);
 PREP(rgbToHex);
 PREP(setEngineer);
