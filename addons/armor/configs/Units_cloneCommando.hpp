@@ -65,10 +65,10 @@ class CLASS(cloneCommando_unit): CLASS(cloneCommando_unit_base) {
     editorPreview = EDITOR_PREVIEW(cloneCommando_unit);
 
     linkedItems[] = {
-        QCLASS(cloneCommando_helmet), QCLASS(cloneCommando_basic_vest), QCLASS(NVG_Chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(cloneCommando_helmet), QCLASS(cloneCommando_basic_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(cloneCommando_helmet), QCLASS(cloneCommando_basic_vest), QCLASS(NVG_Chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(cloneCommando_helmet), QCLASS(cloneCommando_basic_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
     };
     backpack = QCLASS(cloneBackpack_commando);
 };

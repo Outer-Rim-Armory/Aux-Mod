@@ -10,7 +10,7 @@ class CLASS(Helmet_Phase2_Tanker_Base): CLASS(cloneHelmet_base) {
         "\ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
     };
 
-    subItems[] = {QCLASS(NVG_Chip)};
+    subItems[] = {QCLASS(cloneNvg_chip)};
 
     HEARING_PROTECTION_CREW;
     TFAR_externalIntercomWirelessCapable = TRUE;

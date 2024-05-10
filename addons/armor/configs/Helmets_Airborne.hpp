@@ -15,7 +15,7 @@ class CLASS(Helmet_Airborne_Base): CLASS(cloneHelmet_base) {
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
 
-    subItems[] = {QCLASS(NVG_Chip)};
+    subItems[] = {QCLASS(cloneNvg_chip)};
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1", "visor"};
