@@ -14,17 +14,7 @@
 
 ["CBA_settingsInitialized", {
     [QGVAR(localSound), LINKFUNC(playLocalSound)] call CBA_fnc_addEventHandler;
-    ["featureCamera", {
-        params ["_unit", "_camera"];
-        switch (_camera) do {
-            case "arsenal": {
-                [] call FUNC(onArsenalOpen);
-            };
-            case "ace_arsenal": {
-                [] call FUNC(onArsenalOpen_ace);
-            };
-        };
-    }] call CBA_fnc_addPlayerEventHandler;
+    ["featureCamera", LINKFUNC(onArsenalOpen)] call CBA_fnc_addPlayerEventHandler;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(say3D), {
