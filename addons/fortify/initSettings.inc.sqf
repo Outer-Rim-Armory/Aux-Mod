@@ -21,7 +21,9 @@ _presetDisplayNames = _presetNames apply {
     ["Preset", "Select what preset to use with ACE's Fortify System, or to disable it."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     [_presetNames, _presetDisplayNames, 2],
-    TRUE
+    TRUE, {
+        [GVAR(preset), parseNumber GVAR(budget), GVAR(sides)] call FUNC(registerPreset);
+    }
 ] call CBA_fnc_addSetting;
 
 [
