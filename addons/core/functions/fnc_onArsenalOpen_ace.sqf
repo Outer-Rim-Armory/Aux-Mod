@@ -10,13 +10,13 @@
  * None
  *
  * Example:
- * [] call BNA_KC_core_fnc_onArsenalOpen;
+ * [] call BNA_KC_core_fnc_onArsenalOpen_ace;
  *
  * Public: No
  */
 
 private ["_loadouts", "_fnc_getReplacementItem", "_fnc_filterLoadout"];
-TRACE_0("fnc_onArsenalOpen");
+TRACE_0("fnc_onArsenalOpen_ace");
 
 _loadouts = profileNamespace getVariable ["ace_arsenal_saved_loadouts", []];
 

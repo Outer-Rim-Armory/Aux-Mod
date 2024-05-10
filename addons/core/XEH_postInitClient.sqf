@@ -18,7 +18,7 @@
         params ["_unit", "_camera"];
         switch (_camera) do {
             case "ace_arsenal": {
-                [] call FUNC(onArsenalOpen);
+                [] call FUNC(onArsenalOpen_ace);
             };
         };
     }] call CBA_fnc_addPlayerEventHandler;
