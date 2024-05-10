@@ -352,7 +352,7 @@ class CfgWeapons {
     class lsd_gar_standard_nvg: ls_nvg_base {
         class ItemInfo;
     };
-    class CLASS(cloneNvg_chip): lsd_gar_standard_nvg {
+    class CLASS(NVG_Chip): lsd_gar_standard_nvg {
         SCOPE_HIDDEN;
         displayName = "[KC] Clone NV Chip";
 
@@ -372,7 +372,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(NVG_phase1_Visor): CLASS(cloneNvg_chip) {
+    class CLASS(NVG_phase1_Visor): CLASS(NVG_Chip) {
         displayName = "[KC] Clone P1 NV Visor";
 
         model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_p1Visor_nvg_on.p3d";
@@ -405,7 +405,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(NVG_phase1_Rangefinder): CLASS(cloneNvg_chip) {
+    class CLASS(NVG_phase1_Rangefinder): CLASS(NVG_Chip) {
         displayName = "[KC] Clone P1 Rangefinder";
 
         model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
@@ -432,7 +432,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(NVG_phase1_Officer): CLASS(cloneNvg_chip) {
+    class CLASS(NVG_phase1_Officer): CLASS(NVG_Chip) {
         displayName = "[KC] Clone P1 Officer Visor";
 
         model = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
@@ -463,7 +463,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(NVG_Engineer): CLASS(cloneNvg_chip) {
+    class CLASS(NVG_Engineer): CLASS(NVG_Chip) {
         displayName = "[KC] Engineer Comms";
 
         model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
@@ -481,7 +481,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(NVG_Commando_Visor): CLASS(cloneNvg_chip) {
+    class CLASS(NVG_Commando_Visor): CLASS(NVG_Chip) {
         displayName = "[KC] SF Commando Visor";
         model = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
         hiddenSelections[] = {"illum", "camo1"};
@@ -496,7 +496,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(NVG_Commando_Antenna): CLASS(cloneNvg_chip) {
+    class CLASS(NVG_Commando_Antenna): CLASS(NVG_Chip) {
         displayName = "[KC] SF Commando Antenna";
         model = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
         hiddenSelections[] = {"camo1"};
