@@ -22,10 +22,10 @@ class GVAR(ranks) {
             vestP2 = QCLASS(Vest_Basic);
             vestP3 = QCLASS(Vest_Basic);
 
-            nvgP0 = QCLASS(NVG_Chip);
-            nvgP1 = QCLASS(NVG_Chip);
-            nvgP2 = QCLASS(NVG_Chip);
-            nvgP3 = QCLASS(NVG_Chip);
+            nvgP0 = QCLASS(cloneNvg_chip);
+            nvgP1 = QCLASS(cloneNvg_chip);
+            nvgP2 = QCLASS(cloneNvg_chip);
+            nvgP3 = QCLASS(cloneNvg_chip);
         };
         class CT: CR {
             order = __COUNTER__;
@@ -83,9 +83,9 @@ class GVAR(ranks) {
             vestP1 = QCLASS(Vest_CS);
             vestP2 = QCLASS(Vest_CS);
 
-            nvgP1 = QCLASS(NVG_phase1_Rangefinder);
-            nvgP2 = QCLASS(NVG_phase2_Rangefinder);
-            nvgP3 = QCLASS(NVG_phase2_Rangefinder);
+            nvgP1 = QCLASS(cloneNvg_phase1_rangefinder);
+            nvgP2 = QCLASS(cloneNvg_phase2_rangefinder);
+            nvgP3 = QCLASS(cloneNvg_phase2_rangefinder);
         };
         class CSS: CS {
             order = __COUNTER__;
@@ -144,9 +144,9 @@ class GVAR(ranks) {
             vestP1 = QCLASS(Vest_WO);
             vestP2 = QCLASS(Vest_WO);
 
-            nvgP1 = QCLASS(NVG_phase1_Officer);
-            nvgP2 = QCLASS(NVG_phase2_Officer);
-            nvgP3 = QCLASS(NVG_phase2_Officer);
+            nvgP1 = QCLASS(cloneNvg_phase1_officerVisor);
+            nvgP2 = QCLASS(cloneNvg_phase2_officerVisor);
+            nvgP3 = QCLASS(cloneNvg_phase2_officerVisor);
         };
         class WO2: WO {
             order = __COUNTER__;

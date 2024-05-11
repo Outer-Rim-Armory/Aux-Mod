@@ -163,12 +163,197 @@ class CfgWeapons {
         };
     };
 
+    class NVGoggles;
+    class CLASS(nvg_base): NVGoggles {
+        class ItemInfo;
+    };
+    class CLASS(cloneNvg_base): CLASS(nvg_base) {
+        visionMode[] = {"Normal", "NVG", "TI"};
+        class ItemInfo: ItemInfo {
+            mass = 10;
+        };
+    };
+    class CLASS(cloneNvg_chip): CLASS(cloneNvg_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Clone NV/TI Chip";
+
+        model = "\A3\weapons_F\ammo\mag_univ.p3d";
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
+        picture = "\MRC\JLTS\Core_mod\data\ui\nvg_chip_1_ui_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {};
+            uniformModel = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
+            modelOff = QPATHTOEF(core,data\models\empty\CLASS(empty.p3d));
+        };
+    };
+
+    class CLASS(cloneNvg_phase1_visor): CLASS(cloneNvg_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Clone P1 NV/TI Visor";
+
+        model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_p1Visor_nvg_on.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] = {"\lsd_equipment_bluefor\accessories\gar\visor\data\SWLB_clone_nvg_co.paa"};
+        picture = "\lsd_equipment_bluefor\nvg\gar\_ui\icon_SWLB_clone_nvg_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_p1Visor_nvg_on.p3d";
+            modelOff = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_p1Visor_nvg_off.p3d";
+        };
+    };
+
+    class CLASS(cloneNvg_phase2_visor): CLASS(cloneNvg_phase1_visor) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Clone P2 NV/TI Visor";
+
+        model = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\visor_camo1_co.paa)};
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
+            modelOff = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_off.p3d";
+        };
+    };
+    class CLASS(cloneNvg_phase2_visor_v2): CLASS(cloneNvg_phase2_visor) {
+        displayName = "[KC] Clone P2 NV/TI Visor (v2)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\visor_v2_camo1_co.paa)
+        };
+    };
+
+    class CLASS(cloneNvg_phase1_rangefinder): CLASS(cloneNvg_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Clone P1 NV/TI Rangefinder";
+
+        model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\lsd_equipment_bluefor\accessories\gar\visor\data\swlb_clone_nvg_co.paa"};
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_rangefinder_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"camo1"};
+            uniformModel = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
+            modelOff = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
+        };
+    };
+
+    class CLASS(cloneNvg_phase2_rangefinder): CLASS(cloneNvg_phase1_rangefinder) {
+        displayName = "[KC] Clone P2 NV/TI Rangefinder";
+
+        model = "\lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\rangefinder_camo1_co.paa)};
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
+            modelOff = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
+        };
+    };
+
+    class CLASS(cloneNvg_phase1_officerVisor): CLASS(cloneNvg_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Clone P1 NV/TI Officer Visor";
+
+        model = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+        hiddenSelectionsTextures[] = {
+            "\lsd_equipment_bluefor\accessories\gar\visor\data\SWLB_clone_nvg_co.paa",
+            "\lsd_equipment_bluefor\accessories\gar\visor\data\SWLB_clone_nvg_co.paa",
+            ""
+        };
+        picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_cc_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"camo1", "camo2", "camo3"};
+            uniformModel = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
+            modelOff = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
+        };
+    };
+
+    class CLASS(cloneNvg_phase2_officerVisor): CLASS(cloneNvg_phase1_officerVisor) {
+        displayName = "[KC] Clone P2 NV/TI Officer Visor";
+
+        model = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\officer_camo1_co.paa)};
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
+            modelOff = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
+        };
+    };
+
+    class CLASS(cloneNvg_engineerComms): CLASS(cloneNvg_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Clone NV/TI Engineer Comms";
+
+        model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] = {
+            "\SWLB_clones\data\SWLB_clone_nvg_co.paa",
+            "\SWLB_clones\data\SWLB_clone_nvg_co.paa"
+        };
+        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"camo1", "camo2"};
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+            modelOff = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+        };
+    };
+
+    class CLASS(cloneNvg_commandoVisor): CLASS(cloneNvg_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Clone Commando NV/TI Visor";
+
+        model = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
+        hiddenSelections[] = {"illum", "camo1"};
+        hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        hiddenSelectionsTextures[] = {
+            "\SWLB_clones_spec\data\helmet_co.paa",
+            "\SWLB_clones_spec\data\helmet_co.paa"
+        };
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"illum", "camo1"};
+            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
+            modelOff = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
+        };
+    };
+
+    class CLASS(cloneNvg_commandoAntenna): CLASS(cloneNvg_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Clone Commando NV/TI Antenna";
+
+        model = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\SWLB_clones_spec\data\helmet_co.paa"};
+        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_antenna_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"camo1"};
+            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
+            modelOff = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
+        };
+    };
+
     class ls_nvg_base;
     class lsd_gar_standard_nvg: ls_nvg_base {
         class ItemInfo;
     };
     class CLASS(NVG_Chip): lsd_gar_standard_nvg {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
         displayName = "[KC] Clone NV Chip";
 
         visionMode[] = {"Normal", "NVG", "TI"};
