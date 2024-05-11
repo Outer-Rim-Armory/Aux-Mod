@@ -290,7 +290,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(cloneNvg_engineer): CLASS(cloneNvg_base) {
+    class CLASS(cloneNvg_engineerComms): CLASS(cloneNvg_base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Clone NV/TI Engineer Comms";

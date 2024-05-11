@@ -32,10 +32,10 @@ class CLASS(Unit_Bob): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Engineer_Bob), QCLASS(Vest_Engineer_CT), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Engineer_Bob), QCLASS(Vest_Engineer_CT), QCLASS(cloneNvg_engineerComms), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Engineer_Bob), QCLASS(Vest_Engineer_CT), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Engineer_Bob), QCLASS(Vest_Engineer_CT), QCLASS(cloneNvg_engineerComms), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -351,10 +351,10 @@ class CLASS(Unit_Splashdown): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Engineer_Splashdown), QCLASS(Vest_Engineer), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Engineer_Splashdown), QCLASS(Vest_Engineer), QCLASS(cloneNvg_engineerComms), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Engineer_Splashdown), QCLASS(Vest_Engineer), QCLASS(NVG_Engineer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Engineer_Splashdown), QCLASS(Vest_Engineer), QCLASS(cloneNvg_engineerComms), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 

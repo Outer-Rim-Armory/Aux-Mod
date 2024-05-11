@@ -415,7 +415,7 @@ class CfgPatches {
             QCLASS(cloneNvg_phase2_rangefinder),
             QCLASS(cloneNvg_phase1_officerVisor),
             QCLASS(cloneNvg_phase2_officerVisor),
-            QCLASS(cloneNvg_engineer),
+            QCLASS(cloneNvg_engineerComms),
             QCLASS(cloneNvg_commandoVisor),
             QCLASS(cloneNvg_commandoAntenna),
             QCLASS(NVG_Chip),
