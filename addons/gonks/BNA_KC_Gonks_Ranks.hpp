@@ -83,9 +83,9 @@ class GVAR(ranks) {
             vestP1 = QCLASS(Vest_CS);
             vestP2 = QCLASS(Vest_CS);
 
-            nvgP1 = QCLASS(NVG_phase1_Rangefinder);
-            nvgP2 = QCLASS(NVG_phase2_Rangefinder);
-            nvgP3 = QCLASS(NVG_phase2_Rangefinder);
+            nvgP1 = QCLASS(cloneNvg_phase1_rangefinder);
+            nvgP2 = QCLASS(cloneNvg_phase2_rangefinder);
+            nvgP3 = QCLASS(cloneNvg_phase2_rangefinder);
         };
         class CSS: CS {
             order = __COUNTER__;
