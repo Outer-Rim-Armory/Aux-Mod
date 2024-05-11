@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-#ifdef APRIL_FOOL
 class CfgPatches {
     class ADDON {
         author = AUTHOR;
@@ -8,6 +7,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QCLASS(core),
+            QCLASS(armor),
             QEGVAR(weapons,load_order),
             QEGVAR(vehicles,load_order)
         };
@@ -20,4 +20,3 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgSounds.hpp"
 #include "CfgEventHandlers.hpp"
-#endif
