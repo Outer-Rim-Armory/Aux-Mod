@@ -106,8 +106,8 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
     };
 
-    class CLASS(NVG_phase2_Officer);
-    class CLASS(NVG_phase2_Officer_Keeli): CLASS(NVG_phase2_Officer) {
+    class CLASS(cloneNvg_phase2_officerVisor);
+    class CLASS(cloneNvg_phase2_officerVisor_Keeli): CLASS(cloneNvg_phase2_officerVisor) {
         displayName = "[KC] Clone P2 Officer Visor ('Keeli')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\nvgs\Officer_Keeli_camo1_co.paa)

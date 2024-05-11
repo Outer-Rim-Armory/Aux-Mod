@@ -144,9 +144,9 @@ class GVAR(ranks) {
             vestP1 = QCLASS(Vest_WO);
             vestP2 = QCLASS(Vest_WO);
 
-            nvgP1 = QCLASS(NVG_phase1_Officer);
-            nvgP2 = QCLASS(NVG_phase2_Officer);
-            nvgP3 = QCLASS(NVG_phase2_Officer);
+            nvgP1 = QCLASS(cloneNvg_phase1_officerVisor);
+            nvgP2 = QCLASS(cloneNvg_phase2_officerVisor);
+            nvgP3 = QCLASS(cloneNvg_phase2_officerVisor);
         };
         class WO2: WO {
             order = __COUNTER__;
