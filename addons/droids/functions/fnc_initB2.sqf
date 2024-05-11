@@ -31,7 +31,6 @@ _hitCount = _unit getVariable [QGVAR(hitCount), GVAR(minimumHitsB2)];
 _unit setVariable [QGVAR(hitCount), _hitCount, true];
 
 // Animations are set onto the unit so a single handleDamage function can be used for all droids
-_unit allowDamage false;
 _unit setVariable [QGVAR(hitAnim), QGVAR(B2_hit)];
 _unit setVariable [QGVAR(idleAnim), QGVAR(B2_idle)];
 _unit addEventHandler ["HandleDamage", LINKFUNC(handleDamage)];

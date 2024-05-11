@@ -25,7 +25,7 @@ _hitCount = (_unit getVariable [QGVAR(hitCount), -1]) - 1;
 
 // No lazy eval gives roughly same performance
 if (_health <= 0 and {_hitCount <= 0}) exitWith {
-    _unit allowDamage true;
+    _unit allowDamage true; // Just in case
     [_unit, "#scripted", _instigator] call ace_medical_status_fnc_setDead;
     0;
 };
