@@ -22,14 +22,17 @@ class CfgMovesMaleSdr: CfgMovesBasic {
             ConnectTo[] = {};
             ConnectFrom[] = {};
             InterpolateTo[] = {
-                QGVAR(B2_idle),
-                0.0099999998,
                 QGVAR(B2_walk),
                 0.0099999998,
                 "Unconscious",
                 0.1
             };
-            InterpolateFrom[] = {};
+            InterpolateFrom[] = {
+                QGVAR(B2_walk),
+                0.0099999998,
+                "Unconscious",
+                0.1
+            };
         };
         class GVAR(B2_walk): GVAR(B2_idle) {
             actions = QGVAR(moveset_B2_walkFwr);
@@ -38,6 +41,19 @@ class CfgMovesMaleSdr: CfgMovesBasic {
             soundOverride = "walk";
             soundEdge[] = {0.4, 0.8};
             soundEnabled = 1;
+
+            InterpolateTo[] = {
+                QGVAR(B2_idle),
+                0.0099999998,
+                "Unconscious",
+                0.1
+            };
+            InterpolateFrom[] = {
+                QGVAR(B2_idle),
+                0.0099999998,
+                "Unconscious",
+                0.1
+            };
         };
         class GVAR(B2_hit): GVAR(B2_idle) {
             actions = QGVAR(moveset_B2_hit);
