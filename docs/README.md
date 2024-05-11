@@ -38,6 +38,7 @@ If you would like to reupload content from the Keeli Company aux mod, leave a co
 ## Mod Features
 The Keeli Company Aux mod focuses on creating custom and in-depth systems, as well as the standard features you would find in other unit aux mods such as custom textured equipment; vehicles; and balance tweaks. Each of these systems has a document outlining how to use that particular system.
 
+- **[Main](./addons/core/README.md)**
 - [Armor](./addons/armor/README.md)
 - [Chat Wheel](./addons/chat_wheel_redux/README.md)
 - [Creatures](./addons/creatures/README.md)
