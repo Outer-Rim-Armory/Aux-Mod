@@ -1,4 +1,4 @@
-class CLASS(Helmet_Phase12_Base): CLASS(Helmet_Base) {
+class CLASS(Helmet_Phase12_Base): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
     displayName = "[KC] INF P1-2 Helm (Base)";

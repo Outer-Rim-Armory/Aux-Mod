@@ -14,6 +14,7 @@
 
 ["CBA_settingsInitialized", {
     [QGVAR(localSound), LINKFUNC(playLocalSound)] call CBA_fnc_addEventHandler;
+    ["featureCamera", LINKFUNC(onArsenalOpen)] call CBA_fnc_addPlayerEventHandler;
 }] call CBA_fnc_addEventHandler;
 
 [QGVAR(say3D), {

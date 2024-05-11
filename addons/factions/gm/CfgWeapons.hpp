@@ -67,7 +67,7 @@ class CfgWeapons {
         hhiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\MDF\MDFHelmet\Black\Material.001_CO.paa"};
 
-        subItems[] = {QCLASS(NVG_Chip)};
+        subItems[] = {QCLASS(cloneNvg_chip)};
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie"};

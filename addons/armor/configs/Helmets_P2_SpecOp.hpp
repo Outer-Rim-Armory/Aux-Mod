@@ -1,4 +1,4 @@
-class CLASS(Helmet_Phase2_Tanker_Base): CLASS(Helmet_Base) {
+class CLASS(Helmet_Phase2_Tanker_Base): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
     displayName = "[KC] ARMR P2 Helm (Base)";
@@ -10,7 +10,7 @@ class CLASS(Helmet_Phase2_Tanker_Base): CLASS(Helmet_Base) {
         "\ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa"
     };
 
-    subItems[] = {QCLASS(NVG_Chip)};
+    subItems[] = {QCLASS(cloneNvg_chip)};
 
     HEARING_PROTECTION_CREW;
     TFAR_externalIntercomWirelessCapable = TRUE;

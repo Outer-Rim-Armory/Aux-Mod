@@ -1,4 +1,4 @@
-class CLASS(Helmet_Airborne_Base): CLASS(Helmet_Base) {
+class CLASS(Helmet_Airborne_Base): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
     displayName = "[KC] AB Helm (Base)";
@@ -15,7 +15,7 @@ class CLASS(Helmet_Airborne_Base): CLASS(Helmet_Base) {
     };
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ab_helmet_ca.paa";
 
-    subItems[] = {QCLASS(NVG_Chip)};
+    subItems[] = {QCLASS(cloneNvg_chip)};
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1", "visor"};

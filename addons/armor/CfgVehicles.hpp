@@ -60,10 +60,10 @@ class CfgVehicles {
         };
 
         linkedItems[] = {
-            QCLASS(Helmet_Phase1_Base), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+            QCLASS(Helmet_Phase1_Base), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
         };
         respawnLinkedItems[] = {
-            QCLASS(Helmet_Phase1_Base), QCLASS(Vest_Basic), QCLASS(NVG_Chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+            QCLASS(Helmet_Phase1_Base), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
         };
         backpack = "";
     };

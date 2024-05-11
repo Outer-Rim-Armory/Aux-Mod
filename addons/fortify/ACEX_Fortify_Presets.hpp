@@ -1,18 +1,21 @@
 class ACEX_Fortify_Presets {
-    class GVAR(Disabled) {
+    class GVAR(disabled) {
         displayName = "Disabled";
+        objects[] = {};
+        presets[] = {};
     };
 
-    class GVAR(All) {
-        displayName = "[KC] All Presets";
+    class GVAR(all) {
+        displayName = "All Presets";
         presets[] = {
-            QGVAR(Common),
-            QGVAR(FOB)
+            QGVAR(common),
+            QGVAR(fob),
+            QGVAR(camouflage)
         };
     };
 
-    class GVAR(Common) {
-        displayName = "[KC] Common";
+    class GVAR(common) {
+        displayName = "Common";
         objects[] = {
             // Hesco Objects
             {"Land_lsb_fob_hBarrier_1", 5},                   // Block
@@ -27,12 +30,15 @@ class ACEX_Fortify_Presets {
 
             // Other
             {"Land_PierLadder_F", 10}, // Ladder
-            {"Land_Plank_01_8m_F", 10} // Plank, 8m
+            {"Land_Plank_01_8m_F", 10}, // Plank, 8m
+            {"Land_ClutterCutter_large_F", 0},
+            {"Land_ClutterCutter_medium_F", 0},
+            {"Land_ClutterCutter_small_F", 0}
         };
     };
 
-    class GVAR(FOB) {
-        displayName = "[KC] FOB Building";
+    class GVAR(fob) {
+        displayName = "FOB Building";
         objects[] = {
             {"Land_lsb_fob_hBarrier_tower", 15},
             {"3AS_Short_Wall_Bunker", 15},
@@ -46,6 +52,18 @@ class ACEX_Fortify_Presets {
             {"fob_light_gar_tall", 5},
             {"light_s_cis", 5},
             {"442_data_pad_pinup_prinz2", 5}
+        };
+    };
+
+    class GVAR(camouflage) {
+        displayName = "Camouflage";
+        objects[] = {
+            {"CamoNet_INDP_F", 10},
+            {"CamoNet_INDP_open_F", 10},
+            {"CamoNet_BLUFOR_F", 10},
+            {"CamoNet_BLUFOR_open_F", 10},
+            {"CamoNet_wdl_open_F", 10},
+            {"CamoNet_wdl_F", 10}
         };
     };
 };

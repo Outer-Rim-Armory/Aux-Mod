@@ -1,4 +1,4 @@
-class CLASS(Helmet_ARC_Base): CLASS(Helmet_Base) {
+class CLASS(Helmet_ARC_Base): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
     displayName = "[KC] SF ARC P1.5 Helm (Base)";
