@@ -24,13 +24,14 @@ TRACE_1("fnc_initB2",_unit);
 
 if (!alive _unit or {!local _unit}) exitWith {};
 
-_health = _unit getVariable [QGVAR(health), GVAR(healthB2)];
+_health = _unit getVariable [QGVAR(health), 3000];
 _unit setVariable [QGVAR(health), _health, true];
 
 _hitCount = _unit getVariable [QGVAR(hitCount), GVAR(minimumHitsB2)];
 _unit setVariable [QGVAR(hitCount), _hitCount, true];
 
 // Animations are set onto the unit so a single handleDamage function can be used for all droids
+_unit setVariable ["ace_medical_allowDamage", false, true];
 _unit setVariable [QGVAR(hitAnim), QGVAR(B2_hit)];
 _unit setVariable [QGVAR(idleAnim), QGVAR(B2_idle)];
 _unit addEventHandler ["HandleDamage", LINKFUNC(handleDamage)];
