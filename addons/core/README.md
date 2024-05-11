@@ -7,7 +7,7 @@ When a mission is loaded, the version of the Keeli Company aux mod that the serv
 ## Replacement items
 A small function that executes when opening an arsenal (vanilla/ACE compatible). It will search through all of the player's loadouts and replace any specified items with its given replacement.
 
-This is useful for replacing old/deprecated class names with their updated counterparts without breaking people's loadouts.
+This is useful for replacing old/deprecated class names with their updated counterparts without breaking people's loadouts. **The old item does not have to exist.**
 
 The two classes must be the same "type" of item. You can't replace a weapon with a backpack for example.
 
