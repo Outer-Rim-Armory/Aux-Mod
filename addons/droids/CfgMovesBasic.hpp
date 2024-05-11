@@ -104,7 +104,7 @@ class CfgMovesBasic {
         class GVAR(moveset_B1_execution_main): Acts_CarFixingWheel_actions {
             Default = QGVAR(B1_execution_main);
         };
-        class GVAR(B1_execution_victim): Acts_CarFixingWheel_actions {
+        class GVAR(moveset_B1_execution_victim): Acts_CarFixingWheel_actions {
             Default = QGVAR(B1_execution_victim);
         };
         class GVAR(moveset_B1_execution_victim_ragdoll): Acts_CarFixingWheel_actions {
