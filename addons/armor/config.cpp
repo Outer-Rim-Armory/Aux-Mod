@@ -417,18 +417,7 @@ class CfgPatches {
             QCLASS(cloneNvg_phase2_officerVisor),
             QCLASS(cloneNvg_engineerComms),
             QCLASS(cloneNvg_commandoVisor),
-            QCLASS(cloneNvg_commandoAntenna),
-            QCLASS(NVG_Chip),
-            QCLASS(NVG_phase1_Visor),
-            QCLASS(NVG_phase2_Visor),
-            QCLASS(NVG_phase2_Visor_v2),
-            QCLASS(NVG_phase1_Rangefinder),
-            QCLASS(NVG_phase2_Rangefinder),
-            QCLASS(NVG_phase1_Officer),
-            QCLASS(NVG_phase2_Officer),
-            QCLASS(NVG_Engineer),
-            QCLASS(NVG_Commando_Visor),
-            QCLASS(NVG_Commando_Antenna)
+            QCLASS(cloneNvg_commandoAntenna)
         };
         VERSION_CONFIG;
     };
