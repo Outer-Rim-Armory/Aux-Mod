@@ -4,6 +4,7 @@ GVAR(buildMusicSoundId) = -1;
 GVAR(buildMusic) = ["HomeDepot.ogg", "FortniteBuilding.ogg"];
 
 ["CBA_settingsInitialized", {
+    #ifdef APRIL_FOOL
     ["acex_fortify_onDeployStart", {
         if (GVAR(playBuildMusic)) then {
             GVAR(buildMusicSoundId) = playSound3D [
@@ -31,4 +32,5 @@ GVAR(buildMusic) = ["HomeDepot.ogg", "FortniteBuilding.ogg"];
         stopSound GVAR(buildMusicSoundId);
         GVAR(buildMusicSoundId) = -1;
     }] call CBA_fnc_addEventHandler;
+    #endif
 }] call CBA_fnc_addEventHandler;
