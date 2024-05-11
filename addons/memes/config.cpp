@@ -9,14 +9,18 @@ class CfgPatches {
             QCLASS(core),
             QCLASS(armor),
             QEGVAR(weapons,load_order),
-            QEGVAR(vehicles,load_order)
+            QEGVAR(vehicles,load_order),
+            "3AS_Backpacks"
         };
-        units[] = {};
+        units[] = {
+            QGVAR(backpack_hussarWings)
+        };
         weapons[] = {};
         VERSION_CONFIG;
     };
 };
 
 #include "CfgWeapons.hpp"
+#include "CfgVehicles.hpp"
 #include "CfgSounds.hpp"
 #include "CfgEventHandlers.hpp"
