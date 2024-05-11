@@ -19,29 +19,33 @@
 params [
     ["_unit", objNull, [objNull]]
 ];
-private ["_health", "_animation"];
+private ["_health", "_hitCount"];
 TRACE_1("fnc_initB2",_unit);
 
-_animation = animationState _unit;
+if (!alive _unit or {!local _unit}) exitWith {};
 
-if (isNull _unit or {!alive _unit} or {!local _unit}) exitWith {};
+_health = _unit getVariable [QGVAR(health), GVAR(healthB2)];
+_unit setVariable [QGVAR(health), _health, true];
 
-_health = _unit getVariable ["Droid_Health", GVAR(healthB2)];
-_unit setVariable ["Droid_Health", _health, true];
+_hitCount = _unit getVariable [QGVAR(hitCount), GVAR(minimumHitsB2)];
+_unit setVariable [QGVAR(hitCount), _hitCount, true];
 
-[_unit, "forceWalk", QUOTE(ADDON), true] call ace_common_fnc_statusEffect_set;
-_unit execVM "\WebKnightsRobotics\AI\AI_WBK_B2_BattleDroid.sqf";
+// Animations are set onto the unit so a single handleDamage function can be used for all droids
+_unit allowDamage false;
+_unit setVariable [QGVAR(hitAnim), QGVAR(B2_hit)];
+_unit setVariable [QGVAR(idleAnim), QGVAR(B2_idle)];
+_unit addEventHandler ["HandleDamage", LINKFUNC(handleDamage)];
 
-if !(isNull objectParent _unit) then {
-    [{
-        params ["_unit", "_animation"];
-        [_unit, _animation, 2] call ace_common_fnc_doAnimation;
-    }, [_unit, _animation], 1] call CBA_fnc_waitAndExecute;
+_unit forceWalk true;
+// _unit execVM "\WebKnightsRobotics\AI\AI_WBK_B2_BattleDroid.sqf";
+
+if (isNull objectParent _unit) then {
+    _unit switchMove QGVAR(B2_idle);
 };
 
 _unit addEventHandler ["GetOutMan", {
     params ["_unit"];
-    [_unit, QGVAR(B2_idle), 2] call ace_common_fnc_doAnimation;
+    _unit switchMove QGVAR(B2_idle);
 }];
 
 nil;
