@@ -49,10 +49,6 @@ _objects = getArray (configFile >> "ACEX_Fortify_Presets" >> _preset >> "objects
 _allObjects append _objects;
 
 {
-    [
-        _x,
-        _budget,
-        _allObjects
-    ] call acex_fortify_fnc_registerObjects;
+    [_x, _budget, _allObjects] call acex_fortify_fnc_registerObjects;
 } forEach _sides;
 true;

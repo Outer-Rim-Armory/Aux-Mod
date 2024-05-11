@@ -30,3 +30,4 @@ class CfgPatches {
 #include "CfgVehicles.hpp"
 #include "CfgGroups.hpp"
 #include "CfgEventHandlers.hpp"
+#include "BNA_KC_ReplacementItems.hpp"
