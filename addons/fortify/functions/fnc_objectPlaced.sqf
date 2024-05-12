@@ -29,17 +29,17 @@ switch (typeOf _objectPlaced) do {
     default {};
 };
 
-GVAR(savedObjects) set [GVAR(counter), [typeOf _objectPlaced, _side, _positionASL, [vectorDir _objectPlaced, vectorUp _objectPlaced]]];
-_objectPlaced setVariable [QGVAR(counter), GVAR(counter)];
-GVAR(counter) = GVAR(counter) + 1;
+if (GVAR(persistenceEnabled)) then {
+    GVAR(savedObjects) set [GVAR(counter), [typeOf _objectPlaced, _side, _positionASL, [vectorDir _objectPlaced, vectorUp _objectPlaced]]];
+    _objectPlaced setVariable [QGVAR(counter), GVAR(counter)];
+    GVAR(counter) = GVAR(counter) + 1;
 
-// systemChat str (missionNamespace getVariable [format ["ace_fortify_budget_%1", _side], -1]);
+    _budgetKey = format [QGVAR(TRIPLES(budget,%1,%2.%3)), _side, missionName, worldName];
+    _budgetSide = missionNamespace getVariable [format ["ace_fortify_budget_%1", _side], 0];
 
-_budgetKey = format [QGVAR(TRIPLES(budget,%1,%2.%3)), _side, missionName, worldName];
-_budgetSide = missionNamespace getVariable [format ["ace_fortify_budget_%1", _side], 0];
-
-profileNamespace setVariable [VAR_SAVE_KEY(counter), GVAR(counter)];
-profileNamespace setVariable [_budgetKey, _budgetSide];
-profileNamespace setVariable [VAR_SAVE_KEY(savedObjects), GVAR(savedObjects)];
+    profileNamespace setVariable [VAR_SAVE_KEY(counter), GVAR(counter)];
+    profileNamespace setVariable [_budgetKey, _budgetSide];
+    profileNamespace setVariable [VAR_SAVE_KEY(savedObjects), GVAR(savedObjects)];
+};
 
 nil;

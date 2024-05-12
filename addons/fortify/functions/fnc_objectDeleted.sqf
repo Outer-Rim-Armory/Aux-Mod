@@ -19,17 +19,19 @@ params ["_player", "_side", "_objectDeleted"];
 private ["_counter", "_class", "_budgetKey", "_budgetSide"];
 TRACE_3("fnc_objectDeleted",_player,_side,_objectDeleted);
 
-_counter = _objectDeleted getVariable [QGVAR(counter), -1];
-_class = typeOf _objectDeleted;
-if (_counter < 0) exitWith {WARNING("Tried to get counter from null object")};
+if (GVAR(persistenceEnabled)) then {
+    _counter = _objectDeleted getVariable [QGVAR(counter), -1];
+    _class = typeOf _objectDeleted;
+    if (_counter < 0) exitWith {WARNING("Tried to get counter from null object")};
 
-GVAR(savedObjects) deleteAt _counter;
+    GVAR(savedObjects) deleteAt _counter;
 
-_budgetKey = format [QGVAR(TRIPLES(budget,%1,%2.%3)), _side, missionName, worldName];
-_budgetSide = missionNamespace getVariable [format ["ace_fortify_budget_%1", _side], 0];
-_budgetSide = _budgetSide + ([_side, _class] call ace_fortify_fnc_getCost); // Event is fired before budget is updated
+    _budgetKey = format [QGVAR(TRIPLES(budget,%1,%2.%3)), _side, missionName, worldName];
+    _budgetSide = missionNamespace getVariable [format ["ace_fortify_budget_%1", _side], 0];
+    _budgetSide = _budgetSide + ([_side, _class] call ace_fortify_fnc_getCost); // Event is fired before budget is updated
 
-profileNamespace setVariable [VAR_SAVE_KEY(savedObjects), GVAR(savedObjects)];
-profileNamespace setVariable [_budgetKey, _budgetSide];
+    profileNamespace setVariable [VAR_SAVE_KEY(savedObjects), GVAR(savedObjects)];
+    profileNamespace setVariable [_budgetKey, _budgetSide];
+};
 
 nil;
