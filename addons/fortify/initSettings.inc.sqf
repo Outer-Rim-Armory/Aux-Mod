@@ -47,3 +47,12 @@ _presetDisplayNames = _presetNames apply {
     "100", // Kept as edit box for nicer ui
     TRUE
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(persistenceEnabled),
+    "CHECKBOX",
+    ["Save fortify objects to mission", "If enabled, objects built via ACE Fortify will be saved to the mission, and restored on mission load."],
+    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
+    true,
+    TRUE
+] call CBA_fnc_addSetting;
