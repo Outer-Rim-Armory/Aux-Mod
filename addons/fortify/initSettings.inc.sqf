@@ -52,7 +52,7 @@ _presetDisplayNames = _presetNames apply {
     QGVAR(persistenceEnabled),
     "CHECKBOX",
     ["Save fortify objects to mission", "If enabled, objects built via ACE Fortify will be saved to the mission, and restored on mission load."],
-    [QUOTE(MOD_NAME), "Battle Droids"],
+    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     true,
     TRUE
 ] call CBA_fnc_addSetting;

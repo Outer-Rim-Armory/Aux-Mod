@@ -1,3 +1,4 @@
+#ifdef APRIL_FOOL
 [
     QGVAR(playBuildMusic),
     "CHECKBOX",
@@ -15,3 +16,4 @@
     true,
     TRUE
 ] call CBA_fnc_addSetting;
+#endif
