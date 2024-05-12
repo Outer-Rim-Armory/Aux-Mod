@@ -28,3 +28,13 @@ switch (typeOf _objectPlaced) do {
     };
     default {};
 };
+
+GVAR(savedObjects) set [GVAR(counter), [typeOf _objectPlaced, _side, _positionASL, [vectorDir _objectPlaced, vectorUp _objectPlaced]]];
+_objectPlaced setVariable [QGVAR(counter), GVAR(counter)];
+GVAR(counter) = GVAR(counter) + 1;
+
+profileNamespace setVariable [VAR_SAVE_KEY(counter), GVAR(counter)];
+// profileNamespace setVariable [VAR_SAVE_KEY(budget_west), parseNumber GVAR(budget)];
+profileNamespace setVariable [VAR_SAVE_KEY(savedObjects), GVAR(savedObjects)];
+
+nil;
