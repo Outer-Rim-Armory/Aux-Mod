@@ -18,6 +18,10 @@
 private [];
 TRACE_1("fnc_loadSavedObjects",GVAR(saveKey));
 
+if (GVAR(savedObjects) isEqualTo createHashmap) exitWith {
+    GVAR(counter) = 0;
+};
+
 {
     private ["_counter", "_object", "_jipID", "_action"];
     _counter = _x;
@@ -29,7 +33,7 @@ TRACE_1("fnc_loadSavedObjects",GVAR(saveKey));
     _object setVectorDirAndUp _vectorDirAndUp;
     _object setVariable [QGVAR(counter), _counter];
 
-    // There is `acex_fortify_objectPlaced` server  event, but it requires the unit placing it
+    // There is `acex_fortify_objectPlaced` server event, but it requires the unit placing it
     // Instead, we manually add the actions / map marker
     _jipID = ["ace_fortify_addActionToObject", [_side, _object]] call CBA_fnc_globalEventJIP;
     [_jipID, _object] call CBA_fnc_removeGlobalEventJIP;
