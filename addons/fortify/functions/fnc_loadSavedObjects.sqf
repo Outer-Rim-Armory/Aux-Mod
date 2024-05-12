@@ -32,4 +32,6 @@ TRACE_1("fnc_loadSavedObjects",GVAR(saveKey));
     // Instead, we manually add the actions / map marker
     _jipID = ["ace_fortify_addActionToObject", [_side, _object]] call CBA_fnc_globalEventJIP;
     [_jipID, _object] call CBA_fnc_removeGlobalEventJIP;
+
+    [_side, _object] call FUNC(createMapMarker);
 } forEach keys GVAR(savedObjects);
