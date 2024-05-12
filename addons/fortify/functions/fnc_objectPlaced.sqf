@@ -16,7 +16,7 @@
  */
 
 params ["_player", "_side", "_objectPlaced"];
-private ["_positionASL"];
+private ["_positionASL", "_budgetKey", "_budgetSide"];
 TRACE_3("fnc_objectPlaced",_player,_side,_objectPlaced);
 
 _positionASL = getPosASL _objectPlaced;
@@ -33,8 +33,13 @@ GVAR(savedObjects) set [GVAR(counter), [typeOf _objectPlaced, _side, _positionAS
 _objectPlaced setVariable [QGVAR(counter), GVAR(counter)];
 GVAR(counter) = GVAR(counter) + 1;
 
+// systemChat str (missionNamespace getVariable [format ["ace_fortify_budget_%1", _side], -1]);
+
+_budgetKey = format [QGVAR(TRIPLES(budget,%1,%2.%3)), _side, missionName, worldName];
+_budgetSide = missionNamespace getVariable [format ["ace_fortify_budget_%1", _side], 0];
+
 profileNamespace setVariable [VAR_SAVE_KEY(counter), GVAR(counter)];
-// profileNamespace setVariable [VAR_SAVE_KEY(budget_west), parseNumber GVAR(budget)];
+profileNamespace setVariable [_budgetKey, _budgetSide];
 profileNamespace setVariable [VAR_SAVE_KEY(savedObjects), GVAR(savedObjects)];
 
 nil;

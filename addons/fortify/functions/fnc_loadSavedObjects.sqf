@@ -27,6 +27,7 @@ TRACE_1("fnc_loadSavedObjects",GVAR(saveKey));
     _object = createVehicle [_class, [0, 0, 0], [], 0, "CAN_COLLIDE"];
     _object setPosASL _positionASL;
     _object setVectorDirAndUp _vectorDirAndUp;
+    _object setVariable [QGVAR(counter), _counter];
 
     // There is `acex_fortify_objectPlaced` server  event, but it requires the unit placing it
     // Instead, we manually add the actions / map marker
