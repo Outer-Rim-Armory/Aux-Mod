@@ -24,6 +24,14 @@ class Extended_Init_EventHandlers {
     };
 };
 
+class Extended_GetOutMan_EventHandlers {
+    class CAManBase {
+        class GVAR(getOutMan) {
+            clientGetOutMan = QUOTE(_this call FUNC(getOutMan));
+        };
+    };
+};
+
 class Extended_Killed_EventHandlers {
     class CAManBase {
         class GVAR(clearEffects) {
