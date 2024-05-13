@@ -13,4 +13,5 @@ class GVARMAIN(replacementItems) {
     CLASS(NVG_phase2_Officer_Keeli) = QCLASS(cloneNvg_phase2_officerVisor_Keeli);
     CLASS(RDF_Helmet) = QCLASS(rdfHelmet_basic);
     CLASS(RDF_Helmet_Marksman) = QCLASS(rdfHelmet_marksman);
+    CLASS(RDF_Uniform) = QCLASS(rdfArmor_uniform)
 };

@@ -3,7 +3,7 @@ class CfgVehicles {
     class CLASS(RDF_Unit_Base): CLASS(BLUFOR_Unit_Base) {
         SCOPE_HIDDEN;
         faction = QFACTION(RDF);
-        uniformClass = QCLASS(RDF_Uniform);
+        uniformClass = QCLASS(rdfArmor_uniform);
 
         genericNames = QCLASS(RDF_Soldier);
 

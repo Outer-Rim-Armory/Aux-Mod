@@ -8,6 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
+            QCLASS(armor),
             "sc_equipment"
         };
         units[] = {
@@ -36,7 +37,7 @@ class CfgPatches {
         weapons[] = {
             QCLASS(rdfHelmet_basic),
             QCLASS(rdfHelmet_marksman),
-            QCLASS(RDF_Uniform),
+            QCLASS(rdfArmor_uniform),
             QCLASS(RDF_Vest),
             QCLASS(RDF_Vest_Medium),
             QCLASS(RDF_Vest_Swat)

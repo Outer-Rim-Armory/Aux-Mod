@@ -29,11 +29,12 @@ class CfgWeapons {
         };
     };
 
-    class ls_blueforUniform_base;
-    class CLASS(BLUFOR_Uniform_Base): ls_blueforUniform_base {
+    // TODO: Update when clone armor names are updated
+    class ls_gar_phase2_uniform;
+    class CLASS(uniform_base): ls_gar_phase2_uniform {
         class ItemInfo;
     };
-    class CLASS(RDF_Uniform): CLASS(BLUFOR_Uniform_Base) {
+    class CLASS(rdfArmor_uniform): CLASS(uniform_base) {
         SCOPE_PUBLIC;
 
         displayName = "[RDF] Uniform";
