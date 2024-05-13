@@ -34,8 +34,8 @@ class CfgPatches {
             QCLASS(RDF_Backpack_Medic_Predef_Medic),
         };
         weapons[] = {
-            QCLASS(RDF_Helmet),
-            QCLASS(RDF_Helmet_Marksman),
+            QCLASS(rdfHelmet_basic),
+            QCLASS(rdfHelmet_marksman),
             QCLASS(RDF_Uniform),
             QCLASS(RDF_Vest),
             QCLASS(RDF_Vest_Medium),

@@ -11,4 +11,6 @@ class GVARMAIN(replacementItems) {
     CLASS(NVG_Commando_Visor) = QCLASS(cloneNvg_commandoVisor);
     CLASS(NVG_Commando_Antenna) = QCLASS(cloneNvg_commandoAntenna);
     CLASS(NVG_phase2_Officer_Keeli) = QCLASS(cloneNvg_phase2_officerVisor_Keeli);
+    CLASS(RDF_Helmet) = QCLASS(rdfHelmet_basic);
+    CLASS(RDF_Helmet_Marksman) = QCLASS(rdfHelmet_marksman);
 };

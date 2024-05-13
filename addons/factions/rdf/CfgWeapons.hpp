@@ -1,9 +1,9 @@
 class CfgWeapons {
-    class ls_blueforHelmet_base;
-    class CLASS(BLUFOR_Helmet_Base): ls_blueforHelmet_base {
+    class H_HelmetO_ViperSP_hex_F;
+    class CLASS(helmet_base): H_HelmetO_ViperSP_hex_F {
         class ItemInfo;
     };
-    class CLASS(RDF_Helmet): CLASS(BLUFOR_Helmet_Base) {
+    class CLASS(rdfHelmet_basic): CLASS(helmet_base) {
         SCOPE_PUBLIC;
 
         displayName = "[RDF] Helmet";
@@ -14,10 +14,11 @@ class CfgWeapons {
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo"};
             uniformModel = "\sc_equipment\data\enforcer\en_helmet.p3d";
+            mass = 22;
         };
     };
 
-    class CLASS(RDF_Helmet_Marksman): CLASS(RDF_Helmet) {
+    class CLASS(rdfHelmet_marksman): CLASS(rdfHelmet_basic) {
         displayName = "[RDF] Marksman Helmet";
 
         model = "\sc_equipment\data\ranger\rn_helmet.p3d";
