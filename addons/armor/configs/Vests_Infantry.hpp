@@ -216,7 +216,7 @@ class CLASS(Vest_CSS): CLASS(Vest_CS) {
 };
 
 class CLASS(Vest_CSFC): CLASS(Vest_CS) {
-    displayName = "[KC] INF Vest 07 (CSFC)";
+    displayName = "[KC] INF Vest 08 (CSFC)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\heavy\CSFC_camo1_co.paa),
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
@@ -224,8 +224,17 @@ class CLASS(Vest_CSFC): CLASS(Vest_CS) {
     picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
 };
 
+class CLASS(cloneVest_CMS): CLASS(Vest_CS) {
+    displayName = "[KC] INF Vest 09 (CMS)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\heavy\CMS_camo1_co.paa),
+        QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
+    };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+};
+
 class CLASS(Vest_CSM): CLASS(Vest_CS) {
-    displayName = "[KC] INF Vest 08 (CSM)";
+    displayName = "[KC] INF Vest 10 (CSM)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\heavy\CSM_camo1_co.paa),
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
