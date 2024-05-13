@@ -15,7 +15,7 @@
             private _currentBudgetSide = missionNamespace getVariable [format ["ace_fortify_budget_%1", _side], 0];
 
             private _budgetSide = profileNamespace getVariable [_budgetKey, _currentBudgetSide];
-            TRACE_3("Loading budget from profile"_side,_budgetSide,_currentBudgetSide);
+            TRACE_3("Loading budget from profile",_side,_budgetSide,_currentBudgetSide);
             missionNamespace setVariable [format ["ace_fortify_budget_%1", _side], _budgetSide, true];
         } forEach [west, east, independent];
     };
