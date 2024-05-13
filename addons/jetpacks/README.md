@@ -27,6 +27,9 @@ A player can also have their jetpack refueled by another player by using a jetpa
 
 A player with Engineer permissions is able to fill a fuel by ACE interacting to siphon fuel from a dead body with a jetpack. The player with the fuel tank is then able to ACE interact with an alive player and refuel their jetpack.
 
+### Easy Ejections
+Any player that exits an *airborne* vehicle while wearing either a KC jetpack or a JLTS jummpack will be automatically be moved 30 meters (from the vehicle's center) behind the vehicle to safely eject. This helps for vehicles that have their exit points set inside of or very close the vehicle.
+
 ## Settings
 ### Fuel Drain Coefficient
 Default Value: **100%**
