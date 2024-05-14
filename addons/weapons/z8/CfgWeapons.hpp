@@ -10,7 +10,7 @@ class CfgWeapons {
         baseWeapon = QCLASS(Z8_base);
 
         modes[] = {"FullAuto", "Overcharge"};
-        magazines[] = {QCLASS(mag_1200rnd_Z8), "3AS_Chaingun_Drum_Mag"};
+        magazines[] = {QCLASS(mag_1200rnd_Z8)};
 
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
