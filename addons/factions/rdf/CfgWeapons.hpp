@@ -3,7 +3,7 @@ class CfgWeapons {
     class CLASS(helmet_base): H_HelmetO_ViperSP_hex_F {
         class ItemInfo;
     };
-    class CLASS(rdfHelmet_basic): CLASS(helmet_base) {
+    class CLASS(rdfArmor_helmet): CLASS(helmet_base) {
         SCOPE_PUBLIC;
 
         displayName = "[RDF] Helmet";
@@ -18,7 +18,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(rdfHelmet_marksman): CLASS(rdfHelmet_basic) {
+    class CLASS(rdfArmor_helmet_marksman): CLASS(rdfHelmet_basic) {
         displayName = "[RDF] Marksman Helmet";
 
         model = "\sc_equipment\data\ranger\rn_helmet.p3d";
