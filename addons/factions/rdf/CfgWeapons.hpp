@@ -44,7 +44,7 @@ class CfgWeapons {
         displayName = "[RDF] Uniform";
 
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(RDF_Unit_Base);
+            uniformClass = QCLASS(rdfArmor_unit_base);
             uniformType = "Neopren";
         };
     };
