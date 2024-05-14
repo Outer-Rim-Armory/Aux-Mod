@@ -5,6 +5,7 @@ PREP(canRefuelPlayer);
 PREP(clearEffects);
 PREP(getFuel);
 PREP(getFuelCan);
+PREP(getOutMan);
 PREP(hasJetpack);
 PREP(modifyInteraction);
 PREP(playErrorSound);
