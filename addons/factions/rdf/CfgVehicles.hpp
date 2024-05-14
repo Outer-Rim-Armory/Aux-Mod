@@ -271,15 +271,6 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(rdfArmor_backpack_predef_rifleman_DC15S): CLASS(rdfArmor_backpack_predef_rifleman) {
-        class TransportMagazines: TransportMagazines {
-            MAG_XX(CLASS(Mag_80rnd_DC15S),15);
-            MAG_XX(CLASS(Mag_20rnd_DC17),5);
-            MAG_XX(CLASS(Mag_StunLong),5);
-            MAG_XX(CLASS(Mag_StunShort),5);
-        };
-    };
-
     class CLASS(rdfArmor_backpack_predef_grenadier): CLASS(rdfArmor_backpack_predef_rifleman) {
         class TransportMagazines: TransportMagazines {
             MAG_XX(3Rnd_HE_Grenade_shell,10);
@@ -308,6 +299,38 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_StunShort),5);
             MAG_XX(CLASS(Mag_1rnd_RPS7_HE),2);
             MAG_XX(CLASS(Mag_1rnd_RPS7_AT),2);
+        };
+    };
+
+    class CLASS(rdfArmor_backpack_medic): CLASS(rdfArmor_backpack) {
+        displayName = "[RDF] Medic Backpack";
+
+        model = "\sc_equipment\data\wasp\wp_backpack.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_guard_co.paa"};
+    };
+
+    class CLASS(rdfArmor_backpack_medic_predef_medic): CLASS(rdfArmor_backpack_medic) {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_StunLong),5);
+            MAG_XX(CLASS(Mag_StunShort),5);
+            MAG_XX(CLASS(Grenade_EMP),5);
+            MAG_XX(CLASS(Grenade_Bacta),5);
+            MAG_XX(3AS_SmokeWhite,2);
+            MAG_XX(3AS_SmokeBlue,2);
+            MAG_XX(3AS_SmokeRed,2);
+            MAG_XX(3AS_SmokeYellow,2);
+            MAG_XX(3AS_SmokePurple,1);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(ShieldGrenadePersonal_Mag,1);
+            MAG_XX(ls_mag_classC_thermalDet,3);
+        };
+        class TransportItems {
+            ITEM_XX(ACE_elasticBandage,80);
+            ITEM_XX(ACE_bloodIV,10);
+            ITEM_XX(ACE_bloodIV_500,10);
+            ITEM_XX(ACE_bloodIV_250,10);
         };
     };
 
@@ -358,38 +381,6 @@ class CfgVehicles {
             MAG_XX(ls_mag_classA_thermalDet,3);
             MAG_XX(ls_mag_classB_thermalDet,3);
             MAG_XX(ls_mag_classC_thermalDet,3);
-        };
-    };
-
-    class CLASS(rdfArmor_backpack_medic): CLASS(rdfArmor_backpack) {
-        displayName = "[RDF] Medic Backpack";
-
-        model = "\sc_equipment\data\wasp\wp_backpack.p3d";
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_guard_co.paa"};
-    };
-
-    class CLASS(rdfArmor_backpack_medic_predef_medic): CLASS(rdfArmor_backpack_medic) {
-        SCOPE_HIDDEN;
-
-        class TransportMagazines {
-            MAG_XX(CLASS(Mag_StunLong),5);
-            MAG_XX(CLASS(Mag_StunShort),5);
-            MAG_XX(CLASS(Grenade_EMP),5);
-            MAG_XX(CLASS(Grenade_Bacta),5);
-            MAG_XX(3AS_SmokeWhite,2);
-            MAG_XX(3AS_SmokeBlue,2);
-            MAG_XX(3AS_SmokeRed,2);
-            MAG_XX(3AS_SmokeYellow,2);
-            MAG_XX(3AS_SmokePurple,1);
-            MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(ShieldGrenadePersonal_Mag,1);
-            MAG_XX(ls_mag_classC_thermalDet,3);
-        };
-        class TransportItems {
-            ITEM_XX(ACE_elasticBandage,80);
-            ITEM_XX(ACE_bloodIV,10);
-            ITEM_XX(ACE_bloodIV_500,10);
-            ITEM_XX(ACE_bloodIV_250,10);
         };
     };
 };
