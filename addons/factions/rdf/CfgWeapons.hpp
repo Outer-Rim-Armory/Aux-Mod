@@ -10,7 +10,9 @@ class CfgWeapons {
 
         model = "\sc_equipment\data\enforcer\en_helmet.p3d";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\enforcer\textures\helmet_urban_co.paa"};
+        hiddenSelectionsTextures[] = {
+            "\sc_equipment\data\enforcer\textures\helmet_urban_co.paa"
+        };
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo"};
             uniformModel = "\sc_equipment\data\enforcer\en_helmet.p3d";
@@ -18,11 +20,13 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(rdfArmor_helmet_marksman): CLASS(rdfHelmet_basic) {
+    class CLASS(rdfArmor_helmet_marksman): CLASS(rdfArmor_helmet) {
         displayName = "[RDF] Marksman Helmet";
 
         model = "\sc_equipment\data\ranger\rn_helmet.p3d";
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\ranger\textures\helmet_urban_co.paa"};
+        hiddenSelectionsTextures[] = {
+            "\sc_equipment\data\ranger\textures\helmet_urban_co.paa"
+        };
 
         class ItemInfo: ItemInfo {
             uniformModel = "\sc_equipment\data\ranger\rn_helmet.p3d";
@@ -44,11 +48,11 @@ class CfgWeapons {
         };
     };
 
-    class ls_blueforVest_base;
-    class CLASS(BLUFOR_Vest_Base): ls_blueforVest_base {
+    class V_PlateCarrier1_rgr;
+    class CLASS(vest_base): V_PlateCarrier1_rgr {
         class ItemInfo;
     };
-    class CLASS(RDF_Vest): CLASS(BLUFOR_Vest_Base) {
+    class CLASS(rdfArmor_vest_light): CLASS(vest_base) {
         SCOPE_PUBLIC;
 
         displayName = "[RDF] Light Vest";
@@ -61,12 +65,13 @@ class CfgWeapons {
             hiddenSelections[] = {"camo"};
             uniformModel = "\sc_equipment\data\watchdog\wd_vest_light.p3d";
             containerClass = "Supply250";
+            mass = 60;
 
             SC_VEST_HITPOINTS_LIGHT;
         };
     };
 
-    class CLASS(RDF_Vest_Medium): CLASS(RDF_Vest) {
+    class CLASS(rdfArmor_vest_medium): CLASS(rdfArmor_vest_light) {
         displayName = "[RDF] Medium Vest";
         model = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
 
@@ -78,7 +83,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(RDF_Vest_Swat): CLASS(RDF_Vest) {
+    class CLASS(rdfArmor_vest_swat): CLASS(rdfArmor_vest_medium) {
         displayName = "[RDF] SWAT Vest";
         model = "\sc_equipment\data\marine\mr_vest.p3d";
         hiddenSelections[] = {"camo", "camo1"};
@@ -90,8 +95,6 @@ class CfgWeapons {
         class ItemInfo: ItemInfo {
             uniformModel = "\sc_equipment\data\marine\mr_vest.p3d";
             hiddenSelections[] = {"camo", "camo1"};
-
-            SC_VEST_HITPOINTS_MEDIUM;
         };
     };
 };

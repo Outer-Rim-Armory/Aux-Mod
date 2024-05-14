@@ -9,7 +9,9 @@ class CfgVehicles {
 
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         hiddenSelections[] = {"camo", "insignia"};
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_black_co.paa"};
+        hiddenSelectionsTextures[] = {
+            "\sc_equipment\data\combat_uniform\cu_black_co.paa"
+        };
 
         items[] = {
             ITEM_15("ACE_elasticBandage"),
@@ -44,8 +46,8 @@ class CfgVehicles {
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
 
-        linkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_Predef_Rifleman);
     };
 
@@ -84,8 +86,8 @@ class CfgVehicles {
             "3Rnd_HE_Grenade_shell"
         };
 
-        linkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_Predef_Grenadier);
     };
 
@@ -105,8 +107,8 @@ class CfgVehicles {
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
 
-        linkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_Predef_Autorifleman);
     };
 
@@ -128,8 +130,8 @@ class CfgVehicles {
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
 
-        linkedItems[] = {QCLASS(rdfHelmet_Marksman), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(rdfHelmet_Marksman), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(rdfArmor_helmet_marksman), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet_marksman), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_Predef_Rifleman);
     };
 
@@ -188,8 +190,8 @@ class CfgVehicles {
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
 
-        linkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_Medic_Predef_Medic);
     };
 
@@ -213,8 +215,8 @@ class CfgVehicles {
             QCLASS(Mag_30Rnd_DC15SA)
         };
 
-        linkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest_Swat), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest_Swat), RDF_LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_SWAT_Predef_Rifleman);
     };
 
@@ -234,8 +236,8 @@ class CfgVehicles {
             QCLASS(Mag_30Rnd_DC15SA)
         };
 
-        linkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest_Swat), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(rdfHelmet_basic), QCLASS(RDF_Vest_Swat), RDF_LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
         backpack = QCLASS(RDF_Backpack_SWAT_Predef_Rifleman);
     };
 
