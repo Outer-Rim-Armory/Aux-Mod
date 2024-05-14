@@ -5,7 +5,7 @@ class CfgVehicles {
         faction = QFACTION(RDF);
         uniformClass = QCLASS(rdfArmor_uniform);
 
-        genericNames = QCLASS(RDF_Soldier);
+        genericNames = QCLASS(rdfSoldier);
 
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         hiddenSelections[] = {"camo", "insignia"};
@@ -201,7 +201,7 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(SpecialForces);
         // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_swat);
 
-        genericNames = QCLASS(RDF_SWAT);
+        genericNames = QCLASS(rdfSwat);
 
         weapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Throw", "Put"};
