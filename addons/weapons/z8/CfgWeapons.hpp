@@ -1,13 +1,39 @@
 class CfgWeapons {
-    class 3AS_Chaingun;
+    class Launcher_base_F;
+    class 3AS_Chaingun: Launcher_base_F {
+        class FullAuto;
+    };
     class CLASS(Z8_base): 3AS_Chaingun {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
         baseWeapon = QCLASS(Z8_base);
 
+        modes[] = {"FullAuto", "Overcharge"};
+        magazines[] = {QCLASS(mag_1200rnd_Z8), "3AS_Chaingun_Drum_Mag"};
+
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
+
+        // Enable "buddy reloading"
+        ace_reloadlaunchers_enabled = TRUE;
+
+        class FullAuto: FullAuto {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(soundSet_Z8_shot)};
+            };
+        };
+
+        class Overcharge: FullAuto {
+            displayName = "Overcharge";
+            burst = 25;
+            reloadTime = 0.015;
+            textureType = "fastAuto";
+
+            class StandardSound {
+                soundSetShot[] = {QCLASS(soundSet_Z8_shot)};
+            };
+        };
     };
 
     class CLASS(Z8): CLASS(Z8_base) {

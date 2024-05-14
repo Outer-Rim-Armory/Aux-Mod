@@ -12,6 +12,8 @@ class CfgMagazines {
         modelSpecial = "";
         modelSpecialIsProxy = FALSE;
 
+        allowedSlots[] = {TYPE_UNIFORM, TYPE_VEST, TYPE_BACKPACK};
+
         tracersEvery = 1;
         count = 1;
         mass = 0;

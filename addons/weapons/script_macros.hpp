@@ -1,3 +1,11 @@
+// Create an "AI" version of a magazine. Mainly intended for heavy magazines
+// so that AI can spawn with the weapon already loaded.
+#define MAGAZINE_AI(var1) class CLASS(DOUBLES(var1,ai)): CLASS(var1) { \
+    SCOPE_HIDDEN; \
+    allowedSlots[] = {TYPE_UNIFORM, TYPE_VEST, TYPE_BACKPACK}; \
+    mass = 0; \
+}
+
 #define AMMO_USAGE_NONE 0
 #define AMMO_USAGE_LIGHT 1
 #define AMMO_USAGE_MARKING 2
