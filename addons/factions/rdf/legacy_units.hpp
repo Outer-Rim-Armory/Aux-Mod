@@ -1,5 +1,3 @@
-#define DEPRECATE_CLASS(old,new) class CLASS(old): CLASS(new) { SCOPE_HIDDEN; }
-
 DEPRECATE_CLASS(RDF_Unit_Rifleman,rdfArmor_unit_rifleman);
 DEPRECATE_CLASS(RDF_Unit_Rifleman_DC15C,rdfArmor_unit_rifleman_DC15C);
 DEPRECATE_CLASS(RDF_Unit_Grenadier,rdfArmor_unit_grenadier);
