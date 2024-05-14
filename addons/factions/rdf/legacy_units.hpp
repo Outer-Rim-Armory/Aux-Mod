@@ -1,0 +1,12 @@
+#define DEPRECATE_CLASS(old,new) class CLASS(old): CLASS(new) { SCOPE_HIDDEN; }
+
+DEPRECATE_CLASS(RDF_Unit_Rifleman,rdfArmor_unit_rifleman);
+DEPRECATE_CLASS(RDF_Unit_Rifleman_DC15C,rdfArmor_unit_rifleman_DC15C);
+DEPRECATE_CLASS(RDF_Unit_Grenadier,rdfArmor_unit_grenadier);
+DEPRECATE_CLASS(RDF_Unit_Autorifleman,rdfArmor_unit_autorifleman);
+DEPRECATE_CLASS(RDF_Unit_Marksman,rdfArmor_unit_marksman);
+DEPRECATE_CLASS(RDF_Unit_Rifleman_AT,rdfArmor_unit_riflemanAT);
+DEPRECATE_CLASS(RDF_Unit_Rifleman_AT_Disposable,rdfArmor_unit_riflemanAT_disposable);
+DEPRECATE_CLASS(RDF_Unit_Medic,rdfArmor_unit_medic);
+DEPRECATE_CLASS(RDF_Unit_SWAT,rdfArmor_unit_swat);
+DEPRECATE_CLASS(RDF_Unit_SWAT_Chaingun,rdfArmor_unit_swat_chaingun);

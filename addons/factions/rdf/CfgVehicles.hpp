@@ -241,6 +241,8 @@ class CfgVehicles {
         backpack = QCLASS(rdfArmor_backpack_swat_predef_chaingun);
     };
 
+    #include "legacy_units.hpp"
+
 
     class CLASS(backpack_base);
     class CLASS(rdfArmor_backpack): CLASS(backpack_base) {
