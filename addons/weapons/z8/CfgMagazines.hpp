@@ -16,7 +16,7 @@ class CfgMagazines {
 
         ammo = QCLASS(bullet_plasma_Z8_yellow);
         count = 1200;
-        mass = __EVAL(3*1200);
+        mass = __EVAL(0.3*1200);
     };
 
     MAGAZINE_AI(mag_1200rnd_Z8);
