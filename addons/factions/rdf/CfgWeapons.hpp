@@ -45,6 +45,7 @@ class CfgWeapons {
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(RDF_Unit_Base);
+            uniformType = "Neopren";
         };
     };
 
