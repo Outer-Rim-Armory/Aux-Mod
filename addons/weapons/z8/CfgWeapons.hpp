@@ -11,7 +11,7 @@ class CfgWeapons {
         picture = QPATHTOF(z8\data\ui\Z8_ca.paa);
 
         modes[] = {"FullAuto", "Overcharge"};
-        magazines[] = {QCLASS(mag_1200rnd_Z8)};
+        magazines[] = {QCLASS(mag_1200rnd_Z8), QCLASS(mag_1200rnd_Z8_AI)};
 
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;

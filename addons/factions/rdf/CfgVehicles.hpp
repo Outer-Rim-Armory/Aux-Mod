@@ -224,16 +224,18 @@ class CfgVehicles {
         displayName = "SWAT Chaingunner";
         editorPreview = EDITOR_PREVIEW(rdfArmor_unit_swat_chaingun);
 
-        weapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Aux501_Weaps_Z1000", "Throw", "Put"};
-        respawnWeapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Aux501_Weaps_Z1000", "Throw", "Put"};
+        weapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), QCLASS(Z8), "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), QCLASS(Z8), "Throw", "Put"};
 
         magazines[] = {
             QCLASS(Mag_99Rnd_WestarM5),
-            QCLASS(Mag_30Rnd_DC15SA)
+            QCLASS(Mag_30Rnd_DC15SA),
+            QCLASS(mag_1200rnd_Z8_AI)
         };
         respawnMagazines[] = {
             QCLASS(Mag_99Rnd_WestarM5),
-            QCLASS(Mag_30Rnd_DC15SA)
+            QCLASS(Mag_30Rnd_DC15SA),
+            QCLASS(mag_1200rnd_Z8_AI)
         };
 
         linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
