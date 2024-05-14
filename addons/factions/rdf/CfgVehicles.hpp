@@ -32,7 +32,7 @@ class CfgVehicles {
     class CLASS(rdfArmor_unit_rifleman): CLASS(rdfArmor_unit_base) {
         SCOPE_PUBLIC;
         displayName = "Rifleman";
-        // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_rifleman);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_rifleman);
 
         weapons[] = {QCLASS(DC15A), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15A), QCLASS(DC17), "Throw", "Put"};
@@ -52,7 +52,7 @@ class CfgVehicles {
     };
 
     class CLASS(rdfArmor_unit_rifleman_DC15C): CLASS(rdfArmor_unit_rifleman) {
-        // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_rifleman_DC15C);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_rifleman_DC15C);
 
         weapons[] = {QCLASS(DC15C), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15C), QCLASS(DC17), "Throw", "Put"};
@@ -70,7 +70,7 @@ class CfgVehicles {
     class CLASS(rdfArmor_unit_grenadier): CLASS(rdfArmor_unit_base) {
         SCOPE_PUBLIC;
         displayName = "Grenadier";
-        // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_grenadier);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_grenadier);
 
         weapons[] = {QCLASS(DC15A_UGL), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15A_UGL), QCLASS(DC17), "Throw", "Put"};
@@ -95,7 +95,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         displayName = "Autorifleman";
         icon = "iconManMG";
-        // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_autorifleman);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_autorifleman);
 
         weapons[] = {QCLASS(DC15L), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15L), QCLASS(DC17), "Throw", "Put"};
@@ -116,7 +116,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         displayName = "Marksman";
         icon = "JLTS_iconManSniper";
-        // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_marksman);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_marksman);
 
         weapons[] = {QCLASS(DC15X), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15X), QCLASS(DC17), "Throw", "Put"};
@@ -138,7 +138,7 @@ class CfgVehicles {
     class CLASS(rdfArmor_unit_riflemanAT): CLASS(rdfArmor_unit_rifleman) {
         displayName = "Rifleman (AT)";
         icon = "iconManAT";
-        // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_rifleman_AT);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_riflemanAT);
 
         weapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS7), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS7), "Throw", "Put"};
@@ -156,7 +156,7 @@ class CfgVehicles {
 
     class CLASS(rdfArmor_unit_riflemanAT_disposable): CLASS(rdfArmor_unit_riflemanAT) {
         displayName = "Rifleman (AT, Disposable)";
-        // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_rifleman_AT_Disposable);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_riflemanAT_disposable);
 
         weapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS6_Loaded), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS6_Loaded), "Throw", "Put"};
@@ -176,7 +176,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         displayName = "Medic";
         icon = "iconManMedic";
-        // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_medic);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_medic);
 
         weapons[] = {QCLASS(DC15S), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15S), QCLASS(DC17), "Throw", "Put"};
@@ -199,7 +199,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         displayName = "SWAT Rifleman";
         editorSubcategory = QEDSUBCAT(SpecialForces);
-        // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_swat);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_swat);
 
         genericNames = QCLASS(rdfSwat);
 
@@ -217,12 +217,12 @@ class CfgVehicles {
 
         linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(RDF_Backpack_SWAT_Predef_Rifleman);
+        backpack = QCLASS(rdfArmor_backpack_swat_predef_rifleman);
     };
 
     class CLASS(rdfArmor_unit_swat_chaingun): CLASS(rdfArmor_unit_swat) {
         displayName = "SWAT Chaingunner";
-        // editorPreview = EDITOR_PREVIEW(rdfArmor_unit_swat_chaingun);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_swat_chaingun);
 
         weapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Aux501_Weaps_Z1000", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Aux501_Weaps_Z1000", "Throw", "Put"};
