@@ -13,6 +13,9 @@ class CfgPatches {
         };
         units[] = {};
         weapons[] = {
+            QCLASS(Z8_base),
+            QCLASS(Z8),
+            QCLASS(Z8_fried)
         };
         VERSION_CONFIG;
     };
