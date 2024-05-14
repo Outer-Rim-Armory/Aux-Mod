@@ -14,7 +14,7 @@ class CfgMagazines {
         initSpeed = 200;
         type = AMMO_USAGE_ARMORED_VEHICLES;
 
-        ammo = QCLASS(Bullet_PlasmaRifle_Blue);
+        ammo = QCLASS(bullet_plasma_Z8_yellow);
         count = 1200;
         mass = __EVAL(3*1200);
     };

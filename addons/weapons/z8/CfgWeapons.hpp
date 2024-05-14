@@ -29,10 +29,6 @@ class CfgWeapons {
             burst = 25;
             reloadTime = 0.015;
             textureType = "fastAuto";
-
-            class StandardSound {
-                soundSetShot[] = {QCLASS(soundSet_Z8_shot)};
-            };
         };
     };
 
