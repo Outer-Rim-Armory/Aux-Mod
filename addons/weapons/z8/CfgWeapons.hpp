@@ -8,6 +8,7 @@ class CfgWeapons {
         author = AUTHOR;
 
         baseWeapon = QCLASS(Z8_base);
+        picture = QPATHTOF(z8\data\ui\Z8_ca.paa);
 
         modes[] = {"FullAuto", "Overcharge"};
         magazines[] = {QCLASS(mag_1200rnd_Z8)};
@@ -46,7 +47,7 @@ class CfgWeapons {
 
         displayName = "[KC] Z-8 (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        picture = "\MRC\JLTS\weapons\Z6\data\ui\Z6_fried_ui_ca.paa";
+        picture = QPATHTOF(z8\data\ui\Z8_fried_ca.paa);
 
         JLTS_isFried = TRUE;
         magazines[] = {};
