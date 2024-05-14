@@ -86,6 +86,7 @@ class CfgWeapons {
         };
         class FullAuto: FullAuto {
             sounds[] = {"StandardSound"};
+            aiRateOfFire = 2;
             class StandardSound: StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_WestarM5Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_WestarM5Shot)};
