@@ -1,5 +1,8 @@
 class CfgWeapons {
-    class H_HelmetO_ViperSP_hex_F;
+    class H_HelmetB;
+    class H_HelmetO_ViperSP_hex_F: H_HelmetB {
+        class ItemInfo;
+    };
     class CLASS(helmet_base): H_HelmetO_ViperSP_hex_F {
         SCOPE_PRIVATE;
         author = AUTHOR;
@@ -7,6 +10,10 @@ class CfgWeapons {
         subItems[] = {};
 
         picture = QPATHTOF(data\ui\logo_kc_ca.paa);
+
+        class ItemInfo: ItemInfo {
+            modelSides[] = {ALL_SIDES};
+        };
     };
 
     class V_PlateCarrier1_rgr;

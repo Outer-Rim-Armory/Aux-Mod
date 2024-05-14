@@ -1,15 +1,17 @@
 class CfgVehicles {
     class CLASS(BLUFOR_Unit_Base);
-    class CLASS(RDF_Unit_Base): CLASS(BLUFOR_Unit_Base) {
+    class CLASS(rdfArmor_unit_base): CLASS(BLUFOR_Unit_Base) {
         SCOPE_HIDDEN;
         faction = QFACTION(RDF);
-        uniformClass = QCLASS(RDF_Uniform);
+        uniformClass = QCLASS(rdfArmor_uniform);
 
-        genericNames = QCLASS(RDF_Soldier);
+        genericNames = QCLASS(rdfSoldier);
 
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         hiddenSelections[] = {"camo", "insignia"};
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_black_co.paa"};
+        hiddenSelectionsTextures[] = {
+            "\sc_equipment\data\combat_uniform\cu_black_co.paa"
+        };
 
         items[] = {
             ITEM_15("ACE_elasticBandage"),
@@ -27,10 +29,10 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(RDF_Unit_Rifleman): CLASS(RDF_Unit_Base) {
+    class CLASS(rdfArmor_unit_rifleman): CLASS(rdfArmor_unit_base) {
         SCOPE_PUBLIC;
         displayName = "Rifleman";
-        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Rifleman);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_rifleman);
 
         weapons[] = {QCLASS(DC15A), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15A), QCLASS(DC17), "Throw", "Put"};
@@ -44,13 +46,13 @@ class CfgVehicles {
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(RDF_Backpack_Predef_Rifleman);
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(rdfArmor_backpack_predef_rifleman);
     };
 
-    class CLASS(RDF_Unit_Rifleman_DC15C): CLASS(RDF_Unit_Rifleman) {
-        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Rifleman_DC15C);
+    class CLASS(rdfArmor_unit_rifleman_DC15C): CLASS(rdfArmor_unit_rifleman) {
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_rifleman_DC15C);
 
         weapons[] = {QCLASS(DC15C), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15C), QCLASS(DC17), "Throw", "Put"};
@@ -65,10 +67,10 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(RDF_Unit_Grenadier): CLASS(RDF_Unit_Base) {
+    class CLASS(rdfArmor_unit_grenadier): CLASS(rdfArmor_unit_base) {
         SCOPE_PUBLIC;
         displayName = "Grenadier";
-        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Grenadier);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_grenadier);
 
         weapons[] = {QCLASS(DC15A_UGL), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15A_UGL), QCLASS(DC17), "Throw", "Put"};
@@ -84,16 +86,16 @@ class CfgVehicles {
             "3Rnd_HE_Grenade_shell"
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(RDF_Backpack_Predef_Grenadier);
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(rdfArmor_backpack_predef_grenadier);
     };
 
-    class CLASS(RDF_Unit_Autorifleman): CLASS(RDF_Unit_Base) {
+    class CLASS(rdfArmor_unit_autorifleman): CLASS(rdfArmor_unit_base) {
         SCOPE_PUBLIC;
         displayName = "Autorifleman";
         icon = "iconManMG";
-        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Autorifleman);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_autorifleman);
 
         weapons[] = {QCLASS(DC15L), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15L), QCLASS(DC17), "Throw", "Put"};
@@ -105,16 +107,16 @@ class CfgVehicles {
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Medium), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(RDF_Backpack_Predef_Autorifleman);
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(rdfArmor_backpack_predef_autorifleman);
     };
 
-    class CLASS(RDF_Unit_Marksman): CLASS(RDF_Unit_Base) {
+    class CLASS(rdfArmor_unit_marksman): CLASS(rdfArmor_unit_base) {
         SCOPE_PUBLIC;
         displayName = "Marksman";
         icon = "JLTS_iconManSniper";
-        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Autorifleman);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_marksman);
 
         weapons[] = {QCLASS(DC15X), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15X), QCLASS(DC17), "Throw", "Put"};
@@ -128,15 +130,15 @@ class CfgVehicles {
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet_Marksman), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet_Marksman), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(RDF_Backpack_Predef_Rifleman);
+        linkedItems[] = {QCLASS(rdfArmor_helmet_marksman), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet_marksman), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(rdfArmor_backpack_predef_rifleman);
     };
 
-    class CLASS(RDF_Unit_Rifleman_AT): CLASS(RDF_Unit_Rifleman) {
+    class CLASS(rdfArmor_unit_riflemanAT): CLASS(rdfArmor_unit_rifleman) {
         displayName = "Rifleman (AT)";
         icon = "iconManAT";
-        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Rifleman_AT);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_riflemanAT);
 
         weapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS7), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS7), "Throw", "Put"};
@@ -149,12 +151,12 @@ class CfgVehicles {
             QCLASS(Mag_80rnd_DC15S),
             QCLASS(Mag_20rnd_DC17)
         };
-        backpack = QCLASS(RDF_Backpack_Predef_Rifleman_AT);
+        backpack = QCLASS(rdfArmor_backpack_predef_riflemanAT);
     };
 
-    class CLASS(RDF_Unit_Rifleman_AT_Disposable): CLASS(RDF_Unit_Rifleman_AT) {
+    class CLASS(rdfArmor_unit_riflemanAT_disposable): CLASS(rdfArmor_unit_riflemanAT) {
         displayName = "Rifleman (AT, Disposable)";
-        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Rifleman_AT_Disposable);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_riflemanAT_disposable);
 
         weapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS6_Loaded), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15S), QCLASS(DC17), QCLASS(RPS6_Loaded), "Throw", "Put"};
@@ -167,14 +169,14 @@ class CfgVehicles {
             QCLASS(Mag_80rnd_DC15S),
             QCLASS(Mag_20rnd_DC17)
         };
-        backpack = QCLASS(RDF_Backpack_Predef_Rifleman);
+        backpack = QCLASS(rdfArmor_backpack_predef_rifleman);
     };
 
-    class CLASS(RDF_Unit_Medic): CLASS(RDF_Unit_Base) {
+    class CLASS(rdfArmor_unit_medic): CLASS(rdfArmor_unit_base) {
         SCOPE_PUBLIC;
         displayName = "Medic";
         icon = "iconManMedic";
-        // editorPreview = EDITOR_PREVIEW(RDF_Unit_Medic);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_medic);
 
         weapons[] = {QCLASS(DC15S), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15S), QCLASS(DC17), "Throw", "Put"};
@@ -188,18 +190,18 @@ class CfgVehicles {
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(RDF_Backpack_Medic_Predef_Medic);
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(rdfArmor_backpack_medic_predef_medic);
     };
 
-    class CLASS(RDF_Unit_SWAT): CLASS(RDF_Unit_Base) {
+    class CLASS(rdfArmor_unit_swat): CLASS(rdfArmor_unit_base) {
         SCOPE_PUBLIC;
         displayName = "SWAT Rifleman";
         editorSubcategory = QEDSUBCAT(SpecialForces);
-        // editorPreview = EDITOR_PREVIEW(RDF_Unit_SWAT);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_swat);
 
-        genericNames = QCLASS(RDF_SWAT);
+        genericNames = QCLASS(rdfSwat);
 
         weapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Throw", "Put"};
@@ -213,14 +215,14 @@ class CfgVehicles {
             QCLASS(Mag_30Rnd_DC15SA)
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Swat), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Swat), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(RDF_Backpack_SWAT_Predef_Rifleman);
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(rdfArmor_backpack_swat_predef_rifleman);
     };
 
-    class CLASS(RDF_Unit_SWAT_Chaingun): CLASS(RDF_Unit_SWAT) {
+    class CLASS(rdfArmor_unit_swat_chaingun): CLASS(rdfArmor_unit_swat) {
         displayName = "SWAT Chaingunner";
-        // editorPreview = EDITOR_PREVIEW(RDF_Unit_SWAT_Chaingun);
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_swat_chaingun);
 
         weapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Aux501_Weaps_Z1000", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(WestarM5), QCLASS(DC15SA), "Aux501_Weaps_Z1000", "Throw", "Put"};
@@ -234,14 +236,16 @@ class CfgVehicles {
             QCLASS(Mag_30Rnd_DC15SA)
         };
 
-        linkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Swat), RDF_LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(RDF_Helmet), QCLASS(RDF_Vest_Swat), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(RDF_Backpack_SWAT_Predef_Rifleman);
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(rdfArmor_backpack_swat_predef_chaingun);
     };
+
+    #include "legacy_units.hpp"
 
 
     class CLASS(backpack_base);
-    class CLASS(RDF_Backpack): CLASS(backpack_base) {
+    class CLASS(rdfArmor_backpack): CLASS(backpack_base) {
         SCOPE_PUBLIC;
 
         displayName = "[RDF] Backpack";
@@ -254,7 +258,7 @@ class CfgVehicles {
         maximumLoad = 600;
     };
 
-    class CLASS(RDF_Backpack_Predef_Rifleman): CLASS(RDF_Backpack) {
+    class CLASS(rdfArmor_backpack_predef_rifleman): CLASS(rdfArmor_backpack) {
         SCOPE_HIDDEN;
 
         class TransportMagazines {
@@ -269,16 +273,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(RDF_Backpack_Predef_Rifleman_DC15S): CLASS(RDF_Backpack_Predef_Rifleman) {
-        class TransportMagazines: TransportMagazines {
-            MAG_XX(CLASS(Mag_80rnd_DC15S),15);
-            MAG_XX(CLASS(Mag_20rnd_DC17),5);
-            MAG_XX(CLASS(Mag_StunLong),5);
-            MAG_XX(CLASS(Mag_StunShort),5);
-        };
-    };
-
-    class CLASS(RDF_Backpack_Predef_Grenadier): CLASS(RDF_Backpack_Predef_Rifleman) {
+    class CLASS(rdfArmor_backpack_predef_grenadier): CLASS(rdfArmor_backpack_predef_rifleman) {
         class TransportMagazines: TransportMagazines {
             MAG_XX(3Rnd_HE_Grenade_shell,10);
             MAG_XX(3Rnd_UGL_FlareWhite_F,2);
@@ -292,13 +287,13 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(RDF_Backpack_Predef_Autorifleman): CLASS(RDF_Backpack_Predef_Rifleman) {
+    class CLASS(rdfArmor_backpack_predef_autorifleman): CLASS(rdfArmor_backpack_predef_rifleman) {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_240rnd_DC15L),15);
         };
     };
 
-    class CLASS(RDF_Backpack_Predef_Rifleman_AT): CLASS(RDF_Backpack_Predef_Rifleman) {
+    class CLASS(rdfArmor_backpack_predef_riflemanAT): CLASS(rdfArmor_backpack_predef_rifleman) {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_80rnd_DC15S),16);
             MAG_XX(CLASS(Mag_20rnd_DC17),6);
@@ -309,69 +304,17 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(RDF_Backpack_SWAT): CLASS(RDF_Backpack) {
-        displayName = "[RDF] SWAT Backpack";
-
-        model = "\sc_equipment\data\wasp\wp_backpack.p3d";
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_black_co.paa"};
-    };
-
-    class CLASS(RDF_Backpack_SWAT_Predef_Rifleman): CLASS(RDF_Backpack_SWAT) {
-        SCOPE_HIDDEN;
-
-        class TransportMagazines {
-            MAG_XX(CLASS(Mag_99Rnd_WestarM5),15);
-            MAG_XX(CLASS(Mag_30Rnd_DC15SA),5);
-            MAG_XX(CLASS(Mag_15Rnd_DC15SA),5);
-            MAG_XX(CLASS(Mag_7Rnd_DC15SA),5);
-            MAG_XX(Aux501_Weapons_Mags_z1000_drum3000,1);
-            MAG_XX(CLASS(Grenade_EMP),5);
-            MAG_XX(3AS_SmokeWhite,2);
-            MAG_XX(3AS_SmokeBlue,2);
-            MAG_XX(3AS_SmokeRed,2);
-            MAG_XX(3AS_SmokeYellow,2);
-            MAG_XX(3AS_SmokePurple,1);
-            MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(ShieldGrenadePersonal_Mag,1);
-            MAG_XX(ls_mag_classA_thermalDet,3);
-            MAG_XX(ls_mag_classB_thermalDet,3);
-            MAG_XX(ls_mag_classC_thermalDet,3);
-        };
-    };
-
-    class CLASS(RDF_Backpack_SWAT_Predef_Chaingun): CLASS(RDF_Backpack_SWAT_Predef_Rifleman) {
-        class TransportMagazines: TransportMagazines {
-            MAG_XX(CLASS(Mag_99Rnd_WestarM5),15);
-            MAG_XX(CLASS(Mag_30Rnd_DC15SA),5);
-            MAG_XX(CLASS(Mag_15Rnd_DC15SA),5);
-            MAG_XX(CLASS(Mag_7Rnd_DC15SA),5);
-            MAG_XX(CLASS(Grenade_EMP),5);
-            MAG_XX(3AS_SmokeWhite,2);
-            MAG_XX(3AS_SmokeBlue,2);
-            MAG_XX(3AS_SmokeRed,2);
-            MAG_XX(3AS_SmokeYellow,2);
-            MAG_XX(3AS_SmokePurple,1);
-            MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(ShieldGrenadePersonal_Mag,1);
-            MAG_XX(ls_mag_classA_thermalDet,3);
-            MAG_XX(ls_mag_classB_thermalDet,3);
-            MAG_XX(ls_mag_classC_thermalDet,3);
-        };
-    };
-
-    class CLASS(RDF_Backpack_Medic): CLASS(RDF_Backpack) {
+    class CLASS(rdfArmor_backpack_medic): CLASS(rdfArmor_backpack) {
         displayName = "[RDF] Medic Backpack";
 
         model = "\sc_equipment\data\wasp\wp_backpack.p3d";
         hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_guard_co.paa"};
     };
 
-    class CLASS(RDF_Backpack_Medic_Predef_Medic): CLASS(RDF_Backpack_Medic) {
+    class CLASS(rdfArmor_backpack_medic_predef_medic): CLASS(rdfArmor_backpack_medic) {
         SCOPE_HIDDEN;
 
         class TransportMagazines {
-            // MAG_XX(CLASS(Mag_80rnd_DC15S),15);
-            // MAG_XX(CLASS(Mag_20rnd_DC17),5);
             MAG_XX(CLASS(Mag_StunLong),5);
             MAG_XX(CLASS(Mag_StunShort),5);
             MAG_XX(CLASS(Grenade_EMP),5);
@@ -390,6 +333,56 @@ class CfgVehicles {
             ITEM_XX(ACE_bloodIV,10);
             ITEM_XX(ACE_bloodIV_500,10);
             ITEM_XX(ACE_bloodIV_250,10);
+        };
+    };
+
+    class CLASS(rdfArmor_backpack_swat): CLASS(rdfArmor_backpack) {
+        displayName = "[RDF] SWAT Backpack";
+
+        model = "\sc_equipment\data\wasp\wp_backpack.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_black_co.paa"};
+    };
+
+    class CLASS(rdfArmor_backpack_swat_predef_rifleman): CLASS(rdfArmor_backpack_swat) {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_99Rnd_WestarM5),15);
+            MAG_XX(CLASS(Mag_30Rnd_DC15SA),5);
+            MAG_XX(CLASS(Mag_15Rnd_DC15SA),5);
+            MAG_XX(CLASS(Mag_7Rnd_DC15SA),5);
+            MAG_XX(CLASS(Grenade_EMP),5);
+            MAG_XX(3AS_SmokeWhite,2);
+            MAG_XX(3AS_SmokeBlue,2);
+            MAG_XX(3AS_SmokeRed,2);
+            MAG_XX(3AS_SmokeYellow,2);
+            MAG_XX(3AS_SmokePurple,1);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(ShieldGrenadePersonal_Mag,1);
+            MAG_XX(ls_mag_classA_thermalDet,3);
+            MAG_XX(ls_mag_classB_thermalDet,3);
+            MAG_XX(ls_mag_classC_thermalDet,3);
+        };
+    };
+
+    class CLASS(rdfArmor_backpack_swat_predef_chaingun): CLASS(rdfArmor_backpack_swat_predef_rifleman) {
+        class TransportMagazines: TransportMagazines {
+            MAG_XX(CLASS(Mag_99Rnd_WestarM5),15);
+            MAG_XX(CLASS(Mag_30Rnd_DC15SA),5);
+            MAG_XX(CLASS(Mag_15Rnd_DC15SA),5);
+            MAG_XX(CLASS(Mag_7Rnd_DC15SA),5);
+            MAG_XX(Aux501_Weapons_Mags_z1000_drum3000,1);
+            MAG_XX(CLASS(Grenade_EMP),5);
+            MAG_XX(3AS_SmokeWhite,2);
+            MAG_XX(3AS_SmokeBlue,2);
+            MAG_XX(3AS_SmokeRed,2);
+            MAG_XX(3AS_SmokeYellow,2);
+            MAG_XX(3AS_SmokePurple,1);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(ShieldGrenadePersonal_Mag,1);
+            MAG_XX(ls_mag_classA_thermalDet,3);
+            MAG_XX(ls_mag_classB_thermalDet,3);
+            MAG_XX(ls_mag_classC_thermalDet,3);
         };
     };
 };

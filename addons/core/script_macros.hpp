@@ -68,6 +68,8 @@ scopeCurator = 0
 scopeArsenal = 0; \
 scopeCurator = 0
 
+#define DEPRECATE_CLASS(old,new) class CLASS(old): CLASS(new) { SCOPE_HIDDEN; }
+
 #define DBUG_TEX_RED "#(rgb,8,8,3)color(1,0,0,1)"
 #define DBUG_TEX_GRN "#(rgb,8,8,3)color(0,1,0,1)"
 #define DBUG_TEX_BLU "#(rgb,8,8,3)color(0,0,1,1)"

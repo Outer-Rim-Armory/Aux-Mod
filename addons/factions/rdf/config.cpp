@@ -8,38 +8,49 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
+            QCLASS(armor),
             "sc_equipment"
         };
         units[] = {
-            QCLASS(RDF_Unit_Base),
-            QCLASS(RDF_Unit_Rifleman),
+            QCLASS(rdfArmor_unit_base),
+            QCLASS(rdfArmor_unit_rifleman),
+            QCLASS(rdfArmor_unit_rifleman_DC15C),
+            QCLASS(rdfArmor_unit_grenadier),
+            QCLASS(rdfArmor_unit_autorifleman),
+            QCLASS(rdfArmor_unit_marksman),
+            QCLASS(rdfArmor_unit_riflemanAT),
+            QCLASS(rdfArmor_unit_riflemanAT_disposable),
+            QCLASS(rdfArmor_unit_medic),
+            QCLASS(rdfArmor_unit_swat),
+            QCLASS(rdfArmor_unit_swat_chaingun),
+            QCLASS(RDF_Unit_Rifleman), // Deprecated classes
             QCLASS(RDF_Unit_Rifleman_DC15C),
             QCLASS(RDF_Unit_Grenadier),
             QCLASS(RDF_Unit_Autorifleman),
             QCLASS(RDF_Unit_Marksman),
             QCLASS(RDF_Unit_Rifleman_AT),
             QCLASS(RDF_Unit_Rifleman_AT_Disposable),
+            QCLASS(RDF_Unit_Medic),
             QCLASS(RDF_Unit_SWAT),
             QCLASS(RDF_Unit_SWAT_Chaingun),
-            QCLASS(RDF_Backpack),
-            QCLASS(RDF_Backpack_Predef_Rifleman),
-            QCLASS(RDF_Backpack_Predef_Rifleman_DC15S),
-            QCLASS(RDF_Backpack_Predef_Grenadier),
-            QCLASS(RDF_Backpack_Predef_Autorifleman),
-            QCLASS(RDF_Backpack_Predef_Rifleman_AT),
-            QCLASS(RDF_Backpack_SWAT),
-            QCLASS(RDF_Backpack_SWAT_Predef_Rifleman),
-            QCLASS(RDF_Backpack_SWAT_Predef_Chaingun),
-            QCLASS(RDF_Backpack_Medic),
-            QCLASS(RDF_Backpack_Medic_Predef_Medic),
+            QCLASS(rdfArmor_backpack),
+            QCLASS(rdfArmor_backpack_predef_rifleman),
+            QCLASS(rdfArmor_backpack_predef_grenadier),
+            QCLASS(rdfArmor_backpack_predef_autorifleman),
+            QCLASS(rdfArmor_backpack_predef_riflemanAT),
+            QCLASS(rdfArmor_backpack_medic),
+            QCLASS(rdfArmor_backpack_medic_predef_medic),
+            QCLASS(rdfArmor_backpack_swat),
+            QCLASS(rdfArmor_backpack_swat_predef_rifleman),
+            QCLASS(rdfArmor_backpack_swat_predef_chaingun)
         };
         weapons[] = {
-            QCLASS(RDF_Helmet),
-            QCLASS(RDF_Helmet_Marksman),
-            QCLASS(RDF_Uniform),
-            QCLASS(RDF_Vest),
-            QCLASS(RDF_Vest_Medium),
-            QCLASS(RDF_Vest_Swat)
+            QCLASS(rdfArmor_helmet),
+            QCLASS(rdfArmor_helmet_marksman),
+            QCLASS(rdfArmor_uniform),
+            QCLASS(rdfArmor_vest_light),
+            QCLASS(rdfArmor_vest_medium),
+            QCLASS(rdfArmor_vest_swat)
         };
         VERSION_CONFIG;
 

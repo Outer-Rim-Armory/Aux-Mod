@@ -1,6 +1,6 @@
 class CfgWorlds {
     class GenericNames {
-        class CLASS(RDF_Soldier) {
+        class CLASS(rdfSoldier) {
             class FirstNames {
                 RDF = "RDF";
             };
@@ -8,7 +8,7 @@ class CfgWorlds {
                 Soldier = "Soldier";
             };
         };
-        class CLASS(RDF_Swat): CLASS(RDF_Soldier) {
+        class CLASS(rdfSwat): CLASS(rdfSoldier) {
             class LastNames {
                 SWAT = "SWAT";
             };

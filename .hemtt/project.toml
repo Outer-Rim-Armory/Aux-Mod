@@ -52,6 +52,5 @@ workshop = [
 optionals = ["no_burn_screams"]
 
 [hemtt.launch.previews]
-extends = "full"
 mission = "Previews.VR"
 parameters = ["-name=Previews"]
