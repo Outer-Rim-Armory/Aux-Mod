@@ -17,9 +17,16 @@ class CfgWeapons {
         JLTS_hasEMPProtection = FALSE;
 
         // Enable "buddy reloading"
-        ace_reloadlaunchers_enabled = TRUE;
+        ace_reloadLaunchers_enabled = TRUE;
 
         class FullAuto: FullAuto {
+            minRange = 2;
+            minRangeProbab = 0.3;
+            midRange = 300;
+            midRangeProbab = 0.7;
+            maxRange = 600;
+            maxRangeProbab = 0.05;
+
             class StandardSound {
                 soundSetShot[] = {QCLASS(soundSet_Z8_shot)};
             };
