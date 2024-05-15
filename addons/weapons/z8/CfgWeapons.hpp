@@ -43,7 +43,7 @@ class CfgWeapons {
     class CLASS(Z8): CLASS(Z8_base) {
         SCOPE_PUBLIC;
 
-        displayName = "[KC] Z-8";
+        displayName = "[KC] Z-8 Rotary Chaingun";
         baseWeapon = QCLASS(Z8);
 
         JLTS_friedItem = QCLASS(Z8_fried);
@@ -52,7 +52,7 @@ class CfgWeapons {
     class CLASS(Z8_fried): CLASS(Z8) {
         SCOPE_HIDDEN;
 
-        displayName = "[KC] Z-8 (Fried)";
+        displayName = "[KC] Z-8 Rotary Chaingun (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = QPATHTOF(z8\data\ui\Z8_fried_ca.paa);
 
