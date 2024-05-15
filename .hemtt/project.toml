@@ -11,8 +11,8 @@ git_hash = 0
 include = [
     "mod.cpp",
     "meta.cpp",
-    "logo_kc.png",
-    "logo_kc_ca.paa",
+    "logo_kcKeeli.png",
+    "logo_kcKeeli_ca.paa",
     "LICENSE.md",
     "README.md",
 ]
