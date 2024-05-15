@@ -134,6 +134,7 @@ class XtdGearModels {
                     "Burnt",
                     "Dexus",
                     "Evo",
+                    "Flare",
                     "Grey",
                     "Harry",
                     "Hazard",
@@ -168,6 +169,7 @@ class XtdGearModels {
                 class Burnt { label = "Burnt"; };
                 class Dexus { label = "Dexus"; };
                 class Evo { label = "Evo"; };
+                class Flare { label = "Flare"; };
                 class Grey { label = "Grey"; };
                 class Harry { label = "Harry"; };
                 class Hazard { label = "Hazard"; };

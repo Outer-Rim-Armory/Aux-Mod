@@ -66,6 +66,7 @@ GROUND_HOLDER(Helmet_Phase2_Burnt,"INF P2 Helm ('Burnt')");
 GROUND_HOLDER(Helmet_Phase2_BurntBacta,"INF P2 Helm ('Burnt') [Bacta Visor]");
 GROUND_HOLDER(Helmet_Phase2_Dexus,"INF P2 Helm ('Dexus')");
 GROUND_HOLDER(Helmet_Phase2_DexusBacta,"INF P2 Helm ('Dexus') [Bacta Visor]");
+GROUND_HOLDER(Helmet_Phase2_Flare,"INF P2 Helm ('Flare')");
 GROUND_HOLDER(Helmet_Phase2_Evo,"INF P2 Helm ('Evo')");
 GROUND_HOLDER(Helmet_Phase2_Grey,"INF P2 Helm ('Grey')");
 GROUND_HOLDER(Helmet_Phase2_Harry,"INF P2 Helm ('Harry')");
