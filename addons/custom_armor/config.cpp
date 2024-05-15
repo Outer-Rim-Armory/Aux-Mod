@@ -11,6 +11,7 @@ class CfgPatches {
         };
         units[] = {
             QCLASS(Unit_Axel),
+            QCLASS(Unit_Bailout),
             QCLASS(Unit_Bob),
             QCLASS(Unit_Burnt),
             QCLASS(Unit_Catholic),
@@ -300,6 +301,7 @@ class CfgPatches {
             QCLASS(Helmet_BARC_RatCrimson),
             QCLASS(Helmet_BARC_Weenie),
             QCLASS(Uniform_Axel),
+            QCLASS(Uniform_Bailout),
             QCLASS(Uniform_Bob),
             QCLASS(Uniform_Burnt),
             QCLASS(Uniform_Catholic),

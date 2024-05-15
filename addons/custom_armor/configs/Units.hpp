@@ -19,6 +19,26 @@ class CLASS(Unit_Axel): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Bailout): CLASS(Unit_Phase2_Base) {
+    displayName = "Bailout";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Bailout);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Bailout_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Bailout_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Bailout), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase2_officerVisor), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Bailout), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase2_officerVisor), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Bob): CLASS(Unit_Phase2_Base) {
     displayName = "Bob";
 

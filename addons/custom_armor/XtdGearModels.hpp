@@ -369,6 +369,7 @@ class XtdGearModels {
                 changeInGame = FALSE;
                 values[] = {
                     "Axel",
+                    "Bailout",
                     "Bob",
                     "Burnt",
                     "Catholic",
@@ -390,6 +391,7 @@ class XtdGearModels {
                 };
 
                 class Axel { label = "Axel"; };
+                class Bailout { label = "Bailout"; };
                 class Bob { label = "Bob"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };
