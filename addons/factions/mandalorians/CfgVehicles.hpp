@@ -1,14 +1,14 @@
 class CfgVehicles {
     class CLASS(INDEP_Unit_Base);
-    class FACTION(mandalorian_unit_base): CLASS(INDEP_Unit_Base) {
+    class FACTION(mandalorianArmor_unit_base): CLASS(INDEP_Unit_Base) {
 
     };
 
     class CLASS(backpack_base);
-    class CLASS(mandalorianBackpack_base): CLASS(backpack_base) {
+    class CLASS(mandalorianArmor_backpack_base): CLASS(backpack_base) {
     };
 
-    class CLASS(mandalorianBackpack_jt12): CLASS(mandalorianBackpack_base) {
+    class CLASS(mandalorianArmor_backpack_jt12): CLASS(mandalorianArmor_backpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] Mandalorian JT-12 Jetpack";
 
@@ -34,7 +34,7 @@ class CfgVehicles {
         EGVAR(jetpacks,freefallHeight) = 500;
     };
 
-    class CLASS(mandalorianBackpack_jt12_Dart): CLASS(mandalorianBackpack_jt12) {
+    class CLASS(mandalorianArmor_backpack_jt12_Dart): CLASS(mandalorianArmor_backpack_jt12) {
         displayName = "[KC] Mandalorian JT-12 Jetpack ('Dart')";
 
         hiddenSelectionsTextures[] = {
@@ -50,7 +50,7 @@ class CfgVehicles {
         tf_subtype = "digital_lr";
     };
 
-    class CLASS(mandalorianBackpack_z6): CLASS(mandalorianBackpack_base) {
+    class CLASS(mandalorianArmor_backpack_z6): CLASS(mandalorianArmor_backpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] Mandalorian Z-6 Jetpack";
 

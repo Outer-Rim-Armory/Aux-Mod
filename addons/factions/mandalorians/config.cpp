@@ -10,18 +10,20 @@ class CfgPatches {
             QUOTE(ADDON)
         };
         units[] = {
-            QCLASS(mandalorianBackpack_base),
-            QCLASS(mandalorianBackpack_jt12),
-            QCLASS(mandalorianBackpack_jt12_Dart),
-            QCLASS(mandalorianBackpack_z6)
+            QCLASS(mandalorianArmor_unit_base),
+            QCLASS(mandalorianArmor_backpack_base),
+            QCLASS(mandalorianArmor_backpack_jt12),
+            QCLASS(mandalorianArmor_backpack_jt12_Dart),
+            QCLASS(mandalorianArmor_backpack_z6)
         };
         weapons[] = {
-            QCLASS(mandalorianHelmet_base),
-            QCLASS(mandalorianHelmet_traditional),
-            QCLASS(mandalorianHelmet_traditional_Dart),
-            QCLASS(mandalorianVest_base),
-            QCLASS(mandalorianVest_medium),
-            QCLASS(mandalorianVest_medium_Dart),
+            QCLASS(mandalorianArmor_helmet_base),
+            QCLASS(mandalorianArmor_helmet_traditional),
+            QCLASS(mandalorianArmor_helmet_traditional_Dart),
+            QCLASS(mandalorianArmor_uniform_base),
+            QCLASS(mandalorianArmor_vest_base),
+            QCLASS(mandalorianArmor_vest_medium),
+            QCLASS(mandalorianArmor_vest_medium_Dart),
             QCLASS(mandalorianNvg_base),
             QCLASS(mandalorianNvg_rangefinder),
             QCLASS(mandalorianNvg_rangefinder_Dart)

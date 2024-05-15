@@ -3,11 +3,11 @@ class CfgWeapons {
     class CLASS(helmet_base): H_HelmetO_ViperSP_hex_F {
         class ItemInfo;
     };
-    class CLASS(mandalorianHelmet_base): CLASS(helmet_base) {
+    class CLASS(mandalorianArmor_helmet_base): CLASS(helmet_base) {
         class ItemInfo: ItemInfo {};
     };
 
-    class CLASS(mandalorianHelmet_traditional): CLASS(mandalorianHelmet_base) {
+    class CLASS(mandalorianArmor_helmet_traditional): CLASS(mandalorianArmor_helmet_base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Traditional Mandalorian Helmet";
@@ -26,7 +26,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(mandalorianHelmet_traditional_Dart): CLASS(mandalorianHelmet_traditional) {
+    class CLASS(mandalorianArmor_helmet_traditional_Dart): CLASS(mandalorianArmor_helmet_traditional) {
         displayName = "[KC] Traditional Mandalorian Helmet ('Dart')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(mandalorians\data\helmets\traditional\Dart_camo1_co.paa),
@@ -38,7 +38,7 @@ class CfgWeapons {
     class CLASS(INDEP_Uniform_Base): ls_greenforUniform_base {
         class ItemInfo;
     };
-    class CLASS(mandalorianUniform_base): CLASS(INDEP_Uniform_Base) {
+    class CLASS(mandalorianArmor_uniform_base): CLASS(INDEP_Uniform_Base) {
         SCOPE_PUBLIC;
     };
 
@@ -46,14 +46,14 @@ class CfgWeapons {
     class CLASS(vest_base): V_PlateCarrier1_rgr {
         class ItemInfo;
     };
-    class CLASS(mandalorianVest_base): CLASS(vest_base) {
+    class CLASS(mandalorianArmor_vest_base): CLASS(vest_base) {
         class ItemInfo: ItemInfo {
             mass = 80;
             vestType = "Rebreather";
         };
     };
 
-    class CLASS(mandalorianVest_medium): CLASS(mandalorianVest_base) {
+    class CLASS(mandalorianArmor_vest_medium): CLASS(mandalorianArmor_vest_base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Medium Mandalorian Armor";
@@ -130,7 +130,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(mandalorianVest_medium_Dart): CLASS(mandalorianVest_medium) {
+    class CLASS(mandalorianArmor_vest_medium_Dart): CLASS(mandalorianArmor_vest_medium) {
         displayName = "[KC] Medium Mandalorian Armor ('Dart')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(mandalorians\data\vests\medium\Dart_camo1_co.paa),
