@@ -40,6 +40,7 @@ class CfgPatches {
             QCLASS(cloneBackpack_radioHeavy_Jaws),
             QGROUND_CLASS(Helmet_Phase1_Alvarez),
             QGROUND_CLASS(Helmet_Phase1_Axel),
+            QGROUND_CLASS(Helmet_Phase1_Bailout),
             QGROUND_CLASS(Helmet_Phase1_Bond),
             QGROUND_CLASS(Helmet_Phase1_Burnt),
             QGROUND_CLASS(Helmet_Phase1_BurntBacta),
@@ -170,6 +171,7 @@ class CfgPatches {
         };
         weapons[] = {
             QCLASS(Helmet_Phase1_Alvarez),
+            QCLASS(Helmet_Phase1_Bailout),
             QCLASS(Helmet_Phase1_Axel),
             QCLASS(Helmet_Phase1_Burnt),
             QCLASS(Helmet_Phase1_BurntBacta),

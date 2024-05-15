@@ -12,6 +12,7 @@ class XtdGearModels {
                 values[] = {
                     "Alvarez",
                     "Axel",
+                    "Bailout",
                     "Bond",
                     "Burnt",
                     "Catholic",
@@ -46,6 +47,7 @@ class XtdGearModels {
 
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
+                class Bailout { label = "Bailout"; };
                 class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };
