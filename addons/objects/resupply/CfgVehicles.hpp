@@ -24,6 +24,11 @@ class CfgVehicles {
 
         ace_dragging_ignoreWeight = TRUE;
         ace_dragging_ignoreWeightCarry = TRUE;
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+        class TransportItems {};
+        class TransportBackpacks {};
     };
 
     class CLASS(resupply_squadAmmo): CLASS(resupply_base) {
@@ -32,7 +37,7 @@ class CfgVehicles {
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
-        editorPreview = EDITOR_PREVIEW(Resupply_SquadAmmo);
+        editorPreview = EDITOR_PREVIEW(resupply_squadAmmo);
 
         class TransportMagazines {
             // Primary Ammo
@@ -150,7 +155,7 @@ class CfgVehicles {
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"};
-        editorPreview = EDITOR_PREVIEW(Resupply_SquadMedical);
+        editorPreview = EDITOR_PREVIEW(resupply_squadMedical);
 
         class TransportItems {
             // Bandages
@@ -220,6 +225,7 @@ class CfgVehicles {
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        editorPreview = EDITOR_PREVIEW(resupply_squadAmmo);
 
         class TransportWeapons {
             WEAP_XX(CLASS(RPS6_Loaded),10);
@@ -232,6 +238,7 @@ class CfgVehicles {
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        editorPreview = EDITOR_PREVIEW(resupply_squadAmmo);
 
         class TransportWeapons {
             WEAP_XX(CLASS(Mortar_M190_Carry),6);
@@ -244,6 +251,7 @@ class CfgVehicles {
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        editorPreview = EDITOR_PREVIEW(resupply_squadAmmo);
 
         class TransportWeapons {
             WEAP_XX(CLASS(DC15A),15);
@@ -265,6 +273,36 @@ class CfgVehicles {
             WEAP_XX(CLASS(WestarM5),15);
             WEAP_XX(CLASS(X42),15);
             WEAP_XX(CLASS(Z6),15);
+        };
+    };
+
+    // ! WIP - Spawns with base game scopes, for some reason?
+    class CLASS(resupply_attachments_GAR): CLASS(resupply_base) {
+        displayName = "Weapon Attachments Crate (GAR)";
+
+        class TransportItems {
+            ITEM_XX(Optic_Pistol,15);
+            ITEM_XX(Optic_Pistol2,15);
+            ITEM_XX(Optic_SR_Holosight,15);
+            ITEM_XX(Optic_SR_Holosight2,15);
+            ITEM_XX(Optic_SR_Holosight3,15);
+            ITEM_XX(Optic_MR_Holosight,15);
+            ITEM_XX(Optic_MR_Holosight2,15);
+            ITEM_XX(Optic_MR_Holosight3,15);
+            ITEM_XX(Optic_LR_Holosight,15);
+            ITEM_XX(Optic_LR_Holosight2,15);
+            ITEM_XX(Optic_LR_Holosight3,15);
+            ITEM_XX(Optic_LR_Holosight4,15);
+            ITEM_XX(Optic_Holosight,15);
+            ITEM_XX(Optic_Holosight2,15);
+            ITEM_XX(Optic_Holosight3,15);
+            ITEM_XX(Optic_Holoscope,15);
+            ITEM_XX(Optic_Holoscope2,15);
+            ITEM_XX(Optic_Holoscope3,15);
+            ITEM_XX(Optic_Reflex,15);
+            ITEM_XX(Optic_LRPS,15);
+            ITEM_XX(Optic_DC15X,15);
+            ITEM_XX(Optic_WestarM5,15);
         };
     };
 };
