@@ -373,7 +373,7 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_30Rnd_DC15SA),5);
             MAG_XX(CLASS(Mag_15Rnd_DC15SA),5);
             MAG_XX(CLASS(Mag_7Rnd_DC15SA),5);
-            MAG_XX(Aux501_Weapons_Mags_z1000_drum3000,1);
+            MAG_XX(CLASS(mag_1200rnd_Z8),1);
             MAG_XX(CLASS(Grenade_EMP),5);
             MAG_XX(3AS_SmokeWhite,2);
             MAG_XX(3AS_SmokeBlue,2);
