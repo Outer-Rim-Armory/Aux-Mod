@@ -32,8 +32,10 @@ class CfgPatches {
             QGVAR(sbb3),
             QGVAR(valken38x),
             QGVAR(westar_m5),
+            QGVAR(westar35),
             QGVAR(x42),
-            QGVAR(z6)
+            QGVAR(z6),
+            QGVAR(z8)
         };
         units[] = {};
         weapons[] = {};
