@@ -305,4 +305,24 @@ class CfgVehicles {
             ITEM_XX(Optic_WestarM5,15);
         };
     };
+
+    class CLASS(resupply_spartan): CLASS(resupply_base) {
+        displayName = "Spartan Crate";
+
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        editorPreview = EDITOR_PREVIEW(resupply_squadAmmo);
+
+        class TransportWeapons {
+            WEAP_XX(CLASS(RPS6_Loaded),5);
+        };
+
+        class TransportMagazines {
+            MAG_XX(LFP_AK_Mag,30);
+            MAG_XX(CLASS(Mag_60Rnd_DC17_dualHP),30);
+            MAG_XX(CLASS(Mag_99Rnd_WestarM5),30);
+            MAG_XX(3Rnd_HE_Grenade_shell,20);
+        };
+    };
 };

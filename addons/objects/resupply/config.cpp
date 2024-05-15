@@ -23,7 +23,8 @@ class CfgPatches {
             QCLASS(resupply_disposableLaunchers),
             QCLASS(resupply_mortarLaunchers),
             QCLASS(resupply_weapons_GAR),
-            QCLASS(resupply_attachments_GAR)
+            QCLASS(resupply_attachments_GAR),
+            QCLASS(resupply_spartan)
         };
         weapons[] = {};
         VERSION_CONFIG;
