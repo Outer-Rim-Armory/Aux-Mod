@@ -91,13 +91,11 @@ class XtdGearModels {
                 alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
-                    "Bailout",
                     "Blue",
                     "Evo",
                     "Mischief"
                 };
 
-                class Bailout { label = "Bailout"; };
                 class Blue { label = "Blue"; };
                 class Evo { label = "Evo"; };
                 class Mischief { label = "Mischief"; };
@@ -225,12 +223,10 @@ class XtdGearModels {
                 alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
-                    "Bailout",
                     "Blue",
                     "Mischief"
                 };
 
-                class Bailout { label = "Bailout"; };
                 class Blue { label = "Blue"; };
                 class Mischief { label = "Mischief"; };
             };
