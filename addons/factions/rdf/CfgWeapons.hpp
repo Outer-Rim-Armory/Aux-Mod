@@ -42,6 +42,7 @@ class CfgWeapons {
         SCOPE_PUBLIC;
 
         displayName = "[RDF] Uniform";
+        picture = "\ls_armor_greenfor\uniform\mandalorian\_ui\icon_uniform_undersuit.paa";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(rdfArmor_unit_base);
