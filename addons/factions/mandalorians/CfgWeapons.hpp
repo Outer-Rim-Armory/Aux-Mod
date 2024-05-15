@@ -169,9 +169,7 @@ class CfgWeapons {
     };
 
     class CLASS(mandalorianNvg_rangefinder_Dart): CLASS(mandalorianNvg_rangefinder) {
-        SCOPE_PUBLIC;
         displayName = "[KC] Mandalorian Rangefinder ('Dart')";
-
         hiddenSelectionsTextures[] = {
             QPATHTOF(mandalorians\data\nvgs\rangefinder\Dart_camo1_co.paa)
         };
