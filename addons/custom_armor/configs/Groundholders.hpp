@@ -58,6 +58,7 @@ GROUND_HOLDER(Helmet_Phase1_Tanker_Grey,"ARMR P1 Helm ('Grey')");
 
 GROUND_HOLDER(Helmet_Phase2_Alvarez,"INF P2 Helm ('Alvarez')");
 GROUND_HOLDER(Helmet_Phase2_Axel,"INF P2 Helm ('Axel')");
+GROUND_HOLDER(Helmet_Phase2_Bailout,"INF P2 Helm ('Bailout')");
 GROUND_HOLDER(Helmet_Phase2_Bob,"INF P2 Helm ('Bob')");
 GROUND_HOLDER(Helmet_Phase2_BobKyber,"INF P2 Helm ('Bob') [Kyber Visor]");
 GROUND_HOLDER(Helmet_Phase2_Bond,"INF P2 Helm ('Bond')");

@@ -130,6 +130,7 @@ class XtdGearModels {
                 values[] = {
                     "Alvarez",
                     "Axel",
+                    "Bailout",
                     "Bob",
                     "Bond",
                     "Burnt",
@@ -163,6 +164,7 @@ class XtdGearModels {
 
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
+                class Bailout { label = "Bailout"; };
                 class Bob { label = "Bob"; };
                 class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
