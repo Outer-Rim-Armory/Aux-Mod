@@ -9,19 +9,19 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            QCLASS(weapons_load_order),
+            QEGVAR(weapons,load_order),
             "3AS_Prop_Crates"
         };
         units[] = {
-            QCLASS(Resupply_Base),
-            QCLASS(Resupply_SquadAmmo),
-            QCLASS(Resupply_PlatoonAmmo),
-            QCLASS(Resupply_SquadAmmo_Heavy),
-            QCLASS(Resupply_PlatoonAmmo_Heavy),
-            QCLASS(Resupply_SquadMedical),
-            QCLASS(Resupply_PlatoonMedical),
-            QCLASS(Resupply_DisposableLaunchers),
-            QCLASS(Resupply_MortarLaunchers)
+            QCLASS(resupply_base),
+            QCLASS(resupply_squadAmmo),
+            QCLASS(resupply_platoonAmmo),
+            QCLASS(resupply_squadAmmo_Heavy),
+            QCLASS(resupply_platoonAmmo_Heavy),
+            QCLASS(resupply_squadMedical),
+            QCLASS(resupply_platoonMedical),
+            QCLASS(resupply_disposableLaunchers),
+            QCLASS(resupply_mortarLaunchers)
         };
         weapons[] = {};
         VERSION_CONFIG;

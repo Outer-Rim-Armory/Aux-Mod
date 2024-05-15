@@ -3,7 +3,7 @@ class CfgVehicles {
     class 3AS_Supply_Large_Prop: ReammoBox_F {
         class EventHandlers;
     };
-    class CLASS(Resupply_Base): 3AS_Supply_Large_Prop {
+    class CLASS(resupply_base): 3AS_Supply_Large_Prop {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -11,7 +11,7 @@ class CfgVehicles {
 
         editorCategory = QEDCAT(Objects);
         editorSubcategory = QEDSUBCAT(Resupply);
-        editorPreview = EDITOR_PREVIEW(Resupply_Base);
+        editorPreview = EDITOR_PREVIEW(resupply_base);
 
         ace_cargo_size = 1;
         ace_cargo_noRename = TRUE;
@@ -26,7 +26,7 @@ class CfgVehicles {
         ace_dragging_ignoreWeightCarry = TRUE;
     };
 
-    class CLASS(Resupply_SquadAmmo): CLASS(Resupply_Base) {
+    class CLASS(resupply_squadAmmo): CLASS(resupply_base) {
         displayName = "Ammo Crate (Squad)";
 
         hiddenSelections[] = {"camo1"};
@@ -71,7 +71,7 @@ class CfgVehicles {
             MAG_XX(ls_mag_classC_thermalDet,8);
         };
     };
-    class CLASS(Resupply_PlatoonAmmo): CLASS(Resupply_SquadAmmo) {
+    class CLASS(resupply_platoonAmmo): CLASS(resupply_squadAmmo) {
         displayName = "Ammo Crate (Platoon)";
         ace_cargo_size = 2;
 
@@ -117,7 +117,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Resupply_SquadAmmo_Heavy): CLASS(Resupply_SquadAmmo) {
+    class CLASS(resupply_squadAmmo_heavy): CLASS(resupply_squadAmmo) {
         displayName = "Heavy Ammo Crate (Squad)";
         class TransportMagazines {
             MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),20);
@@ -129,8 +129,11 @@ class CfgVehicles {
             MAG_XX(3AS_JLTS_MK44_HE,1);
         };
     };
-    class CLASS(Resupply_PlatoonAmmo_Heavy): CLASS(Resupply_SquadAmmo_Heavy) {
+    class CLASS(resupply_PlatoonAmmo_Heavy): CLASS(resupply_platoonAmmo) {
         displayName = "Heavy Ammo Crate (Platoon)";
+
+        class TransportWeapons {};
+
         class TransportMagazines {
             MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),120);
             MAG_XX(CLASS(Mag_30Rnd_HI12),120);
@@ -142,7 +145,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Resupply_SquadMedical): CLASS(Resupply_Base) {
+    class CLASS(resupply_squadMedical): CLASS(resupply_base) {
         displayName = "Medical Crate (Squad)";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
@@ -178,7 +181,7 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_1Rnd_GR20),2);
         };
     };
-    class CLASS(Resupply_PlatoonMedical): CLASS(Resupply_SquadMedical) {
+    class CLASS(resupply_platoonMedical): CLASS(resupply_squadMedical) {
         displayName = "Medical Crate (Platoon)";
         ace_cargo_size = 2;
 
@@ -211,7 +214,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Resupply_DisposableLaunchers): CLASS(Resupply_Base) {
+    class CLASS(resupply_disposableLaunchers): CLASS(resupply_base) {
         displayName = "RPS-6 Launcher Crate";
 
         hiddenSelections[] = {"camo1"};
@@ -223,7 +226,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Resupply_MortarLaunchers): CLASS(Resupply_Base) {
+    class CLASS(resupply_mortarLaunchers): CLASS(resupply_base) {
         displayName = "M-190 Mortar Crate";
 
         hiddenSelections[] = {"camo1"};
@@ -235,7 +238,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Resupply_Weapons_GAR): CLASS(Resupply_Base) {
+    class CLASS(resupply_weapons_GAR): CLASS(resupply_base) {
         displayName = "Weapons Crate (GAR)";
 
         hiddenSelections[] = {"camo1"};
