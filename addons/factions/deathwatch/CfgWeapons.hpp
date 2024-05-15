@@ -1,6 +1,6 @@
 class CfgWeapons {
-    class CLASS(mandalorianHelmet_traditional);
-    class CLASS(mandalorianHelmet_deathwatch): CLASS(mandalorianHelmet_traditional) {
+    class CLASS(mandalorianArmor_helmet_traditional);
+    class CLASS(mandalorianArmor_helmet_deathwatch): CLASS(mandalorianHelmet_traditional) {
         SCOPE_PUBLIC;
         displayName = "[DW] Deathwatch Soldier Helmet";
         hiddenSelectionsTextures[] = {
@@ -9,7 +9,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(mandalorianHelmet_deathwatch_PreVizsla): CLASS(mandalorianHelmet_traditional) {
+    class CLASS(mandalorianArmor_helmet_deathwatch_PreVizsla): CLASS(mandalorianHelmet_traditional) {
         displayName = "[KC] Deathwatch Soldier Helmet ('Pre Vizsla')";
         // hiddenSelectionsTextures[] = {
         //     QPATHTOF(deathwatch\data\helmets\traditional\PreVizsla_camo1_co.paa),

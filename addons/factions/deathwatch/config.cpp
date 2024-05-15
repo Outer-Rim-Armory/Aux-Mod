@@ -11,12 +11,12 @@ class CfgPatches {
             QGVAR(mandalorians)
         };
         units[] = {
-            QCLASS(mandalorianBackpack_deathwatch_jt12),
-            QCLASS(mandalorianBackpack_deathwatch_z6)
+            QCLASS(mandalorianArmor_backpack_deathwatch_jt12),
+            QCLASS(mandalorianArmor_backpack_deathwatch_z6)
         };
         weapons[] = {
-            QCLASS(mandalorianHelmet_deathwatch),
-            QCLASS(mandalorianHelmet_deathwatch_PreVizsla)
+            QCLASS(mandalorianArmor_helmet_deathwatch),
+            QCLASS(mandalorianArmor_helmet_deathwatch_PreVizsla)
         };
         VERSION_CONFIG;
     };
