@@ -7,6 +7,8 @@ PREP(getFuel);
 PREP(getFuelCan);
 PREP(getOutMan);
 PREP(hasJetpack);
+PREP(jetpackPFH);
+PREP(jetpackStart);
 PREP(modifyInteraction);
 PREP(playErrorSound);
 PREP(setFuel);
