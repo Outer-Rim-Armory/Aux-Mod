@@ -57,4 +57,6 @@ _arguments = [ace_player, _jetpack, _strength, _speed, _freefallHeight];
 [QGVAR(jetpackFired), _arguments] call CBA_fnc_globalEvent;
 _arguments call FUNC(jetpackPFH);
 
+[ace_player, _jetpack] call FUNC(soundPFH);
+
 nil;

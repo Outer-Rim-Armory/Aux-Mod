@@ -13,5 +13,6 @@ PREP(jetpackStart);
 PREP(modifyInteraction);
 PREP(playErrorSound);
 PREP(setFuel);
+PREP(soundPFH);
 PREP(toggleFuelDisplay);
 PREP(updateFuelDisplay);
