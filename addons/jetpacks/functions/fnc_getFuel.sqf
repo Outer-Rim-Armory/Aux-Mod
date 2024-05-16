@@ -27,7 +27,7 @@ TRACE_2("fnc_getFuel",_unit,_returnPercent);
 if (isNull _unit or {!(_unit call FUNC(hasJetpack))}) exitWith {-1};
 
 private _jetpack = backpackContainer _unit;
-private _maxFuel = _jetpack getVariable [QGVAR(maxFuel), JETPACK_FUEL_DEFAULT];
+private _maxFuel = _jetpack getVariable [QGVAR(maxFuel), getNumber (configOf _jetpack >> QGVAR(fuel))];
 private _fuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];
 
 _jetpack setVariable [QGVAR(fuel), _fuel, true];
