@@ -35,7 +35,7 @@ class Extended_GetOutMan_EventHandlers {
 class Extended_Killed_EventHandlers {
     class CAManBase {
         class GVAR(clearEffects) {
-            killed = QUOTE(_this call FUNC(clearEffects));
+            killed = QUOTE(_this call FUNC(clearEffectsLocal));
         };
     };
 };
@@ -43,7 +43,7 @@ class Extended_Killed_EventHandlers {
 class Extended_Deleted_EventHandlers {
     class CAManBase {
         class GVAR(clearEffects) {
-            deleted = QUOTE(_this call FUNC(clearEffects));
+            deleted = QUOTE(_this call FUNC(clearEffectsLocal));
         };
     };
 };

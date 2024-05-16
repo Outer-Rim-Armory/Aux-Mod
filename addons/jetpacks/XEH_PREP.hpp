@@ -3,6 +3,7 @@ PREP(canJetpack);
 PREP(canRefuelFromBody);
 PREP(canRefuelPlayer);
 PREP(clearEffects);
+PREP(clearEffectsLocal);
 PREP(createEffects);
 PREP(fuelPFH);
 PREP(getFuel);

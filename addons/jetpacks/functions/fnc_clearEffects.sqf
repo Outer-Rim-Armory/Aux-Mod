@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Deletes jetpack effects from a unit.
+ * Deletes jetpack effects from a unit on all clients.
  *
  * Arguments:
  * 0: Unit <OBJECT>
@@ -16,14 +16,7 @@
  */
 
 params ["_unit"];
+TRACE_1("fnc_clearEffects",_unit);
 
-private _effects = _unit getVariable [QGVAR(effects), []];
-private _numEffects = count _effects;
-TRACE_3("fnc_clearEffects",_unit,_effects,_numEffects);
-
-{deleteVehicle _x;} forEach _effects;
-
-_unit setVariable [QGVAR(effects), nil];
-GVAR(totalParticles) = (GVAR(totalParticles) - _numEffects) max 0;
-
+[QGVAR(clearEffects), [_unit]] call CBA_fnc_globalEvent;
 nil;
