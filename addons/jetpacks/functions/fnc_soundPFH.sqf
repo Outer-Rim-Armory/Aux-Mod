@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [ace_player, backpackContainer ace_player] call BNA_KC_Jetpacks_fnc_soundPFH;
+ * [ace_player, backpackContainer ace_player] call BNA_KC_jetpacks_fnc_soundPFH;
  *
  * Public: No
  */

@@ -20,7 +20,7 @@ class CfgVehicles {
 
                     condition = QUOTE(call FUNC(canRefuelFromBody));
                     statement = QUOTE(call FUNC(refuelFromObject));
-                    modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
+                    modifierFunction = QUOTE(call FUNC(modifyInteraction));
                 };
 
                 class GVAR(refuelPlayer) {

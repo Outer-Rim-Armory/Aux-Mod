@@ -57,7 +57,7 @@ if (_canClass isNotEqualTo "") exitWith {
 if !(_ignoreEmpty) then {
     {
         _isCan = getNumber (configFile >> "CfgWeapons" >> _x >> QGVAR(isFuelCan));
-        if (_isCan isEqualTo 1) exitWith {
+        if (_isCan isEqualTo TRUE) exitWith {
             _canClass = _x;
         };
     } forEach items _unit;

@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * [ace_player, backpackContainer ace_player, 5, 5, -1] call BNA_KC_Jetpacks_fnc_jetpackPFH;
+ * [ace_player, backpackContainer ace_player, 5, 5, -1] call BNA_KC_jetpacks_fnc_jetpackPFH;
  *
  * Public: No
  */

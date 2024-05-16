@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [] call BNA_KC_Jetpacks_fnc_jetpackStart;
+ * [] call BNA_KC_jetpacks_fnc_jetpackStart;
  *
  * Public: No
  */
