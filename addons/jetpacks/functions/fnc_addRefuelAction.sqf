@@ -12,7 +12,7 @@
  * None
  *
  * Examples:
- * cursorObject call FUNC(addRefuelAction);
+ * cursorObject call BNA_KC_jetpacks_fnc_addRefuelAction;
  */
 
 params [

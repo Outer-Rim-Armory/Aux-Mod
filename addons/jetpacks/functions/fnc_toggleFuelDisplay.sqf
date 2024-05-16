@@ -10,7 +10,7 @@
  * True if the display was shown, false otherwise <BOOL>
  *
  * Example:
- * call FUNC(toggleFuelDisplay);
+ * call BNA_KC_jetpacks_fnc_toggleFuelDisplay;
  */
 
 private ["_fnc_isNotCrew", "_display"];

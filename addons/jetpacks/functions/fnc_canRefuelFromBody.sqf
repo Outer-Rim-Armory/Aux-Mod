@@ -11,7 +11,7 @@
  * True if unit can fill a fuel tank, otherwise false <BOOL>
  *
  * Example:
- * [_unit, ace_player] call FUNC(canRefuelFromBody);
+ * [_unit, ace_player] call BNA_KC_jetpacks_fnc_canRefuelFromBody;
  *
  * Public: Yes
  */

@@ -11,7 +11,7 @@
  * True if unit can refill _target, otherwise false <BOOL>
  *
  * Examples:
- * [cursorObject, player] call FUNC(canRefuelPlayer);
+ * [cursorObject, player] call BNA_KC_jetpacks_fnc_canRefuelPlayer;
  */
 
 params [

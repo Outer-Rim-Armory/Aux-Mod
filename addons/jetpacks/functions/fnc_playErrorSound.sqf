@@ -10,7 +10,7 @@
  * True if a sound was played, otherwise false
  *
  * Example:
- * player call FUNC(playErrorSound);
+ * player call BNA_KC_jetpacks_fnc_playErrorSound;
  */
 
 params ["_unit"];

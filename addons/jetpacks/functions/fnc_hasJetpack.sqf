@@ -10,7 +10,7 @@
  * True if the unit has a jetpack, otherwise false <BOOL>
  *
  * Example:
- * ace_player call FUNC(hasJetpack);
+ * ace_player call BNA_KC_jetpacks_fnc_hasJetpack;
  */
 
 params ["_unit"];

@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [QGVAR(fuelChanged), LINKFUNC(updateFuelDisplay)] call CBA_fnc_addEventHandler;
+ * ["BNA_KC_jetpacks_fuelChanged", BNA_KC_jetpacks_fnc_updateFuelDisplay] call CBA_fnc_addEventHandler;
  */
 
 params ["_unit"];

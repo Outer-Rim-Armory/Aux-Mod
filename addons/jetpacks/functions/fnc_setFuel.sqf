@@ -11,7 +11,7 @@
  * None
  *
  * Examples:
- * [ace_player, 100] call FUNC(setFuel);
+ * [ace_player, 100] call BNA_KC_jetpacks_fnc_setFuel;
  *
  * Public: Yes
  */

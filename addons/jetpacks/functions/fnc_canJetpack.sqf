@@ -10,7 +10,7 @@
  * True if unit can use a jetpack, otherwise false <BOOL>
  *
  * Example:
- * ace_player call FUNC(canJetpack);
+ * ace_player call BNA_KC_jetpacks_fnc_canJetpack;
  *
  * Public: Yes
  */

@@ -12,7 +12,7 @@
  * The fuel can in format [class name, fuel level] <ARRAY>
  *
  * Examples:
- * player call FUNC(getFuelCan);
+ * player call BNA_KC_jetpacks_fnc_getFuelCan;
  */
 
 
