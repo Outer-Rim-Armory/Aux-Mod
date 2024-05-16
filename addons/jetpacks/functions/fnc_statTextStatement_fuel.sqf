@@ -18,5 +18,5 @@
 
 params ["_stats", "_config"];
 
-private _fuel = getNumber (_config >> (_stats#0));
-format ["%1", _fuel]; // Not 100% sure on how to make this a realistic value, gallons? liters?
+private _fuel = getNumber (_config >> (_stats#0)) / 10;
+format ["%1 L", _fuel];
