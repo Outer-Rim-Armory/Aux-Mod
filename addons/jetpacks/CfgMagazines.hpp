@@ -14,6 +14,7 @@ class CfgMagazines {
         GVAR(fuelCanItem) = QGVAR(fuelCan_empty);
 
         ACE_isTool = TRUE;
+        ACE_asItem = TRUE; // treat this magazine like an item
 
         picture = QPATHTOF(data\ui\FuelCan_ca.paa);
         model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
