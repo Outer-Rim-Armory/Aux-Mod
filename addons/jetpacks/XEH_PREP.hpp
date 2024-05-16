@@ -4,6 +4,7 @@ PREP(canRefuelFromBody);
 PREP(canRefuelPlayer);
 PREP(clearEffects);
 PREP(createEffects);
+PREP(fuelPFH);
 PREP(getFuel);
 PREP(getFuelCan);
 PREP(getOutMan);

@@ -58,5 +58,6 @@ _arguments = [ace_player, _jetpack, _strength, _speed, _freefallHeight];
 _arguments call FUNC(jetpackPFH);
 
 [ace_player, _jetpack] call FUNC(soundPFH);
+[ace_player, _jetpack] call FUNC(fuelPFH);
 
 nil;
