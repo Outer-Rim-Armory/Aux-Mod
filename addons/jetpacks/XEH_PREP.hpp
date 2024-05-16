@@ -15,5 +15,8 @@ PREP(modifyInteraction);
 PREP(playErrorSound);
 PREP(setFuel);
 PREP(soundPFH);
+PREP(statTextStatement_fuel);
+PREP(statTextStatement_speed);
+PREP(statTextStatement_strength);
 PREP(toggleFuelDisplay);
 PREP(updateFuelDisplay);

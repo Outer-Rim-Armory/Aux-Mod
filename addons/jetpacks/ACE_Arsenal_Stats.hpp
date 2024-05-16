@@ -1,13 +1,13 @@
 class ACE_Arsenal_Stats {
-    class GVAR(strength) {
+    class statBase;
+    class GVAR(strength): statBase {
         scope = 2;
         displayName = "Jetpack Strength";
-        priority = 0;
         stats[] = {QGVAR(strength)};
         showBar = TRUE;
         showText = TRUE;
-        barStatement = QUOTE(getNumber (_this#1 >> QQGVAR(strength)) / JETPACK_STRENGTH_DEFAULT);
-        textStatement = QUOTE(getNumber (_this#1 >> QQGVAR(strength)));
+        barStatement = QUOTE(STAT_BAR_STATEMENT(0,20));
+        textStatement = QUOTE(call FUNC(statTextStatement_strength));
         condition = QUOTE(getNumber (_this#1 >> QQGVAR(isJetpack)) >= 1);
         tabs[] = {{ARSENAL_TAB_BACKPACKS}, {}};
     };
@@ -15,14 +15,14 @@ class ACE_Arsenal_Stats {
     class GVAR(speed): GVAR(strength) {
         displayName = "Jetpack Speed";
         stats[] = {QGVAR(speed)};
-        barStatement = QUOTE(getNumber (_this#1 >> QQGVAR(speed)) / JETPACK_SPEED_DEFAULT);
-        textStatement = QUOTE(getNumber (_this#1 >> QQGVAR(speed)));
+        barStatement = QUOTE(STAT_BAR_STATEMENT(1,3));
+        textStatement = QUOTE(call FUNC(statTextStatement_speed));
     };
 
     class GVAR(fuel): GVAR(strength) {
         displayName = "Jetpack Fuel Capacity";
         stats[] = {QGVAR(fuel)};
-        barStatement = QUOTE(getNumber (_this#1 >> QQGVAR(fuel)) / JETPACK_FUEL_DEFAULT);
-        textStatement = QUOTE(getNumber (_this#1 >> QQGVAR(fuel)));
+        barStatement = QUOTE(STAT_BAR_STATEMENT(100,300));
+        textStatement = QUOTE(call FUNC(statTextStatement_fuel));
     };
 };

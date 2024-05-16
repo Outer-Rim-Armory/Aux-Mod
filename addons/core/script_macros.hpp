@@ -229,3 +229,6 @@ ace_hearing_protection = 0.85
 #define ARSENAL_TAB_GRENADES 5
 #define ARSENAL_TAB_EXPLOSIVES 6
 #define ARSENAL_TAB_MISC 7
+
+// Default bar statement for ACE Arsenal Stats
+#define STAT_BAR_STATEMENT(min,max) [ARR_3((_this select 0) select 0,_this select 1,[ARR_3([ARR_2(min,max)],[ARR_2(0.01,1)],false)])] call ace_arsenal_fnc_statBarStatement_default
