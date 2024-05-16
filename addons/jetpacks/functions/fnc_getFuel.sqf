@@ -7,12 +7,13 @@
  * Arguments:
  * 0: Unit to check <OBJECT>
  * 1: Return value as percentage (optional, default: false) <BOOL>
+ *    - Scale from 0..1
  *
  * Return Value:
  * Remaining fuel <NUMBER>
  *
  * Example:
- * [ace_player, true] call FUNC(getFuel);
+ * [ace_player, true] call BNA_KC_jetpacks_fnc_getFuel;
  *
  * Public: Yes
  */
@@ -24,10 +25,9 @@ params [
 private ["_jetpack", "_maxFuel", "_fuel"];
 TRACE_2("fnc_getFuel",_unit,_returnPercent);
 
-_jetpack = backpackContainer _unit;
-
 if (isNull _unit or {!(_unit call FUNC(hasJetpack))}) exitWith {-1};
 
+_jetpack = backpackContainer _unit;
 _maxFuel = _jetpack getVariable [QGVAR(maxFuel), JETPACK_FUEL_DEFAULT];
 _fuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];
 

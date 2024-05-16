@@ -10,22 +10,19 @@
  * None
  *
  * Example:
- * ace_player call FUNC(clearEffects);
+ * ace_player call BNA_KC_jetpacks_clearEffects;
  */
 
 params ["_unit"];
 private ["_effects", "_totalEffects"];
 
-_effects = _unit getVariable [QGVAR(effectSources), []];
+_effects = _unit getVariable [QGVAR(effects), []];
 _numEffects = count _effects;
 TRACE_3("fnc_clearEffects",_unit,_effects,_numEffects);
 
 {deleteVehicle _x;} forEach _effects;
 
-_unit setVariable [QGVAR(effectSources), nil, true];
-
-_totalEffects = missionNamespace getVariable [QGVAR(totalEffects), _numEffects];
-_totalEffects = _totalEffects - _numEffects;
-missionNamespace setVariable [QGVAR(totalEffects), _totalEffects, true];
+_unit setVariable [QGVAR(effects), nil];
+GVAR(totalParticles) = (GVAR(totalParticles) - _numEffects) max 0;
 
 nil;
