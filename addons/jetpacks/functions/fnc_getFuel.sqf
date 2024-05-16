@@ -22,14 +22,13 @@ params [
     ["_unit", objNull, [objNull]],
     ["_returnPercent", false, [false]]
 ];
-private ["_jetpack", "_maxFuel", "_fuel"];
 TRACE_2("fnc_getFuel",_unit,_returnPercent);
 
 if (isNull _unit or {!(_unit call FUNC(hasJetpack))}) exitWith {-1};
 
-_jetpack = backpackContainer _unit;
-_maxFuel = _jetpack getVariable [QGVAR(maxFuel), JETPACK_FUEL_DEFAULT];
-_fuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];
+private _jetpack = backpackContainer _unit;
+private _maxFuel = _jetpack getVariable [QGVAR(maxFuel), JETPACK_FUEL_DEFAULT];
+private _fuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];
 
 _jetpack setVariable [QGVAR(fuel), _fuel, true];
 _jetpack setVariable [QGVAR(maxFuel), _maxFuel, true];

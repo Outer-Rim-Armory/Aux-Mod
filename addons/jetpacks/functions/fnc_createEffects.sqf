@@ -21,7 +21,6 @@
 #define WEAPON_OFFSET [-0.12, 0, 0.1]
 
 params ["_unit", "_jetpack"];
-private ["_effectPoints", "_effectTypes", "_totalNewEffects"];
 TRACE_1("fnc_createEffects",_unit);
 
 GVAR(totalParticles) = missionNamespace getVariable [QGVAR(totalParticles), 0];
@@ -31,11 +30,11 @@ if (!hasInterface or
     {_unit getVariable [QGVAR(effects), []] isNotEqualTo []}
 ) exitWith {[]};
 
-_effectPoints = getArray (configOf _jetpack >> QGVAR(effectPoints));
-_effectTypes = getArray (configOf _jetpack >> QGVAR(effects));
+private _effectPoints = getArray (configOf _jetpack >> QGVAR(effectPoints));
+private _effectTypes = getArray (configOf _jetpack >> QGVAR(effects));
 
 // One of each effect type is created for each effect point, plus one for light effect
-_totalNewEffects = (count _effectTypes) * (count _effectPoints) + 1;
+private _totalNewEffects = (count _effectTypes) * (count _effectPoints) + 1;
 
 if (GVAR(totalParticles) + _totalNewEffects > GVAR(particleLimit)) exitWith {
     TRACE_3("Too many particles to spawn effects.",GVAR(totalParticles),_totalNewEffects,GVAR(particleLimit));
@@ -45,10 +44,8 @@ GVAR(totalParticles) = GVAR(totalParticles) + _totalNewEffects;
 
 [{
     params ["_unit", "_jetpack", "_effectPoints", "_effectTypes"];
-    private ["_effectSources"];
 
-    // Ideally not needed, but better to make sure no effects get "lost"
-    _effectSources = [];
+    private _effectSources = [];
 
     {
         private ["_position", "_effectClasses", "_lightColor", "_lightSource"];
@@ -67,12 +64,12 @@ GVAR(totalParticles) = GVAR(totalParticles) + _totalNewEffects;
             _effectSources pushBack _effect;
         } forEach _effectTypes;
 
-        _lightColor = getArray (configOf _jetpack >> QGVAR(lightColor));
+        private _lightColor = getArray (configOf _jetpack >> QGVAR(lightColor));
         if (_lightColor isEqualTo []) then {
             _lightColor = [0, 0, 0];
         };
 
-        _lightSource = "#lightPoint" createVehicleLocal [0, 0, 0];
+        private _lightSource = "#lightPoint" createVehicleLocal [0, 0, 0];
         _lightSource setLightColor _lightColor;
         _lightSource setLightBrightness 0.5;
         _lightSource attachTo [_unit, [0, -0.4, 0], "aimPoint"];

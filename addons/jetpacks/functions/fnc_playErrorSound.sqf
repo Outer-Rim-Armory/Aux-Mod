@@ -7,17 +7,18 @@
  * 0: The unit to play the sound effect on <OBJECT>
  *
  * Return Value:
- * True if a sound was played, otherwise false
+ * True if a sound was played, otherwise false <BOOL>
  *
  * Example:
  * player call BNA_KC_jetpacks_fnc_playErrorSound;
  */
 
+#define ERROR_SOUND_COOLDOWN 5
+
 params ["_unit"];
-private ["_lastErrorSound"];
 TRACE_1("fnc_playErrorSound",_unit);
 
-_lastErrorSound = _unit getVariable [QGVAR(lastErrorSound), -ERROR_SOUND_COOLDOWN];
+private _lastErrorSound = _unit getVariable [QGVAR(lastErrorSound), -ERROR_SOUND_COOLDOWN];
 
 if (isNull (objectParent _unit) and
     {(CBA_missionTime - _lastErrorSound) >= ERROR_SOUND_COOLDOWN} and

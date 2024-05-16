@@ -19,10 +19,9 @@
 params [
     ["_unit", objNull, [objNull]]
 ];
-private ["_jetpack"];
 TRACE_1("fnc_canJetpack",_unit);
 
-_jetpack = backpackContainer _unit;
+private _jetpack = backpackContainer _unit;
 
 if (_unit call ace_common_fnc_isAwake and
     {isNull objectParent _unit} and

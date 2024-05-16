@@ -23,12 +23,11 @@
 #define SAFE_FALL_SPEED -5
 
 params ["_unit", "_jetpack", "_strength", "_speed", "_freefallHeight"];
-private ["_function", "_condition", "_exitCode"];
 TRACE_5("fnc_jetpackPFH",_unit,_jetpack,_strength,_speed,_freefallHeight);
 
 if (_unit isNotEqualTo ace_player) exitWith {};
 
-_function = {
+private _function = {
     params ["_handle", "_unit", "_jetpack", "_strength", "_speed", "_freefallHeight"];
     TRACE_6("Jetpack PFH",_handle,_unit,_jetpack,_strength,_speed,_freefallHeight);
 
@@ -109,12 +108,12 @@ _function = {
     _unit setVelocity _velocity;
 };
 
-_condition = {
+private _condition = {
     params ["", "_unit"];
     _unit getVariable [QGVAR(usingJetpack), false];
 };
 
-_exitCode = {
+private _exitCode = {
     params ["", "_unit", "_jetpack", "_strength", "_speed", "_freefallHeight"];
     TRACE_5("Stopped jetpack",_unit,_jetpack,_strength,_speed,_freefallHeight);
     _unit setUnitFreefallHeight -1;

@@ -13,12 +13,11 @@
  * call BNA_KC_jetpacks_fnc_toggleFuelDisplay;
  */
 
-private ["_fnc_isNotCrew", "_display"];
 TRACE_1("fnc_toggleFuelDisplay",ace_player);
 
 // Returns true when unit is either not in a vehicle,
 // or is specifically a passenger in a vehicle
-_fnc_isNotCrew = {
+private _fnc_isNotCrew = {
     params ["_unit"];
     private ["_passengers"];
 
@@ -38,7 +37,7 @@ if !(alive ace_player and
     false;
 };
 
-_display = uiNamespace getVariable [QGVAR(RscFuelDisplay), displayNull];
+private _display = uiNamespace getVariable [QGVAR(RscFuelDisplay), displayNull];
 if (isNull _display) then {
     (QGVAR(RscFuelDisplay_Layer) call BIS_fnc_RscLayer) cutRsc [
         QGVAR(RscFuelDisplay),

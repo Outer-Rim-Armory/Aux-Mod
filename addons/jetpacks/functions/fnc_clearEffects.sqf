@@ -14,10 +14,9 @@
  */
 
 params ["_unit"];
-private ["_effects", "_totalEffects"];
 
-_effects = _unit getVariable [QGVAR(effects), []];
-_numEffects = count _effects;
+private _effects = _unit getVariable [QGVAR(effects), []];
+private _numEffects = count _effects;
 TRACE_3("fnc_clearEffects",_unit,_effects,_numEffects);
 
 {deleteVehicle _x;} forEach _effects;

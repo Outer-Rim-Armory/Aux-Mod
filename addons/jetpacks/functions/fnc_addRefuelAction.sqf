@@ -19,12 +19,11 @@ params [
     ["_object", objNull, [objNull]],
     ["_showAction", TRUE, [TRUE]]
 ];
-private ["_action"];
 TRACE_2("fnc_addRefuelAction",_object,_showAction);
 
 if (_showAction != TRUE) exitWith {};
 
-_action = [QGVAR(refuel), "Refuel Jetpack", "\z\ace\addons\refuel\ui\icon_refuel_interact.paa", {
+private _action = [QGVAR(refuel), "Refuel Jetpack", "\z\ace\addons\refuel\ui\icon_refuel_interact.paa", {
     params ["_target", "_player", "_params"];
     private ["_jetpack", "_maxFuel"];
     playSound3D ["\a3\missions_f_oldman\data\sound\refueling\refueling_start.wss", _player];

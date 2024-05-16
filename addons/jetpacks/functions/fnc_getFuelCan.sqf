@@ -21,20 +21,18 @@ params [
     ["_ignoreFull", false, [false]],
     ["_ignoreEmpty", false, [false]]
 ];
-private ["_canClass", "_fuelLevel"];
 TRACE_3("fnc_getFuelCan",_unit,_ignoreFull,_ignoreEmpty);
 
-_canClass = "";
-_fuelLevel = 0;
+private _canClass = "";
+private _fuelLevel = 0;
 
 // Find partial cans
 {
     _x params ["_magazine", "_ammoCount"];
-    private ["_isCan", "_maxFuel"];
 
-    _isCan = getNumber (configFile >> "CfgMagazines" >> _magazine >> QGVAR(isFuelCan));
+    private _isCan = getNumber (configFile >> "CfgMagazines" >> _magazine >> QGVAR(isFuelCan));
     if (_ignoreFull) then {
-        _maxFuel = [
+        private _maxFuel = [
             configFile >> "CfgMagazines" >> _magazine,
             "count",
             _ammoCount

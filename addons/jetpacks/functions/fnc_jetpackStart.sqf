@@ -20,7 +20,6 @@
 params [
     ["_boost", false, [false]]
 ];
-private ["_jetpack", "_strength", "_speed", "_freefallHeight", "_velocity", "_positionASL", "_arguments"];
 TRACE_1("fnc_jetpackStart",_boost);
 
 if (ace_player getVariable [QGVAR(usingJetpack), false] or
@@ -30,17 +29,17 @@ if !(ace_player call FUNC(canJetpack)) exitWith {
     ace_player call FUNC(playErrorSound);
 };
 
-_jetpack = backpackContainer ace_player;
-_strength = getNumber (configOf _jetpack >> QGVAR(strength));
-_speed = getNumber (configOf _jetpack >> QGVAR(speed));
-_freefallHeight = getNumber (configOf _jetpack >> QGVAR(freefallHeight));
+private _jetpack = backpackContainer ace_player;
+private _strength = getNumber (configOf _jetpack >> QGVAR(strength));
+private _speed = getNumber (configOf _jetpack >> QGVAR(speed));
+private _freefallHeight = getNumber (configOf _jetpack >> QGVAR(freefallHeight));
 
 if (_freefallHeight > 0) then {
     ace_player setUnitFreefallHeight _freefallHeight;
 };
 
-_velocity = velocity ace_player;
-_positionASL = getPosASL ace_player;
+private _velocity = velocity ace_player;
+private _positionASL = getPosASL ace_player;
 
 if (_boost and {isTouchingGround ace_player}) then {
     // Teleport is needed so player will actually move upwards
@@ -53,7 +52,7 @@ if (_boost and {isTouchingGround ace_player}) then {
 };
 
 ace_player setVariable [QGVAR(usingJetpack), true, true];
-_arguments = [ace_player, _jetpack, _strength, _speed, _freefallHeight];
+private _arguments = [ace_player, _jetpack, _strength, _speed, _freefallHeight];
 [QGVAR(jetpackFired), _arguments] call CBA_fnc_globalEvent;
 _arguments call FUNC(jetpackPFH);
 
