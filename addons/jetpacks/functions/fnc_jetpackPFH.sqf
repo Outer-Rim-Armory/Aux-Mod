@@ -30,7 +30,6 @@ if (_unit isNotEqualTo ace_player) exitWith {};
 
 _function = {
     params ["_handle", "_unit", "_jetpack", "_strength", "_speed", "_freefallHeight"];
-    private ["_velocity", "_direction", "_speedCoef", "_airResistanceCoef", "_airResistance"];
     TRACE_6("Jetpack PFH",_handle,_unit,_jetpack,_strength,_speed,_freefallHeight);
 
     if (isGamePaused) exitWith {};
@@ -38,9 +37,9 @@ _function = {
         _unit setVariable [QGVAR(usingJetpack), nil, true];
     };
 
-    _velocity = velocity _unit;
-    _direction = direction _unit;
-    _speedCoef = 0;
+    private _velocity = velocity _unit;
+    private _direction = direction _unit;
+    private _speedCoef = 0;
 
     // Calculate horizontal movement
     // TODO: Fix the classic "diagonal = faster" bug
@@ -81,30 +80,29 @@ _function = {
     };
 
     // Adjust velocity based on jetpack movement keybinds
-    switch (true) do {
+    private _newFallSpeed = switch (true) do {
         case (GVAR(rise)): {
-            _velocity set [2, (_velocity#2) + (_strength * diag_deltaTime)];
+            _velocity#2 + (_strength * diag_deltaTime);
         };
         case (GVAR(slowFall)): {
             private _fallSpeed = _velocity#2;
-            // _fallSpeed = (_fallSpeed + 0.1) min SAFE_FALL_SPEED;
-            _fallSpeed = CLAMP(_fallSpeed + 0.1,_velocity#2,SAFE_FALL_SPEED);
-            _velocity set [2, _fallSpeed];
+            _fallSpeed = CLAMP(_fallSpeed + 0.1,SAFE_FALL_SPEED,_velocity#2);
+            _fallSpeed;
         };
         case (GVAR(hover)): {
             private _hoverSpeed = random 2;  // Get random number
             _hoverSpeed = _hoverSpeed - 1;   // Make the hover not 100% perfect
-
-            _velocity set [2, _hoverSpeed];
+            _hoverSpeed;
         };
         default {
-            _velocity set [2, (_velocity#2) - (1 * diag_deltaTime)];
+            _velocity#2;
         };
     };
+    _velocity set [2, _newFallSpeed];
 
     // Simulate air resistance
-    _airResistanceCoef = -0.1 * diag_deltaTime * GVAR(airResistance);
-    _airResistance = _velocity vectorMultiply _airResistanceCoef;
+    private _airResistanceCoef = -0.1 * diag_deltaTime * GVAR(airResistance);
+    private _airResistance = _velocity vectorMultiply _airResistanceCoef;
     _velocity = _velocity vectorAdd _airResistance;
 
     // Apply final velocity
