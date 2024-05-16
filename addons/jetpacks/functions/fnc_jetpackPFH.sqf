@@ -29,71 +29,76 @@ TRACE_5("fnc_jetpackPFH",_unit,_jetpack,_strength,_speed,_freefallHeight);
 if (_unit isNotEqualTo ace_player) exitWith {};
 
 _function = {
-    params ["_handle", "_unit", "_jetpack", "_strength", "_speed", "_freefallHeight", "_finalSpeed"];
-    private ["_velocity", "_direction", "_speed"];
-    if (isGamePaused) then {continue};
+    params ["_handle", "_unit", "_jetpack", "_strength", "_speed", "_freefallHeight"];
+    private ["_velocity", "_direction", "_speedCoef", "_airResistanceCoef", "_airResistance"];
+    TRACE_6("Jetpack PFH",_handle,_unit,_jetpack,_strength,_speed,_freefallHeight);
 
+    if (isGamePaused) exitWith {};
     if (isTouchingGround _unit or {!(_unit call FUNC(canJetpack))}) exitWith {
         _unit setVariable [QGVAR(usingJetpack), nil, true];
     };
 
     _velocity = velocity _unit;
     _direction = direction _unit;
-    _finalSpeed = 0;
+    _speedCoef = 0;
 
     // Calculate horizontal movement
     // TODO: Fix the classic "diagonal = faster" bug
     if (inputAction "MoveForward" == 1) then {
-        _finalSpeed = _speed * BASE_SPEED * diag_deltaTime;
+        _speedCoef = _speed * BASE_SPEED * diag_deltaTime;
         _velocity = [
-            (_velocity select 0) + (sin _direction * _finalSpeed),
-            (_velocity select 1) + (cos _direction * _finalSpeed),
+            (_velocity select 0) + (sin _direction * _speedCoef),
+            (_velocity select 1) + (cos _direction * _speedCoef),
             _velocity select 2
         ];
     };
 
     if (inputAction "TurnLeft" == 1) then {
-        _finalSpeed = _speed * BASE_SPEED * diag_deltaTime;
+        _speedCoef = _speed * BASE_SPEED * diag_deltaTime;
         _velocity = [
-            (_velocity select 0) + (sin (_direction - 90) * _finalSpeed),
-            (_velocity select 1) + (cos (_direction - 90) * _finalSpeed),
+            (_velocity select 0) + (sin (_direction - 90) * _speedCoef),
+            (_velocity select 1) + (cos (_direction - 90) * _speedCoef),
             _velocity select 2
         ];
     };
 
     if (inputAction "TurnRight" == 1) then {
-        _finalSpeed = _speed * BASE_SPEED * diag_deltaTime;
+        _speedCoef = _speed * BASE_SPEED * diag_deltaTime;
         _velocity = [
-            (_velocity select 0) + (sin (_direction + 90) * _finalSpeed),
-            (_velocity select 1) + (cos (_direction + 90) * _finalSpeed),
+            (_velocity select 0) + (sin (_direction + 90) * _speedCoef),
+            (_velocity select 1) + (cos (_direction + 90) * _speedCoef),
             _velocity select 2
         ];
     };
 
     if (inputAction "MoveBack" == 1) then {
-        _finalSpeed = _speed * BASE_SPEED * diag_deltaTime;
+        _speedCoef = _speed * BASE_SPEED * diag_deltaTime;
         _velocity = [
-            (_velocity select 0) + (sin (_direction - 180) * _finalSpeed),
-            (_velocity select 1) + (cos (_direction - 180) * _finalSpeed),
+            (_velocity select 0) + (sin (_direction - 180) * _speedCoef),
+            (_velocity select 1) + (cos (_direction - 180) * _speedCoef),
             _velocity select 2
         ];
     };
 
     // Adjust velocity based on jetpack movement keybinds
-    // Convert to switch statement?
     switch (true) do {
         case (GVAR(rise)): {
             _velocity set [2, (_velocity#2) + (_strength * diag_deltaTime)];
         };
-        // TODO: Make slow fall gradual
         case (GVAR(slowFall)): {
-            _velocity set [2, (_velocity#2) max SAFE_FALL_SPEED];
+            private _fallSpeed = _velocity#2;
+            // _fallSpeed = (_fallSpeed + 0.1) min SAFE_FALL_SPEED;
+            _fallSpeed = CLAMP(_fallSpeed + 0.1,_velocity#2,SAFE_FALL_SPEED);
+            _velocity set [2, _fallSpeed];
         };
         case (GVAR(hover)): {
             private _hoverSpeed = random 2;  // Get random number
             _hoverSpeed = _hoverSpeed - 1;   // Make the hover not 100% perfect
 
             _velocity set [2, _hoverSpeed];
+        };
+        default {
+            _velocity set [2, (_velocity#2) - (1 * diag_deltaTime)];
         };
     };
 

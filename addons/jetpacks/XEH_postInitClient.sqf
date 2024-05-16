@@ -1,5 +1,9 @@
 #include "script_component.hpp"
 
+GVAR(rise) = false;
+GVAR(slowFall) = false;
+GVAR(hover) = false;
+
 ["CBA_settingsInitialized", {
     ["loadout", LINKFUNC(toggleFuelDisplay), true] call CBA_fnc_addPlayerEventHandler;
     ["vehicle", LINKFUNC(toggleFuelDisplay)] call CBA_fnc_addPlayerEventHandler;
