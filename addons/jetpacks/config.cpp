@@ -6,8 +6,7 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QCLASS(armor),
-            QEGVAR(factions,cis),
+            QCLASS(core),
             QEGVAR(objects,resupply),
             "ace_refuel",
             "ace_parachute"

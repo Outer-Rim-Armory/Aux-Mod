@@ -143,23 +143,21 @@ class CLASS(CIS_Jetpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_jetpack_co.paa"};
     picture = "\MRC\JLTS\characters\DroidArmor\data\ui\b1_jetpack_ui_ca.paa";
 
-    JLTS_isJumppack = TRUE;
-    JLTS_settingsDialog = "JLTS_droid_jumppack_dialog";
+    EGVAR(jetpacks,isJetpack) = TRUE;
+    EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
+    EGVAR(jetpacks,speed) = JETPACK_SPEED_DEFAULT;
+    EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
+    EGVAR(jetpacks,canHover) = TRUE;
 
-    JLTS_energy[] = {25, 150};
-    JLTS_jumpLimits[] = {50, {2, 50}, "default"};
-    JLTS_steeringCoef = 0.06;
-    JLTS_recharge = 2;
-
-    JLTS_effectPoints[] = {"effect_left", "effect_right"};
-    JLTS_sounds[] = {
-        {"\MRC\JLTS\jumppacks\sounds\ignite.wss", 1, 1},
-        {"\MRC\JLTS\jumppacks\sounds\ignite_fail.wss", 3, 1},
-        {"\MRC\JLTS\jumppacks\sounds\stop.wss", 1, 1},
-        {"\MRC\JLTS\jumppacks\sounds\stop_emergency.wss", 5, 1},
-        "JLTS_jumppack_error",
-        "JLTS_SFX_jumppack_idle"
+    EGVAR(jetpacks,effectPoints)[] = {"effect_left", "effect_right"};
+    EGVAR(jetpacks,effects)[] = {
+        QCLASS(Effects_JetpackFire_Blue),
+        QCLASS(Effects_JetpackSmoke)
     };
+    EGVAR(jetpacks,effectSound)  = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
+    EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};
+
+    EGVAR(jetpacks,freefallHeight) = 100000;
 
     class XtdGearInfo {
         model = QCLASS(CIS_Jetpacks);
