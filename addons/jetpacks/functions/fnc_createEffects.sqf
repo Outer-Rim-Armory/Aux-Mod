@@ -48,8 +48,7 @@ GVAR(totalParticles) = GVAR(totalParticles) + _totalNewEffects;
     private _effectSources = [];
 
     {
-        private ["_position", "_effectClasses", "_lightColor", "_lightSource"];
-        _position = _jetpack selectionPosition [_x, "Memory"];
+        private _position = _jetpack selectionPosition [_x, "Memory"];
         _position = _position vectorDiff POS_SPINE3;
 
         // Try to account for weapon animation, not perfect especially if weapon is put away

@@ -19,12 +19,11 @@ TRACE_1("fnc_toggleFuelDisplay",ace_player);
 // or is specifically a passenger in a vehicle
 private _fnc_isNotCrew = {
     params ["_unit"];
-    private ["_passengers"];
 
     _vehicle = objectParent _unit;
     if (isNull _vehicle) exitWith {true};
 
-    _passengers = (fullCrew [_vehicle, "cargo"]) apply {_x#0};
+    private _passengers = (fullCrew [_vehicle, "cargo"]) apply {_x#0};
     _unit in _passengers;
 };
 
