@@ -13,6 +13,8 @@
  *
  * Examples:
  * cursorObject call BNA_KC_jetpacks_fnc_addRefuelAction;
+ *
+ * Public: No
  */
 
 params [

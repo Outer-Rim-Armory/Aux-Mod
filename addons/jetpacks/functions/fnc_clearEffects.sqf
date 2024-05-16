@@ -11,6 +11,8 @@
  *
  * Example:
  * ace_player call BNA_KC_jetpacks_clearEffects;
+ *
+ * Public: No
  */
 
 params ["_unit"];

@@ -11,6 +11,8 @@
  *
  * Example:
  * ace_player call BNA_KC_jetpacks_fnc_hasJetpack;
+ *
+ * Public: Yes
  */
 
 params ["_unit"];

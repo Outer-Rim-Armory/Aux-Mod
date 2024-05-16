@@ -13,13 +13,10 @@
  * Example:
  * [_unit, ace_player] call BNA_KC_jetpacks_fnc_canRefuelFromBody;
  *
- * Public: Yes
+ * Public: No
  */
 
-params [
-    ["_target", objNull, [objNull]],
-    ["_player", objNull, [objNull]]
-];
+params ["_target", "_player"];
 TRACE_2("fnc_canRefuelFromBody",_target,_player);
 
 !alive _target and

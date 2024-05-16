@@ -14,7 +14,7 @@
  * ["BNA_KC_jetpacks_fuel", _config] call BNA_KC_jetpacks_fnc_statTextStatement_fuel;
  *
  * Public: No
-*/
+ */
 
 params ["_stats", "_config"];
 

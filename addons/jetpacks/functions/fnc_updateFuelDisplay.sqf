@@ -14,6 +14,8 @@
  *
  * Example:
  * ["BNA_KC_jetpacks_fuelChanged", BNA_KC_jetpacks_fnc_updateFuelDisplay] call CBA_fnc_addEventHandler;
+ *
+ * Public: No
  */
 
 params ["_unit"];

@@ -12,6 +12,8 @@
  *
  * Examples:
  * [cursorObject, player] call BNA_KC_jetpacks_fnc_canRefuelPlayer;
+ *
+ * Public: No
  */
 
 params [

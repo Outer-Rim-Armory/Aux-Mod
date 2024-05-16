@@ -14,7 +14,7 @@
  * ["BNA_KC_jetpacks_speed", _config] call BNA_KC_jetpacks_fnc_statTextStatement_speed;
  *
  * Public: No
-*/
+ */
 
 params ["_stats", "_config"];
 

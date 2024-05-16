@@ -11,6 +11,8 @@
  *
  * Example:
  * player call BNA_KC_jetpacks_fnc_playErrorSound;
+ *
+ * Public: No
  */
 
 #define ERROR_SOUND_COOLDOWN 5

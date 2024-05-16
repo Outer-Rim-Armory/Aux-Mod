@@ -11,6 +11,8 @@
  *
  * Example:
  * call BNA_KC_jetpacks_fnc_toggleFuelDisplay;
+ *
+ * Public: No
  */
 
 TRACE_1("fnc_toggleFuelDisplay",ace_player);

@@ -11,6 +11,8 @@
  *
  * Examples:
  * modifierFunction = "call BNA_KC_jetpacks_fnc_modifyInteraction";
+ *
+ * Public: No
  */
 
 params ["_target", "_player", "_params", "_actionData"];

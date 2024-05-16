@@ -17,10 +17,9 @@ class CfgVehicles {
                     icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
 
                     distance = 1.75;
-                    // exceptions[] = { "isNotInside", "isNotSitting", "isNotSwimming", "isNotDragging", "isNotCarrying" };
 
                     condition = QUOTE(call FUNC(canRefuelFromBody));
-                    statement = QUOTE(call FUNC(refuelFromBody));
+                    statement = QUOTE(call FUNC(refuelFromObject));
                     modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
                 };
 

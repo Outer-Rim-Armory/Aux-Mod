@@ -14,7 +14,7 @@
  * ["BNA_KC_jetpacks_strength", _config] call BNA_KC_jetpacks_fnc_statTextStatement_strength;
  *
  * Public: No
-*/
+ */
 
 params ["_stats", "_config"];
 
