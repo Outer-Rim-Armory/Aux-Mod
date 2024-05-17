@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player, 1] call FUNC(setMedic)
+ * [player, 1] call BNA_KC_core_fnc_setMedic;
  *
  * Public: Yes
  */

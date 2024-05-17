@@ -7,10 +7,10 @@
  * 0: Unit <OBJECT>
  *
  * Return Value:
- * True if unit is an engineer, otherwise false
+ * True if unit is an engineer, otherwise false <BOOL>
  *
  * Example:
- * player call FUNC(isEngineer)
+ * player call BNA_KC_core_fnc_isEngineer
  *
  * Public: Yes
  */
@@ -20,4 +20,4 @@ params [
 ];
 TRACE_1("fnc_isEngineer",_unit);
 
-_unit getVariable ["ace_isEngineer", false];
+_unit getVariable ["ace_isEngineer", false] in [1, 2, true];
