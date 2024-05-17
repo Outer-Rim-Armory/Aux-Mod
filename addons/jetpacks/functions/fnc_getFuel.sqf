@@ -1,11 +1,12 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Sets the fuel level of a unit's jetpack.
+ * Gets the fuel level of an object.
  * Can optionally return fuel level as a percentage of max fuel.
  *
  * Arguments:
- * 0: Unit to check <OBJECT>
+ * 0: Object to check <OBJECT>
+ *    - If unit is passed, it will check backpackContainer
  * 1: Return value as percentage (optional, default: false) <BOOL>
  *    - Scale from 0..1
  *
@@ -19,19 +20,22 @@
  */
 
 params [
-    ["_unit", objNull, [objNull]],
+    ["_object", objNull, [objNull]],
     ["_returnPercent", false, [false]]
 ];
-TRACE_2("fnc_getFuel",_unit,_returnPercent);
+TRACE_2("fnc_getFuel",_object,_returnPercent);
 
-if (isNull _unit or {!(_unit call FUNC(hasJetpack))}) exitWith {-1};
+if (_object isKindOf "CAManBase") then {
+    _object = backpackContainer _object;
+};
 
-private _jetpack = backpackContainer _unit;
-private _maxFuel = _jetpack getVariable [QGVAR(maxFuel), getNumber (configOf _jetpack >> QGVAR(fuel))];
-private _fuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];
+private _maxFuel = _object getVariable [QGVAR(maxFuel), getNumber (configOf _object >> QGVAR(fuel))];
+if (isNull _object or {_maxFuel <= 0}) exitWith {-1};
 
-_jetpack setVariable [QGVAR(fuel), _fuel, true];
-_jetpack setVariable [QGVAR(maxFuel), _maxFuel, true];
+private _fuel = _object getVariable [QGVAR(fuel), _maxFuel];
+
+_object setVariable [QGVAR(fuel), _fuel, true];
+_object setVariable [QGVAR(maxFuel), _maxFuel, true];
 
 if (_returnPercent) then {
     _fuel = _fuel / _maxFuel;
