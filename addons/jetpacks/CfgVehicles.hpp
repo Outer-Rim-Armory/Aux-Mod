@@ -29,8 +29,8 @@ class CfgVehicles {
 
                     distance = 1.75;
 
-                    condition = QUOTE(call FUNC(canRefuelPlayer));
-                    statement = QUOTE(call FUNC(refuelOtherPlayer));
+                    condition = QUOTE(call FUNC(canRefuelTarget));
+                    statement = QUOTE(call FUNC(refuelTarget));
                     modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
                 };
             };

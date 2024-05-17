@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [cursorObject, ace_player] call BNA_KC_jetpacks_fnc_refuelPFH;
+ * [cursorObject, ace_player] call BNA_KC_jetpacks_fnc_refuelFromObjectPFH;
  *
  * Public: No
  */

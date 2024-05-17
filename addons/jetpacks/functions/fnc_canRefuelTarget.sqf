@@ -17,7 +17,7 @@
  */
 
 params ["_target", "_player"];
-TRACE_2("fnc_canRefuelPlayer",_target,_player);
+TRACE_2("fnc_canRefuelTarget",_target,_player);
 
 alive _target and
 {_target call FUNC(hasJetpack)} and
