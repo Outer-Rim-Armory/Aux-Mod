@@ -35,7 +35,13 @@ class CfgVehicles {
             "", // Camo Net Texture
             ""  // Cage Texture
         };
-        textureList[] = {"KeeliCompanyWhite", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0};
+        textureList[] = {
+            "KeeliCompanyWhite", 1,
+            "CamoKC", 0,
+            "CamoBrown", 0,
+            "CamoGrey", 0,
+            "Bailout", 0
+        };
         animationList[] = {"showCanisters", FALSE, "showTools", FALSE};
 
         class TextureSources {
@@ -77,6 +83,17 @@ class CfgVehicles {
                     QPATHTOF(land\hydra\data\textures\CamoGrey\Body_co.paa),
                     QPATHTOF(land\hydra\data\textures\CamoGrey\Wheels_co.paa),
                     QPATHTOF(data\csatTurret\CamoGrey_Turret_co.paa),
+                    "",
+                    ""
+                };
+            };
+
+            class Bailout: KeeliCompanyWhite {
+                displayName = "Bailout";
+                textures[] = {
+                    QPATHTOF(land\hydra\data\textures\Bailout\Body_co.paa),
+                    QPATHTOF(land\hydra\data\textures\CamoKC\Wheels_co.paa),
+                    QPATHTOF(data\csatTurret\CamoKC_Turret_co.paa),
                     "",
                     ""
                 };

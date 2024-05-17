@@ -1,6 +1,7 @@
 class CLASS(Helmet_Phase1_Base);
 P1_HELMET_CUSTOM(Alvarez);
 P1_HELMET_CUSTOM(Axel);
+P1_HELMET_CUSTOM(Bailout);
 P1_HELMET_CUSTOM(Bond);
 P1_HELMET_VISOR_CUSTOM(Burnt,Bacta);
 P1_HELMET_VISOR_CUSTOM(Catholic,Kyber);
