@@ -299,3 +299,15 @@ class CLASS(Helmet_Phase2_Officer_CamoGrey): CLASS(Helmet_Phase2_Base) {
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
+
+class CLASS(cloneArmor_helmet_phase2_textureTest): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helmet (Texture Test)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\standard\camo1_co.paa),
+        QPATHTOF(data\helmets\phase2\standard\visor_co.paa)
+    };
+    hiddenSelectionsMaterials[] = {
+        QPATHTOF(data\helmets\phase2\standard\camo1.rvmat),
+        QPATHTOF(data\helmets\phase2\standard\visor.rvmat)
+    };
+};
