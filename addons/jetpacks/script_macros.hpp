@@ -11,3 +11,5 @@
 #define FUELDISPLAY_FUEL_H FUELDISPLAY_H * 0.95
 
 #define FUELCAN_NONE ["", 0]
+
+#define REFUEL_PER_SECOND 5
