@@ -62,7 +62,7 @@ GVAR(refueling) = false;
     if !(GVAR(refueling)) then {
         playSound3D ["A3\missions_f_oldman\data\sound\refueling\refueling_start.wss", objNull, false, getPosASL _object, 1, 1, 8];
         GVAR(refueling) = true;
-        [_object, _player] call FUNC(refuelPFH);
+        [_object, _player] call FUNC(refuelFromObjectPFH);
     };
 
     _player call ace_common_fnc_isAwake;

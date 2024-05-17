@@ -17,7 +17,7 @@
  */
 
 params ["_object", "_player"];
-TRACE_2("fnc_refuelPFH",_object,_player);
+TRACE_2("fnc_refuelFromObjectPFH",_object,_player);
 
 if (_player isNotEqualTo ace_player) exitWith {};
 
