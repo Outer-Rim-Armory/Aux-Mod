@@ -3,6 +3,7 @@ class CLASS(Uniform_Base): ls_gar_phase2_uniform {
     class ItemInfo;
 };
 UNIFORM_CUSTOM(Axel);
+UNIFORM_CUSTOM(Bailout);
 UNIFORM_CUSTOM(Bob);
 UNIFORM_CUSTOM(Burnt);
 UNIFORM_CUSTOM(Catholic);
