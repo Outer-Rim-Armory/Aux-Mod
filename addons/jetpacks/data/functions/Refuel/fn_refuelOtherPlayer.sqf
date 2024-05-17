@@ -17,7 +17,6 @@
  */
 
 
-#define REFUEL_PER_SECOND 5
 params ["_target", "_player", "_params"];
 
 // Get a fuel can and it's fuel level from the unit's inventory

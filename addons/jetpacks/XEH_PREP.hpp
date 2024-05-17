@@ -14,6 +14,8 @@ PREP(jetpackPFH);
 PREP(jetpackStart);
 PREP(modifyInteraction);
 PREP(playErrorSound);
+PREP(refuelFromObject);
+PREP(refuelPFH);
 PREP(setFuel);
 PREP(soundPFH);
 PREP(statTextStatement_fuel);
