@@ -48,7 +48,7 @@ class CfgVehicles {
 
         linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(rdfArmor_backpack_predef_rifleman);
+        backpack = QCLASS(rdfBackpack_predef_rifleman);
     };
 
     class CLASS(rdfArmor_unit_rifleman_DC15C): CLASS(rdfArmor_unit_rifleman) {
@@ -88,7 +88,7 @@ class CfgVehicles {
 
         linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(rdfArmor_backpack_predef_grenadier);
+        backpack = QCLASS(rdfBackpack_predef_grenadier);
     };
 
     class CLASS(rdfArmor_unit_autorifleman): CLASS(rdfArmor_unit_base) {
@@ -109,7 +109,7 @@ class CfgVehicles {
 
         linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(rdfArmor_backpack_predef_autorifleman);
+        backpack = QCLASS(rdfBackpack_predef_autorifleman);
     };
 
     class CLASS(rdfArmor_unit_marksman): CLASS(rdfArmor_unit_base) {
@@ -132,7 +132,7 @@ class CfgVehicles {
 
         linkedItems[] = {QCLASS(rdfArmor_helmet_marksman), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(rdfArmor_helmet_marksman), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(rdfArmor_backpack_predef_rifleman);
+        backpack = QCLASS(rdfBackpack_predef_rifleman);
     };
 
     class CLASS(rdfArmor_unit_riflemanAT): CLASS(rdfArmor_unit_rifleman) {
@@ -151,7 +151,7 @@ class CfgVehicles {
             QCLASS(Mag_80rnd_DC15S),
             QCLASS(Mag_20rnd_DC17)
         };
-        backpack = QCLASS(rdfArmor_backpack_predef_riflemanAT);
+        backpack = QCLASS(rdfBackpack_predef_riflemanAT);
     };
 
     class CLASS(rdfArmor_unit_riflemanAT_disposable): CLASS(rdfArmor_unit_riflemanAT) {
@@ -169,7 +169,7 @@ class CfgVehicles {
             QCLASS(Mag_80rnd_DC15S),
             QCLASS(Mag_20rnd_DC17)
         };
-        backpack = QCLASS(rdfArmor_backpack_predef_rifleman);
+        backpack = QCLASS(rdfBackpack_predef_rifleman);
     };
 
     class CLASS(rdfArmor_unit_medic): CLASS(rdfArmor_unit_base) {
@@ -192,7 +192,7 @@ class CfgVehicles {
 
         linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_light), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(rdfArmor_backpack_medic_predef_medic);
+        backpack = QCLASS(rdfBackpack_medic_predef_medic);
     };
 
     class CLASS(rdfArmor_unit_swat): CLASS(rdfArmor_unit_base) {
@@ -217,7 +217,7 @@ class CfgVehicles {
 
         linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(rdfArmor_backpack_swat_predef_rifleman);
+        backpack = QCLASS(rdfBackpack_swat_predef_rifleman);
     };
 
     class CLASS(rdfArmor_unit_swat_chaingun): CLASS(rdfArmor_unit_swat) {
@@ -238,14 +238,14 @@ class CfgVehicles {
 
         linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_swat), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(rdfArmor_backpack_swat_predef_chaingun);
+        backpack = QCLASS(rdfBackpack_swat_predef_chaingun);
     };
 
     #include "legacy_units.hpp"
 
 
     class CLASS(backpack_base);
-    class CLASS(rdfArmor_backpack): CLASS(backpack_base) {
+    class CLASS(rdfBackpack): CLASS(backpack_base) {
         SCOPE_PUBLIC;
 
         displayName = "[RDF] Backpack";
@@ -258,7 +258,7 @@ class CfgVehicles {
         maximumLoad = 600;
     };
 
-    class CLASS(rdfArmor_backpack_predef_rifleman): CLASS(rdfArmor_backpack) {
+    class CLASS(rdfBackpack_predef_rifleman): CLASS(rdfBackpack) {
         SCOPE_HIDDEN;
 
         class TransportMagazines {
@@ -273,7 +273,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(rdfArmor_backpack_predef_grenadier): CLASS(rdfArmor_backpack_predef_rifleman) {
+    class CLASS(rdfBackpack_predef_grenadier): CLASS(rdfBackpack_predef_rifleman) {
         class TransportMagazines: TransportMagazines {
             MAG_XX(3Rnd_HE_Grenade_shell,10);
             MAG_XX(3Rnd_UGL_FlareWhite_F,2);
@@ -287,13 +287,13 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(rdfArmor_backpack_predef_autorifleman): CLASS(rdfArmor_backpack_predef_rifleman) {
+    class CLASS(rdfBackpack_predef_autorifleman): CLASS(rdfBackpack_predef_rifleman) {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_240rnd_DC15L),15);
         };
     };
 
-    class CLASS(rdfArmor_backpack_predef_riflemanAT): CLASS(rdfArmor_backpack_predef_rifleman) {
+    class CLASS(rdfBackpack_predef_riflemanAT): CLASS(rdfBackpack_predef_rifleman) {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_80rnd_DC15S),16);
             MAG_XX(CLASS(Mag_20rnd_DC17),6);
@@ -304,14 +304,14 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(rdfArmor_backpack_medic): CLASS(rdfArmor_backpack) {
+    class CLASS(rdfBackpack_medic): CLASS(rdfBackpack) {
         displayName = "[RDF] Medic Backpack";
 
         model = "\sc_equipment\data\wasp\wp_backpack.p3d";
         hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_guard_co.paa"};
     };
 
-    class CLASS(rdfArmor_backpack_medic_predef_medic): CLASS(rdfArmor_backpack_medic) {
+    class CLASS(rdfBackpack_medic_predef_medic): CLASS(rdfBackpack_medic) {
         SCOPE_HIDDEN;
 
         class TransportMagazines {
@@ -336,14 +336,14 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(rdfArmor_backpack_swat): CLASS(rdfArmor_backpack) {
+    class CLASS(rdfBackpack_swat): CLASS(rdfBackpack) {
         displayName = "[RDF] SWAT Backpack";
 
         model = "\sc_equipment\data\wasp\wp_backpack.p3d";
         hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\backpack_black_co.paa"};
     };
 
-    class CLASS(rdfArmor_backpack_swat_predef_rifleman): CLASS(rdfArmor_backpack_swat) {
+    class CLASS(rdfBackpack_swat_predef_rifleman): CLASS(rdfBackpack_swat) {
         SCOPE_HIDDEN;
 
         class TransportMagazines {
@@ -365,7 +365,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(rdfArmor_backpack_swat_predef_chaingun): CLASS(rdfArmor_backpack_swat_predef_rifleman) {
+    class CLASS(rdfBackpack_swat_predef_chaingun): CLASS(rdfBackpack_swat_predef_rifleman) {
         class TransportMagazines: TransportMagazines {
             MAG_XX(CLASS(Mag_99Rnd_WestarM5),15);
             MAG_XX(CLASS(Mag_30Rnd_DC15SA),5);
