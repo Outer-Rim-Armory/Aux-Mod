@@ -5,7 +5,7 @@ class CfgWeapons {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Jetpack Fuel Can (Empty)";
-        descriptionShort = "An empty fuel can.<br/>Can carry 4 L of fuel.";
+        descriptionShort = "An empty fuel can.<br/>Can carry 4 liters of fuel.";
 
         GVAR(isFuelCan) = TRUE;
         GVAR(fuelCanMag) = QGVAR(fuelCan_mag);

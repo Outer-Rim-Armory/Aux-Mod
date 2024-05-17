@@ -5,7 +5,7 @@ class CfgMagazines {
         author = AUTHOR;
 
         displayName = "[KC] Jetpack Fuel Can";
-        descriptionShort = "A partially full fuel can.<br/>Can carry 4 L of fuel.";
+        descriptionShort = "A partially full fuel can.<br/>Can carry 4 liters of fuel.";
 
         count = 400; // Amount of fuel that can be carried
         mass = 60;

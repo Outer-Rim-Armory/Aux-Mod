@@ -19,4 +19,4 @@
 params ["_stats", "_config"];
 
 private _fuel = getNumber (_config >> (_stats#0)) / 10;
-format ["%1 L", _fuel];
+format ["%1 liters", _fuel];
