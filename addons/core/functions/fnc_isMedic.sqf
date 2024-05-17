@@ -7,10 +7,10 @@
  * 0: Unit <OBJECT>
  *
  * Return Value:
- * True if unit is a medic, otherwise false
+ * True if unit is a medic, otherwise false <BOOL>
  *
  * Example:
- * player call FUNC(isEngineer)
+ * player call BNA_KC_core_fnc_isEngineer
  *
  * Public: Yes
  */
