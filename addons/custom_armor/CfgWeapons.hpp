@@ -106,6 +106,17 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
     };
 
+    class CLASS(Vest_ARC);
+    class CLASS(cloneVest_arc_Tyrant): CLASS(Vest_ARC) {
+        displayName = "[KC] SF ARC Vest ('Tyrant')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\tyrant\camo1_co.paa),
+            QPATHTOF(data\vests\tyrant\camo2_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+
     class CLASS(cloneNvg_phase2_officerVisor);
     class CLASS(cloneNvg_phase2_officerVisor_Keeli): CLASS(cloneNvg_phase2_officerVisor) {
         displayName = "[KC] Clone P2 NV/TI Officer Visor ('Keeli')";
