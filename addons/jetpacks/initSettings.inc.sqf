@@ -3,7 +3,7 @@
     "SLIDER",
     ["Fuel Drain Coefficient", "Coefficient (multiplier) for draining fuel."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
-    [0, 3, 1, 0, true], // 0-300%, defaults to 100%
+    [0, 3, 1, -1, true], // 0-300%, defaults to 100%
     TRUE
 ] call CBA_fnc_addSetting;
 
@@ -12,7 +12,7 @@
     "SLIDER",
     ["Air Resistance", "Air resistance affects jetpack speed and strengh. Higher value = less speed/strength."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
-    [5, 15, 8, 0],
+    [5, 15, 8, -1],
     TRUE
 ] call CBA_fnc_addSetting;
 
