@@ -32,10 +32,10 @@ private _function = {
 
     // If fuel can is an item (i.e. empty), replace with mag version
     if !(_fuelCan isKindOf ["CA_Magazine", configFile >> "CfgMagazines"]) then {
+        private _itemClass = _fuelCan;
         _player removeItem _fuelCan;
         _fuelCan = getText (configFile >> "CfgWeapons" >> _fuelCan >> QGVAR(fuelCanMag));
-        TRACE_1("Adding magazine version of fuel can",_fuelCan);
-        _player addMagazine [_fuelCan, 0];
+        TRACE_1("Removed item version of fuel can",_itemClass,_fuelCan);
     };
 
     private _objectFuel = _object call FUNC(getFuel);
