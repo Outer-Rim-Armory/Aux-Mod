@@ -35,8 +35,7 @@ private _function = {
         _player removeItem _fuelCan;
         _fuelCan = getText (configFile >> "CfgWeapons" >> _fuelCan >> QGVAR(fuelCanMag));
         TRACE_1("Adding magazine version of fuel can",_fuelCan);
-        // magazines command doesn't include empty mags
-        _player addMagazine [_fuelCan, 1];
+        _player addMagazine [_fuelCan, 0];
     };
 
     private _objectFuel = _object call FUNC(getFuel);

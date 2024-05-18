@@ -46,7 +46,7 @@ private _fuelLevel = 0;
         _canClass = _magazine;
         _fuelLevel = _ammoCount
     };
-} forEach magazinesAmmo _unit;
+} forEach magazinesAmmo [_unit, true];
 
 // Prefer partially full cans by returning early
 if (_canClass isNotEqualTo "") exitWith {
