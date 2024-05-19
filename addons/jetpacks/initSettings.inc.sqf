@@ -21,6 +21,5 @@
     "SLIDER",
     ["Particle Limit", "Maximum number of jetpack particles that can exist at a time."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
-    [0, 100, 20, -1],
-    TRUE
+    [0, 100, 20, -1]
 ] call CBA_fnc_addSetting;
