@@ -6,8 +6,8 @@ class CfgPatches {
         name = COMPONENT_NAME;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            QCLASS(armor),
-            QEGVAR(factions,cis),
+            QCLASS(core),
+            QCLASS(particles),
             QEGVAR(objects,resupply),
             "ace_refuel",
             "ace_parachute"
@@ -16,8 +16,8 @@ class CfgPatches {
             QCLASS(Resupply_JetpackFuel)
         };
         weapons[] = {
-            QCLASS(Jetpack_FuelCan_Empty),
-            QCLASS(Jetpack_FuelCan_Mag)
+            QGVAR(fuelCan_empty),
+            QGVAR(fuelCan_mag)
         };
         VERSION_CONFIG;
     };
@@ -26,8 +26,6 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgFunctions.hpp"
-#include "CfgCloudlets.hpp"
 #include "CfgRscTitles.hpp"
 #include "CfgUIGrids.hpp"
 #include "Cfg3DEN.hpp"

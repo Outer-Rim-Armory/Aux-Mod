@@ -11,18 +11,15 @@
  * True if unit can refill _target, otherwise false <BOOL>
  *
  * Examples:
- * [cursorObject, player] call FUNC(canRefuelPlayer);
+ * [cursorObject, player] call BNA_KC_jetpacks_fnc_canRefuelPlayer;
+ *
+ * Public: No
  */
 
-params [
-    ["_target", objNull, [objNull]],
-    ["_player", objNull, [objNull]]
-];
-TRACE_2("fnc_canRefuelPlayer",_target,_player);
+params ["_target", "_player"];
+TRACE_2("fnc_canRefuelTarget",_target,_player);
 
 alive _target and
-{_player call ace_common_fnc_isEngineer} and
 {_target call FUNC(hasJetpack)} and
-{_player distance _target <= 1.75} and
 {[_target, true] call FUNC(getFuel) < 1} and
 {[_player, false, true] call FUNC(getFuelCan) isNotEqualTo FUELCAN_NONE};

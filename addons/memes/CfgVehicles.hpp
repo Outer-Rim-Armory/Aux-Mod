@@ -1,6 +1,6 @@
 class CfgVehicles {
     class CLASS(Jetpack_JT12);
-    class GVAR(backpack_hussarWings): CLASS(Jetpack_JT12) {
+    class GVAR(jetpack_hussarWings): CLASS(Jetpack_JT12) {
         displayName = "[KC] Hussar Wings";
 
         model = "\3as\3as_Characters\Clones\Backpacks\3as_Hussar_Wings.p3d";
@@ -11,5 +11,12 @@ class CfgVehicles {
         EGVAR(jetpacks,effectPoints)[] = {};
         EGVAR(jetpacks,effectSound) = "";
         EGVAR(jetpacks,lightColor)[] = {0, 0, 0};
+    };
+
+    class GVAR(cloneJetpack_stachePack): CLASS(Jetpack_JT12) {
+        displayName = "[KC] JT-12 Stache Pack";
+
+        EGVAR(jetpacks,fuel) = 50;
+        EGVAR(jetpacks,speed) = 380;
     };
 };

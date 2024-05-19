@@ -12,29 +12,28 @@
  * The fuel can in format [class name, fuel level] <ARRAY>
  *
  * Examples:
- * player call FUNC(getFuelCan);
+ * player call BNA_KC_jetpacks_fnc_getFuelCan;
+ *
+ * Public: Yes
  */
-
 
 params [
     ["_unit", objNull, [objNull]],
     ["_ignoreFull", false, [false]],
     ["_ignoreEmpty", false, [false]]
 ];
-private ["_canClass", "_fuelLevel"];
 TRACE_3("fnc_getFuelCan",_unit,_ignoreFull,_ignoreEmpty);
 
-_canClass = "";
-_fuelLevel = 0;
+private _canClass = "";
+private _fuelLevel = 0;
 
 // Find partial cans
 {
     _x params ["_magazine", "_ammoCount"];
-    private ["_isCan", "_maxFuel"];
 
-    _isCan = getNumber (configFile >> "CfgMagazines" >> _magazine >> QGVAR(isFuelCan));
+    private _isCan = getNumber (configFile >> "CfgMagazines" >> _magazine >> QGVAR(isFuelCan));
     if (_ignoreFull) then {
-        _maxFuel = [
+        private _maxFuel = [
             configFile >> "CfgMagazines" >> _magazine,
             "count",
             _ammoCount
@@ -47,7 +46,7 @@ _fuelLevel = 0;
         _canClass = _magazine;
         _fuelLevel = _ammoCount
     };
-} forEach magazinesAmmo _unit;
+} forEach magazinesAmmo [_unit, true];
 
 // Prefer partially full cans by returning early
 if (_canClass isNotEqualTo "") exitWith {
@@ -58,7 +57,7 @@ if (_canClass isNotEqualTo "") exitWith {
 if !(_ignoreEmpty) then {
     {
         _isCan = getNumber (configFile >> "CfgWeapons" >> _x >> QGVAR(isFuelCan));
-        if (_isCan isEqualTo 1) exitWith {
+        if (_isCan isEqualTo TRUE) exitWith {
             _canClass = _x;
         };
     } forEach items _unit;

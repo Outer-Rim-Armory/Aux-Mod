@@ -18,7 +18,6 @@ A player's jetpack can be refueled by two ways:
 
 Any object can be turned into a refuel station by selecting the checkmark when editing the object in the Eden Editor, or by running the following code:
 ```sqf
-// _object is an object reference, like "this" in an object's init.
 _object call BNA_KC_jetpacks_fnc_addRefuelAction;
 ```
 For easy use, the "Jetpack Fuel Tank" object comes with a reload action already.
@@ -44,7 +43,7 @@ Effect of air causing you to slow down while flying.
 ### Particle Limit
 Default Value: **20**
 
-Maximum number of particle effects from jetpacks that can exist at a given time.
+Maximum number of particle effects from jetpacks that can exist at a given time. Particle effects are unique to each client.
 
 ## Keybinds
 ### Activate Jetpack

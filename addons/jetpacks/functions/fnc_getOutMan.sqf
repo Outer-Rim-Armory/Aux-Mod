@@ -20,7 +20,6 @@
 #define GETOUT_SPACING 30
 
 params ["_unit", "", "_vehicle"];
-private [];
 TRACE_2("fnc_getOutMan",_unit,_vehicle);
 
 if (_unit != ace_player or
@@ -31,9 +30,8 @@ if (_unit != ace_player or
     })
 }) exitWith {false};
 
-_direction = getDir _vehicle;
-_positionASL = getPosASL _vehicle vectorAdd [-GETOUT_SPACING * sin _direction, -GETOUT_SPACING * cos _direction, 0];
+private _direction = getDir _vehicle;
+private _positionASL = getPosASL _vehicle vectorAdd [-GETOUT_SPACING * sin _direction, -GETOUT_SPACING * cos _direction, 0];
 
 _unit setPosASL _positionASL;
-
 true;

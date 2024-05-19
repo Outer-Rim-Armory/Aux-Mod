@@ -10,15 +10,16 @@
  * None
  *
  * Examples:
- * modifierFunction = QUOTE(_this call FUNC(modifyInteraction);)
+ * modifierFunction = "call BNA_KC_jetpacks_fnc_modifyInteraction";
+ *
+ * Public: No
  */
 
 params ["_target", "_player", "_params", "_actionData"];
-private ["_jetpackName", "_picture"];
 TRACE_4("fnc_modifyInteraction",_target,_player,_params,_actionData);
 
-_jetpackName = getText (configOf backpackContainer _target >> "displayName");
-_picture = getText (configOf backpackContainer _target >> "picture");
+private _jetpackName = getText (configOf backpackContainer _target >> "displayName");
+private _picture = getText (configOf backpackContainer _target >> "picture");
 
 _actionData set [1, format [_actionData#1, _jetpackName]];
 _actionData set [2, _picture];
