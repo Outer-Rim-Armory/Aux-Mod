@@ -25,7 +25,6 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgFunctions.hpp"
 #include "CfgCloudlets.hpp"
 #include "CfgRscTitles.hpp"
 #include "CfgUIGrids.hpp"
