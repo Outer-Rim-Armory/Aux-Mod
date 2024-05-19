@@ -371,8 +371,8 @@ class CfgVehicles {
         // Effects
         EGVAR(jetpacks,effectPoints)[] = {"effect_left", "effect_right"};
         EGVAR(jetpacks,effects)[] = {
-            QCLASS(Effects_JetpackFire_Blue),
-            QCLASS(Effects_JetpackSmoke)
+            QCLASS(cloudlet_jetpackFire_blue),
+            QCLASS(cloudlet_jetpackSmoke)
         };
         EGVAR(jetpacks,effectSound)  = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
         EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};

@@ -7,6 +7,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QCLASS(core),
+            QCLASS(particles),
             QEGVAR(objects,resupply),
             "ace_refuel",
             "ace_parachute"
@@ -25,7 +26,6 @@ class CfgPatches {
 #include "CfgWeapons.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgCloudlets.hpp"
 #include "CfgRscTitles.hpp"
 #include "CfgUIGrids.hpp"
 #include "Cfg3DEN.hpp"
