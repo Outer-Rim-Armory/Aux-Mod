@@ -23,15 +23,10 @@ class CfgVehicles {
                     modifierFunction = QUOTE(call FUNC(modifyInteraction));
                 };
 
-                class GVAR(refuelPlayer) {
-                    displayName = "Refuel player's %1";
-                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
-
-                    distance = 1.75;
-
+                class GVAR(refuelTarget): GVAR(refuelFromBody) {
+                    displayName = "Refuel %1";
                     condition = QUOTE(call FUNC(canRefuelTarget));
                     statement = QUOTE(call FUNC(refuelTarget));
-                    modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
                 };
             };
         };
