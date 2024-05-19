@@ -204,7 +204,7 @@ ace_hearing_protection = 0.85
 
 // These are defined here so multiple addons can define jetpack properties easily
 #define JETPACK_FUEL_DEFAULT 100
-#define JETPACK_SPEED_DEFAULT 2
+#define JETPACK_SPEED_DEFAULT 4
 #define JETPACK_STRENGTH_DEFAULT 15
 
 // ACE Arsenal Tab values

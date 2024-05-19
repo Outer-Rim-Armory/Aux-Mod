@@ -15,7 +15,7 @@ class ACE_Arsenal_Stats {
     class GVAR(speed): GVAR(strength) {
         displayName = "Jetpack Speed";
         stats[] = {QGVAR(speed)};
-        barStatement = QUOTE(STAT_BAR_STATEMENT(1,3));
+        barStatement = QUOTE(STAT_BAR_STATEMENT(1,JETPACK_SPEED_DEFAULT * 1.5));
         textStatement = QUOTE(call FUNC(statTextStatement_speed));
     };
 
