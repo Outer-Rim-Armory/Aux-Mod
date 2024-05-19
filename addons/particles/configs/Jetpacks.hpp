@@ -7,6 +7,10 @@ class CLASS(cloudlet_jetpackFire_blue): CLASS(cloudlet_jetpackFire) {
     colorCoef[] = {0, 0.1, 0.9, 1};
 };
 
+class CLASS(cloudlet_jetpackFire_yellow): CLASS(cloudlet_jetpackFire) {
+    colorCoef[] = {1, 0.85, 0, 1};
+};
+
 class CLASS(cloudlet_jetpackSparks): CLASS(cloudlet_airFireSparks) {
     colorCoef[] = {1, 1, 1, 1};
     moveVelocity[] = {0, -1.5, 0};
