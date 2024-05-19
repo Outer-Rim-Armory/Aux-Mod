@@ -89,9 +89,8 @@ private _function = {
             _fallSpeed;
         };
         case (GVAR(hover)): {
-            private _hoverSpeed = random 2;  // Get random number
-            _hoverSpeed = _hoverSpeed - 1;   // Make the hover not 100% perfect
-            _hoverSpeed;
+            // Make the hover not 100% perfect
+            (random 2) - 1;
         };
         default {
             _velocity#2;
@@ -125,5 +124,5 @@ private _exitCode = {
     _condition,
     _exitCode,
     0,
-    [_unit, _jetpack, _strength, _speed, _freefallHeight]
+    _this
 ] call EFUNC(core,tempPFH);
