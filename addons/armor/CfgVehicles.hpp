@@ -402,6 +402,8 @@ class CfgVehicles {
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
 
         EGVAR(jetpacks,strength) = 0;
+        EGVAR(jetpacks,speed) = 2;
+        EGVAR(jetpacks,fuel) = 50;
         EGVAR(jetpacks,canHover) = FALSE;
     };
 
@@ -426,7 +428,7 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_mc_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 
-        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT * 0.75;
+        EGVAR(jetpacks,fuel) = 75;
         EGVAR(jetpacks,effectPoints)[] = {"effect"};
     };
 

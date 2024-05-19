@@ -16,7 +16,7 @@ class CfgVehicles {
     class GVAR(cloneJetpack_stachePack): CLASS(Jetpack_JT12) {
         displayName = "[KC] JT-12 Stache Pack";
 
-        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT * 0.5;
+        EGVAR(jetpacks,fuel) = 50;
         EGVAR(jetpacks,speed) = 380;
     };
 };
