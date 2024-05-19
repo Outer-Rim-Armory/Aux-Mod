@@ -35,7 +35,7 @@ private _function = {
         private _itemClass = _fuelCan;
         _player removeItem _fuelCan;
         _fuelCan = getText (configFile >> "CfgWeapons" >> _fuelCan >> QGVAR(fuelCanMag));
-        TRACE_1("Removed item version of fuel can",_itemClass,_fuelCan);
+        TRACE_2("Removed item version of fuel can",_itemClass,_fuelCan);
     };
 
     private _objectFuel = _object call FUNC(getFuel);
