@@ -17,7 +17,7 @@
  * Public: No
  */
 
-#define BASE_FUEL_COST 8
+#define BASE_FUEL_COST 4
 
 params ["_unit", "_jetpack"];
 TRACE_2("fnc_fuelPFH",_unit,_jetpack);

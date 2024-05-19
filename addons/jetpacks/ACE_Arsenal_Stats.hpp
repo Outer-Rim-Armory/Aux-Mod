@@ -22,7 +22,7 @@ class ACE_Arsenal_Stats {
     class GVAR(fuel): GVAR(strength) {
         displayName = "Jetpack Fuel Capacity";
         stats[] = {QGVAR(fuel)};
-        barStatement = QUOTE(STAT_BAR_STATEMENT(100,300));
+        barStatement = QUOTE(STAT_BAR_STATEMENT(0,300));
         textStatement = QUOTE(call FUNC(statTextStatement_fuel));
     };
 };

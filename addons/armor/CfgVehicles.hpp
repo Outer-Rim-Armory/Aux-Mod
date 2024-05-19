@@ -426,7 +426,7 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_mc_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 
-        EGVAR(jetpacks,fuel) = 150;
+        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT * 0.75;
         EGVAR(jetpacks,effectPoints)[] = {"effect"};
     };
 
