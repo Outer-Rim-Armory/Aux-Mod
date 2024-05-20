@@ -370,6 +370,7 @@ class CfgPatches {
             QCLASS(Vest_CS),
             QCLASS(Vest_CSS),
             QCLASS(Vest_CSFC),
+            QCLASS(cloneVest_CMS),
             QCLASS(Vest_CSM),
             QCLASS(Vest_Officer),
             QCLASS(Vest_Officer_v2),

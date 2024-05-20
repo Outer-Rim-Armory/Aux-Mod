@@ -5,42 +5,35 @@
     QGVAR(key_activateJetpack),
     ["Activate Jetpack", "Accellerates the user upward."],
     {
+        // KeyDown
         // Save original hover state
-        ace_player setVariable [
-            "BNA_KC_Jet_hoverOriginal",
-            ace_player getVariable ["BNA_KC_Jet_hover", false]
-        ];
-        // Disable hover
-        ace_player setVariable ["BNA_KC_Jet_hover", false];
+        GVAR(hoverOriginal) = missionNamespace getVariable [QGVAR(hover), false];
 
-        ace_player setVariable ["BNA_KC_Jet_rise", true];
-        true call BNA_KC_Jetpacks_fnc_jetpack;
-    },     // KeyDown
-    {
-        ace_player setVariable ["BNA_KC_Jet_rise", false];
-        // Reset hover state to original value (before rising)
-        ace_player setVariable [
-            "BNA_KC_Jet_hover",
-            ace_player getVariable ["BNA_KC_Jet_hoverOriginal", false]
-        ];
-        ace_player setVariable ["BNA_KC_Jet_hoverOriginal", nil]; // Remove old variable
-    },     // KeyUp
+        GVAR(hover) = false;
+        GVAR(rise) = true;
+        [true] call FUNC(jetpackStart);
+    }, {
+        // KeyUp
+        GVAR(rise) = false;
+        GVAR(hover) = GVAR(hoverOriginal);
+        GVAR(hoverOriginal) = nil;
+    },
     [DIK_SPACE, [true, false, false]]    // Shift + Spacebar
 ] call CBA_fnc_AddKeybind;
 
 [
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     QGVAR(key_slowFall),
-    ["Activate Slow Fall", "Slows the user down while falling."],
-    {
+    ["Activate Slow Fall", "Slows the user down while falling."], {
+        // KeyDown
         if !(isTouchingGround ace_player) then {
-            ace_player setVariable ["BNA_KC_Jet_slowFall", true];
-            false call BNA_KC_Jetpacks_fnc_jetpack;
+            GVAR(slowFall) = true;
+            [] call FUNC(jetpackStart);
         };
-    },     // KeyDown
-    {
-        ace_player setVariable ["BNA_KC_Jet_slowFall", false];
-    },     // KeyUp
+    }, {
+        // KeyUp
+        GVAR(slowFall) = false;
+    },
     [DIK_SPACE, [false, false, false]]    // Spacebar
 ] call CBA_fnc_AddKeybind;
 
@@ -51,8 +44,7 @@
     {
         if (getNumber (configOf backpackContainer ace_player >> QGVAR(canHover)) <= FALSE) exitWith {};
         if !(isTouchingGround ace_player) then {
-            _hoverState = !(ace_player getVariable ["BNA_KC_Jet_hover", false]);
-            ace_player setVariable ["BNA_KC_Jet_hover", _hoverState];
+            GVAR(hover) = !GVAR(hover);
         };
     },     // KeyDown
     {},    // KeyUp

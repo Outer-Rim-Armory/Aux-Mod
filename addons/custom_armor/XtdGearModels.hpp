@@ -12,6 +12,7 @@ class XtdGearModels {
                 values[] = {
                     "Alvarez",
                     "Axel",
+                    "Bailout",
                     "Bond",
                     "Burnt",
                     "Catholic",
@@ -46,6 +47,7 @@ class XtdGearModels {
 
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
+                class Bailout { label = "Bailout"; };
                 class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };
@@ -89,13 +91,11 @@ class XtdGearModels {
                 alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
-                    "Bailout",
                     "Blue",
                     "Evo",
                     "Mischief"
                 };
 
-                class Bailout { label = "Bailout"; };
                 class Blue { label = "Blue"; };
                 class Evo { label = "Evo"; };
                 class Mischief { label = "Mischief"; };
@@ -128,11 +128,13 @@ class XtdGearModels {
                 values[] = {
                     "Alvarez",
                     "Axel",
+                    "Bailout",
                     "Bob",
                     "Bond",
                     "Burnt",
                     "Dexus",
                     "Evo",
+                    "Flare",
                     "Grey",
                     "Harry",
                     "Hazard",
@@ -161,11 +163,13 @@ class XtdGearModels {
 
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
+                class Bailout { label = "Bailout"; };
                 class Bob { label = "Bob"; };
                 class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
                 class Dexus { label = "Dexus"; };
                 class Evo { label = "Evo"; };
+                class Flare { label = "Flare"; };
                 class Grey { label = "Grey"; };
                 class Harry { label = "Harry"; };
                 class Hazard { label = "Hazard"; };
@@ -221,12 +225,10 @@ class XtdGearModels {
                 alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
-                    "Bailout",
                     "Blue",
                     "Mischief"
                 };
 
-                class Bailout { label = "Bailout"; };
                 class Blue { label = "Blue"; };
                 class Mischief { label = "Mischief"; };
             };
@@ -365,6 +367,7 @@ class XtdGearModels {
                 changeInGame = FALSE;
                 values[] = {
                     "Axel",
+                    "Bailout",
                     "Bob",
                     "Burnt",
                     "Catholic",
@@ -386,6 +389,7 @@ class XtdGearModels {
                 };
 
                 class Axel { label = "Axel"; };
+                class Bailout { label = "Bailout"; };
                 class Bob { label = "Bob"; };
                 class Burnt { label = "Burnt"; };
                 class Catholic { label = "Catholic"; };

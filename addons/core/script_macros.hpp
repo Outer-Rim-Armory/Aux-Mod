@@ -68,6 +68,8 @@ scopeCurator = 0
 scopeArsenal = 0; \
 scopeCurator = 0
 
+#define DEPRECATE_CLASS(old,new) class CLASS(old): CLASS(new) { SCOPE_HIDDEN; }
+
 #define DBUG_TEX_RED "#(rgb,8,8,3)color(1,0,0,1)"
 #define DBUG_TEX_GRN "#(rgb,8,8,3)color(0,1,0,1)"
 #define DBUG_TEX_BLU "#(rgb,8,8,3)color(0,0,1,1)"
@@ -200,6 +202,10 @@ ace_hearing_protection = 0.85
 #define CLAMP(var1,lower,upper) lower max (var1 min upper)
 #define GET_NAME(var1) [var1, false, true] call ace_common_fnc_getName
 
+// These are defined here so multiple addons can define jetpack properties easily
+#define JETPACK_FUEL_DEFAULT 100
+#define JETPACK_SPEED_DEFAULT 4
+#define JETPACK_STRENGTH_DEFAULT 15
 
 // ACE Arsenal Tab values
 // Left Tabs
@@ -227,3 +233,6 @@ ace_hearing_protection = 0.85
 #define ARSENAL_TAB_GRENADES 5
 #define ARSENAL_TAB_EXPLOSIVES 6
 #define ARSENAL_TAB_MISC 7
+
+// Default bar statement for ACE Arsenal Stats
+#define STAT_BAR_STATEMENT(min,max) [ARR_3((_this select 0) select 0,_this select 1,[ARR_3([ARR_2(min,max)],[ARR_2(0.01,1)],false)])] call ace_arsenal_fnc_statBarStatement_default

@@ -360,23 +360,25 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
 
-        JLTS_isJumppack = TRUE;
-        JLTS_settingsDialog = "JLTS_clone_jumppack_dialog";
+        JLTS_isJumppack = FALSE;
 
-        JLTS_energy[] = {15, 150};
-        JLTS_jumpLimits[] = {50, {2, 50}, "default"};
-        JLTS_steeringCoef = 0.1;
-        JLTS_recharge = 2;
+        EGVAR(jetpacks,isJetpack) = TRUE;
+        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
+        EGVAR(jetpacks,speed) = JETPACK_SPEED_DEFAULT;
+        EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
+        EGVAR(jetpacks,canHover) = TRUE;
 
-        JLTS_effectPoints[] = {"effect_left", "effect_right"};
-        JLTS_sounds[] = {
-            {"\MRC\JLTS\jumppacks\sounds\ignite.wss", 1, 1},
-            {"\MRC\JLTS\jumppacks\sounds\ignite_fail.wss", 3, 1},
-            {"\MRC\JLTS\jumppacks\sounds\stop.wss", 1, 1},
-            {"\MRC\JLTS\jumppacks\sounds\stop_emergency.wss", 5, 1},
-            "JLTS_jumppack_error",
-            "JLTS_SFX_jumppack_idle"
+        // Effects
+        EGVAR(jetpacks,effectPoints)[] = {"effect_left", "effect_right"};
+        EGVAR(jetpacks,effects)[] = {
+            QCLASS(cloudlet_jetpackFire_blue),
+            QCLASS(cloudlet_jetpackSmoke)
         };
+        EGVAR(jetpacks,effectSound)  = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
+        EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};
+
+        EGVAR(jetpacks,freefallHeight) = 500;
+
         EGVAR(custom_armor,isCustom) = FALSE;
     };
     class CLASS(Jetpack_JT12_LR): CLASS(Jetpack_JT12) {
@@ -399,9 +401,10 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
 
-        JLTS_energy[] = {10, 100};
-        JLTS_jumpLimits[] = {50, {2, 15}, "default"};
-        JLTS_recharge = 1;
+        EGVAR(jetpacks,strength) = 0;
+        EGVAR(jetpacks,speed) = 2;
+        EGVAR(jetpacks,fuel) = 50;
+        EGVAR(jetpacks,canHover) = FALSE;
     };
 
     class CLASS(Jetpack_CDV21_LR): CLASS(Jetpack_CDV21) {
@@ -425,10 +428,8 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_mc_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 
-        JLTS_energy[] = {5,50};
-        JLTS_jumpLimits[] = {15, {2, 30}, "default"};
-        JLTS_steeringCoef = 0.02;
-        JLTS_effectPoints[] = {"effect"};
+        EGVAR(jetpacks,fuel) = 75;
+        EGVAR(jetpacks,effectPoints)[] = {"effect"};
     };
 
     class CLASS(Jetpack_CDV19_LR): CLASS(Jetpack_CDV19) {

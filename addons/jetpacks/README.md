@@ -18,7 +18,6 @@ A player's jetpack can be refueled by two ways:
 
 Any object can be turned into a refuel station by selecting the checkmark when editing the object in the Eden Editor, or by running the following code:
 ```sqf
-// _object is an object reference, like "this" in an object's init.
 _object call BNA_KC_jetpacks_fnc_addRefuelAction;
 ```
 For easy use, the "Jetpack Fuel Tank" object comes with a reload action already.
@@ -26,6 +25,9 @@ For easy use, the "Jetpack Fuel Tank" object comes with a reload action already.
 A player can also have their jetpack refueled by another player by using a jetpack fuel can. An empty fuel can be found under the "Tools" tab in the ACE Arsenal and full fuel cans will be found under "Magazines".
 
 A player with Engineer permissions is able to fill a fuel by ACE interacting to siphon fuel from a dead body with a jetpack. The player with the fuel tank is then able to ACE interact with an alive player and refuel their jetpack.
+
+### Easy Ejections
+Any player that exits an *airborne* vehicle while wearing either a KC jetpack or JLTS jummpack will be automatically moved 30 meters (from the vehicle's center) behind the vehicle to safely eject. This helps for vehicles that have their exit points set inside of or very close the vehicle.
 
 ## Settings
 ### Fuel Drain Coefficient
@@ -41,7 +43,7 @@ Effect of air causing you to slow down while flying.
 ### Particle Limit
 Default Value: **20**
 
-Maximum number of particle effects from jetpacks that can exist at a given time.
+Maximum number of particle effects from jetpacks that can exist at a given time. Particle effects are unique to each client.
 
 ## Keybinds
 ### Activate Jetpack

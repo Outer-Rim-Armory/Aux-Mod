@@ -10,19 +10,17 @@
  * True if unit can use a jetpack, otherwise false <BOOL>
  *
  * Example:
- * ace_player call FUNC(canJetpack);
+ * ace_player call BNA_KC_jetpacks_fnc_canJetpack;
  *
  * Public: Yes
  */
 
-
 params [
     ["_unit", objNull, [objNull]]
 ];
-private ["_jetpack"];
 TRACE_1("fnc_canJetpack",_unit);
 
-_jetpack = backpackContainer _unit;
+private _jetpack = backpackContainer _unit;
 
 if (_unit call ace_common_fnc_isAwake and
     {isNull objectParent _unit} and
