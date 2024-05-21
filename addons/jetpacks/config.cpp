@@ -7,7 +7,6 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QCLASS(core),
-            QCLASS(particles),
             "ace_refuel",
             "ace_parachute"
         };
