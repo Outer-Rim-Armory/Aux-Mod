@@ -149,7 +149,10 @@ class CLASS(CIS_Jetpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
     EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
     EGVAR(jetpacks,canHover) = TRUE;
 
-    EGVAR(jetpacks,effectPoints)[] = {"effect_left", "effect_right"};
+    EGVAR(jetpacks,effectPoints)[] = {
+        {-0.146924, -0.21555, -0.0638125},
+        { 0.164924, -0.21555, -0.0638125}
+    };
     EGVAR(jetpacks,effects)[] = {
         QCLASS(cloudlet_jetpackFire_blue),
         QCLASS(cloudlet_jetpackSmoke)
