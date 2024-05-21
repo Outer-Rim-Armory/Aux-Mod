@@ -8,12 +8,11 @@ class CfgPatches {
         requiredAddons[] = {
             QCLASS(core),
             QCLASS(particles),
-            QEGVAR(objects,resupply),
             "ace_refuel",
             "ace_parachute"
         };
         units[] = {
-            QCLASS(Resupply_JetpackFuel)
+            QCLASS(resupply_jetpackFuel)
         };
         weapons[] = {
             QGVAR(fuelCan_empty),

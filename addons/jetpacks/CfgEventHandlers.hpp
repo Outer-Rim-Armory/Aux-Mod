@@ -19,7 +19,7 @@ class Extended_PostInit_EventHandlers {
 class Extended_Init_EventHandlers {
     class CLASS(Resupply_JetpackFuel) {
         class GVAR(refuel) {
-            init = QUOTE(_this#0 lockInventory true; _this#0 call FUNC(addRefuelAction));
+            init = QUOTE(_this call FUNC(addRefuelAction));
         };
     };
 };

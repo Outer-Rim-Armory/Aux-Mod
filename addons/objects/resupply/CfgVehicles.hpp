@@ -13,8 +13,9 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Resupply);
         editorPreview = EDITOR_PREVIEW(Resupply_Base);
 
-        ace_cargo_size = 1;
+        ace_cargo_canLoad = TRUE;
         ace_cargo_noRename = TRUE;
+        ace_cargo_size = 1;
 
         ace_dragging_canDrag = TRUE;
         ace_dragging_dragDirection = 90;
