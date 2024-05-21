@@ -29,6 +29,43 @@ A player with Engineer permissions is able to fill a fuel by ACE interacting to 
 ### Easy Ejections
 Any player that exits an *airborne* vehicle while wearing either a KC jetpack or JLTS jummpack will be automatically moved 30 meters (from the vehicle's center) behind the vehicle to safely eject. This helps for vehicles that have their exit points set inside of or very close the vehicle.
 
+## Configuration
+Defining any given backpack as a jetpack is relatively simple. The values given here are used as the baseline for all Keeli Company jetpacks.
+
+```cpp
+class CfgVehicles {
+    class TAG_myJetpack {
+        // Movement
+        BNA_KC_jetpacks_isJetpack = 1;  // Enables jetpack functionality (1-yes, 0-no)
+        BNA_KC_jetpacks_speed = 4;  // Horizontal speed for jetpack, rough formula is speed * 21 = speed in km/h
+        BNA_KC_jetpacks_strength = 15;  // Vertical speed for jetpack, rough formula is (speed - 10) * 4.3 = speed in km/h. Strength of <10 will not be able to fly
+        BNA_KC_jetpacks_fuel = 100;  // Amount of fuel this jetpack has, (fuel / 10) = fuel in liters
+        BNA_KC_jetpacks_canHover = 1;  // Enables jetpack hovering (1-yes, 0-no)
+
+        // Effects
+        // Effect points can either be array in format PositionRelative (offset from model center)
+        // or memory point name
+        BNA_KC_jetpacks_effectPoints[] = {
+            {-0.13251, -0.219357, -0.247619},
+            { 0.15051, -0.219357, -0.247619}
+        };
+        // CfgCloudlet classes to spawn *for each effect point*
+        // e.g. these values will create 5 effects, 4 particles + light
+        BNA_KC_jetpacks_effects[] = {
+            "BNA_KC_cloudlet_jetpackFire_blue",
+            "BNA_KC_cloudlet_jetpackSmoke"
+        };
+        // Sound effect to play every 0.3 seconds
+        BNA_KC_jetpacks_effectSound = "\ORA\BNA_KC\addons\jetpacks,data\audio\Jetpack_Loop.wss";
+        BNA_KC_jetpacks_lightColor[] = {0, 0.1, 0.9};  // Light color in format [R, G, B]
+
+        // Other
+        BNA_KC_jetpacks_freefallHeight = 500;  // Freefall height to set on unit when jetpacking
+    };
+};
+```
+
+
 ## Settings
 ### Fuel Drain Coefficient
 Default Value: **100%**

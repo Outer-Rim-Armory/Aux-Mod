@@ -360,12 +360,10 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
 
-        JLTS_isJumppack = FALSE;
-
         EGVAR(jetpacks,isJetpack) = TRUE;
-        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
         EGVAR(jetpacks,speed) = JETPACK_SPEED_DEFAULT;
         EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
+        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
         EGVAR(jetpacks,canHover) = TRUE;
 
         // Effects
@@ -377,7 +375,7 @@ class CfgVehicles {
             QCLASS(cloudlet_jetpackFire_blue),
             QCLASS(cloudlet_jetpackSmoke)
         };
-        EGVAR(jetpacks,effectSound)  = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
+        EGVAR(jetpacks,effectSound) = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
         EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};
 
         EGVAR(jetpacks,freefallHeight) = 500;
