@@ -46,7 +46,7 @@ class CfgVehicles {
         // Effect points can either be array in format PositionRelative (offset from model center)
         // or memory point name
         BNA_KC_jetpacks_effectPoints[] = {
-            {-0.13251, -0.219357, -0.247619},
+            "effect_left",  // Can be mixed
             { 0.15051, -0.219357, -0.247619}
         };
         // CfgCloudlet classes to spawn *for each effect point*
