@@ -47,7 +47,7 @@ class CfgVehicles {
         // or memory point name
         BNA_KC_jetpacks_effectPoints[] = {
             "effect_left",  // Can be mixed
-            { 0.15051, -0.219357, -0.247619}
+            {0.15051, -0.219357, -0.247619}
         };
         // CfgCloudlet classes to spawn *for each effect point*
         // e.g. these values will create 5 effects, 4 particles + light
