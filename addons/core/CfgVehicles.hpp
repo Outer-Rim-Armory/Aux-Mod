@@ -19,6 +19,6 @@ class CfgVehicles {
         model = "";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
-        picture = QPATHTOF(ui\logo_kc_ca.paa);
+        picture = QPATHTOF(data\ui\logo_kc_ca.paa);
     };
 };
