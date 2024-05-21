@@ -41,18 +41,27 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Resupply_Base);
-    class CLASS(Resupply_JetpackFuel): CLASS(Resupply_Base) {
+    class Land_WaterTank_F;
+    class CLASS(resupply_jetpackFuel): Land_WaterTank_F {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
         displayName = "Jetpack Fuel Tank";
 
-        ace_cargo_size = 2;
-        ace_dragging_canDrag = FALSE;
-        ace_dragging_canCarry = FALSE;
+        editorCategory = QEDCAT(objects);
+        editorSubcategory = QEDSUBCAT(resupply);
+        editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WaterTank_F.jpg";
 
         model = "\A3\Structures_F\Items\Vessels\WaterTank_F.p3d";
-        editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WaterTank_F.jpg";
         hiddenSelections[] = {};
         hiddenSelectionsMaterials[] = {};
         hiddenSelectionsTextures[] = {};
+
+        ace_cargo_canLoad = TRUE;
+        ace_cargo_size = 2;
+        ace_cargo_noRename = TRUE;
+
+        // For if/when the property is renamed
+        ace_field_rations_waterSupply = 0;
+        acex_field_rations_waterSupply = 0;
     };
 };
