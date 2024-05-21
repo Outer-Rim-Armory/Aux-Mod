@@ -35,9 +35,6 @@ private _function = {
     private _objectNewFuel = (_objectFuel + REFUEL_PER_SECOND) min _objectMaxFuel;
     private _fuelDifference = round (_objectNewFuel - _objectFuel);
 
-    systemChat str _fuelLevel;
-    systemChat str _fuelDifference;
-
     if (_fuelLevel - _fuelDifference == 0) then {
         _player addMagazine [_fuelCan, 0];
     };
