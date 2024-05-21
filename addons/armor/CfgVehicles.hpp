@@ -369,7 +369,10 @@ class CfgVehicles {
         EGVAR(jetpacks,canHover) = TRUE;
 
         // Effects
-        EGVAR(jetpacks,effectPoints)[] = {"effect_left", "effect_right"};
+        EGVAR(jetpacks,effectPoints)[] = {
+            {-0.13251, -0.219357, -0.247619},
+            { 0.15051, -0.219357, -0.247619}
+        };
         EGVAR(jetpacks,effects)[] = {
             QCLASS(cloudlet_jetpackFire_blue),
             QCLASS(cloudlet_jetpackSmoke)
@@ -405,6 +408,11 @@ class CfgVehicles {
         EGVAR(jetpacks,speed) = 2;
         EGVAR(jetpacks,fuel) = 50;
         EGVAR(jetpacks,canHover) = FALSE;
+
+        EGVAR(jetpacks,effectPoints)[] = {
+            {-0.0753933, -0.239498, -0.149011},
+            { 0.0933938, -0.239498, -0.149011}
+        };
     };
 
     class CLASS(Jetpack_CDV21_LR): CLASS(Jetpack_CDV21) {
@@ -429,7 +437,9 @@ class CfgVehicles {
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_mc_ui_ca.paa";
 
         EGVAR(jetpacks,fuel) = 75;
-        EGVAR(jetpacks,effectPoints)[] = {"effect"};
+        EGVAR(jetpacks,effectPoints)[] = {
+            {0.00900585, -0.212387, -0.16184}
+        };
     };
 
     class CLASS(Jetpack_CDV19_LR): CLASS(Jetpack_CDV19) {

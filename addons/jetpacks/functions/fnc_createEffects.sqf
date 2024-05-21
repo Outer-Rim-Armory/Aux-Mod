@@ -17,7 +17,6 @@
  * Public: No
  */
 
-#define POS_SPINE3 [-0.009, -0.008, 0.356]
 #define WEAPON_OFFSET [-0.12, 0, 0.1]
 
 params ["_unit", "_jetpack"];
@@ -42,40 +41,45 @@ if (GVAR(totalParticles) + _totalNewEffects > GVAR(particleLimit)) exitWith {
 };
 GVAR(totalParticles) = GVAR(totalParticles) + _totalNewEffects;
 
-[{
-    params ["_unit", "_jetpack", "_effectPoints", "_effectTypes"];
+private _effectSources = [];
 
-    private _effectSources = [];
+{
+    private _position = switch (typeName _x) do {
+        case "STRING": {
+            _jetpack selectionPosition [_x, "Memory"];
+        };
+        case "ARRAY": {
+            _x;
+        };
+        default {
+            [0, 0, 0];
+        };
+    };
+
+    // Try to account for weapon animation, not perfect especially if weapon is put away afterwards
+    if (currentWeapon _unit != "") then {
+        _position = _position vectorAdd WEAPON_OFFSET;
+    };
 
     {
-        private _position = _jetpack selectionPosition [_x, "Memory"];
-        _position = _position vectorDiff POS_SPINE3;
+        private _effect = "#particleSource" createVehicleLocal [0, 0, 0];
+        _effect setParticleClass _x;
+        _effect attachTo [_unit, _position, "spine3"];
+        _effectSources pushBack _effect;
+    } forEach _effectTypes;
 
-        // Try to account for weapon animation, not perfect especially if weapon is put away
-        if (currentWeapon _unit != "") then {
-            _position = _position vectorAdd WEAPON_OFFSET;
-        };
+    private _lightColor = getArray (configOf _jetpack >> QGVAR(lightColor));
+    if (_lightColor isEqualTo []) then {
+        _lightColor = [0, 0, 0];
+    };
 
-        {
-            private _effect = "#particleSource" createVehicleLocal [0, 0, 0];
-            _effect setParticleClass _x;
-            _effect attachTo [_unit, _position, "aimPoint"];
-            _effectSources pushBack _effect;
-        } forEach _effectTypes;
+    private _lightSource = "#lightPoint" createVehicleLocal [0, 0, 0];
+    _lightSource setLightColor _lightColor;
+    _lightSource setLightBrightness 0.5;
+    _lightSource attachTo [_unit, [0, -0.4, 0], "aimPoint"];
+    _effectSources pushBack _lightSource;
+} forEach _effectPoints;
 
-        private _lightColor = getArray (configOf _jetpack >> QGVAR(lightColor));
-        if (_lightColor isEqualTo []) then {
-            _lightColor = [0, 0, 0];
-        };
-
-        private _lightSource = "#lightPoint" createVehicleLocal [0, 0, 0];
-        _lightSource setLightColor _lightColor;
-        _lightSource setLightBrightness 0.5;
-        _lightSource attachTo [_unit, [0, -0.4, 0], "aimPoint"];
-        _effectSources pushBack _lightSource;
-    } forEach _effectPoints;
-
-    _unit setVariable [QGVAR(effects), _effectSources];
-}, [_unit, _jetpack, _effectPoints, _effectTypes]] call CBA_fnc_waitAndExecute;
+_unit setVariable [QGVAR(effects), _effectSources];
 
 nil;
