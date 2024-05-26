@@ -22,13 +22,15 @@
 params ["_unit", "", "_vehicle"];
 TRACE_2("fnc_getOutMan",_unit,_vehicle);
 
-if (_unit != ace_player or
-    {isTouchingGround _vehicle} or {
+if (_unit != ace_player or {
     !(_unit call FUNC(hasJetpack) or {
         private _backpack = backpack _unit;
         _backpack call JLTS_fnc_jumpIsJumppack;
     })
 }) exitWith {false};
+
+private _height = (getPosATL _vehicle) select 2;
+if (isTouchingGround _vehicle or {_height < 10}) exitWith {false};
 
 private _direction = getDir _vehicle;
 private _positionASL = getPosASL _vehicle vectorAdd [-GETOUT_SPACING * sin _direction, -GETOUT_SPACING * cos _direction, 0];
