@@ -109,6 +109,7 @@ class CfgWeapons {
             uniformClass = QCLASS(GM_Unit_Base);
         };
     };
+
     class CLASS(GM_Uniform_Vex): CLASS(GM_Uniform) {
         displayName = "[GM] General Vex's Armor";
         picture = "\armor_unit\Ui\Merc_Armor_Tayrus.paa";
