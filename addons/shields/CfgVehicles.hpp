@@ -30,7 +30,6 @@ class CfgVehicles {
         };
     };
 
-    class Plane_Fighter_03_dynamicLoadout_base_F;
     class BTL_Base: Plane_Fighter_03_dynamicLoadout_base_F {
         class ACE_Actions;
         class ACE_SelfActions;
