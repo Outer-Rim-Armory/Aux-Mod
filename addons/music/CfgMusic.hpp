@@ -179,6 +179,10 @@ class CfgMusic {
     MUSIC(Blank,"Stop Music",0,Other);
     MUSIC(UNK_Admiral_Goliath,"Admiral Goliath",324,Other);
     MUSIC(UNK_Kraken_Theme,"The Kraken",221,Other);
+    MUSIC(EPF_General_Theme_Short,"Generals Theme Short",125,Other);
+    MUSIC(EPF_General_Legacy,"El Generals Legacy",148,Other);
+    MUSIC(EPF_General_Music,"Generals Theme Music",242,Other);
+    MUSIC(EPF_General_Speech,"Generals Theme Music",243,Other);
 
     // HellDivers 2
     MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);
