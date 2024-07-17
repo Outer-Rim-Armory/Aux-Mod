@@ -21,8 +21,6 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(ItemCore);
-    class CLASS(ItemCore_ItemInfo);
     class GVAR(Painkiller): CLASS(ItemCore) {
         SCOPE_PUBLIC;
         author = AUTHOR;

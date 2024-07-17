@@ -6,8 +6,4 @@ class CfgEditorSubcategories {
     class EDSUBCAT(StaticShips) {
         displayName = "Static Ships";
     };
-
-    class EDSUBCAT(Resupply) {
-        displayName = "Resupply";
-    };
 };

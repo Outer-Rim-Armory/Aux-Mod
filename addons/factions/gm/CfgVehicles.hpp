@@ -6,6 +6,7 @@ class CfgVehicles {
         editorSubcategory = QCLASS(EdSubCat_GM_INF_T1);
 
         genericNames = QCLASS(GM_Soldier);
+        modelSides[] = {ALL_SIDES};
 
         items[] = {
             // Medical
@@ -180,6 +181,7 @@ class CfgVehicles {
     };
 
     class CLASS(GM_RLA_Unit_Rifleman): CLASS(GM_Unit_Rifleman) {
+        side = OPFOR;
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Rifleman);
         genericNames = QCLASS(RLA_Soldier);
@@ -189,6 +191,7 @@ class CfgVehicles {
         backpack = QCLASS(GM_RLA_Backpack_Predef_Rifleman);
     };
     class CLASS(GM_RLA_Unit_Rifleman_T2): CLASS(GM_Unit_Rifleman_T2) {
+        side = OPFOR;
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Rifleman_T2);
         genericNames = QCLASS(RLA_Soldier);
@@ -199,6 +202,7 @@ class CfgVehicles {
     };
 
     class CLASS(GM_RLA_Unit_AT): CLASS(GM_Unit_AT) {
+        side = OPFOR;
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT);
         genericNames = QCLASS(RLA_Soldier);
@@ -208,6 +212,7 @@ class CfgVehicles {
         backpack = QCLASS(GM_RLA_Backpack_Heavy_Predef_AT);
     };
     class CLASS(GM_RLA_Unit_AT_T2): CLASS(GM_Unit_AT_T2) {
+        side = OPFOR;
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT_T2);
         genericNames = QCLASS(RLA_Soldier);
@@ -218,6 +223,7 @@ class CfgVehicles {
     };
 
     class CLASS(GM_RLA_Unit_AA): CLASS(GM_Unit_AA) {
+        side = OPFOR;
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT);
         genericNames = QCLASS(RLA_Soldier);
@@ -227,6 +233,7 @@ class CfgVehicles {
         backpack = QCLASS(GM_RLA_Backpack_Heavy_Predef_AA);
     };
     class CLASS(GM_RLA_Unit_AA_T2): CLASS(GM_Unit_AA_T2) {
+        side = OPFOR;
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_AT_T2);
         genericNames = QCLASS(RLA_Soldier);
@@ -237,6 +244,7 @@ class CfgVehicles {
     };
 
     class CLASS(GM_RLA_Unit_Marksman): CLASS(GM_Unit_Marksman) {
+        side = OPFOR;
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Marksman);
         genericNames = QCLASS(RLA_Soldier);
@@ -246,6 +254,7 @@ class CfgVehicles {
         backpack = QCLASS(GM_RLA_Backpack_Predef_Marksman);
     };
     class CLASS(GM_RLA_Unit_Marksman_T2): CLASS(GM_Unit_Marksman_T2) {
+        side = OPFOR;
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_Marksman_T2);
         genericNames = QCLASS(RLA_Soldier);
@@ -256,6 +265,7 @@ class CfgVehicles {
     };
 
     class CLASS(GM_RLA_Unit_SL): CLASS(GM_Unit_SL) {
+        side = OPFOR;
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_SL);
         genericNames = QCLASS(RLA_Soldier);
@@ -265,6 +275,7 @@ class CfgVehicles {
         backpack = QCLASS(GM_RLA_Backpack_RTO_Predef_SL);
     };
     class CLASS(GM_RLA_Unit_SL_T2): CLASS(GM_Unit_SL_T2) {
+        side = OPFOR;
         editorSubcategory = QEDSUBCAT(GM_RLA);
         editorPreview = EDITOR_PREVIEW(GM_RLA_Unit_SL_T2);
         genericNames = QCLASS(RLA_Soldier);

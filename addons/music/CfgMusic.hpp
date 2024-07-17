@@ -74,7 +74,7 @@ class CfgMusic {
     MUSIC(MG_RulesOfNature,"[MG] Rules of Nature",150,VideoGames);
     MUSIC(MG_TheOnlyThingIKnowForReal,"[MG] The Only Thing I Know For Real",150,VideoGames);
     MUSIC(MG_TheStainsOfTime,"[MG] The Stains of Time",130,VideoGames);
-    MUSIC(MG_SlipperyLittleBastad,"[MG] Slippery Little Bastard",125,VideoGames);
+    MUSIC(MG_SlipperyLittleBastad,"[MG] Slippery Little Bastard",141,VideoGames);
     MUSIC(MG_TheSenatorsArrival,"[MG] The Senator's Arrival",34,VideoGames);
 
     // Monster Hunter
@@ -179,11 +179,21 @@ class CfgMusic {
     MUSIC(Blank,"Stop Music",0,Other);
     MUSIC(UNK_Admiral_Goliath,"Admiral Goliath",324,Other);
     MUSIC(UNK_Kraken_Theme,"The Kraken",221,Other);
+    MUSIC(EPF_General_Theme_Short,"Generals Theme Short",125,Other);
+    MUSIC(EPF_General_Legacy,"El Generals Legacy",148,Other);
+    MUSIC(EPF_General_Music,"Generals Theme Music",242,Other);
+    MUSIC(EPF_General_Speech,"Generals Theme Music",243,Other);
 
     // HellDivers 2
     MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);
     MUSIC(HD_Loadout_Theme,"Loadout Select",332,VideoGames);
     MUSIC(RDF_Downfall,"RDF Downfall",355,VideoGames);
+
+    // Project Zomboid
+    MUSIC(PZ_Overrun,"Overrun",248,VideoGames);
+    MUSIC(PZ_The_Horde,"The Horde",119,VideoGames);
+    MUSIC(PZ_Desperate_Escape,"The Horde",109,VideoGames);
+
 
 
     // Unknown

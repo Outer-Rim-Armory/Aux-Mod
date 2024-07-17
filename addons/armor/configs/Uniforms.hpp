@@ -295,3 +295,10 @@ class CLASS(Uniform_phase1Geo_Commander): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_phase1Geo_Commander);
     };
 };
+
+class CLASS(cloneArmor_uniform_textureTest): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor (Texture Test)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(cloneArmor_unit_textureTest);
+    };
+};

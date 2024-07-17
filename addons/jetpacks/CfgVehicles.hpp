@@ -17,22 +17,16 @@ class CfgVehicles {
                     icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
 
                     distance = 1.75;
-                    // exceptions[] = { "isNotInside", "isNotSitting", "isNotSwimming", "isNotDragging", "isNotCarrying" };
 
                     condition = QUOTE(call FUNC(canRefuelFromBody));
-                    statement = QUOTE(call FUNC(refuelFromBody));
-                    modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
+                    statement = QUOTE(call FUNC(refuelFromObject));
+                    modifierFunction = QUOTE(call FUNC(modifyInteraction));
                 };
 
-                class GVAR(refuelPlayer) {
-                    displayName = "Refuel player's %1";
-                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa";
-
-                    distance = 1.75;
-
-                    condition = QUOTE(call FUNC(canRefuelPlayer));
-                    statement = QUOTE(call FUNC(refuelOtherPlayer));
-                    modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
+                class GVAR(refuelTarget): GVAR(refuelFromBody) {
+                    displayName = "Refuel %1";
+                    condition = QUOTE(call FUNC(canRefuelTarget));
+                    statement = QUOTE(call FUNC(refuelTarget));
                 };
             };
         };
@@ -47,70 +41,27 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(cloneBackpack_base);
-    class CLASS(Jetpack_JT12): CLASS(cloneBackpack_base) {
-        JLTS_isJumppack = FALSE;
-
-        GVAR(isJetpack) = TRUE;
-        GVAR(fuel) = JETPACK_FUEL_DEFAULT;
-        GVAR(speed) = JETPACK_SPEED_DEFAULT;     // Jetpack speed, effects how fast you move in the air
-        GVAR(strength) = JETPACK_STRENGTH_DEFAULT; // Jetpack strength, effects fast the player rises
-        GVAR(canHover) = TRUE;
-
-        // Effects
-        GVAR(effectPoints)[] = {"effect_left", "effect_right"}; // Points to spawn effects, these come from the JLTS model
-        GVAR(effects)[] = {
-            QCLASS(Effects_JetpackFire_Blue),
-            QCLASS(Effects_JetpackSmoke)
-        };
-        GVAR(effectSound)  = QPATHTOF(data\audio\Jetpack_Loop.wss);
-        GVAR(lightColor)[] = {0, 0.1, 0.9};
-
-        GVAR(freefallHeight) = 500;
-    };
-
-    class CLASS(Jetpack_CDV21): CLASS(Jetpack_JT12) {
-        GVAR(strength) = 0;
-        GVAR(canHover) = FALSE;
-    };
-
-    class CLASS(Jetpack_CDV19): CLASS(Jetpack_JT12) {
-        GVAR(effectPoints)[] = {"effect"};
-    };
-
-    class CLASS(CIS_Backpack_Droid_B1);
-    class CLASS(CIS_Jetpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
-        JLTS_isJumppack = FALSE;
-
-        GVAR(isJetpack) = TRUE;
-        GVAR(fuel) = JETPACK_FUEL_DEFAULT;
-        GVAR(speed) = JETPACK_SPEED_DEFAULT;
-        GVAR(strength) = JETPACK_STRENGTH_DEFAULT;
-        GVAR(canHover) = TRUE;
-
-        GVAR(effectPoints)[] = {"effect_left", "effect_right"};
-        GVAR(effects)[] = {
-            QCLASS(Effects_JetpackFire_Blue),
-            QCLASS(Effects_JetpackSmoke)
-        };
-        GVAR(effectSound)  = QPATHTOF(data\audio\Jetpack_Loop.wss);
-        GVAR(lightColor)[] = {0, 0.1, 0.9};
-
-        GVAR(freefallHeight) = 100000;
-    };
-
-    class CLASS(Resupply_Base);
-    class CLASS(Resupply_JetpackFuel): CLASS(Resupply_Base) {
+    class Land_WaterTank_F;
+    class CLASS(resupply_jetpackFuel): Land_WaterTank_F {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
         displayName = "Jetpack Fuel Tank";
 
-        ace_cargo_size = 2;
-        ace_dragging_canDrag = FALSE;
-        ace_dragging_canCarry = FALSE;
+        editorCategory = QEDCAT(objects);
+        editorSubcategory = QEDSUBCAT(resupply);
+        editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WaterTank_F.jpg";
 
         model = "\A3\Structures_F\Items\Vessels\WaterTank_F.p3d";
-        editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Land_WaterTank_F.jpg";
         hiddenSelections[] = {};
         hiddenSelectionsMaterials[] = {};
         hiddenSelectionsTextures[] = {};
+
+        ace_cargo_canLoad = TRUE;
+        ace_cargo_size = 2;
+        ace_cargo_noRename = TRUE;
+
+        // For if/when the property is renamed
+        ace_field_rations_waterSupply = 0;
+        acex_field_rations_waterSupply = 0;
     };
 };

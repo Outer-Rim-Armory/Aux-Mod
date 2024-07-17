@@ -1,16 +1,14 @@
 class CfgWeapons {
     class CLASS(ItemCore);
     class CLASS(ItemCore_ItemInfo);
-    class CLASS(Jetpack_FuelCan_Empty): CLASS(ItemCore) {
-        author = AUTHOR;
-
+    class GVAR(fuelCan_empty): CLASS(ItemCore) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Jetpack Fuel Can (Empty)";
-        descriptionShort = "An empty Jetpack fuel can.";
+        descriptionShort = "An empty fuel can.<br/>Can carry 4 liters of fuel.";
 
         GVAR(isFuelCan) = TRUE;
-        GVAR(fuelCanMag) = QCLASS(Jetpack_FuelCan_Mag);
+        GVAR(fuelCanMag) = QGVAR(fuelCan_mag);
 
         ACE_isTool = TRUE;
 

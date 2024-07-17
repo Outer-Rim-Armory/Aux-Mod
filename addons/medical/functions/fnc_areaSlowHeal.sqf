@@ -69,7 +69,7 @@ _function = {
     _nearbyUnits = _nearbyUnits select {
         !(_x call FUNC(isFullyHealed) or _x in _unitsToHeal);
     };
-    _nearbyUnits = _nearbyUnits call FUNC(sortByInjuries);
+    _nearbyUnits = [_nearbyUnits] call FUNC(sortByInjuries);
 
     _unitsToHeal append _nearbyUnits;
 

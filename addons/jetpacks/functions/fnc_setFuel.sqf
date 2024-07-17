@@ -1,38 +1,44 @@
 #include "..\script_component.hpp"
 /*
  * Author: DartRuffian
- * Sets the fuel level of a unit's jetpack.
+ * Sets the fuel level of an object.
  *
  * Arguments:
- * 0: Unit <OBJECT>
+ * 0: Object <OBJECT>
  * 1: Fuel amount <NUMBER>
  *
  * Return Value:
- * None
+ * The fuel amount of the container
  *
  * Examples:
- * [ace_player, 100] call FUNC(setFuel);
+ * [ace_player, 100] call BNA_KC_jetpacks_fnc_setFuel;
  *
  * Public: Yes
  */
 
 params [
-    ["_unit", objNull, [objNull]],
+    ["_object", objNull, [objNull]],
     ["_fuelAmount", -1, [0]]
 ];
-private ["_jetpack", "_maxFuel", "_oldFuel"];
-TRACE_2("fnc_setFuel",_unit,_fuelAmount);
+TRACE_2("fnc_setFuel",_object,_fuelAmount);
 
-_jetpack = backpackContainer _unit;
+private _unit = objNull;
+if (_object isKindOf "CAManBase") then {
+    _unit = _object;
+    _object = backpackContainer _object;
+};
 
-if (isNull _unit or
-    {_fuelAmount < 0} or
-    {!(_unit call FUNC(hasJetpack))}
-) exitWith {};
+private _maxFuel = _object getVariable [QGVAR(maxFuel), getNumber (configOf _object >> QGVAR(fuel))];
 
-_maxFuel = _jetpack getVariable [QGVAR(maxFuel), JETPACK_FUEL_DEFAULT];
-_oldFuel = _jetpack getVariable [QGVAR(fuel), _maxFuel];
-_fuelAmount = CLAMP(_fuelAmount,0,_maxFuel);
+if (isNull _object or {_maxFuel <= 0}) exitWith {-1};
 
-_jetpack setVariable [QGVAR(fuel), _fuelAmount, true];
-[QGVAR(fuelChanged), [_unit, _jetpack, _oldFuel, _fuelAmount], _unit] call CBA_fnc_targetEvent;
+private _oldFuel = _object getVariable [QGVAR(fuel), _maxFuel];
+private _fuelAmount = CLAMP(_fuelAmount,0,_maxFuel);
+
+_object setVariable [QGVAR(fuel), _fuelAmount, true];
+
+if ([_unit, true] call ace_common_fnc_isPlayer) then {
+    [QGVAR(fuelChanged), [_unit, _object, _oldFuel, _fuelAmount], _unit] call CBA_fnc_targetEvent;
+};
+
+_fuelAmount;

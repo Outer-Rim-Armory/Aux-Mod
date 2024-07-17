@@ -1,5 +1,5 @@
 class CfgCloudlets {
-    class CLASS(Cloudlet_Flare1) {
+    class CLASS(cloudlet_flare1) {
         angle = 0;
         angleVar = 360;
         animationName = "";
@@ -49,13 +49,137 @@ class CfgCloudlets {
         weight = 1.278;
     };
 
-    class CLASS(Cloudlet_ATRT_Smoke): CLASS(Cloudlet_Flare1) {
+    class CLASS(cloudlet_flare2): CLASS(cloudlet_flare1) {
+        animationSpeed[] = {1000};
+        color[] = {
+            {1, 1, 1, -1.6},
+            {1, 1, 1, -1.6},
+            {1, 1, 1, -1.6},
+            {1, 1, 1, 0}
+        };
+        interval = 0.0007;
+        lifeTime = 0.05;
+        lifeTimeVar = 0.01;
+        moveVelocity[] = {0, 1.5, 0};
+        moveVelocityVar[] = {1, 0.2, 1};
+        particleFSFrameCount = 2;
+        particleFSIndex = 3;
+        positionVar[] = {0, 0, 0};
+        randomDirectionIntensity = 0.1;
+        size[] = {0.08, 0.07};
+        sizeVar = 0;
+        volume = 0.8;
+        weight = 1;
+    };
+
+    class Default;
+    class CLASS(cloudlet_airFireSparks): Default {
+        angle = 0;
+        angleVar = 360;
+        animationName = "";
+        animationSpeed[] = {1000};
+        animationSpeedCoef = 1;
+        beforeDestroyScript = "";
+        blockAIVisibility = 0;
+        circleRadius = 0;
+        circleVelocity[] = {0, 0, 0};
+        color[] = {
+            {1, 0.3, 0.3, -6.5},
+            {1, 0.3, 0.3, -6},
+            {1, 0.3, 0.3, -5.5},
+            {1, 0.3, 0.3, -4.5}
+        };
+        colorCoef[] = {1, 1, 1, 1};
+        colorVar[] = {0, 0.15, 0.15, 0};
+        destroyOnWaterSurface = 1;
+        interval = 0.05;
+        lifeTime = 3.5;
+        lifeTimeVar = 2.5;
+        moveVelocity[] = {0, 1.5, 0};
+        MoveVelocityVar[] = {0.2, 1, 0.2};
+        MoveVelocityVarConst[] = {0, 0, 0};
+        onTimerScript = "";
+        particleFSFrameCount = 2;
+        particleFSIndex = 13;
+        particleFSLoop = 0;
+        particleFSNtieth = 16;
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal";
+        particleType = "Billboard";
+        position[] = {0,0,0};
+        positionVar[] = {0,0.2,0};
+        positionVarConst[] = {0,0,0};
+        randomDirectionIntensity = 0.55;
+        randomDirectionIntensityVar = 0.15;
+        randomDirectionPeriod = 0.5;
+        randomDirectionPeriodVar = 0.3;
+        rotationVelocity = 1;
+        rotationVelocityVar = 2;
+        rubbing = 0.17;
+        size[] = {0.1, 0.1, 0.1, 0.1, 0.1, 0.08, 0.08, 0.08, 0.08,0};
+        sizeCoef = 1;
+        sizeVar = 0.04;
+        timerPeriod = 1;
+        volume = 1;
+        weight = 1.05;
+    };
+
+    class CLASS(cloudlet_mediumSmoke): Default {
+        angle = 0;
+        angleVar = 1;
+        animationName = "";
+        animationSpeed[] = {1.5, 0.5};
+        animationSpeedCoef = 1;
+        beforeDestroyScript = "";
+        circleRadius = 0;
+        circleVelocity[] = {0, 0, 0};
+        color[] = {
+            {0.1, 0.1, 0.1, 0.06},
+            {0.2, 0.2, 0.2, 0.04},
+            {0.2, 0.2, 0.2, 0.02},
+            {0.3, 0.3, 0.3, 0.01},
+            {0.4, 0.4, 0.4, 0.005}
+        };
+        colorCoef[] = {1.6, 1.6, 1.6, 1.8};
+        colorVar[] = {0, 0, 0, 0};
+        interval = 0.08;
+        lifeTime = 15;
+        lifeTimeVar = 4;
+        moveVelocity[] = {0, 1.2, 0};
+        MoveVelocityVar[] = {0.15, 0.2, 0.15};
+        MoveVelocityVarConst[] = {0, 0, 0};
+        onTimerScript = "";
+        particleFSFrameCount = 48;
+        particleFSIndex = 7;
+        particleFSLoop = 1;
+        particleFSNtieth = 16;
+        particleShape = "\A3\data_f\ParticleEffects\Universal\Universal";
+        particleType = "Billboard";
+        position[] = {0, 0, 0};
+        positionVar[] = {0.5, 0.3, 0.5};
+        positionVarConst[] = {0, 0, 0};
+        randomDirectionIntensity = 0.15;
+        randomDirectionIntensityVar = 0.05;
+        randomDirectionPeriod = 0.4;
+        randomDirectionPeriodVar = 0.1;
+        rotationVelocity = 0;
+        rotationVelocityVar = 10;
+        rubbing = 0.1;
+        size[] = {1.2, 10};
+        sizeCoef = 1;
+        sizeVar = 0.1;
+        timerPeriod = 1;
+        volume = 0.04;
+        weight = 0.05;
+    };
+
+    #include "configs\Jetpacks.hpp"
+
+    class CLASS(Cloudlet_ATRT_Smoke): CLASS(cloudlet_flare1) {
         colorCoef[] = {0.3, 0.3, 0.3, 1};
         lifeTime = 4;
         sizeCoef = 0.9;
     };
 
-    class Default;
     class CLASS(Cloudlet_E60R_Sparks): Default {
         particleShape = "\A3\data_f\ParticleEffects\Universal\Universal";
         color[] = {{1, 0.6, 0.4, -50}};

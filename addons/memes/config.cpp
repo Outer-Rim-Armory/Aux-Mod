@@ -13,7 +13,8 @@ class CfgPatches {
             "3AS_Backpacks"
         };
         units[] = {
-            QGVAR(backpack_hussarWings)
+            QGVAR(jetpack_hussarWings),
+            QGVAR(cloneJetpack_stachePack)
         };
         weapons[] = {};
         VERSION_CONFIG;

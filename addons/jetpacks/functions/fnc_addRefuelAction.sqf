@@ -12,26 +12,26 @@
  * None
  *
  * Examples:
- * cursorObject call FUNC(addRefuelAction);
+ * cursorObject call BNA_KC_jetpacks_fnc_addRefuelAction;
+ *
+ * Public: No
  */
 
 params [
     ["_object", objNull, [objNull]],
     ["_showAction", TRUE, [TRUE]]
 ];
-private ["_action"];
 TRACE_2("fnc_addRefuelAction",_object,_showAction);
 
 if (_showAction != TRUE) exitWith {};
 
-_action = [QGVAR(refuel), "Refuel Jetpack", "\z\ace\addons\refuel\ui\icon_refuel_interact.paa", {
+private _action = [QGVAR(refuel), "Refuel Jetpack", "\z\ace\addons\refuel\ui\icon_refuel_interact.paa", {
     params ["_target", "_player", "_params"];
-    private ["_jetpack", "_maxFuel"];
     playSound3D ["\a3\missions_f_oldman\data\sound\refueling\refueling_start.wss", _player];
 
-    _jetpack = backpackContainer _player;
-    _maxFuel = _jetpack getVariable [QGVAR(maxFuel), JETPACK_FUEL_DEFAULT];
-    [_player, _maxFuel] call BNA_KC_Jetpacks_fnc_setFuel;
+    private _jetpack = backpackContainer _player;
+    private _maxFuel = _jetpack getVariable [QGVAR(maxFuel), getNumber (configOf _jetpack >> QGVAR(fuel))];
+    [_player, _maxFuel] call FUNC(setFuel);
 }, {
     params ["_target", "_player", "_params"];
     _player call FUNC(hasJetpack) and {[_player, true] call FUNC(getFuel) < 1};

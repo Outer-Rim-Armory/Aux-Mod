@@ -33,16 +33,16 @@ class CfgPatches {
             QCLASS(RDF_Unit_Medic),
             QCLASS(RDF_Unit_SWAT),
             QCLASS(RDF_Unit_SWAT_Chaingun),
-            QCLASS(rdfArmor_backpack),
-            QCLASS(rdfArmor_backpack_predef_rifleman),
-            QCLASS(rdfArmor_backpack_predef_grenadier),
-            QCLASS(rdfArmor_backpack_predef_autorifleman),
-            QCLASS(rdfArmor_backpack_predef_riflemanAT),
-            QCLASS(rdfArmor_backpack_medic),
-            QCLASS(rdfArmor_backpack_medic_predef_medic),
-            QCLASS(rdfArmor_backpack_swat),
-            QCLASS(rdfArmor_backpack_swat_predef_rifleman),
-            QCLASS(rdfArmor_backpack_swat_predef_chaingun)
+            QCLASS(rdfBackpack),
+            QCLASS(rdfBackpack_predef_rifleman),
+            QCLASS(rdfBackpack_predef_grenadier),
+            QCLASS(rdfBackpack_predef_autorifleman),
+            QCLASS(rdfBackpack_predef_riflemanAT),
+            QCLASS(rdfBackpack_medic),
+            QCLASS(rdfBackpack_medic_predef_medic),
+            QCLASS(rdfBackpack_swat),
+            QCLASS(rdfBackpack_swat_predef_rifleman),
+            QCLASS(rdfBackpack_swat_predef_chaingun)
         };
         weapons[] = {
             QCLASS(rdfArmor_helmet),

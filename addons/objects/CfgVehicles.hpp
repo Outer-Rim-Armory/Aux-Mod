@@ -99,12 +99,12 @@ class CfgVehicles {
             class Assign_Engineer: Assign_Medic {
                 displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(core,data\ui\EOD_White_ca.paa)/> Assign Engineer Permissions</t>);
                 condition = QUOTE(!(ace_player call EFUNC(core,isEngineer)));
-                statement = QUOTE([ARR_2(ace_player,true)] call EFUNC(core,setEngineer));
+                statement = QUOTE([ARR_2(ace_player,2)] call EFUNC(core,setEngineer));
             };
             class Unassign_Engineer: Assign_Engineer {
                 displayName = QUOTE(<t color='#f0be00'><img image=QQPATHTOEF(core,data\ui\EOD_White_ca.paa)/> Unassign Engineer Permissions</t>);
                 condition = QUOTE(ace_player call EFUNC(core,isEngineer));
-                statement = QUOTE([ARR_2(ace_player,false)] call EFUNC(core,setEngineer));
+                statement = QUOTE([ARR_2(ace_player,0)] call EFUNC(core,setEngineer));
             };
         };
     };
