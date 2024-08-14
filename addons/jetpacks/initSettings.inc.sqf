@@ -23,3 +23,11 @@
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     [0, 100, 20, -1]
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(easyEjection),
+    "CHECKBOX",
+    ["Easy Ejection", "If enabled, ejecting from an airborne vehicle will automatically move the player ~30m behind the vehicle to prevent getting stuck inside."],
+    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
+    true
+] call CBA_fnc_addSetting;

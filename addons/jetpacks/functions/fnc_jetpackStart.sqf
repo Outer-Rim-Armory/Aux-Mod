@@ -35,7 +35,9 @@ private _speed = getNumber (configOf _jetpack >> QGVAR(speed));
 private _freefallHeight = getNumber (configOf _jetpack >> QGVAR(freefallHeight));
 
 if (_freefallHeight > 0) then {
-    ace_player setUnitFreefallHeight _freefallHeight;
+    private _originalHeight = (getUnitFreefallInfo ace_player) select 2;
+    ace_player setVariable [QGVAR(freefallHeight), _originalHeight];
+    ace_player setUnitFreefallHeight (_freefallHeight max _originalHeight);
 };
 
 private _velocity = velocity ace_player;
