@@ -543,9 +543,9 @@ class CfgVehicles {
         typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
 
         hiddenSelectionsTextures[] = {
-            "\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa",
-            "\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa",
-            "\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"
+            "\OPTRE_Vehicles_Air\Falcon\data\Green\Falcon_Main_co.paa",
+            "\OPTRE_Vehicles_Air\Falcon\data\Green\Falcon_Attachments_co.paa",
+            "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
         };
         textureList[] = {"TechnoUnion", 0, "EPF", 1};
     };
@@ -562,9 +562,9 @@ class CfgVehicles {
         typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
 
         hiddenSelectionsTextures[] = {
-            "\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa",
-            "\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa",
-            "\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"
+            "\OPTRE_Vehicles_Air\Falcon\data\Green\Falcon_Main_co.paa",
+            "\OPTRE_Vehicles_Air\Falcon\data\Green\Falcon_Attachments_co.paa",
+            "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
         };
         textureList[] = {"TechnoUnion", 0, "EPF", 1};
     };

@@ -21,9 +21,9 @@ class CfgVehicles {
 
         hiddenSelections[] = {"camo1", "camo2", "camo3", "attach_gun", "attach_sideguns"};
         hiddenSelectionsTextures[] = {
-            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Main_co.paa",
-            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Attachments_co.paa",
-            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Interior_co.paa"
+            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Main_co.paa",
+            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Attachments_co.paa",
+            "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
         };
 
         textureList[] = {"TechnoUnion", 1, "EPF", 0};
@@ -33,9 +33,9 @@ class CfgVehicles {
                 displayName = "Techno Union";
                 factions[] = {QFACTION(TU)};
                 textures[] = {
-                    "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Main_co.paa",
-                    "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Attachments_co.paa",
-                    "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Interior_co.paa"
+                    "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Main_co.paa",
+                    "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Attachments_co.paa",
+                    "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
                 };
             };
             class EPF: TechnoUnion {
@@ -44,7 +44,7 @@ class CfgVehicles {
                 textures[] = {
                     "\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa",
                     "\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa",
-                    "\OPTRE_Vehicles_Air\falcon\data\falcon_interior_co.paa"
+                    "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
                 };
             };
         };
@@ -68,9 +68,9 @@ class CfgVehicles {
 
         hiddenSelections[] = {"camo1", "camo2", "camo3"};
         hiddenSelectionsTextures[] = {
-            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Main_co.paa",
-            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Attachments_co.paa",
-            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Tan_Falcon_Interior_co.paa"
+            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Main_co.paa",
+            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Attachments_co.paa",
+            "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
         };
 
         class Components: Components {
