@@ -82,11 +82,21 @@ Default Value: **20**
 
 Maximum number of particle effects from jetpacks that can exist at a given time. Particle effects are unique to each client.
 
+### Easy Ejection
+Default Value: **True**
+
+Enabled/disables the easy ejection.
+
 ## Keybinds
 ### Activate Jetpack
 Default Key: **<kbd>Shift</kbd> + <kbd>Space</kbd>** (Hold)
 
-Activates a jetpack and begins flying upwards.
+Activates the user's jetpack and begins flying upwards.
+
+### Deactivate Jetpack
+Default Key: **None**
+
+Deactivates the user's jetpack.
 
 ### Activate Slow Fall
 Default Key: **<kbd>Space</kbd>** (Hold)
