@@ -12,6 +12,7 @@ PREP(getOutMan);
 PREP(hasJetpack);
 PREP(jetpackPFH);
 PREP(jetpackStart);
+PREP(jetpackStop);
 PREP(modifyInteraction);
 PREP(playErrorSound);
 PREP(refuelFromObject);

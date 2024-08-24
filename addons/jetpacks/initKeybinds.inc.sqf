@@ -23,6 +23,16 @@
 
 [
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
+    QGVAR(key_deactivateJetpack),
+    ["Deactivate Jetpack", "Deactivates the user's jetpack."],
+    {
+        // KeyDown
+        [] call FUNC(jetpackStop);
+    }
+] call CBA_fnc_AddKeybind;
+
+[
+    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
     QGVAR(key_slowFall),
     ["Activate Slow Fall", "Slows the user down while falling."], {
         // KeyDown
