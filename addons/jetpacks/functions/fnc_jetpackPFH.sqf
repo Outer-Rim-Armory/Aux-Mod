@@ -115,6 +115,7 @@ private _condition = {
 private _exitCode = {
     params ["", "_unit", "_jetpack", "_strength", "_speed", "_freefallHeight"];
     TRACE_5("Stopped jetpack",_unit,_jetpack,_strength,_speed,_freefallHeight);
+    _unit setVariable [QGVAR(usingJetpack), nil, true]; // Make sure value is always correct across machines
     private _originalHeight = _unit getVariable [QGVAR(freefallHeight), -1];
     _unit setUnitFreefallHeight _originalHeight;
     [QGVAR(jetpackStopped), [_unit, _jetpack, _strength, _speed, _freefallHeight]] call CBA_fnc_globalEvent;
