@@ -76,7 +76,7 @@ class CLASS(Helmet_Phase2_91st): CLASS(Helmet_Phase2_Base) {
 
     class XtdGearInfo {
         model = QCLASS(Helmets_Phase2_Units);
-        camo = "KC_HowzerBrown";
+        camo = "KC_91st";
     };
 };
 
@@ -91,7 +91,7 @@ class CLASS(Helmet_Phase2_327th): CLASS(Helmet_Phase2_Base) {
 
     class XtdGearInfo {
         model = QCLASS(Helmets_Phase2_Units);
-        camo = "KC_HowzerBrown";
+        camo = "KC_327th";
     };
 };
 
