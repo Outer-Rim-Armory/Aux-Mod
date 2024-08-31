@@ -392,7 +392,7 @@ class XtdGearModels {
                     "Sogi",
                     "Splashdown",
                     "Tugz",
-                    "Tyrant"
+                    "Tyrant",
                 };
 
                 class Axel { label = "Axel"; };
