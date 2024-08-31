@@ -22,6 +22,7 @@ class CfgPatches {
             QCLASS(Unit_187th_Trooper),
             QCLASS(Unit_212th_Trooper),
             QCLASS(Unit_501st_Trooper),
+            QCLASS(Unit_91st),
             QCLASS(Unit_91st_Ponds),
 
             QGROUND_CLASS(Helmet_Phase1_CG),
@@ -32,6 +33,7 @@ class CfgPatches {
             QGROUND_CLASS(Helmet_Phase1_104th),
             QGROUND_CLASS(Helmet_Phase1_212th),
             QGROUND_CLASS(Helmet_Phase1_501st),
+            QGROUND_CLASS(Helmet_Phase1_91st),
             QGROUND_CLASS(Helmet_Phase1_91st_Ponds),
 
             QGROUND_CLASS(Helmet_Phase2_CG),
@@ -46,7 +48,8 @@ class CfgPatches {
             QGROUND_CLASS(Helmet_Phase2_187th),
             QGROUND_CLASS(Helmet_Phase2_212th),
             QGROUND_CLASS(Helmet_Phase2_501st),
-            QGROUND_CLASS(Helmet_Phase2_91st_Ponds)
+            QGROUND_CLASS(Helmet_Phase2_91st),
+            QGROUND_CLASS(Helmet_Phase2_91st_Ponds),
         };
         weapons[] = {
             QCLASS(Helmet_Phase1_CG),
@@ -57,6 +60,7 @@ class CfgPatches {
             QCLASS(Helmet_Phase1_104th),
             QCLASS(Helmet_Phase1_212th),
             QCLASS(Helmet_Phase1_501st),
+            QCLASS(Helmet_Phase1_91st),
             QCLASS(Helmet_Phase1_91st_Ponds),
 
             QCLASS(Helmet_Phase2_CG),
@@ -71,6 +75,7 @@ class CfgPatches {
             QCLASS(Helmet_Phase2_187th),
             QCLASS(Helmet_Phase2_212th),
             QCLASS(Helmet_Phase2_501st),
+            QCLASS(Helmet_Phase2_91st),
             QCLASS(Helmet_Phase2_91st_Ponds),
 
             QCLASS(Uniform_CG),
@@ -84,6 +89,7 @@ class CfgPatches {
             QCLASS(Uniform_187th),
             QCLASS(Uniform_212th),
             QCLASS(Uniform_501st),
+            QCLASS(Uniform_91st),
             QCLASS(Uniform_91st_Ponds)
         };
         VERSION_CONFIG;
