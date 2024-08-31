@@ -294,7 +294,7 @@ class CLASS(Unit_91st): CLASS(Unit_Phase2_Base) {
     editorSubcategory = QEDSUBCAT(327th);
     editorPreview = EDITOR_PREVIEW(Unit_91st_Ponds);
 
-    uniformClass = QCLASS(Uniform_91st);
+    uniformClass = QCLASS(Uniform_327th);
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\327th_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\327th_lower_co.paa),
