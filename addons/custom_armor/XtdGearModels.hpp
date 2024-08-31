@@ -206,11 +206,13 @@ class XtdGearModels {
                 changeInGame = FALSE;
                 values[] = {
                     "Dexus",
+                    "Jaws",
                     "Joe",
                     "Keeli"
                 };
 
                 class Dexus { label = "Dexus"; };
+                class Jaws { label = "Jaws"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
             };
@@ -322,6 +324,7 @@ class XtdGearModels {
                     "Patriot",
                     "Rev",
                     "Sogi",
+                    "Stormz",
                     "Tanker",
                     "Tugz"
                 };
@@ -331,6 +334,7 @@ class XtdGearModels {
                 class Patriot { label = "Patriot"; };
                 class Rev { label = "Rev"; };
                 class Sogi { label = "Sogi"; };
+                 class Stormz { label = "Stormz"; };
                 class Tanker { label = "Tanker"; };
                 class Tugz { label = "Tugz"; };
             };
@@ -345,12 +349,14 @@ class XtdGearModels {
                 alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
+                    "Burnt",
                     "Keeli",
                     "Lines",
                     "Rat",
                     "Weenie"
                 };
 
+                class Burnt { label = "Burnt"; };
                 class Keeli { label = "Keeli"; };
                 class Lines { label = "Lines"; };
                 class Rat { label = "Rat"; };
@@ -377,6 +383,7 @@ class XtdGearModels {
                     "Drake",
                     "Hagrid",
                     "Harry",
+                    "Jaws",
                     "Joe",
                     "Keeli",
                     "Rat",
@@ -399,6 +406,7 @@ class XtdGearModels {
                 class Drake { label = "Drake"; };
                 class Hagrid { label = "Hagrid"; };
                 class Harry { label = "Harry"; };
+                class Jaws { label = "Jaws"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
                 class Rat { label = "Rat"; };
@@ -441,12 +449,14 @@ class XtdGearModels {
                 changeInGame = FALSE;
                 values[] = {
                     "Dexus",
+                    "Jaws",
                     "Keeli",
                     "Ponds",
                     "Rat"
                 };
 
                 class Dexus { label = "Dexus"; };
+                class Jaws { label = "Jaws"; };
                 class Keeli { label = "Keeli"; };
                 class Ponds { label = "Ponds"; };
                 class Rat { label = "Rat"; };

@@ -13,5 +13,4 @@ class CLASS(Uniform_HowzerBrown): CLASS(Uniform_CG) { camo = "KC_HowzerBrown"; }
 class CLASS(Uniform_187th): CLASS(Uniform_CG) { camo = "KC_187th"; };
 class CLASS(Uniform_212th): CLASS(Uniform_CG) { camo = "KC_212th"; };
 class CLASS(Uniform_91st_Ponds): CLASS(Uniform_CG) { camo = "KC_91st_Ponds"; };
-class CLASS(Uniform_91st_Ponds): CLASS(Uniform_CG) { camo = "KC_91st"; };
 class CLASS(Uniform_327th): CLASS(Uniform_CG) { camo = "KC_327th"; };

@@ -38,4 +38,8 @@ class CfgEditorSubcategories {
     class EDSUBCAT(91st) {
         displayName = "91st MRC";
     };
+
+    class EDSUBCAT(327th) {
+        displayName = "327th Star Corps";
+    };
 };
