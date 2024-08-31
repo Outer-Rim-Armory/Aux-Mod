@@ -134,4 +134,14 @@ class CfgWeapons {
 
         GVAR(isCustom) = TRUE;
     };
+
+    class CLASS(Vest_CSS): CLASS(Vest_CS) {
+    displayName = "[KC] INF Vest ('Jaws')";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\jaws\camo1_co.paa),
+        QPATHTOF(data\vests\jaws\camo2_co.paa)
+    };
+    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+};
+
 };

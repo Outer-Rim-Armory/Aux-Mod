@@ -21,6 +21,7 @@ class CfgPatches {
             QCLASS(Unit_Drake),
             QCLASS(Unit_Hagrid),
             QCLASS(Unit_Harry),
+            QCLASS(Unit_Jaws),
             QCLASS(Unit_Joe),
             QCLASS(Unit_Keeli),
             QCLASS(Unit_Keeli_CamoBrown),

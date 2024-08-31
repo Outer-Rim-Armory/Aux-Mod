@@ -266,3 +266,45 @@ class CLASS(Unit_91st_Ponds): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_91st_Ponds), QCLASS(Vest_Kama), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+
+class CLASS(Unit_91st): CLASS(Unit_Phase2_Base) {
+    displayName = "(Clone Trooper)";
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(91st);
+    editorPreview = EDITOR_PREVIEW(Unit_91st_Ponds);
+
+    uniformClass = QCLASS(Uniform_91st);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\91st_upper_co.paa),
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\91st_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_91st), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_91st), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_91st): CLASS(Unit_Phase2_Base) {
+    displayName = "(Clone Trooper)";
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(327th);
+    editorPreview = EDITOR_PREVIEW(Unit_91st_Ponds);
+
+    uniformClass = QCLASS(Uniform_91st);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\327th_upper_co.paa),
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\327th_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_327th), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_327th), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};

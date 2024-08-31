@@ -127,3 +127,21 @@ class CLASS(Uniform_91st_Ponds): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_91st_Ponds);
     };
 };
+
+class CLASS(Uniform_91st): CLASS(Uniform_Base) {
+    displayName = "[91st] INF Armor";
+    EGVAR(custom_armor,isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_91st);
+    };
+};
+
+class CLASS(Uniform_327th): CLASS(Uniform_Base) {
+    displayName = "[327th] INF Armor";
+    EGVAR(custom_armor,isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_327th);
+    };
+};
