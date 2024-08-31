@@ -236,7 +236,7 @@ class CLASS(Unit_Jaws): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_Jaws), QCLASS(Vest_Jaws), QCLASS(cloneNvg_chip), QCLASS(cloneBackpack_radioHeavy_Jaws), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase2_Jaws), QCLASS(Vest_Jaws), QCLASS(cloneNvg_chip), Q "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Jaws), QCLASS(Vest_Jaws), QCLASS(cloneNvg_chip), QCLASS(cloneBackpack_radioHeavy_Jaws),  "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
