@@ -250,7 +250,7 @@ class CLASS(Unit_91st_Ponds): CLASS(Unit_Phase2_Base) {
     displayName = "Commander Ponds";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(91st);
-    editorPreview = EDITOR_PREVIEW(Unit_91st_Ponds);
+    editorPreview = EDITOR_PREVIEW();
 
     uniformClass = QCLASS(Uniform_91st_Ponds);
     hiddenSelectionsTextures[] = {
@@ -271,7 +271,7 @@ class CLASS(Unit_91st): CLASS(Unit_Phase2_Base) {
     displayName = "(Clone Trooper)";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(91st);
-    editorPreview = EDITOR_PREVIEW(Unit_91st_Ponds);
+    editorPreview = EDITOR_PREVIEW();
 
     uniformClass = QCLASS(Uniform_91st);
     hiddenSelectionsTextures[] = {
@@ -292,7 +292,7 @@ class CLASS(Unit_91st): CLASS(Unit_Phase2_Base) {
     displayName = "(Clone Trooper)";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(327th);
-    editorPreview = EDITOR_PREVIEW(Unit_91st_Ponds);
+    editorPreview = EDITOR_PREVIEW();
 
     uniformClass = QCLASS(Uniform_327th);
     hiddenSelectionsTextures[] = {
