@@ -146,6 +146,7 @@ class CLASS(Unit_Dexus): CLASS(Unit_Phase2_Base) {
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Dexus);
+    backpack = QCLASS(cloneBackpack_heavy_Dexus);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Dexus_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Dexus_lower_co.paa),
@@ -226,6 +227,7 @@ class CLASS(Unit_Jaws): CLASS(Unit_Phase2_Base) {
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Jaws);
+    backpack = QCLASS(cloneBackpack_radioHeavy_Jaws);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Jaws_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Jaws_lower_co.paa),
@@ -233,10 +235,19 @@ class CLASS(Unit_Jaws): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase2_Jaws), QCLASS(Vest_Jaws), QCLASS(cloneNvg_chip), QCLASS(cloneBackpack_radioHeavy_Jaws), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Jaws), QCLASS(Vest_Jaws), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase2_Jaws), QCLASS(Vest_Jaws), QCLASS(cloneNvg_chip), QCLASS(cloneBackpack_radioHeavy_Jaws),  "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Jaws), QCLASS(Vest_Jaws), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+class CLASS(Unit_Jaws_CamoBrown): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Jaws_CamoBrown);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\camo\brown\Jaws_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\camo\brown\Jaws_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
 
@@ -458,6 +469,7 @@ class CLASS(Unit_Phase2_Insulated_Jaws): CLASS(Unit_Phase2_Insulated_Base) {
         "\lsd_armor_bluefor\uniform\gar\phase2Insulated\data\undersuit_co.paa"
     };
 
+};
 class CLASS(Unit_Phase2_Insulated_Joe): CLASS(Unit_Phase2_Insulated_Base) {
     SCOPE_HIDDEN;
     uniformClass = QCLASS(Uniform_Phase2_Insulated_Joe);
