@@ -473,6 +473,19 @@ class CLASS(DOUBLES(Helmet_Phase12,var1)##var2): CLASS(DOUBLES(Helmet_Phase12,va
     }; \
 }
 
+#define AB_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_Airborne,var1)): CLASS(Helmet_Airborne_Base) { \
+    displayName = QUOTE([KC] AB Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\airborne\DOUBLES(var1,camo1_co.paa)), \
+        "\lsd_armor_bluefor\helmet\gar\airborne\data\AB_Helmet_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Airborne_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}
+
 #define UNIFORM_CUSTOM(var1) class CLASS(DOUBLES(Uniform,var1)): CLASS(Uniform_Base) { \
     displayName = QUOTE([KC] Custom Armor ('##var1##')); \
     GVAR(isCustom) = TRUE; \
