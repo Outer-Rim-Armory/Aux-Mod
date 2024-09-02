@@ -364,6 +364,21 @@ class XtdGearModels {
             };
         };
 
+        class CLASS(Helmets_Airborne_Custom): CLASS(Helmets_Phase1_Custom) {
+            label = "Custom Airborne Helmets";
+            options[] = {"custom"};
+
+            class custom {
+                label = "Custom";
+                alwaysSelectable = TRUE;
+                changeInGame = FALSE;
+                values[] = {
+                };
+
+                // class Name { label = "Name"; };
+            };
+        };
+
         class CLASS(Uniforms_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom Uniforms";
 
@@ -392,7 +407,7 @@ class XtdGearModels {
                     "Sogi",
                     "Splashdown",
                     "Tugz",
-                    "Tyrant"
+                    "Tyrant",
                 };
 
                 class Axel { label = "Axel"; };

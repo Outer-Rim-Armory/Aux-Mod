@@ -14,6 +14,18 @@ UNIFORM_CUSTOM(Drake);
 UNIFORM_CUSTOM(Hagrid);
 UNIFORM_CUSTOM(Harry);
 UNIFORM_CUSTOM(Jaws);
+
+class CLASS(Uniform_Jaws_CamoBrown): CLASS(Uniform_Jaws) {
+    displayName = "[KC] Custom Armor ('Jaws') - Brown Camo";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Jaws_CamoBrown);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Brown";
+    };
+};
+
 UNIFORM_CUSTOM(Joe);
 UNIFORM_CUSTOM(Keeli);
 

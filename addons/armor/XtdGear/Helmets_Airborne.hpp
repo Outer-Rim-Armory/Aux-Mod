@@ -5,4 +5,4 @@ class CLASS(Helmet_Airborne_Base) {
 };
 
 class CLASS(Helmet_Airborne_CT): CLASS(Helmet_Airborne_Base) { rank = "CT"; };
-class CLASS(Helmet_Airborne_CT_v2): CLASS(Helmet_Airborne_CT) { style = "V2"; };
+class CLASS(Helmet_Airborne_CT_V2): CLASS(Helmet_Airborne_CT) { style = "V2"; };
