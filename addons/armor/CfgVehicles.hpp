@@ -78,6 +78,7 @@ class CfgVehicles {
     #include "configs\Units_ARF.hpp"
     #include "configs\Units_cloneCommando.hpp"
     #include "configs\Units_Jedi.hpp"
+    #include "configs\Units_Airborne.hpp"
 
     class CLASS(backpack_base);
     class CLASS(cloneBackpack_base): CLASS(backpack_base) {

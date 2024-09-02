@@ -5,6 +5,7 @@ class CLASS(Unit_Axel): CLASS(Unit_Phase2_Base) {
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Axel);
+    backpack = QCLASS(Jetpack_JT12_LR);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Axel_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Axel_lower_co.paa),
@@ -12,10 +13,10 @@ class CLASS(Unit_Axel): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase2_Axel), QCLASS(Vest_CSM), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Airborne_Axel), QCLASS(Vest_ForceRecon_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase2_Axel), QCLASS(Vest_CSM), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Airborne_Axel), QCLASS(Vest_ForceRecon_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -187,6 +188,7 @@ class CLASS(Unit_Hagrid): CLASS(Unit_Phase2_Base) {
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Hagrid);
+    backpack = QCLASS(Backpack_ARC);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Hagrid_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Hagrid_lower_co.paa),
@@ -277,6 +279,7 @@ class CLASS(Unit_Keeli): CLASS(Unit_Phase2_Base) {
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Keeli);
+    backpack = QCLASS(Backpack_Radio_Mini);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Keeli_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Keeli_lower_co.paa),
@@ -335,6 +338,7 @@ class CLASS(Unit_Rev): CLASS(Unit_Phase2_Base) {
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Rev);
+    backpack = QCLASS(cloneBackpack_heavy_Rev);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Rev_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Rev_lower_co.paa),
@@ -355,6 +359,7 @@ class CLASS(Unit_Sin): CLASS(Unit_Phase2_Base) {
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Sin);
+    backpack = QCLASS(Backpack_ARC);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Sin_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Sin_lower_co.paa),
@@ -435,6 +440,7 @@ class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base) {
     editorSubcategory = QEDSUBCAT(Customs);
 
     uniformClass = QCLASS(Uniform_Tyrant);
+    backpack = QCLASS(Backpack_ARC);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Tyrant_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Tyrant_lower_co.paa),

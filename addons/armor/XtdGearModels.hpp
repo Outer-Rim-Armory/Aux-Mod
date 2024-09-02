@@ -234,11 +234,13 @@ class XtdGearModels {
             class rank: rank {
                 values[] = {
                     "Base",
-                    "CT"
+                    "CT",
+                    "Axel"
                 };
 
                 class Base { label = "Base"; };
                 class CT { label = "CT"; };
+                class Axel { label = "Axel"; };
             };
 
             class style: style {

@@ -21,16 +21,16 @@ class CLASS(Helmet_Airborne_Base): CLASS(cloneHelmet_base) {
 };
 class CLASS(Helmet_Airborne_CT): CLASS(Helmet_Airborne_Base) {
     displayName = "[KC] AB Helm 01 (Trooper)";
-    // hiddenSelectionsTextures[] = {
-    //     QPATHTOF(data\helmets\airborne\CT_camo1_co.paa),
-    //     "\lsd_armor_bluefor\helmet\gar\airborne\data\AB_Helmet_co.paa"
-    // };
+     hiddenSelectionsTextures[] = {
+         QPATHTOF(data\helmets\airborne\CT_camo1_co.paa),
+         "\lsd_armor_bluefor\helmet\gar\airborne\data\AB_Helmet_co.paa"
+     };
 };
 
 class CLASS(Helmet_Airborne_CT_v2): CLASS(Helmet_Airborne_CT) {
     displayName = "[KC] AB Helm 01 (Trooper, v2)";
-    // hiddenSelectionsTextures[] = {
-    //     QPATHTOF(data\helmets\airborne\CT_v2_camo1_co.paa),
-    //     "\lsd_armor_bluefor\helmet\gar\airborne\data\AB_Helmet_co.paa"
-    // };
+     hiddenSelectionsTextures[] = {
+         QPATHTOF(data\helmets\airborne\CT_v2_camo1_co.paa),
+         "\lsd_armor_bluefor\helmet\gar\airborne\data\AB_Helmet_co.paa"
+     };
 };
