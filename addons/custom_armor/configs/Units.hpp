@@ -455,6 +455,27 @@ class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Woods): CLASS(Unit_Phase2_Base) {
+    displayName = "Wood's";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+
+    uniformClass = QCLASS(Uniform_Woods);
+    backpack = QCLASS(Backpack_Radio_Mini);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Woods_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Woods_lower_co.paa),
+        QPATHTOF(data\uniforms\standard\undersuit\Woods_undersuit_co.paa),
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Woods), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Woods), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Phase2_Insulated_Base);
 class CLASS(Unit_Phase2_Insulated_Dexus): CLASS(Unit_Phase2_Insulated_Base) {
     SCOPE_HIDDEN;

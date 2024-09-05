@@ -57,6 +57,7 @@ UNIFORM_CUSTOM(Sogi);
 UNIFORM_CUSTOM(Splashdown);
 UNIFORM_CUSTOM(Tugz);
 UNIFORM_CUSTOM(Tyrant);
+UNIFORM_CUSTOM(Woods);
 
 class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base) {
     class ItemInfo;

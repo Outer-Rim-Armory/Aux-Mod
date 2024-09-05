@@ -6,7 +6,7 @@ class CfgPatches {
         author = "DartRuffian";
         weapons[] = {};
         units[] = {};
-        requiredversion = 0.1;
+        requiredVersion = 2.14;
         requiredaddons[] = {
             "cba_events",
             "cba_hashes",

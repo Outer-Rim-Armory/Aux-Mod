@@ -235,12 +235,10 @@ class XtdGearModels {
                 values[] = {
                     "Base",
                     "CT",
-                    "Axel"
                 };
 
                 class Base { label = "Base"; };
                 class CT { label = "CT"; };
-                class Axel { label = "Axel"; };
             };
 
             class style: style {
