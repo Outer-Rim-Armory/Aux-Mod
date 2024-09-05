@@ -159,6 +159,7 @@ class XtdGearModels {
                     "Talyn",
                     "Tugz",
                     "Vortex",
+                    "Weenie",
                     "Woods"
                 };
 
@@ -193,6 +194,7 @@ class XtdGearModels {
                 class Talyn { label = "Talyn"; };
                 class Tugz { label = "Tugz"; };
                 class Vortex { label = "Vortex"; };
+                class Weenie { label = "Weenie"; };
                 class Woods { label = "Woods"; };
             };
         };
