@@ -18,7 +18,7 @@
 private [];
 TRACE_1("fnc_loadSavedObjects",GVAR(saveKey));
 
-if (GVAR(savedObjects) isEqualTo createHashmap) exitWith {
+if (GVAR(savedObjects) isEqualTo createHashMap) exitWith {
     GVAR(counter) = 0;
 };
 

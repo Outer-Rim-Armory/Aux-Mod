@@ -1,6 +1,6 @@
 private ["_presetNames", "_presetDisplayNames"];
 _presetNames = configProperties [
-    configfile >> "ACEX_Fortify_Presets"
+    configFile >> "ACEX_Fortify_Presets"
 ] apply {configName _x;};
 _presetNames = _presetNames select {
     toLowerANSI QUOTE(PREFIX) in toLowerANSI _x
@@ -8,7 +8,7 @@ _presetNames = _presetNames select {
 
 _presetDisplayNames = _presetNames apply {
     private _name = [
-        configfile >> "ACEX_Fortify_Presets" >> _x,
+        configFile >> "ACEX_Fortify_Presets" >> _x,
         "displayName",
         "Unknown Preset"
     ] call BIS_fnc_returnConfigEntry;

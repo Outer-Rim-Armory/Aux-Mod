@@ -26,7 +26,6 @@ if (_unit call ace_common_fnc_isAwake and
     {isNull objectParent _unit} and
     {!(_unit getVariable ["TAS_ATRT_isRiding", false])} and
     {!(_unit call EFUNC(core,inFeatureCamera))} and
-    {!(surfaceIsWater getPos _unit and {((getPosASLW _unit) select 2) < 0.2})} and
     {_unit call FUNC(hasJetpack)} and
     {_unit call FUNC(getFuel) > 0}
 ) exitWith {true};

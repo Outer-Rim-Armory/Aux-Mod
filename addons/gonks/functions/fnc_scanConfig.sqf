@@ -20,21 +20,21 @@ TRACE_1("fnc_scanConfig",isServer);
 
 if (!isServer) exitWith {};
 
-GVAR(loadouts) = createHashmap;
-GVAR(ranks) = createHashmap;
-GVAR(weapons) = createHashmap;
+GVAR(loadouts) = createHashMap;
+GVAR(ranks) = createHashMap;
+GVAR(weapons) = createHashMap;
 
 _loadoutConfig = "true" configClasses (configFile >> QGVAR(loadouts));
 
 {
     private ["_detachment", "_value"];
     _detachment = _x;
-    _squadTypes = createHashmap;
+    _squadTypes = createHashMap;
 
     {
         private ["_squadType"];
         _squadType = _x;
-        _squadLoadouts = createHashmap;
+        _squadLoadouts = createHashMap;
         {
             private ["_loadout"];
             _squadLoadouts set [configName _x, [
@@ -64,7 +64,7 @@ _ranksConfig = "true" configClasses (configFile >> QGVAR(ranks));
 {
     private ["_detachment", "_value"];
     _detachment = _x;
-    _value = createHashmap;
+    _value = createHashMap;
 
     {
         _value set [configName _x, [

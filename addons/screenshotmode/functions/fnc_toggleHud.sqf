@@ -27,7 +27,7 @@ if (GVAR(active)) then {
     call FUNC(toggleJLTS);
 } else {
     // Show hud
-    showHud GVAR(vanillaHud);
+    showHUD GVAR(vanillaHud);
     showChat true;
     call FUNC(toggleJLTS);
 };

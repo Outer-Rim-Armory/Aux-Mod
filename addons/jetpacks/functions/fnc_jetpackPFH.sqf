@@ -31,8 +31,13 @@ private _function = {
     params ["_handle", "_unit", "_jetpack", "_strength", "_speed", "_freefallHeight"];
     TRACE_6("Jetpack PFH",_handle,_unit,_jetpack,_strength,_speed,_freefallHeight);
 
+    private _height = (getPosASL _unit)#2;
+
     if (isGamePaused) exitWith {};
-    if (isTouchingGround _unit or {!(_unit call FUNC(canJetpack))}) exitWith {
+    if (isTouchingGround _unit or
+        {!(_unit call FUNC(canJetpack))} or
+        {_height < -2} // Intentional, shut off jetpack when landing in deep water
+    ) exitWith {
         _unit setVariable [QGVAR(usingJetpack), nil, true];
     };
 

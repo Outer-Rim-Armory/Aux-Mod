@@ -42,7 +42,7 @@ _subPresets = getArray (configFile >> "ACEX_Fortify_Presets" >> _preset >> "pres
     {_x pushBack _presetName} forEach _objects;
 
     _allObjects append _objects;
-} foreach _subPresets;
+} forEach _subPresets;
 
 _objects = getArray (configFile >> "ACEX_Fortify_Presets" >> _preset >> "objects");
 
