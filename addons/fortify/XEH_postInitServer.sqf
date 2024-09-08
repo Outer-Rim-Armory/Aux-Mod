@@ -5,7 +5,7 @@
 
     if (GVAR(persistenceEnabled)) then {
         GVAR(counter) = profileNamespace getVariable [VAR_SAVE_KEY(counter), 0];
-        GVAR(savedObjects) = profileNamespace getVariable [VAR_SAVE_KEY(savedObjects), createHashmap];
+        GVAR(savedObjects) = profileNamespace getVariable [VAR_SAVE_KEY(savedObjects), createHashMap];
 
         call FUNC(loadSavedObjects);
 

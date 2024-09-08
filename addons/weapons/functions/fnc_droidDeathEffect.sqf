@@ -23,7 +23,7 @@ private [];
 
 _units = _units select {
     private _isDroid = getNumber (configFile >> "CfgWeapons" >> uniform _x >> "JLTS_isDroid");
-    _isDroid isEqualTo TRUE or (toLowerAnsi typeOf _x find "b1") > 0;
+    _isDroid isEqualTo TRUE or (toLowerANSI typeOf _x find "b1") > 0;
 };
 
 TRACE_2("fnc_droidDeathEffect",_units,_killer);
