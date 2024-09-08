@@ -31,7 +31,8 @@ workshop = [
     "2522638637", # ACE Arsenal Extended
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
     # "2954535667", # Warmantle Armory # Unused
-    "767380317", # Blastcore # Only used to test particle effects
+    # "767380317", # Blastcore # Only used to test particle effects
+    # "2061309401", # Last Force Project
 ]
 presets = ["main"]
 dlc = []
