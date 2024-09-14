@@ -18,7 +18,7 @@
     QGVAR(maxWaterJumpDepth), "SLIDER",
     ["Water Jump Depth", "Maximum depth in meters that a player can use a jetpack from. Set to 0 to disable."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
-    [0, 10, 2, -1]
+    [0, 10, 2, -1], TRUE
 ] call CBA_fnc_addSetting;
 
 [
@@ -32,5 +32,5 @@
     QGVAR(easyEjection), "CHECKBOX",
     ["Easy Ejection", "If enabled, ejecting from an airborne vehicle will automatically move the player ~30m behind the vehicle to prevent getting stuck inside."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
-    true
+    true, TRUE
 ] call CBA_fnc_addSetting;
