@@ -54,6 +54,7 @@ GROUND_HOLDER(Helmet_Phase1_Pilot_Evo,"AVI P1 Helm ('Evo')");
 GROUND_HOLDER(Helmet_Phase1_Pilot_Mischief,"AVI P1 Helm ('Mischief')");
 
 GROUND_HOLDER(Helmet_Phase1_Tanker_Grey,"ARMR P1 Helm ('Grey')");
+GROUND_HOLDER(Helmet_Phase1_Tanker_GreyBacta,"ARMR P1 Helm ('Grey') [Bacta Visor]");
 
 
 GROUND_HOLDER(Helmet_Phase2_Alvarez,"INF P2 Helm ('Alvarez')");
@@ -83,6 +84,8 @@ GROUND_HOLDER(Helmet_Phase2_Keeli_CamoBrown,"INF P2 Helm ('Keeli') - Brown Camo"
 GROUND_HOLDER(Helmet_Phase2_KeeliCrimson_CamoBrown,"INF P2 Helm ('Keeli') - Brown Camo [Crimson Visor]");
 GROUND_HOLDER(Helmet_Phase2_Keeli_CamoGrey,"INF P2 Helm ('Keeli') - Grey Camo");
 GROUND_HOLDER(Helmet_Phase2_KeeliCrimson_CamoGrey,"INF P2 Helm ('Keeli') - Grey Camo [Crimson Visor]");
+GROUND_HOLDER(Helmet_Phase2_Keeli_Worn,"INF P2 Helm ('Keeli') - Worn");
+GROUND_HOLDER(Helmet_Phase2_KeeliCrimson_Worn,"INF P2 Helm ('Keeli') - Worn [Crimson Visor]");
 GROUND_HOLDER(Helmet_Phase2_Kujo,"INF P2 Helm ('Kujo')");
 GROUND_HOLDER(Helmet_Phase2_Leon,"INF P2 Helm ('Leon')");
 GROUND_HOLDER(Helmet_Phase2_Lou,"INF P2 Helm ('Lou')");
@@ -109,6 +112,7 @@ GROUND_HOLDER(Helmet_Phase2_Pilot_Mischief,"AVI P2 Helm ('Mischief')");
 GROUND_HOLDER(Helmet_Phase2_Tanker_Catholic,"ARMR P2 Helm ('Catholic')");
 GROUND_HOLDER(Helmet_Phase2_Tanker_CatholicKyber,"ARMR P2 Helm ('Catholic') [Kyber Visor]");
 GROUND_HOLDER(Helmet_Phase2_Tanker_Grey,"ARMR P2 Helm ('Grey')");
+GROUND_HOLDER(Helmet_Phase2_Tanker_GreyBacta,"ARMR P2 Helm ('Grey') [Bacta Visor]");
 
 GROUND_HOLDER(Helmet_Phase2_Insulated_Dexus,"INF P2 Insulated Helm ('Dexus')");
 GROUND_HOLDER(Helmet_Phase2_Insulated_Jaws,"INF P2 Insulated Helm ('Jaws')");
@@ -121,6 +125,7 @@ GROUND_HOLDER(Helmet_Phase12_JoeCrimson,"INF P1-2 Helm ('Joe') [Crimson Visor]")
 GROUND_HOLDER(Helmet_Engineer_Bob,"ENG Helm ('Bob')");
 GROUND_HOLDER(Helmet_Engineer_BobKyber,"ENG Helm ('Bob') [Kyber Visor]");
 GROUND_HOLDER(Helmet_Engineer_Splashdown,"ENG Helm ('Splashdown')");
+GROUND_HOLDER(Helmet_Engineer_SplashdownKyber,"ENG Helm ('Splashdown') [Kyber Visor]");
 
 
 GROUND_HOLDER(Helmet_ARC_Drake,"SF ARC Helm ('Drake')");
@@ -138,6 +143,7 @@ GROUND_HOLDER(Helmet_ARF_Jester,"SF ARF Helm ('Jester')");
 GROUND_HOLDER(Helmet_ARF_Patriot,"SF ARF Helm ('Patriot')");
 GROUND_HOLDER(Helmet_ARF_Rev,"SF ARF Helm ('Rev')");
 GROUND_HOLDER(Helmet_ARF_Sogi,"SF ARF Helm ('Sogi')");
+GROUND_HOLDER(Helmet_ARF_SogiPlasma,"SF ARF Helm ('Sogi') [Plasma Visor]");
 GROUND_HOLDER(Helmet_ARF_Stormz,"SF ARF Helm ('Stormz')");
 GROUND_HOLDER(Helmet_ARF_Tanker,"SF ARF Helm ('Tanker')");
 GROUND_HOLDER(Helmet_ARF_Tugz,"SF ARF Helm ('Tugz')");

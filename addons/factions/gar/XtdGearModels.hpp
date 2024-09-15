@@ -15,7 +15,9 @@ class XtdGearModels {
                     "KC_HowzerBrown",
                     "KC_212th",
                     "KC_501st",
-                    "KC_91st_Ponds"
+                    "KC_91st_Ponds",
+                    "KC_91st",
+                    "KC_327th",
                 };
 
                 class KC_CG { label = "CS Guard"; };
@@ -26,6 +28,8 @@ class XtdGearModels {
                 class KC_212th { label = "212th"; };
                 class KC_501st { label = "501st"; };
                 class KC_91st_Ponds { label = "91st (Ponds)"; };
+                class KC_91st { label = "91st"; };
+                class KC_327th { label = "327th"; };
             };
         };
 
@@ -46,7 +50,9 @@ class XtdGearModels {
                     "KC_187th",
                     "KC_212th",
                     "KC_501st",
-                    "KC_91st_Ponds"
+                    "KC_91st_Ponds",
+                    "KC_91st",
+                    "KC_327th",
                 };
 
                 class KC_CG { label = "CS Guard"; };
@@ -61,6 +67,8 @@ class XtdGearModels {
                 class KC_212th { label = "212th"; };
                 class KC_501st { label = "501st"; };
                 class KC_91st_Ponds { label = "91st (Ponds)"; };
+                class KC_91st { label = "91st"; };
+                class KC_327th { label = "372th"; };
             };
         };
 
@@ -82,7 +90,9 @@ class XtdGearModels {
                     "KC_187th",
                     "KC_212th",
                     "KC_501st",
-                    "KC_91st_Ponds"
+                    "KC_91st_Ponds",
+                    "KC_91st",
+                    "KC_327th",
                 };
 
                 class KC_CG { label = "CS Guard"; };
@@ -98,6 +108,8 @@ class XtdGearModels {
                 class KC_212th { label = "212th"; };
                 class KC_501st { label = "501st"; };
                 class KC_91st_Ponds { label = "91st (Ponds)"; };
+                class KC_91st { label = "91st"; };
+                class KC_327th { label = "372th"; };
             };
         };
     };

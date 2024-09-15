@@ -147,4 +147,15 @@ class CLASS(Vest_Jaws): CLASS(Vest_CS) {
 
         GVAR(isCustom) = TRUE;
     };
+
+    class CLASS(Vest_ForceRecon_Officer) ;
+    class CLASS(Force_Recon_Sin): CLASS(Vest_ForceRecon_Officer) {
+        displayName = "[KC] SF XX Vest ('Sin')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\sin\light_accessories_co.paa),
+            QPATHTOF(data\vests\sin\camo2_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
 };

@@ -1,7 +1,7 @@
 class CLASS(Unit_AB_CT): CLASS(Unit_Phase2_Base) {
     displayName = "SF AB 01 - Trooper";
     editorSubcategory = QEDSUBCAT(SpecialForces);
-    editorPreview = EDITOR_PREVIEW(Unit_Airborne_CT);
+    editorPreview = EDITOR_PREVIEW(Unit_AB_CT);
 
     uniformClass = QCLASS(Uniform_CT);
     hiddenSelectionsTextures[] = {

@@ -27,12 +27,12 @@ workshop = [
     "2369477168", # ADT
     "623475643",  # 3DEN
     "1779063631", # ZEN
-    # "2173635424", # 501st Aux Mod
+    "2173635424", # 501st Aux Mod
     "2522638637", # ACE Arsenal Extended
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
-    # "2954535667", # Warmantle Armory # Unused
-    # "767380317", # Blastcore # Only used to test particle effects
-    # "2061309401", # Last Force Project
+    "2954535667", # Warmantle Armory # Unused
+    "767380317", # Blastcore # Only used to test particle effects
+    "2061309401", # Last Force Project
 ]
 presets = ["main"]
 dlc = []
@@ -52,5 +52,6 @@ workshop = [
 optionals = ["no_burn_screams"]
 
 [hemtt.launch.previews]
+extends = "default"
 mission = "Previews.VR"
 parameters = ["-name=Previews"]

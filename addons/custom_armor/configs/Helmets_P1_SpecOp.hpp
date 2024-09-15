@@ -1,2 +1,2 @@
 class CLASS(Helmet_Phase1_Tanker_Base);
-P1_TANKER_HELMET_CUSTOM(Grey);
+P1_TANKER_HELMET_VISOR_CUSTOM(Grey,Bacta);

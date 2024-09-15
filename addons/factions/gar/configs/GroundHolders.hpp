@@ -14,6 +14,10 @@ GROUND_HOLDER(Helmet_Phase1_501st,"INF P1 Helm (501st)");
 
 GROUND_HOLDER(Helmet_Phase1_91st_Ponds,"INF P1 Helm ('Ponds')");
 
+GROUND_HOLDER(Helmet_Phase1_91st,"INF P1 Helm (91st)");
+
+GROUND_HOLDER(Helmet_Phase1_327th,"INF P1 Helm (327th)");
+
 GROUND_HOLDER(Helmet_Phase2_CG,"INF P2 Helm (CG)");
 GROUND_HOLDER(Helmet_Phase2_CG_Stone,"INF P2 Helm ('Stone')");
 
@@ -34,3 +38,7 @@ GROUND_HOLDER(Helmet_Phase2_212th,"INF P2 Helm (212th)");
 GROUND_HOLDER(Helmet_Phase2_501st,"INF P2 Helm (501st)");
 
 GROUND_HOLDER(Helmet_Phase2_91st_Ponds,"INF P2 Helm ('Ponds')");
+
+GROUND_HOLDER(Helmet_Phase2_91st,"INF P2 Helm (91st)");
+
+GROUND_HOLDER(Helmet_Phase2_327th,"INF P2 Helm (327th)");

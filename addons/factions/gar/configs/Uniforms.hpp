@@ -133,7 +133,7 @@ class CLASS(Uniform_91st): CLASS(Uniform_Base) {
     EGVAR(custom_armor,isCustom) = TRUE;
 
     class ItemInfo: ItemInfo {
-        uniformClass = QCLASS(Unit_91st);
+        uniformClass = QCLASS(Unit_91st_Trooper);
     };
 };
 
@@ -142,6 +142,6 @@ class CLASS(Uniform_327th): CLASS(Uniform_Base) {
     EGVAR(custom_armor,isCustom) = TRUE;
 
     class ItemInfo: ItemInfo {
-        uniformClass = QCLASS(Unit_327th);
+        uniformClass = QCLASS(Unit_327th_Trooper);
     };
 };

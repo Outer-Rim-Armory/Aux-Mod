@@ -49,6 +49,17 @@ class CLASS(Uniform_Keeli_CamoGrey): CLASS(Uniform_Keeli) {
         camo = "Grey";
     };
 };
+class CLASS(Uniform_Keeli_Worn): CLASS(Uniform_Keeli) {
+    displayName = "[KC] Custom Armor ('Keeli') - Worn";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Keeli_Worn);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
+
 
 UNIFORM_CUSTOM(Rat);
 UNIFORM_CUSTOM(Rev);

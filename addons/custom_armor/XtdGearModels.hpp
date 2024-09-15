@@ -152,6 +152,7 @@ class XtdGearModels {
                     "Rodger",
                     "Sage",
                     "Scvrpio",
+                    "Sin",
                     "Sogi",
                     "Star",
                     "Swoop",
@@ -161,7 +162,9 @@ class XtdGearModels {
                     "Vortex",
                     "Weenie",
                     "Woods"
+
                 };
+
 
                 class Alvarez { label = "Alvarez"; };
                 class Axel { label = "Axel"; };
@@ -187,6 +190,7 @@ class XtdGearModels {
                 class Rodger { label = "Rodger"; };
                 class Sage { label = "Sage"; };
                 class Scvrpio { label = "Scvrpio"; };
+                class Sin { label = "Sin"; };
                 class Sogi { label = "Sogi"; };
                 class Star { label = "Star"; };
                 class Swoop { label = "Swoop"; };
@@ -412,6 +416,7 @@ class XtdGearModels {
                     "Splashdown",
                     "Tugz",
                     "Tyrant",
+                    "Woods",
                 };
 
                 class Axel { label = "Axel"; };
@@ -435,6 +440,7 @@ class XtdGearModels {
                 class Splashdown { label = "Splashdown"; };
                 class Tugz { label = "Tugz"; };
                 class Tyrant { label = "Tyrant"; };
+                class Woods { label = "Woods"; };
             };
         };
 

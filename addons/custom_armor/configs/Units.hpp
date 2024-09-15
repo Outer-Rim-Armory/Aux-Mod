@@ -3,6 +3,7 @@ class CLASS(Unit_Axel): CLASS(Unit_Phase2_Base) {
     displayName = "Axel";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Axel);
 
     uniformClass = QCLASS(Uniform_Axel);
     backpack = QCLASS(Jetpack_JT12_LR);
@@ -24,6 +25,7 @@ class CLASS(Unit_Bailout): CLASS(Unit_Phase2_Base) {
     displayName = "Bailout";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Bailout);
 
     uniformClass = QCLASS(Uniform_Bailout);
     hiddenSelectionsTextures[] = {
@@ -44,6 +46,7 @@ class CLASS(Unit_Bob): CLASS(Unit_Phase2_Base) {
     displayName = "Bob";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Bob);
 
     uniformClass = QCLASS(Uniform_Bob);
     hiddenSelectionsTextures[] = {
@@ -64,6 +67,7 @@ class CLASS(Unit_Burnt): CLASS(Unit_Phase2_Base) {
     displayName = "Burnt";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Burnt);
 
     uniformClass = QCLASS(Uniform_Burnt);
     hiddenSelectionsTextures[] = {
@@ -84,6 +88,7 @@ class CLASS(Unit_Catholic): CLASS(Unit_Phase2_Base) {
     displayName = "Catholic";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Catholic);
 
     uniformClass = QCLASS(Uniform_Catholic);
     hiddenSelectionsTextures[] = {
@@ -104,6 +109,7 @@ class CLASS(Unit_Cutthroat): CLASS(Unit_Phase2_Base) {
     displayName = "Cutthroat";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Cutthroat);
 
     uniformClass = QCLASS(Uniform_Cutthroat);
     hiddenSelectionsTextures[] = {
@@ -124,6 +130,7 @@ class CLASS(Unit_Defter): CLASS(Unit_Phase2_Base) {
     displayName = "Defter";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Defter);
 
     uniformClass = QCLASS(Uniform_Defter);
     hiddenSelectionsTextures[] = {
@@ -145,6 +152,7 @@ class CLASS(Unit_Dexus): CLASS(Unit_Phase2_Base) {
     displayName = "Dexus";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Dexus);
 
     uniformClass = QCLASS(Uniform_Dexus);
     backpack = QCLASS(cloneBackpack_heavy_Dexus);
@@ -166,6 +174,7 @@ class CLASS(Unit_Drake): CLASS(Unit_Phase2_Base) {
     displayName = "Drake";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Drake);
 
     uniformClass = QCLASS(Uniform_Drake);
     hiddenSelectionsTextures[] = {
@@ -186,6 +195,7 @@ class CLASS(Unit_Hagrid): CLASS(Unit_Phase2_Base) {
     displayName = "Hagrid";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Hagrid);
 
     uniformClass = QCLASS(Uniform_Hagrid);
     backpack = QCLASS(Backpack_ARC);
@@ -207,6 +217,7 @@ class CLASS(Unit_Harry): CLASS(Unit_Phase2_Base) {
     displayName = "Harry";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Harry);
 
     uniformClass = QCLASS(Uniform_Harry);
     hiddenSelectionsTextures[] = {
@@ -227,6 +238,7 @@ class CLASS(Unit_Jaws): CLASS(Unit_Phase2_Base) {
     displayName = "Jaws";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Jaws);
 
     uniformClass = QCLASS(Uniform_Jaws);
     backpack = QCLASS(cloneBackpack_radioHeavy_Jaws);
@@ -257,6 +269,7 @@ class CLASS(Unit_Joe): CLASS(Unit_Phase2_Base) {
     displayName = "Joe";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Joe);
 
     uniformClass = QCLASS(Uniform_Joe);
     hiddenSelectionsTextures[] = {
@@ -277,6 +290,7 @@ class CLASS(Unit_Keeli): CLASS(Unit_Phase2_Base) {
     displayName = "Keeli";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Keeli);
 
     uniformClass = QCLASS(Uniform_Keeli);
     backpack = QCLASS(Backpack_Radio_Mini);
@@ -311,11 +325,22 @@ class CLASS(Unit_Keeli_CamoGrey): CLASS(Unit_Phase2_Base) {
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
+class CLASS(Unit_Keeli_Worn): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Keeli_Worn);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\camo\worn\Keeli_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\camo\worn\Keeli_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+
 
 class CLASS(Unit_Rat): CLASS(Unit_Phase2_Base) {
     displayName = "Rat";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Rat);
 
     uniformClass = QCLASS(Uniform_Rat);
     hiddenSelectionsTextures[] = {
@@ -336,6 +361,7 @@ class CLASS(Unit_Rev): CLASS(Unit_Phase2_Base) {
     displayName = "Rev";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Rev);
 
     uniformClass = QCLASS(Uniform_Rev);
     backpack = QCLASS(cloneBackpack_heavy_Rev);
@@ -357,6 +383,7 @@ class CLASS(Unit_Sin): CLASS(Unit_Phase2_Base) {
     displayName = "Sin";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Sin);
 
     uniformClass = QCLASS(Uniform_Sin);
     backpack = QCLASS(Backpack_ARC);
@@ -378,6 +405,7 @@ class CLASS(Unit_Sogi): CLASS(Unit_Phase2_Base) {
     displayName = "Sogi";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Sogi);
 
     uniformClass = QCLASS(Uniform_Sogi);
     hiddenSelectionsTextures[] = {
@@ -398,6 +426,7 @@ class CLASS(Unit_Splashdown): CLASS(Unit_Phase2_Base) {
     displayName = "Splashdown";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Splashdown);
 
     uniformClass = QCLASS(Uniform_Splashdown);
     hiddenSelectionsTextures[] = {
@@ -418,6 +447,7 @@ class CLASS(Unit_Tugz): CLASS(Unit_Phase2_Base) {
     displayName = "Tugz";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Tugz);
 
     uniformClass = QCLASS(Uniform_Tugz);
     hiddenSelectionsTextures[] = {
@@ -438,6 +468,7 @@ class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base) {
     displayName = "Tyrant";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Tyrant);
 
     uniformClass = QCLASS(Uniform_Tyrant);
     backpack = QCLASS(Backpack_ARC);
@@ -459,6 +490,7 @@ class CLASS(Unit_Woods): CLASS(Unit_Phase2_Base) {
     displayName = "Wood's";
 
     editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Woods);
 
     uniformClass = QCLASS(Uniform_Woods);
     backpack = QCLASS(Backpack_Radio_Mini);
