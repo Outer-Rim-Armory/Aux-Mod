@@ -41,6 +41,22 @@ class CfgWeapons {
             hiddenSelections[] = {"camo1", "camo2"};
         };
     };
+
+    class CLASS(Vest_Kama_Keeli_Worn): CLASS(Vest_Commander_Keeli) {
+        displayName = "[KC] INF Vest (Kama, 'Keeli') (Worn)";
+        model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\officer\Keeli_Worn_camo1_co.paa),
+            "SWLB_Clones\data\mc_camo1_co.paa"
+        };
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+            hiddenSelections[] = {"camo1", "camo2"};
+        };
+    };
+
     class CLASS(Vest_Commander_Keeli_Worn): CLASS(Vest_Commander_Keeli) {
         displayName = "[KC] INF Vest ('Keeli') ('Worn')";
         hiddenSelectionsTextures[] = {
