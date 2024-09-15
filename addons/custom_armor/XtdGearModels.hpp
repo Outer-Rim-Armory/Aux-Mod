@@ -350,7 +350,7 @@ class XtdGearModels {
 
         class CLASS(Helmets_BARC_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom BARC Helmets";
-            options[] = {"custom"};
+            options[] = {"custom","camo"};
 
             class custom {
                 label = "Custom";

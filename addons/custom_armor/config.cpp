@@ -300,6 +300,8 @@ class CfgPatches {
             QCLASS(Helmet_ARF_Tugz),
             QCLASS(Helmet_BARC_Keeli),
             QCLASS(Helmet_BARC_KeeliCrimson),
+            QCLASS(Helmet_BARC_Keeli_Worn),
+            QCLASS(Helmet_BARC_KeeliCrimson_Worn),
             QCLASS(Helmet_BARC_Lines),
             QCLASS(Helmet_BARC_Rat),
             QCLASS(Helmet_BARC_RatCrimson),
@@ -331,13 +333,15 @@ class CfgPatches {
             QCLASS(Uniform_Phase2_Insulated_Joe),
             QCLASS(Uniform_Phase2_Insulated_Keeli),
             QCLASS(Vest_Commander_Keeli),
+            QCLASS(Vest_Commander_Keeli_Worn),
             QCLASS(Vest_Kama_Keeli),
             QCLASS(Vest_Officer_Ponds),
             QCLASS(Vest_Officer_Rat),
             QCLASS(Vest_Kama_Rat),
             QCLASS(cloneVest_heavy_Dexus),
             QCLASS(Vest_WO_Howzer),
-            QCLASS(cloneNvg_phase2_officerVisor_Keeli)
+            QCLASS(cloneNvg_phase2_officerVisor_Keeli),
+            QCLASS(cloneNvg_phase2_officerVisor_Keeli_Worn),
         };
         VERSION_CONFIG;
     };

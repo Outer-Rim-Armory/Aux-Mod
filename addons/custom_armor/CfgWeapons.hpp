@@ -41,6 +41,16 @@ class CfgWeapons {
             hiddenSelections[] = {"camo1", "camo2"};
         };
     };
+    class CLASS(Vest_Commander_Keeli_Worn): CLASS(Vest_Commander_Keeli) {
+        displayName = "[KC] INF Vest ('Keeli') ('Worn')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\officer\Keeli_Worn_camo1_co.paa),
+            ""
+        };
+
+        GVAR(isCustom) = TRUE;
+        class ItemInfo;
+    };
 
     class CLASS(Vest_Basic);
     class CLASS(Vest_Officer): CLASS(Vest_Basic) {
@@ -131,6 +141,14 @@ class CfgWeapons {
         displayName = "[KC] Clone P2 NV/TI Officer Visor ('Keeli')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\nvgs\Officer_Keeli_camo1_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+    class CLASS(cloneNvg_phase2_officerVisor_Keeli_Worn): CLASS(cloneNvg_phase2_officerVisor_Keeli) {
+        displayName = "[KC] Clone P2 NV/TI Officer Visor ('Keeli') ('Worn')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Officer_Keeli_Worn_camo1_co.paa)
         };
 
         GVAR(isCustom) = TRUE;
