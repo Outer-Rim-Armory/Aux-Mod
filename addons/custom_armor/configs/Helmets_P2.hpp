@@ -18,6 +18,19 @@ P2_HELMET_CUSTOM(Hazard);
 P2_HELMET_CUSTOM(Henkie);
 P2_HELMET_CUSTOM(Jackal);
 P2_HELMET_CUSTOM(Jaws);
+
+class CLASS(Helmet_Phase2_Jaws_CamoBrown): CLASS(Helmet_Phase2_Jaws) {
+    displayName = "[KC] INF P2 Helm ('Jaws') - Brown Camo";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\camo\brown\Jaws_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Brown";
+    };
+};
+
 P2_HELMET_VISOR_CUSTOM(Joe,Crimson);
 P2_HELMET_VISOR_CUSTOM(Keeli,Crimson);
 
