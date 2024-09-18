@@ -1,5 +1,5 @@
 #define COMPONENT droids
-#define COMPONENT_BEAUTIFIED Droids
+#define COMPONENT_BEAUTIFIED Battle Droids
 #include "\ORA\BNA_KC\addons\core\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
