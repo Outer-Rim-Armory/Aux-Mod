@@ -54,6 +54,6 @@ Budget for the selected sides.
 **Note:** This value is internally stored as a string for an easier input. If you need to access this value as a number, use `parseNumber BNA_KC_fortify_budget`.
 
 ### Persistence Enabled
-Default Value: **True**
+Default Value: **False**
 
 Enables objects built with ACE Fortify to be saved with the mission. Objects are saved using the mission's name as well as the map. View the table above for examples on what missions will save and load data to each other.
