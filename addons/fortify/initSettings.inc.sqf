@@ -53,6 +53,6 @@ _presetDisplayNames = _presetNames apply {
     "CHECKBOX",
     ["Save fortify objects to mission", "If enabled, objects built via ACE Fortify will be saved to the mission, and restored on mission load."],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
-    true,
+    false,
     TRUE
 ] call CBA_fnc_addSetting;
