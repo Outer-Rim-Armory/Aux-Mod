@@ -6,6 +6,19 @@ UNIFORM_CUSTOM(Axel);
 UNIFORM_CUSTOM(Bailout);
 UNIFORM_CUSTOM(Bob);
 UNIFORM_CUSTOM(Burnt);
+
+class CLASS(Uniform_Burnt_Worn): CLASS(Uniform_Burnt) {
+    displayName = "[KC] Custom Armor ('Burnt') - Battle Hardened";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Burnt_Worn);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
+
+
 UNIFORM_CUSTOM(Catholic);
 UNIFORM_CUSTOM(Cutthroat);
 UNIFORM_CUSTOM(Defter);
