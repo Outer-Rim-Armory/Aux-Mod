@@ -11,6 +11,9 @@ class CfgMusicClasses {
     class CLASS(MusicCat_Other) {
         displayName = "[KC] Other";
     };
+    class CLASS(MusicCat_Trial) {
+        displayName = "[KC] Trial";
+    };
     class CLASS(MusicCat_SFX) {
         displayName = "[KC] Sound Effects";
     };

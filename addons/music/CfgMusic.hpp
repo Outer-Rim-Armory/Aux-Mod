@@ -69,6 +69,9 @@ class CfgMusic {
     // Last of Us
     MUSIC(LoU_AllGone,"[LoU] All Gone (No Escape)",174,VideoGames);
 
+    // League of Legends
+    MUSIC(LoL_Worlds_2024,"[LoL] World 2024 | Orchestral Theme",206,VideoGames);
+
     // Metal Gear
     MUSIC(MG_ItHasToBeThisWay,"[MG] It has to be this Way",175,VideoGames);
     MUSIC(MG_RulesOfNature,"[MG] Rules of Nature",150,VideoGames);
@@ -149,6 +152,10 @@ class CfgMusic {
     // Tron
     MUSIC(Tron_CLU,"[Tron] C.L.U",279,Other);
     MUSIC(Tron_Rectifier,"[Tron] Rectifier",134,Other);
+
+    // Total Drama Island
+    MUSIC(TDI_Episode_1_Part_1,"[KC] Total Drama Island Episode 1 Part 1",1325,Other);
+    MUSIC(TDI_Episode_1_Part_2,"[KC] Total Drama Island Episode 1 Part 2",1325,Other);
 
     // Total War: Rome
     MUSIC(TWR_ArabicVictory,"[TW] Arabic Victory",78,VideoGames);

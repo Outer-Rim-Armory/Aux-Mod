@@ -114,6 +114,7 @@ class CLASS(Helmet_Phase2_CS): CLASS(Helmet_Phase2_Base) {
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
+
 class CLASS(Helmet_Phase2_CS_Legacy): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 06 (Sergeant, Legacy)";
     hiddenSelectionsTextures[] = {
@@ -205,6 +206,30 @@ class CLASS(Helmet_Phase2_CL1): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 15 (1st Lieutenant)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\CL1_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase2_CT_Medic): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 16 (CT Medic)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\CT_Medic_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase2_CS_Medic): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 17 (Sergeant Medic)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\CS_Medic_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase2_WO_Medic): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 18 (WO Medic)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\WO_Medic_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };

@@ -67,6 +67,17 @@ class CfgWeapons {
         };
     };
 
+    class CLASS(TU_Helmet_Pilot): CLASS(TU_Helmet) {
+        displayName = "[TU] Pilot Helmet";
+
+        model = "\sc_equipment\data\ronin\ro_helmet.p3d";
+        hiddenSelectionsTextures[] = {"sc_equipment\data\ronin\textures\helmet_black_co.paa"};
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\sc_equipment\data\ronin\ro_helmet.p3d";
+        };
+    };
+
     class ls_redforUniform_base;
     class CLASS(OPFOR_Uniform_Base): ls_redforUniform_base {
         class ItemInfo;

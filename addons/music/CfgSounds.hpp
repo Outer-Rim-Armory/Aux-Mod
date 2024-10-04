@@ -23,6 +23,8 @@ class CfgSounds {
     SOUND(EPF_Radio3,"Holownet News 3","News broadcast");
     SOUND(EPF_PresidenteSpeech,"[KC] El Presidente Speech","El Presidente speech");
     SOUND(TDI_Theme,"[KC] Total Drama Island Theme","Total Drama Island theme");
+    SOUND(TDI_Episode_1_Part_1,"[KC] Total Drama Island Episode 1 Part 1","Total Drama Island Episode 1 Part 1");
+    SOUND(TDI_Episode_1_Part_2,"[KC] Total Drama Island Episode 1 Part 2","Total Drama Island Episode 1 Part 2");
     SOUND(PokeVillage,"[KC] Poke Village Theme","Poke Village Theme");
     SOUND(Droid_Marching,"[KC] CIS Droid March","CIS Droid March");
 };

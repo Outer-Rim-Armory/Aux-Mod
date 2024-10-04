@@ -30,7 +30,7 @@ workshop = [
     "2173635424", # 501st Aux Mod
     "2522638637", # ACE Arsenal Extended
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
-    "2954535667", # Warmantle Armory # Unused
+   # "2954535667", # Warmantle Armory # Unused
     "767380317", # Blastcore # Only used to test particle effects
     "2061309401", # Last Force Project
 ]
@@ -48,10 +48,12 @@ workshop = [
     "2789152015", # WBK Zombies
     # "2954535667", # Warmantle Armory # Unused
     "2478080991", # Scion Conflict
+    "3328314886", # Heavy Weapons Framework
+    "2323185592", # Lightsabers and Force
 ]
 optionals = ["no_burn_screams"]
 
 [hemtt.launch.previews]
-extends = "default"
+extends = "full"
 mission = "Previews.VR"
 parameters = ["-name=Previews"]

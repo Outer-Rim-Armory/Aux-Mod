@@ -357,6 +357,67 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Phase2_CT_Medic): CLASS(Unit_Phase2_Base) {
+    displayName = "INF 16 - Clone Medic";
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CT_Medic);
+    icon = "iconManLeader";
+
+    uniformClass = QCLASS(Uniform_CT_Medic);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\CT_Medic_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CT_Medic_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_CT_Medic), QCLASS(Vest_Medic), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_CT_Medic), QCLASS(Vest_Medic), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Phase2_CS_Medic): CLASS(Unit_Phase2_Base) {
+    displayName = "INF 17 - Clone Sergeant Medic";
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CS_Medic);
+    icon = "iconManLeader";
+
+    uniformClass = QCLASS(Uniform_CS_Medic);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\CS_Medic_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CS_Medic_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_CS_Medic), QCLASS(Vest_CS), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_CS_Medic), QCLASS(Vest_CS), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Phase2_WO_Medic): CLASS(Unit_Phase2_Base) {
+    displayName = "INF 18 - Clone Warrant Officer Medic";
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_WO_Medic);
+    icon = "iconManLeader";
+
+    uniformClass = QCLASS(Uniform_CS_Medic);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\WO_Medic_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\WO_Medic_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_WO_Medic), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase2_officerVisor), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_WO_Medic), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase2_officerVisor), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+
 // class CLASS(Unit_Phase2_CAP): CLASS(Unit_Phase2_Base)
 // {
 //     displayName = "INF 16 - Clone Captain";

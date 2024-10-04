@@ -50,6 +50,40 @@ class CfgVehicles {
         respawnWeapons[] = {QCLASS(E5_Shielded), "", "Throw", "Put"};
     };
 
+    class CLASS(TU_Unit_Rifleman_Jetpack): CLASS(TU_Unit_Rifleman) {
+        displayName = "Rifleman (Jetpack)";
+        editorPreview = EDITOR_PREVIEW(TU_Unit_Rifleman);
+
+        weapons[] = {QCLASS(E5), "", "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(E5), "", "Throw", "Put"};
+        backpack = QCLASS(TU_Jetpack_Predef);
+    };
+
+    class CLASS(TU_Unit_AssaultHeavy_Jetpack): CLASS(TU_Unit_Rifleman) {
+        displayName = "Heavy Assault (Jetpack)";
+        editorPreview = EDITOR_PREVIEW(TU_Unit_AssaultHeavy);
+
+        weapons[] = {QCLASS(E5C), "", "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(E5C), "", "Throw", "Put"};
+        backpack = QCLASS(TU_Jetpack_Predef_Heavy);
+    };
+
+    class CLASS(TU_Unit_Sniper): CLASS(TU_Unit_Rifleman) {
+        displayName = "Sniper";
+        editorPreview = EDITOR_PREVIEW(TU_Unit_Sniper);
+        icon = "JLTS_iconManSniper";
+
+        weapons[] = {QCLASS(E5S), "", "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(E5S), "", "Throw", "Put"};
+
+        magazines[] = {QCLASS(Mag_20rnd_E5S)};
+        respawnMagazines[] = {QCLASS(Mag_20rnd_E5S)};
+
+        linkedItems[] = {QCLASS(TU_Helmet), QCLASS(TU_Vest), LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(TU_Helmet), QCLASS(TU_Vest), LINKED_ITEMS_RADIO};
+        backpack = QCLASS(TU_Backpack_Predef_Sniper);
+    };
+
     class CLASS(TU_Unit_AT): CLASS(TU_Unit_Rifleman) {
         displayName = "Rifleman (AT)";
         editorPreview = EDITOR_PREVIEW(TU_Unit_AT);
@@ -93,6 +127,22 @@ class CfgVehicles {
         backpack = QCLASS(TU_Backpack_Assault_Predef_Heavy);
     };
 
+    class CLASS(TU_Unit_HeavyGunner): CLASS(TU_Unit_Rifleman) {
+        displayName = "Heavy Gunner";
+        editorPreview = EDITOR_PREVIEW(TU_Unit_HeavyGunner);
+        icon = "iconManMG";
+
+        weapons[] = {QCLASS(Z6), "", "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(Z6), "", "Throw", "Put"};
+
+        magazines[] = {QCLASS(Mag_300Rnd_Z6_Red)};
+        respawnMagazines[] = {QCLASS(Mag_300Rnd_Z6_Red)};
+
+        linkedItems[] = {QCLASS(TU_Helmet_Assault), QCLASS(TU_Vest_AssaultHeavy), LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(TU_Helmet_Assault), QCLASS(TU_Vest_AssaultHeavy), LINKED_ITEMS_RADIO};
+        backpack = QCLASS(TU_Backpack_Assault_Predef_Z6);
+    };
+
     class CLASS(TU_Unit_AssaultMedium): CLASS(TU_Unit_AssaultHeavy) {
         displayName = "Medium Assault";
         editorPreview = EDITOR_PREVIEW(TU_Unit_AssaultMedium);
@@ -125,6 +175,16 @@ class CfgVehicles {
         linkedItems[] = {QCLASS(TU_Helmet_Visor), QCLASS(TU_Vest), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(TU_Helmet_Visor), QCLASS(TU_Vest), LINKED_ITEMS_RADIO};
         backpack = QCLASS(TU_Backpack_Heavy);
+    };
+
+    class CLASS(TU_Unit_Pilot): CLASS(TU_Unit_Rifleman) {
+        displayName = "Pilot";
+        editorPreview = EDITOR_PREVIEW(TU_Unit_Pilot);
+        icon = "iconManLeader";
+
+        linkedItems[] = {QCLASS(TU_Helmet_Pilot), QCLASS(TU_Vest), LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(TU_Helmet_Pilot), QCLASS(TU_Vest_Light), LINKED_ITEMS_RADIO};
+        backpack = QCLASS(TU_Jetpack_Predef);
     };
 
     class CLASS(backpack_base);
@@ -184,6 +244,17 @@ class CfgVehicles {
             MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
         };
     };
+    class CLASS(TU_Backpack_Predef_Sniper): CLASS(TU_Backpack) {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_20rnd_E5S),10);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+    };
 
     class CLASS(TU_Backpack_Assault): CLASS(TU_Backpack) {
         displayName = "[TU] Assault Backpack";
@@ -208,6 +279,17 @@ class CfgVehicles {
     class CLASS(TU_Backpack_Assault_Predef_Medium): CLASS(TU_Backpack_Assault_Predef_Heavy) {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_150Rnd_E5C),10);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+        };
+    };
+    class CLASS(TU_Backpack_Assault_Predef_Z6): CLASS(TU_Backpack_Assault) {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_300Rnd_Z6_Red),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -241,6 +323,105 @@ class CfgVehicles {
             MAG_XX(ShieldGrenade_Mag,2);
             MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
         };
+    };
+
+    class CLASS(TU_Jetpack): CLASS(TU_Backpack) {
+        SCOPE_PUBLIC;
+        displayName = "[TU] Jumppack";
+
+        model = "sc_equipment\data\ronin\ro_jumppack.p3d";
+        hiddenSelectionsTextures[] = {"sc_equipment\data\ronin\textures\jumppack_black_co.paa"};
+        picture = "";
+
+        EGVAR(jetpacks,isJetpack) = TRUE;
+        EGVAR(jetpacks,speed) = JETPACK_SPEED_DEFAULT;
+        EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
+        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
+        EGVAR(jetpacks,canHover) = TRUE;
+
+        // Effects
+        EGVAR(jetpacks,effectPoints)[] = {
+            {-0.13251, -0.219357, -0.247619},
+            { 0.15051, -0.219357, -0.247619}
+        };
+        EGVAR(jetpacks,effects)[] = {
+            QCLASS(cloudlet_jetpackFire_blue),
+            QCLASS(cloudlet_jetpackSmoke)
+        };
+        EGVAR(jetpacks,effectSound) = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
+        EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};
+
+        EGVAR(jetpacks,freefallHeight) = 500;
+
+        EGVAR(custom_armor,isCustom) = FALSE;
+    };
+
+class CLASS(TU_Jetpack_Predef): CLASS(TU_Jetpack) {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_100Rnd_E5),10);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+
+        EGVAR(jetpacks,isJetpack) = TRUE;
+        EGVAR(jetpacks,speed) = JETPACK_SPEED_DEFAULT;
+        EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
+        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
+        EGVAR(jetpacks,canHover) = TRUE;
+
+        // Effects
+        EGVAR(jetpacks,effectPoints)[] = {
+            {-0.13251, -0.219357, -0.247619},
+            { 0.15051, -0.219357, -0.247619}
+        };
+        EGVAR(jetpacks,effects)[] = {
+            QCLASS(cloudlet_jetpackFire_blue),
+            QCLASS(cloudlet_jetpackSmoke)
+        };
+        EGVAR(jetpacks,effectSound) = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
+        EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};
+
+        EGVAR(jetpacks,freefallHeight) = 500;
+
+        EGVAR(custom_armor,isCustom) = FALSE;
+    };
+
+    class CLASS(TU_Jetpack_Predef_Heavy): CLASS(TU_Jetpack) {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_150Rnd_E5C),10);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+
+        EGVAR(jetpacks,isJetpack) = TRUE;
+        EGVAR(jetpacks,speed) = JETPACK_SPEED_DEFAULT;
+        EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
+        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
+        EGVAR(jetpacks,canHover) = TRUE;
+
+        // Effects
+        EGVAR(jetpacks,effectPoints)[] = {
+            {-0.13251, -0.219357, -0.247619},
+            { 0.15051, -0.219357, -0.247619}
+        };
+        EGVAR(jetpacks,effects)[] = {
+            QCLASS(cloudlet_jetpackFire_blue),
+            QCLASS(cloudlet_jetpackSmoke)
+        };
+        EGVAR(jetpacks,effectSound) = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
+        EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};
+
+        EGVAR(jetpacks,freefallHeight) = 500;
+
+        EGVAR(custom_armor,isCustom) = FALSE;
     };
 
     class CLASS(AAT_Base);
@@ -333,7 +514,7 @@ class CfgVehicles {
         faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\ogre,Ogre_Tan);
 
-        crew = QCLASS(TU_Unit_Rifleman);
+        crew = QCLASS(TU_Unit_Pilot);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
     };
 
@@ -345,8 +526,9 @@ class CfgVehicles {
         faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\ogre,Ogre_Armed_Tan);
 
-        crew = QCLASS(TU_Unit_Rifleman);
+        crew = QCLASS(TU_Unit_Pilot);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+
     };
 
     class CLASS(Vespoid_Base);
@@ -357,8 +539,14 @@ class CfgVehicles {
         faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Tan);
 
-        crew = QCLASS(TU_Unit_Rifleman);
+        crew = QCLASS(TU_Unit_Pilot);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
+        hiddenSelectionsTextures[] = {
+            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Main_co.paa",
+            "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Attachments_co.paa",
+            "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
+        };
+        textureList[] = {"TechnoUnion", 0, "EPF", 1};
     };
 
     class CLASS(Vespoid_Armed_Base);
@@ -369,7 +557,7 @@ class CfgVehicles {
         faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_Tan);
 
-        crew = QCLASS(TU_Unit_Rifleman);
+        crew = QCLASS(TU_Unit_Pilot);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
     };
 
@@ -381,7 +569,7 @@ class CfgVehicles {
         faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Tan);
 
-        crew = QCLASS(TU_Unit_Rifleman);
+        crew = QCLASS(TU_Unit_Pilot);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
     };
 
@@ -393,7 +581,7 @@ class CfgVehicles {
         faction = QFACTION(TU);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Tan);
 
-        crew = QCLASS(TU_Unit_Rifleman);
+        crew = QCLASS(TU_Unit_Pilot);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
     };
 };

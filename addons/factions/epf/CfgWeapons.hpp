@@ -66,6 +66,17 @@ class CfgWeapons {
         };
     };
 
+class CLASS(EPF_Helmet_Pilot): CLASS(EPF_Helmet) {
+        displayName = "[EPF] Pilot Helmet";
+
+        model = "\sc_equipment\data\ronin\ro_helmet.p3d";
+        hiddenSelectionsTextures[] = {"sc_equipment\data\ronin\textures\helmet_co.paa"};
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\sc_equipment\data\ronin\ro_helmet.p3d";
+        };
+    };
+
     class CLASS(EPF_Helmet_Presidente): CLASS(EPF_Helmet) {
         displayName = "[EPF] El Presidente Cap";
         model = "\A3\Characters_F_AoW\Headgear\ParadeDressCap_01_F.p3d";

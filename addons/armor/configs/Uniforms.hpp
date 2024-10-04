@@ -116,6 +116,27 @@ class CLASS(Uniform_CL1): CLASS(Uniform_Base) {
     };
 };
 
+class CLASS(Uniform_CT_Medic): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 16 (CT Medic)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CT_Medic);
+    };
+};
+
+class CLASS(Uniform_CS_Medic): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 17 (Sergeant Medic)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CS_Medic);
+    };
+};
+
+class CLASS(Uniform_WO_Medic): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 18 (Warrant Officer Medic)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_WO_Medic);
+    };
+};
+
 // class CLASS(Uniform_CAP): CLASS(Uniform_Base)
 // {
 //     displayName = "[KC] INF Armor 16 (Captain)";
