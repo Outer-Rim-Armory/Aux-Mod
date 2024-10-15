@@ -20,7 +20,7 @@ class CfgWeapons {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        displayName = "[KC] 773 (Base)";
+        displayName = "[KC] 773 Rifle (Base)";
         baseWeapon = QCLASS(773_Base);
 
         modes[] = {"Single"};
@@ -75,7 +75,7 @@ class CfgWeapons {
     class CLASS(773): CLASS(773_Base) {
         SCOPE_PUBLIC;
 
-        displayName = "[KC] 773";
+        displayName = "[KC] 773 Rifle";
         baseWeapon = QCLASS(773);
 
         JLTS_friedItem = QCLASS(773_Fried);
@@ -90,7 +90,7 @@ class CfgWeapons {
     class CLASS(773_Fried): CLASS(773) {
         SCOPE_HIDDEN;
 
-        displayName = "[KC] 773 (Fried)";
+        displayName = "[KC] 773 Rifle (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_fried_ui_ca.paa";
         baseWeapon = QCLASS(773_Fried);
