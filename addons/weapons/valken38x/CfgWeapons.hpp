@@ -22,7 +22,7 @@ class CfgWeapons {
         baseWeapon = QCLASS(Valken38x_Base);
         picture = QPATHTOF(valken38x\data\ui\Valken38x_ca.paa);
 
-        modes[] = {"Single"};
+        modes[] = {"Single","aicqb","aiclose","aimedium","aifar","aiopticmode1","aiopticmode2"};
         muzzles[] = {"this"};
         magazines[] = {QCLASS(Mag_25Rnd_Valken38x), QCLASS(Mag_10Rnd_Valken38x_AP), QCLASS(Mag_Valken38x), QCLASS(Mag_Valken38x_AP)};
         magazineWell[] = {};
@@ -49,16 +49,81 @@ class CfgWeapons {
         };
 
         class Single: Single {
-            dispersion = 0;
-            reloadTime = 2;
-
             class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {QCLASS(SoundSet_Valken38xShot)};
-                soundSetShotWater[] = {QCLASS(SoundSet_Valken38xShot)};
+                soundSetShot[] = {QCLASS(SoundShader_Valken38xShot)};
+                soundSetShotWater[] = {QCLASS(SoundShader_Valken38xShot)};
             };
         };
+        class aicqb: Single
+        {
+            showToPlayer = 0;
+            dispersion = 0.00073;
+            minRange = 25;
+            minRangeProbab = 1;
+            midRange = 50;
+            midRangeProbab = 1;
+            maxRange = 100;
+            maxRangeProbab = 0.5;
+            aiRateOfFire = 0.1;
+            aiRateOfFireDistance = 50;
+        };
+        class aiclose: aicqb
+        {
+            minRange = 50;
+            minRangeProbab = 0.5;
+            midRange = 150;
+            midRangeProbab = 1;
+            maxRange = 250;
+            maxRangeProbably = 0.5;
+            aiRateOfFireDistance = 150;
+        };
+        class aimedium: aicqb
+        {
+            minRange = 150;
+            minRangeProbab = 0.5;
+            midRange = 250;
+            midRangeProbab = 1;
+            maxRange = 350;
+            maxRangeProbab = 0.1;
+            aiRateOfFireDistance = 250;
+            requiredOpticType = 0;
+        };
+        class aifar: aicqb
+        {
+            minRange = 250;
+            minRangeProbab = 0.5;
+            midRange = 350;
+            midRangeProbab = 1;
+            maxRange = 600;
+            maxRangeProbab = 0.5;
+            aiRateOfFireDistance = 350;
+            requiredOpticType = 0;
+        };
+        class aiopticmode1: aicqb
+        {
+            minRange = 400;
+            minRangeProbab = 0.5;
+            midRange = 500;
+            midRangeProbab = 1;
+            maxRange = 700;
+            maxRangeProbab = 0.5;
+            aiRateOfFireDistance = 500;
+            requiredOpticType = 1;
+        };
+        class aiopticmode2: aicqb
+        {
+            minRange = 500;
+            minRangeProbab = 0.5;
+            midRange = 700;
+            midRangeProbab = 1;
+            maxRange = 900;
+            maxRangeProbab = 0.5;
+            aiRateOfFireDistance = 700;
+            requiredOpticType = 1;
+        };
+
 
         class OpticsModes: OpticsModes {
             class Sights: DC15Xscope_sights {};

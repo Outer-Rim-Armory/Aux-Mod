@@ -50,40 +50,43 @@ class CfgVehicles {
         weapons[] = {QCLASS(E5_Shielded), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(E5_Shielded), "", "Throw", "Put"};
     };
-//
-    // class CLASS(EPF_Unit_Rifleman_Jetpack): CLASS(EPF_Unit_Rifleman) {
-    //    displayName = "Rifleman (Jetpack)";
-    //    editorPreview = EDITOR_PREVIEW(EPF_Unit_Rifleman);
-//
-    //    weapons[] = {QCLASS(E5), "", "Throw", "Put"};
-    //    respawnWeapons[] = {QCLASS(E5), "", "Throw", "Put"};
-    //    backpack = QCLASS(EPF_Jetpack_Predef);
-    //};
-//
-//    class CLASS(EPF_Unit_AssaultHeavy_Jetpack): CLASS(EPF_Unit_Rifleman) {
-//        displayName = "Heavy Assault (Jetpack)";
-//        editorPreview = EDITOR_PREVIEW(EPF_Unit_AssaultHeavy);
-//
-//        weapons[] = {QCLASS(E5C_Stock), "", "Throw", "Put"};
-//        respawnWeapons[] = {QCLASS(E5C_Stock), "", "Throw", "Put"};
-//        backpack = QCLASS(EPF_Jetpack_Predef_Heavy);
-//    };
 
-//    class CLASS(EPF_Unit_Sniper): CLASS(EPF_Unit_Rifleman) {
-//        displayName = "Sniper";
- //       editorPreview = EDITOR_PREVIEW(EPF_Unit_Sniper);
- //       icon = "JLTS_iconManSniper";
-//
-//        weapons[] = {QCLASS(E5S), "", "Throw", "Put"};
-//        respawnWeapons[] = {QCLASS(E5S), "", "Throw", "Put"};
-//
- //       magazines[] = {QCLASS(Mag_20rnd_E5S)};
- //       respawnMagazines[] = {QCLASS(Mag_20rnd_E5S)};
+     class CLASS(EPF_Unit_Rifleman_Jetpack): CLASS(EPF_Unit_Rifleman) {
+        displayName = "Rifleman (Jetpack)";
+        editorPreview = EDITOR_PREVIEW(EPF_Unit_Rifleman);
 
-//        linkedItems[] = {QCLASS(EPF_Helmet), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
- //       respawnLinkedItems[] = {QCLASS(EPF_Helmet), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
- //       backpack = QCLASS(EPF_Backpack_Predef_Sniper);
- //   };
+        weapons[] = {QCLASS(E5), "", "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(E5), "", "Throw", "Put"};
+        backpack = QCLASS(EPF_Jetpack_Predef_Rifleman);
+    };
+
+    class CLASS(EPF_Unit_AssaultMedium_Jetpack): CLASS(EPF_Unit_Rifleman) {
+        displayName = "Medium Assault (Jetpack)";
+        editorPreview = EDITOR_PREVIEW(EPF_Unit_AssaultMedium);
+
+        weapons[] = {QCLASS(E5C_Stock), "", "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(E5C_Stock), "", "Throw", "Put"};
+
+        linkedItems[] = {QCLASS(EPF_Helmet_Assault), QCLASS(EPF_Vest_AssaultMedium), LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(EPF_Helmet_Assault), QCLASS(EPF_Vest_AssaultMedium), LINKED_ITEMS_RADIO};
+        backpack = QCLASS(EPF_Jetpack_Predef_Heavy);
+    };
+
+    class CLASS(EPF_Unit_Sniper): CLASS(EPF_Unit_Rifleman) {
+        displayName = "Sniper";
+        editorPreview = EDITOR_PREVIEW(EPF_Unit_Sniper);
+        icon = "JLTS_iconManSniper";
+
+        weapons[] = {QCLASS(E5S), "", "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(E5S), "", "Throw", "Put"};
+
+        magazines[] = {QCLASS(Mag_20rnd_E5S)};
+        respawnMagazines[] = {QCLASS(Mag_20rnd_E5S)};
+
+        linkedItems[] = {QCLASS(EPF_Helmet), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(EPF_Helmet), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
+        backpack = QCLASS(EPF_Backpack_Predef_Sniper);
+    };
 
     class CLASS(EPF_Unit_AT): CLASS(EPF_Unit_Rifleman) {
         displayName = "Rifleman (AT)";
@@ -162,15 +165,15 @@ class CfgVehicles {
         backpack = QCLASS(EPF_Backpack_RTO_Predef_SL);
     };
 
-//    class CLASS(EPF_Unit_Pilot): CLASS(EPF_Unit_Rifleman) {
-//        displayName = "Pilot";
-//        editorPreview = EDITOR_PREVIEW(EPF_Unit_Pilot);
-//        icon = "iconManLeader";
-//
-//        linkedItems[] = {QCLASS(EPF_Helmet_Pilot), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
-//        respawnLinkedItems[] = {QCLASS(EPF_Helmet_Pilot), QCLASS(EPF_Vest_Light), LINKED_ITEMS_RADIO};
-//        backpack = QCLASS(EPF_Jetpack_Predef);
-//    };
+    class CLASS(EPF_Unit_Pilot): CLASS(EPF_Unit_Rifleman) {
+        displayName = "Pilot";
+        editorPreview = EDITOR_PREVIEW(EPF_Unit_Pilot);
+        icon = "iconManLeader";
+
+        linkedItems[] = {QCLASS(EPF_Helmet_Pilot), QCLASS(EPF_Vest), LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(EPF_Helmet_Pilot), QCLASS(EPF_Vest_Light), LINKED_ITEMS_RADIO};
+        backpack = QCLASS(EPF_Jetpack_Predef_Pilot);
+    };
 
     class CLASS(EPF_Unit_Melee): CLASS(EPF_Unit_Base) {
         SCOPE_PUBLIC;
@@ -286,7 +289,7 @@ class CfgVehicles {
         SCOPE_HIDDEN;
 
         class TransportMagazines {
-            MAG_XX(CLASS(Mag_20rnd_E5S),10);
+            MAG_XX(CLASS(Mag_20rnd_E5S),5);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
@@ -366,7 +369,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
         };
     };
 
@@ -397,62 +400,73 @@ class CfgVehicles {
         };
     };
 
-//    class CLASS(EPF_Jetpack): CLASS(EPF_Backpack) {
-//        SCOPE_PUBLIC;
-//        displayName = "[EPF] Jumppack";
-//
-//        model = "sc_equipment\data\ronin\ro_jumppack.p3d";
-//        hiddenSelectionsTextures[] = {"sc_equipment\data\ronin\textures\jumppack_co.paa"};
-//        picture = "";
-//
-//        EGVAR(jetpacks,isJetpack) = TRUE;
-//        EGVAR(jetpacks,speed) = JETPACK_SPEED_DEFAULT;
-//        EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
-//        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
-//        EGVAR(jetpacks,canHover) = TRUE;
-//
+    class CLASS(EPF_Jetpack): CLASS(EPF_Backpack) {
+        SCOPE_PUBLIC;
+        displayName = "[EPF] Jumppack";
+
+        model = "sc_equipment\data\ronin\ro_jumppack.p3d";
+        hiddenSelectionsTextures[] = {"sc_equipment\data\ronin\textures\jumppack_co.paa"};
+        picture = "";
+
+        EGVAR(jetpacks,isJetpack) = TRUE;
+        EGVAR(jetpacks,speed) = JETPACK_SPEED_DEFAULT;
+        EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
+        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
+        EGVAR(jetpacks,canHover) = TRUE;
+
         // Effects
- //       EGVAR(jetpacks,effectPoints)[] = {
- //           {-0.13251, -0.219357, -0.247619},
- //           { 0.15051, -0.219357, -0.247619}
- //       };
- //       EGVAR(jetpacks,effects)[] = {
- //           QCLASS(cloudlet_jetpackFire_blue),
- //           QCLASS(cloudlet_jetpackSmoke)
- //       };
- //       EGVAR(jetpacks,effectSound) = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
- //       EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};
+        EGVAR(jetpacks,effectPoints)[] = {
+            {-0.13251, -0.219357, -0.247619},
+            { 0.15051, -0.219357, -0.247619}
+        };
+        EGVAR(jetpacks,effects)[] = {
+            QCLASS(cloudlet_jetpackFire_blue),
+            QCLASS(cloudlet_jetpackSmoke)
+        };
+        EGVAR(jetpacks,effectSound) = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
+        EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};
 
- //       EGVAR(jetpacks,freefallHeight) = 500;
+        EGVAR(jetpacks,freefallHeight) = 500;
 
- //       EGVAR(custom_armor,isCustom) = FALSE;
- //   };
+        EGVAR(custom_armor,isCustom) = FALSE;
+    };
 
- //   class CLASS(EPF_Jetpack_Predef): CLASS(EPF_Jetpack) {
- //       SCOPE_HIDDEN;
- //       displayName = "[EPF] Jumppack";
+    class CLASS(EPF_Jetpack_Predef_Rifleman): CLASS(EPF_Jetpack) {
+        SCOPE_HIDDEN;
+        displayName = "[EPF] Jumppack";
 
- //       class TransportMagazines {
- //           MAG_XX(CLASS(Mag_100Rnd_E5),10);
- //           MAG_XX(SC_IG3,2);
- //           MAG_XX(SmokeShell,2);
- //           MAG_XX(ShieldGrenade_Mag,2);
- //           MAG_XX(OPTRE_FC_PlasmaGrenade,5);
- //       };
- //   };
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_100Rnd_E5),10);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+    };
 
- //   class CLASS(EPF_Jetpack_Predef_Heavy): CLASS(EPF_Jetpack) {
- //       SCOPE_HIDDEN;
- //       displayName = "[EPF] Jumppack";
+    class CLASS(EPF_Jetpack_Predef_Heavy): CLASS(EPF_Jetpack) {
+        SCOPE_HIDDEN;
+        displayName = "[EPF] Jumppack";
 
- //       class TransportMagazines {
- //           MAG_XX(CLASS(Mag_150Rnd_E5C),10);
- //           MAG_XX(SC_IG3,2);
- //           MAG_XX(SmokeShell,2);
- //           MAG_XX(ShieldGrenade_Mag,2);
- //           MAG_XX(OPTRE_FC_PlasmaGrenade,5);
- //       };
- //   };
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_150Rnd_E5C),10);
+            MAG_XX(SC_IG3,2);
+            MAG_XX(SmokeShell,2);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
+        };
+    };
+
+    class CLASS(EPF_Jetpack_Predef_Pilot): CLASS(EPF_Jetpack) {
+        SCOPE_HIDDEN;
+        displayName = "[EPF] Jumppack";
+
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_100Rnd_E5),3);
+            MAG_XX(SC_IG3,1);
+            MAG_XX(SmokeShell,3);
+        };
+    };
 
     class CLASS(AAT_Base);
     class CLASS(AAT_EPF): CLASS(AAT_Base) {

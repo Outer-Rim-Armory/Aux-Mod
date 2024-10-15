@@ -8,6 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
+            QGVAR(773),
             QGVAR(accessories),
             QGVAR(b2Blaster),
             QGVAR(dc15a),
@@ -19,7 +20,12 @@ class CfgPatches {
             QGVAR(dc17),
             QGVAR(dc17m),
             QGVAR(dc20y),
+            QGVAR(dp20),
             QGVAR(dp23),
+            QGVAR(dp24),
+            QGVAR(dp25),
+            QGVAR(dp25s),
+            QGVAR(dx50c),
             QGVAR(e5),
             QGVAR(e5c),
             QGVAR(e5s),
@@ -29,11 +35,16 @@ class CfgPatches {
             QGVAR(lw38),
             QGVAR(rps6),
             QGVAR(rps7),
+            QGVAR(rps8),
+            QGVAR(rps9),
             QGVAR(sbb3),
+            QGVAR(valken38l),
             QGVAR(valken38x),
             QGVAR(westar_m5),
             QGVAR(x42),
-            QGVAR(z6)
+            QGVAR(z6),
+            QGVAR(z7),
+            QGVAR(z8)
         };
         units[] = {};
         weapons[] = {};

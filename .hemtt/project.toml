@@ -33,6 +33,12 @@ workshop = [
    # "2954535667", # Warmantle Armory # Unused
     "767380317", # Blastcore # Only used to test particle effects
     "2061309401", # Last Force Project
+    "2291129343", # Improved Melee System
+    "2306758518", # Kobra Mod Pack - Legion Studio
+    "1393068220", # Kobra Mod Pack - Main
+    "2058554822", # 3AS (Beta Test)
+    "2215872933", # 3AS Terrains (Beta)
+    "769440155", # Operation TREBUCHET
 ]
 presets = ["main"]
 dlc = []
@@ -46,10 +52,10 @@ workshop = [
     "1572627279", # OPTRE First Contact
     "2915485125", # Burn 'Em
     "2789152015", # WBK Zombies
-    # "2954535667", # Warmantle Armory # Unused
+    "2954535667", # Warmantle Armory # Unused
     "2478080991", # Scion Conflict
-    "3328314886", # Heavy Weapons Framework
     "2323185592", # Lightsabers and Force
+    "570118882", # No Weapon Sway
 ]
 optionals = ["no_burn_screams"]
 

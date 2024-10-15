@@ -2,6 +2,7 @@ class CfgWeapons {
     class LMG_Mk200_F;
     class JLTS_Z6: LMG_Mk200_F {
         class manual;
+        class Overcharge;
         class close;
         class medium;
         class short;
@@ -15,16 +16,15 @@ class CfgWeapons {
         displayName = "[KC] Z-6 (Base)";
         baseWeapon = QCLASS(Z6_Base);
 
-        modes[] = {"manual", "close", "short", "medium", "far_optic1", "far_optic2"};
+        modes[] = {"manual","Overcharge","close","short","medium","far_optic1","far_optic2"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_300Rnd_Z6), QCLASS(Mag_300Rnd_Z6_Red), "Aux12thFleet_Mag_Z6"};
+        magazines[] = {QCLASS(Mag_400Rnd_Z6), QCLASS(Mag_400Rnd_Z6_Red), "Aux12thFleet_Mag_Z6"};
         magazineWell[] = {};
 
         recoil = "recoil_lim";
 
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
-        WBK_UseHeavyWeaponFramework = TRUE;
 
         class manual: manual {
             class StandardSound {
@@ -32,35 +32,77 @@ class CfgWeapons {
                 soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
             };
         };
-        class close: close {
-            class StandardSound {
-                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
-                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
-            };
+        class Overcharge: manual
+        {
+            dispersion = 0.00015*4;
+            displayName = "Overcharge";
+            reloadTime = 0.015;
+            burst = 25;
+            textureType = "fastAuto";
         };
-        class short: short {
-            class StandardSound {
-                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
-                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
-            };
+        class close: manual
+        {
+            burst = 10;
+            aiRateOfFire = 0.5;
+            aiRateOfFireDistance = 50;
+            minRange = 10;
+            minRangeProbab = 0.05;
+            midRange = 20;
+            midRangeProbab = 0.7;
+            maxRange = 50;
+            maxRangeProbab = 0.04;
+            showToPlayer = 0;
         };
-        class medium: medium {
-            class StandardSound {
-                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
-                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
-            };
+        class short: close
+        {
+            burst = 8;
+            aiRateOfFire = 2;
+            aiRateOfFireDistance = 300;
+            minRange = 50;
+            minRangeProbab = 0.05;
+            midRange = 150;
+            midRangeProbab = 0.7;
+            maxRange = 300;
+            maxRangeProbab = 0.04;
         };
-        class far_optic1: far_optic1 {
-            class StandardSound {
-                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
-                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
-            };
+        class medium: close
+        {
+            burst = 7;
+            aiRateOfFire = 4;
+            aiRateOfFireDistance = 600;
+            minRange = 200;
+            minRangeProbab = 0.05;
+            midRange = 300;
+            midRangeProbab = 0.7;
+            maxRange = 500;
+            maxRangeProbab = 0.1;
         };
-        class far_optic2: far_optic2 {
-            class StandardSound {
-                soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
-                soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
-            };
+        class far_optic1: medium
+        {
+            requiredOpticType = 1;
+            showToPlayer = 0;
+            burst = 3;
+            aiRateOfFire = 10;
+            aiRateOfFireDistance = 1000;
+            minRange = 300;
+            minRangeProbab = 0.05;
+            midRange = 500;
+            midRangeProbab = 0.4;
+            maxRange = 650;
+            maxRangeProbab = 0.01;
+        };
+        class far_optic2: far_optic1
+        {
+            burst = 3;
+            requiredOpticType = 2;
+            minRange = 400;
+            minRangeProbab = 0.05;
+            midRange = 750;
+            midRangeProbab = 0.7;
+            maxRange = 900;
+            maxRangeProbab = 0.01;
+            aiRateOfFire = 10;
+            aiRateOfFireDistance = 900;
         };
     };
 
