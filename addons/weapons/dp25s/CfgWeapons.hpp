@@ -24,7 +24,7 @@ class CfgWeapons {
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_12Rnd_DP25S), QCLASS(Mag_12Rnd_DP25S_SLUG), QCLASS(Mag_4Rnd_DP25S_Flame)};
+        magazines[] = {QCLASS(Mag_12Rnd_DP25S), QCLASS(Mag_12Rnd_DP25S_SLUG), QCLASS(Mag_20Rnd_DP25S_HP), QCLASS(Mag_8Rnd_DP25S_HE), QCLASS(Mag_4Rnd_DP25S_Flame)};
         magazineWell[] = {};
 
         canShootInWater = TRUE;
@@ -36,6 +36,8 @@ class CfgWeapons {
             class CowsSlot: CowsSlot {
                 class CompatibleItems {
                     ATTACHMENTS_OPTIC_SHORT;
+                    ATTACHMENTS_OPTIC_MEDIUM;
+                    ATTACHMENTS_OPTIC_SIGHTS;
                 };
             };
             class PointerSlot: PointerSlot {

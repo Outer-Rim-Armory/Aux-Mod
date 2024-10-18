@@ -64,6 +64,22 @@ class CfgMagazines {
 
         nameSound = "";
     };
+    class CLASS(Mag_UGL_Base): CLASS(Mag_Base) {
+        displayName = "[KC] HE Round (Base)";
+        displayNameShort = "Base HE";
+        descriptionShort = "Type: HE Round - Base <br />Rounds: 1<br />Used in: UGLs, Flare Guns";
+
+        type = TYPE_MAGAZINE_HANDGUN_AND_GL;
+
+        initSpeed = 80;
+        mass = 4;
+        count = 1;
+
+        model = "\A3\Weapons_F\Ammo\UGL_slug.p3d";
+        picture = "\A3\Weapons_F\Data\UI\gear_UGL_slug_CA.paa";
+
+        nameSound = "";
+    };
 
     class CLASS(Mag_UGL_FlareBlue): CLASS(Mag_UGL_FlareBase) {
         SCOPE_PUBLIC;
@@ -75,6 +91,18 @@ class CfgMagazines {
         weaponPoolAvailable = TRUE;
 
         ammo = QCLASS(Flare_Blue);
+    };
+    class CLASS(Mag_UGL_10Rnd_HE): CLASS(Mag_UGL_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] 10Rnd HE Grenade";
+        displayNameShort = "High Explosive";
+        descriptionShort = "Type: HE Grenade <br />Rounds: 10 <br />Used in: UGLs";
+        mass = 40;
+        count = 10;
+
+        weaponPoolAvailable = TRUE;
+
+        ammo = QCLASS(Grenade_HE);
     };
     class CLASS(Mag_UGL_3Rnd_FlareBlue): CLASS(Mag_UGL_FlareBlue) {
         displayName = "[KC] 3Rnd Flare Round (Blue)";

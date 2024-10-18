@@ -1,6 +1,7 @@
 class CfgAmmo {
     class CLASS(Bullet_PlasmaSniperAP_Blue);
     class CLASS(Bullet_PlasmaDC20Y): CLASS(Bullet_PlasmaSniperAP_Blue) {
+        hit = 100;
         tracerScale = 1;
     };
 
@@ -11,6 +12,6 @@ class CfgAmmo {
 
     class CLASS(Bullet_PlasmaSniper_Blue);
     class CLASS(Bullet_PlasmaDC20Y_HE): CLASS(Bullet_PlasmaSniper_Blue) {
-        explosive = 0.5;
+        explosive = 1.5;
     };
 };

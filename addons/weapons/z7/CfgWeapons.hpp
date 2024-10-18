@@ -1,14 +1,14 @@
 class CfgWeapons {
     class Launcher_base_F;
-    class 3AS_Chaingun: Launcher_base_F {
+    class SWLW_Z7: Launcher_base_F {
         class FullAuto;
     };
-    class CLASS(Z7_base): 3AS_Chaingun {
+    class CLASS(Z7_base): SWLW_Z7 {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
         baseWeapon = QCLASS(Z7_base);
-        modes[] = {"FullAuto", "Overcharge"};
+        modes[] = {"FullAuto"};
         magazines[] = {QCLASS(Mag_800rnd_Z7), QCLASS(Mag_800rnd_Z7_Red)};
 
         JLTS_hasElectronics = TRUE;
@@ -29,13 +29,6 @@ class CfgWeapons {
                 soundSetShot[] = {QCLASS(SoundSet_Z7Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_Z7Shot)};
             };
-        };
-
-        class Overcharge: FullAuto {
-            displayName = "Overcharge";
-            burst = 25;
-            reloadTime = 0.015;
-            textureType = "fastAuto";
         };
     };
 

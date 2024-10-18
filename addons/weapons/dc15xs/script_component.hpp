@@ -1,4 +1,4 @@
-#define SUBCOMPONENT dc15s
-#define SUBCOMPONENT_BEAUTIFIED DC-15S
+#define SUBCOMPONENT dc15xs
+#define SUBCOMPONENT_BEAUTIFIED DC-15XS
 
 #include "..\script_component.hpp"

@@ -30,7 +30,7 @@ class CfgWeapons {
 
         modes[] = {"Single", "FullAuto"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_40Rnd_DP24), QCLASS(Mag_20Rnd_DP24_HP), QCLASS(Mag_4Rnd_DP24_Flame)};
+        magazines[] = {QCLASS(Mag_40Rnd_DP24), QCLASS(Mag_20Rnd_DP24_HE), QCLASS(Mag_4Rnd_DP24_Flame)};
         magazineWell[] = {};
 
         canShootInWater = TRUE;
@@ -42,6 +42,8 @@ class CfgWeapons {
             class CowsSlot: CowsSlot {
                 class CompatibleItems {
                     ATTACHMENTS_OPTIC_SHORT;
+                    ATTACHMENTS_OPTIC_MEDIUM;
+                    ATTACHMENTS_OPTIC_SIGHTS;
                 };
             };
             class PointerSlot: PointerSlot {
@@ -52,6 +54,7 @@ class CfgWeapons {
         };
 
         class Single: Single {
+            reloadTime = 0.20;
             class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};

@@ -37,8 +37,6 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot: CowsSlot {
                 class CompatibleItems {
-                    ATTACHMENTS_OPTIC_MEDIUM;
-                    ATTACHMENTS_OPTIC_SIGHTS;
                 };
             };
             class PointerSlot: PointerSlot {
@@ -83,7 +81,6 @@ class CfgWeapons {
         class LinkedItems {
             class LinkedItemsOptic {
                 slot = "CowsSlot";
-                item = QCLASS(Optic_DC15X);
             };
         };
     };

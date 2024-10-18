@@ -24,7 +24,22 @@ class CfgMagazines {
         mass = 10;
 
     };
+    class CLASS(Mag_20Rnd_DP25_HP): CLASS(Mag_12Rnd_DP25) {
+        displayName = "[KC] DP-25 HP Energy Cell";
+        displayNameShort = "High Energy";
+        descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 20<br/>Used In: DP-25";
 
+        ammo = QCLASS(Bullet_PlasmaScatterHP_Blue);
+        count = 20;
+    };
+    class CLASS(Mag_8Rnd_DP25_HE): CLASS(Mag_12Rnd_DP25) {
+        displayName = "[KC] DP-25 HE";
+        displayNameShort = "High Explosive";
+        descriptionShort = "Explosive Energy Cell Pack<br/>Rounds: 8<br/>Used In: DP-25";
+
+        ammo = QCLASS(Bullet_Plasma40mm_AT);
+        count = 8;
+    };
     class CLASS(Mag_4Rnd_DP25_Flame): CLASS(Mag_12Rnd_DP25) {
         displayName = "[KC] DP-25 Dragons Breath";
         displayNameShort = "Standard Energy";

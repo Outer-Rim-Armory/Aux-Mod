@@ -5,7 +5,7 @@ class CfgWeapons {
     class arifle_MX_Base_F: Rifle_Base_F {
         class WeaponSlotsInfo;
     };
-    class JLTS_DP23: arifle_MX_Base_F {
+    class SWLW_DP20: arifle_MX_Base_F {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
@@ -15,7 +15,7 @@ class CfgWeapons {
             class StandardSound;
         };
     };
-    class CLASS(DP20_Base): JLTS_DP23 {
+    class CLASS(DP20_Base): SWLW_DP20 {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -36,6 +36,8 @@ class CfgWeapons {
             class CowsSlot: CowsSlot {
                 class CompatibleItems {
                     ATTACHMENTS_OPTIC_SHORT;
+                    ATTACHMENTS_OPTIC_MEDIUM;
+                    ATTACHMENTS_OPTIC_SIGHTS;
                 };
             };
             class PointerSlot: PointerSlot {

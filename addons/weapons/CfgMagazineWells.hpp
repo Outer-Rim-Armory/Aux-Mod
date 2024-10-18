@@ -58,7 +58,8 @@ class CfgMagazineWells {
             "3Rnd_HE_Grenade_shell"
         };
         KC_Magazines[] = {
-            QCLASS(Mag_UGL_3Rnd_FlareBlue)
+            QCLASS(Mag_UGL_3Rnd_FlareBlue),
+            QCLASS(Mag_UGL_10Rnd_HE)
         };
         ACE_Magazines[] = {
             "ACE_HuntIR_M203"

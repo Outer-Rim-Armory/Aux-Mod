@@ -9,7 +9,7 @@ class CfgMagazines {
         model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
         picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 
-        ammo = QCLASS(Bullet_PlasmaSniper_Blue);
+        ammo = QCLASS(Bullet_PlasmaSniper_Blue3);
         count = 10;
         mass = 10;
     };

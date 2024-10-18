@@ -14,7 +14,7 @@ class CfgMagazines {
         initSpeed = 200;
         type = AMMO_USAGE_ARMORED_VEHICLES;
 
-        ammo = QCLASS(Bullet_Plasma_Z8);
+        ammo = QCLASS(Bullet_Plasma_Z7);
         count = 800;
         mass = 27;
     };
@@ -32,7 +32,7 @@ class CfgMagazines {
         initSpeed = 200;
         type = AMMO_USAGE_ARMORED_VEHICLES;
 
-        ammo = QCLASS(Bullet_Plasma_Z8_Red);
+        ammo = QCLASS(Bullet_Plasma_Z7_Red);
         count = 800;
         mass = 27;
     };

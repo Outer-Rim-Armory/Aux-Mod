@@ -13,17 +13,6 @@ class CfgMagazines {
         count = 30;
         mass = 10;
     };
-
-    class CLASS(Mag_15Rnd_DP23_HP): CLASS(Mag_30Rnd_DP23) {
-        displayName = "[KC] DP-23 HP Energy Cell";
-        displayNameShort = "Standard Energy";
-        descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 15<br/>Used In: DP-23";
-
-        ammo = QCLASS(Bullet_PlasmaScatterHP_Blue);
-        count = 15;
-
-    };
-
     class CLASS(Mag_8Rnd_DP23_Flame): CLASS(Mag_30Rnd_DP23) {
         displayName = "[KC] DP-23 Dragons Breath";
         displayNameShort = "Standard Energy";

@@ -57,6 +57,7 @@ class CfgWeapons {
 
         class FullAuto: FullAuto {
             dispersion = 0.00075;
+            reloadTime = 0.06;
             recoil = "recoil_auto_mx";
             recoilProne = "recoil_auto_prone_mx";
 
@@ -71,8 +72,8 @@ class CfgWeapons {
             class StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
-                soundSetShot[] = {QCLASS(SoundSet_DC15LShot)};
-                soundSetShotWater[] = {QCLASS(SoundSet_DC15LShot)};
+                soundSetShot[] = {QCLASS(SoundSet_Valken38lShot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_Valken38lShot)};
             };
         };
     };

@@ -1,51 +1,46 @@
-class Mode_SemiAuto;
+class UGL_F;
 
 class CfgWeapons {
     class Rifle_Base_F;
     class arifle_MX_Base_F: Rifle_Base_F {
         class WeaponSlotsInfo;
+        class Single;
+        class FullAuto;
     };
     class JLTS_EPL2: arifle_MX_Base_F {
         class WeaponSlotsInfo: WeaponSlotsInfo {
         };
-        class Single: Mode_SemiAuto {
+        class Single: Single {
             class StandardSound;
         };
     };
-    class CLASS(DX50C_Base): JLTS_EPL2 {
-        SCOPE_PRIVATE;
-        displayName = "[KC] DX-50c Base";
+    class CLASS(DX50C_Base): JLTS_EPL2{
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] DX-50C";
         picture = "\MRC\JLTS\weapons\EPL2\data\ui\EPL2_ui_ca.paa";
         model = "\MRC\JLTS\weapons\EPL2\EPL2.p3d";
         handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\EPL2\anims\EPL2_handanim.rtm"};
-        magazines[] = {QCLASS(Mag_10Rnd_DX50C)};
+        magazines[]={QCLASS(Mag_15Rnd_DX50C)};
         modes[] = {"Single","AICQB","AIClose","AIMedium","AIFar"};
         class Single: Single
         {
             reloadTime = 0.24;
             sounds[] = {"StandardSound"};
-            class WeaponSlotsInfo: WeaponSlotsInfo {
-            class CowsSlot: CowsSlot {
-                class CompatibleItems {
-                    ATTACHMENTS_OPTIC_SHORT;
-                };
+            class BaseSoundModeType
+            {
+                weaponSoundEffect = "";
+                closure1[] = {};
+                closure2[] = {};
+                soundClosure[] = {};
             };
-            class PointerSlot: PointerSlot {
-                class CompatibleItems {
-                    ATTACHMENTS_POINTER_BASE;
-                };
-            };
-        };
-
-        class Single: Single {
-            class StandardSound: StandardSound {
-                soundBegin[] = {};
-                soundBeginWater[] = {};
-                soundSetShot[] = {QCLASS(SoundSet_DX50CShot)};
-                soundSetShotWater[] = {QCLASS(SoundSet_DX50CShot)};
+            class StandardSound: BaseSoundModeType
+            {
+                weaponSoundEffect = "";
+                begin1[] = {"MRC\JLTS\weapons\EPL2\sounds\EPL2_fire",1,1,3000};
+                soundBegin[] = {"begin1",1};
             };
         };
-    };
         class aicqb: Single
         {
             showToPlayer = 0;
@@ -101,7 +96,7 @@ class CfgWeapons {
     class CLASS(DX50C): CLASS(DX50C_Base) {
         SCOPE_PUBLIC;
 
-        displayName = "[KC] DX-50c";
+        displayName = "[KC] DX-50C";
         baseWeapon = QCLASS(DX50C);
 
         JLTS_friedItem = QCLASS(DX50C_Fried);
@@ -109,11 +104,63 @@ class CfgWeapons {
     class CLASS(DX50C_Fried): CLASS(DX50C) {
         SCOPE_HIDDEN;
 
-        displayName = "[KC] DX-50c (Fried)";
+        displayName = "[KC] DC-15A (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_fried_ui_ca.paa";
         baseWeapon = QCLASS(DX50C_Fried);
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_fried_ui_ca.paa";
+
         JLTS_isFried = TRUE;
         magazines[] = {};
+
+    };
+
+    class CLASS(DX50C_UGL): CLASS(DX50C_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] DX-50C UGL";
+        baseWeapon = QCLASS(DX50C_UGL);
+        muzzles[] = {"this", "UGL"};
+
+        irDistance = 0;
+        irLaserEnd = "";
+        irLaserPos = "";
+
+        JLTS_friedItem = QCLASS(DX50C_UGL_Fried);
+        JLTS_repairTime = 35;
+
+        class UGL: UGL_F {
+            displayName = "Grenade Launcher";
+            descriptionShort = "UGL";
+
+            cameraDir = "OP_look";
+            discreteDistance[] = {100, 200, 300, 400};
+            discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"};
+            discreteDistanceInitIndex = 0;
+
+            useExternalOptic = FALSE;
+            useModelOptics = FALSE;
+
+            canShootInWater = FALSE;
+            magazines[] = {};
+            magazineWell[] = {QCLASS(MagWell_UGL_Common)};
+        };
+    };
+
+    class CLASS(DX50C_UGL_Fried): CLASS(DX50C_UGL) {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] DX-50C UGL (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_UGL_plastic_fried_ui_ca.paa";
+        baseWeapon = QCLASS(DX50C_UGL_Fried);
+
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+
+        class UGL: UGL {
+            displayName = "Grenade Launcher (Fried)";
+            magazines[] = {};
+            magazineWell[] = {};
+        };
     };
 };

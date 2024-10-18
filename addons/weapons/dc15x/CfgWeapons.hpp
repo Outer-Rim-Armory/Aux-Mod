@@ -60,7 +60,7 @@ class CfgWeapons {
             minRange = 2;
             minRangeProbab = 0.5;
 
-            dispersion = 0.15;
+            dispersion = 0.00015;
             reloadTime = 0.5;
 
             class StandardSound: StandardSound {

@@ -57,7 +57,7 @@ class CfgWeapons {
             class UnderBarrelSlot;
         };
         class Single: Single {
-            reloadTime = 0.08;
+            reloadTime = 0.16;
 
             class StandardSound: StandardSound {
                 soundBegin[] = {};
@@ -67,7 +67,7 @@ class CfgWeapons {
             };
         };
         class FullAuto: FullAuto {
-            reloadTime = 0.08;
+            reloadTime = 0.16;
 
             class StandardSound: StandardSound {
                 soundBegin[] = {};

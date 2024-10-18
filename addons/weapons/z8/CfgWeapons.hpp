@@ -8,7 +8,7 @@ class CfgWeapons {
         author = AUTHOR;
 
         baseWeapon = QCLASS(Z8_base);
-        modes[] = {"FullAuto", "Overcharge"};
+        modes[] = {"FullAuto"};
         magazines[] = {QCLASS(Mag_1200rnd_Z8), QCLASS(Mag_1200rnd_Z8_Red)};
 
         JLTS_hasElectronics = TRUE;
@@ -29,13 +29,6 @@ class CfgWeapons {
                 soundSetShot[] = {QCLASS(SoundSet_Z8Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_Z8Shot)};
             };
-        };
-
-        class Overcharge: FullAuto {
-            displayName = "Overcharge";
-            burst = 25;
-            reloadTime = 0.015;
-            textureType = "fastAuto";
         };
     };
 

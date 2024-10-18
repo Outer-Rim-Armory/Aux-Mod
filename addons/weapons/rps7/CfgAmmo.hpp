@@ -15,12 +15,12 @@ class CfgAmmo {
         explosionEffects = "MortarExplosion";
         craterEffects = "ArtyShellCrater";
 
-        ace_frag_charge = 210;
+        ace_frag_charge = 105;
         ace_frag_classes[] = {"ACE_frag_medium_HD"};
         ace_frag_enabled = 1;
-        ace_frag_gurney_c = 2800;
+        ace_frag_gurney_c = 1400;
         ace_frag_gurney_k = "3/5";
-        ace_frag_metal = 400;
+        ace_frag_metal = 200;
         ace_vehicle_damage_incendiary = 0.2;
 
         class CamShakeExplode {
@@ -34,7 +34,7 @@ class CfgAmmo {
     class CLASS(Rocket_RPS7_AT): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
 
-        hit = 250;
+        hit = 500;
         indirectHit = 28;
         indirectHitRange = 3;
         submunitionAmmo = QCLASS(Rocket_Submunition_Base);

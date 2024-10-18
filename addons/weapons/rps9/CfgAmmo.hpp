@@ -3,7 +3,7 @@ class CfgAmmo {
     class CLASS(Rocket_RPS9_HE): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
 
-        hit = 300;
+        hit = 600;
         indirectHit = 50;
         indirectHitRange = 6;
         irLock = 0;
@@ -34,8 +34,8 @@ class CfgAmmo {
     class CLASS(Rocket_RPS9_AT): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
 
-        hit = 750;
-        indirectHit = 28;
+        hit = 2400;
+        indirectHit = 84;
         indirectHitRange = 3;
         submunitionAmmo = QCLASS(Rocket_Submunition_Base);
         irLock = 0;

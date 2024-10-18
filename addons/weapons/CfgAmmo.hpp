@@ -25,9 +25,9 @@ class CfgAmmo {
         deflecting = 0;
 
         caliber = 0.5;
-        hit = 10;
-        indirectHit = 6.5;
-        indirectHitRange = 2.5;
+        hit = 15;
+        indirectHit = 0;
+        indirectHitRange = 0;
         typicalSpeed = 0.12;
         explosive = 1;
         fuseDistance = 1;
@@ -121,6 +121,32 @@ class CfgAmmo {
         ACE_caliber = 8.585;
         ACE_muzzleVelocities[] = {880, 915, 925};
     };
+    class CLASS(Bullet_PlasmaRifle_Blue2): CLASS(Bullet_PlasmaBase) {
+        SCOPE_PUBLIC;
+
+        hit = 60;
+        caliber = 3;
+        typicalSpeed = 700;
+        dangerRadiusHit = 14;
+        dangerRadiusBulletClose = 10;
+        suppressionRadiusHit = 10;
+        suppressionRadiusBulletClose = 8;
+        cost = 6;
+
+        tracerEndTime = 10;
+        tracerScale = 1.1;
+        tracerStartTime = 0.05;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+
+        ACE_ballisticCoefficients[] = {0.322};
+        ACE_barrelLengths[] = {508, 660.4, 711.2};
+        ACE_bulletLength = 39.573;
+        ACE_bulletMass = 45.2;
+        ACE_caliber = 12.585;
+        ACE_muzzleVelocities[] = {880, 915, 925};
+    };
     class CLASS(Bullet_PlasmaRifle_Red): CLASS(Bullet_PlasmaRifle_Blue) {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
@@ -138,6 +164,34 @@ class CfgAmmo {
         SCOPE_PUBLIC;
 
         hit = 10;
+        caliber = 1;
+        typicalSpeed = 820;
+        dangerRadiusHit = 12;
+        dangerRadiusBulletClose = 8;
+        suppressionRadiusHit = 8;
+        suppressionRadiusBulletClose = 6;
+        cost = 1.2;
+
+        audibleFire = 40;
+        timeToLive = 4;
+        tracerEndTime = 10;
+        tracerScale = 0.8;
+        tracerStartTime = 0.05;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+
+        ACE_ballisticCoefficients[] = {0.263};
+        ACE_barrelLengths[] = {254,406.4,508,609.6,660.4,762};
+        ACE_bulletLength = 32.893;
+        ACE_bulletMass = 7.9704;
+        ACE_caliber = 6.706;
+        ACE_muzzleVelocities[] = {730,760,788,800,810,830};
+    };
+    class CLASS(Bullet_PlasmaCarbine_Blue2): CLASS(Bullet_PlasmaBase) {
+        SCOPE_PUBLIC;
+
+        hit = 18;
         caliber = 1;
         typicalSpeed = 820;
         dangerRadiusHit = 12;
@@ -198,6 +252,99 @@ class CfgAmmo {
 
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
+
+        ACE_ballisticCoefficients[] = {0.322};
+        ACE_barrelLengths[] = {508, 660.4, 711.2};
+        ACE_bulletLength = 39.573;
+        ACE_bulletMass = 16.2;
+        ACE_caliber = 8.585;
+        ACE_muzzleVelocities[] = {880, 915, 925};
+    };
+    class CLASS(Bullet_PlasmaSniper_Blue2): CLASS(Bullet_PlasmaBase) {
+        SCOPE_PUBLIC;
+
+        hit = 48;
+        caliber = 2.4;
+        typicalSpeed = 910;
+        dangerRadiusHit = -1;
+        dangerRadiusBulletClose = 4;
+        suppressionRadiusHit = 4;
+        suppressionRadiusBulletClose = 2;
+        cost = 7;
+
+        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+
+        timeToLive = 7;
+        tracerEndTime = 10;
+        tracerScale = 0.8;
+        tracerStartTime = 0.05;
+        visibleFire = 5;
+        visibleFireTime = 3;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+
+        ACE_ballisticCoefficients[] = {0.322};
+        ACE_barrelLengths[] = {508, 660.4, 711.2};
+        ACE_bulletLength = 39.573;
+        ACE_bulletMass = 16.2;
+        ACE_caliber = 8.585;
+        ACE_muzzleVelocities[] = {880, 915, 925};
+    };
+    class CLASS(Bullet_PlasmaSniper_Blue3): CLASS(Bullet_PlasmaBase) {
+        SCOPE_PUBLIC;
+
+        hit = 48;
+        caliber = 2.4;
+        typicalSpeed = 2000;
+        dangerRadiusHit = -1;
+        dangerRadiusBulletClose = 4;
+        suppressionRadiusHit = 4;
+        suppressionRadiusBulletClose = 2;
+        cost = 7;
+
+        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+
+        timeToLive = 7;
+        tracerEndTime = 10;
+        tracerScale = 0.8;
+        tracerStartTime = 0.05;
+        visibleFire = 5;
+        visibleFireTime = 3;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+
+        ACE_ballisticCoefficients[] = {0.322};
+        ACE_barrelLengths[] = {508, 660.4, 711.2};
+        ACE_bulletLength = 39.573;
+        ACE_bulletMass = 16.2;
+        ACE_caliber = 8.585;
+        ACE_muzzleVelocities[] = {880, 915, 925};
+    };
+    class CLASS(Bullet_PlasmaSniper_Red2): CLASS(Bullet_PlasmaBase) {
+        SCOPE_PUBLIC;
+
+        hit = 48;
+        caliber = 2.4;
+        typicalSpeed = 910;
+        dangerRadiusHit = -1;
+        dangerRadiusBulletClose = 4;
+        suppressionRadiusHit = 4;
+        suppressionRadiusBulletClose = 2;
+        cost = 7;
+
+        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+
+        timeToLive = 7;
+        tracerEndTime = 10;
+        tracerScale = 0.8;
+        tracerStartTime = 0.05;
+        visibleFire = 5;
+        visibleFireTime = 3;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
 
         ACE_ballisticCoefficients[] = {0.322};
         ACE_barrelLengths[] = {508, 660.4, 711.2};
@@ -471,6 +618,31 @@ class CfgAmmo {
         ace_frag_skip = FALSE;
         ace_frag_force = FALSE;
     };
+    class CLASS(Grenade_HE): G_40mm_HE {
+        hit = 200;
+        dangerRadiusHit = 15;
+        indirectHit = 15;
+        indirectHitRange = 6;
+        explosionEffectsRadius = 20;
+        suppressionRadiusHit = 30;
+
+        typicalspeed = 30;
+        visibleFireTime = 1;
+        visibleFire = 0.5;
+        audibleFire = 0.05;
+        fuseDistance = 0;
+        explosionTime = 5;
+        timeToLive = 30;
+
+        explosionEffects = "M136_Explode";
+        craterEffects = "M136_Smoke";
+        model = "\SWLW_clones\machineguns\Z6\Z6_g_mag.p3d";
+        soundFly[] = {"\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40};
+
+        ace_frag_enabled = FALSE;
+        ace_frag_skip = FALSE;
+        ace_frag_force = FALSE;
+    };
 
     // TODO: Update to inherit from base KC bullet
     class SWLW_ammo_40mm_at;
@@ -571,16 +743,16 @@ class CfgAmmo {
             power = 11;
         };
     };
-    class CLASS(Bullet_Plasma_Z8): CLASS(Rocket_Base) {
+    class CLASS(Bullet_Plasma_Z7): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
         // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
 
         aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
         allowAgainstInfantry = TRUE;
 
-        hit = 18;
-        indirectHit = 0;
-        indirectHitRange = 0;
+        hit = 80;
+        indirectHit = 14;
+        indirectHitRange = 4;
         caliber = 2;
         ACE_caliber = 0; // ! Must be 0 to not immediately lose your hearing
         cost = 500;
@@ -598,7 +770,178 @@ class CfgAmmo {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
         effectsMissile = "JLTS_plasma_blue";
-        PLASMA_EFFECTS;
+        ExplosionEffects = "25mm_Explode";
+        craterEffects = "M136_Smoke";
+
+        soundSetExplosion[] = {};
+        audibleFire = 80;
+        whistleDist = 20;
+        PLASMA_SOUNDS;
+
+        deleteParentWhenTriggered = FALSE;
+        flightProfiles[] = {"Direct"};
+        fuseDistance = 0;
+        initTime = 0;
+        irLock = 0;
+        maxControlRange = 600;
+        thrust = 500;
+        thrustTime = 3.4;
+
+        missileKeepLockedCone = 300;
+        missileLockCone = 5;
+        missileLockMaxDistance = 800;
+        missileLockMaxSpeed = 35;
+        missileLockMinDistance = 20;
+
+        simulationStep = 0.02;
+
+        trackLead = 1;
+        triggerDistance = 2.5;
+        triggerOnImpact = 1;
+        weaponLockSystem = QUOTE(LOCK_TYPE_VISUAL + LOCK_TYPE_MISSILE);
+
+        class CamShakeExplode {
+            distance = 91.3296;
+            duration = 1.4;
+            frequency = 20;
+            power = 11;
+        };
+
+        class CamShakeHit {
+            distance = 1;
+            duration = 0.6;
+            frequency = 20;
+            power = 110;
+        };
+
+        class CamShakeFire {
+            distance = 1;
+            duration = 1.2;
+            frequency = 18;
+            power = 0.8;
+        };
+
+        class CamShakePlayerFire {
+            distance = 1;
+            duration = 0.1;
+            frequency = 20;
+            power = 2;
+        };
+    };
+    class CLASS(Bullet_Plasma_Z7_Red): CLASS(Rocket_Base) {
+        SCOPE_PUBLIC;
+        // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
+
+        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        allowAgainstInfantry = TRUE;
+
+        hit = 80;
+        indirectHit = 14;
+        indirectHitRange = 4;
+        caliber = 2;
+        ACE_caliber = 0; // ! Must be 0 to not immediately lose your hearing
+        cost = 500;
+        coefGravity = 0.01;
+        explosive = 0.2;
+        maneuvrability = 4;
+        airFriction = 0;
+        cmImmunity = 0.2;
+        timeToLive = 4;
+        typicalSpeed = 1050;
+        maxSpeed = 1050;
+        airLock = 0;
+        proximityExplosionDistance = 5;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+        effectsMissile = "JLTS_plasma_red";
+        ExplosionEffects = "25mm_Explode";
+        craterEffects = "M136_Smoke";
+
+        soundSetExplosion[] = {};
+        audibleFire = 80;
+        whistleDist = 20;
+        PLASMA_SOUNDS;
+
+        deleteParentWhenTriggered = FALSE;
+        flightProfiles[] = {"Direct"};
+        fuseDistance = 0;
+        initTime = 0;
+        irLock = 0;
+        maxControlRange = 600;
+        thrust = 500;
+        thrustTime = 3.4;
+
+        missileKeepLockedCone = 300;
+        missileLockCone = 5;
+        missileLockMaxDistance = 800;
+        missileLockMaxSpeed = 35;
+        missileLockMinDistance = 20;
+
+        simulationStep = 0.02;
+
+        trackLead = 1;
+        triggerDistance = 2.5;
+        triggerOnImpact = 1;
+        weaponLockSystem = QUOTE(LOCK_TYPE_VISUAL + LOCK_TYPE_MISSILE);
+
+        class CamShakeExplode {
+            distance = 91.3296;
+            duration = 1.4;
+            frequency = 20;
+            power = 11;
+        };
+
+        class CamShakeHit {
+            distance = 1;
+            duration = 0.6;
+            frequency = 20;
+            power = 110;
+        };
+
+        class CamShakeFire {
+            distance = 1;
+            duration = 1.2;
+            frequency = 18;
+            power = 0.8;
+        };
+
+        class CamShakePlayerFire {
+            distance = 1;
+            duration = 0.1;
+            frequency = 20;
+            power = 2;
+        };
+    };
+    class CLASS(Bullet_Plasma_Z8): CLASS(Rocket_Base) {
+        SCOPE_PUBLIC;
+        // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
+
+        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        allowAgainstInfantry = TRUE;
+
+        hit = 120;
+        indirectHit = 25;
+        indirectHitRange = 5;
+        caliber = 2;
+        ACE_caliber = 0; // ! Must be 0 to not immediately lose your hearing
+        cost = 500;
+        coefGravity = 0.01;
+        explosive = 0.2;
+        maneuvrability = 4;
+        airFriction = 0;
+        cmImmunity = 0.2;
+        timeToLive = 4;
+        typicalSpeed = 1050;
+        maxSpeed = 1050;
+        airLock = 0;
+        proximityExplosionDistance = 5;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+        effectsMissile = "JLTS_plasma_blue";
+        ExplosionEffects = "25mm_Explode";
+        craterEffects = "M136_Smoke";
 
         soundSetExplosion[] = {};
         audibleFire = 80;
@@ -662,9 +1005,9 @@ class CfgAmmo {
         aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
         allowAgainstInfantry = TRUE;
 
-        hit = 18;
-        indirectHit = 0;
-        indirectHitRange = 0;
+        hit = 120;
+        indirectHit = 25;
+        indirectHitRange = 5;
         caliber = 2;
         ACE_caliber = 0; // ! Must be 0 to not immediately lose your hearing
         cost = 500;
@@ -682,7 +1025,8 @@ class CfgAmmo {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
         effectsMissile = "JLTS_plasma_red";
-        PLASMA_EFFECTS;
+        explosionEffects = "25mm_Explode";
+        craterEffects = "M136_Smoke";
 
         soundSetExplosion[] = {};
         audibleFire = 80;
