@@ -26,6 +26,4 @@ class CfgSFX {
     SOUND_FX(TDI_Theme,"[KC] Total Drama Island Theme",100);
     SOUND_FX(PokeVillage,"[KC] Poke Village Theme",300);
     SOUND_FX(Droid_Marching,"[KC] CIS Droid March",600);
-    SOUND_FX(TDI_Episode_1_Part_1,"[KC] Total Drama Island Episode 1 Part 1",1325);
-    SOUND_FX(TDI_Episode_1_Part_2,"[KC] Total Drama Island Episode 1 Part 2",1325);
 };
