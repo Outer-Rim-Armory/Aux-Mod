@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             QUOTE(ADDON),
             QGVAR(accessories),
-            "LF_Weapon_Unit_DC15Xm"
+            "LF_Weapon_Unit_DC15Xm",
             "ace_laserpointer"
         };
         units[] = {};

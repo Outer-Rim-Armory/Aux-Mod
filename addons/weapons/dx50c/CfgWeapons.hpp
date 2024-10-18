@@ -23,6 +23,21 @@ class CfgWeapons {
         handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\EPL2\anims\EPL2_handanim.rtm"};
         magazines[]={QCLASS(Mag_15Rnd_DX50C)};
         modes[] = {"Single","AICQB","AIClose","AIMedium","AIFar"};
+
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot {
+                class CompatibleItems {
+                    ATTACHMENTS_OPTIC_SHORT;
+                    ATTACHMENTS_OPTIC_MEDIUM;
+                    ATTACHMENTS_OPTIC_SIGHTS;
+                };
+            };
+            class PointerSlot: PointerSlot {
+                class CompatibleItems {
+                    ATTACHMENTS_POINTER_BASE;
+                };
+            };
+        };
         class Single: Single
         {
             reloadTime = 0.24;

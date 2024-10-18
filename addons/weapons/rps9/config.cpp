@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             QUOTE(ADDON),
             "3AS_Weapons_RPS6HP",
-            "ls_weapons"
+            "ls_weapons",
         };
         units[] = {};
         weapons[] = {
