@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "LFP_RPS6",
+            "LF_Weapon_Unit_RPS6",
             "ls_weapons"
         };
         units[] = {};

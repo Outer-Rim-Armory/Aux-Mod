@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "3AS_Chaingun"
+            "3AS_Weapons_Chaingun"
         };
         units[] = {};
         weapons[] = {

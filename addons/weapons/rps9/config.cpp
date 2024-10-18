@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "3AS_RPS6_HP",
+            "3AS_Weapons_RPS6HP",
             "ls_weapons"
         };
         units[] = {};
