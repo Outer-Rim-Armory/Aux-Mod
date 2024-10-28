@@ -237,10 +237,10 @@ class CLASS(Unit_Harry): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase2_Harry), QCLASS(Vest_CSS), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARC_Harry), QCLASS(Vest_ARC), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase2_Harry), QCLASS(Vest_CSS), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARC_Harry), QCLASS(Vest_ARC), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -450,6 +450,27 @@ class CLASS(Unit_Splashdown): CLASS(Unit_Phase2_Base) {
     };
     respawnLinkedItems[] = {
         QCLASS(Helmet_Engineer_Splashdown), QCLASS(Vest_Engineer), QCLASS(cloneNvg_engineerComms), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Talyn): CLASS(Unit_Phase2_Base) {
+    displayName = "Talyn";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Talyn);
+
+    uniformClass = QCLASS(Uniform_Talyn);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Talyn_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Talyn_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Talyn), QCLASS(Vest_CSS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Talyn), QCLASS(Vest_CSS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 

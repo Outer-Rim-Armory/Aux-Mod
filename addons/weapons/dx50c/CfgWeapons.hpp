@@ -109,7 +109,7 @@ class CfgWeapons {
         };
     };
     class CLASS(DX50C): CLASS(DX50C_Base) {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
 
         displayName = "[KC] DX-50C";
         baseWeapon = QCLASS(DX50C);
@@ -135,6 +135,7 @@ class CfgWeapons {
         displayName = "[KC] DX-50C UGL";
         baseWeapon = QCLASS(DX50C_UGL);
         muzzles[] = {"this", "UGL"};
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_ugl_plastic_ui_ca.paa";
 
         irDistance = 0;
         irLaserEnd = "";

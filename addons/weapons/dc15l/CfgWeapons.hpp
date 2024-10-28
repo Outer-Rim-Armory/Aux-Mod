@@ -57,6 +57,7 @@ class CfgWeapons {
 
         class FullAuto: FullAuto {
             dispersion = 0.00075;
+            reloadTime = 0.07;
             recoil = "recoil_auto_mx";
             recoilProne = "recoil_auto_prone_mx";
 

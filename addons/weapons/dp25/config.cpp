@@ -10,6 +10,7 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(accessories),
             "OPTRE_Weapons_Shotgun",
+            "JLTS_weapons_DC15A",
             "JLTS_weapons_DC17SA",
             "ace_laserpointer"
         };

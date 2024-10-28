@@ -37,7 +37,7 @@ class CfgMagazines {
         displayNameShort = "High Explosive";
         descriptionShort = "Explosive Energy Cell Pack<br/>Rounds: 8<br/>Used In: DP-25";
 
-        ammo = QCLASS(Bullet_Plasma40mm_AT);
+        ammo = QCLASS(Bullet_Plasma40mm);
         count = 8;
     };
     class CLASS(Mag_4Rnd_DP25_Flame): CLASS(Mag_12Rnd_DP25) {

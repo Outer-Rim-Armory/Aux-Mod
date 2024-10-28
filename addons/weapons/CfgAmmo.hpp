@@ -19,15 +19,15 @@ class CfgAmmo {
         SCOPE_PUBLIC;
 
         cost = 2;
-        airFriction = 0.1;
-        coefGravity = 0.01;
+        airFriction = 0;
+        coefGravity = 0.25;
         maxSpeed = 25;
         deflecting = 0;
 
         caliber = 0.5;
-        hit = 15;
-        indirectHit = 0;
-        indirectHitRange = 0;
+        hit = 10;
+        indirectHit = 5;
+        indirectHitRange = 1;
         typicalSpeed = 0.12;
         explosive = 1;
         fuseDistance = 1;
@@ -659,6 +659,19 @@ class CfgAmmo {
         submunitionInitSpeed = 1000;
         submunitionParentSpeedCoef = 0;
     };
+    class CLASS(Bullet_Plasma40mm): SWLW_ammo_40mm_at {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+        craterWaterEffects = "ImpactEffectsWaterExplosion";
+
+        hit = 200;
+        typicalSpeed = 1550;
+
+        submunitionAmmo = QCLASS(Bullet_Plasma40mm_Submunition);
+        submunitionInitialOffset[] = {0,0, -0.5};
+        submunitionInitSpeed = 1000;
+        submunitionParentSpeedCoef = 0;
+    };
 
     class ammo_Penetrator_Titan_AT;
     class CLASS(Bullet_Plasma40mm_ATSubmunition): ammo_Penetrator_Titan_AT {
@@ -750,7 +763,7 @@ class CfgAmmo {
         aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
         allowAgainstInfantry = TRUE;
 
-        hit = 80;
+        hit = 100;
         indirectHit = 14;
         indirectHitRange = 4;
         caliber = 2;
@@ -835,7 +848,7 @@ class CfgAmmo {
         aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
         allowAgainstInfantry = TRUE;
 
-        hit = 80;
+        hit = 100;
         indirectHit = 14;
         indirectHitRange = 4;
         caliber = 2;
@@ -847,8 +860,8 @@ class CfgAmmo {
         airFriction = 0;
         cmImmunity = 0.2;
         timeToLive = 4;
-        typicalSpeed = 1050;
-        maxSpeed = 1050;
+        typicalSpeed = 750;
+        maxSpeed = 750;
         airLock = 0;
         proximityExplosionDistance = 5;
 
