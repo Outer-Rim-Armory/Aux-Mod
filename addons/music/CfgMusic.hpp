@@ -79,6 +79,7 @@ class CfgMusic {
 
     // Monster Hunter
     MUSIC(MH_FatalisMedley,"[MH] Fatalis Medley",1093,VideoGames);
+    MUSIC(MHW_Fatalis_Theme,"[MH] Fatalis Theme",162,VideoGames);
 
     // Modern Warfare
     MUSIC(MW_ThemeCalm,"[MW] Theme (Calm)",206,VideoGames);
@@ -204,4 +205,6 @@ class CfgMusic {
     MUSIC(UNK_TU_Theme2,"Techno Union BM 2",202,Other);
     MUSIC(UNK_TU_Theme3,"Techno Union BM 3",150,Other);
     MUSIC(UNK_FatherG,"Father G",262,Other);
+    MUSIC(UNK_Kraken_Theme_Short,"The Kraken Short",119,Other);
+    MUSIC(UNK_Admiral_Goliath_Epic,"Admiral Goliath EPIC",388,Other);
     };

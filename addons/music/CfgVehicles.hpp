@@ -26,4 +26,5 @@ class CfgVehicles {
     SOUND_OBJ(TDI_Episode_1_Part_2,"[KC] Total Drama Island Episode 1 Part 2");
     SOUND_OBJ(PokeVillage,"[KC] Poke Village Theme");
     SOUND_OBJ(Droid_Marching,"[KC] CIS Droid March");
+    SOUND_OBJ(Godzilla_Roar,"[KC] Godzilla Roar");
 };
