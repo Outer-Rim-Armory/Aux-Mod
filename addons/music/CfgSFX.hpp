@@ -26,5 +26,5 @@ class CfgSFX {
     SOUND_FX(TDI_Theme,"[KC] Total Drama Island Theme",100);
     SOUND_FX(PokeVillage,"[KC] Poke Village Theme",300);
     SOUND_FX(Droid_Marching,"[KC] CIS Droid March",600);
-    SOUND_FX(Godzilla_Roar,"[KC] Godzilla Roar",5000);
+    SOUND_FX(Godzilla_Roar,"[KC] Godzilla Roar",15000);
 };
