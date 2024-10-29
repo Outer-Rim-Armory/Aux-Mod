@@ -365,7 +365,7 @@ class CfgVehicles {
         SCOPE_HIDDEN;
 
         class TransportMagazines {
-            MAG_XX(CLASS(Mag_300Rnd_Z6_Red),10);
+            MAG_XX(CLASS(Mag_400Rnd_Z6_Red),10);
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
