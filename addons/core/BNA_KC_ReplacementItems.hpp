@@ -20,4 +20,5 @@ class GVARMAIN(replacementItems) {
     CLASS(RDF_Backpack) = QCLASS(rdfBackpack);
     CLASS(RDF_Backpack_SWAT) = QCLASS(rdfBackpack_swat);
     CLASS(RDF_Backpack_Medic) = QCLASS(rdfBackpack_medic);
+    CLASS(Mag_300Rnd_Z6) = QCLASS(Mag_400Rnd_Z6);
 };
