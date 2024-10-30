@@ -306,12 +306,14 @@ class XtdGearModels {
                 values[] = {
                     "Drake",
                     "Hagrid",
+                    "Harry",
                     "Sin",
                     "Tyrant"
                 };
 
                 class Drake { label = "Drake"; };
                 class Hagrid { label = "Hagrid"; };
+                class Harry { label = "Harry"; };
                 class Sin { label = "Sin"; };
                 class Tyrant { label = "Tyrant"; };
             };
@@ -381,9 +383,12 @@ class XtdGearModels {
                 alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
+                    "Axel",
+                    "Tugz"
                 };
 
-                // class Name { label = "Name"; };
+                class Axel { label = "Axel"; };
+                class Tugz { label = "Tugz"; };
             };
         };
 

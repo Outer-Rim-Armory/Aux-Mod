@@ -481,6 +481,7 @@ class CLASS(Unit_Tugz): CLASS(Unit_Phase2_Base) {
     editorPreview = EDITOR_PREVIEW(Unit_Tugz);
 
     uniformClass = QCLASS(Uniform_Tugz);
+    backpack = QCLASS(Jetpack_JT12_LR);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Tugz_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Tugz_lower_co.paa),
@@ -488,10 +489,10 @@ class CLASS(Unit_Tugz): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_ARF_Tugz), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Airborne_Tugz), QCLASS(Vest_Airborne_CS), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_ARF_Tugz), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Airborne_Tugz), QCLASS(Vest_Airborne_CS), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 

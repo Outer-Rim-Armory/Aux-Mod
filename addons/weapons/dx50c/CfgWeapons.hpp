@@ -158,7 +158,7 @@ class CfgWeapons {
 
             canShootInWater = FALSE;
             magazines[] = {};
-            magazineWell[] = {QCLASS(MagWell_UGL_Common)};
+            magazineWell[] = {QCLASS(MagWell_UGL_Common_DX50C)};
         };
     };
 

@@ -65,4 +65,10 @@ class CfgMagazineWells {
             "ACE_HuntIR_M203"
         };
     };
+
+    class CLASS(MagWell_UGL_Common_DX50C) {
+        KC_Magazines[] = {
+            QCLASS(Mag_UGL_10Rnd_HE)
+        };
+    };
 };
