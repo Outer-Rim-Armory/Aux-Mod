@@ -384,10 +384,12 @@ class XtdGearModels {
                 changeInGame = FALSE;
                 values[] = {
                     "Axel",
+                    "Star",
                     "Tugz"
                 };
 
                 class Axel { label = "Axel"; };
+                class Star { label = "Star"; };
                 class Tugz { label = "Tugz"; };
             };
         };
