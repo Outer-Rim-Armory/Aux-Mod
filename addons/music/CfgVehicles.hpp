@@ -22,8 +22,6 @@ class CfgVehicles {
     SOUND_OBJ(EPF_Radio3,"[KC] Holownet News 3");
     SOUND_OBJ(EPF_PresidenteSpeech,"[KC] El Presidente Speech");
     SOUND_OBJ(TDI_Theme,"[KC] Total Drama Island Theme");
-    SOUND_OBJ(TDI_Episode_1_Part_1,"[KC] Total Drama Island Episode 1 Part 1");
-    SOUND_OBJ(TDI_Episode_1_Part_2,"[KC] Total Drama Island Episode 1 Part 2");
     SOUND_OBJ(PokeVillage,"[KC] Poke Village Theme");
     SOUND_OBJ(Droid_Marching,"[KC] CIS Droid March");
     SOUND_OBJ(Godzilla_Roar,"[KC] Godzilla Roar");
