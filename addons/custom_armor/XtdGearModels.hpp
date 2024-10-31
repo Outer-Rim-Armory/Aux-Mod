@@ -133,6 +133,7 @@ class XtdGearModels {
                     "Bond",
                     "Burnt",
                     "Cough",
+                    "Cutthroat",
                     "Dexus",
                     "Evo",
                     "Flare",
@@ -172,6 +173,8 @@ class XtdGearModels {
                 class Bob { label = "Bob"; };
                 class Bond { label = "Bond"; };
                 class Burnt { label = "Burnt"; };
+                class Cough { label = "Cough"; };
+                class Cutthroat { label = "Cutthroat"; };
                 class Dexus { label = "Dexus"; };
                 class Evo { label = "Evo"; };
                 class Flare { label = "Flare"; };
