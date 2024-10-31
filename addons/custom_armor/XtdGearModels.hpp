@@ -332,6 +332,7 @@ class XtdGearModels {
                 changeInGame = FALSE;
                 values[] = {
                     "Defter",
+                    "Evo",
                     "Jester",
                     "Patriot",
                     "Rev",
@@ -343,6 +344,7 @@ class XtdGearModels {
                 };
 
                 class Defter { label = "Defter"; };
+                class Evo { label = "Evo"; };
                 class Jester { label = "Jester"; };
                 class Patriot { label = "Patriot"; };
                 class Rev { label = "Rev"; };
