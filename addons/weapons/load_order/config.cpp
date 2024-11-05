@@ -33,6 +33,7 @@ class CfgPatches {
             QGVAR(gr20),
             QGVAR(hi12),
             QGVAR(lw38),
+            QGVAR(plx1),
             QGVAR(rps6),
             QGVAR(rps7),
             QGVAR(rps8),
