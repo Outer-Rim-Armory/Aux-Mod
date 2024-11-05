@@ -1,104 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="BNA_KC">
-  <Package name="Suppress">
-    <Key ID="STR_BNA_KC_Suppress_category_displayName">
-      <English>Suppress</English>
-      <French>Suppress</French>
-      <Spanish>Suppress</Spanish>
-      <Italian>Suppress</Italian>
-      <Polish>Suppress</Polish>
-      <Russian>Suppress</Russian>
-      <German>Suppress</German>
-      <Czech>Suppress</Czech>
-      <Chinese>Suppress</Chinese>
-      <Portuguese>Suppress</Portuguese>
-      <Korean>Suppress</Korean>
-      <Chinesesimp>Suppress</Chinesesimp>
-      <Turkish>Suppress</Turkish>
-      <Japanese>Suppress</Japanese>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_overlayOpacity_name">
-      <English>Overlay opacity</English>
-      <Polish>Nieprzeźroczystość nakładki</Polish>
-      <Russian>Интенсивность эффекта подавления</Russian>
-      <German>Die Deckkraft des Overlays</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_overlayOpacity_tooltip">
-      <English>Suppression overlay opacity, the higher the value the more visible will be the supression effect.</English>
-      <Polish>Nieprzeźroczystość nakładki efektu przygwożdżenia, im większa wartość tym bardziej widoczny efekt.</Polish>
-      <Russian>Непрозрачность эффекта при подавлении.</Russian>
-      <German>Die Deckraft des Overlays bestimmt wie stark der Niederhaltungseffekt sichtbar ist.</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_overlayTexture_name">
-      <Russian>Текстура эффекта</Russian>
-      <English>Overlay texture type</English>
-      <German>Overlay-Textur</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_overlayTexture_tooltip">
-      <Russian>Уровень темноты текстуры наложения. Более темная текстура означает, что при подавлении экран будет затемняться интенсивнее</Russian>
-      <English>Level of darkness of overlay texture. Darker texture means more screen will be covered with overlay when suppressed.</English>
-      <German>Helligkeitsstufe der Overlay-Texture. Eine dunklere Texture bedeutet das mehr Bildschirmoberfläche bei Niederhaltung davon bedeckt wird.</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_overlayTexture_light">
-      <Russian>Светлая</Russian>
-      <English>Light</English>
-      <German>Hell</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_overlayTexture_medium">
-      <Russian>Средняя</Russian>
-      <English>Medium</English>
-      <German>Mittel</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_overlayTexture_dark">
-      <Russian>Тёмная</Russian>
-      <English>Dark</English>
-      <German>Dunkel</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_overlayFadeoutTime_name">
-      <English>Overlay fadeout time</English>
-      <Polish>Czas zanikania nakładki</Polish>
-      <Russian>Время затухания эффекта</Russian>
-      <German>Ausklingzeit des Effekts</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_overlayFadeoutTime_tooltip">
-      <English>Suppression overlay fadeout time in seconds</English>
-      <Polish>Czas zanikania nakłądki efektu przygwożdżenia podany w sekundach</Polish>
-      <Russian>Время затухания эффекта подавления в секундах</Russian>
-      <German>Die Ausklingzeit des Effekts in Sekunden.</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_projectileMaxDistance_name">
-      <English>Projectile maximum distance</English>
-      <Polish>Maksymalny dystans od pocisku</Polish>
-      <Russian>Максимальная дистанция до снаряда</Russian>
-      <German>Maximale Entfernung zum Projektil</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_projectileMaxDistance_tooltip">
-      <English>Maximum distance from passing projectile in meters. Projectiles passing at larger distance won't be taken into account.</English>
-      <Polish>Maksymalny dystans od przelatującego pocisku w metrach. Pociski przelatujące na większym dystansie nie będą brane pod uwagę.</Polish>
-      <Russian>Максимальное расстояние пролетающего снаряда. Снаряды, пролетающие на большем расстоянии не будут создавать эффект подавления.</Russian>
-      <German>Maximale Entfernung vom vorbeifliegenden Projektil in Metern. Projektile die in größerer Entfernung vorbeifliegenden werden nicht berücksichtigt.</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_shooterMinDistance_name">
-      <English>Minimum distance from shooter</English>
-      <Polish>Minimalny dystans od strzelca</Polish>
-      <Russian>Минимальная дистанция до стрелка</Russian>
-      <German>Kleinste Entfernung vom Schützen</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_shooterMinDistance_tooltip">
-      <English>Minimum distance from shooter in meters. This option can be used to disable effect in CQB situations, 0 to disable min distance.</English>
-      <Polish>Minimalny dystans od strzelca w metrach. Za pomocą tej opcji można wyłączyć efekt przygwożdżenia podczas walki na bliski dystanc, 0 aby wyłaczyć.</Polish>
-      <Russian>Минимальная дистанция до стрелка в метрах. Данная опция может использоваться для отключения в случаях боя в ограниченном пространстве. Значение 0 отключает опцию.</Russian>
-      <German>Kleinste Entfernung vom Schützen in Metern. Diese Option kann verwendet werden, um den Effekt in Häuserkämpfen zu deaktivieren. Ein wert von 0 deaktiviert den Mindestabstand.</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_checkLOS_name">
-      <Russian>Проверка прямой видимости снарядов</Russian>
-      <English>Check line of sight</English>
-      <German>Fluchtlinie</German>
-    </Key>
-    <Key ID="STR_BNA_KC_Suppress_checkLOS_tooltip">
-      <Russian>При включении проверяет видимость снаряда персонажем игрока. Игнорируются снаряды пролетающие за укрытием (стенами, забором и т.д)</Russian>
-      <English>When enabled, checks line of sight between player's eyes and passing projectile, ignoring projectiles passing behind cover, walls etc.</English>
-      <German>Wenn aktiviert, wird die Fluchlinie zwischen den Augen des Spielers und des vorbeifliegenden Projektils überprüft. Somit wird sichergestellt, dass Projektile hinter Objekten ignoriert werden.</German>
-    </Key>
-  </Package>
+    <Package name="Suppress">
+        <Key ID="STR_BNA_KC_Suppress_category_displayName">
+            <English>Suppress</English>
+            <Czech>Suppress</Czech>
+            <French>Suppress</French>
+            <Spanish>Suppress</Spanish>
+            <Italian>Suppress</Italian>
+            <Polish>Suppress</Polish>
+            <Portuguese>Suppress</Portuguese>
+            <Russian>Suppress</Russian>
+            <German>Suppress</German>
+            <Korean>Suppress</Korean>
+            <Japanese>Suppress</Japanese>
+            <Chinese>Suppress</Chinese>
+            <Chinesesimp>Suppress</Chinesesimp>
+            <Turkish>Suppress</Turkish>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_checkLOS_name">
+            <English>Check line of sight</English>
+            <Russian>Проверка прямой видимости снарядов</Russian>
+            <German>Fluchtlinie</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_checkLOS_tooltip">
+            <English>When enabled, checks line of sight between player's eyes and passing projectile, ignoring projectiles passing behind cover, walls etc.</English>
+            <Russian>При включении проверяет видимость снаряда персонажем игрока. Игнорируются снаряды пролетающие за укрытием (стенами, забором и т.д)</Russian>
+            <German>Wenn aktiviert, wird die Fluchlinie zwischen den Augen des Spielers und des vorbeifliegenden Projektils überprüft. Somit wird sichergestellt, dass Projektile hinter Objekten ignoriert werden.</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_overlayFadeoutTime_name">
+            <English>Overlay fadeout time</English>
+            <Polish>Czas zanikania nakładki</Polish>
+            <Russian>Время затухания эффекта</Russian>
+            <German>Ausklingzeit des Effekts</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_overlayFadeoutTime_tooltip">
+            <English>Suppression overlay fadeout time in seconds</English>
+            <Polish>Czas zanikania nakłądki efektu przygwożdżenia podany w sekundach</Polish>
+            <Russian>Время затухания эффекта подавления в секундах</Russian>
+            <German>Die Ausklingzeit des Effekts in Sekunden.</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_overlayOpacity_name">
+            <English>Overlay opacity</English>
+            <Polish>Nieprzeźroczystość nakładki</Polish>
+            <Russian>Интенсивность эффекта подавления</Russian>
+            <German>Die Deckkraft des Overlays</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_overlayOpacity_tooltip">
+            <English>Suppression overlay opacity, the higher the value the more visible will be the supression effect.</English>
+            <Polish>Nieprzeźroczystość nakładki efektu przygwożdżenia, im większa wartość tym bardziej widoczny efekt.</Polish>
+            <Russian>Непрозрачность эффекта при подавлении.</Russian>
+            <German>Die Deckraft des Overlays bestimmt wie stark der Niederhaltungseffekt sichtbar ist.</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_overlayTexture_dark">
+            <English>Dark</English>
+            <Russian>Тёмная</Russian>
+            <German>Dunkel</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_overlayTexture_light">
+            <English>Light</English>
+            <Russian>Светлая</Russian>
+            <German>Hell</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_overlayTexture_medium">
+            <English>Medium</English>
+            <Russian>Средняя</Russian>
+            <German>Mittel</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_overlayTexture_name">
+            <English>Overlay texture type</English>
+            <Russian>Текстура эффекта</Russian>
+            <German>Overlay-Textur</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_overlayTexture_tooltip">
+            <English>Level of darkness of overlay texture. Darker texture means more screen will be covered with overlay when suppressed.</English>
+            <Russian>Уровень темноты текстуры наложения. Более темная текстура означает, что при подавлении экран будет затемняться интенсивнее</Russian>
+            <German>Helligkeitsstufe der Overlay-Texture. Eine dunklere Texture bedeutet das mehr Bildschirmoberfläche bei Niederhaltung davon bedeckt wird.</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_projectileMaxDistance_name">
+            <English>Projectile maximum distance</English>
+            <Polish>Maksymalny dystans od pocisku</Polish>
+            <Russian>Максимальная дистанция до снаряда</Russian>
+            <German>Maximale Entfernung zum Projektil</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_projectileMaxDistance_tooltip">
+            <English>Maximum distance from passing projectile in meters. Projectiles passing at larger distance won't be taken into account.</English>
+            <Polish>Maksymalny dystans od przelatującego pocisku w metrach. Pociski przelatujące na większym dystansie nie będą brane pod uwagę.</Polish>
+            <Russian>Максимальное расстояние пролетающего снаряда. Снаряды, пролетающие на большем расстоянии не будут создавать эффект подавления.</Russian>
+            <German>Maximale Entfernung vom vorbeifliegenden Projektil in Metern. Projektile die in größerer Entfernung vorbeifliegenden werden nicht berücksichtigt.</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_shooterMinDistance_name">
+            <English>Minimum distance from shooter</English>
+            <Polish>Minimalny dystans od strzelca</Polish>
+            <Russian>Минимальная дистанция до стрелка</Russian>
+            <German>Kleinste Entfernung vom Schützen</German>
+        </Key>
+        <Key ID="STR_BNA_KC_Suppress_shooterMinDistance_tooltip">
+            <English>Minimum distance from shooter in meters. This option can be used to disable effect in CQB situations, 0 to disable min distance.</English>
+            <Polish>Minimalny dystans od strzelca w metrach. Za pomocą tej opcji można wyłączyć efekt przygwożdżenia podczas walki na bliski dystanc, 0 aby wyłaczyć.</Polish>
+            <Russian>Минимальная дистанция до стрелка в метрах. Данная опция может использоваться для отключения в случаях боя в ограниченном пространстве. Значение 0 отключает опцию.</Russian>
+            <German>Kleinste Entfernung vom Schützen in Metern. Diese Option kann verwendet werden, um den Effekt in Häuserkämpfen zu deaktivieren. Ein wert von 0 deaktiviert den Mindestabstand.</German>
+        </Key>
+    </Package>
 </Project>

@@ -23,7 +23,7 @@ TRACE_1("fnc_atrt_init",_atrt);
 
 if (isNull _atrt) exitWith {};
 
-_atrt setAnimSpeedCoef 1.5;
+_atrt setAnimSpeedCoef 3;
 _atrt disableAI "all";
 _atrt enableStamina false;
 
