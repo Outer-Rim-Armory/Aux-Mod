@@ -1,0 +1,1 @@
+#define MASS_LAUNCHER 120
