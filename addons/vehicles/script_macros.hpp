@@ -1,4 +1,4 @@
-#define ATRT_HEALTH 50
+#define ATRT_HEALTH 100
 
 #define VIV_PICKUP_RANGE 30
 
