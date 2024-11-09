@@ -88,7 +88,7 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_15Rnd_DC15X),160);
             MAG_XX(CLASS(Mag_240Rnd_DC15L),160);
             MAG_XX(CLASS(Mag_30Rnd_DP23),160);
-            MAG_XX(CLASS(Mag_99Rnd_WestarM5),160);
+            MAG_XX(CLASS(Mag_100Rnd_WestarM5),160);
             MAG_XX(CLASS(Mag_25Rnd_Valken38x),160);
 
             // UGL Ammo
@@ -123,8 +123,8 @@ class CfgVehicles {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),20);
             MAG_XX(CLASS(Mag_30Rnd_HI12),20);
-            MAG_XX(CLASS(Mag_15Rnd_DP23_HP),20);
-            MAG_XX(CLASS(Mag_300Rnd_Z6),5);
+            MAG_XX(CLASS(Mag_30Rnd_DP23),20);
+            MAG_XX(CLASS(Mag_400Rnd_Z6),5);
             MAG_XX(3AS_JLTS_MK39_AA,1);
             MAG_XX(3AS_JLTS_MK43_AT,1);
             MAG_XX(3AS_JLTS_MK44_HE,1);
@@ -135,8 +135,8 @@ class CfgVehicles {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),120);
             MAG_XX(CLASS(Mag_30Rnd_HI12),120);
-            MAG_XX(CLASS(Mag_15Rnd_DP23_HP),120);
-            MAG_XX(CLASS(Mag_300Rnd_Z6),10);
+            MAG_XX(CLASS(Mag_30Rnd_DP23),120);
+            MAG_XX(CLASS(Mag_400Rnd_Z6),10);
             MAG_XX(3AS_JLTS_MK39_AA,3);
             MAG_XX(3AS_JLTS_MK43_AT,3);
             MAG_XX(3AS_JLTS_MK44_HE,3);
