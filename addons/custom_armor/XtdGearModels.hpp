@@ -33,6 +33,7 @@ class XtdGearModels {
                     "Marge",
                     "Ox",
                     "Patriot",
+                    "Rabble",
                     "Rat",
                     "Rev",
                     "Rodger",
@@ -67,6 +68,7 @@ class XtdGearModels {
                 class Marge { label = "Marge"; };
                 class Ox { label = "Ox"; };
                 class Patriot { label = "Patriot"; };
+                class Rabble { label = "Rabble"; };
                 class Rat { label = "Rat"; };
                 class Rev { label = "Rev"; };
                 class Rodger { label = "Rodger"; };
@@ -150,6 +152,7 @@ class XtdGearModels {
                     "Lou",
                     "Ox",
                     "Patriot",
+                    "Rabble",
                     "Rodger",
                     "Sage",
                     "Scvrpio",
@@ -190,6 +193,7 @@ class XtdGearModels {
                 class Lou { label = "Lou"; };
                 class Ox { label = "Ox"; };
                 class Patriot { label = "Patriot"; };
+                class Rabble { label = "Rabble"; };
                 class Rodger { label = "Rodger"; };
                 class Sage { label = "Sage"; };
                 class Scvrpio { label = "Scvrpio"; };
