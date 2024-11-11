@@ -1,4 +1,5 @@
 class CLASS(Helmet_Airborne_Base);
+AB_HELMET_CUSTOM(Anvil);
 AB_HELMET_CUSTOM(Axel);
 AB_HELMET_CUSTOM(Leon);
 AB_HELMET_CUSTOM(Star);

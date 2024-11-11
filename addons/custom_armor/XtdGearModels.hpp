@@ -11,6 +11,7 @@ class XtdGearModels {
                 changeInGame = FALSE;
                 values[] = {
                     "Alvarez",
+                    "Anvil",
                     "Axel",
                     "Bailout",
                     "Bond",
@@ -47,6 +48,7 @@ class XtdGearModels {
                 };
 
                 class Alvarez { label = "Alvarez"; };
+                class Anvil { label = "Anvil"; };
                 class Axel { label = "Axel"; };
                 class Bailout { label = "Bailout"; };
                 class Bond { label = "Bond"; };
@@ -204,6 +206,7 @@ class XtdGearModels {
                 class Sytha { label = "Sytha"; };
                 class Talyn { label = "Talyn"; };
                 class Tugz { label = "Tugz"; };
+                class Turtle { label = "Turtle"; };
                 class Vortex { label = "Vortex"; };
                 class Weenie { label = "Weenie"; };
                 class Woods { label = "Woods"; };
@@ -392,12 +395,14 @@ class XtdGearModels {
                 alwaysSelectable = TRUE;
                 changeInGame = FALSE;
                 values[] = {
+                    "Anvil",
                     "Axel",
                     "Leon",
                     "Star",
                     "Tugz"
                 };
 
+                class Anvil { label = "Anvil"; };
                 class Axel { label = "Axel"; };
                 class Leon { label = "Leon"; };
                 class Star { label = "Star"; };
