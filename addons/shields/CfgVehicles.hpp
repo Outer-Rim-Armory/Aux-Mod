@@ -11,7 +11,7 @@ class CfgVehicles {
         GVAR(regenAmount) = SHIELD_REGEN_AMOUNT_DEFAULT;
 
         class ACE_Actions: ACE_Actions {
-            class RechargeShield_Left {
+            class GVAR(rechargeShield_left) {
                 displayName = "Recharge Shield: %1";
                 selection = "airbrake1_axis";
                 distance = 2;
@@ -20,7 +20,7 @@ class CfgVehicles {
                 statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(externalRecharge));
                 modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
             };
-            class RechargeShield_Right: RechargeShield_Left {
+            class GVAR(rechargeShield_right): GVAR(rechargeShield_left) {
                 selection = "airbrake2_axis";
             };
         };
@@ -41,7 +41,7 @@ class CfgVehicles {
         GVAR(regenAmount) = SHIELD_REGEN_AMOUNT_DEFAULT;
 
         class ACE_Actions: ACE_Actions {
-            class RechargeShield {
+            class GVAR(rechargeShield) {
                 displayName = "Recharge Shield: %1";
                 position = "[0, -4, 0.4]";
                 distance = 5;
