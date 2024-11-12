@@ -16,9 +16,9 @@ class CfgVehicles {
                 selection = "airbrake1_axis";
                 distance = 2;
 
-                condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canExternalRecharge));
-                statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(externalRecharge));
-                modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
+                condition = QUOTE(call FUNC(canExternalRecharge));
+                statement = QUOTE(call FUNC(externalRecharge));
+                modifierFunction = QUOTE(call FUNC(modifyInteraction));
             };
             class GVAR(rechargeShield_right): GVAR(rechargeShield_left) {
                 selection = "airbrake2_axis";
@@ -46,9 +46,9 @@ class CfgVehicles {
                 position = "[0, -4, 0.4]";
                 distance = 5;
 
-                condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canExternalRecharge));
-                statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(externalRecharge));
-                modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
+                condition = QUOTE(call FUNC(canExternalRecharge));
+                statement = QUOTE(call FUNC(externalRecharge));
+                modifierFunction = QUOTE(call FUNC(modifyInteraction));
             };
         };
 
