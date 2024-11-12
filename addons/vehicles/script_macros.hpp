@@ -196,7 +196,11 @@ class TransportItems { \
     QCLASS(BTLB_YWing), \
     QCLASS(Nu), \
     QCLASS(Rho), \
-    QCLASS(Rho_medical) \
+    QCLASS(Rho_medical), \
+    QCLASS(VWing), \
+    QCLASS(V19), \
+    QCLASS(Delta7), \
+    QCLASS(Z95) \
 ]
 
 #define VEHICLE_LIST_LAND [ \

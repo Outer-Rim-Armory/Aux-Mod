@@ -56,6 +56,7 @@ workshop = [
     "2478080991", # Scion Conflict
     "2323185592", # Lightsabers and Force
     "570118882", # No Weapon Sway
+    "2757485942", # Scion Conflict Vehicle Extension
 ]
 optionals = ["no_burn_screams"]
 

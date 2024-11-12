@@ -12,6 +12,7 @@ class CfgPatches {
             QGVAR(weapons),
             // Air
             QGVAR(arc170),
+            QGVAR(delta7),
             QGVAR(laatc),
             QGVAR(laati),
             QGVAR(nu),
@@ -19,8 +20,11 @@ class CfgPatches {
             QGVAR(rathian),
             QGVAR(rho),
             QGVAR(transport),
+            QGVAR(v19),
             QGVAR(vespoid),
+            QGVAR(vwing),
             QGVAR(ywing),
+            QGVAR(z95),
             // Land
             QGVAR(aat),
             QGVAR(atap),
