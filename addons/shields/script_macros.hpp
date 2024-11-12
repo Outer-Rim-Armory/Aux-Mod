@@ -9,15 +9,15 @@
     displayName = "Shield Health: %1"; \
     condition = "true"; \
     statement = ""; \
-    modifierFunction = QUOTE(_this call FUNC(modifyInteraction)); \
+    modifierFunction = QUOTE(call FUNC(modifyInteraction)); \
     class Activate { \
         displayName = "Activate Shield"; \
         condition = QUOTE(ace_player call FUNC(canActivate)); \
-        statement = QUOTE(_this call FUNC(activate)); \
+        statement = QUOTE(call FUNC(activate)); \
     }; \
     class Deactivate { \
         displayName = "Deactivate Shield"; \
         condition = QUOTE(ace_player call FUNC(canDeactivate)); \
-        statement = QUOTE(_this call FUNC(deactivate)); \
+        statement = QUOTE(call FUNC(deactivate)); \
     }; \
 }

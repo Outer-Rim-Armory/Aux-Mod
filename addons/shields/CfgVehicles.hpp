@@ -11,16 +11,16 @@ class CfgVehicles {
         GVAR(regenAmount) = SHIELD_REGEN_AMOUNT_DEFAULT;
 
         class ACE_Actions: ACE_Actions {
-            class RechargeShield_Left {
+            class GVAR(rechargeShield_left) {
                 displayName = "Recharge Shield: %1";
                 selection = "airbrake1_axis";
                 distance = 2;
 
-                condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canExternalRecharge));
-                statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(externalRecharge));
-                modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
+                condition = QUOTE(call FUNC(canExternalRecharge));
+                statement = QUOTE(call FUNC(externalRecharge));
+                modifierFunction = QUOTE(call FUNC(modifyInteraction));
             };
-            class RechargeShield_Right: RechargeShield_Left {
+            class GVAR(rechargeShield_right): GVAR(rechargeShield_left) {
                 selection = "airbrake2_axis";
             };
         };
@@ -292,14 +292,14 @@ class CfgVehicles {
         GVAR(regenAmount) = SHIELD_REGEN_AMOUNT_DEFAULT;
 
         class ACE_Actions: ACE_Actions {
-            class RechargeShield {
+            class GVAR(rechargeShield) {
                 displayName = "Recharge Shield: %1";
                 position = "[0, -4, 0.4]";
                 distance = 5;
 
-                condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canExternalRecharge));
-                statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(externalRecharge));
-                modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
+                condition = QUOTE(call FUNC(canExternalRecharge));
+                statement = QUOTE(call FUNC(externalRecharge));
+                modifierFunction = QUOTE(call FUNC(modifyInteraction));
             };
         };
 
