@@ -137,6 +137,8 @@ class CfgMusic {
     MUSIC(SW_UmbaraLanding,"[SW] Umbara Landing",202,StarWars);
     MUSIC(SW_Felucia_Theme,"[SW] Battle of Felucia",204,StarWars);
     MUSIC(Thrawn_Theme,"[SW] Thrawn Theme",336,SFX);
+    MUSIC(RC_Theme,"[SW] Clone Commando Theme",239,StarWars);
+    MUSIC(RC_Theme_2,"[SW] Clone Commando Theme 2",192,StarWars);
 
     // Transformers
     MUSIC(TF_ArrivalToEarth,"[TF] Arrival To Earth",315,Other);

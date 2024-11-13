@@ -25,4 +25,5 @@ class CfgVehicles {
     SOUND_OBJ(PokeVillage,"[KC] Poke Village Theme");
     SOUND_OBJ(Droid_Marching,"[KC] CIS Droid March");
     SOUND_OBJ(Godzilla_Roar,"[KC] Godzilla Roar");
+    SOUND_OBJ(Order_66,"[KC] Execute Order 66");
 };
