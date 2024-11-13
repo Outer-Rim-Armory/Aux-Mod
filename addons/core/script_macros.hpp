@@ -203,7 +203,7 @@ ace_hearing_protection = 0.85
 #define GET_NAME(var1) [var1, false, true] call ace_common_fnc_getName
 
 // These are defined here so multiple addons can define jetpack properties easily
-#define JETPACK_FUEL_DEFAULT 100
+#define JETPACK_FUEL_DEFAULT 300
 #define JETPACK_SPEED_DEFAULT 4
 #define JETPACK_STRENGTH_DEFAULT 15
 
