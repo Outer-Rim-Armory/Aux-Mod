@@ -109,6 +109,21 @@ class CfgWeapons {
         };
     };
 
+    class CLASS(Vest_Kama_Drake): CLASS(Vest_Officer) {
+        displayName = "[KC] INF Vest (Kama, 'Drake')";
+        model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\officer\Drake_camo1_co.paa),
+            QPATHTOF(data\vests\officer\Drake_camo2_co.paa),
+        };
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+            hiddenSelections[] = {"camo1", "camo2"};
+        };
+    };
+
     class CLASS(Vest_WO);
     class CLASS(Vest_WO_Howzer): CLASS(Vest_WO) {
         displayName = "[KC] INF Vest ('Howzer')";
