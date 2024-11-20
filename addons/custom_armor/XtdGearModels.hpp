@@ -307,7 +307,7 @@ class XtdGearModels {
 
         class CLASS(Helmets_ARC_Custom): CLASS(Helmets_Phase1_Custom) {
             label = "Custom ARC Helmets";
-            options[] = {"custom"};
+            options[] = {"custom", "camo"};
 
             class custom {
                 label = "Custom";
@@ -477,11 +477,13 @@ class XtdGearModels {
                 changeInGame = FALSE;
                 values[] = {
                     "Dexus",
+                    "Jaws",
                     "Joe",
                     "Keeli"
                 };
 
                 class Dexus { label = "Dexus"; };
+                class Jaws { label = "Jaws"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
             };

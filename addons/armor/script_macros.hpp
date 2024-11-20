@@ -3,7 +3,7 @@
 #define XTDMODELS_CAMO class camo { \
     label = "Camo"; \
     changeInGame = FALSE; \
-    values[] = {"Brown", "Grey", "Worn"}; \
+    values[] = {"Brown", "Grey", "Worn", "Empire"}; \
     class Brown { \
         label = "Brown"; \
         image = QPATHTOEF(core,data\ui\CamoBrown_co.paa); \
@@ -16,7 +16,11 @@
         label = "Night"; \
         image = "#(rgb,8,8,3)color(0.141,0.141,0.141,1)"; \
     }; \
-        class Worn { \
+    class Worn { \
         label = "Worn"; \
+    }; \
+    class Empire { \
+        label = "Empire"; \
+        image = "#(rgb,170,170,170)color(0.6,0.6,0.6,1)"; \
     }; \
 }

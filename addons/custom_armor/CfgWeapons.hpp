@@ -67,6 +67,31 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
         class ItemInfo;
     };
+    class CLASS(Vest_Kama_Keeli_Emp): CLASS(Vest_Commander_Keeli) {
+        displayName = "[KC] INF Vest (Kama, 'Keeli') ('Empire')";
+        model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\officer\Keeli_Empire_camo1_co.paa),
+            "SWLB_Clones\data\mc_camo1_co.paa"
+        };
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+            hiddenSelections[] = {"camo1", "camo2"};
+        };
+    };
+
+    class CLASS(Vest_Commander_Keeli_Emp): CLASS(Vest_Commander_Keeli) {
+        displayName = "[KC] INF Vest ('Keeli') ('Empire')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\officer\Keeli_Empire_camo1_co.paa),
+            ""
+        };
+
+        GVAR(isCustom) = TRUE;
+        class ItemInfo;
+    };
 
     class CLASS(Vest_Basic);
     class CLASS(Vest_Officer): CLASS(Vest_Basic) {
@@ -123,6 +148,20 @@ class CfgWeapons {
             hiddenSelections[] = {"camo1", "camo2"};
         };
     };
+    //class CLASS(Vest_Kama_Drake_Emp): CLASS(Vest_Officer) {
+    //    displayName = "[KC] INF Vest (Kama, 'Drake') ('Empire')";
+    //    model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+    //    hiddenSelections[] = {"camo1", "camo2"};
+    //    hiddenSelectionsTextures[] = {
+    //        QPATHTOF(data\vests\officer\Drake_Empire_camo1_co.paa),
+    //        QPATHTOF(data\vests\officer\Drake_Empire_camo2_co.paa),
+    //    };
+
+    //    class ItemInfo: ItemInfo {
+    //        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+    //        hiddenSelections[] = {"camo1", "camo2"};
+    //    };
+    //};
 
     class CLASS(Vest_WO);
     class CLASS(Vest_WO_Howzer): CLASS(Vest_WO) {
@@ -180,6 +219,14 @@ class CfgWeapons {
         displayName = "[KC] Clone P2 NV/TI Officer Visor ('Keeli') ('Worn')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\nvgs\Officer_Keeli_Worn_camo1_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+    class CLASS(cloneNvg_phase2_officerVisor_Keeli_Emp): CLASS(cloneNvg_phase2_officerVisor_Keeli) {
+        displayName = "[KC] Clone P2 NV/TI Officer Visor ('Keeli') ('Empire')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Officer_Keeli_Empire_camo1_co.paa)
         };
 
         GVAR(isCustom) = TRUE;

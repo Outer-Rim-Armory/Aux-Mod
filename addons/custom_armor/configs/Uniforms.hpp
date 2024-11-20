@@ -24,6 +24,18 @@ UNIFORM_CUSTOM(Cutthroat);
 UNIFORM_CUSTOM(Defter);
 UNIFORM_CUSTOM(Dexus);
 UNIFORM_CUSTOM(Drake);
+
+//class CLASS(Uniform_Drake_Emp): CLASS(Uniform_Drake) {
+//    displayName = "[KC] Custom Armor ('Drake') - Empire";
+//
+//    class ItemInfo: ItemInfo {
+//        uniformClass = QCLASS(Unit_Drake_Emp);
+//    };
+//    class XtdGearInfo: XtdGearInfo {
+//        camo = "Empire";
+//    };
+//};
+
 UNIFORM_CUSTOM(Hagrid);
 UNIFORM_CUSTOM(Harry);
 UNIFORM_CUSTOM(Jaws);
@@ -70,6 +82,16 @@ class CLASS(Uniform_Keeli_Worn): CLASS(Uniform_Keeli) {
     };
     class XtdGearInfo: XtdGearInfo {
         camo = "Worn";
+    };
+};
+class CLASS(Uniform_Keeli_Empire): CLASS(Uniform_Keeli) {
+    displayName = "[KC] Custom Armor ('Keeli') - Empire";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Keeli_Emp);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Empire";
     };
 };
 

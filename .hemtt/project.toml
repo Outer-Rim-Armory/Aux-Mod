@@ -28,7 +28,7 @@ workshop = [
     "623475643",  # 3DEN
     "1779063631", # ZEN
     "2173635424", # 501st Aux Mod
-    "2522638637", # ACE Arsenal Extended
+   # "2522638637", # ACE Arsenal Extended
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
    # "2954535667", # Warmantle Armory # Unused
     "767380317", # Blastcore # Only used to test particle effects
@@ -57,6 +57,8 @@ workshop = [
     "2323185592", # Lightsabers and Force
     "570118882", # No Weapon Sway
     "2757485942", # Scion Conflict Vehicle Extension
+    "3321182393", # TK Trooper Standalone Mod
+    "3328314886", # Heavy Weapon Framework
 ]
 optionals = ["no_burn_screams"]
 

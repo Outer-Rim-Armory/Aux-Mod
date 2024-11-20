@@ -110,6 +110,31 @@ class CLASS(Helmet_Phase2_KeeliCrimson_Worn): CLASS(Helmet_Phase2_Keeli_Worn) {
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
+class CLASS(Helmet_Phase2_Keeli_Emp): CLASS(Helmet_Phase2_Keeli) {
+    displayName = "[KC] INF P2 Helm ('Keeli') - Empire";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\camo\empire\Keeli_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Keeli_Emp);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_KeeliCrimson_Emp);
+
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Empire";
+    };
+};
+class CLASS(Helmet_Phase2_KeeliCrimson_Emp): CLASS(Helmet_Phase2_Keeli_Emp) {
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\camo\empire\Keeli_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa)
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
 
 P2_HELMET_CUSTOM(Kujo);
 P2_HELMET_CUSTOM(Leon);

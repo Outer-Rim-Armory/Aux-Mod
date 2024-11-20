@@ -193,6 +193,7 @@ class CLASS(Unit_Drake): CLASS(Unit_Phase2_Base) {
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
+
     linkedItems[] = {
         QCLASS(Helmet_ARC_Drake), QCLASS(Vest_Kama_Drake), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
@@ -200,6 +201,15 @@ class CLASS(Unit_Drake): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_ARC_Drake), QCLASS(Vest_Kama_Drake), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+//class CLASS(Unit_Drake_Emp): CLASS(Unit_Phase2_Base) {
+//    SCOPE_HIDDEN;
+//   uniformClass = QCLASS(Uniform_Drake_Empire);
+//    hiddenSelectionsTextures[] = {
+//        QPATHTOF(data\uniforms\standard\camo\empire\Drake_upper_co.paa),
+//        QPATHTOF(data\uniforms\standard\camo\empire\Drake_lower_co.paa),
+//        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+//    };
+//};
 
 class CLASS(Unit_Hagrid): CLASS(Unit_Phase2_Base) {
     displayName = "Hagrid";
@@ -341,6 +351,15 @@ class CLASS(Unit_Keeli_Worn): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\camo\worn\Keeli_upper_co.paa),
         QPATHTOF(data\uniforms\standard\camo\worn\Keeli_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+class CLASS(Unit_Keeli_Emp): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Keeli_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\camo\empire\Keeli_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\camo\empire\Keeli_lower_co.paa),
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };

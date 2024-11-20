@@ -21,6 +21,8 @@ class CfgWeapons {
         magazines[] = {QCLASS(Mag_400Rnd_Z6), QCLASS(Mag_400Rnd_Z6_Red), "Aux12thFleet_Mag_Z6"};
         magazineWell[] = {};
 
+        WBK_UseHeavyWeaponFramework = "True";
+
         recoil = "recoil_lim";
 
         JLTS_hasElectronics = TRUE;
