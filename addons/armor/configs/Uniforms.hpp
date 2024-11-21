@@ -11,6 +11,12 @@ class CLASS(Uniform_CT): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_CT);
     };
 };
+class CLASS(Uniform_CT_female): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 01 (Trooper, Female)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CT_female);
+    };
+};
 class CLASS(Uniform_CT_Legacy): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 01 (Trooper, Legacy)";
     class ItemInfo: ItemInfo {
