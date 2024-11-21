@@ -73,6 +73,21 @@ class CLASS(Unit_Phase2_CT_Legacy): CLASS(Unit_Phase2_Base) {
     // this unit only exist to texture the legacy uniform
 };
 
+class CLASS(Unit_Phase2_CT_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 01 - Clone Trooper";
+
+    uniformClass = QCLASS(Uniform_CT_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\CT_Empire_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CT_Empire_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
+};
+
 class CLASS(Unit_Phase2_SCT): CLASS(Unit_Phase2_Base) {
     displayName = "INF 02 - Senior Clone Trooper";
     editorPreview = EDITOR_PREVIEW(Unit_Phase2_SCT);
@@ -92,6 +107,21 @@ class CLASS(Unit_Phase2_SCT): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Phase2_SCT_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 02 - Senior Clone Trooper";
+
+    uniformClass = QCLASS(Uniform_CT_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\SCT_Empire_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\SCT_Empire_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
+};
+
 class CLASS(Unit_Phase2_VCT): CLASS(Unit_Phase2_Base) {
     displayName = "INF 03 - Veteran Clone Trooper";
     editorPreview = EDITOR_PREVIEW(Unit_Phase2_VCT);
@@ -109,6 +139,21 @@ class CLASS(Unit_Phase2_VCT): CLASS(Unit_Phase2_Base) {
     respawnLinkedItems[] = {
         QCLASS(Helmet_Phase2_VCT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
+};
+
+class CLASS(Unit_Phase2_VCT_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 03 - Veteran Clone Trooper";
+
+    uniformClass = QCLASS(Uniform_VCT_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\VCT_Empire_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\VCT_Empire_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
 };
 
 // Start of JNCO Ranks

@@ -53,6 +53,13 @@ class CLASS(Helmet_Phase2_CT_Legacy): CLASS(Helmet_Phase2_Base) {
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
+class CLASS(Helmet_Phase2_CT_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 01 (Trooper, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\CT_Empire_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
 
 class CLASS(Helmet_Phase2_SCT): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 02 (Senior Trooper)";
@@ -68,6 +75,13 @@ class CLASS(Helmet_Phase2_SCT_Legacy): CLASS(Helmet_Phase2_Base) {
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
+class CLASS(Helmet_Phase2_SCT_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 02 (Senior Trooper, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\SCT_Empire_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
 
 class CLASS(Helmet_Phase2_VCT): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 03 (Veteran Trooper)";
@@ -80,6 +94,13 @@ class CLASS(Helmet_Phase2_VCT_Legacy): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 03 (Veteran Trooper, Legacy)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\VCT_legacy_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
+class CLASS(Helmet_Phase2_VCT_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 03 (Veteran Trooper, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\VCT_Empire_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };

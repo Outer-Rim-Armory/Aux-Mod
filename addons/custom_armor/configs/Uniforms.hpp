@@ -51,6 +51,7 @@ class CLASS(Uniform_Jaws_CamoBrown): CLASS(Uniform_Jaws) {
     };
 };
 
+UNIFORM_CUSTOM(Jester);
 UNIFORM_CUSTOM(Joe);
 UNIFORM_CUSTOM(Keeli);
 

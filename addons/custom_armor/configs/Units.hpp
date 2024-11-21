@@ -306,6 +306,27 @@ class CLASS(Unit_Joe): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Jester): CLASS(Unit_Phase2_Base) {
+    displayName = "Jester";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Jester);
+
+    uniformClass = QCLASS(Uniform_Jester);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Jester_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Jester_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_ARF_Jester), QCLASS(Vest_CSFC), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_ARF_Jester), QCLASS(Vest_CSFC), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Keeli): CLASS(Unit_Phase2_Base) {
     displayName = "Keeli";
 

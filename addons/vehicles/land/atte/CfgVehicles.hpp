@@ -117,6 +117,19 @@ class CfgVehicles {
                 };
             };
 
+            class Reekolith: KeeliCompany {
+                displayName = "Reekolith";
+                author = AUTHOR;
+                textures[] = {
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\Reekolith\Shell_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Detail_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\Reekolith\Legs_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
+                };
+            };
+
             class CamoBrown: KeeliCompany {
                 displayName = "Brown Camo";
                 textures[] = {

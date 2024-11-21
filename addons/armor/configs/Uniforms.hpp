@@ -17,6 +17,12 @@ class CLASS(Uniform_CT_Legacy): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_CT_Legacy);
     };
 };
+class CLASS(Uniform_CT_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 01 (Trooper, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CT_Empire);
+    };
+};
 
 class CLASS(Uniform_SCT): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 02 (Senior Trooper)";
@@ -24,11 +30,23 @@ class CLASS(Uniform_SCT): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_SCT);
     };
 };
+class CLASS(Uniform_SCT_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 02 (Senior Trooper) (Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_SCT_Empire);
+    };
+};
 
 class CLASS(Uniform_VCT): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 03 (Veteran Trooper)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_VCT);
+    };
+};
+class CLASS(Uniform_VCT_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 03 (Veteran Trooper) (Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_VCT_Empire);
     };
 };
 
