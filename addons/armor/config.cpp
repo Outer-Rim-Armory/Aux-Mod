@@ -15,7 +15,8 @@ class CfgPatches {
             "SWLB_CEE",
             "JLTS_core",
             "JLTS_characters_CloneArmor2",
-            "SDT_gear"
+            "SDT_gear",
+            "442_equipment_units"
         };
         units[] = {
             QCLASS(Unit_Base),
