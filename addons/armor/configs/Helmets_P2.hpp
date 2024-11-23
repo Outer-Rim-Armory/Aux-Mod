@@ -31,6 +31,13 @@ class CLASS(Helmet_Phase2_CR_Legacy): CLASS(Helmet_Phase2_Base) {
         "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
     };
 };
+class CLASS(Helmet_Phase2_CR_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 00 (Recruit, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\CR_Empire_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+};
 
 class CLASS(Helmet_Phase2_CT): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 01 (Trooper)";

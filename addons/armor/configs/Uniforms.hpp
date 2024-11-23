@@ -1,7 +1,31 @@
+class CLASS(Uniform_female): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor (Base, Female)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_female);
+    };
+};
 class CLASS(Uniform_CR): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 00 (Recruit)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_CR);
+    };
+};
+class CLASS(Uniform_CR_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 00 (Recruit, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CR_Empire);
+    };
+};
+class CLASS(Uniform_CR_female): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 00 (Recruit, Female)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CR_female);
+    };
+};
+class CLASS(Uniform_CR_female_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 00 (Recruit, Female, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CR_female_Empire);
     };
 };
 
@@ -29,6 +53,12 @@ class CLASS(Uniform_CT_Empire): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_CT_Empire);
     };
 };
+class CLASS(Uniform_CT_female_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 01 (Trooper, Female, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CT_female_Empire);
+    };
+};
 
 class CLASS(Uniform_SCT): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 02 (Senior Trooper)";
@@ -36,10 +66,22 @@ class CLASS(Uniform_SCT): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_SCT);
     };
 };
+class CLASS(Uniform_SCT_female): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 02 (Senior Trooper, Female)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_SCT_female);
+    };
+};
 class CLASS(Uniform_SCT_Empire): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 02 (Senior Trooper) (Empire)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_SCT_Empire);
+    };
+};
+class CLASS(Uniform_SCT_female_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 02 (Senior Trooper, Female, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_SCT_female_Empire);
     };
 };
 
@@ -49,10 +91,22 @@ class CLASS(Uniform_VCT): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_VCT);
     };
 };
+class CLASS(Uniform_VCT_female): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 03 (Veteran Trooper, Female)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_VCT_female);
+    };
+};
 class CLASS(Uniform_VCT_Empire): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 03 (Veteran Trooper) (Empire)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_VCT_Empire);
+    };
+};
+class CLASS(Uniform_VCT_female_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 03 (Veteran Trooper, Female, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_VCT_female_Empire);
     };
 };
 

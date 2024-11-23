@@ -356,7 +356,7 @@ class CfgWeapons {
             QPATHTOF(sounds\data\audio\juggernaut\Horn0.ogg),
             5,
             1,
-            500
+            1000
         };
     };
 

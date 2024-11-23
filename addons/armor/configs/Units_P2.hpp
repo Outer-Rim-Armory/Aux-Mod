@@ -39,6 +39,26 @@ class CLASS(Unit_Phase2_CR): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Phase2_CR_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 00 - Clone Recruit (Empire)";
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CR);
+
+    uniformClass = QCLASS(Uniform_CR_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\CR_Empire_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CR_Empire_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_CR_Empire), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_CR_Empire), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Phase2_CT): CLASS(Unit_Phase2_Base) {
     displayName = "INF 01 - Clone Trooper";
     editorPreview = EDITOR_PREVIEW(Unit_Phase2_CT);
