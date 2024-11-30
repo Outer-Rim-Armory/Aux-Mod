@@ -131,15 +131,15 @@ class CfgVehicles {
     };
 
     class CLASS(TU_Unit_HeavyGunner): CLASS(TU_Unit_Rifleman) {
-        displayName = "Heavy Gunner";
+        displayName = "Heavy Assault (Z6)";
         editorPreview = EDITOR_PREVIEW(TU_Unit_HeavyGunner);
         icon = "iconManMG";
 
         weapons[] = {QCLASS(Z6), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(Z6), "", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_300Rnd_Z6_Red)};
-        respawnMagazines[] = {QCLASS(Mag_300Rnd_Z6_Red)};
+        magazines[] = {QCLASS(Mag_400Rnd_Z6_Red)};
+        respawnMagazines[] = {QCLASS(Mag_400Rnd_Z6_Red)};
 
         linkedItems[] = {QCLASS(TU_Helmet_Assault), QCLASS(TU_Vest_AssaultHeavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(TU_Helmet_Assault), QCLASS(TU_Vest_AssaultHeavy), LINKED_ITEMS_RADIO};

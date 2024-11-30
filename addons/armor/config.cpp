@@ -17,7 +17,8 @@ class CfgPatches {
             "JLTS_characters_CloneArmor2",
             "SDT_gear",
             "442_equipment_units",
-            "442_equipment_glasses"
+            "442_equipment_glasses",
+
         };
         units[] = {
             QCLASS(Unit_Base),
@@ -330,11 +331,14 @@ class CfgPatches {
             QCLASS(Uniform_phase1Geo_Captain),
             QCLASS(Uniform_phase1Geo_Commander),
             QCLASS(Uniform_CR),
+            QCLASS(Uniform_CR_female),
             QCLASS(Uniform_CT),
             QCLASS(Uniform_CT_female),
             QCLASS(Uniform_CT_Legacy),
             QCLASS(Uniform_SCT),
+            QCLASS(Uniform_SCT_female),
             QCLASS(Uniform_VCT),
+            QCLASS(Uniform_VCT_female),
             QCLASS(Uniform_CLC),
             QCLASS(Uniform_CPL),
             QCLASS(Uniform_CS),
