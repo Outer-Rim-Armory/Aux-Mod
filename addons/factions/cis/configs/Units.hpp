@@ -521,6 +521,36 @@ class CLASS(CIS_Unit_Droid_B1_Commander_Training): CLASS(CIS_Unit_Droid_B1_Comma
     backpack = QCLASS(CIS_Backpack_Droid_B1_Antenna_Training);
 };
 
+class CLASS(Unit_Droid_B1): CLASS(CIS_Unit_Droid_Base) {
+    SCOPE_PUBLIC;
+    displayName = "B1 Battle Droid";
+    uniformClass = QCLASS(KC_Uniform_Droid_B1);
+
+    faction = QFACTION(KC);
+    editorSubcategory = QEDSUBCAT(INF_Droids);
+    editorPreview = EDITOR_PREVIEW(Unit_Droid_B1);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(cis\data\textures\uniforms\KC_b1_co.paa)};
+
+    backpack = QCLASS(Backpack_Droid_B1);
+    side = BLUFOR;
+    modelSides[] = {BLUFOR};
+};
+
+class CLASS(Unit_Droid_B1_Commander): CLASS(CIS_Unit_Droid_Base) {
+    SCOPE_PUBLIC;
+    displayName = "B1 Battle Droid Commander";
+    uniformClass = QCLASS(KC_Uniform_Droid_B1_Commander);
+
+    faction = QFACTION(KC);
+    editorSubcategory = QEDSUBCAT(INF_Droids);
+    editorPreview = EDITOR_PREVIEW(Unit_Droid_B1_Commander);
+    hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\uniforms\KC_b1_commander_co.paa)};
+    backpack = QCLASS(Backpack_Droid_B1_Commander);
+    side = BLUFOR;
+    modelSides[] = {BLUFOR};
+};
+
 class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     SCOPE_PUBLIC;
 
@@ -589,6 +619,50 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
             {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 45}},
             {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 45}},
         };
+    };
+};
+
+class CLASS(Unit_Droid_B2): CLASS(CIS_Unit_Droid_B2) {
+    SCOPE_PUBLIC;
+
+    editorSubcategory = QEDSUBCAT(INF_Droids);
+    editorPreview = EDITOR_PREVIEW(Unit_Droid_B2);
+    genericNames = QCLASS(CIS_Droids_B2);
+    faction = QFACTION(KC);
+
+    displayName = "B2 Super Battle Droid";
+    uniformClass = QCLASS(KC_Uniform_Droid_B2);
+    side = BLUFOR;
+    modelSides[] = {BLUFOR};
+
+    model = "\lsd_armor_redfor\uniform\cis\b2\lsd_cis_b2_uniform";
+    hiddenSelections[] = {"camo_arms", "legs", "torso"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(cis\data\textures\uniforms\KC_B2_arms_co.paa),
+        QPATHTOF(cis\data\textures\uniforms\KC_B2_legs_co.paa),
+        QPATHTOF(cis\data\textures\uniforms\KC_B2_torso_co.paa)
+    };
+};
+
+class CLASS(Unit_Droid_B2_Commander): CLASS(CIS_Unit_Droid_B2) {
+    SCOPE_PUBLIC;
+
+    editorSubcategory = QEDSUBCAT(INF_Droids);
+    editorPreview = EDITOR_PREVIEW(Unit_Droid_B2_Commander);
+    genericNames = QCLASS(CIS_Droids_B2);
+    faction = QFACTION(KC);
+
+    displayName = "B2 Super Battle Droid Commander";
+    uniformClass = QCLASS(KC_Uniform_Droid_B2_Commander);
+    side = BLUFOR;
+    modelSides[] = {BLUFOR};
+
+    model = "\lsd_armor_redfor\uniform\cis\b2\lsd_cis_b2_uniform";
+    hiddenSelections[] = {"camo_arms", "legs", "torso"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(cis\data\textures\uniforms\KC_B2_Commander_arms_co.paa),
+        QPATHTOF(cis\data\textures\uniforms\KC_B2_Commander_legs_co.paa),
+        QPATHTOF(cis\data\textures\uniforms\KC_B2_Commander_torso_co.paa)
     };
 };
 
@@ -704,4 +778,29 @@ class CLASS(CIS_Unit_Droid_BX_Training): CLASS(CIS_Unit_Droid_BX) {
 
     uniformClass = QCLASS(CIS_Uniform_Droid_BX_Training);
     hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\trainingCamo\textures\bx_training_co.paa"};
+};
+
+class CLASS(Unit_Droid_BX): CLASS(CIS_Unit_Droid_BX) {
+    displayName = "BX Commando Droid";
+    editorSubcategory = QEDSUBCAT(INF_Droids);
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX);
+    faction = QFACTION(KC);
+    side = BLUFOR;
+    modelSides[] = {BLUFOR};
+
+    uniformClass = QCLASS(KC_Uniform_Droid_BX);
+    hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
+};
+
+class CLASS(Unit_Droid_BX_Captain): CLASS(CIS_Unit_Droid_BX) {
+    displayName = "BX Commando Droid Captain";
+    icon = "iconManLeader";
+    editorSubcategory = QEDSUBCAT(INF_Droids);
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Captain);
+    faction = QFACTION(KC);
+    side = BLUFOR;
+    modelSides[] = {BLUFOR};
+
+    uniformClass = QCLASS(KC_Uniform_Droid_BX_Captain);
+    hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\specops\textures\bx_captain_co.paa"};
 };

@@ -85,6 +85,22 @@ class CfgWeapons {
         };
     };
 
+    class CLASS(KC_Uniform_Droid_B1): CLASS(CIS_Uniform_Droid_B1) {
+        displayName = "[KC] B1 Battle Droid";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(Unit_Droid_B1);
+        };
+    };
+
+    class CLASS(KC_Uniform_Droid_B1_Commander): CLASS(CIS_Uniform_Droid_B1) {
+        displayName = "[KC] B1 Battle Droid (Commander)";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(Unit_Droid_B1_Commander);
+        };
+    };
+
     class CLASS(CIS_Uniform_Droid_B2): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;
 
@@ -97,6 +113,26 @@ class CfgWeapons {
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_B2);
             type = "Standard";
+        };
+    };
+
+    class CLASS(KC_Uniform_Droid_B2): CLASS(CIS_Uniform_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] B2 Super Battle Droid";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(Unit_Droid_B2);
+        };
+    };
+
+    class CLASS(KC_Uniform_Droid_B2_Commander): CLASS(CIS_Uniform_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] B2 Super Battle Droid Commander";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(Unit_Droid_B2_Commander);
         };
     };
 
@@ -146,6 +182,26 @@ class CfgWeapons {
                 class Chest;
                 class Diaphragm;
             };
+        };
+    };
+
+    class CLASS(KC_Uniform_Droid_BX): CLASS(CIS_Uniform_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] BX Commando Droid";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(Unit_Droid_BX);
+        };
+    };
+
+    class CLASS(KC_Uniform_Droid_BX_Captain): CLASS(CIS_Uniform_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] BX Commando Droid Captain";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(Unit_Droid_BX_Captain);
         };
     };
     class ls_redforVest_base: V_PlateCarrier1_rgr {};

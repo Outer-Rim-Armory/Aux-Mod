@@ -135,6 +135,25 @@ class CLASS(CIS_Backpack_Droid_B1_Antenna_Training): CLASS(CIS_Backpack_Droid_B1
     };
 };
 
+class CLASS(Backpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
+    displayName = "[KC] Battle Droid Backpack";
+    hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\KC_B1_co.paa)};
+};
+
+class CLASS(Backpack_Droid_B1_Commander): CLASS(CIS_Backpack_Droid_B1) {
+    displayName = "[KC] Battle Droid Radiopack";
+    hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\KC_B1_co.paa)};
+
+// TFAR Long Range
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+    };
+
 class CLASS(CIS_Jetpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
     displayName = "[CIS] Battle Droid Jetpack";
 

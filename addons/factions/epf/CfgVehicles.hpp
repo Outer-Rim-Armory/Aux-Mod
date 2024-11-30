@@ -139,8 +139,8 @@ class CfgVehicles {
         weapons[] = {QCLASS(Z6), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(Z6), "", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_300Rnd_Z6_Red)};
-        respawnMagazines[] = {QCLASS(Mag_300Rnd_Z6_Red)};
+        magazines[] = {QCLASS(Mag_400Rnd_Z6_Red)};
+        respawnMagazines[] = {QCLASS(Mag_400Rnd_Z6_Red)};
 
         linkedItems[] = {QCLASS(EPF_Helmet_Assault), QCLASS(EPF_Vest_AssaultHeavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(EPF_Helmet_Assault), QCLASS(EPF_Vest_AssaultHeavy), LINKED_ITEMS_RADIO};
