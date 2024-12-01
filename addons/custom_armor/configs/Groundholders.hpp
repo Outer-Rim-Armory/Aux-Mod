@@ -128,6 +128,8 @@ GROUND_HOLDER(Helmet_Engineer_Bob,"ENG Helm ('Bob')");
 GROUND_HOLDER(Helmet_Engineer_BobKyber,"ENG Helm ('Bob') [Kyber Visor]");
 GROUND_HOLDER(Helmet_Engineer_Splashdown,"ENG Helm ('Splashdown')");
 GROUND_HOLDER(Helmet_Engineer_SplashdownKyber,"ENG Helm ('Splashdown') [Kyber Visor]");
+GROUND_HOLDER(Helmet_Engineer_York,"ENG Helm ('York')");
+GROUND_HOLDER(Helmet_Engineer_YorkKyber,"ENG Helm ('York') [Kyber Visor]");
 
 
 GROUND_HOLDER(Helmet_ARC_Drake,"SF ARC Helm ('Drake')");

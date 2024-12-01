@@ -1,3 +1,4 @@
 class CLASS(Helmet_Engineer_Base);
 ENGINEER_HELMET_VISOR_CUSTOM(Bob,Kyber);
 ENGINEER_HELMET_VISOR_CUSTOM(Splashdown,Kyber);
+ENGINEER_HELMET_VISOR_CUSTOM(York,Kyber);

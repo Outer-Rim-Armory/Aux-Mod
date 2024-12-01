@@ -154,6 +154,34 @@ P2_HELMET_CUSTOM(Sytha);
 P2_HELMET_CUSTOM(Talyn);
 P2_HELMET_CUSTOM(Tugz);
 P2_HELMET_CUSTOM(Turtle);
+P2_HELMET_VISOR_CUSTOM(Tyrant,Crimson);
+
+class CLASS(Helmet_Phase2_Tyrant_Worn): CLASS(Helmet_Phase2_Tyrant) {
+    displayName = "[KC] INF P2 Helm ('Tyrant') - Worn";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\camo\worn\Tyrant_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+    };
+
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Tyrant_Worn);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_TyrantCrimson_Worn);
+
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
+class CLASS(Helmet_Phase2_TyrantCrimson_Worn): CLASS(Helmet_Phase2_Tyrant_Worn) {
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\camo\worn\Tyrant_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa)
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
+
 P2_HELMET_CUSTOM(Vortex);
 P2_HELMET_CUSTOM(Weenie);
 P2_HELMET_CUSTOM(Woods);

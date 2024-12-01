@@ -75,6 +75,31 @@ class CLASS(Helmet_Phase1_KeeliCrimson_CamoGrey): CLASS(Helmet_Phase1_Keeli_Camo
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
+class CLASS(Helmet_Phase1_Keeli_Worn): CLASS(Helmet_Phase1_Keeli) {
+    displayName = "[KC] INF P1 Helm ('Keeli') - Worn";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\camo\worn\Keeli_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+    };
+
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Keeli_Worn);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase1_KeeliCrimson_Worn);
+
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
+class CLASS(Helmet_Phase1_KeeliCrimson_Worn): CLASS(Helmet_Phase1_Keeli_Worn) {
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\camo\worn\Keeli_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa)
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
 
 P1_HELMET_CUSTOM(Kujo);
 P1_HELMET_VISOR_CUSTOM(Lou,Plasma);
@@ -91,4 +116,31 @@ P1_HELMET_CUSTOM(Splashdown);
 P1_HELMET_CUSTOM(Swoop);
 P1_HELMET_CUSTOM(Talyn);
 P1_HELMET_VISOR_CUSTOM(Tyrant,Crimson);
+
+class CLASS(Helmet_Phase1_Tyrant_Worn): CLASS(Helmet_Phase1_Tyrant) {
+    displayName = "[KC] INF P1 Helm ('Tyrant') - Worn";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\camo\worn\Tyrant_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
+    };
+
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Tyrant_Worn);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase1_TyrantCrimson_Worn);
+
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
+class CLASS(Helmet_Phase1_TyrantCrimson_Worn): CLASS(Helmet_Phase1_Tyrant_Worn) {
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\camo\worn\Tyrant_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa)
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
+
 P1_HELMET_CUSTOM(Woods);
