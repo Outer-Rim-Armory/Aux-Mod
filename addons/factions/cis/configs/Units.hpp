@@ -789,7 +789,7 @@ class CLASS(Unit_Droid_BX): CLASS(CIS_Unit_Droid_BX) {
     modelSides[] = {BLUFOR};
 
     uniformClass = QCLASS(KC_Uniform_Droid_BX);
-    hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
+    hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\uniforms\KC_body_co.paa)};
 };
 
 class CLASS(Unit_Droid_BX_Captain): CLASS(CIS_Unit_Droid_BX) {
@@ -802,5 +802,5 @@ class CLASS(Unit_Droid_BX_Captain): CLASS(CIS_Unit_Droid_BX) {
     modelSides[] = {BLUFOR};
 
     uniformClass = QCLASS(KC_Uniform_Droid_BX_Captain);
-    hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\specops\textures\bx_captain_co.paa"};
+    hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\uniforms\KC_bx_captain_co.paa)};
 };
