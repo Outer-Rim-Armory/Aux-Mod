@@ -283,6 +283,7 @@ class CfgPatches {
             QCLASS(Helmet_Engineer_Bob),
             QCLASS(Helmet_Engineer_BobKyber),
             QCLASS(Helmet_Engineer_Splashdown),
+            QCLASS(Helmet_Engineer_York),
             QCLASS(Helmet_ARC_Drake),
             QCLASS(Helmet_ARC_DrakeBacta),
             QCLASS(Helmet_ARC_Hagrid),
