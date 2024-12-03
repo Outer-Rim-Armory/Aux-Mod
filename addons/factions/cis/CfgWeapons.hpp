@@ -85,7 +85,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(KC_Uniform_Droid_B1): CLASS(CIS_Uniform_Droid_B1) {
+    class CLASS(Uniform_Droid_B1): CLASS(CIS_Uniform_Droid_B1) {
         displayName = "[KC] B1 Battle Droid";
 
         class ItemInfo: ItemInfo {
@@ -93,7 +93,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(KC_Uniform_Droid_B1_Commander): CLASS(CIS_Uniform_Droid_B1) {
+    class CLASS(Uniform_Droid_B1_Commander): CLASS(CIS_Uniform_Droid_B1) {
         displayName = "[KC] B1 Battle Droid (Commander)";
 
         class ItemInfo: ItemInfo {
