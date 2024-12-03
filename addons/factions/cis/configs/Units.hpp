@@ -524,7 +524,7 @@ class CLASS(CIS_Unit_Droid_B1_Commander_Training): CLASS(CIS_Unit_Droid_B1_Comma
 class CLASS(Unit_Droid_B1): CLASS(CIS_Unit_Droid_Base) {
     SCOPE_PUBLIC;
     displayName = "B1 Battle Droid";
-    uniformClass = QCLASS(KC_Uniform_Droid_B1);
+    uniformClass = QCLASS(Uniform_Droid_B1);
 
     faction = QFACTION(KC);
     editorSubcategory = QEDSUBCAT(INF_Droids);
@@ -540,7 +540,7 @@ class CLASS(Unit_Droid_B1): CLASS(CIS_Unit_Droid_Base) {
 class CLASS(Unit_Droid_B1_Commander): CLASS(CIS_Unit_Droid_Base) {
     SCOPE_PUBLIC;
     displayName = "B1 Battle Droid Commander";
-    uniformClass = QCLASS(KC_Uniform_Droid_B1_Commander);
+    uniformClass = QCLASS(Uniform_Droid_B1_Commander);
 
     faction = QFACTION(KC);
     editorSubcategory = QEDSUBCAT(INF_Droids);
