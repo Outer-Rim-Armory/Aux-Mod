@@ -138,11 +138,15 @@ class CLASS(CIS_Backpack_Droid_B1_Antenna_Training): CLASS(CIS_Backpack_Droid_B1
 class CLASS(Backpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
     displayName = "[KC] Battle Droid Backpack";
     hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\KC_B1_co.paa)};
+    side = BLUFOR;
+    modelSides[] = {BLUFOR};
 };
 
 class CLASS(Backpack_Droid_B1_Commander): CLASS(CIS_Backpack_Droid_B1) {
     displayName = "[KC] Battle Droid Radiopack";
     hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\KC_B1_co.paa)};
+    side = BLUFOR;
+    modelSides[] = {BLUFOR};
 
 // TFAR Long Range
         tf_hasLRradio = TRUE;
