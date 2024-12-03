@@ -116,7 +116,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(KC_Uniform_Droid_B2): CLASS(CIS_Uniform_Droid_Base) {
+    class CLASS(Uniform_Droid_B2): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] B2 Super Battle Droid";
@@ -126,7 +126,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(KC_Uniform_Droid_B2_Commander): CLASS(CIS_Uniform_Droid_Base) {
+    class CLASS(Uniform_Droid_B2_Commander): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] B2 Super Battle Droid Commander";
@@ -185,7 +185,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(KC_Uniform_Droid_BX): CLASS(CIS_Uniform_Droid_Base) {
+    class CLASS(Uniform_Droid_BX): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] BX Commando Droid";
@@ -195,7 +195,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(KC_Uniform_Droid_BX_Captain): CLASS(CIS_Uniform_Droid_Base) {
+    class CLASS(Uniform_Droid_BX_Captain): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;
 
         displayName = "[KC] BX Commando Droid Captain";
