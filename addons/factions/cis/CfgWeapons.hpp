@@ -123,6 +123,7 @@ class CfgWeapons {
 
         displayName = "[KC] B2 Super Battle Droid";
         uniformType = "Neopren";
+        maximumLoad = 1200;
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(Unit_Droid_B2);
@@ -134,6 +135,7 @@ class CfgWeapons {
 
         displayName = "[KC] B2 Super Battle Droid Commander";
         uniformType = "Neopren";
+        maximumLoad = 1200;
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(Unit_Droid_B2_Commander);
@@ -194,6 +196,7 @@ class CfgWeapons {
 
         displayName = "[KC] BX Commando Droid";
         uniformType = "Neopren";
+        maximumLoad = 1200;
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(Unit_Droid_BX);
@@ -205,6 +208,7 @@ class CfgWeapons {
 
         displayName = "[KC] BX Commando Droid Captain";
         uniformType = "Neopren";
+        maximumLoad = 1200;
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(Unit_Droid_BX_Captain);

@@ -33,6 +33,7 @@ ARC_HELMET_VISOR_CUSTOM(Sin,Crimson);
 ARC_HELMET_VISOR_CUSTOM(Tyrant,Crimson);
 
 class CLASS(Helmet_ARC_Tyrant_Worn): CLASS(Helmet_ARC_Base) {
+    SCOPE_HIDDEN;
     displayName = "[KC] SF ARC P1.5 Helm ('Tyrant') - Worn";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\camo\worn\Tyrant_camo1_co.paa),

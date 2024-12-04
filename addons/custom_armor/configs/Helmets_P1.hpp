@@ -118,6 +118,7 @@ P1_HELMET_CUSTOM(Talyn);
 P1_HELMET_VISOR_CUSTOM(Tyrant,Crimson);
 
 class CLASS(Helmet_Phase1_Tyrant_Worn): CLASS(Helmet_Phase1_Tyrant) {
+    SCOPE_HIDDEN;
     displayName = "[KC] INF P1 Helm ('Tyrant') - Worn";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1\camo\worn\Tyrant_camo1_co.paa),
