@@ -140,6 +140,7 @@ class CLASS(Backpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
     hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\KC_B1_co.paa)};
     side = BLUFOR;
     modelSides[] = {BLUFOR};
+    maximumLoad = 1200;
 };
 
 class CLASS(Backpack_Droid_B1_Commander): CLASS(CIS_Backpack_Droid_B1) {
@@ -147,6 +148,7 @@ class CLASS(Backpack_Droid_B1_Commander): CLASS(CIS_Backpack_Droid_B1) {
     hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\KC_B1_co.paa)};
     side = BLUFOR;
     modelSides[] = {BLUFOR};
+    maximumLoad = 1200;
 
 // TFAR Long Range
         tf_hasLRradio = TRUE;
