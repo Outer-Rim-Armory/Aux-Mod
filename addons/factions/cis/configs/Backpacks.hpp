@@ -198,4 +198,13 @@ class CLASS(Jetpack_Droid_B1): CLASS(CIS_Jetpack_Droid_B1) {
     displayName = "[KC] Battle Droid Jetpack";
     hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\backpacks\KC_B1_Jetpack_co.paa)};
     maximumLoad = 1200;
+
+    // TFAR Long Range
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
 };
