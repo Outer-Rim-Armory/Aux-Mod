@@ -546,7 +546,7 @@ class CLASS(Unit_Droid_B1_Commander): CLASS(CIS_Unit_Droid_Base) {
     editorSubcategory = QEDSUBCAT(INF_Droids);
     editorPreview = EDITOR_PREVIEW(Unit_Droid_B1_Commander);
     hiddenSelectionsTextures[] = {QPATHTOF(cis\data\textures\uniforms\KC_b1_commander_co.paa)};
-    backpack = QCLASS(Backpack_Droid_B1_Commander);
+    backpack = QCLASS(Backpack_Droid_B1);
     side = BLUFOR;
     modelSides[] = {BLUFOR};
 };
