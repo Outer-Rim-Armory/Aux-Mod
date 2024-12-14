@@ -388,8 +388,15 @@ class CLASS(Uniform_phase1Geo_Captain): CLASS(Uniform_Base) {
     };
 };
 
+class CLASS(Uniform_phase1Geo_Major): CLASS(Uniform_Base) {
+    displayName = "[KC] INF GEO 05 (Major)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_phase1Geo_Major);
+    };
+};
+
 class CLASS(Uniform_phase1Geo_Commander): CLASS(Uniform_Base) {
-    displayName = "[KC] INF GEO 05 (Commander)";
+    displayName = "[KC] INF GEO 06 (Commander)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_phase1Geo_Commander);
     };

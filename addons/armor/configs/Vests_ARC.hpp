@@ -50,9 +50,24 @@ class CLASS(Vest_ARC_NightShade): CLASS(Vest_ARC) {
     };
 };
 
+class CLASS(Vest_ARC_Phase1Geo_Enlisted): CLASS(Vest_ARC) {
+    displayName = "[KC] SF ARC GEO 01 (Enlisted)";
+    hiddenSelectionsTextures[] = {
+        "",
+        QPATHTOF(data\vests\arc\Enlisted_P1_camo2_co.paa)
+    };
+};
+
+class CLASS(Vest_ARC_Phase1Geo_NCO): CLASS(Vest_ARC) {
+    displayName = "[KC] SF ARC GEO 02 (NCO)";
+    hiddenSelectionsTextures[] = {
+        "",
+        QPATHTOF(data\vests\arc\NCO_P1_camo2_co.paa)
+    };
+};
 
 class CLASS(Vest_ARC_Phase1Geo_Officer): CLASS(Vest_ARC) {
-    displayName = "[KC] SF ARC GEO 01 (Officer)";
+    displayName = "[KC] SF ARC GEO 03 (Officer)";
     hiddenSelectionsTextures[] = {
         "",
         QPATHTOF(data\vests\arc\LT_P1_camo2_co.paa)
@@ -60,10 +75,26 @@ class CLASS(Vest_ARC_Phase1Geo_Officer): CLASS(Vest_ARC) {
 };
 
 class CLASS(Vest_ARC_Phase1Geo_Captain): CLASS(Vest_ARC) {
-    displayName = "[KC] SF ARC GEO 02 (Captain)";
+    displayName = "[KC] SF ARC GEO 04 (Captain)";
     hiddenSelectionsTextures[] = {
         "",
         QPATHTOF(data\vests\arc\CAP_P1_camo2_co.paa)
+    };
+};
+
+class CLASS(Vest_ARC_Phase1Geo_Major): CLASS(Vest_ARC) {
+    displayName = "[KC] SF ARC GEO 05 (Major)";
+    hiddenSelectionsTextures[] = {
+        "",
+        QPATHTOF(data\vests\arc\MAJ_P1_camo2_co.paa)
+    };
+};
+
+class CLASS(Vest_ARC_Phase1Geo_Commander): CLASS(Vest_ARC) {
+    displayName = "[KC] SF ARC GEO 06 (Comander)";
+    hiddenSelectionsTextures[] = {
+        "",
+        QPATHTOF(data\vests\arc\CMDR_P1_camo2_co.paa)
     };
 };
 

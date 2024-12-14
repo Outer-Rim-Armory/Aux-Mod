@@ -384,6 +384,15 @@ class CLASS(Unit_Keeli_Emp): CLASS(Unit_Phase2_Base) {
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 };
+class CLASS(Unit_Keeli_Geo): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Keeli_Geo);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\KeeliGeo_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\KeeliGeo_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
 
 
 class CLASS(Unit_Rat): CLASS(Unit_Phase2_Base) {

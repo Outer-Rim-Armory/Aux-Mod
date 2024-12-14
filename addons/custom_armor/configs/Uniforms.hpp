@@ -95,6 +95,16 @@ class CLASS(Uniform_Keeli_Empire): CLASS(Uniform_Keeli) {
         camo = "Empire";
     };
 };
+class CLASS(Uniform_Keeli_Geo): CLASS(Uniform_Keeli) {
+    displayName = "[KC] Custom Armor ('Keeli') - Geo";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Keeli_Geo);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Geo";
+    };
+};
 
 
 UNIFORM_CUSTOM(Rat);

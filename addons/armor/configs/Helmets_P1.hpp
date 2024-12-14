@@ -282,8 +282,17 @@ class CLASS(Helmet_phase1Geo_Captain): CLASS(Helmet_Phase1_Base) {
     };
 };
 
+class CLASS(Helmet_phase1Geo_Major): CLASS(Helmet_Phase1_Base) {
+    displayName = "[KC] INF GEO Helm 05 (MAJ)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\geonosis\GeoMajor_camo1_co.paa),
+        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
+        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+    };
+};
+
 class CLASS(Helmet_phase1Geo_Commander): CLASS(Helmet_Phase1_Base) {
-    displayName = "[KC] INF GEO Helm 05 (CMD)";
+    displayName = "[KC] INF GEO Helm 06 (CMD)";
     hiddenSelectionsTextures[] = {
         "\SWLB_clones\data\SWLB_clone_P1Commander_helmet_co.paa",
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",

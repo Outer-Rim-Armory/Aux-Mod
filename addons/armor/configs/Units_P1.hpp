@@ -315,6 +315,15 @@ class CLASS(Unit_phase1Geo_Captain): CLASS(Unit_phase1Geo_NCO) {
     };
 };
 
+class CLASS(Unit_phase1Geo_Major): CLASS(Unit_phase1Geo_NCO) {
+    uniformClass = QCLASS(Uniform_phase1Geo_Makor);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\geonosis\GeoMajor_upper_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\camo2_co.paa",
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+};
+
 class CLASS(Unit_phase1Geo_Commander): CLASS(Unit_phase1Geo_NCO) {
     uniformClass = QCLASS(Uniform_phase1Geo_Commander);
     hiddenSelectionsTextures[] = {

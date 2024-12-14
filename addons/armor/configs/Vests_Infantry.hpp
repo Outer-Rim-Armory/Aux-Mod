@@ -356,9 +356,17 @@ class CLASS(Vest_Commander): CLASS(Vest_Officer) {
 };
 
 class CLASS(Vest_Commander_v2): CLASS(Vest_Commander) {
-    displayName = "[KC] INF Vest 18 (Commander, v2)";
+    displayName = "[KC] INF Vest 19 (Commander, v2)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa),
+        "\SWLB_clones\data\rank_co.paa"
+    };
+};
+
+class CLASS(Vest_Commander_Phase1Geo): CLASS(Vest_Commander) {
+    displayName = "[KC] INF Vest 20 (Commander, Geo)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\arc\CMDR_P1_camo2_co.paa),
         "\SWLB_clones\data\rank_co.paa"
     };
 };
