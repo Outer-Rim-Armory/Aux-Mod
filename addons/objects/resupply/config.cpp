@@ -15,6 +15,7 @@ class CfgPatches {
         units[] = {
             QCLASS(Resupply_Base),
             QCLASS(Resupply_SquadAmmo),
+            QCLASS(Resupply_SquadAmmo_Commando),
             QCLASS(Resupply_PlatoonAmmo),
             QCLASS(Resupply_SquadAmmo_Heavy),
             QCLASS(Resupply_PlatoonAmmo_Heavy),

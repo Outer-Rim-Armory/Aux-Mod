@@ -15,8 +15,10 @@ class CfgPatches {
         };
         units[] = {
             QCLASS(AAT_Base),
+            QCLASS(AAT_captured),
             QCLASS(AAT_Heavy_Base),
-            QCLASS(AAT_King_Base)
+            QCLASS(AAT_King_Base),
+            QCLASS(Captured_AAT_King)
         };
         weapons[] = {};
         VERSION_CONFIG;
