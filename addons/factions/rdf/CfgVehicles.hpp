@@ -112,6 +112,27 @@ class CfgVehicles {
         backpack = QCLASS(rdfBackpack_predef_autorifleman);
     };
 
+    class CLASS(rdfArmor_unit_heavygunner): CLASS(rdfArmor_unit_base) {
+        SCOPE_PUBLIC;
+        displayName = "Heavy Gunner";
+        icon = "iconManMG";
+        editorPreview = EDITOR_PREVIEW(rdfArmor_unit_autorifleman);
+
+        weapons[] = {QCLASS(Z6), QCLASS(DC17), "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(Z6), QCLASS(DC17), "Throw", "Put"};
+
+        magazines[] = {
+            ITEM_6(QCLASS(Mag_400rnd_Z6))
+        };
+        respawnMagazines[] = {
+            ITEM_6(QCLASS(Mag_400rnd_Z6))
+        };
+
+        linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
+        backpack = QCLASS(rdfBackpack_predef_heavygunner);
+    };
+
     class CLASS(rdfArmor_unit_marksman): CLASS(rdfArmor_unit_base) {
         SCOPE_PUBLIC;
         displayName = "Marksman";
@@ -290,6 +311,22 @@ class CfgVehicles {
     class CLASS(rdfBackpack_predef_autorifleman): CLASS(rdfBackpack_predef_rifleman) {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_240rnd_DC15L),15);
+        };
+    };
+
+    class CLASS(rdfBackpack_predef_heavygunner): CLASS(rdfBackpack_predef_rifleman) {
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_400rnd_Z6),15);
+            MAG_XX(CLASS(Grenade_EMP),5);
+            MAG_XX(CLASS(Grenade_Bacta),5);
+            MAG_XX(3AS_SmokeWhite,2);
+            MAG_XX(3AS_SmokeBlue,2);
+            MAG_XX(3AS_SmokeRed,2);
+            MAG_XX(3AS_SmokeYellow,2);
+            MAG_XX(3AS_SmokePurple,1);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(ShieldGrenadePersonal_Mag,1);
+            MAG_XX(ls_mag_classC_thermalDet,3);
         };
     };
 
