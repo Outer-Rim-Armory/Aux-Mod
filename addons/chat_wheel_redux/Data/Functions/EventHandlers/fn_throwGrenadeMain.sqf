@@ -27,10 +27,10 @@ if (_magazine isKindOf ["SmokeShell", configFile >> "CfgMagazines"]) then {
     _grenadeType = "Smoke";
 };
 
-if (toLowerANSI _magazine find "shield" isEqualTo -1) then {
+if (toLowerANSI _magazine find "shield" isNotEqualTo -1) then {
     _grenadeType = "Shield";
 
-    if (toLowerANSI _magazine find "squad" isEqualTo -1) then {
+    if (toLowerANSI _magazine find "squad" isNotEqualTo -1) then {
         _grenadeType = "SquadShield";
         _grenadeName = "Squad Shield";
     };
