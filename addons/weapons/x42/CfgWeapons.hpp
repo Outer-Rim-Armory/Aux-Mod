@@ -12,7 +12,7 @@ class CfgWeapons {
         WBK_BurnEm_FlamethrowerDistance = 40;
         WBK_BurnEm_RequiredBackpack = "";
         WBK_BurnEm_FlamethrowerParticlePos = "[[-0.32, 0.3, -0.3], 'leftHand']";
-        WBK_BurnEm_FlamethrowerSoundArray = "['flamethrower_start', 'flamethrower_looping', 'flamethrower_end']";
+        WBK_BurnEm_FlamethrowerSoundArray = "['flamethrower_start', 'flamethrower_looping', 4.8, 'flamethrower_end']";
 
         magazines[] = {QCLASS(Mag_150Rnd_X42)};
         magazineWell[] = {};
