@@ -29,7 +29,7 @@ _reviveChance = getNumber (configOf _unit >> QGVAR(reviveChance));
 
 if (_reviveUnit == "" or {_reviveChance <= 0}) exitWith {};
 
-if (random 1 >= _reviveChance) exitWith {};
+if !(random 1 <= _reviveChance) exitWith {};
 
 _reviveDelay = (random 15) max 5;
 INFO_2("Reviving unit %1 (%2)",_unit,typeOf _unit);

@@ -221,7 +221,7 @@ class CfgWeapons {
         WBK_BurnEm_FlamethrowerDistance = 40;
         WBK_BurnEm_RequiredBackpack = "";
         WBK_BurnEm_flamethrowerParticlePos = "[[0, 0, 0], 'righthand']";
-        WBK_BurnEm_FlamethrowerSoundArray = "['flamethrower_start', 'flamethrower_looping', 'flamethrower_end']";
+        WBK_BurnEm_FlamethrowerSoundArray = "['flamethrower_start', 'flamethrower_looping', 4.8, 'flamethrower_end']";
 
         modes[] = {"FullAuto", "close", "short", "medium"};
         muzzles[] = {"this"};
