@@ -56,7 +56,7 @@ class CfgVehicles {
             "BNA_KC_cloudlet_jetpackSmoke"
         };
         // Sound effect to play every 0.3 seconds
-        BNA_KC_jetpacks_effectSound = "\ORA\BNA_KC\addons\jetpacks,data\audio\Jetpack_Loop.wss";
+        BNA_KC_jetpacks_effectSound = "\ORA\BNA_KC\addons\jetpacks\data\audio\Jetpack_Loop.wss";
         BNA_KC_jetpacks_lightColor[] = {0, 0.1, 0.9};  // Light color in format [R, G, B]
 
         // Other
