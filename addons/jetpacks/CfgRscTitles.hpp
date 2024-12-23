@@ -1,4 +1,4 @@
+#include "\ORA\BNA_KC\addons\core\ui\BaseControls.hpp"
 class RscTitles {
-    #include "\ORA\BNA_KC\addons\core\ui\BaseControls.hpp"
     #include "ui\RscFuelDisplay.hpp"
 };

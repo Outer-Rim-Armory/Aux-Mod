@@ -26,8 +26,11 @@ if !(GVAR(easyEjection)) exitWith { false };
 
 if (_unit != ace_player or {
     !(_unit call FUNC(hasJetpack) or {
-        private _backpack = backpack _unit;
-        _backpack call JLTS_fnc_jumpIsJumppack;
+        // Prevent soft dependency on JLTS
+        missionNamespace getVariable ["JLTS_settings_jumppack_mainSwitch", false] && {
+            private _backpack = backpack _unit;
+            _backpack call JLTS_fnc_jumpIsJumppack;
+        }
     })
 }) exitWith { false };
 
