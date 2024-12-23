@@ -32,7 +32,7 @@ TRACE_2("fnc_slowHeal",_unit,_rate);
 if (
     isNull _unit or {
         !(_unit isKindOf "CAManBase") or
-        !(_unit getVariable [QGVAR(slowHealHandler), -1] isEqualTo -1)
+        (_unit getVariable [QGVAR(slowHealHandler), -1] isEqualTo -1)
     }
 ) exitWith {-1};
 

@@ -53,7 +53,7 @@ _function = {
     TRACE_1(FORMAT_2("Area Healer %1 (%2) |",_handle,typeOf _object),_currentPatients);
 
     // Remove out of range / full healed patients
-    if !(_currentPatients isEqualTo []) then {
+    if (_currentPatients isEqualTo []) then {
         for "_i" from 0 to (count _currentPatients - 1) do {
             _currentPatients#_i params ["_unit", "_handlerID"];
 
