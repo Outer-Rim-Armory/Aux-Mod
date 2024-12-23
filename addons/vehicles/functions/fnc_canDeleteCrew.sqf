@@ -25,4 +25,4 @@ _crew = [_vehicle, ["driver", "commander", "gunner", "turret"]] call ace_common_
 if (isNull _vehicle or {!(ace_player in _crew)}) exitWith {false};
 
 _crew = _crew select {!isPlayer _x};
-!(_crew isEqualTo []);
+(_crew isNotEqualTo []);
