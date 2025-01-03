@@ -103,16 +103,12 @@ class CLASS(Helmet_Phase1_KeeliCrimson_Worn): CLASS(Helmet_Phase1_Keeli_Worn) {
 class CLASS(Helmet_Phase1_Keeli_Geo): CLASS(Helmet_Phase1_Keeli) {
     displayName = "[KC] INF P1 Helm ('Keeli') - Geo";
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\phase1\camo\worn\Keeli_Yellow_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\Keeli_Yellow_camo1_co.paa),
         "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa"
     };
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Keeli_Geo);
     EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase1_KeeliCrimson_Geo);
-
-    class XtdGearInfo: XtdGearInfo {
-        camo = "Worn";
-    };
 };
 class CLASS(Helmet_Phase1_KeeliCrimson_Geo): CLASS(Helmet_Phase1_Keeli_Geo) {
     SCOPE_HIDDEN;
@@ -137,7 +133,7 @@ P1_HELMET_CUSTOM(Rev);
 P1_HELMET_CUSTOM(Rodger);
 P1_HELMET_CUSTOM(Sage);
 P1_HELMET_CUSTOM(Sin);
-P1_HELMET_CUSTOM(Splashdown);
+P1_HELMET_VISOR_CUSTOM(Splashdown,Kyber);
 P1_HELMET_CUSTOM(Swoop);
 P1_HELMET_CUSTOM(Talyn);
 P1_HELMET_VISOR_CUSTOM(Tyrant,Crimson);
