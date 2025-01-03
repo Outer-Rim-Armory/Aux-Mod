@@ -206,48 +206,48 @@ class CfgWeapons {
         muzzles[] = {"RocketLauncher"};
     };
 
-    // class CLASS(B2Blaster_flamer): CLASS(B2Blaster_base) {
-    //    SCOPE_PUBLIC;
+    class CLASS(B2Blaster_flamer): CLASS(B2Blaster_base) {
+        SCOPE_PUBLIC;
 
-    //    displayName = "[KC] Wrist Mounted Flamethrower";
-    //    descriptionShort = "Built in flamethrower";
-     //   baseWeapon = QCLASS(B2Blaster_flamer);
+        displayName = "[KC] Wrist Mounted Flamethrower";
+        descriptionShort = "Built in flamethrower";
+        baseWeapon = QCLASS(B2Blaster_flamer);
 
-    //    magazines[] = {QCLASS(Mag_150rnd_B2Blaster_flamer)};
+        magazines[] = {QCLASS(Mag_150rnd_B2Blaster_flamer)};
 
-    //    canShootInWater = FALSE;
+        canShootInWater = FALSE;
 
-    //    WBK_BurnEm_IsFlamethrower = "True";
-    //    WBK_BurnEm_FlamethrowerDistance = 40;
-    //    WBK_BurnEm_RequiredBackpack = "";
-    //    WBK_BurnEm_flamethrowerParticlePos = "[[0, 0, 0], 'righthand']";
-    //    WBK_BurnEm_FlamethrowerSoundArray = "['flamethrower_start', 'flamethrower_looping', 4.8, 'flamethrower_end']";
+        WBK_BurnEm_IsFlamethrower = "True";
+        WBK_BurnEm_FlamethrowerDistance = 40;
+        WBK_BurnEm_RequiredBackpack = "";
+        WBK_BurnEm_flamethrowerParticlePos = "[[0, 0, 0], 'righthand']";
+        WBK_BurnEm_FlamethrowerSoundArray = "['flamethrower_start', 'flamethrower_looping', 4.8, 'flamethrower_end']";
 
-    //    modes[] = {"FullAuto", "close", "short", "medium"};
-    //    muzzles[] = {"this"};
+        modes[] = {"FullAuto", "close", "short", "medium"};
+        muzzles[] = {"this"};
 
-    //    class close: close {
-    //        class StandardSound {
-    //            soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
-    //        };
-    //    };
+        class close: close {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
+            };
+        };
 
-    //    class short: short {
-    //        class StandardSound {
-    //            soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
-    //        };
-    //    };
+        class short: short {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
+            };
+        };
 
-    //    class medium: medium {
-    //        class StandardSound {
-    //            soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
-    //        };
-    //    };
+        class medium: medium {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
+            };
+        };
 
-    //    class FullAuto: FullAuto {
-    //        class StandardSound {
-    //            soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
-    //        };
-    //    };
-    //};
+        class FullAuto: FullAuto {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_flamethrowerStart)};
+            };
+        };
+    };
 };
