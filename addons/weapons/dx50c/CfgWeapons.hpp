@@ -26,6 +26,13 @@ class CfgWeapons {
 
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot: CowsSlot {
+                displayName = "Optics Slot";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "Bottom";
+                iconPosition[] = {0.5,0.35};
+                iconScale = 0.2;
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
                 class CompatibleItems {
                     ATTACHMENTS_OPTIC_SHORT;
                     ATTACHMENTS_OPTIC_MEDIUM;

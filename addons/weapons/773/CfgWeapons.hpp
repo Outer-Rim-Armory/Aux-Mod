@@ -37,8 +37,6 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot: CowsSlot {
                 class CompatibleItems {
-                    CLASS(Optic_DC15X) = TRUE;
-                    CLASS(Optic_LRPS) = TRUE;
                 };
             };
             class PointerSlot: PointerSlot {

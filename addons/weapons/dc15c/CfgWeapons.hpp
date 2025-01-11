@@ -30,7 +30,7 @@ class CfgWeapons {
 
         modes[] = {"FullAuto", "Single"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_40Rnd_DC15C), "Aux12thFleet_Mag_DC15C"};
+        magazines[] = {QCLASS(Mag_70Rnd_DC15C), "Aux12thFleet_Mag_DC15C"};
         magazineWell[] = {};
         reloadAction = "3AS_GestureReloadDC15S";
 
@@ -41,6 +41,7 @@ class CfgWeapons {
 
         maxZeroing = 1000;
         dispersion = 0.00029;
+        recoil = "recoil_SMG_03";
 
         // JLTS emp system
         JLTS_hasElectronics = TRUE;
@@ -59,13 +60,11 @@ class CfgWeapons {
                     ATTACHMENTS_POINTER_BASE;
                 };
             };
+            class UnderBarrelSlot;
         };
-
         class Single: Single {
-            dispersion = 0.00087;
-            reloadTime = 0.096;
+            reloadTime = 0.085;
 
-            sounds[] = {"StandardSound"};
             class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};
@@ -74,10 +73,8 @@ class CfgWeapons {
             };
         };
         class FullAuto: FullAuto {
-            dispersion = 0.00087;
-            reloadTime = 0.096;
+            reloadTime = 0.085;
 
-            sounds[] = {"StandardSound"};
             class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};

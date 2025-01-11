@@ -59,6 +59,7 @@ workshop = [
     "2757485942", # Scion Conflict Vehicle Extension
     "3321182393", # TK Trooper Standalone Mod
     "3328314886", # Heavy Weapon Framework
+    "2605563484", # Scion Conflict Extended Arsenal
 ]
 optionals = ["no_burn_screams"]
 

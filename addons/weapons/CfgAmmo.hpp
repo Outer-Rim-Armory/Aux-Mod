@@ -216,6 +216,34 @@ class CfgAmmo {
         ACE_caliber = 6.706;
         ACE_muzzleVelocities[] = {730,760,788,800,810,830};
     };
+    class CLASS(Bullet_PlasmaCarbine_Blue3): CLASS(Bullet_PlasmaBase) {
+        SCOPE_PUBLIC;
+
+        hit = 13;
+        caliber = 1;
+        typicalSpeed = 820;
+        dangerRadiusHit = 12;
+        dangerRadiusBulletClose = 8;
+        suppressionRadiusHit = 8;
+        suppressionRadiusBulletClose = 6;
+        cost = 1.2;
+
+        audibleFire = 40;
+        timeToLive = 4;
+        tracerEndTime = 10;
+        tracerScale = 0.8;
+        tracerStartTime = 0.05;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+
+        ACE_ballisticCoefficients[] = {0.263};
+        ACE_barrelLengths[] = {254,406.4,508,609.6,660.4,762};
+        ACE_bulletLength = 32.893;
+        ACE_bulletMass = 7.9704;
+        ACE_caliber = 6.706;
+        ACE_muzzleVelocities[] = {730,760,788,800,810,830};
+    };
     class CLASS(Bullet_PlasmaCarbine_Red): CLASS(Bullet_PlasmaCarbine_Blue) {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
@@ -296,7 +324,7 @@ class CfgAmmo {
 
         hit = 48;
         caliber = 2.4;
-        typicalSpeed = 2000;
+        typicalSpeed = 1750;
         dangerRadiusHit = -1;
         dangerRadiusBulletClose = 4;
         suppressionRadiusHit = 4;

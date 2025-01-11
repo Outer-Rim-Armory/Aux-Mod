@@ -1,14 +1,16 @@
 class CfgMagazines {
-    class CLASS(Mag_80Rnd_DC15S);
-    class CLASS(Mag_40Rnd_DC15C): CLASS(Mag_80Rnd_DC15S) {
+    class CLASS(Mag_Base);
+    class CLASS(Mag_70Rnd_DC15C): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
         displayName = "[KC] DC-15C Energy Cell";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 40<br/>Used In: DC-15C";
-        count = 40;
-        initSpeed = 417;
-    };
+        displayNameShort = "Standard Energy";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 70<br/>Used In: DC-15C";
 
-    class Aux12thFleet_Mag_DC15C: CLASS(Mag_40Rnd_DC15C) {
-        SCOPE_HIDDEN;
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 40<br/>Used In: DC-15C<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";
+        model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+        picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+
+        ammo = QCLASS(Bullet_PlasmaCarbine_Blue3);
+        count = 70;
+        mass = 10;
     };
 };

@@ -341,6 +341,13 @@ class CLASS(Unit_Keeli): CLASS(Unit_Phase2_Base) {
         "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
     };
 
+
+        weapons[] = {QCLASS(DC17M), "", "Throw", "Put"};
+        respawnWeapons[] = {QCLASS(DC17M), "", "Throw", "Put"};
+
+        magazines[] = {QCLASS(Mag_90Rnd_DC17M)};
+        respawnMagazines[] = {QCLASS(Mag_90Rnd_DC17M)};
+
     linkedItems[] = {
         QCLASS(Helmet_Phase2_Keeli), QCLASS(Vest_Commander_Keeli), QCLASS(cloneNvg_phase2_officerVisor_Keeli), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
@@ -499,6 +506,28 @@ class CLASS(Unit_Splashdown): CLASS(Unit_Phase2_Base) {
     };
     respawnLinkedItems[] = {
         QCLASS(Helmet_Engineer_Splashdown), QCLASS(Vest_Engineer), QCLASS(cloneNvg_engineerComms), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Swoop): CLASS(Unit_Phase2_Base) {
+    displayName = "Swoop";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    backpack = QCLASS(Backpack_ARC);
+    editorPreview = EDITOR_PREVIEW(Unit_Swoop);
+
+    uniformClass = QCLASS(Uniform_Swoop);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Swoop_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Swoop_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_ARC_Swoop), QCLASS(Vest_ARC), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_ARC_Swoop), QCLASS(Vest_ARC), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
