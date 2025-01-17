@@ -16,7 +16,7 @@ class CfgWeapons {
 
         displayName = "[KC] Valken-38l (Base)";
         descriptionShort = "Automatic Blaster Rifle";
-        picture = QPATHTOF(3AS_Weapons\Valken38X\data\ui\3as_valken.paa);
+        picture = "\3AS\3AS_Weapons\Valken38X\Data\UI\3as_valken.paa";
         baseWeapon = QCLASS(Valken38l_Base);
 
         modes[] = {"FullAuto"};

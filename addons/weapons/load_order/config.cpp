@@ -10,6 +10,7 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(773),
             QGVAR(accessories),
+            QGVAR(arkanian),
             QGVAR(b2Blaster),
             QGVAR(dc15a),
             QGVAR(dc15c),
