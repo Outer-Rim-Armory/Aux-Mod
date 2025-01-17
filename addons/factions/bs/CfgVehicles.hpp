@@ -7,7 +7,7 @@ class CfgVehicles {
 
         genericNames = QCLASS(Black_Sun_Soldier);
 
-        model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         hiddenSelections[] = {"camo", "insignia"};
         hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_undersuit\cu_black_co.paa"};
     };
