@@ -66,7 +66,7 @@ class CfgWeapons {
         };
     };
 
-class CLASS(EPF_Helmet_Pilot): CLASS(EPF_Helmet) {
+    class CLASS(EPF_Helmet_Pilot): CLASS(EPF_Helmet) {
         displayName = "[EPF] Pilot Helmet";
 
         model = "\sc_equipment\data\ronin\ro_helmet.p3d";
@@ -74,6 +74,17 @@ class CLASS(EPF_Helmet_Pilot): CLASS(EPF_Helmet) {
 
         class ItemInfo: ItemInfo {
             uniformModel = "\sc_equipment\data\ronin\ro_helmet.p3d";
+        };
+    };
+
+    class CLASS(EPF_Helmet_Guard): CLASS(EPF_Helmet) {
+        displayName = "[EPF] Guard Helmet";
+
+        model = "\sc_og_equipment_fixed\data\enforcer\en_helmet.p3d";
+        hiddenSelectionsTextures[] = {"SE_Equipment\Enforcer\Helmet\Enforcer_GRFlat_Helmet.paa"};
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\sc_og_equipment_fixed\data\enforcer\en_helmet.p3d";
         };
     };
 
@@ -204,6 +215,23 @@ class CLASS(EPF_Helmet_Pilot): CLASS(EPF_Helmet) {
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo", "camo1"};
             uniformModel = "\sc_equipment\data\samurai\sam_vest_light.p3d";
+        };
+    };
+
+    class CLASS(EPF_Vest_Guard): CLASS(EPF_Vest) {
+        displayName = "[EPF] Guard Vest";
+        descriptionShort = "Armor Level V";
+
+        model = "\sc_equipment\data\wasp\wp_vest_heavy.p3d";
+        hiddenSelections[] = {"camo", "camo1"};
+        hiddenSelectionsTextures[] = {
+            "SE_Equipment\Wasp\Armor\Wasp_GRFlat_Armor.paa"
+        };
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\sc_equipment\data\wasp\wp_vest_heavy.p3d";
+
+            SC_VEST_HITPOINTS_HEAVY;
         };
     };
 };

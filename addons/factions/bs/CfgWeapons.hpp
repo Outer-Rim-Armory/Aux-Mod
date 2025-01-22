@@ -3,41 +3,58 @@ class CfgWeapons {
     class CLASS(INDEP_Helmet_Base): ls_greenforHelmet_base {
         class ItemInfo;
     };
-    class CLASS(BS_Captain_Helmet): CLASS(INDEP_Helmet_Base) {
+    class CLASS(BS_Helmet): CLASS(INDEP_Helmet_Base) {
         SCOPE_PUBLIC;
 
+        displayName = "[BS] Rifleman Helmet";
+
+        model = "\sc_equipment\data\marine\mr_helmet.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\marine\textures\helmet_co.paa"};
+
+        class ItemInfo: ItemInfo {
+            uniformModel = "\sc_equipment\data\marine\mr_helmet.p3d";
+            picture = "\ScionPatch\pictures\SC_Helmet_SMR_Desert.paa";
+        };
+    };
+
+    class CLASS(BS_Helmet_SL): CLASS(BS_Helmet) {
         displayName = "[BS] Captain Helmet";
 
         model = "MDF\MDFHelmet.p3d";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"MDF\MDFHelmet\Black\Material.001_CO.paa"};
+        picture = "\MDF\MDF.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo"};
             uniformModel = "MDF\MDFHelmet.p3d";
         };
+
     };
 
-    class CLASS(BS_Helmet): CLASS(BS_Captain_Helmet) {
-        displayName = "[BS] Rifleman Helmet";
+    class CLASS(BS_Helmet_T2): CLASS(BS_Helmet) {
+        displayName = "[BS] Veteran Helmet";
 
-        model = "\sc_equipment\data\ranger\rn_helmet.p3d";
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\ranger\textures\helmet_co.paa"};
+        model = "\sc_equipment\data\marine\mr_helmet.p3d";
+        hiddenSelectionsTextures[] = {"\sc_equipment\data\marine\textures\helmet_co.paa"};
 
         class ItemInfo: ItemInfo {
             uniformModel = "\sc_equipment\data\ranger\rn_helmet.p3d";
         };
     };
 
-    class CLASS(BS_Helmet_Heavy): CLASS(BS_Captain_Helmet) {
-        displayName = "[BS] Heavy Helmet";
+    class CLASS(BS_Helmet_T3): CLASS(BS_Helmet) {
+        displayName = "[BS] Elite Helmet";
 
-        model = "\sc_equipment\data\wasp\wp_helmet.p3d";
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\wasp\textures\helmet_co.paa"};
+        model = "MDF\MDFHelmet.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"MDF\MDFHelmet\Black\Material.001_CO.paa"};
+
+        subItems[] = {QCLASS(cloneNvg_chip)};
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo"};
-            uniformModel = "\sc_equipment\data\wasp\wp_helmet.p3d";
+            uniformModel = "MDF\MDFHelmet.p3d";
         };
     };
 
@@ -49,6 +66,7 @@ class CfgWeapons {
         SCOPE_PUBLIC;
 
         displayName = "[BS] Uniform";
+        picture = "\ScionPatch\pictures\SC_Undersuit_Black.paa";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(BS_Unit_Base);

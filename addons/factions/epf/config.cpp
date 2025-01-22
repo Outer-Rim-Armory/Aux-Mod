@@ -8,7 +8,10 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "sc_equipment"
+            "sc_equipment",
+            "SC_EA",
+            "SC_MDF",
+            "ScionPatch",
         };
         units[] = {
             QCLASS(EPF_Unit_Base),

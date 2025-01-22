@@ -3,7 +3,6 @@ class CfgVehicles {
     class CLASS(GM_Unit_Base): CLASS(INDEP_Unit_Base) {
         SCOPE_HIDDEN;
         faction = QCLASS(Faction_GM);
-        editorSubcategory = QCLASS(EdSubCat_GM_INF_T1);
 
         genericNames = QCLASS(GM_Soldier);
         modelSides[] = {ALL_SIDES};
@@ -31,6 +30,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         displayName = "Rifleman";
+        editorSubcategory = QCLASS(EdSubCat_GM_INF_T1);
         editorPreview = EDITOR_PREVIEW(GM_Unit_Rifleman);
 
         weapons[] = {QCLASS(LW38_Green_Scoped), "", "Throw", "Put"};
