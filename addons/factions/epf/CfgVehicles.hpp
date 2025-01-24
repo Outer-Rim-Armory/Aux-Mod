@@ -203,8 +203,8 @@ class CfgVehicles {
         magazines[] = {QCLASS(Mag_100Rnd_E5)};
         respawnMagazines[] = {QCLASS(Mag_100Rnd_E5)};
 
-        linkedItems[] = {QCLASS(EPF_Helmet_Guard), QCLASS(EPF_Vest_Guard), QCLASS(cloneNvg_chip), "SC_MDFCape_Grey", LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(EPF_Helmet_Guard), QCLASS(EPF_Vest_Guard), QCLASS(cloneNvg_chip), "SC_MDFCape_Grey", LINKED_ITEMS_RADIO};
+        linkedItems[] = {QCLASS(EPF_Helmet_Guard), QCLASS(EPF_Vest_Guard), QCLASS(cloneNvg_chip), "SC_MDFCape_OD", LINKED_ITEMS_RADIO};
+        respawnLinkedItems[] = {QCLASS(EPF_Helmet_Guard), QCLASS(EPF_Vest_Guard), QCLASS(cloneNvg_chip), "SC_MDFCape_OD", LINKED_ITEMS_RADIO};
         backpack = QCLASS(EPF_Backpack_Predef_Guard);
     };
 
@@ -422,7 +422,7 @@ class CfgVehicles {
         mass = 35;
 
         model = "MDF\MDFBackpack.p3d";
-        hiddenSelectionsTextures[] = {"MDFEA_Equipment\Backpack\MDF_Pack_Grey.paa"};
+        hiddenSelectionsTextures[] = {"MDFEA_Equipment\Backpack\MDF_Pack_OD.paa"};
         picture = "\MDF\MDF.paa";
     };
     class CLASS(EPF_Backpack_Predef_Guard): CLASS(EPF_Backpack_Guard) {

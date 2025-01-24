@@ -80,11 +80,12 @@ class CfgWeapons {
     class CLASS(EPF_Helmet_Guard): CLASS(EPF_Helmet) {
         displayName = "[EPF] Guard Helmet";
 
-        model = "\sc_og_equipment_fixed\data\enforcer\en_helmet.p3d";
-        hiddenSelectionsTextures[] = {"SE_Equipment\Enforcer\Helmet\Enforcer_GRFlat_Helmet.paa"};
+        model = "MDF\MDFHelmet.p3d";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"MDFEA_Equipment\Helmet\MDF_Helm_OD.paa"};
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\sc_og_equipment_fixed\data\enforcer\en_helmet.p3d";
+            uniformModel = "MDF\MDFHelmet.p3d";
         };
     };
 
@@ -222,14 +223,16 @@ class CfgWeapons {
         displayName = "[EPF] Guard Vest";
         descriptionShort = "Armor Level V";
 
-        model = "\sc_equipment\data\wasp\wp_vest_heavy.p3d";
-        hiddenSelections[] = {"camo", "camo1"};
+        model = "MDF\MDFHeavy.p3d";
+        hiddenSelections[] = {"camo","camo1"};
         hiddenSelectionsTextures[] = {
-            "SE_Equipment\Wasp\Armor\Wasp_GRFlat_Armor.paa"
-        };
+            "MDFEA_Equipment\Vest\MDF_Torso_OD.paa",
+            "MDFEA_Equipment\Legs\MDF_Legs_OD.paa"
+            };
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\sc_equipment\data\wasp\wp_vest_heavy.p3d";
+            hiddenSelections[] = {"camo","camo1"};
+            uniformModel = "MDF\MDFHeavy.p3d";
 
             SC_VEST_HITPOINTS_HEAVY;
         };
