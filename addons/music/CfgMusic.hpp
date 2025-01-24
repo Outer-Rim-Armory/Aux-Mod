@@ -209,4 +209,5 @@ class CfgMusic {
     MUSIC(UNK_FatherG,"Father G",262,Other);
     MUSIC(UNK_Kraken_Theme_Short,"The Kraken Short",119,Other);
     MUSIC(UNK_Admiral_Goliath_Epic,"Admiral Goliath EPIC",388,Other);
+    MUSIC(Liberty_Anthem,"RDF Anthem",204,VideoGames);
     };
