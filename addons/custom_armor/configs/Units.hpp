@@ -401,6 +401,27 @@ class CLASS(Unit_Keeli_Geo): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Leon): CLASS(Unit_Phase2_Base) {
+    displayName = "Leon";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Leon);
+
+    uniformClass = QCLASS(Uniform_Leon);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Leon_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Leon_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Airborne_Leon), QCLASS(Vest_Airborne_CT), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Airborne_Leon), QCLASS(Vest_Airborne_CT), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 
 class CLASS(Unit_Rat): CLASS(Unit_Phase2_Base) {
     displayName = "Rat";

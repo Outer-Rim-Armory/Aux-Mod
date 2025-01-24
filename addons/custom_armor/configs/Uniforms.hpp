@@ -106,7 +106,7 @@ class CLASS(Uniform_Keeli_Geo): CLASS(Uniform_Keeli) {
     };
 };
 
-
+UNIFORM_CUSTOM(Leon);
 UNIFORM_CUSTOM(Rat);
 UNIFORM_CUSTOM(Rev);
 UNIFORM_CUSTOM(Sin);
