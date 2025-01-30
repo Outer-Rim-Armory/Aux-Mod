@@ -22,6 +22,8 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
+        ace_cargo_space = 4;
+
         armor = 600;
 
         soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\reek\Startup.wss), 0.79432821, 1};

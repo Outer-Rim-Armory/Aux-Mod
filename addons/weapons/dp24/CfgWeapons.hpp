@@ -25,7 +25,7 @@ class CfgWeapons {
 
         displayName = "[KC] DP-24 (Base)";
         model = "\OPTRE_Weapons\bulldog\bulldog.p3d";
-        handAnim[] = {"\OPTRE_Weapons\bulldog\data\anim\bulldog.rtm"};
+        handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\bulldog\data\anim\bulldog.rtm"};
         baseWeapon = QCLASS(DP24_Base);
 
         modes[] = {"Single", "FullAuto"};

@@ -37,6 +37,8 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
+        ace_cargo_space = 2;
+
         soundEngineOffExt[] = {QPATHTOF(sounds\data\audio\blitz\Shutdown.wss), 30, 1, 100};
         soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\blitz\Shutdown.wss), 1, 1};
         soundEngineOnExt[] = {QPATHTOF(sounds\data\audio\blitz\Startup.wss), 30, 1, 100};

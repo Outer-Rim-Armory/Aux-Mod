@@ -21,12 +21,12 @@ class CfgMagazines {
         ammo = QCLASS(Bullet_Plasma40mm_AT);
         count = 8;
     };
-    class CLASS(Mag_4Rnd_DP24_Flame): CLASS(Mag_40Rnd_DP24) {
-        displayName = "[KC] DP-24 Dragons Breath";
-        displayNameShort = "Napalm Fueled";
-        descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 4<br/>Used In: DP-24";
+    //class CLASS(Mag_4Rnd_DP24_Flame): CLASS(Mag_40Rnd_DP24) {
+    //    displayName = "[KC] DP-24 Dragons Breath";
+    //    displayNameShort = "Napalm Fueled";
+    //    descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 4<br/>Used In: DP-24";
 
-        ammo = QCLASS(Bullet_flamethrower);
-        count = 4;
-    };
+    //    ammo = QCLASS(Bullet_flamethrower);
+    //    count = 4;
+    //};
 };

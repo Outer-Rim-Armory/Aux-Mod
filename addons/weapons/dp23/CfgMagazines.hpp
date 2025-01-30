@@ -13,13 +13,13 @@ class CfgMagazines {
         count = 30;
         mass = 10;
     };
-    class CLASS(Mag_8Rnd_DP23_Flame): CLASS(Mag_30Rnd_DP23) {
-        displayName = "[KC] DP-23 Dragons Breath";
-        displayNameShort = "Standard Energy";
-        descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 8<br/>Used In: DP-23";
+    //class CLASS(Mag_8Rnd_DP23_Flame): CLASS(Mag_30Rnd_DP23) {
+    //    displayName = "[KC] DP-23 Dragons Breath";
+    //    displayNameShort = "Standard Energy";
+    //    descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 8<br/>Used In: DP-23";
 
-        ammo = QCLASS(Bullet_flamethrower);
-        count = 8;
-        mass = 20;
-    };
+    //    ammo = QCLASS(Bullet_flamethrower);
+    //    count = 8;
+    //    mass = 20;
+    //};
 };

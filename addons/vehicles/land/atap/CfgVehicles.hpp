@@ -16,6 +16,8 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
+        ace_cargo_space = 4;
+
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\atap\data\textures\KeeliCompany\Body_co.paa),
             QPATHTOF(land\atap\data\textures\KeeliCompany\Weapons_co.paa),

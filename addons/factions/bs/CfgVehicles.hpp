@@ -23,7 +23,7 @@ class CfgVehicles {
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         uniformClass = QCLASS(BS_Uniform);
         hiddenSelections[] = {"camo", "insignia"};
-        hiddenSelectionsTextures[] = {"\sc_equipment\data\combat_uniform\cu_black_co.paa"};
+        hiddenSelectionsTexBSres[] = {"\ls_armor_greenfor\uniform\mandalorian\undersuit\data\uniform_undersuit_co.paa"};
     };
 
     class CLASS(BS_Unit_Rifleman): CLASS(BS_Unit_Base) {
@@ -203,8 +203,8 @@ class CfgVehicles {
 
         model = "sc_equipment\data\watchdog\wd_backpack.p3d";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"sc_equipment\data\watchdog\textures\backpack_desert_co.paa"};
-        picture = "\ScionPatch\pictures\SC_Backpack_WD_Desert.paa";
+        hiddenSelectionsTexBSres[] = {"sc_equipment\data\watchdog\texBSres\backpack_desert_co.paa"};
+        picBSre = "\ScionPatch\picBSres\SC_Backpack_WD_Desert.paa";
     };
     class CLASS(BS_Backpack_Predef_Rifleman): CLASS(BS_Backpack) {
         SCOPE_HIDDEN;
@@ -241,8 +241,8 @@ class CfgVehicles {
         maximumLoad = 250;
         model = "sc_equipment\data\watchdog\wd_backpack.p3d";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"sc_equipment\data\watchdog\textures\backpack_desert_co.paa"};
-        picture = "\ScionPatch\pictures\SC_Backpack_WD_Desert.paa";
+        hiddenSelectionsTexBSres[] = {"sc_equipment\data\watchdog\texBSres\backpack_desert_co.paa"};
+        picBSre = "\ScionPatch\picBSres\SC_Backpack_WD_Desert.paa";
     };
     class CLASS(BS_Veteran_Backpack_Predef_Rifleman): CLASS(BS_Veteran_Backpack) {
         SCOPE_HIDDEN;
@@ -271,7 +271,7 @@ class CfgVehicles {
         maximumLoad = 350;
 
         model = "MDF\MDFBackpack.p3d";
-        hiddenSelectionsTextures[] = {"MDF\MDFBackpack\Black\DefaultMaterial_CO.paa"};
+        hiddenSelectionsTexBSres[] = {"MDF\MDFBackpack\Black\DefaultMaterial_CO.paa"};
     };
     class CLASS(BS_Elite_Backpack_Predef_Rifleman): CLASS(BS_Elite_Backpack) {
         SCOPE_HIDDEN;
@@ -305,8 +305,8 @@ class CfgVehicles {
         maximumLoad = 350;
 
         model = "sc_equipment\data\watchdog\wd_backpack.p3d";
-        hiddenSelectionsTextures[] = {"sc_equipment\data\watchdog\textures\backpack_desert_co.paa"};
-        picture = "sc_equipment\data\watchdog\wd_backpack.p3d";
+        hiddenSelectionsTexBSres[] = {"sc_equipment\data\watchdog\texBSres\backpack_desert_co.paa"};
+        picBSre = "sc_equipment\data\watchdog\wd_backpack.p3d";
     };
     class CLASS(BS_Backpack_Heavy_Predef_AT): CLASS(BS_Backpack_Heavy) {
         SCOPE_HIDDEN;
@@ -334,8 +334,8 @@ class CfgVehicles {
         maximumLoad = 450;
 
         model = "sc_equipment\data\watchdog\wd_backpack.p3d";
-        hiddenSelectionsTextures[] = {"sc_equipment\data\watchdog\textures\backpack_desert_co.paa"};
-        picture = "sc_equipment\data\watchdog\wd_backpack.p3d";
+        hiddenSelectionsTexBSres[] = {"sc_equipment\data\watchdog\texBSres\backpack_desert_co.paa"};
+        picBSre = "sc_equipment\data\watchdog\wd_backpack.p3d";
     };
     class CLASS(BS_Veteran_Backpack_Heavy_Predef_AT): CLASS(BS_Veteran_Backpack_Heavy) {
         SCOPE_HIDDEN;
@@ -355,7 +355,7 @@ class CfgVehicles {
         maximumLoad = 550;
 
         model = "MDF\MDFBackpack.p3d";
-        hiddenSelectionsTextures[] = {"MDF\MDFBackpack\Black\DefaultMaterial_CO.paa"};
+        hiddenSelectionsTexBSres[] = {"MDF\MDFBackpack\Black\DefaultMaterial_CO.paa"};
     };
     class CLASS(BS_Elite_Backpack_Heavy_Predef_AT): CLASS(BS_Elite_Backpack_Heavy) {
         SCOPE_HIDDEN;
@@ -388,7 +388,7 @@ class CfgVehicles {
         displayName = "[BS] Radio Backpack";
 
         model = "MDF\MDFBackpack.p3d";
-        hiddenSelectionsTextures[] = {"MDF\MDFBackpack\Black\DefaultMaterial_CO.paa"};
+        hiddenSelectionsTexBSres[] = {"MDF\MDFBackpack\Black\DefaultMaterial_CO.paa"};
 
         tf_hasLRradio = TRUE;
         tf_range = 25000;
@@ -435,5 +435,172 @@ class CfgVehicles {
             MAG_XX(ShieldGrenade_Mag,4);
             MAG_XX(OPTRE_FC_PlasmaGrenade,8);
         };
+    };
+
+    class CLASS(AAT_Base);
+    class CLASS(AAT_BS): CLASS(AAT_Base) {
+        SCOPE_PUBLIC;
+
+        faction = QFACTION(BS);
+        side = INDEP;
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+
+        hiddenSelectionsTexBSres[] = {"\3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\aat,AAT_Tan);
+    };
+
+    class CLASS(AAT_Heavy_Base);
+    class CLASS(AAT_Heavy_BS): CLASS(AAT_Heavy_Base) {
+        SCOPE_PUBLIC;
+
+        faction = QFACTION(BS);
+        side = INDEP;
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+    };
+
+    class CLASS(AAT_King_Base);
+    class CLASS(AAT_King_BS): CLASS(AAT_King_Base) {
+        SCOPE_PUBLIC;
+
+        faction = QFACTION(BS);
+        side = INDEP;
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+    };
+
+    class BNA_KC_Plesioth_Base;
+    class BNA_KC_Plesioth_BS: BNA_KC_Plesioth_Base {
+        SCOPE_PUBLIC;
+
+        side = INDEP;
+        faction = QFACTION(BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\plesioth,Plesioth_Tan);
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+    };
+
+    class CLASS(Conga_IFV_Base);
+    class CLASS(Conga_IFV_BS): CLASS(Conga_IFV_Base) {
+        SCOPE_PUBLIC;
+
+        side = INDEP;
+        faction = QFACTION(BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\conga,Conga_IFV_Tan);
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+    };
+
+    class CLASS(Conga_MGS_Base);
+    class CLASS(Conga_MGS_BS): CLASS(Conga_MGS_Base) {
+        SCOPE_PUBLIC;
+
+        side = INDEP;
+        faction = QFACTION(BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\conga,Conga_MGS_Tan);
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+    };
+
+    class CLASS(ScoutTank_Base);
+    class CLASS(ScoutTank_BS): CLASS(ScoutTank_Base) {
+        SCOPE_PUBLIC;
+
+        side = INDEP;
+        faction = QFACTION(BS);
+
+        displayName = "Fango";
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+    };
+
+    class CLASS(Ogre_Base);
+    class CLASS(Ogre_BS): CLASS(Ogre_Base) {
+        SCOPE_PUBLIC;
+
+        side = INDEP;
+        faction = QFACTION(BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\ogre,Ogre_Tan);
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+    };
+
+    class CLASS(Ogre_Armed_Base);
+    class CLASS(Ogre_Armed_BS): CLASS(Ogre_Armed_Base) {
+        SCOPE_PUBLIC;
+
+        side = INDEP;
+        faction = QFACTION(BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\ogre,Ogre_Armed_Tan);
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+
+    };
+
+    class CLASS(Vespoid_Base);
+    class CLASS(Vespoid_BS): CLASS(Vespoid_Base) {
+        SCOPE_PUBLIC;
+
+        side = INDEP;
+        faction = QFACTION(BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Tan);
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+        hiddenSelectionsTexBSres[] = {
+            QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Main_co.paa),
+            QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Attachments_co.paa),
+            QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Interior_co.paa),
+            "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+            "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+            QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
+        };
+        texBSreList[] = {"TechnoUnion", 0, "EPF", 0, "RDF", 0, "BS", 1};
+    };
+
+    class CLASS(Vespoid_Armed_Base);
+    class CLASS(Vespoid_Armed_BS): CLASS(Vespoid_Armed_Base) {
+        SCOPE_PUBLIC;
+
+        side = INDEP;
+        faction = QFACTION(BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_Tan);
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+    };
+
+    class CLASS(Rathian_CAP_Base);
+    class CLASS(Rathian_CAP_BS): CLASS(Rathian_CAP_Base) {
+        SCOPE_PUBLIC;
+
+        side = INDEP;
+        faction = QFACTION(BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Tan);
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+    };
+
+    class CLASS(Rathian_CAS_Base);
+    class CLASS(Rathian_CAS_BS): CLASS(Rathian_CAS_Base) {
+        SCOPE_HIDDEN;
+
+        side = INDEP;
+        faction = QFACTION(BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Tan);
+
+        crew = QCLASS(BS_Unit_Rifleman);
+        typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
     };
 };

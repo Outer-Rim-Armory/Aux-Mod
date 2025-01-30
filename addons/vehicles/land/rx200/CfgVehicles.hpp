@@ -21,6 +21,8 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
+        ace_cargo_space = 3;
+
         hiddenSelectionsTextures[] = {QPATHTOF(land\rx200\data\textures\Body_KC_co.paa)};
 
         textureList[] = {

@@ -101,8 +101,8 @@ class CfgMagazines {
         count = 10;
 
         weaponPoolAvailable = TRUE;
+        ammo = "SWLW_ammo_40mm_blue";
 
-        ammo = QCLASS(Grenade_HE);
     };
     class CLASS(Mag_UGL_3Rnd_FlareBlue): CLASS(Mag_UGL_FlareBlue) {
         displayName = "[KC] 3Rnd Flare Round (Blue)";

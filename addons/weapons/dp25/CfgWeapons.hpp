@@ -21,6 +21,7 @@ class CfgWeapons {
 
         displayName = "[KC] DP-25 (Base)";
         baseWeapon = QCLASS(DP25_Base);
+        handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\Shotgun\data\anim\optre_shotgun_idle.rtm"};
 
         modes[] = {"Single"};
         muzzles[] = {"this"};

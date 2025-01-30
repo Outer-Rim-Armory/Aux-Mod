@@ -56,6 +56,8 @@ class CfgVehicles {
 
         displayName = "Gammoth Transport";
         editorPreview = EEDITOR_PREVIEW(vehicles\land\gammoth,Gammoth_Transport);
+
+        INVENTORY_VEHICLE_GAMTRANS(2);
     };
 
     class CLASS(Gammoth_Covered): CLASS(Gammoth_base) {
@@ -95,6 +97,8 @@ class CfgVehicles {
                 };
             };
         };
+
+        INVENTORY_VEHICLE_GAMTRANS(2);
     };
 
     class CLASS(Gammoth_Ammo): CLASS(Gammoth_base) {
@@ -145,6 +149,8 @@ class CfgVehicles {
                 };
             };
         };
+
+        INVENTORY_VEHICLE_GAMAMMO(2);
     };
 
     class CLASS(Gammoth_Medical): CLASS(Gammoth_base) {
@@ -191,6 +197,8 @@ class CfgVehicles {
                 };
             };
         };
+
+        INVENTORY_VEHICLE_GAMMED(2);
     };
 
     class CLASS(Gammoth_Repair): CLASS(Gammoth_base) {
@@ -285,6 +293,8 @@ class CfgVehicles {
                 };
             };
         };
+
+        INVENTORY_VEHICLE_GAMFUEL(2);
     };
 
     class CLASS(Gammoth_Device): CLASS(Gammoth_base) {

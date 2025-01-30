@@ -116,6 +116,143 @@ class TransportItems { \
 }; \
 class TransportBackpacks {}
 
+#define INVENTORY_VEHICLE_HYDRA(CREW_COUNT) class TransportWeapons { \
+    WEAP_XX(CLASS(DC15S),__EVAL(2 * CREW_COUNT)); \
+    WEAP_XX(CLASS(DC15A),4); \
+    WEAP_XX(CLASS(DC15A_UGL),2); \
+}; \
+class TransportMagazines { \
+    MAG_XX(CLASS(Mag_80Rnd_DC15S),__EVAL(20 * CREW_COUNT)); \
+    MAG_XX(Mag_60Rnd_DC15A,40); \
+    MAG_XX(BNA_KC_Mag_StunLong,5); \
+    MAG_XX(BNA_KC_Mag_StunShort,5); \
+    MAG_XX(3AS_SmokePurple,2); \
+    MAG_XX(3AS_SmokeBlue,2); \
+    MAG_XX(3AS_SmokeGreen,2); \
+    MAG_XX(3AS_SmokeRed,2); \
+    MAG_XX(3AS_SmokeYellow,2); \
+    MAG_XX(3AS_SmokeWhite,5); \
+    MAG_XX(ls_mag_classC_thermalDet,5); \
+    MAG_XX(CLASS(Grenade_EMP),5); \
+}; \
+class TransportItems { \
+    ITEM_XX(ACE_packingBandage,__EVAL(10 * CREW_COUNT)); \
+    ITEM_XX(ACE_elasticBandage,__EVAL(30 * CREW_COUNT)); \
+    ITEM_XX(ACE_quikclot,__EVAL(15 * CREW_COUNT)); \
+    ITEM_XX(ACE_tourniquet,__EVAL(4 * CREW_COUNT)); \
+    ITEM_XX(ACE_splint,__EVAL(2 * CREW_COUNT)); \
+    ITEM_XX(EGVAR(medical,Painkiller),__EVAL(3 * CREW_COUNT)); \
+    ITEM_XX(ACE_epinephrine,__EVAL(2 * CREW_COUNT)); \
+    ITEM_XX(ToolKit,1); \
+    ITEM_XX(ACE_CableTie,15); \
+}; \
+class TransportBackpacks {}
+
+#define INVENTORY_VEHICLE_GLAVTRANS(CREW_COUNT) class TransportWeapons { \
+    WEAP_XX(CLASS(DC15A),__EVAL(1 * CREW_COUNT)); \
+    WEAP_XX(CLASS(DC15A_UGL),__EVAL(1 * CREW_COUNT)); \
+}; \
+class TransportMagazines { \
+    MAG_XX(CLASS(Mag_60Rnd_DC15A),__EVAL(20 * CREW_COUNT)); \
+    MAG_XX(BNA_KC_Mag_StunLong,5); \
+    MAG_XX(BNA_KC_Mag_StunShort,5); \
+    MAG_XX(3AS_SmokePurple,2); \
+    MAG_XX(3AS_SmokeBlue,2); \
+    MAG_XX(3AS_SmokeGreen,2); \
+    MAG_XX(3AS_SmokeRed,2); \
+    MAG_XX(3AS_SmokeYellow,2); \
+    MAG_XX(3AS_SmokeWhite,5); \
+    MAG_XX(CLASS(Grenade_EMP),5); \
+}; \
+class TransportItems { \
+    ITEM_XX(ACE_elasticBandage,__EVAL(30 * CREW_COUNT)); \
+    ITEM_XX(ACE_tourniquet,__EVAL(4 * CREW_COUNT)); \
+    ITEM_XX(ToolKit,1); \
+}; \
+class TransportBackpacks {}
+
+#define INVENTORY_VEHICLE_GLAVMED(CREW_COUNT) class TransportMagazines { \
+    MAG_XX(3AS_SmokePurple,4); \
+    MAG_XX(CLASS(Grenade_Bacta),2); \
+}; \
+class TransportItems { \
+    ITEM_XX(ACE_packingBandage,__EVAL(20 * CREW_COUNT)); \
+    ITEM_XX(ACE_elasticBandage,__EVAL(30 * CREW_COUNT)); \
+    ITEM_XX(ACE_tourniquet,__EVAL(8 * CREW_COUNT)); \
+    ITEM_XX(ACE_splint,__EVAL(8 * CREW_COUNT)); \
+    ITEM_XX(EGVAR(medical,Painkiller),__EVAL(5 * CREW_COUNT)); \
+    ITEM_XX(ACE_epinephrine,__EVAL(5 * CREW_COUNT)); \
+    ITEM_XX(ACE_morphine,__EVAL(5 * CREW_COUNT)); \
+    ITEM_XX(ACE_salineIV,2); \
+    ITEM_XX(ACE_salineIV_500,3); \
+    ITEM_XX(ACE_salineIV_250,4); \
+}; \
+class TransportBackpacks {}
+
+#define INVENTORY_VEHICLE_GAMAMMO(CREW_COUNT) class TransportWeapons { \
+    WEAP_XX(CLASS(DC15S),__EVAL(1 * CREW_COUNT)); \
+}; \
+class TransportMagazines { \
+    MAG_XX(CLASS(Mag_80Rnd_DC15S),__EVAL(10 * CREW_COUNT)); \
+}; \
+class TransportItems { \
+    ITEM_XX(ACE_elasticBandage,__EVAL(20 * CREW_COUNT)); \
+    ITEM_XX(ACE_tourniquet,__EVAL(4 * CREW_COUNT)); \
+    ITEM_XX(EGVAR(medical,Painkiller),__EVAL(4 * CREW_COUNT)); \
+    ITEM_XX(ToolKit,1); \
+}; \
+class TransportBackpacks {}
+
+#define INVENTORY_VEHICLE_GAMFUEL(CREW_COUNT) class TransportWeapons { \
+    WEAP_XX(CLASS(DC15S),__EVAL(1 * CREW_COUNT)); \
+}; \
+class TransportMagazines { \
+    MAG_XX(CLASS(Mag_80Rnd_DC15S),__EVAL(10 * CREW_COUNT)); \
+}; \
+class TransportItems { \
+    ITEM_XX(ACE_elasticBandage,__EVAL(20 * CREW_COUNT)); \
+    ITEM_XX(ACE_tourniquet,__EVAL(4 * CREW_COUNT)); \
+    ITEM_XX(EGVAR(medical,Painkiller),__EVAL(4 * CREW_COUNT)); \
+    ITEM_XX(ToolKit,1); \
+}; \
+class TransportBackpacks {}
+
+#define INVENTORY_VEHICLE_GAMMED(CREW_COUNT) class TransportMagazines { \
+    MAG_XX(3AS_SmokePurple,5); \
+    MAG_XX(CLASS(Grenade_Bacta),5); \
+}; \
+class TransportItems { \
+    ITEM_XX(ACE_packingBandage,__EVAL(25 * CREW_COUNT)); \
+    ITEM_XX(ACE_elasticBandage,__EVAL(35 * CREW_COUNT)); \
+    ITEM_XX(ACE_quikclot,__EVAL(15 * CREW_COUNT)); \
+    ITEM_XX(ACE_tourniquet,__EVAL(4 * CREW_COUNT)); \
+    ITEM_XX(ACE_splint,__EVAL(2 * CREW_COUNT)); \
+    ITEM_XX(EGVAR(medical,Painkiller),__EVAL(6 * CREW_COUNT)); \
+    ITEM_XX(ACE_epinephrine,__EVAL(6 * CREW_COUNT)); \
+    ITEM_XX(ACE_morphine,__EVAL(6 * CREW_COUNT)); \
+    ITEM_XX(ACE_salineIV,3); \
+    ITEM_XX(ACE_salineIV_500,4); \
+    ITEM_XX(ACE_salineIV_250,5); \
+}; \
+class TransportBackpacks {}
+
+#define INVENTORY_VEHICLE_GAMTRANS(CREW_COUNT) class TransportWeapons { \
+    WEAP_XX(CLASS(DC15S),__EVAL(2 * CREW_COUNT)); \
+    WEAP_XX(CLASS(DC15A),5); \
+    WEAP_XX(CLASS(DC15A_UGL),2); \
+}; \
+class TransportMagazines { \
+    MAG_XX(CLASS(Mag_80Rnd_DC15S),__EVAL(20 * CREW_COUNT)); \
+    MAG_XX(Mag_60Rnd_DC15A,50); \
+    MAG_XX(CLASS(Grenade_EMP),5); \
+}; \
+class TransportItems { \
+    ITEM_XX(ACE_elasticBandage,__EVAL(20 * CREW_COUNT)); \
+    ITEM_XX(ACE_tourniquet,__EVAL(4 * CREW_COUNT)); \
+    ITEM_XX(ToolKit,1); \
+}; \
+class TransportBackpacks {}
+
 #define INVENTORY_VEHICLE_COMMON class TransportWeapons {}; \
 class TransportMagazines { \
     MAG_XX(CLASS(Mag_60Rnd_DC15A),5); \

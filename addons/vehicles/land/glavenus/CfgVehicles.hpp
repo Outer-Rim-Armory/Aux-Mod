@@ -54,7 +54,7 @@ class CfgVehicles {
             };
         };
 
-        INVENTORY_VEHICLE_COMMON;
+        INVENTORY_VEHICLE_GLAVTRANS;
     };
 
     class CLASS(Glavenus_Medic): CLASS(Glavenus_Unarmed) {
@@ -72,7 +72,7 @@ class CfgVehicles {
         textureList[] = {};
         class TextureSources {};
 
-        INVENTORY_VEHICLE_MEDICAL;
+        INVENTORY_VEHICLE_GLAVMED;
     };
 
     class Car;
@@ -141,7 +141,7 @@ class CfgVehicles {
             };
         };
 
-        INVENTORY_VEHICLE_COMMON;
+        INVENTORY_VEHICLE_GLAVTRANS;
 
         class AnimationSources: AnimationSources {
             class muzzle_hide {
@@ -221,6 +221,6 @@ class CfgVehicles {
             };
         };
 
-        INVENTORY_VEHICLE_COMMON;
+        INVENTORY_VEHICLE_GLAVTRANS;
     };
 };

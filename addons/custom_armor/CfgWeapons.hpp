@@ -206,6 +206,15 @@ class CfgWeapons {
 
         GVAR(isCustom) = TRUE;
     };
+    class CLASS(cloneVest_arc_Hagrid): CLASS(Vest_ARC) {
+        displayName = "[KC] SF ARC Vest ('Hagrid')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\hagrid\camo1_co.paa),
+            QPATHTOF(data\vests\hagrid\camo2_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
     class CLASS(cloneNvg_phase2_officerVisor);
     class CLASS(cloneNvg_phase2_officerVisor_Keeli): CLASS(cloneNvg_phase2_officerVisor) {
         displayName = "[KC] Clone P2 NV/TI Officer Visor ('Keeli')";

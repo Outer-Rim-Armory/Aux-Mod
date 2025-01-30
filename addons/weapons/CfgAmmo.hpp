@@ -791,28 +791,27 @@ class CfgAmmo {
         aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
         allowAgainstInfantry = TRUE;
 
-        hit = 100;
-        indirectHit = 14;
+        hit = 80 ;
+        indirectHit = 12;
         indirectHitRange = 4;
-        caliber = 2;
-        ACE_caliber = 0; // ! Must be 0 to not immediately lose your hearing
-        cost = 500;
+        caliber = 1.6;
+        ACE_caliber = 7.823; // ! Must be 0 to not immediately lose your hearing
+        cost = 2000;
         coefGravity = 0.01;
-        explosive = 0.2;
+        explosive = 1.8;
         maneuvrability = 4;
-        airFriction = 0;
-        cmImmunity = 0.2;
+        airFriction = -0.00078;
+        cmImmunity = 1;
         timeToLive = 4;
         typicalSpeed = 1050;
         maxSpeed = 1050;
-        airLock = 0;
+        airLock = 1;
         proximityExplosionDistance = 5;
 
-        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
-        effectfly = "JLTS_plasma_blue";
-        effectsMissile = "JLTS_plasma_blue";
+        model = "ls_weapons_core\Effects\laser_blue.p3d";
+        effectfly = "SWLW_plasma_blue";
         ExplosionEffects = "25mm_Explode";
-        craterEffects = "M136_Smoke";
+        craterEffects = "SWLW_plasma_he_impact";
 
         soundSetExplosion[] = {};
         audibleFire = 80;
@@ -825,8 +824,8 @@ class CfgAmmo {
         initTime = 0;
         irLock = 0;
         maxControlRange = 600;
-        thrust = 500;
-        thrustTime = 3.4;
+        thrust = 210;
+        thrustTime = 1.5;
 
         missileKeepLockedCone = 300;
         missileLockCone = 5;
@@ -876,28 +875,27 @@ class CfgAmmo {
         aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
         allowAgainstInfantry = TRUE;
 
-        hit = 100;
-        indirectHit = 14;
+        hit = 80 ;
+        indirectHit = 12;
         indirectHitRange = 4;
-        caliber = 2;
-        ACE_caliber = 0; // ! Must be 0 to not immediately lose your hearing
-        cost = 500;
+        caliber = 1.6;
+        ACE_caliber = 7.823; // ! Must be 0 to not immediately lose your hearing
+        cost = 2000;
         coefGravity = 0.01;
-        explosive = 0.2;
+        explosive = 1.8;
         maneuvrability = 4;
-        airFriction = 0;
-        cmImmunity = 0.2;
+        airFriction = -0.00078;
+        cmImmunity = 1;
         timeToLive = 4;
-        typicalSpeed = 750;
-        maxSpeed = 750;
-        airLock = 0;
+        typicalSpeed = 1050;
+        maxSpeed = 1050;
+        airLock = 1;
         proximityExplosionDistance = 5;
 
-        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
-        effectfly = "JLTS_plasma_red";
-        effectsMissile = "JLTS_plasma_red";
+        model = "ls_weapons_core\Effects\laser_red.p3d";
+        effectfly = "SWLW_plasma_red";
         ExplosionEffects = "25mm_Explode";
-        craterEffects = "M136_Smoke";
+        craterEffects = "SWLW_plasma_he_impact";
 
         soundSetExplosion[] = {};
         audibleFire = 80;
@@ -910,8 +908,9 @@ class CfgAmmo {
         initTime = 0;
         irLock = 0;
         maxControlRange = 600;
-        thrust = 500;
-        thrustTime = 3.4;
+        thrust = 210;
+        thrustTime = 1.5;
+
 
         missileKeepLockedCone = 300;
         missileLockCone = 5;

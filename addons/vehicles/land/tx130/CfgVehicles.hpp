@@ -27,6 +27,8 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
+        ace_cargo_space = 3;
+
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
             QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_co.paa)
@@ -97,6 +99,8 @@ class CfgVehicles {
         displayName = "TX-130 Saber Recon Tank";
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+
+        ace_cargo_space = 3;
 
         hiddenSelectionsTextures[] = {
             "\3AS\3AS_Saber\data\Saber_hull_co.paa",
@@ -180,6 +184,8 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
 
+        ace_cargo_space = 3;
+
         hiddenSelectionsTextures[] = {
             "\3AS\3AS_Saber\data\Saber_hull_co.paa",
             "\3AS\3AS_Saber\data\Saber_weaponsgmg_co.paa"
@@ -250,6 +256,8 @@ class CfgVehicles {
         displayName = "TX-130 Super Saber Tank";
         crew = QCLASS(Unit_Phase2_Tanker_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+
+        ace_cargo_space = 3;
 
         hiddenSelectionsTextures[] = {
             "\3AS\3AS_Saber\data\saber_hull_co.paa",
