@@ -39,7 +39,7 @@ class CfgVehicles {
             // Primary Ammo
             MAG_XX(CLASS(Mag_60Rnd_DC15A),10);
             MAG_XX(CLASS(Mag_80Rnd_DC15S),10);
-            MAG_XX(CLASS(Mag_40Rnd_DC15C),10);
+            MAG_XX(CLASS(Mag_70Rnd_DC15C),10);
             MAG_XX(CLASS(Mag_15Rnd_DC15X),10);
             MAG_XX(CLASS(Mag_240Rnd_DC15L),10);
             MAG_XX(CLASS(Mag_30Rnd_DP23),10);
@@ -103,7 +103,7 @@ class CfgVehicles {
             // Primary Ammo
             MAG_XX(CLASS(Mag_60Rnd_DC15A),160);
             MAG_XX(CLASS(Mag_80Rnd_DC15S),160);
-            MAG_XX(CLASS(Mag_40Rnd_DC15C),160);
+            MAG_XX(CLASS(Mag_70Rnd_DC15C),160);
             MAG_XX(CLASS(Mag_15Rnd_DC15X),160);
             MAG_XX(CLASS(Mag_240Rnd_DC15L),160);
             MAG_XX(CLASS(Mag_30Rnd_DP23),160);
