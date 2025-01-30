@@ -72,6 +72,19 @@ class CfgVehicles {
                     "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\mine_roller_co.paa"
                 };
             };
+            class RDF: TechnoUnion {
+                displayName = "Ryloth Defence Force";
+                factions[] = {QFACTION(RDF)};
+                textures[] = {
+                    "OPTRE_Vehicles_Tracked\Scorpion\data\texture\camo\Scorp_base_black_co.paa",
+                    "OPTRE_Vehicles_Tracked\Scorpion\data\texture\camo\Scorp_tur_black_co.paa",
+                    "OPTRE_Vehicles_Tracked\Scorpion\data\texture\camo\det_3_black_co.paa",
+                    "OPTRE_Vehicles_Tracked\Scorpion\data\texture\scorp_decals_ca.paa",
+                    "OPTRE_Vehicles_Tracked\Scorpion\data\texture\Scorp_net_wood_ca.paa",
+                    "OPTRE_Vehicles_Tracked\Scorpion\data\texture\Scorp_net_wood_ca.paa",
+                    "OPTRE_Vehicles_Tracked\Scorpion\data\texture\camo\mine_roller_black_co.paa"
+                };
+            };
         };
 
         class ACE_SelfActions: ACE_SelfActions {
