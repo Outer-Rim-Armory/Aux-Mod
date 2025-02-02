@@ -509,7 +509,7 @@ class CfgVehicles {
 
         side = OPFOR;
         faction = QFACTION(TU);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_Tan);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_TU);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -522,7 +522,7 @@ class CfgVehicles {
             "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
             QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
         };
-        textureList[] = {"TechnoUnion", 1, "EPF", 0, "RDF", 0, "BS", 0};
+        textureList[] = {"TechnoUnion", 1, "EPF", 0, "BS", 0};
     };
 
     class CLASS(Vespoid_Armed_Base);
@@ -531,7 +531,7 @@ class CfgVehicles {
 
         side = OPFOR;
         faction = QFACTION(TU);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Tan);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_TU);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -544,7 +544,7 @@ class CfgVehicles {
             "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
             QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
         };
-        textureList[] = {"TechnoUnion", 1, "EPF", 0, "RDF", 0, "BS", 0};
+        textureList[] = {"TechnoUnion", 1, "EPF", 0, "BS", 0};
     };
 
     class CLASS(Rathian_CAP_Base);

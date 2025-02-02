@@ -729,7 +729,7 @@ class CfgVehicles {
 
         side = OPFOR;
         faction = QFACTION(EPF);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Green);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_EPF);
 
         crew = QCLASS(EPF_Unit_Rifleman);
         typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
@@ -751,7 +751,7 @@ class CfgVehicles {
 
         side = OPFOR;
         faction = QFACTION(EPF);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_Green);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_EPF);
 
         crew = QCLASS(EPF_Unit_Rifleman);
         typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};

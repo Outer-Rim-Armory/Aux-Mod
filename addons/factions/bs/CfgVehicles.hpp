@@ -553,7 +553,7 @@ class CfgVehicles {
 
         side = INDEP;
         faction = QFACTION(BS);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Tan);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_BS);
 
         crew = QCLASS(BS_Unit_Rifleman);
         typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
@@ -574,10 +574,19 @@ class CfgVehicles {
 
         side = INDEP;
         faction = QFACTION(BS);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_Tan);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_BS);
 
         crew = QCLASS(BS_Unit_Rifleman);
         typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+        hiddenSelectionsTextures[] = {
+            QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Main_co.paa),
+            QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Attachments_co.paa),
+            QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Interior_co.paa),
+            "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+            "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+            QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
+        };
+        textureList[] = {"TechnoUnion", 0, "EPF", 0, "BS", 1};
     };
 
     class CLASS(Rathian_CAP_Base);

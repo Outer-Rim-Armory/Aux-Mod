@@ -14,8 +14,8 @@ class CfgPatches {
         };
         units[] = {
             QCLASS(Hermitaur_Class_I),
-            QCLASS(Hermitaur_Class_M),
-            QCLASS(Hermitaur_Class_E)
+            QCLASS(Hermitaur_Class_E),
+            QCLASS(Hermitaur_Class_M)
         };
         weapons[] = {};
         VERSION_CONFIG;
