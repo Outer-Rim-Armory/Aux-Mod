@@ -43,7 +43,6 @@ class CfgPatches {
             QCLASS(rdfBackpack_swat),
             QCLASS(rdfBackpack_swat_predef_rifleman),
             QCLASS(rdfBackpack_swat_predef_chaingun),
-            QCLASS(Plesioth_RDF),
             QCLASS(Hornet_RDF),
             QCLASS(Hornet_MG_RDF),
             QCLASS(Hornet_AT_RDF),
@@ -51,12 +50,11 @@ class CfgPatches {
             QCLASS(TX130_RDF_Recon),
             QCLASS(TX130_RDF_GL),
             QCLASS(TX130_RDF_Super),
-            QCLASS(Ogre_RDF),
-            QCLASS(Ogre_Armed_RDF),
-            QCLASS(Vespoid_RDF),
-            QCLASS(Vespoid_Armed_RDF),
-            QCLASS(Rathian_CAP_RDF),
-            QCLASS(Rathian_CAS_RDF)
+            QCLASS(LAATi_MK1_RDF),
+            QCLASS(LAATi_MK1_Lamps_RDF),
+            QCLASS(LAATi_MK2_RDF),
+            QCLASS(LAATi_MK2_Lamps_RDF),
+            QCLASS(V19_RDF)
         };
         weapons[] = {
             QCLASS(rdfArmor_helmet),
