@@ -38,6 +38,7 @@ UNIFORM_CUSTOM(Drake);
 
 UNIFORM_CUSTOM(Hagrid);
 UNIFORM_CUSTOM(Harry);
+UNIFORM_CUSTOM(Henkie);
 UNIFORM_CUSTOM(Jaws);
 
 class CLASS(Uniform_Jaws_CamoBrown): CLASS(Uniform_Jaws) {
