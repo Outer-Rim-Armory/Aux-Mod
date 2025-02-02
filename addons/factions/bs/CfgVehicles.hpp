@@ -553,7 +553,7 @@ class CfgVehicles {
 
         side = INDEP;
         faction = QFACTION(BS);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_BS);
 
         crew = QCLASS(BS_Unit_Rifleman);
         typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
@@ -574,7 +574,7 @@ class CfgVehicles {
 
         side = INDEP;
         faction = QFACTION(BS);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_BS);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_BS);
 
         crew = QCLASS(BS_Unit_Rifleman);
         typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};

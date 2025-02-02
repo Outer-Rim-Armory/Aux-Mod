@@ -9,12 +9,13 @@ class CfgVehicles {
         author = AUTHOR;
 
         faction = QFACTION(KC);
+        side = BLUFOR;
         editorSubcategory = QEDSUBCAT(APCs);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hermitaur_Class_I);
 
         displayName = "Hermitaur (Infantry)";
-        crew = QCLASS(Unit_Phase2_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
+        crew = QCLASS(Unit_Phase2_Tanker_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
         animationList[] = {
             // These values are actually inverted, they should be "hide"
             "HideAttachmentDozer", TRUE,
@@ -24,17 +25,6 @@ class CfgVehicles {
         };
 
         ace_cargo_space = 15;
-        supplyRadius = 10;
-        vehicleClass = "Support";
-        attendant = 1;
-        threat[] = {0, 0, 0};
-        ace_refuel_canReceive = 1;
-        ace_refuel_flowRate = 2;
-        ace_refuel_fuelCapacity = 1200;
-        ace_refuel_fuelCargo = 10000;
-        ace_refuel_hooks[] = {{0.5,-3,-0.5}, {-0.4,-3,-0.75}};
-        ace_rearm_defaultSupply = 1200;
-        transportAmmo = 0;
 
         hiddenSelections[] = {"Camo","camo2","camo3"};
         hiddenSelectionsTextures[] = {
@@ -53,11 +43,12 @@ class CfgVehicles {
 
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(APCs);
+        side = BLUFOR;
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hermitaur_Class_E);
 
         displayName = "Hermitaur (Engineer)";
-        crew = QCLASS(Unit_Phase2_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
+        crew = QCLASS(Unit_Phase2_Tanker_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
         animationList[] = {
             // These values are actually inverted, they should be "hide"
             "HideAttachmentDozer", FALSE,
@@ -65,6 +56,19 @@ class CfgVehicles {
             "HideAttachmentPlate", TRUE,
             "HideAttachmentRepair", FALSE
         };
+
+        ace_cargo_space = 15;
+        supplyRadius = 10;
+        vehicleClass = "Support";
+        attendant = 1;
+        threat[] = {0, 0, 0};
+        ace_refuel_canReceive = 1;
+        ace_refuel_flowRate = 2;
+        ace_refuel_fuelCapacity = 1200;
+        ace_refuel_fuelCargo = 10000;
+        ace_refuel_hooks[] = {{0.5,-3,-0.5}, {-0.4,-3,-0.75}};
+        ace_rearm_defaultSupply = 1200;
+        transportAmmo = 0;
 
         hiddenSelections[] = {"Camo","camo2","camo3","camo_Fuel","camo_repair"};
         hiddenSelectionsTextures[] = {
@@ -84,12 +88,13 @@ class CfgVehicles {
         author = AUTHOR;
 
         faction = QFACTION(KC);
+        side = BLUFOR;
         editorSubcategory = QEDSUBCAT(APCs);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hermitaur_Class_M);
 
         displayName = "Hermitaur (Medic)";
-        crew = QCLASS(Unit_Phase2_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
+        crew = QCLASS(Unit_Phase2_Tanker_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
         animationList[] = {
             // These values are actually inverted, they should be "hide"
             "HideAttachmentDozer", TRUE,
