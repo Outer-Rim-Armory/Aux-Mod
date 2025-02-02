@@ -557,7 +557,7 @@ class CfgVehicles {
 
         crew = QCLASS(BS_Unit_Rifleman);
         typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
-        hiddenSelectionsTexBSres[] = {
+        hiddenSelectionsTextures[] = {
             QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Main_co.paa),
             QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Attachments_co.paa),
             QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Interior_co.paa),
@@ -565,7 +565,7 @@ class CfgVehicles {
             "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
             QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
         };
-        texBSreList[] = {"TechnoUnion", 0, "EPF", 0, "RDF", 0, "BS", 1};
+        textureList[] = {"TechnoUnion", 0, "EPF", 0, "BS", 1};
     };
 
     class CLASS(Vespoid_Armed_Base);

@@ -735,11 +735,14 @@ class CfgVehicles {
         typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
 
         hiddenSelectionsTextures[] = {
-            "\OPTRE_Vehicles_Air\Falcon\data\Green\Falcon_Main_co.paa",
-            "\OPTRE_Vehicles_Air\Falcon\data\Green\Falcon_Attachments_co.paa",
-            "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
+            QPATHTOEF(vehicles,air\vespoid\data\textures\EPF_Falcon_Main_co.paa),
+            QPATHTOEF(vehicles,air\vespoid\data\textures\EPF_Falcon_Attachments_co.paa),
+            QPATHTOEF(vehicles,air\vespoid\data\textures\EPF_Falcon_Interior_co.paa),
+            "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+            "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+            QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
         };
-        textureList[] = {"TechnoUnion", 0, "EPF", 1, "RDF", 0};
+        textureList[] = {"TechnoUnion", 0, "EPF", 1, "BS", 0};
     };
 
     class CLASS(Vespoid_Armed_Base);
@@ -754,11 +757,14 @@ class CfgVehicles {
         typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
 
         hiddenSelectionsTextures[] = {
-            "\OPTRE_Vehicles_Air\Falcon\data\Green\Falcon_Main_co.paa",
-            "\OPTRE_Vehicles_Air\Falcon\data\Green\Falcon_Attachments_co.paa",
-            "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
+            QPATHTOEF(vehicles,air\vespoid\data\textures\EPF_Falcon_Main_co.paa),
+            QPATHTOEF(vehicles,air\vespoid\data\textures\EPF_Falcon_Attachments_co.paa),
+            QPATHTOEF(vehicles,air\vespoid\data\textures\EPF_Falcon_Interior_co.paa),
+            "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+            "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+            QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
         };
-        textureList[] = {"TechnoUnion", 0, "EPF", 1, "RDF", 0};
+        textureList[] = {"TechnoUnion", 0, "EPF", 1, "BS", 0};
     };
 
     class CLASS(Rathian_CAP_Base);

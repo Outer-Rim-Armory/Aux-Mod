@@ -357,6 +357,9 @@ class TransportItems { \
     QCLASS(Glavenus_Medic), \
     QCLASS(Glavenus_HMG), \
     QCLASS(Glavenus_GMG), \
+    QCLASS(Hermitaur_Class_E), \
+    QCLASS(Hermitaur_Class_I), \
+    QCLASS(Hermitaur_Class_M), \
     QCLASS(Hornet_Unarmed), \
     QCLASS(Hornet_MG), \
     QCLASS(Hornet_AT), \

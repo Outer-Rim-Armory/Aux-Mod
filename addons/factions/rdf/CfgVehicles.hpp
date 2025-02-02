@@ -422,4 +422,167 @@ class CfgVehicles {
             MAG_XX(ls_mag_classC_thermalDet,3);
         };
     };
+
+    class CLASS(Hornet_Unarmed);
+    class CLASS(Hornet_RDF): CLASS(Hornet_Unarmed) {
+        SCOPE_PUBLIC;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+
+        // Remove DC-15S and magazines
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(Hornet_MG);
+    class CLASS(Hornet_MG_RDF): CLASS(Hornet_MG) {
+        SCOPE_PUBLIC;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(Hornet_AT);
+    class CLASS(Hornet_AT_RDF): CLASS(Hornet_AT) {
+        SCOPE_PUBLIC;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(TX130_M1);
+    class CLASS(TX130_RDF): CLASS(TX130_M1) {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(TX130_M1_Recon);
+    class CLASS(TX130_RDF_Recon): CLASS(TX130_M1_Recon) {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(TX130_M1_GL);
+    class CLASS(TX130_RDF_GL): CLASS(TX130_M1_GL) {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(TX130_Super);
+    class CLASS(TX130_RDF_Super): CLASS(TX130_Super) {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(LAATi_MK1);
+    class CLASS(LAATi_MK1_RDF): CLASS(LAATi_MK1) {
+        SCOPE_PUBLIC;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Green);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+    };
+
+    class CLASS(LAATi_MK1_Lamps);
+    class CLASS(LAATi_MK1_Lamps_RDF): CLASS(LAATi_MK1_Lamps) {
+        SCOPE_PUBLIC;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Green);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+    };
+
+    class CLASS(LAATi_MK2);
+    class CLASS(LAATi_MK2_RDF): CLASS(LAATi_MK2) {
+        SCOPE_PUBLIC;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Green);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+    };
+
+    class CLASS(LAATi_MK2_Lamps);
+    class CLASS(LAATi_MK2_Lamps_RDF): CLASS(LAATi_MK2_Lamps) {
+        SCOPE_PUBLIC;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Green);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+    };
+
+    class CLASS(V19);
+    class CLASS(V19_RDF): CLASS(V19) {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+    };
 };

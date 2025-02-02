@@ -72,9 +72,9 @@ class CfgVehicles {
                     "\OPTRE_Vehicles_Tracked\Scorpion\data\texture\mine_roller_co.paa"
                 };
             };
-            class RDF: TechnoUnion {
-                displayName = "Ryloth Defence Force";
-                factions[] = {QFACTION(RDF)};
+            class BS: TechnoUnion {
+                displayName = "Black Suns Crime Syndicate";
+                factions[] = {QFACTION(BS)};
                 textures[] = {
                     "OPTRE_Vehicles_Tracked\Scorpion\data\texture\camo\Scorp_base_black_co.paa",
                     "OPTRE_Vehicles_Tracked\Scorpion\data\texture\camo\Scorp_tur_black_co.paa",

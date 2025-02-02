@@ -88,6 +88,7 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
+
         };
 
         class UserActions: UserActions {

@@ -37,7 +37,7 @@ class CfgVehicles {
         hiddenSelections[] = {"camo1", "camo3", "clan", "clan_text", "insignia", "attach_gun"};
         hiddenSelectionsTextures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_Tan_CO.paa"};
 
-        textureList[] = {"TechnoUnion", 1, "EPF", 0};
+        textureList[] = {"TechnoUnion", 1, "EPF", 0, "BS", 0};
         class TextureSources {
             class TechnoUnion {
                 author = "Article 2 Studios";
@@ -49,6 +49,11 @@ class CfgVehicles {
                 displayName = "El President Forces";
                 factions[] = {QFACTION(EPF)};
                 textures[] = {"\OPTRE_Vehicles\Pelican\data\PelicanExterior_standard_CO.paa"};
+            };
+            class BS: TechnoUnion {
+                displayName = "Black Suns";
+                factions[] = {QFACTION(BS)};
+                textures[] = {"OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa",""};
             };
         };
 

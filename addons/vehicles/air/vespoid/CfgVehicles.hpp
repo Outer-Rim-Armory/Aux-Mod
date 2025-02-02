@@ -11,40 +11,64 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Helicopters);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Vespoid_Tan);
 
-        displayName = "Vespoid";
+        displayName = "Vespoid (Armed)";
 
-        weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera"};
-        magazines[] = {"168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+        weapons[] = {"OPTRE_M638", "CMFlareLauncher","Laserdesignator_pilotCamera"};
+        magazines[] = {
+            "OPTRE_2000Rnd_20mm_HE",
+            "OPTRE_2000Rnd_20mm_HE",
+            "168Rnd_CMFlare_Chaff_Magazine",
+            "Laserbatteries"
+        };
 
         visionMode[] = {"Normal", "NVG", "Ti"};
         thermalMode[] = {0};
 
-        hiddenSelections[] = {"camo1", "camo2", "camo3", "attach_gun", "attach_sideguns"};
+        hiddenSelections[] = {"camo1","camo2","camo3","camoGlass","camoGlassPilot","camoDecal"};
         hiddenSelectionsTextures[] = {
             "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Main_co.paa",
             "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Attachments_co.paa",
-            "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
+            "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa",
+            QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
         };
 
-        textureList[] = {"TechnoUnion", 1, "EPF", 0};
+        textureList[] = {"TechnoUnion", 1, "EPF", 0, "BS", 0};
         class TextureSources {
             class TechnoUnion {
                 author = "Article 2 Studios";
                 displayName = "Techno Union";
                 factions[] = {QFACTION(TU)};
                 textures[] = {
-                    "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Main_co.paa",
-                    "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Attachments_co.paa",
-                    "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\TU_Falcon_Main_co.paa),
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\TU_Falcon_Attachments_co.paa),
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\TU_Falcon_Interior_co.paa),
+                    "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+                    "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
                 };
             };
             class EPF: TechnoUnion {
                 displayName = "El President Forces";
                 factions[] = {QFACTION(EPF)};
                 textures[] = {
-                    "\OPTRE_Vehicles_Air\falcon\data\falcon_main_co.paa",
-                    "\OPTRE_Vehicles_Air\falcon\data\falcon_attachments_co.paa",
-                    "\OPTRE_Vehicles_Air\Falcon\data\Falcon_Interior_co.paa"
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\EPF_Falcon_Main_co.paa),
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\EPF_Falcon_Attachments_co.paa),
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\EPF_Falcon_Interior_co.paa),
+                    "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+                    "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
+                };
+            };
+            class BS: TechnoUnion {
+                displayName = "Black Suns Crime Syndicate";
+                factions[] = {QFACTION(BS)};
+                textures[] = {
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Main_co.paa),
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Attachments_co.paa),
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\BS_Falcon_Interior_co.paa),
+                    "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+                    "\optre_vehicles_air\falcon\data\falcon_glass_ca.paa",
+                    QPATHTOEF(vehicles,air\vespoid\data\textures\Falcon_Decal_ca.paa)
                 };
             };
         };
@@ -55,18 +79,13 @@ class CfgVehicles {
     };
 
     class CLASS(Vespoid_Armed_Base): CLASS(Vespoid_Base) {
-        displayName = "Vespoid (Armed)";
+        displayName = "Vespoid";
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Vespoid_Armed_Tan);
 
-        weapons[] = {"OPTRE_M638", "CMFlareLauncher","Laserdesignator_pilotCamera"};
-        magazines[] = {
-            "OPTRE_2000Rnd_20mm_HE",
-            "OPTRE_2000Rnd_20mm_HE",
-            "168Rnd_CMFlare_Chaff_Magazine",
-            "Laserbatteries"
-        };
+        weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera"};
+        magazines[] = {"168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
 
-        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+        hiddenSelections[] = {"camo1","camo2","camo3","camoGlass","camoGlassPilot","camoDecal","attach_gun","attach_sideguns"};
         hiddenSelectionsTextures[] = {
             "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Main_co.paa",
             "\OPTRE_Vehicles_Air\Falcon\data\Tan\Falcon_Attachments_co.paa",

@@ -35,6 +35,7 @@ class CfgPatches {
             QGVAR(conga),
             QGVAR(gammoth),
             QGVAR(glavenus),
+            QGVAR(hermitaur),
             QGVAR(hornet),
             QGVAR(hydra),
             QGVAR(juggernaut),
