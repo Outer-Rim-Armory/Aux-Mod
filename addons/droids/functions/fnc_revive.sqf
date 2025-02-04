@@ -62,6 +62,10 @@ INFO_2("Reviving unit %1 (%2)",_unit,typeOf _unit);
                 [{_this setUnitPos "UP";}, _newUnit, 1.5] call CBA_fnc_waitAndExecute;
                 [{_this call FUNC(initB2);}, _newUnit, 3] call CBA_fnc_waitAndExecute;
             };
+        case "bx": {
+            [QEGVAR(core,forceSay3D), [_newUnit, QCLASS(BX_Revive), 15]] call CBA_fnc_globalEvent;
+            deleteVehicle _oldUnit;
+            };
         };
         default {
             deleteVehicle _oldUnit;
