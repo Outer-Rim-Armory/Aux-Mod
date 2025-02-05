@@ -20,6 +20,7 @@ class CfgMusic {
     MUSIC(AoT_BigGirl,"[AoT] You See BIG GIRL",359,Anime);
     MUSIC(AoT_SymphonicSuite,"[AoT] Symphonic Suite",313,Anime);
     MUSIC(AoT_Vogel,"[AoT] Vogel im Käfig",380,Anime);
+    MUSIC(AoT_AttackOnTitan,"[AoT] Attack on Titan",256,Anime);
 
     // Avenged Sevenfold
     MUSIC(AS_ShepherdOfFire,"[AS] Shepherd of Fire",319,Other);
