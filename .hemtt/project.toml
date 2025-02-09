@@ -69,6 +69,8 @@ workshop = [
     "2797232351", # Root's Effects - Zeus Module
     "2699465073", # Fire Support Plus
     "2836999643", # Air Support Plus
+    "2297780006", # Imperial Studio
+    "3418182147", # [RIM] Clone HUD
 ]
 optionals = ["no_burn_screams"]
 
