@@ -50,7 +50,7 @@ class CfgVehicles {
 
         class Turrets: Turrets {
             class MainTurret: MainTurret {
-                weapons[] = {QCLASS(Hermitaur_Medium_Cannon),QCLASS(Coax_Reek),"SmokeLauncher"};
+                weapons[] = {QCLASS(Hermitaur_Medium_Cannon),"SmokeLauncher"};
                 magazines[] = {
                     QCLASS(Mag_250Rnd_Hermitaur),
                     QCLASS(Mag_250Rnd_Hermitaur),
@@ -58,11 +58,6 @@ class CfgVehicles {
                     QCLASS(Mag_250Rnd_Hermitaur),
                     QCLASS(Mag_250Rnd_Hermitaur),
                     QCLASS(Mag_250Rnd_Hermitaur),
-                    QCLASS(Mag_1000Rnd_Coax),
-                    QCLASS(Mag_1000Rnd_Coax),
-                    QCLASS(Mag_1000Rnd_Coax),
-                    QCLASS(Mag_1000Rnd_Coax),
-                    QCLASS(Mag_1000Rnd_Coax),
                     "SmokeLauncherMag"
                 };
             };
