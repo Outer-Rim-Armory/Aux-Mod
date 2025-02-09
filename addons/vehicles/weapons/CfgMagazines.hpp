@@ -70,6 +70,17 @@ class CfgMagazines {
         mass = 10;
     };
 
+    class CLASS(Mag_250Rnd_Hermitaur): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "Hermitaur Cannon Shells";
+        displayNameShort = "HE Rnd";
+        descriptionShort = "Plasma Shells<br/>Used In Hermitaura";
+        ammo = QCLASS(Bullet_Plasma_Medium_Cannon_Blue);
+        count = 250;
+        mass = 8;
+        initSpeed = 1070;
+    };
+
     class CLASS(Mag_6Rnd_Mortar_82mm_HE): CLASS(Mag_VehicleBase) {
         SCOPE_HIDDEN;
         displayName = "[KC] 6Rnd Mortar HE Shells";

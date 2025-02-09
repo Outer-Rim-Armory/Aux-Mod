@@ -1,6 +1,18 @@
 class CfgVehicles {
-    class 3AS_PX10_Base_F;
-    class 3AS_PX10_F: 3AS_PX10_Base_F{
+    class Tank;
+    class Tank_F: Tank {
+        class Turrets;
+    };
+    class 3AS_PX10_Base_F: Tank_F {
+        class Turrets: Turrets {
+        class MainTurret;
+        class CargoTurret_01;
+        class CargoTurret_02;
+        class CargoTurret_03;
+        class CargoTurret_04;
+        };
+    };
+    class 3AS_PX10_F: 3AS_PX10_Base_F {
         class ACE_SelfActions;
     };
 
@@ -14,8 +26,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hermitaur_Class_I);
 
         displayName = "Hermitaur (Infantry)";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         animationList[] = {
             // These values are actually inverted, they should be "hide"
             "HideAttachmentDozer", TRUE,
@@ -35,6 +47,30 @@ class CfgVehicles {
         model = "3as\3AS_Rebel_Armor\PX10_Cav\model\3AS_PX10.p3d";
         picture = "3as\3AS_Rebel_Armor\PX10_Cav\data\ui\px10cav_side_ca.paa";
         icon = "3as\3AS_Rebel_Armor\PX10_Cav\data\ui\px10cav_top_ca.paa";
+
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                weapons[] = {QCLASS(Hermitaur_Medium_Cannon),QCLASS(Coax_Reek),"SmokeLauncher"};
+                magazines[] = {
+                    QCLASS(Mag_250Rnd_Hermitaur),
+                    QCLASS(Mag_250Rnd_Hermitaur),
+                    QCLASS(Mag_250Rnd_Hermitaur),
+                    QCLASS(Mag_250Rnd_Hermitaur),
+                    QCLASS(Mag_250Rnd_Hermitaur),
+                    QCLASS(Mag_250Rnd_Hermitaur),
+                    QCLASS(Mag_1000Rnd_Coax),
+                    QCLASS(Mag_1000Rnd_Coax),
+                    QCLASS(Mag_1000Rnd_Coax),
+                    QCLASS(Mag_1000Rnd_Coax),
+                    QCLASS(Mag_1000Rnd_Coax),
+                    "SmokeLauncherMag"
+                };
+            };
+            class CargoTurret_01: CargoTurret_01 {};
+            class CargoTurret_02: CargoTurret_02 {};
+            class CargoTurret_03: CargoTurret_03 {};
+            class CargoTurret_04: CargoTurret_04 {};
+        };
     };
 
     class CLASS(Hermitaur_Class_E): CLASS(Hermitaur_Class_I) {
@@ -47,8 +83,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hermitaur_Class_E);
 
         displayName = "Hermitaur (Engineer)";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         animationList[] = {
             // These values are actually inverted, they should be "hide"
             "HideAttachmentDozer", FALSE,
@@ -93,8 +129,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hermitaur_Class_M);
 
         displayName = "Hermitaur (Medic)";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         animationList[] = {
             // These values are actually inverted, they should be "hide"
             "HideAttachmentDozer", TRUE,
