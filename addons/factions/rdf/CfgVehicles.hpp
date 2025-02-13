@@ -31,7 +31,7 @@ class CfgVehicles {
 
     class CLASS(rdfArmor_unit_rifleman): CLASS(rdfArmor_unit_base) {
         SCOPE_PUBLIC;
-        displayName = "Rifleman";
+        displayName = "Rifleman (15A)";
         editorPreview = EDITOR_PREVIEW(rdfArmor_unit_rifleman);
 
         weapons[] = {QCLASS(DC15A), QCLASS(DC17), "Throw", "Put"};
@@ -53,6 +53,7 @@ class CfgVehicles {
 
     class CLASS(rdfArmor_unit_rifleman_DC15C): CLASS(rdfArmor_unit_rifleman) {
         editorPreview = EDITOR_PREVIEW(rdfArmor_unit_rifleman_DC15C);
+        displayName = "Rifleman (15C)";
 
         weapons[] = {QCLASS(DC15C), QCLASS(DC17), "Throw", "Put"};
         respawnWeapons[] = {QCLASS(DC15C), QCLASS(DC17), "Throw", "Put"};
@@ -279,10 +280,11 @@ class CfgVehicles {
         maximumLoad = 600;
     };
 
-    class CLASS(rdfBackpack_predef_rifleman): CLASS(rdfBackpack) {
+    class CLASS(rdfBackpack_predef_rifleman_15A): CLASS(rdfBackpack) {
         SCOPE_HIDDEN;
 
         class TransportMagazines {
+            MAG_XX(CLASS(Mag_60Rnd_DC15A),5);
             MAG_XX(CLASS(Grenade_EMP),5);
             MAG_XX(3AS_SmokeWhite,2);
             MAG_XX(3AS_SmokeBlue,2);
@@ -294,8 +296,26 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(rdfBackpack_predef_grenadier): CLASS(rdfBackpack_predef_rifleman) {
+    class CLASS(rdfBackpack_predef_rifleman_15C): CLASS(rdfBackpack) {
+        SCOPE_HIDDEN;
+
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_70Rnd_DC15C),5);
+            MAG_XX(CLASS(Grenade_EMP),5);
+            MAG_XX(3AS_SmokeWhite,2);
+            MAG_XX(3AS_SmokeBlue,2);
+            MAG_XX(3AS_SmokeRed,2);
+            MAG_XX(3AS_SmokeYellow,2);
+            MAG_XX(3AS_SmokePurple,1);
+            MAG_XX(ShieldGrenade_Mag,2);
+            MAG_XX(ls_mag_classC_thermalDet,3);
+        };
+    };
+
+    class CLASS(rdfBackpack_predef_grenadier): CLASS(rdfBackpack_predef_rifleman_15A) {
         class TransportMagazines: TransportMagazines {
+            MAG_XX(CLASS(Mag_60Rnd_DC15A),5);
+            MAG_XX(CLASS(Grenade_EMP),5);
             MAG_XX(3Rnd_HE_Grenade_shell,10);
             MAG_XX(3Rnd_UGL_FlareWhite_F,2);
             MAG_XX(3Rnd_Smoke_Grenade_shell,2);
@@ -308,13 +328,13 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(rdfBackpack_predef_autorifleman): CLASS(rdfBackpack_predef_rifleman) {
+    class CLASS(rdfBackpack_predef_autorifleman): CLASS(rdfBackpack_predef_rifleman_15A) {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_240rnd_DC15L),15);
         };
     };
 
-    class CLASS(rdfBackpack_predef_heavygunner): CLASS(rdfBackpack_predef_rifleman) {
+    class CLASS(rdfBackpack_predef_heavygunner): CLASS(rdfBackpack_predef_rifleman_15A) {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_400rnd_Z6),15);
             MAG_XX(CLASS(Grenade_EMP),5);
@@ -330,7 +350,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(rdfBackpack_predef_riflemanAT): CLASS(rdfBackpack_predef_rifleman) {
+    class CLASS(rdfBackpack_predef_riflemanAT): CLASS(rdfBackpack_predef_rifleman_15A) {
         class TransportMagazines {
             MAG_XX(CLASS(Mag_80rnd_DC15S),16);
             MAG_XX(CLASS(Mag_20rnd_DC17),6);
@@ -466,6 +486,49 @@ class CfgVehicles {
         class TransportMagazines {};
     };
 
+    class CLASS(Hermitaur_Class_I);
+    class CLASS(Hermitaur_Class_I_RDF): CLASS(Hermitaur_Class_I) {
+        SCOPE_PUBLIC;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(Hermitaur_Class_M);
+    class CLASS(Hermitaur_Class_M_RDF): CLASS(Hermitaur_Class_M) {
+        SCOPE_PUBLIC;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+    class CLASS(Hermitaur_Class_E);
+    class CLASS(Hermitaur_Class_E_RDF): CLASS(Hermitaur_Class_E) {
+        SCOPE_PUBLIC;
+
+        side = BLUFOR;
+        faction = QFACTION(RDF);
+
+        crew = QCLASS(rdfArmor_unit_rifleman);
+        typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
+
+        class TransportWeapons {};
+        class TransportMagazines {};
+    };
+
+
     class CLASS(TX130_M1);
     class CLASS(TX130_RDF): CLASS(TX130_M1) {
         SCOPE_PUBLIC;
@@ -532,7 +595,7 @@ class CfgVehicles {
 
         side = BLUFOR;
         faction = QFACTION(RDF);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Green);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1);
 
         crew = QCLASS(rdfArmor_unit_rifleman);
         typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
@@ -544,7 +607,7 @@ class CfgVehicles {
 
         side = BLUFOR;
         faction = QFACTION(RDF);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Green);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1_Lamps);
 
         crew = QCLASS(rdfArmor_unit_rifleman);
         typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
@@ -556,7 +619,7 @@ class CfgVehicles {
 
         side = BLUFOR;
         faction = QFACTION(RDF);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Green);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2);
 
         crew = QCLASS(rdfArmor_unit_rifleman);
         typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
@@ -568,7 +631,7 @@ class CfgVehicles {
 
         side = BLUFOR;
         faction = QFACTION(RDF);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\rathian,Rathian_Green);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2_Lamps);
 
         crew = QCLASS(rdfArmor_unit_rifleman);
         typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};

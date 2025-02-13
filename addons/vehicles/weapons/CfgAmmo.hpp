@@ -45,6 +45,18 @@ class CfgAmmo {
         tracerScale = 1;
     };
 
+    class 3AS_MK4ES_30mm_MP;
+    class CLASS(Bullet_Plasma_Medium_Cannon_Blue): 3AS_MK4ES_30mm_MP {
+        hit = 90;
+        caliber = 4.4;
+        typicalSpeed = 1070;
+
+        model = "\3AS\3AS_Weapons\Data\tracer_shell_blue.p3d";
+        effectfly = "3AS_PlasmaBolt_Medium_Blue_Fly";
+
+        tracerScale = 2.5;
+    };
+
     class Sh_155mm_AMOS;
     class CLASS(Shell_PlasmaMortar_82mm_HE): Sh_155mm_AMOS {
         hit = 340;

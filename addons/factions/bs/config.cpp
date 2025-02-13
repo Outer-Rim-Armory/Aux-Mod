@@ -11,6 +11,7 @@ class CfgPatches {
             "SC_MDF",
             "sc_equipment",
             "ScionPatch",
+            "ls_armor_greenfor",
 
         };
         units[] = {

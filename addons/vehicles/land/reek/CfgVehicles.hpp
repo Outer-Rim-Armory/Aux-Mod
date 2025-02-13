@@ -25,6 +25,26 @@ class CfgVehicles {
         ace_cargo_space = 4;
 
         armor = 600;
+        maxSpeed = 150;
+        enginePower = 2000;
+        engineMOI = 1.0;
+        maxOmega = 3000;
+        idleRpm = 600;
+        redRpm = 6900;
+        peakTorque = 3000;
+        torqueCurve[] = {
+            {0, 0.3},
+            {0.178, 0.5},
+            {0.25, 0.85},
+            {0.4, 0.95},
+            {0.5, 1},
+            {0.625, 0.95},
+            {0.75, 0.7},
+            {1, 0.5}
+        };
+        dampingRateFullThrottle = 0.08;
+        dampingRateZeroThrottleClutchDisengaged = 0.35;
+        dampingRateZeroThrottleClutchEngaged = 2;
 
         soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\reek\Startup.wss), 0.79432821, 1};
         soundEngineOffInt[] = {QPATHTOF(sounds\data\audio\reek\Shutdown.wss), 0.79432821, 1};

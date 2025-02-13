@@ -40,6 +40,11 @@ class Extended_Killed_EventHandlers {
             killed = QUOTE([ARR_2(_this#0,'b2')] call FUNC(revive));
         };
     };
+    class CLASS(CIS_Unit_Droid_BX) {
+        class GVAR(revive) {
+            killed = QUOTE([ARR_2(_this#0,'bx')] call FUNC(revive));
+        };
+    };
     class 3AS_Deka_Static_Base {
         class GVAR(deleteShield) {
             killed = QUOTE(_this#0 call FUNC(deleteDekaShield));

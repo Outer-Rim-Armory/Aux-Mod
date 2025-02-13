@@ -81,6 +81,11 @@ class CfgVehicles {
                 factions[] = {QFACTION(EPF)};
                 textures[] = {"\3AS\3AS_AAT\data\Green_AAT_CO.paa"};
             };
+            class BlackSuns: CIS {
+                displayName = "Black Suns Crime Syndicate";
+                factions[] = {QFACTION(BS)};
+                textures[] = {"\3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
+            };
             class Red: CIS {
                 displayName = "Red";
                 factions[] = {};

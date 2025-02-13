@@ -254,6 +254,14 @@ class CfgWeapons {
         };
     };
 
+    class 3AS_MK4ES_Medium_Cannon;
+    class CLASS(Hermitaur_Medium_Cannon): 3AS_MK4ES_Medium_Cannon {
+        displayName = "Hermitaur Medium Cannon";
+        magazines[] = {
+            QCLASS(Mag_250Rnd_Hermitaur)
+        };
+    };
+
     class 3AS_Mass_Driver_Cannon;
     class CLASS(Cannon_ATTE_MassDriver): 3AS_Mass_Driver_Cannon {
         displayName = "Mass Driver Cannon";
