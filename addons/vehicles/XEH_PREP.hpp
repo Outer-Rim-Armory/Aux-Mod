@@ -15,6 +15,7 @@ PREP(canSpawnCrew);
 PREP(csw_canDeploy);
 PREP(csw_canPickup);
 PREP(csw_modifyInteraction);
+PREP(deployCCP);
 PREP(playHorn);
 PREP(skin_canSwitch);
 PREP(skin_insertChildren);

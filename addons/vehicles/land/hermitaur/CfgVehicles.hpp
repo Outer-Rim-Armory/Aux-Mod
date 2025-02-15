@@ -234,6 +234,38 @@ class CfgVehicles {
         displayName = "Hermitaur (Medic)";
         crew = QCLASS(Unit_Phase2_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
+
+        class EventHandlers{
+            init = "(_this #0) setVariable [""BNA_KC_vehicles_DeployCCP"", false,true]";
+        };
+
+        class UserActions {
+            class DeployCCP {
+                displayName = "Deploy CCP";
+                priority = 10;
+                radius = 5;
+                position = "camera";
+                showWindow = 0;
+                hideOnUse = 1;
+                onlyForPlayer = 0;
+                shortcut = "";
+                condition = "this getVariable ""BNA_KC_vehicles_DeployCCP"" == false && fuel this != 0;";
+                statement = "this setVariable [""BNA_KC_vehicles_DeployCCP"",true,true]; this call BNA_KC_vehicles_fnc_deployCCP;";
+            };
+            class UnDeployCCP {
+                displayName = "Undeploy CCP";
+                priority = 10;
+                radius = 5;
+                position = "camera";
+                showWindow = 0;
+                hideOnUse = 1;
+                onlyForPlayer = 0;
+                shortcut = "";
+                condition = "this getVariable ""BNA_KC_vehicles_DeployCCP"" == true;";
+                statement = "this setVariable [""BNA_KC_vehicles_DeployCCP"",false,true];";
+            };
+        };
+
         animationList[] = {
             // These values are actually inverted, they should be "hide"
             "HideAttachmentDozer", TRUE,

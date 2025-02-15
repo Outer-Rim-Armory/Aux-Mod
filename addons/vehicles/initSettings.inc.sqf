@@ -32,3 +32,32 @@
     [0, 60, 30, 0],
     TRUE
 ] call CBA_fnc_addSetting;
+
+[
+    QGVAR(areaHealRadius_M),
+    "SLIDER",
+    ["Hermitaur Medic - Heal AOE", "Radius to heal units."],
+    [QUOTE(MOD_NAME),QUOTE(COMPONENT_BEAUTIFIED)],
+    [0,30,7,0]
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(areaHealRate_M),
+    ["Hermitaur Medic - Heal Delay","Delay between healing actions."],
+    [QUOTE(MOD_NAME),QUOTE(COMPONENT_BEAUTIFIED)],
+    [0,60,2,0]
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(healAmount_M),
+    ["Hermitaur Medic - Heal Amount","Amount of pain to reduce per action & Amount of blood to add per action"],
+    [QUOTE(MOD_NAME),QUOTE(COMPONENT_BEAUTIFIED)],
+    [0,1,0.08,0]
+] call CBA_fnc_addSetting;
+
+[
+    QGVAR(fuelHealConsumption_M),
+    ["Hermitaur Medic - Fuel Consumption","Amount of vehicle's fuel to reduce per action"],
+    [QUOTE(MOD_NAME),QUOTE(COMPONENT_BEAUTIFIED)],
+    [0,1,0.02,1]
+] call CBA_fnc_addSetting;
