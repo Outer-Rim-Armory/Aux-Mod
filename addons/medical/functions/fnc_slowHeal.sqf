@@ -100,8 +100,8 @@ _exitCode = {
     params ["_handle", "_unit"];
     INFO_2("Slow Healer %1 | (Exit) Removing handler from %2",_handle,_unit);
     ["ace_common_displayTextStructured", ["Finished recieving treatment.", 1.5, _unit], _unit] call CBA_fnc_targetEvent;
-    _unit setVariable [QGVAR(slowHealHandler), nil];
-    _unit setVariable [QGVAR(canBeHealed), nil];
+    _unit setVariable [QGVAR(slowHealHandler), nil, true];
+    _unit setVariable [QGVAR(canBeHealed), nil, true];
 };
 
 _healHandler = [

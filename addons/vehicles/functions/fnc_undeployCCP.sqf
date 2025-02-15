@@ -19,14 +19,12 @@
 params ["_vehicle", "_player"];
 TRACE_2("fnc_undeployCCP",_vehicle,_player);
 
-// CBA_fnc_targetEvent doesn't support machine network ids, so we have to use remoteExecCall
 private _owner = _vehicle getVariable [QGVAR(ccpOwner), clientOwner];
-if (clientOwner != _owner) exitWith {
-    [_vehicle, _player] remoteExecCall [QFUNC(undeployCCP), _owner];
-};
+[QGVAR(removeCCP), _vehicle, _owner] call CBA_fnc_ownerEvent;
 
 _vehicle setVariable [QGVAR(deployedCCP), nil, true];
 [_vehicle, "blockEngine", QGVAR(deployedCCP), false] call ace_common_fnc_statusEffect_set;
 
-private _handle = _vehicle getVariable [QGVAR(ccpHandle), -1];
-_handle call CBA_fnc_removePerFrameHandler;
+{
+    (_x select 0) setVariable [QEGVAR(medical,canBeHealed), false, true]; // Variable is reset when the PFH is removed
+} forEach (_vehicle getVariable [QEGVAR(medical,currentPatients), []]);
