@@ -22,8 +22,8 @@
 #ifdef DISABLE_COMPILE_CACHE
     #define LINKFUNC(x) {_this call FUNC(x)}
     #define PREP(fncName) DFUNC(fncName) = compile preprocessFileLineNumbers QPATHTOF(functions\DOUBLES(fnc,fncName).sqf)
-    #define PREP_RECOMPILE_START    if (isNil "ACE_PREP_RECOMPILE") then {ACE_RECOMPILES = []; ACE_PREP_RECOMPILE = {{call _x} forEach ACE_RECOMPILES;}}; private _recomp = {
-    #define PREP_RECOMPILE_END      }; call _recomp; ACE_RECOMPILES pushBack _recomp;
+    #define PREP_RECOMPILE_START    if (isNil "ACE_PREP_RECOMPILE") then {ACE_recompiles = []; ACE_PREP_recompile = {{call _x} forEach ACE_recompiles;}}; private _recomp = {
+    #define PREP_RECOMPILE_END      }; call _recomp; ACE_recompiles pushBack _recomp;
 #else
     #define LINKFUNC(x) FUNC(x)
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction

@@ -10,7 +10,7 @@
  * 3: Amount of blood to add per action (Optional, default: 0.25) <NUMBER>
  * 4: Amount of pain to reduce per action (Optional, default: 0.1) <NUMBER>
  * 5: Whether to full heal the patient after completion (Optional, default false) <BOOL>
- * 6: Maximum number of patients (Optional, default: 0) <NUMBER>
+ * 6: Maximum number of patients (Optional, default: -1) <NUMBER>
  *    - Values < 0 signify no maximum number of patients.
  *
  * Return Value:
@@ -29,7 +29,7 @@ params [
     ["_bloodRestore", 0.25, [0]],
     ["_painReduce", 0.1, [0]],
     ["_fullHealOnCompletion", false, [false]],
-    ["_maxPatients", 0, [0]]
+    ["_maxPatients", -1, [0]]
 ];
 private ["_function", "_condition", "_exitCode", "_areaHandler"];
 TRACE_4("fnc_areaSlowHeal",_object,_radius,_rate,_maxPatients);

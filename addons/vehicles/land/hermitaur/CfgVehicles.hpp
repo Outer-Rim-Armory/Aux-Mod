@@ -235,10 +235,6 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
 
-        class EventHandlers{
-            init = "(_this #0) setVariable [""BNA_KC_vehicles_DeployCCP"", false,true]";
-        };
-
         class UserActions {
             class DeployCCP {
                 displayName = "Deploy CCP";
@@ -247,22 +243,15 @@ class CfgVehicles {
                 position = "camera";
                 showWindow = 0;
                 hideOnUse = 1;
-                onlyForPlayer = 0;
+                onlyForPlayer = 1;
                 shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployCCP"" == false && fuel this != 0;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployCCP"",true,true]; this call BNA_KC_vehicles_fnc_deployCCP;";
+                condition = QUOTE([ARR_2(this,ace_player)] call FUNC(canDeployCCP));
+                statement = QUOTE([ARR_2(this,ace_player)] call FUNC(deployCCP));
             };
-            class UnDeployCCP {
+            class UndeployCCP: DeployCCP {
                 displayName = "Undeploy CCP";
-                priority = 10;
-                radius = 5;
-                position = "camera";
-                showWindow = 0;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployCCP"" == true;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployCCP"",false,true];";
+                condition = QUOTE([ARR_2(this,ace_player)] call FUNC(canUndeployCCP));
+                statement = QUOTE([ARR_2(this,ace_player)] call FUNC(undeployCCP));
             };
         };
 
