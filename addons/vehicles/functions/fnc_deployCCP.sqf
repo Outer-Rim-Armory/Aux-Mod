@@ -21,6 +21,7 @@ TRACE_2("fnc_deployCCP",_vehicle,_player);
 
 _vehicle setVariable [QGVAR(deployedCCP), true, true];
 [_vehicle, "blockEngine", QGVAR(deployedCCP), true] call ace_common_fnc_statusEffect_set;
+[QEGVAR(core,forceSay3D), [_vehicle, QCLASS(Deploy), 100]] call CBA_fnc_globalEvent;
 
 private _handle = [
     _vehicle,

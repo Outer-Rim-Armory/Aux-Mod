@@ -166,6 +166,26 @@ class CfgVehicles {
         attendant = 1;
         threat[] = {0, 0, 0};
 
+        class UserActions {
+            class DeployCCP {
+                displayName = "Deploy CCP";
+                priority = 10;
+                radius = 5;
+                position = "camera";
+                showWindow = 0;
+                hideOnUse = 1;
+                onlyForPlayer = 1;
+                shortcut = "";
+                condition = QUOTE([ARR_2(this,ace_player)] call FUNC(canDeployCCP));
+                statement = QUOTE([ARR_2(this,ace_player)] call FUNC(deployCCP));
+            };
+            class UndeployCCP: DeployCCP {
+                displayName = "Undeploy CCP";
+                condition = QUOTE([ARR_2(this,ace_player)] call FUNC(canUndeployCCP));
+                statement = QUOTE([ARR_2(this,ace_player)] call FUNC(undeployCCP));
+            };
+        };
+
         model = "\A3\Soft_F_EPC\Truck_03\Truck_03_medevac_F.p3d";
         hiddenSelections[] = {"Camo1", "Camo2", "Camo3", "Camo4"};
         picture = "\A3\Soft_F_EPC\Truck_03\Data\UI\truck_03_medevac_CA.paa";

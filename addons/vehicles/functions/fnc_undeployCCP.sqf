@@ -24,6 +24,7 @@ private _owner = _vehicle getVariable [QGVAR(ccpOwner), clientOwner];
 
 _vehicle setVariable [QGVAR(deployedCCP), nil, true];
 [_vehicle, "blockEngine", QGVAR(deployedCCP), false] call ace_common_fnc_statusEffect_set;
+[QEGVAR(core,forceSay3D), [_vehicle, QCLASS(Undeploy), 50]] call CBA_fnc_globalEvent;
 
 {
     (_x select 0) setVariable [QEGVAR(medical,canBeHealed), false, true]; // Variable is reset when the PFH is removed

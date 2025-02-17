@@ -164,7 +164,7 @@ class CfgVehicles {
             "3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
             "3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
         };
-        textureList[] = {"Standard", 0, "KeeliCompany", 0, "BrownCamo", 0, "GreyCamo", 1, "Medic", 0, "Imperial", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0, "Medic", 0, "Imperial", 0};
         class TextureSources {
             class Standard {
                 author = AUTHOR;
@@ -247,6 +247,7 @@ class CfgVehicles {
                 shortcut = "";
                 condition = QUOTE([ARR_2(this,ace_player)] call FUNC(canDeployCCP));
                 statement = QUOTE([ARR_2(this,ace_player)] call FUNC(deployCCP));
+                [_vehicle, QCLASS(CCP_Heal_Loop), 10] call BNA_KC_core_fnc_loopSay3D;
             };
             class UndeployCCP: DeployCCP {
                 displayName = "Undeploy CCP";
