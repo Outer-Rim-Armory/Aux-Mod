@@ -247,7 +247,6 @@ class CfgVehicles {
                 shortcut = "";
                 condition = QUOTE([ARR_2(this,ace_player)] call FUNC(canDeployCCP));
                 statement = QUOTE([ARR_2(this,ace_player)] call FUNC(deployCCP));
-                [_vehicle, QCLASS(CCP_Heal_Loop), 10] call BNA_KC_core_fnc_loopSay3D;
             };
             class UndeployCCP: DeployCCP {
                 displayName = "Undeploy CCP";
