@@ -6,12 +6,13 @@ class CfgWeapons {
     #include "configs\Helmets_P2_Pilot.hpp"
     #include "configs\Helmets_P2_SpecOp.hpp"
     #include "configs\Helmets_P12.hpp"
-    #include "configs\Helmets_Insulated.hpp"
+    #include "configs\Helmets_Sand.hpp"
+    #include "configs\Helmets_Airborne.hpp"
     #include "configs\Helmets_Engineer.hpp"
+    #include "configs\Helmets_Insulated.hpp"
     #include "configs\Helmets_ARC.hpp"
     #include "configs\Helmets_ARF.hpp"
     #include "configs\Helmets_BARC.hpp"
-    #include "configs\Helmets_Airborne.hpp"
 
     #include "configs\Uniforms.hpp"
 

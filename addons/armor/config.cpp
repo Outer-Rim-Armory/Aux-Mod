@@ -299,6 +299,8 @@ class CfgPatches {
             QCLASS(Helmet_ARF_Enlisted_CamoGrey),
             QCLASS(Helmet_BARC_Base),
             QCLASS(Helmet_BARC_CT),
+            QCLASS(Helmet_Sand_Base),
+            QCLASS(Helmet_Sand_CT),
             QCLASS(Helmet_Katarn_Base),
             QCLASS(Helmet_Airborne_Base),
             QCLASS(Helmet_Airborne_CT),
