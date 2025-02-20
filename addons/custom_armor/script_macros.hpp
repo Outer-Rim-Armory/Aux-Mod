@@ -486,6 +486,46 @@ class CLASS(DOUBLES(Helmet_Phase12,var1)##var2): CLASS(DOUBLES(Helmet_Phase12,va
     }; \
 }
 
+#define SAND_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_Sand,var1)): CLASS(Helmet_Sand_Base) { \
+    displayName = QUOTE([KC] INF Sand Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\desert\DOUBLES(var1,camo1_co.paa)), \
+        "\ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Sand_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}
+
+#define SAND_HELMET_VISOR_CUSTOM(var1,var2) class CLASS(DOUBLES(Helmet_Sand,var1)): CLASS(Helmet_Sand_Base) { \
+    displayName = QUOTE([KC] INF Sand Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\desert\DOUBLES(var1,camo1_co.paa)), \
+        "\ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    EGVAR(armor,nvCanToggle) = TRUE; \
+    EGVAR(armor,nvHelmetOff) = QCLASS(DOUBLES(Helmet_Sand,var1)); \
+    EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Sand,var1)##var2##); \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Sand_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}; \
+class CLASS(DOUBLES(Helmet_Sand,var1)##var2): CLASS(DOUBLES(Helmet_Sand,var1)) { \
+    SCOPE_HIDDEN; \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\phase2\DOUBLES(var1,camo1_co.paa)), \
+        QPATHTOF(data\visors\DOUBLES(var2,desert_visor_co.paa)) \
+    }; \
+    hiddenSelectionsMaterials[] = { \
+        "", \
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat" \
+    }; \
+}
+
 #define UNIFORM_CUSTOM(var1) class CLASS(DOUBLES(Uniform,var1)): CLASS(Uniform_Base) { \
     displayName = QUOTE([KC] Custom Armor ('##var1##')); \
     GVAR(isCustom) = TRUE; \

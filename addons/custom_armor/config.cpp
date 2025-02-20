@@ -172,7 +172,9 @@ class CfgPatches {
             QGROUND_CLASS(Helmet_BARC_Lines),
             QGROUND_CLASS(Helmet_BARC_Rat),
             QGROUND_CLASS(Helmet_BARC_RatCrimson),
-            QGROUND_CLASS(Helmet_BARC_Weenie)
+            QGROUND_CLASS(Helmet_BARC_Weenie),
+            QGROUND_CLASS(Helmet_Sand_Keeli),
+            QGROUND_CLASS(Helmet_Sand_KeeliCrimson)
         };
         weapons[] = {
             QCLASS(Helmet_Phase1_Alvarez),
@@ -307,6 +309,8 @@ class CfgPatches {
             QCLASS(Helmet_BARC_Rat),
             QCLASS(Helmet_BARC_RatCrimson),
             QCLASS(Helmet_BARC_Weenie),
+            QCLASS(Helmet_Sand_Keeli),
+            QCLASS(Helmet_Sand_KeeliCrimson),
             QCLASS(Uniform_Axel),
             QCLASS(Uniform_Bailout),
             QCLASS(Uniform_Bob),
