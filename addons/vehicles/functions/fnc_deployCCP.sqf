@@ -22,15 +22,25 @@ TRACE_2("fnc_deployCCP",_vehicle,_player);
 _vehicle setVariable [QGVAR(deployedCCP), true, true];
 [_vehicle, "blockEngine", QGVAR(deployedCCP), true] call ace_common_fnc_statusEffect_set;
 [QEGVAR(core,forceSay3D), [_vehicle, QCLASS(Deploy), 100]] call CBA_fnc_globalEvent;
-[QEGVAR(core,loopSay3D), [_vehicle, QCLASS(CCP_Heal_Loop), 50]] call CBA_fnc_globalEvent;
 
 private _handle = [
     _vehicle,
     GVAR(hermitaurAreaHealRadius_M),
     GVAR(hermitaurAreaHealRate_M),
     GVAR(hermitaurHealAmount_M),
-    GVAR(hermitaurFuelHealConsumption_M)
+    GVAR(hermitaurHealAmount_M)
 ] call EFUNC(medical,areaSlowHeal);
+
+[{
+    // fuel / setFuel are 0..1 percentages
+    // 0 = no fuel, 1 = 100% fuel
+    params ["", "_vehicle"];
+    _vehicle setFuel (fuel _vehicle - GVAR(hermitaurFuelHealConsumption_M));
+}, {
+    // Run for as long as the ccp is deployed
+    params ["", "_vehicle"];
+    _vehicle getVariable [QGVAR(deployedCCP), false];
+}, {}, 1, [_vehicle]] call EFUNC(core,tempPFH);
 
 // Save the machine that created the PFH, so that it can be later removed
 // Needs to be synced since any other machine could remove it

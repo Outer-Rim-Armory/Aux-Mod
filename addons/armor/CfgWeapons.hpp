@@ -6,6 +6,16 @@ class CfgWeapons {
 
         picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
 
+        class HitpointsProtectionInfo
+    {
+        class Head
+        {
+            hitpointName = "HitHead";
+            armor = 10;
+            passThrough = 0.3;
+        };
+    };
+
         class ItemInfo;
     };
 
@@ -65,22 +75,22 @@ class CfgWeapons {
             class HitpointsProtectionInfo {
                 class Abdomen {
                     hitpointName = "HitAbdomen";
-                    armor = 12;
+                    armor = 15;
                     passThrough = 0.3;
                 };
                 class Body {
                     hitpointName = "HitBody";
-                    armor = 0;
+                    armor = 15;
                     passThrough = 0.3;
                 };
                 class Chest {
                     hitpointName = "HitChest";
-                    armor = 12;
+                    armor = 15;
                     passThrough = 0.3;
                 };
                 class Diaphragm {
                     hitpointName = "HitDiaphragm";
-                    armor = 12;
+                    armor = 15;
                     passThrough = 0.3;
                 };
             };

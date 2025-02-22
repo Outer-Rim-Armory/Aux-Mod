@@ -11,7 +11,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_PlasmaPistol_Blue);
         count = 20;
-        mass = 6;
+        mass = 2;
         initSpeed = 430;
     };
 
@@ -20,7 +20,7 @@ class CfgMagazines {
         descriptionShort = "Energy Cell Pack<br/>Rounds: 40<br/>Used In: Dual DC-17";
 
         count = 40;
-        mass = 10;
+        mass = 2;
     };
 
     class CLASS(Mag_60Rnd_DC17_dualHP): CLASS(Mag_40Rnd_DC17_dual) {
@@ -30,7 +30,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_Plasma_DC17Dual_Blue);
         count = 60;
-        mass = 15;
+        mass = 2;
         initSpeed = 430;
     };
 

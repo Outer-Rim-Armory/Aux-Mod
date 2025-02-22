@@ -14,6 +14,7 @@ class CfgWeapons {
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
+        initSpeed = 3000;
 
         magazines[] = {
             QCLASS(Mag_10Rnd_DC20Y),

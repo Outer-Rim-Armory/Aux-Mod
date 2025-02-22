@@ -325,6 +325,7 @@ class CfgAmmo {
         hit = 48;
         caliber = 2.4;
         typicalSpeed = 1750;
+        maxSpeed = 2500;
         dangerRadiusHit = -1;
         dangerRadiusBulletClose = 4;
         suppressionRadiusHit = 4;

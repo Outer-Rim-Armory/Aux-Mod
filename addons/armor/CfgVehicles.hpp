@@ -301,6 +301,7 @@ class CfgVehicles {
             "\SWLB_equipment\backpacks\data\SWLB_clone_arc_backpack_co.paa"
         };
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_arc_backpack_ca.paa";
+        maximumLoad = 600;
     };
 
     class CLASS(cloneBackpack_commando): CLASS(cloneBackpack_base) {

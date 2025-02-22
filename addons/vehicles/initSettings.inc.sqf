@@ -52,7 +52,7 @@
 
 [
     QGVAR(hermitaurFuelHealConsumption_M), "SLIDER",
-    ["Medic - Fuel Consumption", "Amount of vehicle's fuel to reduce per action"],
+    ["Medic - Fuel Consumption", "Amount of vehicle's fuel to reduce per second"],
     [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED - Hermitaur)],
-    [0, 1, 0.02, 1]
+    [0, 1, 0.001, 1]
 ] call CBA_fnc_addSetting;

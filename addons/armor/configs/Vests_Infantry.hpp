@@ -257,21 +257,39 @@ class CLASS(Vest_Officer): CLASS(Vest_Basic) {
         hiddenSelections[] = {"camo1"};
         containerClass = "Supply200";
 
-        class HitpointsProtectionInfo {
-            class Arms {
+        class HitpointsProtectionInfo
+        {
+            class Legs
+            {
+                hitpointName = "HitLegs";
+                armor = 10;
+                passThrough = 0.3;
+            };
+            class Arms
+            {
                 hitpointName = "HitArms";
                 armor = 10;
-                passThrough = 0.20000001;
+                passThrough = 0.3;
+            };
+            class Abdomen {
+                hitpointName = "HitAbdomen";
+                armor = 20;
+                passThrough = 0.3;
+            };
+            class Body {
+                hitpointName = "HitBody";
+                armor = 20;
+                passThrough = 0.3;
             };
             class Chest {
-                HitpointName = "HitChest";
+                hitpointName = "HitChest";
                 armor = 20;
-                PassThrough = 0.10000001;
+                passThrough = 0.3;
             };
-            class Legs {
-                hitpointName = "HitLegs";
+            class Diaphragm {
+                hitpointName = "HitDiaphragm";
                 armor = 20;
-                passThrough = 0.10000001;
+                passThrough = 0.3;
             };
         };
     };

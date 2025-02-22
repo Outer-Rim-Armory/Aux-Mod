@@ -29,6 +29,7 @@ class CfgWeapons {
         magazineWell[] = {};
 
         canShootInWater = TRUE;
+        initSpeed = 2500;
 
         // JLTS emp system
         JLTS_hasElectronics = TRUE;

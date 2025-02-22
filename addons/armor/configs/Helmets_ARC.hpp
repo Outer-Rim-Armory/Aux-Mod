@@ -17,6 +17,16 @@ class CLASS(Helmet_ARC_Base): CLASS(cloneHelmet_base) {
     };
     picture = "\lsd_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
 
+    class HitpointsProtectionInfo
+    {
+        class Head
+        {
+            hitpointName = "HitHead";
+            armor = 15;
+            passThrough = 0.1;
+        };
+    };
+
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1", "visor", "illum"};
         uniformModel = "\lsd_armor_bluefor\helmet\gar\arc\lsd_gar_arc_helmet";

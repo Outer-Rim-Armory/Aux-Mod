@@ -9,7 +9,7 @@ class CfgSounds {
         sound[] = {QPATHTOF(data\audio\Undeploy.wss), 5, 1, 50};
         titles[] = {"Undeployed"};
     };
-    class CLASS(CCP_Heal_Loop) {
+    class CLASS(Heal_Loop) {
         name = "CCP Heal Loop";
         sound[] = {QPATHTOF(data\audio\Heal_Loop.wss), 5, 1, 50};
         titles[] = {};
