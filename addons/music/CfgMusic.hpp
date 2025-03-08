@@ -75,7 +75,7 @@ class CfgMusic {
     MUSIC(MG_RulesOfNature,"[MG] Rules of Nature",150,VideoGames);
     MUSIC(MG_TheOnlyThingIKnowForReal,"[MG] The Only Thing I Know For Real",150,VideoGames);
     MUSIC(MG_TheStainsOfTime,"[MG] The Stains of Time",130,VideoGames);
-    MUSIC(MG_SlipperyLittleBastad,"[MG] Slippery Little Bastard",141,VideoGames);
+    MUSIC(MG_SlipperyLittleBastad,"[MG] Slippery Little Bastard",129,VideoGames);
     MUSIC(MG_TheSenatorsArrival,"[MG] The Senator's Arrival",34,VideoGames);
 
     // Monster Hunter
