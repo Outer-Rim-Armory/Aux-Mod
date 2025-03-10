@@ -264,4 +264,14 @@ class CLASS(Vest_Jaws): CLASS(Vest_CS) {
 
         GVAR(isCustom) = TRUE;
     };
+
+    class CLASS(Vest_Tanker_CT);
+    class CLASS(Vest_Grey): CLASS(Vest_Tanker_CT){
+        displayName = "[KC] ARMR Vest ('Grey')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\grey\Grey_chestplate.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
 };

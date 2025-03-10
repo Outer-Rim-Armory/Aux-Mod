@@ -40,7 +40,7 @@ class CfgWeapons
 		handAnim[]=
 		{
 			"OFP2_ManSkeleton",
-			"\A3\Weapons_F_Beta\Launchers\Titan\Data\Anim\titan.rtm"
+			"\MRC\JLTS\weapons\PLX1\anims\PLX1_handanim.rtm"
 		};
 		reloadAction="ReloadRPG";
 		recoil="recoil_titan_short";
