@@ -60,30 +60,93 @@ class CfgVehicles {
         editorCategory = QEDCAT(Objects);
         editorSubcategory = QEDSUBCAT(StaticShips);
 
-        displayName = "Resurgance (Zeus)";
+        displayName = "Venator (Resurgance)";
 
         hiddenSelectionsTextures[] = {
-            QPATHTOF(ships\data\Resurgence\Body1_co.paa),
-            QPATHTOF(ships\data\Resurgence\Body2_co.paa),
-            QPATHTOF(ships\data\Resurgence\Body3_co.paa),
-            QPATHTOF(ships\data\Resurgence\Body4_co.paa),
-            QPATHTOF(ships\data\Resurgence\Body5_co.paa),
-            QPATHTOF(ships\data\Resurgence\Body6_co.paa),
-            QPATHTOF(ships\data\Resurgence\Body7_co.paa),
-            QPATHTOF(ships\data\Resurgence\Body8_co.paa),
-            QPATHTOF(ships\data\Resurgence\Body9_co.paa),
-            QPATHTOF(ships\data\Resurgence\Body10_co.paa),
-            QPATHTOF(ships\data\Resurgence\Door_co.paa),
-            QPATHTOF(ships\data\Resurgence\Engine_co.paa),
-            QPATHTOF(ships\data\Resurgence\Interior1_co.paa),
-            QPATHTOF(ships\data\Resurgence\Interior2_co.paa),
-            QPATHTOF(ships\data\Resurgence\Interior3_co.paa),
-            QPATHTOF(ships\data\Resurgence\Interior4_co.paa),
-            QPATHTOF(ships\data\Resurgence\Interior5_co.paa),
-            QPATHTOF(ships\data\Resurgence\Interior6_co.paa),
-            QPATHTOF(ships\data\Resurgence\Interior7_co.paa),
-            QPATHTOF(ships\data\Resurgence\Interior8_co.paa),
-            QPATHTOF(ships\data\Resurgence\Bridge_co.paa)
+            QPATHTOF(ships\data\Resurgence\Old\Body1_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Body2_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Body3_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Body4_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Body5_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Body6_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Body7_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Body8_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Body9_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Body10_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Door_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Engine_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Interior1_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Interior2_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Interior3_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Interior4_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Interior5_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Interior6_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Interior7_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Interior8_co.paa),
+            QPATHTOF(ships\data\Resurgence\Old\Bridge_co.paa)
+        };
+    };
+
+    class ls_providence_zeus;
+    class CLASS(Invincible_Zeus): ls_providence_zeus {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(StaticShips);
+
+        displayName = "Providence (Invincible)";
+
+         hiddenSelectionsTextures[] = {
+            QPATHTOF(ships\data\Invincible\Body1_co.paa),
+            QPATHTOF(ships\data\Invincible\Body2_co.paa),
+            QPATHTOF(ships\data\Invincible\Body3_co.paa),
+            QPATHTOF(ships\data\Invincible\Bridge_co.paa),
+            QPATHTOF(ships\data\Invincible\Engine_co.paa),
+            QPATHTOF(ships\data\Invincible\Interior_co.paa)
+        };
+    };
+
+    class CLASS(Invisible_Hand_Zeus): ls_providence_zeus {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(StaticShips);
+
+        displayName = "Providence (Invisible Hand)";
+
+         hiddenSelectionsTextures[] = {
+            QPATHTOF(ships\data\InvisibleHand\Body1_co.paa),
+            QPATHTOF(ships\data\InvisibleHand\Body2_co.paa),
+            QPATHTOF(ships\data\InvisibleHand\Body3_co.paa),
+            QPATHTOF(ships\data\InvisibleHand\Bridge_co.paa),
+            QPATHTOF(ships\data\InvisibleHand\Engine_co.paa),
+            QPATHTOF(ships\data\InvisibleHand\Interior_co.paa)
+        };
+    };
+
+    class 442_subjugator;
+    class CLASS(Fatalis_Subjugator): 442_subjugator {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(StaticShips);
+
+        displayName = "Fatalis";
+
+        hiddenSelections[] = {"body1","body2","body3","body4","body5","bridge","emp1","emp2","engine"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(ships\data\Fatalis\Body1_co.paa),
+            QPATHTOF(ships\data\Fatalis\Body2_co.paa),
+            QPATHTOF(ships\data\Fatalis\Body3_co.paa),
+            QPATHTOF(ships\data\Fatalis\Body4_co.paa),
+            QPATHTOF(ships\data\Fatalis\Body5_co.paa),
+            QPATHTOF(ships\data\Fatalis\Bridge_co.paa),
+            QPATHTOF(ships\data\Fatalis\EMP1_co.paa),
+            QPATHTOF(ships\data\Fatalis\EMP2_co.paa),
+            QPATHTOF(ships\data\Fatalis\Engine_co.paa)
         };
     };
 };
