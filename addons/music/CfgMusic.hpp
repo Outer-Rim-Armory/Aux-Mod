@@ -140,6 +140,9 @@ class CfgMusic {
     MUSIC(Thrawn_Theme,"[SW] Thrawn Theme",336,SFX);
     MUSIC(RC_Theme,"[SW] Clone Commando Theme",239,StarWars);
     MUSIC(RC_Theme_2,"[SW] Clone Commando Theme 2",192,StarWars);
+    MUSIC(CW_Ground_Ambience,"[SW] Clone Ground Ambience",3735,StarWars);
+    MUSIC(CW_Venator_Ambience,"[SW] Venator Ambience",2499,StarWars);
+
 
     // Transformers
     MUSIC(TF_ArrivalToEarth,"[TF] Arrival To Earth",315,Other);
