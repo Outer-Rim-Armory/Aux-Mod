@@ -572,6 +572,27 @@ class CLASS(Unit_Splashdown): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Star): CLASS(Unit_Phase2_Base) {
+    displayName = "Star";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Star);
+
+    uniformClass = QCLASS(Uniform_Star);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Star_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Star_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Airborne_Star), QCLASS(Vest_Airborne_CS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Airborne_Star), QCLASS(Vest_Airborne_CS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Swoop): CLASS(Unit_Phase2_Base) {
     displayName = "Swoop";
 

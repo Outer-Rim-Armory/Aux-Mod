@@ -65,8 +65,8 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Jetpack_JT12);
-    class CLASS(Leon_JT12): CLASS(Jetpack_JT12) {
+    class CLASS(Jetpack_JT12_LR);
+    class CLASS(Leon_JT12): CLASS(Jetpack_JT12_LR) {
         displayName = "[KC] JT-12 Jetpack ('Leon')";
 
         hiddenSelectionsTextures[] = {

@@ -265,11 +265,14 @@ class CLASS(Vest_Jaws): CLASS(Vest_CS) {
         GVAR(isCustom) = TRUE;
     };
 
-    class CLASS(Vest_Tanker_CT);
-    class CLASS(Vest_Grey): CLASS(Vest_Tanker_CT){
+    class CLASS(Vest_Tanker_CS);
+    class CLASS(Vest_Grey): CLASS(Vest_Tanker_CS){
         displayName = "[KC] ARMR Vest ('Grey')";
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\vests\grey\Grey_chestplate.paa)
+            QPATHTOF(data\vests\grey\Grey_chestplate.paa),
+            QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
+            QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
+            QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)  // Pauldron
         };
 
         GVAR(isCustom) = TRUE;

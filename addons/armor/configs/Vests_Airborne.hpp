@@ -17,7 +17,7 @@ class CLASS(Vest_Airborne_CT): CLASS(Vest_Basic) {
     };
 };
 
-class CLASS(Vest_Airborne_Medic): CLASS(Vest_Basic) {
+class CLASS(Vest_Airborne_Medic): CLASS(Vest_Medic) {
     displayName = "[KC] AB Vest 02 (Medic)";
 
     model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
@@ -36,7 +36,7 @@ class CLASS(Vest_Airborne_Medic): CLASS(Vest_Basic) {
     };
 };
 
-class CLASS(Vest_Airborne_Medic_v2): CLASS(Vest_Basic) {
+class CLASS(Vest_Airborne_Medic_v2): CLASS(Vest_Medic) {
     displayName = "[KC] AB Vest 02 (Medic V2)";
 
     model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
