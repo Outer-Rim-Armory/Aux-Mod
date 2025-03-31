@@ -457,10 +457,10 @@ class CLASS(Unit_Leon): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Airborne_Leon), QCLASS(Vest_Airborne_CT), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Airborne_Leon), QCLASS(Vest_Airborne_Medic), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Airborne_Leon), QCLASS(Vest_Airborne_CT), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Airborne_Leon), QCLASS(Vest_Airborne_Medic), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -586,10 +586,10 @@ class CLASS(Unit_Star): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Airborne_Star), QCLASS(Vest_Airborne_CS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Star), QCLASS(Vest_Airborne_CS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Airborne_Star), QCLASS(Vest_Airborne_CS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Star), QCLASS(Vest_Airborne_CS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
