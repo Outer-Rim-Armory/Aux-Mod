@@ -360,7 +360,7 @@ class CfgVehicles {
 
         model = "\MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\jetpacks\KC_JT12_co.paa),QPATHTOF(data\backpacks\jetpacks\KC_JT12_net_co.paa)};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
 
         EGVAR(jetpacks,isJetpack) = TRUE;
@@ -402,7 +402,7 @@ class CfgVehicles {
         displayName = "[KC] CDV-21 Droppack";
 
         model = "\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\jetpacks\KC_JT12_co.paa),QPATHTOF(data\backpacks\jetpacks\KC_JT12_net_co.paa)};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
 
         EGVAR(jetpacks,strength) = 0;

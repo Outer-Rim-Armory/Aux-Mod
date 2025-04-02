@@ -65,15 +65,5 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Jetpack_JT12_LR);
-    class CLASS(Leon_JT12): CLASS(Jetpack_JT12_LR) {
-        displayName = "[KC] JT-12 Jetpack ('Leon')";
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\backpacks\Leon\Leon_JT12_co.paa),
-            QPATHTOF(data\backpacks\jetpacks\KC_JT12_net_co.paa)
-        };
-    };
-
     #include "configs\GroundHolders.hpp"
 };

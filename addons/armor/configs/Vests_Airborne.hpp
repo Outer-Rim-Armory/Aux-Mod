@@ -17,44 +17,6 @@ class CLASS(Vest_Airborne_CT): CLASS(Vest_Basic) {
     };
 };
 
-class CLASS(Vest_Airborne_Medic): CLASS(Vest_Medic) {
-    displayName = "[KC] AB Vest 02 (Medic)";
-
-    model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
-    hiddenSelections[] = {"camo1", "camo2", "ammo", "pauldron"};
-    hiddenSelectionsTextures[] = {
-        QPATHTOF(data\vests\infantry\heavy\Medic_camo1_co.paa), // Bag and Chest Strap
-        QPATHTOF(data\vests\infantry\officer\Wyvern_Medic_camo1_co.paa),   // Kama
-        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Ammo
-        ""                                                            // Pauldron
-    };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
-
-    class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"camo1", "camo2", "ammo", "pauldron"};
-        uniformModel = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
-    };
-};
-
-class CLASS(Vest_Airborne_Medic_v2): CLASS(Vest_Medic) {
-    displayName = "[KC] AB Vest 02 (Medic V2)";
-
-    model = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
-    hiddenSelections[] = {"camo1", "camo2", "ammo", "pauldron"};
-    hiddenSelectionsTextures[] = {
-        QPATHTOF(data\vests\infantry\heavy\Medic_v2_camo1_co.paa), // Bag and Chest Strap
-        QPATHTOF(data\vests\infantry\officer\Wyvern_Medic_camo1_co.paa),   // Kama
-        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Ammo
-        ""                                                            // Pauldron
-    };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
-
-    class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"camo1", "camo2", "ammo", "pauldron"};
-        uniformModel = "\SWLB_clones\SWLB_clone_airborne_armor.p3d";
-    };
-};
-
 class CLASS(Vest_Airborne_CS): CLASS(Vest_Airborne_CT) {
     displayName = "[KC] AB Vest 06 (NCO)";
     hiddenSelectionsTextures[] = {

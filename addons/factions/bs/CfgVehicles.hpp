@@ -23,7 +23,7 @@ class CfgVehicles {
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         uniformClass = QCLASS(BS_Uniform);
         hiddenSelections[] = {"camo", "insignia"};
-        hiddenSelectionsTextures[] = {"\ls_armor_greenfor\uniform\mandalorian\undersuit\data\uniform_undersuit_co.paa"};
+        hiddenSelectionsTexBSres[] = {"\ls_armor_greenfor\uniform\mandalorian\undersuit\data\uniform_undersuit_co.paa"};
     };
 
     class CLASS(BS_Unit_Rifleman): CLASS(BS_Unit_Base) {

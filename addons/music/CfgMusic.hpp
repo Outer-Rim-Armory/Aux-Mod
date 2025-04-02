@@ -75,7 +75,7 @@ class CfgMusic {
     MUSIC(MG_RulesOfNature,"[MG] Rules of Nature",150,VideoGames);
     MUSIC(MG_TheOnlyThingIKnowForReal,"[MG] The Only Thing I Know For Real",150,VideoGames);
     MUSIC(MG_TheStainsOfTime,"[MG] The Stains of Time",130,VideoGames);
-    MUSIC(MG_SlipperyLittleBastard,"[MG] Slippery Little Bastard",129,VideoGames);
+    MUSIC(MG_SlipperyLittleBastad,"[MG] Slippery Little Bastard",141,VideoGames);
     MUSIC(MG_TheSenatorsArrival,"[MG] The Senator's Arrival",34,VideoGames);
 
     // Monster Hunter
@@ -140,9 +140,6 @@ class CfgMusic {
     MUSIC(Thrawn_Theme,"[SW] Thrawn Theme",336,SFX);
     MUSIC(RC_Theme,"[SW] Clone Commando Theme",239,StarWars);
     MUSIC(RC_Theme_2,"[SW] Clone Commando Theme 2",192,StarWars);
-    MUSIC(CW_Ground_Ambience,"[SW] Clone Ground Ambience",3735,StarWars);
-    MUSIC(CW_Venator_Ambience,"[SW] Venator Ambience",2499,StarWars);
-
 
     // Transformers
     MUSIC(TF_ArrivalToEarth,"[TF] Arrival To Earth",315,Other);

@@ -34,13 +34,6 @@ class CfgWeapons {
     #include "configs\Helmets_ARF.hpp"
     #include "configs\Helmets_BARC.hpp"
     #include "configs\Helmets_cloneCommando.hpp"
-    #include "configs\Helmets_Scout.hpp"
-    #include "configs\Helmets_Scout_CT.hpp"
-    #include "configs\Helmets_Scout_Brown.hpp"
-    #include "configs\Helmets_Scout_Grey.hpp"
-    #include "configs\Helmets_ATRT.hpp"
-    #include "configs\Helmets_ATRT_CT_V1.hpp"
-    #include "configs\Helmets_ATRT_CT_V2.hpp"
 
     class ls_blueforUniform_base;
     class ls_gar_phase2_uniform: ls_blueforUniform_base {
