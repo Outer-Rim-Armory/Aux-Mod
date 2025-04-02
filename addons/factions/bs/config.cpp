@@ -8,9 +8,10 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "SC_MDF",
+            "OPTRE_UNSC_Units_Army",
+            "OPTRE_UNSC_Units_NVGs",
+            "OPTRE_Weapons_Backpacks",
             "sc_equipment",
-            "ScionPatch",
             "ls_armor_greenfor",
 
         };
