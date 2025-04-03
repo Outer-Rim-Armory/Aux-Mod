@@ -13,7 +13,7 @@
 ] call CBA_fnc_addSetting;
 [
     "BNA_KC_vehicles_healAmount_M","SLIDER",
-    ["Heal Units - Amount", "Healing amount receives."],
+    ["Heal Units - Amount", format ["Healing amount receives.%1ACE Medical System(Healing capabilities):%2• Unconscious%3• Fire Damage%4• Tourniquets%5• Occluded Medications%6• Open Wounds%7• Bandage Wounds%8• Stitched Wounds%9• Limp%10• Fractures%11• Heart Rate%12• Blood Pressure%13• Peripheral Resistance%14• SPO2%15• Oxygen Demand%16• Body Part Damage%17• Hemorrhage%18• Pain%19• Pain Suppress%20• Blood Volume%21%22%23",endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl,endl]],
     ["Keeli Company Auxillary Mod", "Vehicle Skills"],
     [0, 1, 0.01, 1]
 ] call CBA_fnc_addSetting;
