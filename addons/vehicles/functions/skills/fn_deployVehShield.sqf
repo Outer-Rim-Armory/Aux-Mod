@@ -46,8 +46,6 @@ _obj spawn
 
 			if (_aceMedLoaded) then
 			{
-			    // [objNull, _unit] call ace_medical_treatment_fnc_fullHeal;
-			    
 			    if (_unit getVariable ["ace_medical_allowDamage", true]) then
 			    {
 			        _unit setVariable ["ace_medical_allowDamage", false];
