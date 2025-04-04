@@ -23,6 +23,10 @@ class CfgFunctions
             {
                 description = "Deploy Vehicle Repair";
             };
+            class deployCitadelShield
+            {
+                description = "Deploy Citadel Shield";
+            };
         };
     };
 };
