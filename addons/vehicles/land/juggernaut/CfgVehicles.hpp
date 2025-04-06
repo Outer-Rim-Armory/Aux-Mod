@@ -122,10 +122,7 @@ class CfgVehicles {
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
         };
-        class EventHandlers
-        {
-            init = "(_this # 0) setVariable [""BNA_KC_vehicles_DeployCitadelShield"", false,true];";
-        };
+
         class UserActions: UserActions {
             class Crow_Nest_Up: Crow_Nest_Up {
                 condition = QUOTE(this animationSourcePhase 'crownest' == 0 and alive this and ace_player == this turretUnit [4]);
@@ -138,34 +135,6 @@ class CfgVehicles {
             };
             class Close_Rockets: Close_Rockets {
                 condition = QUOTE(this animationSourcePhase 'rocket_move' == 0 and alive this and ace_player == this turretUnit [3]);
-            };
-            class DeployCitadelShield
-            {
-                displayName = "Deploy Citadel Shield"
-                displayNameDefault = "";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 1;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployCitadelShield"" == false && fuel this != 0;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployCitadelShield"",true,true];this call BNA_KC_vehicles_fnc_deployCitadelShield;";
-            };
-            class UnDeployCitadelShield
-            {
-                displayName = "Undeploy Citadel Shield"
-                displayNameDefault = "";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 0;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployCitadelShield"" == true;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployCitadelShield"",false,true];";
             };
         };
 

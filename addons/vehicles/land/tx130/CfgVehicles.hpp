@@ -166,41 +166,6 @@ class CfgVehicles {
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
         };
-        class EventHandlers
-        {
-            init = "(_this # 0) setVariable [""BNA_KC_vehicles_DeployVehShield"", false,true];";
-        };
-        class UserActions
-        {
-            class DeployVehShield
-            {
-                displayName = "Deploy Assault Shield";
-                displayNameDefault = "<img size='2' image='a3\missions_f_beta\data\img\portraitmptypedefense_ca.paa'/>";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 1;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployVehShield"" == false && fuel this != 0;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployVehShield"",true,true];this call BNA_KC_vehicles_fnc_deployVehShield;";
-            };
-            class UnDeployVehShield
-            {
-                displayName = "Undeploy Assault Shield";
-                displayNameDefault = "";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 0;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployVehShield"" == true;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployVehShield"",false,true];";
-            };
-        };
     };
 
     class 3AS_Saber_02_Base;
