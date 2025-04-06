@@ -33,8 +33,7 @@ _obj spawn
 		};
 		
 		private _isFriend = _obj call BIS_fnc_friendlySides; 
-		// private _near = entities [["CAManBase"], [], true, true] select {side _x in _isFriend};
-		private _near = [_obj,allUnits,_radius,{side _x in _isFriend}] call CBA_fnc_getNearest;
+		private _near = [_obj,allUnits,_radius,{side _x in _isFriend && {alive _x}}] call CBA_fnc_getNearest;
 		_fuel = _fuel - _fuelDeduction;
 		_obj setFuel _fuel;
 		uiSleep 1;
