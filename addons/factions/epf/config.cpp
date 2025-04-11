@@ -11,7 +11,6 @@ class CfgPatches {
             "sc_equipment",
             "SC_EA",
             "SC_MDF",
-            "ScionPatch",
         };
         units[] = {
             QCLASS(EPF_Unit_Base),

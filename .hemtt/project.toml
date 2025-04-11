@@ -1,7 +1,7 @@
 name = "Keeli Company Auxillary Mod"
 author = "Keeli Company Aux Team"
 prefix = "BNA_KC"
-mainprefix = "ORA"
+mainprefix = ""
 
 [version]
 path = "addons/core/script_version.hpp"
@@ -33,7 +33,7 @@ workshop = [
     "1702480117", # 212th Auxiliary Assets
     # "2522638637", # ACE Arsenal Extended
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
-    # "2954535667", # Warmantle Armory # Unused
+    "2954535667", # Warmantle Armory
     "767380317", # Blastcore # Only used to test particle effects
     "2061309401", # Last Force Project
     "2291129343", # Improved Melee System
@@ -55,18 +55,10 @@ workshop = [
     "1572627279", # OPTRE First Contact
     "2915485125", # Burn 'Em
     "2789152015", # WBK Zombies
-    "2954535667", # Warmantle Armory # Unused
     "2478080991", # Scion Conflict
     "2323185592", # Lightsabers and Force
     "570118882", # No Weapon Sway
-    "2757485942", # Scion Conflict Vehicle Extension
     "3328314886", # Heavy Weapon Framework
-    "2918542818", # Sci-fi Support Plus
-    "2447965207", # Crows Zeus Additions
-    "2387297579", # Zeus Additions
-    "2797232351", # Root's Effects - Zeus Module
-    "2699465073", # Fire Support Plus
-    "2836999643", # Air Support Plus
 ]
 optionals = ["no_burn_screams"]
 
