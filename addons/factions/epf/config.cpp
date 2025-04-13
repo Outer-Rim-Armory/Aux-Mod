@@ -9,8 +9,6 @@ class CfgPatches {
         requiredAddons[] = {
             QUOTE(ADDON),
             "sc_equipment",
-            "SC_EA",
-            "SC_MDF",
         };
         units[] = {
             QCLASS(EPF_Unit_Base),
