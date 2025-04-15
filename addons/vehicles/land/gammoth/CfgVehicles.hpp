@@ -17,7 +17,7 @@ class CfgVehicles {
         terrainCoef = 2.5; // was 1.8
         maxSpeed = 120; // was 90
 
-        // hiddenSelectionsTextures[] = {}; //Commenting out this will results to invisible textures
+        hiddenSelectionsTextures[] = {};
         textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources {
             class CamoKC {

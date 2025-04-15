@@ -1,4 +1,6 @@
 
+
+
 params 
 [
 	["_obj", objNull, [objNull]]
@@ -8,8 +10,7 @@ if (isGamePaused) then {continue};
 
 private _vD = vectorDir _obj;
 private _vU = vectorUp _obj;
-private _hold = "3AS_ShieldTank_Shield" createVehicle getPos _obj;
-_hold setPosWorld getPosWorld _obj;
+private _hold = "3AS_ShieldTank_Shield" createVehicle position _obj;
 _hold setDir (getDir _obj);
 _hold setVectorDirAndUp [_vD,_vU];
 _obj attachTo [_hold]; 
