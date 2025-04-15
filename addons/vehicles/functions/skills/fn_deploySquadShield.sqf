@@ -10,8 +10,7 @@ if (isGamePaused) then {continue};
 
 private _vD = vectorDir _obj;
 private _vU = vectorUp _obj;
-private _hold = "SquadShield" createVehicle getPos _obj;
-_hold setPosWorld getPosWorld _obj;
+private _hold = "Land_HelipadEmpty_F" createVehicle position _obj;
 _hold setDir (getDir _obj);
 _hold setVectorDirAndUp [_vD,_vU];
 _obj attachTo [_hold];

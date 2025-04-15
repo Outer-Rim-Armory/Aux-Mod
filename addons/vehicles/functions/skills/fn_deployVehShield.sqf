@@ -8,18 +8,9 @@ params
 
 if (isGamePaused) then {continue};
 
-private _vD = vectorDir _obj;
-private _vU = vectorUp _obj;
-private _hold = "Aux501_Weapons_Grenades_Special_Object_Trench_Shield" createVehicle getPos _obj;
-_hold setPosWorld (ATLToASL (_obj modelToWorld [0,1,1]));
-_hold setDir (getDir _obj);
-_hold setVectorDirAndUp [_vD,_vU];
-_hold attachTo [_obj];
-
-
-[_obj,_hold] spawn
+_obj spawn
 {
-	params ["_obj", "_hold"];
+	params ["_obj"];
 	
 	
 	private _radius = missionNamespace getVariable "BNA_KC_vehicles_areaShieldRadius_E";
@@ -32,13 +23,12 @@ _hold attachTo [_obj];
 	{
 		if (_obj getVariable "BNA_KC_vehicles_DeployVehShield" == false || isNull _obj || fuel _obj == 0) exitWith
 		{
+			
 			{
 				_x setVariable ["ace_medical_allowDamage", true];
 			} forEach _aceDmgDisabledObj;
 			_obj setVariable ["BNA_KC_vehicles_DeployVehShield_DisabledDmgACE",[],true];
 			_obj setVariable ["BNA_KC_vehicles_DeployVehShield",false,true];
-			detach _hold;
-			deleteVehicle _hold;
 			true;
 		};
 		
