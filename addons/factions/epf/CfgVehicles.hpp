@@ -191,23 +191,6 @@ class CfgVehicles {
         backpack = QCLASS(EPF_Backpack_Heavy);
     };
 
-    class CLASS(EPF_Unit_Guard): CLASS(EPF_Unit_Rifleman) {
-        displayName = "El Guard";
-        editorPreview = EDITOR_PREVIEW(EPF_Unit_Guard);
-        editorSubcategory = QEDSUBCAT(Special);
-        icon = "iconManLeader";
-
-        weapons[] = {QCLASS(E5), "", "Throw", "Put"};
-        respawnWeapons[] = {QCLASS(E5), "", "Throw", "Put"};
-
-        magazines[] = {QCLASS(Mag_100Rnd_E5)};
-        respawnMagazines[] = {QCLASS(Mag_100Rnd_E5)};
-
-        linkedItems[] = {QCLASS(EPF_Helmet_Guard), QCLASS(EPF_Vest_Guard), QCLASS(cloneNvg_chip), "SC_MDFCape_OD", LINKED_ITEMS_RADIO};
-        respawnLinkedItems[] = {QCLASS(EPF_Helmet_Guard), QCLASS(EPF_Vest_Guard), QCLASS(cloneNvg_chip), "SC_MDFCape_OD", LINKED_ITEMS_RADIO};
-        backpack = QCLASS(EPF_Backpack_Predef_Guard);
-    };
-
     class CLASS(EPF_Unit_Presidente): CLASS(EPF_Unit_Rifleman) {
         displayName = "El Presidente";
         uniformClass = QCLASS(EPF_Uniform_Presidente);
@@ -406,26 +389,6 @@ class CfgVehicles {
         tf_subtype = "digital_lr";
     };
     class CLASS(EPF_Backpack_RTO_Predef_SL): CLASS(EPF_Backpack_RTO) {
-        SCOPE_HIDDEN;
-
-        class TransportMagazines {
-            MAG_XX(CLASS(Mag_100Rnd_E5),10);
-            MAG_XX(SC_IG3,2);
-            MAG_XX(SmokeShell,2);
-            MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(OPTRE_FC_PlasmaGrenade,5);
-        };
-    };
-    class CLASS(EPF_Backpack_Guard): CLASS(EPF_Backpack) {
-        displayName = "[EPF] Guard Backpack";
-        maximumLoad = 300;
-        mass = 35;
-
-        model = "MDF\MDFBackpack.p3d";
-        hiddenSelectionsTextures[] = {"MDFEA_Equipment\Backpack\MDF_Pack_OD.paa"};
-        picture = "\MDF\MDF.paa";
-    };
-    class CLASS(EPF_Backpack_Predef_Guard): CLASS(EPF_Backpack_Guard) {
         SCOPE_HIDDEN;
 
         class TransportMagazines {

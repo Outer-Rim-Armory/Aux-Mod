@@ -81,11 +81,13 @@ class CfgMusic {
     // Monster Hunter
     MUSIC(MH_FatalisMedley,"[MH] Fatalis Medley",1093,VideoGames);
     MUSIC(MHW_Fatalis_Theme,"[MH] Fatalis Theme",162,VideoGames);
+    MUSIC(MH_POAH,"[MH] Proof of a Hero",142,VideoGames);
 
     // Modern Warfare
     MUSIC(MW_ThemeCalm,"[MW] Theme (Calm)",206,VideoGames);
     MUSIC(MW_ThemeHopeful,"[MW] Theme (Hopeful)",167,VideoGames);
     MUSIC(MW_ThemeHype,"[MW] Theme (Hype)",336,VideoGames);
+    MUSIC(MW_Sheperds_Betrayal,"[MW] Sheperds Betrayal",132,VideoGames);
 
     // One Piece
     MUSIC(OP_Fujitora,"[OP] Fujitora's Theme",67,Anime);

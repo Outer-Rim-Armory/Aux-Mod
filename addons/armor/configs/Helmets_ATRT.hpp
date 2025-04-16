@@ -1,7 +1,7 @@
 class CLASS(Helmet_ATRT_Base): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF ATRT Helm (Base)";
+    displayName = "[KC] SF AT-RT Helm (Base)";
 
     model = "ls_armor_bluefor\helmet\gar\atrt\ls_gar_atrt_helmet.p3d";
     hiddenSelections[] = {"camo1","camo2"};
@@ -18,7 +18,7 @@ class CLASS(Helmet_ATRT_Base): CLASS(cloneHelmet_base) {
 class CLASS(Helmet_ATRT_CT_V1): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF ATRT Helm (CT V1)";
+    displayName = "[KC] SF AT-RT Helm (CT V1)";
 
     model = "ls_armor_bluefor\helmet\gar\atrt\ls_gar_atrt_helmet.p3d";
     hiddenSelections[] = {"camo1","camo2"};
@@ -35,7 +35,7 @@ class CLASS(Helmet_ATRT_CT_V1): CLASS(cloneHelmet_base) {
 class CLASS(Helmet_ATRT_CT_V2): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF ATRT Helm (CT V2)";
+    displayName = "[KC] SF AT-RT Helm (CT V2)";
 
     model = "ls_armor_bluefor\helmet\gar\atrt\ls_gar_atrt_helmet.p3d";
     hiddenSelections[] = {"camo1","camo2"};
