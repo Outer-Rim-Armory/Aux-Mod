@@ -8,8 +8,8 @@ class CLASS(Helmet_BARC_Burnt_Worn): CLASS(Helmet_BARC_Base) {
         "\ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
     };
 
-    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_BARC_Keeli_Worn);
-    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_BARC_KeeliCrimson_Worn);
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_BARC_Burnt_Worn);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_BARC_BurntBacta_Worn);
 
     class XtdGearInfo: XtdGearInfo {
         camo = "Worn";
