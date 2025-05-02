@@ -3,15 +3,15 @@
 //- Control Styles:   https://community.bistudio.com/wiki/Arma:_GUI_Configuration#Control_Styles
 
 //Eden Editor macros such as background colour and pixel grid
-#include "\a3\3DEN\UI\macros.inc"
+// #include "\a3\3DEN\UI\macros.inc"
 //Eden Editor advanced macros
-#include "\a3\3den\ui\macroexecs.inc"
+// #include "\a3\3den\ui\macroexecs.inc"
 //GRIDs
-#include "\a3\ui_f\hpp\definecommongrids.inc"
+// #include "\a3\ui_f\hpp\definecommongrids.inc"
 //DIK Key Codes
-#include "\a3\ui_f\hpp\definedikcodes.inc"
+// #include "\a3\ui_f\hpp\definedikcodes.inc"
 //Eden Editor IDDs and IDCs as well as control types, styles and macros
-#include "\a3\3den\ui\resincl.inc"
+// #include "\a3\3den\ui\resincl.inc"
 
 
 //Classic Base Controls
