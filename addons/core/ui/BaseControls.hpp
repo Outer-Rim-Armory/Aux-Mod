@@ -34,3 +34,4 @@ class RscButtonMenuSteam;
 class RscMapControl;
 class RscMapControlEmpty;
 class RscCheckBox;
+class RscDisplayEmpty;
