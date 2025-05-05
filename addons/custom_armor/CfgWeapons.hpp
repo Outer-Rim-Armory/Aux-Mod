@@ -207,6 +207,15 @@ class CfgWeapons {
 
         GVAR(isCustom) = TRUE;
     };
+    class CLASS(cloneVest_arc_Harry): CLASS(Vest_ARC) {
+        displayName = "[KC] SF ARC Vest ('Harry')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\harry\camo1_co.paa),
+            QPATHTOF(data\vests\harry\camo2_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
     class CLASS(cloneVest_arc_Hagrid): CLASS(Vest_ARC) {
         displayName = "[KC] SF ARC Vest ('Hagrid')";
         hiddenSelectionsTextures[] = {
