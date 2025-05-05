@@ -13,7 +13,7 @@ class RscEdit;
 class RscCombo;
 class RscListBox;
 class RscListNBox;
-class RscXListBox;
+class RscXListbox;
 class RscTree;
 class RscSlider;
 class RscXSliderH;
