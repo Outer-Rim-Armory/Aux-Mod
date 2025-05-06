@@ -27,6 +27,7 @@ ARC_HELMET_VISOR_CUSTOM(Drake,Bacta);
 //    };
 //};
 
+ARC_HELMET_CUSTOM(Cough);
 ARC_HELMET_VISOR_CUSTOM(Hagrid,Plasma);
 ARC_HELMET_CUSTOM(Harry);
 ARC_HELMET_VISOR_CUSTOM(Sin,Crimson);
