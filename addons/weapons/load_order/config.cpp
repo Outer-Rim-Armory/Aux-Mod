@@ -12,6 +12,7 @@ class CfgPatches {
             QGVAR(accessories),
             QGVAR(arkanian),
             QGVAR(b2Blaster),
+            QGVAR(cloneknife),
             QGVAR(dc15a),
             QGVAR(dc15c),
             QGVAR(dc15l),
