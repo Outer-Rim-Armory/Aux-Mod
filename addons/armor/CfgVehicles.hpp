@@ -307,7 +307,7 @@ class CfgVehicles {
     class CLASS(cloneBackpack_commando): CLASS(cloneBackpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] SF Commando Backpack";
-
+    
         model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02.p3d";
         hiddenSelections[] = {"illum", "camo1"};
         hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
@@ -316,8 +316,15 @@ class CfgVehicles {
             "\SWLB_clones_spec\backpacks\data\backpack_co.paa"
         };
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
-
-        maximumLoad = 450;
+        // TFAR Long Range
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+    
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+        maximumLoad = 600;
         EGVAR(custom_armor,isCustom) = FALSE;
     };
 
@@ -332,14 +339,6 @@ class CfgVehicles {
         model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_rto.p3d";
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_rto_ca.paa";
 
-        // TFAR Long Range
-        tf_hasLRradio = TRUE;
-        tf_range = 25000;
-
-        tf_dialog = "SWLB_clone_rto_radio_dialog";
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_subtype = "digital_lr";
     };
 
     class CLASS(cloneBackpack_commando_Tech): CLASS(cloneBackpack_commando) {
