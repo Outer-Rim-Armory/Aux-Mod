@@ -526,6 +526,19 @@ class CLASS(DOUBLES(Helmet_Sand,var1)##var2): CLASS(DOUBLES(Helmet_Sand,var1)) {
     }; \
 }
 
+#define HUNTER_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_Hunter,var1)): CLASS(Helmet_Hunter_Base) { \
+    displayName = QUOTE([KC] INF Hunter Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\hunter\DOUBLES(var1,camo1_co.paa)), \
+        "ls_armor_bluefor\helmet\sob\hunter\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Hunter_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}
+
 #define UNIFORM_CUSTOM(var1) class CLASS(DOUBLES(Uniform,var1)): CLASS(Uniform_Base) { \
     displayName = QUOTE([KC] Custom Armor ('##var1##')); \
     GVAR(isCustom) = TRUE; \
