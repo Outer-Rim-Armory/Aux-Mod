@@ -8,8 +8,6 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "sc_props",
-            "SC_MDF",
             "sc_equipment",
         };
         units[] = {
