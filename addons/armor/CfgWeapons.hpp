@@ -77,13 +77,11 @@ class CfgWeapons {
     };
 
     class WM_P3Scout;
-    class CLASS(Scout_Uniform_Base): WM_P3Scout {
+    class CLASS(Uniform_Scout_Base): WM_P3Scout {
         SCOPE_PUBLIC;
 
         author = AUTHOR;
-
-        displayName = "[KC] Scout Armor (Base)";
-        picture = "\WarMantle\WM_Imperial_Core\data\ui\wm_stormarmor_ca.paa";
+        displayName = "[KC] SF Scout Armor (Base)";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(Unit_Scout_Base);

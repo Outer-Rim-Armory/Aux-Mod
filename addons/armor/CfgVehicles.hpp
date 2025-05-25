@@ -77,7 +77,7 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(SpecialForces);
 
         displayName = "SF Scout 01 (Base)";
-        uniformClass = QCLASS(Scout_Uniform_Base);
+        uniformClass = QCLASS(Uniform_Scout_Base);
 
         // Inventory
         weapons[] = {
