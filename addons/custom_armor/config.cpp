@@ -336,6 +336,7 @@ class CfgPatches {
             QCLASS(Uniform_Bob),
             QCLASS(Uniform_Burnt),
             QCLASS(Uniform_Catholic),
+            QCLASS(Uniform_Cough),
             QCLASS(Uniform_Cutthroat),
             QCLASS(Uniform_Defter),
             QCLASS(Uniform_Dexus),

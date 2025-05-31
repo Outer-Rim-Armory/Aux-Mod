@@ -136,26 +136,26 @@ class CLASS(Unit_Catholic): CLASS(Unit_Phase2_Base) {
     };
 };
 
-//class CLASS(Unit_Cough): CLASS(Unit_Phase2_Base) {
-//    displayName = "Cough";
+class CLASS(Unit_Cough): CLASS(Unit_Phase2_Base) {
+    displayName = "Cough";
 
-//    editorSubcategory = QEDSUBCAT(Customs);
-//    editorPreview = EDITOR_PREVIEW(Unit_Cough);
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Cough);
 
-//    uniformClass = QCLASS(Uniform_Cough);
-//    hiddenSelectionsTextures[] = {
-//        QPATHTOF(data\uniforms\standard\Cough_upper_co.paa),
-//        QPATHTOF(data\uniforms\standard\Cough_lower_co.paa),
-//        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
-//    };
+    uniformClass = QCLASS(Uniform_Cough);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Cough_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Cough_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
 
-//    linkedItems[] = {
-//        QCLASS(Helmet_ARC_Cough), QCLASS(Vest_ARC), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
-//    };
-//    respawnLinkedItems[] = {
-//        QCLASS(Helmet_ARC_Cough), QCLASS(Vest_ARC), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
-//    };
-//};
+    linkedItems[] = {
+        QCLASS(Helmet_ARC_Cough), QCLASS(Vest_ARC), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_ARC_Cough), QCLASS(Vest_ARC), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
 
 class CLASS(Unit_Cutthroat): CLASS(Unit_Phase2_Base) {
     displayName = "Cutthroat";

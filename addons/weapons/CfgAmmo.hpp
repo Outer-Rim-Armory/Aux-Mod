@@ -191,7 +191,7 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaCarbine_Blue2): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
-        hit = 18;
+        hit = 40;
         caliber = 1;
         typicalSpeed = 820;
         dangerRadiusHit = 12;
@@ -1125,8 +1125,8 @@ class CfgAmmo {
         };
     };
 
-    class ammo_Penetrator_Base;
-    class CLASS(Rocket_Submunition_Base): ammo_Penetrator_Base {
+    class ammo_Penetrator_RPG32V;
+    class CLASS(Rocket_Submunition_Base): ammo_Penetrator_RPG32V {
         SCOPE_PUBLIC;
 
         hit = 480;
