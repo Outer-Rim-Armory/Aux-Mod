@@ -76,12 +76,13 @@ class CfgWeapons {
         };
     };
 
-    class WM_P3Scout;
-    class CLASS(Uniform_Scout_Base): WM_P3Scout {
+
+    class CLASS(Uniform_Scout_Base): CLASS(Uniform_Base) {
         SCOPE_PUBLIC;
 
         author = AUTHOR;
         displayName = "[KC] SF Scout Armor (Base)";
+        model = "WarMantle\WM_Imperial_Clones\P3Scout.p3d";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(Unit_Scout_Base);
