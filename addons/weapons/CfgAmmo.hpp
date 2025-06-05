@@ -191,7 +191,7 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaCarbine_Blue2): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
-        hit = 40;
+        hit = 18;
         caliber = 1;
         typicalSpeed = 820;
         dangerRadiusHit = 12;
@@ -411,10 +411,6 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaMachineGun_Red): CLASS(Bullet_PlasmaMachineGun_Blue) {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
-    };
-    class CLASS(Bullet_PlasmaMachineGun_Yellow): CLASS(Bullet_PlasmaMachineGun_Blue) {
-        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
-        effectfly = "JLTS_plasma_yellow";
     };
     class CLASS(Bullet_PlasmaMachineGun_Green): CLASS(Bullet_PlasmaMachineGun_Blue) {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
@@ -1129,8 +1125,8 @@ class CfgAmmo {
         };
     };
 
-    class ammo_Penetrator_RPG32V;
-    class CLASS(Rocket_Submunition_Base): ammo_Penetrator_RPG32V {
+    class ammo_Penetrator_Base;
+    class CLASS(Rocket_Submunition_Base): ammo_Penetrator_Base {
         SCOPE_PUBLIC;
 
         hit = 480;

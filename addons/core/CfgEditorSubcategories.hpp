@@ -3,9 +3,6 @@ class CfgEditorSubcategories {
     class EDSUBCAT(Infantry) {
         displayName = "Infantry";
     };
-    class EDSUBCAT(ClanArctic) {
-        displayName = "Clan Arctic";
-    };
     class EDSUBCAT(Crewmen) {
         displayName = "Crewmen";
     };

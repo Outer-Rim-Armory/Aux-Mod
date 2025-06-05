@@ -42,8 +42,6 @@ workshop = [
     "2058554822", # 3AS (Beta Test)
     "2215872933", # 3AS Terrains (Beta)
     "769440155", # Operation TREBUCHET
-    "3203512867", # The Great Forge
-    "2478080991", # Scion Conflict
 ]
 presets = ["main"]
 dlc = []
@@ -57,6 +55,7 @@ workshop = [
     "1572627279", # OPTRE First Contact
     "2915485125", # Burn 'Em
     "2789152015", # WBK Zombies
+    "2478080991", # Scion Conflict
     "2323185592", # Lightsabers and Force
     "570118882", # No Weapon Sway
     "3328314886", # Heavy Weapon Framework

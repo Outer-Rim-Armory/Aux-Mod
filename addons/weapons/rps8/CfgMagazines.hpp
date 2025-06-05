@@ -4,7 +4,7 @@ class CfgMagazines {
         SCOPE_PUBLIC;
         displayName = "[KC] RPS-8 HE Rocket";
         displayNameShort = "High Explosive";
-        descriptionShort = "High Explosive Rocket<br/>Rounds: 1<br/>Used In: RPS-8";
+        descriptionShort = "High Explosive Rocket<br/>Rounds: 1<br/>Used In: RPS-7";
 
         model = "\A3\weapons_f\launchers\RPG32\tbg32v_rocket_item.p3d";
         picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_tbg32v_rocket_ca.paa";

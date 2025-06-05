@@ -46,7 +46,7 @@ class CLASS(Helmet_ARF_Enlisted_CamoBrown): CLASS(Helmet_ARF_CT) {
 };
 
 class CLASS(Helmet_ARF_Enlisted_CamoGrey): CLASS(Helmet_ARF_CT) {
-    displayName = "[KC] SF ARF Helm 01+ (Enlisted) - Grey Camo";
+    displayName = "[KC] SF ARF Helm 01+ (Enlisted) - Brown Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arf\camo\grey\Enlisted_camo1_co.paa),
         "",

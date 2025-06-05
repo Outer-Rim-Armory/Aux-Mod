@@ -1,0 +1,91 @@
+
+
+
+params 
+[
+	["_obj", objNull, [objNull]],
+	["_mode", "deploy", [""]]
+];
+
+if (isGamePaused) then {continue};
+
+switch _mode do
+{
+	case "deploy":
+	{
+		inGameUISetEventHandler ['Action',""];
+		_obj setVariable ["BNA_KC_vehicles_DeployModule",true,true];
+		playSound3D ["BNA_KC_Vehicle_Skills\data\audio\Deploy.wss", _obj, false, getposASL _obj, 1];
+		private _vD = vectorDir _obj;
+		private _vU = vectorUp _obj;
+		private _hold = "Land_HelipadEmpty_F" createVehicle getPos _obj;
+		_hold setPosWorld getPosWorld _obj;
+		_hold setDir (getDir _obj);
+		_hold setVectorDirAndUp [_vD,_vU];
+		_obj attachTo [_hold];
+		_sfx = createSoundSource ["BNA_KC_Sound_RepairLoop", position _obj, [], 0];
+		_sfx attachTo [_obj];
+		[_obj,_hold,_sfx] spawn
+		{
+			params ["_obj", "_hold","_sfx"];
+			
+			private _radius = missionNamespace getVariable "BNA_KC_vehicles_areaHealRadius_E";
+			private _repairRate = missionNamespace getVariable "BNA_KC_vehicles_areaHealRate_E";
+			private _repair = missionNamespace getVariable "BNA_KC_vehicles_healAmount_E";
+			private _fuelDeduction = missionNamespace getVariable "BNA_KC_vehicles_fuelShieldConsumption_E";
+			private _aceVehLoaded = isClass (configFile >> "CfgPatches" >> "ace_vehicles");
+			private _fuel = fuel _obj;
+			
+			waitUntil 
+			{
+				if (_obj getVariable "BNA_KC_vehicles_DeployModule" == false || isNull _obj || fuel _obj == 0) exitWith
+				{
+					detach _sfx;
+					deleteVehicle _sfx;
+					detach _obj;
+					deleteVehicle _hold;
+					_obj setVariable ["BNA_KC_vehicles_DeployModule",false,true];
+					true;
+				};
+				
+				private _isFriend = _obj call BIS_fnc_friendlySides;
+				private _landVeh = [_obj,vehicles,_radius,{side _x in _isFriend && {alive _x}}] call CBA_fnc_getNearest;
+				_fuel = _fuel - _fuelDeduction;
+				_obj setFuel _fuel;
+				sleep _repairRate;
+
+				for "_i" from 0 to count _landVeh -1 do 
+				{
+					_veh = _landVeh select _i;
+					if (!alive _veh) exitWith {};
+					_dmgVeh = damage _veh;
+					
+					if (_dmgVeh > 0) then
+					{
+					    if (_aceVehLoaded) then
+						{
+							[_veh, (_dmgVeh - _repair)] call ace_repair_fnc_setDamage;
+						}
+						else
+						{
+							(getAllHitPointsDamage _veh) params [["_allHitPoints", []], ["_allHitPointsSelections", []], ["_allHitPointDamages", []]];
+
+							_veh setDamage (_dmgVeh - _repair);
+							{
+						    	_veh setHitIndex [_forEachIndex, _x];
+							} forEach _allHitPointDamages;
+						};
+					};
+				};
+				false;
+			};	
+		};
+	};
+	case "undeploy":
+	{
+		playSound3D ["BNA_KC_Vehicle_Skills\data\audio\Undeploy.wss", _obj, false, getposASL _obj, 1];
+		_obj setVariable ["BNA_KC_vehicles_DeployModule",false,true];
+	};
+};
+
+		

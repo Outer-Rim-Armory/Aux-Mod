@@ -11,7 +11,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_PlasmaCarbine_Blue2);
         count = 100;
-        initSpeed = 950;
+        initSpeed = 472;
         mass = 10;
     };
 };
