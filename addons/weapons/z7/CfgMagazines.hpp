@@ -11,7 +11,7 @@ class CfgMagazines {
 
         allowedSlots[] = {TYPE_BACKPACK};
 
-        initSpeed = 200;
+        initSpeed = 900;
         type = AMMO_USAGE_ARMORED_VEHICLES;
 
         ammo = QCLASS(Bullet_Plasma_Z7);
@@ -29,7 +29,7 @@ class CfgMagazines {
 
         allowedSlots[] = {TYPE_BACKPACK};
 
-        initSpeed = 200;
+        initSpeed = 900;
         type = AMMO_USAGE_ARMORED_VEHICLES;
 
         ammo = QCLASS(Bullet_Plasma_Z7_Red);

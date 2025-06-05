@@ -43,6 +43,8 @@ class CfgPatches {
             QGVAR(valken38l),
             QGVAR(valken38x),
             QGVAR(westar_m5),
+            QGVAR(westar35),
+            QGVAR(westarcarbine),
             QGVAR(x42),
             QGVAR(z6),
             QGVAR(z7),
