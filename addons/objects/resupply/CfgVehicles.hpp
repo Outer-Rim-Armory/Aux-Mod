@@ -73,23 +73,7 @@ class CfgVehicles {
         };
     };
 
-    class CLASS(Resupply_SquadAmmo_Commando): CLASS(Resupply_SquadAmmo) {
-        displayName = "03: Ammo Crate (Charlie Squad)";
 
-        class TransportMagazines {
-            // Primary Ammo
-            MAG_XX(CLASS(Mag_60Rnd_DC17M),40);
-            MAG_XX(CLASS(Mag_90Rnd_DC17M),40);
-            MAG_XX(CLASS(Mag_5Rnd_DC17M_Sniper),40);
-            MAG_XX(CLASS(Mag_1Rnd_DC17M_AT),16);
-
-            // Secondary Ammo
-            MAG_XX(CLASS(Mag_20Rnd_DC17),10);
-
-            // Grenades
-            MAG_XX(ls_mag_classC_thermalDet,16);
-        };
-    };
 
     class CLASS(Resupply_PlatoonAmmo): CLASS(Resupply_SquadAmmo) {
         displayName = "02: Ammo Crate (Platoon)";
@@ -137,6 +121,39 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(Resupply_PlatoonAmmo_Commando): CLASS(Resupply_SquadAmmo) {
+        displayName = "03: Carnage Ammo Crate";
+
+        class TransportMagazines {
+            // Primary Ammo
+            MAG_XX(LFP_DC17M_Mag,100);
+            MAG_XX(LFP_DC17M_Mag_Sniper,100);
+            MAG_XX(LFP_DC17M_GL,50);
+            MAG_XX(CLASS(Mag_400Rnd_Z6),100);
+            MAG_XX(CLASS(Mag_20Rnd_DP25_HP),100);
+            MAG_XX(CLASS(Mag_12Rnd_DP25_SLUG),100);
+            MAG_XX(CLASS(Mag_8Rnd_DP25_HE),10);
+            MAG_XX(JA_104th_Weapons_Mags_10mw40,100);
+            MAG_XX(CLASS(Mag_10Rnd_DC20Y),100);
+            MAG_XX(CLASS(Mag_3Rnd_DC20Y_AP),100);
+
+            // Secondary Ammo
+            MAG_XX(CLASS(Mag_20Rnd_DC17),50);
+
+            // Grenades
+            MAG_XX(ls_mag_classC_thermalDet,64);
+            MAG_XX(ls_mag_classB_thermalDet,20);
+            MAG_XX(Aux501_Weapons_Mags_flashnade,20);
+            MAG_XX(CLASS(Grenade_EMP),20);
+            MAG_XX(C12_Remote_Mag,8);
+
+            // Weapons
+            WEAP_XX(CLASS(RPS6_Loaded),8);
+        };
+    };
+
+
+
     class CLASS(Resupply_SquadAmmo_Heavy): CLASS(Resupply_SquadAmmo) {
         displayName = "04: Heavy Ammo Crate (Squad)";
         class TransportMagazines {
@@ -147,6 +164,8 @@ class CfgVehicles {
             MAG_XX(3AS_JLTS_MK39_AA,1);
             MAG_XX(3AS_JLTS_MK43_AT,1);
             MAG_XX(3AS_JLTS_MK44_HE,1);
+            MAG_XX(ls_mag_classC_thermalDet,5);
+            MAG_XX(CLASS(Mag_UGL_10Rnd_HE),20);
         };
     };
     class CLASS(Resupply_PlatoonAmmo_Heavy): CLASS(Resupply_SquadAmmo_Heavy) {
@@ -156,9 +175,12 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_30Rnd_HI12),120);
             MAG_XX(CLASS(Mag_30Rnd_DP23),120);
             MAG_XX(CLASS(Mag_400Rnd_Z6),10);
+            MAG_XX(CLASS(Mag_800rnd_Z7),100);
             MAG_XX(3AS_JLTS_MK39_AA,3);
             MAG_XX(3AS_JLTS_MK43_AT,3);
             MAG_XX(3AS_JLTS_MK44_HE,3);
+            MAG_XX(ls_mag_classC_thermalDet,5);
+            MAG_XX(CLASS(Mag_UGL_10Rnd_HE),20);
         };
     };
 
@@ -240,6 +262,123 @@ class CfgVehicles {
 
         class TransportWeapons {
             WEAP_XX(CLASS(RPS6_Loaded),10);
+        };
+    };
+
+    class CLASS(Resupply_Rockets): CLASS(Resupply_Base) {
+        displayName = "09: Rocket Ammo";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),20);
+            MAG_XX(CLASS(Mag_1Rnd_RPS8_AT),40);
+            MAG_XX(CLASS(Mag_1Rnd_RPS9_AT),5);
+            MAG_XX(3AS_JLTS_MK43_AT,5);
+            MAG_XX(3AS_JLTS_MK44_HE,5);
+            MAG_XX(3AS_JLTS_MK39_AA,5);
+        };
+    };
+
+    class CLASS(Resupply_Raptor_PlatoonAmmo): CLASS(Resupply_SquadAmmo) {
+        displayName = "10: Raptor Ammo Crate (Platoon)";
+        ace_cargo_size = 2;
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+
+        class TransportWeapons {
+            WEAP_XX(CLASS(RPS6_Loaded),5);
+        };
+
+        class TransportMagazines {
+            // Primary Ammo
+            MAG_XX(CLASS(Mag_15Rnd_DC15X),100);
+            MAG_XX(CLASS(Mag_240Rnd_Valken38l),100);
+            MAG_XX(CLASS(Mag_25Rnd_Valken38x),100);
+            MAG_XX(CLASS(Mag_50Rnd_DC15XS),100);
+            MAG_XX(CLASS(Mag_240Rnd_DC15L),160);
+            MAG_XX(CLASS(Mag_10Rnd_DC15XM),100);
+            MAG_XX(CLASS(Mag_15Rnd_773),100);
+            MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),50);
+
+            // UGL Ammo
+            MAG_XX(ACE_HuntIR_M203,20);
+        };
+    };
+
+    class CLASS(Resupply_Raptor_Drone): CLASS(Resupply_Base) {
+        displayName = "11: Raptor Drone Crate";
+        class TransportItems {
+            ITEM_XX(SCH_B_UAV_Packed,20);
+            ITEM_XX(B_UavTerminal,10);
+            ITEM_XX(ACE_UAVBattery,20);
+        };
+    };
+
+    class CLASS(Resupply_Misc): CLASS(Resupply_Base) {
+        displayName = "12: Misc Crate";
+        class TransportItems {
+            ITEM_XX(SWLB_comlink,50);
+            ITEM_XX(ACE_CableTie,50);
+            ITEM_XX(ACE_bodyBag,50);
+            ITEM_XX(CLASS(BNA_KC_cloneNvg_chip),25);
+            ITEM_XX(CLASS(BNA_KC_cloneNvg_phase2_visor),25);
+            ITEM_XX(CLASS(BNA_KC_cloneNvg_phase2_rangefinder),25);
+            ITEM_XX(ACE_EntrenchingTool,50);
+            ITEM_XX(ACE_MapTools,50);
+            ITEM_XX(ToolKit,5);
+            ITEM_XX(ACE_Flashlight_XL50,50);
+            ITEM_XX(JLTS_ids_gar_army,50);
+        };
+        class TransportMagazines {
+            MAG_XX(Laserbatteries,50);
+        };
+    };
+
+    class CLASS(Resupply_Sapper): CLASS(Resupply_Base) {
+        displayName = "13: Sapper Crate";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        class TransportItems {
+            ITEM_XX(ACE_DefusalKit,5);
+            ITEM_XX(MineDetector,5);
+            ITEM_XX(ACE_M26_Clacker,5);
+            ITEM_XX(ACE_wirecutter,5);
+        };
+        class TransportMagazines {
+            MAG_XX(M168_Remote_Mag,20);
+            MAG_XX(ls_mag_detPack_remoteCharge,20);
+            MAG_XX(APERSMineDispenser_Mag,5);
+            MAG_XX(C7_Remote_Mag,15);
+            MAG_XX(UNSCMine_Range_Mag,10);
+        };
+    };
+
+    class CLASS(Resupply_Spartan): CLASS(Resupply_Base) {
+        displayName = "14: Spartan Crate";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        class TransportMagazines {
+            MAG_XX(LFP_AK_Mag,100);
+            MAG_XX(CLASS(Mag_100Rnd_WestarM5),100);
+            MAG_XX(LFP_DC19_Mag,100);
+            MAG_XX(CLASS(Mag_60Rnd_DC17_dualHP),100);
+            MAG_XX(CLASS(Mag_400Rnd_Z6),100);
+            MAG_XX(CLASS(Mag_20Rnd_DP25_HP),100);
+            MAG_XX(CLASS(Mag_12Rnd_DP25_SLUG),100);
+            MAG_XX(CLASS(Mag_8Rnd_DP25_HE),10);
+            MAG_XX(CLASS(Mag_800rnd_Z7),5);
+            MAG_XX(CLASS(Mag_1200rnd_Z8),1);
+            MAG_XX(ls_mag_classB_thermalDet,20);
+            MAG_XX(Aux501_Weapons_Mags_flashnade,20);
+            MAG_XX(CLASS(Mag_10Rnd_DC20Y),100);
+            MAG_XX(CLASS(Mag_3Rnd_DC20Y_AP),50);
+        };
+        class TransportWeapons {
+            WEAP_XX(CLASS(RPS6_Loaded),5);
         };
     };
 };

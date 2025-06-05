@@ -21,6 +21,7 @@ class CLASS(Uniform_Burnt_Worn): CLASS(Uniform_Burnt) {
 
 
 UNIFORM_CUSTOM(Catholic);
+UNIFORM_CUSTOM(Cough);
 UNIFORM_CUSTOM(Cutthroat);
 UNIFORM_CUSTOM(Defter);
 UNIFORM_CUSTOM(Dexus);
@@ -37,6 +38,8 @@ UNIFORM_CUSTOM(Drake);
 //    };
 //};
 
+UNIFORM_CUSTOM(Evo);
+UNIFORM_CUSTOM(Grey);
 UNIFORM_CUSTOM(Hagrid);
 UNIFORM_CUSTOM(Harry);
 UNIFORM_CUSTOM(Henkie);

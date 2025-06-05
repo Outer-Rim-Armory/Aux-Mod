@@ -18,7 +18,7 @@ class CfgWeapons {
 
         modes[] = {"manual","Overcharge","close","short","medium","far_optic1","far_optic2"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_400Rnd_Z6), QCLASS(Mag_400Rnd_Z6_Red), "Aux12thFleet_Mag_Z6"};
+        magazines[] = {QCLASS(Mag_400Rnd_Z6), QCLASS(Mag_400Rnd_Z6_Red), QCLASS(Mag_400Rnd_Z6_Yellow), "Aux12thFleet_Mag_Z6"};
         magazineWell[] = {};
 
         WBK_UseHeavyWeaponFramework = "True";

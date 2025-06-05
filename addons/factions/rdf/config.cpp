@@ -9,10 +9,15 @@ class CfgPatches {
         requiredAddons[] = {
             QUOTE(ADDON),
             QCLASS(armor),
-            "sc_equipment"
+            "sc_equipment",
+            "tgf_helmets",
+            "tgf_armour",
+            "tgf_undersuit",
+            "tgf_backpacks"
         };
         units[] = {
             QCLASS(rdfArmor_unit_base),
+            QCLASS(Arctic_Unit_Base),
             QCLASS(rdfArmor_unit_rifleman),
             QCLASS(rdfArmor_unit_rifleman_DC15C),
             QCLASS(rdfArmor_unit_grenadier),
@@ -33,6 +38,12 @@ class CfgPatches {
             QCLASS(RDF_Unit_Medic),
             QCLASS(RDF_Unit_SWAT),
             QCLASS(RDF_Unit_SWAT_Chaingun),
+            QCLASS(Governor_Arctic),
+            QCLASS(Arctic_Clansman),
+            QCLASS(Arctic_Medium_Clansman),
+            QCLASS(Arctic_Medium_Vet_Clansman),
+            QCLASS(Arctic_Heavy_Clansman),
+            QCLASS(Arctic_Pilot_Clansman),
             QCLASS(rdfBackpack),
             QCLASS(rdfBackpack_predef_rifleman),
             QCLASS(rdfBackpack_predef_grenadier),
@@ -43,6 +54,9 @@ class CfgPatches {
             QCLASS(rdfBackpack_swat),
             QCLASS(rdfBackpack_swat_predef_rifleman),
             QCLASS(rdfBackpack_swat_predef_chaingun),
+            QCLASS(Arctic_JT12),
+            QCLASS(Clan_Arctic_JT12),
+            QCLASS(Arctic_Heavy_Jetpack),
             QCLASS(Hornet_RDF),
             QCLASS(Hornet_MG_RDF),
             QCLASS(Hornet_AT_RDF),
@@ -60,12 +74,28 @@ class CfgPatches {
             QCLASS(V19_RDF)
         };
         weapons[] = {
+            QCLASS(Arctic_Helmet_Base),
             QCLASS(rdfArmor_helmet),
             QCLASS(rdfArmor_helmet_marksman),
+            QCLASS(Arctic_Helmet),
+            QCLASS(Arctic_Helmet_Bacta),
+            QCLASS(Arctic_Pilot_Helmet),
+            QCLASS(Arctic_Traditional_Helmet),
+            QCLASS(Arctic_Heavy_Helmet),
+            QCLASS(Arctic_Viper_Helmet),
+            QCLASS(Arctic_Viper_Vet_Helmet),
             QCLASS(rdfArmor_uniform),
+            QCLASS(Arctic_Undersuit),
+            QCLASS(Clan_Arctic_Undersuit),
             QCLASS(rdfArmor_vest_light),
             QCLASS(rdfArmor_vest_medium),
-            QCLASS(rdfArmor_vest_swat)
+            QCLASS(rdfArmor_vest_swat),
+            QCLASS(Arctic_Armour_Base),
+            QCLASS(Arctic_Armour),
+            QCLASS(Arctic_Light_Armour),
+            QCLASS(Arctic_Medium_Armour),
+            QCLASS(Arctic_Heavy_Armour),
+            QCLASS(Arctic_Recon_Armour),
         };
         VERSION_CONFIG;
 
