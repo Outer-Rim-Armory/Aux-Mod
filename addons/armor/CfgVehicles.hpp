@@ -76,7 +76,7 @@ class CfgVehicles {
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(SpecialForces);
 
-        displayName = "SF Scout 02 (Base)";
+        displayName = "SF Scout 01 (Base)";
         uniformClass = QCLASS(Uniform_Scout_Base);
 
         // Inventory
