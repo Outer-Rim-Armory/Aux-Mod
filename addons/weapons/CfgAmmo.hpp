@@ -412,10 +412,6 @@ class CfgAmmo {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
     };
-    class CLASS(Bullet_PlasmaMachineGun_Yellow): CLASS(Bullet_PlasmaMachineGun_Blue) {
-        model = "\MRC\JLTS\weapons\Core\effects\laser_yellow.p3d";
-        effectfly = "JLTS_plasma_yellow";
-    };
     class CLASS(Bullet_PlasmaMachineGun_Green): CLASS(Bullet_PlasmaMachineGun_Blue) {
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";

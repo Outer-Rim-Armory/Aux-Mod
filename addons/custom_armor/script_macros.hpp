@@ -543,7 +543,7 @@ class CLASS(DOUBLES(Helmet_Sand,var1)##var2): CLASS(DOUBLES(Helmet_Sand,var1)) {
     displayName = QUOTE([KC] INF Hunter Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\hunter\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\hunter\data\visor_co.paa" \
+        "\ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     EGVAR(armor,nvCanToggle) = TRUE; \
@@ -558,7 +558,7 @@ class CLASS(DOUBLES(Helmet_Hunter,var1)##var2): CLASS(DOUBLES(Helmet_Hunter,var1
     SCOPE_HIDDEN; \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\hunter\DOUBLES(var1,camo1_co.paa)), \
-        QPATHTOF(data\visors\DOUBLES(var2,hunter_visor_co.paa)) \
+        QPATHTOF(data\visors\DOUBLES(var2,desert_visor_co.paa)) \
     }; \
     hiddenSelectionsMaterials[] = { \
         "", \

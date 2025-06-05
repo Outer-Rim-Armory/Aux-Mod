@@ -1,7 +1,6 @@
 class CfgMagazines {
     class CLASS(Mag_Base);
-    class CLASS(Mag_1Rnd_RPS7_AT): CLASS(Mag_Base) {
-        SCOPE_PUBLIC;
+    class CLASS(Mag_1Rnd_RPS7): CLASS(Mag_Base) {
         displayName = "[KC] RPS-7 AT Rocket";
         displayNameShort = "Anti-Tank";
         descriptionShort = "Anti-Tank Rocket<br/>Rounds: 1<br/>Used In: RPS-7";

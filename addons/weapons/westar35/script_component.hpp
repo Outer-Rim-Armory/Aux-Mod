@@ -1,4 +1,4 @@
-#define SUBCOMPONENT westar35
-#define SUBCOMPONENT_BEAUTIFIED Westar-35
+#define SUBCOMPONENT weapon
+#define SUBCOMPONENT_BEAUTIFIED Weapon Name
 
 #include "..\script_component.hpp"
