@@ -10,5 +10,8 @@ class CfgMagazines {
         picture = "\A3\Weapons_F\launchers\RPG32\data\UI\gear_tbg32v_rocket_ca.paa";
 
         ammo = QCLASS(Rocket_RPS7);
+        count = 1;
+        initSpeed = 140;
+        mass = MASS_MAGAZINE;
     };
 };

@@ -172,4 +172,5 @@ class CLASS(Helmet_Phase1_TyrantCrimson_Worn): CLASS(Helmet_Phase1_Tyrant_Worn) 
     };
 };
 
+P1_HELMET_CUSTOM(Weenie);
 P1_HELMET_CUSTOM(Woods);

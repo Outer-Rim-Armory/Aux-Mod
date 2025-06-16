@@ -122,6 +122,7 @@ UNIFORM_CUSTOM(Swoop);
 UNIFORM_CUSTOM(Talyn);
 UNIFORM_CUSTOM(Tugz);
 UNIFORM_CUSTOM(Tyrant);
+UNIFORM_CUSTOM(Weenie);
 UNIFORM_CUSTOM(Woods);
 
 class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base) {

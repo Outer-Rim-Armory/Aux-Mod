@@ -506,6 +506,27 @@ class CLASS(Unit_Keeli_Geo): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Kujo): CLASS(Unit_Phase2_Base) {
+    displayName = "Kujo";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Kujo);
+
+    uniformClass = QCLASS(Uniform_Kujo);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Kujo_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Kujo_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Kujo), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Kujo), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Leon): CLASS(Unit_Phase2_Base) {
     displayName = "Leon";
 
@@ -740,6 +761,28 @@ class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base) {
     };
     respawnLinkedItems[] = {
         QCLASS(Helmet_ARC_Tyrant), QCLASS(cloneVest_arc_Tyrant), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Weenie): CLASS(Unit_Phase2_Base) {
+    displayName = "Weenie";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Weenie);
+
+    uniformClass = QCLASS(Uniform_Weenie);
+    backpack = QCLASS(Backpack_Radio_Mini);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Weenie_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Weenie_lower_co.paa),
+        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Weenie), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Weenie), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 

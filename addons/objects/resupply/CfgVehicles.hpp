@@ -268,8 +268,7 @@ class CfgVehicles {
     class CLASS(Resupply_Rockets): CLASS(Resupply_Base) {
         displayName = "09: Rocket Ammo";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
-        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Red_co.paa"};
         class TransportMagazines {
             MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),20);
             MAG_XX(CLASS(Mag_1Rnd_RPS8_AT),40);
@@ -379,6 +378,21 @@ class CfgVehicles {
         };
         class TransportWeapons {
             WEAP_XX(CLASS(RPS6_Loaded),5);
+        };
+    };
+
+    class CLASS(Mortar_Crate): CLASS(Resupply_Base) {
+        displayName = "15: Mortar Crate";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Red\Supply_Large_Red_co.paa"};
+        class TransportWeapons {
+            WEAP_XX(CLASS(Mortar_M190_Carry),20);
+        };
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_6Rnd_Mortar_82mm_HE_CSW),100);
+            MAG_XX(CLASS(Mag_6Rnd_Mortar_SmokeWhite_CSW),100);
+            MAG_XX(CLASS(Mag_6Rnd_Mortar_SmokeBlue_CSW),100);
+            MAG_XX(CLASS(Mag_6Rnd_Mortar_SmokeRed_CSW),100);
         };
     };
 };

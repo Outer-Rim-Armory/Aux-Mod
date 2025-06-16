@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-
 class CfgPatches {
     class SUBADDON {
         author = AUTHOR;
@@ -28,6 +27,7 @@ class CfgPatches {
             QCLASS(Resupply_Misc),
             QCLASS(Resupply_Sapper),
             QCLASS(Resupply_Spartan),
+            QCLASS(Mortar_Resupply)
         };
         weapons[] = {};
         VERSION_CONFIG;
