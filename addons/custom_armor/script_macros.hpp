@@ -517,8 +517,48 @@ class CLASS(DOUBLES(Helmet_Phase12,var1)##var2): CLASS(DOUBLES(Helmet_Phase12,va
 class CLASS(DOUBLES(Helmet_Sand,var1)##var2): CLASS(DOUBLES(Helmet_Sand,var1)) { \
     SCOPE_HIDDEN; \
     hiddenSelectionsTextures[] = { \
-        QPATHTOF(data\helmets\phase2\DOUBLES(var1,camo1_co.paa)), \
+        QPATHTOF(data\helmets\desert\DOUBLES(var1,camo1_co.paa)), \
         QPATHTOF(data\visors\DOUBLES(var2,desert_visor_co.paa)) \
+    }; \
+    hiddenSelectionsMaterials[] = { \
+        "", \
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat" \
+    }; \
+}
+
+#define HUNTER_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_Hunter,var1)): CLASS(Helmet_Hunter_Base) { \
+    displayName = QUOTE([KC] INF Hunter Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\hunter\DOUBLES(var1,camo1_co.paa)), \
+        "ls_armor_bluefor\helmet\sob\hunter\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Hunter_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}
+
+#define HUNTER_HELMET_VISOR_CUSTOM(var1,var2) class CLASS(DOUBLES(Helmet_Hunter,var1)): CLASS(Helmet_Hunter_Base) { \
+    displayName = QUOTE([KC] INF Hunter Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\hunter\DOUBLES(var1,camo1_co.paa)), \
+        "\ls_armor_bluefor\helmet\gar\hunter\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    EGVAR(armor,nvCanToggle) = TRUE; \
+    EGVAR(armor,nvHelmetOff) = QCLASS(DOUBLES(Helmet_Hunter,var1)); \
+    EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Hunter,var1)##var2##); \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Hunter_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}; \
+class CLASS(DOUBLES(Helmet_Hunter,var1)##var2): CLASS(DOUBLES(Helmet_Hunter,var1)) { \
+    SCOPE_HIDDEN; \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\hunter\DOUBLES(var1,camo1_co.paa)), \
+        QPATHTOF(data\visors\DOUBLES(var2,hunter_visor_co.paa)) \
     }; \
     hiddenSelectionsMaterials[] = { \
         "", \

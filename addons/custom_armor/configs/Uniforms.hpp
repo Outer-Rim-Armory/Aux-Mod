@@ -21,6 +21,7 @@ class CLASS(Uniform_Burnt_Worn): CLASS(Uniform_Burnt) {
 
 
 UNIFORM_CUSTOM(Catholic);
+UNIFORM_CUSTOM(Cough);
 UNIFORM_CUSTOM(Cutthroat);
 UNIFORM_CUSTOM(Defter);
 UNIFORM_CUSTOM(Dexus);
@@ -37,6 +38,8 @@ UNIFORM_CUSTOM(Drake);
 //    };
 //};
 
+UNIFORM_CUSTOM(Evo);
+UNIFORM_CUSTOM(Grey);
 UNIFORM_CUSTOM(Hagrid);
 UNIFORM_CUSTOM(Harry);
 UNIFORM_CUSTOM(Henkie);
@@ -119,6 +122,7 @@ UNIFORM_CUSTOM(Swoop);
 UNIFORM_CUSTOM(Talyn);
 UNIFORM_CUSTOM(Tugz);
 UNIFORM_CUSTOM(Tyrant);
+UNIFORM_CUSTOM(Weenie);
 UNIFORM_CUSTOM(Woods);
 
 class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base) {

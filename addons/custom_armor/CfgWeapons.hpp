@@ -13,6 +13,7 @@ class CfgWeapons {
     #include "configs\Helmets_ARC.hpp"
     #include "configs\Helmets_ARF.hpp"
     #include "configs\Helmets_BARC.hpp"
+    #include "configs\Helmets_CFNintyNine.hpp"
 
     #include "configs\Uniforms.hpp"
 
@@ -203,6 +204,15 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\sin\camo1_co.paa),
             QPATHTOF(data\vests\sin\camo2_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+    class CLASS(cloneVest_arc_Harry): CLASS(Vest_ARC) {
+        displayName = "[KC] SF ARC Vest ('Harry')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\harry\camo1_co.paa),
+            QPATHTOF(data\vests\harry\camo2_co.paa)
         };
 
         GVAR(isCustom) = TRUE;

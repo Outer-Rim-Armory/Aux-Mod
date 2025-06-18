@@ -35,9 +35,8 @@ class CfgAmmo {
         SCOPE_PUBLIC;
 
         hit = 62.5;
-        indirectHit = 14;
-        indirectHitRange = 3;
-        submunitionAmmo = QCLASS(Rocket_Submunition_Base);
+        indirectHit = 50;
+        indirectHitRange = 10;
         irLock = 0;
 
         aiAmmoUsageFlags = QUOTE(AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES);

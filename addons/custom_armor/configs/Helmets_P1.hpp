@@ -4,8 +4,10 @@ P1_HELMET_CUSTOM(Anvil);
 P1_HELMET_CUSTOM(Axel);
 P1_HELMET_CUSTOM(Bailout);
 P1_HELMET_VISOR_CUSTOM(Bean,Crimson);
+P1_HELMET_CUSTOM(Bigness);
 P1_HELMET_CUSTOM(Bond);
 P1_HELMET_VISOR_CUSTOM(Burnt,Bacta);
+P1_HELMET_CUSTOM(Calvin);
 P1_HELMET_VISOR_CUSTOM(Catholic,Kyber);
 P1_HELMET_CUSTOM(Cutthroat);
 P1_HELMET_VISOR_CUSTOM(Defter,Bacta);
@@ -170,4 +172,5 @@ class CLASS(Helmet_Phase1_TyrantCrimson_Worn): CLASS(Helmet_Phase1_Tyrant_Worn) 
     };
 };
 
+P1_HELMET_CUSTOM(Weenie);
 P1_HELMET_CUSTOM(Woods);

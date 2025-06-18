@@ -362,41 +362,6 @@ class CfgVehicles {
                 };
             };
         };
-        class EventHandlers
-        {
-            init = "(_this # 0) setVariable [""BNA_KC_vehicles_DeployModule"", false,true];";
-        };
-        class UserActions
-        {
-            class DeployModule
-            {
-                displayName = "Deploy Repair Module";
-                displayNameDefault = "<img size='2' image='\a3\ui_f_oldman\data\igui\cfg\holdactions\repair_ca.paa'/>";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 1;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployModule"" == false && fuel this != 0;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployModule"",true,true];this call BNA_KC_vehicles_fnc_deployModuleRepair;";
-            };
-            class UnDeployModule
-            {
-                displayName = "Undeploy Repair Module";
-                displayNameDefault = "";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 0;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployModule"" == true;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployModule"",false,true];";
-            };
-        };
     };
 
     class CLASS(Gammoth_Refuel): CLASS(Gammoth_base) {
@@ -424,6 +389,7 @@ class CfgVehicles {
 
         model = "\A3\Soft_F_EPC\Truck_03\Truck_03_fuel_F.p3d";
         picture = "\A3\Soft_F_EPC\Truck_03\Data\UI\truck_03_fuel_CA.paa";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3"};
         icon = "\A3\Soft_F_EPC\Truck_03\Data\UI\map_Truck_03_Fuel_CA.paa";
         mapSize = 11.07;
 

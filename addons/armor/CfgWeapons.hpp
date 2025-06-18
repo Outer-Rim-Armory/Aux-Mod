@@ -19,6 +19,26 @@ class CfgWeapons {
         class ItemInfo;
     };
 
+    class WM_P3ScoutHelmet;
+    class CLASS(Scout_Helmet_base): WM_P3ScoutHelmet {
+        SCOPE_PRIVATE;
+        author = AUTHOR;
+
+        picture = "\WarMantle\WM_Imperial_Core\data\ui\wm_scouthelmet_ca.paa";
+
+        class HitpointsProtectionInfo
+    {
+        class Head
+        {
+            hitpointName = "HitHead";
+            armor = 10;
+            passThrough = 0.3;
+        };
+    };
+
+        class ItemInfo;
+    };
+
     #include "configs\Helmets_P1.hpp"
     #include "configs\Helmets_P1_Pilot.hpp"
     #include "configs\Helmets_P1_SpecOp.hpp"
@@ -34,6 +54,9 @@ class CfgWeapons {
     #include "configs\Helmets_ARF.hpp"
     #include "configs\Helmets_BARC.hpp"
     #include "configs\Helmets_cloneCommando.hpp"
+    #include "configs\Helmets_Scout.hpp"
+    #include "configs\Helmets_CFNintyNine.hpp"
+    #include "configs\Helmets_ATRT.hpp"
 
     class ls_blueforUniform_base;
     class ls_gar_phase2_uniform: ls_blueforUniform_base {
@@ -53,9 +76,24 @@ class CfgWeapons {
         };
     };
 
+
+    class CLASS(Uniform_Scout_Base): CLASS(Uniform_Base) {
+        SCOPE_PUBLIC;
+
+        author = AUTHOR;
+        displayName = "[KC] SF Scout Armor (Base)";
+        model = "WarMantle\WM_Imperial_Clones\P3Scout.p3d";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(Unit_Scout_Base);
+            uniformType = "Neopren";
+        };
+    };
+
     #include "configs\Uniforms.hpp"
     #include "configs\Uniforms_cloneCommando.hpp"
     #include "configs\Uniforms_Jedi.hpp"
+    #include "configs\Uniforms_Scout.hpp"
 
     class V_PlateCarrier1_rgr;
     class SWLB_clone_basic_armor: V_PlateCarrier1_rgr {

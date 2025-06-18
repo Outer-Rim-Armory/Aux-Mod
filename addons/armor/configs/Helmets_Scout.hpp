@@ -16,7 +16,7 @@ class CLASS(Helmet_Scout_Base_V1): CLASS(cloneHelmet_base) {
     };
 };
 
-class CLASS(Helmet_Scout_Base_V2): CLASS(cloneHelmet_base) {
+class CLASS(Helmet_Scout_Base_V2): CLASS(Scout_Helmet_base) {
     SCOPE_PUBLIC;
 
     displayName = "[KC] SF Scout Helm 06 (Base WMA)";

@@ -68,6 +68,76 @@ class CfgVehicles {
         backpack = "";
     };
 
+    class WM_P3Scout_E11;
+    class CLASS(Unit_Scout_Base): WM_P3Scout_E11 {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(SpecialForces);
+
+        displayName = "SF Scout 01 (Base)";
+        uniformClass = QCLASS(Uniform_Scout_Base);
+
+        // Inventory
+        weapons[] = {
+            QCLASS(DC15S),
+            QCLASS(DC17),
+            "SWLB_clone_binocular",
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] = {
+            QCLASS(DC15S),
+            QCLASS(DC17),
+            "SWLB_clone_binocular",
+            "Throw",
+            "Put"
+        };
+        magazines[] = {
+            // Ammo
+            ITEM_11(QCLASS(Mag_80Rnd_DC15S)),
+            ITEM_2(QCLASS(Mag_20Rnd_DC17)),
+            // Grenades
+            ITEM_2("ls_mag_classC_thermalDet"),
+            ITEM_3("ShieldGrenade_Mag"),
+            // Smokes
+            ITEM_3("3AS_SmokeWhite"),
+            ITEM_3("3AS_SmokeBlue"),
+            ITEM_3("3AS_SmokeGreen")
+        };
+        respawnMagazines[] = {
+            // Ammo
+            ITEM_11(QCLASS(Mag_80Rnd_DC15S)),
+            ITEM_2(QCLASS(Mag_20Rnd_DC17)),
+            // Grenades
+            ITEM_2("ls_mag_classC_thermalDet"),
+            ITEM_3("ShieldGrenade_Mag"),
+            // Smokes
+            ITEM_3("3AS_SmokeWhite"),
+            ITEM_3("3AS_SmokeBlue"),
+            ITEM_3("3AS_SmokeGreen")
+        };
+        items[] = {
+            // Medical
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+        };
+        respawnItems[] = {
+            // Medical
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet")
+        };
+
+        linkedItems[] = {
+            QCLASS(Helmet_Scout_Base_V1), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        };
+        respawnLinkedItems[] = {
+            QCLASS(Helmet_Scout_Base_V1), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        };
+        backpack = "";
+    };
+
     #include "configs\Units_P1.hpp"
     #include "configs\Units_P1_Pilot.hpp"
     #include "configs\Units_P1_Tanker.hpp"
@@ -80,6 +150,7 @@ class CfgVehicles {
     #include "configs\Units_cloneCommando.hpp"
     #include "configs\Units_Jedi.hpp"
     #include "configs\Units_Airborne.hpp"
+    #include "configs\Units_Scout.hpp"
 
     class CLASS(backpack_base);
     class CLASS(cloneBackpack_base): CLASS(backpack_base) {
@@ -316,8 +387,15 @@ class CfgVehicles {
             "\SWLB_clones_spec\backpacks\data\backpack_co.paa"
         };
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
+        // TFAR Long Range
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
 
-        maximumLoad = 450;
+        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+        maximumLoad = 600;
         EGVAR(custom_armor,isCustom) = FALSE;
     };
 
@@ -332,14 +410,6 @@ class CfgVehicles {
         model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_rto.p3d";
         picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_rto_ca.paa";
 
-        // TFAR Long Range
-        tf_hasLRradio = TRUE;
-        tf_range = 25000;
-
-        tf_dialog = "SWLB_clone_rto_radio_dialog";
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_subtype = "digital_lr";
     };
 
     class CLASS(cloneBackpack_commando_Tech): CLASS(cloneBackpack_commando) {

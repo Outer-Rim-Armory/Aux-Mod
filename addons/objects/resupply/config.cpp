@@ -1,6 +1,5 @@
 #include "script_component.hpp"
 
-
 class CfgPatches {
     class SUBADDON {
         author = AUTHOR;
@@ -15,13 +14,20 @@ class CfgPatches {
         units[] = {
             QCLASS(Resupply_Base),
             QCLASS(Resupply_SquadAmmo),
-            QCLASS(Resupply_SquadAmmo_Commando),
             QCLASS(Resupply_PlatoonAmmo),
             QCLASS(Resupply_SquadAmmo_Heavy),
             QCLASS(Resupply_PlatoonAmmo_Heavy),
             QCLASS(Resupply_SquadMedical),
             QCLASS(Resupply_PlatoonMedical),
             QCLASS(Resupply_DisposableLaunchers),
+            QCLASS(Resupply_PlatoonAmmo_Commando),
+            QCLASS(Resupply_Rockets),
+            QCLASS(Resupply_Raptor_PlatoonAmmo),
+            QCLASS(Resupply_Raptor_Drone),
+            QCLASS(Resupply_Misc),
+            QCLASS(Resupply_Sapper),
+            QCLASS(Resupply_Spartan),
+            QCLASS(Mortar_Resupply)
         };
         weapons[] = {};
         VERSION_CONFIG;

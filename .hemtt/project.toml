@@ -26,7 +26,7 @@ url = "https://github.com/Outer-Rim-Armory/Aux-Mod"
 
 [hemtt.launch.default]
 workshop = [
-    "2369477168", # ADT
+    "3499977893", # ADT
     "623475643",  # 3DEN
     "1779063631", # ZEN
     "2173635424", # 501st Aux Mod
@@ -42,6 +42,14 @@ workshop = [
     "2058554822", # 3AS (Beta Test)
     "2215872933", # 3AS Terrains (Beta)
     "769440155", # Operation TREBUCHET
+    "3203512867", # The Great Forge
+    "2478080991", # Scion Conflict
+    "1656708630", # Legion Base - Legacy
+    # "2006910387", # Config Viewer Replacer
+    "1862880106", # Polpox's Base Functions
+    "3469976535", # Weapon Research and Security: Autonomous systems
+    "2605563484", # Scion Conflict Extended Arsenal
+    "1124993203", # 3den Better Inventory
 ]
 presets = ["main"]
 dlc = []
@@ -55,7 +63,6 @@ workshop = [
     "1572627279", # OPTRE First Contact
     "2915485125", # Burn 'Em
     "2789152015", # WBK Zombies
-    "2478080991", # Scion Conflict
     "2323185592", # Lightsabers and Force
     "570118882", # No Weapon Sway
     "3328314886", # Heavy Weapon Framework

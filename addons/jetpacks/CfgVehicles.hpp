@@ -45,7 +45,7 @@ class CfgVehicles {
     class CLASS(resupply_jetpackFuel): Land_WaterTank_F {
         SCOPE_PUBLIC;
         author = AUTHOR;
-        displayName = "09: Jetpack Fuel Tank";
+        displayName = "16: Jetpack Fuel Tank";
 
         editorCategory = QEDCAT(objects);
         editorSubcategory = QEDSUBCAT(resupply);

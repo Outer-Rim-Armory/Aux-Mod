@@ -45,7 +45,7 @@ class CfgWeapons {
                 class CompatibleItems {
                     ATTACHMENTS_OPTIC_LONG;
                     // Sights
-                    3as_optic_dc15l = TRUE;
+                    3AS_optic_DC15L_F = TRUE;
                 };
             };
             class PointerSlot: PointerSlot {
