@@ -310,6 +310,8 @@ class CfgPatches {
             QCLASS(Helmet_Airborne_Base),
             QCLASS(Helmet_Airborne_CT),
             QCLASS(Helmet_Airborne_CT_v2),
+            QCLASS(Helmet_Airborne_CT_Brown),
+            QCLASS(Helmet_Airborne_CT_Grey),
             QCLASS(Helmet_Engineer_Base),
             QCLASS(Helmet_Engineer_CT),
             QCLASS(Helmet_Engineer_Enlisted_CamoBrown),

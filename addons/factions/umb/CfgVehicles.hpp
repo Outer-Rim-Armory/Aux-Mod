@@ -21,8 +21,8 @@ class CfgVehicles {
         weapons[] = {QCLASS(UMB36), "", "Throw", "Put"};
         respawnWeapons[] = {QCLASS(UMB36), "", "Throw", "Put"};
 
-        magazines[] = {QCLASS(Mag_120Rnd_UMB36)};
-        respawnMagazines[] = {QCLASS(Mag_120Rnd_UMB36)};
+        magazines[] = {ITEM_11(QCLASS(Mag_120Rnd_UMB36))};
+        respawnMagazines[] = {ITEM_11(QCLASS(Mag_120Rnd_UMB36))};
         items[] = {
             // Medical
             ITEM_10("ACE_elasticBandage"),

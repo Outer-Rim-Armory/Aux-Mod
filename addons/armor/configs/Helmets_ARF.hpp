@@ -1,7 +1,7 @@
 class CLASS(Helmet_ARF_Base): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF ARF Helm (Base)";
+    displayName = "[KC] SF ARF Helm 00 (Base)";
 
     model = "\ls_armor_bluefor\helmet\gar\arf\ls_gar_arf_helmet.p3d";
     hiddenSelections[] = {"camo1", "camo2", "visor"};
@@ -28,7 +28,7 @@ class CLASS(Helmet_ARF_CT): CLASS(Helmet_ARF_Base) {
 };
 
 class CLASS(Helmet_ARF_CT_Legacy): CLASS(Helmet_ARF_CT) {
-    displayName = "[KC] SF ARF Helm 01 (Trooper, Legacy)";
+    displayName = "[KC] SF ARF Helm 02 (Trooper, Legacy)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arf\CT_v2_camo1_co.paa),
         "",
@@ -37,7 +37,7 @@ class CLASS(Helmet_ARF_CT_Legacy): CLASS(Helmet_ARF_CT) {
 };
 
 class CLASS(Helmet_ARF_Enlisted_CamoBrown): CLASS(Helmet_ARF_CT) {
-    displayName = "[KC] SF ARF Helm 01+ (Enlisted) - Brown Camo";
+    displayName = "[KC] SF ARF Helm 03 (Enlisted) - Brown Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arf\camo\brown\Enlisted_camo1_co.paa),
         "",
@@ -46,7 +46,7 @@ class CLASS(Helmet_ARF_Enlisted_CamoBrown): CLASS(Helmet_ARF_CT) {
 };
 
 class CLASS(Helmet_ARF_Enlisted_CamoGrey): CLASS(Helmet_ARF_CT) {
-    displayName = "[KC] SF ARF Helm 01+ (Enlisted) - Grey Camo";
+    displayName = "[KC] SF ARF Helm 04 (Enlisted) - Grey Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arf\camo\grey\Enlisted_camo1_co.paa),
         "",

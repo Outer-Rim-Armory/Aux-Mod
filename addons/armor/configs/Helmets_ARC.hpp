@@ -43,7 +43,7 @@ class CLASS(Helmet_ARC_CT): CLASS(Helmet_ARC_Base) {
 };
 
 class CLASS(Helmet_ARC_CT_Legacy): CLASS(Helmet_ARC_CT) {
-    displayName = "[KC] SF ARC P1.5 Helm 01 (Trooper, v2)";
+    displayName = "[KC] SF ARC P1.5 Helm 02 (Trooper, v2)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\CT_v2_camo1_co.paa),
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
@@ -52,7 +52,7 @@ class CLASS(Helmet_ARC_CT_Legacy): CLASS(Helmet_ARC_CT) {
 };
 
 class CLASS(Helmet_ARC_NightShade): CLASS(Helmet_ARC_Base) {
-    displayName = "[KC] SF ARC P1.5 Helm (NightShade)";
+    displayName = "[KC] SF ARC P1.5 Helm 03 (NightShade)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\NightShade_camo1_co.paa),
         QPATHTOF(data\helmets\arc\NightShade_camo2_co.paa),
@@ -61,7 +61,7 @@ class CLASS(Helmet_ARC_NightShade): CLASS(Helmet_ARC_Base) {
 };
 
 class CLASS(Helmet_ARC_Enlisted_CamoBrown): CLASS(Helmet_ARC_CT) {
-    displayName = "[KC] SF ARC P1.5 Helm 01 (Enlisted) - Brown Camo";
+    displayName = "[KC] SF ARC P1.5 Helm 04 (Enlisted) - Brown Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\camo\brown\Enlisted_camo1_co.paa),
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
@@ -70,7 +70,7 @@ class CLASS(Helmet_ARC_Enlisted_CamoBrown): CLASS(Helmet_ARC_CT) {
 };
 
 class CLASS(Helmet_ARC_Enlisted_CamoGrey): CLASS(Helmet_ARC_CT) {
-    displayName = "[KC] SF ARC P1.5 Helm 01 (Enlisted) - Grey Camo";
+    displayName = "[KC] SF ARC P1.5 Helm 05 (Enlisted) - Grey Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\camo\grey\Enlisted_camo1_co.paa),
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
@@ -79,7 +79,7 @@ class CLASS(Helmet_ARC_Enlisted_CamoGrey): CLASS(Helmet_ARC_CT) {
 };
 
 class CLASS(Helmet_ARC_Enlisted_CamoNight): CLASS(Helmet_ARC_CT) {
-    displayName = "[KC] SF ARC P1.5 Helm 01 (Enlisted) - Night Camo";
+    displayName = "[KC] SF ARC P1.5 Helm 06 (Enlisted) - Night Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\camo\night\Enlisted_camo1_co.paa),
         "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",

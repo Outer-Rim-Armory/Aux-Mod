@@ -1,7 +1,7 @@
 class CLASS(Helmet_BARC_Base): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] INF BARC Helm (Base)";
+    displayName = "[KC] INF BARC Helm 00 (Base)";
 
     model = "\ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
     hiddenSelections[] = {"camo1", "visor"};

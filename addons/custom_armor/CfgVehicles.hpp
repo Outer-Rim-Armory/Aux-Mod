@@ -75,5 +75,15 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(cloneBackpack_commando);
+    class CLASS(Spectre_Backpack): CLASS(cloneBackpack_commando) {
+        displayName = "Spectre's Commando Backpack";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Spectre\Spectre_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Spectre\Spectre_Backpack_co.paa)
+        };
+    };
+
     #include "configs\GroundHolders.hpp"
 };
