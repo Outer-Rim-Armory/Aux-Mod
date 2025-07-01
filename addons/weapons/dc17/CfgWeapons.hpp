@@ -10,7 +10,6 @@ class CfgWeapons {
 
     class Pistol_Base_F;
     class hgun_P07_F: Pistol_Base_F {
-        class Single;
     };
     class JLTS_DC17SA: hgun_P07_F {
         class WeaponSlotsInfo;
@@ -18,7 +17,6 @@ class CfgWeapons {
         class Single: Mode_SemiAuto {
             class StandardSound;
         };
-        class Stun;
     };
     class CLASS(DC17_base): JLTS_DC17SA {
         SCOPE_PRIVATE;

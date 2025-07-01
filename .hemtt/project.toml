@@ -26,30 +26,27 @@ url = "https://github.com/Outer-Rim-Armory/Aux-Mod"
 
 [hemtt.launch.default]
 workshop = [
+    "463939057", # ace
+    "450814997", # CBA_A3
     "3499977893", # ADT
     "623475643",  # 3DEN
     "1779063631", # ZEN
     "2173635424", # 501st Aux Mod
     "1702480117", # 212th Auxiliary Assets
+    "2162749089", # Legion Studios Core - Stable
     # "2522638637", # ACE Arsenal Extended
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
     "2954535667", # Warmantle Armory
     "767380317", # Blastcore # Only used to test particle effects
     "2061309401", # Last Force Project
     "2291129343", # Improved Melee System
-    "2306758518", # Kobra Mod Pack - Legion Studio
     "1393068220", # Kobra Mod Pack - Main
     "2058554822", # 3AS (Beta Test)
     "2215872933", # 3AS Terrains (Beta)
     "769440155", # Operation TREBUCHET
     "3203512867", # The Great Forge
     "2478080991", # Scion Conflict
-    "1656708630", # Legion Base - Legacy
-    # "2006910387", # Config Viewer Replacer
-    "1862880106", # Polpox's Base Functions
     "3469976535", # Weapon Research and Security: Autonomous systems
-    "2605563484", # Scion Conflict Extended Arsenal
-    "1124993203", # 3den Better Inventory
 ]
 presets = ["main"]
 dlc = []

@@ -46,6 +46,7 @@ class CfgPatches {
             QCLASS(Unit_Phase2_Insulated_Dexus),
             QCLASS(Unit_Phase2_Insulated_Joe),
             QCLASS(Unit_Phase2_Insulated_Keeli),
+            QCLASS(Unit_RC_Tugz),
             QCLASS(cloneBackpack_standard_Keeli),
             QCLASS(cloneBackpack_heavy_Dexus),
             QCLASS(cloneBackpack_heavy_Rev),
@@ -53,6 +54,7 @@ class CfgPatches {
             QCLASS(cloneBackpack_radioHeavy_Jaws),
             QCLASS(Leon_JT12),
             QCLASS(Spectre_Backpack),
+            QCLASS(Tugz_Backpack),
             QGROUND_CLASS(Helmet_Phase1_Alvarez),
             QGROUND_CLASS(Helmet_Phase1_Axel),
             QGROUND_CLASS(Helmet_Phase1_Bailout),
@@ -336,6 +338,7 @@ class CfgPatches {
             QCLASS(Helmet_Sand_Keeli),
             QCLASS(Helmet_Sand_KeeliCrimson),
             QCLASS(Helmet_Hunter_Alvarez),
+            QCLASS(Helmet_RC_Tugz),
             QCLASS(Uniform_Axel),
             QCLASS(Uniform_Bailout),
             QCLASS(Uniform_Bob),
@@ -360,6 +363,7 @@ class CfgPatches {
             QCLASS(Uniform_Sogi),
             QCLASS(Uniform_Splashdown),
             QCLASS(Uniform_Tugz),
+            QCLASS(Uniform_RC_Tugz),
             QCLASS(Uniform_Tyrant),
             QCLASS(Uniform_Phase2_Insulated_Dexus),
             QCLASS(Uniform_Phase2_Insulated_Joe),
@@ -373,7 +377,7 @@ class CfgPatches {
             QCLASS(cloneVest_heavy_Dexus),
             QCLASS(Vest_WO_Howzer),
             QCLASS(cloneNvg_phase2_officerVisor_Keeli),
-            QCLASS(cloneNvg_phase2_officerVisor_Keeli_Worn),
+            QCLASS(cloneNvg_phase2_officerVisor_Keeli_Worn)
         };
         VERSION_CONFIG;
     };

@@ -1,20 +1,11 @@
 class CfgVehicles {
     #include "configs\Units.hpp"
 
-    class CLASS(cloneBackpack_standard);
-    class CLASS(cloneBackpack_standard_Keeli): CLASS(cloneBackpack_standard) {
-        displayName = "[KC] Clone Trooper Backpack ('Keeli')";
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\backpacks\Keeli\Backpack_co.paa),
-            QPATHTOF(data\backpacks\Keeli\Backpack_co.paa)
-        };
-    };
-
     class CLASS(Backpack_heavy_Base);
     class CLASS(cloneBackpack_heavy_Dexus): CLASS(Backpack_heavy_Base) {
         displayName = "[KC] INF Heavy Backpack ('Dexus')";
 
-        model = "\ls_equipment_bluefor\backpack\gar\heavyBackpack\ls_gar_heavy_backpack.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\heavy\ls_gar_heavy_backpack.p3d";
         hiddenselections[] = {"backpack", "cover", "pouches", "tube"};
         hiddenselectionstextures[] = {
             QPATHTOF(data\backpacks\Dexus\Backpack_co.paa),
@@ -27,7 +18,7 @@ class CfgVehicles {
     class CLASS(cloneBackpack_heavy_Rev): CLASS(Backpack_heavy_Base) {
         displayName = "[KC] INF Heavy Backpack ('Rev')";
 
-        model = "\ls_equipment_bluefor\backpack\gar\heavyBackpack\ls_gar_heavy_backpack.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\heavy\ls_gar_heavy_backpack.p3d";
         hiddenselections[] = {"backpack", "cover", "pouches", "tube"};
         hiddenselectionstextures[] = {
             QPATHTOF(data\backpacks\Rev\Backpack_co.paa),
@@ -41,13 +32,13 @@ class CfgVehicles {
     class CLASS(cloneBackpack_radioHeavy_Jaws): CLASS(Backpack_Radio_Base) {
         displayName = "[KC] INF Radio Backpack ('Jaws')";
 
-        model = "\ls_equipment_bluefor\backpack\gar\mediumBackpack\ls_gar_mediumRadio_backpack.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\medium\ls_gar_mediumRadio_backpack.p3d";
         hiddenselections[] = {"backpack", "radio", "screen", "pouches"};
         hiddenselectionstextures[] = {
             QPATHTOF(data\backpacks\Jaws\Backpack_co.paa),
-            "\ls_equipment_bluefor\backpack\gar\backpack\data\radio_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
             QPATHTOF(data\backpacks\Jaws\Screen_co.paa),
-            "\ls_equipment_bluefor\backpack\gar\backpack\data\pouches_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa"
         };
     };
 
@@ -55,12 +46,12 @@ class CfgVehicles {
     class CLASS(cloneBackpack_medicRadio_Hazard): CLASS(Backpack_Medic_Radio_Base) {
         displayName = "[KC] INF Medic Radio Backpack ('Hazard')";
 
-        model = "\ls_equipment_bluefor\backpack\gar\heavyBackpack\ls_gar_heavy_backpack.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\heavy\ls_gar_heavy_backpack.p3d";
         hiddenselections[] = {"backpack", "cover", "pouches", "tube"};
         hiddenselectionstextures[] = {
             QPATHTOF(data\backpacks\Hazard\Backpack_co.paa),
-            "\ls_equipment_bluefor\backpack\gar\backpack\data\cover_co.paa",
-            "\ls_equipment_bluefor\backpack\gar\backpack\data\pouches_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
             QPATHTOF(data\backpacks\Hazard\Tube_co.paa)
         };
     };
@@ -82,6 +73,15 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\Spectre\Spectre_Backpack_co.paa),
             QPATHTOF(data\backpacks\Spectre\Spectre_Backpack_co.paa)
+        };
+    };
+
+    class CLASS(Tugz_Backpack): CLASS(cloneBackpack_commando) {
+        displayName = "[KC] Tugz Commando Backpack";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Tugz\Tugz_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Tugz\Tugz_Backpack_co.paa)
         };
     };
 

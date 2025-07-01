@@ -4,14 +4,14 @@ class CfgWeapons {
     class Rifle_Base_F;
     class arifle_MX_Base_F: Rifle_Base_F {
         class WeaponSlotsInfo;
+        class CowsSlot;
+        class PointerSlot;
         class Single;
-        class FullAuto;
     };
     class JLTS_EPL2: arifle_MX_Base_F {
         class WeaponSlotsInfo: WeaponSlotsInfo {
         };
         class Single: Single {
-            class StandardSound;
         };
     };
     class CLASS(DX50C_Base): JLTS_EPL2{

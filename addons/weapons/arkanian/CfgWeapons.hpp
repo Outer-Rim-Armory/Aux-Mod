@@ -9,7 +9,6 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
-            class UnderBarrelSlot;
         };
 
         class Single: Single {
@@ -50,7 +49,6 @@ class CfgWeapons {
             class PointerSlot: PointerSlot {
                 class CompatibleItems {};
             };
-            class UnderBarrelSlot;
         };
 
         class Single: Single {

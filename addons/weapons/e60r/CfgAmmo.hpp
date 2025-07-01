@@ -7,10 +7,10 @@ class CfgAmmo {
         ace_frag_classes[] = {"ACE_frag_medium_HD"};
         ace_frag_enabled = 1;
         ace_frag_gurney_c = 2800;
-        ace_frag_gurney_k = "3/5";
+        ace_frag_gurney_k = 0.6;
         ace_frag_metal = 400;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         craterEffects = "ArtyShellCrater";
         explosionEffects = "MortarExplosion";
@@ -32,7 +32,7 @@ class CfgAmmo {
     class CLASS(Rocket_E60R_AT): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
         indirectHit = 28;
         indirectHitRange = 3;
         irLock = 0;

@@ -1,16 +1,16 @@
 class CLASS(Vest_ARC): CLASS(Vest_Basic) {
     displayName = "[KC] SF ARC Vest";
 
-    model = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+    model = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
     hiddenSelections[] = {"camo1", "camo2"};
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\arc\ARC_camo1_co.paa),                 // Chestplate
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa) // Kama and Pauldron
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
 
     class ItemInfo: ItemInfo {
-        uniformModel = "\SWLB_clones\SWLB_clone_arc_armor.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
         containerClass = "Supply200";
 
@@ -119,18 +119,18 @@ class CLASS(Vest_ARC_Phase1Geo_Commander): CLASS(Vest_ARC) {
 class CLASS(Vest_ARC_v2): CLASS(Vest_ARC) {
     displayName = "[KC] SF ARC Vest (v2)";
 
-    model = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Commander.p3d";
+    model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconCommander_vest.p3d";
     hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
     hiddenSelectionsTextures[] = {
-        "\SWLB_clones\data\light_accessories_co.paa",               // Suspenders
+        "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",               // Suspenders
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa), // Pauldron
-        "\SWLB_clones\data\light_accessories_co.paa",               // Chest Strap
+        "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",               // Chest Strap
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)  // Kama
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_officer_ca.paa";
 
     class ItemInfo: ItemInfo {
-        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Commander.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconCommander_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
     };
 };

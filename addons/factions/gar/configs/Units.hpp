@@ -9,7 +9,7 @@ class CLASS(Unit_CG_Trooper): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\CG_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\CG_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -28,7 +28,7 @@ class CLASS(Unit_CG_Stone): CLASS(Unit_CG_Trooper) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\Stone_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\Stone_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -49,7 +49,7 @@ class CLASS(Unit_DC_Trooper): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\DC_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\DC_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -70,7 +70,7 @@ class CLASS(Unit_Fil): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\Fil_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\Fil_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -91,7 +91,7 @@ class CLASS(Unit_FilSquad): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\FilSquad_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\FilSquad_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -112,7 +112,7 @@ class CLASS(Unit_GC_Trooper): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\GC_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\GC_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -133,7 +133,7 @@ class CLASS(Unit_HowzerBlue): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\HowzerBlue_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\HowzerBlue_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -151,7 +151,7 @@ class CLASS(Unit_HowzerBrown): CLASS(Unit_HowzerBlue) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\HowzerBrown_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\HowzerBrown_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -172,7 +172,7 @@ class CLASS(Unit_104th_Trooper): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\104th_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\104th_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -193,7 +193,7 @@ class CLASS(Unit_187th_Trooper): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\187th_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\187th_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -214,7 +214,7 @@ class CLASS(Unit_501st_Trooper): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\501st_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\501st_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -235,7 +235,7 @@ class CLASS(Unit_212th_Trooper): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\212th_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\212th_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -256,7 +256,7 @@ class CLASS(Unit_91st_Ponds): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\Ponds_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\Ponds_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -277,7 +277,7 @@ class CLASS(Unit_91st_Trooper): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\91st_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\91st_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -298,7 +298,7 @@ class CLASS(Unit_327th_Trooper): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\327th_upper_co.paa),
         QPATHTOF(SUBCOMPONENT\data\uniforms\standard\327th_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {

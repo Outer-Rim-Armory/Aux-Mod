@@ -45,10 +45,6 @@ class CLASS(Helmet_ARC_Tyrant_Worn): CLASS(Helmet_ARC_Base) {
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_ARC_Tyrant_Worn);
     EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_ARC_TyrantCrimson_Worn);
-
-    class XtdGearInfo: XtdGearInfo {
-        camo = "Empire";
-    };
 };
 class CLASS(Helmet_ARC_TyrantCrimson_Worn): CLASS(Helmet_ARC_Tyrant_Worn) {
     SCOPE_HIDDEN;

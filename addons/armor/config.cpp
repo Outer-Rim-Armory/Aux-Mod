@@ -7,6 +7,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QCLASS(core),
+            "ls_characters_clone_legacy",
             "ls_armor_bluefor",
             "lsd_units_bluefor",
             "lsd_equipment_bluefor",

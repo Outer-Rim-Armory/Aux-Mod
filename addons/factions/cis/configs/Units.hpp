@@ -622,6 +622,77 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     };
 };
 
+class CLASS(CIS_Unit_Droid_B2_Aqua): CLASS(CIS_Unit_Droid_Base) {
+    SCOPE_PUBLIC;
+
+    editorSubcategory = QEDSUBCAT(CIS_B2s);
+    editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B2);
+    genericNames = QCLASS(CIS_Droids_B2);
+
+    displayName = "Aqua B2 Super Battle Droid";
+    uniformClass = QCLASS(CIS_Uniform_Droid_B2_Aqua);
+
+    model = "\lsd_armor_redfor\uniform\cis\b2\lsd_cis_b2_uniform";
+    hiddenSelections[] = {"camo_arms", "legs", "torso"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(cis\data\textures\uniforms\Aqua_B2_Arms_CO.paa),
+        QPATHTOF(cis\data\textures\uniforms\Aqua_B2_Legs_CO.paa),
+        QPATHTOF(cis\data\textures\uniforms\Aqua_B2_Torso_CO.paa)
+    };
+
+    weapons[] = {
+        QCLASS(AquaB2Blaster)
+    };
+    respawnWeapons[] = {
+        QCLASS(AquaB2Blaster)
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_60rnd_B2Blaster)),
+        QCLASS(Mag_3rnd_B2Blaster_rocket)
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_60rnd_B2Blaster)),
+        QCLASS(Mag_3rnd_B2Blaster_rocket)
+    };
+
+    linkedItems[] = {QCLASS(Vest_Basic),"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {QCLASS(Vest_Basic),"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+
+    class SoundEnvironExt {
+        generic[] = {
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 15}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 30}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 45}},
+        };
+    };
+    class SoundEquipment {
+        soldier[] = {
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 15}},
+            {"walk", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 15}},
+            {"tactical", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 15}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 30}},
+            {"run", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 30}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step1.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step2.wss), 2, 1, 45}},
+            {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 45}},
+        };
+    };
+};
+
 class CLASS(Unit_Droid_B2): CLASS(CIS_Unit_Droid_B2) {
     SCOPE_PUBLIC;
 
@@ -643,6 +714,8 @@ class CLASS(Unit_Droid_B2): CLASS(CIS_Unit_Droid_B2) {
         QPATHTOF(cis\data\textures\uniforms\KC_B2_torso_co.paa)
     };
 };
+
+
 
 class CLASS(Unit_Droid_B2_Commander): CLASS(CIS_Unit_Droid_B2) {
     SCOPE_PUBLIC;

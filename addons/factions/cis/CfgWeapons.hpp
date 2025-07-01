@@ -107,6 +107,7 @@ class CfgWeapons {
         SCOPE_PUBLIC;
 
         displayName = "[CIS] B2 Super Battle Droid";
+        uniformType = "Neopren";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(CIS_Unit_Droid_B2);
@@ -115,6 +116,22 @@ class CfgWeapons {
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_B2);
             type = "Standard";
+        };
+    };
+
+    class CLASS(CIS_Uniform_Droid_B2_Aqua): CLASS(CIS_Uniform_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[CIS] AquaB2 Super Battle Droid";
+        uniformType = "Neopren";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(CIS_Unit_Droid_B2_Aqua);
+        };
+
+        class XtdGearInfo {
+            model = QCLASS(CIS_Uniforms_B2_);
+            type = "Aqua";
         };
     };
 
@@ -129,6 +146,7 @@ class CfgWeapons {
             uniformClass = QCLASS(Unit_Droid_B2);
         };
     };
+
 
     class CLASS(Uniform_Droid_B2_Commander): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;

@@ -10,7 +10,6 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
-            class UnderBarrelSlot;
         };
         class Single: Mode_SemiAuto {
             class StandardSound;

@@ -9,7 +9,6 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
-            class UnderBarrelSlot;
         };
 
         class Single: Single {
@@ -26,6 +25,7 @@ class CfgWeapons {
         muzzles[] = {"this"};
         magazines[] = {QCLASS(Mag_100Rnd_E5)};
         magazineWell[] = {};
+        canShootInWater = TRUE;
 
         fireLightDiffuse[] = {1, 0, 0};
 

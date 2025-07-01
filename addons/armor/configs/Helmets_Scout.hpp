@@ -3,16 +3,17 @@ class CLASS(Helmet_Scout_Base_V1): CLASS(cloneHelmet_base) {
 
     displayName = "[KC] SF Scout Helm 01 (Base LS)";
 
-    model = "\ls_armor_bluefor\helmet\gar\scout\ls_gar_scout_helmet.p3d";
+    model = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
     hiddenSelections[] = {"camo1","camo2","visor"};
     hiddenSelectionsTextures[] = {
-        "ls_armor_bluefor\helmet\gar\scout\Data\helmet_co.paa",
-        "ls_armor_bluefor\helmet\gar\scout\Data\helmet_co.paa",
-        "ls_armor_bluefor\helmet\gar\scout\Data\visor_co.paa"};
+        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\helmet_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\helmet_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\visor_co.paa"
+        };
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1","camo2","visor"};
-        uniformModel = "\ls_armor_bluefor\helmet\gar\scout\ls_gar_scout_helmet.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
     };
 };
 
@@ -38,11 +39,11 @@ class CLASS(Helmet_Scout_CT_V1): CLASS(Helmet_Scout_Base_V1) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\scout\Helmet_camo1_co.paa),
         QPATHTOF(data\helmets\scout\Helmet_camo1_co.paa),
-        "ls_armor_bluefor\helmet\gar\scout\Data\visor_co.paa"};
+        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\visor_co.paa"};
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1","camo2","visor"};
-        uniformModel = "\ls_armor_bluefor\helmet\gar\scout\ls_gar_scout_helmet.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
     };
 };
 
@@ -65,11 +66,11 @@ class CLASS(Helmet_Scout_Brown): CLASS(Helmet_Scout_Base_V1) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\scout\camo\brown\Helmet_Brown_camo1_co.paa),
         QPATHTOF(data\helmets\scout\camo\brown\Helmet_Brown_camo1_co.paa),
-        "ls_armor_bluefor\helmet\gar\scout\Data\visor_co.paa"};
+        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\visor_co.paa"};
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1","camo2","visor"};
-        uniformModel = "\ls_armor_bluefor\helmet\gar\scout\ls_gar_scout_helmet.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
     };
 };
 
@@ -93,11 +94,11 @@ class CLASS(Helmet_Scout_Grey): CLASS(Helmet_Scout_Base_V1) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\scout\camo\grey\Helmet_Grey_camo1_co.paa),
         QPATHTOF(data\helmets\scout\camo\grey\Helmet_Grey_camo1_co.paa),
-        "ls_armor_bluefor\helmet\gar\scout\Data\visor_co.paa"};
+        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\visor_co.paa"};
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1","camo2","visor"};
-        uniformModel = "\ls_armor_bluefor\helmet\gar\scout\ls_gar_scout_helmet.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
     };
 };
 
@@ -120,11 +121,11 @@ class CLASS(Helmet_Scout_Imperial): CLASS(Helmet_Scout_Base_V1) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\scout\camo\imperial\Helmet_Imperial_camo1_co.paa),
         QPATHTOF(data\helmets\scout\camo\imperial\Helmet_Imperial_camo1_co.paa),
-        "ls_armor_bluefor\helmet\gar\scout\Data\visor_co.paa"};
+        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\visor_co.paa"};
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1","camo2","visor"};
-        uniformModel = "\ls_armor_bluefor\helmet\gar\scout\ls_gar_scout_helmet.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
     };
 };
 

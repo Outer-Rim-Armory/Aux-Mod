@@ -60,7 +60,6 @@ class CfgWeapons {
                     ATTACHMENTS_POINTER_BASE;
                 };
             };
-            class UnderBarrelSlot;
         };
         class Single: Single {
             reloadTime = 0.085;

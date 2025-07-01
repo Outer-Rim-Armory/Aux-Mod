@@ -1,7 +1,6 @@
 class CfgVehicles {
     class Plane_Fighter_03_dynamicLoadout_base_F;
     class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F {
-        class ACE_Actions;
         class ACE_SelfActions;
         class UserActions;
         class Turrets {

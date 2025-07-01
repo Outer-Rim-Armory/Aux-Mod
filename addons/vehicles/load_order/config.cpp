@@ -31,7 +31,6 @@ class CfgPatches {
             QGVAR(atrt),
             QGVAR(atte),
             QGVAR(barc),
-            QGVAR(blitz),
             QGVAR(conga),
             QGVAR(gammoth),
             QGVAR(glavenus),

@@ -64,26 +64,6 @@ class CfgVehicles {
         weapons[] = {QCLASS(Horn_Glavenus), "SmokeLauncher"};
         attendant = 1;
 
-        class UserActions {
-            class DeployCCP {
-                displayName = "Deploy CCP";
-                priority = 10;
-                radius = 5;
-                position = "camera";
-                showWindow = 0;
-                hideOnUse = 1;
-                onlyForPlayer = 1;
-                shortcut = "";
-                condition = QUOTE([ARR_2(this,ace_player)] call FUNC(canDeployCCP));
-                statement = QUOTE([ARR_2(this,ace_player)] call FUNC(deployCCP));
-            };
-            class UndeployCCP: DeployCCP {
-                displayName = "Undeploy CCP";
-                condition = QUOTE([ARR_2(this,ace_player)] call FUNC(canUndeployCCP));
-                statement = QUOTE([ARR_2(this,ace_player)] call FUNC(undeployCCP));
-            };
-        };
-
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\glavenus\data\textures\Medic\Body_co.paa),
             QPATHTOF(land\glavenus\data\textures\Medic\Body2_co.paa),

@@ -2,16 +2,6 @@ class CfgVehicles {
     class BARC_Base;
     class 3AS_BARC_Base: BARC_Base {
         class Sounds {
-            class Engine;
-            class Engine_int;
-            class EngineThrust_int;
-            class Engine3_Thrust_int;
-            class Engine3_Thrust_ext;
-            class Engine4_Thrust_int;
-            class Engine4_Thrust_ext;
-            class Idle_int;
-            class Idle_ext;
-            class IdleThrust_int;
         };
     };
     class CLASS(BARC): 3AS_BARC_Base {

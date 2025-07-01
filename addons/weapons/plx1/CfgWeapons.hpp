@@ -1,11 +1,4 @@
 class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class SlotInfo;
-class CowsSlot;
-class MuzzleSlot;
-class PointerSlot;
-class UnderBarrelSlot;
 class CfgWeapons
 {
     class Launcher;
@@ -14,12 +7,9 @@ class CfgWeapons
     };
     class JLTS_PLX1_AT: Launcher_Base_F {
         class WeaponSlotsInfo: WeaponSlotsInfo {
-            class CowsSlot;
             class PointerSlot;
-            class UnderBarrelSlot;
         };
         class Single: Mode_SemiAuto {
-            class StandardSound;
         };
     };
 

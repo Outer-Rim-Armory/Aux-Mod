@@ -1,7 +1,6 @@
 class CfgVehicles {
     class ReammoBox_F;
     class 3AS_Supply_Large_Prop: ReammoBox_F {
-        class EventHandlers;
     };
     class CLASS(Resupply_Base): 3AS_Supply_Large_Prop {
         SCOPE_PUBLIC;
@@ -30,9 +29,9 @@ class CfgVehicles {
     class CLASS(Resupply_SquadAmmo): CLASS(Resupply_Base) {
         displayName = "01: Ammo Crate (Squad)";
 
+        model = "3as\3as_props\crates\models\supply_small.p3d";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
-        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\supply_small_ammo\supply_small_ammo_co.paa"};
         editorPreview = EDITOR_PREVIEW(Resupply_SquadAmmo);
 
         class TransportMagazines {
@@ -156,6 +155,9 @@ class CfgVehicles {
 
     class CLASS(Resupply_SquadAmmo_Heavy): CLASS(Resupply_SquadAmmo) {
         displayName = "04: Heavy Ammo Crate (Squad)";
+        model = "3as\3as_props\crates\models\supply_small.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\supply_small_ammo\supply_small_ammo_co.paa"};
         class TransportMagazines {
             MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),20);
             MAG_XX(CLASS(Mag_30Rnd_HI12),20);
@@ -165,7 +167,8 @@ class CfgVehicles {
             MAG_XX(3AS_JLTS_MK43_AT,1);
             MAG_XX(3AS_JLTS_MK44_HE,1);
             MAG_XX(ls_mag_classC_thermalDet,5);
-            MAG_XX(CLASS(Mag_UGL_10Rnd_HE),20);
+            MAG_XX(CLASS(Mag_UGL_10Rnd_HE),5);
+            MAG_XX(CLASS(MAG_15Rnd_DX50C),20);
         };
     };
     class CLASS(Resupply_PlatoonAmmo_Heavy): CLASS(Resupply_SquadAmmo_Heavy) {
@@ -174,21 +177,21 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),120);
             MAG_XX(CLASS(Mag_30Rnd_HI12),120);
             MAG_XX(CLASS(Mag_30Rnd_DP23),120);
-            MAG_XX(CLASS(Mag_400Rnd_Z6),10);
-            MAG_XX(CLASS(Mag_800rnd_Z7),100);
+            MAG_XX(CLASS(Mag_400Rnd_Z6),100);
             MAG_XX(3AS_JLTS_MK39_AA,3);
             MAG_XX(3AS_JLTS_MK43_AT,3);
             MAG_XX(3AS_JLTS_MK44_HE,3);
             MAG_XX(ls_mag_classC_thermalDet,5);
-            MAG_XX(CLASS(Mag_UGL_10Rnd_HE),20);
+            MAG_XX(CLASS(Mag_UGL_10Rnd_HE),50);
+            MAG_XX(CLASS(MAG_15Rnd_DX50C),100);
         };
     };
 
     class CLASS(Resupply_SquadMedical): CLASS(Resupply_Base) {
         displayName = "06: Medical Crate (Squad)";
+        model = "3as\3as_props\crates\models\supply_small.p3d";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical.rvmat"};
-        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"};
+        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\supply_small_medical\supply_small_medical_co.paa"};
         editorPreview = EDITOR_PREVIEW(Resupply_SquadMedical);
 
         class TransportItems {
@@ -268,7 +271,8 @@ class CfgVehicles {
     class CLASS(Resupply_Rockets): CLASS(Resupply_Base) {
         displayName = "09: Rocket Ammo";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Red_co.paa"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Red\Supply_Large_Red_co.paa"};
         class TransportMagazines {
             MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),20);
             MAG_XX(CLASS(Mag_1Rnd_RPS8_AT),40);

@@ -1,5 +1,20 @@
+class Mode_SemiAuto;
+class Mode_FullAuto;
+
 class CfgWeapons {
-    class ls_weapon_westar35c_primary;
+    class Rifle_Base_F;
+    class arifle_MX_Base_F: Rifle_Base_F {
+        class WeaponSlotsInfo;
+    };
+    class ls_weapon_westar35c_primary: arifle_MX_Base_F {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+        };
+
+        class Single: Mode_SemiAuto {
+        };
+        class FullAuto: Mode_FullAuto {
+        };
+    };
     class CLASS(Westar35C_base): ls_weapon_westar35c_primary {
         SCOPE_PRIVATE;
         author = AUTHOR;

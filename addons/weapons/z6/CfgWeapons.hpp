@@ -2,12 +2,6 @@ class CfgWeapons {
     class LMG_Mk200_F;
     class JLTS_Z6: LMG_Mk200_F {
         class manual;
-        class Overcharge;
-        class close;
-        class medium;
-        class short;
-        class far_optic1;
-        class far_optic2;
     };
     class CLASS(Z6_Base): JLTS_Z6 {
         SCOPE_PRIVATE;
@@ -16,7 +10,7 @@ class CfgWeapons {
         displayName = "[KC] Z-6 (Base)";
         baseWeapon = QCLASS(Z6_Base);
 
-        modes[] = {"manual","Overcharge","close","short","medium","far_optic1","far_optic2"};
+        modes[] = {"manual"};
         muzzles[] = {"this"};
         magazines[] = {QCLASS(Mag_400Rnd_Z6), QCLASS(Mag_400Rnd_Z6_Red), QCLASS(Mag_400Rnd_Z6_Yellow), "Aux12thFleet_Mag_Z6"};
         magazineWell[] = {};

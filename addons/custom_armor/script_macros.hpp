@@ -2,8 +2,8 @@
     displayName = QUOTE([KC] INF P1 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase1\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa", \
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -16,8 +16,8 @@
     displayName = QUOTE([KC] INF P1 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase1\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa", \
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     EGVAR(armor,nvCanToggle) = TRUE; \
@@ -33,7 +33,7 @@ class CLASS(DOUBLES(Helmet_Phase1,var1)##var2): CLASS(DOUBLES(Helmet_Phase1,var1
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase1\DOUBLES(var1,camo1_co.paa)), \
         QPATHTOF(data\visors\DOUBLES(var2,camo2_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa" \
     }; \
     hiddenSelectionsMaterials[] = { \
         "", \
@@ -47,7 +47,7 @@ class CLASS(DOUBLES(Helmet_Phase1,var1)##var2): CLASS(DOUBLES(Helmet_Phase1,var1
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase1Pilot\DOUBLES(var1,camo1_co.paa)), \
         QPATHTOF(data\helmets\phase1Pilot\DOUBLES(var1,camo2_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -60,8 +60,8 @@ class CLASS(DOUBLES(Helmet_Phase1,var1)##var2): CLASS(DOUBLES(Helmet_Phase1,var1
     displayName = QUOTE([KC] AVI P1 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase1Pilot\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa", \
-        "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\lifesupport_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa" \
     }; \
     subItems[] = {}; \
     GVAR(isCustom) = TRUE; \
@@ -77,7 +77,7 @@ class CLASS(DOUBLES(Helmet_Phase1_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase
     SCOPE_HIDDEN; \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase1Pilot\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\lifesupport_co.paa", \
         QPATHTOF(data\visors\DOUBLES(var2,camo2_co.paa)) \
     }; \
     hiddenSelectionsMaterials[] = { \
@@ -91,7 +91,7 @@ class CLASS(DOUBLES(Helmet_Phase1_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase
     displayName = QUOTE([KC] ARMR P1 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase1SpecOp\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -104,7 +104,7 @@ class CLASS(DOUBLES(Helmet_Phase1_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase
     displayName = QUOTE([KC] ARMR P1 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase1SpecOp\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\sob\phase1SpecOp\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa" \
     }; \
     subItems[] = {}; \
     GVAR(isCustom) = TRUE; \
@@ -132,7 +132,7 @@ class CLASS(DOUBLES(Helmet_Phase1_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phas
     displayName = QUOTE([KC] INF P2 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase2\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -145,7 +145,7 @@ class CLASS(DOUBLES(Helmet_Phase1_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phas
     displayName = QUOTE([KC] INF P2 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase2\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     EGVAR(armor,nvCanToggle) = TRUE; \
@@ -172,7 +172,7 @@ class CLASS(DOUBLES(Helmet_Phase2,var1)##var2): CLASS(DOUBLES(Helmet_Phase2,var1
     displayName = QUOTE([KC] AVI P2 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase2Pilot\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -185,7 +185,7 @@ class CLASS(DOUBLES(Helmet_Phase2,var1)##var2): CLASS(DOUBLES(Helmet_Phase2,var1
     displayName = QUOTE([KC] AVI P2 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase2Pilot\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa" \
     }; \
     subItems[] = {}; \
     GVAR(isCustom) = TRUE; \
@@ -213,7 +213,7 @@ class CLASS(DOUBLES(Helmet_Phase2_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase
     displayName = QUOTE([KC] ARMR P2 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase2SpecOp\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -226,7 +226,7 @@ class CLASS(DOUBLES(Helmet_Phase2_Pilot,var1)##var2): CLASS(DOUBLES(Helmet_Phase
     displayName = QUOTE([KC] ARMR P2 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase2SpecOp\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\sob\phase2SpecOp\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa" \
     }; \
     subItems[] = {}; \
     GVAR(isCustom) = TRUE; \
@@ -266,8 +266,8 @@ class CLASS(DOUBLES(Helmet_Phase2_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phas
     displayName = QUOTE([KC] ENG Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\engineer\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa", \
-        "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -280,8 +280,8 @@ class CLASS(DOUBLES(Helmet_Phase2_Tanker,var1)##var2): CLASS(DOUBLES(Helmet_Phas
     displayName = QUOTE([KC] ENG Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\engineer\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa", \
-        "\ls_armor_bluefor\helmet\gar\engineer\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     EGVAR(armor,nvCanToggle) = TRUE; \
@@ -296,7 +296,7 @@ class CLASS(DOUBLES(Helmet_Engineer,var1)##var2): CLASS(DOUBLES(Helmet_Engineer,
     SCOPE_HIDDEN; \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\engineer\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\engineer\data\light_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa", \
         QPATHTOF(data\visors\TRIPLES(var2,Engineer,camo2_co.paa)) \
     }; \
     hiddenSelectionsMaterials[] = { \
@@ -310,8 +310,8 @@ class CLASS(DOUBLES(Helmet_Engineer,var1)##var2): CLASS(DOUBLES(Helmet_Engineer,
     displayName = QUOTE([KC] SF ARC P1.5 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\arc\DOUBLES(var1,camo1_co.paa)), \
-        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa", \
-        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -324,8 +324,8 @@ class CLASS(DOUBLES(Helmet_Engineer,var1)##var2): CLASS(DOUBLES(Helmet_Engineer,
     displayName = QUOTE([KC] SF ARC P1.5 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\arc\DOUBLES(var1,camo1_co.paa)), \
-        "\lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa", \
-        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     EGVAR(armor,nvCanToggle) = TRUE; \
@@ -341,7 +341,7 @@ class CLASS(DOUBLES(Helmet_ARC,var1)##var2): CLASS(DOUBLES(Helmet_ARC,var1)) { \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\arc\DOUBLES(var1,camo1_co.paa)), \
         QPATHTOF(data\visors\DOUBLES(var2,camo2_co.paa)), \
-        "\lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa" \
     }; \
     hiddenSelectionsMaterials[] = { \
         "", \
@@ -354,7 +354,7 @@ class CLASS(DOUBLES(Helmet_ARC,var1)##var2): CLASS(DOUBLES(Helmet_ARC,var1)) { \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\arf\DOUBLES(var1,camo1_co.paa)), \
         "", \
-        "\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -368,7 +368,7 @@ class CLASS(DOUBLES(Helmet_ARC,var1)##var2): CLASS(DOUBLES(Helmet_ARC,var1)) { \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\arf\DOUBLES(var1,camo1_co.paa)), \
         "", \
-        "\ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     EGVAR(armor,nvCanToggle) = TRUE; \
@@ -397,7 +397,7 @@ class CLASS(DOUBLES(Helmet_ARF,var1)##var2): CLASS(DOUBLES(Helmet_ARF,var1)) { \
     displayName = QUOTE([KC] INF BARC Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\barc\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -410,7 +410,7 @@ class CLASS(DOUBLES(Helmet_ARF,var1)##var2): CLASS(DOUBLES(Helmet_ARF,var1)) { \
     displayName = QUOTE([KC] INF BARC Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\barc\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     EGVAR(armor,nvCanToggle) = TRUE; \
@@ -437,7 +437,7 @@ class CLASS(DOUBLES(Helmet_BARC,var1)##var2): CLASS(DOUBLES(Helmet_BARC,var1)) {
     displayName = QUOTE([KC] INF P1-2 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase12\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\rex\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\rex\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -450,7 +450,7 @@ class CLASS(DOUBLES(Helmet_BARC,var1)##var2): CLASS(DOUBLES(Helmet_BARC,var1)) {
     displayName = QUOTE([KC] INF P1-2 Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\phase12\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\rex\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\rex\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -477,7 +477,7 @@ class CLASS(DOUBLES(Helmet_Phase12,var1)##var2): CLASS(DOUBLES(Helmet_Phase12,va
     displayName = QUOTE([KC] AB Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\airborne\DOUBLES(var1,camo1_co.paa)), \
-        "\lsd_armor_bluefor\helmet\gar\airborne\data\AB_Helmet_co.paa" \
+        QPATHTOF(data\helmets\airborne\DOUBLES(var1,camo1_co.paa)) \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -490,7 +490,7 @@ class CLASS(DOUBLES(Helmet_Phase12,var1)##var2): CLASS(DOUBLES(Helmet_Phase12,va
     displayName = QUOTE([KC] INF Sand Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\desert\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\desert\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -503,7 +503,7 @@ class CLASS(DOUBLES(Helmet_Phase12,var1)##var2): CLASS(DOUBLES(Helmet_Phase12,va
     displayName = QUOTE([KC] INF Sand Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\desert\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\desert\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\desert\data\visor_co.paa"\
     }; \
     GVAR(isCustom) = TRUE; \
     EGVAR(armor,nvCanToggle) = TRUE; \
@@ -530,7 +530,7 @@ class CLASS(DOUBLES(Helmet_Sand,var1)##var2): CLASS(DOUBLES(Helmet_Sand,var1)) {
     displayName = QUOTE([KC] INF Hunter Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\hunter\DOUBLES(var1,camo1_co.paa)), \
-        "ls_armor_bluefor\helmet\sob\hunter\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\hunter\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -543,7 +543,7 @@ class CLASS(DOUBLES(Helmet_Sand,var1)##var2): CLASS(DOUBLES(Helmet_Sand,var1)) {
     displayName = QUOTE([KC] INF Hunter Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(data\helmets\hunter\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\hunter\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\hunter\data\visor_co.paa" \
     }; \
     GVAR(isCustom) = TRUE; \
     EGVAR(armor,nvCanToggle) = TRUE; \
@@ -563,6 +563,19 @@ class CLASS(DOUBLES(Helmet_Hunter,var1)##var2): CLASS(DOUBLES(Helmet_Hunter,var1
     hiddenSelectionsMaterials[] = { \
         "", \
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat" \
+    }; \
+}
+
+#define RC_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_RC,var1)): CLASS(cloneCommando_helmet) { \
+    displayName = QUOTE([KC] SF Commando Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\commando\DOUBLES(var1,camo1_co.paa)), \
+        QPATHTOF(data\helmets\commando\DOUBLES(var1,camo1_co.paa)), \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_RC_Custom); \
+        custom = QUOTE(var1); \
     }; \
 }
 
@@ -586,6 +599,18 @@ class CLASS(DOUBLES(Helmet_Hunter,var1)##var2): CLASS(DOUBLES(Helmet_Hunter,var1
     }; \
     class XtdGearInfo { \
         model = QCLASS(Uniforms_Insulated_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}
+
+#define UNIFORM_RC_CUSTOM(var1) class CLASS(DOUBLES(Uniform_RC,var1)): CLASS(Commando_Uniform_Base) { \
+    displayName = QUOTE([KC] Custom Armor ('##var1##')); \
+    GVAR(isCustom) = TRUE; \
+    class ItemInfo: ItemInfo { \
+        uniformClass = QCLASS(DOUBLES(Unit_RC,var1)); \
+    }; \
+    class XtdGearInfo { \
+        model = QCLASS(Uniforms_Custom); \
         custom = QUOTE(var1); \
     }; \
 }

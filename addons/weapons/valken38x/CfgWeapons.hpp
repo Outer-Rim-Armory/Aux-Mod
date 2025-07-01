@@ -9,9 +9,6 @@ class CfgWeapons {
     };
     class LFP_Valken38x: arifle_MX_Base_F {
         class WeaponSlotsInfo: WeaponSlotsInfo {
-            class CowsSlot;
-            class PointerSlot;
-            class UnderBarrelSlot;
         };
 
         class Single: Mode_SemiAuto {

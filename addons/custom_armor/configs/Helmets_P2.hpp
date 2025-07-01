@@ -25,7 +25,7 @@ class CLASS(Helmet_Phase2_Jaws_CamoBrown): CLASS(Helmet_Phase2_Jaws) {
     displayName = "[KC] INF P2 Helm ('Jaws') - Brown Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\camo\brown\Jaws_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 
     class XtdGearInfo: XtdGearInfo {
@@ -40,7 +40,7 @@ class CLASS(Helmet_Phase2_Keeli_CamoBrown): CLASS(Helmet_Phase2_Keeli) {
     displayName = "[KC] INF P2 Helm ('Keeli') - Brown Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\camo\brown\Keeli_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Keeli_CamoBrown);
@@ -65,7 +65,7 @@ class CLASS(Helmet_Phase2_Keeli_CamoGrey): CLASS(Helmet_Phase2_Keeli) {
     displayName = "[KC] INF P2 Helm ('Keeli') - Grey Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\camo\grey\Keeli_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Keeli_CamoGrey);
@@ -90,7 +90,7 @@ class CLASS(Helmet_Phase2_Keeli_Worn): CLASS(Helmet_Phase2_Keeli) {
     displayName = "[KC] INF P2 Helm ('Keeli') - Worn";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\camo\worn\Keeli_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Keeli_Worn);
@@ -115,7 +115,7 @@ class CLASS(Helmet_Phase2_Keeli_Emp): CLASS(Helmet_Phase2_Keeli) {
     displayName = "[KC] INF P2 Helm ('Keeli') - Empire";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\camo\empire\Keeli_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Keeli_Emp);
@@ -162,7 +162,7 @@ class CLASS(Helmet_Phase2_Tyrant_Worn): CLASS(Helmet_Phase2_Tyrant) {
     displayName = "[KC] INF P2 Helm ('Tyrant') - Worn";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\camo\worn\Tyrant_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa"
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Tyrant_Worn);

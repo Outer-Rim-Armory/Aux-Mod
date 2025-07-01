@@ -2,7 +2,6 @@ class Mode_SemiAuto;
 class Mode_FullAuto;
 
 class CfgWeapons {
-    class CLASS(Muzzle_Stun);
     class CLASS(Muzzle_Stun_Fried);
 
     class Rifle_Base_F;
@@ -21,7 +20,6 @@ class CfgWeapons {
         class FullAuto: Mode_FullAuto {
             class StandardSound;
         };
-        class Stun;
     };
     class CLASS(DC15XS_Base): LFP_DC15xs {
         SCOPE_PRIVATE;
@@ -31,7 +29,7 @@ class CfgWeapons {
         baseWeapon = QCLASS(DC15XS_Base);
 
         modes[] = {"FullAuto", "Single"};
-        muzzles[] = {"this", "Stun"};
+        muzzles[] = {"this",};
         magazines[] = {QCLASS(Mag_50Rnd_DC15XS)};
         magazineWell[] = {};
 
@@ -51,7 +49,6 @@ class CfgWeapons {
                     ATTACHMENTS_POINTER_BASE;
                 };
             };
-            class UnderBarrelSlot;
         };
         class Single: Single {
             reloadTime = 0.16;
@@ -73,7 +70,6 @@ class CfgWeapons {
                 soundSetShotWater[] = {QCLASS(SoundSet_DC15XSShot)};
             };
         };
-        class Stun: CLASS(Muzzle_Stun) {};
     };
 
     class CLASS(DC15XS): CLASS(DC15XS_Base) {

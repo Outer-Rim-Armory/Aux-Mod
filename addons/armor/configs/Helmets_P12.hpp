@@ -3,16 +3,16 @@ class CLASS(Helmet_Phase12_Base): CLASS(cloneHelmet_base) {
 
     displayName = "[KC] INF P1-2 Helm (Base)";
 
-    model = "\ls_armor_bluefor\helmet\gar\rex\ls_gar_rex_helmet.p3d";
+    model = "\ls\core\addons\characters_clone_legacy\helmets\rex\ls_gar_rex_helmet.p3d";
     hiddenSelections[] = {"camo1", "visor"};
     hiddenSelectionsTextures[] = {
-        "\ls_armor_bluefor\helmet\gar\rex\data\helmet_co.paa",
-        "\ls_armor_bluefor\helmet\gar\rex\data\visor_co.paa"
+        "\ls\core\addons\characters_clone_legacy\helmets\rex\data\helmet_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\rex\data\visor_co.paa"
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_p1_2_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\rex_helmet_ui_ca.paa";
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1", "visor"};
-        uniformModel = "\ls_armor_bluefor\helmet\gar\rex\ls_gar_rex_helmet.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\rex\ls_gar_rex_helmet.p3d";
     };
 };

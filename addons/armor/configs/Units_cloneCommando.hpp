@@ -2,11 +2,11 @@ class CLASS(cloneCommando_unit_base): CLASS(Unit_ARC_CT) {
     SCOPE_HIDDEN;
 
     uniformClass = QCLASS(cloneCommando_uniform);
-    model = "\ls_armor_bluefor\uniform\sob\commando\ls_sob_commando_uniform.p3d";
+    model = "\ls\core\addons\characters_clone_legacy\uniforms\commando\ls_uniform_clone_commando.p3d";
     hiddenSelections[] = {"camo1", "camo2"};
     hiddenSelectionsTextures[] = {
-        "\ls_armor_bluefor\uniform\sob\commando\data\camo1_co.paa",
-        "\ls_armor_bluefor\uniform\sob\commando\data\camo2_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\commando\data\camo1_co.paa",
+        "\ls\core\addons\characters_clone_legacy\uniforms\commando\data\camo2_co.paa"
     };
 
     weapons[] = {

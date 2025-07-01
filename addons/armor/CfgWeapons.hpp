@@ -95,11 +95,11 @@ class CfgWeapons {
     #include "configs\Uniforms_Jedi.hpp"
     #include "configs\Uniforms_Scout.hpp"
 
-    class V_PlateCarrier1_rgr;
-    class SWLB_clone_basic_armor: V_PlateCarrier1_rgr {
+    class ls_cloneVest_base;
+    class ls_gar_clone_vest: ls_cloneVest_base {
         class ItemInfo;
     };
-    class CLASS(Vest_Basic): SWLB_clone_basic_armor {
+    class CLASS(Vest_Basic): ls_gar_clone_vest {
         SCOPE_PUBLIC;
 
         author = AUTHOR;
@@ -145,17 +145,17 @@ class CfgWeapons {
     class BNA_KC_Vest_ARF: CLASS(Vest_Basic) {
         displayName = "[KC] SF ARF Vest";
 
-        model = "\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\arf\ls_gar_arf_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2", "camo3"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_clones\data\light_accessories_co.paa",                 // Suspender
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",                 // Suspender
             QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
-            "\SWLB_clones\data\officer_accessories_co.paa"                // ! Ammo, currently broken
+            "\ls\core\addons\characters_clone_legacy\vests\common\officer\officer_accessories_black_co.paa"                // ! Ammo, currently broken
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_ARF_Vest.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arf\ls_gar_arf_vest.p3d";
             hiddenSelections[] = {"camo1", "camo2", "camo3"};
         };
     };
@@ -163,17 +163,17 @@ class CfgWeapons {
     class CLASS(Vest_ForceRecon): CLASS(Vest_Basic) {
         displayName = "[KC] SF XX Vest (Force Recon)";
 
-        model = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2", "pauldron"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
-            "\SWLB_clones\data\light_accessories_co.paa",                 // Suspender and Holster
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",                 // Suspender and Holster
             QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)  // Pauldron
         };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
             hiddenSelections[] = {"camo1", "camo2", "pauldron"};
         };
     };
@@ -181,18 +181,18 @@ class CfgWeapons {
     class CLASS(Vest_ForceRecon_NCO): CLASS(Vest_ForceRecon) {
         displayName = "[KC] SF XX Vest (Force Recon NCO)";
 
-        model = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_clones\data\light_accessories_co.paa",               // Suspender and Holster
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",               // Suspender and Holster
             QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa), // Kama
-            "\SWLB_clones\data\light_accessories_co.paa",                // Chest Strap and Pauldron
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",                // Chest Strap and Pauldron
             QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)                // Chest Strap and Pauldron
         };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Force_Recon_NCO.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
             hiddenSelections[] = {"camo1", "camo2", "camo3", "pauldron"};
         };
     };
@@ -200,15 +200,15 @@ class CfgWeapons {
     class CLASS(Vest_ForceRecon_Officer): CLASS(Vest_ForceRecon) {
         displayName = "[KC] SF XX Vest (Force Recon Officer)";
 
-        model = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Officer.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconOfficer_vest.p3d";
         hiddenSelectionsTextures[] = {
-            "\SWLB_clones\data\light_accessories_co.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
             QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
         };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_officer_ca.paa";
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Recon_Force_Officer.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconOfficer_vest.p3d";
         };
     };
 
@@ -244,15 +244,15 @@ class CfgWeapons {
 
         displayName = "[KC] Clone P1 NV/TI Visor";
 
-        model = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_p1Visor_nvg_on.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_p1Visor_nvg_on.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
-        hiddenSelectionsTextures[] = {"\lsd_equipment_bluefor\accessories\gar\visor\data\SWLB_clone_nvg_co.paa"};
-        picture = "\lsd_equipment_bluefor\nvg\gar\_ui\icon_SWLB_clone_nvg_ca.paa";
+        hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa"};
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVisor_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo1", "camo2"};
-            uniformModel = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_p1Visor_nvg_on.p3d";
-            modelOff = "\lsd_equipment_bluefor\accessories\gar\visor\lsd_gar_p1Visor_nvg_off.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_p1Visor_nvg_on.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_p1Visor_nvg_off.p3d";
         };
     };
 
@@ -261,13 +261,13 @@ class CfgWeapons {
 
         displayName = "[KC] Clone P2 NV/TI Visor";
 
-        model = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
         hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\visor_camo1_co.paa)};
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo1", "camo2"};
-            uniformModel = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_on.p3d";
-            modelOff = "\lsd_equipment_bluefor\nvg\gar\visor\lsd_gar_visor_nvg_off.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_off.p3d";
         };
     };
     class CLASS(cloneNvg_phase2_visor_v2): CLASS(cloneNvg_phase2_visor) {
@@ -282,27 +282,27 @@ class CfgWeapons {
 
         displayName = "[KC] Clone P1 NV/TI Rangefinder";
 
-        model = "\lsd_equipment_bluefor\accessories\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_p1Rangefinder_nvg_on.p3d";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"\lsd_equipment_bluefor\accessories\gar\visor\data\swlb_clone_nvg_co.paa"};
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_rangefinder_ca.paa";
+        hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa"};
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_rangefinder_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo1"};
-            uniformModel = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
-            modelOff = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_p1Rangefinder_nvg_on.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_p1Rangefinder_nvg_off.p3d";
         };
     };
 
     class CLASS(cloneNvg_phase2_rangefinder): CLASS(cloneNvg_phase1_rangefinder) {
         displayName = "[KC] Clone P2 NV/TI Rangefinder";
 
-        model = "\lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
         hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\rangefinder_camo1_co.paa)};
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
-            modelOff = "\lsd_equipment_bluefor\nvg\gar\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
         };
     };
 
@@ -311,31 +311,31 @@ class CfgWeapons {
 
         displayName = "[KC] Clone P1 NV/TI Officer Visor";
 
-        model = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p1Commander_nvg.p3d";
         hiddenSelections[] = {"camo1", "camo2", "camo3"};
         hiddenSelectionsTextures[] = {
-            "\lsd_equipment_bluefor\accessories\gar\visor\data\SWLB_clone_nvg_co.paa",
-            "\lsd_equipment_bluefor\accessories\gar\visor\data\SWLB_clone_nvg_co.paa",
+            "\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa",
+            "\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa",
             ""
         };
         picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_cc_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo1", "camo2", "camo3"};
-            uniformModel = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
-            modelOff = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p1Commander_nvg";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p1Commander_nvg.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p1Commander_nvg.p3d";
         };
     };
 
     class CLASS(cloneNvg_phase2_officerVisor): CLASS(cloneNvg_phase1_officerVisor) {
         displayName = "[KC] Clone P2 NV/TI Officer Visor";
 
-        model = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
         hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\officer_camo1_co.paa)};
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
-            modelOff = "\lsd_equipment_bluefor\accessories\gar\commander\lsd_gar_p2Commander_nvg";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
         };
     };
 
@@ -344,18 +344,18 @@ class CfgWeapons {
 
         displayName = "[KC] Clone NV/TI Engineer Comms";
 
-        model = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\engineerCommArray\lsd_gar_engineerCommArray_nvg.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_clones\data\SWLB_clone_nvg_co.paa",
-            "\SWLB_clones\data\SWLB_clone_nvg_co.paa"
+            "\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa",
+            "\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa"
         };
         picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo1", "camo2"};
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
-            modelOff = "\SWLB_CEE\data\SWLB_CEE_Engineer_Comms.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\engineerCommArray\lsd_gar_engineerCommArray_nvg.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\engineerCommArray\lsd_gar_engineerCommArray_nvg.p3d";
         };
     };
 
@@ -364,19 +364,19 @@ class CfgWeapons {
 
         displayName = "[KC] Clone Commando NV/TI Visor";
 
-        model = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_visor.p3d";
         hiddenSelections[] = {"illum", "camo1"};
         hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_clones_spec\data\helmet_co.paa",
-            "\SWLB_clones_spec\data\helmet_co.paa"
+            "\ls\core\addons\characters_clone_legacy\helmets\commando\data\camo1_co.paa",
+            "\ls\core\addons\characters_clone_legacy\helmets\commando\data\camo1_co.paa"
         };
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"illum", "camo1"};
-            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
-            modelOff = "\SWLB_clones_spec\SWLB_clone_commando_nvg.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_visor.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_visor.p3d";
         };
     };
 
@@ -385,15 +385,15 @@ class CfgWeapons {
 
         displayName = "[KC] Clone Commando NV/TI Antenna";
 
-        model = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_antenna.p3d";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"\SWLB_clones_spec\data\helmet_co.paa"};
+        hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\helmets\commando\data\camo1_co.paa"};
         picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_antenna_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo1"};
-            uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
-            modelOff = "\SWLB_clones_spec\SWLB_clone_commando_nvg_antenna.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_antenna.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_antenna.p3d";
         };
     };
 };

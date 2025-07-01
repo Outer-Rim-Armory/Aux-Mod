@@ -14,8 +14,10 @@ class CfgWeapons {
     #include "configs\Helmets_ARF.hpp"
     #include "configs\Helmets_BARC.hpp"
     #include "configs\Helmets_CFNintyNine.hpp"
+    #include "configs\Helmets_Commando.hpp"
 
     #include "configs\Uniforms.hpp"
+    #include "configs\Uniforms_Commando.hpp"
 
     class CLASS(Vest_Commander);
     class CLASS(Vest_Commander_Keeli): CLASS(Vest_Commander) {

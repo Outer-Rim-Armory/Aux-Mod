@@ -27,6 +27,11 @@ class Extended_InitPost_EventHandlers {
             init = "";
         };
     };
+    class CLASS(CIS_Unit_Droid_B2_Aqua) {
+        class GVAR(init) {
+            init = "";
+        };
+    };
 };
 
 class Extended_Killed_EventHandlers {

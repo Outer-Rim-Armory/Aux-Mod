@@ -20,10 +20,6 @@ class CfgWeapons {
     class autocannon_Base_F;
     class autocannon_40mm_CTWS: autocannon_Base_F {
         class player;
-        class close;
-        class short;
-        class medium;
-        class far;
     };
     class CLASS(Autocannon_Reek): autocannon_40mm_CTWS {
         muzzles[] = {"HE", "AP"};

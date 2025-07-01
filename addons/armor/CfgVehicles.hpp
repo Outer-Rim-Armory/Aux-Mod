@@ -1,6 +1,6 @@
 class CfgVehicles {
-    class lsd_gar_trooper_phase1;
-    class CLASS(Unit_Base): lsd_gar_trooper_phase1 {
+    class lsd_gar_phase2_base;
+    class CLASS(Unit_Base): lsd_gar_phase2_base {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -155,9 +155,9 @@ class CfgVehicles {
     class CLASS(backpack_base);
     class CLASS(cloneBackpack_base): CLASS(backpack_base) {
         displayName = "[KC] INF Backpack (Base)";
-        model = "\SWLB_equipment\backpacks\SWLB_clone_backpack.p3d";
-        hiddenSelections[] = {"camo1", "cover", "heavy", "medic", "RTO"};
-        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_ca.paa";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_standard_backpack.p3d";
+        hiddenSelections[] = {"backpack", "cover"};
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_backpack_ca.paa";
 
         maximumLoad = 400;
         EGVAR(custom_armor,isCustom) = TRUE;
@@ -166,17 +166,19 @@ class CfgVehicles {
     class CLASS(cloneBackpack_standard): CLASS(cloneBackpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] INF Backpack (Base)";
+        hiddenSelections[] = {"backpack", "cover"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\backpack_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa"
         };
     };
 
     class CLASS(Backpack): CLASS(cloneBackpack_standard) {
         displayName = "[KC] INF Backpack";
+        hiddenSelections[] = {"backpack", "cover"};
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\backpacks\standard\camo1_co.paa),
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            QPATHTOF(data\backpacks\standard\CT_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa"
         };
         picture = QPATHTOF(data\ui\Backpack_ca.paa);
     };
@@ -191,53 +193,70 @@ class CfgVehicles {
     class CLASS(Backpack_Heavy_Base): CLASS(cloneBackpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] INF Heavy Backpack (Base)";
-
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\heavy\ls_gar_heavy_backpack.p3d";
+        hiddenselections[] = {"backpack", "cover", "pouches", "tube"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\backpack_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\tube_co.paa"
         };
-        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_heavy_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_backpack_ca.paa";
     };
 
     class CLASS(Backpack_Heavy): CLASS(Backpack_Heavy_Base) {
         displayName = "[KC] INF Heavy Backpack";
 
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\backpacks\standard\camo1_co.paa),
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            QPATHTOF(data\backpacks\standard\CT_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\tube_co.paa"
         };
         picture = QPATHTOF(data\ui\Backpack_Heavy_ca.paa);
     };
 
-    class CLASS(cloneBackpack_rocket): CLASS(Backpack_Heavy_Base) {
+    class CLASS(Backpack_Rocket_Base): CLASS(Backpack_Heavy_Base) {
         SCOPE_PUBLIC;
-        displayName = "[KC] INF Heavy Backpack (Rocket)";
+        displayName = "[KC] INF Rocket Backpack (Base)";
 
-        model = "\ls_equipment_bluefor\backpack\gar\backpack\ls_gar_rocket_backpack.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_rocket_backpack.p3d";
         hiddenSelections[] = {"backpack", "holder", "rocket", "light", "pouches"};
         hiddenSelectionsTextures[] = {
-            "\ls_equipment_bluefor\backpack\gar\backpack\data\backpack_eod_co.paa",
-            "\ls_equipment_bluefor\backpack\gar\backpack\data\holder_co.paa",
-            "\ls_equipment_bluefor\backpack\gar\backpack\data\rocket_co.paa",
-            "\ls_equipment_bluefor\backpack\gar\backpack\data\light_co.paa",
-            "\ls_equipment_bluefor\backpack\gar\backpack\data\pouches_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\backpack_eod_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\holder_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\rocket_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\light_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa"
+        };
+    };
+
+    class CLASS(Backpack_Rocket): CLASS(Backpack_Heavy_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] INF Rocket Backpack";
+
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_rocket_backpack.p3d";
+        hiddenSelections[] = {"backpack", "holder", "rocket", "light", "pouches"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\EOD_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\holder_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\rocket_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\light_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa"
         };
     };
 
     class CLASS(Backpack_Radio_Base): CLASS(cloneBackpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] INF Radio Backpack (Base)";
-
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_radio_backpack.p3d";
+        hiddenSelections[] = {"backpack","radio","screen"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "",
-            "",
-            "",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\backpack_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
         };
-        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_RTO_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_backpack_ca.paa";
 
         // TFAR Long Range
         tf_hasLRradio = TRUE;
@@ -253,11 +272,9 @@ class CfgVehicles {
         displayName = "[KC] INF Radio Backpack";
 
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\backpacks\standard\camo1_co.paa),
-            "",
-            "",
-            "",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            QPATHTOF(data\backpacks\standard\CT_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
         };
         picture = QPATHTOF(data\ui\Backpack_Radio_ca.paa);
     };
@@ -272,12 +289,12 @@ class CfgVehicles {
     class CLASS(Backpack_Medic_Base): CLASS(cloneBackpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] INF Medic Backpack (Base)";
-
+        hiddenSelections[] = {"backpack","cover","medic1","medic2"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_medic_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\backpack_medic_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
             "",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa"
         };
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_medic_ca.paa";
     };
@@ -287,9 +304,9 @@ class CfgVehicles {
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\standard\Medic_camo1_co.paa),
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
             "",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa"
         };
         picture = QPATHTOF(data\ui\Backpack_Medic_ca.paa);
     };
@@ -297,35 +314,37 @@ class CfgVehicles {
     class CLASS(Backpack_Medic_Heavy_Base): CLASS(cloneBackpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] INF Medic Heavy Backpack (Base)";
-
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\heavy\ls_gar_heavyMedic_backpack.p3d";
+        hiddenSelections[] = {"backpack","cover","pouches","medic1","medic2"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_medic_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\backpack_medic_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa"
         };
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_heavy_ca.paa";
     };
 
     class CLASS(Backpack_Medic_Heavy): CLASS(Backpack_Medic_Heavy_Base) {
         displayName = "[KC] INF Medic Heavy Backpack";
-
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\standard\Medic_camo1_co.paa),
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa"
         };
         picture = QPATHTOF(data\ui\Backpack_Medic_Heavy_ca.paa);
     };
 
     class CLASS(Backpack_Medic_Radio_Base): CLASS(Backpack_Radio_Base) {
         displayName = "[KC] INF Medic Radio Backpack (Base)";
-
+        hiddenSelections[] = {"backpack","radio","screen"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_medic_co.paa",
-            "",
-            "",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\backpack_medic_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
         };
         picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_medic_ca.paa";
     };
@@ -335,10 +354,8 @@ class CfgVehicles {
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\standard\Medic_camo1_co.paa),
-            "",
-            "",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
         };
         picture = QPATHTOF(data\ui\Backpack_Medic_Radio_ca.paa);
     };
@@ -346,13 +363,13 @@ class CfgVehicles {
     class CLASS(Backpack_Radio_Mini_Base): CLASS(Backpack_Radio_Base) {
         displayName = "[KC] INF Radio Attachment (Base)";
 
-        model = "\SWLB_equipment\backpacks\SWLB_clone_RTO_mini_backpack.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\rto\ls_gar_rto_mini_backpack.p3d";
         hiddenSelections[] = {"main", "accumulator"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_co.paa",
-            "\SWLB_equipment\backpacks\data\SWLB_clone_RTO_mini_backpack_accumulator_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\rto\data\main_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\rto\data\accumulator_co.paa"
         };
-        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_RTO_mini_backpack_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_rto_mini_backpack_ca.paa";
     };
 
     class CLASS(Backpack_Radio_Mini): CLASS(Backpack_Radio_Mini_Base) {
@@ -366,12 +383,12 @@ class CfgVehicles {
     class CLASS(Backpack_ARC): CLASS(Backpack_Radio_Base) {
         displayName = "[KC] ARC Trooper Backpack";
 
-        model = "\SWLB_equipment\backpacks\SWLB_clone_arc_backpack.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\arc\ls_gar_arc_backpack.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_equipment\backpacks\data\SWLB_clone_arc_backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\arc\data\camo1_co.paa"
         };
-        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_arc_backpack_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_arc_backpack_ca.paa";
         maximumLoad = 600;
     };
 
@@ -379,14 +396,14 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         displayName = "[KC] SF Commando Backpack";
 
-        model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando.p3d";
         hiddenSelections[] = {"illum", "camo1"};
         hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_clones_spec\backpacks\data\backpack_co.paa",
-            "\SWLB_clones_spec\backpacks\data\backpack_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\commando\data\camo1_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\commando\data\camo1_co.paa"
         };
-        picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_ui_ca.paa";
         // TFAR Long Range
         tf_hasLRradio = TRUE;
         tf_range = 25000;
@@ -401,27 +418,27 @@ class CfgVehicles {
 
     class CLASS(cloneBackpack_commando_EOD): CLASS(cloneBackpack_commando) {
         displayName = "[KC] SF Commando EOD Backpack";
-        model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_eod.p3d";
-        picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_eod_ca.paa";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_eod.p3d";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_eod_ui_ca.paa";
     };
 
     class CLASS(cloneBackpack_commando_RTO): CLASS(cloneBackpack_commando) {
         displayName = "[KC] SF Commando Radio Backpack";
-        model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_rto.p3d";
-        picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_rto_ca.paa";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_rto.p3d";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_rto_ui_ca.paa";
 
     };
 
     class CLASS(cloneBackpack_commando_Tech): CLASS(cloneBackpack_commando) {
         displayName = "[KC] SF Commando Tech Backpack";
-        model = "\SWLB_clones_spec\backpacks\SWLB_clone_commando_backpack_02_tech.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_tech.p3d";
         hiddenSelections[] = {"illum", "camo1", "camo2"};
         hiddenSelectionsTextures[] = {
-            "\SWLB_clones_spec\backpacks\data\backpack_co.paa",
-            "\SWLB_clones_spec\backpacks\data\backpack_co.paa",
-            "\SWLB_clones_spec\backpacks\data\backpack_tech_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\commando\data\camo1_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\commando\data\camo1_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\commando\data\camo2_tech_co.paa"
         };
-        picture = "\SWLB_clones_spec\backpacks\data\ui\icon_SWLB_clone_commando_backpack_k2_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_ui_ca.paa";
     };
 
     class CLASS(Jetpack_JT12): CLASS(cloneBackpack_base) {
@@ -474,7 +491,8 @@ class CfgVehicles {
         displayName = "[KC] CDV-21 Droppack";
 
         model = "\MRC\JLTS\characters\CloneArmor\CloneJumppack.p3d";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\jetpacks\KC_JT12_co.paa),QPATHTOF(data\backpacks\jetpacks\KC_JT12_net_co.paa)};
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\CloneArmor\data\Clone_jumppack_co.paa"};
         picture = "\MRC\JLTS\characters\CloneArmor\data\ui\Clone_jumppack_ui_ca.paa";
 
         EGVAR(jetpacks,strength) = 0;

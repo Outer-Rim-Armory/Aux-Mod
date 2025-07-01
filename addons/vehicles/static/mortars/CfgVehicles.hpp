@@ -11,7 +11,6 @@ class CfgVehicles {
     };
     class B_Mortar_01_F: Mortar_01_base_F {};
     class 3AS_Republic_Mortar: B_Mortar_01_F {
-        class ace_csw;
         class UserActions;
         class Turrets: Turrets {
             class MainTurret;

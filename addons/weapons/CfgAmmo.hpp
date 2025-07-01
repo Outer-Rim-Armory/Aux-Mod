@@ -269,7 +269,7 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 2;
         cost = 7;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         timeToLive = 7;
         tracerEndTime = 10;
@@ -300,7 +300,7 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 2;
         cost = 7;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         timeToLive = 7;
         tracerEndTime = 10;
@@ -332,7 +332,7 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 2;
         cost = 7;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         timeToLive = 7;
         tracerEndTime = 10;
@@ -363,7 +363,7 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 2;
         cost = 7;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         timeToLive = 7;
         tracerEndTime = 10;
@@ -512,7 +512,7 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 2;
         cost = 5;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         audibleFire = 40;
         timeToLive = 4;
@@ -746,7 +746,7 @@ class CfgAmmo {
         warheadName = "TandemHEAT";
         simulationStep = 0.02;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_VEHICLES + AMMO_USAGE_AIRCRAFT + AMMO_USAGE_ARMORED_VEHICLES);
+        aiAmmoUsageFlags = 896;
         allowAgainstInfantry = FALSE;
 
         model = "\A3\weapons_f\launchers\RPG32\pg32v_rocket.p3d";
@@ -797,7 +797,7 @@ class CfgAmmo {
         SCOPE_PUBLIC;
         // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = 960;
         allowAgainstInfantry = TRUE;
 
         hit = 80 ;
@@ -881,7 +881,7 @@ class CfgAmmo {
         SCOPE_PUBLIC;
         // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = 960;
         allowAgainstInfantry = TRUE;
 
         hit = 80 ;
@@ -966,7 +966,7 @@ class CfgAmmo {
         SCOPE_PUBLIC;
         // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = 960;
         allowAgainstInfantry = TRUE;
 
         hit = 120;
@@ -1051,7 +1051,7 @@ class CfgAmmo {
         SCOPE_PUBLIC;
         // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = 960;
         allowAgainstInfantry = TRUE;
 
         hit = 120;

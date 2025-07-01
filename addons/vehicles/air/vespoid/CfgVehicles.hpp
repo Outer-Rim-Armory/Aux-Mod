@@ -1,5 +1,7 @@
 class CfgVehicles {
     class OPTRE_UNSC_MH_144S_Falcon;
+    class ACE_SelfActions;
+    class Components;
     class CLASS(Vespoid_Armed_Base): OPTRE_UNSC_MH_144S_Falcon {
         SCOPE_PRIVATE;
         author = AUTHOR;

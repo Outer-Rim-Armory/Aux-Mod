@@ -1,15 +1,11 @@
 class CfgWeapons {
     class ls_weapon_westar35c_primary;
-    class WeaponSlotsInfo: WeaponSlotsInfo {
-            class CowsSlot;
-            class PointerSlot;
-        };
-        class Single: Single {
-            class StandardSound;
-        };
-        class FullAuto: FullAuto {
-            class StandardSound;
-        };
+    class Single;
+    class FullAuto;
+    class CowsSlot;
+    class PointerSlot;
+    class WeaponSlotsInfo;
+    class StandardSound;
     class CLASS(Westar_Carbine_Base): ls_weapon_westar35c_primary {
         SCOPE_PRIVATE;
         author = AUTHOR;
