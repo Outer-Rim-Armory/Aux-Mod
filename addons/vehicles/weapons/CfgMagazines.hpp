@@ -6,37 +6,6 @@ class CfgMagazines {
         mass = 8;
     };
 
-    class CLASS(Mag_20Rnd_Cannon_Blitz_HEAT): CLASS(Mag_VehicleBase) {
-        SCOPE_PUBLIC;
-        displayName = "HEAT";
-        displayNameShort = "HEAT";
-        ammo = QCLASS(Bullet_PlasmaBlitz_HEAT);
-        count = 20;
-
-        nameSound = "cannon";
-
-        initSpeed = 1330;
-        maxLeadSpeed = 25;
-        weight = 126;
-        muzzleImpulseFactor[] = {0.5, 3};
-    };
-
-    class CLASS(Mag_20Rnd_Cannon_Blitz_HE): CLASS(Mag_20Rnd_Cannon_Blitz_HEAT) {
-        displayName = "HE";
-        displayNameShort = "HE";
-        ammo = QCLASS(Bullet_PlasmaBlitz_HE);
-
-        initSpeed = 1410;
-        muzzleImpulseFactor[] = {1, 6};
-    };
-
-    class CLASS(Mag_20Rnd_Cannon_Blitz_AT): CLASS(Mag_20Rnd_Cannon_Blitz_HEAT) {
-        displayName = "AT";
-        displayNameShort = "AT";
-        ammo = QCLASS(Bullet_PlasmaBlitz_AT);
-        initSpeed = 1750;
-    };
-
     class CLASS(Mag_100Rnd_Coax): CLASS(Mag_VehicleBase) {
         SCOPE_PUBLIC;
         ammo = QCLASS(Bullet_PlasmaCoax_Blue);

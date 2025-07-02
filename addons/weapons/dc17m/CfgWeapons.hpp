@@ -2,18 +2,18 @@ class PointerSlot_Rail;
 
 class CfgWeapons {
     class CLASS(Muzzle_Stun);
-    class Rifle_Long_Base_F;
-    class SWLW_rifle_base: Rifle_Long_Base_F {
+    class ls_rifle_base;
+    class ls_weapon_dc17m_base: ls_rifle_base {
         class WeaponSlotsInfo;
     };
-    class SWLW_DC17M: SWLW_rifle_base {
+    class ls_weapon_dc17m: ls_weapon_dc17m_base {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
         };
         class FullAuto;
         class Single;
     };
-    class CLASS(DC17M_Base): SWLW_DC17M {
+    class CLASS(DC17M_Base): ls_weapon_dc17m {
         SCOPE_PRIVATE;
         author = AUTHOR;
 

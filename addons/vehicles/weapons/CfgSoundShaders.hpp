@@ -12,13 +12,6 @@ class CfgSoundShaders {
         };
     };
 
-    class CLASS(SoundShader_Cannon_Blitz_Shot): CLASS(SoundShader_VehicleWeapon_Base) {
-        rangeCurve = "CannonCloseShotCurve";
-        samples[] = {
-            {QPATHTOF(weapons\data\audio\blitz\cannon\Fire1.wss), 1}
-        };
-    };
-
     class CLASS(SoundShader_Rocket_Hornet_Shot): CLASS(SoundShader_VehicleWeapon_Base) {
         rangeCurve = "CannonCloseShotCurve";
         samples[] = {

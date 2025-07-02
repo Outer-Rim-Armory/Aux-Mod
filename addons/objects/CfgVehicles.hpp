@@ -26,14 +26,14 @@ class CfgVehicles {
 
         displayName = "KC Flag (Vertical)";
 
-        model = "\LS_statics_props\flags\ls_vertical_flag";
+        model = "\ls\core\addons\props\flags\ls_vertical_flag.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_Vertical_co.paa)};
     };
     class CLASS(Flag_KC_Horizontal): CLASS(Flag_KC_Vertical) {
         displayName = "KC Flag (Horizontal)";
 
-        model = "\LS_statics_props\flags\ls_horizontal_flag";
+        model = "\ls\core\addons\props\flags\ls_horizontal_flag.p3d";
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_co.paa)};
     };
 
@@ -50,7 +50,7 @@ class CfgVehicles {
     class CLASS(Flag_KC_Damaged_Horizontal): CLASS(Flag_KC_Horizontal) {
         displayName = "KC Damaged Flag (Horizontal, Mirrored)";
 
-        model = "\LS_statics_props\flags\ls_horizontal_flag";
+        model = "\ls\core\addons\props\flags\ls_horizontal_flag.p3d";
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_Damaged_co.paa)};
     };
     class CLASS(Flag_KC_Damaged_Horizontal_Mirrored): CLASS(Flag_KC_Horizontal) {
@@ -138,7 +138,7 @@ class CfgVehicles {
 
             class Add_Radio: Arsenal_ACE {
                 displayName = "<t color='#E6E6E6'><img image='\a3\modules_f_curator\data\portraitradio_ca.paa'/> Add Radio</t>";
-                statement = QUOTE(ace_player linkItem 'SWLB_comlink');
+                statement = QUOTE(ace_player linkItem 'ls_radios_cwp8');
             };
         };
     };

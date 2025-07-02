@@ -13,14 +13,14 @@ class CfgVehicles {
         weapons[] = {
             QCLASS(DC15S),
             QCLASS(DC17),
-            "SWLB_clone_binocular",
+            "ls_clone_electrobinoculars",
             "Throw",
             "Put"
         };
         respawnWeapons[] = {
             QCLASS(DC15S),
             QCLASS(DC17),
-            "SWLB_clone_binocular",
+            "ls_clone_electrobinoculars",
             "Throw",
             "Put"
         };
@@ -83,14 +83,14 @@ class CfgVehicles {
         weapons[] = {
             QCLASS(DC15S),
             QCLASS(DC17),
-            "SWLB_clone_binocular",
+            "ls_clone_electrobinoculars",
             "Throw",
             "Put"
         };
         respawnWeapons[] = {
             QCLASS(DC15S),
             QCLASS(DC17),
-            "SWLB_clone_binocular",
+            "ls_clone_electrobinoculars",
             "Throw",
             "Put"
         };
@@ -262,7 +262,7 @@ class CfgVehicles {
         tf_hasLRradio = TRUE;
         tf_range = 25000;
 
-        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialog = "ls_radios_cloneLR";
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
@@ -296,7 +296,7 @@ class CfgVehicles {
             "",
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa"
         };
-        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_medic_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_backpack_ca.paa";
     };
 
     class CLASS(Backpack_Medic): CLASS(Backpack_Medic_Base) {
@@ -323,7 +323,7 @@ class CfgVehicles {
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa",
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa"
         };
-        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_heavy_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_backpack_ca.paa";
     };
 
     class CLASS(Backpack_Medic_Heavy): CLASS(Backpack_Medic_Heavy_Base) {
@@ -346,7 +346,7 @@ class CfgVehicles {
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
         };
-        picture = "\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_backpack_medic_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_backpack_ca.paa";
     };
 
     class CLASS(Backpack_Medic_Radio): CLASS(Backpack_Medic_Radio_Base) {
@@ -408,7 +408,7 @@ class CfgVehicles {
         tf_hasLRradio = TRUE;
         tf_range = 25000;
 
-        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialog = "ls_radios_cloneLR";
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
@@ -481,7 +481,7 @@ class CfgVehicles {
         tf_hasLRradio = TRUE;
         tf_range = 25000;
 
-        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialog = "ls_radios_cloneLR";
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
@@ -513,7 +513,7 @@ class CfgVehicles {
         tf_hasLRradio = TRUE;
         tf_range = 25000;
 
-        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialog = "ls_radios_cloneLR";
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
@@ -540,7 +540,7 @@ class CfgVehicles {
         tf_hasLRradio = TRUE;
         tf_range = 25000;
 
-        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialog = "ls_radios_cloneLR";
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";

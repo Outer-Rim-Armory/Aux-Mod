@@ -13,7 +13,7 @@ class CfgPatches {
             "JLTS_characters_DroidArmor",
             "lsd_armor_redfor",
             "ls_armor_redfor",
-            "SWLB_radios"
+            "ls_radios"
         };
         units[] = {
             QCLASS(CIS_Unit_Base),

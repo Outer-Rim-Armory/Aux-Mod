@@ -1,21 +1,5 @@
 class CfgWeapons {
     class CannonCore;
-    class cannon_120mm: CannonCore {
-        class player;
-    };
-    class CLASS(Cannon_Blitz): cannon_120mm {
-        displayName = "Main Cannon";
-        magazines[] = {
-            QCLASS(Mag_20Rnd_Cannon_Blitz_HEAT),
-            QCLASS(Mag_20Rnd_Cannon_Blitz_HE),
-            QCLASS(Mag_20Rnd_Cannon_Blitz_AT)
-        };
-        class player: player {
-            class StandardSound {
-                soundSetShot[] = {QCLASS(SoundSet_Cannon_Blitz_Shot)};
-            };
-        };
-    };
 
     class autocannon_Base_F;
     class autocannon_40mm_CTWS: autocannon_Base_F {

@@ -38,18 +38,18 @@ class CLASS(cloneCommando_EOD_vest): CLASS(cloneCommando_basic_vest) {
 
 class CLASS(cloneCommando_Sniper_vest): CLASS(cloneCommando_basic_vest) {
     displayName = "[KC] SF Commando Sniper Vest";
-    model = "\SWLB_clones_spec\SWLB_clone_commando_sniper_armor.p3d";
+    model = "\ls\core\addons\characters_clone_legacy\vests\commando\ls_vest_clone_commando_sniper.p3d";
     hiddenSelections[] = {"illum", "camo1"};
     hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
     hiddenSelectionsTextures[] = {
         "\ls\core\addons\characters_clone_legacy\uniforms\commando\data\camo2_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\commando\data\camo2_co.paa"
     };
-    picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_sniper_armor_k1_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_sniper_vest_ui_ca.paa";
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"illum", "camo1"};
-        uniformModel = "\SWLB_clones_spec\SWLB_clone_commando_sniper_armor.p3d";
+        uniformModel = "\ls\core\addons\characters_clone_legacy\vests\commando\ls_vest_clone_commando_sniper.p3d";
     };
 };
 

@@ -7,8 +7,8 @@ class CLASS(Helmet_Phase1_HowzerBlue): CLASS(Helmet_Phase1_Base) {
     displayName = "[KC] INF P1 Helm ('Howzer')";
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\helmets\phase1\HowzerBlue_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
     };
 
     EGVAR(custom_armor,isCustom) = TRUE;
@@ -23,8 +23,8 @@ class CLASS(Helmet_Phase1_HowzerBrown): CLASS(Helmet_Phase1_Base) {
     displayName = "[KC] INF P1 Helm ('Howzer') [Brown]";
     hiddenSelectionsTextures[] = {
         QPATHTOF(SUBCOMPONENT\data\helmets\phase1\HowzerBrown_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa",
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa"
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
     };
 
     EGVAR(custom_armor,isCustom) = TRUE;

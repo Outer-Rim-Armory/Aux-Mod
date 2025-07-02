@@ -146,7 +146,7 @@ class CLASS(Backpack_Droid_B1): CLASS(CIS_Backpack_Droid_B1) {
         tf_hasLRradio = TRUE;
         tf_range = 25000;
 
-        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialog = "ls_radios_cloneLR";
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
@@ -203,7 +203,7 @@ class CLASS(Jetpack_Droid_B1): CLASS(CIS_Jetpack_Droid_B1) {
         tf_hasLRradio = TRUE;
         tf_range = 25000;
 
-        tf_dialog = "SWLB_clone_rto_radio_dialog";
+        tf_dialog = "ls_radios_cloneLR";
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";

@@ -9,7 +9,7 @@ class CLASS(Helmet_BARC_Base): CLASS(cloneHelmet_base) {
         "\ls\core\addons\characters_clone_legacy\helmets\barc\data\helmet_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_helmet_barc_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\barc_helmet_ui_ca.paa";
 
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1", "visor"};

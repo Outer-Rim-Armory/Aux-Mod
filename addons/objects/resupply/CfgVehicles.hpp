@@ -322,7 +322,7 @@ class CfgVehicles {
     class CLASS(Resupply_Misc): CLASS(Resupply_Base) {
         displayName = "12: Misc Crate";
         class TransportItems {
-            ITEM_XX(SWLB_comlink,50);
+            ITEM_XX(ls_radios_cwp8,50);
             ITEM_XX(ACE_CableTie,50);
             ITEM_XX(ACE_bodyBag,50);
             ITEM_XX(CLASS(BNA_KC_cloneNvg_chip),25);

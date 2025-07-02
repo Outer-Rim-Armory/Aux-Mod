@@ -33,30 +33,30 @@ class CfgWeapons {
 
     class CLASS(Vest_Kama_Keeli): CLASS(Vest_Commander_Keeli) {
         displayName = "[KC] INF Vest (Kama, 'Keeli')";
-        model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\officer\Keeli_camo1_co.paa),
-            "SWLB_Clones\data\mc_camo1_co.paa"
+            "\ls\core\addons\characters_clone_legacy\uniforms\marshalCommander\data\camo1_co.paa"
         };
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
             hiddenSelections[] = {"camo1", "camo2"};
         };
     };
 
     class CLASS(Vest_Kama_Keeli_Worn): CLASS(Vest_Commander_Keeli) {
         displayName = "[KC] INF Vest (Kama, 'Keeli') (Worn)";
-        model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\officer\Keeli_Worn_camo1_co.paa),
-            "SWLB_Clones\data\mc_camo1_co.paa"
+            "\ls\core\addons\characters_clone_legacy\uniforms\marshalCommander\data\camo1_co.paa"
         };
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
             hiddenSelections[] = {"camo1", "camo2"};
         };
     };
@@ -73,15 +73,15 @@ class CfgWeapons {
     };
     class CLASS(Vest_Kama_Keeli_Emp): CLASS(Vest_Commander_Keeli) {
         displayName = "[KC] INF Vest (Kama, 'Keeli') ('Empire')";
-        model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\officer\Keeli_Empire_camo1_co.paa),
-            "SWLB_Clones\data\mc_camo1_co.paa"
+            "\ls\core\addons\characters_clone_legacy\uniforms\marshalCommander\data\camo1_co.paa"
         };
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
             hiddenSelections[] = {"camo1", "camo2"};
         };
     };
@@ -125,22 +125,22 @@ class CfgWeapons {
 
     class CLASS(Vest_Kama_Rat): CLASS(Vest_Officer_Rat) {
         displayName = "[KC] INF Vest (Kama, 'Rat')";
-        model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\officer\Rat_camo1_co.paa),
-            "SWLB_Clones\data\mc_camo1_co.paa"
+            "\ls\core\addons\characters_clone_legacy\uniforms\marshalCommander\data\camo1_co.paa"
         };
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
             hiddenSelections[] = {"camo1", "camo2"};
         };
     };
 
     class CLASS(Vest_Kama_Drake): CLASS(Vest_Officer) {
         displayName = "[KC] INF Vest (Kama, 'Drake')";
-        model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+        model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\officer\Drake_camo1_co.paa),
@@ -148,13 +148,13 @@ class CfgWeapons {
         };
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+            uniformModel = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
             hiddenSelections[] = {"camo1", "camo2"};
         };
     };
     //class CLASS(Vest_Kama_Drake_Emp): CLASS(Vest_Officer) {
     //    displayName = "[KC] INF Vest (Kama, 'Drake') ('Empire')";
-    //    model = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+    //    model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
     //    hiddenSelections[] = {"camo1", "camo2"};
     //    hiddenSelectionsTextures[] = {
     //        QPATHTOF(data\vests\officer\Drake_Empire_camo1_co.paa),
@@ -162,7 +162,7 @@ class CfgWeapons {
     //    };
 
     //    class ItemInfo: ItemInfo {
-    //        uniformModel = "\SWLB_CEE\data\SWLB_CEE_Wolffe_Vest.p3d";
+    //        uniformModel = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
     //        hiddenSelections[] = {"camo1", "camo2"};
     //    };
     //};
@@ -184,7 +184,7 @@ class CfgWeapons {
             QPATHTOF(data\vests\heavy\Dexus_accessories_co.paa),
             QPATHTOF(data\vests\heavy\Dexus_accessories_co.paa),
             QPATHTOF(data\vests\heavy\Dexus_accessories_co.paa),
-            "\SWLB_clones\data\light_accessories_co.paa",
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
             ""
         };
 

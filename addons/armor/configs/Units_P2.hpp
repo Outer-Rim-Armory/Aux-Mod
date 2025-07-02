@@ -630,7 +630,7 @@ class CLASS(Unit_Phase2_Insulated_Base): CLASS(Unit_Phase2_Base) {
 
     // Uniform Model & Textures
     uniformClass = QCLASS(Uniform_Phase2_Insulated_Base);
-    model = "\lsd_armor_bluefor\uniform\gar\phase2Insulated\lsd_gar_phase2Insulated_uniform.p3d";
+    model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2Insulated\ls_gar_phase2Insulated_uniform.p3d";
     hiddenSelections[] = {"_upper", "_lower", "_undersuit"};
     hiddenSelectionsTextures[] = {
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2Insulated\data\upper_co.paa",

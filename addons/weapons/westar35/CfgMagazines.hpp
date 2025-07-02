@@ -6,8 +6,8 @@ class CfgMagazines {
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 35<br/>Used In: Westar-35C";
 
-        model = "\SWLW_clones\smgs\DC15s\DC15s_mag.p3d";
-        picture = "\SWLW_merc_mando\smgs\westar35c\data\ui\SWLW_westar35c_mag_ui.paa";
+        model = "\ls\core\addons\weapons_dcseries\dc15a\ls_magazine_dc15a.p3d";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westar35c_mag_ui_ca.paa";
 
         ammo = QCLASS(Bullet_PlasmaCarbine_Yellow);
         count = 35;
@@ -22,8 +22,8 @@ class CfgMagazines {
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 35<br/>Used In: Westar-35S";
 
-        model = "\SWLW_clones\smgs\DC15s\DC15s_mag.p3d";
-        picture = "\SWLW_merc_mando\smgs\westar35c\data\ui\SWLW_westar35c_mag_ui.paa";
+        model = "\ls\core\addons\weapons_dcseries\dc15a\ls_magazine_dc15a.p3d";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westar35c_mag_ui_ca.paa";
 
         ammo = QCLASS(Bullet_PlasmaRifle_Yellow);
         count = 35;
@@ -38,8 +38,8 @@ class CfgMagazines {
         displayNameShort = "Low Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 10<br/>Used In: Westar-35S";
 
-        model = "\SWLW_clones\smgs\DC15s\DC15s_mag.p3d";
-        picture = "\SWLW_merc_mando\smgs\westar35c\data\ui\SWLW_westar35c_mag_ui.paa";
+        model = "\ls\core\addons\weapons_dcseries\dc15a\ls_magazine_dc15a.p3d";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westar35c_mag_ui_ca.paa";
 
         ammo = QCLASS(Bullet_PlasmaScatter_Yellow);
         count = 10;

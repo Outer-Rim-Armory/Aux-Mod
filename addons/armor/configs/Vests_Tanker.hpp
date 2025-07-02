@@ -4,7 +4,7 @@ class CLASS(Vest_Tanker_CT): CLASS(Vest_Basic) {
     model = "\SDT_gear\SDT_gunner_vest.p3d";
     hiddenSelections[] = {"camo1"};
     hiddenSelectionsTextures[] = {"\SDT_gear\data\Vests\chestplate_silver.paa"};
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_armor_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\airborne_vest_ui_ca.paa";
 
     class ItemInfo: ItemInfo {
         uniformModel = "\SDT_gear\SDT_gunner_vest.p3d";
@@ -28,7 +28,7 @@ class CLASS(Vest_Tanker_CS): CLASS(Vest_Tanker_CT) {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)  // Pauldron
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\airborne_nco_vest_ui_ca.paa";
 
     class ItemInfo: ItemInfo {
         uniformModel = "\SDT_gear\SDT_gunner_recon_vest.p3d";
@@ -49,7 +49,7 @@ class CLASS(Vest_Tanker_WO): CLASS(Vest_Tanker_CT) {
         "\SDT_gear\data\Vests\chestplate_silver.paa",
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa) // Kama
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_kama_armor_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_kama_ca.paa";
 
     class ItemInfo: ItemInfo {
         uniformModel = "\SDT_gear\SDT_gunner_NCO_vest.p3d";

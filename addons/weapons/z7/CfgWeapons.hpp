@@ -1,9 +1,9 @@
 class CfgWeapons {
-    class Launcher_base_F;
-    class SWLW_Z7: Launcher_base_F {
+    class ls_weapon_z7_base;
+    class ls_weapon_z7: ls_weapon_z7_base {
         class FullAuto;
     };
-    class CLASS(Z7_base): SWLW_Z7 {
+    class CLASS(Z7_base): ls_weapon_z7 {
         SCOPE_PRIVATE;
         author = AUTHOR;
 

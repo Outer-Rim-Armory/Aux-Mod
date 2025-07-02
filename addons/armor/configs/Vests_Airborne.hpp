@@ -63,7 +63,7 @@ class CLASS(Vest_Airborne_CS): CLASS(Vest_Airborne_CT) {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa),
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_airborne_nco_armor_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\airborne_nco_vest_ui_ca.paa";
 };
 
 class CLASS(Vest_Airborne_WO): CLASS(Vest_Officer) {
@@ -76,7 +76,7 @@ class CLASS(Vest_Airborne_WO): CLASS(Vest_Officer) {
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa),   // Pauldron
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)  // Ammo
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_officer_armor_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_officer_ca.paa";
 
     class ItemInfo: ItemInfo {
         uniformModel = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborneOfficer_vest.p3d";
@@ -122,7 +122,7 @@ class CLASS(Vest_Airborne_LifeSaver): CLASS(Vest_Medic) {
         QPATHTOF(data\vests\infantry\heavy\Medic_v2_camo1_co.paa),    // Ammo
         ""                                                            // Pauldron
     };
-    picture = "\SWLB_clones\data\ui\icon_SWLB_clone_cfr_armor_ca.paa";
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_cfr_ca.paa";
 
     class ItemInfo: ItemInfo {
         uniformModel = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborneCFR_vest.p3d";

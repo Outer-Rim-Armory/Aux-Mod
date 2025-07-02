@@ -68,7 +68,7 @@ class CfgWeapons {
         author = AUTHOR;
 
         displayName = "[KC] INF Armor (Base)";
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_uniform_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\uniform_ui_ca.paa";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(Unit_Phase1_Base);
@@ -152,7 +152,7 @@ class CfgWeapons {
             QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
             "\ls\core\addons\characters_clone_legacy\vests\common\officer\officer_accessories_black_co.paa"                // ! Ammo, currently broken
         };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_light_armor_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\uniform_ui_ca.paa";
 
         class ItemInfo: ItemInfo {
             uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arf\ls_gar_arf_vest.p3d";
@@ -164,10 +164,11 @@ class CfgWeapons {
         displayName = "[KC] SF XX Vest (Force Recon)";
 
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
-        hiddenSelections[] = {"camo1", "camo2", "pauldron"};
+        hiddenSelections[] = {"camo1","camo2","camo3","pauldron"};
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
-            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",                 // Suspender and Holster
+            "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
+            "",
+            "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
             QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)  // Pauldron
         };
         picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
@@ -350,7 +351,7 @@ class CfgWeapons {
             "\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa",
             "\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa"
         };
-        picture = "\SWLB_clones\data\ui\icon_SWLB_clone_ccVisor_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVisor_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo1", "camo2"};
@@ -371,7 +372,7 @@ class CfgWeapons {
             "\ls\core\addons\characters_clone_legacy\helmets\commando\data\camo1_co.paa",
             "\ls\core\addons\characters_clone_legacy\helmets\commando\data\camo1_co.paa"
         };
-        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_visor_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"illum", "camo1"};
@@ -388,7 +389,7 @@ class CfgWeapons {
         model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_antenna.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\helmets\commando\data\camo1_co.paa"};
-        picture = "\SWLB_clones_spec\data\ui\icon_SWLB_clone_commando_nvg_antenna_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_antenna_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo1"};

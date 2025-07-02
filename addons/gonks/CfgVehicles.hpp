@@ -44,7 +44,7 @@ class CfgVehicles {
                 displayName = "<t color='#FFFFFF'>Add Radio</t>";
                 priority = 0;
 
-                statement = QUOTE(ace_player linkItem 'SWLB_comlink');
+                statement = QUOTE(ace_player linkItem 'ls_radios_cwp8');
             };
         };
     };

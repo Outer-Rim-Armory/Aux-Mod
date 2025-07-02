@@ -14,7 +14,7 @@ class CLASS(CIS_Unit_Droid_Base): CLASS(CIS_Unit_Base) {
     minTotalDamageThreshold = 0.001;
 
     genericNames = "JLTS_DroidsB1";
-    identityTypes[] = {"lsd_voice_b1Droid"};
+    identityTypes[] = {"ls_b1BattleDroid"};
 
     impactEffectsBlood = "ImpactMetal";
     impactEffectsNoBlood = "ImpactMetal";
@@ -561,12 +561,12 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
     displayName = "B2 Super Battle Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B2);
 
-    model = "\lsd_armor_redfor\uniform\cis\b2\lsd_cis_b2_uniform";
+    model = "\ls\core\addons\characters_droid\uniforms\b2\ls_uniform_droid_b2.p3d";
     hiddenSelections[] = {"camo_arms", "legs", "torso"};
     hiddenSelectionsTextures[] = {
-        "\lsd_armor_redfor\uniform\cis\b2\data\arms_co.paa",
-        "\lsd_armor_redfor\uniform\cis\b2\data\legs_co.paa",
-        QPATHTOF(cis\data\textures\uniforms\B2_torso_co.paa)
+        "\ls\core\addons\characters_droid\uniforms\b2\data\arms_co.paa",
+        "\ls\core\addons\characters_droid\uniforms\b2\data\legs_co.paa",
+        "\ls\core\addons\characters_droid\uniforms\b2\data\torso_co.paa"
     };
 
     weapons[] = {
@@ -632,7 +632,7 @@ class CLASS(CIS_Unit_Droid_B2_Aqua): CLASS(CIS_Unit_Droid_Base) {
     displayName = "Aqua B2 Super Battle Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B2_Aqua);
 
-    model = "\lsd_armor_redfor\uniform\cis\b2\lsd_cis_b2_uniform";
+    model = "\ls\core\addons\characters_droid\uniforms\b2\ls_uniform_droid_b2.p3d";
     hiddenSelections[] = {"camo_arms", "legs", "torso"};
     hiddenSelectionsTextures[] = {
         QPATHTOF(cis\data\textures\uniforms\Aqua_B2_Arms_CO.paa),
@@ -706,7 +706,7 @@ class CLASS(Unit_Droid_B2): CLASS(CIS_Unit_Droid_B2) {
     side = BLUFOR;
     modelSides[] = {BLUFOR};
 
-    model = "\lsd_armor_redfor\uniform\cis\b2\lsd_cis_b2_uniform";
+    model = "\ls\core\addons\characters_droid\uniforms\b2\ls_uniform_droid_b2.p3d";
     hiddenSelections[] = {"camo_arms", "legs", "torso"};
     hiddenSelectionsTextures[] = {
         QPATHTOF(cis\data\textures\uniforms\KC_B2_arms_co.paa),
@@ -730,7 +730,7 @@ class CLASS(Unit_Droid_B2_Commander): CLASS(CIS_Unit_Droid_B2) {
     side = BLUFOR;
     modelSides[] = {BLUFOR};
 
-    model = "\lsd_armor_redfor\uniform\cis\b2\lsd_cis_b2_uniform";
+    model = "\ls\core\addons\characters_droid\uniforms\b2\ls_uniform_droid_b2.p3d";
     hiddenSelections[] = {"camo_arms", "legs", "torso"};
     hiddenSelectionsTextures[] = {
         QPATHTOF(cis\data\textures\uniforms\KC_B2_Commander_arms_co.paa),
@@ -761,9 +761,9 @@ class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
     displayName = "BX Commando Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_BX);
 
-    model = "\ls_armor_redfor\uniform\cis\bx\lsd_cis_bx_uniform.p3d";
+    model = "\ls\core\addons\characters_droid\uniforms\bx\ls_uniform_droid_bx.p3d";
     hiddenSelections[] = {"camo1"};
-    hiddenSelectionsTextures[] = {"\ls_armor_redfor\uniform\cis\bx\data\body_co.paa"};
+    hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\body_co.paa"};
 
     magazines[] = {
         ITEM_5(QCLASS(Mag_100rnd_E5)),
@@ -810,7 +810,7 @@ class CLASS(CIS_Unit_Droid_BX_Captain): CLASS(CIS_Unit_Droid_BX) {
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Captain);
 
     uniformClass = QCLASS(CIS_Uniform_Droid_BX_Captain);
-    hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\specops\textures\bx_captain_co.paa"};
+    hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\captain_body_co.paa"};
 };
 
 class CLASS(CIS_Unit_Droid_BX_Diplomat): CLASS(CIS_Unit_Droid_BX) {
@@ -818,7 +818,7 @@ class CLASS(CIS_Unit_Droid_BX_Diplomat): CLASS(CIS_Unit_Droid_BX) {
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Diplomat);
 
     uniformClass = QCLASS(CIS_Uniform_Droid_BX_Diplomat);
-    hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\specops\textures\bx_diplomat_co.paa"};
+    hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\diplomat_body_co.paa"};
 };
 
 class CLASS(CIS_Unit_Droid_BX_Security): CLASS(CIS_Unit_Droid_BX) {
@@ -826,7 +826,7 @@ class CLASS(CIS_Unit_Droid_BX_Security): CLASS(CIS_Unit_Droid_BX) {
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Security);
 
     uniformClass = QCLASS(CIS_Uniform_Droid_BX_Security);
-    hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\specops\textures\bx_security_co.paa"};
+    hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\security_body_co.paa"};
 };
 
 class CLASS(CIS_Unit_Droid_BX_Security_Shielded): CLASS(CIS_Unit_Droid_BX_Security) {
@@ -850,7 +850,7 @@ class CLASS(CIS_Unit_Droid_BX_Training): CLASS(CIS_Unit_Droid_BX) {
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Training);
 
     uniformClass = QCLASS(CIS_Uniform_Droid_BX_Training);
-    hiddenSelectionsTextures[] = {"\lsd_units_redfor\cis\trainingCamo\textures\bx_training_co.paa"};
+    hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\training_body_co.paa"};
 };
 
 class CLASS(Unit_Droid_BX): CLASS(CIS_Unit_Droid_BX) {

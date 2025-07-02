@@ -12,14 +12,14 @@ class CLASS(cloneCommando_unit_base): CLASS(Unit_ARC_CT) {
     weapons[] = {
         QCLASS(DC17M),
         QCLASS(DC15SA),
-        "SWLB_clone_binocular",
+        "ls_clone_electrobinoculars",
         "Throw",
         "Put"
     };
     respawnWeapons[] = {
         QCLASS(DC17M),
         QCLASS(DC15SA),
-        "SWLB_clone_binocular",
+        "ls_clone_electrobinoculars",
         "Throw",
         "Put"
     };

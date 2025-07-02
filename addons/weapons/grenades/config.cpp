@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "ls_weapons",
+            "ls_weapons_grenades",
             "JLTS_weapons_Core",
             "3AS_Equipment"
         };

@@ -16,7 +16,7 @@ class CfgWeapons {
         magazines[] = {QCLASS(Mag_1Rnd_RPS7_AT)};
         magazineWell[] = {};
 
-        modelOptics = "\ls_weapons\tertiary\rps6\ls_scope_rps6.p3d";
+        modelOptics = "\ls\core\addons\weapons_rps\ls_optic_rps6.p3d";
 
         // JLTS emp system
         JLTS_hasElectronics = TRUE;

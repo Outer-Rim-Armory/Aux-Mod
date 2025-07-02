@@ -345,7 +345,6 @@ class TransportItems { \
     QCLASS(ATRT), \
     QCLASS(ATTE), \
     QCLASS(BARC), \
-    QCLASS(Blitz), \
     QCLASS(Gammoth_Transport), \
     QCLASS(Gammoth_Covered), \
     QCLASS(Gammoth_Ammo), \

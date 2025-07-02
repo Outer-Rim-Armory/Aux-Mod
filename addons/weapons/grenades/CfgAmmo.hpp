@@ -13,11 +13,11 @@ class CfgAmmo {
         ace_frag_metal = 0;
         ace_frag_charge = 0;
 
-        model = "\ls_weapons\grenades\thermalDet\ls_grenade_thermalDet.p3d";
+        model = "\ls\core\addons\weapons_grenades\thermalDet\ls_grenade_thermalDet.p3d";
 
         // Sound and visual effects
-        ace_grenades_pullPinSound[] = {"\ls_sounds\weapons\grenade\pin.wss", 3, 1, 10};
-        soundFly[] = {"\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40};
+        ace_grenades_pullPinSound[] = {"\ls\core\addons\weapons\granade\pin.wss", 3, 1, 10};
+        soundFly[] = {"\ls\core\addons\weapons\granade\thermalDetClassC_fuse.wss", 3, 1, 40};
         soundSetExplosion[] = {};
 
         explosionEffects = QCLASS(Effect_GrenadeEMP_Explosion);

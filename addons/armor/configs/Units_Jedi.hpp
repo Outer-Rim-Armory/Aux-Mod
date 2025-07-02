@@ -18,14 +18,14 @@ class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base) {
     weapons[] = {
         "",
         "",
-        "SWLB_clone_binocular",
+        "ls_clone_electrobinoculars",
         "Throw",
         "Put"
     };
     respawnWeapons[] = {
         "",
         "",
-        "SWLB_clone_binocular",
+        "ls_clone_electrobinoculars",
         "Throw",
         "Put"
     };
@@ -34,8 +34,8 @@ class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base) {
     items[] = {};
     respawnItems[] = {};
 
-    linkedItems[] = {QCLASS(Vest_Jedi), "SWLB_comlink", LINKED_ITEMS};
-    respawnLinkedItems[] = {QCLASS(Vest_Jedi), "SWLB_comlink", LINKED_ITEMS};
+    linkedItems[] = {QCLASS(Vest_Jedi), "ls_radios_cwp8", LINKED_ITEMS};
+    respawnLinkedItems[] = {QCLASS(Vest_Jedi), "ls_radios_cwp8", LINKED_ITEMS};
     backpack = QCLASS(Backpack_Radio_Invis);
 };
 
@@ -49,14 +49,14 @@ class CLASS(Unit_Jedi_Commander): CLASS(Unit_Jedi_Knight) {
     weapons[] = {
         "",
         "",
-        "SWLB_clone_commander_binocular",
+        "ls_clone_electrobinocularsCommander",
         "Throw",
         "Put"
     };
     respawnWeapons[] = {
         "",
         "",
-        "SWLB_clone_commander_binocular",
+        "ls_clone_electrobinocularsCommander",
         "Throw",
         "Put"
     };

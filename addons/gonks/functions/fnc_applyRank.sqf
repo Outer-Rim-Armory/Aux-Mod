@@ -42,7 +42,7 @@ ace_player addVest _vest;
 
 ace_player linkItem "ItemMap";
 ace_player linkItem "ItemGPS";
-ace_player linkItem "SWLB_Comlink";
+ace_player linkItem "ls_radios_cwp8";
 ace_player linkItem "ItemCompass";
 ace_player linkItem "ItemWatch";
 ace_player linkItem _nvg;
