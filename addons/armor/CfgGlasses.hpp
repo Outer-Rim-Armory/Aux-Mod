@@ -7,8 +7,8 @@ ACE_OverlayCracked = "\ls\core\addons\characters_clone\equipment\interiorHud\dat
 ACE_OverlayDirt = "\ls\core\addons\characters_clone\equipment\interiorHud\data\p2_hud_dirty_ca.paa"
 
 class CfgGlasses {
-    class ls_combatGoggles_base;
-    class CLASS(Facewear_ARF_Flaps): ls_combatGoggles_base {
+    class ls_combatGlasses_base;
+    class CLASS(Facewear_ARF_Flaps): ls_combatGlasses_base {
         SCOPE_PUBLIC;
         author = AUTHOR;
 
