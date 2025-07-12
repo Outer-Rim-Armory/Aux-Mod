@@ -101,7 +101,7 @@ class CfgMagazines {
         count = 10;
 
         weaponPoolAvailable = TRUE;
-        ammo = "SWLW_ammo_40mm_blue";
+        ammo = "ls_40mm_he_blue";
 
     };
     class CLASS(Mag_UGL_3Rnd_FlareBlue): CLASS(Mag_UGL_FlareBlue) {

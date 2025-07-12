@@ -1,3 +1,5 @@
+class ls_impulsor_base;
+
 class CfgVehicles {
     class Helicopter_Base_H;
     class 3AS_LAAT_Base: Helicopter_Base_H {
@@ -7,6 +9,10 @@ class CfgVehicles {
         class pilotCamera;
     };
     class CLASS(LAATi_Base): 3AS_LAAT_Base {
+        class LS_Impulsor: ls_impulsor_base{
+            fuelDrain = 0;
+            overchargeFuelDrain = 0;
+        };
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -25,41 +31,37 @@ class CfgVehicles {
         vehicleClass = "Helicopter";
         availableForSupportTypes[] = {"CAS_Heli", "Transport", "Drop"};
 
-        IMPULSE_SETTINGS;
-
         ls_vehicle_rampAnims[] = {"ramp"};
         ls_vehicle_rampToggleSounds[] = {QCLASS(Sound_LAAT_Ramp), QCLASS(Sound_LAAT_Ramp)};
 
         // Weapons and mags
         weapons[] = {
-            "ls_laat_gun",   // HE
-            "ls_laat_gun_2", // AP
-            "ls_laat_dar",
-            "3as_LAAT_Missile_AGM",
-            "3as_LAAT_Missile_AA",
-
-            "Laserdesignator_pilotCamera",
+            "3as_LAAT_Medium_Canon",
+            "3AS_LAAT_Missile_AGM",
+            "3AS_LAAT_Missile_AA",
             "ls_weapon_CMFlareLauncher",
+            "Laserdesignator_pilotCamera",
             "SmokeLauncher"
         };
         magazines[] = {
-            "200rnd_laat_he_mag",
-            "200rnd_laat_he_mag",
-            "200rnd_laat_apfsds_mag",
-            "200rnd_laat_apfsds_mag",
-
-            "24Rnd_missiles", // Hydra Missiles
-            "3as_LAAT_8Rnd_Missile_AGM",
-            "3as_LAAT_8Rnd_Missile_AGM",
-            "3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-            "3as_PylonMissile_LAAT_8Rnd_Missile_AA",
-
-            "Laserbatteries",
-            "Laserbatteries",
-
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
+            "1000Rnd_20mm_shells",
+            "1000Rnd_20mm_shells",
+            "1000Rnd_20mm_shells",
+            "1000Rnd_20mm_shells",
+            "3AS_PylonMissile_LAAT_8Rnd_Missile_AA",
+            "3AS_PylonMissile_LAAT_8Rnd_Missile_AA",
+            "3AS_PylonMissile_LAAT_8Rnd_Missile_AA",
+            "3AS_LAAT_8Rnd_Missile_AGM",
+            "3AS_LAAT_8Rnd_Missile_AGM",
+            "3AS_LAAT_8Rnd_Missile_AGM",
+            "ls_ammo_CMFlareChaff_blue",
+            "ls_ammo_CMFlareChaff_blue",
+            "ls_ammo_CMFlareChaff_blue",
+            "ls_ammo_CMFlareChaff_blue",
+            "3as_LAAT_1000Rnd_Medium_shells",
+            "3as_LAAT_1000Rnd_Medium_shells",
+            "3as_LAAT_1000Rnd_Medium_shells",
+            "3as_LAAT_1000Rnd_Medium_shells",
             "SmokeLauncherMag"
         };
 
@@ -175,23 +177,7 @@ class CfgVehicles {
         };
 
         class UserActions {
-            class Impulse {
-                displayName = "Impulse";
-                position = "pilotview";
-                radius = 5;
-                priority = 9;
-
-                onlyForPlayer = FALSE;
-                hideOnUse = TRUE;
-                showWindow = FALSE;
-
-                condition = QUOTE(this call FUNC(canImpulse));
-                statement = QUOTE(this call ls_vehicle_fnc_impulseJoystick;);
-            };
-            class Repulse: Impulse {
-                displayName = "Repulse";
-                statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick;);
-            };
+            class Impulse {};
 
             class DoorsOpen: Impulse {
                 displayName = "Open Doors";

@@ -1,6 +1,6 @@
 class CfgWeapons {
-    class ls_redforUniform_base;
-    class CLASS(OPFOR_Uniform_Base): ls_redforUniform_base {
+    class ls_uniform_base;
+    class CLASS(OPFOR_Uniform_Base): ls_uniform_base {
         class ItemInfo;
     };
     class CLASS(CIS_Uniform_Base): CLASS(OPFOR_Uniform_Base) {
@@ -201,10 +201,6 @@ class CfgWeapons {
     class V_PlateCarrier1_rgr: Vest_NoCamo_Base {
         class ItemInfo: ItemInfo {
             class HitpointsProtectionInfo {
-                class Abdomen;
-                class Body;
-                class Chest;
-                class Diaphragm;
             };
         };
     };
@@ -232,8 +228,8 @@ class CfgWeapons {
             uniformClass = QCLASS(Unit_Droid_BX_Captain);
         };
     };
-    class ls_redforVest_base: V_PlateCarrier1_rgr {};
-    class CLASS(OPFOR_Vest_Base): ls_redforVest_base {};
+    class ls_vest_base: V_PlateCarrier1_rgr {};
+    class CLASS(OPFOR_Vest_Base): ls_vest_base {};
     class CLASS(CIS_Vest_Droid_BX): CLASS(OPFOR_Vest_Base) {
         SCOPE_PUBLIC;
 

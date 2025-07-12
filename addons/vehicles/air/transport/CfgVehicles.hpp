@@ -1,9 +1,15 @@
+class ls_impulsor_base;
+
 class CfgVehicles {
     class 3AS_Republic_Transport_01_Base;
     class 3AS_Republic_Transport_01: 3AS_Republic_Transport_01_Base {
         class ACE_SelfActions;
     };
     class CLASS(RepublicTransport): 3AS_Republic_Transport_01 {
+        class ls_impulsor: ls_impulsor_base{
+            fuelDrain = 0;
+            overchargeFuelDrain = 0;
+        };
         SCOPE_PUBLIC;
         author = AUTHOR;
 

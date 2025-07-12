@@ -69,7 +69,6 @@ class CfgWeapons {
         };
 
         GVAR(isCustom) = TRUE;
-        class ItemInfo;
     };
     class CLASS(Vest_Kama_Keeli_Emp): CLASS(Vest_Commander_Keeli) {
         displayName = "[KC] INF Vest (Kama, 'Keeli') ('Empire')";
@@ -94,7 +93,6 @@ class CfgWeapons {
         };
 
         GVAR(isCustom) = TRUE;
-        class ItemInfo;
     };
 
     class CLASS(Vest_Basic);

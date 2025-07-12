@@ -682,8 +682,8 @@ class CfgAmmo {
     };
 
     // TODO: Update to inherit from base KC bullet
-    class SWLW_ammo_40mm_at;
-    class CLASS(Bullet_Plasma40mm_AT): SWLW_ammo_40mm_at {
+    class ls_40mm_he_blue;
+    class CLASS(Bullet_Plasma40mm_AT): ls_40mm_he_blue {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
         craterWaterEffects = "ImpactEffectsWaterExplosion";
@@ -696,7 +696,7 @@ class CfgAmmo {
         submunitionInitSpeed = 1000;
         submunitionParentSpeedCoef = 0;
     };
-    class CLASS(Bullet_Plasma40mm): SWLW_ammo_40mm_at {
+    class CLASS(Bullet_Plasma40mm): ls_40mm_he_blue {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
         craterWaterEffects = "ImpactEffectsWaterExplosion";
@@ -704,7 +704,7 @@ class CfgAmmo {
         hit = 200;
         typicalSpeed = 1550;
 
-        submunitionAmmo = QCLASS(Bullet_Plasma40mm_Submunition);
+        submunitionAmmo = QCLASS(Bullet_Plasma40mm_ATSubmunition);
         submunitionInitialOffset[] = {0,0, -0.5};
         submunitionInitSpeed = 1000;
         submunitionParentSpeedCoef = 0;

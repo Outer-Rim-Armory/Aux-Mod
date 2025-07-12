@@ -4,10 +4,10 @@ class CfgMagazines {
         SCOPE_PUBLIC;
         displayName = "[KC] DX-50C Energy Cell";
         displayNameShort = "Standard Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DC-50C";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DX-50C";
 
         model = "\MRC\JLTS\weapons\DP23\EPL2_mag.p3d";
-        picture = "\SWLW_clones_spec\data\ui\DC15SA_mag_ui_ca.paa";
+        picture = "\ls\core\addons\weapons_dcSeries\data\ui\dc15sa_mag_ui_ca.paa";
 
         ammo = QCLASS(Bullet_PlasmaRifle_Blue2);
         count = 15;

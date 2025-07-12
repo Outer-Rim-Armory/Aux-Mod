@@ -24,8 +24,6 @@ class CfgWeapons {
 
         canShootInWater = TRUE;
 
-        hiddenSelectionsTextures[] = {QPATHTOF(dc15sa\data\textures\DC15SA_camo1_co.paa)};
-
         // JLTS emp system
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = TRUE;

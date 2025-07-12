@@ -92,8 +92,8 @@ class CfgVehicles {
         side = BLUFOR;
 
         hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Static\Mortar\data\base.001_co.paa",
-            "\3AS\3AS_Static\Mortar\data\tube.001_co.paa"
+            "\3as\3as_static\Mortar\data\base_co.paa",
+            "\3as\3as_static\Mortar\data\tube_co.paa"
         };
 
         class Turrets: Turrets {

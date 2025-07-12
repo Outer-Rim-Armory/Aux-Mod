@@ -30,7 +30,7 @@ class CfgWeapons {
     };
 
     class CLASS(Helmet_Phase1_Tanker_CT_v2);
-    class CLASS(Helmet_Phase1_Tanker_v2): CLASS(Helmet_Phase1_Tanker_CT) {
+    class CLASS(Helmet_Phase1_Tanker_v2): CLASS(Helmet_Phase1_Tanker_CT_v2) {
         SCOPE_HIDDEN;
     };
 

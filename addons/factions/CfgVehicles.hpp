@@ -31,10 +31,10 @@ class CfgVehicles {
     };
 
     class O_Soldier_02_F;
-    class ls_redforUnit_base: O_Soldier_02_F {
+    class ls_opfor_unit_base: O_Soldier_02_F {
         class EventHandlers;
     };
-    class CLASS(OPFOR_Unit_Base): ls_redforUnit_base {
+    class CLASS(OPFOR_Unit_Base): ls_opfor_unit_base {
         SCOPE_PRIVATE;
         author = AUTHOR;
         displayName = "OPFOR Unit Base";

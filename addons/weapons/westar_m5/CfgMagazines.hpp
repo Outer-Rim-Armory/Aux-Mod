@@ -6,8 +6,8 @@ class CfgMagazines {
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 100<br/>Used In: Westar-M5";
 
-        model = "\SWLW_clones\smgs\westar_m5\WestarM5_mag.p3d";
-        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_mag_ui.paa";
+        model = "\ls\core\addons\weapons_westar\westarM5\ls_magazine_westarM5.p3d";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westarM5_mag_ui_ca.paa";
 
         ammo = QCLASS(Bullet_PlasmaCarbine_Blue2);
         count = 100;

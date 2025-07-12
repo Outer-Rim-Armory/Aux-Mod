@@ -10,10 +10,12 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(weapons),
             QGVAR(sounds),
-            "lsd_vehicles_heli"
+            "ls_vehicles_laatc",
+            "ls_compat_ace_interaction"
         };
         units[] = {
-            QCLASS(LAATc)
+            QCLASS(LAATc),
+            QCLASS(LAATc_New)
         };
         weapons[] = {};
         VERSION_CONFIG;

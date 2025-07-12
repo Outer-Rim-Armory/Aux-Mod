@@ -79,7 +79,6 @@ class CfgWeapons {
     };
     class CLASS(INDEP_Vest_Base): ls_greenforVest_base {
         class ItemInfo: ItemInfo {
-            class HitpointsProtectionInfo;
         };
     };
     class CLASS(BS_Vest): CLASS(INDEP_Vest_Base) {
