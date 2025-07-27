@@ -7,13 +7,13 @@ class CfgVehicles {
     };
     class CLASS(BLUFOR_Unit_Base): ls_blueforUnit_base {
         SCOPE_PRIVATE;
-        author = "Keeli Company Aux Team";
-        displayName = "OPFOR Unit Base";
+        author = "505th Aux Team";
+        displayName = "BLUFOR Unit Base";
         uniformClass = QCLASS(BLUFOR_Uniform_Base);
 
         editorSubcategory = QEDSUBCAT(Infantry);
 
-        modelSides[] = {OPFOR};
+        modelSides[] = {BLUFOR};
 
         weapons[] = {"Throw", "Put"};
         respawnWeapons[] = {"Throw", "Put"};
@@ -38,7 +38,7 @@ class CfgVehicles {
         SCOPE_PRIVATE;
         author = AUTHOR;
         displayName = "OPFOR Unit Base";
-        uniformClass = "BNA_KC_OPFOR_Uniform_Base";
+        uniformClass = "OPFOR_Uniform_Base";
 
         editorSubcategory = QEDSUBCAT(Infantry);
 

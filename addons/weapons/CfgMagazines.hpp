@@ -101,7 +101,7 @@ class CfgMagazines {
         count = 10;
 
         weaponPoolAvailable = TRUE;
-        ammo = "ls_40mm_he_blue";
+        ammo = QCLASS(UGL_Grenade_HE);
 
     };
     class CLASS(Mag_UGL_3Rnd_FlareBlue): CLASS(Mag_UGL_FlareBlue) {
@@ -111,7 +111,6 @@ class CfgMagazines {
         mass = 12;
         count = 3;
     };
-
 
     class CLASS(Mag_Grenade_Base): CLASS(Mag_Base) {
         mass = 10;

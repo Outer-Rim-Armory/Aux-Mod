@@ -648,8 +648,8 @@ class CfgAmmo {
         timeToLive = 30;
 
         explosionEffects = "VehicleExplosionEffects";
-        model = "\ls_weapons\grenades\thermalDet\ls_grenade_thermalDet.p3d";
-        soundFly[] = {"\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40};
+        model = "\ls\core\addons\weapons_grenades\thermalDet\ls_grenade_thermalDet.p3d";
+        soundFly[] = {"\ls\core\addons\sounds\weapons\grenade\thermalDetClassC_fuse.wss",1,5,20};
 
         ace_frag_enabled = FALSE;
         ace_frag_skip = FALSE;
@@ -673,8 +673,34 @@ class CfgAmmo {
 
         explosionEffects = "M136_Explode";
         craterEffects = "M136_Smoke";
-        model = "\SWLW_clones\machineguns\Z6\Z6_g_mag.p3d";
-        soundFly[] = {"\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40};
+        model = "\A3\weapons_f\ammo\UGL_slug";
+        soundFly[] = {"", 3, 1, 40};
+
+        ace_frag_enabled = FALSE;
+        ace_frag_skip = FALSE;
+        ace_frag_force = FALSE;
+    };
+
+    class CLASS(UGL_Grenade_HE): G_40mm_HE {
+        hit = 200;
+        dangerRadiusHit = 60;
+        indirectHit = 15;
+        indirectHitRange = 6;
+        explosionEffectsRadius = 20;
+        suppressionRadiusHit = 24;
+
+        typicalspeed = 185;
+        visibleFireTime = 3;
+        visibleFire = 1;
+        audibleFire = 30;
+        fuseDistance = 15;
+        explosionTime = 0;
+        timeToLive = 20;
+
+        explosionEffects = "M136_Explode";
+        craterEffects = "M136_Smoke";
+        model = "\A3\weapons_f\ammo\UGL_slug";
+        soundFly[] = {"", 3, 1, 40};
 
         ace_frag_enabled = FALSE;
         ace_frag_skip = FALSE;
@@ -817,10 +843,10 @@ class CfgAmmo {
         airLock = 1;
         proximityExplosionDistance = 5;
 
-        model = "ls_weapons_core\Effects\laser_blue.p3d";
-        effectfly = "SWLW_plasma_blue";
-        ExplosionEffects = "25mm_Explode";
-        craterEffects = "SWLW_plasma_he_impact";
+        model = "\ls\core\addons\data\effects\ls_laser_blue.p3d";
+        effectfly = "ls_plasma_blue";
+        ExplosionEffects = "ls_plasma_impact";
+        craterEffects = "ImpactEffectsMedium";
 
         soundSetExplosion[] = {};
         audibleFire = 80;
@@ -901,10 +927,10 @@ class CfgAmmo {
         airLock = 1;
         proximityExplosionDistance = 5;
 
-        model = "ls_weapons_core\Effects\laser_red.p3d";
-        effectfly = "SWLW_plasma_red";
-        ExplosionEffects = "25mm_Explode";
-        craterEffects = "SWLW_plasma_he_impact";
+        model = "\ls\core\addons\data\effects\ls_laser_red.p3d";
+        effectfly = "ls_plasma_red";
+        ExplosionEffects = "ls_plasma_impact";
+        craterEffects = "ImpactEffectsMedium";
 
         soundSetExplosion[] = {};
         audibleFire = 80;

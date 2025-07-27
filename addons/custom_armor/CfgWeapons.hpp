@@ -121,6 +121,15 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
     };
 
+    class CLASS(Vest_Officer_Bean): CLASS(Vest_Officer) {
+        displayName = "[KC] INF Vest ('Bean')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\officer\Bean_camo1_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+
     class CLASS(Vest_Kama_Rat): CLASS(Vest_Officer_Rat) {
         displayName = "[KC] INF Vest (Kama, 'Rat')";
         model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_kamaAntenna_vest.p3d";
@@ -222,6 +231,15 @@ class CfgWeapons {
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\hagrid\camo1_co.paa),
             QPATHTOF(data\vests\hagrid\camo2_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+    class CLASS(cloneVest_arc_Cough): CLASS(Vest_ARC) {
+        displayName = "[KC] SF ARC Vest ('Cough')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\cough\camo1_co.paa),
+            QPATHTOF(data\vests\cough\camo2_co.paa)
         };
 
         GVAR(isCustom) = TRUE;

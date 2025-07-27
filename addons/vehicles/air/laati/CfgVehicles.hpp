@@ -37,32 +37,38 @@ class CfgVehicles {
         // Weapons and mags
         weapons[] = {
             "3as_LAAT_Medium_Canon",
+            "ls_weapon_laati_turret_50mm_he",
+            "ls_weapon_laati_turret_50mm_ap",
             "3AS_LAAT_Missile_AGM",
             "3AS_LAAT_Missile_AA",
-            "ls_weapon_CMFlareLauncher",
-            "Laserdesignator_pilotCamera",
-            "SmokeLauncher"
+            "CMFlareLauncher",
+            "Laserdesignator_pilotCamera"
         };
         magazines[] = {
-            "1000Rnd_20mm_shells",
-            "1000Rnd_20mm_shells",
-            "1000Rnd_20mm_shells",
-            "1000Rnd_20mm_shells",
+            "ls_magazine_50mm_200Rnd_HE_green",
+            "ls_magazine_50mm_200Rnd_HE_green",
+            "ls_magazine_50mm_200Rnd_HE_green",
+            "ls_magazine_50mm_200Rnd_HE_green",
+            "ls_magazine_50mm_200Rnd_APFSDS_green",
+            "ls_magazine_50mm_200Rnd_APFSDS_green",
+            "ls_magazine_50mm_200Rnd_APFSDS_green",
+            "ls_magazine_50mm_200Rnd_APFSDS_green",
             "3AS_PylonMissile_LAAT_8Rnd_Missile_AA",
             "3AS_PylonMissile_LAAT_8Rnd_Missile_AA",
             "3AS_PylonMissile_LAAT_8Rnd_Missile_AA",
             "3AS_LAAT_8Rnd_Missile_AGM",
             "3AS_LAAT_8Rnd_Missile_AGM",
             "3AS_LAAT_8Rnd_Missile_AGM",
-            "ls_ammo_CMFlareChaff_blue",
-            "ls_ammo_CMFlareChaff_blue",
-            "ls_ammo_CMFlareChaff_blue",
-            "ls_ammo_CMFlareChaff_blue",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
             "3as_LAAT_1000Rnd_Medium_shells",
             "3as_LAAT_1000Rnd_Medium_shells",
             "3as_LAAT_1000Rnd_Medium_shells",
             "3as_LAAT_1000Rnd_Medium_shells",
-            "SmokeLauncherMag"
+            "3as_LAAT_1000Rnd_Medium_shells"
         };
 
         // Textures

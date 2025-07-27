@@ -19,13 +19,20 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
-        weapons[] = {QCLASS(Cannon_YWing), "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
+        weapons[] = {
+            QCLASS(Cannon_YWing),
+            "CMFlareLauncher",
+            "Laserdesignator_pilotCamera"
+            };
         magazines[] = {
             "3AS_BTLB_450Rnd_Heavy_Shells",
             "3AS_BTLB_450Rnd_Heavy_Shells",
-            "ls_mag_240Rnd_CMFlareChaff_blue",
-            "ls_mag_240Rnd_CMFlareChaff_blue",
-            "Laserbatteries"
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "Laserbatteries",
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "120Rnd_CMFlare_Chaff_Magazine"
         };
 
         hiddenselectionstextures[] = {

@@ -11,6 +11,26 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
+        weapons[] = {
+            "3as_V19_Medium_Cannon",
+            "3as_ARC_Missile_AA",
+            "weapon_AMRAAMLauncher",
+            "CMFlareLauncher"
+            };
+        magazines[] = {
+            "3as_PylonMissile_ARC_2Rnd_Missile_AA",
+            "3as_PylonMissile_ARC_2Rnd_Missile_AA",
+            "3as_PylonMissile_ARC_2Rnd_Missile_AA",
+            "3as_PylonMissile_ARC_2Rnd_Missile_AA",
+            "PylonRack_Missile_AMRAAM_C_x2",
+            "PylonRack_Missile_AMRAAM_C_x2",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "3as_V19_800Rnd_Medium_shells",
+            "3as_V19_800Rnd_Medium_shells",
+            "3as_V19_800Rnd_Medium_shells"
+        };
+
         hiddenselections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
         hiddenSelectionsTextures[] = {
             "3as\3as_v19\textures\wings_co.paa",

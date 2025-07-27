@@ -31,17 +31,16 @@ class CfgVehicles {
 
         weapons[] = {
             "ParticleBeamCannon_Nu",
-            "ls_weapon_CMFlareLauncher",
-            "SmokeLauncher"
+            "ls_weapon_CMFlareLauncher"
         };
         magazines[] = {
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
             "3AS_Nu_5000Rnd_HE",
             "3AS_Nu_5000Rnd_HE",
-            "3AS_Nu_5000Rnd_HE",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "SmokeLauncherMag"
+            "3AS_Nu_5000Rnd_HE"
         };
 
         textureList[] = {
