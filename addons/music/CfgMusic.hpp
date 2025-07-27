@@ -88,6 +88,7 @@ class CfgMusic {
     MUSIC(MW_ThemeHopeful,"[MW] Theme (Hopeful)",167,VideoGames);
     MUSIC(MW_ThemeHype,"[MW] Theme (Hype)",336,VideoGames);
     MUSIC(MW_Sheperds_Betrayal,"[MW] Sheperds Betrayal",132,VideoGames);
+    MUSIC(MW_Extraction,"[MW] Extraction",215,VideoGames);
 
     // One Piece
     MUSIC(OP_Fujitora,"[OP] Fujitora's Theme",67,Anime);
@@ -144,6 +145,7 @@ class CfgMusic {
     MUSIC(RC_Theme_2,"[SW] Clone Commando Theme 2",192,StarWars);
     MUSIC(CW_Ground_Ambience,"[SW] Clone Ground Ambience",3735,StarWars);
     MUSIC(CW_Venator_Ambience,"[SW] Venator Ambience",2499,StarWars);
+    MUSIC(SW_Kylo_Theme,"[SW] Kylo Theme",297,StarWars);
 
 
     // Transformers
@@ -154,6 +156,11 @@ class CfgMusic {
     MUSIC(TF_Nest,"[TF] Nest",124,Other);
     MUSIC(TF_TheAllSpark,"[TF] The All Spark",214,Other);
     MUSIC(EPF_Anthem,"EPF Anthem",228,Other);
+    MUSIC(TRN_Battle,"[TF] Battle (Charging/Hopefull)",220,Other);
+    MUSIC(TF_Plan,"[TF] There is no Plan (Hopeless)",217,Other);
+    MUSIC(TF_Shockwave,"[TF] Shockwave (Impending Doom)",121,Other);
+    MUSIC(TF_No_Prisoners),"[TF] No Prisoners  (Hopeless)",212,Other);
+    MUSIC(TF_Invasion,"[TF] Invasion (Impending Doom)",265,Other);
 
     // Tron
     MUSIC(Tron_CLU,"[Tron] C.L.U",279,Other);
