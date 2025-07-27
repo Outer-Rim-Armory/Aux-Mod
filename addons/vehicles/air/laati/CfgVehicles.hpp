@@ -53,6 +53,7 @@ class CfgVehicles {
             "ls_magazine_50mm_200Rnd_APFSDS_green",
             "ls_magazine_50mm_200Rnd_APFSDS_green",
             "ls_magazine_50mm_200Rnd_APFSDS_green",
+            "Laserbatteries",
             "3AS_PylonMissile_LAAT_8Rnd_Missile_AA",
             "3AS_PylonMissile_LAAT_8Rnd_Missile_AA",
             "3AS_PylonMissile_LAAT_8Rnd_Missile_AA",
