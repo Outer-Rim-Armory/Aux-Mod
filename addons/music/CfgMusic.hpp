@@ -159,7 +159,7 @@ class CfgMusic {
     MUSIC(TRN_Battle,"[TF] Battle (Charging/Hopefull)",220,Other);
     MUSIC(TF_Plan,"[TF] There is no Plan (Hopeless)",217,Other);
     MUSIC(TF_Shockwave,"[TF] Shockwave (Impending Doom)",121,Other);
-    MUSIC(TF_No_Prisoners),"[TF] No Prisoners  (Hopeless)",212,Other);
+    MUSIC(TF_No_Prisoners,"[TF] No Prisoners  (Hopeless)",212,Other);
     MUSIC(TF_Invasion,"[TF] Invasion (Impending Doom)",265,Other);
 
     // Tron

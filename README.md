@@ -5,7 +5,7 @@
 <div id="user-content-toc">
   <ul>
     <summary><h1 style="display: inline-block;">Keeli Company Aux Mod</h1><br>
-    Version 2.50.0<br>
+    Version 2.50.1<br>
     <img style="padding-top:10px" src="https://www.bohemia.net/assets/img/licenses/APL-ND.png">*</summary>
   </ul>
 </div>
