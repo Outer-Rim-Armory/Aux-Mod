@@ -225,6 +225,9 @@ class CfgVehicles {
     };
     class CLASS(Resupply_PlatoonMedical): CLASS(Resupply_SquadMedical) {
         displayName = "07: Medical Crate (Platoon)";
+        model = "3as\3as_props\crates\models\supply_Large.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\Supply_Large_Medical\Supply_Large_Medical_co.paa"};
         ace_cargo_size = 2;
 
         class TransportItems {
