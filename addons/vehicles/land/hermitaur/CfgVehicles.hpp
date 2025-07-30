@@ -29,10 +29,10 @@ class CfgVehicles {
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         animationList[] = {
             // These values are actually inverted, they should be "hide"
-            "HideAttachmentDozer", FALSE,
-            "HideAttachmentFuel", FALSE,
-            "HideAttachmentPlate", FALSE,
-            "HideAttachmentRepair", FALSE
+            "HideAttachmentDozer", TRUE,
+            "HideAttachmentFuel", TRUE,
+            "HideAttachmentPlate", TRUE,
+            "HideAttachmentRepair", TRUE
         };
 
         ace_cargo_space = 15;
@@ -44,7 +44,7 @@ class CfgVehicles {
             "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
         };
 
-        textureList[] = {"Standard", 0, "KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0, "Medic", 0, "Imperial", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0, "Medic", 0, "Imperial", 0, "Rebel", 0};
         class TextureSources {
             class Standard {
                 author = AUTHOR;
@@ -94,6 +94,16 @@ class CfgVehicles {
                     QPATHTOF(land\hermitaur\data\textures\Imperial\PX10CAV_KCImp_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
+                };
+            };
+            class Rebel: KeeliCompany {
+                displayName = "Rebel";
+                textures[] = {
+                    "3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10fuel_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10crane_co.paa"
                 };
             };
         };
@@ -136,10 +146,10 @@ class CfgVehicles {
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         animationList[] = {
             // These values are actually inverted, they should be "hide"
-            "HideAttachmentDozer", TRUE,
-            "HideAttachmentFuel", TRUE,
-            "HideAttachmentPlate", FALSE,
-            "HideAttachmentRepair", TRUE
+            "HideAttachmentDozer", FALSE,
+            "HideAttachmentFuel", FALSE,
+            "HideAttachmentPlate", TRUE,
+            "HideAttachmentRepair", FALSE
         };
 
         ace_cargo_space = 15;
@@ -163,7 +173,7 @@ class CfgVehicles {
             "3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
             "3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
         };
-        textureList[] = {"Standard", 0, "KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0, "Medic", 0, "Imperial", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0, "Medic", 0, "Imperial", 0, "Rebel", 0};
         class TextureSources {
             class Standard {
                 author = AUTHOR;
@@ -213,6 +223,16 @@ class CfgVehicles {
                     QPATHTOF(land\hermitaur\data\textures\Imperial\PX10CAV_KCImp_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
+                };
+            };
+            class Rebel: KeeliCompany {
+                displayName = "Rebel";
+                textures[] = {
+                    "3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10fuel_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10crane_co.paa"
                 };
             };
         };
@@ -251,7 +271,7 @@ class CfgVehicles {
             "3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
             "3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
         };
-        textureList[] = {"Standard", 0, "KeeliCompany", 0, "BrownCamo", 0, "GreyCamo", 0, "Medic", 1, "Imperial", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 0, "BrownCamo", 0, "GreyCamo", 0, "Medic", 1, "Imperial", 0, "Rebel", 0};
         class TextureSources {
             class Standard {
                 author = AUTHOR;
@@ -301,6 +321,16 @@ class CfgVehicles {
                     QPATHTOF(land\hermitaur\data\textures\Imperial\PX10CAV_KCImp_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
+                };
+            };
+            class Rebel: KeeliCompany {
+                displayName = "Rebel";
+                textures[] = {
+                    "3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10fuel_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10crane_co.paa"
                 };
             };
         };
