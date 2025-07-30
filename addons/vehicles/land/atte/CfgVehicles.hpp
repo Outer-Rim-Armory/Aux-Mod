@@ -57,6 +57,7 @@ class CfgVehicles {
             "CamoGrey", 0,
             "Rebecca", 0,
             "Reekolith", 0,
+            "Rebel", 0,
         };
         class TextureSources {
             class Standard {
@@ -154,6 +155,18 @@ class CfgVehicles {
                     QPATHTOF(land\atte\data\textures\CamoGrey\Legs_co.paa),
                     "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Glass_ca.paa",
                     "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
+                };
+            };
+
+            class Rebel: KeeliCompany {
+                displayName = "Rebel";
+                textures[] = {
+                    "3as\3AS_ATTE\data\Textures\3AS_ATTE_Shell_Rebel_co.paa",
+                    "3as\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    "3as\3AS_ATTE\data\Textures\3AS_ATTE_Detail_co.paa",
+                    "3as\3AS_ATTE\data\Textures\3AS_ATTE_Legs_co.paa",
+                    "3as\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "3as\3as_atte\data\textures\3as_atte_armor_rebel_co.paa"
                 };
             };
         };
