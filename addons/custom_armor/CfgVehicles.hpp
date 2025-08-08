@@ -67,6 +67,8 @@ class CfgVehicles {
     };
 
     class CLASS(cloneBackpack_commando);
+    class CLASS(cloneBackpack_commando_EOD);
+    class CLASS(cloneBackpack_commando_Tech);
     class CLASS(Spectre_Backpack): CLASS(cloneBackpack_commando) {
         displayName = "Spectre's Commando Backpack";
 
@@ -82,6 +84,23 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\Tugz\Tugz_Backpack_co.paa),
             QPATHTOF(data\backpacks\Tugz\Tugz_Backpack_co.paa)
+        };
+    };
+    class CLASS(Jaws_Backpack): CLASS(cloneBackpack_commando_EOD) {
+        displayName = "[KC] Jaws Commando Backpack";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Jaws\Jaws_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Jaws\Jaws_Backpack_co.paa)
+        };
+    };
+    class CLASS(Cutthroat_Backpack): CLASS(cloneBackpack_commando_Tech) {
+        displayName = "[KC] Cutthroat Commando Backpack";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Cutthroat\Cutthroat_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Cutthroat\Cutthroat_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Cutthroat\Cutthroat_Tech_Backpack_co.paa)
         };
     };
 

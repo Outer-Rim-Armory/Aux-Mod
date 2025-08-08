@@ -10,6 +10,7 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(e5),
             "ls_weapons",
+            "ls_weapons_eseries",
             "SWLW_clones",
             "SWLW_droids",
             "3AS_Weapons_DWBlaster"

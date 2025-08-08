@@ -1,5 +1,6 @@
 class CfgWeapons {
     class CannonCore;
+    class Mode_SemiAuto;
 
     class autocannon_Base_F;
     class autocannon_40mm_CTWS: autocannon_Base_F {
@@ -250,6 +251,129 @@ class CfgWeapons {
             "3AS_10Rnd_Siege_Cannon_HHE_shells"
         };
     };
+
+    class Gozanti_MassDriverCannon: 3AS_Mass_Driver_Cannon
+    {
+		displayName="[KC] Gozanti Mass Driver Cannon";
+        canlock=1;
+		reloadTime=6;
+		magazineReloadTime=5;
+        magazines[]=
+		{
+			"Gozanti_100RNDMassDriverShells"
+		};
+        modes[]=
+		{
+			"player",
+			"topDown",
+			"close",
+			"short",
+			"medium",
+			"far"
+		};
+        class player: Mode_SemiAuto
+		{
+			sounds[]=
+			{
+				"StandardSound"
+			};
+			class BaseSoundModeType;
+			class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"3AS_Maincanon_Shot_SoundSet"
+				};
+			};
+			soundContinuous=0;
+			reloadTime=6;
+			magazineReloadTime=5;
+			autoReload=1;
+			autoFire=0;
+			dispersion=0.00056999997;
+			aiRateOfFire=1;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=1;
+			midRangeProbab=0.0099999998;
+			maxRange=2;
+			maxRangeProbab=0.0099999998;
+		};
+		class TopDown: player
+		{
+			textureType="topDown";
+			displayName="$STR_A3_FireMode_TopDown0";
+			minRange=150;
+			minRangeProbab=0.40000001;
+			midRange=400;
+			midRangeProbab=0.94999999;
+			maxRange=8000;
+			maxRangeProbab=0.94999999;
+		};
+		class close: player
+		{
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=6;
+			aiRateOfFireDispersion=0.5;
+			aiRateOfFireDistance=500;
+			minRange=5;
+			minRangeProbab=0.1;
+			midRange=500;
+			midRangeProbab=0.80000001;
+			maxRange=1000;
+			maxRangeProbab=0.85000002;
+		};
+		class short: close
+		{
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=6;
+			aiRateOfFireDispersion=1;
+			aiRateOfFireDistance=1000;
+			minRange=500;
+			minRangeProbab=0.30000001;
+			midRange=1000;
+			midRangeProbab=0.85000002;
+			maxRange=1500;
+			maxRangeProbab=0.85000002;
+		};
+		class medium: close
+		{
+			dispersion=0.00071250001;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=8;
+			aiRateOfFireDispersion=4;
+			aiRateOfFireDistance=1250;
+			minRange=1000;
+			minRangeProbab=0.60000002;
+			midRange=1500;
+			midRangeProbab=0.85000002;
+			maxRange=2000;
+			maxRangeProbab=0.80000001;
+		};
+		class far: close
+		{
+			dispersion=0.00071250001;
+			showToPlayer=0;
+			burst=1;
+			burstRangeMax=1;
+			aiRateOfFire=10;
+			aiRateOfFireDispersion=8;
+			aiRateOfFireDistance=1500;
+			minRange=1500;
+			minRangeProbab=0.75;
+			midRange=2000;
+			midRangeProbab=0.80000001;
+			maxRange=3500;
+			maxRangeProbab=0.050000001;
+		};
+	};
 
     class 3AS_ATTE_Turret;
     class CLASS(Turret_ATTE): 3AS_ATTE_Turret {

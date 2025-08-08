@@ -127,7 +127,7 @@ class CfgWeapons {
             maxRecoilSway = 0.008;
             recoil = "recoil_mmg_01";
             reloadAction = "ReloadMagazine";
-            reloadMagazineSound[] = {"\SWLW_droids\smgs\e5\sounds\e5_reload.wss",1.5, 1, 20};
+            reloadMagazineSound[] = {"\ls\core\addons\sounds\weapons\reload\e5_reload.wss",1.5, 1, 20};
             swayDecaySpeed = 2;
 
             ace_overheating_allowSwapBarrel = TRUE;
@@ -285,7 +285,7 @@ class CfgWeapons {
             maxRecoilSway = 0.008;
             recoil = "recoil_mmg_01";
             reloadAction = "ReloadMagazine";
-            reloadMagazineSound[] = {"\SWLW_droids\smgs\e5\sounds\e5_reload.wss",1.5, 1, 20};
+            reloadMagazineSound[] = {"\ls\core\addons\sounds\weapons\reload\e5_reload.wss",1.5, 1, 20};
             swayDecaySpeed = 2;
 
             ace_overheating_allowSwapBarrel = TRUE;

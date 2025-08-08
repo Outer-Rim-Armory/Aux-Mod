@@ -10,7 +10,7 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(accessories),
             "3AS_Weapons_WestarM5",
-            "SWLW_clones",
+            "ls_weapons_westar",
             "JLTS_weapons_DC17SA",
             "ace_laserpointer"
         };

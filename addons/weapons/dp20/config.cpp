@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             QUOTE(ADDON),
             QGVAR(accessories),
-            "SWLW_DP20",
+            "ls_weapons_dcSeries",
             "JLTS_weapons_DC17SA",
             "ace_laserpointer"
         };

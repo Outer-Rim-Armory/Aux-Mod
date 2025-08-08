@@ -862,12 +862,46 @@ class CLASS(Unit_RC_Tugz): CLASS(cloneCommando_unit_base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_RC_Tugz), QCLASS(Vest_Tugz), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_RC_Tugz), QCLASS(Tugz_RC_Vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_RC_Tugz), QCLASS(Vest_Tugz), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_RC_Tugz), QCLASS(Tugz_RC_Vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(Tugz_Backpack);
+};
+class CLASS(Unit_RC_Jaws): CLASS(cloneCommando_unit_base) {
+    SCOPE_PUBLIC;
+    displayName = "Jaws (RC)";
+    editorSubcategory = QEDSUBCAT(Customs);
+    uniformClass = QCLASS(Uniform_RC_Jaws);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\commando\Jaws_upper_co.paa),
+        QPATHTOF(data\uniforms\commando\Jaws_lower_co.paa),
     };
 
-    backpack = QCLASS(Tugz_Backpack);
+    linkedItems[] = {
+        QCLASS(Helmet_RC_Jaws), QCLASS(Jaws_RC_Vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_RC_Jaws), QCLASS(Jaws_RC_Vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(Jaws_Backpack);
+};
+class CLASS(Unit_RC_Cutthroat): CLASS(cloneCommando_unit_base) {
+    SCOPE_PUBLIC;
+    displayName = "Cutthroat (RC)";
+    editorSubcategory = QEDSUBCAT(Customs);
+    uniformClass = QCLASS(Uniform_RC_Cutthroat);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\commando\Cutthroat_upper_co.paa),
+        QPATHTOF(data\uniforms\commando\Cutthroat_lower_co.paa),
+    };
 
+    linkedItems[] = {
+        QCLASS(Helmet_RC_Cutthroat), QCLASS(Cutthroat_RC_Vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_RC_Cutthroat), QCLASS(Cutthroat_RC_Vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(Cutthroat_Backpack);
 };

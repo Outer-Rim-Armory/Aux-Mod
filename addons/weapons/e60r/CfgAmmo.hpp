@@ -26,7 +26,7 @@ class CfgAmmo {
         thrustTime = 5;
         timeToLive = 5;
         effectsMissile = QCLASS(Effect_E60_Fly);
-        soundFly[] = {"\swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
+        soundFly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 6, 1.5, 700};
     };
 
     class CLASS(Rocket_E60R_AT): CLASS(Rocket_Base) {
@@ -41,7 +41,7 @@ class CfgAmmo {
         thrustTime = 5;
         timeToLive = 5;
         effectsMissile = QCLASS(Effect_E60_Fly);
-        soundFly[] = {"\swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
+        soundFly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 6, 1.5, 700};
         submunitionAmmo = QCLASS(Rocket_E60R_AT_Submunition);
     };
 
@@ -62,6 +62,6 @@ class CfgAmmo {
 
         cmImmunity = 0.5;
         effectsMissile = QCLASS(Effect_E60_Fly);
-        soundFly[] = {"\swlw_rework\sounds\launcher\E60R_fly.wss", 6, 1.5, 700};
+        soundFly[] = {"A3\sounds_f\weapons\rockets\rocket_fly_1", 6, 1.5, 700};
     };
 };

@@ -6,13 +6,13 @@ class CfgMagazines {
         displayNameShort = "Medium Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: DC-17M";
 
-        model = "\SWLW_clones_spec\DC17M_magazine_blaster.p3d";
+        model = "\ls\core\addons\weapons_dcSeries\dc17m\ls_magazine_dc17m_blaster.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(dc17m\data\DC17M_camo1_co.paa)};
-        picture = "\SWLW_clones_spec\data\ui\DC17M_mag_blaster_ui_ca.paa";
+        picture = "\ls\core\addons\weapons_dcSeries\data\ui\dc17m_mag_blaster_ui_ca.paa";
 
         modelSpecialIsProxy = TRUE;
-        modelSpecial = "\SWLW_clones_spec\DC17M_magazine_blaster.p3d";
+        modelSpecial = "\ls\core\addons\weapons_dcSeries\dc17m\ls_magazine_dc17m_blaster.p3d";
 
         ammo = QCLASS(Bullet_PlasmaDC17M_Blaster);
         count = 60; // 6 rounds per 1 mass
@@ -35,13 +35,13 @@ class CfgMagazines {
         displayNameShort = "High Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 5<br/>Used In: DC-17M";
 
-        model = "\SWLW_clones_spec\DC17M_magazine_sniper.p3d";
+        model = "\ls\core\addons\weapons_dcSeries\dc17m\ls_magazine_dc17m_sniper.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(dc17m\data\DC17M_camo1_co.paa)};
-        picture = "\SWLW_clones_spec\data\ui\DC17M_mag_sniper_ui_ca.paa";
+        picture = "\ls\core\addons\weapons_dcSeries\data\ui\dc17m_mag_sniper_ui_ca.paa";
 
         modelSpecialIsProxy = TRUE;
-        modelSpecial = "\SWLW_clones_spec\DC17M_magazine_sniper.p3d";
+        modelSpecial = "\ls\core\addons\weapons_dcSeries\dc17m\ls_magazine_dc17m_sniper.p3d";
 
         ammo = QCLASS(Bullet_PlasmaDC17M_Sniper);
         count = 5; // 1 rounds per 2 mass
@@ -57,13 +57,13 @@ class CfgMagazines {
         displayNameShort = "Anti-Armor";
         descriptionShort = "Anti-Armor Energy Cell<br/>Rounds: 1<br/>Used In: DC-17M";
 
-        model = "\SWLW_clones_spec\DC17M_magazine_at.p3d";
+        model = "\ls\core\addons\weapons_dcSeries\dc17m\ls_magazine_dc17m_antiArmor.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(dc17m\data\DC17M_camo1_co.paa)};
-        picture = "\SWLW_clones_spec\data\ui\DC17M_mag_at_ui_ca.paa";
+        picture = "\ls\core\addons\main\data\ui\ls_logo_ca.paa";
 
         modelSpecialIsProxy = TRUE;
-        modelSpecial = "\SWLW_clones_spec\DC17M_magazine_at.p3d";
+        modelSpecial = "\ls\core\addons\weapons_dcSeries\dc17m\ls_magazine_dc17m_antiArmor.p3d";
 
         ammo = QCLASS(Bullet_Plasma40mm_AT);
         count = 1; // 1 rounds per 20 mass

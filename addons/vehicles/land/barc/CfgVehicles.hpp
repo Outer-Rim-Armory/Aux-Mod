@@ -22,9 +22,9 @@ class CfgVehicles {
         weapons[] = {QCLASS(Turret_BARC), "ls_speeder_AP"};
         magazines[] = {
             "3AS_BARC_Mag",
-            "ls_50Rnd_speederHE_belt",
-            "ls_50Rnd_speederHE_belt",
-            "ls_50Rnd_speederHE_belt"
+            "ls_magazine_speederHE_belt",
+            "ls_magazine_speederHE_belt",
+            "ls_magazine_speederHE_belt"
         };
 
         textureList[] = {

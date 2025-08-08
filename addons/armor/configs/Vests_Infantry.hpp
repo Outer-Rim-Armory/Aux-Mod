@@ -454,5 +454,6 @@ class CLASS(Vest_MedicPlatoon): CLASS(Vest_Medic) {
         "",                                                       // Ammo
         QPATHTOF(data\vests\infantry\heavy\Medic_camo1_co.paa)    // Pauldron
     };
+    maximumLoad = 600;
     picture = "\ls\core\addons\characters_clone_legacy\_ui\airborne_nco_vest_ui_ca.paa";
 };

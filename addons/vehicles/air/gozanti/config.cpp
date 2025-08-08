@@ -8,19 +8,16 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            QGVAR(accessories),
-            "ls_weapons_westar"
+            QGVAR(weapons),
+            QGVAR(sounds),
+            "3AS_LAAT"
         };
-        units[] = {};
-        weapons[] = {
-            QCLASS(Westar35SA_Base),
-            QCLASS(Westar35SA),
+        units[] = {
+            QCLASS(Gozanti),
         };
+        weapons[] = {};
         VERSION_CONFIG;
     };
 };
 
-#include "CfgWeapons.hpp"
-#include "CfgMagazines.hpp"
-#include "CfgSoundShaders.hpp"
-#include "CfgSoundSets.hpp"
+#include "CfgVehicles.hpp"

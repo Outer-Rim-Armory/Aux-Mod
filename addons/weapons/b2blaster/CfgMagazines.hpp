@@ -6,8 +6,8 @@ class CfgMagazines {
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: Dual Wrist Blaster";
 
-        model = "\SWLW_droids\smgs\e5\e5_mag.p3d";
-        picture = "\SWLW_droids\smgs\e5\data\ui\e5_mag_ui.paa";
+        model = "\ls\core\addons\weapons_eseries\e5\ls_magazine_e5.p3d";
+        picture = "\ls\core\addons\weapons_eseries\data\ui\e5_mag_ui_ca.paa";
 
         initSpeed = 310;
         mass = 15;
@@ -38,10 +38,10 @@ class CfgMagazines {
         displayNameShort = "Grenade Launcher";
         descriptionShort = "Grenade Pack<br/>Rounds: 3<br/>Used In: Wrist Grenade Launcher";
 
-        model = "\SWLW_clones\machineguns\Z6\Z6_g_mag.p3d";
+        model = "\ls\core\addons\weapons_zseries\z6\ls_magazine_z6.p3d";
         modelSpecial = "\a3\Weapons_F\MagazineProxies\mag_40x36_HE_1rnd.p3d";
         modelSpecialIsProxy = TRUE;
-        picture = "\SWLW_clones\machineguns\Z6\data\ui\Z6_g_mag_ui.paa";
+        picture = "\ls\core\addons\weapons_zseries\data\ui\z6_mag_ui_ca.paa";
 
         nameSound = "";
 

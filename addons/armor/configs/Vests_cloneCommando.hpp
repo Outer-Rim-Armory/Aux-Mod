@@ -20,6 +20,7 @@ class CLASS(cloneCommando_SL_vest): CLASS(cloneCommando_basic_vest) {
     picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_sl_vest_ui_ca.paa";
 
     class ItemInfo: ItemInfo {
+        hiddenSelections[] = {"camo1"};
         uniformModel = "\ls\core\addons\characters_clone_legacy\vests\commando\ls_vest_clone_commando_sl.p3d";
     };
 };
@@ -32,6 +33,7 @@ class CLASS(cloneCommando_EOD_vest): CLASS(cloneCommando_basic_vest) {
     hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\uniforms\commando\data\camo2_co.paa"};
 
     class ItemInfo: ItemInfo {
+        hiddenSelections[] = {"camo1"};
         uniformModel = "\ls\core\addons\characters_clone_legacy\vests\commando\ls_vest_clone_commando_eod.p3d";
     };
 };

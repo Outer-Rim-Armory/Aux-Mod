@@ -40,9 +40,9 @@ class CfgWeapons {
         // Array of magazine properties to check and the attachment to use
         GVAR(attachmentSwapEnabled) = TRUE;
         GVAR(attachments)[] = {
-            {QGVAR(isBlasterMag), "SWLW_attachment_DC17M_blaster"},
-            {QGVAR(isATMag), "SWLW_attachment_DC17M_at"},
-            {QGVAR(isSniperMag), "SWLW_attachment_DC17M_sniper"}
+            {QGVAR(isBlasterMag), "ls_muzzle_dc17m_blaster"},
+            {QGVAR(isATMag), "ls_muzzle_dc17m_antiArmor"},
+            {QGVAR(isSniperMag), "ls_muzzle_dc17m_sniper"}
         };
 
         canShootInWater = TRUE;
@@ -61,7 +61,7 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot: CowsSlot {
                 class CompatibleItems {
-                    SWLW_attachment_scope_DC17M_sniper = TRUE;
+                    ls_cows_dc17m_sniper = TRUE;
                     ATTACHMENTS_OPTIC_SHORT;
                     ATTACHMENTS_OPTIC_MEDIUM;
                     ATTACHMENTS_OPTIC_LONG;
@@ -100,7 +100,7 @@ class CfgWeapons {
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
-                item = "SWLW_attachment_DC17M_blaster";
+                item = "ls_muzzle_dc17m_blaster";
             };
         };
     };
