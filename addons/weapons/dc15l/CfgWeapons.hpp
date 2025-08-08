@@ -30,7 +30,7 @@ class CfgWeapons {
         fireLightDiffuse[] = {0, 0, 1};
         fireLightDuration = 0.05;
         fireLightIntensity = 0.2;
-        flashSize = 0.5;
+        flashSize = 0.2;
 
         recoil = "recoil_SMG_03";
 

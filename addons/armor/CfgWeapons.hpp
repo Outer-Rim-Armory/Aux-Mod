@@ -171,6 +171,7 @@ class CfgWeapons {
             "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa",
             QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)  // Pauldron
         };
+        maximumLoad = 200;
         picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
 
         class ItemInfo: ItemInfo {
@@ -190,6 +191,7 @@ class CfgWeapons {
             "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",                // Chest Strap and Pauldron
             QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)                // Chest Strap and Pauldron
         };
+
         picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
 
         class ItemInfo: ItemInfo {
@@ -206,6 +208,7 @@ class CfgWeapons {
             "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
             QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
         };
+
         picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_officer_ca.paa";
 
         class ItemInfo: ItemInfo {

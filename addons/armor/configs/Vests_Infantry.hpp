@@ -116,6 +116,7 @@ class CLASS(Vest_Recon): CLASS(Vest_Basic) {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
         ""                                                            // Pauldron
     };
+    maximumLoad = 400;
     picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_recon_ca.paa";
 
     class ItemInfo: ItemInfo {
@@ -137,6 +138,7 @@ class CLASS(Vest_Recon_Survival): CLASS(Vest_Basic) {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa),           // Ammo
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)            // Pauldron
     };
+    maximumLoad = 400;
     picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
 
     class ItemInfo: ItemInfo {
