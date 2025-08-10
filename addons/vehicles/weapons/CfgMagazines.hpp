@@ -65,21 +65,6 @@ class CfgMagazines {
         initSpeed = 200;
         muzzleImpulseFactor[] = {0, 0};
     };
-    class CLASS(Gozanti_100RNDMassDriverShells): CLASS(Mag_VehicleBase)
-	{
-		author="$STR_3as_Studio";
-		scope=2;
-		displayName="[KC] 100 Round Mass Driver Shells";
-		displayNameShort="Mass Driver Shells";
-		displayNameMFDFormat="AP";
-		ammo="3AS_Mass_Driver_Shell";
-		count=100;
-		initSpeed=1680;
-		maxLeadSpeed=250;
-		tracersEvery=1;
-		nameSound="cannon";
-		muzzleImpulseFactor[]={0.5,3};
-	};
     CSW_MAG_CONVERSION(CLASS(Mag_6Rnd_Mortar_82mm_HE));
 
     class CLASS(Mag_6Rnd_Mortar_SmokeWhite): CLASS(Mag_6Rnd_Mortar_82mm_HE) {
