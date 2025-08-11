@@ -19,7 +19,7 @@ class CLASS(Uniform_Burnt_Worn): CLASS(Uniform_Burnt) {
     };
 };
 
-
+UNIFORM_CUSTOM(Calvin);
 UNIFORM_CUSTOM(Catholic);
 UNIFORM_CUSTOM(Cough);
 UNIFORM_CUSTOM(Cutthroat);

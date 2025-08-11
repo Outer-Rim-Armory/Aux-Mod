@@ -114,6 +114,26 @@ class CLASS(Unit_Burnt_Worn): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Calvin): CLASS(Unit_Phase2_Base) {
+    displayName = "Calvin";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Calvin);
+
+    uniformClass = QCLASS(Uniform_Calvin);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Calvin_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Calvin_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Calvin), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Calvin), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
 
 class CLASS(Unit_Catholic): CLASS(Unit_Phase2_Base) {
     displayName = "Catholic";

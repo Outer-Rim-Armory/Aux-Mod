@@ -134,6 +134,42 @@ class CfgWeapons {
             };
         };
     };
+    class CLASS(Vest_Basic2): ls_gar_clone_vest {
+        SCOPE_HIDDEN;
+
+        author = AUTHOR;
+
+        displayName = "[KC] INF Vest 01 (Trooper)";
+        maximumLoad = 250;
+
+        class ItemInfo: ItemInfo {
+            containerClass = "Supply250";
+            vestType = "Rebreather";
+
+            class HitpointsProtectionInfo {
+                class Abdomen {
+                    hitpointName = "HitAbdomen";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Body {
+                    hitpointName = "HitBody";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Chest {
+                    hitpointName = "HitChest";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+                class Diaphragm {
+                    hitpointName = "HitDiaphragm";
+                    armor = 15;
+                    passThrough = 0.3;
+                };
+            };
+        };
+    };
 
     #include "configs\Vests_Infantry.hpp"
     #include "configs\Vests_Airborne.hpp"
@@ -142,7 +178,7 @@ class CfgWeapons {
     #include "configs\Vests_ARC.hpp"
     #include "configs\Vests_cloneCommando.hpp"
 
-    class BNA_KC_Vest_ARF: CLASS(Vest_Basic) {
+    class BNA_KC_Vest_ARF: CLASS(Vest_Basic2) {
         displayName = "[KC] SF ARF Vest";
 
         model = "\ls\core\addons\characters_clone_legacy\vests\arf\ls_gar_arf_vest.p3d";
@@ -152,6 +188,7 @@ class CfgWeapons {
             QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
             "\ls\core\addons\characters_clone_legacy\vests\common\officer\officer_accessories_black_co.paa"                // ! Ammo, currently broken
         };
+        maximumLoad = 200;
         picture = "\ls\core\addons\characters_clone_legacy\_ui\uniform_ui_ca.paa";
 
         class ItemInfo: ItemInfo {
@@ -160,7 +197,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(Vest_ForceRecon): CLASS(Vest_Basic) {
+    class CLASS(Vest_ForceRecon): CLASS(Vest_Basic2) {
         displayName = "[KC] SF XX Vest (Force Recon)";
 
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";

@@ -395,6 +395,7 @@ class CfgPatches {
             QCLASS(Uniform_Scout_Grey),
             QCLASS(Uniform_Scout_Imperial),
             QCLASS(Vest_Basic),
+            QCLASS(Vest_Basic2),
             QCLASS(Vest_Holster),
             QCLASS(Vest_Assault),
             QCLASS(Vest_Grenadier),
