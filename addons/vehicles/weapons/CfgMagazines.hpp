@@ -50,6 +50,20 @@ class CfgMagazines {
         initSpeed = 1070;
     };
 
+    class CLASS(Mag_100Rnd_Gozanti): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "Gozanti Mass Driver Shells";
+        displayNameShort = "AP";
+        descriptionShort = "Plasma Shells<br/>Used In Gozanti";
+        ammo = "3AS_Mass_Driver_Shell";
+        count = 100;
+        initSpeed = 1680;
+        maxLeadSpeed = 250;
+        tracersEvery = 1;
+        nameSound = "cannon";
+        muzzleImpulseFactor[] = {0.5,3};
+    };
+
     class CLASS(Mag_6Rnd_Mortar_82mm_HE): CLASS(Mag_VehicleBase) {
         SCOPE_HIDDEN;
         displayName = "[KC] 6Rnd Mortar HE Shells";

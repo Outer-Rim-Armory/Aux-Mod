@@ -251,6 +251,16 @@ class CfgWeapons {
         };
     };
 
+    class CLASS(Cannon_Gozanti_MassDriver): 3AS_Mass_Driver_Cannon {
+        displayName = "Mass Driver Cannon";
+        reloadTime = 6;
+        magazineReloadTime = 5;
+        canLock = 1;
+        magazines[] = {
+            QCLASS(Mag_100Rnd_Gozanti)
+        };
+    };
+
     class 3AS_ATTE_Turret;
     class CLASS(Turret_ATTE): 3AS_ATTE_Turret {
         displayName = "Point Defense Turret";
