@@ -321,6 +321,12 @@ class CLASS(Vest_Jaws): CLASS(Vest_CS) {
             QPATHTOF(data\vests\jaws\Jaws_EOD_co.paa)
         };
     };
+    class CLASS(Jaws_RC_Vest_Worn): CLASS(cloneCommando_EOD_vest) {
+        displayName = "[KC] SF Clone Commando EOD Vest ('Jaws','Worn')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\jaws\Jaws_Worn_EOD_co.paa)
+        };
+    };
     class CLASS(Cutthroat_RC_Vest): CLASS(cloneCommando_Tech_vest) {
         displayName = "[KC] SF Commando Tech Vest ('Cutthroat')";
         hiddenSelectionsTextures[] = {

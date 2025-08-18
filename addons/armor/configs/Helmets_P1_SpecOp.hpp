@@ -1,7 +1,7 @@
 class CLASS(Helmet_Phase1_Tanker_Base): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] ARMR P1 Helm (Base)";
+    displayName = "[KC] ARMR P1 Helm 00 (Base)";
 
     model = "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\ls_sob_phase1SpecOp_helmet.p3d";
     hiddenSelections[] = {"Camo1", "visor"};
@@ -29,10 +29,31 @@ class CLASS(Helmet_Phase1_Tanker_CT): CLASS(Helmet_Phase1_Tanker_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
     };
 };
-class CLASS(Helmet_Phase1_Tanker_CT_v2): CLASS(Helmet_Phase1_Tanker_CT) {
-    displayName = "[KC] ARMR P1 Helm 01 (Trooper, v2)";
+class CLASS(Helmet_Phase1_Tanker_SCT): CLASS(Helmet_Phase1_Tanker_CT) {
+    displayName = "[KC] ARMR P1 Helm 02 (Senior Trooper)";
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\phase1SpecOp\CT_v2_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1SpecOp\SCT_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
+    };
+};
+class CLASS(Helmet_Phase1_Tanker_VCT): CLASS(Helmet_Phase1_Tanker_CT) {
+    displayName = "[KC] ARMR P1 Helm 03 (Veteran Trooper)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1SpecOp\VCT_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
+    };
+};
+class CLASS(Helmet_Phase1_Tanker_NCO): CLASS(Helmet_Phase1_Tanker_CT) {
+    displayName = "[KC] ARMR P1 Helm 04 (NCO)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1SpecOp\NCO_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
+    };
+};
+class CLASS(Helmet_Phase1_Tanker_Officer): CLASS(Helmet_Phase1_Tanker_CT) {
+    displayName = "[KC] ARMR P1 Helm 05 (Officer)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1SpecOp\Officer_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
     };
 };

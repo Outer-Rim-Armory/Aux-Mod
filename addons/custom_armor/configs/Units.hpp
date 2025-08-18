@@ -907,6 +907,14 @@ class CLASS(Unit_RC_Jaws): CLASS(cloneCommando_unit_base) {
     };
     backpack = QCLASS(Jaws_Backpack);
 };
+class CLASS(Unit_RC_Jaws_Worn): CLASS(cloneCommando_unit_base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Jaws_Worn);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\commando\camo\worn\Jaws_upper_co.paa),
+        QPATHTOF(data\uniforms\commando\camo\worn\Jaws_lower_co.paa),
+    };
+};
 class CLASS(Unit_RC_Cutthroat): CLASS(cloneCommando_unit_base) {
     SCOPE_PUBLIC;
     displayName = "Cutthroat (RC)";

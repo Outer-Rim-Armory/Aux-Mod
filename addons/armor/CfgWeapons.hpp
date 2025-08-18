@@ -179,6 +179,7 @@ class CfgWeapons {
     #include "configs\Vests_cloneCommando.hpp"
 
     class BNA_KC_Vest_ARF: CLASS(Vest_Basic2) {
+        SCOPE_PUBLIC;
         displayName = "[KC] SF ARF Vest";
 
         model = "\ls\core\addons\characters_clone_legacy\vests\arf\ls_gar_arf_vest.p3d";
@@ -198,6 +199,7 @@ class CfgWeapons {
     };
 
     class CLASS(Vest_ForceRecon): CLASS(Vest_Basic2) {
+        SCOPE_PUBLIC;
         displayName = "[KC] SF XX Vest (Force Recon)";
 
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
@@ -218,6 +220,7 @@ class CfgWeapons {
     };
 
     class CLASS(Vest_ForceRecon_NCO): CLASS(Vest_ForceRecon) {
+        SCOPE_PUBLIC;
         displayName = "[KC] SF XX Vest (Force Recon NCO)";
 
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceRecon_vest.p3d";
@@ -238,6 +241,7 @@ class CfgWeapons {
     };
 
     class CLASS(Vest_ForceRecon_Officer): CLASS(Vest_ForceRecon) {
+        SCOPE_PUBLIC;
         displayName = "[KC] SF XX Vest (Force Recon Officer)";
 
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconOfficer_vest.p3d";

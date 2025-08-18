@@ -20,6 +20,7 @@ class CLASS(Vest_Airborne_CT): CLASS(Vest_Basic2) {
 };
 
 class CLASS(Vest_Airborne_Medic): CLASS(Vest_Medic) {
+    SCOPE_PUBLIC;
     displayName = "[KC] AB Vest 02 (Medic)";
 
     model = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborne_vest.p3d";
@@ -40,6 +41,7 @@ class CLASS(Vest_Airborne_Medic): CLASS(Vest_Medic) {
 };
 
 class CLASS(Vest_Airborne_Medic_v2): CLASS(Vest_Medic) {
+    SCOPE_PUBLIC;
     displayName = "[KC] AB Vest 02 (Medic V2)";
 
     model = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborne_vest.p3d";
@@ -59,6 +61,7 @@ class CLASS(Vest_Airborne_Medic_v2): CLASS(Vest_Medic) {
 };
 
 class CLASS(Vest_Airborne_CS): CLASS(Vest_Airborne_CT) {
+    SCOPE_PUBLIC;
     displayName = "[KC] AB Vest 06 (NCO)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa),
@@ -70,6 +73,7 @@ class CLASS(Vest_Airborne_CS): CLASS(Vest_Airborne_CT) {
 };
 
 class CLASS(Vest_Airborne_WO): CLASS(Vest_Officer) {
+    SCOPE_PUBLIC;
     displayName = "[KC] AB Vest 12 (Officer)";
     model = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborneOfficer_vest.p3d";
     hiddenSelections[] = {"camo1", "camo2", "camo3", "ammo"};
@@ -89,6 +93,7 @@ class CLASS(Vest_Airborne_WO): CLASS(Vest_Officer) {
 };
 
 class CLASS(Vest_Airborne_CT_Light): CLASS(Vest_Basic2) {
+    SCOPE_PUBLIC;
     displayName = "[KC] AB Vest 01 (Trooper, Light)";
     maximumLoad = 250;
     model = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborneLight_vest.p3d";
@@ -108,6 +113,7 @@ class CLASS(Vest_Airborne_CT_Light): CLASS(Vest_Basic2) {
 };
 
 class CLASS(Vest_Airborne_CS_Light): CLASS(Vest_Airborne_CT_Light) {
+    SCOPE_PUBLIC;
     displayName = "[KC] AB Vest 06 (NCO, Light)";
     maximumLoad = 250;
     hiddenSelectionsTextures[] = {
@@ -119,6 +125,7 @@ class CLASS(Vest_Airborne_CS_Light): CLASS(Vest_Airborne_CT_Light) {
 };
 
 class CLASS(Vest_Airborne_LifeSaver): CLASS(Vest_Medic) {
+    SCOPE_PUBLIC;
     displayName = "[KC] AB MED Vest 01 (Life Saver)";
     maximumLoad = 250;
     model = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborneCFR_vest.p3d";
@@ -138,6 +145,7 @@ class CLASS(Vest_Airborne_LifeSaver): CLASS(Vest_Medic) {
 };
 
 class CLASS(Vest_Airborne_LifeSaverNCO): CLASS(Vest_Airborne_LifeSaver) {
+    SCOPE_PUBLIC;
     displayName = "[KC] AB MED Vest 04 (NCO Life Saver)";
     maximumLoad = 250;
     hiddenSelectionsTextures[] = {

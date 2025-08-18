@@ -39,14 +39,6 @@ class ACEX_Fortify_Presets {
         };
     };
 
-    class GVAR(mines) {
-        displayName = "Mines";
-        objects[] = {
-            // Mines
-            {"APERSMineDispenser_F", 300}
-        };
-    };
-
     class GVAR(fob) {
         displayName = "FOB Building";
         objects[] = {
@@ -55,7 +47,7 @@ class ACEX_Fortify_Presets {
             {"Land_OPTRE_watchtower_urban", 75},
             {"3AS_Barricade_2_C_Prop", 10},
             {"3AS_Barricade_Prop", 10},
-            {"3AS_FOB_Hangar_Prop", 200},
+            {"3AS_FOB_Hangar_Prop", 60},
             {"Land_OPTRE_hard_tent_urban", 40},
             {"Land_OPTRE_medical_tent_gry", 40},
             {"3AS_Pad_GAR_Prop", 50},

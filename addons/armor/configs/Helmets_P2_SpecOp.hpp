@@ -29,10 +29,34 @@ class CLASS(Helmet_Phase2_Tanker_CT): CLASS(Helmet_Phase2_Tanker_Base) {
     };
 };
 
-class CLASS(Helmet_Phase2_Tanker_CT_v2): CLASS(Helmet_Phase2_Tanker_CT) {
-    displayName = "[KC] ARMR P2 Helm 01 (Trooper, v2)";
+class CLASS(Helmet_Phase2_Tanker_SCT): CLASS(Helmet_Phase2_Tanker_CT) {
+    displayName = "[KC] ARMR P2 Helm 02 (Senior Trooper)";
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\phase2SpecOp\CT_v2_camo1_co.paa),
+        QPATHTOF(data\helmets\phase2SpecOp\SCT_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase2_Tanker_VCT): CLASS(Helmet_Phase2_Tanker_CT) {
+    displayName = "[KC] ARMR P2 Helm 03 (Veteran Trooper)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2SpecOp\VCT_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase2_Tanker_NCO): CLASS(Helmet_Phase2_Tanker_CT) {
+    displayName = "[KC] ARMR P2 Helm 04 (NCO)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2SpecOp\NCO_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase2_Tanker_Officer): CLASS(Helmet_Phase2_Tanker_CT) {
+    displayName = "[KC] ARMR P2 Helm 05 (Officer)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2SpecOp\Officer_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"
     };
 };
