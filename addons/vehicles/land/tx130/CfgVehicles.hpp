@@ -260,8 +260,8 @@ class CfgVehicles {
         ace_cargo_space = 3;
 
         hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Saber\data\saber_hull_co.paa",
-            "\3AS\3AS_Saber\data\saber_weapons_co.paa"
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_co.paa)
         };
 
         textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 0, "CamoGrey", 0};

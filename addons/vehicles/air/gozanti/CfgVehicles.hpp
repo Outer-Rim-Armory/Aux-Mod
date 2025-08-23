@@ -24,7 +24,7 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Planes);
         side = BLUFOR;
 
-        displayName = "Gozanti (Base)";
+        displayName = "Gozanti Cruiser (Base)";
         crew = QCLASS(Unit_Phase2_CXA);
 
         armor = 200;
@@ -90,6 +90,7 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
+            AI_CREW_SPAWNER;
         };
 
         class Turrets: Turrets {

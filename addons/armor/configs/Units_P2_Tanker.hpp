@@ -11,9 +11,9 @@ class CLASS(Unit_Phase2_Tanker_CT): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase2_Tanker_CT), QCLASS(Vest_Recon), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Tanker_CT), QCLASS(Vest_Tanker_CT), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase2_Tanker_CT), QCLASS(Vest_Recon), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Tanker_CT), QCLASS(Vest_Tanker_CT), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };

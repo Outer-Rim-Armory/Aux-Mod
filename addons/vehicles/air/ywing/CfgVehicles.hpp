@@ -65,6 +65,7 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
+            AI_CREW_SPAWNER;
         };
 
         class Turrets: Turrets {
