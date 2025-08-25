@@ -253,8 +253,8 @@ class CfgWeapons {
 
     class CLASS(Cannon_Gozanti_MassDriver): 3AS_Mass_Driver_Cannon {
         displayName = "Mass Driver Cannon";
-        reloadTime = 6;
-        magazineReloadTime = 5;
+        reloadTime = 2;
+        magazineReloadTime = 4;
         canLock = 1;
         magazines[] = {
             QCLASS(Mag_100Rnd_Gozanti)
