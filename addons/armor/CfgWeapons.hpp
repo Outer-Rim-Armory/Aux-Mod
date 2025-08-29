@@ -441,4 +441,20 @@ class CfgWeapons {
             modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_antenna.p3d";
         };
     };
+
+    class CLASS(Bel_Rangefinder): CLASS(cloneNvg_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[CB] Clan Bel Rangefinder";
+        model = "\ls\core\addons\characters_mandalorian\equipment\nvgs\rangefinder\ls_mandalorian_rangefinder_nvg_on.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\Mommy_Rangefinder_co.paa)};
+        picture = "\ls\core\addons\characters_mandalorian\data\ui\rangefinder_ui_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"camo1"};
+            uniformModel = "\ls\core\addons\characters_mandalorian\equipment\nvgs\rangefinder\ls_mandalorian_rangefinder_nvg_on.p3d";
+            modelOff = "\ls\core\addons\characters_mandalorian\equipment\nvgs\rangefinder\ls_mandalorian_rangefinder_nvg_off.p3d";
+        };
+    };
 };
