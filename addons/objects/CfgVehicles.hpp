@@ -106,6 +106,21 @@ class CfgVehicles {
                 condition = QUOTE(ace_player call EFUNC(core,isEngineer));
                 statement = QUOTE([ARR_2(ace_player,0)] call EFUNC(core,setEngineer));
             };
+            class AssignPilot: Assign_Engineer {
+                displayName = QUOTE(<t color='#2ed9ca'><img image=QQPATHTOEF(core,data\ui\logo_kc_ca.paa)/> Assign Pilot Permissions</t>);
+                condition = "!([ace_player, 'pilot'] call ls_common_fnc_getSkill)"; // Check that player does not have the skill
+                statement = "[ace_player, 'pilot', 1] call ls_common_fnc_setSkill"; // Set skill level to 1
+            };
+            class AssignAdvPilot: Assign_Engineer {
+                displayName = QUOTE(<t color='#2ed9ca'><img image=QQPATHTOEF(core,data\ui\logo_kc_ca.paa)/> Assign Advanced Pilot Permissions</t>);
+                condition = "!([ace_player, 'pilot'] call ls_common_fnc_getSkill)"; // Check that player does not have the skill
+                statement = "[ace_player, 'pilot', 2] call ls_common_fnc_setSkill"; // Set skill level to 1
+            };
+            class UnassignPilot: Assign_Engineer {
+                displayName = QUOTE(<t color='#2ed9ca'><img image=QQPATHTOEF(core,data\ui\logo_kc_ca.paa)/> Unassign Pilot Permissions</t>);
+                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+                statement = "[ace_player, 'pilot', 0] call ls_common_fnc_setSkill";
+            };
         };
     };
 
@@ -162,6 +177,136 @@ class CfgVehicles {
 
                 condition = "true";
                 statement = QUOTE([ARR_2(ace_player,ace_player)] call ace_medical_treatment_fnc_fullHeal; playSound3D [ARR_2(QQPATHTOEF(medical,data\audio\MedicalDroid_Treat.wss),ARR_8(objNull,false,getPosASL this,3,1,10,0,true))];);
+            };
+        };
+    };
+
+    class 3AS_T_Screen;
+    class CLASS(AIRSpawer): 3AS_T_Screen{
+    SCOPE_PUBLIC;
+    author = AUTHOR;
+
+    editorCategory = QEDCAT(Objects);
+    editorSubcategory = QEDSUBCAT(Utility);
+
+    displayName = "KC Aircraft Terminal";
+        class Useractions{
+
+            // helicopter heliocopter *helicopter sounds*
+            class Spawn_KC_LAAT_MK1
+            {
+                displayName = "Spawn [KC] LAAT/MK1";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_LAATi_MK1'] execVM 'JangosVehicles\Script\spawner.sqf';"; // placeholder script until i ask 104th if i can copy it over
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_LAAT_MK2
+            {
+                displayName = "Spawn [KC] LAAT/MK2";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_LAATi_MK2'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_LAAT_C
+            {
+                displayName = "Spawn [KC] LAAT/c";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_LAATc_New] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            // basic fighters
+            class Spawn_KC_V19
+            {
+                displayName = "Spawn [KC] V-19 Torrent";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_V19'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_Vwing
+            {
+                displayName = "Spawn [KC] V-Wing";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_VWing'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+
+            // advanced heli stuffs
+            class Spawn_KC_NUclass
+            {
+                displayName = "Spawn [KC] Nu-Class Shuttle";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_Nu'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_RHOclass
+            {
+                displayName = "Spawn [KC] Rho-Class Shuttle";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_Rho'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+
+        // advanced non heli also known as birds but not those birds just planes
+        class Spawn_KC_ARC170
+            {
+                displayName = "Spawn [KC] ARC-170";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_ARC170'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_Ywing
+            {
+                displayName = "Spawn [KC] Y-wing";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_BLTB_Ywing'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_Gozanti
+            {
+                displayName = "Spawn [KC] Gozanti";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_Gozanti'] execVM '\JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_Z95
+            {
+                displayName = "Spawn [KC] Z-95 Headhunter";
+				position = "pos cano";
+				radius = 15;
+                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+				statement = "[this, 'BNA_KC_Z95'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				onlyforplayer = "false";
+				hideOnUse = 0;
             };
         };
     };
