@@ -291,7 +291,7 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaSniper_Blue2): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
-        hit = 48;
+        hit = 60;
         caliber = 2.4;
         typicalSpeed = 910;
         dangerRadiusHit = -1;
@@ -322,7 +322,7 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaSniper_Blue3): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
-        hit = 48;
+        hit = 55;
         caliber = 2.4;
         typicalSpeed = 1750;
         maxSpeed = 2500;
@@ -354,7 +354,7 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaSniper_Red2): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
-        hit = 48;
+        hit = 60;
         caliber = 2.4;
         typicalSpeed = 910;
         dangerRadiusHit = -1;
@@ -392,7 +392,7 @@ class CfgAmmo {
     };
 
     class CLASS(Bullet_PlasmaSniperAP_Blue): CLASS(Bullet_PlasmaSniper_Blue) {
-        hit = 45;
+        hit = 150;
         caliber = 15;
         ACE_caliber = 15;
         typicalSpeed = 700;
@@ -460,7 +460,7 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaPistol_Blue): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
-        hit = 5;
+        hit = 25;
         caliber = 1.2;
         typicalSpeed = 380;
         dangerRadiusHit = 8;
