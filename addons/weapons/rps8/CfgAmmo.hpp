@@ -34,7 +34,7 @@ class CfgAmmo {
     class CLASS(Rocket_RPS8_AT): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
 
-        hit = 120;
+        hit = 400;
         indirectHit = 50;
         indirectHitRange = 10;
         irLock = 0;
