@@ -199,7 +199,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_LAATi_MK1'] execVM 'JangosVehicles\Script\spawner.sqf';"; // placeholder script until i ask 104th if i can copy it over
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK1')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -209,7 +209,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_LAATi_MK2'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK2')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -219,7 +219,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_LAATc_New] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATc_new')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -230,7 +230,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_V19'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = QUOTE([ARR_2(this,'BNA_KC_V19')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -240,7 +240,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_VWing'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Vwing')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -248,21 +248,21 @@ class CfgVehicles {
             // advanced heli stuffs
             class Spawn_KC_NUclass
             {
-                displayName = "Spawn [KC] Nu-Class Shuttle";
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Nu-Class Shuttle </t>";
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_Nu'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Nu')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
             class Spawn_KC_RHOclass
             {
-                displayName = "Spawn [KC] Rho-Class Shuttle";
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Rho-Class Shuttle </t>";
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_Rho'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Rho')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -270,41 +270,41 @@ class CfgVehicles {
         // advanced non heli also known as birds but not those birds just planes
         class Spawn_KC_ARC170
             {
-                displayName = "Spawn [KC] ARC-170";
+                displayName = "<t color='#2ed9ca'> Spawn [KC] ARC-170 </t>";
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_ARC170'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = QUOTE([ARR_2(this,'BNA_KC_ARc170')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
             class Spawn_KC_Ywing
             {
-                displayName = "Spawn [KC] Y-wing";
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Y-wing </t>";
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_BLTB_Ywing'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = QUOTE([ARR_2(this,'BNA_KC_BLTB_Ywing')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
             class Spawn_KC_Gozanti
             {
-                displayName = "Spawn [KC] Gozanti";
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Gozanti </t>";
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_Gozanti'] execVM '\JangosVehicles\Script\spawner.sqf';";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Gozanti')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
             class Spawn_KC_Z95
             {
-                displayName = "Spawn [KC] Z-95 Headhunter";
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Z-95 Headhunter </t>";
 				position = "pos cano";
 				radius = 15;
                 condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
-				statement = "[this, 'BNA_KC_Z95'] execVM 'JangosVehicles\Script\spawner.sqf';";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Z95')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
