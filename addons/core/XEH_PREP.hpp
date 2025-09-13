@@ -1,11 +1,12 @@
+PREP(errorMessage);
 PREP(getNearbyUnits);
 PREP(getReplacementItem);
 PREP(inFeatureCamera);
 PREP(isEngineer);
 PREP(isMedic);
 PREP(isVehicleCrew);
-PREP(loopSay3D_init);
 PREP(loopSay3D);
+PREP(loopSay3D_init);
 PREP(onArsenalOpen);
 PREP(playLocalSound);
 PREP(rgbToHex);
