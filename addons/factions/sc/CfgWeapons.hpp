@@ -1,12 +1,12 @@
 class CfgWeapons {
-    class ls_greenforHelmet_base;
-    class CLASS(INDEP_Helmet_Base): ls_greenforHelmet_base {
+    class ls_helmet_base;
+    class CLASS(INDEP_Helmet_Base): ls_helmet_base {
         class ItemInfo;
     };
-    class CLASS(GM_Helmet): CLASS(INDEP_Helmet_Base) {
+    class CLASS(SC_Helmet): CLASS(INDEP_Helmet_Base) {
         SCOPE_PUBLIC;
 
-        displayName = "[GM] Helmet";
+        displayName = "[SC] Helmet";
 
         model = "\OPTRE_UNSC_Units\Army\helmet.p3d";
         hiddenSelections[] = {"camo", "camo2", "camo3", "H_Neck", "H_UNSCVacLower", "H_UNSCVacVisor", "H_VacCollar", "H_Ghillie"};
@@ -23,8 +23,8 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(GM_Helmet_SL): CLASS(GM_Helmet) {
-        displayName = "[GM] Squad Leader Helmet";
+    class CLASS(SC_Helmet_SL): CLASS(SC_Helmet) {
+        displayName = "[SC] Squad Leader Helmet";
 
         model = "\OPTRE_UNSC_Units\Army\helmet_p.p3d";
         hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie", "H_Collar"};
@@ -41,8 +41,8 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(GM_Helmet_T2): CLASS(GM_Helmet) {
-        displayName = "[GM] Veteran Helmet";
+    class CLASS(SC_Helmet_T2): CLASS(SC_Helmet) {
+        displayName = "[SC] Veteran Helmet";
 
         model = "\OPTRE_UNSC_Units\Army\odst_helmet.p3d";
         hiddenSelections[] = {"camo", "camo2", "camo3", "camo4", "H_Ghillie"};
@@ -60,8 +60,8 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(GM_Helmet_T3): CLASS(GM_Helmet) {
-        displayName = "[GM] Elite Helmet";
+    class CLASS(SC_Helmet_T3): CLASS(SC_Helmet) {
+        displayName = "[SC] Elite Helmet";
 
         model = "\MDF\MDFHelmet.p3d";
         hhiddenSelections[] = {"camo"};
@@ -75,63 +75,43 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(GM_RLA_Helmet): CLASS(GM_Helmet) {
-        displayName = "[GM-RLA] Helmet";
-        hiddenSelectionsTextures[] = {
-            "\optre_unsc_units\army\data\helmet_odst_co.paa",
-            "\optre_unsc_units\army\data\helmet_visor_ca.paa",
-            "\optre_unsc_units\army\data\ghillie_woodland_co.paa",
-            "\optre_unsc_units\army\data\soft_packs_co.paa"
-        };
-    };
-
-    class CLASS(GM_RLA_Helmet_T2): CLASS(GM_Helmet_T2) {
-        displayName = "[GM-RLA] Veteran Helmet";
-        hiddenSelectionsTextures[] = {
-            "\optre_unsc_units\army\data\odst_helmet_stripes_co.paa",
-            "\optre_unsc_units\army\data\odst_helmet_visor_co.paa",
-            "\optre_unsc_units\army\data\ghillie_woodland_co.paa",
-            "\optre_unsc_units\army\data\soft_packs_co.paa"
-        };
-    };
-
-    class ls_greenforUniform_base;
-    class CLASS(INDEP_Uniform_Base): ls_greenforUniform_base {
+    class ls_uniform_base;
+    class CLASS(INDEP_Uniform_Base): ls_uniform_base {
         class ItemInfo;
     };
-    class CLASS(GM_Uniform): CLASS(INDEP_Uniform_Base) {
+    class CLASS(SC_Uniform): CLASS(INDEP_Uniform_Base) {
         SCOPE_PUBLIC;
 
-        displayName = "[GM] Uniform";
+        displayName = "[SC] Uniform";
         picture = "\ls_armor_greenfor\uniform\mandalorian\_ui\icon_uniform_undersuit.paa";
 
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(GM_Unit_Base);
+            uniformClass = QCLASS(SC_Unit_Base);
         };
     };
 
-    class CLASS(GM_Uniform_Vex): CLASS(GM_Uniform) {
-        displayName = "[GM] General Vex's Armor";
+    class CLASS(SC_Uniform_Vex): CLASS(SC_Uniform) {
+        displayName = "[SC] General Vex's Armor";
         picture = "\armor_unit\Ui\Merc_Armor_Tayrus.paa";
 
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(GM_Unit_Vex);
+            uniformClass = QCLASS(SC_Unit_Vex);
         };
     };
 
     class V_PlateCarrier1_rgr;
-    class ls_greenforVest_base: V_PlateCarrier1_rgr {
+    class ls_vest_base: V_PlateCarrier1_rgr {
         class ItemInfo;
     };
-    class CLASS(INDEP_Vest_Base): ls_greenforVest_base {
+    class CLASS(INDEP_Vest_Base): ls_vest_base {
         class ItemInfo: ItemInfo {
             class HitpointsProtectionInfo;
         };
     };
-    class CLASS(GM_Vest): CLASS(INDEP_Vest_Base) {
+    class CLASS(SC_Vest): CLASS(INDEP_Vest_Base) {
         SCOPE_PUBLIC;
 
-        displayName = "[GM] Light Vest";
+        displayName = "[SC] Light Vest";
         descriptionShort = "Armor Level III";
 
         model = "\MDF\MDFTorso.p3d";
@@ -152,8 +132,8 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(GM_Vest_Medium): CLASS(GM_Vest) {
-        displayName = "[GM] Medium Vest";
+    class CLASS(SC_Vest_Medium): CLASS(SC_Vest) {
+        displayName = "[SC] Medium Vest";
         descriptionShort = "Armor Level IV";
         model = "\MDF\MDFMedium.p3d";
 
@@ -173,8 +153,8 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(GM_Vest_Heavy): CLASS(GM_Vest) {
-        displayName = "[GM] Heavy Vest";
+    class CLASS(SC_Vest_Heavy): CLASS(SC_Vest) {
+        displayName = "[SC] Heavy Vest";
         descriptionShort = "Armor Level V";
         model = "\MDF\MDFHeavy.p3d";
         hiddenSelectionsTextures[] = {"\MDF\MDFTorso\Black\DefaultMaterial_CO.paa", "MDF\MDFLegs\Black\DefaultMaterial_CO.paa"};
@@ -192,22 +172,6 @@ class CfgWeapons {
                     armor = 25;
                 };
             };
-        };
-    };
-
-    class CLASS(GM_RLA_Vest): CLASS(GM_Vest) {
-        displayName = "[GM-RLA] Vest";
-        hiddenSelectionsTextures[] = {
-            "\MDF\MDFTorso\Black\DefaultMaterial_CO.paa",
-            "\MDF\MDFLegs\Black\DefaultMaterial_CO.paa"
-        };
-    };
-
-    class CLASS(GM_RLA_Vest_Medium): CLASS(GM_Vest_Medium) {
-        displayName = "[GM-RLA] Medium Vest";
-        hiddenSelectionsTextures[] = {
-            "\MDF\MDFTorso\Black\DefaultMaterial_CO.paa",
-            "\MDF\MDFLegs\Black\DefaultMaterial_CO.paa"
         };
     };
 };

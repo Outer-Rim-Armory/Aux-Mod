@@ -48,7 +48,6 @@ workshop = [
     "2478080991", # Scion Conflict
     "3469976535", # Weapon Research and Security: Autonomous systems
     "1967740913", # Jango's Armory
-    # "2605563484", # Scion Conflict Extended Arsenal
     "1124993203", # 3DEN Better Inventory
 ]
 presets = ["main"]
