@@ -1,6 +1,6 @@
 class CfgWeapons {
-    class ls_greenforHelmet_base;
-    class CLASS(INDEP_Helmet_Base): ls_greenforHelmet_base {
+    class ls_helmet_base;
+    class CLASS(INDEP_Helmet_Base): ls_helmet_base {
         class ItemInfo;
     };
     class CLASS(BS_Helmet): CLASS(INDEP_Helmet_Base) {
@@ -58,8 +58,8 @@ class CfgWeapons {
         };
     };
 
-    class ls_greenforUniform_base;
-    class CLASS(INDEP_Uniform_Base): ls_greenforUniform_base {
+    class ls_uniform_base;
+    class CLASS(INDEP_Uniform_Base): ls_uniform_base {
         class ItemInfo;
     };
     class CLASS(BS_Uniform): CLASS(INDEP_Uniform_Base) {
@@ -74,10 +74,10 @@ class CfgWeapons {
     };
 
     class V_PlateCarrier1_rgr;
-    class ls_greenforVest_base: V_PlateCarrier1_rgr {
+    class ls_vest_base: V_PlateCarrier1_rgr {
         class ItemInfo;
     };
-    class CLASS(INDEP_Vest_Base): ls_greenforVest_base {
+    class CLASS(INDEP_Vest_Base): ls_vest_base {
         class ItemInfo: ItemInfo {
         };
     };
@@ -86,7 +86,7 @@ class CfgWeapons {
 
         displayName = "[BS] Light Vest";
 
-        model = "\sc_og_equipment_fixed\data\samurai\sam_vest_light.p3d";
+        model = "\sc_equipment\data\samurai\sam_vest_light.p3d";
         hiddenSelections[] = {"camo","camo1"};
         hiddenSelectionsTextures[] = {
             "sc_equipment\data\samurai\textures\torso_black_co.paa",
@@ -95,7 +95,7 @@ class CfgWeapons {
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo","camo1"};
-            uniformModel = "\sc_og_equipment_fixed\data\samurai\sam_vest_light.p3d";
+            uniformModel = "\sc_equipment\data\samurai\sam_vest_light.p3d";
 
             SC_VEST_HITPOINTS_LIGHT;
         };
@@ -105,7 +105,7 @@ class CfgWeapons {
         displayName = "[BS] Medium Vest";
         descriptionShort = "Armor Level IV";
 
-        model = "\sc_og_equipment_fixed\data\marine\mr_vest.p3d";
+        model = "\sc_equipment\data\marine\mr_vest.p3d";
         hiddenSelections[] = {"camo", "camo1"};
         hiddenSelectionsTextures[] = {
             "sc_equipment\data\marine\textures\vest_co.paa",
@@ -114,7 +114,7 @@ class CfgWeapons {
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo", "camo1"};
-            uniformModel = "\sc_og_equipment_fixed\data\marine\mr_vest.p3d";
+            uniformModel = "\sc_equipment\data\marine\mr_vest.p3d";
 
             SC_VEST_HITPOINTS_MEDIUM;
         };
@@ -124,7 +124,7 @@ class CfgWeapons {
         displayName = "[BS] Heavy Vest";
         descriptionShort = "Armor Level V";
 
-        model = "\sc_og_equipment_fixed\data\samurai\sam_vest.p3d";
+        model = "\sc_equipment\data\samurai\sam_vest.p3d";
         hiddenSelections[] = {"camo", "camo1"};
         hiddenSelectionsTextures[] = {
             "sc_equipment\data\samurai\textures\torso_black_co.paa",
@@ -133,7 +133,7 @@ class CfgWeapons {
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo", "camo1"};
-            uniformModel = "\sc_og_equipment_fixed\data\samurai\sam_vest.p3d";
+            uniformModel = "\sc_equipment\data\samurai\sam_vest.p3d";
 
             SC_VEST_HITPOINTS_HEAVY;
         };

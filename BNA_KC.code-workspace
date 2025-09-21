@@ -11,7 +11,7 @@
     "files.autoSave": "onFocusChange",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "files.insertFinalNewline": false,
+    "files.insertFinalNewline": true,
 
     "files.associations": {
       "*.hpp": "cpp",
