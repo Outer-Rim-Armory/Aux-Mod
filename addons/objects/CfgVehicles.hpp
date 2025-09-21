@@ -167,7 +167,7 @@ class CfgVehicles {
     };
 
     class 3AS_T_Screen;
-    class CLASS(AIRSpawer): 3AS_T_Screen{
+    class CLASS(AIRSpawner): 3AS_T_Screen{
     SCOPE_PUBLIC;
     author = AUTHOR;
 
