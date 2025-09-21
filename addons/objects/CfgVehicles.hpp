@@ -106,21 +106,6 @@ class CfgVehicles {
                 condition = QUOTE(ace_player call EFUNC(core,isEngineer));
                 statement = QUOTE([ARR_2(ace_player,0)] call EFUNC(core,setEngineer));
             };
-            class AssignPilot: Assign_Engineer {
-                displayName = QUOTE(<t color='#2ed9ca'><img image=QQPATHTOEF(core,data\ui\logo_kc_ca.paa)/> Assign Pilot Permissions</t>);
-                condition = "!([ace_player, 'pilot'] call ls_common_fnc_getSkill)"; // Check that player does not have the skill
-                statement = "[ace_player, 'pilot', 1] call ls_common_fnc_setSkill"; // Set skill level to 1
-            };
-            class AssignAdvPilot: Assign_Engineer {
-                displayName = QUOTE(<t color='#2ed9ca'><img image=QQPATHTOEF(core,data\ui\logo_kc_ca.paa)/> Assign Advanced Pilot Permissions</t>);
-                condition = "!([ace_player, 'pilot'] call ls_common_fnc_getSkill)"; // Check that player does not have the skill
-                statement = "[ace_player, 'pilot', 2] call ls_common_fnc_setSkill"; // Set skill level to 1
-            };
-            class UnassignPilot: Assign_Engineer {
-                displayName = QUOTE(<t color='#2ed9ca'><img image=QQPATHTOEF(core,data\ui\logo_kc_ca.paa)/> Unassign Pilot Permissions</t>);
-                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
-                statement = "[ace_player, 'pilot', 0] call ls_common_fnc_setSkill";
-            };
         };
     };
 
@@ -198,7 +183,7 @@ class CfgVehicles {
                 displayName = "Spawn [KC] LAAT/MK1";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK1')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
@@ -208,7 +193,7 @@ class CfgVehicles {
                 displayName = "Spawn [KC] LAAT/MK2";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK2')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
@@ -218,7 +203,7 @@ class CfgVehicles {
                 displayName = "Spawn [KC] LAAT/c";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_LAATc_new')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
@@ -229,7 +214,7 @@ class CfgVehicles {
                 displayName = "Spawn [KC] V-19 Torrent";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_V19')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
@@ -239,7 +224,7 @@ class CfgVehicles {
                 displayName = "Spawn [KC] V-Wing";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot'] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_Vwing')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
@@ -251,7 +236,7 @@ class CfgVehicles {
                 displayName = "<t color='#2ed9ca'> Spawn [KC] Nu-Class Shuttle </t>";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_Nu')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
@@ -261,7 +246,7 @@ class CfgVehicles {
                 displayName = "<t color='#2ed9ca'> Spawn [KC] Rho-Class Shuttle </t>";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_Rho')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
@@ -273,7 +258,7 @@ class CfgVehicles {
                 displayName = "<t color='#2ed9ca'> Spawn [KC] ARC-170 </t>";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_ARc170')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
@@ -283,7 +268,7 @@ class CfgVehicles {
                 displayName = "<t color='#2ed9ca'> Spawn [KC] Y-wing </t>";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_BLTB_Ywing')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
@@ -293,7 +278,7 @@ class CfgVehicles {
                 displayName = "<t color='#2ed9ca'> Spawn [KC] Gozanti </t>";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_Gozanti')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
@@ -303,7 +288,7 @@ class CfgVehicles {
                 displayName = "<t color='#2ed9ca'> Spawn [KC] Z-95 Headhunter </t>";
 				position = "pos cano";
 				radius = 15;
-                condition = "[ace_player, 'pilot', 2] call ls_common_fnc_getSkill";
+                condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_Z95')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
