@@ -22,7 +22,8 @@ class CfgPatches {
             QCLASS(Gonk_Base),
             QCLASS(Gonk_Permissions),
             QCLASS(Utility_Arsenal),
-            QCLASS(Utility_FullHeal)
+            QCLASS(Utility_FullHeal),
+            QCLASS(AIRSpawner)
         };
         weapons[] = {};
         VERSION_CONFIG;
