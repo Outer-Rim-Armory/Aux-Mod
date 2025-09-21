@@ -50,8 +50,12 @@ class CfgWeapons {
         };
     };
 
-    class V_PlateCarrier1_rgr;
-    class CLASS(vest_base): V_PlateCarrier1_rgr {
+    class SC_Vest_WD_Light_Guard;
+    class CLASS(vest_base): SC_Vest_WD_Light_Guard {
+        class ItemInfo;
+    };
+    class SC_Vest_WD_Medium_Guard;
+    class CLASS(medium_vest_base): SC_Vest_WD_Medium_Guard {
         class ItemInfo;
     };
     class CLASS(rdfArmor_vest_light): CLASS(vest_base) {
@@ -73,7 +77,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(rdfArmor_vest_medium): CLASS(rdfArmor_vest_light) {
+    class CLASS(rdfArmor_vest_medium): CLASS(medium_vest_base) {
         displayName = "[RDF] Medium Vest";
         model = "\sc_equipment\data\watchdog\wd_vest_medium.p3d";
 

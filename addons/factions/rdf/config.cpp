@@ -9,11 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             QUOTE(ADDON),
             QCLASS(armor),
-            "sc_equipment",
-            "tgf_helmets",
-            "tgf_armour",
-            "tgf_undersuit",
-            "tgf_backpacks"
+            "sc_equipment"
         };
         units[] = {
             QCLASS(rdfArmor_unit_base),
@@ -64,7 +60,9 @@ class CfgPatches {
             QCLASS(V19_RDF)
         };
         weapons[] = {
-            QCLASS(Arctic_Helmet_Base),
+            QCLASS(helmet_base),
+            QCLASS(uniform_base),
+            QCLASS(vest_base),
             QCLASS(rdfArmor_helmet),
             QCLASS(rdfArmor_helmet_marksman),
             QCLASS(rdfArmor_uniform),

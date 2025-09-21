@@ -76,6 +76,10 @@ class CfgVehicles {
 
     class CLASS(Resupply_PlatoonAmmo): CLASS(Resupply_SquadAmmo) {
         displayName = "02: Ammo Crate (Platoon)";
+        model = "3as\3as_props\crates\models\supply_Large.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
         ace_cargo_size = 2;
 
         class TransportWeapons {
@@ -122,6 +126,10 @@ class CfgVehicles {
 
     class CLASS(Resupply_PlatoonAmmo_Commando): CLASS(Resupply_SquadAmmo) {
         displayName = "03: Carnage Ammo Crate";
+        model = "3as\3as_props\crates\models\supply_Large.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
 
         class TransportMagazines {
             // Primary Ammo
@@ -173,6 +181,10 @@ class CfgVehicles {
     };
     class CLASS(Resupply_PlatoonAmmo_Heavy): CLASS(Resupply_SquadAmmo_Heavy) {
         displayName = "05: Heavy Ammo Crate (Platoon)";
+        model = "3as\3as_props\crates\models\supply_Large.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
         class TransportMagazines {
             MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),120);
             MAG_XX(CLASS(Mag_30Rnd_HI12),120);
@@ -289,6 +301,7 @@ class CfgVehicles {
     class CLASS(Resupply_Raptor_PlatoonAmmo): CLASS(Resupply_SquadAmmo) {
         displayName = "10: Raptor Ammo Crate (Platoon)";
         ace_cargo_size = 2;
+        model = "3as\3as_props\crates\models\supply_Large.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
