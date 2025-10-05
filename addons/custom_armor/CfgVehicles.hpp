@@ -56,6 +56,21 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(Backpack_Rocket_Base);
+    class CLASS(cloneBackpack_Rocket_Henkie): CLASS(Backpack_Rocket_Base) {
+        displayName = "[KC] INF Rocket Backpack (Henkie)";
+
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_rocket_backpack.p3d";
+        hiddenSelections[] = {"backpack", "holder", "rocket", "light", "pouches"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Henkie\Backpack_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\holder_co.paa",
+            QPATHTOF(data\backpacks\Henkie\Henkie_Rocket_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\light_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa"
+        };
+    };
+
     class CLASS(Jetpack_JT12_LR);
     class CLASS(Leon_JT12): CLASS(Jetpack_JT12_LR) {
         displayName = "[KC] JT-12 Jetpack ('Leon')";

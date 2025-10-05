@@ -826,7 +826,7 @@ class CfgAmmo {
         aiAmmoUsageFlags = 960;
         allowAgainstInfantry = TRUE;
 
-        hit = 80 ;
+        hit = 80;
         indirectHit = 12;
         indirectHitRange = 4;
         caliber = 1.6;
@@ -910,7 +910,7 @@ class CfgAmmo {
         aiAmmoUsageFlags = 960;
         allowAgainstInfantry = TRUE;
 
-        hit = 80 ;
+        hit = 80;
         indirectHit = 12;
         indirectHitRange = 4;
         caliber = 1.6;

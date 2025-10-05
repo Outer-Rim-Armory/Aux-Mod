@@ -32,8 +32,6 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
-        IMPULSE_SETTINGS;
-
         weapons[] = {
             "ParticleBeamCannon_Nu",
             "ls_weapon_CMFlareLauncher"
