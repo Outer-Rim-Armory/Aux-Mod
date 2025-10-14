@@ -3,7 +3,7 @@
         author = AUTHOR; \
         displayName = QUOTE(Flag (##name##)); \
         picture = QUOTE(\z\ace\addons\flags\data\pictures\##color##_item.paa); \
-        ace_flags_texture = QPATHTOEF(memes,data,flags\TRIPLES(flag,type,ca.paa)); \
+        ace_flags_texture = QPATHTOF(data\flags\TRIPLES(flag,type,ca.paa)); \
         ace_flags_carrier = QUOTE(DOUBLES(BNA_KC_carrierFlag,type)); \
         ace_flags_actionIconPlace = QUOTE(\z\ace\addons\flags\data\icons\place\##color##_place_icon.paa); \
         ace_flags_actionIconCarry = QUOTE(\z\ace\addons\flags\data\icons\carry\##color##_carry_icon.paa); \
