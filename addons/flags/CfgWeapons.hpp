@@ -13,7 +13,9 @@ class CfgWeapons {
 
 
     class ace_flags_white;
+    // File name (flag_XXXX_ca.paa), Item name , ACE interact flag colour
+
     FLAG_ITEM(kc,Keeli Company Flag,red);
-    FLAG_ITEM(kcmed,Keeli Medics Flag,red);
+    FLAG_ITEM(kc_med,Keeli Medics Flag,red);
 
 };

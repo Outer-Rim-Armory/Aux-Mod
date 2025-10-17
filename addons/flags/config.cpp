@@ -18,7 +18,7 @@ class CfgPatches {
         };
         weapons[] = {
             "BNA_KC_carrierFlag_kc_item",
-            "BNA_KC_carrierFlag_kcmed_item"
+            "BNA_KC_carrierFlag_kc_med_item"
         };
         VERSION_CONFIG;
     };

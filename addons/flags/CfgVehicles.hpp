@@ -19,8 +19,9 @@ class CfgVehicles {
         editorCategory = QEDCAT(Objects);
         editorSubcategory = QEDSUBCAT(Flags);
     };
+     // File name (flag_XXXX_ca.paa), Item name
 
     FLAG_CARRIER(kc,Keeli Company Flag);
-    FLAG_CARRIER(kcmed,Keeli Medics Flag);
+    FLAG_CARRIER(kc_med,Keeli Medics Flag);
 
 };
