@@ -1,4 +1,6 @@
 class CfgWeapons {
+
+
     #ifdef APRIL_FOOL
     class 3AS_DC15L_F;
     class CLASS(DC15L_Base): 3AS_DC15L_F {
@@ -14,4 +16,7 @@ class CfgWeapons {
         descriptionShort = "DC-15W, because we don't take L's.<br />The circuits of the weapon have<br/>been fried by an EMP blast.";
     };
     #endif
+
+
+
 };
