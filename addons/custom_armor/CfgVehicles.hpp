@@ -67,7 +67,7 @@ class CfgVehicles {
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\holder_co.paa",
             QPATHTOF(data\backpacks\Henkie\Henkie_Rocket_co.paa),
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\light_co.paa",
-            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa"
+            ""
         };
     };
 
