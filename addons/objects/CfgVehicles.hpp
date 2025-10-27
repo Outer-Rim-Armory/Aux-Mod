@@ -269,7 +269,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_BLTB_Ywing')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_BTLB_Ywing')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
