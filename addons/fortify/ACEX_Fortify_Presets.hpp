@@ -11,7 +11,8 @@ class ACEX_Fortify_Presets {
             QGVAR(common),
             QGVAR(mines),
             QGVAR(fob),
-            QGVAR(camouflage)
+            QGVAR(camouflage),
+            QGVAR(weapons)
         };
     };
 
@@ -66,6 +67,13 @@ class ACEX_Fortify_Presets {
             {"CamoNet_BLUFOR_open_F", 10},
             {"CamoNet_wdl_open_F", 10},
             {"CamoNet_wdl_F", 10}
+        };
+    };
+
+    class GVAR(weapons) {
+        displayName = "Weapons";
+        objects[] = {
+        {"OPTRE_Static_FG75",100}
         };
     };
 };
