@@ -25,7 +25,9 @@ class CfgPatches {
             QCLASS(Coax_Reek),
             QCLASS(Coax_Commander),
             QCLASS(Mortar_Turret_Base),
-            QCLASS(Mortar_M190_Turret)
+            QCLASS(Mortar_M190_Turret),
+            QCLASS(Cannon_Gozanti_MassDriver),
+            QCLASS(MachineGun_Gozanti_AA)
         };
         VERSION_CONFIG;
     };

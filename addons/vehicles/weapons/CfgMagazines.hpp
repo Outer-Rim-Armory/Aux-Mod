@@ -64,6 +64,14 @@ class CfgMagazines {
         muzzleImpulseFactor[] = {0.5,3};
     };
 
+    class 3AS_Laser_Battery_RX_F;
+    class CLASS(Mag_2000rnd_Gozanti_AA): 3AS_Laser_Battery_RX_F{
+        displayName = "Gozanti Anti Air Laser";
+        displayNameShort = "AA";
+        ammo = QCLASS(Laser_AntiAir_RX200);
+        count = 2000;
+    };
+
     class CLASS(Mag_6Rnd_Mortar_82mm_HE): CLASS(Mag_VehicleBase) {
         SCOPE_HIDDEN;
         displayName = "[KC] 6Rnd Mortar HE Shells";

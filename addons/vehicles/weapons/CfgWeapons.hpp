@@ -159,8 +159,15 @@ class CfgWeapons {
         };
     };
 
-
-    class LMG_RCWS;
+    class MGun;
+    class LMG_RCWS: MGun
+    {
+        class manual;
+        class close;
+        class short;
+        class medium;
+        class far;
+    };
     class LMG_coax: LMG_RCWS {
         class manual;
     };
@@ -257,10 +264,11 @@ class CfgWeapons {
         displayName = "Mass Driver Cannon";
         reloadTime = 2;
         magazineReloadTime = 4;
-        canLock = 1;
+        canLock = 2;
         magazines[] = {
             QCLASS(Mag_100Rnd_Gozanti)
         };
+        balisticsComputer= "2+4+8+16";
         class player: player
 		{
 			reloadTime=2;
@@ -325,7 +333,7 @@ class CfgWeapons {
 			burst=1;
 			burstRangeMax=1;
 			aiRateOfFire=5;
-			aiRateOfFireDispersion=4;
+			aiRateOfFireDispersion=1;
 			aiRateOfFireDistance=1250;
 			minRange=1000;
 			minRangeProbab=0.60000002;
@@ -341,7 +349,7 @@ class CfgWeapons {
 			burst=1;
 			burstRangeMax=1;
 			aiRateOfFire=6;
-			aiRateOfFireDispersion=8;
+			aiRateOfFireDispersion=1;
 			aiRateOfFireDistance=1500;
 			minRange=1500;
 			minRangeProbab=0.75;
@@ -550,4 +558,95 @@ class CfgWeapons {
             reloadTime = 4;
         };
     };
+
+    class 3AS_RX_ParticleBeamCannon: LMG_RCWS {};
+    class CLASS(MachineGun_Gozanti_AA): 3AS_RX_ParticleBeamCannon
+    {
+        displayName = "Gozanti Anti Air Laser";
+        reloadTime = 0.33333;
+        magazineReloadTime = 4;
+        canLock = 2;
+        balisticsComputer= "2+4+8+16";
+        magazines[]={
+            QCLASS(Mag_2000rnd_Gozanti_AA)
+        };
+
+        class manual: manual
+        {
+			reloadTime=0.033333302;
+			dispersion=0;
+			aiRateOfFire=0.5;
+			aiRateOfFireDistance=10;
+			minRange=0;
+			minRangeProbab=0.0099999998;
+			midRange=1;
+			midRangeProbab=0.0099999998;
+			maxRange=2;
+			maxRangeProbab=0.0099999998;
+		};
+		class close: close
+		{
+            showToPlayer=0;
+			burst=50;
+			burstRangeMax=50;
+			aiRateOfFire=0.3333;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=200;
+			minRange=0;
+			minRangeProbab=0.80000001;
+			midRange=100;
+			midRangeProbab=0.69999999;
+			maxRange=200;
+			maxRangeProbab=0.2;
+		};
+		class short: short
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=40;
+			burstRangeMax=50;
+			aiRateOfFire=0.33;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=700;
+			minRange=200;
+			minRangeProbab=0.69999999;
+			midRange=500;
+			midRangeProbab=0.69999999;
+			maxRange=800;
+			maxRangeProbab=0.2;
+		};
+		class medium: medium
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=30;
+			burstRangeMax=50;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=1300;
+			minRange=800;
+			minRangeProbab=0.69999999;
+			midRange=1200;
+			midRangeProbab=0.64999998;
+			maxRange=1500;
+			maxRangeProbab=0.1;
+		};
+		class far: far
+		{
+			aiBurstTerminable=1;
+			showToPlayer=0;
+			burst=20;
+			burstRangeMax=50;
+			aiRateOfFire=2;
+			aiRateOfFireDispersion=2;
+			aiRateOfFireDistance=1800;
+			minRange=1500;
+			minRangeProbab=0.64999998;
+			midRange=1600;
+			midRangeProbab=0.40000001;
+			maxRange=2000;
+			maxRangeProbab=0.1;
+		};
+	};
+
 };
