@@ -11,7 +11,7 @@ class CfgMagazines {
         ammo = QCLASS(Bullet_PlasmaAutoRifle_Blue);
         count = 240;
         mass = 23;
-        initSpeed = 417;
+        initSpeed = 800;
     };
 
     class Aux12thFleet_Mag_DC15L: CLASS(Mag_240Rnd_DC15L) {

@@ -1,4 +1,4 @@
-#define DROID_LINKED_ITEMS "SWLB_Comlink_Droid"
+#define DROID_LINKED_ITEMS "ls_radios_dcs"
 
 #define B1_UNIFORM(var1) class CLASS(DOUBLES(CIS_Uniform_Droid_B1,var1)): CLASS(CIS_Uniform_Droid_B1) { \
     displayName = QUOTE([CIS] B1 var1 Droid); \

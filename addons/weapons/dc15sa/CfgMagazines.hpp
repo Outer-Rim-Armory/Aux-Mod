@@ -6,8 +6,8 @@ class CfgMagazines {
         displayNameShort = "Low Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 7<br/>Used In: DC-15SA";
 
-        model = "\SWLW_clones\smgs\DC15s\DC15s_mag.p3d";
-        picture = "\SWLW_clones_spec\data\ui\DC15SA_mag_ui_ca.paa";
+        model = "\ls\core\addons\weapons_dcSeries\dc15s\ls_magazine_dc15s.p3d";
+        picture = "\ls\core\addons\weapons_dcSeries\data\ui\dc15sa_mag_ui_ca.paa";
 
         ammo = QCLASS(Bullet_PlasmaPistol_Blue);
         count = 7;

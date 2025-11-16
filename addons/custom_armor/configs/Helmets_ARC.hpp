@@ -29,9 +29,9 @@ ARC_HELMET_VISOR_CUSTOM(Drake,Bacta);
 
 ARC_HELMET_CUSTOM(Cough);
 ARC_HELMET_VISOR_CUSTOM(Hagrid,Plasma);
-ARC_HELMET_CUSTOM(Harry);
+ARC_HELMET_VISOR_CUSTOM(Harry,Plasma);
 ARC_HELMET_VISOR_CUSTOM(Sin,Crimson);
-ARC_HELMET_CUSTOM(Swoop);
+ARC_HELMET_VISOR_CUSTOM(Swoop,Bacta);
 ARC_HELMET_VISOR_CUSTOM(Tyrant,Crimson);
 
 class CLASS(Helmet_ARC_Tyrant_Worn): CLASS(Helmet_ARC_Base) {
@@ -44,10 +44,6 @@ class CLASS(Helmet_ARC_Tyrant_Worn): CLASS(Helmet_ARC_Base) {
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_ARC_Tyrant_Worn);
     EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_ARC_TyrantCrimson_Worn);
-
-    class XtdGearInfo: XtdGearInfo {
-        camo = "Empire";
-    };
 };
 class CLASS(Helmet_ARC_TyrantCrimson_Worn): CLASS(Helmet_ARC_Tyrant_Worn) {
     SCOPE_HIDDEN;

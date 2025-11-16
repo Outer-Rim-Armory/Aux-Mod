@@ -1,3 +1,5 @@
+class ls_impulsor_base;
+
 class CfgVehicles {
     class Helicopter_Base_H;
     class 3AS_Nu_Base_F: Helicopter_Base_H {
@@ -10,6 +12,15 @@ class CfgVehicles {
         class ACE_SelfActions;
     };
     class CLASS(Nu): 3AS_Nu_REP_F {
+        class LS_Impulsor: ls_impulsor_base{
+            enabled = 1; // 0-Disabled, 1-Enabled
+            speed = 400; // Speed in km/h
+            fuelDrain = 0; // Percent of fuel used every 1/2 seconds
+            overchargeSpeed = 800; // Same but for overcharge
+            overchargeFuelDrain = 0; // Same but for overcharge
+            // Time in seconds before overcharge can be used after turning it off
+            overchargeCooldown = 05;
+        };
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -21,21 +32,18 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
-        IMPULSE_SETTINGS;
-
         weapons[] = {
             "ParticleBeamCannon_Nu",
-            "ls_weapon_CMFlareLauncher",
-            "SmokeLauncher"
+            "ls_weapon_CMFlareLauncher"
         };
         magazines[] = {
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
             "3AS_Nu_5000Rnd_HE",
             "3AS_Nu_5000Rnd_HE",
-            "3AS_Nu_5000Rnd_HE",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "ls_mag_300Rnd_CMFlareChaff_blue",
-            "SmokeLauncherMag"
+            "3AS_Nu_5000Rnd_HE"
         };
 
         textureList[] = {
@@ -92,23 +100,6 @@ class CfgVehicles {
         };
 
         class UserActions: UserActions {
-            class ImpulseOn {
-                displayName = "Impulse";
-                position = "pilotview";
-                radius = 5;
-                priority = 9;
-
-                onlyForPlayer = FALSE;
-                hideOnUse = TRUE;
-                showWindow = FALSE;
-
-                condition = QUOTE(this call FUNC(canImpulse));
-                statement = QUOTE(this call ls_vehicle_fnc_impulseJoystick);
-            };
-            class ImpulseOff: ImpulseOn {
-                displayName = "Repulse";
-                statement = QUOTE(this call ls_vehicle_fnc_repulseJoystick);
-            };
             class RampOpen: RampOpen {
                 condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 0});
             };

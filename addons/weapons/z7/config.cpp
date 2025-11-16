@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "SWLW_clones_mg_Z7",
+            "ls_weapons_zseries",
         };
         units[] = {};
         weapons[] = {

@@ -10,6 +10,7 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(e5),
             "ls_weapons",
+            "ls_weapons_eseries",
             "SWLW_clones",
             "SWLW_droids",
             "3AS_Weapons_DWBlaster"
@@ -17,7 +18,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {
             QCLASS(B2Blaster_base),
+            QCLASS(AquaB2Blaster_base),
             QCLASS(B2Blaster),
+            QCLASS(AquaB2Blaster),
             QCLASS(B2Blaster_grenadeLauncher),
             QCLASS(B2Blaster_rocket),
             QCLASS(B2Blaster_flamer)

@@ -269,7 +269,7 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 2;
         cost = 7;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         timeToLive = 7;
         tracerEndTime = 10;
@@ -291,7 +291,7 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaSniper_Blue2): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
-        hit = 48;
+        hit = 60;
         caliber = 2.4;
         typicalSpeed = 910;
         dangerRadiusHit = -1;
@@ -300,7 +300,7 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 2;
         cost = 7;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         timeToLive = 7;
         tracerEndTime = 10;
@@ -322,7 +322,7 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaSniper_Blue3): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
-        hit = 48;
+        hit = 55;
         caliber = 2.4;
         typicalSpeed = 1750;
         maxSpeed = 2500;
@@ -332,7 +332,7 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 2;
         cost = 7;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         timeToLive = 7;
         tracerEndTime = 10;
@@ -354,7 +354,7 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaSniper_Red2): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
-        hit = 48;
+        hit = 60;
         caliber = 2.4;
         typicalSpeed = 910;
         dangerRadiusHit = -1;
@@ -363,7 +363,7 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 2;
         cost = 7;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         timeToLive = 7;
         tracerEndTime = 10;
@@ -392,7 +392,7 @@ class CfgAmmo {
     };
 
     class CLASS(Bullet_PlasmaSniperAP_Blue): CLASS(Bullet_PlasmaSniper_Blue) {
-        hit = 45;
+        hit = 150;
         caliber = 15;
         ACE_caliber = 15;
         typicalSpeed = 700;
@@ -456,7 +456,7 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaPistol_Blue): CLASS(Bullet_PlasmaBase) {
         SCOPE_PUBLIC;
 
-        hit = 5;
+        hit = 25;
         caliber = 1.2;
         typicalSpeed = 380;
         dangerRadiusHit = 8;
@@ -508,7 +508,7 @@ class CfgAmmo {
         suppressionRadiusBulletClose = 2;
         cost = 5;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES);
+        aiAmmoUsageFlags = 192;
 
         audibleFire = 40;
         timeToLive = 4;
@@ -644,8 +644,8 @@ class CfgAmmo {
         timeToLive = 30;
 
         explosionEffects = "VehicleExplosionEffects";
-        model = "\ls_weapons\grenades\thermalDet\ls_grenade_thermalDet.p3d";
-        soundFly[] = {"\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40};
+        model = "\ls\core\addons\weapons_grenades\thermalDet\ls_grenade_thermalDet.p3d";
+        soundFly[] = {"\ls\core\addons\sounds\weapons\grenade\thermalDetClassC_fuse.wss",1,5,20};
 
         ace_frag_enabled = FALSE;
         ace_frag_skip = FALSE;
@@ -669,8 +669,34 @@ class CfgAmmo {
 
         explosionEffects = "M136_Explode";
         craterEffects = "M136_Smoke";
-        model = "\SWLW_clones\machineguns\Z6\Z6_g_mag.p3d";
-        soundFly[] = {"\ls_sounds\weapons\grenade\thermalDet_classC_fuse.wss", 3, 1, 40};
+        model = "\A3\weapons_f\ammo\UGL_slug";
+        soundFly[] = {"", 3, 1, 40};
+
+        ace_frag_enabled = FALSE;
+        ace_frag_skip = FALSE;
+        ace_frag_force = FALSE;
+    };
+
+    class CLASS(UGL_Grenade_HE): G_40mm_HE {
+        hit = 200;
+        dangerRadiusHit = 60;
+        indirectHit = 15;
+        indirectHitRange = 6;
+        explosionEffectsRadius = 20;
+        suppressionRadiusHit = 24;
+
+        typicalspeed = 185;
+        visibleFireTime = 3;
+        visibleFire = 1;
+        audibleFire = 30;
+        fuseDistance = 15;
+        explosionTime = 0;
+        timeToLive = 20;
+
+        explosionEffects = "M136_Explode";
+        craterEffects = "M136_Smoke";
+        model = "\A3\weapons_f\ammo\UGL_slug";
+        soundFly[] = {"", 3, 1, 40};
 
         ace_frag_enabled = FALSE;
         ace_frag_skip = FALSE;
@@ -678,8 +704,8 @@ class CfgAmmo {
     };
 
     // TODO: Update to inherit from base KC bullet
-    class SWLW_ammo_40mm_at;
-    class CLASS(Bullet_Plasma40mm_AT): SWLW_ammo_40mm_at {
+    class ls_40mm_he_blue;
+    class CLASS(Bullet_Plasma40mm_AT): ls_40mm_he_blue {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
         craterWaterEffects = "ImpactEffectsWaterExplosion";
@@ -692,7 +718,7 @@ class CfgAmmo {
         submunitionInitSpeed = 1000;
         submunitionParentSpeedCoef = 0;
     };
-    class CLASS(Bullet_Plasma40mm): SWLW_ammo_40mm_at {
+    class CLASS(Bullet_Plasma40mm): ls_40mm_he_blue {
         model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
         effectfly = "JLTS_plasma_blue";
         craterWaterEffects = "ImpactEffectsWaterExplosion";
@@ -700,7 +726,7 @@ class CfgAmmo {
         hit = 200;
         typicalSpeed = 1550;
 
-        submunitionAmmo = QCLASS(Bullet_Plasma40mm_Submunition);
+        submunitionAmmo = QCLASS(Bullet_Plasma40mm_ATSubmunition);
         submunitionInitialOffset[] = {0,0, -0.5};
         submunitionInitSpeed = 1000;
         submunitionParentSpeedCoef = 0;
@@ -742,7 +768,7 @@ class CfgAmmo {
         warheadName = "TandemHEAT";
         simulationStep = 0.02;
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_VEHICLES + AMMO_USAGE_AIRCRAFT + AMMO_USAGE_ARMORED_VEHICLES);
+        aiAmmoUsageFlags = 896;
         allowAgainstInfantry = FALSE;
 
         model = "\A3\weapons_f\launchers\RPG32\pg32v_rocket.p3d";
@@ -793,10 +819,10 @@ class CfgAmmo {
         SCOPE_PUBLIC;
         // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = 960;
         allowAgainstInfantry = TRUE;
 
-        hit = 80 ;
+        hit = 80;
         indirectHit = 12;
         indirectHitRange = 4;
         caliber = 1.6;
@@ -813,10 +839,10 @@ class CfgAmmo {
         airLock = 1;
         proximityExplosionDistance = 5;
 
-        model = "ls_weapons_core\Effects\laser_blue.p3d";
-        effectfly = "SWLW_plasma_blue";
-        ExplosionEffects = "25mm_Explode";
-        craterEffects = "SWLW_plasma_he_impact";
+        model = "\ls\core\addons\data\effects\ls_laser_blue.p3d";
+        effectfly = "ls_plasma_blue";
+        ExplosionEffects = "ls_plasma_impact";
+        craterEffects = "ImpactEffectsMedium";
 
         soundSetExplosion[] = {};
         audibleFire = 80;
@@ -877,10 +903,10 @@ class CfgAmmo {
         SCOPE_PUBLIC;
         // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = 960;
         allowAgainstInfantry = TRUE;
 
-        hit = 80 ;
+        hit = 80;
         indirectHit = 12;
         indirectHitRange = 4;
         caliber = 1.6;
@@ -897,10 +923,10 @@ class CfgAmmo {
         airLock = 1;
         proximityExplosionDistance = 5;
 
-        model = "ls_weapons_core\Effects\laser_red.p3d";
-        effectfly = "SWLW_plasma_red";
-        ExplosionEffects = "25mm_Explode";
-        craterEffects = "SWLW_plasma_he_impact";
+        model = "\ls\core\addons\data\effects\ls_laser_red.p3d";
+        effectfly = "ls_plasma_red";
+        ExplosionEffects = "ls_plasma_impact";
+        craterEffects = "ImpactEffectsMedium";
 
         soundSetExplosion[] = {};
         audibleFire = 80;
@@ -962,7 +988,7 @@ class CfgAmmo {
         SCOPE_PUBLIC;
         // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = 960;
         allowAgainstInfantry = TRUE;
 
         hit = 120;
@@ -1047,7 +1073,7 @@ class CfgAmmo {
         SCOPE_PUBLIC;
         // Most of the properties probably aren't needed, but are included to match 3AS_Chaingun_Ammo
 
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_ARMORED_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = 960;
         allowAgainstInfantry = TRUE;
 
         hit = 120;

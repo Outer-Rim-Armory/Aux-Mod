@@ -1,9 +1,9 @@
 class CfgWeapons {
-    class Pistol_Base_F;
-    class SWLW_Westar35SA: Pistol_Base_F {
+    class ls_weapon_westar35sa_base;
+    class ls_weapon_westar35sa: ls_weapon_westar35sa_base {
         class Single;
     };
-    class CLASS(Westar35SA_Base): SWLW_Westar35SA {
+    class CLASS(Westar35SA_Base): ls_weapon_westar35sa {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -23,8 +23,6 @@ class CfgWeapons {
         magazineWell[] = {};
 
         canShootInWater = TRUE;
-
-        hiddenSelectionsTextures[] = {QPATHTOF(dc15sa\data\textures\DC15SA_camo1_co.paa)};
 
         // JLTS emp system
         JLTS_hasElectronics = TRUE;

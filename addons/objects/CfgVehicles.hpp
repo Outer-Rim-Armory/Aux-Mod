@@ -26,14 +26,14 @@ class CfgVehicles {
 
         displayName = "KC Flag (Vertical)";
 
-        model = "\LS_statics_props\flags\ls_vertical_flag";
+        model = "\ls\core\addons\props\flags\ls_vertical_flag.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_Vertical_co.paa)};
     };
     class CLASS(Flag_KC_Horizontal): CLASS(Flag_KC_Vertical) {
         displayName = "KC Flag (Horizontal)";
 
-        model = "\LS_statics_props\flags\ls_horizontal_flag";
+        model = "\ls\core\addons\props\flags\ls_horizontal_flag.p3d";
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_co.paa)};
     };
 
@@ -50,7 +50,7 @@ class CfgVehicles {
     class CLASS(Flag_KC_Damaged_Horizontal): CLASS(Flag_KC_Horizontal) {
         displayName = "KC Damaged Flag (Horizontal, Mirrored)";
 
-        model = "\LS_statics_props\flags\ls_horizontal_flag";
+        model = "\ls\core\addons\props\flags\ls_horizontal_flag.p3d";
         hiddenSelectionsTextures[] = {QPATHTOF(data\flags\KC_Damaged_co.paa)};
     };
     class CLASS(Flag_KC_Damaged_Horizontal_Mirrored): CLASS(Flag_KC_Horizontal) {
@@ -138,7 +138,7 @@ class CfgVehicles {
 
             class Add_Radio: Arsenal_ACE {
                 displayName = "<t color='#E6E6E6'><img image='\a3\modules_f_curator\data\portraitradio_ca.paa'/> Add Radio</t>";
-                statement = QUOTE(ace_player linkItem 'SWLB_comlink');
+                statement = QUOTE(ace_player linkItem 'ls_radios_cwp8');
             };
         };
     };
@@ -162,6 +162,136 @@ class CfgVehicles {
 
                 condition = "true";
                 statement = QUOTE([ARR_2(ace_player,ace_player)] call ace_medical_treatment_fnc_fullHeal; playSound3D [ARR_2(QQPATHTOEF(medical,data\audio\MedicalDroid_Treat.wss),ARR_8(objNull,false,getPosASL this,3,1,10,0,true))];);
+            };
+        };
+    };
+
+    class 3AS_T_Screen;
+    class CLASS(AIRSpawner): 3AS_T_Screen{
+    SCOPE_PUBLIC;
+    author = AUTHOR;
+
+    editorCategory = QEDCAT(Objects);
+    editorSubcategory = QEDSUBCAT(Utility);
+
+    displayName = "Aircraft Terminal";
+        class Useractions{
+
+            // helicopter heliocopter *helicopter sounds*
+            class Spawn_KC_LAAT_MK1
+            {
+                displayName = "Spawn [KC] LAAT/MK1";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK1')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_LAAT_MK2
+            {
+                displayName = "Spawn [KC] LAAT/MK2";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK2')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_LAAT_C
+            {
+                displayName = "Spawn [KC] LAAT/c";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATc_new')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            // basic fighters
+            class Spawn_KC_V19
+            {
+                displayName = "Spawn [KC] V-19 Torrent";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_V19')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_Vwing
+            {
+                displayName = "Spawn [KC] V-Wing";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Vwing')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+
+            // advanced heli stuffs
+            class Spawn_KC_NUclass
+            {
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Nu-Class Shuttle </t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Nu')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_RHOclass
+            {
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Rho-Class Shuttle </t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Rho')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+
+        // advanced non heli also known as birds but not those birds just planes
+        class Spawn_KC_ARC170
+            {
+                displayName = "<t color='#2ed9ca'> Spawn [KC] ARC-170 </t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_ARc170')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_Ywing
+            {
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Y-wing </t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_BTLB_Ywing')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_Gozanti
+            {
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Gozanti </t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Gozanti')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_Z95
+            {
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Z-95 Headhunter </t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Z95')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
             };
         };
     };

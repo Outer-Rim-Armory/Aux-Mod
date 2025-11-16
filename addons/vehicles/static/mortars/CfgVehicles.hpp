@@ -11,7 +11,6 @@ class CfgVehicles {
     };
     class B_Mortar_01_F: Mortar_01_base_F {};
     class 3AS_Republic_Mortar: B_Mortar_01_F {
-        class ace_csw;
         class UserActions;
         class Turrets: Turrets {
             class MainTurret;
@@ -93,8 +92,8 @@ class CfgVehicles {
         side = BLUFOR;
 
         hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Static\Mortar\data\base.001_co.paa",
-            "\3AS\3AS_Static\Mortar\data\tube.001_co.paa"
+            "\3as\3as_static\Mortar\data\base_co.paa",
+            "\3as\3as_static\Mortar\data\tube_co.paa"
         };
 
         class Turrets: Turrets {

@@ -4,7 +4,7 @@ class CfgAmmo {
     class CLASS(Bullet_Base);
     class CLASS(Rocket_B2Blaster): CLASS(Bullet_Base) {
         SCOPE_PUBLIC;
-        aiAmmoUsageFlags = QUOTE(AMMO_USAGE_INFANTRY + AMMO_USAGE_VEHICLES + AMMO_USAGE_AIRCRAFT);
+        aiAmmoUsageFlags = 448;
 
         caliber = 3;
         cost = 200;

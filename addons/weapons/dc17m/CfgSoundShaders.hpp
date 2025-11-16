@@ -2,7 +2,7 @@ class CfgSoundShaders {
     class CLASS(SoundShader_WeaponShot_Base);
     class CLASS(SoundShader_DC17MShot_Single): CLASS(SoundShader_WeaponShot_Base) {
         samples[] = {
-            {"\SWLW_clones_spec\sounds\DC17M_sniper_fire.wss", 1}
+            {"\ls\core\addons\sounds\weapons\dc17m\sniperShotMid1.wss",1}
         };
     };
 

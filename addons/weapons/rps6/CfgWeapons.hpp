@@ -1,10 +1,10 @@
 class CfgWeapons {
-    class ls_launcher_base;
-    class ls_weapon_rps6: ls_launcher_base {
+    class ls_weapon_rps6_disposable;
+    class ls_weapon_rps6_loaded: ls_weapon_rps6_disposable {
         class WeaponSlotsInfo;
         class Single;
     };
-    class CLASS(RPS6_Base): ls_weapon_rps6 {
+    class CLASS(RPS6_Base): ls_weapon_rps6_loaded {
         SCOPE_PRIVATE;
         author = AUTHOR;
 

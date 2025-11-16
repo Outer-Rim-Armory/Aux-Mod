@@ -9,7 +9,7 @@ class CfgPatches {
         requiredAddons[] = {
             QUOTE(ADDON),
             QGVAR(accessories),
-            "SWLW_merc_mando_pistols_Westar35SA"
+            "ls_weapons_westar"
         };
         units[] = {};
         weapons[] = {

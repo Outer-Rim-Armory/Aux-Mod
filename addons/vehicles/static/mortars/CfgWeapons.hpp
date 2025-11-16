@@ -8,12 +8,12 @@ class CfgWeapons {
         author = AUTHOR;
 
         displayName = "[KC] M-190 Mortar System";
-        picture = "\ls_weapons\_ui\rps6_ca.paa";
+        picture = "\ls\core\addons\weapons_rps\data\ui\rps6_ui_ca.paa";
         drySound[] = {};
 
-        model = "\ls_vehicles_ground\mortar\ls_ground_mortar_alternateCarry.p3d";
+        model = "\ls\core\addons\vehicles_mortar\ls_turret_mortar_alternateCarry.p3d";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"\ls_vehicles_ground\mortar\data\republic_co.paa"};
+        hiddenSelectionsTextures[] = {"\ls\core\addons\vehicles_mortar\data\camo1_co.paa"};
 
         mass = 300;
         class ACE_CSW {

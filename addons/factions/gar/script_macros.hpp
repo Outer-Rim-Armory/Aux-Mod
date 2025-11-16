@@ -2,8 +2,8 @@
     displayName = QUOTE([##var1##] INF P1 Helm); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(SUBCOMPONENT\data\helmets\phase1\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa", \
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa" \
     }; \
     EGVAR(custom_armor,isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -16,8 +16,8 @@
     displayName = QUOTE([##var1##] INF P1 Helm ('##var2##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(SUBCOMPONENT\data\helmets\phase1\TRIPLES(var1,var2,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase1\data\visor_co.paa", \
-        "\ls_armor_bluefor\helmet\gar\phase1\data\illum_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa", \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa" \
     }; \
     EGVAR(custom_armor,isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -30,7 +30,7 @@
     displayName = QUOTE([##var1##] INF P2 Helm); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(SUBCOMPONENT\data\helmets\phase2\DOUBLES(var1,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa" \
     }; \
     EGVAR(custom_armor,isCustom) = TRUE; \
     class XtdGearInfo { \
@@ -43,7 +43,7 @@
     displayName = QUOTE([##var1##] INF P2 Helm ('##var2##')); \
     hiddenSelectionsTextures[] = { \
         QPATHTOF(SUBCOMPONENT\data\helmets\phase2\TRIPLES(var1,var2,camo1_co.paa)), \
-        "\ls_armor_bluefor\helmet\gar\phase2\data\visor_co.paa" \
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa" \
     }; \
     EGVAR(custom_armor,isCustom) = TRUE; \
     class XtdGearInfo { \

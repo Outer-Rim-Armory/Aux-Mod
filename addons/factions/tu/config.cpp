@@ -8,6 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
+            "sc_props",
             "sc_equipment",
             "LFPModels"
         };
@@ -55,6 +56,7 @@ class CfgPatches {
             QCLASS(Rathian_CAS_TU)
         };
         weapons[] = {
+            QCLASS(OPFOR_Helmet_Base),
             QCLASS(TU_Helmet),
             QCLASS(TU_Helmet_Assault),
             QCLASS(TU_Helmet_Visor),

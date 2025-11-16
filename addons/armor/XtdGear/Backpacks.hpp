@@ -20,10 +20,6 @@ class CLASS(Backpack_Heavy): CLASS(Backpack_Heavy_Base) {
     style = "KeeliCompany";
 };
 
-class CLASS(Backpack_EOD_Base): CLASS(Backpack_EOD_Base) {
-    style = "KeeliCompany";
-};
-
 class CLASS(Backpack_Radio_Base): CLASS(cloneBackpack_standard) {
     type = "Radio";
 };

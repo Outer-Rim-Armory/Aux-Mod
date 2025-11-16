@@ -48,7 +48,7 @@ class CfgVehicles {
 
         linkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(rdfArmor_helmet), QCLASS(rdfArmor_vest_medium), RDF_LINKED_ITEMS_RADIO};
-        backpack = QCLASS(rdfBackpack_predef_rifleman);
+        backpack = QCLASS(rdfBackpack_predef_rifleman_15A);
     };
 
     class CLASS(rdfArmor_unit_rifleman_DC15C): CLASS(rdfArmor_unit_rifleman) {
@@ -66,6 +66,7 @@ class CfgVehicles {
             ITEM_16(QCLASS(Mag_40rnd_DC15C)),
             ITEM_6(QCLASS(Mag_20rnd_DC17))
         };
+        backpack = QCLASS(rdfBackpack_predef_rifleman_15C);
     };
 
     class CLASS(rdfArmor_unit_grenadier): CLASS(rdfArmor_unit_base) {

@@ -2,7 +2,7 @@ class CfgVehicles {
     class CLASS(INDEP_Unit_Base);
     class CLASS(BS_Unit_Base): CLASS(INDEP_Unit_Base) {
         SCOPE_HIDDEN;
-        faction = QCLASS(Faction_BS);
+        faction = QFACTION(BS);
 
         genericNames = QCLASS(BS_Soldier);
         modelSides[] = {ALL_SIDES};
@@ -23,14 +23,14 @@ class CfgVehicles {
         model = "\A3\Characters_F_Beta\INDEP\ia_soldier_01.p3d";
         uniformClass = QCLASS(BS_Uniform);
         hiddenSelections[] = {"camo", "insignia"};
-        hiddenSelectionsTextures[] = {"\ls_armor_greenfor\uniform\mandalorian\undersuit\data\uniform_undersuit_co.paa"};
+        hiddenSelectionsTextures[] = {"\ls\core\addons\characters_mandalorian\uniforms\undersuit\data\undersuit_co.paa"};
     };
 
     class CLASS(BS_Unit_Rifleman): CLASS(BS_Unit_Base) {
         SCOPE_PUBLIC;
 
         displayName = "01: Rifleman";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T1);
+        editorSubcategory = QEDSUBCAT(BS_INF_T1);
         editorPreview = EDITOR_PREVIEW(BS_Unit_Rifleman);
 
         weapons[] = {QCLASS(E5), "", "Throw", "Put"};
@@ -45,7 +45,7 @@ class CfgVehicles {
     };
     class CLASS(BS_Unit_Rifleman_T2): CLASS(BS_Unit_Rifleman) {
         displayName = "01: Veteran Rifleman";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T2);
+        editorSubcategory = QEDSUBCAT(BS_INF_T2);
         editorPreview = EDITOR_PREVIEW(BS_Unit_Rifleman_T2);
         linkedItems[] = {QCLASS(BS_Helmet_T2), QCLASS(BS_Vest_Medium), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(BS_Helmet_T2), QCLASS(BS_Vest_Medium), LINKED_ITEMS_RADIO};
@@ -53,7 +53,7 @@ class CfgVehicles {
     };
     class CLASS(BS_Unit_Rifleman_T3): CLASS(BS_Unit_Rifleman_T2) {
         displayName = "01: Elite Rifleman";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T3);
+        editorSubcategory = QEDSUBCAT(BS_INF_T3);
         editorPreview = EDITOR_PREVIEW(BS_Unit_Rifleman_T3);
         linkedItems[] = {QCLASS(BS_Helmet_T3), QCLASS(BS_Vest_Heavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(BS_Helmet_T3), QCLASS(BS_Vest_Heavy), LINKED_ITEMS_RADIO};
@@ -75,7 +75,7 @@ class CfgVehicles {
     };
     class CLASS(BS_Unit_AT_T2): CLASS(BS_Unit_AT) {
         displayName = "02: Veteran Rifleman (AT)";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T2);
+        editorSubcategory = QEDSUBCAT(BS_INF_T2);
         editorPreview = EDITOR_PREVIEW(BS_Unit_AT_T2);
 
         weapons[] = {QCLASS(E5), "", QCLASS(RPS7), "Throw", "Put"};
@@ -90,7 +90,7 @@ class CfgVehicles {
     };
     class CLASS(BS_Unit_AT_T3): CLASS(BS_Unit_AT_T2) {
         displayName = "02: Elite Rifleman (AT)";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T3);
+        editorSubcategory = QEDSUBCAT(BS_INF_T3);
         editorPreview = EDITOR_PREVIEW(BS_Unit_AT_T3);
         linkedItems[] = {QCLASS(BS_Helmet_T3), QCLASS(BS_Vest_Heavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(BS_Helmet_T3), QCLASS(BS_Vest_Heavy), LINKED_ITEMS_RADIO};
@@ -114,7 +114,7 @@ class CfgVehicles {
     };
     class CLASS(BS_Unit_Marksman_T2): CLASS(BS_Unit_Marksman) {
         displayName = "03: Veteran Marksman";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T2);
+        editorSubcategory = QEDSUBCAT(BS_INF_T2);
         editorPreview = EDITOR_PREVIEW(BS_Unit_Marksman_T2);
         linkedItems[] = {QCLASS(BS_Helmet_T2), QCLASS(BS_Vest_Medium), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(BS_Helmet_T2), QCLASS(BS_Vest_Medium), LINKED_ITEMS_RADIO};
@@ -122,7 +122,7 @@ class CfgVehicles {
     };
     class CLASS(BS_Unit_Marksman_T3): CLASS(BS_Unit_Marksman_T2) {
         displayName = "03: Elite Marksman";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T3);
+        editorSubcategory = QEDSUBCAT(BS_INF_T3);
         editorPreview = EDITOR_PREVIEW(BS_Unit_Marksman_T3);
         linkedItems[] = {QCLASS(BS_Helmet_T3), QCLASS(BS_Vest_Heavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(BS_Helmet_T3), QCLASS(BS_Vest_Heavy), LINKED_ITEMS_RADIO};
@@ -132,7 +132,7 @@ class CfgVehicles {
     class CLASS(BS_Unit_Heavy): CLASS(BS_Unit_Rifleman) {
         displayName = "04: Heavy";
         editorPreview = EDITOR_PREVIEW(BS_Unit_Heavy);
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T1);
+        editorSubcategory = QEDSUBCAT(BS_INF_T1);
         icon = "iconManMG";
 
         weapons[] = {QCLASS(E5C_Stock), "", "Throw", "Put"};
@@ -147,7 +147,7 @@ class CfgVehicles {
     };
     class CLASS(BS_Unit_Heavy_T2): CLASS(BS_Unit_Heavy) {
         displayName = "04: Veteran Heavy";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T2);
+        editorSubcategory = QEDSUBCAT(BS_INF_T2);
         editorPreview = EDITOR_PREVIEW(BS_Unit_Heavy_T2);
         linkedItems[] = {QCLASS(BS_Helmet_T2), QCLASS(BS_Vest_Medium), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(BS_Helmet_T2), QCLASS(BS_Vest_Medium), LINKED_ITEMS_RADIO};
@@ -155,7 +155,7 @@ class CfgVehicles {
     };
     class CLASS(BS_Unit_Heavy_T3): CLASS(BS_Unit_Heavy_T2) {
         displayName = "04: Elite Heavy";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T3);
+        editorSubcategory = QEDSUBCAT(BS_INF_T3);
         editorPreview = EDITOR_PREVIEW(BS_Unit_Heavy_T3);
         linkedItems[] = {QCLASS(BS_Helmet_T3), QCLASS(BS_Vest_Heavy), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(BS_Helmet_T3), QCLASS(BS_Vest_Heavy), LINKED_ITEMS_RADIO};
@@ -179,7 +179,7 @@ class CfgVehicles {
     };
     class CLASS(BS_Unit_SL_T2): CLASS(BS_Unit_SL) {
         displayName = "05: Veteran Squad Leader";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T2);
+        editorSubcategory = QEDSUBCAT(BS_INF_T2);
         editorPreview = EDITOR_PREVIEW(BS_Unit_SL_T2);
         linkedItems[] = {QCLASS(BS_Helmet_SL), QCLASS(BS_Vest_Captain), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(BS_Helmet_SL), QCLASS(BS_Vest_Captain), LINKED_ITEMS_RADIO};
@@ -187,7 +187,7 @@ class CfgVehicles {
     };
     class CLASS(BS_Unit_SL_T3): CLASS(BS_Unit_SL_T2) {
         displayName = "05: Elite Squad Leader";
-        editorSubcategory = QCLASS(EdSubCat_BS_INF_T3);
+        editorSubcategory = QEDSUBCAT(BS_INF_T3);
         editorPreview = EDITOR_PREVIEW(BS_Unit_SL_T3);
         linkedItems[] = {QCLASS(BS_Helmet_SL), QCLASS(BS_Vest_Captain), LINKED_ITEMS_RADIO};
         respawnLinkedItems[] = {QCLASS(BS_Helmet_SL), QCLASS(BS_Vest_Captain), LINKED_ITEMS_RADIO};

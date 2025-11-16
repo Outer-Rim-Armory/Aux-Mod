@@ -1,7 +1,6 @@
 class CfgVehicles {
     class 3as_Vwing_base;
     class CLASS(VWing): 3as_Vwing_base {
-        class ACE_SelfActions;
         SCOPE_PUBLIC;
         author = AUTHOR;
 
@@ -50,7 +49,7 @@ class CfgVehicles {
         stallSpeed=210;
         stallWarningTreshold=0.15000001;
         acceleration=300;
-        landingAoa="7.5*3.1415/180";
+        landingAoa=0.13089584;
         maxOmega=2000;
 
         cabinOpenSound[] = {QPATHTOF(sounds\data\audio\arc170\Canopy_Open.wss), 1.77828 , 1, 40};

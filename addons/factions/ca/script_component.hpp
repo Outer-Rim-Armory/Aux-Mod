@@ -1,4 +1,4 @@
-#define SUBCOMPONENT umb
-#define SUBCOMPONENT_BEAUTIFIED Umbaran Militia
+#define SUBCOMPONENT ca
+#define SUBCOMPONENT_BEAUTIFIED Clan Arctic
 
 #include "..\script_component.hpp"

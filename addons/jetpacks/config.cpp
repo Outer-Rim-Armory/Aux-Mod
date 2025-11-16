@@ -7,6 +7,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QCLASS(core),
+            "3AS_Prop_Crates",
             "ace_refuel",
             "ace_parachute"
         };

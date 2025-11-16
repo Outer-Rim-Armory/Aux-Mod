@@ -13,7 +13,6 @@ class CfgVehicles {
         };
     };
     class 3AS_PX10_F: 3AS_PX10_Base_F {
-        class ACE_SelfActions;
     };
 
     class CLASS(Hermitaur_Class_I): 3AS_PX10_F {
@@ -45,7 +44,7 @@ class CfgVehicles {
             "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
         };
 
-        textureList[] = {"Standard", 0, "KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0, "Medic", 0, "Imperial", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0, "Medic", 0, "Imperial", 0, "Rebel", 0};
         class TextureSources {
             class Standard {
                 author = AUTHOR;
@@ -97,6 +96,16 @@ class CfgVehicles {
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
             };
+            class Rebel: KeeliCompany {
+                displayName = "Rebel";
+                textures[] = {
+                    "3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10fuel_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10crane_co.paa"
+                };
+            };
         };
 
         model = "3as\3AS_Rebel_Armor\PX10_Cav\model\3AS_PX10.p3d";
@@ -120,41 +129,6 @@ class CfgVehicles {
             class CargoTurret_02: CargoTurret_02 {};
             class CargoTurret_03: CargoTurret_03 {};
             class CargoTurret_04: CargoTurret_04 {};
-        };
-        class EventHandlers
-        {
-            init = "(_this # 0) setVariable [""BNA_KC_vehicles_DeploySquadShield"", false,true];";
-        };
-        class UserActions
-        {
-            class DeploySquadShield
-            {
-                displayName = "Deploy Squad Shield";
-                displayNameDefault = "<img size='2' image='\a3\missions_f_beta\data\img\iconmptypedefense_ca.paa'/>";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 1;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeploySquadShield"" == false && fuel this != 0;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeploySquadShield"",true,true];this call BNA_KC_vehicles_fnc_deploySquadShield;";
-            };
-            class UnDeploySquadShield
-            {
-                displayName = "Undeploy Squad Shield";
-                displayNameDefault = "";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 0;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeploySquadShield"" == true;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeploySquadShield"",false,true];";
-            };
         };
     };
 
@@ -199,7 +173,7 @@ class CfgVehicles {
             "3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
             "3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
         };
-        textureList[] = {"Standard", 0, "KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0, "Medic", 0, "Imperial", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "BrownCamo", 0, "GreyCamo", 0, "Medic", 0, "Imperial", 0, "Rebel", 0};
         class TextureSources {
             class Standard {
                 author = AUTHOR;
@@ -251,73 +225,20 @@ class CfgVehicles {
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
             };
+            class Rebel: KeeliCompany {
+                displayName = "Rebel";
+                textures[] = {
+                    "3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10fuel_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10crane_co.paa"
+                };
+            };
         };
         model = "3as\3AS_Rebel_Armor\PX10_Cav\model\3AS_PX10.p3d";
         picture = "3as\3AS_Rebel_Armor\PX10_Cav\data\ui\px10cav_side_ca.paa";
         icon = "3as\3AS_Rebel_Armor\PX10_Cav\data\ui\px10cav_top_ca.paa";
-        class EventHandlers
-        {
-            init = "(_this # 0) setVariable [""BNA_KC_vehicles_DeployVehShield"", false,true];(_this # 0) setVariable [""BNA_KC_vehicles_DeployModule"", false,true];";
-        };
-        class UserActions
-        {
-            class DeployVehShield
-            {
-                displayName = "Deploy Assault Shield";
-                displayNameDefault = "<img size='2' image='a3\missions_f_beta\data\img\portraitmptypedefense_ca.paa'/>";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 1;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployVehShield"" == false && fuel this != 0;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployVehShield"",true,true];this call BNA_KC_vehicles_fnc_deployVehShield;";
-            };
-            class UnDeployVehShield
-            {
-                displayName = "Undeploy Assault Shield";
-                displayNameDefault = "";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 0;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployVehShield"" == true;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployVehShield"",false,true];";
-            };
-            class DeployModule
-            {
-                displayName = "Deploy Repair Module";
-                displayNameDefault = "<img size='2' image='\a3\ui_f_oldman\data\igui\cfg\holdactions\repair_ca.paa'/>";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 1;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployModule"" == false && fuel this != 0;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployModule"",true,true];this call BNA_KC_vehicles_fnc_deployModuleRepair;";
-            };
-            class UnDeployModule
-            {
-                displayName = "Undeploy Repair Module";
-                displayNameDefault = "";
-                priority = 10;
-                radius = 10;
-                position = "camera";
-                showWindow = 0;
-                hideOnUse = 1;
-                onlyForPlayer = 0;
-                shortcut = "";
-                condition = "this getVariable ""BNA_KC_vehicles_DeployModule"" == true;";
-                statement = "this setVariable [""BNA_KC_vehicles_DeployModule"",false,true];";
-            };
-        };
     };
 
     class CLASS(Hermitaur_Class_M): CLASS(Hermitaur_Class_I) {
@@ -333,32 +254,12 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
 
-        class UserActions {
-            class DeployCCP {
-                displayName = "Deploy CCP";
-                priority = 10;
-                radius = 5;
-                position = "camera";
-                showWindow = 0;
-                hideOnUse = 1;
-                onlyForPlayer = 1;
-                shortcut = "";
-                condition = QUOTE([ARR_2(this,ace_player)] call FUNC(canDeployCCP));
-                statement = QUOTE([ARR_2(this,ace_player)] call FUNC(deployCCP));
-            };
-            class UndeployCCP: DeployCCP {
-                displayName = "Undeploy CCP";
-                condition = QUOTE([ARR_2(this,ace_player)] call FUNC(canUndeployCCP));
-                statement = QUOTE([ARR_2(this,ace_player)] call FUNC(undeployCCP));
-            };
-        };
-
         animationList[] = {
             // These values are actually inverted, they should be "hide"
-            "HideAttachmentDozer", TRUE,
-            "HideAttachmentFuel", TRUE,
-            "HideAttachmentPlate", FALSE,
-            "HideAttachmentRepair", TRUE
+            "HideAttachmentDozer", FALSE,
+            "HideAttachmentFuel", FALSE,
+            "HideAttachmentPlate", TRUE,
+            "HideAttachmentRepair", FALSE
         };
 
 
@@ -370,7 +271,7 @@ class CfgVehicles {
             "3as\3as_rebel_armor\px10_cav\textures\px10fuel_Republic_co.paa",
             "3as\3as_rebel_armor\px10_cav\textures\px10crane_Republic_co.paa"
         };
-        textureList[] = {"Standard", 0, "KeeliCompany", 0, "BrownCamo", 0, "GreyCamo", 0, "Medic", 1, "Imperial", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 0, "BrownCamo", 0, "GreyCamo", 0, "Medic", 1, "Imperial", 0, "Rebel", 0};
         class TextureSources {
             class Standard {
                 author = AUTHOR;
@@ -420,6 +321,16 @@ class CfgVehicles {
                     QPATHTOF(land\hermitaur\data\textures\Imperial\PX10CAV_KCImp_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
+                };
+            };
+            class Rebel: KeeliCompany {
+                displayName = "Rebel";
+                textures[] = {
+                    "3as\3AS_Rebel_Armor\PX10_Cav\Textures\PX10CAV_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10fuel_co.paa",
+                    "3as\3as_rebel_armor\px10_cav\textures\px10crane_co.paa"
                 };
             };
         };

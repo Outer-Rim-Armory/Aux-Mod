@@ -308,19 +308,6 @@ class CfgVehicles {
         };
     };
 
-    class B_MBT_01_cannon_F;
-    class B_MBT_01_TUSK_F: B_MBT_01_cannon_F {
-        class ACE_SelfActions;
-    };
-    class CLASS(Blitz): B_MBT_01_TUSK_F {
-        class ACE_SelfActions: ACE_SelfActions {
-            INTERCOM_START;
-                INTERCOM_DISABLED;
-                INTERCOM_CREW;
-            INTERCOM_END;
-        };
-    };
-
     class OPTRE_M413_base;
     class OPTRE_M412_IFV_UNSC: OPTRE_M413_base {
         class ACE_SelfActions;

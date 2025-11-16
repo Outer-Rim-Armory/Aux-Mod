@@ -1,6 +1,21 @@
+class Mode_SemiAuto;
+class Mode_FullAuto;
+
 class CfgWeapons {
-    class ls_weapon_westar35c_primary;
-    class CLASS(Westar35C_base): ls_weapon_westar35c_primary {
+    class Rifle_Long_Base_F;
+    class ls_rifle_base: Rifle_Long_Base_F {
+        class WeaponSlotsInfo;
+    };
+    class ls_weapon_westar35c_base: ls_rifle_base {
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+        };
+
+        class Single: Mode_SemiAuto {
+        };
+        class FullAuto: Mode_FullAuto {
+        };
+    };
+    class CLASS(Westar35C_base): ls_weapon_westar35c_base {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -24,8 +39,7 @@ class CfgWeapons {
     };
 
     class UGL_F;
-    class ls_rifle_base;
-    class ls_weapon_westar35s_base: ls_rifle_base {
+    class ls_weapon_westar35s_base: Rifle_Long_Base_F {
         class Scatter: UGL_F {
             class Single;
         };

@@ -11,6 +11,26 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
+        weapons[] = {
+            "3AS_Z95_Light_Cannon",
+            "CMFlareLauncher",
+            "Laserdesignator_pilotCamera"
+            };
+        magazines[] = {
+            "3AS_Z95_750Rnd_Light_shells",
+            "3AS_Z95_750Rnd_Light_shells",
+            "3AS_Z95_750Rnd_Light_shells",
+            "3AS_Z95_750Rnd_Light_shells",
+            "3AS_Z95_750Rnd_Light_shells",
+            "3AS_Z95_750Rnd_Light_shells",
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "Laserbatteries",
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "120Rnd_CMFlare_Chaff_Magazine"
+        };
+
         hiddenselections[] = {"camo","camo1","camo2"};
         hiddenSelectionsTextures[] = {"3AS\3AS_Z95\Data\orange_co.paa","3AS\3AS_Z95\Data\cockpit_co.paa","3AS\3AS_Z95\data\glass\glass_ca"};
 

@@ -9,14 +9,14 @@ class CfgSoundShaders {
     class CLASS(SoundShader_B2Rocket_Shot): CLASS(SoundShader_WeaponShot_Base) {
         range = 2200;
         samples[] = {
-            {"\SWLW_rework\sounds\launcher\PLX_shot.wss", 1, 1}
+            {"A3\Sounds_F\weapons\Launcher\rocket_launcher_5",1,1}
         };
     };
 
     class CLASS(SoundShader_B2GL_Shot): CLASS(SoundShader_WeaponShot_Base) {
         range = 2000;
         samples[] = {
-            {"\SWLW_rework\sounds\e-series\E5S_shot.wss", 1, 1}
+            {"\MRC\JLTS\weapons\E5\sounds\E5_fire.wss", 1, 1}
         };
     };
 };

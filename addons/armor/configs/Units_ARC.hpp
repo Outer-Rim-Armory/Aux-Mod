@@ -7,7 +7,7 @@ class CLASS(Unit_ARC_CT): CLASS(Unit_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\arc\CT_upper_co.paa),
         QPATHTOF(data\uniforms\arc\CT_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
@@ -25,7 +25,7 @@ class CLASS(Unit_ARC_NightShade): CLASS(Unit_ARC_CT) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\arc\NightShade_upper_co.paa),
         QPATHTOF(data\uniforms\arc\NightShade_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 };
 
@@ -36,6 +36,6 @@ class CLASS(Unit_ARC_Enlisted_CamoNight): CLASS(Unit_ARC_CT) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\arc\camo\night\CT_upper_co.paa),
         QPATHTOF(data\uniforms\arc\camo\night\CT_lower_co.paa),
-        "\ls_armor_bluefor\uniform\gar\phase2\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 };

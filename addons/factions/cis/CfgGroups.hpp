@@ -29,7 +29,6 @@ class CfgGroups {
         class Object9;
         class Object10;
         class Object11;
-        class Object12;
     };
 
     class East {

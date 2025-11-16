@@ -60,12 +60,15 @@ class CfgPatches {
             QCLASS(V19_RDF)
         };
         weapons[] = {
+            QCLASS(helmet_base),
+            QCLASS(uniform_base),
+            QCLASS(vest_base),
             QCLASS(rdfArmor_helmet),
             QCLASS(rdfArmor_helmet_marksman),
             QCLASS(rdfArmor_uniform),
             QCLASS(rdfArmor_vest_light),
             QCLASS(rdfArmor_vest_medium),
-            QCLASS(rdfArmor_vest_swat)
+            QCLASS(rdfArmor_vest_swat),
         };
         VERSION_CONFIG;
 

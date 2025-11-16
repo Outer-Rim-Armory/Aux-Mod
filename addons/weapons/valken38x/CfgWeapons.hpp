@@ -9,9 +9,6 @@ class CfgWeapons {
     };
     class LFP_Valken38x: arifle_MX_Base_F {
         class WeaponSlotsInfo: WeaponSlotsInfo {
-            class CowsSlot;
-            class PointerSlot;
-            class UnderBarrelSlot;
         };
 
         class Single: Mode_SemiAuto {
@@ -27,7 +24,7 @@ class CfgWeapons {
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_25Rnd_Valken38x),QCLASS(Mag_10Rnd_Valken38x_AP)};
+        magazines[] = {QCLASS(Mag_15Rnd_Valken38x),QCLASS(Mag_5Rnd_Valken38x_AP)};
         magazineWell[] = {};
 
         canShootInWater = TRUE;

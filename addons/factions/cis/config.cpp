@@ -13,7 +13,7 @@ class CfgPatches {
             "JLTS_characters_DroidArmor",
             "lsd_armor_redfor",
             "ls_armor_redfor",
-            "SWLB_radios"
+            "ls_radios"
         };
         units[] = {
             QCLASS(CIS_Unit_Base),
@@ -51,6 +51,7 @@ class CfgPatches {
             QCLASS(Unit_Droid_B1),
             QCLASS(Unit_Droid_B1_Commander),
             QCLASS(CIS_Unit_Droid_B2),
+            QCLASS(CIS_Unit_Droid_B2_Aqua),
             QCLASS(Unit_Droid_B2),
             QCLASS(Unit_Droid_B2_Commander),
             QCLASS(CIS_Unit_Droid_B2_Jetpack),
@@ -105,6 +106,7 @@ class CfgPatches {
             QCLASS(CIS_Uniform_Droid_B1_Commander_Geonosis),
             QCLASS(CIS_Uniform_Droid_B1_Training),
             QCLASS(CIS_Uniform_Droid_B2),
+            QCLASS(CIS_Uniform_Droid_B2_Aqua),
             QCLASS(Uniform_Droid_B2),
             QCLASS(Uniform_Droid_B2_Commander),
             QCLASS(CIS_Uniform_Droid_B2_Jetpack),

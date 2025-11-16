@@ -6,8 +6,8 @@ class CfgMagazines {
         displayNameShort = "Low Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 7<br/>Used In: Westar-35SA";
 
-        model = "\SWLW_clones\smgs\DC15s\DC15s_mag.p3d";
-        picture = "\SWLW_clones_spec\data\ui\DC15SA_mag_ui_ca.paa";
+        model = "\ls\core\addons\weapons_dcseries\dc17s\ls_magazine_dc17s.p3d";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westar35sa_mag_ui_ca.paa";
 
         ammo = QCLASS(Bullet_PlasmaPistol_Yellow);
         count = 7;

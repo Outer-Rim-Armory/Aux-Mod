@@ -14,7 +14,9 @@ class CfgPatches {
         weapons[] = {
             QCLASS(Z6_Base),
             QCLASS(Z6),
-            QCLASS(Z6_Fried)
+            QCLASS(Z6_Fried),
+            QCLASS(KC_Z6),
+            QCLASS(KC_Z6_Fried)
         };
     };
 };

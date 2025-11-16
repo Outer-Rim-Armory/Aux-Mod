@@ -2,12 +2,6 @@ class CfgWeapons {
     class LMG_Mk200_F;
     class JLTS_Z6: LMG_Mk200_F {
         class manual;
-        class Overcharge;
-        class close;
-        class medium;
-        class short;
-        class far_optic1;
-        class far_optic2;
     };
     class CLASS(Z6_Base): JLTS_Z6 {
         SCOPE_PRIVATE;
@@ -121,6 +115,28 @@ class CfgWeapons {
         SCOPE_HIDDEN;
 
         displayName = "[KC] Z-6 (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\Z6\data\ui\Z6_fried_ui_ca.paa";
+
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+    };
+
+    class CLASS(KC_Z6): CLASS(Z6_Base) {
+        SCOPE_PRIVATE;
+
+        displayName = "[KC] Custom Z-6";
+        baseWeapon = QCLASS(KC_Z6);
+        hiddenSelections[] = {"camo1","camo2"};
+        hiddenSelectionsTextures[] = {QPATHTOF(z6\data\textures\z6_1_co.paa),QPATHTOF(z6\data\textures\z6_2_co.paa)};
+
+        JLTS_friedItem = QCLASS(KC_Z6_Fried);
+    };
+
+    class CLASS(KC_Z6_Fried): CLASS(KC_Z6) {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] Custom Z-6 (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\Z6\data\ui\Z6_fried_ui_ca.paa";
 

@@ -448,7 +448,7 @@ class CfgWeapons {
 
         displayName = "[KC] Westar-M5 Long Scope";
         model = "\3AS\3AS_Weapons\WestarM5\3AS_Westar_Scope_F.p3d";
-        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_scope_ui.paa";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westarM5_scope_ui_ca.paa";
 
         class ItemInfo: ItemInfo {
             modelOptics = "\3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";

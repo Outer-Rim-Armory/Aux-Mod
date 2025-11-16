@@ -12,6 +12,7 @@ class CfgMagazines {
         ammo = QCLASS(Bullet_PlasmaSniper_Blue2);
         count = 15;
         mass = 10;
+        initSpeed = 2000;
     };
 
     class CLASS(Mag_15Rnd_773_Red): CLASS(Mag_Base) {
@@ -23,8 +24,9 @@ class CfgMagazines {
         model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
         picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
 
-        ammo = QCLASS(Bullet_PlasmaSniper_Red2773);
+        ammo = QCLASS(Bullet_PlasmaSniper_Red2);
         count = 15;
         mass = 10;
+        initSpeed = 2000;
     };
 };

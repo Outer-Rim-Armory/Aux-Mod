@@ -1,6 +1,6 @@
 class CfgWeapons {
-    class ls_redforUniform_base;
-    class CLASS(OPFOR_Uniform_Base): ls_redforUniform_base {
+    class ls_uniform_base;
+    class CLASS(OPFOR_Uniform_Base): ls_uniform_base {
         class ItemInfo;
     };
     class CLASS(CIS_Uniform_Base): CLASS(OPFOR_Uniform_Base) {
@@ -107,6 +107,7 @@ class CfgWeapons {
         SCOPE_PUBLIC;
 
         displayName = "[CIS] B2 Super Battle Droid";
+        uniformType = "Neopren";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(CIS_Unit_Droid_B2);
@@ -115,6 +116,22 @@ class CfgWeapons {
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_B2);
             type = "Standard";
+        };
+    };
+
+    class CLASS(CIS_Uniform_Droid_B2_Aqua): CLASS(CIS_Uniform_Droid_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[CIS] AquaB2 Super Battle Droid";
+        uniformType = "Neopren";
+
+        class ItemInfo: ItemInfo {
+            uniformClass = QCLASS(CIS_Unit_Droid_B2_Aqua);
+        };
+
+        class XtdGearInfo {
+            model = QCLASS(CIS_Uniforms_B2_);
+            type = "Aqua";
         };
     };
 
@@ -129,6 +146,7 @@ class CfgWeapons {
             uniformClass = QCLASS(Unit_Droid_B2);
         };
     };
+
 
     class CLASS(Uniform_Droid_B2_Commander): CLASS(CIS_Uniform_Droid_Base) {
         SCOPE_PUBLIC;
@@ -183,10 +201,6 @@ class CfgWeapons {
     class V_PlateCarrier1_rgr: Vest_NoCamo_Base {
         class ItemInfo: ItemInfo {
             class HitpointsProtectionInfo {
-                class Abdomen;
-                class Body;
-                class Chest;
-                class Diaphragm;
             };
         };
     };
@@ -214,8 +228,8 @@ class CfgWeapons {
             uniformClass = QCLASS(Unit_Droid_BX_Captain);
         };
     };
-    class ls_redforVest_base: V_PlateCarrier1_rgr {};
-    class CLASS(OPFOR_Vest_Base): ls_redforVest_base {};
+    class ls_vest_base: V_PlateCarrier1_rgr {};
+    class CLASS(OPFOR_Vest_Base): ls_vest_base {};
     class CLASS(CIS_Vest_Droid_BX): CLASS(OPFOR_Vest_Base) {
         SCOPE_PUBLIC;
 

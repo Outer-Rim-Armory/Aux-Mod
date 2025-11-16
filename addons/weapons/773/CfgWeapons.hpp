@@ -9,7 +9,6 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
-            class UnderBarrelSlot;
         };
 
         class Single: Mode_SemiAuto {
@@ -42,11 +41,6 @@ class CfgWeapons {
             class PointerSlot: PointerSlot {
                 class CompatibleItems {
                     ATTACHMENTS_POINTER_BASE;
-                };
-            };
-            class UnderBarrelSlot: UnderBarrelSlot {
-                class CompatibleItems {
-                    bipod_01_f_blk = TRUE;
                 };
             };
         };

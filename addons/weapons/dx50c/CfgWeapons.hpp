@@ -4,14 +4,14 @@ class CfgWeapons {
     class Rifle_Base_F;
     class arifle_MX_Base_F: Rifle_Base_F {
         class WeaponSlotsInfo;
+        class CowsSlot;
+        class PointerSlot;
         class Single;
-        class FullAuto;
     };
     class JLTS_EPL2: arifle_MX_Base_F {
         class WeaponSlotsInfo: WeaponSlotsInfo {
         };
         class Single: Single {
-            class StandardSound;
         };
     };
     class CLASS(DX50C_Base): JLTS_EPL2{
@@ -21,7 +21,7 @@ class CfgWeapons {
         picture = "\MRC\JLTS\weapons\EPL2\data\ui\EPL2_ui_ca.paa";
         model = "\MRC\JLTS\weapons\EPL2\EPL2.p3d";
         handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\EPL2\anims\EPL2_handanim.rtm"};
-        magazines[]={QCLASS(Mag_15Rnd_DX50C)};
+        magazines[]={QCLASS(Mag_20Rnd_DX50C)};
         modes[] = {"Single","AICQB","AIClose","AIMedium","AIFar"};
 
         class WeaponSlotsInfo: WeaponSlotsInfo {

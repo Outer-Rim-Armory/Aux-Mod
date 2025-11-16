@@ -11,6 +11,7 @@ class CfgPatches {
             QGVAR(accessories),
             "SWLW_clones_spec",
             "JLTS_weapons_DC17SA",
+            "ls_weapons_dcSeries",
             "ace_laserpointer"
         };
         units[] = {};

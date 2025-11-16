@@ -1,9 +1,9 @@
 class CfgWeapons {
-    class Pistol_Base_F;
-    class SWLW_DC15SA: Pistol_Base_F {
+    class ls_weapon_dc15sa_base;
+    class ls_weapon_dc15sa: ls_weapon_dc15sa_base {
         class Single;
     };
-    class CLASS(DC15SA_Base): SWLW_DC15SA {
+    class CLASS(DC15SA_Base): ls_weapon_dc15sa {
         SCOPE_PRIVATE;
         author = AUTHOR;
 

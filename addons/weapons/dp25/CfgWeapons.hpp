@@ -9,7 +9,6 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
-            class UnderBarrelSlot;
         };
         class Single: Mode_SemiAuto {
             class StandardSound;
@@ -25,7 +24,7 @@ class CfgWeapons {
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_12Rnd_DP25), QCLASS(Mag_12Rnd_DP25_SLUG), QCLASS(Mag_20Rnd_DP25_HP), QCLASS(Mag_8Rnd_DP25_HE), QCLASS(Mag_4Rnd_DP25_Flame)};
+        magazines[] = {QCLASS(Mag_12Rnd_DP25), QCLASS(Mag_12Rnd_DP25_SLUG), QCLASS(Mag_20Rnd_DP25_HP), QCLASS(Mag_8Rnd_DP25_HE)};
         magazineWell[] = {};
 
         canShootInWater = TRUE;

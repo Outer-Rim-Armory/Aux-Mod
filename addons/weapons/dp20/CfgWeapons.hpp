@@ -1,11 +1,11 @@
 class Mode_SemiAuto;
 
 class CfgWeapons {
-    class Rifle_Base_F;
-    class arifle_MX_Base_F: Rifle_Base_F {
+    class ls_rifle_base;
+    class ls_weapon_dp20_base: ls_rifle_base {
         class WeaponSlotsInfo;
     };
-    class SWLW_DP20: arifle_MX_Base_F {
+    class ls_weapon_dp20: ls_weapon_dp20_base {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
@@ -15,7 +15,7 @@ class CfgWeapons {
             class StandardSound;
         };
     };
-    class CLASS(DP20_Base): SWLW_DP20 {
+    class CLASS(DP20_Base): ls_weapon_dp20 {
         SCOPE_PRIVATE;
         author = AUTHOR;
 

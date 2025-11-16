@@ -1,7 +1,6 @@
 class CfgVehicles {
     class Plane_Fighter_03_dynamicLoadout_base_F;
     class 3AS_ARC_170_Base: Plane_Fighter_03_dynamicLoadout_base_F {
-        class ACE_Actions;
         class ACE_SelfActions;
         class UserActions;
         class Turrets {
@@ -30,13 +29,16 @@ class CfgVehicles {
         ls_vehicle_SFoilsAnims[] = {"SFoil"};
         ls_vehicle_SFoilsToggleSounds[] = {QCLASS(Sound_ARC170_SFoils_Toggle), QCLASS(Sound_ARC170_SFoils_Toggle)};
 
-        weapons[] = {QCLASS(Cannon_ARC), "ls_weapon_CMFlareLauncher", "Laserdesignator_pilotCamera"};
+        weapons[] = {QCLASS(Cannon_ARC),"CMFlareLauncher","Laserdesignator_pilotCamera"};
         magazines[] = {
             "3AS_ARC_500Rnd_Light_Shells",
             "3AS_ARC_500Rnd_Light_Shells",
-            "ls_mag_240Rnd_CMFlareChaff_blue",
-            "ls_mag_240Rnd_CMFlareChaff_blue",
-            "Laserbatteries"
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "Laserbatteries",
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "120Rnd_CMFlare_Chaff_Magazine",
+            "120Rnd_CMFlare_Chaff_Magazine"
         };
 
         hiddenSelectionsTextures[] = {

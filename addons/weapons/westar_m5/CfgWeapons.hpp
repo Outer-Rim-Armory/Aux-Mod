@@ -29,7 +29,7 @@ class CfgWeapons {
 
         displayName = "[KC] Westar-M5 (Base)";
         descriptionShort = "Blaster Rifle";
-        picture = "\SWLW_clones\smgs\westar_m5\data\ui\WestarM5_ui.paa";
+        picture = "\ls\core\addons\weapons_westar\data\ui\westarM5_ui_ca.paa";
         baseWeapon = QCLASS(WestarM5_Base);
 
         modes[] = {"Single", "Burst", "FullAuto"};

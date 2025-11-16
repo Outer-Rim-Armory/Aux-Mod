@@ -209,7 +209,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(Aux501_Weapons_Mags_Thermal_Imploder,5);
         };
     };
 
@@ -232,7 +232,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(Aux501_Weapons_Mags_Thermal_Imploder,5);
         };
     };
     class CLASS(TU_Backpack_Heavy_Predef_AA): CLASS(TU_Backpack_Heavy) {
@@ -244,7 +244,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(Aux501_Weapons_Mags_Thermal_Imploder,5);
         };
     };
     class CLASS(TU_Backpack_Predef_Sniper): CLASS(TU_Backpack) {
@@ -255,7 +255,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(Aux501_Weapons_Mags_Thermal_Imploder,5);
         };
     };
 
@@ -276,7 +276,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(Aux501_Weapons_Mags_Thermal_Imploder,5);
         };
     };
     class CLASS(TU_Backpack_Assault_Predef_Medium): CLASS(TU_Backpack_Assault_Predef_Heavy) {
@@ -285,7 +285,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(Aux501_Weapons_Mags_Thermal_Imploder,5);
         };
     };
     class CLASS(TU_Backpack_Assault_Predef_Z6): CLASS(TU_Backpack_Assault) {
@@ -296,7 +296,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(Aux501_Weapons_Mags_Thermal_Imploder,5);
         };
     };
 
@@ -324,7 +324,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(Aux501_Weapons_Mags_Thermal_Imploder,5);
         };
     };
 
@@ -368,7 +368,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(Aux501_Weapons_Mags_Thermal_Imploder,5);
         };
     };
 
@@ -381,7 +381,7 @@ class CfgVehicles {
             MAG_XX(SC_IG3,2);
             MAG_XX(SmokeShell,2);
             MAG_XX(ShieldGrenade_Mag,2);
-            MAG_XX(JMSLLTE_thermalimploder_HandGrenade,5);
+            MAG_XX(Aux501_Weapons_Mags_Thermal_Imploder,5);
         };
     };
 

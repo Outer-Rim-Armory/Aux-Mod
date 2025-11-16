@@ -5,27 +5,27 @@ class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base) {
     icon = "iconManOfficer";
 
     uniformClass = QCLASS(Uniform_Jedi_Knight);
-    model = "\lsd_armor_bluefor\uniform\gar\jediCommander\lsd_gar_jediCommander_uniform.p3d";
+    model = "\ls\core\addons\characters_clone\uniforms\jediCommander\ls_uniform_jediCommander.p3d";
     hiddenSelections[] = {"armor_camo", "robe_camo", "belt_camo", "under_camo"};
     hiddenSelectionsTextures[] = {
-        "\lsd_armor_bluefor\uniform\gar\jediCommander\data\armor_co.paa",
-        "\lsd_armor_bluefor\uniform\gar\jediCommander\data\robes_co.paa",
-        "\lsd_armor_bluefor\uniform\gar\jediCommander\data\belt_co.paa",
-        "\lsd_armor_bluefor\uniform\gar\jediCommander\data\undersuit_co.paa"
+        "\ls\core\addons\characters_clone\uniforms\jediCommander\data\armor_co.paa",
+        "\ls\core\addons\characters_clone\uniforms\jediCommander\data\robes_co.paa",
+        "\ls\core\addons\characters_clone\uniforms\jediCommander\data\belt_co.paa",
+        "\ls\core\addons\characters_clone\uniforms\jediCommander\data\undersuit_co.paa"
     };
 
     // Inventory
     weapons[] = {
         "",
         "",
-        "SWLB_clone_binocular",
+        "ls_clone_electrobinoculars",
         "Throw",
         "Put"
     };
     respawnWeapons[] = {
         "",
         "",
-        "SWLB_clone_binocular",
+        "ls_clone_electrobinoculars",
         "Throw",
         "Put"
     };
@@ -34,8 +34,8 @@ class CLASS(Unit_Jedi_Knight): CLASS(Unit_Base) {
     items[] = {};
     respawnItems[] = {};
 
-    linkedItems[] = {QCLASS(Vest_Jedi), "SWLB_comlink", LINKED_ITEMS};
-    respawnLinkedItems[] = {QCLASS(Vest_Jedi), "SWLB_comlink", LINKED_ITEMS};
+    linkedItems[] = {QCLASS(Vest_Jedi), "ls_radios_cwp8", LINKED_ITEMS};
+    respawnLinkedItems[] = {QCLASS(Vest_Jedi), "ls_radios_cwp8", LINKED_ITEMS};
     backpack = QCLASS(Backpack_Radio_Invis);
 };
 
@@ -49,14 +49,14 @@ class CLASS(Unit_Jedi_Commander): CLASS(Unit_Jedi_Knight) {
     weapons[] = {
         "",
         "",
-        "SWLB_clone_commander_binocular",
+        "ls_clone_electrobinocularsCommander",
         "Throw",
         "Put"
     };
     respawnWeapons[] = {
         "",
         "",
-        "SWLB_clone_commander_binocular",
+        "ls_clone_electrobinocularsCommander",
         "Throw",
         "Put"
     };

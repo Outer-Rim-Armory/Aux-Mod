@@ -19,7 +19,7 @@ class CLASS(Uniform_Burnt_Worn): CLASS(Uniform_Burnt) {
     };
 };
 
-
+UNIFORM_CUSTOM(Calvin);
 UNIFORM_CUSTOM(Catholic);
 UNIFORM_CUSTOM(Cutthroat);
 UNIFORM_CUSTOM(Defter);
@@ -108,6 +108,7 @@ class CLASS(Uniform_Keeli_Geo): CLASS(Uniform_Keeli) {
     };
 };
 
+UNIFORM_CUSTOM(Kujo);
 UNIFORM_CUSTOM(Leon);
 UNIFORM_CUSTOM(Rat);
 UNIFORM_CUSTOM(Rev);

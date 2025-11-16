@@ -21,7 +21,6 @@ class CfgWeapons {
         class FullAuto: Mode_FullAuto {
             class StandardSound;
         };
-        class Stun;
     };
     class CLASS(DC15S_Base): JLTS_DC15S {
         SCOPE_PRIVATE;

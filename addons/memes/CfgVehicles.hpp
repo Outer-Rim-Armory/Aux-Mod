@@ -19,4 +19,6 @@ class CfgVehicles {
         EGVAR(jetpacks,fuel) = 50;
         EGVAR(jetpacks,speed) = 380;
     };
+
+
 };
