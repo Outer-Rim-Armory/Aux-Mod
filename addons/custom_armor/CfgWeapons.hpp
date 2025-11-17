@@ -244,6 +244,19 @@ class CfgWeapons {
 
         GVAR(isCustom) = TRUE;
     };
+
+    class CLASS(Vest_MedicPlatoon);
+    class CLASS(cloneVest_medic_Sogi): CLASS(Vest_MedicPlatoon) {
+        displayName = "[KC] MED Vest ('Sogi')";
+        hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\sogi\Medic_camo1_co.paa),   // Heavy Bag / Strap
+        QPATHTOF(data\vests\sogi\Medic_camo2_co.paa), // Kama
+        "",                                                       // Ammo
+        QPATHTOF(data\vests\sogi\Medic_camo1_co.paa)    // Pauldron
+    };
+
+        GVAR(isCustom) = TRUE;
+    };
     class CLASS(cloneNvg_phase2_officerVisor);
     class CLASS(cloneNvg_phase2_officerVisor_Keeli): CLASS(cloneNvg_phase2_officerVisor) {
         displayName = "[KC] Clone P2 NV/TI Officer Visor ('Keeli')";
@@ -265,6 +278,16 @@ class CfgWeapons {
         displayName = "[KC] Clone P2 NV/TI Officer Visor ('Keeli') ('Empire')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\nvgs\Officer_Keeli_Empire_camo1_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+    class CLASS(cloneNvg_commandoVisor);
+    class CLASS(cloneNvg_commandoVisor_Moskoni): CLASS(cloneNvg_commandoVisor) {
+        displayName = "[KC] Clone Commando NV/TI Visor ('Moskoni')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Moskoni_camo1_co.paa),
+            QPATHTOF(data\nvgs\Moskoni_camo1_co.paa)
         };
 
         GVAR(isCustom) = TRUE;
@@ -331,6 +354,12 @@ class CLASS(Vest_Jaws): CLASS(Vest_CS) {
         displayName = "[KC] SF Commando Tech Vest ('Cutthroat')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\uniforms\commando\Cutthroat_lower_co.paa)
+        };
+    };
+    class CLASS(Moskoni_RC_Vest): CLASS(cloneCommando_Tech_vest) {
+        displayName = "[KC] SF Commando Tech Vest ('Moskoni')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\moskoni\Moskoni_co.paa)
         };
     };
 };

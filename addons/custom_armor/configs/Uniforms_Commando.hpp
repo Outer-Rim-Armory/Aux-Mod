@@ -12,3 +12,4 @@ class CLASS(Uniform_RC_Jaws_Worn): CLASS(Commando_Uniform_Base) {
     };
 };
 UNIFORM_RC_CUSTOM(Cutthroat);
+UNIFORM_RC_CUSTOM(Moskoni);

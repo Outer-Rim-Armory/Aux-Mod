@@ -1,4 +1,4 @@
-class CLASS(Helmet_Phase1_Tanker_Base): CLASS(cloneHelmet_base) {
+class CLASS(Helmet_Phase1_ARMR_Base): CLASS(cloneHelmet_base) {
     SCOPE_PUBLIC;
 
     displayName = "[KC] ARMR P1 Helm 00 (Base)";
@@ -22,35 +22,35 @@ class CLASS(Helmet_Phase1_Tanker_Base): CLASS(cloneHelmet_base) {
     };
 };
 
-class CLASS(Helmet_Phase1_Tanker_CT): CLASS(Helmet_Phase1_Tanker_Base) {
+class CLASS(Helmet_Phase1_ARMR_CT): CLASS(Helmet_Phase1_ARMR_Base) {
     displayName = "[KC] ARMR P1 Helm 01 (Trooper)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1SpecOp\CT_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
     };
 };
-class CLASS(Helmet_Phase1_Tanker_SCT): CLASS(Helmet_Phase1_Tanker_CT) {
+class CLASS(Helmet_Phase1_ARMR_SCT): CLASS(Helmet_Phase1_ARMR_CT) {
     displayName = "[KC] ARMR P1 Helm 02 (Senior Trooper)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1SpecOp\SCT_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
     };
 };
-class CLASS(Helmet_Phase1_Tanker_VCT): CLASS(Helmet_Phase1_Tanker_CT) {
+class CLASS(Helmet_Phase1_ARMR_VCT): CLASS(Helmet_Phase1_ARMR_CT) {
     displayName = "[KC] ARMR P1 Helm 03 (Veteran Trooper)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1SpecOp\VCT_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
     };
 };
-class CLASS(Helmet_Phase1_Tanker_NCO): CLASS(Helmet_Phase1_Tanker_CT) {
+class CLASS(Helmet_Phase1_ARMR_NCO): CLASS(Helmet_Phase1_ARMR_CT) {
     displayName = "[KC] ARMR P1 Helm 04 (NCO)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1SpecOp\NCO_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
     };
 };
-class CLASS(Helmet_Phase1_Tanker_Officer): CLASS(Helmet_Phase1_Tanker_CT) {
+class CLASS(Helmet_Phase1_ARMR_Officer): CLASS(Helmet_Phase1_ARMR_CT) {
     displayName = "[KC] ARMR P1 Helm 05 (Officer)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1SpecOp\Officer_camo1_co.paa),

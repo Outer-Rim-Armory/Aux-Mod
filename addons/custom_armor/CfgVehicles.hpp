@@ -106,7 +106,7 @@ class CfgVehicles {
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\Jaws\Jaws_Backpack_co.paa),
-            QPATHTOF(data\backpacks\Jaws\Jaws_Backpack_co.paa)
+            QPATHTOF(data\backpacks\Jaws\Jaws_Backpack_EOD_co.paa)
         };
     };
     class CLASS(Jaws_Worn_Backpack): CLASS(cloneBackpack_commando_EOD) {
@@ -114,7 +114,7 @@ class CfgVehicles {
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\Jaws\Jaws_Worn_Backpack_co.paa),
-            QPATHTOF(data\backpacks\Jaws\Jaws_Worn_Backpack_co.paa)
+            QPATHTOF(data\backpacks\Jaws\Jaws_Worn_Backpack_EOD_co.paa)
         };
     };
     class CLASS(Cutthroat_Backpack): CLASS(cloneBackpack_commando_Tech) {
@@ -124,6 +124,15 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\Cutthroat\Cutthroat_Backpack_co.paa),
             QPATHTOF(data\backpacks\Cutthroat\Cutthroat_Backpack_co.paa),
             QPATHTOF(data\backpacks\Cutthroat\Cutthroat_Tech_Backpack_co.paa)
+        };
+    };
+    class CLASS(Moskoni_Backpack): CLASS(cloneBackpack_commando_Tech) {
+        displayName = "[KC] Moskoni Commando Backpack";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Moskoni\Moskoni_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Moskoni\Moskoni_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Moskoni\Moskoni_Tech_co.paa)
         };
     };
 

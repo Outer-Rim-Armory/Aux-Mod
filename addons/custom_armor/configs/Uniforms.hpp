@@ -118,6 +118,18 @@ UNIFORM_CUSTOM(Splashdown);
 UNIFORM_CUSTOM(Star);
 UNIFORM_CUSTOM(Swoop);
 UNIFORM_CUSTOM(Talyn);
+UNIFORM_CUSTOM(Tanker);
+class CLASS(Uniform_Tanker_Worn): CLASS(Uniform_Tanker) {
+    SCOPE_PUBLIC;
+    displayName = "[KC] Custom Armor ('Tanker') - Worn";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Tanker_Worn);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
 UNIFORM_CUSTOM(Tugz);
 UNIFORM_CUSTOM(Tyrant);
 UNIFORM_CUSTOM(Weenie);

@@ -392,6 +392,7 @@ class CfgPatches {
             QCLASS(Vest_Officer_Rat),
             QCLASS(Vest_Kama_Rat),
             QCLASS(cloneVest_heavy_Dexus),
+            QCLASS(cloneVest_medic_Sogi),
             QCLASS(Vest_WO_Howzer),
             QCLASS(cloneNvg_phase2_officerVisor_Keeli),
             QCLASS(cloneNvg_phase2_officerVisor_Keeli_Worn)

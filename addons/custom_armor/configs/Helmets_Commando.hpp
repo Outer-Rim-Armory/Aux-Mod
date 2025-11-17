@@ -9,3 +9,4 @@ class CLASS(Helmet_RC_Jaws_Worn): CLASS(cloneCommando_helmet) {
     };
 };
 RC_HELMET_CUSTOM(Cutthroat);
+RC_HELMET_CUSTOM(Moskoni);
