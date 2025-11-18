@@ -509,7 +509,7 @@ class CfgVehicles {
 
         side = OPFOR;
         faction = QFACTION(TU);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_TU);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_TU);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
@@ -531,11 +531,11 @@ class CfgVehicles {
 
         side = OPFOR;
         faction = QFACTION(TU);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_TU);
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_TU);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
-        hiddenSelections[] = {"camo1","camo2","camo3","camoGlass","camoGlassPilot","camoDecal","attach_gun","attach_sideguns"};
+        hiddenSelections[] = {"camo1","camo2","camo3","camoGlass","camoGlassPilot","camoDecal"};
         hiddenSelectionsTextures[] = {
             QPATHTOEF(vehicles,air\vespoid\data\textures\TU_Falcon_Main_co.paa),
             QPATHTOEF(vehicles,air\vespoid\data\textures\TU_Falcon_Attachments_co.paa),

@@ -19,7 +19,7 @@ class CfgVehicles {
         armor = 200;
         fuelCapacity = 3000;
         fuelConsumptionRate = 0.12;
-        showCrewAim = 1+2+4;
+
         vehicleClass = "Air";
 
         weapons[] = {
@@ -107,7 +107,6 @@ class CfgVehicles {
         SCOPE_PUBLIC;
         displayName = "Gozanti";
 
-
         class Turrets: Turrets {
             class MainTurret: MainTurret {
                 weapons[] = {
@@ -121,11 +120,13 @@ class CfgVehicles {
             };
             class MainTurretRear: MainTurretRear {
                 weapons[] = {
-                    QCLASS(MachineGun_Gozanti_AA)
+                    "3AS_RX_ParticleBeamCannon"
                 };
                 magazines[] = {
-                    QCLASS(Mag_2000rnd_Gozanti_AA),
-                    QCLASS(Mag_2000rnd_Gozanti_AA)
+                    "3AS_Laser_Battery_RX_F",
+                    "3AS_Laser_Battery_RX_F",
+                    "3AS_Laser_Battery_RX_F",
+                    "3AS_Laser_Battery_RX_F"
                 };
             };
             class MainTurretUnder: MainTurretUnder {

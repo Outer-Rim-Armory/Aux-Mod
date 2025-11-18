@@ -11,8 +11,7 @@ class ACEX_Fortify_Presets {
             QGVAR(common),
             QGVAR(mines),
             QGVAR(fob),
-            QGVAR(camouflage),
-            QGVAR(weapons)
+            QGVAR(camouflage)
         };
     };
 

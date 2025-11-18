@@ -112,11 +112,4 @@ class CfgAmmo {
     class CLASS(Shell_Mortar_SmokeRed_Submunition): SmokeShellArty {
         effectsSmoke = QCLASS(Effects_Mortar_SmokeShellRed);
     };
-
-    class 3AS_laserAmmo_RX_F;
-    class CLASS(Laser_AntiAir_RX200): 3AS_laserAmmo_RX_F {
-        caliber=12; // default 6 gozanti is 18
-        explosive=0.6;
-        aiAmmoUsageFlags="128 + 256";
-    };
 };

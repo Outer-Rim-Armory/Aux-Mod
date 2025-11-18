@@ -1,0 +1,34 @@
+{
+    "compress": {
+        "exclude": [
+        ],
+        "include": [
+        ]
+    },
+    "headers": [
+        {
+            "name": "prefix",
+            "value": "ORA\\BNA_KC\\addons\\music"
+        },
+        {
+            "name": "hemtt",
+            "value": "1.17.2"
+        },
+        {
+            "name": "version",
+            "value": "2.54.0.0"
+        },
+        {
+            "name": "git",
+            "value": "11c6eddd2646a5eda042cc7b7670365c3e5f2c71"
+        },
+        {
+            "name": "url",
+            "value": "https://github.com/Outer-Rim-Armory/Aux-Mod"
+        },
+        {
+            "name": "author",
+            "value": "Keeli Company Aux Team"
+        }
+    ]
+}

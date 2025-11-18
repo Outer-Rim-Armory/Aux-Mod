@@ -21,6 +21,7 @@ class CLASS(Uniform_Burnt_Worn): CLASS(Uniform_Burnt) {
 
 UNIFORM_CUSTOM(Calvin);
 UNIFORM_CUSTOM(Catholic);
+UNIFORM_CUSTOM(Cough);
 UNIFORM_CUSTOM(Cutthroat);
 UNIFORM_CUSTOM(Defter);
 UNIFORM_CUSTOM(Dexus);
@@ -37,6 +38,8 @@ UNIFORM_CUSTOM(Drake);
 //    };
 //};
 
+UNIFORM_CUSTOM(Evo);
+UNIFORM_CUSTOM(Grey);
 UNIFORM_CUSTOM(Hagrid);
 UNIFORM_CUSTOM(Harry);
 UNIFORM_CUSTOM(Henkie);
@@ -118,13 +121,12 @@ UNIFORM_CUSTOM(Splashdown);
 UNIFORM_CUSTOM(Star);
 UNIFORM_CUSTOM(Swoop);
 UNIFORM_CUSTOM(Talyn);
-UNIFORM_CUSTOM(Tanker);
-class CLASS(Uniform_Tanker_Worn): CLASS(Uniform_Tanker) {
-    SCOPE_PUBLIC;
+UNIFORM_CUSTOM(Tankers);
+class CLASS(Uniform_Tankers_Worn): CLASS(Uniform_Tankers) {
     displayName = "[KC] Custom Armor ('Tanker') - Worn";
 
     class ItemInfo: ItemInfo {
-        uniformClass = QCLASS(Unit_Tanker_Worn);
+        uniformClass = QCLASS(Unit_Tankers_Worn);
     };
     class XtdGearInfo: XtdGearInfo {
         camo = "Worn";

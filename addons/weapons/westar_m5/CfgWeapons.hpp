@@ -54,11 +54,16 @@ class CfgWeapons {
                     ATTACHMENTS_OPTIC_MEDIUM;
                     ATTACHMENTS_OPTIC_LONG;
                     ATTACHMENTS_OPTIC_SIGHTS;
+                    3AS_Imp_Optic_1 = TRUE;
+                    3AS_Imp_Optic_2 = TRUE;
+                    3AS_Imp_Optic_3 = TRUE;
+                    3AS_Imp_Optic_4 = TRUE;
                 };
             };
             class PointerSlot: PointerSlot {
                 class CompatibleItems {
                     ATTACHMENTS_POINTER_BASE;
+
                 };
             };
         };
@@ -71,6 +76,12 @@ class CfgWeapons {
         };
 
         class Single: Single {
+            maxRange = 450;
+            maxRangeProbab = 0.3;
+            midRange = 250;
+            midRangeProbab = 0.7;
+            minRange = 2;
+            minRangeProbab = 0.5;
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_WestarM5Shot)};
@@ -78,6 +89,12 @@ class CfgWeapons {
             };
         };
         class Burst: Burst {
+            maxRange = 450;
+            maxRangeProbab = 0.3;
+            midRange = 250;
+            midRangeProbab = 0.7;
+            minRange = 2;
+            minRangeProbab = 0.5;
             sounds[] = {"StandardSound"};
             class StandardSound: StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_WestarM5Shot)};
@@ -85,6 +102,12 @@ class CfgWeapons {
             };
         };
         class FullAuto: FullAuto {
+            maxRange = 450;
+            maxRangeProbab = 0.3;
+            midRange = 250;
+            midRangeProbab = 0.7;
+            minRange = 2;
+            minRangeProbab = 0.5;
             sounds[] = {"StandardSound"};
             aiRateOfFire = 2;
             class StandardSound: StandardSound {

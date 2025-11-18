@@ -13,7 +13,7 @@ class CfgWeapons {
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_1Rnd_RPS7_AT), QCLASS(Mag_1Rnd_RPS7_HE), "Aux12thFleet_Mag_RPS7_AT", "Aux12thFleet_Mag_RPS7_HE"};
+        magazines[] = {QCLASS(Mag_1Rnd_RPS7_AT)};
         magazineWell[] = {};
 
         modelOptics = "\ls\core\addons\weapons_rps\ls_optic_rps6.p3d";

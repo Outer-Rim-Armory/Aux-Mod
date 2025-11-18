@@ -740,32 +740,32 @@ class CLASS(Unit_Talyn): CLASS(Unit_Phase2_Base) {
     };
 };
 
-class CLASS(Unit_Tanker): CLASS(Unit_Phase2_Base) {
+class CLASS(Unit_Tankers): CLASS(Unit_Phase2_Base) {
     displayName = "Tanker";
 
     editorSubcategory = QEDSUBCAT(Customs);
-    editorPreview = EDITOR_PREVIEW(Unit_Tanker);
+    editorPreview = EDITOR_PREVIEW(Unit_Tankers);
 
-    uniformClass = QCLASS(Uniform_Tanker);
+    uniformClass = QCLASS(Uniform_Tankers);
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\uniforms\standard\Tanker_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\Tanker_lower_co.paa),
+        QPATHTOF(data\uniforms\standard\Tankers_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Tankers_lower_co.paa),
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_ARF_Tanker), QCLASS(Vest_Basic), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARF_Tanker), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_ARF_Tanker), QCLASS(Vest_Basic), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARF_Tanker), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
-class CLASS(Unit_Tanker_Worn): CLASS(Unit_Tanker) {
+class CLASS(Unit_Tankers_Worn): CLASS(Unit_Phase2_Base) {
     SCOPE_HIDDEN;
-    uniformClass = QCLASS(Uniform_Tanker_Worn);
+    uniformClass = QCLASS(Uniform_Tankers_Worn);
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\uniforms\standard\camo\worn\Tanker_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\camo\worn\Tanker_lower_co.paa),
+        QPATHTOF(data\uniforms\standard\camo\worn\Tankers_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\camo\worn\Tankers_lower_co.paa),
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 };
@@ -974,10 +974,10 @@ class CLASS(Unit_RC_Moskoni): CLASS(cloneCommando_unit_base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_RC_Moskoni), QCLASS(Moskoni_RC_Vest), QCLASS(cloneNvg_commandoVisor_Moskoni), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_RC_Moskoni), QCLASS(Moskoni_RC_Vest), QCLASS(Moskoni_NVG), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_RC_Moskoni), QCLASS(Moskoni_RC_Vest), QCLASS(cloneNvg_commandoVisor_Moskoni), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_RC_Moskoni), QCLASS(Moskoni_RC_Vest), QCLASS(Moskoni_NVG), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
     };
     backpack = QCLASS(Moskoni_Backpack);
 };

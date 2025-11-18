@@ -283,14 +283,14 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
     };
     class CLASS(cloneNvg_commandoVisor);
-    class CLASS(cloneNvg_commandoVisor_Moskoni): CLASS(cloneNvg_commandoVisor) {
-        displayName = "[KC] Clone Commando NV/TI Visor ('Moskoni')";
+    class CLASS(Moskoni_NVG): CLASS(cloneNvg_commandoVisor) {
+        displayName = "[KC] Moskoni NVG";
+        hiddenSelections[] = {"illum", "camo1"};
+        hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\nvgs\Moskoni_camo1_co.paa),
             QPATHTOF(data\nvgs\Moskoni_camo1_co.paa)
         };
-
-        GVAR(isCustom) = TRUE;
     };
 
 class CLASS(Vest_CS) ;

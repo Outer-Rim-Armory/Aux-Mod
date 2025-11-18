@@ -9,11 +9,11 @@ ARF_HELMET_CUSTOM(Seeger);
 ARF_HELMET_VISOR_CUSTOM(Sogi,Plasma);
 ARF_HELMET_CUSTOM(Stormz);
 ARF_HELMET_VISOR_CUSTOM(Tanker,Bacta);
-class CLASS(Helmet_ARF_Tanker_Worn): CLASS(Helmet_ARF_Base) {
-    SCOPE_PUBLIC;
+class CLASS(Helmet_ARF_Tanker_Worn): CLASS(Helmet_ARF_Tanker) {
     displayName = "[KC] SF ARF Helm ('Tanker') - Worn";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arf\camo\worn\Tanker_camo1_co.paa),
+        "",
         "\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
     };
 
@@ -24,6 +24,7 @@ class CLASS(Helmet_ARF_TankerBacta_Worn): CLASS(Helmet_ARF_Tanker_Worn) {
     SCOPE_HIDDEN;
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arf\camo\worn\Tanker_camo1_co.paa),
+        "",
         QPATHTOF(data\visors\Bacta_ARF_visor_co.paa)
     };
     hiddenSelectionsMaterials[] = {

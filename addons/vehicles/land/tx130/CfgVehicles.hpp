@@ -34,7 +34,7 @@ class CfgVehicles {
             QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_co.paa)
         };
 
-        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 1, "CamoGrey", 0};
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 0, "CamoGrey", 0};
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -103,11 +103,11 @@ class CfgVehicles {
         ace_cargo_space = 3;
 
         hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Saber\data\Saber_hull_co.paa",
-            "\3AS\3AS_Saber\data\Saber_weapons_scout_co.paa"
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_Scout_co.paa)
         };
 
-        textureList[] = {"Standard", 1, "Imperial", 0, "Grey", 0};
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 0, "CamoGrey", 0, "Grey", 0};
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -136,28 +136,28 @@ class CfgVehicles {
                 };
             };
 
-            // class KeeliCompany: Standard {
-            //     author = AUTHOR;
-            //     displayName = "Keeli Company";
-            //     textures[] = {
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_GMG_co.paa)
-            //     };
-            // };
-            // class KeeliCompanyWhite: KeeliCompany {
-            //     displayName = "Keeli Company (White)";
-            //     textures[] = {
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Hull_co.paa),
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Weapons_GMG_co.paa)
-            //     };
-            // };
-            // class CamoGrey: KeeliCompany {
-            //     displayName = "Grey Camo";
-            //     textures[] = {
-            //         QPATHTOF(land\tx130\data\textures\CamoGrey\Hull_co.paa),
-            //         QPATHTOF(land\tx130\data\textures\CamoGrey\Weapons_GMG_co.paa)
-            //     };
-            // };
+            class KeeliCompany: Standard {
+                author = AUTHOR;
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_Scout_co.paa)
+                };
+            };
+            class KeeliCompanyWhite: KeeliCompany {
+                displayName = "Keeli Company (White)";
+                textures[] = {
+                    QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Weapons_Scout_co.paa)
+                };
+            };
+            class CamoGrey: KeeliCompany {
+                displayName = "Grey Camo";
+                textures[] = {
+                    QPATHTOF(land\tx130\data\textures\CamoGrey\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\CamoGrey\Weapons_Scout_co.paa)
+                };
+            };
         };
 
         INVENTORY_VEHICLE_BASE(3);
@@ -187,11 +187,11 @@ class CfgVehicles {
         ace_cargo_space = 3;
 
         hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Saber\data\Saber_hull_co.paa",
-            "\3AS\3AS_Saber\data\Saber_weaponsgmg_co.paa"
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_co.paa)
         };
 
-        textureList[] = {"Standard", 1, "Imperial", 0/*, "KeeliCompany", 1, "KeeliCompanyWhite", 1, "CamoGrey", 0*/};
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 0, "CamoGrey", 0};
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -209,28 +209,28 @@ class CfgVehicles {
                     "\3AS\3AS_Saber\data\Saber_weaponsgmg_Imp_co.paa"
                 };
             };
-            // class KeeliCompany: Standard {
-            //     author = AUTHOR;
-            //     displayName = "Keeli Company";
-            //     textures[] = {
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_Scout_co.paa)
-            //     };
-            // };
-            // class KeeliCompanyWhite: KeeliCompany {
-            //     displayName = "Keeli Company (White)";
-            //     textures[] = {
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Hull_co.paa),
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Weapons_Scout_co.paa)
-            //     };
-            // };
-            // class CamoGrey: KeeliCompany {
-            //     displayName = "Grey Camo";
-            //     textures[] = {
-            //         QPATHTOF(land\tx130\data\textures\CamoGrey\Hull_co.paa),
-            //         QPATHTOF(land\tx130\data\textures\CamoGrey\Weapons_Scout_co.paa)
-            //     };
-            // };
+            class KeeliCompany: Standard {
+                author = AUTHOR;
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_co.paa)
+                };
+            };
+            class KeeliCompanyWhite: KeeliCompany {
+                displayName = "Keeli Company (White)";
+                textures[] = {
+                    QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Weapons_co.paa)
+                };
+            };
+            class CamoGrey: KeeliCompany {
+                displayName = "Grey Camo";
+                textures[] = {
+                    QPATHTOF(land\tx130\data\textures\CamoGrey\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\CamoGrey\Weapons_co.paa)
+                };
+            };
         };
 
         INVENTORY_VEHICLE_BASE(3);
@@ -264,7 +264,7 @@ class CfgVehicles {
             QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_co.paa)
         };
 
-        textureList[] = {"Standard", 1, "Imperial", 0/*, "KeeliCompany", 1, "KeeliCompanyWhite", 1, "CamoGrey", 0*/};
+        textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 0, "CamoGrey", 0};
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -282,28 +282,28 @@ class CfgVehicles {
                     "\3AS\3AS_Saber\data\saber_Imp_weapons_co.paa"
                 };
             };
-            // class KeeliCompany: Standard {
-            //     author = AUTHOR;
-            //     displayName = "Keeli Company";
-            //     textures[] = {
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_Scout_co.paa)
-            //     };
-            // };
-            // class KeeliCompanyWhite: KeeliCompany {
-            //     displayName = "Keeli Company (White)";
-            //     textures[] = {
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Hull_co.paa),
-            //         QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Weapons_Scout_co.paa)
-            //     };
-            // };
-            // class CamoGrey: KeeliCompany {
-            //     displayName = "Grey Camo";
-            //     textures[] = {
-            //         QPATHTOF(land\tx130\data\textures\CamoGrey\Hull_co.paa),
-            //         QPATHTOF(land\tx130\data\textures\CamoGrey\Weapons_Scout_co.paa)
-            //     };
-            // };
+            class KeeliCompany: Standard {
+                author = AUTHOR;
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_co.paa)
+                };
+            };
+            class KeeliCompanyWhite: KeeliCompany {
+                displayName = "Keeli Company (White)";
+                textures[] = {
+                    QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Weapons_co.paa)
+                };
+            };
+            class CamoGrey: KeeliCompany {
+                displayName = "Grey Camo";
+                textures[] = {
+                    QPATHTOF(land\tx130\data\textures\CamoGrey\Hull_co.paa),
+                    QPATHTOF(land\tx130\data\textures\CamoGrey\Weapons_co.paa)
+                };
+            };
         };
 
         INVENTORY_VEHICLE_BASE(3);
