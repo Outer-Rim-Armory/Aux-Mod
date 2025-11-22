@@ -14,6 +14,7 @@ class CfgMagazines {
         mass = 8;
         initspeed = 350;
         maxLeadSpeed = 27.7778;
+        ls_weapons_rechargeRate = 1;
     };
 
     class CLASS(Mag_15Rnd_DC15SA): CLASS(Mag_7Rnd_DC15SA) {

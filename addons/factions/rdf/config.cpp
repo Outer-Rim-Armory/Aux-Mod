@@ -63,6 +63,7 @@ class CfgPatches {
             QCLASS(helmet_base),
             QCLASS(uniform_base),
             QCLASS(vest_base),
+            QCLASS(medium_vest_base),
             QCLASS(rdfArmor_helmet),
             QCLASS(rdfArmor_helmet_marksman),
             QCLASS(rdfArmor_uniform),
