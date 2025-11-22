@@ -219,6 +219,27 @@ class CLASS(Unit_Defter): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Destiny): CLASS(Unit_Phase2_Base) {
+    displayName = "Destiny";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Destiny);
+
+    uniformClass = QCLASS(Uniform_Destiny);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Destiny_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Destiny_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_P2_Destiny), QCLASS(Vest_CSFC), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_P2_Destiny), QCLASS(Vest_CSFC), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 
 class CLASS(Unit_Dexus): CLASS(Unit_Phase2_Base) {
     displayName = "Dexus";
@@ -587,6 +608,27 @@ class CLASS(Unit_Rat): CLASS(Unit_Phase2_Base) {
     };
     respawnLinkedItems[] = {
         QCLASS(Helmet_BARC_Rat), QCLASS(Vest_Officer_Rat), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Rabble): CLASS(Unit_Phase2_Base) {
+    displayName = "Rabble";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Rabble);
+
+    uniformClass = QCLASS(Uniform_Rabble);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Rabble_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Rabble_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_ARF_Rabble), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_ARF_Rabble), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
