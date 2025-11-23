@@ -127,5 +127,15 @@ class CfgVehicles {
         };
     };
 
+class CLASS(Moskoni_Backpack): CLASS(cloneBackpack_commando_Tech) {
+        displayName = "[KC] Moskoni Commando Backpack";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Moskoni\Moskoni_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Moskoni\Moskoni_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Moskoni\Moskoni_Tech_co.paa)
+        };
+    };
+
     #include "configs\GroundHolders.hpp"
 };

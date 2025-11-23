@@ -1,4 +1,4 @@
-class CLASS(Vest_Tanker_CT): CLASS(Vest_Basic) {
+class CLASS(Vest_ARMR_CT): CLASS(Vest_Basic) {
     displayName = "[KC] ARMR Vest 01 (Enlisted)";
 
     model = "\SDT_gear\SDT_gunner_vest.p3d";
@@ -12,12 +12,12 @@ class CLASS(Vest_Tanker_CT): CLASS(Vest_Basic) {
     };
 
     class XtdGearInfo {
-        model = QCLASS(Vests_Tanker);
+        model = QCLASS(Vests_ARMR);
         rank = "CT";
     };
 };
 
-class CLASS(Vest_Tanker_CS): CLASS(Vest_Tanker_CT) {
+class CLASS(Vest_ARMR_CS): CLASS(Vest_ARMR_CT) {
     displayName = "[KC] ARMR Vest 02 (NCO)";
 
     model = "\SDT_gear\SDT_gunner_recon_vest.p3d";
@@ -40,7 +40,7 @@ class CLASS(Vest_Tanker_CS): CLASS(Vest_Tanker_CT) {
     };
 };
 
-class CLASS(Vest_Tanker_WO): CLASS(Vest_Tanker_CT) {
+class CLASS(Vest_ARMR_WO): CLASS(Vest_ARMR_CT) {
     displayName = "[KC] ARMR Vest 03 (Officer)";
 
     model = "\SDT_gear\SDT_gunner_NCO_vest.p3d";

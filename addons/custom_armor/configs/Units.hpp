@@ -149,10 +149,10 @@ class CLASS(Unit_Catholic): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase2_Tanker_Catholic), QCLASS(Vest_WO), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_ARMR_Catholic), QCLASS(Vest_WO), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase2_Tanker_Catholic), QCLASS(Vest_WO), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_ARMR_Catholic), QCLASS(Vest_WO), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -216,6 +216,27 @@ class CLASS(Unit_Defter): CLASS(Unit_Phase2_Base) {
     };
     respawnLinkedItems[] = {
         QCLASS(Helmet_ARF_Defter), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Destiny): CLASS(Unit_Phase2_Base) {
+    displayName = "Destiny";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Destiny);
+
+    uniformClass = QCLASS(Uniform_Destiny);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Destiny_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Destiny_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Destiny), QCLASS(Vest_CSFC), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Destiny), QCLASS(Vest_CSFC), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -568,6 +589,26 @@ class CLASS(Unit_Leon): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Rabble): CLASS(Unit_Phase2_Base) {
+    displayName = "Rabble";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Rabble);
+
+    uniformClass = QCLASS(Uniform_Rabble);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Rabble_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Rabble_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_ARF_Rabble), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_ARF_Rabble), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
 
 class CLASS(Unit_Rat): CLASS(Unit_Phase2_Base) {
     displayName = "Rat";
@@ -737,6 +778,36 @@ class CLASS(Unit_Talyn): CLASS(Unit_Phase2_Base) {
     };
     respawnLinkedItems[] = {
         QCLASS(Helmet_Phase2_Talyn), QCLASS(Vest_CSS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Tanker): CLASS(Unit_Phase2_Base) {
+    displayName = "Tanker";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Tanker);
+
+    uniformClass = QCLASS(Uniform_Tanker);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Tanker_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Tanker_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_ARF_Tanker), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_ARF_Tanker), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+class CLASS(Unit_Tanker_Worn): CLASS(Unit_Tanker) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Tanker_Worn);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\camo\worn\Tanker_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\camo\worn\Tanker_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 };
 
@@ -932,4 +1003,22 @@ class CLASS(Unit_RC_Cutthroat): CLASS(cloneCommando_unit_base) {
         QCLASS(Helmet_RC_Cutthroat), QCLASS(Cutthroat_RC_Vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
     };
     backpack = QCLASS(Cutthroat_Backpack);
+};
+class CLASS(Unit_RC_Moskoni): CLASS(cloneCommando_unit_base) {
+    SCOPE_PUBLIC;
+    displayName = "Moskoni (RC)";
+    editorSubcategory = QEDSUBCAT(Customs);
+    uniformClass = QCLASS(Uniform_RC_Moskoni);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\commando\Moskoni_upper_co.paa),
+        QPATHTOF(data\uniforms\commando\Moskoni_lower_co.paa),
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_RC_Moskoni), QCLASS(Moskoni_RC_Vest), QCLASS(Moskoni_NVG), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_RC_Moskoni), QCLASS(Moskoni_RC_Vest), QCLASS(Moskoni_NVG), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(Moskoni_Backpack);
 };

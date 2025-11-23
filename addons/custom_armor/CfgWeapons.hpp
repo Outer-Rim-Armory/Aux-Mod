@@ -269,6 +269,16 @@ class CfgWeapons {
 
         GVAR(isCustom) = TRUE;
     };
+    class CLASS(cloneNvg_commandoVisor);
+    class CLASS(Moskoni_NVG): CLASS(cloneNvg_commandoVisor) {
+        displayName = "[KC] Moskoni Nvg";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Moskoni_co.paa),
+            QPATHTOF(data\nvgs\Moskoni_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
 
 class CLASS(Vest_CS) ;
 class CLASS(Vest_Jaws): CLASS(Vest_CS) {
@@ -331,6 +341,12 @@ class CLASS(Vest_Jaws): CLASS(Vest_CS) {
         displayName = "[KC] SF Commando Tech Vest ('Cutthroat')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\uniforms\commando\Cutthroat_lower_co.paa)
+        };
+    };
+    class CLASS(Moskoni_RC_Vest): CLASS(cloneCommando_Tech_vest) {
+        displayName = "[KC] SF Commando Tech Vest ('Cutthroat')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\moskoni\Moskoni_Shoulder_co.paa)
         };
     };
 };

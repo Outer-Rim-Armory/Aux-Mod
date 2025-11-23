@@ -236,7 +236,7 @@ class CfgWeapons {
         displayName = "[CIS] BX Commando Droid";
 
         class ItemInfo: ItemInfo {
-            uniformModel = "\ls_armor_redfor\vest\cis\bxCommando\ls_cis_bxCommando_vest.p3d";
+            uniformModel = "\ls\core\addons\characters_droid\vests\bx\ls_vest_droid_bx.p3d";
             class HitpointsProtectionInfo: HitpointsProtectionInfo {
                 class Legs {
                     hitpointName = "HitLegs";

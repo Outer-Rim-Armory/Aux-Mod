@@ -113,6 +113,7 @@ class CLASS(Uniform_Keeli_Geo): CLASS(Uniform_Keeli) {
 
 UNIFORM_CUSTOM(Kujo);
 UNIFORM_CUSTOM(Leon);
+UNIFORM_CUSTOM(Rabble);
 UNIFORM_CUSTOM(Rat);
 UNIFORM_CUSTOM(Rev);
 UNIFORM_CUSTOM(Sin);
@@ -121,6 +122,17 @@ UNIFORM_CUSTOM(Splashdown);
 UNIFORM_CUSTOM(Star);
 UNIFORM_CUSTOM(Swoop);
 UNIFORM_CUSTOM(Talyn);
+UNIFORM_CUSTOM(Tanker);
+class CLASS(Uniform_Tanker_Worn): CLASS(Uniform_Tanker) {
+    displayName = "[KC] Custom Armor ('Tanker') - Worn";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Tanker_Worn);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
 UNIFORM_CUSTOM(Tugz);
 UNIFORM_CUSTOM(Tyrant);
 UNIFORM_CUSTOM(Weenie);
