@@ -11,8 +11,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\utat,UTAT);
 
         displayName = "UT-AT";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_ARMR_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
         hiddenSelections[] = {"camo", "camo1"}; // 3AS bug, missing comma in original config
         hiddenSelectionsTextures[] = {

@@ -13,8 +13,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,ATAP);
 
         displayName = "AT-AP";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_ARMR_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
         ace_cargo_space = 4;
 

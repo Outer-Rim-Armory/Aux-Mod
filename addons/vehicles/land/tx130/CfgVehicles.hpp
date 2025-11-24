@@ -24,8 +24,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_M1);
 
         displayName = "TX-130 Saber Tank";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_ARMR_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
         ace_cargo_space = 3;
 
@@ -97,8 +97,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_M1_Recon);
 
         displayName = "TX-130 Saber Recon Tank";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_ARMR_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
         ace_cargo_space = 3;
 
@@ -181,8 +181,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_M1_GL);
 
         displayName = "TX-130 Saber Tank (GL)";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_ARMR_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
         ace_cargo_space = 3;
 
@@ -254,8 +254,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,TX130_Super);
 
         displayName = "TX-130 Super Saber Tank";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_ARMR_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
         ace_cargo_space = 3;
 

@@ -18,8 +18,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,RX200_Base);
 
         displayName = "RX-200";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_ARMR_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
         ace_cargo_space = 3;
 

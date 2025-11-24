@@ -24,8 +24,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,ATTE_Base);
 
         displayName = "AT-TE (Base)";
-        crew = QCLASS(Unit_Phase2_Tanker_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Tanker_CT)};
+        crew = QCLASS(Unit_Phase2_ARMR_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
         animationList[] = {
             // These values are actually inverted, they should be "hide"
             "ShowATTENuts", TRUE,
