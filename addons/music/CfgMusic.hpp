@@ -199,6 +199,7 @@ class CfgMusic {
     MUSIC(EPF_General_Legacy,"El Generals Legacy",148,Other);
     MUSIC(EPF_General_Music,"Generals Theme Music",242,Other);
     MUSIC(EPF_General_Speech,"Generals Theme Music",243,Other);
+    MUSIC(Ryloth_Fall,"The Fall of Ryloth",224,Other);
 
     // HellDivers 2
     MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);
