@@ -36,9 +36,9 @@ class CfgSounds {
     SOUND(Huntrix_HowItsDone,"[KC] Huntrix How Its Done","Huntrix How Its Done");
     SOUND(Huntrix_Takedown,"[KC] Huntrix Takedown","Huntrix Takedown");
     SOUND(Huntrix_WhatItSoundsLike,"[KC] Huntrix What It Sounds Like","Huntrix What It Sounds Like");
-    SOUND(KDA_Drum,"[KC] KDA Drum,"KDA Drum");
-    SOUND(KDA_More,"[KC] KDA More,"KDA ");
-    SOUND(KDA_Popstar,"[KC] KDA Popstar,"KDA Popstar");
-    SOUND(KDA_Baddest,"[KC] KDA Baddest,"KDA Baddest");
-    SOUND(KDA_Villain,"[KC] KDA Villain,"KDA Villain");
+    SOUND(KDA_Drum,"[KC] KDA Drum","KDA Drum");
+    SOUND(KDA_More,"[KC] KDA More","KDA ");
+    SOUND(KDA_Popstar,"[KC] KDA Popstar","KDA Popstar");
+    SOUND(KDA_Baddest,"[KC] KDA Baddest","KDA Baddest");
+    SOUND(KDA_Villain,"[KC] KDA Villain","KDA Villain");
 };
