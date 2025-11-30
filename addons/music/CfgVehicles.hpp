@@ -29,4 +29,15 @@ class CfgVehicles {
     SOUND_OBJ(Liberty,"[KC] RDF Anthem Radio");
     SOUND_OBJ(Liberty_Anthem,"[KC] RDF Anthem");
     SOUND_OBJ(Rural_Music,"[KC] El Workers");
+    SOUND_OBJ(Crowd_Cheering,"[KC] Cheering Crowd");
+    SOUND_OBJ(IdleAwards,"[KC] Idle Awards Opening");
+    SOUND_OBJ(Huntrix_Golden,"[KC] Huntrix Golden");
+    SOUND_OBJ(Huntrix_HowItsDone,"[KC] Huntrix How Its Done");
+    SOUND_OBJ(Huntrix_Takedown,"[KC] Huntrix Takedown");
+    SOUND_OBJ(Huntrix_WhatItSoundsLike,"[KC] Huntrix What It Sounds Like");
+    SOUND_OBJ(KDA_Drum,"[KC] KDA Drum");
+    SOUND_OBJ(KDA_More,"[KC] KDA More");
+    SOUND_OBJ(KDA_Popstar,"[KC] KDA Popstar");
+    SOUND_OBJ(KDA_Baddest,"[KC] KDA Baddest");
+    SOUND_OBJ(KDA_Villain,"[KC] KDA Villain");
 };

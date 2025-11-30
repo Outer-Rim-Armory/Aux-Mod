@@ -31,4 +31,15 @@ class CfgSFX {
     SOUND_FX(Liberty,"[KC] RDF Anthem Radio",600);
     SOUND_FX(Liberty_Anthem,"[KC] RDF Anthem ",600);
     SOUND_FX(Rural_Music,"[KC] El Workers",200);
+    SOUND_FX(Crowd_Cheering,"[KC] Cheering Crowd",2000);
+    SOUND_FX(IdleAwards,"[KC] Idle Awards Opening",2000);
+    SOUND_FX(Huntrix_Golden,"[KC] Huntrix Golden",2000);
+    SOUND_FX(Huntrix_HowItsDone,"[KC] Huntrix How Its Done",2000);
+    SOUND_FX(Huntrix_Takedown,"[KC] Huntrix Takedown",2000);
+    SOUND_FX(Huntrix_WhatItSoundsLike,"[KC] Huntrix What It Sounds Like",2000);
+    SOUND_FX(KDA_Drum,"[KC] KDA Drum",2000);
+    SOUND_FX(KDA_More,"[KC] KDA More",2000);
+    SOUND_FX(KDA_Popstar,"[KC] KDA Popstar",2000);
+    SOUND_FX(KDA_Baddest,"[KC] KDA Baddest",2000);
+    SOUND_FX(KDA_Villain,"[KC] KDA Villain",2000);
 };
