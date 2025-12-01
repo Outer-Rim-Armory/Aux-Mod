@@ -27,6 +27,16 @@ class CfgVehicles {
         displayName = "Hermitaur (Infantry)";
         crew = QCLASS(Unit_Phase2_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
+
+        weapons[] = {"SmokeLauncher"};
+                magazines[] = {
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag"
+                };
+
         animationList[] = {
             // These values are actually inverted, they should be "hide"
             "HideAttachmentDozer", TRUE,

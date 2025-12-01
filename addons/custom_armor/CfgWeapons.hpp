@@ -316,6 +316,17 @@ class CLASS(Vest_Jaws): CLASS(Vest_CS) {
         GVAR(isCustom) = TRUE;
     };
 
+    class CLASS(Vest_MedicPlatoon);
+    class CLASS(Vest_Sogi): CLASS(Vest_MedicPlatoon) {
+        displayName = "[KC] INF MED Vest 06 (Platoon)";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\infantry\sogi\Sogi_Accessories_co.paa),   // Heavy Bag / Strap
+            QPATHTOF(data\vests\infantry\sogi\camo2_co.paa), // Kama
+            "",                                                       // Ammo
+            QPATHTOF(data\vests\infantry\sogi\Sogi_Accessories_co.paa)    // Pauldron
+        };
+    };
+
     class CLASS(cloneCommando_SL_vest);
     class CLASS(cloneCommando_EOD_vest);
     class CLASS(cloneCommando_Tech_vest);

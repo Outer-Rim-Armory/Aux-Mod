@@ -37,7 +37,14 @@ class CfgVehicles {
 
         ace_cargo_space = 10;
 
-        weapons[] = {QCLASS(Alarm_Juggernaut)};
+        weapons[] = {QCLASS(Alarm_Juggernaut),"SmokeLauncher"};
+                magazines[] = {
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag"
+                };
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Shell_co.paa),
@@ -194,14 +201,17 @@ class CfgVehicles {
 
         class Turrets: Turrets {
             class MainTurretFront: MainTurretFront {
-                weapons[] = {QCLASS(Turret_ATTE)};
+                weapons[] = {QCLASS(Turret_ATTE),"SmokeLauncher"};
                 magazines[] = {
                     "3AS_250Rnd_ATTE_30mm_MP_shells",
                     "3AS_250Rnd_ATTE_30mm_MP_shells",
                     "3AS_250Rnd_ATTE_30mm_MP_shells",
                     "3AS_250Rnd_ATTE_30mm_MP_shells",
                     "3AS_250Rnd_ATTE_30mm_MP_shells",
-                    "3AS_250Rnd_ATTE_30mm_MP_shells"
+                    "3AS_250Rnd_ATTE_30mm_MP_shells",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag"
                 };
             };
             class MainTurretBack: MainTurretBack {

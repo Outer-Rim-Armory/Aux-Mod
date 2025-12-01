@@ -191,10 +191,10 @@ class CLASS(Unit_Cutthroat): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase2_Cutthroat), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Cutthroat), QCLASS(BNA_KC_Vest_ARMR_WO), QCLASS(cloneNvg_chip), QCLASS(Facewear_phase2_Pauldron), CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase2_Cutthroat), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Cutthroat), QCLASS(BNA_KC_Vest_ARMR_WO), QCLASS(cloneNvg_chip), QCLASS(Facewear_phase2_Pauldron), CLONE_LINKED_ITEMS_RADIO
     };
 };
 

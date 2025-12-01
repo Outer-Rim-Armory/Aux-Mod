@@ -14,6 +14,13 @@ class CfgVehicles {
         side = BLUFOR;
 
         weapons[] = {QCLASS(Horn_Glavenus), "SmokeLauncher"};
+        magazines[] = {
+            "SmokeLauncherMag",
+            "SmokeLauncherMag",
+            "SmokeLauncherMag",
+            "SmokeLauncherMag",
+            "SmokeLauncherMag"
+        };
 
         hiddenSelectionsTextures[] = {};
         textureList[] = {"KeeliCompany", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0};

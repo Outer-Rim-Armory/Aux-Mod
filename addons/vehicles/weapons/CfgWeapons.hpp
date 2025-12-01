@@ -249,6 +249,15 @@ class CfgWeapons {
         };
     };
 
+    class 3AS_Sabre_Cannons_Super;
+    class CLASS(Super_Sabre_Driver): 3AS_Sabre_Cannons_Super {
+        displayName = "Sabre Drivers";
+        magazines[] = {
+            QCLASS(Mag_75Rnd_Blue_SuperSabre),
+            QCLASS(Mag_75Rnd_Red_SuperSabre)
+            };
+    };
+
     class 3AS_Mass_Driver_Cannon: CannonCore {
         class player;
     };

@@ -240,9 +240,9 @@ class CfgVehicles {
 
         hiddenselections[] = {"body1", "body2", "gun"};
         hiddenSelectionsTextures[] = {
-            "\ls_vehicles_ground\aat\data\black\body1_black_co.paa",
-            "\ls_vehicles_ground\aat\data\black\body2_black_co.paa",
-            "\ls_vehicles_ground\aat\data\black\gun_black_co.paa"
+            "\ls\core\addons\vehicles_aat\data\textures\black\body1_co.paa",
+            "\ls\core\addons\vehicles_aat\data\textures\black\body2_co.paa",
+            "\ls\core\addons\vehicles_aat\data\textures\black\gun_co.paa"
         };
 
         textureList[] = {};

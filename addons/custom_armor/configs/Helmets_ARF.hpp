@@ -9,7 +9,7 @@ ARF_HELMET_CUSTOM(Seeger);
 ARF_HELMET_VISOR_CUSTOM(Sogi,Plasma);
 ARF_HELMET_CUSTOM(Stormz);
 ARF_HELMET_VISOR_CUSTOM(Tanker,Bacta);
-class CLASS(Helmet_ARF_Tanker_Worn): CLASS(Helmet_ARF_Base) {
+class CLASS(Helmet_ARF_Tanker_Worn): CLASS(Helmet_ARF_Tanker) {
     SCOPE_PUBLIC;
     displayName = "[KC] SF ARF Helm ('Tanker') - Worn";
     hiddenSelectionsTextures[] = {

@@ -11,6 +11,7 @@
 }
 
 class CfgVehicles {
+    class Turrets;
     class 3AS_Saber_Base;
     class 3AS_Saber_M1: 3AS_Saber_Base {
         class ACE_SelfActions;
@@ -26,6 +27,15 @@ class CfgVehicles {
         displayName = "TX-130 Saber Tank";
         crew = QCLASS(Unit_Phase2_ARMR_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
+
+        weapons[] = {"SmokeLauncher"};
+                magazines[] = {
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag"
+                };
 
         ace_cargo_space = 3;
 
@@ -100,11 +110,20 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_ARMR_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
+        weapons[] = {"SmokeLauncher"};
+                magazines[] = {
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag"
+                };
+
         ace_cargo_space = 3;
 
         hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Saber\data\Saber_hull_co.paa",
-            "\3AS\3AS_Saber\data\Saber_weapons_scout_co.paa"
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_Scout_co.paa)
         };
 
         textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 0, "CamoGrey", 0, "Grey", 0};
@@ -184,11 +203,20 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_ARMR_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
+        weapons[] = {"SmokeLauncher"};
+                magazines[] = {
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag"
+                };
+
         ace_cargo_space = 3;
 
         hiddenSelectionsTextures[] = {
-            "\3AS\3AS_Saber\data\Saber_hull_co.paa",
-            "\3AS\3AS_Saber\data\Saber_weaponsgmg_co.paa"
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
+            QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_co.paa)
         };
 
         textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 0, "CamoGrey", 0};
@@ -244,6 +272,16 @@ class CfgVehicles {
     class 3AS_Saber_Super_base;
     class 3AS_Saber_Super: 3AS_Saber_Super_base {
         class ACE_SelfActions;
+        class Turrets: Turrets {
+            class CargoTurret_01;
+            class CargoTurret_02;
+            class CargoTurret_03;
+            class CargoTurret_04;
+            class MainTurret;
+            class MainTurret_bottom;
+            class Mainturret_Super;
+            class Mainturret_top;
+        };
     };
     class CLASS(TX130_Super): 3AS_Saber_Super {
         SCOPE_PUBLIC;
@@ -256,6 +294,15 @@ class CfgVehicles {
         displayName = "TX-130 Super Saber Tank";
         crew = QCLASS(Unit_Phase2_ARMR_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
+
+        weapons[] = {"SmokeLauncher"};
+                magazines[] = {
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag"
+                };
 
         ace_cargo_space = 3;
 
@@ -302,6 +349,17 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\tx130\data\textures\CamoGrey\Hull_co.paa),
                     QPATHTOF(land\tx130\data\textures\CamoGrey\Weapons_co.paa)
+                };
+            };
+        };
+
+        class Turrets: Turrets {
+            class Mainturret_Super: Mainturret_Super {
+                weapons[] = {QCLASS(Super_Sabre_Driver)};
+                magazines[] = {
+                    QCLASS(Mag_75Rnd_Blue_SuperSabre),
+                    QCLASS(Mag_75Rnd_Blue_SuperSabre),
+                    QCLASS(Mag_75Rnd_Blue_SuperSabre)
                 };
             };
         };

@@ -43,11 +43,33 @@ class CfgMagazines {
         SCOPE_PUBLIC;
         displayName = "Hermitaur Cannon Shells";
         displayNameShort = "HE Rnd";
-        descriptionShort = "Plasma Shells<br/>Used In Hermitaura";
+        descriptionShort = "Plasma Shells<br/>Used In Hermitaur";
         ammo = QCLASS(Bullet_Plasma_Medium_Cannon_Blue);
         count = 250;
         mass = 8;
         initSpeed = 1070;
+    };
+
+    class CLASS(Mag_75Rnd_Blue_SuperSabre): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "Super Sabre Magazines (Blue)";
+        displayNameShort = "Blue AT Rnd";
+        descriptionShort = "Blue Plasma Shells<br/>Used In Super Sabre";
+        ammo = QCLASS(Super_Sabre_AT_Blue);
+        count = 75;
+        mass = 24;
+        initSpeed = 1000;
+    };
+
+    class CLASS(Mag_75Rnd_Red_SuperSabre): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "Super Sabre Magazines (Red)";
+        displayNameShort = "Red AT Rnd";
+        descriptionShort = "Red Plasma Shells<br/>Used In Super Sabre";
+        ammo = QCLASS(Super_Sabre_AT_Red);
+        count = 75;
+        mass = 24;
+        initSpeed = 1000;
     };
 
     class CLASS(Mag_100Rnd_Gozanti): CLASS(Mag_VehicleBase) {

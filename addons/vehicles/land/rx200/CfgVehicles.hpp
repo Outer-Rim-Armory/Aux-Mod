@@ -21,6 +21,15 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_ARMR_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
+        weapons[] = {"SmokeLauncher"};
+                magazines[] = {
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag"
+                };
+
         ace_cargo_space = 3;
 
         hiddenSelectionsTextures[] = {QPATHTOF(land\rx200\data\textures\Body_KC_co.paa)};

@@ -34,8 +34,16 @@ class CfgVehicles {
 
         weapons[] = {
             QCLASS(Horn_Juggernaut),
-            QCLASS(Alarm_Juggernaut)
-        };
+            QCLASS(Alarm_Juggernaut),
+            "SmokeLauncher"
+            };
+                magazines[] = {
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag"
+                };
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Body_co.paa),

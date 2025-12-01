@@ -14,6 +14,15 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_ARMR_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
 
+        weapons[] = {"SmokeLauncher"};
+                magazines[] = {
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag",
+                    "SmokeLauncherMag"
+                };
+
         hiddenSelections[] = {"camo", "camo1"}; // 3AS bug, missing comma in original config
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\utat\data\textures\KeeliCompany\Primary_co.paa),
