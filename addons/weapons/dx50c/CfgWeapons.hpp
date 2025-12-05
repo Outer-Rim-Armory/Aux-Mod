@@ -21,7 +21,7 @@ class CfgWeapons {
         picture = "\MRC\JLTS\weapons\EPL2\data\ui\EPL2_ui_ca.paa";
         model = "\MRC\JLTS\weapons\EPL2\EPL2.p3d";
         handAnim[] = {"OFP2_ManSkeleton","\MRC\JLTS\weapons\EPL2\anims\EPL2_handanim.rtm"};
-        magazines[]={QCLASS(Mag_20Rnd_DX50C)};
+        magazines[]={QCLASS(Mag_20Rnd_DX50C),QCLASS(Mag_20Rnd_DX50C_Red)};
         modes[] = {"Single","AICQB","AIClose","AIMedium","AIFar"};
 
         class WeaponSlotsInfo: WeaponSlotsInfo {

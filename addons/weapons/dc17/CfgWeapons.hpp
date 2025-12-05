@@ -27,7 +27,7 @@ class CfgWeapons {
 
         modes[] = {"Single"};
         muzzles[] = {"this", "Stun", "Launcher"};
-        magazines[] = {QCLASS(Mag_20Rnd_DC17), "Aux12thFleet_Mag_DC17"};
+        magazines[] = {QCLASS(Mag_20Rnd_DC17),QCLASS(Mag_20Rnd_DC17_Red), "Aux12thFleet_Mag_DC17"};
         magazineWell[] = {};
 
         canShootInWater = TRUE;
@@ -192,7 +192,7 @@ class CfgWeapons {
         baseWeapon = QCLASS(DC17_dual);
         JLTS_friedItem = QCLASS(DC17_dual_fried);
 
-        magazines[] = {QCLASS(Mag_40Rnd_DC17_dual)};
+        magazines[] = {QCLASS(Mag_40Rnd_DC17_dual),QCLASS(Mag_40Rnd_DC17_dual_Red)};
     };
 
     class CLASS(DC17_dual_fried): CLASS(DC17_dual) {
@@ -214,7 +214,7 @@ class CfgWeapons {
         displayName = "[KC] DC-17 (Dual Commander)";
         baseWeapon = QCLASS(DC17_dualCommander);
 
-        magazines[] = {QCLASS(Mag_60Rnd_DC17_dualHP)};
+        magazines[] = {QCLASS(Mag_60Rnd_DC17_dualHP),QCLASS(Mag_60Rnd_DC17_dualHP_Red)};
 
         modes[] = {"Single", "FullAuto"};
 

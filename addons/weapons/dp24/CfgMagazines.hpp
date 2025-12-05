@@ -13,6 +13,19 @@ class CfgMagazines {
         count = 40;
         mass = 10;
     };
+    class CLASS(Mag_40Rnd_DP24_Red): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] DP-24 Energy Cell (Red)";
+        displayNameShort = "Standard Energy";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 40<br/>Used In: DP-24";
+
+        model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
+        picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
+
+        ammo = QCLASS(Bullet_PlasmaScatter_Red);
+        count = 40;
+        mass = 10;
+    };
     class CLASS(Mag_8Rnd_DP24_HE): CLASS(Mag_40Rnd_DP24) {
         displayName = "[KC] DP-24 Energy Cell (HE)";
         displayNameShort = "High Explosive";

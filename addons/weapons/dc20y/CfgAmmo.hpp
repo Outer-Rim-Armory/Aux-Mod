@@ -14,4 +14,20 @@ class CfgAmmo {
     class CLASS(Bullet_PlasmaDC20Y_HE): CLASS(Bullet_PlasmaSniper_Blue) {
         explosive = 1.5;
     };
+
+    class CLASS(Bullet_PlasmaSniperAP_Red);
+    class CLASS(Bullet_PlasmaDC20Y_Red): CLASS(Bullet_PlasmaSniperAP_Red) {
+        hit = 100;
+        tracerScale = 1;
+    };
+
+    class CLASS(Bullet_PlasmaDC20Y_AP_Red): CLASS(Bullet_PlasmaSniperAP_Red) {
+        hit = 300;
+        caliber = 30;
+    };
+
+    class CLASS(Bullet_PlasmaSniper_Red);
+    class CLASS(Bullet_PlasmaDC20Y_HE_Red): CLASS(Bullet_PlasmaSniper_Red) {
+        explosive = 1.5;
+    };
 };

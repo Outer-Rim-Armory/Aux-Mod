@@ -2,7 +2,7 @@ class CfgMagazines {
     class CLASS(Mag_Base);
     class CLASS(Mag_80Rnd_DC15S): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
-        displayName = "[KC] DC-15S Energy Cell";
+        displayName = "[KC] DC-15S Energy Cell (Blue)";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 80<br/>Used In: DC-15S";
 
@@ -10,6 +10,20 @@ class CfgMagazines {
         picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
 
         ammo = QCLASS(Bullet_PlasmaCarbine_Blue);
+        count = 80;
+        mass = 10;
+    };
+
+    class CLASS(Mag_80Rnd_DC15S_Red): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] DC-15S Energy Cell (Red)";
+        displayNameShort = "Standard Energy";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 80<br/>Used In: DC-15S";
+
+        model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";
+        picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_mag_ui_ca.paa";
+
+        ammo = QCLASS(Bullet_PlasmaCarbine_Red);
         count = 80;
         mass = 10;
     };

@@ -500,16 +500,20 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         faction = QFACTION(EPF);
+        hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\Green_AAT_CO.paa"};
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\aat,AAT_Green);
 
         crew = QCLASS(EPF_Unit_Rifleman);
         typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
     };
 
-    class CLASS(AAT_King_Base);
-    class CLASS(AAT_King_EPF): CLASS(AAT_King_Base) {
+    class CLASS(AAT_King);
+    class CLASS(AAT_King_EPF): CLASS(AAT_King) {
         SCOPE_PUBLIC;
 
         faction = QFACTION(EPF);
+        hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\Green_AAT_CO.paa"};
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\aat,AAT_Green);
 
         crew = QCLASS(EPF_Unit_Rifleman);
         typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};

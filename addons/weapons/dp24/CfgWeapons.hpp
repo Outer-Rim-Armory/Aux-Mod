@@ -29,7 +29,7 @@ class CfgWeapons {
 
         modes[] = {"Single", "FullAuto"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_40Rnd_DP24), QCLASS(Mag_20Rnd_DP24_HE), QCLASS(Mag_4Rnd_DP24_Flame)};
+        magazines[] = {QCLASS(Mag_40Rnd_DP24),QCLASS(Mag_40Rnd_DP24_Red)};
         magazineWell[] = {};
 
         canShootInWater = TRUE;

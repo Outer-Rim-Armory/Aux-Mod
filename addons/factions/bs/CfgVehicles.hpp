@@ -460,14 +460,17 @@ class CfgVehicles {
 
         crew = QCLASS(BS_Unit_Rifleman);
         typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\aat,AAT_Tan);
     };
 
-    class CLASS(AAT_King_Base);
-    class CLASS(AAT_King_BS): CLASS(AAT_King_Base) {
+    class CLASS(AAT_King);
+    class CLASS(AAT_King_BS): CLASS(AAT_King) {
         SCOPE_PUBLIC;
 
         faction = QFACTION(BS);
         side = INDEP;
+        hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\aat,AAT_Tan);
 
         crew = QCLASS(BS_Unit_Rifleman);
         typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};

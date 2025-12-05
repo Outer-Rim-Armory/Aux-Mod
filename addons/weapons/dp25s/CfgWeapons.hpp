@@ -23,7 +23,15 @@ class CfgWeapons {
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_12Rnd_DP25S), QCLASS(Mag_12Rnd_DP25S_SLUG), QCLASS(Mag_20Rnd_DP25S_HP), QCLASS(Mag_8Rnd_DP25S_HE), QCLASS(Mag_4Rnd_DP25S_Flame)};
+        magazines[] = {
+            QCLASS(Mag_12Rnd_DP25S),
+            QCLASS(Mag_12Rnd_DP25S_SLUG),
+            QCLASS(Mag_20Rnd_DP25S_HP),
+            QCLASS(Mag_12Rnd_DP25S_Red),
+            QCLASS(Mag_12Rnd_DP25S_SLUG_Red),
+            QCLASS(Mag_20Rnd_DP25S_HP_Red),
+            QCLASS(Mag_8Rnd_DP25S_HE),
+            QCLASS(Mag_4Rnd_DP25S_Flame)};
         magazineWell[] = {};
 
         canShootInWater = TRUE;

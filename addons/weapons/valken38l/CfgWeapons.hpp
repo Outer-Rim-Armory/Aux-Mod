@@ -21,7 +21,7 @@ class CfgWeapons {
 
         modes[] = {"FullAuto"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_240Rnd_Valken38l)};
+        magazines[] = {QCLASS(Mag_240Rnd_Valken38l),QCLASS(Mag_240Rnd_Valken38l_Red)};
         magazineWell[] = {};
 
         drySound[] = {"\MRC\JLTS\weapons\Core\sounds\weapon_dry.wss", 5, 1, 10};

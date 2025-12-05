@@ -72,6 +72,28 @@ class CfgMagazines {
         initSpeed = 1000;
     };
 
+    class CLASS(Mag_5Rnd_Blue_MTT_Destroyer): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "MTT Destroyer (Blue)";
+        displayNameShort = "Blue AT Rnd";
+        descriptionShort = "Blue Plasma Shells<br/>Used In Super Sabre";
+        ammo = QCLASS(Super_Sabre_MTT_Blue);
+        count = 5;
+        mass = 24;
+        initSpeed = 1000;
+    };
+
+    class CLASS(Mag_5Rnd_Red_MTT_Destroyer): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "MTT Destroyer (Red)";
+        displayNameShort = "Red AT Rnd";
+        descriptionShort = "Red Plasma Shells<br/>Used In Super Sabre";
+        ammo = QCLASS(Super_Sabre_MTT_Red);
+        count = 5;
+        mass = 24;
+        initSpeed = 1000;
+    };
+
     class CLASS(Mag_100Rnd_Gozanti): CLASS(Mag_VehicleBase) {
         SCOPE_PUBLIC;
         displayName = "Gozanti Mass Driver Shells";

@@ -13,4 +13,17 @@ class CfgMagazines {
         mass = 23;
         initSpeed = 800;
     };
+    class CLASS(Mag_240Rnd_Valken38l_Red): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] Valken-38l Energy Cell (Red)";
+        displayNameShort = "Standard Energy";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 240<br/>Used In: Valken-38l";
+
+        picture = "\3AS\3AS_Weapons\Data\Textures\Energy_Cell_Arsenal.paa";
+
+        ammo = QCLASS(Bullet_PlasmaAutoRifle_Red);
+        count = 240;
+        mass = 23;
+        initSpeed = 800;
+    };
 };

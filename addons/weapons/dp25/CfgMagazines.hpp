@@ -40,6 +40,38 @@ class CfgMagazines {
         ammo = QCLASS(Bullet_Plasma40mm);
         count = 8;
     };
+    class CLASS(Mag_12Rnd_DP25_Red): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] DP-25 Energy Cell (Red)";
+        displayNameShort = "Low Energy";
+        descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 30<br/>Used In: DP-23";
+
+        model = "\MRC\JLTS\weapons\DP23\DP23_mag.p3d";
+        picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
+
+        ammo = QCLASS(Bullet_PlasmaScatter_Red);
+        count = 12;
+        mass = 10;
+    };
+
+    class CLASS(Mag_12Rnd_DP25_SLUG_Red): CLASS(Mag_12Rnd_DP25) {
+        displayName = "[KC] DP-25 Slug Cell (Red)";
+        displayNameShort = "Standard Energy";
+        descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 15<br/>Used In: DP-23";
+
+        ammo = QCLASS(Bullet_PlasmaSniper_Red);
+        count = 12;
+        mass = 10;
+
+    };
+    class CLASS(Mag_20Rnd_DP25_HP_Red): CLASS(Mag_12Rnd_DP25) {
+        displayName = "[KC] DP-25 HP Energy Cell (Red)";
+        displayNameShort = "High Energy";
+        descriptionShort = "Scatter Energy Cell Pack<br/>Rounds: 20<br/>Used In: DP-25";
+
+        ammo = QCLASS(Bullet_PlasmaScatterHP_Red);
+        count = 20;
+    };
     //class CLASS(Mag_4Rnd_DP25_Flame): CLASS(Mag_12Rnd_DP25) {
     //    displayName = "[KC] DP-25 Dragons Breath";
     //    displayNameShort = "Standard Energy";

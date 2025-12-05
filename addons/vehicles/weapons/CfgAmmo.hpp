@@ -59,6 +59,28 @@ class CfgAmmo {
         tracerScale = 2;
     };
 
+    class CLASS(Super_Sabre_MTT_Blue): 3AS_Sabre_AT {
+        hit = 6000;
+        caliber = 350;
+        typicalSpeed = 990;
+
+        model = "3as\3as_weapons\data\tracer_shell_red.p3d";
+        effectFly = "3AS_PlasmaBolt_Medium_Red_Fly";
+
+        tracerScale = 2;
+    };
+
+    class CLASS(Super_Sabre_MTT_Red): 3AS_Sabre_AT {
+        hit = 6000;
+        caliber = 350;
+        typicalSpeed = 990;
+
+        model = "3as\3as_weapons\data\tracer_shell_red.p3d";
+        effectFly = "3AS_PlasmaBolt_Medium_Red_Fly";
+
+        tracerScale = 2;
+    };
+
     class Sh_155mm_AMOS;
     class CLASS(Shell_PlasmaMortar_82mm_HE): Sh_155mm_AMOS {
         hit = 340;

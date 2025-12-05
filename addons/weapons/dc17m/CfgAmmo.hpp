@@ -18,4 +18,24 @@ class CfgAmmo {
         timetolive = 20;
         typicalspeed = 1250;
     };
+
+    class CLASS(Bullet_PlasmaRifle_Red);
+    class CLASS(Bullet_PlasmaDC17M_Blaster_Red): CLASS(Bullet_PlasmaRifle_Red) {
+        hit = 23;
+        caliber = 2.4;
+        suppressionRadiusHit = 4;
+        suppressionRadiusBulletClose = 2;
+        timeToLive = 6;
+        typicalSpeed = 300;
+    };
+
+    class CLASS(Bullet_PlasmaSniper_Red);
+    class CLASS(Bullet_PlasmaDC17M_Sniper_Red): CLASS(Bullet_PlasmaSniper_Red) {
+        hit = 95;
+        caliber = 3;
+        suppressionRadiusHit = 10;
+        suppressionRadiusBulletClose = 8;
+        timetolive = 20;
+        typicalspeed = 1250;
+    };
 };

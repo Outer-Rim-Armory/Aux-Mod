@@ -254,7 +254,9 @@ class CfgWeapons {
         displayName = "Sabre Drivers";
         magazines[] = {
             QCLASS(Mag_75Rnd_Blue_SuperSabre),
-            QCLASS(Mag_75Rnd_Red_SuperSabre)
+            QCLASS(Mag_75Rnd_Red_SuperSabre),
+            QCLASS(Mag_5Rnd_Blue_MTT_Destroyer),
+            QCLASS(Mag_5Rnd_Red_MTT_Destroyer)
             };
     };
 

@@ -19,7 +19,10 @@ class CfgWeapons {
         magazines[] = {
             QCLASS(Mag_10Rnd_DC20Y),
             QCLASS(Mag_3Rnd_DC20Y_AP),
-            QCLASS(Mag_5Rnd_DC20Y_HE)
+            QCLASS(Mag_5Rnd_DC20Y_HE),
+            QCLASS(Mag_10Rnd_DC20Y_Red),
+            QCLASS(Mag_3Rnd_DC20Y_AP_Red),
+            QCLASS(Mag_5Rnd_DC20Y_HE_Red)
         };
         magazineWell[] = {};
 

@@ -16,6 +16,9 @@ class CfgWeapons {
             QCLASS(Mag_7Rnd_DC15SA),
             QCLASS(Mag_15Rnd_DC15SA),
             QCLASS(Mag_30Rnd_DC15SA),
+            QCLASS(Mag_7Rnd_DC15SA_Red),
+            QCLASS(Mag_15Rnd_DC15SA_Red),
+            QCLASS(Mag_30Rnd_DC15SA_Red),
             "Aux12thFleet_Mag_7Rnd_DC15SA",
             "Aux12thFleet_Mag_15Rnd_DC15SA",
             "Aux12thFleet_Mag_30Rnd_DC15SA"

@@ -21,8 +21,8 @@ class CLASS(CIS_AAT_Heavy): CLASS(AAT_Heavy_Base) {
     typicalCargo[] = {QCLASS(CIS_Unit_Droid_B1_Crew)};
 };
 
-class CLASS(AAT_King_Base);
-class CLASS(CIS_AAT_King): CLASS(AAT_King_Base) {
+class CLASS(AAT_King);
+class CLASS(CIS_AAT_King): CLASS(AAT_King) {
     SCOPE_PUBLIC;
 
     faction = QFACTION(CIS);

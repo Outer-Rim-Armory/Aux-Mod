@@ -50,6 +50,56 @@ class CfgMagazines {
 
         GVAR(isSniperMag) = TRUE;
     };
+    class CLASS(Mag_60Rnd_DC17M_Red): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] DC-17M Energy Cell (60 Rnd)";
+        displayNameShort = "Medium Energy";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 60<br/>Used In: DC-17M";
+
+        model = "\ls\core\addons\weapons_dcSeries\dc17m\ls_magazine_dc17m_blaster.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {QPATHTOF(dc17m\data\DC17M_camo1_co.paa)};
+        picture = "\ls\core\addons\weapons_dcSeries\data\ui\dc17m_mag_blaster_ui_ca.paa";
+
+        modelSpecialIsProxy = TRUE;
+        modelSpecial = "\ls\core\addons\weapons_dcSeries\dc17m\ls_magazine_dc17m_blaster.p3d";
+
+        ammo = QCLASS(Bullet_PlasmaDC17M_Blaster_Red);
+        count = 60; // 6 rounds per 1 mass
+        mass = 10;
+        initSpeed = 310;
+        maxLeadSpeed = 25;
+
+        GVAR(isBlasterMag) = TRUE;
+    };
+    class CLASS(Mag_90Rnd_DC17M_Red): CLASS(Mag_60Rnd_DC17M_Red) {
+        displayName = "[KC] DC-17M Energy Cell (90 Rnd)";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 90<br/>Used In: DC-17M";
+        count = 90;
+        mass = 15;
+    };
+
+    class CLASS(Mag_5Rnd_DC17M_Sniper_Red): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] DC-17M Sniper Energy Cell";
+        displayNameShort = "High Energy";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 5<br/>Used In: DC-17M";
+
+        model = "\ls\core\addons\weapons_dcSeries\dc17m\ls_magazine_dc17m_sniper.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {QPATHTOF(dc17m\data\DC17M_camo1_co.paa)};
+        picture = "\ls\core\addons\weapons_dcSeries\data\ui\dc17m_mag_sniper_ui_ca.paa";
+
+        modelSpecialIsProxy = TRUE;
+        modelSpecial = "\ls\core\addons\weapons_dcSeries\dc17m\ls_magazine_dc17m_sniper.p3d";
+
+        ammo = QCLASS(Bullet_PlasmaDC17M_Sniper_Red);
+        count = 5; // 1 rounds per 2 mass
+        mass = 10;
+        initSpeed = 1250;
+
+        GVAR(isSniperMag) = TRUE;
+    };
 
     class CLASS(Mag_1Rnd_DC17M_AT): CLASS(Mag_Base) {
         SCOPE_PUBLIC;

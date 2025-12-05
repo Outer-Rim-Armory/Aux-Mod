@@ -24,7 +24,7 @@ class CfgWeapons {
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_15Rnd_DP20)};
+        magazines[] = {QCLASS(Mag_15Rnd_DP20),QCLASS(Mag_15Rnd_DP20_Red)};
         magazineWell[] = {};
 
         canShootInWater = TRUE;

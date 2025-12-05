@@ -11,14 +11,14 @@ class CfgPatches {
             QGVAR(weapons),
             QGVAR(sounds),
             "3AS_AAT",
-            "ls_vehicles_ground"
+            "ls_vehicles_aat"
         };
         units[] = {
             QCLASS(AAT_Base),
             QCLASS(AAT_captured),
             QCLASS(AAT_Heavy_Base),
-            QCLASS(AAT_King_Base),
-            QCLASS(Captured_AAT_King)
+            QCLASS(AAT_King),
+            QCLASS(AAT_King_Captured)
         };
         weapons[] = {};
         VERSION_CONFIG;

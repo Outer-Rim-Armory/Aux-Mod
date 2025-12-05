@@ -30,7 +30,7 @@ class CfgWeapons {
 
         modes[] = {"FullAuto", "Single"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_70Rnd_DC15C), "Aux12thFleet_Mag_DC15C"};
+        magazines[] = {QCLASS(Mag_70Rnd_DC15C),QCLASS(Mag_70Rnd_DC15C_Red), "Aux12thFleet_Mag_DC15C"};
         magazineWell[] = {};
         reloadAction = "3AS_GestureReloadDC15S";
 

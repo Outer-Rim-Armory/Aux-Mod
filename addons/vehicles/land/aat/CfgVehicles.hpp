@@ -37,12 +37,14 @@ class CfgVehicles {
                 };
             };
         };
+        class HitPoints;
     };
     class CLASS(AAT_Base): 3AS_AAT {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
         editorSubcategory = QEDSUBCAT(Tanks);
+        faction = QFACTION(CIS);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_Blue);
 
         displayName = "AAT";
@@ -62,7 +64,8 @@ class CfgVehicles {
             "Tropical", 0,
             "Arid", 0,
             "Winter", 0,
-            "Aqua", 0
+            "Aqua", 0,
+            "King", 0
         };
         class TextureSources {
             class CIS {
@@ -123,6 +126,10 @@ class CfgVehicles {
             class Aqua: Red {
                 displayName = "Camo - Aqua";
                 textures[] = {"\3AS\3AS_AAT\data\Aqua_AAT_CO.paa"};
+            };
+            class King: Red {
+                displayName = "Camo - King";
+                textures[] = {QPATHTOF(land\aat\data\textures\King_AAT_co.paa)};
             };
         };
 
@@ -191,12 +198,13 @@ class CfgVehicles {
         "Tropical", 0,
         "Arid", 0,
         "Winter", 0,
-        "Aqua", 0
+        "Aqua", 0,
+        "King", 0
     };
 
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_Blue);
 
-        displayName = "Captured AAT";
+        displayName = "AAT (Captured)";
         SCOPE_PUBLIC;
 
         hiddenSelectionsTextures[] = {
@@ -213,40 +221,48 @@ class CfgVehicles {
 
         textureList[] = {};
         class TextureSources {};
-    };
-
-    class ls_ground_aat_base: Tank_F {
-        class ACE_SelfActions;
-        class Turrets: Turrets {
-            class MainTurret: MainTurret {
-                class Turrets: Turrets {
-                    class CommanderOptics;
-                };
-            };
+        animationList[] = {
+            "HideArmorCIS",0,
+            "HideArmorRebel",1
         };
-        class HitPoints;
     };
-    class CLASS(AAT_King_Base): ls_ground_aat_base {
+
+
+    class CLASS(AAT_King): CLASS(AAT_Base) {
         SCOPE_PRIVATE;
-        author = AUTHOR;
 
-        editorSubcategory = QEDSUBCAT(Tanks);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_King_Base);
+        displayName = "King AAT";
 
-        displayName = "AAT (King)";
+        weapons[] = {"SmokeLauncher"};
+        magazines[] = {
+            "SmokeLauncherMag",
+            "SmokeLauncherMag",
+            "SmokeLauncherMag"
+        };
 
         armor = 2000;
         armorStructural = 10;
 
-        hiddenselections[] = {"body1", "body2", "gun"};
-        hiddenSelectionsTextures[] = {
-            "\ls\core\addons\vehicles_aat\data\textures\black\body1_co.paa",
-            "\ls\core\addons\vehicles_aat\data\textures\black\body2_co.paa",
-            "\ls\core\addons\vehicles_aat\data\textures\black\gun_co.paa"
+        animationList[] = {
+            "HideArmorCIS",1,
+            "HideArmorRebel",1
         };
 
-        textureList[] = {};
-        class TextureSources {};
+        textureList[] = {
+        "CIS", 0,
+        "TradeFederation", 0,
+        "EPF", 0,
+        "Red", 0,
+        "KC", 0,
+        "Desert", 0,
+        "Geonosis", 0,
+        "Woodland", 0,
+        "Tropical", 0,
+        "Arid", 0,
+        "Winter", 0,
+        "Aqua", 0,
+        "King", 1
+    };
 
         class ACE_SelfActions: ACE_SelfActions {
         };
@@ -315,24 +331,38 @@ class CfgVehicles {
             };
         };
     };
-
-    class CLASS(Captured_AAT_King): CLASS(AAT_King_Base) {
+    class CLASS(AAT_King_Captured): CLASS(AAT_King) {
         SCOPE_PUBLIC;
-        author = AUTHOR;
 
+        displayName = "King AAT (Captured)";
+        side = 1;
         faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Tanks);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_King_Base);
-        side = BLUFOR;
-        modelSides[] = {BLUFOR};
+        crew = QCLASS(Unit_Phase2_ARMR_CT);
 
-        displayName = "Captured AAT (King)";
-
-        hiddenselections[] = {"body1", "body2", "gun"};
+        hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {
-            QPATHTOF(land\aat\data\textures\KC_body1_co.paa),
-            QPATHTOF(land\aat\data\textures\KC_body2_co.paa),
-            QPATHTOF(land\aat\data\textures\KC_gun_co.paa)
+            QPATHTOF(land\aat\data\textures\KC_AAT_co.paa),
+        };
+
+        textureList[] = {
+        "CIS", 0,
+        "TradeFederation", 0,
+        "EPF", 0,
+        "Red", 0,
+        "KC", 1,
+        "Desert", 0,
+        "Geonosis", 0,
+        "Woodland", 0,
+        "Tropical", 0,
+        "Arid", 0,
+        "Winter", 0,
+        "Aqua", 0,
+        "King", 0
+    };
+
+        animationList[] = {
+            "HideArmorCIS",0,
+            "HideArmorRebel",0
         };
     };
 };

@@ -34,7 +34,7 @@ class CfgWeapons {
 
         modes[] = {"Single", "Burst", "FullAuto"};
         muzzles[] = {"this"};
-        magazines[] = {QCLASS(Mag_100Rnd_WestarM5)};
+        magazines[] = {QCLASS(Mag_100Rnd_WestarM5),QCLASS(Mag_100Rnd_WestarM5_Red)};
         magazineWell[] = {};
 
         canShootInWater = TRUE;
