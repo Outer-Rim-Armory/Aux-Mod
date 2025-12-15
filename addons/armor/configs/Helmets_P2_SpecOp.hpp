@@ -75,3 +75,11 @@ class CLASS(Helmet_Phase2_ARMR_Enlisted_CamoGrey): CLASS(Helmet_Phase2_ARMR_CT) 
         "\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"
     };
 };
+
+class CLASS(Helmet_Phase2_ARMR_Imperial): CLASS(Helmet_Phase2_ARMR_CT) {
+    displayName = "[KC] ARMR P2 Helm 06 (Imperial)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2SpecOp\Imperial_ARMR_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2SpecOp\data\visor_co.paa"
+    };
+};

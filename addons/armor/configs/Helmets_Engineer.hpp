@@ -34,7 +34,7 @@ class CLASS(Helmet_Engineer_CT): CLASS(Helmet_Engineer_Base) {
 };
 
 class CLASS(Helmet_Engineer_Enlisted_CamoBrown): CLASS(Helmet_Engineer_CT) {
-    displayName = "[KC] ENG Helm 01 (Enlisted) - Brown Camo";
+    displayName = "[KC] ENG Helm 02 (Enlisted) - Brown Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\engineer\camo\brown\Enlisted_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa",
@@ -43,9 +43,18 @@ class CLASS(Helmet_Engineer_Enlisted_CamoBrown): CLASS(Helmet_Engineer_CT) {
 };
 
 class CLASS(Helmet_Engineer_Enlisted_CamoGrey): CLASS(Helmet_Engineer_CT) {
-    displayName = "[KC] ENG Helm 01 (Enlisted) - Grey Camo";
+    displayName = "[KC] ENG Helm 03 (Enlisted) - Grey Camo";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\engineer\camo\grey\Enlisted_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\visor_co.paa"
+    };
+};
+
+class CLASS(Helmet_Engineer_Imperial): CLASS(Helmet_Engineer_Base) {
+    displayName = "[KC] ENG Helm 04 (Imperial)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\engineer\Imperial_Engineer_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\visor_co.paa"
     };

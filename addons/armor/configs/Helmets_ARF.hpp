@@ -53,3 +53,12 @@ class CLASS(Helmet_ARF_Enlisted_CamoGrey): CLASS(Helmet_ARF_CT) {
         "\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
     };
 };
+
+class CLASS(Helmet_ARF_Enlisted_Imperial): CLASS(Helmet_ARF_CT) {
+    displayName = "[KC] SF ARF Helm 05 (Imperial)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\arf\Imperial_ARF_camo1_co.paa),
+        "",
+        "\ls\core\addons\characters_clone_legacy\helmets\arf\data\helmet_co.paa"
+    };
+};

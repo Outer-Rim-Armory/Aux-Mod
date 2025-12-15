@@ -311,6 +311,14 @@ class CLASS(Uniform_CXE): CLASS(Uniform_Base) {
     };
 };
 
+class CLASS(Uniform_CXA_Imperial): CLASS(Uniform_Base) {
+    displayName = "[KC] AVI Armor 01 (Imperial)";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CXA_Imperial);
+    };
+};
+
 class CLASS(Uniform_ARMR_CT): CLASS(Uniform_Base) {
     displayName = "[KC] ARMR Armor 01 (Trooper)";
     class ItemInfo: ItemInfo {

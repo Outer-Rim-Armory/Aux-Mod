@@ -313,6 +313,15 @@ class CLASS(Vest_Officer_v2): CLASS(Vest_Officer) {
     };
 };
 
+class CLASS(Vest_Officer_Imperial): CLASS(Vest_Officer) {
+    displayName = "[KC] INF Vest 12 (Officer, Imperial)";
+
+    hiddenSelections[] = {"camo1"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\officer\Imperial_camo1_co.paa) // Kama and Pauldron
+    };
+};
+
 class CLASS(Vest_WO): CLASS(Vest_Officer) {
     displayName = "[KC] INF Vest 11 (Warrant Officer)";
     model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_lieutenant_vest.p3d";

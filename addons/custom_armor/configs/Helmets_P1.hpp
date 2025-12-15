@@ -22,7 +22,9 @@ P1_HELMET_CUSTOM(Hazard);
 P1_HELMET_CUSTOM(Henkie);
 P1_HELMET_CUSTOM(Jaws);
 P1_HELMET_VISOR_CUSTOM(Jester,Bacta);
+P1_HELMET_CUSTOM(Jimsbo);
 P1_HELMET_VISOR_CUSTOM(Joe,Crimson);
+P1_HELMET_CUSTOM(Juno);
 P1_HELMET_VISOR_CUSTOM(Keeli,Crimson);
 
 class CLASS(Helmet_Phase1_Keeli_CamoBrown): CLASS(Helmet_Phase1_Keeli) {
@@ -130,6 +132,7 @@ class CLASS(Helmet_Phase1_KeeliCrimson_Geo): CLASS(Helmet_Phase1_Keeli_Geo) {
 };
 
 P1_HELMET_CUSTOM(Kujo);
+P1_HELMET_CUSTOM(Koa);
 P1_HELMET_VISOR_CUSTOM(Lou,Plasma);
 P1_HELMET_CUSTOM(Marge);
 P1_HELMET_CUSTOM(Maverick);
@@ -145,6 +148,7 @@ P1_HELMET_CUSTOM(Sherlock);
 P1_HELMET_CUSTOM(Sin);
 P1_HELMET_VISOR_CUSTOM(Splashdown,Kyber);
 P1_HELMET_CUSTOM(Spoon);
+P1_HELMET_CUSTOM(Sprint);
 P1_HELMET_CUSTOM(Star);
 P1_HELMET_VISOR_CUSTOM(Swoop,Bacta);
 P1_HELMET_CUSTOM(Talyn);
@@ -179,4 +183,5 @@ class CLASS(Helmet_Phase1_TyrantCrimson_Worn): CLASS(Helmet_Phase1_Tyrant_Worn) 
 
 P1_HELMET_CUSTOM(Tye);
 P1_HELMET_CUSTOM(Weenie);
+P1_HELMET_CUSTOM(Whisker);
 P1_HELMET_CUSTOM(Woods);

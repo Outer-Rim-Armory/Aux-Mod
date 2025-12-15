@@ -36,7 +36,9 @@ class CLASS(Helmet_Phase2_Jaws_CamoBrown): CLASS(Helmet_Phase2_Jaws) {
     };
 };
 
+P2_HELMET_CUSTOM(Jimsbo);
 P2_HELMET_CUSTOM(Jesse);
+P2_HELMET_CUSTOM(Juno);
 P2_HELMET_VISOR_CUSTOM(Joe,Crimson);
 P2_HELMET_VISOR_CUSTOM(Keeli,Crimson);
 
@@ -196,4 +198,5 @@ class CLASS(Helmet_Phase2_TyrantCrimson_Worn): CLASS(Helmet_Phase2_Tyrant_Worn) 
 P2_HELMET_CUSTOM(Tye);
 P2_HELMET_CUSTOM(Vortex);
 P2_HELMET_CUSTOM(Weenie);
+P2_HELMET_CUSTOM(Whisker);
 P2_HELMET_CUSTOM(Woods);

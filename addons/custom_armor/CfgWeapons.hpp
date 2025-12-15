@@ -327,10 +327,10 @@ class CLASS(Vest_Jaws): CLASS(Vest_CS) {
 
     class CLASS(Vest_MedicPlatoon);
     class CLASS(Vest_Sogi): CLASS(Vest_MedicPlatoon) {
-        displayName = "[KC] INF MED Vest 06 (Platoon)";
+        displayName = "[KC] INF MED Vest 06 ('Sogi')";
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\vests\infantry\sogi\Sogi_Accessories_co.paa),   // Heavy Bag / Strap
-            QPATHTOF(data\vests\infantry\sogi\camo2_co.paa), // Kama
+            QPATHTOF(data\vests\sogi\Sogi_Accessories_co.paa),   // Heavy Bag / Strap
+            QPATHTOF(data\vests\sogi\camo2_co.paa), // Kama
             "",                                                       // Ammo
             QPATHTOF(data\vests\infantry\sogi\Sogi_Accessories_co.paa)    // Pauldron
         };

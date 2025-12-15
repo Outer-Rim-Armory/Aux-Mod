@@ -24,3 +24,11 @@ class CLASS(Helmet_BARC_CT): CLASS(Helmet_BARC_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"
     };
 };
+
+class CLASS(Helmet_BARC_Imperial): CLASS(Helmet_BARC_Base) {
+    displayName = "[KC] INF BARC Helm 02 (Imperial)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\barc\Imperial_BARC_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"
+    };
+};

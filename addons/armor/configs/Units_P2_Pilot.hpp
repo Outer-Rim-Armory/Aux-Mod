@@ -35,3 +35,22 @@ class CLASS(Unit_Phase2_CXE): CLASS(Unit_Phase2_CXA) {
         QCLASS(Helmet_Phase2_Pilot_CXE), QCLASS(Vest_Officer), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+
+class CLASS(Unit_Phase2_CXA_Imperial): CLASS(Unit_Phase2_CXA) {
+    displayName = "AVI P2 Pilot 01 (Airman)";
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CXA);
+    icon = "iconManOfficer";
+
+    uniformClass = QCLASS(Uniform_CXA_Imperial);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\pilot\Imperial_upper_co.paa),
+        QPATHTOF(data\uniforms\pilot\Imperial_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Pilot_CXA_Imperial), QCLASS(Vest_Basic), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Pilot_CXA_Imperial), QCLASS(Vest_Basic), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
