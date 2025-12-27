@@ -28,6 +28,14 @@ class CLASS(Helmet_Phase2_Pilot_CXA): CLASS(Helmet_Phase2_Pilot_Base) {
     };
 };
 
+class CLASS(Helmet_Phase2_Pilot_CXA_Imperial): CLASS(Helmet_Phase2_Pilot_Base) {
+    displayName = "[KC] AVI P2 Helm 01 (Airman, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2Pilot\CXA_Emp_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"
+    };
+};
+
 class CLASS(Helmet_Phase2_Pilot_CXE): CLASS(Helmet_Phase2_Pilot_Base) {
     displayName = "[KC] AVI P2 Helm 06 (Ensign)";
     hiddenSelectionsTextures[] = {

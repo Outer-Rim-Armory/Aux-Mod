@@ -117,7 +117,7 @@ class CLASS(Helmet_Scout_Grey_V2): CLASS(Helmet_Scout_Base_V2) {
 class CLASS(Helmet_Scout_Imperial): CLASS(Helmet_Scout_Base_V1) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF Scout Helm 05 (Imperial LS)";
+    displayName = "[KC] SF Scout Helm 05 (Empire LS)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\scout\camo\imperial\Helmet_Imperial_camo1_co.paa),
         QPATHTOF(data\helmets\scout\camo\imperial\Helmet_Imperial_camo1_co.paa),
@@ -132,7 +132,7 @@ class CLASS(Helmet_Scout_Imperial): CLASS(Helmet_Scout_Base_V1) {
 class CLASS(Helmet_Scout_Imperial_V2): CLASS(Helmet_Scout_Base_V2) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF Scout Helm 10 (Imperial WMA)";
+    displayName = "[KC] SF Scout Helm 10 (Empire WMA)";
     hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\scout\camo\Imperial\Helmet_Imperial_CO.paa)};
 
     class ItemInfo: ItemInfo {

@@ -52,7 +52,7 @@ class CLASS(Helmet_Engineer_Enlisted_CamoGrey): CLASS(Helmet_Engineer_CT) {
 };
 
 class CLASS(Helmet_Engineer_Imperial): CLASS(Helmet_Engineer_Base) {
-    displayName = "[KC] ENG Helm 04 (Imperial)";
+    displayName = "[KC] ENG Helm 04 (Empire)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\engineer\Imperial_Engineer_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\engineer\data\light_co.paa",

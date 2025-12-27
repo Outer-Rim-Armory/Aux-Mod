@@ -487,6 +487,52 @@ class CfgVehicles {
         tf_subtype = "digital_lr";
     };
 
+    class CLASS(Jetpack_JT12_Empire): CLASS(cloneBackpack_base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] JT-12 Jetpack (Empire)";
+
+        model = "\MRC\JLTS\characters\CloneArmor2\CloneJumppackJT12.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {
+            "\MRC\JLTS\characters\CloneArmor2\data\Clone_jumppack_jt12_co.paa",
+            QPATHTOF(data\backpacks\jetpacks\KC_JT12_net_co.paa)};
+        picture = "\MRC\JLTS\characters\CloneArmor2\data\ui\Clone_jumppack_jt12_ui_ca.paa";
+
+        EGVAR(jetpacks,isJetpack) = TRUE;
+        EGVAR(jetpacks,speed) = JETPACK_SPEED_DEFAULT;
+        EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
+        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
+        EGVAR(jetpacks,canHover) = TRUE;
+
+        // Effects
+        EGVAR(jetpacks,effectPoints)[] = {
+            {-0.13251, -0.219357, -0.247619},
+            { 0.15051, -0.219357, -0.247619}
+        };
+        EGVAR(jetpacks,effects)[] = {
+            QCLASS(cloudlet_jetpackFire_blue),
+            QCLASS(cloudlet_jetpackSmoke)
+        };
+        EGVAR(jetpacks,effectSound) = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
+        EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};
+
+        EGVAR(jetpacks,freefallHeight) = 500;
+
+        EGVAR(custom_armor,isCustom) = FALSE;
+    };
+    class CLASS(Jetpack_JT12_LR_Empire): CLASS(Jetpack_JT12_Empire) {
+        displayName = "[KC] JT-12 Jetpack (LR, Empire)";
+
+        // TFAR Long Range
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+
+        tf_dialog = "ls_radios_cloneLR";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+    };
+
     class CLASS(Jetpack_CDV21): CLASS(Jetpack_JT12) {
         displayName = "[KC] CDV-21 Droppack";
 
