@@ -181,6 +181,23 @@ class CLASS(Vest_CLC): CLASS(Vest_Basic) {
         hiddenSelections[] = {"camo1", "holster", "pauldron"};
     };
 };
+class CLASS(Vest_CLC_Empire): CLASS(Vest_Basic) {
+    displayName = "[KC] INF Vest 04 (CLC, Empire)";
+
+    model = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_recon_vest.p3d";
+    hiddenSelections[] = {"camo1", "holster", "pauldron"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
+        QPATHTOF(data\vests\infantry\heavy\Empire_Accessories_camo1_co.paa), // Holster
+        QPATHTOF(data\vests\infantry\heavy\Empire_CLC_camo1_co.paa)          // Pauldron
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
+
+    class ItemInfo: ItemInfo {
+        uniformModel = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_recon_vest.p3d";
+        hiddenSelections[] = {"camo1", "holster", "pauldron"};
+    };
+};
 
 class CLASS(Vest_CPL): CLASS(Vest_CLC) {
     displayName = "[KC] INF Vest 05 (CPL)";
@@ -188,6 +205,16 @@ class CLASS(Vest_CPL): CLASS(Vest_CLC) {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
         QPATHTOF(data\vests\infantry\heavy\CPL_camo1_co.paa)          // Pauldron
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
+};
+
+class CLASS(Vest_CPL_Empire): CLASS(Vest_CLC_Empire) {
+    displayName = "[KC] INF Vest 05 (CPL, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
+        QPATHTOF(data\vests\infantry\heavy\Empire_Accessories_camo1_co.paa), // Holster
+        QPATHTOF(data\vests\infantry\heavy\Empire_CPL_camo1_co.paa)          // Pauldron
     };
     picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
 };
@@ -240,6 +267,58 @@ class CLASS(Vest_CSM): CLASS(Vest_CS) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\heavy\CSM_camo1_co.paa),
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
+};
+
+class CLASS(Vest_CS_Empire): CLASS(Vest_Basic) {
+    displayName = "[KC] INF Vest 06 (CS)";
+    model = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_reconOfficer_vest.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\heavy\Empire_CS_camo1_co.paa),       // Pauldron
+        QPATHTOF(data\vests\infantry\officer\Imperial_camo1_co.paa) // Kama
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
+
+    class ItemInfo: ItemInfo {
+        uniformModel = "\ls\core\addons\characters_clone_legacy\vests\recon\ls_gar_reconOfficer_vest.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+    };
+};
+
+class CLASS(Vest_CSS_Empire): CLASS(Vest_CS_Empire) {
+    displayName = "[KC] INF Vest 07 (CSS)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\heavy\Empire_CSS_camo1_co.paa),
+        QPATHTOF(data\vests\infantry\officer\Imperial_camo1_co.paa)
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
+};
+
+class CLASS(Vest_CSFC_Empire): CLASS(Vest_CS_Empire) {
+    displayName = "[KC] INF Vest 08 (CSFC)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\heavy\Empire_CSFC_camo1_co.paa),
+        QPATHTOF(data\vests\infantry\officer\Imperial_camo1_co.paa)
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
+};
+
+class CLASS(cloneVest_CMS_Empire): CLASS(Vest_CS_Empire) {
+    displayName = "[KC] INF Vest 09 (CMS)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\heavy\Empire_CMS_camo1_co.paa),
+        QPATHTOF(data\vests\infantry\officer\Imperial_camo1_co.paa)
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
+};
+
+class CLASS(Vest_CSM_Empire): CLASS(Vest_CS_Empire) {
+    displayName = "[KC] INF Vest 10 (CSM)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\heavy\Empire_CSM_camo1_co.paa),
+        QPATHTOF(data\vests\infantry\officer\Imperial_camo1_co.paa)
     };
     picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
 };
@@ -327,6 +406,17 @@ class CLASS(Vest_WO): CLASS(Vest_Officer) {
     model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_lieutenant_vest.p3d";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa) // Pauldron
+    };
+
+    class ItemInfo: ItemInfo {
+        uniformModel = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_lieutenant_vest.p3d";
+    };
+};
+class CLASS(Vest_WO_Empire): CLASS(Vest_Officer) {
+    displayName = "[KC] INF Vest 11 (Warrant Officer,Empire)";
+    model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_lieutenant_vest.p3d";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\officer\Imperial_camo1_co.paa) // Pauldron
     };
 
     class ItemInfo: ItemInfo {

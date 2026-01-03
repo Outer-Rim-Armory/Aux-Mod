@@ -54,3 +54,19 @@ class CLASS(Unit_Phase2_CXA_Imperial): CLASS(Unit_Phase2_CXA) {
         QCLASS(Helmet_Phase2_Pilot_CXA_Imperial), QCLASS(Vest_Basic), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+class CLASS(Unit_Phase2_CXE_Imperial): CLASS(Unit_Phase2_CXA) {
+    SCOPE_HIDDEN;
+    displayName = "AVI P2 Pilot 01 (Airman)";
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CXA);
+    icon = "iconManOfficer";
+
+    uniformClass = QCLASS(Uniform_CXE_Imperial);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\pilot\Imperial_CXE_upper_co.paa),
+        QPATHTOF(data\uniforms\pilot\Imperial_CXE_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
+};

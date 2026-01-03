@@ -112,6 +112,17 @@ class CLASS(Uniform_Keeli_Geo): CLASS(Uniform_Keeli) {
     };
 };
 
+UNIFORM_CUSTOM(Kiwi);
+class CLASS(Uniform_Kiwi_Worn): CLASS(Uniform_Kiwi) {
+    displayName = "[KC] Custom Armor ('Kiwi') - Worn";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Kiwi_Worn);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
 UNIFORM_CUSTOM(Kujo);
 UNIFORM_CUSTOM(Leon);
 UNIFORM_CUSTOM(Rabble);

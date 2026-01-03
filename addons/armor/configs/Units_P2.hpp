@@ -197,6 +197,21 @@ class CLASS(Unit_Phase2_CLC): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Phase2_CLC_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 04 - Clone Lance Corporal";
+
+    uniformClass = QCLASS(Uniform_LCPL_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_LCPL_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_LCPL_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
+};
+
 class CLASS(Unit_Phase2_CPL): CLASS(Unit_Phase2_Base) {
     displayName = "INF 05 - Clone Corporal";
     editorPreview = EDITOR_PREVIEW(Unit_Phase2_CPL);
@@ -215,6 +230,21 @@ class CLASS(Unit_Phase2_CPL): CLASS(Unit_Phase2_Base) {
     respawnLinkedItems[] = {
         QCLASS(Helmet_Phase2_CPL), QCLASS(Vest_CPL), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
+};
+
+class CLASS(Unit_Phase2_CPL_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 05 - Clone Corporal";
+
+    uniformClass = QCLASS(Uniform_CPL_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_CPL_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_CPL_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
 };
 
 // Start of NCO Ranks
@@ -238,6 +268,20 @@ class CLASS(Unit_Phase2_CS): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_CS), QCLASS(Vest_CS), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+class CLASS(Unit_Phase2_CS_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 06 - Clone Sergeant";
+
+    uniformClass = QCLASS(Uniform_CS_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_CS_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_CS_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
+};
 
 class CLASS(Unit_Phase2_CSS): CLASS(Unit_Phase2_Base) {
     displayName = "INF 07 - Clone Staff Sergeant";
@@ -257,6 +301,20 @@ class CLASS(Unit_Phase2_CSS): CLASS(Unit_Phase2_Base) {
     respawnLinkedItems[] = {
         QCLASS(Helmet_Phase2_CSS), QCLASS(Vest_CSS), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
+};
+class CLASS(Unit_Phase2_CSS_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 07 - Clone Staff Sergeant";
+
+    uniformClass = QCLASS(Uniform_CSS_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_CSS_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_CSS_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
 };
 
 class CLASS(Unit_Phase2_CSFC): CLASS(Unit_Phase2_Base) {
@@ -278,6 +336,20 @@ class CLASS(Unit_Phase2_CSFC): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_CSFC), QCLASS(Vest_CSFC), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+class CLASS(Unit_Phase2_CSFC_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 08 - Clone Sergeant First Class";
+
+    uniformClass = QCLASS(Uniform_CSFC_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_CSFC_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_CSFC_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
+};
 
 class CLASS(Unit_Phase2_CMS): CLASS(Unit_Phase2_Base) {
     displayName = "INF 09 - Clone Master Sergeant";
@@ -298,6 +370,20 @@ class CLASS(Unit_Phase2_CMS): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_CMS), QCLASS(cloneVest_CMS), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+class CLASS(Unit_Phase2_CMS_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 09 - Clone Master Sergeant";
+
+    uniformClass = QCLASS(Uniform_CMS_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_CMS_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_CMS_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
+};
 
 class CLASS(Unit_Phase2_CSM): CLASS(Unit_Phase2_Base) {
     displayName = "INF 10 - Clone Sergeant Major";
@@ -317,6 +403,20 @@ class CLASS(Unit_Phase2_CSM): CLASS(Unit_Phase2_Base) {
     respawnLinkedItems[] = {
         QCLASS(Helmet_Phase2_CSM), QCLASS(Vest_CSM), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
+};
+class CLASS(Unit_Phase2_CSM_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 10 - Clone Sergeant Major";
+
+    uniformClass = QCLASS(Uniform_CSM_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_CSM_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_CSM_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
 };
 
 // Start of Officer Ranks
@@ -341,6 +441,20 @@ class CLASS(Unit_Phase2_WO): CLASS(Unit_Phase2_Base) {
 
     backpack = QCLASS(Backpack_Radio_Mini);
 };
+class CLASS(Unit_Phase2_WO_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 11 - Clone Warrant Officer";
+
+    uniformClass = QCLASS(Uniform_WO_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_WO1_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_WO1_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
+};
 
 class CLASS(Unit_Phase2_WO2): CLASS(Unit_Phase2_Base) {
     displayName = "INF 12 - Clone Warrant Officer 2";
@@ -360,6 +474,20 @@ class CLASS(Unit_Phase2_WO2): CLASS(Unit_Phase2_Base) {
     respawnLinkedItems[] = {
         QCLASS(Helmet_Phase2_WO2), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase2_officerVisor), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
+};
+class CLASS(Unit_Phase2_WO2_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 12 - Clone Warrant Officer 2";
+
+    uniformClass = QCLASS(Uniform_WO2_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_WO2_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_WO2_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
 };
 
 class CLASS(Unit_Phase2_WO3): CLASS(Unit_Phase2_Base) {
@@ -381,6 +509,20 @@ class CLASS(Unit_Phase2_WO3): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_WO3), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase2_officerVisor), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+class CLASS(Unit_Phase2_WO3_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 13 - Clone Warrant Officer 3";
+
+    uniformClass = QCLASS(Uniform_WO3_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_WO3_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_WO3_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
+};
 
 class CLASS(Unit_Phase2_CL): CLASS(Unit_Phase2_Base) {
     displayName = "INF 14 - Clone Lieutenant";
@@ -401,13 +543,27 @@ class CLASS(Unit_Phase2_CL): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_CL), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase2_officerVisor), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+class CLASS(Unit_Phase2_CL_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 14 - Clone Lieutenant";
+
+    uniformClass = QCLASS(Uniform_CL_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_CL_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_CL_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
+};
 
 class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base) {
     displayName = "INF 15 - Clone 1st Lieutenant";
     editorPreview = EDITOR_PREVIEW(Unit_Phase2_CL1);
     icon = "iconManOfficer";
 
-    uniformClass = QCLASS(Uniform_CL);
+    uniformClass = QCLASS(Uniform_CL1);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\infantry\CL1_upper_co.paa),
         QPATHTOF(data\uniforms\infantry\CL1_lower_co.paa),
@@ -420,6 +576,20 @@ class CLASS(Unit_Phase2_CL1): CLASS(Unit_Phase2_Base) {
     respawnLinkedItems[] = {
         QCLASS(Helmet_Phase2_CL1), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase2_officerVisor), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
+};
+class CLASS(Unit_Phase2_CL1_Empire): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "INF 15 - Clone 1st Lieutenant";
+
+    uniformClass = QCLASS(Uniform_CL1_Empire);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Imperial_CL1_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Imperial_CL1_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    // No need to specify linked items,
+    // this unit only exist to texture the legacy uniform
 };
 
 class CLASS(Unit_Phase2_CT_Medic): CLASS(Unit_Phase2_Base) {

@@ -126,11 +126,25 @@ class CLASS(Helmet_Phase2_CLC_Legacy): CLASS(Helmet_Phase2_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
+class CLASS(Helmet_Phase2_CLC_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 04 (Lance Corporal, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_LCPL_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
 
 class CLASS(Helmet_Phase2_CPL): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 05 (Corporal)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\CPL_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
+class CLASS(Helmet_Phase2_CPL_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 05 (Corporal, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_CPL_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
@@ -142,11 +156,17 @@ class CLASS(Helmet_Phase2_CS): CLASS(Helmet_Phase2_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
-
 class CLASS(Helmet_Phase2_CS_Legacy): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 06 (Sergeant, Legacy)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\CS_legacy_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
+class CLASS(Helmet_Phase2_CS_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 06 (Sergeant, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_CS_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
@@ -158,11 +178,25 @@ class CLASS(Helmet_Phase2_CSS): CLASS(Helmet_Phase2_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
+class CLASS(Helmet_Phase2_CSS_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 07 (Staff Sergeant, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_CSS_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
 
 class CLASS(Helmet_Phase2_CSFC): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 08 (Sergeant First Class)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\CSFC_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
+class CLASS(Helmet_Phase2_CSFC_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 08 (Sergeant First Class, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_CSFC_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
@@ -181,11 +215,25 @@ class CLASS(Helmet_Phase2_CMS_Legacy): CLASS(Helmet_Phase2_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
+class CLASS(Helmet_Phase2_CMS_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 09 (Master Sergeant, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_CMS_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
 
 class CLASS(Helmet_Phase2_CSM): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 10 (Sergeant Major)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\CSM_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
+class CLASS(Helmet_Phase2_CSM_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 10 (Sergeant Major, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_CSM_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
@@ -205,11 +253,25 @@ class CLASS(Helmet_Phase2_WO): CLASS(Helmet_Phase2_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
+class CLASS(Helmet_Phase2_WO_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 11 (Warrant Officer, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_WO1_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
 
 class CLASS(Helmet_Phase2_WO2): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 12 (Warrant Officer 2)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\WO2_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
+class CLASS(Helmet_Phase2_WO2_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 12 (Warrant Officer 2, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_WO2_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
@@ -221,11 +283,18 @@ class CLASS(Helmet_Phase2_WO3): CLASS(Helmet_Phase2_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
-
-class CLASS(Helmet_Phase2_CL): CLASS(Helmet_Phase2_Base) {
-    displayName = "[KC] INF P2 Helm 14 (Lieutenant)";
+class CLASS(Helmet_Phase2_WO3_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 13 (Warrant Officer 3, Empire)";
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\phase2\CL_camo1_co.paa),
+        QPATHTOF(data\helmets\phase2\Imperial_WO3_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase2_CL_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 14 (Lieutenant, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_CL_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
@@ -234,6 +303,13 @@ class CLASS(Helmet_Phase2_CL1): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 15 (1st Lieutenant)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\CL1_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};
+class CLASS(Helmet_Phase2_CL1_Empire): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helm 15 (1st Lieutenant, Empire)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Imperial_CL1_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };

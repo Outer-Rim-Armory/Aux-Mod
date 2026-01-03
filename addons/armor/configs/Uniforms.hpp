@@ -35,6 +35,13 @@ class CLASS(Uniform_CT): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_CT);
     };
 };
+class CLASS(Uniform_CT_Prison): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 01 (Trooper, Prison)";
+    model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\lsd_gar_naked_uniform.p3d";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CT);
+    };
+};
 class CLASS(Uniform_CT_female): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 01 (Trooper, Female)";
     class ItemInfo: ItemInfo {
@@ -66,6 +73,13 @@ class CLASS(Uniform_SCT): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_SCT);
     };
 };
+class CLASS(Uniform_SCT_Prison): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 02 (Senior Trooper, Prison)";
+    model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\lsd_gar_naked_uniform.p3d";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_SCT);
+    };
+};
 class CLASS(Uniform_SCT_female): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 02 (Senior Trooper, Female)";
     class ItemInfo: ItemInfo {
@@ -87,6 +101,13 @@ class CLASS(Uniform_SCT_female_Empire): CLASS(Uniform_Base) {
 
 class CLASS(Uniform_VCT): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 03 (Veteran Trooper)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_VCT);
+    };
+};
+class CLASS(Uniform_VCT_Prison): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 03 (Veteran Trooper, Prison)";
+    model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\lsd_gar_naked_uniform.p3d";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_VCT);
     };
@@ -116,11 +137,23 @@ class CLASS(Uniform_CLC): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_CLC);
     };
 };
+class CLASS(Uniform_CLC_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 04 (Lance Corporal, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CLC_Empire);
+    };
+};
 
 class CLASS(Uniform_CPL): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 05 (Corporal)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_CPL);
+    };
+};
+class CLASS(Uniform_CPL_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 05 (Corporal, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CPL_Empire);
     };
 };
 
@@ -130,11 +163,23 @@ class CLASS(Uniform_CS): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_CS);
     };
 };
+class CLASS(Uniform_CS_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 06 (Sergeant, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CS_Empire);
+    };
+};
 
 class CLASS(Uniform_CSS): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 07 (Staff Sergeant)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_CSS);
+    };
+};
+class CLASS(Uniform_CSS_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 07 (Staff Sergeant, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CSS_Empire);
     };
 };
 
@@ -144,11 +189,23 @@ class CLASS(Uniform_CSFC): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_CSFC);
     };
 };
+class CLASS(Uniform_CSFC_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 08 (Sergeant First Class, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CSFC_Empire);
+    };
+};
 
 class CLASS(Uniform_CMS): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 09 (Master Sergeant)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_CMS);
+    };
+};
+class CLASS(Uniform_CMS_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 09 (Master Sergeant, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CMS_Empire);
     };
 };
 
@@ -158,11 +215,23 @@ class CLASS(Uniform_CSM): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_CSM);
     };
 };
+class CLASS(Uniform_CSM_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 10 (Sergeant Major, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CSM_Empire);
+    };
+};
 
 class CLASS(Uniform_WO): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 11 (Warrant Officer)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_WO);
+    };
+};
+class CLASS(Uniform_WO_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 11 (Warrant Officer, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_WO_Empire);
     };
 };
 
@@ -172,11 +241,23 @@ class CLASS(Uniform_WO2): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_WO2);
     };
 };
+class CLASS(Uniform_WO2_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 12 (Warrant Officer 2, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_WO2_Empire);
+    };
+};
 
 class CLASS(Uniform_WO3): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 13 (Warrant Officer 3)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_WO3);
+    };
+};
+class CLASS(Uniform_WO3_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 13 (Warrant Officer 3, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_WO3_Empire);
     };
 };
 
@@ -186,11 +267,23 @@ class CLASS(Uniform_CL): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_CL);
     };
 };
+class CLASS(Uniform_CL_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 14 (Lieutenant, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CL_Empire);
+    };
+};
 
 class CLASS(Uniform_CL1): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 15 (1st Lieutenant)";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_CL1);
+    };
+};
+class CLASS(Uniform_CL1_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 15 (1st Lieutenant, Empire)";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CL1_Empire);
     };
 };
 
@@ -311,11 +404,19 @@ class CLASS(Uniform_CXE): CLASS(Uniform_Base) {
     };
 };
 
-class CLASS(Uniform_CXA_Imperial): CLASS(Uniform_Base) {
-    displayName = "[KC] AVI Armor 01 (Imperial)";
+class CLASS(Uniform_CXA_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] AVI Armor 01 (Airman, Empire)";
 
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_CXA_Imperial);
+    };
+};
+
+class CLASS(Uniform_CXE_Empire): CLASS(Uniform_Base) {
+    displayName = "[KC] AVI Armor 06 (Ensign, Empire)";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CXE_Imperial);
     };
 };
 

@@ -88,8 +88,8 @@ class CLASS(Vest_ARMR_CS_Empire): CLASS(Vest_ARMR_CT) {
     hiddenSelectionsTextures[] = {
         "SDT_gear\data\Vests\chestplate_darksilver.paa",
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
-        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
-        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)  // Pauldron
+        "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa", // Holster
+        "\ls\core\addons\characters_clone_legacy\vests\common\heavy\heavy_accessories_co.paa"  // Pauldron
     };
     picture = "\ls\core\addons\characters_clone_legacy\_ui\airborne_nco_vest_ui_ca.paa";
 

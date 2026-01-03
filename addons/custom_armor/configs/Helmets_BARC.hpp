@@ -67,6 +67,15 @@ class CLASS(Helmet_BARC_KeeliCrimson_Empire): CLASS(Helmet_BARC_Keeli_Empire) {
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
+BARC_HELMET_CUSTOM(Kiwi);
+
+class CLASS(Helmet_BARC_Kiwi_Worn): CLASS(Helmet_BARC_Base) {
+    displayName = "[KC] INF BARC Helm ('Kiwi') - Worn";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\barc\camo\worn\Kiwi_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"
+    };
+};
 BARC_HELMET_CUSTOM(Lines);
 BARC_HELMET_VISOR_CUSTOM(Rat,Crimson);
 BARC_HELMET_CUSTOM(Weenie);

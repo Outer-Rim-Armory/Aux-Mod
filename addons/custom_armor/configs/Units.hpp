@@ -547,6 +547,36 @@ class CLASS(Unit_Keeli_Geo): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Kiwi): CLASS(Unit_Phase2_Base) {
+    displayName = "Kiwi";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Kiwi);
+
+    uniformClass = QCLASS(Uniform_Kiwi);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Kiwi_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Kiwi_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_BARC_Kiwi), QCLASS(Vest_CS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_BARC_Kiwi), QCLASS(Vest_CS), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+class CLASS(Unit_Kiwi_Worn): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Kiwi_Worn);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\camo\worn\Kiwi_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\camo\worn\Kiwi_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+};
+
 class CLASS(Unit_Kujo): CLASS(Unit_Phase2_Base) {
     displayName = "Kujo";
 

@@ -43,6 +43,7 @@ class CfgGroups {
                     name = "B1 Rifle Squad";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     side = OPFOR;
+                    ls_dispenser_available = 1;
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1);
@@ -72,6 +73,7 @@ class CfgGroups {
                     name = "B1 Rifle Team";
                     icon = "\A3\ui_f\data\map\markers\nato\o_inf.paa";
                     side = OPFOR;
+                    ls_dispenser_available = 1;
 
                     class Object0: Object0 {
                         vehicle = QCLASS(CIS_Unit_Droid_B1);
@@ -419,7 +421,51 @@ class CfgGroups {
                         vehicle = QCLASS(CIS_Unit_Droid_B2);
                     };
                 };
+
+                class BXSquad: RifleSquad {
+                    name = "BX Squad";
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX_Captain);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX);
+                    };
+                    class Object4: Object4 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX);
+                    };
+                    class Object5: Object5 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX);
+                    };
+                    class Object6: Object6 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX);
+                    };
+                };
+
+                class BXTeam: RifleTeam {
+                    name = "BX Team";
+
+                    class Object0: Object0 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX_Captain);
+                    };
+                    class Object1: Object1 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX);
+                    };
+                    class Object2: Object2 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX);
+                    };
+                    class Object3: Object3 {
+                        vehicle = QCLASS(CIS_Unit_Droid_BX);
+                    };
+                };
             };
+
 
             class VehicleFiller {
                 name = "Vehicle Fillers";

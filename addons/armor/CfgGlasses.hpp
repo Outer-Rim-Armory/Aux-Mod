@@ -40,4 +40,20 @@ class CfgGlasses {
         displayName = "[KC] Pauldron (P2)";
         OVERLAY_P2;
     };
+
+    class CLASS(Facewear_phase1_Pauldron_Empire): CLASS(Facewear_ARF_Flaps) {
+        displayName = "[KC] Pauldron (P1, Empire)";
+        model = "\ls\core\addons\characters_clone_legacy\vests\officer\ls_gar_lieutenant_vest.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\infantry\officer\Imperial_camo1_co.paa) // Pauldron
+        };
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_officer_ca.paa";
+        OVERLAY_P1;
+    };
+
+    class CLASS(Facewear_phase2_Pauldron_Empire): CLASS(Facewear_phase1_Pauldron_Empire) {
+        displayName = "[KC] Pauldron (P2, Empire)";
+        OVERLAY_P2;
+    };
 };
