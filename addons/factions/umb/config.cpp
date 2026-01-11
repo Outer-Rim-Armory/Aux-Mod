@@ -13,7 +13,8 @@ class CfgPatches {
         };
         units[] = {
             QCLASS(UMB_Unit_Base),
-            QCLASS(UMB_Unit_Rifleman)
+            QCLASS(UMB_Unit_Rifleman),
+            QCLASS(UMB_Backpack)
         };
         weapons[] = {
         };

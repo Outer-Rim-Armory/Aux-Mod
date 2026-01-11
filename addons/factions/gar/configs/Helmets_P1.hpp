@@ -38,4 +38,5 @@ class CLASS(Helmet_Phase1_HowzerBrown): CLASS(Helmet_Phase1_Base) {
 P1_HELMET_UNIT(104th);
 P1_HELMET_UNIT(212th);
 P1_HELMET_UNIT(501st);
+P1_HELMET_UNIT(91st);
 P1_HELMET_UNIT_NAME(91st,Ponds);

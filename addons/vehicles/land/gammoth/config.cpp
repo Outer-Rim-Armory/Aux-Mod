@@ -18,7 +18,8 @@ class CfgPatches {
             QCLASS(Gammoth_Ammo),
             QCLASS(Gammoth_Medical),
             QCLASS(Gammoth_Repair),
-            QCLASS(Gammoth_Refuel)
+            QCLASS(Gammoth_Refuel),
+            QCLASS(Gammoth_Device)
         };
         weapons[] = {};
         VERSION_CONFIG;

@@ -15,8 +15,8 @@ class CfgPatches {
         };
         units[] = {};
         weapons[] = {
-            QGVAR(DP24_Base),
-            QGVAR(DP24)
+            QCLASS(DP24_Base),
+            QCLASS(DP24)
         };
         VERSION_CONFIG;
     };

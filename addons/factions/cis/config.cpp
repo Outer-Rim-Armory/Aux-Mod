@@ -66,7 +66,7 @@ class CfgPatches {
             QCLASS(Unit_Droid_BX_Captain),
             QCLASS(CIS_Backpack_Droid_B1),
             QCLASS(Backpack_Droid_B1),
-            QCLASS(Backpack_Droid_B1_Commander),
+            QCLASS(Jetpack_Droid_B1),
             QCLASS(CIS_Backpack_Droid_B1_predef_AT),
             QCLASS(CIS_Backpack_Droid_B1_predef_AA),
             QCLASS(CIS_Backpack_Droid_B1_Engineer),

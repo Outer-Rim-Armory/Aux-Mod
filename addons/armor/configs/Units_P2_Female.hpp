@@ -1,4 +1,4 @@
-class CLASS(Unit_Phase2__Base_female): CLASS(Unit_Phase2_Base) {
+class CLASS(Unit_Phase2_Base_female): CLASS(Unit_Phase2_Base) {
     displayName = "INF - Clone Trooper (Female, Base)";
 
     uniformClass = QCLASS(Uniform_female);

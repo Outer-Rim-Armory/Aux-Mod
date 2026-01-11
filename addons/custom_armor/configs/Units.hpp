@@ -315,6 +315,28 @@ class CLASS(Unit_Evo): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Goldie): CLASS(Unit_Phase2_Base) {
+    displayName = "Goldie";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Goldie);
+
+    uniformClass = QCLASS(Uniform_Goldie);
+    backpack = QCLASS(Jetpack_JT12_LR);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Goldie_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Goldie_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Airborne_Goldie), QCLASS(Vest_Airborne_CT), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Airborne_Goldie), QCLASS(Vest_Airborne_CT), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Grey): CLASS(Unit_Phase2_Base) {
     displayName = "Grey";
 
@@ -968,7 +990,16 @@ class CLASS(Unit_Phase2_Insulated_Keeli): CLASS(Unit_Phase2_Insulated_Base) {
         QPATHTOF(data\uniforms\insulated\Keeli_lower_co.paa),
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2Insulated\data\undersuit_co.paa"
     };
+};
 
+class CLASS(Unit_Phase2_Insulated_Kiwi): CLASS(Unit_Phase2_Insulated_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Phase2_Insulated_Kiwi);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\insulated\Kiwi_upper_co.paa),
+        QPATHTOF(data\uniforms\insulated\Kiwi_lower_co.paa),
+        QPATHTOF(data\uniforms\insulated\Kiwi_undersuit_co.paa),
+    };
 };
 
 class CLASS(cloneCommando_unit_base);

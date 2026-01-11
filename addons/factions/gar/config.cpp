@@ -11,9 +11,9 @@ class CfgPatches {
             QCLASS(armor)
         };
         units[] = {
-            QCLASS(Unit_CG),
+            QCLASS(Unit_CG_Trooper),
             QCLASS(Unit_CG_Stone),
-            QCLASS(Unit_DC),
+            QCLASS(Unit_DC_Trooper),
             QCLASS(Unit_Fil),
             QCLASS(Unit_FilSquad),
             QCLASS(Unit_HowzerBlue),
@@ -22,7 +22,7 @@ class CfgPatches {
             QCLASS(Unit_187th_Trooper),
             QCLASS(Unit_212th_Trooper),
             QCLASS(Unit_501st_Trooper),
-            QCLASS(Unit_91st),
+            QCLASS(Unit_91st_Trooper),
             QCLASS(Unit_91st_Ponds),
 
             QGROUND_CLASS(Helmet_Phase1_CG),

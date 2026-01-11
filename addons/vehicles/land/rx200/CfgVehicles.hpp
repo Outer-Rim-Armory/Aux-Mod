@@ -73,6 +73,7 @@ class CfgVehicles {
         };
 
         class ACE_SelfActions: ACE_SelfActions {
+            AI_CREW_SPAWNER;
         };
 
         class Turrets: Turrets {

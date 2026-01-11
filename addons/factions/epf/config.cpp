@@ -19,7 +19,7 @@ class CfgPatches {
             QCLASS(EPF_Unit_AT),
             QCLASS(EPF_Unit_AA),
             QCLASS(EPF_Unit_AssaultHeavy),
-            QCLASS(EPF_Unit_AssaultHeavy_Jetpack),
+            QCLASS(EPF_Unit_AssaultMedium_Jetpack),
             QCLASS(EPF_Unit_HeavyGunner),
             QCLASS(EPF_Unit_AssaultMedium),
             QCLASS(EPF_Unit_Pilot),
@@ -39,7 +39,7 @@ class CfgPatches {
             QCLASS(EPF_Backpack_Assault_Predef_Z6),
             QCLASS(EPF_Backpack_Predef_Sniper),
             QCLASS(EPF_Jetpack),
-            QCLASS(EPF_Jetpack_Predef),
+            QCLASS(EPF_Unit_Rifleman_Jetpack),
             QCLASS(EPF_Backpack_RTO),
             QCLASS(EPF_Backpack_RTO_Predef_SL),
             QCLASS(AAT_EPF),
@@ -53,7 +53,7 @@ class CfgPatches {
             QCLASS(Hornet_AT_EPF),
             QCLASS(Khezu_EPF),
             QCLASS(Khezu_Armed_EPF),
-            QCLASS(AST_EPF),
+            QCLASS(ScoutTank_EPF),
             QCLASS(Ogre_EPF),
             QCLASS(Ogre_Armed_EPF),
             QCLASS(Vespoid_EPF),
@@ -68,6 +68,8 @@ class CfgPatches {
             QCLASS(EPF_Helmet_Visor),
             QCLASS(EPF_Helmet_Visor_Goggles),
             QCLASS(EPF_Helmet_Heavy),
+            QCLASS(EPF_Helmet_Pilot),
+            QCLASS(EPF_Helmet_Guard),
             QCLASS(EPF_Helmet_Presidente),
             QCLASS(EPF_Helmet_General),
             QCLASS(EPF_Uniform),
@@ -77,7 +79,8 @@ class CfgPatches {
             QCLASS(EPF_Vest_Medium),
             QCLASS(EPF_Vest_AssaultMedium),
             QCLASS(EPF_Vest_AssaultHeavy),
-            QCLASS(EPF_Vest_General)
+            QCLASS(EPF_Vest_General),
+            QCLASS(EPF_Vest_Guard),
         };
         VERSION_CONFIG;
 

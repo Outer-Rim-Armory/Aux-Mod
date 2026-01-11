@@ -60,6 +60,7 @@ class CfgPatches {
             QCLASS(SC_Helmet_T2),
             QCLASS(SC_Helmet_T3),
             QCLASS(SC_Uniform),
+            QCLASS(SC_Uniform_Vex),
             QCLASS(SC_Vest),
             QCLASS(SC_Vest_Medium),
             QCLASS(SC_Vest_Heavy)

@@ -14,9 +14,10 @@ class CfgPatches {
         };
         units[] = {};
         weapons[] = {
-            QGVAR(DX50C_Base),
-            QGVAR(DX50C),
-            QGVAR(DX50C_Fried),
+            QCLASS(DX50C_Base),
+            QCLASS(DX50C),
+            QCLASS(DX50C_UGL),
+            QCLASS(DX50C_UGL_Fried),
         };
         VERSION_CONFIG;
     };

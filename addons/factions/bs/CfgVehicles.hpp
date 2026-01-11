@@ -476,8 +476,8 @@ class CfgVehicles {
         typicalCargo[] = {QCLASS(BS_Unit_Rifleman)};
     };
 
-    class BNA_KC_Plesioth_Base;
-    class BNA_KC_Plesioth_BS: BNA_KC_Plesioth_Base {
+    class CLASS(Plesioth_Base);
+    class CLASS(Plesioth_BS): BNA_KC_Plesioth_Base {
         SCOPE_PUBLIC;
 
         side = INDEP;
