@@ -101,10 +101,6 @@ class CfgVehicles {
                 };
             };
         };
-        class EventHandlers
-        {
-            init = "(_this # 0) setVariable [""BNA_KC_vehicles_DeploySquadShield"", false,true];";
-        };
         class UserActions {
             class ActivateEMP {
                 displayName = "<t font='RobotoCondensedBold'>Activate EMP</t>";
@@ -120,6 +116,7 @@ class CfgVehicles {
                 condition = QUOTE(ace_player isEqualTo currentPilot this and this call EFUNC(weapons,canUseVehicleEMP););
                 statement = QUOTE(this call EFUNC(weapons,useVehicleEMP););
             };
+            VS_SQUADSHIELD
         };
 
         class ACE_SelfActions: ACE_SelfActions {

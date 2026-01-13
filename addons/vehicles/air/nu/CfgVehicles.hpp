@@ -106,6 +106,8 @@ class CfgVehicles {
             class RampClose: RampClose {
                 condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 1});
             };
+            // Vehicle Skills Citadel
+            VS_CITADELSHIELD
         };
 
         INVENTORY_VEHICLE_BASE(3);

@@ -96,4 +96,8 @@ class CfgVehicles {
             SKIN_SWITCHER;
         };
     };
+
+    class CLASS(SoundSource_Repair_loop){
+        sound = QCLASS(SFX_Repair_Loop); // in order to create a repair loop sfx it needed a cfgvehicles entry for the sound
+    };
 };

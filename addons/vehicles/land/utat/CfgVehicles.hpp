@@ -2,6 +2,7 @@ class CfgVehicles {
     class 3AS_UTAT_01_Base;
     class 3AS_UTAT: 3AS_UTAT_01_Base {
         class ACE_SelfActions;
+        class UserActions;
     };
     class CLASS(UTAT): 3AS_UTAT {
         SCOPE_PUBLIC;
@@ -79,6 +80,10 @@ class CfgVehicles {
 
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
+        };
+
+        class UserActions: UserActions {
+            VS_CITADELSHIELD
         };
 
         INVENTORY_VEHICLE_BASE(9);

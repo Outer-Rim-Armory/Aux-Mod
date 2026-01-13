@@ -350,4 +350,67 @@ class CfgVehicles {
             };
         };
     };
+        class CLASS(LAATi_Med): CLASS(LAATi_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "LAAT/i MK2 (Medical)";
+        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2);
+
+        class AnimationSources: AnimationSources {
+            class Doors: Doors {
+                initPhase = 1;
+            };
+        };
+
+        class Turrets: Turrets {
+            class CoPilot: CoPilot {};
+            class CargoTurret_01: CargoTurret_01 {};
+            class CargoTurret_02: CargoTurret_02 {};
+            class CargoTurret_03: CargoTurret_03 {};
+            class CargoTurret_04: CargoTurret_04 {};
+            class CargoTurret_05: CargoTurret_05 {};
+            class CargoTurret_06: CargoTurret_06 {};
+        };
+        class UserActions: UserActions {
+            VS_CCP
+        };
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(air\laati\data\textures\Medical\Hull_co.paa),
+            QPATHTOF(air\laati\data\textures\KeeliCompany2\Wings_co.paa),
+            "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+            "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+            "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+        };
+
+        textureList[] = {
+            "KeeliCompanyMed", 1,
+            "ImperialMed", 0,
+        };
+
+        class TextureSources {
+            class KeeliCompanyMed {
+                author = AUTHOR;
+                displayName = "Keeli Company Medical";
+                factions[] = {};
+                textures[] = {
+                    QPATHTOF(air\laati\data\textures\KeeliCompany2\Hull_co.paa),
+                    QPATHTOF(air\laati\data\textures\KeeliCompany2\Wings_co.paa),
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class ImperialMed: KeeliCompanyMed {
+                displayName = "Imperial";
+                textures[] = {
+                    QPATHTOF(air\laati\data\textures\Medical\Hull_Imp_CO.paa),
+                    "\3AS\3as_Laat\LAATI\data\wings_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\weapons_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\weapon_Details_Imp_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\interior_Imp_CO.paa"
+                };
+            };
+        };
+    };
 };

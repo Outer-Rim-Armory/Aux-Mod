@@ -14,4 +14,15 @@ class CfgSounds {
         sound[] = {QPATHTOF(data\audio\Heal_Loop.wss), 5, 1, 50};
         titles[] = {};
     };
+    class CLASS(Repair_Loop){
+        name = "Repair Loop";
+        sound[] = {QPATHTOF(data\audio\Repair_Loop.wss), 5, 1, 50};
+        titles[] = {};
+    };
+};
+
+class CfgSFX {
+    class CLASS(SFX_Repair_Loop) {
+        sound[] = {QPATHTOF(data\audio\Repair_Loop.wss), 5, 1, 50};
+    };
 };

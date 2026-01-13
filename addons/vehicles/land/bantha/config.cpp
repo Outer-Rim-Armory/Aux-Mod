@@ -15,7 +15,11 @@ class CfgPatches {
         units[] = {
             QCLASS(Bantha_Unarmed),
             QCLASS(Bantha_Assault),
-            QCLASS(Bantha_IFV)
+            QCLASS(Bantha_IFV),
+            QCLASS(Bantha_MSV),
+            QCLASS(Bantha_Cargo),
+            QCLASS(Bantha_AA),
+            QCLASS(Bantha_Mortar)
         };
         weapons[] = {};
         VERSION_CONFIG;

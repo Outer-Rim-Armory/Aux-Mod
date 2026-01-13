@@ -236,3 +236,174 @@ ace_hearing_protection = 0.85
 
 // Default bar statement for ACE Arsenal Stats
 #define STAT_BAR_STATEMENT(min,max) [ARR_3((_this select 0) select 0,_this select 1,[ARR_3([ARR_2(min,max)],[ARR_2(0.01,1)],false)])] call ace_arsenal_fnc_statBarStatement_default
+
+
+// vehicle skills macros
+#define VS_SQUADSHIELD class DeploySquadShield \
+{ \
+    displayName = "Deploy Squad Shield"; \
+    displayNameDefault = "<img size='2' image='\a3\missions_f_beta\data\img\iconmptypedefense_ca.paa'/>"; \
+    priority = 69; \
+    radius = 10; \
+    position = "camera"; \
+    showWindow = 1; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(!(this getVariable [ARR_2(QQGVAR(DeploySquadShield),false)]) && fuel this > 0;); \
+    statement = QUOTE(call FUNC(itemCheck);); \
+}; \
+class UnDeploySquadShield \
+{ \
+    displayName = "Undeploy Squad Shield"; \
+    displayNameDefault = ""; \
+    priority = 69; \
+    radius = 10; \
+    position = "camera"; \
+    showWindow = 0; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(this getVariable [ARR_2(QQGVAR(DeploySquadShield),true)]); \
+    statement = QUOTE([ARR_2(this,'undeploy')] call FUNC(deploySquadShield);); \
+};
+#define VS_REPAIRMODE class DeployModule \
+{ \
+    displayName = "Deploy Repair Module"; \
+    displayNameDefault = "<img size='2' image='\a3\ui_f_oldman\data\igui\cfg\holdactions\repair_ca.paa'/>"; \
+    priority = 69; \
+    radius = 10; \
+    position = "camera"; \
+    showWindow = 1; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(!(this getVariable [ARR_2(QQGVAR(DeployModule),false)]) && fuel this > 0;); \
+    statement = QUOTE(call FUNC(itemCheck);); \
+}; \
+class UnDeployModule \
+{ \
+    displayName = "Undeploy Repair Module"; \
+    displayNameDefault = ""; \
+    priority = 69; \
+    radius = 10; \
+    position = "camera"; \
+    showWindow = 0; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(this getVariable [ARR_2(QQGVAR(DeployModule),true)]); \
+    statement = QUOTE([ARR_2(this,'undeploy')] call FUNC(deployModuleRepair);); \
+};
+#define VS_CITADELSHIELD class DeployCitadel \
+{ \
+    displayName = "Deploy Citadel Shield"; \
+    displayNameDefault = "<img size='2' image='\a3\missions_f_beta\data\img\iconmptypedefense_ca.paa'/>"; \
+    priority = 69; \
+    radius = 15; \
+    position = "camera"; \
+    showWindow = 1; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(!(this getVariable [ARR_2(QQGVAR(DeployCitadelShield),false)]) && fuel this > 0;); \
+    statement = QUOTE(call FUNC(itemCheck);); \
+}; \
+class UnDeployCitadel \
+{ \
+    displayName = "Undeploy Citadel Shield"; \
+    displayNameDefault = ""; \
+    priority = 69; \
+    radius = 15; \
+    position = "camera"; \
+    showWindow = 0; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(this getVariable [ARR_2(QQGVAR(DeployCitadelShield),true)]); \
+    statement = QUOTE([ARR_2(this,'undeploy')] call FUNC(deployCitadelShield);); \
+};
+#define VS_ASSAULTSHIELD class DeployVehShield \
+{ \
+    displayName = "Deploy Assault Shield"; \
+    displayNameDefault = "<img size='2' image='\a3\missions_f_beta\data\img\iconmptypedefense_ca.paa'/>"; \
+    priority = 69; \
+    radius = 10; \
+    position = "camera"; \
+    showWindow = 1; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(!(this getVariable [ARR_2(QQGVAR(DeployVehShield),false)]) && fuel this > 0;); \
+    statement = QUOTE(call FUNC(itemCheck);); \
+}; \
+class UnDeployVehShield \
+{ \
+    displayName = "Undeploy Assault Shield"; \
+    displayNameDefault = ""; \
+    priority = 69; \
+    radius = 10; \
+    position = "camera"; \
+    showWindow = 0; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(this getVariable [ARR_2(QQGVAR(DeployVehShield),true)]); \
+    statement = QUOTE([ARR_2(this,'undeploy')] call FUNC(deployVehShield);); \
+};
+#define VS_CCP class DeployCCP \
+{ \
+    displayName = "Deploy CCP"; \
+    displayNameDefault = "<img size='2' image='\a3\missions_f_beta\data\img\iconmptypedefense_ca.paa'/>"; \
+    priority = 69; \
+    radius = 10; \
+    position = "camera"; \
+    showWindow = 1; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(!(this getVariable [ARR_2(QQGVAR(deployedCCP),false)]) && fuel this > 0;); \
+    statement = QUOTE(call FUNC(itemCheck);); \
+}; \
+class UnDeployCCP \
+{ \
+    displayName = "Undeploy CCP"; \
+    displayNameDefault = ""; \
+    priority = 69; \
+    radius = 10; \
+    position = "camera"; \
+    showWindow = 0; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(this getVariable [ARR_2(QQGVAR(deployedCCP),true)];); \
+    statement = QUOTE(this call FUNC(undeployCCP);); \
+};
+#define VS_AIRCITADELSHIELD class DeployCitadel \
+{ \
+    displayName = "Deploy Citadel Shield"; \
+    displayNameDefault = "<img size='2' image='\a3\missions_f_beta\data\img\iconmptypedefense_ca.paa'/>"; \
+    priority = 69; \
+    radius = 15; \
+    position = "camera"; \
+    showWindow = 1; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(!(this getVariable [ARR_2(QQGVAR(DeployCitadelShield),false)]) && fuel this > 0 && isEngineOn this == false;); \
+    statement = QUOTE(call FUNC(itemCheck);); \
+}; \
+class UnDeployCitadel \
+{ \
+    displayName = "Undeploy Citadel Shield"; \
+    displayNameDefault = ""; \
+    priority = 69; \
+    radius = 15; \
+    position = "camera"; \
+    showWindow = 0; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(this getVariable [ARR_2(QQGVAR(DeployCitadelShield),true)]); \
+    statement = QUOTE([ARR_2(this,'undeploy')] call FUNC(deployCitadelShield);); \
+};

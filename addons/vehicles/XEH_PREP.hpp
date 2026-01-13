@@ -26,3 +26,8 @@ PREP(unflip);
 PREP(vehicleSpawner);
 PREP(vivCanLoad);
 PREP(vivLoad);
+PREP(itemCheck);
+PREP(deployVehShield);
+PREP(deployModuleRepair);
+PREP(deployCitadelShield);
+PREP(deploySquadShield);

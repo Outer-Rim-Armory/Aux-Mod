@@ -283,6 +283,10 @@ class CfgVehicles {
             "ShowATTERebelMod", TRUE
         };
 
+        class UserActions: UserActions {
+            VS_CITADELSHIELD
+        };
+
         tf_range = 45000; // 1.5x range
     };
 };
