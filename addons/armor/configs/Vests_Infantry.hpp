@@ -253,7 +253,7 @@ class CLASS(Vest_CSFC): CLASS(Vest_CS) {
     picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
 };
 
-class CLASS(cloneVest_CMS): CLASS(Vest_CS) {
+class CLASS(Vest_CMS): CLASS(Vest_CS) {
     displayName = "[KC] INF Vest 09 (CMS)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\heavy\CMS_camo1_co.paa),
@@ -305,7 +305,7 @@ class CLASS(Vest_CSFC_Empire): CLASS(Vest_CS_Empire) {
     picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
 };
 
-class CLASS(cloneVest_CMS_Empire): CLASS(Vest_CS_Empire) {
+class CLASS(Vest_CMS_Empire): CLASS(Vest_CS_Empire) {
     displayName = "[KC] INF Vest 09 (CMS)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\heavy\Empire_CMS_camo1_co.paa),

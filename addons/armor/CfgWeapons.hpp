@@ -178,7 +178,7 @@ class CfgWeapons {
     #include "configs\Vests_ARC.hpp"
     #include "configs\Vests_cloneCommando.hpp"
 
-    class BNA_KC_Vest_ARF: CLASS(Vest_Basic2) {
+    class CLASS(Vest_ARF): CLASS(Vest_Basic2) {
         SCOPE_PUBLIC;
         displayName = "[KC] SF ARF Vest";
 

@@ -13,9 +13,9 @@ class CfgPatches {
         };
         units[] = {};
         weapons[] = {
-            QGVAR(SBB3_Base),
-            QGVAR(SBB3),
-            QGVAR(SBB3_Fried)
+            QCLASS(SBB3_Base),
+            QCLASS(SBB3),
+            QCLASS(SBB3_Fried)
         };
         VERSION_CONFIG;
     };

@@ -24,7 +24,8 @@ class CfgPatches {
             QCLASS(Arctic_Pilot_Clansman),
             QCLASS(Arctic_JT12),
             QCLASS(Clan_Arctic_JT12),
-            QCLASS(Arctic_Heavy_Jetpack)
+            QCLASS(Arctic_Heavy_Jetpack),
+            QCLASS(CABackpack)
         };
         weapons[] = {
             QCLASS(Arctic_Helmet_Base),

@@ -15,6 +15,8 @@ class CfgPatches {
         };
         units[] = {};
         weapons[] = {
+            QCLASS(Arkanian),
+            QCLASS(Arkanian_Fried),
         };
         VERSION_CONFIG;
     };

@@ -31,9 +31,9 @@ GROUND_HOLDER(Helmet_Phase1_Pilot_Base,"AVI P1 Helm (Base)");
 GROUND_HOLDER(Helmet_Phase1Geo_Pilot,"AVI GEO Helm");
 GROUND_HOLDER(Helmet_Phase1_Pilot_CXA,"AVI P1 Helm 01 (Airman)");
 
-GROUND_HOLDER(Helmet_Phase1_Tanker_Base,"ARMR P1 Helm (Base)");
-GROUND_HOLDER(Helmet_Phase1_Tanker_CT,"ARMR P1 Helm 01 (Trooper)");
-GROUND_HOLDER(Helmet_Phase1_Tanker_CT_v2,"ARMR P1 Helm 01 (Trooper, v2)");
+GROUND_HOLDER(Helmet_Phase1_ARMR_Base,"ARMR P1 Helm (Base)");
+GROUND_HOLDER(Helmet_Phase1_ARMR_CT,"ARMR P1 Helm 01 (Trooper)");
+GROUND_HOLDER(Helmet_Phase1_ARMR_CT_v2,"ARMR P1 Helm 01 (Trooper, v2)");
 
 GROUND_HOLDER(Helmet_Phase1_Base,"INF P1 Helm (Base)");
 GROUND_HOLDER(Helmet_Phase1_CR,"INF P1 Helm 00 (Recruit)");
@@ -67,11 +67,11 @@ GROUND_HOLDER(Helmet_Phase2_Pilot_CXE,"AVI P2 Helm 06 (Ensign)");
 GROUND_HOLDER(Helmet_Phase2_Pilot_Officer_CamoBrown,"AVI P2 Helm 02 (Officer) - Brown Camo");
 GROUND_HOLDER(Helmet_Phase2_Pilot_Officer_CamoGrey,"AVI P2 Helm 02 (Officer) - Grey Camo");
 
-GROUND_HOLDER(Helmet_Phase2_Tanker_Base,"ARMR P2 Helm (Base)");
-GROUND_HOLDER(Helmet_Phase2_Tanker_CT,"ARMR P2 Helm 01 (Trooper)");
-GROUND_HOLDER(Helmet_Phase2_Tanker_CT_v2,"ARMR P2 Helm 01 (Trooper, v2)");
-GROUND_HOLDER(Helmet_Phase2_Tanker_Enlisted_CamoBrown,"ARMR P2 Helm 01 (Enlisted) - Brown Camo");
-GROUND_HOLDER(Helmet_Phase2_Tanker_Enlisted_CamoGrey,"ARMR P2 Helm 01 (Enlisted) - Grey Camo");
+GROUND_HOLDER(Helmet_Phase2_ARMR_Base,"ARMR P2 Helm (Base)");
+GROUND_HOLDER(Helmet_Phase2_ARMR_CT,"ARMR P2 Helm 01 (Trooper)");
+GROUND_HOLDER(Helmet_Phase2_ARMR_CT_v2,"ARMR P2 Helm 01 (Trooper, v2)");
+GROUND_HOLDER(Helmet_Phase2_ARMR_Enlisted_CamoBrown,"ARMR P2 Helm 01 (Enlisted) - Brown Camo");
+GROUND_HOLDER(Helmet_Phase2_ARMR_Enlisted_CamoGrey,"ARMR P2 Helm 01 (Enlisted) - Grey Camo");
 
 GROUND_HOLDER(Helmet_Phase2_Base,"INF P2 Helm (Base)");
 GROUND_HOLDER(Helmet_Phase2_CR,"INF P2 Helm 00 (Recruit)");

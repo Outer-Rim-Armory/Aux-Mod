@@ -13,7 +13,7 @@ class CfgPatches {
             "OPTRE_Vehicles_Scorpion"
         };
         units[] = {
-            QCLASS(Plesioth)
+            QCLASS(Plesioth_Base)
         };
         weapons[] = {};
         VERSION_CONFIG;

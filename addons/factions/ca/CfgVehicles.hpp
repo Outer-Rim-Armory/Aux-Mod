@@ -205,6 +205,30 @@ class CfgVehicles {
         hiddenSelectionsTextures[] = {
             QPATHTOF(CA\data\backpacks\arctic\Arctics_JT12_co.paa)
             };
+
+            maximumLoad = 600;
+
+        EGVAR(jetpacks,isJetpack) = TRUE;
+        EGVAR(jetpacks,speed) = JETPACK_SPEED_DEFAULT;
+        EGVAR(jetpacks,strength) = JETPACK_STRENGTH_DEFAULT;
+        EGVAR(jetpacks,fuel) = JETPACK_FUEL_DEFAULT;
+        EGVAR(jetpacks,canHover) = TRUE;
+
+        // Effects
+        EGVAR(jetpacks,effectPoints)[] = {
+            {-0.13251, -0.219357, -0.247619},
+            { 0.15051, -0.219357, -0.247619}
+        };
+        EGVAR(jetpacks,effects)[] = {
+            QCLASS(cloudlet_jetpackFire_blue),
+            QCLASS(cloudlet_jetpackSmoke)
+        };
+        EGVAR(jetpacks,effectSound) = QPATHTOEF(jetpacks,data\audio\Jetpack_Loop.wss);
+        EGVAR(jetpacks,lightColor)[] = {0, 0.1, 0.9};
+
+        EGVAR(jetpacks,freefallHeight) = 500;
+
+        EGVAR(custom_armor,isCustom) = FALSE;
     };
 
     class CLASS(Clan_Arctic_JT12): CLASS(Mando_JT12_Base) {

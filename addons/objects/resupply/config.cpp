@@ -27,7 +27,7 @@ class CfgPatches {
             QCLASS(Resupply_Misc),
             QCLASS(Resupply_Sapper),
             QCLASS(Resupply_Spartan),
-            QCLASS(Mortar_Resupply)
+            QCLASS(Mortar_Crate)
         };
         weapons[] = {};
         VERSION_CONFIG;

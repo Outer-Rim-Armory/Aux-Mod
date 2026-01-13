@@ -13,8 +13,8 @@ class CfgPatches {
         };
         units[] = {};
         weapons[] = {
-            QGVAR(UMB36_Base),
-            QGVAR(UMB36)
+  //          QCLASS(UMB36_Base),
+  //          QCLASS(UMB36)
         };
         VERSION_CONFIG;
         skipWhenMissingDependencies = TRUE;

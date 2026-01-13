@@ -53,6 +53,7 @@ class CfgPatches {
             QCLASS(AAT_BS),
             QCLASS(AAT_Heavy_BS),
             QCLASS(AAT_King_BS),
+            QCLASS(Plesioth_BS),
             QCLASS(Conga_IFV_BS),
             QCLASS(Conga_MGS_BS),
             QCLASS(ScoutTank_BS),
@@ -71,7 +72,8 @@ class CfgPatches {
             QCLASS(BS_Uniform),
             QCLASS(BS_Vest),
             QCLASS(BS_Vest_Medium),
-            QCLASS(BS_Vest_Heavy)
+            QCLASS(BS_Vest_Heavy),
+            QCLASS(BS_Vest_Captain)
         };
         VERSION_CONFIG;
 

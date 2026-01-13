@@ -54,9 +54,9 @@
 //    };
 
 //    class CLASS(UMB36): CLASS(UMB36_Base) {//
-        SCOPE_PUBLIC;
+//        SCOPE_PUBLIC;
 
-        displayName = "[KC] UMB-36";
-        baseWeapon = QCLASS(UMB36);
+//        displayName = "[KC] UMB-36";
+//        baseWeapon = QCLASS(UMB36);
 //    };
 //};

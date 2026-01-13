@@ -14,7 +14,7 @@ class CfgPatches {
         };
         units[] = {
             "BNA_KC_carrierFlag_kc",
-            "BNA_KC_carrierFlag_kcmed"
+            "BNA_KC_carrierFlag_kc_med"
         };
         weapons[] = {
             "BNA_KC_carrierFlag_kc_item",

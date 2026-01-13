@@ -118,7 +118,7 @@ class CfgVehicles {
         class ACE_Actions;
         class ACE_SelfActions;
     };
-    class CLASS(LAATc): lsd_heli_laatc {
+    class CLASS(LAATc_New): lsd_heli_laatc {
         GVAR(hasShield) = TRUE;
         GVAR(health) = 2;
         GVAR(regenDelay) = SHIELD_REGEN_DELAY_DEFAULT;

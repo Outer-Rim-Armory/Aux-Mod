@@ -15,8 +15,7 @@ class CfgPatches {
             QCLASS(resupply_jetpackFuel)
         };
         weapons[] = {
-            QGVAR(fuelCan_empty),
-            QGVAR(fuelCan_mag)
+            QGVAR(fuelCan_empty)
         };
         VERSION_CONFIG;
     };
