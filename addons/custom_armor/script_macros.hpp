@@ -486,6 +486,33 @@ class CLASS(DOUBLES(Helmet_Phase12,var1)##var2): CLASS(DOUBLES(Helmet_Phase12,va
     }; \
 }
 
+#define AB_HELMET_VISOR_CUSTOM(var1,var2) class CLASS(DOUBLES(Helmet_Airborne,var1)): CLASS(Helmet_Airborne_Base) { \
+    displayName = QUOTE([KC] AB Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\airborne\DOUBLES(var1,camo1_co.paa)), \
+        QPATHTOF(data\helmets\airborne\DOUBLES(var1,camo1_co.paa)) \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Airborne_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+    EGVAR(armor,nvCanToggle) = TRUE; \
+    EGVAR(armor,nvHelmetOff) = QCLASS(DOUBLES(Helmet_Airborne,var1)); \
+    EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Airborne,var1)##var2##); \
+}; \
+class CLASS(DOUBLES(Helmet_Airborne,var1)##var2): CLASS(DOUBLES(Helmet_Airborne,var1)) { \
+    SCOPE_HIDDEN; \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\airborne\visors\DOUBLES(var2,camo1_co.paa)), \
+        QPATHTOF(data\helmets\airborne\visors\DOUBLES(var2,camo1_co.paa)) \
+    }; \
+    hiddenSelectionsMaterials[] = { \
+        "", \
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat" \
+    }; \
+}
+
 #define SAND_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_Sand,var1)): CLASS(Helmet_Sand_Base) { \
     displayName = QUOTE([KC] INF Sand Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
