@@ -56,5 +56,38 @@ class CfgVehicles {
         cabinOpenSoundInternal[] = {QPATHTOF(sounds\data\audio\arc170\Canopy_Open.wss), 10, 1, 40};
         cabinCloseSound[] = {QPATHTOF(sounds\data\audio\arc170\Canopy_Close.wss), 1.77828, 1, 40};
         cabinCloseSoundInternal[] = {QPATHTOF(sounds\data\audio\arc170\Canopy_Close.wss), 10, 1, 40};
+
+        hiddenselectionstextures[] = {
+            "3AS\3AS_Vwing\data\vwing_main_co.paa",
+            "3AS\3AS_Vwing\data\Vwing_AstromechDroid_co.paa",
+            "3AS\3AS_Vwing\data\vwing_wings_co.paa"
+        };
+
+        textureList[] = {
+            "Standard", 1,
+            "Imperial", 0,
+        };
+
+       class TextureSources {
+            class Standard {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {};
+                textures[] = {
+                    "3AS\3AS_Vwing\data\vwing_main_co.paa",
+                    "3AS\3AS_Vwing\data\Vwing_AstromechDroid_co.paa",
+                    "3AS\3AS_Vwing\data\vwing_wings_co.paa"
+                };
+            };
+            class Imperial: Standard {
+                displayName = "Imperial";
+                textures[] = {
+                    "3AS\3AS_Vwing\data\vwing_main_Imp_co.paa",
+                    "3AS\3AS_Vwing\data\vwing_astromechdroid_Imp_co.paa",
+                    "3AS\3AS_Vwing\data\vwing_wings_Imp_co.paa"
+                };
+            };
+        };
+
     };
 };
