@@ -12,8 +12,6 @@ class CLASS(Helmet_Airborne_Base): CLASS(cloneHelmet_base) {
     hiddenSelectionsMaterials[] = {};
     picture = "\ls\core\addons\characters_clone\data\ui\airborne_helmet_ui_ca.paa";
 
-    subItems[] = {QCLASS(cloneNvg_chip)};
-
     class ItemInfo: ItemInfo {
         hiddenSelections[] = {"camo1", "visor"};
         uniformModel = "\ls\core\addons\characters_clone\helmets\airborne\ls_helmet_clone_airborne.p3d";
