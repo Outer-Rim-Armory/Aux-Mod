@@ -80,6 +80,11 @@ class CfgVehicles {
         class TextureSources {};
 
         INVENTORY_VEHICLE_GLAVMED(2);
+
+        class UserActions
+        {
+            VS_CCP
+        };
     };
 
     class Car;

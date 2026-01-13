@@ -142,6 +142,7 @@ class CfgVehicles {
             class Close_Rockets: Close_Rockets {
                 condition = QUOTE(this animationSourcePhase 'rocket_move' == 0 and alive this and ace_player == this turretUnit [3]);
             };
+            VS_CITADELSHIELD
         };
 
         INVENTORY_VEHICLE_BASE(5);

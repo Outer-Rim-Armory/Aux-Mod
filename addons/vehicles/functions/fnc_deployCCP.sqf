@@ -22,6 +22,7 @@ TRACE_2("fnc_deployCCP",_vehicle,_player);
 _vehicle setVariable [QGVAR(deployedCCP), true, true];
 [_vehicle, "blockEngine", QGVAR(deployedCCP), true] call ace_common_fnc_statusEffect_set;
 [QEGVAR(core,forceSay3D), [_vehicle, QCLASS(Deploy), 100]] call CBA_fnc_globalEvent;
+[_vehicle,QCLASS(Heal_Loop),10,QGVAR(deployedCCP)] call FUNC(loopsay3D);
 
 private _handle = [
     _vehicle,
@@ -36,6 +37,7 @@ private _handle = [
     // 0 = no fuel, 1 = 100% fuel
     params ["", "_vehicle"];
     _vehicle setFuel (fuel _vehicle - GVAR(hermitaurFuelHealConsumption_M));
+
 }, {
     // Run for as long as the ccp is deployed
     params ["", "_vehicle"];

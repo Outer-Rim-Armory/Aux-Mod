@@ -5,6 +5,7 @@ class CfgVehicles {
     };
     class B_APC_Wheeled_01_base_F: APC_Wheeled_01_base_F {};
     class B_APC_Wheeled_01_cannon_F: B_APC_Wheeled_01_base_F {
+        class UserActions;
         class ACE_SelfActions;
         class Turrets: Turrets {
             class MainTurret;
@@ -210,6 +211,11 @@ class CfgVehicles {
         };
 
         INVENTORY_VEHICLE_BASE(3);
+        class UserActions: UserActions
+        {
+            VS_SQUADSHIELD
+            VS_ASSAULTSHIELD
+        };
     };
 
     class CLASS(APC_Reek): CLASS(Reek) {

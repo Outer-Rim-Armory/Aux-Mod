@@ -17,7 +17,8 @@ class CfgPatches {
             QCLASS(LAATi_MK1),
             QCLASS(LAATi_MK1_Lamps),
             QCLASS(LAATi_MK2),
-            QCLASS(LAATi_MK2_Lamps)
+            QCLASS(LAATi_MK2_Lamps),
+            QCLASS(LAATI_Med)
         };
         weapons[] = {};
         VERSION_CONFIG;

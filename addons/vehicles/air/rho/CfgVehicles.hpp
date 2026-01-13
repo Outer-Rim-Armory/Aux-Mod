@@ -105,6 +105,8 @@ class CfgVehicles {
             class RampClose: RampClose {
                 condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 1});
             };
+            // Vehicle Skills Citadel
+            VS_AIRCITADELSHIELD
         };
 
         INVENTORY_VEHICLE_BASE(3);
@@ -142,6 +144,17 @@ class CfgVehicles {
                 };
             };
         };
+        class UserActions: UserActions {
+            class RampOpen: RampOpen {
+                condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 0});
+            };
+            class RampClose: RampClose {
+                condition = QUOTE(alive this and {this animationSourcePhase 'ramp' == 1});
+            };
+
+            // Vehicle Skills CCP
+            VS_CCP
+         };
     };
 
     class 3AS_Rho_Crate_Base_F;

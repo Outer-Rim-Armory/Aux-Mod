@@ -97,6 +97,7 @@ class CfgVehicles {
     class 3AS_Saber_03_Base;
     class 3AS_Saber_M1Recon: 3AS_Saber_03_Base {
         class ACE_SelfActions;
+        class UserActions;
     };
     class CLASS(TX130_M1_Recon): 3AS_Saber_M1Recon {
         SCOPE_PUBLIC;
@@ -185,11 +186,16 @@ class CfgVehicles {
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
         };
+        class UserActions: UserActions
+        {
+            VS_ASSAULTSHIELD
+        };
     };
 
     class 3AS_Saber_02_Base;
     class 3AS_Saber_M1G: 3AS_Saber_02_Base {
         class ACE_SelfActions;
+        class UserActions;
     };
     class CLASS(TX130_M1_GL): 3AS_Saber_M1G {
         SCOPE_PUBLIC;
@@ -264,6 +270,11 @@ class CfgVehicles {
         INVENTORY_VEHICLE_BASE(3);
         VEHICLE_TRANSPORT;
 
+        class UserActions: UserActions
+        {
+            VS_ASSAULTSHIELD
+        };
+
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
         };
@@ -272,6 +283,7 @@ class CfgVehicles {
     class 3AS_Saber_Super_base;
     class 3AS_Saber_Super: 3AS_Saber_Super_base {
         class ACE_SelfActions;
+        class UserActions;
         class Turrets: Turrets {
             class CargoTurret_01;
             class CargoTurret_02;
@@ -366,6 +378,11 @@ class CfgVehicles {
 
         INVENTORY_VEHICLE_BASE(3);
         VEHICLE_TRANSPORT;
+
+        class UserActions: UserActions
+        {
+            VS_ASSAULTSHIELD
+        };
 
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;

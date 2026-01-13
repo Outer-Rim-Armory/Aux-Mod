@@ -140,6 +140,10 @@ class CfgVehicles {
             class CargoTurret_03: CargoTurret_03 {};
             class CargoTurret_04: CargoTurret_04 {};
         };
+            class UserActions {
+            // Vehicle Skills Squad
+            VS_SQUADSHIELD
+         };
     };
 
     class CLASS(Hermitaur_Class_E): CLASS(Hermitaur_Class_I) {
@@ -249,6 +253,12 @@ class CfgVehicles {
         model = "3as\3AS_Rebel_Armor\PX10_Cav\model\3AS_PX10.p3d";
         picture = "3as\3AS_Rebel_Armor\PX10_Cav\data\ui\px10cav_side_ca.paa";
         icon = "3as\3AS_Rebel_Armor\PX10_Cav\data\ui\px10cav_top_ca.paa";
+
+
+        class UserActions {
+            // Vehicle Skills Repair
+            VS_REPAIRMODE
+         };
     };
 
     class CLASS(Hermitaur_Class_M): CLASS(Hermitaur_Class_I) {
@@ -348,4 +358,8 @@ class CfgVehicles {
         picture = "3as\3AS_Rebel_Armor\PX10_Cav\data\ui\px10cav_side_ca.paa";
         icon = "3as\3AS_Rebel_Armor\PX10_Cav\data\ui\px10cav_top_ca.paa";
     };
+            class UserActions {
+            // Vehicle Skills CCP
+            VS_CCP
+         };
 };

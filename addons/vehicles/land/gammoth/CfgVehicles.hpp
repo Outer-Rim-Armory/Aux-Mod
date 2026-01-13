@@ -58,6 +58,11 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\gammoth,Gammoth_Transport);
 
         INVENTORY_VEHICLE_GAMTRANS(2);
+        class UserActions
+        {
+            VS_SQUADSHIELD
+        };
+
     };
 
     class CLASS(Gammoth_Covered): CLASS(Gammoth_base) {
@@ -99,6 +104,10 @@ class CfgVehicles {
         };
 
         INVENTORY_VEHICLE_GAMTRANS(2);
+        class UserActions
+        {
+            VS_SQUADSHIELD
+        };
     };
 
     class CLASS(Gammoth_Ammo): CLASS(Gammoth_base) {
@@ -199,6 +208,10 @@ class CfgVehicles {
         };
 
         INVENTORY_VEHICLE_GAMMED(2);
+        class UserActions
+        {
+            VS_CCP
+        };
     };
 
     class CLASS(Gammoth_Repair): CLASS(Gammoth_base) {
@@ -240,6 +253,10 @@ class CfgVehicles {
                     QPATHTOF(land\gammoth\data\textures\Repair\Repair_CamoGrey_co.paa)
                 };
             };
+        };
+        class UserActions
+        {
+            VS_REPAIRMODE
         };
     };
 
@@ -344,6 +361,10 @@ class CfgVehicles {
                     "\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
                 };
             };
+        };
+        class UserActions
+        {
+            VS_CITADELSHIELD
         };
     };
 };

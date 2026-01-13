@@ -208,6 +208,16 @@ class CfgVehicles {
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
+            class Spawn_KC_LAAT_Med
+            {
+                displayName = "Spawn [KC] LAAT/Med";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_Med')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
             // basic fighters
             class Spawn_KC_V19
             {
@@ -290,6 +300,26 @@ class CfgVehicles {
 				radius = 15;
                 condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_Z95')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_Rho
+            {
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Rho Shuttle </t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Rho')] call FUNC(VicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Spawn_KC_Rho_Med
+            {
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Rho Shuttle </t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Rho_medical')] call FUNC(VicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };

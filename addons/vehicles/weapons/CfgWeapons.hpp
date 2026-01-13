@@ -660,4 +660,86 @@ class CfgWeapons {
 		};
 	};
 
+        // Vehicle Skills item
+
+     class ItemCore;
+    class CBA_MiscItem: ItemCore
+    {
+        class ItemInfo;
+    };
+    class CLASS(VS_Assault_Item): CBA_MiscItem
+    {
+        scope = 2;
+        author = "JRY";
+		picture="\MRC\JLTS\contraband\IDs\data\ui\id_card_gar_army_ui_ca.paa";
+        model = "\MRC\JLTS\contraband\IDs\ID_card.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\contraband\IDs\data\id_card_gar_army_co.paa"
+		};
+        displayName = "[KC] Vehicle Skill: Assault";
+        descriptionShort = "Vehicle Skill: Assault";
+
+        class ItemInfo: ItemInfo {};
+    };
+    class CLASS(VS_Shield_Item): CBA_MiscItem
+    {
+        scope = 2;
+        author = "JRY";
+		picture="\MRC\JLTS\contraband\IDs\data\ui\id_card_gar_army_ui_ca.paa";
+        model = "\MRC\JLTS\contraband\IDs\ID_card.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\contraband\IDs\data\id_card_gar_army_co.paa"
+		};
+        displayName = "[KC] Vehicle Skill: Shield";
+        descriptionShort = "Vehicle Skill: Shield";
+
+        class ItemInfo: ItemInfo {};
+    };
+    class CLASS(VS_Medical_item): CBA_MiscItem
+    {
+        scope = 2;
+        author = "JRY";
+		picture="\MRC\JLTS\contraband\IDs\data\ui\id_card_gar_medical_ui_ca.paa";
+        model = "\MRC\JLTS\contraband\IDs\ID_card.p3d";
+        hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\contraband\IDs\data\id_card_gar_medical_co.paa"
+		};
+        displayName = "[KC] Vehicle Skill: Medical";
+        descriptionShort = "Vehicle Skill: Medical";
+
+        class ItemInfo: ItemInfo {};
+    };
+    class CLASS(VS_Repair_Item): CBA_MiscItem
+    {
+        scope = 2;
+        author = "JRY";
+		picture="\MRC\JLTS\contraband\IDs\data\ui\id_card_gar_army_ui_ca.paa";
+        model = "\MRC\JLTS\contraband\IDs\ID_card.p3d";
+        hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\contraband\IDs\data\id_card_gar_army_co.paa"
+		};
+        displayName = "[KC] Vehicle Skill: Repair";
+        descriptionShort = "Vehicle Skill: Repair";
+
+        class ItemInfo: ItemInfo {};
+    };
+    class CLASS(VS_Citadel_item): CBA_MiscItem
+    {
+        scope = 2;
+        author = "JRY";
+		picture="\MRC\JLTS\contraband\IDs\data\ui\id_card_gar_army_ui_ca.paa";
+        model = "\MRC\JLTS\contraband\IDs\ID_card.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\MRC\JLTS\contraband\IDs\data\id_card_gar_army_co.paa"
+		};
+        displayName = "[KC] Vehicle Skill: Citadel";
+        descriptionShort = "Vehicle Skill: Citadel";
+
+        class ItemInfo: ItemInfo {};
+    };
 };
