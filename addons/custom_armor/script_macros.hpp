@@ -492,14 +492,15 @@ class CLASS(DOUBLES(Helmet_Phase12,var1)##var2): CLASS(DOUBLES(Helmet_Phase12,va
         QPATHTOF(data\helmets\airborne\DOUBLES(var1,camo1_co.paa)), \
         QPATHTOF(data\helmets\airborne\DOUBLES(var1,camo1_co.paa)) \
     }; \
+    subItems[] = {}; \
     GVAR(isCustom) = TRUE; \
+    EGVAR(armor,nvCanToggle) = TRUE; \
+    EGVAR(armor,nvHelmetOff) = QCLASS(DOUBLES(Helmet_Airborne,var1)); \
+    EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Airborne,var1)##var2##); \
     class XtdGearInfo { \
         model = QCLASS(Helmets_Airborne_Custom); \
         custom = QUOTE(var1); \
     }; \
-    EGVAR(armor,nvCanToggle) = TRUE; \
-    EGVAR(armor,nvHelmetOff) = QCLASS(DOUBLES(Helmet_Airborne,var1)); \
-    EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Airborne,var1)##var2##); \
 }; \
 class CLASS(DOUBLES(Helmet_Airborne,var1)##var2): CLASS(DOUBLES(Helmet_Airborne,var1)) { \
     SCOPE_HIDDEN; \
