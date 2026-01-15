@@ -39,7 +39,18 @@ switch _mode do
 		private _vD = vectorDir _obj;
 		private _vU = vectorUp _obj;
 		private _hold = "Aux501_Weapons_Grenades_Special_Object_Trench_Shield" createVehicle getPos _obj;
-		private _height = if (_obj isKindOf "3AS_Saber_01_Base") then {(_obj call CBA_fnc_realHeight) / 3} else {(_obj call CBA_fnc_realHeight) / 2};
+		private _height = switch (typeOf _obj) do {
+			case QCLASS(TX130_M1): { 1 };
+			case QCLASS(TX130_M1_Recon): { 1 };
+			case QCLASS(TX130_M1_GL): { 1 };
+			case QCLASS(TX130_Super): { 1 };
+			default
+			{
+				(_obj call CBA_fnc_getRealHeight) / 2
+			};
+		};
+		systemChat format ["%1",_height];
+
 		_hold setDir (getDir _obj);
 		_hold setVectorDirAndUp [_vD,_vU];
 		_hold setPosWorld getPosWorld _obj;

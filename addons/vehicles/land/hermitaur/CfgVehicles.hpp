@@ -357,9 +357,10 @@ class CfgVehicles {
         model = "3as\3AS_Rebel_Armor\PX10_Cav\model\3AS_PX10.p3d";
         picture = "3as\3AS_Rebel_Armor\PX10_Cav\data\ui\px10cav_side_ca.paa";
         icon = "3as\3AS_Rebel_Armor\PX10_Cav\data\ui\px10cav_top_ca.paa";
-    };
+
             class UserActions {
             // Vehicle Skills CCP
             VS_CCP
          };
+    };
 };

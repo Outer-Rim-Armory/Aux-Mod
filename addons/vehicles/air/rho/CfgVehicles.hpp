@@ -153,7 +153,7 @@ class CfgVehicles {
             };
 
             // Vehicle Skills CCP
-            VS_CCP
+            VS_AIRCCP
          };
     };
 

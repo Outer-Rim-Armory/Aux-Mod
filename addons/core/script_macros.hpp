@@ -379,6 +379,7 @@ class UnDeployCCP \
     condition = QUOTE(this getVariable [ARR_2(QQGVAR(deployedCCP),true)];); \
     statement = QUOTE(this call FUNC(undeployCCP);); \
 };
+// requires engine off so its slightly harder to activate mid air
 #define VS_AIRCITADELSHIELD class DeployCitadel \
 { \
     displayName = "Deploy Citadel Shield"; \
@@ -406,4 +407,33 @@ class UnDeployCitadel \
     shortcut = ""; \
     condition = QUOTE(this getVariable [ARR_2(QQGVAR(DeployCitadelShield),true)]); \
     statement = QUOTE([ARR_2(this,'undeploy')] call FUNC(deployCitadelShield);); \
+};
+// Longer use range CCP
+#define VS_AIRCCP class DeployCCP \
+{ \
+    displayName = "Deploy CCP"; \
+    displayNameDefault = "<img size='2' image='\a3\missions_f_beta\data\img\iconmptypedefense_ca.paa'/>"; \
+    priority = 69; \
+    radius = 15; \
+    position = "camera"; \
+    showWindow = 1; \
+    hideOnUse = 1; \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(!(this getVariable [ARR_2(QQGVAR(deployedCCP),false)]) && fuel this > 0;); \
+    statement = QUOTE(call FUNC(itemCheck);); \
+}; \
+class UnDeployCCP \
+{ \
+    displayName = "Undeploy CCP"; \
+    displayNameDefault = ""; \
+    priority = 69; \
+    radius = 15; \
+    position = "camera"; \
+    showWindow = 0; \
+    hideOnUse = 1;  \
+    onlyForPlayer = 0; \
+    shortcut = ""; \
+    condition = QUOTE(this getVariable [ARR_2(QQGVAR(deployedCCP),true)];); \
+    statement = QUOTE(this call FUNC(undeployCCP);); \
 };

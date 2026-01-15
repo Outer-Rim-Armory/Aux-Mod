@@ -15,6 +15,7 @@ class CfgVehicles {
     class 3AS_Saber_Base;
     class 3AS_Saber_M1: 3AS_Saber_Base {
         class ACE_SelfActions;
+        class UserActions;
     };
     class CLASS(TX130_M1): 3AS_Saber_M1 {
         SCOPE_PUBLIC;
@@ -92,6 +93,11 @@ class CfgVehicles {
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
         };
+        class UserActions: UserActions
+        {
+            VS_ASSAULTSHIELD
+        };
+
     };
 
     class 3AS_Saber_03_Base;
@@ -124,7 +130,7 @@ class CfgVehicles {
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
-            QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_Scout_co.paa)
+            QPATHTOF(land\tx130\data\textures\Grey\Weapons_Scout_co.paa)
         };
 
         textureList[] = {"Standard", 0, "Imperial", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 0, "CamoGrey", 0, "Grey", 0};
@@ -161,21 +167,21 @@ class CfgVehicles {
                 displayName = "Keeli Company";
                 textures[] = {
                     QPATHTOF(land\tx130\data\textures\KeeliCompany\Hull_co.paa),
-                    QPATHTOF(land\tx130\data\textures\KeeliCompany\Weapons_Scout_co.paa)
+                    QPATHTOF(land\tx130\data\textures\Grey\Weapons_Scout_co.paa)
                 };
             };
             class KeeliCompanyWhite: KeeliCompany {
                 displayName = "Keeli Company (White)";
                 textures[] = {
                     QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Hull_co.paa),
-                    QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Weapons_Scout_co.paa)
+                    QPATHTOF(land\tx130\data\textures\KeeliCompanyWhite\Weapons_co.paa)
                 };
             };
             class CamoGrey: KeeliCompany {
                 displayName = "Grey Camo";
                 textures[] = {
                     QPATHTOF(land\tx130\data\textures\CamoGrey\Hull_co.paa),
-                    QPATHTOF(land\tx130\data\textures\CamoGrey\Weapons_Scout_co.paa)
+                    QPATHTOF(land\tx130\data\textures\CamoGrey\Weapons_co.paa)
                 };
             };
         };

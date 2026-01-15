@@ -372,7 +372,7 @@ class CfgVehicles {
             class CargoTurret_06: CargoTurret_06 {};
         };
         class UserActions: UserActions {
-            VS_CCP
+            VS_AIRCCP
         };
 
         hiddenSelectionsTextures[] = {
