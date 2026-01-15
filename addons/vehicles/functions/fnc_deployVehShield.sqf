@@ -49,7 +49,7 @@ switch _mode do
 				(_obj call CBA_fnc_getRealHeight) / 2
 			};
 		};
-		systemChat format ["%1",_height];
+		// systemChat format ["%1",_height];
 
 		_hold setDir (getDir _obj);
 		_hold setVectorDirAndUp [_vD,_vU];
