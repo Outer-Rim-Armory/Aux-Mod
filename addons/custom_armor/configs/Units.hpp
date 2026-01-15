@@ -239,6 +239,15 @@ class CLASS(Unit_Destiny): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_Destiny), QCLASS(Vest_CSFC), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+class CLASS(Unit_Destiny_Worn): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Destiny_Worn);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\camo\worn\Destiny_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\camo\worn\Destiny_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+};
 
 
 class CLASS(Unit_Dexus): CLASS(Unit_Phase2_Base) {

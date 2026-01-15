@@ -460,6 +460,7 @@ class CfgPatches {
             QCLASS(Uniform_ARMR_CT),
             QCLASS(Uniform_ARC_CT),
             QCLASS(Uniform_ARC_NightShade),
+            QCLASS(Vest_ARC_Basic),
             QCLASS(Uniform_ARC_Enlisted_CamoNight),
             QCLASS(cloneArmor_uniform_textureTest),
             QCLASS(Uniform_ARF_CT),

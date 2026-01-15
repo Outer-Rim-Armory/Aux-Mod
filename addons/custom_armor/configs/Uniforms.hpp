@@ -9,7 +9,7 @@ UNIFORM_CUSTOM(Bob);
 UNIFORM_CUSTOM(Burnt);
 
 class CLASS(Uniform_Burnt_Worn): CLASS(Uniform_Burnt) {
-    displayName = "[KC] Custom Armor ('Burnt') - Battle Hardened";
+    displayName = "[KC] Custom Armor ('Burnt') - Worn";
 
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Burnt_Worn);
@@ -25,6 +25,16 @@ UNIFORM_CUSTOM(Cough);
 UNIFORM_CUSTOM(Cutthroat);
 UNIFORM_CUSTOM(Defter);
 UNIFORM_CUSTOM(Destiny);
+class CLASS(Uniform_Destiny_Worn): CLASS(Uniform_Destiny) {
+    displayName = "[KC] Custom Armor ('Destiny') - Worn";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Destiny_Worn);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
 UNIFORM_CUSTOM(Dexus);
 UNIFORM_CUSTOM(Drake);
 

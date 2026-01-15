@@ -78,4 +78,5 @@ class CLASS(Helmet_BARC_Kiwi_Worn): CLASS(Helmet_BARC_Base) {
 };
 BARC_HELMET_CUSTOM(Lines);
 BARC_HELMET_VISOR_CUSTOM(Rat,Crimson);
+BARC_HELMET_VISOR_CUSTOM(Sogi,Plasma);
 BARC_HELMET_CUSTOM(Weenie);
