@@ -34,7 +34,7 @@ switch _mode do
 	{
 		inGameUISetEventHandler ['Action',""];
 		_obj setVariable ["BNA_KC_vehicles_DeploySquadShield",true,true];
-		playSound3D [QPATHTOEF(vehicles,data\audio\Deploy.wss), _obj, false, getposASL _obj, 1];
+		playSound3D [QPATHTOEF(vehicles,data\audio\Deploy.wss), _obj, false, getPosASL _obj, 1];
 		private _vD = vectorDir _obj;
 		private _vU = vectorUp _obj;
 		private _hold = "SquadShield" createVehicle getPos _obj;
@@ -118,7 +118,7 @@ switch _mode do
 	};
 	case "undeploy":
 	{
-		playSound3D [QPATHTOEF(vehicles,data\audio\Undeploy.wss), _obj, false, getposASL _obj, 1];
+		playSound3D [QPATHTOEF(vehicles,data\audio\Undeploy.wss), _obj, false, getPosASL _obj, 1];
 		_obj setVariable ["BNA_KC_vehicles_DeploySquadShield",false,true];
 	};
 };

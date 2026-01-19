@@ -162,6 +162,6 @@ class CfgAmmo {
     class CLASS(Laser_AntiAir_RX200): 3AS_laserAmmo_RX_F {
         caliber=12; // default 6 gozanti is 18
         explosive=0.6;
-        aiAmmoUsageFlags="128 + 256";
+        aiAmmoUsageFlags="384";
     };
 };

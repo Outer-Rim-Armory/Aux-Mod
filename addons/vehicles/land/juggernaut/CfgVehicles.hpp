@@ -57,7 +57,8 @@ class CfgVehicles {
             "KeeliCompany", 1,
             "KeeliCompanyWhite", 0,
             "CamoBrown", 0,
-            "CamoGrey", 0
+            "CamoGrey", 0,
+            "Empire", 0
         };
         class TextureSources {
             class Standard {
@@ -110,6 +111,16 @@ class CfgVehicles {
                     QPATHTOF(land\juggernaut\data\textures\CamoGrey\Guns_co.paa),
                     QPATHTOF(land\juggernaut\data\textures\CamoGrey\Props_co.paa),
                     QPATHTOF(land\juggernaut\data\textures\CamoGrey\Wheels_co.paa)
+                };
+            };
+
+            class Empire: KeeliCompany {
+                displayName = "Empire";
+                textures[] = {
+                    "3as\3as_jug\data\juggernaut_base_imp_co.paa",
+                    "3as\3as_jug\data\juggernaut_guns_Imp_co.paa",
+                    "3as\3as_jug\data\juggernaut_props_Imp_co.paa",
+                    "3as\3as_jug\data\juggernaut_wheels_co.paa"
                 };
             };
         };

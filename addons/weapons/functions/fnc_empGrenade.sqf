@@ -65,7 +65,7 @@ _nearbyDroidekas = _positionAGL nearEntities [["3AS_Deka_Static_Base", "RD501_dr
 
 TRACE_5("EMP Grenade",_positionAGL,_nearbyUnits,_nearbyVehicles,_nearbyDroidekas,_droidekaShields);
 
-[_nearbyUnits, _unit] call FUNC(droidDeathEffect);
+[_nearbyUnits, "unit"] call FUNC(droidDeathEffect);
 [_nearbyVehicles, GVAR(empVehicleDisableDuration)] call FUNC(disableVehicles);
 
 if (GVAR(empDisableDroidkaShields)) exitWith {

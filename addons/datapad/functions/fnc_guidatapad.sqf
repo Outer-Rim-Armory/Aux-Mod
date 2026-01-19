@@ -29,7 +29,7 @@ if !(ctrlShown _ctrlDatapad) then
 		deleteMarker "BNA_KC_Marker_Datapad";
 	};
 
-	_ctrlGroupDataPad = if (currentMagazine _unit == "BNA_KC_Datapad_Mag_MortarStrike") then {_display ctrlCreate [configFile >> "JRY_mapCtrl_Mortar",1112350];} else 
+	_ctrlGroupDataPad = if (currentMagazine _unit == "BNA_KC_Datapad_Mag_MortarStrike") then {_display ctrlCreate [configFile >> "JRY_mapCtrl_Mortar",1112350];} else
 	{
 		_display ctrlCreate [configFile >> "JRY_mapCtrl_AVArtillery",1112350];
 	};
@@ -54,7 +54,7 @@ if !(ctrlShown _ctrlDatapad) then
 	_chckSpread = _display displayCtrl 1231321;
 	_btnOK = _display displayCtrl 9946432;
 
-	for "_i" from 1 to _curAmmo do 
+	for "_i" from 1 to _curAmmo do
 	{
 		_ctrlShots lbAdd str _i;
 		_ctrlShots lbSetValue [(_i - 1),_i];
@@ -83,14 +83,14 @@ if !(ctrlShown _ctrlDatapad) then
 		_btnOK = _display displayCtrl 9946432;
 
 		_unit = missionNamespace getVariable "BNA_KC_player";
-		_getAmmo = getText (configfile >> "CfgMagazines" >> currentMagazine _unit  >> "ammo");
+		_getAmmo = getText (configFile >> "CfgMagazines" >> currentMagazine _unit  >> "ammo");
 		_selAmmo = if (_ctrlGroupClass == "JRY_mapCtrl_Mortar") then
 		{
-			if ((lbCurSel _comboAmmo) == 0) then {_getAmmo} else 
+			if ((lbCurSel _comboAmmo) == 0) then {_getAmmo} else
 			{
 				_curSel = lbCurSel _comboColor;
-				switch _curSel do 
-				{ 
+				switch _curSel do
+				{
 					case 0: {"BNA_KC_Shell_Mortar_SmokeBlue"};
 					case 1: {"SmokeShellGreen"};
 					case 2: {"BNA_KC_Shell_Mortar_SmokeRed"};
@@ -106,15 +106,15 @@ if !(ctrlShown _ctrlDatapad) then
 		};
 		_selShots = _ctrlShots lbValue (lbCurSel _ctrlShots);
 		_selColor = _comboColor lbText (lbCurSel _comboColor);
-		_selSpread = if (_chckSpread lbValue (lbCurSel _chckSpread) == 0) then {5} else {0};
+		_selSpread = [0, 5] select ((_chckSpread lbValue lbCurSel _chckSpread) == 0);
 		_markPos = getMarkerPos "BNA_KC_Marker_Datapad";
 		_curAmmo = _unit ammo currentWeapon _unit;
-		
+
 		_unit setAmmo [currentWeapon _unit, _curAmmo - _selShots];
 		[_markPos, _selAmmo,50,_selShots, [5,10],{false},_selSpread,1000,100] spawn BIS_fnc_fireSupportVirtual;
-		
-		_display closeDisplay 1; 
-		
+
+		_display closeDisplay 1;
+
 
 
 		// systemChat str format ["AMMO: %1 SHOTS: %2 COLOR: %3 SPREAD: %4",_selAmmo,_selShots,_selColor,_selSpread];

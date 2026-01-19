@@ -130,12 +130,6 @@ class CfgVehicles {
                 statement = QUOTE([ARR_3(ace_player,ace_player,true)] call ace_arsenal_fnc_openBox;);
             };
 
-            class Arsenal_BIS: Arsenal_ACE {
-                // Bohemia Green, looks weird: #6BA539
-                displayName = QUOTE(<t color='#E6E6E6'><img image=QQPATHTOEF(core,data\ui\BIS_logo_small_ca.paa)/> Open BIS Arsenal</t>);
-                statement = QUOTE([ARR_2('Open',[true])] call BIS_fnc_arsenal;);
-            };
-
             class Add_Radio: Arsenal_ACE {
                 displayName = "<t color='#E6E6E6'><img image='\a3\modules_f_curator\data\portraitradio_ca.paa'/> Add Radio</t>";
                 statement = QUOTE(ace_player linkItem 'ls_radios_cwp8');

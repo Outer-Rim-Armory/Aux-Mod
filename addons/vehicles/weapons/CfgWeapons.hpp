@@ -279,7 +279,7 @@ class CfgWeapons {
         magazines[] = {
             QCLASS(Mag_100Rnd_Gozanti)
         };
-        balisticsComputer= "2+4+8+16";
+        balisticsComputer= "30";
         class player: player
 		{
 			reloadTime=2;
@@ -577,7 +577,7 @@ class CfgWeapons {
         reloadTime = 0.33333;
         magazineReloadTime = 4;
         canLock = 2;
-        balisticsComputer= "2+4+8+16";
+        balisticsComputer= "30";
         magazines[]={
             QCLASS(Mag_2000rnd_Gozanti_AA)
         };

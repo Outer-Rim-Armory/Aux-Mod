@@ -35,7 +35,7 @@ switch _mode do
 		inGameUISetEventHandler ['Action',""];
 		_obj setVariable [QGVAR(DeployCitadelShield),true,true];
 		[_obj, "blockEngine", QGVAR(DeployCitadelShield), true] call ace_common_fnc_statusEffect_set;
-		playSound3D [QPATHTOEF(vehicles,data\audio\Deploy.wss), _obj, false, getposASL _obj, 1];
+		playSound3D [QPATHTOEF(vehicles,data\audio\Deploy.wss), _obj, false, getPosASL _obj, 1];
 		private _vD = vectorDir _obj;
 		private _vU = vectorUp _obj;
 		private _hold = "3AS_ShieldTank_Shield" createVehicle getPos _obj;
@@ -90,7 +90,8 @@ switch _mode do
 	};
 	case "undeploy":
 	{
-		playSound3D [QPATHTOEF(vehicles,data\audio\Undeploy.wss), _obj, false, getposASL _obj, 1];
+		playSound3D [QPATHTOEF(vehicles,data\audio\Undeploy.wss), _obj, false, getPosASL _obj, 1];
 		_obj setVariable [QGVAR(DeployCitadelShield),false,true];
+        [_obj, "blockEngine", QGVAR(DeployCitadelShield), false] call ace_common_fnc_statusEffect_set;
 	};
 };
