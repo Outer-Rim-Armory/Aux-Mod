@@ -1,6 +1,7 @@
 class CLASS(Helmet_Phase2_Base);
 P2_HELMET_CUSTOM(Alvarez);
 P2_HELMET_CUSTOM(Axel);
+P2_HELMET_CUSTOM(Azen);
 P2_HELMET_CUSTOM(Bailout);
 P2_HELMET_VISOR_CUSTOM(Bean,Crimson);
 P2_HELMET_CUSTOM(Bigness);

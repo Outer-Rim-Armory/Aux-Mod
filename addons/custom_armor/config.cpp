@@ -250,6 +250,7 @@ class CfgPatches {
             QCLASS(Helmet_Phase1_ARMR_Grey),
             QCLASS(Helmet_Phase2_Alvarez),
             QCLASS(Helmet_Phase2_Axel),
+            QCLASS(Helmet_Phase2_Azen),
             QCLASS(Helmet_Phase2_Bailout),
             QCLASS(Helmet_Phase2_Bean),
             QCLASS(Helmet_Phase2_Bob),

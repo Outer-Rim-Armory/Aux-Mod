@@ -89,7 +89,7 @@ if !(ctrlShown _ctrlDatapad) then
 		_btnOK = _display displayCtrl 9946432;
 
 		_unit = missionNamespace getVariable "BNA_KC_player";
-		_getAmmo = getText (configfile >> "CfgMagazines" >> currentMagazine _unit  >> "ammo");
+		_getAmmo = getText (configFile >> "CfgMagazines" >> currentMagazine _unit  >> "ammo");
 
 		_selShots = _ctrlShots lbValue (lbCurSel _ctrlShots);
 		_selColor = _comboColor lbText (lbCurSel _comboColor);
