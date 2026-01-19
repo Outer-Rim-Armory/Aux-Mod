@@ -1,3 +1,5 @@
+#include "..\script_component.hpp"
+
 params	["_ctrl"];
 
 
@@ -29,10 +31,14 @@ if !(ctrlShown _ctrlDatapad) then
 		deleteMarker "BNA_KC_Marker_Datapad";
 	};
 
-	_ctrlGroupDataPad = if (currentMagazine _unit == "BNA_KC_Datapad_Mag_MortarStrike") then {_display ctrlCreate [configFile >> "JRY_mapCtrl_Mortar",1112350];} else 
+	_ctrlGroupDataPad = switch (currentMagazine _unit) do
 	{
-		_display ctrlCreate [configFile >> "JRY_mapCtrl_AVArtillery",1112350];
+		case QCLASS(Datapad_Mag_MortarStrike) : {DP_CTRLCREATEJRY(JRY_mapCtrl_Mortar)};
+		case QCLASS(Datapad_Mag_AV7AStrike) : {DP_CTRLCREATEJRY(JRY_mapCtrl_AVArtillery)};
+		case QCLASS(Datapad_Mag_TurboLaserV) : {DP_CTRLCREATE(mapCtrl_TurbolaserV)};
+		case QCLASS(Datapad_Mag_Resupply) : {DP_CTRLCREATE(mapCtrl_resup)};
 	};
+
 	_ctrlGroupDataPad ctrlSetPositionX (_mPos # 0) + 0.02;
 	_ctrlGroupDataPad ctrlSetPositionY (_mPos # 1);
 	_ctrlGroupDataPad ctrlCommit 0;
@@ -49,22 +55,21 @@ if !(ctrlShown _ctrlDatapad) then
 
 	_curAmmo = _unit ammo currentWeapon _unit;
 	_comboAmmo = _display displayCtrl 103;
+	_comboCrate = _display displayCtrl 1036;
 	_ctrlShots = _display displayCtrl 4654321;
 	_comboColor = _display displayCtrl 104;
 	_chckSpread = _display displayCtrl 1231321;
 	_btnOK = _display displayCtrl 9946432;
 
-	for "_i" from 1 to _curAmmo do 
+	for "_i" from 1 to _curAmmo do
 	{
 		_ctrlShots lbAdd str _i;
 		_ctrlShots lbSetValue [(_i - 1),_i];
 	};
 	_ctrlShots lbSetCurSel 0;
 
-	{
-	  _comboAmmo lbAdd _x;
-	} forEach ["Mortar Strike","Smoke Strike"];
-	_comboAmmo lbSetCurSel 0;
+	DP_MORTAR_RSCCOMBO_ADD
+	DP_CRATES_RSCCOMBO_ADD
 
 	_chckSpread ctrlSetChecked [0,true];
 
@@ -79,42 +84,37 @@ if !(ctrlShown _ctrlDatapad) then
 		_comboAmmo = _display displayCtrl 103;
 		_ctrlShots = _display displayCtrl 4654321;
 		_comboColor = _display displayCtrl 104;
+		_comboCrate = _display displayCtrl 1036;
 		_chckSpread = _display displayCtrl 1231321;
 		_btnOK = _display displayCtrl 9946432;
 
 		_unit = missionNamespace getVariable "BNA_KC_player";
 		_getAmmo = getText (configfile >> "CfgMagazines" >> currentMagazine _unit  >> "ammo");
-		_selAmmo = if (_ctrlGroupClass == "JRY_mapCtrl_Mortar") then
-		{
-			if ((lbCurSel _comboAmmo) == 0) then {_getAmmo} else 
-			{
-				_curSel = lbCurSel _comboColor;
-				switch _curSel do 
-				{ 
-					case 0: {"BNA_KC_Shell_Mortar_SmokeBlue"};
-					case 1: {"SmokeShellGreen"};
-					case 2: {"BNA_KC_Shell_Mortar_SmokeRed"};
-					case 3: {"SmokeShellPurple"};
-					case 4: {"SmokeShellYellow"};
-					default {"BNA_KC_Shell_Mortar_SmokeWhite"};
-				};
-			};
-		}
-		else
-		{
-			_getAmmo
-		};
+
 		_selShots = _ctrlShots lbValue (lbCurSel _ctrlShots);
 		_selColor = _comboColor lbText (lbCurSel _comboColor);
+		_selCrate = _comboCrate lbText (lbCurSel _comboCrate);
 		_selSpread = if (_chckSpread lbValue (lbCurSel _chckSpread) == 0) then {5} else {0};
+		_selRad75 = if (_chckSpread lbValue (lbCurSel _chckSpread) == 0) then {75} else {0};
 		_markPos = getMarkerPos "BNA_KC_Marker_Datapad";
 		_curAmmo = _unit ammo currentWeapon _unit;
-		
+
+
+
+		DP_JRY_SEL_MORTAR
+		DP_SEL_RESUPPLY
+
+		switch (currentMagazine _unit) do {
+			case QCLASS(Datapad_Mag_MortarStrike): {DP_JRY_MORTAR_FIRE};
+			case QCLASS(Datapad_Mag_AV7AStrike): {[_markPos, _getAmmo,50,_selShots, [5,10],{false},_selSpread,1000,100] spawn BIS_fnc_fireSupportVirtual;};
+			case QCLASS(Datapad_Mag_TurboLaserV): {[_markPos,_selRad75,_selShots] spawn PHAN_ScifiSupportPlus_fnc_SW_TurboLaserVolley;};
+			case QCLASS(Datapad_Mag_Resupply):{DP_RESUPPLY_FIRE};
+			// [_position, _Ship_direction,_destructionradius,_Killradius,_EndWithJumpOut]
+		};
+
 		_unit setAmmo [currentWeapon _unit, _curAmmo - _selShots];
-		[_markPos, _selAmmo,50,_selShots, [5,10],{false},_selSpread,1000,100] spawn BIS_fnc_fireSupportVirtual;
-		
-		_display closeDisplay 1; 
-		
+		_display closeDisplay 1;
+
 
 
 		// systemChat str format ["AMMO: %1 SHOTS: %2 COLOR: %3 SPREAD: %4",_selAmmo,_selShots,_selColor,_selSpread];

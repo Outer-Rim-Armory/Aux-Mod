@@ -61,7 +61,9 @@ class CfgWeapons
 	    scope = 2;
 	    magazines[] = {
             "BNA_KC_Datapad_Mag_MortarStrike",
-            "BNA_KC_Datapad_Mag_AV7AStrike"
+            "BNA_KC_Datapad_Mag_AV7AStrike",
+            QCLASS(Datapad_Mag_TurboLaserV),
+            QCLASS(Datapad_Mag_Resupply)
             //,"BNA_KC_Datapad_Mag_104thTest"
             };
 	    // magazineWell[] = {"BNA_KC_DataPad_Magazines"};
