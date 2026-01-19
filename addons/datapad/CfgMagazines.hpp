@@ -32,6 +32,24 @@ class CfgMagazines
 	    displayName = "[KC] Datapad Cartridge (AV-7 Artillery Strike)";
 	    descriptionShort = "Datapad Cartidge Type: AV-7 Artillery Strike<br />Rounds: 3<br />Used in: Datapad";
 	};
+    class CLASS(Datapad_Mag_TurboLaserV): CLASS(Datapad_Mag_Base)
+    {
+        author = AUTHOR;
+        SCOPE_PUBLIC;
+	    useAction = 0;
+	    displayName = "[KC] Datapad Cartridge (Turbolaser Volley)";
+	    descriptionShort = "Datapad Cartidge Type: Turbolaser Volley<br />Rounds: 10<br />Used in: Datapad";
+        count = 10;
+    };
+    class CLASS(Datapad_Mag_Resupply): CLASS(Datapad_Mag_Base)
+    {
+        author = AUTHOR;
+        SCOPE_PUBLIC;
+	    useAction = 0;
+	    displayName = "[KC] Datapad Cartridge (Resupply)";
+	    descriptionShort = "Datapad Cartidge Type: Resupply<br />Rounds: 10<br />Used in: Datapad";
+        count = 5;
+    };
 /*     class BNA_KC_Datapad_Mag_104thTest: BNA_KC_Datapad_Mag_Base
 	{
 		ammo = "FC_Dropcrate_A";
