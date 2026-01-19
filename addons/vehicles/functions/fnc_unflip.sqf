@@ -24,7 +24,7 @@ TRACE_1("fnc_unflip",_vehicle);
 if (!alive _vehicle) exitWith {};
 
 _posASL = getPosASL _vehicle;
-_postASL set [2, _posASL#2 + 4];
+_posASL set [2, _posASL#2 + 4];
 _vehicle setVectorUp [0, 0, 1];
 _vehicle setPosASL _posASL;
 

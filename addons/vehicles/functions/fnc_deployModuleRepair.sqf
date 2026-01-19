@@ -36,7 +36,7 @@ switch _mode do
 		// systemChat "Deployed";
 		inGameUISetEventHandler ['Action', "hint 'repair start'; true"];
 		_obj setVariable [QGVAR(DeployModule),true,true];
-		playSound3D [QPATHTOEF(vehicles,data\audio\Deploy.wss), _obj, false, getposASL _obj, 1];
+		playSound3D [QPATHTOEF(vehicles,data\audio\Deploy.wss), _obj, false, getPosASL _obj, 1];
 		private _vD = vectorDir _obj;
 		private _vU = vectorUp _obj;
 		private _hold = "Land_HelipadEmpty_F" createVehicle getPos _obj;
@@ -119,7 +119,7 @@ switch _mode do
 							_veh setDamage (_dmgVeh - _repair);
 							{
 						    	_veh setHitIndex [_forEachIndex, _x];
-							} forEach _allHitPointDamages;
+							} forEach _allHitPointDamage;
 							// systemChat "base repair ?";
 						};
 					};
@@ -131,7 +131,7 @@ switch _mode do
 	case "undeploy":
 	{
 		// systemChat "Undeployed";
-		playSound3D [QPATHTOEF(vehicles,data\audio\Undeploy.wss), _obj, false, getposASL _obj, 1];
+		playSound3D [QPATHTOEF(vehicles,data\audio\Undeploy.wss), _obj, false, getPosASL _obj, 1];
 		_obj setVariable [QGVAR(DeployModule),false,true];
 	};
 };

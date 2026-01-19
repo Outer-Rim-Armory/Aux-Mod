@@ -8,7 +8,7 @@
 private["_console","_vehicle","_dir","_spawn","_veh"];
 _console = _this select 0;
 _vehicle = _this select 1;
-_spawn = getPosAsL _console;
+_spawn = getPosASL _console;
 _dir = getDir _console;
 _veh = createVehicle [_vehicle,[0,0,0],[],0,"NONE"];
 _veh setDir _dir;

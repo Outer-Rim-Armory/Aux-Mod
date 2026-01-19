@@ -26,7 +26,7 @@ if !(CWR_AutoMessages_Uncon) exitWith {};
     format ["_nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
 
     _nearbyPlayers = _nearbyPlayers select { [_x] call ace_common_fnc_isAwake; };
-    if (count _nearbyPlayers == 0) exitWith {}; // No nearby conscious players
+    if (_nearbyPlayers isEqualTo []) exitWith {}; // No nearby conscious players
 
     _nearbyPlayers = [_unit, _nearbyPlayers] call CWR_fnc_sortByDistance;
     format ["Sorted _nearbyPlayers = %1", _nearbyPlayers] call CWR_fnc_devLog;
