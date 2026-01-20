@@ -23,7 +23,8 @@ class CfgPatches {
             QCLASS(Gonk_Permissions),
             QCLASS(Utility_Arsenal),
             QCLASS(Utility_FullHeal),
-            QCLASS(AIRSpawner)
+            QCLASS(AIRSpawner),
+            QCLASS(LandSpawner)
         };
         weapons[] = {};
         VERSION_CONFIG;

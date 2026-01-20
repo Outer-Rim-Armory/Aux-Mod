@@ -162,13 +162,13 @@ class CfgVehicles {
 
     class 3AS_T_Screen;
     class CLASS(AIRSpawner): 3AS_T_Screen{
-    SCOPE_PUBLIC;
-    author = AUTHOR;
+        SCOPE_PUBLIC;
+        author = AUTHOR;
 
-    editorCategory = QEDCAT(Objects);
-    editorSubcategory = QEDSUBCAT(Utility);
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(Utility);
 
-    displayName = "Aircraft Terminal";
+        displayName = "Aircraft Terminal";
         class Useractions{
 
             // helicopter heliocopter *helicopter sounds*
@@ -178,7 +178,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK1')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK1')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -188,7 +188,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK2')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK2')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -198,7 +198,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_LAATc_new')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATc_new')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -208,7 +208,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_Med')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_Med')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -219,7 +219,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_V19')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_V19')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -229,7 +229,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Vwing')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_Vwing')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -241,7 +241,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Nu')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_Nu')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -251,7 +251,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Rho')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_Rho')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -263,7 +263,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_ARc170')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_ARc170')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -273,7 +273,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_BTLB_Ywing')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_BTLB_Ywing')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -283,7 +283,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Gozanti')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_Gozanti')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -293,7 +293,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Z95')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_Z95')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -303,7 +303,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Rho')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_Rho')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -313,10 +313,73 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Rho_medical')] call FUNC(VicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_Rho_medical')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
+        };
+    };
+
+    class CLASS(LandSpawner): 3AS_T_Screen{
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(Utility);
+        hiddenSelectionsTextures[]=
+        {
+            QPATHTOF(data\terminals\LandTerminal_screen_CO.paa)
+        };
+
+        displayName = "Ground Vehicle Terminal";
+        class Useractions{
+            // inf VICSPAWNINF
+            VICSPAWNINF(CLASS(Bantha_Unarmed),Bantha (Unarmed))
+            VICSPAWNINF(CLASS(Bantha_Assault),Bantha (Assault))
+            VICSPAWNINF(CLASS(Bantha_AA),Bantha (AA))
+            VICSPAWNINF(CLASS(Bantha_Cargo),Bantha (Cargo))
+            VICSPAWNINF(CLASS(Bantha_IFV),Bantha (IFV))
+            VICSPAWNINF(CLASS(Bantha_Mortar),Bantha (Mortar))
+            VICSPAWNINF(CLASS(Hermitaur_class_I),Hermitaur (Infantry))
+            VICSPAWNINF(CLASS(Hydra),Hydra)
+            VICSPAWNINF(CLASS(Reek),Reek IFV)
+            VICSPAWNINF(CLASS(Gammoth_Transport),Gammoth Transport)
+            VICSPAWNINF(CLASS(Gammoth_Covered),Gammoth Trannsport (Coverd)) //
+            VICSPAWNINF(CLASS(Glavenus_HMG),Glavenus Armed)
+            VICSPAWNINF(CLASS(Glavenus_GMG),Glavenus Grenade)
+            VICSPAWNINF(CLASS(Glavenus_Unarmed),Glavenus Transport)
+            VICSPAWNINF(CLASS(Hornet_unarmed),Hornet Unarmed)
+            VICSPAWNINF(CLASS(Hornet_AT),Hornet (AT))
+            VICSPAWNINF(CLASS(Hornet_MG),Hornet (MG))
+            // logistics VICSPAWNLOG
+            VICSPAWNLOG(CLASS(Bantha_MSV),Bantha (Engineer))
+            VICSPAWNLOG(CLASS(Hermitaur_class_E),Hermitaur (Engineer))
+            VICSPAWNLOG(CLASS(Gammoth_Ammo),Gammoth Ammo)
+            VICSPAWNLOG(CLASS(Gammoth_Refuel),Gammoth Refuel)
+            VICSPAWNLOG(CLASS(Gammoth_Repair),Gammoth Repair)
+            VICSPAWNLOG(CLASS(Gammoth_Device),Gammoth Device)
+            VICSPAWNLOG(CLASS(Khezu_Unarmed),Khezu (Unarmed))
+            VICSPAWNLOG(CLASS(Khezu_Armed),Khezu (Armed))
+            // reeker VICSPAWNTNK
+            VICSPAWNTNK(CLASS(Juggernaut),Juggernaut)
+            VICSPAWNTNK(CLASS(ATTE),AT-TE)
+            VICSPAWNTNK(CLASS(ATTE_Command),AT-TE (Command))
+            VICSPAWNTNK(CLASS(TX130_M1),TX-130) //
+            VICSPAWNTNK(CLASS(TX130_M1_Recon),TX-130 Recon) //
+            VICSPAWNTNK(CLASS(TX130_M1_GL),TX-130 GL) //
+            VICSPAWNTNK(CLASS(TX130_Super),TX-130 Super) //
+            VICSPAWNTNK(CLASS(RX200_AA),RX200 (AA))
+            VICSPAWNTNK(CLASS(RX200_Artillery),RX200 (Artillery))
+            VICSPAWNTNK(CLASS(UTAT),UT-AT)
+            VICSPAWNTNK(CLASS(ATAP),AT-AP)
+            // medical VICSPAWNMED
+            VICSPAWNMED(CLASS(Hermitaur_class_M),Hermitaur (Medic))
+            VICSPAWNMED(CLASS(Gammoth_Medical),Gammoth Medic)
+            VICSPAWNMED(CLASS(Glavenus_Medic), Glavenus Medic)
+            // raptor VICSPAWNRAP
+            VICSPAWNRAP(CLASS(BARC),BARC Speeder)
+
+            //
         };
     };
 };

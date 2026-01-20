@@ -1,9 +1,18 @@
 #include "..\script_component.hpp"
-
-// sqf file from 104th jango armoury aux mod
-// got permision to copy over - dogo
-// spawns vehicle a small distance away
-
+/*
+ * Author: 104th Devs
+ * Deploys a vehicle from terminal
+ *
+ * Arguments:
+ * 0: console/spawn location <OBJECT>
+ * 1: Class name <STRING>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * QUOTE([ARR_2(this,'BNA_KC_Gozanti')] call FUNC(vicSpawner));
+ */
 
 private["_console","_vehicle","_dir","_spawn","_veh"];
 _console = _this select 0;
