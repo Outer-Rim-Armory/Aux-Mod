@@ -423,7 +423,7 @@ class CLASS(Uniform_CXE_Empire): CLASS(Uniform_Base) {
 class CLASS(Uniform_ARMR_CT): CLASS(Uniform_Base) {
     displayName = "[KC] ARMR Armor 01 (Trooper)";
     class ItemInfo: ItemInfo {
-        uniformClass = QCLASS(Unit_Phase2_Tanker_CT);
+        uniformClass = QCLASS(Unit_Phase2_ARMR_CT);
     };
 };
 
