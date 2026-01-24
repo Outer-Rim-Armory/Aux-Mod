@@ -18,8 +18,6 @@ class CfgPatches {
             QCLASS(Unit_Phase1_Pilot),
             QCLASS(Unit_Phase2_Pilot),
             QCLASS(Unit_Phase2_Pilot_Officer),
-            QCLASS(Unit_Phase1_Tanker),
-            QCLASS(Unit_Phase2_Tanker),
             QCLASS(Ven_Resurgence_ClosedFullyHollowed),
             QCLASS(Ven_Resurgence_OpenFullyHollowed),
             QCLASS(Ven_Resurgence_Zeus),
@@ -41,7 +39,6 @@ class CfgPatches {
             QCLASS(Uniform_ARC),
             QCLASS(Uniform_Pilot),
             QCLASS(Uniform_Pilot_Officer),
-            QCLASS(Uniform_Tanker),
             QCLASS(Vest_Officer_Keeli)
         };
         VERSION_CONFIG;

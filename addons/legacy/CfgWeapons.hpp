@@ -64,10 +64,6 @@ class CfgWeapons {
         SCOPE_HIDDEN;
     };
 
-    class CLASS(Uniform_Tanker_CT);
-    class CLASS(Uniform_Tanker): CLASS(Uniform_Tanker_CT) {
-        SCOPE_HIDDEN;
-    };
 
     class CLASS(Vest_Commander_Keeli);
     class CLASS(Vest_Officer_Keeli): CLASS(Vest_Commander_Keeli) {

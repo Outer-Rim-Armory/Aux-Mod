@@ -3,7 +3,7 @@ class CLASS(Unit_Phase1_ARMR_CT): CLASS(Unit_Phase1_Base) {
     editorSubcategory = QEDSUBCAT(Crewmen);
     editorPreview = EDITOR_PREVIEW(Unit_Phase1_ARMR_CT);
 
-    uniformClass = QCLASS(Uniform_ARMR);
+    uniformClass = QCLASS(Uniform_ARMR_CT);
 
     linkedItems[] = {
         QCLASS(Helmet_Phase1_ARMR_CT), QCLASS(Vest_ARMR_CT), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO

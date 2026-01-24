@@ -3,7 +3,7 @@ class CLASS(Unit_Phase2_ARMR_CT): CLASS(Unit_Phase2_Base) {
     editorSubcategory = QEDSUBCAT(Crewmen);
     editorPreview = EDITOR_PREVIEW(Unit_Phase2_ARMR_CT);
 
-    uniformClass = QCLASS(Uniform_ARMR);
+    uniformClass = QCLASS(Uniform_ARMR_CT);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\tanker\CT_upper_co.paa),
         QPATHTOF(data\uniforms\tanker\CT_lower_co.paa),
