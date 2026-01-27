@@ -323,7 +323,7 @@ class TransportItems { \
 
 #define VEHICLE_LIST_AIR [ \
     QCLASS(ARC170), \
-    QCLASS(LAATc_New), \
+    QCLASS(LAATc), \
     QCLASS(LAATi_MK1), \
     QCLASS(LAATi_MK1_Lamps), \
     QCLASS(LAATi_MK2), \

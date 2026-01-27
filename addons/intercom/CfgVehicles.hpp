@@ -112,11 +112,11 @@ class CfgVehicles {
         };
     };
 
-    class lsd_laatc_base;
-    class lsd_heli_laatc: lsd_laatc_base {
+    class ls_vehicle_laatc_base;
+    class ls_vehicle_laatc: ls_vehicle_laatc_base {
         class ACE_SelfActions;
     };
-    class CLASS(LAATc): lsd_heli_laatc {
+    class CLASS(LAATc): ls_vehicle_laatc {
         TFAR_hasIntercom = FALSE;
 
         class ACE_SelfActions: ACE_SelfActions {

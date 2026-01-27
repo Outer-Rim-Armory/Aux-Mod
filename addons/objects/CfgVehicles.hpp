@@ -198,7 +198,7 @@ class CfgVehicles {
 				position = "pos cano";
 				radius = 15;
                 condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_LAATc_new')] call FUNC(vicSpawner));
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAATc')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
@@ -255,6 +255,16 @@ class CfgVehicles {
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
+            class Spawn_KC_RHOclass_Med
+            {
+                displayName = "<t color='#2ed9ca'> Spawn [KC] Rho Shuttle (Medical) </t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_Rho_medical')] call FUNC(vicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
 
         // advanced non heli also known as birds but not those birds just planes
         class Spawn_KC_ARC170
@@ -294,26 +304,6 @@ class CfgVehicles {
 				radius = 15;
                 condition = "True";
 				statement = QUOTE([ARR_2(this,'BNA_KC_Z95')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_Rho
-            {
-                displayName = "<t color='#2ed9ca'> Spawn [KC] Rho Shuttle </t>";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Rho')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_Rho_Med
-            {
-                displayName = "<t color='#2ed9ca'> Spawn [KC] Rho Shuttle </t>";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Rho_medical')] call FUNC(vicSpawner));
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };

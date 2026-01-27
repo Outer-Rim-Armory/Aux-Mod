@@ -113,12 +113,12 @@ class CfgVehicles {
         };
     };
 
-    class lsd_laatc_base;
-    class lsd_heli_laatc: lsd_laatc_base {
-        class ACE_Actions;
+    class ls_vehicle_laatc_base;
+    class ls_vehicle_laatc: ls_vehicle_laatc_base {
         class ACE_SelfActions;
+        class ACE_Actions;
     };
-    class CLASS(LAATc_New): lsd_heli_laatc {
+    class CLASS(LAATc): ls_vehicle_laatc {
         GVAR(hasShield) = TRUE;
         GVAR(health) = 2;
         GVAR(regenDelay) = SHIELD_REGEN_DELAY_DEFAULT;

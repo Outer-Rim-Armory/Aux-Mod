@@ -14,8 +14,7 @@ class CfgPatches {
             "ls_compat_ace_interaction"
         };
         units[] = {
-            QCLASS(LAATc),
-            QCLASS(LAATc_New)
+            QCLASS(LAATc)
         };
         weapons[] = {};
         VERSION_CONFIG;
