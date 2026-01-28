@@ -48,8 +48,8 @@ class CfgVehicles {
 
         textureList[] = {
             "Standard", 1,
-            "Imperial", 0/*,
-            "KeeliCompany", 0*/
+            "Imperial", 0,
+            "Carnage", 0
         };
 
         class TextureSources {
@@ -79,19 +79,19 @@ class CfgVehicles {
                     "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
                 };
             };
-            // class KeeliCompany: Standard {
-            //     author = AUTHOR;
-            //     displayName = "Keeli Company";
-            //     textures[] = {
-            //         QPATHTOF(air\nu\data\textures\KeeliCompany\Hull_co.paa),
-            //         QPATHTOF(air\nu\data\textures\KeeliCompany\Hull_front_co.paa),
-            //         QPATHTOF(air\nu\data\textures\KeeliCompany\Wings_co.paa),
-            //         "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
-            //         "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
-            //         "\3AS\3AS_republic_heli\rho_class\data\interior_co.paa",
-            //         "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
-            //     };
-            // };
+             class Carnage: Standard {
+                 author = AUTHOR;
+                 displayName = "Carnage";
+                 textures[] = {
+                     QPATHTOF(air\nu\data\textures\carnage\Hull_co.paa),
+                     QPATHTOF(air\nu\data\textures\carnage\Hull_front_co.paa),
+                     QPATHTOF(air\nu\data\textures\carnage\Wings_co.paa),
+                     "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
+                     "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
+                     "\3AS\3AS_republic_heli\rho_class\data\interior_co.paa",
+                     "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
+                 };
+             };
         };
 
         class ACE_SelfActions: ACE_SelfActions {

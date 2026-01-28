@@ -18,7 +18,10 @@ class CfgPatches {
             QCLASS(AAT_captured),
             QCLASS(AAT_Heavy_Base),
             QCLASS(AAT_King),
-            QCLASS(AAT_King_Captured)
+            QCLASS(AAT_King_Captured),
+            QCLASS(Defoliator_AAT_Base),
+            QCLASS(Flamer_AAT_Base),
+            QCLASS(Shield_AAT_Base)
         };
         weapons[] = {};
         VERSION_CONFIG;

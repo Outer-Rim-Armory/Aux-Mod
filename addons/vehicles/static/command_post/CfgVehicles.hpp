@@ -13,4 +13,13 @@ class CfgVehicles {
             };
         };
     };
+
+    class 3AS_CIS_FCP;
+    class CLASS(CIS_Command_Post): 3AS_CIS_FCP {
+        SCOPE_PUBLIC;
+        displayName = "Command Post";
+        editorSubcategory = QEDSUBCAT(Turrets);
+        faction = QFACTION(CIS);
+        crew = QCLASS(CIS_Unit_Droid_B1);
+    };
 };

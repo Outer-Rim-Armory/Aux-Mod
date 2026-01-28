@@ -365,4 +365,48 @@ class CfgVehicles {
             "HideArmorRebel",0
         };
     };
+
+    class 3AS_Heavy_AAT_Defoliator_F;
+    class CLASS(Defoliator_AAT_Base): 3AS_Heavy_AAT_Defoliator_F {
+        SCOPE_HIDDEN;
+        displayName = "Heavy AAT (Defoliator)";
+        editorSubcategory = QEDSUBCAT(Tanks);
+        faction = QFACTION(CIS);
+        crew = QCLASS(CIS_Unit_B1_Pilot);
+
+        hiddenSelectionsTextures[] = {
+            "3as\3as_cis_armor\heavyaat\data\hull_co.paa",
+            "3as\3as_cis_armor\heavyaat\data\defoliator_co.paa",
+            "3as\3AS_CIS_Armor\HeavyAAT\data\Defoliator_Displays_co.paa",
+            "3as\3as_cis_armor\heavyaat\data\shield_co.paa"
+        };
+    };
+
+    class 3AS_Heavy_AAT_Flamer_F;
+    class CLASS(Flamer_AAT_Base): 3AS_Heavy_AAT_Flamer_F {
+        SCOPE_HIDDEN;
+        displayName = "Heavy AAT (Flamer)";
+        editorSubcategory = QEDSUBCAT(Tanks);
+        faction = QFACTION(CIS);
+        crew = QCLASS(CIS_Unit_B1_Pilot);
+
+        hiddenSelectionsTextures[] = {
+            "3as\3as_cis_armor\heavyaat\data\hull_co.paa",
+            "3as\3as_cis_armor\heavyaat\data\Flame_co.paa"
+        };
+    };
+
+    class 3AS_Heavy_AAT_Shield_F;
+    class CLASS(Shield_AAT_Base): 3AS_Heavy_AAT_Shield_F {
+        SCOPE_HIDDEN;
+        displayName = "Heavy AAT (Shield)";
+        editorSubcategory = QEDSUBCAT(Tanks);
+        faction = QFACTION(CIS);
+        crew = QCLASS(CIS_Unit_B1_Pilot);
+
+        hiddenSelectionsTextures[] = {
+            "3as\3as_cis_armor\heavyaat\data\hull_co.paa",
+            "3as\3as_cis_armor\heavyaat\data\Shield_co.paa"
+        };
+    };
 };

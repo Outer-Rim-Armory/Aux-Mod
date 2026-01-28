@@ -14,7 +14,7 @@ class CfgVehicles {
     };
 
     class CLASS(UMB_Unit_Rifleman): CLASS(UMB_Unit_Base) {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
 
         displayName = "Rifleman";
 
@@ -43,7 +43,7 @@ class CfgVehicles {
 
     class CLASS(backpack_base);
     class CLASS(UMB_Backpack): CLASS(backpack_base) {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
 
         displayName = "[UMB] Backpack";
 

@@ -101,6 +101,67 @@ class CLASS(CIS_Unit_Droid_B1): CLASS(CIS_Unit_Droid_Base) {
     backpack = QCLASS(CIS_Backpack_Droid_B1);
 };
 
+class WBK_3AS_B1;
+class CLASS(WBK_B1): WBK_3AS_B1 {
+    SCOPE_PUBLIC;
+    displayName = "B1 Battle Droid (WBK)";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
+class WBK_3AS_B1_MG;
+class CLASS(WBK_B1_MG): WBK_3AS_B1_MG {
+    SCOPE_PUBLIC;
+    displayName = "B1 Heavy Droid (WBK)";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5C_Stock),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5C_Stock),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_150rnd_E5C)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_150rnd_E5C)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_B1_Heavy): CLASS(CIS_Unit_Droid_B1) {
     displayName = "B1 Heavy Droid";
     icon = "JLTS_iconManSupportGunner";
@@ -158,6 +219,41 @@ class CLASS(CIS_Unit_Droid_B1_AT): CLASS(CIS_Unit_Droid_B1) {
         QCLASS(Mag_1rnd_E60R_AT_AI),
         "ls_mag_classC_thermalDet"
     };
+};
+
+class WBK_3AS_B1_AT;
+class CLASS(WBK_B1_AT): WBK_3AS_B1_AT {
+    SCOPE_PUBLIC;
+    displayName = "B1 Battle Droid (AT)";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        QCLASS(E60R_AT),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        QCLASS(E60R_AT),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        QCLASS(Mag_1rnd_E60R_AT_AI),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        QCLASS(Mag_1rnd_E60R_AT_AI),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 };
 
 class CLASS(CIS_Unit_Droid_B1_AA): CLASS(CIS_Unit_Droid_B1) {
@@ -219,6 +315,34 @@ class CLASS(CIS_Unit_Droid_B1_Sniper): CLASS(CIS_Unit_Droid_B1) {
     };
 };
 
+class WBK_3AS_B1_Sniper;
+class CLASS(WBK_B1_Sniper): WBK_3AS_B1_Sniper {
+    SCOPE_PUBLIC;
+    displayName = "B1 Sniper Droid";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5S),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5S),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_10(QCLASS(Mag_20rnd_E5S)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_10(QCLASS(Mag_20rnd_E5S)),
+        "ls_mag_classC_thermalDet"
+    };
+};
+
 class CLASS(CIS_Unit_Droid_B1_Marine): CLASS(CIS_Unit_Droid_B1) {
     displayName = "B1 Marine Droid (HE)";
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Marine);
@@ -253,6 +377,41 @@ class CLASS(CIS_Unit_Droid_B1_Marine): CLASS(CIS_Unit_Droid_B1) {
     };
 };
 
+class WBK_3AS_B1_Marine;
+class CLASS(WBK_B1_Marine): WBK_3AS_B1_Marine {
+    SCOPE_PUBLIC;
+    displayName = "B1 Marine Droid (HE)";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        QCLASS(E60R_AT),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        QCLASS(E60R_AT),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        QCLASS(Mag_1rnd_E60R_HE_AI),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        QCLASS(Mag_1rnd_E60R_HE_AI),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_B1_CQC): CLASS(CIS_Unit_Droid_B1) {
     displayName = "B1 Shotgun Droid";
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_CQC);
@@ -278,6 +437,37 @@ class CLASS(CIS_Unit_Droid_B1_CQC): CLASS(CIS_Unit_Droid_B1) {
     };
 };
 
+class WBK_3AS_B1_GL;
+class CLASS(WBK_B1_GL): WBK_3AS_B1_GL {
+    SCOPE_PUBLIC;
+    displayName = "B1 Grenadier Droid";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        "3AS_MPL_F",
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        "3AS_MPL_F",
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5("3AS_3Rnd_HE_Grenade_shell"),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5("3AS_3Rnd_HE_Grenade_shell"),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_B1_Security): CLASS(CIS_Unit_Droid_B1) {
     displayName = "B1 Security Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Security);
@@ -285,6 +475,36 @@ class CLASS(CIS_Unit_Droid_B1_Security): CLASS(CIS_Unit_Droid_B1) {
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Security);
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_security_co.paa"};
     backpack = "";
+};
+
+class WBK_3AS_B1_Security;
+class CLASS(WBK_B1_Security): WBK_3AS_B1_Security {
+    SCOPE_PUBLIC;
+    displayName = "B1 Security Droid";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 };
 
 class CLASS(CIS_Unit_Droid_B1_Commander): CLASS(CIS_Unit_Droid_B1) {
@@ -295,6 +515,36 @@ class CLASS(CIS_Unit_Droid_B1_Commander): CLASS(CIS_Unit_Droid_B1) {
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander);
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_commander_co.paa"};
     backpack = QCLASS(CIS_Backpack_Droid_B1_Antenna);
+};
+
+class WBK_3AS_B1_Commander;
+class CLASS(WBK_B1_Commander): WBK_3AS_B1_Commander {
+    SCOPE_PUBLIC;
+    displayName = "B1 Commander Droid";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 };
 
 class CLASS(CIS_Unit_Droid_B1_Crew): CLASS(CIS_Unit_Droid_B1) {
@@ -313,6 +563,36 @@ class CLASS(CIS_Unit_Droid_B1_Pilot): CLASS(CIS_Unit_Droid_B1) {
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Pilot);
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidArmor\data\b1_pilot_co.paa"};
     backpack = "";
+};
+
+class WBK_3AS_B1_Pilot;
+class CLASS(WBK_B1_Pilot): WBK_3AS_B1_Pilot {
+    SCOPE_PUBLIC;
+    displayName = "B1 Pilot Droid";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 };
 
 class CLASS(CIS_Unit_Droid_B1_Engineer): CLASS(CIS_Unit_Droid_B1) {
@@ -359,6 +639,36 @@ class CLASS(CIS_Unit_Droid_B1_Rocket): CLASS(CIS_Unit_Droid_B1) {
     backpack = QCLASS(CIS_Jetpack_Droid_B1_Rocket);
 };
 
+class WBK_3AS_B1_Rocket;
+class CLASS(WBK_B1_Rocket): WBK_3AS_B1_Rocket {
+    SCOPE_PUBLIC;
+    displayName = "B1 Rocket Droid";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_B1_Saboteur): CLASS(CIS_Unit_Droid_B1) {
     displayName = "B1 Saboteur Droid";
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Rocket);
@@ -366,6 +676,36 @@ class CLASS(CIS_Unit_Droid_B1_Saboteur): CLASS(CIS_Unit_Droid_B1) {
     editorSubcategory = QEDSUBCAT(Special);
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Rocket);
     backpack = QCLASS(CIS_Backpack_Droid_B1_Saboteur);
+};
+
+class WBK_3AS_B1_UAV;
+class CLASS(WBK_B1_UAV): WBK_3AS_B1_UAV {
+    SCOPE_PUBLIC;
+    displayName = "B1 UAV Droid";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 };
 
 class CLASS(CIS_Unit_Droid_B1_Prototype): CLASS(CIS_Unit_Droid_B1) {
@@ -399,6 +739,39 @@ class CLASS(CIS_Unit_Droid_B1_Prototype): CLASS(CIS_Unit_Droid_B1) {
     };
 };
 
+class WBK_3AS_B1_Prototype;
+class CLASS(WBK_B1_Prototype): WBK_3AS_B1_Prototype {
+    SCOPE_PUBLIC;
+    displayName = "B1 Prototype Droid";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_2("3AS_SmokeWhite")
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_2("3AS_SmokeWhite")
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_B1_PrototypeCommander): CLASS(CIS_Unit_Droid_B1_Prototype) {
     displayName = "B1 Prototype Commander Droid";
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_PrototypeCommander);
@@ -417,6 +790,36 @@ class CLASS(CIS_Unit_Droid_B1_Geonosis): CLASS(CIS_Unit_Droid_B1) {
     backpack = QCLASS(CIS_Backpack_Droid_B1_Geonosis);
 };
 
+class WBK_3AS_B1_g;
+class CLASS(WBK_B1_Geonosis): WBK_3AS_B1_g {
+    SCOPE_PUBLIC;
+    displayName = "B1 Battle Droid (Geonosis)";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_B1_Heavy_Geonosis): CLASS(CIS_Unit_Droid_B1_Heavy) {
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
     editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
@@ -425,12 +828,78 @@ class CLASS(CIS_Unit_Droid_B1_Heavy_Geonosis): CLASS(CIS_Unit_Droid_B1_Heavy) {
     backpack = QCLASS(CIS_Backpack_Droid_B1_Geonosis);
 };
 
+class WBK_3AS_B1_MG_g;
+class CLASS(WBK_B1_Heavy_Geonosis): WBK_3AS_B1_MG_g {
+    SCOPE_PUBLIC;
+    displayName = "B1 Heavy Droid (Geonosis)";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5C_Stock),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5C_Stock),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_150rnd_E5C)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_150rnd_E5C)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_B1_AT_Geonosis): CLASS(CIS_Unit_Droid_B1_AT) {
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
     editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_AT_Geonosis);
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1Geonosis_co.paa"};
     backpack = QCLASS(CIS_Backpack_Droid_B1_Geonosis_predef_AT);
+};
+
+class WBK_3AS_B1_AT_g;
+class CLASS(WBK_B1_AT_Geonosis): WBK_3AS_B1_AT_g {
+    SCOPE_PUBLIC;
+    displayName = "B1 Battle Droid (AT) (Geonosis)";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        QCLASS(E60R_AT),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        QCLASS(E60R_AT),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        QCLASS(Mag_1rnd_E60R_AT_AI),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        QCLASS(Mag_1rnd_E60R_AT_AI),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 };
 
 class CLASS(CIS_Unit_Droid_B1_AA_Geonosis): CLASS(CIS_Unit_Droid_B1_AA) {
@@ -449,6 +918,37 @@ class CLASS(CIS_Unit_Droid_B1_Sniper_Geonosis): CLASS(CIS_Unit_Droid_B1_Sniper) 
     backpack = QCLASS(CIS_Backpack_Droid_B1_Geonosis);
 };
 
+class WBK_3AS_B1_Sniper_g;
+class CLASS(WBK_B1_Sniper_Geonosis): WBK_3AS_B1_Sniper_g {
+    SCOPE_PUBLIC;
+    displayName = "B1 Sniper Droid (Geonosis)";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5S),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5S),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_10(QCLASS(Mag_20rnd_E5S)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_10(QCLASS(Mag_20rnd_E5S)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_B1_CQC_Geonosis): CLASS(CIS_Unit_Droid_B1_CQC) {
     uniformClass = QCLASS(CIS_Uniform_Droid_B1_Geonosis);
     editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis);
@@ -463,6 +963,36 @@ class CLASS(CIS_Unit_Droid_B1_Commander_Geonosis): CLASS(CIS_Unit_Droid_B1_Comma
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_B1_Commander_Geonosis);
     hiddenSelectionsTextures[] = {"\MRC\JLTS\characters\DroidUnits\data\Droid_B1GeonosisCommander_co.paa"};
     backpack = QCLASS(CIS_Backpack_Droid_B1_Antenna_Geonosis);
+};
+
+class WBK_3AS_B1_Commander_g;
+class CLASS(WBK_B1_Commander_Geonosis): WBK_3AS_B1_Commander_g {
+    SCOPE_PUBLIC;
+    displayName = "B1 Commander Droid (Geonosis)";
+    editorSubcategory = QEDSUBCAT(CIS_B1s_Geonosis_WBK);
+    faction = QFACTION(CIS);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        "ls_mag_classC_thermalDet"
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 };
 
 class CLASS(CIS_Unit_Droid_B1_Training): CLASS(CIS_Unit_Droid_B1) {
@@ -656,8 +1186,8 @@ class CLASS(CIS_Unit_Droid_B2_Aqua): CLASS(CIS_Unit_Droid_Base) {
         QCLASS(Mag_3rnd_B2Blaster_rocket)
     };
 
-    linkedItems[] = {QCLASS(Vest_Basic),"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
-    respawnLinkedItems[] = {QCLASS(Vest_Basic),"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 
     class SoundEnvironExt {
         generic[] = {
@@ -691,6 +1221,60 @@ class CLASS(CIS_Unit_Droid_B2_Aqua): CLASS(CIS_Unit_Droid_Base) {
             {"sprint", {QPATHTOF(cis\data\audio\walk\b2\Step3.wss), 2, 1, 45}},
         };
     };
+};
+
+class WBK_LS_B2;
+class CLASS(WBK_B2): WBK_LS_B2 {
+    SCOPE_PUBLIC;
+    displayName = "B2 Super Battle Droid";
+    faction = QFACTION(CIS);
+    editorSubcategory = QEDSUBCAT(CIS_B2s_WBK);
+
+    weapons[] = {
+        QCLASS(B2Blaster)
+    };
+    respawnWeapons[] = {
+        QCLASS(B2Blaster)
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_60rnd_B2Blaster)),
+        QCLASS(Mag_3rnd_B2Blaster_rocket)
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_60rnd_B2Blaster)),
+        QCLASS(Mag_3rnd_B2Blaster_rocket)
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+};
+
+class WBK_LS_B2_Junk;
+class CLASS(WBK_B2_Junk): WBK_LS_B2_Junk {
+    SCOPE_PUBLIC;
+    displayName = "Junk B2 Super Battle Droid";
+    faction = QFACTION(CIS);
+    editorSubcategory = QEDSUBCAT(CIS_B2s_WBK);
+
+    weapons[] = {
+        QCLASS(B2Blaster)
+    };
+    respawnWeapons[] = {
+        QCLASS(B2Blaster)
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_60rnd_B2Blaster)),
+        QCLASS(Mag_3rnd_B2Blaster_rocket)
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_60rnd_B2Blaster)),
+        QCLASS(Mag_3rnd_B2Blaster_rocket)
+    };
+
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
 };
 
 class CLASS(Unit_Droid_B2): CLASS(CIS_Unit_Droid_B2) {
@@ -788,6 +1372,48 @@ class CLASS(CIS_Unit_Droid_BX): CLASS(CIS_Unit_Droid_Base) {
     respawnLinkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
 };
 
+class WBK_LS_BX;
+class CLASS(WBK_BX): WBK_LS_BX {
+    SCOPE_PUBLIC;
+    displayName = "BX Commando Droid";
+    faction = QFACTION(CIS);
+    editorSubcategory = QEDSUBCAT(CIS_BXs_WBK);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_3("3AS_SmokeWhite")
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_3("3AS_SmokeWhite")
+    };
+    items[] = {
+        // Other
+        ITEM_5("ACE_CableTie")
+    };
+    respawnItems[] = {
+        // Other
+        ITEM_5("ACE_CableTie")
+    };
+
+    linkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_BX_Shielded): CLASS(CIS_Unit_Droid_BX) {
     displayName = "BX Commando Droid (Shield)";
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Shielded);
@@ -813,6 +1439,39 @@ class CLASS(CIS_Unit_Droid_BX_Captain): CLASS(CIS_Unit_Droid_BX) {
     hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\captain_body_co.paa"};
 };
 
+class WBK_LS_BX_Command;
+class CLASS(WBK_BX_Command): WBK_LS_BX_Command {
+    SCOPE_PUBLIC;
+    displayName = "BX Commando Droid Captain";
+    faction = QFACTION(CIS);
+    editorSubcategory = QEDSUBCAT(CIS_BXs_WBK);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_3("3AS_SmokeWhite")
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_3("3AS_SmokeWhite")
+    };
+
+    linkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_BX_Diplomat): CLASS(CIS_Unit_Droid_BX) {
     displayName = "BX Commando Droid Diplomat";
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Diplomat);
@@ -821,12 +1480,108 @@ class CLASS(CIS_Unit_Droid_BX_Diplomat): CLASS(CIS_Unit_Droid_BX) {
     hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\diplomat_body_co.paa"};
 };
 
+class WBK_LS_BX_Diplomat;
+class CLASS(WBK_BX_Diplomat): WBK_LS_BX_Diplomat {
+    SCOPE_PUBLIC;
+    displayName = "BX Commando Droid Diplomat";
+    faction = QFACTION(CIS);
+    editorSubcategory = QEDSUBCAT(CIS_BXs_WBK);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_3("3AS_SmokeWhite")
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_3("3AS_SmokeWhite")
+    };
+
+    linkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+};
+
 class CLASS(CIS_Unit_Droid_BX_Security): CLASS(CIS_Unit_Droid_BX) {
     displayName = "BX Commando Droid Security";
     editorPreview = EDITOR_PREVIEW(CIS_Unit_Droid_BX_Security);
 
     uniformClass = QCLASS(CIS_Uniform_Droid_BX_Security);
     hiddenSelectionsTextures[] = {"\ls\core\addons\characters_droid\uniforms\bx\data\security_body_co.paa"};
+};
+
+class WBK_LS_BX_Security;
+class CLASS(WBK_BX_Security): WBK_LS_BX_Security {
+    SCOPE_PUBLIC;
+    displayName = "BX Commando Droid Security";
+    faction = QFACTION(CIS);
+    editorSubcategory = QEDSUBCAT(CIS_BXs_WBK);
+
+    weapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_3("3AS_SmokeWhite")
+    };
+    respawnMagazines[] = {
+        ITEM_5(QCLASS(Mag_100rnd_E5)),
+        ITEM_2("ls_mag_classC_thermalDet"),
+        ITEM_3("3AS_SmokeWhite")
+    };
+
+    linkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+};
+
+class WBK_LS_BX_Sniper;
+class CLASS(WBK_BX_Sniper): WBK_LS_BX_Sniper {
+    SCOPE_PUBLIC;
+    displayName = "BX Commando Droid Sniper";
+    faction = QFACTION(CIS);
+    editorSubcategory = QEDSUBCAT(CIS_BXs_WBK);
+
+    weapons[] = {
+        QCLASS(E5S),
+        "Throw",
+        "Put"
+    };
+    respawnWeapons[] = {
+        QCLASS(E5S),
+        "Throw",
+        "Put"
+    };
+
+    magazines[] = {
+        ITEM_10(QCLASS(Mag_20rnd_E5S)),
+        "ls_mag_classC_thermalDet"
+    };
+    respawnMagazines[] = {
+        ITEM_10(QCLASS(Mag_20rnd_E5S)),
+        "ls_mag_classC_thermalDet"
+    };
+    linkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {QCLASS(CIS_Vest_Droid_BX), "JLTS_NVG_droid_chip_2", DROID_LINKED_ITEMS};
 };
 
 class CLASS(CIS_Unit_Droid_BX_Security_Shielded): CLASS(CIS_Unit_Droid_BX_Security) {

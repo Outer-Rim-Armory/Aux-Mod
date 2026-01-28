@@ -65,6 +65,7 @@ workshop = [
     "2323185592", # Lightsabers and Force
     "570118882", # No Weapon Sway
     "3328314886", # Heavy Weapon Framework
+    "1236465508", # Wander Panzer
 ]
 optionals = ["no_burn_screams"]
 

@@ -10,6 +10,8 @@ GROUND_HOLDER(Helmet_Phase1_CatholicKyber,"INF P1 Helm ('Catholic') [Kyber Visor
 GROUND_HOLDER(Helmet_Phase1_Cutthroat,"INF P1 Helm ('Cutthroat')");
 GROUND_HOLDER(Helmet_Phase1_Defter,"INF P1 Helm ('Defter')");
 GROUND_HOLDER(Helmet_Phase1_DefterBacta,"INF P1 Helm ('Defter') [Bacta Visor]");
+GROUND_HOLDER(Helmet_Phase1_Destiny,"INF P1 Helm ('Destiny')");
+GROUND_HOLDER(Helmet_Phase1_DestinyBacta,"INF P1 Helm ('Destiny') [Bacta Visor]");
 GROUND_HOLDER(Helmet_Phase1_Dexus,"INF P1 Helm ('Dexus')");
 GROUND_HOLDER(Helmet_Phase1_DexusBacta,"INF P1 Helm ('Dexus') [Bacta Visor]");
 GROUND_HOLDER(Helmet_Phase1_Drake,"INF P1 Helm ('Drake')");
@@ -67,6 +69,8 @@ GROUND_HOLDER(Helmet_Phase2_BobKyber,"INF P2 Helm ('Bob') [Kyber Visor]");
 GROUND_HOLDER(Helmet_Phase2_Bond,"INF P2 Helm ('Bond')");
 GROUND_HOLDER(Helmet_Phase2_Burnt,"INF P2 Helm ('Burnt')");
 GROUND_HOLDER(Helmet_Phase2_BurntBacta,"INF P2 Helm ('Burnt') [Bacta Visor]");
+GROUND_HOLDER(Helmet_Phase2_Destiny,"INF P2 Helm ('Destiny')");
+GROUND_HOLDER(Helmet_Phase2_DestinyCrimson,"INF P2 Helm ('Destiny') [Crimson Visor]");
 GROUND_HOLDER(Helmet_Phase2_Dexus,"INF P2 Helm ('Dexus')");
 GROUND_HOLDER(Helmet_Phase2_DexusBacta,"INF P2 Helm ('Dexus') [Bacta Visor]");
 GROUND_HOLDER(Helmet_Phase2_Flare,"INF P2 Helm ('Flare')");

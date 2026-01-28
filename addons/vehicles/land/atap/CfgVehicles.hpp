@@ -15,6 +15,7 @@ class CfgVehicles {
         displayName = "AT-AP";
         crew = QCLASS(Unit_Phase2_ARMR_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
+        waterDamageEngine = 0;
 
         weapons[] = {"SmokeLauncher"};
         magazines[] = {

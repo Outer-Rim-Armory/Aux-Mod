@@ -12,7 +12,9 @@ class CfgPatches {
             QGVAR(sounds),
             "3AS_Static_FCP"
         };
-        units[] = {};
+        units[] = {
+            QCLASS(CIS_Command_Post)
+        };
         weapons[] = {};
         VERSION_CONFIG;
     };

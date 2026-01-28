@@ -55,6 +55,41 @@ class Extended_Killed_EventHandlers {
             killed = QUOTE(_this#0 call FUNC(deleteDekaShield));
         };
     };
+    class 3AS_Deka_Static {
+        class GVAR(deleteShield) {
+            killed = QUOTE(_this#0 call FUNC(deleteDekaShield));
+        };
+    };
+    class 3AS_Deka_Static_Sniper_Base {
+        class GVAR(deleteShield) {
+            killed = QUOTE(_this#0 call FUNC(deleteDekaShield));
+        };
+    };
+    class 3AS_Deka_Static_Sniper {
+        class GVAR(deleteShield) {
+            killed = QUOTE(_this#0 call FUNC(deleteDekaShield));
+        };
+    };
+    class CLASS(Droideka_Base) {
+        class GVAR(deleteShield) {
+            killed = QUOTE(_this#0 call FUNC(deleteDekaShield));
+        };
+    };
+    class CLASS(Droideka) {
+        class GVAR(deleteShield) {
+            killed = QUOTE(_this#0 call FUNC(deleteDekaShield));
+        };
+    };
+    class CLASS(Droideka_Sniper_Base) {
+        class GVAR(deleteShield) {
+            killed = QUOTE(_this#0 call FUNC(deleteDekaShield));
+        };
+    };
+    class CLASS(Droideka_Sniper) {
+        class GVAR(deleteShield) {
+            killed = QUOTE(_this#0 call FUNC(deleteDekaShield));
+        };
+    };
     class RD501_droideka_mk2_base {
         class GVAR(deleteShield) {
             killed = QUOTE(_this#0 call FUNC(deleteDekaShield));

@@ -29,6 +29,7 @@ class CfgVehicles {
         displayName = "HAVw A6 Juggernaut";
         crew = QCLASS(Unit_Phase2_ARMR_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_ARMR_CT)};
+        waterDamageEngine = 0;
 
         ace_cargo_space = 20;
 

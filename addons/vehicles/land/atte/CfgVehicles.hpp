@@ -34,6 +34,7 @@ class CfgVehicles {
             "ShowATTEIntCommand", TRUE,
             "ShowATTERebelMod", TRUE
         };
+        waterDamageEngine = 0;
 
         ace_cargo_space = 10;
 
