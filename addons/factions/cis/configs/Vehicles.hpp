@@ -714,3 +714,14 @@ class CLASS(CIS_Raptor_Woodland): CLASS(Raptor_Base) {
         "\ls\core\addons\vehicles_agt\data\textures\woodland\camo2_co.paa"
     };
 };
+
+class CLASS(N99Tank_Base);
+class CLASS(N99_Tank): CLASS(N99Tank_Base) {
+    SCOPE_PUBLIC;
+    author = AUTHOR;
+
+    displayName = "N99 Snail Tank";
+
+    faction = QFACTION(CIS);
+    editorSubcategory = QEDSUBCAT(Tanks);
+};

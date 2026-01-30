@@ -157,7 +157,8 @@ class CfgPatches {
             QCLASS(CIS_Raptor_TradeFederation),
             QCLASS(CIS_Raptor_Winter),
             QCLASS(CIS_Raptor_Urban),
-            QCLASS(CIS_Raptor_Woodland)
+            QCLASS(CIS_Raptor_Woodland),
+            QCLASS(N99_Tank)
         };
         weapons[] = {
             QCLASS(CIS_Uniform_Base),
