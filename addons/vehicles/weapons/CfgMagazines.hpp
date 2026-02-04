@@ -94,6 +94,20 @@ class CfgMagazines {
         initSpeed = 1000;
     };
 
+    class CLASS(Mag_1000Rnd_Venator_AA_Shells): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "Venator Heavy Cannon AA Shells";
+        displayNameShort = "AA Rnd";
+        descriptionShort = "Plasma Shells<br/>Used In Venator Heavy Cannon";
+        ammo = QCLASS(Shell_VenatorCannon_AA);
+        count = 1000;
+        initSpeed = 1440;
+        maxLeadSpeed = 800;
+        tracersEvery = 1;
+        nameSound = "cannon";
+        muzzleImpulseFactor[] = {1,4};
+    };
+
     class CLASS(Mag_100Rnd_Gozanti): CLASS(Mag_VehicleBase) {
         SCOPE_PUBLIC;
         displayName = "Gozanti Mass Driver Shells";

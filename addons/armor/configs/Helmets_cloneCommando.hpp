@@ -23,8 +23,8 @@ class CLASS(cloneCommando_helmet_red): CLASS(Helmet_ARC_Base) {
     hiddenSelections[] = {"illum", "camo1"};
     hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
     hiddenSelectionsTextures[] = {
-        QPATHTOF(armor\data\helmets\commando\Commando_Red_Visor_co.paa),
-        QPATHTOF(armor\data\helmets\commando\Commando_Red_Visor_co.paa)
+        QPATHTOF(data\helmets\commando\Commando_Red_Visor_co.paa),
+        QPATHTOF(data\helmets\commando\Commando_Red_Visor_co.paa)
     };
     picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_helmet_ui_ca.paa";
 

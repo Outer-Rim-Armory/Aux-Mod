@@ -8,7 +8,8 @@ class CfgPatches {
         requiredAddons[] = {
             QCLASS(core),
             QEGVAR(factions,cis),
-            "WBK_DifferentRobotics_1"
+            "WBK_Droids_3AS",
+            "WBK_Droids_LS"
         };
         units[] = {
             QCLASS(CIS_Unit_Droid_B2_Revived),

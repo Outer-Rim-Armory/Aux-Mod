@@ -29,7 +29,7 @@ onlyforplayer = "false"; \
 hideOnUse = 0; \
 };
 #define VICSPAWNTNK(classname,dispn) class classname { \
-displayName = QUOTE(<t color='#a100c9'> Spawn [KC] dispn </t>); \
+displayName = QUOTE(<t color='#00AAFF'> Spawn [KC] dispn </t>); \
 position = "pos cano"; \
 radius = 15; \
 condition = "True"; \
