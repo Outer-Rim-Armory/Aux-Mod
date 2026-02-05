@@ -18,7 +18,7 @@ class CfgVehicles {
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
         };
-        textureList[] = {"CamoKC", 1, "CamoGrey", 0};
+        textureList[] = {"CamoKC", 1, "CamoGrey", 0, "Carnage", 0};
         class TextureSources {
             class CamoKC {
                 author = AUTHOR;
@@ -34,6 +34,14 @@ class CfgVehicles {
                 displayName = "Grey Camo";
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\Body_CamoGrey_co.paa),
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+                };
+            };
+            class Carnage: CamoKC {
+                displayName = "Carnage";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\Body_Carnage_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
                 };
@@ -77,7 +85,7 @@ class CfgVehicles {
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
             "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
         };
-        textureList[] = {"CamoKC", 1, "CamoGrey", 0};
+        textureList[] = {"CamoKC", 1, "CamoGrey", 0, "Carnage", 0};
         class TextureSources {
             class CamoKC {
                 author = AUTHOR;
@@ -93,6 +101,14 @@ class CfgVehicles {
                 displayName = "Grey Camo";
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\Body_CamoGrey_co.paa),
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+                };
+            };
+            class Carnage: CamoKC {
+                displayName = "Carnage";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\Body_Carnage_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
                 };
@@ -168,6 +184,7 @@ class CfgVehicles {
             QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
             QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
         };
+        textureList[] = {"CamoKC", 1, "CamoGrey", 0, "Carnage", 0};
         class TextureSources {
             class BrownCamo {
                 author = AUTHOR;
@@ -185,6 +202,16 @@ class CfgVehicles {
                 displayName = "Grey Camo";
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\Body_CamoGrey_co.paa),
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
+                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                };
+            };
+            class Carnage: BrownCamo {
+                displayName = "Carnage";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\Body_Carnage_co.paa),
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
                     "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
                     QPATHTOF(land\hornet\data\textures\Launcher_co.paa),

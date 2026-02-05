@@ -94,7 +94,8 @@ class CfgVehicles {
             "Wyvern", 1,
             "Akali", 0,
             "TwiLek", 0,
-            "Katarina", 0
+            "Katarina", 0,
+            "Dogo", 0
         };
 
         class TextureSources {
@@ -180,6 +181,16 @@ class CfgVehicles {
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class Dogo: KeeliCompany {
+                displayName = "Dogo";
+                textures[] = {
+                    QPATHTOF(air\laati\data\textures\Dogo\Hull_co.paa),
+                    QPATHTOF(air\laati\data\textures\Dogo\Wings_co.paa),
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
+                    QPATHTOF(air\laati\data\textures\Dogo\Interior_co.paa)
                 };
             };
         };
