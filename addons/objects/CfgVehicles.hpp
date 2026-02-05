@@ -372,7 +372,7 @@ class CfgVehicles {
             // medical VICSPAWNMED
             VICSPAWNMED(CLASS(Hermitaur_class_M),Hermitaur (Medic))
             VICSPAWNMED(CLASS(Gammoth_Medical),Gammoth Medic)
-            VICSPAWNMED(CLASS(Glavenus_Medic), Glavenus Medic)
+            VICSPAWNMED(CLASS(Glavenus_Medic),Glavenus Medic)
             // raptor VICSPAWNRAP
             VICSPAWNRAP(CLASS(BARC),BARC Speeder)
 

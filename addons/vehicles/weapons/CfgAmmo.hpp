@@ -81,6 +81,18 @@ class CfgAmmo {
         tracerScale = 2;
     };
 
+    class 3AS_VeantorCannon_AA;
+    class CLASS(Shell_VenatorCannon_AA): 3AS_VeantorCannon_AA {
+        hit = 60;
+        caliber = 2.8;
+        typicalSpeed = 960;
+
+        model = "\3AS\3AS_Weapons\Data\tracer_shell_blue.p3d";
+        effectFly = "3AS_PlasmaBolt_Large_Blue_Fly";
+
+        tracerScale = 1.85;
+    };
+
     class Sh_155mm_AMOS;
     class CLASS(Shell_PlasmaMortar_82mm_HE): Sh_155mm_AMOS {
         hit = 340;

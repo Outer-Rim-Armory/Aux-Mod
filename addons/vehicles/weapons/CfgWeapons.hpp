@@ -391,6 +391,15 @@ class CfgWeapons {
         };
     };
 
+    class 3AS_Venator_Cannon;
+    class CLASS(Cannon_Venator): 3AS_Venator_Cannon {
+        displayName = "Venator Heavy Cannon";
+        magazines[] = {
+            QCLASS(Mag_1000Rnd_Venator_AA_Shells)
+        };
+    };
+
+
     class 3as_ARC_Heavy_Canon;
     class CLASS(Cannon_ARC_Heavy): 3as_ARC_Heavy_Canon {
         displayName = "Heavy Energy Blaster Cannon";
