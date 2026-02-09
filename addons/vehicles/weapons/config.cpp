@@ -32,7 +32,8 @@ class CfgPatches {
            QCLASS(VS_Citadel_item),
            QCLASS(VS_Shield_Item),
            QCLASS(VS_Medical_item),
-           QCLASS(VS_Repair_Item)
+           QCLASS(VS_Repair_Item),
+           QCLASS(Cannon_Venator)
         };
         VERSION_CONFIG;
     };
