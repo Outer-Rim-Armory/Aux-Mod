@@ -104,7 +104,7 @@ class CLASS(CIS_Unit_Droid_B1): CLASS(CIS_Unit_Droid_Base) {
 class WBK_3AS_B1;
 class CLASS(WBK_B1): WBK_3AS_B1 {
     SCOPE_PUBLIC;
-    displayName = "B1 Battle Droid (WBK)";
+    displayName = "B1 Battle Droid";
     editorSubcategory = QEDSUBCAT(CIS_B1s_WBK);
     faction = QFACTION(CIS);
 

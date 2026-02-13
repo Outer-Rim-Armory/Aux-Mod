@@ -376,6 +376,7 @@ class CfgPatches {
             QCLASS(Helmet_ATRT_Base),
             QCLASS(Helmet_ATRT_CT_V1),
             QCLASS(Helmet_ATRT_CT_V2),
+            QCLASS(Helmet_ATRT_Imperial),
             QCLASS(Helmet_Scout_Base_V1),
             QCLASS(Helmet_Scout_Base_V2),
             QCLASS(Helmet_Scout_CT_V1),

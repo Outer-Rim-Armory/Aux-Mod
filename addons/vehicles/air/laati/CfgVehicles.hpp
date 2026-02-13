@@ -95,7 +95,8 @@ class CfgVehicles {
             "Akali", 0,
             "TwiLek", 0,
             "Katarina", 0,
-            "Dogo", 0
+            "Dogo", 0,
+            "Bailout", 0
         };
 
         class TextureSources {
@@ -191,6 +192,16 @@ class CfgVehicles {
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paa",
                     QPATHTOF(air\laati\data\textures\Dogo\Interior_co.paa)
+                };
+            };
+            class Bailout: KeeliCompany {
+                displayName = "Bailout";
+                textures[] = {
+                    QPATHTOF(air\laati\data\textures\Bailout\Hull_co.paa),
+                    QPATHTOF(air\laati\data\textures\Katarina\Wings_co.paa),
+                    "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
+                    "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paas",
+                    "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
         };

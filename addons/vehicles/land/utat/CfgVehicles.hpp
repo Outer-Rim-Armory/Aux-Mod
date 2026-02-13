@@ -35,7 +35,8 @@ class CfgVehicles {
             "KeeliCompany", 1,
             "KeeliCompanyWhite", 0,
             "CamoBrown", 0,
-            "CamoGrey", 0
+            "CamoGrey", 0,
+            "Imperial", 0
         };
         class TextureSources {
             class Standard {
@@ -74,6 +75,13 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\utat\data\textures\CamoGrey\Primary_co.paa),
                     QPATHTOF(land\utat\data\textures\CamoGrey\Secondary_co.paa)
+                };
+            };
+            class Imperial: KeeliCompany {
+                displayName = "Empire";
+                textures[] = {
+                    "3AS\3AS_UTAT\data\UTAT_Primary_Imp_CO.paa",
+                    "3AS\3AS_UTAT\data\UTAT_Secondary_Imp_CO.paa"
                 };
             };
         };

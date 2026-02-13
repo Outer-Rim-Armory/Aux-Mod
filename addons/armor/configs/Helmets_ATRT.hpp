@@ -49,3 +49,20 @@ class CLASS(Helmet_ATRT_CT_V2): CLASS(cloneHelmet_base) {
         uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\atrt\ls_helmet_clone_atrt.p3d";
     };
 };
+
+class CLASS(Helmet_ATRT_Imperial): CLASS(cloneHelmet_base) {
+    SCOPE_PUBLIC;
+
+    displayName = "[KC] SF AT-RT Helm 02 (Imperial)";
+
+    model = "\ls\core\addons\characters_clone_legacy\helmets\atrt\ls_helmet_clone_atrt.p3d";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\atrt\Imp_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\atrt\data\antenna_CO.paa"};
+
+    class ItemInfo: ItemInfo {
+        hiddenSelections[] = {"camo1","camo2"};
+        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\atrt\ls_helmet_clone_atrt.p3d";
+    };
+};

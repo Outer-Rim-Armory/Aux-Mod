@@ -1,11 +1,14 @@
 class CfgVehicles {
-    class 3AS_Keeradak_F;
+    class 3AS_Keeradak_Base_F;
+    class 3AS_Keeradak_F: 3AS_Keeradak_Base_F {
+    };
     class CLASS(Keeradak_Base): 3AS_Keeradak_F {
-        SCOPE_PRIVATE;
+        SCOPE_HIDDEN;
         author = AUTHOR;
 
         displayName = "Keeradak (Base)";
         crew = QCLASS(Unit_Phase2_CT);
+        side = BLUFOR;
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Turrets);
@@ -31,8 +34,8 @@ class CfgVehicles {
                 displayName = "KC";
                 author = AUTHOR;
                 textures[] = {
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KC\Shell_co.paa),
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\KC\Cockpit_co.paa)
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KC_AA_Base_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KC_AA_Gun_co.paa)
                 };
             };
             class Imperial: Standard {
@@ -48,5 +51,11 @@ class CfgVehicles {
     class CLASS(Keeradak): CLASS(Keeradak_Base) {
         SCOPE_PUBLIC;
         displayName = "Keeradak";
+    };
+
+    class CLASS(Keeradak_AI): CLASS(Keeradak_Base) {
+        SCOPE_PUBLIC;
+        displayName = "Keeradak (AI)";
+        crew = "B_UAV_AI";
     };
 };

@@ -4,7 +4,6 @@ class CfgVehicles {
         class Turrets {
             class MainTurret;
         };
-        class AnimationSources;
     };
     class CLASS(N99Tank_Base): 3AS_N99 {
         SCOPE_PRIVATE;
