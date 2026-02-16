@@ -7,11 +7,7 @@ class CfgVehicles {
     class LandVehicle: Land {};
     class Tank: LandVehicle {};
     class Tank_F: Tank {
-        class Turrets {
-            class MainTurret: NewTurret {
-                class Turrets;
-            };
-        };
+        class Turrets;
     };
     class 3AS_AAT_base_F: Tank_F {
         class Turrets;
@@ -29,6 +25,22 @@ class CfgVehicles {
         };
     };
     class 3AS_AAT: 3AS_CIS_AAT_F {
+        class ACE_SelfActions;
+        class Turrets: Turrets {
+            class MainTurret: MainTurret {
+                class Turrets: Turrets {
+                    class CommanderOptics;
+                };
+            };
+        };
+        class HitPoints;
+    };
+    class ls_vehicle_aat_base: Tank_F {
+        class Turrets: Turrets {
+            class MainTurret;
+        };
+    };
+    class ls_vehicle_aat: ls_vehicle_aat_base {
         class ACE_SelfActions;
         class Turrets: Turrets {
             class MainTurret: MainTurret {
@@ -227,11 +239,12 @@ class CfgVehicles {
         };
     };
 
-
-    class CLASS(AAT_King): CLASS(AAT_Base) {
+    class CLASS(AAT_King): ls_vehicle_aat {
         SCOPE_PRIVATE;
 
         displayName = "King AAT";
+        editorSubcategory = QEDSUBCAT(Tanks);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,AAT_King_Base);
 
         weapons[] = {"SmokeLauncher"};
         magazines[] = {
@@ -242,27 +255,12 @@ class CfgVehicles {
 
         armor = 2000;
         armorStructural = 10;
-
-        animationList[] = {
-            "HideArmorCIS",1,
-            "HideArmorRebel",1
+        hiddenSelections[] = {"body1","body2","gun"};
+        hiddenSelectionsTextures[] = {
+            "\ls\core\addons\vehicles_aat\data\textures\black\body1_co.paa",
+            "\ls\core\addons\vehicles_aat\data\textures\black\body2_co.paa",
+            "\ls\core\addons\vehicles_aat\data\textures\black\gun_co.paa"
         };
-
-        textureList[] = {
-        "CIS", 0,
-        "TradeFederation", 0,
-        "EPF", 0,
-        "Red", 0,
-        "KC", 0,
-        "Desert", 0,
-        "Geonosis", 0,
-        "Woodland", 0,
-        "Tropical", 0,
-        "Arid", 0,
-        "Winter", 0,
-        "Aqua", 0,
-        "King", 1
-    };
 
         class ACE_SelfActions: ACE_SelfActions {
         };
@@ -294,13 +292,6 @@ class CfgVehicles {
                         };
                     };
                 };
-            };
-        };
-
-        class AnimationSourcs {
-            class recoil_source {
-                source = "reload";
-                weapon = "3AS_AATCannon";
             };
         };
 
@@ -339,30 +330,11 @@ class CfgVehicles {
         faction = QFACTION(KC);
         crew = QCLASS(Unit_Phase2_ARMR_CT);
 
-        hiddenSelections[] = {"camo1"};
+        hiddenSelections[] = {"body1","body2","gun"};
         hiddenSelectionsTextures[] = {
-            QPATHTOF(land\aat\data\textures\KC_AAT_co.paa),
-        };
-
-        textureList[] = {
-        "CIS", 0,
-        "TradeFederation", 0,
-        "EPF", 0,
-        "Red", 0,
-        "KC", 1,
-        "Desert", 0,
-        "Geonosis", 0,
-        "Woodland", 0,
-        "Tropical", 0,
-        "Arid", 0,
-        "Winter", 0,
-        "Aqua", 0,
-        "King", 0
-    };
-
-        animationList[] = {
-            "HideArmorCIS",0,
-            "HideArmorRebel",0
+            QPATHTOF(land\aat\data\textures\KC_body1_co.paa),
+            QPATHTOF(land\aat\data\textures\KC_body2_co.paa),
+            QPATHTOF(land\aat\data\textures\KC_gun_co.paa)
         };
     };
 

@@ -426,8 +426,6 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         faction = QFACTION(TU);
-        hiddenSelectionsTextures[] = {"\3AS\3AS_AAT\data\Tan_AAT_CO.paa"};
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\aat,AAT_Tan);
 
         crew = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};

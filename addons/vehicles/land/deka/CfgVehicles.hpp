@@ -1,7 +1,6 @@
 class CfgVehicles {
     class 3AS_Deka_Static_Base;
     class 3AS_Deka_Static: 3AS_Deka_Static_Base {
-        class Turrets;
     };
     class CLASS(Droideka_Base): 3AS_Deka_Static {
         SCOPE_HIDDEN;
@@ -10,15 +9,10 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Turrets);
         faction = QFACTION(CIS);
         crew = "O_UAV_AI";
-
-        class Turrets: Turrets {
-
-        };
     };
 
     class 3AS_Deka_Static_Sniper_Base: 3AS_Deka_Static_Base {};
     class 3AS_Deka_Static_Sniper: 3AS_Deka_Static_Sniper_Base{
-        class Turrets;
     };
     class CLASS(Droideka_Sniper_Base): 3AS_Deka_Static_Sniper {
         SCOPE_HIDDEN;

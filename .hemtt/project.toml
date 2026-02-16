@@ -68,6 +68,7 @@ workshop = [
     "1236465508", # Wander Panzer
     "2781146469", # DBA CIS
     "2781143469", # DBA Core
+    "3321182393", # TK Trooper Standalone Mod
 ]
 optionals = ["no_burn_screams"]
 
