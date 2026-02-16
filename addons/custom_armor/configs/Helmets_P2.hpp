@@ -64,7 +64,6 @@ class CLASS(Helmet_Phase2_Jaws_CamoBrown): CLASS(Helmet_Phase2_Jaws) {
 
 P2_HELMET_CUSTOM(Jimsbo);
 P2_HELMET_CUSTOM(Jesse);
-P2_HELMET_CUSTOM(Juno);
 P2_HELMET_VISOR_CUSTOM(Joe,Crimson);
 P2_HELMET_VISOR_CUSTOM(Keeli,Crimson);
 
