@@ -388,6 +388,7 @@ class CfgPatches {
             QCLASS(Helmet_Scout_Imperial),
             QCLASS(Helmet_Scout_Imperial_V2),
             QCLASS(Helmet_Hunter_Base),
+            QCLASS(Helmet_Crosshair_Base),
             QCLASS(Uniform_Base),
             QCLASS(Uniform_female),
             QCLASS(Uniform_Scout_Base),

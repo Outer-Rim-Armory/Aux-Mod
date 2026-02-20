@@ -16,3 +16,22 @@ class CLASS(Helmet_Hunter_Base): CLASS(cloneHelmet_base) {
         uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\hunter\ls_sob_hunter_helmet.p3d";
     };
 };
+
+class CLASS(Helmet_Crosshair_Base): CLASS(cloneHelmet_base) {
+    SCOPE_PUBLIC;
+
+    displayName = "[KC] INF Crosshair Helm (Base)";
+
+    model = "\ls\core\addons\characters_clone_legacy\helmets\crosshair\ls_sob_crosshair_helmet.p3d";
+    hiddenSelections[] = {"camo1", "visor"};
+    hiddenSelectionsTextures[] = {
+        "\ls\core\addons\characters_clone_legacy\helmets\crosshair\data\camo1_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\crosshair\data\visor_co.paa"
+    };
+    picture = "\ls\core\addons\main\data\ui\ls_logo_ca.paa";
+
+    class ItemInfo: ItemInfo {
+        hiddenSelections[] = {"camo1", "visor"};
+        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\crosshair\ls_sob_crosshair_helmet.p3d";
+    };
+};

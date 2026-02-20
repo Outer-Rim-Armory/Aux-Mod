@@ -594,6 +594,46 @@ class CLASS(DOUBLES(Helmet_Hunter,var1)##var2): CLASS(DOUBLES(Helmet_Hunter,var1
     }; \
 }
 
+#define CROSSHAIR_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_Crosshair,var1)): CLASS(Helmet_Crosshair_Base) { \
+    displayName = QUOTE([KC] INF Crosshair Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\crosshair\DOUBLES(var1,camo1_co.paa)), \
+        "\ls\core\addons\characters_clone_legacy\helmets\crosshair\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Crosshair_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}
+
+#define CROSSHAIR_HELMET_VISOR_CUSTOM(var1,var2) class CLASS(DOUBLES(Helmet_Crosshair,var1)): CLASS(Helmet_Crosshair_Base) { \
+    displayName = QUOTE([KC] INF Crosshair Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\crosshair\DOUBLES(var1,camo1_co.paa)), \
+        "\ls\core\addons\characters_clone_legacy\helmets\crosshair\data\visor_co.paa" \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    EGVAR(armor,nvCanToggle) = TRUE; \
+    EGVAR(armor,nvHelmetOff) = QCLASS(DOUBLES(Helmet_Crosshair,var1)); \
+    EGVAR(armor,nvHelmetOn) = QCLASS(DOUBLES(Helmet_Crosshair,var1)##var2##); \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Crosshair_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}; \
+class CLASS(DOUBLES(Helmet_Crosshair,var1)##var2): CLASS(DOUBLES(Helmet_Crosshair,var1)) { \
+    SCOPE_HIDDEN; \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\crosshair\DOUBLES(var1,camo1_co.paa)), \
+        QPATHTOF(data\visors\DOUBLES(var2,crosshair_visor_co.paa)) \
+    }; \
+    hiddenSelectionsMaterials[] = { \
+        "", \
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat" \
+    }; \
+}
+
 #define RC_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_RC,var1)): CLASS(cloneCommando_helmet) { \
     displayName = QUOTE([KC] SF Commando Helm ('##var1##')); \
     hiddenSelectionsTextures[] = { \
