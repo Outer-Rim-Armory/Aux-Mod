@@ -49,6 +49,7 @@ workshop = [
     "3469976535", # Weapon Research and Security: Autonomous systems
     "1967740913", # Jango's Armory
     "1124993203", # 3DEN Better Inventory
+    "2918542818", # Sci-fi Support Plus
 ]
 presets = ["main"]
 dlc = []
@@ -68,6 +69,7 @@ workshop = [
     "2781146469", # DBA CIS
     "2781143469", # DBA Core
     "3321182393", # TK Trooper Standalone Mod
+    "1236465508", # Wander Panzar
 ]
 optionals = ["no_burn_screams"]
 
