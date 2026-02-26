@@ -18,7 +18,7 @@ class CfgVehicles {
         maxSpeed = 120; // was 90
 
         hiddenSelectionsTextures[] = {};
-        textureList[] = {"CamoKC", 1, "CamoBrown", 0, "CamoGrey", 0};
+        textureList[] = {"CamoKC", 0, "CamoBrown", 0, "CamoGrey", 0,"KC",1};
         class TextureSources {
             class CamoKC {
                 author = AUTHOR;
@@ -44,6 +44,14 @@ class CfgVehicles {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoGrey_co.paa)
+                };
+            };
+            class KC: CamoKC {
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\gammoth\data\textures\Body\Body_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Body\Body2_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_KC_co.paa)
                 };
             };
         };
@@ -99,6 +107,15 @@ class CfgVehicles {
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Covered\Covered_CamoGrey_co.paa)
+                };
+            };
+            class KC: KC {
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\gammoth\data\textures\Body\Body_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Body\Body2_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Covered\Covered_KC_co.paa)
                 };
             };
         };
@@ -157,6 +174,15 @@ class CfgVehicles {
                     "\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
                 };
             };
+            class KC: KC {
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\gammoth\data\textures\Body\Body_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Body\Body2_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_KC_co.paa),
+                    "\A3\Structures_F\Data\Metal\Containers\Containers_02_set_CO.paa"
+                };
+            };
         };
 
         INVENTORY_VEHICLE_GAMAMMO(2);
@@ -205,6 +231,15 @@ class CfgVehicles {
                     QPATHTOF(land\gammoth\data\textures\Covered\Covered_CamoGrey_co.paa)
                 };
             };
+            class KC: KC {
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\gammoth\data\textures\Body\Body_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Body\Body2_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Covered\Covered_KC_co.paa)
+                };
+            };
         };
 
         INVENTORY_VEHICLE_GAMMED(2);
@@ -251,6 +286,14 @@ class CfgVehicles {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Repair\Repair_CamoGrey_co.paa)
+                };
+            };
+            class KC: KC {
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\gammoth\data\textures\Body\Body_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Body\Body2_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Repair\Repair_KC_co.paa),
                 };
             };
         };
@@ -311,6 +354,14 @@ class CfgVehicles {
                     QPATHTOF(land\gammoth\data\textures\Fuel\Fuel_CamoGrey_co.paa)
                 };
             };
+            class KC: KC {
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\gammoth\data\textures\Body\Body_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Body\Body2_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Fuel\Fuel_KC_co.paa),
+                };
+            };
         };
 
         INVENTORY_VEHICLE_GAMFUEL(2);
@@ -357,6 +408,16 @@ class CfgVehicles {
                     QPATHTOF(land\gammoth\data\textures\Body\Body_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Body\Body2_CamoGrey_co.paa),
                     QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_CamoGrey_co.paa),
+                    "\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa",
+                    "\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
+                };
+            };
+            class KC: KC {
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\gammoth\data\textures\Body\Body_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Body\Body2_KC_co.paa),
+                    QPATHTOF(land\gammoth\data\textures\Cargo\Cargo_KC_co.paa),
                     "\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_02_CO.paa",
                     "\A3\Structures_F_EPC\Items\Electronics\Data\The_Device_03_CO.paa"
                 };
