@@ -16,14 +16,12 @@ class CfgVehicles {
         weapons[] = {
             QCLASS(DC15S),
             QCLASS(DC17),
-            "ls_clone_electrobinoculars",
             "Throw",
             "Put"
         };
         respawnWeapons[] = {
             QCLASS(DC15S),
             QCLASS(DC17),
-            "ls_clone_electrobinoculars",
             "Throw",
             "Put"
         };
@@ -88,7 +86,6 @@ class CfgVehicles {
             QCLASS(DC15S),
             QCLASS(DC17),
             QCLASS(RPS7),
-            "ls_clone_electrobinoculars",
             "Throw",
             "Put"
         };
@@ -96,7 +93,6 @@ class CfgVehicles {
             QCLASS(DC15S),
             QCLASS(DC17),
             QCLASS(RPS7),
-            "ls_clone_electrobinoculars",
             "Throw",
             "Put"
         };
@@ -108,14 +104,12 @@ class CfgVehicles {
         weapons[] = {
             QCLASS(DC15S),
             QCLASS(DC17),
-            "ls_clone_electrobinoculars",
             "Throw",
             "Put"
         };
         respawnWeapons[] = {
             QCLASS(DC15S),
             QCLASS(DC17),
-            "ls_clone_electrobinoculars",
             "Throw",
             "Put"
         };
