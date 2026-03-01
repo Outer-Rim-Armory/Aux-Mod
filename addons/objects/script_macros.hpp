@@ -46,3 +46,13 @@ statement = QUOTE([ARR_2(this,'classname')] call FUNC(vicSpawner)); \
 onlyforplayer = "false"; \
 hideOnUse = 0; \
 };
+#define BCNAME(var1) class var1 \
+{ \
+    displayName = QUOTE(<t color='#00c9a8'>Crate Type: var1</t>); \
+    position = "pos cano"; \
+    radius = 15; \
+    condition = "True"; \
+    statement = QUOTE(hint 'Crate Type: var1';); \
+    onlyforplayer = "false"; \
+    hideOnUse = 0; \
+}

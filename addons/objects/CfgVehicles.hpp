@@ -379,4 +379,57 @@ class CfgVehicles {
             //
         };
     };
+
+    class 3as_Terminal_1_Prop;
+    class CLASS(SideSwapper): 3as_Terminal_1_Prop {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(Utility);
+
+        displayName = "Side Swap Terminal";
+        class UserActions {
+            class Swap_Bluefor
+            {
+                displayName = "<t color='#003cff'> Swap to BluFor</t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_1(player)] joinSilent (createGroup [ARR_2(west,true)]); hint 'Swapped to BluFor';);
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Swap_Redfor
+            {
+                displayName = "<t color='#ff2600'> Swap to OpFor</t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_1(player)] joinSilent (createGroup [ARR_2(east,true)]); hint 'Swapped to OpFor';);
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Side_Indie
+            {
+                displayName = "<t color='#009919'> Swap to Independant</t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_1(player)] joinSilent (createGroup [ARR_2(resistance,true)]); hint 'Swapped to Independant';);
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+            class Side_Civ
+            {
+                displayName = "<t color='#8200ba'> Swap to Civilian</t>";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_1(player)] joinSilent (createGroup [ARR_2(civilian,true)]); hint 'Swapped to Civilian';);
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
+        };
+    };
 };

@@ -1,5 +1,10 @@
 class CfgVehicles {
-    class ReammoBox_F;
+    class ThingX;
+    class ReammoBox_F: ThingX {
+        class ACE_ACTIONS {
+            class ACE_MainActions;
+        };
+    };
     class 3AS_Supply_Large_Prop: ReammoBox_F {
     };
     class CLASS(Resupply_Base): 3AS_Supply_Large_Prop {
@@ -413,6 +418,140 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_6Rnd_Mortar_SmokeWhite_CSW),100);
             MAG_XX(CLASS(Mag_6Rnd_Mortar_SmokeBlue_CSW),100);
             MAG_XX(CLASS(Mag_6Rnd_Mortar_SmokeRed_CSW),100);
+        };
+    };
+
+        class CLASS(Resupply_BigCrate_Squad): CLASS(Resupply_Base) {
+        displayName = "B1: Big Squad Crate";
+        model = "3as\3as_props\crates\models\large_crate1.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"3AS\3AS_Props\Crates\Data\largecrate_1_gar\largecrate_1_gar.rvmat"};
+        hiddenSelectionsTextures[] = {"3AS\3AS_Props\Crates\Data\largecrate_1_gar\largecrate_1_gar_co.paa"};
+
+        ace_cargo_canLoad = FALSE;          // remember to set to false
+        ace_cargo_size = 20;
+        ace_dragging_canDrag = FALSE;
+        ace_dragging_canCarry = FALSE;
+        ace_cargo_hasCargo = 1;
+        ace_cargo_space = 50;
+
+        class ace_cargo {
+            class cargo{
+                // CARGO_XX(Type of box, ammout of boxes);
+                CARGO_XX(CLASS(Resupply_SquadAmmo),1);
+                CARGO_XX(CLASS(Resupply_SquadMedical),1);
+                CARGO_XX(CLASS(Resupply_SquadAmmo_Heavy),1);
+                CARGO_XX(CLASS(Resupply_DisposableLaunchers),1);
+            };
+        };
+
+        class VehicleTransport {
+            class Cargo {
+                parachuteClass = "B_Parachute_02_F";
+                parachuteHeightLimit = 40;
+                canBeTransported = TRUE;
+                // dimensions[] = {"ftr_muzzle", "btl_muzzle"}; // code from atte
+            };
+        };
+
+        class ACE_ACTIONS: ACE_ACTIONS {
+            class ACE_MainActions: ACE_MainActions {
+                distance = 4;
+                condition = "true";
+                displayName = "Interactions";
+            };
+        };
+
+        class UserActions {
+            BCNAME(Squad); // user action macro that just has name in scroll wheel and in hint when clicked, its extremly hard identifying identical crates when on ground  so added this
+        };
+    };
+
+    class CLASS(Resupply_BigCrate_Platoon) : CLASS(Resupply_BigCrate_Squad) {
+        displayName = "B2: Big Platoon Crate";
+
+        class ace_cargo {
+            class cargo{
+                // CARGO_XX(Type of box, ammout of boxes);
+                CARGO_XX(CLASS(Resupply_PlatoonAmmo),1);
+                CARGO_XX(CLASS(Resupply_PlatoonMedical),1);
+                CARGO_XX(CLASS(Resupply_PlatoonAmmo_Heavy),1);
+                CARGO_XX(CLASS(Resupply_DisposableLaunchers),1);
+            };
+        };
+
+        class UserActions {
+            BCNAME(Platoon);
+        };
+    };
+
+    class CLASS(Resupply_BigCrate_Carnage) : CLASS(Resupply_BigCrate_Squad) {
+        displayName = "B3: Big Carnage Crate";
+
+        class ace_cargo {
+            class cargo{
+                // CARGO_XX(Type of box, ammout of boxes);
+                CARGO_XX(CLASS(Resupply_PlatoonAmmo_Commando),1);
+                CARGO_XX(CLASS(Resupply_SquadMedical),1);
+                CARGO_XX(CLASS(Resupply_DisposableLaunchers),1);
+            };
+        };
+
+        class UserActions {
+            BCNAME(Carnage);
+        };
+    };
+
+    class CLASS(Resupply_BigCrate_Spartan) : CLASS(Resupply_BigCrate_Squad) {
+        displayName = "B4: Big Spartan Crate";
+
+        class ace_cargo {
+            class cargo{
+                // CARGO_XX(Type of box, ammout of boxes);
+                CARGO_XX(CLASS(Resupply_Spartan),1);
+                CARGO_XX(CLASS(Resupply_SquadMedical),1);
+                CARGO_XX(CLASS(Resupply_DisposableLaunchers),1);
+            };
+        };
+
+        class UserActions {
+            BCNAME(Spartan);
+        };
+    };
+
+    class CLASS(Resupply_BigCrate_Raptor) : CLASS(Resupply_BigCrate_Squad) {
+        displayName = "B5: Big Raptor Crate";
+
+        class ace_cargo {
+            class cargo{
+                // CARGO_XX(Type of box, ammout of boxes);
+                CARGO_XX(CLASS(Resupply_Raptor_PlatoonAmmo),1);
+                CARGO_XX(CLASS(Resupply_Raptor_Drone),1);
+                CARGO_XX(CLASS(Resupply_SquadMedical),1);
+                CARGO_XX(CLASS(Resupply_DisposableLaunchers),1);
+            };
+        };
+
+        class UserActions {
+            BCNAME(Raptor);
+        };
+    };
+
+    class CLASS(Resupply_BigCrate_Levi) : CLASS(Resupply_BigCrate_Squad) {
+        displayName = "B6: Big Leviathon Crate (and some misc)";
+
+        class ace_cargo {
+            class cargo{
+                // CARGO_XX(Type of box, ammout of boxes);
+                CARGO_XX(CLASS(Resupply_SquadAmmo),1);
+                CARGO_XX(CLASS(Resupply_Misc),1);
+                CARGO_XX(CLASS(Resupply_Sapper),1);
+                CARGO_XX(CLASS(Mortar_Crate),1); // god damn no Resupply_Mortar
+            };
+        };
+
+        class UserActions {
+            BCNAME(Leviathon);
         };
     };
 };
