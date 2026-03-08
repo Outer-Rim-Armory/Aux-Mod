@@ -416,17 +416,64 @@ class CfgVehicles {
         EGVAR(custom_armor,isCustom) = FALSE;
     };
 
+    class CLASS(cloneBackpack_commando_Red): CLASS(cloneBackpack_base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] SF Commando Backpack (Red)";
+
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando.p3d";
+        hiddenSelections[] = {"illum", "camo1"};
+        hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\commando\Red_Backpack_co.paa),
+            QPATHTOF(data\backpacks\commando\Red_Backpack_co.paa)
+        };
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_ui_ca.paa";
+        // TFAR Long Range
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+
+        tf_dialog = "ls_radios_cloneLR";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+        maximumLoad = 600;
+        EGVAR(custom_armor,isCustom) = FALSE;
+    };
+
     class CLASS(cloneBackpack_commando_EOD): CLASS(cloneBackpack_commando) {
         displayName = "[KC] SF Commando EOD Backpack";
         model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_eod.p3d";
         picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_eod_ui_ca.paa";
     };
 
+    class CLASS(cloneBackpack_commando_EOD_Red): CLASS(cloneBackpack_commando_Red) {
+        displayName = "[KC] SF Commando EOD Backpack (Red)";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_eod.p3d";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_eod_ui_ca.paa";
+        hiddenSelections[] = {"illum", "camo1"};
+        hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\commando\Red_Backpack_co.paa),
+            QPATHTOF(data\backpacks\commando\Red_Backpack_co.paa)
+        };
+    };
+
     class CLASS(cloneBackpack_commando_RTO): CLASS(cloneBackpack_commando) {
         displayName = "[KC] SF Commando Radio Backpack";
         model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_rto.p3d";
         picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_rto_ui_ca.paa";
+    };
 
+    class CLASS(cloneBackpack_commando_RTO_Red): CLASS(cloneBackpack_commando_Red) {
+        displayName = "[KC] SF Commando Radio Backpack (Red)";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_rto.p3d";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_rto_ui_ca.paa";
+        hiddenSelections[] = {"illum", "camo1"};
+        hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\commando\Red_Backpack_co.paa),
+            QPATHTOF(data\backpacks\commando\Red_Backpack_co.paa)
+        };
     };
 
     class CLASS(cloneBackpack_commando_Tech): CLASS(cloneBackpack_commando) {
@@ -437,6 +484,18 @@ class CfgVehicles {
             "\ls\core\addons\characters_clone_legacy\backpacks\commando\data\camo1_co.paa",
             "\ls\core\addons\characters_clone_legacy\backpacks\commando\data\camo1_co.paa",
             "\ls\core\addons\characters_clone_legacy\backpacks\commando\data\camo2_tech_co.paa"
+        };
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_ui_ca.paa";
+    };
+
+    class CLASS(cloneBackpack_commando_Tech_Red): CLASS(cloneBackpack_commando_Red) {
+        displayName = "[KC] SF Commando Tech Backpack (Red)";
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_tech.p3d";
+        hiddenSelections[] = {"illum", "camo1", "camo2"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\commando\Red_Backpack_co.paa),
+            QPATHTOF(data\backpacks\commando\Red_Backpack_co.paa),
+            QPATHTOF(data\backpacks\commando\Red_Tech_co.paa)
         };
         picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_ui_ca.paa";
     };

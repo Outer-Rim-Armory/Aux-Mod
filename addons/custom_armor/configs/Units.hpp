@@ -820,6 +820,15 @@ class CLASS(Unit_Swoop): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_ARC_Swoop), QCLASS(Vest_ARC), QCLASS(cloneNvg_phase2_rangefinder), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+class CLASS(Unit_Swoop_Night): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Swoop_Night);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\camo\night\Swoop_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\camo\night\Swoop_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+};
 
 class CLASS(Unit_Talyn): CLASS(Unit_Phase2_Base) {
     displayName = "Talyn";

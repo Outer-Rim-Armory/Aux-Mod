@@ -315,19 +315,34 @@ class CfgVehicles {
             WEAP_XX(CLASS(RPS6_Loaded),5);
         };
 
+        class TransportItems {
+            ITEM_XX(ACE_DefusalKit,5);
+            ITEM_XX(MineDetector,5);
+            ITEM_XX(ACE_M26_Clacker,5);
+            ITEM_XX(ACE_wirecutter,5);
+        };
+
         class TransportMagazines {
             // Primary Ammo
-            MAG_XX(CLASS(Mag_15Rnd_DC15X),100);
+            MAG_XX(CLASS(Mag_25Rnd_DC15X),100);
             MAG_XX(CLASS(Mag_240Rnd_Valken38l),100);
             MAG_XX(CLASS(Mag_25Rnd_Valken38x),100);
             MAG_XX(CLASS(Mag_50Rnd_DC15XS),100);
             MAG_XX(CLASS(Mag_240Rnd_DC15L),160);
             MAG_XX(CLASS(Mag_10Rnd_DC15XM),100);
             MAG_XX(CLASS(Mag_15Rnd_773),100);
-            MAG_XX(CLASS(Mag_10Rnd_Valken38x_AP),50);
+            MAG_XX(CLASS(Mag_5Rnd_Valken38x_AP),50);
+
+            // PLX Ammo
+            MAG_XX(3AS_JLTS_MK43_AT,5);
+            MAG_XX(3AS_JLTS_MK44_HE,5);
+            MAG_XX(3AS_JLTS_MK39_AA,5);
 
             // UGL Ammo
             MAG_XX(ACE_HuntIR_M203,20);
+
+            // Explosives
+            MAG_XX(C7_Remote_Mag,15);
         };
     };
 

@@ -144,6 +144,16 @@ UNIFORM_CUSTOM(Sogi);
 UNIFORM_CUSTOM(Splashdown);
 UNIFORM_CUSTOM(Star);
 UNIFORM_CUSTOM(Swoop);
+class CLASS(Uniform_Swoop_Night): CLASS(Uniform_Swoop) {
+    displayName = "[KC] Custom Armor ('Swoop') - Night";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Swoop_Night);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Night";
+    };
+};
 UNIFORM_CUSTOM(Talyn);
 UNIFORM_CUSTOM(Tanker);
 class CLASS(Uniform_Tanker_Worn): CLASS(Uniform_Tanker) {
