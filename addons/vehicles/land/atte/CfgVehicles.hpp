@@ -65,6 +65,7 @@ class CfgVehicles {
             "CamoGrey", 0,
             "Rebecca", 0,
             "Reekolith", 0,
+            "Lone Wolf", 0,
             "Rebel", 0,
         };
         class TextureSources {
@@ -137,6 +138,19 @@ class CfgVehicles {
                     "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
                     QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Detail_co.paa),
                     QPATHTOF(land\SUBCOMPONENT\data\textures\Reekolith\Legs_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
+                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
+                };
+            };
+
+            class LoneWolf: KeeliCompany {
+                displayName = "Lone Wolf";
+                author = AUTHOR;
+                textures[] = {
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\Dexus\Shell_co.paa),
+                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\Dexus\Detail_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\Dexus\Legs_co.paa),
                     "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
                     "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
                 };
