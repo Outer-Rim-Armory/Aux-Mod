@@ -32,6 +32,8 @@ class CfgVehicles {
         waterDamageEngine = 0;
 
         ace_cargo_space = 20;
+        maxSpeed = 100;
+        enginePower = 9000;
 
         weapons[] = {
             QCLASS(Horn_Juggernaut),
