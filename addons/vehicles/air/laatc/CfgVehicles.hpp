@@ -1,3 +1,5 @@
+class ls_impulsor_base;
+
 class CfgVehicles {
     class Helicopter_Base_H;
     class ls_vehicle_laatc_base: Helicopter_Base_H {
@@ -12,6 +14,16 @@ class CfgVehicles {
     class CLASS(LAATc): ls_vehicle_laatc {
         SCOPE_PUBLIC;
         author = AUTHOR;
+
+        class LS_Impulsor: ls_impulsor_base{
+            enabled = 1; // 0-Disabled, 1-Enabled
+            speed = 400; // Speed in km/h
+            fuelDrain = 0; // Percent of fuel used every 1/2 seconds
+            overchargeSpeed = 600; // Same but for overcharge
+            overchargeFuelDrain = 0; // Same but for overcharge
+            // Time in seconds before overcharge can be used after turning it off
+            overchargeCooldown = 05;
+        };
 
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Helicopters);
@@ -49,6 +61,10 @@ class CfgVehicles {
         maxMainRotorDive = 7;
         maxSpeed = 600;
         startDuration = 4.5;
+
+
+        fuelCapacity = 3000;
+        fuelConsumptionRate = 0.12;
 
         hiddenSelections[] = {"_auxiliary","_cockpit","_glass","_hull","_wings"};
         hiddenSelectionsTextures[] = {
@@ -110,6 +126,7 @@ class CfgVehicles {
                     { 4, -11.3391, -0.820282}
                     */
                 };
+                loadingDistance	= 20;
             };
         };
     };
