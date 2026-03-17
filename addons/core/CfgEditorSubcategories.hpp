@@ -35,6 +35,9 @@ class CfgEditorSubcategories {
     class EDSUBCAT(Turrets) {
         displayName = "Turrets";
     };
+    class EDSUBCAT(Mechs) {
+        displayName = "Mechs";
+    };
 
     // Air Vehicles
     class EDSUBCAT(Planes) {

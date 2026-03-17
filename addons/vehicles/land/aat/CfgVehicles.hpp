@@ -33,7 +33,6 @@ class CfgVehicles {
                 };
             };
         };
-        class HitPoints;
     };
     class ls_vehicle_aat_base: Tank_F {
         class Turrets: Turrets {
