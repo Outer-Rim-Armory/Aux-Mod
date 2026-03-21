@@ -25,7 +25,7 @@ class ACEX_Fortify_Presets {
             {"Land_lsb_fob_hBarrierBig_4", 8},               // Large Hesco Wall
             {"Land_lsb_fob_hBarrierWall_exvertedCorner", 15}, // Large Hesco Wall Corner
             {"Land_lsb_fob_hBarrier_ramp", 5},                // Hesco Ramp, ~2m
-            {"Land_lsb_fob_hBarrierWall_ramp", 6},
+            {"Land_lsb_fob_hBarrierWall_ramp", 6},            // Hesco Wall Ramp
 
             // Sandbags
             {"Land_BagFence_Long_F", 5},  // Straight

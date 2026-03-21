@@ -70,6 +70,8 @@ workshop = [
     "2781143469", # DBA Core
     "3321182393", # TK Trooper Standalone Mod
     "952560410", # HMCS Addon
+    "3500935186", # [FOD] Zeus Additions
+    "3683168022", # YouTube Player Music
 ]
 optionals = ["no_burn_screams"]
 

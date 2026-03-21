@@ -32,7 +32,8 @@ class CfgVehicles {
             "KeeliCompany", 1,
             "CamoBrown", 0,
             "CamoGrey", 0,
-            "Defter", 0
+            "Defter", 0,
+            "Carnage", 0
         };
         class TextureSources {
             class Standard {
@@ -66,6 +67,11 @@ class CfgVehicles {
             class Defter: KeeliCompany {
                 displayName = "Defter";
                 textures[] = {QPATHTOF(land\barc\data\textures\Defter_Body_co.paa)};
+            };
+
+            class Carnage: KeeliCompany {
+                displayName = "Carmage";
+                textures[] = {QPATHTOF(land\barc\data\texture\Carnage_Body_co.paa)};
             };
         };
 
