@@ -42,4 +42,8 @@ class CfgEditorSubcategories {
     class EDSUBCAT(327th) {
         displayName = "327th Star Corps";
     };
+
+    class EDSUBCAT(612th) {
+        displayName = "612th Attack Battalion";
+    };
 };

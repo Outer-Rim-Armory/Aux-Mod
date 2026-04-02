@@ -510,6 +510,12 @@ class CLASS(Vest_Medic): CLASS(Vest_Basic) {
     };
 };
 
+class CLASS(Vest_Medic_Blank): CLASS(Vest_Medic) {
+    displayName = "INF MED Vest 01 (Medic, Blank)";
+
+    hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\vests\medic\data\heavy_accessories_medic_co.paa","","",""};
+};
+
 class CLASS(Vest_MedicSenior): CLASS(Vest_Medic) {
     displayName = "[KC] INF MED Vest 02 (Senior)";
     hiddenSelectionsTextures[] = {

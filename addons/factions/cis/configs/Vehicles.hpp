@@ -286,8 +286,8 @@ class CLASS(CIS_Proton_Cannon): CLASS(ProtonCannon_Base) {
     crew = QCLASS(CIS_Unit_Droid_B1_Crew);
 };
 
-class CLASS(FlakCannon_Base);
-class CLASS(CIS_Flak_Cannon): CLASS(FlakCannon_Base) {
+class CLASS(Flak_Cannon_Base);
+class CLASS(CIS_Flak_Cannon): CLASS(Flak_Cannon_Base) {
     SCOPE_PUBLIC;
     displayName = "Flak Cannon";
     faction = QFACTION(CIS);

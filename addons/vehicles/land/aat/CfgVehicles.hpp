@@ -261,7 +261,58 @@ class CfgVehicles {
             "\ls\core\addons\vehicles_aat\data\textures\black\gun_co.paa"
         };
 
+        textureList[] = {
+            "Black", 1,
+            "Keeli Company", 0,
+            "Brown Camo", 0,
+            "Grey Camo", 0,
+            "KC White", 0
+        };
+        class TextureSources {
+            class Black {
+                displayName = "Black";
+                textures[] = {
+                    "\ls\core\addons\vehicles_aat\data\textures\black\body1_co.paa",
+                    "\ls\core\addons\vehicles_aat\data\textures\black\body2_co.paa",
+                    "\ls\core\addons\vehicles_aat\data\textures\black\gun_co.paa"
+                };
+            };
+            class KC: Black {
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\aat\data\textures\KC_Body1_co.paa),
+                    QPATHTOF(land\aat\data\textures\KC_Body2_co.paa),
+                    QPATHTOF(land\aat\data\textures\KC_Gun_co.paa)
+                };
+            };
+            class BrownCamo: Black {
+                displayName = "Brown Camo";
+                textures[] = {
+                    QPATHTOF(land\aat\data\textures\Brown_Body1_co.paa),
+                    QPATHTOF(land\aat\data\textures\Brown_Body2_co.paa),
+                    QPATHTOF(land\aat\data\textures\Brown_Gun_co.paa)
+                };
+            };
+            class GreyCamo: Black {
+                displayName = "Grey Camo";
+                textures[] = {
+                    QPATHTOF(land\aat\data\textures\Grey_Body1_co.paa),
+                    QPATHTOF(land\aat\data\textures\Grey_Body2_co.paa),
+                    QPATHTOF(land\aat\data\textures\Grey_Gun_co.paa)
+                };
+            };
+            class KCWhite: Black {
+                displayName = "Keeli Company White";
+                textures[] = {
+                    QPATHTOF(land\aat\data\textures\KCWhite_Body1_co.paa),
+                    QPATHTOF(land\aat\data\textures\KCWhite_Body2_co.paa),
+                    QPATHTOF(land\aat\data\textures\KCWhite_Gun_co.paa)
+                };
+            };
+        };
+
         class ACE_SelfActions: ACE_SelfActions {
+            AI_CREW_SPAWNER;
         };
 
         class Turrets: Turrets {
@@ -331,9 +382,59 @@ class CfgVehicles {
 
         hiddenSelections[] = {"body1","body2","gun"};
         hiddenSelectionsTextures[] = {
-            QPATHTOF(land\aat\data\textures\KC_body1_co.paa),
-            QPATHTOF(land\aat\data\textures\KC_body2_co.paa),
-            QPATHTOF(land\aat\data\textures\KC_gun_co.paa)
+            QPATHTOF(land\aat\data\textures\KC_Body1_co.paa),
+            QPATHTOF(land\aat\data\textures\KC_Body2_co.paa),
+            QPATHTOF(land\aat\data\textures\KC_Gun_co.paa)
+        };
+
+        textureList[] = {
+            "Black", 1,
+            "Keeli Company", 0,
+            "Brown Camo", 0,
+            "Grey Camo", 0,
+            "KC White", 0
+        };
+        class TextureSources {
+            class Black {
+                displayName = "Black";
+                textures[] = {
+                    "\ls\core\addons\vehicles_aat\data\textures\black\body1_co.paa",
+                    "\ls\core\addons\vehicles_aat\data\textures\black\body2_co.paa",
+                    "\ls\core\addons\vehicles_aat\data\textures\black\gun_co.paa"
+                };
+            };
+            class KC: Black {
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\aat\data\textures\KC_Body1_co.paa),
+                    QPATHTOF(land\aat\data\textures\KC_Body2_co.paa),
+                    QPATHTOF(land\aat\data\textures\KC_Gun_co.paa)
+                };
+            };
+            class BrownCamo: Black {
+                displayName = "Brown Camo";
+                textures[] = {
+                    QPATHTOF(land\aat\data\textures\Brown_Body1_co.paa),
+                    QPATHTOF(land\aat\data\textures\Brown_Body2_co.paa),
+                    QPATHTOF(land\aat\data\textures\Brown_Gun_co.paa)
+                };
+            };
+            class GreyCamo: Black {
+                displayName = "Grey Camo";
+                textures[] = {
+                    QPATHTOF(land\aat\data\textures\Grey_Body1_co.paa),
+                    QPATHTOF(land\aat\data\textures\Grey_Body2_co.paa),
+                    QPATHTOF(land\aat\data\textures\Grey_Gun_co.paa)
+                };
+            };
+            class KCWhite: Black {
+                displayName = "Keeli Company White";
+                textures[] = {
+                    QPATHTOF(land\aat\data\textures\KCWhite_Body1_co.paa),
+                    QPATHTOF(land\aat\data\textures\KCWhite_Body2_co.paa),
+                    QPATHTOF(land\aat\data\textures\KCWhite_Gun_co.paa)
+                };
+            };
         };
     };
 

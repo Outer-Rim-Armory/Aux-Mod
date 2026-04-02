@@ -38,8 +38,8 @@ class CLASS(CIS_Unit_Droid_Base): CLASS(CIS_Unit_Base) {
         "ls_mag_classC_thermalDet"
     };
 
-    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
-    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", QCLASS(Vest_Basic), DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", QCLASS(Vest_Basic), DROID_LINKED_ITEMS};
 
     class SoundBleeding {breath[] = {};};
     class SoundBreath {breath[] = {};};

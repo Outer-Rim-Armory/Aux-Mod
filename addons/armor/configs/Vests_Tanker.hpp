@@ -9,6 +9,7 @@ class CLASS(Vest_ARMR_CT): CLASS(Vest_Basic) {
     class ItemInfo: ItemInfo {
         uniformModel = "\SDT_gear\SDT_gunner_vest.p3d";
         hiddenSelections[] = {"camo1"};
+
     };
 
     class XtdGearInfo {

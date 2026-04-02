@@ -44,8 +44,8 @@ class CfgVehicles {
                 displayName = "Standard";
                 factions[] = {};
                 textures[] = {
-                    "\3AS\3AS_UTAT\data\utat_primary_co.paa",
-                    "\3AS\3AS_UTAT\data\utat_primary_co.paa"
+                    "3AS\3AS_UTAT\data\UTAT_Primary_CO.paa",
+                    "3AS\3AS_UTAT\data\UTAT_Secondary_CO.paa"
                 };
             };
             class KeeliCompany: Standard {

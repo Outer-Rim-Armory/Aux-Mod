@@ -18,6 +18,7 @@ class CfgWeapons {
         class ItemInfo: ItemInfo {
             mass = 40;
             uniformClass = QCLASS(CIS_Unit_Droid_Base);
+            uniformType = "Neopren";
             containerClass = "Supply150";
         };
     };
@@ -28,8 +29,7 @@ class CfgWeapons {
         displayName = "[CIS] B1 Battle Droid";
 
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(CIS_Unit_Droid_B1);
-        };
+            uniformClass = QCLASS(CIS_Unit_Droid_B1);        };
 
         class XtdGearInfo {
             model = QCLASS(CIS_Uniforms_B1);
@@ -96,7 +96,6 @@ class CfgWeapons {
 
     class CLASS(Uniform_Droid_B1_Commander): CLASS(CIS_Uniform_Droid_B1) {
         displayName = "[KC] B1 Battle Droid (Commander)";
-        uniformType = "Neopren";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(Unit_Droid_B1_Commander);
@@ -107,7 +106,7 @@ class CfgWeapons {
         SCOPE_PUBLIC;
 
         displayName = "[CIS] B2 Super Battle Droid";
-        uniformType = "Neopren";
+
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(CIS_Unit_Droid_B2);

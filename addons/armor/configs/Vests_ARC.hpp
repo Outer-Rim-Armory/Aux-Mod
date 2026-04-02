@@ -52,11 +52,37 @@ class CLASS(Vest_ARC): CLASS(Vest_Basic) {
     };
 };
 
+class CLASS(Vest_ARC_Plate): CLASS(Vest_Basic) {
+    displayName = "[KC] SF ARC Plates";
+    model = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\arc\Basic_camo1_co.paa),
+        ""
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_commander_ca.paa";
+
+    class ItemInfo: ItemInfo {
+        uniformModel = "\ls\core\addons\characters_clone_legacy\vests\arc\ls_gar_arc_vest.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        containerClass = "Supply200";
+    };
+};
+
 class CLASS(Vest_ARC_Light): CLASS(Vest_ARC) {
     displayName = "[KC] SF ARC Light Vest";
     hiddenSelectionsTextures[] = {
         "",
         QPATHTOF(data\vests\infantry\officer\Officer_camo1_co.paa)
+    };
+};
+
+class CLASS(Vest_ARC_Ganch): CLASS(Vest_ARC) {
+    SCOPE_HIDDEN;
+    displayName = "[KC] SF ARC Vest (Ganch)";
+    hiddenSelectionsTextures[] = {
+        "",
+        QPATHTOF(data\vests\infantry\officer\Ganch_camo1_co.paa)
     };
 };
 

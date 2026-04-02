@@ -345,9 +345,12 @@ class CfgVehicles {
             VICSPAWNINF(CLASS(Glavenus_HMG),Glavenus Armed)
             VICSPAWNINF(CLASS(Glavenus_GMG),Glavenus Grenade)
             VICSPAWNINF(CLASS(Glavenus_Unarmed),Glavenus Transport)
-            VICSPAWNINF(CLASS(Hornet_unarmed),Hornet Unarmed)
+            VICSPAWNINF(CLASS(Hornet_Unarmed),Hornet Unarmed)
             VICSPAWNINF(CLASS(Hornet_AT),Hornet (AT))
             VICSPAWNINF(CLASS(Hornet_MG),Hornet (MG))
+            VICSPAWNINF(CLASS(Hornet_Unarmed_Carnage),Hornet Unarmed (Carnage))
+            VICSPAWNINF(CLASS(Hornet_MG_Carnage),Hornet (MG) (Carnage))
+            VICSPAWNINF(CLASS(Hornet_AT_Carnage),Hornet (AT) (Carnage))
             // logistics VICSPAWNLOG
             VICSPAWNLOG(CLASS(Bantha_MSV),Bantha (Engineer))
             VICSPAWNLOG(CLASS(Hermitaur_class_E),Hermitaur (Engineer))

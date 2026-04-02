@@ -82,8 +82,8 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\juggernaut\data\textures\KeeliCompany\Body_co.paa),
                     QPATHTOF(land\juggernaut\data\textures\KeeliCompany\Guns_co.paa),
-                    "\3AS\3AS_Jug\data\juggernaut_props_co.paa",
-                    "\3AS\3AS_Jug\data\juggernaut_wheels_co.paa"
+                    QPATHTOF(land\juggernaut\data\textures\KeeliCompany\Props_co.paa),
+                    QPATHTOF(land\juggernaut\data\textures\KeeliCompany\Wheels_co.paa)
                 };
             };
 
@@ -123,7 +123,7 @@ class CfgVehicles {
                     "3as\3as_jug\data\juggernaut_base_imp_co.paa",
                     "3as\3as_jug\data\juggernaut_guns_Imp_co.paa",
                     "3as\3as_jug\data\juggernaut_props_Imp_co.paa",
-                    "3as\3as_jug\data\juggernaut_wheels_co.paa"
+                    "3as\3as_jug\data\juggernaut_wheels_imp_CO.paa"
                 };
             };
         };
