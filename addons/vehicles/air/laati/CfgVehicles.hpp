@@ -212,7 +212,19 @@ class CfgVehicles {
         };
 
         class UserActions {
-            class Impulse {};
+            class Impulse {
+                displayName = "Impulse";
+                position = "pilotview";
+                radius = 5;
+                priority = 9;
+
+                onlyForPlayer = FALSE;
+                hideOnUse = TRUE;
+                showWindow = FALSE;
+
+                condition = QUOTE(this call FUNC(canImpulse));
+                statement = QUOTE([ARR_2(this, 1)] call ls_impulsor_fnc_impulse);
+            };
 
             class DoorsOpen: Impulse {
                 displayName = "Open Doors";
@@ -243,9 +255,15 @@ class CfgVehicles {
             };
 
             class HornWyvern: Impulse {
-                displayName = "Play Horn";
+                displayName = "Play Horn [Wyvern]";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Wyvern' and {ace_player == currentPilot this});
                 statement = QUOTE([ARR_2(this,QQCLASS(Sound_Horn_Wyvern))] call FUNC(playHorn));
+            };
+
+            class HornDogo: Impulse {
+                displayName = "<t color='#2ed9ca'> Play Horn [Dogo] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Dogo' and {ace_player == currentPilot this});
+                statement = QUOTE([ARR_2(this,QQCLASS(Sound_Horn_Dogo))] call FUNC(playHorn));
             };
         };
 

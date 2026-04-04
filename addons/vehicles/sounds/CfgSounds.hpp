@@ -31,4 +31,8 @@ class CfgSounds {
         name = "Wyvern Horn";
         sound[] = {QPATHTOF(sounds\data\audio\laati\WyvernHorn.wss), 5, 1, 1000};
     };
+        class CLASS(Sound_Horn_Dogo): CLASS(Sound_Horn_Wyvern) {
+        name = "Dogo Horn";
+        sound[] = {QPATHTOF(sounds\data\audio\laati\DogoHorn.wss), 5, 1, 1000};
+    };
 };
