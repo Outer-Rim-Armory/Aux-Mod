@@ -8,11 +8,13 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "LFPMeleeWeapon"
+            "LF_Weapon_Unit_Melee",
+            "WBK_Lightsabers"
         };
         units[] = {};
         weapons[] = {
-            QCLASS(Clone_Knife)
+            QCLASS(Lightsaber_Woods),
+            QCLASS(Lightsaber_Karma)
         };
         VERSION_CONFIG;
     };

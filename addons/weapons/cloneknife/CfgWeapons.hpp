@@ -4,6 +4,7 @@ class CfgWeapons {
         SCOPE_PUBLIC;
         displayName = "[KC] Clone Knife";
         baseWeapon = QCLASS(Clone_Knife);
-        IMS_Melee_Param_Damage = 0.25;
+        IMS_Melee_Param_Damage = 0.1;
+
     };
 };

@@ -8,11 +8,12 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "LFPMeleeWeapon"
+            "WBK_SomeSciFiWeapons"
         };
         units[] = {};
         weapons[] = {
-            QCLASS(Clone_Knife)
+            QCLASS(VibroBlade),
+            QCLASS(VibroBlade_BX)
         };
         VERSION_CONFIG;
     };

@@ -8,11 +8,11 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QUOTE(ADDON),
-            "LFPMeleeWeapon"
+            "LF_Weapon_Unit_Melee"
         };
         units[] = {};
         weapons[] = {
-            QCLASS(Clone_Knife)
+            QCLASS(ElectroStaff),
         };
         VERSION_CONFIG;
     };
