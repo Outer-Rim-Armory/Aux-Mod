@@ -1,4 +1,5 @@
 class CLASS(Unit_612th_Ganch): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
     displayName = "01: Commander Ganch";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(612th);
@@ -61,6 +62,7 @@ class CLASS(Unit_612th_Ganch): CLASS(Unit_Phase2_Base) {
 };
 
 class CLASS(Unit_612th_15S): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
     displayName = "02: Clone Trooper (15S)";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(612th);
@@ -123,6 +125,7 @@ class CLASS(Unit_612th_15S): CLASS(Unit_Phase2_Base) {
 };
 
 class CLASS(Unit_612th_15A): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
     displayName = "03: Clone Trooper (15A)";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(612th);
@@ -185,6 +188,7 @@ class CLASS(Unit_612th_15A): CLASS(Unit_Phase2_Base) {
 };
 
 class CLASS(Unit_612th_15C): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
     displayName = "04: Clone Trooper (15C)";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(612th);
@@ -247,6 +251,7 @@ class CLASS(Unit_612th_15C): CLASS(Unit_Phase2_Base) {
 };
 
 class CLASS(Unit_612th_AT): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
     displayName = "05: Clone Trooper (AT)";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(612th);
@@ -315,6 +320,7 @@ class CLASS(Unit_612th_AT): CLASS(Unit_Phase2_Base) {
 };
 
 class CLASS(Unit_612th_AA): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
     displayName = "06: Clone Trooper (AA)";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(612th);
@@ -383,6 +389,7 @@ class CLASS(Unit_612th_AA): CLASS(Unit_Phase2_Base) {
 };
 
 class CLASS(Unit_612th_15X): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
     displayName = "07: Clone Sniper";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(612th);
@@ -445,6 +452,7 @@ class CLASS(Unit_612th_15X): CLASS(Unit_Phase2_Base) {
 };
 
 class CLASS(Unit_612th_Medic): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
     displayName = "09: Clone Medic";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(612th);
@@ -540,6 +548,7 @@ class CLASS(Unit_612th_Medic): CLASS(Unit_Phase2_Base) {
 };
 
 class CLASS(Unit_612th_Z6): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
     displayName = "08: Heavy Gunner";
     faction = QFACTION(GAR);
     editorSubcategory = QEDSUBCAT(612th);

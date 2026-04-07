@@ -18,7 +18,6 @@ class CfgWeapons {
         class ItemInfo: ItemInfo {
             mass = 40;
             uniformClass = QCLASS(CIS_Unit_Droid_Base);
-            uniformType = "Neopren";
             containerClass = "Supply150";
         };
     };
