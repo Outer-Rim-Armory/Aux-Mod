@@ -721,7 +721,7 @@ class CLASS(Unit_Sin): CLASS(Unit_Phase2_Base) {
     editorPreview = EDITOR_PREVIEW(Unit_Sin);
 
     uniformClass = QCLASS(Uniform_Sin);
-    backpack = QCLASS(Backpack_ARC);
+    backpack = QCLASS(Backpack_ARC_Sin);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\standard\Sin_upper_co.paa),
         QPATHTOF(data\uniforms\standard\Sin_lower_co.paa),

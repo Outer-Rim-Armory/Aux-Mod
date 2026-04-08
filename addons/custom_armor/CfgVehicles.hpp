@@ -81,6 +81,15 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(Backpack_ARC);
+    class CLASS(Backpack_ARC_Sin): CLASS(Backpack_ARC) {
+        displayName = "[KC] ARC Backpack Trooper ('Sin')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Sin\Backpack_co.paa)
+        };
+    };
+
     class CLASS(cloneBackpack_commando);
     class CLASS(cloneBackpack_commando_EOD);
     class CLASS(cloneBackpack_commando_Tech);
