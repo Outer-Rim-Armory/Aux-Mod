@@ -70,7 +70,7 @@ class CfgVehicles {
             };
 
             class Carnage: KeeliCompany {
-                displayName = "Carmage";
+                displayName = "Carnage";
                 textures[] = {QPATHTOF(land\barc\data\textures\Carnage_Body_co.paa)};
             };
         };

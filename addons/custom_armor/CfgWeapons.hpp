@@ -369,4 +369,15 @@ class CLASS(Vest_Jaws): CLASS(Vest_CS) {
             QPATHTOF(data\vests\moskoni\Moskoni_Shoulder_co.paa)
         };
     };
+
+    class SC_MDF_Heavy_White;
+    class CLASS(Vest_Heavy_Testing): SC_MDF_Heavy_White {
+        displayName = "[KC] MDF Heavy Vest (Testing)";
+
+        hiddenSelections[] = {"camo","camo1"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\testing\KC_Heavy_Top_co.paa),
+            QPATHTOF(data\vests\testing\KC_Heavy_Legs_co.paa)
+        };
+    };
 };
