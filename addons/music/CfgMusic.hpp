@@ -205,6 +205,7 @@ class CfgMusic {
     MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);
     MUSIC(HD_Loadout_Theme,"Loadout Select",332,VideoGames);
     MUSIC(RDF_Downfall,"RDF Downfall",355,VideoGames);
+    MUSIC(HD_Reinforcements,"Reinforcements",143,VideoGames);
 
     // Project Zomboid
     MUSIC(PZ_Overrun,"Overrun",248,VideoGames);
