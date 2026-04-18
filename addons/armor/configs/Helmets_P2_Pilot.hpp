@@ -66,3 +66,11 @@ class CLASS(Helmet_Phase2_Pilot_Officer_CamoGrey): CLASS(Helmet_Phase2_Pilot_CXE
         "\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"
     };
 };
+
+class CLASS(Helmet_Phase2_Pilot_Ceremonial): CLASS(Helmet_Phase2_Pilot_Base) {
+    displayName = "[KC] AVI P2 Helm (Ceremonial)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2Pilot\Ceremonial_P2Pilot_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2Pilot\data\visor_co.paa"
+    };
+};

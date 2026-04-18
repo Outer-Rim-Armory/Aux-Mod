@@ -57,3 +57,11 @@ class CLASS(Helmet_Phase1_ARMR_Officer): CLASS(Helmet_Phase1_ARMR_CT) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
     };
 };
+
+class CLASS(Helmet_Phase1_ARMR_Ceremonial): CLASS(Helmet_Phase1_ARMR_CT) {
+    displayName = "[KC] ARMR P1 Helm (Ceremonial)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1SpecOp\Ceremonial_P1Reeker_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1SpecOp\data\visor_co.paa"
+    };
+};

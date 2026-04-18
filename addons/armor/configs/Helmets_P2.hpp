@@ -448,3 +448,11 @@ class CLASS(cloneArmor_helmet_phase2_textureTest): CLASS(Helmet_Phase2_Base) {
         QPATHTOF(data\helmets\phase2\standard\visor.rvmat)
     };
 };
+
+class CLASS(Helmet_Phase2_Ceremonial): CLASS(Helmet_Phase2_Base) {
+    displayName = "[KC] INF P2 Helmet (Ceremonial)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\Ceremonial_P2_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+};

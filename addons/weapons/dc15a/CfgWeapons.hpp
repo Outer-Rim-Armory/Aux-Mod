@@ -97,6 +97,31 @@ class CfgWeapons {
         class Stun: CLASS(Muzzle_Stun_Fried) {};
     };
 
+    class CLASS(Ceremonial_DC15A): CLASS(DC15A_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Ceremonial DC-15A";
+        baseWeapon = QCLASS(Ceremonial_DC15A);
+        hiddenSelections[] = {"camo1","illum"};
+        hiddenSelectionsMaterials[] = {"","\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        hiddenSelectionsTextures[] = {QPATHTOF(dc15a\data\textures\Ceremonial_15A_co.paa)};
+
+        JLTS_friedItem = QCLASS(Ceremonial_DC15A_Fried);
+    };
+    class CLASS(Ceremonial_DC15A_Fried): CLASS(Ceremonial_DC15A) {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] Ceremonial DC-15A (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        baseWeapon = QCLASS(Ceremonial_DC15A_Fried);
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_plastic_fried_ui_ca.paa";
+
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+
+        class Stun: CLASS(Muzzle_Stun_Fried) {};
+    };
+
     class CLASS(DC15A_UGL): CLASS(DC15A_Base) {
         SCOPE_PUBLIC;
 

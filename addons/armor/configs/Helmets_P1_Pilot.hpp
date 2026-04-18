@@ -38,3 +38,12 @@ class CLASS(Helmet_Phase1_Pilot_CXA): CLASS(Helmet_Phase1_Pilot_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"
     };
 };
+
+class CLASS(Helmet_Phase1_Pilot_Ceremonial): CLASS(Helmet_Phase1_Pilot_Base) {
+    displayName = "[KC] AVI P1 Helm (Ceremonial)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1Pilot\Ceremonial_P1Pilot_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\lifesupport_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"
+    };
+};

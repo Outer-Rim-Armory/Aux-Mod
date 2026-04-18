@@ -102,6 +102,14 @@ class CLASS(Vest_ARC_Basic): CLASS(Vest_ARC) {
     };
 };
 
+class CLASS(Vest_ARC_Ceremonial): CLASS(Vest_ARC) {
+    displayName = "[KC] SF ARC Vest (Ceremonial)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\arc\Ceremonial_ARC_Plate_camo1_co.paa),
+        QPATHTOF(data\vests\arc\Basic_camo2_co)
+    };
+};
+
 class CLASS(Vest_ARC_Phase1Geo_Enlisted): CLASS(Vest_ARC) {
     displayName = "[KC] SF ARC GEO 01 (Enlisted)";
     hiddenSelectionsTextures[] = {

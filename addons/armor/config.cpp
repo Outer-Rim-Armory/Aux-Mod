@@ -552,6 +552,7 @@ class CfgPatches {
             QCLASS(Vest_ARC_Phase1Geo_Officer),
             QCLASS(Vest_ARC_Phase1Geo_Captain),
             QCLASS(Vest_ARC_Plate),
+            QCLASS(Vest_ARC_Ceremonial),
             QCLASS(Vest_Commander_Phase1Geo),
             QCLASS(cloneCommando_basic_vest),
             QCLASS(cloneCommando_SL_vest),
@@ -569,7 +570,17 @@ class CfgPatches {
             QCLASS(cloneNvg_engineerComms),
             QCLASS(cloneNvg_commandoVisor),
             QCLASS(cloneNvg_commandoAntenna),
-            QCLASS(Bel_Rangefinder)
+            QCLASS(Bel_Rangefinder),
+            QCLASS(Helmet_Airborne_Ceremonial),
+            QCLASS(Helmet_ARC_Ceremonial),
+            QCLASS(Helmet_ARF_Ceremonial),
+            QCLASS(Helmet_Phase1_Pilot_Ceremonial),
+            QCLASS(Helmet_Phase1_ARMR_Ceremonial),
+            QCLASS(Helmet_Phase1_Ceremonial),
+            QCLASS(Helmet_Phase2_Pilot_Ceremonial),
+            QCLASS(Helmet_Phase2_ARMR_Ceremonial),
+            QCLASS(Helmet_Phase2_Ceremonial),
+            QCLASS(Ceremonial_Uniform)
         };
         VERSION_CONFIG;
     };

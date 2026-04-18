@@ -58,3 +58,11 @@ class CLASS(Helmet_Airborne_CT_Imperial): CLASS(Helmet_Airborne_CT) {
          QPATHTOF(data\helmets\airborne\Emp_camo1_co.paa)
      };
 };
+
+class CLASS(Helmet_Airborne_Ceremonial): CLASS(Helmet_Airborne_CT) {
+    displayName = "[KC] AB Helm (Ceremonial)";
+     hiddenSelectionsTextures[] = {
+         QPATHTOF(data\helmets\airborne\Ceremonial_AB_camo1_co.paa),
+         QPATHTOF(data\helmets\airborne\Ceremonial_AB_camo1_co.paa)
+     };
+};

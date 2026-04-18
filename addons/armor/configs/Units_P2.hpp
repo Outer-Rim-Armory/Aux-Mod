@@ -852,3 +852,13 @@ class CLASS(cloneArmor_unit_textureTest): CLASS(Unit_Phase2_Base) {
         QPATHTOF(data\uniforms\standard\undersuit.rvmat)
     };
 };
+
+class CLASS(Unit_Phase2_Ceremonial_CT): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Ceremonial_Uniform);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Ceremonial_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Ceremonial_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+};

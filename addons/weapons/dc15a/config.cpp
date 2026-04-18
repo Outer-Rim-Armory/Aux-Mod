@@ -18,6 +18,8 @@ class CfgPatches {
             QCLASS(DC15A_Base),
             QCLASS(DC15A),
             QCLASS(DC15A_Fried),
+            QCLASS(Ceremonial_DC15A),
+            QCLASS(Ceremonial_DC15A_Fried),
             QCLASS(DC15A_UGL),
             QCLASS(DC15A_UGL_Fried)
         };

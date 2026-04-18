@@ -95,3 +95,12 @@ class CLASS(Helmet_ARC_Enlisted_Imperial): CLASS(Helmet_ARC_CT) {
         "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa",
     };
 };
+
+class CLASS(Helmet_ARC_Ceremonial): CLASS(Helmet_ARC_CT) {
+    displayName = "[KC] SF ARC P1.5 Helm (Ceremonial)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\arc\Ceremonial_ARC_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa",
+    };
+};
