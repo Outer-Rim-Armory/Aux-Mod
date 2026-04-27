@@ -853,12 +853,34 @@ class CLASS(cloneArmor_unit_textureTest): CLASS(Unit_Phase2_Base) {
     };
 };
 
-class CLASS(Unit_Phase2_Ceremonial_CT): CLASS(Unit_Phase2_Base) {
+class CLASS(Unit_Phase2_Ceremonial_15A): CLASS(Unit_Phase2_Base) {
     SCOPE_HIDDEN;
     uniformClass = QCLASS(Ceremonial_Uniform);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\infantry\Ceremonial_upper_co.paa),
         QPATHTOF(data\uniforms\infantry\Ceremonial_lower_co.paa),
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Ceremonial), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Ceremonial), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(Unit_Phase2_Ceremonial_15S): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Ceremonial_Uniform);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Ceremonial_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Ceremonial_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Ceremonial), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Ceremonial), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };

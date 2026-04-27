@@ -235,6 +235,7 @@ class CfgWeapons {
 
         class ItemInfo: ItemInfo {
             uniformModel = "\ls\core\addons\characters_droid\vests\bx\ls_vest_droid_bx.p3d";
+            vestType = "Rebreather";
             class HitpointsProtectionInfo: HitpointsProtectionInfo {
                 class Legs {
                     hitpointName = "HitLegs";

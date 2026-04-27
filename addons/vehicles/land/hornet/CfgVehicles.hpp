@@ -87,14 +87,14 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
 
         displayName = "04: Hornet Strike Vehicle (Ceremonial)";
-        crew = QCLASS(cloneCommando_unit);
-        typicalCargo[] = {QCLASS(cloneCommando_unit)};
+        crew = QCLASS(Unit_Phase2_Ceremonial_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_Ceremonial_CT)};
         side = BLUFOR;
 
         hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Body_Ceremonial_co.paa),
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+            QPATHTOF(land\hornet\data\textures\KC_Hornet_Body_CO.paa),
+            QPATHTOF(land\hornet\data\textures\KC_Hornet_Wheels_CO.paa),
+            QPATHTOF(land\hornet\data\textures\KC_Hornet_Interior_CO.paa),
         };
         textureList[] = {"Ceremonial", 1};
         class TextureSources {
@@ -276,8 +276,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_MG);
 
         displayName = "05: Hornet Strike Vehicle (MG, Ceremonial)";
-        crew = QCLASS(cloneCommando_unit);
-        typicalCargo[] = {QCLASS(cloneCommando_unit)};
+        crew = QCLASS(Unit_Phase2_Ceremonial_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_Ceremonial_CT)};
         side = BLUFOR;
 
         hiddenSelectionsTextures[] = {
@@ -503,8 +503,8 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_AT);
 
         displayName = "06: Hornet Strike Vehicle (AT, Ceremonial)";
-        crew = QCLASS(cloneCommando_unit);
-        typicalCargo[] = {QCLASS(cloneCommando_unit)};
+        crew = QCLASS(Unit_Phase2_Ceremonial_CT);
+        typicalCargo[] = {QCLASS(Unit_Phase2_Ceremonial_CT)};
         side = BLUFOR;
 
         hiddenSelectionsTextures[] = {

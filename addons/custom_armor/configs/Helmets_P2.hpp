@@ -170,6 +170,7 @@ class CLASS(Helmet_Phase2_KeeliCrimson_Emp): CLASS(Helmet_Phase2_Keeli_Emp) {
 };
 
 P2_HELMET_CUSTOM(Kujo);
+P2_HELMET_CUSTOM(Leo);
 P2_HELMET_CUSTOM(Leon);
 P2_HELMET_VISOR_CUSTOM(Lou,Plasma);
 P2_HELMET_CUSTOM(Marge);

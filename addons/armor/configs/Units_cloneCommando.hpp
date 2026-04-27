@@ -72,3 +72,22 @@ class CLASS(cloneCommando_unit): CLASS(cloneCommando_unit_base) {
     };
     backpack = QCLASS(cloneBackpack_commando);
 };
+
+class CLASS(Ceremonial_cloneCommando_unit): CLASS(cloneCommando_unit_base) {
+    SCOPE_HIDDEN;
+    displayName = "SF Clone Commando (Ceremonial)";
+    editorPreview = EDITOR_PREVIEW(cloneCommando_unit);
+    uniformClass = QCLASS(Ceremonial_cloneCommando_uniform);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\commando\Ceremonial_upper_co.paa),
+        QPATHTOF(data\uniforms\commando\Ceremonial_lower_co.paa)
+    };
+
+    linkedItems[] = {
+        QCLASS(Ceremonial_cloneCommando_helmet), QCLASS(cloneCommando_basic_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Ceremonial_cloneCommando_helmet), QCLASS(cloneCommando_basic_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(cloneBackpack_commando_ceremonial);
+};

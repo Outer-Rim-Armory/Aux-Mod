@@ -153,4 +153,82 @@ class CfgWeapons {
 
         class Stun: CLASS(Muzzle_Stun_Fried) {};
     };
+
+    class CLASS(Ceremonial_DC15S): CLASS(DC15S_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Ceremonial DC-15S";
+        baseWeapon = QCLASS(Ceremonial_DC15S);
+        JLTS_shieldedWeapon = QCLASS(Ceremonial_DC15S_RiotShield);
+        JLTS_friedItem = QCLASS(Ceremonial_DC15S_Fried);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(dc15s\data\textures\Ceremonial_15S_co.paa)
+        };
+    };
+    class CLASS(Ceremonial_DC15S_Fried): CLASS(Ceremonial_DC15S) {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] Ceremonial DC-15S (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_fried_ui_ca.paa";
+        baseWeapon = QCLASS(Ceremonial_DC15S_Fried);
+
+        JLTS_shieldedWeapon = QCLASS(Ceremonial_DC15S_RiotShield_Fried);
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+
+        class Stun: CLASS(Muzzle_Stun_Fried) {};
+    };
+
+    class CLASS(Ceremonial_DC15S_RiotShield): CLASS(Ceremonial_DC15S) {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] Ceremonial DC-15S (Shield)";
+        baseWeapon = QCLASS(Ceremonial_DC15S_RiotShield);
+
+        JLTS_isShielded = TRUE;
+        JLTS_baseWeapon = QCLASS(Ceremonial_DC15S);
+        JLTS_friedItem = QCLASS(Ceremonial_DC15S_RiotShield_Fried);
+
+        model = "\MRC\JLTS\weapons\DC15S\DC15S_shielded.p3d";
+        hiddenSelections[] = {"camo1", "camo2"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(dc15s\data\textures\Ceremonial_15S_co.paa),
+            "\MRC\JLTS\weapons\Shield\data\shield_co.paa"
+        };
+        handAnim[] = {
+            "OFP2_ManSkeleton",
+            "\MRC\JLTS\weapons\DC15S\anims\DC15S_shielded_handanim.rtm"
+        };
+
+        reloadAction = "GestureReload";
+        inertia = 0.80000001;
+        recoil = "recoil_pdw";
+
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class CompatibleItems {
+                    JLTS_riot_shield_attachment = TRUE;
+                    JLTS_riot_shield_212_attachment = TRUE;
+                    JLTS_riot_shield_501_attachment = TRUE;
+                    JLTS_riot_shield_101_attachment = TRUE;
+                    JLTS_riot_shield_CG_attachment = TRUE;
+                    JLTS_riot_shield_GD_attachment = TRUE;
+                    JLTS_riot_shield_droid_attachment = TRUE;
+                };
+            };
+        };
+    };
+    class CLASS(Ceremonial_DC15S_RiotShield_Fried): CLASS(Ceremonial_DC15S_RiotShield) {
+        displayName = "[KC] Ceremonial DC-15S (Shield, Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\DC15S\data\ui\DC15S_fried_ui_ca.paa";
+        baseWeapon = QCLASS(Ceremonial_DC15S_RiotShield_Fried);
+
+        JLTS_baseWeapon = QCLASS(Ceremonial_DC15S_RiotShield_Fried);
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+
+        class Stun: CLASS(Muzzle_Stun_Fried) {};
+    };
 };

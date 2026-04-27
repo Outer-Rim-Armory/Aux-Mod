@@ -9,6 +9,8 @@ P1_HELMET_CUSTOM(Bond);
 P1_HELMET_VISOR_CUSTOM(Burnt,Bacta);
 P1_HELMET_CUSTOM(Calvin);
 P1_HELMET_VISOR_CUSTOM(Catholic,Kyber);
+P1_HELMET_CUSTOM(Cherry);
+P1_HELMET_CUSTOM(Church);
 P1_HELMET_CUSTOM(Cutthroat);
 P1_HELMET_VISOR_CUSTOM(Defter,Bacta);
 P1_HELMET_VISOR_CUSTOM(Destiny,Bacta);
@@ -185,6 +187,7 @@ class CLASS(Helmet_Phase1_TyrantCrimson_Worn): CLASS(Helmet_Phase1_Tyrant_Worn) 
 };
 
 P1_HELMET_CUSTOM(Tye);
+P1_HELMET_CUSTOM(Walsh);
 P1_HELMET_CUSTOM(Weenie);
 P1_HELMET_CUSTOM(Whisker);
 P1_HELMET_CUSTOM(Woods);

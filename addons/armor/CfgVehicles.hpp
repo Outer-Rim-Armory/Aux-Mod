@@ -416,6 +416,15 @@ class CfgVehicles {
         EGVAR(custom_armor,isCustom) = FALSE;
     };
 
+    class CLASS(cloneBackpack_commando_ceremonial): CLASS(cloneBackpack_commando) {
+        displayName = "[KC] SF Commando Backpack (Ceremonial)";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\commando\Ceremonial_Backpack_co.paa),
+            QPATHTOF(data\backpacks\commando\Ceremonial_Backpack_co.paa)
+        };
+    };
+
     class CLASS(cloneBackpack_commando_Red): CLASS(cloneBackpack_base) {
         SCOPE_PUBLIC;
         displayName = "[KC] SF Commando Backpack (Red)";

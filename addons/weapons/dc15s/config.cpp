@@ -19,7 +19,11 @@ class CfgPatches {
             QCLASS(DC15S),
             QCLASS(DC15S_Fried),
             QCLASS(DC15S_RiotShield),
-            QCLASS(DC15S_RiotShield_Fried)
+            QCLASS(DC15S_RiotShield_Fried),
+            QCLASS(Ceremonial_DC15S),
+            QCLASS(Ceremonial_DC15S_Fried),
+            QCLASS(Ceremonial_DC15S_RiotShield),
+            QCLASS(Ceremonial_DC15S_RiotShield_Fried)
         };
         VERSION_CONFIG;
     };

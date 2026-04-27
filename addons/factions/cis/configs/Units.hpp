@@ -1115,8 +1115,8 @@ class CLASS(CIS_Unit_Droid_B2): CLASS(CIS_Unit_Droid_Base) {
         QCLASS(Mag_3rnd_B2Blaster_rocket)
     };
 
-    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
-    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", QCLASS(Vest_Basic), DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", QCLASS(Vest_Basic), DROID_LINKED_ITEMS};
 
     class SoundEnvironExt {
         generic[] = {
@@ -1186,8 +1186,8 @@ class CLASS(CIS_Unit_Droid_B2_Aqua): CLASS(CIS_Unit_Droid_Base) {
         QCLASS(Mag_3rnd_B2Blaster_rocket)
     };
 
-    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
-    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", QCLASS(Vest_Basic), DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", QCLASS(Vest_Basic), DROID_LINKED_ITEMS};
 
     class SoundEnvironExt {
         generic[] = {
@@ -1246,8 +1246,8 @@ class CLASS(WBK_B2): WBK_LS_B2 {
         QCLASS(Mag_3rnd_B2Blaster_rocket)
     };
 
-    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
-    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", QCLASS(Vest_Basic), DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", QCLASS(Vest_Basic), DROID_LINKED_ITEMS};
 };
 
 class WBK_LS_B2_Junk;
@@ -1273,8 +1273,8 @@ class CLASS(WBK_B2_Junk): WBK_LS_B2_Junk {
         QCLASS(Mag_3rnd_B2Blaster_rocket)
     };
 
-    linkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
-    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", DROID_LINKED_ITEMS};
+    linkedItems[] = {"JLTS_NVG_droid_chip_1", QCLASS(Vest_Basic), DROID_LINKED_ITEMS};
+    respawnLinkedItems[] = {"JLTS_NVG_droid_chip_1", QCLASS(Vest_Basic), DROID_LINKED_ITEMS};
 };
 
 class CLASS(Unit_Droid_B2): CLASS(CIS_Unit_Droid_B2) {

@@ -35,3 +35,4 @@ class CLASS(Helmet_ARF_TankerBacta_Worn): CLASS(Helmet_ARF_Tanker_Worn) {
 };
 ARF_HELMET_CUSTOM(Tugz);
 ARF_HELMET_CUSTOM(Turtle);
+ARF_HELMET_CUSTOM(Whisker);

@@ -33,3 +33,21 @@ class CLASS(cloneCommando_helmet_red): CLASS(Helmet_ARC_Base) {
         uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\commando\ls_helmet_clone_commando.p3d";
     };
 };
+
+class CLASS(ceremonial_cloneCommando_helmet): CLASS(Helmet_ARC_Base) {
+    displayName = "[KC] SF Clone Commando Helm (Ceremonial)";
+
+    model = "\ls\core\addons\characters_clone_legacy\helmets\commando\ls_helmet_clone_commando.p3d";
+    hiddenSelections[] = {"illum", "camo1"};
+    hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\commando\Ceremonial_Carnage_camo1_co.paa),
+        QPATHTOF(data\helmets\commando\Ceremonial_Carnage_camo1_co.paa)
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_helmet_ui_ca.paa";
+
+    class ItemInfo: ItemInfo {
+        hiddenSelections[] = {"illum", "camo1"};
+        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\commando\ls_helmet_clone_commando.p3d";
+    };
+};
