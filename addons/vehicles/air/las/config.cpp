@@ -10,11 +10,10 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(weapons),
             QGVAR(sounds),
-            "ls_vehicles_laatc",
-            "ls_compat_ace_interaction"
+            "3AS_Republic_Heli_LAS"
         };
         units[] = {
-            QCLASS(LAATc)
+            QCLASS(LAS_Z6)
         };
         weapons[] = {};
         VERSION_CONFIG;
@@ -22,4 +21,3 @@ class CfgPatches {
 };
 
 #include "CfgVehicles.hpp"
-#include "CfgEventHandlers.hpp"

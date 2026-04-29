@@ -374,3 +374,55 @@ class TransportItems { \
     QCLASS(TX130_Super), \
     QCLASS(UTAT) \
 ]
+
+#define SENSORTEMPLATES class SensorTemplatePassiveRadar{ \
+    class components; \
+}; \
+class SensorTemplateAntiRadiation{ \
+    class components; \
+}; \
+class SensorTemplateActiveRadar{ \
+    class components; \
+}; \
+class SensorTemplateIR{ \
+    class components; \
+}; \
+class SensorTemplateVisual{ \
+    class components; \
+}; \
+class SensorTemplateMan{ \
+    class components; \
+}; \
+class SensorTemplateLaser{ \
+    class components; \
+}; \
+class SensorTemplateNV{ \
+    class components; \
+}; \
+class SensorTemplateDataLink{ \
+    class components; \
+}; \
+class DefaultVehicleSystemsDisplayManagerLeft \
+{ \
+	class components; \
+}; \
+class DefaultVehicleSystemsDisplayManagerRight \
+{ \
+	class components; \
+}; \
+class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft \
+{ \
+	class components; \
+}; \
+class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight \
+{ \
+	class components; \
+}; \
+class VehicleSystemsTemplateLeftGunner \
+{ \
+	class components; \
+}; \
+class VehicleSystemsTemplateRightGunner \
+{ \
+	class components; \
+} \

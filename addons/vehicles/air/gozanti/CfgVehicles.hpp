@@ -141,5 +141,9 @@ class CfgVehicles {
                 };
             };
         };
+
+        reportOwnPosition = TRUE;
+        reportRemoteTargets = TRUE;
+        receiveRemoteTargets = TRUE;
     };
 };

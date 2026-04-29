@@ -310,6 +310,10 @@ class CfgVehicles {
 
             ace_missileguidance_usePilotCameraForTargeting = TRUE;
         };
+
+        reportOwnPosition = TRUE;
+        reportRemoteTargets = TRUE;
+        receiveRemoteTargets = TRUE;
     };
 
     class CLASS(LAATi_MK1): CLASS(LAATi_Base) {

@@ -219,6 +219,16 @@ class CfgVehicles {
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
+            class Spawn_KC_LAS_Z6
+            {
+                displayName = "Spawn [KC] LAS 1/A (Z6)";
+				position = "pos cano";
+				radius = 15;
+                condition = "True";
+				statement = QUOTE([ARR_2(this,'BNA_KC_LAS_Z6')] call FUNC(vicSpawner));
+				onlyforplayer = "false";
+				hideOnUse = 0;
+            };
             // basic fighters
             class Spawn_KC_V19
             {

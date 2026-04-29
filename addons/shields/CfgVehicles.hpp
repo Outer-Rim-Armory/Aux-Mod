@@ -338,4 +338,32 @@ class CfgVehicles {
             SHIELD_TOGGLE;
         };
     };
+
+
+    class 3AS_LAS_Base_F;
+    class 3AS_LAS_Z6_Base_F: 3AS_LAS_Base_F {
+        class ACE_SelfActions;
+        class ACE_Actions;
+    };
+    class CLASS(LAS_Z6): 3AS_LAS_Z6_Base_F {
+        GVAR(hasShield) = TRUE;
+        GVAR(health) = 5;
+        GVAR(regenDelay) = SHIELD_REGEN_DELAY_DEFAULT;
+        GVAR(regenAmount) = SHIELD_REGEN_AMOUNT_DEFAULT;
+
+        class ACE_Actions: ACE_Actions {
+            class RechargeShield {
+                displayName = "Recharge Shield: %1";
+                position = "[0, -4, 0.4]";
+                distance = 5;
+
+                condition = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(canExternalRecharge));
+                statement = QUOTE([ARR_2(_this#0,_this#1)] call FUNC(externalRecharge));
+                modifierFunction = QUOTE(_this call FUNC(modifyInteraction));
+            };
+        };
+        class ACE_SelfActions: ACE_SelfActions {
+            SHIELD_TOGGLE;
+        };
+    };
 };

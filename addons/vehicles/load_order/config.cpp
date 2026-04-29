@@ -17,6 +17,7 @@ class CfgPatches {
             QGVAR(hmp),
             QGVAR(laatc),
             QGVAR(laati),
+            QGVAR(las),
             QGVAR(maf),
             QGVAR(nu),
             QGVAR(ogre),
