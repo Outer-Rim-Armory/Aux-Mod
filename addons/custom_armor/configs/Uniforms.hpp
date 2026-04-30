@@ -5,7 +5,7 @@ class CLASS(Uniform_Base): ls_gar_phase2_uniform {
 UNIFORM_CUSTOM(Axel);
 UNIFORM_CUSTOM(Bailout);
 UNIFORM_CUSTOM(Bean);
-UNIFORM_CUSTOM(Bob);
+//UNIFORM_CUSTOM(Bob);
 UNIFORM_CUSTOM(Burnt);
 
 class CLASS(Uniform_Burnt_Worn): CLASS(Uniform_Burnt) {
@@ -55,18 +55,17 @@ UNIFORM_CUSTOM(Grey);
 UNIFORM_CUSTOM(Hagrid);
 UNIFORM_CUSTOM(Harry);
 UNIFORM_CUSTOM(Henkie);
-UNIFORM_CUSTOM(Jaws);
+//UNIFORM_CUSTOM(Jaws);
 
-class CLASS(Uniform_Jaws_CamoBrown): CLASS(Uniform_Jaws) {
-    displayName = "[KC] Custom Armor ('Jaws') - Brown Camo";
-
-    class ItemInfo: ItemInfo {
-        uniformClass = QCLASS(Unit_Jaws_CamoBrown);
-    };
-    class XtdGearInfo: XtdGearInfo {
-        camo = "Brown";
-    };
-};
+//class CLASS(Uniform_Jaws_CamoBrown): CLASS(Uniform_Jaws) {
+//    displayName = "[KC] Custom Armor ('Jaws') - Brown Camo";
+//    class ItemInfo: ItemInfo {
+//        uniformClass = QCLASS(Unit_Jaws_CamoBrown);
+//    };
+//    class XtdGearInfo: XtdGearInfo {
+//        camo = "Brown";
+//    };
+//};
 
 UNIFORM_CUSTOM(Jester);
 UNIFORM_CUSTOM(Joe);
@@ -166,9 +165,9 @@ class CLASS(Uniform_Tanker_Worn): CLASS(Uniform_Tanker) {
         camo = "Worn";
     };
 };
-UNIFORM_CUSTOM(Tugz);
+//UNIFORM_CUSTOM(Tugz);
 UNIFORM_CUSTOM(Tyrant);
-UNIFORM_CUSTOM(Weenie);
+//UNIFORM_CUSTOM(Weenie);
 UNIFORM_CUSTOM(Woods);
 
 class CLASS(Uniform_Phase2_Insulated_Base): CLASS(Uniform_Base) {

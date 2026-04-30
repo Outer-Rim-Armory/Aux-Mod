@@ -7,6 +7,7 @@ class CfgWeapons {
         magazines[] = {
             QCLASS(Mag_StunShort),
             QCLASS(Mag_StunLong),
+            "3AS_5Rnd_Stun_Mag",
             "Aux12thFleet_Mag_StunShort",
             "Aux12thFleet_Mag_StunLong"
         };

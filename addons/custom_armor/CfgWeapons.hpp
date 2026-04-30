@@ -290,16 +290,14 @@ class CfgWeapons {
     };
 
 class CLASS(Vest_CS) ;
-class CLASS(Vest_Jaws): CLASS(Vest_CS) {
-    displayName = "[KC] INF Vest (Jaws)";
-    hiddenSelectionsTextures[] = {
-        QPATHTOF(data\vests\jaws\camo1_co.paa),       // Pauldron
-        QPATHTOF(data\vests\jaws\camo2_co.paa) // Kama
-    };
-
-
-        GVAR(isCustom) = TRUE;
-    };
+//class CLASS(Vest_Jaws): CLASS(Vest_CS) {
+//    displayName = "[KC] INF Vest (Jaws)";
+//    hiddenSelectionsTextures[] = {
+//        QPATHTOF(data\vests\jaws\camo1_co.paa),       // Pauldron
+//        QPATHTOF(data\vests\jaws\camo2_co.paa) // Kama
+//    };
+//  GVAR(isCustom) = TRUE;
+//};
 
     class CLASS(Vest_ForceRecon_Officer) ;
     class CLASS(Force_Recon_Sin): CLASS(Vest_ForceRecon_Officer) {

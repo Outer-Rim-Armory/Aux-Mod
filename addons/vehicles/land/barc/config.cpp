@@ -14,7 +14,8 @@ class CfgPatches {
             "ls_vehicles_ground"
         };
         units[] = {
-            QCLASS(BARC)
+            QCLASS(BARC),
+            QCLASS(BARC_Sidecar)
         };
         weapons[] = {};
         VERSION_CONFIG;
