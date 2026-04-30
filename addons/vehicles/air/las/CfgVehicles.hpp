@@ -7,12 +7,17 @@ class CfgVehicles {
     class Helicopter_Base_H: Helicopter_Base_F{
         class Components;
     };
-    class 3AS_LAS_Base_F: Helicopter_Base_H {};
-    class 3AS_LAS_Z6_Base_F: 3AS_LAS_Base_F {
+    class 3AS_LAS_Base_F: Helicopter_Base_H {
         class pilotCamera;
         class ACE_SelfActions;
+        class Turrets {
+            class MainTurret;
+            class MainTurret1;
+        };
     };
-    class CLASS(LAS_Z6): 3AS_LAS_Z6_Base_F {
+    // class 3AS_LAS_Z6_Base_F: 3AS_LAS_Base_F {};
+    // class 3AS_LAS_Transport_Base_F: 3AS_LAS_Base_F{};
+    class CLASS(LAS_Base): 3AS_LAS_Base_F {
         class LS_Impulsor: ls_impulsor_base{
             enabled = 1; // 0-Disabled, 1-Enabled
             speed = 400; // Speed in km/h
@@ -23,14 +28,14 @@ class CfgVehicles {
             overchargeCooldown = 05;
         };
 
-        SCOPE_PUBLIC;
+        SCOPE_PRIVATE;
         author = AUTHOR;
 
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Helicopters);
         side = BLUFOR;
 
-        displayName = "LAS 1/A (Z6)";
+        displayName = "LAS (Base)";
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
         fuelCapacity = 1500;
@@ -92,11 +97,6 @@ class CfgVehicles {
                 };
             };
 		};
-
-        class ACE_SelfActions: ACE_SelfActions {
-            HUD_CHANGER;
-            AI_CREW_SPAWNER;
-        };
 
         class VehicleTransport {
             class Cargo
@@ -361,4 +361,47 @@ class pilotCamera
 		};
 
     };
+
+    class CLASS(LAS_Transport): CLASS(LAS_Base) {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Helicopters);
+        side = BLUFOR;
+        displayName = "LAS-1";
+        crew = QCLASS(Unit_Phase2_CXA);
+        typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
+        class Turrets
+		{
+		};
+    };
+
+    class CLASS(LAS_Z6):CLASS(LAS_Base) {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Helicopters);
+        side = BLUFOR;
+        displayName = "LAS-1/A (Z6)";
+        crew = QCLASS(Unit_Phase2_CXA);
+        typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
+        editorPreview="\3AS\3AS_Republic_Heli\LAS\data\ui\3AS_LAS_Z6_F.jpg";
+        model="\3AS\3AS_Republic_Heli\LAS\model\3AS_LAS_z6.p3d";
+		transportsoldier=2;
+		cargoProxyIndexes[]={1,2};
+		getInProxyOrder[]={1,2};
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				gunnerType=QCLASS(Unit_Phase2_CXA);
+			};
+			class MainTurret1: MainTurret1
+			{
+				gunnerType=QCLASS(Unit_Phase2_CXA);
+			};
+		};
+
+    };
+
 };

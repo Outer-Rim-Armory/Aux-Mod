@@ -56,3 +56,21 @@ hideOnUse = 0; \
     onlyforplayer = "false"; \
     hideOnUse = 0; \
 }
+#define VICSPAWNHELI(classname,dispn) class classname { \
+displayName = QUOTE(<t color='#A2675A'> Spawn [KC] dispn </t>); \
+position = "pos cano"; \
+radius = 15; \
+condition = "True"; \
+statement = QUOTE([ARR_2(this,'classname')] call FUNC(vicSpawner)); \
+onlyforplayer = "false"; \
+hideOnUse = 0; \
+};
+#define VICSPAWNPLANE(classname,dispn) class classname { \
+displayName = QUOTE(<t color='#3A3A3A'> Spawn [KC] dispn </t>); \
+position = "pos cano"; \
+radius = 15; \
+condition = "True"; \
+statement = QUOTE([ARR_2(this,'classname')] call FUNC(vicSpawner)); \
+onlyforplayer = "false"; \
+hideOnUse = 0; \
+};

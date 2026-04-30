@@ -380,6 +380,9 @@ class CfgVehicles {
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
         hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        class TransportWeapons {
+            WEAP_XX(Aux501_Weaps_EWHB12_carry,4);
+        };
         class TransportItems {
             ITEM_XX(ACE_DefusalKit,5);
             ITEM_XX(MineDetector,5);
@@ -392,6 +395,7 @@ class CfgVehicles {
             MAG_XX(APERSMineDispenser_Mag,5);
             MAG_XX(C7_Remote_Mag,15);
             MAG_XX(UNSCMine_Range_Mag,10);
+            MAG_XX(Aux501_Weapons_Mags_EWHB12_GL_csw,40);
         };
     };
 

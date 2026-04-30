@@ -13,6 +13,8 @@ class CfgPatches {
             "3AS_Republic_Heli_LAS"
         };
         units[] = {
+            QCLASS(LAS_Base),
+            QCLASS(LAS_Transport),
             QCLASS(LAS_Z6)
         };
         weapons[] = {};

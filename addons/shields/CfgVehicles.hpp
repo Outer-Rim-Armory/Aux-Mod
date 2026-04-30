@@ -339,13 +339,11 @@ class CfgVehicles {
         };
     };
 
-
-    class 3AS_LAS_Base_F;
-    class 3AS_LAS_Z6_Base_F: 3AS_LAS_Base_F {
+    class 3AS_LAS_Base_F: Helicopter_Base_H{
         class ACE_SelfActions;
         class ACE_Actions;
     };
-    class CLASS(LAS_Z6): 3AS_LAS_Z6_Base_F {
+    class CLASS(LAS_Base): 3AS_LAS_Base_F {
         GVAR(hasShield) = TRUE;
         GVAR(health) = 5;
         GVAR(regenDelay) = SHIELD_REGEN_DELAY_DEFAULT;

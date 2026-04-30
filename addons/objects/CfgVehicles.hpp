@@ -177,153 +177,23 @@ class CfgVehicles {
 
         displayName = "Aircraft Terminal";
         class Useractions{
-
             // helicopter heliocopter *helicopter sounds*
-            class Spawn_KC_LAAT_MK1
-            {
-                displayName = "Spawn [KC] LAAT/MK1";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK1')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_LAAT_MK2
-            {
-                displayName = "Spawn [KC] LAAT/MK2";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_MK2')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_LAAT_C
-            {
-                displayName = "Spawn [KC] LAAT/c";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_LAATc')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_LAAT_Med
-            {
-                displayName = "Spawn [KC] LAAT/Med";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_LAATi_Med')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_LAS_Z6
-            {
-                displayName = "Spawn [KC] LAS 1/A (Z6)";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_LAS_Z6')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            // basic fighters
-            class Spawn_KC_V19
-            {
-                displayName = "Spawn [KC] V-19 Torrent";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_V19')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_Vwing
-            {
-                displayName = "Spawn [KC] V-Wing";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Vwing')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-
-            // advanced heli stuffs
-            class Spawn_KC_NUclass
-            {
-                displayName = "<t color='#2ed9ca'> Spawn [KC] Nu-Class Shuttle </t>";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Nu')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_RHOclass
-            {
-                displayName = "<t color='#2ed9ca'> Spawn [KC] Rho-Class Shuttle </t>";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Rho')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_RHOclass_Med
-            {
-                displayName = "<t color='#2ed9ca'> Spawn [KC] Rho Shuttle (Medical) </t>";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Rho_medical')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-
-        // advanced non heli also known as birds but not those birds just planes
-        class Spawn_KC_ARC170
-            {
-                displayName = "<t color='#2ed9ca'> Spawn [KC] ARC-170 </t>";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_ARc170')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_Ywing
-            {
-                displayName = "<t color='#2ed9ca'> Spawn [KC] Y-wing </t>";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_BTLB_Ywing')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_Gozanti
-            {
-                displayName = "<t color='#2ed9ca'> Spawn [KC] Gozanti </t>";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Gozanti')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
-            class Spawn_KC_Z95
-            {
-                displayName = "<t color='#2ed9ca'> Spawn [KC] Z-95 Headhunter </t>";
-				position = "pos cano";
-				radius = 15;
-                condition = "True";
-				statement = QUOTE([ARR_2(this,'BNA_KC_Z95')] call FUNC(vicSpawner));
-				onlyforplayer = "false";
-				hideOnUse = 0;
-            };
+            VICSPAWNHELI(CLASS(LAAT_MK1),LAAT/MK1)
+            VICSPAWNHELI(CLASS(LAAT_MK2),LAAT/MK2)
+            VICSPAWNHELI(CLASS(LAAT_Med),LAAT/Med)
+            VICSPAWNHELI(CLASS(LAAT_C),LAAT/C)
+            VICSPAWNHELI(CLASS(LAS_Z6),LAS-1/A (Z6))
+            VICSPAWNHELI(CLASS(LAS_Transport),LAS-1)
+            VICSPAWNHELI(CLASS(Nu),Nu-Class Shuttle)
+            VICSPAWNHELI(CLASS(Rho),Rho-Class Shuttle)
+            VICSPAWNHELI(CLASS(Rho_medical),Rho-Class Shuttle (Medical))
+            // Planes
+            VICSPAWNPLANE(CLASS(V19),V-19 Torrent)
+            VICSPAWNPLANE(CLASS(Vwing),V-Wing)
+            VICSPAWNPLANE(CLASS(ARC170),ARC-170)
+            VICSPAWNPLANE(CLASS(BTLB_Ywing),Y-Wing)
+            VICSPAWNPLANE(CLASS(Gozanti),Gozanti)
+            VICSPAWNPLANE(CLASS(Z95),Z-95)
         };
     };
 
