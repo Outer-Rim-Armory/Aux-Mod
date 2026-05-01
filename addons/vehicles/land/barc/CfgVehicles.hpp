@@ -125,7 +125,8 @@ class CfgVehicles {
         */
     };
 
-    class CLASS(BARC_Sidecar): 3AS_BARC_Base {
+    class 3AS_BarcSideCar;
+    class CLASS(BARC_Sidecar): 3AS_BarcSideCar {
         SCOPE_PUBLIC;
         author = AUTHOR;
 

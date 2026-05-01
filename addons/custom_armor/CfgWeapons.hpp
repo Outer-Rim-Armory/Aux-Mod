@@ -289,7 +289,7 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
     };
 
-class CLASS(Vest_CS) ;
+//class CLASS(Vest_CS) ;
 //class CLASS(Vest_Jaws): CLASS(Vest_CS) {
 //    displayName = "[KC] INF Vest (Jaws)";
 //    hiddenSelectionsTextures[] = {
