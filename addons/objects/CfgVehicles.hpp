@@ -178,10 +178,10 @@ class CfgVehicles {
         displayName = "Aircraft Terminal";
         class Useractions{
             // helicopter heliocopter *helicopter sounds*
-            VICSPAWNHELI(CLASS(LAAT_MK1),LAAT/MK1)
-            VICSPAWNHELI(CLASS(LAAT_MK2),LAAT/MK2)
-            VICSPAWNHELI(CLASS(LAAT_Med),LAAT/Med)
-            VICSPAWNHELI(CLASS(LAAT_C),LAAT/C)
+            VICSPAWNHELI(CLASS(LAATi_MK1),LAAT/MK1)
+            VICSPAWNHELI(CLASS(LAATi_MK2),LAAT/MK2)
+            VICSPAWNHELI(CLASS(LAATi_Med),LAAT/Med)
+            VICSPAWNHELI(CLASS(LAATc),LAAT/C)
             VICSPAWNHELI(CLASS(LAS_Z6),LAS-1/A (Z6))
             VICSPAWNHELI(CLASS(LAS_Transport),LAS-1)
             VICSPAWNHELI(CLASS(Nu),Nu-Class Shuttle)

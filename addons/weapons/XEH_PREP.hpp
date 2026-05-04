@@ -10,3 +10,4 @@ PREP(statCondition_isBacta);
 PREP(statCondition_isEmp);
 PREP(statTextStatement_empRadius);
 PREP(useVehicleEMP);
+PREP(armstrongKick);

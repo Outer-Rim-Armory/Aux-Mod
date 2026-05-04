@@ -112,11 +112,15 @@ class CfgVehicles {
                 condition = QUOTE(ace_player isEqualTo currentPilot this and {this call FUNC(vivCanLoad)});
                 statement = QUOTE(this call FUNC(vivLoad));
             };
-/*             class MassChanger { // this just wont appear in the interact menu at all
+            class MassChanger {
                 displayName = "Recalibrate Artfical Mass";
-                condition = QUOTE(true);
+                condition = QUOTE(ace_player isEqualTo currentPilot this);
                 statement = QUOTE(this setMass 40317);
-            }; */
+                priority = 10;
+                radius = 10;
+                hideOnUse = 0;
+                onlyForPlayer = 1;
+            };
         };
 
         INVENTORY_VEHICLE_BASE(1);

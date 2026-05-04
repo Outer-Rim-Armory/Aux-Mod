@@ -374,6 +374,9 @@ class pilotCamera
         class Turrets
 		{
 		};
+        class ACE_SelfActions: ACE_SelfActions {
+            HUD_CHANGER;
+        };
     };
 
     class CLASS(LAS_Z6):CLASS(LAS_Base) {
@@ -401,6 +404,10 @@ class pilotCamera
 				gunnerType=QCLASS(Unit_Phase2_CXA);
 			};
 		};
+        class ACE_SelfActions: ACE_SelfActions {
+            HUD_CHANGER;
+            AI_CREW_SPAWNER;
+        };
 
     };
 
