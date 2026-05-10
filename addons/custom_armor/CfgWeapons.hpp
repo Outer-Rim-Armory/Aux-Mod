@@ -278,6 +278,14 @@ class CfgWeapons {
 
         GVAR(isCustom) = TRUE;
     };
+    class CLASS(cloneNvg_phase2_officerVisor_Jaws): CLASS(cloneNvg_phase2_officerVisor) {
+        displayName = "[KC] Clone P2 NV/TI Visor ('Jaws')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Jaws_Visor_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
     class CLASS(cloneNvg_commandoVisor);
     class CLASS(Moskoni_NVG): CLASS(cloneNvg_commandoVisor) {
         displayName = "[KC] Moskoni Nvg";

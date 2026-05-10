@@ -400,7 +400,8 @@ class CfgPatches {
             QCLASS(cloneVest_heavy_Dexus),
             QCLASS(Vest_WO_Howzer),
             QCLASS(cloneNvg_phase2_officerVisor_Keeli),
-            QCLASS(cloneNvg_phase2_officerVisor_Keeli_Worn)
+            QCLASS(cloneNvg_phase2_officerVisor_Keeli_Worn),
+            QCLASS(cloneNvg_phase2_Visor_Jaws)
         };
         VERSION_CONFIG;
     };

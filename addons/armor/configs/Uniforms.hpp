@@ -521,6 +521,6 @@ class CLASS(cloneArmor_uniform_textureTest): CLASS(Uniform_Base) {
 class CLASS(Ceremonial_Uniform): CLASS(Uniform_Base) {
     displayName = "[KC] Ceremonial Armor";
     class ItemInfo: ItemInfo {
-        uniformClass = QCLASS(Unit_Phase2_Ceremonial_CT);
+        uniformClass = QCLASS(Unit_Phase2_Ceremonial_15A);
     };
 };

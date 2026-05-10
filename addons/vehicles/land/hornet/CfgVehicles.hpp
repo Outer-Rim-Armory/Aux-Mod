@@ -86,7 +86,7 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Cars);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
 
-        displayName = "04: Hornet Strike Vehicle (Ceremonial)";
+        displayName = "07: Hornet Strike Vehicle (Ceremonial)";
         crew = QCLASS(Unit_Phase2_Ceremonial_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Ceremonial_CT)};
         side = BLUFOR;
@@ -275,7 +275,7 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Cars);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_MG);
 
-        displayName = "05: Hornet Strike Vehicle (MG, Ceremonial)";
+        displayName = "08: Hornet Strike Vehicle (MG, Ceremonial)";
         crew = QCLASS(Unit_Phase2_Ceremonial_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Ceremonial_CT)};
         side = BLUFOR;
@@ -447,7 +447,7 @@ class CfgVehicles {
             QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
             QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
         };
-        textureList[] = {"Carnage", 0};
+        textureList[] = {"Carnage", 1};
         class TextureSources {
             class Carnage {
                 displayName = "Carnage";
@@ -502,7 +502,7 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Cars);
         editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_AT);
 
-        displayName = "06: Hornet Strike Vehicle (AT, Ceremonial)";
+        displayName = "09: Hornet Strike Vehicle (AT, Ceremonial)";
         crew = QCLASS(Unit_Phase2_Ceremonial_CT);
         typicalCargo[] = {QCLASS(Unit_Phase2_Ceremonial_CT)};
         side = BLUFOR;
@@ -514,10 +514,10 @@ class CfgVehicles {
             QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
             QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
         };
-        textureList[] = {"Carnage", 0};
+        textureList[] = {"Ceremonial", 1};
         class TextureSources {
-            class Carnage {
-                displayName = "Carnage";
+            class Ceremonial {
+                displayName = "Ceremonial";
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\KC_Hornet_Body_CO.paa),
                     QPATHTOF(land\hornet\data\textures\KC_Hornet_Wheels_CO.paa),

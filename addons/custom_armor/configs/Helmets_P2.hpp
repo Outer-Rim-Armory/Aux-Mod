@@ -13,32 +13,32 @@ P2_HELMET_CUSTOM(Calvin);
 P2_HELMET_CUSTOM(Cherry);
 P2_HELMET_VISOR_CUSTOM(Cough,Bacta);
 //P2_HELMET_CUSTOM(Cutthroat);
-//P2_HELMET_VISOR_CUSTOM(Destiny,Crimson);
-//class CLASS(Helmet_Phase2_Destiny_Worn): CLASS(Helmet_Phase2_Destiny) {
-//    displayName = "[KC] INF P2 Helm ('Destiny') - Worn";
-//    hiddenSelectionsTextures[] = {
-//        QPATHTOF(data\helmets\phase2\camo\worn\Destiny_camo1_co.paa),
-//        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
-//    };
-//
-//    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Destiny_Worn);
-//    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_DestinyCrimson_Worn);
-//
-//    class XtdGearInfo: XtdGearInfo {
-//        camo = "Worn";
-//    };
-//};
-//class CLASS(Helmet_Phase2_DestinyCrimson_Worn): CLASS(Helmet_Phase2_Destiny_Worn) {
-//    SCOPE_HIDDEN;
-//    hiddenSelectionsTextures[] = {
-//        QPATHTOF(data\helmets\phase2\camo\worn\Destiny_camo1_co.paa),
-//        QPATHTOF(data\visors\Crimson_camo2_co.paa)
-//    };
-//    hiddenSelectionsMaterials[] = {
-//        "",
-//        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
-//    };
-//};
+P2_HELMET_VISOR_CUSTOM(Destiny,Crimson);
+class CLASS(Helmet_Phase2_Destiny_Worn): CLASS(Helmet_Phase2_Destiny) {
+    displayName = "[KC] INF P2 Helm ('Destiny') - Worn";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\camo\worn\Destiny_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
+    };
+
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase2_Destiny_Worn);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase2_DestinyCrimson_Worn);
+
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
+class CLASS(Helmet_Phase2_DestinyCrimson_Worn): CLASS(Helmet_Phase2_Destiny_Worn) {
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\camo\worn\Destiny_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa)
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
 //P2_HELMET_VISOR_CUSTOM(Dexus,Bacta);
 P2_HELMET_CUSTOM(Evo);
 //P2_HELMET_CUSTOM(Flare);
