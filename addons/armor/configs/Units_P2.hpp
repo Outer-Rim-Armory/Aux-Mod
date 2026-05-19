@@ -868,3 +868,21 @@ class CLASS(Unit_Phase2_Ceremonial_15A): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_Ceremonial), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+
+class CLASS(Unit_Phase2_Crocea): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
+    displayName = "[KC] Commander Crocea";
+    uniformClass = QCLASS(Crocea_Uniform);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\Crocea_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Crocea_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\Crocea_undersuit_co.paa)
+    };
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Crocea), QCLASS(Vest_Officer_Crocea), QCLASS(cloneNvg_Phase2_officerVisor_Crocea), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Crocea), QCLASS(Vest_Officer_Crocea), QCLASS(cloneNvg_Phase2_officerVisor_Crocea), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(Backpack_Radio_Crocea);
+};

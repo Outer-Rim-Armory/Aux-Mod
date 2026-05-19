@@ -44,7 +44,7 @@ class CfgVehicles {
     };
 
     class CLASS(Hornet_Unarmed_Carnage): O_LSV_02_unarmed_F {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
         author = AUTHOR;
 
         faction = QFACTION(KC);
@@ -79,7 +79,7 @@ class CfgVehicles {
     };
 
     class CLASS(Hornet_Unarmed_Ceremonial): O_LSV_02_unarmed_F {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
         author = AUTHOR;
 
         faction = QFACTION(KC);
@@ -202,7 +202,7 @@ class CfgVehicles {
     };
 
     class CLASS(Hornet_MG_Carnage): O_LSV_02_armed_F {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
         author = AUTHOR;
 
         faction = QFACTION(KC);
@@ -268,7 +268,7 @@ class CfgVehicles {
     };
 
     class CLASS(Hornet_MG_Ceremonial): O_LSV_02_armed_F {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
         author = AUTHOR;
 
         faction = QFACTION(KC);
@@ -426,7 +426,7 @@ class CfgVehicles {
     };
 
     class CLASS(Hornet_AT_Carnage): O_LSV_02_AT_F {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
         author = AUTHOR;
 
         faction = QFACTION(KC);
@@ -495,7 +495,7 @@ class CfgVehicles {
     };
 
     class CLASS(Hornet_AT_Ceremonial): O_LSV_02_AT_F {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
         author = AUTHOR;
 
         faction = QFACTION(KC);
@@ -559,5 +559,223 @@ class CfgVehicles {
             class CargoTurret_04: CargoTurret_04 {};
             class CargoTurret_05: CargoTurret_05 {};
         };
+    };
+
+    class CLASS(Hornet_Unarmed_Harry): O_LSV_02_unarmed_F {
+        SCOPE_HIDDEN;
+        author = AUTHOR;
+
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
+
+        displayName = "10: Hornet Strike Vehicle (Harry, Unarmed)";
+        crew = QCLASS(Unit_ARC_CT);
+        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
+        side = BLUFOR;
+
+        weapons[] = {QCLASS(Horn_Harry)};
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
+            QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
+            QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa)
+        };
+        textureList[] = {"Harry", 1};
+        class TextureSources {
+            class Harry {
+                displayName = "Harry";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa)
+                };
+            };
+        };
+
+        INVENTORY_VEHICLE_RECON;
+    };
+
+    class CLASS(Hornet_MG_Harry): O_LSV_02_armed_F {
+        SCOPE_HIDDEN;
+        author = AUTHOR;
+
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
+
+        displayName = "11: Hornet Strike Vehicle (Harry, MG)";
+        crew = QCLASS(Unit_ARC_CT);
+        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
+        side = BLUFOR;
+
+        weapons[] = {QCLASS(Horn_Harry)};
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
+            QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
+            QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa)
+        };
+        textureList[] = {"Harry", 1};
+        class TextureSources {
+            class Harry {
+                displayName = "Harry";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa)
+                };
+            };
+        };
+
+        INVENTORY_VEHICLE_RECON;
+    };
+
+    class CLASS(Hornet_AT_Harry): O_LSV_02_AT_F {
+        SCOPE_HIDDEN;
+        author = AUTHOR;
+
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
+
+        displayName = "12: Hornet Strike Vehicle (Harry, AT)";
+        crew = QCLASS(Unit_ARC_CT);
+        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
+        side = BLUFOR;
+
+        weapons[] = {QCLASS(Horn_Harry)};
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
+            QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
+            QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa),
+            QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+            QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+        };
+        textureList[] = {"Harry", 1};
+        class TextureSources {
+            class Harry {
+                displayName = "Harry";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                };
+            };
+        };
+
+        INVENTORY_VEHICLE_RECON;
+    };
+
+    class CLASS(Hornet_Unarmed_Swoop): O_LSV_02_unarmed_F {
+        SCOPE_HIDDEN;
+        author = AUTHOR;
+
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
+
+        displayName = "13: Hornet Strike Vehicle (Swoop, Unarmed)";
+        crew = QCLASS(Unit_ARC_CT);
+        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
+        side = BLUFOR;
+
+        weapons[] = {QCLASS(Horn_Swoop)};
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
+            QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
+            QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa)
+        };
+        textureList[] = {"Swoop", 1};
+        class TextureSources {
+            class Swoop {
+                displayName = "Swoop";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa)
+                };
+            };
+        };
+
+        INVENTORY_VEHICLE_RECON;
+    };
+
+    class CLASS(Hornet_MG_Swoop): O_LSV_02_armed_F {
+        SCOPE_HIDDEN;
+        author = AUTHOR;
+
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
+
+        displayName = "14: Hornet Strike Vehicle (Swoop, MG)";
+        crew = QCLASS(Unit_ARC_CT);
+        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
+        side = BLUFOR;
+
+        weapons[] = {QCLASS(Horn_Swoop)};
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
+            QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
+            QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa)
+        };
+        textureList[] = {"Swoop", 1};
+        class TextureSources {
+            class Swoop {
+                displayName = "Swoop";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa),
+                };
+            };
+        };
+
+        INVENTORY_VEHICLE_RECON;
+    };
+
+    class CLASS(Hornet_AT_Swoop): O_LSV_02_AT_F {
+        SCOPE_HIDDEN;
+        author = AUTHOR;
+
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Cars);
+        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
+
+        displayName = "15: Hornet Strike Vehicle (Swoop, AT)";
+        crew = QCLASS(Unit_ARC_CT);
+        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
+        side = BLUFOR;
+
+        weapons[] = {QCLASS(Horn_Swoop)};
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
+            QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
+            QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa),
+            QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+            QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+        };
+        textureList[] = {"Swoop", 1};
+        class TextureSources {
+            class Swoop {
+                displayName = "Swoop";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                };
+            };
+        };
+
+        INVENTORY_VEHICLE_RECON;
     };
 };

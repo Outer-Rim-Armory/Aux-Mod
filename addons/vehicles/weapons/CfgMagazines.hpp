@@ -94,6 +94,49 @@ class CfgMagazines {
         initSpeed = 1000;
     };
 
+    class CLASS(Mag_400Rnd_PKV5_Blue): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "PK-V5 Autocannon Shells (Blue, HE)";
+        displayNameShort = "Blue HE Rnd";
+        descriptionShort = "Blue Plasma Shells<br/>Used in PK-V5 Medium Tank";
+        ammo = QCLASS(PKV5_Cannon_Blue);
+        count = 400;
+        mass = 8;
+        initSpeed = 1120;
+    };
+
+    class CLASS(Mag_400Rnd_PKV5_Red): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "PK-V5 Autocannon Shells (Red, HE)";
+        displayNameShort = "Red HE Rnd";
+        descriptionShort = "Red Plasma Shells<br/>Used in PK-V5 Medium Tank";
+        ammo = QCLASS(PKV5_Cannon_Red);
+        count = 400;
+        mass = 8;
+        initSpeed = 1120;
+    };
+    class CLASS(Mag_400Rnd_PKV5_AT_Blue): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "PK-V5 Autocannon Shells (Blue, AT)";
+        displayNameShort = "Blue AT Rnd";
+        descriptionShort = "Blue Plasma Shells<br/>Used in PK-V5 Medium Tank";
+        ammo = QCLASS(PKV5_Cannon_AT_Blue);
+        count = 400;
+        mass = 8;
+        initSpeed = 1120;
+    };
+
+    class CLASS(Mag_400Rnd_PKV5_AT_Red): CLASS(Mag_VehicleBase) {
+        SCOPE_PUBLIC;
+        displayName = "PK-V5 Autocannon Shells (Red, AT)";
+        displayNameShort = "Red AT Rnd";
+        descriptionShort = "Red Plasma Shells<br/>Used in PK-V5 Medium Tank";
+        ammo = QCLASS(PKV5_Cannon_AT_Red);
+        count = 400;
+        mass = 8;
+        initSpeed = 1120;
+    };
+
     class CLASS(Mag_1000Rnd_Venator_AA_Shells): CLASS(Mag_VehicleBase) {
         SCOPE_PUBLIC;
         displayName = "Venator Heavy Cannon AA Shells";

@@ -260,6 +260,17 @@ class CfgWeapons {
             };
     };
 
+    class ls_weapon_hmp_turret_50mm_he;
+    class CLASS(PKV5_Cannon): ls_weapon_hmp_turret_50mm_he {
+        displayName = "PK-V5 Autocannon";
+        magazines[] = {
+            QCLASS(Mag_400Rnd_PKV5_Blue),
+            QCLASS(Mag_400Rnd_PKV5_Red),
+            QCLASS(Mag_400Rnd_PKV5_AT_Blue),
+            QCLASS(Mag_400Rnd_PKV5_AT_Red)
+        };
+    };
+
     class 3AS_Mass_Driver_Cannon: CannonCore {
         class player;
     };
@@ -509,6 +520,24 @@ class CfgWeapons {
     class CLASS(Horn_Carnage): CarHorn {
         drySound[] = {
             QPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),
+            5,
+            1,
+            100
+        };
+    };
+
+    class CLASS(Horn_Harry): CarHorn {
+        drySound[] = {
+            QPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),
+            10,
+            1,
+            100
+        };
+    };
+
+    class CLASS(Horn_Swoop): CarHorn {
+        drySound[] = {
+            QPATHTOF(sounds\data\audio\hornet\Swoop_Horn.wss),
             5,
             1,
             100

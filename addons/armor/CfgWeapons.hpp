@@ -384,6 +384,26 @@ class CfgWeapons {
         };
     };
 
+    class CLASS(cloneNvg_phase1_officerVisor_Crocea): CLASS(cloneNvg_phase1_officerVisor) {
+        displayName = "[KC] Clone P1 NV/TI Officer Visor ('Crocea')";
+        ace_nightvison_border = "";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Crocea_NVG_Visor_co.paa),
+            QPATHTOF(data\nvgs\Crocea_NVG_Visor_co.paa),
+            QPATHTOF(data\nvgs\Crocea_NVG_Visor_co.paa)
+        };
+    };
+
+    class CLASS(cloneNvg_Phase2_officerVisor_Crocea): CLASS(cloneNvg_phase2_officerVisor) {
+        displayName = "[KC] Clone P2 NV/TI Officer Visor ('Crocea')";
+        ace_nightvison_border = "";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Crocea_NVG_Visor_co.paa),
+            QPATHTOF(data\nvgs\Crocea_NVG_Visor_co.paa),
+            QPATHTOF(data\nvgs\Crocea_NVG_Visor_co.paa)
+        };
+    };
+
     class CLASS(cloneNvg_engineerComms): CLASS(cloneNvg_base) {
         SCOPE_PUBLIC;
 

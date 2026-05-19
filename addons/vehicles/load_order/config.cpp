@@ -61,6 +61,7 @@ class CfgPatches {
             QGVAR(og9),
             QGVAR(pac_sac),
             QGVAR(particlecannon),
+            QGVAR(pkv5),
             QGVAR(plesioth),
             QGVAR(protoncannon),
             QGVAR(raptor),

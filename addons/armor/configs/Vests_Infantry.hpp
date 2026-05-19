@@ -394,8 +394,6 @@ class CLASS(Vest_Officer_v2): CLASS(Vest_Officer) {
 
 class CLASS(Vest_Officer_Imperial): CLASS(Vest_Officer) {
     displayName = "[KC] INF Vest 12 (Officer, Empire)";
-
-    hiddenSelections[] = {"camo1"};
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\officer\Imperial_camo1_co.paa) // Kama and Pauldron
     };

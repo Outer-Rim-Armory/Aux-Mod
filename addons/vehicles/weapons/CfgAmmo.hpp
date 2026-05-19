@@ -64,8 +64,8 @@ class CfgAmmo {
         caliber = 350;
         typicalSpeed = 990;
 
-        model = "3as\3as_weapons\data\tracer_shell_red.p3d";
-        effectFly = "3AS_PlasmaBolt_Medium_Red_Fly";
+        model = "3as\3as_weapons\data\tracer_shell_blue.p3d";
+        effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
 
         tracerScale = 2;
     };
@@ -79,6 +79,40 @@ class CfgAmmo {
         effectFly = "3AS_PlasmaBolt_Medium_Red_Fly";
 
         tracerScale = 2;
+    };
+
+    class ls_50mm_he_blue;
+    class CLASS(PKV5_Cannon_Blue): ls_50mm_he_blue {
+        hit = 150;
+        caliber = 6;
+        typicalSpeed = 960;
+
+        model = "3as\3as_weapons\data\tracer_shell_blue.p3d";
+        effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
+    };
+    class CLASS(PKV5_Cannon_Red): ls_50mm_he_blue {
+        hit = 150;
+        caliber = 6;
+        typicalSpeed = 960;
+
+        model = "3as\3as_weapons\data\tracer_shell_red.p3d";
+        effectFly = "3AS_PlasmaBolt_Medium_Red_Fly";
+    };
+    class CLASS(PKV5_Cannon_AT_Blue): ls_50mm_he_blue {
+        hit = 600;
+        caliber = 35;
+        typicalSpeed = 990;
+
+        model = "3as\3as_weapons\data\tracer_shell_blue.p3d";
+        effectFly = "3AS_PlasmaBolt_Medium_Blue_Fly";
+    };
+    class CLASS(PKV5_Cannon_AT_Red): ls_50mm_he_blue {
+        hit = 600;
+        caliber = 35;
+        typicalSpeed = 990;
+
+        model = "3as\3as_weapons\data\tracer_shell_red.p3d";
+        effectFly = "3AS_PlasmaBolt_Medium_Red_Fly";
     };
 
     class 3AS_VeantorCannon_AA;

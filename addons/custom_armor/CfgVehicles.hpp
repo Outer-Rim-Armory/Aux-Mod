@@ -89,6 +89,13 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\Sin\Backpack_co.paa)
         };
     };
+    class CLASS(Backpack_ARC_Harry): CLASS(Backpack_ARC) {
+        displayName = "[KC] ARC Backpack Trooper ('Harry')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Harry\Backpack_co.paa)
+        };
+    };
 
     class CLASS(cloneBackpack_commando);
     class CLASS(cloneBackpack_commando_EOD);

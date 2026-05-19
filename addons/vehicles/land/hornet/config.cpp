@@ -21,7 +21,10 @@ class CfgPatches {
             QCLASS(Hornet_AT_Carnage),
             QCLASS(Hornet_Unarmed_Ceremonial),
             QCLASS(Hornet_MG_Ceremonial),
-            QCLASS(Hornet_AT_Ceremonial)
+            QCLASS(Hornet_AT_Ceremonial),
+            QCLASS(Hornet_Unarmed_Harry),
+            QCLASS(Hornet_MG_Harry),
+            QCLASS(Hornet_AT_Harry)
         };
         weapons[] = {};
         VERSION_CONFIG;

@@ -158,6 +158,14 @@ class CLASS(Vest_ARC_Phase1Geo_Commander): CLASS(Vest_ARC) {
     };
 };
 
+class CLASS(Vest_Officer_Crocea): CLASS(Vest_ARC) {
+    displayName = "[KC] INF Vest 12 (Officer, Crocea)";
+    hiddenSelectionsTextures[] = {
+        "",
+        QPATHTOF(data\vests\infantry\officer\Crocea_Officer_camo1_co.paa)
+        };
+};
+
 class CLASS(Vest_ARC_v2): CLASS(Vest_ARC) {
     displayName = "[KC] SF ARC Vest (v2)";
 

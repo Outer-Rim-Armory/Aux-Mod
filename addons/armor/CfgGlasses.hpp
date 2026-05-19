@@ -56,4 +56,11 @@ class CfgGlasses {
         displayName = "[KC] Pauldron (P2, Empire)";
         OVERLAY_P2;
     };
+
+    class CLASS(Facewear_Poncho_Crocea): CLASS(Facewear_ARF_Flaps) {
+        displayName = "[KC] Poncho ('Crocea')";
+        model = "\ls\core\addons\characters\vests\poncho\ls_vest_poncho.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\poncho\Crocea_Poncho_co.paa)};
+    };
 };

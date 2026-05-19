@@ -660,5 +660,14 @@ class CfgVehicles {
         tf_subtype = "digital_lr";
     };
 
+    class CLASS(Backpack_Radio_Crocea): CLASS(Backpack_Radio_Base) {
+    displayName = "[KC] Crocea Backpack (LR)";
+    hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\Crocea_Backpack_co.paa),
+            QPATHTOF(data\backpacks\standard\Crocea_LR_Attachment_co.paa),
+            QPATHTOF(data\backpacks\standard\Crocea_LR_Screen_co.paa)
+        };
+    };
+
     #include "configs\GroundHolders.hpp"
 };

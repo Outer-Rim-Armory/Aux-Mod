@@ -308,3 +308,11 @@ class CLASS(Helmet_Phase1_Ceremonial): CLASS(Helmet_Phase1_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
     };
 };
+class CLASS(Helmet_Phase1_Crocea): CLASS(Helmet_Phase1_Base) {
+    displayName = "[KC] INF P1 Helm ('Crocea')";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\Crocea_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\Crocea_Visor_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
+    };
+};

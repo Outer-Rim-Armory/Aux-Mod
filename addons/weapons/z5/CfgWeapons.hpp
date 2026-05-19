@@ -1,0 +1,124 @@
+class CfgWeapons {
+    class LMG_Mk200_F;
+    class JLTS_Z6: LMG_Mk200_F {
+        class manual;
+    };
+    class CLASS(Z5_Base): JLTS_Z6 {
+        SCOPE_PRIVATE;
+        author = AUTHOR;
+
+        displayName = "[KC] Z-5 (Base)";
+        baseWeapon = QCLASS(Z5_Base);
+
+        modes[] = {"manual","Overcharge","close","short","medium","far_optic1","far_optic2"};
+        muzzles[] = {"this"};
+        magazines[] = {QCLASS(Mag_400Rnd_Z5)};
+        magazineWell[] = {};
+
+        WBK_UseHeavyWeaponFramework = "True";
+
+        recoil = "recoil_lim";
+
+        JLTS_hasElectronics = TRUE;
+        JLTS_hasEMPProtection = FALSE;
+
+        class manual: manual {
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_Z5Shot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_Z5Shot)};
+            };
+        };
+        class Overcharge: manual
+        {
+            dispersion = 0.00015*4;
+            displayName = "Overcharge";
+            reloadTime = 0.015;
+            burst = 25;
+            textureType = "fastAuto";
+        };
+        class close: manual
+        {
+            burst = 10;
+            aiRateOfFire = 0.5;
+            aiRateOfFireDistance = 50;
+            minRange = 10;
+            minRangeProbab = 0.05;
+            midRange = 20;
+            midRangeProbab = 0.7;
+            maxRange = 50;
+            maxRangeProbab = 0.04;
+            showToPlayer = 0;
+        };
+        class short: close
+        {
+            burst = 8;
+            aiRateOfFire = 2;
+            aiRateOfFireDistance = 300;
+            minRange = 50;
+            minRangeProbab = 0.05;
+            midRange = 150;
+            midRangeProbab = 0.7;
+            maxRange = 300;
+            maxRangeProbab = 0.04;
+        };
+        class medium: close
+        {
+            burst = 7;
+            aiRateOfFire = 4;
+            aiRateOfFireDistance = 600;
+            minRange = 200;
+            minRangeProbab = 0.05;
+            midRange = 300;
+            midRangeProbab = 0.7;
+            maxRange = 500;
+            maxRangeProbab = 0.1;
+        };
+        class far_optic1: medium
+        {
+            requiredOpticType = 1;
+            showToPlayer = 0;
+            burst = 3;
+            aiRateOfFire = 10;
+            aiRateOfFireDistance = 1000;
+            minRange = 300;
+            minRangeProbab = 0.05;
+            midRange = 500;
+            midRangeProbab = 0.4;
+            maxRange = 650;
+            maxRangeProbab = 0.01;
+        };
+        class far_optic2: far_optic1
+        {
+            burst = 3;
+            requiredOpticType = 2;
+            minRange = 400;
+            minRangeProbab = 0.05;
+            midRange = 750;
+            midRangeProbab = 0.7;
+            maxRange = 900;
+            maxRangeProbab = 0.01;
+            aiRateOfFire = 10;
+            aiRateOfFireDistance = 900;
+        };
+    };
+
+    class CLASS(Z5): CLASS(Z5_Base) {
+        SCOPE_PRIVATE;
+
+        displayName = "[KC] Z-5";
+        baseWeapon = QCLASS(Z5);
+
+        JLTS_friedItem = QCLASS(Z5_Fried);
+    };
+
+    class CLASS(Z5_Fried): CLASS(Z5) {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] Z-5 (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\Z6\data\ui\Z6_fried_ui_ca.paa";
+
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+    };
+};

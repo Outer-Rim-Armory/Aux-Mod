@@ -231,6 +231,12 @@ class CfgVehicles {
             VICSPAWNINF(CLASS(Hornet_Unarmed_Carnage),Hornet Unarmed (Carnage))
             VICSPAWNINF(CLASS(Hornet_MG_Carnage),Hornet (MG) (Carnage))
             VICSPAWNINF(CLASS(Hornet_AT_Carnage),Hornet (AT) (Carnage))
+            VICSPAWNINF(CLASS(Hornet_Unarmed_Harry),Hornet Unarmed (Harry))
+            VICSPAWNINF(CLASS(Hornet_MG_Harry),Hornet (MG) (Harry))
+            VICSPAWNINF(CLASS(Hornet_AT_Harry),Hornet (AT) (Harry))
+            VICSPAWNINF(CLASS(Hornet_Unarmed_Swoop),Hornet Unarmed (Swoop))
+            VICSPAWNINF(CLASS(Hornet_MG_Swoop),Hornet (MG) (Swoop))
+            VICSPAWNINF(CLASS(Hornet_AT_Swoop),Hornet (AT) (Swoop))
             // logistics VICSPAWNLOG
             VICSPAWNLOG(CLASS(Bantha_MSV),Bantha (Engineer))
             VICSPAWNLOG(CLASS(Hermitaur_class_E),Hermitaur (Engineer))
@@ -252,12 +258,14 @@ class CfgVehicles {
             VICSPAWNTNK(CLASS(RX200_Artillery),RX200 (Artillery))
             VICSPAWNTNK(CLASS(UTAT),UT-AT)
             VICSPAWNTNK(CLASS(ATAP),AT-AP)
+            VICSPAWNTNK(CLASS(PKV5),PK-V5 (Cannon))
             // medical VICSPAWNMED
             VICSPAWNMED(CLASS(Hermitaur_class_M),Hermitaur (Medic))
             VICSPAWNMED(CLASS(Gammoth_Medical),Gammoth Medic)
             VICSPAWNMED(CLASS(Glavenus_Medic),Glavenus Medic)
             // raptor VICSPAWNRAP
             VICSPAWNRAP(CLASS(BARC),BARC Speeder)
+            VICSPAWNRAP(CLASS(BARC_Sidecar),BARC Speeder Sidecar Variant)
 
             //
         };

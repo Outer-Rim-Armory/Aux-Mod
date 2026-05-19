@@ -524,3 +524,10 @@ class CLASS(Ceremonial_Uniform): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_Ceremonial_15A);
     };
 };
+
+class CLASS(Crocea_Uniform): CLASS(Uniform_Base) {
+    displayName = "[KC] Crocea Armor";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_Crocea);
+    };
+};
