@@ -385,6 +385,7 @@ class CfgWeapons {
     };
 
     class CLASS(cloneNvg_phase1_officerVisor_Crocea): CLASS(cloneNvg_phase1_officerVisor) {
+        SCOPE_HIDDEN;
         displayName = "[KC] Clone P1 NV/TI Officer Visor ('Crocea')";
         ace_nightvison_border = "";
         hiddenSelectionsTextures[] = {
@@ -395,6 +396,7 @@ class CfgWeapons {
     };
 
     class CLASS(cloneNvg_Phase2_officerVisor_Crocea): CLASS(cloneNvg_phase2_officerVisor) {
+        SCOPE_HIDDEN;
         displayName = "[KC] Clone P2 NV/TI Officer Visor ('Crocea')";
         ace_nightvison_border = "";
         hiddenSelectionsTextures[] = {

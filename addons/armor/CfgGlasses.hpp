@@ -58,6 +58,7 @@ class CfgGlasses {
     };
 
     class CLASS(Facewear_Poncho_Crocea): CLASS(Facewear_ARF_Flaps) {
+        SCOPE_HIDDEN;
         displayName = "[KC] Poncho ('Crocea')";
         model = "\ls\core\addons\characters\vests\poncho\ls_vest_poncho.p3d";
         hiddenSelections[] = {"camo1"};

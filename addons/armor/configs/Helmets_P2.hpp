@@ -458,6 +458,7 @@ class CLASS(Helmet_Phase2_Ceremonial): CLASS(Helmet_Phase2_Base) {
 };
 
 class CLASS(Helmet_Phase2_Crocea): CLASS(Helmet_Phase2_Base) {
+    SCOPE_HIDDEN;
     displayName = "[KC] INF P2 Helmet ('Crocea')";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\Crocea_camo1_co.paa),

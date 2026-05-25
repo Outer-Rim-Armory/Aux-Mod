@@ -159,6 +159,7 @@ class CLASS(Vest_ARC_Phase1Geo_Commander): CLASS(Vest_ARC) {
 };
 
 class CLASS(Vest_Officer_Crocea): CLASS(Vest_ARC) {
+    SCOPE_HIDDEN;
     displayName = "[KC] INF Vest 12 (Officer, Crocea)";
     hiddenSelectionsTextures[] = {
         "",

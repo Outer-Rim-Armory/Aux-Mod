@@ -54,6 +54,7 @@ class ACEX_Fortify_Presets {
             {"3AS_Pad_GAR_Prop", 50},
             {"fob_light_gar_tall", 5},
             {"light_s_cis", 5},
+            {"3AS_Fusion_Turret_Base", 10},
             {"442_data_pad_pinup_prinz2", 5000}
         };
     };

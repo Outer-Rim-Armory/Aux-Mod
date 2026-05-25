@@ -661,6 +661,7 @@ class CfgVehicles {
     };
 
     class CLASS(Backpack_Radio_Crocea): CLASS(Backpack_Radio_Base) {
+        SCOPE_HIDDEN;
     displayName = "[KC] Crocea Backpack (LR)";
     hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\standard\Crocea_Backpack_co.paa),

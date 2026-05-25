@@ -870,7 +870,7 @@ class CLASS(Unit_Phase2_Ceremonial_15A): CLASS(Unit_Phase2_Base) {
 };
 
 class CLASS(Unit_Phase2_Crocea): CLASS(Unit_Phase2_Base) {
-    SCOPE_PUBLIC;
+    SCOPE_HIDDEN;
     displayName = "[KC] Commander Crocea";
     uniformClass = QCLASS(Crocea_Uniform);
     hiddenSelectionsTextures[] = {

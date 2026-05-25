@@ -526,6 +526,7 @@ class CLASS(Ceremonial_Uniform): CLASS(Uniform_Base) {
 };
 
 class CLASS(Crocea_Uniform): CLASS(Uniform_Base) {
+    SCOPE_HIDDEN;
     displayName = "[KC] Crocea Armor";
     class ItemInfo: ItemInfo {
         uniformClass = QCLASS(Unit_Phase2_Crocea);
