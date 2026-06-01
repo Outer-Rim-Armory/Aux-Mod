@@ -14,6 +14,7 @@ P1_HELMET_CUSTOM(Church);
 //P1_HELMET_CUSTOM(Cutthroat);
 P1_HELMET_VISOR_CUSTOM(Defter,Bacta);
 P1_HELMET_VISOR_CUSTOM(Destiny,Bacta);
+P1_HELMET_CUSTOM(Deuce);
 //P1_HELMET_VISOR_CUSTOM(Dexus,Bacta);
 P1_HELMET_VISOR_CUSTOM(Drake,Bacta);
 P1_HELMET_CUSTOM(Drakken);
@@ -28,6 +29,7 @@ P1_HELMET_VISOR_CUSTOM(Jester,Bacta);
 P1_HELMET_CUSTOM(Jimsbo);
 P1_HELMET_VISOR_CUSTOM(Joe,Crimson);
 P1_HELMET_CUSTOM(Juno);
+P1_HELMET_CUSTOM(Kage);
 P1_HELMET_VISOR_CUSTOM(Keeli,Crimson);
 
 class CLASS(Helmet_Phase1_Keeli_CamoBrown): CLASS(Helmet_Phase1_Keeli) {

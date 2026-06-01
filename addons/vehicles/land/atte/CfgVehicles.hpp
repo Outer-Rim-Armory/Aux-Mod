@@ -149,7 +149,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\SUBCOMPONENT\data\textures\Dexus\Shell_co.paa),
                     "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-                    QPATHTOF(land\SUBCOMPONENT\data\textures\Dexus\Detail_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\KeeliCompany\Detail_co.paa),
                     QPATHTOF(land\SUBCOMPONENT\data\textures\Dexus\Legs_co.paa),
                     "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
                     "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
@@ -198,18 +198,31 @@ class CfgVehicles {
         };
 
         class UserActions: UserActions {
-            class PlayAlarm {
-                displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>Play Roar</t>";
+//            class PlayAlarm {
+//                displayName = "<t font='RobotoCondensedBold' color='#FFFFFF'>Play Roar</t>";
+//                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
+//                position = "pilotview";
+//                radius = 50;
+//                onlyForPlayer = FALSE;
+//                hideOnUse = TRUE;
+//                priority = 5;
+//                condition = QUOTE(ace_player == currentPilot this;);
+//                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\atte\Reekolith_Roar.ogg),objNull,false,getPosASL this,5,1,4800)];);
+//            };
+            class HornDexus {
+                displayName = "<t font='RobotoCondensedBold' color='#204caa'> Play Howl [Dexus] </t>";
                 displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
-
                 position = "pilotview";
                 radius = 50;
                 onlyForPlayer = FALSE;
-
                 hideOnUse = TRUE;
                 priority = 5;
-
-                condition = QUOTE(ace_player == currentPilot this;);
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'LoneWolf' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\atte\Dexus_Howl.ogg),objNull,false,getPosASL this,5,1,4800)];);
+            };
+            class HornReekolith: HornDexus {
+                displayName = "<t font='RobotoCondensedBold' color='#5b98e7'> Play Roar [Reekolith] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Reekolith' and {ace_player == currentPilot this});
                 statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\atte\Reekolith_Roar.ogg),objNull,false,getPosASL this,5,1,4800)];);
             };
         };

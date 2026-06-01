@@ -517,33 +517,6 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(Horn_Carnage): CarHorn {
-        drySound[] = {
-            QPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),
-            5,
-            1,
-            100
-        };
-    };
-
-    class CLASS(Horn_Harry): CarHorn {
-        drySound[] = {
-            QPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),
-            10,
-            1,
-            100
-        };
-    };
-
-    class CLASS(Horn_Swoop): CarHorn {
-        drySound[] = {
-            QPATHTOF(sounds\data\audio\hornet\Swoop_Horn.wss),
-            5,
-            1,
-            100
-        };
-    };
-
     class 3AS_Mortar_82mm: CannonCore {
         class Single1;
         class Burst1;

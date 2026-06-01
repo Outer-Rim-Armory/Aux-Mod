@@ -230,3 +230,4 @@ class CLASS(Helmet_Phase2_TyrantCrimson_Worn): CLASS(Helmet_Phase2_Tyrant_Worn) 
 //P2_HELMET_CUSTOM(Weenie);
 P2_HELMET_CUSTOM(Whisker);
 P2_HELMET_CUSTOM(Woods);
+P2_HELMET_CUSTOM(Wormbait);

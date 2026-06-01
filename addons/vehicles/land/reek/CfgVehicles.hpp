@@ -126,58 +126,37 @@ class CfgVehicles {
         };
 
         hiddenSelectionsTextures[] = {
-            QPATHTOF(land\reek\data\textures\KeeliCompany\Body_co.paa),
-            QPATHTOF(land\reek\data\textures\KeeliCompany\Addons_co.paa),
-            QPATHTOF(land\reek\data\textures\KeeliCompany\Tow_co.paa),
-            QPATHTOF(land\reek\data\textures\Standard\CamoNet_co.paa),
-            QPATHTOF(land\reek\data\textures\Standard\Cage_co.paa)
+            QPATHTOF(land\reek\data\textures\KeeliCompany\KC_Base_co.paa),
+            QPATHTOF(land\reek\data\textures\KeeliCompany\KC_Wheels_co.paa),
+            QPATHTOF(land\reek\data\textures\KeeliCompany\KC_Turret_co.paa)
         };
 
-        textureList[] = {"Standard", 0, "KeeliCompany", 1, "KeeliCompanyDamaged", 0, "CamoGrey", 0};
+        textureList[] = {"KeeliCompany", 1, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources {
-            class Standard {
-                author = AUTHOR;
-                displayName = "Standard";
-                factions[] = {};
-                textures[] = {
-                    QPATHTOF(land\reek\data\textures\Standard\Body_co.paa),
-                    QPATHTOF(land\reek\data\textures\Standard\Addons_co.paa),
-                    QPATHTOF(land\reek\data\textures\Standard\Tow_co.paa),
-                    QPATHTOF(land\reek\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(land\reek\data\textures\Standard\Cage_co.paa)
-                };
-            };
-
-            class KeeliCompany: Standard {
+            class KeeliCompany {
                 displayName = "Keeli Company";
                 textures[] = {
-                    QPATHTOF(land\reek\data\textures\KeeliCompany\Body_co.paa),
-                    QPATHTOF(land\reek\data\textures\KeeliCompany\Addons_co.paa),
-                    QPATHTOF(land\reek\data\textures\KeeliCompany\Tow_co.paa),
-                    QPATHTOF(land\reek\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(land\reek\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\reek\data\textures\KeeliCompany\KC_Base_co.paa),
+                    QPATHTOF(land\reek\data\textures\KeeliCompany\KC_Wheels_co.paa),
+                    QPATHTOF(land\reek\data\textures\KeeliCompany\KC_Turret_co.paa)
                 };
             };
 
-            class KeeliCompanyDamaged: KeeliCompany {
-                displayName = "Keeli Company (Damaged)";
+            class CamoBrown: KeeliCompany {
+                displayName = "Brown Camo";
                 textures[] = {
-                    QPATHTOF(land\reek\data\textures\KeeliCompanyDamaged\Body_co.paa),
-                    QPATHTOF(land\reek\data\textures\KeeliCompanyDamaged\Addons_co.paa),
-                    QPATHTOF(land\reek\data\textures\KeeliCompanyDamaged\Tow_co.paa),
-                    QPATHTOF(land\reek\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(land\reek\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\reek\data\textures\CamoBrown\CamoBrown_Base_co.paa),
+                    QPATHTOF(land\reek\data\textures\CamoBrown\CamoBrown_Wheels_co.paa),
+                    QPATHTOF(land\reek\data\textures\CamoBrown\CamoBrown_Turret_co.paa)
                 };
             };
 
             class CamoGrey: KeeliCompany {
-                displayName = "Grey Camo";
+                displayName = "Gray Camo";
                 textures[] = {
-                    QPATHTOF(land\reek\data\textures\CamoGrey\Body_co.paa),
-                    QPATHTOF(land\reek\data\textures\CamoGrey\Addons_co.paa),
-                    QPATHTOF(land\reek\data\textures\CamoGrey\Tow_co.paa),
-                    QPATHTOF(land\reek\data\textures\Standard\CamoNet_co.paa),
-                    QPATHTOF(land\reek\data\textures\Standard\Cage_co.paa)
+                    QPATHTOF(land\reek\data\textures\CamoGrey\CamoGray_Base_co.paa),
+                    QPATHTOF(land\reek\data\textures\CamoGrey\CamoGray_Wheels_co.paa),
+                    QPATHTOF(land\reek\data\textures\CamoGrey\CamoGray_Turret_co.paa)
                 };
             };
         };

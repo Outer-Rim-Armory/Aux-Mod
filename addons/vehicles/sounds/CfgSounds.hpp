@@ -35,4 +35,24 @@ class CfgSounds {
         name = "Dogo Horn";
         sound[] = {QPATHTOF(sounds\data\audio\laati\DogoHorn.wss), 5, 1, 1000};
     };
+    class CLASS(Sound_Horn_Harry): CLASS(Sound_Horn_Wyvern) {
+        name = "Harry Horn";
+        sound[] = {QPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss), 30, 1, 100};
+    };
+    class CLASS(Sound_Horn_Swoop): CLASS(Sound_Horn_Wyvern) {
+        name = "Harry Horn";
+        sound[] = {QPATHTOF(sounds\data\audio\hornet\Swoop_Horn.wss), 30, 1, 100};
+    };
+    class CLASS(Sound_Horn_Carnage): CLASS(Sound_Horn_Wyvern) {
+        name = "Carnage Horn";
+        sound[] = {QPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss), 30, 1, 100};
+    };
+    class CLASS(Sound_Horn_Dexus): CLASS(Sound_Horn_Wyvern) {
+        name = "Dexus Howl";
+        sound[] = {QPATHTOF(sounds\data\audio\atte\Dexus_Howl.ogg), 50, 1, 4800};
+    };
+    class CLASS(Sound_Horn_Reekolith): CLASS(Sound_Horn_Wyvern) {
+        name = "Reekolith Roar";
+        sound[] = {QPATHTOF(sounds\data\audio\atte\Reekolith_Roar.ogg), 50, 1, 4800};
+    };
 };

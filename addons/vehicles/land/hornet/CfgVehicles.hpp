@@ -1,4 +1,5 @@
 class CfgVehicles {
+    class UserActions;
     class O_LSV_02_unarmed_F;
     class CLASS(Hornet_Unarmed): O_LSV_02_unarmed_F {
         SCOPE_PUBLIC;
@@ -14,97 +15,124 @@ class CfgVehicles {
         side = BLUFOR;
 
         hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+            QPATHTOF(land\hornet\data\textures\kc\KC_Body_co.paa),
+            QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
+            QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa)
         };
-        textureList[] = {"CamoKC", 1, "CamoGrey", 0};
+        textureList[] = {
+            "KeeliCompany", 1,
+            "CamoKC", 0,
+            "CamoBrown", 0,
+            "CamoGray", 0,
+            "Carnage", 0,
+            "Harry", 0,
+            "Swoop", 0,
+            "Ceremonial", 0,
+            "Turtle", 0
+        };
         class TextureSources {
-            class CamoKC {
+            class KeeliCompany {
                 author = AUTHOR;
-                displayName = "Brown Camo";
+                displayName = "Keeli Company";
                 factions[] = {};
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa)
                 };
             };
-            class CamoGrey: CamoKC {
-                displayName = "Grey Camo";
+            class CamoKC: KeeliCompany {
+                author = AUTHOR;
+                displayName = "KC Camo";
+                factions[] = {};
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Body_CamoGrey_co.paa),
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Interior_co.paa)
                 };
             };
-        };
-
-        INVENTORY_VEHICLE_RECON;
-    };
-
-    class CLASS(Hornet_Unarmed_Carnage): O_LSV_02_unarmed_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
-
-        displayName = "04: Hornet Strike Vehicle (Carnage)";
-        crew = QCLASS(cloneCommando_unit);
-        typicalCargo[] = {QCLASS(cloneCommando_unit)};
-        side = BLUFOR;
-
-        weapons[] = {QCLASS(Horn_Carnage)};
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Body_Carnage_co.paa),
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
-        };
-        textureList[] = {"Carnage", 1};
-        class TextureSources {
-            class Carnage {
+            class CamoBrown: KeeliCompany {
+                displayName = "Brown Camo";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Interior_co.paa)
+                };
+            };
+            class CamoGray: KeeliCompany {
+                displayName = "Gray Camo";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa)
+                };
+            };
+            class Carnage: KeeliCompany {
                 displayName = "Carnage";
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Body_Carnage_co.paa),
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+                    QPATHTOF(land\hornet\data\textures\carnage\Body_Carnage_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa)
+                };
+            };
+            class Harry: KeeliCompany {
+                displayName = "Harry";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\harry\Harry_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\harry\Harry_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\harry\Harry_Interior_co.paa)
+                };
+            };
+            class Swoop: KeeliCompany {
+                displayName = "Swoop";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Interior_co.paa)
+                };
+            };
+            class Ceremonial: KeeliCompany {
+                displayName = "Ceremonial";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Body_CO.paa),
+                    QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Wheels_CO.paa),
+                    QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Interior_CO.paa),
+                };
+            };
+            class Turtle: KeeliCompany {
+                displayName = "Turtle";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\camo\gray\Turtle_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa)
                 };
             };
         };
 
-        INVENTORY_VEHICLE_RECON;
-    };
+        class UserActions: UserActions {
 
-    class CLASS(Hornet_Unarmed_Ceremonial): O_LSV_02_unarmed_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
+            class HornCarnage {
+                displayName = "Play Horn [Carnage]";
+                displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
+                position = "pilotview";
+                radius = 50;
+                onlyForPlayer = FALSE;
+                hideOnUse = TRUE;
+                priority = 5;
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Carnage' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),objNull,false,getPosASL this,5,1,4800)];);
+            };
 
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
+            class HornHarry: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,4800)];);
+            };
 
-        displayName = "07: Hornet Strike Vehicle (Ceremonial)";
-        crew = QCLASS(Unit_Phase2_Ceremonial_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Ceremonial_CT)};
-        side = BLUFOR;
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\KC_Hornet_Body_CO.paa),
-            QPATHTOF(land\hornet\data\textures\KC_Hornet_Wheels_CO.paa),
-            QPATHTOF(land\hornet\data\textures\KC_Hornet_Interior_CO.paa),
-        };
-        textureList[] = {"Ceremonial", 1};
-        class TextureSources {
-            class Ceremonial {
-                displayName = "Ceremonial";
-                textures[] = {
-                    QPATHTOF(land\hornet\data\textures\KC_Hornet_Body_CO.paa),
-                    QPATHTOF(land\hornet\data\textures\KC_Hornet_Wheels_CO.paa),
-                    QPATHTOF(land\hornet\data\textures\KC_Hornet_Interior_CO.paa),
-                };
+            class HornSwoop: HornCarnage {
+                displayName = "<t color='#4f7ed6'> Play Horn [Swoop] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Swoop' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Swoop_Horn.wss),objNull,false,getPosASL this,5,1,4800)];);
             };
         };
 
@@ -141,159 +169,118 @@ class CfgVehicles {
         side = BLUFOR;
 
         hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+            QPATHTOF(land\hornet\data\textures\kc\KC_Body_co.paa),
+            QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
+            QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa)
         };
-        textureList[] = {"BrownCamo", 1, "GreyCamo", 0};
+        textureList[] = {
+            "KeeliCompany", 1,
+            "CamoKC", 0,
+            "CamoBrown", 0,
+            "CamoGray", 0,
+            "Carnage", 0,
+            "Harry", 0,
+            "Swoop", 0,
+            "Ceremonial", 0,
+            "Turtle", 0
+        };
         class TextureSources {
-            class CamoKC {
+            class KeeliCompany {
                 author = AUTHOR;
-                displayName = "Brown Camo";
+                displayName = "Keeli Company";
                 factions[] = {};
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa)
                 };
             };
-            class CamoGrey: CamoKC {
-                displayName = "Grey Camo";
+            class CamoKC: KeeliCompany {
+                author = AUTHOR;
+                displayName = "KC Camo";
+                factions[] = {};
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Body_CamoGrey_co.paa),
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Interior_co.paa)
                 };
             };
-        };
-
-        INVENTORY_VEHICLE_RECON;
-
-        class Turrets: Turrets {
-            class MainTurret: MainTurret {
-                weapons[] = {QCLASS(MachineGun_Hornet)};
-                magazines[] = {
-                    QCLASS(Mag_1000Rnd_Coax),
-                    QCLASS(Mag_1000Rnd_Coax),
-                    QCLASS(Mag_1000Rnd_Coax)
+            class CamoBrown: KeeliCompany {
+                displayName = "Brown Camo";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Interior_co.paa)
                 };
             };
-            class CargoTurret_01: CargoTurret_01 {};
-            class CargoTurret_02: CargoTurret_02 {};
-            class CargoTurret_03: CargoTurret_03 {};
-            class CargoTurret_04: CargoTurret_04 {};
-            class CargoTurret_05: CargoTurret_05 {};
-        };
-
-        class AnimationSources: AnimationSources {
-            class Minigun {
-                source = "revolving";
-                weapon = QCLASS(MachineGun_Hornet);
+            class CamoGray: KeeliCompany {
+                displayName = "Gray Camo";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa)
+                };
             };
-            class muzzle_hide {
-                source = "reload";
-                weapon = QCLASS(MachineGun_Hornet);
-            };
-            class muzzle_rot {
-                source = "ammorandom";
-                weapon = QCLASS(MachineGun_Hornet);
-            };
-        };
-    };
-
-    class CLASS(Hornet_MG_Carnage): O_LSV_02_armed_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_MG);
-
-        displayName = "05: Hornet Strike Vehicle (MG, Carnage)";
-        crew = QCLASS(cloneCommando_unit);
-        typicalCargo[] = {QCLASS(cloneCommando_unit)};
-        side = BLUFOR;
-
-        weapons[] = {QCLASS(Horn_Carnage)};
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Body_Carnage_co.paa),
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
-        };
-        textureList[] = {"Carnage", 1};
-        class TextureSources {
-            class Carnage {
+            class Carnage: KeeliCompany {
                 displayName = "Carnage";
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Body_Carnage_co.paa),
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa"
+                    QPATHTOF(land\hornet\data\textures\carnage\Body_Carnage_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa)
                 };
             };
-        };
-
-        INVENTORY_VEHICLE_RECON;
-
-        class Turrets: Turrets {
-            class MainTurret: MainTurret {
-                weapons[] = {QCLASS(MachineGun_Hornet)};
-                magazines[] = {
-                    QCLASS(Mag_1000Rnd_Coax),
-                    QCLASS(Mag_1000Rnd_Coax),
-                    QCLASS(Mag_1000Rnd_Coax)
+            class Harry: KeeliCompany {
+                displayName = "Harry";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\harry\Harry_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\harry\Harry_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\harry\Harry_Interior_co.paa)
                 };
             };
-            class CargoTurret_01: CargoTurret_01 {};
-            class CargoTurret_02: CargoTurret_02 {};
-            class CargoTurret_03: CargoTurret_03 {};
-            class CargoTurret_04: CargoTurret_04 {};
-            class CargoTurret_05: CargoTurret_05 {};
-        };
-
-        class AnimationSources: AnimationSources {
-            class Minigun {
-                source = "revolving";
-                weapon = QCLASS(MachineGun_Hornet);
+            class Swoop: KeeliCompany {
+                displayName = "Swoop";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Interior_co.paa)
+                };
             };
-            class muzzle_hide {
-                source = "reload";
-                weapon = QCLASS(MachineGun_Hornet);
-            };
-            class muzzle_rot {
-                source = "ammorandom";
-                weapon = QCLASS(MachineGun_Hornet);
-            };
-        };
-    };
-
-    class CLASS(Hornet_MG_Ceremonial): O_LSV_02_armed_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_MG);
-
-        displayName = "08: Hornet Strike Vehicle (MG, Ceremonial)";
-        crew = QCLASS(Unit_Phase2_Ceremonial_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Ceremonial_CT)};
-        side = BLUFOR;
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\KC_Hornet_Body_CO.paa),
-            QPATHTOF(land\hornet\data\textures\KC_Hornet_Wheels_CO.paa),
-            QPATHTOF(land\hornet\data\textures\KC_Hornet_Interior_CO.paa),
-        };
-        textureList[] = {"Ceremonial", 1};
-        class TextureSources {
-            class Ceremonial {
+            class Ceremonial: KeeliCompany {
                 displayName = "Ceremonial";
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\KC_Hornet_Body_CO.paa),
-                    QPATHTOF(land\hornet\data\textures\KC_Hornet_Wheels_CO.paa),
-                    QPATHTOF(land\hornet\data\textures\KC_Hornet_Interior_CO.paa),
+                    QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Body_CO.paa),
+                    QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Wheels_CO.paa),
+                    QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Interior_CO.paa),
                 };
+            };
+            class Turtle: KeeliCompany {
+                displayName = "Turtle";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\camo\gray\Turtle_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa)
+                };
+            };
+        };
+
+        class UserActions {
+
+            class HornCarnage {
+                displayName = "Play Horn [Carnage]";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Carnage' and {ace_player == currentPilot this});
+                statement = QUOTE([ARR_2(this,QQCLASS(Sound_Horn_Carnage))] call FUNC(playHorn));
+            };
+
+            class HornHarry: HornCarnage {
+                displayName = "<t color='#ee0000'> Play Horn [Harry] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
+                statement = QUOTE([ARR_2(this,QQCLASS(Sound_Horn_Harry))] call FUNC(playHorn));
+            };
+
+            class HornSwoop: HornCarnage {
+                displayName = "<t color='#851f1f'> Play Horn [Swoop] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Swoop' and {ace_player == currentPilot this});
+                statement = QUOTE([ARR_2(this,QQCLASS(Sound_Horn_Swoop))] call FUNC(playHorn));
             };
         };
 
@@ -360,171 +347,128 @@ class CfgVehicles {
         side = BLUFOR;
 
         hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+            QPATHTOF(land\hornet\data\textures\kc\KC_Body_co.paa),
+            QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
+            QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa),
             QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
             QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
         };
-        textureList[] = {"BrownCamo", 1, "GreyCamo", 0};
+        textureList[] = {"KeeliCompany", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGray", 0, "Carnage", 0, "Harry", 0, "Swoop", 0, "Ceremonial", 0, "Turtle", 0,};
         class TextureSources {
-            class BrownCamo {
+            class KeeliCompany {
                 author = AUTHOR;
-                displayName = "Brown Camo";
+                displayName = "Keeli Company";
                 factions[] = {};
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Body_CamoKC_co.paa),
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa),
                     QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
                     QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
                 };
             };
-            class GreyCamo: BrownCamo {
-                displayName = "Grey Camo";
+            class CamoKC: KeeliCompany {
+                author = AUTHOR;
+                displayName = "KC Camo";
+                factions[] = {};
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Body_CamoGrey_co.paa),
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Interior_co.paa),
                     QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
                     QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
                 };
             };
-        };
-
-        INVENTORY_VEHICLE_RECON;
-
-        class AnimationSources: AnimationSources {
-            class VoronaMuzzle_reload {
-                source = "reload";
-                weapon = QCLASS(Launcher_Hornet);
+            class CamoBrown: KeeliCompany {
+                displayName = "Brown Camo";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Interior_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                };
             };
-            class VoronaMuzzle_reloadMagazine {
-                source = "reloadMagazine";
-                weapon = QCLASS(Launcher_Hornet);
+            class CamoGray: KeeliCompany {
+                displayName = "Gray Camo";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                };
             };
-            class VoronaMuzzle_revolving {
-                source = "revolving";
-                weapon = QCLASS(Launcher_Hornet);
-            };
-            class VoronaMuzzle_rot {
-                source = "ammorandom";
-                weapon = QCLASS(Launcher_Hornet);
-            };
-        };
-
-        class Turrets: Turrets {
-            class MainTurret: MainTurret {
-                weapons[] = {QCLASS(Launcher_Hornet)};
-            };
-            class CargoTurret_01: CargoTurret_01 {};
-            class CargoTurret_02: CargoTurret_02 {};
-            class CargoTurret_03: CargoTurret_03 {};
-            class CargoTurret_04: CargoTurret_04 {};
-            class CargoTurret_05: CargoTurret_05 {};
-        };
-    };
-
-    class CLASS(Hornet_AT_Carnage): O_LSV_02_AT_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_AT);
-
-        displayName = "06: Hornet Strike Vehicle (AT, Carnage)";
-        crew = QCLASS(cloneCommando_unit);
-        typicalCargo[] = {QCLASS(cloneCommando_unit)};
-        side = BLUFOR;
-
-        weapons[] = {QCLASS(Horn_Carnage)};
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Body_Carnage_co.paa),
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-            "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
-            QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-            QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
-        };
-        textureList[] = {"Carnage", 1};
-        class TextureSources {
-            class Carnage {
+            class Carnage: KeeliCompany {
                 displayName = "Carnage";
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Body_Carnage_co.paa),
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa",
-                    "\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa",
+                    QPATHTOF(land\hornet\data\textures\carnage\Body_Carnage_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa),
                     QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
                     QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
                 };
             };
-        };
-
-        INVENTORY_VEHICLE_RECON;
-
-        class AnimationSources: AnimationSources {
-            class VoronaMuzzle_reload {
-                source = "reload";
-                weapon = QCLASS(Launcher_Hornet);
+            class Harry: KeeliCompany {
+                displayName = "Harry";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\harry\Harry_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\harry\Harry_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\harry\Harry_Interior_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                };
             };
-            class VoronaMuzzle_reloadMagazine {
-                source = "reloadMagazine";
-                weapon = QCLASS(Launcher_Hornet);
+            class Swoop: KeeliCompany {
+                displayName = "Swoop";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Interior_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                };
             };
-            class VoronaMuzzle_revolving {
-                source = "revolving";
-                weapon = QCLASS(Launcher_Hornet);
-            };
-            class VoronaMuzzle_rot {
-                source = "ammorandom";
-                weapon = QCLASS(Launcher_Hornet);
-            };
-        };
-
-        class Turrets: Turrets {
-            class MainTurret: MainTurret {
-                weapons[] = {QCLASS(Launcher_Hornet)};
-            };
-            class CargoTurret_01: CargoTurret_01 {};
-            class CargoTurret_02: CargoTurret_02 {};
-            class CargoTurret_03: CargoTurret_03 {};
-            class CargoTurret_04: CargoTurret_04 {};
-            class CargoTurret_05: CargoTurret_05 {};
-        };
-    };
-
-    class CLASS(Hornet_AT_Ceremonial): O_LSV_02_AT_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_AT);
-
-        displayName = "09: Hornet Strike Vehicle (AT, Ceremonial)";
-        crew = QCLASS(Unit_Phase2_Ceremonial_CT);
-        typicalCargo[] = {QCLASS(Unit_Phase2_Ceremonial_CT)};
-        side = BLUFOR;
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\KC_Hornet_Body_CO.paa),
-            QPATHTOF(land\hornet\data\textures\KC_Hornet_Wheels_CO.paa),
-            QPATHTOF(land\hornet\data\textures\KC_Hornet_Interior_CO.paa),
-            QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-            QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
-        };
-        textureList[] = {"Ceremonial", 1};
-        class TextureSources {
-            class Ceremonial {
+            class Ceremonial: KeeliCompany {
                 displayName = "Ceremonial";
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\KC_Hornet_Body_CO.paa),
-                    QPATHTOF(land\hornet\data\textures\KC_Hornet_Wheels_CO.paa),
-                    QPATHTOF(land\hornet\data\textures\KC_Hornet_Interior_CO.paa),
+                    QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Body_CO.paa),
+                    QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Wheels_CO.paa),
+                    QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Interior_CO.paa),
                     QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
                     QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
                 };
+            };
+            class Turtle: KeeliCompany {
+                displayName = "Turtle";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\trutle\Turtle_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
+                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                };
+            };
+        };
+
+        class UserActions {
+
+            class HornCarnage {
+                displayName = "Play Horn [Carnage]";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Carnage' and {ace_player == currentPilot this});
+                statement = QUOTE([ARR_2(this,QQCLASS(Sound_Horn_Carnage))] call FUNC(playHorn));
+            };
+
+            class HornHarry: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
+                statement = QUOTE([ARR_2(this,QQCLASS(Sound_Horn_Harry))] call FUNC(playHorn));
+            };
+
+            class HornSwoop: HornCarnage {
+                displayName = "<t color='#4f7ed6'> Play Horn [Swoop] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Swoop' and {ace_player == currentPilot this});
+                statement = QUOTE([ARR_2(this,QQCLASS(Sound_Horn_Swoop))] call FUNC(playHorn));
             };
         };
 
@@ -559,223 +503,5 @@ class CfgVehicles {
             class CargoTurret_04: CargoTurret_04 {};
             class CargoTurret_05: CargoTurret_05 {};
         };
-    };
-
-    class CLASS(Hornet_Unarmed_Harry): O_LSV_02_unarmed_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
-
-        displayName = "10: Hornet Strike Vehicle (Harry, Unarmed)";
-        crew = QCLASS(Unit_ARC_CT);
-        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
-        side = BLUFOR;
-
-        weapons[] = {QCLASS(Horn_Harry)};
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
-            QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
-            QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa)
-        };
-        textureList[] = {"Harry", 1};
-        class TextureSources {
-            class Harry {
-                displayName = "Harry";
-                textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa)
-                };
-            };
-        };
-
-        INVENTORY_VEHICLE_RECON;
-    };
-
-    class CLASS(Hornet_MG_Harry): O_LSV_02_armed_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
-
-        displayName = "11: Hornet Strike Vehicle (Harry, MG)";
-        crew = QCLASS(Unit_ARC_CT);
-        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
-        side = BLUFOR;
-
-        weapons[] = {QCLASS(Horn_Harry)};
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
-            QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
-            QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa)
-        };
-        textureList[] = {"Harry", 1};
-        class TextureSources {
-            class Harry {
-                displayName = "Harry";
-                textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa)
-                };
-            };
-        };
-
-        INVENTORY_VEHICLE_RECON;
-    };
-
-    class CLASS(Hornet_AT_Harry): O_LSV_02_AT_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
-
-        displayName = "12: Hornet Strike Vehicle (Harry, AT)";
-        crew = QCLASS(Unit_ARC_CT);
-        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
-        side = BLUFOR;
-
-        weapons[] = {QCLASS(Horn_Harry)};
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
-            QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
-            QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa),
-            QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-            QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
-        };
-        textureList[] = {"Harry", 1};
-        class TextureSources {
-            class Harry {
-                displayName = "Harry";
-                textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Harry_Body_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Harry_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Harry_Interior_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
-                };
-            };
-        };
-
-        INVENTORY_VEHICLE_RECON;
-    };
-
-    class CLASS(Hornet_Unarmed_Swoop): O_LSV_02_unarmed_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
-
-        displayName = "13: Hornet Strike Vehicle (Swoop, Unarmed)";
-        crew = QCLASS(Unit_ARC_CT);
-        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
-        side = BLUFOR;
-
-        weapons[] = {QCLASS(Horn_Swoop)};
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
-            QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
-            QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa)
-        };
-        textureList[] = {"Swoop", 1};
-        class TextureSources {
-            class Swoop {
-                displayName = "Swoop";
-                textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa)
-                };
-            };
-        };
-
-        INVENTORY_VEHICLE_RECON;
-    };
-
-    class CLASS(Hornet_MG_Swoop): O_LSV_02_armed_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
-
-        displayName = "14: Hornet Strike Vehicle (Swoop, MG)";
-        crew = QCLASS(Unit_ARC_CT);
-        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
-        side = BLUFOR;
-
-        weapons[] = {QCLASS(Horn_Swoop)};
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
-            QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
-            QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa)
-        };
-        textureList[] = {"Swoop", 1};
-        class TextureSources {
-            class Swoop {
-                displayName = "Swoop";
-                textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa),
-                };
-            };
-        };
-
-        INVENTORY_VEHICLE_RECON;
-    };
-
-    class CLASS(Hornet_AT_Swoop): O_LSV_02_AT_F {
-        SCOPE_HIDDEN;
-        author = AUTHOR;
-
-        faction = QFACTION(KC);
-        editorSubcategory = QEDSUBCAT(Cars);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Hornet_Unarmed);
-
-        displayName = "15: Hornet Strike Vehicle (Swoop, AT)";
-        crew = QCLASS(Unit_ARC_CT);
-        typicalCargo[] = {QCLASS(Unit_ARC_CT)};
-        side = BLUFOR;
-
-        weapons[] = {QCLASS(Horn_Swoop)};
-
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
-            QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
-            QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa),
-            QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-            QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
-        };
-        textureList[] = {"Swoop", 1};
-        class TextureSources {
-            class Swoop {
-                displayName = "Swoop";
-                textures[] = {
-                    QPATHTOF(land\hornet\data\textures\Swoop_Body_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Swoop_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Swoop_Interior_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
-                };
-            };
-        };
-
-        INVENTORY_VEHICLE_RECON;
     };
 };

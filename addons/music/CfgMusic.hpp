@@ -200,6 +200,10 @@ class CfgMusic {
     MUSIC(EPF_General_Music,"Generals Theme Music",242,Other);
     MUSIC(EPF_General_Speech,"Generals Theme Music",243,Other);
     MUSIC(Ryloth_Fall,"The Fall of Ryloth",224,Other);
+    MUSIC(Oogway_Ascends,"Oogway Ascends",123,Other);
+    MUSIC(Admiral_Mannerheim_Theme,"Admiral Mannerheim Theme",152,Other);
+    MUSIC(RedSunintheSky,"Red Sun in the Sky",238,Other);
+    MUSIC(mw4_theme,"MW4 Theme",258,Other);
 
     // HellDivers 2
     MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);
@@ -211,6 +215,15 @@ class CfgMusic {
     MUSIC(PZ_Overrun,"Overrun",248,VideoGames);
     MUSIC(PZ_The_Horde,"The Horde",119,VideoGames);
     MUSIC(PZ_Desperate_Escape,"The Horde",109,VideoGames);
+
+    // Beyond All Reason
+    MUSIC(Defy_the_Odds,"Defy the Odds",171,VideoGames);
+    MUSIC(Surfacefall,"Surfacefall",211,VideoGames);
+    MUSIC(Under_Empty_Skies,"Under Empty Skies",194,VideoGames);
+    MUSIC(Avenge,"Avenge",159,VideoGames);
+    MUSIC(Build_The_Wall,"Build The Wall",123,VideoGames);
+    MUSIC(Awakened_Hive,"Awakened Hive",153,VideoGames);
+    MUSIC(fooBAR_Menu_Version,"fooBAR Menu Version",171,VideoGames);
 
 
 
