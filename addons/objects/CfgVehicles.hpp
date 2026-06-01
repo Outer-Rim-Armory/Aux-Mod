@@ -271,6 +271,43 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(CrateSpawner): 3AS_T_Screen {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(Utility);
+        hiddenSelectionsTextures[]=
+        {
+            QPATHTOF(data\terminals\CrateTerminal_screen_CO.paa)
+        };
+
+        displayName = "Crate Terminal";
+        class UserActions {
+            VICSPAWNLOG(CLASS(Resupply_SquadAmmo),Ammo Crate (Squad))
+            VICSPAWNLOG(CLASS(Resupply_PlatoonAmmo),Ammo Crate (Platoon))
+            VICSPAWNLOG(CLASS(Resupply_SquadAmmo_Heavy),Heavy Ammo Crate (Squad))
+            VICSPAWNLOG(CLASS(Resupply_PlatoonAmmo_Heavy),Heavy Ammo Crate (Platoon))
+            VICSPAWNLOG(CLASS(Resupply_SquadMedical),Medical Crate (Squad))
+            VICSPAWNLOG(CLASS(Resupply_PlatoonMedical),Medical Crate (Platoon))
+            VICSPAWNLOG(CLASS(Resupply_DisposableLaunchers),RPS-6 Launcher Crate)
+            VICSPAWNLOG(CLASS(Resupply_PlatoonAmmo_Commando),Carnage Ammo Crate)
+            VICSPAWNLOG(CLASS(Resupply_Rockets),Rocket Ammo Crate)
+            VICSPAWNLOG(CLASS(Resupply_Raptor_PlatoonAmmo),Raptor Ammo Crate (Platoon))
+            VICSPAWNLOG(CLASS(Resupply_Raptor_Drone),Raptor Drone Crate)
+            VICSPAWNLOG(CLASS(Resupply_Misc),Misc Crate)
+            VICSPAWNLOG(CLASS(Resupply_Sapper),Sapper Crate)
+            VICSPAWNLOG(CLASS(Resupply_Spartan),Spartan Crate)
+            VICSPAWNLOG(CLASS(Mortar_Crate),Mortar Crate)
+            VICSPAWNLOG(CLASS(Resupply_BigCrate_Squad),Big Squad Crate)
+            VICSPAWNLOG(CLASS(Resupply_BigCrate_Platoon),Big Platoon Crate)
+            VICSPAWNLOG(CLASS(Resupply_BigCrate_Carnage),Big Carnage Crate)
+            VICSPAWNLOG(CLASS(Resupply_BigCrate_Spartan),Big Spartan Crate)
+            VICSPAWNLOG(CLASS(Resupply_BigCrate_Raptor),Big Raptor Crate)
+            VICSPAWNLOG(CLASS(Resupply_BigCrate_Levi),Big Leviathon + Misc Crate)
+        };
+    };
+
     class 3as_Terminal_1_Prop;
     class CLASS(SideSwapper): 3as_Terminal_1_Prop {
         SCOPE_PUBLIC;

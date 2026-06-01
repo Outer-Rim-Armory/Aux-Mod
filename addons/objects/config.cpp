@@ -25,6 +25,7 @@ class CfgPatches {
             QCLASS(Utility_FullHeal),
             QCLASS(AIRSpawner),
             QCLASS(LandSpawner),
+            QCLASS(CrateSpawner),
             QCLASS(SideSwapper)
         };
         weapons[] = {};

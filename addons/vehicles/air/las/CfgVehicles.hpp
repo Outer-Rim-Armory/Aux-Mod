@@ -149,7 +149,7 @@ class CfgVehicles {
             ace_missileguidance_usePilotCameraForTargeting = TRUE;
         }; */
 
-class pilotCamera
+        class pilotCamera
 		{
 			class OpticsIn
 			{
@@ -285,18 +285,6 @@ class pilotCamera
 						angleRangeHorizontal = 270;
 						angleRangeVertical = 270;
 					};
-                    class ManSensorComponent: SensorTemplateMan
-                    {
-						class GroundTarget
-						{
-							minRange=1000;
-							maxRange=1000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-                        angleRangeHorizontal = 360;
-						angleRangeVertical = 360;
-                    };
                     class DataLinkSensorComponent: SensorTemplateDataLink
                     {
 						class AirTarget
@@ -359,7 +347,9 @@ class pilotCamera
 			{
 			};
 		};
-
+        class ACE_SelfActions: ACE_SelfActions {
+            HUD_CHANGER;
+        };
     };
 
     class CLASS(LAS_Transport): CLASS(LAS_Base) {
