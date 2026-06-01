@@ -304,7 +304,7 @@ class CfgVehicles {
             VICSPAWNLOG(CLASS(Resupply_BigCrate_Carnage),Big Carnage Crate)
             VICSPAWNLOG(CLASS(Resupply_BigCrate_Spartan),Big Spartan Crate)
             VICSPAWNLOG(CLASS(Resupply_BigCrate_Raptor),Big Raptor Crate)
-            VICSPAWNLOG(CLASS(Resupply_BigCrate_Levi),Big Leviathon + Misc Crate)
+            VICSPAWNLOG(CLASS(Resupply_BigCrate_Levi),Big Leviathan + Misc Crate)
         };
     };
 
