@@ -557,7 +557,7 @@ class CfgVehicles {
     };
 
     class CLASS(Resupply_BigCrate_Levi) : CLASS(Resupply_BigCrate_Squad) {
-        displayName = "B6: Big Leviathon Crate (and some misc)";
+        displayName = "B6: Big Leviathan Crate (and some misc)";
 
         class ace_cargo {
             class cargo{
