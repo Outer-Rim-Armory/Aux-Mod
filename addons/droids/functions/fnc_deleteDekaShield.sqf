@@ -26,5 +26,9 @@ switch (true) do {
     case (_vehicle isKindOf "RD501_droideka_mk2_base"): {
         deleteVehicle (_vehicle getVariable ["rd501_dekashield_attached", objNull]);
     };
+    case (_vehicle isKindOf "LS_droid_droideka"): {
+        _vehicle call ls_droids_fnc_deactivateShield;
+        _vehicle setVariable ["ls_droids_shieldDisabledUntil", CBA_missionTime + 60, true];
+    };
     default {};
 };

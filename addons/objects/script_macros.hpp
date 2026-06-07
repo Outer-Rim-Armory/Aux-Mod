@@ -74,3 +74,13 @@ statement = QUOTE([ARR_2(this,'classname')] call FUNC(vicSpawner)); \
 onlyforplayer = "false"; \
 hideOnUse = 0; \
 };
+#define TERMINALSWAP(classname,dispn,colour) class DOUBLES(swap,classname) { \
+displayName = QUOTE(<t color='colour'> Swap to dispn </t>); \
+    position = "pos cano"; \
+    radius = 15; \
+    prority = 20; \
+    condition = "True"; \
+    statement = QUOTE([ARR_2(this,'classname')] call FUNC(terminalswap)); \
+    onlyforplayer = "false"; \
+    hideOnUse = 0; \
+};

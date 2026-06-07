@@ -176,7 +176,10 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Utility);
 
         displayName = "Aircraft Terminal";
+        KCSwapTerm =1;
+
         class Useractions{
+            TERMINALSWAP(CLASS(SwapTerm),Swap Terminall,#FFFFFF)
             // helicopter heliocopter *helicopter sounds*
             VICSPAWNHELI(CLASS(LAATi_MK1),LAAT/MK1)
             VICSPAWNHELI(CLASS(LAATi_MK2),LAAT/MK2)
@@ -210,6 +213,7 @@ class CfgVehicles {
 
         displayName = "Ground Vehicle Terminal";
         class Useractions{
+            TERMINALSWAP(CLASS(SwapTerm),Swap Terminall,#FFFFFF)
             // inf VICSPAWNINF
             VICSPAWNINF(CLASS(Bantha_Unarmed),Bantha (Unarmed))
             VICSPAWNINF(CLASS(Bantha_Assault),Bantha (Assault))
@@ -257,6 +261,7 @@ class CfgVehicles {
             // raptor VICSPAWNRAP
             VICSPAWNRAP(CLASS(BARC),BARC Speeder)
             VICSPAWNRAP(CLASS(BARC_Sidecar),BARC Speeder Sidecar Variant)
+            // Boats
 
             //
         };
@@ -275,6 +280,7 @@ class CfgVehicles {
 
         displayName = "Crate Terminal";
         class UserActions {
+            TERMINALSWAP(CLASS(SwapTerm),Swap Terminall,#FFFFFF)
             VICSPAWNLOG(CLASS(Resupply_SquadAmmo),Ammo Crate (Squad))
             VICSPAWNLOG(CLASS(Resupply_PlatoonAmmo),Ammo Crate (Platoon))
             VICSPAWNLOG(CLASS(Resupply_SquadAmmo_Heavy),Heavy Ammo Crate (Squad))
@@ -296,6 +302,28 @@ class CfgVehicles {
             VICSPAWNLOG(CLASS(Resupply_BigCrate_Spartan),Big Spartan Crate)
             VICSPAWNLOG(CLASS(Resupply_BigCrate_Raptor),Big Raptor Crate)
             VICSPAWNLOG(CLASS(Resupply_BigCrate_Levi),Big Leviathan + Misc Crate)
+        };
+    };
+
+    class CLASS(SwapTerm): 3AS_T_Screen {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(Utility);
+        hiddenSelectionsTextures[]=
+        {
+            QPATHTOF(data\terminals\SwapTerminal_screen_CO.paa)
+        };
+
+        displayName = "Swap Terminal";
+        class UserActions {
+            TERMINALSWAP(CLASS(AIRSpawner),[KC] Air Terminal,#244263)
+            TERMINALSWAP(CLASS(LandSpawner),[KC] Land Terminal,#A2675A)
+            TERMINALSWAP(CLASS(CrateSpawner),[KC] Crate Terminal,#00C9A8)
+            TERMINALSWAP(JA_104th_Vehicle_spawner_Droid_Air,[104th] Air Terminal,#646464)
+            TERMINALSWAP(JA_104th_Vehicle_spawner_Droid_Ground,[104th] Ground Terminal,#646464)
+
         };
     };
 

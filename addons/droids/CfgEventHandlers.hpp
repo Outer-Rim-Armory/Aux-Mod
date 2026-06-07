@@ -95,4 +95,9 @@ class Extended_Killed_EventHandlers {
             killed = QUOTE(_this#0 call FUNC(deleteDekaShield));
         };
     };
+    class LS_droid_droideka {
+        class GVAR(deleteShield) {
+            killed = QUOTE(_this#0 call FUNC(deleteDekaShield));
+        };
+    };
 };

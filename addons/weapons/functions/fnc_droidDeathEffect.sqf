@@ -31,7 +31,8 @@ TRACE_2("fnc_droidDeathEffect",_units,_killer);
 if (count _units isEqualTo 0) exitWith {};
 
 {
-    _x setDamage [1, true, _killer];
+    if !(_x isKindOf "LS_droid_Droideka") then {
+        _x setDamage [1, true, _killer];
     playSound3D [
         selectRandom getArray (configFile >> "CfgJLTSDeathSounds" >> "DeathDroid" >> "emp"),
         objNull,
@@ -41,5 +42,6 @@ if (count _units isEqualTo 0) exitWith {};
         1,
         75
     ];
+    };
 } forEach _units;
 nil;

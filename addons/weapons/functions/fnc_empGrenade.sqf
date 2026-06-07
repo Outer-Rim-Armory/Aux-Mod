@@ -61,7 +61,7 @@ _nearbyPlayers = _nearbyPlayers select {
 _nearbyUnits = [_positionAGL, _radiusDroid] call EFUNC(core,getNearbyUnits);
 _nearbyVehicles = _positionAGL nearEntities [["Air", "LandVehicle"], _radiusVehicle];
 
-_nearbyDroidekas = _positionAGL nearEntities [["3AS_Deka_Static_Base", "RD501_droideka_mk2_base"], _radiusDroideka];
+_nearbyDroidekas = _positionAGL nearEntities [["3AS_Deka_Static_Base", "RD501_droideka_mk2_base","LS_droid_Droideka"], _radiusDroideka];
 
 TRACE_5("EMP Grenade",_positionAGL,_nearbyUnits,_nearbyVehicles,_nearbyDroidekas,_droidekaShields);
 
