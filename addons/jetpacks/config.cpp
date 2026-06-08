@@ -12,7 +12,8 @@ class CfgPatches {
             "ace_parachute"
         };
         units[] = {
-            QCLASS(resupply_jetpackFuel)
+            QCLASS(Resupply_JetpackFuel),
+            QCLASS(Resupply_Fuel)
         };
         weapons[] = {
             QGVAR(fuelCan_empty)

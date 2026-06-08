@@ -296,6 +296,7 @@ class CfgVehicles {
             VICSPAWNLOG(CLASS(Resupply_Sapper),Sapper Crate)
             VICSPAWNLOG(CLASS(Resupply_Spartan),Spartan Crate)
             VICSPAWNLOG(CLASS(Mortar_Crate),Mortar Crate)
+            VICSPAWNLOG(CLASS(Resupply_Fuel),Fuel Barrel)
             VICSPAWNLOG(CLASS(Resupply_BigCrate_Squad),Big Squad Crate)
             VICSPAWNLOG(CLASS(Resupply_BigCrate_Platoon),Big Platoon Crate)
             VICSPAWNLOG(CLASS(Resupply_BigCrate_Carnage),Big Carnage Crate)
@@ -377,6 +378,34 @@ class CfgVehicles {
 				onlyforplayer = "false";
 				hideOnUse = 0;
             };
+        };
+    };
+
+    class k_forklift_droid;
+    class CLASS(Forklift_Droid): k_forklift_droid {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        displayName = "Forklift Droid";
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(Items);
+        hiddenSelections[] = {"body"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\forklift\Body_co.paa)};
+    };
+
+    class k_personal_locker;
+    class CLASS(Personal_Locker): k_personal_locker {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+
+        displayName = "Personal Locker";
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(Items);
+        hiddenSelections[] = {"camo1","screen","pictures"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\lockers\Body_co.paa),
+            QPATHTOF(data\lockers\Screen_co.paa),
+            QPATHTOF(data\lockers\Pictures_co.paa)
         };
     };
 };

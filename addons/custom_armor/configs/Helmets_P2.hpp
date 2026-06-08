@@ -49,7 +49,7 @@ P2_HELMET_VISOR_CUSTOM(Harry,Bacta);
 //P2_HELMET_CUSTOM(Hazard);
 P2_HELMET_CUSTOM(Henkie);
 //P2_HELMET_CUSTOM(Jackal);
-//P2_HELMET_CUSTOM(Jaws);
+P2_HELMET_CUSTOM(Jaws);
 
 //class CLASS(Helmet_Phase2_Jaws_CamoBrown): CLASS(Helmet_Phase2_Jaws) {
 //    displayName = "[KC] INF P2 Helm ('Jaws') - Brown Camo";

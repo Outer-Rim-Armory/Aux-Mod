@@ -22,6 +22,9 @@ class Extended_Init_EventHandlers {
             init = QUOTE(_this call FUNC(addRefuelAction));
         };
     };
+    class CLASS(Resupply_Fuel):CLASS(Resupply_JetpackFuel) {};
+    class CLASS(Gammoth_Refuel): CLASS(Resupply_JetpackFuel) {};
+    class CLASS(Bantha_MSV): CLASS(Resupply_JetpackFuel) {};
 };
 
 class Extended_GetOutMan_EventHandlers {

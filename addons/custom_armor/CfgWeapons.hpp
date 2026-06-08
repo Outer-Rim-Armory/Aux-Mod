@@ -254,6 +254,7 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
     };
     class CLASS(cloneNvg_phase2_officerVisor);
+    class CLASS(cloneNvg_phase1_officerVisor);
     class CLASS(cloneNvg_phase2_officerVisor_Keeli): CLASS(cloneNvg_phase2_officerVisor) {
         displayName = "[KC] Clone P2 NV/TI Officer Visor ('Keeli')";
         hiddenSelectionsTextures[] = {
@@ -285,6 +286,18 @@ class CfgWeapons {
         };
 
         GVAR(isCustom) = TRUE;
+    };
+    class CLASS(cloneNvg_phase1_officerVisor_Destiny): CLASS(cloneNvg_phase1_officerVisor) {
+        displayName = "[KC] Clone P2 NV/TI Visor ('Destiny')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Destiny_camo1_co.paa)
+        };
+    };
+    class CLASS(cloneNvg_phase2_officerVisor_Destiny): CLASS(cloneNvg_phase2_officerVisor) {
+        displayName = "[KC] Clone P2 NV/TI Visor ('Destiny')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Destiny_camo1_co.paa)
+        };
     };
     class CLASS(cloneNvg_commandoVisor);
     class CLASS(Moskoni_NVG): CLASS(cloneNvg_commandoVisor) {

@@ -30,6 +30,8 @@ GROUND_HOLDER(Helmet_Phase1_Keeli_CamoBrown,"INF P1 Helm ('Keeli') - Brown Camo"
 GROUND_HOLDER(Helmet_Phase1_KeeliCrimson_CamoBrown,"INF P1 Helm ('Keeli') - Brown Camo [Crimson Visor]");
 GROUND_HOLDER(Helmet_Phase1_Keeli_CamoGrey,"INF P1 Helm ('Keeli') - Grey Camo");
 GROUND_HOLDER(Helmet_Phase1_KeeliCrimson_CamoGrey,"INF P1 Helm ('Keeli') - Grey Camo [Crimson Visor]");
+GROUND_HOLDER(Helmet_Phase1_Keeli_Worn,"INF P1 Helm ('Keeli') - Worn");
+GROUND_HOLDER(Helmet_Phase1_KeeliCrimson_Worn,"INF P1 Helm ('Keeli') - Worn [Crimson Visor]");
 GROUND_HOLDER(Helmet_Phase1_Kujo,"INF P1 Helm ('Kujo')");
 GROUND_HOLDER(Helmet_Phase1_Lou,"INF P1 Helm ('Lou')");
 GROUND_HOLDER(Helmet_Phase1_LouPlasma,"INF P1 Helm ('Lou') [Plasma Visor]");

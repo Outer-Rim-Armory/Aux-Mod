@@ -9,7 +9,8 @@ class CfgPatches {
             QCLASS(core),
             "ls_flags",
             "3as_GNK_Prop",
-            "3AS_Prop_Droids"
+            "3AS_Prop_Droids",
+            "442_misc_forklift"
         };
         units[] = {
             QCLASS(Flag_KC_Pole),
@@ -27,7 +28,9 @@ class CfgPatches {
             QCLASS(LandSpawner),
             QCLASS(CrateSpawner),
             QCLASS(SwapTerm),
-            QCLASS(SideSwapper)
+            QCLASS(SideSwapper),
+            QCLASS(Forklift_Droid),
+            QCLASS(Personal_Locker)
         };
         weapons[] = {};
         VERSION_CONFIG;

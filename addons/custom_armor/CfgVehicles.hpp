@@ -29,16 +29,15 @@ class CfgVehicles {
     };
 
     class CLASS(Backpack_Radio_Base);
-    class CLASS(cloneBackpack_radioHeavy_Jaws): CLASS(Backpack_Radio_Base) {
-        displayName = "[KC] INF Radio Backpack ('Jaws')";
+    class CLASS(cloneBackpack_radio_Destiny): CLASS(Backpack_Radio_Base) {
+        displayName = "[KC] INF Radio Backpack ('Destiny')";
 
         model = "\ls\core\addons\characters_clone_legacy\backpacks\medium\ls_gar_mediumRadio_backpack.p3d";
         hiddenselections[] = {"backpack", "radio", "screen", "pouches"};
         hiddenselectionstextures[] = {
-            QPATHTOF(data\backpacks\Jaws\Backpack_co.paa),
+            QPATHTOF(data\backpacks\Destiny\Backpack_co.paa),
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
-            QPATHTOF(data\backpacks\Jaws\Screen_co.paa),
-            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa"
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
         };
     };
 

@@ -717,8 +717,8 @@ class CfgVehicles {
 			"RD501_Vehicles\textures\republic_boats\rd501_catfish_interior_co.paa",
 			"\optre_vehicles\catfish\data\optre_catfish_seats_co.paa",
 			"\optre_vehicles\catfish\data\optre_catfish_windscreen_ca.paa",
-			"\optre_vehicles\warthog\data\turrets\m12_turret_co.paa",
-			"\optre_vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\m12_turret_night_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
 			"\optre_vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
     };
@@ -884,7 +884,7 @@ class CfgVehicles {
 			"RD501_Vehicles\textures\republic_boats\rd501_catfish_interior_co.paa",
 			"\optre_vehicles\catfish\data\optre_catfish_seats_co.paa",
 			"\optre_vehicles\catfish\data\optre_catfish_windscreen_ca.paa",
-			"\optre_vehicles\warthog\data\turrets\m12_turret_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\m12_turret_night_co.paa",
 			"\optre_vehicles\warthog\data\turrets\m79_turret_co.paa"
 		};
 
@@ -1056,8 +1056,8 @@ class CfgVehicles {
 			"RD501_Vehicles\textures\republic_boats\rd501_catfish_interior_co.paa",
 			"\optre_vehicles\catfish\data\optre_catfish_seats_co.paa",
 			"\optre_vehicles\catfish\data\optre_catfish_windscreen_ca.paa",
-			"\optre_vehicles\warthog\data\turrets\m68_turret_co.paa",
-			"\optre_vehicles\warthog\data\turrets\m12_turret_co.paa"
+			"\OPTRE_Vehicles\Warthog\data\night\m68_turret_night_co.paa",
+			"\OPTRE_Vehicles\Warthog\data\night\m12_turret_night_co.paa"
 		};
     };
 };

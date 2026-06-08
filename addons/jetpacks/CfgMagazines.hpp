@@ -8,7 +8,7 @@ class CfgMagazines {
         descriptionShort = "A partially full fuel can.<br/>Can carry 4 liters of fuel.";
 
         count = 400; // Amount of fuel that can be carried
-        mass = 60;
+        mass = 10;
 
         GVAR(isFuelCan) = TRUE;
         GVAR(fuelCanItem) = QGVAR(fuelCan_empty);

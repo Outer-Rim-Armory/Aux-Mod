@@ -42,7 +42,7 @@ class CfgVehicles {
     };
 
     class Land_WaterTank_F;
-    class CLASS(resupply_jetpackFuel): Land_WaterTank_F {
+    class CLASS(Resupply_JetpackFuel): Land_WaterTank_F {
         SCOPE_PUBLIC;
         author = AUTHOR;
         displayName = "16: Jetpack Fuel Tank";
@@ -59,6 +59,33 @@ class CfgVehicles {
         ace_cargo_canLoad = TRUE;
         ace_cargo_size = 2;
         ace_cargo_noRename = TRUE;
+
+        // For if/when the property is renamed
+        ace_field_rations_waterSupply = 0;
+        acex_field_rations_waterSupply = 0;
+    };
+
+    class land_3as_ExplodeBarrel_3;
+    class CLASS(Resupply_Fuel): land_3as_ExplodeBarrel_3 {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+        displayName = "17: Fuel Barrel";
+
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(Resupply);
+        editorPreview = "\3as\3as_props\Crates\EditorPreviews\land_3as_ExplodeBarrel_3.jpg";
+
+        model = "3as\3as_props\crates\models\3as_ExplodeBarrel_3.p3d";
+        hiddenSelections[] = {};
+        hiddenSelectionsMaterials[] = {};
+        hiddenSelectionsTextures[] = {};
+
+        ace_cargo_canLoad = TRUE;
+        ace_cargo_size = 2;
+        ace_cargo_noRename = TRUE;
+        ace_refuel_fuelCapacity = 750;
+        ace_refuel_fuelCargo = 10000;
+        ace_refuel_flowRate = 10;
 
         // For if/when the property is renamed
         ace_field_rations_waterSupply = 0;

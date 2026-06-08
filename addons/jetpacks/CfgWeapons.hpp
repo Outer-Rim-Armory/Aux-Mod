@@ -16,7 +16,7 @@ class CfgWeapons {
         model = "\A3\Structures_F\Items\Vessels\CanisterFuel_F.p3d";
 
         class ItemInfo: CLASS(ItemCore_ItemInfo) {
-            mass = 60;
+            mass = 10;
         };
     };
 };

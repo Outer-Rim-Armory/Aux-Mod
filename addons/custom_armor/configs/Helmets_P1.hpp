@@ -24,7 +24,7 @@ P1_HELMET_VISOR_CUSTOM(Hagrid,Plasma);
 P1_HELMET_VISOR_CUSTOM(Harry,Bacta);
 //P1_HELMET_CUSTOM(Hazard);
 P1_HELMET_CUSTOM(Henkie);
-//P1_HELMET_CUSTOM(Jaws);
+P1_HELMET_CUSTOM(Jaws);
 P1_HELMET_VISOR_CUSTOM(Jester,Bacta);
 P1_HELMET_CUSTOM(Jimsbo);
 P1_HELMET_VISOR_CUSTOM(Joe,Crimson);
@@ -92,7 +92,7 @@ class CLASS(Helmet_Phase1_Keeli_Worn): CLASS(Helmet_Phase1_Keeli) {
     displayName = "[KC] INF P1 Helm ('Keeli') - Worn";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1\camo\worn\Keeli_camo1_co.paa),
-        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
     };
 
@@ -107,7 +107,7 @@ class CLASS(Helmet_Phase1_KeeliCrimson_Worn): CLASS(Helmet_Phase1_Keeli_Worn) {
     SCOPE_HIDDEN;
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1\camo\worn\Keeli_camo1_co.paa),
-        QPATHTOF(data\visors\Crimson_camo2_co.paa)
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
     };
     hiddenSelectionsMaterials[] = {
         "",
