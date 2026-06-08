@@ -14,8 +14,7 @@ class CfgPatches {
         units[] = {
             QCLASS(Hornet_Unarmed),
             QCLASS(Hornet_MG),
-            QCLASS(Hornet_AT),
-            QCLASS(Hornet_Armed)
+            QCLASS(Hornet_AT)
         };
         weapons[] = {};
         VERSION_CONFIG;
