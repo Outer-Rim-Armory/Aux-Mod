@@ -288,7 +288,7 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
     };
     class CLASS(cloneNvg_phase1_officerVisor_Destiny): CLASS(cloneNvg_phase1_officerVisor) {
-        displayName = "[KC] Clone P2 NV/TI Visor ('Destiny')";
+        displayName = "[KC] Clone P1 NV/TI Visor ('Destiny')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\nvgs\Destiny_camo1_co.paa)
         };

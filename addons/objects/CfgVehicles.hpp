@@ -403,9 +403,9 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Items);
         hiddenSelections[] = {"camo1","screen","pictures"};
         hiddenSelectionsTextures[] = {
-            QPATHTOF(data\lockers\Body_co.paa),
-            QPATHTOF(data\lockers\Screen_co.paa),
-            QPATHTOF(data\lockers\Pictures_co.paa)
+            QPATHTOF(data\locker\Body_co.paa),
+            QPATHTOF(data\locker\Screen_co.paa),
+            QPATHTOF(data\locker\Pictures_co.paa)
         };
     };
 };

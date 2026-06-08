@@ -37,7 +37,7 @@ class CfgVehicles {
         hiddenselectionstextures[] = {
             QPATHTOF(data\backpacks\Destiny\Backpack_co.paa),
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
-            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
+            QPATHTOF(data\backpacks\Destiny\Screen_co.paa)
         };
     };
 
