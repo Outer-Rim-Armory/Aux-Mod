@@ -5,7 +5,7 @@ class CfgVehicles {
     class CLASS(Zillo_Base): OPTRE_M313_UNSC {
         SCOPE_PRIVATE;
         author = AUTHOR;
-        displayName = "[KC] Zillo Heavy Hauler (Base)";
+        displayName = "Zillo Heavy Hauler (Base)";
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(APCs);
         crew = QCLASS(Unit_Phase2_CT_Engineer);
@@ -74,6 +74,6 @@ class CfgVehicles {
     };
     class CLASS(Zillo): CLASS(Zillo_Base) {
         SCOPE_PUBLIC;
-        displayName = "[KC] Zillo Heavy Hauler";
+        displayName = "Zillo Heavy Hauler";
     };
 };
