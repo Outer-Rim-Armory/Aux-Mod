@@ -135,11 +135,27 @@ class CLASS(Helmet_Phase1_KeeliCrimson_Geo): CLASS(Helmet_Phase1_Keeli_Geo) {
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
+class ls_gar_phase1_hologram_helmet;
+class CLASS(Helmet_Phase1_Keeli_Hologram): ls_gar_phase1_hologram_helmet {
+    DisplayName = "[KC] INF P1 Helm ('Keeli') - Hologram";
+    model = "\ls\core\addons\characters_clone_legacy\helmets\phase1\ls_cloneHelmet_phase1_hologram.p3d";
+    hiddenSelectionsMaterials[] = {
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\hologram\camo1.rvmat",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\hologram\visor.rvmat",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\hologram\illum.rvmat"
+    };
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\camo\hologram\Keeli_camo1_ca.paa),
+        "\ls\core\addons\data\textures\hologram\blueHologram_flip_ca.paa",
+        "\ls\core\addons\data\textures\hologram\blueHologram_ca.paa"
+    };
+};
 
 P1_HELMET_CUSTOM(Kujo);
 P1_HELMET_CUSTOM(Koa);
 //P1_HELMET_VISOR_CUSTOM(Lou,Plasma);
 P1_HELMET_CUSTOM(Lacker);
+P1_HELMET_CUSTOM(Leo);
 P1_HELMET_CUSTOM(Match);
 //P1_HELMET_CUSTOM(Marge);
 P1_HELMET_CUSTOM(Maverick);

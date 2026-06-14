@@ -73,8 +73,8 @@ class CfgPatches {
             // Static
             QGVAR(command_post),
             QGVAR(mortars),
-            //boats
-            QGVAR(boat)
+            // Sea
+            QGVAR(Duna)
         };
         units[] = {};
         weapons[] = {};

@@ -47,6 +47,7 @@ class CfgEditorSubcategories {
         displayName = "Helicopters";
     };
 
+    // Sea Vehicles
     class EDSUBCAT(Boats) {
         displayName = "Boats";
     };

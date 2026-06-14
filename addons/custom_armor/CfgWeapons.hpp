@@ -91,7 +91,14 @@ class CfgWeapons {
             QPATHTOF(data\vests\officer\Keeli_Empire_camo1_co.paa),
             ""
         };
+        GVAR(isCustom) = TRUE;
+    };
 
+    class CLASS(Vest_Commander_Keeli_Hologram): CLASS(Vest_Commander_Keeli) {
+        displayName = "[KC] INF Vest ('Keeli') ('Hologram')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\officer\Keeli_Hologram_camo1_ca.paa)
+        };
         GVAR(isCustom) = TRUE;
     };
 

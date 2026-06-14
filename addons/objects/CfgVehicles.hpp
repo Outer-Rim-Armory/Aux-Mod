@@ -214,7 +214,7 @@ class CfgVehicles {
         displayName = "Ground Vehicle Terminal";
         class Useractions{
             TERMINALSWAP(CLASS(SwapTerm),Swap Terminall,#FFFFFF)
-            // inf VICSPAWNINF
+            // INF VICSPAWNINF
             VICSPAWNINF(CLASS(Bantha_Unarmed),Bantha (Unarmed))
             VICSPAWNINF(CLASS(Bantha_Assault),Bantha (Assault))
             VICSPAWNINF(CLASS(Bantha_AA),Bantha (AA))
@@ -232,7 +232,7 @@ class CfgVehicles {
             VICSPAWNINF(CLASS(Hornet_Unarmed),Hornet Unarmed)
             VICSPAWNINF(CLASS(Hornet_AT),Hornet (AT))
             VICSPAWNINF(CLASS(Hornet_MG),Hornet (MG))
-            // logistics VICSPAWNLOG
+            // Logistics VICSPAWNLOG
             VICSPAWNLOG(CLASS(Bantha_MSV),Bantha (Engineer))
             VICSPAWNLOG(CLASS(Hermitaur_class_E),Hermitaur (Engineer))
             VICSPAWNLOG(CLASS(Gammoth_Ammo),Gammoth Ammo)
@@ -241,7 +241,8 @@ class CfgVehicles {
             VICSPAWNLOG(CLASS(Gammoth_Device),Gammoth Device)
             VICSPAWNLOG(CLASS(Khezu_Unarmed),Khezu (Unarmed))
             VICSPAWNLOG(CLASS(Khezu_Armed),Khezu (Armed))
-            // reeker VICSPAWNTNK
+            VICSPAWNLOG(CLASS(Zillo),Zillo Heavy Hauler)
+            // Reeker VICSPAWNTNK
             VICSPAWNTNK(CLASS(Juggernaut),Juggernaut)
             VICSPAWNTNK(CLASS(ATTE),AT-TE)
             VICSPAWNTNK(CLASS(ATTE_Command),AT-TE (Command))
@@ -254,11 +255,11 @@ class CfgVehicles {
             VICSPAWNTNK(CLASS(UTAT),UT-AT)
             VICSPAWNTNK(CLASS(ATAP),AT-AP)
             VICSPAWNTNK(CLASS(PKV5),PK-V5 (Cannon))
-            // medical VICSPAWNMED
+            // Medical VICSPAWNMED
             VICSPAWNMED(CLASS(Hermitaur_class_M),Hermitaur (Medic))
             VICSPAWNMED(CLASS(Gammoth_Medical),Gammoth Medic)
             VICSPAWNMED(CLASS(Glavenus_Medic),Glavenus Medic)
-            // raptor VICSPAWNRAP
+            // Raptor VICSPAWNRAP
             VICSPAWNRAP(CLASS(BARC),BARC Speeder)
             VICSPAWNRAP(CLASS(BARC_Sidecar),BARC Speeder Sidecar Variant)
             // Boats
@@ -388,7 +389,7 @@ class CfgVehicles {
 
         displayName = "Forklift Droid";
         editorCategory = QEDCAT(Objects);
-        editorSubcategory = QEDSUBCAT(Items);
+        editorSubcategory = QEDSUBCAT(StaticVehicles);
         hiddenSelections[] = {"body"};
         hiddenSelectionsTextures[] = {QPATHTOF(data\forklift\Body_co.paa)};
     };
@@ -406,6 +407,35 @@ class CfgVehicles {
             QPATHTOF(data\locker\Body_co.paa),
             QPATHTOF(data\locker\Screen_co.paa),
             QPATHTOF(data\locker\Pictures_co.paa)
+        };
+    };
+
+    class ls_prop_turbotank;
+    class CLASS(TurboTank_Static): ls_prop_turbotank {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+        displayName = "[KC] HAVw A5 Juggernaut (Static)";
+        editorCategory = QEDCAT(Objects);
+        editorSubcategory = QEDSUBCAT(StaticVehicles);
+        hiddenSelections[] = {
+            "armor",
+            "axel",
+            "body",
+            "catwalk",
+            "interior1",
+            "interior2",
+            "interior3",
+            "wheel"
+        };
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\turbotank\Armor_co.paa),
+            QPATHTOF(data\turbotank\Axel_co.paa),
+            QPATHTOF(data\turbotank\Body_co.paa),
+            QPATHTOF(data\turbotank\Catwalk_co.paa),
+            QPATHTOF(data\turbotank\Interior_1_co.paa),
+            QPATHTOF(data\turbotank\Interior_2_co.paa),
+            QPATHTOF(data\turbotank\Interior_3_co.paa),
+            QPATHTOF(data\turbotank\Wheel_co.paa)
         };
     };
 };

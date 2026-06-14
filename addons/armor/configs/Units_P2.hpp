@@ -77,6 +77,25 @@ class CLASS(Unit_Phase2_CT): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_CT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+class CLASS(Unit_Phase2_CT_Engineer): CLASS(Unit_Phase2_Base) {
+    displayName = "INF 01 - Clone Trooper (Engineer)";
+    editorSubcategory = QEDSUBCAT(Crewmen);
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CT);
+
+    uniformClass = QCLASS(Uniform_CT);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\infantry\CT_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CT_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Engineer_CT), QCLASS(Vest_Engineer_CT), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Engineer_CT), QCLASS(Vest_Engineer_CT), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
 
 class CLASS(Unit_Phase2_CT_Legacy): CLASS(Unit_Phase2_Base) {
     SCOPE_HIDDEN;
@@ -885,4 +904,21 @@ class CLASS(Unit_Phase2_Crocea): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_Crocea), QCLASS(Vest_Officer_Crocea), QCLASS(cloneNvg_Phase2_officerVisor_Crocea), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     backpack = QCLASS(Backpack_Radio_Crocea);
+};
+
+class CLASS(Unit_Phase2_Hologram): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    displayName = "[KC] Hologram Trooper";
+    uniformClass = QCLASS(Hologram_Uniform);
+    hiddenSelectionsTextures[] = {
+        "\ls\core\addons\data\textures\hologram\blueHologram_ca.paa",
+        "\ls\core\addons\data\textures\hologram\blueHologram_ca.paa",
+        "\ls\core\addons\data\textures\hologram\blueHologram_flip_ca.paa"
+    };
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Hologram), QCLASS(Vest_Officer_Hologram), "", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Hologram), QCLASS(Vest_Officer_Hologram), "", "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
 };

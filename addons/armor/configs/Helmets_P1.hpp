@@ -317,3 +317,18 @@ class CLASS(Helmet_Phase1_Crocea): CLASS(Helmet_Phase1_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
     };
 };
+
+class CLASS(Helmet_Phase1_Hologram): CLASS(Helmet_Phase1_Base) {
+    SCOPE_PUBLIC;
+    DisplayName = "[KC] INF P1 Helm ('Hologram')";
+    hiddenSelectionsMaterials[] = {
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\hologram\camo1.rvmat",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\hologram\visor.rvmat",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\hologram\illum.rvmat"
+    };
+    hiddenSelectionsTextures[] = {
+        "\ls\core\addons\data\textures\hologram\blueHologram_ca.paa",
+        "\ls\core\addons\data\textures\hologram\blueHologram_ca.paa",
+        "\ls\core\addons\data\textures\hologram\blueHologram_ca.paa"
+    };
+};

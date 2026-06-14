@@ -73,10 +73,6 @@ workshop = [
     "3683168022", # YouTube Player Music
     "2917437034", # JLTS Extended Arsenal v0.2
     "2585608055", # Black Legion Imperial Assets Mod
-    "2757485942", # Scion Conflict Vehicle Extension
-    "2605563484", # Scion Conflict Extended Arsenal
-    "3490140797", # Scifi Spaceships Pack
-    "3539476763", # Scifi Vehicles Pack
 ]
 optionals = ["no_burn_screams"]
 

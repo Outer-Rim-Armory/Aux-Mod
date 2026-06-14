@@ -532,3 +532,11 @@ class CLASS(Crocea_Uniform): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_Crocea);
     };
 };
+
+class CLASS(Hologram_Uniform): CLASS(Uniform_Base) {
+    SCOPE_PUBLIC;
+    displayName = "[KC] INF Armor ('Hologram')";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_Hologram);
+    };
+};

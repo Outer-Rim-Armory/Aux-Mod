@@ -168,6 +168,15 @@ class CLASS(Helmet_Phase2_KeeliCrimson_Emp): CLASS(Helmet_Phase2_Keeli_Emp) {
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
+class ls_gar_phase2Hologram_helmet;
+class CLASS(Helmet_Phase2_Keeli_Hologram): ls_gar_phase2Hologram_helmet {
+    displayName = "[KC] INF P2 Helm ('Keeli') - Hologram";
+    model = "\ls\core\addons\characters_clone_legacy\helmets\phase2\ls_gar_phase2Hologram_helmet.p3d";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\camo\hologram\Keeli_camo1_ca.paa),
+        "\ls\core\addons\data\textures\hologram\blueHologram_flip_ca.paa"
+    };
+};
 
 P2_HELMET_CUSTOM(Kujo);
 P2_HELMET_CUSTOM(Leo);

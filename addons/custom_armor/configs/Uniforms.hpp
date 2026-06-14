@@ -121,6 +121,16 @@ class CLASS(Uniform_Keeli_Geo): CLASS(Uniform_Keeli) {
         camo = "Geo";
     };
 };
+class CLASS(Uniform_Keeli_Hologram): CLASS(Uniform_Keeli) {
+    displayName = "[KC] Custom Armor ('Keeli') - Hologram";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Keeli_Hologram);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Hologram";
+    };
+};
 
 UNIFORM_CUSTOM(Kiwi);
 class CLASS(Uniform_Kiwi_Worn): CLASS(Uniform_Kiwi) {

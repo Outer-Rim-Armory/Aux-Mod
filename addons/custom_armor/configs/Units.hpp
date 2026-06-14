@@ -577,6 +577,16 @@ class CLASS(Unit_Keeli_Geo): CLASS(Unit_Phase2_Base) {
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 };
+class CLASS(Unit_Keeli_Hologram): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2Hologram\ls_gar_phase2Hologram_uniform.p3d";
+    uniformClass = QCLASS(Uniform_Keeli_Hologram);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\camo\hologram\Keeli_upper_ca),
+        QPATHTOF(data\uniforms\standard\camo\hologram\Keeli_lower_ca),
+        "\ls\core\addons\data\textures\hologram\blueHologram_flip_ca.paa"
+    };
+};
 
 class CLASS(Unit_Kiwi): CLASS(Unit_Phase2_Base) {
     displayName = "Kiwi";

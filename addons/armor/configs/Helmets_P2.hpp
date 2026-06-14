@@ -465,3 +465,12 @@ class CLASS(Helmet_Phase2_Crocea): CLASS(Helmet_Phase2_Base) {
         QPATHTOF(data\helmets\Phase2\Crocea_Visor_co.paa)
     };
 };
+
+class CLASS(Helmet_Phase2_Hologram): CLASS(Helmet_Phase2_Base) {
+    SCOPE_PUBLIC;
+    displayName = "[KC] INF P2 Helmet ('Hologram')";
+    hiddenSelectionsTextures[] = {
+        "\ls\core\addons\data\textures\hologram\blueHologram_ca.paa",
+        "\ls\core\addons\data\textures\hologram\blueHologram_flip_ca.paa"
+    };
+};

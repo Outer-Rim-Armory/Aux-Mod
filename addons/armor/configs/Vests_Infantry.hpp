@@ -392,6 +392,16 @@ class CLASS(Vest_Officer_v2): CLASS(Vest_Officer) {
     };
 };
 
+class ls_gar_arcHologram_vest;
+class CLASS(Vest_Officer_Hologram): ls_gar_arcHologram_vest {
+    displayName = "[KC] INF Vest 12 (Officer, Hologram)";
+
+    hiddenSelectionsTextures[] = {
+        "\ls\core\addons\data\textures\hologram\blueHologram_ca.paa",
+        "\ls\core\addons\data\textures\hologram\blueHologram_flip_ca.paa"
+    };
+};
+
 class CLASS(Vest_Officer_Imperial): CLASS(Vest_Officer) {
     displayName = "[KC] INF Vest 12 (Officer, Empire)";
     hiddenSelectionsTextures[] = {

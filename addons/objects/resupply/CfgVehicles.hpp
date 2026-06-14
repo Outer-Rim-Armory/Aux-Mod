@@ -182,6 +182,7 @@ class CfgVehicles {
             MAG_XX(ls_mag_classC_thermalDet,5);
             MAG_XX(CLASS(Mag_UGL_10Rnd_HE),5);
             MAG_XX(CLASS(MAG_15Rnd_DX50C),20);
+            MAG_XX(CLASS(Mag_150Rnd_X42),20);
         };
     };
     class CLASS(Resupply_PlatoonAmmo_Heavy): CLASS(Resupply_SquadAmmo_Heavy) {
@@ -201,6 +202,7 @@ class CfgVehicles {
             MAG_XX(ls_mag_classC_thermalDet,5);
             MAG_XX(CLASS(Mag_UGL_10Rnd_HE),50);
             MAG_XX(CLASS(MAG_15Rnd_DX50C),100);
+            MAG_XX(CLASS(Mag_150Rnd_X42),100);
         };
     };
 
@@ -570,7 +572,7 @@ class CfgVehicles {
         };
 
         class UserActions {
-            BCNAME(Leviathon);
+            BCNAME(Leviathan);
         };
     };
 };
