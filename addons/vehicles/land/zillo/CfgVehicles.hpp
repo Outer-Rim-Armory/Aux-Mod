@@ -9,11 +9,13 @@ class CfgVehicles {
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(APCs);
         crew = QCLASS(Unit_Phase2_CT_Engineer);
-        ace_cargo_space = 20;
+        armor = 1200;
+        ace_cargo_space = 30;
         fuelCapacity = 12000;
         ace_refuel_canReceive = 1;
-        ace_refuel_flowRate = 2;
+        ace_refuel_flowRate = 10;
         ace_refuel_fuelCapacity = 120000;
+        ace_refuel_fuelCargo = 120000;
         hiddenSelections[] = {
             "camo_consoles",
             "camo_exterior",
