@@ -345,7 +345,17 @@ class CfgVehicles {
             QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
             QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
         };
-        textureList[] = {"KeeliCompany", 1, "CamoKC", 0, "CamoBrown", 0, "CamoGray", 0, "Carnage", 0, "Harry", 0, "Swoop", 0, "Ceremonial", 0, "Turtle", 0,};
+        textureList[] = {
+            "KeeliCompany", 1,
+            "CamoKC", 0,
+            "CamoBrown", 0,
+            "CamoGray", 0,
+            "Carnage", 0,
+            "Harry", 0,
+            "Swoop", 0,
+            "Ceremonial", 0,
+            "Turtle", 0
+        };
         class TextureSources {
             class KeeliCompany {
                 author = AUTHOR;
