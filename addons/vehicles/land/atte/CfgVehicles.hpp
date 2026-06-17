@@ -218,12 +218,12 @@ class CfgVehicles {
                 hideOnUse = TRUE;
                 priority = 5;
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'LoneWolf' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\atte\Dexus_Howl.ogg),objNull,false,getPosASL this,5,1,4800)];);
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\atte\Dexus_Howl.ogg),objNull,false,getPosASL this,5,1,900)];);
             };
             class HornReekolith: HornDexus {
                 displayName = "<t font='RobotoCondensedBold' color='#5b98e7'> Play Roar [Reekolith] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Reekolith' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\atte\Reekolith_Roar.ogg),objNull,false,getPosASL this,5,1,4800)];);
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\atte\Reekolith_Roar.ogg),objNull,false,getPosASL this,5,1,900)];);
             };
         };
 

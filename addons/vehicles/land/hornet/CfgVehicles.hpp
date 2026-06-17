@@ -120,12 +120,12 @@ class CfgVehicles {
                 hideOnUse = TRUE;
                 priority = 5;
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Carnage' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),objNull,false,getPosASL this,5,1,4800)];);
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
             };
             class HornHarry: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,4800)];);
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
             };
         };
 
@@ -267,12 +267,12 @@ class CfgVehicles {
                 hideOnUse = TRUE;
                 priority = 5;
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Carnage' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),objNull,false,getPosASL this,5,1,4800)];);
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
             };
             class HornHarry: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,4800)];);
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
             };
         };
 
@@ -464,12 +464,12 @@ class CfgVehicles {
                 hideOnUse = TRUE;
                 priority = 5;
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Carnage' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),objNull,false,getPosASL this,5,1,4800)];);
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
             };
             class HornHarry: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,4800)];);
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
             };
         };
 
