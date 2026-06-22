@@ -680,6 +680,13 @@ class CfgWeapons {
 		};
 	};
 
+    class CLASS(RX_ParticleBeamCannon): 3AS_RX_ParticleBeamCannon {
+        displayName = "RX200 Beam Cannon";
+        magazines[] = {
+            QCLASS(Mag_6000rnd_RX_AA)
+        };
+    };
+
         // Vehicle Skills item
 
      class ItemCore;

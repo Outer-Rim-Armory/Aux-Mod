@@ -58,4 +58,12 @@ class CfgMagazines {
         count = 30;
         mass = 26;
     };
+    class CLASS(Mag_30Rnd_DC15SA): CLASS(Mag_7Rnd_DC15SA) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] DC-15SA Energy Cell (30 Rnd)";
+        descriptionShort = "Energy Cell Pack<br/>Rounds: 30<br/>Used In: DC-15SA";
+
+        count = 30;
+        mass = 26;
+    };
 };

@@ -2,7 +2,7 @@ class CfgMagazines {
     class CLASS(Mag_Base);
     class CLASS(Mag_30Rnd_HI12): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
-        displayName = "[KC] HI-12 Energy Cell";
+        displayName = "[KC] HI-12 Energy Cell (Blue)";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 30<br/>Used In: HI-12";
 
@@ -17,7 +17,7 @@ class CfgMagazines {
     };
     class CLASS(Mag_30Rnd_HI12_Red): CLASS(Mag_Base) {
         SCOPE_PUBLIC;
-        displayName = "[KC] HI-12 Energy Cell";
+        displayName = "[KC] HI-12 Energy Cell (Red)";
         displayNameShort = "Standard Energy";
         descriptionShort = "Energy Cell Pack<br/>Rounds: 30<br/>Used In: HI-12";
 

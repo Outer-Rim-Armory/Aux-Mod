@@ -91,7 +91,20 @@ class CfgVehicles {
         displayName = "RX-200AA (Anti-Air)";
 
         class Turrets: Turrets {
-            class MainTurret: MainTurret {};
+            class MainTurret: MainTurret {
+                maxTurn = 360;
+                minTurn = -360;
+                maxHorizontalRotSpeed = 2;
+                maxVerticalRotSpeed = 2;
+                weapons[] = {QCLASS(RX_ParticleBeamCannon)};
+                magazines[] = {
+                    QCLASS(Mag_6000rnd_RX_AA),
+                    QCLASS(Mag_6000rnd_RX_AA),
+                    QCLASS(Mag_6000rnd_RX_AA),
+                    QCLASS(Mag_6000rnd_RX_AA),
+                    QCLASS(Mag_6000rnd_RX_AA)
+                };
+            };
         };
     };
 

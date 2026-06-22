@@ -132,6 +132,14 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\Jaws\Jaws_Worn_Backpack_co.paa)
         };
     };
+    class CLASS(Jaws_Gray_Backpack): CLASS(cloneBackpack_commando_EOD) {
+        displayName = "[KC] Jaws Commando Backpack ('Gray Camo')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Jaws\Jaws_Gray_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Jaws\Jaws_Gray_Backpack_co.paa)
+        };
+    };
     class CLASS(Cutthroat_Backpack): CLASS(cloneBackpack_commando_Tech) {
         displayName = "[KC] Cutthroat Commando Backpack";
 

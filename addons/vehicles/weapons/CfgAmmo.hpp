@@ -205,9 +205,16 @@ class CfgAmmo {
     };
 
     class 3AS_laserAmmo_RX_F;
-    class CLASS(Laser_AntiAir_RX200): 3AS_laserAmmo_RX_F {
+    class CLASS(Laser_AA_Gozanti): 3AS_laserAmmo_RX_F {
         caliber=12; // default 6 gozanti is 18
         explosive=0.6;
         aiAmmoUsageFlags="384";
+    };
+    class CLASS(Laser_AA_RX200): 3AS_laserAmmo_RX_F {
+        effectFly = "3AS_PlasmaBolt_Blue_Fly";
+        model = "3as\3AS_RX200\data\tracer_light_blue.p3d";
+        caliber = 6.4;
+        hit = 130;
+        explosive = 0.8;
     };
 };

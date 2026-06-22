@@ -28,6 +28,7 @@ class CfgPatches {
             QCLASS(Mortar_M190_Turret),
             QCLASS(Cannon_Gozanti_MassDriver),
             QCLASS(MachineGun_Gozanti_AA),
+            QCLASS(RX_ParticleBeamCannon),
             QCLASS(VS_Assault_Item),
            QCLASS(VS_Citadel_item),
            QCLASS(VS_Shield_Item),

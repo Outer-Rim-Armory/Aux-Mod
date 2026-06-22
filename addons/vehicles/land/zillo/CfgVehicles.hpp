@@ -9,13 +9,18 @@ class CfgVehicles {
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(APCs);
         crew = QCLASS(Unit_Phase2_CT_Engineer);
+
+        // Vehicle Stats
+        maxSpeed = 100;
         armor = 1200;
-        ace_cargo_space = 30;
+        ace_cargo_space = 50;
         fuelCapacity = 12000;
         ace_refuel_canReceive = 1;
         ace_refuel_flowRate = 10;
         ace_refuel_fuelCapacity = 120000;
         ace_refuel_fuelCargo = 120000;
+
+        // Textures
         hiddenSelections[] = {
             "camo_consoles",
             "camo_exterior",
@@ -26,15 +31,15 @@ class CfgVehicles {
             "camo_tracks2"
         };
         hiddenSelectionsTextures[] = {
-            QPATHTOF(land\zillo\data\textures\standard\consoles_co.paa),
-            QPATHTOF(land\zillo\data\textures\standard\exterior_details_co.paa),
-            QPATHTOF(land\zillo\data\textures\standard\flooring_co.paa),
-            QPATHTOF(land\zillo\data\textures\standard\hull_co.paa),
-            QPATHTOF(land\zillo\data\textures\standard\interior_co.paa),
-            QPATHTOF(land\zillo\data\textures\standard\tracks_co.paa),
-            QPATHTOF(land\zillo\data\textures\standard\tracks2_co.paa),
+            QPATHTOF(land\zillo\data\textures\gray\consoles_co.paa),
+            QPATHTOF(land\zillo\data\textures\gray\exterior_details_co.paa),
+            QPATHTOF(land\zillo\data\textures\gray\flooring_co.paa),
+            QPATHTOF(land\zillo\data\textures\gray\hull_co.paa),
+            QPATHTOF(land\zillo\data\textures\gray\interior_co.paa),
+            QPATHTOF(land\zillo\data\textures\gray\tracks_co.paa),
+            QPATHTOF(land\zillo\data\textures\gray\tracks2_co.paa),
         };
-        textureList[] = {"Keeli Company", 1, "Gray", 0};
+        textureList[] = {"Keeli Company", 0, "Gray", 1};
         class TextureSources {
             class KeeliCompany {
                 author = "KC Aux Team";
@@ -65,6 +70,8 @@ class CfgVehicles {
                 };
             };
         };
+
+        // Vehicle Actions
         class ACE_SelfActions: ACE_SelfActions {
             AI_CREW_SPAWNER;
         };

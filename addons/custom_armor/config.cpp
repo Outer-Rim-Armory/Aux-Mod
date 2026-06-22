@@ -57,7 +57,7 @@ class CfgPatches {
             QCLASS(cloneBackpack_heavy_Dexus),
             QCLASS(cloneBackpack_heavy_Rev),
             QCLASS(cloneBackpack_medicRadio_Hazard),
-            QCLASS(cloneBackpack_radioHeavy_Jaws),
+            QCLASS(cloneBackpack_radio_Destiny),
             QCLASS(Leon_JT12),
             QCLASS(Spectre_Backpack),
             QCLASS(Tugz_Backpack),

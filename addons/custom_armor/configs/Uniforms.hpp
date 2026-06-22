@@ -69,6 +69,7 @@ UNIFORM_CUSTOM(Henkie);
 
 UNIFORM_CUSTOM(Jester);
 UNIFORM_CUSTOM(Joe);
+UNIFORM_CUSTOM(Kage);
 UNIFORM_CUSTOM(Keeli);
 
 class CLASS(Uniform_Keeli_CamoBrown): CLASS(Uniform_Keeli) {

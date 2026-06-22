@@ -169,8 +169,14 @@ class CfgMagazines {
     class CLASS(Mag_2000rnd_Gozanti_AA): 3AS_Laser_Battery_RX_F{
         displayName = "Gozanti Anti Air Laser";
         displayNameShort = "AA";
-        ammo = QCLASS(Laser_AntiAir_RX200);
+        ammo = QCLASS(Laser_AA_Gozanti);
         count = 2000;
+    };
+    class CLASS(Mag_6000rnd_RX_AA): 3AS_Laser_Battery_RX_F{
+        displayName = "RX200 Anti Air Laser";
+        displayNameShort = "AA";
+        ammo = QCLASS(Laser_AA_RX200);
+        count = 6000;
     };
 
     class CLASS(Mag_6Rnd_Mortar_82mm_HE): CLASS(Mag_VehicleBase) {

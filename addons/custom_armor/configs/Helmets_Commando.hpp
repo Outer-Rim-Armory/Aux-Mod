@@ -8,5 +8,12 @@ class CLASS(Helmet_RC_Jaws_Worn): CLASS(cloneCommando_helmet) {
         QPATHTOF(data\helmets\commando\Jaws_Worn_camo1_co.paa)
     };
 };
+class CLASS(Helmet_RC_Jaws_Gray): CLASS(cloneCommando_helmet) {
+    displayName = "[KC] SF Clone Commando Helm ('Jaw's') - Gray Camo";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\commando\Jaws_Gray_camo1_co.paa),
+        QPATHTOF(data\helmets\commando\Jaws_Gray_camo1_co.paa)
+    };
+};
 RC_HELMET_CUSTOM(Cutthroat);
 RC_HELMET_CUSTOM(Moskoni);

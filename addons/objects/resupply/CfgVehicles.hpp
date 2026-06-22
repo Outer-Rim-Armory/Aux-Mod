@@ -176,9 +176,9 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_30Rnd_HI12),20);
             MAG_XX(CLASS(Mag_30Rnd_DP23),20);
             MAG_XX(CLASS(Mag_400Rnd_Z6),5);
-            MAG_XX(3AS_JLTS_MK39_AA,1);
-            MAG_XX(3AS_JLTS_MK43_AT,1);
-            MAG_XX(3AS_JLTS_MK44_HE,1);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_AA),1);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_AT),1);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_HE),1);
             MAG_XX(ls_mag_classC_thermalDet,5);
             MAG_XX(CLASS(Mag_UGL_10Rnd_HE),5);
             MAG_XX(CLASS(MAG_15Rnd_DX50C),20);
@@ -196,9 +196,9 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_30Rnd_HI12),120);
             MAG_XX(CLASS(Mag_30Rnd_DP23),120);
             MAG_XX(CLASS(Mag_400Rnd_Z6),100);
-            MAG_XX(3AS_JLTS_MK39_AA,3);
-            MAG_XX(3AS_JLTS_MK43_AT,3);
-            MAG_XX(3AS_JLTS_MK44_HE,3);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_AA),3);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_AT),3);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_HE),3);
             MAG_XX(ls_mag_classC_thermalDet,5);
             MAG_XX(CLASS(Mag_UGL_10Rnd_HE),50);
             MAG_XX(CLASS(MAG_15Rnd_DX50C),100);
@@ -299,9 +299,9 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),20);
             MAG_XX(CLASS(Mag_1Rnd_RPS8_AT),40);
             MAG_XX(CLASS(Mag_1Rnd_RPS9_AT),5);
-            MAG_XX(3AS_JLTS_MK43_AT,5);
-            MAG_XX(3AS_JLTS_MK44_HE,5);
-            MAG_XX(3AS_JLTS_MK39_AA,5);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_AT),5);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_HE),5);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_AA),5);
         };
     };
 

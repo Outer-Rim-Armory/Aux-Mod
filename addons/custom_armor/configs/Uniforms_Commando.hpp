@@ -11,5 +11,12 @@ class CLASS(Uniform_RC_Jaws_Worn): CLASS(Commando_Uniform_Base) {
         uniformClass = QCLASS(Unit_RC_Jaws_Worn);
     };
 };
+class CLASS(Uniform_RC_Jaws_Gray): CLASS(Commando_Uniform_Base) {
+    displayName = "[KC] Custom Armor ('Jaws') - Gray Camo";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_RC_Jaws_Gray);
+    };
+};
 UNIFORM_RC_CUSTOM(Cutthroat);
 UNIFORM_RC_CUSTOM(Moskoni);

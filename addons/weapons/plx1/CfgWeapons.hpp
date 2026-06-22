@@ -23,7 +23,7 @@ class CfgWeapons
 		nameSound="aalauncher";
 		weaponInfoType="RscOptics_titan";
 		modelOptics="\A3\Weapons_F_Beta\acc\reticle_titan.p3d";
-		magazines[]={"3AS_JLTS_MK43_AT", "3AS_JLTS_MK44_HE", "3AS_JLTS_MK39_AA"};
+		magazines[]={QCLASS(Mag_3Rnd_PLX1_AT),QCLASS(Mag_3Rnd_PLX1_AA),QCLASS(Mag_3Rnd_PLX1_HE)};
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 		cursor="missile";

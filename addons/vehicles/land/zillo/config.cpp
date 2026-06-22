@@ -14,9 +14,7 @@ class CfgPatches {
         };
         units[] = {
             QCLASS(Zillo_Base),
-            QCLASS(Zillo),
-            QCLASS(Zillo_Static),
-            QCLASS(Zillo_Static_Crane)
+            QCLASS(Zillo)
         };
         weapons[] = {};
         VERSION_CONFIG;

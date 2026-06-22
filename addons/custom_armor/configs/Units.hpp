@@ -504,6 +504,27 @@ class CLASS(Unit_Jester): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Kage): CLASS(Unit_Phase2_Base) {
+    displayName = "Kage";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Kage);
+
+    uniformClass = QCLASS(Uniform_Kage);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Kage_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Kage_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Airborne_Kage), QCLASS(Vest_Airborne_CT), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Airborne_Kage), QCLASS(Vest_Airborne_CT), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Keeli): CLASS(Unit_Phase2_Base) {
     displayName = "Keeli";
 
@@ -1073,6 +1094,14 @@ class CLASS(Unit_RC_Jaws_Worn): CLASS(cloneCommando_unit_base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\commando\camo\worn\Jaws_upper_co.paa),
         QPATHTOF(data\uniforms\commando\camo\worn\Jaws_lower_co.paa),
+    };
+};
+class CLASS(Unit_RC_Jaws_Gray): CLASS(cloneCommando_unit_base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Jaws_Gray);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\commando\camo\gray\Jaws_upper_co.paa),
+        QPATHTOF(data\uniforms\commando\camo\gray\Jaws_lower_co.paa),
     };
 };
 class CLASS(Unit_RC_Cutthroat): CLASS(cloneCommando_unit_base) {

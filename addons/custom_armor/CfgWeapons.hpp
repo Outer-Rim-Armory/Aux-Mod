@@ -383,6 +383,12 @@ class CfgWeapons {
             QPATHTOF(data\vests\jaws\Jaws_Worn_EOD_co.paa)
         };
     };
+    class CLASS(Jaws_RC_Vest_Gray): CLASS(cloneCommando_EOD_vest) {
+        displayName = "[KC] SF Clone Commando EOD Vest ('Jaws','Gray Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\jaws\Jaws_Gray_EOD_co.paa)
+        };
+    };
     class CLASS(Cutthroat_RC_Vest): CLASS(cloneCommando_Tech_vest) {
         displayName = "[KC] SF Commando Tech Vest ('Cutthroat')";
         hiddenSelectionsTextures[] = {

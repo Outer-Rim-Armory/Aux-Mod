@@ -373,6 +373,12 @@ class CfgVehicles {
 
         class Turrets: Turrets {
             class Mainturret_Super: Mainturret_Super {
+                maxTurn = 360;
+                minTurn = -360;
+                maxElev = 60;
+                minElev = -15;
+                maxHorizontalRotSpeed = 2;
+                maxVerticalRotSpeed = 2;
                 weapons[] = {QCLASS(Super_Sabre_Driver)};
                 magazines[] = {
                     QCLASS(Mag_75Rnd_Blue_SuperSabre),
