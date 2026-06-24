@@ -92,6 +92,7 @@ class CfgVehicles {
             "KeeliCompany", 0,
             "KeeliCompany2", 1,
             "Wyvern", 1,
+            "RylothDefenceForce", 0,
             "Akali", 0,
             "TwiLek", 0,
             "Katarina", 0,
@@ -202,6 +203,16 @@ class CfgVehicles {
                     "\3AS\3as_Laat\LAATI\data\Weapons_CO.paa",
                     "\3AS\3as_Laat\LAATI\data\Weapon_Details_CO.paas",
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
+                };
+            };
+            class RylothDefenceForce: KeeliCompany {
+                displayName = "RDF";
+                textures[] = {
+                    QPATHTOF(air\laati\data\textures\RDF\Hull_co.paa),
+                    QPATHTOF(air\laati\data\textures\RDF\Wings_co.paa),
+                    QPATHTOF(air\laati\data\texutres\RDF\Weapons_co.paa),
+                    QPATHTOF(air\laati\data\texutres\RDF\Weapon_Details_co.paa),
+                    QPATHTOF(air\laati\data\texutres\RDF\Interior_co.paa),
                 };
             };
         };
