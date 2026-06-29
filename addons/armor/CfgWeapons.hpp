@@ -243,7 +243,6 @@ class CfgWeapons {
     class CLASS(Vest_ForceRecon_Officer): CLASS(Vest_ForceRecon) {
         SCOPE_PUBLIC;
         displayName = "[KC] SF XX Vest (Force Recon Officer)";
-
         model = "\ls\core\addons\characters_clone_legacy\vests\forceRecon\ls_gar_forceReconOfficer_vest.p3d";
         hiddenSelectionsTextures[] = {
             "\ls\core\addons\characters_clone_legacy\vests\common\light\light_accessories_co.paa",
@@ -271,7 +270,6 @@ class CfgWeapons {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Clone NV/TI Chip";
-
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
@@ -288,7 +286,6 @@ class CfgWeapons {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Clone P1 NV/TI Visor";
-
         model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_p1Visor_nvg_on.p3d";
         hiddenSelections[] = {"camo1", "camo2"};
         hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa"};
@@ -300,12 +297,22 @@ class CfgWeapons {
             modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_p1Visor_nvg_off.p3d";
         };
     };
+    class CLASS(cloneNvg_phase1_visor_brown): CLASS(cloneNvg_phase1_visor) {
+        displayName = "[KC] Clone P1 NV/TI Visor ('Brown Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Brown_NVG_co.paa)
+        };
+    };
+    class CLASS(cloneNvg_phase1_visor_gray): CLASS(cloneNvg_phase1_visor) {
+        displayName = "[KC] Clone P1 NV/TI Visor ('Gray Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Gray_NVG_co.paa)
+        };
+    };
 
     class CLASS(cloneNvg_phase2_visor): CLASS(cloneNvg_phase1_visor) {
         SCOPE_PUBLIC;
-
         displayName = "[KC] Clone P2 NV/TI Visor";
-
         model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\visor\lsd_gar_visor_nvg_on.p3d";
         hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\visor_camo1_co.paa)};
 
@@ -321,12 +328,22 @@ class CfgWeapons {
             QPATHTOF(data\nvgs\visor_v2_camo1_co.paa)
         };
     };
+    class CLASS(cloneNvg_phase2_visor_brown): CLASS(cloneNvg_phase2_visor) {
+        displayName = "[KC] Clone P2 NV/TI Visor ('Brown Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Brown_NVG_co.paa)
+        };
+    };
+    class CLASS(cloneNvg_phase2_visor_gray): CLASS(cloneNvg_phase2_visor) {
+        displayName = "[KC] Clone P2 NV/TI Visor ('Gray Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Gray_NVG_co.paa)
+        };
+    };
 
     class CLASS(cloneNvg_phase1_rangefinder): CLASS(cloneNvg_base) {
         SCOPE_PUBLIC;
-
         displayName = "[KC] Clone P1 NV/TI Rangefinder";
-
         model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_p1Rangefinder_nvg_on.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa"};
@@ -338,16 +355,39 @@ class CfgWeapons {
             modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_p1Rangefinder_nvg_off.p3d";
         };
     };
+    class CLASS(cloneNvg_phase1_rangefinder_brown): CLASS(cloneNvg_phase1_rangefinder) {
+        displayName = "[KC] Clone P1 NV/TI Rangefinder ('Brown Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Brown_Rangefinder_co.paa)
+        };
+    };
+    class CLASS(cloneNvg_phase1_rangefinder_gray): CLASS(cloneNvg_phase1_rangefinder) {
+        displayName = "[KC] Clone P1 NV/TI Rangefinder ('Gray Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Gray_Rangefinder_co.paa)
+        };
+    };
 
     class CLASS(cloneNvg_phase2_rangefinder): CLASS(cloneNvg_phase1_rangefinder) {
         displayName = "[KC] Clone P2 NV/TI Rangefinder";
-
         model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
         hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\rangefinder_camo1_co.paa)};
 
         class ItemInfo: ItemInfo {
             uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_rangefinder_nvg_on.p3d";
             modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\rangefinder\lsd_gar_rangefinder_nvg_off.p3d";
+        };
+    };
+    class CLASS(cloneNvg_phase2_rangefinder_brown): CLASS(cloneNvg_phase2_rangefinder) {
+        displayName = "[KC] Clone P2 NV/TI Rangefinder ('Brown Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Brown_Rangefinder_co.paa)
+        };
+    };
+    class CLASS(cloneNvg_phase2_rangefinder_Gray): CLASS(cloneNvg_phase2_rangefinder) {
+        displayName = "[KC] Clone P2 NV/TI Rangefinder ('Gray Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Gray_Rangefinder_co.paa)
         };
     };
 
@@ -371,6 +411,18 @@ class CfgWeapons {
             modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p1Commander_nvg.p3d";
         };
     };
+    class CLASS(cloneNvg_phase1_officerVisor_brown): CLASS(cloneNvg_phase1_officerVisor) {
+        displayName = "[KC] Clone P1 NV/TI Officer Visor ('Brown Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Brown_Visor_co.paa)
+        };
+    };
+    class CLASS(cloneNvg_phase1_officerVisor_Gray): CLASS(cloneNvg_phase1_officerVisor) {
+        displayName = "[KC] Clone P1 NV/TI Officer Visor ('Gray Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Gray_Visor_co.paa)
+        };
+    };
 
     class CLASS(cloneNvg_phase2_officerVisor): CLASS(cloneNvg_phase1_officerVisor) {
         displayName = "[KC] Clone P2 NV/TI Officer Visor";
@@ -381,6 +433,18 @@ class CfgWeapons {
         class ItemInfo: ItemInfo {
             uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
             modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commander\lsd_gar_p2Commander_nvg.p3d";
+        };
+    };
+    class CLASS(cloneNvg_phase2_officerVisor_brown): CLASS(cloneNvg_phase2_officerVisor) {
+        displayName = "[KC] Clone P2 NV/TI Officer Visor ('Brown Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Brown_Visor_co.paa)
+        };
+    };
+    class CLASS(cloneNvg_phase2_officerVisor_Gray): CLASS(cloneNvg_phase2_officerVisor) {
+        displayName = "[KC] Clone P2 NV/TI Officer Visor ('Gray Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Gray_Visor_co.paa)
         };
     };
 

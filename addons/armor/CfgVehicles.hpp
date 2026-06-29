@@ -182,6 +182,24 @@ class CfgVehicles {
         };
         picture = QPATHTOF(data\ui\Backpack_ca.paa);
     };
+    class CLASS(Backpack_Brown): CLASS(cloneBackpack_standard) {
+        displayName = "[KC] INF Backpack ('Brown Camo')";
+        hiddenSelections[] = {"backpack", "cover"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\brown\Brown_CT_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa"
+        };
+        picture = QPATHTOF(data\ui\Backpack_ca.paa);
+    };
+    class CLASS(Backpack_Gray): CLASS(cloneBackpack_standard) {
+        displayName = "[KC] INF Backpack ('Gray Camo')";
+        hiddenSelections[] = {"backpack", "cover"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\gray\Gray_CT_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa"
+        };
+        picture = QPATHTOF(data\ui\Backpack_ca.paa);
+    };
 
     class CLASS(Backpack_Invis): CLASS(Backpack) {
         displayName = "[KC] INF Backpack (Invis)";
@@ -216,6 +234,30 @@ class CfgVehicles {
         picture = QPATHTOF(data\ui\Backpack_Heavy_ca.paa);
     };
 
+    class CLASS(Backpack_Heavy_Brown): CLASS(Backpack_Heavy_Base) {
+        displayName = "[KC] INF Heavy Backpack ('Brown Camo')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\brown\Brown_CT_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\tube_co.paa"
+        };
+        picture = QPATHTOF(data\ui\Backpack_Heavy_ca.paa);
+    };
+
+    class CLASS(Backpack_Heavy_Gray): CLASS(Backpack_Heavy_Base) {
+        displayName = "[KC] INF Heavy Backpack ('Gray Camo')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\gray\Gray_CT_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\tube_co.paa"
+        };
+        picture = QPATHTOF(data\ui\Backpack_Heavy_ca.paa);
+    };
+
     class CLASS(Backpack_Rocket_Base): CLASS(Backpack_Heavy_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] INF Rocket Backpack (Base)";
@@ -239,6 +281,36 @@ class CfgVehicles {
         hiddenSelections[] = {"backpack", "holder", "rocket", "light", "pouches"};
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\standard\EOD_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\holder_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\rocket_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\light_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa"
+        };
+    };
+
+    class CLASS(Backpack_Rocket_Brown): CLASS(Backpack_Heavy_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] INF Rocket Backpack ('Brown Camo')";
+
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_rocket_backpack.p3d";
+        hiddenSelections[] = {"backpack", "holder", "rocket", "light", "pouches"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\brown\Brown_EOD_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\holder_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\rocket_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\light_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa"
+        };
+    };
+
+    class CLASS(Backpack_Rocket_Gray): CLASS(Backpack_Heavy_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] INF Rocket Backpack ('Gray Camo')";
+
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_rocket_backpack.p3d";
+        hiddenSelections[] = {"backpack", "holder", "rocket", "light", "pouches"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\gray\Gray_EOD_camo1_co.paa),
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\holder_co.paa",
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\rocket_co.paa",
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\light_co.paa",
@@ -278,6 +350,26 @@ class CfgVehicles {
         };
         picture = QPATHTOF(data\ui\Backpack_Radio_ca.paa);
     };
+    class CLASS(Backpack_Radio_Brown): CLASS(Backpack_Radio_Base) {
+        displayName = "[KC] INF Radio Backpack ('Brown Camo')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\brown\Brown_CT_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
+        };
+        picture = QPATHTOF(data\ui\Backpack_Radio_ca.paa);
+    };
+    class CLASS(Backpack_Radio_Gray): CLASS(Backpack_Radio_Base) {
+        displayName = "[KC] INF Radio Backpack ('Gray Camo')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\gray\Gray_CT_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
+        };
+        picture = QPATHTOF(data\ui\Backpack_Radio_ca.paa);
+    };
 
     class CLASS(Backpack_Radio_Invis): CLASS(Backpack_Radio_Base) {
         displayName = "[KC] INF Radio Backpack (Invis)";
@@ -304,6 +396,30 @@ class CfgVehicles {
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\standard\Medic_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa"
+        };
+        picture = QPATHTOF(data\ui\Backpack_Medic_ca.paa);
+    };
+
+    class CLASS(Backpack_Medic_Brown): CLASS(Backpack_Medic_Base) {
+        displayName = "[KC] INF Medic Backpack ('Brown Camo')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\brown\Brown_Medic_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa"
+        };
+        picture = QPATHTOF(data\ui\Backpack_Medic_ca.paa);
+    };
+
+    class CLASS(Backpack_Medic_Gray): CLASS(Backpack_Medic_Base) {
+        displayName = "[KC] INF Medic Backpack ('Gray Camo')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\gray\Gray_Medic_camo1_co.paa),
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
             "",
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\medic_co.paa"
@@ -338,6 +454,31 @@ class CfgVehicles {
         picture = QPATHTOF(data\ui\Backpack_Medic_Heavy_ca.paa);
     };
 
+    class CLASS(Backpack_Medic_Heavy_Brown): CLASS(Backpack_Medic_Heavy_Base) {
+        displayName = "[KC] INF Medic Heavy Backpack ('Brown Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\brown\Brown_Medic_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
+            QPATHTOF(data\backpacks\standard\brown\Brown_Medical_Accessories_co.paa),
+            QPATHTOF(data\backpacks\standard\brown\Brown_Medical_Accessories_co.paa)
+        };
+        picture = QPATHTOF(data\ui\Backpack_Medic_Heavy_ca.paa);
+    };
+
+    class CLASS(Backpack_Medic_Heavy_Gray): CLASS(Backpack_Medic_Heavy_Base) {
+        displayName = "[KC] INF Medic Heavy Backpack ('Gray Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\gray\Gray_Medic_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
+            QPATHTOF(data\backpacks\standard\gray\Gray_Medical_Accessories_co.paa),
+            QPATHTOF(data\backpacks\standard\gray\Gray_Medical_Accessories_co.paa)
+        };
+        picture = QPATHTOF(data\ui\Backpack_Medic_Heavy_ca.paa);
+    };
+
+
     class CLASS(Backpack_Medic_Radio_Base): CLASS(Backpack_Radio_Base) {
         displayName = "[KC] INF Medic Radio Backpack (Base)";
         hiddenSelections[] = {"backpack","radio","screen"};
@@ -359,6 +500,26 @@ class CfgVehicles {
         };
         picture = QPATHTOF(data\ui\Backpack_Medic_Radio_ca.paa);
     };
+    class CLASS(Backpack_Medic_Radio_Brown): CLASS(Backpack_Medic_Radio_Base) {
+        displayName = "[KC] INF Medic Radio Backpack ('Brown Camo')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\brown\Brown_Medic_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
+        };
+        picture = QPATHTOF(data\ui\Backpack_Medic_Radio_ca.paa);
+    };
+    class CLASS(Backpack_Medic_Radio_Gray): CLASS(Backpack_Medic_Radio_Base) {
+        displayName = "[KC] INF Medic Radio Backpack ('Gray Camo')";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\gray\Gray_Medic_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\radio_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\screen_co.paa"
+        };
+        picture = QPATHTOF(data\ui\Backpack_Medic_Radio_ca.paa);
+    };
 
     class CLASS(Backpack_Radio_Mini_Base): CLASS(Backpack_Radio_Base) {
         displayName = "[KC] INF Radio Attachment (Base)";
@@ -373,10 +534,34 @@ class CfgVehicles {
     };
 
     class CLASS(Backpack_Radio_Mini): CLASS(Backpack_Radio_Mini_Base) {
-        displayName = "[KC] INF Radio Attachment";
+        displayName = "[KC] INF Radio Attachment ('V1')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\miniRadio\camo1_co.paa),
             QPATHTOF(data\backpacks\miniRadio\camo2_co.paa)
+        };
+        picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
+    };
+    class CLASS(Backpack_Radio_Mini_V2): CLASS(Backpack_Radio_Mini_Base) {
+        displayName = "[KC] INF Radio Attachment ('V2')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\miniRadio\KC_RTO_co.paa),
+            QPATHTOF(data\backpacks\miniRadio\KC_Accumulator_co.paa)
+        };
+        picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
+    };
+    class CLASS(Backpack_Radio_Mini_Brown): CLASS(Backpack_Radio_Mini_Base) {
+        displayName = "[KC] INF Radio Attachment ('Brown Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\miniRadio\Brown_RTO_co.paa),
+            QPATHTOF(data\backpacks\miniRadio\Brown_Accumulator_co.paa)
+        };
+        picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
+    };
+    class CLASS(Backpack_Radio_Mini_Gray): CLASS(Backpack_Radio_Mini_Base) {
+        displayName = "[KC] INF Radio Attachment ('Gray Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\miniRadio\Gray_RTO_co.paa),
+            QPATHTOF(data\backpacks\miniRadio\Gray_Accumulator_co.paa)
         };
         picture = QPATHTOF(data\ui\Backpack_Radio_Mini_ca.paa);
     };
@@ -390,6 +575,24 @@ class CfgVehicles {
         };
         picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_arc_backpack_ca.paa";
         maximumLoad = 600;
+    };
+    class CLASS(Backpack_ARC_V2): CLASS(Backpack_ARC) {
+        displayName = "[KC] ARC Trooper Backpack ('V2')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\arc\V2_Backpack_co.paa)
+        };
+    };
+    class CLASS(Backpack_ARC_Brown): CLASS(Backpack_ARC) {
+        displayName = "[KC] ARC Trooper Backpack ('Brown Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\arc\Brown_Backpack_co.paa)
+        };
+    };
+    class CLASS(Backpack_ARC_Gray): CLASS(Backpack_ARC) {
+        displayName = "[KC] ARC Trooper Backpack ('Gray Camo')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\arc\Gray_Backpack_co.paa)
+        };
     };
 
     class CLASS(cloneBackpack_commando): CLASS(cloneBackpack_base) {

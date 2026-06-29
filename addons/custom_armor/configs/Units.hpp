@@ -504,6 +504,27 @@ class CLASS(Unit_Jester): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Juno): CLASS(Unit_Phase2_Base) {
+    displayName = "Juno";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Juno);
+
+    uniformClass = QCLASS(Uniform_Juno);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Juno_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Juno_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Airborne_Juno), QCLASS(Vest_Airborne_CT), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Airborne_Juno), QCLASS(Vest_Airborne_CT), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Kage): CLASS(Unit_Phase2_Base) {
     displayName = "Kage";
 
