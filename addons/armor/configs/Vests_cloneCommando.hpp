@@ -67,3 +67,65 @@ class CLASS(cloneCommando_Tech_vest): CLASS(cloneCommando_basic_vest) {
         uniformModel = "\ls\core\addons\characters_clone_legacy\vests\commando\ls_vest_clone_commando_tech.p3d";
     };
 };
+
+class CLASS(cloneCommando_Hood_vest): CLASS(cloneCommando_basic_vest) {
+    displayName = "[KC] SF Hooded Vest (Brown)";
+    model = "\ls\core\addons\characters\equipment\hood\ls_glasses_hood.p3d";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\scarf\KC_Scarf_co.paa),
+        QPATHTOF(data\hood\KC_Hood_co.paa)
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_tech_vest_ui_ca.paa";
+
+    class ItemInfo: ItemInfo {
+        hiddenSelections[] = {"camo1","camo2"};
+        uniformModel = "\ls\core\addons\characters\equipment\hood\ls_glasses_hood.p3d";
+    };
+};
+
+class CLASS(cloneCommando_Hood_Black_vest): CLASS(cloneCommando_basic_vest) {
+    displayName = "[KC] SF Hooded Vest (Black) ";
+    model = "\ls\core\addons\characters\equipment\hood\ls_glasses_hood.p3d";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {
+        "\ls\core\addons\characters\equipment\scarf\data\camo1_co.paa",
+        "\ls\core\addons\characters\equipment\hood\data\camo2_co.paa"
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_tech_vest_ui_ca.paa";
+
+    class ItemInfo: ItemInfo {
+        hiddenSelections[] = {"camo1","camo2"};
+        uniformModel = "\ls\core\addons\characters\equipment\hood\ls_glasses_hood.p3d";
+    };
+};
+class CLASS(cloneCommando_Hood_Grey_vest): CLASS(cloneCommando_basic_vest) {
+    displayName = "[KC] SF Hooded Vest (Grey Camo)";
+    model = "\ls\core\addons\characters\equipment\hood\ls_glasses_hood.p3d";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\scarf\Gray_Scarf_co.paa),
+        QPATHTOF(data\hood\Gray_Hood_co.paa)
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_tech_vest_ui_ca.paa";
+
+    class ItemInfo: ItemInfo {
+        hiddenSelections[] = {"camo1","camo2"};
+        uniformModel = "\ls\core\addons\characters\equipment\hood\ls_glasses_hood.p3d";
+    };
+
+};class CLASS(cloneCommando_Hood_Brown_vest): CLASS(cloneCommando_basic_vest) {
+    displayName = "[KC] SF Hooded Vest (Brown Camo) ";
+    model = "\ls\core\addons\characters\equipment\hood\ls_glasses_hood.p3d";
+    hiddenSelections[] = {"camo1","camo2"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\scarf\Brown_Scarf_co.paa),
+        QPATHTOF(data\hood\Brown_Hood_co.paa)
+    };
+    picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_tech_vest_ui_ca.paa";
+
+    class ItemInfo: ItemInfo {
+        hiddenSelections[] = {"camo1","camo2"};
+        uniformModel = "\ls\core\addons\characters\equipment\hood\ls_glasses_hood.p3d";
+    };
+};
