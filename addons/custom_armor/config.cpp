@@ -334,6 +334,8 @@ class CfgPatches {
             QCLASS(Helmet_ARF_Tanker),
             QCLASS(Helmet_ARF_Tanker_Worn),
             //QCLASS(Helmet_ARF_Tugz),
+            QCLASS(Helmet_BARC_Dexus),
+            QCLASS(Helmet_BARC_Jester),
             QCLASS(Helmet_BARC_Keeli),
             QCLASS(Helmet_BARC_KeeliCrimson),
             QCLASS(Helmet_BARC_Keeli_Worn),

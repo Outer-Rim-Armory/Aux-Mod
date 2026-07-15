@@ -23,6 +23,7 @@ class CLASS(Helmet_BARC_BurntBacta_Worn): CLASS(Helmet_BARC_Burnt_Worn) {
     };
 };
 BARC_HELMET_VISOR_CUSTOM(Dexus,Bacta);
+BARC_HELMET_VISOR_CUSTOM(Jester,Bacta);
 BARC_HELMET_VISOR_CUSTOM(Keeli,Crimson);
 
 class CLASS(Helmet_BARC_Keeli_Worn): CLASS(Helmet_BARC_Base) {
