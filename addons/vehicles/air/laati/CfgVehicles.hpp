@@ -7,6 +7,7 @@ class CfgVehicles {
         class AnimationSources;
         class Turrets;
         class pilotCamera;
+        class EventHandlers;
     };
     class CLASS(LAATi_Base): 3AS_LAAT_Base {
         class LS_Impulsor: ls_impulsor_base{
@@ -332,16 +333,69 @@ class CfgVehicles {
         displayName = "LAAT/i MK1";
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1);
 
+        class Eventhandlers: EventHandlers
+		{
+			fired="_this execVM '\ORA\BNA_KC\addons\vehicles\functions\fnc_fired_laser.sqf';";
+		};
+
         class AnimationSources: AnimationSources {
             class Turrets: Turrets {
                 initPhase = 1;
             };
+            class muzzle_rot_laser
+			{
+				source="ammorandom";
+				weapon=QCLASS(Laser_LAAT_Ball);
+			};
+			class muzzle_rot_laser_R
+			{
+				source="ammorandom";
+				weapon=QCLASS(Laser_LAAT_Ball_R);
+			};
+			class Laser_L
+			{
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+			};
+			class Laser_R
+			{
+				source="user";
+				animPeriod=0;
+				initPhase=0;
+			};
         };
 
         class Turrets: Turrets {
             class CoPilot: CoPilot {};
-            class LeftDoorGun: LeftDoorGun {};
-            class RightDoorGun: RightDoorGun {};
+            class LeftDoorGun: LeftDoorGun {
+                weapons[]=
+				{
+					QCLASS(Laser_LAAT_Ball),
+                    QCLASS(Cannon_YWing)
+				};
+				magazines[]=
+				{
+                    QCLASS(Mag_5000Rnd_Laser_Ball_HE),
+                    QCLASS(Mag_5000Rnd_Laser_Ball_HE),
+                    "3AS_BTLB_450Rnd_Heavy_Shells",
+                    "3AS_BTLB_450Rnd_Heavy_Shells"
+				};
+            };
+            class RightDoorGun: RightDoorGun {
+                weapons[]=
+				{
+					QCLASS(Laser_LAAT_Ball_R),
+                    QCLASS(Cannon_YWing)
+				};
+				magazines[]=
+				{
+                    QCLASS(Mag_5000Rnd_Laser_Ball_HE),
+                    QCLASS(Mag_5000Rnd_Laser_Ball_HE),
+                    "3AS_BTLB_450Rnd_Heavy_Shells",
+                    "3AS_BTLB_450Rnd_Heavy_Shells"
+				};
+            };
             class CargoTurret_01: CargoTurret_01 {};
             class CargoTurret_02: CargoTurret_02 {};
             class CargoTurret_03: CargoTurret_03 {};

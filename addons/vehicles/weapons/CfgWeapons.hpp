@@ -687,9 +687,20 @@ class CfgWeapons {
         };
     };
 
-        // Vehicle Skills item
+    class ParticleBeamCannon;
+    class CLASS(Laser_LAAT_Ball): ParticleBeamCannon {
+        displayName = "[KC] Particle Laser";
+        magazines[] = {
+            QCLASS(Mag_5000Rnd_Laser_Ball_HE)
+        };
+    };
+        class CLASS(Laser_LAAT_Ball_R): CLASS(Laser_LAAT_Ball) {
+        displayName = "[KC] Particle Laser R";
+    };
 
-     class ItemCore;
+    // Vehicle Skills item
+
+    class ItemCore;
     class CBA_MiscItem: ItemCore
     {
         class ItemInfo;

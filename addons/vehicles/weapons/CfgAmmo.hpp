@@ -217,4 +217,26 @@ class CfgAmmo {
         hit = 130;
         explosive = 0.8;
     };
+
+    class LaserAmmo_F;
+	class CLASS(Laser_Ball_HE): LaserAmmo_F
+	{
+		hit=130;
+		indirectHit=8;
+		indirectHitRange=3;
+		explosive=0.80000001;
+		caliber=5.4000001;
+		airlock=1;
+		aiAmmoUsageFlags="64 + 128 + 256 + 512";
+		tracerScale=2.5;
+		tracerStartTime=0.1;
+		tracerEndTime=4.6999998;
+		explosionEffects="ExploAmmoExplosion";
+		craterEffects="ExploAmmoCrater";
+		model="a3\weapons_f\data\bullettracer\tracer_green";
+		simulation="shotbullet";
+		effectFly="3AS_Laser_effect_Green_fly";
+		cartridge="";
+        ace_frag_skip = TRUE;
+	};
 };

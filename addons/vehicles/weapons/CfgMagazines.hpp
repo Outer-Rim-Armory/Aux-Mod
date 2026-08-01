@@ -219,4 +219,19 @@ class CfgMagazines {
         ammo = QCLASS(Shell_Mortar_SmokeRed);
     };
     CSW_MAG_CONVERSION(CLASS(Mag_6Rnd_Mortar_SmokeRed));
+
+    class CLASS(Mag_5000Rnd_Laser_Ball_HE): CLASS(Mag_VehicleBase) {
+		ammo = QCLASS(Laser_Ball_HE);
+		model="a3\weapons_f\data\bullettracer\tracer_green";
+        SCOPE_HIDDEN;
+		displayName="[KC] Particle Laser";
+		displayNameShort="HE";
+		count=5000;
+		tracersEvery=0;
+		lastRoundsTracer=0;
+		initSpeed=1035;
+		maxLeadSpeed=83.333298;
+		nameSound="mg";
+		muzzleImpulseFactor[]={0.0099999998,0.0099999998};
+	};
 };

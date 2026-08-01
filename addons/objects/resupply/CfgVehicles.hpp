@@ -477,7 +477,7 @@ class CfgVehicles {
 
         class ACE_ACTIONS: ACE_ACTIONS {
             class ACE_MainActions: ACE_MainActions {
-                distance = 4;
+                distance = 6;
                 condition = "true";
                 displayName = "Interactions";
             };

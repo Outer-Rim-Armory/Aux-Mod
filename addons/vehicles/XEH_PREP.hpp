@@ -31,3 +31,4 @@ PREP(deployVehShield);
 PREP(deployModuleRepair);
 PREP(deployCitadelShield);
 PREP(deploySquadShield);
+PREP(fired_laser);
