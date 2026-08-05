@@ -510,6 +510,26 @@ class CfgWeapons {
             modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_visor.p3d";
         };
     };
+    class CLASS(cloneNvg_commandoVisor_Venom): CLASS(cloneNvg_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Clone Commando NV/TI Visor (Venom)";
+
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_visor.p3d";
+        hiddenSelections[] = {"illum", "camo1"};
+        hiddenSelectionsMaterials[] = {"\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Venom_NVG_co.paa),
+            QPATHTOF(data\nvgs\Venom_NVG_co.paa)
+        };
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_visor_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"illum", "camo1"};
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_visor.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_visor.p3d";
+        };
+    };
 
     class CLASS(cloneNvg_commandoAntenna): CLASS(cloneNvg_base) {
         SCOPE_PUBLIC;
@@ -519,6 +539,22 @@ class CfgWeapons {
         model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_antenna.p3d";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"\ls\core\addons\characters_clone_legacy\helmets\commando\data\camo1_co.paa"};
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_antenna_ca.paa";
+
+        class ItemInfo: ItemInfo {
+            hiddenSelections[] = {"camo1"};
+            uniformModel = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_antenna.p3d";
+            modelOff = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_antenna.p3d";
+        };
+    };
+    class CLASS(cloneNvg_commandoAntenna_Venom): CLASS(cloneNvg_base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] Clone Commando NV/TI Antenna (Venom)";
+
+        model = "\ls\core\addons\characters_clone_legacy\equipment\nvgs\commando\ls_nvg_clone_commando_antenna.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\nvgs\Venom_Antenna_co.paa)};
         picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_antenna_ca.paa";
 
         class ItemInfo: ItemInfo {

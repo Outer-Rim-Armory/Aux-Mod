@@ -697,6 +697,7 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_EPF);
 
         crew = QCLASS(EPF_Unit_Rifleman);
+        gunnerType = QCLASS(EPF_Unit_Rifleman);
         typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
 
         hiddenSelectionsTextures[] = {
@@ -719,6 +720,7 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_EPF);
 
         crew = QCLASS(EPF_Unit_Rifleman);
+        gunnerType = QCLASS(EPF_Unit_Rifleman);
         typicalCargo[] = {QCLASS(EPF_Unit_Rifleman)};
 
         hiddenSelectionsTextures[] = {

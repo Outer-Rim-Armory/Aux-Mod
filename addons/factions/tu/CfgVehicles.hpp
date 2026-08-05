@@ -514,6 +514,7 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_TU);
 
         crew = QCLASS(TU_Unit_Rifleman);
+        gunnerType = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
         hiddenSelections[] = {"camo1","camo2","camo3","camoGlass","camoGlassPilot","camoDecal"};
         hiddenSelectionsTextures[] = {
@@ -536,6 +537,7 @@ class CfgVehicles {
         editorPreview = EEDITOR_PREVIEW(vehicles\air\vespoid,Vespoid_Armed_TU);
 
         crew = QCLASS(TU_Unit_Rifleman);
+        gunnerType = QCLASS(TU_Unit_Rifleman);
         typicalCargo[] = {QCLASS(TU_Unit_Rifleman)};
         hiddenSelections[] = {"camo1","camo2","camo3","camoGlass","camoGlassPilot","camoDecal"};
         hiddenSelectionsTextures[] = {

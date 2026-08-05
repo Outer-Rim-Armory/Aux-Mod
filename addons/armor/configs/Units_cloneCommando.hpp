@@ -91,3 +91,87 @@ class CLASS(Ceremonial_cloneCommando_unit): CLASS(cloneCommando_unit_base) {
     };
     backpack = QCLASS(cloneBackpack_commando_ceremonial);
 };
+class CLASS(cloneCommando_Riot_unit): CLASS(cloneCommando_unit_base) {
+    SCOPE_PUBLIC;
+    displayName = "SF Clone Commando Riot (Venom)";
+    editorPreview = EDITOR_PREVIEW(cloneCommando_unit);
+    uniformClass = QCLASS(cloneCommando_Venom_uniform);
+    model = "\ls\core\addons\characters_clone_legacy\uniforms\commando\ls_uniform_clone_commando.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\commando\Venom_upper_co.paa),
+        QPATHTOF(data\uniforms\commando\Venom_lower_co.paa)
+    };
+
+    linkedItems[] = {
+        QCLASS(cloneCommando_Riot_helmet), QCLASS(cloneCommando_Venom_SL_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(cloneCommando_Riot_helmet), QCLASS(cloneCommando_Venom_SL_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(cloneBackpack_Venom_commando);
+};
+class CLASS(cloneCommando_Hive_unit): CLASS(cloneCommando_Riot_unit) {
+    SCOPE_PUBLIC;
+    displayName = "SF Clone Commando Hive (Venom)";
+    editorPreview = EDITOR_PREVIEW(cloneCommando_unit);
+    uniformClass = QCLASS(cloneCommando_Venom_uniform);
+
+    linkedItems[] = {
+        QCLASS(cloneCommando_Hive_helmet), QCLASS(cloneCommando_Venom_Tech_vest), QCLASS(cloneNvg_commandoAntenna_Venom), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(cloneCommando_Hive_helmet), QCLASS(cloneCommando_Venom_Tech_vest), QCLASS(cloneNvg_commandoAntenna_Venom), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(cloneBackpack_Venom_commando_Tech);
+};
+class CLASS(cloneCommando_Agony_unit): CLASS(cloneCommando_Riot_unit) {
+    SCOPE_PUBLIC;
+    displayName = "SF Clone Commando Agony (Venom)";
+    editorPreview = EDITOR_PREVIEW(cloneCommando_unit);
+    uniformClass = QCLASS(cloneCommando_Venom_uniform);
+
+    linkedItems[] = {
+        QCLASS(cloneCommando_Agony_helmet), QCLASS(cloneCommando_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(cloneCommando_Agony_helmet), QCLASS(cloneCommando_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(cloneBackpack_Venom_commando);
+};
+class CLASS(cloneCommando_Tremor_unit): CLASS(cloneCommando_Riot_unit) {
+    SCOPE_PUBLIC;
+    displayName = "SF Clone Commando Tremor (Venom)";
+    editorPreview = EDITOR_PREVIEW(cloneCommando_unit);
+    uniformClass = QCLASS(cloneCommando_Venom_uniform);
+
+    linkedItems[] = {
+        QCLASS(cloneCommando_Tremor_helmet), QCLASS(cloneCommando_vest), QCLASS(cloneNvg_commandoVisor_Venom), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(cloneCommando_Tremor_helmet), QCLASS(cloneCommando_vest), QCLASS(cloneNvg_commandoVisor_Venom), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(cloneBackpack_commando_EOD_Venom);
+};
+class CLASS(cloneCommando_Shield_unit): CLASS(cloneCommando_unit_base) {
+    SCOPE_PUBLIC;
+    displayName = "SF Clone Commando Shield";
+    editorPreview = EDITOR_PREVIEW(cloneCommando_unit);
+    side = OPFOR;
+    faction = QFACTION(EPF);
+    uniformClass = QCLASS(cloneCommando_Shield_uniform);
+    model = "\ls\core\addons\characters_clone_legacy\uniforms\commando\ls_uniform_clone_commando.p3d";
+    hiddenSelections[] = {"camo1", "camo2"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\commando\Shield_upper_co.paa),
+        QPATHTOF(data\uniforms\commando\Shield_lower_co.paa)
+    };
+
+    linkedItems[] = {
+        QCLASS(cloneCommando_Shield_helmet), QCLASS(cloneCommando_Shield_SL_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(cloneCommando_Shield_helmet), QCLASS(cloneCommando_Shield_SL_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(cloneBackpack_Shield_commando);
+};

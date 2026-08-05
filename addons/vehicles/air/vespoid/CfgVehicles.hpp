@@ -1,21 +1,21 @@
 class CfgVehicles {
-    class OPTRE_UNSC_MH_144S_Falcon;
+    class OPTRE_UNSC_falcon_S;
+    class OPTRE_UNSC_falcon_armed;
     class ACE_SelfActions;
     class Components;
-    class CLASS(Vespoid_Armed_Base): OPTRE_UNSC_MH_144S_Falcon {
-        SCOPE_PRIVATE;
-        author = AUTHOR;
-
-        editorSubcategory = QEDSUBCAT(Helicopters);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Vespoid_Tan);
+    class CLASS(Vespoid_Armed_Base): OPTRE_UNSC_falcon_armed {
+        SCOPE_PUBLIC;
 
         displayName = "Vespoid (Armed)";
 
-        weapons[] = {"OPTRE_M638","CMFlareLauncher","Laserdesignator_pilotCamera"};
+        editorSubcategory = QEDSUBCAT(Helicopters);
+        armor = 180;
         magazines[] = {
-            "OPTRE_2000Rnd_20mm_HE",
-            "OPTRE_2000Rnd_20mm_HE",
-            "168Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
             "Laserbatteries"
         };
 
@@ -76,15 +76,20 @@ class CfgVehicles {
         };
     };
 
-    class OPTRE_UNSC_falcon;
-    class CLASS(Vespoid_Base): OPTRE_UNSC_falcon {
-        displayName = "Vespoid";
+    class CLASS(Vespoid_Base): OPTRE_UNSC_falcon_S {
+        SCOPE_PUBLIC;
 
+        displayName = "Vespoid (Unarmed)";
         editorSubcategory = QEDSUBCAT(Helicopters);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,Vespoid_Armed_Tan);
-
-        weapons[] = {"CMFlareLauncher", "Laserdesignator_pilotCamera"};
-        magazines[] = {"168Rnd_CMFlare_Chaff_Magazine", "Laserbatteries"};
+        armor = 180;
+        magazines[] = {
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "240Rnd_CMFlare_Chaff_Magazine",
+            "Laserbatteries"
+        };
 
         hiddenSelections[] = {"camo1","camo2","camo3","camoGlass","camoGlassPilot","camoDecal","attach_gun","attach_sideguns"};
         hiddenSelectionsTextures[] = {
