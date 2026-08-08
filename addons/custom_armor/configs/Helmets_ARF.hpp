@@ -1,6 +1,7 @@
 class CLASS(Helmet_ARF_Base);
 ARF_HELMET_VISOR_CUSTOM(Defter,Bacta);
 //ARF_HELMET_CUSTOM(Evo);
+ARF_HELMET_VISOR_CUSTOM(Flores,Crimson);
 ARF_HELMET_VISOR_CUSTOM(Jester,Bacta);
 //ARF_HELMET_CUSTOM(Patriot);
 ARF_HELMET_CUSTOM(Rabble);
@@ -35,4 +36,4 @@ class CLASS(Helmet_ARF_TankerBacta_Worn): CLASS(Helmet_ARF_Tanker_Worn) {
 };
 //ARF_HELMET_CUSTOM(Tugz);
 ARF_HELMET_CUSTOM(Turtle);
-ARF_HELMET_CUSTOM(Whisker);
+ARF_HELMET_VISOR_CUSTOM(Whisker,Bacta);

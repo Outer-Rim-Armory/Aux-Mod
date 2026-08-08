@@ -50,6 +50,7 @@ UNIFORM_CUSTOM(Drake);
 //    };
 //};
 
+UNIFORM_CUSTOM(Drakken);
 UNIFORM_CUSTOM(Evo);
 UNIFORM_CUSTOM(Goldie);
 UNIFORM_CUSTOM(Grey);

@@ -324,6 +324,28 @@ class CLASS(Unit_Drake): CLASS(Unit_Phase2_Base) {
 //    };
 //};
 
+class CLASS(Unit_Drakken): CLASS(Unit_Phase2_Base) {
+    displayName = "Drakken";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Drakken);
+
+    uniformClass = QCLASS(Uniform_Drakken);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Drakken_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Drakken_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase1_Drakken), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase1_Drakken), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Evo): CLASS(Unit_Phase2_Base) {
     displayName = "Evo";
 
