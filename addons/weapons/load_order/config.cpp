@@ -43,7 +43,7 @@ class CfgPatches {
             QGVAR(rps8),
             QGVAR(rps9),
             QGVAR(sbb3),
-            QGVAR(senatorfists),
+            //QGVAR(senatorfists),
             QGVAR(umb36),
             QGVAR(valken38l),
             QGVAR(valken38x),
