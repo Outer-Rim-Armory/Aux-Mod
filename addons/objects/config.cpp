@@ -31,8 +31,6 @@ class CfgPatches {
             QCLASS(SideSwapper),
             QCLASS(Forklift_Droid),
             QCLASS(Personal_Locker),
-            QCLASS(Zillo_Static),
-            QCLASS(Zillo_Static_Crane),
             QCLASS(TurboTank_Static)
         };
         weapons[] = {};
