@@ -1,7 +1,7 @@
 class CfgWeapons {
     class WBK_BrassKnuckles;
     class CLASS(Armstrong): WBK_BrassKnuckles {
-        SCOPE_PUBLIC;
+        SCOPE_HIDDEN;
         author = AUTHOR;
         displayName = "[KC] Senator Armstrong Fists";
         baseWeapon = QCLASS(Armstrong);
