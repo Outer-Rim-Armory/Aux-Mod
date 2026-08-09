@@ -358,7 +358,7 @@ class CfgVehicles {
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Helicopters);
         side = BLUFOR;
-        displayName = "LAS-1";
+        displayName = "[KC] LAS-1";
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
         class Turrets
@@ -375,7 +375,7 @@ class CfgVehicles {
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Helicopters);
         side = BLUFOR;
-        displayName = "LAS-1/A (Z6)";
+        displayName = "[KC] LAS-1/A (Z6)";
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
         editorPreview="\3AS\3AS_Republic_Heli\LAS\data\ui\3AS_LAS_Z6_F.jpg";

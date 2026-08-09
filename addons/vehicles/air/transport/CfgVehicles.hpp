@@ -11,7 +11,7 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Helicopters);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,RepublicTransport);
 
-        displayName = "Republic Transport";
+        displayName = "[KC] Republic Transport";
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 

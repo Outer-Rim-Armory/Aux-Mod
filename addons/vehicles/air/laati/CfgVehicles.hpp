@@ -330,7 +330,7 @@ class CfgVehicles {
 
     class CLASS(LAATi_MK1): CLASS(LAATi_Base) {
         SCOPE_PUBLIC;
-        displayName = "LAAT/i MK1";
+        displayName = "[KC] LAAT/i MK1";
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1);
 
         class Eventhandlers: EventHandlers
@@ -405,7 +405,7 @@ class CfgVehicles {
         };
     };
     class CLASS(LAATi_MK1_Lamps): CLASS(LAATi_MK1) {
-        displayName = "LAAT/i MK1 (Lamps)";
+        displayName = "[KC] LAAT/i MK1 (Lamps)";
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1_Lamps);
 
         class AnimationSources: AnimationSources {
@@ -431,7 +431,7 @@ class CfgVehicles {
     class CLASS(LAATi_MK2): CLASS(LAATi_Base) {
         SCOPE_PUBLIC;
 
-        displayName = "LAAT/i MK2";
+        displayName = "[KC] LAAT/i MK2";
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2);
 
         class AnimationSources: AnimationSources {
@@ -451,7 +451,7 @@ class CfgVehicles {
         };
     };
     class CLASS(LAATi_MK2_Lamps): CLASS(LAATi_MK2) {
-        displayName = "LAAT/i MK2 (Lamps)";
+        displayName = "[KC] LAAT/i MK2 (Lamps)";
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2_Lamps);
         class AnimationSources: AnimationSources {
             class Lamps: Lamps {
@@ -462,7 +462,7 @@ class CfgVehicles {
         class CLASS(LAATi_Med): CLASS(LAATi_Base) {
         SCOPE_PUBLIC;
 
-        displayName = "LAAT/i MK2 (Medical)";
+        displayName = "[KC] LAAT/i MK2 (Medical)";
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2);
 
         class AnimationSources: AnimationSources {

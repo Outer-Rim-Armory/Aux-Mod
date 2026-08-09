@@ -297,7 +297,7 @@ class CLASS(CIS_Flak_Cannon): CLASS(Flak_Cannon_Base) {
 class CLASS(HMP_Base);
 class CLASS(CIS_HMP): CLASS(HMP_Base) {
     SCOPE_PUBLIC;
-    displayName = "HMP Gunship (Gunship)";
+    displayName = "[CIS] HMP Gunship (Gunship)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
 };
@@ -305,7 +305,7 @@ class CLASS(CIS_HMP): CLASS(HMP_Base) {
 class CLASS(HMP_Transport_Base);
 class CLASS(CIS_HMP_Transport): CLASS(HMP_Transport_Base) {
     SCOPE_PUBLIC;
-    displayName = "HMP Gunship (Transport)";
+    displayName = "[CIS] HMP Gunship (Transport)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
 };
@@ -313,7 +313,7 @@ class CLASS(CIS_HMP_Transport): CLASS(HMP_Transport_Base) {
 class CLASS(MAF_Gunship_Base);
 class CLASS(CIS_MAF_Gunship): CLASS(MAF_Gunship_Base) {
     SCOPE_PUBLIC;
-    displayName = "MAF (Gunship)";
+    displayName = "[CIS] MAF (Gunship)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
 };
@@ -321,7 +321,7 @@ class CLASS(CIS_MAF_Gunship): CLASS(MAF_Gunship_Base) {
 class CLASS(MAF_Transport_Base);
 class CLASS(CIS_MAF_Transport): CLASS(MAF_Transport_Base) {
     SCOPE_PUBLIC;
-    displayName = "MAF (Transport)";
+    displayName = "[CIS] MAF (Transport)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
 };
@@ -329,7 +329,7 @@ class CLASS(CIS_MAF_Transport): CLASS(MAF_Transport_Base) {
 class CLASS(Tri_Fighter_Base);
 class CLASS(CIS_Tri_Fighter): CLASS(Tri_Fighter_Base) {
     SCOPE_PUBLIC;
-    displayName = "Tri Fighter";
+    displayName = "[CIS] Tri Fighter";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
 };
@@ -337,7 +337,7 @@ class CLASS(CIS_Tri_Fighter): CLASS(Tri_Fighter_Base) {
 class CLASS(Vulture_Base);
 class CLASS(CIS_Vulture_Droid): CLASS(Vulture_Base) {
     SCOPE_PUBLIC;
-    displayName = "Vulture Droid (CIS)";
+    displayName = "[CIS] Vulture Droid (CIS)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
     textureList[] = {"CIS", 1, "Tan", 0, "Brown", 0};
@@ -371,7 +371,7 @@ class CLASS(CIS_Vulture_Droid): CLASS(Vulture_Base) {
 };
 class CLASS(CIS_Vulture_Droid_Tan): CLASS(Vulture_Base) {
     SCOPE_PUBLIC;
-    displayName = "Vulture Droid (Tan)";
+    displayName = "[CIS] Vulture Droid (Tan)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
     textureList[] = {"CIS", 0, "Tan", 1, "Brown", 0};
@@ -405,7 +405,7 @@ class CLASS(CIS_Vulture_Droid_Tan): CLASS(Vulture_Base) {
 };
 class CLASS(CIS_Vulture_Droid_Brown): CLASS(Vulture_Base) {
     SCOPE_PUBLIC;
-    displayName = "Vulture Droid (Brown)";
+    displayName = "[CIS] Vulture Droid (Brown)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
     textureList[] = {"CIS", 0, "Tan", 0, "Brown", 1};
@@ -441,7 +441,7 @@ class CLASS(CIS_Vulture_Droid_Brown): CLASS(Vulture_Base) {
 class CLASS(Vulture_AA_Base);
 class CLASS(CIS_Vulture_AA): CLASS(Vulture_AA_Base) {
     SCOPE_PUBLIC;
-    displayName = "Vulture Droid (CIS, AA)";
+    displayName = "[CIS] Vulture Droid (CIS, AA)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
     textureList[] = {"CIS", 1, "Tan", 0, "Brown", 0};
@@ -475,7 +475,7 @@ class CLASS(CIS_Vulture_AA): CLASS(Vulture_AA_Base) {
 };
 class CLASS(CIS_Vulture_AA_Tan): CLASS(Vulture_AA_Base) {
     SCOPE_PUBLIC;
-    displayName = "Vulture Droid (Tan, AA)";
+    displayName = "[CIS] Vulture Droid (Tan, AA)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
     textureList[] = {"CIS", 0, "Tan", 1, "Brown", 0};
@@ -509,7 +509,7 @@ class CLASS(CIS_Vulture_AA_Tan): CLASS(Vulture_AA_Base) {
 };
 class CLASS(CIS_Vulture_AA_Brown): CLASS(Vulture_AA_Base) {
     SCOPE_PUBLIC;
-    displayName = "Vulture Droid (Brown, AA)";
+    displayName = "[CIS] Vulture Droid (Brown, AA)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
     textureList[] = {"CIS", 0, "Tan", 0, "Brown", 1};
@@ -545,7 +545,7 @@ class CLASS(CIS_Vulture_AA_Brown): CLASS(Vulture_AA_Base) {
 class CLASS(Vulture_CAS_Base);
 class CLASS(CIS_Vulture_CAS): CLASS(Vulture_CAS_Base) {
     SCOPE_PUBLIC;
-    displayName = "Vulture Droid (CIS, CAS)";
+    displayName = "[CIS] Vulture Droid (CIS, CAS)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
     textureList[] = {"CIS", 1, "Tan", 0, "Brown", 0};
@@ -579,7 +579,7 @@ class CLASS(CIS_Vulture_CAS): CLASS(Vulture_CAS_Base) {
 };
 class CLASS(CIS_Vulture_CAS_Tan): CLASS(Vulture_CAS_Base) {
     SCOPE_PUBLIC;
-    displayName = "Vulture Droid (Tan, CAS)";
+    displayName = "[CIS] Vulture Droid (Tan, CAS)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
     textureList[] = {"CIS", 0, "Tan", 1, "Brown", 0};
@@ -613,7 +613,7 @@ class CLASS(CIS_Vulture_CAS_Tan): CLASS(Vulture_CAS_Base) {
 };
 class CLASS(CIS_Vulture_CAS_Brown): CLASS(Vulture_CAS_Base) {
     SCOPE_PUBLIC;
-    displayName = "Vulture Droid (Brown, CAS)";
+    displayName = "[CIS] Vulture Droid (Brown, CAS)";
     faction = QFACTION(CIS);
     crew = QCLASS(CIS_Unit_Droid_B1_Pilot);
     textureList[] = {"CIS", 0, "Tan", 0, "Brown", 1};

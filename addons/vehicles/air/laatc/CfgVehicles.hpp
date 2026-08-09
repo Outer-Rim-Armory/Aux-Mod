@@ -29,7 +29,7 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Helicopters);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATc);
 
-        displayName = "LAAT/c";
+        displayName = "[KC] LAAT/c";
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
 
