@@ -197,6 +197,7 @@ class CfgVehicles {
             VICSPAWNPLANE(CLASS(BTLB_Ywing),Y-Wing)
             VICSPAWNPLANE(CLASS(Gozanti),Gozanti)
             VICSPAWNPLANE(CLASS(Z95),Z-95)
+            VICSPAWNPLANE(CLASS(Delta7),Delta-7)
         };
     };
 

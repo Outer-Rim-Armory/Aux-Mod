@@ -36,7 +36,7 @@ class CfgPatches {
             QGVAR(electrostaff),
             QGVAR(gr20),
             QGVAR(hi12),
-            QGVAR(lightsabers),
+            //QGVAR(lightsabers),
             QGVAR(lw38),
             QGVAR(rps6),
             QGVAR(rps7),
