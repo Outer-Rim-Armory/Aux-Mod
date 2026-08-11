@@ -215,7 +215,7 @@ class CfgVehicles {
         displayName = "Ground Vehicle Terminal";
         class Useractions{
             TERMINALSWAP(CLASS(SwapTerm),Swap Terminall,#FFFFFF)
-            // INF VICSPAWNINF
+            // INF VICSPAWNINF(ClassName,DisplayName)
             VICSPAWNINF(CLASS(Bantha_Unarmed),Bantha (Unarmed))
             VICSPAWNINF(CLASS(Bantha_Assault),Bantha (Assault))
             VICSPAWNINF(CLASS(Bantha_AA),Bantha (AA))
@@ -233,6 +233,7 @@ class CfgVehicles {
             VICSPAWNINF(CLASS(Hornet_Unarmed),Hornet Unarmed)
             VICSPAWNINF(CLASS(Hornet_AT),Hornet (AT))
             VICSPAWNINF(CLASS(Hornet_MG),Hornet (MG))
+            VICSPAWNINF(CLASS(REP_Command_Post),Republic Command Post)
             // Logistics VICSPAWNLOG
             VICSPAWNLOG(CLASS(Bantha_MSV),Bantha (Engineer))
             VICSPAWNLOG(CLASS(Hermitaur_class_E),Hermitaur (Engineer))

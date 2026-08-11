@@ -13,7 +13,8 @@ class CfgPatches {
             "3AS_Static_FCP"
         };
         units[] = {
-            QCLASS(CIS_Command_Post)
+            QCLASS(CIS_Command_Post),
+            QCLASS(REP_Command_Post)
         };
         weapons[] = {};
         VERSION_CONFIG;
