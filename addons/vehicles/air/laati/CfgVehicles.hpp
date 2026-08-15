@@ -371,29 +371,23 @@ class CfgVehicles {
             class LeftDoorGun: LeftDoorGun {
                 weapons[]=
 				{
-					QCLASS(Laser_LAAT_Ball),
-                    QCLASS(Cannon_YWing)
+					QCLASS(Laser_LAAT_Ball)
 				};
 				magazines[]=
 				{
                     QCLASS(Mag_5000Rnd_Laser_Ball_HE),
-                    QCLASS(Mag_5000Rnd_Laser_Ball_HE),
-                    "3AS_BTLB_450Rnd_Heavy_Shells",
-                    "3AS_BTLB_450Rnd_Heavy_Shells"
+                    QCLASS(Mag_5000Rnd_Laser_Ball_HE)
 				};
             };
             class RightDoorGun: RightDoorGun {
                 weapons[]=
 				{
-					QCLASS(Laser_LAAT_Ball_R),
-                    QCLASS(Cannon_YWing)
+					QCLASS(Laser_LAAT_Ball_R)
 				};
 				magazines[]=
 				{
                     QCLASS(Mag_5000Rnd_Laser_Ball_HE),
-                    QCLASS(Mag_5000Rnd_Laser_Ball_HE),
-                    "3AS_BTLB_450Rnd_Heavy_Shells",
-                    "3AS_BTLB_450Rnd_Heavy_Shells"
+                    QCLASS(Mag_5000Rnd_Laser_Ball_HE)
 				};
             };
             class CargoTurret_01: CargoTurret_01 {};
