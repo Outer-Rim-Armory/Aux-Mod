@@ -34,6 +34,7 @@ class CfgMusic {
 
     // Call of Duty
     MUSIC(COD_115,"[COD] 115",228,VideoGames);
+    MUSIC(COD_BlackCats,"[COD] Black Cats",929,VideoGames);
     // MUSIC(COD_Burning,"[COD] Burning",147,VideoGames);
     // MUSIC(COD_Chase,"[COD] Chase",126,VideoGames);
     // MUSIC(COD_Contingency,"[COD] Contingency",135,VideoGames);

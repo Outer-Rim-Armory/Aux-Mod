@@ -146,27 +146,50 @@ class CLASS(Helmet_Phase1_CSM): CLASS(Helmet_Phase1_Base) {
     };
 };
 
-// class CLASS(Helmet_Phase1_CL): CLASS(Helmet_Phase1_Base)
-// {
-//     displayName = "[KC] INF P1 Helm 11 (Lieutenant)";
-//     hiddenSelectionsTextures[] =
-//     {
-//         QPATHTOF(data\helmets\phase1\LT_camo1_co.paa),
-//         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
-//         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
-//     };
-// };
+class CLASS(Helmet_Phase1_WO): CLASS(Helmet_Phase1_Base) {
+    displayName = "[KC] INF P1 Helm 11 (Warrant Officer)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\WO_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
+    };
+};
 
-// class CLASS(Helmet_Phase1_Officer): CLASS(Helmet_Phase1_Base)
-// {
-//     displayName = "[KC] INF P1 Helm 12+ (Officer)";
-//     hiddenSelectionsTextures[] =
-//     {
-//         QPATHTOF(data\helmets\phase1\Officer_camo1_co.paa),
-//         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
-//         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
-//     };
-// };
+class CLASS(Helmet_Phase1_WO2): CLASS(Helmet_Phase1_Base) {
+    displayName = "[KC] INF P1 Helm 12 (Warrant Officer 2)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\WO_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase1_WO3): CLASS(Helmet_Phase1_Base) {
+    displayName = "[KC] INF P1 Helm 13 (Warrant Officer 3)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\WO_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase1_CL): CLASS(Helmet_Phase1_Base) {
+    displayName = "[KC] INF P1 Helm 14 (Lieutenant)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\LT_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
+    };
+};
+
+class CLASS(Helmet_Phase1_CL1): CLASS(Helmet_Phase1_Base) {
+    displayName = "[KC] INF P1 Helm 15 (1st Lieutenant)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\1LT_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
+    };
+};
 
 // Camo Helmets
 class CLASS(Helmet_Phase1_Recruit_CamoBrown): CLASS(Helmet_Phase1_Base) {

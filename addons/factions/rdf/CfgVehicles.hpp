@@ -779,6 +779,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = BLUFOR;
+        displayName = "[RDF] LAAT/i MK1";
         faction = QFACTION(RDF);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1);
 
@@ -791,6 +792,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = BLUFOR;
+        displayName = "[RDF] LAAT/i MK1 (Lamps)";
         faction = QFACTION(RDF);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1_Lamps);
 
@@ -803,6 +805,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = BLUFOR;
+        displayName = "[RDF] LAAT/i MK2";
         faction = QFACTION(RDF);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2);
 
@@ -815,6 +818,7 @@ class CfgVehicles {
         SCOPE_PUBLIC;
 
         side = BLUFOR;
+        displayName = "[RDF] LAAT/i MK2 (Lamps)";
         faction = QFACTION(RDF);
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2_Lamps);
 

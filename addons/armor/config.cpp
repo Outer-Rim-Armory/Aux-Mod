@@ -34,6 +34,11 @@ class CfgPatches {
             QCLASS(Unit_Phase1_CSFC),
             QCLASS(Unit_Phase1_CMS),
             QCLASS(Unit_Phase1_CSM),
+            QCLASS(Unit_Phase1_WO),
+            QCLASS(Unit_Phase1_WO2),
+            QCLASS(Unit_Phase1_WO3),
+            QCLASS(Unit_Phase1_CL),
+            QCLASS(Unit_Phase1_CL1),
             QCLASS(Unit_phase1Geo_Enlisted),
             QCLASS(Unit_phase1Geo_NCO),
             QCLASS(Unit_phase1Geo_Officer),
@@ -629,7 +634,9 @@ class CfgPatches {
             QCLASS(cloneNvg_phase2_officerVisor_gray),
             QCLASS(cloneNvg_engineerComms),
             QCLASS(cloneNvg_commandoVisor),
+            QCLASS(cloneNvg_commandoVisor_Venom),
             QCLASS(cloneNvg_commandoAntenna),
+            QCLASS(cloneNvg_commandoAntenna_Venom),
             QCLASS(Bel_Rangefinder)
         };
         VERSION_CONFIG;

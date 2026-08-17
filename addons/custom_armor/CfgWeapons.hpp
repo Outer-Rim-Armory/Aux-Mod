@@ -260,6 +260,24 @@ class CfgWeapons {
 
         GVAR(isCustom) = TRUE;
     };
+    class CLASS(cloneVest_arc_Leon): CLASS(Vest_ARC) {
+        displayName = "[KC] SF ARC Vest ('Leon')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\leon\camo1_co.paa),
+            QPATHTOF(data\vests\leon\camo2_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
+    class CLASS(cloneVest_arc_Sogi): CLASS(Vest_ARC) {
+        displayName = "[KC] SF ARC Vest ('Sogi')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\sogi\camo1_co.paa),
+            QPATHTOF(data\vests\sogi\camo2_co.paa)
+        };
+
+        GVAR(isCustom) = TRUE;
+    };
     class CLASS(cloneNvg_phase2_officerVisor);
     class CLASS(cloneNvg_phase1_officerVisor);
     class CLASS(cloneNvg_phase2_officerVisor_Keeli): CLASS(cloneNvg_phase2_officerVisor) {
@@ -317,15 +335,23 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
     };
 
-//class CLASS(Vest_CS) ;
+class CLASS(Vest_CS) ;
 //class CLASS(Vest_Jaws): CLASS(Vest_CS) {
 //    displayName = "[KC] INF Vest (Jaws)";
 //    hiddenSelectionsTextures[] = {
-//        QPATHTOF(data\vests\jaws\camo1_co.paa),       // Pauldron
+//        QPATHTOF(data\vests\jaws\camo1_co.paa), // Pauldron
 //        QPATHTOF(data\vests\jaws\camo2_co.paa) // Kama
 //    };
 //  GVAR(isCustom) = TRUE;
 //};
+class CLASS(Vest_Kujo): CLASS(Vest_CS) {
+    displayName = "[KC] INF Vest (Kujo)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\kujo\camo1_co.paa), // Pauldron
+        QPATHTOF(data\vests\kujo\camo2_co.paa) // Kama
+    };
+  GVAR(isCustom) = TRUE;
+};
 
     class CLASS(Vest_ForceRecon_Officer) ;
     class CLASS(Force_Recon_Sin): CLASS(Vest_ForceRecon_Officer) {
@@ -351,16 +377,16 @@ class CfgWeapons {
         GVAR(isCustom) = TRUE;
     };
 
-    class CLASS(Vest_MedicPlatoon);
-    class CLASS(Vest_Sogi): CLASS(Vest_MedicPlatoon) {
-        displayName = "[KC] INF MED Vest 06 ('Sogi')";
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(data\vests\sogi\Sogi_Accessories_co.paa),   // Heavy Bag / Strap
-            QPATHTOF(data\vests\sogi\camo2_co.paa), // Kama
-            "",                                                       // Ammo
-            QPATHTOF(data\vests\infantry\sogi\Sogi_Accessories_co.paa)    // Pauldron
-        };
-    };
+    //class CLASS(Vest_MedicPlatoon);
+    //class CLASS(Vest_Sogi): CLASS(Vest_MedicPlatoon) {
+    //    displayName = "[KC] INF MED Vest 06 ('Sogi')";
+    //    hiddenSelectionsTextures[] = {
+    //        QPATHTOF(data\vests\sogi\Sogi_Accessories_co.paa),   // Heavy Bag / Strap
+    //        QPATHTOF(data\vests\sogi\camo2_co.paa), // Kama
+    //        "",                                                       // Ammo
+    //        QPATHTOF(data\vests\infantry\sogi\Sogi_Accessories_co.paa)    // Pauldron
+    //    };
+    //};
 
     class CLASS(cloneCommando_SL_vest);
     class CLASS(cloneCommando_EOD_vest);

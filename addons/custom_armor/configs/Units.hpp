@@ -717,10 +717,10 @@ class CLASS(Unit_Kujo): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase2_Kujo), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Kujo), QCLASS(Vest_Kujo), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase2_Kujo), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_Phase2_Kujo), QCLASS(Vest_Kujo), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -738,10 +738,10 @@ class CLASS(Unit_Leon): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Airborne_Leon), QCLASS(Vest_Airborne_CT), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARC_Leon), QCLASS(cloneVest_arc_Leon), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Airborne_Leon), QCLASS(Vest_Airborne_CT), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARC_Leon), QCLASS(cloneVest_arc_Leon), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -845,10 +845,10 @@ class CLASS(Unit_Sogi): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_ARF_Sogi), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARC_Sogi), QCLASS(cloneVest_arc_Sogi), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_ARF_Sogi), QCLASS(Vest_ARF), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARC_Sogi), QCLASS(cloneVest_arc_Sogi), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 

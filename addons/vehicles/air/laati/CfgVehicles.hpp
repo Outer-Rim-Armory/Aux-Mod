@@ -93,7 +93,7 @@ class CfgVehicles {
             "KeeliCompany", 0,
             "KeeliCompany2", 1,
             "Wyvern", 1,
-            "RylothDefenceForce", 0,
+            "RDF", 0,
             "Akali", 0,
             "TwiLek", 0,
             "Katarina", 0,
@@ -206,7 +206,7 @@ class CfgVehicles {
                     "\3AS\3as_Laat\LAATI\data\Interior_CO.paa"
                 };
             };
-            class RylothDefenceForce: KeeliCompany {
+            class RDF: KeeliCompany {
                 displayName = "RDF";
                 textures[] = {
                     QPATHTOF(air\laati\data\textures\RDF\Hull_co.paa),

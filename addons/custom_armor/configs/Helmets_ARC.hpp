@@ -31,7 +31,9 @@ ARC_HELMET_VISOR_CUSTOM(Cough,Crimson);
 ARC_HELMET_CUSTOM(Evo);
 ARC_HELMET_VISOR_CUSTOM(Hagrid,Plasma);
 ARC_HELMET_VISOR_CUSTOM(Harry,Plasma);
+ARC_HELMET_CUSTOM(Leon);
 ARC_HELMET_VISOR_CUSTOM(Sin,Crimson);
+ARC_HELMET_VISOR_CUSTOM(Sogi,Plasma);
 ARC_HELMET_VISOR_CUSTOM(Swoop,Bacta);
 class CLASS(Helmet_ARC_Swoop_Night): CLASS(Helmet_ARC_Base) {
     displayName = "[KC] SF ARC P1.5 Helm ('Swoop') - Night";
@@ -73,6 +75,16 @@ class CLASS(Helmet_ARC_TyrantCrimson_Worn): CLASS(Helmet_ARC_Tyrant_Worn) {
     SCOPE_HIDDEN;
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\camo\worn\Tyrant_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa)
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
+class CLASS(Helmet_ARC_TyrantCrimson_On): CLASS(Helmet_ARC_Tyrant) {
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\arc\Tyrant_camo1_co.paa),
         QPATHTOF(data\visors\Crimson_camo2_co.paa)
     };
     hiddenSelectionsMaterials[] = {

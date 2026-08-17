@@ -174,58 +174,47 @@ class CLASS(Unit_Phase1_CSM): CLASS(Unit_Phase1_Base) {
     };
 };
 
-// class CLASS(Unit_Phase1_CL): CLASS(Unit_Phase1_Base)
-// {
-//     displayName = "INF 11 - Clone Lieutenant";
-//     icon = "iconManOfficer";
 
-//     uniformClass = QCLASS(Uniform_CL);
-
-//     linkedItems[] =
-//     {
-//         QCLASS(Helmet_Phase1_CL), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase1_rangefinder), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         QCLASS(Helmet_Phase1_CL), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase1_rangefinder), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO
-//     };
-// };
 
 // // Start of Officer Ranks
 
-// class CLASS(Unit_Phase1_WO): CLASS(Unit_Phase1_Base)
-// {
-//     displayName = "INF 12 - Clone Warrant Officer";
-//     icon = "iconManOfficer";
+class CLASS(Unit_Phase1_WO): CLASS(Unit_Phase1_Base) {
+    displayName = "INF 12 - Clone Warrant Officer";
+    icon = "iconManOfficer";
+    uniformClass = QCLASS(Uniform_WO);
+    linkedItems[] = {QCLASS(Helmet_Phase1_WO), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO};
+    respawnLinkedItems[] = {QCLASS(Helmet_Phase1_WO), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO};
+};
+class CLASS(Unit_Phase1_WO2): CLASS(Unit_Phase1_Base) {
+    displayName = "INF 12 - Clone Warrant Officer 2";
+    icon = "iconManOfficer";
+    uniformClass = QCLASS(Uniform_WO2);
+    linkedItems[] = {QCLASS(Helmet_Phase1_WO), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO};
+    respawnLinkedItems[] = {QCLASS(Helmet_Phase1_WO), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO};
+};
+class CLASS(Unit_Phase1_WO3): CLASS(Unit_Phase1_Base) {
+    displayName = "INF 12 - Clone Warrant Officer 3";
+    icon = "iconManOfficer";
+    uniformClass = QCLASS(Uniform_WO3);
+    linkedItems[] = {QCLASS(Helmet_Phase1_WO), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO};
+    respawnLinkedItems[] = {QCLASS(Helmet_Phase1_WO), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO};
+};
 
-//     uniformClass = QCLASS(Uniform_WO);
+class CLASS(Unit_Phase1_CL): CLASS(Unit_Phase1_Base) {
+    displayName = "INF 14 - Clone Lieutenant";
+    icon = "iconManOfficer";
+    uniformClass = QCLASS(Uniform_CL);
+    linkedItems[] = {QCLASS(Helmet_Phase1_CL), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase1_rangefinder), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO};
+    respawnLinkedItems[] = {QCLASS(Helmet_Phase1_CL), QCLASS(Vest_Officer), QCLASS(cloneNvg_phase1_rangefinder), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO};
+};
 
-//     linkedItems[] =
-//     {
-//         QCLASS(Helmet_Phase1_WO), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         QCLASS(Helmet_Phase1_WO), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO
-//     };
-// };
-
-// class CLASS(Unit_Phase1_CL1): CLASS(Unit_Phase1_Base)
-// {
-//     displayName = "INF 13 - Clone 1st Lieutenant";
-//     icon = "iconManOfficer";
-
-//     uniformClass = QCLASS(Uniform_CL);
-
-//     linkedItems[] =
-//     {
-//         QCLASS(Helmet_Phase1_CL1), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO
-//     };
-//     respawnLinkedItems[] =
-//     {
-//         QCLASS(Helmet_Phase1_CL1), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO
-//     };
-// };
+class CLASS(Unit_Phase1_CL1): CLASS(Unit_Phase1_Base) {
+    displayName = "INF 15 - Clone 1st Lieutenant";
+    icon = "iconManOfficer";
+    uniformClass = QCLASS(Uniform_CL);
+    linkedItems[] = {QCLASS(Helmet_Phase1_CL1), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO};
+    respawnLinkedItems[] = {QCLASS(Helmet_Phase1_CL1), QCLASS(Vest_Officer), QCLASS(clonecloneNvg_phase1_officerVisorVisor), "ls_clone_phase1_hud", CLONE_LINKED_ITEMS_RADIO};
+};
 
 // class CLASS(Unit_Phase1_CAP): CLASS(Unit_Phase1_Base)
 // {

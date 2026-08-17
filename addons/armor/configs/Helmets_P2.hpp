@@ -292,7 +292,7 @@ class CLASS(Helmet_Phase2_WO3_Empire): CLASS(Helmet_Phase2_Base) {
 };
 
 class CLASS(Helmet_Phase2_CL): CLASS(Helmet_Phase2_Base) {
-    displayName = "[KC] INF P2 Helm 14 (Lieutenant, Empire)";
+    displayName = "[KC] INF P2 Helm 14 (Lieutenant)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\CL_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
