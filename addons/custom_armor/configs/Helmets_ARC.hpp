@@ -82,7 +82,23 @@ class CLASS(Helmet_ARC_TyrantCrimson_Worn): CLASS(Helmet_ARC_Tyrant_Worn) {
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
-class CLASS(Helmet_ARC_TyrantCrimson_On): CLASS(Helmet_ARC_Tyrant) {
+class CLASS(Helmet_ARC_Tyrant_On): CLASS(Helmet_ARC_Base) {
+    SCOPE_PUBLIC;
+    displayName = "[KC] SF ARC P1.5 Helm ('Tyrant') - PermaCrimson";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\arc\Tyrant_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa)
+   };
+   hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_ARC_Tyrant_On);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_ARC_TyrantCrimson_On);
+};
+class CLASS(Helmet_ARC_TyrantCrimson_On): CLASS(Helmet_ARC_Tyrant_On) {
+    SCOPE_HIDDEN;
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\Tyrant_camo1_co.paa),
         QPATHTOF(data\visors\Crimson_camo2_co.paa)
