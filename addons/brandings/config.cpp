@@ -2,7 +2,13 @@ class CfgPatches {
     class KC_Brandings {
         units[] = {};
         weapons[] = {};
-        requiredAddons[] = {};
+        requiredAddons[] = {"A3_Ui_F", "cba_main", "BNA_KC_music"};
+    };
+};
+
+class Extended_DisplayLoad_EventHandlers {
+    class RscDisplayMain {
+        KC_Brandings_MenuMusic = "if (isNil 'KC_Brandings_menuMusicLoopEH') then {KC_Brandings_menuMusicLoopEH = addMusicEventHandler ['MusicStop', {params ['_music']; if (_music == 'BNA_KC_Music_fooBAR_Menu_Version' && {!isNull findDisplay 0}) then {playMusic _music};}]}; playMusic 'BNA_KC_Music_fooBAR_Menu_Version';";
     };
 };
 
@@ -46,9 +52,8 @@ class RscDisplayStart: RscStandardDisplay {
 
 class RscDisplayMain: RscStandardDisplay {
     enableDisplay = 0;
-    delete Spotlight;
 
-    class Controls {
+    class controls {
         delete Spotlight1;
         delete Spotlight2;
         delete Spotlight3;
@@ -56,19 +61,10 @@ class RscDisplayMain: RscStandardDisplay {
         delete BackgroundSpotlightLeft;
         delete BackgroundSpotlight;
 
-
         class Logo: RscPicture {
             idc = -1;
-            x = 0.2;
-            y = -0.250;
-            w = 0.25;
-            h = 0.25;
-            text = "\ORA\BNA_KC\addons\brandings\images\KCLogo2.paa";
-        };
-        class Logo2: RscPicture {
-            idc = -1;
-            x = 0.375;
-            y = -0.250;
+            x = 0.375;    // centered (0.5 - 0.25/2)
+            y = -0.375;     // near top, below menu bar
             w = 0.25;
             h = 0.25;
             text = "\ORA\BNA_KC\addons\brandings\images\KCLogo2.paa";
@@ -77,7 +73,7 @@ class RscDisplayMain: RscStandardDisplay {
         class LogoButton: RscButton {
             idc = -1;
             x = 0.375;
-            y = -0.250;
+            y = -0.375;
             w = 0.25/2;
             h = 0.25;
             text = "";
@@ -90,7 +86,7 @@ class RscDisplayMain: RscStandardDisplay {
         class LogoButton2: RscButton {
             idc = -1;
             x = 0.500;
-            y = -0.250;
+            y = -0.375;
             w = 0.25/2;
             h = 0.25;
             text = "";

@@ -73,6 +73,7 @@ class CfgVehicles {
                 };
             };
         };
+
         class UserActions: UserActions {
             VS_ASSAULTSHIELD
         };

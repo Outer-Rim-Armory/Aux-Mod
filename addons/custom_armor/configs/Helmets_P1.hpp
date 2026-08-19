@@ -42,6 +42,32 @@ P1_HELMET_CUSTOM(Juno);
 P1_HELMET_CUSTOM(Kage);
 P1_HELMET_VISOR_CUSTOM(Keeli,Crimson);
 
+class CLASS(Helmet_Phase1_Keeli_On): CLASS(Helmet_Phase1_Keeli) {
+    displayName = "[KC] INF P1 Helm ('Keeli') - Perma Crimson";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\Keeli_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Keeli_On);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase1_KeeliCrimson_On);
+};
+class CLASS(Helmet_Phase1_KeeliCrimson_On): CLASS(Helmet_Phase1_Keeli) {
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\camo\worn\Keeli_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
+
 class CLASS(Helmet_Phase1_Keeli_CamoBrown): CLASS(Helmet_Phase1_Keeli) {
     displayName = "[KC] INF P1 Helm ('Keeli') - Brown Camo";
     hiddenSelectionsTextures[] = {
@@ -114,6 +140,36 @@ class CLASS(Helmet_Phase1_Keeli_Worn): CLASS(Helmet_Phase1_Keeli) {
     };
 };
 class CLASS(Helmet_Phase1_KeeliCrimson_Worn): CLASS(Helmet_Phase1_Keeli_Worn) {
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\camo\worn\Keeli_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
+class CLASS(Helmet_Phase1_Keeli_Worn_On): CLASS(Helmet_Phase1_Keeli) {
+    displayName = "[KC] INF P1 Helm ('Keeli') - Worn";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\camo\worn\Keeli_camo1_co.paa),
+         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_Phase1_Keeli_Worn_On);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_Phase1_KeeliCrimson_Worn_On);
+
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Worn";
+    };
+};
+class CLASS(Helmet_Phase1_KeeliCrimson_Worn_On): CLASS(Helmet_Phase1_Keeli_Worn) {
     SCOPE_HIDDEN;
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase1\camo\worn\Keeli_camo1_co.paa),
