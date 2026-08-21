@@ -23,13 +23,15 @@ params ["_unit", "", "_vehicle"];
 TRACE_2("fnc_getOutMan",_unit,_vehicle);
 
 if !(GVAR(easyEjection)) exitWith { false };
+ if (vehicle player isKindOf "ParachuteBase") exitWith {};
 
 if (_unit != ace_player or {
     !(_unit call FUNC(hasJetpack) or {
         // Prevent soft dependency on JLTS
-        missionNamespace getVariable ["JLTS_settings_jumppack_mainSwitch", false] && {
+        (missionNamespace getVariable ["JLTS_settings_jumppack_mainSwitch", 0] ) == 1 && {
             private _backpack = backpack _unit;
             _backpack call JLTS_fnc_jumpIsJumppack;
+
         }
     })
 }) exitWith { false };

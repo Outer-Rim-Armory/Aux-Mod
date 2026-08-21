@@ -914,13 +914,90 @@ class CfgVehicles {
 
     class CLASS(Backpack_Radio_Crocea): CLASS(Backpack_Radio_Base) {
         SCOPE_HIDDEN;
-    displayName = "[KC] Crocea Backpack (LR)";
+    displayName = "[KC] Crocea Backpack [LR]";
     hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\standard\Crocea_Backpack_co.paa),
             QPATHTOF(data\backpacks\standard\Crocea_LR_Attachment_co.paa),
             QPATHTOF(data\backpacks\standard\Crocea_LR_Screen_co.paa)
         };
     };
+
+
+    class B_Parachute;
+    class CLASS(Backpack_Parachute): B_Parachute {
+        displayName = "[KC] Reusable Parachute [LR]";
+
+        // hiddenSelections[] = {"Camo"};
+        //hiddenSelectionsTextures[] = {QPATHTOF(data\backpacks\parachute\backpack_parachute_co.paa)};
+
+        model = "\ls\core\addons\characters_clone_legacy\backpacks\standard\ls_gar_standard_backpack.p3d";
+        hiddenSelections[] = {"backpack", "cover"};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\standard\CT_camo1_co.paa),
+            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\cover_co.paa"
+        };
+
+        SCOPE_PUBLIC;
+
+        ls_equipment_saveParachuteInventory = 1;
+
+        maximumLoad = 400;
+        parachuteClass = QCLASS(Backpack_Parachute_Deployed);
+        ace_hasReserveParachute = 1;
+        ace_reserveParachute = QCLASS(Backpack_Parachute);
+
+        // TFAR Long Range
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+
+        tf_dialog = "ls_radios_cloneLR";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+
+        class ACE_SelfActions {
+            class Emergency_Parachute {
+                displayName = "Emergency Parachute";
+                condition = "((getposATL player) select 2) >= 20";
+                exceptions[] = {};
+                statement = "_player action ['OpenParachute', _player];";
+                icon = "\A3\ui_f\data\map\markers\nato\respawn_para_ca.paa";
+            };
+        };
+    };
+
+    class Steerable_Parachute_F;
+    class CLASS(Backpack_Parachute_Deployed): Steerable_Parachute_F {
+        displayName = "[KC] Reusable Parachute (Deployed)";
+        SCOPE_HIDDEN;
+
+
+        model = "\ls\core\addons\characters\backpacks\hawkbat\ls_parachute_hawkbat.p3d";
+        hiddenSelections[] = {"camo1", "camo2", "camo3"};
+        hiddenSelectionsTextures[] = {
+            "\ls\core\addons\characters_clone_legacy\backpacks\hawkbat\data\parachute\camo1_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\hawkbat\data\parachute\camo2_co.paa",
+            "\ls\core\addons\characters_clone_legacy\backpacks\hawkbat\data\parachute\camo3_co.paa"
+        };
+
+        animationOpen = "ls\core\addons\animations\data\vehicle\hawkbat\ls_hawkbat_open.rtm";
+        animationDrop = "";
+        duration = 1;
+
+
+
+        tf_hasLRradio = TRUE;
+        tf_range = 25000;
+
+        tf_dialog = "ls_radios_cloneLR";
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_subtype = "digital_lr";
+    };
+
+
+
+
 
     #include "configs\GroundHolders.hpp"
 };

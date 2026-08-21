@@ -142,6 +142,7 @@ class CfgPatches {
             QCLASS(Backpack_ARC_V2),
             QCLASS(Backpack_ARC_Brown),
             QCLASS(Backpack_ARC_Gray),
+            QCLASS(Backpack_Parachute),
             QCLASS(cloneBackpack_commando),
             QCLASS(cloneBackpack_commando_Red),
             QCLASS(cloneBackpack_commando_EOD),

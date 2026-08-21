@@ -60,3 +60,18 @@
     {},    // KeyUp
     [DIK_SPACE, [false, true, false]]    // Ctrl + Spacebar
 ] call CBA_fnc_addKeybind;
+
+[
+    [QUOTE(MOD_NAME), QUOTE(COMPONENT_BEAUTIFIED)],
+    QGVAR(key_parachute),
+    ["Deploy Parachute", "Deploys Parachute if equipped (min 20m)."],
+    {
+        if (((getPosATL ace_player) select 2) >= 20) then {
+            if !(isTouchingGround ace_player) then {
+               ace_player action ['OpenParachute', ace_player];
+            };
+        };
+    },     // KeyDown
+    {},    // KeyUp
+    [DIK_SPACE, [true, false, false]]    // shift + Spacebar
+] call CBA_fnc_addKeybind;
