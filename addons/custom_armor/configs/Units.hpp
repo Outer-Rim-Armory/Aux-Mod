@@ -389,26 +389,26 @@ class CLASS(Unit_Goldie): CLASS(Unit_Phase2_Base) {
     };
 };
 
-class CLASS(Unit_Grey): CLASS(Unit_Phase2_Base) {
-    displayName = "Grey";
-
-    editorSubcategory = QEDSUBCAT(Customs);
-    editorPreview = EDITOR_PREVIEW(Unit_Grey);
-
-    uniformClass = QCLASS(Uniform_Grey);
-    hiddenSelectionsTextures[] = {
-        QPATHTOF(data\uniforms\standard\Grey_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\Grey_lower_co.paa),
-        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
-    };
-
-    linkedItems[] = {
-        QCLASS(Helmet_P2_Grey), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
-    };
-    respawnLinkedItems[] = {
-        QCLASS(Helmet_P2_Grey), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
-    };
-};
+//class CLASS(Unit_Grey): CLASS(Unit_Phase2_Base) {
+//    displayName = "Grey";
+//
+//    editorSubcategory = QEDSUBCAT(Customs);
+//    editorPreview = EDITOR_PREVIEW(Unit_Grey);
+//
+//    uniformClass = QCLASS(Uniform_Grey);
+//    hiddenSelectionsTextures[] = {
+//        QPATHTOF(data\uniforms\standard\Grey_upper_co.paa),
+//        QPATHTOF(data\uniforms\standard\Grey_lower_co.paa),
+//        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+//    };
+//
+//    linkedItems[] = {//
+//        QCLASS(Helmet_P2_Grey), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//    };
+//    respawnLinkedItems[] = {//
+//        QCLASS(Helmet_P2_Grey), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+//    };
+//};
 
 class CLASS(Unit_Hagrid): CLASS(Unit_Phase2_Base) {
     displayName = "Hagrid";

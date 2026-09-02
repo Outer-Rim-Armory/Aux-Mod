@@ -99,6 +99,7 @@ class CfgMagazines {
         descriptionShort = "Type: HE Grenade <br />Rounds: 10 <br />Used in: UGLs";
         mass = 40;
         count = 10;
+        modelSpecial = "\a3\Weapons_F\MagazineProxies\mag_40x36_HE_1rnd.p3d";
 
         weaponPoolAvailable = TRUE;
         ammo = QCLASS(UGL_Grenade_HE);

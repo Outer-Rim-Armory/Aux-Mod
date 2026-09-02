@@ -107,6 +107,30 @@ class CfgVehicles {
                     QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa)
                 };
             };
+            class Cough: KeeliCompany {
+                displayName = "Cough";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\cough\Cough_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\cough\Cough_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\cough\Cough_Interior_co.paa)
+                };
+            };
+            class Goldie: KeeliCompany {
+                displayName = "Goldie";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\goldie\Goldie_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\goldie\Goldie_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\goldie\Goldie_Interior_co.paa)
+                };
+            };
+            class Jester: KeeliCompany {
+                displayName = "Jester";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\jester\Jester_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\jester\Jester_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\jester\Jester_Interior_co.paa)
+                };
+            };
         };
 
         class UserActions: UserActions {
@@ -126,6 +150,21 @@ class CfgVehicles {
                 displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
                 statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+            };
+            class HornGoldie: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Goldie] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Goldie' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Goldie_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+            };
+            class HornCough: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Cough] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Cough' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Cough_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+            };
+            class HornJester: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Jester] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Jester' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Jester_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
             };
         };
 
