@@ -60,7 +60,7 @@ class CLASS(Helmet_Phase1_Keeli_On): CLASS(Helmet_Phase1_Keeli) {
 class CLASS(Helmet_Phase1_KeeliCrimson_On): CLASS(Helmet_Phase1_Keeli) {
     SCOPE_HIDDEN;
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\phase1\camo\worn\Keeli_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\Keeli_camo1_co.paa),
         QPATHTOF(data\visors\Crimson_camo2_co.paa),
     };
     hiddenSelectionsMaterials[] = {
