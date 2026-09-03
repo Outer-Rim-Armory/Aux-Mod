@@ -154,7 +154,7 @@ class CfgVehicles {
             class HornGoldie: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Goldie] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Goldie' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Goldie_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Goldie_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
             };
             class HornCough: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Cough] </t>";
@@ -164,7 +164,7 @@ class CfgVehicles {
             class HornJester: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Jester] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Jester' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Jester_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Jester_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
             };
         };
 
