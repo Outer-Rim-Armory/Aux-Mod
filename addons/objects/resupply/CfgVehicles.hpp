@@ -68,8 +68,8 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_20Rnd_DC17),10);
 
             // Launcher Ammo
-            MAG_XX(3AS_JLTS_MK39_AA,2);
-            MAG_XX(3AS_JLTS_MK44_HE,2);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_AA),2);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_HE),2);
             MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),2);
 
             // Grenades
@@ -120,8 +120,8 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_20Rnd_DC17),50);
 
             // Launcher Ammo
-            MAG_XX(3AS_JLTS_MK39_AA,5);
-            MAG_XX(3AS_JLTS_MK44_HE,5);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_AA),5);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_HE),5);
             MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),10);
 
             // Grenades
@@ -336,9 +336,9 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_5Rnd_Valken38x_AP),50);
 
             // PLX Ammo
-            MAG_XX(3AS_JLTS_MK43_AT,5);
-            MAG_XX(3AS_JLTS_MK44_HE,5);
-            MAG_XX(3AS_JLTS_MK39_AA,5);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_AT),5);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_HE),5);
+            MAG_XX(CLASS(Mag_3Rnd_PLX1_AA),5);
 
             // UGL Ammo
             MAG_XX(ACE_HuntIR_M203,20);

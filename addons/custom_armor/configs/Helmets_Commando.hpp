@@ -17,3 +17,4 @@ class CLASS(Helmet_RC_Jaws_Gray): CLASS(cloneCommando_helmet) {
 };
 RC_HELMET_CUSTOM(Cutthroat);
 RC_HELMET_CUSTOM(Moskoni);
+RC_HELMET_CUSTOM(Nines);

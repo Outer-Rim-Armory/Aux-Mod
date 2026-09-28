@@ -35,6 +35,8 @@ class CLASS(Helmet_Phase1_HowzerBrown): CLASS(Helmet_Phase1_Base) {
     };
 };
 
+P1_HELMET_UNIT(327th);
+P1_HELMET_UNIT(327thV2);
 P1_HELMET_UNIT(104th);
 P1_HELMET_UNIT(212th);
 P1_HELMET_UNIT(501st);

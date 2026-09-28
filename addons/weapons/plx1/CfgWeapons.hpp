@@ -149,7 +149,7 @@ class CfgWeapons
 			priority=3;
 		};
 		weaponLockDelay=3;
-		weaponLockSystem=2;
+		weaponLockSystem=12;
 		cmImmunity=0.2;
 		ace_javelin_enabled=1;
 		class OpticsModes

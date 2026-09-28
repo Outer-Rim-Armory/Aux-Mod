@@ -308,3 +308,24 @@ class CLASS(Unit_327th_Trooper): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_327th), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+
+class CLASS(Unit_327th_V2_Trooper): CLASS(Unit_Phase2_Base) {
+    displayName = "Clone Trooper";
+    faction = QFACTION(GAR);
+    editorSubcategory = QEDSUBCAT(327th);
+    editorPreview = EDITOR_PREVIEW(Unit_327th_Trooper);
+
+    uniformClass = QCLASS(Uniform_327th_V2);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\327thV2_upper_co.paa),
+        QPATHTOF(SUBCOMPONENT\data\uniforms\standard\327thV2_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_327th), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_327th), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};

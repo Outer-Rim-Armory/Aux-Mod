@@ -4,7 +4,7 @@ class CfgAmmo {
         SCOPE_PUBLIC;
         aiAmmoUsageFlags = "128 + 256";
         airFriction = 0.085;
-        airLock = 2;
+        airLock = 1;
         ace_rearm_caliber = 250;
         ace_vehicle_damage_incendiary = 1;
         cost = 500;
@@ -18,7 +18,8 @@ class CfgAmmo {
         hit = 1400;
         indirectHit = 20;
         indirectHitRange = 2;
-        irLock = 2;
+        irLock = 1;
+        lockType = 0;
         lockSeekRadius = 100;
         maxControlRange = 2000;
         maxSpeed = 180;

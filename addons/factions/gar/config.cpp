@@ -24,6 +24,8 @@ class CfgPatches {
             QCLASS(Unit_501st_Trooper),
             QCLASS(Unit_91st_Trooper),
             QCLASS(Unit_91st_Ponds),
+            QCLASS(Unit_327th_Trooper),
+            QCLASS(Unit_327th_V2_Trooper),
             QCLASS(Unit_612th_Ganch),
             QCLASS(Unit_612th_15S),
             QCLASS(Unit_612th_15A),
@@ -71,6 +73,8 @@ class CfgPatches {
             QCLASS(Helmet_Phase1_501st),
             QCLASS(Helmet_Phase1_91st),
             QCLASS(Helmet_Phase1_91st_Ponds),
+            QCLASS(Helmet_Phase1_327th),
+            QCLASS(Helmet_Phase1_327thV2),
 
             QCLASS(Helmet_Phase2_CG),
             QCLASS(Helmet_Phase2_CG_Stone),
@@ -99,7 +103,9 @@ class CfgPatches {
             QCLASS(Uniform_212th),
             QCLASS(Uniform_501st),
             QCLASS(Uniform_91st),
-            QCLASS(Uniform_91st_Ponds)
+            QCLASS(Uniform_91st_Ponds),
+            QCLASS(Uniform_327th),
+            QCLASS(Uniform_327th_V2)
         };
         VERSION_CONFIG;
     };

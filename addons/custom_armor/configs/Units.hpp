@@ -219,6 +219,27 @@ class CLASS(Unit_Cutthroat): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Dandy): CLASS(Unit_Phase2_Base) {
+    displayName = "Dandy";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Dandy);
+
+    uniformClass = QCLASS(Uniform_Dandy);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Dandy_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Dandy_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Engineer_Dandy), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Engineer_Dandy), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Defter): CLASS(Unit_Phase2_Base) {
     displayName = "Defter";
 
@@ -1185,6 +1206,24 @@ class CLASS(Unit_RC_Cutthroat): CLASS(cloneCommando_unit_base) {
         QCLASS(Helmet_RC_Cutthroat), QCLASS(Cutthroat_RC_Vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
     };
     backpack = QCLASS(Cutthroat_Backpack);
+};
+class CLASS(Unit_RC_Nines): CLASS(cloneCommando_unit_base) {
+    SCOPE_PUBLIC;
+    displayName = "Nines (RC)";
+    editorSubcategory = QEDSUBCAT(Customs);
+    uniformClass = QCLASS(Uniform_RC_Nines);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\commando\Nines_upper_co.paa),
+        QPATHTOF(data\uniforms\commando\Nines_lower_co.paa),
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_RC_Nines), QCLASS(Nines_RC_Vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_RC_Nines), QCLASS(Nines_RC_Vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    backpack = QCLASS(Nines_Backpack);
 };
 class CLASS(Unit_RC_Moskoni): CLASS(cloneCommando_unit_base) {
     SCOPE_PUBLIC;

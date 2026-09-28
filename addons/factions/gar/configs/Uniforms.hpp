@@ -145,3 +145,12 @@ class CLASS(Uniform_327th): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_327th_Trooper);
     };
 };
+
+class CLASS(Uniform_327th_V2): CLASS(Uniform_Base) {
+    displayName = "[327th] INF Armor (V2)";
+    EGVAR(custom_armor,isCustom) = TRUE;
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_327th_V2_Trooper);
+    };
+};

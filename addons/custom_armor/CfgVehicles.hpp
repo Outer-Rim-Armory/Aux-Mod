@@ -155,6 +155,14 @@ class CfgVehicles {
             QPATHTOF(data\backpacks\Cutthroat\Cutthroat_Tech_Backpack_co.paa)
         };
     };
+    class CLASS(Nines_Backpack): CLASS(cloneBackpack_commando_EOD) {
+        displayName = "[KC] Nines Commando Backpack";
+
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\backpacks\Nines\Nines_Backpack_co.paa),
+            QPATHTOF(data\backpacks\Nines\Nines_Backpack_co.paa)
+        };
+    };
 
 class CLASS(Moskoni_Backpack): CLASS(cloneBackpack_commando_Tech) {
         displayName = "[KC] Moskoni Commando Backpack";
