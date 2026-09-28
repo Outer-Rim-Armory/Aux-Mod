@@ -425,7 +425,9 @@ class CLASS(Vest_Kujo): CLASS(Vest_CS) {
     class CLASS(Nines_RC_Vest): CLASS(cloneCommando_Sniper_vest) {
         displayName = "[KC] SF Clone Commando Sniper Vest ('Nines')";
         hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\nines\Nines_Sniper_CO.paa),
             QPATHTOF(data\vests\nines\Nines_Sniper_CO.paa)
+
         };
     };
     class CLASS(Moskoni_RC_Vest): CLASS(cloneCommando_Tech_vest) {

@@ -24,6 +24,7 @@ UNIFORM_CUSTOM(Calvin);
 UNIFORM_CUSTOM(Catholic);
 UNIFORM_CUSTOM(Cough);
 UNIFORM_CUSTOM(Cutthroat);
+UNIFORM_CUSTOM(Dandy);
 UNIFORM_CUSTOM(Defter);
 UNIFORM_CUSTOM(Destiny);
 class CLASS(Uniform_Destiny_Worn): CLASS(Uniform_Destiny) {
