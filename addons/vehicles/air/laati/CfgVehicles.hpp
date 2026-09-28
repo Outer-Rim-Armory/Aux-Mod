@@ -420,6 +420,63 @@ class CfgVehicles {
             class CargoTurret_05: CargoTurret_05 {};
             class CargoTurret_06: CargoTurret_06 {};
         };
+        		class Reflectors
+		{
+			class Left
+			{
+				color[]={7000,7500,10000};
+				ambient[]={70,75,100};
+				intensity=350;
+				size=5;
+				innerAngle=15;
+				outerAngle=200;
+				coneFadeCoef=10;
+				position="Light_L_Pos";
+				direction="Light_L_Dir";
+				hitpoint="Light_b_hitpoint";
+				selection="Light_L_Lamp";
+				useFlare=1;
+				flareSize=15;
+				flareMaxDistance=1000;
+				dayLight=0;
+				class Attenuation
+				{
+					start=0;
+					constant=0;
+					linear=1;
+					quadratic=1;
+					hardLimitStart=300;
+					hardLimitEnd=400;
+				};
+			};
+			class Right
+			{
+				color[]={7000,7500,10000};
+				ambient[]={70,75,100};
+				intensity=350;
+				size=5;
+				innerAngle=15;
+				outerAngle=200;
+				coneFadeCoef=10;
+				position="Light_R_Pos";
+				direction="Light_R_Dir";
+				hitpoint="Light_b_hitpoint";
+				selection="Light_R_Lamp";
+				useFlare=1;
+				flareSize=15;
+				flareMaxDistance=1000;
+				dayLight=0;
+				class Attenuation
+				{
+					start=0;
+					constant=0;
+					linear=1;
+					quadratic=1;
+					hardLimitStart=300;
+					hardLimitEnd=400;
+				};
+			};
+		};
     };
 
     class CLASS(LAATi_MK2): CLASS(LAATi_Base) {
@@ -452,6 +509,63 @@ class CfgVehicles {
                 initPhase = 1;
             };
         };
+        		class Reflectors
+		{
+			class Left
+			{
+				color[]={7000,7500,10000};
+				ambient[]={70,75,100};
+				intensity=350;
+				size=5;
+				innerAngle=15;
+				outerAngle=200;
+				coneFadeCoef=10;
+				position="Light_L_Pos";
+				direction="Light_L_Dir";
+				hitpoint="Light_b_hitpoint";
+				selection="Light_L_Lamp";
+				useFlare=1;
+				flareSize=15;
+				flareMaxDistance=1000;
+				dayLight=0;
+				class Attenuation
+				{
+					start=0;
+					constant=0;
+					linear=1;
+					quadratic=1;
+					hardLimitStart=300;
+					hardLimitEnd=400;
+				};
+			};
+			class Right
+			{
+				color[]={7000,7500,10000};
+				ambient[]={70,75,100};
+				intensity=350;
+				size=5;
+				innerAngle=15;
+				outerAngle=200;
+				coneFadeCoef=10;
+				position="Light_R_Pos";
+				direction="Light_R_Dir";
+				hitpoint="Light_b_hitpoint";
+				selection="Light_R_Lamp";
+				useFlare=1;
+				flareSize=15;
+				flareMaxDistance=1000;
+				dayLight=0;
+				class Attenuation
+				{
+					start=0;
+					constant=0;
+					linear=1;
+					quadratic=1;
+					hardLimitStart=300;
+					hardLimitEnd=400;
+				};
+			};
+		};
     };
         class CLASS(LAATi_Med): CLASS(LAATi_Base) {
         SCOPE_PUBLIC;

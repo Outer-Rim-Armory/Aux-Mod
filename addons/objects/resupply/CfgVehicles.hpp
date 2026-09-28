@@ -442,6 +442,23 @@ class CfgVehicles {
         };
     };
 
+        class CLASS(Resupply_Levi): CLASS(Resupply_Base) {
+        displayName = "16: Leviathan Crate";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+        class TransportWeapons {
+        };
+        class TransportItems {
+        };
+        class TransportMagazines {
+            MAG_XX(CLASS(Mag_FusionCutter),5);
+            MAG_XX(3AS_FusionCutter_Dewreck_Magazine,5);
+            MAG_XX(3AS_FusionCutter_Fortification_Magazine,5);
+            MAG_XX(3AS_FusionCutter_Splice_Magazine,5);
+        };
+    };
+
         class CLASS(Resupply_BigCrate_Squad): CLASS(Resupply_Base) {
         displayName = "B1: Big Squad Crate";
         model = "3as\3as_props\crates\models\large_crate1.p3d";
@@ -564,6 +581,7 @@ class CfgVehicles {
         class ace_cargo {
             class cargo{
                 // CARGO_XX(Type of box, ammout of boxes);
+                CARGO_XX(CLASS(Resupply_Levi),1);
                 CARGO_XX(CLASS(Resupply_SquadAmmo),1);
                 CARGO_XX(CLASS(Resupply_Misc),1);
                 CARGO_XX(CLASS(Resupply_Sapper),1);

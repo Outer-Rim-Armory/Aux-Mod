@@ -75,6 +75,7 @@ class CLASS(Vest_Airborne_CS): CLASS(Vest_Airborne_CT) {
 class CLASS(Vest_Airborne_WO): CLASS(Vest_Officer) {
     SCOPE_PUBLIC;
     displayName = "[KC] AB Vest 12 (Officer)";
+    maximumLoad = 250;
     model = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborneOfficer_vest.p3d";
     hiddenSelections[] = {"camo1", "camo2", "camo3", "ammo"};
     hiddenSelectionsTextures[] = {
@@ -88,7 +89,7 @@ class CLASS(Vest_Airborne_WO): CLASS(Vest_Officer) {
     class ItemInfo: ItemInfo {
         uniformModel = "\ls\core\addons\characters_clone_legacy\vests\airborne\ls_gar_airborneOfficer_vest.p3d";
         hiddenSelections[] = {"camo1", "camo2", "camo3", "ammo"};
-        maximumLoad = 250;
+        containerClass = "Supply250"; // actually gives it the Carry capacity
     };
 };
 

@@ -28,6 +28,7 @@ class CfgPatches {
             QCLASS(Resupply_Sapper),
             QCLASS(Resupply_Spartan),
             QCLASS(Mortar_Crate),
+            QCLASS(Resupply_Levi),
             QCLASS(Resupply_BigCrate_Squad),
             QCLASS(Resupply_BigCrate_Platoon),
             QCLASS(Resupply_BigCrate_Carnage),
