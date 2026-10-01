@@ -628,7 +628,7 @@ class CfgVehicles {
         };
     };
     class CLASS(cloneBackpack_Venom_commando): CLASS(cloneBackpack_commando) {
-        displayName = "[KC] SF Commando Backpack (Venom)";
+        displayName = "[KC] SF Commando Backpack (Riot)";
 
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\commando\Venom_Backpack_co.paa),
@@ -686,7 +686,7 @@ class CfgVehicles {
         };
     };
     class CLASS(cloneBackpack_commando_EOD_Venom): CLASS(cloneBackpack_commando_Red) {
-        displayName = "[KC] SF Commando EOD Backpack (Venom)";
+        displayName = "[KC] SF Commando EOD Backpack (Tremor)";
         model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_eod.p3d";
         picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_eod_ui_ca.paa";
         hiddenSelections[] = {"illum", "camo1"};
@@ -715,7 +715,7 @@ class CfgVehicles {
         };
     };
     class CLASS(cloneBackpack_commando_RTO_Venom): CLASS(cloneBackpack_commando_Red) {
-        displayName = "[KC] SF Commando Radio Backpack (Venom)";
+        displayName = "[KC] SF Commando Radio Backpack (Agony)";
         model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_rto.p3d";
         picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_rto_ui_ca.paa";
         hiddenSelections[] = {"illum", "camo1"};
@@ -750,7 +750,7 @@ class CfgVehicles {
         picture = "\ls\core\addons\characters_clone_legacy\_ui\commando_backpack_ui_ca.paa";
     };
     class CLASS(cloneBackpack_Venom_commando_Tech): CLASS(cloneBackpack_commando) {
-        displayName = "[KC] SF Commando Tech Backpack (Venom)";
+        displayName = "[KC] SF Commando Tech Backpack (Hive)";
         model = "\ls\core\addons\characters_clone_legacy\backpacks\commando\ls_backpack_clone_commando_tech.p3d";
         hiddenSelections[] = {"illum", "camo1", "camo2"};
         hiddenSelectionsTextures[] = {

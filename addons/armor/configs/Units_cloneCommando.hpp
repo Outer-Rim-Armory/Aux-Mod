@@ -137,7 +137,7 @@ class CLASS(cloneCommando_Agony_unit): CLASS(cloneCommando_Riot_unit) {
     respawnLinkedItems[] = {
         QCLASS(cloneCommando_Agony_helmet), QCLASS(cloneCommando_vest), QCLASS(cloneNvg_chip), "lsd_gar_republicCommando_hud", CLONE_LINKED_ITEMS_RADIO
     };
-    backpack = QCLASS(cloneBackpack_Venom_commando);
+    backpack = QCLASS(cloneBackpack_commando_RTO_Venom);
 };
 class CLASS(cloneCommando_Tremor_unit): CLASS(cloneCommando_Riot_unit) {
     SCOPE_PUBLIC;

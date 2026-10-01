@@ -130,7 +130,7 @@ class CLASS(cloneCommando_Hood_Grey_vest): CLASS(cloneCommando_basic_vest) {
     };
 };
 class CLASS(cloneCommando_Venom_SL_vest): CLASS(cloneCommando_SL_vest) {
-    displayName = "[KC] SF Clone Commando SL Pauldron (Venom)";
+    displayName = "[KC] SF Clone Commando SL Pauldron (Riot)";
     model = "\ls\core\addons\characters_clone_legacy\vests\commando\ls_vest_clone_commando_sl.p3d";
     hiddenSelections[] = {"camo1",};
     hiddenSelectionsTextures[] = {QPATHTOF(data\vests\commando\Venom_Shoulder sl_co.paa)};
@@ -154,7 +154,7 @@ class CLASS(cloneCommando_Shield_SL_vest): CLASS(cloneCommando_SL_vest) {
     };
 };
 class CLASS(cloneCommando_Venom_Tech_vest): CLASS(cloneCommando_basic_vest) {
-    displayName = "[KC] SF Commando Tech Vest (Venom)";
+    displayName = "[KC] SF Commando Tech Vest (Hive)";
     model = "\ls\core\addons\characters_clone_legacy\vests\commando\ls_vest_clone_commando_tech.p3d";
     hiddenSelections[] = {"camo1"};
     hiddenSelectionsTextures[] = {QPATHTOF(data\vests\commando\Venom_Shoulder_Tech_co.paa)};
