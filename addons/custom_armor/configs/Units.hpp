@@ -1041,28 +1041,6 @@ class CLASS(Unit_Tyrant): CLASS(Unit_Phase2_Base) {
     };
 };
 
-class CLASS(Unit_Weenie): CLASS(Unit_Phase2_Base) {
-    displayName = "Weenie";
-
-    editorSubcategory = QEDSUBCAT(Customs);
-    editorPreview = EDITOR_PREVIEW(Unit_Weenie);
-
-    uniformClass = QCLASS(Uniform_Weenie);
-    backpack = QCLASS(Backpack_Radio_Mini);
-    hiddenSelectionsTextures[] = {
-        QPATHTOF(data\uniforms\standard\Weenie_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\Weenie_lower_co.paa),
-        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
-    };
-
-    linkedItems[] = {
-        QCLASS(Helmet_Phase2_Weenie), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
-    };
-    respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase2_Weenie), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
-    };
-};
-
 class CLASS(Unit_Woods): CLASS(Unit_Phase2_Base) {
     displayName = "Wood's";
 
@@ -1096,16 +1074,16 @@ class CLASS(Unit_Phase2_Insulated_Dexus): CLASS(Unit_Phase2_Insulated_Base) {
     };
 };
 
-class CLASS(Unit_Phase2_Insulated_Jaws): CLASS(Unit_Phase2_Insulated_Base) {
-    SCOPE_HIDDEN;
-    uniformClass = QCLASS(Uniform_Phase2_Insulated_Jaws);
-    hiddenSelectionsTextures[] = {
-        QPATHTOF(data\uniforms\insulated\Jaws_upper_co.paa),
-        QPATHTOF(data\uniforms\insulated\Jaws_lower_co.paa),
-        "\ls\core\addons\characters_clone_legacy\uniforms\phase2Insulated\data\undersuit_co.paa"
-    };
-
-};
+//class CLASS(Unit_Phase2_Insulated_Jaws): CLASS(Unit_Phase2_Insulated_Base) {
+//    SCOPE_HIDDEN;
+//    uniformClass = QCLASS(Uniform_Phase2_Insulated_Jaws);
+//    hiddenSelectionsTextures[] = {
+//        QPATHTOF(data\uniforms\insulated\Jaws_upper_co.paa),
+//        QPATHTOF(data\uniforms\insulated\Jaws_lower_co.paa),
+//        "\ls\core\addons\characters_clone_legacy\uniforms\phase2Insulated\data\undersuit_co.paa"
+//    };
+//
+//};
 class CLASS(Unit_Phase2_Insulated_Joe): CLASS(Unit_Phase2_Insulated_Base) {
     SCOPE_HIDDEN;
     uniformClass = QCLASS(Uniform_Phase2_Insulated_Joe);

@@ -14,7 +14,6 @@ class CfgVehicles {
 
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Turrets);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,VenatorCannon_Base);
         armor = 150;
 
         displayName = "Venator Cannon (Base)";

@@ -290,4 +290,4 @@ class CLASS(mapctrl_resup): RscControlsGroupNoScrollbars
 	};
 };
 
-DP_DISPLAY(mapctrl_TurbolaserV, Turbolaser Volley)
+DP_DISPLAY(mapctrl_TurbolaserV,Turbolaser Volley)

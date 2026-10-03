@@ -136,9 +136,9 @@ class CfgWeapons {
         SCOPE_PUBLIC;
         displayName = "[CB] Clan Bel Undersuit";
         model = "\z\tgf\addons\undersuit\undersuit_male.p3d";
-        hiddenSelections[] = {"cbmo1","cbmo2"};
+        hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsTextures[] = {
-            QPATHTOF(cb\data\undersuit\Bel_cbmo1_co.paa),
+            QPATHTOF(cb\data\undersuit\Bel_camo1_co.paa),
             "\z\tgf\addons\undersuit\data\camo2_co.paa"
             };
 

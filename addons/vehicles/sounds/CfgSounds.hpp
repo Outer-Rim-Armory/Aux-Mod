@@ -39,10 +39,6 @@ class CfgSounds {
         name = "Harry Horn";
         sound[] = {QPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss), 30, 1, 100};
     };
-    class CLASS(Sound_Horn_Swoop): CLASS(Sound_Horn_Wyvern) {
-        name = "Harry Horn";
-        sound[] = {QPATHTOF(sounds\data\audio\hornet\Swoop_Horn.wss), 30, 1, 100};
-    };
     class CLASS(Sound_Horn_Carnage): CLASS(Sound_Horn_Wyvern) {
         name = "Carnage Horn";
         sound[] = {QPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss), 30, 1, 100};

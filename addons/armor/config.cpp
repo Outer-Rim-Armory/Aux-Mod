@@ -8,7 +8,6 @@ class CfgPatches {
         requiredAddons[] = {
             QCLASS(core),
             "ls_characters_clone_legacy",
-            "ls_armor_bluefor",
             "lsd_units_bluefor",
             "lsd_equipment_bluefor",
             "JLTS_core",
@@ -621,8 +620,6 @@ class CfgPatches {
             QCLASS(Vest_ARC_Light),
             QCLASS(Vest_ARC_v2),
             QCLASS(Vest_ARC_NightShade),
-            QCLASS(Vest_ARC_Phase1Geo_Officer),
-            QCLASS(Vest_ARC_Phase1Geo_Captain),
             QCLASS(Vest_ARC_Plate),
             QCLASS(Vest_ARC_Ceremonial),
             QCLASS(Vest_Commander_Phase1Geo),

@@ -87,7 +87,7 @@ class GVAR(deleteCrew) { \
     }; \
     class HUD_Clear: HUD_White { \
         displayName = "No Hud"; \
-        icon = QPATHTOEF(data,icons\hud\noHud_ca.paa); \
+        icon = QPATHTOEF(core,data\ui\noHud_ca.paa); \
         statement = QUOTE([ARR_2(_target,[ARR_4(0,0,0,0)])] call EFUNC(vehicles,setHudColor)); \
     }; \
 }
@@ -374,55 +374,3 @@ class TransportItems { \
     QCLASS(TX130_Super), \
     QCLASS(UTAT) \
 ]
-
-#define SENSORTEMPLATES class SensorTemplatePassiveRadar{ \
-    class components; \
-}; \
-class SensorTemplateAntiRadiation{ \
-    class components; \
-}; \
-class SensorTemplateActiveRadar{ \
-    class components; \
-}; \
-class SensorTemplateIR{ \
-    class components; \
-}; \
-class SensorTemplateVisual{ \
-    class components; \
-}; \
-class SensorTemplateMan{ \
-    class components; \
-}; \
-class SensorTemplateLaser{ \
-    class components; \
-}; \
-class SensorTemplateNV{ \
-    class components; \
-}; \
-class SensorTemplateDataLink{ \
-    class components; \
-}; \
-class DefaultVehicleSystemsDisplayManagerLeft \
-{ \
-	class components; \
-}; \
-class DefaultVehicleSystemsDisplayManagerRight \
-{ \
-	class components; \
-}; \
-class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft \
-{ \
-	class components; \
-}; \
-class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight \
-{ \
-	class components; \
-}; \
-class VehicleSystemsTemplateLeftGunner \
-{ \
-	class components; \
-}; \
-class VehicleSystemsTemplateRightGunner \
-{ \
-	class components; \
-} \

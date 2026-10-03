@@ -82,7 +82,7 @@ class CfgVehicles {
         displayName = "[KC] JT-12 Jetpack ('Goldie')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\Goldie\Goldie_JT12_co.paa),
-            QPATHTOF(data\backpacks\jetpacks\KC_JT12_net_co.paa)
+            QPATHTOEF(armor,data\backpacks\jetpacks\KC_JT12_net_co.paa)
         };
     };
 

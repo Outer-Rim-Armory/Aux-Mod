@@ -483,7 +483,7 @@ class CfgVehicles {
             class Turtle: KeeliCompany {
                 displayName = "Turtle";
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\trutle\Turtle_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\turtle\Turtle_Body_co.paa),
                     QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Wheels_co.paa),
                     QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa),
                     QPATHTOF(land\hornet\data\textures\Launcher_co.paa),

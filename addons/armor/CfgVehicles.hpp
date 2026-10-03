@@ -916,9 +916,9 @@ class CfgVehicles {
         SCOPE_HIDDEN;
     displayName = "[KC] Crocea Backpack [LR]";
     hiddenSelectionsTextures[] = {
-            QPATHTOF(data\backpacks\standard\Crocea_Backpack_co.paa),
-            QPATHTOF(data\backpacks\standard\Crocea_LR_Attachment_co.paa),
-            QPATHTOF(data\backpacks\standard\Crocea_LR_Screen_co.paa)
+            QPATHTOF(data\backpacks\standard\crocea\Crocea_Backpack_co.paa),
+            QPATHTOF(data\backpacks\standard\crocea\Crocea_LR_Attachment_co.paa),
+            QPATHTOF(data\backpacks\standard\crocea\Crocea_LR_Screen_co.paa)
         };
     };
 

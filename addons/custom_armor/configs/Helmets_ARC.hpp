@@ -5,7 +5,7 @@ ARC_HELMET_VISOR_CUSTOM(Drake,Bacta);
 //    displayName = "[KC] SF ARC P1.5 Helm ('Drake') - Empire";
 //    hiddenSelectionsTextures[] = {
 //        QPATHTOF(data\helmets\arc\camo\empire\Drake_camo1_co.paa),
-//        "\ls_armor_bluefor\helmet\gar\arc\data\visor_co.paa"
+//        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa"
 //   };
 
 //    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_ARC_Drake_Emp);
@@ -65,7 +65,7 @@ class CLASS(Helmet_ARC_Tyrant_Worn): CLASS(Helmet_ARC_Base) {
     displayName = "[KC] SF ARC P1.5 Helm ('Tyrant') - Worn";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\camo\worn\Tyrant_camo1_co.paa),
-        "\ls_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa",
    };
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_ARC_Tyrant_Worn);

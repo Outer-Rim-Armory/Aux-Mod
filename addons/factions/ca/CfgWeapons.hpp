@@ -39,7 +39,7 @@ class CfgWeapons {
         SCOPE_HIDDEN;
         hiddenSelectionsTextures[] = {
             QPATHTOF(ca\data\helmets\Arctic_camo1_co.paa),
-            QPATHTOF(ca\data\visors\Bacta_camo2_co.paa)
+            QPATHTOF(ca\data\visors\Bacta_Visor_camo2_co.paa)
         };
         hiddenSelectionsMaterials[] = {
             "",

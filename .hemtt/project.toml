@@ -1,7 +1,7 @@
 name = "Keeli Company Auxillary Mod"
 author = "Keeli Company Aux Team"
 prefix = "BNA_KC"
-mainprefix = ""
+mainprefix = "ORA"
 
 [version]
 path = "addons/core/script_version.hpp"

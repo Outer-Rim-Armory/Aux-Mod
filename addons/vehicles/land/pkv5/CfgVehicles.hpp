@@ -7,12 +7,12 @@ class CfgVehicles {
         class ACE_SelfActions;
         class UserActions;
         class Turrets:Turrets {
-            class CommanderOptics;
+            //class CommanderOptics;
             class MainTurret;
         };
     };
     class ls_vehicle_pkv5: ls_vehicle_pkv5_base {
-        class ACE_SelfActions;
+        class ACE_SelfActions: ACE_SelfActions{};
     };
     class CLASS(PKV5_Base): ls_vehicle_pkv5 {
         SCOPE_PRIVATE;

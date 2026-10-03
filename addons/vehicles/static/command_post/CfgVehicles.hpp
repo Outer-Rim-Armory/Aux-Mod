@@ -6,7 +6,7 @@ class CfgVehicles {
     class 3AS_Republic_FCP: StaticMGWeapon {
     class UserActions;
     class Turrets: Turrets {
-        class MainTurret;
+        //class MainTurret;
     };
     };
     class CLASS(REP_Command_Post): 3AS_Republic_FCP {

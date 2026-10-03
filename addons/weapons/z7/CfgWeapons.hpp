@@ -46,7 +46,6 @@ class CfgWeapons {
 
         displayName = "[KC] Z-7 Rotary Chaingun (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
-        picture = QPATHTOF(z8\data\ui\Z8_fried_ca.paa);
 
         JLTS_isFried = TRUE;
         magazines[] = {};

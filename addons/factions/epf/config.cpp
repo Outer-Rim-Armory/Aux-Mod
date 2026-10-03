@@ -39,7 +39,6 @@ class CfgPatches {
             QCLASS(EPF_Backpack_Assault_Predef_Z6),
             QCLASS(EPF_Backpack_Predef_Sniper),
             QCLASS(EPF_Jetpack),
-            QCLASS(EPF_Unit_Rifleman_Jetpack),
             QCLASS(EPF_Backpack_RTO),
             QCLASS(EPF_Backpack_RTO_Predef_SL),
             QCLASS(AAT_EPF),

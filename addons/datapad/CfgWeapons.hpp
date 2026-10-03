@@ -3,7 +3,7 @@ class CfgWeapons
     class Launcher;
     class Launcher_Base_F: Launcher
     {
-        class WeaponSlotsInfo;
+        //class WeaponSlotsInfo;
     };
 
     // class 3AS_RepublicDatapadPistol;
@@ -23,8 +23,8 @@ class CfgWeapons
         dexterity = 1.5;
         initSpeed = -1;
         maxZeroing = 100;
-        class GunParticles;
-        class WeaponSlotsInfo;
+        //class GunParticles;
+        //class WeaponSlotsInfo;
         opticsZoomMin = 0.25;
         opticsZoomMax = 1.25;
         opticsZoomInit = 0.75;
@@ -42,7 +42,7 @@ class CfgWeapons
         flash = "gunfire";
         flashSize = 0.1;
         modes[] = {"Single"};
-        class Single;
+        //class Single;
         aiDispersionCoefY = 6;
         aiDispersionCoefX = 4;
         caseless[] = {"",1,1,1};
@@ -71,7 +71,7 @@ class CfgWeapons
 	    model = "\3AS\3AS_Weapons\Roleplay\RepublicDatapadrifle.p3d";
 	    picture = "\3AS\3AS_Weapons\Roleplay\data\UI\3as_datapad.paa";
 	    weaponInfoType = "RscWeaponZeroing";
-	    class WeaponSlotsInfo;
+	    //class WeaponSlotsInfo;
         laser = 1;
 	};
 };

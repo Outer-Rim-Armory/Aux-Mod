@@ -5,13 +5,13 @@ class CfgVehicles {
 	{
 		class AnimationSources
 		{
-			class Gatling;
-			class Gatling_flash;
+			//class Gatling;
+			//class Gatling_flash;
 		};
-		class Eventhandlers;
+		class EventHandlers;
 		class HitPoints;
 		class ViewPilot;
-		class CargoTurret;
+		//class CargoTurret;
 		class Turrets;
 		class NewTurret;
 		class ViewOptics;
@@ -21,7 +21,7 @@ class CfgVehicles {
 		class AnimationSources: AnimationSources
 		{
 		};
-		class Eventhandlers: Eventhandlers
+		class EventHandlers: EventHandlers
 		{
 		};
 		class HitPoints: HitPoints
@@ -154,7 +154,7 @@ class CfgVehicles {
 		armorStructural=4;
 		damageResistance=0.050000001;
 		class CargoTurret;
-		class MainTurret;
+		//class MainTurret;
 		class Turrets: Turrets
 		{
 			class CargoTurret_01: CargoTurret
@@ -684,7 +684,7 @@ class CfgVehicles {
 			};
 		};
 		extCameraPosition[]={0,0.60000002,-10};
-		class Eventhandlers: Eventhandlers
+		class EventHandlers: EventHandlers
 		{
 			init="if (local (_this select 0)) then {[(_this select 0), """", [], nil] call bis_fnc_initVehicle;};";
 			killed="if (local (_this select 0)) then {[(_this select 0), nil, [], false] call bis_fnc_initVehicle;};";
@@ -1225,7 +1225,7 @@ class CfgVehicles {
 				weapon="OPTRE_M79_MLRS";
 			};
 		};
-		class EventHandlers: Eventhandlers
+		class EventHandlers: EventHandlers
 		{
 			fired="[_this select 0,_this select 6,'missile_move','MissileBase'] call BIS_fnc_missileLaunchPositionFix; _this call (uinamespace getvariable 'BIS_fnc_effectFired');";
 		};

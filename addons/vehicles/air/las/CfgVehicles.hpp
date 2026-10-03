@@ -1,14 +1,12 @@
 class ls_impulsor_base;
 
-SENSORTEMPLATES;
-
 class CfgVehicles {
     class Helicopter_Base_F;
     class Helicopter_Base_H: Helicopter_Base_F{
-        class Components;
+        //class Components;
     };
     class 3AS_LAS_Base_F: Helicopter_Base_H {
-        class pilotCamera;
+        //class pilotCamera;
         class ACE_SelfActions;
         class Turrets {
             class MainTurret;
@@ -235,118 +233,6 @@ class CfgVehicles {
 			pilotOpticsShowCursor = 1;
 			controllable = 1;
 		};
-        radarTargetSize = 0.5;
-        reportOwnPosition = TRUE;
-        reportRemoteTargets = TRUE;
-        receiveRemoteTargets = TRUE;
-        showcrewAim = 4;
-
-		class Components: Components
-		{
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
-					{
-                        class AirTarget
-						{
-							minRange = 6000;
-							maxRange = 6000;
-							objectDistanceLimitCoef	= -1;
-							viewDistanceLimitCoef	= -1;
-						};
-                        class GroundTarget
-						{
-							minRange=1000;
-							maxRange=1000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						angleRangeHorizontal = 270;
-						angleRangeVertical = 270;
-					};
-                    class ActiveRadarSensorComponent : SensorTemplateActiveRadar
-					{
-						class AirTarget
-						{
-							minRange = 6000;
-							maxRange = 6000;
-							objectDistanceLimitCoef	= -1;
-							viewDistanceLimitCoef	= -1;
-						};
-                        class GroundTarget
-						{
-							minRange=1000;
-							maxRange=1000;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=-1;
-						};
-						angleRangeHorizontal = 270;
-						angleRangeVertical = 270;
-					};
-                    class DataLinkSensorComponent: SensorTemplateDataLink
-                    {
-						class AirTarget
-						{
-							minRange=2500;
-							maxRange=2500;
-							objectDistanceLimitCoef=-1;
-							viewDistanceLimitCoef=1;
-						};
-						class GroundTarget
-						{
-							minRange=2500;
-							maxRange=2500;
-							objectDistanceLimitCoef=1;
-							viewDistanceLimitCoef=1;
-						};
-                        angleRangeHorizontal = 360;
-						angleRangeVertical = 360;
-                    };
-                };
-			};
-			class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftPilot
-			{
-                defaultDisplay="SensorDisplay";
-				class Components: Components
-				{
-					class EmptyDisplay
-					{
-						componentType="EmptyDisplayComponent";
-					};
-					class MinimapDisplay
-					{
-						componentType="MinimapDisplayComponent";
-						resource="RscCustomInfoAirborneMiniMap";
-					};
-					class CrewDisplay
-					{
-						componentType="CrewDisplayComponent";
-						resource="RscCustomInfoCrew";
-					};
-/* 					class VehiclePrimaryGunnerDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="PrimaryGunner";
-					};
-                    class VehicleSecondaryGunnerDisplay
-					{
-						componentType="TransportFeedDisplayComponent";
-						source="SecondaryGunner";
-					}; */
-					class SensorDisplay
-					{
-						componentType="SensorsDisplayComponent";
-						range[]={4000,2000,1000,8000};
-						resource="RscCustomInfoSensors";
-					};
-				};
-			};
-			class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightPilot
-			{
-			};
-		};
         class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
         };
@@ -361,13 +247,12 @@ class CfgVehicles {
         displayName = "[KC] LAS-1";
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
-        class Turrets
-		{
-		};
+        class Turrets{};
         class ACE_SelfActions: ACE_SelfActions {
             HUD_CHANGER;
         };
     };
+
 
     class CLASS(LAS_Z6):CLASS(LAS_Base) {
         SCOPE_PUBLIC;

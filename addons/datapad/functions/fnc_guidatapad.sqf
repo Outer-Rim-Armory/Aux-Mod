@@ -94,8 +94,8 @@ if !(ctrlShown _ctrlDatapad) then
 		_selShots = _ctrlShots lbValue (lbCurSel _ctrlShots);
 		_selColor = _comboColor lbText (lbCurSel _comboColor);
 		_selCrate = _comboCrate lbText (lbCurSel _comboCrate);
-		_selSpread = if (_chckSpread lbValue (lbCurSel _chckSpread) == 0) then {5} else {0};
-		_selRad75 = if (_chckSpread lbValue (lbCurSel _chckSpread) == 0) then {75} else {0};
+		_selSpread = [0, 5] select ((_chckSpread lbValue lbCurSel _chckSpread) == 0);
+		_selRad75 = [0, 75] select ((_chckSpread lbValue lbCurSel _chckSpread) == 0);
 		_markPos = getMarkerPos "BNA_KC_Marker_Datapad";
 		_curAmmo = _unit ammo currentWeapon _unit;
 

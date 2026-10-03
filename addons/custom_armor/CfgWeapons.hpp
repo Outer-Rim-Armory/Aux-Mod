@@ -369,9 +369,9 @@ class CLASS(Vest_Kujo): CLASS(Vest_CS) {
         displayName = "[KC] ARMR Vest ('Grey')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\grey\Grey_chestplate.paa),
-            QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
-            QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
-            QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa)  // Pauldron
+            QPATHTOEF(armor,data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
+            QPATHTOEF(armor,data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
+            QPATHTOEF(armor,data\vests\infantry\heavy\Accessories_camo1_co.paa)  // Pauldron
         };
 
         GVAR(isCustom) = TRUE;

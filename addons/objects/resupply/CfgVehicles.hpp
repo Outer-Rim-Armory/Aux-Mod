@@ -1,7 +1,7 @@
 class CfgVehicles {
     class ThingX;
     class ReammoBox_F: ThingX {
-        class ACE_ACTIONS {
+        class ACE_Actions {
             class ACE_MainActions;
         };
     };
@@ -492,7 +492,7 @@ class CfgVehicles {
             };
         };
 
-        class ACE_ACTIONS: ACE_ACTIONS {
+        class ACE_Actions: ACE_Actions {
             class ACE_MainActions: ACE_MainActions {
                 distance = 6;
                 condition = "true";

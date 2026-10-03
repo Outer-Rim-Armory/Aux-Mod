@@ -96,7 +96,7 @@ class CfgWeapons {
         displayName = "[KC] DC-15C (Fried)";
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         baseWeapon = QCLASS(DC15C_Fried);
-        picture = QPATHTOF(dc15c\data\DC15C_Fried_ca.paa);
+        picture = QPATHTOF(dc15c\data\ui\DC15C_Fried_ca.paa);
 
         JLTS_isFried = TRUE;
         magazines[] = {};

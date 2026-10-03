@@ -1,7 +1,6 @@
 class CfgVehicles {
     class All;
     class AllVehicles: All {
-        class NewTurret;
     };
     class Land: AllVehicles {};
     class LandVehicle: Land {};

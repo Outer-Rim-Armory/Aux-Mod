@@ -5,8 +5,8 @@ class CLASS(Unit_AB_CT): CLASS(Unit_Phase2_Base) {
 
     uniformClass = QCLASS(Uniform_CT);
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\uniforms\standard\CT_upper_co.paa),
-        QPATHTOF(data\uniforms\standard\CT_lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\CT_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CT_lower_co.paa),
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 

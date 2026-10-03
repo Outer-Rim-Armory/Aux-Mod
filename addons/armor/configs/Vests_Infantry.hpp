@@ -188,7 +188,7 @@ class CLASS(Vest_CLC_Empire): CLASS(Vest_Basic) {
     hiddenSelections[] = {"camo1", "holster", "pauldron"};
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
-        QPATHTOF(data\vests\infantry\heavy\Empire_Accessories_camo1_co.paa), // Holster
+        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
         QPATHTOF(data\vests\infantry\heavy\Empire_CLC_camo1_co.paa)          // Pauldron
     };
     picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";
@@ -213,7 +213,7 @@ class CLASS(Vest_CPL_Empire): CLASS(Vest_CLC_Empire) {
     displayName = "[KC] INF Vest 05 (CPL, Empire)";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Chest Strap
-        QPATHTOF(data\vests\infantry\heavy\Empire_Accessories_camo1_co.paa), // Holster
+        QPATHTOF(data\vests\infantry\heavy\Accessories_camo1_co.paa), // Holster
         QPATHTOF(data\vests\infantry\heavy\Empire_CPL_camo1_co.paa)          // Pauldron
     };
     picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVest_reconNCO_ca.paa";

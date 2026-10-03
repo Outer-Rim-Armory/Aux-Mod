@@ -519,7 +519,7 @@ class CfgVehicles {
             class KeeliCompany: Standard {
                 displayName = "Keeli Company";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\KeeliCompany\PX10CAV_KC_co.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\KeeliCompany\PX10CAV_KC_co.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -527,7 +527,7 @@ class CfgVehicles {
             class BrownCamo: KeeliCompany {
                 displayName = "Brown Camo";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\BrownCamo\PX10CAV_KCBROWNCAMO_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\BrownCamo\PX10CAV_KCBROWNCAMO_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -535,7 +535,7 @@ class CfgVehicles {
             class GreyCamo: KeeliCompany {
                 displayName = "Grey Camo";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\GreyCamo\PX10CAV_KCGREYCAMO_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\GreyCamo\PX10CAV_KCGREYCAMO_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -543,7 +543,7 @@ class CfgVehicles {
             class Medic: KeeliCompany {
                 displayName = "Medic";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\Medic\PX10CAV_KCMEDIC_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\Medic\PX10CAV_KCMEDIC_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -551,7 +551,7 @@ class CfgVehicles {
             class Imperial: KeeliCompany {
                 displayName = "Imperial";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\Imperial\PX10CAV_KCImp_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\Imperial\PX10CAV_KCImp_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -594,7 +594,7 @@ class CfgVehicles {
             class KeeliCompany: Standard {
                 displayName = "Keeli Company";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\KeeliCompany\PX10CAV_KC_co.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\KeeliCompany\PX10CAV_KC_co.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -602,7 +602,7 @@ class CfgVehicles {
             class BrownCamo: KeeliCompany {
                 displayName = "Brown Camo";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\BrownCamo\PX10CAV_KCBROWNCAMO_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\BrownCamo\PX10CAV_KCBROWNCAMO_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -610,7 +610,7 @@ class CfgVehicles {
             class GreyCamo: KeeliCompany {
                 displayName = "Grey Camo";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\GreyCamo\PX10CAV_KCGREYCAMO_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\GreyCamo\PX10CAV_KCGREYCAMO_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -618,7 +618,7 @@ class CfgVehicles {
             class Medic: KeeliCompany {
                 displayName = "Medic";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\Medic\PX10CAV_KCMEDIC_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\Medic\PX10CAV_KCMEDIC_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -626,7 +626,7 @@ class CfgVehicles {
             class Imperial: KeeliCompany {
                 displayName = "Imperial";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\Imperial\PX10CAV_KCImp_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\Imperial\PX10CAV_KCImp_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -669,7 +669,7 @@ class CfgVehicles {
             class KeeliCompany: Standard {
                 displayName = "Keeli Company";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\KeeliCompany\PX10CAV_KC_co.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\KeeliCompany\PX10CAV_KC_co.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -677,7 +677,7 @@ class CfgVehicles {
             class BrownCamo: KeeliCompany {
                 displayName = "Brown Camo";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\BrownCamo\PX10CAV_KCBROWNCAMO_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\BrownCamo\PX10CAV_KCBROWNCAMO_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -685,7 +685,7 @@ class CfgVehicles {
             class GreyCamo: KeeliCompany {
                 displayName = "Grey Camo";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\GreyCamo\PX10CAV_KCGREYCAMO_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\GreyCamo\PX10CAV_KCGREYCAMO_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -693,7 +693,7 @@ class CfgVehicles {
             class Medic: KeeliCompany {
                 displayName = "Medic";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\Medic\PX10CAV_KCMEDIC_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\Medic\PX10CAV_KCMEDIC_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };
@@ -701,7 +701,7 @@ class CfgVehicles {
             class Imperial: KeeliCompany {
                 displayName = "Imperial";
                 textures[] = {
-                    QPATHTOF(land\hermitaur\data\textures\Imperial\PX10CAV_KCImp_CO.paa),
+                    QPATHTOEF(vehicles,land\hermitaur\data\textures\Imperial\PX10CAV_KCImp_CO.paa),
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintback_co.paa",
                     "3as\3as_rebel_armor\px10_cav\textures\px10cavintfront_co.paa"
                 };

@@ -211,9 +211,9 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(air\laati\data\textures\RDF\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\RDF\Wings_co.paa),
-                    QPATHTOF(air\laati\data\texutres\RDF\Weapons_co.paa),
-                    QPATHTOF(air\laati\data\texutres\RDF\Weapon_Details_co.paa),
-                    QPATHTOF(air\laati\data\texutres\RDF\Interior_co.paa),
+                    QPATHTOF(air\laati\data\textures\RDF\Weapons_co.paa),
+                    QPATHTOF(air\laati\data\textures\RDF\Weapon_Details_co.paa),
+                    QPATHTOF(air\laati\data\textures\RDF\Interior_co.paa),
                 };
             };
         };
@@ -235,7 +235,7 @@ class CfgVehicles {
                 showWindow = FALSE;
 
                 condition = QUOTE(this call FUNC(canImpulse));
-                statement = QUOTE([ARR_2(this, 1)] call ls_impulsor_fnc_impulse);
+                statement = QUOTE([ARR_2(this,1)] call ls_impulsor_fnc_impulse);
             };
 
             class DoorsOpen: Impulse {
@@ -333,7 +333,7 @@ class CfgVehicles {
         displayName = "[KC] LAAT/i MK1";
         editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1);
 
-        class Eventhandlers: EventHandlers
+        class EventHandlers: EventHandlers
 		{
 			fired="_this execVM '\ORA\BNA_KC\addons\vehicles\functions\fnc_fired_laser.sqf';";
 		};

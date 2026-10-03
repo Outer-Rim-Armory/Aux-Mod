@@ -291,14 +291,14 @@ class CfgVehicles {
         class ACE_SelfActions;
         class UserActions;
         class Turrets: Turrets {
-            class CargoTurret_01;
-            class CargoTurret_02;
-            class CargoTurret_03;
-            class CargoTurret_04;
-            class MainTurret;
-            class MainTurret_bottom;
+            //class CargoTurret_01;
+            //class CargoTurret_02;
+            //class CargoTurret_03;
+            //class CargoTurret_04;
+            //class MainTurret;
+            //class MainTurret_bottom;
             class Mainturret_Super;
-            class Mainturret_top;
+            //class Mainturret_top;
         };
     };
     class CLASS(TX130_Super): 3AS_Saber_Super {
