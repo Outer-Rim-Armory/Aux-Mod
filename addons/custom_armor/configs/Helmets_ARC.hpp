@@ -65,7 +65,11 @@ class CLASS(Helmet_ARC_Tyrant_Worn): CLASS(Helmet_ARC_Base) {
     displayName = "[KC] SF ARC P1.5 Helm ('Tyrant') - Worn";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\camo\worn\Tyrant_camo1_co.paa),
+<<<<<<< Updated upstream
         "\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa",
+=======
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa",
+>>>>>>> Stashed changes
    };
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_ARC_Tyrant_Worn);

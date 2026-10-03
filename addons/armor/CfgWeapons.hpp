@@ -4,7 +4,7 @@ class CfgWeapons {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase2_helmet_ca.paa";
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\phase2_helmet_ui_ca.paa";
 
         class HitpointsProtectionInfo
     {

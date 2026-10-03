@@ -10,7 +10,7 @@ class CLASS(Helmet_Phase1_Pilot_Base): CLASS(cloneHelmet_base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\lifesupport_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\phase1Pilot\data\visor_co.paa"
     };
-    picture = "\ls_armor_bluefor\helmet\_ui\icon_gar_phase1_helmet_ca.paa";
+    picture = "\ls\core\addons\main\data\ui\ls_logo_ca.paa";
 
     HEARING_PROTECTION_CREW;
     TFAR_externalIntercomWirelessCapable = TRUE;
