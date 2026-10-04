@@ -369,6 +369,8 @@ class CfgPatches {
             QCLASS(Helmet_BARC_RatCrimson),
             QCLASS(Helmet_BARC_Weenie),
             QCLASS(Helmet_Airborne_Axel),
+            QCLASS(Helmet_Airborne_Kage),
+            QCLASS(Helmet_Airborne_Juno),
             //QCLASS(Helmet_Airborne_Leon),
             QCLASS(Helmet_Airborne_Star),
             //QCLASS(Helmet_Airborne_Anvil),

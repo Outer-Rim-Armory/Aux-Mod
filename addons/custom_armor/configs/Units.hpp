@@ -149,10 +149,10 @@ class CLASS(Unit_Calvin): CLASS(Unit_Phase2_Base) {
     };
 
     linkedItems[] = {
-        QCLASS(Helmet_Phase2_Calvin), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARF_Calvin), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
     respawnLinkedItems[] = {
-        QCLASS(Helmet_Phase2_Calvin), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        QCLASS(Helmet_ARF_Calvin), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -526,6 +526,27 @@ class CLASS(Unit_Jaws_CamoBrown): CLASS(Unit_Phase2_Base) {
     };
 };
 
+class CLASS(Unit_Jimsbo): CLASS(Unit_Phase2_Base) {
+    displayName = "Jimsbo";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Jimsbo);
+
+    uniformClass = QCLASS(Uniform_Jimsbo);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Jimsbo_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Jimsbo_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Jimsbo), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Jimsbo), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
 class CLASS(Unit_Joe): CLASS(Unit_Phase2_Base) {
     displayName = "Joe";
 
@@ -763,6 +784,15 @@ class CLASS(Unit_Leon): CLASS(Unit_Phase2_Base) {
     };
     respawnLinkedItems[] = {
         QCLASS(Helmet_ARC_Leon), QCLASS(cloneVest_arc_Leon), QCLASS(cloneNvg_chip), CLONE_LINKED_ITEMS_RADIO
+    };
+};
+class CLASS(Unit_Leon_Night): CLASS(Unit_Phase2_Base) {
+    SCOPE_HIDDEN;
+    uniformClass = QCLASS(Uniform_Leon_Night);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\camo\night\Leon_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\camo\night\Leon_lower_co.paa),
+        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
 };
 

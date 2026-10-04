@@ -12,7 +12,6 @@ class CfgPatches {
             "JLTS_core_droids",
             "JLTS_characters_DroidArmor",
             "lsd_armor_redfor",
-            "ls_armor_redfor",
             "ls_radios"
         };
         units[] = {

@@ -208,6 +208,7 @@ class CfgVehicles {
             };
             class RDF: KeeliCompany {
                 displayName = "RDF";
+                factions[] = {QFACTION(RDF)};
                 textures[] = {
                     QPATHTOF(air\laati\data\textures\RDF\Hull_co.paa),
                     QPATHTOF(air\laati\data\textures\RDF\Wings_co.paa),

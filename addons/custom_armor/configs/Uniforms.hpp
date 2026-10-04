@@ -150,6 +150,16 @@ class CLASS(Uniform_Kiwi_Worn): CLASS(Uniform_Kiwi) {
 };
 UNIFORM_CUSTOM(Kujo);
 UNIFORM_CUSTOM(Leon);
+class CLASS(Uniform_Leon_Night): CLASS(Uniform_Leon) {
+    displayName = "[KC] Custom Armor ('Leon') - Night";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Leon_Night);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Night";
+    };
+};
 UNIFORM_CUSTOM(Rabble);
 UNIFORM_CUSTOM(Rat);
 UNIFORM_CUSTOM(Rev);

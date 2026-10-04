@@ -28,7 +28,11 @@ class CfgVehicles {
             "Harry", 0,
             "Swoop", 0,
             "Ceremonial", 0,
-            "Turtle", 0
+            "Turtle", 0,
+            "Cough", 0,
+            "Goldie", 0,
+            "Jester", 0,
+            "RDF", 0
         };
         class TextureSources {
             class KeeliCompany {
@@ -131,6 +135,15 @@ class CfgVehicles {
                     QPATHTOF(land\hornet\data\textures\jester\Jester_Interior_co.paa)
                 };
             };
+            class RDF: KeeliCompany {
+                displayName = "RDF";
+                factions[] = {QFACTION(RDF)};
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\rdf\RDF_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\rdf\RDF_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\rdf\RDF_Interior_co.paa)
+                };
+            };
         };
 
         class UserActions: UserActions {
@@ -165,6 +178,11 @@ class CfgVehicles {
                 displayName = "<t color='#c22d2d'> Play Horn [Jester] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Jester' and {ace_player == currentPilot this});
                 statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Jester_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
+            };
+            class HornRDF: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [RDF] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'RDF' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\RDF_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
             };
         };
 
@@ -214,7 +232,11 @@ class CfgVehicles {
             "Harry", 0,
             "Swoop", 0,
             "Ceremonial", 0,
-            "Turtle", 0
+            "Turtle", 0,
+            "Cough", 0,
+            "Goldie", 0,
+            "Jester", 0,
+            "RDF", 0
         };
         class TextureSources {
             class KeeliCompany {
@@ -293,6 +315,39 @@ class CfgVehicles {
                     QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa)
                 };
             };
+            class Cough: KeeliCompany {
+                displayName = "Cough";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\cough\Cough_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\cough\Cough_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\cough\Cough_Interior_co.paa)
+                };
+            };
+            class Goldie: KeeliCompany {
+                displayName = "Goldie";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\goldie\Goldie_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\goldie\Goldie_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\goldie\Goldie_Interior_co.paa)
+                };
+            };
+            class Jester: KeeliCompany {
+                displayName = "Jester";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\jester\Jester_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\jester\Jester_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\jester\Jester_Interior_co.paa)
+                };
+            };
+            class RDF: KeeliCompany {
+                displayName = "RDF";
+                factions[] = {QFACTION(RDF)};
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\rdf\RDF_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\rdf\RDF_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\rdf\RDF_Interior_co.paa)
+                };
+            };
         };
 
         class UserActions {
@@ -312,6 +367,21 @@ class CfgVehicles {
                 displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
                 statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+            };
+            class HornGoldie: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Goldie] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Goldie' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Goldie_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
+            };
+            class HornCough: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Cough] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Cough' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Cough_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+            };
+            class HornJester: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Jester] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Jester' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Jester_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
             };
         };
 
@@ -393,7 +463,11 @@ class CfgVehicles {
             "Harry", 0,
             "Swoop", 0,
             "Ceremonial", 0,
-            "Turtle", 0
+            "Turtle", 0,
+            "Cough", 0,
+            "Goldie", 0,
+            "Jester", 0,
+            "RDF", 0
         };
         class TextureSources {
             class KeeliCompany {
@@ -403,9 +477,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\kc\KC_Body_co.paa),
                     QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa)
                 };
             };
             class CamoKC: KeeliCompany {
@@ -415,9 +487,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Body_co.paa),
                     QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Interior_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                    QPATHTOF(land\hornet\data\textures\camo\kc\CamoKC_Interior_co.paa)
                 };
             };
             class CamoBrown: KeeliCompany {
@@ -425,9 +495,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Body_co.paa),
                     QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Interior_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                    QPATHTOF(land\hornet\data\textures\camo\brown\CamoBrown_Interior_co.paa)
                 };
             };
             class CamoGray: KeeliCompany {
@@ -435,9 +503,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Body_co.paa),
                     QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa)
                 };
             };
             class Carnage: KeeliCompany {
@@ -445,9 +511,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\carnage\Body_Carnage_co.paa),
                     QPATHTOF(land\hornet\data\textures\kc\KC_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                    QPATHTOF(land\hornet\data\textures\kc\KC_Interior_co.paa)
                 };
             };
             class Harry: KeeliCompany {
@@ -455,9 +519,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\harry\Harry_Body_co.paa),
                     QPATHTOF(land\hornet\data\textures\harry\Harry_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\harry\Harry_Interior_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                    QPATHTOF(land\hornet\data\textures\harry\Harry_Interior_co.paa)
                 };
             };
             class Swoop: KeeliCompany {
@@ -465,9 +527,7 @@ class CfgVehicles {
                 textures[] = {
                     QPATHTOF(land\hornet\data\textures\swoop\Swoop_Body_co.paa),
                     QPATHTOF(land\hornet\data\textures\swoop\Swoop_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Interior_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                    QPATHTOF(land\hornet\data\textures\swoop\Swoop_Interior_co.paa)
                 };
             };
             class Ceremonial: KeeliCompany {
@@ -476,18 +536,47 @@ class CfgVehicles {
                     QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Body_CO.paa),
                     QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Wheels_CO.paa),
                     QPATHTOF(land\hornet\data\textures\ceremonial\KC_Hornet_Interior_CO.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
                 };
             };
             class Turtle: KeeliCompany {
                 displayName = "Turtle";
                 textures[] = {
-                    QPATHTOF(land\hornet\data\textures\turtle\Turtle_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\camo\gray\Turtle_Body_co.paa),
                     QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Wheels_co.paa),
-                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa),
-                    QPATHTOF(land\hornet\data\textures\Launcher_co.paa)
+                    QPATHTOF(land\hornet\data\textures\camo\gray\CamoGray_Interior_co.paa)
+                };
+            };
+            class Cough: KeeliCompany {
+                displayName = "Cough";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\cough\Cough_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\cough\Cough_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\cough\Cough_Interior_co.paa)
+                };
+            };
+            class Goldie: KeeliCompany {
+                displayName = "Goldie";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\goldie\Goldie_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\goldie\Goldie_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\goldie\Goldie_Interior_co.paa)
+                };
+            };
+            class Jester: KeeliCompany {
+                displayName = "Jester";
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\jester\Jester_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\jester\Jester_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\jester\Jester_Interior_co.paa)
+                };
+            };
+            class RDF: KeeliCompany {
+                displayName = "RDF";
+                factions[] = {QFACTION(RDF)};
+                textures[] = {
+                    QPATHTOF(land\hornet\data\textures\rdf\RDF_Body_co.paa),
+                    QPATHTOF(land\hornet\data\textures\rdf\RDF_Wheels_co.paa),
+                    QPATHTOF(land\hornet\data\textures\rdf\RDF_Interior_co.paa)
                 };
             };
         };
@@ -509,6 +598,21 @@ class CfgVehicles {
                 displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
                 statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+            };
+            class HornGoldie: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Goldie] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Goldie' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Goldie_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
+            };
+            class HornCough: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Cough] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Cough' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Cough_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+            };
+            class HornJester: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [Jester] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Jester' and {ace_player == currentPilot this});
+                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Jester_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
             };
         };
 

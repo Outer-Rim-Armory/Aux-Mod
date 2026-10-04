@@ -10,7 +10,6 @@ class CfgPatches {
             QUOTE(ADDON),
             "SC_MDF",
             "sc_equipment",
-            "ls_armor_greenfor",
 
         };
         units[] = {

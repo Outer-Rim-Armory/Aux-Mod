@@ -32,6 +32,29 @@ ARC_HELMET_CUSTOM(Evo);
 ARC_HELMET_VISOR_CUSTOM(Hagrid,Plasma);
 ARC_HELMET_VISOR_CUSTOM(Harry,Plasma);
 ARC_HELMET_VISOR_CUSTOM(Leon,Bacta);
+class CLASS(Helmet_ARC_Leon_Night): CLASS(Helmet_ARC_Base) {
+    displayName = "[KC] SF ARC P1.5 Helm ('Leon') - Night";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\arc\camo\night\Leon_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"
+    };
+
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_ARC_Leon_Night);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_ARC_LeonBacta_Night);
+};
+class CLASS(Helmet_ARC_LeonBacta_Night): CLASS(Helmet_ARC_Leon_Night) {
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\arc\camo\night\Leon_camo1_co.paa),
+        QPATHTOF(data\visors\Bacta_camo2_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
 ARC_HELMET_VISOR_CUSTOM(Sin,Crimson);
 ARC_HELMET_VISOR_CUSTOM(Sogi,Plasma);
 ARC_HELMET_VISOR_CUSTOM(Swoop,Bacta);
@@ -65,11 +88,7 @@ class CLASS(Helmet_ARC_Tyrant_Worn): CLASS(Helmet_ARC_Base) {
     displayName = "[KC] SF ARC P1.5 Helm ('Tyrant') - Worn";
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\arc\camo\worn\Tyrant_camo1_co.paa),
-<<<<<<< Updated upstream
         "\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa",
-=======
-        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa",
->>>>>>> Stashed changes
    };
 
     EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_ARC_Tyrant_Worn);

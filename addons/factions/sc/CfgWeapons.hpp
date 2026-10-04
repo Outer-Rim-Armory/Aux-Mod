@@ -83,7 +83,6 @@ class CfgWeapons {
         SCOPE_PUBLIC;
 
         displayName = "[SC] Uniform";
-        picture = "\ls_armor_greenfor\uniform\mandalorian\_ui\icon_uniform_undersuit.paa";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(SC_Unit_Base);

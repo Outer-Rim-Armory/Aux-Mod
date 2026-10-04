@@ -781,7 +781,6 @@ class CfgVehicles {
         side = BLUFOR;
         displayName = "[RDF] LAAT/i MK1";
         faction = QFACTION(RDF);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1);
 
         crew = QCLASS(rdfArmor_unit_rifleman);
         typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
@@ -794,7 +793,6 @@ class CfgVehicles {
         side = BLUFOR;
         displayName = "[RDF] LAAT/i MK1 (Lamps)";
         faction = QFACTION(RDF);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK1_Lamps);
 
         crew = QCLASS(rdfArmor_unit_rifleman);
         typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
@@ -807,7 +805,6 @@ class CfgVehicles {
         side = BLUFOR;
         displayName = "[RDF] LAAT/i MK2";
         faction = QFACTION(RDF);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2);
 
         crew = QCLASS(rdfArmor_unit_rifleman);
         typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
@@ -820,7 +817,6 @@ class CfgVehicles {
         side = BLUFOR;
         displayName = "[RDF] LAAT/i MK2 (Lamps)";
         faction = QFACTION(RDF);
-        editorPreview = EEDITOR_PREVIEW(vehicles\air\SUBCOMPONENT,LAATi_MK2_Lamps);
 
         crew = QCLASS(rdfArmor_unit_rifleman);
         typicalCargo[] = {QCLASS(rdfArmor_unit_rifleman)};
