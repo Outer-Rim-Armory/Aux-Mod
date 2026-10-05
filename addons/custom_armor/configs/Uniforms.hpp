@@ -70,6 +70,7 @@ UNIFORM_CUSTOM(Henkie);
 //    };
 //};
 
+UNIFORM_CUSTOM(Jimsbo);
 UNIFORM_CUSTOM(Jester);
 UNIFORM_CUSTOM(Joe);
 UNIFORM_CUSTOM(Juno);

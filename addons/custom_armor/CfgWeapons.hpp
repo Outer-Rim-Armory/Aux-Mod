@@ -324,6 +324,12 @@ class CfgWeapons {
             QPATHTOF(data\nvgs\Destiny_camo1_co.paa)
         };
     };
+    class CLASS(cloneNvg_phase2_officerVisor_Leon): CLASS(cloneNvg_phase2_officerVisor) {
+        displayName = "[KC] Clone P2 NV/TI Visor ('Leon')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\Leon_Visor_co.paa)
+        };
+    };
     class CLASS(cloneNvg_commandoVisor);
     class CLASS(Moskoni_NVG): CLASS(cloneNvg_commandoVisor) {
         displayName = "[KC] Moskoni Nvg";
