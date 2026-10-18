@@ -8,8 +8,6 @@ class CfgPatches {
         requiredAddons[] = {
             QCLASS(core),
             "ls_characters_clone_legacy",
-            "lsd_units_bluefor",
-            "lsd_equipment_bluefor",
             "JLTS_core",
             "JLTS_characters_CloneArmor2",
             "SDT_gear",

@@ -40,4 +40,5 @@ class CfgVehicles {
     SOUND_OBJ(KDA_Popstar,"[KC] KDA Popstar");
     SOUND_OBJ(KDA_Baddest,"[KC] KDA Baddest");
     SOUND_OBJ(KDA_Villain,"[KC] KDA Villain");
+    SOUND_OBJ(DJ_Tambor,"[KC] DJ Tambor");
 };

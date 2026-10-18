@@ -2,7 +2,7 @@
 
 
 class CfgPatches {
-    class ChatWheelRedux {
+    class chat_wheel_redux {
         author = "DartRuffian";
         weapons[] = {};
         units[] = {};
@@ -22,14 +22,14 @@ class CfgPatches {
 class CfgFunctions {
     class CWR {
         class Settings {
-            file = "ChatWheelRedux\Data\Functions\Settings";
+            file = "chat_wheel_redux\Data\Functions\Settings";
             class configureAddonKeybinds {};
             class configureAddonOptions {};
             class createTagMenu {};
         };
 
         class Chat {
-            file = "ChatWheelRedux\Data\Functions\Chat";
+            file = "chat_wheel_redux\Data\Functions\Chat";
             class openChatWheel {};
             class processTags {};
             class sendGroupMessage {};
@@ -38,12 +38,12 @@ class CfgFunctions {
         };
 
         class Sounds {
-            file = "ChatWheelRedux\Data\Functions\Sounds";
+            file = "chat_wheel_redux\Data\Functions\Sounds";
             class playLocalSound {};
         };
 
         class Utils {
-            file = "ChatWheelRedux\Data\Functions\Utils";
+            file = "chat_wheel_redux\Data\Functions\Utils";
             class getDirFromBearing {};
             class stringReplace {};
             class removeQuotes {};
@@ -58,7 +58,7 @@ class CfgFunctions {
         };
 
         class EventHandlers {
-            file = "ChatWheelRedux\Data\Functions\EventHandlers";
+            file = "chat_wheel_redux\Data\Functions\EventHandlers";
             class throwGrenadeMain {};
             class throwGrenadeEH {};
             class throwGrenadeEHACE {};
@@ -84,7 +84,7 @@ class Extended_PreInit_EventHandlers {
 
 class Extended_PostInit_EventHandlers {
     class CWR_ChatWheel {
-        clientInit = QUOTE(call compileScript ['\ChatWheelRedux\XEH_postInitClient.sqf']);
+        clientInit = QUOTE(call compileScript ['\chat_wheel_redux\XEH_postInitClient.sqf']);
     };
     class CWR_CreateTagDiary {
         init = QUOTE(call CWR_fnc_createTagMenu;);

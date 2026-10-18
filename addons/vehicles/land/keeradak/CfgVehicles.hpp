@@ -12,7 +12,6 @@ class CfgVehicles {
         typicalCargo[] = {QCLASS(Unit_Phase2_CT)};
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Turrets);
-        editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,Keeradak_Base);
         hiddenSelectionsTextures[] = {
             "3as\3as_republic_static\keeradak\data\rep_aa_base_co.paa",
             "3as\3as_republic_static\keeradak\data\rep_aa_Gun_co.paa"

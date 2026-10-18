@@ -41,4 +41,5 @@ class CfgSounds {
     SOUND(KDA_Popstar,"[KC] KDA Popstar","KDA Popstar");
     SOUND(KDA_Baddest,"[KC] KDA Baddest","KDA Baddest");
     SOUND(KDA_Villain,"[KC] KDA Villain","KDA Villain");
+    SOUND(DJ_Tambor,"[KC] DJ Tambor","DJ Tambor");
 };

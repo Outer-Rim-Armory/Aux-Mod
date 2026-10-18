@@ -77,7 +77,6 @@ class CLASS(Helmet_BARC_Kiwi_Worn): CLASS(Helmet_BARC_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\barc\data\visor_co.paa"
     };
 };
-BARC_HELMET_VISOR_CUSTOM(Leon,Bacta);
 //BARC_HELMET_CUSTOM(Lines);
 BARC_HELMET_VISOR_CUSTOM(Patriot,Crimson);
 BARC_HELMET_VISOR_CUSTOM(Rat,Crimson);

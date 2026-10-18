@@ -44,7 +44,8 @@ class CfgPatches {
             "bna_kc_ambient_kda_more",
             "bna_kc_ambient_kda_popstar",
             "bna_kc_ambient_kda_baddest",
-            "bna_kc_ambient_kda_villain"
+            "bna_kc_ambient_kda_villain",
+            "bna_kc_ambient_dj_tambor"
         };
         weapons[] = {};
         VERSION_CONFIG;

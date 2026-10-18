@@ -8,7 +8,7 @@ class CfgPatches {
 
 class Extended_DisplayLoad_EventHandlers {
     class RscDisplayMain {
-        BNA_KC_Brandings_MenuMusic = "[] spawn {uiSleep 0.5; if (isNil 'BNA_KC_Brandings_menuMusicLoopEH') then {BNA_KC_Brandings_menuMusicLoopEH = addMusicEventHandler ['MusicStop', {params ['_music']; if (_music == 'BNA_KC_Music_fooBAR_Menu_Version') then {uiSleep 0.1; playMusic 'BNA_KC_Music_fooBAR_Menu_Version';};}];}; playMusic 'BNA_KC_Music_fooBAR_Menu_Version';};";
+        BNA_KC_Brandings_MenuMusic = "diag_log format ['BNA_KC_Brandings: DIAG hook fired, display0=%1', findDisplay 0]; uiNamespace setVariable ['BNA_KC_Brandings_loadTime', diag_tickTime]; uiNamespace setVariable ['BNA_KC_Brandings_done', false]; (_this select 0) displayAddEventHandler ['MouseMoving', {if (diag_tickTime - (uiNamespace getVariable ['BNA_KC_Brandings_loadTime', diag_tickTime]) > 8 && {!(uiNamespace getVariable ['BNA_KC_Brandings_done', false])}) then {uiNamespace setVariable ['BNA_KC_Brandings_done', true]; diag_log format ['BNA_KC_Brandings: DIAG mouse trigger, display0=%1', findDisplay 0]; private _oldStart = uiNamespace getVariable ['BNA_KC_Brandings_startEH', -1]; if (_oldStart >= 0) then {removeMusicEventHandler ['MusicStart', _oldStart]}; private _oldStop = uiNamespace getVariable ['BNA_KC_Brandings_stopEH', -1]; if (_oldStop >= 0) then {removeMusicEventHandler ['MusicStop', _oldStop]}; uiNamespace setVariable ['BNA_KC_Brandings_startEH', addMusicEventHandler ['MusicStart', {params ['_music']; diag_log format ['BNA_KC_Brandings: DIAG MusicStart %1 display0=%2', _music, findDisplay 0]; private _d = findDisplay 0; if (!isNull _d) then {private _c = uiNamespace getVariable ['BNA_KC_Brandings_dbgCtrl', controlNull]; if (isNull _c) then {_c = _d ctrlCreate ['RscText', -1]; _c ctrlSetPosition [safeZoneX + 0.02, safeZoneY + 0.02, 1.5, 0.05]; uiNamespace setVariable ['BNA_KC_Brandings_dbgCtrl', _c]}; _c ctrlSetText format ['MUSIC STARTED: %1', _music]; _c ctrlCommit 0}; if (_music != 'BNA_KC_Music_fooBAR_Menu_Version' && {!isNull findDisplay 0}) then {[] spawn {uiSleep 0.1; diag_log 'BNA_KC_Brandings: DIAG override firing'; if (!isNull findDisplay 0) then {playMusic 'BNA_KC_Music_fooBAR_Menu_Version'}}}}]]; uiNamespace setVariable ['BNA_KC_Brandings_stopEH', addMusicEventHandler ['MusicStop', {params ['_music']; diag_log format ['BNA_KC_Brandings: DIAG MusicStop %1 display0=%2', _music, findDisplay 0]; if (_music == 'BNA_KC_Music_fooBAR_Menu_Version' && {!isNull findDisplay 0}) then {[_music] spawn {uiSleep 0.1; if (!isNull findDisplay 0) then {playMusic (_this select 0)}}}}]]; diag_log 'BNA_KC_Brandings: DIAG EHs registered'; playMusic 'BNA_KC_Music_fooBAR_Menu_Version'}}]; playMusic 'BNA_KC_Music_fooBAR_Menu_Version'; [] spawn {uiSleep 0.5; diag_log 'BNA_KC_Brandings: DIAG spawn survived'};";
     };
 };
 
@@ -45,7 +45,7 @@ class RscDisplayStart: RscStandardDisplay {
             y = "SafeZoneY";
             h = "SafeZoneH";
             w = "SafeZoneW";
-            text = "\ORA\BNA_KC\addons\brandings\images\Loading_Image_01.paa";
+            text = "\ORA\BNA_KC\addons\brandings\images\Loading_Image_03.paa";
         };
     };
 };

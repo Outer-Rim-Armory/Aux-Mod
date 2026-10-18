@@ -689,6 +689,7 @@ class CfgAmmo {
     };
 
     class G_40mm_HE;
+    class ls_ammo_40mm_G75_HE;
     class CLASS(Grenade_B2Blaster): G_40mm_HE {
         hit = 10;
         dangerRadiusHit = 30;
@@ -739,7 +740,7 @@ class CfgAmmo {
         ace_frag_force = FALSE;
     };
 
-    class CLASS(UGL_Grenade_HE): G_40mm_HE {
+    class CLASS(UGL_Grenade_HE): ls_ammo_40mm_G75_HE {
         hit = 200;
         dangerRadiusHit = 60;
         indirectHit = 15;

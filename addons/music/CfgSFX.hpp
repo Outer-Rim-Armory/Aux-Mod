@@ -42,4 +42,5 @@ class CfgSFX {
     SOUND_FX(KDA_Popstar,"[KC] KDA Popstar",2000);
     SOUND_FX(KDA_Baddest,"[KC] KDA Baddest",2000);
     SOUND_FX(KDA_Villain,"[KC] KDA Villain",2000);
+    SOUND_FX(DJ_Tambor,"[KC] DJ Tambor",2000);
 };
