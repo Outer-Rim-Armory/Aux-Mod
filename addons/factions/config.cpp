@@ -8,6 +8,7 @@ class CfgPatches {
         requiredAddons[] = {
             QCLASS(core),
             QEGVAR(vehicles,load_order),
+            "ls_characters"
         };
         units[] = {
             QCLASS(BLUFOR_Unit_Base),

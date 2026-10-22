@@ -15,6 +15,8 @@ class CfgPatches {
             QCLASS(Z6_Base),
             QCLASS(Z6),
             QCLASS(Z6_Fried),
+            QCLASS(Z6_Heavy),
+            QCLASS(Z6_Heavy_Fried),
             QCLASS(KC_Z6),
             QCLASS(KC_Z6_Fried)
         };

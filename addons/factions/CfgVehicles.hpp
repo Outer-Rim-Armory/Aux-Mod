@@ -2,10 +2,10 @@ class CBA_Extended_EventHandlers;
 
 class CfgVehicles {
     class B_Soldier_02_F;
-    class ls_blueforUnit_base: B_Soldier_02_F {
+    class ls_blufor_unit_base: B_Soldier_02_F {
         class EventHandlers;
     };
-    class CLASS(BLUFOR_Unit_Base): ls_blueforUnit_base {
+    class CLASS(BLUFOR_Unit_Base): ls_blufor_unit_base {
         SCOPE_PRIVATE;
         author = "505th Aux Team";
         displayName = "BLUFOR Unit Base";
@@ -60,10 +60,10 @@ class CfgVehicles {
     };
 
     class I_Soldier_02_F;
-    class ls_greenforUnit_base: I_Soldier_02_F {
+    class ls_indfor_unit_base: I_Soldier_02_F {
         class EventHandlers;
     };
-    class CLASS(INDEP_Unit_Base): ls_greenforUnit_base {
+    class CLASS(INDEP_Unit_Base): ls_indfor_unit_base {
         SCOPE_PRIVATE;
         displayName = "INDEP Unit Base";
         uniformClass = "BNA_KC_INDEP_Uniform_Base";
