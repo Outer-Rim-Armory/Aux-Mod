@@ -16,8 +16,11 @@ class CfgPatches {
         units[] = {};
         weapons[] = {
             QCLASS(DC15A_Base),
+            QCLASS(DC15LE_Base),
             QCLASS(DC15A),
             QCLASS(DC15A_Fried),
+            QCLASS(DC15LE),
+            QCLASS(DC15LE_Fried),
             QCLASS(Ceremonial_DC15A),
             QCLASS(Ceremonial_DC15A_Fried),
             QCLASS(DC15A_UGL),
