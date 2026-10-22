@@ -34,7 +34,7 @@ workshop = [
     "2173635424", # 501st Aux Mod
     "1702480117", # 212th Auxiliary Assets
     "2162749089", # Legion Studios Core - Stable
-    # "2522638637", # ACE Arsenal Extended
+    # "2522638637", # ACE Arsenal Extended # Not to be activated
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
     "2954535667", # Warmantle Armory
     "767380317", # Blastcore # Only used to test particle effects
@@ -48,8 +48,6 @@ workshop = [
     "2478080991", # Scion Conflict
     "3469976535", # Weapon Research and Security: Autonomous systems
     "1967740913", # Jango's Armory
-    "1124993203", # 3DEN Better Inventory
-    "2918542818", # Sci-fi Support Plus
 ]
 presets = ["main"]
 dlc = []
@@ -66,11 +64,6 @@ workshop = [
     "2323185592", # Lightsabers and Force
     "570118882", # No Weapon Sway
     "3328314886", # Heavy Weapon Framework
-    # "3321182393", # TK Trooper Standalone Mod
-    "3500935186", # [FOD] Zeus Additions
-    "3683168022", # YouTube Player Music
-    "2917437034", # JLTS Extended Arsenal v0.2
-    "2585608055", # Black Legion Imperial Assets Mod
 ]
 optionals = ["no_burn_screams"]
 

@@ -72,6 +72,62 @@ class CfgWeapons {
         };
     };
 
+    class CLASS(DC15XH_Base): JLTS_DC15X {
+        SCOPE_PRIVATE;
+        author = AUTHOR;
+
+        displayName = "[KC] DC-15XH (Base)";
+        baseWeapon = QCLASS(DC15XH_Base);
+
+        modes[] = {"Single"};
+        muzzles[] = {"this"};
+        magazines[] = {QCLASS(Mag_25Rnd_DC15XH),QCLASS(Mag_25Rnd_DC15XH_Red), "Aux12thFleet_Mag_DC15X"};
+        magazineWell[] = {};
+
+        canShootInWater = TRUE;
+
+        // JLTS emp system
+        JLTS_hasElectronics = TRUE;
+        JLTS_hasEMPProtection = FALSE;
+
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot {
+                class CompatibleItems {
+                    CLASS(Optic_DC15X) = TRUE;
+                    CLASS(Optic_LRPS) = TRUE;
+                };
+            };
+            class PointerSlot: PointerSlot {
+                class CompatibleItems {
+                    ATTACHMENTS_POINTER_BASE;
+                };
+            };
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class CompatibleItems {
+                    bipod_01_f_blk = TRUE;
+                };
+            };
+        };
+        class Single: Single {
+            maxRange = 450;
+            maxRangeProbab = 0.3;
+            midRange = 250;
+            midRangeProbab = 0.7;
+            minRange = 2;
+            minRangeProbab = 0.5;
+
+            dispersion = 0.00015;
+            reloadTime = 1.5;
+
+            class StandardSound: StandardSound {
+                soundBegin[] = {};
+                soundBeginWater[] = {};
+                soundSetShot[] = {QCLASS(SoundSet_DC15XShot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_DC15XShot)};
+            };
+        };
+    };
+
     class CLASS(DC15X): CLASS(DC15X_Base) {
         SCOPE_PUBLIC;
 
@@ -94,6 +150,33 @@ class CfgWeapons {
         descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
         picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_fried_ui_ca.paa";
         baseWeapon = QCLASS(DC15X_Fried);
+
+        JLTS_isFried = TRUE;
+        magazines[] = {};
+    };
+
+    class CLASS(DC15XH): CLASS(DC15X_Base) {
+        SCOPE_PUBLIC;
+
+        displayName = "[KC] DC-15XH";
+        baseWeapon = QCLASS(DC15XH);
+
+        JLTS_friedItem = QCLASS(DC15XH_Fried);
+
+        class LinkedItems {
+            class LinkedItemsOptic {
+                slot = "CowsSlot";
+                item = QCLASS(Optic_DC15X);
+            };
+        };
+    };
+    class CLASS(DC15XH_Fried): CLASS(DC15XH) {
+        SCOPE_HIDDEN;
+
+        displayName = "[KC] DC-15XH (Fried)";
+        descriptionShort = "The circuits of the weapon have<br/>been fried by an EMP blast.";
+        picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_fried_ui_ca.paa";
+        baseWeapon = QCLASS(DC15XH_Fried);
 
         JLTS_isFried = TRUE;
         magazines[] = {};
