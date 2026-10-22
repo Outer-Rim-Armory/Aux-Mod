@@ -220,9 +220,9 @@ class CfgWeapons {
         SCOPE_PUBLIC;
 
         displayName = "[KC] Z-6 Heavy";
-        baseWeapon = QCLASS(Z6);
+        baseWeapon = QCLASS(Z6_Heavy);
 
-        JLTS_friedItem = QCLASS(Z6_Heavy);
+        JLTS_friedItem = QCLASS(Z6_Heavy_Fried);
     };
 
     class CLASS(Z6_Heavy_Fried): CLASS(Z6_Heavy) {
