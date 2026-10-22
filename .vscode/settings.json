@@ -8,8 +8,8 @@
     "files.insertFinalNewline": true,
 
     "files.associations": {
-        "*.cpp": "arma-config",
-        "*.hpp": "arma-config"
+        "*.cpp": "cpp",
+        "*.hpp": "cpp"
     },
 
     "C_Cpp.errorSquiggles": "disabled"

@@ -348,6 +348,62 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(Resupply_Wyvern_PlatoonAmmo): CLASS(Resupply_SquadAmmo) {
+        displayName = "10: Wyvern Ammo Crate (Platoon)";
+        ace_cargo_size = 2;
+        model = "3as\3as_props\crates\models\supply_Large.p3d";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsMaterials[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo.rvmat"};
+        hiddenSelectionsTextures[] = {"\3AS\3AS_Props\Crates\Data\Supply_Large_Ammo\Supply_Large_Ammo_co.paa"};
+
+        class TransportWeapons {
+            WEAP_XX(CLASS(RPS6_Loaded),5);
+        };
+
+        class TransportItems {
+            ITEM_XX(ACE_CableTie,30);
+            ITEM_XX(BNA_KC_jetpacks_fuelCan_mag,5);
+        };
+
+        class TransportMagazines {
+            // Primary Ammo
+            MAG_XX(CLASS(Mag_25Rnd_DC15X),60);
+            MAG_XX(CLASS(Mag_240Rnd_DC15L),60);
+            MAG_XX(CLASS(Mag_60Rnd_DC15A),60);
+            MAG_XX(CLASS(Mag_70Rnd_DC15C),60);
+            MAG_XX(CLASS(Mag_80Rnd_DC15S),60);
+            MAG_XX(CLASS(Mag_30Rnd_HI12),60);
+            MAG_XX(CLASS(Mag_40Rnd_DP24),60);
+
+            // Secondary Ammo
+            MAG_XX(CLASS(Mag_20Rnd_DC17),30);
+            MAG_XX(CLASS(Mag_40Rnd_DC17_dual),30);
+            MAG_XX(CLASS(Mag_StunLong),10);
+
+            // Rocket Ammo
+            MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),5);
+
+            // UGL Ammo
+            MAG_XX(3Rnd_HE_Grenade_shell,20);
+            MAG_XX(3Rnd_UGL_FlareWhite_F,5);
+            MAG_XX(3Rnd_UGL_FlareRed_F,5);
+            MAG_XX(CLASS(Mag_UGL_3Rnd_FlareBlue),5);
+            MAG_XX(3Rnd_UGL_FlareCIR_F,5);
+            MAG_XX(3Rnd_Smoke_Grenade_shell,5);
+            MAG_XX(3Rnd_SmokeRed_Grenade_shell,5);
+            MAG_XX(3Rnd_SmokeGreen_Grenade_shell,5);
+            MAG_XX(3Rnd_SmokeYellow_Grenade_shell,5);
+            MAG_XX(3Rnd_SmokePurple_Grenade_shell,5);
+            MAG_XX(3Rnd_SmokeBlue_Grenade_shell,5);
+            MAG_XX(3Rnd_SmokeOrange_Grenade_shell,5);
+
+            // Explosives
+            MAG_XX(ls_mag_classC_thermalDet,15);
+            MAG_XX(ls_mag_classB_thermalDet,10);
+            MAG_XX(ls_mag_classA_thermalDet,2);
+        };
+    };
+
     class CLASS(Resupply_Raptor_Drone): CLASS(Resupply_Base) {
         displayName = "11: Raptor Drone Crate";
         class TransportItems {

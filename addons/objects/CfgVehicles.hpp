@@ -296,6 +296,7 @@ class CfgVehicles {
             VICSPAWNLOG(CLASS(Resupply_PlatoonAmmo_Commando),Carnage Ammo Crate)
             VICSPAWNLOG(CLASS(Resupply_Rockets),Rocket Ammo Crate)
             VICSPAWNLOG(CLASS(Resupply_Raptor_PlatoonAmmo),Raptor Ammo Crate (Platoon))
+            VICSPAWNLOG(CLASS(Resupply_Wyvern_PlatoonAmmo),Wyvern Ammo Crate (Platoon))
             VICSPAWNLOG(CLASS(Resupply_Raptor_Drone),Raptor Drone Crate)
             VICSPAWNLOG(CLASS(Resupply_Misc),Misc Crate)
             VICSPAWNLOG(CLASS(Resupply_Sapper),Sapper Crate)

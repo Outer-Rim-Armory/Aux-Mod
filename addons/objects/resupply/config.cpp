@@ -23,6 +23,7 @@ class CfgPatches {
             QCLASS(Resupply_PlatoonAmmo_Commando),
             QCLASS(Resupply_Rockets),
             QCLASS(Resupply_Raptor_PlatoonAmmo),
+            QCLASS(Resupply_Wyvern_PlatoonAmmo),
             QCLASS(Resupply_Raptor_Drone),
             QCLASS(Resupply_Misc),
             QCLASS(Resupply_Sapper),
