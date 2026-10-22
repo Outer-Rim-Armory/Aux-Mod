@@ -380,9 +380,6 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_40Rnd_DC17_dual),30);
             MAG_XX(CLASS(Mag_StunLong),10);
 
-            // Rocket Ammo
-            MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),10);
-
             // UGL Ammo
             MAG_XX(3Rnd_HE_Grenade_shell,20);
             MAG_XX(3Rnd_UGL_FlareWhite_F,5);
@@ -400,7 +397,6 @@ class CfgVehicles {
             // Explosives
             MAG_XX(ls_mag_classC_thermalDet,15);
             MAG_XX(ls_mag_classB_thermalDet,10);
-            MAG_XX(ls_mag_classA_thermalDet,2);
         };
     };
 
@@ -477,6 +473,10 @@ class CfgVehicles {
             MAG_XX(Aux501_Weapons_Mags_flashnade,20);
             MAG_XX(CLASS(Mag_10Rnd_DC20Y),100);
             MAG_XX(CLASS(Mag_3Rnd_DC20Y_AP),50);
+            MAG_XX(CLASS(Mag_15Rnd_773),100);
+            MAG_XX(CLASS(Mag_UGL_10Rnd_HE),10);
+            MAG_XX(C12_Remote_Mag,10);
+            MAG_XX(LFP_type_C_Remote_Mag,5);
         };
         class TransportWeapons {
             WEAP_XX(CLASS(RPS6_Loaded),5);
