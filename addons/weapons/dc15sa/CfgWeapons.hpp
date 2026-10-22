@@ -1,6 +1,5 @@
 class CfgWeapons {
     class ls_weapon_dc15sa_base;
-    class 3AS_pistol_DC15SA_F;
     class ls_weapon_dc15sa: ls_weapon_dc15sa_base {
         class Single;
     };
@@ -15,8 +14,9 @@ class CfgWeapons {
         muzzles[] = {"this"};
         magazines[] = {
             QCLASS(Mag_7Rnd_DC15SA),
-            QCLASS(Mag_7Rnd_DC15SA_Red),
             QCLASS(Mag_15Rnd_DC15SA),
+            QCLASS(Mag_30Rnd_DC15SA),
+            QCLASS(Mag_7Rnd_DC15SA_Red),
             QCLASS(Mag_15Rnd_DC15SA_Red),
             QCLASS(Mag_30Rnd_DC15SA),
             QCLASS(Mag_30Rnd_DC15SA_Red),

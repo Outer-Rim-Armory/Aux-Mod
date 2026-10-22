@@ -8,13 +8,6 @@ class CfgVehicles {
 
         displayName = "INF Trooper (Base)";
         uniformClass = QCLASS(Uniform_Base);
-        model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
-        hiddenSelections[] = {"camo1","camo2","undersuit","insignia"};
-        hiddenSelectionsTextures[] = {
-            "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo1_co.paa",
-            "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo2_co.paa",
-            "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
-        };
 
         // Inventory
         weapons[] = {

@@ -28,34 +28,6 @@ class CfgMagazines {
         mass = 10;
     };
 
-    class CLASS(Mag_25Rnd_DC15XH): CLASS(Mag_Base) {
-        SCOPE_PUBLIC;
-        displayName = "[KC] DC-15XH Energy Cell (Blue)";
-        displayNameShort = "High Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 25<br/>Used In: DC-15XH";
-
-        model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
-        picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
-
-        ammo = QCLASS(Bullet_PlasmaSniper_Blue2);
-        count = 25;
-        mass = 10;
-    };
-
-    class CLASS(Mag_25Rnd_DC15XH_Red): CLASS(Mag_Base) {
-        SCOPE_PUBLIC;
-        displayName = "[KC] DC-15XH Energy Cell (Red)";
-        displayNameShort = "High Energy";
-        descriptionShort = "Energy Cell Pack<br/>Rounds: 25<br/>Used In: DC-15XH";
-
-        model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
-        picture = "\MRC\JLTS\weapons\DC15x\data\ui\DC15X_mag_ui_ca.paa";
-
-        ammo = QCLASS(Bullet_PlasmaSniper_Red2);
-        count = 25;
-        mass = 10;
-    };
-
     class Aux12thFleet_Mag_DC15X: CLASS(Mag_25Rnd_DC15X) {
         SCOPE_HIDDEN;
         descriptionShort = "Energy Cell Pack<br/>Rounds: 15<br/>Used In: DC-15X<br/>LEGACY CLASS<br/>This class has been deprecated and will be removed in the future.";

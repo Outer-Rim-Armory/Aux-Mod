@@ -17,9 +17,7 @@ class CfgPatches {
         weapons[] = {
             QCLASS(DC15X_Base),
             QCLASS(DC15X),
-            QCLASS(DC15X_Fried),
-            QCLASS(DC15XH),
-            QCLASS(DC15XH_Fried)
+            QCLASS(DC15X_Fried)
         };
         VERSION_CONFIG;
     };

@@ -403,7 +403,7 @@ class CfgWeapons {
             "\ls\core\addons\characters_clone_legacy\equipment\nvgs\common\camo1_co.paa",
             ""
         };
-        picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_cloneVisor_cc_ca.paa";
+        picture = "\lsd_equipment_bluefor\accessories\gar\_ui\icon_cloneVisor_cc_ca.paa";
 
         class ItemInfo: ItemInfo {
             hiddenSelections[] = {"camo1", "camo2", "camo3"};

@@ -3,9 +3,9 @@ class CfgAmmo {
     class CLASS(Rocket_RPS9_HE): CLASS(Rocket_Base) {
         SCOPE_PUBLIC;
 
-        hit = 900;
-        indirectHit = 100;
-        indirectHitRange = 60;
+        hit = 600;
+        indirectHit = 50;
+        indirectHitRange = 30;
         irLock = 0;
         warheadName = "HE";
 

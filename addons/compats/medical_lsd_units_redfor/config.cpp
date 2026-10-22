@@ -8,6 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             QCLASS(medical),
+            "lsd_units_redfor"
         };
         units[] = {};
         weapons[] = {};
