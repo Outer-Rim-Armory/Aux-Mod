@@ -381,7 +381,7 @@ class CfgVehicles {
             MAG_XX(CLASS(Mag_StunLong),10);
 
             // Rocket Ammo
-            MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),5);
+            MAG_XX(CLASS(Mag_1Rnd_RPS7_AT),10);
 
             // UGL Ammo
             MAG_XX(3Rnd_HE_Grenade_shell,20);
