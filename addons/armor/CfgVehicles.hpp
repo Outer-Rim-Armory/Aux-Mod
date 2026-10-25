@@ -581,7 +581,7 @@ class CfgVehicles {
             "\ls\core\addons\characters_clone_legacy\backpacks\arc\data\camo1_co.paa"
         };
         picture = "\ls\core\addons\characters_clone_legacy\_ui\icon_clone_arc_backpack_ca.paa";
-        maximumLoad = 600;
+        maximumLoad = 700;
     };
     class CLASS(Backpack_ARC_V2): CLASS(Backpack_ARC) {
         displayName = "[KC] ARC Trooper Backpack ('V2')";
