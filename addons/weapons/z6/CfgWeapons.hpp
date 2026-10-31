@@ -129,8 +129,8 @@ class CfgWeapons {
             class manual: manual {
                 reloadTime = 0.5;
                 class StandardSound{
-                    soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
-                    soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
+                    soundSetShot[] = {"UGL_shot_SoundSet"};
+                    soundSetShotWater[] = {"UGL_shot_SoundSet"};
                 };
             };
         };
