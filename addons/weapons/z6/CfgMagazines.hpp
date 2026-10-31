@@ -64,4 +64,16 @@ class CfgMagazines {
         initSpeed = 920;
         mass = 9;
     };
+    class CLASS(Mag_40Rnd_HE): CLASS(Mag_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] Z-6 HE Energy Cell (Green)";
+        displayNameShort = "HE Energy";
+        descriptionShort = "High Explosive Energy Cell Pack<br/>Rounds: 40<br/>Used In: Z-6 Heavy Secondary";
+        model = "\MRC\JLTS\weapons\z6\z6_mag.p3d";
+        picture = "\MRC\JLTS\weapons\z6\data\ui\z6_mag_ui_ca.paa";
+        ammo = QCLASS(Bullet_PlasmaMachineGun_HE);
+        count = 40;
+        initSpeed = 920;
+        mass = 12;
+    };
 };
