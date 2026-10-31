@@ -499,7 +499,7 @@ class CfgAmmo {
             distance = 91.3296;
             duration = 1.4;
             frequency = 20;
-            power = 11;
+            power = 6;
         };
 
         class CamShakeHit {
@@ -529,6 +529,19 @@ class CfgAmmo {
         ACE_bulletMass = 16.2;
         ACE_caliber = 8.585;
         ACE_muzzleVelocities[] = {880,915,925};
+    };
+    class CLASS(Bullet_PlasmaMachineGun_HE): CLASS(Bullet_PlasmaMachineGun_Green) {
+        hit = 50;
+        indirectHit = 25;
+        indirectHitRange = 3.5;
+        explosive = 0.8;
+        dangerRadiusHit = 25;
+        suppressionRadiusHit = 15;
+        cost = 20;
+        explosionEffects = "ExploAmmoExplosion";
+        craterEffects = "ExploAmmoCrater";
+        soundSetExplosion[] = {"Explosion_Debris_SoundSet", "RocketsLight_Exp_SoundSet"};
+        tracerscale = 2.0;
     };
 
     class CLASS(Bullet_PlasmaAutoRifle_Blue): CLASS(Bullet_PlasmaBase) {

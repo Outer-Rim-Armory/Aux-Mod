@@ -112,7 +112,7 @@ class CfgWeapons {
         baseWeapon = QCLASS(Z6_Base);
 
         modes[] = {"manual","close","short","medium","far_optic1","far_optic2"};
-        muzzles[] = {"this"};
+        muzzles[] = {"this","HE_Muzzle"};
         magazines[] = {QCLASS(Mag_400Rnd_Z6H), "Aux12thFleet_Mag_Z6"};
         magazineWell[] = {};
 
@@ -122,13 +122,24 @@ class CfgWeapons {
 
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
-
+        class HE_Muzzle: JLTS_Z6 {
+            displayName = "HE Bolts";
+            magazines[] = {QCLASS(Mag_40Rnd_HE)};
+            modes[] = {"manual"};
+            class manual: manual {
+                reloadTime = 0.5;
+                class StandardSound{
+                    soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
+                    soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
+                };
+            };
+        };
         class manual: manual {
             class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
             };
-            reloadTime = 0.5;
+            reloadTime = 0.2;
         };
         class close: manual
         {
