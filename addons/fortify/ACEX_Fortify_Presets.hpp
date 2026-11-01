@@ -12,7 +12,8 @@ class ACEX_Fortify_Presets {
             QGVAR(mines),
             QGVAR(fob),
             QGVAR(camouflage),
-            QGVAR(weapons)
+            QGVAR(weapons),
+            QGVAR(fob2)
         };
     };
 
@@ -21,8 +22,8 @@ class ACEX_Fortify_Presets {
         objects[] = {
             // Hesco Objects
             {"Land_lsb_fob_hBarrier_1", 1},                   // Block
-            {"Land_lsb_fob_hBarrier_3", 38},                  // Barrier (3 Block)
-            {"Land_lsb_fob_hBarrierBig_4", 8},               // Large Hesco Wall
+            {"Land_lsb_fob_hBarrier_3", 13},                  // Barrier (3 Block)
+            {"Land_lsb_fob_hBarrierBig_4", 23},               // Large Hesco Wall
             {"Land_lsb_fob_hBarrierWall_exvertedCorner", 15}, // Large Hesco Wall Corner
             {"Land_lsb_fob_hBarrier_ramp", 5},                // Hesco Ramp, ~2m
             {"Land_lsb_fob_hBarrierWall_ramp", 6},            // Hesco Wall Ramp
@@ -67,7 +68,8 @@ class ACEX_Fortify_Presets {
             {"CamoNet_BLUFOR_F", 10},
             {"CamoNet_BLUFOR_open_F", 10},
             {"CamoNet_wdl_open_F", 10},
-            {"CamoNet_wdl_F", 10}
+            {"CamoNet_wdl_F", 10},
+            {"Land_Campfire_F", 3}
         };
     };
 
@@ -75,6 +77,26 @@ class ACEX_Fortify_Presets {
         displayName = "Weapons";
         objects[] = {
         {"OPTRE_Static_FG75",100}
+        };
+    };
+
+    class GVAR(fob2) { // 3AS FOB Preset
+        displayName = "FOB Building 2";
+        objects[] = {
+        {"3AS_Prop_FOB_modular_Bunker",28},
+        {"3AS_Prop_FOB_modular_watchTower",58},
+        {"3AS_Prop_FOB_modular_Wall_Bunker", 43},
+        {"3AS_Prop_FOB_modular_Wall_Corner_Inversed", 43},
+        {"3AS_Prop_FOB_modular_Wall_Corner", 43},
+        {"3AS_Prop_FOB_modular_Wall_Door", 43},
+        {"3AS_Prop_FOB_modular_Wall_gate", 58},
+        {"3AS_Prop_FOB_modular_Wall_straight", 33},
+        {"3AS_Prop_FOB_modular_Wall_straight_Long", 43},
+        {"3AS_Prop_FOB_modular_Wall_watchTower", 58},
+        {"land_3as_Imperial_Checkpoint_Long", 43},
+        {"land_3as_Imperial_Checkpoint", 28},
+        {"3AS_HoloTable_Octagon_prop", 28},
+        {"3AS_HoloTable_Rectangle_prop", 28}
         };
     };
 };
