@@ -2,6 +2,7 @@
 /*
  * Author: 3AS
  * Edited by DartRuffian
+ * Edited by Star 11/1/26
  * Initalizes an AT-RT
  *
  * Arguments:
@@ -22,9 +23,12 @@ params [
 TRACE_1("fnc_atrt_init",_atrt);
 
 if (isNull _atrt) exitWith {};
-
-_atrt setAnimSpeedCoef 3;
-_atrt disableAI "all";
+if (_atrt isKindOf "ls_vehicle_atrt") then {
+    _atrt setAnimSpeedCoef 1.6;
+} else {
+    _atrt setAnimSpeedCoef 3;
+};
+_atrt disableAI "ALL";
 _atrt enableStamina false;
 
 _atrt addAction ["Drive", {

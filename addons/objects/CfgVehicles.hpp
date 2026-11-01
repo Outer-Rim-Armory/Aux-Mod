@@ -266,6 +266,7 @@ class CfgVehicles {
             // Raptor VICSPAWNRAP
             VICSPAWNRAP(CLASS(BARC),BARC Speeder)
             VICSPAWNRAP(CLASS(BARC_Sidecar),BARC Speeder Sidecar Variant)
+            VICSPAWNINF(CLASS(ATRT_LS),AT-RT)
             // Boats
 
             //

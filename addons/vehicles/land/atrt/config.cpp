@@ -10,12 +10,17 @@ class CfgPatches {
             QUOTE(ADDON),
             QGVAR(weapons),
             QGVAR(sounds),
-            "3AS_ATRT"
+            "3AS_ATRT",
+            "ls_vehicles_atrt"
         };
         units[] = {
-            QCLASS(ATRT)
+            QCLASS(ATRT),
+            QCLASS(ATRT_LS)
         };
-        weapons[] = {};
+        weapons[] = {
+            QCLASS(Uniform_ATRT),
+            QCLASS(Uniform_ATRT_LS)
+    };
         VERSION_CONFIG;
     };
 };

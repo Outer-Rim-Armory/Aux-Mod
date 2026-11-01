@@ -2,6 +2,9 @@ class CfgVehicles {
     class 3AS_ATRT_Base;
     class 3AS_ATRT: 3AS_ATRT_Base {
     };
+    class ls_vehicle_atrt_base;
+    class ls_vehicle_atrt: ls_vehicle_atrt_base {};
+
     class CLASS(ATRT): 3AS_ATRT {
         SCOPE_PUBLIC;
         author = AUTHOR;
@@ -79,6 +82,21 @@ class CfgVehicles {
             };
         };
     };
+    class CLASS(ATRT_LS): ls_vehicle_atrt {
+        SCOPE_PUBLIC;
+        author = AUTHOR;
+        displayName = "[KC] AT-RT (LS)";
+        faction = QFACTION(KC);
+        editorSubcategory = QEDSUBCAT(Walkers);
+        uniformClass = QCLASS(Uniform_ATRT_LS);
+        nakedUniform = QCLASS(Uniform_ATRT_LS);
+        ls_crew = "Unit_Scout_CT";
+        weapons[] = {QCLASS(Turret_ATRT)};
+        respawnWeapons[] = {QCLASS(Turret_ATRT)};
+        magazines[] = {QCLASS(Mag_9999Rnd_ATRT)};
+        respawnMagazines[] = {QCLASS(Mag_9999Rnd_ATRT)};
+        hiddenSelections[] = {"camo1", "camo2", "camo3", "camo4"};
+    };
 
     // AT-RT requires a different "Switch Textures" action
     class Man;
@@ -88,6 +106,7 @@ class CfgVehicles {
                 displayName = "Switch Vehicle Skin";
                 condition = QUOTE(call FUNC(atrt_skin_canSwitch));
                 insertChildren = QUOTE(call FUNC(atrt_skin_insertChildren));
+
             };
         };
     };

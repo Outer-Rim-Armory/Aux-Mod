@@ -4,4 +4,10 @@ class Extended_Init_EventHandlers {
             init = QUOTE(_this select 0 call FUNC(atrt_init));
         };
     };
+
+    class CLASS(ATRT_LS) {
+        class LS_ATRT_Init {
+            init = QUOTE(_this select 0 call FUNC(atrt_init));
+        };
+    };
 };
