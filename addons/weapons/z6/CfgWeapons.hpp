@@ -110,6 +110,9 @@ class CfgWeapons {
 
         displayName = "[KC] Z-6 Heavy (Base)";
         baseWeapon = QCLASS(Z6_Base);
+        model = "\LF_Weapon_Unit\z6\z6.p3d";
+        picture = "\LF_Weapon_Unit\z6\ui\z6_co.paa";
+        handAnim[] = {"OFP2_ManSkeleton","LF_Weapon_Unit\z6\anims\z6_handanimation.rtm"};
 
         modes[] = {"manual","close","short","medium","far_optic1","far_optic2"};
         muzzles[] = {"this","HE_Muzzle"};
@@ -129,8 +132,8 @@ class CfgWeapons {
             class manual: manual {
                 reloadTime = 0.5;
                 class StandardSound{
-                    soundSetShot[] = {"UGL_shot_SoundSet"};
-                    soundSetShotWater[] = {"UGL_shot_SoundSet"};
+                    soundSetShot[] = {QCLASS(SoundSet_Z6HE)};
+                    soundSetShotWater[] = {QCLASS(SoundSet_Z6HE)};
                 };
             };
         };
@@ -139,7 +142,7 @@ class CfgWeapons {
                 soundSetShot[] = {QCLASS(SoundSet_Z6Shot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_Z6Shot)};
             };
-            reloadTime = 0.2;
+            reloadTime = 0.075;
         };
         class close: manual
         {

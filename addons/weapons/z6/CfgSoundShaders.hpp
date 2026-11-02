@@ -14,4 +14,10 @@ class CfgSoundShaders {
             }
         };
     };
+    class CLASS(SoundShader_Z6HE): CLASS(SoundShader_WeaponShot_Base) {
+        samples[] = {{QPATHTOF(z6\data\sound\z6he.ogg), 1, 1}
+        };
+        volume = 1.2;
+        range = 150;
+    };
 };
