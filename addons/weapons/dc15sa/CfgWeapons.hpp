@@ -1,6 +1,9 @@
 class CfgWeapons {
     class ls_weapon_dc15sa_base;
-    class 3AS_pistol_DC15SA_F;
+    class hgun_P07_F;
+    class JA_104th_DC15SA: hgun_P07_F {
+        class Single;
+    };
     class ls_weapon_dc15sa: ls_weapon_dc15sa_base {
         class Single;
     };
@@ -49,10 +52,50 @@ class CfgWeapons {
             reloadTime = 0.15;
         };
     };
+    class CLASS(DC15SA_104_Base): JA_104th_DC15SA {
+        SCOPE_PRIVATE;
+        author = AUTHOR;
+
+        displayName = "[KC] DC-15SA (Base)";
+        baseWeapon = QCLASS(DC15SA_104_Base);
+
+        modes[] = {"Single", "FullAuto"};
+        muzzles[] = {"this"};
+        magazines[] = {
+            "JA_104th_Weapons_Mags_10mw40"
+        };
+
+        canShootInWater = TRUE;
+
+        // JLTS emp system
+        JLTS_hasElectronics = TRUE;
+        JLTS_hasEMPProtection = TRUE;
+
+        class Single: Single {
+            recoil = "recoil_pistol_light";
+            recoilProne = "recoil_prone_pistol_light";
+            class StandardSound {
+                soundSetShot[] = {QCLASS(SoundSet_DC15SAShot)};
+                soundSetShotWater[] = {QCLASS(SoundSet_DC15SAShot)};
+            };
+        };
+        class FullAuto: Single {
+            autoFire = TRUE;
+            textureType = "fullAuto";
+            dispersion = 0.001;
+            reloadTime = 0.15;
+        };
+    };
 
     class CLASS(DC15SA): CLASS(DC15SA_Base) {
         SCOPE_PUBLIC;
         displayName = "[KC] DC-15SA";
         baseWeapon = QCLASS(DC15SA);
+    };
+
+    class CLASS(DC15SA_104): CLASS(DC15SA_104_Base) {
+        SCOPE_PUBLIC;
+        displayName = "[KC] DC-15SA (104th)";
+        baseWeapon = QCLASS(DC15SA_104);
     };
 };

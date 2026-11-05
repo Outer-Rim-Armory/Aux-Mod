@@ -1,19 +1,14 @@
 class PointerSlot_Rail;
+class WeaponSlotsInfo {
+    class CowsSlot;
+};
+class FullAuto;
+class Single;
 
 class CfgWeapons {
     class CLASS(Muzzle_Stun);
-    class ls_rifle_base;
-    class ls_weapon_dc17m_base: ls_rifle_base {
-        class WeaponSlotsInfo;
-    };
-    class ls_weapon_dc17m: ls_weapon_dc17m_base {
-        class WeaponSlotsInfo: WeaponSlotsInfo {
-            class CowsSlot;
-        };
-        class FullAuto;
-        class Single;
-    };
-    class CLASS(DC17M_Base): ls_weapon_dc17m {
+    class LFP_DC17M;
+    class CLASS(DC17M_Base): LFP_DC17M {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -24,12 +19,11 @@ class CfgWeapons {
         muzzles[] = {"this", "Stun"};
         magazines[] = {
             QCLASS(Mag_60Rnd_DC17M),
-            QCLASS(Mag_90Rnd_DC17M),
             QCLASS(Mag_5Rnd_DC17M_Sniper),
             QCLASS(Mag_60Rnd_DC17M_Red),
-            QCLASS(Mag_90Rnd_DC17M_Red),
             QCLASS(Mag_5Rnd_DC17M_Sniper_Red),
             QCLASS(Mag_1Rnd_DC17M_AT),
+            QCLASS(Mag_3Rnd_DC17M_AT),
             "Aux12thFleet_Mag_60Rnd_DC17M",
             "Aux12thFleet_Mag_90Rnd_DC17M",
             "Aux12thFleet_Mag_5Rnd_DC17M_Sniper",
@@ -43,9 +37,9 @@ class CfgWeapons {
         // Array of magazine properties to check and the attachment to use
         GVAR(attachmentSwapEnabled) = TRUE;
         GVAR(attachments)[] = {
-            {QGVAR(isBlasterMag), "ls_muzzle_dc17m_blaster"},
-            {QGVAR(isATMag), "ls_muzzle_dc17m_antiArmor"},
-            {QGVAR(isSniperMag), "ls_muzzle_dc17m_sniper"}
+            {QGVAR(isBlasterMag), "LFP_DC17M_Attachment_Blaster"},
+            {QGVAR(isATMag), "LFP_DC17M_Attachment_GL"},
+            {QGVAR(isSniperMag), "LFP_DC17M_Attachment_Sniper"}
         };
 
         canShootInWater = TRUE;
@@ -53,8 +47,6 @@ class CfgWeapons {
         fireLightDuration = 0.05;
         fireLightIntensity = 0.2;
         flashSize = 0.5;
-
-        hiddenSelectionsTextures[] = {QPATHTOF(dc17m\data\DC17M_camo1_co.paa)};
         picture = QPATHTOF(dc17m\data\ui\DC17M_ca);
 
         // JLTS emp system
@@ -64,13 +56,6 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot: CowsSlot {
                 class CompatibleItems {
-                    ls_cows_dc17m_sniper = TRUE;
-                    ATTACHMENTS_OPTIC_SHORT;
-                    ATTACHMENTS_OPTIC_MEDIUM;
-                    ATTACHMENTS_OPTIC_LONG;
-                    CLASS(Optic_Holosight) = TRUE;
-                    CLASS(Optic_Holosight2) = TRUE;
-                    CLASS(Optic_Holosight3) = TRUE;
                 };
             };
             class PointerSlot: PointerSlot_Rail {
@@ -103,7 +88,7 @@ class CfgWeapons {
         class LinkedItems {
             class LinkedItemsMuzzle {
                 slot = "MuzzleSlot";
-                item = "ls_muzzle_dc17m_blaster";
+                item = "LFP_DC17M_Attachment_Blaster";
             };
         };
     };

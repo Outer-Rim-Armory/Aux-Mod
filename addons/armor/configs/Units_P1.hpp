@@ -280,7 +280,7 @@ class CLASS(Unit_phase1Geo_Enlisted): CLASS(Unit_Phase1_Base) {
 class CLASS(Unit_phase1Geo_NCO): CLASS(Unit_phase1Geo_Enlisted) {
     uniformClass = QCLASS(Uniform_phase1Geo_NCO);
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legions\units\misc\data\uniforms\sergeant_upper_co.paa",
+        "\ls\core\addons\characters_clone_legacy\units\misc\data\uniforms\sergeant_upper_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo2_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
@@ -289,7 +289,7 @@ class CLASS(Unit_phase1Geo_NCO): CLASS(Unit_phase1Geo_Enlisted) {
 class CLASS(Unit_phase1Geo_Officer): CLASS(Unit_phase1Geo_NCO) {
     uniformClass = QCLASS(Uniform_phase1Geo_Officer);
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legions\units\misc\data\uniforms\lieutenant_upper_co.paa",
+        "\ls\core\addons\characters_clone_legacy\units\misc\data\uniforms\lieutenant_upper_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo2_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
@@ -298,7 +298,7 @@ class CLASS(Unit_phase1Geo_Officer): CLASS(Unit_phase1Geo_NCO) {
 class CLASS(Unit_phase1Geo_Captain): CLASS(Unit_phase1Geo_NCO) {
     uniformClass = QCLASS(Uniform_phase1Geo_Captain);
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legions\units\misc\data\uniforms\captain_upper_co.paa",
+        "\ls\core\addons\characters_clone_legacy\units\misc\data\uniforms\captain_upper_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo2_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };
@@ -316,7 +316,7 @@ class CLASS(Unit_phase1Geo_Major): CLASS(Unit_phase1Geo_NCO) {
 class CLASS(Unit_phase1Geo_Commander): CLASS(Unit_phase1Geo_NCO) {
     uniformClass = QCLASS(Uniform_phase1Geo_Commander);
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legions\units\misc\data\uniforms\commander_upper_co.paa",
+        "\ls\core\addons\characters_clone_legacy\units\misc\data\uniforms\commander_upper_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo2_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };

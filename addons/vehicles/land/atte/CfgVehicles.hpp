@@ -63,7 +63,6 @@ class CfgVehicles {
             "KeeliCompanyWhite", 0,
             "CamoBrown", 0,
             "CamoGrey", 0,
-            "Rebecca", 0,
             "Reekolith", 0,
             "Lone Wolf", 0,
             "Rebel", 0,
@@ -110,18 +109,6 @@ class CfgVehicles {
                 displayName = "Keeli Company (White)";
                 textures[] = {
                     QPATHTOF(land\atte\data\textures\KeeliCompanyWhite\Shell_co.paa),
-                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
-                    QPATHTOF(land\atte\data\textures\KeeliCompanyWhite\Detail_co.paa),
-                    QPATHTOF(land\atte\data\textures\KeeliCompanyWhite\Legs_co.paa),
-                    "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Glass_ca.paa",
-                    "\3AS\3AS_ATTE\data\textures\3AS_ATTE_Armor_co.paa"
-                };
-            };
-
-            class Rebecca: KeeliCompany {
-                displayName = "Rebecca";
-                textures[] = {
-                    QPATHTOF(land\atte\data\textures\Rebecca\Shell_co.paa),
                     "\3AS\3AS_ATTE\data\Textures\3AS_ATTE_Cockpit_co.paa",
                     QPATHTOF(land\atte\data\textures\KeeliCompanyWhite\Detail_co.paa),
                     QPATHTOF(land\atte\data\textures\KeeliCompanyWhite\Legs_co.paa),

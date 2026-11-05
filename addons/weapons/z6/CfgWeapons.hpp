@@ -4,7 +4,9 @@ class CfgWeapons {
     class JLTS_Z6: LMG_Mk200_F {
         class manual;
     };
-    class LFP_Z6: Rifle_Base_F {};
+    class LFP_Z6: Rifle_Base_F {
+        class manual;
+    };
     class CLASS(Z6_Base): JLTS_Z6 {
         SCOPE_PRIVATE;
         author = AUTHOR;
@@ -104,12 +106,12 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(Z6_Heavy_Base): JLTS_Z6 {
+    class CLASS(Z6_Heavy_Base): LFP_Z6 {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
         displayName = "[KC] Z-6 Heavy (Base)";
-        baseWeapon = QCLASS(Z6_Base);
+        baseWeapon = QCLASS(Z6_Heavy_Base);
         model = "\LF_Weapon_Unit\z6\z6.p3d";
         picture = "\LF_Weapon_Unit\z6\ui\z6_co.paa";
         handAnim[] = {"OFP2_ManSkeleton","LF_Weapon_Unit\z6\anims\z6_handanimation.rtm"};

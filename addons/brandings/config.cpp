@@ -30,7 +30,7 @@ class RscDisplayLoading {
                     y = "SafeZoneY";
                     h = "SafeZoneH";
                     w = "SafeZoneW";
-                    text = "\ORA\BNA_KC\addons\brandings\images\Loading_Image_04.paa";
+                    text = "\ORA\BNA_KC\addons\brandings\images\Loading_Image_08.paa";
                 };
             };
         };
@@ -45,7 +45,7 @@ class RscDisplayStart: RscStandardDisplay {
             y = "SafeZoneY";
             h = "SafeZoneH";
             w = "SafeZoneW";
-            text = "\ORA\BNA_KC\addons\brandings\images\Loading_Image_03.paa";
+            text = "\ORA\BNA_KC\addons\brandings\images\Loading_Image_06.paa";
         };
     };
 };
@@ -104,7 +104,7 @@ class RscDisplayMain: RscStandardDisplay {
             y = "SafeZoneY";
             h = "SafeZoneH";
             w = "SafeZoneW";
-            text = "\ORA\BNA_KC\addons\brandings\images\Loading_Image_04.paa";
+            text = "\ORA\BNA_KC\addons\brandings\images\Loading_Image_13.paa";
         };
     };
 };

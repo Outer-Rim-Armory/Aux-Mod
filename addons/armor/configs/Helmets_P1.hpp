@@ -281,7 +281,7 @@ class CLASS(Helmet_phase1Geo_Enlisted): CLASS(Helmet_Phase1_Base) {
 class CLASS(Helmet_phase1Geo_NCO): CLASS(Helmet_Phase1_Base) {
     displayName = "[KC] INF GEO Helm 02 (NCO)";
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legions\units\misc\data\helmets\sergeant_phase1_camo1_co.paa",
+        "\ls\core\addons\characters_clone_legacy\units\misc\data\helmets\sergeant_phase1_camo1_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
     };
@@ -290,7 +290,7 @@ class CLASS(Helmet_phase1Geo_NCO): CLASS(Helmet_Phase1_Base) {
 class CLASS(Helmet_phase1Geo_Officer): CLASS(Helmet_Phase1_Base) {
     displayName = "[KC] INF GEO Helm 03 (Officer)";
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legions\units\misc\data\helmets\lieutenant_phase1_camo1_co.paa",
+        "\ls\core\addons\characters_clone_legacy\units\misc\data\helmets\lieutenant_phase1_camo1_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
     };
@@ -299,7 +299,7 @@ class CLASS(Helmet_phase1Geo_Officer): CLASS(Helmet_Phase1_Base) {
 class CLASS(Helmet_phase1Geo_Captain): CLASS(Helmet_Phase1_Base) {
     displayName = "[KC] INF GEO Helm 04 (CPT)";
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legions\units\misc\data\helmets\captain_phase1_camo1_co.paa",
+        "\ls\core\addons\characters_clone_legacy\units\misc\data\helmets\captain_phase1_camo1_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
     };
@@ -317,7 +317,7 @@ class CLASS(Helmet_phase1Geo_Major): CLASS(Helmet_Phase1_Base) {
 class CLASS(Helmet_phase1Geo_Commander): CLASS(Helmet_Phase1_Base) {
     displayName = "[KC] INF GEO Helm 06 (CMD)";
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legions\units\misc\data\helmets\commander_phase1_camo1_co.paa",
+        "\ls\core\addons\characters_clone_legacy\units\misc\data\helmets\commander_phase1_camo1_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\visor_co.paa",
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
     };

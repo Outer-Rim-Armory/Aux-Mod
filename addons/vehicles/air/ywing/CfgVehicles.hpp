@@ -36,27 +36,27 @@ class CfgVehicles {
         };
 
         hiddenselectionstextures[] = {
-            "\3as\3AS_btlb\textures\chasis_shadow_co.paa",
+            QPATHTOF(air\SUBCOMPONENT\data\textures\FW_Bomber_Chassis_co.paa),
             "\3as\3AS_btlb\data\detail_co.paa",
             "\3as\3AS_btlb\data\interior_co.paa"
         };
 
-        textureList[] = {"Standard", 1, "StandardLeader", 0};
+        textureList[] = {"KCStandard", 1, "KCLeader", 0};
         class TextureSources {
-            class Standard {
-                author = "3rd Army Studios";
-                displayName = "Standard";
+            class KCStandard {
+                author = "Dexus";
+                displayName = " KC Standard";
                 factions[] = {};
                 textures[] = {
-                    "\3as\3AS_btlb\textures\chasis_shadow_co.paa",
+                    QPATHTOF(air\SUBCOMPONENT\data\textures\FW_Bomber_Chassis_co.paa),
                     "\3as\3AS_btlb\data\detail_co.paa",
                     "\3as\3AS_btlb\data\interior_co.paa"
                 };
             };
-            class StandardLeader: Standard {
-                displayName = "Standard Leader";
+            class KCLeader: KCStandard {
+                displayName = "KC Leader";
                 textures[] = {
-                    "\3as\3AS_btlb\textures\chasis_shadowleader_co.paa",
+                    QPATHTOF(air\SUBCOMPONENT\data\textures\FL_Bomber_Chassis_co.paa),
                     "\3as\3AS_btlb\data\detail_co.paa",
                     "\3as\3AS_btlb\data\interior_co.paa"
                 };

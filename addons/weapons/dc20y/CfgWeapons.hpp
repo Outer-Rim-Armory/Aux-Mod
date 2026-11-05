@@ -1,7 +1,9 @@
 class CfgWeapons {
     class OPTRE_LongRifle_Base;
     class OPTRE_SRS99C: OPTRE_LongRifle_Base {
+        class CowsSlot;
         class Single;
+        class WeaponSlotsInfo;
     };
     class OPTRE_M99A2S3: OPTRE_LongRifle_Base {
         class Single;
@@ -86,17 +88,20 @@ class CfgWeapons {
         fireLightIntensity = 0.5;
         flashSize = 0.5;
 
-        hiddenSelectionsTextures[] = {
-            QPATHTOF(SUBCOMPONENT\data\textures\camo_attach_co.paa),
-            "",
-            QPATHTOF(SUBCOMPONENT\data\textures\camo_front_co.paa),
-            QPATHTOF(SUBCOMPONENT\data\textures\camo_rear_co.paa)
-        };
-
         JLTS_hasElectronics = TRUE;
         JLTS_hasEMPProtection = FALSE;
 
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            class CowsSlot: CowsSlot {
+                class CompatibleItems {
+                    OPTRE_SRS99C_Scope = TRUE;
+                };
+            };
+        };
+
         class Single: Single {
+            dispersion = 0.0;
+            reloadTime = 1.0;
             class StandardSound {
                 soundSetShot[] = {QCLASS(SoundSet_DC20YShot)};
                 soundSetShotWater[] = {QCLASS(SoundSet_DC20YShot)};

@@ -9,6 +9,7 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot;
             class PointerSlot;
+            class UnderBarrelSlot;
         };
 
         class Single: Mode_SemiAuto {
@@ -21,6 +22,9 @@ class CfgWeapons {
 
         displayName = "[KC] 773 Rifle (Base)";
         baseWeapon = QCLASS(773_Base);
+        model = "\ls\core\addons\weapons_firepuncher\ls_weapon_firepuncher.p3d";
+        picture = "\ls\core\addons\weapons_firepuncher\data\ui\firepuncher_ui_ca.paa";
+        handAnim[] = {"OFP2_ManSkeleton","\ls\core\addons\weapons_firepuncher\anims\firepuncher_handanim.rtm"};
 
         modes[] = {"Single"};
         muzzles[] = {"this"};
@@ -41,6 +45,11 @@ class CfgWeapons {
             class PointerSlot: PointerSlot {
                 class CompatibleItems {
                     ATTACHMENTS_POINTER_BASE;
+                };
+            };
+            class UnderBarrelSlot: UnderBarrelSlot {
+                class CompatibleItems {
+                    3AS_bipod_DC15X_F = TRUE;
                 };
             };
         };

@@ -71,7 +71,7 @@ class CfgWeapons {
         picture = "\ls\core\addons\characters_clone_legacy\_ui\uniform_ui_ca.paa";
 
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(Unit_Phase1_Base);
+            uniformClass = QCLASS(Unit_Base);
             uniformType = "Neopren";
         };
     };
