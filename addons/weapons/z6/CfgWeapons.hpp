@@ -106,7 +106,7 @@ class CfgWeapons {
         };
     };
 
-    class CLASS(Z6_Heavy_Base): LFP_Z6 {
+    class CLASS(Z6_Heavy_Base): JLTS_Z6 {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
