@@ -147,7 +147,6 @@ class CfgVehicles {
         };
 
         class UserActions: UserActions {
-
             class HornCarnage {
                 displayName = "Play Horn [Carnage]";
                 displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
@@ -157,32 +156,32 @@ class CfgVehicles {
                 hideOnUse = TRUE;
                 priority = 5;
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Carnage' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Carnage)');
             };
             class HornHarry: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Harry)');
             };
             class HornGoldie: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Goldie] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Goldie' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Goldie_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Goldie)');
             };
             class HornCough: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Cough] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Cough' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Cough_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Cough)');
             };
             class HornJester: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Jester] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Jester' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Jester_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Jester)');
             };
             class HornRDF: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [RDF] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'RDF' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\RDF_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_RDF)');
             };
         };
 
@@ -351,7 +350,6 @@ class CfgVehicles {
         };
 
         class UserActions {
-
             class HornCarnage {
                 displayName = "Play Horn [Carnage]";
                 displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
@@ -361,27 +359,32 @@ class CfgVehicles {
                 hideOnUse = TRUE;
                 priority = 5;
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Carnage' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Carnage)');
             };
             class HornHarry: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Harry)');
             };
             class HornGoldie: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Goldie] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Goldie' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Goldie_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Goldie)');
             };
             class HornCough: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Cough] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Cough' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Cough_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Cough)');
             };
             class HornJester: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Jester] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Jester' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Jester_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Jester)');
+            };
+            class HornRDF: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [RDF] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'RDF' and {ace_player == currentPilot this});
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_RDF)');
             };
         };
 
@@ -582,7 +585,6 @@ class CfgVehicles {
         };
 
         class UserActions {
-
             class HornCarnage {
                 displayName = "Play Horn [Carnage]";
                 displayNameDefault = "<img size=2 image='\a3\Modules_F_Curator\Data\portraitSound_ca.paa'>";
@@ -592,27 +594,32 @@ class CfgVehicles {
                 hideOnUse = TRUE;
                 priority = 5;
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Carnage' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Carnage_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Carnage)');
             };
             class HornHarry: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Harry] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Harry' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Harry_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Harry)');
             };
             class HornGoldie: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Goldie] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Goldie' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Goldie_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Goldie)');
             };
             class HornCough: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Cough] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Cough' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Cough_Horn.wss),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Cough)');
             };
             class HornJester: HornCarnage {
                 displayName = "<t color='#c22d2d'> Play Horn [Jester] </t>";
                 condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'Jester' and {ace_player == currentPilot this});
-                statement = QUOTE(playSound3D [ARR_7(QQPATHTOF(sounds\data\audio\hornet\Jester_Horn.ogg),objNull,false,getPosASL this,5,1,60)];);
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_Jester)');
+            };
+            class HornRDF: HornCarnage {
+                displayName = "<t color='#c22d2d'> Play Horn [RDF] </t>";
+                condition = QUOTE(this getVariable [ARR_2(QQGVAR(currentSkin),'')] == 'RDF' and {ace_player == currentPilot this});
+                statement = QUOTE(this say3D 'CLASS(Sound_Horn_RDF)');
             };
         };
 
