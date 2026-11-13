@@ -8,7 +8,7 @@ class CfgPatches {
         requiredAddons[] = {
             QCLASS(core),
             QCLASS(armor),
-            "ls_core"
+            "ls_characters_clone_legacy"
         };
         units[] = {
             QCLASS(Unit_Azen),

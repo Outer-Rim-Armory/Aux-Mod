@@ -15,6 +15,7 @@ class CfgPatches {
             "442_equipment_units",
             "442_equipment_glasses",
             "WM_CloneCore",
+            "aceax"
 
         };
         units[] = {

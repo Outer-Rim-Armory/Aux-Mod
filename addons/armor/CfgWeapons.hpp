@@ -58,10 +58,15 @@ class CfgWeapons {
     #include "configs\Helmets_CFNintyNine.hpp"
     #include "configs\Helmets_ATRT.hpp"
 
-    class ls_blueforUniform_base;
-    class ls_gar_phase2_uniform: ls_blueforUniform_base {
+    class ItemCore;
+    class ls_cloneUniform_base: ItemCore {
+            class ItemInfo;
+    };
+
+    class ls_gar_phase2_uniform: ls_cloneUniform_base {
         class ItemInfo;
     };
+
     class CLASS(Uniform_Base): ls_gar_phase2_uniform {
         SCOPE_PUBLIC;
 
@@ -75,7 +80,6 @@ class CfgWeapons {
             uniformType = "Neopren";
         };
     };
-
 
     class CLASS(Uniform_Scout_Base): CLASS(Uniform_Base) {
         SCOPE_PUBLIC;
