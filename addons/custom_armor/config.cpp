@@ -410,6 +410,8 @@ class CfgPatches {
             QCLASS(cloneNvg_phase1_officerVisor_Destiny),
             QCLASS(cloneNvg_phase2_officerVisor_Destiny),
             QCLASS(cloneNvg_phase2_officerVisor_Leon),
+            QCLASS(cloneNvg_phase1_officerVisor_Mink),
+            QCLASS(cloneNvg_phase2_officerVisor_Mink),
             QCLASS(Moskoni_NVG),
             QCLASS(Vest_Kujo),
             QCLASS(Force_Recon_Sin),

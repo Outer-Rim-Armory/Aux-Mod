@@ -1,4 +1,5 @@
 class CLASS(Helmet_Phase1_Base);
+class CLASS(3AS_Helmet_Phase1_Base);
 P1_HELMET_CUSTOM(Alvarez);
 //P1_HELMET_CUSTOM(Anvil);
 P1_HELMET_CUSTOM(Atlas);
@@ -38,6 +39,7 @@ P1_HELMET_VISOR_CUSTOM(Goldie,Bacta);
 //P1_HELMET_CUSTOM(Grey);
 P1_HELMET_CUSTOM(Hades);
 P1_HELMET_VISOR_CUSTOM(Hagrid,Plasma);
+P1_HELMET_CUSTOM(Hammer);
 P1_HELMET_VISOR_CUSTOM(Harry,Bacta);
 //P1_HELMET_CUSTOM(Hazard);
 P1_HELMET_CUSTOM(Henkie);
@@ -73,6 +75,14 @@ class CLASS(Helmet_Phase1_KeeliCrimson_On): CLASS(Helmet_Phase1_Keeli) {
     hiddenSelectionsMaterials[] = {
         "",
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
+class CLASS(Helmet_Phase1_Keeli_3AS): CLASS(Helmet_Phase1_Keeli) {
+    displayName = "[KC] INF P1 Helm ('Keeli') - 3AS";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase1\3AS_Keeli_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\3AS_Keeli_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\3AS_Keeli_camo1_co.paa)
     };
 };
 
@@ -237,6 +247,7 @@ P1_HELMET_CUSTOM(Mink);
 P1_HELMET_VISOR_CUSTOM(Nate,Kyber);
 //P1_HELMET_CUSTOM(Ox);
 P1_HELMET_VISOR_CUSTOM(Patriot,Crimson);
+P1_HELMET_CUSTOM(Quack);
 P1_HELMET_VISOR_CUSTOM(Rat,Crimson);
 //P1_HELMET_CUSTOM(Rabble);
 P1_HELMET_CUSTOM(Random);

@@ -13,7 +13,7 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Walkers);
         // editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,ATRT);
 
-        displayName = "AT-RT";
+        displayName = "AT-RT (3AS)";
         uniformClass = QCLASS(Uniform_ATRT);
         nakedUniform = QCLASS(Uniform_ATRT);
         impactEffectsBlood = "ImpactMetal";
@@ -85,7 +85,7 @@ class CfgVehicles {
     class CLASS(ATRT_LS): ls_vehicle_atrt {
         SCOPE_PUBLIC;
         author = AUTHOR;
-        displayName = "[KC] AT-RT (LS)";
+        displayName = "AT-RT (LS)";
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Walkers);
         uniformClass = QCLASS(Uniform_ATRT_LS);

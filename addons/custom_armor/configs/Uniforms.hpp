@@ -23,6 +23,16 @@ class CLASS(Uniform_Burnt_Worn): CLASS(Uniform_Burnt) {
 UNIFORM_CUSTOM(Calvin);
 UNIFORM_CUSTOM(Catholic);
 UNIFORM_CUSTOM(Cough);
+class CLASS(Uniform_Cough_Night): CLASS(Uniform_Cough) {
+    displayName = "[KC] Custom Armor ('Cough') - Night";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Cough_Night);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "Night";
+    };
+};
 UNIFORM_CUSTOM(Cutthroat);
 UNIFORM_CUSTOM(Dandy);
 UNIFORM_CUSTOM(Defter);
@@ -38,6 +48,13 @@ class CLASS(Uniform_Destiny_Worn): CLASS(Uniform_Destiny) {
     };
 };
 UNIFORM_CUSTOM(Dexus);
+class CLASS(Uniform_Dexus2): CLASS(Uniform_Dexus) {
+    displayName = "[KC] Custom Armor ('Dexus')";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Burnt);
+    };
+};
 UNIFORM_CUSTOM(Drake);
 
 //class CLASS(Uniform_Drake_Emp): CLASS(Uniform_Drake) {

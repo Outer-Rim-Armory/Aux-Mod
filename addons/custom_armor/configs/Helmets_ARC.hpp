@@ -28,6 +28,29 @@ ARC_HELMET_VISOR_CUSTOM(Drake,Bacta);
 //};
 
 ARC_HELMET_VISOR_CUSTOM(Cough,Crimson);
+class CLASS(Helmet_ARC_Cough_Night): CLASS(Helmet_ARC_Base) {
+    displayName = "[KC] SF ARC P1.5 Helm ('Cough') - Night";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\arc\camo\night\Cough_camo1_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\visor_co.paa",
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"
+    };
+
+    EGVAR(armor,nvHelmetOff) = QCLASS(Helmet_ARC_Cough_Night);
+    EGVAR(armor,nvHelmetOn) = QCLASS(Helmet_ARC_CoughCrimson_Night);
+};
+class CLASS(Helmet_ARC_CoughCrimson_Night): CLASS(Helmet_ARC_Cough_Night) {
+    SCOPE_HIDDEN;
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\arc\camo\night\Cough_camo1_co.paa),
+        QPATHTOF(data\visors\Crimson_camo2_co.paa),
+        "\ls\core\addons\characters_clone_legacy\helmets\arc\data\helmet_co.paa"
+    };
+    hiddenSelectionsMaterials[] = {
+        "",
+        "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
+    };
+};
 ARC_HELMET_CUSTOM(Evo);
 ARC_HELMET_VISOR_CUSTOM(Hagrid,Plasma);
 ARC_HELMET_VISOR_CUSTOM(Harry,Plasma);

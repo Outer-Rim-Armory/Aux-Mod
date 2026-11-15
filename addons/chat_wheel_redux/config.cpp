@@ -22,14 +22,14 @@ class CfgPatches {
 class CfgFunctions {
     class CWR {
         class Settings {
-            file = "chat_wheel_redux\Data\Functions\Settings";
+            file = "ChatWheelRedux\Data\Functions\Settings";
             class configureAddonKeybinds {};
             class configureAddonOptions {};
             class createTagMenu {};
         };
 
         class Chat {
-            file = "chat_wheel_redux\Data\Functions\Chat";
+            file = "ChatWheelRedux\Data\Functions\Chat";
             class openChatWheel {};
             class processTags {};
             class sendGroupMessage {};
@@ -38,12 +38,12 @@ class CfgFunctions {
         };
 
         class Sounds {
-            file = "chat_wheel_redux\Data\Functions\Sounds";
+            file = "ChatWheelRedux\Data\Functions\Sounds";
             class playLocalSound {};
         };
 
         class Utils {
-            file = "chat_wheel_redux\Data\Functions\Utils";
+            file = "ChatWheelRedux\Data\Functions\Utils";
             class getDirFromBearing {};
             class stringReplace {};
             class removeQuotes {};
@@ -58,7 +58,7 @@ class CfgFunctions {
         };
 
         class EventHandlers {
-            file = "chat_wheel_redux\Data\Functions\EventHandlers";
+            file = "ChatWheelRedux\Data\Functions\EventHandlers";
             class throwGrenadeMain {};
             class throwGrenadeEH {};
             class throwGrenadeEHACE {};

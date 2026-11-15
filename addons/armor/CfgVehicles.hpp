@@ -1,6 +1,6 @@
 class CfgVehicles {
-    class lsd_gar_phase2_base;
-    class CLASS(Unit_Base): lsd_gar_phase2_base {
+    class ls_clone_unit_base;
+    class CLASS(Unit_Base): ls_clone_unit_base {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -11,9 +11,9 @@ class CfgVehicles {
         model = "\ls\core\addons\characters_clone_legacy\uniforms\phase2\ls_gar_phase2_uniform.p3d";
         hiddenSelections[] = {"camo1","camo2","undersuit","insignia"};
         hiddenSelectionsTextures[] = {
-            "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo1_co.paa",
-            "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo2_co.paa",
-            "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+            QPATHTOF(data\uniforms\infantry\Base_Upper_co.paa),
+            QPATHTOF(data\uniforms\infantry\Base_Lower_co.paa),
+            QPATHTOF(data\uniforms\infantry\Undersuit_co.paa)
         };
 
         // Inventory
@@ -75,8 +75,84 @@ class CfgVehicles {
         backpack = "";
     };
 
-    class WM_P3Scout_E11;
-    class CLASS(Unit_Scout_Base): WM_P3Scout_E11 {
+    class 3AS_Rep_CloneTrooper_F;
+    class CLASS(3AS_Unit_Base): 3AS_Rep_CloneTrooper_F {
+        SCOPE_PRIVATE;
+        author = AUTHOR;
+
+        faction = QFACTION(KC);
+
+        displayName = "INF Trooper (3AS Base)";
+        uniformClass = QCLASS(3AS_Uniform_Base);
+        model = "\3AS\3AS_Republic_Characters\Uniforms\3AS_Republic_Clonetrooper_Uniform.p3d";
+        hiddenSelections[] = {"Undersuit","Uppersuit","Lowersuit","insignia"};
+        hiddenSelectionsTextures[] = {
+            "\3AS\3AS_Republic_Characters\Uniforms\data\Clonetrooper_Undersuit\Clonetrooper_Undersuit_CO.paa",
+            "\3AS\3AS_Republic_Characters\Uniforms\data\Clonetrooper\Clonetrooper_Uppersuit_CO.paa",
+            "\3AS\3AS_Republic_Characters\Uniforms\data\Clonetrooper\Clonetrooper_Lowersuit_CO.paa"
+        };
+
+        // Inventory
+        weapons[] = {
+            QCLASS(DC15S),
+            QCLASS(DC17),
+            "ls_clone_electrobinoculars",
+            "Throw",
+            "Put"
+        };
+        respawnWeapons[] = {
+            QCLASS(DC15S),
+            QCLASS(DC17),
+            "ls_clone_electrobinoculars",
+            "Throw",
+            "Put"
+        };
+        magazines[] = {
+            // Ammo
+            ITEM_11(QCLASS(Mag_80Rnd_DC15S)),
+            ITEM_2(QCLASS(Mag_20Rnd_DC17)),
+            // Grenades
+            ITEM_2("ls_mag_classC_thermalDet"),
+            ITEM_3("ShieldGrenade_Mag"),
+            // Smokes
+            ITEM_3("3AS_SmokeWhite"),
+            ITEM_3("3AS_SmokeBlue"),
+            ITEM_3("3AS_SmokeGreen")
+        };
+        respawnMagazines[] = {
+            // Ammo
+            ITEM_11(QCLASS(Mag_80Rnd_DC15S)),
+            ITEM_2(QCLASS(Mag_20Rnd_DC17)),
+            // Grenades
+            ITEM_2("ls_mag_classC_thermalDet"),
+            ITEM_3("ShieldGrenade_Mag"),
+            // Smokes
+            ITEM_3("3AS_SmokeWhite"),
+            ITEM_3("3AS_SmokeBlue"),
+            ITEM_3("3AS_SmokeGreen")
+        };
+        items[] = {
+            // Medical
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet"),
+        };
+        respawnItems[] = {
+            // Medical
+            ITEM_10("ACE_elasticBandage"),
+            ITEM_4("ACE_tourniquet")
+        };
+
+        linkedItems[] = {
+            QCLASS(3AS_Helmet_Phase1_Base), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        };
+        respawnLinkedItems[] = {
+            QCLASS(3AS_Helmet_Phase1_Base), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p1Interior_hud", CLONE_LINKED_ITEMS_RADIO
+        };
+        backpack = "";
+    };
+
+    class ls_clone_scout_standard_DC15A;
+    class CLASS(Unit_Scout_Base): ls_clone_scout_standard_DC15A {
         SCOPE_PUBLIC;
         author = AUTHOR;
 

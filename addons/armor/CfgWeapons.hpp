@@ -19,8 +19,28 @@ class CfgWeapons {
         class ItemInfo;
     };
 
-    class WM_P3ScoutHelmet;
-    class CLASS(Scout_Helmet_base): WM_P3ScoutHelmet {
+    class 3AS_H_CloneP2_F;
+    class CLASS(Helmet_Base_3AS): 3AS_H_CloneP2_F {
+        SCOPE_PRIVATE;
+        author = AUTHOR;
+
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\phase2_helmet_ui_ca.paa";
+
+        class HitpointsProtectionInfo
+    {
+        class Head
+        {
+            hitpointName = "HitHead";
+            armor = 10;
+            passThrough = 0.3;
+        };
+    };
+
+        class ItemInfo;
+    };
+
+    class ls_cloneHelmet_scout;
+    class CLASS(Scout_Helmet_base): ls_cloneHelmet_scout {
         SCOPE_PRIVATE;
         author = AUTHOR;
 

@@ -20,11 +20,22 @@ class CfgWeapons {
     #include "configs\Uniforms_Commando.hpp"
 
     class CLASS(Vest_Commander);
+    class CLASS(Vest_Officer_3AS);
     class CLASS(Vest_Commander_Keeli): CLASS(Vest_Commander) {
         displayName = "[KC] INF Vest ('Keeli')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\vests\officer\Keeli_camo1_co.paa),
             ""
+        };
+
+        GVAR(isCustom) = TRUE;
+        class ItemInfo;
+    };
+    class CLASS(Vest_Commander_Keeli_3AS): CLASS(Vest_Commander) {
+        displayName = "[KC] INF Vest ('Keeli')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\vests\officer\3AS_Keeli_Kama_co.paa),
+            QPATHTOF(data\vests\officer\3AS_Officer_Pauldron_co.paa)
         };
 
         GVAR(isCustom) = TRUE;
@@ -328,6 +339,18 @@ class CfgWeapons {
         displayName = "[KC] Clone P2 NV/TI Visor ('Leon')";
         hiddenSelectionsTextures[] = {
             QPATHTOF(data\nvgs\Leon_Visor_co.paa)
+        };
+    };
+    class CLASS(cloneNvg_phase1_officerVisor_Mink): CLASS(cloneNvg_phase1_officerVisor) {
+        displayName = "[KC] Clone P1 NV/TI Visor ('Mink')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\mink_visor_co.paa)
+        };
+    };
+    class CLASS(cloneNvg_phase2_officerVisor_Mink): CLASS(cloneNvg_phase2_officerVisor) {
+        displayName = "[KC] Clone P2 NV/TI Visor ('Mink')";
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(data\nvgs\mink_visor_co.paa)
         };
     };
     class CLASS(cloneNvg_commandoVisor);
