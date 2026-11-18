@@ -11,7 +11,7 @@ class CfgVehicles {
         sch_PacksTo = QCLASS(Deployable_Prowler);
     };
     class CLASS(Prowler_UAV): CLASS(Prowler_UAV_Base) {
-        SCOPE_PUBLIC;
+        SCOPE_PRIVATE;
 
         displayName = "[KC] Prowler 1000";
     };
