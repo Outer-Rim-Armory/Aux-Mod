@@ -622,7 +622,7 @@ class CfgVehicles {
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
-        maximumLoad = 600;
+        maximumLoad = 700;
         EGVAR(custom_armor,isCustom) = FALSE;
     };
 
@@ -671,7 +671,7 @@ class CfgVehicles {
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_encryptionCode = "tf_west_radio_code";
         tf_subtype = "digital_lr";
-        maximumLoad = 600;
+        maximumLoad = 700;
         EGVAR(custom_armor,isCustom) = FALSE;
     };
 
