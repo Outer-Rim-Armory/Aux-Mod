@@ -7,9 +7,9 @@ class CLASS(Unit_Phase2_Base): CLASS(Unit_Base) {
 
     uniformClass = QCLASS(Uniform_Base);
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo1_co.paa",
-        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo2_co.paa",
-        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
+        QPATHTOF(data\uniforms\infantry\Base_Upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\Base_Lower_co.paa),
+        QPATHTOF(data\uniforms\infantry\Undersuit_co.paa)
     };
 
     linkedItems[] = {
@@ -17,6 +17,28 @@ class CLASS(Unit_Phase2_Base): CLASS(Unit_Base) {
     };
     respawnLinkedItems[] = {
         QCLASS(Helmet_Phase2_Base), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+
+class CLASS(3AS_Unit_Phase2_Base): CLASS(3AS_Unit_Base) {
+    SCOPE_PUBLIC;
+
+    // Editor Properties
+    editorSubcategory = QEDSUBCAT(INF_P2);
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_Base);
+
+    uniformClass = QCLASS(3AS_Uniform_Base);
+    hiddenSelectionsTextures[] = {
+        "\3AS\3AS_Republic_Characters\Uniforms\data\Clonetrooper_Undersuit\Clonetrooper_Undersuit_CO.paa",
+        "\3AS\3AS_Republic_Characters\Uniforms\data\Clonetrooper\Clonetrooper_Uppersuit_CO.paa",
+        "\3AS\3AS_Republic_Characters\Uniforms\data\Clonetrooper\Clonetrooper_Lowersuit_CO.paa"
+    };
+
+    linkedItems[] = {
+        QCLASS(3AS_Helmet_Phase2_Base), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "JLTS_Clone_helmetInterior_P2", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(3AS_Helmet_Phase2_Base), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "JLTS_Clone_helmetInterior_P2", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -75,6 +97,24 @@ class CLASS(Unit_Phase2_CT): CLASS(Unit_Phase2_Base) {
     };
     respawnLinkedItems[] = {
         QCLASS(Helmet_Phase2_CT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
+class CLASS(3AS_Unit_Phase2_CT): CLASS(3AS_Unit_Phase2_Base) {
+    displayName = "INF 01 - Clone Trooper";
+    editorPreview = EDITOR_PREVIEW(Unit_Phase2_CT);
+
+    uniformClass = QCLASS(3AS_Uniform_CT);
+    hiddenSelectionsTextures[] = {
+        "\3AS\3AS_Republic_Characters\Uniforms\data\Clonetrooper_Undersuit\Clonetrooper_Undersuit_CO.paa",
+        QPATHTOF(data\uniforms\infantry\3AS_CT_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\3AS_CT_lower_co.paa)
+    };
+
+    linkedItems[] = {
+        QCLASS(3AS_Helmet_Phase2_CT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(3AS_Helmet_Phase2_CT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 class CLASS(Unit_Phase2_CT_Engineer): CLASS(Unit_Phase2_Base) {

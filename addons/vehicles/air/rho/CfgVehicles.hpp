@@ -31,6 +31,15 @@ class CfgVehicles {
         displayName = "Rho-class Transport Shuttle";
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(air\rho\data\textures\Hull_co.paa),
+            QPATHTOF(air\rho\data\textures\Hull_front_co.paa),
+            QPATHTOF(air\rho\data\textures\Wings_co.paa),
+            "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
+            "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
+            QPATHTOF(air\rho\data\textures\Rho_Interior_co.paa),
+            "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
+        };
 
         weapons[] = {
             "ParticleBeamCannon_Nu",
@@ -47,9 +56,9 @@ class CfgVehicles {
         };
 
         textureList[] = {
-            "Standard", 1,
-            "Imperial", 0/*,
-            "KeeliCompany", 0*/
+            "Standard", 0,
+            "Imperial", 0,
+            "KeeliCompany", 1
         };
 
         class TextureSources {
@@ -79,19 +88,19 @@ class CfgVehicles {
                     "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
                 };
             };
-            // class KeeliCompany: Standard {
-            //     author = AUTHOR;
-            //     displayName = "Keeli Company";
-            //     textures[] = {
-            //         QPATHTOF(air\nu\data\textures\KeeliCompany\Hull_co.paa),
-            //         QPATHTOF(air\nu\data\textures\KeeliCompany\Hull_front_co.paa),
-            //         QPATHTOF(air\nu\data\textures\KeeliCompany\Wings_co.paa),
-            //         "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
-            //         "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
-            //         "\3AS\3AS_republic_heli\rho_class\data\interior_co.paa",
-            //         "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
-            //     };
-            // };
+             class KeeliCompany: Standard {
+                 author = AUTHOR;
+                 displayName = "Keeli Company";
+                 textures[] = {
+                     QPATHTOF(air\rho\data\textures\Hull_co.paa),
+                     QPATHTOF(air\rho\data\textures\Hull_front_co.paa),
+                     QPATHTOF(air\rho\data\textures\Wings_co.paa),
+                     "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
+                     "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
+                     QPATHTOF(air\rho\data\textures\Rho_Interior_co.paa),
+                     "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
+                 };
+             };
         };
 
         class ACE_SelfActions: ACE_SelfActions {

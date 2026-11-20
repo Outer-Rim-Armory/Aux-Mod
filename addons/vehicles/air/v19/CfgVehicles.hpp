@@ -33,13 +33,42 @@ class CfgVehicles {
 
         hiddenselections[] = {"camo1","camo2","camo3","camo4","camo5","camo6"};
         hiddenSelectionsTextures[] = {
-            "3as\3as_v19\textures\wings_co.paa",
-            "3as\3as_v19\textures\wing plates_co.paa",
-            "3as\3as_v19\textures\hull_co.paa",
-            "3as\3as_v19\textures\gun gear_co.paa",
+            QPATHTOF(air\v19\data\textures\KC_Wings_CO.paa),
+            QPATHTOF(air\v19\data\textures\KC_Wing_Plates_CO.paa),
+            QPATHTOF(air\v19\data\textures\KC_Hull_CO.paa),
+            QPATHTOF(air\v19\data\textures\KC_Gun_Gear_CO.paa),
             "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
-            "3as\3as_v19\textures\pizzlepit_co.paa"
+            QPATHTOF(air\v19\data\textures\KC_Pizzlepit_CO.paa)
+        };
+
+        textureList[] = {"Republic", 0, "Keeli Company", 1};
+		    class TextureSources
+		    {
+		    	class Republic {
+		    		displayName="Republic";
+		    		author="$STR_3AS_Studio";
+		    		textures[] = {
+		    			"3as\3as_v19\textures\wings_co.paa",
+                        "3as\3as_v19\textures\wing plates_co.paa",
+                        "3as\3as_v19\textures\hull_co.paa",
+                        "3as\3as_v19\textures\gun gear_co.paa",
+                        "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
+                        "3as\3as_v19\textures\pizzlepit_co.paa"
+		    		};
+		    	};
+                class KeeliCompany: Republic {
+                    displayName = "Keeli Company";
+                    author = "Dexus";
+                    textures[] = {
+                    QPATHTOF(air\v19\data\textures\KC_Wings_CO.paa),
+                    QPATHTOF(air\v19\data\textures\KC_Wing_Plates_CO.paa),
+                    QPATHTOF(air\v19\data\textures\KC_Hull_CO.paa),
+                    QPATHTOF(air\v19\data\textures\KC_Gun_Gear_CO.paa),
+                    "a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa",
+                    QPATHTOF(air\v19\data\textures\KC_Pizzlepit_CO.paa)
+                };
             };
+    	};
 
         cabinOpenSound[] = {QPATHTOF(sounds\data\audio\arc170\Canopy_Open.wss), 1.77828 , 1, 40};
         cabinOpenSoundInternal[] = {QPATHTOF(sounds\data\audio\arc170\Canopy_Open.wss), 10, 1, 40};

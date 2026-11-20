@@ -149,7 +149,37 @@ class CfgAmmo {
         ACE_caliber = 12.585;
         ACE_muzzleVelocities[] = {880, 915, 925};
     };
+    class CLASS(Bullet_PlasmaRifle_Blue3): CLASS(Bullet_PlasmaBase) {
+        SCOPE_PUBLIC;
+
+        hit = 32;
+        caliber = 2;
+        typicalSpeed = 890;
+        dangerRadiusHit = 14;
+        dangerRadiusBulletClose = 10;
+        suppressionRadiusHit = 10;
+        suppressionRadiusBulletClose = 8;
+        cost = 6;
+
+        tracerEndTime = 10;
+        tracerScale = 1.1;
+        tracerStartTime = 0.05;
+
+        model = "\MRC\JLTS\weapons\Core\effects\laser_blue.p3d";
+        effectfly = "JLTS_plasma_blue";
+
+        ACE_ballisticCoefficients[] = {0.322};
+        ACE_barrelLengths[] = {508, 660.4, 711.2};
+        ACE_bulletLength = 39.573;
+        ACE_bulletMass = 16.2;
+        ACE_caliber = 8.585;
+        ACE_muzzleVelocities[] = {880, 915, 925};
+    };
     class CLASS(Bullet_PlasmaRifle_Red): CLASS(Bullet_PlasmaRifle_Blue) {
+        model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
+        effectfly = "JLTS_plasma_red";
+    };
+    class CLASS(Bullet_PlasmaRifle_Red3): CLASS(Bullet_PlasmaRifle_Blue3) {
         model = "\MRC\JLTS\weapons\Core\effects\laser_red.p3d";
         effectfly = "JLTS_plasma_red";
     };
@@ -492,43 +522,6 @@ class CfgAmmo {
 
         model = "\MRC\JLTS\weapons\Core\effects\laser_green.p3d";
         effectfly = "JLTS_plasma_green";
-        ExplosionEffects = "ls_plasma_impact";
-        craterEffects = "ImpactEffectsMedium";
-
-        class CamShakeExplode {
-            distance = 91.3296;
-            duration = 1.4;
-            frequency = 20;
-            power = 6;
-        };
-
-        class CamShakeHit {
-            distance = 1;
-            duration = 0.6;
-            frequency = 20;
-            power = 110;
-        };
-
-        class CamShakeFire {
-            distance = 1;
-            duration = 1.2;
-            frequency = 18;
-            power = 0.8;
-        };
-
-        class CamShakePlayerFire {
-            distance = 1;
-            duration = 0.1;
-            frequency = 20;
-            power = 2;
-        };
-
-        ACE_ballisticCoefficients[] = {0.322};
-        ACE_barrelLengths[] = {508,660.4,711.2};
-        ACE_bulletLength = 39.573;
-        ACE_bulletMass = 16.2;
-        ACE_caliber = 8.585;
-        ACE_muzzleVelocities[] = {880,915,925};
     };
     class CLASS(Bullet_PlasmaMachineGun_HE): CLASS(Bullet_PlasmaMachineGun_Green) {
         hit = 50;
@@ -821,8 +814,8 @@ class CfgAmmo {
         explosionTime = 0;
         timeToLive = 20;
 
-        explosionEffects = "M136_Explode";
-        craterEffects = "M136_Smoke";
+        explosionEffects = "GrenadeExplosion";
+        craterEffects = "GrenadeCrater";
         model = "\A3\weapons_f\ammo\UGL_slug";
         soundFly[] = {"", 3, 1, 40};
 

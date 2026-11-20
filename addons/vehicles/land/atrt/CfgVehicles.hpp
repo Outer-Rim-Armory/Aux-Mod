@@ -13,7 +13,7 @@ class CfgVehicles {
         editorSubcategory = QEDSUBCAT(Walkers);
         // editorPreview = EEDITOR_PREVIEW(vehicles\land\SUBCOMPONENT,ATRT);
 
-        displayName = "AT-RT";
+        displayName = "AT-RT (3AS)";
         uniformClass = QCLASS(Uniform_ATRT);
         nakedUniform = QCLASS(Uniform_ATRT);
         impactEffectsBlood = "ImpactMetal";
@@ -27,7 +27,7 @@ class CfgVehicles {
         headgearList[] = {""};
         identityTypes[] = {"LanguageENG_F", "Head_NATO", "Head_Euro"};
 
-        hiddenSelectionsTextures[] = {QPATHTOF(land\atrt\data\textures\Body_co.paa)};
+        hiddenSelectionsTextures[] = {QPATHTOF(land\atrt\data\textures\thirdarmystudios\Body_co.paa)};
 
         // The texture lists don't work like those for normal vehicles
         // These properties exist soley for the texture switcher, which is why the numbers are not present.
@@ -50,28 +50,28 @@ class CfgVehicles {
                 displayName = "Keeli Company";
                 author = AUTHOR;
                 textures[] = {
-                    QPATHTOF(land\atrt\data\textures\Body_co.paa)
+                    QPATHTOF(land\atrt\data\textures\thirdarmystudios\Body_co.paa)
                 };
             };
 
             class KeeliCompanyWhite: KeeliCompany {
                 displayName = "Keeli Company (White)";
                 textures[] = {
-                    QPATHTOF(land\atrt\data\textures\KeeliCompanyWhite_Body_co.paa)
+                    QPATHTOF(land\atrt\data\textures\thirdarmystudios\KeeliCompanyWhite_Body_co.paa)
                 };
             };
 
             class CamoBrown: KeeliCompany {
                 displayName = "Brown Camo";
                 textures[] = {
-                    QPATHTOF(land\atrt\data\textures\CamoBrown_Body_co.paa)
+                    QPATHTOF(land\atrt\data\textures\thirdarmystudios\CamoBrown_Body_co.paa)
                 };
             };
 
             class CamoGrey: KeeliCompany {
                 displayName = "Grey Camo";
                 textures[] = {
-                    QPATHTOF(land\atrt\data\textures\CamoGrey_Body_co.paa)
+                    QPATHTOF(land\atrt\data\textures\thirdarmystudios\CamoGrey_Body_co.paa)
                 };
             };
         };
@@ -85,7 +85,7 @@ class CfgVehicles {
     class CLASS(ATRT_LS): ls_vehicle_atrt {
         SCOPE_PUBLIC;
         author = AUTHOR;
-        displayName = "[KC] AT-RT (LS)";
+        displayName = "AT-RT (LS)";
         faction = QFACTION(KC);
         editorSubcategory = QEDSUBCAT(Walkers);
         uniformClass = QCLASS(Uniform_ATRT_LS);

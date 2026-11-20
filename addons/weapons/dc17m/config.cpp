@@ -11,7 +11,8 @@ class CfgPatches {
             QGVAR(accessories),
             "ls_weapons_dcSeries",
             "SWLW_clones_spec",
-            "3AS_Main"
+            "3AS_Main",
+            "LF_Weapon_Unit_WestarM5"
         };
         units[] = {};
         weapons[] = {

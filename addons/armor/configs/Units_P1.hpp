@@ -271,7 +271,7 @@ class CLASS(Unit_phase1Geo_Enlisted): CLASS(Unit_Phase1_Base) {
     SCOPE_HIDDEN;
     uniformClass = QCLASS(Uniform_phase1Geo_Enlisted);
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo1_co.paa",
+        "\ls\core\addons\characters_clone_legions\uniforms\phase2\data\camo1_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo2_co.paa",
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\undersuit_co.paa"
     };

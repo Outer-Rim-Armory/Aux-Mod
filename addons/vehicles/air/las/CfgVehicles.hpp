@@ -64,14 +64,15 @@ class CfgVehicles {
 
         hiddenSelectionsTextures[]=
 		{
-			"\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Exterior_co.paa",
-			"\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Interior_co.paa",
-			"\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Wings_co.paa"
+			QPATHTOF(air\las\data\textures\KC_Hull_co.paa),
+            "\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Interior_co.paa",
+            QPATHTOF(air\las\data\textures\KC_Wings_co.paa)
 		};
 
         textureList[] = {
-            "Republic", 1,
-            "Imperial", 0
+            "Republic", 0,
+            "Imperial", 0,
+            "Keeli Company", 1
         };
 		class TextureSources
 		{
@@ -92,6 +93,14 @@ class CfgVehicles {
                 "\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Exterior_Imp_co.paa",
                 "\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Interior_co.paa",
                 "\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Wings_Imp_co.paa"
+                };
+            };
+            class KeeliCompany: Republic {
+                displayName = "Keeli Company";
+                textures[] = {
+                QPATHTOF(air\las\data\textures\KC_Hull_co.paa),
+                "\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Interior_co.paa",
+                QPATHTOF(air\las\data\textures\KC_Wings_co.paa)
                 };
             };
 		};

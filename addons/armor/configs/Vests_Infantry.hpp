@@ -392,6 +392,22 @@ class CLASS(Vest_Officer_v2): CLASS(Vest_Officer) {
     };
 };
 
+class CLASS(Vest_Officer_3AS): CLASS(Vest_Officer) {
+    displayName = "[KC] INF Vest 12 (Officer, 3AS)";
+
+    model = "\3AS\3AS_Republic_Characters\Vests\3AS_Clonetrooper_Vest_Officer_L.p3d";
+    hiddenSelections[] = {"Kama","Pauldron"};
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\infantry\officer\3AS_KC_Officer_Kama_co.paa), // Kama and Pauldron
+        QPATHTOF(data\vests\infantry\officer\3AS_Officer_Pauldron_co.paa)  // Suspenders
+    };
+
+    class ItemInfo: ItemInfo {
+        uniformModel = "\3AS\3AS_Republic_Characters\Vests\3AS_Clonetrooper_Vest_Officer_L.p3d";
+        hiddenSelections[] = {"Kama","Pauldron"};
+    };
+};
+
 class ls_gar_arcHologram_vest;
 class CLASS(Vest_Officer_Hologram): ls_gar_arcHologram_vest {
     displayName = "[KC] INF Vest 12 (Officer, Hologram)";

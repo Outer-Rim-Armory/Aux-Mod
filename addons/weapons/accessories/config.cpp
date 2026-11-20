@@ -11,7 +11,7 @@ class CfgPatches {
             "3AS_Weapons_DC15C",
             "3AS_Weapons_WestarM5",
             "JLTS_weapons_DC15X",
-            "SWLW_Clones"
+            "SWLW_clones"
         };
         units[] = {};
         weapons[] = {

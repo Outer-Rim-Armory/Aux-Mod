@@ -80,11 +80,14 @@ class CfgWeapons {
         author = AUTHOR;
 
         displayName = "[KC] DC-15LE (Base)";
-        baseWeapon = QCLASS(DC15A_Base);
+        baseWeapon = QCLASS(DC15LE_Base);
+        model = "\3AS\3AS_Weapons\Republic\DC15A\3AS_DC15A_F.p3d";
+        picture = "\3AS\3AS_Weapons\Republic\DC15A\Data\UI\3as_dc15a.paa";
+        handAnim[] = {"OFP2_ManSkeleton","3as\3AS_Weapons\Republic\DC15A\Data\Anim\New_DC15a_Handanim.rtm"};
 
         modes[] = {"Single"};
         muzzles[] = {"this", "Stun"};
-        magazines[] = {QCLASS(Mag_60Rnd_DC15A), QCLASS(Mag_60Rnd_DC15A_Red), "Aux12thFleet_Mag_DC15A"};
+        magazines[] = {QCLASS(Mag_35Rnd_DC15LE), QCLASS(Mag_35Rnd_DC15LE_Red), "Aux12thFleet_Mag_DC15A"};
         magazineWell[] = {};
 
         canShootInWater = TRUE;
@@ -95,8 +98,7 @@ class CfgWeapons {
         class WeaponSlotsInfo: WeaponSlotsInfo {
             class CowsSlot: CowsSlot {
                 class CompatibleItems {
-                    ATTACHMENTS_OPTIC_MEDIUM;
-                    ATTACHMENTS_OPTIC_SIGHTS;
+                    3AS_optic_DC15LE_F = TRUE;
                 };
             };
             class PointerSlot: PointerSlot {
@@ -107,7 +109,8 @@ class CfgWeapons {
         };
 
         class Single: Single {
-            reloadTime = 0.098361;
+            reloadTime = 0.2;
+            dispersion = 0.00015;
             class StandardSound: StandardSound {
                 soundBegin[] = {};
                 soundBeginWater[] = {};

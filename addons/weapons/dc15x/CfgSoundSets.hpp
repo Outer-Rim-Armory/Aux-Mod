@@ -3,4 +3,7 @@ class CfgSoundSets {
     class CLASS(SoundSet_DC15XShot): CLASS(SoundSet_WeaponShot_Base) {
         soundShaders[] = {QCLASS(SoundShader_DC15XShot)};
     };
+    class CLASS(SoundSet_DC15XHShot): CLASS(SoundSet_WeaponShot_Base) {
+        soundShaders[] = {QCLASS(SoundShader_DC15XHShot)};
+    };
 };

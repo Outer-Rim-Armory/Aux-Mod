@@ -26,11 +26,11 @@ class CfgVehicles {
 
         hiddenSelections[] = {"camo1","camo2"};
         hiddenSelectionsTextures[] = {
-            "\ls\core\addons\vehicles_pkv5\data\republic\camo1_co.paa",
-            "\ls\core\addons\vehicles_pkv5\data\republic\camo2_cannon_co.paa"
+            QPATHTOF(land\SUBCOMPONENT\data\textures\camo1_co.paa),
+            QPATHTOF(land\SUBCOMPONENT\data\textures\camo2_co.paa)
         };
 
-        textureList[] = {"Standard", 1, "Imperial", 0, "Logo", 0};
+        textureList[] = {"Standard", 0, "Imperial", 0, "Logo", 0, "Keeli Company", 1, "Brown Camo", 0, "Gray Camo", 0};
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -56,7 +56,33 @@ class CfgVehicles {
                     "\ls\core\addons\vehicles_pkv5\data\republic\logo\camo2_cannon_co.paa"
                 };
             };
+            class KC: Standard {
+                author = AUTHOR;
+                displayName = "Keeli Company";
+                textures[] = {
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\camo1_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\camo2_co.paa)
+                };
+            };
+            class BrownCamo: Standard {
+                author = AUTHOR;
+                displayName = "Brown Camo";
+                textures[] = {
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\camo\brown\camo1_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\camo\brown\camo2_co.paa)
+                };
+            };
+            class GrayCamo: Standard {
+                author = AUTHOR;
+                displayName = "Gray Camo";
+                textures[] = {
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\camo\gray\camo1_co.paa),
+                    QPATHTOF(land\SUBCOMPONENT\data\textures\camo\gray\camo2_co.paa)
+                };
+            };
         };
+
+        INVENTORY_VEHICLE_BASE(3);
 
         class Turrets: Turrets {
             class MainTurret: MainTurret {

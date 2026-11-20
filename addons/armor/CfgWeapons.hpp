@@ -19,8 +19,28 @@ class CfgWeapons {
         class ItemInfo;
     };
 
-    class WM_P3ScoutHelmet;
-    class CLASS(Scout_Helmet_base): WM_P3ScoutHelmet {
+    class 3AS_H_CloneP2_F;
+    class CLASS(Helmet_Base_3AS): 3AS_H_CloneP2_F {
+        SCOPE_PRIVATE;
+        author = AUTHOR;
+
+        picture = "\ls\core\addons\characters_clone_legacy\_ui\phase2_helmet_ui_ca.paa";
+
+        class HitpointsProtectionInfo
+    {
+        class Head
+        {
+            hitpointName = "HitHead";
+            armor = 10;
+            passThrough = 0.3;
+        };
+    };
+
+        class ItemInfo;
+    };
+
+    class ls_cloneHelmet_scout;
+    class CLASS(Scout_Helmet_base): ls_cloneHelmet_scout {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
@@ -58,10 +78,15 @@ class CfgWeapons {
     #include "configs\Helmets_CFNintyNine.hpp"
     #include "configs\Helmets_ATRT.hpp"
 
-    class ls_blueforUniform_base;
-    class ls_gar_phase2_uniform: ls_blueforUniform_base {
+    class ItemCore;
+    class ls_cloneUniform_base: ItemCore {
+            class ItemInfo;
+    };
+
+    class ls_gar_phase2_uniform: ls_cloneUniform_base {
         class ItemInfo;
     };
+
     class CLASS(Uniform_Base): ls_gar_phase2_uniform {
         SCOPE_PUBLIC;
 
@@ -71,11 +96,10 @@ class CfgWeapons {
         picture = "\ls\core\addons\characters_clone_legacy\_ui\uniform_ui_ca.paa";
 
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(Unit_Phase1_Base);
+            uniformClass = QCLASS(Unit_Base);
             uniformType = "Neopren";
         };
     };
-
 
     class CLASS(Uniform_Scout_Base): CLASS(Uniform_Base) {
         SCOPE_PUBLIC;

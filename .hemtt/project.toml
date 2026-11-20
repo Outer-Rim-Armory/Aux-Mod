@@ -34,6 +34,7 @@ workshop = [
     "2173635424", # 501st Aux Mod
     "1702480117", # 212th Auxiliary Assets
     "2162749089", # Legion Studios Core - Stable
+    "2320596778", # Legion Studios - Star Wars Battlefields
     # "2522638637", # ACE Arsenal Extended # Not to be activated
     "2567352444", # WBK Droids # TODO: Move assets to aux itself
     "2954535667", # Warmantle Armory
@@ -48,6 +49,7 @@ workshop = [
     "2478080991", # Scion Conflict
     "3469976535", # Weapon Research and Security: Autonomous systems
     "1967740913", # Jango's Armory
+    "1686872930", # Schlabbies Depressed Textures (Legion Base)
 ]
 presets = ["main"]
 dlc = []
