@@ -58,14 +58,9 @@ class CfgVehicles {
     class CLASS(Backpack_Medic_Radio_Base);
     class CLASS(cloneBackpack_medicRadio_Cherry): CLASS(Backpack_Medic_Radio_Base) {
         displayName = "[KC] INF Medic Radio Backpack ('Cherry')";
-
-        model = "\ls\core\addons\characters_clone_legacy\backpacks\heavy\ls_gar_heavy_backpack.p3d";
-        hiddenselections[] = {"backpack", "cover", "pouches", "tube"};
-        hiddenselectionstextures[] = {
+        hiddenSelectionsTextures[] = {
             QPATHTOF(data\backpacks\Cherry\Backpack_co.paa),
-            QPATHTOF(data\backpacks\Cherry\Cover_co.paa),
-            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
-            "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\tube_co.paa",
+            QPATHTOF(data\backpacks\Cherry\Cover_co.paa)
         };
     };
     class CLASS(Backpack_Rocket_Base);
