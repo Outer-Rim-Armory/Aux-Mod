@@ -197,6 +197,7 @@ UNIFORM_CUSTOM(Sogi);
 UNIFORM_CUSTOM(Splashdown);
 UNIFORM_CUSTOM(Star);
 UNIFORM_CUSTOM(Swoop);
+UNIFORM_CUSTOM(Nate);
 class CLASS(Uniform_Swoop_Night): CLASS(Uniform_Swoop) {
     displayName = "[KC] Custom Armor ('Swoop') - Night";
 
