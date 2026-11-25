@@ -432,6 +432,7 @@ class XtdGearModels {
                     "Jaws",
                     "Joe",
                     "Keeli",
+                    "Nate",
                     "Rat",
                     "Rev",
                     "Sin",
@@ -456,6 +457,7 @@ class XtdGearModels {
                 class Jaws { label = "Jaws"; };
                 class Joe { label = "Joe"; };
                 class Keeli { label = "Keeli"; };
+                class Nate { label = "Nate";};
                 class Rat { label = "Rat"; };
                 class Rev { label = "Rev"; };
                 class Sin { label = "Sin"; };

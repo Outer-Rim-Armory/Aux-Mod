@@ -835,6 +835,26 @@ class CLASS(Unit_Lines): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Scout_Lines), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
+class CLASS(Unit_Nate): CLASS(Unit_Phase2_Base) {
+    displayName = "Nate";
+
+    editorSubcategory = QEDSUBCAT(Customs);
+    editorPreview = EDITOR_PREVIEW(Unit_Nate);
+
+    uniformClass = QCLASS(Uniform_Nate);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Nate_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Nate_lower_co.paa),
+        QPATHTOF(data\uniforms\standard\undersuit\Undersuit_co.paa)
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Phase2_Nate), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Phase2_Nate), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+};
 
 class CLASS(Unit_Rabble): CLASS(Unit_Phase2_Base) {
     displayName = "Rabble";
