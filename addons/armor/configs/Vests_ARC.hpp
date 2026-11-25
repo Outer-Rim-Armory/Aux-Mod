@@ -94,6 +94,14 @@ class CLASS(Vest_ARC_NightShade): CLASS(Vest_ARC) {
     };
 };
 
+class CLASS(Vest_ARC_NightCamo): CLASS(Vest_ARC) {
+    displayName = "[KC] SF ARC Vest (Night Camo)";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\vests\arc\ARC_NightCamo2_co.paa),
+        QPATHTOF(data\vests\arc\ARC_NightCamo1_co.paa)
+    };
+};
+
 class CLASS(Vest_ARC_Basic): CLASS(Vest_ARC) {
     displayName = "[KC] SF ARC Vest (Basic)";
     hiddenSelectionsTextures[] = {
