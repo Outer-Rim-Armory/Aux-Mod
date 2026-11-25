@@ -630,6 +630,7 @@ class XtdGearModels {
                     "Trooper",
                     "Alternate",
                     "Light",
+                    "NightCamo",
                     "NightShade",
                     "GEO_Officer",
                     "GEO_Captain"
@@ -638,6 +639,7 @@ class XtdGearModels {
                 class Trooper { label = "Trooper"; };
                 class Alternate { label = "Alternate"; };
                 class Light { label = "Light"; };
+                class NightCamo { label = "NightCamo"; };
                 class NightShade { label = "NightShade"; };
                 class GEO_Officer { label = "GEO Officer"; };
                 class GEO_Captain { label = "GEO Captain"; };
