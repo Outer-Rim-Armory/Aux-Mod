@@ -44,8 +44,6 @@ class CfgWeapons {
         SCOPE_PRIVATE;
         author = AUTHOR;
 
-        picture = "\WarMantle\WM_Imperial_Core\data\ui\wm_scouthelmet_ca.paa";
-
         class HitpointsProtectionInfo
     {
         class Head
@@ -106,7 +104,7 @@ class CfgWeapons {
 
         author = AUTHOR;
         displayName = "[KC] SF Scout Armor (Base)";
-        model = "WarMantle\WM_Imperial_Clones\P3Scout.p3d";
+        model = "\ls\core\addons\characters_clone\uniforms\scout\ls_uniform_clone_scout.p3d";
 
         class ItemInfo: ItemInfo {
             uniformClass = QCLASS(Unit_Scout_Base);

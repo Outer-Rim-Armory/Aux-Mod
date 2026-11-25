@@ -29,6 +29,15 @@ class CfgMusic {
     MUSIC(BsG_OnlineOST,"[BsG] Online OST",531,VideoGames);
     MUSIC(BsG_PreludeToWar,"[BsG] Prelude To War",502,VideoGames);
 
+    // Beyond All Reason
+    MUSIC(Defy_the_Odds,"Defy the Odds",171,VideoGames);
+    MUSIC(Surfacefall,"Surfacefall",211,VideoGames);
+    MUSIC(Under_Empty_Skies,"Under Empty Skies",194,VideoGames);
+    MUSIC(Avenge,"Avenge",159,VideoGames);
+    MUSIC(Build_The_Wall,"Build The Wall",123,VideoGames);
+    MUSIC(Awakened_Hive,"Awakened Hive",153,VideoGames);
+    MUSIC(fooBAR_Menu_Version,"fooBAR Menu Version",171,VideoGames);
+
     // Chernobyl TV Series
     MUSIC(Chern_BridgeOfDeath,"[Chern] Bridge of Death",284,Other);
 
@@ -60,6 +69,12 @@ class CfgMusic {
     MUSIC(Halo_FinishTheFight,"[Halo] Finish the Fight",147,VideoGames);
     MUSIC(Halo_LongNightOfSolace,"[Halo] Long Night Of Solace",706,VideoGames);
     MUSIC(Halo_NeverForget,"[Halo] Never Forget",187,VideoGames);
+
+    // HellDivers 2
+    MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);
+    MUSIC(HD_Loadout_Theme,"Loadout Select",332,VideoGames);
+    MUSIC(RDF_Downfall,"RDF Downfall",355,VideoGames);
+    MUSIC(HD_Reinforcements,"Reinforcements",143,VideoGames);
 
     // Interstellar
     MUSIC(INT_Mountains,"[INT] Mountains",219,Other);
@@ -101,6 +116,11 @@ class CfgMusic {
     MUSIC(PW_MidnightLight,"[PW] Midnight Light",191,VideoGames);
     MUSIC(PW_Peacekeeper,"[PW] Peacekeeper",185,VideoGames);
     MUSIC(PW_Presidia,"[PW] Presidia",318,VideoGames);
+
+    // Project Zomboid
+    MUSIC(PZ_Overrun,"Overrun",248,VideoGames);
+    MUSIC(PZ_The_Horde,"The Horde",119,VideoGames);
+    MUSIC(PZ_Desperate_Escape,"The Horde",109,VideoGames);
 
     // Raze 2
     MUSIC(R2_RoseAtNightFall,"[R2] Rose at Nightfall",252,VideoGames);
@@ -205,26 +225,6 @@ class CfgMusic {
     MUSIC(Admiral_Mannerheim_Theme,"Admiral Mannerheim Theme",152,Other);
     MUSIC(RedSunintheSky,"Red Sun in the Sky",238,Other);
     MUSIC(mw4_theme,"MW4 Theme",258,Other);
-
-    // HellDivers 2
-    MUSIC(HD_Liberty,"A Cup of Liber-Tea",217,VideoGames);
-    MUSIC(HD_Loadout_Theme,"Loadout Select",332,VideoGames);
-    MUSIC(RDF_Downfall,"RDF Downfall",355,VideoGames);
-    MUSIC(HD_Reinforcements,"Reinforcements",143,VideoGames);
-
-    // Project Zomboid
-    MUSIC(PZ_Overrun,"Overrun",248,VideoGames);
-    MUSIC(PZ_The_Horde,"The Horde",119,VideoGames);
-    MUSIC(PZ_Desperate_Escape,"The Horde",109,VideoGames);
-
-    // Beyond All Reason
-    MUSIC(Defy_the_Odds,"Defy the Odds",171,VideoGames);
-    MUSIC(Surfacefall,"Surfacefall",211,VideoGames);
-    MUSIC(Under_Empty_Skies,"Under Empty Skies",194,VideoGames);
-    MUSIC(Avenge,"Avenge",159,VideoGames);
-    MUSIC(Build_The_Wall,"Build The Wall",123,VideoGames);
-    MUSIC(Awakened_Hive,"Awakened Hive",153,VideoGames);
-    MUSIC(fooBAR_Menu_Version,"fooBAR Menu Version",171,VideoGames);
 
 
 

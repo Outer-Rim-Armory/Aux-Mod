@@ -1,142 +1,78 @@
-class CLASS(Helmet_Scout_Base_V1): CLASS(cloneHelmet_base) {
+class ItemInfo;
+class CLASS(Helmet_Scout_Base): CLASS(Scout_Helmet_base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF Scout Helm 01 (Base LS)";
+    displayName = "[KC] SF Scout Helm 01 (Base)";
 
-    model = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
-    hiddenSelections[] = {"camo1","camo2","visor"};
+    model = "\ls\core\addons\characters_clone\helmets\scout\ls_helmet_clone_scout.p3d";
+    hiddenSelections[] = {"camo1","visor"};
     hiddenSelectionsTextures[] = {
-        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\helmet_co.paa",
-        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\helmet_co.paa",
-        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\visor_co.paa"
-        };
+        "\ls\core\addons\characters_clone\helmets\scout\data\camo1_co.paa",
+        "\ls\core\addons\characters_clone\helmets\scout\data\camo1_co.paa"
+    };
 
     class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"camo1","camo2","visor"};
-        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
+        hiddenSelections[] = {"camo1","visor"};
+        uniformModel = "\ls\core\addons\characters_clone\helmets\scout\ls_helmet_clone_scout.p3d";
     };
 };
 
-class CLASS(Helmet_Scout_Base_V2): CLASS(Scout_Helmet_base) {
+class CLASS(Helmet_Scout_CT): CLASS(Helmet_Scout_Base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF Scout Helm 06 (Base WMA)";
-
-    model = "WarMantle\WM_Imperial_Clones\P3Scout_Helmet.p3d";
-    hiddenSelections[] = {"Camo"};
-    hiddenSelectionsTextures[] = {"WarMantle\WM_Imperial_Clones\data\Helmet_co.paa"};
-
-    class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"Camo"};
-        uniformModel = "WarMantle\WM_Imperial_Clones\P3Scout_Helmet.p3d";
-    };
-};
-
-class CLASS(Helmet_Scout_CT_V1): CLASS(Helmet_Scout_Base_V1) {
-    SCOPE_PUBLIC;
-
-    displayName = "[KC] SF Scout Helm 02 (CT LS)";
+    displayName = "[KC] SF Scout Helm 02 (CT)";
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\scout\Helmet_camo1_co.paa),
-        QPATHTOF(data\helmets\scout\Helmet_camo1_co.paa),
-        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\visor_co.paa"};
+        QPATHTOF(data\helmets\scout\Helmet_KC_CO.paa),
+        QPATHTOF(data\helmets\scout\Helmet_KC_CO.paa)
+    };
 
     class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"camo1","camo2","visor"};
-        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
+        hiddenSelections[] = {"camo1","visor"};
+        uniformModel = "\ls\core\addons\characters_clone\helmets\scout\ls_helmet_clone_scout.p3d";
     };
 };
 
-class CLASS(Helmet_Scout_CT_V2): CLASS(Helmet_Scout_Base_V2) {
+class CLASS(Helmet_Scout_Brown): CLASS(Helmet_Scout_Base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF Scout Helm 07 (CT WMA)";
-    hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\scout\Helmet_KC_CO.paa)};
-
-    class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"Camo"};
-        uniformModel = "WarMantle\WM_Imperial_Clones\P3Scout_Helmet.p3d";
-    };
-};
-
-class CLASS(Helmet_Scout_Brown): CLASS(Helmet_Scout_Base_V1) {
-    SCOPE_PUBLIC;
-
-    displayName = "[KC] SF Scout Helm 03 (Brown Camo LS)";
+    displayName = "[KC] SF Scout Helm 03 (Brown Camo)";
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\scout\camo\brown\Helmet_Brown_camo1_co.paa),
-        QPATHTOF(data\helmets\scout\camo\brown\Helmet_Brown_camo1_co.paa),
-        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\visor_co.paa"};
+        QPATHTOF(data\helmets\scout\camo\brown\Helmet_Brown_CO.paa),
+        QPATHTOF(data\helmets\scout\camo\brown\Helmet_Brown_CO.paa)
+    };
 
     class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"camo1","camo2","visor"};
-        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
+        hiddenSelections[] = {"camo1","visor"};
+        uniformModel = "\ls\core\addons\characters_clone\helmets\scout\ls_helmet_clone_scout.p3d";
     };
 };
 
-class CLASS(Helmet_Scout_Brown_V2): CLASS(Helmet_Scout_Base_V2) {
+class CLASS(Helmet_Scout_Grey): CLASS(Helmet_Scout_Base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF Scout Helm 08 (Brown Camo WMA)";
+    displayName = "[KC] SF Scout Helm 04 (Grey Camo)";
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\scout\camo\brown\Helmet_Brown_CO.paa)};
+        QPATHTOF(data\helmets\scout\camo\grey\Helmet_Grey_CO.paa),
+        QPATHTOF(data\helmets\scout\camo\grey\Helmet_Grey_CO.paa)
+    };
 
     class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"Camo"};
-        uniformModel = "WarMantle\WM_Imperial_Clones\P3Scout_Helmet.p3d";
+        hiddenSelections[] = {"camo1","visor"};
+        uniformModel = "\ls\core\addons\characters_clone\helmets\scout\ls_helmet_clone_scout.p3d";
     };
 };
 
-class CLASS(Helmet_Scout_Grey): CLASS(Helmet_Scout_Base_V1) {
+class CLASS(Helmet_Scout_Imperial): CLASS(Helmet_Scout_Base) {
     SCOPE_PUBLIC;
 
-    displayName = "[KC] SF Scout Helm 04 (Grey Camo LS)";
+    displayName = "[KC] SF Scout Helm 05 (Empire)";
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\scout\camo\grey\Helmet_Grey_camo1_co.paa),
-        QPATHTOF(data\helmets\scout\camo\grey\Helmet_Grey_camo1_co.paa),
-        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\visor_co.paa"};
-
-    class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"camo1","camo2","visor"};
-        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
+        QPATHTOF(data\helmets\scout\camo\Imperial\Helmet_Imperial_CO.paa),
+        QPATHTOF(data\helmets\scout\camo\Imperial\Helmet_Imperial_CO.paa)
     };
-};
-
-class CLASS(Helmet_Scout_Grey_V2): CLASS(Helmet_Scout_Base_V2) {
-    SCOPE_PUBLIC;
-
-    displayName = "[KC] SF Scout Helm 09 (Grey Camo WMA)";
-    hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\scout\camo\grey\Helmet_Grey_CO.paa)};
 
     class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"Camo"};
-        uniformModel = "WarMantle\WM_Imperial_Clones\P3Scout_Helmet.p3d";
-    };
-};
-
-class CLASS(Helmet_Scout_Imperial): CLASS(Helmet_Scout_Base_V1) {
-    SCOPE_PUBLIC;
-
-    displayName = "[KC] SF Scout Helm 05 (Empire LS)";
-    hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\scout\camo\imperial\Helmet_Imperial_camo1_co.paa),
-        QPATHTOF(data\helmets\scout\camo\imperial\Helmet_Imperial_camo1_co.paa),
-        "\ls\core\addons\characters_clone_legacy\helmets\scout\data\visor_co.paa"};
-
-    class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"camo1","camo2","visor"};
-        uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\scout\ls_gar_scout_helmet.p3d";
-    };
-};
-
-class CLASS(Helmet_Scout_Imperial_V2): CLASS(Helmet_Scout_Base_V2) {
-    SCOPE_PUBLIC;
-
-    displayName = "[KC] SF Scout Helm 10 (Empire WMA)";
-    hiddenSelectionsTextures[] = {QPATHTOF(data\helmets\scout\camo\Imperial\Helmet_Imperial_CO.paa)};
-
-    class ItemInfo: ItemInfo {
-        hiddenSelections[] = {"Camo"};
-        uniformModel = "WarMantle\WM_Imperial_Clones\P3Scout_Helmet.p3d";
+        hiddenSelections[] = {"camo1","visor"};
+        uniformModel = "\ls\core\addons\characters_clone\helmets\scout\ls_helmet_clone_scout.p3d";
     };
 };

@@ -73,6 +73,12 @@ class CfgVehicles {
         };
     };
 
+    class CLASS(Joe_Gonk): CLASS(Gonk_Base) {
+        SCOPE_PUBLIC;
+        displayName = "Joe Gonk";
+        hiddenSelectionsTextures[] = {QPATHTOF(data\gonk\Joe_Gonk_co.paa)};
+    };
+
     class CLASS(Gonk_Permissions): CLASS(Gonk_Base) {
         SCOPE_PUBLIC;
         displayName = "Permissions Gonk";
@@ -266,7 +272,6 @@ class CfgVehicles {
             // Raptor VICSPAWNRAP
             VICSPAWNRAP(CLASS(BARC),BARC Speeder)
             VICSPAWNRAP(CLASS(BARC_Sidecar),BARC Speeder Sidecar Variant)
-            VICSPAWNINF(CLASS(ATRT_LS),AT-RT)
             // Boats
 
             //

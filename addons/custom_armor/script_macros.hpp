@@ -647,7 +647,32 @@ class CLASS(DOUBLES(Helmet_Crosshair,var1)##var2): CLASS(DOUBLES(Helmet_Crosshai
     }; \
 }
 
+#define SCOUT_HELMET_CUSTOM(var1) class CLASS(DOUBLES(Helmet_Scout,var1)): CLASS(Helmet_Scout_Base) { \
+    displayName = QUOTE([KC] SF Scout Helm ('##var1##')); \
+    hiddenSelectionsTextures[] = { \
+        QPATHTOF(data\helmets\scout\DOUBLES(var1,camo1_co.paa)), \
+        QPATHTOF(data\helmets\scout\DOUBLES(var1,camo1_co.paa)), \
+    }; \
+    GVAR(isCustom) = TRUE; \
+    class XtdGearInfo { \
+        model = QCLASS(Helmets_Scout_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}
+
 #define UNIFORM_CUSTOM(var1) class CLASS(DOUBLES(Uniform,var1)): CLASS(Uniform_Base) { \
+    displayName = QUOTE([KC] Custom Armor ('##var1##')); \
+    GVAR(isCustom) = TRUE; \
+    class ItemInfo: ItemInfo { \
+        uniformClass = QCLASS(DOUBLES(Unit,var1)); \
+    }; \
+    class XtdGearInfo { \
+        model = QCLASS(Uniforms_Custom); \
+        custom = QUOTE(var1); \
+    }; \
+}
+
+#define UNIFORM_SCOUT_CUSTOM(var1) class CLASS(DOUBLES(Uniform,var1)): CLASS(Uniform_Base) { \
     displayName = QUOTE([KC] Custom Armor ('##var1##')); \
     GVAR(isCustom) = TRUE; \
     class ItemInfo: ItemInfo { \

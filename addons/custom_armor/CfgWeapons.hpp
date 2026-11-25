@@ -15,6 +15,7 @@ class CfgWeapons {
     #include "configs\Helmets_BARC.hpp"
     #include "configs\Helmets_CFNintyNine.hpp"
     #include "configs\Helmets_Commando.hpp"
+    #include "configs\Helmets_Scout.hpp"
 
     #include "configs\Uniforms.hpp"
     #include "configs\Uniforms_Commando.hpp"

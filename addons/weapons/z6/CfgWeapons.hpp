@@ -4,9 +4,6 @@ class CfgWeapons {
     class JLTS_Z6: LMG_Mk200_F {
         class manual;
     };
-    class LFP_Z6: Rifle_Base_F {
-        class manual;
-    };
     class CLASS(Z6_Base): JLTS_Z6 {
         SCOPE_PRIVATE;
         author = AUTHOR;

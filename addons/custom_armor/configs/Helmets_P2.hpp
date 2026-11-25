@@ -1,5 +1,7 @@
 class CLASS(Helmet_Phase2_Base);
+class CLASS(Helmet_Base_3AS);
 P2_HELMET_CUSTOM(Alvarez);
+P2_HELMET_CUSTOM(Atlas);
 P2_HELMET_CUSTOM(Axel);
 P2_HELMET_CUSTOM(Azen);
 P2_HELMET_CUSTOM(Bailout);
@@ -40,10 +42,12 @@ class CLASS(Helmet_Phase2_DestinyCrimson_Worn): CLASS(Helmet_Phase2_Destiny_Worn
     };
 };
 //P2_HELMET_VISOR_CUSTOM(Dexus,Bacta);
+P2_HELMET_CUSTOM(Drisko);
 P2_HELMET_CUSTOM(Evo);
 //P2_HELMET_CUSTOM(Flare);
 //P2_HELMET_CUSTOM(Grey);
 P2_HELMET_VISOR_CUSTOM(Goldie,Bacta);
+P2_HELMET_CUSTOM(Hammer);
 P2_HELMET_VISOR_CUSTOM(Harry,Bacta);
 //P2_HELMET_CUSTOM(Havoc);
 //P2_HELMET_CUSTOM(Hazard);
@@ -229,11 +233,19 @@ class CLASS(Helmet_Phase2_Keeli_Hologram): ls_gar_phase2Hologram_helmet {
     };
 };
 
+class CLASS(Helmet_Phase2_Keeli_3AS): CLASS(Helmet_Base_3AS) {
+    displayName = "[KC] INF P2 Helm ('Keeli') - 3AS";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\3AS_P2_Keeli_camo1_ca.paa),
+        QPATHTOF(data\helmets\phase2\3AS_P2_Keeli_camo1_ca.paa)
+    };
+};
+
 P2_HELMET_CUSTOM(Kujo);
 P2_HELMET_CUSTOM(Leo);
 P2_HELMET_CUSTOM(Leon);
 //P2_HELMET_VISOR_CUSTOM(Lou,Plasma);
-//P2_HELMET_CUSTOM(Marge);
+P2_HELMET_CUSTOM(Marge);
 P2_HELMET_CUSTOM(Match);
 P2_HELMET_CUSTOM(Maverick);
 P2_HELMET_VISOR_CUSTOM(Niner,Bacta);
@@ -292,3 +304,4 @@ P2_HELMET_CUSTOM(Walsh);
 P2_HELMET_CUSTOM(Whisker);
 P2_HELMET_CUSTOM(Woods);
 P2_HELMET_CUSTOM(Wormbait);
+P2_HELMET_CUSTOM(Xanity);

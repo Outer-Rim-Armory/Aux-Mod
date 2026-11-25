@@ -27,53 +27,47 @@ class CfgVehicles {
             "ls_magazine_speederHE_belt"
         };
 
-        //textureList[] = {
-        //    "Standard", 0,
-        //    "KeeliCompany", 1,
-        //    "CamoBrown", 0,
-        //    "CamoGrey", 0,
-        //    "Defter", 0,
-        //    "Carnage", 0
-        //};
-        //class TextureSources {
-        //    class Standard {
-        //        author = "3rd Army Studios";
-        //        displayName = "Standard";
-        //        factions[] = {};
-        //        textures[] = {"3AS\3AS_LightVics\3AS_BARC\data\barc_rep_co.paa"};
-        //    };
+        textureList[] = {
+            "Standard", 0,
+            "KeeliCompany", 1,
+            "CamoBrown", 0,
+            "CamoGrey", 0,
+            "Carnage", 0
+        };
+        class TextureSources {
+            class Standard {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {};
+                textures[] = {"3AS\3AS_LightVics\3AS_BARC\data\barc_rep_co.paa"};
+            };
 
-        //    class KeeliCompany: Standard {
-        //        displayName = "Keeli Company";
-        //        author = AUTHOR;
-        //        textures[] = {QPATHTOF(land\barc\data\textures\KeeliCompany_Body_co.paa)};
-        //    };
+            class KeeliCompany: Standard {
+                displayName = "Keeli Company";
+                author = AUTHOR;
+                textures[] = {QPATHTOF(land\barc\data\textures\KeeliCompany_Body_co.paa)};
+            };
 
-        //    class KeeliCompanyWhite: KeeliCompany {
-        //        displayName = "Keeli Company (White)";
-        //        textures[] = {QPATHTOF(land\barc\data\textures\KeeliCompanyWhite_Body_co.paa)};
-        //    };
+            class KeeliCompanyWhite: KeeliCompany {
+                displayName = "Keeli Company (White)";
+                textures[] = {QPATHTOF(land\barc\data\textures\KeeliCompanyWhite_Body_co.paa)};
+            };
 
-        //    class CamoBrown: KeeliCompany {
-        //        displayName = "Brown Camo";
-        //        textures[] = {QPATHTOF(land\barc\data\textures\CamoBrown_Body_co.paa)};
-        //    };
+            class CamoBrown: KeeliCompany {
+                displayName = "Brown Camo";
+                textures[] = {QPATHTOF(land\barc\data\textures\CamoBrown_Body_co.paa)};
+            };
 
-        //    class CamoGrey: KeeliCompany {
-        //        displayName = "Grey Camo";
-        //        textures[] = {QPATHTOF(land\barc\data\textures\CamoGrey_Body_co.paa)};
-        //    };
+            class CamoGrey: KeeliCompany {
+                displayName = "Grey Camo";
+                textures[] = {QPATHTOF(land\barc\data\textures\CamoGrey_Body_co.paa)};
+            };
 
-        //    class Defter: KeeliCompany {
-        //        displayName = "Defter";
-        //        textures[] = {QPATHTOF(land\barc\data\textures\Defter_Body_co.paa)};
-        //    };
-
-        //    class Carnage: KeeliCompany {
-        //        displayName = "Carnage";
-        //        textures[] = {QPATHTOF(land\barc\data\textures\Carnage_Body_co.paa)};
-        //    };
-        //};
+            class Carnage: KeeliCompany {
+                displayName = "Carnage";
+                textures[] = {QPATHTOF(land\barc\data\textures\Carnage_Body_co.paa)};
+            };
+        };
 
         // Some sounds just refuse to convert to .wss
         soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\barc\Engine_On.ogg), 1, 1};
@@ -149,53 +143,62 @@ class CfgVehicles {
             "ls_magazine_speederHE_belt"
         };
 
-        //textureList[] = {
-        //    "Standard", 0,
-        //    "KeeliCompany", 1,
-        //    "CamoBrown", 0,
-        //    "CamoGrey", 0,
-        //    "Defter", 0,
-        //    "Carnage", 0
-        //};
-        //class TextureSources {
-        //    class Standard {
-        //        author = "3rd Army Studios";
-        //        displayName = "Standard";
-        //        factions[] = {};
-        //        textures[] = {"3AS\3AS_LightVics\3AS_BARC\data\barc_rep_co.paa"};
-        //    };
+        textureList[] = {
+            "Standard", 0,
+            "KeeliCompany", 1,
+            "CamoBrown", 0,
+            "CamoGrey", 0,
+            "Carnage", 0
+        };
+        class TextureSources {
+            class Standard {
+                author = "3rd Army Studios";
+                displayName = "Standard";
+                factions[] = {};
+                textures[] = {"3AS\3AS_LightVics\3AS_BARC\data\barc_rep_co.paa","3AS\3AS_LightVics\3AS_BARC\data\sidecar\GUNNER_co.paa"};
+            };
 
-        //    class KeeliCompany: Standard {
-        //        displayName = "Keeli Company";
-        //        author = AUTHOR;
-        //        textures[] = {QPATHTOF(land\barc\data\textures\KeeliCompany_Body_co.paa)};
-        //    };
+            class KeeliCompany: Standard {
+                displayName = "Keeli Company";
+                author = AUTHOR;
+                textures[] = {
+                    QPATHTOF(land\barc\data\textures\KeeliCompany_Body_co.paa),
+                    QPATHTOF(land\barc\data\textures\KeeliCompany_Gunner_co.paa)
+                };
+            };
 
-        //    class KeeliCompanyWhite: KeeliCompany {
-        //        displayName = "Keeli Company (White)";
-        //        textures[] = {QPATHTOF(land\barc\data\textures\KeeliCompanyWhite_Body_co.paa)};
-        //    };
+            class KeeliCompanyWhite: KeeliCompany {
+                displayName = "Keeli Company (White)";
+                textures[] = {
+                    QPATHTOF(land\barc\data\textures\KeeliCompanyWhite_Body_co.paa),
+                    QPATHTOF(land\barc\data\textures\KeeliCompanyWhite_Gunner_co.paa)
+                };
+            };
 
-        //    class CamoBrown: KeeliCompany {
-        //        displayName = "Brown Camo";
-        //        textures[] = {QPATHTOF(land\barc\data\textures\CamoBrown_Body_co.paa)};
-        //    };
+            class CamoBrown: KeeliCompany {
+                displayName = "Brown Camo";
+                textures[] = {
+                    QPATHTOF(land\barc\data\textures\CamoBrown_Body_co.paa),
+                    QPATHTOF(land\barc\data\textures\CamoBrown_Gunner_co.paa)
+                };
+            };
 
-        //    class CamoGrey: KeeliCompany {
-        //        displayName = "Grey Camo";
-        //        textures[] = {QPATHTOF(land\barc\data\textures\CamoGrey_Body_co.paa)};
-        //    };
+            class CamoGrey: KeeliCompany {
+                displayName = "Grey Camo";
+                textures[] = {
+                    QPATHTOF(land\barc\data\textures\CamoGrey_Body_co.paa),
+                    QPATHTOF(land\barc\data\textures\CamoGrey_Gunner_co.paa)
+                };
+            };
 
-        //    class Defter: KeeliCompany {
-        //        displayName = "Defter";
-        //        textures[] = {QPATHTOF(land\barc\data\textures\Defter_Body_co.paa)};
-        //    };
-
-        //    class Carnage: KeeliCompany {
-        //        displayName = "Carnage";
-        //        textures[] = {QPATHTOF(land\barc\data\textures\Carnage_Body_co.paa)};
-        //    };
-        //};
+            class Carnage: KeeliCompany {
+                displayName = "Carnage";
+                textures[] = {
+                    QPATHTOF(land\barc\data\textures\Carnage_Body_co.paa),
+                    QPATHTOF(land\barc\data\textures\Carnage_Gunner_co.paa)
+                };
+            };
+        };
 
         // Some sounds just refuse to convert to .wss
         soundEngineOnInt[] = {QPATHTOF(sounds\data\audio\barc\Engine_On.ogg), 1, 1};

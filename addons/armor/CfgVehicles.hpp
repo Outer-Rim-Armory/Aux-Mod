@@ -151,9 +151,9 @@ class CfgVehicles {
         backpack = "";
     };
 
-    class ls_clone_scout_standard_DC15A;
-    class CLASS(Unit_Scout_Base): ls_clone_scout_standard_DC15A {
-        SCOPE_PUBLIC;
+    class ls_clone_scout_base;
+    class CLASS(Unit_Scout_Base): ls_clone_scout_base {
+        SCOPE_HIDDEN;
         author = AUTHOR;
 
         faction = QFACTION(KC);

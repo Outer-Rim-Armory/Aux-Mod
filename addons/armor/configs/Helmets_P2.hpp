@@ -16,7 +16,7 @@ class CLASS(Helmet_Phase2_Base): CLASS(cloneHelmet_base) {
         uniformModel = "\ls\core\addons\characters_clone_legacy\helmets\phase2\ls_gar_phase2_helmet.p3d";
     };
 };
-class CLASS(3AS_Helmet_Phase2_Base): CLASS(Helmet_Base_3AS) {
+class CLASS(Helmet_Phase2_3AS_Base): CLASS(Helmet_Base_3AS) {
     SCOPE_PUBLIC;
 
     displayName = "[KC] INF P2 Helm (Base)";
@@ -64,6 +64,13 @@ class CLASS(Helmet_Phase2_CT): CLASS(Helmet_Phase2_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
     };
 };
+class CLASS(Helmet_Phase2_CT_3AS): CLASS(Helmet_Base_3AS) {
+    displayName = "[KC] INF P2 Helm 01 (Trooper) 3AS";
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\helmets\phase2\CT_3AS_camo1_co.paa),
+        QPATHTOF(data\helmets\phase2\CT_3AS_camo1_co.paa)
+    };
+};
 class CLASS(Helmet_Phase2_CT_v2): CLASS(Helmet_Phase2_Base) {
     displayName = "[KC] INF P2 Helm 01 (Trooper, v2)";
     hiddenSelectionsTextures[] = {
@@ -83,13 +90,6 @@ class CLASS(Helmet_Phase2_CT_Empire): CLASS(Helmet_Phase2_Base) {
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\helmets\phase2\CT_Empire_camo1_co.paa),
         "\ls\core\addons\characters_clone_legacy\helmets\phase2\data\visor_co.paa"
-    };
-};
-class CLASS(3AS_Helmet_Phase2_CT): CLASS(Helmet_Phase2_Base) {
-    displayName = "[KC] INF P2 Helm 01 (Trooper)";
-    hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\phase2\3AS_CT_camo1_co.paa),
-        QPATHTOF(data\helmets\phase2\3AS_CT_camo1_co.paa)
     };
 };
 

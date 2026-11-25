@@ -52,6 +52,7 @@ class CfgPatches {
             QCLASS(Unit_Kujo),
             QCLASS(Unit_Leon),
             QCLASS(Unit_Leon_Night),
+            QCLASS(Unit_Lines),
             QCLASS(Unit_Rabble),
             QCLASS(Unit_Rat),
             QCLASS(Unit_Rev),

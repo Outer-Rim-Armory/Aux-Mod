@@ -31,6 +31,15 @@ class CfgVehicles {
         displayName = "Nu-class Attack Shuttle";
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(air\nu\data\textures\Nu_Hull_co.paa),
+            QPATHTOF(air\nu\data\textures\Nu_Front_co.paa),
+            QPATHTOF(air\nu\data\textures\Nu_Wings_co.paa),
+            "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
+            "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
+            QPATHTOF(air\nu\data\textures\Nu_Interior_co.paa),
+            "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
+        };
 
         weapons[] = {
             "ParticleBeamCannon_Nu",
@@ -89,7 +98,7 @@ class CfgVehicles {
                     QPATHTOF(air\nu\data\textures\carnage\Wings_co.paa),
                     "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
                     "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
-                    "\3AS\3AS_republic_heli\rho_class\data\interior_co.paa",
+                    QPATHTOF(air\nu\data\textures\Nu_Interior_co.paa),
                     "\3AS\3AS_republic_heli\rho_class\data\interior_optional_co.paa"
                 };
             };

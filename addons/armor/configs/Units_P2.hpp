@@ -99,15 +99,15 @@ class CLASS(Unit_Phase2_CT): CLASS(Unit_Phase2_Base) {
         QCLASS(Helmet_Phase2_CT), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
-class CLASS(3AS_Unit_Phase2_CT): CLASS(3AS_Unit_Phase2_Base) {
-    displayName = "INF 01 - Clone Trooper";
+class CLASS(Unit_Phase2_CT_3AS): CLASS(3AS_Unit_Phase2_Base) {
+    displayName = "INF 01 - Clone Trooper 3AS";
     editorPreview = EDITOR_PREVIEW(Unit_Phase2_CT);
 
-    uniformClass = QCLASS(3AS_Uniform_CT);
+    uniformClass = QCLASS(Uniform_CT_3AS);
     hiddenSelectionsTextures[] = {
         "\3AS\3AS_Republic_Characters\Uniforms\data\Clonetrooper_Undersuit\Clonetrooper_Undersuit_CO.paa",
-        QPATHTOF(data\uniforms\infantry\3AS_CT_upper_co.paa),
-        QPATHTOF(data\uniforms\infantry\3AS_CT_lower_co.paa)
+        QPATHTOF(data\uniforms\infantry\CT_3AS_upper_co.paa),
+        QPATHTOF(data\uniforms\infantry\CT_3AS_lower_co.paa)
     };
 
     linkedItems[] = {

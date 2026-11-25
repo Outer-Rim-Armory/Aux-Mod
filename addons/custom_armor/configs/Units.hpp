@@ -1,4 +1,6 @@
 class CLASS(Unit_Phase2_Base);
+class CLASS(3AS_Unit_Base);
+class CLASS(Unit_Scout_Base);
 class CLASS(Unit_Azen): CLASS(Unit_Phase2_Base) {
     displayName = "Azen";
 
@@ -723,6 +725,16 @@ class CLASS(Unit_Keeli_Hologram): CLASS(Unit_Phase2_Base) {
         "\ls\core\addons\data\textures\hologram\blueHologram_flip_ca.paa"
     };
 };
+class CLASS(Unit_Keeli_3AS): CLASS(3AS_Unit_Base) {
+    SCOPE_HIDDEN;
+    model = "\3AS\3AS_Republic_Characters\Uniforms\3AS_Republic_Clonetrooper_Uniform.p3d";
+    uniformClass = QCLASS(Uniform_Keeli_3AS);
+    hiddenSelectionsTextures[] = {
+        "\3AS\3AS_Republic_Characters\Uniforms\data\Clonetrooper_Undersuit\Clonetrooper_Undersuit_CO.paa",
+        QPATHTOF(data\uniforms\standard\3AS_Keeli_Upper_ca),
+        QPATHTOF(data\uniforms\standard\3AS_Keeli_Lower_ca),
+    };
+};
 
 class CLASS(Unit_Kiwi): CLASS(Unit_Phase2_Base) {
     displayName = "Kiwi";
@@ -802,6 +814,25 @@ class CLASS(Unit_Leon_Night): CLASS(Unit_Phase2_Base) {
         QPATHTOF(data\uniforms\standard\camo\night\Leon_upper_co.paa),
         QPATHTOF(data\uniforms\standard\camo\night\Leon_lower_co.paa),
         QPATHTOF(data\uniforms\standard\undersuit\Undersuit_co.paa)
+    };
+};
+
+class CLASS(Unit_Lines): CLASS(Unit_Phase2_Base) {
+    SCOPE_PUBLIC;
+    displayName = "Lines";
+    editorSubcategory = QEDSUBCAT(Customs);
+    uniformClass = QCLASS(Uniform_Lines);
+    hiddenSelectionsTextures[] = {
+        QPATHTOF(data\uniforms\standard\Lines_upper_co.paa),
+        QPATHTOF(data\uniforms\standard\Lines_lower_co.paa),
+        QPATHTOF(data\uniforms\standard\undersuit\Undersuit_co.paa)
+    };
+
+    linkedItems[] = {
+        QCLASS(Helmet_Scout_Lines), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
+    };
+    respawnLinkedItems[] = {
+        QCLASS(Helmet_Scout_Lines), QCLASS(Vest_Basic), QCLASS(cloneNvg_chip), "lsd_gar_p2Interior_hud", CLONE_LINKED_ITEMS_RADIO
     };
 };
 
@@ -1102,6 +1133,7 @@ class CLASS(Unit_Woods): CLASS(Unit_Phase2_Base) {
     };
 };
 
+// INSULATED UNITS SECTION
 class CLASS(Unit_Phase2_Insulated_Base);
 class CLASS(Unit_Phase2_Insulated_Dexus): CLASS(Unit_Phase2_Insulated_Base) {
     SCOPE_HIDDEN;
@@ -1153,6 +1185,7 @@ class CLASS(Unit_Phase2_Insulated_Kiwi): CLASS(Unit_Phase2_Insulated_Base) {
     };
 };
 
+// CLONE COMMANDO UNITS SECTION
 class CLASS(cloneCommando_unit_base);
 class CLASS(Unit_RC_Tugz): CLASS(cloneCommando_unit_base) {
     SCOPE_PUBLIC;
@@ -1260,3 +1293,5 @@ class CLASS(Unit_RC_Moskoni): CLASS(cloneCommando_unit_base) {
     };
     backpack = QCLASS(Moskoni_Backpack);
 };
+
+// SCOUT UNITS SECTION

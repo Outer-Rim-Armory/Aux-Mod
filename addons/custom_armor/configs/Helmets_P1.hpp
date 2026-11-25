@@ -77,12 +77,12 @@ class CLASS(Helmet_Phase1_KeeliCrimson_On): CLASS(Helmet_Phase1_Keeli) {
         "\a3\characters_f_bootcamp\common\data\vrarmoremmisive.rvmat"
     };
 };
-class CLASS(Helmet_Phase1_Keeli_3AS): CLASS(Helmet_Phase1_Keeli) {
+class CLASS(Helmet_Phase1_Keeli_3AS): CLASS(3AS_Helmet_Phase1_Base) {
     displayName = "[KC] INF P1 Helm ('Keeli') - 3AS";
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\phase1\3AS_Keeli_camo1_co.paa),
-        QPATHTOF(data\helmets\phase1\3AS_Keeli_camo1_co.paa),
-        QPATHTOF(data\helmets\phase1\3AS_Keeli_camo1_co.paa)
+        QPATHTOF(data\helmets\phase1\3AS_P1_Keeli_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\3AS_P1_Keeli_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\3AS_P1_Keeli_camo1_co.paa)
     };
 };
 
@@ -235,13 +235,14 @@ class CLASS(Helmet_Phase1_Keeli_Hologram): ls_gar_phase1_hologram_helmet {
     };
 };
 
+P1_HELMET_CUSTOM(Kittens);
 P1_HELMET_CUSTOM(Kujo);
 P1_HELMET_CUSTOM(Koa);
 //P1_HELMET_VISOR_CUSTOM(Lou,Plasma);
 //P1_HELMET_CUSTOM(Lacker);
 P1_HELMET_CUSTOM(Leo);
 P1_HELMET_CUSTOM(Match);
-//P1_HELMET_CUSTOM(Marge);
+P1_HELMET_CUSTOM(Marge);
 P1_HELMET_CUSTOM(Maverick);
 P1_HELMET_CUSTOM(Mink);
 P1_HELMET_VISOR_CUSTOM(Nate,Kyber);
@@ -253,6 +254,7 @@ P1_HELMET_VISOR_CUSTOM(Rat,Crimson);
 P1_HELMET_CUSTOM(Random);
 P1_HELMET_CUSTOM(Rev);
 //P1_HELMET_CUSTOM(Rodger);
+P1_HELMET_CUSTOM(Rusty);
 P1_HELMET_CUSTOM(Sage);
 P1_HELMET_CUSTOM(Sausage);
 P1_HELMET_CUSTOM(Savage);

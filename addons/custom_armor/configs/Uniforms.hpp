@@ -154,6 +154,16 @@ class CLASS(Uniform_Keeli_Hologram): CLASS(Uniform_Keeli) {
         camo = "Hologram";
     };
 };
+class CLASS(Uniform_Keeli_3AS): CLASS(Uniform_Keeli) {
+    displayName = "[KC] Custom Armor ('Keeli') - 3AS";
+
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Keeli_3AS);
+    };
+    class XtdGearInfo: XtdGearInfo {
+        camo = "3AS";
+    };
+};
 
 UNIFORM_CUSTOM(Kiwi);
 class CLASS(Uniform_Kiwi_Worn): CLASS(Uniform_Kiwi) {
@@ -178,6 +188,7 @@ class CLASS(Uniform_Leon_Night): CLASS(Uniform_Leon) {
         camo = "Night";
     };
 };
+UNIFORM_CUSTOM(Lines);
 UNIFORM_CUSTOM(Rabble);
 UNIFORM_CUSTOM(Rat);
 UNIFORM_CUSTOM(Rev);

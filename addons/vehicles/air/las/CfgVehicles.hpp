@@ -64,7 +64,7 @@ class CfgVehicles {
 
         hiddenSelectionsTextures[]=
 		{
-			QPATHTOF(air\las\data\textures\KC_Hull_co.paa),
+			QPATHTOF(air\las\data\textures\KC_Exterior_co.paa),
             "\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Interior_co.paa",
             QPATHTOF(air\las\data\textures\KC_Wings_co.paa)
 		};
@@ -98,7 +98,7 @@ class CfgVehicles {
             class KeeliCompany: Republic {
                 displayName = "Keeli Company";
                 textures[] = {
-                QPATHTOF(air\las\data\textures\KC_Hull_co.paa),
+                QPATHTOF(air\las\data\textures\KC_Exterior_co.paa),
                 "\3AS\3AS_Republic_Heli\LAS\data\3AS_LAS_Interior_co.paa",
                 QPATHTOF(air\las\data\textures\KC_Wings_co.paa)
                 };

@@ -32,9 +32,9 @@ class CfgVehicles {
         crew = QCLASS(Unit_Phase2_CXA);
         typicalCargo[] = {QCLASS(Unit_Phase2_CXA)};
         hiddenSelectionsTextures[] = {
-            QPATHTOF(air\rho\data\textures\Hull_co.paa),
-            QPATHTOF(air\rho\data\textures\Hull_front_co.paa),
-            QPATHTOF(air\rho\data\textures\Wings_co.paa),
+            QPATHTOF(air\rho\data\textures\Rho_Hull_co.paa),
+            QPATHTOF(air\rho\data\textures\Rho_Front_co.paa),
+            QPATHTOF(air\rho\data\textures\Rho_Wings_co.paa),
             "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
             "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
             QPATHTOF(air\rho\data\textures\Rho_Interior_co.paa),
@@ -92,9 +92,9 @@ class CfgVehicles {
                  author = AUTHOR;
                  displayName = "Keeli Company";
                  textures[] = {
-                     QPATHTOF(air\rho\data\textures\Hull_co.paa),
-                     QPATHTOF(air\rho\data\textures\Hull_front_co.paa),
-                     QPATHTOF(air\rho\data\textures\Wings_co.paa),
+                     QPATHTOF(air\rho\data\textures\Rho_Hull_co.paa),
+                     QPATHTOF(air\rho\data\textures\Rho_Front_co.paa),
+                     QPATHTOF(air\rho\data\textures\Rho_Wings_co.paa),
                      "\3AS\3AS_republic_heli\rho_class\data\cockpit_co.paa",
                      "\3AS\3AS_republic_heli\rho_class\data\cockpit_interfaces_co.paa",
                      QPATHTOF(air\rho\data\textures\Rho_Interior_co.paa),

@@ -64,12 +64,12 @@ class CLASS(Helmet_Phase1_CT): CLASS(Helmet_Phase1_Base) {
         "\ls\core\addons\characters_clone_legacy\helmets\phase1\data\illum_co.paa"
     };
 };
-class CLASS(3AS_Helmet_Phase1_CT): CLASS(Helmet_Phase1_Base) {
+class CLASS(Helmet_Phase1_CT_3AS): CLASS(3AS_Helmet_Phase1_Base) {
     displayName = "[KC] INF P1 Helm 01 (Trooper)";
     hiddenSelectionsTextures[] = {
-        QPATHTOF(data\helmets\phase1\3AS_P1_CT_camo1_co.paa),
-        QPATHTOF(data\helmets\phase1\3AS_P1_CT_camo1_co.paa),
-        QPATHTOF(data\helmets\phase1\3AS_P1_CT_camo1_co.paa)
+        QPATHTOF(data\helmets\phase1\CT_3AS_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\CT_3AS_camo1_co.paa),
+        QPATHTOF(data\helmets\phase1\CT_3AS_camo1_co.paa)
     };
 };
 class CLASS(Helmet_Phase1_CT_v2): CLASS(Helmet_Phase1_Base) {

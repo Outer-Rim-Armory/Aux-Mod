@@ -14,7 +14,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_PlasmaDC17M_Blaster);
         count = 60; // 6 rounds per 1 mass
-        mass = 10;
+        mass = 5;
         initSpeed = 1000;
         maxLeadSpeed = 25;
 
@@ -35,7 +35,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_PlasmaDC17M_Sniper);
         count = 5; // 1 rounds per 2 mass
-        mass = 10;
+        mass = 5;
         initSpeed = 2000;
 
         GVAR(isSniperMag) = TRUE;
@@ -54,7 +54,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_PlasmaDC17M_Blaster_Red);
         count = 60; // 6 rounds per 1 mass
-        mass = 10;
+        mass = 5;
         initSpeed = 1000;
         maxLeadSpeed = 25;
 
@@ -75,7 +75,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_PlasmaDC17M_Sniper_Red);
         count = 5; // 1 rounds per 2 mass
-        mass = 10;
+        mass = 5;
         initSpeed = 2000;
 
         GVAR(isSniperMag) = TRUE;
@@ -95,7 +95,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_Plasma40mm_AT);
         count = 1; // 1 rounds per 20 mass
-        mass = 20;
+        mass = 10;
         initSpeed = 510;
 
         GVAR(isATMag) = TRUE;
@@ -114,7 +114,7 @@ class CfgMagazines {
 
         ammo = QCLASS(Bullet_Plasma40mm_AT);
         count = 3; // 1 rounds per 20 mass
-        mass = 60;
+        mass = 30;
         initSpeed = 510;
 
         GVAR(isATMag) = TRUE;

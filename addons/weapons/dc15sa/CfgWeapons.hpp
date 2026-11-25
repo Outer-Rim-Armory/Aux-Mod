@@ -88,14 +88,14 @@ class CfgWeapons {
     };
 
     class CLASS(DC15SA): CLASS(DC15SA_Base) {
-        SCOPE_PUBLIC;
+        SCOPE_PRIVATE;
         displayName = "[KC] DC-15SA";
         baseWeapon = QCLASS(DC15SA);
     };
 
     class CLASS(DC15SA_104): CLASS(DC15SA_104_Base) {
         SCOPE_PUBLIC;
-        displayName = "[KC] DC-15SA (104th)";
+        displayName = "[KC] DC-15SA";
         baseWeapon = QCLASS(DC15SA_104);
     };
 };

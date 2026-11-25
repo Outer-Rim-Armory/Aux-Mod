@@ -42,6 +42,12 @@ class CLASS(Uniform_CT_Prison): CLASS(Uniform_Base) {
         uniformClass = QCLASS(Unit_Phase2_CT);
     };
 };
+class CLASS(Uniform_CT_3AS): CLASS(Uniform_Base) {
+    displayName = "[KC] INF Armor 01 (Trooper) 3AS";
+    class ItemInfo: ItemInfo {
+        uniformClass = QCLASS(Unit_Phase2_CT_3AS);
+    };
+};
 class CLASS(Uniform_CT_female): CLASS(Uniform_Base) {
     displayName = "[KC] INF Armor 01 (Trooper, Female)";
     class ItemInfo: ItemInfo {

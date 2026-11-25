@@ -34,7 +34,7 @@ class CfgVehicles {
             QPATHTOF(land\atap\data\textures\KeeliCompany\Legs_co.paa)
         };
 
-        textureList[] = {"Standard", 0, "KeeliCompany", 1, "CamoGrey", 0};
+        textureList[] = {"Standard", 0, "KeeliCompany", 1, "KeeliCompanyWhite", 0, "CamoBrown", 0, "CamoGrey", 0};
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -54,6 +54,25 @@ class CfgVehicles {
                     QPATHTOF(land\atap\data\textures\KeeliCompany\Body_co.paa),
                     QPATHTOF(land\atap\data\textures\KeeliCompany\Weapons_co.paa),
                     QPATHTOF(land\atap\data\textures\KeeliCompany\Legs_co.paa)
+                };
+            };
+            class KeeliCompanyWhite: Standard {
+                author = AUTHOR;
+                displayName = "Keeli Company White";
+                factions[] = {};
+                textures[] = {
+                    QPATHTOF(land\atap\data\textures\KeeliCompanyWhite\Body_co.paa),
+                    QPATHTOF(land\atap\data\textures\KeeliCompanyWhite\Weapons_co.paa),
+                    QPATHTOF(land\atap\data\textures\KeeliCompanyWhite\Legs_co.paa)
+                };
+            };
+            class CamoBrown: Standard {
+                author = AUTHOR;
+                displayName = "Brown Camo";
+                textures[] = {
+                    QPATHTOF(land\atap\data\textures\CamoBrown\Body_co.paa),
+                    QPATHTOF(land\atap\data\textures\CamoBrown\Weapons_co.paa),
+                    QPATHTOF(land\atap\data\textures\CamoBrown\Legs_co.paa)
                 };
             };
             class CamoGrey: Standard {

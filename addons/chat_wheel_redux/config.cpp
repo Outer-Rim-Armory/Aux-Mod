@@ -84,7 +84,7 @@ class Extended_PreInit_EventHandlers {
 
 class Extended_PostInit_EventHandlers {
     class CWR_ChatWheel {
-        clientInit = QUOTE(call compileScript ['\chat_wheel_redux\XEH_postInitClient.sqf']);
+        clientInit = QUOTE(call compileScript ['\ChatWheelRedux\XEH_postInitClient.sqf']);
     };
     class CWR_CreateTagDiary {
         init = QUOTE(call CWR_fnc_createTagMenu;);
