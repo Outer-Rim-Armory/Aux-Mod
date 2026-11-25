@@ -1,2 +1,4 @@
 class CLASS(Helmet_Scout_Base);
 SCOUT_HELMET_CUSTOM(Lines);
+SCOUT_HELMET_CUSTOM(Jean);
+SCOUT_HELMET_CUSTOM(Dawg);
