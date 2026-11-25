@@ -1,7 +1,7 @@
 class CfgVehicles {
     class ls_clone_unit_base;
     class CLASS(Unit_Base): ls_clone_unit_base {
-        SCOPE_PRIVATE;
+        SCOPE_HIDDEN;
         author = AUTHOR;
 
         faction = QFACTION(KC);
@@ -77,7 +77,7 @@ class CfgVehicles {
 
     class 3AS_Rep_CloneTrooper_F;
     class CLASS(3AS_Unit_Base): 3AS_Rep_CloneTrooper_F {
-        SCOPE_PRIVATE;
+        SCOPE_HIDDEN;
         author = AUTHOR;
 
         faction = QFACTION(KC);

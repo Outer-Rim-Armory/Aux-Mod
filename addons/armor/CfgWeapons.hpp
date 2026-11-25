@@ -76,12 +76,8 @@ class CfgWeapons {
     #include "configs\Helmets_CFNintyNine.hpp"
     #include "configs\Helmets_ATRT.hpp"
 
-    class ItemCore;
-    class ls_cloneUniform_base: ItemCore {
-            class ItemInfo;
-    };
-
-    class ls_gar_phase2_uniform: ls_cloneUniform_base {
+    class Uniform_Base;
+    class ls_gar_phase2_uniform: Uniform_Base {
         class ItemInfo;
     };
 

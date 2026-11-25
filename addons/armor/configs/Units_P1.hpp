@@ -305,7 +305,7 @@ class CLASS(Unit_phase1Geo_Captain): CLASS(Unit_phase1Geo_NCO) {
 };
 
 class CLASS(Unit_phase1Geo_Major): CLASS(Unit_phase1Geo_NCO) {
-    uniformClass = QCLASS(Uniform_phase1Geo_Makor);
+    uniformClass = QCLASS(Uniform_phase1Geo_Major);
     hiddenSelectionsTextures[] = {
         QPATHTOF(data\uniforms\infantry\geonosis\GeoMajor_upper_co.paa),
         "\ls\core\addons\characters_clone_legacy\uniforms\phase2\data\camo2_co.paa",
