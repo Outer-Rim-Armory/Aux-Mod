@@ -63,7 +63,7 @@ class CfgVehicles {
         hiddenselections[] = {"backpack", "cover", "pouches", "tube"};
         hiddenselectionstextures[] = {
             QPATHTOF(data\backpacks\Cherry\Backpack_co.paa),
-            QPATHTOF(data\backpacks\Dexus\Cover_co.paa),
+            QPATHTOF(data\backpacks\Cherry\Cover_co.paa),
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\pouches_co.paa",
             "\ls\core\addons\characters_clone_legacy\backpacks\standard\data\tube_co.paa",
         };
