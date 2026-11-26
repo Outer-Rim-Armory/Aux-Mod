@@ -33,11 +33,11 @@ class CfgVehicles {
 
         hiddenselections[] = {"camo","camo1","camo2"};
         hiddenSelectionsTextures[] = {
-            "3AS\3AS_Z95\Data\orange_co.paa",
+            QPATHTOF(air\z95\data\textures\KC_body_co.paa),
             "3AS\3AS_Z95\Data\cockpit_co.paa",
             "3AS\3AS_Z95\data\glass\glass_ca"
             };
-        textureList[] = {"Standard", 0, "Orange", 1, "Blue", 0, "Green", 0, "Yellow", 0, "Empire", 0};
+        textureList[] = {"Standard", 0, "Orange", 0, "Blue", 0, "Green", 0, "Yellow", 0, "KeeliCompany", 1, "Empire", 0};
         class TextureSources {
             class Standard {
                 author = "3rd Army Studios";
@@ -83,8 +83,16 @@ class CfgVehicles {
                     "3AS\3AS_Z95\data\glass\glass_ca"
                 };
             };
+            class KeeliCompany: Standard {
+                displayName = "06: Keeli Company";
+                textures[] = {
+                    QPATHTOF(air\z95\data\textures\KC_body_co.paa),
+                    "3AS\3AS_Z95\Data\cockpit_co.paa",
+                    "3AS\3AS_Z95\data\glass\glass_ca"
+                };
+            };
             class Empire: Standard {
-                displayName = "06: Empire";
+                displayName = "07: Empire";
                 textures[] = {
                     QPATHTOF(air\z95\data\textures\Empire_body_co.paa),
                     "3AS\3AS_Z95\Data\cockpit_co.paa",

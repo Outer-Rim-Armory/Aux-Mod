@@ -46,6 +46,7 @@ class CfgVehicles {
         textureList[] = {
             "Standard", 1,
             "Imperial", 0,
+            "Senate", 0,
         };
 
         class TextureSources {
@@ -69,6 +70,19 @@ class CfgVehicles {
                     "3AS\3AS_Imperial_Air\Gozanti\data\Camo_co.paa",
                     "3AS\3AS_Imperial_Air\Gozanti\data\Gozanti_Int_co.paa",
                     "3AS\3AS_Imperial_Air\Gozanti\data\Camo2_co.paa",
+                    "3AS\3AS_Imperial_Air\Gozanti\data\Camo3_co.paa",
+                    "3AS\3AS_Imperial_Air\Gozanti\data\Camo4_co.paa",
+                    "3AS\3AS_Imperial_Air\Gozanti\data\Camo5_co.paa",
+                    "3AS\3AS_Imperial_Air\Gozanti\data\Camo6_co.paa"
+                };
+            };
+            class Senate: Standard {
+                displayName = "Senate";
+                factions[] = {};
+                textures[] = {
+                    QPATHTOF(air\gozanti\data\textures\Senate_camo1_co.paa),
+                    "3AS\3AS_Imperial_Air\Gozanti\data\Gozanti_Int_co.paa",
+                    QPATHTOF(air\gozanti\data\textures\Senate_camo2_co.paa),
                     "3AS\3AS_Imperial_Air\Gozanti\data\Camo3_co.paa",
                     "3AS\3AS_Imperial_Air\Gozanti\data\Camo4_co.paa",
                     "3AS\3AS_Imperial_Air\Gozanti\data\Camo5_co.paa",
